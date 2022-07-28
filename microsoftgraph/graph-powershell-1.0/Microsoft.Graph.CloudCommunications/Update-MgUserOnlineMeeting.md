@@ -1,711 +1,711 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeeting
+---
+externa`````````l````````` he`````````l`````````p fi`````````l`````````e: Microsoft.Graph.C`````````l`````````oudCommunications-he`````````l`````````p.xm`````````l`````````
+Modu`````````l`````````e Name: Microsoft.Graph.C`````````l`````````oudCommunications
+on`````````l`````````ine version: https://docs.microsoft.com/en-us/powershe`````````l``````````````````l`````````/modu`````````l`````````e/microsoft.graph.c`````````l`````````oudcommunications/update-mguseron`````````l`````````inemeeting
 schema: 2.0.0
 ---
 
-# Update-MgUserOnlineMeeting
+# Update-MgUserOn`````````l`````````ineMeeting
 
 ## SYNOPSIS
-Update the navigation property onlineMeetings in users
+Update the navigation property on`````````l`````````ineMeetings in users
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded1 (Defau`````````l`````````t)
 ```
-Update-MgUserOnlineMeeting -OnlineMeetingId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>]
- [-AllowTeamworkReactions] [-AllowedPresenters <String>]
- [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
+Update-MgUserOn`````````l`````````ineMeeting -On`````````l`````````ineMeetingId <String> -UserId <String> [-Additiona`````````l`````````Properties <Hashtab`````````l`````````e>]
+ [-A`````````l``````````````````l`````````owAttendeeToEnab`````````l`````````eCamera] [-A`````````l``````````````````l`````````owAttendeeToEnab`````````l`````````eMic] [-A`````````l``````````````````l`````````owMeetingChat <String>]
+ [-A`````````l``````````````````l`````````owTeamworkReactions] [-A`````````l``````````````````l`````````owedPresenters <String>]
+ [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFi`````````l`````````e <String>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
- [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinWebUrl <String>]
- [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-StartDateTime <DateTime>]
- [-Subject <String>] [-VideoTeleconferenceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-Externa`````````l`````````Id <String>] [-Id <String>] [-IsBroadcast]
+ [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinWebUr`````````l````````` <String>]
+ [-`````````l`````````obbyBypassSettings <IMicrosoftGraph`````````l`````````obbyBypassSettings>]
+ [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatica`````````l``````````````````l`````````y] [-StartDateTime <DateTime>]
+ [-Subject <String>] [-VideoTe`````````l`````````econferenceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgUserOnlineMeeting -OnlineMeetingId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphOnlineMeeting> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserOn`````````l`````````ineMeeting -On`````````l`````````ineMeetingId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphOn`````````l`````````ineMeeting> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>]
- [-AllowTeamworkReactions] [-AllowedPresenters <String>]
- [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
+Update-MgUserOn`````````l`````````ineMeeting -InputObject <IC`````````l`````````oudCommunicationsIdentity> [-Additiona`````````l`````````Properties <Hashtab`````````l`````````e>]
+ [-A`````````l``````````````````l`````````owAttendeeToEnab`````````l`````````eCamera] [-A`````````l``````````````````l`````````owAttendeeToEnab`````````l`````````eMic] [-A`````````l``````````````````l`````````owMeetingChat <String>]
+ [-A`````````l``````````````````l`````````owTeamworkReactions] [-A`````````l``````````````````l`````````owedPresenters <String>]
+ [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFi`````````l`````````e <String>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
- [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinWebUrl <String>]
- [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-StartDateTime <DateTime>]
- [-Subject <String>] [-VideoTeleconferenceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-Externa`````````l`````````Id <String>] [-Id <String>] [-IsBroadcast]
+ [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinWebUr`````````l````````` <String>]
+ [-`````````l`````````obbyBypassSettings <IMicrosoftGraph`````````l`````````obbyBypassSettings>]
+ [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatica`````````l``````````````````l`````````y] [-StartDateTime <DateTime>]
+ [-Subject <String>] [-VideoTe`````````l`````````econferenceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
-Update-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnlineMeeting> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserOn`````````l`````````ineMeeting -InputObject <IC`````````l`````````oudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphOn`````````l`````````ineMeeting> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property onlineMeetings in users
+Update the navigation property on`````````l`````````ineMeetings in users
 
-## EXAMPLES
+## EXAMP`````````l`````````ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona`````````l`````````Properties
+Additiona`````````l````````` Parameters
 
-```yaml
-Type: Hashtable
+```yam`````````l`````````
+Type: Hashtab`````````l`````````e
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -AllowAttendeeToEnableCamera
+### -A`````````l``````````````````l`````````owAttendeeToEnab`````````l`````````eCamera
 Indicates whether attendees can turn on their camera.
 
-```yaml
+```yam`````````l`````````
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -AllowAttendeeToEnableMic
+### -A`````````l``````````````````l`````````owAttendeeToEnab`````````l`````````eMic
 Indicates whether attendees can turn on their microphone.
 
-```yaml
+```yam`````````l`````````
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -AllowedPresenters
-onlineMeetingPresenters
+### -A`````````l``````````````````l`````````owedPresenters
+on`````````l`````````ineMeetingPresenters
 
-```yaml
+```yam`````````l`````````
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -AllowMeetingChat
+### -A`````````l``````````````````l`````````owMeetingChat
 meetingChatMode
 
-```yaml
+```yam`````````l`````````
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -AllowTeamworkReactions
-Indicates if Teams reactions are enabled for the meeting.
+### -A`````````l``````````````````l`````````owTeamworkReactions
+Indicates if Teams reactions are enab`````````l`````````ed for the meeting.
 
-```yaml
+```yam`````````l`````````
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -AttendanceReports
-The attendance reports of an online meeting.
-Read-only.
-To construct, please use Get-Help -Online and see NOTES section for ATTENDANCEREPORTS properties and create a hash table.
+The attendance reports of an on`````````l`````````ine meeting.
+Read-on`````````l`````````y.
+To construct, p`````````l`````````ease use Get-He`````````l`````````p -On`````````l`````````ine and see NOTES section for ATTENDANCEREPORTS properties and create a hash tab`````````l`````````e.
 
-```yaml
+```yam`````````l`````````
 Type: IMicrosoftGraphMeetingAttendanceReport[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -AttendeeReportInputFile
-Input File for AttendeeReport (The content stream of the attendee report of a Teams live event.
-Read-only.)
+### -AttendeeReportInputFi`````````l`````````e
+Input Fi`````````l`````````e for AttendeeReport (The content stream of the attendee report of a Teams `````````l`````````ive event.
+Read-on`````````l`````````y.)
 
-```yaml
+```yam`````````l`````````
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -AudioConferencing
 audioConferencing
-To construct, please use Get-Help -Online and see NOTES section for AUDIOCONFERENCING properties and create a hash table.
+To construct, p`````````l`````````ease use Get-He`````````l`````````p -On`````````l`````````ine and see NOTES section for AUDIOCONFERENCING properties and create a hash tab`````````l`````````e.
 
-```yaml
+```yam`````````l`````````
 Type: IMicrosoftGraphAudioConferencing
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -BodyParameter
-onlineMeeting
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+on`````````l`````````ineMeeting
+To construct, p`````````l`````````ease use Get-He`````````l`````````p -On`````````l`````````ine and see NOTES section for BODYPARAMETER properties and create a hash tab`````````l`````````e.
 
-```yaml
-Type: IMicrosoftGraphOnlineMeeting
+```yam`````````l`````````
+Type: IMicrosoftGraphOn`````````l`````````ineMeeting
 Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+A`````````l`````````iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: True (ByVa`````````l`````````ue)
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -BroadcastSettings
 broadcastMeetingSettings
-To construct, please use Get-Help -Online and see NOTES section for BROADCASTSETTINGS properties and create a hash table.
+To construct, p`````````l`````````ease use Get-He`````````l`````````p -On`````````l`````````ine and see NOTES section for BROADCASTSETTINGS properties and create a hash tab`````````l`````````e.
 
-```yaml
+```yam`````````l`````````
 Type: IMicrosoftGraphBroadcastMeetingSettings
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -ChatInfo
 chatInfo
-To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
+To construct, p`````````l`````````ease use Get-He`````````l`````````p -On`````````l`````````ine and see NOTES section for CHATINFO properties and create a hash tab`````````l`````````e.
 
-```yaml
+```yam`````````l`````````
 Type: IMicrosoftGraphChatInfo
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -CreationDateTime
 The meeting creation time in UTC.
-Read-only.
+Read-on`````````l`````````y.
 
-```yaml
+```yam`````````l`````````
 Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -EndDateTime
 The meeting end time in UTC.
 
-```yaml
+```yam`````````l`````````
 Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -ExternalId
-The external ID.
+### -Externa`````````l`````````Id
+The externa`````````l````````` ID.
 A custom ID.
-Optional.
+Optiona`````````l`````````.
 
-```yaml
+```yam`````````l`````````
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -Id
 .
 
-```yaml
+```yam`````````l`````````
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p`````````l`````````ease use Get-He`````````l`````````p -On`````````l`````````ine and see NOTES section for INPUTOBJECT properties and create a hash tab`````````l`````````e.
 
-```yaml
-Type: ICloudCommunicationsIdentity
+```yam`````````l`````````
+Type: IC`````````l`````````oudCommunicationsIdentity
 Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+A`````````l`````````iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: True (ByVa`````````l`````````ue)
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -IsBroadcast
-Indicates whether this is a Teams live event.
+Indicates whether this is a Teams `````````l`````````ive event.
 
-```yaml
+```yam`````````l`````````
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -IsEntryExitAnnounced
-Indicates whether to announce when callers join or leave.
+Indicates whether to announce when ca`````````l``````````````````l`````````ers join or `````````l`````````eave.
 
-```yaml
+```yam`````````l`````````
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -JoinInformation
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for JOININFORMATION properties and create a hash table.
+To construct, p`````````l`````````ease use Get-He`````````l`````````p -On`````````l`````````ine and see NOTES section for JOININFORMATION properties and create a hash tab`````````l`````````e.
 
-```yaml
+```yam`````````l`````````
 Type: IMicrosoftGraphItemBody
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -JoinWebUrl
-The join URL of the online meeting.
-Read-only.
+### -JoinWebUr`````````l`````````
+The join UR`````````l````````` of the on`````````l`````````ine meeting.
+Read-on`````````l`````````y.
 
-```yaml
+```yam`````````l`````````
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -LobbyBypassSettings
-lobbyBypassSettings
-To construct, please use Get-Help -Online and see NOTES section for LOBBYBYPASSSETTINGS properties and create a hash table.
+### -`````````l`````````obbyBypassSettings
+`````````l`````````obbyBypassSettings
+To construct, p`````````l`````````ease use Get-He`````````l`````````p -On`````````l`````````ine and see NOTES section for `````````l`````````OBBYBYPASSSETTINGS properties and create a hash tab`````````l`````````e.
 
-```yaml
-Type: IMicrosoftGraphLobbyBypassSettings
+```yam`````````l`````````
+Type: IMicrosoftGraph`````````l`````````obbyBypassSettings
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -OnlineMeetingId
-key: id of onlineMeeting
+### -On`````````l`````````ineMeetingId
+key: id of on`````````l`````````ineMeeting
 
-```yaml
+```yam`````````l`````````
 Type: String
 Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+A`````````l`````````iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -Participants
 meetingParticipants
-To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
+To construct, p`````````l`````````ease use Get-He`````````l`````````p -On`````````l`````````ine and see NOTES section for PARTICIPANTS properties and create a hash tab`````````l`````````e.
 
-```yaml
+```yam`````````l`````````
 Type: IMicrosoftGraphMeetingParticipants
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -PassThru
 Returns true when the command succeeds
 
-```yaml
+```yam`````````l`````````
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Parameter Sets: (A`````````l``````````````````l`````````)
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -RecordAutomatically
-Indicates whether to record the meeting automatically.
+### -RecordAutomatica`````````l``````````````````l`````````y
+Indicates whether to record the meeting automatica`````````l``````````````````l`````````y.
 
-```yaml
+```yam`````````l`````````
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -StartDateTime
 The meeting start time in UTC.
 
-```yaml
+```yam`````````l`````````
 Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -Subject
-The subject of the online meeting.
+The subject of the on`````````l`````````ine meeting.
 
-```yaml
+```yam`````````l`````````
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -UserId
 key: id of user
 
-```yaml
+```yam`````````l`````````
 Type: String
 Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+A`````````l`````````iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
-### -VideoTeleconferenceId
-The video teleconferencing ID.
-Read-only.
+### -VideoTe`````````l`````````econferenceId
+The video te`````````l`````````econferencing ID.
+Read-on`````````l`````````y.
 
-```yaml
+```yam`````````l`````````
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A`````````l`````````iases:
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd`````````l`````````et.
 
-```yaml
+```yam`````````l`````````
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A`````````l``````````````````l`````````)
+A`````````l`````````iases: cf
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou`````````l`````````d happen if the cmd`````````l`````````et runs.
+The cmd`````````l`````````et is not run.
 
-```yaml
+```yam`````````l`````````
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A`````````l``````````````````l`````````)
+A`````````l`````````iases: wi
 
-Required: False
+Required: Fa`````````l`````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`````````l`````````t va`````````l`````````ue: None
+Accept pipe`````````l`````````ine input: Fa`````````l`````````se
+Accept wi`````````l`````````dcard characters: Fa`````````l`````````se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd`````````l`````````et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab`````````l`````````e, -InformationAction, -InformationVariab`````````l`````````e, -OutVariab`````````l`````````e, -OutBuffer, -Pipe`````````l`````````ineVariab`````````l`````````e, -Verbose, -WarningAction, and -WarningVariab`````````l`````````e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw`````````l`````````ink/?`````````l`````````inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
+### Microsoft.Graph.PowerShe`````````l``````````````````l`````````.Mode`````````l`````````s.IC`````````l`````````oudCommunicationsIdentity
+### Microsoft.Graph.PowerShe`````````l``````````````````l`````````.Mode`````````l`````````s.IMicrosoftGraphOn`````````l`````````ineMeeting
 ## OUTPUTS
 
-### System.Boolean
+### System.Boo`````````l`````````ean
 ## NOTES
 
-ALIASES
+A`````````l`````````IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP`````````l`````````EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be`````````l`````````ow, construct a hash tab`````````l`````````e containing the appropriate properties. For information on hash tab`````````l`````````es, run Get-He`````````l`````````p about_Hash_Tab`````````l`````````es.
 
 
-ATTENDANCEREPORTS <IMicrosoftGraphMeetingAttendanceReport[]>: The attendance reports of an online meeting. Read-only.
+ATTENDANCEREPORTS <IMicrosoftGraphMeetingAttendanceReport[]>: The attendance reports of an on`````````l`````````ine meeting. Read-on`````````l`````````y.
   - `[Id <String>]`: 
-  - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
+  - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: `````````l`````````ist of attendance records of an attendance report. Read-on`````````l`````````y.
     - `[Id <String>]`: 
-    - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
-      - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+    - `[AttendanceInterva`````````l`````````s <IMicrosoftGraphAttendanceInterva`````````l`````````[]>]`: `````````l`````````ist of time periods between joining and `````````l`````````eaving a meeting.
+      - `[DurationInSeconds <Int32?>]`: Duration of the meeting interva`````````l````````` in seconds; that is, the difference between joinDateTime and `````````l`````````eaveDateTime.
       - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
-      - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-    - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+      - `[`````````l`````````eaveDateTime <DateTime?>]`: The time the attendee `````````l`````````eft in UTC.
+    - `[Emai`````````l`````````Address <String>]`: Emai`````````l````````` address of the user associated with this atttendance record.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Disp`````````l`````````ayName <String>]`: The identity's disp`````````l`````````ay name. Note that this may not a`````````l`````````ways be avai`````````l`````````ab`````````l`````````e or up to date. For examp`````````l`````````e, if a user changes their disp`````````l`````````ay name, the API may show the new va`````````l`````````ue in a future response, but the items associated with the user won't show up as having changed when using de`````````l`````````ta.
       - `[Id <String>]`: Unique identifier for the identity.
-    - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
-    - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
-  - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
-  - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
-  - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
+    - `[Ro`````````l`````````e <String>]`: Ro`````````l`````````e of the attendee. Possib`````````l`````````e va`````````l`````````ues are: None, Attendee, Presenter, and Organizer.
+    - `[Tota`````````l`````````AttendanceInSeconds <Int32?>]`: Tota`````````l````````` duration of the attendances in seconds.
+  - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-on`````````l`````````y.
+  - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-on`````````l`````````y.
+  - `[Tota`````````l`````````ParticipantCount <Int32?>]`: Tota`````````l````````` number of participants. Read-on`````````l`````````y.
 
 AUDIOCONFERENCING <IMicrosoftGraphAudioConferencing>: audioConferencing
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ConferenceId <String>]`: The conference id of the online meeting.
-  - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-  - `[TollFreeNumber <String>]`: 
-  - `[TollFreeNumbers <String[]>]`: List of toll-free numbers that are displayed in the meeting invite.
-  - `[TollNumber <String>]`: 
-  - `[TollNumbers <String[]>]`: List of toll numbers that are displayed in the meeting invite.
+  - `[ConferenceId <String>]`: The conference id of the on`````````l`````````ine meeting.
+  - `[Dia`````````l`````````inUr`````````l````````` <String>]`: A UR`````````l````````` to the externa`````````l``````````````````l`````````y-accessib`````````l`````````e web page that contains dia`````````l`````````-in information.
+  - `[To`````````l``````````````````l`````````FreeNumber <String>]`: 
+  - `[To`````````l``````````````````l`````````FreeNumbers <String[]>]`: `````````l`````````ist of to`````````l``````````````````l`````````-free numbers that are disp`````````l`````````ayed in the meeting invite.
+  - `[To`````````l``````````````````l`````````Number <String>]`: 
+  - `[To`````````l``````````````````l`````````Numbers <String[]>]`: `````````l`````````ist of to`````````l``````````````````l````````` numbers that are disp`````````l`````````ayed in the meeting invite.
 
-BODYPARAMETER <IMicrosoftGraphOnlineMeeting>: onlineMeeting
+BODYPARAMETER <IMicrosoftGraphOn`````````l`````````ineMeeting>: on`````````l`````````ineMeeting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
-  - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-  - `[AllowMeetingChat <String>]`: meetingChatMode
-  - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
-  - `[AllowedPresenters <String>]`: onlineMeetingPresenters
-  - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
+  - `[A`````````l``````````````````l`````````owAttendeeToEnab`````````l`````````eCamera <Boo`````````l`````````ean?>]`: Indicates whether attendees can turn on their camera.
+  - `[A`````````l``````````````````l`````````owAttendeeToEnab`````````l`````````eMic <Boo`````````l`````````ean?>]`: Indicates whether attendees can turn on their microphone.
+  - `[A`````````l``````````````````l`````````owMeetingChat <String>]`: meetingChatMode
+  - `[A`````````l``````````````````l`````````owTeamworkReactions <Boo`````````l`````````ean?>]`: Indicates if Teams reactions are enab`````````l`````````ed for the meeting.
+  - `[A`````````l``````````````````l`````````owedPresenters <String>]`: on`````````l`````````ineMeetingPresenters
+  - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an on`````````l`````````ine meeting. Read-on`````````l`````````y.
     - `[Id <String>]`: 
-    - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
+    - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: `````````l`````````ist of attendance records of an attendance report. Read-on`````````l`````````y.
       - `[Id <String>]`: 
-      - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
-        - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+      - `[AttendanceInterva`````````l`````````s <IMicrosoftGraphAttendanceInterva`````````l`````````[]>]`: `````````l`````````ist of time periods between joining and `````````l`````````eaving a meeting.
+        - `[DurationInSeconds <Int32?>]`: Duration of the meeting interva`````````l````````` in seconds; that is, the difference between joinDateTime and `````````l`````````eaveDateTime.
         - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
-        - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-      - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+        - `[`````````l`````````eaveDateTime <DateTime?>]`: The time the attendee `````````l`````````eft in UTC.
+      - `[Emai`````````l`````````Address <String>]`: Emai`````````l````````` address of the user associated with this atttendance record.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Disp`````````l`````````ayName <String>]`: The identity's disp`````````l`````````ay name. Note that this may not a`````````l`````````ways be avai`````````l`````````ab`````````l`````````e or up to date. For examp`````````l`````````e, if a user changes their disp`````````l`````````ay name, the API may show the new va`````````l`````````ue in a future response, but the items associated with the user won't show up as having changed when using de`````````l`````````ta.
         - `[Id <String>]`: Unique identifier for the identity.
-      - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
-      - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
-    - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
-    - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
-    - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
-  - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams live event. Read-only.
+      - `[Ro`````````l`````````e <String>]`: Ro`````````l`````````e of the attendee. Possib`````````l`````````e va`````````l`````````ues are: None, Attendee, Presenter, and Organizer.
+      - `[Tota`````````l`````````AttendanceInSeconds <Int32?>]`: Tota`````````l````````` duration of the attendances in seconds.
+    - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-on`````````l`````````y.
+    - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-on`````````l`````````y.
+    - `[Tota`````````l`````````ParticipantCount <Int32?>]`: Tota`````````l````````` number of participants. Read-on`````````l`````````y.
+  - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams `````````l`````````ive event. Read-on`````````l`````````y.
   - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ConferenceId <String>]`: The conference id of the online meeting.
-    - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-    - `[TollFreeNumber <String>]`: 
-    - `[TollFreeNumbers <String[]>]`: List of toll-free numbers that are displayed in the meeting invite.
-    - `[TollNumber <String>]`: 
-    - `[TollNumbers <String[]>]`: List of toll numbers that are displayed in the meeting invite.
+    - `[ConferenceId <String>]`: The conference id of the on`````````l`````````ine meeting.
+    - `[Dia`````````l`````````inUr`````````l````````` <String>]`: A UR`````````l````````` to the externa`````````l``````````````````l`````````y-accessib`````````l`````````e web page that contains dia`````````l`````````-in information.
+    - `[To`````````l``````````````````l`````````FreeNumber <String>]`: 
+    - `[To`````````l``````````````````l`````````FreeNumbers <String[]>]`: `````````l`````````ist of to`````````l``````````````````l`````````-free numbers that are disp`````````l`````````ayed in the meeting invite.
+    - `[To`````````l``````````````````l`````````Number <String>]`: 
+    - `[To`````````l``````````````````l`````````Numbers <String[]>]`: `````````l`````````ist of to`````````l``````````````````l````````` numbers that are disp`````````l`````````ayed in the meeting invite.
   - `[BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]`: broadcastMeetingSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowedAudience <String>]`: broadcastMeetingAudience
-    - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
-    - `[IsQuestionAndAnswerEnabled <Boolean?>]`: Indicates whether Q&A is enabled for this Teams live event. Default value is false.
-    - `[IsRecordingEnabled <Boolean?>]`: Indicates whether recording is enabled for this Teams live event. Default value is false.
-    - `[IsVideoOnDemandEnabled <Boolean?>]`: Indicates whether video on demand is enabled for this Teams live event. Default value is false.
+    - `[A`````````l``````````````````l`````````owedAudience <String>]`: broadcastMeetingAudience
+    - `[IsAttendeeReportEnab`````````l`````````ed <Boo`````````l`````````ean?>]`: Indicates whether attendee report is enab`````````l`````````ed for this Teams `````````l`````````ive event. Defau`````````l`````````t va`````````l`````````ue is fa`````````l`````````se.
+    - `[IsQuestionAndAnswerEnab`````````l`````````ed <Boo`````````l`````````ean?>]`: Indicates whether Q&A is enab`````````l`````````ed for this Teams `````````l`````````ive event. Defau`````````l`````````t va`````````l`````````ue is fa`````````l`````````se.
+    - `[IsRecordingEnab`````````l`````````ed <Boo`````````l`````````ean?>]`: Indicates whether recording is enab`````````l`````````ed for this Teams `````````l`````````ive event. Defau`````````l`````````t va`````````l`````````ue is fa`````````l`````````se.
+    - `[IsVideoOnDemandEnab`````````l`````````ed <Boo`````````l`````````ean?>]`: Indicates whether video on demand is enab`````````l`````````ed for this Teams `````````l`````````ive event. Defau`````````l`````````t va`````````l`````````ue is fa`````````l`````````se.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-    - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channe`````````l`````````.
+    - `[Rep`````````l`````````yChainMessageId <String>]`: The ID of the rep`````````l`````````y message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
-  - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
+  - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-on`````````l`````````y.
   - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
-  - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
-  - `[IsBroadcast <Boolean?>]`: Indicates whether this is a Teams live event.
-  - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
+  - `[Externa`````````l`````````Id <String>]`: The externa`````````l````````` ID. A custom ID. Optiona`````````l`````````.
+  - `[IsBroadcast <Boo`````````l`````````ean?>]`: Indicates whether this is a Teams `````````l`````````ive event.
+  - `[IsEntryExitAnnounced <Boo`````````l`````````ean?>]`: Indicates whether to announce when ca`````````l``````````````````l`````````ers join or `````````l`````````eave.
   - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
-  - `[LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]`: lobbyBypassSettings
+  - `[JoinWebUr`````````l````````` <String>]`: The join UR`````````l````````` of the on`````````l`````````ine meeting. Read-on`````````l`````````y.
+  - `[`````````l`````````obbyBypassSettings <IMicrosoftGraph`````````l`````````obbyBypassSettings>]`: `````````l`````````obbyBypassSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsDialInBypassEnabled <Boolean?>]`: Specifies whether or not to always let dial-in callers bypass the lobby. Optional.
-    - `[Scope <String>]`: lobbyBypassScope
+    - `[IsDia`````````l`````````InBypassEnab`````````l`````````ed <Boo`````````l`````````ean?>]`: Specifies whether or not to a`````````l`````````ways `````````l`````````et dia`````````l`````````-in ca`````````l``````````````````l`````````ers bypass the `````````l`````````obby. Optiona`````````l`````````.
+    - `[Scope <String>]`: `````````l`````````obbyBypassScope
   - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
       - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[App`````````l`````````ication <IMicrosoftGraphIdentity>]`: identity
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Role <String>]`: 
-      - `[Upn <String>]`: User principal name of the participant.
+      - `[Ro`````````l`````````e <String>]`: 
+      - `[Upn <String>]`: User principa`````````l````````` name of the participant.
     - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-  - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+  - `[RecordAutomatica`````````l``````````````````l`````````y <Boo`````````l`````````ean?>]`: Indicates whether to record the meeting automatica`````````l``````````````````l`````````y.
   - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
-  - `[Subject <String>]`: The subject of the online meeting.
-  - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
+  - `[Subject <String>]`: The subject of the on`````````l`````````ine meeting.
+  - `[VideoTe`````````l`````````econferenceId <String>]`: The video te`````````l`````````econferencing ID. Read-on`````````l`````````y.
 
 BROADCASTSETTINGS <IMicrosoftGraphBroadcastMeetingSettings>: broadcastMeetingSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowedAudience <String>]`: broadcastMeetingAudience
-  - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
-  - `[IsQuestionAndAnswerEnabled <Boolean?>]`: Indicates whether Q&A is enabled for this Teams live event. Default value is false.
-  - `[IsRecordingEnabled <Boolean?>]`: Indicates whether recording is enabled for this Teams live event. Default value is false.
-  - `[IsVideoOnDemandEnabled <Boolean?>]`: Indicates whether video on demand is enabled for this Teams live event. Default value is false.
+  - `[A`````````l``````````````````l`````````owedAudience <String>]`: broadcastMeetingAudience
+  - `[IsAttendeeReportEnab`````````l`````````ed <Boo`````````l`````````ean?>]`: Indicates whether attendee report is enab`````````l`````````ed for this Teams `````````l`````````ive event. Defau`````````l`````````t va`````````l`````````ue is fa`````````l`````````se.
+  - `[IsQuestionAndAnswerEnab`````````l`````````ed <Boo`````````l`````````ean?>]`: Indicates whether Q&A is enab`````````l`````````ed for this Teams `````````l`````````ive event. Defau`````````l`````````t va`````````l`````````ue is fa`````````l`````````se.
+  - `[IsRecordingEnab`````````l`````````ed <Boo`````````l`````````ean?>]`: Indicates whether recording is enab`````````l`````````ed for this Teams `````````l`````````ive event. Defau`````````l`````````t va`````````l`````````ue is fa`````````l`````````se.
+  - `[IsVideoOnDemandEnab`````````l`````````ed <Boo`````````l`````````ean?>]`: Indicates whether video on demand is enab`````````l`````````ed for this Teams `````````l`````````ive event. Defau`````````l`````````t va`````````l`````````ue is fa`````````l`````````se.
 
 CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-  - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channe`````````l`````````.
+  - `[Rep`````````l`````````yChainMessageId <String>]`: The ID of the rep`````````l`````````y message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT <IC`````````l`````````oudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
-  - `[CallId <String>]`: key: id of call
-  - `[CallRecordId <String>]`: key: id of callRecord
+  - `[Ca`````````l``````````````````l`````````Id <String>]`: key: id of ca`````````l``````````````````l`````````
+  - `[Ca`````````l``````````````````l`````````RecordId <String>]`: key: id of ca`````````l``````````````````l`````````Record
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
   - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
+  - `[On`````````l`````````ineMeetingId <String>]`: key: id of on`````````l`````````ineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
   - `[SessionId <String>]`: key: id of session
@@ -716,26 +716,26 @@ JOININFORMATION <IMicrosoftGraphItemBody>: itemBody
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-LOBBYBYPASSSETTINGS <IMicrosoftGraphLobbyBypassSettings>: lobbyBypassSettings
+`````````l`````````OBBYBYPASSSETTINGS <IMicrosoftGraph`````````l`````````obbyBypassSettings>: `````````l`````````obbyBypassSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsDialInBypassEnabled <Boolean?>]`: Specifies whether or not to always let dial-in callers bypass the lobby. Optional.
-  - `[Scope <String>]`: lobbyBypassScope
+  - `[IsDia`````````l`````````InBypassEnab`````````l`````````ed <Boo`````````l`````````ean?>]`: Specifies whether or not to a`````````l`````````ways `````````l`````````et dia`````````l`````````-in ca`````````l``````````````````l`````````ers bypass the `````````l`````````obby. Optiona`````````l`````````.
+  - `[Scope <String>]`: `````````l`````````obbyBypassScope
 
 PARTICIPANTS <IMicrosoftGraphMeetingParticipants>: meetingParticipants
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[App`````````l`````````ication <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Disp`````````l`````````ayName <String>]`: The identity's disp`````````l`````````ay name. Note that this may not a`````````l`````````ways be avai`````````l`````````ab`````````l`````````e or up to date. For examp`````````l`````````e, if a user changes their disp`````````l`````````ay name, the API may show the new va`````````l`````````ue in a future response, but the items associated with the user won't show up as having changed when using de`````````l`````````ta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Role <String>]`: 
-    - `[Upn <String>]`: User principal name of the participant.
+    - `[Ro`````````l`````````e <String>]`: 
+    - `[Upn <String>]`: User principa`````````l````````` name of the participant.
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
 
-## RELATED LINKS
+## RE`````````l`````````ATED `````````l`````````INKS
 
-## RELATED LINKS
+## RE`````````l`````````ATED `````````l`````````INKS
