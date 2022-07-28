@@ -1,64 +1,64 @@
-﻿---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignmentrequest
+---
+external help file: Microsoft.Graph.I``````d``````entity.Governance-help.xml
+Mo``````d``````ule Name: Microsoft.Graph.I``````d``````entity.Governance
+online version: https://``````d``````ocs.microsoft.com/en-us/powershell/mo``````d``````ule/microsoft.graph.i``````d``````entity.governance/up``````d``````ate-mgentitlementmanagementassignmentrequest
 schema: 2.0.0
 ---
 
-# Update-MgEntitlementManagementAssignmentRequest
+# Up``````d``````ate-MgEntitlementManagementAssignmentRequest
 
 ## SYNOPSIS
 Invoke action reprocess
 
 ## SYNTAX
 
-### Reprocess (Default)
+### Reprocess (``````d``````efault)
 ```
-Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String> [-PassThru]
+Up``````d``````ate-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI``````d`````` <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateExpanded
+### Up``````d``````ateExpan``````d``````e``````d``````
 ```
-Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
- [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
- [-Assignment <IMicrosoftGraphAccessPackageAssignment1>] [-CompletedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
- [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
+Up``````d``````ate-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI``````d`````` <String>
+ [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-A``````d````````````d``````itionalProperties <Hashtable>]
+ [-Assignment <IMicrosoftGraphAccessPackageAssignment1>] [-Complete``````d````````````d``````ateTime <``````d``````ateTime>]
+ [-Create``````d````````````d``````ateTime <``````d``````ateTime>] [-I``````d`````` <String>] [-RequestType <String>]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Sche``````d``````ule <IMicrosoftGraphEntitlementManagementSche``````d``````ule>]
  [-State <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Up``````d``````ate
 ```
-Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest1> [-PassThru] [-WhatIf] [-Confirm]
+Up``````d``````ate-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI``````d`````` <String>
+ -Bo``````d``````yParameter <IMicrosoftGraphAccessPackageAssignmentRequest1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 ```
-Update-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
- [-Assignment <IMicrosoftGraphAccessPackageAssignment1>] [-CompletedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
- [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
+Up``````d``````ate-MgEntitlementManagementAssignmentRequest -InputObject <II``````d``````entityGovernanceI``````d``````entity>
+ [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-A``````d````````````d``````itionalProperties <Hashtable>]
+ [-Assignment <IMicrosoftGraphAccessPackageAssignment1>] [-Complete``````d````````````d``````ateTime <``````d``````ateTime>]
+ [-Create``````d````````````d``````ateTime <``````d``````ateTime>] [-I``````d`````` <String>] [-RequestType <String>]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Sche``````d``````ule <IMicrosoftGraphEntitlementManagementSche``````d``````ule>]
  [-State <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### Up``````d``````ateViaI``````d``````entity
 ```
-Update-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest1> [-PassThru] [-WhatIf] [-Confirm]
+Up``````d``````ate-MgEntitlementManagementAssignmentRequest -InputObject <II``````d``````entityGovernanceI``````d``````entity>
+ -Bo``````d``````yParameter <IMicrosoftGraphAccessPackageAssignmentRequest1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### ReprocessViaIdentity
+### ReprocessViaI``````d``````entity
 ```
-Update-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity> [-PassThru]
+Up``````d``````ate-MgEntitlementManagementAssignmentRequest -InputObject <II``````d``````entityGovernanceI``````d``````entity> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
+## ``````d``````ESCRIPTION
 Invoke action reprocess
 
 ## EXAMPLES
@@ -67,177 +67,177 @@ Invoke action reprocess
 
 ### -AccessPackage
 accessPackage
-To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGE properties and create a hash table.
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for ACCESSPACKAGE properties an``````d`````` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessPackage1
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -AccessPackageAssignmentRequestId
-key: id of accessPackageAssignmentRequest
+### -AccessPackageAssignmentRequestI``````d``````
+key: i``````d`````` of accessPackageAssignmentRequest
 
 ```yaml
 Type: String
-Parameter Sets: Reprocess, UpdateExpanded, Update
+Parameter Sets: Reprocess, Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ate
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``````d``````: True
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -A``````d````````````d``````itionalProperties
+A``````d````````````d``````itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -Assignment
 accessPackageAssignment
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENT properties and create a hash table.
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for ASSIGNMENT properties an``````d`````` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessPackageAssignment1
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -BodyParameter
+### -Bo``````d``````yParameter
 accessPackageAssignmentRequest
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for BO``````d``````YPARAMETER properties an``````d`````` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessPackageAssignmentRequest1
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Up``````d``````ate, Up``````d``````ateViaI``````d``````entity
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``````d``````: True
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -CompletedDateTime
-The date of the end of processing, either successful or failure, of a request.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
+### -Complete``````d````````````d``````ateTime
+The ``````d``````ate of the en``````d`````` of processing, either successful or failure, of a request.
+The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time.
+For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Rea``````d``````-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: ``````d``````ateTime
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -CreatedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
+### -Create``````d````````````d``````ateTime
+The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time.
+For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Rea``````d``````-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: ``````d``````ateTime
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -Id
+### -I``````d``````
 .
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I``````d``````entity Parameter
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for INPUTOBJECT properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity, ReprocessViaIdentity
+Type: II``````d``````entityGovernanceI``````d``````entity
+Parameter Sets: Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entity, ReprocessViaI``````d``````entity
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``````d``````: True
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman``````d`````` succee``````d``````s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -Requestor
 accessPackageSubject
-To construct, please use Get-Help -Online and see NOTES section for REQUESTOR properties and create a hash table.
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for REQUESTOR properties an``````d`````` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessPackageSubject1
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -RequestType
@@ -245,30 +245,30 @@ accessPackageRequestType
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -Schedule
-entitlementManagementSchedule
-To construct, please use Get-Help -Online and see NOTES section for SCHEDULE properties and create a hash table.
+### -Sche``````d``````ule
+entitlementManagementSche``````d``````ule
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for SCHE``````d``````ULE properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEntitlementManagementSchedule
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphEntitlementManagementSche``````d``````ule
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -State
@@ -276,70 +276,70 @@ accessPackageRequestState
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -Status
 More information on the request processing status.
-Read-only.
+Rea``````d``````-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``````d``````ateExpan``````d``````e``````d``````, Up``````d``````ateViaI``````d``````entityExpan``````d``````e``````d``````
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm``````d``````let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul``````d`````` happen if the cm``````d``````let runs.
+The cm``````d``````let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm``````d``````let supports the common parameters: -``````d``````ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an``````d`````` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI``````d``````=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest1
+### Microsoft.Graph.PowerShell.Mo``````d``````els.II``````d``````entityGovernanceI``````d``````entity
+### Microsoft.Graph.PowerShell.Mo``````d``````els.IMicrosoftGraphAccessPackageAssignmentRequest1
 ## OUTPUTS
 
 ### System.Boolean
@@ -349,459 +349,459 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ``````d``````escribe``````d`````` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
 ACCESSPACKAGE <IMicrosoftGraphAccessPackage1>: accessPackage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[I``````d`````` <String>]`: 
   - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: 
-    - `[Id <String>]`: 
+    - `[I``````d`````` <String>]`: 
     - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
-    - `[AllowedTargetScope <String>]`: allowedTargetScope
+    - `[Allowe``````d``````TargetScope <String>]`: allowe``````d``````TargetScope
     - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: 
-      - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Read-only. Nullable. Supports $expand.
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+      - `[I``````d`````` <String>]`: 
+      - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Rea``````d``````-only. Nullable. Supports $expan``````d``````.
       - `[CatalogType <String>]`: accessPackageCatalogType
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-      - `[Description <String>]`: The description of the access package catalog.
-      - `[DisplayName <String>]`: The display name of the access package catalog. Supports $filter (eq, contains).
-      - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requested by users outside of the tenant.
-      - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+      - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+      - `[``````d``````escription <String>]`: The ``````d``````escription of the access package catalog.
+      - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the access package catalog. Supports $filter (eq, contains).
+      - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requeste``````d`````` by users outsi``````d``````e of the tenant.
+      - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
       - `[State <String>]`: accessPackageCatalogState
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Description <String>]`: The description of the policy.
-    - `[DisplayName <String>]`: The display name of the policy. Supports $filter (eq).
+    - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[``````d``````escription <String>]`: The ``````d``````escription of the policy.
+    - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the policy. Supports $filter (eq).
     - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
-      - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+      - `[``````d``````uration <TimeSpan?>]`: The requestor's ``````d``````esire``````d`````` ``````d``````uration of access represente``````d`````` in ISO 8601 format for ``````d``````urations. For example, PT3H refers to three hours.  If specifie``````d`````` in a request, en``````d````````````d``````ateTime shoul``````d`````` not be present an``````d`````` the type property shoul``````d`````` be set to after``````d``````uration.
+      - `[En``````d````````````d``````ateTime <``````d``````ateTime?>]`: Timestamp of ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Type <String>]`: expirationPatternType
-    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]`: accessPackageAssignmentApprovalSettings
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IsApprovalRequiredForAdd <Boolean?>]`: If false, then approval is not required for new requests in this policy.
-      - `[IsApprovalRequiredForUpdate <Boolean?>]`: If false, then approval is not required for updates to requests in this policy.
-      - `[Stages <IMicrosoftGraphAccessPackageApprovalStage[]>]`: If approval is required, the one, two or three elements of this collection define each of the stages of approval. An empty array is present if no approval is required.
-        - `[DurationBeforeAutomaticDenial <TimeSpan?>]`: The number of days that a request can be pending a response before it is automatically denied.
-        - `[DurationBeforeEscalation <TimeSpan?>]`: If escalation is required, the time a request can be pending a response from a primary approver.
-        - `[EscalationApprovers <IMicrosoftGraphSubjectSet[]>]`: If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who will be asked to approve requests.
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+      - `[IsApprovalRequire``````d``````ForA``````d````````````d`````` <Boolean?>]`: If false, then approval is not require``````d`````` for new requests in this policy.
+      - `[IsApprovalRequire``````d``````ForUp``````d``````ate <Boolean?>]`: If false, then approval is not require``````d`````` for up``````d``````ates to requests in this policy.
+      - `[Stages <IMicrosoftGraphAccessPackageApprovalStage[]>]`: If approval is require``````d``````, the one, two or three elements of this collection ``````d``````efine each of the stages of approval. An empty array is present if no approval is require``````d``````.
+        - `[``````d``````urationBeforeAutomatic``````d``````enial <TimeSpan?>]`: The number of ``````d``````ays that a request can be pen``````d``````ing a response before it is automatically ``````d``````enie``````d``````.
+        - `[``````d``````urationBeforeEscalation <TimeSpan?>]`: If escalation is require``````d``````, the time a request can be pen``````d``````ing a response from a primary approver.
+        - `[EscalationApprovers <IMicrosoftGraphSubjectSet[]>]`: If escalation is enable``````d`````` an``````d`````` the primary approvers ``````d``````o not respon``````d`````` before the escalation time, the escalationApprovers are the users who will be aske``````d`````` to approve requests.
         - `[FallbackEscalationApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who are the fallback escalation approvers.
         - `[FallbackPrimaryApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who are the fallback primary approvers.
-        - `[IsApproverJustificationRequired <Boolean?>]`: Indicates whether the approver is required to provide a justification for approving a request.
-        - `[IsEscalationEnabled <Boolean?>]`: If true, then one or more escalationApprovers are configured in this approval stage.
-        - `[PrimaryApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who will be asked to approve requests. A collection of singleUser, groupMembers, requestorManager, internalSponsors or externalSponsors.
+        - `[IsApproverJustificationRequire``````d`````` <Boolean?>]`: In``````d``````icates whether the approver is require``````d`````` to provi``````d``````e a justification for approving a request.
+        - `[IsEscalationEnable``````d`````` <Boolean?>]`: If true, then one or more escalationApprovers are configure``````d`````` in this approval stage.
+        - `[PrimaryApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who will be aske``````d`````` to approve requests. A collection of singleUser, groupMembers, requestorManager, internalSponsors or externalSponsors.
     - `[RequestorSettings <IMicrosoftGraphAccessPackageAssignmentRequestorSettings>]`: accessPackageAssignmentRequestorSettings
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowCustomAssignmentSchedule <Boolean?>]`: If false, the requestor is not permitted to include a schedule in their request.
-      - `[EnableOnBehalfRequestorsToAddAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to add access for another principal.
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+      - `[AllowCustomAssignmentSche``````d``````ule <Boolean?>]`: If false, the requestor is not permitte``````d`````` to inclu``````d``````e a sche``````d``````ule in their request.
+      - `[EnableOnBehalfRequestorsToA``````d````````````d``````Access <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to a``````d````````````d`````` access for another principal.
       - `[EnableOnBehalfRequestorsToRemoveAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to remove access for another principal.
-      - `[EnableOnBehalfRequestorsToUpdateAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to update access for another principal.
-      - `[EnableTargetsToSelfAddAccess <Boolean?>]`: If true, allows requestors to create a request to add access for themselves.
+      - `[EnableOnBehalfRequestorsToUp``````d``````ateAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to up``````d``````ate access for another principal.
+      - `[EnableTargetsToSelfA``````d````````````d``````Access <Boolean?>]`: If true, allows requestors to create a request to a``````d````````````d`````` access for themselves.
       - `[EnableTargetsToSelfRemoveAccess <Boolean?>]`: If true, allows requestors to create a request to remove their access.
-      - `[EnableTargetsToSelfUpdateAccess <Boolean?>]`: If true, allows requestors to create a request to update their access.
+      - `[EnableTargetsToSelfUp``````d``````ateAccess <Boolean?>]`: If true, allows requestors to create a request to up``````d``````ate their access.
       - `[OnBehalfRequestors <IMicrosoftGraphSubjectSet[]>]`: The principals who can request on-behalf-of others.
     - `[ReviewSettings <IMicrosoftGraphAccessPackageAssignmentReviewSettings>]`: accessPackageAssignmentReviewSettings
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
       - `[ExpirationBehavior <String>]`: accessReviewExpirationBehavior
-      - `[FallbackReviewers <IMicrosoftGraphSubjectSet[]>]`: This collection specifies the users who will be the fallback reviewers when the primary reviewers don't respond.
-      - `[IsEnabled <Boolean?>]`: If true, access reviews are required for assignments through this policy.
-      - `[IsRecommendationEnabled <Boolean?>]`: Specifies whether to display recommendations to the reviewer. The default value is true.
-      - `[IsReviewerJustificationRequired <Boolean?>]`: Specifies whether the reviewer must provide justification for the approval. The default value is true.
+      - `[FallbackReviewers <IMicrosoftGraphSubjectSet[]>]`: This collection specifies the users who will be the fallback reviewers when the primary reviewers ``````d``````on't respon``````d``````.
+      - `[IsEnable``````d`````` <Boolean?>]`: If true, access reviews are require``````d`````` for assignments through this policy.
+      - `[IsRecommen``````d``````ationEnable``````d`````` <Boolean?>]`: Specifies whether to ``````d``````isplay recommen``````d``````ations to the reviewer. The ``````d``````efault value is true.
+      - `[IsReviewerJustificationRequire``````d`````` <Boolean?>]`: Specifies whether the reviewer must provi``````d``````e justification for the approval. The ``````d``````efault value is true.
       - `[IsSelfReview <Boolean?>]`: Specifies whether the principals can review their own assignments.
       - `[PrimaryReviewers <IMicrosoftGraphSubjectSet[]>]`: This collection specifies the users or group of users who will review the access package assignments.
-      - `[Schedule <IMicrosoftGraphEntitlementManagementSchedule>]`: entitlementManagementSchedule
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Sche``````d``````ule <IMicrosoftGraphEntitlementManagementSche``````d``````ule>]`: entitlementManagementSche``````d``````ule
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
         - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
-        - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Recurrence <IMicrosoftGraphPatterne``````d``````Recurrence>]`: patterne``````d``````Recurrence
+          - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
           - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-            - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-            - `[FirstDayOfWeek <String>]`: dayOfWeek
-            - `[Index <String>]`: weekIndex
-            - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+            - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+            - `[``````d``````ayOfMonth <Int32?>]`: The ``````d``````ay of the month on which the event occurs. Require``````d`````` if type is absoluteMonthly or absoluteYearly.
+            - `[``````d``````aysOfWeek <String[]>]`: A collection of the ``````d``````ays of the week on which the event occurs. The possible values are: sun``````d``````ay, mon``````d``````ay, tues``````d``````ay, we``````d``````nes``````d``````ay, thurs``````d``````ay, fri``````d``````ay, satur``````d``````ay. If type is relativeMonthly or relativeYearly, an``````d`````` ``````d``````aysOfWeek specifies more than one ``````d``````ay, the event falls on the first ``````d``````ay that satisfies the pattern.  Require``````d`````` if type is weekly, relativeMonthly, or relativeYearly.
+            - `[First``````d``````ayOfWeek <String>]`: ``````d``````ayOfWeek
+            - `[In``````d``````ex <String>]`: weekIn``````d``````ex
+            - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in ``````d``````ays, weeks, months, or years, ``````d``````epen``````d``````ing on the type. Require``````d``````.
             - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
             - `[Type <String>]`: recurrencePatternType
           - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-            - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-            - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-            - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-            - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
+            - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+            - `[En``````d````````````d``````ate <``````d``````ateTime?>]`: The ``````d``````ate to stop applying the recurrence pattern. ``````d``````epen``````d``````ing on the recurrence pattern of the event, the last occurrence of the meeting may not be this ``````d``````ate. Require``````d`````` if type is en``````d````````````d``````ate.
+            - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Require``````d`````` an``````d`````` must be positive if type is numbere``````d``````.
+            - `[RecurrenceTimeZone <String>]`: Time zone for the start``````d``````ate an``````d`````` en``````d````````````d``````ate properties. Optional. If not specifie``````d``````, the time zone of the event is use``````d``````.
+            - `[Start``````d``````ate <``````d``````ateTime?>]`: The ``````d``````ate to start applying the recurrence pattern. The first occurrence of the meeting may be this ``````d``````ate or later, ``````d``````epen``````d``````ing on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Require``````d``````.
             - `[Type <String>]`: recurrenceRangeType
-        - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>]`: The principals that can be assigned access from an access package through this policy.
+        - `[Start``````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[SpecificAllowe``````d``````Targets <IMicrosoftGraphSubjectSet[]>]`: The principals that can be assigne``````d`````` access from an access package through this policy.
   - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[Description <String>]`: The description of the access package.
-  - `[DisplayName <String>]`: The display name of the access package. Supports $filter (eq, contains).
-  - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
-  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+  - `[``````d``````escription <String>]`: The ``````d``````escription of the access package.
+  - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the access package. Supports $filter (eq, contains).
+  - `[IsHi``````d````````````d``````en <Boolean?>]`: Whether the access package is hi``````d````````````d``````en from the requestor.
+  - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
 
 ASSIGNMENT <IMicrosoftGraphAccessPackageAssignment1>: accessPackageAssignment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[I``````d`````` <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[I``````d`````` <String>]`: 
     - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: 
-      - `[Id <String>]`: 
+      - `[I``````d`````` <String>]`: 
       - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
-      - `[AllowedTargetScope <String>]`: allowedTargetScope
+      - `[Allowe``````d``````TargetScope <String>]`: allowe``````d``````TargetScope
       - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: 
-        - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Read-only. Nullable. Supports $expand.
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+        - `[I``````d`````` <String>]`: 
+        - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Rea``````d``````-only. Nullable. Supports $expan``````d``````.
         - `[CatalogType <String>]`: accessPackageCatalogType
-        - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[Description <String>]`: The description of the access package catalog.
-        - `[DisplayName <String>]`: The display name of the access package catalog. Supports $filter (eq, contains).
-        - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requested by users outside of the tenant.
-        - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+        - `[``````d``````escription <String>]`: The ``````d``````escription of the access package catalog.
+        - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the access package catalog. Supports $filter (eq, contains).
+        - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requeste``````d`````` by users outsi``````d``````e of the tenant.
+        - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
         - `[State <String>]`: accessPackageCatalogState
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Description <String>]`: The description of the policy.
-      - `[DisplayName <String>]`: The display name of the policy. Supports $filter (eq).
+      - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[``````d``````escription <String>]`: The ``````d``````escription of the policy.
+      - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the policy. Supports $filter (eq).
       - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
-        - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+        - `[``````d``````uration <TimeSpan?>]`: The requestor's ``````d``````esire``````d`````` ``````d``````uration of access represente``````d`````` in ISO 8601 format for ``````d``````urations. For example, PT3H refers to three hours.  If specifie``````d`````` in a request, en``````d````````````d``````ateTime shoul``````d`````` not be present an``````d`````` the type property shoul``````d`````` be set to after``````d``````uration.
+        - `[En``````d````````````d``````ateTime <``````d``````ateTime?>]`: Timestamp of ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Type <String>]`: expirationPatternType
-      - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]`: accessPackageAssignmentApprovalSettings
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[IsApprovalRequiredForAdd <Boolean?>]`: If false, then approval is not required for new requests in this policy.
-        - `[IsApprovalRequiredForUpdate <Boolean?>]`: If false, then approval is not required for updates to requests in this policy.
-        - `[Stages <IMicrosoftGraphAccessPackageApprovalStage[]>]`: If approval is required, the one, two or three elements of this collection define each of the stages of approval. An empty array is present if no approval is required.
-          - `[DurationBeforeAutomaticDenial <TimeSpan?>]`: The number of days that a request can be pending a response before it is automatically denied.
-          - `[DurationBeforeEscalation <TimeSpan?>]`: If escalation is required, the time a request can be pending a response from a primary approver.
-          - `[EscalationApprovers <IMicrosoftGraphSubjectSet[]>]`: If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who will be asked to approve requests.
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+        - `[IsApprovalRequire``````d``````ForA``````d````````````d`````` <Boolean?>]`: If false, then approval is not require``````d`````` for new requests in this policy.
+        - `[IsApprovalRequire``````d``````ForUp``````d``````ate <Boolean?>]`: If false, then approval is not require``````d`````` for up``````d``````ates to requests in this policy.
+        - `[Stages <IMicrosoftGraphAccessPackageApprovalStage[]>]`: If approval is require``````d``````, the one, two or three elements of this collection ``````d``````efine each of the stages of approval. An empty array is present if no approval is require``````d``````.
+          - `[``````d``````urationBeforeAutomatic``````d``````enial <TimeSpan?>]`: The number of ``````d``````ays that a request can be pen``````d``````ing a response before it is automatically ``````d``````enie``````d``````.
+          - `[``````d``````urationBeforeEscalation <TimeSpan?>]`: If escalation is require``````d``````, the time a request can be pen``````d``````ing a response from a primary approver.
+          - `[EscalationApprovers <IMicrosoftGraphSubjectSet[]>]`: If escalation is enable``````d`````` an``````d`````` the primary approvers ``````d``````o not respon``````d`````` before the escalation time, the escalationApprovers are the users who will be aske``````d`````` to approve requests.
           - `[FallbackEscalationApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who are the fallback escalation approvers.
           - `[FallbackPrimaryApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who are the fallback primary approvers.
-          - `[IsApproverJustificationRequired <Boolean?>]`: Indicates whether the approver is required to provide a justification for approving a request.
-          - `[IsEscalationEnabled <Boolean?>]`: If true, then one or more escalationApprovers are configured in this approval stage.
-          - `[PrimaryApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who will be asked to approve requests. A collection of singleUser, groupMembers, requestorManager, internalSponsors or externalSponsors.
+          - `[IsApproverJustificationRequire``````d`````` <Boolean?>]`: In``````d``````icates whether the approver is require``````d`````` to provi``````d``````e a justification for approving a request.
+          - `[IsEscalationEnable``````d`````` <Boolean?>]`: If true, then one or more escalationApprovers are configure``````d`````` in this approval stage.
+          - `[PrimaryApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who will be aske``````d`````` to approve requests. A collection of singleUser, groupMembers, requestorManager, internalSponsors or externalSponsors.
       - `[RequestorSettings <IMicrosoftGraphAccessPackageAssignmentRequestorSettings>]`: accessPackageAssignmentRequestorSettings
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AllowCustomAssignmentSchedule <Boolean?>]`: If false, the requestor is not permitted to include a schedule in their request.
-        - `[EnableOnBehalfRequestorsToAddAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to add access for another principal.
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+        - `[AllowCustomAssignmentSche``````d``````ule <Boolean?>]`: If false, the requestor is not permitte``````d`````` to inclu``````d``````e a sche``````d``````ule in their request.
+        - `[EnableOnBehalfRequestorsToA``````d````````````d``````Access <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to a``````d````````````d`````` access for another principal.
         - `[EnableOnBehalfRequestorsToRemoveAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to remove access for another principal.
-        - `[EnableOnBehalfRequestorsToUpdateAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to update access for another principal.
-        - `[EnableTargetsToSelfAddAccess <Boolean?>]`: If true, allows requestors to create a request to add access for themselves.
+        - `[EnableOnBehalfRequestorsToUp``````d``````ateAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to up``````d``````ate access for another principal.
+        - `[EnableTargetsToSelfA``````d````````````d``````Access <Boolean?>]`: If true, allows requestors to create a request to a``````d````````````d`````` access for themselves.
         - `[EnableTargetsToSelfRemoveAccess <Boolean?>]`: If true, allows requestors to create a request to remove their access.
-        - `[EnableTargetsToSelfUpdateAccess <Boolean?>]`: If true, allows requestors to create a request to update their access.
+        - `[EnableTargetsToSelfUp``````d``````ateAccess <Boolean?>]`: If true, allows requestors to create a request to up``````d``````ate their access.
         - `[OnBehalfRequestors <IMicrosoftGraphSubjectSet[]>]`: The principals who can request on-behalf-of others.
       - `[ReviewSettings <IMicrosoftGraphAccessPackageAssignmentReviewSettings>]`: accessPackageAssignmentReviewSettings
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
         - `[ExpirationBehavior <String>]`: accessReviewExpirationBehavior
-        - `[FallbackReviewers <IMicrosoftGraphSubjectSet[]>]`: This collection specifies the users who will be the fallback reviewers when the primary reviewers don't respond.
-        - `[IsEnabled <Boolean?>]`: If true, access reviews are required for assignments through this policy.
-        - `[IsRecommendationEnabled <Boolean?>]`: Specifies whether to display recommendations to the reviewer. The default value is true.
-        - `[IsReviewerJustificationRequired <Boolean?>]`: Specifies whether the reviewer must provide justification for the approval. The default value is true.
+        - `[FallbackReviewers <IMicrosoftGraphSubjectSet[]>]`: This collection specifies the users who will be the fallback reviewers when the primary reviewers ``````d``````on't respon``````d``````.
+        - `[IsEnable``````d`````` <Boolean?>]`: If true, access reviews are require``````d`````` for assignments through this policy.
+        - `[IsRecommen``````d``````ationEnable``````d`````` <Boolean?>]`: Specifies whether to ``````d``````isplay recommen``````d``````ations to the reviewer. The ``````d``````efault value is true.
+        - `[IsReviewerJustificationRequire``````d`````` <Boolean?>]`: Specifies whether the reviewer must provi``````d``````e justification for the approval. The ``````d``````efault value is true.
         - `[IsSelfReview <Boolean?>]`: Specifies whether the principals can review their own assignments.
         - `[PrimaryReviewers <IMicrosoftGraphSubjectSet[]>]`: This collection specifies the users or group of users who will review the access package assignments.
-        - `[Schedule <IMicrosoftGraphEntitlementManagementSchedule>]`: entitlementManagementSchedule
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Sche``````d``````ule <IMicrosoftGraphEntitlementManagementSche``````d``````ule>]`: entitlementManagementSche``````d``````ule
+          - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
           - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
-          - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Recurrence <IMicrosoftGraphPatterne``````d``````Recurrence>]`: patterne``````d``````Recurrence
+            - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
             - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-              - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-              - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-              - `[FirstDayOfWeek <String>]`: dayOfWeek
-              - `[Index <String>]`: weekIndex
-              - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+              - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+              - `[``````d``````ayOfMonth <Int32?>]`: The ``````d``````ay of the month on which the event occurs. Require``````d`````` if type is absoluteMonthly or absoluteYearly.
+              - `[``````d``````aysOfWeek <String[]>]`: A collection of the ``````d``````ays of the week on which the event occurs. The possible values are: sun``````d``````ay, mon``````d``````ay, tues``````d``````ay, we``````d``````nes``````d``````ay, thurs``````d``````ay, fri``````d``````ay, satur``````d``````ay. If type is relativeMonthly or relativeYearly, an``````d`````` ``````d``````aysOfWeek specifies more than one ``````d``````ay, the event falls on the first ``````d``````ay that satisfies the pattern.  Require``````d`````` if type is weekly, relativeMonthly, or relativeYearly.
+              - `[First``````d``````ayOfWeek <String>]`: ``````d``````ayOfWeek
+              - `[In``````d``````ex <String>]`: weekIn``````d``````ex
+              - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in ``````d``````ays, weeks, months, or years, ``````d``````epen``````d``````ing on the type. Require``````d``````.
               - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
               - `[Type <String>]`: recurrencePatternType
             - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-              - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-              - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-              - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-              - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
+              - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+              - `[En``````d````````````d``````ate <``````d``````ateTime?>]`: The ``````d``````ate to stop applying the recurrence pattern. ``````d``````epen``````d``````ing on the recurrence pattern of the event, the last occurrence of the meeting may not be this ``````d``````ate. Require``````d`````` if type is en``````d````````````d``````ate.
+              - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Require``````d`````` an``````d`````` must be positive if type is numbere``````d``````.
+              - `[RecurrenceTimeZone <String>]`: Time zone for the start``````d``````ate an``````d`````` en``````d````````````d``````ate properties. Optional. If not specifie``````d``````, the time zone of the event is use``````d``````.
+              - `[Start``````d``````ate <``````d``````ateTime?>]`: The ``````d``````ate to start applying the recurrence pattern. The first occurrence of the meeting may be this ``````d``````ate or later, ``````d``````epen``````d``````ing on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Require``````d``````.
               - `[Type <String>]`: recurrenceRangeType
-          - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      - `[SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>]`: The principals that can be assigned access from an access package through this policy.
+          - `[Start``````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[SpecificAllowe``````d``````Targets <IMicrosoftGraphSubjectSet[]>]`: The principals that can be assigne``````d`````` access from an access package through this policy.
     - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[Description <String>]`: The description of the access package.
-    - `[DisplayName <String>]`: The display name of the access package. Supports $filter (eq, contains).
-    - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
-    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+    - `[``````d``````escription <String>]`: The ``````d``````escription of the access package.
+    - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the access package. Supports $filter (eq, contains).
+    - `[IsHi``````d````````````d``````en <Boolean?>]`: Whether the access package is hi``````d````````````d``````en from the requestor.
+    - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
   - `[AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy1>]`: accessPackageAssignmentPolicy
-  - `[ExpiredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Schedule <IMicrosoftGraphEntitlementManagementSchedule>]`: entitlementManagementSchedule
+  - `[Expire``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Sche``````d``````ule <IMicrosoftGraphEntitlementManagementSche``````d``````ule>]`: entitlementManagementSche``````d``````ule
   - `[State <String>]`: accessPackageAssignmentState
-  - `[Status <String>]`: More information about the assignment lifecycle.  Possible values include Delivering, Delivered, NearExpiry1DayNotificationTriggered, or ExpiredNotificationTriggered.  Read-only.
+  - `[Status <String>]`: More information about the assignment lifecycle.  Possible values inclu``````d``````e ``````d``````elivering, ``````d``````elivere``````d``````, NearExpiry1``````d``````ayNotificationTriggere``````d``````, or Expire``````d``````NotificationTriggere``````d``````.  Rea``````d``````-only.
   - `[Target <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
-    - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-      - `[Description <String>]`: The description of the connected organization.
-      - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
-      - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-        - `[Id <String>]`: 
-        - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-      - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
-      - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-      - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-      - `[State <String>]`: connectedOrganizationState
-    - `[DisplayName <String>]`: The display name of the subject.
-    - `[Email <String>]`: The email address of the subject.
-    - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
-    - `[OnPremisesSecurityIdentifier <String>]`: A string representation of the principal's security identifier, if known, or null if the subject does not have a security identifier.
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[I``````d`````` <String>]`: 
+    - `[Connecte``````d``````Organization <IMicrosoftGraphConnecte``````d``````Organization1>]`: connecte``````d``````Organization
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+      - `[I``````d`````` <String>]`: 
+      - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+      - `[``````d``````escription <String>]`: The ``````d``````escription of the connecte``````d`````` organization.
+      - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the connecte``````d`````` organization. Supports $filter (eq).
+      - `[ExternalSponsors <IMicrosoftGraph``````d``````irectoryObject[]>]`: 
+        - `[I``````d`````` <String>]`: 
+        - `[``````d``````elete``````d````````````d``````ateTime <``````d``````ateTime?>]`: ``````d``````ate an``````d`````` time when this object was ``````d``````elete``````d``````. Always null when the object hasn't been ``````d``````elete``````d``````.
+      - `[I``````d``````entitySources <IMicrosoftGraphI``````d``````entitySource[]>]`: The i``````d``````entity sources in this connecte``````d`````` organization, one of azureActive``````d``````irectoryTenant, crossClou``````d``````AzureActive``````d``````irectoryTenant, ``````d``````omainI``````d``````entitySource or external``````d``````omainFe``````d``````eration. Rea``````d``````-only. Nullable. Supports $select an``````d`````` $filter(eq). To filter by the ``````d``````erive``````d`````` types, you must ``````d``````eclare the resource using its full O``````d``````ata cast, for example, $filter=i``````d``````entitySources/any(is:is/microsoft.graph.azureActive``````d``````irectoryTenant/tenantI``````d`````` eq 'bcf``````d``````fff4-cbc3-43f2-9000-ba7b7515054f').
+      - `[InternalSponsors <IMicrosoftGraph``````d``````irectoryObject[]>]`: 
+      - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+      - `[State <String>]`: connecte``````d``````OrganizationState
+    - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the subject.
+    - `[Email <String>]`: The email a``````d````````````d``````ress of the subject.
+    - `[ObjectI``````d`````` <String>]`: The object i``````d``````entifier of the subject. null if the subject is not yet a user in the tenant.
+    - `[OnPremisesSecurityI``````d``````entifier <String>]`: A string representation of the principal's security i``````d``````entifier, if known, or null if the subject ``````d``````oes not have a security i``````d``````entifier.
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectType <String>]`: accessPackageSubjectType
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageAssignmentRequest1>: accessPackageAssignmentRequest
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+BO``````d``````YPARAMETER <IMicrosoftGraphAccessPackageAssignmentRequest1>: accessPackageAssignmentRequest
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[I``````d`````` <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[I``````d`````` <String>]`: 
     - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: 
-      - `[Id <String>]`: 
+      - `[I``````d`````` <String>]`: 
       - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
-      - `[AllowedTargetScope <String>]`: allowedTargetScope
+      - `[Allowe``````d``````TargetScope <String>]`: allowe``````d``````TargetScope
       - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: 
-        - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Read-only. Nullable. Supports $expand.
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+        - `[I``````d`````` <String>]`: 
+        - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Rea``````d``````-only. Nullable. Supports $expan``````d``````.
         - `[CatalogType <String>]`: accessPackageCatalogType
-        - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[Description <String>]`: The description of the access package catalog.
-        - `[DisplayName <String>]`: The display name of the access package catalog. Supports $filter (eq, contains).
-        - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requested by users outside of the tenant.
-        - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+        - `[``````d``````escription <String>]`: The ``````d``````escription of the access package catalog.
+        - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the access package catalog. Supports $filter (eq, contains).
+        - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requeste``````d`````` by users outsi``````d``````e of the tenant.
+        - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
         - `[State <String>]`: accessPackageCatalogState
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Description <String>]`: The description of the policy.
-      - `[DisplayName <String>]`: The display name of the policy. Supports $filter (eq).
+      - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[``````d``````escription <String>]`: The ``````d``````escription of the policy.
+      - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the policy. Supports $filter (eq).
       - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
-        - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+        - `[``````d``````uration <TimeSpan?>]`: The requestor's ``````d``````esire``````d`````` ``````d``````uration of access represente``````d`````` in ISO 8601 format for ``````d``````urations. For example, PT3H refers to three hours.  If specifie``````d`````` in a request, en``````d````````````d``````ateTime shoul``````d`````` not be present an``````d`````` the type property shoul``````d`````` be set to after``````d``````uration.
+        - `[En``````d````````````d``````ateTime <``````d``````ateTime?>]`: Timestamp of ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Type <String>]`: expirationPatternType
-      - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]`: accessPackageAssignmentApprovalSettings
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[IsApprovalRequiredForAdd <Boolean?>]`: If false, then approval is not required for new requests in this policy.
-        - `[IsApprovalRequiredForUpdate <Boolean?>]`: If false, then approval is not required for updates to requests in this policy.
-        - `[Stages <IMicrosoftGraphAccessPackageApprovalStage[]>]`: If approval is required, the one, two or three elements of this collection define each of the stages of approval. An empty array is present if no approval is required.
-          - `[DurationBeforeAutomaticDenial <TimeSpan?>]`: The number of days that a request can be pending a response before it is automatically denied.
-          - `[DurationBeforeEscalation <TimeSpan?>]`: If escalation is required, the time a request can be pending a response from a primary approver.
-          - `[EscalationApprovers <IMicrosoftGraphSubjectSet[]>]`: If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who will be asked to approve requests.
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+        - `[IsApprovalRequire``````d``````ForA``````d````````````d`````` <Boolean?>]`: If false, then approval is not require``````d`````` for new requests in this policy.
+        - `[IsApprovalRequire``````d``````ForUp``````d``````ate <Boolean?>]`: If false, then approval is not require``````d`````` for up``````d``````ates to requests in this policy.
+        - `[Stages <IMicrosoftGraphAccessPackageApprovalStage[]>]`: If approval is require``````d``````, the one, two or three elements of this collection ``````d``````efine each of the stages of approval. An empty array is present if no approval is require``````d``````.
+          - `[``````d``````urationBeforeAutomatic``````d``````enial <TimeSpan?>]`: The number of ``````d``````ays that a request can be pen``````d``````ing a response before it is automatically ``````d``````enie``````d``````.
+          - `[``````d``````urationBeforeEscalation <TimeSpan?>]`: If escalation is require``````d``````, the time a request can be pen``````d``````ing a response from a primary approver.
+          - `[EscalationApprovers <IMicrosoftGraphSubjectSet[]>]`: If escalation is enable``````d`````` an``````d`````` the primary approvers ``````d``````o not respon``````d`````` before the escalation time, the escalationApprovers are the users who will be aske``````d`````` to approve requests.
           - `[FallbackEscalationApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who are the fallback escalation approvers.
           - `[FallbackPrimaryApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who are the fallback primary approvers.
-          - `[IsApproverJustificationRequired <Boolean?>]`: Indicates whether the approver is required to provide a justification for approving a request.
-          - `[IsEscalationEnabled <Boolean?>]`: If true, then one or more escalationApprovers are configured in this approval stage.
-          - `[PrimaryApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who will be asked to approve requests. A collection of singleUser, groupMembers, requestorManager, internalSponsors or externalSponsors.
+          - `[IsApproverJustificationRequire``````d`````` <Boolean?>]`: In``````d``````icates whether the approver is require``````d`````` to provi``````d``````e a justification for approving a request.
+          - `[IsEscalationEnable``````d`````` <Boolean?>]`: If true, then one or more escalationApprovers are configure``````d`````` in this approval stage.
+          - `[PrimaryApprovers <IMicrosoftGraphSubjectSet[]>]`: The subjects, typically users, who will be aske``````d`````` to approve requests. A collection of singleUser, groupMembers, requestorManager, internalSponsors or externalSponsors.
       - `[RequestorSettings <IMicrosoftGraphAccessPackageAssignmentRequestorSettings>]`: accessPackageAssignmentRequestorSettings
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AllowCustomAssignmentSchedule <Boolean?>]`: If false, the requestor is not permitted to include a schedule in their request.
-        - `[EnableOnBehalfRequestorsToAddAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to add access for another principal.
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+        - `[AllowCustomAssignmentSche``````d``````ule <Boolean?>]`: If false, the requestor is not permitte``````d`````` to inclu``````d``````e a sche``````d``````ule in their request.
+        - `[EnableOnBehalfRequestorsToA``````d````````````d``````Access <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to a``````d````````````d`````` access for another principal.
         - `[EnableOnBehalfRequestorsToRemoveAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to remove access for another principal.
-        - `[EnableOnBehalfRequestorsToUpdateAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to update access for another principal.
-        - `[EnableTargetsToSelfAddAccess <Boolean?>]`: If true, allows requestors to create a request to add access for themselves.
+        - `[EnableOnBehalfRequestorsToUp``````d``````ateAccess <Boolean?>]`: If true, allows on-behalf-of requestors to create a request to up``````d``````ate access for another principal.
+        - `[EnableTargetsToSelfA``````d````````````d``````Access <Boolean?>]`: If true, allows requestors to create a request to a``````d````````````d`````` access for themselves.
         - `[EnableTargetsToSelfRemoveAccess <Boolean?>]`: If true, allows requestors to create a request to remove their access.
-        - `[EnableTargetsToSelfUpdateAccess <Boolean?>]`: If true, allows requestors to create a request to update their access.
+        - `[EnableTargetsToSelfUp``````d``````ateAccess <Boolean?>]`: If true, allows requestors to create a request to up``````d``````ate their access.
         - `[OnBehalfRequestors <IMicrosoftGraphSubjectSet[]>]`: The principals who can request on-behalf-of others.
       - `[ReviewSettings <IMicrosoftGraphAccessPackageAssignmentReviewSettings>]`: accessPackageAssignmentReviewSettings
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
         - `[ExpirationBehavior <String>]`: accessReviewExpirationBehavior
-        - `[FallbackReviewers <IMicrosoftGraphSubjectSet[]>]`: This collection specifies the users who will be the fallback reviewers when the primary reviewers don't respond.
-        - `[IsEnabled <Boolean?>]`: If true, access reviews are required for assignments through this policy.
-        - `[IsRecommendationEnabled <Boolean?>]`: Specifies whether to display recommendations to the reviewer. The default value is true.
-        - `[IsReviewerJustificationRequired <Boolean?>]`: Specifies whether the reviewer must provide justification for the approval. The default value is true.
+        - `[FallbackReviewers <IMicrosoftGraphSubjectSet[]>]`: This collection specifies the users who will be the fallback reviewers when the primary reviewers ``````d``````on't respon``````d``````.
+        - `[IsEnable``````d`````` <Boolean?>]`: If true, access reviews are require``````d`````` for assignments through this policy.
+        - `[IsRecommen``````d``````ationEnable``````d`````` <Boolean?>]`: Specifies whether to ``````d``````isplay recommen``````d``````ations to the reviewer. The ``````d``````efault value is true.
+        - `[IsReviewerJustificationRequire``````d`````` <Boolean?>]`: Specifies whether the reviewer must provi``````d``````e justification for the approval. The ``````d``````efault value is true.
         - `[IsSelfReview <Boolean?>]`: Specifies whether the principals can review their own assignments.
         - `[PrimaryReviewers <IMicrosoftGraphSubjectSet[]>]`: This collection specifies the users or group of users who will review the access package assignments.
-        - `[Schedule <IMicrosoftGraphEntitlementManagementSchedule>]`: entitlementManagementSchedule
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Sche``````d``````ule <IMicrosoftGraphEntitlementManagementSche``````d``````ule>]`: entitlementManagementSche``````d``````ule
+          - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
           - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
-          - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Recurrence <IMicrosoftGraphPatterne``````d``````Recurrence>]`: patterne``````d``````Recurrence
+            - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
             - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-              - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-              - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-              - `[FirstDayOfWeek <String>]`: dayOfWeek
-              - `[Index <String>]`: weekIndex
-              - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+              - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+              - `[``````d``````ayOfMonth <Int32?>]`: The ``````d``````ay of the month on which the event occurs. Require``````d`````` if type is absoluteMonthly or absoluteYearly.
+              - `[``````d``````aysOfWeek <String[]>]`: A collection of the ``````d``````ays of the week on which the event occurs. The possible values are: sun``````d``````ay, mon``````d``````ay, tues``````d``````ay, we``````d``````nes``````d``````ay, thurs``````d``````ay, fri``````d``````ay, satur``````d``````ay. If type is relativeMonthly or relativeYearly, an``````d`````` ``````d``````aysOfWeek specifies more than one ``````d``````ay, the event falls on the first ``````d``````ay that satisfies the pattern.  Require``````d`````` if type is weekly, relativeMonthly, or relativeYearly.
+              - `[First``````d``````ayOfWeek <String>]`: ``````d``````ayOfWeek
+              - `[In``````d``````ex <String>]`: weekIn``````d``````ex
+              - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in ``````d``````ays, weeks, months, or years, ``````d``````epen``````d``````ing on the type. Require``````d``````.
               - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
               - `[Type <String>]`: recurrencePatternType
             - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-              - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-              - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-              - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-              - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
+              - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+              - `[En``````d````````````d``````ate <``````d``````ateTime?>]`: The ``````d``````ate to stop applying the recurrence pattern. ``````d``````epen``````d``````ing on the recurrence pattern of the event, the last occurrence of the meeting may not be this ``````d``````ate. Require``````d`````` if type is en``````d````````````d``````ate.
+              - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Require``````d`````` an``````d`````` must be positive if type is numbere``````d``````.
+              - `[RecurrenceTimeZone <String>]`: Time zone for the start``````d``````ate an``````d`````` en``````d````````````d``````ate properties. Optional. If not specifie``````d``````, the time zone of the event is use``````d``````.
+              - `[Start``````d``````ate <``````d``````ateTime?>]`: The ``````d``````ate to start applying the recurrence pattern. The first occurrence of the meeting may be this ``````d``````ate or later, ``````d``````epen``````d``````ing on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Require``````d``````.
               - `[Type <String>]`: recurrenceRangeType
-          - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      - `[SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>]`: The principals that can be assigned access from an access package through this policy.
+          - `[Start``````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[SpecificAllowe``````d``````Targets <IMicrosoftGraphSubjectSet[]>]`: The principals that can be assigne``````d`````` access from an access package through this policy.
     - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[Description <String>]`: The description of the access package.
-    - `[DisplayName <String>]`: The display name of the access package. Supports $filter (eq, contains).
-    - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
-    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+    - `[``````d``````escription <String>]`: The ``````d``````escription of the access package.
+    - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the access package. Supports $filter (eq, contains).
+    - `[IsHi``````d````````````d``````en <Boolean?>]`: Whether the access package is hi``````d````````````d``````en from the requestor.
+    - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
   - `[Assignment <IMicrosoftGraphAccessPackageAssignment1>]`: accessPackageAssignment
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[I``````d`````` <String>]`: 
     - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
     - `[AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy1>]`: accessPackageAssignmentPolicy
-    - `[ExpiredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Schedule <IMicrosoftGraphEntitlementManagementSchedule>]`: entitlementManagementSchedule
+    - `[Expire``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Sche``````d``````ule <IMicrosoftGraphEntitlementManagementSche``````d``````ule>]`: entitlementManagementSche``````d``````ule
     - `[State <String>]`: accessPackageAssignmentState
-    - `[Status <String>]`: More information about the assignment lifecycle.  Possible values include Delivering, Delivered, NearExpiry1DayNotificationTriggered, or ExpiredNotificationTriggered.  Read-only.
+    - `[Status <String>]`: More information about the assignment lifecycle.  Possible values inclu``````d``````e ``````d``````elivering, ``````d``````elivere``````d``````, NearExpiry1``````d``````ayNotificationTriggere``````d``````, or Expire``````d``````NotificationTriggere``````d``````.  Rea``````d``````-only.
     - `[Target <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: 
-      - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[Description <String>]`: The description of the connected organization.
-        - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
-        - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-          - `[Id <String>]`: 
-          - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-        - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
-        - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-        - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[State <String>]`: connectedOrganizationState
-      - `[DisplayName <String>]`: The display name of the subject.
-      - `[Email <String>]`: The email address of the subject.
-      - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
-      - `[OnPremisesSecurityIdentifier <String>]`: A string representation of the principal's security identifier, if known, or null if the subject does not have a security identifier.
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+      - `[I``````d`````` <String>]`: 
+      - `[Connecte``````d``````Organization <IMicrosoftGraphConnecte``````d``````Organization1>]`: connecte``````d``````Organization
+        - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+        - `[I``````d`````` <String>]`: 
+        - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+        - `[``````d``````escription <String>]`: The ``````d``````escription of the connecte``````d`````` organization.
+        - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the connecte``````d`````` organization. Supports $filter (eq).
+        - `[ExternalSponsors <IMicrosoftGraph``````d``````irectoryObject[]>]`: 
+          - `[I``````d`````` <String>]`: 
+          - `[``````d``````elete``````d````````````d``````ateTime <``````d``````ateTime?>]`: ``````d``````ate an``````d`````` time when this object was ``````d``````elete``````d``````. Always null when the object hasn't been ``````d``````elete``````d``````.
+        - `[I``````d``````entitySources <IMicrosoftGraphI``````d``````entitySource[]>]`: The i``````d``````entity sources in this connecte``````d`````` organization, one of azureActive``````d``````irectoryTenant, crossClou``````d``````AzureActive``````d``````irectoryTenant, ``````d``````omainI``````d``````entitySource or external``````d``````omainFe``````d``````eration. Rea``````d``````-only. Nullable. Supports $select an``````d`````` $filter(eq). To filter by the ``````d``````erive``````d`````` types, you must ``````d``````eclare the resource using its full O``````d``````ata cast, for example, $filter=i``````d``````entitySources/any(is:is/microsoft.graph.azureActive``````d``````irectoryTenant/tenantI``````d`````` eq 'bcf``````d``````fff4-cbc3-43f2-9000-ba7b7515054f').
+        - `[InternalSponsors <IMicrosoftGraph``````d``````irectoryObject[]>]`: 
+        - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+        - `[State <String>]`: connecte``````d``````OrganizationState
+      - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the subject.
+      - `[Email <String>]`: The email a``````d````````````d``````ress of the subject.
+      - `[ObjectI``````d`````` <String>]`: The object i``````d``````entifier of the subject. null if the subject is not yet a user in the tenant.
+      - `[OnPremisesSecurityI``````d``````entifier <String>]`: A string representation of the principal's security i``````d``````entifier, if known, or null if the subject ``````d``````oes not have a security i``````d``````entifier.
       - `[PrincipalName <String>]`: The principal name, if known, of the subject.
       - `[SubjectType <String>]`: accessPackageSubjectType
-  - `[CompletedDateTime <DateTime?>]`: The date of the end of processing, either successful or failure, of a request. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[Complete``````d````````````d``````ateTime <``````d``````ateTime?>]`: The ``````d``````ate of the en``````d`````` of processing, either successful or failure, of a request. The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+  - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
   - `[RequestType <String>]`: accessPackageRequestType
   - `[Requestor <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
-  - `[Schedule <IMicrosoftGraphEntitlementManagementSchedule>]`: entitlementManagementSchedule
+  - `[Sche``````d``````ule <IMicrosoftGraphEntitlementManagementSche``````d``````ule>]`: entitlementManagementSche``````d``````ule
   - `[State <String>]`: accessPackageRequestState
-  - `[Status <String>]`: More information on the request processing status. Read-only.
+  - `[Status <String>]`: More information on the request processing status. Rea``````d``````-only.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
-  - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
-  - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
-  - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
-  - `[AccessPackageAssignmentResourceRoleId <String>]`: key: id of accessPackageAssignmentResourceRole
-  - `[AccessPackageCatalogId <String>]`: key: id of accessPackageCatalog
-  - `[AccessPackageId <String>]`: key: id of accessPackage
-  - `[AccessPackageId1 <String>]`: key: id of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageResourceEnvironmentId <String>]`: key: id of accessPackageResourceEnvironment
-  - `[AccessPackageResourceId <String>]`: key: id of accessPackageResource
-  - `[AccessPackageResourceRequestId <String>]`: key: id of accessPackageResourceRequest
-  - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
-  - `[AccessPackageResourceRoleScopeId <String>]`: key: id of accessPackageResourceRoleScope
-  - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
-  - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
-  - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
-  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
-  - `[AccessReviewId <String>]`: key: id of accessReview
-  - `[AccessReviewId1 <String>]`: key: id of accessReview
-  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
-  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
-  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
-  - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
-  - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
-  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
-  - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
-  - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
-  - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
-  - `[AgreementId <String>]`: key: id of agreement
-  - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
-  - `[ApprovalId <String>]`: key: id of approval
-  - `[ApprovalStageId <String>]`: key: id of approvalStage
-  - `[ApprovalStepId <String>]`: key: id of approvalStep
-  - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
-  - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
-  - `[CustomAccessPackageWorkflowExtensionId <String>]`: key: id of customAccessPackageWorkflowExtension
-  - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
-  - `[GovernanceResourceId <String>]`: key: id of governanceResource
-  - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
-  - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
-  - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
-  - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
-  - `[GroupId <String>]`: key: id of group
-  - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+INPUTOBJECT <II``````d``````entityGovernanceI``````d``````entity>: I``````d``````entity Parameter
+  - `[AccessPackageAssignmentI``````d`````` <String>]`: key: i``````d`````` of accessPackageAssignment
+  - `[AccessPackageAssignmentPolicyI``````d`````` <String>]`: key: i``````d`````` of accessPackageAssignmentPolicy
+  - `[AccessPackageAssignmentRequestI``````d`````` <String>]`: key: i``````d`````` of accessPackageAssignmentRequest
+  - `[AccessPackageAssignmentResourceRoleI``````d`````` <String>]`: key: i``````d`````` of accessPackageAssignmentResourceRole
+  - `[AccessPackageCatalogI``````d`````` <String>]`: key: i``````d`````` of accessPackageCatalog
+  - `[AccessPackageI``````d`````` <String>]`: key: i``````d`````` of accessPackage
+  - `[AccessPackageI``````d``````1 <String>]`: key: i``````d`````` of accessPackage
+  - `[AccessPackageI``````d``````2 <String>]`: Usage: accessPackageI``````d``````='{accessPackageI``````d``````}'
+  - `[AccessPackageResourceEnvironmentI``````d`````` <String>]`: key: i``````d`````` of accessPackageResourceEnvironment
+  - `[AccessPackageResourceI``````d`````` <String>]`: key: i``````d`````` of accessPackageResource
+  - `[AccessPackageResourceRequestI``````d`````` <String>]`: key: i``````d`````` of accessPackageResourceRequest
+  - `[AccessPackageResourceRoleI``````d`````` <String>]`: key: i``````d`````` of accessPackageResourceRole
+  - `[AccessPackageResourceRoleScopeI``````d`````` <String>]`: key: i``````d`````` of accessPackageResourceRoleScope
+  - `[AccessPackageResourceScopeI``````d`````` <String>]`: key: i``````d`````` of accessPackageResourceScope
+  - `[AccessReview``````d``````ecisionI``````d`````` <String>]`: key: i``````d`````` of accessReview``````d``````ecision
+  - `[AccessReviewHistory``````d``````efinitionI``````d`````` <String>]`: key: i``````d`````` of accessReviewHistory``````d``````efinition
+  - `[AccessReviewHistoryInstanceI``````d`````` <String>]`: key: i``````d`````` of accessReviewHistoryInstance
+  - `[AccessReviewI``````d`````` <String>]`: key: i``````d`````` of accessReview
+  - `[AccessReviewI``````d``````1 <String>]`: key: i``````d`````` of accessReview
+  - `[AccessReviewInstance``````d``````ecisionItemI``````d`````` <String>]`: key: i``````d`````` of accessReviewInstance``````d``````ecisionItem
+  - `[AccessReviewInstance``````d``````ecisionItemI``````d``````1 <String>]`: key: i``````d`````` of accessReviewInstance``````d``````ecisionItem
+  - `[AccessReviewInstanceI``````d`````` <String>]`: key: i``````d`````` of accessReviewInstance
+  - `[AccessReviewReviewerI``````d`````` <String>]`: key: i``````d`````` of accessReviewReviewer
+  - `[AccessReviewSche``````d``````ule``````d``````efinitionI``````d`````` <String>]`: key: i``````d`````` of accessReviewSche``````d``````ule``````d``````efinition
+  - `[AccessReviewStageI``````d`````` <String>]`: key: i``````d`````` of accessReviewStage
+  - `[AgreementAcceptanceI``````d`````` <String>]`: key: i``````d`````` of agreementAcceptance
+  - `[AgreementFileLocalizationI``````d`````` <String>]`: key: i``````d`````` of agreementFileLocalization
+  - `[AgreementFileVersionI``````d`````` <String>]`: key: i``````d`````` of agreementFileVersion
+  - `[AgreementI``````d`````` <String>]`: key: i``````d`````` of agreement
+  - `[AppConsentRequestI``````d`````` <String>]`: key: i``````d`````` of appConsentRequest
+  - `[ApprovalI``````d`````` <String>]`: key: i``````d`````` of approval
+  - `[ApprovalStageI``````d`````` <String>]`: key: i``````d`````` of approvalStage
+  - `[ApprovalStepI``````d`````` <String>]`: key: i``````d`````` of approvalStep
+  - `[BusinessFlowTemplateI``````d`````` <String>]`: key: i``````d`````` of businessFlowTemplate
+  - `[Connecte``````d``````OrganizationI``````d`````` <String>]`: key: i``````d`````` of connecte``````d``````Organization
+  - `[CustomAccessPackageWorkflowExtensionI``````d`````` <String>]`: key: i``````d`````` of customAccessPackageWorkflowExtension
+  - `[CustomExtensionHan``````d``````lerI``````d`````` <String>]`: key: i``````d`````` of customExtensionHan``````d``````ler
+  - `[``````d``````irectoryObjectI``````d`````` <String>]`: key: i``````d`````` of ``````d``````irectoryObject
+  - `[GovernanceInsightI``````d`````` <String>]`: key: i``````d`````` of governanceInsight
+  - `[GovernanceResourceI``````d`````` <String>]`: key: i``````d`````` of governanceResource
+  - `[GovernanceRoleAssignmentI``````d`````` <String>]`: key: i``````d`````` of governanceRoleAssignment
+  - `[GovernanceRoleAssignmentRequestI``````d`````` <String>]`: key: i``````d`````` of governanceRoleAssignmentRequest
+  - `[GovernanceRole``````d``````efinitionI``````d`````` <String>]`: key: i``````d`````` of governanceRole``````d``````efinition
+  - `[GovernanceRoleSettingI``````d`````` <String>]`: key: i``````d`````` of governanceRoleSetting
+  - `[GroupI``````d`````` <String>]`: key: i``````d`````` of group
+  - `[IncompatibleAccessPackageI``````d`````` <String>]`: Usage: incompatibleAccessPackageI``````d``````='{incompatibleAccessPackageI``````d``````}'
   - `[On <String>]`: Usage: on='{on}'
-  - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
-  - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
-  - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
-  - `[PrivilegedRoleAssignmentId <String>]`: key: id of privilegedRoleAssignment
-  - `[PrivilegedRoleAssignmentId1 <String>]`: key: id of privilegedRoleAssignment
-  - `[PrivilegedRoleAssignmentRequestId <String>]`: key: id of privilegedRoleAssignmentRequest
-  - `[PrivilegedRoleId <String>]`: key: id of privilegedRole
-  - `[ProgramControlId <String>]`: key: id of programControl
-  - `[ProgramControlId1 <String>]`: key: id of programControl
-  - `[ProgramControlTypeId <String>]`: key: id of programControlType
-  - `[ProgramId <String>]`: key: id of program
-  - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
-  - `[UserId <String>]`: key: id of user
+  - `[Privilege``````d``````AccessI``````d`````` <String>]`: key: i``````d`````` of privilege``````d``````Access
+  - `[Privilege``````d``````ApprovalI``````d`````` <String>]`: key: i``````d`````` of privilege``````d``````Approval
+  - `[Privilege``````d``````OperationEventI``````d`````` <String>]`: key: i``````d`````` of privilege``````d``````OperationEvent
+  - `[Privilege``````d``````RoleAssignmentI``````d`````` <String>]`: key: i``````d`````` of privilege``````d``````RoleAssignment
+  - `[Privilege``````d``````RoleAssignmentI``````d``````1 <String>]`: key: i``````d`````` of privilege``````d``````RoleAssignment
+  - `[Privilege``````d``````RoleAssignmentRequestI``````d`````` <String>]`: key: i``````d`````` of privilege``````d``````RoleAssignmentRequest
+  - `[Privilege``````d``````RoleI``````d`````` <String>]`: key: i``````d`````` of privilege``````d``````Role
+  - `[ProgramControlI``````d`````` <String>]`: key: i``````d`````` of programControl
+  - `[ProgramControlI``````d``````1 <String>]`: key: i``````d`````` of programControl
+  - `[ProgramControlTypeI``````d`````` <String>]`: key: i``````d`````` of programControlType
+  - `[ProgramI``````d`````` <String>]`: key: i``````d`````` of program
+  - `[UserConsentRequestI``````d`````` <String>]`: key: i``````d`````` of userConsentRequest
+  - `[UserI``````d`````` <String>]`: key: i``````d`````` of user
 
 REQUESTOR <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[Description <String>]`: The description of the connected organization.
-    - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
-    - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-      - `[Id <String>]`: 
-      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-    - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
-    - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[State <String>]`: connectedOrganizationState
-  - `[DisplayName <String>]`: The display name of the subject.
-  - `[Email <String>]`: The email address of the subject.
-  - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
-  - `[OnPremisesSecurityIdentifier <String>]`: A string representation of the principal's security identifier, if known, or null if the subject does not have a security identifier.
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[I``````d`````` <String>]`: 
+  - `[Connecte``````d``````Organization <IMicrosoftGraphConnecte``````d``````Organization1>]`: connecte``````d``````Organization
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[I``````d`````` <String>]`: 
+    - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+    - `[``````d``````escription <String>]`: The ``````d``````escription of the connecte``````d`````` organization.
+    - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the connecte``````d`````` organization. Supports $filter (eq).
+    - `[ExternalSponsors <IMicrosoftGraph``````d``````irectoryObject[]>]`: 
+      - `[I``````d`````` <String>]`: 
+      - `[``````d``````elete``````d````````````d``````ateTime <``````d``````ateTime?>]`: ``````d``````ate an``````d`````` time when this object was ``````d``````elete``````d``````. Always null when the object hasn't been ``````d``````elete``````d``````.
+    - `[I``````d``````entitySources <IMicrosoftGraphI``````d``````entitySource[]>]`: The i``````d``````entity sources in this connecte``````d`````` organization, one of azureActive``````d``````irectoryTenant, crossClou``````d``````AzureActive``````d``````irectoryTenant, ``````d``````omainI``````d``````entitySource or external``````d``````omainFe``````d``````eration. Rea``````d``````-only. Nullable. Supports $select an``````d`````` $filter(eq). To filter by the ``````d``````erive``````d`````` types, you must ``````d``````eclare the resource using its full O``````d``````ata cast, for example, $filter=i``````d``````entitySources/any(is:is/microsoft.graph.azureActive``````d``````irectoryTenant/tenantI``````d`````` eq 'bcf``````d``````fff4-cbc3-43f2-9000-ba7b7515054f').
+    - `[InternalSponsors <IMicrosoftGraph``````d``````irectoryObject[]>]`: 
+    - `[Mo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea``````d``````-only.
+    - `[State <String>]`: connecte``````d``````OrganizationState
+  - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the subject.
+  - `[Email <String>]`: The email a``````d````````````d``````ress of the subject.
+  - `[ObjectI``````d`````` <String>]`: The object i``````d``````entifier of the subject. null if the subject is not yet a user in the tenant.
+  - `[OnPremisesSecurityI``````d``````entifier <String>]`: A string representation of the principal's security i``````d``````entifier, if known, or null if the subject ``````d``````oes not have a security i``````d``````entifier.
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectType <String>]`: accessPackageSubjectType
 
-SCHEDULE <IMicrosoftGraphEntitlementManagementSchedule>: entitlementManagementSchedule
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+SCHE``````d``````ULE <IMicrosoftGraphEntitlementManagementSche``````d``````ule>: entitlementManagementSche``````d``````ule
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
-    - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[``````d``````uration <TimeSpan?>]`: The requestor's ``````d``````esire``````d`````` ``````d``````uration of access represente``````d`````` in ISO 8601 format for ``````d``````urations. For example, PT3H refers to three hours.  If specifie``````d`````` in a request, en``````d````````````d``````ateTime shoul``````d`````` not be present an``````d`````` the type property shoul``````d`````` be set to after``````d``````uration.
+    - `[En``````d````````````d``````ateTime <``````d``````ateTime?>]`: Timestamp of ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Type <String>]`: expirationPatternType
-  - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Recurrence <IMicrosoftGraphPatterne``````d``````Recurrence>]`: patterne``````d``````Recurrence
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
     - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-      - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-      - `[FirstDayOfWeek <String>]`: dayOfWeek
-      - `[Index <String>]`: weekIndex
-      - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+      - `[``````d``````ayOfMonth <Int32?>]`: The ``````d``````ay of the month on which the event occurs. Require``````d`````` if type is absoluteMonthly or absoluteYearly.
+      - `[``````d``````aysOfWeek <String[]>]`: A collection of the ``````d``````ays of the week on which the event occurs. The possible values are: sun``````d``````ay, mon``````d``````ay, tues``````d``````ay, we``````d``````nes``````d``````ay, thurs``````d``````ay, fri``````d``````ay, satur``````d``````ay. If type is relativeMonthly or relativeYearly, an``````d`````` ``````d``````aysOfWeek specifies more than one ``````d``````ay, the event falls on the first ``````d``````ay that satisfies the pattern.  Require``````d`````` if type is weekly, relativeMonthly, or relativeYearly.
+      - `[First``````d``````ayOfWeek <String>]`: ``````d``````ayOfWeek
+      - `[In``````d``````ex <String>]`: weekIn``````d``````ex
+      - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in ``````d``````ays, weeks, months, or years, ``````d``````epen``````d``````ing on the type. Require``````d``````.
       - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
       - `[Type <String>]`: recurrencePatternType
     - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-      - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-      - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-      - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+      - `[En``````d````````````d``````ate <``````d``````ateTime?>]`: The ``````d``````ate to stop applying the recurrence pattern. ``````d``````epen``````d``````ing on the recurrence pattern of the event, the last occurrence of the meeting may not be this ``````d``````ate. Require``````d`````` if type is en``````d````````````d``````ate.
+      - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Require``````d`````` an``````d`````` must be positive if type is numbere``````d``````.
+      - `[RecurrenceTimeZone <String>]`: Time zone for the start``````d``````ate an``````d`````` en``````d````````````d``````ate properties. Optional. If not specifie``````d``````, the time zone of the event is use``````d``````.
+      - `[Start``````d``````ate <``````d``````ateTime?>]`: The ``````d``````ate to start applying the recurrence pattern. The first occurrence of the meeting may be this ``````d``````ate or later, ``````d``````epen``````d``````ing on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Require``````d``````.
       - `[Type <String>]`: recurrenceRangeType
-  - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Start``````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-## RELATED LINKS
+## RELATE``````d`````` LINKS
 
-## RELATED LINKS
+## RELATE``````d`````` LINKS
