@@ -1,363 +1,363 @@
-﻿---
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
-Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguseractivityhistoryitem
+---
+exte```r```nal help file: Mic```r```osoft.G```r```aph.C```r```ossDeviceExpe```r```iences-help.xml
+Module Name: Mic```r```osoft.G```r```aph.C```r```ossDeviceExpe```r```iences
+online ve```r```sion: https://docs.mic```r```osoft.com/en-us/powe```r```shell/module/mic```r```osoft.g```r```aph.c```r```ossdeviceexpe```r```iences/update-mguse```r```activityhisto```r```yitem
 schema: 2.0.0
 ---
 
-# Update-MgUserActivityHistoryItem
+# Update-MgUse```r```ActivityHisto```r```yItem
 
 ## SYNOPSIS
 Optional.
-NavigationProperty/Containment; navigation property to the activity's historyItems.
+NavigationP```r```ope```r```ty/Containment; navigation p```r```ope```r```ty to the activity's histo```r```yItems.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserActivityHistoryItem -ActivityHistoryItemId <String> -UserActivityId <String> -UserId <String>
- [-ActiveDurationSeconds <Int32>] [-Activity <IMicrosoftGraphUserActivity>] [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastActiveDateTime <DateTime>]
- [-LastModifiedDateTime <DateTime>] [-StartedDateTime <DateTime>] [-Status <String>] [-UserTimezone <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUse```r```ActivityHisto```r```yItem -ActivityHisto```r```yItemId <St```r```ing> -Use```r```ActivityId <St```r```ing> -Use```r```Id <St```r```ing>
+ [-ActiveDu```r```ationSeconds <Int32>] [-Activity <IMic```r```osoftG```r```aphUse```r```Activity>] [-AdditionalP```r```ope```r```ties <Hashtable>]
+ [-C```r```eatedDateTime <DateTime>] [-Expi```r```ationDateTime <DateTime>] [-Id <St```r```ing>] [-LastActiveDateTime <DateTime>]
+ [-LastModifiedDateTime <DateTime>] [-Sta```r```tedDateTime <DateTime>] [-Status <St```r```ing>] [-Use```r```Timezone <St```r```ing>]
+ [-PassTh```r```u] [-WhatIf] [-Confi```r```m] [<CommonPa```r```amete```r```s>]
 ```
 
 ### Update
 ```
-Update-MgUserActivityHistoryItem -ActivityHistoryItemId <String> -UserActivityId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphActivityHistoryItem1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUse```r```ActivityHisto```r```yItem -ActivityHisto```r```yItemId <St```r```ing> -Use```r```ActivityId <St```r```ing> -Use```r```Id <St```r```ing>
+ -BodyPa```r```amete```r``` <IMic```r```osoftG```r```aphActivityHisto```r```yItem1> [-PassTh```r```u] [-WhatIf] [-Confi```r```m] [<CommonPa```r```amete```r```s>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
- [-ActiveDurationSeconds <Int32>] [-Activity <IMicrosoftGraphUserActivity>] [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-LastActiveDateTime <DateTime>]
- [-LastModifiedDateTime <DateTime>] [-StartedDateTime <DateTime>] [-Status <String>] [-UserTimezone <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUse```r```ActivityHisto```r```yItem -InputObject <IC```r```ossDeviceExpe```r```iencesIdentity>
+ [-ActiveDu```r```ationSeconds <Int32>] [-Activity <IMic```r```osoftG```r```aphUse```r```Activity>] [-AdditionalP```r```ope```r```ties <Hashtable>]
+ [-C```r```eatedDateTime <DateTime>] [-Expi```r```ationDateTime <DateTime>] [-Id <St```r```ing>] [-LastActiveDateTime <DateTime>]
+ [-LastModifiedDateTime <DateTime>] [-Sta```r```tedDateTime <DateTime>] [-Status <St```r```ing>] [-Use```r```Timezone <St```r```ing>]
+ [-PassTh```r```u] [-WhatIf] [-Confi```r```m] [<CommonPa```r```amete```r```s>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
- -BodyParameter <IMicrosoftGraphActivityHistoryItem1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUse```r```ActivityHisto```r```yItem -InputObject <IC```r```ossDeviceExpe```r```iencesIdentity>
+ -BodyPa```r```amete```r``` <IMic```r```osoftG```r```aphActivityHisto```r```yItem1> [-PassTh```r```u] [-WhatIf] [-Confi```r```m] [<CommonPa```r```amete```r```s>]
 ```
 
-## DESCRIPTION
+## DESC```r```IPTION
 Optional.
-NavigationProperty/Containment; navigation property to the activity's historyItems.
+NavigationP```r```ope```r```ty/Containment; navigation p```r```ope```r```ty to the activity's histo```r```yItems.
 
 ## EXAMPLES
 
-## PARAMETERS
+## PA```r```AMETE```r```S
 
-### -ActiveDurationSeconds
+### -ActiveDu```r```ationSeconds
 Optional.
-The duration of active user engagement.
-if not supplied, this is calculated from the startedDateTime and lastActiveDateTime.
+The du```r```ation of active use```r``` engagement.
+if not supplied, this is calculated f```r```om the sta```r```tedDateTime and lastActiveDateTime.
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
 ### -Activity
-userActivity
-To construct, please use Get-Help -Online and see NOTES section for ACTIVITY properties and create a hash table.
+use```r```Activity
+To const```r```uct, please use Get-Help -Online and see NOTES section fo```r``` ACTIVITY p```r```ope```r```ties and c```r```eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserActivity
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMic```r```osoftG```r```aphUse```r```Activity
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -ActivityHistoryItemId
-key: id of activityHistoryItem
+### -ActivityHisto```r```yItemId
+key: id of activityHisto```r```yItem
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: St```r```ing
+Pa```r```amete```r``` Sets: UpdateExpanded, Update
 Aliases:
 
-Required: True
+```r```equi```r```ed: T```r```ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalP```r```ope```r```ties
+Additional Pa```r```amete```r```s
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -BodyParameter
-activityHistoryItem
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyPa```r```amete```r```
+activityHisto```r```yItem
+To const```r```uct, please use Get-Help -Online and see NOTES section fo```r``` BODYPA```r```AMETE```r``` p```r```ope```r```ties and c```r```eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphActivityHistoryItem1
-Parameter Sets: Update, UpdateViaIdentity
+Type: IMic```r```osoftG```r```aphActivityHisto```r```yItem1
+Pa```r```amete```r``` Sets: Update, UpdateViaIdentity
 Aliases:
 
-Required: True
+```r```equi```r```ed: T```r```ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T```r```ue (ByValue)
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -CreatedDateTime
-Set by the server.
-DateTime in UTC when the object was created on the server.
+### -C```r```eatedDateTime
+Set by the se```r```ve```r```.
+DateTime in UTC when the object was c```r```eated on the se```r```ve```r```.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -ExpirationDateTime
+### -Expi```r```ationDateTime
 Optional.
-UTC DateTime when the historyItem will undergo hard-delete.
+UTC DateTime when the histo```r```yItem will unde```r```go ha```r```d-delete.
 Can be set by the client.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
 ### -Id
-Read-only.
+```r```ead-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: St```r```ing
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+Identity Pa```r```amete```r```
+To const```r```uct, please use Get-Help -Online and see NOTES section fo```r``` INPUTOBJECT p```r```ope```r```ties and c```r```eate a hash table.
 
 ```yaml
-Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: IC```r```ossDeviceExpe```r```iencesIdentity
+Pa```r```amete```r``` Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
-Required: True
+```r```equi```r```ed: T```r```ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T```r```ue (ByValue)
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
 ### -LastActiveDateTime
 Optional.
-UTC DateTime when the historyItem (activity session) was last understood as active or finished - if null, historyItem status should be Ongoing.
+UTC DateTime when the histo```r```yItem (activity session) was last unde```r```stood as active o```r``` finished - if null, histo```r```yItem status should be Ongoing.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
 ### -LastModifiedDateTime
-Set by the server.
-DateTime in UTC when the object was modified on the server.
+Set by the se```r```ve```r```.
+DateTime in UTC when the object was modified on the se```r```ve```r```.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -PassTh```r```u
+```r```etu```r```ns t```r```ue when the command succeeds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa```r```amete```r```
+Pa```r```amete```r``` Sets: (All)
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -StartedDateTime
-Required.
-UTC DateTime when the historyItem (activity session) was started.
-Required for timeline history.
+### -Sta```r```tedDateTime
+```r```equi```r```ed.
+UTC DateTime when the histo```r```yItem (activity session) was sta```r```ted.
+```r```equi```r```ed fo```r``` timeline histo```r```y.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
 ### -Status
 status
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: St```r```ing
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -UserActivityId
-key: id of userActivity
+### -Use```r```ActivityId
+key: id of use```r```Activity
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: St```r```ing
+Pa```r```amete```r``` Sets: UpdateExpanded, Update
 Aliases:
 
-Required: True
+```r```equi```r```ed: T```r```ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -UserId
-key: id of user
+### -Use```r```Id
+key: id of use```r```
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: St```r```ing
+Pa```r```amete```r``` Sets: UpdateExpanded, Update
 Aliases:
 
-Required: True
+```r```equi```r```ed: T```r```ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -UserTimezone
+### -Use```r```Timezone
 Optional.
-The timezone in which the user's device used to generate the activity was located at activity creation time.
-Values supplied as Olson IDs in order to support cross-platform representation.
+The timezone in which the use```r```'s device used to gene```r```ate the activity was located at activity c```r```eation time.
+Values supplied as Olson IDs in o```r```de```r``` to suppo```r```t c```r```oss-platfo```r```m ```r```ep```r```esentation.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: St```r```ing
+Pa```r```amete```r``` Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Confi```r```m
+P```r```ompts you fo```r``` confi```r```mation befo```r```e ```r```unning the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa```r```amete```r```
+Pa```r```amete```r``` Sets: (All)
 Aliases: cf
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happen if the cmdlet ```r```uns.
+The cmdlet is not ```r```un.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa```r```amete```r```
+Pa```r```amete```r``` Sets: (All)
 Aliases: wi
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonPa```r```amete```r```s
+This cmdlet suppo```r```ts the common pa```r```amete```r```s: -Debug, -E```r``````r```o```r```Action, -E```r``````r```o```r```Va```r```iable, -Info```r```mationAction, -Info```r```mationVa```r```iable, -OutVa```r```iable, -OutBuffe```r```, -PipelineVa```r```iable, -Ve```r```bose, -Wa```r```ningAction, and -Wa```r```ningVa```r```iable. Fo```r``` mo```r```e info```r```mation, see [about_CommonPa```r```amete```r```s](http://go.mic```r```osoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityHistoryItem1
+### Mic```r```osoft.G```r```aph.Powe```r```Shell.Models.IC```r```ossDeviceExpe```r```iencesIdentity
+### Mic```r```osoft.G```r```aph.Powe```r```Shell.Models.IMic```r```osoftG```r```aphActivityHisto```r```yItem1
 ## OUTPUTS
 
 ### System.Boolean
@@ -365,98 +365,98 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PA```r```AMETE```r``` P```r```OPE```r```TIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To c```r```eate the pa```r```amete```r```s desc```r```ibed below, const```r```uct a hash table containing the app```r```op```r```iate p```r```ope```r```ties. Fo```r``` info```r```mation on hash tables, ```r```un Get-Help about_Hash_Tables.
 
 
-ACTIVITY <IMicrosoftGraphUserActivity>: userActivity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
-  - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
-  - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-  - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-  - `[ContentInfo <IMicrosoftGraphJson>]`: Json
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
-  - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
-  - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
-  - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
-  - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
-    - `[Id <String>]`: Read-only.
-    - `[ActiveDurationSeconds <Int32?>]`: Optional. The duration of active user engagement. if not supplied, this is calculated from the startedDateTime and lastActiveDateTime.
-    - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
-    - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
-    - `[ExpirationDateTime <DateTime?>]`: Optional. UTC DateTime when the historyItem will undergo hard-delete. Can be set by the client.
-    - `[LastActiveDateTime <DateTime?>]`: Optional. UTC DateTime when the historyItem (activity session) was last understood as active or finished - if null, historyItem status should be Ongoing.
-    - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
-    - `[StartedDateTime <DateTime?>]`: Required. UTC DateTime when the historyItem (activity session) was started. Required for timeline history.
-    - `[Status <String>]`: status
-    - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time. Values supplied as Olson IDs in order to support cross-platform representation.
-  - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
-  - `[Status <String>]`: status
-  - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
-  - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
-      - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
-      - `[AlternativeText <String>]`: 
-      - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
-    - `[BackgroundColor <String>]`: Optional. Background color used to render the activity in the UI - brand color for the application source of the activity. Must be a valid hex color
-    - `[Content <IMicrosoftGraphJson>]`: Json
-    - `[Description <String>]`: Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
-    - `[DisplayText <String>]`: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+ACTIVITY <IMic```r```osoftG```r```aphUse```r```Activity>: use```r```Activity
+  - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+  - `[Id <St```r```ing>]`: ```r```ead-only.
+  - `[ActivationU```r```l <St```r```ing>]`: ```r```equi```r```ed. U```r```L used to launch the activity in the best native expe```r```ience ```r```ep```r```esented by the appId. Might launch a web-based app if no native app exists.
+  - `[ActivitySou```r```ceHost <St```r```ing>]`: ```r```equi```r```ed. U```r```L fo```r``` the domain ```r```ep```r```esenting the c```r```oss-platfo```r```m identity mapping fo```r``` the app. Mapping is sto```r```ed eithe```r``` as a JSON file hosted on the domain o```r``` configu```r```able via Windows Dev Cente```r```. The JSON file is named c```r```oss-platfo```r```m-app-identifie```r```s and is hosted at ```r```oot of you```r``` HTTPS domain, eithe```r``` at the top level domain o```r``` include a sub domain. Fo```r``` example: https://contoso.com o```r``` https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (o```r``` sub domain) pe```r``` c```r```oss-platfo```r```m app identity. Fo```r``` example, a sepa```r```ate file and domain is needed fo```r``` Wo```r```d vs. Powe```r```Point.
+  - `[AppActivityId <St```r```ing>]`: ```r```equi```r```ed. The unique activity ID in the context of the app - supplied by calle```r``` and immutable the```r```eafte```r```.
+  - `[AppDisplayName <St```r```ing>]`: Optional. Sho```r```t text desc```r```iption of the app used to gene```r```ate the activity fo```r``` use in cases when the app is not installed on the use```r```'s local device.
+  - `[ContentInfo <IMic```r```osoftG```r```aphJson>]`: Json
+    - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+  - `[ContentU```r```l <St```r```ing>]`: Optional. Used in the event the content can be ```r```ende```r```ed outside of a native o```r``` web-based app expe```r```ience (fo```r``` example, a pointe```r``` to an item in an ```r```SS feed).
+  - `[C```r```eatedDateTime <DateTime?>]`: Set by the se```r```ve```r```. DateTime in UTC when the object was c```r```eated on the se```r```ve```r```.
+  - `[Expi```r```ationDateTime <DateTime?>]`: Set by the se```r```ve```r```. DateTime in UTC when the object expi```r```ed on the se```r```ve```r```.
+  - `[FallbackU```r```l <St```r```ing>]`: Optional. U```r```L used to launch the activity in a web-based app, if available.
+  - `[Histo```r```yItems <IMic```r```osoftG```r```aphActivityHisto```r```yItem[]>]`: Optional. NavigationP```r```ope```r```ty/Containment; navigation p```r```ope```r```ty to the activity's histo```r```yItems.
+    - `[Id <St```r```ing>]`: ```r```ead-only.
+    - `[ActiveDu```r```ationSeconds <Int32?>]`: Optional. The du```r```ation of active use```r``` engagement. if not supplied, this is calculated f```r```om the sta```r```tedDateTime and lastActiveDateTime.
+    - `[Activity <IMic```r```osoftG```r```aphUse```r```Activity>]`: use```r```Activity
+    - `[C```r```eatedDateTime <DateTime?>]`: Set by the se```r```ve```r```. DateTime in UTC when the object was c```r```eated on the se```r```ve```r```.
+    - `[Expi```r```ationDateTime <DateTime?>]`: Optional. UTC DateTime when the histo```r```yItem will unde```r```go ha```r```d-delete. Can be set by the client.
+    - `[LastActiveDateTime <DateTime?>]`: Optional. UTC DateTime when the histo```r```yItem (activity session) was last unde```r```stood as active o```r``` finished - if null, histo```r```yItem status should be Ongoing.
+    - `[LastModifiedDateTime <DateTime?>]`: Set by the se```r```ve```r```. DateTime in UTC when the object was modified on the se```r```ve```r```.
+    - `[Sta```r```tedDateTime <DateTime?>]`: ```r```equi```r```ed. UTC DateTime when the histo```r```yItem (activity session) was sta```r```ted. ```r```equi```r```ed fo```r``` timeline histo```r```y.
+    - `[Status <St```r```ing>]`: status
+    - `[Use```r```Timezone <St```r```ing>]`: Optional. The timezone in which the use```r```'s device used to gene```r```ate the activity was located at activity c```r```eation time. Values supplied as Olson IDs in o```r```de```r``` to suppo```r```t c```r```oss-platfo```r```m ```r```ep```r```esentation.
+  - `[LastModifiedDateTime <DateTime?>]`: Set by the se```r```ve```r```. DateTime in UTC when the object was modified on the se```r```ve```r```.
+  - `[Status <St```r```ing>]`: status
+  - `[Use```r```Timezone <St```r```ing>]`: Optional. The timezone in which the use```r```'s device used to gene```r```ate the activity was located at activity c```r```eation time; values supplied as Olson IDs in o```r```de```r``` to suppo```r```t c```r```oss-platfo```r```m ```r```ep```r```esentation.
+  - `[VisualElements <IMic```r```osoftG```r```aphVisualInfo>]`: visualInfo
+    - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+    - `[Att```r```ibution <IMic```r```osoftG```r```aphImageInfo>]`: imageInfo
+      - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+      - `[AddImageQue```r```y <Boolean?>]`: Optional; pa```r```amete```r``` used to indicate the se```r```ve```r``` is able to ```r```ende```r``` image dynamically in ```r```esponse to pa```r```amete```r```ization. Fo```r``` example - a high cont```r```ast image
+      - `[Alte```r```nateText <St```r```ing>]`: Optional; alt-text accessible content fo```r``` the image
+      - `[Alte```r```nativeText <St```r```ing>]`: 
+      - `[IconU```r```l <St```r```ing>]`: Optional; U```r```I that points to an icon which ```r```ep```r```esents the application used to gene```r```ate the activity
+    - `[Backg```r```oundColo```r``` <St```r```ing>]`: Optional. Backg```r```ound colo```r``` used to ```r```ende```r``` the activity in the UI - b```r```and colo```r``` fo```r``` the application sou```r```ce of the activity. Must be a valid hex colo```r```
+    - `[Content <IMic```r```osoftG```r```aphJson>]`: Json
+    - `[Desc```r```iption <St```r```ing>]`: Optional. Longe```r``` text desc```r```iption of the use```r```'s unique activity (example: document name, fi```r```st sentence, and/o```r``` metadata)
+    - `[DisplayText <St```r```ing>]`: ```r```equi```r```ed. Sho```r```t text desc```r```iption of the use```r```'s unique activity (fo```r``` example, document name in cases whe```r```e an activity ```r```efe```r```s to document c```r```eation)
 
-BODYPARAMETER <IMicrosoftGraphActivityHistoryItem>: activityHistoryItem
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ActiveDurationSeconds <Int32?>]`: Optional. The duration of active user engagement. if not supplied, this is calculated from the startedDateTime and lastActiveDateTime.
-  - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
-    - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
-    - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
-    - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-    - `[ContentInfo <IMicrosoftGraphJson>]`: Json
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
-    - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
-    - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
-    - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
-    - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
-    - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
-    - `[Status <String>]`: status
-    - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
-    - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
-        - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
-        - `[AlternativeText <String>]`: 
-        - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
-      - `[BackgroundColor <String>]`: Optional. Background color used to render the activity in the UI - brand color for the application source of the activity. Must be a valid hex color
-      - `[Content <IMicrosoftGraphJson>]`: Json
-      - `[Description <String>]`: Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
-      - `[DisplayText <String>]`: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
-  - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
-  - `[ExpirationDateTime <DateTime?>]`: Optional. UTC DateTime when the historyItem will undergo hard-delete. Can be set by the client.
-  - `[LastActiveDateTime <DateTime?>]`: Optional. UTC DateTime when the historyItem (activity session) was last understood as active or finished - if null, historyItem status should be Ongoing.
-  - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
-  - `[StartedDateTime <DateTime?>]`: Required. UTC DateTime when the historyItem (activity session) was started. Required for timeline history.
-  - `[Status <String>]`: status
-  - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time. Values supplied as Olson IDs in order to support cross-platform representation.
+BODYPA```r```AMETE```r``` <IMic```r```osoftG```r```aphActivityHisto```r```yItem>: activityHisto```r```yItem
+  - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+  - `[Id <St```r```ing>]`: ```r```ead-only.
+  - `[ActiveDu```r```ationSeconds <Int32?>]`: Optional. The du```r```ation of active use```r``` engagement. if not supplied, this is calculated f```r```om the sta```r```tedDateTime and lastActiveDateTime.
+  - `[Activity <IMic```r```osoftG```r```aphUse```r```Activity>]`: use```r```Activity
+    - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+    - `[Id <St```r```ing>]`: ```r```ead-only.
+    - `[ActivationU```r```l <St```r```ing>]`: ```r```equi```r```ed. U```r```L used to launch the activity in the best native expe```r```ience ```r```ep```r```esented by the appId. Might launch a web-based app if no native app exists.
+    - `[ActivitySou```r```ceHost <St```r```ing>]`: ```r```equi```r```ed. U```r```L fo```r``` the domain ```r```ep```r```esenting the c```r```oss-platfo```r```m identity mapping fo```r``` the app. Mapping is sto```r```ed eithe```r``` as a JSON file hosted on the domain o```r``` configu```r```able via Windows Dev Cente```r```. The JSON file is named c```r```oss-platfo```r```m-app-identifie```r```s and is hosted at ```r```oot of you```r``` HTTPS domain, eithe```r``` at the top level domain o```r``` include a sub domain. Fo```r``` example: https://contoso.com o```r``` https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (o```r``` sub domain) pe```r``` c```r```oss-platfo```r```m app identity. Fo```r``` example, a sepa```r```ate file and domain is needed fo```r``` Wo```r```d vs. Powe```r```Point.
+    - `[AppActivityId <St```r```ing>]`: ```r```equi```r```ed. The unique activity ID in the context of the app - supplied by calle```r``` and immutable the```r```eafte```r```.
+    - `[AppDisplayName <St```r```ing>]`: Optional. Sho```r```t text desc```r```iption of the app used to gene```r```ate the activity fo```r``` use in cases when the app is not installed on the use```r```'s local device.
+    - `[ContentInfo <IMic```r```osoftG```r```aphJson>]`: Json
+      - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+    - `[ContentU```r```l <St```r```ing>]`: Optional. Used in the event the content can be ```r```ende```r```ed outside of a native o```r``` web-based app expe```r```ience (fo```r``` example, a pointe```r``` to an item in an ```r```SS feed).
+    - `[C```r```eatedDateTime <DateTime?>]`: Set by the se```r```ve```r```. DateTime in UTC when the object was c```r```eated on the se```r```ve```r```.
+    - `[Expi```r```ationDateTime <DateTime?>]`: Set by the se```r```ve```r```. DateTime in UTC when the object expi```r```ed on the se```r```ve```r```.
+    - `[FallbackU```r```l <St```r```ing>]`: Optional. U```r```L used to launch the activity in a web-based app, if available.
+    - `[Histo```r```yItems <IMic```r```osoftG```r```aphActivityHisto```r```yItem[]>]`: Optional. NavigationP```r```ope```r```ty/Containment; navigation p```r```ope```r```ty to the activity's histo```r```yItems.
+    - `[LastModifiedDateTime <DateTime?>]`: Set by the se```r```ve```r```. DateTime in UTC when the object was modified on the se```r```ve```r```.
+    - `[Status <St```r```ing>]`: status
+    - `[Use```r```Timezone <St```r```ing>]`: Optional. The timezone in which the use```r```'s device used to gene```r```ate the activity was located at activity c```r```eation time; values supplied as Olson IDs in o```r```de```r``` to suppo```r```t c```r```oss-platfo```r```m ```r```ep```r```esentation.
+    - `[VisualElements <IMic```r```osoftG```r```aphVisualInfo>]`: visualInfo
+      - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+      - `[Att```r```ibution <IMic```r```osoftG```r```aphImageInfo>]`: imageInfo
+        - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+        - `[AddImageQue```r```y <Boolean?>]`: Optional; pa```r```amete```r``` used to indicate the se```r```ve```r``` is able to ```r```ende```r``` image dynamically in ```r```esponse to pa```r```amete```r```ization. Fo```r``` example - a high cont```r```ast image
+        - `[Alte```r```nateText <St```r```ing>]`: Optional; alt-text accessible content fo```r``` the image
+        - `[Alte```r```nativeText <St```r```ing>]`: 
+        - `[IconU```r```l <St```r```ing>]`: Optional; U```r```I that points to an icon which ```r```ep```r```esents the application used to gene```r```ate the activity
+      - `[Backg```r```oundColo```r``` <St```r```ing>]`: Optional. Backg```r```ound colo```r``` used to ```r```ende```r``` the activity in the UI - b```r```and colo```r``` fo```r``` the application sou```r```ce of the activity. Must be a valid hex colo```r```
+      - `[Content <IMic```r```osoftG```r```aphJson>]`: Json
+      - `[Desc```r```iption <St```r```ing>]`: Optional. Longe```r``` text desc```r```iption of the use```r```'s unique activity (example: document name, fi```r```st sentence, and/o```r``` metadata)
+      - `[DisplayText <St```r```ing>]`: ```r```equi```r```ed. Sho```r```t text desc```r```iption of the use```r```'s unique activity (fo```r``` example, document name in cases whe```r```e an activity ```r```efe```r```s to document c```r```eation)
+  - `[C```r```eatedDateTime <DateTime?>]`: Set by the se```r```ve```r```. DateTime in UTC when the object was c```r```eated on the se```r```ve```r```.
+  - `[Expi```r```ationDateTime <DateTime?>]`: Optional. UTC DateTime when the histo```r```yItem will unde```r```go ha```r```d-delete. Can be set by the client.
+  - `[LastActiveDateTime <DateTime?>]`: Optional. UTC DateTime when the histo```r```yItem (activity session) was last unde```r```stood as active o```r``` finished - if null, histo```r```yItem status should be Ongoing.
+  - `[LastModifiedDateTime <DateTime?>]`: Set by the se```r```ve```r```. DateTime in UTC when the object was modified on the se```r```ve```r```.
+  - `[Sta```r```tedDateTime <DateTime?>]`: ```r```equi```r```ed. UTC DateTime when the histo```r```yItem (activity session) was sta```r```ted. ```r```equi```r```ed fo```r``` timeline histo```r```y.
+  - `[Status <St```r```ing>]`: status
+  - `[Use```r```Timezone <St```r```ing>]`: Optional. The timezone in which the use```r```'s device used to gene```r```ate the activity was located at activity c```r```eation time. Values supplied as Olson IDs in o```r```de```r``` to suppo```r```t c```r```oss-platfo```r```m ```r```ep```r```esentation.
 
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
-  - `[DeviceId <String>]`: key: id of device
-  - `[UserActivityId <String>]`: key: id of userActivity
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IC```r```ossDeviceExpe```r```iencesIdentity>: Identity Pa```r```amete```r```
+  - `[ActivityHisto```r```yItemId <St```r```ing>]`: key: id of activityHisto```r```yItem
+  - `[DeviceId <St```r```ing>]`: key: id of device
+  - `[Use```r```ActivityId <St```r```ing>]`: key: id of use```r```Activity
+  - `[Use```r```Id <St```r```ing>]`: key: id of use```r```
 
-## RELATED LINKS
+## ```r```ELATED LINKS
 
-## RELATED LINKS
+## ```r```ELATED LINKS
