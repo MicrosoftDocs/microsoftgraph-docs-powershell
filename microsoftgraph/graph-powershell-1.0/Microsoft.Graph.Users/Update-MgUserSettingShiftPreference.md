@@ -1,348 +1,348 @@
-﻿---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference
-schema: 2.0.0
+---
+external help file: Micro````s````oft.Graph.U````s````er````s````-help.xml
+Module Name: Micro````s````oft.Graph.U````s````er````s````
+online ver````s````ion: http````s````://doc````s````.micro````s````oft.com/en-u````s````/power````s````hell/module/micro````s````oft.graph.u````s````er````s````/update-mgu````s````er````s````etting````s````hiftpreference
+````s````chema: 2.0.0
 ---
 
-# Update-MgUserSettingShiftPreference
+# Update-MgU````s````er````s````etting````s````hiftPreference
 
-## SYNOPSIS
-Update the navigation property shiftPreferences in users
+## ````s````YNOP````s````I````s````
+Update the navigation property ````s````hiftPreference````s```` in u````s````er````s````
 
-## SYNTAX
+## ````s````YNTAX
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgUserSettingShiftPreference -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Availability <IMicrosoftGraphShiftAvailability[]>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgU````s````er````s````etting````s````hiftPreference -U````s````erId <````s````tring> [-AdditionalPropertie````s```` <Ha````s````htable>]
+ [-Availability <IMicro````s````oftGraph````s````hiftAvailability[]>] [-CreatedDateTime <DateTime>] [-Id <````s````tring>]
+ [-La````s````tModifiedBy <IMicro````s````oftGraphIdentity````s````et>] [-La````s````tModifiedDateTime <DateTime>] [-Pa````s````````s````Thru] [-WhatIf]
+ [-Confirm] [<CommonParameter````s````>]
 ```
 
 ### Update1
 ```
-Update-MgUserSettingShiftPreference -UserId <String> -BodyParameter <IMicrosoftGraphShiftPreferences1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgU````s````er````s````etting````s````hiftPreference -U````s````erId <````s````tring> -BodyParameter <IMicro````s````oftGraph````s````hiftPreference````s````1>
+ [-Pa````s````````s````Thru] [-WhatIf] [-Confirm] [<CommonParameter````s````>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-Availability <IMicrosoftGraphShiftAvailability[]>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgU````s````er````s````etting````s````hiftPreference -InputObject <IU````s````er````s````Identity> [-AdditionalPropertie````s```` <Ha````s````htable>]
+ [-Availability <IMicro````s````oftGraph````s````hiftAvailability[]>] [-CreatedDateTime <DateTime>] [-Id <````s````tring>]
+ [-La````s````tModifiedBy <IMicro````s````oftGraphIdentity````s````et>] [-La````s````tModifiedDateTime <DateTime>] [-Pa````s````````s````Thru] [-WhatIf]
+ [-Confirm] [<CommonParameter````s````>]
 ```
 
 ### UpdateViaIdentity1
 ```
-Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphShiftPreferences1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgU````s````er````s````etting````s````hiftPreference -InputObject <IU````s````er````s````Identity>
+ -BodyParameter <IMicro````s````oftGraph````s````hiftPreference````s````1> [-Pa````s````````s````Thru] [-WhatIf] [-Confirm] [<CommonParameter````s````>]
 ```
 
-## DESCRIPTION
-Update the navigation property shiftPreferences in users
+## DE````s````CRIPTION
+Update the navigation property ````s````hiftPreference````s```` in u````s````er````s````
 
-## EXAMPLES
+## EXAMPLE````s````
 
-## PARAMETERS
+## PARAMETER````s````
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalPropertie````s````
+Additional Parameter````s````
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Type: Ha````s````htable
+Parameter ````s````et````s````: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -Availability
-Availability of the user to be scheduled for work and its recurrence pattern.
-To construct, please use Get-Help -Online and see NOTES section for AVAILABILITY properties and create a hash table.
+Availability of the u````s````er to be ````s````cheduled for work and it````s```` recurrence pattern.
+To con````s````truct, plea````s````e u````s````e Get-Help -Online and ````s````ee NOTE````s```` ````s````ection for AVAILABILITY propertie````s```` and create a ha````s````h table.
 
 ```yaml
-Type: IMicrosoftGraphShiftAvailability[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Type: IMicro````s````oftGraph````s````hiftAvailability[]
+Parameter ````s````et````s````: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -BodyParameter
-shiftPreferences
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+````s````hiftPreference````s````
+To con````s````truct, plea````s````e u````s````e Get-Help -Online and ````s````ee NOTE````s```` ````s````ection for BODYPARAMETER propertie````s```` and create a ha````s````h table.
 
 ```yaml
-Type: IMicrosoftGraphShiftPreferences1
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Type: IMicro````s````oftGraph````s````hiftPreference````s````1
+Parameter ````s````et````s````: Update1, UpdateViaIdentity1
+Alia````s````e````s````:
 
 Required: True
-Position: Named
+Po````s````ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -CreatedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+The Time````s````tamp type repre````s````ent````s```` date and time information u````s````ing I````s````O 8601 format and i````s```` alway````s```` in UTC time.
+For example, midnight UTC on Jan 1, 2014 i````s```` 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Parameter ````s````et````s````: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Type: ````s````tring
+Parameter ````s````et````s````: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con````s````truct, plea````s````e u````s````e Get-Help -Online and ````s````ee NOTE````s```` ````s````ection for INPUTOBJECT propertie````s```` and create a ha````s````h table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Type: IU````s````er````s````Identity
+Parameter ````s````et````s````: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Alia````s````e````s````:
 
 Required: True
-Position: Named
+Po````s````ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character````s````: Fal````s````e
 ```
 
-### -LastModifiedBy
-identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+### -La````s````tModifiedBy
+identity````s````et
+To con````s````truct, plea````s````e u````s````e Get-Help -Online and ````s````ee NOTE````s```` ````s````ection for LA````s````TMODIFIEDBY propertie````s```` and create a ha````s````h table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Type: IMicro````s````oftGraphIdentity````s````et
+Parameter ````s````et````s````: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
-### -LastModifiedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+### -La````s````tModifiedDateTime
+The Time````s````tamp type repre````s````ent````s```` date and time information u````s````ing I````s````O 8601 format and i````s```` alway````s```` in UTC time.
+For example, midnight UTC on Jan 1, 2014 i````s```` 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Parameter ````s````et````s````: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -Pa````s````````s````Thru
+Return````s```` true when the command ````s````ucceed````s````
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Type: ````s````witchParameter
+Parameter ````s````et````s````: (All)
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
-### -UserId
-key: id of user
+### -U````s````erId
+key: id of u````s````er
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Type: ````s````tring
+Parameter ````s````et````s````: UpdateExpanded1, Update1
+Alia````s````e````s````:
 
 Required: True
-Position: Named
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompt````s```` you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: ````s````witchParameter
+Parameter ````s````et````s````: (All)
+Alia````s````e````s````: cf
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+````s````how````s```` what would happen if the cmdlet run````s````.
+The cmdlet i````s```` not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: ````s````witchParameter
+Parameter ````s````et````s````: (All)
+Alia````s````e````s````: wi
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter````s````
+Thi````s```` cmdlet ````s````upport````s```` the common parameter````s````: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo````s````e, -WarningAction, and -WarningVariable. For more information, ````s````ee [about_CommonParameter````s````](http://go.micro````s````oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT````s````
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftPreferences1
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-## OUTPUTS
+### Micro````s````oft.Graph.Power````s````hell.Model````s````.IMicro````s````oftGraph````s````hiftPreference````s````1
+### Micro````s````oft.Graph.Power````s````hell.Model````s````.IU````s````er````s````Identity
+## OUTPUT````s````
 
-### System.Boolean
-## NOTES
+### ````s````y````s````tem.Boolean
+## NOTE````s````
 
-ALIASES
+ALIA````s````E````s````
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE````s````
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter````s```` de````s````cribed below, con````s````truct a ha````s````h table containing the appropriate propertie````s````. For information on ha````s````h table````s````, run Get-Help about_Ha````s````h_Table````s````.
 
 
-AVAILABILITY <IMicrosoftGraphShiftAvailability[]>: Availability of the user to be scheduled for work and its recurrence pattern.
-  - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-      - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-      - `[FirstDayOfWeek <String>]`: dayOfWeek
-      - `[Index <String>]`: weekIndex
-      - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
-      - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
-      - `[Type <String>]`: recurrencePatternType
-    - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-      - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-      - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-      - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
-      - `[Type <String>]`: recurrenceRangeType
-  - `[TimeSlots <IMicrosoftGraphTimeRange[]>]`: The time slot(s) preferred by the user.
-    - `[EndTime <String>]`: End time for the time range.
-    - `[StartTime <String>]`: Start time for the time range.
-  - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+AVAILABILITY <IMicro````s````oftGraph````s````hiftAvailability[]>: Availability of the u````s````er to be ````s````cheduled for work and it````s```` recurrence pattern.
+  - `[Recurrence <IMicro````s````oftGraphPatternedRecurrence>]`: patternedRecurrence
+    - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+    - `[Pattern <IMicro````s````oftGraphRecurrencePattern>]`: recurrencePattern
+      - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+      - `[DayOfMonth <Int32?>]`: The day of the month on which the event occur````s````. Required if type i````s```` ab````s````oluteMonthly or ab````s````oluteYearly.
+      - `[Day````s````OfWeek <````s````tring[]>]`: A collection of the day````s```` of the week on which the event occur````s````. The po````s````````s````ible value````s```` are: ````s````unday, monday, tue````s````day, wedne````s````day, thur````s````day, friday, ````s````aturday. If type i````s```` relativeMonthly or relativeYearly, and day````s````OfWeek ````s````pecifie````s```` more than one day, the event fall````s```` on the fir````s````t day that ````s````ati````s````fie````s```` the pattern.  Required if type i````s```` weekly, relativeMonthly, or relativeYearly.
+      - `[Fir````s````tDayOfWeek <````s````tring>]`: dayOfWeek
+      - `[Index <````s````tring>]`: weekIndex
+      - `[Interval <Int32?>]`: The number of unit````s```` between occurrence````s````, where unit````s```` can be in day````s````, week````s````, month````s````, or year````s````, depending on the type. Required.
+      - `[Month <Int32?>]`: The month in which the event occur````s````.  Thi````s```` i````s```` a number from 1 to 12.
+      - `[Type <````s````tring>]`: recurrencePatternType
+    - `[Range <IMicro````s````oftGraphRecurrenceRange>]`: recurrenceRange
+      - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+      - `[EndDate <DateTime?>]`: The date to ````s````top applying the recurrence pattern. Depending on the recurrence pattern of the event, the la````s````t occurrence of the meeting may not be thi````s```` date. Required if type i````s```` endDate.
+      - `[NumberOfOccurrence````s```` <Int32?>]`: The number of time````s```` to repeat the event. Required and mu````s````t be po````s````itive if type i````s```` numbered.
+      - `[RecurrenceTimeZone <````s````tring>]`: Time zone for the ````s````tartDate and endDate propertie````s````. Optional. If not ````s````pecified, the time zone of the event i````s```` u````s````ed.
+      - `[````s````tartDate <DateTime?>]`: The date to ````s````tart applying the recurrence pattern. The fir````s````t occurrence of the meeting may be thi````s```` date or later, depending on the recurrence pattern of the event. Mu````s````t be the ````s````ame value a````s```` the ````s````tart property of the recurring event. Required.
+      - `[Type <````s````tring>]`: recurrenceRangeType
+  - `[Time````s````lot````s```` <IMicro````s````oftGraphTimeRange[]>]`: The time ````s````lot(````s````) preferred by the u````s````er.
+    - `[EndTime <````s````tring>]`: End time for the time range.
+    - `[````s````tartTime <````s````tring>]`: ````s````tart time for the time range.
+  - `[TimeZone <````s````tring>]`: ````s````pecifie````s```` the time zone for the indicated time.
 
-BODYPARAMETER <IMicrosoftGraphShiftPreferences1>: shiftPreferences
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: 
-  - `[Availability <IMicrosoftGraphShiftAvailability[]>]`: Availability of the user to be scheduled for work and its recurrence pattern.
-    - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-        - `[FirstDayOfWeek <String>]`: dayOfWeek
-        - `[Index <String>]`: weekIndex
-        - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
-        - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
-        - `[Type <String>]`: recurrencePatternType
-      - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-        - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-        - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-        - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
-        - `[Type <String>]`: recurrenceRangeType
-    - `[TimeSlots <IMicrosoftGraphTimeRange[]>]`: The time slot(s) preferred by the user.
-      - `[EndTime <String>]`: End time for the time range.
-      - `[StartTime <String>]`: Start time for the time range.
-    - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+BODYPARAMETER <IMicro````s````oftGraph````s````hiftPreference````s````1>: ````s````hiftPreference````s````
+  - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+  - `[CreatedDateTime <DateTime?>]`: The Time````s````tamp type repre````s````ent````s```` date and time information u````s````ing I````s````O 8601 format and i````s```` alway````s```` in UTC time. For example, midnight UTC on Jan 1, 2014 i````s```` 2014-01-01T00:00:00Z
+  - `[La````s````tModifiedBy <IMicro````s````oftGraphIdentity````s````et>]`: identity````s````et
+    - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+    - `[Application <IMicro````s````oftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+      - `[Di````s````playName <````s````tring>]`: The identity'````s```` di````s````play name. Note that thi````s```` may not alway````s```` be available or up to date. For example, if a u````s````er change````s```` their di````s````play name, the API may ````s````how the new value in a future re````s````pon````s````e, but the item````s```` a````s````````s````ociated with the u````s````er won't ````s````how up a````s```` having changed when u````s````ing delta.
+      - `[Id <````s````tring>]`: Unique identifier for the identity.
+    - `[Device <IMicro````s````oftGraphIdentity>]`: identity
+    - `[U````s````er <IMicro````s````oftGraphIdentity>]`: identity
+  - `[La````s````tModifiedDateTime <DateTime?>]`: The Time````s````tamp type repre````s````ent````s```` date and time information u````s````ing I````s````O 8601 format and i````s```` alway````s```` in UTC time. For example, midnight UTC on Jan 1, 2014 i````s```` 2014-01-01T00:00:00Z
+  - `[Id <````s````tring>]`: 
+  - `[Availability <IMicro````s````oftGraph````s````hiftAvailability[]>]`: Availability of the u````s````er to be ````s````cheduled for work and it````s```` recurrence pattern.
+    - `[Recurrence <IMicro````s````oftGraphPatternedRecurrence>]`: patternedRecurrence
+      - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+      - `[Pattern <IMicro````s````oftGraphRecurrencePattern>]`: recurrencePattern
+        - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+        - `[DayOfMonth <Int32?>]`: The day of the month on which the event occur````s````. Required if type i````s```` ab````s````oluteMonthly or ab````s````oluteYearly.
+        - `[Day````s````OfWeek <````s````tring[]>]`: A collection of the day````s```` of the week on which the event occur````s````. The po````s````````s````ible value````s```` are: ````s````unday, monday, tue````s````day, wedne````s````day, thur````s````day, friday, ````s````aturday. If type i````s```` relativeMonthly or relativeYearly, and day````s````OfWeek ````s````pecifie````s```` more than one day, the event fall````s```` on the fir````s````t day that ````s````ati````s````fie````s```` the pattern.  Required if type i````s```` weekly, relativeMonthly, or relativeYearly.
+        - `[Fir````s````tDayOfWeek <````s````tring>]`: dayOfWeek
+        - `[Index <````s````tring>]`: weekIndex
+        - `[Interval <Int32?>]`: The number of unit````s```` between occurrence````s````, where unit````s```` can be in day````s````, week````s````, month````s````, or year````s````, depending on the type. Required.
+        - `[Month <Int32?>]`: The month in which the event occur````s````.  Thi````s```` i````s```` a number from 1 to 12.
+        - `[Type <````s````tring>]`: recurrencePatternType
+      - `[Range <IMicro````s````oftGraphRecurrenceRange>]`: recurrenceRange
+        - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+        - `[EndDate <DateTime?>]`: The date to ````s````top applying the recurrence pattern. Depending on the recurrence pattern of the event, the la````s````t occurrence of the meeting may not be thi````s```` date. Required if type i````s```` endDate.
+        - `[NumberOfOccurrence````s```` <Int32?>]`: The number of time````s```` to repeat the event. Required and mu````s````t be po````s````itive if type i````s```` numbered.
+        - `[RecurrenceTimeZone <````s````tring>]`: Time zone for the ````s````tartDate and endDate propertie````s````. Optional. If not ````s````pecified, the time zone of the event i````s```` u````s````ed.
+        - `[````s````tartDate <DateTime?>]`: The date to ````s````tart applying the recurrence pattern. The fir````s````t occurrence of the meeting may be thi````s```` date or later, depending on the recurrence pattern of the event. Mu````s````t be the ````s````ame value a````s```` the ````s````tart property of the recurring event. Required.
+        - `[Type <````s````tring>]`: recurrenceRangeType
+    - `[Time````s````lot````s```` <IMicro````s````oftGraphTimeRange[]>]`: The time ````s````lot(````s````) preferred by the u````s````er.
+      - `[EndTime <````s````tring>]`: End time for the time range.
+      - `[````s````tartTime <````s````tring>]`: ````s````tart time for the time range.
+    - `[TimeZone <````s````tring>]`: ````s````pecifie````s```` the time zone for the indicated time.
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
-  - `[AttachmentBaseId <String>]`: key: id of attachmentBase
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[AttachmentSessionId <String>]`: key: id of attachmentSession
-  - `[ChecklistItemId <String>]`: key: id of checklistItem
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
-  - `[LinkedResourceId <String>]`: key: id of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: key: id of notification
-  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: key: id of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IU````s````er````s````Identity>: Identity Parameter
+  - `[AttachmentBa````s````eId <````s````tring>]`: key: id of attachmentBa````s````e
+  - `[AttachmentId <````s````tring>]`: key: id of attachment
+  - `[Attachment````s````e````s````````s````ionId <````s````tring>]`: key: id of attachment````s````e````s````````s````ion
+  - `[Checkli````s````tItemId <````s````tring>]`: key: id of checkli````s````tItem
+  - `[DirectoryObjectId <````s````tring>]`: key: id of directoryObject
+  - `[Exten````s````ionId <````s````tring>]`: key: id of exten````s````ion
+  - `[Licen````s````eDetail````s````Id <````s````tring>]`: key: id of licen````s````eDetail````s````
+  - `[LinkedRe````s````ourceId <````s````tring>]`: key: id of linkedRe````s````ource
+  - `[MultiValueLegacyExtendedPropertyId <````s````tring>]`: key: id of multiValueLegacyExtendedProperty
+  - `[NotificationId <````s````tring>]`: key: id of notification
+  - `[OAuth2Permi````s````````s````ionGrantId <````s````tring>]`: key: id of oAuth2Permi````s````````s````ionGrant
+  - `[OutlookCategoryId <````s````tring>]`: key: id of outlookCategory
+  - `[OutlookTa````s````kFolderId <````s````tring>]`: key: id of outlookTa````s````kFolder
+  - `[OutlookTa````s````kGroupId <````s````tring>]`: key: id of outlookTa````s````kGroup
+  - `[OutlookTa````s````kId <````s````tring>]`: key: id of outlookTa````s````k
+  - `[ProfilePhotoId <````s````tring>]`: key: id of profilePhoto
+  - `[````s````ingleValueLegacyExtendedPropertyId <````s````tring>]`: key: id of ````s````ingleValueLegacyExtendedProperty
+  - `[TodoTa````s````kId <````s````tring>]`: key: id of todoTa````s````k
+  - `[TodoTa````s````kLi````s````tId <````s````tring>]`: key: id of todoTa````s````kLi````s````t
+  - `[U````s````erId <````s````tring>]`: key: id of u````s````er
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+LA````s````TMODIFIEDBY <IMicro````s````oftGraphIdentity````s````et>: identity````s````et
+  - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+  - `[Application <IMicro````s````oftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+    - `[Di````s````playName <````s````tring>]`: The identity'````s```` di````s````play name. Note that thi````s```` may not alway````s```` be available or up to date. For example, if a u````s````er change````s```` their di````s````play name, the API may ````s````how the new value in a future re````s````pon````s````e, but the item````s```` a````s````````s````ociated with the u````s````er won't ````s````how up a````s```` having changed when u````s````ing delta.
+    - `[Id <````s````tring>]`: Unique identifier for the identity.
+  - `[Device <IMicro````s````oftGraphIdentity>]`: identity
+  - `[U````s````er <IMicro````s````oftGraphIdentity>]`: identity
 
-## RELATED LINKS
+## RELATED LINK````s````
