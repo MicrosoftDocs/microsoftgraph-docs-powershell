@@ -1,99 +1,99 @@
-﻿---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting
-schema: 2.0.0
+---
+external help file: Micro````s````oft.Graph.U````s````er````s````.Action````s````-help.xml
+Module Name: Micro````s````oft.Graph.U````s````er````s````.Action````s````
+online ver````s````ion: http````s````://doc````s````.micro````s````oft.com/en-u````s````/power````s````hell/module/micro````s````oft.graph.u````s````er````s````.action````s````/invoke-mgcreateorgetu````s````eronlinemeeting
+````s````chema: 2.0.0
 ---
 
-# Invoke-MgCreateOrGetUserOnlineMeeting
+# Invoke-MgCreateOrGetU````s````erOnlineMeeting
 
-## SYNOPSIS
+## ````s````YNOP````s````I````s````
 Invoke action createOrGet
 
-## SYNTAX
+## ````s````YNTAX
 
 ### CreateExpanded1 (Default)
 ```
-Invoke-MgCreateOrGetUserOnlineMeeting -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <String>]
- [-Participants <IMicrosoftGraphMeetingParticipants1>] [-StartDateTime <DateTime>] [-Subject <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgCreateOrGetU````s````erOnlineMeeting -U````s````erId <````s````tring> [-AdditionalPropertie````s```` <Ha````s````htable>]
+ [-ChatInfo <IMicro````s````oftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <````s````tring>]
+ [-Participant````s```` <IMicro````s````oftGraphMeetingParticipant````s````1>] [-````s````tartDateTime <DateTime>] [-````s````ubject <````s````tring>]
+ [-WhatIf] [-Confirm] [<CommonParameter````s````>]
 ```
 
 ### Create1
 ```
-Invoke-MgCreateOrGetUserOnlineMeeting -UserId <String>
- -BodyParameter <IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgCreateOrGetU````s````erOnlineMeeting -U````s````erId <````s````tring>
+ -BodyParameter <IPath````s````1H47062U````s````er````s````U````s````erIdOnlinemeeting````s````Micro````s````oftGraphCreateorgetPo````s````tReque````s````tbodyContentApplicationJ````s````on````s````chema1>
+ [-WhatIf] [-Confirm] [<CommonParameter````s````>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-Invoke-MgCreateOrGetUserOnlineMeeting -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <String>]
- [-Participants <IMicrosoftGraphMeetingParticipants1>] [-StartDateTime <DateTime>] [-Subject <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgCreateOrGetU````s````erOnlineMeeting -InputObject <IU````s````er````s````Action````s````Identity> [-AdditionalPropertie````s```` <Ha````s````htable>]
+ [-ChatInfo <IMicro````s````oftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <````s````tring>]
+ [-Participant````s```` <IMicro````s````oftGraphMeetingParticipant````s````1>] [-````s````tartDateTime <DateTime>] [-````s````ubject <````s````tring>]
+ [-WhatIf] [-Confirm] [<CommonParameter````s````>]
 ```
 
 ### CreateViaIdentity1
 ```
-Invoke-MgCreateOrGetUserOnlineMeeting -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgCreateOrGetU````s````erOnlineMeeting -InputObject <IU````s````er````s````Action````s````Identity>
+ -BodyParameter <IPath````s````1H47062U````s````er````s````U````s````erIdOnlinemeeting````s````Micro````s````oftGraphCreateorgetPo````s````tReque````s````tbodyContentApplicationJ````s````on````s````chema1>
+ [-WhatIf] [-Confirm] [<CommonParameter````s````>]
 ```
 
-## DESCRIPTION
+## DE````s````CRIPTION
 Invoke action createOrGet
 
-## EXAMPLES
+## EXAMPLE````s````
 
-## PARAMETERS
+## PARAMETER````s````
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalPropertie````s````
+Additional Parameter````s````
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: Ha````s````htable
+Parameter ````s````et````s````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To con````s````truct, plea````s````e u````s````e Get-Help -Online and ````s````ee NOTE````s```` ````s````ection for BODYPARAMETER propertie````s```` and create a ha````s````h table.
 
 ```yaml
-Type: IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Create1, CreateViaIdentity1
-Aliases:
+Type: IPath````s````1H47062U````s````er````s````U````s````erIdOnlinemeeting````s````Micro````s````oftGraphCreateorgetPo````s````tReque````s````tbodyContentApplicationJ````s````on````s````chema1
+Parameter ````s````et````s````: Create1, CreateViaIdentity1
+Alia````s````e````s````:
 
 Required: True
-Position: Named
+Po````s````ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -ChatInfo
 chatInfo
-To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
+To con````s````truct, plea````s````e u````s````e Get-Help -Online and ````s````ee NOTE````s```` ````s````ection for CHATINFO propertie````s```` and create a ha````s````h table.
 
 ```yaml
-Type: IMicrosoftGraphChatInfo
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: IMicro````s````oftGraphChatInfo
+Parameter ````s````et````s````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -EndDateTime
@@ -101,250 +101,250 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Parameter ````s````et````s````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -ExternalId
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ````s````tring
+Parameter ````s````et````s````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con````s````truct, plea````s````e u````s````e Get-Help -Online and ````s````ee NOTE````s```` ````s````ection for INPUTOBJECT propertie````s```` and create a ha````s````h table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
-Aliases:
+Type: IU````s````er````s````Action````s````Identity
+Parameter ````s````et````s````: CreateViaIdentityExpanded1, CreateViaIdentity1
+Alia````s````e````s````:
 
 Required: True
-Position: Named
+Po````s````ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character````s````: Fal````s````e
 ```
 
-### -Participants
-meetingParticipants
-To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
+### -Participant````s````
+meetingParticipant````s````
+To con````s````truct, plea````s````e u````s````e Get-Help -Online and ````s````ee NOTE````s```` ````s````ection for PARTICIPANT````s```` propertie````s```` and create a ha````s````h table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingParticipants1
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: IMicro````s````oftGraphMeetingParticipant````s````1
+Parameter ````s````et````s````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
-### -StartDateTime
+### -````s````tartDateTime
 .
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Parameter ````s````et````s````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
-### -Subject
+### -````s````ubject
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ````s````tring
+Parameter ````s````et````s````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia````s````e````s````:
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
-### -UserId
-key: id of user
+### -U````s````erId
+key: id of u````s````er
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+Type: ````s````tring
+Parameter ````s````et````s````: CreateExpanded1, Create1
+Alia````s````e````s````:
 
 Required: True
-Position: Named
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompt````s```` you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: ````s````witchParameter
+Parameter ````s````et````s````: (All)
+Alia````s````e````s````: cf
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+````s````how````s```` what would happen if the cmdlet run````s````.
+The cmdlet i````s```` not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: ````s````witchParameter
+Parameter ````s````et````s````: (All)
+Alia````s````e````s````: wi
 
-Required: False
-Position: Named
+Required: Fal````s````e
+Po````s````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal````s````e
+Accept wildcard character````s````: Fal````s````e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter````s````
+Thi````s```` cmdlet ````s````upport````s```` the common parameter````s````: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo````s````e, -WarningAction, and -WarningVariable. For more information, ````s````ee [about_CommonParameter````s````](http://go.micro````s````oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT````s````
 
-### Microsoft.Graph.PowerShell.Models.IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-## OUTPUTS
+### Micro````s````oft.Graph.Power````s````hell.Model````s````.IPath````s````1H47062U````s````er````s````U````s````erIdOnlinemeeting````s````Micro````s````oftGraphCreateorgetPo````s````tReque````s````tbodyContentApplicationJ````s````on````s````chema1
+### Micro````s````oft.Graph.Power````s````hell.Model````s````.IU````s````er````s````Action````s````Identity
+## OUTPUT````s````
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting1
-## NOTES
+### Micro````s````oft.Graph.Power````s````hell.Model````s````.IMicro````s````oftGraphOnlineMeeting1
+## NOTE````s````
 
-ALIASES
+ALIA````s````E````s````
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE````s````
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter````s```` de````s````cribed below, con````s````truct a ha````s````h table containing the appropriate propertie````s````. For information on ha````s````h table````s````, run Get-Help about_Ha````s````h_Table````s````.
 
 
-BODYPARAMETER <IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-    - `[ReplyChainMessageId <String>]`: The ID of the reply message.
-    - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+BODYPARAMETER <IPath````s````1H47062U````s````er````s````U````s````erIdOnlinemeeting````s````Micro````s````oftGraphCreateorgetPo````s````tReque````s````tbodyContentApplicationJ````s````on````s````chema1>: .
+  - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+  - `[ChatInfo <IMicro````s````oftGraphChatInfo>]`: chatInfo
+    - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+    - `[Me````s````````s````ageId <````s````tring>]`: The unique identifier for a me````s````````s````age in a Micro````s````oft Team````s```` channel.
+    - `[ReplyChainMe````s````````s````ageId <````s````tring>]`: The ID of the reply me````s````````s````age.
+    - `[ThreadId <````s````tring>]`: The unique identifier for a thread in Micro````s````oft Team````s````.
   - `[EndDateTime <DateTime?>]`: 
-  - `[ExternalId <String>]`: 
-  - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
-      - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Application <IMicrosoftGraphIdentity>]`: identity
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-        - `[Device <IMicrosoftGraphIdentity>]`: identity
-        - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Role <String>]`: 
-      - `[Upn <String>]`: User principal name of the participant.
-    - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-  - `[StartDateTime <DateTime?>]`: 
-  - `[Subject <String>]`: 
+  - `[ExternalId <````s````tring>]`: 
+  - `[Participant````s```` <IMicro````s````oftGraphMeetingParticipant````s````1>]`: meetingParticipant````s````
+    - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+    - `[Attendee````s```` <IMicro````s````oftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendee````s````.
+      - `[Identity <IMicro````s````oftGraphIdentity````s````et>]`: identity````s````et
+        - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+        - `[Application <IMicro````s````oftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+          - `[Di````s````playName <````s````tring>]`: The identity'````s```` di````s````play name. Note that thi````s```` may not alway````s```` be available or up to date. For example, if a u````s````er change````s```` their di````s````play name, the API may ````s````how the new value in a future re````s````pon````s````e, but the item````s```` a````s````````s````ociated with the u````s````er won't ````s````how up a````s```` having changed when u````s````ing delta.
+          - `[Id <````s````tring>]`: Unique identifier for the identity.
+        - `[Device <IMicro````s````oftGraphIdentity>]`: identity
+        - `[U````s````er <IMicro````s````oftGraphIdentity>]`: identity
+      - `[Role <````s````tring>]`: 
+      - `[Upn <````s````tring>]`: U````s````er principal name of the participant.
+    - `[Organizer <IMicro````s````oftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+  - `[````s````tartDateTime <DateTime?>]`: 
+  - `[````s````ubject <````s````tring>]`: 
 
-CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-  - `[ReplyChainMessageId <String>]`: The ID of the reply message.
-  - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+CHATINFO <IMicro````s````oftGraphChatInfo>: chatInfo
+  - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+  - `[Me````s````````s````ageId <````s````tring>]`: The unique identifier for a me````s````````s````age in a Micro````s````oft Team````s```` channel.
+  - `[ReplyChainMe````s````````s````ageId <````s````tring>]`: The ID of the reply me````s````````s````age.
+  - `[ThreadId <````s````tring>]`: The unique identifier for a thread in Micro````s````oft Team````s````.
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
-  - `[BaseTaskId <String>]`: key: id of baseTask
-  - `[BaseTaskListId <String>]`: key: id of baseTaskList
-  - `[CalendarId <String>]`: key: id of calendar
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[CloudPcId <String>]`: key: id of cloudPC
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: key: id of device
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
-  - `[EventId <String>]`: key: id of event
-  - `[EventId1 <String>]`: key: id of event
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[MailFolderId <String>]`: key: id of mailFolder
-  - `[MailFolderId1 <String>]`: key: id of mailFolder
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[MessageId <String>]`: key: id of message
-  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of microsoftAuthenticatorAuthenticationMethod
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
-  - `[PermissionId <String>]`: key: id of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
-  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
+INPUTOBJECT <IU````s````er````s````Action````s````Identity>: Identity Parameter
+  - `[Acce````s````````s````ReviewIn````s````tanceId <````s````tring>]`: key: id of acce````s````````s````ReviewIn````s````tance
+  - `[Acce````s````````s````Review````s````tageId <````s````tring>]`: key: id of acce````s````````s````Review````s````tage
+  - `[AppLogCollectionReque````s````tId <````s````tring>]`: key: id of appLogCollectionReque````s````t
+  - `[AuthenticationMethodId <````s````tring>]`: key: id of authenticationMethod
+  - `[Ba````s````eTa````s````kId <````s````tring>]`: key: id of ba````s````eTa````s````k
+  - `[Ba````s````eTa````s````kLi````s````tId <````s````tring>]`: key: id of ba````s````eTa````s````kLi````s````t
+  - `[CalendarId <````s````tring>]`: key: id of calendar
+  - `[ChatId <````s````tring>]`: key: id of chat
+  - `[ChatMe````s````````s````ageId <````s````tring>]`: key: id of chatMe````s````````s````age
+  - `[ChatMe````s````````s````ageId1 <````s````tring>]`: key: id of chatMe````s````````s````age
+  - `[CloudPcId <````s````tring>]`: key: id of cloudPC
+  - `[ContentTypeId <````s````tring>]`: key: id of contentType
+  - `[DeviceEnrollmentConfigurationId <````s````tring>]`: key: id of deviceEnrollmentConfiguration
+  - `[DeviceId <````s````tring>]`: key: id of device
+  - `[DeviceLogCollectionRe````s````pon````s````eId <````s````tring>]`: key: id of deviceLogCollectionRe````s````pon````s````e
+  - `[Document````s````etVer````s````ionId <````s````tring>]`: key: id of document````s````etVer````s````ion
+  - `[DriveId <````s````tring>]`: key: id of drive
+  - `[DriveItemId <````s````tring>]`: key: id of driveItem
+  - `[DriveItemVer````s````ionId <````s````tring>]`: key: id of driveItemVer````s````ion
+  - `[EventId <````s````tring>]`: key: id of event
+  - `[EventId1 <````s````tring>]`: key: id of event
+  - `[Li````s````tItemId <````s````tring>]`: key: id of li````s````tItem
+  - `[Li````s````tItemVer````s````ionId <````s````tring>]`: key: id of li````s````tItemVer````s````ion
+  - `[MailFolderId <````s````tring>]`: key: id of mailFolder
+  - `[MailFolderId1 <````s````tring>]`: key: id of mailFolder
+  - `[ManagedDeviceId <````s````tring>]`: key: id of managedDevice
+  - `[Me````s````````s````ageId <````s````tring>]`: key: id of me````s````````s````age
+  - `[Micro````s````oftAuthenticatorAuthenticationMethodId <````s````tring>]`: key: id of micro````s````oftAuthenticatorAuthenticationMethod
+  - `[MobileAppTrouble````s````hootingEventId <````s````tring>]`: key: id of mobileAppTrouble````s````hootingEvent
+  - `[NotebookId <````s````tring>]`: key: id of notebook
+  - `[OnenotePageId <````s````tring>]`: key: id of onenotePage
+  - `[Onenote````s````ectionId <````s````tring>]`: key: id of onenote````s````ection
+  - `[OutlookTa````s````kFolderId <````s````tring>]`: key: id of outlookTa````s````kFolder
+  - `[OutlookTa````s````kGroupId <````s````tring>]`: key: id of outlookTa````s````kGroup
+  - `[OutlookTa````s````kId <````s````tring>]`: key: id of outlookTa````s````k
+  - `[Pa````s````````s````wordle````s````````s````Micro````s````oftAuthenticatorAuthenticationMethodId <````s````tring>]`: key: id of pa````s````````s````wordle````s````````s````Micro````s````oftAuthenticatorAuthenticationMethod
+  - `[Permi````s````````s````ionId <````s````tring>]`: key: id of permi````s````````s````ion
+  - `[Re````s````ource````s````pecificPermi````s````````s````ionGrantId <````s````tring>]`: key: id of re````s````ource````s````pecificPermi````s````````s````ionGrant
+  - `[````s````en````s````itivityLabelId <````s````tring>]`: key: id of ````s````en````s````itivityLabel
+  - `[````s````ub````s````criptionId <````s````tring>]`: key: id of ````s````ub````s````cription
+  - `[Team````s````AppIn````s````tallationId <````s````tring>]`: key: id of team````s````AppIn````s````tallation
+  - `[TodoTa````s````kId <````s````tring>]`: key: id of todoTa````s````k
+  - `[TodoTa````s````kLi````s````tId <````s````tring>]`: key: id of todoTa````s````kLi````s````t
+  - `[U````s````erId <````s````tring>]`: key: id of u````s````er
+  - `[Window````s````HelloForBu````s````ine````s````````s````AuthenticationMethodId <````s````tring>]`: key: id of window````s````HelloForBu````s````ine````s````````s````AuthenticationMethod
 
-PARTICIPANTS <IMicrosoftGraphMeetingParticipants1>: meetingParticipants
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Role <String>]`: 
-    - `[Upn <String>]`: User principal name of the participant.
-  - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+PARTICIPANT````s```` <IMicro````s````oftGraphMeetingParticipant````s````1>: meetingParticipant````s````
+  - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+  - `[Attendee````s```` <IMicro````s````oftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendee````s````.
+    - `[Identity <IMicro````s````oftGraphIdentity````s````et>]`: identity````s````et
+      - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+      - `[Application <IMicro````s````oftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: Thi````s```` indicate````s```` any property can be added to thi````s```` object.
+        - `[Di````s````playName <````s````tring>]`: The identity'````s```` di````s````play name. Note that thi````s```` may not alway````s```` be available or up to date. For example, if a u````s````er change````s```` their di````s````play name, the API may ````s````how the new value in a future re````s````pon````s````e, but the item````s```` a````s````````s````ociated with the u````s````er won't ````s````how up a````s```` having changed when u````s````ing delta.
+        - `[Id <````s````tring>]`: Unique identifier for the identity.
+      - `[Device <IMicro````s````oftGraphIdentity>]`: identity
+      - `[U````s````er <IMicro````s````oftGraphIdentity>]`: identity
+    - `[Role <````s````tring>]`: 
+    - `[Upn <````s````tring>]`: U````s````er principal name of the participant.
+  - `[Organizer <IMicro````s````oftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
 
-## RELATED LINKS
+## RELATED LINK````s````
