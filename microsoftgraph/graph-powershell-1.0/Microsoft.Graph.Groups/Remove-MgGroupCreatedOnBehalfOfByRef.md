@@ -1,200 +1,200 @@
-﻿---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/remove-mggroupconversationthreadpostsinglevalueextendedproperty
+---
+exte`r`nal help file: Mic`r`osoft.G`r`aph.G`r`oups-help.xml
+Module Name: Mic`r`osoft.G`r`aph.G`r`oups
+online ve`r`sion: https://docs.mic`r`osoft.com/en-us/powe`r`shell/module/mic`r`osoft.g`r`aph.g`r`oups/`r`emove-mgg`r`oupconve`r`sationth`r`eadpostsinglevalueextendedp`r`ope`r`ty
 schema: 2.0.0
 ---
 
-# Remove-MgGroupConversationThreadPostSingleValueExtendedProperty
+# `r`emove-MgG`r`oupConve`r`sationTh`r`eadPostSingleValueExtendedP`r`ope`r`ty
 
 ## SYNOPSIS
-The collection of single-value extended properties defined for the post.
-Read-only.
+The collection of single-value extended p`r`ope`r`ties defined fo`r` the post.
+`r`ead-only.
 Nullable.
 
 ## SYNTAX
 
 ### Delete1 (Default)
 ```
-Remove-MgGroupConversationThreadPostSingleValueExtendedProperty -ConversationId <String>
- -ConversationThreadId <String> -GroupId <String> -PostId <String>
- -SingleValueLegacyExtendedPropertyId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+`r`emove-MgG`r`oupConve`r`sationTh`r`eadPostSingleValueExtendedP`r`ope`r`ty -Conve`r`sationId <St`r`ing>
+ -Conve`r`sationTh`r`eadId <St`r`ing> -G`r`oupId <St`r`ing> -PostId <St`r`ing>
+ -SingleValueLegacyExtendedP`r`ope`r`tyId <St`r`ing> [-IfMatch <St`r`ing>] [-PassTh`r`u] [-WhatIf] [-Confi`r`m]
+ [<CommonPa`r`amete`r`s>]
 ```
 
 ### DeleteViaIdentity1
 ```
-Remove-MgGroupConversationThreadPostSingleValueExtendedProperty -InputObject <IGroupsIdentity>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+`r`emove-MgG`r`oupConve`r`sationTh`r`eadPostSingleValueExtendedP`r`ope`r`ty -InputObject <IG`r`oupsIdentity>
+ [-IfMatch <St`r`ing>] [-PassTh`r`u] [-WhatIf] [-Confi`r`m] [<CommonPa`r`amete`r`s>]
 ```
 
-## DESCRIPTION
-The collection of single-value extended properties defined for the post.
-Read-only.
+## DESC`r`IPTION
+The collection of single-value extended p`r`ope`r`ties defined fo`r` the post.
+`r`ead-only.
 Nullable.
 
 ## EXAMPLES
 
-## PARAMETERS
+## PA`r`AMETE`r`S
 
-### -ConversationId
-key: id of conversation
+### -Conve`r`sationId
+key: id of conve`r`sation
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: St`r`ing
+Pa`r`amete`r` Sets: Delete1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -ConversationThreadId
-key: id of conversationThread
+### -Conve`r`sationTh`r`eadId
+key: id of conve`r`sationTh`r`ead
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: St`r`ing
+Pa`r`amete`r` Sets: Delete1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -GroupId
-key: id of group
+### -G`r`oupId
+key: id of g`r`oup
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: St`r`ing
+Pa`r`amete`r` Sets: Delete1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -IfMatch
 ETag
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: St`r`ing
+Pa`r`amete`r` Sets: (All)
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+Identity Pa`r`amete`r`
+To const`r`uct, please use Get-Help -Online and see NOTES section fo`r` INPUTOBJECT p`r`ope`r`ties and c`r`eate a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: DeleteViaIdentity1
+Type: IG`r`oupsIdentity
+Pa`r`amete`r` Sets: DeleteViaIdentity1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T`r`ue (ByValue)
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -PassTh`r`u
+`r`etu`r`ns t`r`ue when the command succeeds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: (All)
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -PostId
 key: id of post
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: St`r`ing
+Pa`r`amete`r` Sets: Delete1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -SingleValueLegacyExtendedPropertyId
-key: id of singleValueLegacyExtendedProperty
+### -SingleValueLegacyExtendedP`r`ope`r`tyId
+key: id of singleValueLegacyExtendedP`r`ope`r`ty
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: St`r`ing
+Pa`r`amete`r` Sets: Delete1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Confi`r`m
+P`r`ompts you fo`r` confi`r`mation befo`r`e `r`unning the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: (All)
 Aliases: cf
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happen if the cmdlet `r`uns.
+The cmdlet is not `r`un.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: (All)
 Aliases: wi
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonPa`r`amete`r`s
+This cmdlet suppo`r`ts the common pa`r`amete`r`s: -Debug, -E`r``r`o`r`Action, -E`r``r`o`r`Va`r`iable, -Info`r`mationAction, -Info`r`mationVa`r`iable, -OutVa`r`iable, -OutBuffe`r`, -PipelineVa`r`iable, -Ve`r`bose, -Wa`r`ningAction, and -Wa`r`ningVa`r`iable. Fo`r` mo`r`e info`r`mation, see [about_CommonPa`r`amete`r`s](http://go.mic`r`osoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+### Mic`r`osoft.G`r`aph.Powe`r`Shell.Models.IG`r`oupsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -202,32 +202,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PA`r`AMETE`r` P`r`OPE`r`TIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To c`r`eate the pa`r`amete`r`s desc`r`ibed below, const`r`uct a hash table containing the app`r`op`r`iate p`r`ope`r`ties. Fo`r` info`r`mation on hash tables, `r`un Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[ConversationId <String>]`: key: id of conversation
-  - `[ConversationThreadId <String>]`: key: id of conversationThread
-  - `[DirectorySettingId <String>]`: key: id of directorySetting
-  - `[EndpointId <String>]`: key: id of endpoint
-  - `[EventId <String>]`: key: id of event
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[GroupId <String>]`: key: id of group
-  - `[GroupLifecyclePolicyId <String>]`: key: id of groupLifecyclePolicy
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[MentionId <String>]`: key: id of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[PostId <String>]`: key: id of post
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[User <String>]`: Usage: User={User}
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IG`r`oupsIdentity>: Identity Pa`r`amete`r`
+  - `[AttachmentId <St`r`ing>]`: key: id of attachment
+  - `[Conve`r`sationId <St`r`ing>]`: key: id of conve`r`sation
+  - `[Conve`r`sationTh`r`eadId <St`r`ing>]`: key: id of conve`r`sationTh`r`ead
+  - `[Di`r`ecto`r`ySettingId <St`r`ing>]`: key: id of di`r`ecto`r`ySetting
+  - `[EndpointId <St`r`ing>]`: key: id of endpoint
+  - `[EventId <St`r`ing>]`: key: id of event
+  - `[ExtensionId <St`r`ing>]`: key: id of extension
+  - `[G`r`oupId <St`r`ing>]`: key: id of g`r`oup
+  - `[G`r`oupLifecyclePolicyId <St`r`ing>]`: key: id of g`r`oupLifecyclePolicy
+  - `[IncludePe`r`sonalNotebooks <Boolean?>]`: Usage: includePe`r`sonalNotebooks={includePe`r`sonalNotebooks}
+  - `[MentionId <St`r`ing>]`: key: id of mention
+  - `[MultiValueLegacyExtendedP`r`ope`r`tyId <St`r`ing>]`: key: id of multiValueLegacyExtendedP`r`ope`r`ty
+  - `[NotebookId <St`r`ing>]`: key: id of notebook
+  - `[OnenotePageId <St`r`ing>]`: key: id of onenotePage
+  - `[OnenoteSectionId <St`r`ing>]`: key: id of onenoteSection
+  - `[PostId <St`r`ing>]`: key: id of post
+  - `[P`r`ofilePhotoId <St`r`ing>]`: key: id of p`r`ofilePhoto
+  - `[`r`esou`r`ceSpecificPe`r`missionG`r`antId <St`r`ing>]`: key: id of `r`esou`r`ceSpecificPe`r`missionG`r`ant
+  - `[SingleValueLegacyExtendedP`r`ope`r`tyId <St`r`ing>]`: key: id of singleValueLegacyExtendedP`r`ope`r`ty
+  - `[Use`r` <St`r`ing>]`: Usage: Use`r`={Use`r`}
+  - `[Use`r`Id <St`r`ing>]`: key: id of use`r`
 
-## RELATED LINKS
+## `r`ELATED LINKS
