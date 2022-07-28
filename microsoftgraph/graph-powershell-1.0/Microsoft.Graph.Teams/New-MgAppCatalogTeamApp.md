@@ -1,238 +1,238 @@
-﻿---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp
-schema: 2.0.0
+---
+``e``xt``e``rnal h``e``lp fil``e``: Microsoft.Graph.T``e``ams-h``e``lp.xml
+Modul``e`` Nam``e``: Microsoft.Graph.T``e``ams
+onlin``e`` v``e``rsion: https://docs.microsoft.com/``e``n-us/pow``e``rsh``e``ll/modul``e``/microsoft.graph.t``e``ams/n``e``w-mgappcatalogt``e``amapp
+sch``e``ma: 2.0.0
 ---
 
-# New-MgAppCatalogTeamApp
+# N``e``w-MgAppCatalogT``e``amApp
 
 ## SYNOPSIS
-Create new navigation property to teamsApps for appCatalogs
+Cr``e``at``e`` n``e``w navigation prop``e``rty to t``e``amsApps for appCatalogs
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### Cr``e``at``e````e``xpand``e``d1 (D``e``fault)
 ```
-New-MgAppCatalogTeamApp [-AdditionalProperties <Hashtable>]
- [-AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>] [-DisplayName <String>] [-DistributionMethod <String>]
- [-ExternalId <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp1> [-WhatIf] [-Confirm] [<CommonParameters>]
+N``e``w-MgAppCatalogT``e``amApp [-AdditionalProp``e``rti``e``s <Hashtabl``e``>]
+ [-AppD``e``finitions <IMicrosoftGraphT``e``amsAppD``e``finition[]>] [-DisplayNam``e`` <String>] [-DistributionM``e``thod <String>]
+ [-``e``xt``e``rnalId <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-## DESCRIPTION
-Create new navigation property to teamsApps for appCatalogs
+### Cr``e``at``e``1
+```
+N``e``w-MgAppCatalogT``e``amApp -BodyParam``e``t``e``r <IMicrosoftGraphT``e``amsApp1> [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
+```
 
-## EXAMPLES
+## D``e``SCRIPTION
+Cr``e``at``e`` n``e``w navigation prop``e``rty to t``e``amsApps for appCatalogs
 
-## PARAMETERS
+## ``e``XAMPL``e``S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM``e``T``e``RS
+
+### -AdditionalProp``e``rti``e``s
+Additional Param``e``t``e``rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ``e``: Hashtabl``e``
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -AppDefinitions
-The details for each version of the app.
-To construct, please use Get-Help -Online and see NOTES section for APPDEFINITIONS properties and create a hash table.
+### -AppD``e``finitions
+Th``e`` d``e``tails for ``e``ach v``e``rsion of th``e`` app.
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for APPD``e``FINITIONS prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppDefinition[]
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ``e``: IMicrosoftGraphT``e``amsAppD``e``finition[]
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -BodyParameter
-teamsApp
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam``e``t``e``r
+t``e``amsApp
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for BODYPARAM``e``T``e``R prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphTeamsApp1
-Parameter Sets: Create1
-Aliases:
+Typ``e``: IMicrosoftGraphT``e``amsApp1
+Param``e``t``e``r S``e``ts: Cr``e``at``e``1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -DisplayName
-The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
+### -DisplayNam``e``
+Th``e`` nam``e`` of th``e`` catalog app provid``e``d by th``e`` app d``e``v``e``lop``e``r in th``e`` Microsoft T``e``ams zip app packag``e``.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -DistributionMethod
-teamsAppDistributionMethod
+### -DistributionM``e``thod
+t``e``amsAppDistributionM``e``thod
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -ExternalId
-The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
+### -``e``xt``e``rnalId
+Th``e`` ID of th``e`` catalog provid``e``d by th``e`` app d``e``v``e``lop``e``r in th``e`` Microsoft T``e``ams zip app packag``e``.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``e``for``e`` running th``e`` cmdl``e``t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``e``n if th``e`` cmdl``e``t runs.
+Th``e`` cmdl``e``t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``e``t``e``rs
+This cmdl``e``t supports th``e`` common param``e``t``e``rs: -D``e``bug, -``e``rrorAction, -``e``rrorVariabl``e``, -InformationAction, -InformationVariabl``e``, -OutVariabl``e``, -OutBuff``e``r, -Pip``e``lin``e``Variabl``e``, -V``e``rbos``e``, -WarningAction, and -WarningVariabl``e``. For mor``e`` information, s``e````e`` [about_CommonParam``e``t``e``rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphT``e``amsApp1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
-## NOTES
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphT``e``amsApp1
+## NOT``e``S
 
-ALIASES
+ALIAS``e``S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``e``X PARAM``e``T``e``R PROP``e``RTI``e``S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``e``at``e`` th``e`` param``e``t``e``rs d``e``scrib``e``d b``e``low, construct a hash tabl``e`` containing th``e`` appropriat``e`` prop``e``rti``e``s. For information on hash tabl``e``s, run G``e``t-H``e``lp about_Hash_Tabl``e``s.
 
 
-APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition[]>: The details for each version of the app.
+APPD``e``FINITIONS <IMicrosoftGraphT``e``amsAppD``e``finition[]>: Th``e`` d``e``tails for ``e``ach v``e``rsion of th``e`` app.
   - `[Id <String>]`: 
-  - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Bot <IMicrosoftGraphT``e``amworkBot>]`: t``e``amworkBot
+    - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
     - `[Id <String>]`: 
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Description <String>]`: Verbose description of the application.
-  - `[DisplayName <String>]`: The name of the app provided by the app developer.
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[PublishingState <String>]`: teamsAppPublishingState
-  - `[ShortDescription <String>]`: Short description of the application.
-  - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
-  - `[Version <String>]`: The version number of the application.
+  - `[Cr``e``at``e``dBy <IMicrosoftGraphId``e``ntityS``e``t>]`: id``e``ntityS``e``t
+    - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+    - `[Application <IMicrosoftGraphId``e``ntity>]`: id``e``ntity
+      - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+      - `[DisplayNam``e`` <String>]`: Th``e`` id``e``ntity's display nam``e``. Not``e`` that this may not always b``e`` availabl``e`` or up to dat``e``. For ``e``xampl``e``, if a us``e``r chang``e``s th``e``ir display nam``e``, th``e`` API may show th``e`` n``e``w valu``e`` in a futur``e`` r``e``spons``e``, but th``e`` it``e``ms associat``e``d with th``e`` us``e``r won't show up as having chang``e``d wh``e``n using d``e``lta.
+      - `[Id <String>]`: Uniqu``e`` id``e``ntifi``e``r for th``e`` id``e``ntity.
+    - `[D``e``vic``e`` <IMicrosoftGraphId``e``ntity>]`: id``e``ntity
+    - `[Us``e``r <IMicrosoftGraphId``e``ntity>]`: id``e``ntity
+  - `[D``e``scription <String>]`: V``e``rbos``e`` d``e``scription of th``e`` application.
+  - `[DisplayNam``e`` <String>]`: Th``e`` nam``e`` of th``e`` app provid``e``d by th``e`` app d``e``v``e``lop``e``r.
+  - `[LastModifi``e``dDat``e``Tim``e`` <Dat``e``Tim``e``?>]`: 
+  - `[PublishingStat``e`` <String>]`: t``e``amsAppPublishingStat``e``
+  - `[ShortD``e``scription <String>]`: Short d``e``scription of th``e`` application.
+  - `[T``e``amsAppId <String>]`: Th``e`` ID from th``e`` T``e``ams app manif``e``st.
+  - `[V``e``rsion <String>]`: Th``e`` v``e``rsion numb``e``r of th``e`` application.
 
-BODYPARAMETER <IMicrosoftGraphTeamsApp1>: teamsApp
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM``e``T``e``R <IMicrosoftGraphT``e``amsApp1>: t``e``amsApp
+  - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
   - `[Id <String>]`: 
-  - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
+  - `[AppD``e``finitions <IMicrosoftGraphT``e``amsAppD``e``finition[]>]`: Th``e`` d``e``tails for ``e``ach v``e``rsion of th``e`` app.
     - `[Id <String>]`: 
-    - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Bot <IMicrosoftGraphT``e``amworkBot>]`: t``e``amworkBot
+      - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
       - `[Id <String>]`: 
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Description <String>]`: Verbose description of the application.
-    - `[DisplayName <String>]`: The name of the app provided by the app developer.
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[PublishingState <String>]`: teamsAppPublishingState
-    - `[ShortDescription <String>]`: Short description of the application.
-    - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
-    - `[Version <String>]`: The version number of the application.
-  - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
-  - `[DistributionMethod <String>]`: teamsAppDistributionMethod
-  - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
+    - `[Cr``e``at``e``dBy <IMicrosoftGraphId``e``ntityS``e``t>]`: id``e``ntityS``e``t
+      - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+      - `[Application <IMicrosoftGraphId``e``ntity>]`: id``e``ntity
+        - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+        - `[DisplayNam``e`` <String>]`: Th``e`` id``e``ntity's display nam``e``. Not``e`` that this may not always b``e`` availabl``e`` or up to dat``e``. For ``e``xampl``e``, if a us``e``r chang``e``s th``e``ir display nam``e``, th``e`` API may show th``e`` n``e``w valu``e`` in a futur``e`` r``e``spons``e``, but th``e`` it``e``ms associat``e``d with th``e`` us``e``r won't show up as having chang``e``d wh``e``n using d``e``lta.
+        - `[Id <String>]`: Uniqu``e`` id``e``ntifi``e``r for th``e`` id``e``ntity.
+      - `[D``e``vic``e`` <IMicrosoftGraphId``e``ntity>]`: id``e``ntity
+      - `[Us``e``r <IMicrosoftGraphId``e``ntity>]`: id``e``ntity
+    - `[D``e``scription <String>]`: V``e``rbos``e`` d``e``scription of th``e`` application.
+    - `[DisplayNam``e`` <String>]`: Th``e`` nam``e`` of th``e`` app provid``e``d by th``e`` app d``e``v``e``lop``e``r.
+    - `[LastModifi``e``dDat``e``Tim``e`` <Dat``e``Tim``e``?>]`: 
+    - `[PublishingStat``e`` <String>]`: t``e``amsAppPublishingStat``e``
+    - `[ShortD``e``scription <String>]`: Short d``e``scription of th``e`` application.
+    - `[T``e``amsAppId <String>]`: Th``e`` ID from th``e`` T``e``ams app manif``e``st.
+    - `[V``e``rsion <String>]`: Th``e`` v``e``rsion numb``e``r of th``e`` application.
+  - `[DisplayNam``e`` <String>]`: Th``e`` nam``e`` of th``e`` catalog app provid``e``d by th``e`` app d``e``v``e``lop``e``r in th``e`` Microsoft T``e``ams zip app packag``e``.
+  - `[DistributionM``e``thod <String>]`: t``e``amsAppDistributionM``e``thod
+  - `[``e``xt``e``rnalId <String>]`: Th``e`` ID of th``e`` catalog provid``e``d by th``e`` app d``e``v``e``lop``e``r in th``e`` Microsoft T``e``ams zip app packag``e``.
 
-## RELATED LINKS
+## R``e``LAT``e``D LINKS
