@@ -1,698 +1,698 @@
-﻿---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpost
+---
+exte```````````r```````````nal help file: Mic```````````r```````````osoft.G```````````r```````````aph.G```````````r```````````oups-help.xml
+Module Name: Mic```````````r```````````osoft.G```````````r```````````aph.G```````````r```````````oups
+online ve```````````r```````````sion: https://docs.mic```````````r```````````osoft.com/en-us/powe```````````r```````````shell/module/mic```````````r```````````osoft.g```````````r```````````aph.g```````````r```````````oups/new-mgg```````````r```````````oupconve```````````r```````````sationth```````````r```````````eadpost
 schema: 2.0.0
 ---
 
-# New-MgGroupConversationThreadPost
+# New-MgG```````````r```````````oupConve```````````r```````````sationTh```````````r```````````eadPost
 
 ## SYNOPSIS
-Create new navigation property to posts for groups
+C```````````r```````````eate new navigation p```````````r```````````ope```````````r```````````ty to posts fo```````````r``````````` g```````````r```````````oups
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### C```````````r```````````eateExpanded1 (Default)
 ```
-New-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
- [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphAttachment[]>]
- [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>] [-ChangeKey <String>] [-ConversationId1 <String>]
- [-ConversationThreadId1 <String>] [-CreatedDateTime <DateTime>] [-Extensions <IMicrosoftGraphExtension[]>]
- [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-InReplyTo <IMicrosoftGraphPost>]
+New-MgG```````````r```````````oupConve```````````r```````````sationTh```````````r```````````eadPost -Conve```````````r```````````sationId <St```````````r```````````ing> -Conve```````````r```````````sationTh```````````r```````````eadId <St```````````r```````````ing> -G```````````r```````````oupId <St```````````r```````````ing>
+ [-AdditionalP```````````r```````````ope```````````r```````````ties <Hashtable>] [-Attachments <IMic```````````r```````````osoftG```````````r```````````aphAttachment[]>]
+ [-Body <IMic```````````r```````````osoftG```````````r```````````aphItemBody>] [-Catego```````````r```````````ies <St```````````r```````````ing[]>] [-ChangeKey <St```````````r```````````ing>] [-Conve```````````r```````````sationId1 <St```````````r```````````ing>]
+ [-Conve```````````r```````````sationTh```````````r```````````eadId1 <St```````````r```````````ing>] [-C```````````r```````````eatedDateTime <DateTime>] [-Extensions <IMic```````````r```````````osoftG```````````r```````````aphExtension[]>]
+ [-F```````````r```````````om <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient>] [-HasAttachments] [-Id <St```````````r```````````ing>] [-In```````````r```````````eplyTo <IMic```````````r```````````osoftG```````````r```````````aphPost>]
  [-LastModifiedDateTime <DateTime>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
- [-NewParticipants <IMicrosoftGraphRecipient[]>] [-ReceivedDateTime <DateTime>]
- [-Sender <IMicrosoftGraphRecipient>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-MultiValueExtendedP```````````r```````````ope```````````r```````````ties <IMic```````````r```````````osoftG```````````r```````````aphMultiValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]>]
+ [-NewPa```````````r```````````ticipants <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient[]>] [-```````````r```````````eceivedDateTime <DateTime>]
+ [-Sende```````````r``````````` <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient>]
+ [-SingleValueExtendedP```````````r```````````ope```````````r```````````ties <IMic```````````r```````````osoftG```````````r```````````aphSingleValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]>] [-WhatIf] [-Confi```````````r```````````m]
+ [<CommonPa```````````r```````````amete```````````r```````````s>]
 ```
 
-### CreateViaIdentityExpanded1
+### C```````````r```````````eateViaIdentityExpanded1
 ```
-New-MgGroupConversationThreadPost [-ConversationId <String>] [-ConversationThreadId <String>]
- -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>]
- [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-Extensions <IMicrosoftGraphExtension[]>]
- [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-InReplyTo <IMicrosoftGraphPost>]
+New-MgG```````````r```````````oupConve```````````r```````````sationTh```````````r```````````eadPost [-Conve```````````r```````````sationId <St```````````r```````````ing>] [-Conve```````````r```````````sationTh```````````r```````````eadId <St```````````r```````````ing>]
+ -InputObject <IG```````````r```````````oupsIdentity> [-AdditionalP```````````r```````````ope```````````r```````````ties <Hashtable>]
+ [-Attachments <IMic```````````r```````````osoftG```````````r```````````aphAttachment[]>] [-Body <IMic```````````r```````````osoftG```````````r```````````aphItemBody>] [-Catego```````````r```````````ies <St```````````r```````````ing[]>]
+ [-ChangeKey <St```````````r```````````ing>] [-C```````````r```````````eatedDateTime <DateTime>] [-Extensions <IMic```````````r```````````osoftG```````````r```````````aphExtension[]>]
+ [-F```````````r```````````om <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient>] [-HasAttachments] [-Id <St```````````r```````````ing>] [-In```````````r```````````eplyTo <IMic```````````r```````````osoftG```````````r```````````aphPost>]
  [-LastModifiedDateTime <DateTime>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
- [-NewParticipants <IMicrosoftGraphRecipient[]>] [-ReceivedDateTime <DateTime>]
- [-Sender <IMicrosoftGraphRecipient>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-MultiValueExtendedP```````````r```````````ope```````````r```````````ties <IMic```````````r```````````osoftG```````````r```````````aphMultiValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]>]
+ [-NewPa```````````r```````````ticipants <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient[]>] [-```````````r```````````eceivedDateTime <DateTime>]
+ [-Sende```````````r``````````` <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient>]
+ [-SingleValueExtendedP```````````r```````````ope```````````r```````````ties <IMic```````````r```````````osoftG```````````r```````````aphSingleValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]>] [-WhatIf] [-Confi```````````r```````````m]
+ [<CommonPa```````````r```````````amete```````````r```````````s>]
 ```
 
-### Create1
+### C```````````r```````````eate1
 ```
-New-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
- -BodyParameter <IMicrosoftGraphPost> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphPost> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgG```````````r```````````oupConve```````````r```````````sationTh```````````r```````````eadPost -Conve```````````r```````````sationId <St```````````r```````````ing> -Conve```````````r```````````sationTh```````````r```````````eadId <St```````````r```````````ing> -G```````````r```````````oupId <St```````````r```````````ing>
+ -BodyPa```````````r```````````amete```````````r``````````` <IMic```````````r```````````osoftG```````````r```````````aphPost> [-WhatIf] [-Confi```````````r```````````m] [<CommonPa```````````r```````````amete```````````r```````````s>]
 ```
 
-## DESCRIPTION
-Create new navigation property to posts for groups
+### C```````````r```````````eateViaIdentity1
+```
+New-MgG```````````r```````````oupConve```````````r```````````sationTh```````````r```````````eadPost -InputObject <IG```````````r```````````oupsIdentity> -BodyPa```````````r```````````amete```````````r``````````` <IMic```````````r```````````osoftG```````````r```````````aphPost> [-WhatIf]
+ [-Confi```````````r```````````m] [<CommonPa```````````r```````````amete```````````r```````````s>]
+```
+
+## DESC```````````r```````````IPTION
+C```````````r```````````eate new navigation p```````````r```````````ope```````````r```````````ty to posts fo```````````r``````````` g```````````r```````````oups
 
 ## EXAMPLES
 
-## PARAMETERS
+## PA```````````r```````````AMETE```````````r```````````S
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalP```````````r```````````ope```````````r```````````ties
+Additional Pa```````````r```````````amete```````````r```````````s
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ### -Attachments
-The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
-Read-only.
+The collection of fileAttachment, itemAttachment, and ```````````r```````````efe```````````r```````````enceAttachment attachments fo```````````r``````````` the post.
+```````````r```````````ead-only.
 Nullable.
-Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
+Suppo```````````r```````````ts $expand.
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` ATTACHMENTS p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachment[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMic```````````r```````````osoftG```````````r```````````aphAttachment[]
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ### -Body
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for BODY properties and create a hash table.
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` BODY p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMic```````````r```````````osoftG```````````r```````````aphItemBody
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -BodyParameter
+### -BodyPa```````````r```````````amete```````````r```````````
 post
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` BODYPA```````````r```````````AMETE```````````r``````````` p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPost
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IMic```````````r```````````osoftG```````````r```````````aphPost
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eate1, C```````````r```````````eateViaIdentity1
 Aliases:
 
-Required: True
+```````````r```````````equi```````````r```````````ed: T```````````r```````````ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T```````````r```````````ue (ByValue)
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -Categories
-The categories associated with the item
+### -Catego```````````r```````````ies
+The catego```````````r```````````ies associated with the item
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: St```````````r```````````ing[]
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ### -ChangeKey
-Identifies the version of the item.
-Every time the item is changed, changeKey changes as well.
-This allows Exchange to apply changes to the correct version of the object.
-Read-only.
+Identifies the ve```````````r```````````sion of the item.
+Eve```````````r```````````y time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the co```````````r``````````````````````r```````````ect ve```````````r```````````sion of the object.
+```````````r```````````ead-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: St```````````r```````````ing
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -ConversationId
-key: id of conversation
+### -Conve```````````r```````````sationId
+key: id of conve```````````r```````````sation
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: St```````````r```````````ing
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eate1
 Aliases:
 
-Required: True
+```````````r```````````equi```````````r```````````ed: T```````````r```````````ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ```yaml
-Type: String
-Parameter Sets: CreateViaIdentityExpanded1
+Type: St```````````r```````````ing
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -ConversationId1
-Unique ID of the conversation.
-Read-only.
+### -Conve```````````r```````````sationId1
+Unique ID of the conve```````````r```````````sation.
+```````````r```````````ead-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: St```````````r```````````ing
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -ConversationThreadId
-key: id of conversationThread
+### -Conve```````````r```````````sationTh```````````r```````````eadId
+key: id of conve```````````r```````````sationTh```````````r```````````ead
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: St```````````r```````````ing
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eate1
 Aliases:
 
-Required: True
+```````````r```````````equi```````````r```````````ed: T```````````r```````````ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ```yaml
-Type: String
-Parameter Sets: CreateViaIdentityExpanded1
+Type: St```````````r```````````ing
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -ConversationThreadId1
-Unique ID of the conversation thread.
-Read-only.
+### -Conve```````````r```````````sationTh```````````r```````````eadId1
+Unique ID of the conve```````````r```````````sation th```````````r```````````ead.
+```````````r```````````ead-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: St```````````r```````````ing
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -CreatedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+### -C```````````r```````````eatedDateTime
+The Timestamp type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time.
+Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ### -Extensions
-The collection of open extensions defined for the post.
-Read-only.
+The collection of open extensions defined fo```````````r``````````` the post.
+```````````r```````````ead-only.
 Nullable.
-Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+Suppo```````````r```````````ts $expand.
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` EXTENSIONS p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMic```````````r```````````osoftG```````````r```````````aphExtension[]
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -From
-recipient
-To construct, please use Get-Help -Online and see NOTES section for FROM properties and create a hash table.
+### -F```````````r```````````om
+```````````r```````````ecipient
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` F```````````r```````````OM p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -GroupId
-key: id of group
+### -G```````````r```````````oupId
+key: id of g```````````r```````````oup
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: St```````````r```````````ing
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eate1
 Aliases:
 
-Required: True
+```````````r```````````equi```````````r```````````ed: T```````````r```````````ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ### -HasAttachments
-Indicates whether the post has at least one attachment.
-This is a default property.
+Indicates whethe```````````r``````````` the post has at least one attachment.
+This is a default p```````````r```````````ope```````````r```````````ty.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: SwitchPa```````````r```````````amete```````````r```````````
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: St```````````r```````````ing
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+Identity Pa```````````r```````````amete```````````r```````````
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` INPUTOBJECT p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: IG```````````r```````````oupsIdentity
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateViaIdentityExpanded1, C```````````r```````````eateViaIdentity1
 Aliases:
 
-Required: True
+```````````r```````````equi```````````r```````````ed: T```````````r```````````ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T```````````r```````````ue (ByValue)
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -InReplyTo
+### -In```````````r```````````eplyTo
 post
-To construct, please use Get-Help -Online and see NOTES section for INREPLYTO properties and create a hash table.
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` IN```````````r```````````EPLYTO p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPost
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMic```````````r```````````osoftG```````````r```````````aphPost
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ### -LastModifiedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+The Timestamp type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time.
+Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -MultiValueExtendedProperties
-The collection of multi-value extended properties defined for the post.
-Read-only.
+### -MultiValueExtendedP```````````r```````````ope```````````r```````````ties
+The collection of multi-value extended p```````````r```````````ope```````````r```````````ties defined fo```````````r``````````` the post.
+```````````r```````````ead-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` MULTIVALUEEXTENDEDP```````````r```````````OPE```````````r```````````TIES p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMic```````````r```````````osoftG```````````r```````````aphMultiValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -NewParticipants
-Conversation participants that were added to the thread as part of this post.
-To construct, please use Get-Help -Online and see NOTES section for NEWPARTICIPANTS properties and create a hash table.
+### -NewPa```````````r```````````ticipants
+Conve```````````r```````````sation pa```````````r```````````ticipants that we```````````r```````````e added to the th```````````r```````````ead as pa```````````r```````````t of this post.
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` NEWPA```````````r```````````TICIPANTS p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient[]
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -ReceivedDateTime
-Specifies when the post was received.
-The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+### -```````````r```````````eceivedDateTime
+Specifies when the post was ```````````r```````````eceived.
+The DateTimeOffset type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time.
+Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -Sender
-recipient
-To construct, please use Get-Help -Online and see NOTES section for SENDER properties and create a hash table.
+### -Sende```````````r```````````
+```````````r```````````ecipient
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` SENDE```````````r``````````` p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -SingleValueExtendedProperties
-The collection of single-value extended properties defined for the post.
-Read-only.
+### -SingleValueExtendedP```````````r```````````ope```````````r```````````ties
+The collection of single-value extended p```````````r```````````ope```````````r```````````ties defined fo```````````r``````````` the post.
+```````````r```````````ead-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To const```````````r```````````uct, please use Get-Help -Online and see NOTES section fo```````````r``````````` SINGLEVALUEEXTENDEDP```````````r```````````OPE```````````r```````````TIES p```````````r```````````ope```````````r```````````ties and c```````````r```````````eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMic```````````r```````````osoftG```````````r```````````aphSingleValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]
+Pa```````````r```````````amete```````````r``````````` Sets: C```````````r```````````eateExpanded1, C```````````r```````````eateViaIdentityExpanded1
 Aliases:
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Confi```````````r```````````m
+P```````````r```````````ompts you fo```````````r``````````` confi```````````r```````````mation befo```````````r```````````e ```````````r```````````unning the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa```````````r```````````amete```````````r```````````
+Pa```````````r```````````amete```````````r``````````` Sets: (All)
 Aliases: cf
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happen if the cmdlet ```````````r```````````uns.
+The cmdlet is not ```````````r```````````un.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa```````````r```````````amete```````````r```````````
+Pa```````````r```````````amete```````````r``````````` Sets: (All)
 Aliases: wi
 
-Required: False
+```````````r```````````equi```````````r```````````ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```````````r```````````d cha```````````r```````````acte```````````r```````````s: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonPa```````````r```````````amete```````````r```````````s
+This cmdlet suppo```````````r```````````ts the common pa```````````r```````````amete```````````r```````````s: -Debug, -E```````````r``````````````````````r```````````o```````````r```````````Action, -E```````````r``````````````````````r```````````o```````````r```````````Va```````````r```````````iable, -Info```````````r```````````mationAction, -Info```````````r```````````mationVa```````````r```````````iable, -OutVa```````````r```````````iable, -OutBuffe```````````r```````````, -PipelineVa```````````r```````````iable, -Ve```````````r```````````bose, -Wa```````````r```````````ningAction, and -Wa```````````r```````````ningVa```````````r```````````iable. Fo```````````r``````````` mo```````````r```````````e info```````````r```````````mation, see [about_CommonPa```````````r```````````amete```````````r```````````s](http://go.mic```````````r```````````osoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost
+### Mic```````````r```````````osoft.G```````````r```````````aph.Powe```````````r```````````Shell.Models.IG```````````r```````````oupsIdentity
+### Mic```````````r```````````osoft.G```````````r```````````aph.Powe```````````r```````````Shell.Models.IMic```````````r```````````osoftG```````````r```````````aphPost
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost
+### Mic```````````r```````````osoft.G```````````r```````````aph.Powe```````````r```````````Shell.Models.IMic```````````r```````````osoftG```````````r```````````aphPost
 ## NOTES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PA```````````r```````````AMETE```````````r``````````` P```````````r```````````OPE```````````r```````````TIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To c```````````r```````````eate the pa```````````r```````````amete```````````r```````````s desc```````````r```````````ibed below, const```````````r```````````uct a hash table containing the app```````````r```````````op```````````r```````````iate p```````````r```````````ope```````````r```````````ties. Fo```````````r``````````` info```````````r```````````mation on hash tables, ```````````r```````````un Get-Help about_Hash_Tables.
 
 
-ATTACHMENTS <IMicrosoftGraphAttachment[]>: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: 
-  - `[ContentType <String>]`: The MIME type.
-  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+ATTACHMENTS <IMic```````````r```````````osoftG```````````r```````````aphAttachment[]>: The collection of fileAttachment, itemAttachment, and ```````````r```````````efe```````````r```````````enceAttachment attachments fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable. Suppo```````````r```````````ts $expand.
+  - `[Id <St```````````r```````````ing>]`: 
+  - `[ContentType <St```````````r```````````ing>]`: The MIME type.
+  - `[IsInline <Boolean?>]`: t```````````r```````````ue if the attachment is an inline attachment; othe```````````r```````````wise, false.
+  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time. Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Name <St```````````r```````````ing>]`: The display name of the attachment. This does not need to be the actual file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-BODY <IMicrosoftGraphItemBody>: itemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of the item.
-  - `[ContentType <String>]`: bodyType
+BODY <IMic```````````r```````````osoftG```````````r```````````aphItemBody>: itemBody
+  - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+  - `[Content <St```````````r```````````ing>]`: The content of the item.
+  - `[ContentType <St```````````r```````````ing>]`: bodyType
 
-BODYPARAMETER <IMicrosoftGraphPost>: post
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: 
-  - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: 
-    - `[ContentType <String>]`: The MIME type.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+BODYPA```````````r```````````AMETE```````````r``````````` <IMic```````````r```````````osoftG```````````r```````````aphPost>: post
+  - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+  - `[Catego```````````r```````````ies <St```````````r```````````ing[]>]`: The catego```````````r```````````ies associated with the item
+  - `[ChangeKey <St```````````r```````````ing>]`: Identifies the ve```````````r```````````sion of the item. Eve```````````r```````````y time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the co```````````r``````````````````````r```````````ect ve```````````r```````````sion of the object. ```````````r```````````ead-only.
+  - `[C```````````r```````````eatedDateTime <DateTime?>]`: The Timestamp type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time. Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time. Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Id <St```````````r```````````ing>]`: 
+  - `[Attachments <IMic```````````r```````````osoftG```````````r```````````aphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and ```````````r```````````efe```````````r```````````enceAttachment attachments fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable. Suppo```````````r```````````ts $expand.
+    - `[Id <St```````````r```````````ing>]`: 
+    - `[ContentType <St```````````r```````````ing>]`: The MIME type.
+    - `[IsInline <Boolean?>]`: t```````````r```````````ue if the attachment is an inline attachment; othe```````````r```````````wise, false.
+    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time. Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Name <St```````````r```````````ing>]`: The display name of the attachment. This does not need to be the actual file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
-  - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: 
-  - `[From <IMicrosoftGraphRecipient>]`: recipient
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
-  - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-  - `[InReplyTo <IMicrosoftGraphPost>]`: post
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
-    - `[Id <String>]`: 
-    - `[Value <String[]>]`: A collection of property values.
-  - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
-  - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
-    - `[Id <String>]`: 
-    - `[Value <String>]`: A property value.
+  - `[Body <IMic```````````r```````````osoftG```````````r```````````aphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+    - `[Content <St```````````r```````````ing>]`: The content of the item.
+    - `[ContentType <St```````````r```````````ing>]`: bodyType
+  - `[Conve```````````r```````````sationId <St```````````r```````````ing>]`: Unique ID of the conve```````````r```````````sation. ```````````r```````````ead-only.
+  - `[Conve```````````r```````````sationTh```````````r```````````eadId <St```````````r```````````ing>]`: Unique ID of the conve```````````r```````````sation th```````````r```````````ead. ```````````r```````````ead-only.
+  - `[Extensions <IMic```````````r```````````osoftG```````````r```````````aphExtension[]>]`: The collection of open extensions defined fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable. Suppo```````````r```````````ts $expand.
+    - `[Id <St```````````r```````````ing>]`: 
+  - `[F```````````r```````````om <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient>]`: ```````````r```````````ecipient
+    - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+    - `[EmailAdd```````````r```````````ess <IMic```````````r```````````osoftG```````````r```````````aphEmailAdd```````````r```````````ess>]`: emailAdd```````````r```````````ess
+      - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+      - `[Add```````````r```````````ess <St```````````r```````````ing>]`: The email add```````````r```````````ess of an entity instance.
+      - `[Name <St```````````r```````````ing>]`: The display name of an entity instance.
+  - `[HasAttachments <Boolean?>]`: Indicates whethe```````````r``````````` the post has at least one attachment. This is a default p```````````r```````````ope```````````r```````````ty.
+  - `[In```````````r```````````eplyTo <IMic```````````r```````````osoftG```````````r```````````aphPost>]`: post
+  - `[MultiValueExtendedP```````````r```````````ope```````````r```````````ties <IMic```````````r```````````osoftG```````````r```````````aphMultiValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]>]`: The collection of multi-value extended p```````````r```````````ope```````````r```````````ties defined fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable.
+    - `[Id <St```````````r```````````ing>]`: 
+    - `[Value <St```````````r```````````ing[]>]`: A collection of p```````````r```````````ope```````````r```````````ty values.
+  - `[NewPa```````````r```````````ticipants <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient[]>]`: Conve```````````r```````````sation pa```````````r```````````ticipants that we```````````r```````````e added to the th```````````r```````````ead as pa```````````r```````````t of this post.
+  - `[```````````r```````````eceivedDateTime <DateTime?>]`: Specifies when the post was ```````````r```````````eceived. The DateTimeOffset type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time. Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Sende```````````r``````````` <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient>]`: ```````````r```````````ecipient
+  - `[SingleValueExtendedP```````````r```````````ope```````````r```````````ties <IMic```````````r```````````osoftG```````````r```````````aphSingleValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]>]`: The collection of single-value extended p```````````r```````````ope```````````r```````````ties defined fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable.
+    - `[Id <St```````````r```````````ing>]`: 
+    - `[Value <St```````````r```````````ing>]`: A p```````````r```````````ope```````````r```````````ty value.
 
-EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: 
+EXTENSIONS <IMic```````````r```````````osoftG```````````r```````````aphExtension[]>: The collection of open extensions defined fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable. Suppo```````````r```````````ts $expand.
+  - `[Id <St```````````r```````````ing>]`: 
 
-FROM <IMicrosoftGraphRecipient>: recipient
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of an entity instance.
-    - `[Name <String>]`: The display name of an entity instance.
+F```````````r```````````OM <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient>: ```````````r```````````ecipient
+  - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+  - `[EmailAdd```````````r```````````ess <IMic```````````r```````````osoftG```````````r```````````aphEmailAdd```````````r```````````ess>]`: emailAdd```````````r```````````ess
+    - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+    - `[Add```````````r```````````ess <St```````````r```````````ing>]`: The email add```````````r```````````ess of an entity instance.
+    - `[Name <St```````````r```````````ing>]`: The display name of an entity instance.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[ConversationId <String>]`: key: id of conversation
-  - `[ConversationThreadId <String>]`: key: id of conversationThread
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[DirectorySettingId <String>]`: key: id of directorySetting
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EndpointId <String>]`: key: id of endpoint
-  - `[EventId <String>]`: key: id of event
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[GroupId <String>]`: key: id of group
-  - `[GroupLifecyclePolicyId <String>]`: key: id of groupLifecyclePolicy
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: key: id of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[MentionId <String>]`: key: id of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PermissionId <String>]`: key: id of permission
-  - `[PostId <String>]`: key: id of post
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[SiteId <String>]`: key: id of site
-  - `[SitePageId <String>]`: key: id of sitePage
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IG```````````r```````````oupsIdentity>: Identity Pa```````````r```````````amete```````````r```````````
+  - `[AttachmentId <St```````````r```````````ing>]`: key: id of attachment
+  - `[ContentTypeId <St```````````r```````````ing>]`: key: id of contentType
+  - `[Conve```````````r```````````sationId <St```````````r```````````ing>]`: key: id of conve```````````r```````````sation
+  - `[Conve```````````r```````````sationTh```````````r```````````eadId <St```````````r```````````ing>]`: key: id of conve```````````r```````````sationTh```````````r```````````ead
+  - `[Di```````````r```````````ecto```````````r```````````yObjectId <St```````````r```````````ing>]`: key: id of di```````````r```````````ecto```````````r```````````yObject
+  - `[Di```````````r```````````ecto```````````r```````````ySettingId <St```````````r```````````ing>]`: key: id of di```````````r```````````ecto```````````r```````````ySetting
+  - `[DocumentSetVe```````````r```````````sionId <St```````````r```````````ing>]`: key: id of documentSetVe```````````r```````````sion
+  - `[D```````````r```````````iveId <St```````````r```````````ing>]`: key: id of d```````````r```````````ive
+  - `[D```````````r```````````iveItemId <St```````````r```````````ing>]`: key: id of d```````````r```````````iveItem
+  - `[D```````````r```````````iveItemVe```````````r```````````sionId <St```````````r```````````ing>]`: key: id of d```````````r```````````iveItemVe```````````r```````````sion
+  - `[EndDateTime <St```````````r```````````ing>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndpointId <St```````````r```````````ing>]`: key: id of endpoint
+  - `[EventId <St```````````r```````````ing>]`: key: id of event
+  - `[ExtensionId <St```````````r```````````ing>]`: key: id of extension
+  - `[G```````````r```````````oupId <St```````````r```````````ing>]`: key: id of g```````````r```````````oup
+  - `[G```````````r```````````oupLifecyclePolicyId <St```````````r```````````ing>]`: key: id of g```````````r```````````oupLifecyclePolicy
+  - `[IncludePe```````````r```````````sonalNotebooks <Boolean?>]`: Usage: includePe```````````r```````````sonalNotebooks={includePe```````````r```````````sonalNotebooks}
+  - `[Inte```````````r```````````val <St```````````r```````````ing>]`: Usage: inte```````````r```````````val='{inte```````````r```````````val}'
+  - `[ListId <St```````````r```````````ing>]`: key: id of list
+  - `[ListId1 <St```````````r```````````ing>]`: Usage: listId='{listId}'
+  - `[ListItemId <St```````````r```````````ing>]`: key: id of listItem
+  - `[ListItemVe```````````r```````````sionId <St```````````r```````````ing>]`: key: id of listItemVe```````````r```````````sion
+  - `[MentionId <St```````````r```````````ing>]`: key: id of mention
+  - `[MultiValueLegacyExtendedP```````````r```````````ope```````````r```````````tyId <St```````````r```````````ing>]`: key: id of multiValueLegacyExtendedP```````````r```````````ope```````````r```````````ty
+  - `[NotebookId <St```````````r```````````ing>]`: key: id of notebook
+  - `[OnenotePageId <St```````````r```````````ing>]`: key: id of onenotePage
+  - `[OnenoteSectionId <St```````````r```````````ing>]`: key: id of onenoteSection
+  - `[Path <St```````````r```````````ing>]`: Usage: path='{path}'
+  - `[Pe```````````r```````````missionId <St```````````r```````````ing>]`: key: id of pe```````````r```````````mission
+  - `[PostId <St```````````r```````````ing>]`: key: id of post
+  - `[P```````````r```````````ofilePhotoId <St```````````r```````````ing>]`: key: id of p```````````r```````````ofilePhoto
+  - `[Q <St```````````r```````````ing>]`: Usage: q='{q}'
+  - `[```````````r```````````esou```````````r```````````ceSpecificPe```````````r```````````missionG```````````r```````````antId <St```````````r```````````ing>]`: key: id of ```````````r```````````esou```````````r```````````ceSpecificPe```````````r```````````missionG```````````r```````````ant
+  - `[SingleValueLegacyExtendedP```````````r```````````ope```````````r```````````tyId <St```````````r```````````ing>]`: key: id of singleValueLegacyExtendedP```````````r```````````ope```````````r```````````ty
+  - `[SiteId <St```````````r```````````ing>]`: key: id of site
+  - `[SitePageId <St```````````r```````````ing>]`: key: id of sitePage
+  - `[Sta```````````r```````````tDateTime <St```````````r```````````ing>]`: Usage: sta```````````r```````````tDateTime='{sta```````````r```````````tDateTime}'
+  - `[Subsc```````````r```````````iptionId <St```````````r```````````ing>]`: key: id of subsc```````````r```````````iption
+  - `[Token <St```````````r```````````ing>]`: Usage: token='{token}'
+  - `[Use```````````r``````````` <St```````````r```````````ing>]`: Usage: Use```````````r```````````='{Use```````````r```````````}'
+  - `[Use```````````r```````````Id <St```````````r```````````ing>]`: key: id of use```````````r```````````
 
-INREPLYTO <IMicrosoftGraphPost>: post
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: 
-  - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: 
-    - `[ContentType <String>]`: The MIME type.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+IN```````````r```````````EPLYTO <IMic```````````r```````````osoftG```````````r```````````aphPost>: post
+  - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+  - `[Catego```````````r```````````ies <St```````````r```````````ing[]>]`: The catego```````````r```````````ies associated with the item
+  - `[ChangeKey <St```````````r```````````ing>]`: Identifies the ve```````````r```````````sion of the item. Eve```````````r```````````y time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the co```````````r``````````````````````r```````````ect ve```````````r```````````sion of the object. ```````````r```````````ead-only.
+  - `[C```````````r```````````eatedDateTime <DateTime?>]`: The Timestamp type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time. Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time. Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Id <St```````````r```````````ing>]`: 
+  - `[Attachments <IMic```````````r```````````osoftG```````````r```````````aphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and ```````````r```````````efe```````````r```````````enceAttachment attachments fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable. Suppo```````````r```````````ts $expand.
+    - `[Id <St```````````r```````````ing>]`: 
+    - `[ContentType <St```````````r```````````ing>]`: The MIME type.
+    - `[IsInline <Boolean?>]`: t```````````r```````````ue if the attachment is an inline attachment; othe```````````r```````````wise, false.
+    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time. Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Name <St```````````r```````````ing>]`: The display name of the attachment. This does not need to be the actual file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
-  - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: 
-  - `[From <IMicrosoftGraphRecipient>]`: recipient
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
-  - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-  - `[InReplyTo <IMicrosoftGraphPost>]`: post
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
-    - `[Id <String>]`: 
-    - `[Value <String[]>]`: A collection of property values.
-  - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
-  - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
-    - `[Id <String>]`: 
-    - `[Value <String>]`: A property value.
+  - `[Body <IMic```````````r```````````osoftG```````````r```````````aphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+    - `[Content <St```````````r```````````ing>]`: The content of the item.
+    - `[ContentType <St```````````r```````````ing>]`: bodyType
+  - `[Conve```````````r```````````sationId <St```````````r```````````ing>]`: Unique ID of the conve```````````r```````````sation. ```````````r```````````ead-only.
+  - `[Conve```````````r```````````sationTh```````````r```````````eadId <St```````````r```````````ing>]`: Unique ID of the conve```````````r```````````sation th```````````r```````````ead. ```````````r```````````ead-only.
+  - `[Extensions <IMic```````````r```````````osoftG```````````r```````````aphExtension[]>]`: The collection of open extensions defined fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable. Suppo```````````r```````````ts $expand.
+    - `[Id <St```````````r```````````ing>]`: 
+  - `[F```````````r```````````om <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient>]`: ```````````r```````````ecipient
+    - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+    - `[EmailAdd```````````r```````````ess <IMic```````````r```````````osoftG```````````r```````````aphEmailAdd```````````r```````````ess>]`: emailAdd```````````r```````````ess
+      - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+      - `[Add```````````r```````````ess <St```````````r```````````ing>]`: The email add```````````r```````````ess of an entity instance.
+      - `[Name <St```````````r```````````ing>]`: The display name of an entity instance.
+  - `[HasAttachments <Boolean?>]`: Indicates whethe```````````r``````````` the post has at least one attachment. This is a default p```````````r```````````ope```````````r```````````ty.
+  - `[In```````````r```````````eplyTo <IMic```````````r```````````osoftG```````````r```````````aphPost>]`: post
+  - `[MultiValueExtendedP```````````r```````````ope```````````r```````````ties <IMic```````````r```````````osoftG```````````r```````````aphMultiValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]>]`: The collection of multi-value extended p```````````r```````````ope```````````r```````````ties defined fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable.
+    - `[Id <St```````````r```````````ing>]`: 
+    - `[Value <St```````````r```````````ing[]>]`: A collection of p```````````r```````````ope```````````r```````````ty values.
+  - `[NewPa```````````r```````````ticipants <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient[]>]`: Conve```````````r```````````sation pa```````````r```````````ticipants that we```````````r```````````e added to the th```````````r```````````ead as pa```````````r```````````t of this post.
+  - `[```````````r```````````eceivedDateTime <DateTime?>]`: Specifies when the post was ```````````r```````````eceived. The DateTimeOffset type ```````````r```````````ep```````````r```````````esents date and time info```````````r```````````mation using ISO 8601 fo```````````r```````````mat and is always in UTC time. Fo```````````r``````````` example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Sende```````````r``````````` <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient>]`: ```````````r```````````ecipient
+  - `[SingleValueExtendedP```````````r```````````ope```````````r```````````ties <IMic```````````r```````````osoftG```````````r```````````aphSingleValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]>]`: The collection of single-value extended p```````````r```````````ope```````````r```````````ties defined fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable.
+    - `[Id <St```````````r```````````ing>]`: 
+    - `[Value <St```````````r```````````ing>]`: A p```````````r```````````ope```````````r```````````ty value.
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
-  - `[Id <String>]`: 
-  - `[Value <String[]>]`: A collection of property values.
+MULTIVALUEEXTENDEDP```````````r```````````OPE```````````r```````````TIES <IMic```````````r```````````osoftG```````````r```````````aphMultiValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]>: The collection of multi-value extended p```````````r```````````ope```````````r```````````ties defined fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable.
+  - `[Id <St```````````r```````````ing>]`: 
+  - `[Value <St```````````r```````````ing[]>]`: A collection of p```````````r```````````ope```````````r```````````ty values.
 
-NEWPARTICIPANTS <IMicrosoftGraphRecipient[]>: Conversation participants that were added to the thread as part of this post.
-  - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of an entity instance.
-    - `[Name <String>]`: The display name of an entity instance.
+NEWPA```````````r```````````TICIPANTS <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient[]>: Conve```````````r```````````sation pa```````````r```````````ticipants that we```````````r```````````e added to the th```````````r```````````ead as pa```````````r```````````t of this post.
+  - `[EmailAdd```````````r```````````ess <IMic```````````r```````````osoftG```````````r```````````aphEmailAdd```````````r```````````ess>]`: emailAdd```````````r```````````ess
+    - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+    - `[Add```````````r```````````ess <St```````````r```````````ing>]`: The email add```````````r```````````ess of an entity instance.
+    - `[Name <St```````````r```````````ing>]`: The display name of an entity instance.
 
-SENDER <IMicrosoftGraphRecipient>: recipient
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of an entity instance.
-    - `[Name <String>]`: The display name of an entity instance.
+SENDE```````````r``````````` <IMic```````````r```````````osoftG```````````r```````````aph```````````r```````````ecipient>: ```````````r```````````ecipient
+  - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+  - `[EmailAdd```````````r```````````ess <IMic```````````r```````````osoftG```````````r```````````aphEmailAdd```````````r```````````ess>]`: emailAdd```````````r```````````ess
+    - `[(Any) <Object>]`: This indicates any p```````````r```````````ope```````````r```````````ty can be added to this object.
+    - `[Add```````````r```````````ess <St```````````r```````````ing>]`: The email add```````````r```````````ess of an entity instance.
+    - `[Name <St```````````r```````````ing>]`: The display name of an entity instance.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the post. Read-only. Nullable.
-  - `[Id <String>]`: 
-  - `[Value <String>]`: A property value.
+SINGLEVALUEEXTENDEDP```````````r```````````OPE```````````r```````````TIES <IMic```````````r```````````osoftG```````````r```````````aphSingleValueLegacyExtendedP```````````r```````````ope```````````r```````````ty[]>: The collection of single-value extended p```````````r```````````ope```````````r```````````ties defined fo```````````r``````````` the post. ```````````r```````````ead-only. Nullable.
+  - `[Id <St```````````r```````````ing>]`: 
+  - `[Value <St```````````r```````````ing>]`: A p```````````r```````````ope```````````r```````````ty value.
 
-## RELATED LINKS
+## ```````````r```````````ELATED LINKS
 
-## RELATED LINKS
+## ```````````r```````````ELATED LINKS
