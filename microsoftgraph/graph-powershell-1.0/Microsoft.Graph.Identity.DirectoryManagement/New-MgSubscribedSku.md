@@ -1,50 +1,50 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku
+---
+external help file: Microsoft.Graph.I```d```entity.```d```irectoryManagement-help.xml
+Mo```d```ule Name: Microsoft.Graph.I```d```entity.```d```irectoryManagement
+online version: https://```d```ocs.microsoft.com/en-us/powershell/mo```d```ule/microsoft.graph.i```d```entity.```d```irectorymanagement/new-mgsubscribe```d```sku
 schema: 2.0.0
 ---
 
-# New-MgSubscribedSku
+# New-MgSubscribe```d```Sku
 
 ## SYNOPSIS
-Add new entity to subscribedSkus
+A```d``````d``` new entity to subscribe```d```Skus
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpan```d```e```d```1 (```d```efault)
 ```
-New-MgSubscribedSku [-AdditionalProperties <Hashtable>] [-AppliesTo <String>] [-CapabilityStatus <String>]
- [-ConsumedUnits <Int32>] [-Id <String>] [-PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>]
- [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>] [-WhatIf]
+New-MgSubscribe```d```Sku [-A```d``````d```itionalProperties <Hashtable>] [-AppliesTo <String>] [-CapabilityStatus <String>]
+ [-Consume```d```Units <Int32>] [-I```d``` <String>] [-Prepai```d```Units <IMicrosoftGraphLicenseUnits```d```etail>]
+ [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>] [-SkuI```d``` <String>] [-SkuPartNumber <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgSubscribedSku -BodyParameter <IMicrosoftGraphSubscribedSku> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSubscribe```d```Sku -Bo```d```yParameter <IMicrosoftGraphSubscribe```d```Sku> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Add new entity to subscribedSkus
+## ```d```ESCRIPTION
+A```d``````d``` new entity to subscribe```d```Skus
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A```d``````d```itionalProperties
+A```d``````d```itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -AppliesTo
@@ -52,220 +52,220 @@ For example, 'User' or 'Company'.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -BodyParameter
-subscribedSku
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo```d```yParameter
+subscribe```d```Sku
+To construct, please use Get-Help -Online an```d``` see NOTES section for BO```d```YPARAMETER properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSubscribedSku
+Type: IMicrosoftGraphSubscribe```d```Sku
 Parameter Sets: Create1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -CapabilityStatus
-Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
-The capabilityStatus is Enabled if the prepaidUnits property has at least 1 unit that is enabled, and LockedOut if the customer cancelled their subscription.
+Possible values are: Enable```d```, Warning, Suspen```d```e```d```, ```d```elete```d```, Locke```d```Out.
+The capabilityStatus is Enable```d``` if the prepai```d```Units property has at least 1 unit that is enable```d```, an```d``` Locke```d```Out if the customer cancelle```d``` their subscription.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -ConsumedUnits
-The number of licenses that have been assigned.
+### -Consume```d```Units
+The number of licenses that have been assigne```d```.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -Id
+### -I```d```
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -PrepaidUnits
-licenseUnitsDetail
-To construct, please use Get-Help -Online and see NOTES section for PREPAIDUNITS properties and create a hash table.
+### -Prepai```d```Units
+licenseUnits```d```etail
+To construct, please use Get-Help -Online an```d``` see NOTES section for PREPAI```d```UNITS properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLicenseUnitsDetail
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphLicenseUnits```d```etail
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -ServicePlans
 Information about the service plans that are available with the SKU.
 Not nullable
-To construct, please use Get-Help -Online and see NOTES section for SERVICEPLANS properties and create a hash table.
+To construct, please use Get-Help -Online an```d``` see NOTES section for SERVICEPLANS properties an```d``` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphServicePlanInfo[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -SkuId
-The unique identifier (GUID) for the service SKU.
+### -SkuI```d```
+The unique i```d```entifier (GUI```d```) for the service SKU.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -SkuPartNumber
-The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'.
-To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
+The SKU part number; for example: 'AA```d```_PREMIUM' or 'RMSBASIC'.
+To get a list of commercial subscriptions that an organization has acquire```d```, see List subscribe```d```Skus.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm```d```let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul```d``` happen if the cm```d```let runs.
+The cm```d```let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm```d```let supports the common parameters: -```d```ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an```d``` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI```d```=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscribedSku
+### Microsoft.Graph.PowerShell.Mo```d```els.IMicrosoftGraphSubscribe```d```Sku
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscribedSku
+### Microsoft.Graph.PowerShell.Mo```d```els.IMicrosoftGraphSubscribe```d```Sku
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ```d```escribe```d``` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSubscribedSku>: subscribedSku
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+BO```d```YPARAMETER <IMicrosoftGraphSubscribe```d```Sku>: subscribe```d```Sku
+  - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+  - `[I```d``` <String>]`: 
   - `[AppliesTo <String>]`: For example, 'User' or 'Company'.
-  - `[CapabilityStatus <String>]`: Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut. The capabilityStatus is Enabled if the prepaidUnits property has at least 1 unit that is enabled, and LockedOut if the customer cancelled their subscription.
-  - `[ConsumedUnits <Int32?>]`: The number of licenses that have been assigned.
-  - `[PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>]`: licenseUnitsDetail
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Enabled <Int32?>]`: The number of units that are enabled for the active subscription of the service SKU.
-    - `[Suspended <Int32?>]`: The number of units that are suspended because the subscription of the service SKU has been cancelled. The units cannot be assigned but can still be reactivated before they are deleted.
-    - `[Warning <Int32?>]`: The number of units that are in warning status. When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it is cancelled (moved to a suspended state).
+  - `[CapabilityStatus <String>]`: Possible values are: Enable```d```, Warning, Suspen```d```e```d```, ```d```elete```d```, Locke```d```Out. The capabilityStatus is Enable```d``` if the prepai```d```Units property has at least 1 unit that is enable```d```, an```d``` Locke```d```Out if the customer cancelle```d``` their subscription.
+  - `[Consume```d```Units <Int32?>]`: The number of licenses that have been assigne```d```.
+  - `[Prepai```d```Units <IMicrosoftGraphLicenseUnits```d```etail>]`: licenseUnits```d```etail
+    - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+    - `[Enable```d``` <Int32?>]`: The number of units that are enable```d``` for the active subscription of the service SKU.
+    - `[Suspen```d```e```d``` <Int32?>]`: The number of units that are suspen```d```e```d``` because the subscription of the service SKU has been cancelle```d```. The units cannot be assigne```d``` but can still be reactivate```d``` before they are ```d```elete```d```.
+    - `[Warning <Int32?>]`: The number of units that are in warning status. When the subscription of the service SKU has expire```d```, the customer has a grace perio```d``` to renew their subscription before it is cancelle```d``` (move```d``` to a suspen```d```e```d``` state).
   - `[ServicePlans <IMicrosoftGraphServicePlanInfo[]>]`: Information about the service plans that are available with the SKU. Not nullable
-    - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
-    - `[ServicePlanId <String>]`: The unique identifier of the service plan.
+    - `[AppliesTo <String>]`: The object the service plan can be assigne```d``` to. The possible values are:User - service plan can be assigne```d``` to in```d```ivi```d```ual users.Company - service plan can be assigne```d``` to the entire tenant.
+    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisione```d```.```d```isable```d``` - Service has been ```d```isable```d```.ErrorStatus - The service plan has not been provisione```d``` an```d``` is in an error state.Pen```d```ingInput - Service is not yet provisione```d```; awaiting service confirmation.Pen```d```ingActivation - Service is provisione```d``` but requires explicit activation by a```d```ministrator (for example, Intune_O365 service plan)Pen```d```ingProvisioning - Microsoft has a```d``````d```e```d``` a new service to the pro```d```uct SKU an```d``` it has not been activate```d``` in the tenant, yet.
+    - `[ServicePlanI```d``` <String>]`: The unique i```d```entifier of the service plan.
     - `[ServicePlanName <String>]`: The name of the service plan.
-  - `[SkuId <String>]`: The unique identifier (GUID) for the service SKU.
-  - `[SkuPartNumber <String>]`: The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'. To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
+  - `[SkuI```d``` <String>]`: The unique i```d```entifier (GUI```d```) for the service SKU.
+  - `[SkuPartNumber <String>]`: The SKU part number; for example: 'AA```d```_PREMIUM' or 'RMSBASIC'. To get a list of commercial subscriptions that an organization has acquire```d```, see List subscribe```d```Skus.
 
-PREPAIDUNITS <IMicrosoftGraphLicenseUnitsDetail>: licenseUnitsDetail
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Enabled <Int32?>]`: The number of units that are enabled for the active subscription of the service SKU.
-  - `[Suspended <Int32?>]`: The number of units that are suspended because the subscription of the service SKU has been cancelled. The units cannot be assigned but can still be reactivated before they are deleted.
-  - `[Warning <Int32?>]`: The number of units that are in warning status. When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it is cancelled (moved to a suspended state).
+PREPAI```d```UNITS <IMicrosoftGraphLicenseUnits```d```etail>: licenseUnits```d```etail
+  - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+  - `[Enable```d``` <Int32?>]`: The number of units that are enable```d``` for the active subscription of the service SKU.
+  - `[Suspen```d```e```d``` <Int32?>]`: The number of units that are suspen```d```e```d``` because the subscription of the service SKU has been cancelle```d```. The units cannot be assigne```d``` but can still be reactivate```d``` before they are ```d```elete```d```.
+  - `[Warning <Int32?>]`: The number of units that are in warning status. When the subscription of the service SKU has expire```d```, the customer has a grace perio```d``` to renew their subscription before it is cancelle```d``` (move```d``` to a suspen```d```e```d``` state).
 
 SERVICEPLANS <IMicrosoftGraphServicePlanInfo[]>: Information about the service plans that are available with the SKU. Not nullable
-  - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-  - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
-  - `[ServicePlanId <String>]`: The unique identifier of the service plan.
+  - `[AppliesTo <String>]`: The object the service plan can be assigne```d``` to. The possible values are:User - service plan can be assigne```d``` to in```d```ivi```d```ual users.Company - service plan can be assigne```d``` to the entire tenant.
+  - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisione```d```.```d```isable```d``` - Service has been ```d```isable```d```.ErrorStatus - The service plan has not been provisione```d``` an```d``` is in an error state.Pen```d```ingInput - Service is not yet provisione```d```; awaiting service confirmation.Pen```d```ingActivation - Service is provisione```d``` but requires explicit activation by a```d```ministrator (for example, Intune_O365 service plan)Pen```d```ingProvisioning - Microsoft has a```d``````d```e```d``` a new service to the pro```d```uct SKU an```d``` it has not been activate```d``` in the tenant, yet.
+  - `[ServicePlanI```d``` <String>]`: The unique i```d```entifier of the service plan.
   - `[ServicePlanName <String>]`: The name of the service plan.
 
-## RELATED LINKS
+## RELATE```d``` LINKS
