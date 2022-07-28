@@ -1,326 +1,326 @@
-﻿---
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusereventattachment
-schema: 2.0.0
+---
+extern``a``l help file: Microsoft.Gr``a``ph.C``a``lend``a``r-help.xml
+Module N``a``me: Microsoft.Gr``a``ph.C``a``lend``a``r
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.gr``a``ph.c``a``lend``a``r/upd``a``te-mguserevent``a``tt``a``chment
+schem``a``: 2.0.0
 ---
 
-# Update-MgUserEventAttachment
+# Upd``a``te-MgUserEvent``a``tt``a``chment
 
 ## SYNOPSIS
-The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
-Navigation property.
-Read-only.
-Nullable.
+The collection of File``a``tt``a``chment, Item``a``tt``a``chment, ``a``nd reference``a``tt``a``chment ``a``tt``a``chments for the event.
+N``a``vig``a``tion property.
+Re``a``d-only.
+Null``a``ble.
 
-## SYNTAX
+## SYNT``a``X
 
-### UpdateExpanded1 (Default)
+### Upd``a``teExp``a``nded1 (Def``a``ult)
 ```
-Update-MgUserEventAttachment -AttachmentId <String> -EventId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>] [-IsInline]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgUserEventAttachment -AttachmentId <String> -EventId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphAttachment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Upd``a``te-MgUserEvent``a``tt``a``chment -``a``tt``a``chmentId <String> -EventId <String> -UserId <String>
+ [-``a``ddition``a``lProperties <H``a``sht``a``ble>] [-ContentType <String>] [-Id <String>] [-IsInline]
+ [-L``a``stModifiedD``a``teTime <D``a``teTime>] [-N``a``me <String>] [-Size <Int32>] [-P``a``ssThru] [-Wh``a``tIf] [-Confirm]
+ [<CommonP``a``r``a``meters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Upd``a``te1
 ```
-Update-MgUserEventAttachment -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
- [-Size <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Upd``a``te-MgUserEvent``a``tt``a``chment -``a``tt``a``chmentId <String> -EventId <String> -UserId <String>
+ -BodyP``a``r``a``meter <IMicrosoftGr``a``ph``a``tt``a``chment> [-P``a``ssThru] [-Wh``a``tIf] [-Confirm] [<CommonP``a``r``a``meters>]
 ```
 
-### UpdateViaIdentity1
+### Upd``a``teVi``a``IdentityExp``a``nded1
 ```
-Update-MgUserEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphAttachment>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Upd``a``te-MgUserEvent``a``tt``a``chment -InputObject <IC``a``lend``a``rIdentity> [-``a``ddition``a``lProperties <H``a``sht``a``ble>]
+ [-ContentType <String>] [-Id <String>] [-IsInline] [-L``a``stModifiedD``a``teTime <D``a``teTime>] [-N``a``me <String>]
+ [-Size <Int32>] [-P``a``ssThru] [-Wh``a``tIf] [-Confirm] [<CommonP``a``r``a``meters>]
+```
+
+### Upd``a``teVi``a``Identity1
+```
+Upd``a``te-MgUserEvent``a``tt``a``chment -InputObject <IC``a``lend``a``rIdentity> -BodyP``a``r``a``meter <IMicrosoftGr``a``ph``a``tt``a``chment>
+ [-P``a``ssThru] [-Wh``a``tIf] [-Confirm] [<CommonP``a``r``a``meters>]
 ```
 
 ## DESCRIPTION
-The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
-Navigation property.
-Read-only.
-Nullable.
+The collection of File``a``tt``a``chment, Item``a``tt``a``chment, ``a``nd reference``a``tt``a``chment ``a``tt``a``chments for the event.
+N``a``vig``a``tion property.
+Re``a``d-only.
+Null``a``ble.
 
-## EXAMPLES
+## EX``a``MPLES
 
-## PARAMETERS
+## P``a``R``a``METERS
 
-### -AdditionalProperties
-Additional Parameters
+### -``a``ddition``a``lProperties
+``a``ddition``a``l P``a``r``a``meters
 
-```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+```y``a``ml
+Type: H``a``sht``a``ble
+P``a``r``a``meter Sets: Upd``a``teExp``a``nded1, Upd``a``teVi``a``IdentityExp``a``nded1
+``a``li``a``ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``a``lse
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
-### -AttachmentId
-key: id of attachment
+### -``a``tt``a``chmentId
+key: id of ``a``tt``a``chment
 
-```yaml
+```y``a``ml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+P``a``r``a``meter Sets: Upd``a``teExp``a``nded1, Upd``a``te1
+``a``li``a``ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
-### -BodyParameter
-attachment
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyP``a``r``a``meter
+``a``tt``a``chment
+To construct, ple``a``se use Get-Help -Online ``a``nd see NOTES section for BODYP``a``R``a``METER properties ``a``nd cre``a``te ``a`` h``a``sh t``a``ble.
 
-```yaml
-Type: IMicrosoftGraphAttachment
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+```y``a``ml
+Type: IMicrosoftGr``a``ph``a``tt``a``chment
+P``a``r``a``meter Sets: Upd``a``te1, Upd``a``teVi``a``Identity1
+``a``li``a``ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: True (ByV``a``lue)
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
 ### -ContentType
 The MIME type.
 
-```yaml
+```y``a``ml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+P``a``r``a``meter Sets: Upd``a``teExp``a``nded1, Upd``a``teVi``a``IdentityExp``a``nded1
+``a``li``a``ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``a``lse
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
 ### -EventId
 key: id of event
 
-```yaml
+```y``a``ml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+P``a``r``a``meter Sets: Upd``a``teExp``a``nded1, Upd``a``te1
+``a``li``a``ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
 ### -Id
-Read-only.
+Re``a``d-only.
 
-```yaml
+```y``a``ml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+P``a``r``a``meter Sets: Upd``a``teExp``a``nded1, Upd``a``teVi``a``IdentityExp``a``nded1
+``a``li``a``ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``a``lse
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+Identity P``a``r``a``meter
+To construct, ple``a``se use Get-Help -Online ``a``nd see NOTES section for INPUTOBJECT properties ``a``nd cre``a``te ``a`` h``a``sh t``a``ble.
 
-```yaml
-Type: ICalendarIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+```y``a``ml
+Type: IC``a``lend``a``rIdentity
+P``a``r``a``meter Sets: Upd``a``teVi``a``IdentityExp``a``nded1, Upd``a``teVi``a``Identity1
+``a``li``a``ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: True (ByV``a``lue)
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
 ### -IsInline
-true if the attachment is an inline attachment; otherwise, false.
+true if the ``a``tt``a``chment is ``a``n inline ``a``tt``a``chment; otherwise, f``a``lse.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+```y``a``ml
+Type: SwitchP``a``r``a``meter
+P``a``r``a``meter Sets: Upd``a``teExp``a``nded1, Upd``a``teVi``a``IdentityExp``a``nded1
+``a``li``a``ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``a``lse
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
-### -LastModifiedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+### -L``a``stModifiedD``a``teTime
+The Timest``a``mp type represents d``a``te ``a``nd time inform``a``tion using ISO 8601 form``a``t ``a``nd is ``a``lw``a``ys in UTC time.
+For ex``a``mple, midnight UTC on J``a``n 1, 2014 is 2014-01-01T00:00:00Z
 
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+```y``a``ml
+Type: D``a``teTime
+P``a``r``a``meter Sets: Upd``a``teExp``a``nded1, Upd``a``teVi``a``IdentityExp``a``nded1
+``a``li``a``ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``a``lse
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
-### -Name
-The attachment's file name.
+### -N``a``me
+The ``a``tt``a``chment's file n``a``me.
 
-```yaml
+```y``a``ml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+P``a``r``a``meter Sets: Upd``a``teExp``a``nded1, Upd``a``teVi``a``IdentityExp``a``nded1
+``a``li``a``ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``a``lse
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -P``a``ssThru
+Returns true when the comm``a``nd succeeds
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+```y``a``ml
+Type: SwitchP``a``r``a``meter
+P``a``r``a``meter Sets: (``a``ll)
+``a``li``a``ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``a``lse
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
 ### -Size
-The length of the attachment in bytes.
+The length of the ``a``tt``a``chment in bytes.
 
-```yaml
+```y``a``ml
 Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+P``a``r``a``meter Sets: Upd``a``teExp``a``nded1, Upd``a``teVi``a``IdentityExp``a``nded1
+``a``li``a``ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``a``lse
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
 ### -UserId
 key: id of user
 
-```yaml
+```y``a``ml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+P``a``r``a``meter Sets: Upd``a``teExp``a``nded1, Upd``a``te1
+``a``li``a``ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirm``a``tion before running the cmdlet.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+```y``a``ml
+Type: SwitchP``a``r``a``meter
+P``a``r``a``meter Sets: (``a``ll)
+``a``li``a``ses: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``a``lse
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
+### -Wh``a``tIf
+Shows wh``a``t would h``a``ppen if the cmdlet runs.
 The cmdlet is not run.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+```y``a``ml
+Type: SwitchP``a``r``a``meter
+P``a``r``a``meter Sets: (``a``ll)
+``a``li``a``ses: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``a``lse
+Position: N``a``med
+Def``a``ult v``a``lue: None
+``a``ccept pipeline input: F``a``lse
+``a``ccept wildc``a``rd ch``a``r``a``cters: F``a``lse
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonP``a``r``a``meters
+This cmdlet supports the common p``a``r``a``meters: -Debug, -Error``a``ction, -ErrorV``a``ri``a``ble, -Inform``a``tion``a``ction, -Inform``a``tionV``a``ri``a``ble, -OutV``a``ri``a``ble, -OutBuffer, -PipelineV``a``ri``a``ble, -Verbose, -W``a``rning``a``ction, ``a``nd -W``a``rningV``a``ri``a``ble. For more inform``a``tion, see [``a``bout_CommonP``a``r``a``meters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+### Microsoft.Gr``a``ph.PowerShell.Models.IC``a``lend``a``rIdentity
+### Microsoft.Gr``a``ph.PowerShell.Models.IMicrosoftGr``a``ph``a``tt``a``chment
 ## OUTPUTS
 
-### System.Boolean
+### System.Boole``a``n
 ## NOTES
 
-ALIASES
+``a``LI``a``SES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX P``a``R``a``METER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cre``a``te the p``a``r``a``meters described below, construct ``a`` h``a``sh t``a``ble cont``a``ining the ``a``ppropri``a``te properties. For inform``a``tion on h``a``sh t``a``bles, run Get-Help ``a``bout_H``a``sh_T``a``bles.
 
 
-BODYPARAMETER <IMicrosoftGraphAttachment>: attachment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+BODYP``a``R``a``METER <IMicrosoftGr``a``ph``a``tt``a``chment>: ``a``tt``a``chment
+  - `[(``a``ny) <Object>]`: This indic``a``tes ``a``ny property c``a``n be ``a``dded to this object.
+  - `[Id <String>]`: Re``a``d-only.
   - `[ContentType <String>]`: The MIME type.
-  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The attachment's file name.
-  - `[Size <Int32?>]`: The length of the attachment in bytes.
+  - `[IsInline <Boole``a``n?>]`: true if the ``a``tt``a``chment is ``a``n inline ``a``tt``a``chment; otherwise, f``a``lse.
+  - `[L``a``stModifiedD``a``teTime <D``a``teTime?>]`: The Timest``a``mp type represents d``a``te ``a``nd time inform``a``tion using ISO 8601 form``a``t ``a``nd is ``a``lw``a``ys in UTC time. For ex``a``mple, midnight UTC on J``a``n 1, 2014 is 2014-01-01T00:00:00Z
+  - `[N``a``me <String>]`: The ``a``tt``a``chment's file n``a``me.
+  - `[Size <Int32?>]`: The length of the ``a``tt``a``chment in bytes.
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[CalendarGroupId <String>]`: key: id of calendarGroup
-  - `[CalendarId <String>]`: key: id of calendar
-  - `[CalendarPermissionId <String>]`: key: id of calendarPermission
+INPUTOBJECT <IC``a``lend``a``rIdentity>: Identity P``a``r``a``meter
+  - `[``a``tt``a``chmentId <String>]`: key: id of ``a``tt``a``chment
+  - `[C``a``lend``a``rGroupId <String>]`: key: id of c``a``lend``a``rGroup
+  - `[C``a``lend``a``rId <String>]`: key: id of c``a``lend``a``r
+  - `[C``a``lend``a``rPermissionId <String>]`: key: id of c``a``lend``a``rPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[PlaceId <String>]`: key: id of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[MultiV``a``lueLeg``a``cyExtendedPropertyId <String>]`: key: id of multiV``a``lueLeg``a``cyExtendedProperty
+  - `[Pl``a``ceId <String>]`: key: id of pl``a``ce
+  - `[SingleV``a``lueLeg``a``cyExtendedPropertyId <String>]`: key: id of singleV``a``lueLeg``a``cyExtendedProperty
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## REL``a``TED LINKS
