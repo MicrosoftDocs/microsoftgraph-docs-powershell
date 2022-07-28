@@ -1,150 +1,150 @@
-﻿---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mguserbyid
-schema: 2.0.0
+---
+external help file: Micro`s`oft.Graph.U`s`er`s`.Action`s`-help.xml
+Module Name: Micro`s`oft.Graph.U`s`er`s`.Action`s`
+online ver`s`ion: http`s`://doc`s`.micro`s`oft.com/en-u`s`/power`s`hell/module/micro`s`oft.graph.u`s`er`s`.action`s`/get-mgu`s`erbyid
+`s`chema: 2.0.0
 ---
 
-# Get-MgUserById
+# Get-MgU`s`erById
 
-## SYNOPSIS
-Invoke action getByIds
+## `s`YNOP`s`I`s`
+Invoke action getById`s`
 
-## SYNTAX
+## `s`YNTAX
 
 ### GetExpanded1 (Default)
 ```
-Get-MgUserById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgU`s`erById [-AdditionalPropertie`s` <Ha`s`htable>] [-Id`s` <`s`tring[]>] [-Type`s` <`s`tring[]>] [-WhatIf] [-Confirm]
+ [<CommonParameter`s`>]
 ```
 
 ### Get1
 ```
-Get-MgUserById
- -BodyParameter <IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Get-MgU`s`erById
+ -BodyParameter <IPath`s`Bjm3ZyU`s`er`s`Micro`s`oftGraphGetbyid`s`Po`s`tReque`s`tbodyContentApplicationJ`s`on`s`chema1> [-WhatIf]
+ [-Confirm] [<CommonParameter`s`>]
 ```
 
-## DESCRIPTION
-Invoke action getByIds
+## DE`s`CRIPTION
+Invoke action getById`s`
 
-## EXAMPLES
+## EXAMPLE`s`
 
-## PARAMETERS
+## PARAMETER`s`
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalPropertie`s`
+Additional Parameter`s`
 
 ```yaml
-Type: Hashtable
-Parameter Sets: GetExpanded1
-Aliases:
+Type: Ha`s`htable
+Parameter `s`et`s`: GetExpanded1
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To con`s`truct, plea`s`e u`s`e Get-Help -Online and `s`ee NOTE`s` `s`ection for BODYPARAMETER propertie`s` and create a ha`s`h table.
 
 ```yaml
-Type: IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Get1
-Aliases:
+Type: IPath`s`Bjm3ZyU`s`er`s`Micro`s`oftGraphGetbyid`s`Po`s`tReque`s`tbodyContentApplicationJ`s`on`s`chema1
+Parameter `s`et`s`: Get1
+Alia`s`e`s`:
 
 Required: True
-Position: Named
+Po`s`ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -Ids
+### -Id`s`
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: GetExpanded1
-Aliases:
+Type: `s`tring[]
+Parameter `s`et`s`: GetExpanded1
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -Types
+### -Type`s`
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: GetExpanded1
-Aliases:
+Type: `s`tring[]
+Parameter `s`et`s`: GetExpanded1
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompt`s` you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: `s`witchParameter
+Parameter `s`et`s`: (All)
+Alia`s`e`s`: cf
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+`s`how`s` what would happen if the cmdlet run`s`.
+The cmdlet i`s` not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: `s`witchParameter
+Parameter `s`et`s`: (All)
+Alia`s`e`s`: wi
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter`s`
+Thi`s` cmdlet `s`upport`s` the common parameter`s`: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo`s`e, -WarningAction, and -WarningVariable. For more information, `s`ee [about_CommonParameter`s`](http://go.micro`s`oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT`s`
 
-### Microsoft.Graph.PowerShell.Models.IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema1
-## OUTPUTS
+### Micro`s`oft.Graph.Power`s`hell.Model`s`.IPath`s`Bjm3ZyU`s`er`s`Micro`s`oftGraphGetbyid`s`Po`s`tReque`s`tbodyContentApplicationJ`s`on`s`chema1
+## OUTPUT`s`
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-## NOTES
+### Micro`s`oft.Graph.Power`s`hell.Model`s`.IMicro`s`oftGraphDirectoryObject
+## NOTE`s`
 
-ALIASES
+ALIA`s`E`s`
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE`s`
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter`s` de`s`cribed below, con`s`truct a ha`s`h table containing the appropriate propertie`s`. For information on ha`s`h table`s`, run Get-Help about_Ha`s`h_Table`s`.
 
 
-BODYPARAMETER <IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema1>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String[]>]`: 
-  - `[Types <String[]>]`: 
+BODYPARAMETER <IPath`s`Bjm3ZyU`s`er`s`Micro`s`oftGraphGetbyid`s`Po`s`tReque`s`tbodyContentApplicationJ`s`on`s`chema1>: .
+  - `[(Any) <Object>]`: Thi`s` indicate`s` any property can be added to thi`s` object.
+  - `[Id`s` <`s`tring[]>]`: 
+  - `[Type`s` <`s`tring[]>]`: 
 
-## RELATED LINKS
+## RELATED LINK`s`
