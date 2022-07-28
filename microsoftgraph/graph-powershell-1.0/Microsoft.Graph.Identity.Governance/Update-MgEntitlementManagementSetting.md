@@ -1,81 +1,81 @@
-﻿---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting
+---
+external help file: Microsoft.Graph.I`d`entity.Governance-help.xml
+Mo`d`ule Name: Microsoft.Graph.I`d`entity.Governance
+online version: https://`d`ocs.microsoft.com/en-us/powershell/mo`d`ule/microsoft.graph.i`d`entity.governance/up`d`ate-mgentitlementmanagementsetting
 schema: 2.0.0
 ---
 
-# Update-MgEntitlementManagementSetting
+# Up`d`ate-MgEntitlementManagementSetting
 
 ## SYNOPSIS
-Update the navigation property settings in identityGovernance
+Up`d`ate the navigation property settings in i`d`entityGovernance
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Up`d`ateExpan`d`e`d`1 (`d`efault)
 ```
-Update-MgEntitlementManagementSetting [-AdditionalProperties <Hashtable>]
- [-DurationUntilExternalUserDeletedAfterBlocked <TimeSpan>] [-ExternalUserLifecycleAction <String>]
- [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up`d`ate-MgEntitlementManagementSetting [-A`d``d`itionalProperties <Hashtable>]
+ [-`d`urationUntilExternalUser`d`elete`d`AfterBlocke`d` <TimeSpan>] [-ExternalUserLifecycleAction <String>]
+ [-I`d` <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Up`d`ate1
 ```
-Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlementManagementSettings1>
+Up`d`ate-MgEntitlementManagementSetting -Bo`d`yParameter <IMicrosoftGraphEntitlementManagementSettings1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update the navigation property settings in identityGovernance
+## `d`ESCRIPTION
+Up`d`ate the navigation property settings in i`d`entityGovernance
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A`d``d`itionalProperties
+A`d``d`itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -BodyParameter
+### -Bo`d`yParameter
 entitlementManagementSettings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online an`d` see NOTES section for BO`d`YPARAMETER properties an`d` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEntitlementManagementSettings1
-Parameter Sets: Update1
+Parameter Sets: Up`d`ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -DurationUntilExternalUserDeletedAfterBlocked
-If externalUserLifecycleAction is blockSignInAndDelete, the duration, typically a number of days, after an external user is blocked from sign in before their account is deleted.
+### -`d`urationUntilExternalUser`d`elete`d`AfterBlocke`d`
+If externalUserLifecycleAction is blockSignInAn`d``d`elete, the `d`uration, typically a number of `d`ays, after an external user is blocke`d` from sign in before their account is `d`elete`d`.
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: UpdateExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -ExternalUserLifecycleAction
@@ -83,83 +83,83 @@ accessPackageExternalUserLifecycleAction
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -Id
+### -I`d`
 .
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman`d` succee`d`s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm`d`let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul`d` happen if the cm`d`let runs.
+The cm`d`let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm`d`let supports the common parameters: -`d`ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an`d` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI`d`=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings1
+### Microsoft.Graph.PowerShell.Mo`d`els.IMicrosoftGraphEntitlementManagementSettings1
 ## OUTPUTS
 
 ### System.Boolean
@@ -169,13 +169,13 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters `d`escribe`d` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEntitlementManagementSettings1>: entitlementManagementSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[DurationUntilExternalUserDeletedAfterBlocked <TimeSpan?>]`: If externalUserLifecycleAction is blockSignInAndDelete, the duration, typically a number of days, after an external user is blocked from sign in before their account is deleted.
+BO`d`YPARAMETER <IMicrosoftGraphEntitlementManagementSettings1>: entitlementManagementSettings
+  - `[(Any) <Object>]`: This in`d`icates any property can be a`d``d`e`d` to this object.
+  - `[I`d` <String>]`: 
+  - `[`d`urationUntilExternalUser`d`elete`d`AfterBlocke`d` <TimeSpan?>]`: If externalUserLifecycleAction is blockSignInAn`d``d`elete, the `d`uration, typically a number of `d`ays, after an external user is blocke`d` from sign in before their account is `d`elete`d`.
   - `[ExternalUserLifecycleAction <String>]`: accessPackageExternalUserLifecycleAction
 
-## RELATED LINKS
+## RELATE`d` LINKS
