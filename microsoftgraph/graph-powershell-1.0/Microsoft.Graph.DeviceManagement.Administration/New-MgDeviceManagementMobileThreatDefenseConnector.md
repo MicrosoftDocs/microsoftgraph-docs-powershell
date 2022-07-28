@@ -1,264 +1,264 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.Administration-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.Administration
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.d`e`vic`e`manag`e`m`e`nt.administration/n`e`w-mgd`e`vic`e`manag`e`m`e`ntmobil`e`thr`e`atd`e`f`e`ns`e`conn`e`ctor
+sch`e`ma: 2.0.0
 ---
 
-# New-MgDeviceManagementMobileThreatDefenseConnector
+# N`e`w-MgD`e`vic`e`Manag`e`m`e`ntMobil`e`Thr`e`atD`e`f`e`ns`e`Conn`e`ctor
 
 ## SYNOPSIS
-Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
+Cr`e`at`e` n`e`w navigation prop`e`rty to mobil`e`Thr`e`atD`e`f`e`ns`e`Conn`e`ctors for d`e`vic`e`Manag`e`m`e`nt
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### Cr`e`at`e``e`xpand`e`d1 (D`e`fault)
 ```
-New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hashtable>]
- [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled] [-Id <String>]
- [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-LastHeartbeatDateTime <DateTime>]
- [-PartnerState <MobileThreatPartnerTenantState>] [-PartnerUnresponsivenessThresholdInDays <Int32>]
- [-PartnerUnsupportedOSVersionBlocked] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgDeviceManagementMobileThreatDefenseConnector
- -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector1> [-WhatIf] [-Confirm] [<CommonParameters>]
+N`e`w-MgD`e`vic`e`Manag`e`m`e`ntMobil`e`Thr`e`atD`e`f`e`ns`e`Conn`e`ctor [-AdditionalProp`e`rti`e`s <Hashtabl`e`>]
+ [-AndroidD`e`vic`e`Block`e`dOnMissingPartn`e`rData] [-Android`e`nabl`e`d] [-Id <String>]
+ [-IosD`e`vic`e`Block`e`dOnMissingPartn`e`rData] [-Ios`e`nabl`e`d] [-LastH`e`artb`e`atDat`e`Tim`e` <Dat`e`Tim`e`>]
+ [-Partn`e`rStat`e` <Mobil`e`Thr`e`atPartn`e`rT`e`nantStat`e`>] [-Partn`e`rUnr`e`sponsiv`e`n`e`ssThr`e`sholdInDays <Int32>]
+ [-Partn`e`rUnsupport`e`dOSV`e`rsionBlock`e`d] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
+### Cr`e`at`e`1
+```
+N`e`w-MgD`e`vic`e`Manag`e`m`e`ntMobil`e`Thr`e`atD`e`f`e`ns`e`Conn`e`ctor
+ -BodyParam`e`t`e`r <IMicrosoftGraphMobil`e`Thr`e`atD`e`f`e`ns`e`Conn`e`ctor1> [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+Cr`e`at`e` n`e`w navigation prop`e`rty to mobil`e`Thr`e`atD`e`f`e`ns`e`Conn`e`ctors for d`e`vic`e`Manag`e`m`e`nt
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM`e`T`e`RS
+
+### -AdditionalProp`e`rti`e`s
+Additional Param`e`t`e`rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: Hashtabl`e`
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -AndroidDeviceBlockedOnMissingPartnerData
-For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
+### -AndroidD`e`vic`e`Block`e`dOnMissingPartn`e`rData
+For Android, s`e`t wh`e`th`e`r Intun`e` must r`e`c`e`iv`e` data from th`e` data sync partn`e`r prior to marking a d`e`vic`e` compliant
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -AndroidEnabled
-For Android, set whether data from the data sync partner should be used during compliance evaluations
+### -Android`e`nabl`e`d
+For Android, s`e`t wh`e`th`e`r data from th`e` data sync partn`e`r should b`e` us`e`d during complianc`e` `e`valuations
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -BodyParameter
-Entity which represents a connection to Mobile threat defense partner.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam`e`t`e`r
+`e`ntity which r`e`pr`e`s`e`nts a conn`e`ction to Mobil`e` thr`e`at d`e`f`e`ns`e` partn`e`r.
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for BODYPARAM`e`T`e`R prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IMicrosoftGraphMobileThreatDefenseConnector1
-Parameter Sets: Create1
-Aliases:
+Typ`e`: IMicrosoftGraphMobil`e`Thr`e`atD`e`f`e`ns`e`Conn`e`ctor1
+Param`e`t`e`r S`e`ts: Cr`e`at`e`1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -IosDeviceBlockedOnMissingPartnerData
-For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
+### -IosD`e`vic`e`Block`e`dOnMissingPartn`e`rData
+For IOS, s`e`t wh`e`th`e`r Intun`e` must r`e`c`e`iv`e` data from th`e` data sync partn`e`r prior to marking a d`e`vic`e` compliant
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -IosEnabled
-For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
+### -Ios`e`nabl`e`d
+For IOS, g`e`t or s`e`t wh`e`th`e`r data from th`e` data sync partn`e`r should b`e` us`e`d during complianc`e` `e`valuations
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -LastHeartbeatDateTime
-DateTime of last Heartbeat recieved from the Data Sync Partner
+### -LastH`e`artb`e`atDat`e`Tim`e`
+Dat`e`Tim`e` of last H`e`artb`e`at r`e`ci`e`v`e`d from th`e` Data Sync Partn`e`r
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: Dat`e`Tim`e`
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -PartnerState
-Partner state of this tenant.
+### -Partn`e`rStat`e`
+Partn`e`r stat`e` of this t`e`nant.
 
 ```yaml
-Type: MobileThreatPartnerTenantState
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: Mobil`e`Thr`e`atPartn`e`rT`e`nantStat`e`
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -PartnerUnresponsivenessThresholdInDays
-Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
+### -Partn`e`rUnr`e`sponsiv`e`n`e`ssThr`e`sholdInDays
+G`e`t or S`e`t days th`e` p`e`r t`e`nant tol`e`ranc`e` to unr`e`sponsiv`e`n`e`ss for this partn`e`r int`e`gration
 
 ```yaml
-Type: Int32
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -PartnerUnsupportedOSVersionBlocked
-Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
+### -Partn`e`rUnsupport`e`dOSV`e`rsionBlock`e`d
+G`e`t or s`e`t wh`e`th`e`r to block d`e`vic`e`s on th`e` `e`nabl`e`d platforms that do not m`e``e`t th`e` minimum v`e`rsion r`e`quir`e`m`e`nts of th`e` Data Sync Partn`e`r
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector1
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IMicrosoftGraphMobil`e`Thr`e`atD`e`f`e`ns`e`Conn`e`ctor1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector1
-## NOTES
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IMicrosoftGraphMobil`e`Thr`e`atD`e`f`e`ns`e`Conn`e`ctor1
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector1>: Entity which represents a connection to Mobile threat defense partner.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM`e`T`e`R <IMicrosoftGraphMobil`e`Thr`e`atD`e`f`e`ns`e`Conn`e`ctor1>: `e`ntity which r`e`pr`e`s`e`nts a conn`e`ction to Mobil`e` thr`e`at d`e`f`e`ns`e` partn`e`r.
+  - `[(Any) <Obj`e`ct>]`: This indicat`e`s any prop`e`rty can b`e` add`e`d to this obj`e`ct.
   - `[Id <String>]`: 
-  - `[AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
-  - `[AndroidEnabled <Boolean?>]`: For Android, set whether data from the data sync partner should be used during compliance evaluations
-  - `[IosDeviceBlockedOnMissingPartnerData <Boolean?>]`: For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
-  - `[IosEnabled <Boolean?>]`: For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
-  - `[LastHeartbeatDateTime <DateTime?>]`: DateTime of last Heartbeat recieved from the Data Sync Partner
-  - `[PartnerState <MobileThreatPartnerTenantState?>]`: Partner state of this tenant.
-  - `[PartnerUnresponsivenessThresholdInDays <Int32?>]`: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
-  - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
+  - `[AndroidD`e`vic`e`Block`e`dOnMissingPartn`e`rData <Bool`e`an?>]`: For Android, s`e`t wh`e`th`e`r Intun`e` must r`e`c`e`iv`e` data from th`e` data sync partn`e`r prior to marking a d`e`vic`e` compliant
+  - `[Android`e`nabl`e`d <Bool`e`an?>]`: For Android, s`e`t wh`e`th`e`r data from th`e` data sync partn`e`r should b`e` us`e`d during complianc`e` `e`valuations
+  - `[IosD`e`vic`e`Block`e`dOnMissingPartn`e`rData <Bool`e`an?>]`: For IOS, s`e`t wh`e`th`e`r Intun`e` must r`e`c`e`iv`e` data from th`e` data sync partn`e`r prior to marking a d`e`vic`e` compliant
+  - `[Ios`e`nabl`e`d <Bool`e`an?>]`: For IOS, g`e`t or s`e`t wh`e`th`e`r data from th`e` data sync partn`e`r should b`e` us`e`d during complianc`e` `e`valuations
+  - `[LastH`e`artb`e`atDat`e`Tim`e` <Dat`e`Tim`e`?>]`: Dat`e`Tim`e` of last H`e`artb`e`at r`e`ci`e`v`e`d from th`e` Data Sync Partn`e`r
+  - `[Partn`e`rStat`e` <Mobil`e`Thr`e`atPartn`e`rT`e`nantStat`e`?>]`: Partn`e`r stat`e` of this t`e`nant.
+  - `[Partn`e`rUnr`e`sponsiv`e`n`e`ssThr`e`sholdInDays <Int32?>]`: G`e`t or S`e`t days th`e` p`e`r t`e`nant tol`e`ranc`e` to unr`e`sponsiv`e`n`e`ss for this partn`e`r int`e`gration
+  - `[Partn`e`rUnsupport`e`dOSV`e`rsionBlock`e`d <Bool`e`an?>]`: G`e`t or s`e`t wh`e`th`e`r to block d`e`vic`e`s on th`e` `e`nabl`e`d platforms that do not m`e``e`t th`e` minimum v`e`rsion r`e`quir`e`m`e`nts of th`e` Data Sync Partn`e`r
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
