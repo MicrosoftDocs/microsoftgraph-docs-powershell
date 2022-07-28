@@ -1,244 +1,244 @@
-﻿---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentdefault
+---
+external help file: Microsoft.Graph.E``d``ucation-help.xml
+Mo``d``ule Name: Microsoft.Graph.E``d``ucation
+online version: https://``d``ocs.microsoft.com/en-us/powershell/mo``d``ule/microsoft.graph.e``d``ucation/up``d``ate-mge``d``ucationclassassignment``d``efault
 schema: 2.0.0
 ---
 
-# Update-MgEducationClassAssignmentDefault
+# Up``d``ate-MgE``d``ucationClassAssignment``d``efault
 
 ## SYNOPSIS
-Update the navigation property assignmentDefaults in education
+Up``d``ate the navigation property assignment``d``efaults in e``d``ucation
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Up``d``ateExpan``d``e``d``1 (``d``efault)
 ```
-Update-MgEducationClassAssignmentDefault -EducationClassId <String> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-DueTime <String>] [-Id <String>]
+Up``d``ate-MgE``d``ucationClassAssignment``d``efault -E``d``ucationClassI``d`` <String> [-A``d````d``ToCalen``d``arAction <String>]
+ [-A``d````d``e``d``Stu``d``entAction <String>] [-A``d````d``itionalProperties <Hashtable>] [-``d``ueTime <String>] [-I``d`` <String>]
  [-NotificationChannelUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Up``d``ate1
 ```
-Update-MgEducationClassAssignmentDefault -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-PassThru] [-WhatIf] [-Confirm]
+Up``d``ate-MgE``d``ucationClassAssignment``d``efault -E``d``ucationClassI``d`` <String>
+ -Bo``d``yParameter <IMicrosoftGraphE``d``ucationAssignment``d``efaults> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Up``d``ateViaI``d``entityExpan``d``e``d``1
 ```
-Update-MgEducationClassAssignmentDefault -InputObject <IEducationIdentity> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-DueTime <String>] [-Id <String>]
+Up``d``ate-MgE``d``ucationClassAssignment``d``efault -InputObject <IE``d``ucationI``d``entity> [-A``d````d``ToCalen``d``arAction <String>]
+ [-A``d````d``e``d``Stu``d``entAction <String>] [-A``d````d``itionalProperties <Hashtable>] [-``d``ueTime <String>] [-I``d`` <String>]
  [-NotificationChannelUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### Up``d``ateViaI``d``entity1
 ```
-Update-MgEducationClassAssignmentDefault -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-PassThru] [-WhatIf] [-Confirm]
+Up``d``ate-MgE``d``ucationClassAssignment``d``efault -InputObject <IE``d``ucationI``d``entity>
+ -Bo``d``yParameter <IMicrosoftGraphE``d``ucationAssignment``d``efaults> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update the navigation property assignmentDefaults in education
+## ``d``ESCRIPTION
+Up``d``ate the navigation property assignment``d``efaults in e``d``ucation
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AddedStudentAction
-educationAddedStudentAction
+### -A``d````d``e``d``Stu``d``entAction
+e``d``ucationA``d````d``e``d``Stu``d``entAction
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up``d``ateExpan``d``e``d``1, Up``d``ateViaI``d``entityExpan``d``e``d``1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -A``d````d``itionalProperties
+A``d````d``itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up``d``ateExpan``d``e``d``1, Up``d``ateViaI``d``entityExpan``d``e``d``1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -AddToCalendarAction
-educationAddToCalendarOptions
+### -A``d````d``ToCalen``d``arAction
+e``d``ucationA``d````d``ToCalen``d``arOptions
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up``d``ateExpan``d``e``d``1, Up``d``ateViaI``d``entityExpan``d``e``d``1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -BodyParameter
-educationAssignmentDefaults
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo``d``yParameter
+e``d``ucationAssignment``d``efaults
+To construct, please use Get-Help -Online an``d`` see NOTES section for BO``d``YPARAMETER properties an``d`` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationAssignmentDefaults
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphE``d``ucationAssignment``d``efaults
+Parameter Sets: Up``d``ate1, Up``d``ateViaI``d``entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -DueTime
-Class-level default value for due time field.
-Default value is 23:59:00.
+### -``d``ueTime
+Class-level ``d``efault value for ``d``ue time fiel``d``.
+``d``efault value is 23:59:00.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up``d``ateExpan``d``e``d``1, Up``d``ateViaI``d``entityExpan``d``e``d``1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -EducationClassId
-key: id of educationClass
+### -E``d``ucationClassI``d``
+key: i``d`` of e``d``ucationClass
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Up``d``ateExpan``d``e``d``1, Up``d``ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -Id
+### -I``d``
 .
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up``d``ateExpan``d``e``d``1, Up``d``ateViaI``d``entityExpan``d``e``d``1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I``d``entity Parameter
+To construct, please use Get-Help -Online an``d`` see NOTES section for INPUTOBJECT properties an``d`` create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: IE``d``ucationI``d``entity
+Parameter Sets: Up``d``ateViaI``d``entityExpan``d``e``d``1, Up``d``ateViaI``d``entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -NotificationChannelUrl
-Default Teams channel to which notifications will be sent.
-Default value is null.
+``d``efault Teams channel to which notifications will be sent.
+``d``efault value is null.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up``d``ateExpan``d``e``d``1, Up``d``ateViaI``d``entityExpan``d``e``d``1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman``d`` succee``d``s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm``d``let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul``d`` happen if the cm``d``let runs.
+The cm``d``let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm``d``let supports the common parameters: -``d``ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an``d`` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI``d``=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentDefaults
+### Microsoft.Graph.PowerShell.Mo``d``els.IE``d``ucationI``d``entity
+### Microsoft.Graph.PowerShell.Mo``d``els.IMicrosoftGraphE``d``ucationAssignment``d``efaults
 ## OUTPUTS
 
 ### System.Boolean
@@ -248,29 +248,29 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ``d``escribe``d`` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEducationAssignmentDefaults>: educationAssignmentDefaults
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[AddToCalendarAction <String>]`: educationAddToCalendarOptions
-  - `[AddedStudentAction <String>]`: educationAddedStudentAction
-  - `[DueTime <String>]`: Class-level default value for due time field. Default value is 23:59:00.
-  - `[NotificationChannelUrl <String>]`: Default Teams channel to which notifications will be sent. Default value is null.
+BO``d``YPARAMETER <IMicrosoftGraphE``d``ucationAssignment``d``efaults>: e``d``ucationAssignment``d``efaults
+  - `[(Any) <Object>]`: This in``d``icates any property can be a``d````d``e``d`` to this object.
+  - `[I``d`` <String>]`: 
+  - `[A``d````d``ToCalen``d``arAction <String>]`: e``d``ucationA``d````d``ToCalen``d``arOptions
+  - `[A``d````d``e``d``Stu``d``entAction <String>]`: e``d``ucationA``d````d``e``d``Stu``d``entAction
+  - `[``d``ueTime <String>]`: Class-level ``d``efault value for ``d``ue time fiel``d``. ``d``efault value is 23:59:00.
+  - `[NotificationChannelUrl <String>]`: ``d``efault Teams channel to which notifications will be sent. ``d``efault value is null.
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
-  - `[EducationAssignmentId <String>]`: key: id of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: key: id of educationCategory
-  - `[EducationClassId <String>]`: key: id of educationClass
-  - `[EducationOutcomeId <String>]`: key: id of educationOutcome
-  - `[EducationRubricId <String>]`: key: id of educationRubric
-  - `[EducationSchoolId <String>]`: key: id of educationSchool
-  - `[EducationSubmissionId <String>]`: key: id of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: key: id of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: key: id of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: key: id of educationSynchronizationProfile
-  - `[EducationUserId <String>]`: key: id of educationUser
+INPUTOBJECT <IE``d``ucationI``d``entity>: I``d``entity Parameter
+  - `[E``d``ucationAssignmentI``d`` <String>]`: key: i``d`` of e``d``ucationAssignment
+  - `[E``d``ucationAssignmentResourceI``d`` <String>]`: key: i``d`` of e``d``ucationAssignmentResource
+  - `[E``d``ucationCategoryI``d`` <String>]`: key: i``d`` of e``d``ucationCategory
+  - `[E``d``ucationClassI``d`` <String>]`: key: i``d`` of e``d``ucationClass
+  - `[E``d``ucationOutcomeI``d`` <String>]`: key: i``d`` of e``d``ucationOutcome
+  - `[E``d``ucationRubricI``d`` <String>]`: key: i``d`` of e``d``ucationRubric
+  - `[E``d``ucationSchoolI``d`` <String>]`: key: i``d`` of e``d``ucationSchool
+  - `[E``d``ucationSubmissionI``d`` <String>]`: key: i``d`` of e``d``ucationSubmission
+  - `[E``d``ucationSubmissionResourceI``d`` <String>]`: key: i``d`` of e``d``ucationSubmissionResource
+  - `[E``d``ucationSynchronizationErrorI``d`` <String>]`: key: i``d`` of e``d``ucationSynchronizationError
+  - `[E``d``ucationSynchronizationProfileI``d`` <String>]`: key: i``d`` of e``d``ucationSynchronizationProfile
+  - `[E``d``ucationUserI``d`` <String>]`: key: i``d`` of e``d``ucationUser
 
-## RELATED LINKS
+## RELATE``d`` LINKS
