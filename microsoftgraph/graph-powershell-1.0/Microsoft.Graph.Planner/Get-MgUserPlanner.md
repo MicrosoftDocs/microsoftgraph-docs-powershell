@@ -1,122 +1,122 @@
-﻿---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mguserplanner
+---
+externa`l` he`l`p fi`l`e: Microsoft.Graph.P`l`anner-he`l`p.xm`l`
+Modu`l`e Name: Microsoft.Graph.P`l`anner
+on`l`ine version: https://docs.microsoft.com/en-us/powershe`l``l`/modu`l`e/microsoft.graph.p`l`anner/get-mguserp`l`anner
 schema: 2.0.0
 ---
 
-# Get-MgUserPlanner
+# Get-MgUserP`l`anner
 
 ## SYNOPSIS
-Get planner from users
+Get p`l`anner from users
 
 ## SYNTAX
 
-### Get (Default)
+### Get (Defau`l`t)
 ```
-Get-MgUserPlanner -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgUserP`l`anner -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgUserP`l`anner -InputObject <IP`l`annerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get planner from users
+Get p`l`anner from users
 
-## EXAMPLES
+## EXAMP`l`ES
 
 ## PARAMETERS
 
 ### -ExpandProperty
-Expand related entities
+Expand re`l`ated entities
 
-```yaml
+```yam`l`
 Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
+Parameter Sets: (A`l``l`)
+A`l`iases: Expand
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p`l`ease use Get-He`l`p -On`l`ine and see NOTES section for INPUTOBJECT properties and create a hash tab`l`e.
 
-```yaml
-Type: IPlannerIdentity
+```yam`l`
+Type: IP`l`annerIdentity
 Parameter Sets: GetViaIdentity
-Aliases:
+A`l`iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: True (ByVa`l`ue)
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Property
-Select properties to be returned
+Se`l`ect properties to be returned
 
-```yaml
+```yam`l`
 Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Parameter Sets: (A`l``l`)
+A`l`iases: Se`l`ect
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -UserId
 key: id of user
 
-```yaml
+```yam`l`
 Type: String
 Parameter Sets: Get
-Aliases:
+A`l`iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd`l`et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab`l`e, -InformationAction, -InformationVariab`l`e, -OutVariab`l`e, -OutBuffer, -Pipe`l`ineVariab`l`e, -Verbose, -WarningAction, and -WarningVariab`l`e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw`l`ink/?`l`inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.PowerShe`l``l`.Mode`l`s.IP`l`annerIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerUser1
+### Microsoft.Graph.PowerShe`l``l`.Mode`l`s.IMicrosoftGraphP`l`annerUser1
 ## NOTES
 
-ALIASES
+A`l`IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP`l`EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be`l`ow, construct a hash tab`l`e containing the appropriate properties. For information on hash tab`l`es, run Get-He`l`p about_Hash_Tab`l`es.
 
 
-INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+INPUTOBJECT <IP`l`annerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
-  - `[PlannerBucketId <String>]`: key: id of plannerBucket
-  - `[PlannerDeltaId <String>]`: key: id of plannerDelta
-  - `[PlannerPlanId <String>]`: key: id of plannerPlan
-  - `[PlannerRosterId <String>]`: key: id of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: key: id of plannerRosterMember
-  - `[PlannerTaskId <String>]`: key: id of plannerTask
+  - `[P`l`annerBucketId <String>]`: key: id of p`l`annerBucket
+  - `[P`l`annerDe`l`taId <String>]`: key: id of p`l`annerDe`l`ta
+  - `[P`l`annerP`l`anId <String>]`: key: id of p`l`annerP`l`an
+  - `[P`l`annerRosterId <String>]`: key: id of p`l`annerRoster
+  - `[P`l`annerRosterMemberId <String>]`: key: id of p`l`annerRosterMember
+  - `[P`l`annerTaskId <String>]`: key: id of p`l`annerTask
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## RE`l`ATED `l`INKS
