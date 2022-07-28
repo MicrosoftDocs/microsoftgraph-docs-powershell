@@ -1,111 +1,111 @@
-﻿---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategorydelta
+---
+external help file: Microsoft.Graph.E`d`ucation-help.xml
+Mo`d`ule Name: Microsoft.Graph.E`d`ucation
+online version: https://`d`ocs.microsoft.com/en-us/powershell/mo`d`ule/microsoft.graph.e`d`ucation/get-mge`d`ucationuserassignmentcategory`d`elta
 schema: 2.0.0
 ---
 
-# Get-MgEducationUserAssignmentCategoryDelta
+# Get-MgE`d`ucationUserAssignmentCategory`d`elta
 
 ## SYNOPSIS
-Invoke function delta
+Invoke function `d`elta
 
 ## SYNTAX
 
-### Delta1 (Default)
+### `d`elta1 (`d`efault)
 ```
-Get-MgEducationUserAssignmentCategoryDelta -EducationAssignmentId <String> -EducationUserId <String>
+Get-MgE`d`ucationUserAssignmentCategory`d`elta -E`d`ucationAssignmentI`d` <String> -E`d`ucationUserI`d` <String>
  [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### `d`eltaViaI`d`entity1
 ```
-Get-MgEducationUserAssignmentCategoryDelta -InputObject <IEducationIdentity> [<CommonParameters>]
+Get-MgE`d`ucationUserAssignmentCategory`d`elta -InputObject <IE`d`ucationI`d`entity> [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Invoke function delta
+## `d`ESCRIPTION
+Invoke function `d`elta
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -EducationAssignmentId
-key: id of educationAssignment
+### -E`d`ucationAssignmentI`d`
+key: i`d` of e`d`ucationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Delta1
+Parameter Sets: `d`elta1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -EducationUserId
-key: id of educationUser
+### -E`d`ucationUserI`d`
+key: i`d` of e`d`ucationUser
 
 ```yaml
 Type: String
-Parameter Sets: Delta1
+Parameter Sets: `d`elta1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I`d`entity Parameter
+To construct, please use Get-Help -Online an`d` see NOTES section for INPUTOBJECT properties an`d` create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: DeltaViaIdentity1
+Type: IE`d`ucationI`d`entity
+Parameter Sets: `d`eltaViaI`d`entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm`d`let supports the common parameters: -`d`ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an`d` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI`d`=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.PowerShell.Mo`d`els.IE`d`ucationI`d`entity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
+### Microsoft.Graph.PowerShell.Mo`d`els.IMicrosoftGraphE`d`ucationCategory
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters `d`escribe`d` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
-  - `[EducationAssignmentId <String>]`: key: id of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: key: id of educationCategory
-  - `[EducationClassId <String>]`: key: id of educationClass
-  - `[EducationOutcomeId <String>]`: key: id of educationOutcome
-  - `[EducationRubricId <String>]`: key: id of educationRubric
-  - `[EducationSchoolId <String>]`: key: id of educationSchool
-  - `[EducationSubmissionId <String>]`: key: id of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: key: id of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: key: id of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: key: id of educationSynchronizationProfile
-  - `[EducationUserId <String>]`: key: id of educationUser
+INPUTOBJECT <IE`d`ucationI`d`entity>: I`d`entity Parameter
+  - `[E`d`ucationAssignmentI`d` <String>]`: key: i`d` of e`d`ucationAssignment
+  - `[E`d`ucationAssignmentResourceI`d` <String>]`: key: i`d` of e`d`ucationAssignmentResource
+  - `[E`d`ucationCategoryI`d` <String>]`: key: i`d` of e`d`ucationCategory
+  - `[E`d`ucationClassI`d` <String>]`: key: i`d` of e`d`ucationClass
+  - `[E`d`ucationOutcomeI`d` <String>]`: key: i`d` of e`d`ucationOutcome
+  - `[E`d`ucationRubricI`d` <String>]`: key: i`d` of e`d`ucationRubric
+  - `[E`d`ucationSchoolI`d` <String>]`: key: i`d` of e`d`ucationSchool
+  - `[E`d`ucationSubmissionI`d` <String>]`: key: i`d` of e`d`ucationSubmission
+  - `[E`d`ucationSubmissionResourceI`d` <String>]`: key: i`d` of e`d`ucationSubmissionResource
+  - `[E`d`ucationSynchronizationErrorI`d` <String>]`: key: i`d` of e`d`ucationSynchronizationError
+  - `[E`d`ucationSynchronizationProfileI`d` <String>]`: key: i`d` of e`d`ucationSynchronizationProfile
+  - `[E`d`ucationUserI`d` <String>]`: key: i`d` of e`d`ucationUser
 
-## RELATED LINKS
+## RELATE`d` LINKS
