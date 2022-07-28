@@ -1,327 +1,327 @@
-﻿---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusertodolisttaskchecklistitem
-schema: 2.0.0
+---
+external help file: Micro``s``oft.Graph.U``s``er``s``-help.xml
+Module Name: Micro``s``oft.Graph.U``s``er``s``
+online ver``s``ion: http``s``://doc``s``.micro``s``oft.com/en-u``s``/power``s``hell/module/micro``s``oft.graph.u``s``er``s``/update-mgu``s``ertodoli``s``tta``s``kcheckli``s``titem
+``s``chema: 2.0.0
 ---
 
-# Update-MgUserTodoListTaskChecklistItem
+# Update-MgU``s``erTodoLi``s``tTa``s``kCheckli``s``tItem
 
-## SYNOPSIS
-Update the navigation property checklistItems in users
+## ``s``YNOP``s``I``s``
+Update the navigation property checkli``s``tItem``s`` in u``s``er``s``
 
-## SYNTAX
+## ``s``YNTAX
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgUserTodoListTaskChecklistItem -ChecklistItemId <String> -TodoTaskId <String> -TodoTaskListId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-CheckedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-IsChecked] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgU``s``erTodoLi``s``tTa``s``kCheckli``s``tItem -Checkli``s``tItemId <``s``tring> -TodoTa``s``kId <``s``tring> -TodoTa``s``kLi``s``tId <``s``tring>
+ -U``s``erId <``s``tring> [-AdditionalPropertie``s`` <Ha``s``htable>] [-CheckedDateTime <DateTime>]
+ [-CreatedDateTime <DateTime>] [-Di``s``playName <``s``tring>] [-Id <``s``tring>] [-I``s``Checked] [-Pa``s````s``Thru] [-WhatIf]
+ [-Confirm] [<CommonParameter``s``>]
 ```
 
 ### Update1
 ```
-Update-MgUserTodoListTaskChecklistItem -ChecklistItemId <String> -TodoTaskId <String> -TodoTaskListId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphChecklistItem> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgU``s``erTodoLi``s``tTa``s``kCheckli``s``tItem -Checkli``s``tItemId <``s``tring> -TodoTa``s``kId <``s``tring> -TodoTa``s``kLi``s``tId <``s``tring>
+ -U``s``erId <``s``tring> -BodyParameter <IMicro``s``oftGraphCheckli``s``tItem> [-Pa``s````s``Thru] [-WhatIf] [-Confirm]
+ [<CommonParameter``s``>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-CheckedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-IsChecked] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgU``s``erTodoLi``s``tTa``s``kCheckli``s``tItem -InputObject <IU``s``er``s``Identity> [-AdditionalPropertie``s`` <Ha``s``htable>]
+ [-CheckedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Di``s``playName <``s``tring>] [-Id <``s``tring>]
+ [-I``s``Checked] [-Pa``s````s``Thru] [-WhatIf] [-Confirm] [<CommonParameter``s``>]
 ```
 
 ### UpdateViaIdentity1
 ```
-Update-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphChecklistItem> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgU``s``erTodoLi``s``tTa``s``kCheckli``s``tItem -InputObject <IU``s``er``s``Identity>
+ -BodyParameter <IMicro``s``oftGraphCheckli``s``tItem> [-Pa``s````s``Thru] [-WhatIf] [-Confirm] [<CommonParameter``s``>]
 ```
 
-## DESCRIPTION
-Update the navigation property checklistItems in users
+## DE``s``CRIPTION
+Update the navigation property checkli``s``tItem``s`` in u``s``er``s``
 
-## EXAMPLES
+## EXAMPLE``s``
 
-## PARAMETERS
+## PARAMETER``s``
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalPropertie``s``
+Additional Parameter``s``
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Type: Ha``s``htable
+Parameter ``s``et``s``: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -BodyParameter
-checklistItem
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+checkli``s``tItem
+To con``s``truct, plea``s``e u``s``e Get-Help -Online and ``s``ee NOTE``s`` ``s``ection for BODYPARAMETER propertie``s`` and create a ha``s``h table.
 
 ```yaml
-Type: IMicrosoftGraphChecklistItem
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Type: IMicro``s``oftGraphCheckli``s``tItem
+Parameter ``s``et``s``: Update1, UpdateViaIdentity1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -CheckedDateTime
-The date and time when the checklistItem was finished.
+The date and time when the checkli``s``tItem wa``s`` fini``s``hed.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Parameter ``s``et``s``: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -ChecklistItemId
-key: id of checklistItem
+### -Checkli``s``tItemId
+key: id of checkli``s``tItem
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: UpdateExpanded1, Update1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -CreatedDateTime
-The date and time when the checklistItem was created.
+The date and time when the checkli``s``tItem wa``s`` created.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Parameter ``s``et``s``: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -DisplayName
-Field indicating the title of checklistItem.
+### -Di``s``playName
+Field indicating the title of checkli``s``tItem.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con``s``truct, plea``s``e u``s``e Get-Help -Online and ``s``ee NOTE``s`` ``s``ection for INPUTOBJECT propertie``s`` and create a ha``s``h table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Type: IU``s``er``s``Identity
+Parameter ``s``et``s``: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -IsChecked
-State indicating whether the item is checked off or not.
+### -I``s``Checked
+``s``tate indicating whether the item i``s`` checked off or not.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Type: ``s``witchParameter
+Parameter ``s``et``s``: UpdateExpanded1, UpdateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -Pa``s````s``Thru
+Return``s`` true when the command ``s``ucceed``s``
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Type: ``s``witchParameter
+Parameter ``s``et``s``: (All)
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -TodoTaskId
-key: id of todoTask
+### -TodoTa``s``kId
+key: id of todoTa``s``k
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: UpdateExpanded1, Update1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -TodoTaskListId
-key: id of todoTaskList
+### -TodoTa``s``kLi``s``tId
+key: id of todoTa``s``kLi``s``t
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: UpdateExpanded1, Update1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -UserId
-key: id of user
+### -U``s``erId
+key: id of u``s``er
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: UpdateExpanded1, Update1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompt``s`` you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: ``s``witchParameter
+Parameter ``s``et``s``: (All)
+Alia``s``e``s``: cf
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+``s``how``s`` what would happen if the cmdlet run``s``.
+The cmdlet i``s`` not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: ``s``witchParameter
+Parameter ``s``et``s``: (All)
+Alia``s``e``s``: wi
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter``s``
+Thi``s`` cmdlet ``s``upport``s`` the common parameter``s``: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo``s``e, -WarningAction, and -WarningVariable. For more information, ``s``ee [about_CommonParameter``s``](http://go.micro``s``oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT``s``
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChecklistItem
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-## OUTPUTS
+### Micro``s``oft.Graph.Power``s``hell.Model``s``.IMicro``s``oftGraphCheckli``s``tItem
+### Micro``s``oft.Graph.Power``s``hell.Model``s``.IU``s``er``s``Identity
+## OUTPUT``s``
 
-### System.Boolean
-## NOTES
+### ``s``y``s``tem.Boolean
+## NOTE``s``
 
-ALIASES
+ALIA``s``E``s``
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE``s``
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter``s`` de``s``cribed below, con``s``truct a ha``s``h table containing the appropriate propertie``s``. For information on ha``s``h table``s``, run Get-Help about_Ha``s``h_Table``s``.
 
 
-BODYPARAMETER <IMicrosoftGraphChecklistItem>: checklistItem
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-  - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-  - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+BODYPARAMETER <IMicro``s``oftGraphCheckli``s``tItem>: checkli``s``tItem
+  - `[(Any) <Object>]`: Thi``s`` indicate``s`` any property can be added to thi``s`` object.
+  - `[Id <``s``tring>]`: 
+  - `[CheckedDateTime <DateTime?>]`: The date and time when the checkli``s``tItem wa``s`` fini``s``hed.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the checkli``s``tItem wa``s`` created.
+  - `[Di``s``playName <``s``tring>]`: Field indicating the title of checkli``s``tItem.
+  - `[I``s``Checked <Boolean?>]`: ``s``tate indicating whether the item i``s`` checked off or not.
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
-  - `[AttachmentBaseId <String>]`: key: id of attachmentBase
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[AttachmentSessionId <String>]`: key: id of attachmentSession
-  - `[ChecklistItemId <String>]`: key: id of checklistItem
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
-  - `[LinkedResourceId <String>]`: key: id of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: key: id of notification
-  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: key: id of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IU``s``er``s``Identity>: Identity Parameter
+  - `[AttachmentBa``s``eId <``s``tring>]`: key: id of attachmentBa``s``e
+  - `[AttachmentId <``s``tring>]`: key: id of attachment
+  - `[Attachment``s``e``s````s``ionId <``s``tring>]`: key: id of attachment``s``e``s````s``ion
+  - `[Checkli``s``tItemId <``s``tring>]`: key: id of checkli``s``tItem
+  - `[DirectoryObjectId <``s``tring>]`: key: id of directoryObject
+  - `[Exten``s``ionId <``s``tring>]`: key: id of exten``s``ion
+  - `[Licen``s``eDetail``s``Id <``s``tring>]`: key: id of licen``s``eDetail``s``
+  - `[LinkedRe``s``ourceId <``s``tring>]`: key: id of linkedRe``s``ource
+  - `[MultiValueLegacyExtendedPropertyId <``s``tring>]`: key: id of multiValueLegacyExtendedProperty
+  - `[NotificationId <``s``tring>]`: key: id of notification
+  - `[OAuth2Permi``s````s``ionGrantId <``s``tring>]`: key: id of oAuth2Permi``s````s``ionGrant
+  - `[OutlookCategoryId <``s``tring>]`: key: id of outlookCategory
+  - `[OutlookTa``s``kFolderId <``s``tring>]`: key: id of outlookTa``s``kFolder
+  - `[OutlookTa``s``kGroupId <``s``tring>]`: key: id of outlookTa``s``kGroup
+  - `[OutlookTa``s``kId <``s``tring>]`: key: id of outlookTa``s``k
+  - `[ProfilePhotoId <``s``tring>]`: key: id of profilePhoto
+  - `[``s``ingleValueLegacyExtendedPropertyId <``s``tring>]`: key: id of ``s``ingleValueLegacyExtendedProperty
+  - `[TodoTa``s``kId <``s``tring>]`: key: id of todoTa``s``k
+  - `[TodoTa``s``kLi``s``tId <``s``tring>]`: key: id of todoTa``s``kLi``s``t
+  - `[U``s``erId <``s``tring>]`: key: id of u``s``er
 
-## RELATED LINKS
+## RELATED LINK``s``
