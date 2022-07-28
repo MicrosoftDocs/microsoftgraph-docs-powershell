@@ -110,6 +110,7 @@ function Add-Back-Ticks{
 				$replace = $org -replace $furtherSplitted[1],$concat
 				$text = $text -replace $org,$replace
 				}
+            }
        } 
     }
     $text > $tempFilePath
