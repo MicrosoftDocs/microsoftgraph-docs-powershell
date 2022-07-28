@@ -1,315 +1,315 @@
-﻿---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization
+---
+external help file: Microsoft.Graph.I````d````entity.Governance-help.xml
+Mo````d````ule Name: Microsoft.Graph.I````d````entity.Governance
+online version: https://````d````ocs.microsoft.com/en-us/powershell/mo````d````ule/microsoft.graph.i````d````entity.governance/up````d````ate-mgentitlementmanagementconnecte````d````organization
 schema: 2.0.0
 ---
 
-# Update-MgEntitlementManagementConnectedOrganization
+# Up````d````ate-MgEntitlementManagementConnecte````d````Organization
 
 ## SYNOPSIS
-Update the navigation property connectedOrganizations in identityGovernance
+Up````d````ate the navigation property connecte````d````Organizations in i````d````entityGovernance
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Up````d````ateExpan````d````e````d````1 (````d````efault)
 ```
-Update-MgEntitlementManagementConnectedOrganization -ConnectedOrganizationId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
- [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
- [-ModifiedDateTime <DateTime>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgEntitlementManagementConnectedOrganization -ConnectedOrganizationId <String>
- -BodyParameter <IMicrosoftGraphConnectedOrganization1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up````d````ate-MgEntitlementManagementConnecte````d````Organization -Connecte````d````OrganizationI````d```` <String>
+ [-A````d````````d````itionalProperties <Hashtable>] [-Create````d````````d````ateTime <````d````ateTime>] [-````d````escription <String>]
+ [-````d````isplayName <String>] [-ExternalSponsors <IMicrosoftGraph````d````irectoryObject[]>] [-I````d```` <String>]
+ [-I````d````entitySources <IMicrosoftGraphI````d````entitySource[]>] [-InternalSponsors <IMicrosoftGraph````d````irectoryObject[]>]
+ [-Mo````d````ifie````d````````d````ateTime <````d````ateTime>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Up````d````ate1
 ```
-Update-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
- [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
- [-ModifiedDateTime <DateTime>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up````d````ate-MgEntitlementManagementConnecte````d````Organization -Connecte````d````OrganizationI````d```` <String>
+ -Bo````d````yParameter <IMicrosoftGraphConnecte````d````Organization1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### Up````d````ateViaI````d````entityExpan````d````e````d````1
 ```
-Update-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphConnectedOrganization1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up````d````ate-MgEntitlementManagementConnecte````d````Organization -InputObject <II````d````entityGovernanceI````d````entity>
+ [-A````d````````d````itionalProperties <Hashtable>] [-Create````d````````d````ateTime <````d````ateTime>] [-````d````escription <String>]
+ [-````d````isplayName <String>] [-ExternalSponsors <IMicrosoftGraph````d````irectoryObject[]>] [-I````d```` <String>]
+ [-I````d````entitySources <IMicrosoftGraphI````d````entitySource[]>] [-InternalSponsors <IMicrosoftGraph````d````irectoryObject[]>]
+ [-Mo````d````ifie````d````````d````ateTime <````d````ateTime>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update the navigation property connectedOrganizations in identityGovernance
+### Up````d````ateViaI````d````entity1
+```
+Up````d````ate-MgEntitlementManagementConnecte````d````Organization -InputObject <II````d````entityGovernanceI````d````entity>
+ -Bo````d````yParameter <IMicrosoftGraphConnecte````d````Organization1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## ````d````ESCRIPTION
+Up````d````ate the navigation property connecte````d````Organizations in i````d````entityGovernance
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A````d````````d````itionalProperties
+A````d````````d````itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -BodyParameter
-connectedOrganization
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo````d````yParameter
+connecte````d````Organization
+To construct, please use Get-Help -Online an````d```` see NOTES section for BO````d````YPARAMETER properties an````d```` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphConnecte````d````Organization1
+Parameter Sets: Up````d````ate1, Up````d````ateViaI````d````entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require````d````: True
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -ConnectedOrganizationId
-key: id of connectedOrganization
+### -Connecte````d````OrganizationI````d````
+key: i````d```` of connecte````d````Organization
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require````d````: True
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -CreatedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
+### -Create````d````````d````ateTime
+The Timestamp type represents ````d````ate an````d```` time information using ISO 8601 format an````d```` is always in UTC time.
+For example, mi````d````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Rea````d````-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: ````d````ateTime
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -Description
-The description of the connected organization.
+### -````d````escription
+The ````d````escription of the connecte````d```` organization.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -DisplayName
-The display name of the connected organization.
+### -````d````isplayName
+The ````d````isplay name of the connecte````d```` organization.
 Supports $filter (eq).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -ExternalSponsors
 .
-To construct, please use Get-Help -Online and see NOTES section for EXTERNALSPONSORS properties and create a hash table.
+To construct, please use Get-Help -Online an````d```` see NOTES section for EXTERNALSPONSORS properties an````d```` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraph````d````irectoryObject[]
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -Id
+### -I````d````
 .
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -IdentitySources
-The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation.
-Read-only.
+### -I````d````entitySources
+The i````d````entity sources in this connecte````d```` organization, one of azureActive````d````irectoryTenant, crossClou````d````AzureActive````d````irectoryTenant, ````d````omainI````d````entitySource or external````d````omainFe````d````eration.
+Rea````d````-only.
 Nullable.
-Supports $select and $filter(eq).
-To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
+Supports $select an````d```` $filter(eq).
+To filter by the ````d````erive````d```` types, you must ````d````eclare the resource using its full O````d````ata cast, for example, $filter=i````d````entitySources/any(is:is/microsoft.graph.azureActive````d````irectoryTenant/tenantI````d```` eq 'bcf````d````fff4-cbc3-43f2-9000-ba7b7515054f').
 
 ```yaml
-Type: IMicrosoftGraphIdentitySource[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphI````d````entitySource[]
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I````d````entity Parameter
+To construct, please use Get-Help -Online an````d```` see NOTES section for INPUTOBJECT properties an````d```` create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: II````d````entityGovernanceI````d````entity
+Parameter Sets: Up````d````ateViaI````d````entityExpan````d````e````d````1, Up````d````ateViaI````d````entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require````d````: True
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -InternalSponsors
 .
-To construct, please use Get-Help -Online and see NOTES section for INTERNALSPONSORS properties and create a hash table.
+To construct, please use Get-Help -Online an````d```` see NOTES section for INTERNALSPONSORS properties an````d```` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraph````d````irectoryObject[]
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -ModifiedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
+### -Mo````d````ifie````d````````d````ateTime
+The Timestamp type represents ````d````ate an````d```` time information using ISO 8601 format an````d```` is always in UTC time.
+For example, mi````d````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Rea````d````-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: ````d````ateTime
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman````d```` succee````d````s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -State
-connectedOrganizationState
+connecte````d````OrganizationState
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up````d````ateExpan````d````e````d````1, Up````d````ateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm````d````let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul````d```` happen if the cm````d````let runs.
+The cm````d````let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm````d````let supports the common parameters: -````d````ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an````d```` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI````d````=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
+### Microsoft.Graph.PowerShell.Mo````d````els.II````d````entityGovernanceI````d````entity
+### Microsoft.Graph.PowerShell.Mo````d````els.IMicrosoftGraphConnecte````d````Organization1
 ## OUTPUTS
 
 ### System.Boolean
@@ -319,91 +319,91 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ````d````escribe````d```` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphConnectedOrganization1>: connectedOrganization
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[Description <String>]`: The description of the connected organization.
-  - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
-  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-    - `[Id <String>]`: 
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
-  - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[State <String>]`: connectedOrganizationState
+BO````d````YPARAMETER <IMicrosoftGraphConnecte````d````Organization1>: connecte````d````Organization
+  - `[(Any) <Object>]`: This in````d````icates any property can be a````d````````d````e````d```` to this object.
+  - `[I````d```` <String>]`: 
+  - `[Create````d````````d````ateTime <````d````ateTime?>]`: The Timestamp type represents ````d````ate an````d```` time information using ISO 8601 format an````d```` is always in UTC time. For example, mi````d````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea````d````-only.
+  - `[````d````escription <String>]`: The ````d````escription of the connecte````d```` organization.
+  - `[````d````isplayName <String>]`: The ````d````isplay name of the connecte````d```` organization. Supports $filter (eq).
+  - `[ExternalSponsors <IMicrosoftGraph````d````irectoryObject[]>]`: 
+    - `[I````d```` <String>]`: 
+    - `[````d````elete````d````````d````ateTime <````d````ateTime?>]`: ````d````ate an````d```` time when this object was ````d````elete````d````. Always null when the object hasn't been ````d````elete````d````.
+  - `[I````d````entitySources <IMicrosoftGraphI````d````entitySource[]>]`: The i````d````entity sources in this connecte````d```` organization, one of azureActive````d````irectoryTenant, crossClou````d````AzureActive````d````irectoryTenant, ````d````omainI````d````entitySource or external````d````omainFe````d````eration. Rea````d````-only. Nullable. Supports $select an````d```` $filter(eq). To filter by the ````d````erive````d```` types, you must ````d````eclare the resource using its full O````d````ata cast, for example, $filter=i````d````entitySources/any(is:is/microsoft.graph.azureActive````d````irectoryTenant/tenantI````d```` eq 'bcf````d````fff4-cbc3-43f2-9000-ba7b7515054f').
+  - `[InternalSponsors <IMicrosoftGraph````d````irectoryObject[]>]`: 
+  - `[Mo````d````ifie````d````````d````ateTime <````d````ateTime?>]`: The Timestamp type represents ````d````ate an````d```` time information using ISO 8601 format an````d```` is always in UTC time. For example, mi````d````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea````d````-only.
+  - `[State <String>]`: connecte````d````OrganizationState
 
-EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: .
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+EXTERNALSPONSORS <IMicrosoftGraph````d````irectoryObject[]>: .
+  - `[I````d```` <String>]`: 
+  - `[````d````elete````d````````d````ateTime <````d````ateTime?>]`: ````d````ate an````d```` time when this object was ````d````elete````d````. Always null when the object hasn't been ````d````elete````d````.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
-  - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
-  - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
-  - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
-  - `[AccessPackageAssignmentResourceRoleId <String>]`: key: id of accessPackageAssignmentResourceRole
-  - `[AccessPackageCatalogId <String>]`: key: id of accessPackageCatalog
-  - `[AccessPackageId <String>]`: key: id of accessPackage
-  - `[AccessPackageId1 <String>]`: key: id of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageResourceEnvironmentId <String>]`: key: id of accessPackageResourceEnvironment
-  - `[AccessPackageResourceId <String>]`: key: id of accessPackageResource
-  - `[AccessPackageResourceRequestId <String>]`: key: id of accessPackageResourceRequest
-  - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
-  - `[AccessPackageResourceRoleScopeId <String>]`: key: id of accessPackageResourceRoleScope
-  - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
-  - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
-  - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
-  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
-  - `[AccessReviewId <String>]`: key: id of accessReview
-  - `[AccessReviewId1 <String>]`: key: id of accessReview
-  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
-  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
-  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
-  - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
-  - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
-  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
-  - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
-  - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
-  - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
-  - `[AgreementId <String>]`: key: id of agreement
-  - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
-  - `[ApprovalId <String>]`: key: id of approval
-  - `[ApprovalStageId <String>]`: key: id of approvalStage
-  - `[ApprovalStepId <String>]`: key: id of approvalStep
-  - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
-  - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
-  - `[CustomAccessPackageWorkflowExtensionId <String>]`: key: id of customAccessPackageWorkflowExtension
-  - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
-  - `[GovernanceResourceId <String>]`: key: id of governanceResource
-  - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
-  - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
-  - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
-  - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
-  - `[GroupId <String>]`: key: id of group
-  - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+INPUTOBJECT <II````d````entityGovernanceI````d````entity>: I````d````entity Parameter
+  - `[AccessPackageAssignmentI````d```` <String>]`: key: i````d```` of accessPackageAssignment
+  - `[AccessPackageAssignmentPolicyI````d```` <String>]`: key: i````d```` of accessPackageAssignmentPolicy
+  - `[AccessPackageAssignmentRequestI````d```` <String>]`: key: i````d```` of accessPackageAssignmentRequest
+  - `[AccessPackageAssignmentResourceRoleI````d```` <String>]`: key: i````d```` of accessPackageAssignmentResourceRole
+  - `[AccessPackageCatalogI````d```` <String>]`: key: i````d```` of accessPackageCatalog
+  - `[AccessPackageI````d```` <String>]`: key: i````d```` of accessPackage
+  - `[AccessPackageI````d````1 <String>]`: key: i````d```` of accessPackage
+  - `[AccessPackageI````d````2 <String>]`: Usage: accessPackageI````d````='{accessPackageI````d````}'
+  - `[AccessPackageResourceEnvironmentI````d```` <String>]`: key: i````d```` of accessPackageResourceEnvironment
+  - `[AccessPackageResourceI````d```` <String>]`: key: i````d```` of accessPackageResource
+  - `[AccessPackageResourceRequestI````d```` <String>]`: key: i````d```` of accessPackageResourceRequest
+  - `[AccessPackageResourceRoleI````d```` <String>]`: key: i````d```` of accessPackageResourceRole
+  - `[AccessPackageResourceRoleScopeI````d```` <String>]`: key: i````d```` of accessPackageResourceRoleScope
+  - `[AccessPackageResourceScopeI````d```` <String>]`: key: i````d```` of accessPackageResourceScope
+  - `[AccessReview````d````ecisionI````d```` <String>]`: key: i````d```` of accessReview````d````ecision
+  - `[AccessReviewHistory````d````efinitionI````d```` <String>]`: key: i````d```` of accessReviewHistory````d````efinition
+  - `[AccessReviewHistoryInstanceI````d```` <String>]`: key: i````d```` of accessReviewHistoryInstance
+  - `[AccessReviewI````d```` <String>]`: key: i````d```` of accessReview
+  - `[AccessReviewI````d````1 <String>]`: key: i````d```` of accessReview
+  - `[AccessReviewInstance````d````ecisionItemI````d```` <String>]`: key: i````d```` of accessReviewInstance````d````ecisionItem
+  - `[AccessReviewInstance````d````ecisionItemI````d````1 <String>]`: key: i````d```` of accessReviewInstance````d````ecisionItem
+  - `[AccessReviewInstanceI````d```` <String>]`: key: i````d```` of accessReviewInstance
+  - `[AccessReviewReviewerI````d```` <String>]`: key: i````d```` of accessReviewReviewer
+  - `[AccessReviewSche````d````ule````d````efinitionI````d```` <String>]`: key: i````d```` of accessReviewSche````d````ule````d````efinition
+  - `[AccessReviewStageI````d```` <String>]`: key: i````d```` of accessReviewStage
+  - `[AgreementAcceptanceI````d```` <String>]`: key: i````d```` of agreementAcceptance
+  - `[AgreementFileLocalizationI````d```` <String>]`: key: i````d```` of agreementFileLocalization
+  - `[AgreementFileVersionI````d```` <String>]`: key: i````d```` of agreementFileVersion
+  - `[AgreementI````d```` <String>]`: key: i````d```` of agreement
+  - `[AppConsentRequestI````d```` <String>]`: key: i````d```` of appConsentRequest
+  - `[ApprovalI````d```` <String>]`: key: i````d```` of approval
+  - `[ApprovalStageI````d```` <String>]`: key: i````d```` of approvalStage
+  - `[ApprovalStepI````d```` <String>]`: key: i````d```` of approvalStep
+  - `[BusinessFlowTemplateI````d```` <String>]`: key: i````d```` of businessFlowTemplate
+  - `[Connecte````d````OrganizationI````d```` <String>]`: key: i````d```` of connecte````d````Organization
+  - `[CustomAccessPackageWorkflowExtensionI````d```` <String>]`: key: i````d```` of customAccessPackageWorkflowExtension
+  - `[CustomExtensionHan````d````lerI````d```` <String>]`: key: i````d```` of customExtensionHan````d````ler
+  - `[````d````irectoryObjectI````d```` <String>]`: key: i````d```` of ````d````irectoryObject
+  - `[GovernanceInsightI````d```` <String>]`: key: i````d```` of governanceInsight
+  - `[GovernanceResourceI````d```` <String>]`: key: i````d```` of governanceResource
+  - `[GovernanceRoleAssignmentI````d```` <String>]`: key: i````d```` of governanceRoleAssignment
+  - `[GovernanceRoleAssignmentRequestI````d```` <String>]`: key: i````d```` of governanceRoleAssignmentRequest
+  - `[GovernanceRole````d````efinitionI````d```` <String>]`: key: i````d```` of governanceRole````d````efinition
+  - `[GovernanceRoleSettingI````d```` <String>]`: key: i````d```` of governanceRoleSetting
+  - `[GroupI````d```` <String>]`: key: i````d```` of group
+  - `[IncompatibleAccessPackageI````d```` <String>]`: Usage: incompatibleAccessPackageI````d````='{incompatibleAccessPackageI````d````}'
   - `[On <String>]`: Usage: on='{on}'
-  - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
-  - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
-  - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
-  - `[PrivilegedRoleAssignmentId <String>]`: key: id of privilegedRoleAssignment
-  - `[PrivilegedRoleAssignmentId1 <String>]`: key: id of privilegedRoleAssignment
-  - `[PrivilegedRoleAssignmentRequestId <String>]`: key: id of privilegedRoleAssignmentRequest
-  - `[PrivilegedRoleId <String>]`: key: id of privilegedRole
-  - `[ProgramControlId <String>]`: key: id of programControl
-  - `[ProgramControlId1 <String>]`: key: id of programControl
-  - `[ProgramControlTypeId <String>]`: key: id of programControlType
-  - `[ProgramId <String>]`: key: id of program
-  - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
-  - `[UserId <String>]`: key: id of user
+  - `[Privilege````d````AccessI````d```` <String>]`: key: i````d```` of privilege````d````Access
+  - `[Privilege````d````ApprovalI````d```` <String>]`: key: i````d```` of privilege````d````Approval
+  - `[Privilege````d````OperationEventI````d```` <String>]`: key: i````d```` of privilege````d````OperationEvent
+  - `[Privilege````d````RoleAssignmentI````d```` <String>]`: key: i````d```` of privilege````d````RoleAssignment
+  - `[Privilege````d````RoleAssignmentI````d````1 <String>]`: key: i````d```` of privilege````d````RoleAssignment
+  - `[Privilege````d````RoleAssignmentRequestI````d```` <String>]`: key: i````d```` of privilege````d````RoleAssignmentRequest
+  - `[Privilege````d````RoleI````d```` <String>]`: key: i````d```` of privilege````d````Role
+  - `[ProgramControlI````d```` <String>]`: key: i````d```` of programControl
+  - `[ProgramControlI````d````1 <String>]`: key: i````d```` of programControl
+  - `[ProgramControlTypeI````d```` <String>]`: key: i````d```` of programControlType
+  - `[ProgramI````d```` <String>]`: key: i````d```` of program
+  - `[UserConsentRequestI````d```` <String>]`: key: i````d```` of userConsentRequest
+  - `[UserI````d```` <String>]`: key: i````d```` of user
 
-INTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: .
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+INTERNALSPONSORS <IMicrosoftGraph````d````irectoryObject[]>: .
+  - `[I````d```` <String>]`: 
+  - `[````d````elete````d````````d````ateTime <````d````ateTime?>]`: ````d````ate an````d```` time when this object was ````d````elete````d````. Always null when the object hasn't been ````d````elete````d````.
 
-## RELATED LINKS
+## RELATE````d```` LINKS
