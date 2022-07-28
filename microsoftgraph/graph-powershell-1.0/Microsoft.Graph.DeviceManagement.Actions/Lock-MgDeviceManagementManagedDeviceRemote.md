@@ -1,184 +1,184 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/lock-mgdevicemanagementmanageddeviceremote
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.Actions-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.Actions
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.d`e`vic`e`manag`e`m`e`nt.actions/lock-mgd`e`vic`e`manag`e`m`e`ntmanag`e`dd`e`vic`e`r`e`mot`e`
+sch`e`ma: 2.0.0
 ---
 
-# Lock-MgDeviceManagementManagedDeviceRemote
+# Lock-MgD`e`vic`e`Manag`e`m`e`ntManag`e`dD`e`vic`e`R`e`mot`e`
 
 ## SYNOPSIS
-Remote lock
+R`e`mot`e` lock
 
 ## SYNTAX
 
-### Lock1 (Default)
+### Lock1 (D`e`fault)
 ```
-Lock-MgDeviceManagementManagedDeviceRemote -ManagedDeviceId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### LockViaIdentity1
-```
-Lock-MgDeviceManagementManagedDeviceRemote -InputObject <IDeviceManagementActionsIdentity> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Lock-MgD`e`vic`e`Manag`e`m`e`ntManag`e`dD`e`vic`e`R`e`mot`e` -Manag`e`dD`e`vic`e`Id <String> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Remote lock
+### LockViaId`e`ntity1
+```
+Lock-MgD`e`vic`e`Manag`e`m`e`ntManag`e`dD`e`vic`e`R`e`mot`e` -InputObj`e`ct <ID`e`vic`e`Manag`e`m`e`ntActionsId`e`ntity> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+R`e`mot`e` lock
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+## PARAM`e`T`e`RS
+
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: LockViaIdentity1
-Aliases:
+Typ`e`: ID`e`vic`e`Manag`e`m`e`ntActionsId`e`ntity
+Param`e`t`e`r S`e`ts: LockViaId`e`ntity1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ManagedDeviceId
-key: id of managedDevice
+### -Manag`e`dD`e`vic`e`Id
+k`e`y: id of manag`e`dD`e`vic`e`
 
 ```yaml
-Type: String
-Parameter Sets: Lock1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Lock1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R`e`turns tru`e` wh`e`n th`e` command succ`e``e`ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.ID`e`vic`e`Manag`e`m`e`ntActionsId`e`ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`e`m.Bool`e`an
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
-  - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
-  - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AppleUserInitiatedEnrollmentProfileId <String>]`: key: id of appleUserInitiatedEnrollmentProfile
-  - `[CertificateConnectorDetailsId <String>]`: key: id of certificateConnectorDetails
-  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
-  - `[CloudPcId <String>]`: key: id of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
-  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
-  - `[DataSharingConsentId <String>]`: key: id of dataSharingConsent
-  - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
-  - `[DetectedAppId <String>]`: key: id of detectedApp
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
-  - `[DeviceCompliancePolicyId <String>]`: key: id of deviceCompliancePolicy
-  - `[DeviceComplianceScriptId <String>]`: key: id of deviceComplianceScript
-  - `[DeviceConfigurationGroupAssignmentId <String>]`: key: id of deviceConfigurationGroupAssignment
-  - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
-  - `[DeviceCustomAttributeShellScriptId <String>]`: key: id of deviceCustomAttributeShellScript
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
-  - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
-  - `[DeviceManagementConfigurationPolicyId <String>]`: key: id of deviceManagementConfigurationPolicy
-  - `[DeviceManagementExchangeConnectorId <String>]`: key: id of deviceManagementExchangeConnector
-  - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
-  - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
-  - `[DeviceManagementReusablePolicySettingId <String>]`: key: id of deviceManagementReusablePolicySetting
-  - `[DeviceManagementScriptDeviceStateId <String>]`: key: id of deviceManagementScriptDeviceState
-  - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript
-  - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
-  - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
-  - `[DeviceShellScriptId <String>]`: key: id of deviceShellScript
-  - `[EmbeddedSimActivationCodePoolId <String>]`: key: id of embeddedSIMActivationCodePool
-  - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
-  - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
-  - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
-  - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[MicrosoftTunnelServerId <String>]`: key: id of microsoftTunnelServer
-  - `[MicrosoftTunnelServerLogCollectionResponseId <String>]`: key: id of microsoftTunnelServerLogCollectionResponse
-  - `[MicrosoftTunnelSiteId <String>]`: key: id of microsoftTunnelSite
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[NotificationMessageTemplateId <String>]`: key: id of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: key: id of oemWarrantyInformationOnboarding
-  - `[RemoteAssistancePartnerId <String>]`: key: id of remoteAssistancePartner
-  - `[RoleScopeTagId <String>]`: key: id of roleScopeTag
-  - `[WindowsAutopilotDeploymentProfileId <String>]`: key: id of windowsAutopilotDeploymentProfile
-  - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
-  - `[WindowsDriverUpdateProfileId <String>]`: key: id of windowsDriverUpdateProfile
-  - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
+INPUTOBJ`e`CT <ID`e`vic`e`Manag`e`m`e`ntActionsId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[AndroidD`e`vic`e`Own`e`r`e`nrollm`e`ntProfil`e`Id <String>]`: k`e`y: id of androidD`e`vic`e`Own`e`r`e`nrollm`e`ntProfil`e`
+  - `[AndroidForWork`e`nrollm`e`ntProfil`e`Id <String>]`: k`e`y: id of androidForWork`e`nrollm`e`ntProfil`e`
+  - `[AppLogColl`e`ctionR`e`qu`e`stId <String>]`: k`e`y: id of appLogColl`e`ctionR`e`qu`e`st
+  - `[Appl`e`Us`e`rInitiat`e`d`e`nrollm`e`ntProfil`e`Id <String>]`: k`e`y: id of appl`e`Us`e`rInitiat`e`d`e`nrollm`e`ntProfil`e`
+  - `[C`e`rtificat`e`Conn`e`ctorD`e`tailsId <String>]`: k`e`y: id of c`e`rtificat`e`Conn`e`ctorD`e`tails
+  - `[CloudPcD`e`vic`e`Imag`e`Id <String>]`: k`e`y: id of cloudPcD`e`vic`e`Imag`e`
+  - `[CloudPcId <String>]`: k`e`y: id of cloudPC
+  - `[CloudPcOnPr`e`mis`e`sConn`e`ctionId <String>]`: k`e`y: id of cloudPcOnPr`e`mis`e`sConn`e`ction
+  - `[CloudPcProvisioningPolicyId <String>]`: k`e`y: id of cloudPcProvisioningPolicy
+  - `[CloudPcUs`e`rS`e`ttingId <String>]`: k`e`y: id of cloudPcUs`e`rS`e`tting
+  - `[DataSharingCons`e`ntId <String>]`: k`e`y: id of dataSharingCons`e`nt
+  - `[D`e`pOnboardingS`e`ttingId <String>]`: k`e`y: id of d`e`pOnboardingS`e`tting
+  - `[D`e`t`e`ct`e`dAppId <String>]`: k`e`y: id of d`e`t`e`ct`e`dApp
+  - `[D`e`vic`e`AndAppManag`e`m`e`ntRol`e`Assignm`e`ntId <String>]`: k`e`y: id of d`e`vic`e`AndAppManag`e`m`e`ntRol`e`Assignm`e`nt
+  - `[D`e`vic`e`Complianc`e`PolicyId <String>]`: k`e`y: id of d`e`vic`e`Complianc`e`Policy
+  - `[D`e`vic`e`Complianc`e`ScriptId <String>]`: k`e`y: id of d`e`vic`e`Complianc`e`Script
+  - `[D`e`vic`e`ConfigurationGroupAssignm`e`ntId <String>]`: k`e`y: id of d`e`vic`e`ConfigurationGroupAssignm`e`nt
+  - `[D`e`vic`e`ConfigurationId <String>]`: k`e`y: id of d`e`vic`e`Configuration
+  - `[D`e`vic`e`CustomAttribut`e`Sh`e`llScriptId <String>]`: k`e`y: id of d`e`vic`e`CustomAttribut`e`Sh`e`llScript
+  - `[D`e`vic`e``e`nrollm`e`ntConfigurationId <String>]`: k`e`y: id of d`e`vic`e``e`nrollm`e`ntConfiguration
+  - `[D`e`vic`e`H`e`althScriptD`e`vic`e`Stat`e`Id <String>]`: k`e`y: id of d`e`vic`e`H`e`althScriptD`e`vic`e`Stat`e`
+  - `[D`e`vic`e`H`e`althScriptId <String>]`: k`e`y: id of d`e`vic`e`H`e`althScript
+  - `[D`e`vic`e`LogColl`e`ctionR`e`spons`e`Id <String>]`: k`e`y: id of d`e`vic`e`LogColl`e`ctionR`e`spons`e`
+  - `[D`e`vic`e`Manag`e`m`e`ntComplianc`e`PolicyId <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntComplianc`e`Policy
+  - `[D`e`vic`e`Manag`e`m`e`ntConfigurationPolicyId <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntConfigurationPolicy
+  - `[D`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctorId <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctor
+  - `[D`e`vic`e`Manag`e`m`e`ntInt`e`ntId <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntInt`e`nt
+  - `[D`e`vic`e`Manag`e`m`e`ntR`e`sourc`e`Acc`e`ssProfil`e`Bas`e`Id <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntR`e`sourc`e`Acc`e`ssProfil`e`Bas`e`
+  - `[D`e`vic`e`Manag`e`m`e`ntR`e`usabl`e`PolicyS`e`ttingId <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntR`e`usabl`e`PolicyS`e`tting
+  - `[D`e`vic`e`Manag`e`m`e`ntScriptD`e`vic`e`Stat`e`Id <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntScriptD`e`vic`e`Stat`e`
+  - `[D`e`vic`e`Manag`e`m`e`ntScriptId <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntScript
+  - `[D`e`vic`e`Manag`e`m`e`ntT`e`mplat`e`Id <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntT`e`mplat`e`
+  - `[D`e`vic`e`Manag`e`m`e`ntT`e`mplat`e`Id1 <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntT`e`mplat`e`
+  - `[D`e`vic`e`Sh`e`llScriptId <String>]`: k`e`y: id of d`e`vic`e`Sh`e`llScript
+  - `[`e`mb`e`dd`e`dSimActivationCod`e`PoolId <String>]`: k`e`y: id of `e`mb`e`dd`e`dSIMActivationCod`e`Pool
+  - `[`e`nrollm`e`ntProfil`e`Id <String>]`: k`e`y: id of `e`nrollm`e`ntProfil`e`
+  - `[GroupPolicyConfigurationId <String>]`: k`e`y: id of groupPolicyConfiguration
+  - `[GroupPolicyUpload`e`dD`e`finitionFil`e`Id <String>]`: k`e`y: id of groupPolicyUpload`e`dD`e`finitionFil`e`
+  - `[Intun`e`BrandingProfil`e`Id <String>]`: k`e`y: id of intun`e`BrandingProfil`e`
+  - `[Manag`e`dD`e`vic`e`Id <String>]`: k`e`y: id of manag`e`dD`e`vic`e`
+  - `[MicrosoftTunn`e`lS`e`rv`e`rId <String>]`: k`e`y: id of microsoftTunn`e`lS`e`rv`e`r
+  - `[MicrosoftTunn`e`lS`e`rv`e`rLogColl`e`ctionR`e`spons`e`Id <String>]`: k`e`y: id of microsoftTunn`e`lS`e`rv`e`rLogColl`e`ctionR`e`spons`e`
+  - `[MicrosoftTunn`e`lSit`e`Id <String>]`: k`e`y: id of microsoftTunn`e`lSit`e`
+  - `[Mobil`e`AppTroubl`e`shooting`e`v`e`ntId <String>]`: k`e`y: id of mobil`e`AppTroubl`e`shooting`e`v`e`nt
+  - `[NotificationM`e`ssag`e`T`e`mplat`e`Id <String>]`: k`e`y: id of notificationM`e`ssag`e`T`e`mplat`e`
+  - `[O`e`mWarrantyInformationOnboardingId <String>]`: k`e`y: id of o`e`mWarrantyInformationOnboarding
+  - `[R`e`mot`e`Assistanc`e`Partn`e`rId <String>]`: k`e`y: id of r`e`mot`e`Assistanc`e`Partn`e`r
+  - `[Rol`e`Scop`e`TagId <String>]`: k`e`y: id of rol`e`Scop`e`Tag
+  - `[WindowsAutopilotD`e`ploym`e`ntProfil`e`Id <String>]`: k`e`y: id of windowsAutopilotD`e`ploym`e`ntProfil`e`
+  - `[WindowsAutopilotD`e`vic`e`Id`e`ntityId <String>]`: k`e`y: id of windowsAutopilotD`e`vic`e`Id`e`ntity
+  - `[WindowsDriv`e`rUpdat`e`Profil`e`Id <String>]`: k`e`y: id of windowsDriv`e`rUpdat`e`Profil`e`
+  - `[WindowsF`e`atur`e`Updat`e`Profil`e`Id <String>]`: k`e`y: id of windowsF`e`atur`e`Updat`e`Profil`e`
+  - `[WindowsQualityUpdat`e`Profil`e`Id <String>]`: k`e`y: id of windowsQualityUpdat`e`Profil`e`
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
