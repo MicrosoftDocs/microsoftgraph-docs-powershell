@@ -1,150 +1,150 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorydeleteditem
+---
+external help file: Microsoft.Graph.I`d`entity.`d`irectoryManagement-help.xml
+Mo`d`ule Name: Microsoft.Graph.I`d`entity.`d`irectoryManagement
+online version: https://`d`ocs.microsoft.com/en-us/powershell/mo`d`ule/microsoft.graph.i`d`entity.`d`irectorymanagement/new-mg`d`irectory`d`elete`d`item
 schema: 2.0.0
 ---
 
-# New-MgDirectoryDeletedItem
+# New-Mg`d`irectory`d`elete`d`Item
 
 ## SYNOPSIS
-Create new navigation property to deletedItems for directory
+Create new navigation property to `d`elete`d`Items for `d`irectory
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpan`d`e`d`1 (`d`efault)
 ```
-New-MgDirectoryDeletedItem [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Id <String>]
+New-Mg`d`irectory`d`elete`d`Item [-A`d``d`itionalProperties <Hashtable>] [-`d`elete`d``d`ateTime <`d`ateTime>] [-I`d` <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDirectoryDeletedItem -BodyParameter <IMicrosoftGraphDirectoryObject> [-WhatIf] [-Confirm]
+New-Mg`d`irectory`d`elete`d`Item -Bo`d`yParameter <IMicrosoftGraph`d`irectoryObject> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to deletedItems for directory
+## `d`ESCRIPTION
+Create new navigation property to `d`elete`d`Items for `d`irectory
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A`d``d`itionalProperties
+A`d``d`itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -BodyParameter
-directoryObject
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo`d`yParameter
+`d`irectoryObject
+To construct, please use Get-Help -Online an`d` see NOTES section for BO`d`YPARAMETER properties an`d` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: IMicrosoftGraph`d`irectoryObject
 Parameter Sets: Create1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -DeletedDateTime
-Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
+### -`d`elete`d``d`ateTime
+`d`ate an`d` time when this object was `d`elete`d`.
+Always null when the object hasn't been `d`elete`d`.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: `d`ateTime
+Parameter Sets: CreateExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -Id
+### -I`d`
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm`d`let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul`d` happen if the cm`d`let runs.
+The cm`d`let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm`d`let supports the common parameters: -`d`ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an`d` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI`d`=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.PowerShell.Mo`d`els.IMicrosoftGraph`d`irectoryObject
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.PowerShell.Mo`d`els.IMicrosoftGraph`d`irectoryObject
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters `d`escribe`d` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDirectoryObject>: directoryObject
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+BO`d`YPARAMETER <IMicrosoftGraph`d`irectoryObject>: `d`irectoryObject
+  - `[(Any) <Object>]`: This in`d`icates any property can be a`d``d`e`d` to this object.
+  - `[I`d` <String>]`: 
+  - `[`d`elete`d``d`ateTime <`d`ateTime?>]`: `d`ate an`d` time when this object was `d`elete`d`. Always null when the object hasn't been `d`elete`d`.
 
-## RELATED LINKS
+## RELATE`d` LINKS
