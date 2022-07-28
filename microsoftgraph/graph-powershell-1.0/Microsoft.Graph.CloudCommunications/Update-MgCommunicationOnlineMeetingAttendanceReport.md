@@ -1,323 +1,323 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingattendancereport
+---
+externa```l``` he```l```p fi```l```e: Microsoft.Graph.C```l```oudCommunications-he```l```p.xm```l```
+Modu```l```e Name: Microsoft.Graph.C```l```oudCommunications
+on```l```ine version: https://docs.microsoft.com/en-us/powershe```l``````l```/modu```l```e/microsoft.graph.c```l```oudcommunications/update-mgcommunicationon```l```inemeetingattendancereport
 schema: 2.0.0
 ---
 
-# Update-MgCommunicationOnlineMeetingAttendanceReport
+# Update-MgCommunicationOn```l```ineMeetingAttendanceReport
 
 ## SYNOPSIS
 Update the navigation property attendanceReports in communications
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded (Defau```l```t)
 ```
-Update-MgCommunicationOnlineMeetingAttendanceReport -MeetingAttendanceReportId <String>
- -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
+Update-MgCommunicationOn```l```ineMeetingAttendanceReport -MeetingAttendanceReportId <String>
+ -On```l```ineMeetingId <String> [-Additiona```l```Properties <Hashtab```l```e>]
  [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>] [-MeetingEndDateTime <DateTime>]
- [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-MeetingStartDateTime <DateTime>] [-Tota```l```ParticipantCount <Int32>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgCommunicationOnlineMeetingAttendanceReport -MeetingAttendanceReportId <String>
- -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-PassThru] [-WhatIf]
+Update-MgCommunicationOn```l```ineMeetingAttendanceReport -MeetingAttendanceReportId <String>
+ -On```l```ineMeetingId <String> -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
- [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>]
+Update-MgCommunicationOn```l```ineMeetingAttendanceReport -InputObject <IC```l```oudCommunicationsIdentity>
+ [-Additiona```l```Properties <Hashtab```l```e>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
+ [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-Tota```l```ParticipantCount <Int32>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
+Update-MgCommunicationOn```l```ineMeetingAttendanceReport -InputObject <IC```l```oudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property attendanceReports in communications
 
-## EXAMPLES
+## EXAMP```l```ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona```l```Properties
+Additiona```l``` Parameters
 
-```yaml
-Type: Hashtable
+```yam```l```
+Type: Hashtab```l```e
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -AttendanceRecords
-List of attendance records of an attendance report.
-Read-only.
-To construct, please use Get-Help -Online and see NOTES section for ATTENDANCERECORDS properties and create a hash table.
+```l```ist of attendance records of an attendance report.
+Read-on```l```y.
+To construct, p```l```ease use Get-He```l```p -On```l```ine and see NOTES section for ATTENDANCERECORDS properties and create a hash tab```l```e.
 
-```yaml
+```yam```l```
 Type: IMicrosoftGraphAttendanceRecord[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -BodyParameter
 meetingAttendanceReport
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, p```l```ease use Get-He```l```p -On```l```ine and see NOTES section for BODYPARAMETER properties and create a hash tab```l```e.
 
-```yaml
+```yam```l```
 Type: IMicrosoftGraphMeetingAttendanceReport
 Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+A```l```iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: True (ByVa```l```ue)
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -Id
 .
 
-```yaml
+```yam```l```
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p```l```ease use Get-He```l```p -On```l```ine and see NOTES section for INPUTOBJECT properties and create a hash tab```l```e.
 
-```yaml
-Type: ICloudCommunicationsIdentity
+```yam```l```
+Type: IC```l```oudCommunicationsIdentity
 Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
+A```l```iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: True (ByVa```l```ue)
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -MeetingAttendanceReportId
 key: id of meetingAttendanceReport
 
-```yaml
+```yam```l```
 Type: String
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+A```l```iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -MeetingEndDateTime
 UTC time when the meeting ended.
-Read-only.
+Read-on```l```y.
 
-```yaml
+```yam```l```
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -MeetingStartDateTime
 UTC time when the meeting started.
-Read-only.
+Read-on```l```y.
 
-```yaml
+```yam```l```
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
-### -OnlineMeetingId
-key: id of onlineMeeting
+### -On```l```ineMeetingId
+key: id of on```l```ineMeeting
 
-```yaml
+```yam```l```
 Type: String
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+A```l```iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -PassThru
 Returns true when the command succeeds
 
-```yaml
+```yam```l```
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Parameter Sets: (A```l``````l```)
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
-### -TotalParticipantCount
-Total number of participants.
-Read-only.
+### -Tota```l```ParticipantCount
+Tota```l``` number of participants.
+Read-on```l```y.
 
-```yaml
+```yam```l```
 Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd```l```et.
 
-```yaml
+```yam```l```
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A```l``````l```)
+A```l```iases: cf
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou```l```d happen if the cmd```l```et runs.
+The cmd```l```et is not run.
 
-```yaml
+```yam```l```
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A```l``````l```)
+A```l```iases: wi
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd```l```et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab```l```e, -InformationAction, -InformationVariab```l```e, -OutVariab```l```e, -OutBuffer, -Pipe```l```ineVariab```l```e, -Verbose, -WarningAction, and -WarningVariab```l```e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw```l```ink/?```l```inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport
+### Microsoft.Graph.PowerShe```l``````l```.Mode```l```s.IC```l```oudCommunicationsIdentity
+### Microsoft.Graph.PowerShe```l``````l```.Mode```l```s.IMicrosoftGraphMeetingAttendanceReport
 ## OUTPUTS
 
-### System.Boolean
+### System.Boo```l```ean
 ## NOTES
 
-ALIASES
+A```l```IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP```l```EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be```l```ow, construct a hash tab```l```e containing the appropriate properties. For information on hash tab```l```es, run Get-He```l```p about_Hash_Tab```l```es.
 
 
-ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord[]>: List of attendance records of an attendance report. Read-only.
+ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord[]>: ```l```ist of attendance records of an attendance report. Read-on```l```y.
   - `[Id <String>]`: 
-  - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
-    - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+  - `[AttendanceInterva```l```s <IMicrosoftGraphAttendanceInterva```l```[]>]`: ```l```ist of time periods between joining and ```l```eaving a meeting.
+    - `[DurationInSeconds <Int32?>]`: Duration of the meeting interva```l``` in seconds; that is, the difference between joinDateTime and ```l```eaveDateTime.
     - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
-    - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-  - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+    - `[```l```eaveDateTime <DateTime?>]`: The time the attendee ```l```eft in UTC.
+  - `[Emai```l```Address <String>]`: Emai```l``` address of the user associated with this atttendance record.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Disp```l```ayName <String>]`: The identity's disp```l```ay name. Note that this may not a```l```ways be avai```l```ab```l```e or up to date. For examp```l```e, if a user changes their disp```l```ay name, the API may show the new va```l```ue in a future response, but the items associated with the user won't show up as having changed when using de```l```ta.
     - `[Id <String>]`: Unique identifier for the identity.
-  - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
-  - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+  - `[Ro```l```e <String>]`: Ro```l```e of the attendee. Possib```l```e va```l```ues are: None, Attendee, Presenter, and Organizer.
+  - `[Tota```l```AttendanceInSeconds <Int32?>]`: Tota```l``` duration of the attendances in seconds.
 
 BODYPARAMETER <IMicrosoftGraphMeetingAttendanceReport>: meetingAttendanceReport
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
+  - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: ```l```ist of attendance records of an attendance report. Read-on```l```y.
     - `[Id <String>]`: 
-    - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
-      - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+    - `[AttendanceInterva```l```s <IMicrosoftGraphAttendanceInterva```l```[]>]`: ```l```ist of time periods between joining and ```l```eaving a meeting.
+      - `[DurationInSeconds <Int32?>]`: Duration of the meeting interva```l``` in seconds; that is, the difference between joinDateTime and ```l```eaveDateTime.
       - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
-      - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-    - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+      - `[```l```eaveDateTime <DateTime?>]`: The time the attendee ```l```eft in UTC.
+    - `[Emai```l```Address <String>]`: Emai```l``` address of the user associated with this atttendance record.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Disp```l```ayName <String>]`: The identity's disp```l```ay name. Note that this may not a```l```ways be avai```l```ab```l```e or up to date. For examp```l```e, if a user changes their disp```l```ay name, the API may show the new va```l```ue in a future response, but the items associated with the user won't show up as having changed when using de```l```ta.
       - `[Id <String>]`: Unique identifier for the identity.
-    - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
-    - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
-  - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
-  - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
-  - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
+    - `[Ro```l```e <String>]`: Ro```l```e of the attendee. Possib```l```e va```l```ues are: None, Attendee, Presenter, and Organizer.
+    - `[Tota```l```AttendanceInSeconds <Int32?>]`: Tota```l``` duration of the attendances in seconds.
+  - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-on```l```y.
+  - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-on```l```y.
+  - `[Tota```l```ParticipantCount <Int32?>]`: Tota```l``` number of participants. Read-on```l```y.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT <IC```l```oudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
-  - `[CallId <String>]`: key: id of call
-  - `[CallRecordId <String>]`: key: id of callRecord
+  - `[Ca```l``````l```Id <String>]`: key: id of ca```l``````l```
+  - `[Ca```l``````l```RecordId <String>]`: key: id of ca```l``````l```Record
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
   - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
+  - `[On```l```ineMeetingId <String>]`: key: id of on```l```ineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## RE```l```ATED ```l```INKS
