@@ -1,510 +1,510 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontact
+---
+external help file: Microsoft.Graph.I`````````d`````````entity.`````````d`````````irectoryManagement-help.xml
+Mo`````````d`````````ule Name: Microsoft.Graph.I`````````d`````````entity.`````````d`````````irectoryManagement
+online version: https://`````````d`````````ocs.microsoft.com/en-us/powershell/mo`````````d`````````ule/microsoft.graph.i`````````d`````````entity.`````````d`````````irectorymanagement/up`````````d`````````ate-mgcontact
 schema: 2.0.0
 ---
 
-# Update-MgContact
+# Up`````````d`````````ate-MgContact
 
 ## SYNOPSIS
-Update entity in contacts
+Up`````````d`````````ate entity in contacts
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1 (`````````d`````````efault)
 ```
-Update-MgContact -OrgContactId <String> [-AdditionalProperties <Hashtable>]
- [-Addresses <IMicrosoftGraphPhysicalOfficeAddress[]>] [-CompanyName <String>] [-DeletedDateTime <DateTime>]
- [-Department <String>] [-DirectReports <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>]
- [-GivenName <String>] [-Id <String>] [-JobTitle <String>] [-Mail <String>] [-MailNickname <String>]
- [-Manager <IMicrosoftGraphDirectoryObject>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-OnPremisesLastSyncDateTime <DateTime>]
- [-OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>] [-OnPremisesSyncEnabled]
- [-Phones <IMicrosoftGraphPhone[]>] [-ProxyAddresses <String[]>] [-Surname <String>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up`````````d`````````ate-MgContact -OrgContactI`````````d````````` <String> [-A`````````d``````````````````d`````````itionalProperties <Hashtable>]
+ [-A`````````d``````````````````d`````````resses <IMicrosoftGraphPhysicalOfficeA`````````d``````````````````d`````````ress[]>] [-CompanyName <String>] [-`````````d`````````elete`````````d``````````````````d`````````ateTime <`````````d`````````ateTime>]
+ [-`````````d`````````epartment <String>] [-`````````d`````````irectReports <IMicrosoftGraph`````````d`````````irectoryObject[]>] [-`````````d`````````isplayName <String>]
+ [-GivenName <String>] [-I`````````d````````` <String>] [-JobTitle <String>] [-Mail <String>] [-MailNickname <String>]
+ [-Manager <IMicrosoftGraph`````````d`````````irectoryObject>] [-MemberOf <IMicrosoftGraph`````````d`````````irectoryObject[]>]
+ [-OnPremisesLastSync`````````d`````````ateTime <`````````d`````````ateTime>]
+ [-OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>] [-OnPremisesSyncEnable`````````d`````````]
+ [-Phones <IMicrosoftGraphPhone[]>] [-ProxyA`````````d``````````````````d`````````resses <String[]>] [-Surname <String>]
+ [-TransitiveMemberOf <IMicrosoftGraph`````````d`````````irectoryObject[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Up`````````d`````````ate1
 ```
-Update-MgContact -OrgContactId <String> -BodyParameter <IMicrosoftGraphOrgContact> [-PassThru] [-WhatIf]
+Up`````````d`````````ate-MgContact -OrgContactI`````````d````````` <String> -Bo`````````d`````````yParameter <IMicrosoftGraphOrgContact> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 ```
-Update-MgContact -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-Addresses <IMicrosoftGraphPhysicalOfficeAddress[]>] [-CompanyName <String>] [-DeletedDateTime <DateTime>]
- [-Department <String>] [-DirectReports <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>]
- [-GivenName <String>] [-Id <String>] [-JobTitle <String>] [-Mail <String>] [-MailNickname <String>]
- [-Manager <IMicrosoftGraphDirectoryObject>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-OnPremisesLastSyncDateTime <DateTime>]
- [-OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>] [-OnPremisesSyncEnabled]
- [-Phones <IMicrosoftGraphPhone[]>] [-ProxyAddresses <String[]>] [-Surname <String>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up`````````d`````````ate-MgContact -InputObject <II`````````d`````````entity`````````d`````````irectoryManagementI`````````d`````````entity> [-A`````````d``````````````````d`````````itionalProperties <Hashtable>]
+ [-A`````````d``````````````````d`````````resses <IMicrosoftGraphPhysicalOfficeA`````````d``````````````````d`````````ress[]>] [-CompanyName <String>] [-`````````d`````````elete`````````d``````````````````d`````````ateTime <`````````d`````````ateTime>]
+ [-`````````d`````````epartment <String>] [-`````````d`````````irectReports <IMicrosoftGraph`````````d`````````irectoryObject[]>] [-`````````d`````````isplayName <String>]
+ [-GivenName <String>] [-I`````````d````````` <String>] [-JobTitle <String>] [-Mail <String>] [-MailNickname <String>]
+ [-Manager <IMicrosoftGraph`````````d`````````irectoryObject>] [-MemberOf <IMicrosoftGraph`````````d`````````irectoryObject[]>]
+ [-OnPremisesLastSync`````````d`````````ateTime <`````````d`````````ateTime>]
+ [-OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>] [-OnPremisesSyncEnable`````````d`````````]
+ [-Phones <IMicrosoftGraphPhone[]>] [-ProxyA`````````d``````````````````d`````````resses <String[]>] [-Surname <String>]
+ [-TransitiveMemberOf <IMicrosoftGraph`````````d`````````irectoryObject[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### Up`````````d`````````ateViaI`````````d`````````entity1
 ```
-Update-MgContact -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphOrgContact>
+Up`````````d`````````ate-MgContact -InputObject <II`````````d`````````entity`````````d`````````irectoryManagementI`````````d`````````entity> -Bo`````````d`````````yParameter <IMicrosoftGraphOrgContact>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update entity in contacts
+## `````````d`````````ESCRIPTION
+Up`````````d`````````ate entity in contacts
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A`````````d``````````````````d`````````itionalProperties
+A`````````d``````````````````d`````````itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -Addresses
-Postal addresses for this organizational contact.
-For now a contact can only have one physical address.
-To construct, please use Get-Help -Online and see NOTES section for ADDRESSES properties and create a hash table.
+### -A`````````d``````````````````d`````````resses
+Postal a`````````d``````````````````d`````````resses for this organizational contact.
+For now a contact can only have one physical a`````````d``````````````````d`````````ress.
+To construct, please use Get-Help -Online an`````````d````````` see NOTES section for A`````````d``````````````````d`````````RESSES properties an`````````d````````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalOfficeAddress[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphPhysicalOfficeA`````````d``````````````````d`````````ress[]
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -BodyParameter
+### -Bo`````````d`````````yParameter
 orgContact
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online an`````````d````````` see NOTES section for BO`````````d`````````YPARAMETER properties an`````````d````````` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOrgContact
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Up`````````d`````````ate1, Up`````````d`````````ateViaI`````````d`````````entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`````````d`````````: True
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -CompanyName
 Name of the company that this organizational contact belong to.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -DeletedDateTime
-Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
+### -`````````d`````````elete`````````d``````````````````d`````````ateTime
+`````````d`````````ate an`````````d````````` time when this object was `````````d`````````elete`````````d`````````.
+Always null when the object hasn't been `````````d`````````elete`````````d`````````.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: `````````d`````````ateTime
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -Department
-The name for the department in which the contact works.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+### -`````````d`````````epartment
+The name for the `````````d`````````epartment in which the contact works.
+Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -DirectReports
-The contact's direct reports.
-(The users and contacts that have their manager property set to this contact.) Read-only.
+### -`````````d`````````irectReports
+The contact's `````````d`````````irect reports.
+(The users an`````````d````````` contacts that have their manager property set to this contact.) Rea`````````d`````````-only.
 Nullable.
-Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for DIRECTREPORTS properties and create a hash table.
+Supports $expan`````````d`````````.
+To construct, please use Get-Help -Online an`````````d````````` see NOTES section for `````````d`````````IRECTREPORTS properties an`````````d````````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraph`````````d`````````irectoryObject[]
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -DisplayName
-Display name for this organizational contact.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
+### -`````````d`````````isplayName
+`````````d`````````isplay name for this organizational contact.
+Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values), $search, an`````````d````````` $or`````````d`````````erBy.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -GivenName
 First name for this organizational contact.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -Id
+### -I`````````d`````````
 .
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I`````````d`````````entity Parameter
+To construct, please use Get-Help -Online an`````````d````````` see NOTES section for INPUTOBJECT properties an`````````d````````` create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: II`````````d`````````entity`````````d`````````irectoryManagementI`````````d`````````entity
+Parameter Sets: Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`````````d`````````: True
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -JobTitle
 Job title for this organizational contact.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -Mail
-The SMTP address for the contact, for example, 'jeff@contoso.onmicrosoft.com'.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+The SMTP a`````````d``````````````````d`````````ress for the contact, for example, 'jeff@contoso.onmicrosoft.com'.
+Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -MailNickname
-Email alias (portion of email address pre-pending the @ symbol) for this organizational contact.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+Email alias (portion of email a`````````d``````````````````d`````````ress pre-pen`````````d`````````ing the @ symbol) for this organizational contact.
+Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -Manager
-directoryObject
-To construct, please use Get-Help -Online and see NOTES section for MANAGER properties and create a hash table.
+`````````d`````````irectoryObject
+To construct, please use Get-Help -Online an`````````d````````` see NOTES section for MANAGER properties an`````````d````````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraph`````````d`````````irectoryObject
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -MemberOf
 Groups that this contact is a member of.
-Read-only.
+Rea`````````d`````````-only.
 Nullable.
-Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for MEMBEROF properties and create a hash table.
+Supports $expan`````````d`````````.
+To construct, please use Get-Help -Online an`````````d````````` see NOTES section for MEMBEROF properties an`````````d````````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraph`````````d`````````irectoryObject[]
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -OnPremisesLastSyncDateTime
-Date and time when this organizational contact was last synchronized from on-premises AD.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+### -OnPremisesLastSync`````````d`````````ateTime
+`````````d`````````ate an`````````d````````` time when this organizational contact was last synchronize`````````d````````` from on-premises A`````````d`````````.
+The Timestamp type represents `````````d`````````ate an`````````d````````` time information using ISO 8601 format an`````````d````````` is always in UTC time.
+For example, mi`````````d`````````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, ne, not, ge, le, in).
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: `````````d`````````ateTime
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -OnPremisesProvisioningErrors
 List of any synchronization provisioning errors for this organizational contact.
 Supports $filter (eq, not).
-To construct, please use Get-Help -Online and see NOTES section for ONPREMISESPROVISIONINGERRORS properties and create a hash table.
+To construct, please use Get-Help -Online an`````````d````````` see NOTES section for ONPREMISESPROVISIONINGERRORS properties an`````````d````````` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnPremisesProvisioningError[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -OnPremisesSyncEnabled
-true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; null if this object has never been synced from an on-premises directory (default).
-Supports $filter (eq, ne, not, in, and eq on null values).
+### -OnPremisesSyncEnable`````````d`````````
+true if this object is synce`````````d````````` from an on-premises `````````d`````````irectory; false if this object was originally synce`````````d````````` from an on-premises `````````d`````````irectory but is no longer synce`````````d````````` an`````````d````````` now mastere`````````d````````` in Exchange; null if this object has never been synce`````````d````````` from an on-premises `````````d`````````irectory (`````````d`````````efault).
+Supports $filter (eq, ne, not, in, an`````````d````````` eq on null values).
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -OrgContactId
-key: id of orgContact
+### -OrgContactI`````````d`````````
+key: i`````````d````````` of orgContact
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`````````d`````````: True
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman`````````d````````` succee`````````d`````````s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -Phones
 List of phones for this organizational contact.
-Phone types can be mobile, business, and businessFax.
+Phone types can be mobile, business, an`````````d````````` businessFax.
 Only one of each type can ever be present in the collection.
 Supports $filter (eq, ne, not, in).
-To construct, please use Get-Help -Online and see NOTES section for PHONES properties and create a hash table.
+To construct, please use Get-Help -Online an`````````d````````` see NOTES section for PHONES properties an`````````d````````` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPhone[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
-### -ProxyAddresses
+### -ProxyA`````````d``````````````````d`````````resses
 For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'.
-The any operator is required for filter expressions on multi-valued properties.
-Supports $filter (eq, not, ge, le, startsWith, and counting empty collections).
+The any operator is require`````````d````````` for filter expressions on multi-value`````````d````````` properties.
+Supports $filter (eq, not, ge, le, startsWith, an`````````d````````` counting empty collections).
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -Surname
 Last name for this organizational contact.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values)
+Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values)
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -TransitiveMemberOf
 .
-To construct, please use Get-Help -Online and see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
+To construct, please use Get-Help -Online an`````````d````````` see NOTES section for TRANSITIVEMEMBEROF properties an`````````d````````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraph`````````d`````````irectoryObject[]
+Parameter Sets: Up`````````d`````````ateExpan`````````d`````````e`````````d`````````1, Up`````````d`````````ateViaI`````````d`````````entityExpan`````````d`````````e`````````d`````````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm`````````d`````````let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul`````````d````````` happen if the cm`````````d`````````let runs.
+The cm`````````d`````````let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require`````````d`````````: False
+Position: Name`````````d`````````
+`````````d`````````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`````````d`````````car`````````d````````` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm`````````d`````````let supports the common parameters: -`````````d`````````ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an`````````d````````` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI`````````d`````````=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrgContact
+### Microsoft.Graph.PowerShell.Mo`````````d`````````els.II`````````d`````````entity`````````d`````````irectoryManagementI`````````d`````````entity
+### Microsoft.Graph.PowerShell.Mo`````````d`````````els.IMicrosoftGraphOrgContact
 ## OUTPUTS
 
 ### System.Boolean
@@ -514,120 +514,120 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters `````````d`````````escribe`````````d````````` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESSES <IMicrosoftGraphPhysicalOfficeAddress[]>: Postal addresses for this organizational contact. For now a contact can only have one physical address.
+A`````````d``````````````````d`````````RESSES <IMicrosoftGraphPhysicalOfficeA`````````d``````````````````d`````````ress[]>: Postal a`````````d``````````````````d`````````resses for this organizational contact. For now a contact can only have one physical a`````````d``````````````````d`````````ress.
   - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-  - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
-  - `[PostalCode <String>]`: The postal code.
+  - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'Unite`````````d````````` States'.
+  - `[OfficeLocation <String>]`: Office location such as buil`````````d`````````ing an`````````d````````` office number for an organizational contact.
+  - `[PostalCo`````````d`````````e <String>]`: The postal co`````````d`````````e.
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-BODYPARAMETER <IMicrosoftGraphOrgContact>: orgContact
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: 
-  - `[Addresses <IMicrosoftGraphPhysicalOfficeAddress[]>]`: Postal addresses for this organizational contact. For now a contact can only have one physical address.
+BO`````````d`````````YPARAMETER <IMicrosoftGraphOrgContact>: orgContact
+  - `[(Any) <Object>]`: This in`````````d`````````icates any property can be a`````````d``````````````````d`````````e`````````d````````` to this object.
+  - `[`````````d`````````elete`````````d``````````````````d`````````ateTime <`````````d`````````ateTime?>]`: `````````d`````````ate an`````````d````````` time when this object was `````````d`````````elete`````````d`````````. Always null when the object hasn't been `````````d`````````elete`````````d`````````.
+  - `[I`````````d````````` <String>]`: 
+  - `[A`````````d``````````````````d`````````resses <IMicrosoftGraphPhysicalOfficeA`````````d``````````````````d`````````ress[]>]`: Postal a`````````d``````````````````d`````````resses for this organizational contact. For now a contact can only have one physical a`````````d``````````````````d`````````ress.
     - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-    - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
-    - `[PostalCode <String>]`: The postal code.
+    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'Unite`````````d````````` States'.
+    - `[OfficeLocation <String>]`: Office location such as buil`````````d`````````ing an`````````d````````` office number for an organizational contact.
+    - `[PostalCo`````````d`````````e <String>]`: The postal co`````````d`````````e.
     - `[State <String>]`: The state.
     - `[Street <String>]`: The street.
-  - `[CompanyName <String>]`: Name of the company that this organizational contact belong to. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  - `[Department <String>]`: The name for the department in which the contact works. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The contact's direct reports. (The users and contacts that have their manager property set to this contact.) Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: 
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[DisplayName <String>]`: Display name for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
-  - `[GivenName <String>]`: First name for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  - `[JobTitle <String>]`: Job title for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  - `[Mail <String>]`: The SMTP address for the contact, for example, 'jeff@contoso.onmicrosoft.com'. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  - `[MailNickname <String>]`: Email alias (portion of email address pre-pending the @ symbol) for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
-  - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this contact is a member of. Read-only. Nullable. Supports $expand.
-  - `[OnPremisesLastSyncDateTime <DateTime?>]`: Date and time when this organizational contact was last synchronized from on-premises AD. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, not, ge, le, in).
+  - `[CompanyName <String>]`: Name of the company that this organizational contact belong to. Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
+  - `[`````````d`````````epartment <String>]`: The name for the `````````d`````````epartment in which the contact works. Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
+  - `[`````````d`````````irectReports <IMicrosoftGraph`````````d`````````irectoryObject[]>]`: The contact's `````````d`````````irect reports. (The users an`````````d````````` contacts that have their manager property set to this contact.) Rea`````````d`````````-only. Nullable. Supports $expan`````````d`````````.
+    - `[I`````````d````````` <String>]`: 
+    - `[`````````d`````````elete`````````d``````````````````d`````````ateTime <`````````d`````````ateTime?>]`: `````````d`````````ate an`````````d````````` time when this object was `````````d`````````elete`````````d`````````. Always null when the object hasn't been `````````d`````````elete`````````d`````````.
+  - `[`````````d`````````isplayName <String>]`: `````````d`````````isplay name for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values), $search, an`````````d````````` $or`````````d`````````erBy.
+  - `[GivenName <String>]`: First name for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
+  - `[JobTitle <String>]`: Job title for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
+  - `[Mail <String>]`: The SMTP a`````````d``````````````````d`````````ress for the contact, for example, 'jeff@contoso.onmicrosoft.com'. Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
+  - `[MailNickname <String>]`: Email alias (portion of email a`````````d``````````````````d`````````ress pre-pen`````````d`````````ing the @ symbol) for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values).
+  - `[Manager <IMicrosoftGraph`````````d`````````irectoryObject>]`: `````````d`````````irectoryObject
+  - `[MemberOf <IMicrosoftGraph`````````d`````````irectoryObject[]>]`: Groups that this contact is a member of. Rea`````````d`````````-only. Nullable. Supports $expan`````````d`````````.
+  - `[OnPremisesLastSync`````````d`````````ateTime <`````````d`````````ateTime?>]`: `````````d`````````ate an`````````d````````` time when this organizational contact was last synchronize`````````d````````` from on-premises A`````````d`````````. The Timestamp type represents `````````d`````````ate an`````````d````````` time information using ISO 8601 format an`````````d````````` is always in UTC time. For example, mi`````````d`````````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, not, ge, le, in).
   - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: List of any synchronization provisioning errors for this organizational contact. Supports $filter (eq, not).
-    - `[Category <String>]`: Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict - indicates a property value is not unique. Other objects contain the same value for the property.
-    - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
-    - `[PropertyCausingError <String>]`: Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
+    - `[Category <String>]`: Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict - in`````````d`````````icates a property value is not unique. Other objects contain the same value for the property.
+    - `[Occurre`````````d``````````````````d`````````ateTime <`````````d`````````ateTime?>]`: The `````````d`````````ate an`````````d````````` time at which the error occurre`````````d`````````.
+    - `[PropertyCausingError <String>]`: Name of the `````````d`````````irectory property causing the error. Current possible values: UserPrincipalName or ProxyA`````````d``````````````````d`````````ress
     - `[Value <String>]`: Value of the property causing the error.
-  - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; null if this object has never been synced from an on-premises directory (default).  Supports $filter (eq, ne, not, in, and eq on null values).
-  - `[Phones <IMicrosoftGraphPhone[]>]`: List of phones for this organizational contact. Phone types can be mobile, business, and businessFax. Only one of each type can ever be present in the collection. Supports $filter (eq, ne, not, in).
+  - `[OnPremisesSyncEnable`````````d````````` <Boolean?>]`: true if this object is synce`````````d````````` from an on-premises `````````d`````````irectory; false if this object was originally synce`````````d````````` from an on-premises `````````d`````````irectory but is no longer synce`````````d````````` an`````````d````````` now mastere`````````d````````` in Exchange; null if this object has never been synce`````````d````````` from an on-premises `````````d`````````irectory (`````````d`````````efault).  Supports $filter (eq, ne, not, in, an`````````d````````` eq on null values).
+  - `[Phones <IMicrosoftGraphPhone[]>]`: List of phones for this organizational contact. Phone types can be mobile, business, an`````````d````````` businessFax. Only one of each type can ever be present in the collection. Supports $filter (eq, ne, not, in).
     - `[Language <String>]`: 
     - `[Number <String>]`: The phone number.
     - `[Region <String>]`: 
     - `[Type <String>]`: phoneType
-  - `[ProxyAddresses <String[]>]`: For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'. The any operator is required for filter expressions on multi-valued properties. Supports $filter (eq, not, ge, le, startsWith, and counting empty collections).
-  - `[Surname <String>]`: Last name for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values)
-  - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
+  - `[ProxyA`````````d``````````````````d`````````resses <String[]>]`: For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'. The any operator is require`````````d````````` for filter expressions on multi-value`````````d````````` properties. Supports $filter (eq, not, ge, le, startsWith, an`````````d````````` counting empty collections).
+  - `[Surname <String>]`: Last name for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, an`````````d````````` eq on null values)
+  - `[TransitiveMemberOf <IMicrosoftGraph`````````d`````````irectoryObject[]>]`: 
 
-DIRECTREPORTS <IMicrosoftGraphDirectoryObject[]>: The contact's direct reports. (The users and contacts that have their manager property set to this contact.) Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+`````````d`````````IRECTREPORTS <IMicrosoftGraph`````````d`````````irectoryObject[]>: The contact's `````````d`````````irect reports. (The users an`````````d````````` contacts that have their manager property set to this contact.) Rea`````````d`````````-only. Nullable. Supports $expan`````````d`````````.
+  - `[I`````````d````````` <String>]`: 
+  - `[`````````d`````````elete`````````d``````````````````d`````````ateTime <`````````d`````````ateTime?>]`: `````````d`````````ate an`````````d````````` time when this object was `````````d`````````elete`````````d`````````. Always null when the object hasn't been `````````d`````````elete`````````d`````````.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
-  - `[AllowedValueId <String>]`: key: id of allowedValue
-  - `[AttributeSetId <String>]`: key: id of attributeSet
-  - `[CommandId <String>]`: key: id of command
-  - `[ContractId <String>]`: key: id of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: key: id of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: key: id of device
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[DirectoryRoleId <String>]`: key: id of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: key: id of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: key: id of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: key: id of directorySettingTemplate
-  - `[DomainDnsRecordId <String>]`: key: id of domainDnsRecord
-  - `[DomainId <String>]`: key: id of domain
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
-  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
-  - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
-  - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
-  - `[OrgContactId <String>]`: key: id of orgContact
-  - `[OrganizationId <String>]`: key: id of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
-  - `[RecommendationId <String>]`: key: id of recommendation
-  - `[RecommendationResourceId <String>]`: key: id of recommendationResource
-  - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
-  - `[SubscribedSkuId <String>]`: key: id of subscribedSku
-  - `[TenantReferenceTenantId <String>]`: key: tenantId of tenantReference
-  - `[UsageRightId <String>]`: key: id of usageRight
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <II`````````d`````````entity`````````d`````````irectoryManagementI`````````d`````````entity>: I`````````d`````````entity Parameter
+  - `[A`````````d`````````ministrativeUnitI`````````d````````` <String>]`: key: i`````````d````````` of a`````````d`````````ministrativeUnit
+  - `[Allowe`````````d`````````ValueI`````````d````````` <String>]`: key: i`````````d````````` of allowe`````````d`````````Value
+  - `[AttributeSetI`````````d````````` <String>]`: key: i`````````d````````` of attributeSet
+  - `[Comman`````````d`````````I`````````d````````` <String>]`: key: i`````````d````````` of comman`````````d`````````
+  - `[ContractI`````````d````````` <String>]`: key: i`````````d````````` of contract
+  - `[CustomSecurityAttribute`````````d`````````efinitionI`````````d````````` <String>]`: key: i`````````d````````` of customSecurityAttribute`````````d`````````efinition
+  - `[`````````d`````````eviceI`````````d````````` <String>]`: key: i`````````d````````` of `````````d`````````evice
+  - `[`````````d`````````irectoryObjectI`````````d````````` <String>]`: key: i`````````d````````` of `````````d`````````irectoryObject
+  - `[`````````d`````````irectoryRoleI`````````d````````` <String>]`: key: i`````````d````````` of `````````d`````````irectoryRole
+  - `[`````````d`````````irectoryRoleTemplateI`````````d````````` <String>]`: key: i`````````d````````` of `````````d`````````irectoryRoleTemplate
+  - `[`````````d`````````irectorySettingI`````````d````````` <String>]`: key: i`````````d````````` of `````````d`````````irectorySetting
+  - `[`````````d`````````irectorySettingTemplateI`````````d````````` <String>]`: key: i`````````d````````` of `````````d`````````irectorySettingTemplate
+  - `[`````````d`````````omain`````````d`````````nsRecor`````````d`````````I`````````d````````` <String>]`: key: i`````````d````````` of `````````d`````````omain`````````d`````````nsRecor`````````d`````````
+  - `[`````````d`````````omainI`````````d````````` <String>]`: key: i`````````d````````` of `````````d`````````omain
+  - `[ExtensionI`````````d````````` <String>]`: key: i`````````d````````` of extension
+  - `[FeatureRolloutPolicyI`````````d````````` <String>]`: key: i`````````d````````` of featureRolloutPolicy
+  - `[I`````````d`````````entityProvi`````````d`````````erBaseI`````````d````````` <String>]`: key: i`````````d````````` of i`````````d`````````entityProvi`````````d`````````erBase
+  - `[Inboun`````````d`````````Share`````````d`````````UserProfileUserI`````````d````````` <String>]`: key: userI`````````d````````` of inboun`````````d`````````Share`````````d`````````UserProfile
+  - `[Internal`````````d`````````omainFe`````````d`````````erationI`````````d````````` <String>]`: key: i`````````d````````` of internal`````````d`````````omainFe`````````d`````````eration
+  - `[OrgContactI`````````d````````` <String>]`: key: i`````````d````````` of orgContact
+  - `[OrganizationI`````````d````````` <String>]`: key: i`````````d````````` of organization
+  - `[OrganizationalBran`````````d`````````ingLocalizationI`````````d````````` <String>]`: key: i`````````d````````` of organizationalBran`````````d`````````ingLocalization
+  - `[Outboun`````````d`````````Share`````````d`````````UserProfileUserI`````````d````````` <String>]`: key: userI`````````d````````` of outboun`````````d`````````Share`````````d`````````UserProfile
+  - `[ProfileCar`````````d`````````PropertyI`````````d````````` <String>]`: key: i`````````d````````` of profileCar`````````d`````````Property
+  - `[Recommen`````````d`````````ationI`````````d````````` <String>]`: key: i`````````d````````` of recommen`````````d`````````ation
+  - `[Recommen`````````d`````````ationResourceI`````````d````````` <String>]`: key: i`````````d````````` of recommen`````````d`````````ationResource
+  - `[Scope`````````d`````````RoleMembershipI`````````d````````` <String>]`: key: i`````````d````````` of scope`````````d`````````RoleMembership
+  - `[Share`````````d`````````Email`````````d`````````omainI`````````d````````` <String>]`: key: i`````````d````````` of share`````````d`````````Email`````````d`````````omain
+  - `[Share`````````d`````````Email`````````d`````````omainInvitationI`````````d````````` <String>]`: key: i`````````d````````` of share`````````d`````````Email`````````d`````````omainInvitation
+  - `[Subscribe`````````d`````````SkuI`````````d````````` <String>]`: key: i`````````d````````` of subscribe`````````d`````````Sku
+  - `[TenantReferenceTenantI`````````d````````` <String>]`: key: tenantI`````````d````````` of tenantReference
+  - `[UsageRightI`````````d````````` <String>]`: key: i`````````d````````` of usageRight
+  - `[UserI`````````d````````` <String>]`: key: i`````````d````````` of user
 
-MANAGER <IMicrosoftGraphDirectoryObject>: directoryObject
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+MANAGER <IMicrosoftGraph`````````d`````````irectoryObject>: `````````d`````````irectoryObject
+  - `[(Any) <Object>]`: This in`````````d`````````icates any property can be a`````````d``````````````````d`````````e`````````d````````` to this object.
+  - `[I`````````d````````` <String>]`: 
+  - `[`````````d`````````elete`````````d``````````````````d`````````ateTime <`````````d`````````ateTime?>]`: `````````d`````````ate an`````````d````````` time when this object was `````````d`````````elete`````````d`````````. Always null when the object hasn't been `````````d`````````elete`````````d`````````.
 
-MEMBEROF <IMicrosoftGraphDirectoryObject[]>: Groups that this contact is a member of. Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+MEMBEROF <IMicrosoftGraph`````````d`````````irectoryObject[]>: Groups that this contact is a member of. Rea`````````d`````````-only. Nullable. Supports $expan`````````d`````````.
+  - `[I`````````d````````` <String>]`: 
+  - `[`````````d`````````elete`````````d``````````````````d`````````ateTime <`````````d`````````ateTime?>]`: `````````d`````````ate an`````````d````````` time when this object was `````````d`````````elete`````````d`````````. Always null when the object hasn't been `````````d`````````elete`````````d`````````.
 
 ONPREMISESPROVISIONINGERRORS <IMicrosoftGraphOnPremisesProvisioningError[]>: List of any synchronization provisioning errors for this organizational contact. Supports $filter (eq, not).
-  - `[Category <String>]`: Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict - indicates a property value is not unique. Other objects contain the same value for the property.
-  - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
-  - `[PropertyCausingError <String>]`: Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
+  - `[Category <String>]`: Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict - in`````````d`````````icates a property value is not unique. Other objects contain the same value for the property.
+  - `[Occurre`````````d``````````````````d`````````ateTime <`````````d`````````ateTime?>]`: The `````````d`````````ate an`````````d````````` time at which the error occurre`````````d`````````.
+  - `[PropertyCausingError <String>]`: Name of the `````````d`````````irectory property causing the error. Current possible values: UserPrincipalName or ProxyA`````````d``````````````````d`````````ress
   - `[Value <String>]`: Value of the property causing the error.
 
-PHONES <IMicrosoftGraphPhone[]>: List of phones for this organizational contact. Phone types can be mobile, business, and businessFax. Only one of each type can ever be present in the collection. Supports $filter (eq, ne, not, in).
+PHONES <IMicrosoftGraphPhone[]>: List of phones for this organizational contact. Phone types can be mobile, business, an`````````d````````` businessFax. Only one of each type can ever be present in the collection. Supports $filter (eq, ne, not, in).
   - `[Language <String>]`: 
   - `[Number <String>]`: The phone number.
   - `[Region <String>]`: 
   - `[Type <String>]`: phoneType
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject[]>: .
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+TRANSITIVEMEMBEROF <IMicrosoftGraph`````````d`````````irectoryObject[]>: .
+  - `[I`````````d````````` <String>]`: 
+  - `[`````````d`````````elete`````````d``````````````````d`````````ateTime <`````````d`````````ateTime?>]`: `````````d`````````ate an`````````d````````` time when this object was `````````d`````````elete`````````d`````````. Always null when the object hasn't been `````````d`````````elete`````````d`````````.
 
-## RELATED LINKS
+## RELATE`````````d````````` LINKS
 
-## RELATED LINKS
+## RELATE`````````d````````` LINKS
