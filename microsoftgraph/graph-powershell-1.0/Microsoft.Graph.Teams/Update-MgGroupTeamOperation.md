@@ -1,387 +1,387 @@
-﻿---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mggroupteamoperation
-schema: 2.0.0
+---
+```e```xt```e```rnal h```e```lp fil```e```: Microsoft.Graph.T```e```ams-h```e```lp.xml
+Modul```e``` Nam```e```: Microsoft.Graph.T```e```ams
+onlin```e``` v```e```rsion: https://docs.microsoft.com/```e```n-us/pow```e```rsh```e```ll/modul```e```/microsoft.graph.t```e```ams/updat```e```-mggroupt```e```amop```e```ration
+sch```e```ma: 2.0.0
 ---
 
-# Update-MgGroupTeamOperation
+# Updat```e```-MgGroupT```e```amOp```e```ration
 
 ## SYNOPSIS
-Update the navigation property operations in groups
+Updat```e``` th```e``` navigation prop```e```rty op```e```rations in groups
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Updat```e``````e```xpand```e```d1 (D```e```fault)
 ```
-Update-MgGroupTeamOperation -GroupId <String> -TeamsAsyncOperationId <String>
- [-AdditionalProperties <Hashtable>] [-AttemptsCount <Int32>] [-CreatedDateTime <DateTime>]
- [-Error <IMicrosoftGraphOperationError>] [-Id <String>] [-LastActionDateTime <DateTime>]
- [-OperationType <String>] [-Status <String>] [-TargetResourceId <String>] [-TargetResourceLocation <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgGroupTeamOperation -GroupId <String> -TeamsAsyncOperationId <String>
- -BodyParameter <IMicrosoftGraphTeamsAsyncOperation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```e```-MgGroupT```e```amOp```e```ration -GroupId <String> -T```e```amsAsyncOp```e```rationId <String>
+ [-AdditionalProp```e```rti```e```s <Hashtabl```e```>] [-Att```e```mptsCount <Int32>] [-Cr```e```at```e```dDat```e```Tim```e``` <Dat```e```Tim```e```>]
+ [-```e```rror <IMicrosoftGraphOp```e```ration```e```rror>] [-Id <String>] [-LastActionDat```e```Tim```e``` <Dat```e```Tim```e```>]
+ [-Op```e```rationTyp```e``` <String>] [-Status <String>] [-Targ```e```tR```e```sourc```e```Id <String>] [-Targ```e```tR```e```sourc```e```Location <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Updat```e```1
 ```
-Update-MgGroupTeamOperation -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AttemptsCount <Int32>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>] [-Id <String>]
- [-LastActionDateTime <DateTime>] [-OperationType <String>] [-Status <String>] [-TargetResourceId <String>]
- [-TargetResourceLocation <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```e```-MgGroupT```e```amOp```e```ration -GroupId <String> -T```e```amsAsyncOp```e```rationId <String>
+ -BodyParam```e```t```e```r <IMicrosoftGraphT```e```amsAsyncOp```e```ration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-### UpdateViaIdentity1
+### Updat```e```ViaId```e```ntity```e```xpand```e```d1
 ```
-Update-MgGroupTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAsyncOperation>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```e```-MgGroupT```e```amOp```e```ration -InputObj```e```ct <IT```e```amsId```e```ntity> [-AdditionalProp```e```rti```e```s <Hashtabl```e```>]
+ [-Att```e```mptsCount <Int32>] [-Cr```e```at```e```dDat```e```Tim```e``` <Dat```e```Tim```e```>] [-```e```rror <IMicrosoftGraphOp```e```ration```e```rror>] [-Id <String>]
+ [-LastActionDat```e```Tim```e``` <Dat```e```Tim```e```>] [-Op```e```rationTyp```e``` <String>] [-Status <String>] [-Targ```e```tR```e```sourc```e```Id <String>]
+ [-Targ```e```tR```e```sourc```e```Location <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property operations in groups
+### Updat```e```ViaId```e```ntity1
+```
+Updat```e```-MgGroupT```e```amOp```e```ration -InputObj```e```ct <IT```e```amsId```e```ntity> -BodyParam```e```t```e```r <IMicrosoftGraphT```e```amsAsyncOp```e```ration>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
+```
 
-## EXAMPLES
+## D```e```SCRIPTION
+Updat```e``` th```e``` navigation prop```e```rty op```e```rations in groups
 
-## PARAMETERS
+## ```e```XAMPL```e```S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM```e```T```e```RS
+
+### -AdditionalProp```e```rti```e```s
+Additional Param```e```t```e```rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: Hashtabl```e```
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -AttemptsCount
-Number of times the operation was attempted before being marked successful or failed.
+### -Att```e```mptsCount
+Numb```e```r of tim```e```s th```e``` op```e```ration was att```e```mpt```e```d b```e```for```e``` b```e```ing mark```e```d succ```e```ssful or fail```e```d.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: Int32
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -BodyParameter
-teamsAsyncOperation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam```e```t```e```r
+t```e```amsAsyncOp```e```ration
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for BODYPARAM```e```T```e```R prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAsyncOperation
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Typ```e```: IMicrosoftGraphT```e```amsAsyncOp```e```ration
+Param```e```t```e```r S```e```ts: Updat```e```1, Updat```e```ViaId```e```ntity1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -CreatedDateTime
-Time when the operation was created.
+### -Cr```e```at```e```dDat```e```Tim```e```
+Tim```e``` wh```e```n th```e``` op```e```ration was cr```e```at```e```d.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: Dat```e```Tim```e```
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -Error
-operationError
-To construct, please use Get-Help -Online and see NOTES section for ERROR properties and create a hash table.
+### -```e```rror
+op```e```ration```e```rror
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for ```e```RROR prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IMicrosoftGraphOperationError
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: IMicrosoftGraphOp```e```ration```e```rror
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -GroupId
-key: id of group
+k```e```y: id of group
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj```e```ct
+Id```e```ntity Param```e```t```e```r
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for INPUTOBJ```e```CT prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Typ```e```: IT```e```amsId```e```ntity
+Param```e```t```e```r S```e```ts: Updat```e```ViaId```e```ntity```e```xpand```e```d1, Updat```e```ViaId```e```ntity1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -LastActionDateTime
-Time when the async operation was last updated.
+### -LastActionDat```e```Tim```e```
+Tim```e``` wh```e```n th```e``` async op```e```ration was last updat```e```d.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: Dat```e```Tim```e```
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -OperationType
+### -Op```e```rationTyp```e```
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R```e```turns tru```e``` wh```e```n th```e``` command succ```e``````e```ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Status
-teamsAsyncOperationStatus
+t```e```amsAsyncOp```e```rationStatus
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -TargetResourceId
-The ID of the object that's created or modified as result of this async operation, typically a team.
+### -Targ```e```tR```e```sourc```e```Id
+Th```e``` ID of th```e``` obj```e```ct that's cr```e```at```e```d or modifi```e```d as r```e```sult of this async op```e```ration, typically a t```e```am.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -TargetResourceLocation
-The location of the object that's created or modified as result of this async operation.
-This URL should be treated as an opaque value and not parsed into its component paths.
+### -Targ```e```tR```e```sourc```e```Location
+Th```e``` location of th```e``` obj```e```ct that's cr```e```at```e```d or modifi```e```d as r```e```sult of this async op```e```ration.
+This URL should b```e``` tr```e```at```e```d as an opaqu```e``` valu```e``` and not pars```e```d into its compon```e```nt paths.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -TeamsAsyncOperationId
-key: id of teamsAsyncOperation
+### -T```e```amsAsyncOp```e```rationId
+k```e```y: id of t```e```amsAsyncOp```e```ration
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b```e```for```e``` running th```e``` cmdl```e```t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ```e```n if th```e``` cmdl```e```t runs.
+Th```e``` cmdl```e```t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam```e```t```e```rs
+This cmdl```e```t supports th```e``` common param```e```t```e```rs: -D```e```bug, -```e```rrorAction, -```e```rrorVariabl```e```, -InformationAction, -InformationVariabl```e```, -OutVariabl```e```, -OutBuff```e```r, -Pip```e```lin```e```Variabl```e```, -V```e```rbos```e```, -WarningAction, and -WarningVariabl```e```. For mor```e``` information, s```e``````e``` [about_CommonParam```e```t```e```rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.IMicrosoftGraphT```e```amsAsyncOp```e```ration
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.IT```e```amsId```e```ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst```e```m.Bool```e```an
+## NOT```e```S
 
-ALIASES
+ALIAS```e```S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL```e```X PARAM```e```T```e```R PROP```e```RTI```e```S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr```e```at```e``` th```e``` param```e```t```e```rs d```e```scrib```e```d b```e```low, construct a hash tabl```e``` containing th```e``` appropriat```e``` prop```e```rti```e```s. For information on hash tabl```e```s, run G```e```t-H```e```lp about_Hash_Tabl```e```s.
 
 
-BODYPARAMETER <IMicrosoftGraphTeamsAsyncOperation>: teamsAsyncOperation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM```e```T```e```R <IMicrosoftGraphT```e```amsAsyncOp```e```ration>: t```e```amsAsyncOp```e```ration
+  - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
   - `[Id <String>]`: 
-  - `[AttemptsCount <Int32?>]`: Number of times the operation was attempted before being marked successful or failed.
-  - `[CreatedDateTime <DateTime?>]`: Time when the operation was created.
-  - `[Error <IMicrosoftGraphOperationError>]`: operationError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: Operation error code.
-    - `[Message <String>]`: Operation error message.
-  - `[LastActionDateTime <DateTime?>]`: Time when the async operation was last updated.
-  - `[OperationType <String>]`: 
-  - `[Status <String>]`: teamsAsyncOperationStatus
-  - `[TargetResourceId <String>]`: The ID of the object that's created or modified as result of this async operation, typically a team.
-  - `[TargetResourceLocation <String>]`: The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.
+  - `[Att```e```mptsCount <Int32?>]`: Numb```e```r of tim```e```s th```e``` op```e```ration was att```e```mpt```e```d b```e```for```e``` b```e```ing mark```e```d succ```e```ssful or fail```e```d.
+  - `[Cr```e```at```e```dDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Tim```e``` wh```e```n th```e``` op```e```ration was cr```e```at```e```d.
+  - `[```e```rror <IMicrosoftGraphOp```e```ration```e```rror>]`: op```e```ration```e```rror
+    - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+    - `[Cod```e``` <String>]`: Op```e```ration ```e```rror cod```e```.
+    - `[M```e```ssag```e``` <String>]`: Op```e```ration ```e```rror m```e```ssag```e```.
+  - `[LastActionDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Tim```e``` wh```e```n th```e``` async op```e```ration was last updat```e```d.
+  - `[Op```e```rationTyp```e``` <String>]`: 
+  - `[Status <String>]`: t```e```amsAsyncOp```e```rationStatus
+  - `[Targ```e```tR```e```sourc```e```Id <String>]`: Th```e``` ID of th```e``` obj```e```ct that's cr```e```at```e```d or modifi```e```d as r```e```sult of this async op```e```ration, typically a t```e```am.
+  - `[Targ```e```tR```e```sourc```e```Location <String>]`: Th```e``` location of th```e``` obj```e```ct that's cr```e```at```e```d or modifi```e```d as r```e```sult of this async op```e```ration. This URL should b```e``` tr```e```at```e```d as an opaqu```e``` valu```e``` and not pars```e```d into its compon```e```nt paths.
 
-ERROR <IMicrosoftGraphOperationError>: operationError
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Code <String>]`: Operation error code.
-  - `[Message <String>]`: Operation error message.
+```e```RROR <IMicrosoftGraphOp```e```ration```e```rror>: op```e```ration```e```rror
+  - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+  - `[Cod```e``` <String>]`: Op```e```ration ```e```rror cod```e```.
+  - `[M```e```ssag```e``` <String>]`: Op```e```ration ```e```rror m```e```ssag```e```.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
-  - `[ChannelId <String>]`: key: id of channel
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[ConversationMemberId <String>]`: key: id of conversationMember
-  - `[DeletedTeamId <String>]`: key: id of deletedTeam
-  - `[GroupId <String>]`: key: id of group
-  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: key: id of openShift
-  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: key: id of shift
-  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
-  - `[TeamId <String>]`: key: id of team
-  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
-  - `[TeamsAppId <String>]`: key: id of teamsApp
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: key: id of teamsTab
-  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: key: id of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TimeCardId <String>]`: key: id of timeCard
-  - `[TimeOffId <String>]`: key: id of timeOff
-  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
-  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
-  - `[UserId <String>]`: key: id of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
+INPUTOBJ```e```CT <IT```e```amsId```e```ntity>: Id```e```ntity Param```e```t```e```r
+  - `[Associat```e```dT```e```amInfoId <String>]`: k```e```y: id of associat```e```dT```e```amInfo
+  - `[Chann```e```lId <String>]`: k```e```y: id of chann```e```l
+  - `[ChatId <String>]`: k```e```y: id of chat
+  - `[ChatM```e```ssag```e```Host```e```dCont```e```ntId <String>]`: k```e```y: id of chatM```e```ssag```e```Host```e```dCont```e```nt
+  - `[ChatM```e```ssag```e```Id <String>]`: k```e```y: id of chatM```e```ssag```e```
+  - `[ChatM```e```ssag```e```Id1 <String>]`: k```e```y: id of chatM```e```ssag```e```
+  - `[Conv```e```rsationM```e```mb```e```rId <String>]`: k```e```y: id of conv```e```rsationM```e```mb```e```r
+  - `[D```e```l```e```t```e```dT```e```amId <String>]`: k```e```y: id of d```e```l```e```t```e```dT```e```am
+  - `[GroupId <String>]`: k```e```y: id of group
+  - `[Off```e```rShiftR```e```qu```e```stId <String>]`: k```e```y: id of off```e```rShiftR```e```qu```e```st
+  - `[Op```e```nShiftChang```e```R```e```qu```e```stId <String>]`: k```e```y: id of op```e```nShiftChang```e```R```e```qu```e```st
+  - `[Op```e```nShiftId <String>]`: k```e```y: id of op```e```nShift
+  - `[Pinn```e```dChatM```e```ssag```e```InfoId <String>]`: k```e```y: id of pinn```e```dChatM```e```ssag```e```Info
+  - `[R```e```sourc```e```Sp```e```cificP```e```rmissionGrantId <String>]`: k```e```y: id of r```e```sourc```e```Sp```e```cificP```e```rmissionGrant
+  - `[Sch```e```dulingGroupId <String>]`: k```e```y: id of sch```e```dulingGroup
+  - `[Shar```e```dWithChann```e```lT```e```amInfoId <String>]`: k```e```y: id of shar```e```dWithChann```e```lT```e```amInfo
+  - `[ShiftId <String>]`: k```e```y: id of shift
+  - `[SwapShiftsChang```e```R```e```qu```e```stId <String>]`: k```e```y: id of swapShiftsChang```e```R```e```qu```e```st
+  - `[T```e```amId <String>]`: k```e```y: id of t```e```am
+  - `[T```e```amsAppD```e```finitionId <String>]`: k```e```y: id of t```e```amsAppD```e```finition
+  - `[T```e```amsAppId <String>]`: k```e```y: id of t```e```amsApp
+  - `[T```e```amsAppInstallationId <String>]`: k```e```y: id of t```e```amsAppInstallation
+  - `[T```e```amsAsyncOp```e```rationId <String>]`: k```e```y: id of t```e```amsAsyncOp```e```ration
+  - `[T```e```amsTabId <String>]`: k```e```y: id of t```e```amsTab
+  - `[T```e```amworkD```e```vic```e```Id <String>]`: k```e```y: id of t```e```amworkD```e```vic```e```
+  - `[T```e```amworkD```e```vic```e```Op```e```rationId <String>]`: k```e```y: id of t```e```amworkD```e```vic```e```Op```e```ration
+  - `[T```e```amworkTagId <String>]`: k```e```y: id of t```e```amworkTag
+  - `[T```e```amworkTagM```e```mb```e```rId <String>]`: k```e```y: id of t```e```amworkTagM```e```mb```e```r
+  - `[Tim```e```CardId <String>]`: k```e```y: id of tim```e```Card
+  - `[Tim```e```OffId <String>]`: k```e```y: id of tim```e```Off
+  - `[Tim```e```OffR```e```asonId <String>]`: k```e```y: id of tim```e```OffR```e```ason
+  - `[Tim```e```OffR```e```qu```e```stId <String>]`: k```e```y: id of tim```e```OffR```e```qu```e```st
+  - `[Us```e```rId <String>]`: k```e```y: id of us```e```r
+  - `[Us```e```rScop```e```T```e```amsAppInstallationId <String>]`: k```e```y: id of us```e```rScop```e```T```e```amsAppInstallation
+  - `[Workforc```e```Int```e```grationId <String>]`: k```e```y: id of workforc```e```Int```e```gration
 
-## RELATED LINKS
+## R```e```LAT```e```D LINKS
