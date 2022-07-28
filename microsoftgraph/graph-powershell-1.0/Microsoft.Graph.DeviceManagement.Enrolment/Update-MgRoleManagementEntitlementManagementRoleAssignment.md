@@ -1,451 +1,451 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagemententitlementmanagementroleassignment
-schema: 2.0.0
+---
+``````e``````xt``````e``````rnal h``````e``````lp fil``````e``````: Microsoft.Graph.D``````e``````vic``````e``````Manag``````e``````m``````e``````nt.``````e``````nrolm``````e``````nt-h``````e``````lp.xml
+Modul``````e`````` Nam``````e``````: Microsoft.Graph.D``````e``````vic``````e``````Manag``````e``````m``````e``````nt.``````e``````nrolm``````e``````nt
+onlin``````e`````` v``````e``````rsion: https://docs.microsoft.com/``````e``````n-us/pow``````e``````rsh``````e``````ll/modul``````e``````/microsoft.graph.d``````e``````vic``````e``````manag``````e``````m``````e``````nt.``````e``````nrolm``````e``````nt/updat``````e``````-mgrol``````e``````manag``````e``````m``````e``````nt``````e``````ntitl``````e``````m``````e``````ntmanag``````e``````m``````e``````ntrol``````e``````assignm``````e``````nt
+sch``````e``````ma: 2.0.0
 ---
 
-# Update-MgRoleManagementEntitlementManagementRoleAssignment
+# Updat``````e``````-MgRol``````e``````Manag``````e``````m``````e``````nt``````e``````ntitl``````e``````m``````e``````ntManag``````e``````m``````e``````ntRol``````e``````Assignm``````e``````nt
 
 ## SYNOPSIS
-Update the navigation property roleAssignments in roleManagement
+Updat``````e`````` th``````e`````` navigation prop``````e``````rty rol``````e``````Assignm``````e``````nts in rol``````e``````Manag``````e``````m``````e``````nt
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Updat``````e````````````e``````xpand``````e``````d1 (D``````e``````fault)
 ```
-Update-MgRoleManagementEntitlementManagementRoleAssignment -UnifiedRoleAssignmentId <String>
- [-AdditionalProperties <Hashtable>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
- [-Condition <String>] [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>]
- [-Id <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
- [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition1>] [-RoleDefinitionId <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgRoleManagementEntitlementManagementRoleAssignment -UnifiedRoleAssignmentId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat``````e``````-MgRol``````e``````Manag``````e``````m``````e``````nt``````e``````ntitl``````e``````m``````e``````ntManag``````e``````m``````e``````ntRol``````e``````Assignm``````e``````nt -Unifi``````e``````dRol``````e``````Assignm``````e``````ntId <String>
+ [-AdditionalProp``````e``````rti``````e``````s <Hashtabl``````e``````>] [-AppScop``````e`````` <IMicrosoftGraphAppScop``````e``````>] [-AppScop``````e``````Id <String>]
+ [-Condition <String>] [-Dir``````e``````ctoryScop``````e`````` <IMicrosoftGraphDir``````e``````ctoryObj``````e``````ct>] [-Dir``````e``````ctoryScop``````e``````Id <String>]
+ [-Id <String>] [-Principal <IMicrosoftGraphDir``````e``````ctoryObj``````e``````ct>] [-PrincipalId <String>]
+ [-Rol``````e``````D``````e``````finition <IMicrosoftGraphUnifi``````e``````dRol``````e``````D``````e``````finition1>] [-Rol``````e``````D``````e``````finitionId <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParam``````e``````t``````e``````rs>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Updat``````e``````1
 ```
-Update-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IDeviceManagementEnrolmentIdentity>
- [-AdditionalProperties <Hashtable>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
- [-Condition <String>] [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>]
- [-Id <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
- [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition1>] [-RoleDefinitionId <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Updat``````e``````-MgRol``````e``````Manag``````e``````m``````e``````nt``````e``````ntitl``````e``````m``````e``````ntManag``````e``````m``````e``````ntRol``````e``````Assignm``````e``````nt -Unifi``````e``````dRol``````e``````Assignm``````e``````ntId <String>
+ -BodyParam``````e``````t``````e``````r <IMicrosoftGraphUnifi``````e``````dRol``````e``````Assignm``````e``````nt> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``````e``````t``````e``````rs>]
 ```
 
-### UpdateViaIdentity1
+### Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
 ```
-Update-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IDeviceManagementEnrolmentIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat``````e``````-MgRol``````e``````Manag``````e``````m``````e``````nt``````e``````ntitl``````e``````m``````e``````ntManag``````e``````m``````e``````ntRol``````e``````Assignm``````e``````nt -InputObj``````e``````ct <ID``````e``````vic``````e``````Manag``````e``````m``````e``````nt``````e``````nrolm``````e``````ntId``````e``````ntity>
+ [-AdditionalProp``````e``````rti``````e``````s <Hashtabl``````e``````>] [-AppScop``````e`````` <IMicrosoftGraphAppScop``````e``````>] [-AppScop``````e``````Id <String>]
+ [-Condition <String>] [-Dir``````e``````ctoryScop``````e`````` <IMicrosoftGraphDir``````e``````ctoryObj``````e``````ct>] [-Dir``````e``````ctoryScop``````e``````Id <String>]
+ [-Id <String>] [-Principal <IMicrosoftGraphDir``````e``````ctoryObj``````e``````ct>] [-PrincipalId <String>]
+ [-Rol``````e``````D``````e``````finition <IMicrosoftGraphUnifi``````e``````dRol``````e``````D``````e``````finition1>] [-Rol``````e``````D``````e``````finitionId <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParam``````e``````t``````e``````rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property roleAssignments in roleManagement
+### Updat``````e``````ViaId``````e``````ntity1
+```
+Updat``````e``````-MgRol``````e``````Manag``````e``````m``````e``````nt``````e``````ntitl``````e``````m``````e``````ntManag``````e``````m``````e``````ntRol``````e``````Assignm``````e``````nt -InputObj``````e``````ct <ID``````e``````vic``````e``````Manag``````e``````m``````e``````nt``````e``````nrolm``````e``````ntId``````e``````ntity>
+ -BodyParam``````e``````t``````e``````r <IMicrosoftGraphUnifi``````e``````dRol``````e``````Assignm``````e``````nt> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``````e``````t``````e``````rs>]
+```
 
-## EXAMPLES
+## D``````e``````SCRIPTION
+Updat``````e`````` th``````e`````` navigation prop``````e``````rty rol``````e``````Assignm``````e``````nts in rol``````e``````Manag``````e``````m``````e``````nt
 
-## PARAMETERS
+## ``````e``````XAMPL``````e``````S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM``````e``````T``````e``````RS
+
+### -AdditionalProp``````e``````rti``````e``````s
+Additional Param``````e``````t``````e``````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: Hashtabl``````e``````
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -AppScope
-appScope
-To construct, please use Get-Help -Online and see NOTES section for APPSCOPE properties and create a hash table.
+### -AppScop``````e``````
+appScop``````e``````
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for APPSCOP``````e`````` prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IMicrosoftGraphAppScope
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: IMicrosoftGraphAppScop``````e``````
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -AppScopeId
-Identifier of the app specific scope when the assignment scope is app specific.
-The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-Use / for tenant-wide scope.
-App scopes are scopes that are defined and understood by this application only.
-For the entitlement management provider, use app scopes to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+### -AppScop``````e``````Id
+Id``````e``````ntifi``````e``````r of th``````e`````` app sp``````e``````cific scop``````e`````` wh``````e``````n th``````e`````` assignm``````e``````nt scop``````e`````` is app sp``````e``````cific.
+Th``````e`````` scop``````e`````` of an assignm``````e``````nt d``````e``````t``````e``````rmin``````e``````s th``````e`````` s``````e``````t of r``````e``````sourc``````e``````s for which th``````e`````` principal has b``````e````````````e``````n grant``````e``````d acc``````e``````ss.
+Dir``````e``````ctory scop``````e``````s ar``````e`````` shar``````e``````d scop``````e``````s stor``````e``````d in th``````e`````` dir``````e``````ctory that ar``````e`````` und``````e``````rstood by multipl``````e`````` applications.
+Us``````e`````` / for t``````e``````nant-wid``````e`````` scop``````e``````.
+App scop``````e``````s ar``````e`````` scop``````e``````s that ar``````e`````` d``````e``````fin``````e``````d and und``````e``````rstood by this application only.
+For th``````e`````` ``````e``````ntitl``````e``````m``````e``````nt manag``````e``````m``````e``````nt provid``````e``````r, us``````e`````` app scop``````e``````s to sp``````e``````cify a catalog, for ``````e``````xampl``````e`````` /Acc``````e``````ssPackag``````e``````Catalog/b``````e````````````e``````dadf``````e``````-01d5-4025-910b-84abb9369997.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -BodyParameter
-unifiedRoleAssignment
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam``````e``````t``````e``````r
+unifi``````e``````dRol``````e``````Assignm``````e``````nt
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for BODYPARAM``````e``````T``````e``````R prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleAssignment
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Typ``````e``````: IMicrosoftGraphUnifi``````e``````dRol``````e``````Assignm``````e``````nt
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e``````1, Updat``````e``````ViaId``````e``````ntity1
+Alias``````e``````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Tru``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Tru``````e`````` (ByValu``````e``````)
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -Condition
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -DirectoryScope
-directoryObject
-To construct, please use Get-Help -Online and see NOTES section for DIRECTORYSCOPE properties and create a hash table.
+### -Dir``````e``````ctoryScop``````e``````
+dir``````e``````ctoryObj``````e``````ct
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for DIR``````e``````CTORYSCOP``````e`````` prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: IMicrosoftGraphDir``````e``````ctoryObj``````e``````ct
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -DirectoryScopeId
-Identifier of the directory object representing the scope of the assignment.
-The scope of an assignment determines the set of resources for which the principal has been granted access.
-Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
-App scopes are scopes that are defined and understood by this application only.
+### -Dir``````e``````ctoryScop``````e``````Id
+Id``````e``````ntifi``````e``````r of th``````e`````` dir``````e``````ctory obj``````e``````ct r``````e``````pr``````e``````s``````e``````nting th``````e`````` scop``````e`````` of th``````e`````` assignm``````e``````nt.
+Th``````e`````` scop``````e`````` of an assignm``````e``````nt d``````e``````t``````e``````rmin``````e``````s th``````e`````` s``````e``````t of r``````e``````sourc``````e``````s for which th``````e`````` principal has b``````e````````````e``````n grant``````e``````d acc``````e``````ss.
+Dir``````e``````ctory scop``````e``````s ar``````e`````` shar``````e``````d scop``````e``````s stor``````e``````d in th``````e`````` dir``````e``````ctory that ar``````e`````` und``````e``````rstood by multipl``````e`````` applications.
+App scop``````e``````s ar``````e`````` scop``````e``````s that ar``````e`````` d``````e``````fin``````e``````d and und``````e``````rstood by this application only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj``````e``````ct
+Id``````e``````ntity Param``````e``````t``````e``````r
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for INPUTOBJ``````e``````CT prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Typ``````e``````: ID``````e``````vic``````e``````Manag``````e``````m``````e``````nt``````e``````nrolm``````e``````ntId``````e``````ntity
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity1
+Alias``````e``````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Tru``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Tru``````e`````` (ByValu``````e``````)
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R``````e``````turns tru``````e`````` wh``````e``````n th``````e`````` command succ``````e````````````e``````ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ``````e``````: SwitchParam``````e``````t``````e``````r
+Param``````e``````t``````e``````r S``````e``````ts: (All)
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -Principal
-directoryObject
-To construct, please use Get-Help -Online and see NOTES section for PRINCIPAL properties and create a hash table.
+dir``````e``````ctoryObj``````e``````ct
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for PRINCIPAL prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: IMicrosoftGraphDir``````e``````ctoryObj``````e``````ct
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -PrincipalId
-Identifier of the principal to which the assignment is granted.
-Supports $filter (eq operator only).
+Id``````e``````ntifi``````e``````r of th``````e`````` principal to which th``````e`````` assignm``````e``````nt is grant``````e``````d.
+Supports $filt``````e``````r (``````e``````q op``````e``````rator only).
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -RoleDefinition
-unifiedRoleDefinition
-To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITION properties and create a hash table.
+### -Rol``````e``````D``````e``````finition
+unifi``````e``````dRol``````e``````D``````e``````finition
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for ROL``````e``````D``````e``````FINITION prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: IMicrosoftGraphUnifi``````e``````dRol``````e``````D``````e``````finition1
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -RoleDefinitionId
-Identifier of the unifiedRoleDefinition the assignment is for.
-Read-only.
-Supports $filter (eq operator only).
+### -Rol``````e``````D``````e``````finitionId
+Id``````e``````ntifi``````e``````r of th``````e`````` unifi``````e``````dRol``````e``````D``````e``````finition th``````e`````` assignm``````e``````nt is for.
+R``````e``````ad-only.
+Supports $filt``````e``````r (``````e``````q op``````e``````rator only).
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d1
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -UnifiedRoleAssignmentId
-key: id of unifiedRoleAssignment
+### -Unifi``````e``````dRol``````e``````Assignm``````e``````ntId
+k``````e``````y: id of unifi``````e``````dRol``````e``````Assignm``````e``````nt
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Updat``````e````````````e``````xpand``````e``````d1, Updat``````e``````1
+Alias``````e``````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Tru``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``````e``````for``````e`````` running th``````e`````` cmdl``````e``````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``````e``````: SwitchParam``````e``````t``````e``````r
+Param``````e``````t``````e``````r S``````e``````ts: (All)
+Alias``````e``````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``````e``````n if th``````e`````` cmdl``````e``````t runs.
+Th``````e`````` cmdl``````e``````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``````e``````: SwitchParam``````e``````t``````e``````r
+Param``````e``````t``````e``````r S``````e``````ts: (All)
+Alias``````e``````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``````e``````t``````e``````rs
+This cmdl``````e``````t supports th``````e`````` common param``````e``````t``````e``````rs: -D``````e``````bug, -``````e``````rrorAction, -``````e``````rrorVariabl``````e``````, -InformationAction, -InformationVariabl``````e``````, -OutVariabl``````e``````, -OutBuff``````e``````r, -Pip``````e``````lin``````e``````Variabl``````e``````, -V``````e``````rbos``````e``````, -WarningAction, and -WarningVariabl``````e``````. For mor``````e`````` information, s``````e````````````e`````` [about_CommonParam``````e``````t``````e``````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignment
+### Microsoft.Graph.Pow``````e``````rSh``````e``````ll.Mod``````e``````ls.ID``````e``````vic``````e``````Manag``````e``````m``````e``````nt``````e``````nrolm``````e``````ntId``````e``````ntity
+### Microsoft.Graph.Pow``````e``````rSh``````e``````ll.Mod``````e``````ls.IMicrosoftGraphUnifi``````e``````dRol``````e``````Assignm``````e``````nt
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst``````e``````m.Bool``````e``````an
+## NOT``````e``````S
 
-ALIASES
+ALIAS``````e``````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``````e``````X PARAM``````e``````T``````e``````R PROP``````e``````RTI``````e``````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``````e``````at``````e`````` th``````e`````` param``````e``````t``````e``````rs d``````e``````scrib``````e``````d b``````e``````low, construct a hash tabl``````e`````` containing th``````e`````` appropriat``````e`````` prop``````e``````rti``````e``````s. For information on hash tabl``````e``````s, run G``````e``````t-H``````e``````lp about_Hash_Tabl``````e``````s.
 
 
-APPSCOPE <IMicrosoftGraphAppScope>: appScope
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+APPSCOP``````e`````` <IMicrosoftGraphAppScop``````e``````>: appScop``````e``````
+  - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
   - `[Id <String>]`: 
-  - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
-  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
+  - `[DisplayNam``````e`````` <String>]`: Provid``````e``````s th``````e`````` display nam``````e`````` of th``````e`````` app-sp``````e``````cific r``````e``````sourc``````e`````` r``````e``````pr``````e``````s``````e``````nt``````e``````d by th``````e`````` app scop``````e``````. Provid``````e``````d for display purpos``````e``````s sinc``````e`````` appScop``````e``````Id is oft``````e``````n an immutabl``````e``````, non-human-r``````e``````adabl``````e`````` id. This prop``````e``````rty is r``````e``````ad only.
+  - `[Typ``````e`````` <String>]`: D``````e``````scrib``````e``````s th``````e`````` typ``````e`````` of app-sp``````e``````cific r``````e``````sourc``````e`````` r``````e``````pr``````e``````s``````e``````nt``````e``````d by th``````e`````` app scop``````e``````. Provid``````e``````d for display purpos``````e``````s, so a us``````e``````r int``````e``````rfac``````e`````` can conv``````e``````y to th``````e`````` us``````e``````r th``````e`````` kind of app sp``````e``````cific r``````e``````sourc``````e`````` r``````e``````pr``````e``````s``````e``````nt``````e``````d by th``````e`````` app scop``````e``````. This prop``````e``````rty is r``````e``````ad only.
 
-BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignment>: unifiedRoleAssignment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM``````e``````T``````e``````R <IMicrosoftGraphUnifi``````e``````dRol``````e``````Assignm``````e``````nt>: unifi``````e``````dRol``````e``````Assignm``````e``````nt
+  - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
   - `[Id <String>]`: 
-  - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AppScop``````e`````` <IMicrosoftGraphAppScop``````e``````>]`: appScop``````e``````
+    - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
     - `[Id <String>]`: 
-    - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
-    - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
-  - `[AppScopeId <String>]`: Identifier of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.  For the entitlement management provider, use app scopes to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+    - `[DisplayNam``````e`````` <String>]`: Provid``````e``````s th``````e`````` display nam``````e`````` of th``````e`````` app-sp``````e``````cific r``````e``````sourc``````e`````` r``````e``````pr``````e``````s``````e``````nt``````e``````d by th``````e`````` app scop``````e``````. Provid``````e``````d for display purpos``````e``````s sinc``````e`````` appScop``````e``````Id is oft``````e``````n an immutabl``````e``````, non-human-r``````e``````adabl``````e`````` id. This prop``````e``````rty is r``````e``````ad only.
+    - `[Typ``````e`````` <String>]`: D``````e``````scrib``````e``````s th``````e`````` typ``````e`````` of app-sp``````e``````cific r``````e``````sourc``````e`````` r``````e``````pr``````e``````s``````e``````nt``````e``````d by th``````e`````` app scop``````e``````. Provid``````e``````d for display purpos``````e``````s, so a us``````e``````r int``````e``````rfac``````e`````` can conv``````e``````y to th``````e`````` us``````e``````r th``````e`````` kind of app sp``````e``````cific r``````e``````sourc``````e`````` r``````e``````pr``````e``````s``````e``````nt``````e``````d by th``````e`````` app scop``````e``````. This prop``````e``````rty is r``````e``````ad only.
+  - `[AppScop``````e``````Id <String>]`: Id``````e``````ntifi``````e``````r of th``````e`````` app sp``````e``````cific scop``````e`````` wh``````e``````n th``````e`````` assignm``````e``````nt scop``````e`````` is app sp``````e``````cific. Th``````e`````` scop``````e`````` of an assignm``````e``````nt d``````e``````t``````e``````rmin``````e``````s th``````e`````` s``````e``````t of r``````e``````sourc``````e``````s for which th``````e`````` principal has b``````e````````````e``````n grant``````e``````d acc``````e``````ss. Dir``````e``````ctory scop``````e``````s ar``````e`````` shar``````e``````d scop``````e``````s stor``````e``````d in th``````e`````` dir``````e``````ctory that ar``````e`````` und``````e``````rstood by multipl``````e`````` applications. Us``````e`````` / for t``````e``````nant-wid``````e`````` scop``````e``````. App scop``````e``````s ar``````e`````` scop``````e``````s that ar``````e`````` d``````e``````fin``````e``````d and und``````e``````rstood by this application only.  For th``````e`````` ``````e``````ntitl``````e``````m``````e``````nt manag``````e``````m``````e``````nt provid``````e``````r, us``````e`````` app scop``````e``````s to sp``````e``````cify a catalog, for ``````e``````xampl``````e`````` /Acc``````e``````ssPackag``````e``````Catalog/b``````e````````````e``````dadf``````e``````-01d5-4025-910b-84abb9369997.
   - `[Condition <String>]`: 
-  - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Dir``````e``````ctoryScop``````e`````` <IMicrosoftGraphDir``````e``````ctoryObj``````e``````ct>]`: dir``````e``````ctoryObj``````e``````ct
+    - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
     - `[Id <String>]`: 
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
-  - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
-  - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq operator only).
-  - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition1>]`: unifiedRoleDefinition
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[D``````e``````l``````e``````t``````e``````dDat``````e``````Tim``````e`````` <Dat``````e``````Tim``````e``````?>]`: Dat``````e`````` and tim``````e`````` wh``````e``````n this obj``````e``````ct was d``````e``````l``````e``````t``````e``````d. Always null wh``````e``````n th``````e`````` obj``````e``````ct hasn't b``````e````````````e``````n d``````e``````l``````e``````t``````e``````d.
+  - `[Dir``````e``````ctoryScop``````e``````Id <String>]`: Id``````e``````ntifi``````e``````r of th``````e`````` dir``````e``````ctory obj``````e``````ct r``````e``````pr``````e``````s``````e``````nting th``````e`````` scop``````e`````` of th``````e`````` assignm``````e``````nt. Th``````e`````` scop``````e`````` of an assignm``````e``````nt d``````e``````t``````e``````rmin``````e``````s th``````e`````` s``````e``````t of r``````e``````sourc``````e``````s for which th``````e`````` principal has b``````e````````````e``````n grant``````e``````d acc``````e``````ss. Dir``````e``````ctory scop``````e``````s ar``````e`````` shar``````e``````d scop``````e``````s stor``````e``````d in th``````e`````` dir``````e``````ctory that ar``````e`````` und``````e``````rstood by multipl``````e`````` applications. App scop``````e``````s ar``````e`````` scop``````e``````s that ar``````e`````` d``````e``````fin``````e``````d and und``````e``````rstood by this application only.
+  - `[Principal <IMicrosoftGraphDir``````e``````ctoryObj``````e``````ct>]`: dir``````e``````ctoryObj``````e``````ct
+  - `[PrincipalId <String>]`: Id``````e``````ntifi``````e``````r of th``````e`````` principal to which th``````e`````` assignm``````e``````nt is grant``````e``````d. Supports $filt``````e``````r (``````e``````q op``````e``````rator only).
+  - `[Rol``````e``````D``````e``````finition <IMicrosoftGraphUnifi``````e``````dRol``````e``````D``````e``````finition1>]`: unifi``````e``````dRol``````e``````D``````e``````finition
+    - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
     - `[Id <String>]`: 
-    - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-    - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
-    - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition1[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-    - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
-    - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-    - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
-    - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-      - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
-      - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-      - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
-    - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-    - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-  - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports $filter (eq operator only).
+    - `[D``````e``````scription <String>]`: Th``````e`````` d``````e``````scription for th``````e`````` unifi``````e``````dRol``````e``````D``````e``````finition. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````.
+    - `[DisplayNam``````e`````` <String>]`: Th``````e`````` display nam``````e`````` for th``````e`````` unifi``````e``````dRol``````e``````D``````e``````finition. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````. R``````e``````quir``````e``````d.  Supports $filt``````e``````r (``````e``````q and startsWith op``````e``````rators only).
+    - `[Inh``````e``````ritsP``````e``````rmissionsFrom <IMicrosoftGraphUnifi``````e``````dRol``````e``````D``````e``````finition1[]>]`: R``````e``````ad-only coll``````e``````ction of rol``````e`````` d``````e``````finitions that th``````e`````` giv``````e``````n rol``````e`````` d``````e``````finition inh``````e``````rits from. Only Azur``````e`````` AD built-in rol``````e``````s support this attribut``````e``````.
+    - `[IsBuiltIn <Bool``````e``````an?>]`: Flag indicating if th``````e`````` unifi``````e``````dRol``````e``````D``````e``````finition is part of th``````e`````` d``````e``````fault s``````e``````t includ``````e``````d with th``````e`````` product or custom. R``````e``````ad-only.  Supports $filt``````e``````r (``````e``````q op``````e``````rator only).
+    - `[Is``````e``````nabl``````e``````d <Bool``````e``````an?>]`: Flag indicating if th``````e`````` rol``````e`````` is ``````e``````nabl``````e``````d for assignm``````e``````nt. If fals``````e`````` th``````e`````` rol``````e`````` is not availabl``````e`````` for assignm``````e``````nt. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````.
+    - `[R``````e``````sourc``````e``````Scop``````e``````s <String[]>]`: List of scop``````e``````s p``````e``````rmissions grant``````e``````d by th``````e`````` rol``````e`````` d``````e``````finition apply to. Curr``````e``````ntly only / is support``````e``````d. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````. DO NOT US``````e``````. This will b``````e`````` d``````e``````pr``````e``````cat``````e``````d soon. Attach scop``````e`````` to rol``````e`````` assignm``````e``````nt
+    - `[Rol``````e``````P``````e``````rmissions <IMicrosoftGraphUnifi``````e``````dRol``````e``````P``````e``````rmission[]>]`: List of p``````e``````rmissions includ``````e``````d in th``````e`````` rol``````e``````. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````. R``````e``````quir``````e``````d.
+      - `[Allow``````e``````dR``````e``````sourc``````e``````Actions <String[]>]`: S``````e``````t of tasks that can b``````e`````` p``````e``````rform``````e``````d on a r``````e``````sourc``````e``````.
+      - `[Condition <String>]`: Optional constraints that must b``````e`````` m``````e``````t for th``````e`````` p``````e``````rmission to b``````e`````` ``````e``````ff``````e``````ctiv``````e``````.
+      - `[``````e``````xclud``````e``````dR``````e``````sourc``````e``````Actions <String[]>]`: S``````e``````t of tasks that may not b``````e`````` p``````e``````rform``````e``````d on a r``````e``````sourc``````e``````. Not y``````e``````t support``````e``````d.
+    - `[T``````e``````mplat``````e``````Id <String>]`: Custom t``````e``````mplat``````e`````` id``````e``````ntifi``````e``````r that can b``````e`````` s``````e``````t wh``````e``````n isBuiltIn is fals``````e``````. This id``````e``````ntifi``````e``````r is typically us``````e``````d if on``````e`````` n``````e````````````e``````ds an id``````e``````ntifi``````e``````r to b``````e`````` th``````e`````` sam``````e`````` across diff``````e``````r``````e``````nt dir``````e``````ctori``````e``````s. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````.
+    - `[V``````e``````rsion <String>]`: Indicat``````e``````s v``````e``````rsion of th``````e`````` unifi``````e``````dRol``````e``````D``````e``````finition. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````.
+  - `[Rol``````e``````D``````e``````finitionId <String>]`: Id``````e``````ntifi``````e``````r of th``````e`````` unifi``````e``````dRol``````e``````D``````e``````finition th``````e`````` assignm``````e``````nt is for. R``````e``````ad-only. Supports $filt``````e``````r (``````e``````q op``````e``````rator only).
 
-DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+DIR``````e``````CTORYSCOP``````e`````` <IMicrosoftGraphDir``````e``````ctoryObj``````e``````ct>: dir``````e``````ctoryObj``````e``````ct
+  - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
   - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+  - `[D``````e``````l``````e``````t``````e``````dDat``````e``````Tim``````e`````` <Dat``````e``````Tim``````e``````?>]`: Dat``````e`````` and tim``````e`````` wh``````e``````n this obj``````e``````ct was d``````e``````l``````e``````t``````e``````d. Always null wh``````e``````n th``````e`````` obj``````e``````ct hasn't b``````e````````````e``````n d``````e``````l``````e``````t``````e``````d.
 
-INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
-  - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
-  - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
-  - `[AppScopeId <String>]`: key: id of appScope
-  - `[AppleEnrollmentProfileAssignmentId <String>]`: key: id of appleEnrollmentProfileAssignment
-  - `[AppleUserInitiatedEnrollmentProfileId <String>]`: key: id of appleUserInitiatedEnrollmentProfile
-  - `[ApprovalId <String>]`: key: id of approval
-  - `[ApprovalStepId <String>]`: key: id of approvalStep
-  - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceManagementAutopilotEventId <String>]`: key: id of deviceManagementAutopilotEvent
-  - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: key: id of deviceManagementAutopilotPolicyStatusDetail
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
-  - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
-  - `[ImportedAppleDeviceIdentityId <String>]`: key: id of importedAppleDeviceIdentity
-  - `[ImportedDeviceIdentityId <String>]`: key: id of importedDeviceIdentity
-  - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: key: id of importedWindowsAutopilotDeviceIdentity
-  - `[On <String>]`: Usage: on='{on}'
-  - `[UnifiedRbacResourceActionId <String>]`: key: id of unifiedRbacResourceAction
-  - `[UnifiedRbacResourceNamespaceId <String>]`: key: id of unifiedRbacResourceNamespace
-  - `[UnifiedRoleAssignmentId <String>]`: key: id of unifiedRoleAssignment
-  - `[UnifiedRoleAssignmentMultipleId <String>]`: key: id of unifiedRoleAssignmentMultiple
-  - `[UnifiedRoleAssignmentScheduleId <String>]`: key: id of unifiedRoleAssignmentSchedule
-  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: key: id of unifiedRoleAssignmentScheduleInstance
-  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: key: id of unifiedRoleAssignmentScheduleRequest
-  - `[UnifiedRoleDefinitionId <String>]`: key: id of unifiedRoleDefinition
-  - `[UnifiedRoleDefinitionId1 <String>]`: key: id of unifiedRoleDefinition
-  - `[UnifiedRoleEligibilityScheduleId <String>]`: key: id of unifiedRoleEligibilitySchedule
-  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: key: id of unifiedRoleEligibilityScheduleInstance
-  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: key: id of unifiedRoleEligibilityScheduleRequest
-  - `[WindowsAutopilotDeploymentProfileAssignmentId <String>]`: key: id of windowsAutopilotDeploymentProfileAssignment
-  - `[WindowsAutopilotDeploymentProfileId <String>]`: key: id of windowsAutopilotDeploymentProfile
-  - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
-  - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
-  - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
+INPUTOBJ``````e``````CT <ID``````e``````vic``````e``````Manag``````e``````m``````e``````nt``````e``````nrolm``````e``````ntId``````e``````ntity>: Id``````e``````ntity Param``````e``````t``````e``````r
+  - `[AndroidD``````e``````vic``````e``````Own``````e``````r``````e``````nrollm``````e``````ntProfil``````e``````Id <String>]`: k``````e``````y: id of androidD``````e``````vic``````e``````Own``````e``````r``````e``````nrollm``````e``````ntProfil``````e``````
+  - `[AndroidForWork``````e``````nrollm``````e``````ntProfil``````e``````Id <String>]`: k``````e``````y: id of androidForWork``````e``````nrollm``````e``````ntProfil``````e``````
+  - `[AppScop``````e``````Id <String>]`: k``````e``````y: id of appScop``````e``````
+  - `[Appl``````e````````````e``````nrollm``````e``````ntProfil``````e``````Assignm``````e``````ntId <String>]`: k``````e``````y: id of appl``````e````````````e``````nrollm``````e``````ntProfil``````e``````Assignm``````e``````nt
+  - `[Appl``````e``````Us``````e``````rInitiat``````e``````d``````e``````nrollm``````e``````ntProfil``````e``````Id <String>]`: k``````e``````y: id of appl``````e``````Us``````e``````rInitiat``````e``````d``````e``````nrollm``````e``````ntProfil``````e``````
+  - `[ApprovalId <String>]`: k``````e``````y: id of approval
+  - `[ApprovalSt``````e``````pId <String>]`: k``````e``````y: id of approvalSt``````e``````p
+  - `[D``````e``````pOnboardingS``````e``````ttingId <String>]`: k``````e``````y: id of d``````e``````pOnboardingS``````e``````tting
+  - `[D``````e``````vic``````e````````````e``````nrollm``````e``````ntConfigurationId <String>]`: k``````e``````y: id of d``````e``````vic``````e````````````e``````nrollm``````e``````ntConfiguration
+  - `[D``````e``````vic``````e``````Manag``````e``````m``````e``````ntAutopilot``````e``````v``````e``````ntId <String>]`: k``````e``````y: id of d``````e``````vic``````e``````Manag``````e``````m``````e``````ntAutopilot``````e``````v``````e``````nt
+  - `[D``````e``````vic``````e``````Manag``````e``````m``````e``````ntAutopilotPolicyStatusD``````e``````tailId <String>]`: k``````e``````y: id of d``````e``````vic``````e``````Manag``````e``````m``````e``````ntAutopilotPolicyStatusD``````e``````tail
+  - `[Dir``````e``````ctoryObj``````e``````ctId <String>]`: k``````e``````y: id of dir``````e``````ctoryObj``````e``````ct
+  - `[``````e``````nrollm``````e``````ntConfigurationAssignm``````e``````ntId <String>]`: k``````e``````y: id of ``````e``````nrollm``````e``````ntConfigurationAssignm``````e``````nt
+  - `[``````e``````nrollm``````e``````ntProfil``````e``````Id <String>]`: k``````e``````y: id of ``````e``````nrollm``````e``````ntProfil``````e``````
+  - `[Import``````e``````dAppl``````e``````D``````e``````vic``````e``````Id``````e``````ntityId <String>]`: k``````e``````y: id of import``````e``````dAppl``````e``````D``````e``````vic``````e``````Id``````e``````ntity
+  - `[Import``````e``````dD``````e``````vic``````e``````Id``````e``````ntityId <String>]`: k``````e``````y: id of import``````e``````dD``````e``````vic``````e``````Id``````e``````ntity
+  - `[Import``````e``````dWindowsAutopilotD``````e``````vic``````e``````Id``````e``````ntityId <String>]`: k``````e``````y: id of import``````e``````dWindowsAutopilotD``````e``````vic``````e``````Id``````e``````ntity
+  - `[On <String>]`: Usag``````e``````: on='{on}'
+  - `[Unifi``````e``````dRbacR``````e``````sourc``````e``````ActionId <String>]`: k``````e``````y: id of unifi``````e``````dRbacR``````e``````sourc``````e``````Action
+  - `[Unifi``````e``````dRbacR``````e``````sourc``````e``````Nam``````e``````spac``````e``````Id <String>]`: k``````e``````y: id of unifi``````e``````dRbacR``````e``````sourc``````e``````Nam``````e``````spac``````e``````
+  - `[Unifi``````e``````dRol``````e``````Assignm``````e``````ntId <String>]`: k``````e``````y: id of unifi``````e``````dRol``````e``````Assignm``````e``````nt
+  - `[Unifi``````e``````dRol``````e``````Assignm``````e``````ntMultipl``````e``````Id <String>]`: k``````e``````y: id of unifi``````e``````dRol``````e``````Assignm``````e``````ntMultipl``````e``````
+  - `[Unifi``````e``````dRol``````e``````Assignm``````e``````ntSch``````e``````dul``````e``````Id <String>]`: k``````e``````y: id of unifi``````e``````dRol``````e``````Assignm``````e``````ntSch``````e``````dul``````e``````
+  - `[Unifi``````e``````dRol``````e``````Assignm``````e``````ntSch``````e``````dul``````e``````Instanc``````e``````Id <String>]`: k``````e``````y: id of unifi``````e``````dRol``````e``````Assignm``````e``````ntSch``````e``````dul``````e``````Instanc``````e``````
+  - `[Unifi``````e``````dRol``````e``````Assignm``````e``````ntSch``````e``````dul``````e``````R``````e``````qu``````e``````stId <String>]`: k``````e``````y: id of unifi``````e``````dRol``````e``````Assignm``````e``````ntSch``````e``````dul``````e``````R``````e``````qu``````e``````st
+  - `[Unifi``````e``````dRol``````e``````D``````e``````finitionId <String>]`: k``````e``````y: id of unifi``````e``````dRol``````e``````D``````e``````finition
+  - `[Unifi``````e``````dRol``````e``````D``````e``````finitionId1 <String>]`: k``````e``````y: id of unifi``````e``````dRol``````e``````D``````e``````finition
+  - `[Unifi``````e``````dRol``````e````````````e``````ligibilitySch``````e``````dul``````e``````Id <String>]`: k``````e``````y: id of unifi``````e``````dRol``````e````````````e``````ligibilitySch``````e``````dul``````e``````
+  - `[Unifi``````e``````dRol``````e````````````e``````ligibilitySch``````e``````dul``````e``````Instanc``````e``````Id <String>]`: k``````e``````y: id of unifi``````e``````dRol``````e````````````e``````ligibilitySch``````e``````dul``````e``````Instanc``````e``````
+  - `[Unifi``````e``````dRol``````e````````````e``````ligibilitySch``````e``````dul``````e``````R``````e``````qu``````e``````stId <String>]`: k``````e``````y: id of unifi``````e``````dRol``````e````````````e``````ligibilitySch``````e``````dul``````e``````R``````e``````qu``````e``````st
+  - `[WindowsAutopilotD``````e``````ploym``````e``````ntProfil``````e``````Assignm``````e``````ntId <String>]`: k``````e``````y: id of windowsAutopilotD``````e``````ploym``````e``````ntProfil``````e``````Assignm``````e``````nt
+  - `[WindowsAutopilotD``````e``````ploym``````e``````ntProfil``````e``````Id <String>]`: k``````e``````y: id of windowsAutopilotD``````e``````ploym``````e``````ntProfil``````e``````
+  - `[WindowsAutopilotD``````e``````vic``````e``````Id``````e``````ntityId <String>]`: k``````e``````y: id of windowsAutopilotD``````e``````vic``````e``````Id``````e``````ntity
+  - `[WindowsF``````e``````atur``````e``````Updat``````e``````Profil``````e``````Assignm``````e``````ntId <String>]`: k``````e``````y: id of windowsF``````e``````atur``````e``````Updat``````e``````Profil``````e``````Assignm``````e``````nt
+  - `[WindowsF``````e``````atur``````e``````Updat``````e``````Profil``````e``````Id <String>]`: k``````e``````y: id of windowsF``````e``````atur``````e``````Updat``````e``````Profil``````e``````
 
-PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+PRINCIPAL <IMicrosoftGraphDir``````e``````ctoryObj``````e``````ct>: dir``````e``````ctoryObj``````e``````ct
+  - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
   - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+  - `[D``````e``````l``````e``````t``````e``````dDat``````e``````Tim``````e`````` <Dat``````e``````Tim``````e``````?>]`: Dat``````e`````` and tim``````e`````` wh``````e``````n this obj``````e``````ct was d``````e``````l``````e``````t``````e``````d. Always null wh``````e``````n th``````e`````` obj``````e``````ct hasn't b``````e````````````e``````n d``````e``````l``````e``````t``````e``````d.
 
-ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition1>: unifiedRoleDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+ROL``````e``````D``````e``````FINITION <IMicrosoftGraphUnifi``````e``````dRol``````e``````D``````e``````finition1>: unifi``````e``````dRol``````e``````D``````e``````finition
+  - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
   - `[Id <String>]`: 
-  - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
-  - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition1[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-  - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
-  - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-  - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
-  - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-    - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
-    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-    - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
-  - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-  - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+  - `[D``````e``````scription <String>]`: Th``````e`````` d``````e``````scription for th``````e`````` unifi``````e``````dRol``````e``````D``````e``````finition. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````.
+  - `[DisplayNam``````e`````` <String>]`: Th``````e`````` display nam``````e`````` for th``````e`````` unifi``````e``````dRol``````e``````D``````e``````finition. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````. R``````e``````quir``````e``````d.  Supports $filt``````e``````r (``````e``````q and startsWith op``````e``````rators only).
+  - `[Inh``````e``````ritsP``````e``````rmissionsFrom <IMicrosoftGraphUnifi``````e``````dRol``````e``````D``````e``````finition1[]>]`: R``````e``````ad-only coll``````e``````ction of rol``````e`````` d``````e``````finitions that th``````e`````` giv``````e``````n rol``````e`````` d``````e``````finition inh``````e``````rits from. Only Azur``````e`````` AD built-in rol``````e``````s support this attribut``````e``````.
+  - `[IsBuiltIn <Bool``````e``````an?>]`: Flag indicating if th``````e`````` unifi``````e``````dRol``````e``````D``````e``````finition is part of th``````e`````` d``````e``````fault s``````e``````t includ``````e``````d with th``````e`````` product or custom. R``````e``````ad-only.  Supports $filt``````e``````r (``````e``````q op``````e``````rator only).
+  - `[Is``````e``````nabl``````e``````d <Bool``````e``````an?>]`: Flag indicating if th``````e`````` rol``````e`````` is ``````e``````nabl``````e``````d for assignm``````e``````nt. If fals``````e`````` th``````e`````` rol``````e`````` is not availabl``````e`````` for assignm``````e``````nt. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````.
+  - `[R``````e``````sourc``````e``````Scop``````e``````s <String[]>]`: List of scop``````e``````s p``````e``````rmissions grant``````e``````d by th``````e`````` rol``````e`````` d``````e``````finition apply to. Curr``````e``````ntly only / is support``````e``````d. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````. DO NOT US``````e``````. This will b``````e`````` d``````e``````pr``````e``````cat``````e``````d soon. Attach scop``````e`````` to rol``````e`````` assignm``````e``````nt
+  - `[Rol``````e``````P``````e``````rmissions <IMicrosoftGraphUnifi``````e``````dRol``````e``````P``````e``````rmission[]>]`: List of p``````e``````rmissions includ``````e``````d in th``````e`````` rol``````e``````. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````. R``````e``````quir``````e``````d.
+    - `[Allow``````e``````dR``````e``````sourc``````e``````Actions <String[]>]`: S``````e``````t of tasks that can b``````e`````` p``````e``````rform``````e``````d on a r``````e``````sourc``````e``````.
+    - `[Condition <String>]`: Optional constraints that must b``````e`````` m``````e``````t for th``````e`````` p``````e``````rmission to b``````e`````` ``````e``````ff``````e``````ctiv``````e``````.
+    - `[``````e``````xclud``````e``````dR``````e``````sourc``````e``````Actions <String[]>]`: S``````e``````t of tasks that may not b``````e`````` p``````e``````rform``````e``````d on a r``````e``````sourc``````e``````. Not y``````e``````t support``````e``````d.
+  - `[T``````e``````mplat``````e``````Id <String>]`: Custom t``````e``````mplat``````e`````` id``````e``````ntifi``````e``````r that can b``````e`````` s``````e``````t wh``````e``````n isBuiltIn is fals``````e``````. This id``````e``````ntifi``````e``````r is typically us``````e``````d if on``````e`````` n``````e````````````e``````ds an id``````e``````ntifi``````e``````r to b``````e`````` th``````e`````` sam``````e`````` across diff``````e``````r``````e``````nt dir``````e``````ctori``````e``````s. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````.
+  - `[V``````e``````rsion <String>]`: Indicat``````e``````s v``````e``````rsion of th``````e`````` unifi``````e``````dRol``````e``````D``````e``````finition. R``````e``````ad-only wh``````e``````n isBuiltIn is tru``````e``````.
 
-## RELATED LINKS
+## R``````e``````LAT``````e``````D LINKS
 
-## RELATED LINKS
+## R``````e``````LAT``````e``````D LINKS
