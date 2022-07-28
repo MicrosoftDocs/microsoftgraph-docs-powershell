@@ -1,283 +1,283 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitscopedrolemember
+---
+external help file: Microsoft.Graph.I```d```entity.```d```irectoryManagement-help.xml
+Mo```d```ule Name: Microsoft.Graph.I```d```entity.```d```irectoryManagement
+online version: https://```d```ocs.microsoft.com/en-us/powershell/mo```d```ule/microsoft.graph.i```d```entity.```d```irectorymanagement/new-mg```d```irectorya```d```ministrativeunitscope```d```rolemember
 schema: 2.0.0
 ---
 
-# New-MgDirectoryAdministrativeUnitScopedRoleMember
+# New-Mg```d```irectoryA```d```ministrativeUnitScope```d```RoleMember
 
 ## SYNOPSIS
-Create new navigation property to scopedRoleMembers for directory
+Create new navigation property to scope```d```RoleMembers for ```d```irectory
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpan```d```e```d```1 (```d```efault)
 ```
-New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String>
- [-AdditionalProperties <Hashtable>] [-AdministrativeUnitId1 <String>] [-Id <String>] [-RoleId <String>]
- [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-Mg```d```irectoryA```d```ministrativeUnitScope```d```RoleMember -A```d```ministrativeUnitI```d``` <String>
+ [-A```d``````d```itionalProperties <Hashtable>] [-A```d```ministrativeUnitI```d```1 <String>] [-I```d``` <String>] [-RoleI```d``` <String>]
+ [-RoleMemberInfo <IMicrosoftGraphI```d```entity>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaI```d```entityExpan```d```e```d```1
 ```
-New-MgDirectoryAdministrativeUnitScopedRoleMember [-AdministrativeUnitId <String>]
- -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RoleId <String>] [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-Mg```d```irectoryA```d```ministrativeUnitScope```d```RoleMember [-A```d```ministrativeUnitI```d``` <String>]
+ -InputObject <II```d```entity```d```irectoryManagementI```d```entity> [-A```d``````d```itionalProperties <Hashtable>] [-I```d``` <String>]
+ [-RoleI```d``` <String>] [-RoleMemberInfo <IMicrosoftGraphI```d```entity>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String>
- -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-Mg```d```irectoryA```d```ministrativeUnitScope```d```RoleMember -A```d```ministrativeUnitI```d``` <String>
+ -Bo```d```yParameter <IMicrosoftGraphScope```d```RoleMembership> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaI```d```entity1
 ```
-New-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-Mg```d```irectoryA```d```ministrativeUnitScope```d```RoleMember -InputObject <II```d```entity```d```irectoryManagementI```d```entity>
+ -Bo```d```yParameter <IMicrosoftGraphScope```d```RoleMembership> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to scopedRoleMembers for directory
+## ```d```ESCRIPTION
+Create new navigation property to scope```d```RoleMembers for ```d```irectory
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A```d``````d```itionalProperties
+A```d``````d```itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan```d```e```d```1, CreateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -AdministrativeUnitId
-key: id of administrativeUnit
+### -A```d```ministrativeUnitI```d```
+key: i```d``` of a```d```ministrativeUnit
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpan```d```e```d```1, Create1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ```yaml
 Type: String
-Parameter Sets: CreateViaIdentityExpanded1
+Parameter Sets: CreateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -AdministrativeUnitId1
-Unique identifier for the administrative unit that the directory role is scoped to
+### -A```d```ministrativeUnitI```d```1
+Unique i```d```entifier for the a```d```ministrative unit that the ```d```irectory role is scope```d``` to
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -BodyParameter
-scopedRoleMembership
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo```d```yParameter
+scope```d```RoleMembership
+To construct, please use Get-Help -Online an```d``` see NOTES section for BO```d```YPARAMETER properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphScopedRoleMembership
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IMicrosoftGraphScope```d```RoleMembership
+Parameter Sets: Create1, CreateViaI```d```entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -Id
+### -I```d```
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan```d```e```d```1, CreateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I```d```entity Parameter
+To construct, please use Get-Help -Online an```d``` see NOTES section for INPUTOBJECT properties an```d``` create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: II```d```entity```d```irectoryManagementI```d```entity
+Parameter Sets: CreateViaI```d```entityExpan```d```e```d```1, CreateViaI```d```entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -RoleId
-Unique identifier for the directory role that the member is in.
+### -RoleI```d```
+Unique i```d```entifier for the ```d```irectory role that the member is in.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan```d```e```d```1, CreateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -RoleMemberInfo
-identity
-To construct, please use Get-Help -Online and see NOTES section for ROLEMEMBERINFO properties and create a hash table.
+i```d```entity
+To construct, please use Get-Help -Online an```d``` see NOTES section for ROLEMEMBERINFO properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentity
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphI```d```entity
+Parameter Sets: CreateExpan```d```e```d```1, CreateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm```d```let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul```d``` happen if the cm```d```let runs.
+The cm```d```let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm```d```let supports the common parameters: -```d```ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an```d``` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI```d```=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
+### Microsoft.Graph.PowerShell.Mo```d```els.II```d```entity```d```irectoryManagementI```d```entity
+### Microsoft.Graph.PowerShell.Mo```d```els.IMicrosoftGraphScope```d```RoleMembership
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
+### Microsoft.Graph.PowerShell.Mo```d```els.IMicrosoftGraphScope```d```RoleMembership
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ```d```escribe```d``` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphScopedRoleMembership>: scopedRoleMembership
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-  - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-  - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+BO```d```YPARAMETER <IMicrosoftGraphScope```d```RoleMembership>: scope```d```RoleMembership
+  - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+  - `[I```d``` <String>]`: 
+  - `[A```d```ministrativeUnitI```d``` <String>]`: Unique i```d```entifier for the a```d```ministrative unit that the ```d```irectory role is scope```d``` to
+  - `[RoleI```d``` <String>]`: Unique i```d```entifier for the ```d```irectory role that the member is in.
+  - `[RoleMemberInfo <IMicrosoftGraphI```d```entity>]`: i```d```entity
+    - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+    - `[```d```isplayName <String>]`: The i```d```entity's ```d```isplay name. Note that this may not always be available or up to ```d```ate. For example, if a user changes their ```d```isplay name, the API may show the new value in a future response, but the items associate```d``` with the user won't show up as having change```d``` when using ```d```elta.
+    - `[I```d``` <String>]`: Unique i```d```entifier for the i```d```entity.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
-  - `[AllowedValueId <String>]`: key: id of allowedValue
-  - `[AttributeSetId <String>]`: key: id of attributeSet
-  - `[CommandId <String>]`: key: id of command
-  - `[ContractId <String>]`: key: id of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: key: id of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: key: id of device
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[DirectoryRoleId <String>]`: key: id of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: key: id of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: key: id of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: key: id of directorySettingTemplate
-  - `[DomainDnsRecordId <String>]`: key: id of domainDnsRecord
-  - `[DomainId <String>]`: key: id of domain
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
-  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
-  - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
-  - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
-  - `[OrgContactId <String>]`: key: id of orgContact
-  - `[OrganizationId <String>]`: key: id of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
-  - `[RecommendationId <String>]`: key: id of recommendation
-  - `[RecommendationResourceId <String>]`: key: id of recommendationResource
-  - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
-  - `[SubscribedSkuId <String>]`: key: id of subscribedSku
-  - `[TenantReferenceTenantId <String>]`: key: tenantId of tenantReference
-  - `[UsageRightId <String>]`: key: id of usageRight
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <II```d```entity```d```irectoryManagementI```d```entity>: I```d```entity Parameter
+  - `[A```d```ministrativeUnitI```d``` <String>]`: key: i```d``` of a```d```ministrativeUnit
+  - `[Allowe```d```ValueI```d``` <String>]`: key: i```d``` of allowe```d```Value
+  - `[AttributeSetI```d``` <String>]`: key: i```d``` of attributeSet
+  - `[Comman```d```I```d``` <String>]`: key: i```d``` of comman```d```
+  - `[ContractI```d``` <String>]`: key: i```d``` of contract
+  - `[CustomSecurityAttribute```d```efinitionI```d``` <String>]`: key: i```d``` of customSecurityAttribute```d```efinition
+  - `[```d```eviceI```d``` <String>]`: key: i```d``` of ```d```evice
+  - `[```d```irectoryObjectI```d``` <String>]`: key: i```d``` of ```d```irectoryObject
+  - `[```d```irectoryRoleI```d``` <String>]`: key: i```d``` of ```d```irectoryRole
+  - `[```d```irectoryRoleTemplateI```d``` <String>]`: key: i```d``` of ```d```irectoryRoleTemplate
+  - `[```d```irectorySettingI```d``` <String>]`: key: i```d``` of ```d```irectorySetting
+  - `[```d```irectorySettingTemplateI```d``` <String>]`: key: i```d``` of ```d```irectorySettingTemplate
+  - `[```d```omain```d```nsRecor```d```I```d``` <String>]`: key: i```d``` of ```d```omain```d```nsRecor```d```
+  - `[```d```omainI```d``` <String>]`: key: i```d``` of ```d```omain
+  - `[ExtensionI```d``` <String>]`: key: i```d``` of extension
+  - `[FeatureRolloutPolicyI```d``` <String>]`: key: i```d``` of featureRolloutPolicy
+  - `[I```d```entityProvi```d```erBaseI```d``` <String>]`: key: i```d``` of i```d```entityProvi```d```erBase
+  - `[Inboun```d```Share```d```UserProfileUserI```d``` <String>]`: key: userI```d``` of inboun```d```Share```d```UserProfile
+  - `[Internal```d```omainFe```d```erationI```d``` <String>]`: key: i```d``` of internal```d```omainFe```d```eration
+  - `[OrgContactI```d``` <String>]`: key: i```d``` of orgContact
+  - `[OrganizationI```d``` <String>]`: key: i```d``` of organization
+  - `[OrganizationalBran```d```ingLocalizationI```d``` <String>]`: key: i```d``` of organizationalBran```d```ingLocalization
+  - `[Outboun```d```Share```d```UserProfileUserI```d``` <String>]`: key: userI```d``` of outboun```d```Share```d```UserProfile
+  - `[ProfileCar```d```PropertyI```d``` <String>]`: key: i```d``` of profileCar```d```Property
+  - `[Recommen```d```ationI```d``` <String>]`: key: i```d``` of recommen```d```ation
+  - `[Recommen```d```ationResourceI```d``` <String>]`: key: i```d``` of recommen```d```ationResource
+  - `[Scope```d```RoleMembershipI```d``` <String>]`: key: i```d``` of scope```d```RoleMembership
+  - `[Share```d```Email```d```omainI```d``` <String>]`: key: i```d``` of share```d```Email```d```omain
+  - `[Share```d```Email```d```omainInvitationI```d``` <String>]`: key: i```d``` of share```d```Email```d```omainInvitation
+  - `[Subscribe```d```SkuI```d``` <String>]`: key: i```d``` of subscribe```d```Sku
+  - `[TenantReferenceTenantI```d``` <String>]`: key: tenantI```d``` of tenantReference
+  - `[UsageRightI```d``` <String>]`: key: i```d``` of usageRight
+  - `[UserI```d``` <String>]`: key: i```d``` of user
 
-ROLEMEMBERINFO <IMicrosoftGraphIdentity>: identity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
+ROLEMEMBERINFO <IMicrosoftGraphI```d```entity>: i```d```entity
+  - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+  - `[```d```isplayName <String>]`: The i```d```entity's ```d```isplay name. Note that this may not always be available or up to ```d```ate. For example, if a user changes their ```d```isplay name, the API may show the new value in a future response, but the items associate```d``` with the user won't show up as having change```d``` when using ```d```elta.
+  - `[I```d``` <String>]`: Unique i```d```entifier for the i```d```entity.
 
-## RELATED LINKS
+## RELATE```d``` LINKS
