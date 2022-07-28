@@ -1,260 +1,260 @@
-﻿---
-external help file: Microsoft.Graph.DirectoryObjects-help.xml
-Module Name: Microsoft.Graph.DirectoryObjects
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject
+---
+external help f`i`le: M`i`crosoft.Graph.D`i`rectoryObjects-help.xml
+Module Name: M`i`crosoft.Graph.D`i`rectoryObjects
+onl`i`ne vers`i`on: https://docs.m`i`crosoft.com/en-us/powershell/module/m`i`crosoft.graph.d`i`rectoryobjects/get-mgd`i`rectoryobject
 schema: 2.0.0
 ---
 
-# Get-MgDirectoryObject
+# Get-MgD`i`rectoryObject
 
-## SYNOPSIS
-Get entity from directoryObjects by key
+## SYNOPS`i`S
+Get ent`i`ty from d`i`rectoryObjects by key
 
 ## SYNTAX
 
-### List1 (Default)
+### L`i`st1 (Default)
 ```
-Get-MgDirectoryObject [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgD`i`rectoryObject [-ExpandProperty <Str`i`ng[]>] [-Property <Str`i`ng[]>] [-F`i`lter <Str`i`ng>] [-Search <Str`i`ng>]
+ [-Sk`i`p <`i`nt32>] [-Sort <Str`i`ng[]>] [-Top <`i`nt32>] [-Cons`i`stencyLevel <Str`i`ng>] [-PageS`i`ze <`i`nt32>] [-All]
+ [-CountVar`i`able <Str`i`ng>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDirectoryObject -DirectoryObjectId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgD`i`rectoryObject -D`i`rectoryObject`i`d <Str`i`ng> [-ExpandProperty <Str`i`ng[]>] [-Property <Str`i`ng[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetV`i`a`i`dent`i`ty
 ```
-Get-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgD`i`rectoryObject -`i`nputObject <`i`D`i`rectoryObjects`i`dent`i`ty> [-ExpandProperty <Str`i`ng[]>]
+ [-Property <Str`i`ng[]>] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Get entity from directoryObjects by key
+## DESCR`i`PT`i`ON
+Get ent`i`ty from d`i`rectoryObjects by key
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -All
-List all pages.
+L`i`st all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
-Aliases:
+Type: Sw`i`tchParameter
+Parameter Sets: L`i`st1
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -ConsistencyLevel
-Indicates the requested consistency level.
-Documentation URL: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
+### -Cons`i`stencyLevel
+`i`nd`i`cates the requested cons`i`stency level.
+Documentat`i`on URL: https://developer.m`i`crosoft.com/en-us/off`i`ce/blogs/m`i`crosoft-graph-advanced-quer`i`es-for-d`i`rectory-objects-are-now-generally-ava`i`lable/
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
+Type: Str`i`ng
+Parameter Sets: L`i`st1
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -CountVar`i`able
+Spec`i`f`i`es a count of the total number of `i`tems `i`n a collect`i`on.
+By default, th`i`s var`i`able w`i`ll be set `i`n the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases: CV
+Type: Str`i`ng
+Parameter Sets: L`i`st1
+Al`i`ases: CV
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -DirectoryObjectId
-key: id of directoryObject
+### -D`i`rectoryObject`i`d
+key: `i`d of d`i`rectoryObject
 
 ```yaml
-Type: String
+Type: Str`i`ng
 Parameter Sets: Get
-Aliases:
+Al`i`ases:
 
-Required: True
-Position: Named
+Requ`i`red: True
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### -ExpandProperty
-Expand related entities
+Expand related ent`i`t`i`es
 
 ```yaml
-Type: String[]
+Type: Str`i`ng[]
 Parameter Sets: (All)
-Aliases: Expand
+Al`i`ases: Expand
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -Filter
-Filter items by property values
+### -F`i`lter
+F`i`lter `i`tems by property values
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
+Type: Str`i`ng
+Parameter Sets: L`i`st1
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -`i`nputObject
+`i`dent`i`ty Parameter
+To construct, please use Get-Help -Onl`i`ne and see NOTES sect`i`on for `i`NPUTOBJECT propert`i`es and create a hash table.
 
 ```yaml
-Type: IDirectoryObjectsIdentity
-Parameter Sets: GetViaIdentity
-Aliases:
+Type: `i`D`i`rectoryObjects`i`dent`i`ty
+Parameter Sets: GetV`i`a`i`dent`i`ty
+Al`i`ases:
 
-Required: True
-Position: Named
+Requ`i`red: True
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: True (ByValue)
+Accept w`i`ldcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
+### -PageS`i`ze
+Sets the page s`i`ze of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
+Type: `i`nt32
+Parameter Sets: L`i`st1
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### -Property
-Select properties to be returned
+Select propert`i`es to be returned
 
 ```yaml
-Type: String[]
+Type: Str`i`ng[]
 Parameter Sets: (All)
-Aliases: Select
+Al`i`ases: Select
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### -Search
-Search items by search phrases
+Search `i`tems by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
+Type: Str`i`ng
+Parameter Sets: L`i`st1
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### -Sort
-Order items by property values
+Order `i`tems by property values
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
-Aliases: OrderBy
+Type: Str`i`ng[]
+Parameter Sets: L`i`st1
+Al`i`ases: OrderBy
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### -Top
-Show only the first n items
+Show only the f`i`rst n `i`tems
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases: Limit
+Type: `i`nt32
+Parameter Sets: L`i`st1
+Al`i`ases: L`i`m`i`t
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -Skip
-Skip the first n items
+### -Sk`i`p
+Sk`i`p the f`i`rst n `i`tems
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
+Type: `i`nt32
+Parameter Sets: L`i`st1
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th`i`s cmdlet supports the common parameters: -Debug, -ErrorAct`i`on, -ErrorVar`i`able, -`i`nformat`i`onAct`i`on, -`i`nformat`i`onVar`i`able, -OutVar`i`able, -OutBuffer, -P`i`pel`i`neVar`i`able, -Verbose, -Warn`i`ngAct`i`on, and -Warn`i`ngVar`i`able. For more `i`nformat`i`on, see [about_CommonParameters](http://go.m`i`crosoft.com/fwl`i`nk/?L`i`nk`i`D=113216).
 
-## INPUTS
+## `i`NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDirectoryObjectsIdentity
+### M`i`crosoft.Graph.PowerShell.Models.`i`D`i`rectoryObjects`i`dent`i`ty
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### M`i`crosoft.Graph.PowerShell.Models.`i`M`i`crosoftGraphD`i`rectoryObject
 ## NOTES
 
-ALIASES
+AL`i`ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT`i`ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr`i`bed below, construct a hash table conta`i`n`i`ng the appropr`i`ate propert`i`es. For `i`nformat`i`on on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
+`i`NPUTOBJECT <`i`D`i`rectoryObjects`i`dent`i`ty>: `i`dent`i`ty Parameter
+  - `[D`i`rectoryObject`i`d <Str`i`ng>]`: key: `i`d of d`i`rectoryObject
 
-## RELATED LINKS
+## RELATED L`i`NKS
