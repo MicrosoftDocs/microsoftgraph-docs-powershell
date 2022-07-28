@@ -1,70 +1,70 @@
-﻿---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/revoke-mgusersign
-schema: 2.0.0
+---
+external help file: Micro`s`oft.Graph.U`s`er`s`.Action`s`-help.xml
+Module Name: Micro`s`oft.Graph.U`s`er`s`.Action`s`
+online ver`s`ion: http`s`://doc`s`.micro`s`oft.com/en-u`s`/power`s`hell/module/micro`s`oft.graph.u`s`er`s`.action`s`/revoke-mgu`s`er`s`ign
+`s`chema: 2.0.0
 ---
 
-# Revoke-MgUserSign
+# Revoke-MgU`s`er`s`ign
 
-## SYNOPSIS
-Invoke action revokeSignInSessions
+## `s`YNOP`s`I`s`
+Invoke action revoke`s`ignIn`s`e`s``s`ion`s`
 
-## SYNTAX
+## `s`YNTAX
 
-## DESCRIPTION
-Invoke action revokeSignInSessions
+## DE`s`CRIPTION
+Invoke action revoke`s`ignIn`s`e`s``s`ion`s`
 
-## EXAMPLES
+## EXAMPLE`s`
 
-## PARAMETERS
+## PARAMETER`s`
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter`s`
+Thi`s` cmdlet `s`upport`s` the common parameter`s`: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo`s`e, -WarningAction, and -WarningVariable. For more information, `s`ee [about_CommonParameter`s`](http://go.micro`s`oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT`s`
 
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-## OUTPUTS
+### Micro`s`oft.Graph.Power`s`hell.Model`s`.IU`s`er`s`Action`s`Identity
+## OUTPUT`s`
 
-### System.Boolean
-## NOTES
+### `s`y`s`tem.Boolean
+## NOTE`s`
 
-ALIASES
+ALIA`s`E`s`
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE`s`
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter`s` de`s`cribed below, con`s`truct a ha`s`h table containing the appropriate propertie`s`. For information on ha`s`h table`s`, run Get-Help about_Ha`s`h_Table`s`.
 
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
-  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
-  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
-  - `[BaseTaskId <String>]`: key: id of baseTask
-  - `[BaseTaskListId <String>]`: key: id of baseTaskList
-  - `[CalendarId <String>]`: key: id of calendar
-  - `[CloudPcId <String>]`: key: id of cloudPC
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[EventId <String>]`: key: id of event
-  - `[EventId1 <String>]`: key: id of event
-  - `[MailFolderId <String>]`: key: id of mailFolder
-  - `[MailFolderId1 <String>]`: key: id of mailFolder
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[MessageId <String>]`: key: id of message
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[SharedInsightId <String>]`: key: id of sharedInsight
-  - `[TrendingId <String>]`: key: id of trending
-  - `[UsedInsightId <String>]`: key: id of usedInsight
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IU`s`er`s`Action`s`Identity>: Identity Parameter
+  - `[Acce`s``s`ReviewIn`s`tanceDeci`s`ionItemId <`s`tring>]`: key: id of acce`s``s`ReviewIn`s`tanceDeci`s`ionItem
+  - `[Acce`s``s`ReviewIn`s`tanceId <`s`tring>]`: key: id of acce`s``s`ReviewIn`s`tance
+  - `[Acce`s``s`Review`s`tageId <`s`tring>]`: key: id of acce`s``s`Review`s`tage
+  - `[AppLogCollectionReque`s`tId <`s`tring>]`: key: id of appLogCollectionReque`s`t
+  - `[AuthenticationMethodId <`s`tring>]`: key: id of authenticationMethod
+  - `[Ba`s`eTa`s`kId <`s`tring>]`: key: id of ba`s`eTa`s`k
+  - `[Ba`s`eTa`s`kLi`s`tId <`s`tring>]`: key: id of ba`s`eTa`s`kLi`s`t
+  - `[CalendarId <`s`tring>]`: key: id of calendar
+  - `[CloudPcId <`s`tring>]`: key: id of cloudPC
+  - `[DeviceEnrollmentConfigurationId <`s`tring>]`: key: id of deviceEnrollmentConfiguration
+  - `[DeviceLogCollectionRe`s`pon`s`eId <`s`tring>]`: key: id of deviceLogCollectionRe`s`pon`s`e
+  - `[EventId <`s`tring>]`: key: id of event
+  - `[EventId1 <`s`tring>]`: key: id of event
+  - `[MailFolderId <`s`tring>]`: key: id of mailFolder
+  - `[MailFolderId1 <`s`tring>]`: key: id of mailFolder
+  - `[ManagedDeviceId <`s`tring>]`: key: id of managedDevice
+  - `[Me`s``s`ageId <`s`tring>]`: key: id of me`s``s`age
+  - `[MobileAppTrouble`s`hootingEventId <`s`tring>]`: key: id of mobileAppTrouble`s`hootingEvent
+  - `[NotebookId <`s`tring>]`: key: id of notebook
+  - `[OnenotePageId <`s`tring>]`: key: id of onenotePage
+  - `[Onenote`s`ectionId <`s`tring>]`: key: id of onenote`s`ection
+  - `[OutlookTa`s`kFolderId <`s`tring>]`: key: id of outlookTa`s`kFolder
+  - `[OutlookTa`s`kGroupId <`s`tring>]`: key: id of outlookTa`s`kGroup
+  - `[OutlookTa`s`kId <`s`tring>]`: key: id of outlookTa`s`k
+  - `[`s`haredIn`s`ightId <`s`tring>]`: key: id of `s`haredIn`s`ight
+  - `[TrendingId <`s`tring>]`: key: id of trending
+  - `[U`s`edIn`s`ightId <`s`tring>]`: key: id of u`s`edIn`s`ight
+  - `[U`s`erId <`s`tring>]`: key: id of u`s`er
 
-## RELATED LINKS
+## RELATED LINK`s`
