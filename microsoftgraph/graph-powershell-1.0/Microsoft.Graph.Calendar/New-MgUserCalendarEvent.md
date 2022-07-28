@@ -1,1579 +1,1579 @@
-﻿---
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent
-schema: 2.0.0
+---
+extern``````````````````a``````````````````l help file: Microsoft.Gr``````````````````a``````````````````ph.C``````````````````a``````````````````lend``````````````````a``````````````````r-help.xml
+Module N``````````````````a``````````````````me: Microsoft.Gr``````````````````a``````````````````ph.C``````````````````a``````````````````lend``````````````````a``````````````````r
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.gr``````````````````a``````````````````ph.c``````````````````a``````````````````lend``````````````````a``````````````````r/new-mguserc``````````````````a``````````````````lend``````````````````a``````````````````revent
+schem``````````````````a``````````````````: 2.0.0
 ---
 
-# New-MgUserCalendarEvent
+# New-MgUserC``````````````````a``````````````````lend``````````````````a``````````````````rEvent
 
 ## SYNOPSIS
-The events in the calendar.
-Navigation property.
-Read-only.
+The events in the c``````````````````a``````````````````lend``````````````````a``````````````````r.
+N``````````````````a``````````````````vig``````````````````a``````````````````tion property.
+Re``````````````````a``````````````````d-only.
 
-## SYNTAX
+## SYNT``````````````````a``````````````````X
 
-### CreateExpanded1 (Default)
+### Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1 (Def``````````````````a``````````````````ult)
 ```
-New-MgUserCalendarEvent -CalendarId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
- [-Categories <String[]>] [-ChangeKey <String>] [-CreatedDateTime <DateTime>]
- [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
- [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
- [-Instances <IMicrosoftGraphEvent1[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
- [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
- [-Locations <IMicrosoftGraphLocation[]>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
- [-OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>] [-OnlineMeetingProvider <String>]
- [-OnlineMeetingUrl <String>] [-Organizer <IMicrosoftGraphRecipient>] [-OriginalEndTimeZone <String>]
- [-OriginalStart <DateTime>] [-OriginalStartTimeZone <String>]
- [-Recurrence <IMicrosoftGraphPatternedRecurrence>] [-ReminderMinutesBeforeStart <Int32>] [-ResponseRequested]
- [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
- [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-WebLink <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgUserCalendarEvent -CalendarId <String> -UserId <String> -BodyParameter <IMicrosoftGraphEvent1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserC``````````````````a``````````````````lend``````````````````a``````````````````rEvent -C``````````````````a``````````````````lend``````````````````a``````````````````rId <String> -UserId <String> [-``````````````````a``````````````````ddition``````````````````a``````````````````lProperties <H``````````````````a``````````````````sht``````````````````a``````````````````ble>]
+ [-``````````````````a``````````````````llowNewTimePropos``````````````````a``````````````````ls] [-``````````````````a``````````````````tt``````````````````a``````````````````chments <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````tt``````````````````a``````````````````chment[]>] [-``````````````````a``````````````````ttendees <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````ttendee[]>]
+ [-Body <IMicrosoftGr``````````````````a``````````````````phItemBody>] [-BodyPreview <String>] [-C``````````````````a``````````````````lend``````````````````a``````````````````r <IMicrosoftGr``````````````````a``````````````````phC``````````````````a``````````````````lend``````````````````a``````````````````r>]
+ [-C``````````````````a``````````````````tegories <String[]>] [-Ch``````````````````a``````````````````ngeKey <String>] [-Cre``````````````````a``````````````````tedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime>]
+ [-End <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>] [-Extensions <IMicrosoftGr``````````````````a``````````````````phExtension[]>] [-H``````````````````a``````````````````s``````````````````a``````````````````tt``````````````````a``````````````````chments]
+ [-Hide``````````````````a``````````````````ttendees] [-IC``````````````````a``````````````````lUId <String>] [-Id <String>] [-Import``````````````````a``````````````````nce <String>]
+ [-Inst``````````````````a``````````````````nces <IMicrosoftGr``````````````````a``````````````````phEvent1[]>] [-Is``````````````````a``````````````````llD``````````````````a``````````````````y] [-IsC``````````````````a``````````````````ncelled] [-IsDr``````````````````a``````````````````ft] [-IsOnlineMeeting] [-IsOrg``````````````````a``````````````````nizer]
+ [-IsReminderOn] [-L``````````````````a``````````````````stModifiedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime>] [-Loc``````````````````a``````````````````tion <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion>]
+ [-Loc``````````````````a``````````````````tions <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion[]>]
+ [-MultiV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phMultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]
+ [-OnlineMeeting <IMicrosoftGr``````````````````a``````````````````phOnlineMeetingInfo>] [-OnlineMeetingProvider <String>]
+ [-OnlineMeetingUrl <String>] [-Org``````````````````a``````````````````nizer <IMicrosoftGr``````````````````a``````````````````phRecipient>] [-Origin``````````````````a``````````````````lEndTimeZone <String>]
+ [-Origin``````````````````a``````````````````lSt``````````````````a``````````````````rt <D``````````````````a``````````````````teTime>] [-Origin``````````````````a``````````````````lSt``````````````````a``````````````````rtTimeZone <String>]
+ [-Recurrence <IMicrosoftGr``````````````````a``````````````````phP``````````````````a``````````````````tternedRecurrence>] [-ReminderMinutesBeforeSt``````````````````a``````````````````rt <Int32>] [-ResponseRequested]
+ [-ResponseSt``````````````````a``````````````````tus <IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus>] [-Sensitivity <String>] [-SeriesM``````````````````a``````````````````sterId <String>]
+ [-Show``````````````````a``````````````````s <String>] [-SingleV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phSingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]
+ [-St``````````````````a``````````````````rt <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>] [-Subject <String>] [-Tr``````````````````a``````````````````ns``````````````````a``````````````````ctionId <String>] [-Type <String>]
+ [-WebLink <String>] [-Wh``````````````````a``````````````````tIf] [-Confirm] [<CommonP``````````````````a``````````````````r``````````````````a``````````````````meters>]
 ```
 
-### CreateViaIdentityExpanded1
+### Cre``````````````````a``````````````````te1
 ```
-New-MgUserCalendarEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
- [-Categories <String[]>] [-ChangeKey <String>] [-CreatedDateTime <DateTime>]
- [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
- [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
- [-Instances <IMicrosoftGraphEvent1[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
- [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
- [-Locations <IMicrosoftGraphLocation[]>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
- [-OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>] [-OnlineMeetingProvider <String>]
- [-OnlineMeetingUrl <String>] [-Organizer <IMicrosoftGraphRecipient>] [-OriginalEndTimeZone <String>]
- [-OriginalStart <DateTime>] [-OriginalStartTimeZone <String>]
- [-Recurrence <IMicrosoftGraphPatternedRecurrence>] [-ReminderMinutesBeforeStart <Int32>] [-ResponseRequested]
- [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
- [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-WebLink <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserC``````````````````a``````````````````lend``````````````````a``````````````````rEvent -C``````````````````a``````````````````lend``````````````````a``````````````````rId <String> -UserId <String> -BodyP``````````````````a``````````````````r``````````````````a``````````````````meter <IMicrosoftGr``````````````````a``````````````````phEvent1> [-Wh``````````````````a``````````````````tIf]
+ [-Confirm] [<CommonP``````````````````a``````````````````r``````````````````a``````````````````meters>]
 ```
 
-### CreateViaIdentity1
+### Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
 ```
-New-MgUserCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserC``````````````````a``````````````````lend``````````````````a``````````````````rEvent -InputObject <IC``````````````````a``````````````````lend``````````````````a``````````````````rIdentity> [-``````````````````a``````````````````ddition``````````````````a``````````````````lProperties <H``````````````````a``````````````````sht``````````````````a``````````````````ble>]
+ [-``````````````````a``````````````````llowNewTimePropos``````````````````a``````````````````ls] [-``````````````````a``````````````````tt``````````````````a``````````````````chments <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````tt``````````````````a``````````````````chment[]>] [-``````````````````a``````````````````ttendees <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````ttendee[]>]
+ [-Body <IMicrosoftGr``````````````````a``````````````````phItemBody>] [-BodyPreview <String>] [-C``````````````````a``````````````````lend``````````````````a``````````````````r <IMicrosoftGr``````````````````a``````````````````phC``````````````````a``````````````````lend``````````````````a``````````````````r>]
+ [-C``````````````````a``````````````````tegories <String[]>] [-Ch``````````````````a``````````````````ngeKey <String>] [-Cre``````````````````a``````````````````tedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime>]
+ [-End <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>] [-Extensions <IMicrosoftGr``````````````````a``````````````````phExtension[]>] [-H``````````````````a``````````````````s``````````````````a``````````````````tt``````````````````a``````````````````chments]
+ [-Hide``````````````````a``````````````````ttendees] [-IC``````````````````a``````````````````lUId <String>] [-Id <String>] [-Import``````````````````a``````````````````nce <String>]
+ [-Inst``````````````````a``````````````````nces <IMicrosoftGr``````````````````a``````````````````phEvent1[]>] [-Is``````````````````a``````````````````llD``````````````````a``````````````````y] [-IsC``````````````````a``````````````````ncelled] [-IsDr``````````````````a``````````````````ft] [-IsOnlineMeeting] [-IsOrg``````````````````a``````````````````nizer]
+ [-IsReminderOn] [-L``````````````````a``````````````````stModifiedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime>] [-Loc``````````````````a``````````````````tion <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion>]
+ [-Loc``````````````````a``````````````````tions <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion[]>]
+ [-MultiV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phMultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]
+ [-OnlineMeeting <IMicrosoftGr``````````````````a``````````````````phOnlineMeetingInfo>] [-OnlineMeetingProvider <String>]
+ [-OnlineMeetingUrl <String>] [-Org``````````````````a``````````````````nizer <IMicrosoftGr``````````````````a``````````````````phRecipient>] [-Origin``````````````````a``````````````````lEndTimeZone <String>]
+ [-Origin``````````````````a``````````````````lSt``````````````````a``````````````````rt <D``````````````````a``````````````````teTime>] [-Origin``````````````````a``````````````````lSt``````````````````a``````````````````rtTimeZone <String>]
+ [-Recurrence <IMicrosoftGr``````````````````a``````````````````phP``````````````````a``````````````````tternedRecurrence>] [-ReminderMinutesBeforeSt``````````````````a``````````````````rt <Int32>] [-ResponseRequested]
+ [-ResponseSt``````````````````a``````````````````tus <IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus>] [-Sensitivity <String>] [-SeriesM``````````````````a``````````````````sterId <String>]
+ [-Show``````````````````a``````````````````s <String>] [-SingleV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phSingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]
+ [-St``````````````````a``````````````````rt <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>] [-Subject <String>] [-Tr``````````````````a``````````````````ns``````````````````a``````````````````ctionId <String>] [-Type <String>]
+ [-WebLink <String>] [-Wh``````````````````a``````````````````tIf] [-Confirm] [<CommonP``````````````````a``````````````````r``````````````````a``````````````````meters>]
+```
+
+### Cre``````````````````a``````````````````teVi``````````````````a``````````````````Identity1
+```
+New-MgUserC``````````````````a``````````````````lend``````````````````a``````````````````rEvent -InputObject <IC``````````````````a``````````````````lend``````````````````a``````````````````rIdentity> -BodyP``````````````````a``````````````````r``````````````````a``````````````````meter <IMicrosoftGr``````````````````a``````````````````phEvent1> [-Wh``````````````````a``````````````````tIf]
+ [-Confirm] [<CommonP``````````````````a``````````````````r``````````````````a``````````````````meters>]
 ```
 
 ## DESCRIPTION
-The events in the calendar.
-Navigation property.
-Read-only.
+The events in the c``````````````````a``````````````````lend``````````````````a``````````````````r.
+N``````````````````a``````````````````vig``````````````````a``````````````````tion property.
+Re``````````````````a``````````````````d-only.
 
-## EXAMPLES
+## EX``````````````````a``````````````````MPLES
 
-## PARAMETERS
+## P``````````````````a``````````````````R``````````````````a``````````````````METERS
 
-### -AdditionalProperties
-Additional Parameters
+### -``````````````````a``````````````````ddition``````````````````a``````````````````lProperties
+``````````````````a``````````````````ddition``````````````````a``````````````````l P``````````````````a``````````````````r``````````````````a``````````````````meters
 
-```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: H``````````````````a``````````````````sht``````````````````a``````````````````ble
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -AllowNewTimeProposals
-true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
-Optional.
-Default is true.
+### -``````````````````a``````````````````llowNewTimePropos``````````````````a``````````````````ls
+true if the meeting org``````````````````a``````````````````nizer ``````````````````a``````````````````llows invitees to propose ``````````````````a`````````````````` new time when responding; otherwise, f``````````````````a``````````````````lse.
+Option``````````````````a``````````````````l.
+Def``````````````````a``````````````````ult is true.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -Attachments
-The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
-Navigation property.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
+### -``````````````````a``````````````````tt``````````````````a``````````````````chments
+The collection of File``````````````````a``````````````````tt``````````````````a``````````````````chment, Item``````````````````a``````````````````tt``````````````````a``````````````````chment, ``````````````````a``````````````````nd reference``````````````````a``````````````````tt``````````````````a``````````````````chment ``````````````````a``````````````````tt``````````````````a``````````````````chments for the event.
+N``````````````````a``````````````````vig``````````````````a``````````````````tion property.
+Re``````````````````a``````````````````d-only.
+Null``````````````````a``````````````````ble.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for ``````````````````a``````````````````TT``````````````````a``````````````````CHMENTS properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphAttachment[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````tt``````````````````a``````````````````chment[]
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -Attendees
-The collection of attendees for the event.
-To construct, please use Get-Help -Online and see NOTES section for ATTENDEES properties and create a hash table.
+### -``````````````````a``````````````````ttendees
+The collection of ``````````````````a``````````````````ttendees for the event.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for ``````````````````a``````````````````TTENDEES properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphAttendee[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````ttendee[]
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -Body
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for BODY properties and create a hash table.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for BODY properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphItemBody
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phItemBody
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -BodyParameter
+### -BodyP``````````````````a``````````````````r``````````````````a``````````````````meter
 event
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for BODYP``````````````````a``````````````````R``````````````````a``````````````````METER properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphEvent1
-Parameter Sets: Create1, CreateViaIdentity1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phEvent1
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````te1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````Identity1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: True (ByV``````````````````a``````````````````lue)
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -BodyPreview
-The preview of the message associated with the event.
-It is in text format.
+The preview of the mess``````````````````a``````````````````ge ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the event.
+It is in text form``````````````````a``````````````````t.
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -Calendar
-calendar
-To construct, please use Get-Help -Online and see NOTES section for CALENDAR properties and create a hash table.
+### -C``````````````````a``````````````````lend``````````````````a``````````````````r
+c``````````````````a``````````````````lend``````````````````a``````````````````r
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for C``````````````````a``````````````````LEND``````````````````a``````````````````R properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphCalendar
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phC``````````````````a``````````````````lend``````````````````a``````````````````r
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -CalendarId
-key: id of calendar
+### -C``````````````````a``````````````````lend``````````````````a``````````````````rId
+key: id of c``````````````````a``````````````````lend``````````````````a``````````````````r
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````te1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -Categories
-The categories associated with the item
+### -C``````````````````a``````````````````tegories
+The c``````````````````a``````````````````tegories ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the item
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -ChangeKey
+### -Ch``````````````````a``````````````````ngeKey
 Identifies the version of the item.
-Every time the item is changed, changeKey changes as well.
-This allows Exchange to apply changes to the correct version of the object.
-Read-only.
+Every time the item is ch``````````````````a``````````````````nged, ch``````````````````a``````````````````ngeKey ch``````````````````a``````````````````nges ``````````````````a``````````````````s well.
+This ``````````````````a``````````````````llows Exch``````````````````a``````````````````nge to ``````````````````a``````````````````pply ch``````````````````a``````````````````nges to the correct version of the object.
+Re``````````````````a``````````````````d-only.
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -CreatedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+### -Cre``````````````````a``````````````````tedD``````````````````a``````````````````teTime
+The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time.
+For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
 
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: D``````````````````a``````````````````teTime
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -End
-dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for END properties and create a hash table.
+d``````````````````a``````````````````teTimeTimeZone
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for END properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -Extensions
 The collection of open extensions defined for the event.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+Null``````````````````a``````````````````ble.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for EXTENSIONS properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphExtension[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phExtension[]
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -HasAttachments
-Set to true if the event has attachments.
+### -H``````````````````a``````````````````s``````````````````a``````````````````tt``````````````````a``````````````````chments
+Set to true if the event h``````````````````a``````````````````s ``````````````````a``````````````````tt``````````````````a``````````````````chments.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -HideAttendees
-When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+### -Hide``````````````````a``````````````````ttendees
+When set to true, e``````````````````a``````````````````ch ``````````````````a``````````````````ttendee only sees themselves in the meeting request ``````````````````a``````````````````nd meeting Tr``````````````````a``````````````````cking list.
+Def``````````````````a``````````````````ult is f``````````````````a``````````````````lse.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -ICalUId
-A unique identifier for an event across calendars.
-This ID is different for each occurrence in a recurring series.
-Read-only.
+### -IC``````````````````a``````````````````lUId
+``````````````````a`````````````````` unique identifier for ``````````````````a``````````````````n event ``````````````````a``````````````````cross c``````````````````a``````````````````lend``````````````````a``````````````````rs.
+This ID is different for e``````````````````a``````````````````ch occurrence in ``````````````````a`````````````````` recurring series.
+Re``````````````````a``````````````````d-only.
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -Id
-Read-only.
+Re``````````````````a``````````````````d-only.
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -Importance
-importance
+### -Import``````````````````a``````````````````nce
+import``````````````````a``````````````````nce
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+Identity P``````````````````a``````````````````r``````````````````a``````````````````meter
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for INPUTOBJECT properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: ICalendarIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IC``````````````````a``````````````````lend``````````````````a``````````````````rIdentity
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````Identity1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: True (ByV``````````````````a``````````````````lue)
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -Instances
-The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
-Navigation property.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for INSTANCES properties and create a hash table.
+### -Inst``````````````````a``````````````````nces
+The occurrences of ``````````````````a`````````````````` recurring series, if the event is ``````````````````a`````````````````` series m``````````````````a``````````````````ster.
+This property includes occurrences th``````````````````a``````````````````t ``````````````````a``````````````````re p``````````````````a``````````````````rt of the recurrence p``````````````````a``````````````````ttern, ``````````````````a``````````````````nd exceptions th``````````````````a``````````````````t h``````````````````a``````````````````ve been modified, but does not include occurrences th``````````````````a``````````````````t h``````````````````a``````````````````ve been c``````````````````a``````````````````ncelled from the series.
+N``````````````````a``````````````````vig``````````````````a``````````````````tion property.
+Re``````````````````a``````````````````d-only.
+Null``````````````````a``````````````````ble.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for INST``````````````````a``````````````````NCES properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphEvent1[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phEvent1[]
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -IsAllDay
+### -Is``````````````````a``````````````````llD``````````````````a``````````````````y
 .
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -IsCancelled
+### -IsC``````````````````a``````````````````ncelled
 .
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -IsDraft
+### -IsDr``````````````````a``````````````````ft
 .
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -IsOnlineMeeting
 .
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -IsOrganizer
+### -IsOrg``````````````````a``````````````````nizer
 .
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -IsReminderOn
 .
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -LastModifiedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+### -L``````````````````a``````````````````stModifiedD``````````````````a``````````````````teTime
+The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time.
+For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
 
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: D``````````````````a``````````````````teTime
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -Location
-location
-To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
+### -Loc``````````````````a``````````````````tion
+loc``````````````````a``````````````````tion
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for LOC``````````````````a``````````````````TION properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphLocation
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -Locations
+### -Loc``````````````````a``````````````````tions
 .
-To construct, please use Get-Help -Online and see NOTES section for LOCATIONS properties and create a hash table.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for LOC``````````````````a``````````````````TIONS properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphLocation[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion[]
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -MultiValueExtendedProperties
-The collection of multi-value extended properties defined for the event.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+### -MultiV``````````````````a``````````````````lueExtendedProperties
+The collection of multi-v``````````````````a``````````````````lue extended properties defined for the event.
+Re``````````````````a``````````````````d-only.
+Null``````````````````a``````````````````ble.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for MULTIV``````````````````a``````````````````LUEEXTENDEDPROPERTIES properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phMultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -OnlineMeeting
 onlineMeetingInfo
-To construct, please use Get-Help -Online and see NOTES section for ONLINEMEETING properties and create a hash table.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for ONLINEMEETING properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphOnlineMeetingInfo
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phOnlineMeetingInfo
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -OnlineMeetingProvider
 onlineMeetingProviderType
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -OnlineMeetingUrl
 .
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -Organizer
+### -Org``````````````````a``````````````````nizer
 recipient
-To construct, please use Get-Help -Online and see NOTES section for ORGANIZER properties and create a hash table.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for ORG``````````````````a``````````````````NIZER properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphRecipient
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phRecipient
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -OriginalEndTimeZone
+### -Origin``````````````````a``````````````````lEndTimeZone
 .
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -OriginalStart
+### -Origin``````````````````a``````````````````lSt``````````````````a``````````````````rt
 .
 
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: D``````````````````a``````````````````teTime
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -OriginalStartTimeZone
+### -Origin``````````````````a``````````````````lSt``````````````````a``````````````````rtTimeZone
 .
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -Recurrence
-patternedRecurrence
-To construct, please use Get-Help -Online and see NOTES section for RECURRENCE properties and create a hash table.
+p``````````````````a``````````````````tternedRecurrence
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for RECURRENCE properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphPatternedRecurrence
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phP``````````````````a``````````````````tternedRecurrence
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -ReminderMinutesBeforeStart
+### -ReminderMinutesBeforeSt``````````````````a``````````````````rt
 .
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: Int32
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -ResponseRequested
 .
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -ResponseStatus
-responseStatus
-To construct, please use Get-Help -Online and see NOTES section for RESPONSESTATUS properties and create a hash table.
+### -ResponseSt``````````````````a``````````````````tus
+responseSt``````````````````a``````````````````tus
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for RESPONSEST``````````````````a``````````````````TUS properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphResponseStatus
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -Sensitivity
 sensitivity
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -SeriesMasterId
+### -SeriesM``````````````````a``````````````````sterId
 .
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -ShowAs
-freeBusyStatus
+### -Show``````````````````a``````````````````s
+freeBusySt``````````````````a``````````````````tus
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -SingleValueExtendedProperties
-The collection of single-value extended properties defined for the event.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+### -SingleV``````````````````a``````````````````lueExtendedProperties
+The collection of single-v``````````````````a``````````````````lue extended properties defined for the event.
+Re``````````````````a``````````````````d-only.
+Null``````````````````a``````````````````ble.
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for SINGLEV``````````````````a``````````````````LUEEXTENDEDPROPERTIES properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phSingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -Start
-dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for START properties and create a hash table.
+### -St``````````````````a``````````````````rt
+d``````````````````a``````````````````teTimeTimeZone
+To construct, ple``````````````````a``````````````````se use Get-Help -Online ``````````````````a``````````````````nd see NOTES section for ST``````````````````a``````````````````RT properties ``````````````````a``````````````````nd cre``````````````````a``````````````````te ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble.
 
-```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+```y``````````````````a``````````````````ml
+Type: IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -Subject
 .
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -TransactionId
+### -Tr``````````````````a``````````````````ns``````````````````a``````````````````ctionId
 .
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -Type
 eventType
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -UserId
 key: id of user
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````te1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -WebLink
 .
 
-```yaml
+```y``````````````````a``````````````````ml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: Cre``````````````````a``````````````````teExp``````````````````a``````````````````nded1, Cre``````````````````a``````````````````teVi``````````````````a``````````````````IdentityExp``````````````````a``````````````````nded1
+``````````````````a``````````````````li``````````````````a``````````````````ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirm``````````````````a``````````````````tion before running the cmdlet.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: (``````````````````a``````````````````ll)
+``````````````````a``````````````````li``````````````````a``````````````````ses: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
+### -Wh``````````````````a``````````````````tIf
+Shows wh``````````````````a``````````````````t would h``````````````````a``````````````````ppen if the cmdlet runs.
 The cmdlet is not run.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+```y``````````````````a``````````````````ml
+Type: SwitchP``````````````````a``````````````````r``````````````````a``````````````````meter
+P``````````````````a``````````````````r``````````````````a``````````````````meter Sets: (``````````````````a``````````````````ll)
+``````````````````a``````````````````li``````````````````a``````````````````ses: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F``````````````````a``````````````````lse
+Position: N``````````````````a``````````````````med
+Def``````````````````a``````````````````ult v``````````````````a``````````````````lue: None
+``````````````````a``````````````````ccept pipeline input: F``````````````````a``````````````````lse
+``````````````````a``````````````````ccept wildc``````````````````a``````````````````rd ch``````````````````a``````````````````r``````````````````a``````````````````cters: F``````````````````a``````````````````lse
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonP``````````````````a``````````````````r``````````````````a``````````````````meters
+This cmdlet supports the common p``````````````````a``````````````````r``````````````````a``````````````````meters: -Debug, -Error``````````````````a``````````````````ction, -ErrorV``````````````````a``````````````````ri``````````````````a``````````````````ble, -Inform``````````````````a``````````````````tion``````````````````a``````````````````ction, -Inform``````````````````a``````````````````tionV``````````````````a``````````````````ri``````````````````a``````````````````ble, -OutV``````````````````a``````````````````ri``````````````````a``````````````````ble, -OutBuffer, -PipelineV``````````````````a``````````````````ri``````````````````a``````````````````ble, -Verbose, -W``````````````````a``````````````````rning``````````````````a``````````````````ction, ``````````````````a``````````````````nd -W``````````````````a``````````````````rningV``````````````````a``````````````````ri``````````````````a``````````````````ble. For more inform``````````````````a``````````````````tion, see [``````````````````a``````````````````bout_CommonP``````````````````a``````````````````r``````````````````a``````````````````meters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
+### Microsoft.Gr``````````````````a``````````````````ph.PowerShell.Models.IC``````````````````a``````````````````lend``````````````````a``````````````````rIdentity
+### Microsoft.Gr``````````````````a``````````````````ph.PowerShell.Models.IMicrosoftGr``````````````````a``````````````````phEvent1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
+### Microsoft.Gr``````````````````a``````````````````ph.PowerShell.Models.IMicrosoftGr``````````````````a``````````````````phEvent1
 ## NOTES
 
-ALIASES
+``````````````````a``````````````````LI``````````````````a``````````````````SES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX P``````````````````a``````````````````R``````````````````a``````````````````METER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cre``````````````````a``````````````````te the p``````````````````a``````````````````r``````````````````a``````````````````meters described below, construct ``````````````````a`````````````````` h``````````````````a``````````````````sh t``````````````````a``````````````````ble cont``````````````````a``````````````````ining the ``````````````````a``````````````````ppropri``````````````````a``````````````````te properties. For inform``````````````````a``````````````````tion on h``````````````````a``````````````````sh t``````````````````a``````````````````bles, run Get-Help ``````````````````a``````````````````bout_H``````````````````a``````````````````sh_T``````````````````a``````````````````bles.
 
 
-ATTACHMENTS <IMicrosoftGraphAttachment[]>: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
+``````````````````a``````````````````TT``````````````````a``````````````````CHMENTS <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````tt``````````````````a``````````````````chment[]>: The collection of File``````````````````a``````````````````tt``````````````````a``````````````````chment, Item``````````````````a``````````````````tt``````````````````a``````````````````chment, ``````````````````a``````````````````nd reference``````````````````a``````````````````tt``````````````````a``````````````````chment ``````````````````a``````````````````tt``````````````````a``````````````````chments for the event. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[Id <String>]`: Re``````````````````a``````````````````d-only.
   - `[ContentType <String>]`: The MIME type.
-  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The attachment's file name.
-  - `[Size <Int32?>]`: The length of the attachment in bytes.
+  - `[IsInline <Boole``````````````````a``````````````````n?>]`: true if the ``````````````````a``````````````````tt``````````````````a``````````````````chment is ``````````````````a``````````````````n inline ``````````````````a``````````````````tt``````````````````a``````````````````chment; otherwise, f``````````````````a``````````````````lse.
+  - `[L``````````````````a``````````````````stModifiedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime?>]`: The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+  - `[N``````````````````a``````````````````me <String>]`: The ``````````````````a``````````````````tt``````````````````a``````````````````chment's file n``````````````````a``````````````````me.
+  - `[Size <Int32?>]`: The length of the ``````````````````a``````````````````tt``````````````````a``````````````````chment in bytes.
 
-ATTENDEES <IMicrosoftGraphAttendee[]>: The collection of attendees for the event.
-  - `[Type <String>]`: attendeeType
-  - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
-  - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-    - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+``````````````````a``````````````````TTENDEES <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````ttendee[]>: The collection of ``````````````````a``````````````````ttendees for the event.
+  - `[Type <String>]`: ``````````````````a``````````````````ttendeeType
+  - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[``````````````````a``````````````````ddress <String>]`: The em``````````````````a``````````````````il ``````````````````a``````````````````ddress of the person or entity.
+    - `[N``````````````````a``````````````````me <String>]`: The displ``````````````````a``````````````````y n``````````````````a``````````````````me of the person or entity.
+  - `[ProposedNewTime <IMicrosoftGr``````````````````a``````````````````phTimeSlot>]`: timeSlot
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[End <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[D``````````````````a``````````````````teTime <String>]`: ``````````````````a`````````````````` single point of time in ``````````````````a`````````````````` combined d``````````````````a``````````````````te ``````````````````a``````````````````nd time represent``````````````````a``````````````````tion ({d``````````````````a``````````````````te}T{time}; for ex``````````````````a``````````````````mple, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents ``````````````````a`````````````````` time zone, for ex``````````````````a``````````````````mple, 'P``````````````````a``````````````````cific St``````````````````a``````````````````nd``````````````````a``````````````````rd Time'. See below for more possible v``````````````````a``````````````````lues.
+    - `[St``````````````````a``````````````````rt <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+  - `[St``````````````````a``````````````````tus <IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus>]`: responseSt``````````````````a``````````````````tus
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
     - `[Response <String>]`: responseType
-    - `[Time <DateTime?>]`: The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Time <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te ``````````````````a``````````````````nd time th``````````````````a``````````````````t the response w``````````````````a``````````````````s returned. It uses ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
 
-BODY <IMicrosoftGraphItemBody>: itemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODY <IMicrosoftGr``````````````````a``````````````````phItemBody>: itemBody
+  - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-BODYPARAMETER <IMicrosoftGraphEvent>: event
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: Read-only.
-  - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false. Optional. Default is true.
-  - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
+BODYP``````````````````a``````````````````R``````````````````a``````````````````METER <IMicrosoftGr``````````````````a``````````````````phEvent>: event
+  - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+  - `[C``````````````````a``````````````````tegories <String[]>]`: The c``````````````````a``````````````````tegories ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the item
+  - `[Ch``````````````````a``````````````````ngeKey <String>]`: Identifies the version of the item. Every time the item is ch``````````````````a``````````````````nged, ch``````````````````a``````````````````ngeKey ch``````````````````a``````````````````nges ``````````````````a``````````````````s well. This ``````````````````a``````````````````llows Exch``````````````````a``````````````````nge to ``````````````````a``````````````````pply ch``````````````````a``````````````````nges to the correct version of the object. Re``````````````````a``````````````````d-only.
+  - `[Cre``````````````````a``````````````````tedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime?>]`: The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+  - `[L``````````````````a``````````````````stModifiedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime?>]`: The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+  - `[``````````````````a``````````````````llowNewTimePropos``````````````````a``````````````````ls <Boole``````````````````a``````````````````n?>]`: true if the meeting org``````````````````a``````````````````nizer ``````````````````a``````````````````llows invitees to propose ``````````````````a`````````````````` new time when responding; otherwise, f``````````````````a``````````````````lse. Option``````````````````a``````````````````l. Def``````````````````a``````````````````ult is true.
+  - `[``````````````````a``````````````````tt``````````````````a``````````````````chments <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````tt``````````````````a``````````````````chment[]>]`: The collection of File``````````````````a``````````````````tt``````````````````a``````````````````chment, Item``````````````````a``````````````````tt``````````````````a``````````````````chment, ``````````````````a``````````````````nd reference``````````````````a``````````````````tt``````````````````a``````````````````chment ``````````````````a``````````````````tt``````````````````a``````````````````chments for the event. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+    - `[Id <String>]`: Re``````````````````a``````````````````d-only.
     - `[ContentType <String>]`: The MIME type.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The attachment's file name.
-    - `[Size <Int32?>]`: The length of the attachment in bytes.
-  - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
-    - `[Type <String>]`: attendeeType
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
-    - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-      - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsInline <Boole``````````````````a``````````````````n?>]`: true if the ``````````````````a``````````````````tt``````````````````a``````````````````chment is ``````````````````a``````````````````n inline ``````````````````a``````````````````tt``````````````````a``````````````````chment; otherwise, f``````````````````a``````````````````lse.
+    - `[L``````````````````a``````````````````stModifiedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime?>]`: The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+    - `[N``````````````````a``````````````````me <String>]`: The ``````````````````a``````````````````tt``````````````````a``````````````````chment's file n``````````````````a``````````````````me.
+    - `[Size <Int32?>]`: The length of the ``````````````````a``````````````````tt``````````````````a``````````````````chment in bytes.
+  - `[``````````````````a``````````````````ttendees <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````ttendee[]>]`: The collection of ``````````````````a``````````````````ttendees for the event.
+    - `[Type <String>]`: ``````````````````a``````````````````ttendeeType
+    - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[``````````````````a``````````````````ddress <String>]`: The em``````````````````a``````````````````il ``````````````````a``````````````````ddress of the person or entity.
+      - `[N``````````````````a``````````````````me <String>]`: The displ``````````````````a``````````````````y n``````````````````a``````````````````me of the person or entity.
+    - `[ProposedNewTime <IMicrosoftGr``````````````````a``````````````````phTimeSlot>]`: timeSlot
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[End <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+        - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+        - `[D``````````````````a``````````````````teTime <String>]`: ``````````````````a`````````````````` single point of time in ``````````````````a`````````````````` combined d``````````````````a``````````````````te ``````````````````a``````````````````nd time represent``````````````````a``````````````````tion ({d``````````````````a``````````````````te}T{time}; for ex``````````````````a``````````````````mple, 2017-08-29T04:00:00.0000000).
+        - `[TimeZone <String>]`: Represents ``````````````````a`````````````````` time zone, for ex``````````````````a``````````````````mple, 'P``````````````````a``````````````````cific St``````````````````a``````````````````nd``````````````````a``````````````````rd Time'. See below for more possible v``````````````````a``````````````````lues.
+      - `[St``````````````````a``````````````````rt <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+    - `[St``````````````````a``````````````````tus <IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus>]`: responseSt``````````````````a``````````````````tus
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
       - `[Response <String>]`: responseType
-      - `[Time <DateTime?>]`: The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Time <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te ``````````````````a``````````````````nd time th``````````````````a``````````````````t the response w``````````````````a``````````````````s returned. It uses ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Body <IMicrosoftGr``````````````````a``````````````````phItemBody>]`: itemBody
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[BodyPreview <String>]`: The preview of the message associated with the event. It is in text format.
-  - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
-    - `[AllowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers that can be used to create online meetings in this calendar. Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
-    - `[CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]`: The permissions of the users with whom the calendar is shared.
-      - `[Id <String>]`: Read-only.
-      - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
-      - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
-      - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
-      - `[Role <String>]`: calendarRoleType
-    - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Navigation property. Read-only.
-    - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access.
-    - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it.
-    - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
-    - `[ChangeKey <String>]`: Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-    - `[Color <String>]`: calendarColor
-    - `[DefaultOnlineMeetingProvider <String>]`: onlineMeetingProviderType
-    - `[Events <IMicrosoftGraphEvent[]>]`: The events in the calendar. Navigation property. Read-only.
-    - `[HexColor <String>]`: The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is empty. Read-only.
-    - `[IsDefaultCalendar <Boolean?>]`: true if this is the default calendar where new events are created by default, false otherwise.
-    - `[IsRemovable <Boolean?>]`: Indicates whether this user calendar can be deleted from the user mailbox.
-    - `[IsTallyingResponses <Boolean?>]`: Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.
-    - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[Value <String[]>]`: A collection of property values.
-    - `[Name <String>]`: The calendar name.
-    - `[Owner <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[Value <String>]`: A property value.
-  - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the event. Nullable.
-    - `[Id <String>]`: Read-only.
-  - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
-  - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list. Default is false.
-  - `[ICalUId <String>]`: A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.
-  - `[Importance <String>]`: importance
-  - `[Instances <IMicrosoftGraphEvent[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-  - `[IsAllDay <Boolean?>]`: 
-  - `[IsCancelled <Boolean?>]`: 
-  - `[IsDraft <Boolean?>]`: 
-  - `[IsOnlineMeeting <Boolean?>]`: 
-  - `[IsOrganizer <Boolean?>]`: 
-  - `[IsReminderOn <Boolean?>]`: 
-  - `[Location <IMicrosoftGraphLocation>]`: location
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[BodyPreview <String>]`: The preview of the mess``````````````````a``````````````````ge ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the event. It is in text form``````````````````a``````````````````t.
+  - `[C``````````````````a``````````````````lend``````````````````a``````````````````r <IMicrosoftGr``````````````````a``````````````````phC``````````````````a``````````````````lend``````````````````a``````````````````r>]`: c``````````````````a``````````````````lend``````````````````a``````````````````r
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+    - `[``````````````````a``````````````````llowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers th``````````````````a``````````````````t c``````````````````a``````````````````n be used to cre``````````````````a``````````````````te online meetings in this c``````````````````a``````````````````lend``````````````````a``````````````````r. Possible v``````````````````a``````````````````lues ``````````````````a``````````````````re: unknown, skypeForBusiness, skypeForConsumer, te``````````````````a``````````````````msForBusiness.
+    - `[C``````````````````a``````````````````lend``````````````````a``````````````````rPermissions <IMicrosoftGr``````````````````a``````````````````phC``````````````````a``````````````````lend``````````````````a``````````````````rPermission[]>]`: The permissions of the users with whom the c``````````````````a``````````````````lend``````````````````a``````````````````r is sh``````````````````a``````````````````red.
+      - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+      - `[``````````````````a``````````````````llowedRoles <String[]>]`: List of ``````````````````a``````````````````llowed sh``````````````````a``````````````````ring or deleg``````````````````a``````````````````ting permission levels for the c``````````````````a``````````````````lend``````````````````a``````````````````r. Possible v``````````````````a``````````````````lues ``````````````````a``````````````````re: none, freeBusyRe``````````````````a``````````````````d, limitedRe``````````````````a``````````````````d, re``````````````````a``````````````````d, write, deleg``````````````````a``````````````````teWithoutPriv``````````````````a``````````````````teEvent``````````````````a``````````````````ccess, deleg``````````````````a``````````````````teWithPriv``````````````````a``````````````````teEvent``````````````````a``````````````````ccess, custom.
+      - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+      - `[IsInsideOrg``````````````````a``````````````````niz``````````````````a``````````````````tion <Boole``````````````````a``````````````````n?>]`: True if the user in context (sh``````````````````a``````````````````ree or deleg``````````````````a``````````````````te) is inside the s``````````````````a``````````````````me org``````````````````a``````````````````niz``````````````````a``````````````````tion ``````````````````a``````````````````s the c``````````````````a``````````````````lend``````````````````a``````````````````r owner.
+      - `[IsRemov``````````````````a``````````````````ble <Boole``````````````````a``````````````````n?>]`: True if the user c``````````````````a``````````````````n be removed from the list of sh``````````````````a``````````````````rees or deleg``````````````````a``````````````````tes for the specified c``````````````````a``````````````````lend``````````````````a``````````````````r, f``````````````````a``````````````````lse otherwise. The 'My org``````````````````a``````````````````niz``````````````````a``````````````````tion' user determines the permissions other people within your org``````````````````a``````````````````niz``````````````````a``````````````````tion h``````````````````a``````````````````ve to the given c``````````````````a``````````````````lend``````````````````a``````````````````r. You c``````````````````a``````````````````nnot remove 'My org``````````````````a``````````````````niz``````````````````a``````````````````tion' ``````````````````a``````````````````s ``````````````````a`````````````````` sh``````````````````a``````````````````ree to ``````````````````a`````````````````` c``````````````````a``````````````````lend``````````````````a``````````````````r.
+      - `[Role <String>]`: c``````````````````a``````````````````lend``````````````````a``````````````````rRoleType
+    - `[C``````````````````a``````````````````lend``````````````````a``````````````````rView <IMicrosoftGr``````````````````a``````````````````phEvent[]>]`: The c``````````````````a``````````````````lend``````````````````a``````````````````r view for the c``````````````````a``````````````````lend``````````````````a``````````````````r. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only.
+    - `[C``````````````````a``````````````````nEdit <Boole``````````````````a``````````````````n?>]`: true if the user c``````````````````a``````````````````n write to the c``````````````````a``````````````````lend``````````````````a``````````````````r, f``````````````````a``````````````````lse otherwise. This property is true for the user who cre``````````````````a``````````````````ted the c``````````````````a``````````````````lend``````````````````a``````````````````r. This property is ``````````````````a``````````````````lso true for ``````````````````a`````````````````` user who h``````````````````a``````````````````s been sh``````````````````a``````````````````red ``````````````````a`````````````````` c``````````````````a``````````````````lend``````````````````a``````````````````r ``````````````````a``````````````````nd gr``````````````````a``````````````````nted write ``````````````````a``````````````````ccess.
+    - `[C``````````````````a``````````````````nSh``````````````````a``````````````````re <Boole``````````````````a``````````````````n?>]`: true if the user h``````````````````a``````````````````s the permission to sh``````````````````a``````````````````re the c``````````````````a``````````````````lend``````````````````a``````````````````r, f``````````````````a``````````````````lse otherwise. Only the user who cre``````````````````a``````````````````ted the c``````````````````a``````````````````lend``````````````````a``````````````````r c``````````````````a``````````````````n sh``````````````````a``````````````````re it.
+    - `[C``````````````````a``````````````````nViewPriv``````````````````a``````````````````teItems <Boole``````````````````a``````````````````n?>]`: true if the user c``````````````````a``````````````````n re``````````````````a``````````````````d c``````````````````a``````````````````lend``````````````````a``````````````````r items th``````````````````a``````````````````t h``````````````````a``````````````````ve been m``````````````````a``````````````````rked priv``````````````````a``````````````````te, f``````````````````a``````````````````lse otherwise.
+    - `[Ch``````````````````a``````````````````ngeKey <String>]`: Identifies the version of the c``````````````````a``````````````````lend``````````````````a``````````````````r object. Every time the c``````````````````a``````````````````lend``````````````````a``````````````````r is ch``````````````````a``````````````````nged, ch``````````````````a``````````````````ngeKey ch``````````````````a``````````````````nges ``````````````````a``````````````````s well. This ``````````````````a``````````````````llows Exch``````````````````a``````````````````nge to ``````````````````a``````````````````pply ch``````````````````a``````````````````nges to the correct version of the object. Re``````````````````a``````````````````d-only.
+    - `[Color <String>]`: c``````````````````a``````````````````lend``````````````````a``````````````````rColor
+    - `[Def``````````````````a``````````````````ultOnlineMeetingProvider <String>]`: onlineMeetingProviderType
+    - `[Events <IMicrosoftGr``````````````````a``````````````````phEvent[]>]`: The events in the c``````````````````a``````````````````lend``````````````````a``````````````````r. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only.
+    - `[HexColor <String>]`: The c``````````````````a``````````````````lend``````````````````a``````````````````r color, expressed in ``````````````````a`````````````````` hex color code of three hex``````````````````a``````````````````decim``````````````````a``````````````````l v``````````````````a``````````````````lues, e``````````````````a``````````````````ch r``````````````````a``````````````````nging from 00 to FF ``````````````````a``````````````````nd representing the red, green, or blue components of the color in the RGB color sp``````````````````a``````````````````ce. If the user h``````````````````a``````````````````s never explicitly set ``````````````````a`````````````````` color for the c``````````````````a``````````````````lend``````````````````a``````````````````r, this property is empty. Re``````````````````a``````````````````d-only.
+    - `[IsDef``````````````````a``````````````````ultC``````````````````a``````````````````lend``````````````````a``````````````````r <Boole``````````````````a``````````````````n?>]`: true if this is the def``````````````````a``````````````````ult c``````````````````a``````````````````lend``````````````````a``````````````````r where new events ``````````````````a``````````````````re cre``````````````````a``````````````````ted by def``````````````````a``````````````````ult, f``````````````````a``````````````````lse otherwise.
+    - `[IsRemov``````````````````a``````````````````ble <Boole``````````````````a``````````````````n?>]`: Indic``````````````````a``````````````````tes whether this user c``````````````````a``````````````````lend``````````````````a``````````````````r c``````````````````a``````````````````n be deleted from the user m``````````````````a``````````````````ilbox.
+    - `[IsT``````````````````a``````````````````llyingResponses <Boole``````````````````a``````````````````n?>]`: Indic``````````````````a``````````````````tes whether this user c``````````````````a``````````````````lend``````````````````a``````````````````r supports tr``````````````````a``````````````````cking of meeting responses. Only meeting invites sent from users' prim``````````````````a``````````````````ry c``````````````````a``````````````````lend``````````````````a``````````````````rs support tr``````````````````a``````````````````cking of meeting responses.
+    - `[MultiV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phMultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of multi-v``````````````````a``````````````````lue extended properties defined for the c``````````````````a``````````````````lend``````````````````a``````````````````r. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+      - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+      - `[V``````````````````a``````````````````lue <String[]>]`: ``````````````````a`````````````````` collection of property v``````````````````a``````````````````lues.
+    - `[N``````````````````a``````````````````me <String>]`: The c``````````````````a``````````````````lend``````````````````a``````````````````r n``````````````````a``````````````````me.
+    - `[Owner <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+    - `[SingleV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phSingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of single-v``````````````````a``````````````````lue extended properties defined for the c``````````````````a``````````````````lend``````````````````a``````````````````r. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+      - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+      - `[V``````````````````a``````````````````lue <String>]`: ``````````````````a`````````````````` property v``````````````````a``````````````````lue.
+  - `[End <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+  - `[Extensions <IMicrosoftGr``````````````````a``````````````````phExtension[]>]`: The collection of open extensions defined for the event. Null``````````````````a``````````````````ble.
+    - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+  - `[H``````````````````a``````````````````s``````````````````a``````````````````tt``````````````````a``````````````````chments <Boole``````````````````a``````````````````n?>]`: Set to true if the event h``````````````````a``````````````````s ``````````````````a``````````````````tt``````````````````a``````````````````chments.
+  - `[Hide``````````````````a``````````````````ttendees <Boole``````````````````a``````````````````n?>]`: When set to true, e``````````````````a``````````````````ch ``````````````````a``````````````````ttendee only sees themselves in the meeting request ``````````````````a``````````````````nd meeting Tr``````````````````a``````````````````cking list. Def``````````````````a``````````````````ult is f``````````````````a``````````````````lse.
+  - `[IC``````````````````a``````````````````lUId <String>]`: ``````````````````a`````````````````` unique identifier for ``````````````````a``````````````````n event ``````````````````a``````````````````cross c``````````````````a``````````````````lend``````````````````a``````````````````rs. This ID is different for e``````````````````a``````````````````ch occurrence in ``````````````````a`````````````````` recurring series. Re``````````````````a``````````````````d-only.
+  - `[Import``````````````````a``````````````````nce <String>]`: import``````````````````a``````````````````nce
+  - `[Inst``````````````````a``````````````````nces <IMicrosoftGr``````````````````a``````````````````phEvent[]>]`: The occurrences of ``````````````````a`````````````````` recurring series, if the event is ``````````````````a`````````````````` series m``````````````````a``````````````````ster. This property includes occurrences th``````````````````a``````````````````t ``````````````````a``````````````````re p``````````````````a``````````````````rt of the recurrence p``````````````````a``````````````````ttern, ``````````````````a``````````````````nd exceptions th``````````````````a``````````````````t h``````````````````a``````````````````ve been modified, but does not include occurrences th``````````````````a``````````````````t h``````````````````a``````````````````ve been c``````````````````a``````````````````ncelled from the series. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[Is``````````````````a``````````````````llD``````````````````a``````````````````y <Boole``````````````````a``````````````````n?>]`: 
+  - `[IsC``````````````````a``````````````````ncelled <Boole``````````````````a``````````````````n?>]`: 
+  - `[IsDr``````````````````a``````````````````ft <Boole``````````````````a``````````````````n?>]`: 
+  - `[IsOnlineMeeting <Boole``````````````````a``````````````````n?>]`: 
+  - `[IsOrg``````````````````a``````````````````nizer <Boole``````````````````a``````````````````n?>]`: 
+  - `[IsReminderOn <Boole``````````````````a``````````````````n?>]`: 
+  - `[Loc``````````````````a``````````````````tion <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion>]`: loc``````````````````a``````````````````tion
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phPhysic``````````````````a``````````````````l``````````````````a``````````````````ddress>]`: physic``````````````````a``````````````````l``````````````````a``````````````````ddress
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
       - `[City <String>]`: The city.
-      - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-      - `[PostalCode <String>]`: The postal code.
-      - `[State <String>]`: The state.
+      - `[CountryOrRegion <String>]`: The country or region. It's ``````````````````a`````````````````` free-form``````````````````a``````````````````t string v``````````````````a``````````````````lue, for ex``````````````````a``````````````````mple, 'United St``````````````````a``````````````````tes'.
+      - `[Post``````````````````a``````````````````lCode <String>]`: The post``````````````````a``````````````````l code.
+      - `[St``````````````````a``````````````````te <String>]`: The st``````````````````a``````````````````te.
       - `[Street <String>]`: The street.
-    - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-      - `[Altitude <Double?>]`: The altitude of the location.
-      - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-      - `[Latitude <Double?>]`: The latitude of the location.
-      - `[Longitude <Double?>]`: The longitude of the location.
-    - `[DisplayName <String>]`: The name associated with the location.
-    - `[LocationEmailAddress <String>]`: Optional email address of the location.
-    - `[LocationType <String>]`: locationType
-    - `[LocationUri <String>]`: Optional URI representing the location.
-    - `[UniqueId <String>]`: For internal use only.
-    - `[UniqueIdType <String>]`: locationUniqueIdType
-  - `[Locations <IMicrosoftGraphLocation[]>]`: 
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
-  - `[OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>]`: onlineMeetingInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Coordin``````````````````a``````````````````tes <IMicrosoftGr``````````````````a``````````````````phOutlookGeoCoordin``````````````````a``````````````````tes>]`: outlookGeoCoordin``````````````````a``````````````````tes
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[``````````````````a``````````````````ccur``````````````````a``````````````````cy <Double?>]`: The ``````````````````a``````````````````ccur``````````````````a``````````````````cy of the l``````````````````a``````````````````titude ``````````````````a``````````````````nd longitude. ``````````````````a``````````````````s ``````````````````a``````````````````n ex``````````````````a``````````````````mple, the ``````````````````a``````````````````ccur``````````````````a``````````````````cy c``````````````````a``````````````````n be me``````````````````a``````````````````sured in meters, such ``````````````````a``````````````````s the l``````````````````a``````````````````titude ``````````````````a``````````````````nd longitude ``````````````````a``````````````````re ``````````````````a``````````````````ccur``````````````````a``````````````````te to within 50 meters.
+      - `[``````````````````a``````````````````ltitude <Double?>]`: The ``````````````````a``````````````````ltitude of the loc``````````````````a``````````````````tion.
+      - `[``````````````````a``````````````````ltitude``````````````````a``````````````````ccur``````````````````a``````````````````cy <Double?>]`: The ``````````````````a``````````````````ccur``````````````````a``````````````````cy of the ``````````````````a``````````````````ltitude.
+      - `[L``````````````````a``````````````````titude <Double?>]`: The l``````````````````a``````````````````titude of the loc``````````````````a``````````````````tion.
+      - `[Longitude <Double?>]`: The longitude of the loc``````````````````a``````````````````tion.
+    - `[Displ``````````````````a``````````````````yN``````````````````a``````````````````me <String>]`: The n``````````````````a``````````````````me ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the loc``````````````````a``````````````````tion.
+    - `[Loc``````````````````a``````````````````tionEm``````````````````a``````````````````il``````````````````a``````````````````ddress <String>]`: Option``````````````````a``````````````````l em``````````````````a``````````````````il ``````````````````a``````````````````ddress of the loc``````````````````a``````````````````tion.
+    - `[Loc``````````````````a``````````````````tionType <String>]`: loc``````````````````a``````````````````tionType
+    - `[Loc``````````````````a``````````````````tionUri <String>]`: Option``````````````````a``````````````````l URI representing the loc``````````````````a``````````````````tion.
+    - `[UniqueId <String>]`: For intern``````````````````a``````````````````l use only.
+    - `[UniqueIdType <String>]`: loc``````````````````a``````````````````tionUniqueIdType
+  - `[Loc``````````````````a``````````````````tions <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion[]>]`: 
+  - `[MultiV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phMultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of multi-v``````````````````a``````````````````lue extended properties defined for the event. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[OnlineMeeting <IMicrosoftGr``````````````````a``````````````````phOnlineMeetingInfo>]`: onlineMeetingInfo
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
     - `[ConferenceId <String>]`: The ID of the conference.
-    - `[JoinUrl <String>]`: The external link that launches the online meeting. This is a URL that clients will launch into a browser and will redirect the user to join the meeting.
-    - `[Phones <IMicrosoftGraphPhone[]>]`: All of the phone numbers associated with this conference.
-      - `[Language <String>]`: 
+    - `[JoinUrl <String>]`: The extern``````````````````a``````````````````l link th``````````````````a``````````````````t l``````````````````a``````````````````unches the online meeting. This is ``````````````````a`````````````````` URL th``````````````````a``````````````````t clients will l``````````````````a``````````````````unch into ``````````````````a`````````````````` browser ``````````````````a``````````````````nd will redirect the user to join the meeting.
+    - `[Phones <IMicrosoftGr``````````````````a``````````````````phPhone[]>]`: ``````````````````a``````````````````ll of the phone numbers ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with this conference.
+      - `[L``````````````````a``````````````````ngu``````````````````a``````````````````ge <String>]`: 
       - `[Number <String>]`: The phone number.
       - `[Region <String>]`: 
       - `[Type <String>]`: phoneType
-    - `[QuickDial <String>]`: The pre-formatted quickdial for this call.
-    - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
-    - `[TollNumber <String>]`: The toll number that can be used to join the conference.
+    - `[QuickDi``````````````````a``````````````````l <String>]`: The pre-form``````````````````a``````````````````tted quickdi``````````````````a``````````````````l for this c``````````````````a``````````````````ll.
+    - `[TollFreeNumbers <String[]>]`: The toll free numbers th``````````````````a``````````````````t c``````````````````a``````````````````n be used to join the conference.
+    - `[TollNumber <String>]`: The toll number th``````````````````a``````````````````t c``````````````````a``````````````````n be used to join the conference.
   - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
   - `[OnlineMeetingUrl <String>]`: 
-  - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[OriginalEndTimeZone <String>]`: 
-  - `[OriginalStart <DateTime?>]`: 
-  - `[OriginalStartTimeZone <String>]`: 
-  - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-      - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-      - `[FirstDayOfWeek <String>]`: dayOfWeek
+  - `[Org``````````````````a``````````````````nizer <IMicrosoftGr``````````````````a``````````````````phRecipient>]`: recipient
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+  - `[Origin``````````````````a``````````````````lEndTimeZone <String>]`: 
+  - `[Origin``````````````````a``````````````````lSt``````````````````a``````````````````rt <D``````````````````a``````````````````teTime?>]`: 
+  - `[Origin``````````````````a``````````````````lSt``````````````````a``````````````````rtTimeZone <String>]`: 
+  - `[Recurrence <IMicrosoftGr``````````````````a``````````````````phP``````````````````a``````````````````tternedRecurrence>]`: p``````````````````a``````````````````tternedRecurrence
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[P``````````````````a``````````````````ttern <IMicrosoftGr``````````````````a``````````````````phRecurrenceP``````````````````a``````````````````ttern>]`: recurrenceP``````````````````a``````````````````ttern
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[D``````````````````a``````````````````yOfMonth <Int32?>]`: The d``````````````````a``````````````````y of the month on which the event occurs. Required if type is ``````````````````a``````````````````bsoluteMonthly or ``````````````````a``````````````````bsoluteYe``````````````````a``````````````````rly.
+      - `[D``````````````````a``````````````````ysOfWeek <String[]>]`: ``````````````````a`````````````````` collection of the d``````````````````a``````````````````ys of the week on which the event occurs. The possible v``````````````````a``````````````````lues ``````````````````a``````````````````re: sund``````````````````a``````````````````y, mond``````````````````a``````````````````y, tuesd``````````````````a``````````````````y, wednesd``````````````````a``````````````````y, thursd``````````````````a``````````````````y, frid``````````````````a``````````````````y, s``````````````````a``````````````````turd``````````````````a``````````````````y. If type is rel``````````````````a``````````````````tiveMonthly or rel``````````````````a``````````````````tiveYe``````````````````a``````````````````rly, ``````````````````a``````````````````nd d``````````````````a``````````````````ysOfWeek specifies more th``````````````````a``````````````````n one d``````````````````a``````````````````y, the event f``````````````````a``````````````````lls on the first d``````````````````a``````````````````y th``````````````````a``````````````````t s``````````````````a``````````````````tisfies the p``````````````````a``````````````````ttern.  Required if type is weekly, rel``````````````````a``````````````````tiveMonthly, or rel``````````````````a``````````````````tiveYe``````````````````a``````````````````rly.
+      - `[FirstD``````````````````a``````````````````yOfWeek <String>]`: d``````````````````a``````````````````yOfWeek
       - `[Index <String>]`: weekIndex
-      - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
-      - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
-      - `[Type <String>]`: recurrencePatternType
-    - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-      - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-      - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-      - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
-      - `[Type <String>]`: recurrenceRangeType
-  - `[ReminderMinutesBeforeStart <Int32?>]`: 
-  - `[ResponseRequested <Boolean?>]`: 
-  - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
+      - `[Interv``````````````````a``````````````````l <Int32?>]`: The number of units between occurrences, where units c``````````````````a``````````````````n be in d``````````````````a``````````````````ys, weeks, months, or ye``````````````````a``````````````````rs, depending on the type. Required.
+      - `[Month <Int32?>]`: The month in which the event occurs.  This is ``````````````````a`````````````````` number from 1 to 12.
+      - `[Type <String>]`: recurrenceP``````````````````a``````````````````tternType
+    - `[R``````````````````a``````````````````nge <IMicrosoftGr``````````````````a``````````````````phRecurrenceR``````````````````a``````````````````nge>]`: recurrenceR``````````````````a``````````````````nge
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[EndD``````````````````a``````````````````te <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te to stop ``````````````````a``````````````````pplying the recurrence p``````````````````a``````````````````ttern. Depending on the recurrence p``````````````````a``````````````````ttern of the event, the l``````````````````a``````````````````st occurrence of the meeting m``````````````````a``````````````````y not be this d``````````````````a``````````````````te. Required if type is endD``````````````````a``````````````````te.
+      - `[NumberOfOccurrences <Int32?>]`: The number of times to repe``````````````````a``````````````````t the event. Required ``````````````````a``````````````````nd must be positive if type is numbered.
+      - `[RecurrenceTimeZone <String>]`: Time zone for the st``````````````````a``````````````````rtD``````````````````a``````````````````te ``````````````````a``````````````````nd endD``````````````````a``````````````````te properties. Option``````````````````a``````````````````l. If not specified, the time zone of the event is used.
+      - `[St``````````````````a``````````````````rtD``````````````````a``````````````````te <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te to st``````````````````a``````````````````rt ``````````````````a``````````````````pplying the recurrence p``````````````````a``````````````````ttern. The first occurrence of the meeting m``````````````````a``````````````````y be this d``````````````````a``````````````````te or l``````````````````a``````````````````ter, depending on the recurrence p``````````````````a``````````````````ttern of the event. Must be the s``````````````````a``````````````````me v``````````````````a``````````````````lue ``````````````````a``````````````````s the st``````````````````a``````````````````rt property of the recurring event. Required.
+      - `[Type <String>]`: recurrenceR``````````````````a``````````````````ngeType
+  - `[ReminderMinutesBeforeSt``````````````````a``````````````````rt <Int32?>]`: 
+  - `[ResponseRequested <Boole``````````````````a``````````````````n?>]`: 
+  - `[ResponseSt``````````````````a``````````````````tus <IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus>]`: responseSt``````````````````a``````````````````tus
   - `[Sensitivity <String>]`: sensitivity
-  - `[SeriesMasterId <String>]`: 
-  - `[ShowAs <String>]`: freeBusyStatus
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
-  - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[SeriesM``````````````````a``````````````````sterId <String>]`: 
+  - `[Show``````````````````a``````````````````s <String>]`: freeBusySt``````````````````a``````````````````tus
+  - `[SingleV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phSingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of single-v``````````````````a``````````````````lue extended properties defined for the event. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[St``````````````````a``````````````````rt <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
   - `[Subject <String>]`: 
-  - `[TransactionId <String>]`: 
+  - `[Tr``````````````````a``````````````````ns``````````````````a``````````````````ctionId <String>]`: 
   - `[Type <String>]`: eventType
   - `[WebLink <String>]`: 
 
-CALENDAR <IMicrosoftGraphCalendar>: calendar
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[AllowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers that can be used to create online meetings in this calendar. Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
-  - `[CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]`: The permissions of the users with whom the calendar is shared.
-    - `[Id <String>]`: Read-only.
-    - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
-    - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
-    - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
-    - `[Role <String>]`: calendarRoleType
-  - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Navigation property. Read-only.
-    - `[Categories <String[]>]`: The categories associated with the item
-    - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: Read-only.
-    - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false. Optional. Default is true.
-    - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
+C``````````````````a``````````````````LEND``````````````````a``````````````````R <IMicrosoftGr``````````````````a``````````````````phC``````````````````a``````````````````lend``````````````````a``````````````````r>: c``````````````````a``````````````````lend``````````````````a``````````````````r
+  - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+  - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+  - `[``````````````````a``````````````````llowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers th``````````````````a``````````````````t c``````````````````a``````````````````n be used to cre``````````````````a``````````````````te online meetings in this c``````````````````a``````````````````lend``````````````````a``````````````````r. Possible v``````````````````a``````````````````lues ``````````````````a``````````````````re: unknown, skypeForBusiness, skypeForConsumer, te``````````````````a``````````````````msForBusiness.
+  - `[C``````````````````a``````````````````lend``````````````````a``````````````````rPermissions <IMicrosoftGr``````````````````a``````````````````phC``````````````````a``````````````````lend``````````````````a``````````````````rPermission[]>]`: The permissions of the users with whom the c``````````````````a``````````````````lend``````````````````a``````````````````r is sh``````````````````a``````````````````red.
+    - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+    - `[``````````````````a``````````````````llowedRoles <String[]>]`: List of ``````````````````a``````````````````llowed sh``````````````````a``````````````````ring or deleg``````````````````a``````````````````ting permission levels for the c``````````````````a``````````````````lend``````````````````a``````````````````r. Possible v``````````````````a``````````````````lues ``````````````````a``````````````````re: none, freeBusyRe``````````````````a``````````````````d, limitedRe``````````````````a``````````````````d, re``````````````````a``````````````````d, write, deleg``````````````````a``````````````````teWithoutPriv``````````````````a``````````````````teEvent``````````````````a``````````````````ccess, deleg``````````````````a``````````````````teWithPriv``````````````````a``````````````````teEvent``````````````````a``````````````````ccess, custom.
+    - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[``````````````````a``````````````````ddress <String>]`: The em``````````````````a``````````````````il ``````````````````a``````````````````ddress of the person or entity.
+      - `[N``````````````````a``````````````````me <String>]`: The displ``````````````````a``````````````````y n``````````````````a``````````````````me of the person or entity.
+    - `[IsInsideOrg``````````````````a``````````````````niz``````````````````a``````````````````tion <Boole``````````````````a``````````````````n?>]`: True if the user in context (sh``````````````````a``````````````````ree or deleg``````````````````a``````````````````te) is inside the s``````````````````a``````````````````me org``````````````````a``````````````````niz``````````````````a``````````````````tion ``````````````````a``````````````````s the c``````````````````a``````````````````lend``````````````````a``````````````````r owner.
+    - `[IsRemov``````````````````a``````````````````ble <Boole``````````````````a``````````````````n?>]`: True if the user c``````````````````a``````````````````n be removed from the list of sh``````````````````a``````````````````rees or deleg``````````````````a``````````````````tes for the specified c``````````````````a``````````````````lend``````````````````a``````````````````r, f``````````````````a``````````````````lse otherwise. The 'My org``````````````````a``````````````````niz``````````````````a``````````````````tion' user determines the permissions other people within your org``````````````````a``````````````````niz``````````````````a``````````````````tion h``````````````````a``````````````````ve to the given c``````````````````a``````````````````lend``````````````````a``````````````````r. You c``````````````````a``````````````````nnot remove 'My org``````````````````a``````````````````niz``````````````````a``````````````````tion' ``````````````````a``````````````````s ``````````````````a`````````````````` sh``````````````````a``````````````````ree to ``````````````````a`````````````````` c``````````````````a``````````````````lend``````````````````a``````````````````r.
+    - `[Role <String>]`: c``````````````````a``````````````````lend``````````````````a``````````````````rRoleType
+  - `[C``````````````````a``````````````````lend``````````````````a``````````````````rView <IMicrosoftGr``````````````````a``````````````````phEvent[]>]`: The c``````````````````a``````````````````lend``````````````````a``````````````````r view for the c``````````````````a``````````````````lend``````````````````a``````````````````r. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only.
+    - `[C``````````````````a``````````````````tegories <String[]>]`: The c``````````````````a``````````````````tegories ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the item
+    - `[Ch``````````````````a``````````````````ngeKey <String>]`: Identifies the version of the item. Every time the item is ch``````````````````a``````````````````nged, ch``````````````````a``````````````````ngeKey ch``````````````````a``````````````````nges ``````````````````a``````````````````s well. This ``````````````````a``````````````````llows Exch``````````````````a``````````````````nge to ``````````````````a``````````````````pply ch``````````````````a``````````````````nges to the correct version of the object. Re``````````````````a``````````````````d-only.
+    - `[Cre``````````````````a``````````````````tedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime?>]`: The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+    - `[L``````````````````a``````````````````stModifiedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime?>]`: The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+    - `[``````````````````a``````````````````llowNewTimePropos``````````````````a``````````````````ls <Boole``````````````````a``````````````````n?>]`: true if the meeting org``````````````````a``````````````````nizer ``````````````````a``````````````````llows invitees to propose ``````````````````a`````````````````` new time when responding; otherwise, f``````````````````a``````````````````lse. Option``````````````````a``````````````````l. Def``````````````````a``````````````````ult is true.
+    - `[``````````````````a``````````````````tt``````````````````a``````````````````chments <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````tt``````````````````a``````````````````chment[]>]`: The collection of File``````````````````a``````````````````tt``````````````````a``````````````````chment, Item``````````````````a``````````````````tt``````````````````a``````````````````chment, ``````````````````a``````````````````nd reference``````````````````a``````````````````tt``````````````````a``````````````````chment ``````````````````a``````````````````tt``````````````````a``````````````````chments for the event. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+      - `[Id <String>]`: Re``````````````````a``````````````````d-only.
       - `[ContentType <String>]`: The MIME type.
-      - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-      - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The attachment's file name.
-      - `[Size <Int32?>]`: The length of the attachment in bytes.
-    - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
-      - `[Type <String>]`: attendeeType
-      - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-          - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-        - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsInline <Boole``````````````````a``````````````````n?>]`: true if the ``````````````````a``````````````````tt``````````````````a``````````````````chment is ``````````````````a``````````````````n inline ``````````````````a``````````````````tt``````````````````a``````````````````chment; otherwise, f``````````````````a``````````````````lse.
+      - `[L``````````````````a``````````````````stModifiedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime?>]`: The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+      - `[N``````````````````a``````````````````me <String>]`: The ``````````````````a``````````````````tt``````````````````a``````````````````chment's file n``````````````````a``````````````````me.
+      - `[Size <Int32?>]`: The length of the ``````````````````a``````````````````tt``````````````````a``````````````````chment in bytes.
+    - `[``````````````````a``````````````````ttendees <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````ttendee[]>]`: The collection of ``````````````````a``````````````````ttendees for the event.
+      - `[Type <String>]`: ``````````````````a``````````````````ttendeeType
+      - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+      - `[ProposedNewTime <IMicrosoftGr``````````````````a``````````````````phTimeSlot>]`: timeSlot
+        - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+        - `[End <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+          - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+          - `[D``````````````````a``````````````````teTime <String>]`: ``````````````````a`````````````````` single point of time in ``````````````````a`````````````````` combined d``````````````````a``````````````````te ``````````````````a``````````````````nd time represent``````````````````a``````````````````tion ({d``````````````````a``````````````````te}T{time}; for ex``````````````````a``````````````````mple, 2017-08-29T04:00:00.0000000).
+          - `[TimeZone <String>]`: Represents ``````````````````a`````````````````` time zone, for ex``````````````````a``````````````````mple, 'P``````````````````a``````````````````cific St``````````````````a``````````````````nd``````````````````a``````````````````rd Time'. See below for more possible v``````````````````a``````````````````lues.
+        - `[St``````````````````a``````````````````rt <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+      - `[St``````````````````a``````````````````tus <IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus>]`: responseSt``````````````````a``````````````````tus
+        - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
         - `[Response <String>]`: responseType
-        - `[Time <DateTime?>]`: The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Time <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te ``````````````````a``````````````````nd time th``````````````````a``````````````````t the response w``````````````````a``````````````````s returned. It uses ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Body <IMicrosoftGr``````````````````a``````````````````phItemBody>]`: itemBody
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
       - `[Content <String>]`: The content of the item.
       - `[ContentType <String>]`: bodyType
-    - `[BodyPreview <String>]`: The preview of the message associated with the event. It is in text format.
-    - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
-    - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the event. Nullable.
-      - `[Id <String>]`: Read-only.
-    - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
-    - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list. Default is false.
-    - `[ICalUId <String>]`: A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.
-    - `[Importance <String>]`: importance
-    - `[Instances <IMicrosoftGraphEvent[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-    - `[IsAllDay <Boolean?>]`: 
-    - `[IsCancelled <Boolean?>]`: 
-    - `[IsDraft <Boolean?>]`: 
-    - `[IsOnlineMeeting <Boolean?>]`: 
-    - `[IsOrganizer <Boolean?>]`: 
-    - `[IsReminderOn <Boolean?>]`: 
-    - `[Location <IMicrosoftGraphLocation>]`: location
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[BodyPreview <String>]`: The preview of the mess``````````````````a``````````````````ge ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the event. It is in text form``````````````````a``````````````````t.
+    - `[C``````````````````a``````````````````lend``````````````````a``````````````````r <IMicrosoftGr``````````````````a``````````````````phC``````````````````a``````````````````lend``````````````````a``````````````````r>]`: c``````````````````a``````````````````lend``````````````````a``````````````````r
+    - `[End <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+    - `[Extensions <IMicrosoftGr``````````````````a``````````````````phExtension[]>]`: The collection of open extensions defined for the event. Null``````````````````a``````````````````ble.
+      - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+    - `[H``````````````````a``````````````````s``````````````````a``````````````````tt``````````````````a``````````````````chments <Boole``````````````````a``````````````````n?>]`: Set to true if the event h``````````````````a``````````````````s ``````````````````a``````````````````tt``````````````````a``````````````````chments.
+    - `[Hide``````````````````a``````````````````ttendees <Boole``````````````````a``````````````````n?>]`: When set to true, e``````````````````a``````````````````ch ``````````````````a``````````````````ttendee only sees themselves in the meeting request ``````````````````a``````````````````nd meeting Tr``````````````````a``````````````````cking list. Def``````````````````a``````````````````ult is f``````````````````a``````````````````lse.
+    - `[IC``````````````````a``````````````````lUId <String>]`: ``````````````````a`````````````````` unique identifier for ``````````````````a``````````````````n event ``````````````````a``````````````````cross c``````````````````a``````````````````lend``````````````````a``````````````````rs. This ID is different for e``````````````````a``````````````````ch occurrence in ``````````````````a`````````````````` recurring series. Re``````````````````a``````````````````d-only.
+    - `[Import``````````````````a``````````````````nce <String>]`: import``````````````````a``````````````````nce
+    - `[Inst``````````````````a``````````````````nces <IMicrosoftGr``````````````````a``````````````````phEvent[]>]`: The occurrences of ``````````````````a`````````````````` recurring series, if the event is ``````````````````a`````````````````` series m``````````````````a``````````````````ster. This property includes occurrences th``````````````````a``````````````````t ``````````````````a``````````````````re p``````````````````a``````````````````rt of the recurrence p``````````````````a``````````````````ttern, ``````````````````a``````````````````nd exceptions th``````````````````a``````````````````t h``````````````````a``````````````````ve been modified, but does not include occurrences th``````````````````a``````````````````t h``````````````````a``````````````````ve been c``````````````````a``````````````````ncelled from the series. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+    - `[Is``````````````````a``````````````````llD``````````````````a``````````````````y <Boole``````````````````a``````````````````n?>]`: 
+    - `[IsC``````````````````a``````````````````ncelled <Boole``````````````````a``````````````````n?>]`: 
+    - `[IsDr``````````````````a``````````````````ft <Boole``````````````````a``````````````````n?>]`: 
+    - `[IsOnlineMeeting <Boole``````````````````a``````````````````n?>]`: 
+    - `[IsOrg``````````````````a``````````````````nizer <Boole``````````````````a``````````````````n?>]`: 
+    - `[IsReminderOn <Boole``````````````````a``````````````````n?>]`: 
+    - `[Loc``````````````````a``````````````````tion <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion>]`: loc``````````````````a``````````````````tion
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phPhysic``````````````````a``````````````````l``````````````````a``````````````````ddress>]`: physic``````````````````a``````````````````l``````````````````a``````````````````ddress
+        - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
         - `[City <String>]`: The city.
-        - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-        - `[PostalCode <String>]`: The postal code.
-        - `[State <String>]`: The state.
+        - `[CountryOrRegion <String>]`: The country or region. It's ``````````````````a`````````````````` free-form``````````````````a``````````````````t string v``````````````````a``````````````````lue, for ex``````````````````a``````````````````mple, 'United St``````````````````a``````````````````tes'.
+        - `[Post``````````````````a``````````````````lCode <String>]`: The post``````````````````a``````````````````l code.
+        - `[St``````````````````a``````````````````te <String>]`: The st``````````````````a``````````````````te.
         - `[Street <String>]`: The street.
-      - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-        - `[Altitude <Double?>]`: The altitude of the location.
-        - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-        - `[Latitude <Double?>]`: The latitude of the location.
-        - `[Longitude <Double?>]`: The longitude of the location.
-      - `[DisplayName <String>]`: The name associated with the location.
-      - `[LocationEmailAddress <String>]`: Optional email address of the location.
-      - `[LocationType <String>]`: locationType
-      - `[LocationUri <String>]`: Optional URI representing the location.
-      - `[UniqueId <String>]`: For internal use only.
-      - `[UniqueIdType <String>]`: locationUniqueIdType
-    - `[Locations <IMicrosoftGraphLocation[]>]`: 
-    - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[Value <String[]>]`: A collection of property values.
-    - `[OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>]`: onlineMeetingInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Coordin``````````````````a``````````````````tes <IMicrosoftGr``````````````````a``````````````````phOutlookGeoCoordin``````````````````a``````````````````tes>]`: outlookGeoCoordin``````````````````a``````````````````tes
+        - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+        - `[``````````````````a``````````````````ccur``````````````````a``````````````````cy <Double?>]`: The ``````````````````a``````````````````ccur``````````````````a``````````````````cy of the l``````````````````a``````````````````titude ``````````````````a``````````````````nd longitude. ``````````````````a``````````````````s ``````````````````a``````````````````n ex``````````````````a``````````````````mple, the ``````````````````a``````````````````ccur``````````````````a``````````````````cy c``````````````````a``````````````````n be me``````````````````a``````````````````sured in meters, such ``````````````````a``````````````````s the l``````````````````a``````````````````titude ``````````````````a``````````````````nd longitude ``````````````````a``````````````````re ``````````````````a``````````````````ccur``````````````````a``````````````````te to within 50 meters.
+        - `[``````````````````a``````````````````ltitude <Double?>]`: The ``````````````````a``````````````````ltitude of the loc``````````````````a``````````````````tion.
+        - `[``````````````````a``````````````````ltitude``````````````````a``````````````````ccur``````````````````a``````````````````cy <Double?>]`: The ``````````````````a``````````````````ccur``````````````````a``````````````````cy of the ``````````````````a``````````````````ltitude.
+        - `[L``````````````````a``````````````````titude <Double?>]`: The l``````````````````a``````````````````titude of the loc``````````````````a``````````````````tion.
+        - `[Longitude <Double?>]`: The longitude of the loc``````````````````a``````````````````tion.
+      - `[Displ``````````````````a``````````````````yN``````````````````a``````````````````me <String>]`: The n``````````````````a``````````````````me ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the loc``````````````````a``````````````````tion.
+      - `[Loc``````````````````a``````````````````tionEm``````````````````a``````````````````il``````````````````a``````````````````ddress <String>]`: Option``````````````````a``````````````````l em``````````````````a``````````````````il ``````````````````a``````````````````ddress of the loc``````````````````a``````````````````tion.
+      - `[Loc``````````````````a``````````````````tionType <String>]`: loc``````````````````a``````````````````tionType
+      - `[Loc``````````````````a``````````````````tionUri <String>]`: Option``````````````````a``````````````````l URI representing the loc``````````````````a``````````````````tion.
+      - `[UniqueId <String>]`: For intern``````````````````a``````````````````l use only.
+      - `[UniqueIdType <String>]`: loc``````````````````a``````````````````tionUniqueIdType
+    - `[Loc``````````````````a``````````````````tions <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion[]>]`: 
+    - `[MultiV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phMultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of multi-v``````````````````a``````````````````lue extended properties defined for the event. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+      - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+      - `[V``````````````````a``````````````````lue <String[]>]`: ``````````````````a`````````````````` collection of property v``````````````````a``````````````````lues.
+    - `[OnlineMeeting <IMicrosoftGr``````````````````a``````````````````phOnlineMeetingInfo>]`: onlineMeetingInfo
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
       - `[ConferenceId <String>]`: The ID of the conference.
-      - `[JoinUrl <String>]`: The external link that launches the online meeting. This is a URL that clients will launch into a browser and will redirect the user to join the meeting.
-      - `[Phones <IMicrosoftGraphPhone[]>]`: All of the phone numbers associated with this conference.
-        - `[Language <String>]`: 
+      - `[JoinUrl <String>]`: The extern``````````````````a``````````````````l link th``````````````````a``````````````````t l``````````````````a``````````````````unches the online meeting. This is ``````````````````a`````````````````` URL th``````````````````a``````````````````t clients will l``````````````````a``````````````````unch into ``````````````````a`````````````````` browser ``````````````````a``````````````````nd will redirect the user to join the meeting.
+      - `[Phones <IMicrosoftGr``````````````````a``````````````````phPhone[]>]`: ``````````````````a``````````````````ll of the phone numbers ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with this conference.
+        - `[L``````````````````a``````````````````ngu``````````````````a``````````````````ge <String>]`: 
         - `[Number <String>]`: The phone number.
         - `[Region <String>]`: 
         - `[Type <String>]`: phoneType
-      - `[QuickDial <String>]`: The pre-formatted quickdial for this call.
-      - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
-      - `[TollNumber <String>]`: The toll number that can be used to join the conference.
+      - `[QuickDi``````````````````a``````````````````l <String>]`: The pre-form``````````````````a``````````````````tted quickdi``````````````````a``````````````````l for this c``````````````````a``````````````````ll.
+      - `[TollFreeNumbers <String[]>]`: The toll free numbers th``````````````````a``````````````````t c``````````````````a``````````````````n be used to join the conference.
+      - `[TollNumber <String>]`: The toll number th``````````````````a``````````````````t c``````````````````a``````````````````n be used to join the conference.
     - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
     - `[OnlineMeetingUrl <String>]`: 
-    - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[OriginalEndTimeZone <String>]`: 
-    - `[OriginalStart <DateTime?>]`: 
-    - `[OriginalStartTimeZone <String>]`: 
-    - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-        - `[FirstDayOfWeek <String>]`: dayOfWeek
+    - `[Org``````````````````a``````````````````nizer <IMicrosoftGr``````````````````a``````````````````phRecipient>]`: recipient
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+    - `[Origin``````````````````a``````````````````lEndTimeZone <String>]`: 
+    - `[Origin``````````````````a``````````````````lSt``````````````````a``````````````````rt <D``````````````````a``````````````````teTime?>]`: 
+    - `[Origin``````````````````a``````````````````lSt``````````````````a``````````````````rtTimeZone <String>]`: 
+    - `[Recurrence <IMicrosoftGr``````````````````a``````````````````phP``````````````````a``````````````````tternedRecurrence>]`: p``````````````````a``````````````````tternedRecurrence
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[P``````````````````a``````````````````ttern <IMicrosoftGr``````````````````a``````````````````phRecurrenceP``````````````````a``````````````````ttern>]`: recurrenceP``````````````````a``````````````````ttern
+        - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+        - `[D``````````````````a``````````````````yOfMonth <Int32?>]`: The d``````````````````a``````````````````y of the month on which the event occurs. Required if type is ``````````````````a``````````````````bsoluteMonthly or ``````````````````a``````````````````bsoluteYe``````````````````a``````````````````rly.
+        - `[D``````````````````a``````````````````ysOfWeek <String[]>]`: ``````````````````a`````````````````` collection of the d``````````````````a``````````````````ys of the week on which the event occurs. The possible v``````````````````a``````````````````lues ``````````````````a``````````````````re: sund``````````````````a``````````````````y, mond``````````````````a``````````````````y, tuesd``````````````````a``````````````````y, wednesd``````````````````a``````````````````y, thursd``````````````````a``````````````````y, frid``````````````````a``````````````````y, s``````````````````a``````````````````turd``````````````````a``````````````````y. If type is rel``````````````````a``````````````````tiveMonthly or rel``````````````````a``````````````````tiveYe``````````````````a``````````````````rly, ``````````````````a``````````````````nd d``````````````````a``````````````````ysOfWeek specifies more th``````````````````a``````````````````n one d``````````````````a``````````````````y, the event f``````````````````a``````````````````lls on the first d``````````````````a``````````````````y th``````````````````a``````````````````t s``````````````````a``````````````````tisfies the p``````````````````a``````````````````ttern.  Required if type is weekly, rel``````````````````a``````````````````tiveMonthly, or rel``````````````````a``````````````````tiveYe``````````````````a``````````````````rly.
+        - `[FirstD``````````````````a``````````````````yOfWeek <String>]`: d``````````````````a``````````````````yOfWeek
         - `[Index <String>]`: weekIndex
-        - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
-        - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
-        - `[Type <String>]`: recurrencePatternType
-      - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-        - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-        - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-        - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
-        - `[Type <String>]`: recurrenceRangeType
-    - `[ReminderMinutesBeforeStart <Int32?>]`: 
-    - `[ResponseRequested <Boolean?>]`: 
-    - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
+        - `[Interv``````````````````a``````````````````l <Int32?>]`: The number of units between occurrences, where units c``````````````````a``````````````````n be in d``````````````````a``````````````````ys, weeks, months, or ye``````````````````a``````````````````rs, depending on the type. Required.
+        - `[Month <Int32?>]`: The month in which the event occurs.  This is ``````````````````a`````````````````` number from 1 to 12.
+        - `[Type <String>]`: recurrenceP``````````````````a``````````````````tternType
+      - `[R``````````````````a``````````````````nge <IMicrosoftGr``````````````````a``````````````````phRecurrenceR``````````````````a``````````````````nge>]`: recurrenceR``````````````````a``````````````````nge
+        - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+        - `[EndD``````````````````a``````````````````te <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te to stop ``````````````````a``````````````````pplying the recurrence p``````````````````a``````````````````ttern. Depending on the recurrence p``````````````````a``````````````````ttern of the event, the l``````````````````a``````````````````st occurrence of the meeting m``````````````````a``````````````````y not be this d``````````````````a``````````````````te. Required if type is endD``````````````````a``````````````````te.
+        - `[NumberOfOccurrences <Int32?>]`: The number of times to repe``````````````````a``````````````````t the event. Required ``````````````````a``````````````````nd must be positive if type is numbered.
+        - `[RecurrenceTimeZone <String>]`: Time zone for the st``````````````````a``````````````````rtD``````````````````a``````````````````te ``````````````````a``````````````````nd endD``````````````````a``````````````````te properties. Option``````````````````a``````````````````l. If not specified, the time zone of the event is used.
+        - `[St``````````````````a``````````````````rtD``````````````````a``````````````````te <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te to st``````````````````a``````````````````rt ``````````````````a``````````````````pplying the recurrence p``````````````````a``````````````````ttern. The first occurrence of the meeting m``````````````````a``````````````````y be this d``````````````````a``````````````````te or l``````````````````a``````````````````ter, depending on the recurrence p``````````````````a``````````````````ttern of the event. Must be the s``````````````````a``````````````````me v``````````````````a``````````````````lue ``````````````````a``````````````````s the st``````````````````a``````````````````rt property of the recurring event. Required.
+        - `[Type <String>]`: recurrenceR``````````````````a``````````````````ngeType
+    - `[ReminderMinutesBeforeSt``````````````````a``````````````````rt <Int32?>]`: 
+    - `[ResponseRequested <Boole``````````````````a``````````````````n?>]`: 
+    - `[ResponseSt``````````````````a``````````````````tus <IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus>]`: responseSt``````````````````a``````````````````tus
     - `[Sensitivity <String>]`: sensitivity
-    - `[SeriesMasterId <String>]`: 
-    - `[ShowAs <String>]`: freeBusyStatus
-    - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[Value <String>]`: A property value.
-    - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[SeriesM``````````````````a``````````````````sterId <String>]`: 
+    - `[Show``````````````````a``````````````````s <String>]`: freeBusySt``````````````````a``````````````````tus
+    - `[SingleV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phSingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of single-v``````````````````a``````````````````lue extended properties defined for the event. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+      - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+      - `[V``````````````````a``````````````````lue <String>]`: ``````````````````a`````````````````` property v``````````````````a``````````````````lue.
+    - `[St``````````````````a``````````````````rt <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
     - `[Subject <String>]`: 
-    - `[TransactionId <String>]`: 
+    - `[Tr``````````````````a``````````````````ns``````````````````a``````````````````ctionId <String>]`: 
     - `[Type <String>]`: eventType
     - `[WebLink <String>]`: 
-  - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access.
-  - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it.
-  - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
-  - `[ChangeKey <String>]`: Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-  - `[Color <String>]`: calendarColor
-  - `[DefaultOnlineMeetingProvider <String>]`: onlineMeetingProviderType
-  - `[Events <IMicrosoftGraphEvent[]>]`: The events in the calendar. Navigation property. Read-only.
-  - `[HexColor <String>]`: The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is empty. Read-only.
-  - `[IsDefaultCalendar <Boolean?>]`: true if this is the default calendar where new events are created by default, false otherwise.
-  - `[IsRemovable <Boolean?>]`: Indicates whether this user calendar can be deleted from the user mailbox.
-  - `[IsTallyingResponses <Boolean?>]`: Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
-  - `[Name <String>]`: The calendar name.
-  - `[Owner <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
+  - `[C``````````````````a``````````````````nEdit <Boole``````````````````a``````````````````n?>]`: true if the user c``````````````````a``````````````````n write to the c``````````````````a``````````````````lend``````````````````a``````````````````r, f``````````````````a``````````````````lse otherwise. This property is true for the user who cre``````````````````a``````````````````ted the c``````````````````a``````````````````lend``````````````````a``````````````````r. This property is ``````````````````a``````````````````lso true for ``````````````````a`````````````````` user who h``````````````````a``````````````````s been sh``````````````````a``````````````````red ``````````````````a`````````````````` c``````````````````a``````````````````lend``````````````````a``````````````````r ``````````````````a``````````````````nd gr``````````````````a``````````````````nted write ``````````````````a``````````````````ccess.
+  - `[C``````````````````a``````````````````nSh``````````````````a``````````````````re <Boole``````````````````a``````````````````n?>]`: true if the user h``````````````````a``````````````````s the permission to sh``````````````````a``````````````````re the c``````````````````a``````````````````lend``````````````````a``````````````````r, f``````````````````a``````````````````lse otherwise. Only the user who cre``````````````````a``````````````````ted the c``````````````````a``````````````````lend``````````````````a``````````````````r c``````````````````a``````````````````n sh``````````````````a``````````````````re it.
+  - `[C``````````````````a``````````````````nViewPriv``````````````````a``````````````````teItems <Boole``````````````````a``````````````````n?>]`: true if the user c``````````````````a``````````````````n re``````````````````a``````````````````d c``````````````````a``````````````````lend``````````````````a``````````````````r items th``````````````````a``````````````````t h``````````````````a``````````````````ve been m``````````````````a``````````````````rked priv``````````````````a``````````````````te, f``````````````````a``````````````````lse otherwise.
+  - `[Ch``````````````````a``````````````````ngeKey <String>]`: Identifies the version of the c``````````````````a``````````````````lend``````````````````a``````````````````r object. Every time the c``````````````````a``````````````````lend``````````````````a``````````````````r is ch``````````````````a``````````````````nged, ch``````````````````a``````````````````ngeKey ch``````````````````a``````````````````nges ``````````````````a``````````````````s well. This ``````````````````a``````````````````llows Exch``````````````````a``````````````````nge to ``````````````````a``````````````````pply ch``````````````````a``````````````````nges to the correct version of the object. Re``````````````````a``````````````````d-only.
+  - `[Color <String>]`: c``````````````````a``````````````````lend``````````````````a``````````````````rColor
+  - `[Def``````````````````a``````````````````ultOnlineMeetingProvider <String>]`: onlineMeetingProviderType
+  - `[Events <IMicrosoftGr``````````````````a``````````````````phEvent[]>]`: The events in the c``````````````````a``````````````````lend``````````````````a``````````````````r. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only.
+  - `[HexColor <String>]`: The c``````````````````a``````````````````lend``````````````````a``````````````````r color, expressed in ``````````````````a`````````````````` hex color code of three hex``````````````````a``````````````````decim``````````````````a``````````````````l v``````````````````a``````````````````lues, e``````````````````a``````````````````ch r``````````````````a``````````````````nging from 00 to FF ``````````````````a``````````````````nd representing the red, green, or blue components of the color in the RGB color sp``````````````````a``````````````````ce. If the user h``````````````````a``````````````````s never explicitly set ``````````````````a`````````````````` color for the c``````````````````a``````````````````lend``````````````````a``````````````````r, this property is empty. Re``````````````````a``````````````````d-only.
+  - `[IsDef``````````````````a``````````````````ultC``````````````````a``````````````````lend``````````````````a``````````````````r <Boole``````````````````a``````````````````n?>]`: true if this is the def``````````````````a``````````````````ult c``````````````````a``````````````````lend``````````````````a``````````````````r where new events ``````````````````a``````````````````re cre``````````````````a``````````````````ted by def``````````````````a``````````````````ult, f``````````````````a``````````````````lse otherwise.
+  - `[IsRemov``````````````````a``````````````````ble <Boole``````````````````a``````````````````n?>]`: Indic``````````````````a``````````````````tes whether this user c``````````````````a``````````````````lend``````````````````a``````````````````r c``````````````````a``````````````````n be deleted from the user m``````````````````a``````````````````ilbox.
+  - `[IsT``````````````````a``````````````````llyingResponses <Boole``````````````````a``````````````````n?>]`: Indic``````````````````a``````````````````tes whether this user c``````````````````a``````````````````lend``````````````````a``````````````````r supports tr``````````````````a``````````````````cking of meeting responses. Only meeting invites sent from users' prim``````````````````a``````````````````ry c``````````````````a``````````````````lend``````````````````a``````````````````rs support tr``````````````````a``````````````````cking of meeting responses.
+  - `[MultiV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phMultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of multi-v``````````````````a``````````````````lue extended properties defined for the c``````````````````a``````````````````lend``````````````````a``````````````````r. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[N``````````````````a``````````````````me <String>]`: The c``````````````````a``````````````````lend``````````````````a``````````````````r n``````````````````a``````````````````me.
+  - `[Owner <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+  - `[SingleV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phSingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of single-v``````````````````a``````````````````lue extended properties defined for the c``````````````````a``````````````````lend``````````````````a``````````````````r. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
 
-END <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+END <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>: d``````````````````a``````````````````teTimeTimeZone
+  - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+  - `[D``````````````````a``````````````````teTime <String>]`: ``````````````````a`````````````````` single point of time in ``````````````````a`````````````````` combined d``````````````````a``````````````````te ``````````````````a``````````````````nd time represent``````````````````a``````````````````tion ({d``````````````````a``````````````````te}T{time}; for ex``````````````````a``````````````````mple, 2017-08-29T04:00:00.0000000).
+  - `[TimeZone <String>]`: Represents ``````````````````a`````````````````` time zone, for ex``````````````````a``````````````````mple, 'P``````````````````a``````````````````cific St``````````````````a``````````````````nd``````````````````a``````````````````rd Time'. See below for more possible v``````````````````a``````````````````lues.
 
-EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the event. Nullable.
-  - `[Id <String>]`: Read-only.
+EXTENSIONS <IMicrosoftGr``````````````````a``````````````````phExtension[]>: The collection of open extensions defined for the event. Null``````````````````a``````````````````ble.
+  - `[Id <String>]`: Re``````````````````a``````````````````d-only.
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[CalendarGroupId <String>]`: key: id of calendarGroup
-  - `[CalendarId <String>]`: key: id of calendar
-  - `[CalendarPermissionId <String>]`: key: id of calendarPermission
+INPUTOBJECT <IC``````````````````a``````````````````lend``````````````````a``````````````````rIdentity>: Identity P``````````````````a``````````````````r``````````````````a``````````````````meter
+  - `[``````````````````a``````````````````tt``````````````````a``````````````````chmentId <String>]`: key: id of ``````````````````a``````````````````tt``````````````````a``````````````````chment
+  - `[C``````````````````a``````````````````lend``````````````````a``````````````````rGroupId <String>]`: key: id of c``````````````````a``````````````````lend``````````````````a``````````````````rGroup
+  - `[C``````````````````a``````````````````lend``````````````````a``````````````````rId <String>]`: key: id of c``````````````````a``````````````````lend``````````````````a``````````````````r
+  - `[C``````````````````a``````````````````lend``````````````````a``````````````````rPermissionId <String>]`: key: id of c``````````````````a``````````````````lend``````````````````a``````````````````rPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[PlaceId <String>]`: key: id of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[MultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedPropertyId <String>]`: key: id of multiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty
+  - `[Pl``````````````````a``````````````````ceId <String>]`: key: id of pl``````````````````a``````````````````ce
+  - `[SingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedPropertyId <String>]`: key: id of singleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty
   - `[UserId <String>]`: key: id of user
 
-INSTANCES <IMicrosoftGraphEvent[]>: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: Read-only.
-  - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false. Optional. Default is true.
-  - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
+INST``````````````````a``````````````````NCES <IMicrosoftGr``````````````````a``````````````````phEvent[]>: The occurrences of ``````````````````a`````````````````` recurring series, if the event is ``````````````````a`````````````````` series m``````````````````a``````````````````ster. This property includes occurrences th``````````````````a``````````````````t ``````````````````a``````````````````re p``````````````````a``````````````````rt of the recurrence p``````````````````a``````````````````ttern, ``````````````````a``````````````````nd exceptions th``````````````````a``````````````````t h``````````````````a``````````````````ve been modified, but does not include occurrences th``````````````````a``````````````````t h``````````````````a``````````````````ve been c``````````````````a``````````````````ncelled from the series. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[C``````````````````a``````````````````tegories <String[]>]`: The c``````````````````a``````````````````tegories ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the item
+  - `[Ch``````````````````a``````````````````ngeKey <String>]`: Identifies the version of the item. Every time the item is ch``````````````````a``````````````````nged, ch``````````````````a``````````````````ngeKey ch``````````````````a``````````````````nges ``````````````````a``````````````````s well. This ``````````````````a``````````````````llows Exch``````````````````a``````````````````nge to ``````````````````a``````````````````pply ch``````````````````a``````````````````nges to the correct version of the object. Re``````````````````a``````````````````d-only.
+  - `[Cre``````````````````a``````````````````tedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime?>]`: The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+  - `[L``````````````````a``````````````````stModifiedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime?>]`: The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+  - `[``````````````````a``````````````````llowNewTimePropos``````````````````a``````````````````ls <Boole``````````````````a``````````````````n?>]`: true if the meeting org``````````````````a``````````````````nizer ``````````````````a``````````````````llows invitees to propose ``````````````````a`````````````````` new time when responding; otherwise, f``````````````````a``````````````````lse. Option``````````````````a``````````````````l. Def``````````````````a``````````````````ult is true.
+  - `[``````````````````a``````````````````tt``````````````````a``````````````````chments <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````tt``````````````````a``````````````````chment[]>]`: The collection of File``````````````````a``````````````````tt``````````````````a``````````````````chment, Item``````````````````a``````````````````tt``````````````````a``````````````````chment, ``````````````````a``````````````````nd reference``````````````````a``````````````````tt``````````````````a``````````````````chment ``````````````````a``````````````````tt``````````````````a``````````````````chments for the event. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+    - `[Id <String>]`: Re``````````````````a``````````````````d-only.
     - `[ContentType <String>]`: The MIME type.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The attachment's file name.
-    - `[Size <Int32?>]`: The length of the attachment in bytes.
-  - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
-    - `[Type <String>]`: attendeeType
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
-    - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-      - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsInline <Boole``````````````````a``````````````````n?>]`: true if the ``````````````````a``````````````````tt``````````````````a``````````````````chment is ``````````````````a``````````````````n inline ``````````````````a``````````````````tt``````````````````a``````````````````chment; otherwise, f``````````````````a``````````````````lse.
+    - `[L``````````````````a``````````````````stModifiedD``````````````````a``````````````````teTime <D``````````````````a``````````````````teTime?>]`: The Timest``````````````````a``````````````````mp type represents d``````````````````a``````````````````te ``````````````````a``````````````````nd time inform``````````````````a``````````````````tion using ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+    - `[N``````````````````a``````````````````me <String>]`: The ``````````````````a``````````````````tt``````````````````a``````````````````chment's file n``````````````````a``````````````````me.
+    - `[Size <Int32?>]`: The length of the ``````````````````a``````````````````tt``````````````````a``````````````````chment in bytes.
+  - `[``````````````````a``````````````````ttendees <IMicrosoftGr``````````````````a``````````````````ph``````````````````a``````````````````ttendee[]>]`: The collection of ``````````````````a``````````````````ttendees for the event.
+    - `[Type <String>]`: ``````````````````a``````````````````ttendeeType
+    - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[``````````````````a``````````````````ddress <String>]`: The em``````````````````a``````````````````il ``````````````````a``````````````````ddress of the person or entity.
+      - `[N``````````````````a``````````````````me <String>]`: The displ``````````````````a``````````````````y n``````````````````a``````````````````me of the person or entity.
+    - `[ProposedNewTime <IMicrosoftGr``````````````````a``````````````````phTimeSlot>]`: timeSlot
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[End <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+        - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+        - `[D``````````````````a``````````````````teTime <String>]`: ``````````````````a`````````````````` single point of time in ``````````````````a`````````````````` combined d``````````````````a``````````````````te ``````````````````a``````````````````nd time represent``````````````````a``````````````````tion ({d``````````````````a``````````````````te}T{time}; for ex``````````````````a``````````````````mple, 2017-08-29T04:00:00.0000000).
+        - `[TimeZone <String>]`: Represents ``````````````````a`````````````````` time zone, for ex``````````````````a``````````````````mple, 'P``````````````````a``````````````````cific St``````````````````a``````````````````nd``````````````````a``````````````````rd Time'. See below for more possible v``````````````````a``````````````````lues.
+      - `[St``````````````````a``````````````````rt <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+    - `[St``````````````````a``````````````````tus <IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus>]`: responseSt``````````````````a``````````````````tus
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
       - `[Response <String>]`: responseType
-      - `[Time <DateTime?>]`: The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Time <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te ``````````````````a``````````````````nd time th``````````````````a``````````````````t the response w``````````````````a``````````````````s returned. It uses ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Body <IMicrosoftGr``````````````````a``````````````````phItemBody>]`: itemBody
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[BodyPreview <String>]`: The preview of the message associated with the event. It is in text format.
-  - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
-    - `[AllowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers that can be used to create online meetings in this calendar. Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
-    - `[CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]`: The permissions of the users with whom the calendar is shared.
-      - `[Id <String>]`: Read-only.
-      - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
-      - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
-      - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
-      - `[Role <String>]`: calendarRoleType
-    - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Navigation property. Read-only.
-    - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access.
-    - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it.
-    - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
-    - `[ChangeKey <String>]`: Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-    - `[Color <String>]`: calendarColor
-    - `[DefaultOnlineMeetingProvider <String>]`: onlineMeetingProviderType
-    - `[Events <IMicrosoftGraphEvent[]>]`: The events in the calendar. Navigation property. Read-only.
-    - `[HexColor <String>]`: The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is empty. Read-only.
-    - `[IsDefaultCalendar <Boolean?>]`: true if this is the default calendar where new events are created by default, false otherwise.
-    - `[IsRemovable <Boolean?>]`: Indicates whether this user calendar can be deleted from the user mailbox.
-    - `[IsTallyingResponses <Boolean?>]`: Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.
-    - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[Value <String[]>]`: A collection of property values.
-    - `[Name <String>]`: The calendar name.
-    - `[Owner <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[Value <String>]`: A property value.
-  - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the event. Nullable.
-    - `[Id <String>]`: Read-only.
-  - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
-  - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list. Default is false.
-  - `[ICalUId <String>]`: A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.
-  - `[Importance <String>]`: importance
-  - `[Instances <IMicrosoftGraphEvent[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-  - `[IsAllDay <Boolean?>]`: 
-  - `[IsCancelled <Boolean?>]`: 
-  - `[IsDraft <Boolean?>]`: 
-  - `[IsOnlineMeeting <Boolean?>]`: 
-  - `[IsOrganizer <Boolean?>]`: 
-  - `[IsReminderOn <Boolean?>]`: 
-  - `[Location <IMicrosoftGraphLocation>]`: location
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[BodyPreview <String>]`: The preview of the mess``````````````````a``````````````````ge ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the event. It is in text form``````````````````a``````````````````t.
+  - `[C``````````````````a``````````````````lend``````````````````a``````````````````r <IMicrosoftGr``````````````````a``````````````````phC``````````````````a``````````````````lend``````````````````a``````````````````r>]`: c``````````````````a``````````````````lend``````````````````a``````````````````r
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+    - `[``````````````````a``````````````````llowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers th``````````````````a``````````````````t c``````````````````a``````````````````n be used to cre``````````````````a``````````````````te online meetings in this c``````````````````a``````````````````lend``````````````````a``````````````````r. Possible v``````````````````a``````````````````lues ``````````````````a``````````````````re: unknown, skypeForBusiness, skypeForConsumer, te``````````````````a``````````````````msForBusiness.
+    - `[C``````````````````a``````````````````lend``````````````````a``````````````````rPermissions <IMicrosoftGr``````````````````a``````````````````phC``````````````````a``````````````````lend``````````````````a``````````````````rPermission[]>]`: The permissions of the users with whom the c``````````````````a``````````````````lend``````````````````a``````````````````r is sh``````````````````a``````````````````red.
+      - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+      - `[``````````````````a``````````````````llowedRoles <String[]>]`: List of ``````````````````a``````````````````llowed sh``````````````````a``````````````````ring or deleg``````````````````a``````````````````ting permission levels for the c``````````````````a``````````````````lend``````````````````a``````````````````r. Possible v``````````````````a``````````````````lues ``````````````````a``````````````````re: none, freeBusyRe``````````````````a``````````````````d, limitedRe``````````````````a``````````````````d, re``````````````````a``````````````````d, write, deleg``````````````````a``````````````````teWithoutPriv``````````````````a``````````````````teEvent``````````````````a``````````````````ccess, deleg``````````````````a``````````````````teWithPriv``````````````````a``````````````````teEvent``````````````````a``````````````````ccess, custom.
+      - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+      - `[IsInsideOrg``````````````````a``````````````````niz``````````````````a``````````````````tion <Boole``````````````````a``````````````````n?>]`: True if the user in context (sh``````````````````a``````````````````ree or deleg``````````````````a``````````````````te) is inside the s``````````````````a``````````````````me org``````````````````a``````````````````niz``````````````````a``````````````````tion ``````````````````a``````````````````s the c``````````````````a``````````````````lend``````````````````a``````````````````r owner.
+      - `[IsRemov``````````````````a``````````````````ble <Boole``````````````````a``````````````````n?>]`: True if the user c``````````````````a``````````````````n be removed from the list of sh``````````````````a``````````````````rees or deleg``````````````````a``````````````````tes for the specified c``````````````````a``````````````````lend``````````````````a``````````````````r, f``````````````````a``````````````````lse otherwise. The 'My org``````````````````a``````````````````niz``````````````````a``````````````````tion' user determines the permissions other people within your org``````````````````a``````````````````niz``````````````````a``````````````````tion h``````````````````a``````````````````ve to the given c``````````````````a``````````````````lend``````````````````a``````````````````r. You c``````````````````a``````````````````nnot remove 'My org``````````````````a``````````````````niz``````````````````a``````````````````tion' ``````````````````a``````````````````s ``````````````````a`````````````````` sh``````````````````a``````````````````ree to ``````````````````a`````````````````` c``````````````````a``````````````````lend``````````````````a``````````````````r.
+      - `[Role <String>]`: c``````````````````a``````````````````lend``````````````````a``````````````````rRoleType
+    - `[C``````````````````a``````````````````lend``````````````````a``````````````````rView <IMicrosoftGr``````````````````a``````````````````phEvent[]>]`: The c``````````````````a``````````````````lend``````````````````a``````````````````r view for the c``````````````````a``````````````````lend``````````````````a``````````````````r. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only.
+    - `[C``````````````````a``````````````````nEdit <Boole``````````````````a``````````````````n?>]`: true if the user c``````````````````a``````````````````n write to the c``````````````````a``````````````````lend``````````````````a``````````````````r, f``````````````````a``````````````````lse otherwise. This property is true for the user who cre``````````````````a``````````````````ted the c``````````````````a``````````````````lend``````````````````a``````````````````r. This property is ``````````````````a``````````````````lso true for ``````````````````a`````````````````` user who h``````````````````a``````````````````s been sh``````````````````a``````````````````red ``````````````````a`````````````````` c``````````````````a``````````````````lend``````````````````a``````````````````r ``````````````````a``````````````````nd gr``````````````````a``````````````````nted write ``````````````````a``````````````````ccess.
+    - `[C``````````````````a``````````````````nSh``````````````````a``````````````````re <Boole``````````````````a``````````````````n?>]`: true if the user h``````````````````a``````````````````s the permission to sh``````````````````a``````````````````re the c``````````````````a``````````````````lend``````````````````a``````````````````r, f``````````````````a``````````````````lse otherwise. Only the user who cre``````````````````a``````````````````ted the c``````````````````a``````````````````lend``````````````````a``````````````````r c``````````````````a``````````````````n sh``````````````````a``````````````````re it.
+    - `[C``````````````````a``````````````````nViewPriv``````````````````a``````````````````teItems <Boole``````````````````a``````````````````n?>]`: true if the user c``````````````````a``````````````````n re``````````````````a``````````````````d c``````````````````a``````````````````lend``````````````````a``````````````````r items th``````````````````a``````````````````t h``````````````````a``````````````````ve been m``````````````````a``````````````````rked priv``````````````````a``````````````````te, f``````````````````a``````````````````lse otherwise.
+    - `[Ch``````````````````a``````````````````ngeKey <String>]`: Identifies the version of the c``````````````````a``````````````````lend``````````````````a``````````````````r object. Every time the c``````````````````a``````````````````lend``````````````````a``````````````````r is ch``````````````````a``````````````````nged, ch``````````````````a``````````````````ngeKey ch``````````````````a``````````````````nges ``````````````````a``````````````````s well. This ``````````````````a``````````````````llows Exch``````````````````a``````````````````nge to ``````````````````a``````````````````pply ch``````````````````a``````````````````nges to the correct version of the object. Re``````````````````a``````````````````d-only.
+    - `[Color <String>]`: c``````````````````a``````````````````lend``````````````````a``````````````````rColor
+    - `[Def``````````````````a``````````````````ultOnlineMeetingProvider <String>]`: onlineMeetingProviderType
+    - `[Events <IMicrosoftGr``````````````````a``````````````````phEvent[]>]`: The events in the c``````````````````a``````````````````lend``````````````````a``````````````````r. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only.
+    - `[HexColor <String>]`: The c``````````````````a``````````````````lend``````````````````a``````````````````r color, expressed in ``````````````````a`````````````````` hex color code of three hex``````````````````a``````````````````decim``````````````````a``````````````````l v``````````````````a``````````````````lues, e``````````````````a``````````````````ch r``````````````````a``````````````````nging from 00 to FF ``````````````````a``````````````````nd representing the red, green, or blue components of the color in the RGB color sp``````````````````a``````````````````ce. If the user h``````````````````a``````````````````s never explicitly set ``````````````````a`````````````````` color for the c``````````````````a``````````````````lend``````````````````a``````````````````r, this property is empty. Re``````````````````a``````````````````d-only.
+    - `[IsDef``````````````````a``````````````````ultC``````````````````a``````````````````lend``````````````````a``````````````````r <Boole``````````````````a``````````````````n?>]`: true if this is the def``````````````````a``````````````````ult c``````````````````a``````````````````lend``````````````````a``````````````````r where new events ``````````````````a``````````````````re cre``````````````````a``````````````````ted by def``````````````````a``````````````````ult, f``````````````````a``````````````````lse otherwise.
+    - `[IsRemov``````````````````a``````````````````ble <Boole``````````````````a``````````````````n?>]`: Indic``````````````````a``````````````````tes whether this user c``````````````````a``````````````````lend``````````````````a``````````````````r c``````````````````a``````````````````n be deleted from the user m``````````````````a``````````````````ilbox.
+    - `[IsT``````````````````a``````````````````llyingResponses <Boole``````````````````a``````````````````n?>]`: Indic``````````````````a``````````````````tes whether this user c``````````````````a``````````````````lend``````````````````a``````````````````r supports tr``````````````````a``````````````````cking of meeting responses. Only meeting invites sent from users' prim``````````````````a``````````````````ry c``````````````````a``````````````````lend``````````````````a``````````````````rs support tr``````````````````a``````````````````cking of meeting responses.
+    - `[MultiV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phMultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of multi-v``````````````````a``````````````````lue extended properties defined for the c``````````````````a``````````````````lend``````````````````a``````````````````r. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+      - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+      - `[V``````````````````a``````````````````lue <String[]>]`: ``````````````````a`````````````````` collection of property v``````````````````a``````````````````lues.
+    - `[N``````````````````a``````````````````me <String>]`: The c``````````````````a``````````````````lend``````````````````a``````````````````r n``````````````````a``````````````````me.
+    - `[Owner <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+    - `[SingleV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phSingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of single-v``````````````````a``````````````````lue extended properties defined for the c``````````````````a``````````````````lend``````````````````a``````````````````r. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+      - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+      - `[V``````````````````a``````````````````lue <String>]`: ``````````````````a`````````````````` property v``````````````````a``````````````````lue.
+  - `[End <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
+  - `[Extensions <IMicrosoftGr``````````````````a``````````````````phExtension[]>]`: The collection of open extensions defined for the event. Null``````````````````a``````````````````ble.
+    - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+  - `[H``````````````````a``````````````````s``````````````````a``````````````````tt``````````````````a``````````````````chments <Boole``````````````````a``````````````````n?>]`: Set to true if the event h``````````````````a``````````````````s ``````````````````a``````````````````tt``````````````````a``````````````````chments.
+  - `[Hide``````````````````a``````````````````ttendees <Boole``````````````````a``````````````````n?>]`: When set to true, e``````````````````a``````````````````ch ``````````````````a``````````````````ttendee only sees themselves in the meeting request ``````````````````a``````````````````nd meeting Tr``````````````````a``````````````````cking list. Def``````````````````a``````````````````ult is f``````````````````a``````````````````lse.
+  - `[IC``````````````````a``````````````````lUId <String>]`: ``````````````````a`````````````````` unique identifier for ``````````````````a``````````````````n event ``````````````````a``````````````````cross c``````````````````a``````````````````lend``````````````````a``````````````````rs. This ID is different for e``````````````````a``````````````````ch occurrence in ``````````````````a`````````````````` recurring series. Re``````````````````a``````````````````d-only.
+  - `[Import``````````````````a``````````````````nce <String>]`: import``````````````````a``````````````````nce
+  - `[Inst``````````````````a``````````````````nces <IMicrosoftGr``````````````````a``````````````````phEvent[]>]`: The occurrences of ``````````````````a`````````````````` recurring series, if the event is ``````````````````a`````````````````` series m``````````````````a``````````````````ster. This property includes occurrences th``````````````````a``````````````````t ``````````````````a``````````````````re p``````````````````a``````````````````rt of the recurrence p``````````````````a``````````````````ttern, ``````````````````a``````````````````nd exceptions th``````````````````a``````````````````t h``````````````````a``````````````````ve been modified, but does not include occurrences th``````````````````a``````````````````t h``````````````````a``````````````````ve been c``````````````````a``````````````````ncelled from the series. N``````````````````a``````````````````vig``````````````````a``````````````````tion property. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[Is``````````````````a``````````````````llD``````````````````a``````````````````y <Boole``````````````````a``````````````````n?>]`: 
+  - `[IsC``````````````````a``````````````````ncelled <Boole``````````````````a``````````````````n?>]`: 
+  - `[IsDr``````````````````a``````````````````ft <Boole``````````````````a``````````````````n?>]`: 
+  - `[IsOnlineMeeting <Boole``````````````````a``````````````````n?>]`: 
+  - `[IsOrg``````````````````a``````````````````nizer <Boole``````````````````a``````````````````n?>]`: 
+  - `[IsReminderOn <Boole``````````````````a``````````````````n?>]`: 
+  - `[Loc``````````````````a``````````````````tion <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion>]`: loc``````````````````a``````````````````tion
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phPhysic``````````````````a``````````````````l``````````````````a``````````````````ddress>]`: physic``````````````````a``````````````````l``````````````````a``````````````````ddress
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
       - `[City <String>]`: The city.
-      - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-      - `[PostalCode <String>]`: The postal code.
-      - `[State <String>]`: The state.
+      - `[CountryOrRegion <String>]`: The country or region. It's ``````````````````a`````````````````` free-form``````````````````a``````````````````t string v``````````````````a``````````````````lue, for ex``````````````````a``````````````````mple, 'United St``````````````````a``````````````````tes'.
+      - `[Post``````````````````a``````````````````lCode <String>]`: The post``````````````````a``````````````````l code.
+      - `[St``````````````````a``````````````````te <String>]`: The st``````````````````a``````````````````te.
       - `[Street <String>]`: The street.
-    - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-      - `[Altitude <Double?>]`: The altitude of the location.
-      - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-      - `[Latitude <Double?>]`: The latitude of the location.
-      - `[Longitude <Double?>]`: The longitude of the location.
-    - `[DisplayName <String>]`: The name associated with the location.
-    - `[LocationEmailAddress <String>]`: Optional email address of the location.
-    - `[LocationType <String>]`: locationType
-    - `[LocationUri <String>]`: Optional URI representing the location.
-    - `[UniqueId <String>]`: For internal use only.
-    - `[UniqueIdType <String>]`: locationUniqueIdType
-  - `[Locations <IMicrosoftGraphLocation[]>]`: 
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
-  - `[OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>]`: onlineMeetingInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Coordin``````````````````a``````````````````tes <IMicrosoftGr``````````````````a``````````````````phOutlookGeoCoordin``````````````````a``````````````````tes>]`: outlookGeoCoordin``````````````````a``````````````````tes
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[``````````````````a``````````````````ccur``````````````````a``````````````````cy <Double?>]`: The ``````````````````a``````````````````ccur``````````````````a``````````````````cy of the l``````````````````a``````````````````titude ``````````````````a``````````````````nd longitude. ``````````````````a``````````````````s ``````````````````a``````````````````n ex``````````````````a``````````````````mple, the ``````````````````a``````````````````ccur``````````````````a``````````````````cy c``````````````````a``````````````````n be me``````````````````a``````````````````sured in meters, such ``````````````````a``````````````````s the l``````````````````a``````````````````titude ``````````````````a``````````````````nd longitude ``````````````````a``````````````````re ``````````````````a``````````````````ccur``````````````````a``````````````````te to within 50 meters.
+      - `[``````````````````a``````````````````ltitude <Double?>]`: The ``````````````````a``````````````````ltitude of the loc``````````````````a``````````````````tion.
+      - `[``````````````````a``````````````````ltitude``````````````````a``````````````````ccur``````````````````a``````````````````cy <Double?>]`: The ``````````````````a``````````````````ccur``````````````````a``````````````````cy of the ``````````````````a``````````````````ltitude.
+      - `[L``````````````````a``````````````````titude <Double?>]`: The l``````````````````a``````````````````titude of the loc``````````````````a``````````````````tion.
+      - `[Longitude <Double?>]`: The longitude of the loc``````````````````a``````````````````tion.
+    - `[Displ``````````````````a``````````````````yN``````````````````a``````````````````me <String>]`: The n``````````````````a``````````````````me ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the loc``````````````````a``````````````````tion.
+    - `[Loc``````````````````a``````````````````tionEm``````````````````a``````````````````il``````````````````a``````````````````ddress <String>]`: Option``````````````````a``````````````````l em``````````````````a``````````````````il ``````````````````a``````````````````ddress of the loc``````````````````a``````````````````tion.
+    - `[Loc``````````````````a``````````````````tionType <String>]`: loc``````````````````a``````````````````tionType
+    - `[Loc``````````````````a``````````````````tionUri <String>]`: Option``````````````````a``````````````````l URI representing the loc``````````````````a``````````````````tion.
+    - `[UniqueId <String>]`: For intern``````````````````a``````````````````l use only.
+    - `[UniqueIdType <String>]`: loc``````````````````a``````````````````tionUniqueIdType
+  - `[Loc``````````````````a``````````````````tions <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion[]>]`: 
+  - `[MultiV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phMultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of multi-v``````````````````a``````````````````lue extended properties defined for the event. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[OnlineMeeting <IMicrosoftGr``````````````````a``````````````````phOnlineMeetingInfo>]`: onlineMeetingInfo
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
     - `[ConferenceId <String>]`: The ID of the conference.
-    - `[JoinUrl <String>]`: The external link that launches the online meeting. This is a URL that clients will launch into a browser and will redirect the user to join the meeting.
-    - `[Phones <IMicrosoftGraphPhone[]>]`: All of the phone numbers associated with this conference.
-      - `[Language <String>]`: 
+    - `[JoinUrl <String>]`: The extern``````````````````a``````````````````l link th``````````````````a``````````````````t l``````````````````a``````````````````unches the online meeting. This is ``````````````````a`````````````````` URL th``````````````````a``````````````````t clients will l``````````````````a``````````````````unch into ``````````````````a`````````````````` browser ``````````````````a``````````````````nd will redirect the user to join the meeting.
+    - `[Phones <IMicrosoftGr``````````````````a``````````````````phPhone[]>]`: ``````````````````a``````````````````ll of the phone numbers ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with this conference.
+      - `[L``````````````````a``````````````````ngu``````````````````a``````````````````ge <String>]`: 
       - `[Number <String>]`: The phone number.
       - `[Region <String>]`: 
       - `[Type <String>]`: phoneType
-    - `[QuickDial <String>]`: The pre-formatted quickdial for this call.
-    - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
-    - `[TollNumber <String>]`: The toll number that can be used to join the conference.
+    - `[QuickDi``````````````````a``````````````````l <String>]`: The pre-form``````````````````a``````````````````tted quickdi``````````````````a``````````````````l for this c``````````````````a``````````````````ll.
+    - `[TollFreeNumbers <String[]>]`: The toll free numbers th``````````````````a``````````````````t c``````````````````a``````````````````n be used to join the conference.
+    - `[TollNumber <String>]`: The toll number th``````````````````a``````````````````t c``````````````````a``````````````````n be used to join the conference.
   - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
   - `[OnlineMeetingUrl <String>]`: 
-  - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[OriginalEndTimeZone <String>]`: 
-  - `[OriginalStart <DateTime?>]`: 
-  - `[OriginalStartTimeZone <String>]`: 
-  - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-      - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-      - `[FirstDayOfWeek <String>]`: dayOfWeek
+  - `[Org``````````````````a``````````````````nizer <IMicrosoftGr``````````````````a``````````````````phRecipient>]`: recipient
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+  - `[Origin``````````````````a``````````````````lEndTimeZone <String>]`: 
+  - `[Origin``````````````````a``````````````````lSt``````````````````a``````````````````rt <D``````````````````a``````````````````teTime?>]`: 
+  - `[Origin``````````````````a``````````````````lSt``````````````````a``````````````````rtTimeZone <String>]`: 
+  - `[Recurrence <IMicrosoftGr``````````````````a``````````````````phP``````````````````a``````````````````tternedRecurrence>]`: p``````````````````a``````````````````tternedRecurrence
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[P``````````````````a``````````````````ttern <IMicrosoftGr``````````````````a``````````````````phRecurrenceP``````````````````a``````````````````ttern>]`: recurrenceP``````````````````a``````````````````ttern
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[D``````````````````a``````````````````yOfMonth <Int32?>]`: The d``````````````````a``````````````````y of the month on which the event occurs. Required if type is ``````````````````a``````````````````bsoluteMonthly or ``````````````````a``````````````````bsoluteYe``````````````````a``````````````````rly.
+      - `[D``````````````````a``````````````````ysOfWeek <String[]>]`: ``````````````````a`````````````````` collection of the d``````````````````a``````````````````ys of the week on which the event occurs. The possible v``````````````````a``````````````````lues ``````````````````a``````````````````re: sund``````````````````a``````````````````y, mond``````````````````a``````````````````y, tuesd``````````````````a``````````````````y, wednesd``````````````````a``````````````````y, thursd``````````````````a``````````````````y, frid``````````````````a``````````````````y, s``````````````````a``````````````````turd``````````````````a``````````````````y. If type is rel``````````````````a``````````````````tiveMonthly or rel``````````````````a``````````````````tiveYe``````````````````a``````````````````rly, ``````````````````a``````````````````nd d``````````````````a``````````````````ysOfWeek specifies more th``````````````````a``````````````````n one d``````````````````a``````````````````y, the event f``````````````````a``````````````````lls on the first d``````````````````a``````````````````y th``````````````````a``````````````````t s``````````````````a``````````````````tisfies the p``````````````````a``````````````````ttern.  Required if type is weekly, rel``````````````````a``````````````````tiveMonthly, or rel``````````````````a``````````````````tiveYe``````````````````a``````````````````rly.
+      - `[FirstD``````````````````a``````````````````yOfWeek <String>]`: d``````````````````a``````````````````yOfWeek
       - `[Index <String>]`: weekIndex
-      - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
-      - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
-      - `[Type <String>]`: recurrencePatternType
-    - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-      - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-      - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-      - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
-      - `[Type <String>]`: recurrenceRangeType
-  - `[ReminderMinutesBeforeStart <Int32?>]`: 
-  - `[ResponseRequested <Boolean?>]`: 
-  - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
+      - `[Interv``````````````````a``````````````````l <Int32?>]`: The number of units between occurrences, where units c``````````````````a``````````````````n be in d``````````````````a``````````````````ys, weeks, months, or ye``````````````````a``````````````````rs, depending on the type. Required.
+      - `[Month <Int32?>]`: The month in which the event occurs.  This is ``````````````````a`````````````````` number from 1 to 12.
+      - `[Type <String>]`: recurrenceP``````````````````a``````````````````tternType
+    - `[R``````````````````a``````````````````nge <IMicrosoftGr``````````````````a``````````````````phRecurrenceR``````````````````a``````````````````nge>]`: recurrenceR``````````````````a``````````````````nge
+      - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+      - `[EndD``````````````````a``````````````````te <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te to stop ``````````````````a``````````````````pplying the recurrence p``````````````````a``````````````````ttern. Depending on the recurrence p``````````````````a``````````````````ttern of the event, the l``````````````````a``````````````````st occurrence of the meeting m``````````````````a``````````````````y not be this d``````````````````a``````````````````te. Required if type is endD``````````````````a``````````````````te.
+      - `[NumberOfOccurrences <Int32?>]`: The number of times to repe``````````````````a``````````````````t the event. Required ``````````````````a``````````````````nd must be positive if type is numbered.
+      - `[RecurrenceTimeZone <String>]`: Time zone for the st``````````````````a``````````````````rtD``````````````````a``````````````````te ``````````````````a``````````````````nd endD``````````````````a``````````````````te properties. Option``````````````````a``````````````````l. If not specified, the time zone of the event is used.
+      - `[St``````````````````a``````````````````rtD``````````````````a``````````````````te <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te to st``````````````````a``````````````````rt ``````````````````a``````````````````pplying the recurrence p``````````````````a``````````````````ttern. The first occurrence of the meeting m``````````````````a``````````````````y be this d``````````````````a``````````````````te or l``````````````````a``````````````````ter, depending on the recurrence p``````````````````a``````````````````ttern of the event. Must be the s``````````````````a``````````````````me v``````````````````a``````````````````lue ``````````````````a``````````````````s the st``````````````````a``````````````````rt property of the recurring event. Required.
+      - `[Type <String>]`: recurrenceR``````````````````a``````````````````ngeType
+  - `[ReminderMinutesBeforeSt``````````````````a``````````````````rt <Int32?>]`: 
+  - `[ResponseRequested <Boole``````````````````a``````````````````n?>]`: 
+  - `[ResponseSt``````````````````a``````````````````tus <IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus>]`: responseSt``````````````````a``````````````````tus
   - `[Sensitivity <String>]`: sensitivity
-  - `[SeriesMasterId <String>]`: 
-  - `[ShowAs <String>]`: freeBusyStatus
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
-  - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[SeriesM``````````````````a``````````````````sterId <String>]`: 
+  - `[Show``````````````````a``````````````````s <String>]`: freeBusySt``````````````````a``````````````````tus
+  - `[SingleV``````````````````a``````````````````lueExtendedProperties <IMicrosoftGr``````````````````a``````````````````phSingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>]`: The collection of single-v``````````````````a``````````````````lue extended properties defined for the event. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[St``````````````````a``````````````````rt <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>]`: d``````````````````a``````````````````teTimeTimeZone
   - `[Subject <String>]`: 
-  - `[TransactionId <String>]`: 
+  - `[Tr``````````````````a``````````````````ns``````````````````a``````````````````ctionId <String>]`: 
   - `[Type <String>]`: eventType
   - `[WebLink <String>]`: 
 
-LOCATION <IMicrosoftGraphLocation>: location
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+LOC``````````````````a``````````````````TION <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion>: loc``````````````````a``````````````````tion
+  - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+  - `[``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phPhysic``````````````````a``````````````````l``````````````````a``````````````````ddress>]`: physic``````````````````a``````````````````l``````````````````a``````````````````ddress
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
     - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
+    - `[CountryOrRegion <String>]`: The country or region. It's ``````````````````a`````````````````` free-form``````````````````a``````````````````t string v``````````````````a``````````````````lue, for ex``````````````````a``````````````````mple, 'United St``````````````````a``````````````````tes'.
+    - `[Post``````````````````a``````````````````lCode <String>]`: The post``````````````````a``````````````````l code.
+    - `[St``````````````````a``````````````````te <String>]`: The st``````````````````a``````````````````te.
     - `[Street <String>]`: The street.
-  - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    - `[Altitude <Double?>]`: The altitude of the location.
-    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-    - `[Latitude <Double?>]`: The latitude of the location.
-    - `[Longitude <Double?>]`: The longitude of the location.
-  - `[DisplayName <String>]`: The name associated with the location.
-  - `[LocationEmailAddress <String>]`: Optional email address of the location.
-  - `[LocationType <String>]`: locationType
-  - `[LocationUri <String>]`: Optional URI representing the location.
-  - `[UniqueId <String>]`: For internal use only.
-  - `[UniqueIdType <String>]`: locationUniqueIdType
+  - `[Coordin``````````````````a``````````````````tes <IMicrosoftGr``````````````````a``````````````````phOutlookGeoCoordin``````````````````a``````````````````tes>]`: outlookGeoCoordin``````````````````a``````````````````tes
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[``````````````````a``````````````````ccur``````````````````a``````````````````cy <Double?>]`: The ``````````````````a``````````````````ccur``````````````````a``````````````````cy of the l``````````````````a``````````````````titude ``````````````````a``````````````````nd longitude. ``````````````````a``````````````````s ``````````````````a``````````````````n ex``````````````````a``````````````````mple, the ``````````````````a``````````````````ccur``````````````````a``````````````````cy c``````````````````a``````````````````n be me``````````````````a``````````````````sured in meters, such ``````````````````a``````````````````s the l``````````````````a``````````````````titude ``````````````````a``````````````````nd longitude ``````````````````a``````````````````re ``````````````````a``````````````````ccur``````````````````a``````````````````te to within 50 meters.
+    - `[``````````````````a``````````````````ltitude <Double?>]`: The ``````````````````a``````````````````ltitude of the loc``````````````````a``````````````````tion.
+    - `[``````````````````a``````````````````ltitude``````````````````a``````````````````ccur``````````````````a``````````````````cy <Double?>]`: The ``````````````````a``````````````````ccur``````````````````a``````````````````cy of the ``````````````````a``````````````````ltitude.
+    - `[L``````````````````a``````````````````titude <Double?>]`: The l``````````````````a``````````````````titude of the loc``````````````````a``````````````````tion.
+    - `[Longitude <Double?>]`: The longitude of the loc``````````````````a``````````````````tion.
+  - `[Displ``````````````````a``````````````````yN``````````````````a``````````````````me <String>]`: The n``````````````````a``````````````````me ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the loc``````````````````a``````````````````tion.
+  - `[Loc``````````````````a``````````````````tionEm``````````````````a``````````````````il``````````````````a``````````````````ddress <String>]`: Option``````````````````a``````````````````l em``````````````````a``````````````````il ``````````````````a``````````````````ddress of the loc``````````````````a``````````````````tion.
+  - `[Loc``````````````````a``````````````````tionType <String>]`: loc``````````````````a``````````````````tionType
+  - `[Loc``````````````````a``````````````````tionUri <String>]`: Option``````````````````a``````````````````l URI representing the loc``````````````````a``````````````````tion.
+  - `[UniqueId <String>]`: For intern``````````````````a``````````````````l use only.
+  - `[UniqueIdType <String>]`: loc``````````````````a``````````````````tionUniqueIdType
 
-LOCATIONS <IMicrosoftGraphLocation[]>: .
-  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+LOC``````````````````a``````````````````TIONS <IMicrosoftGr``````````````````a``````````````````phLoc``````````````````a``````````````````tion[]>: .
+  - `[``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phPhysic``````````````````a``````````````````l``````````````````a``````````````````ddress>]`: physic``````````````````a``````````````````l``````````````````a``````````````````ddress
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
     - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
+    - `[CountryOrRegion <String>]`: The country or region. It's ``````````````````a`````````````````` free-form``````````````````a``````````````````t string v``````````````````a``````````````````lue, for ex``````````````````a``````````````````mple, 'United St``````````````````a``````````````````tes'.
+    - `[Post``````````````````a``````````````````lCode <String>]`: The post``````````````````a``````````````````l code.
+    - `[St``````````````````a``````````````````te <String>]`: The st``````````````````a``````````````````te.
     - `[Street <String>]`: The street.
-  - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    - `[Altitude <Double?>]`: The altitude of the location.
-    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-    - `[Latitude <Double?>]`: The latitude of the location.
-    - `[Longitude <Double?>]`: The longitude of the location.
-  - `[DisplayName <String>]`: The name associated with the location.
-  - `[LocationEmailAddress <String>]`: Optional email address of the location.
-  - `[LocationType <String>]`: locationType
-  - `[LocationUri <String>]`: Optional URI representing the location.
-  - `[UniqueId <String>]`: For internal use only.
-  - `[UniqueIdType <String>]`: locationUniqueIdType
+  - `[Coordin``````````````````a``````````````````tes <IMicrosoftGr``````````````````a``````````````````phOutlookGeoCoordin``````````````````a``````````````````tes>]`: outlookGeoCoordin``````````````````a``````````````````tes
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[``````````````````a``````````````````ccur``````````````````a``````````````````cy <Double?>]`: The ``````````````````a``````````````````ccur``````````````````a``````````````````cy of the l``````````````````a``````````````````titude ``````````````````a``````````````````nd longitude. ``````````````````a``````````````````s ``````````````````a``````````````````n ex``````````````````a``````````````````mple, the ``````````````````a``````````````````ccur``````````````````a``````````````````cy c``````````````````a``````````````````n be me``````````````````a``````````````````sured in meters, such ``````````````````a``````````````````s the l``````````````````a``````````````````titude ``````````````````a``````````````````nd longitude ``````````````````a``````````````````re ``````````````````a``````````````````ccur``````````````````a``````````````````te to within 50 meters.
+    - `[``````````````````a``````````````````ltitude <Double?>]`: The ``````````````````a``````````````````ltitude of the loc``````````````````a``````````````````tion.
+    - `[``````````````````a``````````````````ltitude``````````````````a``````````````````ccur``````````````````a``````````````````cy <Double?>]`: The ``````````````````a``````````````````ccur``````````````````a``````````````````cy of the ``````````````````a``````````````````ltitude.
+    - `[L``````````````````a``````````````````titude <Double?>]`: The l``````````````````a``````````````````titude of the loc``````````````````a``````````````````tion.
+    - `[Longitude <Double?>]`: The longitude of the loc``````````````````a``````````````````tion.
+  - `[Displ``````````````````a``````````````````yN``````````````````a``````````````````me <String>]`: The n``````````````````a``````````````````me ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with the loc``````````````````a``````````````````tion.
+  - `[Loc``````````````````a``````````````````tionEm``````````````````a``````````````````il``````````````````a``````````````````ddress <String>]`: Option``````````````````a``````````````````l em``````````````````a``````````````````il ``````````````````a``````````````````ddress of the loc``````````````````a``````````````````tion.
+  - `[Loc``````````````````a``````````````````tionType <String>]`: loc``````````````````a``````````````````tionType
+  - `[Loc``````````````````a``````````````````tionUri <String>]`: Option``````````````````a``````````````````l URI representing the loc``````````````````a``````````````````tion.
+  - `[UniqueId <String>]`: For intern``````````````````a``````````````````l use only.
+  - `[UniqueIdType <String>]`: loc``````````````````a``````````````````tionUniqueIdType
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
-  - `[Value <String[]>]`: A collection of property values.
+MULTIV``````````````````a``````````````````LUEEXTENDEDPROPERTIES <IMicrosoftGr``````````````````a``````````````````phMultiV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>: The collection of multi-v``````````````````a``````````````````lue extended properties defined for the event. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+  - `[V``````````````````a``````````````````lue <String[]>]`: ``````````````````a`````````````````` collection of property v``````````````````a``````````````````lues.
 
-ONLINEMEETING <IMicrosoftGraphOnlineMeetingInfo>: onlineMeetingInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+ONLINEMEETING <IMicrosoftGr``````````````````a``````````````````phOnlineMeetingInfo>: onlineMeetingInfo
+  - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
   - `[ConferenceId <String>]`: The ID of the conference.
-  - `[JoinUrl <String>]`: The external link that launches the online meeting. This is a URL that clients will launch into a browser and will redirect the user to join the meeting.
-  - `[Phones <IMicrosoftGraphPhone[]>]`: All of the phone numbers associated with this conference.
-    - `[Language <String>]`: 
+  - `[JoinUrl <String>]`: The extern``````````````````a``````````````````l link th``````````````````a``````````````````t l``````````````````a``````````````````unches the online meeting. This is ``````````````````a`````````````````` URL th``````````````````a``````````````````t clients will l``````````````````a``````````````````unch into ``````````````````a`````````````````` browser ``````````````````a``````````````````nd will redirect the user to join the meeting.
+  - `[Phones <IMicrosoftGr``````````````````a``````````````````phPhone[]>]`: ``````````````````a``````````````````ll of the phone numbers ``````````````````a``````````````````ssoci``````````````````a``````````````````ted with this conference.
+    - `[L``````````````````a``````````````````ngu``````````````````a``````````````````ge <String>]`: 
     - `[Number <String>]`: The phone number.
     - `[Region <String>]`: 
     - `[Type <String>]`: phoneType
-  - `[QuickDial <String>]`: The pre-formatted quickdial for this call.
-  - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
-  - `[TollNumber <String>]`: The toll number that can be used to join the conference.
+  - `[QuickDi``````````````````a``````````````````l <String>]`: The pre-form``````````````````a``````````````````tted quickdi``````````````````a``````````````````l for this c``````````````````a``````````````````ll.
+  - `[TollFreeNumbers <String[]>]`: The toll free numbers th``````````````````a``````````````````t c``````````````````a``````````````````n be used to join the conference.
+  - `[TollNumber <String>]`: The toll number th``````````````````a``````````````````t c``````````````````a``````````````````n be used to join the conference.
 
-ORGANIZER <IMicrosoftGraphRecipient>: recipient
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+ORG``````````````````a``````````````````NIZER <IMicrosoftGr``````````````````a``````````````````phRecipient>: recipient
+  - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+  - `[Em``````````````````a``````````````````il``````````````````a``````````````````ddress <IMicrosoftGr``````````````````a``````````````````phEm``````````````````a``````````````````il``````````````````a``````````````````ddress>]`: em``````````````````a``````````````````il``````````````````a``````````````````ddress
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[``````````````````a``````````````````ddress <String>]`: The em``````````````````a``````````````````il ``````````````````a``````````````````ddress of the person or entity.
+    - `[N``````````````````a``````````````````me <String>]`: The displ``````````````````a``````````````````y n``````````````````a``````````````````me of the person or entity.
 
-RECURRENCE <IMicrosoftGraphPatternedRecurrence>: patternedRecurrence
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-    - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-    - `[FirstDayOfWeek <String>]`: dayOfWeek
+RECURRENCE <IMicrosoftGr``````````````````a``````````````````phP``````````````````a``````````````````tternedRecurrence>: p``````````````````a``````````````````tternedRecurrence
+  - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+  - `[P``````````````````a``````````````````ttern <IMicrosoftGr``````````````````a``````````````````phRecurrenceP``````````````````a``````````````````ttern>]`: recurrenceP``````````````````a``````````````````ttern
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[D``````````````````a``````````````````yOfMonth <Int32?>]`: The d``````````````````a``````````````````y of the month on which the event occurs. Required if type is ``````````````````a``````````````````bsoluteMonthly or ``````````````````a``````````````````bsoluteYe``````````````````a``````````````````rly.
+    - `[D``````````````````a``````````````````ysOfWeek <String[]>]`: ``````````````````a`````````````````` collection of the d``````````````````a``````````````````ys of the week on which the event occurs. The possible v``````````````````a``````````````````lues ``````````````````a``````````````````re: sund``````````````````a``````````````````y, mond``````````````````a``````````````````y, tuesd``````````````````a``````````````````y, wednesd``````````````````a``````````````````y, thursd``````````````````a``````````````````y, frid``````````````````a``````````````````y, s``````````````````a``````````````````turd``````````````````a``````````````````y. If type is rel``````````````````a``````````````````tiveMonthly or rel``````````````````a``````````````````tiveYe``````````````````a``````````````````rly, ``````````````````a``````````````````nd d``````````````````a``````````````````ysOfWeek specifies more th``````````````````a``````````````````n one d``````````````````a``````````````````y, the event f``````````````````a``````````````````lls on the first d``````````````````a``````````````````y th``````````````````a``````````````````t s``````````````````a``````````````````tisfies the p``````````````````a``````````````````ttern.  Required if type is weekly, rel``````````````````a``````````````````tiveMonthly, or rel``````````````````a``````````````````tiveYe``````````````````a``````````````````rly.
+    - `[FirstD``````````````````a``````````````````yOfWeek <String>]`: d``````````````````a``````````````````yOfWeek
     - `[Index <String>]`: weekIndex
-    - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
-    - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
-    - `[Type <String>]`: recurrencePatternType
-  - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-    - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-    - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-    - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
-    - `[Type <String>]`: recurrenceRangeType
+    - `[Interv``````````````````a``````````````````l <Int32?>]`: The number of units between occurrences, where units c``````````````````a``````````````````n be in d``````````````````a``````````````````ys, weeks, months, or ye``````````````````a``````````````````rs, depending on the type. Required.
+    - `[Month <Int32?>]`: The month in which the event occurs.  This is ``````````````````a`````````````````` number from 1 to 12.
+    - `[Type <String>]`: recurrenceP``````````````````a``````````````````tternType
+  - `[R``````````````````a``````````````````nge <IMicrosoftGr``````````````````a``````````````````phRecurrenceR``````````````````a``````````````````nge>]`: recurrenceR``````````````````a``````````````````nge
+    - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+    - `[EndD``````````````````a``````````````````te <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te to stop ``````````````````a``````````````````pplying the recurrence p``````````````````a``````````````````ttern. Depending on the recurrence p``````````````````a``````````````````ttern of the event, the l``````````````````a``````````````````st occurrence of the meeting m``````````````````a``````````````````y not be this d``````````````````a``````````````````te. Required if type is endD``````````````````a``````````````````te.
+    - `[NumberOfOccurrences <Int32?>]`: The number of times to repe``````````````````a``````````````````t the event. Required ``````````````````a``````````````````nd must be positive if type is numbered.
+    - `[RecurrenceTimeZone <String>]`: Time zone for the st``````````````````a``````````````````rtD``````````````````a``````````````````te ``````````````````a``````````````````nd endD``````````````````a``````````````````te properties. Option``````````````````a``````````````````l. If not specified, the time zone of the event is used.
+    - `[St``````````````````a``````````````````rtD``````````````````a``````````````````te <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te to st``````````````````a``````````````````rt ``````````````````a``````````````````pplying the recurrence p``````````````````a``````````````````ttern. The first occurrence of the meeting m``````````````````a``````````````````y be this d``````````````````a``````````````````te or l``````````````````a``````````````````ter, depending on the recurrence p``````````````````a``````````````````ttern of the event. Must be the s``````````````````a``````````````````me v``````````````````a``````````````````lue ``````````````````a``````````````````s the st``````````````````a``````````````````rt property of the recurring event. Required.
+    - `[Type <String>]`: recurrenceR``````````````````a``````````````````ngeType
 
-RESPONSESTATUS <IMicrosoftGraphResponseStatus>: responseStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+RESPONSEST``````````````````a``````````````````TUS <IMicrosoftGr``````````````````a``````````````````phResponseSt``````````````````a``````````````````tus>: responseSt``````````````````a``````````````````tus
+  - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
   - `[Response <String>]`: responseType
-  - `[Time <DateTime?>]`: The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Time <D``````````````````a``````````````````teTime?>]`: The d``````````````````a``````````````````te ``````````````````a``````````````````nd time th``````````````````a``````````````````t the response w``````````````````a``````````````````s returned. It uses ISO 8601 form``````````````````a``````````````````t ``````````````````a``````````````````nd is ``````````````````a``````````````````lw``````````````````a``````````````````ys in UTC time. For ex``````````````````a``````````````````mple, midnight UTC on J``````````````````a``````````````````n 1, 2014 is 2014-01-01T00:00:00Z
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the event. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
-  - `[Value <String>]`: A property value.
+SINGLEV``````````````````a``````````````````LUEEXTENDEDPROPERTIES <IMicrosoftGr``````````````````a``````````````````phSingleV``````````````````a``````````````````lueLeg``````````````````a``````````````````cyExtendedProperty[]>: The collection of single-v``````````````````a``````````````````lue extended properties defined for the event. Re``````````````````a``````````````````d-only. Null``````````````````a``````````````````ble.
+  - `[Id <String>]`: Re``````````````````a``````````````````d-only.
+  - `[V``````````````````a``````````````````lue <String>]`: ``````````````````a`````````````````` property v``````````````````a``````````````````lue.
 
-START <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+ST``````````````````a``````````````````RT <IMicrosoftGr``````````````````a``````````````````phD``````````````````a``````````````````teTimeZone>: d``````````````````a``````````````````teTimeTimeZone
+  - `[(``````````````````a``````````````````ny) <Object>]`: This indic``````````````````a``````````````````tes ``````````````````a``````````````````ny property c``````````````````a``````````````````n be ``````````````````a``````````````````dded to this object.
+  - `[D``````````````````a``````````````````teTime <String>]`: ``````````````````a`````````````````` single point of time in ``````````````````a`````````````````` combined d``````````````````a``````````````````te ``````````````````a``````````````````nd time represent``````````````````a``````````````````tion ({d``````````````````a``````````````````te}T{time}; for ex``````````````````a``````````````````mple, 2017-08-29T04:00:00.0000000).
+  - `[TimeZone <String>]`: Represents ``````````````````a`````````````````` time zone, for ex``````````````````a``````````````````mple, 'P``````````````````a``````````````````cific St``````````````````a``````````````````nd``````````````````a``````````````````rd Time'. See below for more possible v``````````````````a``````````````````lues.
 
-## RELATED LINKS
+## REL``````````````````a``````````````````TED LINKS
 
-## RELATED LINKS
+## REL``````````````````a``````````````````TED LINKS
