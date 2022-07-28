@@ -1,182 +1,182 @@
-﻿---
-external help file: Microsoft.Graph.DirectoryObjects-help.xml
-Module Name: Microsoft.Graph.DirectoryObjects
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmembergroup
+---
+external help f``i``le: M``i``crosoft.Graph.D``i``rectoryObjects-help.xml
+Module Name: M``i``crosoft.Graph.D``i``rectoryObjects
+onl``i``ne vers``i``on: https://docs.m``i``crosoft.com/en-us/powershell/module/m``i``crosoft.graph.d``i``rectoryobjects/get-mgd``i``rectoryobjectmembergroup
 schema: 2.0.0
 ---
 
-# Get-MgDirectoryObjectMemberGroup
+# Get-MgD``i``rectoryObjectMemberGroup
 
-## SYNOPSIS
-Invoke action getMemberGroups
+## SYNOPS``i``S
+``i``nvoke act``i``on getMemberGroups
 
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
-Get-MgDirectoryObjectMemberGroup -DirectoryObjectId <String> [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgD``i``rectoryObjectMemberGroup -D``i``rectoryObject``i``d <Str``i``ng> [-Add``i``t``i``onalPropert``i``es <Hashtable>]
+ [-Secur``i``tyEnabledOnly] [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDirectoryObjectMemberGroup -DirectoryObjectId <String>
- -BodyParameter <IPaths15Et6VvDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgD``i``rectoryObjectMemberGroup -D``i``rectoryObject``i``d <Str``i``ng>
+ -BodyParameter <``i``Paths15Et6VvD``i``rectoryobjectsD``i``rectoryobject``i``dM``i``crosoftGraphGetmembergroupsPostRequestbodyContentAppl``i``cat``i``onJsonSchema>
+ [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded
+### GetV``i``a``i``dent``i``tyExpanded
 ```
-Get-MgDirectoryObjectMemberGroup -InputObject <IDirectoryObjectsIdentity> [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgDirectoryObjectMemberGroup -InputObject <IDirectoryObjectsIdentity>
- -BodyParameter <IPaths15Et6VvDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgD``i``rectoryObjectMemberGroup -``i``nputObject <``i``D``i``rectoryObjects``i``dent``i``ty> [-Add``i``t``i``onalPropert``i``es <Hashtable>]
+ [-Secur``i``tyEnabledOnly] [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Invoke action getMemberGroups
+### GetV``i``a``i``dent``i``ty
+```
+Get-MgD``i``rectoryObjectMemberGroup -``i``nputObject <``i``D``i``rectoryObjects``i``dent``i``ty>
+ -BodyParameter <``i``Paths15Et6VvD``i``rectoryobjectsD``i``rectoryobject``i``dM``i``crosoftGraphGetmembergroupsPostRequestbodyContentAppl``i``cat``i``onJsonSchema>
+ [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
+```
+
+## DESCR``i``PT``i``ON
+``i``nvoke act``i``on getMemberGroups
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Add``i``t``i``onalPropert``i``es
+Add``i``t``i``onal Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
-Aliases:
+Parameter Sets: GetExpanded, GetV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Onl``i``ne and see NOTES sect``i``on for BODYPARAMETER propert``i``es and create a hash table.
 
 ```yaml
-Type: IPaths15Et6VvDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get, GetViaIdentity
-Aliases:
+Type: ``i``Paths15Et6VvD``i``rectoryobjectsD``i``rectoryobject``i``dM``i``crosoftGraphGetmembergroupsPostRequestbodyContentAppl``i``cat``i``onJsonSchema
+Parameter Sets: Get, GetV``i``a``i``dent``i``ty
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: True (ByValue)
+Accept w``i``ldcard characters: False
 ```
 
-### -DirectoryObjectId
-key: id of directoryObject
+### -D``i``rectoryObject``i``d
+key: ``i``d of d``i``rectoryObject
 
 ```yaml
-Type: String
+Type: Str``i``ng
 Parameter Sets: GetExpanded, Get
-Aliases:
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -``i``nputObject
+``i``dent``i``ty Parameter
+To construct, please use Get-Help -Onl``i``ne and see NOTES sect``i``on for ``i``NPUTOBJECT propert``i``es and create a hash table.
 
 ```yaml
-Type: IDirectoryObjectsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
-Aliases:
+Type: ``i``D``i``rectoryObjects``i``dent``i``ty
+Parameter Sets: GetV``i``a``i``dent``i``tyExpanded, GetV``i``a``i``dent``i``ty
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: True (ByValue)
+Accept w``i``ldcard characters: False
 ```
 
-### -SecurityEnabledOnly
+### -Secur``i``tyEnabledOnly
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
-Aliases:
+Type: Sw``i``tchParameter
+Parameter Sets: GetExpanded, GetV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Conf``i``rm
+Prompts you for conf``i``rmat``i``on before runn``i``ng the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw``i``tchParameter
 Parameter Sets: (All)
-Aliases: cf
+Al``i``ases: cf
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -What``i``f
+Shows what would happen ``i``f the cmdlet runs.
+The cmdlet ``i``s not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw``i``tchParameter
 Parameter Sets: (All)
-Aliases: wi
+Al``i``ases: w``i``
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th``i``s cmdlet supports the common parameters: -Debug, -ErrorAct``i``on, -ErrorVar``i``able, -``i``nformat``i``onAct``i``on, -``i``nformat``i``onVar``i``able, -OutVar``i``able, -OutBuffer, -P``i``pel``i``neVar``i``able, -Verbose, -Warn``i``ngAct``i``on, and -Warn``i``ngVar``i``able. For more ``i``nformat``i``on, see [about_CommonParameters](http://go.m``i``crosoft.com/fwl``i``nk/?L``i``nk``i``D=113216).
 
-## INPUTS
+## ``i``NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDirectoryObjectsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths15Et6VvDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
+### M``i``crosoft.Graph.PowerShell.Models.``i``D``i``rectoryObjects``i``dent``i``ty
+### M``i``crosoft.Graph.PowerShell.Models.``i``Paths15Et6VvD``i``rectoryobjectsD``i``rectoryobject``i``dM``i``crosoftGraphGetmembergroupsPostRequestbodyContentAppl``i``cat``i``onJsonSchema
 ## OUTPUTS
 
-### System.String
+### System.Str``i``ng
 ## NOTES
 
-ALIASES
+AL``i``ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT``i``ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr``i``bed below, construct a hash table conta``i``n``i``ng the appropr``i``ate propert``i``es. For ``i``nformat``i``on on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths15Et6VvDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SecurityEnabledOnly <Boolean?>]`: 
+BODYPARAMETER <``i``Paths15Et6VvD``i``rectoryobjectsD``i``rectoryobject``i``dM``i``crosoftGraphGetmembergroupsPostRequestbodyContentAppl``i``cat``i``onJsonSchema>: .
+  - `[(Any) <Object>]`: Th``i``s ``i``nd``i``cates any property can be added to th``i``s object.
+  - `[Secur``i``tyEnabledOnly <Boolean?>]`: 
 
-INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
+``i``NPUTOBJECT <``i``D``i``rectoryObjects``i``dent``i``ty>: ``i``dent``i``ty Parameter
+  - `[D``i``rectoryObject``i``d <Str``i``ng>]`: key: ``i``d of d``i``rectoryObject
 
-## RELATED LINKS
+## RELATED L``i``NKS
