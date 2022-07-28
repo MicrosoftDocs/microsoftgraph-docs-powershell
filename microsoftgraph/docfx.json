@@ -94,7 +94,7 @@
     "globalMetadata": {
       "apiPlatform": "powershell",
       "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json",
-	  "ms.prod": "",
+	  "ms.prod": "non-product-specific",
       "ms.technology": "",
       "ms.topic": "reference",
       "ms.author": "celested",
