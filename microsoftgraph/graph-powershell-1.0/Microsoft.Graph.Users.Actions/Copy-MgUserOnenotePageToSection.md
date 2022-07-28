@@ -1,291 +1,291 @@
-﻿---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/copy-mguseronenotepagetosection
-schema: 2.0.0
+---
+external help file: Micro``s``oft.Graph.U``s``er``s``.Action``s``-help.xml
+Module Name: Micro``s``oft.Graph.U``s``er``s``.Action``s``
+online ver``s``ion: http``s``://doc``s``.micro``s``oft.com/en-u``s``/power``s``hell/module/micro``s``oft.graph.u``s``er``s``.action``s``/copy-mgu``s``eronenotepageto``s``ection
+``s``chema: 2.0.0
 ---
 
-# Copy-MgUserOnenotePageToSection
+# Copy-MgU``s``erOnenotePageTo``s``ection
 
-## SYNOPSIS
-Invoke action copyToSection
+## ``s``YNOP``s``I``s``
+Invoke action copyTo``s``ection
 
-## SYNTAX
+## ``s``YNTAX
 
 ### CopyExpanded1 (Default)
 ```
-Copy-MgUserOnenotePageToSection -OnenotePageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Copy-MgU``s``erOnenotePageTo``s``ection -OnenotePageId <``s``tring> -U``s``erId <``s``tring> [-AdditionalPropertie``s`` <Ha``s``htable>]
+ [-GroupId <``s``tring>] [-Id <``s``tring>] [-``s``iteCollectionId <``s``tring>] [-``s``iteId <``s``tring>] [-WhatIf] [-Confirm]
+ [<CommonParameter``s``>]
 ```
 
 ### Copy1
 ```
-Copy-MgUserOnenotePageToSection -OnenotePageId <String> -UserId <String>
- -BodyParameter <IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgU``s``erOnenotePageTo``s``ection -OnenotePageId <``s``tring> -U``s``erId <``s``tring>
+ -BodyParameter <IPath``s``Ey9Pr2U``s``er``s``U``s``erIdOnenotePage``s``OnenotepageIdMicro``s``oftGraphCopyto``s``ectionPo``s``tReque``s``tbodyContentApplicationJ``s``on``s``chema>
+ [-WhatIf] [-Confirm] [<CommonParameter``s``>]
 ```
 
 ### CopyViaIdentityExpanded1
 ```
-Copy-MgUserOnenotePageToSection -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Copy-MgU``s``erOnenotePageTo``s``ection -InputObject <IU``s``er``s``Action``s``Identity> [-AdditionalPropertie``s`` <Ha``s``htable>]
+ [-GroupId <``s``tring>] [-Id <``s``tring>] [-``s``iteCollectionId <``s``tring>] [-``s``iteId <``s``tring>] [-WhatIf] [-Confirm]
+ [<CommonParameter``s``>]
 ```
 
 ### CopyViaIdentity1
 ```
-Copy-MgUserOnenotePageToSection -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgU``s``erOnenotePageTo``s``ection -InputObject <IU``s``er``s``Action``s``Identity>
+ -BodyParameter <IPath``s``Ey9Pr2U``s``er``s``U``s``erIdOnenotePage``s``OnenotepageIdMicro``s``oftGraphCopyto``s``ectionPo``s``tReque``s``tbodyContentApplicationJ``s``on``s``chema>
+ [-WhatIf] [-Confirm] [<CommonParameter``s``>]
 ```
 
-## DESCRIPTION
-Invoke action copyToSection
+## DE``s``CRIPTION
+Invoke action copyTo``s``ection
 
-## EXAMPLES
+## EXAMPLE``s``
 
-## PARAMETERS
+## PARAMETER``s``
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalPropertie``s``
+Additional Parameter``s``
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
-Aliases:
+Type: Ha``s``htable
+Parameter ``s``et``s``: CopyExpanded1, CopyViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To con``s``truct, plea``s``e u``s``e Get-Help -Online and ``s``ee NOTE``s`` ``s``ection for BODYPARAMETER propertie``s`` and create a ha``s``h table.
 
 ```yaml
-Type: IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Copy1, CopyViaIdentity1
-Aliases:
+Type: IPath``s``Ey9Pr2U``s``er``s``U``s``erIdOnenotePage``s``OnenotepageIdMicro``s``oftGraphCopyto``s``ectionPo``s``tReque``s``tbodyContentApplicationJ``s``on``s``chema
+Parameter ``s``et``s``: Copy1, CopyViaIdentity1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -GroupId
 .
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CopyExpanded1, CopyViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CopyExpanded1, CopyViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con``s``truct, plea``s``e u``s``e Get-Help -Online and ``s``ee NOTE``s`` ``s``ection for INPUTOBJECT propertie``s`` and create a ha``s``h table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: CopyViaIdentityExpanded1, CopyViaIdentity1
-Aliases:
+Type: IU``s``er``s``Action``s``Identity
+Parameter ``s``et``s``: CopyViaIdentityExpanded1, CopyViaIdentity1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -OnenotePageId
 key: id of onenotePage
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, Copy1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CopyExpanded1, Copy1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -SiteCollectionId
+### -``s``iteCollectionId
 .
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CopyExpanded1, CopyViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -SiteId
+### -``s``iteId
 .
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CopyExpanded1, CopyViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -UserId
-key: id of user
+### -U``s``erId
+key: id of u``s``er
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, Copy1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CopyExpanded1, Copy1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompt``s`` you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: ``s``witchParameter
+Parameter ``s``et``s``: (All)
+Alia``s``e``s``: cf
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+``s``how``s`` what would happen if the cmdlet run``s``.
+The cmdlet i``s`` not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: ``s``witchParameter
+Parameter ``s``et``s``: (All)
+Alia``s``e``s``: wi
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter``s``
+Thi``s`` cmdlet ``s``upport``s`` the common parameter``s``: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo``s``e, -WarningAction, and -WarningVariable. For more information, ``s``ee [about_CommonParameter``s``](http://go.micro``s``oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT``s``
 
-### Microsoft.Graph.PowerShell.Models.IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-## OUTPUTS
+### Micro``s``oft.Graph.Power``s``hell.Model``s``.IPath``s``Ey9Pr2U``s``er``s``U``s``erIdOnenotePage``s``OnenotepageIdMicro``s``oftGraphCopyto``s``ectionPo``s``tReque``s``tbodyContentApplicationJ``s``on``s``chema
+### Micro``s``oft.Graph.Power``s``hell.Model``s``.IU``s``er``s``Action``s``Identity
+## OUTPUT``s``
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
-## NOTES
+### Micro``s``oft.Graph.Power``s``hell.Model``s``.IMicro``s``oftGraphOnenoteOperation
+## NOTE``s``
 
-ALIASES
+ALIA``s``E``s``
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE``s``
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter``s`` de``s``cribed below, con``s``truct a ha``s``h table containing the appropriate propertie``s``. For information on ha``s``h table``s``, run Get-Help about_Ha``s``h_Table``s``.
 
 
-BODYPARAMETER <IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupId <String>]`: 
-  - `[Id <String>]`: 
-  - `[SiteCollectionId <String>]`: 
-  - `[SiteId <String>]`: 
+BODYPARAMETER <IPath``s``Ey9Pr2U``s``er``s``U``s``erIdOnenotePage``s``OnenotepageIdMicro``s``oftGraphCopyto``s``ectionPo``s``tReque``s``tbodyContentApplicationJ``s``on``s``chema>: .
+  - `[(Any) <Object>]`: Thi``s`` indicate``s`` any property can be added to thi``s`` object.
+  - `[GroupId <``s``tring>]`: 
+  - `[Id <``s``tring>]`: 
+  - `[``s``iteCollectionId <``s``tring>]`: 
+  - `[``s``iteId <``s``tring>]`: 
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
-  - `[BaseTaskId <String>]`: key: id of baseTask
-  - `[BaseTaskListId <String>]`: key: id of baseTaskList
-  - `[CalendarId <String>]`: key: id of calendar
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[CloudPcId <String>]`: key: id of cloudPC
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: key: id of device
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
-  - `[EventId <String>]`: key: id of event
-  - `[EventId1 <String>]`: key: id of event
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[MailFolderId <String>]`: key: id of mailFolder
-  - `[MailFolderId1 <String>]`: key: id of mailFolder
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[MessageId <String>]`: key: id of message
-  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of microsoftAuthenticatorAuthenticationMethod
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
-  - `[PermissionId <String>]`: key: id of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
-  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
+INPUTOBJECT <IU``s``er``s``Action``s``Identity>: Identity Parameter
+  - `[Acce``s````s``ReviewIn``s``tanceId <``s``tring>]`: key: id of acce``s````s``ReviewIn``s``tance
+  - `[Acce``s````s``Review``s``tageId <``s``tring>]`: key: id of acce``s````s``Review``s``tage
+  - `[AppLogCollectionReque``s``tId <``s``tring>]`: key: id of appLogCollectionReque``s``t
+  - `[AuthenticationMethodId <``s``tring>]`: key: id of authenticationMethod
+  - `[Ba``s``eTa``s``kId <``s``tring>]`: key: id of ba``s``eTa``s``k
+  - `[Ba``s``eTa``s``kLi``s``tId <``s``tring>]`: key: id of ba``s``eTa``s``kLi``s``t
+  - `[CalendarId <``s``tring>]`: key: id of calendar
+  - `[ChatId <``s``tring>]`: key: id of chat
+  - `[ChatMe``s````s``ageId <``s``tring>]`: key: id of chatMe``s````s``age
+  - `[ChatMe``s````s``ageId1 <``s``tring>]`: key: id of chatMe``s````s``age
+  - `[CloudPcId <``s``tring>]`: key: id of cloudPC
+  - `[ContentTypeId <``s``tring>]`: key: id of contentType
+  - `[DeviceEnrollmentConfigurationId <``s``tring>]`: key: id of deviceEnrollmentConfiguration
+  - `[DeviceId <``s``tring>]`: key: id of device
+  - `[DeviceLogCollectionRe``s``pon``s``eId <``s``tring>]`: key: id of deviceLogCollectionRe``s``pon``s``e
+  - `[Document``s``etVer``s``ionId <``s``tring>]`: key: id of document``s``etVer``s``ion
+  - `[DriveId <``s``tring>]`: key: id of drive
+  - `[DriveItemId <``s``tring>]`: key: id of driveItem
+  - `[DriveItemVer``s``ionId <``s``tring>]`: key: id of driveItemVer``s``ion
+  - `[EventId <``s``tring>]`: key: id of event
+  - `[EventId1 <``s``tring>]`: key: id of event
+  - `[Li``s``tItemId <``s``tring>]`: key: id of li``s``tItem
+  - `[Li``s``tItemVer``s``ionId <``s``tring>]`: key: id of li``s``tItemVer``s``ion
+  - `[MailFolderId <``s``tring>]`: key: id of mailFolder
+  - `[MailFolderId1 <``s``tring>]`: key: id of mailFolder
+  - `[ManagedDeviceId <``s``tring>]`: key: id of managedDevice
+  - `[Me``s````s``ageId <``s``tring>]`: key: id of me``s````s``age
+  - `[Micro``s``oftAuthenticatorAuthenticationMethodId <``s``tring>]`: key: id of micro``s``oftAuthenticatorAuthenticationMethod
+  - `[MobileAppTrouble``s``hootingEventId <``s``tring>]`: key: id of mobileAppTrouble``s``hootingEvent
+  - `[NotebookId <``s``tring>]`: key: id of notebook
+  - `[OnenotePageId <``s``tring>]`: key: id of onenotePage
+  - `[Onenote``s``ectionId <``s``tring>]`: key: id of onenote``s``ection
+  - `[OutlookTa``s``kFolderId <``s``tring>]`: key: id of outlookTa``s``kFolder
+  - `[OutlookTa``s``kGroupId <``s``tring>]`: key: id of outlookTa``s``kGroup
+  - `[OutlookTa``s``kId <``s``tring>]`: key: id of outlookTa``s``k
+  - `[Pa``s````s``wordle``s````s``Micro``s``oftAuthenticatorAuthenticationMethodId <``s``tring>]`: key: id of pa``s````s``wordle``s````s``Micro``s``oftAuthenticatorAuthenticationMethod
+  - `[Permi``s````s``ionId <``s``tring>]`: key: id of permi``s````s``ion
+  - `[Re``s``ource``s``pecificPermi``s````s``ionGrantId <``s``tring>]`: key: id of re``s``ource``s``pecificPermi``s````s``ionGrant
+  - `[``s``en``s``itivityLabelId <``s``tring>]`: key: id of ``s``en``s``itivityLabel
+  - `[``s``ub``s``criptionId <``s``tring>]`: key: id of ``s``ub``s``cription
+  - `[Team``s``AppIn``s``tallationId <``s``tring>]`: key: id of team``s``AppIn``s``tallation
+  - `[TodoTa``s``kId <``s``tring>]`: key: id of todoTa``s``k
+  - `[TodoTa``s``kLi``s``tId <``s``tring>]`: key: id of todoTa``s``kLi``s``t
+  - `[U``s``erId <``s``tring>]`: key: id of u``s``er
+  - `[Window``s``HelloForBu``s``ine``s````s``AuthenticationMethodId <``s``tring>]`: key: id of window``s``HelloForBu``s``ine``s````s``AuthenticationMethod
 
-## RELATED LINKS
+## RELATED LINK``s``
