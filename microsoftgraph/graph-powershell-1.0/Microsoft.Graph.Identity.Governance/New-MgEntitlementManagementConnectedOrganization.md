@@ -1,285 +1,285 @@
-﻿---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganization
+---
+external help file: Microsoft.Graph.I```d```entity.Governance-help.xml
+Mo```d```ule Name: Microsoft.Graph.I```d```entity.Governance
+online version: https://```d```ocs.microsoft.com/en-us/powershell/mo```d```ule/microsoft.graph.i```d```entity.governance/new-mgentitlementmanagementconnecte```d```organization
 schema: 2.0.0
 ---
 
-# New-MgEntitlementManagementConnectedOrganization
+# New-MgEntitlementManagementConnecte```d```Organization
 
 ## SYNOPSIS
-Create new navigation property to connectedOrganizations for identityGovernance
+Create new navigation property to connecte```d```Organizations for i```d```entityGovernance
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpan```d```e```d```1 (```d```efault)
 ```
-New-MgEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
- [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
- [-ModifiedDateTime <DateTime>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgEntitlementManagementConnecte```d```Organization [-A```d``````d```itionalProperties <Hashtable>]
+ [-Create```d``````d```ateTime <```d```ateTime>] [-```d```escription <String>] [-```d```isplayName <String>]
+ [-ExternalSponsors <IMicrosoftGraph```d```irectoryObject[]>] [-I```d``` <String>]
+ [-I```d```entitySources <IMicrosoftGraphI```d```entitySource[]>] [-InternalSponsors <IMicrosoftGraph```d```irectoryObject[]>]
+ [-Mo```d```ifie```d``````d```ateTime <```d```ateTime>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization1>
+New-MgEntitlementManagementConnecte```d```Organization -Bo```d```yParameter <IMicrosoftGraphConnecte```d```Organization1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to connectedOrganizations for identityGovernance
+## ```d```ESCRIPTION
+Create new navigation property to connecte```d```Organizations for i```d```entityGovernance
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A```d``````d```itionalProperties
+A```d``````d```itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -BodyParameter
-connectedOrganization
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo```d```yParameter
+connecte```d```Organization
+To construct, please use Get-Help -Online an```d``` see NOTES section for BO```d```YPARAMETER properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization1
+Type: IMicrosoftGraphConnecte```d```Organization1
 Parameter Sets: Create1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -CreatedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
+### -Create```d``````d```ateTime
+The Timestamp type represents ```d```ate an```d``` time information using ISO 8601 format an```d``` is always in UTC time.
+For example, mi```d```night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Rea```d```-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: ```d```ateTime
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -Description
-The description of the connected organization.
+### -```d```escription
+The ```d```escription of the connecte```d``` organization.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -DisplayName
-The display name of the connected organization.
+### -```d```isplayName
+The ```d```isplay name of the connecte```d``` organization.
 Supports $filter (eq).
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -ExternalSponsors
 .
-To construct, please use Get-Help -Online and see NOTES section for EXTERNALSPONSORS properties and create a hash table.
+To construct, please use Get-Help -Online an```d``` see NOTES section for EXTERNALSPONSORS properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraph```d```irectoryObject[]
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -Id
+### -I```d```
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -IdentitySources
-The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation.
-Read-only.
+### -I```d```entitySources
+The i```d```entity sources in this connecte```d``` organization, one of azureActive```d```irectoryTenant, crossClou```d```AzureActive```d```irectoryTenant, ```d```omainI```d```entitySource or external```d```omainFe```d```eration.
+Rea```d```-only.
 Nullable.
-Supports $select and $filter(eq).
-To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
+Supports $select an```d``` $filter(eq).
+To filter by the ```d```erive```d``` types, you must ```d```eclare the resource using its full O```d```ata cast, for example, $filter=i```d```entitySources/any(is:is/microsoft.graph.azureActive```d```irectoryTenant/tenantI```d``` eq 'bcf```d```fff4-cbc3-43f2-9000-ba7b7515054f').
 
 ```yaml
-Type: IMicrosoftGraphIdentitySource[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphI```d```entitySource[]
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -InternalSponsors
 .
-To construct, please use Get-Help -Online and see NOTES section for INTERNALSPONSORS properties and create a hash table.
+To construct, please use Get-Help -Online an```d``` see NOTES section for INTERNALSPONSORS properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraph```d```irectoryObject[]
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -ModifiedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
+### -Mo```d```ifie```d``````d```ateTime
+The Timestamp type represents ```d```ate an```d``` time information using ISO 8601 format an```d``` is always in UTC time.
+For example, mi```d```night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Rea```d```-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: ```d```ateTime
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -State
-connectedOrganizationState
+connecte```d```OrganizationState
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm```d```let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul```d``` happen if the cm```d```let runs.
+The cm```d```let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm```d```let supports the common parameters: -```d```ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an```d``` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI```d```=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
+### Microsoft.Graph.PowerShell.Mo```d```els.IMicrosoftGraphConnecte```d```Organization1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
+### Microsoft.Graph.PowerShell.Mo```d```els.IMicrosoftGraphConnecte```d```Organization1
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ```d```escribe```d``` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphConnectedOrganization1>: connectedOrganization
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[Description <String>]`: The description of the connected organization.
-  - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
-  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-    - `[Id <String>]`: 
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
-  - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[State <String>]`: connectedOrganizationState
+BO```d```YPARAMETER <IMicrosoftGraphConnecte```d```Organization1>: connecte```d```Organization
+  - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+  - `[I```d``` <String>]`: 
+  - `[Create```d``````d```ateTime <```d```ateTime?>]`: The Timestamp type represents ```d```ate an```d``` time information using ISO 8601 format an```d``` is always in UTC time. For example, mi```d```night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea```d```-only.
+  - `[```d```escription <String>]`: The ```d```escription of the connecte```d``` organization.
+  - `[```d```isplayName <String>]`: The ```d```isplay name of the connecte```d``` organization. Supports $filter (eq).
+  - `[ExternalSponsors <IMicrosoftGraph```d```irectoryObject[]>]`: 
+    - `[I```d``` <String>]`: 
+    - `[```d```elete```d``````d```ateTime <```d```ateTime?>]`: ```d```ate an```d``` time when this object was ```d```elete```d```. Always null when the object hasn't been ```d```elete```d```.
+  - `[I```d```entitySources <IMicrosoftGraphI```d```entitySource[]>]`: The i```d```entity sources in this connecte```d``` organization, one of azureActive```d```irectoryTenant, crossClou```d```AzureActive```d```irectoryTenant, ```d```omainI```d```entitySource or external```d```omainFe```d```eration. Rea```d```-only. Nullable. Supports $select an```d``` $filter(eq). To filter by the ```d```erive```d``` types, you must ```d```eclare the resource using its full O```d```ata cast, for example, $filter=i```d```entitySources/any(is:is/microsoft.graph.azureActive```d```irectoryTenant/tenantI```d``` eq 'bcf```d```fff4-cbc3-43f2-9000-ba7b7515054f').
+  - `[InternalSponsors <IMicrosoftGraph```d```irectoryObject[]>]`: 
+  - `[Mo```d```ifie```d``````d```ateTime <```d```ateTime?>]`: The Timestamp type represents ```d```ate an```d``` time information using ISO 8601 format an```d``` is always in UTC time. For example, mi```d```night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Rea```d```-only.
+  - `[State <String>]`: connecte```d```OrganizationState
 
-EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: .
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+EXTERNALSPONSORS <IMicrosoftGraph```d```irectoryObject[]>: .
+  - `[I```d``` <String>]`: 
+  - `[```d```elete```d``````d```ateTime <```d```ateTime?>]`: ```d```ate an```d``` time when this object was ```d```elete```d```. Always null when the object hasn't been ```d```elete```d```.
 
-INTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: .
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+INTERNALSPONSORS <IMicrosoftGraph```d```irectoryObject[]>: .
+  - `[I```d``` <String>]`: 
+  - `[```d```elete```d``````d```ateTime <```d```ateTime?>]`: ```d```ate an```d``` time when this object was ```d```elete```d```. Always null when the object hasn't been ```d```elete```d```.
 
-## RELATED LINKS
+## RELATE```d``` LINKS
