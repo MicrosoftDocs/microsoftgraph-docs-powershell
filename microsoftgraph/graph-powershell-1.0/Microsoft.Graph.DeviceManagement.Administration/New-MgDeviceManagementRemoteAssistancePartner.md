@@ -1,198 +1,198 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.Administration-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.Administration
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.d`e`vic`e`manag`e`m`e`nt.administration/n`e`w-mgd`e`vic`e`manag`e`m`e`ntr`e`mot`e`assistanc`e`partn`e`r
+sch`e`ma: 2.0.0
 ---
 
-# New-MgDeviceManagementRemoteAssistancePartner
+# N`e`w-MgD`e`vic`e`Manag`e`m`e`ntR`e`mot`e`Assistanc`e`Partn`e`r
 
 ## SYNOPSIS
-Create new navigation property to remoteAssistancePartners for deviceManagement
+Cr`e`at`e` n`e`w navigation prop`e`rty to r`e`mot`e`Assistanc`e`Partn`e`rs for d`e`vic`e`Manag`e`m`e`nt
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### Cr`e`at`e``e`xpand`e`d1 (D`e`fault)
 ```
-New-MgDeviceManagementRemoteAssistancePartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-LastConnectionDateTime <DateTime>] [-OnboardingStatus <RemoteAssistanceOnboardingStatus>]
- [-OnboardingUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRemoteAssistancePartner1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+N`e`w-MgD`e`vic`e`Manag`e`m`e`ntR`e`mot`e`Assistanc`e`Partn`e`r [-AdditionalProp`e`rti`e`s <Hashtabl`e`>] [-DisplayNam`e` <String>]
+ [-Id <String>] [-LastConn`e`ctionDat`e`Tim`e` <Dat`e`Tim`e`>] [-OnboardingStatus <R`e`mot`e`Assistanc`e`OnboardingStatus>]
+ [-OnboardingUrl <String>] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Create new navigation property to remoteAssistancePartners for deviceManagement
+### Cr`e`at`e`1
+```
+N`e`w-MgD`e`vic`e`Manag`e`m`e`ntR`e`mot`e`Assistanc`e`Partn`e`r -BodyParam`e`t`e`r <IMicrosoftGraphR`e`mot`e`Assistanc`e`Partn`e`r1>
+ [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+Cr`e`at`e` n`e`w navigation prop`e`rty to r`e`mot`e`Assistanc`e`Partn`e`rs for d`e`vic`e`Manag`e`m`e`nt
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM`e`T`e`RS
+
+### -AdditionalProp`e`rti`e`s
+Additional Param`e`t`e`rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: Hashtabl`e`
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -BodyParameter
-RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam`e`t`e`r
+R`e`mot`e`AssistPartn`e`r r`e`sourc`e`s r`e`pr`e`s`e`nt th`e` m`e`tadata and status of a giv`e`n R`e`mot`e` Assistanc`e` partn`e`r s`e`rvic`e`.
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for BODYPARAM`e`T`e`R prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IMicrosoftGraphRemoteAssistancePartner1
-Parameter Sets: Create1
-Aliases:
+Typ`e`: IMicrosoftGraphR`e`mot`e`Assistanc`e`Partn`e`r1
+Param`e`t`e`r S`e`ts: Cr`e`at`e`1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -DisplayName
-Display name of the partner.
+### -DisplayNam`e`
+Display nam`e` of th`e` partn`e`r.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -LastConnectionDateTime
-Timestamp of the last request sent to Intune by the TEM partner.
+### -LastConn`e`ctionDat`e`Tim`e`
+Tim`e`stamp of th`e` last r`e`qu`e`st s`e`nt to Intun`e` by th`e` T`e`M partn`e`r.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: Dat`e`Tim`e`
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -OnboardingStatus
-The current TeamViewer connector status
+Th`e` curr`e`nt T`e`amVi`e`w`e`r conn`e`ctor status
 
 ```yaml
-Type: RemoteAssistanceOnboardingStatus
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: R`e`mot`e`Assistanc`e`OnboardingStatus
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -OnboardingUrl
-URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
+URL of th`e` partn`e`r's onboarding portal, wh`e`r`e` an administrator can configur`e` th`e`ir R`e`mot`e` Assistanc`e` s`e`rvic`e`.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner1
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IMicrosoftGraphR`e`mot`e`Assistanc`e`Partn`e`r1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner1
-## NOTES
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IMicrosoftGraphR`e`mot`e`Assistanc`e`Partn`e`r1
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-BODYPARAMETER <IMicrosoftGraphRemoteAssistancePartner1>: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM`e`T`e`R <IMicrosoftGraphR`e`mot`e`Assistanc`e`Partn`e`r1>: R`e`mot`e`AssistPartn`e`r r`e`sourc`e`s r`e`pr`e`s`e`nt th`e` m`e`tadata and status of a giv`e`n R`e`mot`e` Assistanc`e` partn`e`r s`e`rvic`e`.
+  - `[(Any) <Obj`e`ct>]`: This indicat`e`s any prop`e`rty can b`e` add`e`d to this obj`e`ct.
   - `[Id <String>]`: 
-  - `[DisplayName <String>]`: Display name of the partner.
-  - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
-  - `[OnboardingStatus <RemoteAssistanceOnboardingStatus?>]`: The current TeamViewer connector status
-  - `[OnboardingUrl <String>]`: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
+  - `[DisplayNam`e` <String>]`: Display nam`e` of th`e` partn`e`r.
+  - `[LastConn`e`ctionDat`e`Tim`e` <Dat`e`Tim`e`?>]`: Tim`e`stamp of th`e` last r`e`qu`e`st s`e`nt to Intun`e` by th`e` T`e`M partn`e`r.
+  - `[OnboardingStatus <R`e`mot`e`Assistanc`e`OnboardingStatus?>]`: Th`e` curr`e`nt T`e`amVi`e`w`e`r conn`e`ctor status
+  - `[OnboardingUrl <String>]`: URL of th`e` partn`e`r's onboarding portal, wh`e`r`e` an administrator can configur`e` th`e`ir R`e`mot`e` Assistanc`e` s`e`rvic`e`.
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
