@@ -1,290 +1,290 @@
-﻿---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/restore-mggroupdriveroot
+---
+exte```r```nal help file: Mic```r```osoft.G```r```aph.G```r```oups-help.xml
+Module Name: Mic```r```osoft.G```r```aph.G```r```oups
+online ve```r```sion: https://docs.mic```r```osoft.com/en-us/powe```r```shell/module/mic```r```osoft.g```r```aph.g```r```oups/```r```esto```r```e-mgg```r```oupd```r```ive```r```oot
 schema: 2.0.0
 ---
 
-# Restore-MgGroupDriveRoot
+# ```r```esto```r```e-MgG```r```oupD```r```ive```r```oot
 
 ## SYNOPSIS
-Invoke action restore
+Invoke action ```r```esto```r```e
 
 ## SYNTAX
 
-### RestoreExpanded1 (Default)
+### ```r```esto```r```eExpanded1 (Default)
 ```
-Restore-MgGroupDriveRoot -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Restore1
-```
-Restore-MgGroupDriveRoot -DriveId <String> -GroupId <String>
- -BodyParameter <IPaths1Mddg8OGroupsGroupIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+```r```esto```r```e-MgG```r```oupD```r```ive```r```oot -D```r```iveId <St```r```ing> -G```r```oupId <St```r```ing> [-AdditionalP```r```ope```r```ties <Hashtable>]
+ [-Name <St```r```ing>] [-Pa```r```ent```r```efe```r```ence <IMic```r```osoftG```r```aphItem```r```efe```r```ence>] [-WhatIf] [-Confi```r```m] [<CommonPa```r```amete```r```s>]
 ```
 
-### RestoreViaIdentityExpanded1
+### ```r```esto```r```e1
 ```
-Restore-MgGroupDriveRoot -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Name <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RestoreViaIdentity1
-```
-Restore-MgGroupDriveRoot -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths1Mddg8OGroupsGroupIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+```r```esto```r```e-MgG```r```oupD```r```ive```r```oot -D```r```iveId <St```r```ing> -G```r```oupId <St```r```ing>
+ -BodyPa```r```amete```r``` <IPaths1Mddg8OG```r```oupsG```r```oupIdD```r```ivesD```r```iveId```r```ootMic```r```osoftG```r```aph```r```esto```r```ePost```r```equestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confi```r```m] [<CommonPa```r```amete```r```s>]
 ```
 
-## DESCRIPTION
-Invoke action restore
+### ```r```esto```r```eViaIdentityExpanded1
+```
+```r```esto```r```e-MgG```r```oupD```r```ive```r```oot -InputObject <IG```r```oupsIdentity> [-AdditionalP```r```ope```r```ties <Hashtable>] [-Name <St```r```ing>]
+ [-Pa```r```ent```r```efe```r```ence <IMic```r```osoftG```r```aphItem```r```efe```r```ence>] [-WhatIf] [-Confi```r```m] [<CommonPa```r```amete```r```s>]
+```
+
+### ```r```esto```r```eViaIdentity1
+```
+```r```esto```r```e-MgG```r```oupD```r```ive```r```oot -InputObject <IG```r```oupsIdentity>
+ -BodyPa```r```amete```r``` <IPaths1Mddg8OG```r```oupsG```r```oupIdD```r```ivesD```r```iveId```r```ootMic```r```osoftG```r```aph```r```esto```r```ePost```r```equestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confi```r```m] [<CommonPa```r```amete```r```s>]
+```
+
+## DESC```r```IPTION
+Invoke action ```r```esto```r```e
 
 ## EXAMPLES
 
-## PARAMETERS
+## PA```r```AMETE```r```S
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalP```r```ope```r```ties
+Additional Pa```r```amete```r```s
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RestoreExpanded1, RestoreViaIdentityExpanded1
+Pa```r```amete```r``` Sets: ```r```esto```r```eExpanded1, ```r```esto```r```eViaIdentityExpanded1
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -BodyParameter
+### -BodyPa```r```amete```r```
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To const```r```uct, please use Get-Help -Online and see NOTES section fo```r``` BODYPA```r```AMETE```r``` p```r```ope```r```ties and c```r```eate a hash table.
 
 ```yaml
-Type: IPaths1Mddg8OGroupsGroupIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Restore1, RestoreViaIdentity1
+Type: IPaths1Mddg8OG```r```oupsG```r```oupIdD```r```ivesD```r```iveId```r```ootMic```r```osoftG```r```aph```r```esto```r```ePost```r```equestbodyContentApplicationJsonSchema
+Pa```r```amete```r``` Sets: ```r```esto```r```e1, ```r```esto```r```eViaIdentity1
 Aliases:
 
-Required: True
+```r```equi```r```ed: T```r```ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T```r```ue (ByValue)
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -DriveId
-key: id of drive
+### -D```r```iveId
+key: id of d```r```ive
 
 ```yaml
-Type: String
-Parameter Sets: RestoreExpanded1, Restore1
+Type: St```r```ing
+Pa```r```amete```r``` Sets: ```r```esto```r```eExpanded1, ```r```esto```r```e1
 Aliases:
 
-Required: True
+```r```equi```r```ed: T```r```ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -GroupId
-key: id of group
+### -G```r```oupId
+key: id of g```r```oup
 
 ```yaml
-Type: String
-Parameter Sets: RestoreExpanded1, Restore1
+Type: St```r```ing
+Pa```r```amete```r``` Sets: ```r```esto```r```eExpanded1, ```r```esto```r```e1
 Aliases:
 
-Required: True
+```r```equi```r```ed: T```r```ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+Identity Pa```r```amete```r```
+To const```r```uct, please use Get-Help -Online and see NOTES section fo```r``` INPUTOBJECT p```r```ope```r```ties and c```r```eate a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: RestoreViaIdentityExpanded1, RestoreViaIdentity1
+Type: IG```r```oupsIdentity
+Pa```r```amete```r``` Sets: ```r```esto```r```eViaIdentityExpanded1, ```r```esto```r```eViaIdentity1
 Aliases:
 
-Required: True
+```r```equi```r```ed: T```r```ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T```r```ue (ByValue)
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
 ### -Name
 .
 
 ```yaml
-Type: String
-Parameter Sets: RestoreExpanded1, RestoreViaIdentityExpanded1
+Type: St```r```ing
+Pa```r```amete```r``` Sets: ```r```esto```r```eExpanded1, ```r```esto```r```eViaIdentityExpanded1
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -ParentReference
-itemReference
-To construct, please use Get-Help -Online and see NOTES section for PARENTREFERENCE properties and create a hash table.
+### -Pa```r```ent```r```efe```r```ence
+item```r```efe```r```ence
+To const```r```uct, please use Get-Help -Online and see NOTES section fo```r``` PA```r```ENT```r```EFE```r```ENCE p```r```ope```r```ties and c```r```eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
-Parameter Sets: RestoreExpanded1, RestoreViaIdentityExpanded1
+Type: IMic```r```osoftG```r```aphItem```r```efe```r```ence
+Pa```r```amete```r``` Sets: ```r```esto```r```eExpanded1, ```r```esto```r```eViaIdentityExpanded1
 Aliases:
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Confi```r```m
+P```r```ompts you fo```r``` confi```r```mation befo```r```e ```r```unning the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa```r```amete```r```
+Pa```r```amete```r``` Sets: (All)
 Aliases: cf
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happen if the cmdlet ```r```uns.
+The cmdlet is not ```r```un.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa```r```amete```r```
+Pa```r```amete```r``` Sets: (All)
 Aliases: wi
 
-Required: False
+```r```equi```r```ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca```r```d cha```r```acte```r```s: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonPa```r```amete```r```s
+This cmdlet suppo```r```ts the common pa```r```amete```r```s: -Debug, -E```r``````r```o```r```Action, -E```r``````r```o```r```Va```r```iable, -Info```r```mationAction, -Info```r```mationVa```r```iable, -OutVa```r```iable, -OutBuffe```r```, -PipelineVa```r```iable, -Ve```r```bose, -Wa```r```ningAction, and -Wa```r```ningVa```r```iable. Fo```r``` mo```r```e info```r```mation, see [about_CommonPa```r```amete```r```s](http://go.mic```r```osoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Mddg8OGroupsGroupIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
+### Mic```r```osoft.G```r```aph.Powe```r```Shell.Models.IG```r```oupsIdentity
+### Mic```r```osoft.G```r```aph.Powe```r```Shell.Models.IPaths1Mddg8OG```r```oupsG```r```oupIdD```r```ivesD```r```iveId```r```ootMic```r```osoftG```r```aph```r```esto```r```ePost```r```equestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
+### Mic```r```osoft.G```r```aph.Powe```r```Shell.Models.IMic```r```osoftG```r```aphD```r```iveItem1
 ## NOTES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PA```r```AMETE```r``` P```r```OPE```r```TIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To c```r```eate the pa```r```amete```r```s desc```r```ibed below, const```r```uct a hash table containing the app```r```op```r```iate p```r```ope```r```ties. Fo```r``` info```r```mation on hash tables, ```r```un Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1Mddg8OGroupsGroupIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Name <String>]`: 
-  - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
-    - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
-    - `[Id <String>]`: Unique identifier of the item in the drive. Read-only.
-    - `[Name <String>]`: The name of the item being referenced. Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
-    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
-    - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
-      - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
-      - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
-      - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
-      - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
-      - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
-      - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-    - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+BODYPA```r```AMETE```r``` <IPaths1Mddg8OG```r```oupsG```r```oupIdD```r```ivesD```r```iveId```r```ootMic```r```osoftG```r```aph```r```esto```r```ePost```r```equestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+  - `[Name <St```r```ing>]`: 
+  - `[Pa```r```ent```r```efe```r```ence <IMic```r```osoftG```r```aphItem```r```efe```r```ence>]`: item```r```efe```r```ence
+    - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+    - `[D```r```iveId <St```r```ing>]`: Unique identifie```r``` of the d```r```ive instance that contains the item. ```r```ead-only.
+    - `[D```r```iveType <St```r```ing>]`: Identifies the type of d```r```ive. See [d```r```ive][] ```r```esou```r```ce fo```r``` values.
+    - `[Id <St```r```ing>]`: Unique identifie```r``` of the item in the d```r```ive. ```r```ead-only.
+    - `[Name <St```r```ing>]`: The name of the item being ```r```efe```r```enced. ```r```ead-only.
+    - `[Path <St```r```ing>]`: Path that can be used to navigate to the item. ```r```ead-only.
+    - `[Sha```r```eId <St```r```ing>]`: A unique identifie```r``` fo```r``` a sha```r```ed ```r```esou```r```ce that can be accessed via the [Sha```r```es][] API.
+    - `[Sha```r```epointIds <IMic```r```osoftG```r```aphSha```r```epointIds>]`: sha```r```epointIds
+      - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+      - `[ListId <St```r```ing>]`: The unique identifie```r``` (guid) fo```r``` the item's list in Sha```r```ePoint.
+      - `[ListItemId <St```r```ing>]`: An intege```r``` identifie```r``` fo```r``` the item within the containing list.
+      - `[ListItemUniqueId <St```r```ing>]`: The unique identifie```r``` (guid) fo```r``` the item within OneD```r```ive fo```r``` Business o```r``` a Sha```r```ePoint site.
+      - `[SiteId <St```r```ing>]`: The unique identifie```r``` (guid) fo```r``` the item's site collection (SPSite).
+      - `[SiteU```r```l <St```r```ing>]`: The Sha```r```ePoint U```r```L fo```r``` the site that contains the item.
+      - `[TenantId <St```r```ing>]`: The unique identifie```r``` (guid) fo```r``` the tenancy.
+      - `[WebId <St```r```ing>]`: The unique identifie```r``` (guid) fo```r``` the item's site (SPWeb).
+    - `[SiteId <St```r```ing>]`: Fo```r``` OneD```r```ive fo```r``` Business and Sha```r```ePoint, this p```r```ope```r```ty ```r```ep```r```esents the ID of the site that contains the pa```r```ent document lib```r```a```r```y of the d```r```iveItem ```r```esou```r```ce. The value is the same as the id p```r```ope```r```ty of that [site][] ```r```esou```r```ce. It is an opaque st```r```ing that consists of th```r```ee identifie```r```s of the site. Fo```r``` OneD```r```ive, this p```r```ope```r```ty is not populated.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[ConversationId <String>]`: key: id of conversation
-  - `[ConversationThreadId <String>]`: key: id of conversationThread
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[DirectorySettingId <String>]`: key: id of directorySetting
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EndpointId <String>]`: key: id of endpoint
-  - `[EventId <String>]`: key: id of event
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[GroupId <String>]`: key: id of group
-  - `[GroupLifecyclePolicyId <String>]`: key: id of groupLifecyclePolicy
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: key: id of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[MentionId <String>]`: key: id of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PermissionId <String>]`: key: id of permission
-  - `[PostId <String>]`: key: id of post
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[SiteId <String>]`: key: id of site
-  - `[SitePageId <String>]`: key: id of sitePage
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IG```r```oupsIdentity>: Identity Pa```r```amete```r```
+  - `[AttachmentId <St```r```ing>]`: key: id of attachment
+  - `[ContentTypeId <St```r```ing>]`: key: id of contentType
+  - `[Conve```r```sationId <St```r```ing>]`: key: id of conve```r```sation
+  - `[Conve```r```sationTh```r```eadId <St```r```ing>]`: key: id of conve```r```sationTh```r```ead
+  - `[Di```r```ecto```r```yObjectId <St```r```ing>]`: key: id of di```r```ecto```r```yObject
+  - `[Di```r```ecto```r```ySettingId <St```r```ing>]`: key: id of di```r```ecto```r```ySetting
+  - `[DocumentSetVe```r```sionId <St```r```ing>]`: key: id of documentSetVe```r```sion
+  - `[D```r```iveId <St```r```ing>]`: key: id of d```r```ive
+  - `[D```r```iveItemId <St```r```ing>]`: key: id of d```r```iveItem
+  - `[D```r```iveItemVe```r```sionId <St```r```ing>]`: key: id of d```r```iveItemVe```r```sion
+  - `[EndDateTime <St```r```ing>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndpointId <St```r```ing>]`: key: id of endpoint
+  - `[EventId <St```r```ing>]`: key: id of event
+  - `[ExtensionId <St```r```ing>]`: key: id of extension
+  - `[G```r```oupId <St```r```ing>]`: key: id of g```r```oup
+  - `[G```r```oupLifecyclePolicyId <St```r```ing>]`: key: id of g```r```oupLifecyclePolicy
+  - `[IncludePe```r```sonalNotebooks <Boolean?>]`: Usage: includePe```r```sonalNotebooks={includePe```r```sonalNotebooks}
+  - `[Inte```r```val <St```r```ing>]`: Usage: inte```r```val='{inte```r```val}'
+  - `[ListId <St```r```ing>]`: key: id of list
+  - `[ListId1 <St```r```ing>]`: Usage: listId='{listId}'
+  - `[ListItemId <St```r```ing>]`: key: id of listItem
+  - `[ListItemVe```r```sionId <St```r```ing>]`: key: id of listItemVe```r```sion
+  - `[MentionId <St```r```ing>]`: key: id of mention
+  - `[MultiValueLegacyExtendedP```r```ope```r```tyId <St```r```ing>]`: key: id of multiValueLegacyExtendedP```r```ope```r```ty
+  - `[NotebookId <St```r```ing>]`: key: id of notebook
+  - `[OnenotePageId <St```r```ing>]`: key: id of onenotePage
+  - `[OnenoteSectionId <St```r```ing>]`: key: id of onenoteSection
+  - `[Path <St```r```ing>]`: Usage: path='{path}'
+  - `[Pe```r```missionId <St```r```ing>]`: key: id of pe```r```mission
+  - `[PostId <St```r```ing>]`: key: id of post
+  - `[P```r```ofilePhotoId <St```r```ing>]`: key: id of p```r```ofilePhoto
+  - `[Q <St```r```ing>]`: Usage: q='{q}'
+  - `[```r```esou```r```ceSpecificPe```r```missionG```r```antId <St```r```ing>]`: key: id of ```r```esou```r```ceSpecificPe```r```missionG```r```ant
+  - `[SingleValueLegacyExtendedP```r```ope```r```tyId <St```r```ing>]`: key: id of singleValueLegacyExtendedP```r```ope```r```ty
+  - `[SiteId <St```r```ing>]`: key: id of site
+  - `[SitePageId <St```r```ing>]`: key: id of sitePage
+  - `[Sta```r```tDateTime <St```r```ing>]`: Usage: sta```r```tDateTime='{sta```r```tDateTime}'
+  - `[Subsc```r```iptionId <St```r```ing>]`: key: id of subsc```r```iption
+  - `[Token <St```r```ing>]`: Usage: token='{token}'
+  - `[Use```r``` <St```r```ing>]`: Usage: Use```r```='{Use```r```}'
+  - `[Use```r```Id <St```r```ing>]`: key: id of use```r```
 
-PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
-  - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
-  - `[Id <String>]`: Unique identifier of the item in the drive. Read-only.
-  - `[Name <String>]`: The name of the item being referenced. Read-only.
-  - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
-  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
-  - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
-    - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
-    - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
-    - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
-    - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
-    - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
-    - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-  - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+PA```r```ENT```r```EFE```r```ENCE <IMic```r```osoftG```r```aphItem```r```efe```r```ence>: item```r```efe```r```ence
+  - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+  - `[D```r```iveId <St```r```ing>]`: Unique identifie```r``` of the d```r```ive instance that contains the item. ```r```ead-only.
+  - `[D```r```iveType <St```r```ing>]`: Identifies the type of d```r```ive. See [d```r```ive][] ```r```esou```r```ce fo```r``` values.
+  - `[Id <St```r```ing>]`: Unique identifie```r``` of the item in the d```r```ive. ```r```ead-only.
+  - `[Name <St```r```ing>]`: The name of the item being ```r```efe```r```enced. ```r```ead-only.
+  - `[Path <St```r```ing>]`: Path that can be used to navigate to the item. ```r```ead-only.
+  - `[Sha```r```eId <St```r```ing>]`: A unique identifie```r``` fo```r``` a sha```r```ed ```r```esou```r```ce that can be accessed via the [Sha```r```es][] API.
+  - `[Sha```r```epointIds <IMic```r```osoftG```r```aphSha```r```epointIds>]`: sha```r```epointIds
+    - `[(Any) <Object>]`: This indicates any p```r```ope```r```ty can be added to this object.
+    - `[ListId <St```r```ing>]`: The unique identifie```r``` (guid) fo```r``` the item's list in Sha```r```ePoint.
+    - `[ListItemId <St```r```ing>]`: An intege```r``` identifie```r``` fo```r``` the item within the containing list.
+    - `[ListItemUniqueId <St```r```ing>]`: The unique identifie```r``` (guid) fo```r``` the item within OneD```r```ive fo```r``` Business o```r``` a Sha```r```ePoint site.
+    - `[SiteId <St```r```ing>]`: The unique identifie```r``` (guid) fo```r``` the item's site collection (SPSite).
+    - `[SiteU```r```l <St```r```ing>]`: The Sha```r```ePoint U```r```L fo```r``` the site that contains the item.
+    - `[TenantId <St```r```ing>]`: The unique identifie```r``` (guid) fo```r``` the tenancy.
+    - `[WebId <St```r```ing>]`: The unique identifie```r``` (guid) fo```r``` the item's site (SPWeb).
+  - `[SiteId <St```r```ing>]`: Fo```r``` OneD```r```ive fo```r``` Business and Sha```r```ePoint, this p```r```ope```r```ty ```r```ep```r```esents the ID of the site that contains the pa```r```ent document lib```r```a```r```y of the d```r```iveItem ```r```esou```r```ce. The value is the same as the id p```r```ope```r```ty of that [site][] ```r```esou```r```ce. It is an opaque st```r```ing that consists of th```r```ee identifie```r```s of the site. Fo```r``` OneD```r```ive, this p```r```ope```r```ty is not populated.
 
-## RELATED LINKS
+## ```r```ELATED LINKS
