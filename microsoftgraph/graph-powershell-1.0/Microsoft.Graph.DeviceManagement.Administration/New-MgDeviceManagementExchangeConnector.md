@@ -1,280 +1,280 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementexchangeconnector
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.Administration-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.Administration
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.d`e`vic`e`manag`e`m`e`nt.administration/n`e`w-mgd`e`vic`e`manag`e`m`e`nt`e`xchang`e`conn`e`ctor
+sch`e`ma: 2.0.0
 ---
 
-# New-MgDeviceManagementExchangeConnector
+# N`e`w-MgD`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctor
 
 ## SYNOPSIS
-Create new navigation property to exchangeConnectors for deviceManagement
+Cr`e`at`e` n`e`w navigation prop`e`rty to `e`xchang`e`Conn`e`ctors for d`e`vic`e`Manag`e`m`e`nt
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Cr`e`at`e``e`xpand`e`d (D`e`fault)
 ```
-New-MgDeviceManagementExchangeConnector [-AdditionalProperties <Hashtable>] [-ConnectorServerName <String>]
- [-ExchangeAlias <String>] [-ExchangeConnectorType <DeviceManagementExchangeConnectorType>]
- [-ExchangeOrganization <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-PrimarySmtpAddress <String>]
- [-ServerName <String>] [-Status <DeviceManagementExchangeConnectorStatus>] [-Version <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgDeviceManagementExchangeConnector -BodyParameter <IMicrosoftGraphDeviceManagementExchangeConnector>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+N`e`w-MgD`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctor [-AdditionalProp`e`rti`e`s <Hashtabl`e`>] [-Conn`e`ctorS`e`rv`e`rNam`e` <String>]
+ [-`e`xchang`e`Alias <String>] [-`e`xchang`e`Conn`e`ctorTyp`e` <D`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctorTyp`e`>]
+ [-`e`xchang`e`Organization <String>] [-Id <String>] [-LastSyncDat`e`Tim`e` <Dat`e`Tim`e`>] [-PrimarySmtpAddr`e`ss <String>]
+ [-S`e`rv`e`rNam`e` <String>] [-Status <D`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctorStatus>] [-V`e`rsion <String>] [-WhatIf]
+ [-Confirm] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Create new navigation property to exchangeConnectors for deviceManagement
+### Cr`e`at`e`
+```
+N`e`w-MgD`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctor -BodyParam`e`t`e`r <IMicrosoftGraphD`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctor>
+ [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+Cr`e`at`e` n`e`w navigation prop`e`rty to `e`xchang`e`Conn`e`ctors for d`e`vic`e`Manag`e`m`e`nt
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM`e`T`e`RS
+
+### -AdditionalProp`e`rti`e`s
+Additional Param`e`t`e`rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: Hashtabl`e`
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -BodyParameter
-Entity which represents a connection to an Exchange environment.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam`e`t`e`r
+`e`ntity which r`e`pr`e`s`e`nts a conn`e`ction to an `e`xchang`e` `e`nvironm`e`nt.
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for BODYPARAM`e`T`e`R prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementExchangeConnector
-Parameter Sets: Create
-Aliases:
+Typ`e`: IMicrosoftGraphD`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctor
+Param`e`t`e`r S`e`ts: Cr`e`at`e`
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ConnectorServerName
-The name of the server hosting the Exchange Connector.
+### -Conn`e`ctorS`e`rv`e`rNam`e`
+Th`e` nam`e` of th`e` s`e`rv`e`r hosting th`e` `e`xchang`e` Conn`e`ctor.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ExchangeAlias
-An alias assigned to the Exchange server
+### -`e`xchang`e`Alias
+An alias assign`e`d to th`e` `e`xchang`e` s`e`rv`e`r
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ExchangeConnectorType
-The type of Exchange Connector.
+### -`e`xchang`e`Conn`e`ctorTyp`e`
+Th`e` typ`e` of `e`xchang`e` Conn`e`ctor.
 
 ```yaml
-Type: DeviceManagementExchangeConnectorType
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: D`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctorTyp`e`
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ExchangeOrganization
-Exchange Organization to the Exchange server
+### -`e`xchang`e`Organization
+`e`xchang`e` Organization to th`e` `e`xchang`e` s`e`rv`e`r
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -LastSyncDateTime
-Last sync time for the Exchange Connector
+### -LastSyncDat`e`Tim`e`
+Last sync tim`e` for th`e` `e`xchang`e` Conn`e`ctor
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: Dat`e`Tim`e`
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -PrimarySmtpAddress
-Email address used to configure the Service To Service Exchange Connector.
+### -PrimarySmtpAddr`e`ss
+`e`mail addr`e`ss us`e`d to configur`e` th`e` S`e`rvic`e` To S`e`rvic`e` `e`xchang`e` Conn`e`ctor.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ServerName
-The name of the Exchange server.
+### -S`e`rv`e`rNam`e`
+Th`e` nam`e` of th`e` `e`xchang`e` s`e`rv`e`r.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Status
-The current status of the Exchange Connector.
+Th`e` curr`e`nt status of th`e` `e`xchang`e` Conn`e`ctor.
 
 ```yaml
-Type: DeviceManagementExchangeConnectorStatus
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: D`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctorStatus
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Version
-The version of the ExchangeConnectorAgent
+### -V`e`rsion
+Th`e` v`e`rsion of th`e` `e`xchang`e`Conn`e`ctorAg`e`nt
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: Cr`e`at`e``e`xpand`e`d
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IMicrosoftGraphD`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctor
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
-## NOTES
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IMicrosoftGraphD`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctor
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementExchangeConnector>: Entity which represents a connection to an Exchange environment.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM`e`T`e`R <IMicrosoftGraphD`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctor>: `e`ntity which r`e`pr`e`s`e`nts a conn`e`ction to an `e`xchang`e` `e`nvironm`e`nt.
+  - `[(Any) <Obj`e`ct>]`: This indicat`e`s any prop`e`rty can b`e` add`e`d to this obj`e`ct.
   - `[Id <String>]`: 
-  - `[ConnectorServerName <String>]`: The name of the server hosting the Exchange Connector.
-  - `[ExchangeAlias <String>]`: An alias assigned to the Exchange server
-  - `[ExchangeConnectorType <DeviceManagementExchangeConnectorType?>]`: The type of Exchange Connector.
-  - `[ExchangeOrganization <String>]`: Exchange Organization to the Exchange server
-  - `[LastSyncDateTime <DateTime?>]`: Last sync time for the Exchange Connector
-  - `[PrimarySmtpAddress <String>]`: Email address used to configure the Service To Service Exchange Connector.
-  - `[ServerName <String>]`: The name of the Exchange server.
-  - `[Status <DeviceManagementExchangeConnectorStatus?>]`: The current status of the Exchange Connector.
-  - `[Version <String>]`: The version of the ExchangeConnectorAgent
+  - `[Conn`e`ctorS`e`rv`e`rNam`e` <String>]`: Th`e` nam`e` of th`e` s`e`rv`e`r hosting th`e` `e`xchang`e` Conn`e`ctor.
+  - `[`e`xchang`e`Alias <String>]`: An alias assign`e`d to th`e` `e`xchang`e` s`e`rv`e`r
+  - `[`e`xchang`e`Conn`e`ctorTyp`e` <D`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctorTyp`e`?>]`: Th`e` typ`e` of `e`xchang`e` Conn`e`ctor.
+  - `[`e`xchang`e`Organization <String>]`: `e`xchang`e` Organization to th`e` `e`xchang`e` s`e`rv`e`r
+  - `[LastSyncDat`e`Tim`e` <Dat`e`Tim`e`?>]`: Last sync tim`e` for th`e` `e`xchang`e` Conn`e`ctor
+  - `[PrimarySmtpAddr`e`ss <String>]`: `e`mail addr`e`ss us`e`d to configur`e` th`e` S`e`rvic`e` To S`e`rvic`e` `e`xchang`e` Conn`e`ctor.
+  - `[S`e`rv`e`rNam`e` <String>]`: Th`e` nam`e` of th`e` `e`xchang`e` s`e`rv`e`r.
+  - `[Status <D`e`vic`e`Manag`e`m`e`nt`e`xchang`e`Conn`e`ctorStatus?>]`: Th`e` curr`e`nt status of th`e` `e`xchang`e` Conn`e`ctor.
+  - `[V`e`rsion <String>]`: Th`e` v`e`rsion of th`e` `e`xchang`e`Conn`e`ctorAg`e`nt
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
