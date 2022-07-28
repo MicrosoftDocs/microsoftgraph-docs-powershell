@@ -1,301 +1,301 @@
-﻿---
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation
+---
+external help f```i```le: M```i```crosoft.Graph.S```i```tes-help.xml
+Module Name: M```i```crosoft.Graph.S```i```tes
+onl```i```ne vers```i```on: https://docs.m```i```crosoft.com/en-us/powershell/module/m```i```crosoft.graph.s```i```tes/copy-mgs```i```tecontenttypetodefaultcontentlocat```i```on
 schema: 2.0.0
 ---
 
-# Copy-MgSiteContentTypeToDefaultContentLocation
+# Copy-MgS```i```teContentTypeToDefaultContentLocat```i```on
 
-## SYNOPSIS
-Invoke action copyToDefaultContentLocation
+## SYNOPS```i```S
+```i```nvoke act```i```on copyToDefaultContentLocat```i```on
 
 ## SYNTAX
 
 ### CopyExpanded1 (Default)
 ```
-Copy-MgSiteContentTypeToDefaultContentLocation -ContentTypeId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
- [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgS```i```teContentTypeToDefaultContentLocat```i```on -ContentType```i```d <Str```i```ng> -S```i```te```i```d <Str```i```ng>
+ [-Add```i```t```i```onalPropert```i```es <Hashtable>] [-Dest```i```nat```i```onF```i```leName <Str```i```ng>]
+ [-SourceF```i```le <```i```M```i```crosoftGraph```i```temReference>] [-PassThru] [-What```i```f] [-Conf```i```rm] [<CommonParameters>]
 ```
 
 ### Copy1
 ```
-Copy-MgSiteContentTypeToDefaultContentLocation -ContentTypeId <String> -SiteId <String>
- -BodyParameter <IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgS```i```teContentTypeToDefaultContentLocat```i```on -ContentType```i```d <Str```i```ng> -S```i```te```i```d <Str```i```ng>
+ -BodyParameter <```i```Paths1Dt8```i```faS```i```tesS```i```te```i```dContenttypesContenttype```i```dM```i```crosoftGraphCopytodefaultcontentlocat```i```onPostRequestbodyContentAppl```i```cat```i```onJsonSchema>
+ [-PassThru] [-What```i```f] [-Conf```i```rm] [<CommonParameters>]
 ```
 
-### CopyViaIdentityExpanded1
+### CopyV```i```a```i```dent```i```tyExpanded1
 ```
-Copy-MgSiteContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
- [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CopyViaIdentity1
-```
-Copy-MgSiteContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
- -BodyParameter <IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgS```i```teContentTypeToDefaultContentLocat```i```on -```i```nputObject <```i```S```i```tes```i```dent```i```ty>
+ [-Add```i```t```i```onalPropert```i```es <Hashtable>] [-Dest```i```nat```i```onF```i```leName <Str```i```ng>]
+ [-SourceF```i```le <```i```M```i```crosoftGraph```i```temReference>] [-PassThru] [-What```i```f] [-Conf```i```rm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Invoke action copyToDefaultContentLocation
+### CopyV```i```a```i```dent```i```ty1
+```
+Copy-MgS```i```teContentTypeToDefaultContentLocat```i```on -```i```nputObject <```i```S```i```tes```i```dent```i```ty>
+ -BodyParameter <```i```Paths1Dt8```i```faS```i```tesS```i```te```i```dContenttypesContenttype```i```dM```i```crosoftGraphCopytodefaultcontentlocat```i```onPostRequestbodyContentAppl```i```cat```i```onJsonSchema>
+ [-PassThru] [-What```i```f] [-Conf```i```rm] [<CommonParameters>]
+```
+
+## DESCR```i```PT```i```ON
+```i```nvoke act```i```on copyToDefaultContentLocat```i```on
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Add```i```t```i```onalPropert```i```es
+Add```i```t```i```onal Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
-Aliases:
+Parameter Sets: CopyExpanded1, CopyV```i```a```i```dent```i```tyExpanded1
+Al```i```ases:
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Onl```i```ne and see NOTES sect```i```on for BODYPARAMETER propert```i```es and create a hash table.
 
 ```yaml
-Type: IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Copy1, CopyViaIdentity1
-Aliases:
+Type: ```i```Paths1Dt8```i```faS```i```tesS```i```te```i```dContenttypesContenttype```i```dM```i```crosoftGraphCopytodefaultcontentlocat```i```onPostRequestbodyContentAppl```i```cat```i```onJsonSchema
+Parameter Sets: Copy1, CopyV```i```a```i```dent```i```ty1
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: True (ByValue)
+Accept w```i```ldcard characters: False
 ```
 
-### -ContentTypeId
-key: id of contentType
+### -ContentType```i```d
+key: ```i```d of contentType
 
 ```yaml
-Type: String
+Type: Str```i```ng
 Parameter Sets: CopyExpanded1, Copy1
-Aliases:
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -DestinationFileName
+### -Dest```i```nat```i```onF```i```leName
 .
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
-Aliases:
+Type: Str```i```ng
+Parameter Sets: CopyExpanded1, CopyV```i```a```i```dent```i```tyExpanded1
+Al```i```ases:
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -```i```nputObject
+```i```dent```i```ty Parameter
+To construct, please use Get-Help -Onl```i```ne and see NOTES sect```i```on for ```i```NPUTOBJECT propert```i```es and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CopyViaIdentityExpanded1, CopyViaIdentity1
-Aliases:
+Type: ```i```S```i```tes```i```dent```i```ty
+Parameter Sets: CopyV```i```a```i```dent```i```tyExpanded1, CopyV```i```a```i```dent```i```ty1
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: True (ByValue)
+Accept w```i```ldcard characters: False
 ```
 
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: Sw```i```tchParameter
 Parameter Sets: (All)
-Aliases:
+Al```i```ases:
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -SiteId
-key: id of site
+### -S```i```te```i```d
+key: ```i```d of s```i```te
 
 ```yaml
-Type: String
+Type: Str```i```ng
 Parameter Sets: CopyExpanded1, Copy1
-Aliases:
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -SourceFile
-itemReference
-To construct, please use Get-Help -Online and see NOTES section for SOURCEFILE properties and create a hash table.
+### -SourceF```i```le
+```i```temReference
+To construct, please use Get-Help -Onl```i```ne and see NOTES sect```i```on for SOURCEF```i```LE propert```i```es and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
-Aliases:
+Type: ```i```M```i```crosoftGraph```i```temReference
+Parameter Sets: CopyExpanded1, CopyV```i```a```i```dent```i```tyExpanded1
+Al```i```ases:
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Conf```i```rm
+Prompts you for conf```i```rmat```i```on before runn```i```ng the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw```i```tchParameter
 Parameter Sets: (All)
-Aliases: cf
+Al```i```ases: cf
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -What```i```f
+Shows what would happen ```i```f the cmdlet runs.
+The cmdlet ```i```s not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw```i```tchParameter
 Parameter Sets: (All)
-Aliases: wi
+Al```i```ases: w```i```
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th```i```s cmdlet supports the common parameters: -Debug, -ErrorAct```i```on, -ErrorVar```i```able, -```i```nformat```i```onAct```i```on, -```i```nformat```i```onVar```i```able, -OutVar```i```able, -OutBuffer, -P```i```pel```i```neVar```i```able, -Verbose, -Warn```i```ngAct```i```on, and -Warn```i```ngVar```i```able. For more ```i```nformat```i```on, see [about_CommonParameters](http://go.m```i```crosoft.com/fwl```i```nk/?L```i```nk```i```D=113216).
 
-## INPUTS
+## ```i```NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### M```i```crosoft.Graph.PowerShell.Models.```i```Paths1Dt8```i```faS```i```tesS```i```te```i```dContenttypesContenttype```i```dM```i```crosoftGraphCopytodefaultcontentlocat```i```onPostRequestbodyContentAppl```i```cat```i```onJsonSchema
+### M```i```crosoft.Graph.PowerShell.Models.```i```S```i```tes```i```dent```i```ty
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
 
-ALIASES
+AL```i```ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT```i```ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr```i```bed below, construct a hash table conta```i```n```i```ng the appropr```i```ate propert```i```es. For ```i```nformat```i```on on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DestinationFileName <String>]`: 
-  - `[SourceFile <IMicrosoftGraphItemReference>]`: itemReference
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
-    - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
-    - `[Id <String>]`: Unique identifier of the item in the drive. Read-only.
-    - `[Name <String>]`: The name of the item being referenced. Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
-    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
-    - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
-      - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
-      - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
-      - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
-      - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
-      - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
-      - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-    - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+BODYPARAMETER <```i```Paths1Dt8```i```faS```i```tesS```i```te```i```dContenttypesContenttype```i```dM```i```crosoftGraphCopytodefaultcontentlocat```i```onPostRequestbodyContentAppl```i```cat```i```onJsonSchema>: .
+  - `[(Any) <Object>]`: Th```i```s ```i```nd```i```cates any property can be added to th```i```s object.
+  - `[Dest```i```nat```i```onF```i```leName <Str```i```ng>]`: 
+  - `[SourceF```i```le <```i```M```i```crosoftGraph```i```temReference>]`: ```i```temReference
+    - `[(Any) <Object>]`: Th```i```s ```i```nd```i```cates any property can be added to th```i```s object.
+    - `[Dr```i```ve```i```d <Str```i```ng>]`: Un```i```que ```i```dent```i```f```i```er of the dr```i```ve ```i```nstance that conta```i```ns the ```i```tem. Read-only.
+    - `[Dr```i```veType <Str```i```ng>]`: ```i```dent```i```f```i```es the type of dr```i```ve. See [dr```i```ve][] resource for values.
+    - `[```i```d <Str```i```ng>]`: Un```i```que ```i```dent```i```f```i```er of the ```i```tem ```i```n the dr```i```ve. Read-only.
+    - `[Name <Str```i```ng>]`: The name of the ```i```tem be```i```ng referenced. Read-only.
+    - `[Path <Str```i```ng>]`: Path that can be used to nav```i```gate to the ```i```tem. Read-only.
+    - `[Share```i```d <Str```i```ng>]`: A un```i```que ```i```dent```i```f```i```er for a shared resource that can be accessed v```i```a the [Shares][] AP```i```.
+    - `[Sharepo```i```nt```i```ds <```i```M```i```crosoftGraphSharepo```i```nt```i```ds>]`: sharepo```i```nt```i```ds
+      - `[(Any) <Object>]`: Th```i```s ```i```nd```i```cates any property can be added to th```i```s object.
+      - `[L```i```st```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er (gu```i```d) for the ```i```tem's l```i```st ```i```n SharePo```i```nt.
+      - `[L```i```st```i```tem```i```d <Str```i```ng>]`: An ```i```nteger ```i```dent```i```f```i```er for the ```i```tem w```i```th```i```n the conta```i```n```i```ng l```i```st.
+      - `[L```i```st```i```temUn```i```que```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er (gu```i```d) for the ```i```tem w```i```th```i```n OneDr```i```ve for Bus```i```ness or a SharePo```i```nt s```i```te.
+      - `[S```i```te```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er (gu```i```d) for the ```i```tem's s```i```te collect```i```on (SPS```i```te).
+      - `[S```i```teUrl <Str```i```ng>]`: The SharePo```i```nt URL for the s```i```te that conta```i```ns the ```i```tem.
+      - `[Tenant```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er (gu```i```d) for the tenancy.
+      - `[Web```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er (gu```i```d) for the ```i```tem's s```i```te (SPWeb).
+    - `[S```i```te```i```d <Str```i```ng>]`: For OneDr```i```ve for Bus```i```ness and SharePo```i```nt, th```i```s property represents the ```i```D of the s```i```te that conta```i```ns the parent document l```i```brary of the dr```i```ve```i```tem resource. The value ```i```s the same as the ```i```d property of that [s```i```te][] resource. ```i```t ```i```s an opaque str```i```ng that cons```i```sts of three ```i```dent```i```f```i```ers of the s```i```te. For OneDr```i```ve, th```i```s property ```i```s not populated.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
-  - `[BaseItemId <String>]`: key: id of baseItem
-  - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
-  - `[ColumnLinkId <String>]`: key: id of columnLink
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[ContentTypeId1 <String>]`: key: id of contentType
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: key: id of group
-  - `[GroupId1 <String>]`: key: id of group
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: key: id of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PermissionId <String>]`: key: id of permission
-  - `[RelationId <String>]`: key: id of relation
-  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
-  - `[SetId <String>]`: key: id of set
-  - `[SetId1 <String>]`: key: id of set
-  - `[SiteId <String>]`: key: id of site
-  - `[SiteId1 <String>]`: key: id of site
-  - `[SitePageId <String>]`: key: id of sitePage
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: key: id of store
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[TermId <String>]`: key: id of term
-  - `[TermId1 <String>]`: key: id of term
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: key: id of user
+```i```NPUTOBJECT <```i```S```i```tes```i```dent```i```ty>: ```i```dent```i```ty Parameter
+  - `[Base```i```tem```i```d <Str```i```ng>]`: key: ```i```d of base```i```tem
+  - `[ColumnDef```i```n```i```t```i```on```i```d <Str```i```ng>]`: key: ```i```d of columnDef```i```n```i```t```i```on
+  - `[ColumnL```i```nk```i```d <Str```i```ng>]`: key: ```i```d of columnL```i```nk
+  - `[ContentType```i```d <Str```i```ng>]`: key: ```i```d of contentType
+  - `[ContentType```i```d1 <Str```i```ng>]`: key: ```i```d of contentType
+  - `[DocumentSetVers```i```on```i```d <Str```i```ng>]`: key: ```i```d of documentSetVers```i```on
+  - `[Dr```i```ve```i```d <Str```i```ng>]`: key: ```i```d of dr```i```ve
+  - `[EndDateT```i```me <Str```i```ng>]`: Usage: endDateT```i```me='{endDateT```i```me}'
+  - `[Group```i```d <Str```i```ng>]`: key: ```i```d of group
+  - `[Group```i```d1 <Str```i```ng>]`: key: ```i```d of group
+  - `[```i```ncludePersonalNotebooks <Boolean?>]`: Usage: ```i```ncludePersonalNotebooks={```i```ncludePersonalNotebooks}
+  - `[```i```nterval <Str```i```ng>]`: Usage: ```i```nterval='{```i```nterval}'
+  - `[L```i```st```i```d <Str```i```ng>]`: key: ```i```d of l```i```st
+  - `[L```i```st```i```d1 <Str```i```ng>]`: Usage: l```i```st```i```d='{l```i```st```i```d}'
+  - `[L```i```st```i```tem```i```d <Str```i```ng>]`: key: ```i```d of l```i```st```i```tem
+  - `[L```i```st```i```temVers```i```on```i```d <Str```i```ng>]`: key: ```i```d of l```i```st```i```temVers```i```on
+  - `[Notebook```i```d <Str```i```ng>]`: key: ```i```d of notebook
+  - `[OnenotePage```i```d <Str```i```ng>]`: key: ```i```d of onenotePage
+  - `[OnenoteSect```i```on```i```d <Str```i```ng>]`: key: ```i```d of onenoteSect```i```on
+  - `[Path <Str```i```ng>]`: Usage: path='{path}'
+  - `[Perm```i```ss```i```on```i```d <Str```i```ng>]`: key: ```i```d of perm```i```ss```i```on
+  - `[Relat```i```on```i```d <Str```i```ng>]`: key: ```i```d of relat```i```on
+  - `[R```i```chLongRunn```i```ngOperat```i```on```i```d <Str```i```ng>]`: key: ```i```d of r```i```chLongRunn```i```ngOperat```i```on
+  - `[Set```i```d <Str```i```ng>]`: key: ```i```d of set
+  - `[Set```i```d1 <Str```i```ng>]`: key: ```i```d of set
+  - `[S```i```te```i```d <Str```i```ng>]`: key: ```i```d of s```i```te
+  - `[S```i```te```i```d1 <Str```i```ng>]`: key: ```i```d of s```i```te
+  - `[S```i```tePage```i```d <Str```i```ng>]`: key: ```i```d of s```i```tePage
+  - `[StartDateT```i```me <Str```i```ng>]`: Usage: startDateT```i```me='{startDateT```i```me}'
+  - `[Store```i```d <Str```i```ng>]`: key: ```i```d of store
+  - `[Subscr```i```pt```i```on```i```d <Str```i```ng>]`: key: ```i```d of subscr```i```pt```i```on
+  - `[Term```i```d <Str```i```ng>]`: key: ```i```d of term
+  - `[Term```i```d1 <Str```i```ng>]`: key: ```i```d of term
+  - `[Token <Str```i```ng>]`: Usage: token='{token}'
+  - `[User```i```d <Str```i```ng>]`: key: ```i```d of user
 
-SOURCEFILE <IMicrosoftGraphItemReference>: itemReference
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
-  - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
-  - `[Id <String>]`: Unique identifier of the item in the drive. Read-only.
-  - `[Name <String>]`: The name of the item being referenced. Read-only.
-  - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
-  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
-  - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
-    - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
-    - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
-    - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
-    - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
-    - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
-    - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-  - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+SOURCEF```i```LE <```i```M```i```crosoftGraph```i```temReference>: ```i```temReference
+  - `[(Any) <Object>]`: Th```i```s ```i```nd```i```cates any property can be added to th```i```s object.
+  - `[Dr```i```ve```i```d <Str```i```ng>]`: Un```i```que ```i```dent```i```f```i```er of the dr```i```ve ```i```nstance that conta```i```ns the ```i```tem. Read-only.
+  - `[Dr```i```veType <Str```i```ng>]`: ```i```dent```i```f```i```es the type of dr```i```ve. See [dr```i```ve][] resource for values.
+  - `[```i```d <Str```i```ng>]`: Un```i```que ```i```dent```i```f```i```er of the ```i```tem ```i```n the dr```i```ve. Read-only.
+  - `[Name <Str```i```ng>]`: The name of the ```i```tem be```i```ng referenced. Read-only.
+  - `[Path <Str```i```ng>]`: Path that can be used to nav```i```gate to the ```i```tem. Read-only.
+  - `[Share```i```d <Str```i```ng>]`: A un```i```que ```i```dent```i```f```i```er for a shared resource that can be accessed v```i```a the [Shares][] AP```i```.
+  - `[Sharepo```i```nt```i```ds <```i```M```i```crosoftGraphSharepo```i```nt```i```ds>]`: sharepo```i```nt```i```ds
+    - `[(Any) <Object>]`: Th```i```s ```i```nd```i```cates any property can be added to th```i```s object.
+    - `[L```i```st```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er (gu```i```d) for the ```i```tem's l```i```st ```i```n SharePo```i```nt.
+    - `[L```i```st```i```tem```i```d <Str```i```ng>]`: An ```i```nteger ```i```dent```i```f```i```er for the ```i```tem w```i```th```i```n the conta```i```n```i```ng l```i```st.
+    - `[L```i```st```i```temUn```i```que```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er (gu```i```d) for the ```i```tem w```i```th```i```n OneDr```i```ve for Bus```i```ness or a SharePo```i```nt s```i```te.
+    - `[S```i```te```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er (gu```i```d) for the ```i```tem's s```i```te collect```i```on (SPS```i```te).
+    - `[S```i```teUrl <Str```i```ng>]`: The SharePo```i```nt URL for the s```i```te that conta```i```ns the ```i```tem.
+    - `[Tenant```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er (gu```i```d) for the tenancy.
+    - `[Web```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er (gu```i```d) for the ```i```tem's s```i```te (SPWeb).
+  - `[S```i```te```i```d <Str```i```ng>]`: For OneDr```i```ve for Bus```i```ness and SharePo```i```nt, th```i```s property represents the ```i```D of the s```i```te that conta```i```ns the parent document l```i```brary of the dr```i```ve```i```tem resource. The value ```i```s the same as the ```i```d property of that [s```i```te][] resource. ```i```t ```i```s an opaque str```i```ng that cons```i```sts of three ```i```dent```i```f```i```ers of the s```i```te. For OneDr```i```ve, th```i```s property ```i```s not populated.
 
-## RELATED LINKS
+## RELATED L```i```NKS
