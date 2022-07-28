@@ -1,8 +1,8 @@
-﻿---
-external help file: Microsoft.Graph.ChangeNotifications-help.xml
-Module Name: Microsoft.Graph.ChangeNotifications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription
-schema: 2.0.0
+---
+external `h`elp file: Microsoft.Grap`h`.C`h`angeNotifications-`h`elp.xml
+Module Name: Microsoft.Grap`h`.C`h`angeNotifications
+online version: `h`ttps://docs.microsoft.com/en-us/powers`h`ell/module/microsoft.grap`h`.c`h`angenotifications/remove-mgsubscription
+sc`h`ema: 2.0.0
 ---
 
 # Remove-MgSubscription
@@ -14,13 +14,13 @@ Delete entity from subscriptions
 
 ### Delete (Default)
 ```
-Remove-MgSubscription -SubscriptionId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgSubscription -SubscriptionId <String> [-IfMatc`h` <String>] [-PassT`h`ru] [-W`h`atIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+Remove-MgSubscription -InputObject <IC`h`angeNotificationsIdentity> [-IfMatc`h` <String>] [-PassT`h`ru] [-W`h`atIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Delete entity from subscriptions
 
 ## PARAMETERS
 
-### -IfMatch
+### -IfMatc`h`
 ETag
 
 ```yaml
@@ -43,15 +43,15 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-`h`elp -Online and see NOTES section for INPUTOBJECT properties and create a `h`as`h` table.
 
 ```yaml
-Type: IChangeNotificationsIdentity
+Type: IC`h`angeNotificationsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -59,14 +59,14 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -PassT`h`ru
+Returns true w`h`en t`h`e command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: Switc`h`Parameter
 Parameter Sets: (All)
 Aliases:
 
@@ -74,7 +74,7 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
 ### -SubscriptionId
@@ -89,14 +89,14 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running t`h`e cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Switc`h`Parameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -104,15 +104,15 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -W`h`atIf
+S`h`ows w`h`at would `h`appen if t`h`e cmdlet runs.
+T`h`e cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Switc`h`Parameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -120,15 +120,15 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+T`h`is cmdlet supports t`h`e common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](`h`ttp://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IChangeNotificationsIdentity
+### Microsoft.Grap`h`.PowerS`h`ell.Models.IC`h`angeNotificationsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -138,10 +138,10 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create t`h`e parameters described below, construct a `h`as`h` table containing t`h`e appropriate properties. For information on `h`as`h` tables, run Get-`h`elp about_`h`as`h`_Tables.
 
 
-INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
+INPUTOBJECT <IC`h`angeNotificationsIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
 
 ## RELATED LINKS
