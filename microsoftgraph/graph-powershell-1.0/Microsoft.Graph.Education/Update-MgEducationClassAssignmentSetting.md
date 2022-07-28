@@ -1,197 +1,197 @@
-﻿---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting
+---
+external help file: Microsoft.Graph.E``d``ucation-help.xml
+Mo``d``ule Name: Microsoft.Graph.E``d``ucation
+online version: https://``d``ocs.microsoft.com/en-us/powershell/mo``d``ule/microsoft.graph.e``d``ucation/up``d``ate-mge``d``ucationclassassignmentsetting
 schema: 2.0.0
 ---
 
-# Update-MgEducationClassAssignmentSetting
+# Up``d``ate-MgE``d``ucationClassAssignmentSetting
 
 ## SYNOPSIS
-Update the navigation property assignmentSettings in education
+Up``d``ate the navigation property assignmentSettings in e``d``ucation
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Up``d``ateExpan``d``e``d`` (``d``efault)
 ```
-Update-MgEducationClassAssignmentSetting -EducationClassId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-SubmissionAnimationDisabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up``d``ate-MgE``d``ucationClassAssignmentSetting -E``d``ucationClassI``d`` <String> [-A``d````d``itionalProperties <Hashtable>]
+ [-I``d`` <String>] [-SubmissionAnimation``d``isable``d``] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Up``d``ate
 ```
-Update-MgEducationClassAssignmentSetting -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-PassThru] [-WhatIf] [-Confirm]
+Up``d``ate-MgE``d``ucationClassAssignmentSetting -E``d``ucationClassI``d`` <String>
+ -Bo``d``yParameter <IMicrosoftGraphE``d``ucationAssignmentSettings> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### Up``d``ateViaI``d``entityExpan``d``e``d``
 ```
-Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-SubmissionAnimationDisabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up``d``ate-MgE``d``ucationClassAssignmentSetting -InputObject <IE``d``ucationI``d``entity> [-A``d````d``itionalProperties <Hashtable>]
+ [-I``d`` <String>] [-SubmissionAnimation``d``isable``d``] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### Up``d``ateViaI``d``entity
 ```
-Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-PassThru] [-WhatIf] [-Confirm]
+Up``d``ate-MgE``d``ucationClassAssignmentSetting -InputObject <IE``d``ucationI``d``entity>
+ -Bo``d``yParameter <IMicrosoftGraphE``d``ucationAssignmentSettings> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update the navigation property assignmentSettings in education
+## ``d``ESCRIPTION
+Up``d``ate the navigation property assignmentSettings in e``d``ucation
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A``d````d``itionalProperties
+A``d````d``itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ateViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -BodyParameter
-educationAssignmentSettings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo``d``yParameter
+e``d``ucationAssignmentSettings
+To construct, please use Get-Help -Online an``d`` see NOTES section for BO``d``YPARAMETER properties an``d`` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationAssignmentSettings
-Parameter Sets: Update, UpdateViaIdentity
+Type: IMicrosoftGraphE``d``ucationAssignmentSettings
+Parameter Sets: Up``d``ate, Up``d``ateViaI``d``entity
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -EducationClassId
-key: id of educationClass
+### -E``d``ucationClassI``d``
+key: i``d`` of e``d``ucationClass
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ate
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -Id
+### -I``d``
 .
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ateViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I``d``entity Parameter
+To construct, please use Get-Help -Online an``d`` see NOTES section for INPUTOBJECT properties an``d`` create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: IE``d``ucationI``d``entity
+Parameter Sets: Up``d``ateViaI``d``entityExpan``d``e``d``, Up``d``ateViaI``d``entity
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman``d`` succee``d``s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -SubmissionAnimationDisabled
-Indicates whether turn-in celebration animation will be shown.
-A value of true indicates that the animation will not be shown.
-Default value is false.
+### -SubmissionAnimation``d``isable``d``
+In``d``icates whether turn-in celebration animation will be shown.
+A value of true in``d``icates that the animation will not be shown.
+``d``efault value is false.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ateViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm``d``let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul``d`` happen if the cm``d``let runs.
+The cm``d``let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm``d``let supports the common parameters: -``d``ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an``d`` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI``d``=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentSettings
+### Microsoft.Graph.PowerShell.Mo``d``els.IE``d``ucationI``d``entity
+### Microsoft.Graph.PowerShell.Mo``d``els.IMicrosoftGraphE``d``ucationAssignmentSettings
 ## OUTPUTS
 
 ### System.Boolean
@@ -201,26 +201,26 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ``d``escribe``d`` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEducationAssignmentSettings>: educationAssignmentSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[SubmissionAnimationDisabled <Boolean?>]`: Indicates whether turn-in celebration animation will be shown. A value of true indicates that the animation will not be shown. Default value is false.
+BO``d``YPARAMETER <IMicrosoftGraphE``d``ucationAssignmentSettings>: e``d``ucationAssignmentSettings
+  - `[(Any) <Object>]`: This in``d``icates any property can be a``d````d``e``d`` to this object.
+  - `[I``d`` <String>]`: 
+  - `[SubmissionAnimation``d``isable``d`` <Boolean?>]`: In``d``icates whether turn-in celebration animation will be shown. A value of true in``d``icates that the animation will not be shown. ``d``efault value is false.
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
-  - `[EducationAssignmentId <String>]`: key: id of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: key: id of educationCategory
-  - `[EducationClassId <String>]`: key: id of educationClass
-  - `[EducationOutcomeId <String>]`: key: id of educationOutcome
-  - `[EducationRubricId <String>]`: key: id of educationRubric
-  - `[EducationSchoolId <String>]`: key: id of educationSchool
-  - `[EducationSubmissionId <String>]`: key: id of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: key: id of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: key: id of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: key: id of educationSynchronizationProfile
-  - `[EducationUserId <String>]`: key: id of educationUser
+INPUTOBJECT <IE``d``ucationI``d``entity>: I``d``entity Parameter
+  - `[E``d``ucationAssignmentI``d`` <String>]`: key: i``d`` of e``d``ucationAssignment
+  - `[E``d``ucationAssignmentResourceI``d`` <String>]`: key: i``d`` of e``d``ucationAssignmentResource
+  - `[E``d``ucationCategoryI``d`` <String>]`: key: i``d`` of e``d``ucationCategory
+  - `[E``d``ucationClassI``d`` <String>]`: key: i``d`` of e``d``ucationClass
+  - `[E``d``ucationOutcomeI``d`` <String>]`: key: i``d`` of e``d``ucationOutcome
+  - `[E``d``ucationRubricI``d`` <String>]`: key: i``d`` of e``d``ucationRubric
+  - `[E``d``ucationSchoolI``d`` <String>]`: key: i``d`` of e``d``ucationSchool
+  - `[E``d``ucationSubmissionI``d`` <String>]`: key: i``d`` of e``d``ucationSubmission
+  - `[E``d``ucationSubmissionResourceI``d`` <String>]`: key: i``d`` of e``d``ucationSubmissionResource
+  - `[E``d``ucationSynchronizationErrorI``d`` <String>]`: key: i``d`` of e``d``ucationSynchronizationError
+  - `[E``d``ucationSynchronizationProfileI``d`` <String>]`: key: i``d`` of e``d``ucationSynchronizationProfile
+  - `[E``d``ucationUserI``d`` <String>]`: key: i``d`` of e``d``ucationUser
 
-## RELATED LINKS
+## RELATE``d`` LINKS
