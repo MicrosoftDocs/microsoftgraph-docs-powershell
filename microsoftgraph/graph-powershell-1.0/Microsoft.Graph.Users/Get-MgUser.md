@@ -1,414 +1,414 @@
-﻿---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguser
-schema: 2.0.0
+---
+external help file: Micro`s`oft.Graph.U`s`er`s`-help.xml
+Module Name: Micro`s`oft.Graph.U`s`er`s`
+online ver`s`ion: http`s`://doc`s`.micro`s`oft.com/en-u`s`/power`s`hell/module/micro`s`oft.graph.u`s`er`s`/get-mgu`s`er
+`s`chema: 2.0.0
 ---
 
-# Get-MgUser
+# Get-MgU`s`er
 
-## SYNOPSIS
-Get a user
+## `s`YNOP`s`I`s`
+Get a u`s`er
 
-## SYNTAX
+## `s`YNTAX
 
-### List1 (Default)
+### Li`s`t1 (Default)
 ```
-Get-MgUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgU`s`er [-ExpandProperty <`s`tring[]>] [-Property <`s`tring[]>] [-Filter <`s`tring>] [-`s`earch <`s`tring>]
+ [-`s`kip <Int32>] [-`s`ort <`s`tring[]>] [-Top <Int32>] [-Con`s`i`s`tencyLevel <`s`tring>] [-Page`s`ize <Int32>] [-All]
+ [-CountVariable <`s`tring>] [<CommonParameter`s`>]
 ```
 
 ### Get1
 ```
-Get-MgUser -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgU`s`er -U`s`erId <`s`tring> [-ExpandProperty <`s`tring[]>] [-Property <`s`tring[]>] [<CommonParameter`s`>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgU`s`er -InputObject <IU`s`er`s`Identity> [-ExpandProperty <`s`tring[]>] [-Property <`s`tring[]>]
+ [<CommonParameter`s`>]
 ```
 
-## DESCRIPTION
-Get a user
+## DE`s`CRIPTION
+Get a u`s`er
 
-## EXAMPLES
+## EXAMPLE`s`
 
-### Example 1: Get the list of all the users
-```powershell
-Connect-MgGraph -Scopes 'User.Read.All'
-Get-MgUser  | Format-List  ID, DisplayName, Mail, UserPrincipalName
+### Example 1: Get the li`s`t of all the u`s`er`s`
+```power`s`hell
+Connect-MgGraph -`s`cope`s` 'U`s`er.Read.All'
+Get-MgU`s`er  | Format-Li`s`t  ID, Di`s`playName, Mail, U`s`erPrincipalName
 
 Id                : e4e2b110-8d4f-434f-a990-7cd63e23aed6
-DisplayName       : Kristi Laar
-Mail              : Adams@contoso.com
-UserPrincipalName : Adams@contoso.com
+Di`s`playName       : Kri`s`ti Laar
+Mail              : Adam`s`@conto`s`o.com
+U`s`erPrincipalName : Adam`s`@conto`s`o.com
 
 Id                : dba12422-ac75-486a-a960-cd7cb3f6963f
-DisplayName       : Adele Vance
-Mail              : AdeleV@contoso.com
-UserPrincipalName : AdeleV@contoso.com
+Di`s`playName       : Adele Vance
+Mail              : AdeleV@conto`s`o.com
+U`s`erPrincipalName : AdeleV@conto`s`o.com
 ```
 
-This command returns a list of all users.
+Thi`s` command return`s` a li`s`t of all u`s`er`s`.
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permi`s``s`ion`s` for thi`s` re`s`ource, `s`ee the [permi`s``s`ion`s` reference](/graph/permi`s``s`ion`s`-reference).
 
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
+To con`s`ent to any of the`s`e permi`s``s`ion`s` run `Connect-MgGraph -`s`cope`s` Permi`s``s`ion`.
+For example, `Connect-MgGraph -`s`cope`s` U`s`er.ReadBa`s`ic.All, U`s`er.Read.All`.
 
-### Example 2: Get a user by Id
-```powershell
-Connect-MgGraph -Scopes 'User.Read.All'
-Get-MgUser -UserId 'e4e2b110-8d4f-434f-a990-7cd63e23aed6' | 
-  Format-List  ID, DisplayName, Mail, UserPrincipalName
+### Example 2: Get a u`s`er by Id
+```power`s`hell
+Connect-MgGraph -`s`cope`s` 'U`s`er.Read.All'
+Get-MgU`s`er -U`s`erId 'e4e2b110-8d4f-434f-a990-7cd63e23aed6' | 
+  Format-Li`s`t  ID, Di`s`playName, Mail, U`s`erPrincipalName
 
 Id                : e4e2b110-8d4f-434f-a990-7cd63e23aed6
-DisplayName       : Kristi Laar
-Mail              : Adams@contoso.com
-UserPrincipalName : Adams@contoso.com
+Di`s`playName       : Kri`s`ti Laar
+Mail              : Adam`s`@conto`s`o.com
+U`s`erPrincipalName : Adam`s`@conto`s`o.com
 ```
 
-This command gets the specified user.
+Thi`s` command get`s` the `s`pecified u`s`er.
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permi`s``s`ion`s` for thi`s` re`s`ource, `s`ee the [permi`s``s`ion`s` reference](/graph/permi`s``s`ion`s`-reference).
 
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
+To con`s`ent to any of the`s`e permi`s``s`ion`s` run `Connect-MgGraph -`s`cope`s` Permi`s``s`ion`.
+For example, `Connect-MgGraph -`s`cope`s` U`s`er.ReadBa`s`ic.All, U`s`er.Read.All`.
 
-### Example 3: Get a count of all users
-```powershell
-Connect-MgGraph -Scopes 'User.Read.All'
-Get-MgUser -Count userCount -ConsistencyLevel eventual
+### Example 3: Get a count of all u`s`er`s`
+```power`s`hell
+Connect-MgGraph -`s`cope`s` 'U`s`er.Read.All'
+Get-MgU`s`er -Count u`s`erCount -Con`s`i`s`tencyLevel eventual
 
-Id                                   DisplayName              Mail                           UserPrincipalName        
+Id                                   Di`s`playName              Mail                           U`s`erPrincipalName        
 --                                   -----------              ----                           -----------------               
-00f9b5d4-290f-413d-ab86-feb3cdc23736 Johanna Lorenz           JohannaL@Contoso.com           JohannaL@Contoso.com
-0568f35e-9177-4630-abd6-d533b21f1f78 Brian Johnson (TAILSPIN) BrianJ@Contoso.com             BrianJ@Contoso.com
-075b32dd-edb7-47cf-89ef-f3f733683a3f Patti Fernandez          PattiF@Contoso.com             PattiF@Contoso.com
-0d005a1a-5e61-4388-bf5e-9060d727f891 Conf Room Baker          Baker@Contoso.com              Baker@Contoso.com
-15516fb3-d57e-4d46-8aa9-8305bfd85b31 Enrico Cattaneo          EnricoC@Contoso.com            EnricoC@Contoso.com
-180d5d54-159d-4970-ae07-99c8b658fa89 Allan Deyoung            AllanD@Contoso.com             AllanD@Contoso.com
-185190a7-54f0-4892-add3-211c21327570 Debra Berger             DebraB@Contoso.com             DebraB@Contoso.com
+00f9b5d4-290f-413d-ab86-feb3cdc23736 Johanna Lorenz           JohannaL@Conto`s`o.com           JohannaL@Conto`s`o.com
+0568f35e-9177-4630-abd6-d533b21f1f78 Brian John`s`on (TAIL`s`PIN) BrianJ@Conto`s`o.com             BrianJ@Conto`s`o.com
+075b32dd-edb7-47cf-89ef-f3f733683a3f Patti Fernandez          PattiF@Conto`s`o.com             PattiF@Conto`s`o.com
+0d005a1a-5e61-4388-bf5e-9060d727f891 Conf Room Baker          Baker@Conto`s`o.com              Baker@Conto`s`o.com
+15516fb3-d57e-4d46-8aa9-8305bfd85b31 Enrico Cattaneo          EnricoC@Conto`s`o.com            EnricoC@Conto`s`o.com
+180d5d54-159d-4970-ae07-99c8b658fa89 Allan Deyoung            AllanD@Conto`s`o.com             AllanD@Conto`s`o.com
+185190a7-54f0-4892-add3-211c21327570 Debra Berger             DebraB@Conto`s`o.com             DebraB@Conto`s`o.com
 ```
 
-The example gets a list of all users.
-The $userCount variable contains the count of the objects in the result.
-Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command.
-For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+The example get`s` a li`s`t of all u`s`er`s`.
+The $u`s`erCount variable contain`s` the count of the object`s` in the re`s`ult.
+Advanced query require`s` the Con`s`i`s`tencyLevel parameter `s`et to `eventual` and the Count parameter in the command.
+For more information about *Con`s`i`s`tencyLevel* and *Count*, `s`ee [Advanced query capabilitie`s` on Azure AD directory object`s`](/graph/aad-advanced-querie`s`).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permi`s``s`ion`s` for thi`s` re`s`ource, `s`ee the [permi`s``s`ion`s` reference](/graph/permi`s``s`ion`s`-reference).
 
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
+To con`s`ent to any of the`s`e permi`s``s`ion`s` run `Connect-MgGraph -`s`cope`s` Permi`s``s`ion`.
+For example, `Connect-MgGraph -`s`cope`s` U`s`er.ReadBa`s`ic.All, U`s`er.Read.All`.
 
-### Example 4: Use -Filter and -Top to get one user with a display name that starts with 'a' including a count of returned objects
-```powershell
-Connect-MgGraph -Scopes 'User.Read.All'
-Get-MgUser -ConsistencyLevel eventual -Count userCount -Filter "startsWith(DisplayName, 'a')" -Top 1
+### Example 4: U`s`e -Filter and -Top to get one u`s`er with a di`s`play name that `s`tart`s` with 'a' including a count of returned object`s`
+```power`s`hell
+Connect-MgGraph -`s`cope`s` 'U`s`er.Read.All'
+Get-MgU`s`er -Con`s`i`s`tencyLevel eventual -Count u`s`erCount -Filter "`s`tart`s`With(Di`s`playName, 'a')" -Top 1
 
-Id                                   DisplayName   Mail                               UserPrincipalName                  UserType
+Id                                   Di`s`playName   Mail                               U`s`erPrincipalName                  U`s`erType
 --                                   -----------   ----                               -----------------                  --------
-577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung AllanD@M365x814237.OnMicrosoft.com AllanD@M365x814237.OnMicrosoft.com Member
+577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung AllanD@M365x814237.OnMicro`s`oft.com AllanD@M365x814237.OnMicro`s`oft.com Member
 ```
 
-This example returns the top 1 users with the display name starting with 'a'.
-The $userCount variable contains the count of the objects in the result.
-Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command.
-For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+Thi`s` example return`s` the top 1 u`s`er`s` with the di`s`play name `s`tarting with 'a'.
+The $u`s`erCount variable contain`s` the count of the object`s` in the re`s`ult.
+Advanced query require`s` the Con`s`i`s`tencyLevel parameter `s`et to `eventual` and the Count parameter in the command.
+For more information about *Con`s`i`s`tencyLevel* and *Count*, `s`ee [Advanced query capabilitie`s` on Azure AD directory object`s`](/graph/aad-advanced-querie`s`).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permi`s``s`ion`s` for thi`s` re`s`ource, `s`ee the [permi`s``s`ion`s` reference](/graph/permi`s``s`ion`s`-reference).
 
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
+To con`s`ent to any of the`s`e permi`s``s`ion`s` run `Connect-MgGraph -`s`cope`s` Permi`s``s`ion`.
+For example, `Connect-MgGraph -`s`cope`s` U`s`er.ReadBa`s`ic.All, U`s`er.Read.All`.
 
-### Example 5: Use -Search to get all the users whose display name contains 'Conf' including a count of the returned users
-```powershell
-Connect-MgGraph -Scopes 'User.Read.All'
-Get-MgUser -ConsistencyLevel eventual -Count userCount -Search '"DisplayName:Conf"'
+### Example 5: U`s`e -`s`earch to get all the u`s`er`s` who`s`e di`s`play name contain`s` 'Conf' including a count of the returned u`s`er`s`
+```power`s`hell
+Connect-MgGraph -`s`cope`s` 'U`s`er.Read.All'
+Get-MgU`s`er -Con`s`i`s`tencyLevel eventual -Count u`s`erCount -`s`earch '"Di`s`playName:Conf"'
 
-Id                                   DisplayName       Mail                UserPrincipalName                   
+Id                                   Di`s`playName       Mail                U`s`erPrincipalName                   
 --                                   -----------       ----                -----------------                             
-0d005a1a-5e61-4388-bf5e-9060d727f891 Conf Room Baker   Baker@Contoso.com   Baker@Contoso.com
-1e34292e-e5a3-46fd-9cac-8d37f2d3ab4a Conf Room Stevens Stevens@Contoso.com Stevens@Contoso.com
-4aec2afd-be23-46d1-9138-f5ee6b77af5a Conf Room Crystal Crystal@Contoso.com Crystal@Contoso.com
-82a56dfc-31f9-4b90-8a1c-6c4326bbffd9 Conf Room Hood    Hood@Contoso.com    Hood@Contoso.com
-a7afe08d-55b9-4c44-be94-05d17c6513f3 Conf Room Rainier Rainier@Contoso.com Rainier@Contoso.com
+0d005a1a-5e61-4388-bf5e-9060d727f891 Conf Room Baker   Baker@Conto`s`o.com   Baker@Conto`s`o.com
+1e34292e-e5a3-46fd-9cac-8d37f2d3ab4a Conf Room `s`teven`s` `s`teven`s`@Conto`s`o.com `s`teven`s`@Conto`s`o.com
+4aec2afd-be23-46d1-9138-f5ee6b77af5a Conf Room Cry`s`tal Cry`s`tal@Conto`s`o.com Cry`s`tal@Conto`s`o.com
+82a56dfc-31f9-4b90-8a1c-6c4326bbffd9 Conf Room Hood    Hood@Conto`s`o.com    Hood@Conto`s`o.com
+a7afe08d-55b9-4c44-be94-05d17c6513f3 Conf Room Rainier Rainier@Conto`s`o.com Rainier@Conto`s`o.com
 ```
 
-This example returns all users whose display name contains 'Conf'.
-The $userCount variable contains the count of the objects in the result.
-Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command.
-For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+Thi`s` example return`s` all u`s`er`s` who`s`e di`s`play name contain`s` 'Conf'.
+The $u`s`erCount variable contain`s` the count of the object`s` in the re`s`ult.
+Advanced query require`s` the Con`s`i`s`tencyLevel parameter `s`et to `eventual` and the Count parameter in the command.
+For more information about *Con`s`i`s`tencyLevel* and *Count*, `s`ee [Advanced query capabilitie`s` on Azure AD directory object`s`](/graph/aad-advanced-querie`s`).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permi`s``s`ion`s` for thi`s` re`s`ource, `s`ee the [permi`s``s`ion`s` reference](/graph/permi`s``s`ion`s`-reference).
 
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
+To con`s`ent to any of the`s`e permi`s``s`ion`s` run `Connect-MgGraph -`s`cope`s` Permi`s``s`ion`.
+For example, `Connect-MgGraph -`s`cope`s` U`s`er.ReadBa`s`ic.All, U`s`er.Read.All`.
 
-### Example 6: Use -Filter to get all the users with a display name that starts with 'Conf' including a count of the returned users, with the results ordered by UserPrincipalName
-```powershell
-Connect-MgGraph -Scopes 'User.Read.All'
-Get-MgUser -ConsistencyLevel eventual -Count userCount -Filter "startsWith(DisplayName, 'Conf')" -OrderBy UserPrincipalName
+### Example 6: U`s`e -Filter to get all the u`s`er`s` with a di`s`play name that `s`tart`s` with 'Conf' including a count of the returned u`s`er`s`, with the re`s`ult`s` ordered by U`s`erPrincipalName
+```power`s`hell
+Connect-MgGraph -`s`cope`s` 'U`s`er.Read.All'
+Get-MgU`s`er -Con`s`i`s`tencyLevel eventual -Count u`s`erCount -Filter "`s`tart`s`With(Di`s`playName, 'Conf')" -OrderBy U`s`erPrincipalName
 
-Id                                   DisplayName       Mail                UserPrincipalName                   
+Id                                   Di`s`playName       Mail                U`s`erPrincipalName                   
 --                                   -----------       ----                -----------------                   
-0d005a1a-5e61-4388-bf5e-9060d727f891 Conf Room Baker   Baker@Contoso.com   Baker@Contoso.com
-4aec2afd-be23-46d1-9138-f5ee6b77af5a Conf Room Crystal Crystal@Contoso.com Crystal@Contoso.com
-82a56dfc-31f9-4b90-8a1c-6c4326bbffd9 Conf Room Hood    Hood@Contoso.com    Hood@Contoso.com
-a7afe08d-55b9-4c44-be94-05d17c6513f3 Conf Room Rainier Rainier@Contoso.com Rainier@Contoso.com
-1e34292e-e5a3-46fd-9cac-8d37f2d3ab4a Conf Room Stevens Stevens@Contoso.com Stevens@Contoso.com
+0d005a1a-5e61-4388-bf5e-9060d727f891 Conf Room Baker   Baker@Conto`s`o.com   Baker@Conto`s`o.com
+4aec2afd-be23-46d1-9138-f5ee6b77af5a Conf Room Cry`s`tal Cry`s`tal@Conto`s`o.com Cry`s`tal@Conto`s`o.com
+82a56dfc-31f9-4b90-8a1c-6c4326bbffd9 Conf Room Hood    Hood@Conto`s`o.com    Hood@Conto`s`o.com
+a7afe08d-55b9-4c44-be94-05d17c6513f3 Conf Room Rainier Rainier@Conto`s`o.com Rainier@Conto`s`o.com
+1e34292e-e5a3-46fd-9cac-8d37f2d3ab4a Conf Room `s`teven`s` `s`teven`s`@Conto`s`o.com `s`teven`s`@Conto`s`o.com
 ```
 
-This example filters all users whose display name starts with 'Conf' and orders the results by the user principal name.
-The $userCount variable contains the count of the objects in the result.
-Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command.
-For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+Thi`s` example filter`s` all u`s`er`s` who`s`e di`s`play name `s`tart`s` with 'Conf' and order`s` the re`s`ult`s` by the u`s`er principal name.
+The $u`s`erCount variable contain`s` the count of the object`s` in the re`s`ult.
+Advanced query require`s` the Con`s`i`s`tencyLevel parameter `s`et to `eventual` and the Count parameter in the command.
+For more information about *Con`s`i`s`tencyLevel* and *Count*, `s`ee [Advanced query capabilitie`s` on Azure AD directory object`s`](/graph/aad-advanced-querie`s`).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permi`s``s`ion`s` for thi`s` re`s`ource, `s`ee the [permi`s``s`ion`s` reference](/graph/permi`s``s`ion`s`-reference).
 
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes User.ReadBasic.All, User.Read.All`.
+To con`s`ent to any of the`s`e permi`s``s`ion`s` run `Connect-MgGraph -`s`cope`s` Permi`s``s`ion`.
+For example, `Connect-MgGraph -`s`cope`s` U`s`er.ReadBa`s`ic.All, U`s`er.Read.All`.
 
-## PARAMETERS
+## PARAMETER`s`
 
 ### -All
-List all pages.
+Li`s`t all page`s`.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
-Aliases:
+Type: `s`witchParameter
+Parameter `s`et`s`: Li`s`t1
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -ConsistencyLevel
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+### -Con`s`i`s`tencyLevel
+Indicate`s` the reque`s`ted con`s`i`s`tency level.
+Documentation URL: http`s`://doc`s`.micro`s`oft.com/graph/aad-advanced-querie`s`
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
+Type: `s`tring
+Parameter `s`et`s`: Li`s`t1
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+`s`pecifie`s` a count of the total number of item`s` in a collection.
+By default, thi`s` variable will be `s`et in the global `s`cope.
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases: CV
+Type: `s`tring
+Parameter `s`et`s`: Li`s`t1
+Alia`s`e`s`: CV
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -ExpandProperty
-Expand related entities
+Expand related entitie`s`
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
+Type: `s`tring[]
+Parameter `s`et`s`: (All)
+Alia`s`e`s`: Expand
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -Filter
-Filter items by property values
+Filter item`s` by property value`s`
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
+Type: `s`tring
+Parameter `s`et`s`: Li`s`t1
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con`s`truct, plea`s`e u`s`e Get-Help -Online and `s`ee NOTE`s` `s`ection for INPUTOBJECT propertie`s` and create a ha`s`h table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: GetViaIdentity1
-Aliases:
+Type: IU`s`er`s`Identity
+Parameter `s`et`s`: GetViaIdentity1
+Alia`s`e`s`:
 
 Required: True
-Position: Named
+Po`s`ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -PageSize
-Sets the page size of results.
+### -Page`s`ize
+`s`et`s` the page `s`ize of re`s`ult`s`.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
-Aliases:
+Parameter `s`et`s`: Li`s`t1
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -Property
-Select properties to be returned
+`s`elect propertie`s` to be returned
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Type: `s`tring[]
+Parameter `s`et`s`: (All)
+Alia`s`e`s`: `s`elect
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -Search
-Search items by search phrases
+### -`s`earch
+`s`earch item`s` by `s`earch phra`s`e`s`
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
+Type: `s`tring
+Parameter `s`et`s`: Li`s`t1
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -Sort
-Order items by property values
+### -`s`ort
+Order item`s` by property value`s`
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
-Aliases: OrderBy
+Type: `s`tring[]
+Parameter `s`et`s`: Li`s`t1
+Alia`s`e`s`: OrderBy
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -Top
-Show only the first n items
+`s`how only the fir`s`t n item`s`
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
-Aliases: Limit
+Parameter `s`et`s`: Li`s`t1
+Alia`s`e`s`: Limit
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -UserId
-key: id of user
+### -U`s`erId
+key: id of u`s`er
 
 ```yaml
-Type: String
-Parameter Sets: Get1
-Aliases:
+Type: `s`tring
+Parameter `s`et`s`: Get1
+Alia`s`e`s`:
 
 Required: True
-Position: Named
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -Skip
-Skip the first n items
+### -`s`kip
+`s`kip the fir`s`t n item`s`
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
-Aliases:
+Parameter `s`et`s`: Li`s`t1
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter`s`
+Thi`s` cmdlet `s`upport`s` the common parameter`s`: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo`s`e, -WarningAction, and -WarningVariable. For more information, `s`ee [about_CommonParameter`s`](http://go.micro`s`oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT`s`
 
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-## OUTPUTS
+### Micro`s`oft.Graph.Power`s`hell.Model`s`.IU`s`er`s`Identity
+## OUTPUT`s`
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
-## NOTES
+### Micro`s`oft.Graph.Power`s`hell.Model`s`.IMicro`s`oftGraphU`s`er
+## NOTE`s`
 
-ALIASES
+ALIA`s`E`s`
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE`s`
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter`s` de`s`cribed below, con`s`truct a ha`s`h table containing the appropriate propertie`s`. For information on ha`s`h table`s`, run Get-Help about_Ha`s`h_Table`s`.
 
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
-  - `[AttachmentBaseId <String>]`: key: id of attachmentBase
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[AttachmentSessionId <String>]`: key: id of attachmentSession
-  - `[ChecklistItemId <String>]`: key: id of checklistItem
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
-  - `[LinkedResourceId <String>]`: key: id of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: key: id of notification
-  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: key: id of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IU`s`er`s`Identity>: Identity Parameter
+  - `[AttachmentBa`s`eId <`s`tring>]`: key: id of attachmentBa`s`e
+  - `[AttachmentId <`s`tring>]`: key: id of attachment
+  - `[Attachment`s`e`s``s`ionId <`s`tring>]`: key: id of attachment`s`e`s``s`ion
+  - `[Checkli`s`tItemId <`s`tring>]`: key: id of checkli`s`tItem
+  - `[DirectoryObjectId <`s`tring>]`: key: id of directoryObject
+  - `[Exten`s`ionId <`s`tring>]`: key: id of exten`s`ion
+  - `[Licen`s`eDetail`s`Id <`s`tring>]`: key: id of licen`s`eDetail`s`
+  - `[LinkedRe`s`ourceId <`s`tring>]`: key: id of linkedRe`s`ource
+  - `[MultiValueLegacyExtendedPropertyId <`s`tring>]`: key: id of multiValueLegacyExtendedProperty
+  - `[NotificationId <`s`tring>]`: key: id of notification
+  - `[OAuth2Permi`s``s`ionGrantId <`s`tring>]`: key: id of oAuth2Permi`s``s`ionGrant
+  - `[OutlookCategoryId <`s`tring>]`: key: id of outlookCategory
+  - `[OutlookTa`s`kFolderId <`s`tring>]`: key: id of outlookTa`s`kFolder
+  - `[OutlookTa`s`kGroupId <`s`tring>]`: key: id of outlookTa`s`kGroup
+  - `[OutlookTa`s`kId <`s`tring>]`: key: id of outlookTa`s`k
+  - `[ProfilePhotoId <`s`tring>]`: key: id of profilePhoto
+  - `[`s`ingleValueLegacyExtendedPropertyId <`s`tring>]`: key: id of `s`ingleValueLegacyExtendedProperty
+  - `[TodoTa`s`kId <`s`tring>]`: key: id of todoTa`s`k
+  - `[TodoTa`s`kLi`s`tId <`s`tring>]`: key: id of todoTa`s`kLi`s`t
+  - `[U`s`erId <`s`tring>]`: key: id of u`s`er
 
-## RELATED LINKS
+## RELATED LINK`s`
