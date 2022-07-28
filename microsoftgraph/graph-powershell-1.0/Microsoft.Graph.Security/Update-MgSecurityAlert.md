@@ -1,1202 +1,1202 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityalert
-schema: 2.0.0
+````e````xt````e````rnal h````e````lp fil````e````: Microsoft.Graph.S````e````curity-h````e````lp.xml
+Modul````e```` Nam````e````: Microsoft.Graph.S````e````curity
+onlin````e```` v````e````rsion: https://docs.microsoft.com/````e````n-us/pow````e````rsh````e````ll/modul````e````/microsoft.graph.s````e````curity/updat````e````-mgs````e````curityal````e````rt
+sch````e````ma: 2.0.0
 ---
 
-# Update-MgSecurityAlert
+# Updat````e````-MgS````e````curityAl````e````rt
 
 ## SYNOPSIS
-Update the navigation property alerts in security
+Updat````e```` th````e```` navigation prop````e````rty al````e````rts in s````e````curity
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Updat````e````````e````xpand````e````d (D````e````fault)
 ```
-Update-MgSecurityAlert -AlertId <String> [-ActivityGroupName <String>] [-AdditionalProperties <Hashtable>]
- [-AlertDetections <IMicrosoftGraphAlertDetection[]>] [-AssignedTo <String>] [-AzureSubscriptionId <String>]
- [-AzureTenantId <String>] [-Category <String>] [-ClosedDateTime <DateTime>]
- [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>] [-Comments <String[]>] [-Confidence <Int32>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DetectionIds <String[]>] [-EventDateTime <DateTime>]
- [-Feedback <String>] [-FileStates <IMicrosoftGraphFileSecurityState[]>]
- [-HistoryStates <IMicrosoftGraphAlertHistoryState[]>] [-HostStates <IMicrosoftGraphHostSecurityState[]>]
- [-Id <String>] [-IncidentIds <String[]>]
- [-InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>] [-LastEventDateTime <DateTime>]
- [-LastModifiedDateTime <DateTime>] [-MalwareStates <IMicrosoftGraphMalwareState[]>]
- [-MessageSecurityStates <IMicrosoftGraphMessageSecurityState[]>]
- [-NetworkConnections <IMicrosoftGraphNetworkConnection[]>] [-Processes <IMicrosoftGraphProcess[]>]
- [-RecommendedActions <String[]>] [-RegistryKeyStates <IMicrosoftGraphRegistryKeyState[]>]
- [-SecurityResources <IMicrosoftGraphSecurityResource[]>] [-Severity <String>] [-SourceMaterials <String[]>]
- [-Status <String>] [-Tags <String[]>] [-Title <String>] [-Triggers <IMicrosoftGraphAlertTrigger[]>]
- [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
- [-UserStates <IMicrosoftGraphUserSecurityState[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgSecurityAlert -AlertId <String> -BodyParameter <IMicrosoftGraphAlert> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Updat````e````-MgS````e````curityAl````e````rt -Al````e````rtId <String> [-ActivityGroupNam````e```` <String>] [-AdditionalProp````e````rti````e````s <Hashtabl````e````>]
+ [-Al````e````rtD````e````t````e````ctions <IMicrosoftGraphAl````e````rtD````e````t````e````ction[]>] [-Assign````e````dTo <String>] [-Azur````e````SubscriptionId <String>]
+ [-Azur````e````T````e````nantId <String>] [-Cat````e````gory <String>] [-Clos````e````dDat````e````Tim````e```` <Dat````e````Tim````e````>]
+ [-CloudAppStat````e````s <IMicrosoftGraphCloudAppS````e````curityStat````e````[]>] [-Comm````e````nts <String[]>] [-Confid````e````nc````e```` <Int32>]
+ [-Cr````e````at````e````dDat````e````Tim````e```` <Dat````e````Tim````e````>] [-D````e````scription <String>] [-D````e````t````e````ctionIds <String[]>] [-````e````v````e````ntDat````e````Tim````e```` <Dat````e````Tim````e````>]
+ [-F````e````````e````dback <String>] [-Fil````e````Stat````e````s <IMicrosoftGraphFil````e````S````e````curityStat````e````[]>]
+ [-HistoryStat````e````s <IMicrosoftGraphAl````e````rtHistoryStat````e````[]>] [-HostStat````e````s <IMicrosoftGraphHostS````e````curityStat````e````[]>]
+ [-Id <String>] [-Incid````e````ntIds <String[]>]
+ [-Inv````e````stigationS````e````curityStat````e````s <IMicrosoftGraphInv````e````stigationS````e````curityStat````e````[]>] [-Last````e````v````e````ntDat````e````Tim````e```` <Dat````e````Tim````e````>]
+ [-LastModifi````e````dDat````e````Tim````e```` <Dat````e````Tim````e````>] [-Malwar````e````Stat````e````s <IMicrosoftGraphMalwar````e````Stat````e````[]>]
+ [-M````e````ssag````e````S````e````curityStat````e````s <IMicrosoftGraphM````e````ssag````e````S````e````curityStat````e````[]>]
+ [-N````e````tworkConn````e````ctions <IMicrosoftGraphN````e````tworkConn````e````ction[]>] [-Proc````e````ss````e````s <IMicrosoftGraphProc````e````ss[]>]
+ [-R````e````comm````e````nd````e````dActions <String[]>] [-R````e````gistryK````e````yStat````e````s <IMicrosoftGraphR````e````gistryK````e````yStat````e````[]>]
+ [-S````e````curityR````e````sourc````e````s <IMicrosoftGraphS````e````curityR````e````sourc````e````[]>] [-S````e````v````e````rity <String>] [-Sourc````e````Mat````e````rials <String[]>]
+ [-Status <String>] [-Tags <String[]>] [-Titl````e```` <String>] [-Trigg````e````rs <IMicrosoftGraphAl````e````rtTrigg````e````r[]>]
+ [-UriClickS````e````curityStat````e````s <IMicrosoftGraphUriClickS````e````curityStat````e````[]>]
+ [-Us````e````rStat````e````s <IMicrosoftGraphUs````e````rS````e````curityStat````e````[]>]
+ [-V````e````ndorInformation <IMicrosoftGraphS````e````curityV````e````ndorInformation>]
+ [-Vuln````e````rabilityStat````e````s <IMicrosoftGraphVuln````e````rabilityStat````e````[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam````e````t````e````rs>]
 ```
 
-### UpdateViaIdentityExpanded
+### Updat````e````
 ```
-Update-MgSecurityAlert -InputObject <ISecurityIdentity> [-ActivityGroupName <String>]
- [-AdditionalProperties <Hashtable>] [-AlertDetections <IMicrosoftGraphAlertDetection[]>]
- [-AssignedTo <String>] [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-Category <String>]
- [-ClosedDateTime <DateTime>] [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>] [-Comments <String[]>]
- [-Confidence <Int32>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DetectionIds <String[]>]
- [-EventDateTime <DateTime>] [-Feedback <String>] [-FileStates <IMicrosoftGraphFileSecurityState[]>]
- [-HistoryStates <IMicrosoftGraphAlertHistoryState[]>] [-HostStates <IMicrosoftGraphHostSecurityState[]>]
- [-Id <String>] [-IncidentIds <String[]>]
- [-InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>] [-LastEventDateTime <DateTime>]
- [-LastModifiedDateTime <DateTime>] [-MalwareStates <IMicrosoftGraphMalwareState[]>]
- [-MessageSecurityStates <IMicrosoftGraphMessageSecurityState[]>]
- [-NetworkConnections <IMicrosoftGraphNetworkConnection[]>] [-Processes <IMicrosoftGraphProcess[]>]
- [-RecommendedActions <String[]>] [-RegistryKeyStates <IMicrosoftGraphRegistryKeyState[]>]
- [-SecurityResources <IMicrosoftGraphSecurityResource[]>] [-Severity <String>] [-SourceMaterials <String[]>]
- [-Status <String>] [-Tags <String[]>] [-Title <String>] [-Triggers <IMicrosoftGraphAlertTrigger[]>]
- [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
- [-UserStates <IMicrosoftGraphUserSecurityState[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Updat````e````-MgS````e````curityAl````e````rt -Al````e````rtId <String> -BodyParam````e````t````e````r <IMicrosoftGraphAl````e````rt> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam````e````t````e````rs>]
 ```
 
-### UpdateViaIdentity
+### Updat````e````ViaId````e````ntity````e````xpand````e````d
 ```
-Update-MgSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphAlert> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat````e````-MgS````e````curityAl````e````rt -InputObj````e````ct <IS````e````curityId````e````ntity> [-ActivityGroupNam````e```` <String>]
+ [-AdditionalProp````e````rti````e````s <Hashtabl````e````>] [-Al````e````rtD````e````t````e````ctions <IMicrosoftGraphAl````e````rtD````e````t````e````ction[]>]
+ [-Assign````e````dTo <String>] [-Azur````e````SubscriptionId <String>] [-Azur````e````T````e````nantId <String>] [-Cat````e````gory <String>]
+ [-Clos````e````dDat````e````Tim````e```` <Dat````e````Tim````e````>] [-CloudAppStat````e````s <IMicrosoftGraphCloudAppS````e````curityStat````e````[]>] [-Comm````e````nts <String[]>]
+ [-Confid````e````nc````e```` <Int32>] [-Cr````e````at````e````dDat````e````Tim````e```` <Dat````e````Tim````e````>] [-D````e````scription <String>] [-D````e````t````e````ctionIds <String[]>]
+ [-````e````v````e````ntDat````e````Tim````e```` <Dat````e````Tim````e````>] [-F````e````````e````dback <String>] [-Fil````e````Stat````e````s <IMicrosoftGraphFil````e````S````e````curityStat````e````[]>]
+ [-HistoryStat````e````s <IMicrosoftGraphAl````e````rtHistoryStat````e````[]>] [-HostStat````e````s <IMicrosoftGraphHostS````e````curityStat````e````[]>]
+ [-Id <String>] [-Incid````e````ntIds <String[]>]
+ [-Inv````e````stigationS````e````curityStat````e````s <IMicrosoftGraphInv````e````stigationS````e````curityStat````e````[]>] [-Last````e````v````e````ntDat````e````Tim````e```` <Dat````e````Tim````e````>]
+ [-LastModifi````e````dDat````e````Tim````e```` <Dat````e````Tim````e````>] [-Malwar````e````Stat````e````s <IMicrosoftGraphMalwar````e````Stat````e````[]>]
+ [-M````e````ssag````e````S````e````curityStat````e````s <IMicrosoftGraphM````e````ssag````e````S````e````curityStat````e````[]>]
+ [-N````e````tworkConn````e````ctions <IMicrosoftGraphN````e````tworkConn````e````ction[]>] [-Proc````e````ss````e````s <IMicrosoftGraphProc````e````ss[]>]
+ [-R````e````comm````e````nd````e````dActions <String[]>] [-R````e````gistryK````e````yStat````e````s <IMicrosoftGraphR````e````gistryK````e````yStat````e````[]>]
+ [-S````e````curityR````e````sourc````e````s <IMicrosoftGraphS````e````curityR````e````sourc````e````[]>] [-S````e````v````e````rity <String>] [-Sourc````e````Mat````e````rials <String[]>]
+ [-Status <String>] [-Tags <String[]>] [-Titl````e```` <String>] [-Trigg````e````rs <IMicrosoftGraphAl````e````rtTrigg````e````r[]>]
+ [-UriClickS````e````curityStat````e````s <IMicrosoftGraphUriClickS````e````curityStat````e````[]>]
+ [-Us````e````rStat````e````s <IMicrosoftGraphUs````e````rS````e````curityStat````e````[]>]
+ [-V````e````ndorInformation <IMicrosoftGraphS````e````curityV````e````ndorInformation>]
+ [-Vuln````e````rabilityStat````e````s <IMicrosoftGraphVuln````e````rabilityStat````e````[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam````e````t````e````rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property alerts in security
+### Updat````e````ViaId````e````ntity
+```
+Updat````e````-MgS````e````curityAl````e````rt -InputObj````e````ct <IS````e````curityId````e````ntity> -BodyParam````e````t````e````r <IMicrosoftGraphAl````e````rt> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam````e````t````e````rs>]
+```
 
-## EXAMPLES
+## D````e````SCRIPTION
+Updat````e```` th````e```` navigation prop````e````rty al````e````rts in s````e````curity
 
-## PARAMETERS
+## ````e````XAMPL````e````S
 
-### -ActivityGroupName
-Name or alias of the activity group (attacker) this alert is attributed to.
+## PARAM````e````T````e````RS
+
+### -ActivityGroupNam````e````
+Nam````e```` or alias of th````e```` activity group (attack````e````r) this al````e````rt is attribut````e````d to.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalProp````e````rti````e````s
+Additional Param````e````t````e````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: Hashtabl````e````
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -AlertDetections
+### -Al````e````rtD````e````t````e````ctions
 .
-To construct, please use Get-Help -Online and see NOTES section for ALERTDETECTIONS properties and create a hash table.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for AL````e````RTD````e````T````e````CTIONS prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphAlertDetection[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphAl````e````rtD````e````t````e````ction[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -AlertId
-key: id of alert
+### -Al````e````rtId
+k````e````y: id of al````e````rt
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````
+Alias````e````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Tru````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -AssignedTo
-Name of the analyst the alert is assigned to for triage, investigation, or remediation (supports update).
+### -Assign````e````dTo
+Nam````e```` of th````e```` analyst th````e```` al````e````rt is assign````e````d to for triag````e````, inv````e````stigation, or r````e````m````e````diation (supports updat````e````).
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -AzureSubscriptionId
-Azure subscription ID, present if this alert is related to an Azure resource.
+### -Azur````e````SubscriptionId
+Azur````e```` subscription ID, pr````e````s````e````nt if this al````e````rt is r````e````lat````e````d to an Azur````e```` r````e````sourc````e````.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -AzureTenantId
-Azure Active Directory tenant ID.
-Required.
+### -Azur````e````T````e````nantId
+Azur````e```` Activ````e```` Dir````e````ctory t````e````nant ID.
+R````e````quir````e````d.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -BodyParameter
-alert
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam````e````t````e````r
+al````e````rt
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for BODYPARAM````e````T````e````R prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphAlert
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+Typ````e````: IMicrosoftGraphAl````e````rt
+Param````e````t````e````r S````e````ts: Updat````e````, Updat````e````ViaId````e````ntity
+Alias````e````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R````e````quir````e````d: Tru````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Tru````e```` (ByValu````e````)
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Category
-Category of the alert (for example, credentialTheft, ransomware, etc.).
+### -Cat````e````gory
+Cat````e````gory of th````e```` al````e````rt (for ````e````xampl````e````, cr````e````d````e````ntialTh````e````ft, ransomwar````e````, ````e````tc.).
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -ClosedDateTime
-Time at which the alert was closed.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports update).
+### -Clos````e````dDat````e````Tim````e````
+Tim````e```` at which th````e```` al````e````rt was clos````e````d.
+Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````.
+For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports updat````e````).
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: Dat````e````Tim````e````
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -CloudAppStates
-Security-related stateful information generated by the provider about the cloud application/s related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for CLOUDAPPSTATES properties and create a hash table.
+### -CloudAppStat````e````s
+S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` cloud application/s r````e````lat````e````d to this al````e````rt.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for CLOUDAPPSTAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphCloudAppSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphCloudAppS````e````curityStat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Comments
-Customer-provided comments on alert (for customer alert management) (supports update).
+### -Comm````e````nts
+Custom````e````r-provid````e````d comm````e````nts on al````e````rt (for custom````e````r al````e````rt manag````e````m````e````nt) (supports updat````e````).
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Confidence
-Confidence of the detection logic (percentage between 1-100).
+### -Confid````e````nc````e````
+Confid````e````nc````e```` of th````e```` d````e````t````e````ction logic (p````e````rc````e````ntag````e```` b````e````tw````e````````e````n 1-100).
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: Int32
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -CreatedDateTime
-Time at which the alert was created by the alert provider.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Required.
+### -Cr````e````at````e````dDat````e````Tim````e````
+Tim````e```` at which th````e```` al````e````rt was cr````e````at````e````d by th````e```` al````e````rt provid````e````r.
+Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````.
+For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+R````e````quir````e````d.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: Dat````e````Tim````e````
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Description
-Alert description.
+### -D````e````scription
+Al````e````rt d````e````scription.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -DetectionIds
-Set of alerts related to this alert entity (each alert is pushed to the SIEM as a separate record).
+### -D````e````t````e````ctionIds
+S````e````t of al````e````rts r````e````lat````e````d to this al````e````rt ````e````ntity (````e````ach al````e````rt is push````e````d to th````e```` SI````e````M as a s````e````parat````e```` r````e````cord).
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -EventDateTime
-Time at which the event(s) that served as the trigger(s) to generate the alert occurred.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Required.
+### -````e````v````e````ntDat````e````Tim````e````
+Tim````e```` at which th````e```` ````e````v````e````nt(s) that s````e````rv````e````d as th````e```` trigg````e````r(s) to g````e````n````e````rat````e```` th````e```` al````e````rt occurr````e````d.
+Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````.
+For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+R````e````quir````e````d.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: Dat````e````Tim````e````
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Feedback
-alertFeedback
+### -F````e````````e````dback
+al````e````rtF````e````````e````dback
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -FileStates
-Security-related stateful information generated by the provider about the file(s) related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for FILESTATES properties and create a hash table.
+### -Fil````e````Stat````e````s
+S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` fil````e````(s) r````e````lat````e````d to this al````e````rt.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for FIL````e````STAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphFileSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphFil````e````S````e````curityStat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -HistoryStates
-A collection of alertHistoryStates comprising an audit log of all updates made to an alert.
-To construct, please use Get-Help -Online and see NOTES section for HISTORYSTATES properties and create a hash table.
+### -HistoryStat````e````s
+A coll````e````ction of al````e````rtHistoryStat````e````s comprising an audit log of all updat````e````s mad````e```` to an al````e````rt.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for HISTORYSTAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphAlertHistoryState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphAl````e````rtHistoryStat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -HostStates
-Security-related stateful information generated by the provider about the host(s) related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for HOSTSTATES properties and create a hash table.
+### -HostStat````e````s
+S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` host(s) r````e````lat````e````d to this al````e````rt.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for HOSTSTAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphHostSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphHostS````e````curityStat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -IncidentIds
-IDs of incidents related to current alert.
+### -Incid````e````ntIds
+IDs of incid````e````nts r````e````lat````e````d to curr````e````nt al````e````rt.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj````e````ct
+Id````e````ntity Param````e````t````e````r
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for INPUTOBJ````e````CT prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
+Typ````e````: IS````e````curityId````e````ntity
+Param````e````t````e````r S````e````ts: Updat````e````ViaId````e````ntity````e````xpand````e````d, Updat````e````ViaId````e````ntity
+Alias````e````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R````e````quir````e````d: Tru````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Tru````e```` (ByValu````e````)
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -InvestigationSecurityStates
+### -Inv````e````stigationS````e````curityStat````e````s
 .
-To construct, please use Get-Help -Online and see NOTES section for INVESTIGATIONSECURITYSTATES properties and create a hash table.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for INV````e````STIGATIONS````e````CURITYSTAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphInvestigationSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphInv````e````stigationS````e````curityStat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -LastEventDateTime
+### -Last````e````v````e````ntDat````e````Tim````e````
 .
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: Dat````e````Tim````e````
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -LastModifiedDateTime
-Time at which the alert entity was last modified.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+### -LastModifi````e````dDat````e````Tim````e````
+Tim````e```` at which th````e```` al````e````rt ````e````ntity was last modifi````e````d.
+Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````.
+For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: Dat````e````Tim````e````
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -MalwareStates
-Threat Intelligence pertaining to malware related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for MALWARESTATES properties and create a hash table.
+### -Malwar````e````Stat````e````s
+Thr````e````at Int````e````llig````e````nc````e```` p````e````rtaining to malwar````e```` r````e````lat````e````d to this al````e````rt.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for MALWAR````e````STAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphMalwareState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphMalwar````e````Stat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -MessageSecurityStates
+### -M````e````ssag````e````S````e````curityStat````e````s
 .
-To construct, please use Get-Help -Online and see NOTES section for MESSAGESECURITYSTATES properties and create a hash table.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for M````e````SSAG````e````S````e````CURITYSTAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphMessageSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphM````e````ssag````e````S````e````curityStat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -NetworkConnections
-Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for NETWORKCONNECTIONS properties and create a hash table.
+### -N````e````tworkConn````e````ctions
+S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` n````e````twork conn````e````ction(s) r````e````lat````e````d to this al````e````rt.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for N````e````TWORKCONN````e````CTIONS prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphNetworkConnection[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphN````e````tworkConn````e````ction[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R````e````turns tru````e```` wh````e````n th````e```` command succ````e````````e````ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: (All)
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Processes
-Security-related stateful information generated by the provider about the process or processes related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for PROCESSES properties and create a hash table.
+### -Proc````e````ss````e````s
+S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` proc````e````ss or proc````e````ss````e````s r````e````lat````e````d to this al````e````rt.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for PROC````e````SS````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphProcess[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphProc````e````ss[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -RecommendedActions
-Vendor/provider recommended action(s) to take as a result of the alert (for example, isolate machine, enforce2FA, reimage host).
+### -R````e````comm````e````nd````e````dActions
+V````e````ndor/provid````e````r r````e````comm````e````nd````e````d action(s) to tak````e```` as a r````e````sult of th````e```` al````e````rt (for ````e````xampl````e````, isolat````e```` machin````e````, ````e````nforc````e````2FA, r````e````imag````e```` host).
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -RegistryKeyStates
-Security-related stateful information generated by the provider about the registry keys related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for REGISTRYKEYSTATES properties and create a hash table.
+### -R````e````gistryK````e````yStat````e````s
+S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` r````e````gistry k````e````ys r````e````lat````e````d to this al````e````rt.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for R````e````GISTRYK````e````YSTAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphRegistryKeyState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphR````e````gistryK````e````yStat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -SecurityResources
-Resources related to current alert.
-For example, for some alerts this can have the Azure Resource value.
-To construct, please use Get-Help -Online and see NOTES section for SECURITYRESOURCES properties and create a hash table.
+### -S````e````curityR````e````sourc````e````s
+R````e````sourc````e````s r````e````lat````e````d to curr````e````nt al````e````rt.
+For ````e````xampl````e````, for som````e```` al````e````rts this can hav````e```` th````e```` Azur````e```` R````e````sourc````e```` valu````e````.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for S````e````CURITYR````e````SOURC````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphSecurityResource[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphS````e````curityR````e````sourc````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Severity
-alertSeverity
+### -S````e````v````e````rity
+al````e````rtS````e````v````e````rity
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -SourceMaterials
-Hyperlinks (URIs) to the source material related to the alert, for example, provider's user interface for alerts or log search, etc.
+### -Sourc````e````Mat````e````rials
+Hyp````e````rlinks (URIs) to th````e```` sourc````e```` mat````e````rial r````e````lat````e````d to th````e```` al````e````rt, for ````e````xampl````e````, provid````e````r's us````e````r int````e````rfac````e```` for al````e````rts or log s````e````arch, ````e````tc.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Status
-alertStatus
+al````e````rtStatus
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Tags
-User-definable labels that can be applied to an alert and can serve as filter conditions (for example 'HVA', 'SAW', etc.) (supports update).
+Us````e````r-d````e````finabl````e```` lab````e````ls that can b````e```` appli````e````d to an al````e````rt and can s````e````rv````e```` as filt````e````r conditions (for ````e````xampl````e```` 'HVA', 'SAW', ````e````tc.) (supports updat````e````).
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Title
-Alert title.
-Required.
+### -Titl````e````
+Al````e````rt titl````e````.
+R````e````quir````e````d.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Triggers
-Security-related information about the specific properties that triggered the alert (properties appearing in the alert).
-Alerts might contain information about multiple users, hosts, files, ip addresses.
-This field indicates which properties triggered the alert generation.
-To construct, please use Get-Help -Online and see NOTES section for TRIGGERS properties and create a hash table.
+### -Trigg````e````rs
+S````e````curity-r````e````lat````e````d information about th````e```` sp````e````cific prop````e````rti````e````s that trigg````e````r````e````d th````e```` al````e````rt (prop````e````rti````e````s app````e````aring in th````e```` al````e````rt).
+Al````e````rts might contain information about multipl````e```` us````e````rs, hosts, fil````e````s, ip addr````e````ss````e````s.
+This fi````e````ld indicat````e````s which prop````e````rti````e````s trigg````e````r````e````d th````e```` al````e````rt g````e````n````e````ration.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for TRIGG````e````RS prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphAlertTrigger[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphAl````e````rtTrigg````e````r[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -UriClickSecurityStates
+### -UriClickS````e````curityStat````e````s
 .
-To construct, please use Get-Help -Online and see NOTES section for URICLICKSECURITYSTATES properties and create a hash table.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for URICLICKS````e````CURITYSTAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphUriClickSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphUriClickS````e````curityStat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -UserStates
-Security-related stateful information generated by the provider about the user accounts related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for USERSTATES properties and create a hash table.
+### -Us````e````rStat````e````s
+S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` us````e````r accounts r````e````lat````e````d to this al````e````rt.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for US````e````RSTAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphUserSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphUs````e````rS````e````curityStat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -VendorInformation
-securityVendorInformation
-To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
+### -V````e````ndorInformation
+s````e````curityV````e````ndorInformation
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for V````e````NDORINFORMATION prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphS````e````curityV````e````ndorInformation
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -VulnerabilityStates
-Threat intelligence pertaining to one or more vulnerabilities related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for VULNERABILITYSTATES properties and create a hash table.
+### -Vuln````e````rabilityStat````e````s
+Thr````e````at int````e````llig````e````nc````e```` p````e````rtaining to on````e```` or mor````e```` vuln````e````rabiliti````e````s r````e````lat````e````d to this al````e````rt.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for VULN````e````RABILITYSTAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphVulnerabilityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ````e````: IMicrosoftGraphVuln````e````rabilityStat````e````[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d, Updat````e````ViaId````e````ntity````e````xpand````e````d
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b````e````for````e```` running th````e```` cmdl````e````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: (All)
+Alias````e````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ````e````n if th````e```` cmdl````e````t runs.
+Th````e```` cmdl````e````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: (All)
+Alias````e````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam````e````t````e````rs
+This cmdl````e````t supports th````e```` common param````e````t````e````rs: -D````e````bug, -````e````rrorAction, -````e````rrorVariabl````e````, -InformationAction, -InformationVariabl````e````, -OutVariabl````e````, -OutBuff````e````r, -Pip````e````lin````e````Variabl````e````, -V````e````rbos````e````, -WarningAction, and -WarningVariabl````e````. For mor````e```` information, s````e````````e```` [about_CommonParam````e````t````e````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Pow````e````rSh````e````ll.Mod````e````ls.IMicrosoftGraphAl````e````rt
+### Microsoft.Graph.Pow````e````rSh````e````ll.Mod````e````ls.IS````e````curityId````e````ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst````e````m.Bool````e````an
+## NOT````e````S
 
-ALIASES
+ALIAS````e````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL````e````X PARAM````e````T````e````R PROP````e````RTI````e````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr````e````at````e```` th````e```` param````e````t````e````rs d````e````scrib````e````d b````e````low, construct a hash tabl````e```` containing th````e```` appropriat````e```` prop````e````rti````e````s. For information on hash tabl````e````s, run G````e````t-H````e````lp about_Hash_Tabl````e````s.
 
 
-ALERTDETECTIONS `<IMicrosoftGraphAlertDetection\[]>`: .
-  - `[DetectionType <String>]`: 
-  - `[Method <String>]`: 
-  - `[Name <String>]`: 
+AL````e````RTD````e````T````e````CTIONS `<IMicrosoftGraphAl````e````rtD````e````t````e````ction[]>`: .
+  - `[D````e````t````e````ctionTyp````e```` <String>]`: 
+  - `[M````e````thod <String>]`: 
+  - `[Nam````e```` <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM````e````T````e````R `<IMicrosoftGraphAl````e````rt>`: al````e````rt
+  - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
   - `[Id <String>]`: 
-  - `[ActivityGroupName <String>]`: Name or alias of the activity group (attacker) this alert is attributed to.
-  - `[AlertDetections <IMicrosoftGraphAlertDetection[]>]`: 
-    - `[DetectionType <String>]`: 
-    - `[Method <String>]`: 
-    - `[Name <String>]`: 
-  - `[AssignedTo <String>]`: Name of the analyst the alert is assigned to for triage, investigation, or remediation (supports update).
-  - `[AzureSubscriptionId <String>]`: Azure subscription ID, present if this alert is related to an Azure resource.
-  - `[AzureTenantId <String>]`: Azure Active Directory tenant ID. Required.
-  - `[Category <String>]`: Category of the alert (for example, credentialTheft, ransomware, etc.).
-  - `[ClosedDateTime <DateTime?>]`: Time at which the alert was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports update).
-  - `[CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>]`: Security-related stateful information generated by the provider about the cloud application/s related to this alert.
-    - `[DestinationServiceIP <String>]`: Destination IP Address of the connection to the cloud application/service.
-    - `[DestinationServiceName <String>]`: Cloud application/service name (for example 'Salesforce', 'DropBox', etc.).
-    - `[RiskScore <String>]`: Provider-generated/calculated risk score of the Cloud Application/Service. Recommended value range of 0-1, which equates to a percentage.
-  - `[Comments <String[]>]`: Customer-provided comments on alert (for customer alert management) (supports update).
-  - `[Confidence <Int32?>]`: Confidence of the detection logic (percentage between 1-100).
-  - `[CreatedDateTime <DateTime?>]`: Time at which the alert was created by the alert provider. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Required.
-  - `[Description <String>]`: Alert description.
-  - `[DetectionIds <String[]>]`: Set of alerts related to this alert entity (each alert is pushed to the SIEM as a separate record).
-  - `[EventDateTime <DateTime?>]`: Time at which the event(s) that served as the trigger(s) to generate the alert occurred. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Required.
-  - `[Feedback <String>]`: alertFeedback
-  - `[FileStates <IMicrosoftGraphFileSecurityState[]>]`: Security-related stateful information generated by the provider about the file(s) related to this alert.
-    - `[FileHash <IMicrosoftGraphFileHash>]`: fileHash
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[HashType <String>]`: fileHashType
-      - `[HashValue <String>]`: Value of the file hash.
-    - `[Name <String>]`: File name (without path).
-    - `[Path <String>]`: Full file path of the file/imageFile.
-    - `[RiskScore <String>]`: Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a percentage.
-  - `[HistoryStates <IMicrosoftGraphAlertHistoryState[]>]`: A collection of alertHistoryStates comprising an audit log of all updates made to an alert.
-    - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the alert. The appId should be extracted from the auth token and not entered manually by the calling application.
-    - `[AssignedTo <String>]`: UPN of user the alert was assigned to (note: alert.assignedTo only stores the last value/UPN).
-    - `[Comments <String[]>]`: Comment entered by signed-in user.
-    - `[Feedback <String>]`: alertFeedback
-    - `[Status <String>]`: alertStatus
-    - `[UpdatedDateTime <DateTime?>]`: Date and time of the alert update. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[User <String>]`: UPN of the signed-in user that updated the alert (taken from the bearer token - if in user/delegated auth mode).
-  - `[HostStates <IMicrosoftGraphHostSecurityState[]>]`: Security-related stateful information generated by the provider about the host(s) related to this alert.
-    - `[Fqdn <String>]`: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
-    - `[IsAzureAdJoined <Boolean?>]`: 
-    - `[IsAzureAdRegistered <Boolean?>]`: 
-    - `[IsHybridAzureDomainJoined <Boolean?>]`: True if the host is domain joined to an on-premises Active Directory domain.
-    - `[NetBiosName <String>]`: The local host name, without the DNS domain name.
-    - `[OS <String>]`: Host Operating System. (For example, Windows10, MacOS, RHEL, etc.).
-    - `[PrivateIPAddress <String>]`: Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
-    - `[PublicIPAddress <String>]`: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
-    - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host.  Recommended value range of 0-1, which equates to a percentage.
-  - `[IncidentIds <String[]>]`: IDs of incidents related to current alert.
-  - `[InvestigationSecurityStates <IMicrosoftGraphInvestigationSecurityState[]>]`: 
-    - `[Name <String>]`: 
+  - `[ActivityGroupNam````e```` <String>]`: Nam````e```` or alias of th````e```` activity group (attack````e````r) this al````e````rt is attribut````e````d to.
+  - `[Al````e````rtD````e````t````e````ctions <IMicrosoftGraphAl````e````rtD````e````t````e````ction[]>]`: 
+    - `[D````e````t````e````ctionTyp````e```` <String>]`: 
+    - `[M````e````thod <String>]`: 
+    - `[Nam````e```` <String>]`: 
+  - `[Assign````e````dTo <String>]`: Nam````e```` of th````e```` analyst th````e```` al````e````rt is assign````e````d to for triag````e````, inv````e````stigation, or r````e````m````e````diation (supports updat````e````).
+  - `[Azur````e````SubscriptionId <String>]`: Azur````e```` subscription ID, pr````e````s````e````nt if this al````e````rt is r````e````lat````e````d to an Azur````e```` r````e````sourc````e````.
+  - `[Azur````e````T````e````nantId <String>]`: Azur````e```` Activ````e```` Dir````e````ctory t````e````nant ID. R````e````quir````e````d.
+  - `[Cat````e````gory <String>]`: Cat````e````gory of th````e```` al````e````rt (for ````e````xampl````e````, cr````e````d````e````ntialTh````e````ft, ransomwar````e````, ````e````tc.).
+  - `[Clos````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` al````e````rt was clos````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports updat````e````).
+  - `[CloudAppStat````e````s <IMicrosoftGraphCloudAppS````e````curityStat````e````[]>]`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` cloud application/s r````e````lat````e````d to this al````e````rt.
+    - `[D````e````stinationS````e````rvic````e````IP <String>]`: D````e````stination IP Addr````e````ss of th````e```` conn````e````ction to th````e```` cloud application/s````e````rvic````e````.
+    - `[D````e````stinationS````e````rvic````e````Nam````e```` <String>]`: Cloud application/s````e````rvic````e```` nam````e```` (for ````e````xampl````e```` 'Sal````e````sforc````e````', 'DropBox', ````e````tc.).
+    - `[RiskScor````e```` <String>]`: Provid````e````r-g````e````n````e````rat````e````d/calculat````e````d risk scor````e```` of th````e```` Cloud Application/S````e````rvic````e````. R````e````comm````e````nd````e````d valu````e```` rang````e```` of 0-1, which ````e````quat````e````s to a p````e````rc````e````ntag````e````.
+  - `[Comm````e````nts <String[]>]`: Custom````e````r-provid````e````d comm````e````nts on al````e````rt (for custom````e````r al````e````rt manag````e````m````e````nt) (supports updat````e````).
+  - `[Confid````e````nc````e```` <Int32?>]`: Confid````e````nc````e```` of th````e```` d````e````t````e````ction logic (p````e````rc````e````ntag````e```` b````e````tw````e````````e````n 1-100).
+  - `[Cr````e````at````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` al````e````rt was cr````e````at````e````d by th````e```` al````e````rt provid````e````r. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. R````e````quir````e````d.
+  - `[D````e````scription <String>]`: Al````e````rt d````e````scription.
+  - `[D````e````t````e````ctionIds <String[]>]`: S````e````t of al````e````rts r````e````lat````e````d to this al````e````rt ````e````ntity (````e````ach al````e````rt is push````e````d to th````e```` SI````e````M as a s````e````parat````e```` r````e````cord).
+  - `[````e````v````e````ntDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` ````e````v````e````nt(s) that s````e````rv````e````d as th````e```` trigg````e````r(s) to g````e````n````e````rat````e```` th````e```` al````e````rt occurr````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. R````e````quir````e````d.
+  - `[F````e````````e````dback <String>]`: al````e````rtF````e````````e````dback
+  - `[Fil````e````Stat````e````s <IMicrosoftGraphFil````e````S````e````curityStat````e````[]>]`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` fil````e````(s) r````e````lat````e````d to this al````e````rt.
+    - `[Fil````e````Hash <IMicrosoftGraphFil````e````Hash>]`: fil````e````Hash
+      - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+      - `[HashTyp````e```` <String>]`: fil````e````HashTyp````e````
+      - `[HashValu````e```` <String>]`: Valu````e```` of th````e```` fil````e```` hash.
+    - `[Nam````e```` <String>]`: Fil````e```` nam````e```` (without path).
+    - `[Path <String>]`: Full fil````e```` path of th````e```` fil````e````/imag````e````Fil````e````.
+    - `[RiskScor````e```` <String>]`: Provid````e````r g````e````n````e````rat````e````d/calculat````e````d risk scor````e```` of th````e```` al````e````rt fil````e````. R````e````comm````e````nd````e````d valu````e```` rang````e```` of 0-1, which ````e````quat````e````s to a p````e````rc````e````ntag````e````.
+  - `[HistoryStat````e````s <IMicrosoftGraphAl````e````rtHistoryStat````e````[]>]`: A coll````e````ction of al````e````rtHistoryStat````e````s comprising an audit log of all updat````e````s mad````e```` to an al````e````rt.
+    - `[AppId <String>]`: Th````e```` Application ID of th````e```` calling application that submitt````e````d an updat````e```` (PATCH) to th````e```` al````e````rt. Th````e```` appId should b````e```` ````e````xtract````e````d from th````e```` auth tok````e````n and not ````e````nt````e````r````e````d manually by th````e```` calling application.
+    - `[Assign````e````dTo <String>]`: UPN of us````e````r th````e```` al````e````rt was assign````e````d to (not````e````: al````e````rt.assign````e````dTo only stor````e````s th````e```` last valu````e````/UPN).
+    - `[Comm````e````nts <String[]>]`: Comm````e````nt ````e````nt````e````r````e````d by sign````e````d-in us````e````r.
+    - `[F````e````````e````dback <String>]`: al````e````rtF````e````````e````dback
+    - `[Status <String>]`: al````e````rtStatus
+    - `[Updat````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Dat````e```` and tim````e```` of th````e```` al````e````rt updat````e````. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Us````e````r <String>]`: UPN of th````e```` sign````e````d-in us````e````r that updat````e````d th````e```` al````e````rt (tak````e````n from th````e```` b````e````ar````e````r tok````e````n - if in us````e````r/d````e````l````e````gat````e````d auth mod````e````).
+  - `[HostStat````e````s <IMicrosoftGraphHostS````e````curityStat````e````[]>]`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` host(s) r````e````lat````e````d to this al````e````rt.
+    - `[Fqdn <String>]`: Host FQDN (Fully Qualifi````e````d Domain Nam````e````) (for ````e````xampl````e````, machin````e````.company.com).
+    - `[IsAzur````e````AdJoin````e````d <Bool````e````an?>]`: 
+    - `[IsAzur````e````AdR````e````gist````e````r````e````d <Bool````e````an?>]`: 
+    - `[IsHybridAzur````e````DomainJoin````e````d <Bool````e````an?>]`: Tru````e```` if th````e```` host is domain join````e````d to an on-pr````e````mis````e````s Activ````e```` Dir````e````ctory domain.
+    - `[N````e````tBiosNam````e```` <String>]`: Th````e```` local host nam````e````, without th````e```` DNS domain nam````e````.
+    - `[OS <String>]`: Host Op````e````rating Syst````e````m. (For ````e````xampl````e````, Windows10, MacOS, RH````e````L, ````e````tc.).
+    - `[Privat````e````IPAddr````e````ss <String>]`: Privat````e```` (not routabl````e````) IPv4 or IPv6 addr````e````ss (s````e````````e```` RFC 1918) at th````e```` tim````e```` of th````e```` al````e````rt.
+    - `[PublicIPAddr````e````ss <String>]`: Publicly routabl````e```` IPv4 or IPv6 addr````e````ss (s````e````````e```` RFC 1918) at tim````e```` of th````e```` al````e````rt.
+    - `[RiskScor````e```` <String>]`: Provid````e````r-g````e````n````e````rat````e````d/calculat````e````d risk scor````e```` of th````e```` host.  R````e````comm````e````nd````e````d valu````e```` rang````e```` of 0-1, which ````e````quat````e````s to a p````e````rc````e````ntag````e````.
+  - `[Incid````e````ntIds <String[]>]`: IDs of incid````e````nts r````e````lat````e````d to curr````e````nt al````e````rt.
+  - `[Inv````e````stigationS````e````curityStat````e````s <IMicrosoftGraphInv````e````stigationS````e````curityStat````e````[]>]`: 
+    - `[Nam````e```` <String>]`: 
     - `[Status <String>]`: 
-  - `[LastEventDateTime <DateTime?>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: Time at which the alert entity was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[MalwareStates <IMicrosoftGraphMalwareState[]>]`: Threat Intelligence pertaining to malware related to this alert.
-    - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
-    - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry', 'notpetya', etc.).
-    - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
-    - `[Severity <String>]`: Provider-determined severity of this malware.
-    - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
-  - `[MessageSecurityStates <IMicrosoftGraphMessageSecurityState[]>]`: 
-    - `[ConnectingIP <String>]`: 
-    - `[DeliveryAction <String>]`: 
-    - `[DeliveryLocation <String>]`: 
-    - `[Directionality <String>]`: 
-    - `[InternetMessageId <String>]`: 
-    - `[MessageFingerprint <String>]`: 
-    - `[MessageReceivedDateTime <DateTime?>]`: 
-    - `[MessageSubject <String>]`: 
-    - `[NetworkMessageId <String>]`: 
-  - `[NetworkConnections <IMicrosoftGraphNetworkConnection[]>]`: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-    - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook, SMTP, etc.).
-    - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
-    - `[DestinationDomain <String>]`: Destination domain portion of the destination URL. (for example 'www.contoso.com').
-    - `[DestinationLocation <String>]`: Location (by IP address mapping) associated with the destination of a network connection.
-    - `[DestinationPort <String>]`: Destination port (of the network connection).
-    - `[DestinationUrl <String>]`: Network connection URL/URI string - excluding parameters. (for example 'www.contoso.com/products/default.html')
-    - `[Direction <String>]`: connectionDirection
-    - `[DomainRegisteredDateTime <DateTime?>]`: Date when the destination domain was registered. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LocalDnsName <String>]`: The local DNS name resolution as it appears in the host's local DNS cache (for example, in case the 'hosts' file was tampered with).
-    - `[NatDestinationAddress <String>]`: Network Address Translation destination IP address.
-    - `[NatDestinationPort <String>]`: Network Address Translation destination port.
-    - `[NatSourceAddress <String>]`: Network Address Translation source IP address.
-    - `[NatSourcePort <String>]`: Network Address Translation source port.
-    - `[Protocol <String>]`: securityNetworkProtocol
-    - `[RiskScore <String>]`: Provider generated/calculated risk score of the network connection. Recommended value range of 0-1, which equates to a percentage.
-    - `[SourceAddress <String>]`: Source (i.e. origin) IP address (of the network connection).
-    - `[SourceLocation <String>]`: Location (by IP address mapping) associated with the source of a network connection.
-    - `[SourcePort <String>]`: Source (i.e. origin) IP port (of the network connection).
-    - `[Status <String>]`: connectionStatus
-    - `[UrlParameters <String>]`: Parameters (suffix) of the destination URL.
-  - `[Processes <IMicrosoftGraphProcess[]>]`: Security-related stateful information generated by the provider about the process or processes related to this alert.
-    - `[AccountName <String>]`: User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
-    - `[CommandLine <String>]`: The full process invocation commandline including all parameters.
-    - `[CreatedDateTime <DateTime?>]`: Time at which the process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[FileHash <IMicrosoftGraphFileHash>]`: fileHash
-    - `[IntegrityLevel <String>]`: processIntegrityLevel
-    - `[IsElevated <Boolean?>]`: True if the process is elevated.
-    - `[Name <String>]`: The name of the process' Image file.
-    - `[ParentProcessCreatedDateTime <DateTime?>]`: DateTime at which the parent process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[ParentProcessId <Int32?>]`: The Process ID (PID) of the parent process.
-    - `[ParentProcessName <String>]`: The name of the image file of the parent process.
-    - `[Path <String>]`: Full path, including filename.
-    - `[ProcessId <Int32?>]`: The Process ID (PID) of the process.
-  - `[RecommendedActions <String[]>]`: Vendor/provider recommended action(s) to take as a result of the alert (for example, isolate machine, enforce2FA, reimage host).
-  - `[RegistryKeyStates <IMicrosoftGraphRegistryKeyState[]>]`: Security-related stateful information generated by the provider about the registry keys related to this alert.
-    - `[Hive <String>]`: registryHive
-    - `[Key <String>]`: Current (i.e. changed) registry key (excludes HIVE).
-    - `[OldKey <String>]`: Previous (i.e. before changed) registry key (excludes HIVE).
-    - `[OldValueData <String>]`: Previous (i.e. before changed) registry key value data (contents).
-    - `[OldValueName <String>]`: Previous (i.e. before changed) registry key value name.
-    - `[Operation <String>]`: registryOperation
-    - `[ProcessId <Int32?>]`: Process ID (PID) of the process that modified the registry key (process details will appear in the alert 'processes' collection).
-    - `[ValueData <String>]`: Current (i.e. changed) registry key value data (contents).
-    - `[ValueName <String>]`: Current (i.e. changed) registry key value name
-    - `[ValueType <String>]`: registryValueType
-  - `[SecurityResources <IMicrosoftGraphSecurityResource[]>]`: Resources related to current alert. For example, for some alerts this can have the Azure Resource value.
-    - `[Resource <String>]`: Name of the resource that is related to current alert. Required.
-    - `[ResourceType <String>]`: securityResourceType
-  - `[Severity <String>]`: alertSeverity
-  - `[SourceMaterials <String[]>]`: Hyperlinks (URIs) to the source material related to the alert, for example, provider's user interface for alerts or log search, etc.
-  - `[Status <String>]`: alertStatus
-  - `[Tags <String[]>]`: User-definable labels that can be applied to an alert and can serve as filter conditions (for example 'HVA', 'SAW', etc.) (supports update).
-  - `[Title <String>]`: Alert title. Required.
-  - `[Triggers <IMicrosoftGraphAlertTrigger[]>]`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert). Alerts might contain information about multiple users, hosts, files, ip addresses. This field indicates which properties triggered the alert generation.
-    - `[Name <String>]`: Name of the property serving as a detection trigger.
-    - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.
-    - `[Value <String>]`: Value of the property serving as a detection trigger.
-  - `[UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]`: 
+  - `[Last````e````v````e````ntDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: 
+  - `[LastModifi````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` al````e````rt ````e````ntity was last modifi````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Malwar````e````Stat````e````s <IMicrosoftGraphMalwar````e````Stat````e````[]>]`: Thr````e````at Int````e````llig````e````nc````e```` p````e````rtaining to malwar````e```` r````e````lat````e````d to this al````e````rt.
+    - `[Cat````e````gory <String>]`: Provid````e````r-g````e````n````e````rat````e````d malwar````e```` cat````e````gory (for ````e````xampl````e````, trojan, ransomwar````e````, ````e````tc.).
+    - `[Family <String>]`: Provid````e````r-g````e````n````e````rat````e````d malwar````e```` family (for ````e````xampl````e````, 'wannacry', 'notp````e````tya', ````e````tc.).
+    - `[Nam````e```` <String>]`: Provid````e````r-g````e````n````e````rat````e````d malwar````e```` variant nam````e```` (for ````e````xampl````e````, Trojan:Win32/Pow````e````ss````e````r````e````.H).
+    - `[S````e````v````e````rity <String>]`: Provid````e````r-d````e````t````e````rmin````e````d s````e````v````e````rity of this malwar````e````.
+    - `[WasRunning <Bool````e````an?>]`: Indicat````e````s wh````e````th````e````r th````e```` d````e````t````e````ct````e````d fil````e```` (malwar````e````/vuln````e````rability) was running at th````e```` tim````e```` of d````e````t````e````ction or was d````e````t````e````ct````e````d at r````e````st on th````e```` disk.
+  - `[M````e````ssag````e````S````e````curityStat````e````s <IMicrosoftGraphM````e````ssag````e````S````e````curityStat````e````[]>]`: 
+    - `[Conn````e````ctingIP <String>]`: 
+    - `[D````e````liv````e````ryAction <String>]`: 
+    - `[D````e````liv````e````ryLocation <String>]`: 
+    - `[Dir````e````ctionality <String>]`: 
+    - `[Int````e````rn````e````tM````e````ssag````e````Id <String>]`: 
+    - `[M````e````ssag````e````Fing````e````rprint <String>]`: 
+    - `[M````e````ssag````e````R````e````c````e````iv````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: 
+    - `[M````e````ssag````e````Subj````e````ct <String>]`: 
+    - `[N````e````tworkM````e````ssag````e````Id <String>]`: 
+  - `[N````e````tworkConn````e````ctions <IMicrosoftGraphN````e````tworkConn````e````ction[]>]`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` n````e````twork conn````e````ction(s) r````e````lat````e````d to this al````e````rt.
+    - `[ApplicationNam````e```` <String>]`: Nam````e```` of th````e```` application managing th````e```` n````e````twork conn````e````ction (for ````e````xampl````e````, Fac````e````book, SMTP, ````e````tc.).
+    - `[D````e````stinationAddr````e````ss <String>]`: D````e````stination IP addr````e````ss (of th````e```` n````e````twork conn````e````ction).
+    - `[D````e````stinationDomain <String>]`: D````e````stination domain portion of th````e```` d````e````stination URL. (for ````e````xampl````e```` 'www.contoso.com').
+    - `[D````e````stinationLocation <String>]`: Location (by IP addr````e````ss mapping) associat````e````d with th````e```` d````e````stination of a n````e````twork conn````e````ction.
+    - `[D````e````stinationPort <String>]`: D````e````stination port (of th````e```` n````e````twork conn````e````ction).
+    - `[D````e````stinationUrl <String>]`: N````e````twork conn````e````ction URL/URI string - ````e````xcluding param````e````t````e````rs. (for ````e````xampl````e```` 'www.contoso.com/products/d````e````fault.html')
+    - `[Dir````e````ction <String>]`: conn````e````ctionDir````e````ction
+    - `[DomainR````e````gist````e````r````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Dat````e```` wh````e````n th````e```` d````e````stination domain was r````e````gist````e````r````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LocalDnsNam````e```` <String>]`: Th````e```` local DNS nam````e```` r````e````solution as it app````e````ars in th````e```` host's local DNS cach````e```` (for ````e````xampl````e````, in cas````e```` th````e```` 'hosts' fil````e```` was tamp````e````r````e````d with).
+    - `[NatD````e````stinationAddr````e````ss <String>]`: N````e````twork Addr````e````ss Translation d````e````stination IP addr````e````ss.
+    - `[NatD````e````stinationPort <String>]`: N````e````twork Addr````e````ss Translation d````e````stination port.
+    - `[NatSourc````e````Addr````e````ss <String>]`: N````e````twork Addr````e````ss Translation sourc````e```` IP addr````e````ss.
+    - `[NatSourc````e````Port <String>]`: N````e````twork Addr````e````ss Translation sourc````e```` port.
+    - `[Protocol <String>]`: s````e````curityN````e````tworkProtocol
+    - `[RiskScor````e```` <String>]`: Provid````e````r g````e````n````e````rat````e````d/calculat````e````d risk scor````e```` of th````e```` n````e````twork conn````e````ction. R````e````comm````e````nd````e````d valu````e```` rang````e```` of 0-1, which ````e````quat````e````s to a p````e````rc````e````ntag````e````.
+    - `[Sourc````e````Addr````e````ss <String>]`: Sourc````e```` (i.````e````. origin) IP addr````e````ss (of th````e```` n````e````twork conn````e````ction).
+    - `[Sourc````e````Location <String>]`: Location (by IP addr````e````ss mapping) associat````e````d with th````e```` sourc````e```` of a n````e````twork conn````e````ction.
+    - `[Sourc````e````Port <String>]`: Sourc````e```` (i.````e````. origin) IP port (of th````e```` n````e````twork conn````e````ction).
+    - `[Status <String>]`: conn````e````ctionStatus
+    - `[UrlParam````e````t````e````rs <String>]`: Param````e````t````e````rs (suffix) of th````e```` d````e````stination URL.
+  - `[Proc````e````ss````e````s <IMicrosoftGraphProc````e````ss[]>]`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` proc````e````ss or proc````e````ss````e````s r````e````lat````e````d to this al````e````rt.
+    - `[AccountNam````e```` <String>]`: Us````e````r account id````e````ntifi````e````r (us````e````r account cont````e````xt th````e```` proc````e````ss ran und````e````r) for ````e````xampl````e````, AccountNam````e````, SID, and so on.
+    - `[CommandLin````e```` <String>]`: Th````e```` full proc````e````ss invocation commandlin````e```` including all param````e````t````e````rs.
+    - `[Cr````e````at````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` proc````e````ss was start````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Fil````e````Hash <IMicrosoftGraphFil````e````Hash>]`: fil````e````Hash
+    - `[Int````e````grityL````e````v````e````l <String>]`: proc````e````ssInt````e````grityL````e````v````e````l
+    - `[Is````e````l````e````vat````e````d <Bool````e````an?>]`: Tru````e```` if th````e```` proc````e````ss is ````e````l````e````vat````e````d.
+    - `[Nam````e```` <String>]`: Th````e```` nam````e```` of th````e```` proc````e````ss' Imag````e```` fil````e````.
+    - `[Par````e````ntProc````e````ssCr````e````at````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Dat````e````Tim````e```` at which th````e```` par````e````nt proc````e````ss was start````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Par````e````ntProc````e````ssId <Int32?>]`: Th````e```` Proc````e````ss ID (PID) of th````e```` par````e````nt proc````e````ss.
+    - `[Par````e````ntProc````e````ssNam````e```` <String>]`: Th````e```` nam````e```` of th````e```` imag````e```` fil````e```` of th````e```` par````e````nt proc````e````ss.
+    - `[Path <String>]`: Full path, including fil````e````nam````e````.
+    - `[Proc````e````ssId <Int32?>]`: Th````e```` Proc````e````ss ID (PID) of th````e```` proc````e````ss.
+  - `[R````e````comm````e````nd````e````dActions <String[]>]`: V````e````ndor/provid````e````r r````e````comm````e````nd````e````d action(s) to tak````e```` as a r````e````sult of th````e```` al````e````rt (for ````e````xampl````e````, isolat````e```` machin````e````, ````e````nforc````e````2FA, r````e````imag````e```` host).
+  - `[R````e````gistryK````e````yStat````e````s <IMicrosoftGraphR````e````gistryK````e````yStat````e````[]>]`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` r````e````gistry k````e````ys r````e````lat````e````d to this al````e````rt.
+    - `[Hiv````e```` <String>]`: r````e````gistryHiv````e````
+    - `[K````e````y <String>]`: Curr````e````nt (i.````e````. chang````e````d) r````e````gistry k````e````y (````e````xclud````e````s HIV````e````).
+    - `[OldK````e````y <String>]`: Pr````e````vious (i.````e````. b````e````for````e```` chang````e````d) r````e````gistry k````e````y (````e````xclud````e````s HIV````e````).
+    - `[OldValu````e````Data <String>]`: Pr````e````vious (i.````e````. b````e````for````e```` chang````e````d) r````e````gistry k````e````y valu````e```` data (cont````e````nts).
+    - `[OldValu````e````Nam````e```` <String>]`: Pr````e````vious (i.````e````. b````e````for````e```` chang````e````d) r````e````gistry k````e````y valu````e```` nam````e````.
+    - `[Op````e````ration <String>]`: r````e````gistryOp````e````ration
+    - `[Proc````e````ssId <Int32?>]`: Proc````e````ss ID (PID) of th````e```` proc````e````ss that modifi````e````d th````e```` r````e````gistry k````e````y (proc````e````ss d````e````tails will app````e````ar in th````e```` al````e````rt 'proc````e````ss````e````s' coll````e````ction).
+    - `[Valu````e````Data <String>]`: Curr````e````nt (i.````e````. chang````e````d) r````e````gistry k````e````y valu````e```` data (cont````e````nts).
+    - `[Valu````e````Nam````e```` <String>]`: Curr````e````nt (i.````e````. chang````e````d) r````e````gistry k````e````y valu````e```` nam````e````
+    - `[Valu````e````Typ````e```` <String>]`: r````e````gistryValu````e````Typ````e````
+  - `[S````e````curityR````e````sourc````e````s <IMicrosoftGraphS````e````curityR````e````sourc````e````[]>]`: R````e````sourc````e````s r````e````lat````e````d to curr````e````nt al````e````rt. For ````e````xampl````e````, for som````e```` al````e````rts this can hav````e```` th````e```` Azur````e```` R````e````sourc````e```` valu````e````.
+    - `[R````e````sourc````e```` <String>]`: Nam````e```` of th````e```` r````e````sourc````e```` that is r````e````lat````e````d to curr````e````nt al````e````rt. R````e````quir````e````d.
+    - `[R````e````sourc````e````Typ````e```` <String>]`: s````e````curityR````e````sourc````e````Typ````e````
+  - `[S````e````v````e````rity <String>]`: al````e````rtS````e````v````e````rity
+  - `[Sourc````e````Mat````e````rials <String[]>]`: Hyp````e````rlinks (URIs) to th````e```` sourc````e```` mat````e````rial r````e````lat````e````d to th````e```` al````e````rt, for ````e````xampl````e````, provid````e````r's us````e````r int````e````rfac````e```` for al````e````rts or log s````e````arch, ````e````tc.
+  - `[Status <String>]`: al````e````rtStatus
+  - `[Tags <String[]>]`: Us````e````r-d````e````finabl````e```` lab````e````ls that can b````e```` appli````e````d to an al````e````rt and can s````e````rv````e```` as filt````e````r conditions (for ````e````xampl````e```` 'HVA', 'SAW', ````e````tc.) (supports updat````e````).
+  - `[Titl````e```` <String>]`: Al````e````rt titl````e````. R````e````quir````e````d.
+  - `[Trigg````e````rs <IMicrosoftGraphAl````e````rtTrigg````e````r[]>]`: S````e````curity-r````e````lat````e````d information about th````e```` sp````e````cific prop````e````rti````e````s that trigg````e````r````e````d th````e```` al````e````rt (prop````e````rti````e````s app````e````aring in th````e```` al````e````rt). Al````e````rts might contain information about multipl````e```` us````e````rs, hosts, fil````e````s, ip addr````e````ss````e````s. This fi````e````ld indicat````e````s which prop````e````rti````e````s trigg````e````r````e````d th````e```` al````e````rt g````e````n````e````ration.
+    - `[Nam````e```` <String>]`: Nam````e```` of th````e```` prop````e````rty s````e````rving as a d````e````t````e````ction trigg````e````r.
+    - `[Typ````e```` <String>]`: Typ````e```` of th````e```` prop````e````rty in th````e```` k````e````y:valu````e```` pair for int````e````rpr````e````tation. For ````e````xampl````e````, String, Bool````e````an ````e````tc.
+    - `[Valu````e```` <String>]`: Valu````e```` of th````e```` prop````e````rty s````e````rving as a d````e````t````e````ction trigg````e````r.
+  - `[UriClickS````e````curityStat````e````s <IMicrosoftGraphUriClickS````e````curityStat````e````[]>]`: 
     - `[ClickAction <String>]`: 
-    - `[ClickDateTime <DateTime?>]`: 
+    - `[ClickDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: 
     - `[Id <String>]`: 
-    - `[SourceId <String>]`: 
+    - `[Sourc````e````Id <String>]`: 
     - `[UriDomain <String>]`: 
-    - `[Verdict <String>]`: 
-  - `[UserStates <IMicrosoftGraphUserSecurityState[]>]`: Security-related stateful information generated by the provider about the user accounts related to this alert.
-    - `[AadUserId <String>]`: AAD User object identifier (GUID) - represents the physical/multi-account user entity.
-    - `[AccountName <String>]`: Account name of user account (without Active Directory domain or DNS domain) - (also called mailNickName).
-    - `[DomainName <String>]`: NetBIOS/Active Directory domain of user account (that is, domain/account format).
-    - `[EmailRole <String>]`: emailRole
-    - `[IsVpn <Boolean?>]`: Indicates whether the user logged on through a VPN.
-    - `[LogonDateTime <DateTime?>]`: Time at which the sign-in occurred. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[LogonIP <String>]`: IP Address the sign-in request originated from.
-    - `[LogonId <String>]`: User sign-in ID.
-    - `[LogonLocation <String>]`: Location (by IP address mapping) associated with a user sign-in event by this user.
-    - `[LogonType <String>]`: logonType
-    - `[OnPremisesSecurityIdentifier <String>]`: Active Directory (on-premises) Security Identifier (SID) of the user.
-    - `[RiskScore <String>]`: Provider-generated/calculated risk score of the user account. Recommended value range of 0-1, which equates to a percentage.
-    - `[UserAccountType <String>]`: userAccountSecurityType
-    - `[UserPrincipalName <String>]`: User sign-in name - internet format: (user account name)@(user account DNS domain name).
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
-  - `[VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>]`: Threat intelligence pertaining to one or more vulnerabilities related to this alert.
-    - `[Cve <String>]`: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
-    - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
-    - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
+    - `[V````e````rdict <String>]`: 
+  - `[Us````e````rStat````e````s <IMicrosoftGraphUs````e````rS````e````curityStat````e````[]>]`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` us````e````r accounts r````e````lat````e````d to this al````e````rt.
+    - `[AadUs````e````rId <String>]`: AAD Us````e````r obj````e````ct id````e````ntifi````e````r (GUID) - r````e````pr````e````s````e````nts th````e```` physical/multi-account us````e````r ````e````ntity.
+    - `[AccountNam````e```` <String>]`: Account nam````e```` of us````e````r account (without Activ````e```` Dir````e````ctory domain or DNS domain) - (also call````e````d mailNickNam````e````).
+    - `[DomainNam````e```` <String>]`: N````e````tBIOS/Activ````e```` Dir````e````ctory domain of us````e````r account (that is, domain/account format).
+    - `[````e````mailRol````e```` <String>]`: ````e````mailRol````e````
+    - `[IsVpn <Bool````e````an?>]`: Indicat````e````s wh````e````th````e````r th````e```` us````e````r logg````e````d on through a VPN.
+    - `[LogonDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` sign-in occurr````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[LogonIP <String>]`: IP Addr````e````ss th````e```` sign-in r````e````qu````e````st originat````e````d from.
+    - `[LogonId <String>]`: Us````e````r sign-in ID.
+    - `[LogonLocation <String>]`: Location (by IP addr````e````ss mapping) associat````e````d with a us````e````r sign-in ````e````v````e````nt by this us````e````r.
+    - `[LogonTyp````e```` <String>]`: logonTyp````e````
+    - `[OnPr````e````mis````e````sS````e````curityId````e````ntifi````e````r <String>]`: Activ````e```` Dir````e````ctory (on-pr````e````mis````e````s) S````e````curity Id````e````ntifi````e````r (SID) of th````e```` us````e````r.
+    - `[RiskScor````e```` <String>]`: Provid````e````r-g````e````n````e````rat````e````d/calculat````e````d risk scor````e```` of th````e```` us````e````r account. R````e````comm````e````nd````e````d valu````e```` rang````e```` of 0-1, which ````e````quat````e````s to a p````e````rc````e````ntag````e````.
+    - `[Us````e````rAccountTyp````e```` <String>]`: us````e````rAccountS````e````curityTyp````e````
+    - `[Us````e````rPrincipalNam````e```` <String>]`: Us````e````r sign-in nam````e```` - int````e````rn````e````t format: (us````e````r account nam````e````)@(us````e````r account DNS domain nam````e````).
+  - `[V````e````ndorInformation <IMicrosoftGraphS````e````curityV````e````ndorInformation>]`: s````e````curityV````e````ndorInformation
+    - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+    - `[Provid````e````r <String>]`: Sp````e````cific provid````e````r (product/s````e````rvic````e```` - not v````e````ndor company); for ````e````xampl````e````, WindowsD````e````f````e````nd````e````rATP.
+    - `[Provid````e````rV````e````rsion <String>]`: V````e````rsion of th````e```` provid````e````r or subprovid````e````r, if it ````e````xists, that g````e````n````e````rat````e````d th````e```` al````e````rt. R````e````quir````e````d
+    - `[SubProvid````e````r <String>]`: Sp````e````cific subprovid````e````r (und````e````r aggr````e````gating provid````e````r); for ````e````xampl````e````, WindowsD````e````f````e````nd````e````rATP.SmartScr````e````````e````n.
+    - `[V````e````ndor <String>]`: Nam````e```` of th````e```` al````e````rt v````e````ndor (for ````e````xampl````e````, Microsoft, D````e````ll, Fir````e````````e````y````e````). R````e````quir````e````d
+  - `[Vuln````e````rabilityStat````e````s <IMicrosoftGraphVuln````e````rabilityStat````e````[]>]`: Thr````e````at int````e````llig````e````nc````e```` p````e````rtaining to on````e```` or mor````e```` vuln````e````rabiliti````e````s r````e````lat````e````d to this al````e````rt.
+    - `[Cv````e```` <String>]`: Common Vuln````e````rabiliti````e````s and ````e````xposur````e````s (CV````e````) for th````e```` vuln````e````rability.
+    - `[S````e````v````e````rity <String>]`: Bas````e```` Common Vuln````e````rability Scoring Syst````e````m (CVSS) s````e````v````e````rity scor````e```` for this vuln````e````rability.
+    - `[WasRunning <Bool````e````an?>]`: Indicat````e````s wh````e````th````e````r th````e```` d````e````t````e````ct````e````d vuln````e````rability (fil````e````) was running at th````e```` tim````e```` of d````e````t````e````ction or was th````e```` fil````e```` d````e````t````e````ct````e````d at r````e````st on th````e```` disk.
 
-CLOUDAPPSTATES `<IMicrosoftGraphCloudAppSecurityState\[]>`: Security-related stateful information generated by the provider about the cloud application/s related to this alert.
-  - `[DestinationServiceIP <String>]`: Destination IP Address of the connection to the cloud application/service.
-  - `[DestinationServiceName <String>]`: Cloud application/service name (for example 'Salesforce', 'DropBox', etc.).
-  - `[RiskScore <String>]`: Provider-generated/calculated risk score of the Cloud Application/Service. Recommended value range of 0-1, which equates to a percentage.
+CLOUDAPPSTAT````e````S `<IMicrosoftGraphCloudAppS````e````curityStat````e````[]>`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` cloud application/s r````e````lat````e````d to this al````e````rt.
+  - `[D````e````stinationS````e````rvic````e````IP <String>]`: D````e````stination IP Addr````e````ss of th````e```` conn````e````ction to th````e```` cloud application/s````e````rvic````e````.
+  - `[D````e````stinationS````e````rvic````e````Nam````e```` <String>]`: Cloud application/s````e````rvic````e```` nam````e```` (for ````e````xampl````e```` 'Sal````e````sforc````e````', 'DropBox', ````e````tc.).
+  - `[RiskScor````e```` <String>]`: Provid````e````r-g````e````n````e````rat````e````d/calculat````e````d risk scor````e```` of th````e```` Cloud Application/S````e````rvic````e````. R````e````comm````e````nd````e````d valu````e```` rang````e```` of 0-1, which ````e````quat````e````s to a p````e````rc````e````ntag````e````.
 
-FILESTATES <IMicrosoftGraphFileSecurityState[]>: Security-related stateful information generated by the provider about the file(s) related to this alert.
-  - `[FileHash <IMicrosoftGraphFileHash>]`: fileHash
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[HashType <String>]`: fileHashType
-    - `[HashValue <String>]`: Value of the file hash.
-  - `[Name <String>]`: File name (without path).
-  - `[Path <String>]`: Full file path of the file/imageFile.
-  - `[RiskScore <String>]`: Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a percentage.
+FIL````e````STAT````e````S <IMicrosoftGraphFil````e````S````e````curityStat````e````[]>: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` fil````e````(s) r````e````lat````e````d to this al````e````rt.
+  - `[Fil````e````Hash <IMicrosoftGraphFil````e````Hash>]`: fil````e````Hash
+    - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+    - `[HashTyp````e```` <String>]`: fil````e````HashTyp````e````
+    - `[HashValu````e```` <String>]`: Valu````e```` of th````e```` fil````e```` hash.
+  - `[Nam````e```` <String>]`: Fil````e```` nam````e```` (without path).
+  - `[Path <String>]`: Full fil````e```` path of th````e```` fil````e````/imag````e````Fil````e````.
+  - `[RiskScor````e```` <String>]`: Provid````e````r g````e````n````e````rat````e````d/calculat````e````d risk scor````e```` of th````e```` al````e````rt fil````e````. R````e````comm````e````nd````e````d valu````e```` rang````e```` of 0-1, which ````e````quat````e````s to a p````e````rc````e````ntag````e````.
 
-HISTORYSTATES `<IMicrosoftGraphAlertHistoryState\[]>`: A collection of alertHistoryStates comprising an audit log of all updates made to an alert.
-  - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the alert. The appId should be extracted from the auth token and not entered manually by the calling application.
-  - `[AssignedTo <String>]`: UPN of user the alert was assigned to (note: alert.assignedTo only stores the last value/UPN).
-  - `[Comments <String[]>]`: Comment entered by signed-in user.
-  - `[Feedback <String>]`: alertFeedback
-  - `[Status <String>]`: alertStatus
-  - `[UpdatedDateTime <DateTime?>]`: Date and time of the alert update. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[User <String>]`: UPN of the signed-in user that updated the alert (taken from the bearer token - if in user/delegated auth mode).
+HISTORYSTAT````e````S `<IMicrosoftGraphAl````e````rtHistoryStat````e````[]>`: A coll````e````ction of al````e````rtHistoryStat````e````s comprising an audit log of all updat````e````s mad````e```` to an al````e````rt.
+  - `[AppId <String>]`: Th````e```` Application ID of th````e```` calling application that submitt````e````d an updat````e```` (PATCH) to th````e```` al````e````rt. Th````e```` appId should b````e```` ````e````xtract````e````d from th````e```` auth tok````e````n and not ````e````nt````e````r````e````d manually by th````e```` calling application.
+  - `[Assign````e````dTo <String>]`: UPN of us````e````r th````e```` al````e````rt was assign````e````d to (not````e````: al````e````rt.assign````e````dTo only stor````e````s th````e```` last valu````e````/UPN).
+  - `[Comm````e````nts <String[]>]`: Comm````e````nt ````e````nt````e````r````e````d by sign````e````d-in us````e````r.
+  - `[F````e````````e````dback <String>]`: al````e````rtF````e````````e````dback
+  - `[Status <String>]`: al````e````rtStatus
+  - `[Updat````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Dat````e```` and tim````e```` of th````e```` al````e````rt updat````e````. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Us````e````r <String>]`: UPN of th````e```` sign````e````d-in us````e````r that updat````e````d th````e```` al````e````rt (tak````e````n from th````e```` b````e````ar````e````r tok````e````n - if in us````e````r/d````e````l````e````gat````e````d auth mod````e````).
 
-HOSTSTATES <IMicrosoftGraphHostSecurityState[]>: Security-related stateful information generated by the provider about the host(s) related to this alert.
-  - `[Fqdn <String>]`: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
-  - `[IsAzureAdJoined <Boolean?>]`: 
-  - `[IsAzureAdRegistered <Boolean?>]`: 
-  - `[IsHybridAzureDomainJoined <Boolean?>]`: True if the host is domain joined to an on-premises Active Directory domain.
-  - `[NetBiosName <String>]`: The local host name, without the DNS domain name.
-  - `[OS <String>]`: Host Operating System. (For example, Windows10, MacOS, RHEL, etc.).
-  - `[PrivateIPAddress <String>]`: Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
-  - `[PublicIPAddress <String>]`: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
-  - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host.  Recommended value range of 0-1, which equates to a percentage.
+HOSTSTAT````e````S <IMicrosoftGraphHostS````e````curityStat````e````[]>: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` host(s) r````e````lat````e````d to this al````e````rt.
+  - `[Fqdn <String>]`: Host FQDN (Fully Qualifi````e````d Domain Nam````e````) (for ````e````xampl````e````, machin````e````.company.com).
+  - `[IsAzur````e````AdJoin````e````d <Bool````e````an?>]`: 
+  - `[IsAzur````e````AdR````e````gist````e````r````e````d <Bool````e````an?>]`: 
+  - `[IsHybridAzur````e````DomainJoin````e````d <Bool````e````an?>]`: Tru````e```` if th````e```` host is domain join````e````d to an on-pr````e````mis````e````s Activ````e```` Dir````e````ctory domain.
+  - `[N````e````tBiosNam````e```` <String>]`: Th````e```` local host nam````e````, without th````e```` DNS domain nam````e````.
+  - `[OS <String>]`: Host Op````e````rating Syst````e````m. (For ````e````xampl````e````, Windows10, MacOS, RH````e````L, ````e````tc.).
+  - `[Privat````e````IPAddr````e````ss <String>]`: Privat````e```` (not routabl````e````) IPv4 or IPv6 addr````e````ss (s````e````````e```` RFC 1918) at th````e```` tim````e```` of th````e```` al````e````rt.
+  - `[PublicIPAddr````e````ss <String>]`: Publicly routabl````e```` IPv4 or IPv6 addr````e````ss (s````e````````e```` RFC 1918) at tim````e```` of th````e```` al````e````rt.
+  - `[RiskScor````e```` <String>]`: Provid````e````r-g````e````n````e````rat````e````d/calculat````e````d risk scor````e```` of th````e```` host.  R````e````comm````e````nd````e````d valu````e```` rang````e```` of 0-1, which ````e````quat````e````s to a p````e````rc````e````ntag````e````.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
-  - `[AlertId <String>]`: key: id of alert
-  - `[AuthoredNoteId <String>]`: key: id of authoredNote
-  - `[CaseOperationId <String>]`: key: id of caseOperation
-  - `[CloudAppSecurityProfileId <String>]`: key: id of cloudAppSecurityProfile
-  - `[DataSourceId <String>]`: key: id of dataSource
-  - `[DispositionReviewStageId <String>]`: key: id of dispositionReviewStage
-  - `[DomainSecurityProfileId <String>]`: key: id of domainSecurityProfile
-  - `[EdiscoveryCaseId <String>]`: key: id of ediscoveryCase
-  - `[EdiscoveryCustodianId <String>]`: key: id of ediscoveryCustodian
-  - `[EdiscoveryFileId <String>]`: key: id of ediscoveryFile
-  - `[EdiscoveryHoldPolicyId <String>]`: key: id of ediscoveryHoldPolicy
-  - `[EdiscoveryNoncustodialDataSourceId <String>]`: key: id of ediscoveryNoncustodialDataSource
-  - `[EdiscoveryReviewSetId <String>]`: key: id of ediscoveryReviewSet
-  - `[EdiscoveryReviewSetQueryId <String>]`: key: id of ediscoveryReviewSetQuery
-  - `[EdiscoveryReviewTagId <String>]`: key: id of ediscoveryReviewTag
-  - `[EdiscoveryReviewTagId1 <String>]`: key: id of ediscoveryReviewTag
-  - `[EdiscoverySearchId <String>]`: key: id of ediscoverySearch
-  - `[FileSecurityProfileId <String>]`: key: id of fileSecurityProfile
-  - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
-  - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
-  - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
-  - `[RetentionEventId <String>]`: key: id of retentionEvent
-  - `[RetentionEventTypeId <String>]`: key: id of retentionEventType
-  - `[RetentionLabelId <String>]`: key: id of retentionLabel
-  - `[SecureScoreControlProfileId <String>]`: key: id of secureScoreControlProfile
-  - `[SecureScoreId <String>]`: key: id of secureScore
-  - `[SecurityActionId <String>]`: key: id of securityAction
-  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
-  - `[SimulationAutomationId <String>]`: key: id of simulationAutomation
-  - `[SimulationAutomationRunId <String>]`: key: id of simulationAutomationRun
-  - `[SimulationId <String>]`: key: id of simulation
-  - `[SiteSourceId <String>]`: key: id of siteSource
-  - `[SubjectRightsRequestId <String>]`: key: id of subjectRightsRequest
-  - `[TiIndicatorId <String>]`: key: id of tiIndicator
-  - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
-  - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
-  - `[UserSourceId <String>]`: key: id of userSource
+INPUTOBJ````e````CT `<IS````e````curityId````e````ntity>`: Id````e````ntity Param````e````t````e````r
+  - `[Al````e````rtId <String>]`: k````e````y: id of al````e````rt
+  - `[Author````e````dNot````e````Id <String>]`: k````e````y: id of author````e````dNot````e````
+  - `[Cas````e````Op````e````rationId <String>]`: k````e````y: id of cas````e````Op````e````ration
+  - `[CloudAppS````e````curityProfil````e````Id <String>]`: k````e````y: id of cloudAppS````e````curityProfil````e````
+  - `[DataSourc````e````Id <String>]`: k````e````y: id of dataSourc````e````
+  - `[DispositionR````e````vi````e````wStag````e````Id <String>]`: k````e````y: id of dispositionR````e````vi````e````wStag````e````
+  - `[DomainS````e````curityProfil````e````Id <String>]`: k````e````y: id of domainS````e````curityProfil````e````
+  - `[````e````discov````e````ryCas````e````Id <String>]`: k````e````y: id of ````e````discov````e````ryCas````e````
+  - `[````e````discov````e````ryCustodianId <String>]`: k````e````y: id of ````e````discov````e````ryCustodian
+  - `[````e````discov````e````ryFil````e````Id <String>]`: k````e````y: id of ````e````discov````e````ryFil````e````
+  - `[````e````discov````e````ryHoldPolicyId <String>]`: k````e````y: id of ````e````discov````e````ryHoldPolicy
+  - `[````e````discov````e````ryNoncustodialDataSourc````e````Id <String>]`: k````e````y: id of ````e````discov````e````ryNoncustodialDataSourc````e````
+  - `[````e````discov````e````ryR````e````vi````e````wS````e````tId <String>]`: k````e````y: id of ````e````discov````e````ryR````e````vi````e````wS````e````t
+  - `[````e````discov````e````ryR````e````vi````e````wS````e````tQu````e````ryId <String>]`: k````e````y: id of ````e````discov````e````ryR````e````vi````e````wS````e````tQu````e````ry
+  - `[````e````discov````e````ryR````e````vi````e````wTagId <String>]`: k````e````y: id of ````e````discov````e````ryR````e````vi````e````wTag
+  - `[````e````discov````e````ryR````e````vi````e````wTagId1 <String>]`: k````e````y: id of ````e````discov````e````ryR````e````vi````e````wTag
+  - `[````e````discov````e````ryS````e````archId <String>]`: k````e````y: id of ````e````discov````e````ryS````e````arch
+  - `[Fil````e````S````e````curityProfil````e````Id <String>]`: k````e````y: id of fil````e````S````e````curityProfil````e````
+  - `[HostS````e````curityProfil````e````Id <String>]`: k````e````y: id of hostS````e````curityProfil````e````
+  - `[IPS````e````curityProfil````e````Id <String>]`: k````e````y: id of ipS````e````curityProfil````e````
+  - `[Provid````e````rT````e````nantS````e````ttingId <String>]`: k````e````y: id of provid````e````rT````e````nantS````e````tting
+  - `[R````e````t````e````ntion````e````v````e````ntId <String>]`: k````e````y: id of r````e````t````e````ntion````e````v````e````nt
+  - `[R````e````t````e````ntion````e````v````e````ntTyp````e````Id <String>]`: k````e````y: id of r````e````t````e````ntion````e````v````e````ntTyp````e````
+  - `[R````e````t````e````ntionLab````e````lId <String>]`: k````e````y: id of r````e````t````e````ntionLab````e````l
+  - `[S````e````cur````e````Scor````e````ControlProfil````e````Id <String>]`: k````e````y: id of s````e````cur````e````Scor````e````ControlProfil````e````
+  - `[S````e````cur````e````Scor````e````Id <String>]`: k````e````y: id of s````e````cur````e````Scor````e````
+  - `[S````e````curityActionId <String>]`: k````e````y: id of s````e````curityAction
+  - `[S````e````nsitivityLab````e````lId <String>]`: k````e````y: id of s````e````nsitivityLab````e````l
+  - `[SimulationAutomationId <String>]`: k````e````y: id of simulationAutomation
+  - `[SimulationAutomationRunId <String>]`: k````e````y: id of simulationAutomationRun
+  - `[SimulationId <String>]`: k````e````y: id of simulation
+  - `[Sit````e````Sourc````e````Id <String>]`: k````e````y: id of sit````e````Sourc````e````
+  - `[Subj````e````ctRightsR````e````qu````e````stId <String>]`: k````e````y: id of subj````e````ctRightsR````e````qu````e````st
+  - `[TiIndicatorId <String>]`: k````e````y: id of tiIndicator
+  - `[Unifi````e````dGroupSourc````e````Id <String>]`: k````e````y: id of unifi````e````dGroupSourc````e````
+  - `[Us````e````rS````e````curityProfil````e````Id <String>]`: k````e````y: id of us````e````rS````e````curityProfil````e````
+  - `[Us````e````rSourc````e````Id <String>]`: k````e````y: id of us````e````rSourc````e````
 
-INVESTIGATIONSECURITYSTATES `<IMicrosoftGraphInvestigationSecurityState\[]>`: .
-  - `[Name <String>]`: 
+INV````e````STIGATIONS````e````CURITYSTAT````e````S `<IMicrosoftGraphInv````e````stigationS````e````curityStat````e````[]>`: .
+  - `[Nam````e```` <String>]`: 
   - `[Status <String>]`: 
 
-MALWARESTATES `<IMicrosoftGraphMalwareState\[]>`: Threat Intelligence pertaining to malware related to this alert.
-  - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
-  - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry', 'notpetya', etc.).
-  - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
-  - `[Severity <String>]`: Provider-determined severity of this malware.
-  - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
+MALWAR````e````STAT````e````S `<IMicrosoftGraphMalwar````e````Stat````e````[]>`: Thr````e````at Int````e````llig````e````nc````e```` p````e````rtaining to malwar````e```` r````e````lat````e````d to this al````e````rt.
+  - `[Cat````e````gory <String>]`: Provid````e````r-g````e````n````e````rat````e````d malwar````e```` cat````e````gory (for ````e````xampl````e````, trojan, ransomwar````e````, ````e````tc.).
+  - `[Family <String>]`: Provid````e````r-g````e````n````e````rat````e````d malwar````e```` family (for ````e````xampl````e````, 'wannacry', 'notp````e````tya', ````e````tc.).
+  - `[Nam````e```` <String>]`: Provid````e````r-g````e````n````e````rat````e````d malwar````e```` variant nam````e```` (for ````e````xampl````e````, Trojan:Win32/Pow````e````ss````e````r````e````.H).
+  - `[S````e````v````e````rity <String>]`: Provid````e````r-d````e````t````e````rmin````e````d s````e````v````e````rity of this malwar````e````.
+  - `[WasRunning <Bool````e````an?>]`: Indicat````e````s wh````e````th````e````r th````e```` d````e````t````e````ct````e````d fil````e```` (malwar````e````/vuln````e````rability) was running at th````e```` tim````e```` of d````e````t````e````ction or was d````e````t````e````ct````e````d at r````e````st on th````e```` disk.
 
-MESSAGESECURITYSTATES `<IMicrosoftGraphMessageSecurityState\[]>`: .
-  - `[ConnectingIP <String>]`: 
-  - `[DeliveryAction <String>]`: 
-  - `[DeliveryLocation <String>]`: 
-  - `[Directionality <String>]`: 
-  - `[InternetMessageId <String>]`: 
-  - `[MessageFingerprint <String>]`: 
-  - `[MessageReceivedDateTime <DateTime?>]`: 
-  - `[MessageSubject <String>]`: 
-  - `[NetworkMessageId <String>]`: 
+M````e````SSAG````e````S````e````CURITYSTAT````e````S `<IMicrosoftGraphM````e````ssag````e````S````e````curityStat````e````[]>`: .
+  - `[Conn````e````ctingIP <String>]`: 
+  - `[D````e````liv````e````ryAction <String>]`: 
+  - `[D````e````liv````e````ryLocation <String>]`: 
+  - `[Dir````e````ctionality <String>]`: 
+  - `[Int````e````rn````e````tM````e````ssag````e````Id <String>]`: 
+  - `[M````e````ssag````e````Fing````e````rprint <String>]`: 
+  - `[M````e````ssag````e````R````e````c````e````iv````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: 
+  - `[M````e````ssag````e````Subj````e````ct <String>]`: 
+  - `[N````e````tworkM````e````ssag````e````Id <String>]`: 
 
-NETWORKCONNECTIONS <IMicrosoftGraphNetworkConnection[]>: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-  - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook, SMTP, etc.).
-  - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
-  - `[DestinationDomain <String>]`: Destination domain portion of the destination URL. (for example 'www.contoso.com').
-  - `[DestinationLocation <String>]`: Location (by IP address mapping) associated with the destination of a network connection.
-  - `[DestinationPort <String>]`: Destination port (of the network connection).
-  - `[DestinationUrl <String>]`: Network connection URL/URI string - excluding parameters. (for example 'www.contoso.com/products/default.html')
-  - `[Direction <String>]`: connectionDirection
-  - `[DomainRegisteredDateTime <DateTime?>]`: Date when the destination domain was registered. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LocalDnsName <String>]`: The local DNS name resolution as it appears in the host's local DNS cache (for example, in case the 'hosts' file was tampered with).
-  - `[NatDestinationAddress <String>]`: Network Address Translation destination IP address.
-  - `[NatDestinationPort <String>]`: Network Address Translation destination port.
-  - `[NatSourceAddress <String>]`: Network Address Translation source IP address.
-  - `[NatSourcePort <String>]`: Network Address Translation source port.
-  - `[Protocol <String>]`: securityNetworkProtocol
-  - `[RiskScore <String>]`: Provider generated/calculated risk score of the network connection. Recommended value range of 0-1, which equates to a percentage.
-  - `[SourceAddress <String>]`: Source (i.e. origin) IP address (of the network connection).
-  - `[SourceLocation <String>]`: Location (by IP address mapping) associated with the source of a network connection.
-  - `[SourcePort <String>]`: Source (i.e. origin) IP port (of the network connection).
-  - `[Status <String>]`: connectionStatus
-  - `[UrlParameters <String>]`: Parameters (suffix) of the destination URL.
+N````e````TWORKCONN````e````CTIONS <IMicrosoftGraphN````e````tworkConn````e````ction[]>: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` n````e````twork conn````e````ction(s) r````e````lat````e````d to this al````e````rt.
+  - `[ApplicationNam````e```` <String>]`: Nam````e```` of th````e```` application managing th````e```` n````e````twork conn````e````ction (for ````e````xampl````e````, Fac````e````book, SMTP, ````e````tc.).
+  - `[D````e````stinationAddr````e````ss <String>]`: D````e````stination IP addr````e````ss (of th````e```` n````e````twork conn````e````ction).
+  - `[D````e````stinationDomain <String>]`: D````e````stination domain portion of th````e```` d````e````stination URL. (for ````e````xampl````e```` 'www.contoso.com').
+  - `[D````e````stinationLocation <String>]`: Location (by IP addr````e````ss mapping) associat````e````d with th````e```` d````e````stination of a n````e````twork conn````e````ction.
+  - `[D````e````stinationPort <String>]`: D````e````stination port (of th````e```` n````e````twork conn````e````ction).
+  - `[D````e````stinationUrl <String>]`: N````e````twork conn````e````ction URL/URI string - ````e````xcluding param````e````t````e````rs. (for ````e````xampl````e```` 'www.contoso.com/products/d````e````fault.html')
+  - `[Dir````e````ction <String>]`: conn````e````ctionDir````e````ction
+  - `[DomainR````e````gist````e````r````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Dat````e```` wh````e````n th````e```` d````e````stination domain was r````e````gist````e````r````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LocalDnsNam````e```` <String>]`: Th````e```` local DNS nam````e```` r````e````solution as it app````e````ars in th````e```` host's local DNS cach````e```` (for ````e````xampl````e````, in cas````e```` th````e```` 'hosts' fil````e```` was tamp````e````r````e````d with).
+  - `[NatD````e````stinationAddr````e````ss <String>]`: N````e````twork Addr````e````ss Translation d````e````stination IP addr````e````ss.
+  - `[NatD````e````stinationPort <String>]`: N````e````twork Addr````e````ss Translation d````e````stination port.
+  - `[NatSourc````e````Addr````e````ss <String>]`: N````e````twork Addr````e````ss Translation sourc````e```` IP addr````e````ss.
+  - `[NatSourc````e````Port <String>]`: N````e````twork Addr````e````ss Translation sourc````e```` port.
+  - `[Protocol <String>]`: s````e````curityN````e````tworkProtocol
+  - `[RiskScor````e```` <String>]`: Provid````e````r g````e````n````e````rat````e````d/calculat````e````d risk scor````e```` of th````e```` n````e````twork conn````e````ction. R````e````comm````e````nd````e````d valu````e```` rang````e```` of 0-1, which ````e````quat````e````s to a p````e````rc````e````ntag````e````.
+  - `[Sourc````e````Addr````e````ss <String>]`: Sourc````e```` (i.````e````. origin) IP addr````e````ss (of th````e```` n````e````twork conn````e````ction).
+  - `[Sourc````e````Location <String>]`: Location (by IP addr````e````ss mapping) associat````e````d with th````e```` sourc````e```` of a n````e````twork conn````e````ction.
+  - `[Sourc````e````Port <String>]`: Sourc````e```` (i.````e````. origin) IP port (of th````e```` n````e````twork conn````e````ction).
+  - `[Status <String>]`: conn````e````ctionStatus
+  - `[UrlParam````e````t````e````rs <String>]`: Param````e````t````e````rs (suffix) of th````e```` d````e````stination URL.
 
-PROCESSES `<IMicrosoftGraphProcess\[]>`: Security-related stateful information generated by the provider about the process or processes related to this alert.
-  - `[AccountName <String>]`: User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
-  - `[CommandLine <String>]`: The full process invocation commandline including all parameters.
-  - `[CreatedDateTime <DateTime?>]`: Time at which the process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[FileHash <IMicrosoftGraphFileHash>]`: fileHash
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[HashType <String>]`: fileHashType
-    - `[HashValue <String>]`: Value of the file hash.
-  - `[IntegrityLevel <String>]`: processIntegrityLevel
-  - `[IsElevated <Boolean?>]`: True if the process is elevated.
-  - `[Name <String>]`: The name of the process' Image file.
-  - `[ParentProcessCreatedDateTime <DateTime?>]`: DateTime at which the parent process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ParentProcessId <Int32?>]`: The Process ID (PID) of the parent process.
-  - `[ParentProcessName <String>]`: The name of the image file of the parent process.
-  - `[Path <String>]`: Full path, including filename.
-  - `[ProcessId <Int32?>]`: The Process ID (PID) of the process.
+PROC````e````SS````e````S `<IMicrosoftGraphProc````e````ss[]>`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` proc````e````ss or proc````e````ss````e````s r````e````lat````e````d to this al````e````rt.
+  - `[AccountNam````e```` <String>]`: Us````e````r account id````e````ntifi````e````r (us````e````r account cont````e````xt th````e```` proc````e````ss ran und````e````r) for ````e````xampl````e````, AccountNam````e````, SID, and so on.
+  - `[CommandLin````e```` <String>]`: Th````e```` full proc````e````ss invocation commandlin````e```` including all param````e````t````e````rs.
+  - `[Cr````e````at````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` proc````e````ss was start````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Fil````e````Hash <IMicrosoftGraphFil````e````Hash>]`: fil````e````Hash
+    - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+    - `[HashTyp````e```` <String>]`: fil````e````HashTyp````e````
+    - `[HashValu````e```` <String>]`: Valu````e```` of th````e```` fil````e```` hash.
+  - `[Int````e````grityL````e````v````e````l <String>]`: proc````e````ssInt````e````grityL````e````v````e````l
+  - `[Is````e````l````e````vat````e````d <Bool````e````an?>]`: Tru````e```` if th````e```` proc````e````ss is ````e````l````e````vat````e````d.
+  - `[Nam````e```` <String>]`: Th````e```` nam````e```` of th````e```` proc````e````ss' Imag````e```` fil````e````.
+  - `[Par````e````ntProc````e````ssCr````e````at````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Dat````e````Tim````e```` at which th````e```` par````e````nt proc````e````ss was start````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Par````e````ntProc````e````ssId <Int32?>]`: Th````e```` Proc````e````ss ID (PID) of th````e```` par````e````nt proc````e````ss.
+  - `[Par````e````ntProc````e````ssNam````e```` <String>]`: Th````e```` nam````e```` of th````e```` imag````e```` fil````e```` of th````e```` par````e````nt proc````e````ss.
+  - `[Path <String>]`: Full path, including fil````e````nam````e````.
+  - `[Proc````e````ssId <Int32?>]`: Th````e```` Proc````e````ss ID (PID) of th````e```` proc````e````ss.
 
-REGISTRYKEYSTATES `<IMicrosoftGraphRegistryKeyState\[]>`: Security-related stateful information generated by the provider about the registry keys related to this alert.
-  - `[Hive <String>]`: registryHive
-  - `[Key <String>]`: Current (i.e. changed) registry key (excludes HIVE).
-  - `[OldKey <String>]`: Previous (i.e. before changed) registry key (excludes HIVE).
-  - `[OldValueData <String>]`: Previous (i.e. before changed) registry key value data (contents).
-  - `[OldValueName <String>]`: Previous (i.e. before changed) registry key value name.
-  - `[Operation <String>]`: registryOperation
-  - `[ProcessId <Int32?>]`: Process ID (PID) of the process that modified the registry key (process details will appear in the alert 'processes' collection).
-  - `[ValueData <String>]`: Current (i.e. changed) registry key value data (contents).
-  - `[ValueName <String>]`: Current (i.e. changed) registry key value name
-  - `[ValueType <String>]`: registryValueType
+R````e````GISTRYK````e````YSTAT````e````S `<IMicrosoftGraphR````e````gistryK````e````yStat````e````[]>`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` r````e````gistry k````e````ys r````e````lat````e````d to this al````e````rt.
+  - `[Hiv````e```` <String>]`: r````e````gistryHiv````e````
+  - `[K````e````y <String>]`: Curr````e````nt (i.````e````. chang````e````d) r````e````gistry k````e````y (````e````xclud````e````s HIV````e````).
+  - `[OldK````e````y <String>]`: Pr````e````vious (i.````e````. b````e````for````e```` chang````e````d) r````e````gistry k````e````y (````e````xclud````e````s HIV````e````).
+  - `[OldValu````e````Data <String>]`: Pr````e````vious (i.````e````. b````e````for````e```` chang````e````d) r````e````gistry k````e````y valu````e```` data (cont````e````nts).
+  - `[OldValu````e````Nam````e```` <String>]`: Pr````e````vious (i.````e````. b````e````for````e```` chang````e````d) r````e````gistry k````e````y valu````e```` nam````e````.
+  - `[Op````e````ration <String>]`: r````e````gistryOp````e````ration
+  - `[Proc````e````ssId <Int32?>]`: Proc````e````ss ID (PID) of th````e```` proc````e````ss that modifi````e````d th````e```` r````e````gistry k````e````y (proc````e````ss d````e````tails will app````e````ar in th````e```` al````e````rt 'proc````e````ss````e````s' coll````e````ction).
+  - `[Valu````e````Data <String>]`: Curr````e````nt (i.````e````. chang````e````d) r````e````gistry k````e````y valu````e```` data (cont````e````nts).
+  - `[Valu````e````Nam````e```` <String>]`: Curr````e````nt (i.````e````. chang````e````d) r````e````gistry k````e````y valu````e```` nam````e````
+  - `[Valu````e````Typ````e```` <String>]`: r````e````gistryValu````e````Typ````e````
 
-SECURITYRESOURCES `<IMicrosoftGraphSecurityResource\[]>`: Resources related to current alert. For example, for some alerts this can have the Azure Resource value.
-  - `[Resource <String>]`: Name of the resource that is related to current alert. Required.
-  - `[ResourceType <String>]`: securityResourceType
+S````e````CURITYR````e````SOURC````e````S `<IMicrosoftGraphS````e````curityR````e````sourc````e````[]>`: R````e````sourc````e````s r````e````lat````e````d to curr````e````nt al````e````rt. For ````e````xampl````e````, for som````e```` al````e````rts this can hav````e```` th````e```` Azur````e```` R````e````sourc````e```` valu````e````.
+  - `[R````e````sourc````e```` <String>]`: Nam````e```` of th````e```` r````e````sourc````e```` that is r````e````lat````e````d to curr````e````nt al````e````rt. R````e````quir````e````d.
+  - `[R````e````sourc````e````Typ````e```` <String>]`: s````e````curityR````e````sourc````e````Typ````e````
 
-TRIGGERS <IMicrosoftGraphAlertTrigger[]>: Security-related information about the specific properties that triggered the alert (properties appearing in the alert). Alerts might contain information about multiple users, hosts, files, ip addresses. This field indicates which properties triggered the alert generation.
-  - `[Name <String>]`: Name of the property serving as a detection trigger.
-  - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.
-  - `[Value <String>]`: Value of the property serving as a detection trigger.
+TRIGG````e````RS <IMicrosoftGraphAl````e````rtTrigg````e````r[]>: S````e````curity-r````e````lat````e````d information about th````e```` sp````e````cific prop````e````rti````e````s that trigg````e````r````e````d th````e```` al````e````rt (prop````e````rti````e````s app````e````aring in th````e```` al````e````rt). Al````e````rts might contain information about multipl````e```` us````e````rs, hosts, fil````e````s, ip addr````e````ss````e````s. This fi````e````ld indicat````e````s which prop````e````rti````e````s trigg````e````r````e````d th````e```` al````e````rt g````e````n````e````ration.
+  - `[Nam````e```` <String>]`: Nam````e```` of th````e```` prop````e````rty s````e````rving as a d````e````t````e````ction trigg````e````r.
+  - `[Typ````e```` <String>]`: Typ````e```` of th````e```` prop````e````rty in th````e```` k````e````y:valu````e```` pair for int````e````rpr````e````tation. For ````e````xampl````e````, String, Bool````e````an ````e````tc.
+  - `[Valu````e```` <String>]`: Valu````e```` of th````e```` prop````e````rty s````e````rving as a d````e````t````e````ction trigg````e````r.
 
-URICLICKSECURITYSTATES `<IMicrosoftGraphUriClickSecurityState\[]>`: .
+URICLICKS````e````CURITYSTAT````e````S `<IMicrosoftGraphUriClickS````e````curityStat````e````[]>`: .
   - `[ClickAction <String>]`: 
-  - `[ClickDateTime <DateTime?>]`: 
+  - `[ClickDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: 
   - `[Id <String>]`: 
-  - `[SourceId <String>]`: 
+  - `[Sourc````e````Id <String>]`: 
   - `[UriDomain <String>]`: 
-  - `[Verdict <String>]`: 
+  - `[V````e````rdict <String>]`: 
 
-USERSTATES `<IMicrosoftGraphUserSecurityState\[]>`: Security-related stateful information generated by the provider about the user accounts related to this alert.
-  - `[AadUserId <String>]`: AAD User object identifier (GUID) - represents the physical/multi-account user entity.
-  - `[AccountName <String>]`: Account name of user account (without Active Directory domain or DNS domain) - (also called mailNickName).
-  - `[DomainName <String>]`: NetBIOS/Active Directory domain of user account (that is, domain/account format).
-  - `[EmailRole <String>]`: emailRole
-  - `[IsVpn <Boolean?>]`: Indicates whether the user logged on through a VPN.
-  - `[LogonDateTime <DateTime?>]`: Time at which the sign-in occurred. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[LogonIP <String>]`: IP Address the sign-in request originated from.
-  - `[LogonId <String>]`: User sign-in ID.
-  - `[LogonLocation <String>]`: Location (by IP address mapping) associated with a user sign-in event by this user.
-  - `[LogonType <String>]`: logonType
-  - `[OnPremisesSecurityIdentifier <String>]`: Active Directory (on-premises) Security Identifier (SID) of the user.
-  - `[RiskScore <String>]`: Provider-generated/calculated risk score of the user account. Recommended value range of 0-1, which equates to a percentage.
-  - `[UserAccountType <String>]`: userAccountSecurityType
-  - `[UserPrincipalName <String>]`: User sign-in name - internet format: (user account name)@(user account DNS domain name).
+US````e````RSTAT````e````S `<IMicrosoftGraphUs````e````rS````e````curityStat````e````[]>`: S````e````curity-r````e````lat````e````d stat````e````ful information g````e````n````e````rat````e````d by th````e```` provid````e````r about th````e```` us````e````r accounts r````e````lat````e````d to this al````e````rt.
+  - `[AadUs````e````rId <String>]`: AAD Us````e````r obj````e````ct id````e````ntifi````e````r (GUID) - r````e````pr````e````s````e````nts th````e```` physical/multi-account us````e````r ````e````ntity.
+  - `[AccountNam````e```` <String>]`: Account nam````e```` of us````e````r account (without Activ````e```` Dir````e````ctory domain or DNS domain) - (also call````e````d mailNickNam````e````).
+  - `[DomainNam````e```` <String>]`: N````e````tBIOS/Activ````e```` Dir````e````ctory domain of us````e````r account (that is, domain/account format).
+  - `[````e````mailRol````e```` <String>]`: ````e````mailRol````e````
+  - `[IsVpn <Bool````e````an?>]`: Indicat````e````s wh````e````th````e````r th````e```` us````e````r logg````e````d on through a VPN.
+  - `[LogonDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` sign-in occurr````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e```` information using ISO 8601 format and is always in UTC tim````e````. For ````e````xampl````e````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[LogonIP <String>]`: IP Addr````e````ss th````e```` sign-in r````e````qu````e````st originat````e````d from.
+  - `[LogonId <String>]`: Us````e````r sign-in ID.
+  - `[LogonLocation <String>]`: Location (by IP addr````e````ss mapping) associat````e````d with a us````e````r sign-in ````e````v````e````nt by this us````e````r.
+  - `[LogonTyp````e```` <String>]`: logonTyp````e````
+  - `[OnPr````e````mis````e````sS````e````curityId````e````ntifi````e````r <String>]`: Activ````e```` Dir````e````ctory (on-pr````e````mis````e````s) S````e````curity Id````e````ntifi````e````r (SID) of th````e```` us````e````r.
+  - `[RiskScor````e```` <String>]`: Provid````e````r-g````e````n````e````rat````e````d/calculat````e````d risk scor````e```` of th````e```` us````e````r account. R````e````comm````e````nd````e````d valu````e```` rang````e```` of 0-1, which ````e````quat````e````s to a p````e````rc````e````ntag````e````.
+  - `[Us````e````rAccountTyp````e```` <String>]`: us````e````rAccountS````e````curityTyp````e````
+  - `[Us````e````rPrincipalNam````e```` <String>]`: Us````e````r sign-in nam````e```` - int````e````rn````e````t format: (us````e````r account nam````e````)@(us````e````r account DNS domain nam````e````).
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
+V````e````NDORINFORMATION `<IMicrosoftGraphS````e````curityV````e````ndorInformation>`: s````e````curityV````e````ndorInformation
+  - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+  - `[Provid````e````r <String>]`: Sp````e````cific provid````e````r (product/s````e````rvic````e```` - not v````e````ndor company); for ````e````xampl````e````, WindowsD````e````f````e````nd````e````rATP.
+  - `[Provid````e````rV````e````rsion <String>]`: V````e````rsion of th````e```` provid````e````r or subprovid````e````r, if it ````e````xists, that g````e````n````e````rat````e````d th````e```` al````e````rt. R````e````quir````e````d
+  - `[SubProvid````e````r <String>]`: Sp````e````cific subprovid````e````r (und````e````r aggr````e````gating provid````e````r); for ````e````xampl````e````, WindowsD````e````f````e````nd````e````rATP.SmartScr````e````````e````n.
+  - `[V````e````ndor <String>]`: Nam````e```` of th````e```` al````e````rt v````e````ndor (for ````e````xampl````e````, Microsoft, D````e````ll, Fir````e````````e````y````e````). R````e````quir````e````d
 
-VULNERABILITYSTATES `<IMicrosoftGraphVulnerabilityState\[]>`: Threat intelligence pertaining to one or more vulnerabilities related to this alert.
-  - `[Cve <String>]`: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
-  - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
-  - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
+VULN````e````RABILITYSTAT````e````S `<IMicrosoftGraphVuln````e````rabilityStat````e````[]>`: Thr````e````at int````e````llig````e````nc````e```` p````e````rtaining to on````e```` or mor````e```` vuln````e````rabiliti````e````s r````e````lat````e````d to this al````e````rt.
+  - `[Cv````e```` <String>]`: Common Vuln````e````rabiliti````e````s and ````e````xposur````e````s (CV````e````) for th````e```` vuln````e````rability.
+  - `[S````e````v````e````rity <String>]`: Bas````e```` Common Vuln````e````rability Scoring Syst````e````m (CVSS) s````e````v````e````rity scor````e```` for this vuln````e````rability.
+  - `[WasRunning <Bool````e````an?>]`: Indicat````e````s wh````e````th````e````r th````e```` d````e````t````e````ct````e````d vuln````e````rability (fil````e````) was running at th````e```` tim````e```` of d````e````t````e````ction or was th````e```` fil````e```` d````e````t````e````ct````e````d at r````e````st on th````e```` disk.
 
-## RELATED LINKS
+## R````e````LAT````e````D LINKS
 
-## RELATED LINKS
+## R````e````LAT````e````D LINKS
