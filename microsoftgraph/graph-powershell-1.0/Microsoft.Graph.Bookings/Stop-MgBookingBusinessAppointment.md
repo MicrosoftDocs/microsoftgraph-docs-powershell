@@ -1,53 +1,53 @@
-﻿---
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/stop-mgbookingbusinessappointment
+---
+external help file: Micr``o``s``o``ft.Graph.B``o````o``kings-help.xml
+M``o``dule Name: Micr``o``s``o``ft.Graph.B``o````o``kings
+``o``nline versi``o``n: https://d``o``cs.micr``o``s``o``ft.c``o``m/en-us/p``o``wershell/m``o``dule/micr``o``s``o``ft.graph.b``o````o``kings/st``o``p-mgb``o````o``kingbusinessapp``o``intment
 schema: 2.0.0
 ---
 
-# Stop-MgBookingBusinessAppointment
+# St``o``p-MgB``o````o``kingBusinessApp``o``intment
 
-## SYNOPSIS
-Invoke action cancel
+## SYN``o``PSIS
+Inv``o``ke acti``o``n cancel
 
 ## SYNTAX
 
 ### CancelExpanded1 (Default)
 ```
-Stop-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
- [-AdditionalProperties <Hashtable>] [-CancellationMessage <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+St``o``p-MgB``o````o``kingBusinessApp``o``intment -B``o````o``kingApp``o``intmentId <String> -B``o````o``kingBusinessId <String>
+ [-Additi``o``nalPr``o``perties <Hashtable>] [-Cancellati``o``nMessage <String>] [-PassThru] [-WhatIf] [-C``o``nfirm]
+ [<C``o``mm``o``nParameters>]
 ```
 
 ### Cancel1
 ```
-Stop-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
- -BodyParameter <IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+St``o``p-MgB``o````o``kingBusinessApp``o``intment -B``o````o``kingApp``o``intmentId <String> -B``o````o``kingBusinessId <String>
+ -B``o``dyParameter <IPaths17354LzS``o``luti``o``nsB``o````o``kingbusinessesB``o````o``kingbusinessIdApp``o``intmentsB``o````o``kingapp``o``intmentIdMicr``o``s``o``ftGraphCancelP``o``stRequestb``o``dyC``o``ntentApplicati``o``nJs``o``nSchema>
+ [-PassThru] [-WhatIf] [-C``o``nfirm] [<C``o``mm``o``nParameters>]
 ```
 
 ### CancelViaIdentityExpanded1
 ```
-Stop-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-CancellationMessage <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+St``o``p-MgB``o````o``kingBusinessApp``o``intment -Input``o``bject <IB``o````o``kingsIdentity> [-Additi``o``nalPr``o``perties <Hashtable>]
+ [-Cancellati``o``nMessage <String>] [-PassThru] [-WhatIf] [-C``o``nfirm] [<C``o``mm``o``nParameters>]
 ```
 
 ### CancelViaIdentity1
 ```
-Stop-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
- -BodyParameter <IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+St``o``p-MgB``o````o``kingBusinessApp``o``intment -Input``o``bject <IB``o````o``kingsIdentity>
+ -B``o``dyParameter <IPaths17354LzS``o``luti``o``nsB``o````o``kingbusinessesB``o````o``kingbusinessIdApp``o``intmentsB``o````o``kingapp``o``intmentIdMicr``o``s``o``ftGraphCancelP``o``stRequestb``o``dyC``o``ntentApplicati``o``nJs``o``nSchema>
+ [-PassThru] [-WhatIf] [-C``o``nfirm] [<C``o``mm``o``nParameters>]
 ```
 
-## DESCRIPTION
-Invoke action cancel
+## DESCRIPTI``o``N
+Inv``o``ke acti``o``n cancel
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additi``o``nalPr``o``perties
+Additi``o``nal Parameters
 
 ```yaml
 Type: Hashtable
@@ -55,30 +55,30 @@ Parameter Sets: CancelExpanded1, CancelViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``o``siti``o``n: Named
+Default value: N``o``ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -B``o``dyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+T``o`` c``o``nstruct, please use Get-Help -``o``nline and see N``o``TES secti``o``n f``o``r B``o``DYPARAMETER pr``o``perties and create a hash table.
 
 ```yaml
-Type: IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema
+Type: IPaths17354LzS``o``luti``o``nsB``o````o``kingbusinessesB``o````o``kingbusinessIdApp``o``intmentsB``o````o``kingapp``o``intmentIdMicr``o``s``o``ftGraphCancelP``o``stRequestb``o``dyC``o``ntentApplicati``o``nJs``o``nSchema
 Parameter Sets: Cancel1, CancelViaIdentity1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P``o``siti``o``n: Named
+Default value: N``o``ne
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -BookingAppointmentId
-key: id of bookingAppointment
+### -B``o````o``kingApp``o``intmentId
+key: id ``o``f b``o````o``kingApp``o``intment
 
 ```yaml
 Type: String
@@ -86,14 +86,14 @@ Parameter Sets: CancelExpanded1, Cancel1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P``o``siti``o``n: Named
+Default value: N``o``ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BookingBusinessId
-key: id of bookingBusiness
+### -B``o````o``kingBusinessId
+key: id ``o``f b``o````o``kingBusiness
 
 ```yaml
 Type: String
@@ -101,13 +101,13 @@ Parameter Sets: CancelExpanded1, Cancel1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P``o``siti``o``n: Named
+Default value: N``o``ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CancellationMessage
+### -Cancellati``o``nMessage
 .
 
 ```yaml
@@ -116,30 +116,30 @@ Parameter Sets: CancelExpanded1, CancelViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``o``siti``o``n: Named
+Default value: N``o``ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
+### -Input``o``bject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+T``o`` c``o``nstruct, please use Get-Help -``o``nline and see N``o``TES secti``o``n f``o``r INPUT``o``BJECT pr``o``perties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
+Type: IB``o````o``kingsIdentity
 Parameter Sets: CancelViaIdentityExpanded1, CancelViaIdentity1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P``o``siti``o``n: Named
+Default value: N``o``ne
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the c``o``mmand succeeds
 
 ```yaml
 Type: SwitchParameter
@@ -147,14 +147,14 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``o``siti``o``n: Named
+Default value: N``o``ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -C``o``nfirm
+Pr``o``mpts y``o``u f``o``r c``o``nfirmati``o``n bef``o``re running the cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -162,15 +162,15 @@ Parameter Sets: (All)
 Aliases: cf
 
 Required: False
-Position: Named
-Default value: None
+P``o``siti``o``n: Named
+Default value: N``o``ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Sh``o``ws what w``o``uld happen if the cmdlet runs.
+The cmdlet is n``o``t run.
 
 ```yaml
 Type: SwitchParameter
@@ -178,44 +178,44 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
+P``o``siti``o``n: Named
+Default value: N``o``ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### C``o``mm``o``nParameters
+This cmdlet supp``o``rts the c``o``mm``o``n parameters: -Debug, -Err``o``rActi``o``n, -Err``o``rVariable, -Inf``o``rmati``o``nActi``o``n, -Inf``o``rmati``o``nVariable, -``o``utVariable, -``o``utBuffer, -PipelineVariable, -Verb``o``se, -WarningActi``o``n, and -WarningVariable. F``o``r m``o``re inf``o``rmati``o``n, see [ab``o``ut_C``o``mm``o``nParameters](http://g``o``.micr``o``s``o``ft.c``o``m/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema
-## OUTPUTS
+### Micr``o``s``o``ft.Graph.P``o``werShell.M``o``dels.IB``o````o``kingsIdentity
+### Micr``o``s``o``ft.Graph.P``o``werShell.M``o``dels.IPaths17354LzS``o``luti``o``nsB``o````o``kingbusinessesB``o````o``kingbusinessIdApp``o``intmentsB``o````o``kingapp``o``intmentIdMicr``o``s``o``ftGraphCancelP``o``stRequestb``o``dyC``o``ntentApplicati``o``nJs``o``nSchema
+## ``o``UTPUTS
 
-### System.Boolean
-## NOTES
+### System.B``o````o``lean
+## N``o``TES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+C``o``MPLEX PARAMETER PR``o``PERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+T``o`` create the parameters described bel``o``w, c``o``nstruct a hash table c``o``ntaining the appr``o``priate pr``o``perties. F``o``r inf``o``rmati``o``n ``o``n hash tables, run Get-Help ab``o``ut_Hash_Tables.
 
 
-BODYPARAMETER <IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CancellationMessage <String>]`: 
+B``o``DYPARAMETER <IPaths17354LzS``o``luti``o``nsB``o````o``kingbusinessesB``o````o``kingbusinessIdApp``o``intmentsB``o````o``kingapp``o``intmentIdMicr``o``s``o``ftGraphCancelP``o``stRequestb``o``dyC``o``ntentApplicati``o``nJs``o``nSchema>: .
+  - `[(Any) <``o``bject>]`: This indicates any pr``o``perty can be added t``o`` this ``o``bject.
+  - `[Cancellati``o``nMessage <String>]`: 
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
-  - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
-  - `[BookingBusinessId <String>]`: key: id of bookingBusiness
-  - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: key: id of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: key: id of bookingCustomerBase
-  - `[BookingCustomerId <String>]`: key: id of bookingCustomer
-  - `[BookingServiceId <String>]`: key: id of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: key: id of bookingStaffMemberBase
-  - `[BookingStaffMemberId <String>]`: key: id of bookingStaffMember
+INPUT``o``BJECT <IB``o````o``kingsIdentity>: Identity Parameter
+  - `[B``o````o``kingApp``o``intmentId <String>]`: key: id ``o``f b``o````o``kingApp``o``intment
+  - `[B``o````o``kingBusinessId <String>]`: key: id ``o``f b``o````o``kingBusiness
+  - `[B``o````o``kingCurrencyId <String>]`: key: id ``o``f b``o````o``kingCurrency
+  - `[B``o````o``kingCust``o``mQuesti``o``nId <String>]`: key: id ``o``f b``o````o``kingCust``o``mQuesti``o``n
+  - `[B``o````o``kingCust``o``merBaseId <String>]`: key: id ``o``f b``o````o``kingCust``o``merBase
+  - `[B``o````o``kingCust``o``merId <String>]`: key: id ``o``f b``o````o``kingCust``o``mer
+  - `[B``o````o``kingServiceId <String>]`: key: id ``o``f b``o````o``kingService
+  - `[B``o````o``kingStaffMemberBaseId <String>]`: key: id ``o``f b``o````o``kingStaffMemberBase
+  - `[B``o````o``kingStaffMemberId <String>]`: key: id ``o``f b``o````o``kingStaffMember
 
 ## RELATED LINKS
