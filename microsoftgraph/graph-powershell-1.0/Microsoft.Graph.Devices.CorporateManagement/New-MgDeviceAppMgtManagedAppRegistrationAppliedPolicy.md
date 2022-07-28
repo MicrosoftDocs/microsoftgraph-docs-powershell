@@ -1,294 +1,294 @@
-﻿---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
-Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmgttargetedmanagedappconfigurationapp
-schema: 2.0.0
+---
+```e```xt```e```rnal h```e```lp fil```e```: Microsoft.Graph.D```e```vic```e```s.Corporat```e```Manag```e```m```e```nt-h```e```lp.xml
+Modul```e``` Nam```e```: Microsoft.Graph.D```e```vic```e```s.Corporat```e```Manag```e```m```e```nt
+onlin```e``` v```e```rsion: https://docs.microsoft.com/```e```n-us/pow```e```rsh```e```ll/modul```e```/microsoft.graph.d```e```vic```e```s.corporat```e```manag```e```m```e```nt/invok```e```-mgtarg```e```td```e```vic```e```appmgttarg```e```t```e```dmanag```e```dappconfigurationapp
+sch```e```ma: 2.0.0
 ---
 
-# Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp
+# Invok```e```-MgTarg```e```tD```e```vic```e```AppMgtTarg```e```t```e```dManag```e```dAppConfigurationApp
 
 ## SYNOPSIS
-Invoke action targetApps
+Invok```e``` action targ```e```tApps
 
 ## SYNTAX
 
-### TargetExpanded1 (Default)
+### Targ```e```t```e```xpand```e```d1 (D```e```fault)
 ```
-Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp -TargetedManagedAppConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-AppGroupType <TargetedManagedAppGroupType>]
- [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Target1
-```
-Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp -TargetedManagedAppConfigurationId <String>
- -BodyParameter <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invok```e```-MgTarg```e```tD```e```vic```e```AppMgtTarg```e```t```e```dManag```e```dAppConfigurationApp -Targ```e```t```e```dManag```e```dAppConfigurationId <String>
+ [-AdditionalProp```e```rti```e```s <Hashtabl```e```>] [-AppGroupTyp```e``` <Targ```e```t```e```dManag```e```dAppGroupTyp```e```>]
+ [-Apps <IMicrosoftGraphManag```e```dMobil```e```App[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-### TargetViaIdentityExpanded1
+### Targ```e```t1
 ```
-Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-AppGroupType <TargetedManagedAppGroupType>] [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### TargetViaIdentity1
-```
-Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp
- -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invok```e```-MgTarg```e```tD```e```vic```e```AppMgtTarg```e```t```e```dManag```e```dAppConfigurationApp -Targ```e```t```e```dManag```e```dAppConfigurationId <String>
+ -BodyParam```e```t```e```r <IPathsXzr66BD```e```vic```e```appmanag```e```m```e```ntTarg```e```t```e```dmanag```e```dappconfigurationsTarg```e```t```e```dmanag```e```dappconfigurationIdMicrosoftGraphTarg```e```tappsPostR```e```qu```e```stbodyCont```e```ntApplicationJsonSch```e```ma>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-## DESCRIPTION
-Invoke action targetApps
+### Targ```e```tViaId```e```ntity```e```xpand```e```d1
+```
+Invok```e```-MgTarg```e```tD```e```vic```e```AppMgtTarg```e```t```e```dManag```e```dAppConfigurationApp
+ -InputObj```e```ct <ID```e```vic```e```sCorporat```e```Manag```e```m```e```ntId```e```ntity> [-AdditionalProp```e```rti```e```s <Hashtabl```e```>]
+ [-AppGroupTyp```e``` <Targ```e```t```e```dManag```e```dAppGroupTyp```e```>] [-Apps <IMicrosoftGraphManag```e```dMobil```e```App[]>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
+```
 
-## EXAMPLES
+### Targ```e```tViaId```e```ntity1
+```
+Invok```e```-MgTarg```e```tD```e```vic```e```AppMgtTarg```e```t```e```dManag```e```dAppConfigurationApp
+ -InputObj```e```ct <ID```e```vic```e```sCorporat```e```Manag```e```m```e```ntId```e```ntity>
+ -BodyParam```e```t```e```r <IPathsXzr66BD```e```vic```e```appmanag```e```m```e```ntTarg```e```t```e```dmanag```e```dappconfigurationsTarg```e```t```e```dmanag```e```dappconfigurationIdMicrosoftGraphTarg```e```tappsPostR```e```qu```e```stbodyCont```e```ntApplicationJsonSch```e```ma>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
+```
 
-## PARAMETERS
+## D```e```SCRIPTION
+Invok```e``` action targ```e```tApps
 
-### -AdditionalProperties
-Additional Parameters
+## ```e```XAMPL```e```S
+
+## PARAM```e```T```e```RS
+
+### -AdditionalProp```e```rti```e```s
+Additional Param```e```t```e```rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
-Aliases:
+Typ```e```: Hashtabl```e```
+Param```e```t```e```r S```e```ts: Targ```e```t```e```xpand```e```d1, Targ```e```tViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -AppGroupType
-Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
+### -AppGroupTyp```e```
+Indicat```e```s a coll```e```ction of apps to targ```e```t which can b```e``` on```e``` of s```e```v```e```ral pr```e```-d```e```fin```e```d lists of apps or a manually s```e```l```e```ct```e```d list of apps
 
 ```yaml
-Type: TargetedManagedAppGroupType
-Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
-Aliases:
+Typ```e```: Targ```e```t```e```dManag```e```dAppGroupTyp```e```
+Param```e```t```e```r S```e```ts: Targ```e```t```e```xpand```e```d1, Targ```e```tViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Apps
 .
-To construct, please use Get-Help -Online and see NOTES section for APPS properties and create a hash table.
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for APPS prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IMicrosoftGraphManagedMobileApp[]
-Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
-Aliases:
+Typ```e```: IMicrosoftGraphManag```e```dMobil```e```App[]
+Param```e```t```e```r S```e```ts: Targ```e```t```e```xpand```e```d1, Targ```e```tViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -BodyParameter
+### -BodyParam```e```t```e```r
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for BODYPARAM```e```T```e```R prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Target1, TargetViaIdentity1
-Aliases:
+Typ```e```: IPathsXzr66BD```e```vic```e```appmanag```e```m```e```ntTarg```e```t```e```dmanag```e```dappconfigurationsTarg```e```t```e```dmanag```e```dappconfigurationIdMicrosoftGraphTarg```e```tappsPostR```e```qu```e```stbodyCont```e```ntApplicationJsonSch```e```ma
+Param```e```t```e```r S```e```ts: Targ```e```t1, Targ```e```tViaId```e```ntity1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj```e```ct
+Id```e```ntity Param```e```t```e```r
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for INPUTOBJ```e```CT prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: TargetViaIdentityExpanded1, TargetViaIdentity1
-Aliases:
+Typ```e```: ID```e```vic```e```sCorporat```e```Manag```e```m```e```ntId```e```ntity
+Param```e```t```e```r S```e```ts: Targ```e```tViaId```e```ntity```e```xpand```e```d1, Targ```e```tViaId```e```ntity1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R```e```turns tru```e``` wh```e```n th```e``` command succ```e``````e```ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -TargetedManagedAppConfigurationId
-key: id of targetedManagedAppConfiguration
+### -Targ```e```t```e```dManag```e```dAppConfigurationId
+k```e```y: id of targ```e```t```e```dManag```e```dAppConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: TargetExpanded1, Target1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Targ```e```t```e```xpand```e```d1, Targ```e```t1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b```e```for```e``` running th```e``` cmdl```e```t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ```e```n if th```e``` cmdl```e```t runs.
+Th```e``` cmdl```e```t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam```e```t```e```rs
+This cmdl```e```t supports th```e``` common param```e```t```e```rs: -D```e```bug, -```e```rrorAction, -```e```rrorVariabl```e```, -InformationAction, -InformationVariabl```e```, -OutVariabl```e```, -OutBuff```e```r, -Pip```e```lin```e```Variabl```e```, -V```e```rbos```e```, -WarningAction, and -WarningVariabl```e```. For mor```e``` information, s```e``````e``` [about_CommonParam```e```t```e```rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.ID```e```vic```e```sCorporat```e```Manag```e```m```e```ntId```e```ntity
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.IPathsXzr66BD```e```vic```e```appmanag```e```m```e```ntTarg```e```t```e```dmanag```e```dappconfigurationsTarg```e```t```e```dmanag```e```dappconfigurationIdMicrosoftGraphTarg```e```tappsPostR```e```qu```e```stbodyCont```e```ntApplicationJsonSch```e```ma
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst```e```m.Bool```e```an
+## NOT```e```S
 
-ALIASES
+ALIAS```e```S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL```e```X PARAM```e```T```e```R PROP```e```RTI```e```S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr```e```at```e``` th```e``` param```e```t```e```rs d```e```scrib```e```d b```e```low, construct a hash tabl```e``` containing th```e``` appropriat```e``` prop```e```rti```e```s. For information on hash tabl```e```s, run G```e```t-H```e```lp about_Hash_Tabl```e```s.
 
 
-APPS <IMicrosoftGraphManagedMobileApp[]>: .
+APPS <IMicrosoftGraphManag```e```dMobil```e```App[]>: .
   - `[Id <String>]`: 
-  - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Version <String>]`: Version of the entity.
+  - `[Mobil```e```AppId```e```ntifi```e```r <IMicrosoftGraphMobil```e```AppId```e```ntifi```e```r>]`: Th```e``` id```e```ntifi```e```r for a mobil```e``` app.
+    - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+  - `[V```e```rsion <String>]`: V```e```rsion of th```e``` ```e```ntity.
 
-BODYPARAMETER <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AppGroupType <TargetedManagedAppGroupType?>]`: Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
-  - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: 
+BODYPARAM```e```T```e```R <IPathsXzr66BD```e```vic```e```appmanag```e```m```e```ntTarg```e```t```e```dmanag```e```dappconfigurationsTarg```e```t```e```dmanag```e```dappconfigurationIdMicrosoftGraphTarg```e```tappsPostR```e```qu```e```stbodyCont```e```ntApplicationJsonSch```e```ma>: .
+  - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+  - `[AppGroupTyp```e``` <Targ```e```t```e```dManag```e```dAppGroupTyp```e```?>]`: Indicat```e```s a coll```e```ction of apps to targ```e```t which can b```e``` on```e``` of s```e```v```e```ral pr```e```-d```e```fin```e```d lists of apps or a manually s```e```l```e```ct```e```d list of apps
+  - `[Apps <IMicrosoftGraphManag```e```dMobil```e```App[]>]`: 
     - `[Id <String>]`: 
-    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Version <String>]`: Version of the entity.
+    - `[Mobil```e```AppId```e```ntifi```e```r <IMicrosoftGraphMobil```e```AppId```e```ntifi```e```r>]`: Th```e``` id```e```ntifi```e```r for a mobil```e``` app.
+      - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+    - `[V```e```rsion <String>]`: V```e```rsion of th```e``` ```e```ntity.
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
-  - `[Count <Int64?>]`: Usage: count={count}
-  - `[DefaultManagedAppProtectionId <String>]`: key: id of defaultManagedAppProtection
-  - `[DetectedAppId <String>]`: key: id of detectedApp
-  - `[DeviceAppManagementTaskId <String>]`: key: id of deviceAppManagementTask
-  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
-  - `[DeviceInstallStateId <String>]`: key: id of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
-  - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
-  - `[EnterpriseCodeSigningCertificateId <String>]`: key: id of enterpriseCodeSigningCertificate
-  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: key: id of iosLobAppProvisioningConfigurationAssignment
-  - `[IosLobAppProvisioningConfigurationId <String>]`: key: id of iosLobAppProvisioningConfiguration
-  - `[IosManagedAppProtectionId <String>]`: key: id of iosManagedAppProtection
-  - `[ManagedAppOperationId <String>]`: key: id of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: key: id of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: key: id of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: key: id of managedAppStatus
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: key: id of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: key: id of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: key: id of managedEBookAssignment
-  - `[ManagedEBookCategoryId <String>]`: key: id of managedEBookCategory
-  - `[ManagedEBookId <String>]`: key: id of managedEBook
-  - `[ManagedMobileAppId <String>]`: key: id of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: key: id of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: key: id of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: key: id of mobileAppCategory
-  - `[MobileAppId <String>]`: key: id of mobileApp
-  - `[MobileAppInstallStatusId <String>]`: key: id of mobileAppInstallStatus
-  - `[MobileAppIntentAndStateId <String>]`: key: id of mobileAppIntentAndState
-  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: key: id of mobileAppProvisioningConfigGroupAssignment
-  - `[MobileAppRelationshipId <String>]`: key: id of mobileAppRelationship
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[OfficeClientConfigurationAssignmentId <String>]`: key: id of officeClientConfigurationAssignment
-  - `[OfficeClientConfigurationId <String>]`: key: id of officeClientConfiguration
-  - `[PolicySetAssignmentId <String>]`: key: id of policySetAssignment
-  - `[PolicySetId <String>]`: key: id of policySet
-  - `[PolicySetItemId <String>]`: key: id of policySetItem
-  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
-  - `[SideLoadingKeyId <String>]`: key: id of sideLoadingKey
-  - `[Status <String>]`: Usage: status='{status}'
-  - `[TargetedManagedAppConfigurationId <String>]`: key: id of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: key: id of targetedManagedAppPolicyAssignment
-  - `[UserAppInstallStatusId <String>]`: key: id of userAppInstallStatus
-  - `[UserId <String>]`: key: id of user
-  - `[UserInstallStateSummaryId <String>]`: key: id of userInstallStateSummary
-  - `[UserPrincipalName <String>]`: Usage: userPrincipalName='{userPrincipalName}'
-  - `[VppTokenId <String>]`: key: id of vppToken
-  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyAssignment
-  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicy
-  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: key: id of windowsInformationProtectionDeviceRegistration
-  - `[WindowsInformationProtectionPolicyId <String>]`: key: id of windowsInformationProtectionPolicy
-  - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
-  - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
+INPUTOBJ```e```CT <ID```e```vic```e```sCorporat```e```Manag```e```m```e```ntId```e```ntity>: Id```e```ntity Param```e```t```e```r
+  - `[AndroidManag```e```dAppProt```e```ctionId <String>]`: k```e```y: id of androidManag```e```dAppProt```e```ction
+  - `[AppLogColl```e```ctionR```e```qu```e```stId <String>]`: k```e```y: id of appLogColl```e```ctionR```e```qu```e```st
+  - `[Assignm```e```ntFilt```e```r```e```valuationStatusD```e```tailsId <String>]`: k```e```y: id of assignm```e```ntFilt```e```r```e```valuationStatusD```e```tails
+  - `[Bundl```e```Id <String>]`: Usag```e```: bundl```e```Id='{bundl```e```Id}'
+  - `[Count <Int64?>]`: Usag```e```: count={count}
+  - `[D```e```faultManag```e```dAppProt```e```ctionId <String>]`: k```e```y: id of d```e```faultManag```e```dAppProt```e```ction
+  - `[D```e```t```e```ct```e```dAppId <String>]`: k```e```y: id of d```e```t```e```ct```e```dApp
+  - `[D```e```vic```e```AppManag```e```m```e```ntTaskId <String>]`: k```e```y: id of d```e```vic```e```AppManag```e```m```e```ntTask
+  - `[D```e```vic```e```Complianc```e```PolicyStat```e```Id <String>]`: k```e```y: id of d```e```vic```e```Complianc```e```PolicyStat```e```
+  - `[D```e```vic```e```ConfigurationStat```e```Id <String>]`: k```e```y: id of d```e```vic```e```ConfigurationStat```e```
+  - `[D```e```vic```e``````e```nrollm```e```ntConfigurationId <String>]`: k```e```y: id of d```e```vic```e``````e```nrollm```e```ntConfiguration
+  - `[D```e```vic```e```Id <String>]`: Usag```e```: d```e```vic```e```Id='{d```e```vic```e```Id}'
+  - `[D```e```vic```e```InstallStat```e```Id <String>]`: k```e```y: id of d```e```vic```e```InstallStat```e```
+  - `[D```e```vic```e```LogColl```e```ctionR```e```spons```e```Id <String>]`: k```e```y: id of d```e```vic```e```LogColl```e```ctionR```e```spons```e```
+  - `[D```e```vic```e```Manag```e```m```e```ntTroubl```e```shooting```e```v```e```ntId <String>]`: k```e```y: id of d```e```vic```e```Manag```e```m```e```ntTroubl```e```shooting```e```v```e```nt
+  - `[```e```nrollm```e```ntConfigurationAssignm```e```ntId <String>]`: k```e```y: id of ```e```nrollm```e```ntConfigurationAssignm```e```nt
+  - `[```e```nt```e```rpris```e```Cod```e```SigningC```e```rtificat```e```Id <String>]`: k```e```y: id of ```e```nt```e```rpris```e```Cod```e```SigningC```e```rtificat```e```
+  - `[IosLobAppProvisioningConfigurationAssignm```e```ntId <String>]`: k```e```y: id of iosLobAppProvisioningConfigurationAssignm```e```nt
+  - `[IosLobAppProvisioningConfigurationId <String>]`: k```e```y: id of iosLobAppProvisioningConfiguration
+  - `[IosManag```e```dAppProt```e```ctionId <String>]`: k```e```y: id of iosManag```e```dAppProt```e```ction
+  - `[Manag```e```dAppOp```e```rationId <String>]`: k```e```y: id of manag```e```dAppOp```e```ration
+  - `[Manag```e```dAppPolicyId <String>]`: k```e```y: id of manag```e```dAppPolicy
+  - `[Manag```e```dAppR```e```gistrationId <String>]`: k```e```y: id of manag```e```dAppR```e```gistration
+  - `[Manag```e```dAppStatusId <String>]`: k```e```y: id of manag```e```dAppStatus
+  - `[Manag```e```dD```e```vic```e```Id <String>]`: k```e```y: id of manag```e```dD```e```vic```e```
+  - `[Manag```e```dD```e```vic```e```Mobil```e```AppConfigurationAssignm```e```ntId <String>]`: k```e```y: id of manag```e```dD```e```vic```e```Mobil```e```AppConfigurationAssignm```e```nt
+  - `[Manag```e```dD```e```vic```e```Mobil```e```AppConfigurationD```e```vic```e```StatusId <String>]`: k```e```y: id of manag```e```dD```e```vic```e```Mobil```e```AppConfigurationD```e```vic```e```Status
+  - `[Manag```e```dD```e```vic```e```Mobil```e```AppConfigurationId <String>]`: k```e```y: id of manag```e```dD```e```vic```e```Mobil```e```AppConfiguration
+  - `[Manag```e```dD```e```vic```e```Mobil```e```AppConfigurationStat```e```Id <String>]`: k```e```y: id of manag```e```dD```e```vic```e```Mobil```e```AppConfigurationStat```e```
+  - `[Manag```e```dD```e```vic```e```Mobil```e```AppConfigurationUs```e```rStatusId <String>]`: k```e```y: id of manag```e```dD```e```vic```e```Mobil```e```AppConfigurationUs```e```rStatus
+  - `[Manag```e```d```e```BookAssignm```e```ntId <String>]`: k```e```y: id of manag```e```d```e```BookAssignm```e```nt
+  - `[Manag```e```d```e```BookCat```e```goryId <String>]`: k```e```y: id of manag```e```d```e```BookCat```e```gory
+  - `[Manag```e```d```e```BookId <String>]`: k```e```y: id of manag```e```d```e```Book
+  - `[Manag```e```dMobil```e```AppId <String>]`: k```e```y: id of manag```e```dMobil```e```App
+  - `[MdmWindowsInformationProt```e```ctionPolicyId <String>]`: k```e```y: id of mdmWindowsInformationProt```e```ctionPolicy
+  - `[Mobil```e```AppAssignm```e```ntId <String>]`: k```e```y: id of mobil```e```AppAssignm```e```nt
+  - `[Mobil```e```AppCat```e```goryId <String>]`: k```e```y: id of mobil```e```AppCat```e```gory
+  - `[Mobil```e```AppId <String>]`: k```e```y: id of mobil```e```App
+  - `[Mobil```e```AppInstallStatusId <String>]`: k```e```y: id of mobil```e```AppInstallStatus
+  - `[Mobil```e```AppInt```e```ntAndStat```e```Id <String>]`: k```e```y: id of mobil```e```AppInt```e```ntAndStat```e```
+  - `[Mobil```e```AppProvisioningConfigGroupAssignm```e```ntId <String>]`: k```e```y: id of mobil```e```AppProvisioningConfigGroupAssignm```e```nt
+  - `[Mobil```e```AppR```e```lationshipId <String>]`: k```e```y: id of mobil```e```AppR```e```lationship
+  - `[Mobil```e```AppTroubl```e```shooting```e```v```e```ntId <String>]`: k```e```y: id of mobil```e```AppTroubl```e```shooting```e```v```e```nt
+  - `[Offic```e```Cli```e```ntConfigurationAssignm```e```ntId <String>]`: k```e```y: id of offic```e```Cli```e```ntConfigurationAssignm```e```nt
+  - `[Offic```e```Cli```e```ntConfigurationId <String>]`: k```e```y: id of offic```e```Cli```e```ntConfiguration
+  - `[PolicyS```e```tAssignm```e```ntId <String>]`: k```e```y: id of policyS```e```tAssignm```e```nt
+  - `[PolicyS```e```tId <String>]`: k```e```y: id of policyS```e```t
+  - `[PolicyS```e```tIt```e```mId <String>]`: k```e```y: id of policyS```e```tIt```e```m
+  - `[S```e```curityBas```e```lin```e```S```e```ttingStat```e```Id <String>]`: k```e```y: id of s```e```curityBas```e```lin```e```S```e```ttingStat```e```
+  - `[S```e```curityBas```e```lin```e```Stat```e```Id <String>]`: k```e```y: id of s```e```curityBas```e```lin```e```Stat```e```
+  - `[Sid```e```LoadingK```e```yId <String>]`: k```e```y: id of sid```e```LoadingK```e```y
+  - `[Status <String>]`: Usag```e```: status='{status}'
+  - `[Targ```e```t```e```dManag```e```dAppConfigurationId <String>]`: k```e```y: id of targ```e```t```e```dManag```e```dAppConfiguration
+  - `[Targ```e```t```e```dManag```e```dAppPolicyAssignm```e```ntId <String>]`: k```e```y: id of targ```e```t```e```dManag```e```dAppPolicyAssignm```e```nt
+  - `[Us```e```rAppInstallStatusId <String>]`: k```e```y: id of us```e```rAppInstallStatus
+  - `[Us```e```rId <String>]`: k```e```y: id of us```e```r
+  - `[Us```e```rInstallStat```e```SummaryId <String>]`: k```e```y: id of us```e```rInstallStat```e```Summary
+  - `[Us```e```rPrincipalNam```e``` <String>]`: Usag```e```: us```e```rPrincipalNam```e```='{us```e```rPrincipalNam```e```}'
+  - `[VppTok```e```nId <String>]`: k```e```y: id of vppTok```e```n
+  - `[WindowsD```e```f```e```nd```e```rApplicationControlSuppl```e```m```e```ntalPolicyAssignm```e```ntId <String>]`: k```e```y: id of windowsD```e```f```e```nd```e```rApplicationControlSuppl```e```m```e```ntalPolicyAssignm```e```nt
+  - `[WindowsD```e```f```e```nd```e```rApplicationControlSuppl```e```m```e```ntalPolicyD```e```ploym```e```ntStatusId <String>]`: k```e```y: id of windowsD```e```f```e```nd```e```rApplicationControlSuppl```e```m```e```ntalPolicyD```e```ploym```e```ntStatus
+  - `[WindowsD```e```f```e```nd```e```rApplicationControlSuppl```e```m```e```ntalPolicyId <String>]`: k```e```y: id of windowsD```e```f```e```nd```e```rApplicationControlSuppl```e```m```e```ntalPolicy
+  - `[WindowsD```e```vic```e```Malwar```e```Stat```e```Id <String>]`: k```e```y: id of windowsD```e```vic```e```Malwar```e```Stat```e```
+  - `[WindowsInformationProt```e```ctionD```e```vic```e```R```e```gistrationId <String>]`: k```e```y: id of windowsInformationProt```e```ctionD```e```vic```e```R```e```gistration
+  - `[WindowsInformationProt```e```ctionPolicyId <String>]`: k```e```y: id of windowsInformationProt```e```ctionPolicy
+  - `[WindowsInformationProt```e```ctionWip```e```ActionId <String>]`: k```e```y: id of windowsInformationProt```e```ctionWip```e```Action
+  - `[WindowsManag```e```dAppProt```e```ctionId <String>]`: k```e```y: id of windowsManag```e```dAppProt```e```ction
 
-## RELATED LINKS
+## R```e```LAT```e```D LINKS
