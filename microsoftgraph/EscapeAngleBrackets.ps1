@@ -104,7 +104,7 @@ function Add-Back-Ticks{
 			$furtherSplitted = $splitted.Split(":")
 			$concat = '`'+$furtherSplitted[1]+'`'
 			$text = $text -replace $furtherSplitted[1],$concat
-         }
+         
        } 
     }
     $text > $tempFilePath
