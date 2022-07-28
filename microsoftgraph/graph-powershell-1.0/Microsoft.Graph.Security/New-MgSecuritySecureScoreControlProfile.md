@@ -1,481 +1,481 @@
-﻿---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritysecurescorecontrolprofile
-schema: 2.0.0
+---
+````e````xt````e````rnal h````e````lp fil````e````: Microsoft.Graph.S````e````curity-h````e````lp.xml
+Modul````e```` Nam````e````: Microsoft.Graph.S````e````curity
+onlin````e```` v````e````rsion: https://docs.microsoft.com/````e````n-us/pow````e````rsh````e````ll/modul````e````/microsoft.graph.s````e````curity/n````e````w-mgs````e````curitys````e````cur````e````scor````e````controlprofil````e````
+sch````e````ma: 2.0.0
 ---
 
-# New-MgSecuritySecureScoreControlProfile
+# N````e````w-MgS````e````curityS````e````cur````e````Scor````e````ControlProfil````e````
 
 ## SYNOPSIS
-Create new navigation property to secureScoreControlProfiles for security
+Cr````e````at````e```` n````e````w navigation prop````e````rty to s````e````cur````e````Scor````e````ControlProfil````e````s for s````e````curity
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### Cr````e````at````e````````e````xpand````e````d1 (D````e````fault)
 ```
-New-MgSecuritySecureScoreControlProfile [-ActionType <String>] [-ActionUrl <String>]
- [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
- [-ComplianceInformation <IMicrosoftGraphComplianceInformation[]>] [-ControlCategory <String>]
- [-ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>] [-Deprecated] [-Id <String>]
- [-ImplementationCost <String>] [-LastModifiedDateTime <DateTime>] [-MaxScore <Double>] [-Rank <Int32>]
- [-Remediation <String>] [-RemediationImpact <String>] [-Service <String>] [-Threats <String[]>]
- [-Tier <String>] [-Title <String>] [-UserImpact <String>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgSecuritySecureScoreControlProfile -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+N````e````w-MgS````e````curityS````e````cur````e````Scor````e````ControlProfil````e```` [-ActionTyp````e```` <String>] [-ActionUrl <String>]
+ [-AdditionalProp````e````rti````e````s <Hashtabl````e````>] [-Azur````e````T````e````nantId <String>]
+ [-Complianc````e````Information <IMicrosoftGraphComplianc````e````Information[]>] [-ControlCat````e````gory <String>]
+ [-ControlStat````e````Updat````e````s <IMicrosoftGraphS````e````cur````e````Scor````e````ControlStat````e````Updat````e````[]>] [-D````e````pr````e````cat````e````d] [-Id <String>]
+ [-Impl````e````m````e````ntationCost <String>] [-LastModifi````e````dDat````e````Tim````e```` <Dat````e````Tim````e````>] [-MaxScor````e```` <Doubl````e````>] [-Rank <Int32>]
+ [-R````e````m````e````diation <String>] [-R````e````m````e````diationImpact <String>] [-S````e````rvic````e```` <String>] [-Thr````e````ats <String[]>]
+ [-Ti````e````r <String>] [-Titl````e```` <String>] [-Us````e````rImpact <String>]
+ [-V````e````ndorInformation <IMicrosoftGraphS````e````curityV````e````ndorInformation>] [-WhatIf] [-Confirm] [<CommonParam````e````t````e````rs>]
 ```
 
-## DESCRIPTION
-Create new navigation property to secureScoreControlProfiles for security
+### Cr````e````at````e````1
+```
+N````e````w-MgS````e````curityS````e````cur````e````Scor````e````ControlProfil````e```` -BodyParam````e````t````e````r <IMicrosoftGraphS````e````cur````e````Scor````e````ControlProfil````e````> [-WhatIf]
+ [-Confirm] [<CommonParam````e````t````e````rs>]
+```
 
-## EXAMPLES
+## D````e````SCRIPTION
+Cr````e````at````e```` n````e````w navigation prop````e````rty to s````e````cur````e````Scor````e````ControlProfil````e````s for s````e````curity
 
-## PARAMETERS
+## ````e````XAMPL````e````S
 
-### -ActionType
-Control action type (Config, Review, Behavior).
+## PARAM````e````T````e````RS
+
+### -ActionTyp````e````
+Control action typ````e```` (Config, R````e````vi````e````w, B````e````havior).
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -ActionUrl
-URL to where the control can be actioned.
+URL to wh````e````r````e```` th````e```` control can b````e```` action````e````d.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalProp````e````rti````e````s
+Additional Param````e````t````e````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: Hashtabl````e````
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -AzureTenantId
-GUID string for tenant ID.
+### -Azur````e````T````e````nantId
+GUID string for t````e````nant ID.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -BodyParameter
-secureScoreControlProfile
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam````e````t````e````r
+s````e````cur````e````Scor````e````ControlProfil````e````
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for BODYPARAM````e````T````e````R prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphSecureScoreControlProfile
-Parameter Sets: Create1
-Aliases:
+Typ````e````: IMicrosoftGraphS````e````cur````e````Scor````e````ControlProfil````e````
+Param````e````t````e````r S````e````ts: Cr````e````at````e````1
+Alias````e````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R````e````quir````e````d: Tru````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Tru````e```` (ByValu````e````)
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -ComplianceInformation
-The collection of compliance information associated with secure score control
-To construct, please use Get-Help -Online and see NOTES section for COMPLIANCEINFORMATION properties and create a hash table.
+### -Complianc````e````Information
+Th````e```` coll````e````ction of complianc````e```` information associat````e````d with s````e````cur````e```` scor````e```` control
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for COMPLIANC````e````INFORMATION prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphComplianceInformation[]
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: IMicrosoftGraphComplianc````e````Information[]
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -ControlCategory
-Control action category (Account, Data, Device, Apps, Infrastructure).
+### -ControlCat````e````gory
+Control action cat````e````gory (Account, Data, D````e````vic````e````, Apps, Infrastructur````e````).
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -ControlStateUpdates
-Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
-To construct, please use Get-Help -Online and see NOTES section for CONTROLSTATEUPDATES properties and create a hash table.
+### -ControlStat````e````Updat````e````s
+Flag to indicat````e```` wh````e````r````e```` th````e```` t````e````nant has mark````e````d a control (ignor````e````, thirdParty, r````e````vi````e````w````e````d) (supports updat````e````).
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for CONTROLSTAT````e````UPDAT````e````S prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphSecureScoreControlStateUpdate[]
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: IMicrosoftGraphS````e````cur````e````Scor````e````ControlStat````e````Updat````e````[]
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Deprecated
-Flag to indicate if a control is depreciated.
+### -D````e````pr````e````cat````e````d
+Flag to indicat````e```` if a control is d````e````pr````e````ciat````e````d.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -ImplementationCost
-Resource cost of implemmentating control (low, moderate, high).
+### -Impl````e````m````e````ntationCost
+R````e````sourc````e```` cost of impl````e````mm````e````ntating control (low, mod````e````rat````e````, high).
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -LastModifiedDateTime
-Time at which the control profile entity was last modified.
-The Timestamp type represents date and time
+### -LastModifi````e````dDat````e````Tim````e````
+Tim````e```` at which th````e```` control profil````e```` ````e````ntity was last modifi````e````d.
+Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e````
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: Dat````e````Tim````e````
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -MaxScore
-Current obtained max score on specified date.
+### -MaxScor````e````
+Curr````e````nt obtain````e````d max scor````e```` on sp````e````cifi````e````d dat````e````.
 
 ```yaml
-Type: Double
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: Doubl````e````
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Rank
 Microsoft's stack ranking of control.
 
 ```yaml
-Type: Int32
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: Int32
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Remediation
-Description of what the control will help remediate.
+### -R````e````m````e````diation
+D````e````scription of what th````e```` control will h````e````lp r````e````m````e````diat````e````.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -RemediationImpact
-Description of the impact on users of the remediation.
+### -R````e````m````e````diationImpact
+D````e````scription of th````e```` impact on us````e````rs of th````e```` r````e````m````e````diation.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Service
-Service that owns the control (Exchange, Sharepoint, Azure AD).
+### -S````e````rvic````e````
+S````e````rvic````e```` that owns th````e```` control (````e````xchang````e````, Shar````e````point, Azur````e```` AD).
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Threats
-List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
+### -Thr````e````ats
+List of thr````e````ats th````e```` control mitigat````e````s (accountBr````e````ach,dataD````e````l````e````tion,data````e````xfiltration,dataSpillag````e````,````e````l````e````vationOfPrivil````e````g````e````,maliciousInsid````e````r,passwordCracking,phishingOrWhaling,spoofing).
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String[]
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Tier
-Control tier (Core, Defense in Depth, Advanced.)
+### -Ti````e````r
+Control ti````e````r (Cor````e````, D````e````f````e````ns````e```` in D````e````pth, Advanc````e````d.)
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Title
-Title of the control.
+### -Titl````e````
+Titl````e```` of th````e```` control.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -UserImpact
-User impact of implementing control (low, moderate, high).
+### -Us````e````rImpact
+Us````e````r impact of impl````e````m````e````nting control (low, mod````e````rat````e````, high).
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -VendorInformation
-securityVendorInformation
-To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
+### -V````e````ndorInformation
+s````e````curityV````e````ndorInformation
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for V````e````NDORINFORMATION prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: IMicrosoftGraphS````e````curityV````e````ndorInformation
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b````e````for````e```` running th````e```` cmdl````e````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: (All)
+Alias````e````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ````e````n if th````e```` cmdl````e````t runs.
+Th````e```` cmdl````e````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: (All)
+Alias````e````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam````e````t````e````rs
+This cmdl````e````t supports th````e```` common param````e````t````e````rs: -D````e````bug, -````e````rrorAction, -````e````rrorVariabl````e````, -InformationAction, -InformationVariabl````e````, -OutVariabl````e````, -OutBuff````e````r, -Pip````e````lin````e````Variabl````e````, -V````e````rbos````e````, -WarningAction, and -WarningVariabl````e````. For mor````e```` information, s````e````````e```` [about_CommonParam````e````t````e````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
+### Microsoft.Graph.Pow````e````rSh````e````ll.Mod````e````ls.IMicrosoftGraphS````e````cur````e````Scor````e````ControlProfil````e````
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
-## NOTES
+### Microsoft.Graph.Pow````e````rSh````e````ll.Mod````e````ls.IMicrosoftGraphS````e````cur````e````Scor````e````ControlProfil````e````
+## NOT````e````S
 
-ALIASES
+ALIAS````e````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL````e````X PARAM````e````T````e````R PROP````e````RTI````e````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr````e````at````e```` th````e```` param````e````t````e````rs d````e````scrib````e````d b````e````low, construct a hash tabl````e```` containing th````e```` appropriat````e```` prop````e````rti````e````s. For information on hash tabl````e````s, run G````e````t-H````e````lp about_Hash_Tabl````e````s.
 
 
-BODYPARAMETER <IMicrosoftGraphSecureScoreControlProfile>: secureScoreControlProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM````e````T````e````R <IMicrosoftGraphS````e````cur````e````Scor````e````ControlProfil````e````>: s````e````cur````e````Scor````e````ControlProfil````e````
+  - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
   - `[Id <String>]`: 
-  - `[ActionType <String>]`: Control action type (Config, Review, Behavior).
-  - `[ActionUrl <String>]`: URL to where the control can be actioned.
-  - `[AzureTenantId <String>]`: GUID string for tenant ID.
-  - `[ComplianceInformation <IMicrosoftGraphComplianceInformation[]>]`: The collection of compliance information associated with secure score control
-    - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: Collection of the certification controls associated with certification
-      - `[Name <String>]`: Certification control name
-      - `[Url <String>]`: URL for the Microsoft Service Trust Portal
-    - `[CertificationName <String>]`: Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)
-  - `[ControlCategory <String>]`: Control action category (Account, Data, Device, Apps, Infrastructure).
-  - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>]`: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
-    - `[AssignedTo <String>]`: Assigns the control to the user who will take the action.
-    - `[Comment <String>]`: Provides optional comment about the control.
-    - `[State <String>]`: State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).
-    - `[UpdatedBy <String>]`: ID of the user who updated tenant state.
-    - `[UpdatedDateTime <DateTime?>]`: Time at which the control state was updated.
-  - `[Deprecated <Boolean?>]`: Flag to indicate if a control is depreciated.
-  - `[ImplementationCost <String>]`: Resource cost of implemmentating control (low, moderate, high).
-  - `[LastModifiedDateTime <DateTime?>]`: Time at which the control profile entity was last modified. The Timestamp type represents date and time
-  - `[MaxScore <Double?>]`: Current obtained max score on specified date.
+  - `[ActionTyp````e```` <String>]`: Control action typ````e```` (Config, R````e````vi````e````w, B````e````havior).
+  - `[ActionUrl <String>]`: URL to wh````e````r````e```` th````e```` control can b````e```` action````e````d.
+  - `[Azur````e````T````e````nantId <String>]`: GUID string for t````e````nant ID.
+  - `[Complianc````e````Information <IMicrosoftGraphComplianc````e````Information[]>]`: Th````e```` coll````e````ction of complianc````e```` information associat````e````d with s````e````cur````e```` scor````e```` control
+    - `[C````e````rtificationControls <IMicrosoftGraphC````e````rtificationControl[]>]`: Coll````e````ction of th````e```` c````e````rtification controls associat````e````d with c````e````rtification
+      - `[Nam````e```` <String>]`: C````e````rtification control nam````e````
+      - `[Url <String>]`: URL for th````e```` Microsoft S````e````rvic````e```` Trust Portal
+    - `[C````e````rtificationNam````e```` <String>]`: Complianc````e```` c````e````rtification nam````e```` (for ````e````xampl````e````, ISO 27018:2014, GDPR, F````e````dRAMP, NIST 800-171)
+  - `[ControlCat````e````gory <String>]`: Control action cat````e````gory (Account, Data, D````e````vic````e````, Apps, Infrastructur````e````).
+  - `[ControlStat````e````Updat````e````s <IMicrosoftGraphS````e````cur````e````Scor````e````ControlStat````e````Updat````e````[]>]`: Flag to indicat````e```` wh````e````r````e```` th````e```` t````e````nant has mark````e````d a control (ignor````e````, thirdParty, r````e````vi````e````w````e````d) (supports updat````e````).
+    - `[Assign````e````dTo <String>]`: Assigns th````e```` control to th````e```` us````e````r who will tak````e```` th````e```` action.
+    - `[Comm````e````nt <String>]`: Provid````e````s optional comm````e````nt about th````e```` control.
+    - `[Stat````e```` <String>]`: Stat````e```` of th````e```` control, which can b````e```` modifi````e````d via a PATCH command (for ````e````xampl````e````, ignor````e````d, thirdParty).
+    - `[Updat````e````dBy <String>]`: ID of th````e```` us````e````r who updat````e````d t````e````nant stat````e````.
+    - `[Updat````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` control stat````e```` was updat````e````d.
+  - `[D````e````pr````e````cat````e````d <Bool````e````an?>]`: Flag to indicat````e```` if a control is d````e````pr````e````ciat````e````d.
+  - `[Impl````e````m````e````ntationCost <String>]`: R````e````sourc````e```` cost of impl````e````mm````e````ntating control (low, mod````e````rat````e````, high).
+  - `[LastModifi````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` control profil````e```` ````e````ntity was last modifi````e````d. Th````e```` Tim````e````stamp typ````e```` r````e````pr````e````s````e````nts dat````e```` and tim````e````
+  - `[MaxScor````e```` <Doubl````e````?>]`: Curr````e````nt obtain````e````d max scor````e```` on sp````e````cifi````e````d dat````e````.
   - `[Rank <Int32?>]`: Microsoft's stack ranking of control.
-  - `[Remediation <String>]`: Description of what the control will help remediate.
-  - `[RemediationImpact <String>]`: Description of the impact on users of the remediation.
-  - `[Service <String>]`: Service that owns the control (Exchange, Sharepoint, Azure AD).
-  - `[Threats <String[]>]`: List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
-  - `[Tier <String>]`: Control tier (Core, Defense in Depth, Advanced.)
-  - `[Title <String>]`: Title of the control.
-  - `[UserImpact <String>]`: User impact of implementing control (low, moderate, high).
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
+  - `[R````e````m````e````diation <String>]`: D````e````scription of what th````e```` control will h````e````lp r````e````m````e````diat````e````.
+  - `[R````e````m````e````diationImpact <String>]`: D````e````scription of th````e```` impact on us````e````rs of th````e```` r````e````m````e````diation.
+  - `[S````e````rvic````e```` <String>]`: S````e````rvic````e```` that owns th````e```` control (````e````xchang````e````, Shar````e````point, Azur````e```` AD).
+  - `[Thr````e````ats <String[]>]`: List of thr````e````ats th````e```` control mitigat````e````s (accountBr````e````ach,dataD````e````l````e````tion,data````e````xfiltration,dataSpillag````e````,````e````l````e````vationOfPrivil````e````g````e````,maliciousInsid````e````r,passwordCracking,phishingOrWhaling,spoofing).
+  - `[Ti````e````r <String>]`: Control ti````e````r (Cor````e````, D````e````f````e````ns````e```` in D````e````pth, Advanc````e````d.)
+  - `[Titl````e```` <String>]`: Titl````e```` of th````e```` control.
+  - `[Us````e````rImpact <String>]`: Us````e````r impact of impl````e````m````e````nting control (low, mod````e````rat````e````, high).
+  - `[V````e````ndorInformation <IMicrosoftGraphS````e````curityV````e````ndorInformation>]`: s````e````curityV````e````ndorInformation
+    - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+    - `[Provid````e````r <String>]`: Sp````e````cific provid````e````r (product/s````e````rvic````e```` - not v````e````ndor company); for ````e````xampl````e````, WindowsD````e````f````e````nd````e````rATP.
+    - `[Provid````e````rV````e````rsion <String>]`: V````e````rsion of th````e```` provid````e````r or subprovid````e````r, if it ````e````xists, that g````e````n````e````rat````e````d th````e```` al````e````rt. R````e````quir````e````d
+    - `[SubProvid````e````r <String>]`: Sp````e````cific subprovid````e````r (und````e````r aggr````e````gating provid````e````r); for ````e````xampl````e````, WindowsD````e````f````e````nd````e````rATP.SmartScr````e````````e````n.
+    - `[V````e````ndor <String>]`: Nam````e```` of th````e```` al````e````rt v````e````ndor (for ````e````xampl````e````, Microsoft, D````e````ll, Fir````e````````e````y````e````). R````e````quir````e````d
 
-COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation[]>: The collection of compliance information associated with secure score control
-  - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: Collection of the certification controls associated with certification
-    - `[Name <String>]`: Certification control name
-    - `[Url <String>]`: URL for the Microsoft Service Trust Portal
-  - `[CertificationName <String>]`: Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)
+COMPLIANC````e````INFORMATION <IMicrosoftGraphComplianc````e````Information[]>: Th````e```` coll````e````ction of complianc````e```` information associat````e````d with s````e````cur````e```` scor````e```` control
+  - `[C````e````rtificationControls <IMicrosoftGraphC````e````rtificationControl[]>]`: Coll````e````ction of th````e```` c````e````rtification controls associat````e````d with c````e````rtification
+    - `[Nam````e```` <String>]`: C````e````rtification control nam````e````
+    - `[Url <String>]`: URL for th````e```` Microsoft S````e````rvic````e```` Trust Portal
+  - `[C````e````rtificationNam````e```` <String>]`: Complianc````e```` c````e````rtification nam````e```` (for ````e````xampl````e````, ISO 27018:2014, GDPR, F````e````dRAMP, NIST 800-171)
 
-CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate[]>: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
-  - `[AssignedTo <String>]`: Assigns the control to the user who will take the action.
-  - `[Comment <String>]`: Provides optional comment about the control.
-  - `[State <String>]`: State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).
-  - `[UpdatedBy <String>]`: ID of the user who updated tenant state.
-  - `[UpdatedDateTime <DateTime?>]`: Time at which the control state was updated.
+CONTROLSTAT````e````UPDAT````e````S <IMicrosoftGraphS````e````cur````e````Scor````e````ControlStat````e````Updat````e````[]>: Flag to indicat````e```` wh````e````r````e```` th````e```` t````e````nant has mark````e````d a control (ignor````e````, thirdParty, r````e````vi````e````w````e````d) (supports updat````e````).
+  - `[Assign````e````dTo <String>]`: Assigns th````e```` control to th````e```` us````e````r who will tak````e```` th````e```` action.
+  - `[Comm````e````nt <String>]`: Provid````e````s optional comm````e````nt about th````e```` control.
+  - `[Stat````e```` <String>]`: Stat````e```` of th````e```` control, which can b````e```` modifi````e````d via a PATCH command (for ````e````xampl````e````, ignor````e````d, thirdParty).
+  - `[Updat````e````dBy <String>]`: ID of th````e```` us````e````r who updat````e````d t````e````nant stat````e````.
+  - `[Updat````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e```` at which th````e```` control stat````e```` was updat````e````d.
 
-VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
+V````e````NDORINFORMATION <IMicrosoftGraphS````e````curityV````e````ndorInformation>: s````e````curityV````e````ndorInformation
+  - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+  - `[Provid````e````r <String>]`: Sp````e````cific provid````e````r (product/s````e````rvic````e```` - not v````e````ndor company); for ````e````xampl````e````, WindowsD````e````f````e````nd````e````rATP.
+  - `[Provid````e````rV````e````rsion <String>]`: V````e````rsion of th````e```` provid````e````r or subprovid````e````r, if it ````e````xists, that g````e````n````e````rat````e````d th````e```` al````e````rt. R````e````quir````e````d
+  - `[SubProvid````e````r <String>]`: Sp````e````cific subprovid````e````r (und````e````r aggr````e````gating provid````e````r); for ````e````xampl````e````, WindowsD````e````f````e````nd````e````rATP.SmartScr````e````````e````n.
+  - `[V````e````ndor <String>]`: Nam````e```` of th````e```` al````e````rt v````e````ndor (for ````e````xampl````e````, Microsoft, D````e````ll, Fir````e````````e````y````e````). R````e````quir````e````d
 
-## RELATED LINKS
+## R````e````LAT````e````D LINKS
