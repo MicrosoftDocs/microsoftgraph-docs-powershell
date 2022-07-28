@@ -1,139 +1,139 @@
-﻿---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
-Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontactphoto
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.P`e`rsonalContacts-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.P`e`rsonalContacts
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.p`e`rsonalcontacts/g`e`t-mgus`e`rcontactfold`e`rcontactphoto
+sch`e`ma: 2.0.0
 ---
 
-# Get-MgUserContactFolderContactPhoto
+# G`e`t-MgUs`e`rContactFold`e`rContactPhoto
 
 ## SYNOPSIS
-Optional contact picture.
-You can get or set a photo for a contact.
+Optional contact pictur`e`.
+You can g`e`t or s`e`t a photo for a contact.
 
 ## SYNTAX
 
-### Get (Default)
+### G`e`t (D`e`fault)
 ```
-Get-MgUserContactFolderContactPhoto -ContactFolderId <String> -ContactId <String> -UserId <String>
- [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgUserContactFolderContactPhoto -InputObject <IPersonalContactsIdentity> [-Property <String[]>]
- [<CommonParameters>]
+G`e`t-MgUs`e`rContactFold`e`rContactPhoto -ContactFold`e`rId <String> -ContactId <String> -Us`e`rId <String>
+ [-Prop`e`rty <String[]>] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Optional contact picture.
-You can get or set a photo for a contact.
+### G`e`tViaId`e`ntity
+```
+G`e`t-MgUs`e`rContactFold`e`rContactPhoto -InputObj`e`ct <IP`e`rsonalContactsId`e`ntity> [-Prop`e`rty <String[]>]
+ [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+Optional contact pictur`e`.
+You can g`e`t or s`e`t a photo for a contact.
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -ContactFolderId
-key: id of contactFolder
+## PARAM`e`T`e`RS
+
+### -ContactFold`e`rId
+k`e`y: id of contactFold`e`r
 
 ```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -ContactId
-key: id of contact
+k`e`y: id of contact
 
 ```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IPersonalContactsIdentity
-Parameter Sets: GetViaIdentity
-Aliases:
+Typ`e`: IP`e`rsonalContactsId`e`ntity
+Param`e`t`e`r S`e`ts: G`e`tViaId`e`ntity
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Property
-Select properties to be returned
+### -Prop`e`rty
+S`e`l`e`ct prop`e`rti`e`s to b`e` r`e`turn`e`d
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: S`e`l`e`ct
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -UserId
-key: id of user
+### -Us`e`rId
+k`e`y: id of us`e`r
 
 ```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IP`e`rsonalContactsId`e`ntity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-## NOTES
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IMicrosoftGraphProfil`e`Photo
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
-  - `[ContactFolderId <String>]`: key: id of contactFolder
-  - `[ContactFolderId1 <String>]`: key: id of contactFolder
-  - `[ContactId <String>]`: key: id of contact
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[UserId <String>]`: key: id of user
+INPUTOBJ`e`CT <IP`e`rsonalContactsId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[ContactFold`e`rId <String>]`: k`e`y: id of contactFold`e`r
+  - `[ContactFold`e`rId1 <String>]`: k`e`y: id of contactFold`e`r
+  - `[ContactId <String>]`: k`e`y: id of contact
+  - `[`e`xt`e`nsionId <String>]`: k`e`y: id of `e`xt`e`nsion
+  - `[MultiValu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rtyId <String>]`: k`e`y: id of multiValu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rty
+  - `[Singl`e`Valu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rtyId <String>]`: k`e`y: id of singl`e`Valu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rty
+  - `[Us`e`rId <String>]`: k`e`y: id of us`e`r
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
