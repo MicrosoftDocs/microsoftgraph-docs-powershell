@@ -1,66 +1,66 @@
-﻿---
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscalendarview
+---
+external help file: Micr``````o``````s``````o``````ft.Graph.B``````o````````````o``````kings-help.xml
+M``````o``````dule Name: Micr``````o``````s``````o``````ft.Graph.B``````o````````````o``````kings
+``````o``````nline versi``````o``````n: https://d``````o``````cs.micr``````o``````s``````o``````ft.c``````o``````m/en-us/p``````o``````wershell/m``````o``````dule/micr``````o``````s``````o``````ft.graph.b``````o````````````o``````kings/new-mgb``````o````````````o``````kingbusinesscalendarview
 schema: 2.0.0
 ---
 
-# New-MgBookingBusinessCalendarView
+# New-MgB``````o````````````o``````kingBusinessCalendarView
 
-## SYNOPSIS
-Create new navigation property to calendarView for solutions
+## SYN``````o``````PSIS
+Create new navigati``````o``````n pr``````o``````perty t``````o`````` calendarView f``````o``````r s``````o``````luti``````o``````ns
 
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
 ```
-New-MgBookingBusinessCalendarView -BookingBusinessId <String> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-CustomerTimeZone <String>]
- [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-Duration <TimeSpan>]
- [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-FilledAttendeesCount <Int32>] [-Id <String>]
- [-IsLocationOnline] [-JoinWebUrl <String>] [-MaximumAttendeesCount <Int32>] [-OptOutOfCustomerEmail]
- [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>] [-PriceType <BookingPriceType>]
- [-Reminders <IMicrosoftGraphBookingReminder1[]>] [-SelfServiceAppointmentId <String>] [-ServiceId <String>]
- [-ServiceLocation <IMicrosoftGraphLocation1>] [-ServiceName <String>] [-ServiceNotes <String>]
- [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgB``````o````````````o``````kingBusinessCalendarView -B``````o````````````o``````kingBusinessId <String> [-Additi``````o``````nalInf``````o``````rmati``````o``````n <String>]
+ [-Additi``````o``````nalPr``````o``````perties <Hashtable>] [-Cust``````o``````merTimeZ``````o``````ne <String>]
+ [-Cust``````o``````mers <IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingCust``````o``````merInf``````o``````rmati``````o``````nBase[]>] [-Durati``````o``````n <TimeSpan>]
+ [-EndDateTime <IMicr``````o``````s``````o``````ftGraphDateTimeZ``````o``````ne>] [-FilledAttendeesC``````o``````unt <Int32>] [-Id <String>]
+ [-IsL``````o``````cati``````o``````n``````o``````nline] [-J``````o``````inWebUrl <String>] [-MaximumAttendeesC``````o``````unt <Int32>] [-``````o``````pt``````o``````ut``````o``````fCust``````o``````merEmail]
+ [-P``````o``````stBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <D``````o``````uble>] [-PriceType <B``````o````````````o``````kingPriceType>]
+ [-Reminders <IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingReminder1[]>] [-SelfServiceApp``````o``````intmentId <String>] [-ServiceId <String>]
+ [-ServiceL``````o``````cati``````o``````n <IMicr``````o``````s``````o``````ftGraphL``````o``````cati``````o``````n1>] [-ServiceName <String>] [-ServiceN``````o``````tes <String>]
+ [-SmsN``````o``````tificati``````o``````nsEnabled] [-StaffMemberIds <String[]>] [-StartDateTime <IMicr``````o``````s``````o``````ftGraphDateTimeZ``````o``````ne>]
+ [-WhatIf] [-C``````o``````nfirm] [<C``````o``````mm``````o``````nParameters>]
 ```
 
 ### Create1
 ```
-New-MgBookingBusinessCalendarView -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingAppointment1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgB``````o````````````o``````kingBusinessCalendarView -B``````o````````````o``````kingBusinessId <String>
+ -B``````o``````dyParameter <IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingApp``````o``````intment1> [-WhatIf] [-C``````o``````nfirm] [<C``````o``````mm``````o``````nParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-New-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-CustomerTimeZone <String>]
- [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-Duration <TimeSpan>]
- [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-FilledAttendeesCount <Int32>] [-Id <String>]
- [-IsLocationOnline] [-JoinWebUrl <String>] [-MaximumAttendeesCount <Int32>] [-OptOutOfCustomerEmail]
- [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>] [-PriceType <BookingPriceType>]
- [-Reminders <IMicrosoftGraphBookingReminder1[]>] [-SelfServiceAppointmentId <String>] [-ServiceId <String>]
- [-ServiceLocation <IMicrosoftGraphLocation1>] [-ServiceName <String>] [-ServiceNotes <String>]
- [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgB``````o````````````o``````kingBusinessCalendarView -Input``````o``````bject <IB``````o````````````o``````kingsIdentity> [-Additi``````o``````nalInf``````o``````rmati``````o``````n <String>]
+ [-Additi``````o``````nalPr``````o``````perties <Hashtable>] [-Cust``````o``````merTimeZ``````o``````ne <String>]
+ [-Cust``````o``````mers <IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingCust``````o``````merInf``````o``````rmati``````o``````nBase[]>] [-Durati``````o``````n <TimeSpan>]
+ [-EndDateTime <IMicr``````o``````s``````o``````ftGraphDateTimeZ``````o``````ne>] [-FilledAttendeesC``````o``````unt <Int32>] [-Id <String>]
+ [-IsL``````o``````cati``````o``````n``````o``````nline] [-J``````o``````inWebUrl <String>] [-MaximumAttendeesC``````o``````unt <Int32>] [-``````o``````pt``````o``````ut``````o``````fCust``````o``````merEmail]
+ [-P``````o``````stBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <D``````o``````uble>] [-PriceType <B``````o````````````o``````kingPriceType>]
+ [-Reminders <IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingReminder1[]>] [-SelfServiceApp``````o``````intmentId <String>] [-ServiceId <String>]
+ [-ServiceL``````o``````cati``````o``````n <IMicr``````o``````s``````o``````ftGraphL``````o``````cati``````o``````n1>] [-ServiceName <String>] [-ServiceN``````o``````tes <String>]
+ [-SmsN``````o``````tificati``````o``````nsEnabled] [-StaffMemberIds <String[]>] [-StartDateTime <IMicr``````o``````s``````o``````ftGraphDateTimeZ``````o``````ne>]
+ [-WhatIf] [-C``````o``````nfirm] [<C``````o``````mm``````o``````nParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
-New-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingAppointment1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgB``````o````````````o``````kingBusinessCalendarView -Input``````o``````bject <IB``````o````````````o``````kingsIdentity>
+ -B``````o``````dyParameter <IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingApp``````o``````intment1> [-WhatIf] [-C``````o``````nfirm] [<C``````o``````mm``````o``````nParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to calendarView for solutions
+## DESCRIPTI``````o``````N
+Create new navigati``````o``````n pr``````o``````perty t``````o`````` calendarView f``````o``````r s``````o``````luti``````o``````ns
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalInformation
-Additional information that is sent to the customer when an appointment is confirmed.
+### -Additi``````o``````nalInf``````o``````rmati``````o``````n
+Additi``````o``````nal inf``````o``````rmati``````o``````n that is sent t``````o`````` the cust``````o``````mer when an app``````o``````intment is c``````o``````nfirmed.
 
 ```yaml
 Type: String
@@ -68,14 +68,14 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -Additi``````o``````nalPr``````o``````perties
+Additi``````o``````nal Parameters
 
 ```yaml
 Type: Hashtable
@@ -83,30 +83,30 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-Represents a booked appointment of a service by a customer in a business.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -B``````o``````dyParameter
+Represents a b``````o````````````o``````ked app``````o``````intment ``````o``````f a service by a cust``````o``````mer in a business.
+T``````o`````` c``````o``````nstruct, please use Get-Help -``````o``````nline and see N``````o``````TES secti``````o``````n f``````o``````r B``````o``````DYPARAMETER pr``````o``````perties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBookingAppointment1
+Type: IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingApp``````o``````intment1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -BookingBusinessId
-key: id of bookingBusiness
+### -B``````o````````````o``````kingBusinessId
+key: id ``````o``````f b``````o````````````o``````kingBusiness
 
 ```yaml
 Type: String
@@ -114,32 +114,32 @@ Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Customers
-It lists down the customer properties for an appointment.
-An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment.
-Optional.
+### -Cust``````o``````mers
+It lists d``````o``````wn the cust``````o``````mer pr``````o``````perties f``````o``````r an app``````o``````intment.
+An app``````o``````intment will c``````o``````ntain a list ``````o``````f cust``````o``````mer inf``````o``````rmati``````o``````n and each unit will indicate the pr``````o``````perties ``````o``````f a cust``````o``````mer wh``````o`````` is part ``````o``````f that app``````o``````intment.
+``````o``````pti``````o``````nal.
 
 ```yaml
-Type: IMicrosoftGraphBookingCustomerInformationBase[]
+Type: IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingCust``````o``````merInf``````o``````rmati``````o``````nBase[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CustomerTimeZone
-The time zone of the customer.
-For a list of possible values, see dateTimeTimeZone.
+### -Cust``````o``````merTimeZ``````o``````ne
+The time z``````o``````ne ``````o``````f the cust``````o``````mer.
+F``````o``````r a list ``````o``````f p``````o``````ssible values, see dateTimeTimeZ``````o``````ne.
 
 ```yaml
 Type: String
@@ -147,14 +147,14 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Duration
-The length of the appointment, denoted in ISO8601 format.
+### -Durati``````o``````n
+The length ``````o``````f the app``````o``````intment, den``````o``````ted in IS``````o``````8601 f``````o``````rmat.
 
 ```yaml
 Type: TimeSpan
@@ -162,30 +162,30 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -EndDateTime
-dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for ENDDATETIME properties and create a hash table.
+dateTimeTimeZ``````o``````ne
+T``````o`````` c``````o``````nstruct, please use Get-Help -``````o``````nline and see N``````o``````TES secti``````o``````n f``````o``````r ENDDATETIME pr``````o``````perties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: IMicr``````o``````s``````o``````ftGraphDateTimeZ``````o``````ne
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -FilledAttendeesCount
-The current number of customers in the appointment.
+### -FilledAttendeesC``````o``````unt
+The current number ``````o``````f cust``````o``````mers in the app``````o``````intment.
 
 ```yaml
 Type: Int32
@@ -193,8 +193,8 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -208,30 +208,30 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
+### -Input``````o``````bject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+T``````o`````` c``````o``````nstruct, please use Get-Help -``````o``````nline and see N``````o``````TES secti``````o``````n f``````o``````r INPUT``````o``````BJECT pr``````o``````perties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
+Type: IB``````o````````````o``````kingsIdentity
 Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IsLocationOnline
-True indicates that the appointment will be held online.
+### -IsL``````o``````cati``````o``````n``````o``````nline
+True indicates that the app``````o``````intment will be held ``````o``````nline.
 Default value is false.
 
 ```yaml
@@ -240,14 +240,14 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -JoinWebUrl
-The URL of the online meeting for the appointment.
+### -J``````o``````inWebUrl
+The URL ``````o``````f the ``````o``````nline meeting f``````o``````r the app``````o``````intment.
 
 ```yaml
 Type: String
@@ -255,16 +255,16 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MaximumAttendeesCount
-The maximum number of customers allowed in an appointment.
-If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
-To create a customer, use the Create bookingCustomer operation.
+### -MaximumAttendeesC``````o``````unt
+The maximum number ``````o``````f cust``````o``````mers all``````o``````wed in an app``````o``````intment.
+If maximumAttendeesC``````o``````unt ``````o``````f the service is greater than 1, pass valid cust``````o``````mer IDs while creating ``````o``````r updating an app``````o``````intment.
+T``````o`````` create a cust``````o``````mer, use the Create b``````o````````````o``````kingCust``````o``````mer ``````o``````perati``````o``````n.
 
 ```yaml
 Type: Int32
@@ -272,14 +272,14 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OptOutOfCustomerEmail
-True indicates that the bookingCustomer for this appointment does not wish to receive a confirmation for this appointment.
+### -``````o``````pt``````o``````ut``````o``````fCust``````o``````merEmail
+True indicates that the b``````o````````````o``````kingCust``````o``````mer f``````o``````r this app``````o``````intment d``````o``````es n``````o``````t wish t``````o`````` receive a c``````o``````nfirmati``````o``````n f``````o``````r this app``````o``````intment.
 
 ```yaml
 Type: SwitchParameter
@@ -287,15 +287,15 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PostBuffer
-The amount of time to reserve after the appointment ends, for cleaning up, as an example.
-The value is expressed in ISO8601 format.
+### -P``````o``````stBuffer
+The am``````o``````unt ``````o``````f time t``````o`````` reserve after the app``````o``````intment ends, f``````o``````r cleaning up, as an example.
+The value is expressed in IS``````o``````8601 f``````o``````rmat.
 
 ```yaml
 Type: TimeSpan
@@ -303,15 +303,15 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -PreBuffer
-The amount of time to reserve before the appointment begins, for preparation, as an example.
-The value is expressed in ISO8601 format.
+The am``````o``````unt ``````o``````f time t``````o`````` reserve bef``````o``````re the app``````o``````intment begins, f``````o``````r preparati``````o``````n, as an example.
+The value is expressed in IS``````o``````8601 f``````o``````rmat.
 
 ```yaml
 Type: TimeSpan
@@ -319,61 +319,61 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Price
-The regular price for an appointment for the specified bookingService.
+The regular price f``````o``````r an app``````o``````intment f``````o``````r the specified b``````o````````````o``````kingService.
 
 ```yaml
-Type: Double
+Type: D``````o``````uble
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -PriceType
-Represents the type of pricing of a booking service.
+Represents the type ``````o``````f pricing ``````o``````f a b``````o````````````o``````king service.
 
 ```yaml
-Type: BookingPriceType
+Type: B``````o````````````o``````kingPriceType
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Reminders
-The collection of customer reminders sent for this appointment.
-The value of this property is available only when reading this bookingAppointment by its ID.
-To construct, please use Get-Help -Online and see NOTES section for REMINDERS properties and create a hash table.
+The c``````o``````llecti``````o``````n ``````o``````f cust``````o``````mer reminders sent f``````o``````r this app``````o``````intment.
+The value ``````o``````f this pr``````o``````perty is available ``````o``````nly when reading this b``````o````````````o``````kingApp``````o``````intment by its ID.
+T``````o`````` c``````o``````nstruct, please use Get-Help -``````o``````nline and see N``````o``````TES secti``````o``````n f``````o``````r REMINDERS pr``````o``````perties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBookingReminder1[]
+Type: IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingReminder1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SelfServiceAppointmentId
-An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
+### -SelfServiceApp``````o``````intmentId
+An additi``````o``````nal tracking ID f``````o``````r the app``````o``````intment, if the app``````o``````intment has been created directly by the cust``````o``````mer ``````o``````n the scheduling page, as ``````o``````pp``````o``````sed t``````o`````` by a staff member ``````o``````n the behalf ``````o``````f the cust``````o``````mer.
 
 ```yaml
 Type: String
@@ -381,14 +381,14 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -ServiceId
-The ID of the bookingService associated with this appointment.
+The ID ``````o``````f the b``````o````````````o``````kingService ass``````o``````ciated with this app``````o``````intment.
 
 ```yaml
 Type: String
@@ -396,31 +396,31 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ServiceLocation
-location
-To construct, please use Get-Help -Online and see NOTES section for SERVICELOCATION properties and create a hash table.
+### -ServiceL``````o``````cati``````o``````n
+l``````o``````cati``````o``````n
+T``````o`````` c``````o``````nstruct, please use Get-Help -``````o``````nline and see N``````o``````TES secti``````o``````n f``````o``````r SERVICEL``````o``````CATI``````o``````N pr``````o``````perties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocation1
+Type: IMicr``````o``````s``````o``````ftGraphL``````o``````cati``````o``````n1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -ServiceName
-The name of the bookingService associated with this appointment.This property is optional when creating a new appointment.
-If not specified, it is computed from the service associated with the appointment by the serviceId property.
+The name ``````o``````f the b``````o````````````o``````kingService ass``````o``````ciated with this app``````o``````intment.This pr``````o``````perty is ``````o``````pti``````o``````nal when creating a new app``````o``````intment.
+If n``````o``````t specified, it is c``````o``````mputed fr``````o``````m the service ass``````o``````ciated with the app``````o``````intment by the serviceId pr``````o``````perty.
 
 ```yaml
 Type: String
@@ -428,15 +428,15 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ServiceNotes
-Notes from a bookingStaffMember.
-The value of this property is available only when reading this bookingAppointment by its ID.
+### -ServiceN``````o``````tes
+N``````o``````tes fr``````o``````m a b``````o````````````o``````kingStaffMember.
+The value ``````o``````f this pr``````o``````perty is available ``````o``````nly when reading this b``````o````````````o``````kingApp``````o``````intment by its ID.
 
 ```yaml
 Type: String
@@ -444,14 +444,14 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SmsNotificationsEnabled
-True indicates SMS notifications will be sent to the customers for the appointment.
+### -SmsN``````o``````tificati``````o``````nsEnabled
+True indicates SMS n``````o``````tificati``````o``````ns will be sent t``````o`````` the cust``````o``````mers f``````o``````r the app``````o``````intment.
 Default value is false.
 
 ```yaml
@@ -460,14 +460,14 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -StaffMemberIds
-The ID of each bookingStaffMember who is scheduled in this appointment.
+The ID ``````o``````f each b``````o````````````o``````kingStaffMember wh``````o`````` is scheduled in this app``````o``````intment.
 
 ```yaml
 Type: String[]
@@ -475,30 +475,30 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for STARTDATETIME properties and create a hash table.
+dateTimeTimeZ``````o``````ne
+T``````o`````` c``````o``````nstruct, please use Get-Help -``````o``````nline and see N``````o``````TES secti``````o``````n f``````o``````r STARTDATETIME pr``````o``````perties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: IMicr``````o``````s``````o``````ftGraphDateTimeZ``````o``````ne
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -C``````o``````nfirm
+Pr``````o``````mpts y``````o``````u f``````o``````r c``````o``````nfirmati``````o``````n bef``````o``````re running the cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -506,15 +506,15 @@ Parameter Sets: (All)
 Aliases: cf
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Sh``````o``````ws what w``````o``````uld happen if the cmdlet runs.
+The cmdlet is n``````o``````t run.
 
 ```yaml
 Type: SwitchParameter
@@ -522,132 +522,132 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
+P``````o``````siti``````o``````n: Named
+Default value: N``````o``````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### C``````o``````mm``````o``````nParameters
+This cmdlet supp``````o``````rts the c``````o``````mm``````o``````n parameters: -Debug, -Err``````o``````rActi``````o``````n, -Err``````o``````rVariable, -Inf``````o``````rmati``````o``````nActi``````o``````n, -Inf``````o``````rmati``````o``````nVariable, -``````o``````utVariable, -``````o``````utBuffer, -PipelineVariable, -Verb``````o``````se, -WarningActi``````o``````n, and -WarningVariable. F``````o``````r m``````o``````re inf``````o``````rmati``````o``````n, see [ab``````o``````ut_C``````o``````mm``````o``````nParameters](http://g``````o``````.micr``````o``````s``````o``````ft.c``````o``````m/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingAppointment1
-## OUTPUTS
+### Micr``````o``````s``````o``````ft.Graph.P``````o``````werShell.M``````o``````dels.IB``````o````````````o``````kingsIdentity
+### Micr``````o``````s``````o``````ft.Graph.P``````o``````werShell.M``````o``````dels.IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingApp``````o``````intment1
+## ``````o``````UTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingAppointment1
-## NOTES
+### Micr``````o``````s``````o``````ft.Graph.P``````o``````werShell.M``````o``````dels.IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingApp``````o``````intment1
+## N``````o``````TES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+C``````o``````MPLEX PARAMETER PR``````o``````PERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+T``````o`````` create the parameters described bel``````o``````w, c``````o``````nstruct a hash table c``````o``````ntaining the appr``````o``````priate pr``````o``````perties. F``````o``````r inf``````o``````rmati``````o``````n ``````o``````n hash tables, run Get-Help ab``````o``````ut_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphBookingAppointment1>: Represents a booked appointment of a service by a customer in a business.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+B``````o``````DYPARAMETER <IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingApp``````o``````intment1>: Represents a b``````o````````````o``````ked app``````o``````intment ``````o``````f a service by a cust``````o``````mer in a business.
+  - `[(Any) <``````o``````bject>]`: This indicates any pr``````o``````perty can be added t``````o`````` this ``````o``````bject.
   - `[Id <String>]`: 
-  - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
-  - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
-  - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
-  - `[Duration <TimeSpan?>]`: The length of the appointment, denoted in ISO8601 format.
-  - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-  - `[FilledAttendeesCount <Int32?>]`: The current number of customers in the appointment.
-  - `[IsLocationOnline <Boolean?>]`: True indicates that the appointment will be held online. Default value is false.
-  - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
-  - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment. If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the Create bookingCustomer operation.
-  - `[OptOutOfCustomerEmail <Boolean?>]`: True indicates that the bookingCustomer for this appointment does not wish to receive a confirmation for this appointment.
-  - `[PostBuffer <TimeSpan?>]`: The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in ISO8601 format.
-  - `[PreBuffer <TimeSpan?>]`: The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in ISO8601 format.
-  - `[Price <Double?>]`: The regular price for an appointment for the specified bookingService.
-  - `[PriceType <BookingPriceType?>]`: Represents the type of pricing of a booking service.
-  - `[Reminders <IMicrosoftGraphBookingReminder1[]>]`: The collection of customer reminders sent for this appointment. The value of this property is available only when reading this bookingAppointment by its ID.
+  - `[Additi``````o``````nalInf``````o``````rmati``````o``````n <String>]`: Additi``````o``````nal inf``````o``````rmati``````o``````n that is sent t``````o`````` the cust``````o``````mer when an app``````o``````intment is c``````o``````nfirmed.
+  - `[Cust``````o``````merTimeZ``````o``````ne <String>]`: The time z``````o``````ne ``````o``````f the cust``````o``````mer. F``````o``````r a list ``````o``````f p``````o``````ssible values, see dateTimeTimeZ``````o``````ne.
+  - `[Cust``````o``````mers <IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingCust``````o``````merInf``````o``````rmati``````o``````nBase[]>]`: It lists d``````o``````wn the cust``````o``````mer pr``````o``````perties f``````o``````r an app``````o``````intment. An app``````o``````intment will c``````o``````ntain a list ``````o``````f cust``````o``````mer inf``````o``````rmati``````o``````n and each unit will indicate the pr``````o``````perties ``````o``````f a cust``````o``````mer wh``````o`````` is part ``````o``````f that app``````o``````intment. ``````o``````pti``````o``````nal.
+  - `[Durati``````o``````n <TimeSpan?>]`: The length ``````o``````f the app``````o``````intment, den``````o``````ted in IS``````o``````8601 f``````o``````rmat.
+  - `[EndDateTime <IMicr``````o``````s``````o``````ftGraphDateTimeZ``````o``````ne>]`: dateTimeTimeZ``````o``````ne
+    - `[(Any) <``````o``````bject>]`: This indicates any pr``````o``````perty can be added t``````o`````` this ``````o``````bject.
+    - `[DateTime <String>]`: A single p``````o``````int ``````o``````f time in a c``````o``````mbined date and time representati``````o``````n ({date}T{time}). F``````o``````r example, '2019-04-16T09:00:00'.
+    - `[TimeZ``````o``````ne <String>]`: Represents a time z``````o``````ne, f``````o``````r example, 'Pacific Standard Time'. See bel``````o``````w f``````o``````r p``````o``````ssible values.
+  - `[FilledAttendeesC``````o``````unt <Int32?>]`: The current number ``````o``````f cust``````o``````mers in the app``````o``````intment.
+  - `[IsL``````o``````cati``````o``````n``````o``````nline <B``````o````````````o``````lean?>]`: True indicates that the app``````o``````intment will be held ``````o``````nline. Default value is false.
+  - `[J``````o``````inWebUrl <String>]`: The URL ``````o``````f the ``````o``````nline meeting f``````o``````r the app``````o``````intment.
+  - `[MaximumAttendeesC``````o``````unt <Int32?>]`: The maximum number ``````o``````f cust``````o``````mers all``````o``````wed in an app``````o``````intment. If maximumAttendeesC``````o``````unt ``````o``````f the service is greater than 1, pass valid cust``````o``````mer IDs while creating ``````o``````r updating an app``````o``````intment. T``````o`````` create a cust``````o``````mer, use the Create b``````o````````````o``````kingCust``````o``````mer ``````o``````perati``````o``````n.
+  - `[``````o``````pt``````o``````ut``````o``````fCust``````o``````merEmail <B``````o````````````o``````lean?>]`: True indicates that the b``````o````````````o``````kingCust``````o``````mer f``````o``````r this app``````o``````intment d``````o``````es n``````o``````t wish t``````o`````` receive a c``````o``````nfirmati``````o``````n f``````o``````r this app``````o``````intment.
+  - `[P``````o``````stBuffer <TimeSpan?>]`: The am``````o``````unt ``````o``````f time t``````o`````` reserve after the app``````o``````intment ends, f``````o``````r cleaning up, as an example. The value is expressed in IS``````o``````8601 f``````o``````rmat.
+  - `[PreBuffer <TimeSpan?>]`: The am``````o``````unt ``````o``````f time t``````o`````` reserve bef``````o``````re the app``````o``````intment begins, f``````o``````r preparati``````o``````n, as an example. The value is expressed in IS``````o``````8601 f``````o``````rmat.
+  - `[Price <D``````o``````uble?>]`: The regular price f``````o``````r an app``````o``````intment f``````o``````r the specified b``````o````````````o``````kingService.
+  - `[PriceType <B``````o````````````o``````kingPriceType?>]`: Represents the type ``````o``````f pricing ``````o``````f a b``````o````````````o``````king service.
+  - `[Reminders <IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingReminder1[]>]`: The c``````o``````llecti``````o``````n ``````o``````f cust``````o``````mer reminders sent f``````o``````r this app``````o``````intment. The value ``````o``````f this pr``````o``````perty is available ``````o``````nly when reading this b``````o````````````o``````kingApp``````o``````intment by its ID.
     - `[Message <String>]`: The message in the reminder.
-    - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent. It's denoted in ISO 8601 format.
+    - `[``````o``````ffset <TimeSpan?>]`: The am``````o``````unt ``````o``````f time bef``````o``````re the start ``````o``````f an app``````o``````intment that the reminder sh``````o``````uld be sent. It's den``````o``````ted in IS``````o`````` 8601 f``````o``````rmat.
     - `[Recipients <String>]`: 
-  - `[SelfServiceAppointmentId <String>]`: An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
-  - `[ServiceId <String>]`: The ID of the bookingService associated with this appointment.
-  - `[ServiceLocation <IMicrosoftGraphLocation1>]`: location
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[SelfServiceApp``````o``````intmentId <String>]`: An additi``````o``````nal tracking ID f``````o``````r the app``````o``````intment, if the app``````o``````intment has been created directly by the cust``````o``````mer ``````o``````n the scheduling page, as ``````o``````pp``````o``````sed t``````o`````` by a staff member ``````o``````n the behalf ``````o``````f the cust``````o``````mer.
+  - `[ServiceId <String>]`: The ID ``````o``````f the b``````o````````````o``````kingService ass``````o``````ciated with this app``````o``````intment.
+  - `[ServiceL``````o``````cati``````o``````n <IMicr``````o``````s``````o``````ftGraphL``````o``````cati``````o``````n1>]`: l``````o``````cati``````o``````n
+    - `[(Any) <``````o``````bject>]`: This indicates any pr``````o``````perty can be added t``````o`````` this ``````o``````bject.
+    - `[Address <IMicr``````o``````s``````o``````ftGraphPhysicalAddress1>]`: physicalAddress
+      - `[(Any) <``````o``````bject>]`: This indicates any pr``````o``````perty can be added t``````o`````` this ``````o``````bject.
       - `[City <String>]`: The city.
-      - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-      - `[PostalCode <String>]`: The postal code.
+      - `[C``````o``````untry``````o``````rRegi``````o``````n <String>]`: The c``````o``````untry ``````o``````r regi``````o``````n. It's a free-f``````o``````rmat string value, f``````o``````r example, 'United States'.
+      - `[P``````o``````stalC``````o``````de <String>]`: The p``````o``````stal c``````o``````de.
       - `[State <String>]`: The state.
       - `[Street <String>]`: The street.
-    - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-      - `[Altitude <Double?>]`: The altitude of the location.
-      - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-      - `[Latitude <Double?>]`: The latitude of the location.
-      - `[Longitude <Double?>]`: The longitude of the location.
-    - `[DisplayName <String>]`: The name associated with the location.
-    - `[LocationEmailAddress <String>]`: Optional email address of the location.
-    - `[LocationType <String>]`: locationType
-    - `[LocationUri <String>]`: Optional URI representing the location.
-    - `[UniqueId <String>]`: For internal use only.
-    - `[UniqueIdType <String>]`: locationUniqueIdType
-  - `[ServiceName <String>]`: The name of the bookingService associated with this appointment.This property is optional when creating a new appointment. If not specified, it is computed from the service associated with the appointment by the serviceId property.
-  - `[ServiceNotes <String>]`: Notes from a bookingStaffMember. The value of this property is available only when reading this bookingAppointment by its ID.
-  - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications will be sent to the customers for the appointment. Default value is false.
-  - `[StaffMemberIds <String[]>]`: The ID of each bookingStaffMember who is scheduled in this appointment.
-  - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[C``````o````````````o``````rdinates <IMicr``````o``````s``````o``````ftGraph``````o``````utl``````o````````````o``````kGe``````o``````C``````o````````````o``````rdinates>]`: ``````o``````utl``````o````````````o``````kGe``````o``````C``````o````````````o``````rdinates
+      - `[(Any) <``````o``````bject>]`: This indicates any pr``````o``````perty can be added t``````o`````` this ``````o``````bject.
+      - `[Accuracy <D``````o``````uble?>]`: The accuracy ``````o``````f the latitude and l``````o``````ngitude. As an example, the accuracy can be measured in meters, such as the latitude and l``````o``````ngitude are accurate t``````o`````` within 50 meters.
+      - `[Altitude <D``````o``````uble?>]`: The altitude ``````o``````f the l``````o``````cati``````o``````n.
+      - `[AltitudeAccuracy <D``````o``````uble?>]`: The accuracy ``````o``````f the altitude.
+      - `[Latitude <D``````o``````uble?>]`: The latitude ``````o``````f the l``````o``````cati``````o``````n.
+      - `[L``````o``````ngitude <D``````o``````uble?>]`: The l``````o``````ngitude ``````o``````f the l``````o``````cati``````o``````n.
+    - `[DisplayName <String>]`: The name ass``````o``````ciated with the l``````o``````cati``````o``````n.
+    - `[L``````o``````cati``````o``````nEmailAddress <String>]`: ``````o``````pti``````o``````nal email address ``````o``````f the l``````o``````cati``````o``````n.
+    - `[L``````o``````cati``````o``````nType <String>]`: l``````o``````cati``````o``````nType
+    - `[L``````o``````cati``````o``````nUri <String>]`: ``````o``````pti``````o``````nal URI representing the l``````o``````cati``````o``````n.
+    - `[UniqueId <String>]`: F``````o``````r internal use ``````o``````nly.
+    - `[UniqueIdType <String>]`: l``````o``````cati``````o``````nUniqueIdType
+  - `[ServiceName <String>]`: The name ``````o``````f the b``````o````````````o``````kingService ass``````o``````ciated with this app``````o``````intment.This pr``````o``````perty is ``````o``````pti``````o``````nal when creating a new app``````o``````intment. If n``````o``````t specified, it is c``````o``````mputed fr``````o``````m the service ass``````o``````ciated with the app``````o``````intment by the serviceId pr``````o``````perty.
+  - `[ServiceN``````o``````tes <String>]`: N``````o``````tes fr``````o``````m a b``````o````````````o``````kingStaffMember. The value ``````o``````f this pr``````o``````perty is available ``````o``````nly when reading this b``````o````````````o``````kingApp``````o``````intment by its ID.
+  - `[SmsN``````o``````tificati``````o``````nsEnabled <B``````o````````````o``````lean?>]`: True indicates SMS n``````o``````tificati``````o``````ns will be sent t``````o`````` the cust``````o``````mers f``````o``````r the app``````o``````intment. Default value is false.
+  - `[StaffMemberIds <String[]>]`: The ID ``````o``````f each b``````o````````````o``````kingStaffMember wh``````o`````` is scheduled in this app``````o``````intment.
+  - `[StartDateTime <IMicr``````o``````s``````o``````ftGraphDateTimeZ``````o``````ne>]`: dateTimeTimeZ``````o``````ne
 
-ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+ENDDATETIME <IMicr``````o``````s``````o``````ftGraphDateTimeZ``````o``````ne>: dateTimeTimeZ``````o``````ne
+  - `[(Any) <``````o``````bject>]`: This indicates any pr``````o``````perty can be added t``````o`````` this ``````o``````bject.
+  - `[DateTime <String>]`: A single p``````o``````int ``````o``````f time in a c``````o``````mbined date and time representati``````o``````n ({date}T{time}). F``````o``````r example, '2019-04-16T09:00:00'.
+  - `[TimeZ``````o``````ne <String>]`: Represents a time z``````o``````ne, f``````o``````r example, 'Pacific Standard Time'. See bel``````o``````w f``````o``````r p``````o``````ssible values.
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
-  - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
-  - `[BookingBusinessId <String>]`: key: id of bookingBusiness
-  - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: key: id of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: key: id of bookingCustomerBase
-  - `[BookingCustomerId <String>]`: key: id of bookingCustomer
-  - `[BookingServiceId <String>]`: key: id of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: key: id of bookingStaffMemberBase
-  - `[BookingStaffMemberId <String>]`: key: id of bookingStaffMember
+INPUT``````o``````BJECT <IB``````o````````````o``````kingsIdentity>: Identity Parameter
+  - `[B``````o````````````o``````kingApp``````o``````intmentId <String>]`: key: id ``````o``````f b``````o````````````o``````kingApp``````o``````intment
+  - `[B``````o````````````o``````kingBusinessId <String>]`: key: id ``````o``````f b``````o````````````o``````kingBusiness
+  - `[B``````o````````````o``````kingCurrencyId <String>]`: key: id ``````o``````f b``````o````````````o``````kingCurrency
+  - `[B``````o````````````o``````kingCust``````o``````mQuesti``````o``````nId <String>]`: key: id ``````o``````f b``````o````````````o``````kingCust``````o``````mQuesti``````o``````n
+  - `[B``````o````````````o``````kingCust``````o``````merBaseId <String>]`: key: id ``````o``````f b``````o````````````o``````kingCust``````o``````merBase
+  - `[B``````o````````````o``````kingCust``````o``````merId <String>]`: key: id ``````o``````f b``````o````````````o``````kingCust``````o``````mer
+  - `[B``````o````````````o``````kingServiceId <String>]`: key: id ``````o``````f b``````o````````````o``````kingService
+  - `[B``````o````````````o``````kingStaffMemberBaseId <String>]`: key: id ``````o``````f b``````o````````````o``````kingStaffMemberBase
+  - `[B``````o````````````o``````kingStaffMemberId <String>]`: key: id ``````o``````f b``````o````````````o``````kingStaffMember
 
-REMINDERS <IMicrosoftGraphBookingReminder1[]>: The collection of customer reminders sent for this appointment. The value of this property is available only when reading this bookingAppointment by its ID.
+REMINDERS <IMicr``````o``````s``````o``````ftGraphB``````o````````````o``````kingReminder1[]>: The c``````o``````llecti``````o``````n ``````o``````f cust``````o``````mer reminders sent f``````o``````r this app``````o``````intment. The value ``````o``````f this pr``````o``````perty is available ``````o``````nly when reading this b``````o````````````o``````kingApp``````o``````intment by its ID.
   - `[Message <String>]`: The message in the reminder.
-  - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent. It's denoted in ISO 8601 format.
+  - `[``````o``````ffset <TimeSpan?>]`: The am``````o``````unt ``````o``````f time bef``````o``````re the start ``````o``````f an app``````o``````intment that the reminder sh``````o``````uld be sent. It's den``````o``````ted in IS``````o`````` 8601 f``````o``````rmat.
   - `[Recipients <String>]`: 
 
-SERVICELOCATION <IMicrosoftGraphLocation1>: location
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+SERVICEL``````o``````CATI``````o``````N <IMicr``````o``````s``````o``````ftGraphL``````o``````cati``````o``````n1>: l``````o``````cati``````o``````n
+  - `[(Any) <``````o``````bject>]`: This indicates any pr``````o``````perty can be added t``````o`````` this ``````o``````bject.
+  - `[Address <IMicr``````o``````s``````o``````ftGraphPhysicalAddress1>]`: physicalAddress
+    - `[(Any) <``````o``````bject>]`: This indicates any pr``````o``````perty can be added t``````o`````` this ``````o``````bject.
     - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-    - `[PostalCode <String>]`: The postal code.
+    - `[C``````o``````untry``````o``````rRegi``````o``````n <String>]`: The c``````o``````untry ``````o``````r regi``````o``````n. It's a free-f``````o``````rmat string value, f``````o``````r example, 'United States'.
+    - `[P``````o``````stalC``````o``````de <String>]`: The p``````o``````stal c``````o``````de.
     - `[State <String>]`: The state.
     - `[Street <String>]`: The street.
-  - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    - `[Altitude <Double?>]`: The altitude of the location.
-    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-    - `[Latitude <Double?>]`: The latitude of the location.
-    - `[Longitude <Double?>]`: The longitude of the location.
-  - `[DisplayName <String>]`: The name associated with the location.
-  - `[LocationEmailAddress <String>]`: Optional email address of the location.
-  - `[LocationType <String>]`: locationType
-  - `[LocationUri <String>]`: Optional URI representing the location.
-  - `[UniqueId <String>]`: For internal use only.
-  - `[UniqueIdType <String>]`: locationUniqueIdType
+  - `[C``````o````````````o``````rdinates <IMicr``````o``````s``````o``````ftGraph``````o``````utl``````o````````````o``````kGe``````o``````C``````o````````````o``````rdinates>]`: ``````o``````utl``````o````````````o``````kGe``````o``````C``````o````````````o``````rdinates
+    - `[(Any) <``````o``````bject>]`: This indicates any pr``````o``````perty can be added t``````o`````` this ``````o``````bject.
+    - `[Accuracy <D``````o``````uble?>]`: The accuracy ``````o``````f the latitude and l``````o``````ngitude. As an example, the accuracy can be measured in meters, such as the latitude and l``````o``````ngitude are accurate t``````o`````` within 50 meters.
+    - `[Altitude <D``````o``````uble?>]`: The altitude ``````o``````f the l``````o``````cati``````o``````n.
+    - `[AltitudeAccuracy <D``````o``````uble?>]`: The accuracy ``````o``````f the altitude.
+    - `[Latitude <D``````o``````uble?>]`: The latitude ``````o``````f the l``````o``````cati``````o``````n.
+    - `[L``````o``````ngitude <D``````o``````uble?>]`: The l``````o``````ngitude ``````o``````f the l``````o``````cati``````o``````n.
+  - `[DisplayName <String>]`: The name ass``````o``````ciated with the l``````o``````cati``````o``````n.
+  - `[L``````o``````cati``````o``````nEmailAddress <String>]`: ``````o``````pti``````o``````nal email address ``````o``````f the l``````o``````cati``````o``````n.
+  - `[L``````o``````cati``````o``````nType <String>]`: l``````o``````cati``````o``````nType
+  - `[L``````o``````cati``````o``````nUri <String>]`: ``````o``````pti``````o``````nal URI representing the l``````o``````cati``````o``````n.
+  - `[UniqueId <String>]`: F``````o``````r internal use ``````o``````nly.
+  - `[UniqueIdType <String>]`: l``````o``````cati``````o``````nUniqueIdType
 
-STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+STARTDATETIME <IMicr``````o``````s``````o``````ftGraphDateTimeZ``````o``````ne>: dateTimeTimeZ``````o``````ne
+  - `[(Any) <``````o``````bject>]`: This indicates any pr``````o``````perty can be added t``````o`````` this ``````o``````bject.
+  - `[DateTime <String>]`: A single p``````o``````int ``````o``````f time in a c``````o``````mbined date and time representati``````o``````n ({date}T{time}). F``````o``````r example, '2019-04-16T09:00:00'.
+  - `[TimeZ``````o``````ne <String>]`: Represents a time z``````o``````ne, f``````o``````r example, 'Pacific Standard Time'. See bel``````o``````w f``````o``````r p``````o``````ssible values.
 
 ## RELATED LINKS
