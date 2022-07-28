@@ -1,257 +1,257 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementdeviceenrollmentconfiguration
-schema: 2.0.0
+---
+``e``xt``e``rnal h``e``lp fil``e``: Microsoft.Graph.D``e``vic``e``Manag``e``m``e``nt.``e``nrolm``e``nt-h``e``lp.xml
+Modul``e`` Nam``e``: Microsoft.Graph.D``e``vic``e``Manag``e``m``e``nt.``e``nrolm``e``nt
+onlin``e`` v``e``rsion: https://docs.microsoft.com/``e``n-us/pow``e``rsh``e``ll/modul``e``/microsoft.graph.d``e``vic``e``manag``e``m``e``nt.``e``nrolm``e``nt/n``e``w-mgd``e``vic``e``manag``e``m``e``ntd``e``vic``e````e``nrollm``e``ntconfiguration
+sch``e``ma: 2.0.0
 ---
 
-# New-MgDeviceManagementDeviceEnrollmentConfiguration
+# N``e``w-MgD``e``vic``e``Manag``e``m``e``ntD``e``vic``e````e``nrollm``e``ntConfiguration
 
 ## SYNOPSIS
-Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
+Cr``e``at``e`` n``e``w navigation prop``e``rty to d``e``vic``e````e``nrollm``e``ntConfigurations for d``e``vic``e``Manag``e``m``e``nt
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Cr``e``at``e````e``xpand``e``d (D``e``fault)
 ```
-New-MgDeviceManagementDeviceEnrollmentConfiguration [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Priority <Int32>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgDeviceManagementDeviceEnrollmentConfiguration
- -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration1> [-WhatIf] [-Confirm] [<CommonParameters>]
+N``e``w-MgD``e``vic``e``Manag``e``m``e``ntD``e``vic``e````e``nrollm``e``ntConfiguration [-AdditionalProp``e``rti``e``s <Hashtabl``e``>]
+ [-Assignm``e``nts <IMicrosoftGraph``e``nrollm``e``ntConfigurationAssignm``e``nt[]>] [-Cr``e``at``e``dDat``e``Tim``e`` <Dat``e``Tim``e``>]
+ [-D``e``scription <String>] [-DisplayNam``e`` <String>] [-Id <String>] [-LastModifi``e``dDat``e``Tim``e`` <Dat``e``Tim``e``>]
+ [-Priority <Int32>] [-V``e``rsion <Int32>] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-## DESCRIPTION
-Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
+### Cr``e``at``e``
+```
+N``e``w-MgD``e``vic``e``Manag``e``m``e``ntD``e``vic``e````e``nrollm``e``ntConfiguration
+ -BodyParam``e``t``e``r <IMicrosoftGraphD``e``vic``e````e``nrollm``e``ntConfiguration1> [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
+```
 
-## EXAMPLES
+## D``e``SCRIPTION
+Cr``e``at``e`` n``e``w navigation prop``e``rty to d``e``vic``e````e``nrollm``e``ntConfigurations for d``e``vic``e``Manag``e``m``e``nt
 
-## PARAMETERS
+## ``e``XAMPL``e``S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM``e``T``e``RS
+
+### -AdditionalProp``e``rti``e``s
+Additional Param``e``t``e``rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: Hashtabl``e``
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -Assignments
-The list of group assignments for the device configuration profile
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
+### -Assignm``e``nts
+Th``e`` list of group assignm``e``nts for th``e`` d``e``vic``e`` configuration profil``e``
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for ASSIGNM``e``NTS prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphEnrollmentConfigurationAssignment[]
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: IMicrosoftGraph``e``nrollm``e``ntConfigurationAssignm``e``nt[]
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -BodyParameter
-The Base Class of Device Enrollment Configuration
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam``e``t``e``r
+Th``e`` Bas``e`` Class of D``e``vic``e`` ``e``nrollm``e``nt Configuration
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for BODYPARAM``e``T``e``R prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphDeviceEnrollmentConfiguration1
-Parameter Sets: Create
-Aliases:
+Typ``e``: IMicrosoftGraphD``e``vic``e````e``nrollm``e``ntConfiguration1
+Param``e``t``e``r S``e``ts: Cr``e``at``e``
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -CreatedDateTime
-Created date time in UTC of the device enrollment configuration
+### -Cr``e``at``e``dDat``e``Tim``e``
+Cr``e``at``e``d dat``e`` tim``e`` in UTC of th``e`` d``e``vic``e`` ``e``nrollm``e``nt configuration
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: Dat``e``Tim``e``
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -Description
-The description of the device enrollment configuration
+### -D``e``scription
+Th``e`` d``e``scription of th``e`` d``e``vic``e`` ``e``nrollm``e``nt configuration
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -DisplayName
-The display name of the device enrollment configuration
+### -DisplayNam``e``
+Th``e`` display nam``e`` of th``e`` d``e``vic``e`` ``e``nrollm``e``nt configuration
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -LastModifiedDateTime
-Last modified date time in UTC of the device enrollment configuration
+### -LastModifi``e``dDat``e``Tim``e``
+Last modifi``e``d dat``e`` tim``e`` in UTC of th``e`` d``e``vic``e`` ``e``nrollm``e``nt configuration
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: Dat``e``Tim``e``
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Priority
-Priority is used when a user exists in multiple groups that are assigned enrollment configuration.
-Users are subject only to the configuration with the lowest priority value.
+Priority is us``e``d wh``e``n a us``e``r ``e``xists in multipl``e`` groups that ar``e`` assign``e``d ``e``nrollm``e``nt configuration.
+Us``e``rs ar``e`` subj``e``ct only to th``e`` configuration with th``e`` low``e``st priority valu``e``.
 
 ```yaml
-Type: Int32
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: Int32
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -Version
-The version of the device enrollment configuration
+### -V``e``rsion
+Th``e`` v``e``rsion of th``e`` d``e``vic``e`` ``e``nrollm``e``nt configuration
 
 ```yaml
-Type: Int32
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: Int32
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``e``for``e`` running th``e`` cmdl``e``t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``e``n if th``e`` cmdl``e``t runs.
+Th``e`` cmdl``e``t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``e``t``e``rs
+This cmdl``e``t supports th``e`` common param``e``t``e``rs: -D``e``bug, -``e``rrorAction, -``e``rrorVariabl``e``, -InformationAction, -InformationVariabl``e``, -OutVariabl``e``, -OutBuff``e``r, -Pip``e``lin``e``Variabl``e``, -V``e``rbos``e``, -WarningAction, and -WarningVariabl``e``. For mor``e`` information, s``e````e`` [about_CommonParam``e``t``e``rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration1
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphD``e``vic``e````e``nrollm``e``ntConfiguration1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration1
-## NOTES
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphD``e``vic``e````e``nrollm``e``ntConfiguration1
+## NOT``e``S
 
-ALIASES
+ALIAS``e``S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``e``X PARAM``e``T``e``R PROP``e``RTI``e``S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``e``at``e`` th``e`` param``e``t``e``rs d``e``scrib``e``d b``e``low, construct a hash tabl``e`` containing th``e`` appropriat``e`` prop``e``rti``e``s. For information on hash tabl``e``s, run G``e``t-H``e``lp about_Hash_Tabl``e``s.
 
 
-ASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment[]>: The list of group assignments for the device configuration profile
+ASSIGNM``e``NTS <IMicrosoftGraph``e``nrollm``e``ntConfigurationAssignm``e``nt[]>: Th``e`` list of group assignm``e``nts for th``e`` d``e``vic``e`` configuration profil``e``
   - `[Id <String>]`: 
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Targ``e``t <IMicrosoftGraphD``e``vic``e``AndAppManag``e``m``e``ntAssignm``e``ntTarg``e``t>]`: Bas``e`` typ``e`` for assignm``e``nt targ``e``ts.
+    - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
 
-BODYPARAMETER <IMicrosoftGraphDeviceEnrollmentConfiguration1>: The Base Class of Device Enrollment Configuration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM``e``T``e``R <IMicrosoftGraphD``e``vic``e````e``nrollm``e``ntConfiguration1>: Th``e`` Bas``e`` Class of D``e``vic``e`` ``e``nrollm``e``nt Configuration
+  - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
   - `[Id <String>]`: 
-  - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>]`: The list of group assignments for the device configuration profile
+  - `[Assignm``e``nts <IMicrosoftGraph``e``nrollm``e``ntConfigurationAssignm``e``nt[]>]`: Th``e`` list of group assignm``e``nts for th``e`` d``e``vic``e`` configuration profil``e``
     - `[Id <String>]`: 
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: Created date time in UTC of the device enrollment configuration
-  - `[Description <String>]`: The description of the device enrollment configuration
-  - `[DisplayName <String>]`: The display name of the device enrollment configuration
-  - `[LastModifiedDateTime <DateTime?>]`: Last modified date time in UTC of the device enrollment configuration
-  - `[Priority <Int32?>]`: Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value.
-  - `[Version <Int32?>]`: The version of the device enrollment configuration
+    - `[Targ``e``t <IMicrosoftGraphD``e``vic``e``AndAppManag``e``m``e``ntAssignm``e``ntTarg``e``t>]`: Bas``e`` typ``e`` for assignm``e``nt targ``e``ts.
+      - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+  - `[Cr``e``at``e``dDat``e``Tim``e`` <Dat``e``Tim``e``?>]`: Cr``e``at``e``d dat``e`` tim``e`` in UTC of th``e`` d``e``vic``e`` ``e``nrollm``e``nt configuration
+  - `[D``e``scription <String>]`: Th``e`` d``e``scription of th``e`` d``e``vic``e`` ``e``nrollm``e``nt configuration
+  - `[DisplayNam``e`` <String>]`: Th``e`` display nam``e`` of th``e`` d``e``vic``e`` ``e``nrollm``e``nt configuration
+  - `[LastModifi``e``dDat``e``Tim``e`` <Dat``e``Tim``e``?>]`: Last modifi``e``d dat``e`` tim``e`` in UTC of th``e`` d``e``vic``e`` ``e``nrollm``e``nt configuration
+  - `[Priority <Int32?>]`: Priority is us``e``d wh``e``n a us``e``r ``e``xists in multipl``e`` groups that ar``e`` assign``e``d ``e``nrollm``e``nt configuration. Us``e``rs ar``e`` subj``e``ct only to th``e`` configuration with th``e`` low``e``st priority valu``e``.
+  - `[V``e``rsion <Int32?>]`: Th``e`` v``e``rsion of th``e`` d``e``vic``e`` ``e``nrollm``e``nt configuration
 
-## RELATED LINKS
+## R``e``LAT``e``D LINKS
