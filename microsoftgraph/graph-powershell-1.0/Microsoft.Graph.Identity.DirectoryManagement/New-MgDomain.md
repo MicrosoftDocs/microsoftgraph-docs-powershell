@@ -1,241 +1,241 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain
+---
+external help file: Microsoft.Graph.I``````d``````entity.``````d``````irectoryManagement-help.xml
+Mo``````d``````ule Name: Microsoft.Graph.I``````d``````entity.``````d``````irectoryManagement
+online version: https://``````d``````ocs.microsoft.com/en-us/powershell/mo``````d``````ule/microsoft.graph.i``````d``````entity.``````d``````irectorymanagement/new-mg``````d``````omain
 schema: 2.0.0
 ---
 
-# New-MgDomain
+# New-Mg``````d``````omain
 
 ## SYNOPSIS
-Create domain
+Create ``````d``````omain
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpan``````d``````e``````d``````1 (``````d``````efault)
 ```
-New-MgDomain [-AdditionalProperties <Hashtable>] [-AuthenticationType <String>] [-AvailabilityStatus <String>]
- [-DomainNameReferences <IMicrosoftGraphDirectoryObject[]>]
- [-FederationConfiguration <IMicrosoftGraphInternalDomainFederation[]>] [-Id <String>] [-IsAdminManaged]
- [-IsDefault] [-IsInitial] [-IsRoot] [-IsVerified] [-Manufacturer <String>] [-Model <String>]
- [-PasswordNotificationWindowInDays <Int32>] [-PasswordValidityPeriodInDays <Int32>]
- [-ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord[]>] [-State <IMicrosoftGraphDomainState>]
- [-SupportedServices <String[]>] [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-WhatIf]
+New-Mg``````d``````omain [-A``````d````````````d``````itionalProperties <Hashtable>] [-AuthenticationType <String>] [-AvailabilityStatus <String>]
+ [-``````d``````omainNameReferences <IMicrosoftGraph``````d``````irectoryObject[]>]
+ [-Fe``````d``````erationConfiguration <IMicrosoftGraphInternal``````d``````omainFe``````d``````eration[]>] [-I``````d`````` <String>] [-IsA``````d``````minManage``````d``````]
+ [-Is``````d``````efault] [-IsInitial] [-IsRoot] [-IsVerifie``````d``````] [-Manufacturer <String>] [-Mo``````d``````el <String>]
+ [-Passwor``````d``````NotificationWin``````d``````owIn``````d``````ays <Int32>] [-Passwor``````d``````Vali``````d``````ityPerio``````d``````In``````d``````ays <Int32>]
+ [-ServiceConfigurationRecor``````d``````s <IMicrosoftGraph``````d``````omain``````d``````nsRecor``````d``````[]>] [-State <IMicrosoftGraph``````d``````omainState>]
+ [-Supporte``````d``````Services <String[]>] [-Verification``````d``````nsRecor``````d``````s <IMicrosoftGraph``````d``````omain``````d``````nsRecor``````d``````[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDomain -BodyParameter <IMicrosoftGraphDomain1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-Mg``````d``````omain -Bo``````d``````yParameter <IMicrosoftGraph``````d``````omain1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create domain
+## ``````d``````ESCRIPTION
+Create ``````d``````omain
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A``````d````````````d``````itionalProperties
+A``````d````````````d``````itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -AuthenticationType
-Indicates the configured authentication type for the domain.
-The value is either Managed or Federated.
-Managed indicates a cloud managed domain where Azure AD performs user authentication.
-Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
-This property is read-only and is not nullable.
+In``````d``````icates the configure``````d`````` authentication type for the ``````d``````omain.
+The value is either Manage``````d`````` or Fe``````d``````erate``````d``````.
+Manage``````d`````` in``````d``````icates a clou``````d`````` manage``````d`````` ``````d``````omain where Azure A``````d`````` performs user authentication.
+Fe``````d``````erate``````d`````` in``````d``````icates authentication is fe``````d``````erate``````d`````` with an i``````d``````entity provi``````d``````er such as the tenant's on-premises Active ``````d``````irectory via Active ``````d``````irectory Fe``````d``````eration Services.
+This property is rea``````d``````-only an``````d`````` is not nullable.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -AvailabilityStatus
-This property is always null except when the verify action is used.
-When the verify action is used, a domain entity is returned in the response.
-The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
+This property is always null except when the verify action is use``````d``````.
+When the verify action is use``````d``````, a ``````d``````omain entity is returne``````d`````` in the response.
+The availabilityStatus property of the ``````d``````omain entity in the response is either AvailableImme``````d``````iately or EmailVerifie``````d````````````d``````omainTakeoverSche``````d``````ule``````d``````.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -BodyParameter
-domain
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo``````d``````yParameter
+``````d``````omain
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for BO``````d``````YPARAMETER properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomain1
+Type: IMicrosoftGraph``````d``````omain1
 Parameter Sets: Create1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``````d``````: True
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -DomainNameReferences
-The objects such as users and groups that reference the domain ID.
-Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
-For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
-To construct, please use Get-Help -Online and see NOTES section for DOMAINNAMEREFERENCES properties and create a hash table.
+### -``````d``````omainNameReferences
+The objects such as users an``````d`````` groups that reference the ``````d``````omain I``````d``````.
+Rea``````d``````-only, Nullable.
+Supports $expan``````d`````` an``````d`````` $filter by the O``````d``````ata type of objects returne``````d``````.
+For example /``````d``````omains/{``````d``````omainI``````d``````}/``````d``````omainNameReferences/microsoft.graph.user an``````d`````` /``````d``````omains/{``````d``````omainI``````d``````}/``````d``````omainNameReferences/microsoft.graph.group.
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for ``````d``````OMAINNAMEREFERENCES properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraph``````d``````irectoryObject[]
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -FederationConfiguration
-Domain settings configured by customer when federated with Azure AD.
-Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for FEDERATIONCONFIGURATION properties and create a hash table.
+### -Fe``````d``````erationConfiguration
+``````d``````omain settings configure``````d`````` by customer when fe``````d``````erate``````d`````` with Azure A``````d``````.
+Supports $expan``````d``````.
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for FE``````d``````ERATIONCONFIGURATION properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInternalDomainFederation[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphInternal``````d``````omainFe``````d``````eration[]
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -Id
+### -I``````d``````
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -IsAdminManaged
-The value of the property is false if the DNS record management of the domain has been delegated to Microsoft 365.
+### -IsA``````d``````minManage``````d``````
+The value of the property is false if the ``````d``````NS recor``````d`````` management of the ``````d``````omain has been ``````d``````elegate``````d`````` to Microsoft 365.
 Otherwise, the value is true.
 Not nullable
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -IsDefault
-true if this is the default domain that is used for user creation.
-There is only one default domain per company.
+### -Is``````d``````efault
+true if this is the ``````d``````efault ``````d``````omain that is use``````d`````` for user creation.
+There is only one ``````d``````efault ``````d``````omain per company.
 Not nullable
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -IsInitial
-true if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com).
-There is only one initial domain per company.
+true if this is the initial ``````d``````omain create``````d`````` by Microsoft Online Services (companyname.onmicrosoft.com).
+There is only one initial ``````d``````omain per company.
 Not nullable
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -IsRoot
-true if the domain is a verified root domain.
-Otherwise, false if the domain is a subdomain or unverified.
+true if the ``````d``````omain is a verifie``````d`````` root ``````d``````omain.
+Otherwise, false if the ``````d``````omain is a sub``````d``````omain or unverifie``````d``````.
 Not nullable
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -IsVerified
-true if the domain has completed domain ownership verification.
+### -IsVerifie``````d``````
+true if the ``````d``````omain has complete``````d`````` ``````d``````omain ownership verification.
 Not nullable
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -Manufacturer
@@ -243,277 +243,277 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -Model
+### -Mo``````d``````el
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -PasswordNotificationWindowInDays
-Specifies the number of days before a user receives notification that their password will expire.
-If the property is not set, a default value of 14 days will be used.
+### -Passwor``````d``````NotificationWin``````d``````owIn``````d``````ays
+Specifies the number of ``````d``````ays before a user receives notification that their passwor``````d`````` will expire.
+If the property is not set, a ``````d``````efault value of 14 ``````d``````ays will be use``````d``````.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -PasswordValidityPeriodInDays
-Specifies the length of time that a password is valid before it must be changed.
-If the property is not set, a default value of 90 days will be used.
+### -Passwor``````d``````Vali``````d``````ityPerio``````d``````In``````d``````ays
+Specifies the length of time that a passwor``````d`````` is vali``````d`````` before it must be change``````d``````.
+If the property is not set, a ``````d``````efault value of 90 ``````d``````ays will be use``````d``````.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -ServiceConfigurationRecords
-DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
-Read-only, Nullable.
-Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for SERVICECONFIGURATIONRECORDS properties and create a hash table.
+### -ServiceConfigurationRecor``````d``````s
+``````d``````NS recor``````d``````s the customer a``````d````````````d``````s to the ``````d``````NS zone file of the ``````d``````omain before the ``````d``````omain can be use``````d`````` by Microsoft Online services.
+Rea``````d``````-only, Nullable.
+Supports $expan``````d``````.
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for SERVICECONFIGURATIONRECOR``````d``````S properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomainDnsRecord[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraph``````d``````omain``````d``````nsRecor``````d``````[]
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -State
-domainState
-To construct, please use Get-Help -Online and see NOTES section for STATE properties and create a hash table.
+``````d``````omainState
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for STATE properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomainState
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraph``````d``````omainState
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -SupportedServices
-The capabilities assigned to the domain.
-Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline,SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
-The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer.
+### -Supporte``````d``````Services
+The capabilities assigne``````d`````` to the ``````d``````omain.
+Can inclu``````d``````e 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline,SharePoint``````d``````efault``````d``````omain, FullRe``````d``````elegation, SharePointPublic, OrgI``````d``````Authentication, Yammer, Intune.
+The values which you can a``````d````````````d``````/remove using Graph API inclu``````d``````e: Email, OfficeCommunicationsOnline, Yammer.
 Not nullable.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -VerificationDnsRecords
-DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
-Read-only, Nullable.
-Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for VERIFICATIONDNSRECORDS properties and create a hash table.
+### -Verification``````d``````nsRecor``````d``````s
+``````d``````NS recor``````d``````s that the customer a``````d````````````d``````s to the ``````d``````NS zone file of the ``````d``````omain before the customer can complete ``````d``````omain ownership verification with Azure A``````d``````.
+Rea``````d``````-only, Nullable.
+Supports $expan``````d``````.
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for VERIFICATION``````d``````NSRECOR``````d``````S properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomainDnsRecord[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraph``````d``````omain``````d``````nsRecor``````d``````[]
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm``````d``````let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul``````d`````` happen if the cm``````d``````let runs.
+The cm``````d``````let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm``````d``````let supports the common parameters: -``````d``````ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an``````d`````` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI``````d``````=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomain1
+### Microsoft.Graph.PowerShell.Mo``````d``````els.IMicrosoftGraph``````d``````omain1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomain1
+### Microsoft.Graph.PowerShell.Mo``````d``````els.IMicrosoftGraph``````d``````omain1
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ``````d``````escribe``````d`````` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDomain1>: domain
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[AuthenticationType <String>]`: Indicates the configured authentication type for the domain. The value is either Managed or Federated. Managed indicates a cloud managed domain where Azure AD performs user authentication. Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. This property is read-only and is not nullable.
-  - `[AvailabilityStatus <String>]`: This property is always null except when the verify action is used. When the verify action is used, a domain entity is returned in the response. The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
-  - `[DomainNameReferences <IMicrosoftGraphDirectoryObject[]>]`: The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports $expand and $filter by the OData type of objects returned. For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
-    - `[Id <String>]`: 
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[FederationConfiguration <IMicrosoftGraphInternalDomainFederation[]>]`: Domain settings configured by customer when federated with Azure AD. Supports $expand.
-    - `[IssuerUri <String>]`: Issuer URI of the federation server.
-    - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
-    - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
-    - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
-    - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.   This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.   Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
-    - `[DisplayName <String>]`: The display name of the identity provider.
-    - `[Id <String>]`: 
-    - `[ActiveSignInUri <String>]`: URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Azure Active Directory (Azure AD). Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
-    - `[FederatedIdpMfaBehavior <String>]`: federatedIdpMfaBehavior
-    - `[IsSignedAuthenticationRequestRequired <Boolean?>]`: If true, when SAML authentication requests are sent to the federated SAML IdP, Azure AD will sign those requests using the OrgID signing key. If false (default), the SAML authentication requests sent to the federated IdP are not signed.
-    - `[NextSigningCertificate <String>]`: Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires. Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated.
+BO``````d``````YPARAMETER <IMicrosoftGraph``````d``````omain1>: ``````d``````omain
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[I``````d`````` <String>]`: 
+  - `[AuthenticationType <String>]`: In``````d``````icates the configure``````d`````` authentication type for the ``````d``````omain. The value is either Manage``````d`````` or Fe``````d``````erate``````d``````. Manage``````d`````` in``````d``````icates a clou``````d`````` manage``````d`````` ``````d``````omain where Azure A``````d`````` performs user authentication. Fe``````d``````erate``````d`````` in``````d``````icates authentication is fe``````d``````erate``````d`````` with an i``````d``````entity provi``````d``````er such as the tenant's on-premises Active ``````d``````irectory via Active ``````d``````irectory Fe``````d``````eration Services. This property is rea``````d``````-only an``````d`````` is not nullable.
+  - `[AvailabilityStatus <String>]`: This property is always null except when the verify action is use``````d``````. When the verify action is use``````d``````, a ``````d``````omain entity is returne``````d`````` in the response. The availabilityStatus property of the ``````d``````omain entity in the response is either AvailableImme``````d``````iately or EmailVerifie``````d````````````d``````omainTakeoverSche``````d``````ule``````d``````.
+  - `[``````d``````omainNameReferences <IMicrosoftGraph``````d``````irectoryObject[]>]`: The objects such as users an``````d`````` groups that reference the ``````d``````omain I``````d``````. Rea``````d``````-only, Nullable. Supports $expan``````d`````` an``````d`````` $filter by the O``````d``````ata type of objects returne``````d``````. For example /``````d``````omains/{``````d``````omainI``````d``````}/``````d``````omainNameReferences/microsoft.graph.user an``````d`````` /``````d``````omains/{``````d``````omainI``````d``````}/``````d``````omainNameReferences/microsoft.graph.group.
+    - `[I``````d`````` <String>]`: 
+    - `[``````d``````elete``````d````````````d``````ateTime <``````d``````ateTime?>]`: ``````d``````ate an``````d`````` time when this object was ``````d``````elete``````d``````. Always null when the object hasn't been ``````d``````elete``````d``````.
+  - `[Fe``````d``````erationConfiguration <IMicrosoftGraphInternal``````d``````omainFe``````d``````eration[]>]`: ``````d``````omain settings configure``````d`````` by customer when fe``````d``````erate``````d`````` with Azure A``````d``````. Supports $expan``````d``````.
+    - `[IssuerUri <String>]`: Issuer URI of the fe``````d``````eration server.
+    - `[Meta``````d``````ataExchangeUri <String>]`: URI of the meta``````d``````ata exchange en``````d``````point use``````d`````` for authentication from rich client applications.
+    - `[PassiveSignInUri <String>]`: URI that web-base``````d`````` clients are ``````d``````irecte``````d`````` to when signing in to Azure Active ``````d``````irectory (Azure A``````d``````) services.
+    - `[Preferre``````d``````AuthenticationProtocol <String>]`: authenticationProtocol
+    - `[SigningCertificate <String>]`: Current certificate use``````d`````` to sign tokens passe``````d`````` to the Microsoft i``````d``````entity platform. The certificate is formatte``````d`````` as a Base64 enco``````d``````e``````d`````` string of the public portion of the fe``````d``````erate``````d`````` I``````d``````P's token signing certificate an``````d`````` must be compatible with the X509Certificate2 class.   This property is use``````d`````` in the following scenarios:  if a rollover is require``````d`````` outsi``````d``````e of the autorollover up``````d``````ate a new fe``````d``````eration service is being set up  if the new token signing certificate isn't present in the fe``````d``````eration properties after the fe``````d``````eration service certificate has been up``````d``````ate``````d``````.   Azure A``````d`````` up``````d``````ates certificates via an autorollover process in which it attempts to retrieve a new certificate from the fe``````d``````eration service meta``````d``````ata, 30 ``````d``````ays before expiry of the current certificate. If a new certificate isn't available, Azure A``````d`````` monitors the meta``````d``````ata ``````d``````aily an``````d`````` will up``````d``````ate the fe``````d``````eration settings for the ``````d``````omain when a new certificate is available.
+    - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the i``````d``````entity provi``````d``````er.
+    - `[I``````d`````` <String>]`: 
+    - `[ActiveSignInUri <String>]`: URL of the en``````d``````point use``````d`````` by active clients when authenticating with fe``````d``````erate``````d`````` ``````d``````omains set up for single sign-on in Azure Active ``````d``````irectory (Azure A``````d``````). Correspon``````d``````s to the ActiveLogOnUri property of the Set-Msol``````d``````omainFe``````d``````erationSettings MSOnline v1 PowerShell cm``````d``````let.
+    - `[Fe``````d``````erate``````d``````I``````d``````pMfaBehavior <String>]`: fe``````d``````erate``````d``````I``````d``````pMfaBehavior
+    - `[IsSigne``````d``````AuthenticationRequestRequire``````d`````` <Boolean?>]`: If true, when SAML authentication requests are sent to the fe``````d``````erate``````d`````` SAML I``````d``````P, Azure A``````d`````` will sign those requests using the OrgI``````d`````` signing key. If false (``````d``````efault), the SAML authentication requests sent to the fe``````d``````erate``````d`````` I``````d``````P are not signe``````d``````.
+    - `[NextSigningCertificate <String>]`: Fallback token signing certificate that is use``````d`````` to sign tokens when the primary signing certificate expires. Formatte``````d`````` as Base64 enco``````d``````e``````d`````` strings of the public portion of the fe``````d``````erate``````d`````` I``````d``````P's token signing certificate. Nee``````d``````s to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is use``````d`````` if a rollover is require``````d`````` outsi``````d``````e of the auto-rollover up``````d``````ate, a new fe``````d``````eration service is being set up, or if the new token signing certificate is not present in the fe``````d``````eration properties after the fe``````d``````eration service certificate has been up``````d``````ate``````d``````.
     - `[PromptLoginBehavior <String>]`: promptLoginBehavior
-    - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Azure AD services. Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
-    - `[SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]`: signingCertificateUpdateStatus
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CertificateUpdateResult <String>]`: Status of the last certificate update. Read-only. For a list of statuses, see certificateUpdateResult status.
-      - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
-  - `[IsAdminManaged <Boolean?>]`: The value of the property is false if the DNS record management of the domain has been delegated to Microsoft 365. Otherwise, the value is true. Not nullable
-  - `[IsDefault <Boolean?>]`: true if this is the default domain that is used for user creation. There is only one default domain per company. Not nullable
-  - `[IsInitial <Boolean?>]`: true if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com). There is only one initial domain per company. Not nullable
-  - `[IsRoot <Boolean?>]`: true if the domain is a verified root domain. Otherwise, false if the domain is a subdomain or unverified. Not nullable
-  - `[IsVerified <Boolean?>]`: true if the domain has completed domain ownership verification. Not nullable
+    - `[SignOutUri <String>]`: URI that clients are re``````d``````irecte``````d`````` to when they sign out of Azure A``````d`````` services. Correspon``````d``````s to the LogOffUri property of the Set-Msol``````d``````omainFe``````d``````erationSettings MSOnline v1 PowerShell cm``````d``````let.
+    - `[SigningCertificateUp``````d``````ateStatus <IMicrosoftGraphSigningCertificateUp``````d``````ateStatus>]`: signingCertificateUp``````d``````ateStatus
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+      - `[CertificateUp``````d``````ateResult <String>]`: Status of the last certificate up``````d``````ate. Rea``````d``````-only. For a list of statuses, see certificateUp``````d``````ateResult status.
+      - `[LastRun``````d``````ateTime <``````d``````ateTime?>]`: ``````d``````ate an``````d`````` time in ISO 8601 format an``````d`````` in UTC time when the certificate was last up``````d``````ate``````d``````. Rea``````d``````-only.
+  - `[IsA``````d``````minManage``````d`````` <Boolean?>]`: The value of the property is false if the ``````d``````NS recor``````d`````` management of the ``````d``````omain has been ``````d``````elegate``````d`````` to Microsoft 365. Otherwise, the value is true. Not nullable
+  - `[Is``````d``````efault <Boolean?>]`: true if this is the ``````d``````efault ``````d``````omain that is use``````d`````` for user creation. There is only one ``````d``````efault ``````d``````omain per company. Not nullable
+  - `[IsInitial <Boolean?>]`: true if this is the initial ``````d``````omain create``````d`````` by Microsoft Online Services (companyname.onmicrosoft.com). There is only one initial ``````d``````omain per company. Not nullable
+  - `[IsRoot <Boolean?>]`: true if the ``````d``````omain is a verifie``````d`````` root ``````d``````omain. Otherwise, false if the ``````d``````omain is a sub``````d``````omain or unverifie``````d``````. Not nullable
+  - `[IsVerifie``````d`````` <Boolean?>]`: true if the ``````d``````omain has complete``````d`````` ``````d``````omain ownership verification. Not nullable
   - `[Manufacturer <String>]`: 
-  - `[Model <String>]`: 
-  - `[PasswordNotificationWindowInDays <Int32?>]`: Specifies the number of days before a user receives notification that their password will expire. If the property is not set, a default value of 14 days will be used.
-  - `[PasswordValidityPeriodInDays <Int32?>]`: Specifies the length of time that a password is valid before it must be changed. If the property is not set, a default value of 90 days will be used.
-  - `[ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord[]>]`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports $expand.
-    - `[Id <String>]`: 
-    - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
-    - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
-    - `[RecordType <String>]`: Indicates what type of DNS record this entity represents.The value can be one of the following: CName, Mx, Srv, Txt.
-    - `[SupportedService <String>]`: Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
-    - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable.
-  - `[State <IMicrosoftGraphDomainState>]`: domainState
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[LastActionDateTime <DateTime?>]`: Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
-    - `[Operation <String>]`: Type of asynchronous operation. The values can be ForceDelete or Verification
-    - `[Status <String>]`: Current status of the operation.  Scheduled - Operation has been scheduled but has not started.  InProgress - Task has started and is in progress.  Failed - Operation has failed.
-  - `[SupportedServices <String[]>]`: The capabilities assigned to the domain. Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline,SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune. The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer. Not nullable.
-  - `[VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>]`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports $expand.
+  - `[Mo``````d``````el <String>]`: 
+  - `[Passwor``````d``````NotificationWin``````d``````owIn``````d``````ays <Int32?>]`: Specifies the number of ``````d``````ays before a user receives notification that their passwor``````d`````` will expire. If the property is not set, a ``````d``````efault value of 14 ``````d``````ays will be use``````d``````.
+  - `[Passwor``````d``````Vali``````d``````ityPerio``````d``````In``````d``````ays <Int32?>]`: Specifies the length of time that a passwor``````d`````` is vali``````d`````` before it must be change``````d``````. If the property is not set, a ``````d``````efault value of 90 ``````d``````ays will be use``````d``````.
+  - `[ServiceConfigurationRecor``````d``````s <IMicrosoftGraph``````d``````omain``````d``````nsRecor``````d``````[]>]`: ``````d``````NS recor``````d``````s the customer a``````d````````````d``````s to the ``````d``````NS zone file of the ``````d``````omain before the ``````d``````omain can be use``````d`````` by Microsoft Online services. Rea``````d``````-only, Nullable. Supports $expan``````d``````.
+    - `[I``````d`````` <String>]`: 
+    - `[IsOptional <Boolean?>]`: If false, this recor``````d`````` must be configure``````d`````` by the customer at the ``````d``````NS host for Microsoft Online Services to operate correctly with the ``````d``````omain.
+    - `[Label <String>]`: Value use``````d`````` when configuring the name of the ``````d``````NS recor``````d`````` at the ``````d``````NS host.
+    - `[Recor``````d``````Type <String>]`: In``````d``````icates what type of ``````d``````NS recor``````d`````` this entity represents.The value can be one of the following: CName, Mx, Srv, Txt.
+    - `[Supporte``````d``````Service <String>]`: Microsoft Online Service or feature that has a ``````d``````epen``````d``````ency on this ``````d``````NS recor``````d``````.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePoint``````d``````efault``````d``````omain, FullRe``````d``````elegation, SharePointPublic, OrgI``````d``````Authentication, Yammer, Intune.
+    - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the ``````d``````NS recor``````d`````` at the ``````d``````NS host. Not nullable.
+  - `[State <IMicrosoftGraph``````d``````omainState>]`: ``````d``````omainState
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[LastAction``````d``````ateTime <``````d``````ateTime?>]`: Timestamp for when the last activity occurre``````d``````. The value is up``````d``````ate``````d`````` when an operation is sche``````d``````ule``````d``````, the asynchronous task starts, an``````d`````` when the operation completes.
+    - `[Operation <String>]`: Type of asynchronous operation. The values can be Force``````d``````elete or Verification
+    - `[Status <String>]`: Current status of the operation.  Sche``````d``````ule``````d`````` - Operation has been sche``````d``````ule``````d`````` but has not starte``````d``````.  InProgress - Task has starte``````d`````` an``````d`````` is in progress.  Faile``````d`````` - Operation has faile``````d``````.
+  - `[Supporte``````d``````Services <String[]>]`: The capabilities assigne``````d`````` to the ``````d``````omain. Can inclu``````d``````e 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline,SharePoint``````d``````efault``````d``````omain, FullRe``````d``````elegation, SharePointPublic, OrgI``````d``````Authentication, Yammer, Intune. The values which you can a``````d````````````d``````/remove using Graph API inclu``````d``````e: Email, OfficeCommunicationsOnline, Yammer. Not nullable.
+  - `[Verification``````d``````nsRecor``````d``````s <IMicrosoftGraph``````d``````omain``````d``````nsRecor``````d``````[]>]`: ``````d``````NS recor``````d``````s that the customer a``````d````````````d``````s to the ``````d``````NS zone file of the ``````d``````omain before the customer can complete ``````d``````omain ownership verification with Azure A``````d``````. Rea``````d``````-only, Nullable. Supports $expan``````d``````.
 
-DOMAINNAMEREFERENCES <IMicrosoftGraphDirectoryObject[]>: The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports $expand and $filter by the OData type of objects returned. For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+``````d``````OMAINNAMEREFERENCES <IMicrosoftGraph``````d``````irectoryObject[]>: The objects such as users an``````d`````` groups that reference the ``````d``````omain I``````d``````. Rea``````d``````-only, Nullable. Supports $expan``````d`````` an``````d`````` $filter by the O``````d``````ata type of objects returne``````d``````. For example /``````d``````omains/{``````d``````omainI``````d``````}/``````d``````omainNameReferences/microsoft.graph.user an``````d`````` /``````d``````omains/{``````d``````omainI``````d``````}/``````d``````omainNameReferences/microsoft.graph.group.
+  - `[I``````d`````` <String>]`: 
+  - `[``````d``````elete``````d````````````d``````ateTime <``````d``````ateTime?>]`: ``````d``````ate an``````d`````` time when this object was ``````d``````elete``````d``````. Always null when the object hasn't been ``````d``````elete``````d``````.
 
-FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation[]>: Domain settings configured by customer when federated with Azure AD. Supports $expand.
-  - `[IssuerUri <String>]`: Issuer URI of the federation server.
-  - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
-  - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
-  - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
-  - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.   This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.   Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
-  - `[DisplayName <String>]`: The display name of the identity provider.
-  - `[Id <String>]`: 
-  - `[ActiveSignInUri <String>]`: URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Azure Active Directory (Azure AD). Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
-  - `[FederatedIdpMfaBehavior <String>]`: federatedIdpMfaBehavior
-  - `[IsSignedAuthenticationRequestRequired <Boolean?>]`: If true, when SAML authentication requests are sent to the federated SAML IdP, Azure AD will sign those requests using the OrgID signing key. If false (default), the SAML authentication requests sent to the federated IdP are not signed.
-  - `[NextSigningCertificate <String>]`: Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires. Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated.
+FE``````d``````ERATIONCONFIGURATION <IMicrosoftGraphInternal``````d``````omainFe``````d``````eration[]>: ``````d``````omain settings configure``````d`````` by customer when fe``````d``````erate``````d`````` with Azure A``````d``````. Supports $expan``````d``````.
+  - `[IssuerUri <String>]`: Issuer URI of the fe``````d``````eration server.
+  - `[Meta``````d``````ataExchangeUri <String>]`: URI of the meta``````d``````ata exchange en``````d``````point use``````d`````` for authentication from rich client applications.
+  - `[PassiveSignInUri <String>]`: URI that web-base``````d`````` clients are ``````d``````irecte``````d`````` to when signing in to Azure Active ``````d``````irectory (Azure A``````d``````) services.
+  - `[Preferre``````d``````AuthenticationProtocol <String>]`: authenticationProtocol
+  - `[SigningCertificate <String>]`: Current certificate use``````d`````` to sign tokens passe``````d`````` to the Microsoft i``````d``````entity platform. The certificate is formatte``````d`````` as a Base64 enco``````d``````e``````d`````` string of the public portion of the fe``````d``````erate``````d`````` I``````d``````P's token signing certificate an``````d`````` must be compatible with the X509Certificate2 class.   This property is use``````d`````` in the following scenarios:  if a rollover is require``````d`````` outsi``````d``````e of the autorollover up``````d``````ate a new fe``````d``````eration service is being set up  if the new token signing certificate isn't present in the fe``````d``````eration properties after the fe``````d``````eration service certificate has been up``````d``````ate``````d``````.   Azure A``````d`````` up``````d``````ates certificates via an autorollover process in which it attempts to retrieve a new certificate from the fe``````d``````eration service meta``````d``````ata, 30 ``````d``````ays before expiry of the current certificate. If a new certificate isn't available, Azure A``````d`````` monitors the meta``````d``````ata ``````d``````aily an``````d`````` will up``````d``````ate the fe``````d``````eration settings for the ``````d``````omain when a new certificate is available.
+  - `[``````d``````isplayName <String>]`: The ``````d``````isplay name of the i``````d``````entity provi``````d``````er.
+  - `[I``````d`````` <String>]`: 
+  - `[ActiveSignInUri <String>]`: URL of the en``````d``````point use``````d`````` by active clients when authenticating with fe``````d``````erate``````d`````` ``````d``````omains set up for single sign-on in Azure Active ``````d``````irectory (Azure A``````d``````). Correspon``````d``````s to the ActiveLogOnUri property of the Set-Msol``````d``````omainFe``````d``````erationSettings MSOnline v1 PowerShell cm``````d``````let.
+  - `[Fe``````d``````erate``````d``````I``````d``````pMfaBehavior <String>]`: fe``````d``````erate``````d``````I``````d``````pMfaBehavior
+  - `[IsSigne``````d``````AuthenticationRequestRequire``````d`````` <Boolean?>]`: If true, when SAML authentication requests are sent to the fe``````d``````erate``````d`````` SAML I``````d``````P, Azure A``````d`````` will sign those requests using the OrgI``````d`````` signing key. If false (``````d``````efault), the SAML authentication requests sent to the fe``````d``````erate``````d`````` I``````d``````P are not signe``````d``````.
+  - `[NextSigningCertificate <String>]`: Fallback token signing certificate that is use``````d`````` to sign tokens when the primary signing certificate expires. Formatte``````d`````` as Base64 enco``````d``````e``````d`````` strings of the public portion of the fe``````d``````erate``````d`````` I``````d``````P's token signing certificate. Nee``````d``````s to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is use``````d`````` if a rollover is require``````d`````` outsi``````d``````e of the auto-rollover up``````d``````ate, a new fe``````d``````eration service is being set up, or if the new token signing certificate is not present in the fe``````d``````eration properties after the fe``````d``````eration service certificate has been up``````d``````ate``````d``````.
   - `[PromptLoginBehavior <String>]`: promptLoginBehavior
-  - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Azure AD services. Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
-  - `[SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]`: signingCertificateUpdateStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CertificateUpdateResult <String>]`: Status of the last certificate update. Read-only. For a list of statuses, see certificateUpdateResult status.
-    - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
+  - `[SignOutUri <String>]`: URI that clients are re``````d``````irecte``````d`````` to when they sign out of Azure A``````d`````` services. Correspon``````d``````s to the LogOffUri property of the Set-Msol``````d``````omainFe``````d``````erationSettings MSOnline v1 PowerShell cm``````d``````let.
+  - `[SigningCertificateUp``````d``````ateStatus <IMicrosoftGraphSigningCertificateUp``````d``````ateStatus>]`: signingCertificateUp``````d``````ateStatus
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[CertificateUp``````d``````ateResult <String>]`: Status of the last certificate up``````d``````ate. Rea``````d``````-only. For a list of statuses, see certificateUp``````d``````ateResult status.
+    - `[LastRun``````d``````ateTime <``````d``````ateTime?>]`: ``````d``````ate an``````d`````` time in ISO 8601 format an``````d`````` in UTC time when the certificate was last up``````d``````ate``````d``````. Rea``````d``````-only.
 
-SERVICECONFIGURATIONRECORDS <IMicrosoftGraphDomainDnsRecord[]>: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports $expand.
-  - `[Id <String>]`: 
-  - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
-  - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
-  - `[RecordType <String>]`: Indicates what type of DNS record this entity represents.The value can be one of the following: CName, Mx, Srv, Txt.
-  - `[SupportedService <String>]`: Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
-  - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable.
+SERVICECONFIGURATIONRECOR``````d``````S <IMicrosoftGraph``````d``````omain``````d``````nsRecor``````d``````[]>: ``````d``````NS recor``````d``````s the customer a``````d````````````d``````s to the ``````d``````NS zone file of the ``````d``````omain before the ``````d``````omain can be use``````d`````` by Microsoft Online services. Rea``````d``````-only, Nullable. Supports $expan``````d``````.
+  - `[I``````d`````` <String>]`: 
+  - `[IsOptional <Boolean?>]`: If false, this recor``````d`````` must be configure``````d`````` by the customer at the ``````d``````NS host for Microsoft Online Services to operate correctly with the ``````d``````omain.
+  - `[Label <String>]`: Value use``````d`````` when configuring the name of the ``````d``````NS recor``````d`````` at the ``````d``````NS host.
+  - `[Recor``````d``````Type <String>]`: In``````d``````icates what type of ``````d``````NS recor``````d`````` this entity represents.The value can be one of the following: CName, Mx, Srv, Txt.
+  - `[Supporte``````d``````Service <String>]`: Microsoft Online Service or feature that has a ``````d``````epen``````d``````ency on this ``````d``````NS recor``````d``````.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePoint``````d``````efault``````d``````omain, FullRe``````d``````elegation, SharePointPublic, OrgI``````d``````Authentication, Yammer, Intune.
+  - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the ``````d``````NS recor``````d`````` at the ``````d``````NS host. Not nullable.
 
-STATE <IMicrosoftGraphDomainState>: domainState
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LastActionDateTime <DateTime?>]`: Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
-  - `[Operation <String>]`: Type of asynchronous operation. The values can be ForceDelete or Verification
-  - `[Status <String>]`: Current status of the operation.  Scheduled - Operation has been scheduled but has not started.  InProgress - Task has started and is in progress.  Failed - Operation has failed.
+STATE <IMicrosoftGraph``````d``````omainState>: ``````d``````omainState
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[LastAction``````d``````ateTime <``````d``````ateTime?>]`: Timestamp for when the last activity occurre``````d``````. The value is up``````d``````ate``````d`````` when an operation is sche``````d``````ule``````d``````, the asynchronous task starts, an``````d`````` when the operation completes.
+  - `[Operation <String>]`: Type of asynchronous operation. The values can be Force``````d``````elete or Verification
+  - `[Status <String>]`: Current status of the operation.  Sche``````d``````ule``````d`````` - Operation has been sche``````d``````ule``````d`````` but has not starte``````d``````.  InProgress - Task has starte``````d`````` an``````d`````` is in progress.  Faile``````d`````` - Operation has faile``````d``````.
 
-VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord[]>: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports $expand.
-  - `[Id <String>]`: 
-  - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
-  - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
-  - `[RecordType <String>]`: Indicates what type of DNS record this entity represents.The value can be one of the following: CName, Mx, Srv, Txt.
-  - `[SupportedService <String>]`: Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
-  - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable.
+VERIFICATION``````d``````NSRECOR``````d``````S <IMicrosoftGraph``````d``````omain``````d``````nsRecor``````d``````[]>: ``````d``````NS recor``````d``````s that the customer a``````d````````````d``````s to the ``````d``````NS zone file of the ``````d``````omain before the customer can complete ``````d``````omain ownership verification with Azure A``````d``````. Rea``````d``````-only, Nullable. Supports $expan``````d``````.
+  - `[I``````d`````` <String>]`: 
+  - `[IsOptional <Boolean?>]`: If false, this recor``````d`````` must be configure``````d`````` by the customer at the ``````d``````NS host for Microsoft Online Services to operate correctly with the ``````d``````omain.
+  - `[Label <String>]`: Value use``````d`````` when configuring the name of the ``````d``````NS recor``````d`````` at the ``````d``````NS host.
+  - `[Recor``````d``````Type <String>]`: In``````d``````icates what type of ``````d``````NS recor``````d`````` this entity represents.The value can be one of the following: CName, Mx, Srv, Txt.
+  - `[Supporte``````d``````Service <String>]`: Microsoft Online Service or feature that has a ``````d``````epen``````d``````ency on this ``````d``````NS recor``````d``````.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePoint``````d``````efault``````d``````omain, FullRe``````d``````elegation, SharePointPublic, OrgI``````d``````Authentication, Yammer, Intune.
+  - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the ``````d``````NS recor``````d`````` at the ``````d``````NS host. Not nullable.
 
-## RELATED LINKS
+## RELATE``````d`````` LINKS
 
-## RELATED LINKS
+## RELATE``````d`````` LINKS
