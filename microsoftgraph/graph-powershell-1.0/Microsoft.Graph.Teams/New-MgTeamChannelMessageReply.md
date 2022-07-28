@@ -1,847 +1,847 @@
-﻿---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamchannelmessagereply
-schema: 2.0.0
+---
+``````````e``````````xt``````````e``````````rnal h``````````e``````````lp fil``````````e``````````: Microsoft.Graph.T``````````e``````````ams-h``````````e``````````lp.xml
+Modul``````````e`````````` Nam``````````e``````````: Microsoft.Graph.T``````````e``````````ams
+onlin``````````e`````````` v``````````e``````````rsion: https://docs.microsoft.com/``````````e``````````n-us/pow``````````e``````````rsh``````````e``````````ll/modul``````````e``````````/microsoft.graph.t``````````e``````````ams/n``````````e``````````w-mgt``````````e``````````amchann``````````e``````````lm``````````e``````````ssag``````````e``````````r``````````e``````````ply
+sch``````````e``````````ma: 2.0.0
 ---
 
-# New-MgTeamChannelMessageReply
+# N``````````e``````````w-MgT``````````e``````````amChann``````````e``````````lM``````````e``````````ssag``````````e``````````R``````````e``````````ply
 
 ## SYNOPSIS
-Create new navigation property to replies for teams
+Cr``````````e``````````at``````````e`````````` n``````````e``````````w navigation prop``````````e``````````rty to r``````````e``````````pli``````````e``````````s for t``````````e``````````ams
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1 (D``````````e``````````fault)
 ```
-New-MgTeamChannelMessageReply -ChannelId <String> -ChatMessageId <String> -TeamId <String>
- [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment[]>]
- [-Body <IMicrosoftGraphItemBody>] [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId <String>]
- [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>]
- [-From <Hashtable>] [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>]
- [-Importance <String>] [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
- [-Mentions <IMicrosoftGraphChatMessageMention[]>] [-MessageType <String>]
- [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
- [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage1[]>]
- [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgTeamChannelMessageReply -ChannelId <String> -ChatMessageId <String> -TeamId <String>
- -BodyParameter <IMicrosoftGraphChatMessage1> [-WhatIf] [-Confirm] [<CommonParameters>]
+N``````````e``````````w-MgT``````````e``````````amChann``````````e``````````lM``````````e``````````ssag``````````e``````````R``````````e``````````ply -Chann``````````e``````````lId <String> -ChatM``````````e``````````ssag``````````e``````````Id <String> -T``````````e``````````amId <String>
+ [-AdditionalProp``````````e``````````rti``````````e``````````s <Hashtabl``````````e``````````>] [-Attachm``````````e``````````nts <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Attachm``````````e``````````nt[]>]
+ [-Body <IMicrosoftGraphIt``````````e``````````mBody>] [-Chann``````````e``````````lId``````````e``````````ntity <IMicrosoftGraphChann``````````e``````````lId``````````e``````````ntity>] [-ChatId <String>]
+ [-Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>] [-D``````````e``````````l``````````e``````````t``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>] [-``````````e``````````tag <String>] [-``````````e``````````v``````````e``````````ntD``````````e``````````tail <Hashtabl``````````e``````````>]
+ [-From <Hashtabl``````````e``````````>] [-Host``````````e``````````dCont``````````e``````````nts <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Host``````````e``````````dCont``````````e``````````nt[]>] [-Id <String>]
+ [-Importanc``````````e`````````` <String>] [-Last``````````e``````````dit``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>] [-LastModifi``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>] [-Local``````````e`````````` <String>]
+ [-M``````````e``````````ntions <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion[]>] [-M``````````e``````````ssag``````````e``````````Typ``````````e`````````` <String>]
+ [-PolicyViolation <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````PolicyViolation>]
+ [-R``````````e``````````actions <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````R``````````e``````````action[]>] [-R``````````e``````````pli``````````e``````````s <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1[]>]
+ [-R``````````e``````````plyToId <String>] [-Subj``````````e``````````ct <String>] [-Summary <String>] [-W``````````e``````````bUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParam``````````e``````````t``````````e``````````rs>]
 ```
 
-### CreateViaIdentityExpanded1
+### Cr``````````e``````````at``````````e``````````1
 ```
-New-MgTeamChannelMessageReply -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
- [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId <String>] [-CreatedDateTime <DateTime>]
- [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>] [-From <Hashtable>]
- [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>] [-Importance <String>]
- [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
- [-Mentions <IMicrosoftGraphChatMessageMention[]>] [-MessageType <String>]
- [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
- [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage1[]>]
- [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+N``````````e``````````w-MgT``````````e``````````amChann``````````e``````````lM``````````e``````````ssag``````````e``````````R``````````e``````````ply -Chann``````````e``````````lId <String> -ChatM``````````e``````````ssag``````````e``````````Id <String> -T``````````e``````````amId <String>
+ -BodyParam``````````e``````````t``````````e``````````r <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1> [-WhatIf] [-Confirm] [<CommonParam``````````e``````````t``````````e``````````rs>]
 ```
 
-### CreateViaIdentity1
+### Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
 ```
-New-MgTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessage1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+N``````````e``````````w-MgT``````````e``````````amChann``````````e``````````lM``````````e``````````ssag``````````e``````````R``````````e``````````ply -InputObj``````````e``````````ct <IT``````````e``````````amsId``````````e``````````ntity> [-AdditionalProp``````````e``````````rti``````````e``````````s <Hashtabl``````````e``````````>]
+ [-Attachm``````````e``````````nts <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Attachm``````````e``````````nt[]>] [-Body <IMicrosoftGraphIt``````````e``````````mBody>]
+ [-Chann``````````e``````````lId``````````e``````````ntity <IMicrosoftGraphChann``````````e``````````lId``````````e``````````ntity>] [-ChatId <String>] [-Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>]
+ [-D``````````e``````````l``````````e``````````t``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>] [-``````````e``````````tag <String>] [-``````````e``````````v``````````e``````````ntD``````````e``````````tail <Hashtabl``````````e``````````>] [-From <Hashtabl``````````e``````````>]
+ [-Host``````````e``````````dCont``````````e``````````nts <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Host``````````e``````````dCont``````````e``````````nt[]>] [-Id <String>] [-Importanc``````````e`````````` <String>]
+ [-Last``````````e``````````dit``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>] [-LastModifi``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>] [-Local``````````e`````````` <String>]
+ [-M``````````e``````````ntions <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion[]>] [-M``````````e``````````ssag``````````e``````````Typ``````````e`````````` <String>]
+ [-PolicyViolation <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````PolicyViolation>]
+ [-R``````````e``````````actions <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````R``````````e``````````action[]>] [-R``````````e``````````pli``````````e``````````s <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1[]>]
+ [-R``````````e``````````plyToId <String>] [-Subj``````````e``````````ct <String>] [-Summary <String>] [-W``````````e``````````bUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParam``````````e``````````t``````````e``````````rs>]
 ```
 
-## DESCRIPTION
-Create new navigation property to replies for teams
+### Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity1
+```
+N``````````e``````````w-MgT``````````e``````````amChann``````````e``````````lM``````````e``````````ssag``````````e``````````R``````````e``````````ply -InputObj``````````e``````````ct <IT``````````e``````````amsId``````````e``````````ntity> -BodyParam``````````e``````````t``````````e``````````r <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1>
+ [-WhatIf] [-Confirm] [<CommonParam``````````e``````````t``````````e``````````rs>]
+```
 
-## EXAMPLES
+## D``````````e``````````SCRIPTION
+Cr``````````e``````````at``````````e`````````` n``````````e``````````w navigation prop``````````e``````````rty to r``````````e``````````pli``````````e``````````s for t``````````e``````````ams
 
-## PARAMETERS
+## ``````````e``````````XAMPL``````````e``````````S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM``````````e``````````T``````````e``````````RS
+
+### -AdditionalProp``````````e``````````rti``````````e``````````s
+Additional Param``````````e``````````t``````````e``````````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: Hashtabl``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Attachments
-References to attached objects like files, tabs, meetings etc.
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
+### -Attachm``````````e``````````nts
+R``````````e``````````f``````````e``````````r``````````e``````````nc``````````e``````````s to attach``````````e``````````d obj``````````e``````````cts lik``````````e`````````` fil``````````e``````````s, tabs, m``````````e````````````````````e``````````tings ``````````e``````````tc.
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for ATTACHM``````````e``````````NTS prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageAttachment[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Attachm``````````e``````````nt[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -Body
-itemBody
-To construct, please use Get-Help -Online and see NOTES section for BODY properties and create a hash table.
+it``````````e``````````mBody
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for BODY prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphIt``````````e``````````mBody
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -BodyParameter
-chatMessage
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam``````````e``````````t``````````e``````````r
+chatM``````````e``````````ssag``````````e``````````
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for BODYPARAM``````````e``````````T``````````e``````````R prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage1
-Parameter Sets: Create1, CreateViaIdentity1
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e``````````1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity1
+Alias``````````e``````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Tru``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Tru``````````e`````````` (ByValu``````````e``````````)
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -ChannelId
-key: id of channel
+### -Chann``````````e``````````lId
+k``````````e``````````y: id of chann``````````e``````````l
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````1
+Alias``````````e``````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Tru``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -ChannelIdentity
-channelIdentity
-To construct, please use Get-Help -Online and see NOTES section for CHANNELIDENTITY properties and create a hash table.
+### -Chann``````````e``````````lId``````````e``````````ntity
+chann``````````e``````````lId``````````e``````````ntity
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for CHANN``````````e``````````LID``````````e``````````NTITY prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphChannelIdentity
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphChann``````````e``````````lId``````````e``````````ntity
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -ChatId
-If the message was sent in a chat, represents the identity of the chat.
+If th``````````e`````````` m``````````e``````````ssag``````````e`````````` was s``````````e``````````nt in a chat, r``````````e``````````pr``````````e``````````s``````````e``````````nts th``````````e`````````` id``````````e``````````ntity of th``````````e`````````` chat.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -ChatMessageId
-key: id of chatMessage
+### -ChatM``````````e``````````ssag``````````e``````````Id
+k``````````e``````````y: id of chatM``````````e``````````ssag``````````e``````````
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````1
+Alias``````````e``````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Tru``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -CreatedDateTime
-Timestamp of when the chat message was created.
+### -Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e``````````
+Tim``````````e``````````stamp of wh``````````e``````````n th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` was cr``````````e``````````at``````````e``````````d.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: Dat``````````e``````````Tim``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -DeletedDateTime
-Read only.
-Timestamp at which the chat message was deleted, or null if not deleted.
+### -D``````````e``````````l``````````e``````````t``````````e``````````dDat``````````e``````````Tim``````````e``````````
+R``````````e``````````ad only.
+Tim``````````e``````````stamp at which th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` was d``````````e``````````l``````````e``````````t``````````e``````````d, or null if not d``````````e``````````l``````````e``````````t``````````e``````````d.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: Dat``````````e``````````Tim``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Etag
-Read-only.
-Version number of the chat message.
+### -``````````e``````````tag
+R``````````e``````````ad-only.
+V``````````e``````````rsion numb``````````e``````````r of th``````````e`````````` chat m``````````e``````````ssag``````````e``````````.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -EventDetail
-eventMessageDetail
+### -``````````e``````````v``````````e``````````ntD``````````e``````````tail
+``````````e``````````v``````````e``````````ntM``````````e``````````ssag``````````e``````````D``````````e``````````tail
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: Hashtabl``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -From
-chatMessageFromIdentitySet
+chatM``````````e``````````ssag``````````e``````````FromId``````````e``````````ntityS``````````e``````````t
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: Hashtabl``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -HostedContents
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-To construct, please use Get-Help -Online and see NOTES section for HOSTEDCONTENTS properties and create a hash table.
+### -Host``````````e``````````dCont``````````e``````````nts
+Cont``````````e``````````nt in a m``````````e``````````ssag``````````e`````````` host``````````e``````````d by Microsoft T``````````e``````````ams - for ``````````e``````````xampl``````````e``````````, imag``````````e``````````s or cod``````````e`````````` snipp``````````e``````````ts.
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for HOST``````````e``````````DCONT``````````e``````````NTS prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageHostedContent[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Host``````````e``````````dCont``````````e``````````nt[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Importance
+### -Importanc``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj``````````e``````````ct
+Id``````````e``````````ntity Param``````````e``````````t``````````e``````````r
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for INPUTOBJ``````````e``````````CT prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
-Aliases:
+Typ``````````e``````````: IT``````````e``````````amsId``````````e``````````ntity
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity1
+Alias``````````e``````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Tru``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Tru``````````e`````````` (ByValu``````````e``````````)
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -LastEditedDateTime
-Read only.
-Timestamp when edits to the chat message were made.
-Triggers an 'Edited' flag in the Teams UI.
-If no edits are made the value is null.
+### -Last``````````e``````````dit``````````e``````````dDat``````````e``````````Tim``````````e``````````
+R``````````e``````````ad only.
+Tim``````````e``````````stamp wh``````````e``````````n ``````````e``````````dits to th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` w``````````e``````````r``````````e`````````` mad``````````e``````````.
+Trigg``````````e``````````rs an '``````````e``````````dit``````````e``````````d' flag in th``````````e`````````` T``````````e``````````ams UI.
+If no ``````````e``````````dits ar``````````e`````````` mad``````````e`````````` th``````````e`````````` valu``````````e`````````` is null.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: Dat``````````e``````````Tim``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -LastModifiedDateTime
-Read only.
-Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
+### -LastModifi``````````e``````````dDat``````````e``````````Tim``````````e``````````
+R``````````e``````````ad only.
+Tim``````````e``````````stamp wh``````````e``````````n th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` is cr``````````e``````````at``````````e``````````d (initial s``````````e``````````tting) or modifi``````````e``````````d, including wh``````````e``````````n a r``````````e``````````action is add``````````e``````````d or r``````````e``````````mov``````````e``````````d.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: Dat``````````e``````````Tim``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Locale
-Locale of the chat message set by the client.
-Always set to en-us.
+### -Local``````````e``````````
+Local``````````e`````````` of th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` s``````````e``````````t by th``````````e`````````` cli``````````e``````````nt.
+Always s``````````e``````````t to ``````````e``````````n-us.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Mentions
-List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
-To construct, please use Get-Help -Online and see NOTES section for MENTIONS properties and create a hash table.
+### -M``````````e``````````ntions
+List of ``````````e``````````ntiti``````````e``````````s m``````````e``````````ntion``````````e``````````d in th``````````e`````````` chat m``````````e``````````ssag``````````e``````````.
+Support``````````e``````````d ``````````e``````````ntiti``````````e``````````s ar``````````e``````````: us``````````e``````````r, bot, t``````````e``````````am, chann``````````e``````````l, and tag.
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for M``````````e``````````NTIONS prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageMention[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -MessageType
-chatMessageType
+### -M``````````e``````````ssag``````````e``````````Typ``````````e``````````
+chatM``````````e``````````ssag``````````e``````````Typ``````````e``````````
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -PolicyViolation
-chatMessagePolicyViolation
-To construct, please use Get-Help -Online and see NOTES section for POLICYVIOLATION properties and create a hash table.
+chatM``````````e``````````ssag``````````e``````````PolicyViolation
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for POLICYVIOLATION prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphChatMessagePolicyViolation
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````PolicyViolation
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Reactions
-Reactions for this chat message (for example, Like).
-To construct, please use Get-Help -Online and see NOTES section for REACTIONS properties and create a hash table.
+### -R``````````e``````````actions
+R``````````e``````````actions for this chat m``````````e``````````ssag``````````e`````````` (for ``````````e``````````xampl``````````e``````````, Lik``````````e``````````).
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for R``````````e``````````ACTIONS prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageReaction[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````R``````````e``````````action[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Replies
-Replies for a specified message.
-Supports $expand for channel messages.
-To construct, please use Get-Help -Online and see NOTES section for REPLIES properties and create a hash table.
+### -R``````````e``````````pli``````````e``````````s
+R``````````e``````````pli``````````e``````````s for a sp``````````e``````````cifi``````````e``````````d m``````````e``````````ssag``````````e``````````.
+Supports $``````````e``````````xpand for chann``````````e``````````l m``````````e``````````ssag``````````e``````````s.
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for R``````````e``````````PLI``````````e``````````S prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage1[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -ReplyToId
-Read-only.
-ID of the parent chat message or root chat message of the thread.
-(Only applies to chat messages in channels, not chats.)
+### -R``````````e``````````plyToId
+R``````````e``````````ad-only.
+ID of th``````````e`````````` par``````````e``````````nt chat m``````````e``````````ssag``````````e`````````` or root chat m``````````e``````````ssag``````````e`````````` of th``````````e`````````` thr``````````e``````````ad.
+(Only appli``````````e``````````s to chat m``````````e``````````ssag``````````e``````````s in chann``````````e``````````ls, not chats.)
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Subject
-The subject of the chat message, in plaintext.
+### -Subj``````````e``````````ct
+Th``````````e`````````` subj``````````e``````````ct of th``````````e`````````` chat m``````````e``````````ssag``````````e``````````, in plaint``````````e``````````xt.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -Summary
-Summary text of the chat message that could be used for push notifications and summary views or fall back views.
-Only applies to channel chat messages, not chat messages in a chat.
+Summary t``````````e``````````xt of th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` that could b``````````e`````````` us``````````e``````````d for push notifications and summary vi``````````e``````````ws or fall back vi``````````e``````````ws.
+Only appli``````````e``````````s to chann``````````e``````````l chat m``````````e``````````ssag``````````e``````````s, not chat m``````````e``````````ssag``````````e``````````s in a chat.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -TeamId
-key: id of team
+### -T``````````e``````````amId
+k``````````e``````````y: id of t``````````e``````````am
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````1
+Alias``````````e``````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Tru``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -WebUrl
-Read-only.
-Link to the message in Microsoft Teams.
+### -W``````````e``````````bUrl
+R``````````e``````````ad-only.
+Link to th``````````e`````````` m``````````e``````````ssag``````````e`````````` in Microsoft T``````````e``````````ams.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d1, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d1
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``````````e``````````for``````````e`````````` running th``````````e`````````` cmdl``````````e``````````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``````````e``````````: SwitchParam``````````e``````````t``````````e``````````r
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: (All)
+Alias``````````e``````````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``````````e``````````n if th``````````e`````````` cmdl``````````e``````````t runs.
+Th``````````e`````````` cmdl``````````e``````````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``````````e``````````: SwitchParam``````````e``````````t``````````e``````````r
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: (All)
+Alias``````````e``````````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``````````e``````````t``````````e``````````rs
+This cmdl``````````e``````````t supports th``````````e`````````` common param``````````e``````````t``````````e``````````rs: -D``````````e``````````bug, -``````````e``````````rrorAction, -``````````e``````````rrorVariabl``````````e``````````, -InformationAction, -InformationVariabl``````````e``````````, -OutVariabl``````````e``````````, -OutBuff``````````e``````````r, -Pip``````````e``````````lin``````````e``````````Variabl``````````e``````````, -V``````````e``````````rbos``````````e``````````, -WarningAction, and -WarningVariabl``````````e``````````. For mor``````````e`````````` information, s``````````e````````````````````e`````````` [about_CommonParam``````````e``````````t``````````e``````````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Pow``````````e``````````rSh``````````e``````````ll.Mod``````````e``````````ls.IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1
+### Microsoft.Graph.Pow``````````e``````````rSh``````````e``````````ll.Mod``````````e``````````ls.IT``````````e``````````amsId``````````e``````````ntity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
-## NOTES
+### Microsoft.Graph.Pow``````````e``````````rSh``````````e``````````ll.Mod``````````e``````````ls.IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1
+## NOT``````````e``````````S
 
-ALIASES
+ALIAS``````````e``````````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``````````e``````````X PARAM``````````e``````````T``````````e``````````R PROP``````````e``````````RTI``````````e``````````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``````````e``````````at``````````e`````````` th``````````e`````````` param``````````e``````````t``````````e``````````rs d``````````e``````````scrib``````````e``````````d b``````````e``````````low, construct a hash tabl``````````e`````````` containing th``````````e`````````` appropriat``````````e`````````` prop``````````e``````````rti``````````e``````````s. For information on hash tabl``````````e``````````s, run G``````````e``````````t-H``````````e``````````lp about_Hash_Tabl``````````e``````````s.
 
 
-ATTACHMENTS <IMicrosoftGraphChatMessageAttachment[]>: References to attached objects like files, tabs, meetings etc.
-  - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
-  - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
-  - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
-  - `[Id <String>]`: Read-only. Unique id of the attachment.
-  - `[Name <String>]`: Name of the attachment.
-  - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
+ATTACHM``````````e``````````NTS <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Attachm``````````e``````````nt[]>: R``````````e``````````f``````````e``````````r``````````e``````````nc``````````e``````````s to attach``````````e``````````d obj``````````e``````````cts lik``````````e`````````` fil``````````e``````````s, tabs, m``````````e````````````````````e``````````tings ``````````e``````````tc.
+  - `[Cont``````````e``````````nt <String>]`: Th``````````e`````````` cont``````````e``````````nt of th``````````e`````````` attachm``````````e``````````nt. If th``````````e`````````` attachm``````````e``````````nt is a rich card, s``````````e``````````t th``````````e`````````` prop``````````e``````````rty to th``````````e`````````` rich card obj``````````e``````````ct. This prop``````````e``````````rty and cont``````````e``````````ntUrl ar``````````e`````````` mutually ``````````e``````````xclusiv``````````e``````````.
+  - `[Cont``````````e``````````ntTyp``````````e`````````` <String>]`: Th``````````e`````````` m``````````e``````````dia typ``````````e`````````` of th``````````e`````````` cont``````````e``````````nt attachm``````````e``````````nt. It can hav``````````e`````````` th``````````e`````````` following valu``````````e``````````s: r``````````e``````````f``````````e``````````r``````````e``````````nc``````````e``````````: Attachm``````````e``````````nt is a link to anoth``````````e``````````r fil``````````e``````````. Populat``````````e`````````` th``````````e`````````` cont``````````e``````````ntURL with th``````````e`````````` link to th``````````e`````````` obj``````````e``````````ct.Any cont``````````e``````````ntTyp``````````e``````````s support``````````e``````````d by th``````````e`````````` Bot Fram``````````e``````````work's Attachm``````````e``````````nt obj``````````e``````````ctapplication/vnd.microsoft.card.cod``````````e``````````snipp``````````e``````````t: A cod``````````e`````````` snipp``````````e``````````t. application/vnd.microsoft.card.announc``````````e``````````m``````````e``````````nt: An announc``````````e``````````m``````````e``````````nt h``````````e``````````ad``````````e``````````r.
+  - `[Cont``````````e``````````ntUrl <String>]`: URL for th``````````e`````````` cont``````````e``````````nt of th``````````e`````````` attachm``````````e``````````nt. Support``````````e``````````d protocols: http, https, fil``````````e`````````` and data.
+  - `[Id <String>]`: R``````````e``````````ad-only. Uniqu``````````e`````````` id of th``````````e`````````` attachm``````````e``````````nt.
+  - `[Nam``````````e`````````` <String>]`: Nam``````````e`````````` of th``````````e`````````` attachm``````````e``````````nt.
+  - `[ThumbnailUrl <String>]`: URL to a thumbnail imag``````````e`````````` that th``````````e`````````` chann``````````e``````````l can us``````````e`````````` if it supports using an alt``````````e``````````rnativ``````````e``````````, small``````````e``````````r form of cont``````````e``````````nt or cont``````````e``````````ntUrl. For ``````````e``````````xampl``````````e``````````, if you s``````````e``````````t cont``````````e``````````ntTyp``````````e`````````` to application/word and s``````````e``````````t cont``````````e``````````ntUrl to th``````````e`````````` location of th``````````e`````````` Word docum``````````e``````````nt, you might includ``````````e`````````` a thumbnail imag``````````e`````````` that r``````````e``````````pr``````````e``````````s``````````e``````````nts th``````````e`````````` docum``````````e``````````nt. Th``````````e`````````` chann``````````e``````````l could display th``````````e`````````` thumbnail imag``````````e`````````` inst``````````e``````````ad of th``````````e`````````` docum``````````e``````````nt. Wh``````````e``````````n th``````````e`````````` us``````````e``````````r clicks th``````````e`````````` imag``````````e``````````, th``````````e`````````` chann``````````e``````````l would op``````````e``````````n th``````````e`````````` docum``````````e``````````nt.
 
-BODY <IMicrosoftGraphItemBody>: itemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of the item.
-  - `[ContentType <String>]`: bodyType
+BODY <IMicrosoftGraphIt``````````e``````````mBody>: it``````````e``````````mBody
+  - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+  - `[Cont``````````e``````````nt <String>]`: Th``````````e`````````` cont``````````e``````````nt of th``````````e`````````` it``````````e``````````m.
+  - `[Cont``````````e``````````ntTyp``````````e`````````` <String>]`: bodyTyp``````````e``````````
 
-BODYPARAMETER <IMicrosoftGraphChatMessage1>: chatMessage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM``````````e``````````T``````````e``````````R <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1>: chatM``````````e``````````ssag``````````e``````````
+  - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
   - `[Id <String>]`: 
-  - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: References to attached objects like files, tabs, meetings etc.
-    - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
-    - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
-    - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
-    - `[Id <String>]`: Read-only. Unique id of the attachment.
-    - `[Name <String>]`: Name of the attachment.
-    - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ChannelId <String>]`: The identity of the channel in which the message was posted.
-    - `[TeamId <String>]`: The identity of the team in which the message was posted.
-  - `[ChatId <String>]`: If the message was sent in a chat, represents the identity of the chat.
-  - `[CreatedDateTime <DateTime?>]`: Timestamp of when the chat message was created.
-  - `[DeletedDateTime <DateTime?>]`: Read only. Timestamp at which the chat message was deleted, or null if not deleted.
-  - `[Etag <String>]`: Read-only. Version number of the chat message.
-  - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-    - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-    - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+  - `[Attachm``````````e``````````nts <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Attachm``````````e``````````nt[]>]`: R``````````e``````````f``````````e``````````r``````````e``````````nc``````````e``````````s to attach``````````e``````````d obj``````````e``````````cts lik``````````e`````````` fil``````````e``````````s, tabs, m``````````e````````````````````e``````````tings ``````````e``````````tc.
+    - `[Cont``````````e``````````nt <String>]`: Th``````````e`````````` cont``````````e``````````nt of th``````````e`````````` attachm``````````e``````````nt. If th``````````e`````````` attachm``````````e``````````nt is a rich card, s``````````e``````````t th``````````e`````````` prop``````````e``````````rty to th``````````e`````````` rich card obj``````````e``````````ct. This prop``````````e``````````rty and cont``````````e``````````ntUrl ar``````````e`````````` mutually ``````````e``````````xclusiv``````````e``````````.
+    - `[Cont``````````e``````````ntTyp``````````e`````````` <String>]`: Th``````````e`````````` m``````````e``````````dia typ``````````e`````````` of th``````````e`````````` cont``````````e``````````nt attachm``````````e``````````nt. It can hav``````````e`````````` th``````````e`````````` following valu``````````e``````````s: r``````````e``````````f``````````e``````````r``````````e``````````nc``````````e``````````: Attachm``````````e``````````nt is a link to anoth``````````e``````````r fil``````````e``````````. Populat``````````e`````````` th``````````e`````````` cont``````````e``````````ntURL with th``````````e`````````` link to th``````````e`````````` obj``````````e``````````ct.Any cont``````````e``````````ntTyp``````````e``````````s support``````````e``````````d by th``````````e`````````` Bot Fram``````````e``````````work's Attachm``````````e``````````nt obj``````````e``````````ctapplication/vnd.microsoft.card.cod``````````e``````````snipp``````````e``````````t: A cod``````````e`````````` snipp``````````e``````````t. application/vnd.microsoft.card.announc``````````e``````````m``````````e``````````nt: An announc``````````e``````````m``````````e``````````nt h``````````e``````````ad``````````e``````````r.
+    - `[Cont``````````e``````````ntUrl <String>]`: URL for th``````````e`````````` cont``````````e``````````nt of th``````````e`````````` attachm``````````e``````````nt. Support``````````e``````````d protocols: http, https, fil``````````e`````````` and data.
+    - `[Id <String>]`: R``````````e``````````ad-only. Uniqu``````````e`````````` id of th``````````e`````````` attachm``````````e``````````nt.
+    - `[Nam``````````e`````````` <String>]`: Nam``````````e`````````` of th``````````e`````````` attachm``````````e``````````nt.
+    - `[ThumbnailUrl <String>]`: URL to a thumbnail imag``````````e`````````` that th``````````e`````````` chann``````````e``````````l can us``````````e`````````` if it supports using an alt``````````e``````````rnativ``````````e``````````, small``````````e``````````r form of cont``````````e``````````nt or cont``````````e``````````ntUrl. For ``````````e``````````xampl``````````e``````````, if you s``````````e``````````t cont``````````e``````````ntTyp``````````e`````````` to application/word and s``````````e``````````t cont``````````e``````````ntUrl to th``````````e`````````` location of th``````````e`````````` Word docum``````````e``````````nt, you might includ``````````e`````````` a thumbnail imag``````````e`````````` that r``````````e``````````pr``````````e``````````s``````````e``````````nts th``````````e`````````` docum``````````e``````````nt. Th``````````e`````````` chann``````````e``````````l could display th``````````e`````````` thumbnail imag``````````e`````````` inst``````````e``````````ad of th``````````e`````````` docum``````````e``````````nt. Wh``````````e``````````n th``````````e`````````` us``````````e``````````r clicks th``````````e`````````` imag``````````e``````````, th``````````e`````````` chann``````````e``````````l would op``````````e``````````n th``````````e`````````` docum``````````e``````````nt.
+  - `[Body <IMicrosoftGraphIt``````````e``````````mBody>]`: it``````````e``````````mBody
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[Cont``````````e``````````nt <String>]`: Th``````````e`````````` cont``````````e``````````nt of th``````````e`````````` it``````````e``````````m.
+    - `[Cont``````````e``````````ntTyp``````````e`````````` <String>]`: bodyTyp``````````e``````````
+  - `[Chann``````````e``````````lId``````````e``````````ntity <IMicrosoftGraphChann``````````e``````````lId``````````e``````````ntity>]`: chann``````````e``````````lId``````````e``````````ntity
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[Chann``````````e``````````lId <String>]`: Th``````````e`````````` id``````````e``````````ntity of th``````````e`````````` chann``````````e``````````l in which th``````````e`````````` m``````````e``````````ssag``````````e`````````` was post``````````e``````````d.
+    - `[T``````````e``````````amId <String>]`: Th``````````e`````````` id``````````e``````````ntity of th``````````e`````````` t``````````e``````````am in which th``````````e`````````` m``````````e``````````ssag``````````e`````````` was post``````````e``````````d.
+  - `[ChatId <String>]`: If th``````````e`````````` m``````````e``````````ssag``````````e`````````` was s``````````e``````````nt in a chat, r``````````e``````````pr``````````e``````````s``````````e``````````nts th``````````e`````````` id``````````e``````````ntity of th``````````e`````````` chat.
+  - `[Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: Tim``````````e``````````stamp of wh``````````e``````````n th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` was cr``````````e``````````at``````````e``````````d.
+  - `[D``````````e``````````l``````````e``````````t``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: R``````````e``````````ad only. Tim``````````e``````````stamp at which th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` was d``````````e``````````l``````````e``````````t``````````e``````````d, or null if not d``````````e``````````l``````````e``````````t``````````e``````````d.
+  - `[``````````e``````````tag <String>]`: R``````````e``````````ad-only. V``````````e``````````rsion numb``````````e``````````r of th``````````e`````````` chat m``````````e``````````ssag``````````e``````````.
+  - `[``````````e``````````v``````````e``````````ntD``````````e``````````tail <IMicrosoftGraph``````````e``````````v``````````e``````````ntM``````````e``````````ssag``````````e``````````D``````````e``````````tail>]`: ``````````e``````````v``````````e``````````ntM``````````e``````````ssag``````````e``````````D``````````e``````````tail
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+  - `[From <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````FromId``````````e``````````ntityS``````````e``````````t>]`: chatM``````````e``````````ssag``````````e``````````FromId``````````e``````````ntityS``````````e``````````t
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[Application <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[DisplayNam``````````e`````````` <String>]`: Th``````````e`````````` id``````````e``````````ntity's display nam``````````e``````````. Not``````````e`````````` that this may not always b``````````e`````````` availabl``````````e`````````` or up to dat``````````e``````````. For ``````````e``````````xampl``````````e``````````, if a us``````````e``````````r chang``````````e``````````s th``````````e``````````ir display nam``````````e``````````, th``````````e`````````` API may show th``````````e`````````` n``````````e``````````w valu``````````e`````````` in a futur``````````e`````````` r``````````e``````````spons``````````e``````````, but th``````````e`````````` it``````````e``````````ms associat``````````e``````````d with th``````````e`````````` us``````````e``````````r won't show up as having chang``````````e``````````d wh``````````e``````````n using d``````````e``````````lta.
+      - `[Id <String>]`: Uniqu``````````e`````````` id``````````e``````````ntifi``````````e``````````r for th``````````e`````````` id``````````e``````````ntity.
+    - `[D``````````e``````````vic``````````e`````````` <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+    - `[Us``````````e``````````r <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+  - `[Host``````````e``````````dCont``````````e``````````nts <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Host``````````e``````````dCont``````````e``````````nt[]>]`: Cont``````````e``````````nt in a m``````````e``````````ssag``````````e`````````` host``````````e``````````d by Microsoft T``````````e``````````ams - for ``````````e``````````xampl``````````e``````````, imag``````````e``````````s or cod``````````e`````````` snipp``````````e``````````ts.
+    - `[Cont``````````e``````````ntByt``````````e``````````s <Byt``````````e``````````[]>]`: Writ``````````e`````````` only. Byt``````````e``````````s for th``````````e`````````` host``````````e``````````d cont``````````e``````````nt (such as imag``````````e``````````s).
+    - `[Cont``````````e``````````ntTyp``````````e`````````` <String>]`: Writ``````````e`````````` only. Cont``````````e``````````nt typ``````````e``````````, such as imag``````````e``````````/png, imag``````````e``````````/jpg.
     - `[Id <String>]`: 
-  - `[Importance <String>]`: 
-  - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
-  - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
-  - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-  - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
-    - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
-    - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-        - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
-  - `[MessageType <String>]`: chatMessageType
-  - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DlpAction <String>]`: chatMessagePolicyViolationDlpActionTypes
-    - `[JustificationText <String>]`: Justification text provided by the sender of the message when overriding a policy violation.
-    - `[PolicyTip <IMicrosoftGraphChatMessagePolicyViolationPolicyTip>]`: chatMessagePolicyViolationPolicyTip
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ComplianceUrl <String>]`: The URL a user can visit to read about the data loss prevention policies for the organization. (ie, policies about what users shouldn't say in chats)
-      - `[GeneralText <String>]`: Explanatory text shown to the sender of the message.
-      - `[MatchedConditionDescriptions <String[]>]`: The list of improper data in the message that was detected by the data loss prevention app. Each DLP app defines its own conditions, examples include 'Credit Card Number' and 'Social Security Number'.
-    - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
-    - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
-  - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-    - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message. Supports $expand for channel messages.
-  - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
-  - `[Subject <String>]`: The subject of the chat message, in plaintext.
-  - `[Summary <String>]`: Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat.
-  - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
+  - `[Importanc``````````e`````````` <String>]`: 
+  - `[Last``````````e``````````dit``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: R``````````e``````````ad only. Tim``````````e``````````stamp wh``````````e``````````n ``````````e``````````dits to th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` w``````````e``````````r``````````e`````````` mad``````````e``````````. Trigg``````````e``````````rs an '``````````e``````````dit``````````e``````````d' flag in th``````````e`````````` T``````````e``````````ams UI. If no ``````````e``````````dits ar``````````e`````````` mad``````````e`````````` th``````````e`````````` valu``````````e`````````` is null.
+  - `[LastModifi``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: R``````````e``````````ad only. Tim``````````e``````````stamp wh``````````e``````````n th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` is cr``````````e``````````at``````````e``````````d (initial s``````````e``````````tting) or modifi``````````e``````````d, including wh``````````e``````````n a r``````````e``````````action is add``````````e``````````d or r``````````e``````````mov``````````e``````````d.
+  - `[Local``````````e`````````` <String>]`: Local``````````e`````````` of th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` s``````````e``````````t by th``````````e`````````` cli``````````e``````````nt. Always s``````````e``````````t to ``````````e``````````n-us.
+  - `[M``````````e``````````ntions <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion[]>]`: List of ``````````e``````````ntiti``````````e``````````s m``````````e``````````ntion``````````e``````````d in th``````````e`````````` chat m``````````e``````````ssag``````````e``````````. Support``````````e``````````d ``````````e``````````ntiti``````````e``````````s ar``````````e``````````: us``````````e``````````r, bot, t``````````e``````````am, chann``````````e``````````l, and tag.
+    - `[Id <Int32?>]`: Ind``````````e``````````x of an ``````````e``````````ntity b``````````e``````````ing m``````````e``````````ntion``````````e``````````d in th``````````e`````````` sp``````````e``````````cifi``````````e``````````d chatM``````````e``````````ssag``````````e``````````. Match``````````e``````````s th``````````e`````````` {ind``````````e``````````x} valu``````````e`````````` in th``````````e`````````` corr``````````e``````````sponding <at id='{ind``````````e``````````x}'> tag in th``````````e`````````` m``````````e``````````ssag``````````e`````````` body.
+    - `[M``````````e``````````ntionT``````````e``````````xt <String>]`: String us``````````e``````````d to r``````````e``````````pr``````````e``````````s``````````e``````````nt th``````````e`````````` m``````````e``````````ntion. For ``````````e``````````xampl``````````e``````````, a us``````````e``````````r's display nam``````````e``````````, a t``````````e``````````am nam``````````e``````````.
+    - `[M``````````e``````````ntion``````````e``````````d <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion``````````e``````````dId``````````e``````````ntityS``````````e``````````t>]`: chatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion``````````e``````````dId``````````e``````````ntityS``````````e``````````t
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[Application <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[D``````````e``````````vic``````````e`````````` <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[Us``````````e``````````r <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[Conv``````````e``````````rsation <IMicrosoftGraphT``````````e``````````amworkConv``````````e``````````rsationId``````````e``````````ntity>]`: t``````````e``````````amworkConv``````````e``````````rsationId``````````e``````````ntity
+        - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+        - `[DisplayNam``````````e`````````` <String>]`: Th``````````e`````````` id``````````e``````````ntity's display nam``````````e``````````. Not``````````e`````````` that this may not always b``````````e`````````` availabl``````````e`````````` or up to dat``````````e``````````. For ``````````e``````````xampl``````````e``````````, if a us``````````e``````````r chang``````````e``````````s th``````````e``````````ir display nam``````````e``````````, th``````````e`````````` API may show th``````````e`````````` n``````````e``````````w valu``````````e`````````` in a futur``````````e`````````` r``````````e``````````spons``````````e``````````, but th``````````e`````````` it``````````e``````````ms associat``````````e``````````d with th``````````e`````````` us``````````e``````````r won't show up as having chang``````````e``````````d wh``````````e``````````n using d``````````e``````````lta.
+        - `[Id <String>]`: Uniqu``````````e`````````` id``````````e``````````ntifi``````````e``````````r for th``````````e`````````` id``````````e``````````ntity.
+        - `[Conv``````````e``````````rsationId``````````e``````````ntityTyp``````````e`````````` <String>]`: t``````````e``````````amworkConv``````````e``````````rsationId``````````e``````````ntityTyp``````````e``````````
+  - `[M``````````e``````````ssag``````````e``````````Typ``````````e`````````` <String>]`: chatM``````````e``````````ssag``````````e``````````Typ``````````e``````````
+  - `[PolicyViolation <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````PolicyViolation>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolation
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[DlpAction <String>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationDlpActionTyp``````````e``````````s
+    - `[JustificationT``````````e``````````xt <String>]`: Justification t``````````e``````````xt provid``````````e``````````d by th``````````e`````````` s``````````e``````````nd``````````e``````````r of th``````````e`````````` m``````````e``````````ssag``````````e`````````` wh``````````e``````````n ov``````````e``````````rriding a policy violation.
+    - `[PolicyTip <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````PolicyViolationPolicyTip>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationPolicyTip
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[Complianc``````````e``````````Url <String>]`: Th``````````e`````````` URL a us``````````e``````````r can visit to r``````````e``````````ad about th``````````e`````````` data loss pr``````````e``````````v``````````e``````````ntion polici``````````e``````````s for th``````````e`````````` organization. (i``````````e``````````, polici``````````e``````````s about what us``````````e``````````rs shouldn't say in chats)
+      - `[G``````````e``````````n``````````e``````````ralT``````````e``````````xt <String>]`: ``````````e``````````xplanatory t``````````e``````````xt shown to th``````````e`````````` s``````````e``````````nd``````````e``````````r of th``````````e`````````` m``````````e``````````ssag``````````e``````````.
+      - `[Match``````````e``````````dConditionD``````````e``````````scriptions <String[]>]`: Th``````````e`````````` list of improp``````````e``````````r data in th``````````e`````````` m``````````e``````````ssag``````````e`````````` that was d``````````e``````````t``````````e``````````ct``````````e``````````d by th``````````e`````````` data loss pr``````````e``````````v``````````e``````````ntion app. ``````````e``````````ach DLP app d``````````e``````````fin``````````e``````````s its own conditions, ``````````e``````````xampl``````````e``````````s includ``````````e`````````` 'Cr``````````e``````````dit Card Numb``````````e``````````r' and 'Social S``````````e``````````curity Numb``````````e``````````r'.
+    - `[Us``````````e``````````rAction <String>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationUs``````````e``````````rActionTyp``````````e``````````s
+    - `[V``````````e``````````rdictD``````````e``````````tails <String>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationV``````````e``````````rdictD``````````e``````````tailsTyp``````````e``````````s
+  - `[R``````````e``````````actions <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````R``````````e``````````action[]>]`: R``````````e``````````actions for this chat m``````````e``````````ssag``````````e`````````` (for ``````````e``````````xampl``````````e``````````, Lik``````````e``````````).
+    - `[Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: Th``````````e`````````` Tim``````````e``````````stamp typ``````````e`````````` r``````````e``````````pr``````````e``````````s``````````e``````````nts dat``````````e`````````` and tim``````````e`````````` information using ISO 8601 format and is always in UTC tim``````````e``````````. For ``````````e``````````xampl``````````e``````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[R``````````e``````````actionTyp``````````e`````````` <String>]`: Support``````````e``````````d valu``````````e``````````s ar``````````e`````````` lik``````````e``````````, angry, sad, laugh, h``````````e``````````art, surpris``````````e``````````d.
+    - `[Us``````````e``````````r <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````R``````````e``````````actionId``````````e``````````ntityS``````````e``````````t>]`: chatM``````````e``````````ssag``````````e``````````R``````````e``````````actionId``````````e``````````ntityS``````````e``````````t
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[Application <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[D``````````e``````````vic``````````e`````````` <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[Us``````````e``````````r <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+  - `[R``````````e``````````pli``````````e``````````s <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1[]>]`: R``````````e``````````pli``````````e``````````s for a sp``````````e``````````cifi``````````e``````````d m``````````e``````````ssag``````````e``````````. Supports $``````````e``````````xpand for chann``````````e``````````l m``````````e``````````ssag``````````e``````````s.
+  - `[R``````````e``````````plyToId <String>]`: R``````````e``````````ad-only. ID of th``````````e`````````` par``````````e``````````nt chat m``````````e``````````ssag``````````e`````````` or root chat m``````````e``````````ssag``````````e`````````` of th``````````e`````````` thr``````````e``````````ad. (Only appli``````````e``````````s to chat m``````````e``````````ssag``````````e``````````s in chann``````````e``````````ls, not chats.)
+  - `[Subj``````````e``````````ct <String>]`: Th``````````e`````````` subj``````````e``````````ct of th``````````e`````````` chat m``````````e``````````ssag``````````e``````````, in plaint``````````e``````````xt.
+  - `[Summary <String>]`: Summary t``````````e``````````xt of th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` that could b``````````e`````````` us``````````e``````````d for push notifications and summary vi``````````e``````````ws or fall back vi``````````e``````````ws. Only appli``````````e``````````s to chann``````````e``````````l chat m``````````e``````````ssag``````````e``````````s, not chat m``````````e``````````ssag``````````e``````````s in a chat.
+  - `[W``````````e``````````bUrl <String>]`: R``````````e``````````ad-only. Link to th``````````e`````````` m``````````e``````````ssag``````````e`````````` in Microsoft T``````````e``````````ams.
 
-CHANNELIDENTITY <IMicrosoftGraphChannelIdentity>: channelIdentity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ChannelId <String>]`: The identity of the channel in which the message was posted.
-  - `[TeamId <String>]`: The identity of the team in which the message was posted.
+CHANN``````````e``````````LID``````````e``````````NTITY <IMicrosoftGraphChann``````````e``````````lId``````````e``````````ntity>: chann``````````e``````````lId``````````e``````````ntity
+  - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+  - `[Chann``````````e``````````lId <String>]`: Th``````````e`````````` id``````````e``````````ntity of th``````````e`````````` chann``````````e``````````l in which th``````````e`````````` m``````````e``````````ssag``````````e`````````` was post``````````e``````````d.
+  - `[T``````````e``````````amId <String>]`: Th``````````e`````````` id``````````e``````````ntity of th``````````e`````````` t``````````e``````````am in which th``````````e`````````` m``````````e``````````ssag``````````e`````````` was post``````````e``````````d.
 
-HOSTEDCONTENTS <IMicrosoftGraphChatMessageHostedContent[]>: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-  - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-  - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+HOST``````````e``````````DCONT``````````e``````````NTS <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Host``````````e``````````dCont``````````e``````````nt[]>: Cont``````````e``````````nt in a m``````````e``````````ssag``````````e`````````` host``````````e``````````d by Microsoft T``````````e``````````ams - for ``````````e``````````xampl``````````e``````````, imag``````````e``````````s or cod``````````e`````````` snipp``````````e``````````ts.
+  - `[Cont``````````e``````````ntByt``````````e``````````s <Byt``````````e``````````[]>]`: Writ``````````e`````````` only. Byt``````````e``````````s for th``````````e`````````` host``````````e``````````d cont``````````e``````````nt (such as imag``````````e``````````s).
+  - `[Cont``````````e``````````ntTyp``````````e`````````` <String>]`: Writ``````````e`````````` only. Cont``````````e``````````nt typ``````````e``````````, such as imag``````````e``````````/png, imag``````````e``````````/jpg.
   - `[Id <String>]`: 
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
-  - `[ChannelId <String>]`: key: id of channel
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[ConversationMemberId <String>]`: key: id of conversationMember
-  - `[DeletedTeamId <String>]`: key: id of deletedTeam
-  - `[GroupId <String>]`: key: id of group
-  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: key: id of openShift
-  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: key: id of shift
-  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
-  - `[TeamId <String>]`: key: id of team
-  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
-  - `[TeamsAppId <String>]`: key: id of teamsApp
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: key: id of teamsTab
-  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: key: id of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TimeCardId <String>]`: key: id of timeCard
-  - `[TimeOffId <String>]`: key: id of timeOff
-  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
-  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
-  - `[UserId <String>]`: key: id of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
+INPUTOBJ``````````e``````````CT <IT``````````e``````````amsId``````````e``````````ntity>: Id``````````e``````````ntity Param``````````e``````````t``````````e``````````r
+  - `[Associat``````````e``````````dT``````````e``````````amInfoId <String>]`: k``````````e``````````y: id of associat``````````e``````````dT``````````e``````````amInfo
+  - `[Chann``````````e``````````lId <String>]`: k``````````e``````````y: id of chann``````````e``````````l
+  - `[ChatId <String>]`: k``````````e``````````y: id of chat
+  - `[ChatM``````````e``````````ssag``````````e``````````Host``````````e``````````dCont``````````e``````````ntId <String>]`: k``````````e``````````y: id of chatM``````````e``````````ssag``````````e``````````Host``````````e``````````dCont``````````e``````````nt
+  - `[ChatM``````````e``````````ssag``````````e``````````Id <String>]`: k``````````e``````````y: id of chatM``````````e``````````ssag``````````e``````````
+  - `[ChatM``````````e``````````ssag``````````e``````````Id1 <String>]`: k``````````e``````````y: id of chatM``````````e``````````ssag``````````e``````````
+  - `[Conv``````````e``````````rsationM``````````e``````````mb``````````e``````````rId <String>]`: k``````````e``````````y: id of conv``````````e``````````rsationM``````````e``````````mb``````````e``````````r
+  - `[D``````````e``````````l``````````e``````````t``````````e``````````dT``````````e``````````amId <String>]`: k``````````e``````````y: id of d``````````e``````````l``````````e``````````t``````````e``````````dT``````````e``````````am
+  - `[GroupId <String>]`: k``````````e``````````y: id of group
+  - `[Off``````````e``````````rShiftR``````````e``````````qu``````````e``````````stId <String>]`: k``````````e``````````y: id of off``````````e``````````rShiftR``````````e``````````qu``````````e``````````st
+  - `[Op``````````e``````````nShiftChang``````````e``````````R``````````e``````````qu``````````e``````````stId <String>]`: k``````````e``````````y: id of op``````````e``````````nShiftChang``````````e``````````R``````````e``````````qu``````````e``````````st
+  - `[Op``````````e``````````nShiftId <String>]`: k``````````e``````````y: id of op``````````e``````````nShift
+  - `[Pinn``````````e``````````dChatM``````````e``````````ssag``````````e``````````InfoId <String>]`: k``````````e``````````y: id of pinn``````````e``````````dChatM``````````e``````````ssag``````````e``````````Info
+  - `[R``````````e``````````sourc``````````e``````````Sp``````````e``````````cificP``````````e``````````rmissionGrantId <String>]`: k``````````e``````````y: id of r``````````e``````````sourc``````````e``````````Sp``````````e``````````cificP``````````e``````````rmissionGrant
+  - `[Sch``````````e``````````dulingGroupId <String>]`: k``````````e``````````y: id of sch``````````e``````````dulingGroup
+  - `[Shar``````````e``````````dWithChann``````````e``````````lT``````````e``````````amInfoId <String>]`: k``````````e``````````y: id of shar``````````e``````````dWithChann``````````e``````````lT``````````e``````````amInfo
+  - `[ShiftId <String>]`: k``````````e``````````y: id of shift
+  - `[SwapShiftsChang``````````e``````````R``````````e``````````qu``````````e``````````stId <String>]`: k``````````e``````````y: id of swapShiftsChang``````````e``````````R``````````e``````````qu``````````e``````````st
+  - `[T``````````e``````````amId <String>]`: k``````````e``````````y: id of t``````````e``````````am
+  - `[T``````````e``````````amsAppD``````````e``````````finitionId <String>]`: k``````````e``````````y: id of t``````````e``````````amsAppD``````````e``````````finition
+  - `[T``````````e``````````amsAppId <String>]`: k``````````e``````````y: id of t``````````e``````````amsApp
+  - `[T``````````e``````````amsAppInstallationId <String>]`: k``````````e``````````y: id of t``````````e``````````amsAppInstallation
+  - `[T``````````e``````````amsAsyncOp``````````e``````````rationId <String>]`: k``````````e``````````y: id of t``````````e``````````amsAsyncOp``````````e``````````ration
+  - `[T``````````e``````````amsTabId <String>]`: k``````````e``````````y: id of t``````````e``````````amsTab
+  - `[T``````````e``````````amworkD``````````e``````````vic``````````e``````````Id <String>]`: k``````````e``````````y: id of t``````````e``````````amworkD``````````e``````````vic``````````e``````````
+  - `[T``````````e``````````amworkD``````````e``````````vic``````````e``````````Op``````````e``````````rationId <String>]`: k``````````e``````````y: id of t``````````e``````````amworkD``````````e``````````vic``````````e``````````Op``````````e``````````ration
+  - `[T``````````e``````````amworkTagId <String>]`: k``````````e``````````y: id of t``````````e``````````amworkTag
+  - `[T``````````e``````````amworkTagM``````````e``````````mb``````````e``````````rId <String>]`: k``````````e``````````y: id of t``````````e``````````amworkTagM``````````e``````````mb``````````e``````````r
+  - `[Tim``````````e``````````CardId <String>]`: k``````````e``````````y: id of tim``````````e``````````Card
+  - `[Tim``````````e``````````OffId <String>]`: k``````````e``````````y: id of tim``````````e``````````Off
+  - `[Tim``````````e``````````OffR``````````e``````````asonId <String>]`: k``````````e``````````y: id of tim``````````e``````````OffR``````````e``````````ason
+  - `[Tim``````````e``````````OffR``````````e``````````qu``````````e``````````stId <String>]`: k``````````e``````````y: id of tim``````````e``````````OffR``````````e``````````qu``````````e``````````st
+  - `[Us``````````e``````````rId <String>]`: k``````````e``````````y: id of us``````````e``````````r
+  - `[Us``````````e``````````rScop``````````e``````````T``````````e``````````amsAppInstallationId <String>]`: k``````````e``````````y: id of us``````````e``````````rScop``````````e``````````T``````````e``````````amsAppInstallation
+  - `[Workforc``````````e``````````Int``````````e``````````grationId <String>]`: k``````````e``````````y: id of workforc``````````e``````````Int``````````e``````````gration
 
-MENTIONS <IMicrosoftGraphChatMessageMention[]>: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
-  - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
-  - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-      - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
+M``````````e``````````NTIONS <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion[]>: List of ``````````e``````````ntiti``````````e``````````s m``````````e``````````ntion``````````e``````````d in th``````````e`````````` chat m``````````e``````````ssag``````````e``````````. Support``````````e``````````d ``````````e``````````ntiti``````````e``````````s ar``````````e``````````: us``````````e``````````r, bot, t``````````e``````````am, chann``````````e``````````l, and tag.
+  - `[Id <Int32?>]`: Ind``````````e``````````x of an ``````````e``````````ntity b``````````e``````````ing m``````````e``````````ntion``````````e``````````d in th``````````e`````````` sp``````````e``````````cifi``````````e``````````d chatM``````````e``````````ssag``````````e``````````. Match``````````e``````````s th``````````e`````````` {ind``````````e``````````x} valu``````````e`````````` in th``````````e`````````` corr``````````e``````````sponding <at id='{ind``````````e``````````x}'> tag in th``````````e`````````` m``````````e``````````ssag``````````e`````````` body.
+  - `[M``````````e``````````ntionT``````````e``````````xt <String>]`: String us``````````e``````````d to r``````````e``````````pr``````````e``````````s``````````e``````````nt th``````````e`````````` m``````````e``````````ntion. For ``````````e``````````xampl``````````e``````````, a us``````````e``````````r's display nam``````````e``````````, a t``````````e``````````am nam``````````e``````````.
+  - `[M``````````e``````````ntion``````````e``````````d <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion``````````e``````````dId``````````e``````````ntityS``````````e``````````t>]`: chatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion``````````e``````````dId``````````e``````````ntityS``````````e``````````t
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[Application <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[DisplayNam``````````e`````````` <String>]`: Th``````````e`````````` id``````````e``````````ntity's display nam``````````e``````````. Not``````````e`````````` that this may not always b``````````e`````````` availabl``````````e`````````` or up to dat``````````e``````````. For ``````````e``````````xampl``````````e``````````, if a us``````````e``````````r chang``````````e``````````s th``````````e``````````ir display nam``````````e``````````, th``````````e`````````` API may show th``````````e`````````` n``````````e``````````w valu``````````e`````````` in a futur``````````e`````````` r``````````e``````````spons``````````e``````````, but th``````````e`````````` it``````````e``````````ms associat``````````e``````````d with th``````````e`````````` us``````````e``````````r won't show up as having chang``````````e``````````d wh``````````e``````````n using d``````````e``````````lta.
+      - `[Id <String>]`: Uniqu``````````e`````````` id``````````e``````````ntifi``````````e``````````r for th``````````e`````````` id``````````e``````````ntity.
+    - `[D``````````e``````````vic``````````e`````````` <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+    - `[Us``````````e``````````r <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+    - `[Conv``````````e``````````rsation <IMicrosoftGraphT``````````e``````````amworkConv``````````e``````````rsationId``````````e``````````ntity>]`: t``````````e``````````amworkConv``````````e``````````rsationId``````````e``````````ntity
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[DisplayNam``````````e`````````` <String>]`: Th``````````e`````````` id``````````e``````````ntity's display nam``````````e``````````. Not``````````e`````````` that this may not always b``````````e`````````` availabl``````````e`````````` or up to dat``````````e``````````. For ``````````e``````````xampl``````````e``````````, if a us``````````e``````````r chang``````````e``````````s th``````````e``````````ir display nam``````````e``````````, th``````````e`````````` API may show th``````````e`````````` n``````````e``````````w valu``````````e`````````` in a futur``````````e`````````` r``````````e``````````spons``````````e``````````, but th``````````e`````````` it``````````e``````````ms associat``````````e``````````d with th``````````e`````````` us``````````e``````````r won't show up as having chang``````````e``````````d wh``````````e``````````n using d``````````e``````````lta.
+      - `[Id <String>]`: Uniqu``````````e`````````` id``````````e``````````ntifi``````````e``````````r for th``````````e`````````` id``````````e``````````ntity.
+      - `[Conv``````````e``````````rsationId``````````e``````````ntityTyp``````````e`````````` <String>]`: t``````````e``````````amworkConv``````````e``````````rsationId``````````e``````````ntityTyp``````````e``````````
 
-POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyViolation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DlpAction <String>]`: chatMessagePolicyViolationDlpActionTypes
-  - `[JustificationText <String>]`: Justification text provided by the sender of the message when overriding a policy violation.
-  - `[PolicyTip <IMicrosoftGraphChatMessagePolicyViolationPolicyTip>]`: chatMessagePolicyViolationPolicyTip
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ComplianceUrl <String>]`: The URL a user can visit to read about the data loss prevention policies for the organization. (ie, policies about what users shouldn't say in chats)
-    - `[GeneralText <String>]`: Explanatory text shown to the sender of the message.
-    - `[MatchedConditionDescriptions <String[]>]`: The list of improper data in the message that was detected by the data loss prevention app. Each DLP app defines its own conditions, examples include 'Credit Card Number' and 'Social Security Number'.
-  - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
-  - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
+POLICYVIOLATION <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````PolicyViolation>: chatM``````````e``````````ssag``````````e``````````PolicyViolation
+  - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+  - `[DlpAction <String>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationDlpActionTyp``````````e``````````s
+  - `[JustificationT``````````e``````````xt <String>]`: Justification t``````````e``````````xt provid``````````e``````````d by th``````````e`````````` s``````````e``````````nd``````````e``````````r of th``````````e`````````` m``````````e``````````ssag``````````e`````````` wh``````````e``````````n ov``````````e``````````rriding a policy violation.
+  - `[PolicyTip <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````PolicyViolationPolicyTip>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationPolicyTip
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[Complianc``````````e``````````Url <String>]`: Th``````````e`````````` URL a us``````````e``````````r can visit to r``````````e``````````ad about th``````````e`````````` data loss pr``````````e``````````v``````````e``````````ntion polici``````````e``````````s for th``````````e`````````` organization. (i``````````e``````````, polici``````````e``````````s about what us``````````e``````````rs shouldn't say in chats)
+    - `[G``````````e``````````n``````````e``````````ralT``````````e``````````xt <String>]`: ``````````e``````````xplanatory t``````````e``````````xt shown to th``````````e`````````` s``````````e``````````nd``````````e``````````r of th``````````e`````````` m``````````e``````````ssag``````````e``````````.
+    - `[Match``````````e``````````dConditionD``````````e``````````scriptions <String[]>]`: Th``````````e`````````` list of improp``````````e``````````r data in th``````````e`````````` m``````````e``````````ssag``````````e`````````` that was d``````````e``````````t``````````e``````````ct``````````e``````````d by th``````````e`````````` data loss pr``````````e``````````v``````````e``````````ntion app. ``````````e``````````ach DLP app d``````````e``````````fin``````````e``````````s its own conditions, ``````````e``````````xampl``````````e``````````s includ``````````e`````````` 'Cr``````````e``````````dit Card Numb``````````e``````````r' and 'Social S``````````e``````````curity Numb``````````e``````````r'.
+  - `[Us``````````e``````````rAction <String>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationUs``````````e``````````rActionTyp``````````e``````````s
+  - `[V``````````e``````````rdictD``````````e``````````tails <String>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationV``````````e``````````rdictD``````````e``````````tailsTyp``````````e``````````s
 
-REACTIONS <IMicrosoftGraphChatMessageReaction[]>: Reactions for this chat message (for example, Like).
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-  - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
+R``````````e``````````ACTIONS <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````R``````````e``````````action[]>: R``````````e``````````actions for this chat m``````````e``````````ssag``````````e`````````` (for ``````````e``````````xampl``````````e``````````, Lik``````````e``````````).
+  - `[Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: Th``````````e`````````` Tim``````````e``````````stamp typ``````````e`````````` r``````````e``````````pr``````````e``````````s``````````e``````````nts dat``````````e`````````` and tim``````````e`````````` information using ISO 8601 format and is always in UTC tim``````````e``````````. For ``````````e``````````xampl``````````e``````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[R``````````e``````````actionTyp``````````e`````````` <String>]`: Support``````````e``````````d valu``````````e``````````s ar``````````e`````````` lik``````````e``````````, angry, sad, laugh, h``````````e``````````art, surpris``````````e``````````d.
+  - `[Us``````````e``````````r <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````R``````````e``````````actionId``````````e``````````ntityS``````````e``````````t>]`: chatM``````````e``````````ssag``````````e``````````R``````````e``````````actionId``````````e``````````ntityS``````````e``````````t
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[Application <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[DisplayNam``````````e`````````` <String>]`: Th``````````e`````````` id``````````e``````````ntity's display nam``````````e``````````. Not``````````e`````````` that this may not always b``````````e`````````` availabl``````````e`````````` or up to dat``````````e``````````. For ``````````e``````````xampl``````````e``````````, if a us``````````e``````````r chang``````````e``````````s th``````````e``````````ir display nam``````````e``````````, th``````````e`````````` API may show th``````````e`````````` n``````````e``````````w valu``````````e`````````` in a futur``````````e`````````` r``````````e``````````spons``````````e``````````, but th``````````e`````````` it``````````e``````````ms associat``````````e``````````d with th``````````e`````````` us``````````e``````````r won't show up as having chang``````````e``````````d wh``````````e``````````n using d``````````e``````````lta.
+      - `[Id <String>]`: Uniqu``````````e`````````` id``````````e``````````ntifi``````````e``````````r for th``````````e`````````` id``````````e``````````ntity.
+    - `[D``````````e``````````vic``````````e`````````` <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+    - `[Us``````````e``````````r <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
 
-REPLIES <IMicrosoftGraphChatMessage1[]>: Replies for a specified message. Supports $expand for channel messages.
+R``````````e``````````PLI``````````e``````````S <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1[]>: R``````````e``````````pli``````````e``````````s for a sp``````````e``````````cifi``````````e``````````d m``````````e``````````ssag``````````e``````````. Supports $``````````e``````````xpand for chann``````````e``````````l m``````````e``````````ssag``````````e``````````s.
   - `[Id <String>]`: 
-  - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: References to attached objects like files, tabs, meetings etc.
-    - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
-    - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
-    - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
-    - `[Id <String>]`: Read-only. Unique id of the attachment.
-    - `[Name <String>]`: Name of the attachment.
-    - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ChannelId <String>]`: The identity of the channel in which the message was posted.
-    - `[TeamId <String>]`: The identity of the team in which the message was posted.
-  - `[ChatId <String>]`: If the message was sent in a chat, represents the identity of the chat.
-  - `[CreatedDateTime <DateTime?>]`: Timestamp of when the chat message was created.
-  - `[DeletedDateTime <DateTime?>]`: Read only. Timestamp at which the chat message was deleted, or null if not deleted.
-  - `[Etag <String>]`: Read-only. Version number of the chat message.
-  - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-    - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-    - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+  - `[Attachm``````````e``````````nts <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Attachm``````````e``````````nt[]>]`: R``````````e``````````f``````````e``````````r``````````e``````````nc``````````e``````````s to attach``````````e``````````d obj``````````e``````````cts lik``````````e`````````` fil``````````e``````````s, tabs, m``````````e````````````````````e``````````tings ``````````e``````````tc.
+    - `[Cont``````````e``````````nt <String>]`: Th``````````e`````````` cont``````````e``````````nt of th``````````e`````````` attachm``````````e``````````nt. If th``````````e`````````` attachm``````````e``````````nt is a rich card, s``````````e``````````t th``````````e`````````` prop``````````e``````````rty to th``````````e`````````` rich card obj``````````e``````````ct. This prop``````````e``````````rty and cont``````````e``````````ntUrl ar``````````e`````````` mutually ``````````e``````````xclusiv``````````e``````````.
+    - `[Cont``````````e``````````ntTyp``````````e`````````` <String>]`: Th``````````e`````````` m``````````e``````````dia typ``````````e`````````` of th``````````e`````````` cont``````````e``````````nt attachm``````````e``````````nt. It can hav``````````e`````````` th``````````e`````````` following valu``````````e``````````s: r``````````e``````````f``````````e``````````r``````````e``````````nc``````````e``````````: Attachm``````````e``````````nt is a link to anoth``````````e``````````r fil``````````e``````````. Populat``````````e`````````` th``````````e`````````` cont``````````e``````````ntURL with th``````````e`````````` link to th``````````e`````````` obj``````````e``````````ct.Any cont``````````e``````````ntTyp``````````e``````````s support``````````e``````````d by th``````````e`````````` Bot Fram``````````e``````````work's Attachm``````````e``````````nt obj``````````e``````````ctapplication/vnd.microsoft.card.cod``````````e``````````snipp``````````e``````````t: A cod``````````e`````````` snipp``````````e``````````t. application/vnd.microsoft.card.announc``````````e``````````m``````````e``````````nt: An announc``````````e``````````m``````````e``````````nt h``````````e``````````ad``````````e``````````r.
+    - `[Cont``````````e``````````ntUrl <String>]`: URL for th``````````e`````````` cont``````````e``````````nt of th``````````e`````````` attachm``````````e``````````nt. Support``````````e``````````d protocols: http, https, fil``````````e`````````` and data.
+    - `[Id <String>]`: R``````````e``````````ad-only. Uniqu``````````e`````````` id of th``````````e`````````` attachm``````````e``````````nt.
+    - `[Nam``````````e`````````` <String>]`: Nam``````````e`````````` of th``````````e`````````` attachm``````````e``````````nt.
+    - `[ThumbnailUrl <String>]`: URL to a thumbnail imag``````````e`````````` that th``````````e`````````` chann``````````e``````````l can us``````````e`````````` if it supports using an alt``````````e``````````rnativ``````````e``````````, small``````````e``````````r form of cont``````````e``````````nt or cont``````````e``````````ntUrl. For ``````````e``````````xampl``````````e``````````, if you s``````````e``````````t cont``````````e``````````ntTyp``````````e`````````` to application/word and s``````````e``````````t cont``````````e``````````ntUrl to th``````````e`````````` location of th``````````e`````````` Word docum``````````e``````````nt, you might includ``````````e`````````` a thumbnail imag``````````e`````````` that r``````````e``````````pr``````````e``````````s``````````e``````````nts th``````````e`````````` docum``````````e``````````nt. Th``````````e`````````` chann``````````e``````````l could display th``````````e`````````` thumbnail imag``````````e`````````` inst``````````e``````````ad of th``````````e`````````` docum``````````e``````````nt. Wh``````````e``````````n th``````````e`````````` us``````````e``````````r clicks th``````````e`````````` imag``````````e``````````, th``````````e`````````` chann``````````e``````````l would op``````````e``````````n th``````````e`````````` docum``````````e``````````nt.
+  - `[Body <IMicrosoftGraphIt``````````e``````````mBody>]`: it``````````e``````````mBody
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[Cont``````````e``````````nt <String>]`: Th``````````e`````````` cont``````````e``````````nt of th``````````e`````````` it``````````e``````````m.
+    - `[Cont``````````e``````````ntTyp``````````e`````````` <String>]`: bodyTyp``````````e``````````
+  - `[Chann``````````e``````````lId``````````e``````````ntity <IMicrosoftGraphChann``````````e``````````lId``````````e``````````ntity>]`: chann``````````e``````````lId``````````e``````````ntity
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[Chann``````````e``````````lId <String>]`: Th``````````e`````````` id``````````e``````````ntity of th``````````e`````````` chann``````````e``````````l in which th``````````e`````````` m``````````e``````````ssag``````````e`````````` was post``````````e``````````d.
+    - `[T``````````e``````````amId <String>]`: Th``````````e`````````` id``````````e``````````ntity of th``````````e`````````` t``````````e``````````am in which th``````````e`````````` m``````````e``````````ssag``````````e`````````` was post``````````e``````````d.
+  - `[ChatId <String>]`: If th``````````e`````````` m``````````e``````````ssag``````````e`````````` was s``````````e``````````nt in a chat, r``````````e``````````pr``````````e``````````s``````````e``````````nts th``````````e`````````` id``````````e``````````ntity of th``````````e`````````` chat.
+  - `[Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: Tim``````````e``````````stamp of wh``````````e``````````n th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` was cr``````````e``````````at``````````e``````````d.
+  - `[D``````````e``````````l``````````e``````````t``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: R``````````e``````````ad only. Tim``````````e``````````stamp at which th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` was d``````````e``````````l``````````e``````````t``````````e``````````d, or null if not d``````````e``````````l``````````e``````````t``````````e``````````d.
+  - `[``````````e``````````tag <String>]`: R``````````e``````````ad-only. V``````````e``````````rsion numb``````````e``````````r of th``````````e`````````` chat m``````````e``````````ssag``````````e``````````.
+  - `[``````````e``````````v``````````e``````````ntD``````````e``````````tail <IMicrosoftGraph``````````e``````````v``````````e``````````ntM``````````e``````````ssag``````````e``````````D``````````e``````````tail>]`: ``````````e``````````v``````````e``````````ntM``````````e``````````ssag``````````e``````````D``````````e``````````tail
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+  - `[From <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````FromId``````````e``````````ntityS``````````e``````````t>]`: chatM``````````e``````````ssag``````````e``````````FromId``````````e``````````ntityS``````````e``````````t
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[Application <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[DisplayNam``````````e`````````` <String>]`: Th``````````e`````````` id``````````e``````````ntity's display nam``````````e``````````. Not``````````e`````````` that this may not always b``````````e`````````` availabl``````````e`````````` or up to dat``````````e``````````. For ``````````e``````````xampl``````````e``````````, if a us``````````e``````````r chang``````````e``````````s th``````````e``````````ir display nam``````````e``````````, th``````````e`````````` API may show th``````````e`````````` n``````````e``````````w valu``````````e`````````` in a futur``````````e`````````` r``````````e``````````spons``````````e``````````, but th``````````e`````````` it``````````e``````````ms associat``````````e``````````d with th``````````e`````````` us``````````e``````````r won't show up as having chang``````````e``````````d wh``````````e``````````n using d``````````e``````````lta.
+      - `[Id <String>]`: Uniqu``````````e`````````` id``````````e``````````ntifi``````````e``````````r for th``````````e`````````` id``````````e``````````ntity.
+    - `[D``````````e``````````vic``````````e`````````` <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+    - `[Us``````````e``````````r <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+  - `[Host``````````e``````````dCont``````````e``````````nts <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````Host``````````e``````````dCont``````````e``````````nt[]>]`: Cont``````````e``````````nt in a m``````````e``````````ssag``````````e`````````` host``````````e``````````d by Microsoft T``````````e``````````ams - for ``````````e``````````xampl``````````e``````````, imag``````````e``````````s or cod``````````e`````````` snipp``````````e``````````ts.
+    - `[Cont``````````e``````````ntByt``````````e``````````s <Byt``````````e``````````[]>]`: Writ``````````e`````````` only. Byt``````````e``````````s for th``````````e`````````` host``````````e``````````d cont``````````e``````````nt (such as imag``````````e``````````s).
+    - `[Cont``````````e``````````ntTyp``````````e`````````` <String>]`: Writ``````````e`````````` only. Cont``````````e``````````nt typ``````````e``````````, such as imag``````````e``````````/png, imag``````````e``````````/jpg.
     - `[Id <String>]`: 
-  - `[Importance <String>]`: 
-  - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
-  - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
-  - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-  - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
-    - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
-    - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-        - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
-  - `[MessageType <String>]`: chatMessageType
-  - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DlpAction <String>]`: chatMessagePolicyViolationDlpActionTypes
-    - `[JustificationText <String>]`: Justification text provided by the sender of the message when overriding a policy violation.
-    - `[PolicyTip <IMicrosoftGraphChatMessagePolicyViolationPolicyTip>]`: chatMessagePolicyViolationPolicyTip
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ComplianceUrl <String>]`: The URL a user can visit to read about the data loss prevention policies for the organization. (ie, policies about what users shouldn't say in chats)
-      - `[GeneralText <String>]`: Explanatory text shown to the sender of the message.
-      - `[MatchedConditionDescriptions <String[]>]`: The list of improper data in the message that was detected by the data loss prevention app. Each DLP app defines its own conditions, examples include 'Credit Card Number' and 'Social Security Number'.
-    - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
-    - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
-  - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-    - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message. Supports $expand for channel messages.
-  - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
-  - `[Subject <String>]`: The subject of the chat message, in plaintext.
-  - `[Summary <String>]`: Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat.
-  - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
+  - `[Importanc``````````e`````````` <String>]`: 
+  - `[Last``````````e``````````dit``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: R``````````e``````````ad only. Tim``````````e``````````stamp wh``````````e``````````n ``````````e``````````dits to th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` w``````````e``````````r``````````e`````````` mad``````````e``````````. Trigg``````````e``````````rs an '``````````e``````````dit``````````e``````````d' flag in th``````````e`````````` T``````````e``````````ams UI. If no ``````````e``````````dits ar``````````e`````````` mad``````````e`````````` th``````````e`````````` valu``````````e`````````` is null.
+  - `[LastModifi``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: R``````````e``````````ad only. Tim``````````e``````````stamp wh``````````e``````````n th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` is cr``````````e``````````at``````````e``````````d (initial s``````````e``````````tting) or modifi``````````e``````````d, including wh``````````e``````````n a r``````````e``````````action is add``````````e``````````d or r``````````e``````````mov``````````e``````````d.
+  - `[Local``````````e`````````` <String>]`: Local``````````e`````````` of th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` s``````````e``````````t by th``````````e`````````` cli``````````e``````````nt. Always s``````````e``````````t to ``````````e``````````n-us.
+  - `[M``````````e``````````ntions <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion[]>]`: List of ``````````e``````````ntiti``````````e``````````s m``````````e``````````ntion``````````e``````````d in th``````````e`````````` chat m``````````e``````````ssag``````````e``````````. Support``````````e``````````d ``````````e``````````ntiti``````````e``````````s ar``````````e``````````: us``````````e``````````r, bot, t``````````e``````````am, chann``````````e``````````l, and tag.
+    - `[Id <Int32?>]`: Ind``````````e``````````x of an ``````````e``````````ntity b``````````e``````````ing m``````````e``````````ntion``````````e``````````d in th``````````e`````````` sp``````````e``````````cifi``````````e``````````d chatM``````````e``````````ssag``````````e``````````. Match``````````e``````````s th``````````e`````````` {ind``````````e``````````x} valu``````````e`````````` in th``````````e`````````` corr``````````e``````````sponding <at id='{ind``````````e``````````x}'> tag in th``````````e`````````` m``````````e``````````ssag``````````e`````````` body.
+    - `[M``````````e``````````ntionT``````````e``````````xt <String>]`: String us``````````e``````````d to r``````````e``````````pr``````````e``````````s``````````e``````````nt th``````````e`````````` m``````````e``````````ntion. For ``````````e``````````xampl``````````e``````````, a us``````````e``````````r's display nam``````````e``````````, a t``````````e``````````am nam``````````e``````````.
+    - `[M``````````e``````````ntion``````````e``````````d <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion``````````e``````````dId``````````e``````````ntityS``````````e``````````t>]`: chatM``````````e``````````ssag``````````e``````````M``````````e``````````ntion``````````e``````````dId``````````e``````````ntityS``````````e``````````t
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[Application <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[D``````````e``````````vic``````````e`````````` <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[Us``````````e``````````r <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[Conv``````````e``````````rsation <IMicrosoftGraphT``````````e``````````amworkConv``````````e``````````rsationId``````````e``````````ntity>]`: t``````````e``````````amworkConv``````````e``````````rsationId``````````e``````````ntity
+        - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+        - `[DisplayNam``````````e`````````` <String>]`: Th``````````e`````````` id``````````e``````````ntity's display nam``````````e``````````. Not``````````e`````````` that this may not always b``````````e`````````` availabl``````````e`````````` or up to dat``````````e``````````. For ``````````e``````````xampl``````````e``````````, if a us``````````e``````````r chang``````````e``````````s th``````````e``````````ir display nam``````````e``````````, th``````````e`````````` API may show th``````````e`````````` n``````````e``````````w valu``````````e`````````` in a futur``````````e`````````` r``````````e``````````spons``````````e``````````, but th``````````e`````````` it``````````e``````````ms associat``````````e``````````d with th``````````e`````````` us``````````e``````````r won't show up as having chang``````````e``````````d wh``````````e``````````n using d``````````e``````````lta.
+        - `[Id <String>]`: Uniqu``````````e`````````` id``````````e``````````ntifi``````````e``````````r for th``````````e`````````` id``````````e``````````ntity.
+        - `[Conv``````````e``````````rsationId``````````e``````````ntityTyp``````````e`````````` <String>]`: t``````````e``````````amworkConv``````````e``````````rsationId``````````e``````````ntityTyp``````````e``````````
+  - `[M``````````e``````````ssag``````````e``````````Typ``````````e`````````` <String>]`: chatM``````````e``````````ssag``````````e``````````Typ``````````e``````````
+  - `[PolicyViolation <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````PolicyViolation>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolation
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[DlpAction <String>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationDlpActionTyp``````````e``````````s
+    - `[JustificationT``````````e``````````xt <String>]`: Justification t``````````e``````````xt provid``````````e``````````d by th``````````e`````````` s``````````e``````````nd``````````e``````````r of th``````````e`````````` m``````````e``````````ssag``````````e`````````` wh``````````e``````````n ov``````````e``````````rriding a policy violation.
+    - `[PolicyTip <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````PolicyViolationPolicyTip>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationPolicyTip
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[Complianc``````````e``````````Url <String>]`: Th``````````e`````````` URL a us``````````e``````````r can visit to r``````````e``````````ad about th``````````e`````````` data loss pr``````````e``````````v``````````e``````````ntion polici``````````e``````````s for th``````````e`````````` organization. (i``````````e``````````, polici``````````e``````````s about what us``````````e``````````rs shouldn't say in chats)
+      - `[G``````````e``````````n``````````e``````````ralT``````````e``````````xt <String>]`: ``````````e``````````xplanatory t``````````e``````````xt shown to th``````````e`````````` s``````````e``````````nd``````````e``````````r of th``````````e`````````` m``````````e``````````ssag``````````e``````````.
+      - `[Match``````````e``````````dConditionD``````````e``````````scriptions <String[]>]`: Th``````````e`````````` list of improp``````````e``````````r data in th``````````e`````````` m``````````e``````````ssag``````````e`````````` that was d``````````e``````````t``````````e``````````ct``````````e``````````d by th``````````e`````````` data loss pr``````````e``````````v``````````e``````````ntion app. ``````````e``````````ach DLP app d``````````e``````````fin``````````e``````````s its own conditions, ``````````e``````````xampl``````````e``````````s includ``````````e`````````` 'Cr``````````e``````````dit Card Numb``````````e``````````r' and 'Social S``````````e``````````curity Numb``````````e``````````r'.
+    - `[Us``````````e``````````rAction <String>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationUs``````````e``````````rActionTyp``````````e``````````s
+    - `[V``````````e``````````rdictD``````````e``````````tails <String>]`: chatM``````````e``````````ssag``````````e``````````PolicyViolationV``````````e``````````rdictD``````````e``````````tailsTyp``````````e``````````s
+  - `[R``````````e``````````actions <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````R``````````e``````````action[]>]`: R``````````e``````````actions for this chat m``````````e``````````ssag``````````e`````````` (for ``````````e``````````xampl``````````e``````````, Lik``````````e``````````).
+    - `[Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: Th``````````e`````````` Tim``````````e``````````stamp typ``````````e`````````` r``````````e``````````pr``````````e``````````s``````````e``````````nts dat``````````e`````````` and tim``````````e`````````` information using ISO 8601 format and is always in UTC tim``````````e``````````. For ``````````e``````````xampl``````````e``````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[R``````````e``````````actionTyp``````````e`````````` <String>]`: Support``````````e``````````d valu``````````e``````````s ar``````````e`````````` lik``````````e``````````, angry, sad, laugh, h``````````e``````````art, surpris``````````e``````````d.
+    - `[Us``````````e``````````r <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````R``````````e``````````actionId``````````e``````````ntityS``````````e``````````t>]`: chatM``````````e``````````ssag``````````e``````````R``````````e``````````actionId``````````e``````````ntityS``````````e``````````t
+      - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+      - `[Application <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[D``````````e``````````vic``````````e`````````` <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+      - `[Us``````````e``````````r <IMicrosoftGraphId``````````e``````````ntity>]`: id``````````e``````````ntity
+  - `[R``````````e``````````pli``````````e``````````s <IMicrosoftGraphChatM``````````e``````````ssag``````````e``````````1[]>]`: R``````````e``````````pli``````````e``````````s for a sp``````````e``````````cifi``````````e``````````d m``````````e``````````ssag``````````e``````````. Supports $``````````e``````````xpand for chann``````````e``````````l m``````````e``````````ssag``````````e``````````s.
+  - `[R``````````e``````````plyToId <String>]`: R``````````e``````````ad-only. ID of th``````````e`````````` par``````````e``````````nt chat m``````````e``````````ssag``````````e`````````` or root chat m``````````e``````````ssag``````````e`````````` of th``````````e`````````` thr``````````e``````````ad. (Only appli``````````e``````````s to chat m``````````e``````````ssag``````````e``````````s in chann``````````e``````````ls, not chats.)
+  - `[Subj``````````e``````````ct <String>]`: Th``````````e`````````` subj``````````e``````````ct of th``````````e`````````` chat m``````````e``````````ssag``````````e``````````, in plaint``````````e``````````xt.
+  - `[Summary <String>]`: Summary t``````````e``````````xt of th``````````e`````````` chat m``````````e``````````ssag``````````e`````````` that could b``````````e`````````` us``````````e``````````d for push notifications and summary vi``````````e``````````ws or fall back vi``````````e``````````ws. Only appli``````````e``````````s to chann``````````e``````````l chat m``````````e``````````ssag``````````e``````````s, not chat m``````````e``````````ssag``````````e``````````s in a chat.
+  - `[W``````````e``````````bUrl <String>]`: R``````````e``````````ad-only. Link to th``````````e`````````` m``````````e``````````ssag``````````e`````````` in Microsoft T``````````e``````````ams.
 
-## RELATED LINKS
+## R``````````e``````````LAT``````````e``````````D LINKS
 
-## RELATED LINKS
+## R``````````e``````````LAT``````````e``````````D LINKS
