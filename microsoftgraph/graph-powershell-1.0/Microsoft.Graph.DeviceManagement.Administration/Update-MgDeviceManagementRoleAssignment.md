@@ -1,377 +1,377 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroleassignment
-schema: 2.0.0
+---
+```e```xt```e```rnal h```e```lp fil```e```: Microsoft.Graph.D```e```vic```e```Manag```e```m```e```nt.Administration-h```e```lp.xml
+Modul```e``` Nam```e```: Microsoft.Graph.D```e```vic```e```Manag```e```m```e```nt.Administration
+onlin```e``` v```e```rsion: https://docs.microsoft.com/```e```n-us/pow```e```rsh```e```ll/modul```e```/microsoft.graph.d```e```vic```e```manag```e```m```e```nt.administration/updat```e```-mgd```e```vic```e```manag```e```m```e```ntrol```e```assignm```e```nt
+sch```e```ma: 2.0.0
 ---
 
-# Update-MgDeviceManagementRoleAssignment
+# Updat```e```-MgD```e```vic```e```Manag```e```m```e```ntRol```e```Assignm```e```nt
 
 ## SYNOPSIS
-Update the navigation property roleAssignments in deviceManagement
+Updat```e``` th```e``` navigation prop```e```rty rol```e```Assignm```e```nts in d```e```vic```e```Manag```e```m```e```nt
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Updat```e``````e```xpand```e```d1 (D```e```fault)
 ```
-Update-MgDeviceManagementRoleAssignment -DeviceAndAppManagementRoleAssignmentId <String>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Members <String[]>] [-ResourceScopes <String[]>] [-RoleDefinition <IMicrosoftGraphRoleDefinition>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgDeviceManagementRoleAssignment -DeviceAndAppManagementRoleAssignmentId <String>
- -BodyParameter <IMicrosoftGraphDeviceAndAppManagementRoleAssignment1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Updat```e```-MgD```e```vic```e```Manag```e```m```e```ntRol```e```Assignm```e```nt -D```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```ntId <String>
+ [-AdditionalProp```e```rti```e```s <Hashtabl```e```>] [-D```e```scription <String>] [-DisplayNam```e``` <String>] [-Id <String>]
+ [-M```e```mb```e```rs <String[]>] [-R```e```sourc```e```Scop```e```s <String[]>] [-Rol```e```D```e```finition <IMicrosoftGraphRol```e```D```e```finition>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Updat```e```1
 ```
-Update-MgDeviceManagementRoleAssignment -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Members <String[]>] [-ResourceScopes <String[]>] [-RoleDefinition <IMicrosoftGraphRoleDefinition>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgDeviceManagementRoleAssignment -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphDeviceAndAppManagementRoleAssignment1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Updat```e```-MgD```e```vic```e```Manag```e```m```e```ntRol```e```Assignm```e```nt -D```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```ntId <String>
+ -BodyParam```e```t```e```r <IMicrosoftGraphD```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```nt1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam```e```t```e```rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property roleAssignments in deviceManagement
+### Updat```e```ViaId```e```ntity```e```xpand```e```d1
+```
+Updat```e```-MgD```e```vic```e```Manag```e```m```e```ntRol```e```Assignm```e```nt -InputObj```e```ct <ID```e```vic```e```Manag```e```m```e```ntAdministrationId```e```ntity>
+ [-AdditionalProp```e```rti```e```s <Hashtabl```e```>] [-D```e```scription <String>] [-DisplayNam```e``` <String>] [-Id <String>]
+ [-M```e```mb```e```rs <String[]>] [-R```e```sourc```e```Scop```e```s <String[]>] [-Rol```e```D```e```finition <IMicrosoftGraphRol```e```D```e```finition>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
+```
 
-## EXAMPLES
+### Updat```e```ViaId```e```ntity1
+```
+Updat```e```-MgD```e```vic```e```Manag```e```m```e```ntRol```e```Assignm```e```nt -InputObj```e```ct <ID```e```vic```e```Manag```e```m```e```ntAdministrationId```e```ntity>
+ -BodyParam```e```t```e```r <IMicrosoftGraphD```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```nt1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam```e```t```e```rs>]
+```
 
-## PARAMETERS
+## D```e```SCRIPTION
+Updat```e``` th```e``` navigation prop```e```rty rol```e```Assignm```e```nts in d```e```vic```e```Manag```e```m```e```nt
 
-### -AdditionalProperties
-Additional Parameters
+## ```e```XAMPL```e```S
+
+## PARAM```e```T```e```RS
+
+### -AdditionalProp```e```rti```e```s
+Additional Param```e```t```e```rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: Hashtabl```e```
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -BodyParameter
-The Role Assignment resource.
-Role assignments tie together a role definition with members and scopes.
-There can be one or more role assignments per role.
-This applies to custom and built-in roles.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam```e```t```e```r
+Th```e``` Rol```e``` Assignm```e```nt r```e```sourc```e```.
+Rol```e``` assignm```e```nts ti```e``` tog```e```th```e```r a rol```e``` d```e```finition with m```e```mb```e```rs and scop```e```s.
+Th```e```r```e``` can b```e``` on```e``` or mor```e``` rol```e``` assignm```e```nts p```e```r rol```e```.
+This appli```e```s to custom and built-in rol```e```s.
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for BODYPARAM```e```T```e```R prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAndAppManagementRoleAssignment1
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Typ```e```: IMicrosoftGraphD```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```nt1
+Param```e```t```e```r S```e```ts: Updat```e```1, Updat```e```ViaId```e```ntity1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -Description
-Description of the Role Assignment.
+### -D```e```scription
+D```e```scription of th```e``` Rol```e``` Assignm```e```nt.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -DeviceAndAppManagementRoleAssignmentId
-key: id of deviceAndAppManagementRoleAssignment
+### -D```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```ntId
+k```e```y: id of d```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```nt
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -DisplayName
-The display or friendly name of the role Assignment.
+### -DisplayNam```e```
+Th```e``` display or fri```e```ndly nam```e``` of th```e``` rol```e``` Assignm```e```nt.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj```e```ct
+Id```e```ntity Param```e```t```e```r
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for INPUTOBJ```e```CT prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Typ```e```: ID```e```vic```e```Manag```e```m```e```ntAdministrationId```e```ntity
+Param```e```t```e```r S```e```ts: Updat```e```ViaId```e```ntity```e```xpand```e```d1, Updat```e```ViaId```e```ntity1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -Members
-The list of ids of role member security groups.
-These are IDs from Azure Active Directory.
+### -M```e```mb```e```rs
+Th```e``` list of ids of rol```e``` m```e```mb```e```r s```e```curity groups.
+Th```e```s```e``` ar```e``` IDs from Azur```e``` Activ```e``` Dir```e```ctory.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String[]
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R```e```turns tru```e``` wh```e```n th```e``` command succ```e``````e```ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -ResourceScopes
-List of ids of role scope member security groups.
-These are IDs from Azure Active Directory.
+### -R```e```sourc```e```Scop```e```s
+List of ids of rol```e``` scop```e``` m```e```mb```e```r s```e```curity groups.
+Th```e```s```e``` ar```e``` IDs from Azur```e``` Activ```e``` Dir```e```ctory.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String[]
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -RoleDefinition
-The Role Definition resource.
-The role definition is the foundation of role based access in Intune.
-The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
-There are two types of roles, built-in and custom.
-Built-in roles cannot be modified.
-Both built-in roles and custom roles must have assignments to be enforced.
-Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITION properties and create a hash table.
+### -Rol```e```D```e```finition
+Th```e``` Rol```e``` D```e```finition r```e```sourc```e```.
+Th```e``` rol```e``` d```e```finition is th```e``` foundation of rol```e``` bas```e```d acc```e```ss in Intun```e```.
+Th```e``` rol```e``` combin```e```s an Intun```e``` r```e```sourc```e``` such as a Mobil```e``` App and associat```e```d rol```e``` p```e```rmissions such as Cr```e```at```e``` or R```e```ad for th```e``` r```e```sourc```e```.
+Th```e```r```e``` ar```e``` two typ```e```s of rol```e```s, built-in and custom.
+Built-in rol```e```s cannot b```e``` modifi```e```d.
+Both built-in rol```e```s and custom rol```e```s must hav```e``` assignm```e```nts to b```e``` ```e```nforc```e```d.
+Cr```e```at```e``` custom rol```e```s if you want to d```e```fin```e``` a rol```e``` that allows any of th```e``` availabl```e``` r```e```sourc```e```s and rol```e``` p```e```rmissions to b```e``` combin```e```d into a singl```e``` rol```e```.
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for ROL```e```D```e```FINITION prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IMicrosoftGraphRoleDefinition
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: IMicrosoftGraphRol```e```D```e```finition
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b```e```for```e``` running th```e``` cmdl```e```t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ```e```n if th```e``` cmdl```e```t runs.
+Th```e``` cmdl```e```t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam```e```t```e```rs
+This cmdl```e```t supports th```e``` common param```e```t```e```rs: -D```e```bug, -```e```rrorAction, -```e```rrorVariabl```e```, -InformationAction, -InformationVariabl```e```, -OutVariabl```e```, -OutBuff```e```r, -Pip```e```lin```e```Variabl```e```, -V```e```rbos```e```, -WarningAction, and -WarningVariabl```e```. For mor```e``` information, s```e``````e``` [about_CommonParam```e```t```e```rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment1
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.ID```e```vic```e```Manag```e```m```e```ntAdministrationId```e```ntity
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.IMicrosoftGraphD```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```nt1
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst```e```m.Bool```e```an
+## NOT```e```S
 
-ALIASES
+ALIAS```e```S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL```e```X PARAM```e```T```e```R PROP```e```RTI```e```S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr```e```at```e``` th```e``` param```e```t```e```rs d```e```scrib```e```d b```e```low, construct a hash tabl```e``` containing th```e``` appropriat```e``` prop```e```rti```e```s. For information on hash tabl```e```s, run G```e```t-H```e```lp about_Hash_Tabl```e```s.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceAndAppManagementRoleAssignment1>: The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description of the Role Assignment.
-  - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
-  - `[ResourceScopes <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
-  - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM```e```T```e```R <IMicrosoftGraphD```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```nt1>: Th```e``` Rol```e``` Assignm```e```nt r```e```sourc```e```. Rol```e``` assignm```e```nts ti```e``` tog```e```th```e```r a rol```e``` d```e```finition with m```e```mb```e```rs and scop```e```s. Th```e```r```e``` can b```e``` on```e``` or mor```e``` rol```e``` assignm```e```nts p```e```r rol```e```. This appli```e```s to custom and built-in rol```e```s.
+  - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+  - `[D```e```scription <String>]`: D```e```scription of th```e``` Rol```e``` Assignm```e```nt.
+  - `[DisplayNam```e``` <String>]`: Th```e``` display or fri```e```ndly nam```e``` of th```e``` rol```e``` Assignm```e```nt.
+  - `[R```e```sourc```e```Scop```e```s <String[]>]`: List of ids of rol```e``` scop```e``` m```e```mb```e```r s```e```curity groups.  Th```e```s```e``` ar```e``` IDs from Azur```e``` Activ```e``` Dir```e```ctory.
+  - `[Rol```e```D```e```finition <IMicrosoftGraphRol```e```D```e```finition>]`: Th```e``` Rol```e``` D```e```finition r```e```sourc```e```. Th```e``` rol```e``` d```e```finition is th```e``` foundation of rol```e``` bas```e```d acc```e```ss in Intun```e```. Th```e``` rol```e``` combin```e```s an Intun```e``` r```e```sourc```e``` such as a Mobil```e``` App and associat```e```d rol```e``` p```e```rmissions such as Cr```e```at```e``` or R```e```ad for th```e``` r```e```sourc```e```. Th```e```r```e``` ar```e``` two typ```e```s of rol```e```s, built-in and custom. Built-in rol```e```s cannot b```e``` modifi```e```d. Both built-in rol```e```s and custom rol```e```s must hav```e``` assignm```e```nts to b```e``` ```e```nforc```e```d. Cr```e```at```e``` custom rol```e```s if you want to d```e```fin```e``` a rol```e``` that allows any of th```e``` availabl```e``` r```e```sourc```e```s and rol```e``` p```e```rmissions to b```e``` combin```e```d into a singl```e``` rol```e```.
+    - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
     - `[Id <String>]`: 
-    - `[Description <String>]`: Description of the Role definition.
-    - `[DisplayName <String>]`: Display Name of the Role definition.
-    - `[IsBuiltIn <Boolean?>]`: Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
-    - `[RoleAssignments <IMicrosoftGraphRoleAssignment1[]>]`: List of Role assignments for this role definition.
+    - `[D```e```scription <String>]`: D```e```scription of th```e``` Rol```e``` d```e```finition.
+    - `[DisplayNam```e``` <String>]`: Display Nam```e``` of th```e``` Rol```e``` d```e```finition.
+    - `[IsBuiltIn <Bool```e```an?>]`: Typ```e``` of Rol```e```. S```e```t to Tru```e``` if it is built-in, or s```e```t to Fals```e``` if it is a custom rol```e``` d```e```finition.
+    - `[Rol```e```Assignm```e```nts <IMicrosoftGraphRol```e```Assignm```e```nt1[]>]`: List of Rol```e``` assignm```e```nts for this rol```e``` d```e```finition.
       - `[Id <String>]`: 
-      - `[Description <String>]`: Description of the Role Assignment.
-      - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
-      - `[ResourceScopes <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
-      - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-    - `[RolePermissions <IMicrosoftGraphRolePermission[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
-      - `[ResourceActions <IMicrosoftGraphResourceAction[]>]`: Resource Actions each containing a set of allowed and not allowed permissions.
-        - `[AllowedResourceActions <String[]>]`: Allowed Actions
-        - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
+      - `[D```e```scription <String>]`: D```e```scription of th```e``` Rol```e``` Assignm```e```nt.
+      - `[DisplayNam```e``` <String>]`: Th```e``` display or fri```e```ndly nam```e``` of th```e``` rol```e``` Assignm```e```nt.
+      - `[R```e```sourc```e```Scop```e```s <String[]>]`: List of ids of rol```e``` scop```e``` m```e```mb```e```r s```e```curity groups.  Th```e```s```e``` ar```e``` IDs from Azur```e``` Activ```e``` Dir```e```ctory.
+      - `[Rol```e```D```e```finition <IMicrosoftGraphRol```e```D```e```finition>]`: Th```e``` Rol```e``` D```e```finition r```e```sourc```e```. Th```e``` rol```e``` d```e```finition is th```e``` foundation of rol```e``` bas```e```d acc```e```ss in Intun```e```. Th```e``` rol```e``` combin```e```s an Intun```e``` r```e```sourc```e``` such as a Mobil```e``` App and associat```e```d rol```e``` p```e```rmissions such as Cr```e```at```e``` or R```e```ad for th```e``` r```e```sourc```e```. Th```e```r```e``` ar```e``` two typ```e```s of rol```e```s, built-in and custom. Built-in rol```e```s cannot b```e``` modifi```e```d. Both built-in rol```e```s and custom rol```e```s must hav```e``` assignm```e```nts to b```e``` ```e```nforc```e```d. Cr```e```at```e``` custom rol```e```s if you want to d```e```fin```e``` a rol```e``` that allows any of th```e``` availabl```e``` r```e```sourc```e```s and rol```e``` p```e```rmissions to b```e``` combin```e```d into a singl```e``` rol```e```.
+    - `[Rol```e```P```e```rmissions <IMicrosoftGraphRol```e```P```e```rmission[]>]`: List of Rol```e``` P```e```rmissions this rol```e``` is allow```e```d to p```e```rform. Th```e```s```e``` must match th```e``` actionNam```e``` that is d```e```fin```e```d as part of th```e``` rol```e```P```e```rmission.
+      - `[R```e```sourc```e```Actions <IMicrosoftGraphR```e```sourc```e```Action[]>]`: R```e```sourc```e``` Actions ```e```ach containing a s```e```t of allow```e```d and not allow```e```d p```e```rmissions.
+        - `[Allow```e```dR```e```sourc```e```Actions <String[]>]`: Allow```e```d Actions
+        - `[NotAllow```e```dR```e```sourc```e```Actions <String[]>]`: Not Allow```e```d Actions.
   - `[Id <String>]`: 
-  - `[Members <String[]>]`: The list of ids of role member security groups. These are IDs from Azure Active Directory.
+  - `[M```e```mb```e```rs <String[]>]`: Th```e``` list of ids of rol```e``` m```e```mb```e```r s```e```curity groups. Th```e```s```e``` ar```e``` IDs from Azur```e``` Activ```e``` Dir```e```ctory.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
-  - `[AuditEventId <String>]`: key: id of auditEvent
-  - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
-  - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
-  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
-  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: key: id of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
-  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
-  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
-  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
-  - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
-  - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
-  - `[ComplianceManagementPartnerId <String>]`: key: id of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementDomainJoinConnectorId <String>]`: key: id of deviceManagementDomainJoinConnector
-  - `[DeviceManagementExchangeConnectorId <String>]`: key: id of deviceManagementExchangeConnector
-  - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
-  - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
-  - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
-  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
-  - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
-  - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
-  - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
-  - `[GroupPolicyObjectFileId <String>]`: key: id of groupPolicyObjectFile
-  - `[GroupPolicyOperationId <String>]`: key: id of groupPolicyOperation
-  - `[GroupPolicyPresentationId <String>]`: key: id of groupPolicyPresentation
-  - `[GroupPolicySettingMappingId <String>]`: key: id of groupPolicySettingMapping
-  - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
-  - `[IntuneBrandingProfileAssignmentId <String>]`: key: id of intuneBrandingProfileAssignment
-  - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
-  - `[IosUpdateDeviceStatusId <String>]`: key: id of iosUpdateDeviceStatus
-  - `[ManagedAllDeviceCertificateStateId <String>]`: key: id of managedAllDeviceCertificateState
-  - `[MobileThreatDefenseConnectorId <String>]`: key: id of mobileThreatDefenseConnector
-  - `[NdesConnectorId <String>]`: key: id of ndesConnector
-  - `[RemoteAssistancePartnerId <String>]`: key: id of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: key: id of resourceOperation
-  - `[RestrictedAppsViolationId <String>]`: key: id of restrictedAppsViolation
-  - `[RoleAssignmentId <String>]`: key: id of roleAssignment
-  - `[RoleDefinitionId <String>]`: key: id of roleDefinition
-  - `[RoleScopeTagAutoAssignmentId <String>]`: key: id of roleScopeTagAutoAssignment
-  - `[RoleScopeTagId <String>]`: key: id of roleScopeTag
-  - `[TelecomExpenseManagementPartnerId <String>]`: key: id of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: key: id of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: key: id of termsAndConditionsAssignment
-  - `[TermsAndConditionsGroupAssignmentId <String>]`: key: id of termsAndConditionsGroupAssignment
-  - `[TermsAndConditionsId <String>]`: key: id of termsAndConditions
-  - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
-  - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
+INPUTOBJ```e```CT <ID```e```vic```e```Manag```e```m```e```ntAdministrationId```e```ntity>: Id```e```ntity Param```e```t```e```r
+  - `[Audit```e```v```e```ntId <String>]`: k```e```y: id of audit```e```v```e```nt
+  - `[CartToClassAssociationId <String>]`: k```e```y: id of cartToClassAssociation
+  - `[CloudPcAudit```e```v```e```ntId <String>]`: k```e```y: id of cloudPcAudit```e```v```e```nt
+  - `[CloudPcD```e```vic```e```Imag```e```Id <String>]`: k```e```y: id of cloudPcD```e```vic```e```Imag```e```
+  - `[CloudPcGall```e```ryImag```e```Id <String>]`: k```e```y: id of cloudPcGall```e```ryImag```e```
+  - `[CloudPcId <String>]`: k```e```y: id of cloudPC
+  - `[CloudPcOnPr```e```mis```e```sConn```e```ctionId <String>]`: k```e```y: id of cloudPcOnPr```e```mis```e```sConn```e```ction
+  - `[CloudPcProvisioningPolicyAssignm```e```ntId <String>]`: k```e```y: id of cloudPcProvisioningPolicyAssignm```e```nt
+  - `[CloudPcProvisioningPolicyId <String>]`: k```e```y: id of cloudPcProvisioningPolicy
+  - `[CloudPcS```e```rvic```e```PlanId <String>]`: k```e```y: id of cloudPcS```e```rvic```e```Plan
+  - `[CloudPcSnapshotId <String>]`: k```e```y: id of cloudPcSnapshot
+  - `[CloudPcSupport```e```dR```e```gionId <String>]`: k```e```y: id of cloudPcSupport```e```dR```e```gion
+  - `[CloudPcUs```e```rS```e```ttingAssignm```e```ntId <String>]`: k```e```y: id of cloudPcUs```e```rS```e```ttingAssignm```e```nt
+  - `[CloudPcUs```e```rS```e```ttingId <String>]`: k```e```y: id of cloudPcUs```e```rS```e```tting
+  - `[Comanag```e```m```e```nt```e```ligibl```e```D```e```vic```e```Id <String>]`: k```e```y: id of comanag```e```m```e```nt```e```ligibl```e```D```e```vic```e```
+  - `[Complianc```e```Manag```e```m```e```ntPartn```e```rId <String>]`: k```e```y: id of complianc```e```Manag```e```m```e```ntPartn```e```r
+  - `[D```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```ntId <String>]`: k```e```y: id of d```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```nt
+  - `[D```e```vic```e```Manag```e```m```e```ntDomainJoinConn```e```ctorId <String>]`: k```e```y: id of d```e```vic```e```Manag```e```m```e```ntDomainJoinConn```e```ctor
+  - `[D```e```vic```e```Manag```e```m```e```nt```e```xchang```e```Conn```e```ctorId <String>]`: k```e```y: id of d```e```vic```e```Manag```e```m```e```nt```e```xchang```e```Conn```e```ctor
+  - `[D```e```vic```e```Manag```e```m```e```nt```e```xchang```e```OnPr```e```mis```e```sPolicyId <String>]`: k```e```y: id of d```e```vic```e```Manag```e```m```e```nt```e```xchang```e```OnPr```e```mis```e```sPolicy
+  - `[D```e```vic```e```Manag```e```m```e```ntPartn```e```rId <String>]`: k```e```y: id of d```e```vic```e```Manag```e```m```e```ntPartn```e```r
+  - `[GroupPolicyCat```e```goryId <String>]`: k```e```y: id of groupPolicyCat```e```gory
+  - `[GroupPolicyCat```e```goryId1 <String>]`: k```e```y: id of groupPolicyCat```e```gory
+  - `[GroupPolicyD```e```finitionFil```e```Id <String>]`: k```e```y: id of groupPolicyD```e```finitionFil```e```
+  - `[GroupPolicyD```e```finitionId <String>]`: k```e```y: id of groupPolicyD```e```finition
+  - `[GroupPolicyMigrationR```e```portId <String>]`: k```e```y: id of groupPolicyMigrationR```e```port
+  - `[GroupPolicyObj```e```ctFil```e```Id <String>]`: k```e```y: id of groupPolicyObj```e```ctFil```e```
+  - `[GroupPolicyOp```e```rationId <String>]`: k```e```y: id of groupPolicyOp```e```ration
+  - `[GroupPolicyPr```e```s```e```ntationId <String>]`: k```e```y: id of groupPolicyPr```e```s```e```ntation
+  - `[GroupPolicyS```e```ttingMappingId <String>]`: k```e```y: id of groupPolicyS```e```ttingMapping
+  - `[GroupPolicyUpload```e```dD```e```finitionFil```e```Id <String>]`: k```e```y: id of groupPolicyUpload```e```dD```e```finitionFil```e```
+  - `[Intun```e```BrandingProfil```e```Assignm```e```ntId <String>]`: k```e```y: id of intun```e```BrandingProfil```e```Assignm```e```nt
+  - `[Intun```e```BrandingProfil```e```Id <String>]`: k```e```y: id of intun```e```BrandingProfil```e```
+  - `[IosUpdat```e```D```e```vic```e```StatusId <String>]`: k```e```y: id of iosUpdat```e```D```e```vic```e```Status
+  - `[Manag```e```dAllD```e```vic```e```C```e```rtificat```e```Stat```e```Id <String>]`: k```e```y: id of manag```e```dAllD```e```vic```e```C```e```rtificat```e```Stat```e```
+  - `[Mobil```e```Thr```e```atD```e```f```e```ns```e```Conn```e```ctorId <String>]`: k```e```y: id of mobil```e```Thr```e```atD```e```f```e```ns```e```Conn```e```ctor
+  - `[Nd```e```sConn```e```ctorId <String>]`: k```e```y: id of nd```e```sConn```e```ctor
+  - `[R```e```mot```e```Assistanc```e```Partn```e```rId <String>]`: k```e```y: id of r```e```mot```e```Assistanc```e```Partn```e```r
+  - `[R```e```sourc```e```Op```e```rationId <String>]`: k```e```y: id of r```e```sourc```e```Op```e```ration
+  - `[R```e```strict```e```dAppsViolationId <String>]`: k```e```y: id of r```e```strict```e```dAppsViolation
+  - `[Rol```e```Assignm```e```ntId <String>]`: k```e```y: id of rol```e```Assignm```e```nt
+  - `[Rol```e```D```e```finitionId <String>]`: k```e```y: id of rol```e```D```e```finition
+  - `[Rol```e```Scop```e```TagAutoAssignm```e```ntId <String>]`: k```e```y: id of rol```e```Scop```e```TagAutoAssignm```e```nt
+  - `[Rol```e```Scop```e```TagId <String>]`: k```e```y: id of rol```e```Scop```e```Tag
+  - `[T```e```l```e```com```e```xp```e```ns```e```Manag```e```m```e```ntPartn```e```rId <String>]`: k```e```y: id of t```e```l```e```com```e```xp```e```ns```e```Manag```e```m```e```ntPartn```e```r
+  - `[T```e```rmsAndConditionsAcc```e```ptanc```e```StatusId <String>]`: k```e```y: id of t```e```rmsAndConditionsAcc```e```ptanc```e```Status
+  - `[T```e```rmsAndConditionsAssignm```e```ntId <String>]`: k```e```y: id of t```e```rmsAndConditionsAssignm```e```nt
+  - `[T```e```rmsAndConditionsGroupAssignm```e```ntId <String>]`: k```e```y: id of t```e```rmsAndConditionsGroupAssignm```e```nt
+  - `[T```e```rmsAndConditionsId <String>]`: k```e```y: id of t```e```rmsAndConditions
+  - `[Unsupport```e```dGroupPolicy```e```xt```e```nsionId <String>]`: k```e```y: id of unsupport```e```dGroupPolicy```e```xt```e```nsion
+  - `[Us```e```rPfxC```e```rtificat```e```Id <String>]`: k```e```y: id of us```e```rPFXC```e```rtificat```e```
 
-ROLEDEFINITION <IMicrosoftGraphRoleDefinition>: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+ROL```e```D```e```FINITION <IMicrosoftGraphRol```e```D```e```finition>: Th```e``` Rol```e``` D```e```finition r```e```sourc```e```. Th```e``` rol```e``` d```e```finition is th```e``` foundation of rol```e``` bas```e```d acc```e```ss in Intun```e```. Th```e``` rol```e``` combin```e```s an Intun```e``` r```e```sourc```e``` such as a Mobil```e``` App and associat```e```d rol```e``` p```e```rmissions such as Cr```e```at```e``` or R```e```ad for th```e``` r```e```sourc```e```. Th```e```r```e``` ar```e``` two typ```e```s of rol```e```s, built-in and custom. Built-in rol```e```s cannot b```e``` modifi```e```d. Both built-in rol```e```s and custom rol```e```s must hav```e``` assignm```e```nts to b```e``` ```e```nforc```e```d. Cr```e```at```e``` custom rol```e```s if you want to d```e```fin```e``` a rol```e``` that allows any of th```e``` availabl```e``` r```e```sourc```e```s and rol```e``` p```e```rmissions to b```e``` combin```e```d into a singl```e``` rol```e```.
+  - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
   - `[Id <String>]`: 
-  - `[Description <String>]`: Description of the Role definition.
-  - `[DisplayName <String>]`: Display Name of the Role definition.
-  - `[IsBuiltIn <Boolean?>]`: Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
-  - `[RoleAssignments <IMicrosoftGraphRoleAssignment1[]>]`: List of Role assignments for this role definition.
+  - `[D```e```scription <String>]`: D```e```scription of th```e``` Rol```e``` d```e```finition.
+  - `[DisplayNam```e``` <String>]`: Display Nam```e``` of th```e``` Rol```e``` d```e```finition.
+  - `[IsBuiltIn <Bool```e```an?>]`: Typ```e``` of Rol```e```. S```e```t to Tru```e``` if it is built-in, or s```e```t to Fals```e``` if it is a custom rol```e``` d```e```finition.
+  - `[Rol```e```Assignm```e```nts <IMicrosoftGraphRol```e```Assignm```e```nt1[]>]`: List of Rol```e``` assignm```e```nts for this rol```e``` d```e```finition.
     - `[Id <String>]`: 
-    - `[Description <String>]`: Description of the Role Assignment.
-    - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
-    - `[ResourceScopes <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
-    - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-  - `[RolePermissions <IMicrosoftGraphRolePermission[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
-    - `[ResourceActions <IMicrosoftGraphResourceAction[]>]`: Resource Actions each containing a set of allowed and not allowed permissions.
-      - `[AllowedResourceActions <String[]>]`: Allowed Actions
-      - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
+    - `[D```e```scription <String>]`: D```e```scription of th```e``` Rol```e``` Assignm```e```nt.
+    - `[DisplayNam```e``` <String>]`: Th```e``` display or fri```e```ndly nam```e``` of th```e``` rol```e``` Assignm```e```nt.
+    - `[R```e```sourc```e```Scop```e```s <String[]>]`: List of ids of rol```e``` scop```e``` m```e```mb```e```r s```e```curity groups.  Th```e```s```e``` ar```e``` IDs from Azur```e``` Activ```e``` Dir```e```ctory.
+    - `[Rol```e```D```e```finition <IMicrosoftGraphRol```e```D```e```finition>]`: Th```e``` Rol```e``` D```e```finition r```e```sourc```e```. Th```e``` rol```e``` d```e```finition is th```e``` foundation of rol```e``` bas```e```d acc```e```ss in Intun```e```. Th```e``` rol```e``` combin```e```s an Intun```e``` r```e```sourc```e``` such as a Mobil```e``` App and associat```e```d rol```e``` p```e```rmissions such as Cr```e```at```e``` or R```e```ad for th```e``` r```e```sourc```e```. Th```e```r```e``` ar```e``` two typ```e```s of rol```e```s, built-in and custom. Built-in rol```e```s cannot b```e``` modifi```e```d. Both built-in rol```e```s and custom rol```e```s must hav```e``` assignm```e```nts to b```e``` ```e```nforc```e```d. Cr```e```at```e``` custom rol```e```s if you want to d```e```fin```e``` a rol```e``` that allows any of th```e``` availabl```e``` r```e```sourc```e```s and rol```e``` p```e```rmissions to b```e``` combin```e```d into a singl```e``` rol```e```.
+  - `[Rol```e```P```e```rmissions <IMicrosoftGraphRol```e```P```e```rmission[]>]`: List of Rol```e``` P```e```rmissions this rol```e``` is allow```e```d to p```e```rform. Th```e```s```e``` must match th```e``` actionNam```e``` that is d```e```fin```e```d as part of th```e``` rol```e```P```e```rmission.
+    - `[R```e```sourc```e```Actions <IMicrosoftGraphR```e```sourc```e```Action[]>]`: R```e```sourc```e``` Actions ```e```ach containing a s```e```t of allow```e```d and not allow```e```d p```e```rmissions.
+      - `[Allow```e```dR```e```sourc```e```Actions <String[]>]`: Allow```e```d Actions
+      - `[NotAllow```e```dR```e```sourc```e```Actions <String[]>]`: Not Allow```e```d Actions.
 
-## RELATED LINKS
+## R```e```LAT```e```D LINKS
 
-## RELATED LINKS
+## R```e```LAT```e```D LINKS
