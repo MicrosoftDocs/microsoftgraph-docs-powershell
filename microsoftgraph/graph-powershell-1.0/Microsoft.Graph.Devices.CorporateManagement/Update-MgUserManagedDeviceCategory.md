@@ -1,313 +1,313 @@
-﻿---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
-Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicecategory
-schema: 2.0.0
+---
+``e``xt``e``rnal h``e``lp fil``e``: Microsoft.Graph.D``e``vic``e``s.Corporat``e``Manag``e``m``e``nt-h``e``lp.xml
+Modul``e`` Nam``e``: Microsoft.Graph.D``e``vic``e``s.Corporat``e``Manag``e``m``e``nt
+onlin``e`` v``e``rsion: https://docs.microsoft.com/``e``n-us/pow``e``rsh``e``ll/modul``e``/microsoft.graph.d``e``vic``e``s.corporat``e``manag``e``m``e``nt/updat``e``-mgus``e``rmanag``e``dd``e``vic``e``cat``e``gory
+sch``e``ma: 2.0.0
 ---
 
-# Update-MgUserManagedDeviceCategory
+# Updat``e``-MgUs``e``rManag``e``dD``e``vic``e``Cat``e``gory
 
 ## SYNOPSIS
-Update the navigation property deviceCategory in users
+Updat``e`` th``e`` navigation prop``e``rty d``e``vic``e``Cat``e``gory in us``e``rs
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Updat``e````e``xpand``e``d1 (D``e``fault)
 ```
-Update-MgUserManagedDeviceCategory -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgUserManagedDeviceCategory -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphDeviceCategory2> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat``e``-MgUs``e``rManag``e``dD``e``vic``e``Cat``e``gory -Manag``e``dD``e``vic``e``Id <String> -Us``e``rId <String>
+ [-AdditionalProp``e``rti``e``s <Hashtabl``e``>] [-D``e``scription <String>] [-DisplayNam``e`` <String>] [-Id <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Updat``e``1
 ```
-Update-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceCategory2> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat``e``-MgUs``e``rManag``e``dD``e``vic``e``Cat``e``gory -Manag``e``dD``e``vic``e``Id <String> -Us``e``rId <String>
+ -BodyParam``e``t``e``r <IMicrosoftGraphD``e``vic``e``Cat``e``gory2> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property deviceCategory in users
+### Updat``e``ViaId``e``ntity``e``xpand``e``d1
+```
+Updat``e``-MgUs``e``rManag``e``dD``e``vic``e``Cat``e``gory -InputObj``e``ct <ID``e``vic``e``sCorporat``e``Manag``e``m``e``ntId``e``ntity>
+ [-AdditionalProp``e``rti``e``s <Hashtabl``e``>] [-D``e``scription <String>] [-DisplayNam``e`` <String>] [-Id <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
+```
 
-## EXAMPLES
+### Updat``e``ViaId``e``ntity1
+```
+Updat``e``-MgUs``e``rManag``e``dD``e``vic``e``Cat``e``gory -InputObj``e``ct <ID``e``vic``e``sCorporat``e``Manag``e``m``e``ntId``e``ntity>
+ -BodyParam``e``t``e``r <IMicrosoftGraphD``e``vic``e``Cat``e``gory2> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
+```
 
-## PARAMETERS
+## D``e``SCRIPTION
+Updat``e`` th``e`` navigation prop``e``rty d``e``vic``e``Cat``e``gory in us``e``rs
 
-### -AdditionalProperties
-Additional Parameters
+## ``e``XAMPL``e``S
+
+## PARAM``e``T``e``RS
+
+### -AdditionalProp``e``rti``e``s
+Additional Param``e``t``e``rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: Hashtabl``e``
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -BodyParameter
-Device categories provides a way to organize your devices.
-Using device categories, company administrators can define their own categories that make sense to their company.
-These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment.
-You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam``e``t``e``r
+D``e``vic``e`` cat``e``gori``e``s provid``e``s a way to organiz``e`` your d``e``vic``e``s.
+Using d``e``vic``e`` cat``e``gori``e``s, company administrators can d``e``fin``e`` th``e``ir own cat``e``gori``e``s that mak``e`` s``e``ns``e`` to th``e``ir company.
+Th``e``s``e`` cat``e``gori``e``s can th``e``n b``e`` appli``e``d to a d``e``vic``e`` in th``e`` Intun``e`` Azur``e`` consol``e`` or s``e``l``e``ct``e``d by a us``e``r during d``e``vic``e`` ``e``nrollm``e``nt.
+You can filt``e``r r``e``ports and cr``e``at``e`` dynamic Azur``e`` Activ``e`` Dir``e``ctory d``e``vic``e`` groups bas``e``d on d``e``vic``e`` cat``e``gori``e``s.
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for BODYPARAM``e``T``e``R prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCategory2
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Typ``e``: IMicrosoftGraphD``e``vic``e``Cat``e``gory2
+Param``e``t``e``r S``e``ts: Updat``e``1, Updat``e``ViaId``e``ntity1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -Description
-Optional description for the device category.
+### -D``e``scription
+Optional d``e``scription for th``e`` d``e``vic``e`` cat``e``gory.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -DisplayName
-Display name for the device category.
+### -DisplayNam``e``
+Display nam``e`` for th``e`` d``e``vic``e`` cat``e``gory.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj``e``ct
+Id``e``ntity Param``e``t``e``r
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for INPUTOBJ``e``CT prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Typ``e``: ID``e``vic``e``sCorporat``e``Manag``e``m``e``ntId``e``ntity
+Param``e``t``e``r S``e``ts: Updat``e``ViaId``e``ntity``e``xpand``e``d1, Updat``e``ViaId``e``ntity1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -ManagedDeviceId
-key: id of managedDevice
+### -Manag``e``dD``e``vic``e``Id
+k``e``y: id of manag``e``dD``e``vic``e``
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R``e``turns tru``e`` wh``e``n th``e`` command succ``e````e``ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -UserId
-key: id of user
+### -Us``e``rId
+k``e``y: id of us``e``r
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``e``for``e`` running th``e`` cmdl``e``t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``e``n if th``e`` cmdl``e``t runs.
+Th``e`` cmdl``e``t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``e``t``e``rs
+This cmdl``e``t supports th``e`` common param``e``t``e``rs: -D``e``bug, -``e``rrorAction, -``e``rrorVariabl``e``, -InformationAction, -InformationVariabl``e``, -OutVariabl``e``, -OutBuff``e``r, -Pip``e``lin``e``Variabl``e``, -V``e``rbos``e``, -WarningAction, and -WarningVariabl``e``. For mor``e`` information, s``e````e`` [about_CommonParam``e``t``e``rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory2
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.ID``e``vic``e``sCorporat``e``Manag``e``m``e``ntId``e``ntity
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphD``e``vic``e``Cat``e``gory2
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst``e``m.Bool``e``an
+## NOT``e``S
 
-ALIASES
+ALIAS``e``S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``e``X PARAM``e``T``e``R PROP``e``RTI``e``S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``e``at``e`` th``e`` param``e``t``e``rs d``e``scrib``e``d b``e``low, construct a hash tabl``e`` containing th``e`` appropriat``e`` prop``e``rti``e``s. For information on hash tabl``e``s, run G``e``t-H``e``lp about_Hash_Tabl``e``s.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceCategory2>: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM``e``T``e``R <IMicrosoftGraphD``e``vic``e``Cat``e``gory2>: D``e``vic``e`` cat``e``gori``e``s provid``e``s a way to organiz``e`` your d``e``vic``e``s. Using d``e``vic``e`` cat``e``gori``e``s, company administrators can d``e``fin``e`` th``e``ir own cat``e``gori``e``s that mak``e`` s``e``ns``e`` to th``e``ir company. Th``e``s``e`` cat``e``gori``e``s can th``e``n b``e`` appli``e``d to a d``e``vic``e`` in th``e`` Intun``e`` Azur``e`` consol``e`` or s``e``l``e``ct``e``d by a us``e``r during d``e``vic``e`` ``e``nrollm``e``nt. You can filt``e``r r``e``ports and cr``e``at``e`` dynamic Azur``e`` Activ``e`` Dir``e``ctory d``e``vic``e`` groups bas``e``d on d``e``vic``e`` cat``e``gori``e``s.
+  - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
   - `[Id <String>]`: 
-  - `[Description <String>]`: Optional description for the device category.
-  - `[DisplayName <String>]`: Display name for the device category.
+  - `[D``e``scription <String>]`: Optional d``e``scription for th``e`` d``e``vic``e`` cat``e``gory.
+  - `[DisplayNam``e`` <String>]`: Display nam``e`` for th``e`` d``e``vic``e`` cat``e``gory.
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
-  - `[Count <Int64?>]`: Usage: count={count}
-  - `[DefaultManagedAppProtectionId <String>]`: key: id of defaultManagedAppProtection
-  - `[DetectedAppId <String>]`: key: id of detectedApp
-  - `[DeviceAppManagementTaskId <String>]`: key: id of deviceAppManagementTask
-  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
-  - `[DeviceInstallStateId <String>]`: key: id of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
-  - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
-  - `[EnterpriseCodeSigningCertificateId <String>]`: key: id of enterpriseCodeSigningCertificate
-  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: key: id of iosLobAppProvisioningConfigurationAssignment
-  - `[IosLobAppProvisioningConfigurationId <String>]`: key: id of iosLobAppProvisioningConfiguration
-  - `[IosManagedAppProtectionId <String>]`: key: id of iosManagedAppProtection
-  - `[ManagedAppOperationId <String>]`: key: id of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: key: id of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: key: id of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: key: id of managedAppStatus
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: key: id of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: key: id of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: key: id of managedEBookAssignment
-  - `[ManagedEBookCategoryId <String>]`: key: id of managedEBookCategory
-  - `[ManagedEBookId <String>]`: key: id of managedEBook
-  - `[ManagedMobileAppId <String>]`: key: id of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: key: id of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: key: id of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: key: id of mobileAppCategory
-  - `[MobileAppId <String>]`: key: id of mobileApp
-  - `[MobileAppInstallStatusId <String>]`: key: id of mobileAppInstallStatus
-  - `[MobileAppIntentAndStateId <String>]`: key: id of mobileAppIntentAndState
-  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: key: id of mobileAppProvisioningConfigGroupAssignment
-  - `[MobileAppRelationshipId <String>]`: key: id of mobileAppRelationship
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[OfficeClientConfigurationAssignmentId <String>]`: key: id of officeClientConfigurationAssignment
-  - `[OfficeClientConfigurationId <String>]`: key: id of officeClientConfiguration
-  - `[PolicySetAssignmentId <String>]`: key: id of policySetAssignment
-  - `[PolicySetId <String>]`: key: id of policySet
-  - `[PolicySetItemId <String>]`: key: id of policySetItem
-  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
-  - `[SideLoadingKeyId <String>]`: key: id of sideLoadingKey
-  - `[Status <String>]`: Usage: status='{status}'
-  - `[TargetedManagedAppConfigurationId <String>]`: key: id of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: key: id of targetedManagedAppPolicyAssignment
-  - `[UserAppInstallStatusId <String>]`: key: id of userAppInstallStatus
-  - `[UserId <String>]`: key: id of user
-  - `[UserInstallStateSummaryId <String>]`: key: id of userInstallStateSummary
-  - `[UserPrincipalName <String>]`: Usage: userPrincipalName='{userPrincipalName}'
-  - `[VppTokenId <String>]`: key: id of vppToken
-  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyAssignment
-  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicy
-  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: key: id of windowsInformationProtectionDeviceRegistration
-  - `[WindowsInformationProtectionPolicyId <String>]`: key: id of windowsInformationProtectionPolicy
-  - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
-  - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
+INPUTOBJ``e``CT <ID``e``vic``e``sCorporat``e``Manag``e``m``e``ntId``e``ntity>: Id``e``ntity Param``e``t``e``r
+  - `[AndroidManag``e``dAppProt``e``ctionId <String>]`: k``e``y: id of androidManag``e``dAppProt``e``ction
+  - `[AppLogColl``e``ctionR``e``qu``e``stId <String>]`: k``e``y: id of appLogColl``e``ctionR``e``qu``e``st
+  - `[Assignm``e``ntFilt``e``r``e``valuationStatusD``e``tailsId <String>]`: k``e``y: id of assignm``e``ntFilt``e``r``e``valuationStatusD``e``tails
+  - `[Bundl``e``Id <String>]`: Usag``e``: bundl``e``Id='{bundl``e``Id}'
+  - `[Count <Int64?>]`: Usag``e``: count={count}
+  - `[D``e``faultManag``e``dAppProt``e``ctionId <String>]`: k``e``y: id of d``e``faultManag``e``dAppProt``e``ction
+  - `[D``e``t``e``ct``e``dAppId <String>]`: k``e``y: id of d``e``t``e``ct``e``dApp
+  - `[D``e``vic``e``AppManag``e``m``e``ntTaskId <String>]`: k``e``y: id of d``e``vic``e``AppManag``e``m``e``ntTask
+  - `[D``e``vic``e``Complianc``e``PolicyStat``e``Id <String>]`: k``e``y: id of d``e``vic``e``Complianc``e``PolicyStat``e``
+  - `[D``e``vic``e``ConfigurationStat``e``Id <String>]`: k``e``y: id of d``e``vic``e``ConfigurationStat``e``
+  - `[D``e``vic``e````e``nrollm``e``ntConfigurationId <String>]`: k``e``y: id of d``e``vic``e````e``nrollm``e``ntConfiguration
+  - `[D``e``vic``e``Id <String>]`: Usag``e``: d``e``vic``e``Id='{d``e``vic``e``Id}'
+  - `[D``e``vic``e``InstallStat``e``Id <String>]`: k``e``y: id of d``e``vic``e``InstallStat``e``
+  - `[D``e``vic``e``LogColl``e``ctionR``e``spons``e``Id <String>]`: k``e``y: id of d``e``vic``e``LogColl``e``ctionR``e``spons``e``
+  - `[D``e``vic``e``Manag``e``m``e``ntTroubl``e``shooting``e``v``e``ntId <String>]`: k``e``y: id of d``e``vic``e``Manag``e``m``e``ntTroubl``e``shooting``e``v``e``nt
+  - `[``e``nrollm``e``ntConfigurationAssignm``e``ntId <String>]`: k``e``y: id of ``e``nrollm``e``ntConfigurationAssignm``e``nt
+  - `[``e``nt``e``rpris``e``Cod``e``SigningC``e``rtificat``e``Id <String>]`: k``e``y: id of ``e``nt``e``rpris``e``Cod``e``SigningC``e``rtificat``e``
+  - `[IosLobAppProvisioningConfigurationAssignm``e``ntId <String>]`: k``e``y: id of iosLobAppProvisioningConfigurationAssignm``e``nt
+  - `[IosLobAppProvisioningConfigurationId <String>]`: k``e``y: id of iosLobAppProvisioningConfiguration
+  - `[IosManag``e``dAppProt``e``ctionId <String>]`: k``e``y: id of iosManag``e``dAppProt``e``ction
+  - `[Manag``e``dAppOp``e``rationId <String>]`: k``e``y: id of manag``e``dAppOp``e``ration
+  - `[Manag``e``dAppPolicyId <String>]`: k``e``y: id of manag``e``dAppPolicy
+  - `[Manag``e``dAppR``e``gistrationId <String>]`: k``e``y: id of manag``e``dAppR``e``gistration
+  - `[Manag``e``dAppStatusId <String>]`: k``e``y: id of manag``e``dAppStatus
+  - `[Manag``e``dD``e``vic``e``Id <String>]`: k``e``y: id of manag``e``dD``e``vic``e``
+  - `[Manag``e``dD``e``vic``e``Mobil``e``AppConfigurationAssignm``e``ntId <String>]`: k``e``y: id of manag``e``dD``e``vic``e``Mobil``e``AppConfigurationAssignm``e``nt
+  - `[Manag``e``dD``e``vic``e``Mobil``e``AppConfigurationD``e``vic``e``StatusId <String>]`: k``e``y: id of manag``e``dD``e``vic``e``Mobil``e``AppConfigurationD``e``vic``e``Status
+  - `[Manag``e``dD``e``vic``e``Mobil``e``AppConfigurationId <String>]`: k``e``y: id of manag``e``dD``e``vic``e``Mobil``e``AppConfiguration
+  - `[Manag``e``dD``e``vic``e``Mobil``e``AppConfigurationStat``e``Id <String>]`: k``e``y: id of manag``e``dD``e``vic``e``Mobil``e``AppConfigurationStat``e``
+  - `[Manag``e``dD``e``vic``e``Mobil``e``AppConfigurationUs``e``rStatusId <String>]`: k``e``y: id of manag``e``dD``e``vic``e``Mobil``e``AppConfigurationUs``e``rStatus
+  - `[Manag``e``d``e``BookAssignm``e``ntId <String>]`: k``e``y: id of manag``e``d``e``BookAssignm``e``nt
+  - `[Manag``e``d``e``BookCat``e``goryId <String>]`: k``e``y: id of manag``e``d``e``BookCat``e``gory
+  - `[Manag``e``d``e``BookId <String>]`: k``e``y: id of manag``e``d``e``Book
+  - `[Manag``e``dMobil``e``AppId <String>]`: k``e``y: id of manag``e``dMobil``e``App
+  - `[MdmWindowsInformationProt``e``ctionPolicyId <String>]`: k``e``y: id of mdmWindowsInformationProt``e``ctionPolicy
+  - `[Mobil``e``AppAssignm``e``ntId <String>]`: k``e``y: id of mobil``e``AppAssignm``e``nt
+  - `[Mobil``e``AppCat``e``goryId <String>]`: k``e``y: id of mobil``e``AppCat``e``gory
+  - `[Mobil``e``AppId <String>]`: k``e``y: id of mobil``e``App
+  - `[Mobil``e``AppInstallStatusId <String>]`: k``e``y: id of mobil``e``AppInstallStatus
+  - `[Mobil``e``AppInt``e``ntAndStat``e``Id <String>]`: k``e``y: id of mobil``e``AppInt``e``ntAndStat``e``
+  - `[Mobil``e``AppProvisioningConfigGroupAssignm``e``ntId <String>]`: k``e``y: id of mobil``e``AppProvisioningConfigGroupAssignm``e``nt
+  - `[Mobil``e``AppR``e``lationshipId <String>]`: k``e``y: id of mobil``e``AppR``e``lationship
+  - `[Mobil``e``AppTroubl``e``shooting``e``v``e``ntId <String>]`: k``e``y: id of mobil``e``AppTroubl``e``shooting``e``v``e``nt
+  - `[Offic``e``Cli``e``ntConfigurationAssignm``e``ntId <String>]`: k``e``y: id of offic``e``Cli``e``ntConfigurationAssignm``e``nt
+  - `[Offic``e``Cli``e``ntConfigurationId <String>]`: k``e``y: id of offic``e``Cli``e``ntConfiguration
+  - `[PolicyS``e``tAssignm``e``ntId <String>]`: k``e``y: id of policyS``e``tAssignm``e``nt
+  - `[PolicyS``e``tId <String>]`: k``e``y: id of policyS``e``t
+  - `[PolicyS``e``tIt``e``mId <String>]`: k``e``y: id of policyS``e``tIt``e``m
+  - `[S``e``curityBas``e``lin``e``S``e``ttingStat``e``Id <String>]`: k``e``y: id of s``e``curityBas``e``lin``e``S``e``ttingStat``e``
+  - `[S``e``curityBas``e``lin``e``Stat``e``Id <String>]`: k``e``y: id of s``e``curityBas``e``lin``e``Stat``e``
+  - `[Sid``e``LoadingK``e``yId <String>]`: k``e``y: id of sid``e``LoadingK``e``y
+  - `[Status <String>]`: Usag``e``: status='{status}'
+  - `[Targ``e``t``e``dManag``e``dAppConfigurationId <String>]`: k``e``y: id of targ``e``t``e``dManag``e``dAppConfiguration
+  - `[Targ``e``t``e``dManag``e``dAppPolicyAssignm``e``ntId <String>]`: k``e``y: id of targ``e``t``e``dManag``e``dAppPolicyAssignm``e``nt
+  - `[Us``e``rAppInstallStatusId <String>]`: k``e``y: id of us``e``rAppInstallStatus
+  - `[Us``e``rId <String>]`: k``e``y: id of us``e``r
+  - `[Us``e``rInstallStat``e``SummaryId <String>]`: k``e``y: id of us``e``rInstallStat``e``Summary
+  - `[Us``e``rPrincipalNam``e`` <String>]`: Usag``e``: us``e``rPrincipalNam``e``='{us``e``rPrincipalNam``e``}'
+  - `[VppTok``e``nId <String>]`: k``e``y: id of vppTok``e``n
+  - `[WindowsD``e``f``e``nd``e``rApplicationControlSuppl``e``m``e``ntalPolicyAssignm``e``ntId <String>]`: k``e``y: id of windowsD``e``f``e``nd``e``rApplicationControlSuppl``e``m``e``ntalPolicyAssignm``e``nt
+  - `[WindowsD``e``f``e``nd``e``rApplicationControlSuppl``e``m``e``ntalPolicyD``e``ploym``e``ntStatusId <String>]`: k``e``y: id of windowsD``e``f``e``nd``e``rApplicationControlSuppl``e``m``e``ntalPolicyD``e``ploym``e``ntStatus
+  - `[WindowsD``e``f``e``nd``e``rApplicationControlSuppl``e``m``e``ntalPolicyId <String>]`: k``e``y: id of windowsD``e``f``e``nd``e``rApplicationControlSuppl``e``m``e``ntalPolicy
+  - `[WindowsD``e``vic``e``Malwar``e``Stat``e``Id <String>]`: k``e``y: id of windowsD``e``vic``e``Malwar``e``Stat``e``
+  - `[WindowsInformationProt``e``ctionD``e``vic``e``R``e``gistrationId <String>]`: k``e``y: id of windowsInformationProt``e``ctionD``e``vic``e``R``e``gistration
+  - `[WindowsInformationProt``e``ctionPolicyId <String>]`: k``e``y: id of windowsInformationProt``e``ctionPolicy
+  - `[WindowsInformationProt``e``ctionWip``e``ActionId <String>]`: k``e``y: id of windowsInformationProt``e``ctionWip``e``Action
+  - `[WindowsManag``e``dAppProt``e``ctionId <String>]`: k``e``y: id of windowsManag``e``dAppProt``e``ction
 
-## RELATED LINKS
+## R``e``LAT``e``D LINKS
