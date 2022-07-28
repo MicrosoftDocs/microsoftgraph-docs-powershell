@@ -1,455 +1,455 @@
-﻿---
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
-Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementissue
-schema: 2.0.0
+---
+````e````xt````e````rnal h````e````lp fil````e````: Microsoft.Graph.D````e````vic````e````s.S````e````rvic````e````Announc````e````m````e````nt-h````e````lp.xml
+Modul````e```` Nam````e````: Microsoft.Graph.D````e````vic````e````s.S````e````rvic````e````Announc````e````m````e````nt
+onlin````e```` v````e````rsion: https://docs.microsoft.com/````e````n-us/pow````e````rsh````e````ll/modul````e````/microsoft.graph.d````e````vic````e````s.s````e````rvic````e````announc````e````m````e````nt/updat````e````-mgs````e````rvic````e````announc````e````m````e````ntissu````e````
+sch````e````ma: 2.0.0
 ---
 
-# Update-MgServiceAnnouncementIssue
+# Updat````e````-MgS````e````rvic````e````Announc````e````m````e````ntIssu````e````
 
 ## SYNOPSIS
-A collection of service issues for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+A coll````e````ction of s````e````rvic````e```` issu````e````s for t````e````nant.
+This prop````e````rty is a contain````e````d navigation prop````e````rty, it is nullabl````e```` and r````e````adonly.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Updat````e````````e````xpand````e````d1 (D````e````fault)
 ```
-Update-MgServiceAnnouncementIssue -ServiceHealthIssueId <String> [-AdditionalProperties <Hashtable>]
- [-Classification <String>] [-Details <IMicrosoftGraphKeyValuePair[]>] [-EndDateTime <DateTime>]
- [-Feature <String>] [-FeatureGroup <String>] [-Id <String>] [-ImpactDescription <String>] [-IsResolved]
- [-LastModifiedDateTime <DateTime>] [-Origin <String>] [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>]
- [-Service <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgServiceAnnouncementIssue -ServiceHealthIssueId <String>
- -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat````e````-MgS````e````rvic````e````Announc````e````m````e````ntIssu````e```` -S````e````rvic````e````H````e````althIssu````e````Id <String> [-AdditionalProp````e````rti````e````s <Hashtabl````e````>]
+ [-Classification <String>] [-D````e````tails <IMicrosoftGraphK````e````yValu````e````Pair[]>] [-````e````ndDat````e````Tim````e```` <Dat````e````Tim````e````>]
+ [-F````e````atur````e```` <String>] [-F````e````atur````e````Group <String>] [-Id <String>] [-ImpactD````e````scription <String>] [-IsR````e````solv````e````d]
+ [-LastModifi````e````dDat````e````Tim````e```` <Dat````e````Tim````e````>] [-Origin <String>] [-Posts <IMicrosoftGraphS````e````rvic````e````H````e````althIssu````e````Post[]>]
+ [-S````e````rvic````e```` <String>] [-StartDat````e````Tim````e```` <Dat````e````Tim````e````>] [-Status <String>] [-Titl````e```` <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParam````e````t````e````rs>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Updat````e````1
 ```
-Update-MgServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementIdentity>
- [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Details <IMicrosoftGraphKeyValuePair[]>]
- [-EndDateTime <DateTime>] [-Feature <String>] [-FeatureGroup <String>] [-Id <String>]
- [-ImpactDescription <String>] [-IsResolved] [-LastModifiedDateTime <DateTime>] [-Origin <String>]
- [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>] [-Service <String>] [-StartDateTime <DateTime>]
- [-Status <String>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat````e````-MgS````e````rvic````e````Announc````e````m````e````ntIssu````e```` -S````e````rvic````e````H````e````althIssu````e````Id <String>
+ -BodyParam````e````t````e````r <IMicrosoftGraphS````e````rvic````e````H````e````althIssu````e````> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam````e````t````e````rs>]
 ```
 
-### UpdateViaIdentity1
+### Updat````e````ViaId````e````ntity````e````xpand````e````d1
 ```
-Update-MgServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementIdentity>
- -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat````e````-MgS````e````rvic````e````Announc````e````m````e````ntIssu````e```` -InputObj````e````ct <ID````e````vic````e````sS````e````rvic````e````Announc````e````m````e````ntId````e````ntity>
+ [-AdditionalProp````e````rti````e````s <Hashtabl````e````>] [-Classification <String>] [-D````e````tails <IMicrosoftGraphK````e````yValu````e````Pair[]>]
+ [-````e````ndDat````e````Tim````e```` <Dat````e````Tim````e````>] [-F````e````atur````e```` <String>] [-F````e````atur````e````Group <String>] [-Id <String>]
+ [-ImpactD````e````scription <String>] [-IsR````e````solv````e````d] [-LastModifi````e````dDat````e````Tim````e```` <Dat````e````Tim````e````>] [-Origin <String>]
+ [-Posts <IMicrosoftGraphS````e````rvic````e````H````e````althIssu````e````Post[]>] [-S````e````rvic````e```` <String>] [-StartDat````e````Tim````e```` <Dat````e````Tim````e````>]
+ [-Status <String>] [-Titl````e```` <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam````e````t````e````rs>]
 ```
 
-## DESCRIPTION
-A collection of service issues for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+### Updat````e````ViaId````e````ntity1
+```
+Updat````e````-MgS````e````rvic````e````Announc````e````m````e````ntIssu````e```` -InputObj````e````ct <ID````e````vic````e````sS````e````rvic````e````Announc````e````m````e````ntId````e````ntity>
+ -BodyParam````e````t````e````r <IMicrosoftGraphS````e````rvic````e````H````e````althIssu````e````> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam````e````t````e````rs>]
+```
 
-## EXAMPLES
+## D````e````SCRIPTION
+A coll````e````ction of s````e````rvic````e```` issu````e````s for t````e````nant.
+This prop````e````rty is a contain````e````d navigation prop````e````rty, it is nullabl````e```` and r````e````adonly.
 
-## PARAMETERS
+## ````e````XAMPL````e````S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM````e````T````e````RS
+
+### -AdditionalProp````e````rti````e````s
+Additional Param````e````t````e````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: Hashtabl````e````
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -BodyParameter
-serviceHealthIssue
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam````e````t````e````r
+s````e````rvic````e````H````e````althIssu````e````
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for BODYPARAM````e````T````e````R prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealthIssue
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Typ````e````: IMicrosoftGraphS````e````rvic````e````H````e````althIssu````e````
+Param````e````t````e````r S````e````ts: Updat````e````1, Updat````e````ViaId````e````ntity1
+Alias````e````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R````e````quir````e````d: Tru````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Tru````e```` (ByValu````e````)
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Classification
-serviceHealthClassificationType
+s````e````rvic````e````H````e````althClassificationTyp````e````
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Details
-Additional details about service event.
-This property doesn't support filters.
-To construct, please use Get-Help -Online and see NOTES section for DETAILS properties and create a hash table.
+### -D````e````tails
+Additional d````e````tails about s````e````rvic````e```` ````e````v````e````nt.
+This prop````e````rty do````e````sn't support filt````e````rs.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for D````e````TAILS prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: IMicrosoftGraphK````e````yValu````e````Pair[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -EndDateTime
-The end time of the service event.
+### -````e````ndDat````e````Tim````e````
+Th````e```` ````e````nd tim````e```` of th````e```` s````e````rvic````e```` ````e````v````e````nt.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: Dat````e````Tim````e````
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Feature
-The feature name of the service issue.
+### -F````e````atur````e````
+Th````e```` f````e````atur````e```` nam````e```` of th````e```` s````e````rvic````e```` issu````e````.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -FeatureGroup
-The feature group name of the service issue.
+### -F````e````atur````e````Group
+Th````e```` f````e````atur````e```` group nam````e```` of th````e```` s````e````rvic````e```` issu````e````.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Id
-Read-only.
+R````e````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -ImpactDescription
-The description of the service issue impact.
+### -ImpactD````e````scription
+Th````e```` d````e````scription of th````e```` s````e````rvic````e```` issu````e```` impact.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj````e````ct
+Id````e````ntity Param````e````t````e````r
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for INPUTOBJ````e````CT prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IDevicesServiceAnnouncementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Typ````e````: ID````e````vic````e````sS````e````rvic````e````Announc````e````m````e````ntId````e````ntity
+Param````e````t````e````r S````e````ts: Updat````e````ViaId````e````ntity````e````xpand````e````d1, Updat````e````ViaId````e````ntity1
+Alias````e````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R````e````quir````e````d: Tru````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Tru````e```` (ByValu````e````)
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -IsResolved
-Indicates whether the issue is resolved.
+### -IsR````e````solv````e````d
+Indicat````e````s wh````e````th````e````r th````e```` issu````e```` is r````e````solv````e````d.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -LastModifiedDateTime
-The last modified time of the service event.
+### -LastModifi````e````dDat````e````Tim````e````
+Th````e```` last modifi````e````d tim````e```` of th````e```` s````e````rvic````e```` ````e````v````e````nt.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: Dat````e````Tim````e````
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Origin
-serviceHealthOrigin
+s````e````rvic````e````H````e````althOrigin
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R````e````turns tru````e```` wh````e````n th````e```` command succ````e````````e````ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: (All)
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Posts
-Collection of historical posts for the service issue.
-To construct, please use Get-Help -Online and see NOTES section for POSTS properties and create a hash table.
+Coll````e````ction of historical posts for th````e```` s````e````rvic````e```` issu````e````.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for POSTS prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealthIssuePost[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: IMicrosoftGraphS````e````rvic````e````H````e````althIssu````e````Post[]
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Service
-Indicates the service affected by the issue.
+### -S````e````rvic````e````
+Indicat````e````s th````e```` s````e````rvic````e```` aff````e````ct````e````d by th````e```` issu````e````.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -ServiceHealthIssueId
-key: id of serviceHealthIssue
+### -S````e````rvic````e````H````e````althIssu````e````Id
+k````e````y: id of s````e````rvic````e````H````e````althIssu````e````
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````1
+Alias````e````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Tru````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -StartDateTime
-The start time of the service event.
+### -StartDat````e````Tim````e````
+Th````e```` start tim````e```` of th````e```` s````e````rvic````e```` ````e````v````e````nt.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: Dat````e````Tim````e````
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Status
-serviceHealthStatus
+s````e````rvic````e````H````e````althStatus
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -Title
-The title of the service event.
+### -Titl````e````
+Th````e```` titl````e```` of th````e```` s````e````rvic````e```` ````e````v````e````nt.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Updat````e````````e````xpand````e````d1, Updat````e````ViaId````e````ntity````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b````e````for````e```` running th````e```` cmdl````e````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: (All)
+Alias````e````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ````e````n if th````e```` cmdl````e````t runs.
+Th````e```` cmdl````e````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: (All)
+Alias````e````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam````e````t````e````rs
+This cmdl````e````t supports th````e```` common param````e````t````e````rs: -D````e````bug, -````e````rrorAction, -````e````rrorVariabl````e````, -InformationAction, -InformationVariabl````e````, -OutVariabl````e````, -OutBuff````e````r, -Pip````e````lin````e````Variabl````e````, -V````e````rbos````e````, -WarningAction, and -WarningVariabl````e````. For mor````e```` information, s````e````````e```` [about_CommonParam````e````t````e````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
+### Microsoft.Graph.Pow````e````rSh````e````ll.Mod````e````ls.ID````e````vic````e````sS````e````rvic````e````Announc````e````m````e````ntId````e````ntity
+### Microsoft.Graph.Pow````e````rSh````e````ll.Mod````e````ls.IMicrosoftGraphS````e````rvic````e````H````e````althIssu````e````
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst````e````m.Bool````e````an
+## NOT````e````S
 
-ALIASES
+ALIAS````e````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL````e````X PARAM````e````T````e````R PROP````e````RTI````e````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr````e````at````e```` th````e```` param````e````t````e````rs d````e````scrib````e````d b````e````low, construct a hash tabl````e```` containing th````e```` appropriat````e```` prop````e````rti````e````s. For information on hash tabl````e````s, run G````e````t-H````e````lp about_Hash_Tabl````e````s.
 
 
-BODYPARAMETER <IMicrosoftGraphServiceHealthIssue>: serviceHealthIssue
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Details <IMicrosoftGraphKeyValuePair[]>]`: Additional details about service event. This property doesn't support filters.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[EndDateTime <DateTime?>]`: The end time of the service event.
-  - `[LastModifiedDateTime <DateTime?>]`: The last modified time of the service event.
-  - `[StartDateTime <DateTime?>]`: The start time of the service event.
-  - `[Title <String>]`: The title of the service event.
-  - `[Id <String>]`: Read-only.
-  - `[Classification <String>]`: serviceHealthClassificationType
-  - `[Feature <String>]`: The feature name of the service issue.
-  - `[FeatureGroup <String>]`: The feature group name of the service issue.
-  - `[ImpactDescription <String>]`: The description of the service issue impact.
-  - `[IsResolved <Boolean?>]`: Indicates whether the issue is resolved.
-  - `[Origin <String>]`: serviceHealthOrigin
-  - `[Posts <IMicrosoftGraphServiceHealthIssuePost[]>]`: Collection of historical posts for the service issue.
-    - `[CreatedDateTime <DateTime?>]`: The published time of the post.
-    - `[Description <IMicrosoftGraphItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
-    - `[PostType <String>]`: postType
-  - `[Service <String>]`: Indicates the service affected by the issue.
-  - `[Status <String>]`: serviceHealthStatus
+BODYPARAM````e````T````e````R <IMicrosoftGraphS````e````rvic````e````H````e````althIssu````e````>: s````e````rvic````e````H````e````althIssu````e````
+  - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+  - `[D````e````tails <IMicrosoftGraphK````e````yValu````e````Pair[]>]`: Additional d````e````tails about s````e````rvic````e```` ````e````v````e````nt. This prop````e````rty do````e````sn't support filt````e````rs.
+    - `[Nam````e```` <String>]`: Nam````e```` for this k````e````y-valu````e```` pair
+    - `[Valu````e```` <String>]`: Valu````e```` for this k````e````y-valu````e```` pair
+  - `[````e````ndDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Th````e```` ````e````nd tim````e```` of th````e```` s````e````rvic````e```` ````e````v````e````nt.
+  - `[LastModifi````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Th````e```` last modifi````e````d tim````e```` of th````e```` s````e````rvic````e```` ````e````v````e````nt.
+  - `[StartDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Th````e```` start tim````e```` of th````e```` s````e````rvic````e```` ````e````v````e````nt.
+  - `[Titl````e```` <String>]`: Th````e```` titl````e```` of th````e```` s````e````rvic````e```` ````e````v````e````nt.
+  - `[Id <String>]`: R````e````ad-only.
+  - `[Classification <String>]`: s````e````rvic````e````H````e````althClassificationTyp````e````
+  - `[F````e````atur````e```` <String>]`: Th````e```` f````e````atur````e```` nam````e```` of th````e```` s````e````rvic````e```` issu````e````.
+  - `[F````e````atur````e````Group <String>]`: Th````e```` f````e````atur````e```` group nam````e```` of th````e```` s````e````rvic````e```` issu````e````.
+  - `[ImpactD````e````scription <String>]`: Th````e```` d````e````scription of th````e```` s````e````rvic````e```` issu````e```` impact.
+  - `[IsR````e````solv````e````d <Bool````e````an?>]`: Indicat````e````s wh````e````th````e````r th````e```` issu````e```` is r````e````solv````e````d.
+  - `[Origin <String>]`: s````e````rvic````e````H````e````althOrigin
+  - `[Posts <IMicrosoftGraphS````e````rvic````e````H````e````althIssu````e````Post[]>]`: Coll````e````ction of historical posts for th````e```` s````e````rvic````e```` issu````e````.
+    - `[Cr````e````at````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Th````e```` publish````e````d tim````e```` of th````e```` post.
+    - `[D````e````scription <IMicrosoftGraphIt````e````mBody>]`: it````e````mBody
+      - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+      - `[Cont````e````nt <String>]`: Th````e```` cont````e````nt of th````e```` it````e````m.
+      - `[Cont````e````ntTyp````e```` <String>]`: bodyTyp````e````
+    - `[PostTyp````e```` <String>]`: postTyp````e````
+  - `[S````e````rvic````e```` <String>]`: Indicat````e````s th````e```` s````e````rvic````e```` aff````e````ct````e````d by th````e```` issu````e````.
+  - `[Status <String>]`: s````e````rvic````e````H````e````althStatus
 
-DETAILS <IMicrosoftGraphKeyValuePair[]>: Additional details about service event. This property doesn't support filters.
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+D````e````TAILS <IMicrosoftGraphK````e````yValu````e````Pair[]>: Additional d````e````tails about s````e````rvic````e```` ````e````v````e````nt. This prop````e````rty do````e````sn't support filt````e````rs.
+  - `[Nam````e```` <String>]`: Nam````e```` for this k````e````y-valu````e```` pair
+  - `[Valu````e```` <String>]`: Valu````e```` for this k````e````y-valu````e```` pair
 
-INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
-  - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
-  - `[ServiceHealthId <String>]`: key: id of serviceHealth
-  - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
-  - `[ServiceUpdateMessageId <String>]`: key: id of serviceUpdateMessage
+INPUTOBJ````e````CT <ID````e````vic````e````sS````e````rvic````e````Announc````e````m````e````ntId````e````ntity>: Id````e````ntity Param````e````t````e````r
+  - `[S````e````rvic````e````Announc````e````m````e````ntAttachm````e````ntId <String>]`: k````e````y: id of s````e````rvic````e````Announc````e````m````e````ntAttachm````e````nt
+  - `[S````e````rvic````e````H````e````althId <String>]`: k````e````y: id of s````e````rvic````e````H````e````alth
+  - `[S````e````rvic````e````H````e````althIssu````e````Id <String>]`: k````e````y: id of s````e````rvic````e````H````e````althIssu````e````
+  - `[S````e````rvic````e````Updat````e````M````e````ssag````e````Id <String>]`: k````e````y: id of s````e````rvic````e````Updat````e````M````e````ssag````e````
 
-POSTS <IMicrosoftGraphServiceHealthIssuePost[]>: Collection of historical posts for the service issue.
-  - `[CreatedDateTime <DateTime?>]`: The published time of the post.
-  - `[Description <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[PostType <String>]`: postType
+POSTS <IMicrosoftGraphS````e````rvic````e````H````e````althIssu````e````Post[]>: Coll````e````ction of historical posts for th````e```` s````e````rvic````e```` issu````e````.
+  - `[Cr````e````at````e````dDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Th````e```` publish````e````d tim````e```` of th````e```` post.
+  - `[D````e````scription <IMicrosoftGraphIt````e````mBody>]`: it````e````mBody
+    - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+    - `[Cont````e````nt <String>]`: Th````e```` cont````e````nt of th````e```` it````e````m.
+    - `[Cont````e````ntTyp````e```` <String>]`: bodyTyp````e````
+  - `[PostTyp````e```` <String>]`: postTyp````e````
 
-## RELATED LINKS
+## R````e````LAT````e````D LINKS
