@@ -1,140 +1,140 @@
-﻿---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgpreviewdriveitem
+---
+external help f``i``le: M``i``crosoft.Graph.F``i``les-help.xml
+Module Name: M``i``crosoft.Graph.F``i``les
+onl``i``ne vers``i``on: https://docs.m``i``crosoft.com/en-us/powershell/module/m``i``crosoft.graph.f``i``les/``i``nvoke-mgprev``i``ewdr``i``ve``i``tem
 schema: 2.0.0
 ---
 
-# Invoke-MgPreviewDriveItem
+# ``i``nvoke-MgPrev``i``ewDr``i``ve``i``tem
 
-## SYNOPSIS
-Invoke action preview
+## SYNOPS``i``S
+``i``nvoke act``i``on prev``i``ew
 
 ## SYNTAX
 
-### PreviewExpanded1 (Default)
+### Prev``i``ewExpanded1 (Default)
 ```
-Invoke-MgPreviewDriveItem -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
- [-Page <String>] [-Zoom <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Preview1
-```
-Invoke-MgPreviewDriveItem -DriveId <String> -DriveItemId <String>
- -BodyParameter <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+``i``nvoke-MgPrev``i``ewDr``i``ve``i``tem -Dr``i``ve``i``d <Str``i``ng> -Dr``i``ve``i``tem``i``d <Str``i``ng> [-Add``i``t``i``onalPropert``i``es <Hashtable>]
+ [-Page <Str``i``ng>] [-Zoom <Double>] [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
 ```
 
-### PreviewViaIdentityExpanded1
+### Prev``i``ew1
 ```
-Invoke-MgPreviewDriveItem -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-Page <String>]
- [-Zoom <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### PreviewViaIdentity1
-```
-Invoke-MgPreviewDriveItem -InputObject <IFilesIdentity>
- -BodyParameter <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+``i``nvoke-MgPrev``i``ewDr``i``ve``i``tem -Dr``i``ve``i``d <Str``i``ng> -Dr``i``ve``i``tem``i``d <Str``i``ng>
+ -BodyParameter <``i``PathsGw56D1Dr``i``vesDr``i``ve``i``d``i``temsDr``i``ve``i``tem``i``dM``i``crosoftGraphPrev``i``ewPostRequestbodyContentAppl``i``cat``i``onJsonSchema1>
+ [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Invoke action preview
+### Prev``i``ewV``i``a``i``dent``i``tyExpanded1
+```
+``i``nvoke-MgPrev``i``ewDr``i``ve``i``tem -``i``nputObject <``i``F``i``les``i``dent``i``ty> [-Add``i``t``i``onalPropert``i``es <Hashtable>] [-Page <Str``i``ng>]
+ [-Zoom <Double>] [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
+```
+
+### Prev``i``ewV``i``a``i``dent``i``ty1
+```
+``i``nvoke-MgPrev``i``ewDr``i``ve``i``tem -``i``nputObject <``i``F``i``les``i``dent``i``ty>
+ -BodyParameter <``i``PathsGw56D1Dr``i``vesDr``i``ve``i``d``i``temsDr``i``ve``i``tem``i``dM``i``crosoftGraphPrev``i``ewPostRequestbodyContentAppl``i``cat``i``onJsonSchema1>
+ [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
+```
+
+## DESCR``i``PT``i``ON
+``i``nvoke act``i``on prev``i``ew
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Add``i``t``i``onalPropert``i``es
+Add``i``t``i``onal Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: PreviewExpanded1, PreviewViaIdentityExpanded1
-Aliases:
+Parameter Sets: Prev``i``ewExpanded1, Prev``i``ewV``i``a``i``dent``i``tyExpanded1
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Onl``i``ne and see NOTES sect``i``on for BODYPARAMETER propert``i``es and create a hash table.
 
 ```yaml
-Type: IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Preview1, PreviewViaIdentity1
-Aliases:
+Type: ``i``PathsGw56D1Dr``i``vesDr``i``ve``i``d``i``temsDr``i``ve``i``tem``i``dM``i``crosoftGraphPrev``i``ewPostRequestbodyContentAppl``i``cat``i``onJsonSchema1
+Parameter Sets: Prev``i``ew1, Prev``i``ewV``i``a``i``dent``i``ty1
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: True (ByValue)
+Accept w``i``ldcard characters: False
 ```
 
-### -DriveId
-key: id of drive
+### -Dr``i``ve``i``d
+key: ``i``d of dr``i``ve
 
 ```yaml
-Type: String
-Parameter Sets: PreviewExpanded1, Preview1
-Aliases:
+Type: Str``i``ng
+Parameter Sets: Prev``i``ewExpanded1, Prev``i``ew1
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -DriveItemId
-key: id of driveItem
+### -Dr``i``ve``i``tem``i``d
+key: ``i``d of dr``i``ve``i``tem
 
 ```yaml
-Type: String
-Parameter Sets: PreviewExpanded1, Preview1
-Aliases:
+Type: Str``i``ng
+Parameter Sets: Prev``i``ewExpanded1, Prev``i``ew1
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -``i``nputObject
+``i``dent``i``ty Parameter
+To construct, please use Get-Help -Onl``i``ne and see NOTES sect``i``on for ``i``NPUTOBJECT propert``i``es and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: PreviewViaIdentityExpanded1, PreviewViaIdentity1
-Aliases:
+Type: ``i``F``i``les``i``dent``i``ty
+Parameter Sets: Prev``i``ewV``i``a``i``dent``i``tyExpanded1, Prev``i``ewV``i``a``i``dent``i``ty1
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: True (ByValue)
+Accept w``i``ldcard characters: False
 ```
 
 ### -Page
 .
 
 ```yaml
-Type: String
-Parameter Sets: PreviewExpanded1, PreviewViaIdentityExpanded1
-Aliases:
+Type: Str``i``ng
+Parameter Sets: Prev``i``ewExpanded1, Prev``i``ewV``i``a``i``dent``i``tyExpanded1
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### -Zoom
@@ -142,94 +142,94 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Double
-Parameter Sets: PreviewExpanded1, PreviewViaIdentityExpanded1
-Aliases:
+Parameter Sets: Prev``i``ewExpanded1, Prev``i``ewV``i``a``i``dent``i``tyExpanded1
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Conf``i``rm
+Prompts you for conf``i``rmat``i``on before runn``i``ng the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw``i``tchParameter
 Parameter Sets: (All)
-Aliases: cf
+Al``i``ases: cf
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -What``i``f
+Shows what would happen ``i``f the cmdlet runs.
+The cmdlet ``i``s not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw``i``tchParameter
 Parameter Sets: (All)
-Aliases: wi
+Al``i``ases: w``i``
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th``i``s cmdlet supports the common parameters: -Debug, -ErrorAct``i``on, -ErrorVar``i``able, -``i``nformat``i``onAct``i``on, -``i``nformat``i``onVar``i``able, -OutVar``i``able, -OutBuffer, -P``i``pel``i``neVar``i``able, -Verbose, -Warn``i``ngAct``i``on, and -Warn``i``ngVar``i``able. For more ``i``nformat``i``on, see [about_CommonParameters](http://go.m``i``crosoft.com/fwl``i``nk/?L``i``nk``i``D=113216).
 
-## INPUTS
+## ``i``NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1
+### M``i``crosoft.Graph.PowerShell.Models.``i``F``i``les``i``dent``i``ty
+### M``i``crosoft.Graph.PowerShell.Models.``i``PathsGw56D1Dr``i``vesDr``i``ve``i``d``i``temsDr``i``ve``i``tem``i``dM``i``crosoftGraphPrev``i``ewPostRequestbodyContentAppl``i``cat``i``onJsonSchema1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPreviewInfo
+### M``i``crosoft.Graph.PowerShell.Models.``i``M``i``crosoftGraph``i``temPrev``i``ew``i``nfo
 ## NOTES
 
-ALIASES
+AL``i``ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT``i``ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr``i``bed below, construct a hash table conta``i``n``i``ng the appropr``i``ate propert``i``es. For ``i``nformat``i``on on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Page <String>]`: 
+BODYPARAMETER <``i``PathsGw56D1Dr``i``vesDr``i``ve``i``d``i``temsDr``i``ve``i``tem``i``dM``i``crosoftGraphPrev``i``ewPostRequestbodyContentAppl``i``cat``i``onJsonSchema1>: .
+  - `[(Any) <Object>]`: Th``i``s ``i``nd``i``cates any property can be added to th``i``s object.
+  - `[Page <Str``i``ng>]`: 
   - `[Zoom <Double?>]`: 
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
-  - `[ColumnLinkId <String>]`: key: id of columnLink
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[ContentTypeId1 <String>]`: key: id of contentType
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[DriveItemId1 <String>]`: key: id of driveItem
-  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: key: id of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[PermissionId <String>]`: key: id of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[ThumbnailSetId <String>]`: key: id of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: key: id of user
+``i``NPUTOBJECT <``i``F``i``les``i``dent``i``ty>: ``i``dent``i``ty Parameter
+  - `[ColumnDef``i``n``i``t``i``on``i``d <Str``i``ng>]`: key: ``i``d of columnDef``i``n``i``t``i``on
+  - `[ColumnL``i``nk``i``d <Str``i``ng>]`: key: ``i``d of columnL``i``nk
+  - `[ContentType``i``d <Str``i``ng>]`: key: ``i``d of contentType
+  - `[ContentType``i``d1 <Str``i``ng>]`: key: ``i``d of contentType
+  - `[DocumentSetVers``i``on``i``d <Str``i``ng>]`: key: ``i``d of documentSetVers``i``on
+  - `[Dr``i``ve``i``d <Str``i``ng>]`: key: ``i``d of dr``i``ve
+  - `[Dr``i``ve``i``tem``i``d <Str``i``ng>]`: key: ``i``d of dr``i``ve``i``tem
+  - `[Dr``i``ve``i``tem``i``d1 <Str``i``ng>]`: key: ``i``d of dr``i``ve``i``tem
+  - `[Dr``i``ve``i``temVers``i``on``i``d <Str``i``ng>]`: key: ``i``d of dr``i``ve``i``temVers``i``on
+  - `[EndDateT``i``me <Str``i``ng>]`: Usage: endDateT``i``me='{endDateT``i``me}'
+  - `[Group``i``d <Str``i``ng>]`: key: ``i``d of group
+  - `[``i``nterval <Str``i``ng>]`: Usage: ``i``nterval='{``i``nterval}'
+  - `[L``i``st``i``tem``i``d <Str``i``ng>]`: key: ``i``d of l``i``st``i``tem
+  - `[L``i``st``i``temVers``i``on``i``d <Str``i``ng>]`: key: ``i``d of l``i``st``i``temVers``i``on
+  - `[Perm``i``ss``i``on``i``d <Str``i``ng>]`: key: ``i``d of perm``i``ss``i``on
+  - `[Q <Str``i``ng>]`: Usage: q='{q}'
+  - `[R``i``chLongRunn``i``ngOperat``i``on``i``d <Str``i``ng>]`: key: ``i``d of r``i``chLongRunn``i``ngOperat``i``on
+  - `[SharedDr``i``ve``i``tem``i``d <Str``i``ng>]`: key: ``i``d of sharedDr``i``ve``i``tem
+  - `[StartDateT``i``me <Str``i``ng>]`: Usage: startDateT``i``me='{startDateT``i``me}'
+  - `[Subscr``i``pt``i``on``i``d <Str``i``ng>]`: key: ``i``d of subscr``i``pt``i``on
+  - `[Thumbna``i``lSet``i``d <Str``i``ng>]`: key: ``i``d of thumbna``i``lSet
+  - `[Token <Str``i``ng>]`: Usage: token='{token}'
+  - `[User``i``d <Str``i``ng>]`: key: ``i``d of user
 
-## RELATED LINKS
+## RELATED L``i``NKS
