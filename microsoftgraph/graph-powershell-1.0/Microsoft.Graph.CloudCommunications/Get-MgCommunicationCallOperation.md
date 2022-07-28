@@ -1,271 +1,271 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcalloperation
+---
+externa`l` he`l`p fi`l`e: Microsoft.Graph.C`l`oudCommunications-he`l`p.xm`l`
+Modu`l`e Name: Microsoft.Graph.C`l`oudCommunications
+on`l`ine version: https://docs.microsoft.com/en-us/powershe`l``l`/modu`l`e/microsoft.graph.c`l`oudcommunications/get-mgcommunicationca`l``l`operation
 schema: 2.0.0
 ---
 
-# Get-MgCommunicationCallOperation
+# Get-MgCommunicationCa`l``l`Operation
 
 ## SYNOPSIS
 Get operations from communications
 
 ## SYNTAX
 
-### List (Default)
+### `l`ist (Defau`l`t)
 ```
-Get-MgCommunicationCallOperation -CallId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgCommunicationCa`l``l`Operation -Ca`l``l`Id <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Fi`l`ter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-A`l``l`] [-CountVariab`l`e <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgCommunicationCallOperation -CallId <String> -CommsOperationId <String> [-ExpandProperty <String[]>]
+Get-MgCommunicationCa`l``l`Operation -Ca`l``l`Id <String> -CommsOperationId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
+Get-MgCommunicationCa`l``l`Operation -InputObject <IC`l`oudCommunicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get operations from communications
 
-## EXAMPLES
+## EXAMP`l`ES
 
 ## PARAMETERS
 
-### -All
-List all pages.
+### -A`l``l`
+`l`ist a`l``l` pages.
 
-```yaml
+```yam`l`
 Type: SwitchParameter
-Parameter Sets: List
-Aliases:
+Parameter Sets: `l`ist
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
-### -CallId
-key: id of call
+### -Ca`l``l`Id
+key: id of ca`l``l`
 
-```yaml
+```yam`l`
 Type: String
-Parameter Sets: List, Get
-Aliases:
+Parameter Sets: `l`ist, Get
+A`l`iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -CommsOperationId
 key: id of commsOperation
 
-```yaml
+```yam`l`
 Type: String
 Parameter Sets: Get
-Aliases:
+A`l`iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -CountVariab`l`e
+Specifies a count of the tota`l` number of items in a co`l``l`ection.
+By defau`l`t, this variab`l`e wi`l``l` be set in the g`l`oba`l` scope.
 
-```yaml
+```yam`l`
 Type: String
-Parameter Sets: List
-Aliases: CV
+Parameter Sets: `l`ist
+A`l`iases: CV
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -ExpandProperty
-Expand related entities
+Expand re`l`ated entities
 
-```yaml
+```yam`l`
 Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
+Parameter Sets: (A`l``l`)
+A`l`iases: Expand
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
-### -Filter
-Filter items by property values
+### -Fi`l`ter
+Fi`l`ter items by property va`l`ues
 
-```yaml
+```yam`l`
 Type: String
-Parameter Sets: List
-Aliases:
+Parameter Sets: `l`ist
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p`l`ease use Get-He`l`p -On`l`ine and see NOTES section for INPUTOBJECT properties and create a hash tab`l`e.
 
-```yaml
-Type: ICloudCommunicationsIdentity
+```yam`l`
+Type: IC`l`oudCommunicationsIdentity
 Parameter Sets: GetViaIdentity
-Aliases:
+A`l`iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: True (ByVa`l`ue)
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -PageSize
-Sets the page size of results.
+Sets the page size of resu`l`ts.
 
-```yaml
+```yam`l`
 Type: Int32
-Parameter Sets: List
-Aliases:
+Parameter Sets: `l`ist
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Property
-Select properties to be returned
+Se`l`ect properties to be returned
 
-```yaml
+```yam`l`
 Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Parameter Sets: (A`l``l`)
+A`l`iases: Se`l`ect
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Search
 Search items by search phrases
 
-```yaml
+```yam`l`
 Type: String
-Parameter Sets: List
-Aliases:
+Parameter Sets: `l`ist
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Sort
-Order items by property values
+Order items by property va`l`ues
 
-```yaml
+```yam`l`
 Type: String[]
-Parameter Sets: List
-Aliases: OrderBy
+Parameter Sets: `l`ist
+A`l`iases: OrderBy
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Top
-Show only the first n items
+Show on`l`y the first n items
 
-```yaml
+```yam`l`
 Type: Int32
-Parameter Sets: List
-Aliases: Limit
+Parameter Sets: `l`ist
+A`l`iases: `l`imit
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Skip
 Skip the first n items
 
-```yaml
+```yam`l`
 Type: Int32
-Parameter Sets: List
-Aliases:
+Parameter Sets: `l`ist
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd`l`et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab`l`e, -InformationAction, -InformationVariab`l`e, -OutVariab`l`e, -OutBuffer, -Pipe`l`ineVariab`l`e, -Verbose, -WarningAction, and -WarningVariab`l`e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw`l`ink/?`l`inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.PowerShe`l``l`.Mode`l`s.IC`l`oudCommunicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommsOperation
+### Microsoft.Graph.PowerShe`l``l`.Mode`l`s.IMicrosoftGraphCommsOperation
 ## NOTES
 
-ALIASES
+A`l`IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP`l`EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be`l`ow, construct a hash tab`l`e containing the appropriate properties. For information on hash tab`l`es, run Get-He`l`p about_Hash_Tab`l`es.
 
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT <IC`l`oudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
-  - `[CallId <String>]`: key: id of call
-  - `[CallRecordId <String>]`: key: id of callRecord
+  - `[Ca`l``l`Id <String>]`: key: id of ca`l``l`
+  - `[Ca`l``l`RecordId <String>]`: key: id of ca`l``l`Record
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
   - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
+  - `[On`l`ineMeetingId <String>]`: key: id of on`l`ineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## RE`l`ATED `l`INKS
