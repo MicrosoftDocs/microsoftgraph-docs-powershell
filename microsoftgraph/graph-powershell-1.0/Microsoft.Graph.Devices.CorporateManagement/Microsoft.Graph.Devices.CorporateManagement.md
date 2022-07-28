@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 Module Guid: {{ Update Module Guid }}
 Download Help Link: {{ Update Download Link }}
