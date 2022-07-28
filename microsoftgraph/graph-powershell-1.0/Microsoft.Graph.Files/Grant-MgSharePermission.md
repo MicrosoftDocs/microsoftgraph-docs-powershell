@@ -1,229 +1,229 @@
-﻿---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/grant-mgsharepermission
+---
+external help f```i```le: M```i```crosoft.Graph.F```i```les-help.xml
+Module Name: M```i```crosoft.Graph.F```i```les
+onl```i```ne vers```i```on: https://docs.m```i```crosoft.com/en-us/powershell/module/m```i```crosoft.graph.f```i```les/grant-mgshareperm```i```ss```i```on
 schema: 2.0.0
 ---
 
-# Grant-MgSharePermission
+# Grant-MgSharePerm```i```ss```i```on
 
-## SYNOPSIS
-Invoke action grant
+## SYNOPS```i```S
+```i```nvoke act```i```on grant
 
 ## SYNTAX
 
 ### GrantExpanded (Default)
 ```
-Grant-MgSharePermission -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>]
- [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Grant-MgSharePerm```i```ss```i```on -SharedDr```i```ve```i```tem```i```d <Str```i```ng> [-Add```i```t```i```onalPropert```i```es <Hashtable>]
+ [-Rec```i```p```i```ents <```i```M```i```crosoftGraphDr```i```veRec```i```p```i```ent[]>] [-Roles <Str```i```ng[]>] [-What```i```f] [-Conf```i```rm] [<CommonParameters>]
 ```
 
 ### Grant
 ```
-Grant-MgSharePermission -SharedDriveItemId <String>
- -BodyParameter <IPaths1Mcxy93SharesShareddriveitemIdPermissionMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Grant-MgSharePerm```i```ss```i```on -SharedDr```i```ve```i```tem```i```d <Str```i```ng>
+ -BodyParameter <```i```Paths1Mcxy93SharesShareddr```i```ve```i```tem```i```dPerm```i```ss```i```onM```i```crosoftGraphGrantPostRequestbodyContentAppl```i```cat```i```onJsonSchema>
+ [-What```i```f] [-Conf```i```rm] [<CommonParameters>]
 ```
 
-### GrantViaIdentityExpanded
+### GrantV```i```a```i```dent```i```tyExpanded
 ```
-Grant-MgSharePermission -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GrantViaIdentity
-```
-Grant-MgSharePermission -InputObject <IFilesIdentity>
- -BodyParameter <IPaths1Mcxy93SharesShareddriveitemIdPermissionMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Grant-MgSharePerm```i```ss```i```on -```i```nputObject <```i```F```i```les```i```dent```i```ty> [-Add```i```t```i```onalPropert```i```es <Hashtable>]
+ [-Rec```i```p```i```ents <```i```M```i```crosoftGraphDr```i```veRec```i```p```i```ent[]>] [-Roles <Str```i```ng[]>] [-What```i```f] [-Conf```i```rm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Invoke action grant
+### GrantV```i```a```i```dent```i```ty
+```
+Grant-MgSharePerm```i```ss```i```on -```i```nputObject <```i```F```i```les```i```dent```i```ty>
+ -BodyParameter <```i```Paths1Mcxy93SharesShareddr```i```ve```i```tem```i```dPerm```i```ss```i```onM```i```crosoftGraphGrantPostRequestbodyContentAppl```i```cat```i```onJsonSchema>
+ [-What```i```f] [-Conf```i```rm] [<CommonParameters>]
+```
+
+## DESCR```i```PT```i```ON
+```i```nvoke act```i```on grant
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Add```i```t```i```onalPropert```i```es
+Add```i```t```i```onal Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
-Aliases:
+Parameter Sets: GrantExpanded, GrantV```i```a```i```dent```i```tyExpanded
+Al```i```ases:
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Onl```i```ne and see NOTES sect```i```on for BODYPARAMETER propert```i```es and create a hash table.
 
 ```yaml
-Type: IPaths1Mcxy93SharesShareddriveitemIdPermissionMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Grant, GrantViaIdentity
-Aliases:
+Type: ```i```Paths1Mcxy93SharesShareddr```i```ve```i```tem```i```dPerm```i```ss```i```onM```i```crosoftGraphGrantPostRequestbodyContentAppl```i```cat```i```onJsonSchema
+Parameter Sets: Grant, GrantV```i```a```i```dent```i```ty
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: True (ByValue)
+Accept w```i```ldcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -```i```nputObject
+```i```dent```i```ty Parameter
+To construct, please use Get-Help -Onl```i```ne and see NOTES sect```i```on for ```i```NPUTOBJECT propert```i```es and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
-Aliases:
+Type: ```i```F```i```les```i```dent```i```ty
+Parameter Sets: GrantV```i```a```i```dent```i```tyExpanded, GrantV```i```a```i```dent```i```ty
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: True (ByValue)
+Accept w```i```ldcard characters: False
 ```
 
-### -Recipients
+### -Rec```i```p```i```ents
 .
-To construct, please use Get-Help -Online and see NOTES section for RECIPIENTS properties and create a hash table.
+To construct, please use Get-Help -Onl```i```ne and see NOTES sect```i```on for REC```i```P```i```ENTS propert```i```es and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDriveRecipient[]
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
-Aliases:
+Type: ```i```M```i```crosoftGraphDr```i```veRec```i```p```i```ent[]
+Parameter Sets: GrantExpanded, GrantV```i```a```i```dent```i```tyExpanded
+Al```i```ases:
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
 ### -Roles
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
-Aliases:
+Type: Str```i```ng[]
+Parameter Sets: GrantExpanded, GrantV```i```a```i```dent```i```tyExpanded
+Al```i```ases:
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -SharedDriveItemId
-key: id of sharedDriveItem
+### -SharedDr```i```ve```i```tem```i```d
+key: ```i```d of sharedDr```i```ve```i```tem
 
 ```yaml
-Type: String
+Type: Str```i```ng
 Parameter Sets: GrantExpanded, Grant
-Aliases:
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Conf```i```rm
+Prompts you for conf```i```rmat```i```on before runn```i```ng the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw```i```tchParameter
 Parameter Sets: (All)
-Aliases: cf
+Al```i```ases: cf
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -What```i```f
+Shows what would happen ```i```f the cmdlet runs.
+The cmdlet ```i```s not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw```i```tchParameter
 Parameter Sets: (All)
-Aliases: wi
+Al```i```ases: w```i```
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th```i```s cmdlet supports the common parameters: -Debug, -ErrorAct```i```on, -ErrorVar```i```able, -```i```nformat```i```onAct```i```on, -```i```nformat```i```onVar```i```able, -OutVar```i```able, -OutBuffer, -P```i```pel```i```neVar```i```able, -Verbose, -Warn```i```ngAct```i```on, and -Warn```i```ngVar```i```able. For more ```i```nformat```i```on, see [about_CommonParameters](http://go.m```i```crosoft.com/fwl```i```nk/?L```i```nk```i```D=113216).
 
-## INPUTS
+## ```i```NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Mcxy93SharesShareddriveitemIdPermissionMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
+### M```i```crosoft.Graph.PowerShell.Models.```i```F```i```les```i```dent```i```ty
+### M```i```crosoft.Graph.PowerShell.Models.```i```Paths1Mcxy93SharesShareddr```i```ve```i```tem```i```dPerm```i```ss```i```onM```i```crosoftGraphGrantPostRequestbodyContentAppl```i```cat```i```onJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
+### M```i```crosoft.Graph.PowerShell.Models.```i```M```i```crosoftGraphPerm```i```ss```i```on
 ## NOTES
 
-ALIASES
+AL```i```ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT```i```ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr```i```bed below, construct a hash table conta```i```n```i```ng the appropr```i```ate propert```i```es. For ```i```nformat```i```on on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1Mcxy93SharesShareddriveitemIdPermissionMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Recipients <IMicrosoftGraphDriveRecipient[]>]`: 
-    - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
-    - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
-    - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
-  - `[Roles <String[]>]`: 
+BODYPARAMETER <```i```Paths1Mcxy93SharesShareddr```i```ve```i```tem```i```dPerm```i```ss```i```onM```i```crosoftGraphGrantPostRequestbodyContentAppl```i```cat```i```onJsonSchema>: .
+  - `[(Any) <Object>]`: Th```i```s ```i```nd```i```cates any property can be added to th```i```s object.
+  - `[Rec```i```p```i```ents <```i```M```i```crosoftGraphDr```i```veRec```i```p```i```ent[]>]`: 
+    - `[Al```i```as <Str```i```ng>]`: The al```i```as of the doma```i```n object, for cases where an ema```i```l address ```i```s unava```i```lable (e.g. secur```i```ty groups).
+    - `[Ema```i```l <Str```i```ng>]`: The ema```i```l address for the rec```i```p```i```ent, ```i```f the rec```i```p```i```ent has an assoc```i```ated ema```i```l address.
+    - `[Object```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er for the rec```i```p```i```ent ```i```n the d```i```rectory.
+  - `[Roles <Str```i```ng[]>]`: 
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
-  - `[ColumnLinkId <String>]`: key: id of columnLink
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[ContentTypeId1 <String>]`: key: id of contentType
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[DriveItemId1 <String>]`: key: id of driveItem
-  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: key: id of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[PermissionId <String>]`: key: id of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[ThumbnailSetId <String>]`: key: id of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: key: id of user
+```i```NPUTOBJECT <```i```F```i```les```i```dent```i```ty>: ```i```dent```i```ty Parameter
+  - `[ColumnDef```i```n```i```t```i```on```i```d <Str```i```ng>]`: key: ```i```d of columnDef```i```n```i```t```i```on
+  - `[ColumnL```i```nk```i```d <Str```i```ng>]`: key: ```i```d of columnL```i```nk
+  - `[ContentType```i```d <Str```i```ng>]`: key: ```i```d of contentType
+  - `[ContentType```i```d1 <Str```i```ng>]`: key: ```i```d of contentType
+  - `[DocumentSetVers```i```on```i```d <Str```i```ng>]`: key: ```i```d of documentSetVers```i```on
+  - `[Dr```i```ve```i```d <Str```i```ng>]`: key: ```i```d of dr```i```ve
+  - `[Dr```i```ve```i```tem```i```d <Str```i```ng>]`: key: ```i```d of dr```i```ve```i```tem
+  - `[Dr```i```ve```i```tem```i```d1 <Str```i```ng>]`: key: ```i```d of dr```i```ve```i```tem
+  - `[Dr```i```ve```i```temVers```i```on```i```d <Str```i```ng>]`: key: ```i```d of dr```i```ve```i```temVers```i```on
+  - `[EndDateT```i```me <Str```i```ng>]`: Usage: endDateT```i```me='{endDateT```i```me}'
+  - `[Group```i```d <Str```i```ng>]`: key: ```i```d of group
+  - `[```i```nterval <Str```i```ng>]`: Usage: ```i```nterval='{```i```nterval}'
+  - `[L```i```st```i```tem```i```d <Str```i```ng>]`: key: ```i```d of l```i```st```i```tem
+  - `[L```i```st```i```temVers```i```on```i```d <Str```i```ng>]`: key: ```i```d of l```i```st```i```temVers```i```on
+  - `[Perm```i```ss```i```on```i```d <Str```i```ng>]`: key: ```i```d of perm```i```ss```i```on
+  - `[Q <Str```i```ng>]`: Usage: q='{q}'
+  - `[R```i```chLongRunn```i```ngOperat```i```on```i```d <Str```i```ng>]`: key: ```i```d of r```i```chLongRunn```i```ngOperat```i```on
+  - `[SharedDr```i```ve```i```tem```i```d <Str```i```ng>]`: key: ```i```d of sharedDr```i```ve```i```tem
+  - `[StartDateT```i```me <Str```i```ng>]`: Usage: startDateT```i```me='{startDateT```i```me}'
+  - `[Subscr```i```pt```i```on```i```d <Str```i```ng>]`: key: ```i```d of subscr```i```pt```i```on
+  - `[Thumbna```i```lSet```i```d <Str```i```ng>]`: key: ```i```d of thumbna```i```lSet
+  - `[Token <Str```i```ng>]`: Usage: token='{token}'
+  - `[User```i```d <Str```i```ng>]`: key: ```i```d of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
-  - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
-  - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
-  - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
+REC```i```P```i```ENTS <```i```M```i```crosoftGraphDr```i```veRec```i```p```i```ent[]>: .
+  - `[Al```i```as <Str```i```ng>]`: The al```i```as of the doma```i```n object, for cases where an ema```i```l address ```i```s unava```i```lable (e.g. secur```i```ty groups).
+  - `[Ema```i```l <Str```i```ng>]`: The ema```i```l address for the rec```i```p```i```ent, ```i```f the rec```i```p```i```ent has an assoc```i```ated ema```i```l address.
+  - `[Object```i```d <Str```i```ng>]`: The un```i```que ```i```dent```i```f```i```er for the rec```i```p```i```ent ```i```n the d```i```rectory.
 
-## RELATED LINKS
+## RELATED L```i```NKS
