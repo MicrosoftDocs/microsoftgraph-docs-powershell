@@ -1,353 +1,353 @@
-﻿---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationmerubric
+---
+external help file: Microsoft.Graph.E``````d``````ucation-help.xml
+Mo``````d``````ule Name: Microsoft.Graph.E``````d``````ucation
+online version: https://``````d``````ocs.microsoft.com/en-us/powershell/mo``````d``````ule/microsoft.graph.e``````d``````ucation/new-mge``````d``````ucationmerubric
 schema: 2.0.0
 ---
 
-# New-MgEducationMeRubric
+# New-MgE``````d``````ucationMeRubric
 
 ## SYNOPSIS
-Create new navigation property to rubrics for education
+Create new navigation property to rubrics for e``````d``````ucation
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpan``````d``````e``````d``````1 (``````d``````efault)
 ```
-New-MgEducationMeRubric [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-Description <IMicrosoftGraphEducationItemBody>] [-DisplayName <String>]
- [-Grading <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Levels <IMicrosoftGraphRubricLevel[]>]
+New-MgE``````d``````ucationMeRubric [-A``````d````````````d``````itionalProperties <Hashtable>] [-Create``````d``````By <IMicrosoftGraphI``````d``````entitySet>]
+ [-Create``````d````````````d``````ateTime <``````d``````ateTime>] [-``````d``````escription <IMicrosoftGraphE``````d``````ucationItemBo``````d``````y>] [-``````d``````isplayName <String>]
+ [-Gra``````d``````ing <Hashtable>] [-I``````d`````` <String>] [-LastMo``````d``````ifie``````d``````By <IMicrosoftGraphI``````d``````entitySet>]
+ [-LastMo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime>] [-Levels <IMicrosoftGraphRubricLevel[]>]
  [-Qualities <IMicrosoftGraphRubricQuality[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-WhatIf] [-Confirm]
+New-MgE``````d``````ucationMeRubric -Bo``````d``````yParameter <IMicrosoftGraphE``````d``````ucationRubric> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to rubrics for education
+## ``````d``````ESCRIPTION
+Create new navigation property to rubrics for e``````d``````ucation
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A``````d````````````d``````itionalProperties
+A``````d````````````d``````itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -BodyParameter
-educationRubric
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo``````d``````yParameter
+e``````d``````ucationRubric
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for BO``````d``````YPARAMETER properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationRubric
+Type: IMicrosoftGraphE``````d``````ucationRubric
 Parameter Sets: Create1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``````d``````: True
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -CreatedBy
-identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+### -Create``````d``````By
+i``````d``````entitySet
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for CREATE``````d``````BY properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphI``````d``````entitySet
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -CreatedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+### -Create``````d````````````d``````ateTime
+The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time.
+For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: ``````d``````ateTime
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -Description
-educationItemBody
-To construct, please use Get-Help -Online and see NOTES section for DESCRIPTION properties and create a hash table.
+### -``````d``````escription
+e``````d``````ucationItemBo``````d``````y
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for ``````d``````ESCRIPTION properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationItemBody
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphE``````d``````ucationItemBo``````d``````y
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -DisplayName
+### -``````d``````isplayName
 The name of this rubric.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -Grading
-educationAssignmentGradeType
+### -Gra``````d``````ing
+e``````d``````ucationAssignmentGra``````d``````eType
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -Id
+### -I``````d``````
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -LastModifiedBy
-identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+### -LastMo``````d``````ifie``````d``````By
+i``````d``````entitySet
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for LASTMO``````d``````IFIE``````d``````BY properties an``````d`````` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphI``````d``````entitySet
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
-### -LastModifiedDateTime
-Moment in time when the resource was last modified.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+### -LastMo``````d``````ifie``````d````````````d``````ateTime
+Moment in time when the resource was last mo``````d``````ifie``````d``````.
+The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time.
+For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: ``````d``````ateTime
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -Levels
 The collection of levels making up this rubric.
-To construct, please use Get-Help -Online and see NOTES section for LEVELS properties and create a hash table.
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for LEVELS properties an``````d`````` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRubricLevel[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -Qualities
 The collection of qualities making up this rubric.
-To construct, please use Get-Help -Online and see NOTES section for QUALITIES properties and create a hash table.
+To construct, please use Get-Help -Online an``````d`````` see NOTES section for QUALITIES properties an``````d`````` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRubricQuality[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan``````d``````e``````d``````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm``````d``````let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul``````d`````` happen if the cm``````d``````let runs.
+The cm``````d``````let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require``````d``````: False
+Position: Name``````d``````
+``````d``````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``````d``````car``````d`````` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm``````d``````let supports the common parameters: -``````d``````ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an``````d`````` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI``````d``````=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRubric
+### Microsoft.Graph.PowerShell.Mo``````d``````els.IMicrosoftGraphE``````d``````ucationRubric
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRubric
+### Microsoft.Graph.PowerShell.Mo``````d``````els.IMicrosoftGraphE``````d``````ucationRubric
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ``````d``````escribe``````d`````` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEducationRubric>: educationRubric
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BO``````d``````YPARAMETER <IMicrosoftGraphE``````d``````ucationRubric>: e``````d``````ucationRubric
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[I``````d`````` <String>]`: 
+  - `[Create``````d``````By <IMicrosoftGraphI``````d``````entitySet>]`: i``````d``````entitySet
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[Application <IMicrosoftGraphI``````d``````entity>]`: i``````d``````entity
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+      - `[``````d``````isplayName <String>]`: The i``````d``````entity's ``````d``````isplay name. Note that this may not always be available or up to ``````d``````ate. For example, if a user changes their ``````d``````isplay name, the API may show the new value in a future response, but the items associate``````d`````` with the user won't show up as having change``````d`````` when using ``````d``````elta.
+      - `[I``````d`````` <String>]`: Unique i``````d``````entifier for the i``````d``````entity.
+    - `[``````d``````evice <IMicrosoftGraphI``````d``````entity>]`: i``````d``````entity
+    - `[User <IMicrosoftGraphI``````d``````entity>]`: i``````d``````entity
+  - `[Create``````d````````````d``````ateTime <``````d``````ateTime?>]`: The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[``````d``````escription <IMicrosoftGraphE``````d``````ucationItemBo``````d``````y>]`: e``````d``````ucationItemBo``````d``````y
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
     - `[Content <String>]`: 
-    - `[ContentType <String>]`: bodyType
-  - `[DisplayName <String>]`: The name of this rubric.
-  - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[ContentType <String>]`: bo``````d``````yType
+  - `[``````d``````isplayName <String>]`: The name of this rubric.
+  - `[Gra``````d``````ing <IMicrosoftGraphE``````d``````ucationAssignmentGra``````d``````eType>]`: e``````d``````ucationAssignmentGra``````d``````eType
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[LastMo``````d``````ifie``````d``````By <IMicrosoftGraphI``````d``````entitySet>]`: i``````d``````entitySet
+  - `[LastMo``````d``````ifie``````d````````````d``````ateTime <``````d``````ateTime?>]`: Moment in time when the resource was last mo``````d``````ifie``````d``````.  The Timestamp type represents ``````d``````ate an``````d`````` time information using ISO 8601 format an``````d`````` is always in UTC time. For example, mi``````d``````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Levels <IMicrosoftGraphRubricLevel[]>]`: The collection of levels making up this rubric.
-    - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-    - `[DisplayName <String>]`: The name of this rubric level.
-    - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
-    - `[LevelId <String>]`: The ID of this resource.
+    - `[``````d``````escription <IMicrosoftGraphE``````d``````ucationItemBo``````d``````y>]`: e``````d``````ucationItemBo``````d``````y
+    - `[``````d``````isplayName <String>]`: The name of this rubric level.
+    - `[Gra``````d``````ing <IMicrosoftGraphE``````d``````ucationAssignmentGra``````d``````eType>]`: e``````d``````ucationAssignmentGra``````d``````eType
+    - `[LevelI``````d`````` <String>]`: The I``````d`````` of this resource.
   - `[Qualities <IMicrosoftGraphRubricQuality[]>]`: The collection of qualities making up this rubric.
     - `[Criteria <IMicrosoftGraphRubricCriterion[]>]`: The collection of criteria for this rubric quality.
-      - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-    - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-    - `[DisplayName <String>]`: The name of this rubric quality.
-    - `[QualityId <String>]`: The ID of this resource.
-    - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
+      - `[``````d``````escription <IMicrosoftGraphE``````d``````ucationItemBo``````d``````y>]`: e``````d``````ucationItemBo``````d``````y
+    - `[``````d``````escription <IMicrosoftGraphE``````d``````ucationItemBo``````d``````y>]`: e``````d``````ucationItemBo``````d``````y
+    - `[``````d``````isplayName <String>]`: The name of this rubric quality.
+    - `[QualityI``````d`````` <String>]`: The I``````d`````` of this resource.
+    - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must a``````d````````````d`````` up to 100.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+CREATE``````d``````BY <IMicrosoftGraphI``````d``````entitySet>: i``````d``````entitySet
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[Application <IMicrosoftGraphI``````d``````entity>]`: i``````d``````entity
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[``````d``````isplayName <String>]`: The i``````d``````entity's ``````d``````isplay name. Note that this may not always be available or up to ``````d``````ate. For example, if a user changes their ``````d``````isplay name, the API may show the new value in a future response, but the items associate``````d`````` with the user won't show up as having change``````d`````` when using ``````d``````elta.
+    - `[I``````d`````` <String>]`: Unique i``````d``````entifier for the i``````d``````entity.
+  - `[``````d``````evice <IMicrosoftGraphI``````d``````entity>]`: i``````d``````entity
+  - `[User <IMicrosoftGraphI``````d``````entity>]`: i``````d``````entity
 
-DESCRIPTION <IMicrosoftGraphEducationItemBody>: educationItemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+``````d``````ESCRIPTION <IMicrosoftGraphE``````d``````ucationItemBo``````d``````y>: e``````d``````ucationItemBo``````d``````y
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
   - `[Content <String>]`: 
-  - `[ContentType <String>]`: bodyType
+  - `[ContentType <String>]`: bo``````d``````yType
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+LASTMO``````d``````IFIE``````d``````BY <IMicrosoftGraphI``````d``````entitySet>: i``````d``````entitySet
+  - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[Application <IMicrosoftGraphI``````d``````entity>]`: i``````d``````entity
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+    - `[``````d``````isplayName <String>]`: The i``````d``````entity's ``````d``````isplay name. Note that this may not always be available or up to ``````d``````ate. For example, if a user changes their ``````d``````isplay name, the API may show the new value in a future response, but the items associate``````d`````` with the user won't show up as having change``````d`````` when using ``````d``````elta.
+    - `[I``````d`````` <String>]`: Unique i``````d``````entifier for the i``````d``````entity.
+  - `[``````d``````evice <IMicrosoftGraphI``````d``````entity>]`: i``````d``````entity
+  - `[User <IMicrosoftGraphI``````d``````entity>]`: i``````d``````entity
 
 LEVELS <IMicrosoftGraphRubricLevel[]>: The collection of levels making up this rubric.
-  - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[``````d``````escription <IMicrosoftGraphE``````d``````ucationItemBo``````d``````y>]`: e``````d``````ucationItemBo``````d``````y
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
     - `[Content <String>]`: 
-    - `[ContentType <String>]`: bodyType
-  - `[DisplayName <String>]`: The name of this rubric level.
-  - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LevelId <String>]`: The ID of this resource.
+    - `[ContentType <String>]`: bo``````d``````yType
+  - `[``````d``````isplayName <String>]`: The name of this rubric level.
+  - `[Gra``````d``````ing <IMicrosoftGraphE``````d``````ucationAssignmentGra``````d``````eType>]`: e``````d``````ucationAssignmentGra``````d``````eType
+    - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
+  - `[LevelI``````d`````` <String>]`: The I``````d`````` of this resource.
 
 QUALITIES <IMicrosoftGraphRubricQuality[]>: The collection of qualities making up this rubric.
   - `[Criteria <IMicrosoftGraphRubricCriterion[]>]`: The collection of criteria for this rubric quality.
-    - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[``````d``````escription <IMicrosoftGraphE``````d``````ucationItemBo``````d``````y>]`: e``````d``````ucationItemBo``````d``````y
+      - `[(Any) <Object>]`: This in``````d``````icates any property can be a``````d````````````d``````e``````d`````` to this object.
       - `[Content <String>]`: 
-      - `[ContentType <String>]`: bodyType
-  - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-  - `[DisplayName <String>]`: The name of this rubric quality.
-  - `[QualityId <String>]`: The ID of this resource.
-  - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
+      - `[ContentType <String>]`: bo``````d``````yType
+  - `[``````d``````escription <IMicrosoftGraphE``````d``````ucationItemBo``````d``````y>]`: e``````d``````ucationItemBo``````d``````y
+  - `[``````d``````isplayName <String>]`: The name of this rubric quality.
+  - `[QualityI``````d`````` <String>]`: The I``````d`````` of this resource.
+  - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must a``````d````````````d`````` up to 100.
 
-## RELATED LINKS
+## RELATE``````d`````` LINKS
