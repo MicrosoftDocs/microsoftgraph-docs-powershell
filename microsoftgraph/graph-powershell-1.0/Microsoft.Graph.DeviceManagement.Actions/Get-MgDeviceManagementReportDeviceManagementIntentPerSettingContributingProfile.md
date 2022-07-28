@@ -1,294 +1,294 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicemanagementintentpersettingcontributingprofile
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.Actions-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.Actions
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.d`e`vic`e`manag`e`m`e`nt.actions/g`e`t-mgd`e`vic`e`manag`e`m`e`ntr`e`portd`e`vic`e`manag`e`m`e`ntint`e`ntp`e`rs`e`ttingcontributingprofil`e`
+sch`e`ma: 2.0.0
 ---
 
-# Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile
+# G`e`t-MgD`e`vic`e`Manag`e`m`e`ntR`e`portD`e`vic`e`Manag`e`m`e`ntInt`e`ntP`e`rS`e`ttingContributingProfil`e`
 
 ## SYNOPSIS
-Invoke action getDeviceManagementIntentPerSettingContributingProfiles
+Invok`e` action g`e`tD`e`vic`e`Manag`e`m`e`ntInt`e`ntP`e`rS`e`ttingContributingProfil`e`s
 
 ## SYNTAX
 
-### GetExpanded1 (Default)
+### G`e`t`e`xpand`e`d1 (D`e`fault)
 ```
-Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile -OutFile <String>
- [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Name <String>]
- [-Property <String[]>] [-Search <String>] [-SessionId <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile -OutFile <String>
- -BodyParameter <IPaths1Sa3Fr9DevicemanagementReportsMicrosoftGraphGetdevicemanagementintentpersettingcontributingprofilesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+G`e`t-MgD`e`vic`e`Manag`e`m`e`ntR`e`portD`e`vic`e`Manag`e`m`e`ntInt`e`ntP`e`rS`e`ttingContributingProfil`e` -OutFil`e` <String>
+ [-AdditionalProp`e`rti`e`s <Hashtabl`e`>] [-Filt`e`r <String>] [-GroupBy <String[]>] [-Nam`e` <String>]
+ [-Prop`e`rty <String[]>] [-S`e`arch <String>] [-S`e`ssionId <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Invoke action getDeviceManagementIntentPerSettingContributingProfiles
+### G`e`t1
+```
+G`e`t-MgD`e`vic`e`Manag`e`m`e`ntR`e`portD`e`vic`e`Manag`e`m`e`ntInt`e`ntP`e`rS`e`ttingContributingProfil`e` -OutFil`e` <String>
+ -BodyParam`e`t`e`r <IPaths1Sa3Fr9D`e`vic`e`manag`e`m`e`ntR`e`portsMicrosoftGraphG`e`td`e`vic`e`manag`e`m`e`ntint`e`ntp`e`rs`e`ttingcontributingprofil`e`sPostR`e`qu`e`stbodyCont`e`ntApplicationJsonSch`e`ma>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+Invok`e` action g`e`tD`e`vic`e`Manag`e`m`e`ntInt`e`ntP`e`rS`e`ttingContributingProfil`e`s
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM`e`T`e`RS
+
+### -AdditionalProp`e`rti`e`s
+Additional Param`e`t`e`rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: GetExpanded1
-Aliases:
+Typ`e`: Hashtabl`e`
+Param`e`t`e`r S`e`ts: G`e`t`e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -BodyParameter
+### -BodyParam`e`t`e`r
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for BODYPARAM`e`T`e`R prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IPaths1Sa3Fr9DevicemanagementReportsMicrosoftGraphGetdevicemanagementintentpersettingcontributingprofilesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get1
-Aliases:
+Typ`e`: IPaths1Sa3Fr9D`e`vic`e`manag`e`m`e`ntR`e`portsMicrosoftGraphG`e`td`e`vic`e`manag`e`m`e`ntint`e`ntp`e`rs`e`ttingcontributingprofil`e`sPostR`e`qu`e`stbodyCont`e`ntApplicationJsonSch`e`ma
+Param`e`t`e`r S`e`ts: G`e`t1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Filter
+### -Filt`e`r
 .
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t`e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -GroupBy
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: GetExpanded1
-Aliases:
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: G`e`t`e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Name
+### -Nam`e`
 .
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t`e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -OutFile
-Path to write output file to
+### -OutFil`e`
+Path to writ`e` output fil`e` to
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R`e`turns tru`e` wh`e`n th`e` command succ`e``e`ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Property
+### -Prop`e`rty
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: GetExpanded1
-Aliases: Select
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: G`e`t`e`xpand`e`d1
+Alias`e`s: S`e`l`e`ct
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Search
+### -S`e`arch
 .
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t`e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -SessionId
+### -S`e`ssionId
 .
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t`e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Sort
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: GetExpanded1
-Aliases: OrderBy
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: G`e`t`e`xpand`e`d1
+Alias`e`s: Ord`e`rBy
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Top
 .
 
 ```yaml
-Type: Int32
-Parameter Sets: GetExpanded1
-Aliases: Limit
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: G`e`t`e`xpand`e`d1
+Alias`e`s: Limit
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Skip
 .
 
 ```yaml
-Type: Int32
-Parameter Sets: GetExpanded1
-Aliases:
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: G`e`t`e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Sa3Fr9DevicemanagementReportsMicrosoftGraphGetdevicemanagementintentpersettingcontributingprofilesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IPaths1Sa3Fr9D`e`vic`e`manag`e`m`e`ntR`e`portsMicrosoftGraphG`e`td`e`vic`e`manag`e`m`e`ntint`e`ntp`e`rs`e`ttingcontributingprofil`e`sPostR`e`qu`e`stbodyCont`e`ntApplicationJsonSch`e`ma
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`e`m.Bool`e`an
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-BODYPARAMETER <IPaths1Sa3Fr9DevicemanagementReportsMicrosoftGraphGetdevicemanagementintentpersettingcontributingprofilesPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
+BODYPARAM`e`T`e`R <IPaths1Sa3Fr9D`e`vic`e`manag`e`m`e`ntR`e`portsMicrosoftGraphG`e`td`e`vic`e`manag`e`m`e`ntint`e`ntp`e`rs`e`ttingcontributingprofil`e`sPostR`e`qu`e`stbodyCont`e`ntApplicationJsonSch`e`ma>: .
+  - `[(Any) <Obj`e`ct>]`: This indicat`e`s any prop`e`rty can b`e` add`e`d to this obj`e`ct.
+  - `[Filt`e`r <String>]`: 
   - `[GroupBy <String[]>]`: 
-  - `[Name <String>]`: 
-  - `[OrderBy <String[]>]`: 
-  - `[Search <String>]`: 
-  - `[Select <String[]>]`: 
-  - `[SessionId <String>]`: 
+  - `[Nam`e` <String>]`: 
+  - `[Ord`e`rBy <String[]>]`: 
+  - `[S`e`arch <String>]`: 
+  - `[S`e`l`e`ct <String[]>]`: 
+  - `[S`e`ssionId <String>]`: 
   - `[Skip <Int32?>]`: 
   - `[Top <Int32?>]`: 
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
