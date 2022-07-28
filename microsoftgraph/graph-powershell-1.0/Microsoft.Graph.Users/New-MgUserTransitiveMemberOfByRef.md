@@ -1,290 +1,290 @@
-﻿---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mgusertodolisttasklinkedresource
-schema: 2.0.0
+---
+external help file: Micro``s``oft.Graph.U``s``er``s``-help.xml
+Module Name: Micro``s``oft.Graph.U``s``er``s``
+online ver``s``ion: http``s``://doc``s``.micro``s``oft.com/en-u``s``/power``s``hell/module/micro``s``oft.graph.u``s``er``s``/new-mgu``s``ertodoli``s``tta``s``klinkedre``s``ource
+``s``chema: 2.0.0
 ---
 
-# New-MgUserTodoListTaskLinkedResource
+# New-MgU``s``erTodoLi``s``tTa``s``kLinkedRe``s``ource
 
-## SYNOPSIS
-A collection of resources linked to the task.
+## ``s``YNOP``s``I``s``
+A collection of re``s``ource``s`` linked to the ta``s``k.
 
-## SYNTAX
+## ``s``YNTAX
 
 ### CreateExpanded1 (Default)
 ```
-New-MgUserTodoListTaskLinkedResource -TodoTaskId <String> -TodoTaskListId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ApplicationName <String>] [-DisplayName <String>] [-ExternalId <String>]
- [-Id <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgU``s``erTodoLi``s``tTa``s``kLinkedRe``s``ource -TodoTa``s``kId <``s``tring> -TodoTa``s``kLi``s``tId <``s``tring> -U``s``erId <``s``tring>
+ [-AdditionalPropertie``s`` <Ha``s``htable>] [-ApplicationName <``s``tring>] [-Di``s``playName <``s``tring>] [-ExternalId <``s``tring>]
+ [-Id <``s``tring>] [-WebUrl <``s``tring>] [-WhatIf] [-Confirm] [<CommonParameter``s``>]
 ```
 
 ### Create1
 ```
-New-MgUserTodoListTaskLinkedResource -TodoTaskId <String> -TodoTaskListId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphLinkedResource> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgU``s``erTodoLi``s``tTa``s``kLinkedRe``s``ource -TodoTa``s``kId <``s``tring> -TodoTa``s``kLi``s``tId <``s``tring> -U``s``erId <``s``tring>
+ -BodyParameter <IMicro``s``oftGraphLinkedRe``s``ource> [-WhatIf] [-Confirm] [<CommonParameter``s``>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-New-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-ApplicationName <String>] [-DisplayName <String>] [-ExternalId <String>] [-Id <String>] [-WebUrl <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgU``s``erTodoLi``s``tTa``s``kLinkedRe``s``ource -InputObject <IU``s``er``s``Identity> [-AdditionalPropertie``s`` <Ha``s``htable>]
+ [-ApplicationName <``s``tring>] [-Di``s``playName <``s``tring>] [-ExternalId <``s``tring>] [-Id <``s``tring>] [-WebUrl <``s``tring>]
+ [-WhatIf] [-Confirm] [<CommonParameter``s``>]
 ```
 
 ### CreateViaIdentity1
 ```
-New-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphLinkedResource> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgU``s``erTodoLi``s``tTa``s``kLinkedRe``s``ource -InputObject <IU``s``er``s``Identity>
+ -BodyParameter <IMicro``s``oftGraphLinkedRe``s``ource> [-WhatIf] [-Confirm] [<CommonParameter``s``>]
 ```
 
-## DESCRIPTION
-A collection of resources linked to the task.
+## DE``s``CRIPTION
+A collection of re``s``ource``s`` linked to the ta``s``k.
 
-## EXAMPLES
+## EXAMPLE``s``
 
-## PARAMETERS
+## PARAMETER``s``
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalPropertie``s``
+Additional Parameter``s``
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: Ha``s``htable
+Parameter ``s``et``s``: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -ApplicationName
-Field indicating the app name of the source that is sending the linkedResource.
+Field indicating the app name of the ``s``ource that i``s`` ``s``ending the linkedRe``s``ource.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -BodyParameter
-linkedResource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+linkedRe``s``ource
+To con``s``truct, plea``s``e u``s``e Get-Help -Online and ``s``ee NOTE``s`` ``s``ection for BODYPARAMETER propertie``s`` and create a ha``s``h table.
 
 ```yaml
-Type: IMicrosoftGraphLinkedResource
-Parameter Sets: Create1, CreateViaIdentity1
-Aliases:
+Type: IMicro``s``oftGraphLinkedRe``s``ource
+Parameter ``s``et``s``: Create1, CreateViaIdentity1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -DisplayName
-Field indicating the title of the linkedResource.
+### -Di``s``playName
+Field indicating the title of the linkedRe``s``ource.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -ExternalId
-Id of the object that is associated with this task on the third-party/partner system.
+Id of the object that i``s`` a``s````s``ociated with thi``s`` ta``s``k on the third-party/partner ``s``y``s``tem.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -Id
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con``s``truct, plea``s``e u``s``e Get-Help -Online and ``s``ee NOTE``s`` ``s``ection for INPUTOBJECT propertie``s`` and create a ha``s``h table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
-Aliases:
+Type: IU``s``er``s``Identity
+Parameter ``s``et``s``: CreateViaIdentityExpanded1, CreateViaIdentity1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -TodoTaskId
-key: id of todoTask
+### -TodoTa``s``kId
+key: id of todoTa``s``k
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CreateExpanded1, Create1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -TodoTaskListId
-key: id of todoTaskList
+### -TodoTa``s``kLi``s``tId
+key: id of todoTa``s``kLi``s``t
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CreateExpanded1, Create1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -UserId
-key: id of user
+### -U``s``erId
+key: id of u``s``er
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CreateExpanded1, Create1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -WebUrl
-Deep link to the linkedResource.
+Deep link to the linkedRe``s``ource.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompt``s`` you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: ``s``witchParameter
+Parameter ``s``et``s``: (All)
+Alia``s``e``s``: cf
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+``s``how``s`` what would happen if the cmdlet run``s``.
+The cmdlet i``s`` not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: ``s``witchParameter
+Parameter ``s``et``s``: (All)
+Alia``s``e``s``: wi
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter``s``
+Thi``s`` cmdlet ``s``upport``s`` the common parameter``s``: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo``s``e, -WarningAction, and -WarningVariable. For more information, ``s``ee [about_CommonParameter``s``](http://go.micro``s``oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT``s``
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLinkedResource
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-## OUTPUTS
+### Micro``s``oft.Graph.Power``s``hell.Model``s``.IMicro``s``oftGraphLinkedRe``s``ource
+### Micro``s``oft.Graph.Power``s``hell.Model``s``.IU``s``er``s``Identity
+## OUTPUT``s``
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLinkedResource
-## NOTES
+### Micro``s``oft.Graph.Power``s``hell.Model``s``.IMicro``s``oftGraphLinkedRe``s``ource
+## NOTE``s``
 
-ALIASES
+ALIA``s``E``s``
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE``s``
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter``s`` de``s``cribed below, con``s``truct a ha``s``h table containing the appropriate propertie``s``. For information on ha``s``h table``s``, run Get-Help about_Ha``s``h_Table``s``.
 
 
-BODYPARAMETER <IMicrosoftGraphLinkedResource>: linkedResource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ApplicationName <String>]`: Field indicating the app name of the source that is sending the linkedResource.
-  - `[DisplayName <String>]`: Field indicating the title of the linkedResource.
-  - `[ExternalId <String>]`: Id of the object that is associated with this task on the third-party/partner system.
-  - `[WebUrl <String>]`: Deep link to the linkedResource.
+BODYPARAMETER <IMicro``s``oftGraphLinkedRe``s``ource>: linkedRe``s``ource
+  - `[(Any) <Object>]`: Thi``s`` indicate``s`` any property can be added to thi``s`` object.
+  - `[Id <``s``tring>]`: Read-only.
+  - `[ApplicationName <``s``tring>]`: Field indicating the app name of the ``s``ource that i``s`` ``s``ending the linkedRe``s``ource.
+  - `[Di``s``playName <``s``tring>]`: Field indicating the title of the linkedRe``s``ource.
+  - `[ExternalId <``s``tring>]`: Id of the object that i``s`` a``s````s``ociated with thi``s`` ta``s``k on the third-party/partner ``s``y``s``tem.
+  - `[WebUrl <``s``tring>]`: Deep link to the linkedRe``s``ource.
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
-  - `[LinkedResourceId <String>]`: key: id of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: key: id of notification
-  - `[OutlookCategoryId <String>]`: key: id of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IU``s``er``s``Identity>: Identity Parameter
+  - `[AttachmentId <``s``tring>]`: key: id of attachment
+  - `[Exten``s``ionId <``s``tring>]`: key: id of exten``s``ion
+  - `[Licen``s``eDetail``s``Id <``s``tring>]`: key: id of licen``s``eDetail``s``
+  - `[LinkedRe``s``ourceId <``s``tring>]`: key: id of linkedRe``s``ource
+  - `[MultiValueLegacyExtendedPropertyId <``s``tring>]`: key: id of multiValueLegacyExtendedProperty
+  - `[NotificationId <``s``tring>]`: key: id of notification
+  - `[OutlookCategoryId <``s``tring>]`: key: id of outlookCategory
+  - `[OutlookTa``s``kFolderId <``s``tring>]`: key: id of outlookTa``s``kFolder
+  - `[OutlookTa``s``kGroupId <``s``tring>]`: key: id of outlookTa``s``kGroup
+  - `[OutlookTa``s``kId <``s``tring>]`: key: id of outlookTa``s``k
+  - `[ProfilePhotoId <``s``tring>]`: key: id of profilePhoto
+  - `[``s``ingleValueLegacyExtendedPropertyId <``s``tring>]`: key: id of ``s``ingleValueLegacyExtendedProperty
+  - `[TodoTa``s``kId <``s``tring>]`: key: id of todoTa``s``k
+  - `[TodoTa``s``kLi``s``tId <``s``tring>]`: key: id of todoTa``s``kLi``s``t
+  - `[U``s``erId <``s``tring>]`: key: id of u``s``er
 
-## RELATED LINKS
+## RELATED LINK``s``
