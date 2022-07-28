@@ -1,241 +1,241 @@
-﻿---
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendargroup
-schema: 2.0.0
+---
+extern`a`l help file: Microsoft.Gr`a`ph.C`a`lend`a`r-help.xml
+Module N`a`me: Microsoft.Gr`a`ph.C`a`lend`a`r
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.gr`a`ph.c`a`lend`a`r/get-mguserc`a`lend`a`rgroup
+schem`a`: 2.0.0
 ---
 
-# Get-MgUserCalendarGroup
+# Get-MgUserC`a`lend`a`rGroup
 
 ## SYNOPSIS
-The user's calendar groups.
-Read-only.
-Nullable.
+The user's c`a`lend`a`r groups.
+Re`a`d-only.
+Null`a`ble.
 
-## SYNTAX
+## SYNT`a`X
 
-### List1 (Default)
+### List1 (Def`a`ult)
 ```
-Get-MgUserCalendarGroup -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgUserC`a`lend`a`rGroup -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-P`a`geSize <Int32>] [-`a`ll] [-CountV`a`ri`a`ble <String>] [<CommonP`a`r`a`meters>]
 ```
 
 ### Get1
 ```
-Get-MgUserCalendarGroup -CalendarGroupId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgUserC`a`lend`a`rGroup -C`a`lend`a`rGroupId <String> -UserId <String> [-Property <String[]>] [<CommonP`a`r`a`meters>]
 ```
 
-### GetViaIdentity1
+### GetVi`a`Identity1
 ```
-Get-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgUserC`a`lend`a`rGroup -InputObject <IC`a`lend`a`rIdentity> [-Property <String[]>] [<CommonP`a`r`a`meters>]
 ```
 
 ## DESCRIPTION
-The user's calendar groups.
-Read-only.
-Nullable.
+The user's c`a`lend`a`r groups.
+Re`a`d-only.
+Null`a`ble.
 
-## EXAMPLES
+## EX`a`MPLES
 
-## PARAMETERS
+## P`a`R`a`METERS
 
-### -All
-List all pages.
+### -`a`ll
+List `a`ll p`a`ges.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: List1
-Aliases:
+```y`a`ml
+Type: SwitchP`a`r`a`meter
+P`a`r`a`meter Sets: List1
+`a`li`a`ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F`a`lse
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: F`a`lse
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
-### -CalendarGroupId
-key: id of calendarGroup
+### -C`a`lend`a`rGroupId
+key: id of c`a`lend`a`rGroup
 
-```yaml
+```y`a`ml
 Type: String
-Parameter Sets: Get1
-Aliases:
+P`a`r`a`meter Sets: Get1
+`a`li`a`ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: F`a`lse
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -CountV`a`ri`a`ble
+Specifies `a` count of the tot`a`l number of items in `a` collection.
+By def`a`ult, this v`a`ri`a`ble will be set in the glob`a`l scope.
 
-```yaml
+```y`a`ml
 Type: String
-Parameter Sets: List1
-Aliases: CV
+P`a`r`a`meter Sets: List1
+`a`li`a`ses: CV
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F`a`lse
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: F`a`lse
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
 ### -Filter
-Filter items by property values
+Filter items by property v`a`lues
 
-```yaml
+```y`a`ml
 Type: String
-Parameter Sets: List1
-Aliases:
+P`a`r`a`meter Sets: List1
+`a`li`a`ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F`a`lse
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: F`a`lse
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+Identity P`a`r`a`meter
+To construct, ple`a`se use Get-Help -Online `a`nd see NOTES section for INPUTOBJECT properties `a`nd cre`a`te `a` h`a`sh t`a`ble.
 
-```yaml
-Type: ICalendarIdentity
-Parameter Sets: GetViaIdentity1
-Aliases:
+```y`a`ml
+Type: IC`a`lend`a`rIdentity
+P`a`r`a`meter Sets: GetVi`a`Identity1
+`a`li`a`ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: True (ByV`a`lue)
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
-### -PageSize
-Sets the page size of results.
+### -P`a`geSize
+Sets the p`a`ge size of results.
 
-```yaml
+```y`a`ml
 Type: Int32
-Parameter Sets: List1
-Aliases:
+P`a`r`a`meter Sets: List1
+`a`li`a`ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F`a`lse
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: F`a`lse
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
 ### -Property
 Select properties to be returned
 
-```yaml
+```y`a`ml
 Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+P`a`r`a`meter Sets: (`a`ll)
+`a`li`a`ses: Select
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F`a`lse
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: F`a`lse
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
 ### -Sort
-Order items by property values
+Order items by property v`a`lues
 
-```yaml
+```y`a`ml
 Type: String[]
-Parameter Sets: List1
-Aliases: OrderBy
+P`a`r`a`meter Sets: List1
+`a`li`a`ses: OrderBy
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F`a`lse
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: F`a`lse
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
 ### -Top
 Show only the first n items
 
-```yaml
+```y`a`ml
 Type: Int32
-Parameter Sets: List1
-Aliases: Limit
+P`a`r`a`meter Sets: List1
+`a`li`a`ses: Limit
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F`a`lse
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: F`a`lse
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
 ### -UserId
 key: id of user
 
-```yaml
+```y`a`ml
 Type: String
-Parameter Sets: List1, Get1
-Aliases:
+P`a`r`a`meter Sets: List1, Get1
+`a`li`a`ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: F`a`lse
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
 ### -Skip
 Skip the first n items
 
-```yaml
+```y`a`ml
 Type: Int32
-Parameter Sets: List1
-Aliases:
+P`a`r`a`meter Sets: List1
+`a`li`a`ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F`a`lse
+Position: N`a`med
+Def`a`ult v`a`lue: None
+`a`ccept pipeline input: F`a`lse
+`a`ccept wildc`a`rd ch`a`r`a`cters: F`a`lse
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonP`a`r`a`meters
+This cmdlet supports the common p`a`r`a`meters: -Debug, -Error`a`ction, -ErrorV`a`ri`a`ble, -Inform`a`tion`a`ction, -Inform`a`tionV`a`ri`a`ble, -OutV`a`ri`a`ble, -OutBuffer, -PipelineV`a`ri`a`ble, -Verbose, -W`a`rning`a`ction, `a`nd -W`a`rningV`a`ri`a`ble. For more inform`a`tion, see [`a`bout_CommonP`a`r`a`meters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### Microsoft.Gr`a`ph.PowerShell.Models.IC`a`lend`a`rIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup1
+### Microsoft.Gr`a`ph.PowerShell.Models.IMicrosoftGr`a`phC`a`lend`a`rGroup1
 ## NOTES
 
-ALIASES
+`a`LI`a`SES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX P`a`R`a`METER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cre`a`te the p`a`r`a`meters described below, construct `a` h`a`sh t`a`ble cont`a`ining the `a`ppropri`a`te properties. For inform`a`tion on h`a`sh t`a`bles, run Get-Help `a`bout_H`a`sh_T`a`bles.
 
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[CalendarGroupId <String>]`: key: id of calendarGroup
-  - `[CalendarId <String>]`: key: id of calendar
-  - `[CalendarPermissionId <String>]`: key: id of calendarPermission
+INPUTOBJECT <IC`a`lend`a`rIdentity>: Identity P`a`r`a`meter
+  - `[`a`tt`a`chmentId <String>]`: key: id of `a`tt`a`chment
+  - `[C`a`lend`a`rGroupId <String>]`: key: id of c`a`lend`a`rGroup
+  - `[C`a`lend`a`rId <String>]`: key: id of c`a`lend`a`r
+  - `[C`a`lend`a`rPermissionId <String>]`: key: id of c`a`lend`a`rPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[PlaceId <String>]`: key: id of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[MultiV`a`lueLeg`a`cyExtendedPropertyId <String>]`: key: id of multiV`a`lueLeg`a`cyExtendedProperty
+  - `[Pl`a`ceId <String>]`: key: id of pl`a`ce
+  - `[SingleV`a`lueLeg`a`cyExtendedPropertyId <String>]`: key: id of singleV`a`lueLeg`a`cyExtendedProperty
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## REL`a`TED LINKS
