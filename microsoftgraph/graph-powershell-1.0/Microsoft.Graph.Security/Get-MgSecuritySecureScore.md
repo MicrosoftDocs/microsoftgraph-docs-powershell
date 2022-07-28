@@ -1,280 +1,280 @@
-﻿---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritysecurescore
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.S`e`curity-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.S`e`curity
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.s`e`curity/g`e`t-mgs`e`curitys`e`cur`e`scor`e`
+sch`e`ma: 2.0.0
 ---
 
-# Get-MgSecuritySecureScore
+# G`e`t-MgS`e`curityS`e`cur`e`Scor`e`
 
 ## SYNOPSIS
-Get secureScores from security
+G`e`t s`e`cur`e`Scor`e`s from s`e`curity
 
 ## SYNTAX
 
-### List1 (Default)
+### List1 (D`e`fault)
 ```
-Get-MgSecuritySecureScore [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgSecuritySecureScore -SecureScoreId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+G`e`t-MgS`e`curityS`e`cur`e`Scor`e` [-`e`xpandProp`e`rty <String[]>] [-Prop`e`rty <String[]>] [-Filt`e`r <String>]
+ [-S`e`arch <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Pag`e`Siz`e` <Int32>] [-All]
+ [-CountVariabl`e` <String>] [<CommonParam`e`t`e`rs>]
 ```
 
-### GetViaIdentity1
+### G`e`t1
 ```
-Get-MgSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+G`e`t-MgS`e`curityS`e`cur`e`Scor`e` -S`e`cur`e`Scor`e`Id <String> [-`e`xpandProp`e`rty <String[]>] [-Prop`e`rty <String[]>]
+ [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Get secureScores from security
+### G`e`tViaId`e`ntity1
+```
+G`e`t-MgS`e`curityS`e`cur`e`Scor`e` -InputObj`e`ct <IS`e`curityId`e`ntity> [-`e`xpandProp`e`rty <String[]>] [-Prop`e`rty <String[]>]
+ [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+G`e`t s`e`cur`e`Scor`e`s from s`e`curity
 
-## PARAMETERS
+## `e`XAMPL`e`S
+
+## PARAM`e`T`e`RS
 
 ### -All
-List all pages.
+List all pag`e`s.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -CountVariabl`e`
+Sp`e`cifi`e`s a count of th`e` total numb`e`r of it`e`ms in a coll`e`ction.
+By d`e`fault, this variabl`e` will b`e` s`e`t in th`e` global scop`e`.
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases: CV
+Typ`e`: String
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s: CV
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ExpandProperty
-Expand related entities
+### -`e`xpandProp`e`rty
+`e`xpand r`e`lat`e`d `e`ntiti`e`s
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: `e`xpand
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Filter
-Filter items by property values
+### -Filt`e`r
+Filt`e`r it`e`ms by prop`e`rty valu`e`s
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: GetViaIdentity1
-Aliases:
+Typ`e`: IS`e`curityId`e`ntity
+Param`e`t`e`r S`e`ts: G`e`tViaId`e`ntity1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -PageSize
-Sets the page size of results.
+### -Pag`e`Siz`e`
+S`e`ts th`e` pag`e` siz`e` of r`e`sults.
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Property
-Select properties to be returned
+### -Prop`e`rty
+S`e`l`e`ct prop`e`rti`e`s to b`e` r`e`turn`e`d
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: S`e`l`e`ct
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Search
-Search items by search phrases
+### -S`e`arch
+S`e`arch it`e`ms by s`e`arch phras`e`s
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -SecureScoreId
-key: id of secureScore
+### -S`e`cur`e`Scor`e`Id
+k`e`y: id of s`e`cur`e`Scor`e`
 
 ```yaml
-Type: String
-Parameter Sets: Get1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Sort
-Order items by property values
+Ord`e`r it`e`ms by prop`e`rty valu`e`s
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
-Aliases: OrderBy
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s: Ord`e`rBy
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Top
-Show only the first n items
+Show only th`e` first n it`e`ms
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases: Limit
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s: Limit
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Skip
-Skip the first n items
+Skip th`e` first n it`e`ms
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IS`e`curityId`e`ntity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScore
-## NOTES
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IMicrosoftGraphS`e`cur`e`Scor`e`
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
-  - `[AlertId <String>]`: key: id of alert
-  - `[AuthoredNoteId <String>]`: key: id of authoredNote
-  - `[CaseOperationId <String>]`: key: id of caseOperation
-  - `[CloudAppSecurityProfileId <String>]`: key: id of cloudAppSecurityProfile
-  - `[DataSourceId <String>]`: key: id of dataSource
-  - `[DispositionReviewStageId <String>]`: key: id of dispositionReviewStage
-  - `[DomainSecurityProfileId <String>]`: key: id of domainSecurityProfile
-  - `[EdiscoveryCaseId <String>]`: key: id of ediscoveryCase
-  - `[EdiscoveryCustodianId <String>]`: key: id of ediscoveryCustodian
-  - `[EdiscoveryFileId <String>]`: key: id of ediscoveryFile
-  - `[EdiscoveryHoldPolicyId <String>]`: key: id of ediscoveryHoldPolicy
-  - `[EdiscoveryNoncustodialDataSourceId <String>]`: key: id of ediscoveryNoncustodialDataSource
-  - `[EdiscoveryReviewSetId <String>]`: key: id of ediscoveryReviewSet
-  - `[EdiscoveryReviewSetQueryId <String>]`: key: id of ediscoveryReviewSetQuery
-  - `[EdiscoveryReviewTagId <String>]`: key: id of ediscoveryReviewTag
-  - `[EdiscoveryReviewTagId1 <String>]`: key: id of ediscoveryReviewTag
-  - `[EdiscoverySearchId <String>]`: key: id of ediscoverySearch
-  - `[FileSecurityProfileId <String>]`: key: id of fileSecurityProfile
-  - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
-  - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
-  - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
-  - `[RetentionEventId <String>]`: key: id of retentionEvent
-  - `[RetentionEventTypeId <String>]`: key: id of retentionEventType
-  - `[RetentionLabelId <String>]`: key: id of retentionLabel
-  - `[SecureScoreControlProfileId <String>]`: key: id of secureScoreControlProfile
-  - `[SecureScoreId <String>]`: key: id of secureScore
-  - `[SecurityActionId <String>]`: key: id of securityAction
-  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
-  - `[SimulationAutomationId <String>]`: key: id of simulationAutomation
-  - `[SimulationAutomationRunId <String>]`: key: id of simulationAutomationRun
-  - `[SimulationId <String>]`: key: id of simulation
-  - `[SiteSourceId <String>]`: key: id of siteSource
-  - `[SubjectRightsRequestId <String>]`: key: id of subjectRightsRequest
-  - `[TiIndicatorId <String>]`: key: id of tiIndicator
-  - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
-  - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
-  - `[UserSourceId <String>]`: key: id of userSource
+INPUTOBJ`e`CT <IS`e`curityId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[Al`e`rtId <String>]`: k`e`y: id of al`e`rt
+  - `[Author`e`dNot`e`Id <String>]`: k`e`y: id of author`e`dNot`e`
+  - `[Cas`e`Op`e`rationId <String>]`: k`e`y: id of cas`e`Op`e`ration
+  - `[CloudAppS`e`curityProfil`e`Id <String>]`: k`e`y: id of cloudAppS`e`curityProfil`e`
+  - `[DataSourc`e`Id <String>]`: k`e`y: id of dataSourc`e`
+  - `[DispositionR`e`vi`e`wStag`e`Id <String>]`: k`e`y: id of dispositionR`e`vi`e`wStag`e`
+  - `[DomainS`e`curityProfil`e`Id <String>]`: k`e`y: id of domainS`e`curityProfil`e`
+  - `[`e`discov`e`ryCas`e`Id <String>]`: k`e`y: id of `e`discov`e`ryCas`e`
+  - `[`e`discov`e`ryCustodianId <String>]`: k`e`y: id of `e`discov`e`ryCustodian
+  - `[`e`discov`e`ryFil`e`Id <String>]`: k`e`y: id of `e`discov`e`ryFil`e`
+  - `[`e`discov`e`ryHoldPolicyId <String>]`: k`e`y: id of `e`discov`e`ryHoldPolicy
+  - `[`e`discov`e`ryNoncustodialDataSourc`e`Id <String>]`: k`e`y: id of `e`discov`e`ryNoncustodialDataSourc`e`
+  - `[`e`discov`e`ryR`e`vi`e`wS`e`tId <String>]`: k`e`y: id of `e`discov`e`ryR`e`vi`e`wS`e`t
+  - `[`e`discov`e`ryR`e`vi`e`wS`e`tQu`e`ryId <String>]`: k`e`y: id of `e`discov`e`ryR`e`vi`e`wS`e`tQu`e`ry
+  - `[`e`discov`e`ryR`e`vi`e`wTagId <String>]`: k`e`y: id of `e`discov`e`ryR`e`vi`e`wTag
+  - `[`e`discov`e`ryR`e`vi`e`wTagId1 <String>]`: k`e`y: id of `e`discov`e`ryR`e`vi`e`wTag
+  - `[`e`discov`e`ryS`e`archId <String>]`: k`e`y: id of `e`discov`e`ryS`e`arch
+  - `[Fil`e`S`e`curityProfil`e`Id <String>]`: k`e`y: id of fil`e`S`e`curityProfil`e`
+  - `[HostS`e`curityProfil`e`Id <String>]`: k`e`y: id of hostS`e`curityProfil`e`
+  - `[IPS`e`curityProfil`e`Id <String>]`: k`e`y: id of ipS`e`curityProfil`e`
+  - `[Provid`e`rT`e`nantS`e`ttingId <String>]`: k`e`y: id of provid`e`rT`e`nantS`e`tting
+  - `[R`e`t`e`ntion`e`v`e`ntId <String>]`: k`e`y: id of r`e`t`e`ntion`e`v`e`nt
+  - `[R`e`t`e`ntion`e`v`e`ntTyp`e`Id <String>]`: k`e`y: id of r`e`t`e`ntion`e`v`e`ntTyp`e`
+  - `[R`e`t`e`ntionLab`e`lId <String>]`: k`e`y: id of r`e`t`e`ntionLab`e`l
+  - `[S`e`cur`e`Scor`e`ControlProfil`e`Id <String>]`: k`e`y: id of s`e`cur`e`Scor`e`ControlProfil`e`
+  - `[S`e`cur`e`Scor`e`Id <String>]`: k`e`y: id of s`e`cur`e`Scor`e`
+  - `[S`e`curityActionId <String>]`: k`e`y: id of s`e`curityAction
+  - `[S`e`nsitivityLab`e`lId <String>]`: k`e`y: id of s`e`nsitivityLab`e`l
+  - `[SimulationAutomationId <String>]`: k`e`y: id of simulationAutomation
+  - `[SimulationAutomationRunId <String>]`: k`e`y: id of simulationAutomationRun
+  - `[SimulationId <String>]`: k`e`y: id of simulation
+  - `[Sit`e`Sourc`e`Id <String>]`: k`e`y: id of sit`e`Sourc`e`
+  - `[Subj`e`ctRightsR`e`qu`e`stId <String>]`: k`e`y: id of subj`e`ctRightsR`e`qu`e`st
+  - `[TiIndicatorId <String>]`: k`e`y: id of tiIndicator
+  - `[Unifi`e`dGroupSourc`e`Id <String>]`: k`e`y: id of unifi`e`dGroupSourc`e`
+  - `[Us`e`rS`e`curityProfil`e`Id <String>]`: k`e`y: id of us`e`rS`e`curityProfil`e`
+  - `[Us`e`rSourc`e`Id <String>]`: k`e`y: id of us`e`rSourc`e`
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
