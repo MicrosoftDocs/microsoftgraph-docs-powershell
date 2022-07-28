@@ -1,268 +1,268 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole
+---
+external help file: Microsoft.Graph.I```d```entity.```d```irectoryManagement-help.xml
+Mo```d```ule Name: Microsoft.Graph.I```d```entity.```d```irectoryManagement
+online version: https://```d```ocs.microsoft.com/en-us/powershell/mo```d```ule/microsoft.graph.i```d```entity.```d```irectorymanagement/new-mg```d```irectoryrole
 schema: 2.0.0
 ---
 
-# New-MgDirectoryRole
+# New-Mg```d```irectoryRole
 
 ## SYNOPSIS
-Activate directoryRole
+Activate ```d```irectoryRole
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpan```d```e```d```1 (```d```efault)
 ```
-New-MgDirectoryRole [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-Members <IMicrosoftGraphDirectoryObject[]>]
- [-RoleTemplateId <String>] [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-WhatIf] [-Confirm]
+New-Mg```d```irectoryRole [-A```d``````d```itionalProperties <Hashtable>] [-```d```elete```d``````d```ateTime <```d```ateTime>] [-```d```escription <String>]
+ [-```d```isplayName <String>] [-I```d``` <String>] [-Members <IMicrosoftGraph```d```irectoryObject[]>]
+ [-RoleTemplateI```d``` <String>] [-Scope```d```Members <IMicrosoftGraphScope```d```RoleMembership[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDirectoryRole -BodyParameter <IMicrosoftGraphDirectoryRole> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-Mg```d```irectoryRole -Bo```d```yParameter <IMicrosoftGraph```d```irectoryRole> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Activate directoryRole
+## ```d```ESCRIPTION
+Activate ```d```irectoryRole
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A```d``````d```itionalProperties
+A```d``````d```itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -BodyParameter
-directoryRole
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo```d```yParameter
+```d```irectoryRole
+To construct, please use Get-Help -Online an```d``` see NOTES section for BO```d```YPARAMETER properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryRole
+Type: IMicrosoftGraph```d```irectoryRole
 Parameter Sets: Create1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -DeletedDateTime
-Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
+### -```d```elete```d``````d```ateTime
+```d```ate an```d``` time when this object was ```d```elete```d```.
+Always null when the object hasn't been ```d```elete```d```.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: ```d```ateTime
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -Description
-The description for the directory role.
-Read-only.
+### -```d```escription
+The ```d```escription for the ```d```irectory role.
+Rea```d```-only.
 Supports $filter (eq), $search, $select.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -DisplayName
-The display name for the directory role.
-Read-only.
+### -```d```isplayName
+The ```d```isplay name for the ```d```irectory role.
+Rea```d```-only.
 Supports $filter (eq), $search, $select.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -Id
+### -I```d```
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -Members
-Users that are members of this directory role.
-HTTP Methods: GET, POST, DELETE.
-Read-only.
+Users that are members of this ```d```irectory role.
+HTTP Metho```d```s: GET, POST, ```d```ELETE.
+Rea```d```-only.
 Nullable.
-Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
+Supports $expan```d```.
+To construct, please use Get-Help -Online an```d``` see NOTES section for MEMBERS properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraph```d```irectoryObject[]
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -RoleTemplateId
-The id of the directoryRoleTemplate that this role is based on.
-The property must be specified when activating a directory role in a tenant with a POST operation.
-After the directory role has been activated, the property is read only.
+### -RoleTemplateI```d```
+The i```d``` of the ```d```irectoryRoleTemplate that this role is base```d``` on.
+The property must be specifie```d``` when activating a ```d```irectory role in a tenant with a POST operation.
+After the ```d```irectory role has been activate```d```, the property is rea```d``` only.
 Supports $filter (eq), $select.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -ScopedMembers
-Members of this directory role that are scoped to administrative units.
-Read-only.
+### -Scope```d```Members
+Members of this ```d```irectory role that are scope```d``` to a```d```ministrative units.
+Rea```d```-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SCOPEDMEMBERS properties and create a hash table.
+To construct, please use Get-Help -Online an```d``` see NOTES section for SCOPE```d```MEMBERS properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphScopedRoleMembership[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphScope```d```RoleMembership[]
+Parameter Sets: CreateExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm```d```let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul```d``` happen if the cm```d```let runs.
+The cm```d```let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm```d```let supports the common parameters: -```d```ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an```d``` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI```d```=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRole
+### Microsoft.Graph.PowerShell.Mo```d```els.IMicrosoftGraph```d```irectoryRole
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRole
+### Microsoft.Graph.PowerShell.Mo```d```els.IMicrosoftGraph```d```irectoryRole
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ```d```escribe```d``` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDirectoryRole>: directoryRole
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: 
-  - `[Description <String>]`: The description for the directory role. Read-only. Supports $filter (eq), $search, $select.
-  - `[DisplayName <String>]`: The display name for the directory role. Read-only. Supports $filter (eq), $search, $select.
-  - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: 
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[RoleTemplateId <String>]`: The id of the directoryRoleTemplate that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only. Supports $filter (eq), $select.
-  - `[ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>]`: Members of this directory role that are scoped to administrative units. Read-only. Nullable.
-    - `[Id <String>]`: 
-    - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-    - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-    - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+BO```d```YPARAMETER <IMicrosoftGraph```d```irectoryRole>: ```d```irectoryRole
+  - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+  - `[```d```elete```d``````d```ateTime <```d```ateTime?>]`: ```d```ate an```d``` time when this object was ```d```elete```d```. Always null when the object hasn't been ```d```elete```d```.
+  - `[I```d``` <String>]`: 
+  - `[```d```escription <String>]`: The ```d```escription for the ```d```irectory role. Rea```d```-only. Supports $filter (eq), $search, $select.
+  - `[```d```isplayName <String>]`: The ```d```isplay name for the ```d```irectory role. Rea```d```-only. Supports $filter (eq), $search, $select.
+  - `[Members <IMicrosoftGraph```d```irectoryObject[]>]`: Users that are members of this ```d```irectory role. HTTP Metho```d```s: GET, POST, ```d```ELETE. Rea```d```-only. Nullable. Supports $expan```d```.
+    - `[I```d``` <String>]`: 
+    - `[```d```elete```d``````d```ateTime <```d```ateTime?>]`: ```d```ate an```d``` time when this object was ```d```elete```d```. Always null when the object hasn't been ```d```elete```d```.
+  - `[RoleTemplateI```d``` <String>]`: The i```d``` of the ```d```irectoryRoleTemplate that this role is base```d``` on. The property must be specifie```d``` when activating a ```d```irectory role in a tenant with a POST operation. After the ```d```irectory role has been activate```d```, the property is rea```d``` only. Supports $filter (eq), $select.
+  - `[Scope```d```Members <IMicrosoftGraphScope```d```RoleMembership[]>]`: Members of this ```d```irectory role that are scope```d``` to a```d```ministrative units. Rea```d```-only. Nullable.
+    - `[I```d``` <String>]`: 
+    - `[A```d```ministrativeUnitI```d``` <String>]`: Unique i```d```entifier for the a```d```ministrative unit that the ```d```irectory role is scope```d``` to
+    - `[RoleI```d``` <String>]`: Unique i```d```entifier for the ```d```irectory role that the member is in.
+    - `[RoleMemberInfo <IMicrosoftGraphI```d```entity>]`: i```d```entity
+      - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+      - `[```d```isplayName <String>]`: The i```d```entity's ```d```isplay name. Note that this may not always be available or up to ```d```ate. For example, if a user changes their ```d```isplay name, the API may show the new value in a future response, but the items associate```d``` with the user won't show up as having change```d``` when using ```d```elta.
+      - `[I```d``` <String>]`: Unique i```d```entifier for the i```d```entity.
 
-MEMBERS <IMicrosoftGraphDirectoryObject[]>: Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+MEMBERS <IMicrosoftGraph```d```irectoryObject[]>: Users that are members of this ```d```irectory role. HTTP Metho```d```s: GET, POST, ```d```ELETE. Rea```d```-only. Nullable. Supports $expan```d```.
+  - `[I```d``` <String>]`: 
+  - `[```d```elete```d``````d```ateTime <```d```ateTime?>]`: ```d```ate an```d``` time when this object was ```d```elete```d```. Always null when the object hasn't been ```d```elete```d```.
 
-SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership[]>: Members of this directory role that are scoped to administrative units. Read-only. Nullable.
-  - `[Id <String>]`: 
-  - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-  - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-  - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+SCOPE```d```MEMBERS <IMicrosoftGraphScope```d```RoleMembership[]>: Members of this ```d```irectory role that are scope```d``` to a```d```ministrative units. Rea```d```-only. Nullable.
+  - `[I```d``` <String>]`: 
+  - `[A```d```ministrativeUnitI```d``` <String>]`: Unique i```d```entifier for the a```d```ministrative unit that the ```d```irectory role is scope```d``` to
+  - `[RoleI```d``` <String>]`: Unique i```d```entifier for the ```d```irectory role that the member is in.
+  - `[RoleMemberInfo <IMicrosoftGraphI```d```entity>]`: i```d```entity
+    - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+    - `[```d```isplayName <String>]`: The i```d```entity's ```d```isplay name. Note that this may not always be available or up to ```d```ate. For example, if a user changes their ```d```isplay name, the API may show the new value in a future response, but the items associate```d``` with the user won't show up as having change```d``` when using ```d```elta.
+    - `[I```d``` <String>]`: Unique i```d```entifier for the i```d```entity.
 
-## RELATED LINKS
+## RELATE```d``` LINKS
