@@ -1,259 +1,259 @@
-﻿---
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mgsiteonenotepagecontent
+---
+external help f```i```le: M```i```crosoft.Graph.S```i```tes-help.xml
+Module Name: M```i```crosoft.Graph.S```i```tes
+onl```i```ne vers```i```on: https://docs.m```i```crosoft.com/en-us/powershell/module/m```i```crosoft.graph.s```i```tes/update-mgs```i```teonenotepagecontent
 schema: 2.0.0
 ---
 
-# Update-MgSiteOnenotePageContent
+# Update-MgS```i```teOnenotePageContent
 
-## SYNOPSIS
-Invoke action onenotePatchContent
+## SYNOPS```i```S
+```i```nvoke act```i```on onenotePatchContent
 
 ## SYNTAX
 
 ### PatchExpanded1 (Default)
 ```
-Update-MgSiteOnenotePageContent -OnenotePageId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgS```i```teOnenotePageContent -OnenotePage```i```d <Str```i```ng> -S```i```te```i```d <Str```i```ng> [-Add```i```t```i```onalPropert```i```es <Hashtable>]
+ [-Commands <```i```M```i```crosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-What```i```f] [-Conf```i```rm]
  [<CommonParameters>]
 ```
 
 ### Patch1
 ```
-Update-MgSiteOnenotePageContent -OnenotePageId <String> -SiteId <String>
- -BodyParameter <IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgS```i```teOnenotePageContent -OnenotePage```i```d <Str```i```ng> -S```i```te```i```d <Str```i```ng>
+ -BodyParameter <```i```Paths1L1LpfrS```i```tesS```i```te```i```dOnenotePagesOnenotepage```i```dM```i```crosoftGraphOnenotepatchcontentPostRequestbodyContentAppl```i```cat```i```onJsonSchema>
+ [-PassThru] [-What```i```f] [-Conf```i```rm] [<CommonParameters>]
 ```
 
-### PatchViaIdentityExpanded1
+### PatchV```i```a```i```dent```i```tyExpanded1
 ```
-Update-MgSiteOnenotePageContent -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgS```i```teOnenotePageContent -```i```nputObject <```i```S```i```tes```i```dent```i```ty> [-Add```i```t```i```onalPropert```i```es <Hashtable>]
+ [-Commands <```i```M```i```crosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-What```i```f] [-Conf```i```rm]
  [<CommonParameters>]
 ```
 
-### PatchViaIdentity1
+### PatchV```i```a```i```dent```i```ty1
 ```
-Update-MgSiteOnenotePageContent -InputObject <ISitesIdentity>
- -BodyParameter <IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgS```i```teOnenotePageContent -```i```nputObject <```i```S```i```tes```i```dent```i```ty>
+ -BodyParameter <```i```Paths1L1LpfrS```i```tesS```i```te```i```dOnenotePagesOnenotepage```i```dM```i```crosoftGraphOnenotepatchcontentPostRequestbodyContentAppl```i```cat```i```onJsonSchema>
+ [-PassThru] [-What```i```f] [-Conf```i```rm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Invoke action onenotePatchContent
+## DESCR```i```PT```i```ON
+```i```nvoke act```i```on onenotePatchContent
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Add```i```t```i```onalPropert```i```es
+Add```i```t```i```onal Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: PatchExpanded1, PatchViaIdentityExpanded1
-Aliases:
+Parameter Sets: PatchExpanded1, PatchV```i```a```i```dent```i```tyExpanded1
+Al```i```ases:
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Onl```i```ne and see NOTES sect```i```on for BODYPARAMETER propert```i```es and create a hash table.
 
 ```yaml
-Type: IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Patch1, PatchViaIdentity1
-Aliases:
+Type: ```i```Paths1L1LpfrS```i```tesS```i```te```i```dOnenotePagesOnenotepage```i```dM```i```crosoftGraphOnenotepatchcontentPostRequestbodyContentAppl```i```cat```i```onJsonSchema
+Parameter Sets: Patch1, PatchV```i```a```i```dent```i```ty1
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: True (ByValue)
+Accept w```i```ldcard characters: False
 ```
 
 ### -Commands
 .
-To construct, please use Get-Help -Online and see NOTES section for COMMANDS properties and create a hash table.
+To construct, please use Get-Help -Onl```i```ne and see NOTES sect```i```on for COMMANDS propert```i```es and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnenotePatchContentCommand[]
-Parameter Sets: PatchExpanded1, PatchViaIdentityExpanded1
-Aliases:
+Type: ```i```M```i```crosoftGraphOnenotePatchContentCommand[]
+Parameter Sets: PatchExpanded1, PatchV```i```a```i```dent```i```tyExpanded1
+Al```i```ases:
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -```i```nputObject
+```i```dent```i```ty Parameter
+To construct, please use Get-Help -Onl```i```ne and see NOTES sect```i```on for ```i```NPUTOBJECT propert```i```es and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: PatchViaIdentityExpanded1, PatchViaIdentity1
-Aliases:
+Type: ```i```S```i```tes```i```dent```i```ty
+Parameter Sets: PatchV```i```a```i```dent```i```tyExpanded1, PatchV```i```a```i```dent```i```ty1
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: True (ByValue)
+Accept w```i```ldcard characters: False
 ```
 
-### -OnenotePageId
-key: id of onenotePage
+### -OnenotePage```i```d
+key: ```i```d of onenotePage
 
 ```yaml
-Type: String
+Type: Str```i```ng
 Parameter Sets: PatchExpanded1, Patch1
-Aliases:
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: Sw```i```tchParameter
 Parameter Sets: (All)
-Aliases:
+Al```i```ases:
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -SiteId
-key: id of site
+### -S```i```te```i```d
+key: ```i```d of s```i```te
 
 ```yaml
-Type: String
+Type: Str```i```ng
 Parameter Sets: PatchExpanded1, Patch1
-Aliases:
+Al```i```ases:
 
-Required: True
-Position: Named
+Requ```i```red: True
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Conf```i```rm
+Prompts you for conf```i```rmat```i```on before runn```i```ng the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw```i```tchParameter
 Parameter Sets: (All)
-Aliases: cf
+Al```i```ases: cf
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -What```i```f
+Shows what would happen ```i```f the cmdlet runs.
+The cmdlet ```i```s not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw```i```tchParameter
 Parameter Sets: (All)
-Aliases: wi
+Al```i```ases: w```i```
 
-Required: False
-Position: Named
+Requ```i```red: False
+Pos```i```t```i```on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p```i```pel```i```ne ```i```nput: False
+Accept w```i```ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th```i```s cmdlet supports the common parameters: -Debug, -ErrorAct```i```on, -ErrorVar```i```able, -```i```nformat```i```onAct```i```on, -```i```nformat```i```onVar```i```able, -OutVar```i```able, -OutBuffer, -P```i```pel```i```neVar```i```able, -Verbose, -Warn```i```ngAct```i```on, and -Warn```i```ngVar```i```able. For more ```i```nformat```i```on, see [about_CommonParameters](http://go.m```i```crosoft.com/fwl```i```nk/?L```i```nk```i```D=113216).
 
-## INPUTS
+## ```i```NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### M```i```crosoft.Graph.PowerShell.Models.```i```Paths1L1LpfrS```i```tesS```i```te```i```dOnenotePagesOnenotepage```i```dM```i```crosoftGraphOnenotepatchcontentPostRequestbodyContentAppl```i```cat```i```onJsonSchema
+### M```i```crosoft.Graph.PowerShell.Models.```i```S```i```tes```i```dent```i```ty
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
 
-ALIASES
+AL```i```ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT```i```ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr```i```bed below, construct a hash table conta```i```n```i```ng the appropr```i```ate propert```i```es. For ```i```nformat```i```on on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Commands <IMicrosoftGraphOnenotePatchContentCommand[]>]`: 
-    - `[Action <String>]`: onenotePatchActionType
-    - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
-    - `[Position <String>]`: onenotePatchInsertPosition
-    - `[Target <String>]`: The element to update. Must be the #<data-id> or the generated {id} of the element, or the body or title keyword.
+BODYPARAMETER <```i```Paths1L1LpfrS```i```tesS```i```te```i```dOnenotePagesOnenotepage```i```dM```i```crosoftGraphOnenotepatchcontentPostRequestbodyContentAppl```i```cat```i```onJsonSchema>: .
+  - `[(Any) <Object>]`: Th```i```s ```i```nd```i```cates any property can be added to th```i```s object.
+  - `[Commands <```i```M```i```crosoftGraphOnenotePatchContentCommand[]>]`: 
+    - `[Act```i```on <Str```i```ng>]`: onenotePatchAct```i```onType
+    - `[Content <Str```i```ng>]`: A str```i```ng of well-formed HTML to add to the page, and any ```i```mage or f```i```le b```i```nary data. ```i```f the content conta```i```ns b```i```nary data, the request must be sent us```i```ng the mult```i```part/form-data content type w```i```th a 'Commands' part.
+    - `[Pos```i```t```i```on <Str```i```ng>]`: onenotePatch```i```nsertPos```i```t```i```on
+    - `[Target <Str```i```ng>]`: The element to update. Must be the #<data-```i```d> or the generated {```i```d} of the element, or the body or t```i```tle keyword.
 
-COMMANDS <IMicrosoftGraphOnenotePatchContentCommand[]>: .
-  - `[Action <String>]`: onenotePatchActionType
-  - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
-  - `[Position <String>]`: onenotePatchInsertPosition
-  - `[Target <String>]`: The element to update. Must be the #<data-id> or the generated {id} of the element, or the body or title keyword.
+COMMANDS <```i```M```i```crosoftGraphOnenotePatchContentCommand[]>: .
+  - `[Act```i```on <Str```i```ng>]`: onenotePatchAct```i```onType
+  - `[Content <Str```i```ng>]`: A str```i```ng of well-formed HTML to add to the page, and any ```i```mage or f```i```le b```i```nary data. ```i```f the content conta```i```ns b```i```nary data, the request must be sent us```i```ng the mult```i```part/form-data content type w```i```th a 'Commands' part.
+  - `[Pos```i```t```i```on <Str```i```ng>]`: onenotePatch```i```nsertPos```i```t```i```on
+  - `[Target <Str```i```ng>]`: The element to update. Must be the #<data-```i```d> or the generated {```i```d} of the element, or the body or t```i```tle keyword.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
-  - `[BaseItemId <String>]`: key: id of baseItem
-  - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
-  - `[ColumnLinkId <String>]`: key: id of columnLink
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[ContentTypeId1 <String>]`: key: id of contentType
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: key: id of group
-  - `[GroupId1 <String>]`: key: id of group
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: key: id of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PermissionId <String>]`: key: id of permission
-  - `[RelationId <String>]`: key: id of relation
-  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
-  - `[SetId <String>]`: key: id of set
-  - `[SetId1 <String>]`: key: id of set
-  - `[SiteId <String>]`: key: id of site
-  - `[SiteId1 <String>]`: key: id of site
-  - `[SitePageId <String>]`: key: id of sitePage
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: key: id of store
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[TermId <String>]`: key: id of term
-  - `[TermId1 <String>]`: key: id of term
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: key: id of user
+```i```NPUTOBJECT <```i```S```i```tes```i```dent```i```ty>: ```i```dent```i```ty Parameter
+  - `[Base```i```tem```i```d <Str```i```ng>]`: key: ```i```d of base```i```tem
+  - `[ColumnDef```i```n```i```t```i```on```i```d <Str```i```ng>]`: key: ```i```d of columnDef```i```n```i```t```i```on
+  - `[ColumnL```i```nk```i```d <Str```i```ng>]`: key: ```i```d of columnL```i```nk
+  - `[ContentType```i```d <Str```i```ng>]`: key: ```i```d of contentType
+  - `[ContentType```i```d1 <Str```i```ng>]`: key: ```i```d of contentType
+  - `[DocumentSetVers```i```on```i```d <Str```i```ng>]`: key: ```i```d of documentSetVers```i```on
+  - `[Dr```i```ve```i```d <Str```i```ng>]`: key: ```i```d of dr```i```ve
+  - `[EndDateT```i```me <Str```i```ng>]`: Usage: endDateT```i```me='{endDateT```i```me}'
+  - `[Group```i```d <Str```i```ng>]`: key: ```i```d of group
+  - `[Group```i```d1 <Str```i```ng>]`: key: ```i```d of group
+  - `[```i```ncludePersonalNotebooks <Boolean?>]`: Usage: ```i```ncludePersonalNotebooks={```i```ncludePersonalNotebooks}
+  - `[```i```nterval <Str```i```ng>]`: Usage: ```i```nterval='{```i```nterval}'
+  - `[L```i```st```i```d <Str```i```ng>]`: key: ```i```d of l```i```st
+  - `[L```i```st```i```d1 <Str```i```ng>]`: Usage: l```i```st```i```d='{l```i```st```i```d}'
+  - `[L```i```st```i```tem```i```d <Str```i```ng>]`: key: ```i```d of l```i```st```i```tem
+  - `[L```i```st```i```temVers```i```on```i```d <Str```i```ng>]`: key: ```i```d of l```i```st```i```temVers```i```on
+  - `[Notebook```i```d <Str```i```ng>]`: key: ```i```d of notebook
+  - `[OnenotePage```i```d <Str```i```ng>]`: key: ```i```d of onenotePage
+  - `[OnenoteSect```i```on```i```d <Str```i```ng>]`: key: ```i```d of onenoteSect```i```on
+  - `[Path <Str```i```ng>]`: Usage: path='{path}'
+  - `[Perm```i```ss```i```on```i```d <Str```i```ng>]`: key: ```i```d of perm```i```ss```i```on
+  - `[Relat```i```on```i```d <Str```i```ng>]`: key: ```i```d of relat```i```on
+  - `[R```i```chLongRunn```i```ngOperat```i```on```i```d <Str```i```ng>]`: key: ```i```d of r```i```chLongRunn```i```ngOperat```i```on
+  - `[Set```i```d <Str```i```ng>]`: key: ```i```d of set
+  - `[Set```i```d1 <Str```i```ng>]`: key: ```i```d of set
+  - `[S```i```te```i```d <Str```i```ng>]`: key: ```i```d of s```i```te
+  - `[S```i```te```i```d1 <Str```i```ng>]`: key: ```i```d of s```i```te
+  - `[S```i```tePage```i```d <Str```i```ng>]`: key: ```i```d of s```i```tePage
+  - `[StartDateT```i```me <Str```i```ng>]`: Usage: startDateT```i```me='{startDateT```i```me}'
+  - `[Store```i```d <Str```i```ng>]`: key: ```i```d of store
+  - `[Subscr```i```pt```i```on```i```d <Str```i```ng>]`: key: ```i```d of subscr```i```pt```i```on
+  - `[Term```i```d <Str```i```ng>]`: key: ```i```d of term
+  - `[Term```i```d1 <Str```i```ng>]`: key: ```i```d of term
+  - `[Token <Str```i```ng>]`: Usage: token='{token}'
+  - `[User```i```d <Str```i```ng>]`: key: ```i```d of user
 
-## RELATED LINKS
+## RELATED L```i```NKS
