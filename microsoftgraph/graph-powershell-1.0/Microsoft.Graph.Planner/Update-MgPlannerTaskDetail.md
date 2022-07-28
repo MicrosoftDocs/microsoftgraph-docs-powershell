@@ -1,270 +1,270 @@
-﻿---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertaskdetail
+---
+externa``l`` he``l``p fi``l``e: Microsoft.Graph.P``l``anner-he``l``p.xm``l``
+Modu``l``e Name: Microsoft.Graph.P``l``anner
+on``l``ine version: https://docs.microsoft.com/en-us/powershe``l````l``/modu``l``e/microsoft.graph.p``l``anner/update-mgp``l``annertaskdetai``l``
 schema: 2.0.0
 ---
 
-# Update-MgPlannerTaskDetail
+# Update-MgP``l``annerTaskDetai``l``
 
 ## SYNOPSIS
-Update the navigation property details in planner
+Update the navigation property detai``l``s in p``l``anner
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded (Defau``l``t)
 ```
-Update-MgPlannerTaskDetail -PlannerTaskId <String> [-AdditionalProperties <Hashtable>] [-Checklist <Hashtable>]
- [-Description <String>] [-Id <String>] [-PreviewType <String>] [-References <Hashtable>] [-PassThru] [-WhatIf]
+Update-MgP``l``annerTaskDetai``l`` -P``l``annerTaskId <String> [-Additiona``l``Properties <Hashtab``l``e>] [-Check``l``ist <Hashtab``l``e>]
+ [-Description <String>] [-Id <String>] [-PreviewType <String>] [-References <Hashtab``l``e>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlannerTaskDetail -PlannerTaskId <String> -BodyParameter <IMicrosoftGraphPlannerTaskDetails>
+Update-MgP``l``annerTaskDetai``l`` -P``l``annerTaskId <String> -BodyParameter <IMicrosoftGraphP``l``annerTaskDetai``l``s>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
- [-Checklist <Hashtable>] [-Description <String>] [-Id <String>] [-PreviewType <String>]
- [-References <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgP``l``annerTaskDetai``l`` -InputObject <IP``l``annerIdentity> [-Additiona``l``Properties <Hashtab``l``e>]
+ [-Check``l``ist <Hashtab``l``e>] [-Description <String>] [-Id <String>] [-PreviewType <String>]
+ [-References <Hashtab``l``e>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerTaskDetails>
+Update-MgP``l``annerTaskDetai``l`` -InputObject <IP``l``annerIdentity> -BodyParameter <IMicrosoftGraphP``l``annerTaskDetai``l``s>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property details in planner
+Update the navigation property detai``l``s in p``l``anner
 
-## EXAMPLES
+## EXAMP``l``ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona``l``Properties
+Additiona``l`` Parameters
 
-```yaml
-Type: Hashtable
+```yam``l``
+Type: Hashtab``l``e
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -BodyParameter
-plannerTaskDetails
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+p``l``annerTaskDetai``l``s
+To construct, p``l``ease use Get-He``l``p -On``l``ine and see NOTES section for BODYPARAMETER properties and create a hash tab``l``e.
 
-```yaml
-Type: IMicrosoftGraphPlannerTaskDetails
+```yam``l``
+Type: IMicrosoftGraphP``l``annerTaskDetai``l``s
 Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: True (ByVa``l``ue)
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -Checklist
-plannerChecklistItems
+### -Check``l``ist
+p``l``annerCheck``l``istItems
 
-```yaml
-Type: Hashtable
+```yam``l``
+Type: Hashtab``l``e
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Description
 Description of the task.
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Id
 .
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p``l``ease use Get-He``l``p -On``l``ine and see NOTES section for INPUTOBJECT properties and create a hash tab``l``e.
 
-```yaml
-Type: IPlannerIdentity
+```yam``l``
+Type: IP``l``annerIdentity
 Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: True (ByVa``l``ue)
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -PassThru
 Returns true when the command succeeds
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Parameter Sets: (A``l````l``)
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -PlannerTaskId
-key: id of plannerTask
+### -P``l``annerTaskId
+key: id of p``l``annerTask
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -PreviewType
-plannerPreviewType
+p``l``annerPreviewType
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -References
-plannerExternalReferences
+p``l``annerExterna``l``References
 
-```yaml
-Type: Hashtable
+```yam``l``
+Type: Hashtab``l``e
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd``l``et.
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A``l````l``)
+A``l``iases: cf
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou``l``d happen if the cmd``l``et runs.
+The cmd``l``et is not run.
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A``l````l``)
+A``l``iases: wi
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd``l``et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab``l``e, -InformationAction, -InformationVariab``l``e, -OutVariab``l``e, -OutBuffer, -Pipe``l``ineVariab``l``e, -Verbose, -WarningAction, and -WarningVariab``l``e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw``l``ink/?``l``inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IMicrosoftGraphP``l``annerTaskDetai``l``s
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IP``l``annerIdentity
 ## OUTPUTS
 
-### System.Boolean
+### System.Boo``l``ean
 ## NOTES
 
-ALIASES
+A``l``IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP``l``EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be``l``ow, construct a hash tab``l``e containing the appropriate properties. For information on hash tab``l``es, run Get-He``l``p about_Hash_Tab``l``es.
 
 
-BODYPARAMETER <IMicrosoftGraphPlannerTaskDetails>: plannerTaskDetails
+BODYPARAMETER <IMicrosoftGraphP``l``annerTaskDetai``l``s>: p``l``annerTaskDetai``l``s
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
+  - `[Check``l``ist <IMicrosoftGraphP``l``annerCheck``l``istItems>]`: p``l``annerCheck``l``istItems
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description of the task.
-  - `[PreviewType <String>]`: plannerPreviewType
-  - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
+  - `[PreviewType <String>]`: p``l``annerPreviewType
+  - `[References <IMicrosoftGraphP``l``annerExterna``l``References>]`: p``l``annerExterna``l``References
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+INPUTOBJECT <IP``l``annerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
-  - `[PlannerBucketId <String>]`: key: id of plannerBucket
-  - `[PlannerDeltaId <String>]`: key: id of plannerDelta
-  - `[PlannerPlanId <String>]`: key: id of plannerPlan
-  - `[PlannerRosterId <String>]`: key: id of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: key: id of plannerRosterMember
-  - `[PlannerTaskId <String>]`: key: id of plannerTask
+  - `[P``l``annerBucketId <String>]`: key: id of p``l``annerBucket
+  - `[P``l``annerDe``l``taId <String>]`: key: id of p``l``annerDe``l``ta
+  - `[P``l``annerP``l``anId <String>]`: key: id of p``l``annerP``l``an
+  - `[P``l``annerRosterId <String>]`: key: id of p``l``annerRoster
+  - `[P``l``annerRosterMemberId <String>]`: key: id of p``l``annerRosterMember
+  - `[P``l``annerTaskId <String>]`: key: id of p``l``annerTask
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## RE``l``ATED ``l``INKS
