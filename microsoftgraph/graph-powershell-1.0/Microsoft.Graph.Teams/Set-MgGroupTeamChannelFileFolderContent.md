@@ -1,214 +1,214 @@
-﻿---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/set-mggroupteamchannelfilefoldercontent
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.T`e`ams-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.T`e`ams
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.t`e`ams/s`e`t-mggroupt`e`amchann`e`lfil`e`fold`e`rcont`e`nt
+sch`e`ma: 2.0.0
 ---
 
-# Set-MgGroupTeamChannelFileFolderContent
+# S`e`t-MgGroupT`e`amChann`e`lFil`e`Fold`e`rCont`e`nt
 
 ## SYNOPSIS
-Update content for the navigation property filesFolder in groups
+Updat`e` cont`e`nt for th`e` navigation prop`e`rty fil`e`sFold`e`r in groups
 
 ## SYNTAX
 
-### Set1 (Default)
+### S`e`t1 (D`e`fault)
 ```
-Set-MgGroupTeamChannelFileFolderContent -ChannelId <String> -GroupId <String> [-BodyParameter <Stream>]
- -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentity1
-```
-Set-MgGroupTeamChannelFileFolderContent -InputObject <ITeamsIdentity> [-BodyParameter <Stream>]
- -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+S`e`t-MgGroupT`e`amChann`e`lFil`e`Fold`e`rCont`e`nt -Chann`e`lId <String> -GroupId <String> [-BodyParam`e`t`e`r <Str`e`am>]
+ -InFil`e` <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Update content for the navigation property filesFolder in groups
+### S`e`tViaId`e`ntity1
+```
+S`e`t-MgGroupT`e`amChann`e`lFil`e`Fold`e`rCont`e`nt -InputObj`e`ct <IT`e`amsId`e`ntity> [-BodyParam`e`t`e`r <Str`e`am>]
+ -InFil`e` <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+Updat`e` cont`e`nt for th`e` navigation prop`e`rty fil`e`sFold`e`r in groups
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -BodyParameter
+## PARAM`e`T`e`RS
+
+### -BodyParam`e`t`e`r
 .
 
 ```yaml
-Type: Stream
-Parameter Sets: (All)
-Aliases:
+Typ`e`: Str`e`am
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ChannelId
-key: id of channel
+### -Chann`e`lId
+k`e`y: id of chann`e`l
 
 ```yaml
-Type: String
-Parameter Sets: Set1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: S`e`t1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -GroupId
-key: id of group
+k`e`y: id of group
 
 ```yaml
-Type: String
-Parameter Sets: Set1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: S`e`t1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InFile
-The path to the file to upload.
-This should include a path and file name.
-If you omit the path, the current location will be used.
+### -InFil`e`
+Th`e` path to th`e` fil`e` to upload.
+This should includ`e` a path and fil`e` nam`e`.
+If you omit th`e` path, th`e` curr`e`nt location will b`e` us`e`d.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: SetViaIdentity1
-Aliases:
+Typ`e`: IT`e`amsId`e`ntity
+Param`e`t`e`r S`e`ts: S`e`tViaId`e`ntity1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R`e`turns tru`e` wh`e`n th`e` command succ`e``e`ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-### System.IO.Stream
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IT`e`amsId`e`ntity
+### Syst`e`m.IO.Str`e`am
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`e`m.Bool`e`an
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
-  - `[ChannelId <String>]`: key: id of channel
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[ConversationMemberId <String>]`: key: id of conversationMember
-  - `[DeletedTeamId <String>]`: key: id of deletedTeam
-  - `[GroupId <String>]`: key: id of group
-  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: key: id of openShift
-  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: key: id of shift
-  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
-  - `[TeamId <String>]`: key: id of team
-  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
-  - `[TeamsAppId <String>]`: key: id of teamsApp
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: key: id of teamsTab
-  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: key: id of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TimeCardId <String>]`: key: id of timeCard
-  - `[TimeOffId <String>]`: key: id of timeOff
-  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
-  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
-  - `[UserId <String>]`: key: id of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
+INPUTOBJ`e`CT <IT`e`amsId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[Associat`e`dT`e`amInfoId <String>]`: k`e`y: id of associat`e`dT`e`amInfo
+  - `[Chann`e`lId <String>]`: k`e`y: id of chann`e`l
+  - `[ChatId <String>]`: k`e`y: id of chat
+  - `[ChatM`e`ssag`e`Host`e`dCont`e`ntId <String>]`: k`e`y: id of chatM`e`ssag`e`Host`e`dCont`e`nt
+  - `[ChatM`e`ssag`e`Id <String>]`: k`e`y: id of chatM`e`ssag`e`
+  - `[ChatM`e`ssag`e`Id1 <String>]`: k`e`y: id of chatM`e`ssag`e`
+  - `[Conv`e`rsationM`e`mb`e`rId <String>]`: k`e`y: id of conv`e`rsationM`e`mb`e`r
+  - `[D`e`l`e`t`e`dT`e`amId <String>]`: k`e`y: id of d`e`l`e`t`e`dT`e`am
+  - `[GroupId <String>]`: k`e`y: id of group
+  - `[Off`e`rShiftR`e`qu`e`stId <String>]`: k`e`y: id of off`e`rShiftR`e`qu`e`st
+  - `[Op`e`nShiftChang`e`R`e`qu`e`stId <String>]`: k`e`y: id of op`e`nShiftChang`e`R`e`qu`e`st
+  - `[Op`e`nShiftId <String>]`: k`e`y: id of op`e`nShift
+  - `[Pinn`e`dChatM`e`ssag`e`InfoId <String>]`: k`e`y: id of pinn`e`dChatM`e`ssag`e`Info
+  - `[R`e`sourc`e`Sp`e`cificP`e`rmissionGrantId <String>]`: k`e`y: id of r`e`sourc`e`Sp`e`cificP`e`rmissionGrant
+  - `[Sch`e`dulingGroupId <String>]`: k`e`y: id of sch`e`dulingGroup
+  - `[Shar`e`dWithChann`e`lT`e`amInfoId <String>]`: k`e`y: id of shar`e`dWithChann`e`lT`e`amInfo
+  - `[ShiftId <String>]`: k`e`y: id of shift
+  - `[SwapShiftsChang`e`R`e`qu`e`stId <String>]`: k`e`y: id of swapShiftsChang`e`R`e`qu`e`st
+  - `[T`e`amId <String>]`: k`e`y: id of t`e`am
+  - `[T`e`amsAppD`e`finitionId <String>]`: k`e`y: id of t`e`amsAppD`e`finition
+  - `[T`e`amsAppId <String>]`: k`e`y: id of t`e`amsApp
+  - `[T`e`amsAppInstallationId <String>]`: k`e`y: id of t`e`amsAppInstallation
+  - `[T`e`amsAsyncOp`e`rationId <String>]`: k`e`y: id of t`e`amsAsyncOp`e`ration
+  - `[T`e`amsTabId <String>]`: k`e`y: id of t`e`amsTab
+  - `[T`e`amworkD`e`vic`e`Id <String>]`: k`e`y: id of t`e`amworkD`e`vic`e`
+  - `[T`e`amworkD`e`vic`e`Op`e`rationId <String>]`: k`e`y: id of t`e`amworkD`e`vic`e`Op`e`ration
+  - `[T`e`amworkTagId <String>]`: k`e`y: id of t`e`amworkTag
+  - `[T`e`amworkTagM`e`mb`e`rId <String>]`: k`e`y: id of t`e`amworkTagM`e`mb`e`r
+  - `[Tim`e`CardId <String>]`: k`e`y: id of tim`e`Card
+  - `[Tim`e`OffId <String>]`: k`e`y: id of tim`e`Off
+  - `[Tim`e`OffR`e`asonId <String>]`: k`e`y: id of tim`e`OffR`e`ason
+  - `[Tim`e`OffR`e`qu`e`stId <String>]`: k`e`y: id of tim`e`OffR`e`qu`e`st
+  - `[Us`e`rId <String>]`: k`e`y: id of us`e`r
+  - `[Us`e`rScop`e`T`e`amsAppInstallationId <String>]`: k`e`y: id of us`e`rScop`e`T`e`amsAppInstallation
+  - `[Workforc`e`Int`e`grationId <String>]`: k`e`y: id of workforc`e`Int`e`gration
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
