@@ -1,203 +1,203 @@
-﻿---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
-Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfoldercontactsinglevalueextendedproperty
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.P`e`rsonalContacts-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.P`e`rsonalContacts
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.p`e`rsonalcontacts/r`e`mov`e`-mgus`e`rcontactfold`e`rcontactsingl`e`valu`e``e`xt`e`nd`e`dprop`e`rty
+sch`e`ma: 2.0.0
 ---
 
-# Remove-MgUserContactFolderContactSingleValueExtendedProperty
+# R`e`mov`e`-MgUs`e`rContactFold`e`rContactSingl`e`Valu`e``e`xt`e`nd`e`dProp`e`rty
 
 ## SYNOPSIS
-The collection of single-value extended properties defined for the contact.
-Read-only.
-Nullable.
+Th`e` coll`e`ction of singl`e`-valu`e` `e`xt`e`nd`e`d prop`e`rti`e`s d`e`fin`e`d for th`e` contact.
+R`e`ad-only.
+Nullabl`e`.
 
 ## SYNTAX
 
-### Delete (Default)
+### D`e`l`e`t`e` (D`e`fault)
 ```
-Remove-MgUserContactFolderContactSingleValueExtendedProperty -ContactFolderId <String> -ContactId <String>
- -SingleValueLegacyExtendedPropertyId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity
-```
-Remove-MgUserContactFolderContactSingleValueExtendedProperty -InputObject <IPersonalContactsIdentity>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+R`e`mov`e`-MgUs`e`rContactFold`e`rContactSingl`e`Valu`e``e`xt`e`nd`e`dProp`e`rty -ContactFold`e`rId <String> -ContactId <String>
+ -Singl`e`Valu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rtyId <String> -Us`e`rId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-The collection of single-value extended properties defined for the contact.
-Read-only.
-Nullable.
+### D`e`l`e`t`e`ViaId`e`ntity
+```
+R`e`mov`e`-MgUs`e`rContactFold`e`rContactSingl`e`Valu`e``e`xt`e`nd`e`dProp`e`rty -InputObj`e`ct <IP`e`rsonalContactsId`e`ntity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+Th`e` coll`e`ction of singl`e`-valu`e` `e`xt`e`nd`e`d prop`e`rti`e`s d`e`fin`e`d for th`e` contact.
+R`e`ad-only.
+Nullabl`e`.
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -ContactFolderId
-key: id of contactFolder
+## PARAM`e`T`e`RS
+
+### -ContactFold`e`rId
+k`e`y: id of contactFold`e`r
 
 ```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: D`e`l`e`t`e`
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -ContactId
-key: id of contact
+k`e`y: id of contact
 
 ```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: D`e`l`e`t`e`
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -IfMatch
-ETag
+`e`Tag
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IPersonalContactsIdentity
-Parameter Sets: DeleteViaIdentity
-Aliases:
+Typ`e`: IP`e`rsonalContactsId`e`ntity
+Param`e`t`e`r S`e`ts: D`e`l`e`t`e`ViaId`e`ntity
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R`e`turns tru`e` wh`e`n th`e` command succ`e``e`ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -SingleValueLegacyExtendedPropertyId
-key: id of singleValueLegacyExtendedProperty
+### -Singl`e`Valu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rtyId
+k`e`y: id of singl`e`Valu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rty
 
 ```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: D`e`l`e`t`e`
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -UserId
-key: id of user
+### -Us`e`rId
+k`e`y: id of us`e`r
 
 ```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: D`e`l`e`t`e`
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IP`e`rsonalContactsId`e`ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`e`m.Bool`e`an
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
-  - `[ContactFolderId <String>]`: key: id of contactFolder
-  - `[ContactFolderId1 <String>]`: key: id of contactFolder
-  - `[ContactId <String>]`: key: id of contact
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[UserId <String>]`: key: id of user
+INPUTOBJ`e`CT <IP`e`rsonalContactsId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[ContactFold`e`rId <String>]`: k`e`y: id of contactFold`e`r
+  - `[ContactFold`e`rId1 <String>]`: k`e`y: id of contactFold`e`r
+  - `[ContactId <String>]`: k`e`y: id of contact
+  - `[`e`xt`e`nsionId <String>]`: k`e`y: id of `e`xt`e`nsion
+  - `[MultiValu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rtyId <String>]`: k`e`y: id of multiValu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rty
+  - `[Singl`e`Valu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rtyId <String>]`: k`e`y: id of singl`e`Valu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rty
+  - `[Us`e`rId <String>]`: k`e`y: id of us`e`r
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
