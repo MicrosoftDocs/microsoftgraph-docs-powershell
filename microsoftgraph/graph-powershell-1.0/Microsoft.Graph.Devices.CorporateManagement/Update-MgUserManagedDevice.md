@@ -1,1444 +1,1444 @@
-﻿---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
-Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevice
-schema: 2.0.0
+---
+````````e````````xt````````e````````rnal h````````e````````lp fil````````e````````: Microsoft.Graph.D````````e````````vic````````e````````s.Corporat````````e````````Manag````````e````````m````````e````````nt-h````````e````````lp.xml
+Modul````````e```````` Nam````````e````````: Microsoft.Graph.D````````e````````vic````````e````````s.Corporat````````e````````Manag````````e````````m````````e````````nt
+onlin````````e```````` v````````e````````rsion: https://docs.microsoft.com/````````e````````n-us/pow````````e````````rsh````````e````````ll/modul````````e````````/microsoft.graph.d````````e````````vic````````e````````s.corporat````````e````````manag````````e````````m````````e````````nt/updat````````e````````-mgus````````e````````rmanag````````e````````dd````````e````````vic````````e````````
+sch````````e````````ma: 2.0.0
 ---
 
-# Update-MgUserManagedDevice
+# Updat````````e````````-MgUs````````e````````rManag````````e````````dD````````e````````vic````````e````````
 
 ## SYNOPSIS
-Update the navigation property managedDevices in users
+Updat````````e```````` th````````e```````` navigation prop````````e````````rty manag````````e````````dD````````e````````vic````````e````````s in us````````e````````rs
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Updat````````e````````````````e````````xpand````````e````````d1 (D````````e````````fault)
 ```
-Update-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-ActivationLockBypassCode <String>]
- [-AdditionalProperties <Hashtable>] [-AndroidSecurityPatchLevel <String>] [-AzureAdDeviceId <String>]
- [-AzureAdRegistered] [-ComplianceGracePeriodExpirationDateTime <DateTime>]
- [-ComplianceState <ComplianceState>]
- [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]
- [-DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]
- [-DeviceCategory <IMicrosoftGraphDeviceCategory2>] [-DeviceCategoryDisplayName <String>]
- [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]
- [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]
- [-DeviceEnrollmentType <DeviceEnrollmentType>]
- [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
- [-DeviceRegistrationState <DeviceRegistrationState>] [-EasActivated] [-EasActivationDateTime <DateTime>]
- [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>] [-EthernetMacAddress <String>]
- [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
- [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
- [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Iccid <String>]
- [-Id <String>] [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>]
- [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>]
- [-ManagedDeviceOwnerType <ManagedDeviceOwnerType>] [-ManagementAgent <ManagementAgentType>]
- [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>] [-OSVersion <String>]
- [-OperatingSystem <String>] [-PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState>]
- [-PhoneNumber <String>] [-PhysicalMemoryInBytes <Int64>] [-RemoteAssistanceSessionErrorDetails <String>]
- [-RemoteAssistanceSessionUrl <String>] [-SerialNumber <String>] [-SubscriberCarrier <String>]
- [-TotalStorageSpaceInBytes <Int64>] [-Udid <String>] [-UserDisplayName <String>] [-UserId1 <String>]
- [-UserPrincipalName <String>] [-WiFiMacAddress <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphManagedDevice1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat````````e````````-MgUs````````e````````rManag````````e````````dD````````e````````vic````````e```````` -Manag````````e````````dD````````e````````vic````````e````````Id <String> -Us````````e````````rId <String> [-ActivationLockBypassCod````````e```````` <String>]
+ [-AdditionalProp````````e````````rti````````e````````s <Hashtabl````````e````````>] [-AndroidS````````e````````curityPatchL````````e````````v````````e````````l <String>] [-Azur````````e````````AdD````````e````````vic````````e````````Id <String>]
+ [-Azur````````e````````AdR````````e````````gist````````e````````r````````e````````d] [-Complianc````````e````````Grac````````e````````P````````e````````riod````````e````````xpirationDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````>]
+ [-Complianc````````e````````Stat````````e```````` <Complianc````````e````````Stat````````e````````>]
+ [-ConfigurationManag````````e````````rCli````````e````````nt````````e````````nabl````````e````````dF````````e````````atur````````e````````s <IMicrosoftGraphConfigurationManag````````e````````rCli````````e````````nt````````e````````nabl````````e````````dF````````e````````atur````````e````````s1>]
+ [-D````````e````````vic````````e````````ActionR````````e````````sults <IMicrosoftGraphD````````e````````vic````````e````````ActionR````````e````````sult1[]>]
+ [-D````````e````````vic````````e````````Cat````````e````````gory <IMicrosoftGraphD````````e````````vic````````e````````Cat````````e````````gory2>] [-D````````e````````vic````````e````````Cat````````e````````goryDisplayNam````````e```````` <String>]
+ [-D````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````s <IMicrosoftGraphD````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````1[]>]
+ [-D````````e````````vic````````e````````ConfigurationStat````````e````````s <IMicrosoftGraphD````````e````````vic````````e````````ConfigurationStat````````e````````1[]>]
+ [-D````````e````````vic````````e````````````````e````````nrollm````````e````````ntTyp````````e```````` <D````````e````````vic````````e````````````````e````````nrollm````````e````````ntTyp````````e````````>]
+ [-D````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e```````` <IMicrosoftGraphD````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e````````>] [-D````````e````````vic````````e````````Nam````````e```````` <String>]
+ [-D````````e````````vic````````e````````R````````e````````gistrationStat````````e```````` <D````````e````````vic````````e````````R````````e````````gistrationStat````````e````````>] [-````````e````````asActivat````````e````````d] [-````````e````````asActivationDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````>]
+ [-````````e````````asD````````e````````vic````````e````````Id <String>] [-````````e````````mailAddr````````e````````ss <String>] [-````````e````````nroll````````e````````dDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````>] [-````````e````````th````````e````````rn````````e````````tMacAddr````````e````````ss <String>]
+ [-````````e````````xchang````````e````````Acc````````e````````ssStat````````e```````` <D````````e````````vic````````e````````Manag````````e````````m````````e````````nt````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````>]
+ [-````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````R````````e````````ason <D````````e````````vic````````e````````Manag````````e````````m````````e````````nt````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````R````````e````````ason>]
+ [-````````e````````xchang````````e````````LastSucc````````e````````ssfulSyncDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````>] [-Fr````````e````````````````e````````Storag````````e````````Spac````````e````````InByt````````e````````s <Int64>] [-Iccid <String>]
+ [-Id <String>] [-Im````````e````````i <String>] [-Is````````e````````ncrypt````````e````````d] [-IsSup````````e````````rvis````````e````````d] [-JailBrok````````e````````n <String>]
+ [-LastSyncDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````>] [-Manag````````e````````dD````````e````````vic````````e````````Nam````````e```````` <String>]
+ [-Manag````````e````````dD````````e````````vic````````e````````Own````````e````````rTyp````````e```````` <Manag````````e````````dD````````e````````vic````````e````````Own````````e````````rTyp````````e````````>] [-Manag````````e````````m````````e````````ntAg````````e````````nt <Manag````````e````````m````````e````````ntAg````````e````````ntTyp````````e````````>]
+ [-Manufactur````````e````````r <String>] [-M````````e````````id <String>] [-Mod````````e````````l <String>] [-Not````````e````````s <String>] [-OSV````````e````````rsion <String>]
+ [-Op````````e````````ratingSyst````````e````````m <String>] [-Partn````````e````````rR````````e````````port````````e````````dThr````````e````````atStat````````e```````` <Manag````````e````````dD````````e````````vic````````e````````Partn````````e````````rR````````e````````port````````e````````dH````````e````````althStat````````e````````>]
+ [-Phon````````e````````Numb````````e````````r <String>] [-PhysicalM````````e````````moryInByt````````e````````s <Int64>] [-R````````e````````mot````````e````````Assistanc````````e````````S````````e````````ssion````````e````````rrorD````````e````````tails <String>]
+ [-R````````e````````mot````````e````````Assistanc````````e````````S````````e````````ssionUrl <String>] [-S````````e````````rialNumb````````e````````r <String>] [-Subscrib````````e````````rCarri````````e````````r <String>]
+ [-TotalStorag````````e````````Spac````````e````````InByt````````e````````s <Int64>] [-Udid <String>] [-Us````````e````````rDisplayNam````````e```````` <String>] [-Us````````e````````rId1 <String>]
+ [-Us````````e````````rPrincipalNam````````e```````` <String>] [-WiFiMacAddr````````e````````ss <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam````````e````````t````````e````````rs>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Updat````````e````````1
 ```
-Update-MgUserManagedDevice [-UserId <String>] -InputObject <IDevicesCorporateManagementIdentity>
- [-ActivationLockBypassCode <String>] [-AdditionalProperties <Hashtable>] [-AndroidSecurityPatchLevel <String>]
- [-AzureAdDeviceId <String>] [-AzureAdRegistered] [-ComplianceGracePeriodExpirationDateTime <DateTime>]
- [-ComplianceState <ComplianceState>]
- [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]
- [-DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]
- [-DeviceCategory <IMicrosoftGraphDeviceCategory2>] [-DeviceCategoryDisplayName <String>]
- [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]
- [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]
- [-DeviceEnrollmentType <DeviceEnrollmentType>]
- [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
- [-DeviceRegistrationState <DeviceRegistrationState>] [-EasActivated] [-EasActivationDateTime <DateTime>]
- [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>] [-EthernetMacAddress <String>]
- [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
- [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
- [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Iccid <String>]
- [-Id <String>] [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>]
- [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>]
- [-ManagedDeviceOwnerType <ManagedDeviceOwnerType>] [-ManagementAgent <ManagementAgentType>]
- [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>] [-OSVersion <String>]
- [-OperatingSystem <String>] [-PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState>]
- [-PhoneNumber <String>] [-PhysicalMemoryInBytes <Int64>] [-RemoteAssistanceSessionErrorDetails <String>]
- [-RemoteAssistanceSessionUrl <String>] [-SerialNumber <String>] [-SubscriberCarrier <String>]
- [-TotalStorageSpaceInBytes <Int64>] [-Udid <String>] [-UserDisplayName <String>] [-UserPrincipalName <String>]
- [-WiFiMacAddress <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat````````e````````-MgUs````````e````````rManag````````e````````dD````````e````````vic````````e```````` -Manag````````e````````dD````````e````````vic````````e````````Id <String> -Us````````e````````rId <String>
+ -BodyParam````````e````````t````````e````````r <IMicrosoftGraphManag````````e````````dD````````e````````vic````````e````````1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam````````e````````t````````e````````rs>]
 ```
 
-### UpdateViaIdentity1
+### Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
 ```
-Update-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDevice1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat````````e````````-MgUs````````e````````rManag````````e````````dD````````e````````vic````````e```````` [-Us````````e````````rId <String>] -InputObj````````e````````ct <ID````````e````````vic````````e````````sCorporat````````e````````Manag````````e````````m````````e````````ntId````````e````````ntity>
+ [-ActivationLockBypassCod````````e```````` <String>] [-AdditionalProp````````e````````rti````````e````````s <Hashtabl````````e````````>] [-AndroidS````````e````````curityPatchL````````e````````v````````e````````l <String>]
+ [-Azur````````e````````AdD````````e````````vic````````e````````Id <String>] [-Azur````````e````````AdR````````e````````gist````````e````````r````````e````````d] [-Complianc````````e````````Grac````````e````````P````````e````````riod````````e````````xpirationDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````>]
+ [-Complianc````````e````````Stat````````e```````` <Complianc````````e````````Stat````````e````````>]
+ [-ConfigurationManag````````e````````rCli````````e````````nt````````e````````nabl````````e````````dF````````e````````atur````````e````````s <IMicrosoftGraphConfigurationManag````````e````````rCli````````e````````nt````````e````````nabl````````e````````dF````````e````````atur````````e````````s1>]
+ [-D````````e````````vic````````e````````ActionR````````e````````sults <IMicrosoftGraphD````````e````````vic````````e````````ActionR````````e````````sult1[]>]
+ [-D````````e````````vic````````e````````Cat````````e````````gory <IMicrosoftGraphD````````e````````vic````````e````````Cat````````e````````gory2>] [-D````````e````````vic````````e````````Cat````````e````````goryDisplayNam````````e```````` <String>]
+ [-D````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````s <IMicrosoftGraphD````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````1[]>]
+ [-D````````e````````vic````````e````````ConfigurationStat````````e````````s <IMicrosoftGraphD````````e````````vic````````e````````ConfigurationStat````````e````````1[]>]
+ [-D````````e````````vic````````e````````````````e````````nrollm````````e````````ntTyp````````e```````` <D````````e````````vic````````e````````````````e````````nrollm````````e````````ntTyp````````e````````>]
+ [-D````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e```````` <IMicrosoftGraphD````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e````````>] [-D````````e````````vic````````e````````Nam````````e```````` <String>]
+ [-D````````e````````vic````````e````````R````````e````````gistrationStat````````e```````` <D````````e````````vic````````e````````R````````e````````gistrationStat````````e````````>] [-````````e````````asActivat````````e````````d] [-````````e````````asActivationDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````>]
+ [-````````e````````asD````````e````````vic````````e````````Id <String>] [-````````e````````mailAddr````````e````````ss <String>] [-````````e````````nroll````````e````````dDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````>] [-````````e````````th````````e````````rn````````e````````tMacAddr````````e````````ss <String>]
+ [-````````e````````xchang````````e````````Acc````````e````````ssStat````````e```````` <D````````e````````vic````````e````````Manag````````e````````m````````e````````nt````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````>]
+ [-````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````R````````e````````ason <D````````e````````vic````````e````````Manag````````e````````m````````e````````nt````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````R````````e````````ason>]
+ [-````````e````````xchang````````e````````LastSucc````````e````````ssfulSyncDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````>] [-Fr````````e````````````````e````````Storag````````e````````Spac````````e````````InByt````````e````````s <Int64>] [-Iccid <String>]
+ [-Id <String>] [-Im````````e````````i <String>] [-Is````````e````````ncrypt````````e````````d] [-IsSup````````e````````rvis````````e````````d] [-JailBrok````````e````````n <String>]
+ [-LastSyncDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````>] [-Manag````````e````````dD````````e````````vic````````e````````Nam````````e```````` <String>]
+ [-Manag````````e````````dD````````e````````vic````````e````````Own````````e````````rTyp````````e```````` <Manag````````e````````dD````````e````````vic````````e````````Own````````e````````rTyp````````e````````>] [-Manag````````e````````m````````e````````ntAg````````e````````nt <Manag````````e````````m````````e````````ntAg````````e````````ntTyp````````e````````>]
+ [-Manufactur````````e````````r <String>] [-M````````e````````id <String>] [-Mod````````e````````l <String>] [-Not````````e````````s <String>] [-OSV````````e````````rsion <String>]
+ [-Op````````e````````ratingSyst````````e````````m <String>] [-Partn````````e````````rR````````e````````port````````e````````dThr````````e````````atStat````````e```````` <Manag````````e````````dD````````e````````vic````````e````````Partn````````e````````rR````````e````````port````````e````````dH````````e````````althStat````````e````````>]
+ [-Phon````````e````````Numb````````e````````r <String>] [-PhysicalM````````e````````moryInByt````````e````````s <Int64>] [-R````````e````````mot````````e````````Assistanc````````e````````S````````e````````ssion````````e````````rrorD````````e````````tails <String>]
+ [-R````````e````````mot````````e````````Assistanc````````e````````S````````e````````ssionUrl <String>] [-S````````e````````rialNumb````````e````````r <String>] [-Subscrib````````e````````rCarri````````e````````r <String>]
+ [-TotalStorag````````e````````Spac````````e````````InByt````````e````````s <Int64>] [-Udid <String>] [-Us````````e````````rDisplayNam````````e```````` <String>] [-Us````````e````````rPrincipalNam````````e```````` <String>]
+ [-WiFiMacAddr````````e````````ss <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam````````e````````t````````e````````rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property managedDevices in users
+### Updat````````e````````ViaId````````e````````ntity1
+```
+Updat````````e````````-MgUs````````e````````rManag````````e````````dD````````e````````vic````````e```````` -InputObj````````e````````ct <ID````````e````````vic````````e````````sCorporat````````e````````Manag````````e````````m````````e````````ntId````````e````````ntity>
+ -BodyParam````````e````````t````````e````````r <IMicrosoftGraphManag````````e````````dD````````e````````vic````````e````````1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam````````e````````t````````e````````rs>]
+```
 
-## EXAMPLES
+## D````````e````````SCRIPTION
+Updat````````e```````` th````````e```````` navigation prop````````e````````rty manag````````e````````dD````````e````````vic````````e````````s in us````````e````````rs
 
-## PARAMETERS
+## ````````e````````XAMPL````````e````````S
 
-### -ActivationLockBypassCode
-Code that allows the Activation Lock on a device to be bypassed.
-This property is read-only.
+## PARAM````````e````````T````````e````````RS
+
+### -ActivationLockBypassCod````````e````````
+Cod````````e```````` that allows th````````e```````` Activation Lock on a d````````e````````vic````````e```````` to b````````e```````` bypass````````e````````d.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalProp````````e````````rti````````e````````s
+Additional Param````````e````````t````````e````````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Hashtabl````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -AndroidSecurityPatchLevel
-Android security patch level.
-This property is read-only.
+### -AndroidS````````e````````curityPatchL````````e````````v````````e````````l
+Android s````````e````````curity patch l````````e````````v````````e````````l.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -AzureAdDeviceId
-The unique identifier for the Azure Active Directory device.
-Read only.
-This property is read-only.
+### -Azur````````e````````AdD````````e````````vic````````e````````Id
+Th````````e```````` uniqu````````e```````` id````````e````````ntifi````````e````````r for th````````e```````` Azur````````e```````` Activ````````e```````` Dir````````e````````ctory d````````e````````vic````````e````````.
+R````````e````````ad only.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -AzureAdRegistered
-Whether the device is Azure Active Directory registered.
-This property is read-only.
+### -Azur````````e````````AdR````````e````````gist````````e````````r````````e````````d
+Wh````````e````````th````````e````````r th````````e```````` d````````e````````vic````````e```````` is Azur````````e```````` Activ````````e```````` Dir````````e````````ctory r````````e````````gist````````e````````r````````e````````d.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: SwitchParam````````e````````t````````e````````r
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -BodyParameter
-Devices that are managed or pre-enrolled through Intune
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam````````e````````t````````e````````r
+D````````e````````vic````````e````````s that ar````````e```````` manag````````e````````d or pr````````e````````-````````e````````nroll````````e````````d through Intun````````e````````
+To construct, pl````````e````````as````````e```````` us````````e```````` G````````e````````t-H````````e````````lp -Onlin````````e```````` and s````````e````````````````e```````` NOT````````e````````S s````````e````````ction for BODYPARAM````````e````````T````````e````````R prop````````e````````rti````````e````````s and cr````````e````````at````````e```````` a hash tabl````````e````````.
 
 ```yaml
-Type: IMicrosoftGraphManagedDevice1
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Typ````````e````````: IMicrosoftGraphManag````````e````````dD````````e````````vic````````e````````1
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````1, Updat````````e````````ViaId````````e````````ntity1
+Alias````````e````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Tru````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Tru````````e```````` (ByValu````````e````````)
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -ComplianceGracePeriodExpirationDateTime
-The DateTime when device compliance grace period expires.
-This property is read-only.
+### -Complianc````````e````````Grac````````e````````P````````e````````riod````````e````````xpirationDat````````e````````Tim````````e````````
+Th````````e```````` Dat````````e````````Tim````````e```````` wh````````e````````n d````````e````````vic````````e```````` complianc````````e```````` grac````````e```````` p````````e````````riod ````````e````````xpir````````e````````s.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Dat````````e````````Tim````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -ComplianceState
-Compliance state.
+### -Complianc````````e````````Stat````````e````````
+Complianc````````e```````` stat````````e````````.
 
 ```yaml
-Type: ComplianceState
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Complianc````````e````````Stat````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -ConfigurationManagerClientEnabledFeatures
-configuration Manager client enabled features
-To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIONMANAGERCLIENTENABLEDFEATURES properties and create a hash table.
+### -ConfigurationManag````````e````````rCli````````e````````nt````````e````````nabl````````e````````dF````````e````````atur````````e````````s
+configuration Manag````````e````````r cli````````e````````nt ````````e````````nabl````````e````````d f````````e````````atur````````e````````s
+To construct, pl````````e````````as````````e```````` us````````e```````` G````````e````````t-H````````e````````lp -Onlin````````e```````` and s````````e````````````````e```````` NOT````````e````````S s````````e````````ction for CONFIGURATIONMANAG````````e````````RCLI````````e````````NT````````e````````NABL````````e````````DF````````e````````ATUR````````e````````S prop````````e````````rti````````e````````s and cr````````e````````at````````e```````` a hash tabl````````e````````.
 
 ```yaml
-Type: IMicrosoftGraphConfigurationManagerClientEnabledFeatures1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: IMicrosoftGraphConfigurationManag````````e````````rCli````````e````````nt````````e````````nabl````````e````````dF````````e````````atur````````e````````s1
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -DeviceActionResults
-List of ComplexType deviceActionResult objects.
-This property is read-only.
-To construct, please use Get-Help -Online and see NOTES section for DEVICEACTIONRESULTS properties and create a hash table.
+### -D````````e````````vic````````e````````ActionR````````e````````sults
+List of Compl````````e````````xTyp````````e```````` d````````e````````vic````````e````````ActionR````````e````````sult obj````````e````````cts.
+This prop````````e````````rty is r````````e````````ad-only.
+To construct, pl````````e````````as````````e```````` us````````e```````` G````````e````````t-H````````e````````lp -Onlin````````e```````` and s````````e````````````````e```````` NOT````````e````````S s````````e````````ction for D````````e````````VIC````````e````````ACTIONR````````e````````SULTS prop````````e````````rti````````e````````s and cr````````e````````at````````e```````` a hash tabl````````e````````.
 
 ```yaml
-Type: IMicrosoftGraphDeviceActionResult1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: IMicrosoftGraphD````````e````````vic````````e````````ActionR````````e````````sult1[]
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -DeviceCategory
-Device categories provides a way to organize your devices.
-Using device categories, company administrators can define their own categories that make sense to their company.
-These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment.
-You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
-To construct, please use Get-Help -Online and see NOTES section for DEVICECATEGORY properties and create a hash table.
+### -D````````e````````vic````````e````````Cat````````e````````gory
+D````````e````````vic````````e```````` cat````````e````````gori````````e````````s provid````````e````````s a way to organiz````````e```````` your d````````e````````vic````````e````````s.
+Using d````````e````````vic````````e```````` cat````````e````````gori````````e````````s, company administrators can d````````e````````fin````````e```````` th````````e````````ir own cat````````e````````gori````````e````````s that mak````````e```````` s````````e````````ns````````e```````` to th````````e````````ir company.
+Th````````e````````s````````e```````` cat````````e````````gori````````e````````s can th````````e````````n b````````e```````` appli````````e````````d to a d````````e````````vic````````e```````` in th````````e```````` Intun````````e```````` Azur````````e```````` consol````````e```````` or s````````e````````l````````e````````ct````````e````````d by a us````````e````````r during d````````e````````vic````````e```````` ````````e````````nrollm````````e````````nt.
+You can filt````````e````````r r````````e````````ports and cr````````e````````at````````e```````` dynamic Azur````````e```````` Activ````````e```````` Dir````````e````````ctory d````````e````````vic````````e```````` groups bas````````e````````d on d````````e````````vic````````e```````` cat````````e````````gori````````e````````s.
+To construct, pl````````e````````as````````e```````` us````````e```````` G````````e````````t-H````````e````````lp -Onlin````````e```````` and s````````e````````````````e```````` NOT````````e````````S s````````e````````ction for D````````e````````VIC````````e````````CAT````````e````````GORY prop````````e````````rti````````e````````s and cr````````e````````at````````e```````` a hash tabl````````e````````.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCategory2
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: IMicrosoftGraphD````````e````````vic````````e````````Cat````````e````````gory2
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -DeviceCategoryDisplayName
-Device category display name.
-This property is read-only.
+### -D````````e````````vic````````e````````Cat````````e````````goryDisplayNam````````e````````
+D````````e````````vic````````e```````` cat````````e````````gory display nam````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -DeviceCompliancePolicyStates
-Device compliance policy states for this device.
-To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICYSTATES properties and create a hash table.
+### -D````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````s
+D````````e````````vic````````e```````` complianc````````e```````` policy stat````````e````````s for this d````````e````````vic````````e````````.
+To construct, pl````````e````````as````````e```````` us````````e```````` G````````e````````t-H````````e````````lp -Onlin````````e```````` and s````````e````````````````e```````` NOT````````e````````S s````````e````````ction for D````````e````````VIC````````e````````COMPLIANC````````e````````POLICYSTAT````````e````````S prop````````e````````rti````````e````````s and cr````````e````````at````````e```````` a hash tabl````````e````````.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyState1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: IMicrosoftGraphD````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````1[]
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -DeviceConfigurationStates
-Device configuration states for this device.
-To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONSTATES properties and create a hash table.
+### -D````````e````````vic````````e````````ConfigurationStat````````e````````s
+D````````e````````vic````````e```````` configuration stat````````e````````s for this d````````e````````vic````````e````````.
+To construct, pl````````e````````as````````e```````` us````````e```````` G````````e````````t-H````````e````````lp -Onlin````````e```````` and s````````e````````````````e```````` NOT````````e````````S s````````e````````ction for D````````e````````VIC````````e````````CONFIGURATIONSTAT````````e````````S prop````````e````````rti````````e````````s and cr````````e````````at````````e```````` a hash tabl````````e````````.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationState1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: IMicrosoftGraphD````````e````````vic````````e````````ConfigurationStat````````e````````1[]
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -DeviceEnrollmentType
-Possible ways of adding a mobile device to management.
+### -D````````e````````vic````````e````````````````e````````nrollm````````e````````ntTyp````````e````````
+Possibl````````e```````` ways of adding a mobil````````e```````` d````````e````````vic````````e```````` to manag````````e````````m````````e````````nt.
 
 ```yaml
-Type: DeviceEnrollmentType
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: D````````e````````vic````````e````````````````e````````nrollm````````e````````ntTyp````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -DeviceHealthAttestationState
-deviceHealthAttestationState
-To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTHATTESTATIONSTATE properties and create a hash table.
+### -D````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e````````
+d````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e````````
+To construct, pl````````e````````as````````e```````` us````````e```````` G````````e````````t-H````````e````````lp -Onlin````````e```````` and s````````e````````````````e```````` NOT````````e````````S s````````e````````ction for D````````e````````VIC````````e````````H````````e````````ALTHATT````````e````````STATIONSTAT````````e```````` prop````````e````````rti````````e````````s and cr````````e````````at````````e```````` a hash tabl````````e````````.
 
 ```yaml
-Type: IMicrosoftGraphDeviceHealthAttestationState
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: IMicrosoftGraphD````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -DeviceName
-Name of the device.
-This property is read-only.
+### -D````````e````````vic````````e````````Nam````````e````````
+Nam````````e```````` of th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -DeviceRegistrationState
-Device registration status.
+### -D````````e````````vic````````e````````R````````e````````gistrationStat````````e````````
+D````````e````````vic````````e```````` r````````e````````gistration status.
 
 ```yaml
-Type: DeviceRegistrationState
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: D````````e````````vic````````e````````R````````e````````gistrationStat````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -EasActivated
-Whether the device is Exchange ActiveSync activated.
-This property is read-only.
+### -````````e````````asActivat````````e````````d
+Wh````````e````````th````````e````````r th````````e```````` d````````e````````vic````````e```````` is ````````e````````xchang````````e```````` Activ````````e````````Sync activat````````e````````d.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: SwitchParam````````e````````t````````e````````r
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -EasActivationDateTime
-Exchange ActivationSync activation time of the device.
-This property is read-only.
+### -````````e````````asActivationDat````````e````````Tim````````e````````
+````````e````````xchang````````e```````` ActivationSync activation tim````````e```````` of th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Dat````````e````````Tim````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -EasDeviceId
-Exchange ActiveSync Id of the device.
-This property is read-only.
+### -````````e````````asD````````e````````vic````````e````````Id
+````````e````````xchang````````e```````` Activ````````e````````Sync Id of th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -EmailAddress
-Email(s) for the user associated with the device.
-This property is read-only.
+### -````````e````````mailAddr````````e````````ss
+````````e````````mail(s) for th````````e```````` us````````e````````r associat````````e````````d with th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -EnrolledDateTime
-Enrollment time of the device.
-This property is read-only.
+### -````````e````````nroll````````e````````dDat````````e````````Tim````````e````````
+````````e````````nrollm````````e````````nt tim````````e```````` of th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Dat````````e````````Tim````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -EthernetMacAddress
-Ethernet MAC.
-This property is read-only.
+### -````````e````````th````````e````````rn````````e````````tMacAddr````````e````````ss
+````````e````````th````````e````````rn````````e````````t MAC.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -ExchangeAccessState
-Device Exchange Access State.
+### -````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````
+D````````e````````vic````````e```````` ````````e````````xchang````````e```````` Acc````````e````````ss Stat````````e````````.
 
 ```yaml
-Type: DeviceManagementExchangeAccessState
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: D````````e````````vic````````e````````Manag````````e````````m````````e````````nt````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -ExchangeAccessStateReason
-Device Exchange Access State Reason.
+### -````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````R````````e````````ason
+D````````e````````vic````````e```````` ````````e````````xchang````````e```````` Acc````````e````````ss Stat````````e```````` R````````e````````ason.
 
 ```yaml
-Type: DeviceManagementExchangeAccessStateReason
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: D````````e````````vic````````e````````Manag````````e````````m````````e````````nt````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````R````````e````````ason
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -ExchangeLastSuccessfulSyncDateTime
-Last time the device contacted Exchange.
-This property is read-only.
+### -````````e````````xchang````````e````````LastSucc````````e````````ssfulSyncDat````````e````````Tim````````e````````
+Last tim````````e```````` th````````e```````` d````````e````````vic````````e```````` contact````````e````````d ````````e````````xchang````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Dat````````e````````Tim````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -FreeStorageSpaceInBytes
-Free Storage in Bytes.
-This property is read-only.
+### -Fr````````e````````````````e````````Storag````````e````````Spac````````e````````InByt````````e````````s
+Fr````````e````````````````e```````` Storag````````e```````` in Byt````````e````````s.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Int64
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
 ### -Iccid
-Integrated Circuit Card Identifier, it is A SIM card's unique identification number.
-This property is read-only.
+Int````````e````````grat````````e````````d Circuit Card Id````````e````````ntifi````````e````````r, it is A SIM card's uniqu````````e```````` id````````e````````ntification numb````````e````````r.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -Imei
-IMEI.
-This property is read-only.
+### -Im````````e````````i
+IM````````e````````I.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj````````e````````ct
+Id````````e````````ntity Param````````e````````t````````e````````r
+To construct, pl````````e````````as````````e```````` us````````e```````` G````````e````````t-H````````e````````lp -Onlin````````e```````` and s````````e````````````````e```````` NOT````````e````````S s````````e````````ction for INPUTOBJ````````e````````CT prop````````e````````rti````````e````````s and cr````````e````````at````````e```````` a hash tabl````````e````````.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Typ````````e````````: ID````````e````````vic````````e````````sCorporat````````e````````Manag````````e````````m````````e````````ntId````````e````````ntity
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity1
+Alias````````e````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Tru````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Tru````````e```````` (ByValu````````e````````)
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -IsEncrypted
-Device encryption status.
-This property is read-only.
+### -Is````````e````````ncrypt````````e````````d
+D````````e````````vic````````e```````` ````````e````````ncryption status.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: SwitchParam````````e````````t````````e````````r
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -IsSupervised
-Device supervised status.
-This property is read-only.
+### -IsSup````````e````````rvis````````e````````d
+D````````e````````vic````````e```````` sup````````e````````rvis````````e````````d status.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: SwitchParam````````e````````t````````e````````r
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -JailBroken
-whether the device is jail broken or rooted.
-This property is read-only.
+### -JailBrok````````e````````n
+wh````````e````````th````````e````````r th````````e```````` d````````e````````vic````````e```````` is jail brok````````e````````n or root````````e````````d.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -LastSyncDateTime
-The date and time that the device last completed a successful sync with Intune.
-This property is read-only.
+### -LastSyncDat````````e````````Tim````````e````````
+Th````````e```````` dat````````e```````` and tim````````e```````` that th````````e```````` d````````e````````vic````````e```````` last compl````````e````````t````````e````````d a succ````````e````````ssful sync with Intun````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Dat````````e````````Tim````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -ManagedDeviceId
-key: id of managedDevice
+### -Manag````````e````````dD````````e````````vic````````e````````Id
+k````````e````````y: id of manag````````e````````dD````````e````````vic````````e````````
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````1
+Alias````````e````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Tru````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -ManagedDeviceName
-Automatically generated name to identify a device.
-Can be overwritten to a user friendly name.
+### -Manag````````e````````dD````````e````````vic````````e````````Nam````````e````````
+Automatically g````````e````````n````````e````````rat````````e````````d nam````````e```````` to id````````e````````ntify a d````````e````````vic````````e````````.
+Can b````````e```````` ov````````e````````rwritt````````e````````n to a us````````e````````r fri````````e````````ndly nam````````e````````.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -ManagedDeviceOwnerType
-Owner type of device.
+### -Manag````````e````````dD````````e````````vic````````e````````Own````````e````````rTyp````````e````````
+Own````````e````````r typ````````e```````` of d````````e````````vic````````e````````.
 
 ```yaml
-Type: ManagedDeviceOwnerType
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Manag````````e````````dD````````e````````vic````````e````````Own````````e````````rTyp````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -ManagementAgent
-Management agent type.
+### -Manag````````e````````m````````e````````ntAg````````e````````nt
+Manag````````e````````m````````e````````nt ag````````e````````nt typ````````e````````.
 
 ```yaml
-Type: ManagementAgentType
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Manag````````e````````m````````e````````ntAg````````e````````ntTyp````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -Manufacturer
-Manufacturer of the device.
-This property is read-only.
+### -Manufactur````````e````````r
+Manufactur````````e````````r of th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -Meid
-MEID.
-This property is read-only.
+### -M````````e````````id
+M````````e````````ID.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -Model
-Model of the device.
-This property is read-only.
+### -Mod````````e````````l
+Mod````````e````````l of th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -Notes
-Notes on the device created by IT Admin
+### -Not````````e````````s
+Not````````e````````s on th````````e```````` d````````e````````vic````````e```````` cr````````e````````at````````e````````d by IT Admin
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -OperatingSystem
-Operating system of the device.
-Windows, iOS, etc.
-This property is read-only.
+### -Op````````e````````ratingSyst````````e````````m
+Op````````e````````rating syst````````e````````m of th````````e```````` d````````e````````vic````````e````````.
+Windows, iOS, ````````e````````tc.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -OSVersion
-Operating system version of the device.
-This property is read-only.
+### -OSV````````e````````rsion
+Op````````e````````rating syst````````e````````m v````````e````````rsion of th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -PartnerReportedThreatState
-Available health states for the Device Health API
+### -Partn````````e````````rR````````e````````port````````e````````dThr````````e````````atStat````````e````````
+Availabl````````e```````` h````````e````````alth stat````````e````````s for th````````e```````` D````````e````````vic````````e```````` H````````e````````alth API
 
 ```yaml
-Type: ManagedDevicePartnerReportedHealthState
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Manag````````e````````dD````````e````````vic````````e````````Partn````````e````````rR````````e````````port````````e````````dH````````e````````althStat````````e````````
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R````````e````````turns tru````````e```````` wh````````e````````n th````````e```````` command succ````````e````````````````e````````ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ````````e````````: SwitchParam````````e````````t````````e````````r
+Param````````e````````t````````e````````r S````````e````````ts: (All)
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -PhoneNumber
-Phone number of the device.
-This property is read-only.
+### -Phon````````e````````Numb````````e````````r
+Phon````````e```````` numb````````e````````r of th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -PhysicalMemoryInBytes
-Total Memory in Bytes.
-This property is read-only.
+### -PhysicalM````````e````````moryInByt````````e````````s
+Total M````````e````````mory in Byt````````e````````s.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Int64
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -RemoteAssistanceSessionErrorDetails
-An error string that identifies issues when creating Remote Assistance session objects.
-This property is read-only.
+### -R````````e````````mot````````e````````Assistanc````````e````````S````````e````````ssion````````e````````rrorD````````e````````tails
+An ````````e````````rror string that id````````e````````ntifi````````e````````s issu````````e````````s wh````````e````````n cr````````e````````ating R````````e````````mot````````e```````` Assistanc````````e```````` s````````e````````ssion obj````````e````````cts.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -RemoteAssistanceSessionUrl
-Url that allows a Remote Assistance session to be established with the device.
-This property is read-only.
+### -R````````e````````mot````````e````````Assistanc````````e````````S````````e````````ssionUrl
+Url that allows a R````````e````````mot````````e```````` Assistanc````````e```````` s````````e````````ssion to b````````e```````` ````````e````````stablish````````e````````d with th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -SerialNumber
-SerialNumber.
-This property is read-only.
+### -S````````e````````rialNumb````````e````````r
+S````````e````````rialNumb````````e````````r.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -SubscriberCarrier
-Subscriber Carrier.
-This property is read-only.
+### -Subscrib````````e````````rCarri````````e````````r
+Subscrib````````e````````r Carri````````e````````r.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -TotalStorageSpaceInBytes
-Total Storage in Bytes.
-This property is read-only.
+### -TotalStorag````````e````````Spac````````e````````InByt````````e````````s
+Total Storag````````e```````` in Byt````````e````````s.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: Int64
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
 ### -Udid
-Unique Device Identifier for iOS and macOS devices.
-This property is read-only.
+Uniqu````````e```````` D````````e````````vic````````e```````` Id````````e````````ntifi````````e````````r for iOS and macOS d````````e````````vic````````e````````s.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -UserDisplayName
-User display name.
-This property is read-only.
+### -Us````````e````````rDisplayNam````````e````````
+Us````````e````````r display nam````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -UserId
-key: id of user
+### -Us````````e````````rId
+k````````e````````y: id of us````````e````````r
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````1
+Alias````````e````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Tru````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
 ```yaml
-Type: String
-Parameter Sets: UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -UserId1
-Unique Identifier for the user associated with the device.
-This property is read-only.
+### -Us````````e````````rId1
+Uniqu````````e```````` Id````````e````````ntifi````````e````````r for th````````e```````` us````````e````````r associat````````e````````d with th````````e```````` d````````e````````vic````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -UserPrincipalName
-Device user principal name.
-This property is read-only.
+### -Us````````e````````rPrincipalNam````````e````````
+D````````e````````vic````````e```````` us````````e````````r principal nam````````e````````.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### -WiFiMacAddress
+### -WiFiMacAddr````````e````````ss
 Wi-Fi MAC.
-This property is read-only.
+This prop````````e````````rty is r````````e````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ````````e````````: String
+Param````````e````````t````````e````````r S````````e````````ts: Updat````````e````````````````e````````xpand````````e````````d1, Updat````````e````````ViaId````````e````````ntity````````e````````xpand````````e````````d1
+Alias````````e````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b````````e````````for````````e```````` running th````````e```````` cmdl````````e````````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ````````e````````: SwitchParam````````e````````t````````e````````r
+Param````````e````````t````````e````````r S````````e````````ts: (All)
+Alias````````e````````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ````````e````````n if th````````e```````` cmdl````````e````````t runs.
+Th````````e```````` cmdl````````e````````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ````````e````````: SwitchParam````````e````````t````````e````````r
+Param````````e````````t````````e````````r S````````e````````ts: (All)
+Alias````````e````````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````````e````````quir````````e````````d: Fals````````e````````
+Position: Nam````````e````````d
+D````````e````````fault valu````````e````````: Non````````e````````
+Acc````````e````````pt pip````````e````````lin````````e```````` input: Fals````````e````````
+Acc````````e````````pt wildcard charact````````e````````rs: Fals````````e````````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam````````e````````t````````e````````rs
+This cmdl````````e````````t supports th````````e```````` common param````````e````````t````````e````````rs: -D````````e````````bug, -````````e````````rrorAction, -````````e````````rrorVariabl````````e````````, -InformationAction, -InformationVariabl````````e````````, -OutVariabl````````e````````, -OutBuff````````e````````r, -Pip````````e````````lin````````e````````Variabl````````e````````, -V````````e````````rbos````````e````````, -WarningAction, and -WarningVariabl````````e````````. For mor````````e```````` information, s````````e````````````````e```````` [about_CommonParam````````e````````t````````e````````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
+### Microsoft.Graph.Pow````````e````````rSh````````e````````ll.Mod````````e````````ls.ID````````e````````vic````````e````````sCorporat````````e````````Manag````````e````````m````````e````````ntId````````e````````ntity
+### Microsoft.Graph.Pow````````e````````rSh````````e````````ll.Mod````````e````````ls.IMicrosoftGraphManag````````e````````dD````````e````````vic````````e````````1
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst````````e````````m.Bool````````e````````an
+## NOT````````e````````S
 
-ALIASES
+ALIAS````````e````````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL````````e````````X PARAM````````e````````T````````e````````R PROP````````e````````RTI````````e````````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr````````e````````at````````e```````` th````````e```````` param````````e````````t````````e````````rs d````````e````````scrib````````e````````d b````````e````````low, construct a hash tabl````````e```````` containing th````````e```````` appropriat````````e```````` prop````````e````````rti````````e````````s. For information on hash tabl````````e````````s, run G````````e````````t-H````````e````````lp about_Hash_Tabl````````e````````s.
 
 
-BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-enrolled through Intune
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM````````e````````T````````e````````R <IMicrosoftGraphManag````````e````````dD````````e````````vic````````e````````1>: D````````e````````vic````````e````````s that ar````````e```````` manag````````e````````d or pr````````e````````-````````e````````nroll````````e````````d through Intun````````e````````
+  - `[(Any) <Obj````````e````````ct>]`: This indicat````````e````````s any prop````````e````````rty can b````````e```````` add````````e````````d to this obj````````e````````ct.
   - `[Id <String>]`: 
-  - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
-  - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
-  - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
-  - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-  - `[ComplianceState <ComplianceState?>]`: Compliance state.
-  - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]`: configuration Manager client enabled features
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
-    - `[DeviceConfiguration <Boolean?>]`: Whether device configuration is managed by Intune
-    - `[Inventory <Boolean?>]`: Whether inventory is managed by Intune
-    - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
-    - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
-    - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-  - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
-    - `[ActionName <String>]`: Action name
-    - `[ActionState <ActionState?>]`: State of the action on the device
-    - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
-    - `[StartDateTime <DateTime?>]`: Time the action was initiated
-  - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ActivationLockBypassCod````````e```````` <String>]`: Cod````````e```````` that allows th````````e```````` Activation Lock on a d````````e````````vic````````e```````` to b````````e```````` bypass````````e````````d. This prop````````e````````rty is r````````e````````ad-only.
+  - `[AndroidS````````e````````curityPatchL````````e````````v````````e````````l <String>]`: Android s````````e````````curity patch l````````e````````v````````e````````l. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Azur````````e````````AdD````````e````````vic````````e````````Id <String>]`: Th````````e```````` uniqu````````e```````` id````````e````````ntifi````````e````````r for th````````e```````` Azur````````e```````` Activ````````e```````` Dir````````e````````ctory d````````e````````vic````````e````````. R````````e````````ad only. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Azur````````e````````AdR````````e````````gist````````e````````r````````e````````d <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r th````````e```````` d````````e````````vic````````e```````` is Azur````````e```````` Activ````````e```````` Dir````````e````````ctory r````````e````````gist````````e````````r````````e````````d. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Complianc````````e````````Grac````````e````````P````````e````````riod````````e````````xpirationDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: Th````````e```````` Dat````````e````````Tim````````e```````` wh````````e````````n d````````e````````vic````````e```````` complianc````````e```````` grac````````e```````` p````````e````````riod ````````e````````xpir````````e````````s. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Complianc````````e````````Stat````````e```````` <Complianc````````e````````Stat````````e````````?>]`: Complianc````````e```````` stat````````e````````.
+  - `[ConfigurationManag````````e````````rCli````````e````````nt````````e````````nabl````````e````````dF````````e````````atur````````e````````s <IMicrosoftGraphConfigurationManag````````e````````rCli````````e````````nt````````e````````nabl````````e````````dF````````e````````atur````````e````````s1>]`: configuration Manag````````e````````r cli````````e````````nt ````````e````````nabl````````e````````d f````````e````````atur````````e````````s
+    - `[(Any) <Obj````````e````````ct>]`: This indicat````````e````````s any prop````````e````````rty can b````````e```````` add````````e````````d to this obj````````e````````ct.
+    - `[Complianc````````e````````Policy <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r complianc````````e```````` policy is manag````````e````````d by Intun````````e````````
+    - `[D````````e````````vic````````e````````Configuration <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r d````````e````````vic````````e```````` configuration is manag````````e````````d by Intun````````e````````
+    - `[Inv````````e````````ntory <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r inv````````e````````ntory is manag````````e````````d by Intun````````e````````
+    - `[Mod````````e````````rnApps <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r mod````````e````````rn application is manag````````e````````d by Intun````````e````````
+    - `[R````````e````````sourc````````e````````Acc````````e````````ss <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r r````````e````````sourc````````e```````` acc````````e````````ss is manag````````e````````d by Intun````````e````````
+    - `[WindowsUpdat````````e````````ForBusin````````e````````ss <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r Windows Updat````````e```````` for Busin````````e````````ss is manag````````e````````d by Intun````````e````````
+  - `[D````````e````````vic````````e````````ActionR````````e````````sults <IMicrosoftGraphD````````e````````vic````````e````````ActionR````````e````````sult1[]>]`: List of Compl````````e````````xTyp````````e```````` d````````e````````vic````````e````````ActionR````````e````````sult obj````````e````````cts. This prop````````e````````rty is r````````e````````ad-only.
+    - `[ActionNam````````e```````` <String>]`: Action nam````````e````````
+    - `[ActionStat````````e```````` <ActionStat````````e````````?>]`: Stat````````e```````` of th````````e```````` action on th````````e```````` d````````e````````vic````````e````````
+    - `[LastUpdat````````e````````dDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: Tim````````e```````` th````````e```````` action stat````````e```````` was last updat````````e````````d
+    - `[StartDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: Tim````````e```````` th````````e```````` action was initiat````````e````````d
+  - `[D````````e````````vic````````e````````Cat````````e````````gory <IMicrosoftGraphD````````e````````vic````````e````````Cat````````e````````gory2>]`: D````````e````````vic````````e```````` cat````````e````````gori````````e````````s provid````````e````````s a way to organiz````````e```````` your d````````e````````vic````````e````````s. Using d````````e````````vic````````e```````` cat````````e````````gori````````e````````s, company administrators can d````````e````````fin````````e```````` th````````e````````ir own cat````````e````````gori````````e````````s that mak````````e```````` s````````e````````ns````````e```````` to th````````e````````ir company. Th````````e````````s````````e```````` cat````````e````````gori````````e````````s can th````````e````````n b````````e```````` appli````````e````````d to a d````````e````````vic````````e```````` in th````````e```````` Intun````````e```````` Azur````````e```````` consol````````e```````` or s````````e````````l````````e````````ct````````e````````d by a us````````e````````r during d````````e````````vic````````e```````` ````````e````````nrollm````````e````````nt. You can filt````````e````````r r````````e````````ports and cr````````e````````at````````e```````` dynamic Azur````````e```````` Activ````````e```````` Dir````````e````````ctory d````````e````````vic````````e```````` groups bas````````e````````d on d````````e````````vic````````e```````` cat````````e````````gori````````e````````s.
+    - `[(Any) <Obj````````e````````ct>]`: This indicat````````e````````s any prop````````e````````rty can b````````e```````` add````````e````````d to this obj````````e````````ct.
     - `[Id <String>]`: 
-    - `[Description <String>]`: Optional description for the device category.
-    - `[DisplayName <String>]`: Display name for the device category.
-  - `[DeviceCategoryDisplayName <String>]`: Device category display name. This property is read-only.
-  - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]`: Device compliance policy states for this device.
+    - `[D````````e````````scription <String>]`: Optional d````````e````````scription for th````````e```````` d````````e````````vic````````e```````` cat````````e````````gory.
+    - `[DisplayNam````````e```````` <String>]`: Display nam````````e```````` for th````````e```````` d````````e````````vic````````e```````` cat````````e````````gory.
+  - `[D````````e````````vic````````e````````Cat````````e````````goryDisplayNam````````e```````` <String>]`: D````````e````````vic````````e```````` cat````````e````````gory display nam````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[D````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````s <IMicrosoftGraphD````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````1[]>]`: D````````e````````vic````````e```````` complianc````````e```````` policy stat````````e````````s for this d````````e````````vic````````e````````.
     - `[Id <String>]`: 
-    - `[DisplayName <String>]`: The name of the policy for this policyBase
-    - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
-    - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
-    - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>]`: 
-      - `[CurrentValue <String>]`: Current value of setting on device
-      - `[ErrorCode <Int64?>]`: Error code for the setting
-      - `[ErrorDescription <String>]`: Error description
-      - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
-      - `[Setting <String>]`: The setting that is being reported
-      - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-      - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
-        - `[DisplayName <String>]`: Not yet documented
-        - `[Id <String>]`: Not yet documented
-        - `[SourceType <String>]`: settingSourceType
-      - `[State <String>]`: complianceStatus
-      - `[UserEmail <String>]`: UserEmail
-      - `[UserId <String>]`: UserId
-      - `[UserName <String>]`: UserName
-      - `[UserPrincipalName <String>]`: UserPrincipalName.
-    - `[State <String>]`: complianceStatus
-    - `[Version <Int32?>]`: The version of the policy
-  - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]`: Device configuration states for this device.
+    - `[DisplayNam````````e```````` <String>]`: Th````````e```````` nam````````e```````` of th````````e```````` policy for this policyBas````````e````````
+    - `[PlatformTyp````````e```````` <PolicyPlatformTyp````````e````````?>]`: Support````````e````````d platform typ````````e````````s for polici````````e````````s.
+    - `[S````````e````````ttingCount <Int32?>]`: Count of how many s````````e````````tting a policy holds
+    - `[S````````e````````ttingStat````````e````````s <IMicrosoftGraphD````````e````````vic````````e````````Complianc````````e````````PolicyS````````e````````ttingStat````````e````````1[]>]`: 
+      - `[Curr````````e````````ntValu````````e```````` <String>]`: Curr````````e````````nt valu````````e```````` of s````````e````````tting on d````````e````````vic````````e````````
+      - `[````````e````````rrorCod````````e```````` <Int64?>]`: ````````e````````rror cod````````e```````` for th````````e```````` s````````e````````tting
+      - `[````````e````````rrorD````````e````````scription <String>]`: ````````e````````rror d````````e````````scription
+      - `[Instanc````````e````````DisplayNam````````e```````` <String>]`: Nam````````e```````` of s````````e````````tting instanc````````e```````` that is b````````e````````ing r````````e````````port````````e````````d.
+      - `[S````````e````````tting <String>]`: Th````````e```````` s````````e````````tting that is b````````e````````ing r````````e````````port````````e````````d
+      - `[S````````e````````ttingNam````````e```````` <String>]`: Localiz````````e````````d/us````````e````````r fri````````e````````ndly s````````e````````tting nam````````e```````` that is b````````e````````ing r````````e````````port````````e````````d
+      - `[Sourc````````e````````s <IMicrosoftGraphS````````e````````ttingSourc````````e````````[]>]`: Contributing polici````````e````````s
+        - `[DisplayNam````````e```````` <String>]`: Not y````````e````````t docum````````e````````nt````````e````````d
+        - `[Id <String>]`: Not y````````e````````t docum````````e````````nt````````e````````d
+        - `[Sourc````````e````````Typ````````e```````` <String>]`: s````````e````````ttingSourc````````e````````Typ````````e````````
+      - `[Stat````````e```````` <String>]`: complianc````````e````````Status
+      - `[Us````````e````````r````````e````````mail <String>]`: Us````````e````````r````````e````````mail
+      - `[Us````````e````````rId <String>]`: Us````````e````````rId
+      - `[Us````````e````````rNam````````e```````` <String>]`: Us````````e````````rNam````````e````````
+      - `[Us````````e````````rPrincipalNam````````e```````` <String>]`: Us````````e````````rPrincipalNam````````e````````.
+    - `[Stat````````e```````` <String>]`: complianc````````e````````Status
+    - `[V````````e````````rsion <Int32?>]`: Th````````e```````` v````````e````````rsion of th````````e```````` policy
+  - `[D````````e````````vic````````e````````ConfigurationStat````````e````````s <IMicrosoftGraphD````````e````````vic````````e````````ConfigurationStat````````e````````1[]>]`: D````````e````````vic````````e```````` configuration stat````````e````````s for this d````````e````````vic````````e````````.
     - `[Id <String>]`: 
-    - `[DisplayName <String>]`: The name of the policy for this policyBase
-    - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
-    - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
-    - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
-      - `[CurrentValue <String>]`: Current value of setting on device
-      - `[ErrorCode <Int64?>]`: Error code for the setting
-      - `[ErrorDescription <String>]`: Error description
-      - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
-      - `[Setting <String>]`: The setting that is being reported
-      - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-      - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
-      - `[State <String>]`: complianceStatus
-      - `[UserEmail <String>]`: UserEmail
-      - `[UserId <String>]`: UserId
-      - `[UserName <String>]`: UserName
-      - `[UserPrincipalName <String>]`: UserPrincipalName.
-    - `[State <String>]`: complianceStatus
-    - `[Version <Int32?>]`: The version of the policy
-  - `[DeviceEnrollmentType <DeviceEnrollmentType?>]`: Possible ways of adding a mobile device to management.
-  - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
-    - `[BitLockerStatus <String>]`: On or Off of BitLocker Drive Encryption
-    - `[BootAppSecurityVersion <String>]`: The security version number of the Boot Application
-    - `[BootDebugging <String>]`: When bootDebugging is enabled, the device is used in development and testing
-    - `[BootManagerSecurityVersion <String>]`: The security version number of the Boot Application
-    - `[BootManagerVersion <String>]`: The version of the Boot Manager
-    - `[BootRevisionListInfo <String>]`: The Boot Revision List that was loaded during initial boot on the attested device
-    - `[CodeIntegrity <String>]`: When code integrity is enabled, code execution is restricted to integrity verified code
-    - `[CodeIntegrityCheckVersion <String>]`: The version of the Boot Manager
-    - `[CodeIntegrityPolicy <String>]`: The Code Integrity policy that is controlling the security of the boot environment
-    - `[ContentNamespaceUrl <String>]`: The DHA report version. (Namespace version)
-    - `[ContentVersion <String>]`: The HealthAttestation state schema version
-    - `[DataExcutionPolicy <String>]`: DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
-    - `[DeviceHealthAttestationStatus <String>]`: The DHA report version. (Namespace version)
-    - `[EarlyLaunchAntiMalwareDriverProtection <String>]`: ELAM provides protection for the computers in your network when they start up
-    - `[HealthAttestationSupportedStatus <String>]`: This attribute indicates if DHA is supported for the device
-    - `[HealthStatusMismatchInfo <String>]`: This attribute appears if DHA-Service detects an integrity issue
-    - `[IssuedDateTime <DateTime?>]`: The DateTime when device was evaluated or issued to MDM
-    - `[LastUpdateDateTime <String>]`: The Timestamp of the last update.
-    - `[OperatingSystemKernelDebugging <String>]`: When operatingSystemKernelDebugging is enabled, the device is used in development and testing
-    - `[OperatingSystemRevListInfo <String>]`: The Operating System Revision List that was loaded during initial boot on the attested device
-    - `[Pcr0 <String>]`: The measurement that is captured in PCR[0]
-    - `[PcrHashAlgorithm <String>]`: Informational attribute that identifies the HASH algorithm that was used by TPM
-    - `[ResetCount <Int64?>]`: The number of times a PC device has hibernated or resumed
-    - `[RestartCount <Int64?>]`: The number of times a PC device has rebooted
-    - `[SafeMode <String>]`: Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
-    - `[SecureBoot <String>]`: When Secure Boot is enabled, the core components must have the correct cryptographic signatures
-    - `[SecureBootConfigurationPolicyFingerPrint <String>]`: Fingerprint of the Custom Secure Boot Configuration Policy
-    - `[TestSigning <String>]`: When test signing is allowed, the device does not enforce signature validation during boot
-    - `[TpmVersion <String>]`: The security version number of the Boot Application
-    - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
-    - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
-  - `[DeviceName <String>]`: Name of the device. This property is read-only.
-  - `[DeviceRegistrationState <DeviceRegistrationState?>]`: Device registration status.
-  - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
-  - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
-  - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
-  - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
-  - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
-  - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-  - `[ExchangeAccessState <DeviceManagementExchangeAccessState?>]`: Device Exchange Access State.
-  - `[ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason?>]`: Device Exchange Access State Reason.
-  - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
-  - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
-  - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
-  - `[Imei <String>]`: IMEI. This property is read-only.
-  - `[IsEncrypted <Boolean?>]`: Device encryption status. This property is read-only.
-  - `[IsSupervised <Boolean?>]`: Device supervised status. This property is read-only.
-  - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
-  - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
-  - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-  - `[ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
-  - `[ManagementAgent <ManagementAgentType?>]`: Management agent type.
-  - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
-  - `[Meid <String>]`: MEID. This property is read-only.
-  - `[Model <String>]`: Model of the device. This property is read-only.
-  - `[Notes <String>]`: Notes on the device created by IT Admin
-  - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
-  - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-  - `[PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState?>]`: Available health states for the Device Health API
-  - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
-  - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
-  - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
-  - `[RemoteAssistanceSessionUrl <String>]`: Url that allows a Remote Assistance session to be established with the device. This property is read-only.
-  - `[SerialNumber <String>]`: SerialNumber. This property is read-only.
-  - `[SubscriberCarrier <String>]`: Subscriber Carrier. This property is read-only.
-  - `[TotalStorageSpaceInBytes <Int64?>]`: Total Storage in Bytes. This property is read-only.
-  - `[Udid <String>]`: Unique Device Identifier for iOS and macOS devices. This property is read-only.
-  - `[UserDisplayName <String>]`: User display name. This property is read-only.
-  - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
-  - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
-  - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
+    - `[DisplayNam````````e```````` <String>]`: Th````````e```````` nam````````e```````` of th````````e```````` policy for this policyBas````````e````````
+    - `[PlatformTyp````````e```````` <PolicyPlatformTyp````````e````````?>]`: Support````````e````````d platform typ````````e````````s for polici````````e````````s.
+    - `[S````````e````````ttingCount <Int32?>]`: Count of how many s````````e````````tting a policy holds
+    - `[S````````e````````ttingStat````````e````````s <IMicrosoftGraphD````````e````````vic````````e````````ConfigurationS````````e````````ttingStat````````e````````1[]>]`: 
+      - `[Curr````````e````````ntValu````````e```````` <String>]`: Curr````````e````````nt valu````````e```````` of s````````e````````tting on d````````e````````vic````````e````````
+      - `[````````e````````rrorCod````````e```````` <Int64?>]`: ````````e````````rror cod````````e```````` for th````````e```````` s````````e````````tting
+      - `[````````e````````rrorD````````e````````scription <String>]`: ````````e````````rror d````````e````````scription
+      - `[Instanc````````e````````DisplayNam````````e```````` <String>]`: Nam````````e```````` of s````````e````````tting instanc````````e```````` that is b````````e````````ing r````````e````````port````````e````````d.
+      - `[S````````e````````tting <String>]`: Th````````e```````` s````````e````````tting that is b````````e````````ing r````````e````````port````````e````````d
+      - `[S````````e````````ttingNam````````e```````` <String>]`: Localiz````````e````````d/us````````e````````r fri````````e````````ndly s````````e````````tting nam````````e```````` that is b````````e````````ing r````````e````````port````````e````````d
+      - `[Sourc````````e````````s <IMicrosoftGraphS````````e````````ttingSourc````````e````````[]>]`: Contributing polici````````e````````s
+      - `[Stat````````e```````` <String>]`: complianc````````e````````Status
+      - `[Us````````e````````r````````e````````mail <String>]`: Us````````e````````r````````e````````mail
+      - `[Us````````e````````rId <String>]`: Us````````e````````rId
+      - `[Us````````e````````rNam````````e```````` <String>]`: Us````````e````````rNam````````e````````
+      - `[Us````````e````````rPrincipalNam````````e```````` <String>]`: Us````````e````````rPrincipalNam````````e````````.
+    - `[Stat````````e```````` <String>]`: complianc````````e````````Status
+    - `[V````````e````````rsion <Int32?>]`: Th````````e```````` v````````e````````rsion of th````````e```````` policy
+  - `[D````````e````````vic````````e````````````````e````````nrollm````````e````````ntTyp````````e```````` <D````````e````````vic````````e````````````````e````````nrollm````````e````````ntTyp````````e````````?>]`: Possibl````````e```````` ways of adding a mobil````````e```````` d````````e````````vic````````e```````` to manag````````e````````m````````e````````nt.
+  - `[D````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e```````` <IMicrosoftGraphD````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e````````>]`: d````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e````````
+    - `[(Any) <Obj````````e````````ct>]`: This indicat````````e````````s any prop````````e````````rty can b````````e```````` add````````e````````d to this obj````````e````````ct.
+    - `[Att````````e````````stationId````````e````````ntityK````````e````````y <String>]`: TWh````````e````````n an Att````````e````````station Id````````e````````ntity K````````e````````y (AIK) is pr````````e````````s````````e````````nt on a d````````e````````vic````````e````````, it indicat````````e````````s that th````````e```````` d````````e````````vic````````e```````` has an ````````e````````ndors````````e````````m````````e````````nt k````````e````````y (````````e````````K) c````````e````````rtificat````````e````````.
+    - `[BitLock````````e````````rStatus <String>]`: On or Off of BitLock````````e````````r Driv````````e```````` ````````e````````ncryption
+    - `[BootAppS````````e````````curityV````````e````````rsion <String>]`: Th````````e```````` s````````e````````curity v````````e````````rsion numb````````e````````r of th````````e```````` Boot Application
+    - `[BootD````````e````````bugging <String>]`: Wh````````e````````n bootD````````e````````bugging is ````````e````````nabl````````e````````d, th````````e```````` d````````e````````vic````````e```````` is us````````e````````d in d````````e````````v````````e````````lopm````````e````````nt and t````````e````````sting
+    - `[BootManag````````e````````rS````````e````````curityV````````e````````rsion <String>]`: Th````````e```````` s````````e````````curity v````````e````````rsion numb````````e````````r of th````````e```````` Boot Application
+    - `[BootManag````````e````````rV````````e````````rsion <String>]`: Th````````e```````` v````````e````````rsion of th````````e```````` Boot Manag````````e````````r
+    - `[BootR````````e````````visionListInfo <String>]`: Th````````e```````` Boot R````````e````````vision List that was load````````e````````d during initial boot on th````````e```````` att````````e````````st````````e````````d d````````e````````vic````````e````````
+    - `[Cod````````e````````Int````````e````````grity <String>]`: Wh````````e````````n cod````````e```````` int````````e````````grity is ````````e````````nabl````````e````````d, cod````````e```````` ````````e````````x````````e````````cution is r````````e````````strict````````e````````d to int````````e````````grity v````````e````````rifi````````e````````d cod````````e````````
+    - `[Cod````````e````````Int````````e````````grityCh````````e````````ckV````````e````````rsion <String>]`: Th````````e```````` v````````e````````rsion of th````````e```````` Boot Manag````````e````````r
+    - `[Cod````````e````````Int````````e````````grityPolicy <String>]`: Th````````e```````` Cod````````e```````` Int````````e````````grity policy that is controlling th````````e```````` s````````e````````curity of th````````e```````` boot ````````e````````nvironm````````e````````nt
+    - `[Cont````````e````````ntNam````````e````````spac````````e````````Url <String>]`: Th````````e```````` DHA r````````e````````port v````````e````````rsion. (Nam````````e````````spac````````e```````` v````````e````````rsion)
+    - `[Cont````````e````````ntV````````e````````rsion <String>]`: Th````````e```````` H````````e````````althAtt````````e````````station stat````````e```````` sch````````e````````ma v````````e````````rsion
+    - `[Data````````e````````xcutionPolicy <String>]`: D````````e````````P Policy d````````e````````fin````````e````````s a s````````e````````t of hardwar````````e```````` and softwar````````e```````` t````````e````````chnologi````````e````````s that p````````e````````rform additional ch````````e````````cks on m````````e````````mory
+    - `[D````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStatus <String>]`: Th````````e```````` DHA r````````e````````port v````````e````````rsion. (Nam````````e````````spac````````e```````` v````````e````````rsion)
+    - `[````````e````````arlyLaunchAntiMalwar````````e````````Driv````````e````````rProt````````e````````ction <String>]`: ````````e````````LAM provid````````e````````s prot````````e````````ction for th````````e```````` comput````````e````````rs in your n````````e````````twork wh````````e````````n th````````e````````y start up
+    - `[H````````e````````althAtt````````e````````stationSupport````````e````````dStatus <String>]`: This attribut````````e```````` indicat````````e````````s if DHA is support````````e````````d for th````````e```````` d````````e````````vic````````e````````
+    - `[H````````e````````althStatusMismatchInfo <String>]`: This attribut````````e```````` app````````e````````ars if DHA-S````````e````````rvic````````e```````` d````````e````````t````````e````````cts an int````````e````````grity issu````````e````````
+    - `[Issu````````e````````dDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: Th````````e```````` Dat````````e````````Tim````````e```````` wh````````e````````n d````````e````````vic````````e```````` was ````````e````````valuat````````e````````d or issu````````e````````d to MDM
+    - `[LastUpdat````````e````````Dat````````e````````Tim````````e```````` <String>]`: Th````````e```````` Tim````````e````````stamp of th````````e```````` last updat````````e````````.
+    - `[Op````````e````````ratingSyst````````e````````mK````````e````````rn````````e````````lD````````e````````bugging <String>]`: Wh````````e````````n op````````e````````ratingSyst````````e````````mK````````e````````rn````````e````````lD````````e````````bugging is ````````e````````nabl````````e````````d, th````````e```````` d````````e````````vic````````e```````` is us````````e````````d in d````````e````````v````````e````````lopm````````e````````nt and t````````e````````sting
+    - `[Op````````e````````ratingSyst````````e````````mR````````e````````vListInfo <String>]`: Th````````e```````` Op````````e````````rating Syst````````e````````m R````````e````````vision List that was load````````e````````d during initial boot on th````````e```````` att````````e````````st````````e````````d d````````e````````vic````````e````````
+    - `[Pcr0 <String>]`: Th````````e```````` m````````e````````asur````````e````````m````````e````````nt that is captur````````e````````d in PCR[0]
+    - `[PcrHashAlgorithm <String>]`: Informational attribut````````e```````` that id````````e````````ntifi````````e````````s th````````e```````` HASH algorithm that was us````````e````````d by TPM
+    - `[R````````e````````s````````e````````tCount <Int64?>]`: Th````````e```````` numb````````e````````r of tim````````e````````s a PC d````````e````````vic````````e```````` has hib````````e````````rnat````````e````````d or r````````e````````sum````````e````````d
+    - `[R````````e````````startCount <Int64?>]`: Th````````e```````` numb````````e````````r of tim````````e````````s a PC d````````e````````vic````````e```````` has r````````e````````boot````````e````````d
+    - `[Saf````````e````````Mod````````e```````` <String>]`: Saf````````e```````` mod````````e```````` is a troubl````````e````````shooting option for Windows that starts your comput````````e````````r in a limit````````e````````d stat````````e````````
+    - `[S````````e````````cur````````e````````Boot <String>]`: Wh````````e````````n S````````e````````cur````````e```````` Boot is ````````e````````nabl````````e````````d, th````````e```````` cor````````e```````` compon````````e````````nts must hav````````e```````` th````````e```````` corr````````e````````ct cryptographic signatur````````e````````s
+    - `[S````````e````````cur````````e````````BootConfigurationPolicyFing````````e````````rPrint <String>]`: Fing````````e````````rprint of th````````e```````` Custom S````````e````````cur````````e```````` Boot Configuration Policy
+    - `[T````````e````````stSigning <String>]`: Wh````````e````````n t````````e````````st signing is allow````````e````````d, th````````e```````` d````````e````````vic````````e```````` do````````e````````s not ````````e````````nforc````````e```````` signatur````````e```````` validation during boot
+    - `[TpmV````````e````````rsion <String>]`: Th````````e```````` s````````e````````curity v````````e````````rsion numb````````e````````r of th````````e```````` Boot Application
+    - `[VirtualS````````e````````cur````````e````````Mod````````e```````` <String>]`: VSM is a contain````````e````````r that prot````````e````````cts high valu````````e```````` ass````````e````````ts from a compromis````````e````````d k````````e````````rn````````e````````l
+    - `[WindowsP````````e```````` <String>]`: Op````````e````````rating syst````````e````````m running with limit````````e````````d s````````e````````rvic````````e````````s that is us````````e````````d to pr````````e````````par````````e```````` a comput````````e````````r for Windows
+  - `[D````````e````````vic````````e````````Nam````````e```````` <String>]`: Nam````````e```````` of th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[D````````e````````vic````````e````````R````````e````````gistrationStat````````e```````` <D````````e````````vic````````e````````R````````e````````gistrationStat````````e````````?>]`: D````````e````````vic````````e```````` r````````e````````gistration status.
+  - `[````````e````````asActivat````````e````````d <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r th````````e```````` d````````e````````vic````````e```````` is ````````e````````xchang````````e```````` Activ````````e````````Sync activat````````e````````d. This prop````````e````````rty is r````````e````````ad-only.
+  - `[````````e````````asActivationDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: ````````e````````xchang````````e```````` ActivationSync activation tim````````e```````` of th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[````````e````````asD````````e````````vic````````e````````Id <String>]`: ````````e````````xchang````````e```````` Activ````````e````````Sync Id of th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[````````e````````mailAddr````````e````````ss <String>]`: ````````e````````mail(s) for th````````e```````` us````````e````````r associat````````e````````d with th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[````````e````````nroll````````e````````dDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: ````````e````````nrollm````````e````````nt tim````````e```````` of th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[````````e````````th````````e````````rn````````e````````tMacAddr````````e````````ss <String>]`: ````````e````````th````````e````````rn````````e````````t MAC. This prop````````e````````rty is r````````e````````ad-only.
+  - `[````````e````````xchang````````e````````Acc````````e````````ssStat````````e```````` <D````````e````````vic````````e````````Manag````````e````````m````````e````````nt````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````?>]`: D````````e````````vic````````e```````` ````````e````````xchang````````e```````` Acc````````e````````ss Stat````````e````````.
+  - `[````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````R````````e````````ason <D````````e````````vic````````e````````Manag````````e````````m````````e````````nt````````e````````xchang````````e````````Acc````````e````````ssStat````````e````````R````````e````````ason?>]`: D````````e````````vic````````e```````` ````````e````````xchang````````e```````` Acc````````e````````ss Stat````````e```````` R````````e````````ason.
+  - `[````````e````````xchang````````e````````LastSucc````````e````````ssfulSyncDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: Last tim````````e```````` th````````e```````` d````````e````````vic````````e```````` contact````````e````````d ````````e````````xchang````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Fr````````e````````````````e````````Storag````````e````````Spac````````e````````InByt````````e````````s <Int64?>]`: Fr````````e````````````````e```````` Storag````````e```````` in Byt````````e````````s. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Iccid <String>]`: Int````````e````````grat````````e````````d Circuit Card Id````````e````````ntifi````````e````````r, it is A SIM card's uniqu````````e```````` id````````e````````ntification numb````````e````````r. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Im````````e````````i <String>]`: IM````````e````````I. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Is````````e````````ncrypt````````e````````d <Bool````````e````````an?>]`: D````````e````````vic````````e```````` ````````e````````ncryption status. This prop````````e````````rty is r````````e````````ad-only.
+  - `[IsSup````````e````````rvis````````e````````d <Bool````````e````````an?>]`: D````````e````````vic````````e```````` sup````````e````````rvis````````e````````d status. This prop````````e````````rty is r````````e````````ad-only.
+  - `[JailBrok````````e````````n <String>]`: wh````````e````````th````````e````````r th````````e```````` d````````e````````vic````````e```````` is jail brok````````e````````n or root````````e````````d. This prop````````e````````rty is r````````e````````ad-only.
+  - `[LastSyncDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: Th````````e```````` dat````````e```````` and tim````````e```````` that th````````e```````` d````````e````````vic````````e```````` last compl````````e````````t````````e````````d a succ````````e````````ssful sync with Intun````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Manag````````e````````dD````````e````````vic````````e````````Nam````````e```````` <String>]`: Automatically g````````e````````n````````e````````rat````````e````````d nam````````e```````` to id````````e````````ntify a d````````e````````vic````````e````````. Can b````````e```````` ov````````e````````rwritt````````e````````n to a us````````e````````r fri````````e````````ndly nam````````e````````.
+  - `[Manag````````e````````dD````````e````````vic````````e````````Own````````e````````rTyp````````e```````` <Manag````````e````````dD````````e````````vic````````e````````Own````````e````````rTyp````````e````````?>]`: Own````````e````````r typ````````e```````` of d````````e````````vic````````e````````.
+  - `[Manag````````e````````m````````e````````ntAg````````e````````nt <Manag````````e````````m````````e````````ntAg````````e````````ntTyp````````e````````?>]`: Manag````````e````````m````````e````````nt ag````````e````````nt typ````````e````````.
+  - `[Manufactur````````e````````r <String>]`: Manufactur````````e````````r of th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[M````````e````````id <String>]`: M````````e````````ID. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Mod````````e````````l <String>]`: Mod````````e````````l of th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Not````````e````````s <String>]`: Not````````e````````s on th````````e```````` d````````e````````vic````````e```````` cr````````e````````at````````e````````d by IT Admin
+  - `[OSV````````e````````rsion <String>]`: Op````````e````````rating syst````````e````````m v````````e````````rsion of th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Op````````e````````ratingSyst````````e````````m <String>]`: Op````````e````````rating syst````````e````````m of th````````e```````` d````````e````````vic````````e````````. Windows, iOS, ````````e````````tc. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Partn````````e````````rR````````e````````port````````e````````dThr````````e````````atStat````````e```````` <Manag````````e````````dD````````e````````vic````````e````````Partn````````e````````rR````````e````````port````````e````````dH````````e````````althStat````````e````````?>]`: Availabl````````e```````` h````````e````````alth stat````````e````````s for th````````e```````` D````````e````````vic````````e```````` H````````e````````alth API
+  - `[Phon````````e````````Numb````````e````````r <String>]`: Phon````````e```````` numb````````e````````r of th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[PhysicalM````````e````````moryInByt````````e````````s <Int64?>]`: Total M````````e````````mory in Byt````````e````````s. This prop````````e````````rty is r````````e````````ad-only.
+  - `[R````````e````````mot````````e````````Assistanc````````e````````S````````e````````ssion````````e````````rrorD````````e````````tails <String>]`: An ````````e````````rror string that id````````e````````ntifi````````e````````s issu````````e````````s wh````````e````````n cr````````e````````ating R````````e````````mot````````e```````` Assistanc````````e```````` s````````e````````ssion obj````````e````````cts. This prop````````e````````rty is r````````e````````ad-only.
+  - `[R````````e````````mot````````e````````Assistanc````````e````````S````````e````````ssionUrl <String>]`: Url that allows a R````````e````````mot````````e```````` Assistanc````````e```````` s````````e````````ssion to b````````e```````` ````````e````````stablish````````e````````d with th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[S````````e````````rialNumb````````e````````r <String>]`: S````````e````````rialNumb````````e````````r. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Subscrib````````e````````rCarri````````e````````r <String>]`: Subscrib````````e````````r Carri````````e````````r. This prop````````e````````rty is r````````e````````ad-only.
+  - `[TotalStorag````````e````````Spac````````e````````InByt````````e````````s <Int64?>]`: Total Storag````````e```````` in Byt````````e````````s. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Udid <String>]`: Uniqu````````e```````` D````````e````````vic````````e```````` Id````````e````````ntifi````````e````````r for iOS and macOS d````````e````````vic````````e````````s. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Us````````e````````rDisplayNam````````e```````` <String>]`: Us````````e````````r display nam````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Us````````e````````rId <String>]`: Uniqu````````e```````` Id````````e````````ntifi````````e````````r for th````````e```````` us````````e````````r associat````````e````````d with th````````e```````` d````````e````````vic````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[Us````````e````````rPrincipalNam````````e```````` <String>]`: D````````e````````vic````````e```````` us````````e````````r principal nam````````e````````. This prop````````e````````rty is r````````e````````ad-only.
+  - `[WiFiMacAddr````````e````````ss <String>]`: Wi-Fi MAC. This prop````````e````````rty is r````````e````````ad-only.
 
-CONFIGURATIONMANAGERCLIENTENABLEDFEATURES <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>: configuration Manager client enabled features
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
-  - `[DeviceConfiguration <Boolean?>]`: Whether device configuration is managed by Intune
-  - `[Inventory <Boolean?>]`: Whether inventory is managed by Intune
-  - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
-  - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
-  - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
+CONFIGURATIONMANAG````````e````````RCLI````````e````````NT````````e````````NABL````````e````````DF````````e````````ATUR````````e````````S <IMicrosoftGraphConfigurationManag````````e````````rCli````````e````````nt````````e````````nabl````````e````````dF````````e````````atur````````e````````s1>: configuration Manag````````e````````r cli````````e````````nt ````````e````````nabl````````e````````d f````````e````````atur````````e````````s
+  - `[(Any) <Obj````````e````````ct>]`: This indicat````````e````````s any prop````````e````````rty can b````````e```````` add````````e````````d to this obj````````e````````ct.
+  - `[Complianc````````e````````Policy <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r complianc````````e```````` policy is manag````````e````````d by Intun````````e````````
+  - `[D````````e````````vic````````e````````Configuration <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r d````````e````````vic````````e```````` configuration is manag````````e````````d by Intun````````e````````
+  - `[Inv````````e````````ntory <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r inv````````e````````ntory is manag````````e````````d by Intun````````e````````
+  - `[Mod````````e````````rnApps <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r mod````````e````````rn application is manag````````e````````d by Intun````````e````````
+  - `[R````````e````````sourc````````e````````Acc````````e````````ss <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r r````````e````````sourc````````e```````` acc````````e````````ss is manag````````e````````d by Intun````````e````````
+  - `[WindowsUpdat````````e````````ForBusin````````e````````ss <Bool````````e````````an?>]`: Wh````````e````````th````````e````````r Windows Updat````````e```````` for Busin````````e````````ss is manag````````e````````d by Intun````````e````````
 
-DEVICEACTIONRESULTS <IMicrosoftGraphDeviceActionResult1[]>: List of ComplexType deviceActionResult objects. This property is read-only.
-  - `[ActionName <String>]`: Action name
-  - `[ActionState <ActionState?>]`: State of the action on the device
-  - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
-  - `[StartDateTime <DateTime?>]`: Time the action was initiated
+D````````e````````VIC````````e````````ACTIONR````````e````````SULTS <IMicrosoftGraphD````````e````````vic````````e````````ActionR````````e````````sult1[]>: List of Compl````````e````````xTyp````````e```````` d````````e````````vic````````e````````ActionR````````e````````sult obj````````e````````cts. This prop````````e````````rty is r````````e````````ad-only.
+  - `[ActionNam````````e```````` <String>]`: Action nam````````e````````
+  - `[ActionStat````````e```````` <ActionStat````````e````````?>]`: Stat````````e```````` of th````````e```````` action on th````````e```````` d````````e````````vic````````e````````
+  - `[LastUpdat````````e````````dDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: Tim````````e```````` th````````e```````` action stat````````e```````` was last updat````````e````````d
+  - `[StartDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: Tim````````e```````` th````````e```````` action was initiat````````e````````d
 
-DEVICECATEGORY <IMicrosoftGraphDeviceCategory2>: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+D````````e````````VIC````````e````````CAT````````e````````GORY <IMicrosoftGraphD````````e````````vic````````e````````Cat````````e````````gory2>: D````````e````````vic````````e```````` cat````````e````````gori````````e````````s provid````````e````````s a way to organiz````````e```````` your d````````e````````vic````````e````````s. Using d````````e````````vic````````e```````` cat````````e````````gori````````e````````s, company administrators can d````````e````````fin````````e```````` th````````e````````ir own cat````````e````````gori````````e````````s that mak````````e```````` s````````e````````ns````````e```````` to th````````e````````ir company. Th````````e````````s````````e```````` cat````````e````````gori````````e````````s can th````````e````````n b````````e```````` appli````````e````````d to a d````````e````````vic````````e```````` in th````````e```````` Intun````````e```````` Azur````````e```````` consol````````e```````` or s````````e````````l````````e````````ct````````e````````d by a us````````e````````r during d````````e````````vic````````e```````` ````````e````````nrollm````````e````````nt. You can filt````````e````````r r````````e````````ports and cr````````e````````at````````e```````` dynamic Azur````````e```````` Activ````````e```````` Dir````````e````````ctory d````````e````````vic````````e```````` groups bas````````e````````d on d````````e````````vic````````e```````` cat````````e````````gori````````e````````s.
+  - `[(Any) <Obj````````e````````ct>]`: This indicat````````e````````s any prop````````e````````rty can b````````e```````` add````````e````````d to this obj````````e````````ct.
   - `[Id <String>]`: 
-  - `[Description <String>]`: Optional description for the device category.
-  - `[DisplayName <String>]`: Display name for the device category.
+  - `[D````````e````````scription <String>]`: Optional d````````e````````scription for th````````e```````` d````````e````````vic````````e```````` cat````````e````````gory.
+  - `[DisplayNam````````e```````` <String>]`: Display nam````````e```````` for th````````e```````` d````````e````````vic````````e```````` cat````````e````````gory.
 
-DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1[]>: Device compliance policy states for this device.
+D````````e````````VIC````````e````````COMPLIANC````````e````````POLICYSTAT````````e````````S <IMicrosoftGraphD````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````1[]>: D````````e````````vic````````e```````` complianc````````e```````` policy stat````````e````````s for this d````````e````````vic````````e````````.
   - `[Id <String>]`: 
-  - `[DisplayName <String>]`: The name of the policy for this policyBase
-  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
-  - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
-  - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>]`: 
-    - `[CurrentValue <String>]`: Current value of setting on device
-    - `[ErrorCode <Int64?>]`: Error code for the setting
-    - `[ErrorDescription <String>]`: Error description
-    - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
-    - `[Setting <String>]`: The setting that is being reported
-    - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-    - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
-      - `[DisplayName <String>]`: Not yet documented
-      - `[Id <String>]`: Not yet documented
-      - `[SourceType <String>]`: settingSourceType
-    - `[State <String>]`: complianceStatus
-    - `[UserEmail <String>]`: UserEmail
-    - `[UserId <String>]`: UserId
-    - `[UserName <String>]`: UserName
-    - `[UserPrincipalName <String>]`: UserPrincipalName.
-  - `[State <String>]`: complianceStatus
-  - `[Version <Int32?>]`: The version of the policy
+  - `[DisplayNam````````e```````` <String>]`: Th````````e```````` nam````````e```````` of th````````e```````` policy for this policyBas````````e````````
+  - `[PlatformTyp````````e```````` <PolicyPlatformTyp````````e````````?>]`: Support````````e````````d platform typ````````e````````s for polici````````e````````s.
+  - `[S````````e````````ttingCount <Int32?>]`: Count of how many s````````e````````tting a policy holds
+  - `[S````````e````````ttingStat````````e````````s <IMicrosoftGraphD````````e````````vic````````e````````Complianc````````e````````PolicyS````````e````````ttingStat````````e````````1[]>]`: 
+    - `[Curr````````e````````ntValu````````e```````` <String>]`: Curr````````e````````nt valu````````e```````` of s````````e````````tting on d````````e````````vic````````e````````
+    - `[````````e````````rrorCod````````e```````` <Int64?>]`: ````````e````````rror cod````````e```````` for th````````e```````` s````````e````````tting
+    - `[````````e````````rrorD````````e````````scription <String>]`: ````````e````````rror d````````e````````scription
+    - `[Instanc````````e````````DisplayNam````````e```````` <String>]`: Nam````````e```````` of s````````e````````tting instanc````````e```````` that is b````````e````````ing r````````e````````port````````e````````d.
+    - `[S````````e````````tting <String>]`: Th````````e```````` s````````e````````tting that is b````````e````````ing r````````e````````port````````e````````d
+    - `[S````````e````````ttingNam````````e```````` <String>]`: Localiz````````e````````d/us````````e````````r fri````````e````````ndly s````````e````````tting nam````````e```````` that is b````````e````````ing r````````e````````port````````e````````d
+    - `[Sourc````````e````````s <IMicrosoftGraphS````````e````````ttingSourc````````e````````[]>]`: Contributing polici````````e````````s
+      - `[DisplayNam````````e```````` <String>]`: Not y````````e````````t docum````````e````````nt````````e````````d
+      - `[Id <String>]`: Not y````````e````````t docum````````e````````nt````````e````````d
+      - `[Sourc````````e````````Typ````````e```````` <String>]`: s````````e````````ttingSourc````````e````````Typ````````e````````
+    - `[Stat````````e```````` <String>]`: complianc````````e````````Status
+    - `[Us````````e````````r````````e````````mail <String>]`: Us````````e````````r````````e````````mail
+    - `[Us````````e````````rId <String>]`: Us````````e````````rId
+    - `[Us````````e````````rNam````````e```````` <String>]`: Us````````e````````rNam````````e````````
+    - `[Us````````e````````rPrincipalNam````````e```````` <String>]`: Us````````e````````rPrincipalNam````````e````````.
+  - `[Stat````````e```````` <String>]`: complianc````````e````````Status
+  - `[V````````e````````rsion <Int32?>]`: Th````````e```````` v````````e````````rsion of th````````e```````` policy
 
-DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1[]>: Device configuration states for this device.
+D````````e````````VIC````````e````````CONFIGURATIONSTAT````````e````````S <IMicrosoftGraphD````````e````````vic````````e````````ConfigurationStat````````e````````1[]>: D````````e````````vic````````e```````` configuration stat````````e````````s for this d````````e````````vic````````e````````.
   - `[Id <String>]`: 
-  - `[DisplayName <String>]`: The name of the policy for this policyBase
-  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
-  - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
-  - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
-    - `[CurrentValue <String>]`: Current value of setting on device
-    - `[ErrorCode <Int64?>]`: Error code for the setting
-    - `[ErrorDescription <String>]`: Error description
-    - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
-    - `[Setting <String>]`: The setting that is being reported
-    - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-    - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
-      - `[DisplayName <String>]`: Not yet documented
-      - `[Id <String>]`: Not yet documented
-      - `[SourceType <String>]`: settingSourceType
-    - `[State <String>]`: complianceStatus
-    - `[UserEmail <String>]`: UserEmail
-    - `[UserId <String>]`: UserId
-    - `[UserName <String>]`: UserName
-    - `[UserPrincipalName <String>]`: UserPrincipalName.
-  - `[State <String>]`: complianceStatus
-  - `[Version <Int32?>]`: The version of the policy
+  - `[DisplayNam````````e```````` <String>]`: Th````````e```````` nam````````e```````` of th````````e```````` policy for this policyBas````````e````````
+  - `[PlatformTyp````````e```````` <PolicyPlatformTyp````````e````````?>]`: Support````````e````````d platform typ````````e````````s for polici````````e````````s.
+  - `[S````````e````````ttingCount <Int32?>]`: Count of how many s````````e````````tting a policy holds
+  - `[S````````e````````ttingStat````````e````````s <IMicrosoftGraphD````````e````````vic````````e````````ConfigurationS````````e````````ttingStat````````e````````1[]>]`: 
+    - `[Curr````````e````````ntValu````````e```````` <String>]`: Curr````````e````````nt valu````````e```````` of s````````e````````tting on d````````e````````vic````````e````````
+    - `[````````e````````rrorCod````````e```````` <Int64?>]`: ````````e````````rror cod````````e```````` for th````````e```````` s````````e````````tting
+    - `[````````e````````rrorD````````e````````scription <String>]`: ````````e````````rror d````````e````````scription
+    - `[Instanc````````e````````DisplayNam````````e```````` <String>]`: Nam````````e```````` of s````````e````````tting instanc````````e```````` that is b````````e````````ing r````````e````````port````````e````````d.
+    - `[S````````e````````tting <String>]`: Th````````e```````` s````````e````````tting that is b````````e````````ing r````````e````````port````````e````````d
+    - `[S````````e````````ttingNam````````e```````` <String>]`: Localiz````````e````````d/us````````e````````r fri````````e````````ndly s````````e````````tting nam````````e```````` that is b````````e````````ing r````````e````````port````````e````````d
+    - `[Sourc````````e````````s <IMicrosoftGraphS````````e````````ttingSourc````````e````````[]>]`: Contributing polici````````e````````s
+      - `[DisplayNam````````e```````` <String>]`: Not y````````e````````t docum````````e````````nt````````e````````d
+      - `[Id <String>]`: Not y````````e````````t docum````````e````````nt````````e````````d
+      - `[Sourc````````e````````Typ````````e```````` <String>]`: s````````e````````ttingSourc````````e````````Typ````````e````````
+    - `[Stat````````e```````` <String>]`: complianc````````e````````Status
+    - `[Us````````e````````r````````e````````mail <String>]`: Us````````e````````r````````e````````mail
+    - `[Us````````e````````rId <String>]`: Us````````e````````rId
+    - `[Us````````e````````rNam````````e```````` <String>]`: Us````````e````````rNam````````e````````
+    - `[Us````````e````````rPrincipalNam````````e```````` <String>]`: Us````````e````````rPrincipalNam````````e````````.
+  - `[Stat````````e```````` <String>]`: complianc````````e````````Status
+  - `[V````````e````````rsion <Int32?>]`: Th````````e```````` v````````e````````rsion of th````````e```````` policy
 
-DEVICEHEALTHATTESTATIONSTATE <IMicrosoftGraphDeviceHealthAttestationState>: deviceHealthAttestationState
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
-  - `[BitLockerStatus <String>]`: On or Off of BitLocker Drive Encryption
-  - `[BootAppSecurityVersion <String>]`: The security version number of the Boot Application
-  - `[BootDebugging <String>]`: When bootDebugging is enabled, the device is used in development and testing
-  - `[BootManagerSecurityVersion <String>]`: The security version number of the Boot Application
-  - `[BootManagerVersion <String>]`: The version of the Boot Manager
-  - `[BootRevisionListInfo <String>]`: The Boot Revision List that was loaded during initial boot on the attested device
-  - `[CodeIntegrity <String>]`: When code integrity is enabled, code execution is restricted to integrity verified code
-  - `[CodeIntegrityCheckVersion <String>]`: The version of the Boot Manager
-  - `[CodeIntegrityPolicy <String>]`: The Code Integrity policy that is controlling the security of the boot environment
-  - `[ContentNamespaceUrl <String>]`: The DHA report version. (Namespace version)
-  - `[ContentVersion <String>]`: The HealthAttestation state schema version
-  - `[DataExcutionPolicy <String>]`: DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
-  - `[DeviceHealthAttestationStatus <String>]`: The DHA report version. (Namespace version)
-  - `[EarlyLaunchAntiMalwareDriverProtection <String>]`: ELAM provides protection for the computers in your network when they start up
-  - `[HealthAttestationSupportedStatus <String>]`: This attribute indicates if DHA is supported for the device
-  - `[HealthStatusMismatchInfo <String>]`: This attribute appears if DHA-Service detects an integrity issue
-  - `[IssuedDateTime <DateTime?>]`: The DateTime when device was evaluated or issued to MDM
-  - `[LastUpdateDateTime <String>]`: The Timestamp of the last update.
-  - `[OperatingSystemKernelDebugging <String>]`: When operatingSystemKernelDebugging is enabled, the device is used in development and testing
-  - `[OperatingSystemRevListInfo <String>]`: The Operating System Revision List that was loaded during initial boot on the attested device
-  - `[Pcr0 <String>]`: The measurement that is captured in PCR[0]
-  - `[PcrHashAlgorithm <String>]`: Informational attribute that identifies the HASH algorithm that was used by TPM
-  - `[ResetCount <Int64?>]`: The number of times a PC device has hibernated or resumed
-  - `[RestartCount <Int64?>]`: The number of times a PC device has rebooted
-  - `[SafeMode <String>]`: Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
-  - `[SecureBoot <String>]`: When Secure Boot is enabled, the core components must have the correct cryptographic signatures
-  - `[SecureBootConfigurationPolicyFingerPrint <String>]`: Fingerprint of the Custom Secure Boot Configuration Policy
-  - `[TestSigning <String>]`: When test signing is allowed, the device does not enforce signature validation during boot
-  - `[TpmVersion <String>]`: The security version number of the Boot Application
-  - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
-  - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
+D````````e````````VIC````````e````````H````````e````````ALTHATT````````e````````STATIONSTAT````````e```````` <IMicrosoftGraphD````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e````````>: d````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStat````````e````````
+  - `[(Any) <Obj````````e````````ct>]`: This indicat````````e````````s any prop````````e````````rty can b````````e```````` add````````e````````d to this obj````````e````````ct.
+  - `[Att````````e````````stationId````````e````````ntityK````````e````````y <String>]`: TWh````````e````````n an Att````````e````````station Id````````e````````ntity K````````e````````y (AIK) is pr````````e````````s````````e````````nt on a d````````e````````vic````````e````````, it indicat````````e````````s that th````````e```````` d````````e````````vic````````e```````` has an ````````e````````ndors````````e````````m````````e````````nt k````````e````````y (````````e````````K) c````````e````````rtificat````````e````````.
+  - `[BitLock````````e````````rStatus <String>]`: On or Off of BitLock````````e````````r Driv````````e```````` ````````e````````ncryption
+  - `[BootAppS````````e````````curityV````````e````````rsion <String>]`: Th````````e```````` s````````e````````curity v````````e````````rsion numb````````e````````r of th````````e```````` Boot Application
+  - `[BootD````````e````````bugging <String>]`: Wh````````e````````n bootD````````e````````bugging is ````````e````````nabl````````e````````d, th````````e```````` d````````e````````vic````````e```````` is us````````e````````d in d````````e````````v````````e````````lopm````````e````````nt and t````````e````````sting
+  - `[BootManag````````e````````rS````````e````````curityV````````e````````rsion <String>]`: Th````````e```````` s````````e````````curity v````````e````````rsion numb````````e````````r of th````````e```````` Boot Application
+  - `[BootManag````````e````````rV````````e````````rsion <String>]`: Th````````e```````` v````````e````````rsion of th````````e```````` Boot Manag````````e````````r
+  - `[BootR````````e````````visionListInfo <String>]`: Th````````e```````` Boot R````````e````````vision List that was load````````e````````d during initial boot on th````````e```````` att````````e````````st````````e````````d d````````e````````vic````````e````````
+  - `[Cod````````e````````Int````````e````````grity <String>]`: Wh````````e````````n cod````````e```````` int````````e````````grity is ````````e````````nabl````````e````````d, cod````````e```````` ````````e````````x````````e````````cution is r````````e````````strict````````e````````d to int````````e````````grity v````````e````````rifi````````e````````d cod````````e````````
+  - `[Cod````````e````````Int````````e````````grityCh````````e````````ckV````````e````````rsion <String>]`: Th````````e```````` v````````e````````rsion of th````````e```````` Boot Manag````````e````````r
+  - `[Cod````````e````````Int````````e````````grityPolicy <String>]`: Th````````e```````` Cod````````e```````` Int````````e````````grity policy that is controlling th````````e```````` s````````e````````curity of th````````e```````` boot ````````e````````nvironm````````e````````nt
+  - `[Cont````````e````````ntNam````````e````````spac````````e````````Url <String>]`: Th````````e```````` DHA r````````e````````port v````````e````````rsion. (Nam````````e````````spac````````e```````` v````````e````````rsion)
+  - `[Cont````````e````````ntV````````e````````rsion <String>]`: Th````````e```````` H````````e````````althAtt````````e````````station stat````````e```````` sch````````e````````ma v````````e````````rsion
+  - `[Data````````e````````xcutionPolicy <String>]`: D````````e````````P Policy d````````e````````fin````````e````````s a s````````e````````t of hardwar````````e```````` and softwar````````e```````` t````````e````````chnologi````````e````````s that p````````e````````rform additional ch````````e````````cks on m````````e````````mory
+  - `[D````````e````````vic````````e````````H````````e````````althAtt````````e````````stationStatus <String>]`: Th````````e```````` DHA r````````e````````port v````````e````````rsion. (Nam````````e````````spac````````e```````` v````````e````````rsion)
+  - `[````````e````````arlyLaunchAntiMalwar````````e````````Driv````````e````````rProt````````e````````ction <String>]`: ````````e````````LAM provid````````e````````s prot````````e````````ction for th````````e```````` comput````````e````````rs in your n````````e````````twork wh````````e````````n th````````e````````y start up
+  - `[H````````e````````althAtt````````e````````stationSupport````````e````````dStatus <String>]`: This attribut````````e```````` indicat````````e````````s if DHA is support````````e````````d for th````````e```````` d````````e````````vic````````e````````
+  - `[H````````e````````althStatusMismatchInfo <String>]`: This attribut````````e```````` app````````e````````ars if DHA-S````````e````````rvic````````e```````` d````````e````````t````````e````````cts an int````````e````````grity issu````````e````````
+  - `[Issu````````e````````dDat````````e````````Tim````````e```````` <Dat````````e````````Tim````````e````````?>]`: Th````````e```````` Dat````````e````````Tim````````e```````` wh````````e````````n d````````e````````vic````````e```````` was ````````e````````valuat````````e````````d or issu````````e````````d to MDM
+  - `[LastUpdat````````e````````Dat````````e````````Tim````````e```````` <String>]`: Th````````e```````` Tim````````e````````stamp of th````````e```````` last updat````````e````````.
+  - `[Op````````e````````ratingSyst````````e````````mK````````e````````rn````````e````````lD````````e````````bugging <String>]`: Wh````````e````````n op````````e````````ratingSyst````````e````````mK````````e````````rn````````e````````lD````````e````````bugging is ````````e````````nabl````````e````````d, th````````e```````` d````````e````````vic````````e```````` is us````````e````````d in d````````e````````v````````e````````lopm````````e````````nt and t````````e````````sting
+  - `[Op````````e````````ratingSyst````````e````````mR````````e````````vListInfo <String>]`: Th````````e```````` Op````````e````````rating Syst````````e````````m R````````e````````vision List that was load````````e````````d during initial boot on th````````e```````` att````````e````````st````````e````````d d````````e````````vic````````e````````
+  - `[Pcr0 <String>]`: Th````````e```````` m````````e````````asur````````e````````m````````e````````nt that is captur````````e````````d in PCR[0]
+  - `[PcrHashAlgorithm <String>]`: Informational attribut````````e```````` that id````````e````````ntifi````````e````````s th````````e```````` HASH algorithm that was us````````e````````d by TPM
+  - `[R````````e````````s````````e````````tCount <Int64?>]`: Th````````e```````` numb````````e````````r of tim````````e````````s a PC d````````e````````vic````````e```````` has hib````````e````````rnat````````e````````d or r````````e````````sum````````e````````d
+  - `[R````````e````````startCount <Int64?>]`: Th````````e```````` numb````````e````````r of tim````````e````````s a PC d````````e````````vic````````e```````` has r````````e````````boot````````e````````d
+  - `[Saf````````e````````Mod````````e```````` <String>]`: Saf````````e```````` mod````````e```````` is a troubl````````e````````shooting option for Windows that starts your comput````````e````````r in a limit````````e````````d stat````````e````````
+  - `[S````````e````````cur````````e````````Boot <String>]`: Wh````````e````````n S````````e````````cur````````e```````` Boot is ````````e````````nabl````````e````````d, th````````e```````` cor````````e```````` compon````````e````````nts must hav````````e```````` th````````e```````` corr````````e````````ct cryptographic signatur````````e````````s
+  - `[S````````e````````cur````````e````````BootConfigurationPolicyFing````````e````````rPrint <String>]`: Fing````````e````````rprint of th````````e```````` Custom S````````e````````cur````````e```````` Boot Configuration Policy
+  - `[T````````e````````stSigning <String>]`: Wh````````e````````n t````````e````````st signing is allow````````e````````d, th````````e```````` d````````e````````vic````````e```````` do````````e````````s not ````````e````````nforc````````e```````` signatur````````e```````` validation during boot
+  - `[TpmV````````e````````rsion <String>]`: Th````````e```````` s````````e````````curity v````````e````````rsion numb````````e````````r of th````````e```````` Boot Application
+  - `[VirtualS````````e````````cur````````e````````Mod````````e```````` <String>]`: VSM is a contain````````e````````r that prot````````e````````cts high valu````````e```````` ass````````e````````ts from a compromis````````e````````d k````````e````````rn````````e````````l
+  - `[WindowsP````````e```````` <String>]`: Op````````e````````rating syst````````e````````m running with limit````````e````````d s````````e````````rvic````````e````````s that is us````````e````````d to pr````````e````````par````````e```````` a comput````````e````````r for Windows
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
-  - `[Count <Int64?>]`: Usage: count={count}
-  - `[DefaultManagedAppProtectionId <String>]`: key: id of defaultManagedAppProtection
-  - `[DetectedAppId <String>]`: key: id of detectedApp
-  - `[DeviceAppManagementTaskId <String>]`: key: id of deviceAppManagementTask
-  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
-  - `[DeviceInstallStateId <String>]`: key: id of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
-  - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
-  - `[EnterpriseCodeSigningCertificateId <String>]`: key: id of enterpriseCodeSigningCertificate
-  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: key: id of iosLobAppProvisioningConfigurationAssignment
-  - `[IosLobAppProvisioningConfigurationId <String>]`: key: id of iosLobAppProvisioningConfiguration
-  - `[IosManagedAppProtectionId <String>]`: key: id of iosManagedAppProtection
-  - `[ManagedAppOperationId <String>]`: key: id of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: key: id of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: key: id of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: key: id of managedAppStatus
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: key: id of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: key: id of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: key: id of managedEBookAssignment
-  - `[ManagedEBookCategoryId <String>]`: key: id of managedEBookCategory
-  - `[ManagedEBookId <String>]`: key: id of managedEBook
-  - `[ManagedMobileAppId <String>]`: key: id of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: key: id of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: key: id of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: key: id of mobileAppCategory
-  - `[MobileAppId <String>]`: key: id of mobileApp
-  - `[MobileAppInstallStatusId <String>]`: key: id of mobileAppInstallStatus
-  - `[MobileAppIntentAndStateId <String>]`: key: id of mobileAppIntentAndState
-  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: key: id of mobileAppProvisioningConfigGroupAssignment
-  - `[MobileAppRelationshipId <String>]`: key: id of mobileAppRelationship
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[OfficeClientConfigurationAssignmentId <String>]`: key: id of officeClientConfigurationAssignment
-  - `[OfficeClientConfigurationId <String>]`: key: id of officeClientConfiguration
-  - `[PolicySetAssignmentId <String>]`: key: id of policySetAssignment
-  - `[PolicySetId <String>]`: key: id of policySet
-  - `[PolicySetItemId <String>]`: key: id of policySetItem
-  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
-  - `[SideLoadingKeyId <String>]`: key: id of sideLoadingKey
-  - `[Status <String>]`: Usage: status='{status}'
-  - `[TargetedManagedAppConfigurationId <String>]`: key: id of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: key: id of targetedManagedAppPolicyAssignment
-  - `[UserAppInstallStatusId <String>]`: key: id of userAppInstallStatus
-  - `[UserId <String>]`: key: id of user
-  - `[UserInstallStateSummaryId <String>]`: key: id of userInstallStateSummary
-  - `[UserPrincipalName <String>]`: Usage: userPrincipalName='{userPrincipalName}'
-  - `[VppTokenId <String>]`: key: id of vppToken
-  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyAssignment
-  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicy
-  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: key: id of windowsInformationProtectionDeviceRegistration
-  - `[WindowsInformationProtectionPolicyId <String>]`: key: id of windowsInformationProtectionPolicy
-  - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
-  - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
+INPUTOBJ````````e````````CT <ID````````e````````vic````````e````````sCorporat````````e````````Manag````````e````````m````````e````````ntId````````e````````ntity>: Id````````e````````ntity Param````````e````````t````````e````````r
+  - `[AndroidManag````````e````````dAppProt````````e````````ctionId <String>]`: k````````e````````y: id of androidManag````````e````````dAppProt````````e````````ction
+  - `[AppLogColl````````e````````ctionR````````e````````qu````````e````````stId <String>]`: k````````e````````y: id of appLogColl````````e````````ctionR````````e````````qu````````e````````st
+  - `[Assignm````````e````````ntFilt````````e````````r````````e````````valuationStatusD````````e````````tailsId <String>]`: k````````e````````y: id of assignm````````e````````ntFilt````````e````````r````````e````````valuationStatusD````````e````````tails
+  - `[Bundl````````e````````Id <String>]`: Usag````````e````````: bundl````````e````````Id='{bundl````````e````````Id}'
+  - `[Count <Int64?>]`: Usag````````e````````: count={count}
+  - `[D````````e````````faultManag````````e````````dAppProt````````e````````ctionId <String>]`: k````````e````````y: id of d````````e````````faultManag````````e````````dAppProt````````e````````ction
+  - `[D````````e````````t````````e````````ct````````e````````dAppId <String>]`: k````````e````````y: id of d````````e````````t````````e````````ct````````e````````dApp
+  - `[D````````e````````vic````````e````````AppManag````````e````````m````````e````````ntTaskId <String>]`: k````````e````````y: id of d````````e````````vic````````e````````AppManag````````e````````m````````e````````ntTask
+  - `[D````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````Id <String>]`: k````````e````````y: id of d````````e````````vic````````e````````Complianc````````e````````PolicyStat````````e````````
+  - `[D````````e````````vic````````e````````ConfigurationStat````````e````````Id <String>]`: k````````e````````y: id of d````````e````````vic````````e````````ConfigurationStat````````e````````
+  - `[D````````e````````vic````````e````````````````e````````nrollm````````e````````ntConfigurationId <String>]`: k````````e````````y: id of d````````e````````vic````````e````````````````e````````nrollm````````e````````ntConfiguration
+  - `[D````````e````````vic````````e````````Id <String>]`: Usag````````e````````: d````````e````````vic````````e````````Id='{d````````e````````vic````````e````````Id}'
+  - `[D````````e````````vic````````e````````InstallStat````````e````````Id <String>]`: k````````e````````y: id of d````````e````````vic````````e````````InstallStat````````e````````
+  - `[D````````e````````vic````````e````````LogColl````````e````````ctionR````````e````````spons````````e````````Id <String>]`: k````````e````````y: id of d````````e````````vic````````e````````LogColl````````e````````ctionR````````e````````spons````````e````````
+  - `[D````````e````````vic````````e````````Manag````````e````````m````````e````````ntTroubl````````e````````shooting````````e````````v````````e````````ntId <String>]`: k````````e````````y: id of d````````e````````vic````````e````````Manag````````e````````m````````e````````ntTroubl````````e````````shooting````````e````````v````````e````````nt
+  - `[````````e````````nrollm````````e````````ntConfigurationAssignm````````e````````ntId <String>]`: k````````e````````y: id of ````````e````````nrollm````````e````````ntConfigurationAssignm````````e````````nt
+  - `[````````e````````nt````````e````````rpris````````e````````Cod````````e````````SigningC````````e````````rtificat````````e````````Id <String>]`: k````````e````````y: id of ````````e````````nt````````e````````rpris````````e````````Cod````````e````````SigningC````````e````````rtificat````````e````````
+  - `[IosLobAppProvisioningConfigurationAssignm````````e````````ntId <String>]`: k````````e````````y: id of iosLobAppProvisioningConfigurationAssignm````````e````````nt
+  - `[IosLobAppProvisioningConfigurationId <String>]`: k````````e````````y: id of iosLobAppProvisioningConfiguration
+  - `[IosManag````````e````````dAppProt````````e````````ctionId <String>]`: k````````e````````y: id of iosManag````````e````````dAppProt````````e````````ction
+  - `[Manag````````e````````dAppOp````````e````````rationId <String>]`: k````````e````````y: id of manag````````e````````dAppOp````````e````````ration
+  - `[Manag````````e````````dAppPolicyId <String>]`: k````````e````````y: id of manag````````e````````dAppPolicy
+  - `[Manag````````e````````dAppR````````e````````gistrationId <String>]`: k````````e````````y: id of manag````````e````````dAppR````````e````````gistration
+  - `[Manag````````e````````dAppStatusId <String>]`: k````````e````````y: id of manag````````e````````dAppStatus
+  - `[Manag````````e````````dD````````e````````vic````````e````````Id <String>]`: k````````e````````y: id of manag````````e````````dD````````e````````vic````````e````````
+  - `[Manag````````e````````dD````````e````````vic````````e````````Mobil````````e````````AppConfigurationAssignm````````e````````ntId <String>]`: k````````e````````y: id of manag````````e````````dD````````e````````vic````````e````````Mobil````````e````````AppConfigurationAssignm````````e````````nt
+  - `[Manag````````e````````dD````````e````````vic````````e````````Mobil````````e````````AppConfigurationD````````e````````vic````````e````````StatusId <String>]`: k````````e````````y: id of manag````````e````````dD````````e````````vic````````e````````Mobil````````e````````AppConfigurationD````````e````````vic````````e````````Status
+  - `[Manag````````e````````dD````````e````````vic````````e````````Mobil````````e````````AppConfigurationId <String>]`: k````````e````````y: id of manag````````e````````dD````````e````````vic````````e````````Mobil````````e````````AppConfiguration
+  - `[Manag````````e````````dD````````e````````vic````````e````````Mobil````````e````````AppConfigurationStat````````e````````Id <String>]`: k````````e````````y: id of manag````````e````````dD````````e````````vic````````e````````Mobil````````e````````AppConfigurationStat````````e````````
+  - `[Manag````````e````````dD````````e````````vic````````e````````Mobil````````e````````AppConfigurationUs````````e````````rStatusId <String>]`: k````````e````````y: id of manag````````e````````dD````````e````````vic````````e````````Mobil````````e````````AppConfigurationUs````````e````````rStatus
+  - `[Manag````````e````````d````````e````````BookAssignm````````e````````ntId <String>]`: k````````e````````y: id of manag````````e````````d````````e````````BookAssignm````````e````````nt
+  - `[Manag````````e````````d````````e````````BookCat````````e````````goryId <String>]`: k````````e````````y: id of manag````````e````````d````````e````````BookCat````````e````````gory
+  - `[Manag````````e````````d````````e````````BookId <String>]`: k````````e````````y: id of manag````````e````````d````````e````````Book
+  - `[Manag````````e````````dMobil````````e````````AppId <String>]`: k````````e````````y: id of manag````````e````````dMobil````````e````````App
+  - `[MdmWindowsInformationProt````````e````````ctionPolicyId <String>]`: k````````e````````y: id of mdmWindowsInformationProt````````e````````ctionPolicy
+  - `[Mobil````````e````````AppAssignm````````e````````ntId <String>]`: k````````e````````y: id of mobil````````e````````AppAssignm````````e````````nt
+  - `[Mobil````````e````````AppCat````````e````````goryId <String>]`: k````````e````````y: id of mobil````````e````````AppCat````````e````````gory
+  - `[Mobil````````e````````AppId <String>]`: k````````e````````y: id of mobil````````e````````App
+  - `[Mobil````````e````````AppInstallStatusId <String>]`: k````````e````````y: id of mobil````````e````````AppInstallStatus
+  - `[Mobil````````e````````AppInt````````e````````ntAndStat````````e````````Id <String>]`: k````````e````````y: id of mobil````````e````````AppInt````````e````````ntAndStat````````e````````
+  - `[Mobil````````e````````AppProvisioningConfigGroupAssignm````````e````````ntId <String>]`: k````````e````````y: id of mobil````````e````````AppProvisioningConfigGroupAssignm````````e````````nt
+  - `[Mobil````````e````````AppR````````e````````lationshipId <String>]`: k````````e````````y: id of mobil````````e````````AppR````````e````````lationship
+  - `[Mobil````````e````````AppTroubl````````e````````shooting````````e````````v````````e````````ntId <String>]`: k````````e````````y: id of mobil````````e````````AppTroubl````````e````````shooting````````e````````v````````e````````nt
+  - `[Offic````````e````````Cli````````e````````ntConfigurationAssignm````````e````````ntId <String>]`: k````````e````````y: id of offic````````e````````Cli````````e````````ntConfigurationAssignm````````e````````nt
+  - `[Offic````````e````````Cli````````e````````ntConfigurationId <String>]`: k````````e````````y: id of offic````````e````````Cli````````e````````ntConfiguration
+  - `[PolicyS````````e````````tAssignm````````e````````ntId <String>]`: k````````e````````y: id of policyS````````e````````tAssignm````````e````````nt
+  - `[PolicyS````````e````````tId <String>]`: k````````e````````y: id of policyS````````e````````t
+  - `[PolicyS````````e````````tIt````````e````````mId <String>]`: k````````e````````y: id of policyS````````e````````tIt````````e````````m
+  - `[S````````e````````curityBas````````e````````lin````````e````````S````````e````````ttingStat````````e````````Id <String>]`: k````````e````````y: id of s````````e````````curityBas````````e````````lin````````e````````S````````e````````ttingStat````````e````````
+  - `[S````````e````````curityBas````````e````````lin````````e````````Stat````````e````````Id <String>]`: k````````e````````y: id of s````````e````````curityBas````````e````````lin````````e````````Stat````````e````````
+  - `[Sid````````e````````LoadingK````````e````````yId <String>]`: k````````e````````y: id of sid````````e````````LoadingK````````e````````y
+  - `[Status <String>]`: Usag````````e````````: status='{status}'
+  - `[Targ````````e````````t````````e````````dManag````````e````````dAppConfigurationId <String>]`: k````````e````````y: id of targ````````e````````t````````e````````dManag````````e````````dAppConfiguration
+  - `[Targ````````e````````t````````e````````dManag````````e````````dAppPolicyAssignm````````e````````ntId <String>]`: k````````e````````y: id of targ````````e````````t````````e````````dManag````````e````````dAppPolicyAssignm````````e````````nt
+  - `[Us````````e````````rAppInstallStatusId <String>]`: k````````e````````y: id of us````````e````````rAppInstallStatus
+  - `[Us````````e````````rId <String>]`: k````````e````````y: id of us````````e````````r
+  - `[Us````````e````````rInstallStat````````e````````SummaryId <String>]`: k````````e````````y: id of us````````e````````rInstallStat````````e````````Summary
+  - `[Us````````e````````rPrincipalNam````````e```````` <String>]`: Usag````````e````````: us````````e````````rPrincipalNam````````e````````='{us````````e````````rPrincipalNam````````e````````}'
+  - `[VppTok````````e````````nId <String>]`: k````````e````````y: id of vppTok````````e````````n
+  - `[WindowsD````````e````````f````````e````````nd````````e````````rApplicationControlSuppl````````e````````m````````e````````ntalPolicyAssignm````````e````````ntId <String>]`: k````````e````````y: id of windowsD````````e````````f````````e````````nd````````e````````rApplicationControlSuppl````````e````````m````````e````````ntalPolicyAssignm````````e````````nt
+  - `[WindowsD````````e````````f````````e````````nd````````e````````rApplicationControlSuppl````````e````````m````````e````````ntalPolicyD````````e````````ploym````````e````````ntStatusId <String>]`: k````````e````````y: id of windowsD````````e````````f````````e````````nd````````e````````rApplicationControlSuppl````````e````````m````````e````````ntalPolicyD````````e````````ploym````````e````````ntStatus
+  - `[WindowsD````````e````````f````````e````````nd````````e````````rApplicationControlSuppl````````e````````m````````e````````ntalPolicyId <String>]`: k````````e````````y: id of windowsD````````e````````f````````e````````nd````````e````````rApplicationControlSuppl````````e````````m````````e````````ntalPolicy
+  - `[WindowsD````````e````````vic````````e````````Malwar````````e````````Stat````````e````````Id <String>]`: k````````e````````y: id of windowsD````````e````````vic````````e````````Malwar````````e````````Stat````````e````````
+  - `[WindowsInformationProt````````e````````ctionD````````e````````vic````````e````````R````````e````````gistrationId <String>]`: k````````e````````y: id of windowsInformationProt````````e````````ctionD````````e````````vic````````e````````R````````e````````gistration
+  - `[WindowsInformationProt````````e````````ctionPolicyId <String>]`: k````````e````````y: id of windowsInformationProt````````e````````ctionPolicy
+  - `[WindowsInformationProt````````e````````ctionWip````````e````````ActionId <String>]`: k````````e````````y: id of windowsInformationProt````````e````````ctionWip````````e````````Action
+  - `[WindowsManag````````e````````dAppProt````````e````````ctionId <String>]`: k````````e````````y: id of windowsManag````````e````````dAppProt````````e````````ction
 
-## RELATED LINKS
+## R````````e````````LAT````````e````````D LINKS
 
-## RELATED LINKS
+## R````````e````````LAT````````e````````D LINKS
