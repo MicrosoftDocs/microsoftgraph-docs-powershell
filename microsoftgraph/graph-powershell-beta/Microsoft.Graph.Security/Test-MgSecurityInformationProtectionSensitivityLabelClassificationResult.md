@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/test-mgsecurityinformationprotectionsensitivitylabelclassificationresult
@@ -145,7 +145,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClassificationResults <IMicrosoftGraphSecurityClassificationResult[]>]`: 
     - `[ConfidenceLevel <Int32?>]`: 
@@ -160,12 +160,12 @@ BODYPARAMETER <IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicros
       - `[Value <String>]`: 
     - `[State <String>]`: contentState
 
-CLASSIFICATIONRESULTS <IMicrosoftGraphSecurityClassificationResult[]>: .
+CLASSIFICATIONRESULTS <IMicrosoftGraphSecurityClassificationResult\[]>: .
   - `[ConfidenceLevel <Int32?>]`: 
   - `[Count <Int32?>]`: 
   - `[SensitiveTypeId <String>]`: 
 
-CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
+CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: 
   - `[Identifier <String>]`: 
