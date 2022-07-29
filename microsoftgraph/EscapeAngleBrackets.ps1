@@ -159,7 +159,8 @@ function Special-Escape{
     $s.Add("1", "<extension>")
     $s.Add("2", "<number>")
     $s.Add("3", "<at id='{index}'>") 
-    $s.Add("4", "<application-client-id>") 
+    $s.Add("4", "<application-client-id>")
+    $s.Add("5", "<data-id>") 
     $s.Values | ForEach-Object {  
     $string = $_
 	$a = $string.Replace('<','`<').Replace('>','>`')
