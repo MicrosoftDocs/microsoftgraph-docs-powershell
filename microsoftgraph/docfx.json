@@ -11,7 +11,7 @@
       {
         "files": [
           "**/*.md",
-	  "index.yml"
+	  "**/*.yml"
         ],
         "src": "docs-conceptual",
         "dest": "microsoftgraph"
