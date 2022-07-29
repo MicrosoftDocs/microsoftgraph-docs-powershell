@@ -116,8 +116,8 @@ function Add-Back-Ticks{
     $text > $tempFilePath
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
-    Refine_File -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
-
+    #Refine_File -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+     Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 }
 function Refine_File{
     param (
