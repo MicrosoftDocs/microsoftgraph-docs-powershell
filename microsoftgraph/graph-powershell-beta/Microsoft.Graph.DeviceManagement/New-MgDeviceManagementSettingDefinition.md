@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementsettingdefinition
@@ -296,7 +296,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementSettingDefinition>: Entity representing the defintion for a given setting
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementSettingDefinition>`: Entity representing the defintion for a given setting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
@@ -313,7 +313,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementSettingDefinition>: Entity represe
   - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
   - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
 
-DEPENDENCIES <IMicrosoftGraphDeviceManagementSettingDependency[]>: Collection of dependencies on other settings
+DEPENDENCIES <IMicrosoftGraphDeviceManagementSettingDependency\[]>: Collection of dependencies on other settings
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
   - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
 
