@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbulkdevicemanagementmanageddevicereprovisioncloudpc
@@ -40,7 +40,7 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-BODYPARAMETER <IPaths16D2Us5DevicemanagementManageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths16D2Us5DevicemanagementManageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ManagedDeviceIds <String[]>]`: 
 
