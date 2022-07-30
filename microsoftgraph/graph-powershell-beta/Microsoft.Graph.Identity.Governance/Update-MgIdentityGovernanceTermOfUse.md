@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermofuse
@@ -174,7 +174,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AGREEMENTACCEPTANCES <IMicrosoftGraphAgreementAcceptance[]>: Represents the current status of a user's response to a company's customizable terms of use agreement.
+AGREEMENTACCEPTANCES <IMicrosoftGraphAgreementAcceptance\[]>: Represents the current status of a user's response to a company's customizable terms of use agreement.
   - `[Id <String>]`: 
   - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
   - `[AgreementId <String>]`: ID of the agreement.
@@ -190,7 +190,7 @@ AGREEMENTACCEPTANCES <IMicrosoftGraphAgreementAcceptance[]>: Represents the curr
   - `[UserId <String>]`: ID of the user who accepted the agreement.
   - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
 
-AGREEMENTS <IMicrosoftGraphAgreement[]>: Represents a tenant's customizable terms of use agreement that's created and managed with Azure Active Directory (Azure AD).
+AGREEMENTS <IMicrosoftGraphAgreement\[]>: Represents a tenant's customizable terms of use agreement that's created and managed with Azure Active Directory (Azure AD).
   - `[Id <String>]`: 
   - `[Acceptances <IMicrosoftGraphAgreementAcceptance[]>]`: Read-only. Information about acceptances of this agreement.
     - `[Id <String>]`: 
@@ -247,7 +247,7 @@ AGREEMENTS <IMicrosoftGraphAgreement[]>: Represents a tenant's customizable term
     - `[StartDateTime <DateTime?>]`: The DateTime when the agreement is set to expire for all users. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[UserReacceptRequiredFrequency <TimeSpan?>]`: The duration after which the user must re-accept the terms of use. The value is represented in ISO 8601 format for durations.
 
-BODYPARAMETER <IMicrosoftGraphTermsOfUseContainer>: termsOfUseContainer
+BODYPARAMETER `<IMicrosoftGraphTermsOfUseContainer>`: termsOfUseContainer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: Represents the current status of a user's response to a company's customizable terms of use agreement.
