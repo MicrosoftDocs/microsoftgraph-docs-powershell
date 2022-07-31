@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnection
@@ -328,7 +328,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection>: externalConnection
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalConnection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[Configuration <IMicrosoftGraphExternalConnectorsConfiguration>]`: configuration
@@ -388,11 +388,11 @@ BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection>: externalCon
       - `[Type <String>]`: propertyType
   - `[State <String>]`: connectionState
 
-CONFIGURATION <IMicrosoftGraphExternalConnectorsConfiguration>: configuration
+CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthorizedAppIds <String[]>]`: A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection.
 
-GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup[]>: Read-only. Nullable.
+GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: Read-only. Nullable.
   - `[Id <String>]`: Read-only.
   - `[Description <String>]`: The description of the external group. Optional.
   - `[DisplayName <String>]`: The friendly name of the external group. Optional.
@@ -400,13 +400,13 @@ GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup[]>: Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Type <String>]`: identityType
 
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
   - `[QnaId <String>]`: key: id of qna
 
-ITEMS <IMicrosoftGraphExternalConnectorsExternalItem[]>: Read-only. Nullable.
+ITEMS <IMicrosoftGraphExternalConnectorsExternalItem\[]>: Read-only. Nullable.
   - `[Id <String>]`: Read-only.
   - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
     - `[AccessType <String>]`: accessType
@@ -419,7 +419,7 @@ ITEMS <IMicrosoftGraphExternalConnectorsExternalItem[]>: Read-only. Nullable.
   - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation[]>: Read-only. Nullable.
+OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation\[]>: Read-only. Nullable.
   - `[Id <String>]`: Read-only.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -438,7 +438,7 @@ OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation[]>: Read-only. 
     - `[Target <String>]`: The target of the error.
   - `[Status <String>]`: connectionOperationStatus
 
-SCHEMA <IMicrosoftGraphExternalConnectorsSchema>: schema
+SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[BaseType <String>]`: Must be set to microsoft.graph.externalConnector.externalItem. Required.
