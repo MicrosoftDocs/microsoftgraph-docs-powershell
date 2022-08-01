@@ -162,12 +162,35 @@ function Special-Escape{
     $s.Values | ForEach-Object {  
     $string = $_
 	$a = $string.Replace('<','`<').Replace('>','>`')
-	(Get-Content -Path $FilePath) -replace $string, $a | Add-Content -Path $tempFilePath
-    Remove-Item -Path $FilePath
-    Move-Item -Path $tempFilePath -Destination $FilePath
+		  $escaped = Check-If-Already-Escaped -Val $string
+        if($escaped -eq $false){
+		   Write-Host "Escaping " + $string
+		   (Get-Content -Path $filePath) -replace $string, $a | Add-Content -Path $tempFilePath
+			Remove-Item -Path $filePath
+			Move-Item -Path $tempFilePath -Destination $filePath
+	   }
 	 }
     git add $FilePath
     git commit -m "Docs cleanup for $ModuleName-$GraphProfile"  
+}
+function Check-If-Already-Escaped{
+param (
+        [ValidateNotNullOrEmpty()]
+        [string] $Val
+)
+$text = Get-Content -Path $filePath
+ foreach($_ in $text){
+  if($_ -match $Val)
+  {
+	  $split = $_.split(" ")
+	  foreach($item in $split){
+		  if($item -match '(.*?)>+`'){
+			   return $true
+		  }			 
+	  }
+  }
+ }	 
+return $false	
 }
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
