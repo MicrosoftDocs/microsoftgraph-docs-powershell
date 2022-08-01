@@ -103,7 +103,7 @@
     "template": [],
     "dest": "microsoftgraph-docs-powershell",
 	"monikerRange": {
-	  "docs-conceptual/**.*": "graph-powershell-1.0 || graph-powershell-beta",
+	  "docs-conceptual/**.*": "graph-powershell-1.0 || graph-powershell-beta"
 	},
     "markdownEngineName": "markdig"
   }
