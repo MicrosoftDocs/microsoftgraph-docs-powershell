@@ -11,7 +11,7 @@ ms.author: eunicewaweru
 
 # Authentication module cmdlets in Microsoft Graph PowerShell
 
-Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication. For example, environment, application ID, certificate. In this article, we'll look at the different cmdlets that are associated with authentication.
+Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication, for example, environment, application ID, certificate. In this article, we'll look at the different cmdlets that are associated with authentication.
 
 ## Using Connect-MgGraph
 
@@ -41,7 +41,7 @@ There are three ways to allow delegated access using Connect-MgGraph;
 
 ### App-only access via client credential with a certificate
 
-To use this method, the certificate is loaded from `Cert:\CurrentUser\My\` when `-CertificateThumbprint` or `-CertificateName` is specified. Ensure that the certificate you're using is present in the store before calling Connect-MgGraph. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+To use this method, the certificate is loaded from `Cert:\CurrentUser\My\` when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in the store before calling Connect-MgGraph. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
 - Using Certificate Thumbprint:
 
