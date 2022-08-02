@@ -19,7 +19,7 @@ Microsoft Graph PowerShell supports two types of authentication: delegated and a
 
 ### Delegated access
 
-There are three ways to allow delegated access using `Connect-MgGraph`;
+There are three ways to allow delegated access using `Connect-MgGraph`:
 
 - Interactive authentication: Here you provide the scopes that you require during your session.
 
@@ -41,7 +41,7 @@ There are three ways to allow delegated access using `Connect-MgGraph`;
 
 ### App-only access via client credential with a certificate
 
-To use this method, the certificate is loaded from `Cert:\CurrentUser\My\` when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in the store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+To use this method, the certificate is loaded from *Cert:\CurrentUser\My\\* when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in the store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
 - Using Certificate Thumbprint:
 
@@ -93,7 +93,7 @@ Disconnect-MgGraph
 
 ## Using Get-MgEnvironment
 
-When we use `Connect-MgGraph`, we can choose to target other environments. By default, `Connect-MgGraph` targets the global public cloud.
+When you use `Connect-MgGraph`, you can choose to target other environments. By default, `Connect-MgGraph` targets the global public cloud.
 
 To get a list of all clouds that you can choose from, run:
 
@@ -156,7 +156,7 @@ PSHostVersion         : 5.1.17763.1
 ClientTimeout         : 00:05:00
 ```
 
-To retrieve all the scopes that you've consented to, expand the `Scopes` property using the **-ExpandProperty** parameter.
+To retrieve all the scopes that you've consented to, expand the `Scopes` property using the `-ExpandProperty` parameter.
 
 ```powershell
 Get-MgContext | Select -ExpandProperty Scopes
