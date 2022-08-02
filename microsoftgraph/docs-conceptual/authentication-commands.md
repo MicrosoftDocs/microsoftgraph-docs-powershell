@@ -15,7 +15,7 @@ Microsoft Graph PowerShell supports two types of authentication: delegated and a
 
 ## Using Connect-MgGraph
 
-`Connect-MgGraph` must be invoked before any commands that access Microsoft Graph. This cmdlet gets the access token, which is managed by the Microsoft Graph .NET Core SDK and uses the Microsoft Authentication Library.
+`Connect-MgGraph` must be invoked before any commands that access Microsoft Graph. This cmdlet gets the access token using the Microsoft Authentication Library.
 
 ### Delegated access
 
