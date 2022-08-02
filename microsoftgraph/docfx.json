@@ -93,7 +93,7 @@
     "globalMetadata": {
       "apiPlatform": "powershell",
       "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json",
-	  "ms.prod": "graph",
+	    "ms.prod": "non-product-specific",
       "ms.technology": "",
       "ms.topic": "reference",
       "ms.author": "twamalwa",
