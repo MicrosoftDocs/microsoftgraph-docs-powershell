@@ -10,7 +10,8 @@
       },
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+	  "**/*.yml"
         ],
         "src": "docs-conceptual",
         "dest": "microsoftgraph"
