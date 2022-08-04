@@ -49,9 +49,9 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Use Find-MgGraphCommand to discover commands
+          - text: Discover commands using Find-MgGraphCommand
             url: find-mg-graph-command.md
-          - text: Use Find-MgGraphPermission to discover command permissions
+          - text: Discover command permissions using  Find-MgGraphPermission 
             url: find-mg-graph-permission.md
       - linkListType: tutorial
         links:
