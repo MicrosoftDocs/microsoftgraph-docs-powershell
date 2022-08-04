@@ -54,7 +54,7 @@ Authorization errors can occur as a result of a number of issues, most of which 
 
 To find the permissions required for a specific cmdlet or API, use [Find-MgGraphCommand](find-mg-graph-command.md) cmdlet or the [API permissions reference](/graph/permissions-reference).
 
-Microsoft Graph PowerShell scopes are consented to when you run Connect-MgGraph. Here, you specify the scopes that you require using the **-Scopes** parameter.
+Microsoft Graph PowerShell permissions are consented to when you run Connect-MgGraph. Here, you specify the permissions that you require using the **-Scopes** parameter.
 
 For example, in the error below, the user lacks the permissions to run New-MgServicePrincipal.
 
@@ -94,7 +94,7 @@ The -Debug parameter provides a powerful way to examine a script while it's runn
     1. Status code - this part provides the error code returned.
         1. When it shows `OK` it means that the command run successfully.
         1. When it shows `Bad request`, take the uri and call it via Invoke-MgGraphRequest to determine if it is a service or a client issue.
-    1. Headers - The most important header is the `request-id` and `Date`. This helps the support team to determine the cause of the failure. Use this ID and timestamp as you log any issues for the support team to troubleshoot.
+    1. Headers - The most important headers are the `request-id` and `date`. This helps the support team to determine the cause of the failure. Use this ID and timestamp as you log any issues for the support team to troubleshoot.
     1. Body - shows what the service returns. The most important part of the body is the `@odata.nextLink` which provides a link to fetch the next page when the result is in multiple pages. If the request fails, the body will contain the error code and the error message.
 
 To enable debug logging on a per command basis, specify the Debug parameter.
@@ -102,6 +102,10 @@ To enable debug logging on a per command basis, specify the Debug parameter.
 ```powershell
 Get-MgUser -UserId 'DoesNotExist' -Debug
 ```
+
+Here is a sample output for this command:
+
+:::image type="content" source="images/sample-debug-response.png" alt-text="sample debug output":::
 
 To enable debug logging for an entire PowerShell session, you set the value of the DebugPreference variable to `Continue`.
 
