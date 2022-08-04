@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagementcloudpc
@@ -192,7 +192,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
+BODYPARAMETER `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -244,7 +244,7 @@ BODYPARAMETER <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
     - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
 
-RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace[]>: .
+RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace\[]>: .
   - `[Id <String>]`: 
   - `[Name <String>]`: Name of the resource namespace. Typically, the same name as the id property, such as microsoft.aad.b2c. Required. Supports $filter (eq, startsWith).
   - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
@@ -260,7 +260,7 @@ RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace[]>: .
       - `[Type <String>]`: 
     - `[ResourceScopeId <String>]`: Not implemented.
 
-ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignmentMultiple[]>: .
+ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignmentMultiple\[]>: .
   - `[Id <String>]`: 
   - `[AppScopeIds <String[]>]`: Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
   - `[AppScopes <IMicrosoftGraphAppScope[]>]`: Read-only collection with details of the app specific scopes when the assignment scopes are app specific. Containment entity. Read-only.
@@ -293,7 +293,7 @@ ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignmentMultiple[]>: .
     - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
   - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
 
-ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition[]>: .
+ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition\[]>: .
   - `[Id <String>]`: 
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
   - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).

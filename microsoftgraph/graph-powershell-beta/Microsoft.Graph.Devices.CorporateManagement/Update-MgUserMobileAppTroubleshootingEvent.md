@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermobileapptroubleshootingevent
@@ -381,18 +381,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair[]>: A set of string key and string value pairs which provides additional information on the Troubleshooting event
+ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair\[]>: A set of string key and string value pairs which provides additional information on the Troubleshooting event
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest[]>: The collection property of AppLogUploadRequest.
+APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest\[]>: The collection property of AppLogUploadRequest.
   - `[Id <String>]`: 
   - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a terminal state
   - `[CustomLogFolders <String[]>]`: List of log folders.
   - `[ErrorMessage <String>]`: Error message if any during the upload process
   - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
-BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>: Event representing a users device application install status.
+BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: Event representing a users device application install status.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
     - `[Name <String>]`: Name for this key-value pair
@@ -423,7 +423,7 @@ BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>: Event representing
   - `[ManagedDeviceIdentifier <String>]`: Device identifier created or collected by Intune.
   - `[UserId <String>]`: Identifier for the user that tried to enroll the device.
 
-HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>: Intune Mobile Application Troubleshooting History Item
+HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem\[]>: Intune Mobile Application Troubleshooting History Item
   - `[OccurrenceDateTime <DateTime?>]`: Time when the history item occurred.
   - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -435,7 +435,7 @@ HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>: Intune Mobile Ap
       - `[Link <String>]`: The link to the web resource. Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
       - `[Text <String>]`: Not yet documented
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
@@ -504,7 +504,7 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
-TROUBLESHOOTINGERRORDETAILS <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>: Object containing detailed information about the error and its remediation.
+TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Context <String>]`: Not yet documented
   - `[Failure <String>]`: Not yet documented

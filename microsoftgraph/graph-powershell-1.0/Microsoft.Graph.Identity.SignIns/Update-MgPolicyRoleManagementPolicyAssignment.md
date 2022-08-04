@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicyassignment
@@ -271,7 +271,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment>: unifiedRoleManagementPolicyAssignment
+BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementPolicyAssignment>`: unifiedRoleManagementPolicyAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Policy <IMicrosoftGraphUnifiedRoleManagementPolicy>]`: unifiedRoleManagementPolicy
@@ -305,7 +305,7 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment>: unifiedRol
   - `[ScopeId <String>]`: The id of the scope where the policy is assigned. E.g. '/', groupId, etc.
   - `[ScopeType <String>]`: The type of the scope where the policy is assigned. One of Directory, DirectoryRole, Group.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
@@ -367,7 +367,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-POLICY <IMicrosoftGraphUnifiedRoleManagementPolicy>: unifiedRoleManagementPolicy
+POLICY `<IMicrosoftGraphUnifiedRoleManagementPolicy>`: unifiedRoleManagementPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Description <String>]`: Description for the policy.
