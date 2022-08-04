@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/remove-mgdevicemanagementreport
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementReport
 
 ## SYNOPSIS
-Reports singleton
+Delete navigation property reports for deviceManagement
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Remove-MgDeviceManagementReport [-IfMatch <String>] [-PassThru] [-WhatIf] [-Conf
 ```
 
 ## DESCRIPTION
-Reports singleton
+Delete navigation property reports for deviceManagement
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtWindowInformationProtectionDeviceRegistration
 
 ## SYNOPSIS
-Windows information protection device registrations that are not MDM enrolled.
+Get windowsInformationProtectionDeviceRegistrations from deviceAppManagement
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceAppMgtWindowInformationProtectionDeviceRegistration
 ```
 
 ## DESCRIPTION
-Windows information protection device registrations that are not MDM enrolled.
+Get windowsInformationProtectionDeviceRegistrations from deviceAppManagement
 
 ## EXAMPLES
 

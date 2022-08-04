@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtiOSLobAppProvisioningConfiguration
 
 ## SYNOPSIS
-The IOS Lob App Provisioning Configurations.
+Get iosLobAppProvisioningConfigurations from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtiOSLobAppProvisioningConfiguration -InputObject <IDevicesCorpo
 ```
 
 ## DESCRIPTION
-The IOS Lob App Provisioning Configurations.
+Get iosLobAppProvisioningConfigurations from deviceAppManagement
 
 ## EXAMPLES
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/remove-mguserprofilecertification
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfileCertification
 
 ## SYNOPSIS
-Represents the details of certifications associated with a person.
+Delete navigation property certifications for users
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfileCertification -InputObject <IPeopleIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Represents the details of certifications associated with a person.
+Delete navigation property certifications for users
 
 ## EXAMPLES
 
@@ -156,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress

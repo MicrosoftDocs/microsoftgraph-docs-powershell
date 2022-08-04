@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementtroubleshootingevent
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTroubleshootingEvent
 
 ## SYNOPSIS
-The list of troubleshooting events for the tenant.
+Create new navigation property to troubleshootingEvents for deviceManagement
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-MgDeviceManagementTroubleshootingEvent -BodyParameter <IMicrosoftGraphDevice
 ```
 
 ## DESCRIPTION
-The list of troubleshooting events for the tenant.
+Create new navigation property to troubleshootingEvents for deviceManagement
 
 ## EXAMPLES
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -156,9 +156,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementTroubleshootingEvent>: Event representing an general failure.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementTroubleshootingEvent>`: Event representing an general failure.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
   - `[EventDateTime <DateTime?>]`: Time when the event occurred .
 

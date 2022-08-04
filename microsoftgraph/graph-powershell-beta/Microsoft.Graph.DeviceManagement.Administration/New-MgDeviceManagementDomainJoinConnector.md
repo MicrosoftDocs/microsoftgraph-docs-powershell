@@ -8,15 +8,15 @@ schema: 2.0.0
 # New-MgDeviceManagementDomainJoinConnector
 
 ## SYNOPSIS
-A list of connector objects.
+Create new navigation property to domainJoinConnectors for deviceManagement
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementDomainJoinConnector [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-LastConnectionDateTime <DateTime>] [-State <String>] [-Version <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Id <String>] [-LastConnectionDateTime <DateTime>] [-State <DeviceManagementDomainJoinConnectorState>]
+ [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -26,7 +26,7 @@ New-MgDeviceManagementDomainJoinConnector -BodyParameter <IMicrosoftGraphDeviceM
 ```
 
 ## DESCRIPTION
-A list of connector objects.
+Create new navigation property to domainJoinConnectors for deviceManagement
 
 ## EXAMPLES
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 The ODJ request states.
 
 ```yaml
-Type: String
+Type: DeviceManagementDomainJoinConnectorState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -187,12 +187,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementDomainJoinConnector>: A Domain Join Connector is a connector that is responsible to allocate (and delete) machine account blobs
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementDomainJoinConnector>`: A Domain Join Connector is a connector that is responsible to allocate (and delete) machine account blobs
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: The connector display name.
   - `[LastConnectionDateTime <DateTime?>]`: Last time connector contacted Intune.
-  - `[State <String>]`: The ODJ request states.
+  - `[State <DeviceManagementDomainJoinConnectorState?>]`: The ODJ request states.
   - `[Version <String>]`: The version of the connector.
 
 ## RELATED LINKS

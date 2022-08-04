@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -342,9 +342,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPrivilegedOperationEvent>: privilegedOperationEvent
+BODYPARAMETER `<IMicrosoftGraphPrivilegedOperationEvent>`: privilegedOperationEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AdditionalInformation <String>]`: Detailed human readable information for the event.
   - `[CreationDateTime <DateTime?>]`: Indicates the time when the event is created.
   - `[ExpirationDateTime <DateTime?>]`: This is only used when the requestType is Activate, and it indicates the expiration time for the role activation.

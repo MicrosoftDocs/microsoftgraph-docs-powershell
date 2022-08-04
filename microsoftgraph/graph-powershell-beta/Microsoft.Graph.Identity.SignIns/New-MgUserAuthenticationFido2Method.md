@@ -22,7 +22,7 @@ New-MgUserAuthenticationFido2Method -UserId <String> [-AaGuid <String>] [-Additi
 
 ### Create
 ```
-New-MgUserAuthenticationFido2Method -UserId <String> -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod>
+New-MgUserAuthenticationFido2Method -UserId <String> -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ New-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [-Aa
 ### CreateViaIdentity
 ```
 New-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -113,7 +113,7 @@ fido2AuthenticationMethod
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFido2AuthenticationMethod
+Type: IMicrosoftGraphFido2AuthenticationMethod1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -267,10 +267,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod1
 ## NOTES
 
 ALIASES
@@ -280,7 +280,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphFido2AuthenticationMethod>: fido2AuthenticationMethod
+BODYPARAMETER `<IMicrosoftGraphFido2AuthenticationMethod>`: fido2AuthenticationMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.
@@ -291,7 +291,7 @@ BODYPARAMETER <IMicrosoftGraphFido2AuthenticationMethod>: fido2AuthenticationMet
   - `[DisplayName <String>]`: The display name of the key as given by the user.
   - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod

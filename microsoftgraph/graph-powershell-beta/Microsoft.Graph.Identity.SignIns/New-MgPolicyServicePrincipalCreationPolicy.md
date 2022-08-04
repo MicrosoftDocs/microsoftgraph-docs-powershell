@@ -66,7 +66,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeletedDateTime
-.
+Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
 
 ```yaml
 Type: DateTime
@@ -129,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -223,33 +224,36 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationPolicy>: servicePrincipalCreationPolicy
+BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationPolicy>`: servicePrincipalCreationPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
-  - `[DeletedDateTime <DateTime?>]`: 
-  - `[Id <String>]`: Read-only.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+  - `[Id <String>]`: 
   - `[Excludes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[ApplicationIds <String[]>]`: 
     - `[ApplicationPublisherIds <String[]>]`: 
     - `[ApplicationTenantIds <String[]>]`: 
     - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
+    - `[CertifiedApplicationsOnly <Boolean?>]`: 
   - `[Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>]`: 
   - `[IsBuiltIn <Boolean?>]`: 
 
-EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
-  - `[Id <String>]`: Read-only.
+EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
+  - `[Id <String>]`: 
   - `[ApplicationIds <String[]>]`: 
   - `[ApplicationPublisherIds <String[]>]`: 
   - `[ApplicationTenantIds <String[]>]`: 
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
+  - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
-INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
-  - `[Id <String>]`: Read-only.
+INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
+  - `[Id <String>]`: 
   - `[ApplicationIds <String[]>]`: 
   - `[ApplicationPublisherIds <String[]>]`: 
   - `[ApplicationTenantIds <String[]>]`: 
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
+  - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
 ## RELATED LINKS

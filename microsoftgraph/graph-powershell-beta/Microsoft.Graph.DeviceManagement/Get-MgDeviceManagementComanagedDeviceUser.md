@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementcomanageddeviceuser
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementComanagedDeviceUser
 
 ## SYNOPSIS
-The primary users associated with the managed device.
+Get users from deviceManagement
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementComanagedDeviceUser -ManagedDeviceId <String> [-ExpandProp
 ```
 
 ## DESCRIPTION
-The primary users associated with the managed device.
+Get users from deviceManagement
 
 ## EXAMPLES
 

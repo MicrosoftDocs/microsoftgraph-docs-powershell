@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedAppStatuses
 
 ## SYNOPSIS
-The managed app statuses.
+Get managedAppStatuses from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtManagedAppStatuses -InputObject <IDevicesCorporateManagementId
 ```
 
 ## DESCRIPTION
-The managed app statuses.
+Get managedAppStatuses from deviceAppManagement
 
 ## EXAMPLES
 

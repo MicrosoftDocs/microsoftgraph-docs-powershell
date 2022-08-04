@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedEBookAssignment
 
 ## SYNOPSIS
-The list of assignments for this eBook.
+Get assignments from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtManagedEBookAssignment -InputObject <IDevicesCorporateManageme
 ```
 
 ## DESCRIPTION
-The list of assignments for this eBook.
+Get assignments from deviceAppManagement
 
 ## EXAMPLES
 

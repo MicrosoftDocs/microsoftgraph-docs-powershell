@@ -30,13 +30,6 @@ Create new navigation property to snapshots for deviceManagement
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -71,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudPcId
-.
+The unique identifier for the Cloud PC.
 
 ```yaml
 Type: String
@@ -86,7 +79,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date and time at which the snapshot was taken.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -101,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -116,7 +111,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastRestoredDateTime
-.
+The date and time at which the snapshot was last used to restore the Cloud PC device.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -186,15 +183,20 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSnapshot
 ## NOTES
-Please use Get-Help -Online.
 
-## RELATED LINKS
+ALIASES
 
-BODYPARAMETER <IMicrosoftGraphCloudPcSnapshot>: cloudPcSnapshot
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER `<IMicrosoftGraphCloudPcSnapshot>`: cloudPcSnapshot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[CloudPcId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[LastRestoredDateTime <DateTime?>]`: 
+  - `[Id <String>]`: 
+  - `[CloudPcId <String>]`: The unique identifier for the Cloud PC.
+  - `[CreatedDateTime <DateTime?>]`: The date and time at which the snapshot was taken. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[LastRestoredDateTime <DateTime?>]`: The date and time at which the snapshot was last used to restore the Cloud PC device. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Status <String>]`: cloudPcSnapshotStatus
 
+## RELATED LINKS

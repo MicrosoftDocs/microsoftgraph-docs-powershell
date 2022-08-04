@@ -190,14 +190,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphWindowsDriverUpdateProfileAssignment[]>: .
+ASSIGNMENTS <IMicrosoftGraphWindowsDriverUpdateProfileAssignment\[]>: .
   - `[Id <String>]`: Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
 
-BODYPARAMETER <IPaths1F83Ez2DevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1F83Ez2DevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Assignments <IMicrosoftGraphWindowsDriverUpdateProfileAssignment[]>]`: 
     - `[Id <String>]`: Read-only.
@@ -206,7 +206,7 @@ BODYPARAMETER <IPaths1F83Ez2DevicemanagementWindowsdriverupdateprofilesWindowsdr
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
 
-INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

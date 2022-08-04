@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtMobileAppInstallSummary
 
 ## SYNOPSIS
-Mobile App Install Summary.
+Get installSummary from deviceAppManagement
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgDeviceAppMgtMobileAppInstallSummary -InputObject <IDevicesCorporateManagem
 ```
 
 ## DESCRIPTION
-Mobile App Install Summary.
+Get installSummary from deviceAppManagement
 
 ## EXAMPLES
 

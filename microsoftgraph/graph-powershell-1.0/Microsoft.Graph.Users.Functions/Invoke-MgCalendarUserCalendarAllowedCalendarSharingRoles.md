@@ -12,24 +12,24 @@ Invoke function allowedCalendarSharingRoles
 
 ## SYNTAX
 
-### Calendar1 (Default)
+### Calendar2 (Default)
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId <String> [<CommonParameters>]
 ```
 
-### Calendar2
+### Calendar3
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId <String> -CalendarId <String>
  [<CommonParameters>]
 ```
 
-### CalendarViaIdentity2
+### CalendarViaIdentity3
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity>
  [<CommonParameters>]
 ```
 
-### CalendarViaIdentity1
+### CalendarViaIdentity2
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity>
  [<CommonParameters>]
@@ -47,7 +47,7 @@ key: id of calendar
 
 ```yaml
 Type: String
-Parameter Sets: Calendar2
+Parameter Sets: Calendar3
 Aliases:
 
 Required: True
@@ -63,7 +63,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: CalendarViaIdentity2, CalendarViaIdentity1
+Parameter Sets: CalendarViaIdentity3, CalendarViaIdentity2
 Aliases:
 
 Required: True
@@ -74,11 +74,11 @@ Accept wildcard characters: False
 ```
 
 ### -User
-Usage: User={User}
+Usage: User='{User}'
 
 ```yaml
 Type: String
-Parameter Sets: Calendar1, Calendar2
+Parameter Sets: Calendar2, Calendar3
 Aliases:
 
 Required: True
@@ -93,7 +93,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Calendar1, Calendar2
+Parameter Sets: Calendar2, Calendar3
 Aliases:
 
 Required: True
@@ -121,39 +121,40 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
-  - `[AnotherRange <String>]`: Usage: anotherRange={anotherRange}
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
-  - `[Column <Int32?>]`: Usage: column={column}
-  - `[ColumnOffset <Int32?>]`: Usage: columnOffset={columnOffset}
+  - `[ChatId <String>]`: key: id of chat
+  - `[ChatMessageId <String>]`: key: id of chatMessage
+  - `[CloudPcId <String>]`: key: id of cloudPC
   - `[ContactFolderId <String>]`: key: id of contactFolder
-  - `[Count <Int32?>]`: Usage: count={count}
-  - `[DeltaColumns <Int32?>]`: Usage: deltaColumns={deltaColumns}
-  - `[DeltaRows <Int32?>]`: Usage: deltaRows={deltaRows}
-  - `[EndDateTime <String>]`: Usage: EndDateTime={EndDateTime}
+  - `[ContactFolderId1 <String>]`: key: id of contactFolder
+  - `[ContentTypeId <String>]`: key: id of contentType
+  - `[DriveId <String>]`: key: id of drive
+  - `[DriveItemId <String>]`: key: id of driveItem
+  - `[EndDateTime <String>]`: Usage: EndDateTime='{EndDateTime}'
+  - `[EndDateTime1 <String>]`: Usage: endDateTime='{endDateTime}'
   - `[EventId <String>]`: key: id of event
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ListItemId <String>]`: key: id of listItem
   - `[MailFolderId <String>]`: key: id of mailFolder
+  - `[MailFolderId1 <String>]`: key: id of mailFolder
   - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[On <String>]`: Usage: on={on}
+  - `[On <String>]`: Usage: on='{on}'
   - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[RoomList <String>]`: Usage: RoomList={RoomList}
-  - `[Row <Int32?>]`: Usage: row={row}
-  - `[RowOffset <Int32?>]`: Usage: rowOffset={rowOffset}
-  - `[SharedInsightId <String>]`: key: id of sharedInsight
+  - `[Q <String>]`: Usage: q='{q}'
+  - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: StartDateTime={StartDateTime}
-  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard={TimeZoneStandard}
+  - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
+  - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
+  - `[Token <String>]`: Usage: token='{token}'
   - `[Top <Int32?>]`: Usage: top={top}
-  - `[TrendingId <String>]`: key: id of trending
-  - `[UsedInsightId <String>]`: key: id of usedInsight
-  - `[User <String>]`: Usage: User={User}
+  - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
-  - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS

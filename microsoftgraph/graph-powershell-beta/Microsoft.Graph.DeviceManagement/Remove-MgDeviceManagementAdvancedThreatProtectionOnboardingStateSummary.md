@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementadvancedthreatprotectiononboardingstatesummary
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
 
 ## SYNOPSIS
-The summary state of ATP onboarding state for this account.
+Delete navigation property advancedThreatProtectionOnboardingStateSummary for deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-IfMatc
 ```
 
 ## DESCRIPTION
-The summary state of ATP onboarding state for this account.
+Delete navigation property advancedThreatProtectionOnboardingStateSummary for deviceManagement
 
 ## EXAMPLES
 

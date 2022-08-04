@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrintService
 
 ## SYNOPSIS
-The list of available Universal Print service endpoints.
+Create new navigation property to services for print
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ New-MgPrintService -BodyParameter <IMicrosoftGraphPrintService1> [-WhatIf] [-Con
 ```
 
 ## DESCRIPTION
-The list of available Universal Print service endpoints.
+Create new navigation property to services for print
 
 ## EXAMPLES
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -143,16 +143,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPrintService1>: printService
+BODYPARAMETER `<IMicrosoftGraphPrintService1>`: printService
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[DisplayName <String>]`: A human-readable display name for the endpoint.
     - `[Uri <String>]`: The URI that can be used to access the service.
 
-ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint1[]>: Endpoints that can be used to access the service. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
+ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint1\[]>: Endpoints that can be used to access the service. Read-only. Nullable.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: A human-readable display name for the endpoint.
   - `[Uri <String>]`: The URI that can be used to access the service.
 

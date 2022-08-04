@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdatasharingconsent
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDataSharingConsent
 
 ## SYNOPSIS
-Data sharing consents.
+Create new navigation property to dataSharingConsents for deviceManagement
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphDataShar
 ```
 
 ## DESCRIPTION
-Data sharing consents.
+Create new navigation property to dataSharingConsents for deviceManagement
 
 ## EXAMPLES
 
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -217,9 +217,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDataSharingConsent>: Data sharing consent information.
+BODYPARAMETER `<IMicrosoftGraphDataSharingConsent>`: Data sharing consent information.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[GrantDateTime <DateTime?>]`: The time consent was granted for this account
   - `[Granted <Boolean?>]`: The granted state for the data sharing consent
   - `[GrantedByUpn <String>]`: The Upn of the user that granted consent for this account

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendarpermission
@@ -12,37 +12,37 @@ The permissions of the users with whom the calendar is shared.
 
 ## SYNTAX
 
-### List2 (Default)
+### List (Default)
 ```
 Get-MgUserCalendarPermission -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get3
+### Get1
 ```
 Get-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> -CalendarId <String>
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### Get2
+### Get
 ```
 Get-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### List3
+### List1
 ```
 Get-MgUserCalendarPermission -UserId <String> -CalendarId <String> [-Property <String[]>] [-Filter <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity1
 ```
 Get-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
 Get-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
@@ -59,7 +59,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -74,7 +74,7 @@ key: id of calendar
 
 ```yaml
 Type: String
-Parameter Sets: Get3, List3
+Parameter Sets: Get1, List1
 Aliases:
 
 Required: True
@@ -89,7 +89,7 @@ key: id of calendarPermission
 
 ```yaml
 Type: String
-Parameter Sets: Get3, Get2
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -105,7 +105,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases: CV
 
 Required: False
@@ -120,7 +120,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -136,7 +136,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -151,7 +151,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -181,7 +181,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases: OrderBy
 
 Required: False
@@ -196,7 +196,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases: Limit
 
 Required: False
@@ -211,7 +211,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get3, Get2, List3
+Parameter Sets: List, Get1, Get, List1
 Aliases:
 
 Required: True
@@ -226,7 +226,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -254,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticbatteryhealthcapacitydetail
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail
 
 ## SYNOPSIS
-User Experience Analytics Battery Health Capacity Details
+Delete navigation property userExperienceAnalyticsBatteryHealthCapacityDetails for deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail [-IfM
 ```
 
 ## DESCRIPTION
-User Experience Analytics Battery Health Capacity Details
+Delete navigation property userExperienceAnalyticsBatteryHealthCapacityDetails for deviceManagement
 
 ## EXAMPLES
 

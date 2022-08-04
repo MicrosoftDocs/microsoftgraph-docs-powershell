@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtMobileAppCategory
 
 ## SYNOPSIS
-The mobile app categories.
+Get mobileAppCategories from deviceAppManagement
 
 ## SYNTAX
 
@@ -19,16 +19,16 @@ Get-MgDeviceAppMgtMobileAppCategory [-ExpandProperty <String[]>] [-Property <Str
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get3
+```
+Get-MgDeviceAppMgtMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### Get2
 ```
 Get-MgDeviceAppMgtMobileAppCategory -MobileAppCategoryId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgDeviceAppMgtMobileAppCategory -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### List3
@@ -38,8 +38,20 @@ Get-MgDeviceAppMgtMobileAppCategory -MobileAppId <String> [-ExpandProperty <Stri
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
+### GetViaIdentity3
+```
+Get-MgDeviceAppMgtMobileAppCategory -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgDeviceAppMgtMobileAppCategory -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-The mobile app categories.
+Get mobileAppCategories from deviceAppManagement
 
 ## EXAMPLES
 
@@ -119,7 +131,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity3, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -134,7 +146,7 @@ key: id of mobileAppCategory
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get3, Get2
 Aliases:
 
 Required: True
@@ -149,7 +161,7 @@ key: id of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: List3
+Parameter Sets: Get3, List3
 Aliases:
 
 Required: True

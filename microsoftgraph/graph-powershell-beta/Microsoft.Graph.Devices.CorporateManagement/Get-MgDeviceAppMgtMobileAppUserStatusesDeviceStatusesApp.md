@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtMobileAppUserStatusesDeviceStatusesApp
 
 ## SYNOPSIS
-The navigation link to the mobile app.
+Get app from deviceAppManagement
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-MgDeviceAppMgtMobileAppUserStatusesDeviceStatusesApp -InputObject <IDevicesC
 ```
 
 ## DESCRIPTION
-The navigation link to the mobile app.
+Get app from deviceAppManagement
 
 ## EXAMPLES
 

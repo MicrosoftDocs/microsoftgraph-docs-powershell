@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalowner
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalOwner
 
 ## SYNOPSIS
-Directory objects that are owners of this servicePrincipal.
-The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
-Supports $expand.
+Get owners from servicePrincipals
 
 ## SYNTAX
 
@@ -23,11 +19,7 @@ Get-MgServicePrincipalOwner -ServicePrincipalId <String> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Directory objects that are owners of this servicePrincipal.
-The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
-Supports $expand.
+Get owners from servicePrincipals
 
 ## EXAMPLES
 

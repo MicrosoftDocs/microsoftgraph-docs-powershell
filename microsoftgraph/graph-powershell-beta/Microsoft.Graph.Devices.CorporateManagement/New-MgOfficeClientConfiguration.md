@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgOfficeClientConfiguration
 
 ## SYNOPSIS
-List of office Client configuration.
+Create new navigation property to clientConfigurations for officeConfiguration
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgOfficeClientConfiguration -BodyParameter <IMicrosoftGraphOfficeClientConfi
 ```
 
 ## DESCRIPTION
-List of office Client configuration.
+Create new navigation property to clientConfigurations for officeConfiguration
 
 ## EXAMPLES
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -253,16 +253,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphOfficeClientConfigurationAssignment[]>: The list of group assignments for the policy.
-  - `[Id <String>]`: Read-only.
+ASSIGNMENTS <IMicrosoftGraphOfficeClientConfigurationAssignment\[]>: The list of group assignments for the policy.
+  - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphOfficeConfigurationAssignmentTarget>]`: officeConfigurationAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER <IMicrosoftGraphOfficeClientConfiguration>: officeClientConfiguration
+BODYPARAMETER `<IMicrosoftGraphOfficeClientConfiguration>`: officeClientConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>]`: The list of group assignments for the policy.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Target <IMicrosoftGraphOfficeConfigurationAssignmentTarget>]`: officeConfigurationAssignmentTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CheckinStatuses <IMicrosoftGraphOfficeClientCheckinStatus[]>]`: List of office Client check-in status.
@@ -285,7 +285,7 @@ BODYPARAMETER <IMicrosoftGraphOfficeClientConfiguration>: officeClientConfigurat
     - `[SucceededUserCount <Int32?>]`: Total successful user check ins for the last 3 months.
   - `[UserPreferencePayload <Byte[]>]`: Preference settings JSON string in binary format, these values can be overridden by the user.
 
-CHECKINSTATUSES <IMicrosoftGraphOfficeClientCheckinStatus[]>: List of office Client check-in status.
+CHECKINSTATUSES <IMicrosoftGraphOfficeClientCheckinStatus\[]>: List of office Client check-in status.
   - `[AppliedPolicies <String[]>]`: List of policies delivered to the device as last checkin.
   - `[CheckinDateTime <DateTime?>]`: Last device check-in time in UTC.
   - `[DeviceName <String>]`: Device name trying to check-in.
@@ -296,7 +296,7 @@ CHECKINSTATUSES <IMicrosoftGraphOfficeClientCheckinStatus[]>: List of office Cli
   - `[UserPrincipalName <String>]`: User principal name using the device.
   - `[WasSuccessful <Boolean?>]`: If the last checkin was successful.
 
-USERCHECKINSUMMARY <IMicrosoftGraphOfficeUserCheckinSummary>: officeUserCheckinSummary
+USERCHECKINSUMMARY `<IMicrosoftGraphOfficeUserCheckinSummary>`: officeUserCheckinSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[FailedUserCount <Int32?>]`: Total failed user check ins for the last 3 months.
   - `[SucceededUserCount <Int32?>]`: Total successful user check ins for the last 3 months.

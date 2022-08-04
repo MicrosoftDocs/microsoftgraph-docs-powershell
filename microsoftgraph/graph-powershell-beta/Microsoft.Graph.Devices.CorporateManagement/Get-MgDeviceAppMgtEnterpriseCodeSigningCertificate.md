@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtEnterpriseCodeSigningCertificate
 
 ## SYNOPSIS
-The Windows Enterprise Code Signing Certificate.
+Get enterpriseCodeSigningCertificates from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtEnterpriseCodeSigningCertificate -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-The Windows Enterprise Code Signing Certificate.
+Get enterpriseCodeSigningCertificates from deviceAppManagement
 
 ## EXAMPLES
 

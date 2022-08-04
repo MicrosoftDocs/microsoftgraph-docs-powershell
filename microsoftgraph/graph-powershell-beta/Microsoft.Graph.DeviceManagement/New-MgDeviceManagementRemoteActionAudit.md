@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementremoteactionaudit
@@ -8,13 +8,13 @@ schema: 2.0.0
 # New-MgDeviceManagementRemoteActionAudit
 
 ## SYNOPSIS
-The list of device remote action audits with the tenant.
+Create new navigation property to remoteActionAudits for deviceManagement
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementRemoteActionAudit [-Action <String>] [-ActionState <String>]
+New-MgDeviceManagementRemoteActionAudit [-Action <RemoteAction>] [-ActionState <String>]
  [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
  [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
  [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-WhatIf] [-Confirm]
@@ -28,7 +28,7 @@ New-MgDeviceManagementRemoteActionAudit -BodyParameter <IMicrosoftGraphRemoteAct
 ```
 
 ## DESCRIPTION
-The list of device remote action audits with the tenant.
+Create new navigation property to remoteActionAudits for deviceManagement
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ The list of device remote action audits with the tenant.
 Remote actions Intune supports.
 
 ```yaml
-Type: String
+Type: RemoteAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActionState
-State of the action on the device
+actionState
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -264,11 +264,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphRemoteActionAudit>: Report of remote actions initiated on the devices belonging to a certain tenant.
+BODYPARAMETER `<IMicrosoftGraphRemoteActionAudit>`: Report of remote actions initiated on the devices belonging to a certain tenant.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[Action <String>]`: Remote actions Intune supports.
-  - `[ActionState <String>]`: State of the action on the device
+  - `[Id <String>]`: 
+  - `[Action <RemoteAction?>]`: Remote actions Intune supports.
+  - `[ActionState <String>]`: actionState
   - `[DeviceDisplayName <String>]`: Intune device name.
   - `[DeviceImei <String>]`: IMEI of the device.
   - `[DeviceOwnerUserPrincipalName <String>]`: Upn of the device owner.

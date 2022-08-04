@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
-The Audit Events
+Create new navigation property to auditEvents for deviceManagement
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementAuditEvent -BodyParameter <IMicrosoftGraphAuditEvent> [-Wh
 ```
 
 ## DESCRIPTION
-The Audit Events
+Create new navigation property to auditEvents for deviceManagement
 
 ## EXAMPLES
 
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -296,7 +296,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTOR <IMicrosoftGraphAuditActor>: A class containing the properties for Audit Actor.
+ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationDisplayName <String>]`: Name of the Application.
   - `[ApplicationId <String>]`: AAD Application Id.
@@ -312,9 +312,9 @@ ACTOR <IMicrosoftGraphAuditActor>: A class containing the properties for Audit A
     - `[DisplayName <String>]`: Scope Tag Display name.
     - `[RoleScopeTagId <String>]`: Scope Tag Id.
 
-BODYPARAMETER <IMicrosoftGraphAuditEvent>: A class containing the properties for Audit Event.
+BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Activity <String>]`: Friendly name of the activity.
   - `[ActivityDateTime <DateTime?>]`: The date time in UTC when the activity was performed.
   - `[ActivityOperationType <String>]`: The HTTP operation type of the activity.
@@ -348,7 +348,7 @@ BODYPARAMETER <IMicrosoftGraphAuditEvent>: A class containing the properties for
     - `[ResourceId <String>]`: Audit resource's Id.
     - `[Type <String>]`: Audit resource's type.
 
-RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
+RESOURCES <IMicrosoftGraphAuditResource\[]>: Resources being modified.
   - `[DisplayName <String>]`: Display name.
   - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.
     - `[DisplayName <String>]`: Display name.

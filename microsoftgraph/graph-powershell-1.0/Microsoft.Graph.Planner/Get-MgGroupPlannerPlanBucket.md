@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgGroupPlannerPlanBucket
 
 ## SYNOPSIS
-Collection of buckets in the plan.
-Read-only.
-Nullable.
+Get buckets from groups
 
 ## SYNTAX
 
@@ -21,9 +19,7 @@ Get-MgGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-ExpandP
 ```
 
 ## DESCRIPTION
-Collection of buckets in the plan.
-Read-only.
-Nullable.
+Get buckets from groups
 
 ## EXAMPLES
 

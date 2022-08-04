@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementExchangeOnPremisPolicy
 
 ## SYNOPSIS
-The list of Exchange On Premisis policies configured by the tenant.
+Create new navigation property to exchangeOnPremisesPolicies for deviceManagement
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ The list of Exchange On Premisis policies configured by the tenant.
 New-MgDeviceManagementExchangeOnPremisPolicy
  [-AccessRules <IMicrosoftGraphDeviceManagementExchangeAccessRule[]>] [-AdditionalProperties <Hashtable>]
  [-ConditionalAccessSettings <IMicrosoftGraphOnPremisesConditionalAccessSettings>]
- [-DefaultAccessLevel <String>] [-Id <String>]
+ [-DefaultAccessLevel <DeviceManagementExchangeAccessLevel>] [-Id <String>]
  [-KnownDeviceClasses <IMicrosoftGraphDeviceManagementExchangeDeviceClass[]>]
  [-NotificationContentInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,7 +30,7 @@ New-MgDeviceManagementExchangeOnPremisPolicy
 ```
 
 ## DESCRIPTION
-The list of Exchange On Premisis policies configured by the tenant.
+Create new navigation property to exchangeOnPremisesPolicies for deviceManagement
 
 ## EXAMPLES
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Access Level in Exchange.
 
 ```yaml
-Type: String
+Type: DeviceManagementExchangeAccessLevel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -211,43 +211,43 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSRULES <IMicrosoftGraphDeviceManagementExchangeAccessRule[]>: The list of device access rules in Exchange. The access rules apply globally to the entire Exchange organization
-  - `[AccessLevel <String>]`: Access Level in Exchange.
+ACCESSRULES <IMicrosoftGraphDeviceManagementExchangeAccessRule\[]>: The list of device access rules in Exchange. The access rules apply globally to the entire Exchange organization
+  - `[AccessLevel <DeviceManagementExchangeAccessLevel?>]`: Access Level in Exchange.
   - `[DeviceClass <IMicrosoftGraphDeviceManagementExchangeDeviceClass>]`: Device Class in Exchange.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Name <String>]`: Name of the device class which will be impacted by this rule.
-    - `[Type <String>]`: Criteria which defines the type of device this access rule will apply to
+    - `[Type <DeviceManagementExchangeAccessRuleType?>]`: Criteria which defines the type of device this access rule will apply to
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy>: Singleton entity which represents the Exchange OnPremises policy configured for a tenant.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy>`: Singleton entity which represents the Exchange OnPremises policy configured for a tenant.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AccessRules <IMicrosoftGraphDeviceManagementExchangeAccessRule[]>]`: The list of device access rules in Exchange. The access rules apply globally to the entire Exchange organization
-    - `[AccessLevel <String>]`: Access Level in Exchange.
+    - `[AccessLevel <DeviceManagementExchangeAccessLevel?>]`: Access Level in Exchange.
     - `[DeviceClass <IMicrosoftGraphDeviceManagementExchangeDeviceClass>]`: Device Class in Exchange.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Name <String>]`: Name of the device class which will be impacted by this rule.
-      - `[Type <String>]`: Criteria which defines the type of device this access rule will apply to
+      - `[Type <DeviceManagementExchangeAccessRuleType?>]`: Criteria which defines the type of device this access rule will apply to
   - `[ConditionalAccessSettings <IMicrosoftGraphOnPremisesConditionalAccessSettings>]`: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Enabled <Boolean?>]`: Indicates if on premises conditional access is enabled for this organization
     - `[ExcludedGroups <String[]>]`: User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.
     - `[IncludedGroups <String[]>]`: User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.
     - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
-  - `[DefaultAccessLevel <String>]`: Access Level in Exchange.
+  - `[DefaultAccessLevel <DeviceManagementExchangeAccessLevel?>]`: Access Level in Exchange.
   - `[KnownDeviceClasses <IMicrosoftGraphDeviceManagementExchangeDeviceClass[]>]`: The list of device classes known to Exchange
   - `[NotificationContent <Byte[]>]`: Notification text that will be sent to users quarantined by this policy. This is UTF8 encoded byte array HTML.
 
-CONDITIONALACCESSSETTINGS <IMicrosoftGraphOnPremisesConditionalAccessSettings>: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
+CONDITIONALACCESSSETTINGS `<IMicrosoftGraphOnPremisesConditionalAccessSettings>`: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Enabled <Boolean?>]`: Indicates if on premises conditional access is enabled for this organization
   - `[ExcludedGroups <String[]>]`: User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.
   - `[IncludedGroups <String[]>]`: User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.
   - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
 
-KNOWNDEVICECLASSES <IMicrosoftGraphDeviceManagementExchangeDeviceClass[]>: The list of device classes known to Exchange
+KNOWNDEVICECLASSES <IMicrosoftGraphDeviceManagementExchangeDeviceClass\[]>: The list of device classes known to Exchange
   - `[Name <String>]`: Name of the device class which will be impacted by this rule.
-  - `[Type <String>]`: Criteria which defines the type of device this access rule will apply to
+  - `[Type <DeviceManagementExchangeAccessRuleType?>]`: Criteria which defines the type of device this access rule will apply to
 
 ## RELATED LINKS

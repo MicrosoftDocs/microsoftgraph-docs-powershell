@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddeviceencryptionstate
@@ -8,16 +8,17 @@ schema: 2.0.0
 # Update-MgDeviceManagementManagedDeviceEncryptionState
 
 ## SYNOPSIS
-Encryption report for devices in this account
+Update the navigation property managedDeviceEncryptionStates in deviceManagement
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementManagedDeviceEncryptionState -ManagedDeviceEncryptionStateId <String>
- [-AdditionalProperties <Hashtable>] [-AdvancedBitLockerStates <String>] [-DeviceName <String>]
- [-DeviceType <String>] [-EncryptionPolicySettingState <String>] [-EncryptionReadinessState <String>]
- [-EncryptionState <String>] [-FileVaultStates <String>] [-Id <String>] [-OSVersion <String>]
+ [-AdditionalProperties <Hashtable>] [-AdvancedBitLockerStates <AdvancedBitLockerState>] [-DeviceName <String>]
+ [-DeviceType <DeviceTypes>] [-EncryptionPolicySettingState <String>]
+ [-EncryptionReadinessState <EncryptionReadinessState>] [-EncryptionState <EncryptionState>]
+ [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
  [-PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>] [-TpmSpecificationVersion <String>]
  [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -32,9 +33,10 @@ Update-MgDeviceManagementManagedDeviceEncryptionState -ManagedDeviceEncryptionSt
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementManagedDeviceEncryptionState -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AdvancedBitLockerStates <String>] [-DeviceName <String>]
- [-DeviceType <String>] [-EncryptionPolicySettingState <String>] [-EncryptionReadinessState <String>]
- [-EncryptionState <String>] [-FileVaultStates <String>] [-Id <String>] [-OSVersion <String>]
+ [-AdditionalProperties <Hashtable>] [-AdvancedBitLockerStates <AdvancedBitLockerState>] [-DeviceName <String>]
+ [-DeviceType <DeviceTypes>] [-EncryptionPolicySettingState <String>]
+ [-EncryptionReadinessState <EncryptionReadinessState>] [-EncryptionState <EncryptionState>]
+ [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
  [-PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>] [-TpmSpecificationVersion <String>]
  [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -47,7 +49,7 @@ Update-MgDeviceManagementManagedDeviceEncryptionState -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Encryption report for devices in this account
+Update the navigation property managedDeviceEncryptionStates in deviceManagement
 
 ## EXAMPLES
 
@@ -72,7 +74,7 @@ Accept wildcard characters: False
 Advanced BitLocker State
 
 ```yaml
-Type: String
+Type: AdvancedBitLockerState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +120,7 @@ Accept wildcard characters: False
 Device type.
 
 ```yaml
-Type: String
+Type: DeviceTypes
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +150,7 @@ Accept wildcard characters: False
 Encryption readiness state
 
 ```yaml
-Type: String
+Type: EncryptionReadinessState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +165,7 @@ Accept wildcard characters: False
 Encryption state
 
 ```yaml
-Type: String
+Type: EncryptionState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +180,7 @@ Accept wildcard characters: False
 FileVault State
 
 ```yaml
-Type: String
+Type: FileVaultState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -361,16 +363,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphManagedDeviceEncryptionState>: Encryption report per device
+BODYPARAMETER `<IMicrosoftGraphManagedDeviceEncryptionState>`: Encryption report per device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[AdvancedBitLockerStates <String>]`: Advanced BitLocker State
+  - `[Id <String>]`: 
+  - `[AdvancedBitLockerStates <AdvancedBitLockerState?>]`: Advanced BitLocker State
   - `[DeviceName <String>]`: Device name
-  - `[DeviceType <String>]`: Device type.
+  - `[DeviceType <DeviceTypes?>]`: Device type.
   - `[EncryptionPolicySettingState <String>]`: complianceStatus
-  - `[EncryptionReadinessState <String>]`: Encryption readiness state
-  - `[EncryptionState <String>]`: Encryption state
-  - `[FileVaultStates <String>]`: FileVault State
+  - `[EncryptionReadinessState <EncryptionReadinessState?>]`: Encryption readiness state
+  - `[EncryptionState <EncryptionState?>]`: Encryption state
+  - `[FileVaultStates <FileVaultState?>]`: FileVault State
   - `[OSVersion <String>]`: Operating system version of the device
   - `[PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>]`: Policy Details
     - `[PolicyId <String>]`: Policy Id for Encryption Report
@@ -378,7 +380,7 @@ BODYPARAMETER <IMicrosoftGraphManagedDeviceEncryptionState>: Encryption report p
   - `[TpmSpecificationVersion <String>]`: Device TPM Version
   - `[UserPrincipalName <String>]`: User name
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -408,6 +410,15 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
+  - `[DeviceManagementComplianceActionItemId <String>]`: key: id of deviceManagementComplianceActionItem
+  - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
+  - `[DeviceManagementComplianceScheduledActionForRuleId <String>]`: key: id of deviceManagementComplianceScheduledActionForRule
+  - `[DeviceManagementConfigurationPolicyAssignmentId <String>]`: key: id of deviceManagementConfigurationPolicyAssignment
+  - `[DeviceManagementConfigurationPolicyId <String>]`: key: id of deviceManagementConfigurationPolicy
+  - `[DeviceManagementConfigurationPolicyTemplateId <String>]`: key: id of deviceManagementConfigurationPolicyTemplate
+  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: key: id of deviceManagementConfigurationSettingDefinition
+  - `[DeviceManagementConfigurationSettingId <String>]`: key: id of deviceManagementConfigurationSetting
+  - `[DeviceManagementConfigurationSettingTemplateId <String>]`: key: id of deviceManagementConfigurationSettingTemplate
   - `[DeviceManagementDerivedCredentialSettingsId <String>]`: key: id of deviceManagementDerivedCredentialSettings
   - `[DeviceManagementIntentAssignmentId <String>]`: key: id of deviceManagementIntentAssignment
   - `[DeviceManagementIntentDeviceSettingStateSummaryId <String>]`: key: id of deviceManagementIntentDeviceSettingStateSummary
@@ -445,8 +456,6 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[ManagedDeviceEncryptionStateId <String>]`: key: id of managedDeviceEncryptionState
   - `[ManagedDeviceId <String>]`: key: id of managedDevice
   - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
-  - `[ManagementConditionId <String>]`: key: id of managementCondition
-  - `[ManagementConditionStatementId <String>]`: key: id of managementConditionStatement
   - `[MicrosoftTunnelConfigurationId <String>]`: key: id of microsoftTunnelConfiguration
   - `[MicrosoftTunnelHealthThresholdId <String>]`: key: id of microsoftTunnelHealthThreshold
   - `[MicrosoftTunnelServerId <String>]`: key: id of microsoftTunnelServer
@@ -476,6 +485,7 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[UserExperienceAnalyticsBatteryHealthOSPerformanceId <String>]`: key: id of userExperienceAnalyticsBatteryHealthOsPerformance
   - `[UserExperienceAnalyticsCategoryId <String>]`: key: id of userExperienceAnalyticsCategory
   - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsDevicePerformance
+  - `[UserExperienceAnalyticsDeviceScopeId <String>]`: key: id of userExperienceAnalyticsDeviceScope
   - `[UserExperienceAnalyticsDeviceScoresId <String>]`: key: id of userExperienceAnalyticsDeviceScores
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
@@ -497,7 +507,7 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails[]>: Policy Details
+POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails\[]>: Policy Details
   - `[PolicyId <String>]`: Policy Id for Encryption Report
   - `[PolicyName <String>]`: Policy Name for Encryption Report
 
