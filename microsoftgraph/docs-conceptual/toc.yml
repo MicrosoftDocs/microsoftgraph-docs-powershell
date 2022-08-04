@@ -16,7 +16,7 @@
       href: find-mg-graph-permission.md   
 - name: Learn
   items:
-    - name: App-only authentication
+    - name: Enable app-only authentication
       href: app-only.md
     - name: Manage access to resources
       href: tutorial-entitlement-management.md

@@ -27,13 +27,13 @@ landingContent:
         links:
           - text: Install the SDK
             url: installation.md
-          - text: Use PowerShell
+          - text: Get started with Microsoft Graph PowerShell
             url: get-started.md
-          - text: Navigating the SDK
+          - text: Navigate the SDK
             url: navigating.md  
 
   # Card
-  - title: Upgrade to Microsoft Graph PowerShell
+  - title: Upgrade to Microsoft Graph PowerShell from Azure AD PowerShell
     linkLists:
       - linkListType: get-started
         links:
@@ -49,13 +49,13 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Using Find-MgGraphCommand
+          - text: Use Find-MgGraphCommand to discover commands
             url: find-mg-graph-command.md
-          - text: Using Find-MgGraphPermission
+          - text: Use Find-MgGraphPermission to discover command permissions
             url: find-mg-graph-permission.md
       - linkListType: tutorial
         links:
-          - text: App-only authentication
+          - text: Enable app-only authentication
             url: app-only.md
           - text: Manage access to resources
             url: tutorial-entitlement-management.md
@@ -78,12 +78,12 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Microsoft Q&A
-            url: https://docs.microsoft.com/en-us/answers/index.html
           - text: Permissions reference
             url: https://docs.microsoft.com/en-us/graph/permissions-reference
           - text: Advanced query capabilities
             url: https://docs.microsoft.com/en-us/graph/aad-advanced-queries?tabs=http
           - text: API reference
-            url: https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0  
+            url: https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0
+          - text: Microsoft Q&A
+            url: https://docs.microsoft.com/en-us/answers/index.html    
 
