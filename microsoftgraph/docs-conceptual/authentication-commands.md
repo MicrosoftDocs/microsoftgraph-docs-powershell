@@ -62,7 +62,7 @@ To use this method, the certificate is loaded from *Cert:\CurrentUser\My\\* when
     Connect-MgGraph -ClientId "YOUR_APP_ID" -TenantId "YOUR_TENANT_ID" -Certificate $Cert
     ```
 
-    To use a certificate stored in your machine's certificate store or other location when connecting to Microsoft Graph, specify the certificate's location.
+    To use a certificate stored in your machine's certificate store or another location, when connecting to Microsoft Graph, specify the certificate's location.
 
 ### Connecting to an environment or cloud
 
