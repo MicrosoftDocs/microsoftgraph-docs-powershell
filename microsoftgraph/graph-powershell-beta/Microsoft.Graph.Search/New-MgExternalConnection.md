@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnection
@@ -327,7 +327,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection1>: externalConnection
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection1>`: externalConnection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[Configuration <IMicrosoftGraphExternalConnectorsConfiguration>]`: configuration
@@ -406,11 +406,11 @@ BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection1>: externalCo
         - `[ValuesJoinedBy <String>]`: binaryOperator
   - `[State <String>]`: connectionState
 
-CONFIGURATION <IMicrosoftGraphExternalConnectorsConfiguration>: configuration
+CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthorizedAppIds <String[]>]`: A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection.
 
-GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup[]>: Read-only. Nullable.
+GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: Read-only. Nullable.
   - `[Id <String>]`: Read-only.
   - `[Description <String>]`: The description of the external group. Optional.
   - `[DisplayName <String>]`: The friendly name of the external group. Optional.
@@ -418,7 +418,7 @@ GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup[]>: Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Type <String>]`: identityType
 
-ITEMS <IMicrosoftGraphExternalConnectorsExternalItem1[]>: Read-only. Nullable.
+ITEMS <IMicrosoftGraphExternalConnectorsExternalItem1\[]>: Read-only. Nullable.
   - `[Id <String>]`: Read-only.
   - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
     - `[AccessType <String>]`: accessType
@@ -432,7 +432,7 @@ ITEMS <IMicrosoftGraphExternalConnectorsExternalItem1[]>: Read-only. Nullable.
   - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation[]>: Read-only. Nullable.
+OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation\[]>: Read-only. Nullable.
   - `[Id <String>]`: Read-only.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -451,12 +451,12 @@ OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation[]>: Read-only. 
     - `[Target <String>]`: The target of the error.
   - `[Status <String>]`: connectionOperationStatus
 
-QUOTA <IMicrosoftGraphExternalConnectorsConnectionQuota>: connectionQuota
+QUOTA `<IMicrosoftGraphExternalConnectorsConnectionQuota>`: connectionQuota
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[ItemsRemaining <Int64?>]`: 
 
-SCHEMA <IMicrosoftGraphExternalConnectorsSchema1>: schema
+SCHEMA `<IMicrosoftGraphExternalConnectorsSchema1>`: schema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[BaseType <String>]`: Must be set to microsoft.graph.externalConnector.externalItem. Required.
@@ -470,7 +470,7 @@ SCHEMA <IMicrosoftGraphExternalConnectorsSchema1>: schema
     - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
     - `[Type <String>]`: propertyType
 
-SEARCHSETTINGS <IMicrosoftGraphExternalConnectorsSearchSettings>: searchSettings
+SEARCHSETTINGS `<IMicrosoftGraphExternalConnectorsSearchSettings>`: searchSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed.
     - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets.
