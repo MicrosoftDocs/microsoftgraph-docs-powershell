@@ -11,17 +11,17 @@ ms.author: eunicewaweru
 
 # Authentication module cmdlets in Microsoft Graph PowerShell
 
-Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication, for example, environment, application ID, certificate. In this article, we'll look at the different cmdlets that are associated with authentication.
+Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication, for example, environment, application ID, and certificate. In this article, we'll look at the different cmdlets that are associated with authentication.
 
 ## Using Connect-MgGraph
 
-`Connect-MgGraph` must be invoked before any commands that access Microsoft Graph. This cmdlet gets the access token using the Microsoft Authentication Library.
+You must invoke `Connect-MgGraph` before any commands that access Microsoft Graph. This cmdlet gets the access token using the Microsoft Authentication Library.
 
 ### Delegated access
 
 There are three ways to allow delegated access using `Connect-MgGraph`:
 
-- Interactive authentication: Here you provide the scopes that you require during your session.
+- Using interactive authentication, where you provide the scopes that you require during your session:
 
     ```powershell
     Connect-MgGraph -Scopes "User.Read.All", "Group.ReadWrite.All"
@@ -62,7 +62,7 @@ To use this method, the certificate is loaded from *Cert:\CurrentUser\My\\* when
     Connect-MgGraph -ClientId "YOUR_APP_ID" -TenantId "YOUR_TENANT_ID" -Certificate $Cert
     ```
 
-    To use a certificate stored in your machine's certificate store or another location, when connecting to Microsoft Graph, specify the certificate's location.
+    To use a certificate stored in your machine's certificate store or another location when connecting to Microsoft Graph, specify the certificate's location.
 
 ### Connecting to an environment or cloud
 
