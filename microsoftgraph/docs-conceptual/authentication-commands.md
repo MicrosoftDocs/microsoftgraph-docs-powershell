@@ -41,7 +41,7 @@ There are three ways to allow delegated access using `Connect-MgGraph`:
 
 ### App-only access via client credential with a certificate
 
-To use this method, the certificate is loaded from *Cert:\CurrentUser\My\\* when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in the store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+To use app-only access, the certificate is loaded from *Cert:\CurrentUser\My\\* when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in the store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
 - Using Certificate Thumbprint:
 
@@ -66,14 +66,7 @@ To use this method, the certificate is loaded from *Cert:\CurrentUser\My\\* when
 
 ### Connecting to an environment or cloud
 
-By default, `Connect-MgGraph` targets the global public cloud. To explicitly target other clouds, for example, US Government and Azure China, use the `-Environment` parameter. Use [Get-MgEnvironment](#using-get-mgenvironment) to list all the clouds you can choose from.
-
-```powershell
-Connect-MgGraph -Environment USGov
-```
-
->[!NOTE]
->Globally registered apps don't replicate to Azure China. You'll need to register your own applications in Azure China and use them when connecting to Microsoft Graph.
+By default, `Connect-MgGraph` targets the global public cloud. To target other clouds, see [Using Get-MgEnvironment](#using-get-mgenvironment).
 
 ### Connecting to an environment as a different identity
 
@@ -111,6 +104,15 @@ Global   https://login.microsoftonline.com https://graph.microsoft.com          
 USGov    https://login.microsoftonline.us  https://graph.microsoft.us              Built-in
 USGovDoD https://login.microsoftonline.us  https://dod-graph.microsoft.us          Built-in
 ```
+
+To explicitly target other clouds, for example, US Government and Azure China, use the `-Environment` parameter.
+
+```powershell
+Connect-MgGraph -Environment USGov
+```
+
+>[!NOTE]
+>Globally registered apps don't replicate to Azure China. You'll need to register your own applications in Azure China and use them when connecting to Microsoft Graph.
 
 ## Using Get-MgContext
 
