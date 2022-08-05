@@ -14,13 +14,13 @@ reviewer: maisarissi,peombwa
 
 This article explains how to determine, diagnose, and fix issues that you might encounter when using Microsoft Graph PowerShell.
 
-Before troubleshooting any errors, ensure that you're running the most recent version of the SDK. To get the SDK version you're running, run:
+Before troubleshooting any errors, make sure that you're running the most recent version of the SDK. To get the SDK version you're running, run:
 
 ```powershell
 Get-InstalledModule
 ```
 
-The version of the `Microsoft.Graph` module should be the most recent compared to the latest release in the [PowerShell gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). If your installed module is not up to date, update your module by running:
+The version of the `Microsoft.Graph` module should be the most recent compared to the latest release in the [PowerShell gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). If your installed module isn't up to date, update your module by running:
 
 ```PowerShell
 Update-Module Microsoft.Graph
@@ -28,7 +28,11 @@ Update-Module Microsoft.Graph
 
 ## Profile related errors
 
-By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default. As a result, you might encounter an error if you run a command that is not available in your current profile.
+By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default. As a result, you might encounter an error if you run a command that isn't available in your current profile.
+
+For example, when I run a cmdlet not available in my current profile, I'll get the error below:
+
+:::image type="content" source="images/profile-error.png" alt-text="profile-related-error"::: 
 
 To check the API version targeted by your command, run:
 
@@ -82,20 +86,20 @@ For more info, see [app-only authentication](app-only.md).
 
 The -Debug parameter provides a powerful way to examine a script while it's running to identify and correct errors in the script. The following are the important parts of a -Debug output:
 
-1. **cmdletBeginProcessing** - this part allows you to confirm the cmdlet you are running and the parameter list provided to the cmdlet. For example, `DEBUG: [CmdletBeginProcessing]: - Get-MgUser begin processing with parameterSet 'List1'.` shows that we are running the `Get-MgUser` cmdlet and the parameter list is `List1`.
-1. **AuthType** - this will either be `delegated` or `application`.
+1. **cmdletBeginProcessing** - this part allows you to confirm the cmdlet you're running and the parameter list provided to the cmdlet. For example, `DEBUG: [CmdletBeginProcessing]: - Get-MgUser begin processing with parameterSet 'List1'.` shows that we're running the `Get-MgUser` cmdlet and the parameter list is `List1`.
+1. **AuthType** - will either be `delegated` or `application`.
 1. **AuthProviderType** - the type of authentication that you've used. For example, interactive, device-code, certificate, among others.
-1. **Scopes** - This shows all the scopes that you've authenticated to for the particular application, acquired by decoding the access token and getting the SCP claim.
-1. **HTTP request** - This comprises of:
+1. **Scopes** - shows all the scopes that you've authenticated to for the particular application, acquired by decoding the access token and getting the SCP claim.
+1. **HTTP request** - comprises of:
     1. Method - could be GET, POST, PUSH, UPDATE
-    1. Uri - Uri will change based on the cloud you are connected to and the version of the SDK you are connected to.
+    1. Uri - Uri will change based on the cloud you're connected to and the version of the SDK you're connected to.
     1. Body - shows the body of your request.
-1. **HTTP response** - This will comprise of the following information:
+1. **HTTP response** - will comprise of the following information:
     1. Status code - this part provides the error code returned.
-        1. When it shows `OK` it means that the command run successfully.
-        1. When it shows `Bad request`, take the uri and call it via Invoke-MgGraphRequest to determine if it is a service or a client issue.
-    1. Headers - The most important headers are the `request-id` and `date`. This helps the support team to determine the cause of the failure. Use this ID and timestamp as you log any issues for the support team to troubleshoot.
-    1. Body - shows what the service returns. The most important part of the body is the `@odata.nextLink` which provides a link to fetch the next page when the result is in multiple pages. If the request fails, the body will contain the error code and the error message.
+        1. When it shows `OK`, it means that the command run successfully.
+        1. When it shows `Bad request`, take the uri and call it via Invoke-MgGraphRequest to determine if it's a service or a client issue.
+    1. Headers - The most important headers are the `request-id` and `date`. These headers helps the support team to determine the cause of the failure. Use this ID and timestamp as you log any issues for the support team to troubleshoot.
+    1. Body - shows what the service returns. The most important part of the body is the `@odata.nextLink`, which provides a link to fetch the next page when the result is in multiple pages. If the request fails, the body will contain the error code and the error message.
 
 To enable debug logging on a per command basis, specify the Debug parameter.
 
@@ -103,7 +107,7 @@ To enable debug logging on a per command basis, specify the Debug parameter.
 Get-MgUser -UserId 'DoesNotExist' -Debug
 ```
 
-Here is a sample output for this command:
+Here's a sample output for this command:
 
 :::image type="content" source="images/sample-debug-response.png" alt-text="sample debug output":::
 
