@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector
 schema: 2.0.0
@@ -15,12 +15,12 @@ Create new navigation property to apiConnectors for identity
 ### CreateExpanded1 (Default)
 ```
 New-MgIdentityApiConnector [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-TargetUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-TargetUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-Confirm] [-WhatIf]
+New-MgIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Create new navigation property to apiConnectors for identity
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 apiAuthenticationConfigurationBase
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -66,7 +66,7 @@ identityApiConnector
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
+Type: IMicrosoftGraphIdentityApiConnector
 Parameter Sets: Create1
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 The name of the API connector.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 The URL of the API endpoint to call.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
-
 ## NOTES
 
 ALIASES
@@ -182,4 +180,3 @@ BODYPARAMETER <IMicrosoftGraphIdentityApiConnector>: identityApiConnector
   - `[TargetUrl <String>]`: The URL of the API endpoint to call.
 
 ## RELATED LINKS
-

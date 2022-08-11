@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationwindowhelloforbusinessmethoddeviceregisteredownerbyref
 schema: 2.0.0
@@ -15,13 +15,13 @@ Create new navigation property ref to registeredOwners for users
 ### Create1 (Default)
 ```
 New-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwnerByRef -UserId <String>
- -WindowsHelloForBusinessAuthenticationMethodId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -WindowsHelloForBusinessAuthenticationMethodId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwnerByRef
- -InputObject <IIdentitySignInsIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -InputObject <IIdentitySignInsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Type: IIdentitySignInsIdentity
 Parameter Sets: CreateViaIdentity1
 Aliases:
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Create1
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 key: id of windowsHelloForBusinessAuthenticationMethod
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Create1
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -214,4 +212,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-
