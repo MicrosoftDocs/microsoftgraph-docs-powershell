@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/start-mgdevicemanagementuserexperienceanalyticdevicescopeaction
 schema: 2.0.0
@@ -15,14 +15,14 @@ Invoke action triggerDeviceScopeAction
 ### TriggerExpanded (Default)
 ```
 Start-MgDeviceManagementUserExperienceAnalyticDeviceScopeAction [-ActionName <String>]
- [-AdditionalProperties <Hashtable>] [-DeviceScopeId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DeviceScopeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Trigger
 ```
 Start-MgDeviceManagementUserExperienceAnalyticDeviceScopeAction
  -BodyParameter <IPathsNcwx4CDevicemanagementUserexperienceanalyticsdevicescopeMicrosoftGraphTriggerdevicescopeactionPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Invoke action triggerDeviceScopeAction
 Trigger on the service to either START or STOP computing metrics data based on a device scope configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: TriggerExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: TriggerExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsNcwx4CDevicemanagementUserexperienceanalyticsdevicescopeMicrosoftGraphTriggerdevicescopeactionPostRequestbodyContentApplicationJsonSchema
+Type: IPathsNcwx4CDevicemanagementUserexperienceanalyticsdevicescopeMicrosoftGraphTriggerdevicescopeactionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Trigger
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: TriggerExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,11 +130,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsNcwx4CDevicemanagementUserexperienceanalyticsdevicescopeMicrosoftGraphTriggerdevicescopeactionPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceScopeActionResult
-
 ## NOTES
 
 ALIASES
@@ -150,4 +148,3 @@ BODYPARAMETER <IPathsNcwx4CDevicemanagementUserexperienceanalyticsdevicescopeMic
   - `[DeviceScopeId <String>]`: 
 
 ## RELATED LINKS
-

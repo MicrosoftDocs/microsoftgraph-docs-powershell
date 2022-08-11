@@ -1,32 +1,33 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbulkreprovisiondevicemanagementcomanageddevicecloudpc
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbulkdevicemanagementmanageddevicesetcloudpcreviewstatus
 schema: 2.0.0
 ---
 
-# Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc
+# Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
 
 ## SYNOPSIS
-Invoke action bulkReprovisionCloudPc
+Invoke action bulkSetCloudPcReviewStatus
 
 ## SYNTAX
 
 ### BulkExpanded (Default)
 ```
-Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc [-AdditionalProperties <Hashtable>]
- [-ManagedDeviceIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus [-AdditionalProperties <Hashtable>]
+ [-ManagedDeviceIds <String[]>] [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Bulk
 ```
-Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc
- -BodyParameter <IPaths1WrkhgvDevicemanagementComanageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
+ -BodyParameter <IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action bulkReprovisionCloudPc
+Invoke action bulkSetCloudPcReviewStatus
 
 ## EXAMPLES
 
@@ -36,7 +37,7 @@ Invoke action bulkReprovisionCloudPc
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: BulkExpanded
 Aliases:
 
@@ -52,7 +53,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1WrkhgvDevicemanagementComanageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema
+Type: IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Bulk
 Aliases:
 
@@ -67,7 +68,23 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
+Parameter Sets: BulkExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReviewStatus
+cloudPcReviewStatus
+To construct, please use Get-Help -Online and see NOTES section for REVIEWSTATUS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcReviewStatus
 Parameter Sets: BulkExpanded
 Aliases:
 
@@ -82,7 +99,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +115,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -114,26 +131,42 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1WrkhgvDevicemanagementComanageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.PowerShell.Models.IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcBulkRemoteActionResult
-
 ## NOTES
 
 ALIASES
-
-### Invoke-MgBulkDeviceManagementComanagedDeviceReprovisionCloudPc
 
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1WrkhgvDevicemanagementComanageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ManagedDeviceIds <String[]>]`: 
+  - `[ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>]`: cloudPcReviewStatus
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AzureStorageAccountId <String>]`: The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.
+    - `[AzureStorageAccountName <String>]`: The name of the Azure Storage account in which the Cloud PC snapshot is being saved.
+    - `[InReview <Boolean?>]`: True if the Cloud PC is set to in review by the administrator.
+    - `[RestorePointDateTime <DateTime?>]`: The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+    - `[ReviewStartDateTime <DateTime?>]`: The specific date and time when the Cloud PC was set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+    - `[SubscriptionId <String>]`: The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.
+    - `[SubscriptionName <String>]`: The name of the Azure subscription in which the Cloud PC snapshot is being saved.
+    - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
+
+REVIEWSTATUS <IMicrosoftGraphCloudPcReviewStatus>: cloudPcReviewStatus
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AzureStorageAccountId <String>]`: The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.
+  - `[AzureStorageAccountName <String>]`: The name of the Azure Storage account in which the Cloud PC snapshot is being saved.
+  - `[InReview <Boolean?>]`: True if the Cloud PC is set to in review by the administrator.
+  - `[RestorePointDateTime <DateTime?>]`: The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+  - `[ReviewStartDateTime <DateTime?>]`: The specific date and time when the Cloud PC was set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+  - `[SubscriptionId <String>]`: The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.
+  - `[SubscriptionName <String>]`: The name of the Azure subscription in which the Cloud PC snapshot is being saved.
+  - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
 
 ## RELATED LINKS
-

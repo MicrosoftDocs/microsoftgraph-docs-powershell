@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 Module Guid: 6b8b877a-42e0-4d1e-8a5b-8c3306a13dc0
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
@@ -106,6 +106,9 @@ Invoke action getHealthMetrics
 
 ### [Get-MgDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries](Get-MgDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries.md)
 Invoke action getHealthMetricTimeSeries
+
+### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire](Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire.md)
+Invoke action getDevicesScheduledToRetire
 
 ### [Get-MgDeviceManagementDeviceConfigurationTargetedUserAndDevice](Get-MgDeviceManagementDeviceConfigurationTargetedUserAndDevice.md)
 Invoke action getTargetedUsersAndDevices
@@ -311,22 +314,40 @@ Invoke action unassignResourceAccountFromDevice
 ### [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding.md)
 Invoke action beginOnboarding
 
+### [Invoke-MgBulkDeviceManagementComanagedDeviceReprovisionCloudPc](Invoke-MgBulkDeviceManagementComanagedDeviceReprovisionCloudPc.md)
+Invoke action bulkReprovisionCloudPc
+
+### [Invoke-MgBulkDeviceManagementComanagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementComanagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
 ### [Invoke-MgBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus](Invoke-MgBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus.md)
+Invoke action bulkSetCloudPcReviewStatus
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceReprovisionCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceReprovisionCloudPc.md)
+Invoke action bulkReprovisionCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus](Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus.md)
 Invoke action bulkSetCloudPcReviewStatus
 
 ### [Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus](Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus.md)
 Invoke action bulkSetCloudPcReviewStatus
 
-### [Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc](Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc.md)
-Invoke action bulkReprovisionCloudPc
-
-### [Invoke-MgBulkReprovisionDeviceManagementManagedDeviceCloudPc](Invoke-MgBulkReprovisionDeviceManagementManagedDeviceCloudPc.md)
-Invoke action bulkReprovisionCloudPc
-
-### [Invoke-MgBulkRestoreDeviceManagementComanagedDeviceCloudPc](Invoke-MgBulkRestoreDeviceManagementComanagedDeviceCloudPc.md)
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
 Invoke action bulkRestoreCloudPc
 
-### [Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc](Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc.md)
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
 Invoke action bulkRestoreCloudPc
 
 ### [Invoke-MgCleanDeviceManagementComanagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementComanagedDeviceWindowDevice.md)
@@ -334,6 +355,12 @@ Invoke action cleanWindowsDevice
 
 ### [Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice.md)
 Invoke action cleanWindowsDevice
+
+### [Invoke-MgCloudDeviceManagementComanagedDevice](Invoke-MgCloudDeviceManagementComanagedDevice.md)
+Invoke action reprovisionCloudPc
+
+### [Invoke-MgCloudDeviceManagementManagedDevice](Invoke-MgCloudDeviceManagementManagedDevice.md)
+Invoke action reprovisionCloudPc
 
 ### [Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing](Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing.md)
 Invoke action consentToDataSharing
@@ -413,11 +440,11 @@ Invoke action reenable
 ### [Invoke-MgReenableDeviceManagementManagedDevice](Invoke-MgReenableDeviceManagementManagedDevice.md)
 Invoke action reenable
 
-### [Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc](Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc.md)
-Invoke action reprovisionCloudPc
+### [Invoke-MgReenableDeviceManagementManagedDevice](Invoke-MgReenableDeviceManagementManagedDevice.md)
+Invoke action reenable
 
-### [Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc](Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc.md)
-Invoke action reprovisionCloudPc
+### [Invoke-MgReenableDeviceManagementManagedDevice](Invoke-MgReenableDeviceManagementManagedDevice.md)
+Invoke action reenable
 
 ### [Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc](Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc.md)
 Invoke action reprovision
@@ -562,6 +589,9 @@ Invoke action removeDeviceFirmwareConfigurationInterfaceManagement
 
 ### [Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice](Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice.md)
 Invoke action deleteUserFromSharedAppleDevice
+
+### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice.md)
+Invoke action deleteDevices
 
 ### [Rename-MgDeviceManagementVirtualEndpointCloudPc](Rename-MgDeviceManagementVirtualEndpointCloudPc.md)
 Invoke action rename

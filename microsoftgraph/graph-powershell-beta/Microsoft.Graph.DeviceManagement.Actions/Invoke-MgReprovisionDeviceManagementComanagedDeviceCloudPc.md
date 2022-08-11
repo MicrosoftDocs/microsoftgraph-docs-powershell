@@ -1,31 +1,31 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreprovisiondevicemanagementcomanageddevicecloudpc
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreenabledevicemanagementmanageddevice
 schema: 2.0.0
 ---
 
-# Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc
+# Invoke-MgReenableDeviceManagementManagedDevice
 
 ## SYNOPSIS
-Invoke action reprovisionCloudPc
+Invoke action reenable
 
 ## SYNTAX
 
-### Cloud (Default)
+### Reenable (Default)
 ```
-Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc -ManagedDeviceId <String> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Invoke-MgReenableDeviceManagementManagedDevice -ManagedDeviceId <String> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### CloudViaIdentity
+### ReenableViaIdentity
 ```
-Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgReenableDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action reprovisionCloudPc
+Invoke action reenable
 
 ## EXAMPLES
 
@@ -36,8 +36,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: CloudViaIdentity
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: ReenableViaIdentity
 Aliases:
 
 Required: True
@@ -51,8 +51,8 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: System.String
-Parameter Sets: Cloud
+Type: String
+Parameter Sets: Reenable
 Aliases:
 
 Required: True
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -97,7 +97,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -114,16 +114,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
-
-### Invoke-MgCloudDeviceManagementComanagedDevice
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -182,4 +178,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/stop-mgdevicemanagementzebrafotadeployment
 schema: 2.0.0
@@ -14,14 +14,14 @@ Invoke action cancel
 
 ### Cancel (Default)
 ```
-Stop-MgDeviceManagementZebraFotaDeployment -ZebraFotaDeploymentId <String> [-Confirm] [-WhatIf]
+Stop-MgDeviceManagementZebraFotaDeployment -ZebraFotaDeploymentId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
 ```
-Stop-MgDeviceManagementZebraFotaDeployment -InputObject <IDeviceManagementActionsIdentity> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Stop-MgDeviceManagementZebraFotaDeployment -InputObject <IDeviceManagementActionsIdentity> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Type: IDeviceManagementActionsIdentity
 Parameter Sets: CancelViaIdentity
 Aliases:
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 key: id of zebraFotaDeployment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Cancel
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -82,7 +82,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -99,11 +99,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -165,4 +163,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
 ## RELATED LINKS
-
