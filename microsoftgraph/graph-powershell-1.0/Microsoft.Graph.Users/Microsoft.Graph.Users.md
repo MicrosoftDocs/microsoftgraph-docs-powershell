@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users
 Module Guid: 142c3529-676c-4243-8d12-285908b9acb8
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
@@ -34,6 +34,12 @@ Get ref of manager from users
 
 ### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
 Get memberOf from users
+
+### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Get-MgUserOauth2PermissionGrant](Get-MgUserOauth2PermissionGrant.md)
 Get oauth2PermissionGrants from users
@@ -83,11 +89,19 @@ Get linkedResources from users
 ### [Get-MgUserTransitiveMemberOf](Get-MgUserTransitiveMemberOf.md)
 Get transitiveMemberOf from users
 
+### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
+A collection of resources linked to the task.
+
 ### [New-MgUser](New-MgUser.md)
 Create user
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
+
+### [New-MgUserExtension](New-MgUserExtension.md)
+The collection of open extensions defined for the user.
+Read-only.
+Nullable.
 
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
 Create new navigation property to masterCategories for users
@@ -112,6 +126,9 @@ Create new navigation property to extensions for users
 
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
 Create new navigation property to linkedResources for users
+
+### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
+A collection of resources linked to the task.
 
 ### [Remove-MgUser](Remove-MgUser.md)
 Delete a user
