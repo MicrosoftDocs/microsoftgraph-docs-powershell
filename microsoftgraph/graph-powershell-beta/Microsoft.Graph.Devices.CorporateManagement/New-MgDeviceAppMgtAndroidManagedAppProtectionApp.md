@@ -1,45 +1,47 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmgtandroidmanagedappprotectionapp
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmgtwindowmanagedappprotectionapp
 schema: 2.0.0
 ---
 
-# New-MgDeviceAppMgtAndroidManagedAppProtectionApp
+# Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp
 
 ## SYNOPSIS
-Create new navigation property to apps for deviceAppManagement
+Invoke action targetApps
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### TargetExpanded (Default)
 ```
-New-MgDeviceAppMgtAndroidManagedAppProtectionApp -AndroidManagedAppProtectionId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-MobileAppIdentifier <Hashtable>] [-Version <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgDeviceAppMgtAndroidManagedAppProtectionApp -AndroidManagedAppProtectionId <String>
- -BodyParameter <IMicrosoftGraphManagedMobileApp> [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp -WindowsManagedAppProtectionId <String>
+ [-AdditionalProperties <Hashtable>] [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### Target
 ```
-New-MgDeviceAppMgtAndroidManagedAppProtectionApp -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedMobileApp> [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp -WindowsManagedAppProtectionId <String>
+ -BodyParameter <IPaths1YpfxrgDeviceappmanagementWindowsmanagedappprotectionsWindowsmanagedappprotectionIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### TargetViaIdentityExpanded
 ```
-New-MgDeviceAppMgtAndroidManagedAppProtectionApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-MobileAppIdentifier <Hashtable>] [-Version <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp -InputObject <IDevicesCorporateManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### TargetViaIdentity
+```
+Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IPaths1YpfxrgDeviceappmanagementWindowsmanagedappprotectionsWindowsmanagedappprotectionIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to apps for deviceAppManagement
+Invoke action targetApps
 
 ## EXAMPLES
 
@@ -49,8 +51,8 @@ Create new navigation property to apps for deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: TargetExpanded, TargetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -60,15 +62,16 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AndroidManagedAppProtectionId
-key: id of androidManagedAppProtection
+### -Apps
+.
+To construct, please use Get-Help -Online and see NOTES section for APPS properties and create a hash table.
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: IMicrosoftGraphManagedMobileApp[]
+Parameter Sets: TargetExpanded, TargetViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -76,33 +79,18 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-The identifier for the deployment an app.
+.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedMobileApp
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IPaths1YpfxrgDeviceappmanagementWindowsmanagedappprotectionsWindowsmanagedappprotectionIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Target, TargetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Id
-.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -111,8 +99,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: TargetViaIdentityExpanded, TargetViaIdentity
 Aliases:
 
 Required: True
@@ -122,12 +110,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -MobileAppIdentifier
-The identifier for a mobile app.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -137,15 +125,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Version
-Version of the entity.
+### -WindowsManagedAppProtectionId
+key: id of windowsManagedAppProtection
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: TargetExpanded, Target
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -156,7 +144,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +160,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,30 +177,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedMobileApp
-
+### Microsoft.Graph.PowerShell.Models.IPaths1YpfxrgDeviceappmanagementWindowsmanagedappprotectionsWindowsmanagedappprotectionIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedMobileApp
-
+### System.Boolean
 ## NOTES
 
 ALIASES
-
-### New-MgDeviceAppManagementAndroidManagedAppProtectionApp
 
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphManagedMobileApp>: The identifier for the deployment an app.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+APPS <IMicrosoftGraphManagedMobileApp[]>: .
   - `[Id <String>]`: 
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Version <String>]`: Version of the entity.
+
+BODYPARAMETER <IPaths1YpfxrgDeviceappmanagementWindowsmanagedappprotectionsWindowsmanagedappprotectionIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: 
+    - `[Id <String>]`: 
+    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Version <String>]`: Version of the entity.
 
 INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
@@ -284,4 +274,3 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
 ## RELATED LINKS
-
