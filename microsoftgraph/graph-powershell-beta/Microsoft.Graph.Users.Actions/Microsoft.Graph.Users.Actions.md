@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Actions
 Module Guid: e8aa2fa0-d700-4683-967f-219abd9a7a65
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
@@ -125,7 +125,10 @@ Invoke action copyToNotebook
 ### [Copy-MgUserOnenoteSectionToSectionGroup](Copy-MgUserOnenoteSectionToSectionGroup.md)
 Invoke action copyToSectionGroup
 
-### [Disable-MgUserAuthenticationMethodSmsSignIn](Disable-MgUserAuthenticationMethodSmsSignIn.md)
+### [Disable-MgUserAuthenticationMethodSmSign](Disable-MgUserAuthenticationMethodSmSign.md)
+Invoke action disableSmsSignIn
+
+### [Disable-MgUserAuthenticationMethodSmSign](Disable-MgUserAuthenticationMethodSmSign.md)
 Invoke action disableSmsSignIn
 
 ### [Disable-MgUserManagedDevice](Disable-MgUserManagedDevice.md)
@@ -134,7 +137,10 @@ Invoke action disable
 ### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
 Invoke action disableLostMode
 
-### [Enable-MgUserAuthenticationMethodSmsSignIn](Enable-MgUserAuthenticationMethodSmsSignIn.md)
+### [Enable-MgUserAuthenticationMethodSmSign](Enable-MgUserAuthenticationMethodSmSign.md)
+Invoke action enableSmsSignIn
+
+### [Enable-MgUserAuthenticationMethodSmSign](Enable-MgUserAuthenticationMethodSmSign.md)
 Invoke action enableSmsSignIn
 
 ### [Enable-MgUserManagedDeviceLostMode](Enable-MgUserManagedDeviceLostMode.md)
@@ -260,10 +266,16 @@ Invoke action decryptBuffer
 ### [Invoke-MgBufferUserInformationProtectionEncrypt](Invoke-MgBufferUserInformationProtectionEncrypt.md)
 Invoke action encryptBuffer
 
-### [Invoke-MgBulkReprovisionUserManagedDeviceCloudPc](Invoke-MgBulkReprovisionUserManagedDeviceCloudPc.md)
+### [Invoke-MgBufferUserInformationProtectionEncrypt](Invoke-MgBufferUserInformationProtectionEncrypt.md)
+Invoke action encryptBuffer
+
+### [Invoke-MgBufferUserInformationProtectionEncrypt](Invoke-MgBufferUserInformationProtectionEncrypt.md)
+Invoke action encryptBuffer
+
+### [Invoke-MgBulkUserManagedDeviceReprovisionCloudPc](Invoke-MgBulkUserManagedDeviceReprovisionCloudPc.md)
 Invoke action bulkReprovisionCloudPc
 
-### [Invoke-MgBulkRestoreUserManagedDeviceCloudPc](Invoke-MgBulkRestoreUserManagedDeviceCloudPc.md)
+### [Invoke-MgBulkUserManagedDeviceRestoreCloudPc](Invoke-MgBulkUserManagedDeviceRestoreCloudPc.md)
 Invoke action bulkRestoreCloudPc
 
 ### [Invoke-MgBulkUserManagedDeviceSetCloudPcReviewStatus](Invoke-MgBulkUserManagedDeviceSetCloudPcReviewStatus.md)
@@ -283,6 +295,9 @@ Invoke action checkout
 
 ### [Invoke-MgCleanUserManagedDeviceWindowDevice](Invoke-MgCleanUserManagedDeviceWindowDevice.md)
 Invoke action cleanWindowsDevice
+
+### [Invoke-MgCloudUserManagedDevice](Invoke-MgCloudUserManagedDevice.md)
+Invoke action reprovisionCloudPc
 
 ### [Invoke-MgCreateOrGetUserOnlineMeeting](Invoke-MgCreateOrGetUserOnlineMeeting.md)
 Invoke action createOrGet
@@ -416,8 +431,8 @@ Invoke action reply
 ### [Invoke-MgReprovisionUserCloudPc](Invoke-MgReprovisionUserCloudPc.md)
 Invoke action reprovision
 
-### [Invoke-MgReprovisionUserManagedDeviceCloudPc](Invoke-MgReprovisionUserManagedDeviceCloudPc.md)
-Invoke action reprovisionCloudPc
+### [Invoke-MgReprovisionUserCloudPc](Invoke-MgReprovisionUserCloudPc.md)
+Invoke action reprovision
 
 ### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
 Invoke action retire
@@ -674,7 +689,10 @@ Invoke action revokeGrants
 ### [Revoke-MgUserManagedDeviceAppleVppLicense](Revoke-MgUserManagedDeviceAppleVppLicense.md)
 Invoke action revokeAppleVppLicenses
 
-### [Revoke-MgUserSignInSession](Revoke-MgUserSignInSession.md)
+### [Revoke-MgUserSign](Revoke-MgUserSign.md)
+Invoke action revokeSignInSessions
+
+### [Revoke-MgUserSign](Revoke-MgUserSign.md)
 Invoke action revokeSignInSessions
 
 ### [Send-MgUserChatActivityNotification](Send-MgUserChatActivityNotification.md)
