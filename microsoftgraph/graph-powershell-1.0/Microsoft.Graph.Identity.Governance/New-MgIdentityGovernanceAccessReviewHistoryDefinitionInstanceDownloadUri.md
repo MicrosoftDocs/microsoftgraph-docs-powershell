@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinitioninstancedownloaduri
 schema: 2.0.0
@@ -15,14 +15,14 @@ Invoke action generateDownloadUri
 ### Generate1 (Default)
 ```
 New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
- -AccessReviewHistoryDefinitionId <String> -AccessReviewHistoryInstanceId <String> [-Confirm] [-WhatIf]
+ -AccessReviewHistoryDefinitionId <String> -AccessReviewHistoryInstanceId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### GenerateViaIdentity1
 ```
 New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
- -InputObject <IIdentityGovernanceIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Invoke action generateDownloadUri
 key: id of accessReviewHistoryDefinition
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Generate1
 Aliases:
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 key: id of accessReviewHistoryInstance
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Generate1
 Aliases:
 
@@ -67,7 +67,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Type: IIdentityGovernanceIdentity
 Parameter Sets: GenerateViaIdentity1
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +98,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -115,11 +115,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryInstance
-
 ## NOTES
 
 ALIASES
@@ -193,4 +191,3 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

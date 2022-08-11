@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogaccesspackageassignmentpolicy
 schema: 2.0.0
@@ -24,21 +24,14 @@ Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -AccessPackag
  [-RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]
  [-RequestorSettings <IMicrosoftGraphAccessPackageAssignmentRequestorSettings>]
  [-ReviewSettings <IMicrosoftGraphAccessPackageAssignmentReviewSettings>]
- [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId <String>
  -AccessPackageCatalogId <String> -AccessPackageId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy1> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -54,7 +47,14 @@ Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -InputObject 
  [-RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]
  [-RequestorSettings <IMicrosoftGraphAccessPackageAssignmentRequestorSettings>]
  [-ReviewSettings <IMicrosoftGraphAccessPackageAssignmentReviewSettings>]
- [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +69,7 @@ accessPackage
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage1
+Type: IMicrosoftGraphAccessPackage1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 key: id of accessPackageAssignmentPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 key: id of accessPackageCatalog
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -114,8 +114,8 @@ Accept wildcard characters: False
 key: id of accessPackage
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 allowedTargetScope
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +160,7 @@ accessPackageAutomaticRequestSettings
 To construct, please use Get-Help -Online and see NOTES section for AUTOMATICREQUESTSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAutomaticRequestSettings
+Type: IMicrosoftGraphAccessPackageAutomaticRequestSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ accessPackageAssignmentPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy1
+Type: IMicrosoftGraphAccessPackageAssignmentPolicy1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -192,7 +192,7 @@ accessPackageCatalog
 To construct, please use Get-Help -Online and see NOTES section for CATALOG properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
+Type: IMicrosoftGraphAccessPackageCatalog1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +208,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 The description of the policy.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +239,7 @@ The display name of the policy.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -255,7 +255,7 @@ expirationPattern
 To construct, please use Get-Help -Online and see NOTES section for EXPIRATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExpirationPattern
+Type: IMicrosoftGraphExpirationPattern
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -286,8 +286,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -302,7 +302,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -317,7 +317,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -333,7 +333,7 @@ accessPackageAssignmentApprovalSettings
 To construct, please use Get-Help -Online and see NOTES section for REQUESTAPPROVALSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentApprovalSettings
+Type: IMicrosoftGraphAccessPackageAssignmentApprovalSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -349,7 +349,7 @@ accessPackageAssignmentRequestorSettings
 To construct, please use Get-Help -Online and see NOTES section for REQUESTORSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequestorSettings
+Type: IMicrosoftGraphAccessPackageAssignmentRequestorSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -365,7 +365,7 @@ accessPackageAssignmentReviewSettings
 To construct, please use Get-Help -Online and see NOTES section for REVIEWSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentReviewSettings
+Type: IMicrosoftGraphAccessPackageAssignmentReviewSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -380,7 +380,7 @@ Accept wildcard characters: False
 The principals that can be assigned access from an access package through this policy.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubjectSet[]
+Type: IMicrosoftGraphSubjectSet[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -395,7 +395,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -411,7 +411,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -428,13 +428,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -864,3 +861,4 @@ REVIEWSETTINGS <IMicrosoftGraphAccessPackageAssignmentReviewSettings>: accessPac
 
 ## RELATED LINKS
 
+## RELATED LINKS
