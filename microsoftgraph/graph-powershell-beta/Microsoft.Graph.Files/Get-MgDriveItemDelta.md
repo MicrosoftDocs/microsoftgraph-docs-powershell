@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdriveitemdelta
 schema: 2.0.0
@@ -22,12 +22,12 @@ Get-MgDriveItemDelta -DriveId <String> -DriveItemId <String> [<CommonParameters>
 Get-MgDriveItemDelta -DriveId <String> -DriveItemId <String> -Token <String> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity
+### DeltaViaIdentity1
 ```
 Get-MgDriveItemDelta -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### DeltaViaIdentity
 ```
 Get-MgDriveItemDelta -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
@@ -43,7 +43,7 @@ Invoke function delta
 key: id of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 key: id of driveItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -74,8 +74,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: DeltaViaIdentity, DeltaViaIdentity1
+Type: IFilesIdentity
+Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 Usage: token='{token}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta1
 Aliases:
 
@@ -106,11 +106,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
-
 ## NOTES
 
 ALIASES
@@ -146,4 +144,3 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
