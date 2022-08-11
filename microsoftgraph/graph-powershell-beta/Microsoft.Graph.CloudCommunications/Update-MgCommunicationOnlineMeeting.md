@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeeting
 schema: 2.0.0
@@ -15,8 +15,8 @@ Update the navigation property onlineMeetings in communications
 ### UpdateExpanded1 (Default)
 ```
 Update-MgCommunicationOnlineMeeting -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowedPresenters <String>]
- [-AllowMeetingChat <String>] [-AllowTeamworkReactions] [-AlternativeRecordingInputFile <String>]
+ [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>]
+ [-AllowTeamworkReactions] [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport1[]>]
  [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings1>] [-Capabilities <String[]>]
@@ -28,27 +28,21 @@ Update-MgCommunicationOnlineMeeting -OnlineMeetingId <String> [-AdditionalProper
  [-Participants <IMicrosoftGraphMeetingParticipants1>] [-RecordAutomatically] [-RecordingInputFile <String>]
  [-Registration <IMicrosoftGraphMeetingRegistration>] [-StartDateTime <DateTime>] [-Subject <String>]
  [-Transcripts <IMicrosoftGraphCallTranscript[]>] [-VideoTeleconferenceId <String>]
- [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>] [-PassThru] [-Confirm] [-WhatIf]
+ [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgCommunicationOnlineMeeting -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphOnlineMeeting1>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnlineMeeting1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowedPresenters <String>] [-AllowMeetingChat <String>] [-AllowTeamworkReactions]
+ [-AllowMeetingChat <String>] [-AllowTeamworkReactions] [-AllowedPresenters <String>]
  [-AlternativeRecordingInputFile <String>] [-AnonymizeIdentityForRoles <String[]>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport1[]>] [-AttendeeReportInputFile <String>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
@@ -61,8 +55,14 @@ Update-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  [-Participants <IMicrosoftGraphMeetingParticipants1>] [-RecordAutomatically] [-RecordingInputFile <String>]
  [-Registration <IMicrosoftGraphMeetingRegistration>] [-StartDateTime <DateTime>] [-Subject <String>]
  [-Transcripts <IMicrosoftGraphCallTranscript[]>] [-VideoTeleconferenceId <String>]
- [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>] [-PassThru] [-Confirm] [-WhatIf]
+ [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphOnlineMeeting1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -76,7 +76,7 @@ Update the navigation property onlineMeetings in communications
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 Indicates whether attendees can turn on their camera.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 Indicates whether attendees can turn on their microphone.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 onlineMeetingPresenters
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 meetingChatMode
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 Indicates if Teams reactions are enabled for the meeting.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -167,7 +167,7 @@ Input File for AlternativeRecording (The content stream of the alternative recor
 Read-only.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -199,7 +199,7 @@ Read-only.
 To construct, please use Get-Help -Online and see NOTES section for ATTENDANCEREPORTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport1[]
+Type: IMicrosoftGraphMeetingAttendanceReport1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -215,7 +215,7 @@ Input File for AttendeeReport (The content stream of the attendee report of a Te
 Read-only.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -231,7 +231,7 @@ audioConferencing
 To construct, please use Get-Help -Online and see NOTES section for AUDIOCONFERENCING properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioConferencing
+Type: IMicrosoftGraphAudioConferencing
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -247,7 +247,7 @@ onlineMeeting
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting1
+Type: IMicrosoftGraphOnlineMeeting1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -263,7 +263,7 @@ broadcastMeetingSettings
 To construct, please use Get-Help -Online and see NOTES section for BROADCASTSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBroadcastMeetingSettings1
+Type: IMicrosoftGraphBroadcastMeetingSettings1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -294,7 +294,7 @@ chatInfo
 To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatInfo
+Type: IMicrosoftGraphChatInfo
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -310,7 +310,7 @@ The meeting creation time in UTC.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 The meeting end time in UTC.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -342,7 +342,7 @@ A custom ID.
 Optional.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -373,8 +373,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -388,7 +388,7 @@ Accept wildcard characters: False
 Indicates whether this is a Teams live event.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -403,7 +403,7 @@ Accept wildcard characters: False
 Indicates whether to announce when callers join or leave.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -419,7 +419,7 @@ itemBody
 To construct, please use Get-Help -Online and see NOTES section for JOININFORMATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemBody
+Type: IMicrosoftGraphItemBody
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -435,7 +435,7 @@ joinMeetingIdSettings
 To construct, please use Get-Help -Online and see NOTES section for JOINMEETINGIDSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphJoinMeetingIdSettings
+Type: IMicrosoftGraphJoinMeetingIdSettings
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -466,7 +466,7 @@ The join URL of the online meeting.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -482,7 +482,7 @@ lobbyBypassSettings
 To construct, please use Get-Help -Online and see NOTES section for LOBBYBYPASSSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLobbyBypassSettings
+Type: IMicrosoftGraphLobbyBypassSettings
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -498,7 +498,7 @@ meetingAttendanceReport
 To construct, please use Get-Help -Online and see NOTES section for MEETINGATTENDANCEREPORT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport1
+Type: IMicrosoftGraphMeetingAttendanceReport1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -513,8 +513,8 @@ Accept wildcard characters: False
 key: id of onlineMeeting
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -529,7 +529,7 @@ meetingParticipants
 To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingParticipants1
+Type: IMicrosoftGraphMeetingParticipants1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -544,7 +544,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -559,7 +559,7 @@ Accept wildcard characters: False
 Indicates whether to record the meeting automatically.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -575,7 +575,7 @@ Input File for Recording (The content stream of the recording of a Teams live ev
 Read-only.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -591,7 +591,7 @@ meetingRegistration
 To construct, please use Get-Help -Online and see NOTES section for REGISTRATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingRegistration
+Type: IMicrosoftGraphMeetingRegistration
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -606,7 +606,7 @@ Accept wildcard characters: False
 The meeting start time in UTC.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -621,7 +621,7 @@ Accept wildcard characters: False
 The subject of the online meeting.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -638,7 +638,7 @@ Read-only.
 To construct, please use Get-Help -Online and see NOTES section for TRANSCRIPTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallTranscript[]
+Type: IMicrosoftGraphCallTranscript[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -654,7 +654,7 @@ The video teleconferencing ID.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -670,7 +670,7 @@ virtualAppointment
 To construct, please use Get-Help -Online and see NOTES section for VIRTUALAPPOINTMENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualAppointment
+Type: IMicrosoftGraphVirtualAppointment
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -685,7 +685,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -701,7 +701,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -718,13 +718,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -1031,3 +1028,4 @@ VIRTUALAPPOINTMENT <IMicrosoftGraphVirtualAppointment>: virtualAppointment
 
 ## RELATED LINKS
 
+## RELATED LINKS
