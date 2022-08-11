@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementwindowautopilotdeploymentprofileassignment
 schema: 2.0.0
@@ -16,22 +16,14 @@ Create new navigation property to assignments for deviceManagement
 ```
 New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment -WindowsAutopilotDeploymentProfileId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Source <DeviceAndAppManagementAssignmentSource>]
- [-SourceId <String>] [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-Confirm] [-WhatIf]
+ [-SourceId <String>] [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment -WindowsAutopilotDeploymentProfileId <String>
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment
- -InputObject <IDeviceManagementEnrolmentIdentity>
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,7 +32,15 @@ New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment
 New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment
  -InputObject <IDeviceManagementEnrolmentIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Source <DeviceAndAppManagementAssignmentSource>] [-SourceId <String>]
- [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment
+ -InputObject <IDeviceManagementEnrolmentIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,7 +54,7 @@ Create new navigation property to assignments for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ An assignment of a Windows Autopilot deployment profile to an AAD group.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment
+Type: IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -101,8 +101,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementEnrolmentIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 Represents source of assignment.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.DeviceAndAppManagementAssignmentSource
+Type: DeviceAndAppManagementAssignmentSource
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 Identifier for resource used for deployment to a group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +147,7 @@ Base type for assignment targets.
 To construct, please use Get-Help -Online and see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1
+Type: IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +162,8 @@ Accept wildcard characters: False
 key: id of windowsAutopilotDeploymentProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -193,7 +193,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -210,13 +210,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment
-
 ## NOTES
 
 ALIASES
@@ -279,4 +276,3 @@ TARGET <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>: Base type for a
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
-

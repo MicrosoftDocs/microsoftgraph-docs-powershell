@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementimporteddeviceidentity
 schema: 2.0.0
@@ -18,20 +18,14 @@ Update-MgDeviceManagementImportedDeviceIdentity -ImportedDeviceIdentityId <Strin
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-EnrollmentState <EnrollmentState>] [-Id <String>] [-ImportedDeviceIdentifier <String>]
  [-ImportedDeviceIdentityType <ImportedDeviceIdentityType>] [-LastContactedDateTime <DateTime>]
- [-LastModifiedDateTime <DateTime>] [-Platform <Platform>] [-PassThru] [-Confirm] [-WhatIf]
+ [-LastModifiedDateTime <DateTime>] [-Platform <Platform>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementImportedDeviceIdentity -ImportedDeviceIdentityId <String>
- -BodyParameter <IMicrosoftGraphImportedDeviceIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementImportedDeviceIdentity -InputObject <IDeviceManagementEnrolmentIdentity>
- -BodyParameter <IMicrosoftGraphImportedDeviceIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphImportedDeviceIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,8 +34,14 @@ Update-MgDeviceManagementImportedDeviceIdentity -InputObject <IDeviceManagementE
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-EnrollmentState <EnrollmentState>] [-Id <String>] [-ImportedDeviceIdentifier <String>]
  [-ImportedDeviceIdentityType <ImportedDeviceIdentityType>] [-LastContactedDateTime <DateTime>]
- [-LastModifiedDateTime <DateTime>] [-Platform <Platform>] [-PassThru] [-Confirm] [-WhatIf]
+ [-LastModifiedDateTime <DateTime>] [-Platform <Platform>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementImportedDeviceIdentity -InputObject <IDeviceManagementEnrolmentIdentity>
+ -BodyParameter <IMicrosoftGraphImportedDeviceIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ Update the navigation property importedDeviceIdentities in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
+Type: IMicrosoftGraphImportedDeviceIdentity
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 Created Date Time of the device
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 The description of the device
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.EnrollmentState
+Type: EnrollmentState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Imported Device Identifier
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,8 +161,8 @@ Accept wildcard characters: False
 key: id of importedDeviceIdentity
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 importedDeviceIdentityType
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.ImportedDeviceIdentityType
+Type: ImportedDeviceIdentityType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -192,8 +192,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementEnrolmentIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 Last Contacted Date Time of the device
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 Last Modified DateTime of the description
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 platform
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.Platform
+Type: Platform
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -283,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -300,13 +300,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -366,4 +363,3 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
-

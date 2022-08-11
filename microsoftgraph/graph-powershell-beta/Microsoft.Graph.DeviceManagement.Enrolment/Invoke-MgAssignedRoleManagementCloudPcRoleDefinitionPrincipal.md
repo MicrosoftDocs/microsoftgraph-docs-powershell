@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgassignedrolemanagementcloudpcroledefinitionprincipal
 schema: 2.0.0
@@ -20,9 +20,8 @@ Invoke-MgAssignedRoleManagementCloudPcRoleDefinitionPrincipal -UnifiedRoleDefini
 
 ### AssignedViaIdentity
 ```
-Invoke-MgAssignedRoleManagementCloudPcRoleDefinitionPrincipal
- -InputObject <IDeviceManagementEnrolmentIdentity> [-DirectoryScopeId <String>] [-DirectoryScopeType <String>]
- [-Transitive] [<CommonParameters>]
+Invoke-MgAssignedRoleManagementCloudPcRoleDefinitionPrincipal -InputObject <IDeviceManagementEnrolmentIdentity>
+ [-DirectoryScopeId <String>] [-DirectoryScopeType <String>] [-Transitive] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +35,7 @@ Invoke function assignedPrincipals
 Usage: directoryScopeId='{directoryScopeId}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -51,7 +50,7 @@ Accept wildcard characters: False
 Usage: directoryScopeType='{directoryScopeType}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -67,7 +66,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+Type: IDeviceManagementEnrolmentIdentity
 Parameter Sets: AssignedViaIdentity
 Aliases:
 
@@ -82,7 +81,7 @@ Accept wildcard characters: False
 Usage: transitive={transitive}
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +96,7 @@ Accept wildcard characters: False
 key: id of unifiedRoleDefinition
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Assigned
 Aliases:
 
@@ -114,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES
@@ -166,4 +163,3 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
-

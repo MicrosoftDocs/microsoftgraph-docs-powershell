@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagementdirectoryroleassignmentschedulerequest
 schema: 2.0.0
@@ -16,20 +16,20 @@ Create new navigation property to roleAssignmentScheduleRequests for roleManagem
 ```
 New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest [-Action <String>]
  [-ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule1>] [-AdditionalProperties <Hashtable>]
- [-ApprovalId <String>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
+ [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>] [-ApprovalId <String>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CustomData <String>] [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>]
  [-Id <String>] [-IsValidationOnly] [-Justification <String>] [-Principal <IMicrosoftGraphDirectoryObject>]
  [-PrincipalId <String>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>]
  [-TargetSchedule <IMicrosoftGraphUnifiedRoleAssignmentSchedule1>] [-TargetScheduleId <String>]
- [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TicketInfo <IMicrosoftGraphTicketInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest1> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -151,7 +151,7 @@ adminAssign: For administrators to assign roles to principals.adminRemove: For a
 adminUpdate: For administrators to change existing role assignments.adminExtend: For administrators to extend expiring assignments.adminRenew: For administrators to renew expired assignments.selfActivate: For principals to activate their assignments.selfDeactivate: For principals to deactivate their active assignments.selfExtend: For principals to request to extend their expiring assignments.selfRenew: For principals to request to renew their expired assignments.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ unifiedRoleEligibilitySchedule
 To construct, please use Get-Help -Online and see NOTES section for ACTIVATEDUSING properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilitySchedule1
+Type: IMicrosoftGraphUnifiedRoleEligibilitySchedule1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 The identifier of the approval of the request.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -213,7 +213,7 @@ appScope
 To construct, please use Get-Help -Online and see NOTES section for APPSCOPE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppScope
+Type: IMicrosoftGraphAppScope
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -233,7 +233,7 @@ Use directoryScopeId to limit the scope to particular directory objects, for exa
 Supports $filter (eq, ne, and on null values).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,7 +249,7 @@ unifiedRoleAssignmentScheduleRequest
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest1
+Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest1
 Parameter Sets: Create
 Aliases:
 
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 The request completion date time.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -280,7 +280,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 The request creation date time.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -311,7 +311,7 @@ Free text field to define any custom data for the request.
 Not used.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -327,7 +327,7 @@ directoryObject
 To construct, please use Get-Help -Online and see NOTES section for DIRECTORYSCOPE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+Type: IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -347,7 +347,7 @@ Use appScopeId to limit the scope to an application only.
 Supports $filter (eq, ne, and on null values).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -362,7 +362,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -378,7 +378,7 @@ Determines whether the call is a validation or an actual call.
 Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -393,7 +393,7 @@ Accept wildcard characters: False
 A message provided by users and administrators when create they create the unifiedRoleAssignmentScheduleRequest object.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -409,7 +409,7 @@ directoryObject
 To construct, please use Get-Help -Online and see NOTES section for PRINCIPAL properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+Type: IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -425,7 +425,7 @@ Identifier of the principal that has been granted the assignment.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -441,7 +441,7 @@ unifiedRoleDefinition
 To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
+Type: IMicrosoftGraphUnifiedRoleDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -457,7 +457,7 @@ Identifier of the unifiedRoleDefinition object that is being assigned to the pri
 Supports $filter (eq, ne).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -473,7 +473,7 @@ requestSchedule
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULEINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRequestSchedule
+Type: IMicrosoftGraphRequestSchedule
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -491,7 +491,7 @@ The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision
 Not nullable.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -507,7 +507,7 @@ unifiedRoleAssignmentSchedule
 To construct, please use Get-Help -Online and see NOTES section for TARGETSCHEDULE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentSchedule1
+Type: IMicrosoftGraphUnifiedRoleAssignmentSchedule1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -523,7 +523,7 @@ Identifier of the schedule object that's linked to the assignment request.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -539,7 +539,7 @@ ticketInfo
 To construct, please use Get-Help -Online and see NOTES section for TICKETINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTicketInfo
+Type: IMicrosoftGraphTicketInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -554,7 +554,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -570,7 +570,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -587,11 +587,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest1
-
 ## NOTES
 
 ALIASES
@@ -938,3 +936,4 @@ TICKETINFO <IMicrosoftGraphTicketInfo>: ticketInfo
 
 ## RELATED LINKS
 
+## RELATED LINKS

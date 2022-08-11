@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 Module Guid: 22874840-c9c0-4bc0-810a-7914cf43e42f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment
@@ -58,6 +58,9 @@ Get importedDeviceIdentities from deviceManagement
 
 ### [Get-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Get-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
 Get importedWindowsAutopilotDeviceIdentities from deviceManagement
+
+### [Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Get userExperienceAnalyticsNotAutopilotReadyDevice from deviceManagement
 
 ### [Get-MgDeviceManagementWindowAutopilotDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
 Get windowsAutopilotDeploymentProfiles from deviceManagement
@@ -500,6 +503,9 @@ Create new navigation property to importedDeviceIdentities for deviceManagement
 ### [New-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](New-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
 Create new navigation property to importedWindowsAutopilotDeviceIdentities for deviceManagement
 
+### [New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+
 ### [New-MgDeviceManagementWindowAutopilotDeploymentProfile](New-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
 Create new navigation property to windowsAutopilotDeploymentProfiles for deviceManagement
 
@@ -679,6 +685,9 @@ Delete navigation property importedDeviceIdentities for deviceManagement
 
 ### [Remove-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Remove-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
 Delete navigation property importedWindowsAutopilotDeviceIdentities for deviceManagement
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Delete navigation property userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
 
 ### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfile](Remove-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
 Delete navigation property windowsAutopilotDeploymentProfiles for deviceManagement
@@ -910,6 +919,9 @@ Update the navigation property importedDeviceIdentities in deviceManagement
 
 ### [Update-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Update-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
 Update the navigation property importedWindowsAutopilotDeviceIdentities in deviceManagement
+
+### [Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Update the navigation property userExperienceAnalyticsNotAutopilotReadyDevice in deviceManagement
 
 ### [Update-MgDeviceManagementWindowAutopilotDeploymentProfile](Update-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
 Update the navigation property windowsAutopilotDeploymentProfiles in deviceManagement

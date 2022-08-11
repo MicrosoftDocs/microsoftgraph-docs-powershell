@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementimporteddeviceidentity
 schema: 2.0.0
@@ -17,14 +17,14 @@ Create new navigation property to importedDeviceIdentities for deviceManagement
 New-MgDeviceManagementImportedDeviceIdentity [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-EnrollmentState <EnrollmentState>] [-Id <String>]
  [-ImportedDeviceIdentifier <String>] [-ImportedDeviceIdentityType <ImportedDeviceIdentityType>]
- [-LastContactedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Platform <Platform>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-LastContactedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Platform <Platform>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementImportedDeviceIdentity -BodyParameter <IMicrosoftGraphImportedDeviceIdentity> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgDeviceManagementImportedDeviceIdentity -BodyParameter <IMicrosoftGraphImportedDeviceIdentity> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,7 +38,7 @@ Create new navigation property to importedDeviceIdentities for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +54,7 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
+Type: IMicrosoftGraphImportedDeviceIdentity
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 Created Date Time of the device
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 The description of the device
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.EnrollmentState
+Type: EnrollmentState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 Imported Device Identifier
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 importedDeviceIdentityType
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.ImportedDeviceIdentityType
+Type: ImportedDeviceIdentityType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Last Contacted Date Time of the device
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Last Modified DateTime of the description
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 platform
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.Platform
+Type: Platform
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,11 +237,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
-
 ## NOTES
 
 ALIASES
@@ -264,4 +262,3 @@ BODYPARAMETER <IMicrosoftGraphImportedDeviceIdentity>: The importedDeviceIdentit
   - `[Platform <Platform?>]`: platform
 
 ## RELATED LINKS
-
