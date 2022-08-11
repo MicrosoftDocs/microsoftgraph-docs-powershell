@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityuserflowattribute
 schema: 2.0.0
@@ -15,13 +15,13 @@ Create new navigation property to userFlowAttributes for identity
 ### CreateExpanded (Default)
 ```
 New-MgIdentityUserFlowAttribute [-AdditionalProperties <Hashtable>] [-DataType <String>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-UserFlowAttributeType <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-UserFlowAttributeType <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute> [-Confirm] [-WhatIf]
+New-MgIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Create new navigation property to userFlowAttributes for identity
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ identityUserFlowAttribute
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
+Type: IMicrosoftGraphIdentityUserFlowAttribute
 Parameter Sets: Create
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 identityUserFlowAttributeDataType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 The description of the user flow attribute that's shown to the user at the time of sign-up.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 The display name of the user flow attribute.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 identityUserFlowAttributeType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,11 +175,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
-
 ## NOTES
 
 ALIASES
@@ -198,4 +196,3 @@ BODYPARAMETER <IMicrosoftGraphIdentityUserFlowAttribute>: identityUserFlowAttrib
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 
 ## RELATED LINKS
-

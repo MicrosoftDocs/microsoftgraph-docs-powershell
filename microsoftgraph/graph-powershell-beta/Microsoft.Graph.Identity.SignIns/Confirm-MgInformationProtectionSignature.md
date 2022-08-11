@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/confirm-mginformationprotectionsignature
 schema: 2.0.0
@@ -15,14 +15,14 @@ Invoke action verifySignature
 ### VerifyExpanded (Default)
 ```
 Confirm-MgInformationProtectionSignature [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>]
- [-SignatureInputFile <String>] [-SigningKeyId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SignatureInputFile <String>] [-SigningKeyId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Verify
 ```
 Confirm-MgInformationProtectionSignature
  -BodyParameter <IPathsSit1AcInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Invoke action verifySignature
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: VerifyExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsSit1AcInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
+Type: IPathsSit1AcInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Verify
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 Input File for Digest (.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: VerifyExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Input File for Signature (.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: VerifyExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: VerifyExpanded
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,11 +145,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsSit1AcInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -166,4 +164,3 @@ BODYPARAMETER <IPathsSit1AcInformationprotectionMicrosoftGraphVerifysignaturePos
   - `[SigningKeyId <String>]`: 
 
 ## RELATED LINKS
-

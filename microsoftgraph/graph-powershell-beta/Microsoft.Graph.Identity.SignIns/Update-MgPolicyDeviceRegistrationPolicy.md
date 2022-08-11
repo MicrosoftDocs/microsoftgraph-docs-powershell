@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicydeviceregistrationpolicy
 schema: 2.0.0
@@ -18,13 +18,13 @@ Update-MgPolicyDeviceRegistrationPolicy [-AdditionalProperties <Hashtable>]
  [-AzureAdJoin <IMicrosoftGraphAzureAdJoinPolicy>]
  [-AzureAdRegistration <IMicrosoftGraphAzureAdRegistrationPolicy>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-MultiFactorAuthConfiguration <String>] [-UserDeviceQuota <Int32>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyDeviceRegistrationPolicy -BodyParameter <IMicrosoftGraphDeviceRegistrationPolicy> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,7 +38,7 @@ Update the navigation property deviceRegistrationPolicy in policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -54,7 +54,7 @@ azureAdJoinPolicy
 To construct, please use Get-Help -Online and see NOTES section for AZUREADJOIN properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAzureAdJoinPolicy
+Type: IMicrosoftGraphAzureAdJoinPolicy
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ azureADRegistrationPolicy
 To construct, please use Get-Help -Online and see NOTES section for AZUREADREGISTRATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAzureAdRegistrationPolicy
+Type: IMicrosoftGraphAzureAdRegistrationPolicy
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ deviceRegistrationPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceRegistrationPolicy
+Type: IMicrosoftGraphDeviceRegistrationPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -103,7 +103,7 @@ It is always set to Tenant-wide policy that manages intial provisioning controls
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -120,7 +120,7 @@ It is always set to Device Registration Policy.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 multiFactorAuthConfiguration
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -182,7 +182,7 @@ The default value is set to 50.
 If this property is not specified during the policy update operation, it is automatically reset to 0 to indicate that users are not allowed to join any devices.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -213,7 +213,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -230,11 +230,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceRegistrationPolicy
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -279,4 +277,3 @@ BODYPARAMETER <IMicrosoftGraphDeviceRegistrationPolicy>: deviceRegistrationPolic
   - `[UserDeviceQuota <Int32?>]`: Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. The default value is set to 50. If this property is not specified during the policy update operation, it is automatically reset to 0 to indicate that users are not allowed to join any devices.
 
 ## RELATED LINKS
-

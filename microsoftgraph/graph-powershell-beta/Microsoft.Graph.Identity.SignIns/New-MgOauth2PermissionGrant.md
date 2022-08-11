@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgoauth2permissiongrant
 schema: 2.0.0
@@ -16,12 +16,12 @@ Create oAuth2PermissionGrant (a delegated permission grant)
 ```
 New-MgOauth2PermissionGrant [-AdditionalProperties <Hashtable>] [-ClientId <String>] [-ConsentType <String>]
  [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>] [-ResourceId <String>] [-Scope <String>]
- [-StartTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StartTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant1> [-Confirm] [-WhatIf]
+New-MgOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Create oAuth2PermissionGrant (a delegated permission grant)
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ oAuth2PermissionGrant
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1
+Type: IMicrosoftGraphOAuth2PermissionGrant1
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +69,7 @@ Required.
 Supports $filter (eq only).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -90,7 +90,7 @@ Required.
 Supports $filter (eq only).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -106,7 +106,7 @@ Currently, the end time value is ignored, but a value is required when creating 
 Required.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -139,7 +139,7 @@ Required when consentType is Principal.
 Supports $filter (eq only).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -156,7 +156,7 @@ This identifies the API which the client is authorized to attempt to call on beh
 Supports $filter (eq only).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -173,7 +173,7 @@ For example, openid User.Read GroupMember.Read.All.
 Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of the resource service principal.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +189,7 @@ Currently, the start time value is ignored, but a value is required when creatin
 Required.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,11 +237,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1
-
 ## NOTES
 
 ALIASES
@@ -263,4 +261,3 @@ BODYPARAMETER <IMicrosoftGraphOAuth2PermissionGrant1>: oAuth2PermissionGrant
   - `[StartTime <DateTime?>]`: Currently, the start time value is ignored, but a value is required when creating an oAuth2PermissionGrant. Required.
 
 ## RELATED LINKS
-

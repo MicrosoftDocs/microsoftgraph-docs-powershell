@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicyassignment
 schema: 2.0.0
@@ -16,13 +16,13 @@ Create new navigation property to roleManagementPolicyAssignments for policies
 ```
 New-MgPolicyRoleManagementPolicyAssignment [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Policy <IMicrosoftGraphUnifiedRoleManagementPolicy1>] [-PolicyId <String>] [-RoleDefinitionId <String>]
- [-ScopeId <String>] [-ScopeType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ScopeId <String>] [-ScopeType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPolicyRoleManagementPolicyAssignment
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment1> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Create new navigation property to roleManagementPolicyAssignments for policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +53,7 @@ unifiedRoleManagementPolicyAssignment
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyAssignment1
+Type: IMicrosoftGraphUnifiedRoleManagementPolicyAssignment1
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ unifiedRoleManagementPolicy
 To construct, please use Get-Help -Online and see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicy1
+Type: IMicrosoftGraphUnifiedRoleManagementPolicy1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ The id of the policy.
 Inherited from entity.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ If not specified, the policy applies to all roles.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +134,7 @@ Can be / for the tenant or a group ID.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,7 +151,7 @@ One of Directory, DirectoryRole.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -182,7 +182,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -199,11 +199,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyAssignment1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyAssignment1
-
 ## NOTES
 
 ALIASES
@@ -275,4 +273,3 @@ POLICY <IMicrosoftGraphUnifiedRoleManagementPolicy1>: unifiedRoleManagementPolic
   - `[ScopeType <String>]`: The type of the scope where the policy is created. One of Directory, DirectoryRole. Required.
 
 ## RELATED LINKS
-

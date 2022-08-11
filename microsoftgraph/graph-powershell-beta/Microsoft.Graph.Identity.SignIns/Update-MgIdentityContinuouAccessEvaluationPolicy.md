@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentitycontinuouaccessevaluationpolicy
 schema: 2.0.0
@@ -16,13 +16,13 @@ Update the navigation property continuousAccessEvaluationPolicy in identity
 ```
 Update-MgIdentityContinuouAccessEvaluationPolicy [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Groups <String[]>] [-Id <String>] [-IsEnabled] [-Migrate] [-Users <String[]>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgIdentityContinuouAccessEvaluationPolicy
- -BodyParameter <IMicrosoftGraphContinuousAccessEvaluationPolicy> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphContinuousAccessEvaluationPolicy> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Update the navigation property continuousAccessEvaluationPolicy in identity
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -53,7 +53,7 @@ continuousAccessEvaluationPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContinuousAccessEvaluationPolicy
+Type: IMicrosoftGraphContinuousAccessEvaluationPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -69,7 +69,7 @@ Continuous access evaluation automatically blocks access to resources and applic
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -85,7 +85,7 @@ The value is always Continuous Access Evaluation.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -102,7 +102,7 @@ All groups are in scope when the collection is empty.
 Read-only.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ true to indicate whether continuous access evaluation should be performed; other
 Read-only.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 true to indicate that the continuous access evaluation policy settings should be or has been migrated to the conditional access policy.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -180,7 +180,7 @@ All users are in scope when the collection is empty.
 Read-only.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -211,7 +211,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -228,11 +228,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContinuousAccessEvaluationPolicy
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -253,4 +251,3 @@ BODYPARAMETER <IMicrosoftGraphContinuousAccessEvaluationPolicy>: continuousAcces
   - `[Users <String[]>]`: The collection of user identifiers in scope for evaluation. All users are in scope when the collection is empty. Read-only.
 
 ## RELATED LINKS
-

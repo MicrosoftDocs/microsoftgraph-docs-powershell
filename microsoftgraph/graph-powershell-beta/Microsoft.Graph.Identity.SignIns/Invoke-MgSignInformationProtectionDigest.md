@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mgsigninformationprotectiondigest
 schema: 2.0.0
@@ -15,14 +15,14 @@ Invoke action signDigest
 ### SignExpanded (Default)
 ```
 Invoke-MgSignInformationProtectionDigest [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Sign
 ```
 Invoke-MgSignInformationProtectionDigest
  -BodyParameter <IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Invoke action signDigest
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SignExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Type: IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Sign
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 Input File for Digest (.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SignExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +98,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -115,11 +115,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSigningResult
-
 ## NOTES
 
 ALIASES
@@ -134,4 +132,3 @@ BODYPARAMETER <IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequ
   - `[Digest <Byte[]>]`: 
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagedefaultpagecontent
 schema: 2.0.0
@@ -36,7 +36,7 @@ Get media content for the navigation property defaultPages from identity
 key: id of b2xIdentityUserFlow
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -52,7 +52,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Type: IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 key: id of userFlowLanguageConfiguration
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 key: id of userFlowLanguagePage
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -214,4 +212,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflow
 schema: 2.0.0
@@ -20,12 +20,12 @@ New-MgIdentityB2XUserFlow [-AdditionalProperties <Hashtable>]
  [-Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]
  [-UserAttributeAssignments <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>]
  [-UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase[]>] [-UserFlowType <String>]
- [-UserFlowTypeVersion <Single>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserFlowTypeVersion <Single>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow1> [-Confirm] [-WhatIf]
+New-MgIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Create new navigation property to b2xUserFlows for identity
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ userFlowApiConnectorConfiguration
 To construct, please use Get-Help -Online and see NOTES section for APICONNECTORCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowApiConnectorConfiguration1
+Type: IMicrosoftGraphUserFlowApiConnectorConfiguration1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ b2xIdentityUserFlow
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphB2XIdentityUserFlow1
+Type: IMicrosoftGraphB2XIdentityUserFlow1
 Parameter Sets: Create
 Aliases:
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ The identity providers included in the user flow.
 To construct, please use Get-Help -Online and see NOTES section for IDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProvider[]
+Type: IMicrosoftGraphIdentityProvider[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +121,7 @@ You cannot create custom languages in self-service sign up user flows.
 To construct, please use Get-Help -Online and see NOTES section for LANGUAGES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowLanguageConfiguration[]
+Type: IMicrosoftGraphUserFlowLanguageConfiguration[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +137,7 @@ The user attribute assignments included in the user flow.
 To construct, please use Get-Help -Online and see NOTES section for USERATTRIBUTEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
+Type: IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for USERFLOWIDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase[]
+Type: IMicrosoftGraphIdentityProviderBase[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 userFlowType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Single
+Type: Single
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -214,7 +214,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -231,11 +231,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphB2XIdentityUserFlow1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphB2XIdentityUserFlow1
-
 ## NOTES
 
 ALIASES
@@ -346,3 +344,4 @@ USERFLOWIDENTITYPROVIDERS <IMicrosoftGraphIdentityProviderBase[]>: .
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyexternalidentitypolicy
 schema: 2.0.0
@@ -16,13 +16,13 @@ Update the navigation property externalIdentitiesPolicy in policies
 ```
 Update-MgPolicyExternalIdentityPolicy [-AdditionalProperties <Hashtable>] [-AllowDeletedIdentitiesDataRemoval]
  [-AllowExternalIdentitiesToLeave] [-DeletedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyExternalIdentityPolicy -BodyParameter <IMicrosoftGraphExternalIdentitiesPolicy> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Update the navigation property externalIdentitiesPolicy in policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 Notifies Azure AD whether to clean up the user information about the external identity, from the guest tenant, when the user is deleted in their home tenant.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ Defines whether external users can leave the guest tenant.
 If set to false, self-service controls are not enabled, and the admin of the guest tenant must manually remove the external user from the guest tenant.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ externalIdentitiesPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalIdentitiesPolicy
+Type: IMicrosoftGraphExternalIdentitiesPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -99,7 +99,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,11 +209,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalIdentitiesPolicy
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -233,4 +231,3 @@ BODYPARAMETER <IMicrosoftGraphExternalIdentitiesPolicy>: externalIdentitiesPolic
   - `[AllowExternalIdentitiesToLeave <Boolean?>]`: Defines whether external users can leave the guest tenant. If set to false, self-service controls are not enabled, and the admin of the guest tenant must manually remove the external user from the guest tenant.
 
 ## RELATED LINKS
-

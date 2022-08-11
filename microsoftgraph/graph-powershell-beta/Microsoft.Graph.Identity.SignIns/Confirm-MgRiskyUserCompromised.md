@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised
 schema: 2.0.0
@@ -14,15 +14,15 @@ Invoke action confirmCompromised
 
 ### ConfirmExpanded (Default)
 ```
-Confirm-MgRiskyUserCompromised [-AdditionalProperties <Hashtable>] [-UserIds <String[]>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Confirm-MgRiskyUserCompromised [-AdditionalProperties <Hashtable>] [-UserIds <String[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Confirm
 ```
 Confirm-MgRiskyUserCompromised
  -BodyParameter <IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,12 +30,11 @@ Invoke action confirmCompromised
 
 ## EXAMPLES
 
-### Example 1: Confirm User sign in compormised 
+### Example 1: Confirm User sign in compormised
 ```powershell
 Connect-MgGraph -Scopes "IdentityRiskyUser.ReadWrite.All"
 Select-MgProfile beta
 Confirm-MgRiskyUserCompromised -UserIds "254562e7-a745-496d-b98a-f6770b23152a","8f2ef8bf-53be-45f3-822d-366f51067458"
-
 ```
 
 The command confirms the two users as compormised users.
@@ -46,7 +45,7 @@ The command confirms the two users as compormised users.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ConfirmExpanded
 Aliases:
 
@@ -62,7 +61,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Confirm
 Aliases:
 
@@ -77,7 +76,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -92,7 +91,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: ConfirmExpanded
 Aliases:
 
@@ -107,7 +106,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -123,7 +122,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -140,11 +139,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -159,4 +156,3 @@ BODYPARAMETER <IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcom
   - `[UserIds <String[]>]`: 
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowuserattributeassignment
 schema: 2.0.0
@@ -19,21 +19,14 @@ Update-MgIdentityB2XUserFlowUserAttributeAssignment -B2XIdentityUserFlowId <Stri
  [-Id <String>] [-IsOptional] [-RequiresVerification]
  [-UserAttribute <IMicrosoftGraphIdentityUserFlowAttribute>]
  [-UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>] [-UserInputType <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgIdentityB2XUserFlowUserAttributeAssignment -B2XIdentityUserFlowId <String>
  -IdentityUserFlowAttributeAssignmentId <String>
- -BodyParameter <IMicrosoftGraphIdentityUserFlowAttributeAssignment> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphIdentityUserFlowAttributeAssignment> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphIdentityUserFlowAttributeAssignment> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -43,7 +36,14 @@ Update-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignI
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-IsOptional]
  [-RequiresVerification] [-UserAttribute <IMicrosoftGraphIdentityUserFlowAttribute>]
  [-UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>] [-UserInputType <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphIdentityUserFlowAttributeAssignment> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +57,7 @@ Update the navigation property userAttributeAssignments in identity
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -72,8 +72,8 @@ Accept wildcard characters: False
 key: id of b2xIdentityUserFlow
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -88,7 +88,7 @@ identityUserFlowAttributeAssignment
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment
+Type: IMicrosoftGraphIdentityUserFlowAttributeAssignment
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 The display name of the identityUserFlowAttribute within a user flow.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -133,8 +133,8 @@ Accept wildcard characters: False
 key: id of identityUserFlowAttributeAssignment
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -149,8 +149,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -166,7 +166,7 @@ true means the user doesn't have to provide a value.
 false means the user cannot complete sign-up without providing a value.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -197,7 +197,7 @@ Determines whether the identityUserFlowAttribute requires verification.
 This is only used for verifying the user's phone number or email address.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -213,7 +213,7 @@ identityUserFlowAttribute
 To construct, please use Get-Help -Online and see NOTES section for USERATTRIBUTE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
+Type: IMicrosoftGraphIdentityUserFlowAttribute
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -230,7 +230,7 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 To construct, please use Get-Help -Online and see NOTES section for USERATTRIBUTEVALUES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserAttributeValuesItem[]
+Type: IMicrosoftGraphUserAttributeValuesItem[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 identityUserFlowAttributeInputType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -276,7 +276,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -293,13 +293,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -412,4 +409,3 @@ USERATTRIBUTEVALUES <IMicrosoftGraphUserAttributeValuesItem[]>: The input option
   - `[Value <String>]`: The value that is set when this item is selected.
 
 ## RELATED LINKS
-

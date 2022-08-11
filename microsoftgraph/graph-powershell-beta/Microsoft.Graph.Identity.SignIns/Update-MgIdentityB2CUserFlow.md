@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2cuserflow
 schema: 2.0.0
@@ -20,19 +20,13 @@ Update-MgIdentityB2CUserFlow -B2CIdentityUserFlowId <String> [-AdditionalPropert
  [-IsLanguageCustomizationEnabled] [-Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]
  [-UserAttributeAssignments <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>]
  [-UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase[]>] [-UserFlowType <String>]
- [-UserFlowTypeVersion <Single>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserFlowTypeVersion <Single>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgIdentityB2CUserFlow -B2CIdentityUserFlowId <String>
- -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,7 +37,13 @@ Update-MgIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity> [-Additiona
  [-IsLanguageCustomizationEnabled] [-Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]
  [-UserAttributeAssignments <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>]
  [-UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase[]>] [-UserFlowType <String>]
- [-UserFlowTypeVersion <Single>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserFlowTypeVersion <Single>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +57,7 @@ Update the navigation property b2cUserFlows in identity
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ userFlowApiConnectorConfiguration
 To construct, please use Get-Help -Online and see NOTES section for APICONNECTORCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowApiConnectorConfiguration1
+Type: IMicrosoftGraphUserFlowApiConnectorConfiguration1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 key: id of b2cIdentityUserFlow
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -104,7 +104,7 @@ b2cIdentityUserFlow
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphB2CIdentityUserFlow
+Type: IMicrosoftGraphB2CIdentityUserFlow
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -120,7 +120,7 @@ Indicates the default language of the b2cIdentityUserFlow that is used when no u
 This field is RFC 5646 compliant.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for IDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProvider[]
+Type: IMicrosoftGraphIdentityProvider[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,8 +167,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -183,7 +183,7 @@ The property that determines whether language customization is enabled within th
 Language customization is not enabled by default for B2C user flows.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +200,7 @@ Language customization is not enabled by default in B2C user flows.
 To construct, please use Get-Help -Online and see NOTES section for LANGUAGES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowLanguageConfiguration[]
+Type: IMicrosoftGraphUserFlowLanguageConfiguration[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -231,7 +231,7 @@ The user attribute assignments included in the user flow.
 To construct, please use Get-Help -Online and see NOTES section for USERATTRIBUTEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
+Type: IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for USERFLOWIDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase[]
+Type: IMicrosoftGraphIdentityProviderBase[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 userFlowType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Single
+Type: Single
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -308,7 +308,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -325,13 +325,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphB2CIdentityUserFlow
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -514,3 +511,4 @@ USERFLOWIDENTITYPROVIDERS <IMicrosoftGraphIdentityProviderBase[]>: .
 
 ## RELATED LINKS
 
+## RELATED LINKS
