@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementassignmentfilterplatformsupportedproperty
 schema: 2.0.0
@@ -36,7 +36,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+Type: IDeviceManagementFunctionsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 Usage: platform='{platform}'
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.DevicePlatformType
+Type: DevicePlatformType
 Parameter Sets: Get
 Aliases:
 
@@ -68,11 +68,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignmentFilterSupportedProperty
-
 ## NOTES
 
 ALIASES
@@ -110,4 +108,3 @@ INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
-
