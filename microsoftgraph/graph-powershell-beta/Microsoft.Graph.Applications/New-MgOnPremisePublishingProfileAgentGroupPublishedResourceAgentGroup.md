@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgonpremisepublishingprofileagentgrouppublishedresourceagentgroup
 schema: 2.0.0
@@ -17,7 +17,7 @@ Create new navigation property to agentGroups for onPremisesPublishingProfiles
 New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup -OnPremisesAgentGroupId <String>
  -OnPremisesPublishingProfileId <String> -PublishedResourceId <String> [-AdditionalProperties <Hashtable>]
  [-Agents <IMicrosoftGraphOnPremisesAgent[]>] [-DisplayName <String>] [-Id <String>] [-IsDefault]
- [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-PublishingType <String>] [-Confirm] [-WhatIf]
+ [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-PublishingType <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,13 +25,7 @@ New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup -OnPremise
 ```
 New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup -OnPremisesAgentGroupId <String>
  -OnPremisesPublishingProfileId <String> -PublishedResourceId <String>
- -BodyParameter <IMicrosoftGraphOnPremisesAgentGroup> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnPremisesAgentGroup> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnPremisesAgentGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -39,7 +33,13 @@ New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup -InputObje
 New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Agents <IMicrosoftGraphOnPremisesAgent[]>] [-DisplayName <String>]
  [-Id <String>] [-IsDefault] [-PublishedResources <IMicrosoftGraphPublishedResource[]>]
- [-PublishingType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PublishingType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphOnPremisesAgentGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Create new navigation property to agentGroups for onPremisesPublishingProfiles
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for AGENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgent[]
+Type: IMicrosoftGraphOnPremisesAgent[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +87,7 @@ onPremisesAgentGroup
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
+Type: IMicrosoftGraphOnPremisesAgentGroup
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 Display name of the onPremisesAgentGroup.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -133,8 +133,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -149,7 +149,7 @@ Indicates if the onPremisesAgentGroup is the default agent group.
 Only a single agent group can be the default onPremisesAgentGroup and is set by the system.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -164,8 +164,8 @@ Accept wildcard characters: False
 key: id of onPremisesAgentGroup
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -179,8 +179,8 @@ Accept wildcard characters: False
 key: id of onPremisesPublishingProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -194,8 +194,8 @@ Accept wildcard characters: False
 key: id of publishedResource
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -212,7 +212,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for PUBLISHEDRESOURCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublishedResource[]
+Type: IMicrosoftGraphPublishedResource[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 onPremisesPublishingType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -258,7 +258,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -275,13 +275,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
-
 ## NOTES
 
 ALIASES
@@ -380,4 +377,3 @@ PUBLISHEDRESOURCES <IMicrosoftGraphPublishedResource[]>: List of publishedResour
   - `[ResourceName <String>]`: Name of the publishedResource.
 
 ## RELATED LINKS
-

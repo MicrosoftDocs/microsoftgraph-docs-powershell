@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgonpremisepublishingprofileconnector
 schema: 2.0.0
@@ -16,28 +16,28 @@ Update the navigation property connectors in onPremisesPublishingProfiles
 ```
 Update-MgOnPremisePublishingProfileConnector -ConnectorId <String> -OnPremisesPublishingProfileId <String>
  [-AdditionalProperties <Hashtable>] [-ExternalIP <String>] [-Id <String>] [-MachineName <String>]
- [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgOnPremisePublishingProfileConnector -ConnectorId <String> -OnPremisesPublishingProfileId <String>
- -BodyParameter <IMicrosoftGraphConnector> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphConnector> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConnector> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-ExternalIP <String>] [-Id <String>] [-MachineName <String>]
- [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphConnector> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Update the navigation property connectors in onPremisesPublishingProfiles
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ connector
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnector
+Type: IMicrosoftGraphConnector
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 key: id of connector
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ The external IP address as detected by the the connector server.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,8 +129,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 The machine name the connector is installed and running on.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Read-only.
 To construct, please use Get-Help -Online and see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectorGroup[]
+Type: IMicrosoftGraphConnectorGroup[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,8 +176,8 @@ Accept wildcard characters: False
 key: id of onPremisesPublishingProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 connectorStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -237,7 +237,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -254,13 +254,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnector
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -1085,3 +1082,4 @@ MEMBEROF <IMicrosoftGraphConnectorGroup[]>: The connectorGroup that the connecto
 
 ## RELATED LINKS
 
+## RELATED LINKS

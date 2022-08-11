@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalendpoint
 schema: 2.0.0
@@ -16,28 +16,28 @@ Create new navigation property to endpoints for servicePrincipals
 ```
 New-MgServicePrincipalEndpoint -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
  [-Capability <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-ProviderId <String>]
- [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-Confirm] [-WhatIf]
+ [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgServicePrincipalEndpoint -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphEndpoint>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphEndpoint>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgServicePrincipalEndpoint -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphEndpoint> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-Capability <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-ProviderId <String>]
- [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-Confirm] [-WhatIf]
+ [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphEndpoint>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Create new navigation property to endpoints for servicePrincipals
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ endpoint
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
+Type: IMicrosoftGraphEndpoint
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -85,7 +85,7 @@ Messages, Conversations, etc.) Not nullable.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -132,8 +132,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -149,7 +149,7 @@ Not nullable.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ Name of the publishing underlying service.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -183,7 +183,7 @@ Not nullable.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -198,8 +198,8 @@ Accept wildcard characters: False
 key: id of servicePrincipal
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -215,7 +215,7 @@ Not nullable.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -246,7 +246,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -263,13 +263,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
-
 ## NOTES
 
 ALIASES
@@ -320,4 +317,3 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
