@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mguserdrivelistitemdelta
 schema: 2.0.0
@@ -19,15 +19,15 @@ Get-MgUserDriveListItemDelta -DriveId <String> -UserId <String> [<CommonParamete
 
 ### Delta1
 ```
-Get-MgUserDriveListItemDelta -DriveId <String> -Token <String> -UserId <String> [<CommonParameters>]
+Get-MgUserDriveListItemDelta -DriveId <String> -UserId <String> -Token <String> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity
+### DeltaViaIdentity1
 ```
 Get-MgUserDriveListItemDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### DeltaViaIdentity
 ```
 Get-MgUserDriveListItemDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -43,7 +43,7 @@ Invoke function delta
 key: id of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -59,8 +59,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: DeltaViaIdentity, DeltaViaIdentity1
+Type: IUsersFunctionsIdentity
+Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 Usage: token='{token}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta1
 Aliases:
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -106,11 +106,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItem1
-
 ## NOTES
 
 ALIASES
@@ -157,4 +155,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
