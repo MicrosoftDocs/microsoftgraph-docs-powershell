@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/set-mgeducationmeassignmentupresourcefolder
 schema: 2.0.0
@@ -14,13 +14,13 @@ Invoke action setUpResourcesFolder
 
 ### Set1 (Default)
 ```
-Set-MgEducationMeAssignmentUpResourceFolder -EducationAssignmentId <String> [-Confirm] [-WhatIf]
+Set-MgEducationMeAssignmentUpResourceFolder -EducationAssignmentId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### SetViaIdentity1
 ```
-Set-MgEducationMeAssignmentUpResourceFolder -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
+Set-MgEducationMeAssignmentUpResourceFolder -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Invoke action setUpResourcesFolder
 key: id of educationAssignment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set1
 Aliases:
 
@@ -51,7 +51,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Type: IEducationIdentity
 Parameter Sets: SetViaIdentity1
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -82,7 +82,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -99,11 +99,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
-
 ## NOTES
 
 ALIASES
@@ -128,4 +126,3 @@ INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationUserId <String>]`: key: id of educationUser
 
 ## RELATED LINKS
-
