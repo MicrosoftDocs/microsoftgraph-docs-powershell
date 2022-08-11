@@ -80,7 +80,7 @@ Run `Connect-MgGraph -Scopes Application.ReadWrite.All` and retry to correct the
 
 For app-only access, pre-configure the applications permissions your app needs when you register your app. Application permissions will require administrator consent, which can be consented to either using the [Azure portal](/graph/auth-v2-service) or using a sign-up experience in your app.
 
-You can also use [New-MgServicePrincipalAppRoleAssignment](/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment?view=graph-powershell-1.0) to assign an app role to your client app.
+Alternatively, use [New-MgServicePrincipalAppRoleAssignment](/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment?view=graph-powershell-1.0) to assign app role to your client app.
 
 For more info, see [app-only authentication](app-only.md).
 
