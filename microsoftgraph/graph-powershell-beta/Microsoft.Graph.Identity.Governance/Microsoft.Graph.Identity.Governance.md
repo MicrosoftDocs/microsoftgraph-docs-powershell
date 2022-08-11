@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.Governance
 Module Guid: 9b19bce9-dfb8-49ee-a654-9dad0f5d60d9
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
@@ -1107,7 +1107,7 @@ Invoke action sendReminder
 Invoke action sendReminder
 
 ### [Split-MgEntitlementManagementConnectedOrganization](Split-MgEntitlementManagementConnectedOrganization.md)
-Split elements of one or more Azure AD entitlement management connected organizations, returned by Get-MgEntitlementManagementConnectedOrganization, to simplify reporting.
+Split elements of a connectedOrganization
 
 ### [Stop-MgAccessReview](Stop-MgAccessReview.md)
 Invoke action stop
