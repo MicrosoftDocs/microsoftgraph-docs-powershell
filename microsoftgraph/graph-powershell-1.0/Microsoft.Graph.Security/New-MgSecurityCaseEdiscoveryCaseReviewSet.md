@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasereviewset
 schema: 2.0.0
@@ -15,29 +15,27 @@ Create new navigation property to reviewSets for security
 ### CreateExpanded1 (Default)
 ```
 New-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
- [-Id <String>] [-Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
+ [-Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewSet1> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewSet1> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewSet1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
- [-Id <String>] [-Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
+ [-Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewSet1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +49,7 @@ Create new navigation property to reviewSets for security
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -67,7 +65,7 @@ ediscoveryReviewSet
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewSet1
+Type: IMicrosoftGraphSecurityEdiscoveryReviewSet1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -83,7 +81,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -98,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -113,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -128,8 +126,8 @@ Accept wildcard characters: False
 key: id of ediscoveryCase
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -143,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -159,8 +157,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: ISecurityIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -175,7 +173,7 @@ Represents queries within the review set.
 To construct, please use Get-Help -Online and see NOTES section for QUERIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]
+Type: IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -190,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -223,13 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewSet1
-
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewSet1
-
 ## NOTES
 
 ALIASES
@@ -333,4 +328,3 @@ QUERIES <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>: Represents queries 
   - `[Id <String>]`: 
 
 ## RELATED LINKS
-

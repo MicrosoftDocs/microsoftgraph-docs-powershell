@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasetag
 schema: 2.0.0
@@ -18,20 +18,13 @@ Update-MgSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId <String> -EdiscoveryRev
  [-AdditionalProperties <Hashtable>] [-ChildSelectability <String>]
  [-ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId <String> -EdiscoveryReviewTagId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewTag1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewTag1> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewTag1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,7 +34,14 @@ Update-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity> [-Additi
  [-ChildSelectability <String>] [-ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewTag1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ Update the navigation property tags in security
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -71,7 +71,7 @@ ediscoveryReviewTag
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag1
+Type: IMicrosoftGraphSecurityEdiscoveryReviewTag1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 childSelectability
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -102,7 +102,7 @@ Returns the tags that are a child of a tag.
 To construct, please use Get-Help -Online and see NOTES section for CHILDTAGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag1[]
+Type: IMicrosoftGraphSecurityEdiscoveryReviewTag1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -118,7 +118,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -163,8 +163,8 @@ Accept wildcard characters: False
 key: id of ediscoveryCase
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -178,8 +178,8 @@ Accept wildcard characters: False
 key: id of ediscoveryReviewTag
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -209,8 +209,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: ISecurityIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -240,7 +240,7 @@ ediscoveryReviewTag
 To construct, please use Get-Help -Online and see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag1
+Type: IMicrosoftGraphSecurityEdiscoveryReviewTag1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -286,7 +286,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -303,13 +303,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag1
-
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -426,4 +423,3 @@ PARENT <IMicrosoftGraphSecurityEdiscoveryReviewTag1>: ediscoveryReviewTag
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
-
