@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
 Module Guid: 0344be99-3308-4e86-8a42-1860d8986a6e
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
@@ -139,6 +139,11 @@ Get singleValueExtendedProperties from groups
 
 ### [Get-MgGroupCreatedOnBehalfOf](Get-MgGroupCreatedOnBehalfOf.md)
 Get createdOnBehalfOf from groups
+
+### [Get-MgGroupConversationThreadPostSingleValueExtendedProperty](Get-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupDelta](Get-MgGroupDelta.md)
 Invoke function delta
@@ -688,6 +693,11 @@ Delete navigation property multiValueExtendedProperties for groups
 
 ### [Remove-MgGroupConversationThreadPostSingleValueExtendedProperty](Remove-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for groups
+
+### [Remove-MgGroupConversationThreadPostSingleValueExtendedProperty](Remove-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Remove-MgGroupEndpoint](Remove-MgGroupEndpoint.md)
 Delete navigation property endpoints for groups
