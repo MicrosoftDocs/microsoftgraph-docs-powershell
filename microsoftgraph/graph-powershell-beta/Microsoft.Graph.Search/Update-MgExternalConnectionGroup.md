@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroup
 schema: 2.0.0
@@ -16,21 +16,13 @@ Update the navigation property groups in external
 ```
 Update-MgExternalConnectionGroup -ExternalConnectionId <String> -ExternalGroupId <String>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Members <IMicrosoftGraphExternalConnectorsIdentity[]>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-Members <IMicrosoftGraphExternalConnectorsIdentity[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgExternalConnectionGroup -ExternalConnectionId <String> -ExternalGroupId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalGroup> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgExternalConnectionGroup -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalGroup> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalGroup> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,7 +30,13 @@ Update-MgExternalConnectionGroup -InputObject <ISearchIdentity>
 ```
 Update-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Members <IMicrosoftGraphExternalConnectorsIdentity[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Members <IMicrosoftGraphExternalConnectorsIdentity[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgExternalConnectionGroup -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalGroup> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -53,7 +51,7 @@ Update the navigation property groups in external
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +67,7 @@ externalGroup
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalGroup
+Type: IMicrosoftGraphExternalConnectorsExternalGroup
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -85,7 +83,7 @@ The description of the external group.
 Optional.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +99,7 @@ The friendly name of the external group.
 Optional.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,8 +114,8 @@ Accept wildcard characters: False
 key: id of externalConnection
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -131,8 +129,8 @@ Accept wildcard characters: False
 key: id of externalGroup
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -146,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +160,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ISearchIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -179,7 +177,7 @@ You can add Azure Active Directory users, Azure Active Directory groups, or othe
 To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity[]
+Type: IMicrosoftGraphExternalConnectorsIdentity[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -194,7 +192,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -209,7 +207,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -225,7 +223,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -242,13 +240,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalGroup
-
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -282,4 +277,3 @@ MEMBERS <IMicrosoftGraphExternalConnectorsIdentity[]>: A member added to an exte
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
-

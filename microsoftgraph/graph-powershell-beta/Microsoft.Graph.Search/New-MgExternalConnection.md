@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnection
 schema: 2.0.0
@@ -19,18 +19,18 @@ New-MgExternalConnection [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-ConnectorId <String>]
  [-Description <String>] [-EnabledContentExperiences <String>]
  [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>] [-IngestedItemsCount <Int64>]
- [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
+ [-Items <IMicrosoftGraphExternalConnectorsExternalItem1[]>] [-Name <String>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]
- [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
- [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-Confirm] [-WhatIf]
+ [-Schema <IMicrosoftGraphExternalConnectorsSchema1>]
+ [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,7 +44,7 @@ Create new navigation property to connections for external
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -60,7 +60,7 @@ externalConnection
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
+Type: IMicrosoftGraphExternalConnectorsExternalConnection
 Parameter Sets: Create
 Aliases:
 
@@ -76,7 +76,7 @@ complianceSettings
 To construct, please use Get-Help -Online and see NOTES section for COMPLIANCESETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsComplianceSettings
+Type: IMicrosoftGraphExternalConnectorsComplianceSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -92,7 +92,7 @@ configuration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConfiguration
+Type: IMicrosoftGraphExternalConnectorsConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -108,7 +108,7 @@ The Teams App ID.
 Optional.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +124,7 @@ Description of the connection displayed in the Microsoft 365 admin center.
 Optional.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 contentExperienceType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalGroup[]
+Type: IMicrosoftGraphExternalConnectorsExternalGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -187,7 +187,7 @@ This value is refreshed every 15 minutes.
 If the connection state is draft, then ingestedItemsCount will be null.
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem[]
+Type: IMicrosoftGraphExternalConnectorsExternalItem1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -220,7 +220,7 @@ Maximum length of 128 characters.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation[]
+Type: IMicrosoftGraphExternalConnectorsConnectionOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -252,7 +252,7 @@ connectionQuota
 To construct, please use Get-Help -Online and see NOTES section for QUOTA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionQuota
+Type: IMicrosoftGraphExternalConnectorsConnectionQuota
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -268,7 +268,7 @@ schema
 To construct, please use Get-Help -Online and see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSchema
+Type: IMicrosoftGraphExternalConnectorsSchema1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -284,7 +284,7 @@ searchSettings
 To construct, please use Get-Help -Online and see NOTES section for SEARCHSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSearchSettings
+Type: IMicrosoftGraphExternalConnectorsSearchSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 connectionState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -330,7 +330,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -347,11 +347,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
-
 ## NOTES
 
 ALIASES
@@ -425,7 +423,7 @@ BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection>: externalCon
   - `[Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]`: connectionQuota
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
-    - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} – {number of items in the connection}, {tenant quota} – {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
+    - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
   - `[Schema <IMicrosoftGraphExternalConnectorsSchema>]`: schema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
@@ -505,7 +503,7 @@ OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation[]>: .
 QUOTA <IMicrosoftGraphExternalConnectorsConnectionQuota>: connectionQuota
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} – {number of items in the connection}, {tenant quota} – {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
+  - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
 
 SCHEMA <IMicrosoftGraphExternalConnectorsSchema>: schema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -536,3 +534,4 @@ SEARCHSETTINGS <IMicrosoftGraphExternalConnectorsSearchSettings>: searchSettings
 
 ## RELATED LINKS
 
+## RELATED LINKS

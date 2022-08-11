@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnectionoperation
 schema: 2.0.0
@@ -16,27 +16,27 @@ Update the navigation property operations in external
 ```
 Update-MgExternalConnectionOperation -ConnectionOperationId <String> -ExternalConnectionId <String>
  [-AdditionalProperties <Hashtable>] [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgExternalConnectionOperation -ConnectionOperationId <String> -ExternalConnectionId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgExternalConnectionOperation -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgExternalConnectionOperation -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -51,7 +51,7 @@ Update the navigation property operations in external
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ connectionOperation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
+Type: IMicrosoftGraphExternalConnectorsConnectionOperation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 key: id of connectionOperation
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ publicError
 To construct, please use Get-Help -Online and see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublicError
+Type: IMicrosoftGraphPublicError
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 key: id of externalConnection
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +144,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ISearchIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 connectionOperationStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,13 +222,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
-
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -285,4 +282,3 @@ INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[QnaId <String>]`: key: id of qna
 
 ## RELATED LINKS
-

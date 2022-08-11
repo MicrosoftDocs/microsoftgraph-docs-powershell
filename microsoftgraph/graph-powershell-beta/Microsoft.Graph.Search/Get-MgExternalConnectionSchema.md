@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/get-mgexternalconnectionschema
 schema: 2.0.0
@@ -35,7 +35,7 @@ Get schema from external
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 key: id of externalConnection
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -66,7 +66,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
+Type: ISearchIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -98,11 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSchema
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSchema1
 ## NOTES
 
 ALIASES
@@ -123,4 +121,3 @@ INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[QnaId <String>]`: key: id of qna
 
 ## RELATED LINKS
-
