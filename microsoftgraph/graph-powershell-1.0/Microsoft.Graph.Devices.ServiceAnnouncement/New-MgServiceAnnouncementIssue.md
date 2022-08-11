@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementissue
 schema: 2.0.0
@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgServiceAnnouncementIssue
 
 ## SYNOPSIS
-A collection of service issues for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Create new navigation property to issues for admin
 
 ## SYNTAX
 
@@ -19,19 +18,18 @@ New-MgServiceAnnouncementIssue [-AdditionalProperties <Hashtable>] [-Classificat
  [-Details <IMicrosoftGraphKeyValuePair[]>] [-EndDateTime <DateTime>] [-Feature <String>]
  [-FeatureGroup <String>] [-Id <String>] [-ImpactDescription <String>] [-IsResolved]
  [-LastModifiedDateTime <DateTime>] [-Origin <String>] [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>]
- [-Service <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>] [-WhatIf] [-Confirm]
+ [-Service <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgServiceAnnouncementIssue -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-WhatIf] [-Confirm]
+New-MgServiceAnnouncementIssue -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A collection of service issues for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Create new navigation property to issues for admin
 
 ## EXAMPLES
 
@@ -41,7 +39,7 @@ This property is a contained navigation property, it is nullable and readonly.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -57,7 +55,7 @@ serviceHealthIssue
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealthIssue
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
 Parameter Sets: Create1
 Aliases:
 
@@ -72,7 +70,7 @@ Accept wildcard characters: False
 serviceHealthClassificationType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -89,7 +87,7 @@ This property doesn't support filters.
 To construct, please use Get-Help -Online and see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -104,7 +102,7 @@ Accept wildcard characters: False
 The end time of the service event.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -119,7 +117,7 @@ Accept wildcard characters: False
 The feature name of the service issue.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -134,7 +132,7 @@ Accept wildcard characters: False
 The feature group name of the service issue.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -146,10 +144,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -164,7 +162,7 @@ Accept wildcard characters: False
 The description of the service issue impact.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -179,7 +177,7 @@ Accept wildcard characters: False
 Indicates whether the issue is resolved.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -194,7 +192,7 @@ Accept wildcard characters: False
 The last modified time of the service event.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -209,7 +207,7 @@ Accept wildcard characters: False
 serviceHealthOrigin
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -225,7 +223,7 @@ Collection of historical posts for the service issue.
 To construct, please use Get-Help -Online and see NOTES section for POSTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealthIssuePost[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssuePost[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -240,7 +238,7 @@ Accept wildcard characters: False
 Indicates the service affected by the issue.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -255,7 +253,7 @@ Accept wildcard characters: False
 The start time of the service event.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -270,7 +268,7 @@ Accept wildcard characters: False
 serviceHealthStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -285,7 +283,7 @@ Accept wildcard characters: False
 The title of the service event.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -300,7 +298,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -316,7 +314,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -333,9 +331,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
+
 ## NOTES
 
 ALIASES
@@ -345,7 +345,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
+BODYPARAMETER <IMicrosoftGraphServiceHealthIssue>: serviceHealthIssue
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Details <IMicrosoftGraphKeyValuePair[]>]`: Additional details about service event. This property doesn't support filters.
     - `[Name <String>]`: Name for this key-value pair
@@ -354,7 +354,7 @@ BODYPARAMETER `<IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
   - `[LastModifiedDateTime <DateTime?>]`: The last modified time of the service event.
   - `[StartDateTime <DateTime?>]`: The start time of the service event.
   - `[Title <String>]`: The title of the service event.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Classification <String>]`: serviceHealthClassificationType
   - `[Feature <String>]`: The feature name of the service issue.
   - `[FeatureGroup <String>]`: The feature group name of the service issue.
@@ -371,11 +371,11 @@ BODYPARAMETER `<IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
   - `[Service <String>]`: Indicates the service affected by the issue.
   - `[Status <String>]`: serviceHealthStatus
 
-DETAILS <IMicrosoftGraphKeyValuePair\[]>: Additional details about service event. This property doesn't support filters.
+DETAILS <IMicrosoftGraphKeyValuePair[]>: Additional details about service event. This property doesn't support filters.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-POSTS <IMicrosoftGraphServiceHealthIssuePost\[]>: Collection of historical posts for the service issue.
+POSTS <IMicrosoftGraphServiceHealthIssuePost[]>: Collection of historical posts for the service issue.
   - `[CreatedDateTime <DateTime?>]`: The published time of the post.
   - `[Description <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -384,3 +384,4 @@ POSTS <IMicrosoftGraphServiceHealthIssuePost\[]>: Collection of historical posts
   - `[PostType <String>]`: postType
 
 ## RELATED LINKS
+

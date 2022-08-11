@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgriskdetection
 schema: 2.0.0
@@ -14,8 +14,8 @@ Get riskDetections from identityProtection
 
 ### List (Default)
 ```
-Get-MgRiskDetection [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+Get-MgRiskDetection [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>]
  [<CommonParameters>]
 ```
 
@@ -27,8 +27,8 @@ Get-MgRiskDetection -RiskDetectionId <String> [-ExpandProperty <String[]>] [-Pro
 
 ### GetViaIdentity
 ```
-Get-MgRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,13 +36,76 @@ Get riskDetections from identityProtection
 
 ## EXAMPLES
 
+### Example 1: Get all riskDetections
+```powershell
+Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
+Get-MgRiskDetection -All | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
+
+UserDisplayName RiskType                      RiskLevel DetectedDateTime
+--------------- --------                      --------- ----------------
+Jason Mayer     anonymizedIPAddress           medium    4/19/2022 10:44:40 PM
+Jason Mayer     generic                       medium    4/20/2022 1:16:29 PM
+Jason Mayer     anonymizedIPAddress           high      4/21/2022 9:50:28 PM
+Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
+Jason Mayer     unlikelyTravel                medium    4/21/2022 10:42:04 PM
+Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
+Alice Su        unfamiliarFeatures            low       5/2/2022 12:01:44 AM
+Alice Su        unlikelyTravel                low       5/2/2022 2:16:22 AM
+```
+
+This command returns a list of all users.
+
+### Example 2: Get riskDetections by user displayname
+```powershell
+Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
+Get-MgRiskDetection -Filter "UserDisplayname eq 'Jason Mayer'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
+
+UserDisplayName RiskType                      RiskLevel DetectedDateTime
+--------------- --------                      --------- ----------------
+Jason Mayer     anonymizedIPAddress           medium    4/19/2022 10:44:40 PM
+Jason Mayer     generic                       medium    4/20/2022 1:16:29 PM
+Jason Mayer     anonymizedIPAddress           high      4/21/2022 9:50:28 PM
+Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
+Jason Mayer     unlikelyTravel                medium    4/21/2022 10:42:04 PM
+Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
+```
+
+This command returns all risk detections for the specified user
+
+### Example 3: Get riskDetections by risk type
+```powershell
+Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
+Get-MgRiskDetection -Filter "RiskType eq 'anonymizedIPAddress'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
+
+UserDisplayName RiskType            RiskLevel DetectedDateTime
+--------------- --------            --------- ----------------
+Jason Mayer     anonymizedIPAddress high      4/21/2022 9:50:28 PM
+Jason Mayer     anonymizedIPAddress medium    4/19/2022 10:44:40 PM
+Alex  Su        anonymizedIPAddress high      6/9/2022 4:31:19 AM
+```
+
+This command returns all risk detections for the anonymizedIPAddress risk detection
+
+### Example 4: Get all riskDetections for a particular user with high risk
+```powershell
+Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
+Get-MgRiskDetection -Filter "UserDisplayName eq 'Jason Mayer' and Risklevel eq 'high'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
+
+UserDisplayName RiskType                      RiskLevel DetectedDateTime
+--------------- --------                      --------- ----------------
+Jason Mayer     anonymizedIPAddress           high      4/21/2022 9:50:28 PM
+Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
+```
+
+This command returns all risk detections with high risks for the specified user
+
 ## PARAMETERS
 
 ### -All
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -58,7 +121,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -73,7 +136,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -88,7 +151,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -104,7 +167,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -119,7 +182,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -134,7 +197,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -149,7 +212,7 @@ Accept wildcard characters: False
 key: id of riskDetection
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -164,7 +227,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -179,7 +257,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -194,24 +272,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -226,9 +289,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskDetection
+
 ## NOTES
 
 ALIASES
@@ -238,13 +303,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
+  - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
+  - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[CertificateBasedAuthConfigurationId <String>]`: key: id of certificateBasedAuthConfiguration
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
@@ -261,7 +328,11 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[Fido2AuthenticationMethodId <String>]`: key: id of fido2AuthenticationMethod
   - `[GroupId <String>]`: key: id of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: key: id of homeRealmDiscoveryPolicy
+  - `[IdentityApiConnectorId <String>]`: key: id of identityApiConnector
+  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
   - `[IdentityProviderId <String>]`: key: id of identityProvider
+  - `[IdentityUserFlowAttributeAssignmentId <String>]`: key: id of identityUserFlowAttributeAssignment
+  - `[IdentityUserFlowAttributeId <String>]`: key: id of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: key: id of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: key: id of informationProtectionLabel
   - `[LongRunningOperationId <String>]`: key: id of longRunningOperation
@@ -297,7 +368,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UnifiedRoleManagementPolicyId <String>]`: key: id of unifiedRoleManagementPolicy
   - `[UnifiedRoleManagementPolicyRuleId <String>]`: key: id of unifiedRoleManagementPolicyRule
   - `[UsageRightId <String>]`: key: id of usageRight
+  - `[UserFlowLanguageConfigurationId <String>]`: key: id of userFlowLanguageConfiguration
+  - `[UserFlowLanguagePageId <String>]`: key: id of userFlowLanguagePage
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

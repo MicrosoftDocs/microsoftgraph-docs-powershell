@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: fa55ba4f-e53b-4749-a0ca-406b3b2da803
+Module Guid: a4eeed35-f73d-40a0-a306-2cfe919cf700
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
 Help Version: 1.0.0.0
 Locale: en-US
@@ -41,11 +41,8 @@ Get cachedReportConfigurations from deviceManagement
 ### [Get-MgDeviceManagementReportExportJob](Get-MgDeviceManagementReportExportJob.md)
 Get exportJobs from deviceManagement
 
-### [Get-MgReportApplicationSign](Get-MgReportApplicationSign.md)
-Represents a detailed summary of an application sign-in.
-
-### [Get-MgReportApplicationSign](Get-MgReportApplicationSign.md)
-Represents a detailed summary of an application sign-in.
+### [Get-MgReportApplicationSignInDetailedSummary](Get-MgReportApplicationSignInDetailedSummary.md)
+Get applicationSignInDetailedSummary from reports
 
 ### [Get-MgReportAttackSimulationRepeatOffender](Get-MgReportAttackSimulationRepeatOffender.md)
 Invoke function getAttackSimulationRepeatOffenders
@@ -62,10 +59,7 @@ Get authenticationMethods from reports
 ### [Get-MgReportAuthenticationMethodUserRegistrationDetail](Get-MgReportAuthenticationMethodUserRegistrationDetail.md)
 Get userRegistrationDetails from reports
 
-### [Get-MgReportAzureAdApplicationSign](Get-MgReportAzureAdApplicationSign.md)
-Invoke function getAzureADApplicationSignInSummary
-
-### [Get-MgReportAzureAdApplicationSign](Get-MgReportAzureAdApplicationSign.md)
+### [Get-MgReportAzureAdApplicationSignInSummary](Get-MgReportAzureAdApplicationSignInSummary.md)
 Invoke function getAzureADApplicationSignInSummary
 
 ### [Get-MgReportAzureAdFeatureUsage](Get-MgReportAzureAdFeatureUsage.md)
@@ -244,6 +238,18 @@ Invoke function getPrinterArchivedPrintJobs
 
 ### [Get-MgReportRelyingPartyDetailedSummary](Get-MgReportRelyingPartyDetailedSummary.md)
 Invoke function getRelyingPartyDetailedSummary
+
+### [Get-MgReportSecurity](Get-MgReportSecurity.md)
+Get security from reports
+
+### [Get-MgReportSecurityAttackSimulationRepeatOffender](Get-MgReportSecurityAttackSimulationRepeatOffender.md)
+Invoke function getAttackSimulationRepeatOffenders
+
+### [Get-MgReportSecurityAttackSimulationTrainingUserCoverage](Get-MgReportSecurityAttackSimulationTrainingUserCoverage.md)
+Invoke function getAttackSimulationTrainingUserCoverage
+
+### [Get-MgReportSecurityAttackSimulationUserCoverage](Get-MgReportSecurityAttackSimulationUserCoverage.md)
+Invoke function getAttackSimulationSimulationUserCoverage
 
 ### [Get-MgReportSharePointActivityFileCount](Get-MgReportSharePointActivityFileCount.md)
 Invoke function getSharePointActivityFileCounts

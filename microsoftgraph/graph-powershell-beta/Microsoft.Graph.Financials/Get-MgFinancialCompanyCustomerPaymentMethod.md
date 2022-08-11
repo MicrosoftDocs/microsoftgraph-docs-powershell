@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/get-mgfinancialcompanycustomerpaymentmethod
 schema: 2.0.0
@@ -14,23 +14,23 @@ Get paymentMethod from financials
 
 ### Get (Default)
 ```
-Get-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerPaymentId <String>
+Get-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerId <String>
+Get-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerPaymentId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgFinancialCompanyCustomerPaymentMethod -InputObject <IFinancialsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgFinancialCompanyCustomerPaymentMethod -InputObject <IFinancialsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -47,7 +47,7 @@ Get paymentMethod from financials
 key: id of company
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -62,8 +62,8 @@ Accept wildcard characters: False
 key: id of customer
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -77,8 +77,8 @@ Accept wildcard characters: False
 key: id of customerPayment
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: System.String
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -108,8 +108,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -140,9 +140,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPaymentMethod
+
 ## NOTES
 
 ALIASES
@@ -152,7 +154,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[AccountId <String>]`: key: id of account
   - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
   - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
@@ -191,3 +193,4 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[VendorId <String>]`: key: id of vendor
 
 ## RELATED LINKS
+

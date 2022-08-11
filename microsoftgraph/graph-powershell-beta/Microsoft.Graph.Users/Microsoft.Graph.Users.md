@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 8883c73b-6ed7-4476-84c1-e56dbededcbb
+Module Guid: 142c3529-676c-4243-8d12-285908b9acb8
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -34,12 +34,6 @@ Get ref of manager from users
 
 ### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
 Get memberOf from users
-
-### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
-Supports $expand.
 
 ### [Get-MgUserNotification](Get-MgUserNotification.md)
 Get notifications from users
@@ -149,6 +143,9 @@ Get tasks from users
 ### [Get-MgUserTodoListTaskAttachment](Get-MgUserTodoListTaskAttachment.md)
 Get attachments from users
 
+### [Get-MgUserTodoListTaskAttachmentContent](Get-MgUserTodoListTaskAttachmentContent.md)
+Get media content for the navigation property attachments from users
+
 ### [Get-MgUserTodoListTaskAttachmentSession](Get-MgUserTodoListTaskAttachmentSession.md)
 Get attachmentSessions from users
 
@@ -167,9 +164,6 @@ Get linkedResources from users
 ### [Get-MgUserTransitiveMemberOf](Get-MgUserTransitiveMemberOf.md)
 Get transitiveMemberOf from users
 
-### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
-A collection of resources linked to the task.
-
 ### [Get-MgUserTransitiveReport](Get-MgUserTransitiveReport.md)
 Get transitiveReports from users
 
@@ -178,11 +172,6 @@ Create user
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
-
-### [New-MgUserExtension](New-MgUserExtension.md)
-The collection of open extensions defined for the user.
-Read-only.
-Nullable.
 
 ### [New-MgUserNotification](New-MgUserNotification.md)
 Create new navigation property to notifications for users
@@ -273,9 +262,6 @@ Create new navigation property to extensions for users
 
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
 Create new navigation property to linkedResources for users
-
-### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
-A collection of resources linked to the task.
 
 ### [Remove-MgUser](Remove-MgUser.md)
 Delete a user
@@ -379,6 +365,9 @@ Delete navigation property extensions for users
 ### [Remove-MgUserTodoListTask](Remove-MgUserTodoListTask.md)
 Delete navigation property tasks for users
 
+### [Remove-MgUserTodoListTaskAttachment](Remove-MgUserTodoListTaskAttachment.md)
+Delete navigation property attachments for users
+
 ### [Remove-MgUserTodoListTaskAttachmentSession](Remove-MgUserTodoListTaskAttachmentSession.md)
 Delete navigation property attachmentSessions for users
 
@@ -396,6 +385,9 @@ Update the ref of navigation property manager in users
 
 ### [Set-MgUserPhotoContent](Set-MgUserPhotoContent.md)
 Update media content for the navigation property photo in users
+
+### [Set-MgUserTodoListTaskAttachmentContent](Set-MgUserTodoListTaskAttachmentContent.md)
+Update media content for the navigation property attachments in users
 
 ### [Set-MgUserTodoListTaskAttachmentSessionContent](Set-MgUserTodoListTaskAttachmentSessionContent.md)
 Update content for the navigation property attachmentSessions in users
@@ -498,6 +490,9 @@ Update the navigation property extensions in users
 
 ### [Update-MgUserTodoListTask](Update-MgUserTodoListTask.md)
 Update the navigation property tasks in users
+
+### [Update-MgUserTodoListTaskAttachment](Update-MgUserTodoListTaskAttachment.md)
+Update the navigation property attachments in users
 
 ### [Update-MgUserTodoListTaskAttachmentSession](Update-MgUserTodoListTaskAttachmentSession.md)
 Update the navigation property attachmentSessions in users

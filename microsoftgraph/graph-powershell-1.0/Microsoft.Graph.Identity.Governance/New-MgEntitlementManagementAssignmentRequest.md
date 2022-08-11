@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentrequest
 schema: 2.0.0
@@ -16,15 +16,16 @@ Create new navigation property to assignmentRequests for identityGovernance
 ```
 New-MgEntitlementManagementAssignmentRequest [-AccessPackage <IMicrosoftGraphAccessPackage1>]
  [-AdditionalProperties <Hashtable>] [-Assignment <IMicrosoftGraphAccessPackageAssignment1>]
- [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
- [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
- [-State <String>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-RequestType <String>]
+ [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>] [-State <String>] [-Status <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementAssignmentRequest -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,7 +40,7 @@ accessPackage
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackage1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +55,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +71,7 @@ accessPackageAssignment
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAssignment1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignment1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +87,7 @@ accessPackageAssignmentRequest
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAssignmentRequest1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest1
 Parameter Sets: Create
 Aliases:
 
@@ -104,7 +105,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +122,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -136,7 +137,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +153,7 @@ accessPackageSubject
 To construct, please use Get-Help -Online and see NOTES section for REQUESTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +168,7 @@ Accept wildcard characters: False
 accessPackageRequestType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -183,7 +184,7 @@ entitlementManagementSchedule
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEntitlementManagementSchedule
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSchedule
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -198,7 +199,7 @@ Accept wildcard characters: False
 accessPackageRequestState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -214,7 +215,7 @@ More information on the request processing status.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -229,7 +230,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -245,7 +246,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -262,9 +263,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest1
+
 ## NOTES
 
 ALIASES
@@ -274,13 +277,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage1>: accessPackage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: 
     - `[Id <String>]`: 
     - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
     - `[AllowedTargetScope <String>]`: allowedTargetScope
+    - `[AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]`: accessPackageAutomaticRequestSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[GracePeriodBeforeAccessRemoval <TimeSpan?>]`: 
+      - `[RemoveAccessWhenTargetLeavesAllowedTargets <Boolean?>]`: 
+      - `[RequestAccessForAllowedTargets <Boolean?>]`: 
     - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
@@ -363,7 +371,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
   - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
+ASSIGNMENT <IMicrosoftGraphAccessPackageAssignment1>: accessPackageAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
@@ -373,6 +381,11 @@ ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
       - `[Id <String>]`: 
       - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
       - `[AllowedTargetScope <String>]`: allowedTargetScope
+      - `[AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]`: accessPackageAutomaticRequestSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[GracePeriodBeforeAccessRemoval <TimeSpan?>]`: 
+        - `[RemoveAccessWhenTargetLeavesAllowedTargets <Boolean?>]`: 
+        - `[RequestAccessForAllowedTargets <Boolean?>]`: 
       - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: 
@@ -482,7 +495,7 @@ ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectType <String>]`: accessPackageSubjectType
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageAssignmentRequest
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignmentRequest1>: accessPackageAssignmentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
@@ -492,6 +505,11 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageA
       - `[Id <String>]`: 
       - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
       - `[AllowedTargetScope <String>]`: allowedTargetScope
+      - `[AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]`: accessPackageAutomaticRequestSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[GracePeriodBeforeAccessRemoval <TimeSpan?>]`: 
+        - `[RemoveAccessWhenTargetLeavesAllowedTargets <Boolean?>]`: 
+        - `[RequestAccessForAllowedTargets <Boolean?>]`: 
       - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: 
@@ -612,7 +630,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageA
   - `[State <String>]`: accessPackageRequestState
   - `[Status <String>]`: More information on the request processing status. Read-only.
 
-REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
+REQUESTOR <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
@@ -635,7 +653,7 @@ REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectType <String>]`: accessPackageSubjectType
 
-SCHEDULE `<IMicrosoftGraphEntitlementManagementSchedule>`: entitlementManagementSchedule
+SCHEDULE <IMicrosoftGraphEntitlementManagementSchedule>: entitlementManagementSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -664,4 +682,3 @@ SCHEDULE `<IMicrosoftGraphEntitlementManagementSchedule>`: entitlementManagement
 
 ## RELATED LINKS
 
-## RELATED LINKS

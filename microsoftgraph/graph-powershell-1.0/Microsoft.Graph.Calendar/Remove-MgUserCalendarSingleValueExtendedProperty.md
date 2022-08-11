@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mgusercalendarsinglevalueextendedproperty
 schema: 2.0.0
@@ -14,28 +14,29 @@ Nullable.
 
 ## SYNTAX
 
-### Delete2 (Default)
+### Delete1 (Default)
 ```
-Remove-MgUserCalendarSingleValueExtendedProperty -SingleValueLegacyExtendedPropertyId <String> -UserId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete3
-```
-Remove-MgUserCalendarSingleValueExtendedProperty -SingleValueLegacyExtendedPropertyId <String> -UserId <String>
- -CalendarId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserCalendarSingleValueExtendedProperty -SingleValueLegacyExtendedPropertyId <String>
+ -UserId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity3
+### Delete2
+```
+Remove-MgUserCalendarSingleValueExtendedProperty -CalendarId <String>
+ -SingleValueLegacyExtendedPropertyId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
 ```
 Remove-MgUserCalendarSingleValueExtendedProperty -InputObject <ICalendarIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity2
 ```
 Remove-MgUserCalendarSingleValueExtendedProperty -InputObject <ICalendarIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,8 +52,8 @@ Nullable.
 key: id of calendar
 
 ```yaml
-Type: String
-Parameter Sets: Delete3
+Type: System.String
+Parameter Sets: Delete2
 Aliases:
 
 Required: True
@@ -66,7 +67,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -82,8 +83,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity2
 Aliases:
 
 Required: True
@@ -97,7 +98,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -112,8 +113,8 @@ Accept wildcard characters: False
 key: id of singleValueLegacyExtendedProperty
 
 ```yaml
-Type: String
-Parameter Sets: Delete2, Delete3
+Type: System.String
+Parameter Sets: Delete1, Delete2
 Aliases:
 
 Required: True
@@ -127,8 +128,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: Delete2, Delete3
+Type: System.String
+Parameter Sets: Delete1, Delete2
 Aliases:
 
 Required: True
@@ -142,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,9 +176,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -187,7 +190,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
@@ -202,3 +205,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

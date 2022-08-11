@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsetterm
 schema: 2.0.0
@@ -14,22 +14,9 @@ Get terms from sites
 
 ### List2 (Default)
 ```
-Get-MgSiteTermStoreGroupSetTerm -GroupId <String> -SetId <String> -SiteId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### List
-```
-Get-MgSiteTermStoreGroupSetTerm -GroupId <String> -SetId <String> -SiteId <String> -StoreId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get2
-```
-Get-MgSiteTermStoreGroupSetTerm -GroupId <String> -SetId <String> -SiteId <String> -TermId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgSiteTermStoreGroupSetTerm -GroupId <String> -SetId <String> -SiteId <String>
+ [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
@@ -38,16 +25,29 @@ Get-MgSiteTermStoreGroupSetTerm -GroupId <String> -SetId <String> -SiteId <Strin
  -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### Get2
 ```
-Get-MgSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgSiteTermStoreGroupSetTerm -GroupId <String> -SetId <String> -SiteId <String> -TermId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+### List
+```
+Get-MgSiteTermStoreGroupSetTerm -GroupId <String> -SetId <String> -SiteId <String> -StoreId <String>
+ [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,8 +61,8 @@ Get terms from sites
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List2, List
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List, List2
 Aliases:
 
 Required: False
@@ -77,8 +77,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: List2, List
+Type: System.String
+Parameter Sets: List, List2
 Aliases: CV
 
 Required: False
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -107,8 +107,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: List2, List
+Type: System.String
+Parameter Sets: List, List2
 Aliases:
 
 Required: False
@@ -122,8 +122,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: List2, List, Get2, Get
+Type: System.String
+Parameter Sets: Get, Get2, List, List2
 Aliases:
 
 Required: True
@@ -138,8 +138,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -153,8 +153,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: List2, List
+Type: System.Int32
+Parameter Sets: List, List2
 Aliases:
 
 Required: False
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -183,8 +183,8 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: List2, List
+Type: System.String
+Parameter Sets: List, List2
 Aliases:
 
 Required: False
@@ -198,8 +198,8 @@ Accept wildcard characters: False
 key: id of set
 
 ```yaml
-Type: String
-Parameter Sets: List2, List, Get2, Get
+Type: System.String
+Parameter Sets: Get, Get2, List, List2
 Aliases:
 
 Required: True
@@ -213,11 +213,26 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: List2, List, Get2, Get
+Type: System.String
+Parameter Sets: Get, Get2, List, List2
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List, List2
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -228,8 +243,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
-Parameter Sets: List2, List
+Type: System.String[]
+Parameter Sets: List, List2
 Aliases: OrderBy
 
 Required: False
@@ -243,8 +258,8 @@ Accept wildcard characters: False
 key: id of store
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -258,8 +273,8 @@ Accept wildcard characters: False
 key: id of term
 
 ```yaml
-Type: String
-Parameter Sets: Get2, Get
+Type: System.String
+Parameter Sets: Get, Get2
 Aliases:
 
 Required: True
@@ -273,24 +288,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
-Parameter Sets: List2, List
+Type: System.Int32
+Parameter Sets: List, List2
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List2, List
-Aliases:
 
 Required: False
 Position: Named
@@ -305,9 +305,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm
+
 ## NOTES
 
 ALIASES
@@ -317,7 +319,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -355,3 +357,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

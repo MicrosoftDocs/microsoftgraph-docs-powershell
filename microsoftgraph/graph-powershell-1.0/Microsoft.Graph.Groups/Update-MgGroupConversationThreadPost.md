@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/update-mggroupconversationthreadpost
 schema: 2.0.0
@@ -12,7 +12,7 @@ Update the navigation property posts in groups
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
  -PostId <String> [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphAttachment[]>]
@@ -23,38 +23,20 @@ Update-MgGroupConversationThreadPost -ConversationId <String> -ConversationThrea
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
  [-NewParticipants <IMicrosoftGraphRecipient[]>] [-ReceivedDateTime <DateTime>]
  [-Sender <IMicrosoftGraphRecipient>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded2
+### Update1
 ```
-Update-MgGroupConversationThreadPost [-ConversationId <String>] [-ConversationThreadId <String>]
- -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>]
- [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-Extensions <IMicrosoftGraphExtension[]>]
- [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-InReplyTo <IMicrosoftGraphPost>]
- [-LastModifiedDateTime <DateTime>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
- [-NewParticipants <IMicrosoftGraphRecipient[]>] [-ReceivedDateTime <DateTime>]
- [-Sender <IMicrosoftGraphRecipient>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
+ -PostId <String> -BodyParameter <IMicrosoftGraphPost> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### Update2
 ```
-Update-MgGroupConversationThreadPost [-ConversationId <String>] [-ConversationThreadId <String>]
- -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>]
- [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-Extensions <IMicrosoftGraphExtension[]>]
- [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-InReplyTo <IMicrosoftGraphPost>]
- [-LastModifiedDateTime <DateTime>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
- [-NewParticipants <IMicrosoftGraphRecipient[]>] [-ReceivedDateTime <DateTime>]
- [-Sender <IMicrosoftGraphRecipient>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
+ -PostId <String> -BodyParameter <IMicrosoftGraphPost> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateExpanded2
@@ -68,32 +50,50 @@ Update-MgGroupConversationThreadPost -ConversationId <String> -ConversationThrea
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
  [-NewParticipants <IMicrosoftGraphRecipient[]>] [-ReceivedDateTime <DateTime>]
  [-Sender <IMicrosoftGraphRecipient>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### Update2
+### UpdateViaIdentity1
 ```
-Update-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
- -PostId <String> -BodyParameter <IMicrosoftGraphPost> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
- -PostId <String> -BodyParameter <IMicrosoftGraphPost> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphPost>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity2
 ```
 Update-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphPost>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentityExpanded1
 ```
-Update-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphPost>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ConversationId <String>]
+ [-ConversationThreadId <String>] [-AdditionalProperties <Hashtable>]
+ [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>]
+ [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-InReplyTo <IMicrosoftGraphPost>]
+ [-LastModifiedDateTime <DateTime>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-NewParticipants <IMicrosoftGraphRecipient[]>] [-ReceivedDateTime <DateTime>]
+ [-Sender <IMicrosoftGraphRecipient>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded2
+```
+Update-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ConversationId <String>]
+ [-ConversationThreadId <String>] [-AdditionalProperties <Hashtable>]
+ [-Attachments <IMicrosoftGraphAttachment[]>] [-Body <IMicrosoftGraphItemBody>] [-Categories <String[]>]
+ [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-InReplyTo <IMicrosoftGraphPost>]
+ [-LastModifiedDateTime <DateTime>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-NewParticipants <IMicrosoftGraphRecipient[]>] [-ReceivedDateTime <DateTime>]
+ [-Sender <IMicrosoftGraphRecipient>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -107,8 +107,8 @@ Update the navigation property posts in groups
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -126,8 +126,8 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachment[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment[]
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -142,8 +142,8 @@ itemBody
 To construct, please use Get-Help -Online and see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemBody
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -158,8 +158,8 @@ post
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPost
-Parameter Sets: Update2, Update, UpdateViaIdentity2, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost
+Parameter Sets: Update1, Update2, UpdateViaIdentity1, UpdateViaIdentity2
 Aliases:
 
 Required: True
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 The categories associated with the item
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: System.String[]
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -191,8 +191,8 @@ This allows Exchange to apply changes to the correct version of the object.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: System.String
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -206,23 +206,11 @@ Accept wildcard characters: False
 key: id of conversation
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, Update2, Update
+Type: System.String
+Parameter Sets: Update1, Update2, UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -234,8 +222,8 @@ Unique ID of the conversation.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2
+Type: System.String
+Parameter Sets: UpdateExpanded1, UpdateExpanded2
 Aliases:
 
 Required: False
@@ -249,23 +237,11 @@ Accept wildcard characters: False
 key: id of conversationThread
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, Update2, Update
+Type: System.String
+Parameter Sets: Update1, Update2, UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -277,8 +253,8 @@ Unique ID of the conversation thread.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2
+Type: System.String
+Parameter Sets: UpdateExpanded1, UpdateExpanded2
 Aliases:
 
 Required: False
@@ -293,8 +269,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: System.DateTime
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -312,8 +288,8 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension[]
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -328,8 +304,8 @@ recipient
 To construct, please use Get-Help -Online and see NOTES section for FROM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecipient
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -343,8 +319,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, Update2, Update
+Type: System.String
+Parameter Sets: Update1, Update2, UpdateExpanded1, UpdateExpanded2
 Aliases:
 
 Required: True
@@ -359,8 +335,8 @@ Indicates whether the post has at least one attachment.
 This is a default property.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -374,8 +350,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: System.String
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -390,8 +366,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentity2, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentity2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: True
@@ -406,8 +382,8 @@ post
 To construct, please use Get-Help -Online and see NOTES section for INREPLYTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPost
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -422,8 +398,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: System.DateTime
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -440,8 +416,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -456,8 +432,8 @@ Conversation participants that were added to the thread as part of this post.
 To construct, please use Get-Help -Online and see NOTES section for NEWPARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecipient[]
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -471,7 +447,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -486,8 +462,8 @@ Accept wildcard characters: False
 key: id of post
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, Update2, Update
+Type: System.String
+Parameter Sets: Update1, Update2, UpdateExpanded1, UpdateExpanded2
 Aliases:
 
 Required: True
@@ -503,8 +479,8 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: System.DateTime
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -519,8 +495,8 @@ recipient
 To construct, please use Get-Help -Online and see NOTES section for SENDER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecipient
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -537,8 +513,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateExpanded2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Parameter Sets: UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -552,7 +528,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -568,7 +544,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -585,10 +561,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -598,7 +577,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTS <IMicrosoftGraphAttachment\[]>: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
+ATTACHMENTS <IMicrosoftGraphAttachment[]>: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: 
   - `[ContentType <String>]`: The MIME type.
   - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
@@ -606,12 +585,12 @@ ATTACHMENTS <IMicrosoftGraphAttachment\[]>: The collection of fileAttachment, it
   - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphPost>`: post
+BODYPARAMETER <IMicrosoftGraphPost>: post
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -651,17 +630,17 @@ BODYPARAMETER `<IMicrosoftGraphPost>`: post
     - `[Id <String>]`: 
     - `[Value <String>]`: A property value.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
+EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: 
 
-FROM `<IMicrosoftGraphRecipient>`: recipient
+FROM <IMicrosoftGraphRecipient>: recipient
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of an entity instance.
     - `[Name <String>]`: The display name of an entity instance.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -704,7 +683,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-INREPLYTO `<IMicrosoftGraphPost>`: post
+INREPLYTO <IMicrosoftGraphPost>: post
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -744,27 +723,26 @@ INREPLYTO `<IMicrosoftGraphPost>`: post
     - `[Id <String>]`: 
     - `[Value <String>]`: A property value.
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
+MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Value <String[]>]`: A collection of property values.
 
-NEWPARTICIPANTS <IMicrosoftGraphRecipient\[]>: Conversation participants that were added to the thread as part of this post.
+NEWPARTICIPANTS <IMicrosoftGraphRecipient[]>: Conversation participants that were added to the thread as part of this post.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of an entity instance.
     - `[Name <String>]`: The display name of an entity instance.
 
-SENDER `<IMicrosoftGraphRecipient>`: recipient
+SENDER <IMicrosoftGraphRecipient>: recipient
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of an entity instance.
     - `[Name <String>]`: The display name of an entity instance.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the post. Read-only. Nullable.
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the post. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
 
-## RELATED LINKS

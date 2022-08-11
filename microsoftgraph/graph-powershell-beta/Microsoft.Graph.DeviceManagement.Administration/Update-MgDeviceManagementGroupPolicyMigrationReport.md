@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementgrouppolicymigrationreport
 schema: 2.0.0
@@ -21,14 +21,21 @@ Update-MgDeviceManagementGroupPolicyMigrationReport -GroupPolicyMigrationReportI
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-MigrationReadiness <GroupPolicyMigrationReadiness>]
  [-OuDistinguishedName <String>] [-SupportedSettingsCount <Int32>] [-SupportedSettingsPercent <Int32>]
  [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
- [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementGroupPolicyMigrationReport -GroupPolicyMigrationReportId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyMigrationReport> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphGroupPolicyMigrationReport> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphGroupPolicyMigrationReport> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -41,15 +48,8 @@ Update-MgDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagem
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-MigrationReadiness <GroupPolicyMigrationReadiness>]
  [-OuDistinguishedName <String>] [-SupportedSettingsCount <Int32>] [-SupportedSettingsPercent <Int32>]
  [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
- [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicyMigrationReport> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,7 +63,7 @@ Update the navigation property groupPolicyMigrationReports in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +79,7 @@ The Group Policy migration report.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyMigrationReport
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyMigrationReport
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 The date and time at which the GroupPolicyMigrationReport was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 The name of Group Policy Object from the GPO Xml Content
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 The date and time at which the GroupPolicyMigrationReport was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 The date and time at which the GroupPolicyMigrationReport was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -154,8 +154,8 @@ Accept wildcard characters: False
 key: id of groupPolicyMigrationReport
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 The Group Policy Object GUID from GPO Xml content
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +185,7 @@ A list of group policy settings to MDM/Intune mappings.
 To construct, please use Get-Help -Online and see NOTES section for GROUPPOLICYSETTINGMAPPINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicySettingMapping[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,8 +216,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 The date and time at which the GroupPolicyMigrationReport was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 Indicates if the Group Policy Object file is covered and ready for Intune migration.
 
 ```yaml
-Type: GroupPolicyMigrationReadiness
+Type: Microsoft.Graph.PowerShell.Support.GroupPolicyMigrationReadiness
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 The distinguished name of the OU.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 The number of Group Policy Settings supported by Intune.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 The Percentage of Group Policy Settings supported by Intune.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 The Targeted in AD property from GPO Xml Content
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 The total number of Group Policy Settings from GPO file.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -352,7 +352,7 @@ A list of unsupported group policy extensions inside the Group Policy Object.
 To construct, please use Get-Help -Online and see NOTES section for UNSUPPORTEDGROUPPOLICYEXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnsupportedGroupPolicyExtension[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnsupportedGroupPolicyExtension[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -383,7 +383,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -400,10 +400,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyMigrationReport
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -413,7 +416,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyMigrationReport>`: The Group Policy migration report.
+BODYPARAMETER <IMicrosoftGraphGroupPolicyMigrationReport>: The Group Policy migration report.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicyMigrationReport was created.
@@ -457,7 +460,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyMigrationReport>`: The Group Policy mi
     - `[NodeName <String>]`: Node name of the unsupported extension.
     - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
 
-GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping\[]>: A list of group policy settings to MDM/Intune mappings.
+GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping[]>: A list of group policy settings to MDM/Intune mappings.
   - `[Id <String>]`: 
   - `[AdmxSettingDefinitionId <String>]`: Admx Group Policy Id
   - `[ChildIdList <String[]>]`: List of Child Ids of the group policy setting.
@@ -480,11 +483,12 @@ GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping\[]>: A list
   - `[SettingValueDisplayUnits <String>]`: The display units of this group policy setting value
   - `[SettingValueType <String>]`: The value type of this group policy setting.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcExternalPartnerSettingId <String>]`: key: id of cloudPcExternalPartnerSetting
   - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
@@ -533,7 +537,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
-UNSUPPORTEDGROUPPOLICYEXTENSIONS <IMicrosoftGraphUnsupportedGroupPolicyExtension\[]>: A list of unsupported group policy extensions inside the Group Policy Object.
+UNSUPPORTEDGROUPPOLICYEXTENSIONS <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>: A list of unsupported group policy extensions inside the Group Policy Object.
   - `[Id <String>]`: 
   - `[ExtensionType <String>]`: ExtensionType of the unsupported extension.
   - `[NamespaceUrl <String>]`: Namespace Url of the unsupported extension.
@@ -542,4 +546,3 @@ UNSUPPORTEDGROUPPOLICYEXTENSIONS <IMicrosoftGraphUnsupportedGroupPolicyExtension
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mggraphdevicemanagement
 schema: 2.0.0
@@ -27,13 +27,6 @@ Invoke function scopedForResource
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -41,7 +34,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: GraphViaIdentity
 Aliases:
 
@@ -56,7 +49,7 @@ Accept wildcard characters: False
 Usage: resource='{resource}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Graph
 Aliases:
 
@@ -73,13 +66,46 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
+  - `[Category <String>]`: Usage: category='{category}'
+  - `[CloudPcId <String>]`: key: id of cloudPC
+  - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
+  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
+  - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
+  - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
+  - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
+  - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
+  - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
+  - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
+  - `[EnrollmentType <String>]`: Usage: enrollmentType='{enrollmentType}'
+  - `[ExpiringBeforeDateTime <String>]`: Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
+  - `[Ids <String[]>]`: Usage: ids={ids}
+  - `[ManagedDeviceId <String>]`: key: id of managedDevice
+  - `[Platform <DevicePlatformType?>]`: Usage: platform='{platform}'
+  - `[PolicyId <String>]`: Usage: policyId='{policyId}'
+  - `[Resource <String>]`: Usage: resource='{resource}'
+  - `[ResourceOperationId <String>]`: key: id of resourceOperation
+  - `[Scope <String>]`: Usage: scope='{scope}'
+  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
+  - `[SummarizeBy <String>]`: Usage: summarizeBy='{summarizeBy}'
+  - `[TemplateId <String>]`: Usage: templateId='{templateId}'
+  - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mggraphdevicemanagement](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mggraphdevicemanagement)
 

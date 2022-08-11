@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgcalendarusercalendarallowedcalendarsharingroles
 schema: 2.0.0
@@ -19,17 +19,17 @@ Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId 
 
 ### Calendar3
 ```
-Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId <String> -CalendarId <String>
+Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -CalendarId <String> -User <String> -UserId <String>
  [<CommonParameters>]
 ```
 
-### CalendarViaIdentity3
+### CalendarViaIdentity2
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity>
  [<CommonParameters>]
 ```
 
-### CalendarViaIdentity2
+### CalendarViaIdentity3
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity>
  [<CommonParameters>]
@@ -46,7 +46,7 @@ Invoke function allowedCalendarSharingRoles
 key: id of calendar
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Calendar3
 Aliases:
 
@@ -62,8 +62,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: CalendarViaIdentity3, CalendarViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: CalendarViaIdentity2, CalendarViaIdentity3
 Aliases:
 
 Required: True
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 Usage: User='{User}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Calendar2, Calendar3
 Aliases:
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Calendar2, Calendar3
 Aliases:
 
@@ -109,9 +109,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -121,7 +123,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
@@ -158,3 +160,4 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

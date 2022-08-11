@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice
 schema: 2.0.0
@@ -18,31 +18,31 @@ New-MgDeviceManagementManagedDevice [-ActivationLockBypassCode <String>] [-Addit
  [-AndroidSecurityPatchLevel <String>] [-AzureAdDeviceId <String>] [-AzureAdRegistered]
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-ComplianceState <ComplianceState>]
  [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]
- [-DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>] [-DeviceCategory <IMicrosoftGraphDeviceCategory>]
- [-DeviceCategoryDisplayName <String>]
+ [-DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]
+ [-DeviceCategory <IMicrosoftGraphDeviceCategory>] [-DeviceCategoryDisplayName <String>]
  [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]
  [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]
  [-DeviceEnrollmentType <DeviceEnrollmentType>]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
  [-DeviceRegistrationState <DeviceRegistrationState>] [-EasActivated] [-EasActivationDateTime <DateTime>]
- [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>] [-EthernetMacAddress <String>]
- [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
+ [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>]
+ [-EthernetMacAddress <String>] [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
  [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
  [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Iccid <String>]
  [-Id <String>] [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>]
  [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>]
  [-ManagedDeviceOwnerType <ManagedDeviceOwnerType>] [-ManagementAgent <ManagementAgentType>]
- [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>] [-OSVersion <String>]
- [-OperatingSystem <String>] [-PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState>]
+ [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>] [-OperatingSystem <String>]
+ [-OSVersion <String>] [-PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState>]
  [-PhoneNumber <String>] [-PhysicalMemoryInBytes <Int64>] [-RemoteAssistanceSessionErrorDetails <String>]
  [-RemoteAssistanceSessionUrl <String>] [-SerialNumber <String>] [-SubscriberCarrier <String>]
  [-TotalStorageSpaceInBytes <Int64>] [-Udid <String>] [-UserDisplayName <String>] [-UserId <String>]
- [-UserPrincipalName <String>] [-WiFiMacAddress <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-WiFiMacAddress <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDeviceManagementManagedDevice -BodyParameter <IMicrosoftGraphManagedDevice> [-WhatIf] [-Confirm]
+New-MgDeviceManagementManagedDevice -BodyParameter <IMicrosoftGraphManagedDevice> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -58,7 +58,7 @@ Code that allows the Activation Lock on a device to be bypassed.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -89,7 +89,7 @@ Android security patch level.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -106,7 +106,7 @@ Read only.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -122,7 +122,7 @@ Whether the device is Azure Active Directory registered.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -138,7 +138,7 @@ Devices that are managed or pre-enrolled through Intune
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDevice
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice
 Parameter Sets: Create1
 Aliases:
 
@@ -154,7 +154,7 @@ The DateTime when device compliance grace period expires.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 Compliance state.
 
 ```yaml
-Type: ComplianceState
+Type: Microsoft.Graph.PowerShell.Support.ComplianceState
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -185,7 +185,7 @@ configuration Manager client enabled features
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIONMANAGERCLIENTENABLEDFEATURES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConfigurationManagerClientEnabledFeatures
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConfigurationManagerClientEnabledFeatures
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -202,7 +202,7 @@ This property is read-only.
 To construct, please use Get-Help -Online and see NOTES section for DEVICEACTIONRESULTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceActionResult[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceActionResult[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -221,7 +221,7 @@ You can filter reports and create dynamic Azure Active Directory device groups b
 To construct, please use Get-Help -Online and see NOTES section for DEVICECATEGORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -237,7 +237,7 @@ Device category display name.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -253,7 +253,7 @@ Device compliance policy states for this device.
 To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyState[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -269,7 +269,7 @@ Device configuration states for this device.
 To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationState[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 Possible ways of adding a mobile device to management.
 
 ```yaml
-Type: DeviceEnrollmentType
+Type: Microsoft.Graph.PowerShell.Support.DeviceEnrollmentType
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -300,7 +300,7 @@ deviceHealthAttestationState
 To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTHATTESTATIONSTATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceHealthAttestationState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthAttestationState
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -316,7 +316,7 @@ Name of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 Device registration status.
 
 ```yaml
-Type: DeviceRegistrationState
+Type: Microsoft.Graph.PowerShell.Support.DeviceRegistrationState
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -347,7 +347,7 @@ Whether the device is Exchange ActiveSync activated.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -363,7 +363,7 @@ Exchange ActivationSync activation time of the device.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -379,7 +379,7 @@ Exchange ActiveSync Id of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -395,7 +395,7 @@ Email(s) for the user associated with the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -411,7 +411,7 @@ Enrollment time of the device.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -427,7 +427,7 @@ Ethernet MAC.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -442,7 +442,7 @@ Accept wildcard characters: False
 Device Exchange Access State.
 
 ```yaml
-Type: DeviceManagementExchangeAccessState
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementExchangeAccessState
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -457,7 +457,7 @@ Accept wildcard characters: False
 Device Exchange Access State Reason.
 
 ```yaml
-Type: DeviceManagementExchangeAccessStateReason
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementExchangeAccessStateReason
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -473,7 +473,7 @@ Last time the device contacted Exchange.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -489,7 +489,7 @@ Free Storage in Bytes.
 This property is read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -505,7 +505,7 @@ Integrated Circuit Card Identifier, it is A SIM card's unique identification num
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -520,7 +520,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -536,7 +536,7 @@ IMEI.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -552,7 +552,7 @@ Device encryption status.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -568,7 +568,7 @@ Device supervised status.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -584,7 +584,7 @@ whether the device is jail broken or rooted.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -600,7 +600,7 @@ The date and time that the device last completed a successful sync with Intune.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -616,7 +616,7 @@ Automatically generated name to identify a device.
 Can be overwritten to a user friendly name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -631,7 +631,7 @@ Accept wildcard characters: False
 Owner type of device.
 
 ```yaml
-Type: ManagedDeviceOwnerType
+Type: Microsoft.Graph.PowerShell.Support.ManagedDeviceOwnerType
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -646,7 +646,7 @@ Accept wildcard characters: False
 Management agent type.
 
 ```yaml
-Type: ManagementAgentType
+Type: Microsoft.Graph.PowerShell.Support.ManagementAgentType
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -662,7 +662,7 @@ Manufacturer of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -678,7 +678,7 @@ MEID.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -694,7 +694,7 @@ Model of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -709,7 +709,7 @@ Accept wildcard characters: False
 Notes on the device created by IT Admin
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -726,7 +726,7 @@ Windows, iOS, etc.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -742,7 +742,7 @@ Operating system version of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -757,7 +757,7 @@ Accept wildcard characters: False
 Available health states for the Device Health API
 
 ```yaml
-Type: ManagedDevicePartnerReportedHealthState
+Type: Microsoft.Graph.PowerShell.Support.ManagedDevicePartnerReportedHealthState
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -773,7 +773,7 @@ Phone number of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -789,7 +789,7 @@ Total Memory in Bytes.
 This property is read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -805,7 +805,7 @@ An error string that identifies issues when creating Remote Assistance session o
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -821,7 +821,7 @@ Url that allows a Remote Assistance session to be established with the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -837,7 +837,7 @@ SerialNumber.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -853,7 +853,7 @@ Subscriber Carrier.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -869,7 +869,7 @@ Total Storage in Bytes.
 This property is read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -885,7 +885,7 @@ Unique Device Identifier for iOS and macOS devices.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -901,7 +901,7 @@ User display name.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -917,7 +917,7 @@ Unique Identifier for the user associated with the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -933,7 +933,7 @@ Device user principal name.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -949,7 +949,7 @@ Wi-Fi MAC.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -964,7 +964,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -980,7 +980,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -997,9 +997,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice
+
 ## NOTES
 
 ALIASES
@@ -1009,7 +1011,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-enrolled through Intune
+BODYPARAMETER <IMicrosoftGraphManagedDevice>: Devices that are managed or pre-enrolled through Intune
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
@@ -1031,7 +1033,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
     - `[ActionState <ActionState?>]`: State of the action on the device
     - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
     - `[StartDateTime <DateTime?>]`: Time the action was initiated
-  - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+  - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[Description <String>]`: Optional description for the device category.
@@ -1156,7 +1158,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
   - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
   - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
 
-CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerClientEnabledFeatures>`: configuration Manager client enabled features
+CONFIGURATIONMANAGERCLIENTENABLEDFEATURES <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>: configuration Manager client enabled features
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
   - `[DeviceConfiguration <Boolean?>]`: Whether device configuration is managed by Intune
@@ -1165,19 +1167,19 @@ CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerC
   - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
   - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
 
-DEVICEACTIONRESULTS <IMicrosoftGraphDeviceActionResult\[]>: List of ComplexType deviceActionResult objects. This property is read-only.
+DEVICEACTIONRESULTS <IMicrosoftGraphDeviceActionResult[]>: List of ComplexType deviceActionResult objects. This property is read-only.
   - `[ActionName <String>]`: Action name
   - `[ActionState <ActionState?>]`: State of the action on the device
   - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
   - `[StartDateTime <DateTime?>]`: Time the action was initiated
 
-DEVICECATEGORY `<IMicrosoftGraphDeviceCategory>`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+DEVICECATEGORY <IMicrosoftGraphDeviceCategory>: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
 
-DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState\[]>: Device compliance policy states for this device.
+DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState[]>: Device compliance policy states for this device.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -1201,7 +1203,7 @@ DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState\[]>: De
   - `[State <String>]`: complianceStatus
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState\[]>: Device configuration states for this device.
+DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState[]>: Device configuration states for this device.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -1225,7 +1227,7 @@ DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState\[]>: Device c
   - `[State <String>]`: complianceStatus
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: deviceHealthAttestationState
+DEVICEHEALTHATTESTATIONSTATE <IMicrosoftGraphDeviceHealthAttestationState>: deviceHealthAttestationState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
   - `[BitLockerStatus <String>]`: On or Off of BitLocker Drive Encryption
@@ -1262,4 +1264,3 @@ DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: de
 
 ## RELATED LINKS
 
-## RELATED LINKS

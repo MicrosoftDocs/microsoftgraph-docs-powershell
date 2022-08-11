@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: c6061b4e-c0fa-4102-a8ed-7d15bcdcf776
+Module Guid: 1666c0de-cb1d-4b99-b167-0ed266f5cc63
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -67,10 +67,6 @@ Get ref of connectorGroup from applications
 
 ### [Get-MgApplicationCreatedOnBehalfOf](Get-MgApplicationCreatedOnBehalfOf.md)
 Get createdOnBehalfOf from applications
-
-### [Get-MgApplicationConnectorGroupByRef](Get-MgApplicationConnectorGroupByRef.md)
-The connectorGroup the application is using with Azure AD Application Proxy.
-Nullable.
 
 ### [Get-MgApplicationDelta](Get-MgApplicationDelta.md)
 Invoke function delta
@@ -234,9 +230,6 @@ Invoke function delta
 ### [Get-MgServicePrincipalEndpoint](Get-MgServicePrincipalEndpoint.md)
 Get endpoints from servicePrincipals
 
-### [Get-MgServicePrincipalFederatedIdentityCredential](Get-MgServicePrincipalFederatedIdentityCredential.md)
-Get federatedIdentityCredentials from servicePrincipals
-
 ### [Get-MgServicePrincipalHomeRealmDiscoveryPolicy](Get-MgServicePrincipalHomeRealmDiscoveryPolicy.md)
 Get homeRealmDiscoveryPolicies from servicePrincipals
 
@@ -255,13 +248,8 @@ Invoke action getMemberObjects
 ### [Get-MgServicePrincipalMemberOf](Get-MgServicePrincipalMemberOf.md)
 Get memberOf from servicePrincipals
 
-### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
-Invoke action getMemberObjects
-
 ### [Get-MgServicePrincipalOauth2PermissionGrant](Get-MgServicePrincipalOauth2PermissionGrant.md)
-Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
-Read-only.
-Nullable.
+Get oauth2PermissionGrants from servicePrincipals
 
 ### [Get-MgServicePrincipalOwnedObject](Get-MgServicePrincipalOwnedObject.md)
 Get ownedObjects from servicePrincipals
@@ -455,14 +443,8 @@ Create new navigation property to delegatedPermissionClassifications for service
 ### [New-MgServicePrincipalEndpoint](New-MgServicePrincipalEndpoint.md)
 Create new navigation property to endpoints for servicePrincipals
 
-### [New-MgServicePrincipalFederatedIdentityCredential](New-MgServicePrincipalFederatedIdentityCredential.md)
-Create new navigation property to federatedIdentityCredentials for servicePrincipals
-
 ### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 Create new navigation property ref to homeRealmDiscoveryPolicies for servicePrincipals
-
-### [New-MgServicePrincipalLicenseDetail](New-MgServicePrincipalLicenseDetail.md)
-Create new navigation property to licenseDetails for servicePrincipals
 
 ### [New-MgServicePrincipalLicenseDetail](New-MgServicePrincipalLicenseDetail.md)
 Create new navigation property to licenseDetails for servicePrincipals
@@ -505,10 +487,6 @@ Delete ref of navigation property appManagementPolicies for applications
 
 ### [Remove-MgApplicationConnectorGroupByRef](Remove-MgApplicationConnectorGroupByRef.md)
 Delete ref of navigation property connectorGroup for applications
-
-### [Remove-MgApplicationConnectorGroupByRef](Remove-MgApplicationConnectorGroupByRef.md)
-The connectorGroup the application is using with Azure AD Application Proxy.
-Nullable.
 
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Delete navigation property extensionProperties for applications
@@ -612,9 +590,6 @@ Delete navigation property delegatedPermissionClassifications for servicePrincip
 ### [Remove-MgServicePrincipalEndpoint](Remove-MgServicePrincipalEndpoint.md)
 Delete navigation property endpoints for servicePrincipals
 
-### [Remove-MgServicePrincipalFederatedIdentityCredential](Remove-MgServicePrincipalFederatedIdentityCredential.md)
-Delete navigation property federatedIdentityCredentials for servicePrincipals
-
 ### [Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 Delete ref of navigation property homeRealmDiscoveryPolicies for servicePrincipals
 
@@ -659,10 +634,6 @@ Invoke action restart
 
 ### [Set-MgApplicationConnectorGroupByRef](Set-MgApplicationConnectorGroupByRef.md)
 Update the ref of navigation property connectorGroup in applications
-
-### [Set-MgApplicationConnectorGroupByRef](Set-MgApplicationConnectorGroupByRef.md)
-The connectorGroup the application is using with Azure AD Application Proxy.
-Nullable.
 
 ### [Set-MgApplicationLogo](Set-MgApplicationLogo.md)
 Update logo for application in applications
@@ -777,9 +748,6 @@ Update the navigation property delegatedPermissionClassifications in servicePrin
 
 ### [Update-MgServicePrincipalEndpoint](Update-MgServicePrincipalEndpoint.md)
 Update the navigation property endpoints in servicePrincipals
-
-### [Update-MgServicePrincipalFederatedIdentityCredential](Update-MgServicePrincipalFederatedIdentityCredential.md)
-Update the navigation property federatedIdentityCredentials in servicePrincipals
 
 ### [Update-MgServicePrincipalLicenseDetail](Update-MgServicePrincipalLicenseDetail.md)
 Update the navigation property licenseDetails in servicePrincipals

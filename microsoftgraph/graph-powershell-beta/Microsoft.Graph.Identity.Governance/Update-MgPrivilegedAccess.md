@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgprivilegedaccess
 schema: 2.0.0
@@ -19,13 +19,20 @@ Update-MgPrivilegedAccess -PrivilegedAccessId <String> [-AdditionalProperties <H
  [-RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]
  [-RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]
- [-RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPrivilegedAccess -PrivilegedAccessId <String> -BodyParameter <IMicrosoftGraphPrivilegedAccess>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgPrivilegedAccess -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,13 +42,8 @@ Update-MgPrivilegedAccess -InputObject <IIdentityGovernanceIdentity> [-Additiona
  [-RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]
  [-RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]
- [-RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPrivilegedAccess -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +57,7 @@ Update entity in privilegedAccess
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +73,7 @@ privilegedAccess
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedAccess
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,7 +88,7 @@ Accept wildcard characters: False
 The display name of the provider managed by PIM.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +103,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,8 +119,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,7 +134,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -147,8 +149,8 @@ Accept wildcard characters: False
 key: id of privilegedAccess
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -163,7 +165,7 @@ A collection of resources for the provider.
 To construct, please use Get-Help -Online and see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceResource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceResource[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +181,7 @@ A collection of role assignment requests for the provider.
 To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleAssignmentRequest[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignmentRequest[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +197,7 @@ A collection of role assignments for the provider.
 To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -211,7 +213,7 @@ A collection of role defintions for the provider.
 To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceRoleDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +229,7 @@ A collection of role settings for the provider.
 To construct, please use Get-Help -Online and see NOTES section for ROLESETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleSetting[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceRoleSetting[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +244,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -258,7 +260,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -275,10 +277,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -288,7 +293,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedAccess>`: privilegedAccess
+BODYPARAMETER <IMicrosoftGraphPrivilegedAccess>: privilegedAccess
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the provider managed by PIM.
@@ -379,7 +384,7 @@ BODYPARAMETER `<IMicrosoftGraphPrivilegedAccess>`: privilegedAccess
   - `[RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]`: A collection of role defintions for the provider.
   - `[RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>]`: A collection of role settings for the provider.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -394,6 +399,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
   - `[AccessPackageResourceRoleScopeId <String>]`: key: id of accessPackageResourceRoleScope
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
+  - `[AccessPackageSubjectId <String>]`: key: id of accessPackageSubject
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
   - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
@@ -441,7 +447,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
   - `[UserId <String>]`: key: id of user
 
-RESOURCES <IMicrosoftGraphGovernanceResource\[]>: A collection of resources for the provider.
+RESOURCES <IMicrosoftGraphGovernanceResource[]>: A collection of resources for the provider.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the resource.
   - `[ExternalId <String>]`: The external id of the resource, representing its original id in the external system. For example, a subscription resource's external id can be '/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac'.
@@ -524,7 +530,7 @@ RESOURCES <IMicrosoftGraphGovernanceResource\[]>: A collection of resources for 
   - `[Status <String>]`: The status of a given resource. For example, it could represent whether the resource is locked or not (values: Active/Locked). Note: This property may be extended in the future to support more scenarios.
   - `[Type <String>]`: Required. Resource type. For example, for Azure resources, the type could be 'Subscription', 'ResourceGroup', 'Microsoft.Sql/server', etc.
 
-ROLEASSIGNMENTREQUESTS <IMicrosoftGraphGovernanceRoleAssignmentRequest\[]>: A collection of role assignment requests for the provider.
+ROLEASSIGNMENTREQUESTS <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>: A collection of role assignment requests for the provider.
   - `[Id <String>]`: 
   - `[AssignmentState <String>]`: Required. The state of the assignment. The possible values are: Eligible (for eligible assignment),  Active (if it is directly assigned), Active (by administrators, or activated on an eligible assignment by the users).
   - `[LinkedEligibleRoleAssignmentId <String>]`: If this is a request for role activation, it represents the id of the eligible assignment being referred; Otherwise, the value is null.
@@ -608,7 +614,7 @@ ROLEASSIGNMENTREQUESTS <IMicrosoftGraphGovernanceRoleAssignmentRequest\[]>: A co
   - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
   - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
 
-ROLEASSIGNMENTS <IMicrosoftGraphGovernanceRoleAssignment\[]>: A collection of role assignments for the provider.
+ROLEASSIGNMENTS <IMicrosoftGraphGovernanceRoleAssignment[]>: A collection of role assignments for the provider.
   - `[Id <String>]`: 
   - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
   - `[EndDateTime <DateTime?>]`: For a non-permanent role assignment, this is the time when the role assignment will be expired. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -692,7 +698,7 @@ ROLEASSIGNMENTS <IMicrosoftGraphGovernanceRoleAssignment\[]>: A collection of ro
   - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
   - `[SubjectId <String>]`: Required. The ID of the subject which the role assignment is associated with.
 
-ROLEDEFINITIONS <IMicrosoftGraphGovernanceRoleDefinition\[]>: A collection of role defintions for the provider.
+ROLEDEFINITIONS <IMicrosoftGraphGovernanceRoleDefinition[]>: A collection of role defintions for the provider.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the role definition.
   - `[ExternalId <String>]`: The external id of the role definition.
@@ -774,7 +780,7 @@ ROLEDEFINITIONS <IMicrosoftGraphGovernanceRoleDefinition\[]>: A collection of ro
   - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
   - `[TemplateId <String>]`: 
 
-ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting\[]>: A collection of role settings for the provider.
+ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting[]>: A collection of role settings for the provider.
   - `[Id <String>]`: 
   - `[AdminEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
     - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
@@ -859,4 +865,3 @@ ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting\[]>: A collection of role set
 
 ## RELATED LINKS
 
-## RELATED LINKS

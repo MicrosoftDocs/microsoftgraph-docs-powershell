@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: c320fec7-f5ea-4f10-925c-cec8994df6be
+Module Guid: 03128073-70df-4bad-8b7c-114184b95aba
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -100,6 +100,9 @@ Get items from groups
 
 ### [Get-MgGroupSiteListItemAnalytic](Get-MgGroupSiteListItemAnalytic.md)
 Get analytics from groups
+
+### [Get-MgGroupSiteListItemDocumentSetVersion](Get-MgGroupSiteListItemDocumentSetVersion.md)
+Get documentSetVersions from groups
 
 ### [Get-MgGroupSiteListItemDriveItem](Get-MgGroupSiteListItemDriveItem.md)
 Get driveItem from groups
@@ -428,6 +431,9 @@ Invoke function getActivitiesByInterval
 ### [Get-MgSiteListItemAnalytic](Get-MgSiteListItemAnalytic.md)
 Get analytics from sites
 
+### [Get-MgSiteListItemDocumentSetVersion](Get-MgSiteListItemDocumentSetVersion.md)
+Get documentSetVersions from sites
+
 ### [Get-MgSiteListItemDriveItem](Get-MgSiteListItemDriveItem.md)
 Get driveItem from sites
 
@@ -459,7 +465,7 @@ Get permissions from sites
 Invoke function getRecentNotebooks
 
 ### [Get-MgSiteTermStore](Get-MgSiteTermStore.md)
-Get termStore from sites
+Get termStores from sites
 
 ### [Get-MgSiteTermStoreGroup](Get-MgSiteTermStoreGroup.md)
 Get groups from sites
@@ -731,6 +737,9 @@ Create new navigation property to columnLinks for groups
 ### [New-MgGroupSiteListItem](New-MgGroupSiteListItem.md)
 Create new navigation property to items for groups
 
+### [New-MgGroupSiteListItemDocumentSetVersion](New-MgGroupSiteListItemDocumentSetVersion.md)
+Create new navigation property to documentSetVersions for groups
+
 ### [New-MgGroupSiteListItemVersion](New-MgGroupSiteListItemVersion.md)
 Create new navigation property to versions for groups
 
@@ -854,6 +863,9 @@ Create new navigation property to columnLinks for sites
 ### [New-MgSiteListItem](New-MgSiteListItem.md)
 Create new navigation property to items for sites
 
+### [New-MgSiteListItemDocumentSetVersion](New-MgSiteListItemDocumentSetVersion.md)
+Create new navigation property to documentSetVersions for sites
+
 ### [New-MgSiteListItemVersion](New-MgSiteListItemVersion.md)
 Create new navigation property to versions for sites
 
@@ -950,10 +962,6 @@ Invoke action publish
 ### [Publish-MgSiteListContentType](Publish-MgSiteListContentType.md)
 Invoke action publish
 
-### [Remove-MgGroupSite](Remove-MgGroupSite.md)
-The list of SharePoint sites in this group.
-Access the default site with /sites/root.
-
 ### [Remove-MgGroupSiteColumn](Remove-MgGroupSiteColumn.md)
 Delete navigation property columns for groups
 
@@ -983,6 +991,9 @@ Delete navigation property columnLinks for groups
 
 ### [Remove-MgGroupSiteListItem](Remove-MgGroupSiteListItem.md)
 Delete navigation property items for groups
+
+### [Remove-MgGroupSiteListItemDocumentSetVersion](Remove-MgGroupSiteListItemDocumentSetVersion.md)
+Delete navigation property documentSetVersions for groups
 
 ### [Remove-MgGroupSiteListItemField](Remove-MgGroupSiteListItemField.md)
 Delete navigation property fields for groups
@@ -1119,6 +1130,9 @@ Delete navigation property columnLinks for sites
 ### [Remove-MgSiteListItem](Remove-MgSiteListItem.md)
 Delete navigation property items for sites
 
+### [Remove-MgSiteListItemDocumentSetVersion](Remove-MgSiteListItemDocumentSetVersion.md)
+Delete navigation property documentSetVersions for sites
+
 ### [Remove-MgSiteListItemField](Remove-MgSiteListItemField.md)
 Delete navigation property fields for sites
 
@@ -1138,7 +1152,7 @@ Delete navigation property subscriptions for sites
 Delete navigation property permissions for sites
 
 ### [Remove-MgSiteTermStore](Remove-MgSiteTermStore.md)
-Delete navigation property termStore for sites
+Delete navigation property termStores for sites
 
 ### [Remove-MgSiteTermStoreGroup](Remove-MgSiteTermStoreGroup.md)
 Delete navigation property groups for sites
@@ -1221,6 +1235,9 @@ Delete navigation property relations for sites
 ### [Remove-MgSiteTermStoreSetTermRelation](Remove-MgSiteTermStoreSetTermRelation.md)
 Delete navigation property relations for sites
 
+### [Restore-MgSiteListItemDocumentSetVersion](Restore-MgSiteListItemDocumentSetVersion.md)
+Invoke action restore
+
 ### [Restore-MgSiteListItemVersion](Restore-MgSiteListItemVersion.md)
 Invoke action restoreVersion
 
@@ -1274,6 +1291,9 @@ Update the navigation property columnLinks in groups
 
 ### [Update-MgGroupSiteListItem](Update-MgGroupSiteListItem.md)
 Update the navigation property items in groups
+
+### [Update-MgGroupSiteListItemDocumentSetVersion](Update-MgGroupSiteListItemDocumentSetVersion.md)
+Update the navigation property documentSetVersions in groups
 
 ### [Update-MgGroupSiteListItemField](Update-MgGroupSiteListItemField.md)
 Update the navigation property fields in groups
@@ -1413,6 +1433,9 @@ Update the navigation property columnLinks in sites
 ### [Update-MgSiteListItem](Update-MgSiteListItem.md)
 Update the navigation property items in sites
 
+### [Update-MgSiteListItemDocumentSetVersion](Update-MgSiteListItemDocumentSetVersion.md)
+Update the navigation property documentSetVersions in sites
+
 ### [Update-MgSiteListItemField](Update-MgSiteListItemField.md)
 Update the navigation property fields in sites
 
@@ -1435,7 +1458,7 @@ Invoke action onenotePatchContent
 Update the navigation property permissions in sites
 
 ### [Update-MgSiteTermStore](Update-MgSiteTermStore.md)
-Update the navigation property termStore in sites
+Update the navigation property termStores in sites
 
 ### [Update-MgSiteTermStoreGroup](Update-MgSiteTermStoreGroup.md)
 Update the navigation property groups in sites

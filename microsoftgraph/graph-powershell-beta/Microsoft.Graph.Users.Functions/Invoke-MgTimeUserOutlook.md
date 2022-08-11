@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgtimeuseroutlook
 schema: 2.0.0
@@ -19,15 +19,15 @@ Invoke-MgTimeUserOutlook -UserId <String> [<CommonParameters>]
 
 ### Time3
 ```
-Invoke-MgTimeUserOutlook -UserId <String> -TimeZoneStandard <String> [<CommonParameters>]
+Invoke-MgTimeUserOutlook -TimeZoneStandard <String> -UserId <String> [<CommonParameters>]
 ```
 
-### TimeViaIdentity3
+### TimeViaIdentity2
 ```
 Invoke-MgTimeUserOutlook -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### TimeViaIdentity2
+### TimeViaIdentity3
 ```
 Invoke-MgTimeUserOutlook -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -44,8 +44,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: TimeViaIdentity3, TimeViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: TimeViaIdentity2, TimeViaIdentity3
 Aliases:
 
 Required: True
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 Usage: TimeZoneStandard='{TimeZoneStandard}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Time3
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Time2, Time3
 Aliases:
 
@@ -91,9 +91,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeZoneInformation
+
 ## NOTES
 
 ALIASES
@@ -103,7 +105,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
@@ -140,3 +142,4 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

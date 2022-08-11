@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting
 schema: 2.0.0
@@ -17,30 +17,30 @@ Update the navigation property settings in security
 Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>] [-PassThru] [-WhatIf] [-Confirm]
+ [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
- [-RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>] [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphSecurityOcrSettings>]
+ [-RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]
+ [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -55,7 +55,7 @@ Update the navigation property settings in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ ediscoveryCaseSettings
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCaseSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCaseSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,8 +86,8 @@ Accept wildcard characters: False
 key: id of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,8 +117,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -133,7 +133,7 @@ ocrSettings
 To construct, please use Get-Help -Online and see NOTES section for OCR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityOcrSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityOcrSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -164,7 +164,7 @@ redundancyDetectionSettings
 To construct, please use Get-Help -Online and see NOTES section for REDUNDANCYDETECTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRedundancyDetectionSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRedundancyDetectionSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -180,7 +180,7 @@ topicModelingSettings
 To construct, please use Get-Help -Online and see NOTES section for TOPICMODELING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityTopicModelingSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityTopicModelingSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -211,7 +211,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -228,10 +228,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCaseSettings
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -241,14 +244,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCaseSettings>`: ediscoveryCaseSettings
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryCaseSettings>: ediscoveryCaseSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Ocr <IMicrosoftGraphSecurityOcrSettings>]`: ocrSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsEnabled <Boolean?>]`: Indicates whether or not OCR is enabled for the case.
     - `[MaxImageSize <Int32?>]`: Maximum image size that will be processed in KB).
-    - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine. A longer timeout may increase success of OCR, but may add to the total processing time.
+    - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine. A longer timeout might increase success of OCR, but might add to the total processing time.
   - `[RedundancyDetection <IMicrosoftGraphSecurityRedundancyDetectionSettings>]`: redundancyDetectionSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
@@ -257,12 +260,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCaseSettings>`: ediscoveryCaseS
     - `[SimilarityThreshold <Int32?>]`: Specifies the similarity level for documents to be put in the same near duplicate set. To learn more, see Document and email similarity threshold.
   - `[TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>]`: topicModelingSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
-    - `[IgnoreNumbers <Boolean?>]`: To learn more, see Include numbers in themes.
-    - `[IsEnabled <Boolean?>]`: Indicates whether themes is enabled for the case.
-    - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
+    - `[DynamicallyAdjustTopicCount <Boolean?>]`: Indicates whether the themes model should dynamically optimize the number of generated topics. To learn more, see Adjust maximum number of themes dynamically.
+    - `[IgnoreNumbers <Boolean?>]`: Indicates whether the themes model should exclude numbers while parsing document texts. To learn more, see Include numbers in themes.
+    - `[IsEnabled <Boolean?>]`: Indicates whether themes model is enabled for the case.
+    - `[TopicCount <Int32?>]`: The total number of topics that the themes model will generate for a review set. To learn more, see Maximum number of themes.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -280,9 +283,13 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EdiscoveryReviewTagId <String>]`: key: id of ediscoveryReviewTag
   - `[EdiscoveryReviewTagId1 <String>]`: key: id of ediscoveryReviewTag
   - `[EdiscoverySearchId <String>]`: key: id of ediscoverySearch
+  - `[EmailThreatSubmissionId <String>]`: key: id of emailThreatSubmission
+  - `[EmailThreatSubmissionPolicyId <String>]`: key: id of emailThreatSubmissionPolicy
   - `[FileSecurityProfileId <String>]`: key: id of fileSecurityProfile
+  - `[FileThreatSubmissionId <String>]`: key: id of fileThreatSubmission
   - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
   - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
+  - `[IncidentId <String>]`: key: id of incident
   - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
   - `[RetentionEventId <String>]`: key: id of retentionEvent
   - `[RetentionEventTypeId <String>]`: key: id of retentionEventType
@@ -298,27 +305,29 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SubjectRightsRequestId <String>]`: key: id of subjectRightsRequest
   - `[TiIndicatorId <String>]`: key: id of tiIndicator
   - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
+  - `[UrlThreatSubmissionId <String>]`: key: id of urlThreatSubmission
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-OCR `<IMicrosoftGraphSecurityOcrSettings>`: ocrSettings
+OCR <IMicrosoftGraphSecurityOcrSettings>: ocrSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsEnabled <Boolean?>]`: Indicates whether or not OCR is enabled for the case.
   - `[MaxImageSize <Int32?>]`: Maximum image size that will be processed in KB).
-  - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine. A longer timeout may increase success of OCR, but may add to the total processing time.
+  - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine. A longer timeout might increase success of OCR, but might add to the total processing time.
 
-REDUNDANCYDETECTION `<IMicrosoftGraphSecurityRedundancyDetectionSettings>`: redundancyDetectionSettings
+REDUNDANCYDETECTION <IMicrosoftGraphSecurityRedundancyDetectionSettings>: redundancyDetectionSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
   - `[MaxWords <Int32?>]`: Specifies the maximum number of words used for email threading and near duplicate detection. To learn more, see Minimum/maximum number of words.
   - `[MinWords <Int32?>]`: Specifies the minimum number of words used for email threading and near duplicate detection. To learn more, see Minimum/maximum number of words.
   - `[SimilarityThreshold <Int32?>]`: Specifies the similarity level for documents to be put in the same near duplicate set. To learn more, see Document and email similarity threshold.
 
-TOPICMODELING `<IMicrosoftGraphSecurityTopicModelingSettings>`: topicModelingSettings
+TOPICMODELING <IMicrosoftGraphSecurityTopicModelingSettings>: topicModelingSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
-  - `[IgnoreNumbers <Boolean?>]`: To learn more, see Include numbers in themes.
-  - `[IsEnabled <Boolean?>]`: Indicates whether themes is enabled for the case.
-  - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
+  - `[DynamicallyAdjustTopicCount <Boolean?>]`: Indicates whether the themes model should dynamically optimize the number of generated topics. To learn more, see Adjust maximum number of themes dynamically.
+  - `[IgnoreNumbers <Boolean?>]`: Indicates whether the themes model should exclude numbers while parsing document texts. To learn more, see Include numbers in themes.
+  - `[IsEnabled <Boolean?>]`: Indicates whether themes model is enabled for the case.
+  - `[TopicCount <Int32?>]`: The total number of topics that the themes model will generate for a review set. To learn more, see Maximum number of themes.
 
 ## RELATED LINKS
+

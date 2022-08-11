@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/new-mgfinancialcompany
 schema: 2.0.0
@@ -21,7 +21,7 @@ New-MgFinancialCompany [-Accounts <IMicrosoftGraphAccount[]>] [-AdditionalProper
  [-CountriesRegions <IMicrosoftGraphCountryRegion[]>] [-Currencies <IMicrosoftGraphCurrency[]>]
  [-CustomerPaymentJournals <IMicrosoftGraphCustomerPaymentJournal[]>]
  [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>] [-Customers <IMicrosoftGraphCustomer[]>]
- [-DimensionValues <IMicrosoftGraphDimensionValue[]>] [-Dimensions <IMicrosoftGraphDimension[]>]
+ [-Dimensions <IMicrosoftGraphDimension[]>] [-DimensionValues <IMicrosoftGraphDimensionValue[]>]
  [-DisplayName <String>] [-Employees <IMicrosoftGraphEmployee[]>]
  [-GeneralLedgerEntries <IMicrosoftGraphGeneralLedgerEntry[]>] [-Id <String>]
  [-ItemCategories <IMicrosoftGraphItemCategory[]>] [-Items <IMicrosoftGraphItem[]>]
@@ -36,13 +36,13 @@ New-MgFinancialCompany [-Accounts <IMicrosoftGraphAccount[]>] [-AdditionalProper
  [-SalesQuoteLines <IMicrosoftGraphSalesQuoteLine[]>] [-SalesQuotes <IMicrosoftGraphSalesQuote[]>]
  [-ShipmentMethods <IMicrosoftGraphShipmentMethod[]>] [-SystemVersion <String>]
  [-TaxAreas <IMicrosoftGraphTaxArea[]>] [-TaxGroups <IMicrosoftGraphTaxGroup[]>]
- [-UnitsOfMeasure <IMicrosoftGraphUnitOfMeasure[]>] [-Vendors <IMicrosoftGraphVendor[]>] [-WhatIf] [-Confirm]
+ [-UnitsOfMeasure <IMicrosoftGraphUnitOfMeasure[]>] [-Vendors <IMicrosoftGraphVendor[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgFinancialCompany -BodyParameter <IMicrosoftGraphCompany> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgFinancialCompany -BodyParameter <IMicrosoftGraphCompany> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +57,7 @@ Create new navigation property to companies for financials
 To construct, please use Get-Help -Online and see NOTES section for ACCOUNTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccount[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccount[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for AGEDACCOUNTSPAYABLE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgedAccountsPayable[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgedAccountsPayable[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for AGEDACCOUNTSRECEIVABLE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgedAccountsReceivable[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgedAccountsReceivable[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +120,7 @@ company
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCompany
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompany
 Parameter Sets: Create
 Aliases:
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for COMPANYINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCompanyInformation1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompanyInformation1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for COUNTRIESREGIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCountryRegion[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCountryRegion[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for CURRENCIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCurrency[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCurrency[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for CUSTOMERPAYMENTJOURNALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomerPaymentJournal[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for CUSTOMERPAYMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomerPayment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomerPayment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for CUSTOMERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomer[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomer[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for DIMENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDimension[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDimension[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for DIMENSIONVALUES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDimensionValue[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDimensionValue[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for EMPLOYEES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmployee[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmployee[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for GENERALLEDGERENTRIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGeneralLedgerEntry[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGeneralLedgerEntry[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ITEMCATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemCategory[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemCategory[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItem[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -373,7 +373,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for JOURNALLINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphJournalLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphJournalLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -389,7 +389,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for JOURNALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphJournal[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphJournal[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -404,7 +404,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -420,7 +420,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PAYMENTMETHODS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPaymentMethod[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPaymentMethod[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -436,7 +436,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PAYMENTTERMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPaymentTerm[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPaymentTerm[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -452,7 +452,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPicture[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPicture[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -468,7 +468,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PURCHASEINVOICELINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPurchaseInvoiceLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPurchaseInvoiceLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -484,7 +484,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PURCHASEINVOICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPurchaseInvoice[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPurchaseInvoice[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -500,7 +500,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESCREDITMEMOLINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesCreditMemoLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesCreditMemoLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -516,7 +516,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESCREDITMEMOS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesCreditMemo[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesCreditMemo[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -532,7 +532,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESINVOICELINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesInvoiceLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesInvoiceLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -548,7 +548,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESINVOICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesInvoice[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesInvoice[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -564,7 +564,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESORDERLINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesOrderLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesOrderLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -580,7 +580,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESORDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesOrder[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesOrder[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -596,7 +596,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESQUOTELINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesQuoteLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesQuoteLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -612,7 +612,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESQUOTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesQuote[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesQuote[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -628,7 +628,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SHIPMENTMETHODS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShipmentMethod[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShipmentMethod[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -643,7 +643,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -659,7 +659,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TAXAREAS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTaxArea[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTaxArea[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -675,7 +675,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TAXGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTaxGroup[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTaxGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -691,7 +691,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for UNITSOFMEASURE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnitOfMeasure[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnitOfMeasure[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -707,7 +707,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for VENDORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVendor[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVendor[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -722,7 +722,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -738,7 +738,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -755,9 +755,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompany
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompany
+
 ## NOTES
 
 ALIASES
@@ -767,7 +769,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCOUNTS <IMicrosoftGraphAccount\[]>: .
+ACCOUNTS <IMicrosoftGraphAccount[]>: .
   - `[Id <String>]`: Read-only.
   - `[Blocked <Boolean?>]`: 
   - `[Category <String>]`: 
@@ -776,7 +778,7 @@ ACCOUNTS <IMicrosoftGraphAccount\[]>: .
   - `[Number <String>]`: 
   - `[SubCategory <String>]`: 
 
-AGEDACCOUNTSPAYABLE <IMicrosoftGraphAgedAccountsPayable\[]>: .
+AGEDACCOUNTSPAYABLE <IMicrosoftGraphAgedAccountsPayable[]>: .
   - `[Id <String>]`: Read-only.
   - `[AgedAsOfDate <DateTime?>]`: 
   - `[BalanceDue <Decimal?>]`: 
@@ -789,7 +791,7 @@ AGEDACCOUNTSPAYABLE <IMicrosoftGraphAgedAccountsPayable\[]>: .
   - `[PeriodLengthFilter <String>]`: 
   - `[VendorNumber <String>]`: 
 
-AGEDACCOUNTSRECEIVABLE <IMicrosoftGraphAgedAccountsReceivable\[]>: .
+AGEDACCOUNTSRECEIVABLE <IMicrosoftGraphAgedAccountsReceivable[]>: .
   - `[Id <String>]`: Read-only.
   - `[AgedAsOfDate <DateTime?>]`: 
   - `[BalanceDue <Decimal?>]`: 
@@ -802,7 +804,7 @@ AGEDACCOUNTSRECEIVABLE <IMicrosoftGraphAgedAccountsReceivable\[]>: .
   - `[Period3Amount <Decimal?>]`: 
   - `[PeriodLengthFilter <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphCompany>`: company
+BODYPARAMETER <IMicrosoftGraphCompany>: company
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[Accounts <IMicrosoftGraphAccount[]>]`: 
@@ -1397,7 +1399,7 @@ BODYPARAMETER `<IMicrosoftGraphCompany>`: company
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Vendors <IMicrosoftGraphVendor[]>]`: 
 
-COMPANYINFORMATION <IMicrosoftGraphCompanyInformation1\[]>: .
+COMPANYINFORMATION <IMicrosoftGraphCompanyInformation1[]>: .
   - `[Id <String>]`: Read-only.
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1418,14 +1420,14 @@ COMPANYINFORMATION <IMicrosoftGraphCompanyInformation1\[]>: .
   - `[TaxRegistrationNumber <String>]`: 
   - `[Website <String>]`: 
 
-COUNTRIESREGIONS <IMicrosoftGraphCountryRegion\[]>: .
+COUNTRIESREGIONS <IMicrosoftGraphCountryRegion[]>: .
   - `[Id <String>]`: Read-only.
   - `[AddressFormat <String>]`: 
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-CURRENCIES <IMicrosoftGraphCurrency\[]>: .
+CURRENCIES <IMicrosoftGraphCurrency[]>: .
   - `[Id <String>]`: Read-only.
   - `[AmountDecimalPlaces <String>]`: 
   - `[AmountRoundingPrecision <Decimal?>]`: 
@@ -1434,7 +1436,7 @@ CURRENCIES <IMicrosoftGraphCurrency\[]>: .
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Symbol <String>]`: 
 
-CUSTOMERPAYMENTJOURNALS <IMicrosoftGraphCustomerPaymentJournal\[]>: .
+CUSTOMERPAYMENTJOURNALS <IMicrosoftGraphCustomerPaymentJournal[]>: .
   - `[Id <String>]`: Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1531,7 +1533,7 @@ CUSTOMERPAYMENTJOURNALS <IMicrosoftGraphCustomerPaymentJournal\[]>: .
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment\[]>: .
+CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment[]>: .
   - `[Id <String>]`: Read-only.
   - `[Amount <Decimal?>]`: 
   - `[AppliesToInvoiceId <String>]`: 
@@ -1612,7 +1614,7 @@ CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment\[]>: .
   - `[LineNumber <Int32?>]`: 
   - `[PostingDate <DateTime?>]`: 
 
-CUSTOMERS <IMicrosoftGraphCustomer\[]>: .
+CUSTOMERS <IMicrosoftGraphCustomer[]>: .
   - `[Id <String>]`: Read-only.
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1676,7 +1678,7 @@ CUSTOMERS <IMicrosoftGraphCustomer\[]>: .
   - `[Type <String>]`: 
   - `[Website <String>]`: 
 
-DIMENSIONS <IMicrosoftGraphDimension\[]>: .
+DIMENSIONS <IMicrosoftGraphDimension[]>: .
   - `[Id <String>]`: Read-only.
   - `[Code <String>]`: 
   - `[DimensionValues <IMicrosoftGraphDimensionValue[]>]`: 
@@ -1687,13 +1689,13 @@ DIMENSIONS <IMicrosoftGraphDimension\[]>: .
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-DIMENSIONVALUES <IMicrosoftGraphDimensionValue\[]>: .
+DIMENSIONVALUES <IMicrosoftGraphDimensionValue[]>: .
   - `[Id <String>]`: Read-only.
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-EMPLOYEES <IMicrosoftGraphEmployee\[]>: .
+EMPLOYEES <IMicrosoftGraphEmployee[]>: .
   - `[Id <String>]`: Read-only.
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1725,7 +1727,7 @@ EMPLOYEES <IMicrosoftGraphEmployee\[]>: .
   - `[Surname <String>]`: 
   - `[TerminationDate <DateTime?>]`: 
 
-GENERALLEDGERENTRIES <IMicrosoftGraphGeneralLedgerEntry\[]>: .
+GENERALLEDGERENTRIES <IMicrosoftGraphGeneralLedgerEntry[]>: .
   - `[Id <String>]`: Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1746,13 +1748,13 @@ GENERALLEDGERENTRIES <IMicrosoftGraphGeneralLedgerEntry\[]>: .
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[PostingDate <DateTime?>]`: 
 
-ITEMCATEGORIES <IMicrosoftGraphItemCategory\[]>: .
+ITEMCATEGORIES <IMicrosoftGraphItemCategory[]>: .
   - `[Id <String>]`: Read-only.
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-ITEMS <IMicrosoftGraphItem\[]>: .
+ITEMS <IMicrosoftGraphItem[]>: .
   - `[Id <String>]`: Read-only.
   - `[BaseUnitOfMeasureId <String>]`: 
   - `[Blocked <Boolean?>]`: 
@@ -1782,7 +1784,7 @@ ITEMS <IMicrosoftGraphItem\[]>: .
   - `[UnitCost <Decimal?>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-JOURNALLINES <IMicrosoftGraphJournalLine\[]>: .
+JOURNALLINES <IMicrosoftGraphJournalLine[]>: .
   - `[Id <String>]`: Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1805,7 +1807,7 @@ JOURNALLINES <IMicrosoftGraphJournalLine\[]>: .
   - `[LineNumber <Int32?>]`: 
   - `[PostingDate <DateTime?>]`: 
 
-JOURNALS <IMicrosoftGraphJournal\[]>: .
+JOURNALS <IMicrosoftGraphJournal[]>: .
   - `[Id <String>]`: Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1836,13 +1838,13 @@ JOURNALS <IMicrosoftGraphJournal\[]>: .
     - `[PostingDate <DateTime?>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PAYMENTMETHODS <IMicrosoftGraphPaymentMethod\[]>: .
+PAYMENTMETHODS <IMicrosoftGraphPaymentMethod[]>: .
   - `[Id <String>]`: Read-only.
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PAYMENTTERMS <IMicrosoftGraphPaymentTerm\[]>: .
+PAYMENTTERMS <IMicrosoftGraphPaymentTerm[]>: .
   - `[Id <String>]`: Read-only.
   - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
   - `[Code <String>]`: 
@@ -1852,14 +1854,14 @@ PAYMENTTERMS <IMicrosoftGraphPaymentTerm\[]>: .
   - `[DueDateCalculation <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PICTURE <IMicrosoftGraphPicture\[]>: .
+PICTURE <IMicrosoftGraphPicture[]>: .
   - `[Id <String>]`: Read-only.
   - `[Content <Byte[]>]`: 
   - `[ContentType <String>]`: 
   - `[Height <Int32?>]`: 
   - `[Width <Int32?>]`: 
 
-PURCHASEINVOICELINES <IMicrosoftGraphPurchaseInvoiceLine\[]>: .
+PURCHASEINVOICELINES <IMicrosoftGraphPurchaseInvoiceLine[]>: .
   - `[Id <String>]`: Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1922,7 +1924,7 @@ PURCHASEINVOICELINES <IMicrosoftGraphPurchaseInvoiceLine\[]>: .
   - `[TotalTaxAmount <Decimal?>]`: 
   - `[UnitCost <Decimal?>]`: 
 
-PURCHASEINVOICES <IMicrosoftGraphPurchaseInvoice\[]>: .
+PURCHASEINVOICES <IMicrosoftGraphPurchaseInvoice[]>: .
   - `[Id <String>]`: Read-only.
   - `[BuyFromAddress <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2064,7 +2066,7 @@ PURCHASEINVOICES <IMicrosoftGraphPurchaseInvoice\[]>: .
   - `[VendorName <String>]`: 
   - `[VendorNumber <String>]`: 
 
-SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine\[]>: .
+SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine[]>: .
   - `[Id <String>]`: Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2128,7 +2130,7 @@ SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine\[]>: .
   - `[UnitOfMeasureId <String>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-SALESCREDITMEMOS <IMicrosoftGraphSalesCreditMemo\[]>: .
+SALESCREDITMEMOS <IMicrosoftGraphSalesCreditMemo[]>: .
   - `[Id <String>]`: Read-only.
   - `[BillToCustomerId <String>]`: 
   - `[BillToCustomerNumber <String>]`: 
@@ -2283,7 +2285,7 @@ SALESCREDITMEMOS <IMicrosoftGraphSalesCreditMemo\[]>: .
   - `[TotalAmountIncludingTax <Decimal?>]`: 
   - `[TotalTaxAmount <Decimal?>]`: 
 
-SALESINVOICELINES <IMicrosoftGraphSalesInvoiceLine\[]>: .
+SALESINVOICELINES <IMicrosoftGraphSalesInvoiceLine[]>: .
   - `[Id <String>]`: Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2347,7 +2349,7 @@ SALESINVOICELINES <IMicrosoftGraphSalesInvoiceLine\[]>: .
   - `[UnitOfMeasureId <String>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-SALESINVOICES <IMicrosoftGraphSalesInvoice\[]>: .
+SALESINVOICES <IMicrosoftGraphSalesInvoice[]>: .
   - `[Id <String>]`: Read-only.
   - `[BillToCustomerId <String>]`: 
   - `[BillToCustomerNumber <String>]`: 
@@ -2508,7 +2510,7 @@ SALESINVOICES <IMicrosoftGraphSalesInvoice\[]>: .
   - `[TotalAmountIncludingTax <Decimal?>]`: 
   - `[TotalTaxAmount <Decimal?>]`: 
 
-SALESORDERLINES <IMicrosoftGraphSalesOrderLine\[]>: .
+SALESORDERLINES <IMicrosoftGraphSalesOrderLine[]>: .
   - `[Id <String>]`: Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2576,7 +2578,7 @@ SALESORDERLINES <IMicrosoftGraphSalesOrderLine\[]>: .
   - `[UnitOfMeasureId <String>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-SALESORDERS <IMicrosoftGraphSalesOrder\[]>: .
+SALESORDERS <IMicrosoftGraphSalesOrder[]>: .
   - `[Id <String>]`: Read-only.
   - `[BillToCustomerId <String>]`: 
   - `[BillToCustomerNumber <String>]`: 
@@ -2738,7 +2740,7 @@ SALESORDERS <IMicrosoftGraphSalesOrder\[]>: .
   - `[TotalAmountIncludingTax <Decimal?>]`: 
   - `[TotalTaxAmount <Decimal?>]`: 
 
-SALESQUOTELINES <IMicrosoftGraphSalesQuoteLine\[]>: .
+SALESQUOTELINES <IMicrosoftGraphSalesQuoteLine[]>: .
   - `[Id <String>]`: Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2800,7 +2802,7 @@ SALESQUOTELINES <IMicrosoftGraphSalesQuoteLine\[]>: .
   - `[UnitOfMeasureId <String>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-SALESQUOTES <IMicrosoftGraphSalesQuote\[]>: .
+SALESQUOTES <IMicrosoftGraphSalesQuote[]>: .
   - `[Id <String>]`: Read-only.
   - `[AcceptedDate <DateTime?>]`: 
   - `[BillToCustomerId <String>]`: 
@@ -2957,34 +2959,34 @@ SALESQUOTES <IMicrosoftGraphSalesQuote\[]>: .
   - `[TotalTaxAmount <Decimal?>]`: 
   - `[ValidUntilDate <DateTime?>]`: 
 
-SHIPMENTMETHODS <IMicrosoftGraphShipmentMethod\[]>: .
+SHIPMENTMETHODS <IMicrosoftGraphShipmentMethod[]>: .
   - `[Id <String>]`: Read-only.
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-TAXAREAS <IMicrosoftGraphTaxArea\[]>: .
-  - `[Id <String>]`: Read-only.
-  - `[Code <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[TaxType <String>]`: 
-
-TAXGROUPS <IMicrosoftGraphTaxGroup\[]>: .
+TAXAREAS <IMicrosoftGraphTaxArea[]>: .
   - `[Id <String>]`: Read-only.
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[TaxType <String>]`: 
 
-UNITSOFMEASURE <IMicrosoftGraphUnitOfMeasure\[]>: .
+TAXGROUPS <IMicrosoftGraphTaxGroup[]>: .
+  - `[Id <String>]`: Read-only.
+  - `[Code <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[TaxType <String>]`: 
+
+UNITSOFMEASURE <IMicrosoftGraphUnitOfMeasure[]>: .
   - `[Id <String>]`: Read-only.
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[InternationalStandardCode <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-VENDORS <IMicrosoftGraphVendor\[]>: .
+VENDORS <IMicrosoftGraphVendor[]>: .
   - `[Id <String>]`: Read-only.
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3041,4 +3043,3 @@ VENDORS <IMicrosoftGraphVendor\[]>: .
 
 ## RELATED LINKS
 
-## RELATED LINKS

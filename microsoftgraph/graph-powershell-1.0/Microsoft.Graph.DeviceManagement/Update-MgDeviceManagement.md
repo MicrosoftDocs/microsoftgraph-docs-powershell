@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement
 schema: 2.0.0
@@ -35,7 +35,8 @@ Update-MgDeviceManagement [-AdditionalProperties <Hashtable>]
  [-MobileThreatDefenseConnectors <IMicrosoftGraphMobileThreatDefenseConnector[]>]
  [-NotificationMessageTemplates <IMicrosoftGraphNotificationMessageTemplate[]>]
  [-RemoteAssistancePartners <IMicrosoftGraphRemoteAssistancePartner[]>]
- [-Reports <IMicrosoftGraphDeviceManagementReports>] [-ResourceOperations <IMicrosoftGraphResourceOperation[]>]
+ [-Reports <IMicrosoftGraphDeviceManagementReports>]
+ [-ResourceOperations <IMicrosoftGraphResourceOperation[]>]
  [-RoleAssignments <IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphRoleDefinition[]>] [-Settings <IMicrosoftGraphDeviceManagementSettings>]
  [-SoftwareUpdateStatusSummary <IMicrosoftGraphSoftwareUpdateStatusSummary>]
@@ -46,12 +47,12 @@ Update-MgDeviceManagement [-AdditionalProperties <Hashtable>]
  [-WindowsAutopilotDeviceIdentities <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]
  [-WindowsInformationProtectionAppLearningSummaries <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]>]
  [-WindowsInformationProtectionNetworkLearningSummaries <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgDeviceManagement -BodyParameter <IMicrosoftGraphDeviceManagement1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgDeviceManagement -BodyParameter <IMicrosoftGraphDeviceManagement1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -66,7 +67,7 @@ Update deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -82,7 +83,7 @@ Apple push notification certificate.
 To construct, please use Get-Help -Online and see NOTES section for APPLEPUSHNOTIFICATIONCERTIFICATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApplePushNotificationCertificate
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -98,7 +99,7 @@ Singleton entity that acts as a container for all device management functionalit
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagement1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagement1
 Parameter Sets: Update1
 Aliases:
 
@@ -114,7 +115,7 @@ The list of Compliance Management Partners configured by the tenant.
 To construct, please use Get-Help -Online and see NOTES section for COMPLIANCEMANAGEMENTPARTNERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartner[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -130,7 +131,7 @@ Singleton entity which represents the Exchange OnPremises Conditional Access Set
 To construct, please use Get-Help -Online and see NOTES section for CONDITIONALACCESSSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesConditionalAccessSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -146,7 +147,7 @@ The list of detected apps associated with a device.
 To construct, please use Get-Help -Online and see NOTES section for DETECTEDAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDetectedApp[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDetectedApp[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -162,7 +163,7 @@ The list of device categories with the tenant.
 To construct, please use Get-Help -Online and see NOTES section for DEVICECATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCategory[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -178,7 +179,7 @@ The device compliance policies.
 To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -194,7 +195,7 @@ deviceCompliancePolicyDeviceStateSummary
 To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -210,7 +211,7 @@ The summary states of compliance policy settings for this account.
 To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicySettingStateSummary[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -226,7 +227,7 @@ deviceConfigurationDeviceStateSummary
 To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONDEVICESTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationDeviceStateSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStateSummary
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -242,7 +243,7 @@ The device configurations.
 To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfiguration[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -258,7 +259,7 @@ The list of device enrollment configurations
 To construct, please use Get-Help -Online and see NOTES section for DEVICEENROLLMENTCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceEnrollmentConfiguration[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -274,7 +275,7 @@ The list of Device Management Partners configured by the tenant.
 To construct, please use Get-Help -Online and see NOTES section for DEVICEMANAGEMENTPARTNERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementPartner[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -290,7 +291,7 @@ The list of Exchange Connectors configured by the tenant.
 To construct, please use Get-Help -Online and see NOTES section for EXCHANGECONNECTORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementExchangeConnector[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -305,7 +306,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -321,7 +322,7 @@ Collection of imported Windows autopilot devices.
 To construct, please use Get-Help -Online and see NOTES section for IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -336,7 +337,7 @@ Accept wildcard characters: False
 Intune Account ID for given tenant
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -352,7 +353,7 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 To construct, please use Get-Help -Online and see NOTES section for INTUNEBRAND properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIntuneBrand
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIntuneBrand
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -368,7 +369,7 @@ The IOS software update installation statuses for this account.
 To construct, please use Get-Help -Online and see NOTES section for IOSUPDATESTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIosUpdateDeviceStatus[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIosUpdateDeviceStatus[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -384,7 +385,7 @@ Summary data for managed devices
 To construct, please use Get-Help -Online and see NOTES section for MANAGEDDEVICEOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDeviceOverview
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceOverview
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -400,7 +401,7 @@ The list of managed devices.
 To construct, please use Get-Help -Online and see NOTES section for MANAGEDDEVICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDevice[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -416,7 +417,7 @@ The list of Mobile threat Defense connectors configured by the tenant.
 To construct, please use Get-Help -Online and see NOTES section for MOBILETHREATDEFENSECONNECTORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileThreatDefenseConnector[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -432,7 +433,7 @@ The Notification Message Templates.
 To construct, please use Get-Help -Online and see NOTES section for NOTIFICATIONMESSAGETEMPLATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNotificationMessageTemplate[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -447,7 +448,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -463,7 +464,7 @@ The remote assist partners.
 To construct, please use Get-Help -Online and see NOTES section for REMOTEASSISTANCEPARTNERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRemoteAssistancePartner[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -479,7 +480,7 @@ Singleton entity that acts as a container for all reports functionality.
 To construct, please use Get-Help -Online and see NOTES section for REPORTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementReports
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -495,7 +496,7 @@ The Resource Operations.
 To construct, please use Get-Help -Online and see NOTES section for RESOURCEOPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceOperation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceOperation[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -511,7 +512,7 @@ The Role Assignments.
 To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -527,7 +528,7 @@ The Role Definitions.
 To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -543,7 +544,7 @@ deviceManagementSettings
 To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettings
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -559,7 +560,7 @@ softwareUpdateStatusSummary
 To construct, please use Get-Help -Online and see NOTES section for SOFTWAREUPDATESTATUSSUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSoftwareUpdateStatusSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSoftwareUpdateStatusSummary
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -574,7 +575,7 @@ Accept wildcard characters: False
 Tenant mobile device management subscription state.
 
 ```yaml
-Type: DeviceManagementSubscriptionState
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementSubscriptionState
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -590,7 +591,7 @@ The telecom expense management partners.
 To construct, please use Get-Help -Online and see NOTES section for TELECOMEXPENSEMANAGEMENTPARTNERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTelecomExpenseManagementPartner[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -606,7 +607,7 @@ The terms and conditions associated with device management of the company.
 To construct, please use Get-Help -Online and see NOTES section for TERMSANDCONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermsAndConditions1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditions1[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -622,7 +623,7 @@ The list of troubleshooting events for the tenant.
 To construct, please use Get-Help -Online and see NOTES section for TROUBLESHOOTINGEVENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementTroubleshootingEvent[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -638,7 +639,7 @@ The Windows autopilot device identities contained collection.
 To construct, please use Get-Help -Online and see NOTES section for WINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsAutopilotDeviceIdentity[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -654,7 +655,7 @@ The windows information protection app learning summaries.
 To construct, please use Get-Help -Online and see NOTES section for WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -670,7 +671,7 @@ The windows information protection network learning summaries.
 To construct, please use Get-Help -Online and see NOTES section for WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -685,7 +686,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -701,7 +702,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -718,9 +719,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagement1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -730,7 +733,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLEPUSHNOTIFICATIONCERTIFICATE `<IMicrosoftGraphApplePushNotificationCertificate>`: Apple push notification certificate.
+APPLEPUSHNOTIFICATIONCERTIFICATE <IMicrosoftGraphApplePushNotificationCertificate>: Apple push notification certificate.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppleIdentifier <String>]`: Apple Id of the account used to create the MDM push certificate.
@@ -740,7 +743,7 @@ APPLEPUSHNOTIFICATIONCERTIFICATE `<IMicrosoftGraphApplePushNotificationCertifica
   - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time for Apple push notification certificate.
   - `[TopicIdentifier <String>]`: Topic Id.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagement1>`: Singleton entity that acts as a container for all device management functionality.
+BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as a container for all device management functionality.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ApplePushNotificationCertificate <IMicrosoftGraphApplePushNotificationCertificate>]`: Apple push notification certificate.
@@ -797,7 +800,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement1>`: Singleton entity that acts a
         - `[ActionState <ActionState?>]`: State of the action on the device
         - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
         - `[StartDateTime <DateTime?>]`: Time the action was initiated
-      - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+      - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: 
         - `[Description <String>]`: Optional description for the device category.
@@ -1143,9 +1146,9 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement1>`: Singleton entity that acts a
       - `[Value <Byte[]>]`: The byte array that contains the actual content.
     - `[DisplayName <String>]`: Company/organization name that is displayed to end users.
     - `[LightBackgroundLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-    - `[OnlineSupportSiteName <String>]`: Display name of the company/organization's IT helpdesk site.
-    - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization's IT helpdesk site.
-    - `[PrivacyUrl <String>]`: URL to the company/organization's privacy policy.
+    - `[OnlineSupportSiteName <String>]`: Display name of the company/organization’s IT helpdesk site.
+    - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization’s IT helpdesk site.
+    - `[PrivacyUrl <String>]`: URL to the company/organization’s privacy policy.
     - `[ShowDisplayNameNextToLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
     - `[ShowLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied logo images are shown or not shown.
     - `[ShowNameNextToLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
@@ -1299,7 +1302,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement1>`: Singleton entity that acts a
       - `[Id <String>]`: 
       - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
       - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-      - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions1>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+      - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions1>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
       - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
       - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
     - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]`: The list of assignments for this T&C policy.
@@ -1344,7 +1347,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement1>`: Singleton entity that acts a
     - `[DeviceCount <Int32?>]`: Device Count
     - `[Url <String>]`: Website url
 
-COMPLIANCEMANAGEMENTPARTNERS <IMicrosoftGraphComplianceManagementPartner\[]>: The list of Compliance Management Partners configured by the tenant.
+COMPLIANCEMANAGEMENTPARTNERS <IMicrosoftGraphComplianceManagementPartner[]>: The list of Compliance Management Partners configured by the tenant.
   - `[Id <String>]`: 
   - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Android devices through partner.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -1358,7 +1361,7 @@ COMPLIANCEMANAGEMENTPARTNERS <IMicrosoftGraphComplianceManagementPartner\[]>: Th
   - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
   - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
 
-CONDITIONALACCESSSETTINGS `<IMicrosoftGraphOnPremisesConditionalAccessSettings>`: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
+CONDITIONALACCESSSETTINGS <IMicrosoftGraphOnPremisesConditionalAccessSettings>: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Enabled <Boolean?>]`: Indicates if on premises conditional access is enabled for this organization
@@ -1366,7 +1369,7 @@ CONDITIONALACCESSSETTINGS `<IMicrosoftGraphOnPremisesConditionalAccessSettings>`
   - `[IncludedGroups <String[]>]`: User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.
   - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
 
-DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associated with a device.
+DETECTEDAPPS <IMicrosoftGraphDetectedApp[]>: The list of detected apps associated with a device.
   - `[Id <String>]`: 
   - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
   - `[DisplayName <String>]`: Name of the discovered application. Read-only
@@ -1391,7 +1394,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
       - `[ActionState <ActionState?>]`: State of the action on the device
       - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
       - `[StartDateTime <DateTime?>]`: Time the action was initiated
-    - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+    - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
       - `[Description <String>]`: Optional description for the device category.
@@ -1518,12 +1521,12 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
   - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
   - `[Version <String>]`: Version of the discovered application. Read-only
 
-DEVICECATEGORIES <IMicrosoftGraphDeviceCategory\[]>: The list of device categories with the tenant.
+DEVICECATEGORIES <IMicrosoftGraphDeviceCategory[]>: The list of device categories with the tenant.
   - `[Id <String>]`: 
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
 
-DEVICECOMPLIANCEPOLICIES <IMicrosoftGraphDeviceCompliancePolicy\[]>: The device compliance policies.
+DEVICECOMPLIANCEPOLICIES <IMicrosoftGraphDeviceCompliancePolicy[]>: The device compliance policies.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment[]>]`: The collection of assignments for this compliance policy.
     - `[Id <String>]`: 
@@ -1591,7 +1594,7 @@ DEVICECOMPLIANCEPOLICIES <IMicrosoftGraphDeviceCompliancePolicy\[]>: The device 
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY `<IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary>`: deviceCompliancePolicyDeviceStateSummary
+DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY <IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary>: deviceCompliancePolicyDeviceStateSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
@@ -1604,7 +1607,7 @@ DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY `<IMicrosoftGraphDeviceCompliancePolicy
   - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary\[]>: The summary states of compliance policy settings for this account.
+DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary[]>: The summary states of compliance policy settings for this account.
   - `[Id <String>]`: 
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
   - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
@@ -1630,7 +1633,7 @@ DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES <IMicrosoftGraphDeviceCompliancePoli
   - `[SettingName <String>]`: Name of the setting.
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECONFIGURATIONDEVICESTATESUMMARIES `<IMicrosoftGraphDeviceConfigurationDeviceStateSummary>`: deviceConfigurationDeviceStateSummary
+DEVICECONFIGURATIONDEVICESTATESUMMARIES <IMicrosoftGraphDeviceConfigurationDeviceStateSummary>: deviceConfigurationDeviceStateSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
@@ -1641,7 +1644,7 @@ DEVICECONFIGURATIONDEVICESTATESUMMARIES `<IMicrosoftGraphDeviceConfigurationDevi
   - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECONFIGURATIONS <IMicrosoftGraphDeviceConfiguration\[]>: The device configurations.
+DEVICECONFIGURATIONS <IMicrosoftGraphDeviceConfiguration[]>: The device configurations.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]`: The list of assignments for the device configuration profile.
     - `[Id <String>]`: 
@@ -1700,7 +1703,7 @@ DEVICECONFIGURATIONS <IMicrosoftGraphDeviceConfiguration\[]>: The device configu
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICEENROLLMENTCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration\[]>: The list of device enrollment configurations
+DEVICEENROLLMENTCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration[]>: The list of device enrollment configurations
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>]`: The list of group assignments for the device configuration profile
     - `[Id <String>]`: 
@@ -1713,7 +1716,7 @@ DEVICEENROLLMENTCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration\[]>
   - `[Priority <Int32?>]`: Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value.
   - `[Version <Int32?>]`: The version of the device enrollment configuration
 
-DEVICEMANAGEMENTPARTNERS <IMicrosoftGraphDeviceManagementPartner\[]>: The list of Device Management Partners configured by the tenant.
+DEVICEMANAGEMENTPARTNERS <IMicrosoftGraphDeviceManagementPartner[]>: The list of Device Management Partners configured by the tenant.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: Partner display name
   - `[IsConfigured <Boolean?>]`: Whether device management partner is configured or not
@@ -1724,7 +1727,7 @@ DEVICEMANAGEMENTPARTNERS <IMicrosoftGraphDeviceManagementPartner\[]>: The list o
   - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
   - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
 
-EXCHANGECONNECTORS <IMicrosoftGraphDeviceManagementExchangeConnector\[]>: The list of Exchange Connectors configured by the tenant.
+EXCHANGECONNECTORS <IMicrosoftGraphDeviceManagementExchangeConnector[]>: The list of Exchange Connectors configured by the tenant.
   - `[Id <String>]`: 
   - `[ConnectorServerName <String>]`: The name of the server hosting the Exchange Connector.
   - `[ExchangeAlias <String>]`: An alias assigned to the Exchange server
@@ -1736,7 +1739,7 @@ EXCHANGECONNECTORS <IMicrosoftGraphDeviceManagementExchangeConnector\[]>: The li
   - `[Status <DeviceManagementExchangeConnectorStatus?>]`: The current status of the Exchange Connector.
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
-IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity\[]>: Collection of imported Windows autopilot devices.
+IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>: Collection of imported Windows autopilot devices.
   - `[Id <String>]`: 
   - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
   - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
@@ -1751,7 +1754,7 @@ IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilo
     - `[DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]`: importedWindowsAutopilotDeviceIdentityImportStatus
     - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
-INTUNEBRAND `<IMicrosoftGraphIntuneBrand>`: intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
+INTUNEBRAND <IMicrosoftGraphIntuneBrand>: intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContactItEmailAddress <String>]`: Email address of the person/organization responsible for IT support.
   - `[ContactItName <String>]`: Name of the person/organization responsible for IT support.
@@ -1763,9 +1766,9 @@ INTUNEBRAND `<IMicrosoftGraphIntuneBrand>`: intuneBrand contains data which is u
     - `[Value <Byte[]>]`: The byte array that contains the actual content.
   - `[DisplayName <String>]`: Company/organization name that is displayed to end users.
   - `[LightBackgroundLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-  - `[OnlineSupportSiteName <String>]`: Display name of the company/organization's IT helpdesk site.
-  - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization's IT helpdesk site.
-  - `[PrivacyUrl <String>]`: URL to the company/organization's privacy policy.
+  - `[OnlineSupportSiteName <String>]`: Display name of the company/organization’s IT helpdesk site.
+  - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization’s IT helpdesk site.
+  - `[PrivacyUrl <String>]`: URL to the company/organization’s privacy policy.
   - `[ShowDisplayNameNextToLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
   - `[ShowLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied logo images are shown or not shown.
   - `[ShowNameNextToLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
@@ -1775,7 +1778,7 @@ INTUNEBRAND `<IMicrosoftGraphIntuneBrand>`: intuneBrand contains data which is u
     - `[G <Int32?>]`: Green value
     - `[R <Int32?>]`: Red value
 
-IOSUPDATESTATUSES <IMicrosoftGraphIosUpdateDeviceStatus\[]>: The IOS software update installation statuses for this account.
+IOSUPDATESTATUSES <IMicrosoftGraphIosUpdateDeviceStatus[]>: The IOS software update installation statuses for this account.
   - `[Id <String>]`: 
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
@@ -1789,7 +1792,7 @@ IOSUPDATESTATUSES <IMicrosoftGraphIosUpdateDeviceStatus\[]>: The IOS software up
   - `[UserName <String>]`: The User Name that is being reported
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
-MANAGEDDEVICEOVERVIEW `<IMicrosoftGraphManagedDeviceOverview>`: Summary data for managed devices
+MANAGEDDEVICEOVERVIEW <IMicrosoftGraphManagedDeviceOverview>: Summary data for managed devices
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeviceExchangeAccessStateSummary <IMicrosoftGraphDeviceExchangeAccessStateSummary>]`: Device Exchange Access State summary
@@ -1811,7 +1814,7 @@ MANAGEDDEVICEOVERVIEW `<IMicrosoftGraphManagedDeviceOverview>`: Summary data for
   - `[EnrolledDeviceCount <Int32?>]`: Total enrolled device count. Does not include PC devices managed via Intune PC Agent
   - `[MdmEnrolledCount <Int32?>]`: The number of devices enrolled in MDM
 
-MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
+MANAGEDDEVICES <IMicrosoftGraphManagedDevice[]>: The list of managed devices.
   - `[Id <String>]`: 
   - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
   - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
@@ -1832,7 +1835,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
     - `[ActionState <ActionState?>]`: State of the action on the device
     - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
     - `[StartDateTime <DateTime?>]`: Time the action was initiated
-  - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+  - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[Description <String>]`: Optional description for the device category.
@@ -1957,7 +1960,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
   - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
   - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
 
-MOBILETHREATDEFENSECONNECTORS <IMicrosoftGraphMobileThreatDefenseConnector\[]>: The list of Mobile threat Defense connectors configured by the tenant.
+MOBILETHREATDEFENSECONNECTORS <IMicrosoftGraphMobileThreatDefenseConnector[]>: The list of Mobile threat Defense connectors configured by the tenant.
   - `[Id <String>]`: 
   - `[AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   - `[AndroidEnabled <Boolean?>]`: For Android, set whether data from the data sync partner should be used during compliance evaluations
@@ -1968,7 +1971,7 @@ MOBILETHREATDEFENSECONNECTORS <IMicrosoftGraphMobileThreatDefenseConnector\[]>: 
   - `[PartnerUnresponsivenessThresholdInDays <Int32?>]`: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
   - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
 
-NOTIFICATIONMESSAGETEMPLATES <IMicrosoftGraphNotificationMessageTemplate\[]>: The Notification Message Templates.
+NOTIFICATIONMESSAGETEMPLATES <IMicrosoftGraphNotificationMessageTemplate[]>: The Notification Message Templates.
   - `[Id <String>]`: 
   - `[BrandingOptions <NotificationTemplateBrandingOptions?>]`: Branding Options for the Message Template. Branding is defined in the Intune Admin Console.
   - `[DefaultLocale <String>]`: The default locale to fallback onto when the requested locale is not available.
@@ -1982,14 +1985,14 @@ NOTIFICATIONMESSAGETEMPLATES <IMicrosoftGraphNotificationMessageTemplate\[]>: Th
     - `[MessageTemplate <String>]`: The Message Template content.
     - `[Subject <String>]`: The Message Template Subject.
 
-REMOTEASSISTANCEPARTNERS <IMicrosoftGraphRemoteAssistancePartner\[]>: The remote assist partners.
+REMOTEASSISTANCEPARTNERS <IMicrosoftGraphRemoteAssistancePartner[]>: The remote assist partners.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: Display name of the partner.
   - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
   - `[OnboardingStatus <RemoteAssistanceOnboardingStatus?>]`: The current TeamViewer connector status
   - `[OnboardingUrl <String>]`: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
 
-REPORTS `<IMicrosoftGraphDeviceManagementReports>`: Singleton entity that acts as a container for all reports functionality.
+REPORTS <IMicrosoftGraphDeviceManagementReports>: Singleton entity that acts as a container for all reports functionality.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]`: Entity representing a job to export a report
@@ -2005,13 +2008,13 @@ REPORTS `<IMicrosoftGraphDeviceManagementReports>`: Singleton entity that acts a
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
     - `[Url <String>]`: Temporary location of the exported report
 
-RESOURCEOPERATIONS <IMicrosoftGraphResourceOperation\[]>: The Resource Operations.
+RESOURCEOPERATIONS <IMicrosoftGraphResourceOperation[]>: The Resource Operations.
   - `[Id <String>]`: 
   - `[ActionName <String>]`: Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.
   - `[Description <String>]`: Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.
   - `[ResourceName <String>]`: Name of the Resource this operation is performed on.
 
-ROLEASSIGNMENTS <IMicrosoftGraphDeviceAndAppManagementRoleAssignment\[]>: The Role Assignments.
+ROLEASSIGNMENTS <IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]>: The Role Assignments.
   - `[Description <String>]`: Description of the Role Assignment.
   - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
   - `[ResourceScopes <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
@@ -2034,7 +2037,7 @@ ROLEASSIGNMENTS <IMicrosoftGraphDeviceAndAppManagementRoleAssignment\[]>: The Ro
   - `[Id <String>]`: 
   - `[Members <String[]>]`: The list of ids of role member security groups. These are IDs from Azure Active Directory.
 
-ROLEDEFINITIONS <IMicrosoftGraphRoleDefinition\[]>: The Role Definitions.
+ROLEDEFINITIONS <IMicrosoftGraphRoleDefinition[]>: The Role Definitions.
   - `[Id <String>]`: 
   - `[Description <String>]`: Description of the Role definition.
   - `[DisplayName <String>]`: Display Name of the Role definition.
@@ -2050,13 +2053,13 @@ ROLEDEFINITIONS <IMicrosoftGraphRoleDefinition\[]>: The Role Definitions.
       - `[AllowedResourceActions <String[]>]`: Allowed Actions
       - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
-SETTINGS `<IMicrosoftGraphDeviceManagementSettings>`: deviceManagementSettings
+SETTINGS <IMicrosoftGraphDeviceManagementSettings>: deviceManagementSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceComplianceCheckinThresholdDays <Int32?>]`: The number of days a device is allowed to go without checking in to remain compliant.
   - `[IsScheduledActionEnabled <Boolean?>]`: Is feature enabled or not for scheduled action for rule.
   - `[SecureByDefault <Boolean?>]`: Device should be noncompliant when there is no compliance policy targeted when this is true
 
-SOFTWAREUPDATESTATUSSUMMARY `<IMicrosoftGraphSoftwareUpdateStatusSummary>`: softwareUpdateStatusSummary
+SOFTWAREUPDATESTATUSSUMMARY <IMicrosoftGraphSoftwareUpdateStatusSummary>: softwareUpdateStatusSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices.
@@ -2075,7 +2078,7 @@ SOFTWAREUPDATESTATUSSUMMARY `<IMicrosoftGraphSoftwareUpdateStatusSummary>`: soft
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices.
   - `[UnknownUserCount <Int32?>]`: Number of unknown users.
 
-TELECOMEXPENSEMANAGEMENTPARTNERS <IMicrosoftGraphTelecomExpenseManagementPartner\[]>: The telecom expense management partners.
+TELECOMEXPENSEMANAGEMENTPARTNERS <IMicrosoftGraphTelecomExpenseManagementPartner[]>: The telecom expense management partners.
   - `[Id <String>]`: 
   - `[AppAuthorized <Boolean?>]`: Whether the partner's AAD app has been authorized to access Intune.
   - `[DisplayName <String>]`: Display name of the TEM partner.
@@ -2083,14 +2086,14 @@ TELECOMEXPENSEMANAGEMENTPARTNERS <IMicrosoftGraphTelecomExpenseManagementPartner
   - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
   - `[Url <String>]`: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
 
-TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions1\[]>: The terms and conditions associated with device management of the company.
+TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions1[]>: The terms and conditions associated with device management of the company.
   - `[Id <String>]`: 
   - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.
   - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]`: The list of acceptance statuses for this T&C policy.
     - `[Id <String>]`: 
     - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
     - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions1>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions1>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
     - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
     - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
   - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]`: The list of assignments for this T&C policy.
@@ -2105,12 +2108,12 @@ TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions1\[]>: The terms and condit
   - `[Title <String>]`: Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.
   - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
-TROUBLESHOOTINGEVENTS <IMicrosoftGraphDeviceManagementTroubleshootingEvent\[]>: The list of troubleshooting events for the tenant.
+TROUBLESHOOTINGEVENTS <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>: The list of troubleshooting events for the tenant.
   - `[Id <String>]`: 
   - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
   - `[EventDateTime <DateTime?>]`: Time when the event occurred .
 
-WINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphWindowsAutopilotDeviceIdentity\[]>: The Windows autopilot device identities contained collection.
+WINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>: The Windows autopilot device identities contained collection.
   - `[Id <String>]`: 
   - `[AddressableUserName <String>]`: Addressable user name.
   - `[AzureActiveDirectoryDeviceId <String>]`: AAD Device ID - to be deprecated
@@ -2129,17 +2132,16 @@ WINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphWindowsAutopilotDeviceIdentity\
   - `[SystemFamily <String>]`: System Family
   - `[UserPrincipalName <String>]`: User Principal Name.
 
-WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary\[]>: The windows information protection app learning summaries.
+WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]>: The windows information protection app learning summaries.
   - `[Id <String>]`: 
   - `[ApplicationName <String>]`: Application Name
   - `[ApplicationType <ApplicationType?>]`: Possible types of Application
   - `[DeviceCount <Int32?>]`: Device Count
 
-WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary\[]>: The windows information protection network learning summaries.
+WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]>: The windows information protection network learning summaries.
   - `[Id <String>]`: 
   - `[DeviceCount <Int32?>]`: Device Count
   - `[Url <String>]`: Website url
 
 ## RELATED LINKS
 
-## RELATED LINKS

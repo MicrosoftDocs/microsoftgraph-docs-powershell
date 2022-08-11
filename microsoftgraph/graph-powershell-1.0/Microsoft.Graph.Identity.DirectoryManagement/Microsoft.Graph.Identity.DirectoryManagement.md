@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 6508ccfb-7e33-4938-aaea-8b6b9ab1024f
+Module Guid: 8aa12f83-9823-4b95-8902-bfa898df055e
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -80,14 +80,8 @@ Invoke action getMemberObjects
 ### [Get-MgContactMemberOf](Get-MgContactMemberOf.md)
 Get memberOf from contacts
 
-### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
-Invoke action getMemberObjects
-
 ### [Get-MgContactTransitiveMemberOf](Get-MgContactTransitiveMemberOf.md)
 Get transitiveMemberOf from contacts
-
-### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
-Invoke action getMemberObjects
 
 ### [Get-MgContract](Get-MgContract.md)
 Get Contract
@@ -107,6 +101,9 @@ Get device
 ### [Get-MgDeviceById](Get-MgDeviceById.md)
 Invoke action getByIds
 
+### [Get-MgDeviceDelta](Get-MgDeviceDelta.md)
+Invoke function delta
+
 ### [Get-MgDeviceExtension](Get-MgDeviceExtension.md)
 Get extensions from devices
 
@@ -118,9 +115,6 @@ Invoke action getMemberObjects
 
 ### [Get-MgDeviceMemberOf](Get-MgDeviceMemberOf.md)
 Get memberOf from devices
-
-### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
-Invoke action getMemberObjects
 
 ### [Get-MgDeviceRegisteredOwner](Get-MgDeviceRegisteredOwner.md)
 Get registeredOwners from devices
@@ -210,7 +204,7 @@ Invoke action getMemberGroups
 Invoke action getMemberObjects
 
 ### [Get-MgDomain](Get-MgDomain.md)
-Get domain
+Get entity from domains by key
 
 ### [Get-MgDomainFederationConfiguration](Get-MgDomainFederationConfiguration.md)
 Get federationConfiguration from domains
@@ -286,11 +280,6 @@ Create device
 
 ### [New-MgDeviceExtension](New-MgDeviceExtension.md)
 Create new navigation property to extensions for devices
-
-### [New-MgDeviceExtension](New-MgDeviceExtension.md)
-The collection of open extensions defined for the device.
-Read-only.
-Nullable.
 
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
 Create new navigation property ref to registeredOwners for devices

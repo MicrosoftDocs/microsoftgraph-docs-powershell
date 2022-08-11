@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.SchemaExtensions-help.xml
+external help file:
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSchemaExtension
 
 ## SYNOPSIS
-Add new entity to schemaExtensions
+Create schemaExtension
 
 ## SYNTAX
 
@@ -16,16 +16,17 @@ Add new entity to schemaExtensions
 ```
 New-MgSchemaExtension [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>]
  [-Owner <String>] [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>]
- [-TargetTypes <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TargetTypes <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSchemaExtension -BodyParameter <IMicrosoftGraphSchemaExtension> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSchemaExtension -BodyParameter <IMicrosoftGraphSchemaExtension> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Add new entity to schemaExtensions
+Create schemaExtension
 
 ## EXAMPLES
 
@@ -35,7 +36,7 @@ Add new entity to schemaExtensions
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +52,7 @@ schemaExtension
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSchemaExtension
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchemaExtension
 Parameter Sets: Create
 Aliases:
 
@@ -67,7 +68,7 @@ Description for the schema extension.
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -79,10 +80,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +104,7 @@ Once set, this property is read-only and cannot be changed.
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +120,7 @@ The collection of property names and types that make up the schema extension def
 To construct, please use Get-Help -Online and see NOTES section for PROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtensionSchemaProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionSchemaProperty[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,11 +135,11 @@ Accept wildcard characters: False
 The lifecycle state of the schema extension.
 Possible states are InDevelopment, Available, and Deprecated.
 Automatically set to InDevelopment on creation.
-Schema extensions provides more information on the possible state transitions and behaviors.
+For more information about the possible state transitions and behaviors, see Schema extensions lifecycle.
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,10 +152,10 @@ Accept wildcard characters: False
 
 ### -TargetTypes
 Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.
-Select from contact, device, event, group, message, organization, post, or user.
+Select from administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +170,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -185,7 +186,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -202,9 +203,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchemaExtension
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchemaExtension
+
 ## NOTES
 
 ALIASES
@@ -214,19 +217,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSchemaExtension>`: schemaExtension
+BODYPARAMETER <IMicrosoftGraphSchemaExtension>: schemaExtension
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Description <String>]`: Description for the schema extension. Supports $filter (eq).
   - `[Owner <String>]`: The appId of the application that is the owner of the schema extension. This property can be supplied on creation, to set the owner.  If not supplied, then the calling application's appId will be set as the owner. In either case, the signed-in user must be the owner of the application. So, for example, if creating a new schema extension definition using Graph Explorer, you must supply the owner property. Once set, this property is read-only and cannot be changed. Supports $filter (eq).
   - `[Properties <IMicrosoftGraphExtensionSchemaProperty[]>]`: The collection of property names and types that make up the schema extension definition.
-    - `[Name <String>]`: The name of the strongly-typed property defined as part of a schema extension.
-    - `[Type <String>]`: The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String.  See the table below for more details.
-  - `[Status <String>]`: The lifecycle state of the schema extension. Possible states are InDevelopment, Available, and Deprecated. Automatically set to InDevelopment on creation. Schema extensions provides more information on the possible state transitions and behaviors. Supports $filter (eq).
-  - `[TargetTypes <String[]>]`: Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from contact, device, event, group, message, organization, post, or user.
+    - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
+    - `[Type <String>]`: The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String. See the table below for more details.
+  - `[Status <String>]`: The lifecycle state of the schema extension. Possible states are InDevelopment, Available, and Deprecated. Automatically set to InDevelopment on creation. For more information about the possible state transitions and behaviors, see Schema extensions lifecycle. Supports $filter (eq).
+  - `[TargetTypes <String[]>]`: Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
 
-PROPERTIES <IMicrosoftGraphExtensionSchemaProperty\[]>: The collection of property names and types that make up the schema extension definition.
-  - `[Name <String>]`: The name of the strongly-typed property defined as part of a schema extension.
-  - `[Type <String>]`: The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String.  See the table below for more details.
+PROPERTIES <IMicrosoftGraphExtensionSchemaProperty[]>: The collection of property names and types that make up the schema extension definition.
+  - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
+  - `[Type <String>]`: The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String. See the table below for more details.
 
 ## RELATED LINKS
+

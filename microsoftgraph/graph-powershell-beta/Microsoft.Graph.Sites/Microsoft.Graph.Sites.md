@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: c320fec7-f5ea-4f10-925c-cec8994df6be
+Module Guid: 03128073-70df-4bad-8b7c-114184b95aba
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -565,10 +565,6 @@ Invoke action publish
 
 ### [Publish-MgSitePage](Publish-MgSitePage.md)
 Invoke action publish
-
-### [Remove-MgGroupSite](Remove-MgGroupSite.md)
-The list of SharePoint sites in this group.
-Access the default site with /sites/root.
 
 ### [Remove-MgGroupSiteColumn](Remove-MgGroupSiteColumn.md)
 Delete navigation property columns for groups

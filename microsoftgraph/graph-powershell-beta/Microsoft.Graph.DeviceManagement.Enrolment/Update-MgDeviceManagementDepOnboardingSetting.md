@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementdeponboardingsetting
 schema: 2.0.0
@@ -23,13 +23,19 @@ Update-MgDeviceManagementDepOnboardingSetting -DepOnboardingSettingId <String>
  [-LastModifiedDateTime <DateTime>] [-LastSuccessfulSyncDateTime <DateTime>] [-LastSyncErrorCode <Int32>]
  [-LastSyncTriggeredDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-ShareTokenWithSchoolDataSyncService]
  [-SyncedDeviceCount <Int32>] [-TokenExpirationDateTime <DateTime>] [-TokenName <String>]
- [-TokenType <DepTokenType>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TokenType <DepTokenType>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDepOnboardingSetting -DepOnboardingSettingId <String>
- -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagementEnrolmentIdentity>
+ -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,13 +49,7 @@ Update-MgDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagementEnr
  [-LastModifiedDateTime <DateTime>] [-LastSuccessfulSyncDateTime <DateTime>] [-LastSyncErrorCode <Int32>]
  [-LastSyncTriggeredDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-ShareTokenWithSchoolDataSyncService]
  [-SyncedDeviceCount <Int32>] [-TokenExpirationDateTime <DateTime>] [-TokenName <String>]
- [-TokenType <DepTokenType>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagementEnrolmentIdentity>
- -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TokenType <DepTokenType>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,7 +63,7 @@ Update the navigation property depOnboardingSettings in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 The Apple ID used to obtain the current token.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +95,7 @@ The onboarded service instance manages an Apple Token used to synchronize data b
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDepOnboardingSetting
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 Consent granted for data sharing with Apple Dep Service
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ This type of profile must be assigned to Apple DEP serial numbers before the cor
 To construct, please use Get-Help -Online and see NOTES section for DEFAULTIOSENROLLMENTPROFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDepIosEnrollmentProfile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDepIosEnrollmentProfile
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ This type of profile must be assigned to Apple DEP serial numbers before the cor
 To construct, please use Get-Help -Online and see NOTES section for DEFAULTMACOSENROLLMENTPROFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDepMacOSEnrollmentProfile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDepMacOSEnrollmentProfile
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -159,8 +159,8 @@ Accept wildcard characters: False
 key: id of depOnboardingSetting
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -175,7 +175,7 @@ The enrollment profiles.
 To construct, please use Get-Help -Online and see NOTES section for ENROLLMENTPROFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEnrollmentProfile[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEnrollmentProfile[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -206,7 +206,7 @@ The imported Apple device identities.
 To construct, please use Get-Help -Online and see NOTES section for IMPORTEDAPPLEDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphImportedAppleDeviceIdentity[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentity[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -222,8 +222,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 When the service was onboarded.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 When the service last syned with Intune
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 Error code reported by Apple during last dep sync.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 When Intune last requested a sync.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 Whether or not the Dep token sharing is enabled with the School Data Sync service.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 Gets synced device count
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 When the token will expire.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -372,7 +372,7 @@ Accept wildcard characters: False
 Friendly Name for Dep Token
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -387,7 +387,7 @@ Accept wildcard characters: False
 depTokenType
 
 ```yaml
-Type: DepTokenType
+Type: Microsoft.Graph.PowerShell.Support.DepTokenType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -402,7 +402,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -418,7 +418,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -435,10 +435,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -448,7 +451,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune.
+BODYPARAMETER <IMicrosoftGraphDepOnboardingSetting>: The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppleIdentifier <String>]`: The Apple ID used to obtain the current token.
@@ -581,7 +584,7 @@ BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting 
   - `[TokenName <String>]`: Friendly Name for Dep Token
   - `[TokenType <DepTokenType?>]`: depTokenType
 
-DEFAULTIOSENROLLMENTPROFILE `<IMicrosoftGraphDepIosEnrollmentProfile>`: The DepIOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to iOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
+DEFAULTIOSENROLLMENTPROFILE <IMicrosoftGraphDepIosEnrollmentProfile>: The DepIOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to iOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppleIdDisabled <Boolean?>]`: Indicates if Apple id setup pane is disabled
   - `[ApplePayDisabled <Boolean?>]`: Indicates if Apple pay setup pane is disabled
@@ -641,7 +644,7 @@ DEFAULTIOSENROLLMENTPROFILE `<IMicrosoftGraphDepIosEnrollmentProfile>`: The DepI
   - `[WelcomeScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
   - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
 
-DEFAULTMACOSENROLLMENTPROFILE `<IMicrosoftGraphDepMacOSEnrollmentProfile>`: The DepMacOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to macOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
+DEFAULTMACOSENROLLMENTPROFILE <IMicrosoftGraphDepMacOSEnrollmentProfile>: The DepMacOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to macOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppleIdDisabled <Boolean?>]`: Indicates if Apple id setup pane is disabled
   - `[ApplePayDisabled <Boolean?>]`: Indicates if Apple pay setup pane is disabled
@@ -679,7 +682,7 @@ DEFAULTMACOSENROLLMENTPROFILE `<IMicrosoftGraphDepMacOSEnrollmentProfile>`: The 
   - `[RegistrationDisabled <Boolean?>]`: Indicates if registration is disabled
   - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
 
-ENROLLMENTPROFILES <IMicrosoftGraphEnrollmentProfile\[]>: The enrollment profiles.
+ENROLLMENTPROFILES <IMicrosoftGraphEnrollmentProfile[]>: The enrollment profiles.
   - `[Id <String>]`: 
   - `[ConfigurationEndpointUrl <String>]`: Configuration endpoint url to use for Enrollment
   - `[Description <String>]`: Description of the profile
@@ -688,7 +691,7 @@ ENROLLMENTPROFILES <IMicrosoftGraphEnrollmentProfile\[]>: The enrollment profile
   - `[RequireCompanyPortalOnSetupAssistantEnrolledDevices <Boolean?>]`: Indicates that Company Portal is required on setup assistant enrolled devices
   - `[RequiresUserAuthentication <Boolean?>]`: Indicates if the profile requires user authentication
 
-IMPORTEDAPPLEDEVICEIDENTITIES <IMicrosoftGraphImportedAppleDeviceIdentity\[]>: The imported Apple device identities.
+IMPORTEDAPPLEDEVICEIDENTITIES <IMicrosoftGraphImportedAppleDeviceIdentity[]>: The imported Apple device identities.
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
   - `[Description <String>]`: The description of the device
@@ -702,7 +705,7 @@ IMPORTEDAPPLEDEVICEIDENTITIES <IMicrosoftGraphImportedAppleDeviceIdentity\[]>: T
   - `[RequestedEnrollmentProfileId <String>]`: Enrollment profile Id admin intends to apply to the device during next enrollment
   - `[SerialNumber <String>]`: Device serial number
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
@@ -741,4 +744,3 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

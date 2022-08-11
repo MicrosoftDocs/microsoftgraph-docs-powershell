@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Functions
-Module Guid: 9b486e6c-f1a2-4abd-977b-bc2729eba250
+Module Guid: 120fd959-732e-40ca-b6e1-bf18379f1451
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions
 Help Version: 1.0.0.0
 Locale: en-US

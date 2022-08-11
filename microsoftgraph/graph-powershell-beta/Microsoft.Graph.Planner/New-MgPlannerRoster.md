@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Planner-help.xml
+external help file:
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/new-mgplannerroster
 schema: 2.0.0
@@ -15,13 +15,13 @@ Create new navigation property to rosters for planner
 ### CreateExpanded (Default)
 ```
 New-MgPlannerRoster [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Create new navigation property to rosters for planner
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ plannerRoster
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerRoster
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRoster
 Parameter Sets: Create
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Retrieves the members of the plannerRoster.
 To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerRosterMember[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRosterMember[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ Retrieves the plans contained by the plannerRoster.
 To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRoster
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRoster
+
 ## NOTES
 
 ALIASES
@@ -158,7 +160,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerRoster>`: plannerRoster
+BODYPARAMETER <IMicrosoftGraphPlannerRoster>: plannerRoster
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Members <IMicrosoftGraphPlannerRosterMember[]>]`: Retrieves the members of the plannerRoster.
@@ -197,7 +199,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerRoster>`: plannerRoster
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
             - `[Id <String>]`: Unique identifier for the identity.
           - `[Device <IMicrosoftGraphIdentity>]`: identity
           - `[User <IMicrosoftGraphIdentity>]`: identity
@@ -284,13 +286,13 @@ BODYPARAMETER `<IMicrosoftGraphPlannerRoster>`: plannerRoster
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
     - `[Title <String>]`: Required. Title of the plan.
 
-MEMBERS <IMicrosoftGraphPlannerRosterMember\[]>: Retrieves the members of the plannerRoster.
+MEMBERS <IMicrosoftGraphPlannerRosterMember[]>: Retrieves the members of the plannerRoster.
   - `[Id <String>]`: 
   - `[Roles <String[]>]`: Additional roles associated with the PlannerRosterMember, which determines permissions of the member in the plannerRoster. Currently there are no available roles to assign, and every member has full control over the contents of the plannerRoster.
   - `[TenantId <String>]`: Identifier of the tenant the user belongs to. Currently only the users from the same tenant can be added to a plannerRoster.
   - `[UserId <String>]`: Identifier of the user.
 
-PLANS <IMicrosoftGraphPlannerPlan1\[]>: Retrieves the plans contained by the plannerRoster.
+PLANS <IMicrosoftGraphPlannerPlan1[]>: Retrieves the plans contained by the plannerRoster.
   - `[Id <String>]`: 
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
     - `[Id <String>]`: 
@@ -321,7 +323,7 @@ PLANS <IMicrosoftGraphPlannerPlan1\[]>: Retrieves the plans contained by the pla
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
@@ -410,4 +412,3 @@ PLANS <IMicrosoftGraphPlannerPlan1\[]>: Retrieves the plans contained by the pla
 
 ## RELATED LINKS
 
-## RELATED LINKS

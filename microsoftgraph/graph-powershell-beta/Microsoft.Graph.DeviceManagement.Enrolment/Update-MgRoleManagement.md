@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagement
 schema: 2.0.0
@@ -14,15 +14,16 @@ Update roleManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgRoleManagement [-AdditionalProperties <Hashtable>] [-CloudPc <IMicrosoftGraphRbacApplicationMultiple>]
+Update-MgRoleManagement [-AdditionalProperties <Hashtable>]
+ [-CloudPc <IMicrosoftGraphRbacApplicationMultiple>]
  [-DeviceManagement <IMicrosoftGraphRbacApplicationMultiple>] [-Directory <IMicrosoftGraphRbacApplication>]
- [-EntitlementManagement <IMicrosoftGraphRbacApplication>] [-PassThru] [-WhatIf] [-Confirm]
+ [-EntitlementManagement <IMicrosoftGraphRbacApplication>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,7 +38,7 @@ Update roleManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -53,7 +54,7 @@ roleManagement
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleManagement1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement1
 Parameter Sets: Update
 Aliases:
 
@@ -69,7 +70,7 @@ rbacApplicationMultiple
 To construct, please use Get-Help -Online and see NOTES section for CLOUDPC properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplicationMultiple
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplicationMultiple
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -85,7 +86,7 @@ rbacApplicationMultiple
 To construct, please use Get-Help -Online and see NOTES section for DEVICEMANAGEMENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplicationMultiple
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplicationMultiple
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -101,7 +102,7 @@ rbacApplication
 To construct, please use Get-Help -Online and see NOTES section for DIRECTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplication
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -117,7 +118,7 @@ rbacApplication
 To construct, please use Get-Help -Online and see NOTES section for ENTITLEMENTMANAGEMENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplication
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -132,7 +133,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -147,7 +148,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +164,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -180,9 +181,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -192,7 +195,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRoleManagement1>`: roleManagement
+BODYPARAMETER <IMicrosoftGraphRoleManagement1>: roleManagement
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CloudPc <IMicrosoftGraphRbacApplicationMultiple>]`: rbacApplicationMultiple
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -260,7 +263,7 @@ BODYPARAMETER `<IMicrosoftGraphRoleManagement1>`: roleManagement
         - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
         - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
         - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
@@ -323,7 +326,7 @@ BODYPARAMETER `<IMicrosoftGraphRoleManagement1>`: roleManagement
         - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that a principal is eligible for.
         - `[Status <String>]`: The status of the role assignment or eligibility request.
         - `[Id <String>]`: 
-        - `[MemberType <String>]`: Membership type of the eligible assignment. It can either be Inherited, Direct, or Group.
+        - `[MemberType <String>]`: Membership type of the eligible assignment. It can either be Inherited, Direct, or Group. Supports $filter (eq).
         - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
@@ -409,26 +412,26 @@ BODYPARAMETER `<IMicrosoftGraphRoleManagement1>`: roleManagement
       - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
       - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
       - `[Id <String>]`: 
-      - `[Action <String>]`: Represents the type of the operation on the role eligibility assignment. The possible values are: AdminAssign: For administrators to assign role eligibility to users or groups to roles.AdminExtend: For administrators to extend expiring assignments.AdminUpdate: For administrators to change existing role assignments.AdminRenew: For administrators to renew expired assignments.AdminRemove: For administrators to remove users or groups from eligible roles.UserAdd: For users to activate their eligible assignments.UserExtend: For users to request to extend their expiring eligible assignments.UserRemove: For users to deactivate their active eligible assignments.UserRenew: For users to request to renew their expired eligible assignments.
+      - `[Action <String>]`: Represents the type of operation on the role eligibility request. The possible values are: AdminAssign: For administrators to assign eligible roles to principals.AdminRemove: For administrators to remove eligible roles from principals. AdminUpdate: For administrators to change existing role eligibilities.AdminExtend: For administrators to extend expiring role eligibilities.AdminRenew: For administrators to renew expired eligibilities.UserAdd: For users to activate their eligible assignments.UserRemove: For users to deactivate their active eligible assignments.UserExtend: For users to request to extend their expiring eligible assignments.UserRenew: For users to request to renew their expired eligible assignments.
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the role eligibility is scoped to an app. The scope of a role eligibility determines the set of resources for which the principal is eligible to access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units. Supports $filter (eq, ne, and on null values).
       - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
-      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
-      - `[IsValidationOnly <Boolean?>]`: A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
-      - `[Justification <String>]`: A message provided by users and administrators when create the request about why it is needed.
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the role eligibility. The scope of a role eligibility determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, ne, and on null values).
+      - `[IsValidationOnly <Boolean?>]`: Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
+      - `[Justification <String>]`: A message provided by users and administrators when create they create the unifiedRoleEligibilityScheduleRequest object.
       - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
-      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. For example, a user or a group. For groups, they must be assignable to roles, that is, the isAssignableToRole of the group property set to true.
+      - `[PrincipalId <String>]`: Identifier of the principal that has been granted the role eligibility. Supports $filter (eq, ne).
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.
+      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal. Supports $filter (eq, ne).
       - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
       - `[TargetSchedule <IMicrosoftGraphUnifiedRoleEligibilitySchedule1>]`: unifiedRoleEligibilitySchedule
-      - `[TargetScheduleId <String>]`: The time period for which the eligibility assignment is valid.
+      - `[TargetScheduleId <String>]`: Identifier of the schedule object that's linked to the eligibility request. Supports $filter (eq, ne).
       - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
     - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule1[]>]`: Schedules for role eligibility operations.
     - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: 
   - `[EntitlementManagement <IMicrosoftGraphRbacApplication>]`: rbacApplication
 
-CLOUDPC `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
+CLOUDPC <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -480,7 +483,7 @@ CLOUDPC `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
     - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
 
-DEVICEMANAGEMENT `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
+DEVICEMANAGEMENT <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -532,7 +535,7 @@ DEVICEMANAGEMENT `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMult
     - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
 
-DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
+DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -560,7 +563,7 @@ DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
       - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
       - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
@@ -644,7 +647,7 @@ DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
       - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that a principal is eligible for.
       - `[Status <String>]`: The status of the role assignment or eligibility request.
       - `[Id <String>]`: 
-      - `[MemberType <String>]`: Membership type of the eligible assignment. It can either be Inherited, Direct, or Group.
+      - `[MemberType <String>]`: Membership type of the eligible assignment. It can either be Inherited, Direct, or Group. Supports $filter (eq).
       - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
@@ -730,25 +733,25 @@ DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
     - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
     - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
     - `[Id <String>]`: 
-    - `[Action <String>]`: Represents the type of the operation on the role eligibility assignment. The possible values are: AdminAssign: For administrators to assign role eligibility to users or groups to roles.AdminExtend: For administrators to extend expiring assignments.AdminUpdate: For administrators to change existing role assignments.AdminRenew: For administrators to renew expired assignments.AdminRemove: For administrators to remove users or groups from eligible roles.UserAdd: For users to activate their eligible assignments.UserExtend: For users to request to extend their expiring eligible assignments.UserRemove: For users to deactivate their active eligible assignments.UserRenew: For users to request to renew their expired eligible assignments.
+    - `[Action <String>]`: Represents the type of operation on the role eligibility request. The possible values are: AdminAssign: For administrators to assign eligible roles to principals.AdminRemove: For administrators to remove eligible roles from principals. AdminUpdate: For administrators to change existing role eligibilities.AdminExtend: For administrators to extend expiring role eligibilities.AdminRenew: For administrators to renew expired eligibilities.UserAdd: For users to activate their eligible assignments.UserRemove: For users to deactivate their active eligible assignments.UserExtend: For users to request to extend their expiring eligible assignments.UserRenew: For users to request to renew their expired eligible assignments.
     - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the role eligibility is scoped to an app. The scope of a role eligibility determines the set of resources for which the principal is eligible to access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units. Supports $filter (eq, ne, and on null values).
     - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
-    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
-    - `[IsValidationOnly <Boolean?>]`: A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
-    - `[Justification <String>]`: A message provided by users and administrators when create the request about why it is needed.
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the role eligibility. The scope of a role eligibility determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, ne, and on null values).
+    - `[IsValidationOnly <Boolean?>]`: Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
+    - `[Justification <String>]`: A message provided by users and administrators when create they create the unifiedRoleEligibilityScheduleRequest object.
     - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
-    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. For example, a user or a group. For groups, they must be assignable to roles, that is, the isAssignableToRole of the group property set to true.
+    - `[PrincipalId <String>]`: Identifier of the principal that has been granted the role eligibility. Supports $filter (eq, ne).
     - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.
+    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal. Supports $filter (eq, ne).
     - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
     - `[TargetSchedule <IMicrosoftGraphUnifiedRoleEligibilitySchedule1>]`: unifiedRoleEligibilitySchedule
-    - `[TargetScheduleId <String>]`: The time period for which the eligibility assignment is valid.
+    - `[TargetScheduleId <String>]`: Identifier of the schedule object that's linked to the eligibility request. Supports $filter (eq, ne).
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule1[]>]`: Schedules for role eligibility operations.
   - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: 
 
-ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication>`: rbacApplication
+ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -776,7 +779,7 @@ ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication>`: rbacApplication
       - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
       - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
@@ -860,7 +863,7 @@ ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication>`: rbacApplication
       - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that a principal is eligible for.
       - `[Status <String>]`: The status of the role assignment or eligibility request.
       - `[Id <String>]`: 
-      - `[MemberType <String>]`: Membership type of the eligible assignment. It can either be Inherited, Direct, or Group.
+      - `[MemberType <String>]`: Membership type of the eligible assignment. It can either be Inherited, Direct, or Group. Supports $filter (eq).
       - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
@@ -946,24 +949,23 @@ ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication>`: rbacApplication
     - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
     - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
     - `[Id <String>]`: 
-    - `[Action <String>]`: Represents the type of the operation on the role eligibility assignment. The possible values are: AdminAssign: For administrators to assign role eligibility to users or groups to roles.AdminExtend: For administrators to extend expiring assignments.AdminUpdate: For administrators to change existing role assignments.AdminRenew: For administrators to renew expired assignments.AdminRemove: For administrators to remove users or groups from eligible roles.UserAdd: For users to activate their eligible assignments.UserExtend: For users to request to extend their expiring eligible assignments.UserRemove: For users to deactivate their active eligible assignments.UserRenew: For users to request to renew their expired eligible assignments.
+    - `[Action <String>]`: Represents the type of operation on the role eligibility request. The possible values are: AdminAssign: For administrators to assign eligible roles to principals.AdminRemove: For administrators to remove eligible roles from principals. AdminUpdate: For administrators to change existing role eligibilities.AdminExtend: For administrators to extend expiring role eligibilities.AdminRenew: For administrators to renew expired eligibilities.UserAdd: For users to activate their eligible assignments.UserRemove: For users to deactivate their active eligible assignments.UserExtend: For users to request to extend their expiring eligible assignments.UserRenew: For users to request to renew their expired eligible assignments.
     - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the role eligibility is scoped to an app. The scope of a role eligibility determines the set of resources for which the principal is eligible to access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units. Supports $filter (eq, ne, and on null values).
     - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
-    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
-    - `[IsValidationOnly <Boolean?>]`: A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
-    - `[Justification <String>]`: A message provided by users and administrators when create the request about why it is needed.
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the role eligibility. The scope of a role eligibility determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, ne, and on null values).
+    - `[IsValidationOnly <Boolean?>]`: Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
+    - `[Justification <String>]`: A message provided by users and administrators when create they create the unifiedRoleEligibilityScheduleRequest object.
     - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
-    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. For example, a user or a group. For groups, they must be assignable to roles, that is, the isAssignableToRole of the group property set to true.
+    - `[PrincipalId <String>]`: Identifier of the principal that has been granted the role eligibility. Supports $filter (eq, ne).
     - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.
+    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal. Supports $filter (eq, ne).
     - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
     - `[TargetSchedule <IMicrosoftGraphUnifiedRoleEligibilitySchedule1>]`: unifiedRoleEligibilitySchedule
-    - `[TargetScheduleId <String>]`: The time period for which the eligibility assignment is valid.
+    - `[TargetScheduleId <String>]`: Identifier of the schedule object that's linked to the eligibility request. Supports $filter (eq, ne).
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule1[]>]`: Schedules for role eligibility operations.
   - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: 
 
 ## RELATED LINKS
 
-## RELATED LINKS

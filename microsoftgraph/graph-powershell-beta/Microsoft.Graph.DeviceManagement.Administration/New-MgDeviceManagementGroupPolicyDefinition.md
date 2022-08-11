@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicydefinition
 schema: 2.0.0
@@ -22,13 +22,13 @@ New-MgDeviceManagementGroupPolicyDefinition [-AdditionalProperties <Hashtable>]
  [-MinUserCspVersion <String>] [-NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]
  [-PolicyType <GroupPolicyType>] [-Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]
  [-PreviousVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>] [-SupportedOn <String>]
- [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementGroupPolicyDefinition -BodyParameter <IMicrosoftGraphGroupPolicyDefinition> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementGroupPolicyDefinition -BodyParameter <IMicrosoftGraphGroupPolicyDefinition> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,7 +42,7 @@ Create new navigation property to groupPolicyDefinitions for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -58,7 +58,7 @@ The entity describes all of the information about a single group policy.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -74,7 +74,7 @@ The category entity stores the category of a group policy definition
 To construct, please use Get-Help -Online and see NOTES section for CATEGORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 The localized full category path for the policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Group Policy Definition Class Type.
 
 ```yaml
-Type: GroupPolicyDefinitionClassType
+Type: Microsoft.Graph.PowerShell.Support.GroupPolicyDefinitionClassType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -122,7 +122,7 @@ The group policy definition file also contains the languages supported as determ
 To construct, please use Get-Help -Online and see NOTES section for DEFINITIONFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinitionFile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionFile
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 The localized policy name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -153,7 +153,7 @@ The localized explanation or help text associated with the policy.
 The default value is empty.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 The category id of the parent category
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 Signifies whether or not there are related definitions to this definition
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 The date and time the entity was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 Minimum required CSP version for device configuration in this definition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 Minimum required CSP version for user configuration in this definition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -259,7 +259,7 @@ The entity describes all of the information about a single group policy.
 To construct, please use Get-Help -Online and see NOTES section for NEXTVERSIONDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 Type of Group Policy File or Definition.
 
 ```yaml
-Type: GroupPolicyType
+Type: Microsoft.Graph.PowerShell.Support.GroupPolicyType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -290,7 +290,7 @@ The group policy presentations associated with the definition.
 To construct, please use Get-Help -Online and see NOTES section for PRESENTATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyPresentation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -306,7 +306,7 @@ The entity describes all of the information about a single group policy.
 To construct, please use Get-Help -Online and see NOTES section for PREVIOUSVERSIONDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 Localized string used to specify what operating system or application version is affected by the policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 Setting definition version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -351,7 +351,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -367,7 +367,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -384,9 +384,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
+
 ## NOTES
 
 ALIASES
@@ -396,7 +398,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
+BODYPARAMETER <IMicrosoftGraphGroupPolicyDefinition>: The entity describes all of the information about a single group policy.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
@@ -442,7 +444,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
   - `[Version <String>]`: Setting definition version
 
-CATEGORY `<IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the category of a group policy definition
+CATEGORY <IMicrosoftGraphGroupPolicyCategory>: The category entity stores the category of a group policy definition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
@@ -487,7 +489,7 @@ CATEGORY `<IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the 
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
   - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
 
-DEFINITIONFILE `<IMicrosoftGraphGroupPolicyDefinitionFile>`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
+DEFINITIONFILE <IMicrosoftGraphGroupPolicyDefinitionFile>: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
@@ -532,7 +534,7 @@ DEFINITIONFILE `<IMicrosoftGraphGroupPolicyDefinitionFile>`: The entity represen
   - `[TargetNamespace <String>]`: Specifies the URI used to identify the namespace within the ADMX file.
   - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
 
-NEXTVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
+NEXTVERSIONDEFINITION <IMicrosoftGraphGroupPolicyDefinition>: The entity describes all of the information about a single group policy.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
@@ -578,7 +580,7 @@ NEXTVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity descr
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
   - `[Version <String>]`: Setting definition version
 
-PRESENTATIONS <IMicrosoftGraphGroupPolicyPresentation\[]>: The group policy presentations associated with the definition.
+PRESENTATIONS <IMicrosoftGraphGroupPolicyPresentation[]>: The group policy presentations associated with the definition.
   - `[Id <String>]`: 
   - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -624,7 +626,7 @@ PRESENTATIONS <IMicrosoftGraphGroupPolicyPresentation\[]>: The group policy pres
   - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
 
-PREVIOUSVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
+PREVIOUSVERSIONDEFINITION <IMicrosoftGraphGroupPolicyDefinition>: The entity describes all of the information about a single group policy.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
@@ -672,4 +674,3 @@ PREVIOUSVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity d
 
 ## RELATED LINKS
 
-## RELATED LINKS

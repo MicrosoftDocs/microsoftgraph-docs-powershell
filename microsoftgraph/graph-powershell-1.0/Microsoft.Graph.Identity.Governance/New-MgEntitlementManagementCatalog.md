@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalog
 schema: 2.0.0
@@ -17,12 +17,12 @@ Create new navigation property to catalogs for identityGovernance
 New-MgEntitlementManagementCatalog [-AccessPackages <IMicrosoftGraphAccessPackage1[]>]
  [-AdditionalProperties <Hashtable>] [-CatalogType <String>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible]
- [-ModifiedDateTime <DateTime>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEntitlementManagementCatalog -BodyParameter <IMicrosoftGraphAccessPackageCatalog1> [-WhatIf] [-Confirm]
+New-MgEntitlementManagementCatalog -BodyParameter <IMicrosoftGraphAccessPackageCatalog1> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackage1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ accessPackageCatalog
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
 Parameter Sets: Create
 Aliases:
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 accessPackageCatalogType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 The description of the access package catalog.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ The display name of the access package catalog.
 Supports $filter (eq, contains).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 Whether the access packages in this catalog can be requested by users outside of the tenant.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 accessPackageCatalogState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -228,7 +228,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -245,9 +245,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
+
 ## NOTES
 
 ALIASES
@@ -257,12 +259,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGES <IMicrosoftGraphAccessPackage1\[]>: The access packages in this catalog. Read-only. Nullable. Supports $expand.
+ACCESSPACKAGES <IMicrosoftGraphAccessPackage1[]>: The access packages in this catalog. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: 
   - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: 
     - `[Id <String>]`: 
     - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
     - `[AllowedTargetScope <String>]`: allowedTargetScope
+    - `[AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]`: accessPackageAutomaticRequestSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[GracePeriodBeforeAccessRemoval <TimeSpan?>]`: 
+      - `[RemoveAccessWhenTargetLeavesAllowedTargets <Boolean?>]`: 
+      - `[RequestAccessForAllowedTargets <Boolean?>]`: 
     - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
@@ -345,7 +352,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage1\[]>: The access packages in this c
   - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
+BODYPARAMETER <IMicrosoftGraphAccessPackageCatalog1>: accessPackageCatalog
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Read-only. Nullable. Supports $expand.
@@ -354,6 +361,11 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
       - `[Id <String>]`: 
       - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
       - `[AllowedTargetScope <String>]`: allowedTargetScope
+      - `[AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]`: accessPackageAutomaticRequestSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[GracePeriodBeforeAccessRemoval <TimeSpan?>]`: 
+        - `[RemoveAccessWhenTargetLeavesAllowedTargets <Boolean?>]`: 
+        - `[RequestAccessForAllowedTargets <Boolean?>]`: 
       - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Description <String>]`: The description of the policy.
@@ -435,4 +447,3 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
 
 ## RELATED LINKS
 
-## RELATED LINKS

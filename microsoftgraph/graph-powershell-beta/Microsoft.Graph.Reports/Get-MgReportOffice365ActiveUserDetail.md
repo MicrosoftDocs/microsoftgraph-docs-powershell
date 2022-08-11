@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportoffice365activeuserdetail
 schema: 2.0.0
@@ -22,12 +22,12 @@ Get-MgReportOffice365ActiveUserDetail -Date <DateTime> [<CommonParameters>]
 Get-MgReportOffice365ActiveUserDetail -Period <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity2
 ```
 Get-MgReportOffice365ActiveUserDetail -InputObject <IReportsIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity3
 ```
 Get-MgReportOffice365ActiveUserDetail -InputObject <IReportsIdentity> [<CommonParameters>]
 ```
@@ -43,7 +43,7 @@ Invoke function getOffice365ActiveUserDetail
 Usage: date={date}
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: Get2
 Aliases:
 
@@ -59,8 +59,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity3
 Aliases:
 
 Required: True
@@ -71,10 +71,10 @@ Accept wildcard characters: False
 ```
 
 ### -Period
-Usage: period={period}
+Usage: period='{period}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get3
 Aliases:
 
@@ -91,9 +91,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOffice365ActiveUserDetail
+
 ## NOTES
 
 ALIASES
@@ -103,31 +105,32 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: key: id of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: key: id of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}
   - `[DeviceManagementCachedReportConfigurationId <String>]`: key: id of deviceManagementCachedReportConfiguration
   - `[DeviceManagementExportJobId <String>]`: key: id of deviceManagementExportJob
   - `[DirectoryAuditId <String>]`: key: id of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[Filter <String>]`: Usage: filter={filter}
-  - `[GroupId <String>]`: Usage: groupId={groupId}
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles={includedUserRoles}
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes={includedUserTypes}
-  - `[Period <String>]`: Usage: period={period}
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[Filter <String>]`: Usage: filter='{filter}'
+  - `[GroupId <String>]`: Usage: groupId='{groupId}'
+  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
+  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
+  - `[Period <String>]`: Usage: period='{period}'
   - `[PrintUsageByPrinterId <String>]`: key: id of printUsageByPrinter
   - `[PrintUsageByUserId <String>]`: key: id of printUsageByUser
-  - `[PrinterId <String>]`: Usage: printerId={printerId}
+  - `[PrinterId <String>]`: Usage: printerId='{printerId}'
   - `[ProvisioningObjectSummaryId <String>]`: key: id of provisioningObjectSummary
   - `[RestrictedSignInId <String>]`: key: id of restrictedSignIn
   - `[SignInId <String>]`: key: id of signIn
   - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[SkipToken <String>]`: Usage: skipToken={skipToken}
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
   - `[Top <Int32?>]`: Usage: top={top}
   - `[UserCredentialUsageDetailsId <String>]`: key: id of userCredentialUsageDetails
-  - `[UserId <String>]`: Usage: userId={userId}
+  - `[UserId <String>]`: Usage: userId='{userId}'
   - `[UserRegistrationDetailsId <String>]`: key: id of userRegistrationDetails
 
 ## RELATED LINKS
+

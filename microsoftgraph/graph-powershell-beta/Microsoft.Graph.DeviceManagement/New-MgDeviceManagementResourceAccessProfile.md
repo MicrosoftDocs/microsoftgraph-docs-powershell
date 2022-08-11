@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementresourceaccessprofile
 schema: 2.0.0
@@ -17,14 +17,14 @@ Create new navigation property to resourceAccessProfiles for deviceManagement
 New-MgDeviceManagementResourceAccessProfile [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>]
  [-CreationDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-WhatIf] [-Confirm]
+ [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementResourceAccessProfile
- -BodyParameter <IMicrosoftGraphDeviceManagementResourceAccessProfileBase> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceManagementResourceAccessProfileBase> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Create new navigation property to resourceAccessProfiles for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +55,7 @@ The list of assignments for the device configuration profile.
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Base Profile Type for Resource Access
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementResourceAccessProfileBase
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileBase
 Parameter Sets: Create
 Aliases:
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 DateTime profile was created
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 Profile description
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 Profile display name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 DateTime profile was last modified
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 Scope Tags
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 Version of the profile
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +207,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -224,9 +224,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileBase
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileBase
+
 ## NOTES
 
 ALIASES
@@ -236,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment\[]>: The list of assignments for the device configuration profile.
+ASSIGNMENTS <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>: The list of assignments for the device configuration profile.
   - `[Id <String>]`: 
   - `[Intent <DeviceManagementResourceAccessProfileIntent?>]`: The administrator intent for the assignment of the profile.
   - `[SourceId <String>]`: The identifier of the source of the assignment.
@@ -245,7 +247,7 @@ ASSIGNMENTS <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment\[]>:
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementResourceAccessProfileBase>`: Base Profile Type for Resource Access
+BODYPARAMETER <IMicrosoftGraphDeviceManagementResourceAccessProfileBase>: Base Profile Type for Resource Access
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>]`: The list of assignments for the device configuration profile.
@@ -264,3 +266,4 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementResourceAccessProfileBase>`: Base
   - `[Version <Int32?>]`: Version of the profile
 
 ## RELATED LINKS
+

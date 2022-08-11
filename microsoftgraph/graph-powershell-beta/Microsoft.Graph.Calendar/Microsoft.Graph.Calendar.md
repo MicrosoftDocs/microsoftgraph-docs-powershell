@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: e784fed5-77b7-4104-bced-5148534467f6
+Module Guid: d2abfd0a-323e-4240-a0bc-d96d61254e0c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar
 Help Version: 1.0.0.0
 Locale: en-US
@@ -43,6 +43,11 @@ Read-only.
 Nullable.
 
 ### [Get-MgGroupEventCalendar](Get-MgGroupEventCalendar.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
+### [Get-MgGroupEventCalendarByRef](Get-MgGroupEventCalendarByRef.md)
 The calendar that contains the event.
 Navigation property.
 Read-only.
@@ -130,6 +135,11 @@ Read-only.
 Nullable.
 
 ### [Get-MgUserEventCalendar](Get-MgUserEventCalendar.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
+### [Get-MgUserEventCalendarByRef](Get-MgUserEventCalendarByRef.md)
 The calendar that contains the event.
 Navigation property.
 Read-only.
@@ -299,6 +309,11 @@ Navigation property.
 Read-only.
 Nullable.
 
+### [Remove-MgGroupEventCalendarByRef](Remove-MgGroupEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
 ### [Remove-MgGroupEventExceptionOccurrence](Remove-MgGroupEventExceptionOccurrence.md)
 Delete navigation property exceptionOccurrences for groups
 
@@ -361,6 +376,11 @@ Navigation property.
 Read-only.
 Nullable.
 
+### [Remove-MgUserEventCalendarByRef](Remove-MgUserEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
 ### [Remove-MgUserEventExceptionOccurrence](Remove-MgUserEventExceptionOccurrence.md)
 Delete navigation property exceptionOccurrences for users
 
@@ -384,6 +404,16 @@ Nullable.
 The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
+
+### [Set-MgGroupEventCalendarByRef](Set-MgGroupEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
+### [Set-MgUserEventCalendarByRef](Set-MgUserEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Update-MgGroupCalendarMultiValueExtendedProperty](Update-MgGroupCalendarMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the calendar.
