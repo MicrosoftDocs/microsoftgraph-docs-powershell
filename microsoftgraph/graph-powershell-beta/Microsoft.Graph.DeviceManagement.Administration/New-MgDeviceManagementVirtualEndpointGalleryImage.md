@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointgalleryimage
 schema: 2.0.0
@@ -17,14 +17,14 @@ Create new navigation property to galleryImages for deviceManagement
 New-MgDeviceManagementVirtualEndpointGalleryImage [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-EndDate <DateTime>] [-ExpirationDate <DateTime>] [-Id <String>] [-Offer <String>]
  [-OfferDisplayName <String>] [-Publisher <String>] [-RecommendedSku <String>] [-SizeInGb <Int32>]
- [-Sku <String>] [-SkuDisplayName <String>] [-StartDate <DateTime>] [-Status <String>] [-Confirm] [-WhatIf]
+ [-Sku <String>] [-SkuDisplayName <String>] [-StartDate <DateTime>] [-Status <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementVirtualEndpointGalleryImage -BodyParameter <IMicrosoftGraphCloudPcGalleryImage>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgDeviceManagementVirtualEndpointGalleryImage -BodyParameter <IMicrosoftGraphCloudPcGalleryImage> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,7 +38,7 @@ Create new navigation property to galleryImages for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +54,7 @@ cloudPcGalleryImage
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcGalleryImage
+Type: IMicrosoftGraphCloudPcGalleryImage
 Parameter Sets: Create
 Aliases:
 
@@ -70,7 +70,7 @@ The official display name of the gallery image.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +87,7 @@ The Cloud PC will continue to provide short-term support.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ The date when the image is no longer available.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ This value will be passed to Azure to get the image resource.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +152,7 @@ For example, Windows 10 Enterprise + OS Optimizations.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +169,7 @@ This value will be passed to Azure to get the image resource.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -185,7 +185,7 @@ Recommended Cloud PC SKU for this gallery image.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -201,7 +201,7 @@ The size of this image in gigabytes.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +218,7 @@ This value will be passed to Azure to get the image resource.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -235,7 +235,7 @@ For example, 2004.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +251,7 @@ The date when the image becomes available.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 cloudPcGalleryImageStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -297,7 +297,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -314,11 +314,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcGalleryImage
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcGalleryImage
-
 ## NOTES
 
 ALIASES
@@ -345,4 +343,3 @@ BODYPARAMETER <IMicrosoftGraphCloudPcGalleryImage>: cloudPcGalleryImage
   - `[Status <String>]`: cloudPcGalleryImageStatus
 
 ## RELATED LINKS
-
