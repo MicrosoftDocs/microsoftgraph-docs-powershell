@@ -73,10 +73,17 @@ function Update-Files{
         [ValidateNotNullOrEmpty()]
         [string] $ModuleName = "Users"
     )
+	try{
     foreach($filePath in Get-ChildItem $ModuleDocsPath){
       Add-Back-Ticks -FilePath $filePath -GraphProfile $GraphProfile -ModuleName $ModuleName
       #Start-Sleep -Seconds 5
     }
+	}catch{
+	Write-Host "`nError Message: " $_.Exception.Message
+	Write-Host "`nError in Line: " $_.InvocationInfo.Line
+	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+	Write-Host "`nError Item Name: "$_.Exception.ItemName
+	}
 }
 function Add-Back-Ticks{
     param (
@@ -94,12 +101,16 @@ function Add-Back-Ticks{
 
     $findEnd='>'
     $replaceEnd = '>`'
+	try{
     $text = Get-Content -Path $FilePath
     foreach($content in $text){
        if($content -match "(.*?)>+:"){
          if($content -match "[[+*?]"){
+			  if($content -match "\[]>+:"){
+			  }else{
             $content = $content -replace '[[+*?]','\$&'
-         }
+			  }
+        } 
             $splitted = $content.Split(" ")
 			$org = $splitted[1]
 			$furtherSplitted = $splitted.Split(":")
@@ -117,6 +128,13 @@ function Add-Back-Ticks{
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
     Refine_File -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+	}catch{
+	Write-Host "`nError Message: " $_.Exception.Message
+	Write-Host "`nError in Line: " $_.InvocationInfo.Line
+	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+	Write-Host "`nError Item Name: "$_.Exception.ItemName
+
+	}
 }
 function Refine_File{
     param (
@@ -130,6 +148,7 @@ function Refine_File{
     $tempFilePath = "$env:TEMP\$($FilePath | Split-Path -Leaf)"
 
     $replace = ""
+	try{
     $text = Get-Content -Path $FilePath
     foreach($content in $text){
        if($content -match "\]>``+:"){
@@ -140,6 +159,12 @@ function Refine_File{
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
     Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+	}catch{
+	Write-Host "`nError Message: " $_.Exception.Message
+	Write-Host "`nError in Line: " $_.InvocationInfo.Line
+	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+	Write-Host "`nError Item Name: "$_.Exception.ItemName
+	}
 }
 
 function Special-Escape{
@@ -159,19 +184,29 @@ function Special-Escape{
     $s.Add("3", "<at id='{index}'>") 
     $s.Add("4", "<application-client-id>")
     $s.Add("5", "<data-id>") 
+	try{
     $s.Values | ForEach-Object {  
     $string = $_
 	$a = $string.Replace('<','`<').Replace('>','>`')
 		  $escaped = Check-If-Already-Escaped -Val $string
         if($escaped -eq $false){
-		   Write-Host "Escaping " + $string
 		   (Get-Content -Path $filePath) -replace $string, $a | Add-Content -Path $tempFilePath
 			Remove-Item -Path $filePath
 			Move-Item -Path $tempFilePath -Destination $filePath
 	   }
 	 }
+	$location = Get-Location
+	cd microsoftgraph-docs-powershell
+	$location = Get-Location
     git add $FilePath
-    git commit -m "Docs cleanup for $ModuleName-$GraphProfile"  
+    git commit -m "Docs cleanup for $ModuleName-$GraphProfile" 
+	cd ..	
+	}catch{
+	Write-Host "`nError Message: " $_.Exception.Message
+	Write-Host "`nError in Line: " $_.InvocationInfo.Line
+	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+	Write-Host "`nError Item Name: "$_.Exception.ItemName
+	}
 }
 function Check-If-Already-Escaped{
 param (
@@ -179,6 +214,7 @@ param (
         [string] $Val
 )
 $text = Get-Content -Path $filePath
+try{
  foreach($_ in $text){
   if($_ -match $Val)
   {
@@ -189,8 +225,16 @@ $text = Get-Content -Path $filePath
 		  }			 
 	  }
   }
- }	 
+ }
+}catch{
+	Write-Host "`nError Message: " $_.Exception.Message
+	Write-Host "`nError in Line: " $_.InvocationInfo.Line
+	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+	Write-Host "`nError Item Name: "$_.Exception.ItemName
+}	
 return $false	
 }
+
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
+cd microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------Done-------------"
