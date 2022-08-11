@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgreactivatedirectoryrecommendation
 schema: 2.0.0
@@ -14,14 +14,13 @@ Invoke action reactivate
 
 ### Reactivate (Default)
 ```
-Invoke-MgReactivateDirectoryRecommendation -RecommendationId <String> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Invoke-MgReactivateDirectoryRecommendation -RecommendationId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReactivateViaIdentity
 ```
-Invoke-MgReactivateDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Invoke-MgReactivateDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +35,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Type: IIdentityDirectoryManagementIdentity
 Parameter Sets: ReactivateViaIdentity
 Aliases:
 
@@ -51,7 +50,7 @@ Accept wildcard characters: False
 key: id of recommendation
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Reactivate
 Aliases:
 
@@ -66,7 +65,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -82,7 +81,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -99,11 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendation
-
 ## NOTES
 
 ALIASES
@@ -149,4 +146,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
