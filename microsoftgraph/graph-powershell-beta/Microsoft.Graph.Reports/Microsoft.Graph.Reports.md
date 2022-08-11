@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Reports
 Module Guid: a4eeed35-f73d-40a0-a306-2cfe919cf700
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
@@ -41,8 +41,11 @@ Get cachedReportConfigurations from deviceManagement
 ### [Get-MgDeviceManagementReportExportJob](Get-MgDeviceManagementReportExportJob.md)
 Get exportJobs from deviceManagement
 
-### [Get-MgReportApplicationSignInDetailedSummary](Get-MgReportApplicationSignInDetailedSummary.md)
-Get applicationSignInDetailedSummary from reports
+### [Get-MgReportApplicationSign](Get-MgReportApplicationSign.md)
+Represents a detailed summary of an application sign-in.
+
+### [Get-MgReportApplicationSign](Get-MgReportApplicationSign.md)
+Represents a detailed summary of an application sign-in.
 
 ### [Get-MgReportAttackSimulationRepeatOffender](Get-MgReportAttackSimulationRepeatOffender.md)
 Invoke function getAttackSimulationRepeatOffenders
@@ -59,7 +62,10 @@ Get authenticationMethods from reports
 ### [Get-MgReportAuthenticationMethodUserRegistrationDetail](Get-MgReportAuthenticationMethodUserRegistrationDetail.md)
 Get userRegistrationDetails from reports
 
-### [Get-MgReportAzureAdApplicationSignInSummary](Get-MgReportAzureAdApplicationSignInSummary.md)
+### [Get-MgReportAzureAdApplicationSign](Get-MgReportAzureAdApplicationSign.md)
+Invoke function getAzureADApplicationSignInSummary
+
+### [Get-MgReportAzureAdApplicationSign](Get-MgReportAzureAdApplicationSign.md)
 Invoke function getAzureADApplicationSignInSummary
 
 ### [Get-MgReportAzureAdFeatureUsage](Get-MgReportAzureAdFeatureUsage.md)
