@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementcompliancepolicysetting
 schema: 2.0.0
@@ -17,22 +17,15 @@ Update the navigation property settings in deviceManagement
 Update-MgDeviceManagementCompliancePolicySetting -DeviceManagementCompliancePolicyId <String>
  -DeviceManagementConfigurationSettingId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
- [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementCompliancePolicySetting -DeviceManagementCompliancePolicyId <String>
  -DeviceManagementConfigurationSettingId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementCompliancePolicySetting -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,8 +34,15 @@ Update-MgDeviceManagementCompliancePolicySetting -InputObject <IDeviceManagement
 Update-MgDeviceManagementCompliancePolicySetting -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
- [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementCompliancePolicySetting -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,7 +56,7 @@ Update the navigation property settings in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ Setting instance within policy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
+Type: IMicrosoftGraphDeviceManagementConfigurationSetting
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -87,8 +87,8 @@ Accept wildcard characters: False
 key: id of deviceManagementCompliancePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 key: id of deviceManagementConfigurationSetting
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,8 +133,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -165,7 +165,7 @@ This property is read-only.
 To construct, please use Get-Help -Online and see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]
+Type: IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,7 +181,7 @@ Setting instance within policy
 To construct, please use Get-Help -Online and see NOTES section for SETTINGINSTANCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingInstance
+Type: IMicrosoftGraphDeviceManagementConfigurationSettingInstance
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -212,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -229,13 +229,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -450,3 +447,4 @@ SETTINGINSTANCE <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>: S
 
 ## RELATED LINKS
 
+## RELATED LINKS

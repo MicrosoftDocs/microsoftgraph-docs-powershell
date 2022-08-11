@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcompliancepolicysetting
 schema: 2.0.0
@@ -17,22 +17,14 @@ Create new navigation property to settings for deviceManagement
 New-MgDeviceManagementCompliancePolicySetting -DeviceManagementCompliancePolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
- [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-Confirm] [-WhatIf]
+ [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementCompliancePolicySetting -DeviceManagementCompliancePolicyId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementCompliancePolicySetting -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,8 +32,14 @@ New-MgDeviceManagementCompliancePolicySetting -InputObject <IDeviceManagementIde
 New-MgDeviceManagementCompliancePolicySetting -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
- [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-Confirm] [-WhatIf]
+ [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementCompliancePolicySetting -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +53,7 @@ Create new navigation property to settings for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +69,7 @@ Setting instance within policy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
+Type: IMicrosoftGraphDeviceManagementConfigurationSetting
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -86,8 +84,8 @@ Accept wildcard characters: False
 key: id of deviceManagementCompliancePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -101,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -117,8 +115,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -134,7 +132,7 @@ This property is read-only.
 To construct, please use Get-Help -Online and see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]
+Type: IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +148,7 @@ Setting instance within policy
 To construct, please use Get-Help -Online and see NOTES section for SETTINGINSTANCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingInstance
+Type: IMicrosoftGraphDeviceManagementConfigurationSettingInstance
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +163,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -181,7 +179,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -198,13 +196,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
-
 ## NOTES
 
 ALIASES
@@ -419,3 +414,4 @@ SETTINGINSTANCE <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>: S
 
 ## RELATED LINKS
 
+## RELATED LINKS

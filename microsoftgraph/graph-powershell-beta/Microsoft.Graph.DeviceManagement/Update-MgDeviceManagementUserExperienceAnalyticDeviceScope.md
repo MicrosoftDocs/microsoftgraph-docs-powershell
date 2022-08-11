@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticdevicescope
 schema: 2.0.0
@@ -18,21 +18,7 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceScope [-AdditionalPropertie
  [-CreatedDateTime <DateTime>] [-DeviceScopeName <String>] [-Enabled] [-Id <String>] [-IsBuiltIn]
  [-LastModifiedDateTime <DateTime>] [-Operator <DeviceScopeOperator>] [-OwnerId <String>]
  [-Parameter <DeviceScopeParameter>] [-Status <DeviceScopeStatus>] [-Value <String>] [-ValueObjectId <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceScope
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScope> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceScope -UserExperienceAnalyticsDeviceScopeId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScope> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -41,13 +27,13 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceScope -UserExperienceAnalyt
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DeviceScopeName <String>] [-Enabled]
  [-Id <String>] [-IsBuiltIn] [-LastModifiedDateTime <DateTime>] [-Operator <DeviceScopeOperator>]
  [-OwnerId <String>] [-Parameter <DeviceScopeParameter>] [-Status <DeviceScopeStatus>] [-Value <String>]
- [-ValueObjectId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ValueObjectId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### Update1
 ```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceScope -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScope> [-PassThru] [-Confirm] [-WhatIf]
+Update-MgDeviceManagementUserExperienceAnalyticDeviceScope -UserExperienceAnalyticsDeviceScopeId <String>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScope> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -57,7 +43,21 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceScope -InputObject <IDevice
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DeviceScopeName <String>] [-Enabled]
  [-Id <String>] [-IsBuiltIn] [-LastModifiedDateTime <DateTime>] [-Operator <DeviceScopeOperator>]
  [-OwnerId <String>] [-Parameter <DeviceScopeParameter>] [-Status <DeviceScopeStatus>] [-Value <String>]
- [-ValueObjectId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ValueObjectId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementUserExperienceAnalyticDeviceScope -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScope> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgDeviceManagementUserExperienceAnalyticDeviceScope
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScope> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -71,7 +71,7 @@ Update the navigation property userExperienceAnalyticsDeviceScope in deviceManag
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,8 +87,8 @@ The user experience analytics device scope entity contains device scope configur
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScope
-Parameter Sets: Update, Update1, UpdateViaIdentity
+Type: IMicrosoftGraphUserExperienceAnalyticsDeviceScope
+Parameter Sets: Update1, UpdateViaIdentity, Update
 Aliases:
 
 Required: True
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 Indicates the creation date and time for the custom device scope.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 The name of the user experience analytics device Scope configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ When FALSE, the device scope is disabled.
 Default value is FALSE.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,8 +166,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -184,7 +184,7 @@ When FALSE, the device scope configuration is custom.
 Default value is FALSE.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 Indicates the last updated date and time for the custom device scope.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,7 +216,7 @@ Possible values are: equals, notEquals, contains, notContains, greaterThan, less
 Default value: equals.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.DeviceScopeOperator
+Type: DeviceScopeOperator
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 The unique identifier of the person (admin) who created the device scope configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -249,7 +249,7 @@ Eg: device scope parameter can be OS version, Disk Type, Device manufacturer, de
 Default value: scopeTag.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.DeviceScopeParameter
+Type: DeviceScopeParameter
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -281,7 +281,7 @@ Possible values are: none, computing, insufficientData or completed.
 Default value is none.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.DeviceScopeStatus
+Type: DeviceScopeStatus
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -296,8 +296,8 @@ Accept wildcard characters: False
 key: id of userExperienceAnalyticsDeviceScope
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 The device scope configuration query clause value.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 The unique identifier for a user device scope tag Id used for the creation of device scope configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -357,7 +357,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -374,13 +374,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScope
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -534,3 +531,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS
