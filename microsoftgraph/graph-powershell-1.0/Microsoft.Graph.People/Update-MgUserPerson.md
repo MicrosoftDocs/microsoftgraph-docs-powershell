@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserperson
@@ -506,7 +506,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPerson1>: person
+BODYPARAMETER `<IMicrosoftGraphPerson1>`: person
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Birthday <String>]`: The person's birthday.
@@ -563,7 +563,7 @@ BODYPARAMETER <IMicrosoftGraphPerson1>: person
     - `[Type <String>]`: websiteType
   - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -590,18 +590,18 @@ INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-PERSONTYPE <IMicrosoftGraphPersonType>: personType
+PERSONTYPE `<IMicrosoftGraphPersonType>`: personType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Class <String>]`: The type of data source, such as Person.
   - `[Subclass <String>]`: The secondary type of data source, such as OrganizationUser.
 
-PHONES <IMicrosoftGraphPhone[]>: The person's phone numbers.
+PHONES <IMicrosoftGraphPhone\[]>: The person's phone numbers.
   - `[Language <String>]`: 
   - `[Number <String>]`: The phone number.
   - `[Region <String>]`: 
   - `[Type <String>]`: phoneType
 
-POSTALADDRESSES <IMicrosoftGraphLocation[]>: The person's addresses.
+POSTALADDRESSES <IMicrosoftGraphLocation\[]>: The person's addresses.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -623,13 +623,13 @@ POSTALADDRESSES <IMicrosoftGraphLocation[]>: The person's addresses.
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-SCOREDEMAILADDRESSES <IMicrosoftGraphScoredEmailAddress[]>: The person's email addresses.
+SCOREDEMAILADDRESSES <IMicrosoftGraphScoredEmailAddress\[]>: The person's email addresses.
   - `[Address <String>]`: The email address.
   - `[ItemId <String>]`: 
   - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
   - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
 
-WEBSITES <IMicrosoftGraphWebsite[]>: The person's websites.
+WEBSITES <IMicrosoftGraphWebsite\[]>: The person's websites.
   - `[Address <String>]`: The URL of the website.
   - `[DisplayName <String>]`: The display name of the web site.
   - `[Type <String>]`: websiteType
