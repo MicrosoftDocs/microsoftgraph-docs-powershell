@@ -113,10 +113,16 @@ function Add-Back-Ticks{
         } 
             $splitted = $content.Split(" ")
 			$org = $splitted[1]
+            if($org -match "\[]>"){
+				$org = $org -replace '[[+*?]','\$&'
+			}
 			$furtherSplitted = $splitted.Split(":")
 			if($furtherSplitted[1] -contains '`'){
 			}else{
 				if($furtherSplitted[1].endswith('>')){
+                    if($furtherSplitted[1] -match "\[]>"){
+						$furtherSplitted[1] = $furtherSplitted[1] -replace '[[+*?]','\$&'	
+					}
 				$concat = '`'+$furtherSplitted[1]+'`'
 				$replace = $org -replace $furtherSplitted[1],$concat
 				$text = $text -replace $org,$replace
