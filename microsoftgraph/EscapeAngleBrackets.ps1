@@ -221,17 +221,16 @@ param (
 )
 $text = Get-Content -Path $filePath
 try{
- foreach($_ in $text){
-  if($_ -match $Val)
-  {
-	  $split = $_.split(" ")
-	  foreach($item in $split){
-		  if($item -match '(.*?)>+`'){
-			   return $true
-		  }			 
-	  }
-  }
- }
+
+		  $replacer = $Val.Replace('<','`<').Replace('>','>`')
+		  
+		  $t = $text | Select-String $replacer
+		
+		if(-not $t){
+			return $Val
+		}
+ 	 
+return "NA"	
 }catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
