@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoregroupsettermchild
 schema: 2.0.0
@@ -15,27 +15,27 @@ Delete navigation property children for groups
 ### Delete1 (Default)
 ```
 Remove-MgGroupSiteTermStoreGroupSetTermChild -GroupId <String> -GroupId1 <String> -SetId <String>
- -SiteId <String> -TermId <String> -TermId1 <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ -SiteId <String> -TermId <String> -TermId1 <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Delete2
 ```
 Remove-MgGroupSiteTermStoreGroupSetTermChild -GroupId <String> -GroupId1 <String> -SetId <String>
- -SiteId <String> -StoreId <String> -TermId <String> -TermId1 <String> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgGroupSiteTermStoreGroupSetTermChild -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -SiteId <String> -TermId <String> -TermId1 <String> -StoreId <String> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity2
 ```
 Remove-MgGroupSiteTermStoreGroupSetTermChild -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgGroupSiteTermStoreGroupSetTermChild -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Delete navigation property children for groups
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete1, Delete2
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete1, Delete2
 Aliases:
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -95,8 +95,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity2
+Type: ISitesIdentity
+Parameter Sets: DeleteViaIdentity2, DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 key: id of set
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete1, Delete2
 Aliases:
 
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete1, Delete2
 Aliases:
 
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 key: id of store
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete2
 Aliases:
 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 key: id of term
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete1, Delete2
 Aliases:
 
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 key: id of term
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete1, Delete2
 Aliases:
 
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -216,7 +216,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -233,11 +233,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -285,4 +283,3 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
