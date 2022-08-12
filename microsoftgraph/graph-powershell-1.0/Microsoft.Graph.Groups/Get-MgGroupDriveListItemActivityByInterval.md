@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupdrivelistitemactivitybyinterval
 schema: 2.0.0
@@ -20,16 +20,16 @@ Get-MgGroupDriveListItemActivityByInterval -DriveId <String> -GroupId <String> -
 
 ### Get2
 ```
-Get-MgGroupDriveListItemActivityByInterval -DriveId <String> -EndDateTime <String> -GroupId <String>
- -Interval <String> -ListItemId <String> -StartDateTime <String> [<CommonParameters>]
+Get-MgGroupDriveListItemActivityByInterval -DriveId <String> -GroupId <String> -ListItemId <String>
+ -EndDateTime <String> -Interval <String> -StartDateTime <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity2
 ```
 Get-MgGroupDriveListItemActivityByInterval -InputObject <IGroupsIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgGroupDriveListItemActivityByInterval -InputObject <IGroupsIdentity> [<CommonParameters>]
 ```
@@ -45,7 +45,7 @@ Invoke function getActivitiesByInterval
 key: id of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1, Get2
 Aliases:
 
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 Usage: endDateTime='{endDateTime}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get2
 Aliases:
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1, Get2
 Aliases:
 
@@ -91,8 +91,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity2
+Type: IGroupsIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 Usage: interval='{interval}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get2
 Aliases:
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1, Get2
 Aliases:
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 Usage: startDateTime='{startDateTime}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get2
 Aliases:
 
@@ -153,11 +153,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat1
-
 ## NOTES
 
 ALIASES
@@ -211,4 +209,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

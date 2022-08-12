@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupdriverootdelta
 schema: 2.0.0
@@ -22,12 +22,12 @@ Get-MgGroupDriveRootDelta -DriveId <String> -GroupId <String> [<CommonParameters
 Get-MgGroupDriveRootDelta -DriveId <String> -GroupId <String> -Token <String> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity2
+### DeltaViaIdentity3
 ```
 Get-MgGroupDriveRootDelta -InputObject <IGroupsIdentity> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity3
+### DeltaViaIdentity2
 ```
 Get-MgGroupDriveRootDelta -InputObject <IGroupsIdentity> [<CommonParameters>]
 ```
@@ -43,7 +43,7 @@ Invoke function delta
 key: id of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta2, Delta3
 Aliases:
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta2, Delta3
 Aliases:
 
@@ -74,8 +74,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: DeltaViaIdentity2, DeltaViaIdentity3
+Type: IGroupsIdentity
+Parameter Sets: DeltaViaIdentity3, DeltaViaIdentity2
 Aliases:
 
 Required: True
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 Usage: token='{token}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta3
 Aliases:
 
@@ -106,11 +106,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
-
 ## NOTES
 
 ALIASES
@@ -164,4 +162,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
