@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritytriggerretentionevent
@@ -383,7 +383,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSecurityRetentionEvent>: retentionEvent
+BODYPARAMETER `<IMicrosoftGraphSecurityRetentionEvent>`: retentionEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -437,7 +437,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityRetentionEvent>: retentionEvent
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -446,17 +446,17 @@ CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-EVENTPROPAGATIONRESULTS <IMicrosoftGraphSecurityEventPropagationResult[]>: .
+EVENTPROPAGATIONRESULTS <IMicrosoftGraphSecurityEventPropagationResult\[]>: .
   - `[Location <String>]`: The name of the specific location in the workload associated with the event.
   - `[ServiceName <String>]`: The name of the workload associated with the event.
   - `[Status <String>]`: eventPropagationStatus
   - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
 
-EVENTQUERIES <IMicrosoftGraphSecurityEventQuery[]>: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
+EVENTQUERIES <IMicrosoftGraphSecurityEventQuery\[]>: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
   - `[Query <String>]`: 
   - `[QueryType <String>]`: queryType
 
-EVENTSTATUS <IMicrosoftGraphSecurityRetentionEventStatus>: retentionEventStatus
+EVENTSTATUS `<IMicrosoftGraphSecurityRetentionEventStatus>`: retentionEventStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -475,7 +475,7 @@ EVENTSTATUS <IMicrosoftGraphSecurityRetentionEventStatus>: retentionEventStatus
     - `[Target <String>]`: The target of the error.
   - `[Status <String>]`: eventStatusType
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -519,7 +519,7 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -528,7 +528,7 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RETENTIONEVENTTYPE <IMicrosoftGraphSecurityRetentionEventType>: retentionEventType
+RETENTIONEVENTTYPE `<IMicrosoftGraphSecurityRetentionEventType>`: retentionEventType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
