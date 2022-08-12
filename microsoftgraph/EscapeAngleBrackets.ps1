@@ -194,9 +194,9 @@ function Special-Escape{
 	try{
     $s.Values | ForEach-Object {  
     $string = $_
-	$a = $string.Replace('<','`<').Replace('>','>`')
 		  $escaped = Check-If-Already-Escaped -Val $string
-        if($escaped -eq $false){
+        if($escaped -ne "NA"){
+            $a = $escaped.Replace('<','`<').Replace('>','>`')
 		   (Get-Content -Path $filePath) -replace $string, $a | Add-Content -Path $tempFilePath
 			Remove-Item -Path $filePath
 			Move-Item -Path $tempFilePath -Destination $filePath
@@ -231,14 +231,14 @@ try{
 			return $Val
 		}
  	 
-return "NA"	
+
 }catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
 	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
 	Write-Host "`nError Item Name: "$_.Exception.ItemName
 }	
-return $false	
+return "NA"	
 }
 
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
