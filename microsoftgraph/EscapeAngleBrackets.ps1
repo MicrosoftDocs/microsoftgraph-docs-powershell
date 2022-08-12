@@ -195,12 +195,12 @@ function Special-Escape{
 			Move-Item -Path $tempFilePath -Destination $filePath
 	   }
 	 }
-	$location = Get-Location
-	cd microsoftgraph-docs-powershell
+	#$location = Get-Location
+	#cd microsoftgraph-docs-powershell
 	$location = Get-Location
     git add $FilePath
     git commit -m "Docs cleanup for $ModuleName-$GraphProfile" 
-	cd ..	
+	#cd ..	
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
@@ -236,5 +236,5 @@ return $false
 }
 
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
-cd microsoftgraph-docs-powershell
+#cd microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------Done-------------"
