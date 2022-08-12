@@ -100,7 +100,7 @@ The -Debug parameter provides a powerful way to examine a script while it's runn
     1. Status code - this part provides the error code returned.
         1. When it shows `OK`, it means that the command run successfully.
         1. When it shows `Bad request`, take the URI and call it via `Invoke-MgGraphRequest` to determine if it's a service or a client issue.
-    1. Headers - The most important headers are the `request-id` and `date`. These headers [helps the support team](/graph/best-practices-concept#reliability-and-support) to determine the cause of the failure. Use this ID and timestamp as you log any issues for the support team to troubleshoot.
+    1. Headers - The most important headers are the `request-id` and `date`. These headers [help the support team](/graph/best-practices-concept#reliability-and-support) to determine the cause of the failure. Use this ID and timestamp as you log any issues for the support team to troubleshoot.
     1. Body - shows what the service returns. The most important part of the body is the `@odata.nextLink`, which provides a link to fetch the next page when the result is in multiple pages. If the request fails, the body will contain the error code and the error message.
 
 To enable debug logging on a per command basis, specify the Debug parameter.
