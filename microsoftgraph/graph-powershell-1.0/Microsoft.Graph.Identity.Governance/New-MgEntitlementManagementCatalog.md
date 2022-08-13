@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalog
@@ -434,5 +434,8 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
   - `[State <String>]`: accessPackageCatalogState
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

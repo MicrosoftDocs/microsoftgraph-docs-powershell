@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy
@@ -16,6 +16,7 @@ Create new navigation property to assignmentPolicies for identityGovernance
 ```
 New-MgEntitlementManagementAssignmentPolicy [-AccessPackage <IMicrosoftGraphAccessPackage1>]
  [-AdditionalProperties <Hashtable>] [-AllowedTargetScope <String>]
+ [-AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]
  [-Catalog <IMicrosoftGraphAccessPackageCatalog1>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Expiration <IMicrosoftGraphExpirationPattern>] [-Id <String>]
  [-ModifiedDateTime <DateTime>]
@@ -74,6 +75,22 @@ allowedTargetScope
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AutomaticRequestSettings
+accessPackageAutomaticRequestSettings
+To construct, please use Get-Help -Online and see NOTES section for AUTOMATICREQUESTSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageAutomaticRequestSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -657,5 +674,8 @@ REVIEWSETTINGS `<IMicrosoftGraphAccessPackageAssignmentReviewSettings>`: accessP
     - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

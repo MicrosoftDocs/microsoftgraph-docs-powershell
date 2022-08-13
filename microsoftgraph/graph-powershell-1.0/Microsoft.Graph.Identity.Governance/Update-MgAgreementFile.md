@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgagreementfile
@@ -442,5 +442,8 @@ LOCALIZATIONS <IMicrosoftGraphAgreementFileLocalization\[]>: The localized versi
     - `[Id <String>]`: 
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
