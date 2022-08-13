@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermobileapptroubleshootingevent
@@ -515,5 +515,8 @@ TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErro
     - `[Text <String>]`: Not yet documented
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevice
@@ -18,7 +18,8 @@ Update-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-AadRegis
  [-ActivationLockBypassCode <String>] [-AdditionalProperties <Hashtable>] [-AndroidSecurityPatchLevel <String>]
  [-AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]
  [-AutopilotEnrolled] [-AzureActiveDirectoryDeviceId <String>] [-AzureAdDeviceId <String>] [-AzureAdRegistered]
- [-ChassisType <ChassisType>] [-ChromeOSDeviceInfo <IMicrosoftGraphChromeOSDeviceProperty[]>]
+ [-BootstrapTokenEscrowed] [-ChassisType <ChassisType>]
+ [-ChromeOSDeviceInfo <IMicrosoftGraphChromeOSDeviceProperty[]>]
  [-CloudPcRemoteActionResults <IMicrosoftGraphCloudPcRemoteActionResult[]>]
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-ComplianceState <ComplianceState>]
  [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]
@@ -28,7 +29,7 @@ Update-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-AadRegis
  [-DeviceCategory <IMicrosoftGraphDeviceCategory>] [-DeviceCategoryDisplayName <String>]
  [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]
  [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]
- [-DeviceEnrollmentType <DeviceEnrollmentType>]
+ [-DeviceEnrollmentType <DeviceEnrollmentType>] [-DeviceFirmwareConfigurationInterfaceManaged]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
  [-DeviceRegistrationState <DeviceRegistrationState>] [-DeviceType <DeviceType>] [-EasActivated]
  [-EasActivationDateTime <DateTime>] [-EasDeviceId <String>] [-EmailAddress <String>]
@@ -71,7 +72,8 @@ Update-MgUserManagedDevice [-UserId <String>] -InputObject <IDevicesCorporateMan
  [-AndroidSecurityPatchLevel <String>]
  [-AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]
  [-AutopilotEnrolled] [-AzureActiveDirectoryDeviceId <String>] [-AzureAdDeviceId <String>] [-AzureAdRegistered]
- [-ChassisType <ChassisType>] [-ChromeOSDeviceInfo <IMicrosoftGraphChromeOSDeviceProperty[]>]
+ [-BootstrapTokenEscrowed] [-ChassisType <ChassisType>]
+ [-ChromeOSDeviceInfo <IMicrosoftGraphChromeOSDeviceProperty[]>]
  [-CloudPcRemoteActionResults <IMicrosoftGraphCloudPcRemoteActionResult[]>]
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-ComplianceState <ComplianceState>]
  [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]
@@ -81,7 +83,7 @@ Update-MgUserManagedDevice [-UserId <String>] -InputObject <IDevicesCorporateMan
  [-DeviceCategory <IMicrosoftGraphDeviceCategory>] [-DeviceCategoryDisplayName <String>]
  [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]
  [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]
- [-DeviceEnrollmentType <DeviceEnrollmentType>]
+ [-DeviceEnrollmentType <DeviceEnrollmentType>] [-DeviceFirmwareConfigurationInterfaceManaged]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
  [-DeviceRegistrationState <DeviceRegistrationState>] [-DeviceType <DeviceType>] [-EasActivated]
  [-EasActivationDateTime <DateTime>] [-EasDeviceId <String>] [-EmailAddress <String>]
@@ -282,6 +284,26 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BootstrapTokenEscrowed
+Reports if the managed device has an escrowed Bootstrap Token.
+This is only for macOS devices.
+To get, include BootstrapTokenEscrowed in the select clause and query with a device id.
+If FALSE, no bootstrap token is escrowed.
+If TRUE, the device has escrowed a bootstrap token with Intune.
+This property is read-only.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -522,6 +544,24 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceFirmwareConfigurationInterfaceManaged
+Indicates whether the device is DFCI managed.
+When TRUE the device is DFCI managed.
+When FALSE, the device is not DFCI managed.
+The default value is FALSE.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -14846,5 +14886,8 @@ WINDOWSPROTECTIONSTATE `<IMicrosoftGraphWindowsProtectionState>`: Device protect
   - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
