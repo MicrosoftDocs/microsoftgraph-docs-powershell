@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupdriveitemdelta
 schema: 2.0.0
@@ -23,12 +23,12 @@ Get-MgGroupDriveItemDelta -DriveId <String> -DriveItemId <String> -GroupId <Stri
  [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### DeltaViaIdentity
 ```
 Get-MgGroupDriveItemDelta -InputObject <IGroupsIdentity> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity
+### DeltaViaIdentity1
 ```
 Get-MgGroupDriveItemDelta -InputObject <IGroupsIdentity> [<CommonParameters>]
 ```
@@ -44,7 +44,7 @@ Invoke function delta
 key: id of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 key: id of driveItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -90,8 +90,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: DeltaViaIdentity, DeltaViaIdentity1
 Aliases:
 
 Required: True
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 Usage: token='{token}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta1
 Aliases:
 
@@ -122,9 +122,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
+
 ## NOTES
 
 ALIASES
@@ -134,7 +136,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -178,3 +180,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

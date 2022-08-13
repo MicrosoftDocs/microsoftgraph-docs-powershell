@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcomanageddevicesecuritybaselinestatesettingstate
 schema: 2.0.0
@@ -19,30 +19,31 @@ New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState -ManagedD
  [-ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>] [-ErrorCode <String>]
  [-Id <String>] [-SettingCategoryId <String>] [-SettingCategoryName <String>] [-SettingId <String>]
  [-SettingName <String>] [-SourcePolicies <IMicrosoftGraphSettingSource[]>]
- [-State <SecurityBaselineComplianceState>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-State <SecurityBaselineComplianceState>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState -ManagedDeviceId <String>
- -SecurityBaselineStateId <String> -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>]
- [-ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>] [-ErrorCode <String>]
- [-Id <String>] [-SettingCategoryId <String>] [-SettingCategoryName <String>] [-SettingId <String>]
- [-SettingName <String>] [-SourcePolicies <IMicrosoftGraphSettingSource[]>]
- [-State <SecurityBaselineComplianceState>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SecurityBaselineStateId <String> -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState
+ -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState
+ -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>] [-ErrorCode <String>]
+ [-Id <String>] [-SettingCategoryId <String>] [-SettingCategoryName <String>] [-SettingId <String>]
+ [-SettingName <String>] [-SourcePolicies <IMicrosoftGraphSettingSource[]>]
+ [-State <SecurityBaselineComplianceState>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,7 +57,7 @@ Create new navigation property to settingStates for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +73,7 @@ The security baseline compliance state of a setting for a device
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityBaselineSettingState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineSettingState
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -88,7 +89,7 @@ The policies that contribute to this setting instance
 To construct, please use Get-Help -Online and see NOTES section for CONTRIBUTINGPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityBaselineContributingPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineContributingPolicy[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -103,7 +104,7 @@ Accept wildcard characters: False
 The error code if the setting is in error state
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +119,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -134,8 +135,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -149,8 +150,8 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -164,8 +165,8 @@ Accept wildcard characters: False
 key: id of securityBaselineState
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -179,7 +180,7 @@ Accept wildcard characters: False
 The setting category id which this setting belongs to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -194,7 +195,7 @@ Accept wildcard characters: False
 The setting category name which this setting belongs to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -209,7 +210,7 @@ Accept wildcard characters: False
 The setting id guid
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +225,7 @@ Accept wildcard characters: False
 The setting name that is being reported
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +241,7 @@ The policies that contribute to this setting instance
 To construct, please use Get-Help -Online and see NOTES section for SOURCEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSettingSource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSettingSource[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -255,7 +256,7 @@ Accept wildcard characters: False
 Security Baseline Compliance State
 
 ```yaml
-Type: SecurityBaselineComplianceState
+Type: Microsoft.Graph.PowerShell.Support.SecurityBaselineComplianceState
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -270,7 +271,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -286,7 +287,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -303,10 +304,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineSettingState
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineSettingState
+
 ## NOTES
 
 ALIASES
@@ -316,7 +320,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityBaselineSettingState>`: The security baseline compliance state of a setting for a device
+BODYPARAMETER <IMicrosoftGraphSecurityBaselineSettingState>: The security baseline compliance state of a setting for a device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>]`: The policies that contribute to this setting instance
@@ -334,12 +338,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityBaselineSettingState>`: The security base
     - `[SourceType <String>]`: settingSourceType
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
 
-CONTRIBUTINGPOLICIES <IMicrosoftGraphSecurityBaselineContributingPolicy\[]>: The policies that contribute to this setting instance
+CONTRIBUTINGPOLICIES <IMicrosoftGraphSecurityBaselineContributingPolicy[]>: The policies that contribute to this setting instance
   - `[DisplayName <String>]`: Name of the policy
   - `[SourceId <String>]`: Unique identifier of the policy
   - `[SourceType <String>]`: Authoring source of a policy
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -466,11 +470,10 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SOURCEPOLICIES <IMicrosoftGraphSettingSource\[]>: The policies that contribute to this setting instance
+SOURCEPOLICIES <IMicrosoftGraphSettingSource[]>: The policies that contribute to this setting instance
   - `[DisplayName <String>]`: Not yet documented
   - `[Id <String>]`: Not yet documented
   - `[SourceType <String>]`: settingSourceType
 
 ## RELATED LINKS
 
-## RELATED LINKS

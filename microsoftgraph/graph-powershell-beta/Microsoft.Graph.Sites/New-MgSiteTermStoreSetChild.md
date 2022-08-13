@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetchild
 schema: 2.0.0
@@ -19,13 +19,19 @@ New-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> [-AdditionalPropert
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
  [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
- [-Set <IMicrosoftGraphTermStoreSet1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Set <IMicrosoftGraphTermStoreSet1>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create2
 ```
 New-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreTerm1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity2
+```
+New-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreTerm1>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded2
@@ -35,13 +41,7 @@ New-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-AdditionalProperties
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
  [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
- [-Set <IMicrosoftGraphTermStoreSet1>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity2
-```
-New-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreTerm1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Set <IMicrosoftGraphTermStoreSet1>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ Create new navigation property to children for sites
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
@@ -71,7 +71,7 @@ term
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreTerm1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm1
 Parameter Sets: Create2, CreateViaIdentity2
 Aliases:
 
@@ -87,7 +87,7 @@ Children of current term.
 To construct, please use Get-Help -Online and see NOTES section for CHILDREN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreTerm1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm1[]
 Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
@@ -103,7 +103,7 @@ Date and time of term creation.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
@@ -119,7 +119,7 @@ Description about term that is dependent on the languageTag.
 To construct, please use Get-Help -Online and see NOTES section for DESCRIPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreLocalizedDescription[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreLocalizedDescription[]
 Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
@@ -150,8 +150,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded2, CreateViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: CreateViaIdentity2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: True
@@ -166,7 +166,7 @@ Label metadata for a term.
 To construct, please use Get-Help -Online and see NOTES section for LABELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreLocalizedLabel[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreLocalizedLabel[]
 Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
@@ -182,7 +182,7 @@ Last date and time of term modification.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
@@ -198,7 +198,7 @@ Collection of properties on the term.
 To construct, please use Get-Help -Online and see NOTES section for PROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValue[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyValue[]
 Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
@@ -214,7 +214,7 @@ To indicate which terms are related to the current term as either pinned or reus
 To construct, please use Get-Help -Online and see NOTES section for RELATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreRelation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation[]
 Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
@@ -230,7 +230,7 @@ set
 To construct, please use Get-Help -Online and see NOTES section for SET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreSet1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreSet1
 Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
@@ -245,8 +245,8 @@ Accept wildcard characters: False
 key: id of set
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded2, Create2
+Type: System.String
+Parameter Sets: Create2, CreateExpanded2
 Aliases:
 
 Required: True
@@ -260,8 +260,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded2, Create2
+Type: System.String
+Parameter Sets: Create2, CreateExpanded2
 Aliases:
 
 Required: True
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -291,7 +291,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -308,10 +308,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm1
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm1
+
 ## NOTES
 
 ALIASES
@@ -321,7 +324,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTermStoreTerm1>`: term
+BODYPARAMETER <IMicrosoftGraphTermStoreTerm1>: term
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
@@ -365,7 +368,7 @@ BODYPARAMETER `<IMicrosoftGraphTermStoreTerm1>`: term
     - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
 
-CHILDREN <IMicrosoftGraphTermStoreTerm1\[]>: Children of current term.
+CHILDREN <IMicrosoftGraphTermStoreTerm1[]>: Children of current term.
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
   - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
@@ -408,11 +411,11 @@ CHILDREN <IMicrosoftGraphTermStoreTerm1\[]>: Children of current term.
     - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
 
-DESCRIPTIONS <IMicrosoftGraphTermStoreLocalizedDescription\[]>: Description about term that is dependent on the languageTag.
+DESCRIPTIONS <IMicrosoftGraphTermStoreLocalizedDescription[]>: Description about term that is dependent on the languageTag.
   - `[Description <String>]`: The description in the localized language.
   - `[LanguageTag <String>]`: The language tag for the label.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -449,16 +452,16 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-LABELS <IMicrosoftGraphTermStoreLocalizedLabel\[]>: Label metadata for a term.
+LABELS <IMicrosoftGraphTermStoreLocalizedLabel[]>: Label metadata for a term.
   - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
   - `[LanguageTag <String>]`: The language tag for the label.
   - `[Name <String>]`: The name of the label.
 
-PROPERTIES <IMicrosoftGraphKeyValue\[]>: Collection of properties on the term.
+PROPERTIES <IMicrosoftGraphKeyValue[]>: Collection of properties on the term.
   - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
   - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
 
-RELATIONS <IMicrosoftGraphTermStoreRelation\[]>: To indicate which terms are related to the current term as either pinned or reused.
+RELATIONS <IMicrosoftGraphTermStoreRelation[]>: To indicate which terms are related to the current term as either pinned or reused.
   - `[Id <String>]`: 
   - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -502,7 +505,7 @@ RELATIONS <IMicrosoftGraphTermStoreRelation\[]>: To indicate which terms are rel
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
   - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
 
-SET `<IMicrosoftGraphTermStoreSet1>`: set
+SET <IMicrosoftGraphTermStoreSet1>: set
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
@@ -547,4 +550,3 @@ SET `<IMicrosoftGraphTermStoreSet1>`: set
 
 ## RELATED LINKS
 
-## RELATED LINKS

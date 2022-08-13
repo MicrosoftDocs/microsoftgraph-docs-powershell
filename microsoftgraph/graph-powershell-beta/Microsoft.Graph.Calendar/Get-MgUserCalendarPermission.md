@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendarpermission
 schema: 2.0.0
@@ -12,39 +12,39 @@ The permissions of the users with whom the calendar is shared.
 
 ## SYNTAX
 
-### List (Default)
+### List2 (Default)
 ```
-Get-MgUserCalendarPermission -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> -CalendarId <String>
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUserCalendarPermission -UserId <String> [-Filter <String>] [-Property <String[]>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
-### Get
+### Get2
 ```
 Get-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### List1
+### Get3
 ```
-Get-MgUserCalendarPermission -UserId <String> -CalendarId <String> [-Property <String[]>] [-Filter <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+Get-MgUserCalendarPermission -CalendarId <String> -CalendarPermissionId <String> -UserId <String>
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity3
+```
+Get-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
+```
+
+### List3
+```
+Get-MgUserCalendarPermission -CalendarId <String> -UserId <String> [-Filter <String>] [-Property <String[]>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>]
  [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,8 +58,8 @@ The permissions of the users with whom the calendar is shared.
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List, List1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -73,8 +73,8 @@ Accept wildcard characters: False
 key: id of calendar
 
 ```yaml
-Type: String
-Parameter Sets: Get1, List1
+Type: System.String
+Parameter Sets: Get3, List3
 Aliases:
 
 Required: True
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 key: id of calendarPermission
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get
+Type: System.String
+Parameter Sets: Get2, Get3
 Aliases:
 
 Required: True
@@ -104,8 +104,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: List, List1
+Type: System.String
+Parameter Sets: List2, List3
 Aliases: CV
 
 Required: False
@@ -119,8 +119,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: List, List1
+Type: System.String
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -135,8 +135,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity3
 Aliases:
 
 Required: True
@@ -150,8 +150,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: List, List1
+Type: System.Int32
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -165,9 +165,24 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List2, List3
+Aliases:
 
 Required: False
 Position: Named
@@ -180,8 +195,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
-Parameter Sets: List, List1
+Type: System.String[]
+Parameter Sets: List2, List3
 Aliases: OrderBy
 
 Required: False
@@ -195,8 +210,8 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
-Parameter Sets: List, List1
+Type: System.Int32
+Parameter Sets: List2, List3
 Aliases: Limit
 
 Required: False
@@ -210,26 +225,11 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: List, Get1, Get, List1
+Type: System.String
+Parameter Sets: Get2, Get3, List2, List3
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List, List1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -242,9 +242,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarPermission
+
 ## NOTES
 
 ALIASES
@@ -254,7 +256,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
@@ -269,3 +271,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
