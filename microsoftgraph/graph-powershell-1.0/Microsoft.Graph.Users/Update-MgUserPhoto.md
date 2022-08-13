@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mguserphoto
 schema: 2.0.0
@@ -15,49 +15,49 @@ Update the navigation property photo in users
 ### UpdateExpanded2 (Default)
 ```
 Update-MgUserPhoto -UserId <String> [-AdditionalProperties <Hashtable>] [-Height <Int32>] [-Id <String>]
- [-Width <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Update2
-```
-Update-MgUserPhoto -UserId <String> -BodyParameter <IMicrosoftGraphProfilePhoto> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### Update3
-```
-Update-MgUserPhoto -ProfilePhotoId <String> -UserId <String> -BodyParameter <IMicrosoftGraphProfilePhoto>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded3
 ```
-Update-MgUserPhoto -ProfilePhotoId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Height <Int32>] [-Id <String>] [-Width <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgUserPhoto -UserId <String> -ProfilePhotoId <String> [-AdditionalProperties <Hashtable>]
+ [-Height <Int32>] [-Id <String>] [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity2
+### Update3
 ```
-Update-MgUserPhoto -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphProfilePhoto> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity3
-```
-Update-MgUserPhoto -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphProfilePhoto> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgUserPhoto -UserId <String> -ProfilePhotoId <String> -BodyParameter <IMicrosoftGraphProfilePhoto>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded2
+### Update2
 ```
-Update-MgUserPhoto -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Height <Int32>]
- [-Id <String>] [-Width <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgUserPhoto -UserId <String> -BodyParameter <IMicrosoftGraphProfilePhoto> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded3
 ```
 Update-MgUserPhoto -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Height <Int32>]
- [-Id <String>] [-Width <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded2
+```
+Update-MgUserPhoto -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Height <Int32>]
+ [-Id <String>] [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity3
+```
+Update-MgUserPhoto -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphProfilePhoto> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity2
+```
+Update-MgUserPhoto -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphProfilePhoto> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -71,8 +71,8 @@ Update the navigation property photo in users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: Hashtable
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -87,8 +87,8 @@ profilePhoto
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-Parameter Sets: Update2, Update3, UpdateViaIdentity2, UpdateViaIdentity3
+Type: IMicrosoftGraphProfilePhoto
+Parameter Sets: Update3, Update2, UpdateViaIdentity3, UpdateViaIdentity2
 Aliases:
 
 Required: True
@@ -103,8 +103,8 @@ The height of the photo.
 Read-only.
 
 ```yaml
-Type: System.Int32
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: Int32
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -118,8 +118,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: String
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -134,8 +134,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
-Parameter Sets: UpdateViaIdentity2, UpdateViaIdentity3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: IUsersIdentity
+Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentity3, UpdateViaIdentity2
 Aliases:
 
 Required: True
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -164,8 +164,8 @@ Accept wildcard characters: False
 key: id of profilePhoto
 
 ```yaml
-Type: System.String
-Parameter Sets: Update3, UpdateExpanded3
+Type: String
+Parameter Sets: UpdateExpanded3, Update3
 Aliases:
 
 Required: True
@@ -179,8 +179,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update2, Update3, UpdateExpanded2, UpdateExpanded3
+Type: String
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, Update3, Update2
 Aliases:
 
 Required: True
@@ -195,8 +195,8 @@ The width of the photo.
 Read-only.
 
 ```yaml
-Type: System.Int32
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: Int32
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -226,7 +226,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -243,13 +243,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -288,4 +285,3 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
