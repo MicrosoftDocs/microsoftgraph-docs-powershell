@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgonpremisepublishingprofileagentgroupbyref
 schema: 2.0.0
@@ -15,25 +15,25 @@ Create new navigation property ref to agentGroups for onPremisesPublishingProfil
 ### Create1 (Default)
 ```
 New-MgOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <String>
- -OnPremisesPublishingProfileId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -OnPremisesPublishingProfileId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentGroupId <String> -OnPremisesAgentId <String>
- -OnPremisesPublishingProfileId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -OnPremisesPublishingProfileId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
-New-MgOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,8 +48,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentity1
+Type: IApplicationsIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 key: id of onPremisesAgentGroup
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Create
 Aliases:
 
@@ -78,8 +78,8 @@ Accept wildcard characters: False
 key: id of onPremisesAgent
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, Create1
+Type: String
+Parameter Sets: Create1, Create
 Aliases:
 
 Required: True
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 key: id of onPremisesPublishingProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, Create1
+Type: String
+Parameter Sets: Create1, Create
 Aliases:
 
 Required: True
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -139,7 +139,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -156,11 +156,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -201,4 +199,3 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredential
 schema: 2.0.0
@@ -14,23 +14,15 @@ Update the navigation property federatedIdentityCredentials in applications
 
 ### UpdateExpanded (Default)
 ```
-Update-MgApplicationFederatedIdentityCredential -ApplicationId <String>
- -FederatedIdentityCredentialId <String> [-AdditionalProperties <Hashtable>] [-Audiences <String[]>]
- [-Description <String>] [-Id <String>] [-Issuer <String>] [-Name <String>] [-Subject <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgApplicationFederatedIdentityCredential -ApplicationId <String> -FederatedIdentityCredentialId <String>
+ [-AdditionalProperties <Hashtable>] [-Audiences <String[]>] [-Description <String>] [-Id <String>]
+ [-Issuer <String>] [-Name <String>] [-Subject <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgApplicationFederatedIdentityCredential -ApplicationId <String>
- -FederatedIdentityCredentialId <String> -BodyParameter <IMicrosoftGraphFederatedIdentityCredential>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-PassThru] [-Confirm] [-WhatIf]
+Update-MgApplicationFederatedIdentityCredential -ApplicationId <String> -FederatedIdentityCredentialId <String>
+ -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,7 +30,14 @@ Update-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdent
 ```
 Update-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Audiences <String[]>] [-Description <String>] [-Id <String>]
- [-Issuer <String>] [-Name <String>] [-Subject <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Issuer <String>] [-Name <String>] [-Subject <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +51,7 @@ Update the navigation property federatedIdentityCredentials in applications
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,8 +66,8 @@ Accept wildcard characters: False
 key: id of application
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -86,7 +85,7 @@ This value represents Azure AD in your external identity provider and has no fix
 Required.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -102,7 +101,7 @@ federatedIdentityCredential
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
+Type: IMicrosoftGraphFederatedIdentityCredential
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -118,7 +117,7 @@ The un-validated, user-provided description of the federated identity credential
 Optional.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,8 +132,8 @@ Accept wildcard characters: False
 key: id of federatedIdentityCredential
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -148,7 +147,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,8 +163,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -181,7 +180,7 @@ The combination of the values of issuer and subject must be unique on the app.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +199,7 @@ Not nullable.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +214,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -235,7 +234,7 @@ The combination of issuer and subject must be unique on the app.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +249,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -266,7 +265,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -283,13 +282,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -339,4 +335,3 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
