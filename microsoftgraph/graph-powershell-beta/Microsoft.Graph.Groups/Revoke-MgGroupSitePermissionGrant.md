@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/revoke-mggroupsitepermissiongrant
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action revokeGrants
 ### RevokeExpanded (Default)
 ```
 Revoke-MgGroupSitePermissionGrant -GroupId <String> -PermissionId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,20 +23,20 @@ Revoke-MgGroupSitePermissionGrant -GroupId <String> -PermissionId <String> -Site
 ```
 Revoke-MgGroupSitePermissionGrant -GroupId <String> -PermissionId <String> -SiteId <String>
  -BodyParameter <IPaths1063EsGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RevokeViaIdentityExpanded
+```
+Revoke-MgGroupSitePermissionGrant -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RevokeViaIdentity
 ```
 Revoke-MgGroupSitePermissionGrant -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1063EsGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### RevokeViaIdentityExpanded
-```
-Revoke-MgGroupSitePermissionGrant -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Invoke action revokeGrants
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1063EsGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1063EsGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Revoke, RevokeViaIdentity
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for GRANTEES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveRecipient[]
+Type: IMicrosoftGraphDriveRecipient[]
 Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
 Aliases:
 
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Revoke, RevokeExpanded
+Type: String
+Parameter Sets: RevokeExpanded, Revoke
 Aliases:
 
 Required: True
@@ -113,8 +113,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: RevokeViaIdentity, RevokeViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: RevokeViaIdentityExpanded, RevokeViaIdentity
 Aliases:
 
 Required: True
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 key: id of permission
 
 ```yaml
-Type: System.String
-Parameter Sets: Revoke, RevokeExpanded
+Type: String
+Parameter Sets: RevokeExpanded, Revoke
 Aliases:
 
 Required: True
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Revoke, RevokeExpanded
+Type: String
+Parameter Sets: RevokeExpanded, Revoke
 Aliases:
 
 Required: True
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,13 +191,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths1063EsGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission1
-
 ## NOTES
 
 ALIASES
@@ -263,4 +260,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

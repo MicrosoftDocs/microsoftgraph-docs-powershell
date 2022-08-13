@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupsitelistitemdelta
 schema: 2.0.0
@@ -23,12 +23,12 @@ Get-MgGroupSiteListItemDelta -GroupId <String> -ListId <String> -SiteId <String>
  [<CommonParameters>]
 ```
 
-### DeltaViaIdentity
+### DeltaViaIdentity1
 ```
 Get-MgGroupSiteListItemDelta -InputObject <IGroupsIdentity> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### DeltaViaIdentity
 ```
 Get-MgGroupSiteListItemDelta -InputObject <IGroupsIdentity> [<CommonParameters>]
 ```
@@ -44,7 +44,7 @@ Invoke function delta
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -60,8 +60,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: DeltaViaIdentity, DeltaViaIdentity1
+Type: IGroupsIdentity
+Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 key: id of list
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 Usage: token='{token}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta1
 Aliases:
 
@@ -122,11 +122,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItem1
-
 ## NOTES
 
 ALIASES
@@ -180,4 +178,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
