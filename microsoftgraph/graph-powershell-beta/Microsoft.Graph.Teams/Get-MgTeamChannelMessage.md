@@ -12,7 +12,7 @@ Get messages from teams
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get2 (Default)
 ```
 Get-MgTeamChannelMessage -TeamId <String> [<CommonParameters>]
 ```
@@ -24,18 +24,18 @@ Get-MgTeamChannelMessage -ChannelId <String> -TeamId <String> [-ExpandProperty <
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgTeamChannelMessage -ChannelId <String> -ChatMessageId <String> -TeamId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity2
 ```
 Get-MgTeamChannelMessage -InputObject <ITeamsIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -68,7 +68,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -114,7 +114,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: List, Get, GetViaIdentity
+Parameter Sets: List, Get1, GetViaIdentity1
 Aliases: Expand
 
 Required: False
@@ -145,7 +145,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -175,7 +175,7 @@ Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: List, Get, GetViaIdentity
+Parameter Sets: List, Get1, GetViaIdentity1
 Aliases: Select
 
 Required: False
@@ -220,7 +220,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: Get1, List, Get
+Parameter Sets: Get2, List, Get1
 Aliases:
 
 Required: True

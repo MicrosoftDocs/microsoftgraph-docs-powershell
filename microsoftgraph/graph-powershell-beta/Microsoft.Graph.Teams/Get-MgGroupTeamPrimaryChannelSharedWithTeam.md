@@ -243,7 +243,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharedWithChannelTeamInfo
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharedWithChannelTeamInfo1
 ## NOTES
 
 ALIASES

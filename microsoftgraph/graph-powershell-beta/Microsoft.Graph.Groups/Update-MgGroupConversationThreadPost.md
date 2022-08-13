@@ -12,7 +12,7 @@ Update the navigation property posts in groups
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
  -PostId <String> [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphAttachment[]>]
@@ -42,7 +42,7 @@ Update-MgGroupConversationThreadPost [-ConversationId <String>] [-ConversationTh
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded
 ```
 Update-MgGroupConversationThreadPost [-ConversationId <String>] [-ConversationThreadId <String>]
  -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
@@ -78,7 +78,7 @@ Update-MgGroupConversationThreadPost -ConversationId <String> -ConversationThrea
  -PostId <String> -BodyParameter <IMicrosoftGraphPost1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
  -PostId <String> -BodyParameter <IMicrosoftGraphPost1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -90,7 +90,7 @@ Update-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> -BodyParamet
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphPost1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -108,7 +108,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -127,7 +127,7 @@ To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS 
 
 ```yaml
 Type: IMicrosoftGraphAttachment[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -143,7 +143,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODY propert
 
 ```yaml
 Type: IMicrosoftGraphItemBody
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -159,7 +159,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphPost1
-Parameter Sets: Update3, Update1, UpdateViaIdentity3, UpdateViaIdentity1
+Parameter Sets: Update3, Update, UpdateViaIdentity3, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -174,7 +174,7 @@ The categories associated with the item
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -192,7 +192,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -207,7 +207,7 @@ key: id of conversation
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded3, Update3, Update1
+Parameter Sets: UpdateExpanded, UpdateExpanded3, Update3, Update
 Aliases:
 
 Required: True
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -235,7 +235,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -250,7 +250,7 @@ key: id of conversationThread
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded3, Update3, Update1
+Parameter Sets: UpdateExpanded, UpdateExpanded3, Update3, Update
 Aliases:
 
 Required: True
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -278,7 +278,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -294,7 +294,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -313,7 +313,7 @@ To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS p
 
 ```yaml
 Type: IMicrosoftGraphExtension[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -329,7 +329,7 @@ To construct, please use Get-Help -Online and see NOTES section for FROM propert
 
 ```yaml
 Type: IMicrosoftGraphRecipient
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -344,7 +344,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded3, Update3, Update1
+Parameter Sets: UpdateExpanded, UpdateExpanded3, Update3, Update
 Aliases:
 
 Required: True
@@ -360,7 +360,7 @@ This is a default property.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -375,7 +375,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -390,7 +390,7 @@ importance
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -406,7 +406,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentity3, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateViaIdentity3, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -422,7 +422,7 @@ To construct, please use Get-Help -Online and see NOTES section for INREPLYTO pr
 
 ```yaml
 Type: IMicrosoftGraphPost1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -438,7 +438,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -454,7 +454,7 @@ To construct, please use Get-Help -Online and see NOTES section for MENTIONS pro
 
 ```yaml
 Type: IMicrosoftGraphMention[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -472,7 +472,7 @@ To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEX
 
 ```yaml
 Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -488,7 +488,7 @@ To construct, please use Get-Help -Online and see NOTES section for NEWPARTICIPA
 
 ```yaml
 Type: IMicrosoftGraphRecipient[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -518,7 +518,7 @@ key: id of post
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded3, Update3, Update1
+Parameter Sets: UpdateExpanded, UpdateExpanded3, Update3, Update
 Aliases:
 
 Required: True
@@ -535,7 +535,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -551,7 +551,7 @@ To construct, please use Get-Help -Online and see NOTES section for SENDER prope
 
 ```yaml
 Type: IMicrosoftGraphRecipient
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False
@@ -569,7 +569,7 @@ To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEE
 
 ```yaml
 Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateExpanded3
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateExpanded3
 Aliases:
 
 Required: False

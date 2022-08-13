@@ -12,26 +12,26 @@ Invoke action archive
 
 ## SYNTAX
 
-### ArchiveExpanded (Default)
+### ArchiveExpanded1 (Default)
 ```
 Invoke-MgArchiveTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-ShouldSetSpoSiteReadOnlyForMembers]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Archive
+### Archive1
 ```
 Invoke-MgArchiveTeam -TeamId <String>
  -BodyParameter <IPathsBezc4TeamsTeamIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ArchiveViaIdentityExpanded
+### ArchiveViaIdentityExpanded1
 ```
 Invoke-MgArchiveTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-ShouldSetSpoSiteReadOnlyForMembers] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ArchiveViaIdentity
+### ArchiveViaIdentity1
 ```
 Invoke-MgArchiveTeam -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsBezc4TeamsTeamIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ArchiveExpanded, ArchiveViaIdentityExpanded
+Parameter Sets: ArchiveExpanded1, ArchiveViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsBezc4TeamsTeamIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Archive, ArchiveViaIdentity
+Parameter Sets: Archive1, ArchiveViaIdentity1
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: ArchiveViaIdentityExpanded, ArchiveViaIdentity
+Parameter Sets: ArchiveViaIdentityExpanded1, ArchiveViaIdentity1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: ArchiveExpanded, ArchiveViaIdentityExpanded
+Parameter Sets: ArchiveExpanded1, ArchiveViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -127,7 +127,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: ArchiveExpanded, Archive
+Parameter Sets: ArchiveExpanded1, Archive1
 Aliases:
 
 Required: True

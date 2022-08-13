@@ -29,6 +29,9 @@ Get customQuestions from solutions
 ### [Get-MgBookingBusinessService](Get-MgBookingBusinessService.md)
 Get services from solutions
 
+### [Get-MgBookingBusinessStaffAvailability](Get-MgBookingBusinessStaffAvailability.md)
+Invoke action getStaffAvailability
+
 ### [Get-MgBookingBusinessStaffMember](Get-MgBookingBusinessStaffMember.md)
 Get staffMembers from solutions
 

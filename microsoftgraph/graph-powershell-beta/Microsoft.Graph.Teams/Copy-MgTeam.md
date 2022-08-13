@@ -12,28 +12,28 @@ Invoke action clone
 
 ## SYNTAX
 
-### CloneExpanded (Default)
+### CloneExpanded1 (Default)
 ```
 Copy-MgTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-Classification <String>]
  [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
  [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Clone
+### Clone1
 ```
 Copy-MgTeam -TeamId <String>
  -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CloneViaIdentityExpanded
+### CloneViaIdentityExpanded1
 ```
 Copy-MgTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Classification <String>]
  [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
  [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CloneViaIdentity
+### CloneViaIdentity1
 ```
 Copy-MgTeam -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Clone, CloneViaIdentity
+Parameter Sets: Clone1, CloneViaIdentity1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -129,7 +129,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CloneViaIdentityExpanded, CloneViaIdentity
+Parameter Sets: CloneViaIdentityExpanded1, CloneViaIdentity1
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -159,7 +159,7 @@ clonableTeamParts
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -189,7 +189,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded, Clone
+Parameter Sets: CloneExpanded1, Clone1
 Aliases:
 
 Required: True
@@ -204,7 +204,7 @@ teamVisibilityType
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False

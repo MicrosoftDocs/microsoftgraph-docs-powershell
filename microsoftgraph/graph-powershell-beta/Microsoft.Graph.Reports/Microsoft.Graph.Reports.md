@@ -245,6 +245,18 @@ Invoke function getPrinterArchivedPrintJobs
 ### [Get-MgReportRelyingPartyDetailedSummary](Get-MgReportRelyingPartyDetailedSummary.md)
 Invoke function getRelyingPartyDetailedSummary
 
+### [Get-MgReportSecurity](Get-MgReportSecurity.md)
+Get security from reports
+
+### [Get-MgReportSecurityAttackSimulationRepeatOffender](Get-MgReportSecurityAttackSimulationRepeatOffender.md)
+Invoke function getAttackSimulationRepeatOffenders
+
+### [Get-MgReportSecurityAttackSimulationTrainingUserCoverage](Get-MgReportSecurityAttackSimulationTrainingUserCoverage.md)
+Invoke function getAttackSimulationTrainingUserCoverage
+
+### [Get-MgReportSecurityAttackSimulationUserCoverage](Get-MgReportSecurityAttackSimulationUserCoverage.md)
+Invoke function getAttackSimulationSimulationUserCoverage
+
 ### [Get-MgReportSharePointActivityFileCount](Get-MgReportSharePointActivityFileCount.md)
 Invoke function getSharePointActivityFileCounts
 

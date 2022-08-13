@@ -86,9 +86,6 @@ Invoke action getByIds
 ### [Get-MgEntitlementManagementSetting](Get-MgEntitlementManagementSetting.md)
 Get settings from identityGovernance
 
-### [Get-MgIdentityGovernanceTermOfUse](Get-MgIdentityGovernanceTermOfUse.md)
-Get termsOfUse from identityGovernance
-
 ### [Get-MgIdentityGovernanceTermOfUseAgreement](Get-MgIdentityGovernanceTermOfUseAgreement.md)
 Get agreements from identityGovernance
 
@@ -215,9 +212,6 @@ Delete navigation property connectedOrganizations for identityGovernance
 ### [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
 Delete ref of navigation property externalSponsors for identityGovernance
 
-### [Remove-MgIdentityGovernanceTermOfUse](Remove-MgIdentityGovernanceTermOfUse.md)
-Delete navigation property termsOfUse for identityGovernance
-
 ### [Remove-MgIdentityGovernanceTermOfUseAgreement](Remove-MgIdentityGovernanceTermOfUseAgreement.md)
 Delete navigation property agreements for identityGovernance
 
@@ -286,9 +280,6 @@ Update the navigation property connectedOrganizations in identityGovernance
 
 ### [Update-MgEntitlementManagementSetting](Update-MgEntitlementManagementSetting.md)
 Update the navigation property settings in identityGovernance
-
-### [Update-MgIdentityGovernanceTermOfUse](Update-MgIdentityGovernanceTermOfUse.md)
-Update the navigation property termsOfUse in identityGovernance
 
 ### [Update-MgIdentityGovernanceTermOfUseAgreement](Update-MgIdentityGovernanceTermOfUseAgreement.md)
 Update the navigation property agreements in identityGovernance
