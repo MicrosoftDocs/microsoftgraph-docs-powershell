@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem
 schema: 2.0.0
@@ -16,27 +16,27 @@ Invoke action copy
 ```
 Copy-MgGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
  [-AdditionalProperties <Hashtable>] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy1
 ```
 Copy-MgGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
  -BodyParameter <IPathsZsqog0GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CopyViaIdentityExpanded1
+```
+Copy-MgGroupDriveItem -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Name <String>]
+ [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity1
 ```
 Copy-MgGroupDriveItem -InputObject <IGroupsIdentity>
  -BodyParameter <IPathsZsqog0GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CopyViaIdentityExpanded1
-```
-Copy-MgGroupDriveItem -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Name <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Invoke action copy
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsZsqog0GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
+Type: IPathsZsqog0GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Copy1, CopyViaIdentity1
 Aliases:
 
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 key: id of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Copy1, CopyExpanded1
+Type: String
+Parameter Sets: CopyExpanded1, Copy1
 Aliases:
 
 Required: True
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 key: id of driveItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Copy1, CopyExpanded1
+Type: String
+Parameter Sets: CopyExpanded1, Copy1
 Aliases:
 
 Required: True
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Copy1, CopyExpanded1
+Type: String
+Parameter Sets: CopyExpanded1, Copy1
 Aliases:
 
 Required: True
@@ -127,8 +127,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: CopyViaIdentity1, CopyViaIdentityExpanded1
+Type: IGroupsIdentity
+Parameter Sets: CopyViaIdentityExpanded1, CopyViaIdentity1
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
@@ -158,7 +158,7 @@ itemReference
 To construct, please use Get-Help -Online and see NOTES section for PARENTREFERENCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemReference
+Type: IMicrosoftGraphItemReference
 Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,13 +206,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsZsqog0GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
-
 ## NOTES
 
 ALIASES
@@ -307,4 +304,3 @@ PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-

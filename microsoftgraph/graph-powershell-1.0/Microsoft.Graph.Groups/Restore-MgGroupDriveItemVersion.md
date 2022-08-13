@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/restore-mggroupdriveitemversion
 schema: 2.0.0
@@ -15,12 +15,12 @@ Invoke action restoreVersion
 ### Restore1 (Default)
 ```
 Restore-MgGroupDriveItemVersion -DriveId <String> -DriveItemId <String> -DriveItemVersionId <String>
- -GroupId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -GroupId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity1
 ```
-Restore-MgGroupDriveItemVersion -InputObject <IGroupsIdentity> [-PassThru] [-Confirm] [-WhatIf]
+Restore-MgGroupDriveItemVersion -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Invoke action restoreVersion
 key: id of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Restore1
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 key: id of driveItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Restore1
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 key: id of driveItemVersion
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Restore1
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Restore1
 Aliases:
 
@@ -96,7 +96,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Type: IGroupsIdentity
 Parameter Sets: RestoreViaIdentity1
 Aliases:
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -217,4 +215,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

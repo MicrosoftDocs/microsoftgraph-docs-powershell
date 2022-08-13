@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgpreviewgroupdriveroot
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke action preview
 ### PreviewExpanded1 (Default)
 ```
 Invoke-MgPreviewGroupDriveRoot -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-Page <String>] [-Zoom <Double>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Page <String>] [-Zoom <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Preview1
 ```
 Invoke-MgPreviewGroupDriveRoot -DriveId <String> -GroupId <String>
  -BodyParameter <IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PreviewViaIdentityExpanded1
+```
+Invoke-MgPreviewGroupDriveRoot -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Page <String>] [-Zoom <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity1
 ```
 Invoke-MgPreviewGroupDriveRoot -InputObject <IGroupsIdentity>
  -BodyParameter <IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### PreviewViaIdentityExpanded1
-```
-Invoke-MgPreviewGroupDriveRoot -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Page <String>] [-Zoom <Double>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Invoke action preview
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: PreviewExpanded1, PreviewViaIdentityExpanded1
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
+Type: IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Preview1, PreviewViaIdentity1
 Aliases:
 
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Preview1, PreviewExpanded1
+Type: String
+Parameter Sets: PreviewExpanded1, Preview1
 Aliases:
 
 Required: True
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Preview1, PreviewExpanded1
+Type: String
+Parameter Sets: PreviewExpanded1, Preview1
 Aliases:
 
 Required: True
@@ -111,8 +111,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: PreviewViaIdentity1, PreviewViaIdentityExpanded1
+Type: IGroupsIdentity
+Parameter Sets: PreviewViaIdentityExpanded1, PreviewViaIdentity1
 Aliases:
 
 Required: True
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: PreviewExpanded1, PreviewViaIdentityExpanded1
 Aliases:
 
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: PreviewExpanded1, PreviewViaIdentityExpanded1
 Aliases:
 
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,13 +189,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPreviewInfo
-
 ## NOTES
 
 ALIASES
@@ -254,4 +251,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
