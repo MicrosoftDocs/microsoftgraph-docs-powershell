@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusercalendar
 schema: 2.0.0
@@ -14,42 +14,42 @@ Nullable.
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgUserCalendar -CalendarId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AllowedOnlineMeetingProviders <String[]>] [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]
- [-CalendarView <IMicrosoftGraphEvent[]>] [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>]
- [-Color <String>] [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent[]>]
+ [-CalendarView <IMicrosoftGraphEvent1[]>] [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>]
+ [-Color <String>] [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent1[]>]
  [-HexColor <String>] [-Id <String>] [-IsDefaultCalendar] [-IsRemovable] [-IsTallyingResponses]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-Owner <IMicrosoftGraphEmailAddress>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgUserCalendar -CalendarId <String> -UserId <String> -BodyParameter <IMicrosoftGraphCalendar>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
-```
-Update-MgUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendar> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgUserCalendar -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedOnlineMeetingProviders <String[]>] [-CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]
- [-CalendarView <IMicrosoftGraphEvent[]>] [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>]
- [-Color <String>] [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent[]>]
+ [-CalendarView <IMicrosoftGraphEvent1[]>] [-CanEdit] [-CanShare] [-CanViewPrivateItems] [-ChangeKey <String>]
+ [-Color <String>] [-DefaultOnlineMeetingProvider <String>] [-Events <IMicrosoftGraphEvent1[]>]
  [-HexColor <String>] [-Id <String>] [-IsDefaultCalendar] [-IsRemovable] [-IsTallyingResponses]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-Owner <IMicrosoftGraphEmailAddress>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendar> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,8 +65,8 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -81,8 +81,8 @@ Represent the online meeting service providers that can be used to create online
 Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
 
 ```yaml
-Type: System.String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -97,8 +97,8 @@ calendar
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar
-Parameter Sets: Update, UpdateViaIdentity
+Type: IMicrosoftGraphCalendar
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 key: id of calendar
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -128,8 +128,8 @@ The permissions of the users with whom the calendar is shared.
 To construct, please use Get-Help -Online and see NOTES section for CALENDARPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarPermission[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphCalendarPermission[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -146,8 +146,8 @@ Read-only.
 To construct, please use Get-Help -Online and see NOTES section for CALENDARVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphEvent1[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -163,8 +163,8 @@ This property is true for the user who created the calendar.
 This property is also true for a user who has been shared a calendar and granted write access.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -179,8 +179,8 @@ true if the user has the permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -194,8 +194,8 @@ Accept wildcard characters: False
 true if the user can read calendar items that have been marked private, false otherwise.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -212,8 +212,8 @@ This allows Exchange to apply changes to the correct version of the object.
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -227,8 +227,8 @@ Accept wildcard characters: False
 calendarColor
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -242,8 +242,8 @@ Accept wildcard characters: False
 onlineMeetingProviderType
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -260,8 +260,8 @@ Read-only.
 To construct, please use Get-Help -Online and see NOTES section for EVENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphEvent1[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -277,8 +277,8 @@ If the user has never explicitly set a color for the calendar, this property is 
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -292,8 +292,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -308,8 +308,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ICalendarIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -323,8 +323,8 @@ Accept wildcard characters: False
 true if this is the default calendar where new events are created by default, false otherwise.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -338,8 +338,8 @@ Accept wildcard characters: False
 Indicates whether this user calendar can be deleted from the user mailbox.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -354,8 +354,8 @@ Indicates whether this user calendar supports tracking of meeting responses.
 Only meeting invites sent from users' primary calendars support tracking of meeting responses.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -372,8 +372,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -387,8 +387,8 @@ Accept wildcard characters: False
 The calendar name.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -403,8 +403,8 @@ emailAddress
 To construct, please use Get-Help -Online and see NOTES section for OWNER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphEmailAddress
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -418,7 +418,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -436,8 +436,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -451,8 +451,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -466,7 +466,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -482,7 +482,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -499,13 +499,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -1023,3 +1020,4 @@ SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[
 
 ## RELATED LINKS
 
+## RELATED LINKS

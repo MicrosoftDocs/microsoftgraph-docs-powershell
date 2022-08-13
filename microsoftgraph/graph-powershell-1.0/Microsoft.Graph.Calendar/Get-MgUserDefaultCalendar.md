@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar
 schema: 2.0.0
@@ -14,12 +14,12 @@ Nullable.
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get2 (Default)
 ```
-Get-MgUserDefaultCalendar -CalendarId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgUserDefaultCalendar -UserId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity2
 ```
 Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
@@ -33,28 +33,13 @@ Nullable.
 
 ## PARAMETERS
 
-### -CalendarId
-key: id of calendar
-
-```yaml
-Type: System.String
-Parameter Sets: Get1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-Parameter Sets: GetViaIdentity1
+Type: ICalendarIdentity
+Parameter Sets: GetViaIdentity2
 Aliases:
 
 Required: True
@@ -68,7 +53,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -83,8 +68,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Get1
+Type: String
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -100,11 +85,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar
-
 ## NOTES
 
 ALIASES
@@ -129,4 +112,3 @@ INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

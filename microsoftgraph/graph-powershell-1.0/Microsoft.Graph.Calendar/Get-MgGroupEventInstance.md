@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupeventinstance
 schema: 2.0.0
@@ -18,8 +18,8 @@ Nullable.
 
 ### List (Default)
 ```
-Get-MgGroupEventInstance -EventId <String> -GroupId <String> [-Filter <String>] [-Property <String[]>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>]
+Get-MgGroupEventInstance -EventId <String> -GroupId <String> [-Property <String[]>] [-Filter <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
 
@@ -49,7 +49,7 @@ Nullable.
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -65,7 +65,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List
 Aliases: CV
 
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of event
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List
+Type: String
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 key: id of event
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List
 Aliases:
 
@@ -125,8 +125,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List
+Type: String
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -141,7 +141,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Type: ICalendarIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List
 Aliases:
 
@@ -171,24 +171,9 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -201,7 +186,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -216,9 +201,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -233,11 +233,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
 ## NOTES
 
 ALIASES
@@ -262,4 +260,3 @@ INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
