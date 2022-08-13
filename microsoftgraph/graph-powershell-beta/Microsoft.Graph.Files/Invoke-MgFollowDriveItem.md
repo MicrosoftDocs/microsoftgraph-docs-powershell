@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgfollowdriveitem
 schema: 2.0.0
@@ -14,12 +14,12 @@ Invoke action follow
 
 ### Follow (Default)
 ```
-Invoke-MgFollowDriveItem -DriveId <String> -DriveItemId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgFollowDriveItem -DriveId <String> -DriveItemId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### FollowViaIdentity
 ```
-Invoke-MgFollowDriveItem -InputObject <IFilesIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgFollowDriveItem -InputObject <IFilesIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,7 +33,7 @@ Invoke action follow
 key: id of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Follow
 Aliases:
 
@@ -48,7 +48,7 @@ Accept wildcard characters: False
 key: id of driveItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Follow
 Aliases:
 
@@ -64,7 +64,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Type: IFilesIdentity
 Parameter Sets: FollowViaIdentity
 Aliases:
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -95,7 +95,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -112,11 +112,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
-
 ## NOTES
 
 ALIASES
@@ -152,4 +150,3 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

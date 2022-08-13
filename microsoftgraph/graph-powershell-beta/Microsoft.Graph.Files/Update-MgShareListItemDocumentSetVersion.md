@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mgsharelistitemdocumentsetversion
 schema: 2.0.0
@@ -19,20 +19,7 @@ Update-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -SharedD
  [-CreatedDateTime <DateTime>] [-Fields <Hashtable>] [-Id <String>]
  [-Items <IMicrosoftGraphDocumentSetVersionItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>]
- [-ShouldCaptureMinorVersion] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Update2
-```
-Update-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -ListItemId <String>
- -SharedDriveItemId <String> -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### Update3
-```
-Update-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -SharedDriveItemId <String>
- -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ShouldCaptureMinorVersion] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded2
@@ -42,29 +29,20 @@ Update-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -ListIte
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Fields <Hashtable>] [-Id <String>]
  [-Items <IMicrosoftGraphDocumentSetVersionItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>]
- [-ShouldCaptureMinorVersion] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ShouldCaptureMinorVersion] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity2
+### Update3
 ```
-Update-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity3
-```
-Update-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -SharedDriveItemId <String>
+ -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded2
+### Update2
 ```
-Update-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-Fields <Hashtable>] [-Id <String>] [-Items <IMicrosoftGraphDocumentSetVersionItem[]>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Publication <IMicrosoftGraphPublicationFacet>] [-ShouldCaptureMinorVersion] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -ListItemId <String>
+ -SharedDriveItemId <String> -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded3
@@ -73,8 +51,30 @@ Update-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Additio
  [-Comment <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Fields <Hashtable>] [-Id <String>] [-Items <IMicrosoftGraphDocumentSetVersionItem[]>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Publication <IMicrosoftGraphPublicationFacet>] [-ShouldCaptureMinorVersion] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Publication <IMicrosoftGraphPublicationFacet>] [-ShouldCaptureMinorVersion] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded2
+```
+Update-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-Fields <Hashtable>] [-Id <String>] [-Items <IMicrosoftGraphDocumentSetVersionItem[]>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-Publication <IMicrosoftGraphPublicationFacet>] [-ShouldCaptureMinorVersion] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity3
+```
+Update-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
+ -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity2
+```
+Update-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
+ -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -88,8 +88,8 @@ Update the navigation property documentSetVersions in shares
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: Hashtable
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -104,8 +104,8 @@ documentSetVersion
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDocumentSetVersion
-Parameter Sets: Update2, Update3, UpdateViaIdentity2, UpdateViaIdentity3
+Type: IMicrosoftGraphDocumentSetVersion
+Parameter Sets: Update3, Update2, UpdateViaIdentity3, UpdateViaIdentity2
 Aliases:
 
 Required: True
@@ -119,8 +119,8 @@ Accept wildcard characters: False
 Comment about the captured version.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: String
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -135,8 +135,8 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -150,8 +150,8 @@ Accept wildcard characters: False
 Date and time when this version was created.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: DateTime
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -165,8 +165,8 @@ Accept wildcard characters: False
 key: id of documentSetVersion
 
 ```yaml
-Type: System.String
-Parameter Sets: Update2, Update3, UpdateExpanded2, UpdateExpanded3
+Type: String
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, Update3, Update2
 Aliases:
 
 Required: True
@@ -180,8 +180,8 @@ Accept wildcard characters: False
 fieldValueSet
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: Hashtable
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -195,8 +195,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: String
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -211,8 +211,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: UpdateViaIdentity2, UpdateViaIdentity3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: IFilesIdentity
+Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentity3, UpdateViaIdentity2
 Aliases:
 
 Required: True
@@ -227,8 +227,8 @@ Items within the document set that are captured as part of this version.
 To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDocumentSetVersionItem[]
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: IMicrosoftGraphDocumentSetVersionItem[]
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -243,8 +243,8 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -259,8 +259,8 @@ Date and time the version was last modified.
 Read-only.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: DateTime
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -274,8 +274,8 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Update2, UpdateExpanded2
+Type: String
+Parameter Sets: UpdateExpanded2, Update2
 Aliases:
 
 Required: True
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -305,8 +305,8 @@ publicationFacet
 To construct, please use Get-Help -Online and see NOTES section for PUBLICATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublicationFacet
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: IMicrosoftGraphPublicationFacet
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -320,8 +320,8 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Update2, Update3, UpdateExpanded2, UpdateExpanded3
+Type: String
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, Update3, Update2
 Aliases:
 
 Required: True
@@ -336,8 +336,8 @@ If true, minor versions of items are also captured; otherwise, only major versio
 Default value is false.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -351,7 +351,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -367,7 +367,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -384,13 +384,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDocumentSetVersion
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -482,4 +479,3 @@ PUBLICATION <IMicrosoftGraphPublicationFacet>: publicationFacet
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
-
