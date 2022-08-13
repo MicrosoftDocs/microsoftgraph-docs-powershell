@@ -171,7 +171,7 @@ function Refine_File{
     $text > $tempFilePath
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
-    #Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+    Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
