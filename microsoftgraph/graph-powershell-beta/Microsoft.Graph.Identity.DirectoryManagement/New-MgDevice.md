@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice
@@ -34,7 +34,7 @@ New-MgDevice [-AccountEnabled] [-AdditionalProperties <Hashtable>]
 
 ### Create1
 ```
-New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDevice -BodyParameter <IMicrosoftGraphDevice1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -118,7 +118,7 @@ device
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDevice
+Type: IMicrosoftGraphDevice1
 Parameter Sets: Create1
 Aliases:
 
@@ -870,10 +870,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice1
 ## NOTES
 
 ALIASES
@@ -1034,5 +1034,8 @@ USAGERIGHTS <IMicrosoftGraphUsageRight\[]>: Represents the usage rights a device
   - `[State <String>]`: usageRightState
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

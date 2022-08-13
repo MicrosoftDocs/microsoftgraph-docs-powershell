@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontact
@@ -649,5 +649,8 @@ TRANSITIVEREPORTS <IMicrosoftGraphDirectoryObject\[]>: The transitive reports fo
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryfeaturerolloutpolicyapplytobyref
@@ -12,28 +12,16 @@ Create new navigation property ref to appliesTo for directory
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Create (Default)
 ```
-New-MgDirectoryFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgDirectoryFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId <String> -BodyParameter <Hashtable>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDirectoryFeatureRolloutPolicyApplyToByRef -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDirectoryFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDirectoryFeatureRolloutPolicyApplyToByRef -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDirectoryFeatureRolloutPolicyApplyToByRef -InputObject <IIdentityDirectoryManagementIdentity> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,42 +31,12 @@ Create new navigation property ref to appliesTo for directory
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-.
-
-```yaml
-Type: Hashtable
-Parameter Sets: Create, CreateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
 ### -FeatureRolloutPolicyId
 key: id of featureRolloutPolicy
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -94,13 +52,28 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -141,10 +114,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths8MerebDirectoryFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoRefPostResponses201ContentApplicationJsonSchema
+### System.Boolean
 ## NOTES
 
 ALIASES

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice
@@ -54,13 +54,13 @@ Update-MgDevice [-DeviceId <String>] -InputObject <IIdentityDirectoryManagementI
 
 ### Update1
 ```
-Update-MgDevice -DeviceId <String> -BodyParameter <IMicrosoftGraphDevice> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgDevice -DeviceId <String> -BodyParameter <IMicrosoftGraphDevice1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
-Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphDevice>
+Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphDevice1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -145,7 +145,7 @@ device
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDevice
+Type: IMicrosoftGraphDevice1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -956,7 +956,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice1
 ## OUTPUTS
 
 ### System.Boolean
@@ -1155,5 +1155,8 @@ USAGERIGHTS <IMicrosoftGraphUsageRight\[]>: Represents the usage rights a device
   - `[State <String>]`: usageRightState
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
