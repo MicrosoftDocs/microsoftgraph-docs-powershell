@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorydelta
 schema: 2.0.0
@@ -19,16 +19,16 @@ Get-MgEducationClassAssignmentCategoryDelta -EducationClassId <String> [<CommonP
 
 ### Delta3
 ```
-Get-MgEducationClassAssignmentCategoryDelta -EducationAssignmentId <String> -EducationClassId <String>
+Get-MgEducationClassAssignmentCategoryDelta -EducationClassId <String> -EducationAssignmentId <String>
  [<CommonParameters>]
 ```
 
-### DeltaViaIdentity2
+### DeltaViaIdentity3
 ```
 Get-MgEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity3
+### DeltaViaIdentity2
 ```
 Get-MgEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [<CommonParameters>]
 ```
@@ -44,7 +44,7 @@ Invoke function delta
 key: id of educationAssignment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta3
 Aliases:
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 key: id of educationClass
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta2, Delta3
 Aliases:
 
@@ -75,8 +75,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
-Parameter Sets: DeltaViaIdentity2, DeltaViaIdentity3
+Type: IEducationIdentity
+Parameter Sets: DeltaViaIdentity3, DeltaViaIdentity2
 Aliases:
 
 Required: True
@@ -92,11 +92,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
-
 ## NOTES
 
 ALIASES
@@ -121,4 +119,3 @@ INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationUserId <String>]`: key: id of educationUser
 
 ## RELATED LINKS
-
