@@ -125,7 +125,7 @@ function Add-Back-Ticks{
 			}else{
 				if($furtherSplitted[1].endswith('>')){
                     if($furtherSplitted[1] -match "\[]>"){
-                        if($org -match "\\"){
+                        if($furtherSplitted[1] -match "\\"){
                         }else{
 						$furtherSplitted[1] = $furtherSplitted[1] -replace '[[+*?]','\$&'
                         }	
