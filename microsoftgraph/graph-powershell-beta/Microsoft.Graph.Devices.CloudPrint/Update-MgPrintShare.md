@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintshare
@@ -17707,5 +17707,8 @@ VIEWPOINT `<IMicrosoftGraphPrinterShareViewpoint>`: printerShareViewpoint
   - `[LastUsedDateTime <DateTime?>]`: 
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
