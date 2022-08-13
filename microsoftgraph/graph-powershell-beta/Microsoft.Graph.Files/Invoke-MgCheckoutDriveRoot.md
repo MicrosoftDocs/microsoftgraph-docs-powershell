@@ -12,12 +12,12 @@ Invoke action checkout
 
 ## SYNTAX
 
-### Checkout (Default)
+### Checkout1 (Default)
 ```
 Invoke-MgCheckoutDriveRoot -DriveId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckoutViaIdentity
+### CheckoutViaIdentity1
 ```
 Invoke-MgCheckoutDriveRoot -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Checkout
+Parameter Sets: Checkout1
 Aliases:
 
 Required: True
@@ -50,7 +50,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: CheckoutViaIdentity
+Parameter Sets: CheckoutViaIdentity1
 Aliases:
 
 Required: True

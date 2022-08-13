@@ -18,7 +18,7 @@ Invoke action checkMemberGroups
 Invoke action checkMemberObjects
 
 ### [Get-MgDirectoryObject](Get-MgDirectoryObject.md)
-Get entity from directoryObjects by key
+Get directoryObject
 
 ### [Get-MgDirectoryObjectAvailableExtensionProperty](Get-MgDirectoryObjectAvailableExtensionProperty.md)
 Invoke action getAvailableExtensionProperties
@@ -36,7 +36,7 @@ Invoke action getMemberObjects
 Add new entity to directoryObjects
 
 ### [Remove-MgDirectoryObject](Remove-MgDirectoryObject.md)
-Delete entity from directoryObjects
+Delete directoryObject
 
 ### [Test-MgDirectoryObjectProperty](Test-MgDirectoryObjectProperty.md)
 Invoke action validateProperties

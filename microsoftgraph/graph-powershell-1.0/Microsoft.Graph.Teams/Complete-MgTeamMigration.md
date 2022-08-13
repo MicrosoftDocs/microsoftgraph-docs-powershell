@@ -12,12 +12,12 @@ Invoke action completeMigration
 
 ## SYNTAX
 
-### Complete1 (Default)
+### Complete (Default)
 ```
 Complete-MgTeamMigration -TeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CompleteViaIdentity1
+### CompleteViaIdentity
 ```
 Complete-MgTeamMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CompleteViaIdentity1
+Parameter Sets: CompleteViaIdentity
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: Complete1
+Parameter Sets: Complete
 Aliases:
 
 Required: True

@@ -12,7 +12,7 @@ Create new navigation property to alerts for security
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgSecurityAlert [-ActivityGroupName <String>] [-AdditionalProperties <Hashtable>]
  [-AlertDetections <IMicrosoftGraphAlertDetection[]>] [-AssignedTo <String>] [-AzureSubscriptionId <String>]
@@ -35,7 +35,7 @@ New-MgSecurityAlert [-ActivityGroupName <String>] [-AdditionalProperties <Hashta
  [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -52,7 +52,7 @@ Name or alias of the activity group (attacker) this alert is attributed to.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -67,7 +67,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -83,7 +83,7 @@ To construct, please use Get-Help -Online and see NOTES section for ALERTDETECTI
 
 ```yaml
 Type: IMicrosoftGraphAlertDetection[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -98,7 +98,7 @@ Name of the analyst the alert is assigned to for triage, investigation, or remed
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -113,7 +113,7 @@ Azure subscription ID, present if this alert is related to an Azure resource.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -129,7 +129,7 @@ Required.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -145,7 +145,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphAlert
-Parameter Sets: Create
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -160,7 +160,7 @@ Category of the alert (for example, credentialTheft, ransomware, etc.).
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -177,7 +177,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports updat
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -193,7 +193,7 @@ To construct, please use Get-Help -Online and see NOTES section for CLOUDAPPSTAT
 
 ```yaml
 Type: IMicrosoftGraphCloudAppSecurityState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -208,7 +208,7 @@ Customer-provided comments on alert (for customer alert management) (supports up
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -223,7 +223,7 @@ Confidence of the detection logic (percentage between 1-100).
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -241,7 +241,7 @@ Required.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -256,7 +256,7 @@ Alert description.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -271,7 +271,7 @@ Set of alerts related to this alert entity (each alert is pushed to the SIEM as 
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -289,7 +289,7 @@ Required.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -304,7 +304,7 @@ alertFeedback
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -320,7 +320,7 @@ To construct, please use Get-Help -Online and see NOTES section for FILESTATES p
 
 ```yaml
 Type: IMicrosoftGraphFileSecurityState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -336,7 +336,7 @@ To construct, please use Get-Help -Online and see NOTES section for HISTORYSTATE
 
 ```yaml
 Type: IMicrosoftGraphAlertHistoryState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -352,7 +352,7 @@ To construct, please use Get-Help -Online and see NOTES section for HOSTSTATES p
 
 ```yaml
 Type: IMicrosoftGraphHostSecurityState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -382,7 +382,7 @@ IDs of incidents related to current alert.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -398,7 +398,7 @@ To construct, please use Get-Help -Online and see NOTES section for INVESTIGATIO
 
 ```yaml
 Type: IMicrosoftGraphInvestigationSecurityState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -413,7 +413,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -430,7 +430,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -446,7 +446,7 @@ To construct, please use Get-Help -Online and see NOTES section for MALWARESTATE
 
 ```yaml
 Type: IMicrosoftGraphMalwareState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -462,7 +462,7 @@ To construct, please use Get-Help -Online and see NOTES section for MESSAGESECUR
 
 ```yaml
 Type: IMicrosoftGraphMessageSecurityState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -478,7 +478,7 @@ To construct, please use Get-Help -Online and see NOTES section for NETWORKCONNE
 
 ```yaml
 Type: IMicrosoftGraphNetworkConnection[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -494,7 +494,7 @@ To construct, please use Get-Help -Online and see NOTES section for PROCESSES pr
 
 ```yaml
 Type: IMicrosoftGraphProcess[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -509,7 +509,7 @@ Vendor/provider recommended action(s) to take as a result of the alert (for exam
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -525,7 +525,7 @@ To construct, please use Get-Help -Online and see NOTES section for REGISTRYKEYS
 
 ```yaml
 Type: IMicrosoftGraphRegistryKeyState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -542,7 +542,7 @@ To construct, please use Get-Help -Online and see NOTES section for SECURITYRESO
 
 ```yaml
 Type: IMicrosoftGraphSecurityResource[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -557,7 +557,7 @@ alertSeverity
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -572,7 +572,7 @@ Hyperlinks (URIs) to the source material related to the alert, for example, prov
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -587,7 +587,7 @@ alertStatus
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -602,7 +602,7 @@ User-definable labels that can be applied to an alert and can serve as filter co
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -618,7 +618,7 @@ Required.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -636,7 +636,7 @@ To construct, please use Get-Help -Online and see NOTES section for TRIGGERS pro
 
 ```yaml
 Type: IMicrosoftGraphAlertTrigger[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -652,7 +652,7 @@ To construct, please use Get-Help -Online and see NOTES section for URICLICKSECU
 
 ```yaml
 Type: IMicrosoftGraphUriClickSecurityState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -668,7 +668,7 @@ To construct, please use Get-Help -Online and see NOTES section for USERSTATES p
 
 ```yaml
 Type: IMicrosoftGraphUserSecurityState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -684,7 +684,7 @@ To construct, please use Get-Help -Online and see NOTES section for VENDORINFORM
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -700,7 +700,7 @@ To construct, please use Get-Help -Online and see NOTES section for VULNERABILIT
 
 ```yaml
 Type: IMicrosoftGraphVulnerabilityState[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False

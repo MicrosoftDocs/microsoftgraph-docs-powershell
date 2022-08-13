@@ -12,12 +12,12 @@ Invoke action unarchive
 
 ## SYNTAX
 
-### Unarchive (Default)
+### Unarchive1 (Default)
 ```
 Invoke-MgUnarchiveTeam -TeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UnarchiveViaIdentity
+### UnarchiveViaIdentity1
 ```
 Invoke-MgUnarchiveTeam -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: UnarchiveViaIdentity
+Parameter Sets: UnarchiveViaIdentity1
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: Unarchive
+Parameter Sets: Unarchive1
 Aliases:
 
 Required: True

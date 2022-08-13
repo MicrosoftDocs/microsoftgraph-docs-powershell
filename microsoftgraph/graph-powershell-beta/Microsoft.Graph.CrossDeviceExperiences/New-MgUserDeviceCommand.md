@@ -45,13 +45,6 @@ Create new navigation property to commands for users
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -323,9 +316,38 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER `<IMicrosoftGraphCommand>`: command
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: 
+  - `[AppServiceName <String>]`: 
+  - `[Error <String>]`: 
+  - `[PackageFamilyName <String>]`: 
+  - `[Payload <IMicrosoftGraphPayloadRequest>]`: payloadRequest
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[PermissionTicket <String>]`: 
+  - `[PostBackUri <String>]`: 
+  - `[Responsepayload <IMicrosoftGraphPayloadResponse>]`: payloadResponse
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: 
+  - `[Status <String>]`: 
+  - `[Type <String>]`: 
+
+INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+  - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
+  - `[CommandId <String>]`: key: id of command
+  - `[DeviceId <String>]`: key: id of device
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[ExtensionId <String>]`: key: id of extension
+  - `[UsageRightId <String>]`: key: id of usageRight
+  - `[UserActivityId <String>]`: key: id of userActivity
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguserdevicecommand](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguserdevicecommand)
-

@@ -12,13 +12,13 @@ Invoke action upgrade
 
 ## SYNTAX
 
-### Upgrade (Default)
+### Upgrade1 (Default)
 ```
 Update-MgTeamInstalledApp -TeamId <String> -TeamsAppInstallationId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpgradeViaIdentity
+### UpgradeViaIdentity1
 ```
 Update-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -36,7 +36,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: UpgradeViaIdentity
+Parameter Sets: UpgradeViaIdentity1
 Aliases:
 
 Required: True
@@ -66,7 +66,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade
+Parameter Sets: Upgrade1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ key: id of teamsAppInstallation
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade
+Parameter Sets: Upgrade1
 Aliases:
 
 Required: True
