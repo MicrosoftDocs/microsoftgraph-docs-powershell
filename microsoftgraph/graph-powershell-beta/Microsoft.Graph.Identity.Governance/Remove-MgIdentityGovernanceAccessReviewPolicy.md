@@ -1,25 +1,33 @@
 ---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermofuse
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceaccessreviewpolicy
 schema: 2.0.0
 ---
 
-# Remove-MgIdentityGovernanceTermOfUse
+# Remove-MgIdentityGovernanceAccessReviewPolicy
 
 ## SYNOPSIS
-Delete navigation property termsOfUse for identityGovernance
+Delete navigation property policy for identityGovernance
 
 ## SYNTAX
 
 ```
-Remove-MgIdentityGovernanceTermOfUse [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgIdentityGovernanceAccessReviewPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property termsOfUse for identityGovernance
+Delete navigation property policy for identityGovernance
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -48,7 +56,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -93,7 +101,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceaccessreviewpolicy](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceaccessreviewpolicy)
+
