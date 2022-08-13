@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementgrouppolicydefinitionnextversiondefinition
@@ -792,5 +792,8 @@ PREVIOUSVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity d
   - `[Version <String>]`: Setting definition version
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
