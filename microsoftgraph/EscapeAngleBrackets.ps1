@@ -75,8 +75,8 @@ function Update-Files{
     )
 	try{
     foreach($filePath in Get-ChildItem $ModuleDocsPath){
-      #Add-Back-Ticks -FilePath $filePath -GraphProfile $GraphProfile -ModuleName $ModuleName
-      Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+      Add-Back-Ticks -FilePath $filePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+      #Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
       #Start-Sleep -Seconds 5
     }
 	}catch{
@@ -115,14 +115,20 @@ function Add-Back-Ticks{
             $splitted = $content.Split(" ")
 			$org = $splitted[1]
             if($org -match "\[]>"){
+                if($org -match "\\"){
+                }else{
 				$org = $org -replace '[[+*?]','\$&'
+                }
 			}
 			$furtherSplitted = $splitted.Split(":")
 			if($furtherSplitted[1] -contains '`'){
 			}else{
 				if($furtherSplitted[1].endswith('>')){
                     if($furtherSplitted[1] -match "\[]>"){
-						$furtherSplitted[1] = $furtherSplitted[1] -replace '[[+*?]','\$&'	
+                        if($org -match "\\"){
+                        }else{
+						$furtherSplitted[1] = $furtherSplitted[1] -replace '[[+*?]','\$&'
+                        }	
 					}
 				$concat = '`'+$furtherSplitted[1]+'`'
 				$replace = $org -replace $furtherSplitted[1],$concat
