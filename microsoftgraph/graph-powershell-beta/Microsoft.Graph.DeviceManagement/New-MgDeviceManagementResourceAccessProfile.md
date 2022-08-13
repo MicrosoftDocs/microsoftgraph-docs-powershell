@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementresourceaccessprofile
@@ -236,7 +236,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>: The list of assignments for the device configuration profile.
+ASSIGNMENTS <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment\[]>: The list of assignments for the device configuration profile.
   - `[Id <String>]`: 
   - `[Intent <DeviceManagementResourceAccessProfileIntent?>]`: The administrator intent for the assignment of the profile.
   - `[SourceId <String>]`: The identifier of the source of the assignment.
@@ -245,7 +245,7 @@ ASSIGNMENTS <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>: 
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementResourceAccessProfileBase>: Base Profile Type for Resource Access
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementResourceAccessProfileBase>`: Base Profile Type for Resource Access
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>]`: The list of assignments for the device configuration profile.
