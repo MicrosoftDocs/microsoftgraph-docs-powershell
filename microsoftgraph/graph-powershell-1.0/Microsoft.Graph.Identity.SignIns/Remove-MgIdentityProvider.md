@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgidentityprovider
@@ -12,13 +12,13 @@ Delete identityProvider (deprecated)
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
-Remove-MgIdentityProvider -IdentityProviderId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgIdentityProvider -IdentityProviderBaseId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgIdentityProvider -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -31,12 +31,12 @@ Delete identityProvider (deprecated)
 
 ## PARAMETERS
 
-### -IdentityProviderId
-key: id of identityProvider
+### -IdentityProviderBaseId
+key: id of identityProviderBase
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationwindowhelloforbusinessmethoddevice
@@ -779,5 +779,8 @@ TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject\[]>: Groups and administrativ
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
