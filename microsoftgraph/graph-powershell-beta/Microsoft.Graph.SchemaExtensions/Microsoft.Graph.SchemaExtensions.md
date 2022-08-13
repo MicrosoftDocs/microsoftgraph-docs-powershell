@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.SchemaExtensions
 Module Guid: 7d73b58a-6120-481b-9f36-e85d8168ed00
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions
@@ -15,10 +15,10 @@ Microsoft Graph PowerShell Cmdlets
 Get entity from schemaExtensions by key
 
 ### [New-MgSchemaExtension](New-MgSchemaExtension.md)
-Add new entity to schemaExtensions
+Create schemaExtension
 
 ### [Remove-MgSchemaExtension](Remove-MgSchemaExtension.md)
-Delete entity from schemaExtensions
+Delete schemaExtension
 
 ### [Update-MgSchemaExtension](Update-MgSchemaExtension.md)
 Update entity in schemaExtensions
