@@ -103,7 +103,7 @@ ce73bdb5-bf12-405e-ab85-40122fdd6eb7 Brian Johnson (TAILSPIN) BrianJ@contoso.onm
 df1347a3-7ce7-4b4d-8aab-7c65b5c907b9 Cameron White                                                  CameronW@contoso…
 ```
 
-You can use an [OData filter](/graph/query-parameters.md#filter-parameter) to help locate the specific user you want. Run the following command, replacing `Megan Bowen` with the display name of the user you signed in with.
+You can use an [OData filter](/graph/query-parameters#filter-parameter) to help locate the specific user you want. Run the following command, replacing `Megan Bowen` with the display name of the user you signed in with.
 
 ```powershell
 $user = Get-MgUser -Filter "displayName eq 'Megan Bowen'"
@@ -142,7 +142,7 @@ Now that you have both the Team ID and the channel ID, you can post a message to
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" }
 ```
 
-This command differs from the previous commands you used. Instead of querying data, it's actually creating something. In Microsoft Graph, this command translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). The `-Body` parameter to the command maps to the `body` property on `chatMessage`. Other properties are mapped in a similar way, so you can change the message you send. For example, to send an urgent message use the following command.
+This command differs from the previous commands you used. Instead of querying data, it's actually creating something. In Microsoft Graph, this command translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/api/resources/chatmessage). The `-Body` parameter to the command maps to the `body` property on `chatMessage`. Other properties are mapped in a similar way, so you can change the message you send. For example, to send an urgent message use the following command.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
