@@ -88,7 +88,6 @@ function Update-GraphModuleHelp {
     git config --global user.name "Timothy Wamalwa"
     git add $moduleDocsPath
     git commit -m "Docs Generation for $ModuleName-$GraphVersion"
-    cd ..
 }
 
 # Install PlatyPS
@@ -123,7 +122,6 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-Set-Location ..\microsoftgraph-docs-powershell
 Update-GraphHelp -ModulesToGenerate $ModulesToGenerate
 
 Write-Host -ForegroundColor Green "-------------Done-------------"
