@@ -248,7 +248,16 @@ try{
 }	
 return "NA"	
 }
-
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_update_help_files_"+$date
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+     git checkout $proposedBranch
+}
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
 #cd microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------Done-------------"

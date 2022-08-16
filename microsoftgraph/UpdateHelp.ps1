@@ -102,7 +102,16 @@ $LASTEXITCODE = $null
 if ($PSEdition -ne 'Core') {
     Write-Error 'This script requires PowerShell Core to execute. [Note] Generated cmdlets will work in both PowerShell Core or Windows PowerShell.'
 }
-
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_update_help_files_"+$date
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+     git checkout $proposedBranch
+}
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
