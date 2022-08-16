@@ -1,0 +1,23 @@
+parameters:
+  projectFileName: PowerShellDocsUpdate
+  testType: 'Execution'
+steps:
+- task: PowerShell@2
+  displayName: Install Required Modules
+  inputs:
+    targetType: 'inline'
+    script: |
+        $modules = Get-Module -Name Microsoft.Graph -ListAvailable
+        if ($modules.Count -gt 0 -and $modules[0].Version -eq "1.11.0") {
+          echo "Latest version already installed"
+        }else {
+          echo "Installing latest version"
+          Install-Module Microsoft.Graph -Repository PSGallery -Scope AllUsers -Force -AllowClobber
+          Import-Module Microsoft.Graph -Global -Force  
+        }
+
+- template: checkout.yml
+  parameters:
+    projectFileName: ${{ parameters.projectFileName }}
+    runName: ${{ parameters.projectFileName }}
+    testType: ${{ parameters.testType }}
