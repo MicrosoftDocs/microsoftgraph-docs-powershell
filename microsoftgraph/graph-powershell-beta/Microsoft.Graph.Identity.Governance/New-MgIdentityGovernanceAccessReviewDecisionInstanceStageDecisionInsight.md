@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdecisioninstancestagedecisioninsight
 schema: 2.0.0
@@ -17,29 +17,29 @@ Create new navigation property to insights for identityGovernance
 New-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight
  -AccessReviewInstanceDecisionItemId <String> -AccessReviewInstanceDecisionItemId1 <String>
  -AccessReviewStageId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InsightCreatedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InsightCreatedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight
  -AccessReviewInstanceDecisionItemId <String> -AccessReviewInstanceDecisionItemId1 <String>
- -AccessReviewStageId <String> -BodyParameter <IMicrosoftGraphGovernanceInsight> [-WhatIf] [-Confirm]
+ -AccessReviewStageId <String> -BodyParameter <IMicrosoftGraphGovernanceInsight> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphGovernanceInsight> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InsightCreatedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphGovernanceInsight> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-InsightCreatedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,8 +53,8 @@ Create new navigation property to insights for identityGovernance
 key: id of accessReviewInstanceDecisionItem
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -68,8 +68,8 @@ Accept wildcard characters: False
 key: id of accessReviewInstanceDecisionItem
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -83,8 +83,8 @@ Accept wildcard characters: False
 key: id of accessReviewStage
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ governanceInsight
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceInsight
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceInsight
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,8 +145,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 Indicates when the insight was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +191,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,10 +208,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceInsight
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceInsight
+
 ## NOTES
 
 ALIASES
@@ -221,12 +224,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGovernanceInsight>`: governanceInsight
+BODYPARAMETER <IMicrosoftGraphGovernanceInsight>: governanceInsight
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -241,6 +244,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
   - `[AccessPackageResourceRoleScopeId <String>]`: key: id of accessPackageResourceRoleScope
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
+  - `[AccessPackageSubjectId <String>]`: key: id of accessPackageSubject
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
   - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
@@ -289,3 +293,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

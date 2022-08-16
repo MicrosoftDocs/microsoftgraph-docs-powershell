@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgonpremisepublishingprofileagentgrouppublishedresource
 schema: 2.0.0
@@ -17,14 +17,20 @@ Update the navigation property publishedResources in onPremisesPublishingProfile
 Update-MgOnPremisePublishingProfileAgentGroupPublishedResource -OnPremisesAgentGroupId <String>
  -OnPremisesPublishingProfileId <String> -PublishedResourceId <String> [-AdditionalProperties <Hashtable>]
  [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-DisplayName <String>] [-Id <String>]
- [-PublishingType <String>] [-ResourceName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PublishingType <String>] [-ResourceName <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgOnPremisePublishingProfileAgentGroupPublishedResource -OnPremisesAgentGroupId <String>
  -OnPremisesPublishingProfileId <String> -PublishedResourceId <String>
- -BodyParameter <IMicrosoftGraphPublishedResource> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPublishedResource> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgOnPremisePublishingProfileAgentGroupPublishedResource -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphPublishedResource> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -32,13 +38,7 @@ Update-MgOnPremisePublishingProfileAgentGroupPublishedResource -OnPremisesAgentG
 Update-MgOnPremisePublishingProfileAgentGroupPublishedResource -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
  [-DisplayName <String>] [-Id <String>] [-PublishingType <String>] [-ResourceName <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgOnPremisePublishingProfileAgentGroupPublishedResource -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphPublishedResource> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +52,7 @@ Update the navigation property publishedResources in onPremisesPublishingProfile
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for AGENTGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesAgentGroup[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ publishedResource
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPublishedResource
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublishedResource
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 Display Name of the publishedResource.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,8 +132,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -147,8 +147,8 @@ Accept wildcard characters: False
 key: id of onPremisesAgentGroup
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -162,8 +162,8 @@ Accept wildcard characters: False
 key: id of onPremisesPublishingProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -192,8 +192,8 @@ Accept wildcard characters: False
 key: id of publishedResource
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 onPremisesPublishingType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 Name of the publishedResource.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +253,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,10 +270,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublishedResource
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -283,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup\[]>: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
+AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup[]>: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Agents <IMicrosoftGraphOnPremisesAgent[]>]`: List of onPremisesAgent that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
     - `[Id <String>]`: 
@@ -302,7 +305,7 @@ AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup\[]>: List of onPremisesAgentGro
     - `[ResourceName <String>]`: Name of the publishedResource.
   - `[PublishingType <String>]`: onPremisesPublishingType
 
-BODYPARAMETER `<IMicrosoftGraphPublishedResource>`: publishedResource
+BODYPARAMETER <IMicrosoftGraphPublishedResource>: publishedResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
@@ -322,7 +325,7 @@ BODYPARAMETER `<IMicrosoftGraphPublishedResource>`: publishedResource
   - `[PublishingType <String>]`: onPremisesPublishingType
   - `[ResourceName <String>]`: Name of the publishedResource.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
@@ -353,3 +356,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

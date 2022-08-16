@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
+external help file:
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguserdeviceregisteredownerbyref
 schema: 2.0.0
@@ -15,13 +15,13 @@ Delete ref of navigation property registeredOwners for users
 ### Delete (Default)
 ```
 Remove-MgUserDeviceRegisteredOwnerByRef -DeviceId <String> -DirectoryObjectId <String> -UserId <String>
- [-Id <String>] [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgUserDeviceRegisteredOwnerByRef -InputObject <ICrossDeviceExperiencesIdentity> [-Id <String>]
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Delete ref of navigation property registeredOwners for users
 key: id of device
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 key: id of directoryObject
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 Delete Uri
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -96,7 +96,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICrossDeviceExperiencesIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +157,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,9 +174,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -186,7 +188,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
   - `[CommandId <String>]`: key: id of command
   - `[DeviceId <String>]`: key: id of device
@@ -197,3 +199,4 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

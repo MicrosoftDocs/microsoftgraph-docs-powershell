@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementdevicehealthscriptglobalscript
 schema: 2.0.0
@@ -8,38 +8,38 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceHealthScriptGlobalScript
 
 ## SYNOPSIS
-Update the Proprietary Device Health Script
+Invoke action updateGlobalScript
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementDeviceHealthScriptGlobalScript -DeviceHealthScriptId <String>
- [-AdditionalProperties <Hashtable>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceHealthScriptGlobalScript -DeviceHealthScriptId <String>
  -BodyParameter <IPaths1Ca4Qq5DevicemanagementDevicehealthscriptsDevicehealthscriptIdMicrosoftGraphUpdateglobalscriptPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementDeviceHealthScriptGlobalScript -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementDeviceHealthScriptGlobalScript -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Ca4Qq5DevicemanagementDevicehealthscriptsDevicehealthscriptIdMicrosoftGraphUpdateglobalscriptPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgDeviceManagementDeviceHealthScriptGlobalScript -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the Proprietary Device Health Script
+Invoke action updateGlobalScript
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Update the Proprietary Device Health Script
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Ca4Qq5DevicemanagementDevicehealthscriptsDevicehealthscriptIdMicrosoftGraphUpdateglobalscriptPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Ca4Qq5DevicemanagementDevicehealthscriptsDevicehealthscriptIdMicrosoftGraphUpdateglobalscriptPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of deviceHealthScript
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -96,8 +96,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,10 +159,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1Ca4Qq5DevicemanagementDevicehealthscriptsDevicehealthscriptIdMicrosoftGraphUpdateglobalscriptPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -172,11 +175,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ca4Qq5DevicemanagementDevicehealthscriptsDevicehealthscriptIdMicrosoftGraphUpdateglobalscriptPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ca4Qq5DevicemanagementDevicehealthscriptsDevicehealthscriptIdMicrosoftGraphUpdateglobalscriptPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Version <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -189,15 +192,11 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[DataSharingConsentId <String>]`: key: id of dataSharingConsent
   - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
-  - `[DetectedAppId <String>]`: key: id of detectedApp
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
   - `[DeviceCompliancePolicyId <String>]`: key: id of deviceCompliancePolicy
   - `[DeviceComplianceScriptId <String>]`: key: id of deviceComplianceScript
-  - `[DeviceConfigurationGroupAssignmentId <String>]`: key: id of deviceConfigurationGroupAssignment
   - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
   - `[DeviceCustomAttributeShellScriptId <String>]`: key: id of deviceCustomAttributeShellScript
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
   - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
@@ -206,7 +205,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
   - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
   - `[DeviceManagementReusablePolicySettingId <String>]`: key: id of deviceManagementReusablePolicySetting
-  - `[DeviceManagementScriptDeviceStateId <String>]`: key: id of deviceManagementScriptDeviceState
   - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript
   - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
   - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
@@ -230,5 +228,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsDriverUpdateProfileId <String>]`: key: id of windowsDriverUpdateProfile
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
+  - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
 ## RELATED LINKS
+

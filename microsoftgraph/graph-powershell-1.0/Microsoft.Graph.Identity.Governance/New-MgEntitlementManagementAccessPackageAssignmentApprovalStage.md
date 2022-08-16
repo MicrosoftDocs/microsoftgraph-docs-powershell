@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignmentapprovalstage
 schema: 2.0.0
@@ -16,28 +16,28 @@ Create new navigation property to stages for identityGovernance
 ```
 New-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId <String>
  [-AdditionalProperties <Hashtable>] [-AssignedToMe] [-DisplayName <String>] [-Id <String>]
- [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
- [-ReviewedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Justification <String>] [-ReviewedBy <IMicrosoftGraphIdentity>] [-ReviewedDateTime <DateTime>]
+ [-ReviewResult <String>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId <String>
- -BodyParameter <IMicrosoftGraphApprovalStage1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphApprovalStage1> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphApprovalStage1> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-AssignedToMe] [-DisplayName <String>] [-Id <String>]
- [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
- [-ReviewedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphApprovalStage1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Justification <String>] [-ReviewedBy <IMicrosoftGraphIdentity>] [-ReviewedDateTime <DateTime>]
+ [-ReviewResult <String>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Create new navigation property to stages for identityGovernance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -66,8 +66,8 @@ Accept wildcard characters: False
 key: id of approval
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ Indicates whether the stage is assigned to the calling user to review.
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ approvalStage
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApprovalStage1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovalStage1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -114,7 +114,7 @@ The label provided by the policy creator to identify an approval stage.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,8 +145,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 The justification associated with the approval stage decision.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ identity
 To construct, please use Get-Help -Online and see NOTES section for REVIEWEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -194,7 +194,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -210,7 +210,7 @@ The result of this approval record.
 Possible values include: NotReviewed, Approved, Denied.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +227,7 @@ Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -258,7 +258,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -275,10 +275,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovalStage1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovalStage1
+
 ## NOTES
 
 ALIASES
@@ -288,7 +291,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphApprovalStage1>`: approvalStage
+BODYPARAMETER <IMicrosoftGraphApprovalStage1>: approvalStage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssignedToMe <Boolean?>]`: Indicates whether the stage is assigned to the calling user to review. Read-only.
@@ -297,12 +300,12 @@ BODYPARAMETER `<IMicrosoftGraphApprovalStage1>`: approvalStage
   - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
   - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
   - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Status <String>]`: The stage status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -317,6 +320,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
   - `[AccessPackageResourceRoleScopeId <String>]`: key: id of accessPackageResourceRoleScope
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
+  - `[AccessPackageSubjectId <String>]`: key: id of accessPackageSubject
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
   - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
@@ -364,9 +368,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
   - `[UserId <String>]`: key: id of user
 
-REVIEWEDBY `<IMicrosoftGraphIdentity>`: identity
+REVIEWEDBY <IMicrosoftGraphIdentity>: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+

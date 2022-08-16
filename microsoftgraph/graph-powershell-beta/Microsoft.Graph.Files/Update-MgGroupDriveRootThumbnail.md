@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mggroupdriverootthumbnail
 schema: 2.0.0
@@ -17,27 +17,27 @@ Update the navigation property thumbnails in groups
 Update-MgGroupDriveRootThumbnail -DriveId <String> -GroupId <String> -ThumbnailSetId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Large <IMicrosoftGraphThumbnail>]
  [-Medium <IMicrosoftGraphThumbnail>] [-Small <IMicrosoftGraphThumbnail>] [-Source <IMicrosoftGraphThumbnail>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgGroupDriveRootThumbnail -DriveId <String> -GroupId <String> -ThumbnailSetId <String>
- -BodyParameter <IMicrosoftGraphThumbnailSet> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphThumbnailSet> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgGroupDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphThumbnailSet>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgGroupDriveRootThumbnail -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Large <IMicrosoftGraphThumbnail>] [-Medium <IMicrosoftGraphThumbnail>]
- [-Small <IMicrosoftGraphThumbnail>] [-Source <IMicrosoftGraphThumbnail>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Small <IMicrosoftGraphThumbnail>] [-Source <IMicrosoftGraphThumbnail>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgGroupDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphThumbnailSet>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Update the navigation property thumbnails in groups
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -67,7 +67,7 @@ thumbnailSet
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphThumbnailSet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnailSet
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 key: id of drive
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -128,8 +128,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ thumbnail
 To construct, please use Get-Help -Online and see NOTES section for LARGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphThumbnail
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnail
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -160,7 +160,7 @@ thumbnail
 To construct, please use Get-Help -Online and see NOTES section for MEDIUM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphThumbnail
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnail
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -191,7 +191,7 @@ thumbnail
 To construct, please use Get-Help -Online and see NOTES section for SMALL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphThumbnail
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnail
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -207,7 +207,7 @@ thumbnail
 To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphThumbnail
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnail
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -222,8 +222,8 @@ Accept wildcard characters: False
 key: id of thumbnailSet
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +253,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,10 +270,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnailSet
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -283,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphThumbnailSet>`: thumbnailSet
+BODYPARAMETER <IMicrosoftGraphThumbnailSet>: thumbnailSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Large <IMicrosoftGraphThumbnail>]`: thumbnail
@@ -297,7 +300,7 @@ BODYPARAMETER `<IMicrosoftGraphThumbnailSet>`: thumbnailSet
   - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
   - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
@@ -322,7 +325,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-LARGE `<IMicrosoftGraphThumbnail>`: thumbnail
+LARGE <IMicrosoftGraphThumbnail>: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -330,7 +333,7 @@ LARGE `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[Url <String>]`: The URL used to fetch the thumbnail content.
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
-MEDIUM `<IMicrosoftGraphThumbnail>`: thumbnail
+MEDIUM <IMicrosoftGraphThumbnail>: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -338,7 +341,7 @@ MEDIUM `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[Url <String>]`: The URL used to fetch the thumbnail content.
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
-SMALL `<IMicrosoftGraphThumbnail>`: thumbnail
+SMALL <IMicrosoftGraphThumbnail>: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -346,7 +349,7 @@ SMALL `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[Url <String>]`: The URL used to fetch the thumbnail content.
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
-SOURCE `<IMicrosoftGraphThumbnail>`: thumbnail
+SOURCE <IMicrosoftGraphThumbnail>: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -355,3 +358,4 @@ SOURCE `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
+

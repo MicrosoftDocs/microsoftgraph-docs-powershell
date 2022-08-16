@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag
 schema: 2.0.0
@@ -17,14 +17,20 @@ Create new navigation property to tags for security
 New-MgSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId <String> [-AdditionalProperties <Hashtable>]
  [-ChildSelectability <String>] [-ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewTag1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewTag1> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewTag1> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -32,14 +38,8 @@ New-MgSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId <String>
 New-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
  [-ChildSelectability <String>] [-ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryReviewTag1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Create new navigation property to tags for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -69,7 +69,7 @@ ediscoveryReviewTag
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryReviewTag1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 childSelectability
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -100,7 +100,7 @@ Returns the tags that are a child of a tag.
 To construct, please use Get-Help -Online and see NOTES section for CHILDTAGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryReviewTag1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -116,7 +116,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -161,8 +161,8 @@ Accept wildcard characters: False
 key: id of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -192,8 +192,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -223,7 +223,7 @@ ediscoveryReviewTag
 To construct, please use Get-Help -Online and see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryReviewTag1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -254,7 +254,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -271,10 +271,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag1
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag1
+
 ## NOTES
 
 ALIASES
@@ -284,7 +287,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryReviewTag1>`: ediscoveryReviewTag
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryReviewTag1>: ediscoveryReviewTag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -302,7 +305,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryReviewTag1>`: ediscoveryReviewT
   - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>]`: Returns the tags that are a child of a tag.
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>]`: ediscoveryReviewTag
 
-CHILDTAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag1\[]>: Returns the tags that are a child of a tag.
+CHILDTAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>: Returns the tags that are a child of a tag.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -319,7 +322,7 @@ CHILDTAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag1\[]>: Returns the tags tha
   - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>]`: Returns the tags that are a child of a tag.
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>]`: ediscoveryReviewTag
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -328,7 +331,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -372,7 +375,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-PARENT `<IMicrosoftGraphSecurityEdiscoveryReviewTag1>`: ediscoveryReviewTag
+PARENT <IMicrosoftGraphSecurityEdiscoveryReviewTag1>: ediscoveryReviewTag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -391,3 +394,4 @@ PARENT `<IMicrosoftGraphSecurityEdiscoveryReviewTag1>`: ediscoveryReviewTag
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
+

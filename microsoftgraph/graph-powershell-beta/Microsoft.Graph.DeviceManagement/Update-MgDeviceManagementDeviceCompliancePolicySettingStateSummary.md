@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicysettingstatesummary
 schema: 2.0.0
@@ -20,14 +20,21 @@ Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
  [-DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState1[]>] [-ErrorDeviceCount <Int32>]
  [-Id <String>] [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>]
  [-PlatformType <PolicyPlatformType>] [-RemediatedDeviceCount <Int32>] [-Setting <String>]
- [-SettingName <String>] [-UnknownDeviceCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SettingName <String>] [-UnknownDeviceCount <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
  -DeviceCompliancePolicySettingStateSummaryId <String>
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,14 +45,7 @@ Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -InputObject 
  [-DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState1[]>] [-ErrorDeviceCount <Int32>]
  [-Id <String>] [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>]
  [-PlatformType <PolicyPlatformType>] [-RemediatedDeviceCount <Int32>] [-Setting <String>]
- [-SettingName <String>] [-UnknownDeviceCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SettingName <String>] [-UnknownDeviceCount <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +59,7 @@ Update the navigation property deviceCompliancePolicySettingStateSummaries in de
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -75,7 +75,7 @@ Device Compilance Policy Setting State summary across the account.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 Number of compliant devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 Number of conflict devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,8 +120,8 @@ Accept wildcard characters: False
 key: id of deviceCompliancePolicySettingStateSummary
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -136,7 +136,7 @@ Not yet documented
 To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCESETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceSettingState1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceSettingState1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 Number of error devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,8 +182,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 Number of NonCompliant devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 Number of not applicable devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 Supported platform types for policies.
 
 ```yaml
-Type: PolicyPlatformType
+Type: Microsoft.Graph.PowerShell.Support.PolicyPlatformType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 Number of remediated devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 The setting class name and property name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 Name of the setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -302,7 +302,7 @@ Accept wildcard characters: False
 Number of unknown devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -317,7 +317,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -333,7 +333,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -350,10 +350,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -363,7 +366,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1>`: Device Compilance Policy Setting State summary across the account.
+BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1>: Device Compilance Policy Setting State summary across the account.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
@@ -391,7 +394,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1>`: Dev
   - `[SettingName <String>]`: Name of the setting.
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState1\[]>: Not yet documented
+DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState1[]>: Not yet documented
   - `[Id <String>]`: 
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceId <String>]`: The Device Id that is being reported
@@ -406,7 +409,7 @@ DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState1\[]>:
   - `[UserName <String>]`: The User Name that is being reported
   - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -535,4 +538,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusereventexceptionoccurrenceinstanceextension
 schema: 2.0.0
@@ -16,26 +16,26 @@ Update the navigation property extensions in users
 ```
 Update-MgUserEventExceptionOccurrenceInstanceExtension -EventId <String> -EventId1 <String> -EventId2 <String>
  -ExtensionId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserEventExceptionOccurrenceInstanceExtension -EventId <String> -EventId1 <String> -EventId2 <String>
- -ExtensionId <String> -UserId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+ -ExtensionId <String> -UserId <String> -BodyParameter <Hashtable> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalendarIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalendarIdentity>
- -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <Hashtable> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalendarIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,20 +43,13 @@ Update the navigation property extensions in users
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +64,7 @@ Accept wildcard characters: False
 extension
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,8 +79,8 @@ Accept wildcard characters: False
 key: id of event
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -101,8 +94,8 @@ Accept wildcard characters: False
 key: id of event
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -116,8 +109,8 @@ Accept wildcard characters: False
 key: id of event
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -131,8 +124,8 @@ Accept wildcard characters: False
 key: id of extension
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -146,7 +139,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +155,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -177,13 +170,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -192,8 +185,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -207,7 +200,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -223,7 +216,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,14 +233,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+  - `[AttachmentId <String>]`: key: id of attachment
+  - `[CalendarGroupId <String>]`: key: id of calendarGroup
+  - `[CalendarId <String>]`: key: id of calendar
+  - `[CalendarPermissionId <String>]`: key: id of calendarPermission
+  - `[EventId <String>]`: key: id of event
+  - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
+  - `[ExtensionId <String>]`: key: id of extension
+  - `[GroupId <String>]`: key: id of group
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[PlaceId <String>]`: key: id of place
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusereventexceptionoccurrenceinstanceextension](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusereventexceptionoccurrenceinstanceextension)
 

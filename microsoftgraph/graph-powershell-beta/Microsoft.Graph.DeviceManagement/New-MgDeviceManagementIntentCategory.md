@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementintentcategory
 schema: 2.0.0
@@ -17,13 +17,20 @@ Create new navigation property to categories for deviceManagement
 New-MgDeviceManagementIntentCategory -DeviceManagementIntentId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]
- [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementIntentCategory -DeviceManagementIntentId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,14 +39,7 @@ New-MgDeviceManagementIntentCategory -DeviceManagementIntentId <String>
 New-MgDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]
- [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Create new navigation property to categories for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ Entity representing an intent setting category
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementIntentSettingCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentSettingCategory
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 key: id of deviceManagementIntent
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 The category name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 The category contains top level required setting
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,8 +145,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -161,7 +161,7 @@ The setting definitions this category contains
 To construct, please use Get-Help -Online and see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettingDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ The settings this category contains
 To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettingInstance[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingInstance[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +208,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -225,10 +225,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentSettingCategory
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentSettingCategory
+
 ## NOTES
 
 ALIASES
@@ -238,7 +241,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntentSettingCategory>`: Entity representing an intent setting category
+BODYPARAMETER <IMicrosoftGraphDeviceManagementIntentSettingCategory>: Entity representing an intent setting category
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The category name
   - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
@@ -263,7 +266,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntentSettingCategory>`: Entity r
     - `[DefinitionId <String>]`: The ID of the setting definition for this instance
     - `[ValueJson <String>]`: JSON representation of the value
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -390,7 +393,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition\[]>: The setting definitions this category contains
+SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition[]>: The setting definitions this category contains
   - `[Id <String>]`: 
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
   - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
@@ -406,11 +409,10 @@ SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition\[]>: The se
   - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
   - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
 
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance\[]>: The settings this category contains
+SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance[]>: The settings this category contains
   - `[Id <String>]`: 
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
   - `[ValueJson <String>]`: JSON representation of the value
 
 ## RELATED LINKS
 
-## RELATED LINKS

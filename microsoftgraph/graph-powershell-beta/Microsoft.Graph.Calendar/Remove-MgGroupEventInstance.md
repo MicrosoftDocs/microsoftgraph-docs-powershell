@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mggroupeventinstance
 schema: 2.0.0
@@ -8,32 +8,24 @@ schema: 2.0.0
 # Remove-MgGroupEventInstance
 
 ## SYNOPSIS
-The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
-Navigation property.
-Read-only.
-Nullable.
+Delete navigation property instances for groups
 
 ## SYNTAX
 
 ### Delete1 (Default)
 ```
 Remove-MgGroupEventInstance -EventId <String> -EventId1 <String> -GroupId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
-Remove-MgGroupEventInstance -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgGroupEventInstance -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
-Navigation property.
-Read-only.
-Nullable.
+Delete navigation property instances for groups
 
 ## EXAMPLES
 
@@ -43,7 +35,7 @@ Nullable.
 key: id of event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -58,7 +50,7 @@ Accept wildcard characters: False
 key: id of event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -73,7 +65,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -88,7 +80,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -104,7 +96,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
 Parameter Sets: DeleteViaIdentity1
 Aliases:
 
@@ -119,7 +111,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -134,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -150,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -167,9 +159,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -179,13 +173,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
@@ -194,3 +189,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

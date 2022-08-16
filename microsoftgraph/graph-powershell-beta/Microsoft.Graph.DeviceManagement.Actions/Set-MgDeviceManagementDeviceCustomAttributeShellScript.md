@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdevicecustomattributeshellscript
 schema: 2.0.0
@@ -17,15 +17,22 @@ Invoke action assign
 Set-MgDeviceManagementDeviceCustomAttributeShellScript -DeviceCustomAttributeShellScriptId <String>
  [-AdditionalProperties <Hashtable>]
  [-DeviceManagementScriptAssignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]
- [-DeviceManagementScriptGroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceManagementScriptGroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Assign
 ```
 Set-MgDeviceManagementDeviceCustomAttributeShellScript -DeviceCustomAttributeShellScriptId <String>
  -BodyParameter <IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDevicecustomattributeshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssignViaIdentity
+```
+Set-MgDeviceManagementDeviceCustomAttributeShellScript -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDevicecustomattributeshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
@@ -33,15 +40,8 @@ Set-MgDeviceManagementDeviceCustomAttributeShellScript -DeviceCustomAttributeShe
 Set-MgDeviceManagementDeviceCustomAttributeShellScript -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>]
  [-DeviceManagementScriptAssignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]
- [-DeviceManagementScriptGroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssignViaIdentity
-```
-Set-MgDeviceManagementDeviceCustomAttributeShellScript -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDevicecustomattributeshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceManagementScriptGroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ Invoke action assign
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDevicecustomattributeshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDevicecustomattributeshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
@@ -86,8 +86,8 @@ Accept wildcard characters: False
 key: id of deviceCustomAttributeShellScript
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
 Aliases:
 
 Required: True
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for DEVICEMANAGEMENTSCRIPTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementScriptAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for DEVICEMANAGEMENTSCRIPTGROUPASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementScriptGroupAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptGroupAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -134,8 +134,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -180,7 +180,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -197,10 +197,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDevicecustomattributeshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -210,30 +213,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDevicecustomattributeshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDevicecustomattributeshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceManagementScriptAssignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[DeviceManagementScriptGroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[TargetGroupId <String>]`: The Id of the Azure Active Directory group we are targeting the script to.
 
-DEVICEMANAGEMENTSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptAssignment\[]>: .
-  - `[Id <String>]`: Read-only.
+DEVICEMANAGEMENTSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptAssignment[]>: .
+  - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-DEVICEMANAGEMENTSCRIPTGROUPASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptGroupAssignment\[]>: .
-  - `[Id <String>]`: Read-only.
+DEVICEMANAGEMENTSCRIPTGROUPASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>: .
+  - `[Id <String>]`: 
   - `[TargetGroupId <String>]`: The Id of the Azure Active Directory group we are targeting the script to.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -246,15 +249,11 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[DataSharingConsentId <String>]`: key: id of dataSharingConsent
   - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
-  - `[DetectedAppId <String>]`: key: id of detectedApp
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
   - `[DeviceCompliancePolicyId <String>]`: key: id of deviceCompliancePolicy
   - `[DeviceComplianceScriptId <String>]`: key: id of deviceComplianceScript
-  - `[DeviceConfigurationGroupAssignmentId <String>]`: key: id of deviceConfigurationGroupAssignment
   - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
   - `[DeviceCustomAttributeShellScriptId <String>]`: key: id of deviceCustomAttributeShellScript
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
   - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
@@ -263,7 +262,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
   - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
   - `[DeviceManagementReusablePolicySettingId <String>]`: key: id of deviceManagementReusablePolicySetting
-  - `[DeviceManagementScriptDeviceStateId <String>]`: key: id of deviceManagementScriptDeviceState
   - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript
   - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
   - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
@@ -287,5 +285,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsDriverUpdateProfileId <String>]`: key: id of windowsDriverUpdateProfile
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
+  - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
 ## RELATED LINKS
+

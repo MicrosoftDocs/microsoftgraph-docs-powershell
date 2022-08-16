@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdevicemanagementdeviceconfigurationassignedaccessmultimodeprofile
 schema: 2.0.0
@@ -16,23 +16,15 @@ Invoke action assignedAccessMultiModeProfiles
 ```
 Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile -DeviceConfigurationId <String>
  [-AdditionalProperties <Hashtable>]
- [-AssignedAccessMultiModeProfiles <IMicrosoftGraphWindowsAssignedAccessProfile[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AssignedAccessMultiModeProfiles <IMicrosoftGraphWindowsAssignedAccessProfile[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Access
 ```
 Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile -DeviceConfigurationId <String>
  -BodyParameter <IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AccessViaIdentityExpanded
-```
-Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignedAccessMultiModeProfiles <IMicrosoftGraphWindowsAssignedAccessProfile[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AccessViaIdentity
@@ -40,7 +32,15 @@ Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
 Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AccessViaIdentityExpanded
+```
+Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AssignedAccessMultiModeProfiles <IMicrosoftGraphWindowsAssignedAccessProfile[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,7 +54,7 @@ Invoke action assignedAccessMultiModeProfiles
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AccessExpanded, AccessViaIdentityExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDACCESSMULTIMODEPROFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsAssignedAccessProfile[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAssignedAccessProfile[]
 Parameter Sets: AccessExpanded, AccessViaIdentityExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Access, AccessViaIdentity
 Aliases:
 
@@ -101,8 +101,8 @@ Accept wildcard characters: False
 key: id of deviceConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: AccessExpanded, Access
+Type: System.String
+Parameter Sets: Access, AccessExpanded
 Aliases:
 
 Required: True
@@ -117,8 +117,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: AccessViaIdentityExpanded, AccessViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: AccessViaIdentity, AccessViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +163,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -180,10 +180,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -193,27 +196,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDACCESSMULTIMODEPROFILES <IMicrosoftGraphWindowsAssignedAccessProfile\[]>: .
-  - `[Id <String>]`: Read-only.
+ASSIGNEDACCESSMULTIMODEPROFILES <IMicrosoftGraphWindowsAssignedAccessProfile[]>: .
+  - `[Id <String>]`: 
   - `[AppUserModelIds <String[]>]`: These are the only Windows Store Apps that will be available to launch from the Start menu.
   - `[DesktopAppPaths <String[]>]`: These are the paths of the Desktop Apps that will be available on the Start menu and the only apps the user will be able to launch.
-  - `[ProfileName <String>]`: This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.
+  - `[ProfileName <String>]`: This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.
   - `[ShowTaskBar <Boolean?>]`: This setting allows the admin to specify whether the Task Bar is shown or not.
-  - `[StartMenuLayoutXml <Byte[]>]`: Allows admins to override the default Start layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in Binary format.
+  - `[StartMenuLayoutXml <Byte[]>]`: Allows admins to override the default Start layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in Binary format.
   - `[UserAccounts <String[]>]`: The user accounts that will be locked to this kiosk configuration.
 
-BODYPARAMETER `<IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignedAccessMultiModeProfiles <IMicrosoftGraphWindowsAssignedAccessProfile[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AppUserModelIds <String[]>]`: These are the only Windows Store Apps that will be available to launch from the Start menu.
     - `[DesktopAppPaths <String[]>]`: These are the paths of the Desktop Apps that will be available on the Start menu and the only apps the user will be able to launch.
-    - `[ProfileName <String>]`: This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.
+    - `[ProfileName <String>]`: This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.
     - `[ShowTaskBar <Boolean?>]`: This setting allows the admin to specify whether the Task Bar is shown or not.
-    - `[StartMenuLayoutXml <Byte[]>]`: Allows admins to override the default Start layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in Binary format.
+    - `[StartMenuLayoutXml <Byte[]>]`: Allows admins to override the default Start layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in Binary format.
     - `[UserAccounts <String[]>]`: The user accounts that will be locked to this kiosk configuration.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -226,15 +229,11 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[DataSharingConsentId <String>]`: key: id of dataSharingConsent
   - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
-  - `[DetectedAppId <String>]`: key: id of detectedApp
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
   - `[DeviceCompliancePolicyId <String>]`: key: id of deviceCompliancePolicy
   - `[DeviceComplianceScriptId <String>]`: key: id of deviceComplianceScript
-  - `[DeviceConfigurationGroupAssignmentId <String>]`: key: id of deviceConfigurationGroupAssignment
   - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
   - `[DeviceCustomAttributeShellScriptId <String>]`: key: id of deviceCustomAttributeShellScript
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
   - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
@@ -243,7 +242,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
   - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
   - `[DeviceManagementReusablePolicySettingId <String>]`: key: id of deviceManagementReusablePolicySetting
-  - `[DeviceManagementScriptDeviceStateId <String>]`: key: id of deviceManagementScriptDeviceState
   - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript
   - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
   - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
@@ -267,5 +265,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsDriverUpdateProfileId <String>]`: key: id of windowsDriverUpdateProfile
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
+  - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
 ## RELATED LINKS
+

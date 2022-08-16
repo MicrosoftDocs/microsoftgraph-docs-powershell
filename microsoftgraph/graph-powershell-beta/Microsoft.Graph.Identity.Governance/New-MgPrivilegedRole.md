@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgprivilegedrole
 schema: 2.0.0
@@ -17,12 +17,12 @@ Add new entity to privilegedRoles
 New-MgPrivilegedRole [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>] [-Id <String>] [-Name <String>]
  [-Settings <IMicrosoftGraphPrivilegedRoleSettings>] [-Summary <IMicrosoftGraphPrivilegedRoleSummary>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPrivilegedRole -BodyParameter <IMicrosoftGraphPrivilegedRole> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPrivilegedRole -BodyParameter <IMicrosoftGraphPrivilegedRole> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Add new entity to privilegedRoles
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +54,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedRoleAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ privilegedRole
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedRole
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRole
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 Role name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ privilegedRoleSettings
 To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedRoleSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +132,7 @@ privilegedRoleSummary
 To construct, please use Get-Help -Online and see NOTES section for SUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedRoleSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSummary
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +163,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -180,9 +180,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRole
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRole
+
 ## NOTES
 
 ALIASES
@@ -192,7 +194,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphPrivilegedRoleAssignment\[]>: The assignments for this role. Read-only. Nullable.
+ASSIGNMENTS <IMicrosoftGraphPrivilegedRoleAssignment[]>: The assignments for this role. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[ExpirationDateTime <DateTime?>]`: The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.
   - `[IsElevated <Boolean?>]`: true if the role assignment is activated. false if the role assignment is deactivated.
@@ -226,7 +228,7 @@ ASSIGNMENTS <IMicrosoftGraphPrivilegedRoleAssignment\[]>: The assignments for th
       - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
   - `[UserId <String>]`: User identifier. In GUID string format.
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
+BODYPARAMETER <IMicrosoftGraphPrivilegedRole>: privilegedRole
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: The assignments for this role. Read-only. Nullable.
@@ -260,7 +262,7 @@ BODYPARAMETER `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
     - `[Status <String>]`: roleSummaryStatus
     - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
 
-SETTINGS `<IMicrosoftGraphPrivilegedRoleSettings>`: privilegedRoleSettings
+SETTINGS <IMicrosoftGraphPrivilegedRoleSettings>: privilegedRoleSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ApprovalOnElevation <Boolean?>]`: true if the approval is required when activate the role. false if the approval is not required when activate the role.
@@ -274,7 +276,7 @@ SETTINGS `<IMicrosoftGraphPrivilegedRoleSettings>`: privilegedRoleSettings
   - `[NotificationToUserOnElevation <Boolean?>]`: true if send notification to the end user when the role is activated. false if do not send notification when the role is activated.
   - `[TicketingInfoOnElevation <Boolean?>]`: true if the ticketing information is required when activate the role. false if the ticketing information is not required when activate the role.
 
-SUMMARY `<IMicrosoftGraphPrivilegedRoleSummary>`: privilegedRoleSummary
+SUMMARY <IMicrosoftGraphPrivilegedRoleSummary>: privilegedRoleSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ElevatedCount <Int32?>]`: The number of users that have the role assigned and the role is activated.
@@ -284,3 +286,4 @@ SUMMARY `<IMicrosoftGraphPrivilegedRoleSummary>`: privilegedRoleSummary
   - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
 
 ## RELATED LINKS
+

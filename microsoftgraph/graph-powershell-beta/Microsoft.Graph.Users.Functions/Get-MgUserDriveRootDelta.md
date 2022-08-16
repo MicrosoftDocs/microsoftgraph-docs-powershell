@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mguserdriverootdelta
 schema: 2.0.0
@@ -19,15 +19,15 @@ Get-MgUserDriveRootDelta -DriveId <String> -UserId <String> [<CommonParameters>]
 
 ### Delta3
 ```
-Get-MgUserDriveRootDelta -DriveId <String> -UserId <String> -Token <String> [<CommonParameters>]
+Get-MgUserDriveRootDelta -DriveId <String> -Token <String> -UserId <String> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity3
+### DeltaViaIdentity2
 ```
 Get-MgUserDriveRootDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity2
+### DeltaViaIdentity3
 ```
 Get-MgUserDriveRootDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -43,7 +43,7 @@ Invoke function delta
 key: id of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta2, Delta3
 Aliases:
 
@@ -59,8 +59,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: DeltaViaIdentity3, DeltaViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: DeltaViaIdentity2, DeltaViaIdentity3
 Aliases:
 
 Required: True
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 Usage: token='{token}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta3
 Aliases:
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta2, Delta3
 Aliases:
 
@@ -106,9 +106,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
+
 ## NOTES
 
 ALIASES
@@ -118,7 +120,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
@@ -151,7 +153,9 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[Token <String>]`: Usage: token='{token}'
   - `[Top <Int32?>]`: Usage: top={top}
+  - `[Upn <String>]`: Usage: upn='{upn}'
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

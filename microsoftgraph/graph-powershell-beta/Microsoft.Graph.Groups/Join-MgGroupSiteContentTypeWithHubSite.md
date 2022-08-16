@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/join-mggroupsitecontenttypewithhubsite
 schema: 2.0.0
@@ -16,27 +16,27 @@ Invoke action associateWithHubSites
 ```
 Join-MgGroupSiteContentTypeWithHubSite -ContentTypeId <String> -GroupId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Associate
 ```
 Join-MgGroupSiteContentTypeWithHubSite -ContentTypeId <String> -GroupId <String> -SiteId <String>
  -BodyParameter <IPaths1Lktc19GroupsGroupIdSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssociateViaIdentityExpanded
-```
-Join-MgGroupSiteContentTypeWithHubSite -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AssociateViaIdentity
 ```
 Join-MgGroupSiteContentTypeWithHubSite -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1Lktc19GroupsGroupIdSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssociateViaIdentityExpanded
+```
+Join-MgGroupSiteContentTypeWithHubSite -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Invoke action associateWithHubSites
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Lktc19GroupsGroupIdSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Lktc19GroupsGroupIdSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Associate, AssociateViaIdentity
 Aliases:
 
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 key: id of contentType
 
 ```yaml
-Type: String
-Parameter Sets: AssociateExpanded, Associate
+Type: System.String
+Parameter Sets: Associate, AssociateExpanded
 Aliases:
 
 Required: True
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: AssociateExpanded, Associate
+Type: System.String
+Parameter Sets: Associate, AssociateExpanded
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
@@ -127,8 +127,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: AssociateViaIdentityExpanded, AssociateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: AssociateViaIdentity, AssociateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
@@ -172,8 +172,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: AssociateExpanded, Associate
+Type: System.String
+Parameter Sets: Associate, AssociateExpanded
 Aliases:
 
 Required: True
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -203,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -220,10 +220,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1Lktc19GroupsGroupIdSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -233,12 +236,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Lktc19GroupsGroupIdSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Lktc19GroupsGroupIdSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HubSiteUrls <String[]>]`: 
   - `[PropagateToExistingLists <Boolean?>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -282,3 +285,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

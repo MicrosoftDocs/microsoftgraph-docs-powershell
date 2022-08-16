@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation
 schema: 2.0.0
@@ -15,28 +15,28 @@ Create new navigation property to operations for external
 ### CreateExpanded (Default)
 ```
 New-MgExternalConnectionOperation -ExternalConnectionId <String> [-AdditionalProperties <Hashtable>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-WhatIf] [-Confirm]
+ [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgExternalConnectionOperation -ExternalConnectionId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgExternalConnectionOperation -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
+ [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -51,7 +51,7 @@ Create new navigation property to operations for external
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ connectionOperation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsConnectionOperation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -83,7 +83,7 @@ publicError
 To construct, please use Get-Help -Online and see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPublicError
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublicError
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 key: id of externalConnection
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -129,8 +129,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 connectionOperationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,10 +192,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
+
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
+
 ## NOTES
 
 ALIASES
@@ -205,7 +208,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsConnectionOperation>`: connectionOperation
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsConnectionOperation>: connectionOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -225,7 +228,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsConnectionOperation>`: connecti
     - `[Target <String>]`: The target of the error.
   - `[Status <String>]`: connectionOperationStatus
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <String>]`: Represents the error code.
   - `[Details <IMicrosoftGraphPublicErrorDetail[]>]`: Details of the error.
@@ -241,10 +244,11 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   - `[Message <String>]`: A non-localized message for the developer.
   - `[Target <String>]`: The target of the error.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
+  - `[ExternalActivityId <String>]`: key: id of externalActivity
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
   - `[ExternalGroupId <String>]`: key: id of externalGroup
   - `[ExternalItemId <String>]`: key: id of externalItem
@@ -252,3 +256,4 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: key: id of qna
 
 ## RELATED LINKS
+

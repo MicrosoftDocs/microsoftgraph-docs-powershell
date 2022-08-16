@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/test-mguserdrivelistcontenttypepublished
 schema: 2.0.0
@@ -12,13 +12,13 @@ Invoke function isPublished
 
 ## SYNTAX
 
-### Is1 (Default)
+### Is (Default)
 ```
 Test-MgUserDriveListContentTypePublished -ContentTypeId <String> -DriveId <String> -UserId <String>
  [<CommonParameters>]
 ```
 
-### IsViaIdentity1
+### IsViaIdentity
 ```
 Test-MgUserDriveListContentTypePublished -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -34,8 +34,8 @@ Invoke function isPublished
 key: id of contentType
 
 ```yaml
-Type: String
-Parameter Sets: Is1
+Type: System.String
+Parameter Sets: Is
 Aliases:
 
 Required: True
@@ -49,8 +49,8 @@ Accept wildcard characters: False
 key: id of drive
 
 ```yaml
-Type: String
-Parameter Sets: Is1
+Type: System.String
+Parameter Sets: Is
 Aliases:
 
 Required: True
@@ -65,8 +65,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: IsViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: IsViaIdentity
 Aliases:
 
 Required: True
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: Is1
+Type: System.String
+Parameter Sets: Is
 Aliases:
 
 Required: True
@@ -97,9 +97,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -109,7 +111,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
@@ -142,7 +144,9 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[Token <String>]`: Usage: token='{token}'
   - `[Top <Int32?>]`: Usage: top={top}
+  - `[Upn <String>]`: Usage: upn='{upn}'
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

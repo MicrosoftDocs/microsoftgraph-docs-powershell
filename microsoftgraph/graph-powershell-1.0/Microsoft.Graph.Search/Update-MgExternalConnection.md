@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnection
 schema: 2.0.0
@@ -17,16 +17,23 @@ Update the navigation property connections in external
 Update-MgExternalConnection -ExternalConnectionId <String> [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-Description <String>]
  [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>]
- [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
+ [-Items <IMicrosoftGraphExternalConnectorsExternalItem1[]>] [-Name <String>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
- [-Schema <IMicrosoftGraphExternalConnectorsSchema>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Schema <IMicrosoftGraphExternalConnectorsSchema1>] [-State <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgExternalConnection -ExternalConnectionId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection1> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgExternalConnection -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -35,16 +42,9 @@ Update-MgExternalConnection -ExternalConnectionId <String>
 Update-MgExternalConnection -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-Description <String>]
  [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>]
- [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
+ [-Items <IMicrosoftGraphExternalConnectorsExternalItem1[]>] [-Name <String>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
- [-Schema <IMicrosoftGraphExternalConnectorsSchema>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgExternalConnection -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection1> [-PassThru] [-WhatIf] [-Confirm]
+ [-Schema <IMicrosoftGraphExternalConnectorsSchema1>] [-State <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -59,7 +59,7 @@ Update the navigation property connections in external
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -75,7 +75,7 @@ externalConnection
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalConnection1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -91,7 +91,7 @@ configuration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConfiguration
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -107,7 +107,7 @@ Description of the connection displayed in the Microsoft 365 admin center.
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -122,8 +122,8 @@ Accept wildcard characters: False
 key: id of externalConnection
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalGroup[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalGroup[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -169,8 +169,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalItem[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -202,7 +202,7 @@ Maximum length of 128 characters.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsConnectionOperation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -249,7 +249,7 @@ schema
 To construct, please use Get-Help -Online and see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsSchema
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSchema1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 connectionState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -295,7 +295,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -312,10 +312,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection1
+
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -325,7 +328,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection1>`: externalConnection
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection1>: externalConnection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Configuration <IMicrosoftGraphExternalConnectorsConfiguration>]`: configuration
@@ -385,11 +388,11 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection1>`: external
       - `[Type <String>]`: propertyType
   - `[State <String>]`: connectionState
 
-CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
+CONFIGURATION <IMicrosoftGraphExternalConnectorsConfiguration>: configuration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthorizedAppIds <String[]>]`: A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection.
 
-GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: .
+GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup[]>: .
   - `[Id <String>]`: 
   - `[Description <String>]`: The description of the external group. Optional.
   - `[DisplayName <String>]`: The friendly name of the external group. Optional.
@@ -397,17 +400,18 @@ GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: .
     - `[Id <String>]`: 
     - `[Type <String>]`: identityType
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
+  - `[ExternalActivityId <String>]`: key: id of externalActivity
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
   - `[ExternalGroupId <String>]`: key: id of externalGroup
   - `[ExternalItemId <String>]`: key: id of externalItem
   - `[IdentityId <String>]`: key: id of identity
   - `[QnaId <String>]`: key: id of qna
 
-ITEMS <IMicrosoftGraphExternalConnectorsExternalItem1\[]>: .
+ITEMS <IMicrosoftGraphExternalConnectorsExternalItem1[]>: .
   - `[Id <String>]`: 
   - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
     - `[AccessType <String>]`: accessType
@@ -420,7 +424,7 @@ ITEMS <IMicrosoftGraphExternalConnectorsExternalItem1\[]>: .
   - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation\[]>: .
+OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation[]>: .
   - `[Id <String>]`: 
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -439,7 +443,7 @@ OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation\[]>: .
     - `[Target <String>]`: The target of the error.
   - `[Status <String>]`: connectionOperationStatus
 
-SCHEMA `<IMicrosoftGraphExternalConnectorsSchema1>`: schema
+SCHEMA <IMicrosoftGraphExternalConnectorsSchema1>: schema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[BaseType <String>]`: Must be set to microsoft.graph.externalItem. Required.
@@ -455,4 +459,3 @@ SCHEMA `<IMicrosoftGraphExternalConnectorsSchema1>`: schema
 
 ## RELATED LINKS
 
-## RELATED LINKS

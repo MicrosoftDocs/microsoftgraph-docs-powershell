@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrecommendation
 schema: 2.0.0
@@ -15,17 +15,17 @@ Create new navigation property to recommendations for directory
 ### CreateExpanded (Default)
 ```
 New-MgDirectoryRecommendation [-ActionSteps <IMicrosoftGraphActionStep[]>] [-AdditionalProperties <Hashtable>]
- [-Benefits <String>] [-Category <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-ImpactStartDateTime <DateTime>] [-ImpactType <String>]
- [-ImpactedResources <IMicrosoftGraphRecommendationResource[]>] [-Insights <String>]
+ [-Benefits <String>] [-Category <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
+ [-Id <String>] [-ImpactedResources <IMicrosoftGraphRecommendationResource[]>]
+ [-ImpactStartDateTime <DateTime>] [-ImpactType <String>] [-Insights <String>]
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
- [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-Status <String>] [-WhatIf] [-Confirm]
+ [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryRecommendation -BodyParameter <IMicrosoftGraphRecommendation> [-WhatIf] [-Confirm]
+New-MgDirectoryRecommendation -BodyParameter <IMicrosoftGraphRecommendation> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Create new navigation property to recommendations for directory
 To construct, please use Get-Help -Online and see NOTES section for ACTIONSTEPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphActionStep[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActionStep[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +87,7 @@ recommendation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecommendation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendation
 Parameter Sets: Create
 Aliases:
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 recommendationCategory
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for IMPACTEDRESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecommendationResource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendationResource[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 recommendationPriority
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 recommendationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -329,7 +329,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -346,9 +346,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendation
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendation
+
 ## NOTES
 
 ALIASES
@@ -358,7 +360,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIONSTEPS <IMicrosoftGraphActionStep\[]>: .
+ACTIONSTEPS <IMicrosoftGraphActionStep[]>: .
   - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: 
@@ -366,7 +368,7 @@ ACTIONSTEPS <IMicrosoftGraphActionStep\[]>: .
   - `[StepNumber <Int64?>]`: 
   - `[Text <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphRecommendation>`: recommendation
+BODYPARAMETER <IMicrosoftGraphRecommendation>: recommendation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActionSteps <IMicrosoftGraphActionStep[]>]`: 
@@ -404,7 +406,7 @@ BODYPARAMETER `<IMicrosoftGraphRecommendation>`: recommendation
   - `[Priority <String>]`: recommendationPriority
   - `[Status <String>]`: recommendationStatus
 
-IMPACTEDRESOURCES <IMicrosoftGraphRecommendationResource\[]>: .
+IMPACTEDRESOURCES <IMicrosoftGraphRecommendationResource[]>: .
   - `[Id <String>]`: 
   - `[AddedDateTime <DateTime?>]`: 
   - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
@@ -420,3 +422,4 @@ IMPACTEDRESOURCES <IMicrosoftGraphRecommendationResource\[]>: .
   - `[Status <String>]`: recommendationStatus
 
 ## RELATED LINKS
+

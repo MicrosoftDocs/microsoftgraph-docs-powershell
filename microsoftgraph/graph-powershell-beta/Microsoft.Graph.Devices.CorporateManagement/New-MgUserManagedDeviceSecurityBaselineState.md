@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddevicesecuritybaselinestate
 schema: 2.0.0
@@ -17,14 +17,20 @@ Create new navigation property to securityBaselineStates for users
 New-MgUserManagedDeviceSecurityBaselineState -ManagedDeviceId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-SecurityBaselineTemplateId <String>] [-SettingStates <IMicrosoftGraphSecurityBaselineSettingState[]>]
- [-State <SecurityBaselineComplianceState>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-State <SecurityBaselineComplianceState>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserManagedDeviceSecurityBaselineState -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphSecurityBaselineState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityBaselineState> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityBaselineState> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -32,14 +38,8 @@ New-MgUserManagedDeviceSecurityBaselineState -ManagedDeviceId <String> -UserId <
 New-MgUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-SecurityBaselineTemplateId <String>] [-SettingStates <IMicrosoftGraphSecurityBaselineSettingState[]>]
- [-State <SecurityBaselineComplianceState>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-State <SecurityBaselineComplianceState>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphSecurityBaselineState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Create new navigation property to securityBaselineStates for users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ Security baseline state for a device.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityBaselineState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 The display name of the security baseline
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +115,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,8 +130,8 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 The security baseline template id
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ The security baseline state for different settings for a device
 To construct, please use Get-Help -Online and see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityBaselineSettingState[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineSettingState[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 Security Baseline Compliance State
 
 ```yaml
-Type: SecurityBaselineComplianceState
+Type: Microsoft.Graph.PowerShell.Support.SecurityBaselineComplianceState
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -191,8 +191,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 User Principal Name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -237,7 +237,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -254,10 +254,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
+
 ## NOTES
 
 ALIASES
@@ -267,7 +270,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityBaselineState>`: Security baseline state for a device.
+BODYPARAMETER <IMicrosoftGraphSecurityBaselineState>: Security baseline state for a device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the security baseline
@@ -291,7 +294,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityBaselineState>`: Security baseline state 
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
   - `[UserPrincipalName <String>]`: User Principal Name
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
@@ -360,7 +363,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
-SETTINGSTATES <IMicrosoftGraphSecurityBaselineSettingState\[]>: The security baseline state for different settings for a device
+SETTINGSTATES <IMicrosoftGraphSecurityBaselineSettingState[]>: The security baseline state for different settings for a device
   - `[Id <String>]`: 
   - `[ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>]`: The policies that contribute to this setting instance
     - `[DisplayName <String>]`: Name of the policy
@@ -378,3 +381,4 @@ SETTINGSTATES <IMicrosoftGraphSecurityBaselineSettingState\[]>: The security bas
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
 
 ## RELATED LINKS
+

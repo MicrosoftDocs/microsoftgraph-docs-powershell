@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mggroupteam
 schema: 2.0.0
@@ -20,18 +20,25 @@ Update-MgGroupTeam -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-FunSettings <IMicrosoftGraphTeamFunSettings>] [-Group <IMicrosoftGraphGroup>]
  [-GuestSettings <IMicrosoftGraphTeamGuestSettings>] [-Id <String>]
  [-IncomingChannels <IMicrosoftGraphChannel1[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
- [-InternalId <String>] [-IsArchived] [-MemberSettings <IMicrosoftGraphTeamMemberSettings>]
- [-Members <IMicrosoftGraphConversationMember[]>] [-MessagingSettings <IMicrosoftGraphTeamMessagingSettings>]
+ [-InternalId <String>] [-IsArchived] [-Members <IMicrosoftGraphConversationMember[]>]
+ [-MemberSettings <IMicrosoftGraphTeamMemberSettings>]
+ [-MessagingSettings <IMicrosoftGraphTeamMessagingSettings>]
  [-Operations <IMicrosoftGraphTeamsAsyncOperation[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
  [-PrimaryChannel <IMicrosoftGraphChannel1>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
  [-Summary <IMicrosoftGraphTeamSummary>] [-Template <Hashtable>] [-TenantId <String>] [-Visibility <String>]
- [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WebUrl <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgGroupTeam -GroupId <String> -BodyParameter <IMicrosoftGraphTeam1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgGroupTeam -GroupId <String> -BodyParameter <IMicrosoftGraphTeam1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgGroupTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam1> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -42,18 +49,13 @@ Update-MgGroupTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtab
  [-FunSettings <IMicrosoftGraphTeamFunSettings>] [-Group <IMicrosoftGraphGroup>]
  [-GuestSettings <IMicrosoftGraphTeamGuestSettings>] [-Id <String>]
  [-IncomingChannels <IMicrosoftGraphChannel1[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
- [-InternalId <String>] [-IsArchived] [-MemberSettings <IMicrosoftGraphTeamMemberSettings>]
- [-Members <IMicrosoftGraphConversationMember[]>] [-MessagingSettings <IMicrosoftGraphTeamMessagingSettings>]
+ [-InternalId <String>] [-IsArchived] [-Members <IMicrosoftGraphConversationMember[]>]
+ [-MemberSettings <IMicrosoftGraphTeamMemberSettings>]
+ [-MessagingSettings <IMicrosoftGraphTeamMessagingSettings>]
  [-Operations <IMicrosoftGraphTeamsAsyncOperation[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
  [-PrimaryChannel <IMicrosoftGraphChannel1>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
  [-Summary <IMicrosoftGraphTeamSummary>] [-Template <Hashtable>] [-TenantId <String>] [-Visibility <String>]
- [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgGroupTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam1> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-WebUrl <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,7 +69,7 @@ Update the navigation property team in groups
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -83,7 +85,7 @@ List of channels either hosted in or shared with the team (incoming channels).
 To construct, please use Get-Help -Online and see NOTES section for ALLCHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -99,7 +101,7 @@ team
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeam1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -115,7 +117,7 @@ The collection of channels and messages associated with the team.
 To construct, please use Get-Help -Online and see NOTES section for CHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -132,7 +134,7 @@ Typically describes the data or business sensitivity of the team.
 Must match one of a pre-configured set in the tenant's directory.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -147,7 +149,7 @@ Accept wildcard characters: False
 Timestamp at which the team was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -163,7 +165,7 @@ An optional description for the team.
 Maximum length: 1024 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -178,7 +180,7 @@ Accept wildcard characters: False
 The name of the team.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -194,7 +196,7 @@ teamFunSettings
 To construct, please use Get-Help -Online and see NOTES section for FUNSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamFunSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamFunSettings
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -210,7 +212,7 @@ group
 To construct, please use Get-Help -Online and see NOTES section for GROUP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroup
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -225,8 +227,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -241,7 +243,7 @@ teamGuestSettings
 To construct, please use Get-Help -Online and see NOTES section for GUESTSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamGuestSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamGuestSettings
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -256,7 +258,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -272,7 +274,7 @@ List of channels shared with the team.
 To construct, please use Get-Help -Online and see NOTES section for INCOMINGCHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -288,8 +290,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -304,7 +306,7 @@ The apps installed in this team.
 To construct, please use Get-Help -Online and see NOTES section for INSTALLEDAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppInstallation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -319,7 +321,7 @@ Accept wildcard characters: False
 A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -334,7 +336,7 @@ Accept wildcard characters: False
 Whether this team is in read-only mode.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -350,7 +352,7 @@ Members and owners of the team.
 To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationMember[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -366,7 +368,7 @@ teamMemberSettings
 To construct, please use Get-Help -Online and see NOTES section for MEMBERSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamMemberSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamMemberSettings
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -382,7 +384,7 @@ teamMessagingSettings
 To construct, please use Get-Help -Online and see NOTES section for MESSAGINGSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamMessagingSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamMessagingSettings
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -398,7 +400,7 @@ The async operations that ran or are running on this team.
 To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAsyncOperation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -413,7 +415,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -429,7 +431,7 @@ profilePhoto
 To construct, please use Get-Help -Online and see NOTES section for PHOTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProfilePhoto
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -445,7 +447,7 @@ channel
 To construct, please use Get-Help -Online and see NOTES section for PRIMARYCHANNEL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -461,7 +463,7 @@ schedule
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSchedule
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -476,7 +478,7 @@ Accept wildcard characters: False
 teamSpecialization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -492,7 +494,7 @@ teamSummary
 To construct, please use Get-Help -Online and see NOTES section for SUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamSummary
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -507,7 +509,7 @@ Accept wildcard characters: False
 teamsTemplate
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -522,7 +524,7 @@ Accept wildcard characters: False
 The ID of the Azure Active Directory tenant.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -537,7 +539,7 @@ Accept wildcard characters: False
 teamVisibilityType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -554,7 +556,7 @@ This is the URL that you get when you right-click a team in the Microsoft Teams 
 This URL should be treated as an opaque blob, and not parsed.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -569,7 +571,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -585,7 +587,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -602,10 +604,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam1
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -615,7 +620,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or shared with the team (incoming channels).
+ALLCHANNELS <IMicrosoftGraphChannel1[]>: List of channels either hosted in or shared with the team (incoming channels).
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Read only. Timestamp at which the channel was created.
   - `[Description <String>]`: Optional textual description for the channel.
@@ -642,7 +647,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
         - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
         - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
         - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
         - `[ContentInfo <IMicrosoftGraphJson>]`: Json
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -667,7 +672,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
             - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
             - `[AlternativeText <String>]`: 
             - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -778,7 +783,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
           - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: 
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -1029,7 +1034,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1341,11 +1346,11 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
                 - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
                 - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
               - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
-          - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types present in this list.
+          - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
             - `[Id <String>]`: 
             - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
-            - `[Base <IMicrosoftGraphContentType1>]`: contentType
-            - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
+            - `[Base <IMicrosoftGraphContentType>]`: contentType
+            - `[BaseTypes <IMicrosoftGraphContentType[]>]`: The collection of content types that are ancestors of this content type.
             - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
               - `[Id <String>]`: 
               - `[Name <String>]`: The name of the column  in this content type.
@@ -1544,7 +1549,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
         - `[Id <String>]`: 
         - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
         - `[Columns <IMicrosoftGraphColumnDefinition[]>]`: The collection of column definitions reusable across lists under this site.
-        - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types defined for this site.
+        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types defined for this site.
         - `[DisplayName <String>]`: The full title for the site. Read-only.
         - `[Drive <IMicrosoftGraphDrive1>]`: drive
         - `[Drives <IMicrosoftGraphDrive1[]>]`: The collection of drives (document libraries) under this site.
@@ -1774,7 +1779,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
           - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-      - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+      - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
       - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
       - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
         - `[Id <String>]`: 
@@ -2422,7 +2427,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
           - `[ActionState <ActionState?>]`: State of the action on the device
           - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
           - `[StartDateTime <DateTime?>]`: Time the action was initiated
-        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Description <String>]`: Optional description for the device category.
@@ -2666,7 +2671,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
         - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
       - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
       - `[People <IMicrosoftGraphPerson[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
         - `[Id <String>]`: 
@@ -2690,7 +2695,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
         - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
           - `[Address <String>]`: The email address.
           - `[ItemId <String>]`: 
-          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
           - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
         - `[Surname <String>]`: The person's surname.
         - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -2775,6 +2780,17 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
           - `[IsShared <Boolean?>]`: True if the task list is shared with other users
           - `[Tasks <IMicrosoftGraphTodoTask[]>]`: The tasks in this task list. Read-only. Nullable.
             - `[Id <String>]`: 
+            - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
+              - `[Id <String>]`: 
+              - `[Content <Byte[]>]`: The content streams that are uploaded.
+              - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+              - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+            - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+              - `[Id <String>]`: 
+              - `[ContentType <String>]`: The MIME type.
+              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+              - `[Size <Int32?>]`: The length of the attachment in bytes.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -2788,6 +2804,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
             - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
+            - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
             - `[Importance <String>]`: importance
             - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
             - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -2799,6 +2816,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
               - `[WebUrl <String>]`: Deep link to the linkedResource.
             - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
             - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+            - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Status <String>]`: taskStatus
             - `[Title <String>]`: A brief description of the task.
           - `[WellknownListName <String>]`: wellknownListName
@@ -2999,7 +3017,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
         - `[Type <String>]`: Indicates what type of reference is associated with the name. Possible values are: String, Integer, Double, Boolean, Range. Read-only.
         - `[Value <IMicrosoftGraphJson>]`: Json
         - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
-        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Charts <IMicrosoftGraphWorkbookChart[]>]`: Returns collection of charts that are part of the worksheet. Read-only.
@@ -3115,13 +3133,13 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
               - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a chart title object.
             - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
             - `[Width <Double?>]`: Represents the width, in points, of the chart object.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Name <String>]`: The display name of the worksheet.
           - `[Names <IMicrosoftGraphWorkbookNamedItem[]>]`: Returns collection of names that are associated with the worksheet. Read-only.
           - `[PivotTables <IMicrosoftGraphWorkbookPivotTable[]>]`: Collection of PivotTables that are part of the worksheet.
             - `[Id <String>]`: 
             - `[Name <String>]`: Name of the PivotTable.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
           - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3189,7 +3207,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
               - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
               - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
             - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
       - `[Operations <IMicrosoftGraphWorkbookOperation[]>]`: The status of Workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response. Read-only. Nullable.
         - `[Id <String>]`: 
@@ -3201,7 +3219,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
         - `[ResourceLocation <String>]`: The resource URI for the result.
         - `[Status <String>]`: workbookOperationStatus
       - `[Tables <IMicrosoftGraphWorkbookTable[]>]`: Represents a collection of tables associated with the workbook. Read-only.
-      - `[Worksheets <IMicrosoftGraphWorkbookWorksheet1[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
+      - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
   - `[IsFavoriteByDefault <Boolean?>]`: Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with Create team. Default: false.
   - `[Members <IMicrosoftGraphConversationMember[]>]`: A collection of membership records associated with the channel.
   - `[MembershipType <String>]`: channelMembershipType
@@ -3217,7 +3235,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
+BODYPARAMETER <IMicrosoftGraphTeam1>: team
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AllChannels <IMicrosoftGraphChannel1[]>]`: List of channels either hosted in or shared with the team (incoming channels).
@@ -3247,7 +3265,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
           - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
           - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
           - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
           - `[ContentInfo <IMicrosoftGraphJson>]`: Json
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -3272,7 +3290,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
               - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
               - `[AlternativeText <String>]`: 
               - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -3383,7 +3401,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
             - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: 
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
           - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -3634,7 +3652,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3946,11 +3964,11 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
                   - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
                   - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
                 - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
-            - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types present in this list.
+            - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
               - `[Id <String>]`: 
               - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
-              - `[Base <IMicrosoftGraphContentType1>]`: contentType
-              - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
+              - `[Base <IMicrosoftGraphContentType>]`: contentType
+              - `[BaseTypes <IMicrosoftGraphContentType[]>]`: The collection of content types that are ancestors of this content type.
               - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
                 - `[Id <String>]`: 
                 - `[Name <String>]`: The name of the column  in this content type.
@@ -4149,7 +4167,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
           - `[Id <String>]`: 
           - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
           - `[Columns <IMicrosoftGraphColumnDefinition[]>]`: The collection of column definitions reusable across lists under this site.
-          - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types defined for this site.
+          - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types defined for this site.
           - `[DisplayName <String>]`: The full title for the site. Read-only.
           - `[Drive <IMicrosoftGraphDrive1>]`: drive
           - `[Drives <IMicrosoftGraphDrive1[]>]`: The collection of drives (document libraries) under this site.
@@ -4379,7 +4397,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
             - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-        - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+        - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
         - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
         - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
@@ -4590,7 +4608,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
             - `[ActionState <ActionState?>]`: State of the action on the device
             - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
             - `[StartDateTime <DateTime?>]`: Time the action was initiated
-          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[Description <String>]`: Optional description for the device category.
@@ -4838,7 +4856,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
           - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
         - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
         - `[People <IMicrosoftGraphPerson[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
           - `[Id <String>]`: 
@@ -4862,7 +4880,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
           - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
             - `[Address <String>]`: The email address.
             - `[ItemId <String>]`: 
-            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
             - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
           - `[Surname <String>]`: The person's surname.
           - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -5043,6 +5061,17 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
             - `[IsShared <Boolean?>]`: True if the task list is shared with other users
             - `[Tasks <IMicrosoftGraphTodoTask[]>]`: The tasks in this task list. Read-only. Nullable.
               - `[Id <String>]`: 
+              - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
+                - `[Id <String>]`: 
+                - `[Content <Byte[]>]`: The content streams that are uploaded.
+                - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+                - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+              - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+                - `[Id <String>]`: 
+                - `[ContentType <String>]`: The MIME type.
+                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+                - `[Size <Int32?>]`: The length of the attachment in bytes.
               - `[Body <IMicrosoftGraphItemBody>]`: itemBody
               - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
               - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -5056,6 +5085,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
               - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
               - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
+              - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
               - `[Importance <String>]`: importance
               - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
               - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -5067,6 +5097,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
                 - `[WebUrl <String>]`: Deep link to the linkedResource.
               - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
               - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+              - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[Status <String>]`: taskStatus
               - `[Title <String>]`: A brief description of the task.
             - `[WellknownListName <String>]`: wellknownListName
@@ -5267,7 +5298,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
           - `[Type <String>]`: Indicates what type of reference is associated with the name. Possible values are: String, Integer, Double, Boolean, Range. Read-only.
           - `[Value <IMicrosoftGraphJson>]`: Json
           - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
-          - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+          - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[Charts <IMicrosoftGraphWorkbookChart[]>]`: Returns collection of charts that are part of the worksheet. Read-only.
@@ -5383,13 +5414,13 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
                 - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a chart title object.
               - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
               - `[Width <Double?>]`: Represents the width, in points, of the chart object.
-              - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+              - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[Name <String>]`: The display name of the worksheet.
             - `[Names <IMicrosoftGraphWorkbookNamedItem[]>]`: Returns collection of names that are associated with the worksheet. Read-only.
             - `[PivotTables <IMicrosoftGraphWorkbookPivotTable[]>]`: Collection of PivotTables that are part of the worksheet.
               - `[Id <String>]`: 
               - `[Name <String>]`: Name of the PivotTable.
-              - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+              - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
             - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5457,7 +5488,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
                 - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
                 - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
               - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
-              - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+              - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
         - `[Operations <IMicrosoftGraphWorkbookOperation[]>]`: The status of Workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response. Read-only. Nullable.
           - `[Id <String>]`: 
@@ -5469,7 +5500,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
           - `[ResourceLocation <String>]`: The resource URI for the result.
           - `[Status <String>]`: workbookOperationStatus
         - `[Tables <IMicrosoftGraphWorkbookTable[]>]`: Represents a collection of tables associated with the workbook. Read-only.
-        - `[Worksheets <IMicrosoftGraphWorkbookWorksheet1[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
+        - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
     - `[IsFavoriteByDefault <Boolean?>]`: Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with Create team. Default: false.
     - `[Members <IMicrosoftGraphConversationMember[]>]`: A collection of membership records associated with the channel.
     - `[MembershipType <String>]`: channelMembershipType
@@ -5820,7 +5851,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
   - `[Visibility <String>]`: teamVisibilityType
   - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
 
-CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages associated with the team.
+CHANNELS <IMicrosoftGraphChannel1[]>: The collection of channels and messages associated with the team.
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Read only. Timestamp at which the channel was created.
   - `[Description <String>]`: Optional textual description for the channel.
@@ -5847,7 +5878,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
         - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
         - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
         - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
         - `[ContentInfo <IMicrosoftGraphJson>]`: Json
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -5872,7 +5903,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
             - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
             - `[AlternativeText <String>]`: 
             - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -5983,7 +6014,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
           - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: 
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -6234,7 +6265,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6546,11 +6577,11 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
                 - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
                 - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
               - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
-          - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types present in this list.
+          - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
             - `[Id <String>]`: 
             - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
-            - `[Base <IMicrosoftGraphContentType1>]`: contentType
-            - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
+            - `[Base <IMicrosoftGraphContentType>]`: contentType
+            - `[BaseTypes <IMicrosoftGraphContentType[]>]`: The collection of content types that are ancestors of this content type.
             - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
               - `[Id <String>]`: 
               - `[Name <String>]`: The name of the column  in this content type.
@@ -6749,7 +6780,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
         - `[Id <String>]`: 
         - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
         - `[Columns <IMicrosoftGraphColumnDefinition[]>]`: The collection of column definitions reusable across lists under this site.
-        - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types defined for this site.
+        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types defined for this site.
         - `[DisplayName <String>]`: The full title for the site. Read-only.
         - `[Drive <IMicrosoftGraphDrive1>]`: drive
         - `[Drives <IMicrosoftGraphDrive1[]>]`: The collection of drives (document libraries) under this site.
@@ -6979,7 +7010,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
           - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-      - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+      - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
       - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
       - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
         - `[Id <String>]`: 
@@ -7627,7 +7658,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
           - `[ActionState <ActionState?>]`: State of the action on the device
           - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
           - `[StartDateTime <DateTime?>]`: Time the action was initiated
-        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Description <String>]`: Optional description for the device category.
@@ -7871,7 +7902,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
         - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
       - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
       - `[People <IMicrosoftGraphPerson[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
         - `[Id <String>]`: 
@@ -7895,7 +7926,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
         - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
           - `[Address <String>]`: The email address.
           - `[ItemId <String>]`: 
-          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
           - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
         - `[Surname <String>]`: The person's surname.
         - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -7980,6 +8011,17 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
           - `[IsShared <Boolean?>]`: True if the task list is shared with other users
           - `[Tasks <IMicrosoftGraphTodoTask[]>]`: The tasks in this task list. Read-only. Nullable.
             - `[Id <String>]`: 
+            - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
+              - `[Id <String>]`: 
+              - `[Content <Byte[]>]`: The content streams that are uploaded.
+              - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+              - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+            - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+              - `[Id <String>]`: 
+              - `[ContentType <String>]`: The MIME type.
+              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+              - `[Size <Int32?>]`: The length of the attachment in bytes.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -7993,6 +8035,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
             - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
+            - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
             - `[Importance <String>]`: importance
             - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
             - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -8004,6 +8047,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
               - `[WebUrl <String>]`: Deep link to the linkedResource.
             - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
             - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+            - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Status <String>]`: taskStatus
             - `[Title <String>]`: A brief description of the task.
           - `[WellknownListName <String>]`: wellknownListName
@@ -8204,7 +8248,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
         - `[Type <String>]`: Indicates what type of reference is associated with the name. Possible values are: String, Integer, Double, Boolean, Range. Read-only.
         - `[Value <IMicrosoftGraphJson>]`: Json
         - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
-        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Charts <IMicrosoftGraphWorkbookChart[]>]`: Returns collection of charts that are part of the worksheet. Read-only.
@@ -8320,13 +8364,13 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
               - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a chart title object.
             - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
             - `[Width <Double?>]`: Represents the width, in points, of the chart object.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Name <String>]`: The display name of the worksheet.
           - `[Names <IMicrosoftGraphWorkbookNamedItem[]>]`: Returns collection of names that are associated with the worksheet. Read-only.
           - `[PivotTables <IMicrosoftGraphWorkbookPivotTable[]>]`: Collection of PivotTables that are part of the worksheet.
             - `[Id <String>]`: 
             - `[Name <String>]`: Name of the PivotTable.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
           - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8394,7 +8438,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
               - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
               - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
             - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
       - `[Operations <IMicrosoftGraphWorkbookOperation[]>]`: The status of Workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response. Read-only. Nullable.
         - `[Id <String>]`: 
@@ -8406,7 +8450,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
         - `[ResourceLocation <String>]`: The resource URI for the result.
         - `[Status <String>]`: workbookOperationStatus
       - `[Tables <IMicrosoftGraphWorkbookTable[]>]`: Represents a collection of tables associated with the workbook. Read-only.
-      - `[Worksheets <IMicrosoftGraphWorkbookWorksheet1[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
+      - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
   - `[IsFavoriteByDefault <Boolean?>]`: Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with Create team. Default: false.
   - `[Members <IMicrosoftGraphConversationMember[]>]`: A collection of membership records associated with the channel.
   - `[MembershipType <String>]`: channelMembershipType
@@ -8422,14 +8466,14 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-FUNSETTINGS `<IMicrosoftGraphTeamFunSettings>`: teamFunSettings
+FUNSETTINGS <IMicrosoftGraphTeamFunSettings>: teamFunSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
   - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
   - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
   - `[GiphyContentRating <String>]`: giphyRatingType
 
-GROUP `<IMicrosoftGraphGroup>`: group
+GROUP <IMicrosoftGraphGroup>: group
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
@@ -8672,7 +8716,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
         - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
         - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
         - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
         - `[ContentInfo <IMicrosoftGraphJson>]`: Json
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -8697,7 +8741,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
             - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
             - `[AlternativeText <String>]`: 
             - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -8794,7 +8838,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
           - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: 
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -8892,7 +8936,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9375,7 +9419,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
                     - `[Type <String>]`: Indicates what type of reference is associated with the name. Possible values are: String, Integer, Double, Boolean, Range. Read-only.
                     - `[Value <IMicrosoftGraphJson>]`: Json
                     - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
-                    - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+                    - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: 
                       - `[Charts <IMicrosoftGraphWorkbookChart[]>]`: Returns collection of charts that are part of the worksheet. Read-only.
@@ -9491,13 +9535,13 @@ GROUP `<IMicrosoftGraphGroup>`: group
                           - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a chart title object.
                         - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
                         - `[Width <Double?>]`: Represents the width, in points, of the chart object.
-                        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+                        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                       - `[Name <String>]`: The display name of the worksheet.
                       - `[Names <IMicrosoftGraphWorkbookNamedItem[]>]`: Returns collection of names that are associated with the worksheet. Read-only.
                       - `[PivotTables <IMicrosoftGraphWorkbookPivotTable[]>]`: Collection of PivotTables that are part of the worksheet.
                         - `[Id <String>]`: 
                         - `[Name <String>]`: Name of the PivotTable.
-                        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+                        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                       - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
                       - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9565,7 +9609,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
                           - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
                           - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
                         - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
-                        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+                        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                       - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
                   - `[Operations <IMicrosoftGraphWorkbookOperation[]>]`: The status of Workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response. Read-only. Nullable.
                     - `[Id <String>]`: 
@@ -9577,7 +9621,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
                     - `[ResourceLocation <String>]`: The resource URI for the result.
                     - `[Status <String>]`: workbookOperationStatus
                   - `[Tables <IMicrosoftGraphWorkbookTable[]>]`: Represents a collection of tables associated with the workbook. Read-only.
-                  - `[Worksheets <IMicrosoftGraphWorkbookWorksheet1[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
+                  - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
             - `[Create <IMicrosoftGraphItemActionStat>]`: itemActionStat
             - `[Delete <IMicrosoftGraphItemActionStat>]`: itemActionStat
             - `[Edit <IMicrosoftGraphItemActionStat>]`: itemActionStat
@@ -9721,11 +9765,11 @@ GROUP `<IMicrosoftGraphGroup>`: group
               - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
               - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
             - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
-        - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types defined for this site.
+        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types defined for this site.
           - `[Id <String>]`: 
           - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
-          - `[Base <IMicrosoftGraphContentType1>]`: contentType
-          - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
+          - `[Base <IMicrosoftGraphContentType>]`: contentType
+          - `[BaseTypes <IMicrosoftGraphContentType[]>]`: The collection of content types that are ancestors of this content type.
           - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
             - `[Id <String>]`: 
             - `[Name <String>]`: The name of the column  in this content type.
@@ -9804,7 +9848,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
           - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
           - `[Id <String>]`: 
           - `[Columns <IMicrosoftGraphColumnDefinition[]>]`: The collection of field definitions for this list.
-          - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types present in this list.
+          - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
           - `[DisplayName <String>]`: The displayable title of the list.
           - `[Drive <IMicrosoftGraphDrive1>]`: drive
           - `[Items <IMicrosoftGraphListItem[]>]`: All items contained in the list.
@@ -10003,7 +10047,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
           - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-      - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+      - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
       - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
       - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
         - `[Id <String>]`: 
@@ -10444,7 +10488,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
           - `[ActionState <ActionState?>]`: State of the action on the device
           - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
           - `[StartDateTime <DateTime?>]`: Time the action was initiated
-        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Description <String>]`: Optional description for the device category.
@@ -10692,7 +10736,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
         - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
       - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
       - `[People <IMicrosoftGraphPerson[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
         - `[Id <String>]`: 
@@ -10716,7 +10760,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
         - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
           - `[Address <String>]`: The email address.
           - `[ItemId <String>]`: 
-          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
           - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
         - `[Surname <String>]`: The person's surname.
         - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -10897,6 +10941,17 @@ GROUP `<IMicrosoftGraphGroup>`: group
           - `[IsShared <Boolean?>]`: True if the task list is shared with other users
           - `[Tasks <IMicrosoftGraphTodoTask[]>]`: The tasks in this task list. Read-only. Nullable.
             - `[Id <String>]`: 
+            - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
+              - `[Id <String>]`: 
+              - `[Content <Byte[]>]`: The content streams that are uploaded.
+              - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+              - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+            - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+              - `[Id <String>]`: 
+              - `[ContentType <String>]`: The MIME type.
+              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+              - `[Size <Int32?>]`: The length of the attachment in bytes.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -10910,6 +10965,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
             - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
+            - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
             - `[Importance <String>]`: importance
             - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
             - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -10921,6 +10977,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
               - `[WebUrl <String>]`: Deep link to the linkedResource.
             - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
             - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+            - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Status <String>]`: taskStatus
             - `[Title <String>]`: A brief description of the task.
           - `[WellknownListName <String>]`: wellknownListName
@@ -11031,12 +11088,12 @@ GROUP `<IMicrosoftGraphGroup>`: group
   - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as unseenConversationsCount.Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
   - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or HiddenMembership. HiddenMembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
 
-GUESTSETTINGS `<IMicrosoftGraphTeamGuestSettings>`: teamGuestSettings
+GUESTSETTINGS <IMicrosoftGraphTeamGuestSettings>: teamGuestSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, guests can add and update channels.
   - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
 
-INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the team.
+INCOMINGCHANNELS <IMicrosoftGraphChannel1[]>: List of channels shared with the team.
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Read only. Timestamp at which the channel was created.
   - `[Description <String>]`: Optional textual description for the channel.
@@ -11063,7 +11120,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
         - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
         - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
         - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
         - `[ContentInfo <IMicrosoftGraphJson>]`: Json
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -11088,7 +11145,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
             - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
             - `[AlternativeText <String>]`: 
             - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -11199,7 +11256,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
           - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: 
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -11450,7 +11507,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11762,11 +11819,11 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
                 - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
                 - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
               - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
-          - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types present in this list.
+          - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
             - `[Id <String>]`: 
             - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
-            - `[Base <IMicrosoftGraphContentType1>]`: contentType
-            - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
+            - `[Base <IMicrosoftGraphContentType>]`: contentType
+            - `[BaseTypes <IMicrosoftGraphContentType[]>]`: The collection of content types that are ancestors of this content type.
             - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
               - `[Id <String>]`: 
               - `[Name <String>]`: The name of the column  in this content type.
@@ -11965,7 +12022,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
         - `[Id <String>]`: 
         - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
         - `[Columns <IMicrosoftGraphColumnDefinition[]>]`: The collection of column definitions reusable across lists under this site.
-        - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types defined for this site.
+        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types defined for this site.
         - `[DisplayName <String>]`: The full title for the site. Read-only.
         - `[Drive <IMicrosoftGraphDrive1>]`: drive
         - `[Drives <IMicrosoftGraphDrive1[]>]`: The collection of drives (document libraries) under this site.
@@ -12195,7 +12252,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
           - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-      - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+      - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
       - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
       - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
         - `[Id <String>]`: 
@@ -12843,7 +12900,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
           - `[ActionState <ActionState?>]`: State of the action on the device
           - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
           - `[StartDateTime <DateTime?>]`: Time the action was initiated
-        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Description <String>]`: Optional description for the device category.
@@ -13087,7 +13144,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
         - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
       - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
       - `[People <IMicrosoftGraphPerson[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
         - `[Id <String>]`: 
@@ -13111,7 +13168,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
         - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
           - `[Address <String>]`: The email address.
           - `[ItemId <String>]`: 
-          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
           - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
         - `[Surname <String>]`: The person's surname.
         - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -13196,6 +13253,17 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
           - `[IsShared <Boolean?>]`: True if the task list is shared with other users
           - `[Tasks <IMicrosoftGraphTodoTask[]>]`: The tasks in this task list. Read-only. Nullable.
             - `[Id <String>]`: 
+            - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
+              - `[Id <String>]`: 
+              - `[Content <Byte[]>]`: The content streams that are uploaded.
+              - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+              - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+            - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+              - `[Id <String>]`: 
+              - `[ContentType <String>]`: The MIME type.
+              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+              - `[Size <Int32?>]`: The length of the attachment in bytes.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -13209,6 +13277,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
             - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
+            - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
             - `[Importance <String>]`: importance
             - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
             - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -13220,6 +13289,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
               - `[WebUrl <String>]`: Deep link to the linkedResource.
             - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
             - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+            - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Status <String>]`: taskStatus
             - `[Title <String>]`: A brief description of the task.
           - `[WellknownListName <String>]`: wellknownListName
@@ -13420,7 +13490,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
         - `[Type <String>]`: Indicates what type of reference is associated with the name. Possible values are: String, Integer, Double, Boolean, Range. Read-only.
         - `[Value <IMicrosoftGraphJson>]`: Json
         - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
-        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Charts <IMicrosoftGraphWorkbookChart[]>]`: Returns collection of charts that are part of the worksheet. Read-only.
@@ -13536,13 +13606,13 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
               - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a chart title object.
             - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
             - `[Width <Double?>]`: Represents the width, in points, of the chart object.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Name <String>]`: The display name of the worksheet.
           - `[Names <IMicrosoftGraphWorkbookNamedItem[]>]`: Returns collection of names that are associated with the worksheet. Read-only.
           - `[PivotTables <IMicrosoftGraphWorkbookPivotTable[]>]`: Collection of PivotTables that are part of the worksheet.
             - `[Id <String>]`: 
             - `[Name <String>]`: Name of the PivotTable.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
           - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13610,7 +13680,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
               - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
               - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
             - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
       - `[Operations <IMicrosoftGraphWorkbookOperation[]>]`: The status of Workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response. Read-only. Nullable.
         - `[Id <String>]`: 
@@ -13622,7 +13692,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
         - `[ResourceLocation <String>]`: The resource URI for the result.
         - `[Status <String>]`: workbookOperationStatus
       - `[Tables <IMicrosoftGraphWorkbookTable[]>]`: Represents a collection of tables associated with the workbook. Read-only.
-      - `[Worksheets <IMicrosoftGraphWorkbookWorksheet1[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
+      - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
   - `[IsFavoriteByDefault <Boolean?>]`: Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with Create team. Default: false.
   - `[Members <IMicrosoftGraphConversationMember[]>]`: A collection of membership records associated with the channel.
   - `[MembershipType <String>]`: channelMembershipType
@@ -13638,7 +13708,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -13658,6 +13728,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
@@ -13675,7 +13747,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-INSTALLEDAPPS <IMicrosoftGraphTeamsAppInstallation\[]>: The apps installed in this team.
+INSTALLEDAPPS <IMicrosoftGraphTeamsAppInstallation[]>: The apps installed in this team.
   - `[Id <String>]`: 
   - `[TeamsApp <IMicrosoftGraphTeamsApp1>]`: teamsApp
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13705,13 +13777,13 @@ INSTALLEDAPPS <IMicrosoftGraphTeamsAppInstallation\[]>: The apps installed in th
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
 
-MEMBERS <IMicrosoftGraphConversationMember\[]>: Members and owners of the team.
+MEMBERS <IMicrosoftGraphConversationMember[]>: Members and owners of the team.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the user.
   - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
-MEMBERSETTINGS `<IMicrosoftGraphTeamMemberSettings>`: teamMemberSettings
+MEMBERSETTINGS <IMicrosoftGraphTeamMemberSettings>: teamMemberSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowAddRemoveApps <Boolean?>]`: If set to true, members can add and remove apps.
   - `[AllowCreatePrivateChannels <Boolean?>]`: If set to true, members can add and update private channels.
@@ -13720,7 +13792,7 @@ MEMBERSETTINGS `<IMicrosoftGraphTeamMemberSettings>`: teamMemberSettings
   - `[AllowCreateUpdateRemoveTabs <Boolean?>]`: If set to true, members can add, update, and remove tabs.
   - `[AllowDeleteChannels <Boolean?>]`: If set to true, members can delete channels.
 
-MESSAGINGSETTINGS `<IMicrosoftGraphTeamMessagingSettings>`: teamMessagingSettings
+MESSAGINGSETTINGS <IMicrosoftGraphTeamMessagingSettings>: teamMessagingSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowChannelMentions <Boolean?>]`: If set to true, @channel mentions are allowed.
   - `[AllowOwnerDeleteMessages <Boolean?>]`: If set to true, owners can delete any message.
@@ -13728,7 +13800,7 @@ MESSAGINGSETTINGS `<IMicrosoftGraphTeamMessagingSettings>`: teamMessagingSetting
   - `[AllowUserDeleteMessages <Boolean?>]`: If set to true, users can delete their messages.
   - `[AllowUserEditMessages <Boolean?>]`: If set to true, users can edit their messages.
 
-OPERATIONS <IMicrosoftGraphTeamsAsyncOperation\[]>: The async operations that ran or are running on this team.
+OPERATIONS <IMicrosoftGraphTeamsAsyncOperation[]>: The async operations that ran or are running on this team.
   - `[Id <String>]`: 
   - `[AttemptsCount <Int32?>]`: Number of times the operation was attempted before being marked successful or failed.
   - `[CreatedDateTime <DateTime?>]`: Time when the operation was created.
@@ -13742,13 +13814,13 @@ OPERATIONS <IMicrosoftGraphTeamsAsyncOperation\[]>: The async operations that ra
   - `[TargetResourceId <String>]`: The ID of the object that's created or modified as result of this async operation, typically a team.
   - `[TargetResourceLocation <String>]`: The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.
 
-PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
+PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Height <Int32?>]`: The height of the photo. Read-only.
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 
-PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
+PRIMARYCHANNEL <IMicrosoftGraphChannel1>: channel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Read only. Timestamp at which the channel was created.
@@ -13776,7 +13848,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
         - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
         - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
         - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
         - `[ContentInfo <IMicrosoftGraphJson>]`: Json
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -13801,7 +13873,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
             - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
             - `[AlternativeText <String>]`: 
             - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -13912,7 +13984,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
           - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: 
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -14163,7 +14235,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14475,11 +14547,11 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
                 - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
                 - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
               - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
-          - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types present in this list.
+          - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
             - `[Id <String>]`: 
             - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
-            - `[Base <IMicrosoftGraphContentType1>]`: contentType
-            - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
+            - `[Base <IMicrosoftGraphContentType>]`: contentType
+            - `[BaseTypes <IMicrosoftGraphContentType[]>]`: The collection of content types that are ancestors of this content type.
             - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
               - `[Id <String>]`: 
               - `[Name <String>]`: The name of the column  in this content type.
@@ -14678,7 +14750,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
         - `[Id <String>]`: 
         - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
         - `[Columns <IMicrosoftGraphColumnDefinition[]>]`: The collection of column definitions reusable across lists under this site.
-        - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types defined for this site.
+        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types defined for this site.
         - `[DisplayName <String>]`: The full title for the site. Read-only.
         - `[Drive <IMicrosoftGraphDrive1>]`: drive
         - `[Drives <IMicrosoftGraphDrive1[]>]`: The collection of drives (document libraries) under this site.
@@ -14908,7 +14980,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
           - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-      - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+      - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
       - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
       - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
         - `[Id <String>]`: 
@@ -15556,7 +15628,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
           - `[ActionState <ActionState?>]`: State of the action on the device
           - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
           - `[StartDateTime <DateTime?>]`: Time the action was initiated
-        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Description <String>]`: Optional description for the device category.
@@ -15800,7 +15872,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
         - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
       - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
       - `[People <IMicrosoftGraphPerson[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
         - `[Id <String>]`: 
@@ -15824,7 +15896,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
         - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
           - `[Address <String>]`: The email address.
           - `[ItemId <String>]`: 
-          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
           - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
         - `[Surname <String>]`: The person's surname.
         - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -15909,6 +15981,17 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
           - `[IsShared <Boolean?>]`: True if the task list is shared with other users
           - `[Tasks <IMicrosoftGraphTodoTask[]>]`: The tasks in this task list. Read-only. Nullable.
             - `[Id <String>]`: 
+            - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
+              - `[Id <String>]`: 
+              - `[Content <Byte[]>]`: The content streams that are uploaded.
+              - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+              - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+            - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+              - `[Id <String>]`: 
+              - `[ContentType <String>]`: The MIME type.
+              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+              - `[Size <Int32?>]`: The length of the attachment in bytes.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -15922,6 +16005,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
             - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
+            - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
             - `[Importance <String>]`: importance
             - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
             - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -15933,6 +16017,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
               - `[WebUrl <String>]`: Deep link to the linkedResource.
             - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
             - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+            - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Status <String>]`: taskStatus
             - `[Title <String>]`: A brief description of the task.
           - `[WellknownListName <String>]`: wellknownListName
@@ -16133,7 +16218,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
         - `[Type <String>]`: Indicates what type of reference is associated with the name. Possible values are: String, Integer, Double, Boolean, Range. Read-only.
         - `[Value <IMicrosoftGraphJson>]`: Json
         - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
-        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+        - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Charts <IMicrosoftGraphWorkbookChart[]>]`: Returns collection of charts that are part of the worksheet. Read-only.
@@ -16249,13 +16334,13 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
               - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a chart title object.
             - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
             - `[Width <Double?>]`: Represents the width, in points, of the chart object.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Name <String>]`: The display name of the worksheet.
           - `[Names <IMicrosoftGraphWorkbookNamedItem[]>]`: Returns collection of names that are associated with the worksheet. Read-only.
           - `[PivotTables <IMicrosoftGraphWorkbookPivotTable[]>]`: Collection of PivotTables that are part of the worksheet.
             - `[Id <String>]`: 
             - `[Name <String>]`: Name of the PivotTable.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
           - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16323,7 +16408,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
               - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
               - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
             - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
-            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet1>]`: workbookWorksheet
+            - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
       - `[Operations <IMicrosoftGraphWorkbookOperation[]>]`: The status of Workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response. Read-only. Nullable.
         - `[Id <String>]`: 
@@ -16335,7 +16420,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
         - `[ResourceLocation <String>]`: The resource URI for the result.
         - `[Status <String>]`: workbookOperationStatus
       - `[Tables <IMicrosoftGraphWorkbookTable[]>]`: Represents a collection of tables associated with the workbook. Read-only.
-      - `[Worksheets <IMicrosoftGraphWorkbookWorksheet1[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
+      - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
   - `[IsFavoriteByDefault <Boolean?>]`: Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with Create team. Default: false.
   - `[Members <IMicrosoftGraphConversationMember[]>]`: A collection of membership records associated with the channel.
   - `[MembershipType <String>]`: channelMembershipType
@@ -16351,7 +16436,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-SCHEDULE `<IMicrosoftGraphSchedule>`: schedule
+SCHEDULE <IMicrosoftGraphSchedule>: schedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
@@ -16504,7 +16589,7 @@ SCHEDULE `<IMicrosoftGraphSchedule>`: schedule
     - `[UserId <String>]`: ID of the user assigned to the timeOff. Required.
   - `[WorkforceIntegrationIds <String[]>]`: 
 
-SUMMARY `<IMicrosoftGraphTeamSummary>`: teamSummary
+SUMMARY <IMicrosoftGraphTeamSummary>: teamSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GuestsCount <Int32?>]`: Count of guests in a team.
   - `[MembersCount <Int32?>]`: Count of members in a team.
@@ -16512,4 +16597,3 @@ SUMMARY `<IMicrosoftGraphTeamSummary>`: teamSummary
 
 ## RELATED LINKS
 
-## RELATED LINKS

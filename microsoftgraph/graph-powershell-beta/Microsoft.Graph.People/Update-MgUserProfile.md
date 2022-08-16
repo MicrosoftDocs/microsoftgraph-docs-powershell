@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.People-help.xml
+external help file:
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserprofile
 schema: 2.0.0
@@ -25,13 +25,19 @@ Update-MgUserProfile -UserId <String> [-Account <IMicrosoftGraphUserAccountInfor
  [-Phones <IMicrosoftGraphItemPhone[]>] [-Positions <IMicrosoftGraphWorkPosition[]>]
  [-Projects <IMicrosoftGraphProjectParticipation[]>] [-Publications <IMicrosoftGraphItemPublication[]>]
  [-Skills <IMicrosoftGraphSkillProficiency[]>] [-WebAccounts <IMicrosoftGraphWebAccount[]>]
- [-Websites <IMicrosoftGraphPersonWebsite[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Websites <IMicrosoftGraphPersonWebsite[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserProfile -UserId <String> -BodyParameter <IMicrosoftGraphProfile> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgUserProfile -UserId <String> -BodyParameter <IMicrosoftGraphProfile> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserProfile -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphProfile> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,13 +53,7 @@ Update-MgUserProfile -InputObject <IPeopleIdentity> [-Account <IMicrosoftGraphUs
  [-Phones <IMicrosoftGraphItemPhone[]>] [-Positions <IMicrosoftGraphWorkPosition[]>]
  [-Projects <IMicrosoftGraphProjectParticipation[]>] [-Publications <IMicrosoftGraphItemPublication[]>]
  [-Skills <IMicrosoftGraphSkillProficiency[]>] [-WebAccounts <IMicrosoftGraphWebAccount[]>]
- [-Websites <IMicrosoftGraphPersonWebsite[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserProfile -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphProfile> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Websites <IMicrosoftGraphPersonWebsite[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -68,7 +68,7 @@ Update the navigation property profile in users
 To construct, please use Get-Help -Online and see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserAccountInformation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserAccountInformation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Represents details of addresses associated with the user.
 To construct, please use Get-Help -Online and see NOTES section for ADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemAddress[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemAddress[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ Represents the details of meaningful dates associated with a person.
 To construct, please use Get-Help -Online and see NOTES section for ANNIVERSARIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonAnnualEvent[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAnnualEvent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Represents the details of awards or honors associated with a person.
 To construct, please use Get-Help -Online and see NOTES section for AWARDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonAward[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAward[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +147,7 @@ profile
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProfile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -163,7 +163,7 @@ Represents the details of certifications associated with a person.
 To construct, please use Get-Help -Online and see NOTES section for CERTIFICATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonCertification[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonCertification[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +179,7 @@ Represents data that a user has supplied related to undergraduate, graduate, pos
 To construct, please use Get-Help -Online and see NOTES section for EDUCATIONALACTIVITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationalActivity[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationalActivity[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +195,7 @@ Represents detailed information about email addresses associated with the user.
 To construct, please use Get-Help -Online and see NOTES section for EMAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemEmail[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemEmail[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,8 +226,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -242,7 +242,7 @@ Provides detailed information about interests the user has associated with thems
 To construct, please use Get-Help -Online and see NOTES section for INTERESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonInterest[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonInterest[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -258,7 +258,7 @@ Represents detailed information about languages that a user has added to their p
 To construct, please use Get-Help -Online and see NOTES section for LANGUAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLanguageProficiency[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLanguageProficiency[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +274,7 @@ Represents the names a user has added to their profile.
 To construct, please use Get-Help -Online and see NOTES section for NAMES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonName[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonName[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -290,7 +290,7 @@ Represents notes that a user has added to their profile.
 To construct, please use Get-Help -Online and see NOTES section for NOTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonAnnotation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAnnotation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -321,7 +321,7 @@ Represents patents that a user has added to their profile.
 To construct, please use Get-Help -Online and see NOTES section for PATENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemPatent[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPatent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -337,7 +337,7 @@ Represents detailed information about phone numbers associated with a user in va
 To construct, please use Get-Help -Online and see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemPhone[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPhone[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -353,7 +353,7 @@ Represents detailed information about work positions associated with a user's pr
 To construct, please use Get-Help -Online and see NOTES section for POSITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWorkPosition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkPosition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -369,7 +369,7 @@ Represents detailed information about projects associated with a user.
 To construct, please use Get-Help -Online and see NOTES section for PROJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProjectParticipation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProjectParticipation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -385,7 +385,7 @@ Represents details of any publications a user has added to their profile.
 To construct, please use Get-Help -Online and see NOTES section for PUBLICATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemPublication[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPublication[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -401,7 +401,7 @@ Represents detailed information about skills associated with a user in various s
 To construct, please use Get-Help -Online and see NOTES section for SKILLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSkillProficiency[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkillProficiency[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -416,8 +416,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -432,7 +432,7 @@ Represents web accounts the user has indicated they use or has added to their us
 To construct, please use Get-Help -Online and see NOTES section for WEBACCOUNTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWebAccount[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWebAccount[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -448,7 +448,7 @@ Represents detailed information about websites associated with a user in various
 To construct, please use Get-Help -Online and see NOTES section for WEBSITES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonWebsite[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonWebsite[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -463,7 +463,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -479,7 +479,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -496,10 +496,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfile
+
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -509,7 +512,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCOUNT <IMicrosoftGraphUserAccountInformation\[]>: .
+ACCOUNT <IMicrosoftGraphUserAccountInformation[]>: .
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -539,7 +542,7 @@ ACCOUNT <IMicrosoftGraphUserAccountInformation\[]>: .
     - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user associated with the account.
 
-ADDRESSES <IMicrosoftGraphItemAddress\[]>: Represents details of addresses associated with the user.
+ADDRESSES <IMicrosoftGraphItemAddress[]>: Represents details of addresses associated with the user.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -577,7 +580,7 @@ ADDRESSES <IMicrosoftGraphItemAddress\[]>: Represents details of addresses assoc
     - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
     - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
 
-ANNIVERSARIES <IMicrosoftGraphPersonAnnualEvent\[]>: Represents the details of meaningful dates associated with a person.
+ANNIVERSARIES <IMicrosoftGraphPersonAnnualEvent[]>: Represents the details of meaningful dates associated with a person.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -603,7 +606,7 @@ ANNIVERSARIES <IMicrosoftGraphPersonAnnualEvent\[]>: Represents the details of m
   - `[DisplayName <String>]`: 
   - `[Type <String>]`: personAnnualEventType
 
-AWARDS <IMicrosoftGraphPersonAward\[]>: Represents the details of awards or honors associated with a person.
+AWARDS <IMicrosoftGraphPersonAward[]>: Represents the details of awards or honors associated with a person.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -632,7 +635,7 @@ AWARDS <IMicrosoftGraphPersonAward\[]>: Represents the details of awards or hono
   - `[ThumbnailUrl <String>]`: URL referencing a thumbnail of the award or honor.
   - `[WebUrl <String>]`: URL referencing the award or honor.
 
-BODYPARAMETER `<IMicrosoftGraphProfile>`: profile
+BODYPARAMETER <IMicrosoftGraphProfile>: profile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphUserAccountInformation[]>]`: 
@@ -1005,7 +1008,7 @@ BODYPARAMETER `<IMicrosoftGraphProfile>`: profile
     - `[ThumbnailUrl <String>]`: 
     - `[WebUrl <String>]`: Contains a link to the website itself.
 
-CERTIFICATIONS <IMicrosoftGraphPersonCertification\[]>: Represents the details of certifications associated with a person.
+CERTIFICATIONS <IMicrosoftGraphPersonCertification[]>: Represents the details of certifications associated with a person.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1038,7 +1041,7 @@ CERTIFICATIONS <IMicrosoftGraphPersonCertification\[]>: Represents the details o
   - `[ThumbnailUrl <String>]`: URL referencing a thumbnail of the certification.
   - `[WebUrl <String>]`: URL referencing the certification.
 
-EDUCATIONALACTIVITIES <IMicrosoftGraphEducationalActivity\[]>: Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
+EDUCATIONALACTIVITIES <IMicrosoftGraphEducationalActivity[]>: Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1089,7 +1092,7 @@ EDUCATIONALACTIVITIES <IMicrosoftGraphEducationalActivity\[]>: Represents data t
     - `[WebUrl <String>]`: Link to the degree or program page.
   - `[StartMonthYear <DateTime?>]`: The month and year the user commenced the activity referenced.
 
-EMAILS <IMicrosoftGraphItemEmail\[]>: Represents detailed information about email addresses associated with the user.
+EMAILS <IMicrosoftGraphItemEmail[]>: Represents detailed information about email addresses associated with the user.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1115,7 +1118,7 @@ EMAILS <IMicrosoftGraphItemEmail\[]>: Represents detailed information about emai
   - `[DisplayName <String>]`: The name or label a user has associated with a particular email address.
   - `[Type <String>]`: emailType
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -1142,7 +1145,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-INTERESTS <IMicrosoftGraphPersonInterest\[]>: Provides detailed information about interests the user has associated with themselves in various services.
+INTERESTS <IMicrosoftGraphPersonInterest[]>: Provides detailed information about interests the user has associated with themselves in various services.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1171,7 +1174,7 @@ INTERESTS <IMicrosoftGraphPersonInterest\[]>: Provides detailed information abou
   - `[ThumbnailUrl <String>]`: 
   - `[WebUrl <String>]`: Contains a link to a web page or resource about the interest.
 
-LANGUAGES <IMicrosoftGraphLanguageProficiency\[]>: Represents detailed information about languages that a user has added to their profile.
+LANGUAGES <IMicrosoftGraphLanguageProficiency[]>: Represents detailed information about languages that a user has added to their profile.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1201,7 +1204,7 @@ LANGUAGES <IMicrosoftGraphLanguageProficiency\[]>: Represents detailed informati
   - `[ThumbnailUrl <String>]`: 
   - `[Written <String>]`: languageProficiencyLevel
 
-NAMES <IMicrosoftGraphPersonName\[]>: Represents the names a user has added to their profile.
+NAMES <IMicrosoftGraphPersonName[]>: Represents the names a user has added to their profile.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1241,7 +1244,7 @@ NAMES <IMicrosoftGraphPersonName\[]>: Represents the names a user has added to t
   - `[Suffix <String>]`: Designators used after the users name (eg: PhD.)
   - `[Title <String>]`: Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)
 
-NOTES <IMicrosoftGraphPersonAnnotation\[]>: Represents notes that a user has added to their profile.
+NOTES <IMicrosoftGraphPersonAnnotation[]>: Represents notes that a user has added to their profile.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1270,7 +1273,7 @@ NOTES <IMicrosoftGraphPersonAnnotation\[]>: Represents notes that a user has add
   - `[DisplayName <String>]`: Contains a friendly name for the note.
   - `[ThumbnailUrl <String>]`: 
 
-PATENTS <IMicrosoftGraphItemPatent\[]>: Represents patents that a user has added to their profile.
+PATENTS <IMicrosoftGraphItemPatent[]>: Represents patents that a user has added to their profile.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1300,7 +1303,7 @@ PATENTS <IMicrosoftGraphItemPatent\[]>: Represents patents that a user has added
   - `[Number <String>]`: The patent number.
   - `[WebUrl <String>]`: URL referencing the patent or filing.
 
-PHONES <IMicrosoftGraphItemPhone\[]>: Represents detailed information about phone numbers associated with a user in various services.
+PHONES <IMicrosoftGraphItemPhone[]>: Represents detailed information about phone numbers associated with a user in various services.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1326,7 +1329,7 @@ PHONES <IMicrosoftGraphItemPhone\[]>: Represents detailed information about phon
   - `[Number <String>]`: Phone number provided by the user.
   - `[Type <String>]`: phoneType
 
-POSITIONS <IMicrosoftGraphWorkPosition\[]>: Represents detailed information about work positions associated with a user's profile.
+POSITIONS <IMicrosoftGraphWorkPosition[]>: Represents detailed information about work positions associated with a user's profile.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1380,7 +1383,7 @@ POSITIONS <IMicrosoftGraphWorkPosition\[]>: Represents detailed information abou
   - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
   - `[Manager <IMicrosoftGraphRelatedPerson>]`: relatedPerson
 
-PROJECTS <IMicrosoftGraphProjectParticipation\[]>: Represents detailed information about projects associated with a user.
+PROJECTS <IMicrosoftGraphProjectParticipation[]>: Represents detailed information about projects associated with a user.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1437,7 +1440,7 @@ PROJECTS <IMicrosoftGraphProjectParticipation\[]>: Represents detailed informati
   - `[Sponsors <IMicrosoftGraphRelatedPerson[]>]`: The Person or people who sponsored the project.
   - `[ThumbnailUrl <String>]`: 
 
-PUBLICATIONS <IMicrosoftGraphItemPublication\[]>: Represents details of any publications a user has added to their profile.
+PUBLICATIONS <IMicrosoftGraphItemPublication[]>: Represents details of any publications a user has added to their profile.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1466,7 +1469,7 @@ PUBLICATIONS <IMicrosoftGraphItemPublication\[]>: Represents details of any publ
   - `[ThumbnailUrl <String>]`: URL referencing a thumbnail of the publication.
   - `[WebUrl <String>]`: URL referencing the publication.
 
-SKILLS <IMicrosoftGraphSkillProficiency\[]>: Represents detailed information about skills associated with a user in various services.
+SKILLS <IMicrosoftGraphSkillProficiency[]>: Represents detailed information about skills associated with a user in various services.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1495,7 +1498,7 @@ SKILLS <IMicrosoftGraphSkillProficiency\[]>: Represents detailed information abo
   - `[ThumbnailUrl <String>]`: 
   - `[WebUrl <String>]`: Contains a link to an information source about the skill.
 
-WEBACCOUNTS <IMicrosoftGraphWebAccount\[]>: Represents web accounts the user has indicated they use or has added to their user profile.
+WEBACCOUNTS <IMicrosoftGraphWebAccount[]>: Represents web accounts the user has indicated they use or has added to their user profile.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1527,7 +1530,7 @@ WEBACCOUNTS <IMicrosoftGraphWebAccount\[]>: Represents web accounts the user has
   - `[UserId <String>]`: The user name  displayed for the webaccount.
   - `[WebUrl <String>]`: Contains a link to the user's profile on the cloud service if one exists.
 
-WEBSITES <IMicrosoftGraphPersonWebsite\[]>: Represents detailed information about websites associated with a user in various services.
+WEBSITES <IMicrosoftGraphPersonWebsite[]>: Represents detailed information about websites associated with a user in various services.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1557,4 +1560,3 @@ WEBSITES <IMicrosoftGraphPersonWebsite\[]>: Represents detailed information abou
 
 ## RELATED LINKS
 
-## RELATED LINKS

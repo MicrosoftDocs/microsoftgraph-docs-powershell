@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/invoke-mgextractsecurityinformationprotectionsensitivitylabelcontentlabel
 schema: 2.0.0
@@ -15,14 +15,14 @@ Invoke action extractContentLabel
 ### ExtractExpanded (Default)
 ```
 Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel [-AdditionalProperties <Hashtable>]
- [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Extract
 ```
 Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel
  -BodyParameter <IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Invoke action extractContentLabel
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ExtractExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Extract
 Aliases:
 
@@ -68,7 +68,7 @@ contentInfo
 To construct, please use Get-Help -Online and see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityContentInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityContentInfo
 Parameter Sets: ExtractExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +99,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -116,9 +116,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityContentLabel
+
 ## NOTES
 
 ALIASES
@@ -128,24 +130,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentFormat <String>]`: 
-    - `[Identifier <String>]`: 
-    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: 
-      - `[Name <String>]`: 
-      - `[Value <String>]`: 
+    - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
+    - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
+    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+      - `[Name <String>]`: Name for this key-value pair.
+      - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentFormat <String>]`: 
-  - `[Identifier <String>]`: 
-  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: 
-    - `[Name <String>]`: 
-    - `[Value <String>]`: 
+  - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
+  - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
+  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+    - `[Name <String>]`: Name for this key-value pair.
+    - `[Value <String>]`: Value for this key-value pair.
   - `[State <String>]`: contentState
 
 ## RELATED LINKS
+

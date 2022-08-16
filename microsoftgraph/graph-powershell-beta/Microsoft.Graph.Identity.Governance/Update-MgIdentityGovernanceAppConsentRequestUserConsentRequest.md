@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequest
 schema: 2.0.0
@@ -18,14 +18,20 @@ Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentReques
  -UserConsentRequestId <String> [-AdditionalProperties <Hashtable>] [-Approval <IMicrosoftGraphApproval>]
  [-ApprovalId <String>] [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-CustomData <String>] [-Id <String>] [-Reason <String>] [-Status <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId <String>
- -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphUserConsentRequest> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphUserConsentRequest> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphUserConsentRequest> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,14 +39,8 @@ Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentReques
 Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-Approval <IMicrosoftGraphApproval>] [-ApprovalId <String>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-CustomData <String>] [-Id <String>] [-Reason <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-CustomData <String>] [-Id <String>] [-Reason <String>] [-Status <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUserConsentRequest> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,20 +48,13 @@ Update the navigation property userConsentRequests in identityGovernance
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,8 +69,8 @@ Accept wildcard characters: False
 key: id of appConsentRequest
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -92,7 +85,7 @@ approval
 To construct, please use Get-Help -Online and see NOTES section for APPROVAL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApproval
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApproval
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,7 +100,7 @@ Accept wildcard characters: False
 The identifier of the approval of the request.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +116,7 @@ userConsentRequest
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserConsentRequest
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserConsentRequest
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -138,7 +131,7 @@ Accept wildcard characters: False
 The request completion date time.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -154,7 +147,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -169,7 +162,7 @@ Accept wildcard characters: False
 The request creation date time.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +178,7 @@ Free text field to define any custom data for the request.
 Not used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +193,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,8 +209,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -231,13 +224,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -247,7 +240,7 @@ The user's justification for requiring access to the app.
 Supports $filter (eq only) and $orderby.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -265,7 +258,7 @@ The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision
 Not nullable.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,8 +273,8 @@ Accept wildcard characters: False
 key: id of userConsentRequest
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -295,7 +288,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -311,7 +304,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -328,14 +321,139 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserConsentRequest
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+APPROVAL <IMicrosoftGraphApproval>: approval
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: 
+  - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
+    - `[Id <String>]`: 
+    - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
+    - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
+    - `[Justification <String>]`: The justification associated with the approval step decision.
+    - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
+    - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
+
+BODYPARAMETER <IMicrosoftGraphUserConsentRequest>: userConsentRequest
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ApprovalId <String>]`: The identifier of the approval of the request.
+  - `[CompletedDateTime <DateTime?>]`: The request completion date time.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The request creation date time.
+  - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
+  - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
+  - `[Id <String>]`: 
+  - `[Approval <IMicrosoftGraphApproval>]`: approval
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: 
+    - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
+      - `[Id <String>]`: 
+      - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
+      - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
+      - `[Justification <String>]`: The justification associated with the approval step decision.
+      - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
+      - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
+      - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+      - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
+  - `[Reason <String>]`: The user's justification for requiring access to the app. Supports $filter (eq only) and $orderby.
+
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
+
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+  - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
+  - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
+  - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
+  - `[AccessPackageAssignmentResourceRoleId <String>]`: key: id of accessPackageAssignmentResourceRole
+  - `[AccessPackageCatalogId <String>]`: key: id of accessPackageCatalog
+  - `[AccessPackageId <String>]`: key: id of accessPackage
+  - `[AccessPackageId1 <String>]`: key: id of accessPackage
+  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
+  - `[AccessPackageResourceEnvironmentId <String>]`: key: id of accessPackageResourceEnvironment
+  - `[AccessPackageResourceId <String>]`: key: id of accessPackageResource
+  - `[AccessPackageResourceRequestId <String>]`: key: id of accessPackageResourceRequest
+  - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
+  - `[AccessPackageResourceRoleScopeId <String>]`: key: id of accessPackageResourceRoleScope
+  - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
+  - `[AccessPackageSubjectId <String>]`: key: id of accessPackageSubject
+  - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
+  - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
+  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
+  - `[AccessReviewId <String>]`: key: id of accessReview
+  - `[AccessReviewId1 <String>]`: key: id of accessReview
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
+  - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
+  - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
+  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
+  - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
+  - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
+  - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
+  - `[AgreementId <String>]`: key: id of agreement
+  - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
+  - `[ApprovalId <String>]`: key: id of approval
+  - `[ApprovalStageId <String>]`: key: id of approvalStage
+  - `[ApprovalStepId <String>]`: key: id of approvalStep
+  - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
+  - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
+  - `[CustomAccessPackageWorkflowExtensionId <String>]`: key: id of customAccessPackageWorkflowExtension
+  - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
+  - `[GovernanceResourceId <String>]`: key: id of governanceResource
+  - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
+  - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
+  - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
+  - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[GroupId <String>]`: key: id of group
+  - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  - `[On <String>]`: Usage: on='{on}'
+  - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
+  - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
+  - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
+  - `[PrivilegedRoleAssignmentId <String>]`: key: id of privilegedRoleAssignment
+  - `[PrivilegedRoleAssignmentId1 <String>]`: key: id of privilegedRoleAssignment
+  - `[PrivilegedRoleAssignmentRequestId <String>]`: key: id of privilegedRoleAssignmentRequest
+  - `[PrivilegedRoleId <String>]`: key: id of privilegedRole
+  - `[ProgramControlId <String>]`: key: id of programControl
+  - `[ProgramControlId1 <String>]`: key: id of programControl
+  - `[ProgramControlTypeId <String>]`: key: id of programControlType
+  - `[ProgramId <String>]`: key: id of program
+  - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequest](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequest)
 

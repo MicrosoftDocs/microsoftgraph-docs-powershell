@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mguseroutlooktaskgrouptaskfoldertaskattachment
 schema: 2.0.0
@@ -17,28 +17,28 @@ Update the navigation property attachments in users
 Update-MgUserOutlookTaskGroupTaskFolderTaskAttachment -AttachmentId <String> -OutlookTaskFolderId <String>
  -OutlookTaskGroupId <String> -OutlookTaskId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
- [-Size <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Size <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserOutlookTaskGroupTaskFolderTaskAttachment -AttachmentId <String> -OutlookTaskFolderId <String>
  -OutlookTaskGroupId <String> -OutlookTaskId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphAttachment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAttachment> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserOutlookTaskGroupTaskFolderTaskAttachment -InputObject <IUsersIdentity>
+ -BodyParameter <IMicrosoftGraphAttachment> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserOutlookTaskGroupTaskFolderTaskAttachment -InputObject <IUsersIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>] [-IsInline]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserOutlookTaskGroupTaskFolderTaskAttachment -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphAttachment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +52,7 @@ Update the navigation property attachments in users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,8 +67,8 @@ Accept wildcard characters: False
 key: id of attachment
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ attachment
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachment
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 The MIME type.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,8 +129,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 true if the attachment is an inline attachment; otherwise, false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +160,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ The display name of the attachment.
 This does not need to be the actual file name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,8 +191,8 @@ Accept wildcard characters: False
 key: id of outlookTaskFolder
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -206,8 +206,8 @@ Accept wildcard characters: False
 key: id of outlookTaskGroup
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -221,8 +221,8 @@ Accept wildcard characters: False
 key: id of outlookTask
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 The length of the attachment in bytes.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -266,8 +266,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -297,7 +297,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -314,10 +314,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -327,7 +330,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
+BODYPARAMETER <IMicrosoftGraphAttachment>: attachment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ContentType <String>]`: The MIME type.
@@ -336,7 +339,7 @@ BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
   - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession
@@ -359,3 +362,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

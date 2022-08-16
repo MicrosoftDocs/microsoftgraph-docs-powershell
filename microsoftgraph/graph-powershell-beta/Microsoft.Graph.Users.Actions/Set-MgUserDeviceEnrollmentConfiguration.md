@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/set-mguserdeviceenrollmentconfiguration
 schema: 2.0.0
@@ -17,14 +17,21 @@ Invoke action assign
 Set-MgUserDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>]
  [-EnrollmentConfigurationAssignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Assign
 ```
 Set-MgUserDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId <String> -UserId <String>
  -BodyParameter <IPaths1A7V22XUsersUserIdDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssignViaIdentity
+```
+Set-MgUserDeviceEnrollmentConfiguration -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths1A7V22XUsersUserIdDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
@@ -32,14 +39,7 @@ Set-MgUserDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId <String
 Set-MgUserDeviceEnrollmentConfiguration -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>]
  [-EnrollmentConfigurationAssignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssignViaIdentity
-```
-Set-MgUserDeviceEnrollmentConfiguration -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1A7V22XUsersUserIdDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Invoke action assign
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1A7V22XUsersUserIdDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1A7V22XUsersUserIdDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 key: id of deviceEnrollmentConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
 Aliases:
 
 Required: True
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ENROLLMENTCONFIGURATIONASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEnrollmentConfigurationAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -116,8 +116,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -146,8 +146,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
 Aliases:
 
 Required: True
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -177,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,10 +194,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1A7V22XUsersUserIdDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -207,7 +210,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1A7V22XUsersUserIdDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1A7V22XUsersUserIdDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EnrollmentConfigurationAssignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>]`: 
     - `[Id <String>]`: 
@@ -218,7 +221,7 @@ BODYPARAMETER `<IPaths1A7V22XUsersUserIdDeviceenrollmentconfigurationsDeviceenro
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-ENROLLMENTCONFIGURATIONASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment\[]>: .
+ENROLLMENTCONFIGURATIONASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment[]>: .
   - `[Id <String>]`: 
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
   - `[SourceId <String>]`: Identifier for resource used for deployment to a group
@@ -227,7 +230,7 @@ ENROLLMENTCONFIGURATIONASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssign
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -265,6 +268,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription
@@ -275,3 +279,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

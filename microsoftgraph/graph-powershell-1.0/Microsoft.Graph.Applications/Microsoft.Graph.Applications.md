@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: c6061b4e-c0fa-4102-a8ed-7d15bcdcf776
+Module Guid: 4ff0b450-f42a-408d-b252-df64dc8e7899
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -49,9 +49,6 @@ Invoke action getByIds
 
 ### [Get-MgApplicationCreatedOnBehalfOf](Get-MgApplicationCreatedOnBehalfOf.md)
 Get createdOnBehalfOf from applications
-
-### [Get-MgApplicationById](Get-MgApplicationById.md)
-Invoke action getByIds
 
 ### [Get-MgApplicationDelta](Get-MgApplicationDelta.md)
 Invoke function delta
@@ -143,13 +140,8 @@ Invoke action getMemberObjects
 ### [Get-MgServicePrincipalMemberOf](Get-MgServicePrincipalMemberOf.md)
 Get memberOf from servicePrincipals
 
-### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
-Invoke action getMemberObjects
-
 ### [Get-MgServicePrincipalOauth2PermissionGrant](Get-MgServicePrincipalOauth2PermissionGrant.md)
-Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
-Read-only.
-Nullable.
+Get oauth2PermissionGrants from servicePrincipals
 
 ### [Get-MgServicePrincipalOwnedObject](Get-MgServicePrincipalOwnedObject.md)
 Get ownedObjects from servicePrincipals
@@ -220,10 +212,6 @@ Create new navigation property to endpoints for servicePrincipals
 ### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 Create new navigation property ref to homeRealmDiscoveryPolicies for servicePrincipals
 
-### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
-The homeRealmDiscoveryPolicies assigned to this service principal.
-Supports $expand.
-
 ### [New-MgServicePrincipalOwnerByRef](New-MgServicePrincipalOwnerByRef.md)
 Create new navigation property ref to owners for servicePrincipals
 
@@ -232,9 +220,6 @@ Create new navigation property to appRoleAssignments for users
 
 ### [Remove-MgApplication](Remove-MgApplication.md)
 Delete application
-
-### [Remove-MgApplication](Remove-MgApplication.md)
-Delete entity from applications
 
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Delete navigation property extensionProperties for applications

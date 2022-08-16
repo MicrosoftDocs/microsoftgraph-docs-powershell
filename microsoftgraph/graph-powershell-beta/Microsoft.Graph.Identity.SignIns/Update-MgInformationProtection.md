@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
 schema: 2.0.0
@@ -19,14 +19,14 @@ Update-MgInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <
  [-Policy <IMicrosoftGraphInformationProtectionPolicy>]
  [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]
  [-SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]
- [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,7 +40,7 @@ Update informationProtection
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ bitlocker
 To construct, please use Get-Help -Online and see NOTES section for BITLOCKER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBitlocker
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlocker
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ informationProtection
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtection
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
 Parameter Sets: Update
 Aliases:
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDataLossPreventionPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataLossPreventionPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -134,7 +134,7 @@ informationProtectionPolicy
 To construct, please use Get-Help -Online and see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtectionPolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSensitivityLabel[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityLabel[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -166,7 +166,7 @@ sensitivityPolicySettings
 To construct, please use Get-Help -Online and see NOTES section for SENSITIVITYPOLICYSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSensitivityPolicySettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityPolicySettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphThreatAssessmentRequest[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThreatAssessmentRequest[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -213,7 +213,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -230,9 +230,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -242,7 +244,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
+BITLOCKER <IMicrosoftGraphBitlocker>: bitlocker
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
@@ -252,7 +254,7 @@ BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
     - `[Key <String>]`: The BitLocker recovery key.
     - `[VolumeType <String>]`: volumeType
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
+BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Bitlocker <IMicrosoftGraphBitlocker>]`: bitlocker
@@ -324,7 +326,7 @@ BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
@@ -338,11 +340,11 @@ BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
       - `[ResultType <String>]`: threatAssessmentResultType
     - `[Status <String>]`: threatAssessmentStatus
 
-DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy\[]>: .
+DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy[]>: .
   - `[Id <String>]`: 
   - `[Name <String>]`: 
 
-POLICY `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
+POLICY <IMicrosoftGraphInformationProtectionPolicy>: informationProtectionPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Labels <IMicrosoftGraphInformationProtectionLabel[]>]`: 
@@ -364,7 +366,7 @@ POLICY `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPoli
     - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
     - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel\[]>: .
+SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel[]>: .
   - `[Id <String>]`: 
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
   - `[ApplicationMode <String>]`: applicationMode
@@ -386,7 +388,7 @@ SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel\[]>: .
   - `[Sublabels <IMicrosoftGraphSensitivityLabel[]>]`: 
   - `[ToolTip <String>]`: 
 
-SENSITIVITYPOLICYSETTINGS `<IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
+SENSITIVITYPOLICYSETTINGS <IMicrosoftGraphSensitivityPolicySettings>: sensitivityPolicySettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
@@ -394,7 +396,7 @@ SENSITIVITYPOLICYSETTINGS `<IMicrosoftGraphSensitivityPolicySettings>`: sensitiv
   - `[HelpWebUrl <String>]`: 
   - `[IsMandatory <Boolean?>]`: 
 
-THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest\[]>: .
+THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest[]>: .
   - `[Id <String>]`: 
   - `[Category <String>]`: threatCategory
   - `[ContentType <String>]`: threatAssessmentContentType
@@ -402,7 +404,7 @@ THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest\[]>: .
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
@@ -418,7 +420,3 @@ THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest\[]>: .
 
 ## RELATED LINKS
 
-## RELATED LINKS
-
-
-## RELATED LINKS

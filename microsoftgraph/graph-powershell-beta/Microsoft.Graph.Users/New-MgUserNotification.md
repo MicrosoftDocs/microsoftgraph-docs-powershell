@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mgusernotification
 schema: 2.0.0
@@ -15,15 +15,21 @@ Create new navigation property to notifications for users
 ### CreateExpanded (Default)
 ```
 New-MgUserNotification -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayTimeToLive <Int32>]
- [-ExpirationDateTime <DateTime>] [-GroupName <String>] [-Id <String>] [-Payload <IMicrosoftGraphPayloadTypes>]
- [-Priority <String>] [-TargetHostName <String>] [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ExpirationDateTime <DateTime>] [-GroupName <String>] [-Id <String>]
+ [-Payload <IMicrosoftGraphPayloadTypes>] [-Priority <String>] [-TargetHostName <String>]
+ [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserNotification -UserId <String> -BodyParameter <IMicrosoftGraphNotification> [-WhatIf] [-Confirm]
+New-MgUserNotification -UserId <String> -BodyParameter <IMicrosoftGraphNotification> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphNotification> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -31,13 +37,7 @@ New-MgUserNotification -UserId <String> -BodyParameter <IMicrosoftGraphNotificat
 New-MgUserNotification -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
  [-DisplayTimeToLive <Int32>] [-ExpirationDateTime <DateTime>] [-GroupName <String>] [-Id <String>]
  [-Payload <IMicrosoftGraphPayloadTypes>] [-Priority <String>] [-TargetHostName <String>]
- [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphNotification> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Create new navigation property to notifications for users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ notification
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNotification
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotification
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -83,7 +83,7 @@ Sets how long (in seconds) this notification content will stay in each platform'
 For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ When time is up, the notification is removed from the Microsoft Graph notificati
 Max value is 30 days.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ The name of the group that this notification belongs to.
 It is set by the developer for the purpose of grouping notifications together.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,8 +147,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -163,7 +163,7 @@ payloadTypes
 To construct, please use Get-Help -Online and see NOTES section for PAYLOAD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPayloadTypes
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPayloadTypes
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 priority
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -194,7 +194,7 @@ Represents the host name of the app to which the calling service wants to post t
 If targeting web endpoints (see targetPolicy.platformTypes), ensure that targetHostName is the same as the name used when creating a subscription on the client side within the application JSON property.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -210,7 +210,7 @@ targetPolicyEndpoints
 To construct, please use Get-Help -Online and see NOTES section for TARGETPOLICY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTargetPolicyEndpoints
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTargetPolicyEndpoints
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -225,8 +225,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -256,7 +256,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -273,10 +273,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotification
+
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotification
+
 ## NOTES
 
 ALIASES
@@ -286,7 +289,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphNotification>`: notification
+BODYPARAMETER <IMicrosoftGraphNotification>: notification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
@@ -305,7 +308,7 @@ BODYPARAMETER `<IMicrosoftGraphNotification>`: notification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[PlatformTypes <String[]>]`: Use to filter the notification distribution to a specific platform or platforms. Valid values are Windows, iOS, Android and WebPush. By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession
@@ -327,7 +330,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
 
-PAYLOAD `<IMicrosoftGraphPayloadTypes>`: payloadTypes
+PAYLOAD <IMicrosoftGraphPayloadTypes>: payloadTypes
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RawContent <String>]`: The notification content of a raw user notification that will be delivered to and consumed by the app client on all supported platforms (Windows, iOS, Android or WebPush) receiving this notification. At least one of Payload.RawContent or Payload.VisualContent needs to be valid for a POST Notification request.
   - `[VisualContent <IMicrosoftGraphVisualProperties>]`: visualProperties
@@ -335,8 +338,9 @@ PAYLOAD `<IMicrosoftGraphPayloadTypes>`: payloadTypes
     - `[Body <String>]`: The body of a visual user notification. Body is optional.
     - `[Title <String>]`: The title of a visual user notification. This field is required for visual notification payloads.
 
-TARGETPOLICY `<IMicrosoftGraphTargetPolicyEndpoints>`: targetPolicyEndpoints
+TARGETPOLICY <IMicrosoftGraphTargetPolicyEndpoints>: targetPolicyEndpoints
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[PlatformTypes <String[]>]`: Use to filter the notification distribution to a specific platform or platforms. Valid values are Windows, iOS, Android and WebPush. By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
 
 ## RELATED LINKS
+

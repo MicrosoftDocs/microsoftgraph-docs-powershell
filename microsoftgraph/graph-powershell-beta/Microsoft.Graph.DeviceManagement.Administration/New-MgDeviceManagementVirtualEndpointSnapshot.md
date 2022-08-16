@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointsnapshot
 schema: 2.0.0
@@ -15,14 +15,14 @@ Create new navigation property to snapshots for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementVirtualEndpointSnapshot [-AdditionalProperties <Hashtable>] [-CloudPcId <String>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-LastRestoredDateTime <DateTime>] [-Status <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-LastRestoredDateTime <DateTime>] [-Status <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementVirtualEndpointSnapshot -BodyParameter <IMicrosoftGraphCloudPcSnapshot> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementVirtualEndpointSnapshot -BodyParameter <IMicrosoftGraphCloudPcSnapshot> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Create new navigation property to snapshots for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ cloudPcSnapshot
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcSnapshot
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSnapshot
 Parameter Sets: Create
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 The unique identifier for the Cloud PC.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 cloudPcSnapshotStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +162,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,9 +179,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSnapshot
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSnapshot
+
 ## NOTES
 
 ALIASES
@@ -191,7 +193,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcSnapshot>`: cloudPcSnapshot
+BODYPARAMETER <IMicrosoftGraphCloudPcSnapshot>: cloudPcSnapshot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CloudPcId <String>]`: The unique identifier for the Cloud PC.
@@ -200,3 +202,4 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcSnapshot>`: cloudPcSnapshot
   - `[Status <String>]`: cloudPcSnapshotStatus
 
 ## RELATED LINKS
+

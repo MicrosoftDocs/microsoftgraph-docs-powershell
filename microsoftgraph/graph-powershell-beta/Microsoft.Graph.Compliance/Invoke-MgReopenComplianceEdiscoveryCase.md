@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/invoke-mgreopencomplianceediscoverycase
 schema: 2.0.0
@@ -14,12 +14,12 @@ Invoke action reopen
 
 ### Reopen (Default)
 ```
-Invoke-MgReopenComplianceEdiscoveryCase -CaseId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgReopenComplianceEdiscoveryCase -CaseId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReopenViaIdentity
 ```
-Invoke-MgReopenComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgReopenComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Invoke action reopen
 key: id of case
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reopen
 Aliases:
 
@@ -50,7 +50,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
 Parameter Sets: ReopenViaIdentity
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -96,7 +96,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -113,9 +113,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -125,7 +127,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian
@@ -142,3 +144,4 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
+

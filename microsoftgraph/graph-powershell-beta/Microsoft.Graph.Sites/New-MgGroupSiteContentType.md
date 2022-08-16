@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttype
 schema: 2.0.0
@@ -22,13 +22,19 @@ New-MgGroupSiteContentType -GroupId <String> -SiteId <String> [-AdditionalProper
  [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
  [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges] [-ReadOnly] [-Sealed]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgGroupSiteContentType -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphContentType1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphContentType1>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -41,13 +47,7 @@ New-MgGroupSiteContentType -InputObject <ISitesIdentity> [-AdditionalProperties 
  [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
  [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges] [-ReadOnly] [-Sealed]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphContentType1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,7 +61,7 @@ Create new navigation property to contentTypes for groups
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -78,7 +78,7 @@ This will contain all hubsites where this content type is queued to be enforced 
 Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -94,7 +94,7 @@ contentType
 To construct, please use Get-Help -Online and see NOTES section for BASE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentType1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -110,7 +110,7 @@ The collection of content types that are ancestors of this content type.
 To construct, please use Get-Help -Online and see NOTES section for BASETYPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentType1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -126,7 +126,7 @@ contentType
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentType1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -142,7 +142,7 @@ The collection of columns that are required by this content type
 To construct, please use Get-Help -Online and see NOTES section for COLUMNLINKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnLink[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +158,7 @@ Column order information in a content type.
 To construct, please use Get-Help -Online and see NOTES section for COLUMNPOSITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +174,7 @@ The collection of column definitions for this contentType.
 To construct, please use Get-Help -Online and see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 The descriptive text for the item.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +205,7 @@ documentSet
 To construct, please use Get-Help -Online and see NOTES section for DOCUMENTSET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDocumentSet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDocumentSet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +221,7 @@ documentSetContent
 To construct, please use Get-Help -Online and see NOTES section for DOCUMENTTEMPLATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDocumentSetContent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDocumentSetContent
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +237,7 @@ The name of the group this content type belongs to.
 Helps organize related content types.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -252,8 +252,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 Indicates whether the content type is hidden in the list's 'New' menu.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -298,7 +298,7 @@ itemReference
 To construct, please use Get-Help -Online and see NOTES section for INHERITEDFROM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemReference
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -314,8 +314,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -329,7 +329,7 @@ Accept wildcard characters: False
 Specifies if a content type is a built-in content type.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 The name of the content type.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -360,7 +360,7 @@ contentTypeOrder
 To construct, please use Get-Help -Online and see NOTES section for ORDER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentTypeOrder
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentTypeOrder
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -375,7 +375,7 @@ Accept wildcard characters: False
 The unique identifier of the content type.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -405,7 +405,7 @@ Accept wildcard characters: False
 If true, the content type cannot be modified unless this value is first set to false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -421,7 +421,7 @@ If true, the content type cannot be modified by users or through push-down opera
 Only site collection administrators can seal or unseal content types.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -436,8 +436,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -467,7 +467,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -484,10 +484,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
+
 ## NOTES
 
 ALIASES
@@ -497,7 +500,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BASE `<IMicrosoftGraphContentType1>`: contentType
+BASE <IMicrosoftGraphContentType1>: contentType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
@@ -685,7 +688,7 @@ BASE `<IMicrosoftGraphContentType1>`: contentType
   - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
   - `[Sealed <Boolean?>]`: If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 
-BASETYPES <IMicrosoftGraphContentType1\[]>: The collection of content types that are ancestors of this content type.
+BASETYPES <IMicrosoftGraphContentType1[]>: The collection of content types that are ancestors of this content type.
   - `[Id <String>]`: 
   - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
   - `[Base <IMicrosoftGraphContentType1>]`: contentType
@@ -872,7 +875,7 @@ BASETYPES <IMicrosoftGraphContentType1\[]>: The collection of content types that
   - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
   - `[Sealed <Boolean?>]`: If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 
-BODYPARAMETER `<IMicrosoftGraphContentType1>`: contentType
+BODYPARAMETER <IMicrosoftGraphContentType1>: contentType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
@@ -1060,11 +1063,11 @@ BODYPARAMETER `<IMicrosoftGraphContentType1>`: contentType
   - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
   - `[Sealed <Boolean?>]`: If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 
-COLUMNLINKS <IMicrosoftGraphColumnLink\[]>: The collection of columns that are required by this content type
+COLUMNLINKS <IMicrosoftGraphColumnLink[]>: The collection of columns that are required by this content type
   - `[Id <String>]`: 
   - `[Name <String>]`: The name of the column  in this content type.
 
-COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition\[]>: Column order information in a content type.
+COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition[]>: Column order information in a content type.
   - `[Id <String>]`: 
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1198,7 +1201,7 @@ COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition\[]>: Column order information i
       - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
 
-COLUMNS <IMicrosoftGraphColumnDefinition\[]>: The collection of column definitions for this contentType.
+COLUMNS <IMicrosoftGraphColumnDefinition[]>: The collection of column definitions for this contentType.
   - `[Id <String>]`: 
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1332,7 +1335,7 @@ COLUMNS <IMicrosoftGraphColumnDefinition\[]>: The collection of column definitio
       - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
 
-DOCUMENTSET `<IMicrosoftGraphDocumentSet>`: documentSet
+DOCUMENTSET <IMicrosoftGraphDocumentSet>: documentSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
     - `[Id <String>]`: The id of the content type.
@@ -1476,7 +1479,7 @@ DOCUMENTSET `<IMicrosoftGraphDocumentSet>`: documentSet
   - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition[]>]`: 
   - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
 
-DOCUMENTTEMPLATE `<IMicrosoftGraphDocumentSetContent>`: documentSetContent
+DOCUMENTTEMPLATE <IMicrosoftGraphDocumentSetContent>: documentSetContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1485,7 +1488,7 @@ DOCUMENTTEMPLATE `<IMicrosoftGraphDocumentSetContent>`: documentSetContent
   - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
   - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
 
-INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
+INHERITEDFROM <IMicrosoftGraphItemReference>: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
   - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
@@ -1504,7 +1507,7 @@ INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -1541,11 +1544,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
+ORDER <IMicrosoftGraphContentTypeOrder>: contentTypeOrder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Default <Boolean?>]`: Whether this is the default Content Type
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
 
-## RELATED LINKS

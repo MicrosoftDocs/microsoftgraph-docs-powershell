@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementdeviceenrollmentconfigurationenrollmentnotificationconfiguration
 schema: 2.0.0
@@ -17,14 +17,14 @@ Invoke action createEnrollmentNotificationConfiguration
 New-MgDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration
  [-AdditionalProperties <Hashtable>]
  [-DeviceEnrollmentNotificationConfigurations <IMicrosoftGraphDeviceEnrollmentConfiguration[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration
  -BodyParameter <IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,20 +32,13 @@ Invoke action createEnrollmentNotificationConfiguration
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -61,7 +54,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create
 Aliases:
 
@@ -77,7 +70,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for DEVICEENROLLMENTNOTIFICATIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceEnrollmentConfiguration[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -92,13 +85,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -107,7 +100,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -123,7 +116,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -140,13 +133,59 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeviceEnrollmentNotificationConfigurations <IMicrosoftGraphDeviceEnrollmentConfiguration[]>]`: 
+    - `[Id <String>]`: 
+    - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment1[]>]`: The list of group assignments for the device configuration profile
+      - `[Id <String>]`: 
+      - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
+      - `[SourceId <String>]`: Identifier for resource used for deployment to a group
+      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+        - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+    - `[CreatedDateTime <DateTime?>]`: Created date time in UTC of the device enrollment configuration
+    - `[Description <String>]`: The description of the device enrollment configuration
+    - `[DeviceEnrollmentConfigurationType <DeviceEnrollmentConfigurationType?>]`: Describes the TemplateFamily for the Template entity
+    - `[DisplayName <String>]`: The display name of the device enrollment configuration
+    - `[LastModifiedDateTime <DateTime?>]`: Last modified date time in UTC of the device enrollment configuration
+    - `[Priority <Int32?>]`: Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value.
+    - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the enrollment restrictions.
+    - `[Version <Int32?>]`: The version of the device enrollment configuration
+
+DEVICEENROLLMENTNOTIFICATIONCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration[]>: .
+  - `[Id <String>]`: 
+  - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment1[]>]`: The list of group assignments for the device configuration profile
+    - `[Id <String>]`: 
+    - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
+    - `[SourceId <String>]`: Identifier for resource used for deployment to a group
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  - `[CreatedDateTime <DateTime?>]`: Created date time in UTC of the device enrollment configuration
+  - `[Description <String>]`: The description of the device enrollment configuration
+  - `[DeviceEnrollmentConfigurationType <DeviceEnrollmentConfigurationType?>]`: Describes the TemplateFamily for the Template entity
+  - `[DisplayName <String>]`: The display name of the device enrollment configuration
+  - `[LastModifiedDateTime <DateTime?>]`: Last modified date time in UTC of the device enrollment configuration
+  - `[Priority <Int32?>]`: Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value.
+  - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the enrollment restrictions.
+  - `[Version <Int32?>]`: The version of the device enrollment configuration
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementdeviceenrollmentconfigurationenrollmentnotificationconfiguration](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementdeviceenrollmentconfigurationenrollmentnotificationconfiguration)
 

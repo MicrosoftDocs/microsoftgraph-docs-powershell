@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationgroupassignment
 schema: 2.0.0
@@ -16,26 +16,26 @@ Create new navigation property to groupAssignments for deviceManagement
 ```
 New-MgDeviceManagementDeviceConfigurationGroupAssignment -DeviceConfigurationId <String>
  [-AdditionalProperties <Hashtable>] [-DeviceConfiguration <IMicrosoftGraphDeviceConfiguration1>]
- [-ExcludeGroup] [-Id <String>] [-TargetGroupId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ExcludeGroup] [-Id <String>] [-TargetGroupId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementDeviceConfigurationGroupAssignment -DeviceConfigurationId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementDeviceConfigurationGroupAssignment -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgDeviceManagementDeviceConfigurationGroupAssignment -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DeviceConfiguration <IMicrosoftGraphDeviceConfiguration1>]
- [-ExcludeGroup] [-Id <String>] [-TargetGroupId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementDeviceConfigurationGroupAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ExcludeGroup] [-Id <String>] [-TargetGroupId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Create new navigation property to groupAssignments for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ Device configuration group assignment.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationGroupAssignment
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationGroupAssignment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -81,7 +81,7 @@ Device Configuration.
 To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfiguration1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 key: id of deviceConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Indicates if this group is should be excluded.
 Defaults that the group should be included
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,8 +143,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 The Id of the AAD group we are targeting the device configuration to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +206,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationGroupAssignment
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationGroupAssignment
+
 ## NOTES
 
 ALIASES
@@ -219,7 +222,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationGroupAssignment>`: Device configuration group assignment.
+BODYPARAMETER <IMicrosoftGraphDeviceConfigurationGroupAssignment>: Device configuration group assignment.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeviceConfiguration <IMicrosoftGraphDeviceConfiguration1>]`: Device Configuration.
@@ -312,7 +315,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationGroupAssignment>`: Device conf
   - `[ExcludeGroup <Boolean?>]`: Indicates if this group is should be excluded. Defaults that the group should be included
   - `[TargetGroupId <String>]`: The Id of the AAD group we are targeting the device configuration to.
 
-DEVICECONFIGURATION `<IMicrosoftGraphDeviceConfiguration1>`: Device Configuration.
+DEVICECONFIGURATION <IMicrosoftGraphDeviceConfiguration1>: Device Configuration.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment1[]>]`: The list of assignments for the device configuration profile.
@@ -404,7 +407,7 @@ DEVICECONFIGURATION `<IMicrosoftGraphDeviceConfiguration1>`: Device Configuratio
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -533,4 +536,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

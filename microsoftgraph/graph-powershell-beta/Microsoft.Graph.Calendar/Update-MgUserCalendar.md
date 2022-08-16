@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusercalendar
 schema: 2.0.0
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgUserCalendar
 
 ## SYNOPSIS
-The user's calendars.
-Read-only.
-Nullable.
+Update the navigation property calendars in users
 
 ## SYNTAX
 
@@ -24,14 +22,20 @@ Update-MgUserCalendar -CalendarId <String> -UserId <String> [-AdditionalProperti
  [-Id <String>] [-IsDefaultCalendar] [-IsRemovable] [-IsShared] [-IsSharedWithMe] [-IsTallyingResponses]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-Owner <IMicrosoftGraphEmailAddress>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserCalendar -CalendarId <String> -UserId <String> -BodyParameter <IMicrosoftGraphCalendar1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendar1> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -44,20 +48,12 @@ Update-MgUserCalendar -InputObject <ICalendarIdentity> [-AdditionalProperties <H
  [-Id <String>] [-IsDefaultCalendar] [-IsRemovable] [-IsShared] [-IsSharedWithMe] [-IsTallyingResponses]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-Name <String>]
  [-Owner <IMicrosoftGraphEmailAddress>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendar1> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The user's calendars.
-Read-only.
-Nullable.
+Update the navigation property calendars in users
 
 ## EXAMPLES
 
@@ -67,7 +63,7 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +79,7 @@ Represent the online meeting service providers that can be used to create online
 Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +95,7 @@ calendar
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalendar1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -115,7 +111,7 @@ The calendarGroup in which to create the calendar.
 If the user has never explicitly set a group for the calendar, this property is null.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,8 +126,8 @@ Accept wildcard characters: False
 key: id of calendar
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -146,7 +142,7 @@ The permissions of the users with whom the calendar is shared.
 To construct, please use Get-Help -Online and see NOTES section for CALENDARPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalendarPermission[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarPermission[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,7 +160,7 @@ Read-only.
 To construct, please use Get-Help -Online and see NOTES section for CALENDARVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,10 +174,11 @@ Accept wildcard characters: False
 ### -CanEdit
 true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
+This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,9 +192,10 @@ Accept wildcard characters: False
 ### -CanShare
 true if the user has the permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -210,9 +208,11 @@ Accept wildcard characters: False
 
 ### -CanViewPrivateItems
 true if the user can read calendar items that have been marked private, false otherwise.
+This property is set through an Outlook client or the corresponding calendarPermission resource.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -230,7 +230,7 @@ This allows Exchange to apply changes to the correct version of the object.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 calendarColor
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 onlineMeetingProviderType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -278,7 +278,7 @@ Read-only.
 To construct, please use Get-Help -Online and see NOTES section for EVENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -292,10 +292,9 @@ Accept wildcard characters: False
 ### -HexColor
 The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space.
 If the user has never explicitly set a color for the calendar, this property is empty.
-Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -307,10 +306,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -326,8 +325,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -341,7 +340,7 @@ Accept wildcard characters: False
 true if this is the default calendar where new events are created by default, false otherwise.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -356,7 +355,7 @@ Accept wildcard characters: False
 Indicates whether this user calendar can be deleted from the user mailbox.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -374,7 +373,7 @@ This property is set when sharing is initiated in an Outlook client, and can be 
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -392,7 +391,7 @@ This property is set when sharing is initiated in an Outlook client, and can be 
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -408,7 +407,7 @@ Indicates whether this user calendar supports tracking of meeting responses.
 Only meeting invites sent from users' primary calendars support tracking of meeting responses.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -426,7 +425,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -441,7 +440,7 @@ Accept wildcard characters: False
 The calendar name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -457,7 +456,7 @@ emailAddress
 To construct, please use Get-Help -Online and see NOTES section for OWNER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailAddress
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -472,7 +471,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -490,7 +489,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -505,8 +504,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -520,7 +519,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -536,7 +535,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -553,10 +552,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -566,34 +568,34 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCalendar1>`: calendar
+BODYPARAMETER <IMicrosoftGraphCalendar1>: calendar
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AllowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers that can be used to create online meetings in this calendar. Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
   - `[CalendarGroupId <String>]`: The calendarGroup in which to create the calendar. If the user has never explicitly set a group for the calendar, this property is  null.
   - `[CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]`: The permissions of the users with whom the calendar is shared.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
     - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
     - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
     - `[Role <String>]`: calendarRoleType
-  - `[CalendarView <IMicrosoftGraphEvent1[]>]`: The calendar view for the calendar. Navigation property. Read-only.
+  - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Navigation property. Read-only.
     - `[Categories <String[]>]`: The categories associated with the item
     - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: Read-only.
-    - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false. Optional. Default is true.
+    - `[Id <String>]`: 
+    - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise false. Optional. Default is true.
     - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The attachment's file name.
+      - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
       - `[Size <Int32?>]`: The length of the attachment in bytes.
     - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
       - `[Type <String>]`: attendeeType
@@ -602,8 +604,8 @@ BODYPARAMETER `<IMicrosoftGraphCalendar1>`: calendar
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-          - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+          - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+          - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -617,13 +619,13 @@ BODYPARAMETER `<IMicrosoftGraphCalendar1>`: calendar
     - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
     - `[CancelledOccurrences <String[]>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master. Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
     - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[ExceptionOccurrences <IMicrosoftGraphEvent1[]>]`: 
+    - `[ExceptionOccurrences <IMicrosoftGraphEvent[]>]`: 
     - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the event. Nullable.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
     - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
     - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list. Default is false.
     - `[Importance <String>]`: importance
-    - `[Instances <IMicrosoftGraphEvent1[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
+    - `[Instances <IMicrosoftGraphEvent[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
     - `[IsAllDay <Boolean?>]`: 
     - `[IsCancelled <Boolean?>]`: 
     - `[IsDraft <Boolean?>]`: 
@@ -656,7 +658,7 @@ BODYPARAMETER `<IMicrosoftGraphCalendar1>`: calendar
       - `[UniqueIdType <String>]`: locationUniqueIdType
     - `[Locations <IMicrosoftGraphLocation1[]>]`: 
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Value <String[]>]`: A collection of property values.
     - `[OccurrenceId <String>]`: 
     - `[OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo1>]`: onlineMeetingInfo
@@ -702,7 +704,7 @@ BODYPARAMETER `<IMicrosoftGraphCalendar1>`: calendar
     - `[SeriesMasterId <String>]`: 
     - `[ShowAs <String>]`: freeBusyStatus
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Value <String>]`: A property value.
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Subject <String>]`: 
@@ -710,14 +712,14 @@ BODYPARAMETER `<IMicrosoftGraphCalendar1>`: calendar
     - `[Type <String>]`: eventType
     - `[Uid <String>]`: 
     - `[WebLink <String>]`: 
-  - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access.
-  - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it.
-  - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+  - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource. Read-only.
+  - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. Read-only.
+  - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise. This property is set through an Outlook client or the corresponding calendarPermission resource. Read-only.
   - `[ChangeKey <String>]`: Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
   - `[Color <String>]`: calendarColor
   - `[DefaultOnlineMeetingProvider <String>]`: onlineMeetingProviderType
-  - `[Events <IMicrosoftGraphEvent1[]>]`: The events in the calendar. Navigation property. Read-only.
-  - `[HexColor <String>]`: The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is empty. Read-only.
+  - `[Events <IMicrosoftGraphEvent[]>]`: The events in the calendar. Navigation property. Read-only.
+  - `[HexColor <String>]`: The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is  empty.
   - `[IsDefaultCalendar <Boolean?>]`: true if this is the default calendar where new events are created by default, false otherwise.
   - `[IsRemovable <Boolean?>]`: Indicates whether this user calendar can be deleted from the user mailbox.
   - `[IsShared <Boolean?>]`: true if the user has shared the calendar with other users, false otherwise. Since only the user who created the calendar can share it, isShared and isSharedWithMe cannot be true for the same user. This property is set when sharing is initiated in an Outlook client, and can be reset when the sharing is cancelled through the client or the corresponding calendarPermission resource. Read-only.
@@ -728,43 +730,43 @@ BODYPARAMETER `<IMicrosoftGraphCalendar1>`: calendar
   - `[Owner <IMicrosoftGraphEmailAddress>]`: emailAddress
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
 
-CALENDARPERMISSIONS <IMicrosoftGraphCalendarPermission\[]>: The permissions of the users with whom the calendar is shared.
-  - `[Id <String>]`: Read-only.
+CALENDARPERMISSIONS <IMicrosoftGraphCalendarPermission[]>: The permissions of the users with whom the calendar is shared.
+  - `[Id <String>]`: 
   - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
   - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
   - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
   - `[Role <String>]`: calendarRoleType
 
-CALENDARVIEW <IMicrosoftGraphEvent1\[]>: The calendar view for the calendar. Navigation property. Read-only.
+CALENDARVIEW <IMicrosoftGraphEvent[]>: The calendar view for the calendar. Navigation property. Read-only.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: Read-only.
-  - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false. Optional. Default is true.
+  - `[Id <String>]`: 
+  - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise false. Optional. Default is true.
   - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The attachment's file name.
+    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
   - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
     - `[Type <String>]`: attendeeType
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
     - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -777,47 +779,47 @@ CALENDARVIEW <IMicrosoftGraphEvent1\[]>: The calendar view for the calendar. Nav
   - `[BodyPreview <String>]`: The preview of the message associated with the event. It is in text format.
   - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AllowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers that can be used to create online meetings in this calendar. Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
     - `[CalendarGroupId <String>]`: The calendarGroup in which to create the calendar. If the user has never explicitly set a group for the calendar, this property is  null.
     - `[CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]`: The permissions of the users with whom the calendar is shared.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
       - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
       - `[Role <String>]`: calendarRoleType
-    - `[CalendarView <IMicrosoftGraphEvent1[]>]`: The calendar view for the calendar. Navigation property. Read-only.
-    - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access.
-    - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it.
-    - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+    - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Navigation property. Read-only.
+    - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource. Read-only.
+    - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. Read-only.
+    - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise. This property is set through an Outlook client or the corresponding calendarPermission resource. Read-only.
     - `[ChangeKey <String>]`: Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
     - `[Color <String>]`: calendarColor
     - `[DefaultOnlineMeetingProvider <String>]`: onlineMeetingProviderType
-    - `[Events <IMicrosoftGraphEvent1[]>]`: The events in the calendar. Navigation property. Read-only.
-    - `[HexColor <String>]`: The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is empty. Read-only.
+    - `[Events <IMicrosoftGraphEvent[]>]`: The events in the calendar. Navigation property. Read-only.
+    - `[HexColor <String>]`: The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is  empty.
     - `[IsDefaultCalendar <Boolean?>]`: true if this is the default calendar where new events are created by default, false otherwise.
     - `[IsRemovable <Boolean?>]`: Indicates whether this user calendar can be deleted from the user mailbox.
     - `[IsShared <Boolean?>]`: true if the user has shared the calendar with other users, false otherwise. Since only the user who created the calendar can share it, isShared and isSharedWithMe cannot be true for the same user. This property is set when sharing is initiated in an Outlook client, and can be reset when the sharing is cancelled through the client or the corresponding calendarPermission resource. Read-only.
     - `[IsSharedWithMe <Boolean?>]`: true if the user has been shared this calendar, false otherwise. This property is always false for a calendar owner. This property is set when sharing is initiated in an Outlook client, and can be reset when the sharing is cancelled through the client or the corresponding calendarPermission resource. Read-only.
     - `[IsTallyingResponses <Boolean?>]`: Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Value <String[]>]`: A collection of property values.
     - `[Name <String>]`: The calendar name.
     - `[Owner <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Value <String>]`: A property value.
   - `[CancelledOccurrences <String[]>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master. Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[ExceptionOccurrences <IMicrosoftGraphEvent1[]>]`: 
+  - `[ExceptionOccurrences <IMicrosoftGraphEvent[]>]`: 
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the event. Nullable.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
   - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
   - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list. Default is false.
   - `[Importance <String>]`: importance
-  - `[Instances <IMicrosoftGraphEvent1[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
+  - `[Instances <IMicrosoftGraphEvent[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
   - `[IsAllDay <Boolean?>]`: 
   - `[IsCancelled <Boolean?>]`: 
   - `[IsDraft <Boolean?>]`: 
@@ -901,32 +903,32 @@ CALENDARVIEW <IMicrosoftGraphEvent1\[]>: The calendar view for the calendar. Nav
   - `[Uid <String>]`: 
   - `[WebLink <String>]`: 
 
-EVENTS <IMicrosoftGraphEvent1\[]>: The events in the calendar. Navigation property. Read-only.
+EVENTS <IMicrosoftGraphEvent[]>: The events in the calendar. Navigation property. Read-only.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: Read-only.
-  - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false. Optional. Default is true.
+  - `[Id <String>]`: 
+  - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise false. Optional. Default is true.
   - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The attachment's file name.
+    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
   - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
     - `[Type <String>]`: attendeeType
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
     - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -939,47 +941,47 @@ EVENTS <IMicrosoftGraphEvent1\[]>: The events in the calendar. Navigation proper
   - `[BodyPreview <String>]`: The preview of the message associated with the event. It is in text format.
   - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AllowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers that can be used to create online meetings in this calendar. Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
     - `[CalendarGroupId <String>]`: The calendarGroup in which to create the calendar. If the user has never explicitly set a group for the calendar, this property is  null.
     - `[CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]`: The permissions of the users with whom the calendar is shared.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
       - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
       - `[Role <String>]`: calendarRoleType
-    - `[CalendarView <IMicrosoftGraphEvent1[]>]`: The calendar view for the calendar. Navigation property. Read-only.
-    - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access.
-    - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it.
-    - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+    - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Navigation property. Read-only.
+    - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource. Read-only.
+    - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. Read-only.
+    - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise. This property is set through an Outlook client or the corresponding calendarPermission resource. Read-only.
     - `[ChangeKey <String>]`: Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
     - `[Color <String>]`: calendarColor
     - `[DefaultOnlineMeetingProvider <String>]`: onlineMeetingProviderType
-    - `[Events <IMicrosoftGraphEvent1[]>]`: The events in the calendar. Navigation property. Read-only.
-    - `[HexColor <String>]`: The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is empty. Read-only.
+    - `[Events <IMicrosoftGraphEvent[]>]`: The events in the calendar. Navigation property. Read-only.
+    - `[HexColor <String>]`: The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is  empty.
     - `[IsDefaultCalendar <Boolean?>]`: true if this is the default calendar where new events are created by default, false otherwise.
     - `[IsRemovable <Boolean?>]`: Indicates whether this user calendar can be deleted from the user mailbox.
     - `[IsShared <Boolean?>]`: true if the user has shared the calendar with other users, false otherwise. Since only the user who created the calendar can share it, isShared and isSharedWithMe cannot be true for the same user. This property is set when sharing is initiated in an Outlook client, and can be reset when the sharing is cancelled through the client or the corresponding calendarPermission resource. Read-only.
     - `[IsSharedWithMe <Boolean?>]`: true if the user has been shared this calendar, false otherwise. This property is always false for a calendar owner. This property is set when sharing is initiated in an Outlook client, and can be reset when the sharing is cancelled through the client or the corresponding calendarPermission resource. Read-only.
     - `[IsTallyingResponses <Boolean?>]`: Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Value <String[]>]`: A collection of property values.
     - `[Name <String>]`: The calendar name.
     - `[Owner <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Value <String>]`: A property value.
   - `[CancelledOccurrences <String[]>]`: Contains occurrenceId property values of cancelled instances in a recurring series, if the event is the series master. Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[ExceptionOccurrences <IMicrosoftGraphEvent1[]>]`: 
+  - `[ExceptionOccurrences <IMicrosoftGraphEvent[]>]`: 
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the event. Nullable.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
   - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
   - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list. Default is false.
   - `[Importance <String>]`: importance
-  - `[Instances <IMicrosoftGraphEvent1[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
+  - `[Instances <IMicrosoftGraphEvent[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
   - `[IsAllDay <Boolean?>]`: 
   - `[IsCancelled <Boolean?>]`: 
   - `[IsDraft <Boolean?>]`: 
@@ -1063,13 +1065,14 @@ EVENTS <IMicrosoftGraphEvent1\[]>: The events in the calendar. Navigation proper
   - `[Uid <String>]`: 
   - `[WebLink <String>]`: 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
@@ -1077,19 +1080,18 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: key: id of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
+MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
+  - `[Id <String>]`: 
   - `[Value <String[]>]`: A collection of property values.
 
-OWNER `<IMicrosoftGraphEmailAddress>`: emailAddress
+OWNER <IMicrosoftGraphEmailAddress>: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
+  - `[Id <String>]`: 
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
 
-## RELATED LINKS

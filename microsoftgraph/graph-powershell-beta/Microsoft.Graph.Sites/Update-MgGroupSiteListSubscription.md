@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mggroupsitelistsubscription
 schema: 2.0.0
@@ -14,19 +14,26 @@ Update the navigation property subscriptions in groups
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgGroupSiteListSubscription -GroupId <String> -ListId <String> -SiteId <String> -SubscriptionId <String>
- [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>]
- [-CreatorId <String>] [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>]
- [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
- [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>] [-NotificationQueryOptions <String>]
- [-NotificationUrl <String>] [-NotificationUrlAppId <String>] [-Resource <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgGroupSiteListSubscription -GroupId <String> -ListId <String> -SiteId <String>
+ -SubscriptionId <String> [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-ChangeType <String>]
+ [-ClientState <String>] [-CreatorId <String>] [-EncryptionCertificate <String>]
+ [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData]
+ [-LatestSupportedTlsVersion <String>] [-LifecycleNotificationUrl <String>]
+ [-NotificationContentType <String>] [-NotificationQueryOptions <String>] [-NotificationUrl <String>]
+ [-NotificationUrlAppId <String>] [-Resource <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgGroupSiteListSubscription -GroupId <String> -ListId <String> -SiteId <String> -SubscriptionId <String>
- -BodyParameter <IMicrosoftGraphSubscription> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupSiteListSubscription -GroupId <String> -ListId <String> -SiteId <String>
+ -SubscriptionId <String> -BodyParameter <IMicrosoftGraphSubscription> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgGroupSiteListSubscription -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphSubscription>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -36,14 +43,8 @@ Update-MgGroupSiteListSubscription -InputObject <ISitesIdentity> [-AdditionalPro
  [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>] [-NotificationQueryOptions <String>]
- [-NotificationUrl <String>] [-NotificationUrlAppId <String>] [-Resource <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgGroupSiteListSubscription -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphSubscription>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotificationUrl <String>] [-NotificationUrlAppId <String>] [-Resource <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +58,7 @@ Update the navigation property subscriptions in groups
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -74,7 +75,7 @@ Identifier of the application used to create the subscription.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -90,7 +91,7 @@ subscription
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSubscription
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -110,7 +111,7 @@ Note: Drive root item and list change notifications support only the updated cha
 User and group change notifications support updated and deleted changeType.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -128,7 +129,7 @@ The maximum length is 255 characters.
 The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -147,7 +148,7 @@ If the app used application permissions, this field contains the ID of the servi
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -164,7 +165,7 @@ A base64-encoded representation of a certificate with a public key used to encry
 Optional but required when includeResourceData is true.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -181,7 +182,7 @@ A custom app-provided identifier to help identify the certificate needed to decr
 Required when includeResourceData is true.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -199,7 +200,7 @@ The time is in UTC, and can be an amount of time from subscription creation that
 For the maximum supported subscription length of time, see the table below.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -214,8 +215,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -229,7 +230,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -245,7 +246,7 @@ Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -261,8 +262,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -282,7 +283,7 @@ For subscribers whose notification endpoint already supports TLS 1.2, setting th
 In such cases, Microsoft Graph defaults the property to v1_2.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -299,7 +300,7 @@ The URL of the endpoint that receives lifecycle notifications, including subscri
 This URL must make use of the HTTPS protocol.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -314,8 +315,8 @@ Accept wildcard characters: False
 key: id of list
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -331,7 +332,7 @@ Desired content-type for Microsoft Graph change notifications for supported reso
 The default content-type is application/json.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -350,7 +351,7 @@ With this new property in the subscription creation payload along with all exist
 For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -367,7 +368,7 @@ The URL of the endpoint that receives the change notifications.
 This URL must make use of the HTTPS protocol.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -384,7 +385,7 @@ The app ID that the subscription service can use to generate the validation toke
 This allows the client to validate the authenticity of the notification received.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -399,7 +400,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -417,7 +418,7 @@ Do not include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -432,8 +433,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -447,8 +448,8 @@ Accept wildcard characters: False
 key: id of subscription
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -462,7 +463,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -478,7 +479,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -495,10 +496,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -508,7 +512,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSubscription>`: subscription
+BODYPARAMETER <IMicrosoftGraphSubscription>: subscription
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ApplicationId <String>]`: Optional. Identifier of the application used to create the subscription. Read-only.
@@ -527,7 +531,7 @@ BODYPARAMETER `<IMicrosoftGraphSubscription>`: subscription
   - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
   - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -565,3 +569,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

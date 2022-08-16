@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/start-mgsecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
@@ -34,7 +34,7 @@ Invoke function run
 key: id of ediscoveryCase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Run
 Aliases:
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 key: id of ediscoveryReviewSet
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Run
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 key: id of ediscoveryReviewSetQuery
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Run
 Aliases:
 
@@ -80,7 +80,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 Parameter Sets: RunViaIdentity
 Aliases:
 
@@ -97,9 +97,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryFile
+
 ## NOTES
 
 ALIASES
@@ -109,7 +111,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -154,3 +156,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
+

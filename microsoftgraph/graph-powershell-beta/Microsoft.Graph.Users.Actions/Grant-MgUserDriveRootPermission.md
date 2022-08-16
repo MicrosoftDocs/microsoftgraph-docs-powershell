@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/grant-mguserdriverootpermission
 schema: 2.0.0
@@ -16,27 +16,27 @@ Invoke action grant
 ```
 Grant-MgUserDriveRootPermission -DriveId <String> -PermissionId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Grant
 ```
 Grant-MgUserDriveRootPermission -DriveId <String> -PermissionId <String> -UserId <String>
  -BodyParameter <IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GrantViaIdentityExpanded
-```
-Grant-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GrantViaIdentity
 ```
 Grant-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GrantViaIdentityExpanded
+```
+Grant-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Invoke action grant
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Grant, GrantViaIdentity
 Aliases:
 
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 key: id of drive
 
 ```yaml
-Type: String
-Parameter Sets: GrantExpanded, Grant
+Type: System.String
+Parameter Sets: Grant, GrantExpanded
 Aliases:
 
 Required: True
@@ -97,8 +97,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: GrantViaIdentity, GrantViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 key: id of permission
 
 ```yaml
-Type: String
-Parameter Sets: GrantExpanded, Grant
+Type: System.String
+Parameter Sets: Grant, GrantExpanded
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDriveRecipient[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveRecipient[]
 Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
@@ -158,8 +158,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: GrantExpanded, Grant
+Type: System.String
+Parameter Sets: Grant, GrantExpanded
 Aliases:
 
 Required: True
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +206,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
+
 ## NOTES
 
 ALIASES
@@ -219,7 +222,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Recipients <IMicrosoftGraphDriveRecipient[]>]`: 
     - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
@@ -227,7 +230,7 @@ BODYPARAMETER `<IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdM
     - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
   - `[Roles <String[]>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -265,6 +268,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription
@@ -274,9 +278,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+

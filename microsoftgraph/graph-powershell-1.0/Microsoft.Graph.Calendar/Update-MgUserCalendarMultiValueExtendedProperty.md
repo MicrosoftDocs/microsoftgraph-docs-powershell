@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusercalendarmultivalueextendedproperty
 schema: 2.0.0
@@ -8,72 +8,69 @@ schema: 2.0.0
 # Update-MgUserCalendarMultiValueExtendedProperty
 
 ## SYNOPSIS
-The collection of multi-value extended properties defined for the calendar.
-Read-only.
-Nullable.
+Update the navigation property multiValueExtendedProperties in users
 
 ## SYNTAX
 
 ### UpdateExpanded2 (Default)
 ```
 Update-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateExpanded3
-```
-Update-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
- -CalendarId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update3
-```
-Update-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
- -CalendarId <String> -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
 ```
 
 ### Update2
 ```
 Update-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded3
+### Update3
 ```
-Update-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgUserCalendarMultiValueExtendedProperty -CalendarId <String>
+ -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded2
+### UpdateExpanded3
+```
+Update-MgUserCalendarMultiValueExtendedProperty -CalendarId <String>
+ -MultiValueLegacyExtendedPropertyId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Value <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity2
 ```
 Update-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity3
 ```
 Update-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity>
- -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity2
+### UpdateViaIdentityExpanded2
 ```
 Update-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity>
- -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded3
+```
+Update-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The collection of multi-value extended properties defined for the calendar.
-Read-only.
-Nullable.
+Update the navigation property multiValueExtendedProperties in users
 
 ## EXAMPLES
 
@@ -83,8 +80,8 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -99,8 +96,8 @@ multiValueLegacyExtendedProperty
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty
-Parameter Sets: Update3, Update2, UpdateViaIdentity3, UpdateViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty
+Parameter Sets: Update2, Update3, UpdateViaIdentity2, UpdateViaIdentity3
 Aliases:
 
 Required: True
@@ -114,8 +111,8 @@ Accept wildcard characters: False
 key: id of calendar
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded3, Update3
+Type: System.String
+Parameter Sets: Update3, UpdateExpanded3
 Aliases:
 
 Required: True
@@ -126,11 +123,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.String
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -145,8 +142,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentity3, UpdateViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Parameter Sets: UpdateViaIdentity2, UpdateViaIdentity3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: True
@@ -160,8 +157,8 @@ Accept wildcard characters: False
 key: id of multiValueLegacyExtendedProperty
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, Update3, Update2
+Type: System.String
+Parameter Sets: Update2, Update3, UpdateExpanded2, UpdateExpanded3
 Aliases:
 
 Required: True
@@ -175,7 +172,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -190,8 +187,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, Update3, Update2
+Type: System.String
+Parameter Sets: Update2, Update3, UpdateExpanded2, UpdateExpanded3
 Aliases:
 
 Required: True
@@ -205,8 +202,8 @@ Accept wildcard characters: False
 A collection of property values.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.String[]
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -220,7 +217,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -236,7 +233,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -253,10 +250,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -266,18 +266,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMultiValueLegacyExtendedProperty>`: multiValueLegacyExtendedProperty
+BODYPARAMETER <IMicrosoftGraphMultiValueLegacyExtendedProperty>: multiValueLegacyExtendedProperty
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Value <String[]>]`: A collection of property values.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
@@ -286,3 +287,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnectionitem
 schema: 2.0.0
@@ -17,28 +17,29 @@ Update the navigation property items in external
 Update-MgExternalConnectionItem -ExternalConnectionId <String> -ExternalItemId <String>
  [-Acl <IMicrosoftGraphExternalConnectorsAcl1[]>] [-AdditionalProperties <Hashtable>]
  [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgExternalConnectionItem -ExternalConnectionId <String> -ExternalItemId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgExternalConnectionItem -InputObject <ISearchIdentity> [-Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]
- [-AdditionalProperties <Hashtable>] [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>]
- [-Id <String>] [-Properties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgExternalConnectionItem -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
+```
+Update-MgExternalConnectionItem -InputObject <ISearchIdentity>
+ [-Acl <IMicrosoftGraphExternalConnectorsAcl1[]>] [-AdditionalProperties <Hashtable>]
+ [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +56,7 @@ Required.
 To construct, please use Get-Help -Online and see NOTES section for ACL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsAcl1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsAcl1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -70,7 +71,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -86,7 +87,7 @@ externalItem
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalItem
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -102,7 +103,7 @@ externalItemContent
 To construct, please use Get-Help -Online and see NOTES section for CONTENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalItemContent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItemContent
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -117,8 +118,8 @@ Accept wildcard characters: False
 key: id of externalConnection
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -132,8 +133,8 @@ Accept wildcard characters: False
 key: id of externalItem
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -147,7 +148,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -163,8 +164,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -178,7 +179,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -193,7 +194,7 @@ Accept wildcard characters: False
 properties
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -208,7 +209,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +225,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,11 +241,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem1
+
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -254,12 +258,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACL <IMicrosoftGraphExternalConnectorsAcl1\[]>: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
+ACL <IMicrosoftGraphExternalConnectorsAcl1[]>: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
   - `[AccessType <String>]`: accessType
   - `[Type <String>]`: aclType
   - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup.
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalItem1>`: externalItem
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalItem1>: externalItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
@@ -273,15 +277,16 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalItem1>`: externalItem
   - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-CONTENT `<IMicrosoftGraphExternalConnectorsExternalItemContent>`: externalItemContent
+CONTENT <IMicrosoftGraphExternalConnectorsExternalItemContent>: externalItemContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: externalItemContentType
   - `[Value <String>]`: The content for the externalItem. Required.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
+  - `[ExternalActivityId <String>]`: key: id of externalActivity
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
   - `[ExternalGroupId <String>]`: key: id of externalGroup
   - `[ExternalItemId <String>]`: key: id of externalItem
@@ -289,3 +294,4 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: key: id of qna
 
 ## RELATED LINKS
+

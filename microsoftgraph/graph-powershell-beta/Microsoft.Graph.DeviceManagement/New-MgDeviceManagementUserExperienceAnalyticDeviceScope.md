@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicescope
 schema: 2.0.0
@@ -18,13 +18,13 @@ New-MgDeviceManagementUserExperienceAnalyticDeviceScope [-AdditionalProperties <
  [-CreatedDateTime <DateTime>] [-DeviceScopeName <String>] [-Enabled] [-Id <String>] [-IsBuiltIn]
  [-LastModifiedDateTime <DateTime>] [-Operator <DeviceScopeOperator>] [-OwnerId <String>]
  [-Parameter <DeviceScopeParameter>] [-Status <DeviceScopeStatus>] [-Value <String>] [-ValueObjectId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceScope
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScope> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,7 +38,7 @@ Create new navigation property to userExperienceAnalyticsDeviceScopes for device
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +54,7 @@ The user experience analytics device scope entity contains device scope configur
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsDeviceScope
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScope
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 Indicates the creation date and time for the custom device scope.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 The name of the user experience analytics device Scope configuration.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +102,7 @@ When FALSE, the device scope is disabled.
 Default value is FALSE.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ When FALSE, the device scope configuration is custom.
 Default value is FALSE.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 Indicates the last updated date and time for the custom device scope.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ Possible values are: equals, notEquals, contains, notContains, greaterThan, less
 Default value: equals.
 
 ```yaml
-Type: DeviceScopeOperator
+Type: Microsoft.Graph.PowerShell.Support.DeviceScopeOperator
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 The unique identifier of the person (admin) who created the device scope configuration.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -200,7 +200,7 @@ Eg: device scope parameter can be OS version, Disk Type, Device manufacturer, de
 Default value: scopeTag.
 
 ```yaml
-Type: DeviceScopeParameter
+Type: Microsoft.Graph.PowerShell.Support.DeviceScopeParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -217,7 +217,7 @@ Possible values are: none, computing, insufficientData or completed.
 Default value is none.
 
 ```yaml
-Type: DeviceScopeStatus
+Type: Microsoft.Graph.PowerShell.Support.DeviceScopeStatus
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 The device scope configuration query clause value.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 The unique identifier for a user device scope tag Id used for the creation of device scope configuration.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -278,7 +278,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -295,9 +295,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScope
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScope
+
 ## NOTES
 
 ALIASES
@@ -307,7 +309,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceScope>`: The user experience analytics device scope entity contains device scope configuration values use to apply filtering on the endpoint analytics reports.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceScope>: The user experience analytics device scope entity contains device scope configuration values use to apply filtering on the endpoint analytics reports.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Indicates the creation date and time for the custom device scope.
@@ -323,3 +325,4 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceScope>`: The user ex
   - `[ValueObjectId <String>]`: The unique identifier for a user device scope tag Id used for the creation of device scope configuration.
 
 ## RELATED LINKS
+

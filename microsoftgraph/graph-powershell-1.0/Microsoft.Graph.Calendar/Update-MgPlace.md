@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgplace
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPlace
 
 ## SYNOPSIS
-Update entity in places
+Update place
 
 ## SYNTAX
 
@@ -17,13 +17,19 @@ Update entity in places
 Update-MgPlace -PlaceId <String> [-AdditionalProperties <Hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgPlace -PlaceId <String> -BodyParameter <IMicrosoftGraphPlace1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgPlace -PlaceId <String> -BodyParameter <IMicrosoftGraphPlace1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphPlace1> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -31,17 +37,11 @@ Update-MgPlace -PlaceId <String> -BodyParameter <IMicrosoftGraphPlace1> [-PassTh
 Update-MgPlace -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphPlace1> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update entity in places
+Update place
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Update entity in places
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -67,7 +67,7 @@ physicalAddress
 To construct, please use Get-Help -Online and see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhysicalAddress
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -83,7 +83,7 @@ place
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlace1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 The name associated with the place.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -114,7 +114,7 @@ outlookGeoCoordinates
 To construct, please use Get-Help -Online and see NOTES section for GEOCOORDINATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOutlookGeoCoordinates
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookGeoCoordinates
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -126,10 +126,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -145,8 +145,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 The phone number of the place.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -190,8 +190,8 @@ Accept wildcard characters: False
 key: id of place
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -221,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -238,10 +238,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -251,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -259,9 +262,9 @@ ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-BODYPARAMETER `<IMicrosoftGraphPlace>`: place
+BODYPARAMETER <IMicrosoftGraphPlace1>: place
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -279,7 +282,7 @@ BODYPARAMETER `<IMicrosoftGraphPlace>`: place
     - `[Longitude <Double?>]`: The longitude of the location.
   - `[Phone <String>]`: The phone number of the place.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
   - `[Altitude <Double?>]`: The altitude of the location.
@@ -287,13 +290,14 @@ GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   - `[Latitude <Double?>]`: The latitude of the location.
   - `[Longitude <Double?>]`: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
@@ -302,3 +306,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

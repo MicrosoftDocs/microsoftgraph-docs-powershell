@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpostinreplyto
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action reply
 ### ReplyExpanded (Default)
 ```
 Invoke-MgReplyGroupThreadPostInReplyTo -ConversationThreadId <String> -GroupId <String> -PostId <String>
- [-AdditionalProperties <Hashtable>] [-Post <IMicrosoftGraphPost1>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-Post <IMicrosoftGraphPost1>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -23,20 +23,20 @@ Invoke-MgReplyGroupThreadPostInReplyTo -ConversationThreadId <String> -GroupId <
 ```
 Invoke-MgReplyGroupThreadPostInReplyTo -ConversationThreadId <String> -GroupId <String> -PostId <String>
  -BodyParameter <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ReplyViaIdentityExpanded
-```
-Invoke-MgReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Post <IMicrosoftGraphPost1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReplyViaIdentity
 ```
 Invoke-MgReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ReplyViaIdentityExpanded
+```
+Invoke-MgReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Post <IMicrosoftGraphPost1>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Invoke action reply
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Reply, ReplyViaIdentity
 Aliases:
 
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 key: id of conversationThread
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
+Type: System.String
+Parameter Sets: Reply, ReplyExpanded
 Aliases:
 
 Required: True
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
+Type: System.String
+Parameter Sets: Reply, ReplyExpanded
 Aliases:
 
 Required: True
@@ -112,8 +112,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: ReplyViaIdentityExpanded, ReplyViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: ReplyViaIdentity, ReplyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -143,7 +143,7 @@ post
 To construct, please use Get-Help -Online and see NOTES section for POST properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPost1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost1
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -158,8 +158,8 @@ Accept wildcard characters: False
 key: id of post
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
+Type: System.String
+Parameter Sets: Reply, ReplyExpanded
 Aliases:
 
 Required: True
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +206,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -219,7 +222,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Post <IMicrosoftGraphPost1>]`: post
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -272,7 +275,7 @@ BODYPARAMETER `<IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostId
       - `[Id <String>]`: 
       - `[Value <String>]`: A property value.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -315,7 +318,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-POST `<IMicrosoftGraphPost1>`: post
+POST <IMicrosoftGraphPost1>: post
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -368,4 +371,3 @@ POST `<IMicrosoftGraphPost1>`: post
 
 ## RELATED LINKS
 
-## RELATED LINKS

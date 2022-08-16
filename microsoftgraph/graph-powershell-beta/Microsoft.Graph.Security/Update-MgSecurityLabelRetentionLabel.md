@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabel
 schema: 2.0.0
@@ -19,15 +19,22 @@ Update-MgSecurityLabelRetentionLabel -RetentionLabelId <String> [-ActionAfterRet
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DefaultRecordBehavior <String>]
  [-DescriptionForAdmins <String>] [-DescriptionForUsers <String>] [-DisplayName <String>]
  [-DispositionReviewStages <IMicrosoftGraphSecurityDispositionReviewStage[]>] [-Id <String>] [-IsInUse]
- [-LabelToBeApplied <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-RetentionDuration <Hashtable>] [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]
- [-RetentionTrigger <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LabelToBeApplied <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-RetentionDuration <Hashtable>]
+ [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>] [-RetentionTrigger <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityLabelRetentionLabel -RetentionLabelId <String>
- -BodyParameter <IMicrosoftGraphSecurityRetentionLabel> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityRetentionLabel> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityRetentionLabel> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,15 +44,10 @@ Update-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-ActionAf
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DefaultRecordBehavior <String>]
  [-DescriptionForAdmins <String>] [-DescriptionForUsers <String>] [-DisplayName <String>]
  [-DispositionReviewStages <IMicrosoftGraphSecurityDispositionReviewStage[]>] [-Id <String>] [-IsInUse]
- [-LabelToBeApplied <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-RetentionDuration <Hashtable>] [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]
- [-RetentionTrigger <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityRetentionLabel> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LabelToBeApplied <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-RetentionDuration <Hashtable>]
+ [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>] [-RetentionTrigger <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +61,7 @@ Update the navigation property retentionLabels in security
 actionAfterRetentionPeriod
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +76,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +91,7 @@ Accept wildcard characters: False
 behaviorDuringRetentionPeriod
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -105,7 +107,7 @@ retentionLabel
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionLabel
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionLabel
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -121,7 +123,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +138,7 @@ Accept wildcard characters: False
 Represents the date and time in which the retentionLabel is created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -151,7 +153,7 @@ Accept wildcard characters: False
 defaultRecordBehavior
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +169,7 @@ Provides label information for the admin.
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -183,7 +185,7 @@ Provides the label information for the user.
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +200,7 @@ Accept wildcard characters: False
 Unique string that defines a label name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +216,7 @@ Review stages during which reviewers are notified to determine whether a documen
 To construct, please use Get-Help -Online and see NOTES section for DISPOSITIONREVIEWSTAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityDispositionReviewStage[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +231,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -245,8 +247,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -260,7 +262,7 @@ Accept wildcard characters: False
 Specifies whether the label is currently being used.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -275,7 +277,7 @@ Accept wildcard characters: False
 Specifies the replacement label to be applied automatically after the retention period of the current label ends.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -291,7 +293,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -306,7 +308,7 @@ Accept wildcard characters: False
 The latest date time when the retentionLabel was modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -321,7 +323,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -336,7 +338,7 @@ Accept wildcard characters: False
 retentionDuration
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -352,7 +354,7 @@ retentionEventType
 To construct, please use Get-Help -Online and see NOTES section for RETENTIONEVENTTYPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionEventType
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionEventType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -367,8 +369,8 @@ Accept wildcard characters: False
 key: id of retentionLabel
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -382,7 +384,7 @@ Accept wildcard characters: False
 retentionTrigger
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -397,7 +399,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -413,7 +415,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -430,10 +432,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionLabel
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -443,7 +448,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityRetentionLabel>`: retentionLabel
+BODYPARAMETER <IMicrosoftGraphSecurityRetentionLabel>: retentionLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActionAfterRetentionPeriod <String>]`: actionAfterRetentionPeriod
@@ -483,7 +488,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityRetentionLabel>`: retentionLabel
     - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
   - `[RetentionTrigger <String>]`: retentionTrigger
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -492,13 +497,13 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DISPOSITIONREVIEWSTAGES <IMicrosoftGraphSecurityDispositionReviewStage\[]>: Review stages during which reviewers are notified to determine whether a document must be deleted or retained.
+DISPOSITIONREVIEWSTAGES <IMicrosoftGraphSecurityDispositionReviewStage[]>: Review stages during which reviewers are notified to determine whether a document must be deleted or retained.
   - `[Id <String>]`: 
   - `[Name <String>]`: Name representing each stage within a collection.
   - `[ReviewersEmailAddresses <String[]>]`: A collection of reviewers at each stage.
   - `[StageNumber <Int32?>]`: The sequence number for each stage of the disposition review.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -542,7 +547,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -551,7 +556,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RETENTIONEVENTTYPE `<IMicrosoftGraphSecurityRetentionEventType>`: retentionEventType
+RETENTIONEVENTTYPE <IMicrosoftGraphSecurityRetentionEventType>: retentionEventType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -569,3 +574,4 @@ RETENTIONEVENTTYPE `<IMicrosoftGraphSecurityRetentionEventType>`: retentionEvent
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+

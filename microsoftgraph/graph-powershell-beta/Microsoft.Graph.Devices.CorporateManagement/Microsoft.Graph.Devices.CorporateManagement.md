@@ -1,14 +1,14 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: {{ Update Module Guid }}
-Download Help Link: {{ Update Download Link }}
-Help Version: {{ Update Help Version }}
-Locale: {{ Update Locale }}
+Module Guid: 26b79d2b-9e45-4ab6-ab9d-9c102ea99108
+Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
+Help Version: 1.0.0.0
+Locale: en-US
 ---
 
 # Microsoft.Graph.Devices.CorporateManagement Module
 ## Description
-{{ Fill in the Description }}
+Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Devices.CorporateManagement Cmdlets
 ### [Clear-MgDeviceAppMgtWindowInformationProtectionDeviceRegistration](Clear-MgDeviceAppMgtWindowInformationProtectionDeviceRegistration.md)
@@ -347,173 +347,167 @@ Invoke action targetApps
 ### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
 Invoke action targetApps
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtAndroidManagedAppProtection](New-MgDeviceAppMgtAndroidManagedAppProtection.md)
+Create new navigation property to androidManagedAppProtections for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtAndroidManagedAppProtectionApp](New-MgDeviceAppMgtAndroidManagedAppProtectionApp.md)
+Create new navigation property to apps for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtDefaultManagedAppProtection](New-MgDeviceAppMgtDefaultManagedAppProtection.md)
+Create new navigation property to defaultManagedAppProtections for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtDefaultManagedAppProtectionApp](New-MgDeviceAppMgtDefaultManagedAppProtectionApp.md)
+Create new navigation property to apps for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtEnterpriseCodeSigningCertificate](New-MgDeviceAppMgtEnterpriseCodeSigningCertificate.md)
+Create new navigation property to enterpriseCodeSigningCertificates for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtiOSLobAppProvisioningConfiguration](New-MgDeviceAppMgtiOSLobAppProvisioningConfiguration.md)
+Create new navigation property to iosLobAppProvisioningConfigurations for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtiOSLobAppProvisioningConfigurationAssignment](New-MgDeviceAppMgtiOSLobAppProvisioningConfigurationAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtiOSLobAppProvisioningConfigurationDeviceStatuses](New-MgDeviceAppMgtiOSLobAppProvisioningConfigurationDeviceStatuses.md)
+Create new navigation property to deviceStatuses for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtiOSLobAppProvisioningConfigurationGroupAssignment](New-MgDeviceAppMgtiOSLobAppProvisioningConfigurationGroupAssignment.md)
+Create new navigation property to groupAssignments for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtiOSLobAppProvisioningConfigurationUserStatuses](New-MgDeviceAppMgtiOSLobAppProvisioningConfigurationUserStatuses.md)
+Create new navigation property to userStatuses for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtiOSManagedAppProtection](New-MgDeviceAppMgtiOSManagedAppProtection.md)
+Create new navigation property to iosManagedAppProtections for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtiOSManagedAppProtectionApp](New-MgDeviceAppMgtiOSManagedAppProtectionApp.md)
+Create new navigation property to apps for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppPolicy](New-MgDeviceAppMgtManagedAppPolicy.md)
+Create new navigation property to managedAppPolicies for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppRegistration](New-MgDeviceAppMgtManagedAppRegistration.md)
+Create new navigation property to managedAppRegistrations for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy](New-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy.md)
+Create new navigation property to appliedPolicies for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy](New-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy.md)
+Create new navigation property to intendedPolicies for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppRegistrationOperation](New-MgDeviceAppMgtManagedAppRegistrationOperation.md)
+Create new navigation property to operations for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppStatuses](New-MgDeviceAppMgtManagedAppStatuses.md)
+Create new navigation property to managedAppStatuses for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBook](New-MgDeviceAppMgtManagedEBook.md)
+Create new navigation property to managedEBooks for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBookAssignment](New-MgDeviceAppMgtManagedEBookAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtWindowManagedAppProtectionApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBookCategory](New-MgDeviceAppMgtManagedEBookCategory.md)
+Create new navigation property to managedEBookCategories for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBookDeviceState](New-MgDeviceAppMgtManagedEBookDeviceState.md)
+Create new navigation property to deviceStates for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBookUserStateSummary](New-MgDeviceAppMgtManagedEBookUserStateSummary.md)
+Create new navigation property to userStateSummary for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState](New-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState.md)
+Create new navigation property to deviceStates for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMdmWindowInformationProtectionPolicy](New-MgDeviceAppMgtMdmWindowInformationProtectionPolicy.md)
+Create new navigation property to mdmWindowsInformationProtectionPolicies for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileApp](New-MgDeviceAppMgtMobileApp.md)
+Create new navigation property to mobileApps for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppAssignment](New-MgDeviceAppMgtMobileAppAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppCategory](New-MgDeviceAppMgtMobileAppCategory.md)
+Create new navigation property to mobileAppCategories for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppConfiguration](New-MgDeviceAppMgtMobileAppConfiguration.md)
+Create new navigation property to mobileAppConfigurations for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppConfigurationAssignment](New-MgDeviceAppMgtMobileAppConfigurationAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses](New-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses.md)
+Create new navigation property to deviceStatuses for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppConfigurationUserStatuses](New-MgDeviceAppMgtMobileAppConfigurationUserStatuses.md)
+Create new navigation property to userStatuses for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppDeviceStatuses](New-MgDeviceAppMgtMobileAppDeviceStatuses.md)
+Create new navigation property to deviceStatuses for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppRelationship](New-MgDeviceAppMgtMobileAppRelationship.md)
+Create new navigation property to relationships for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppUserStatuses](New-MgDeviceAppMgtMobileAppUserStatuses.md)
+Create new navigation property to userStatuses for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppUserStatusesDeviceStatuses](New-MgDeviceAppMgtMobileAppUserStatusesDeviceStatuses.md)
+Create new navigation property to deviceStatuses for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtPolicySet](New-MgDeviceAppMgtPolicySet.md)
+Create new navigation property to policySets for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtPolicySetAssignment](New-MgDeviceAppMgtPolicySetAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtPolicySetItem](New-MgDeviceAppMgtPolicySetItem.md)
+Create new navigation property to items for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtSideLoadingKey](New-MgDeviceAppMgtSideLoadingKey.md)
+Create new navigation property to sideLoadingKeys for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtTargetedManagedAppConfiguration](New-MgDeviceAppMgtTargetedManagedAppConfiguration.md)
+Create new navigation property to targetedManagedAppConfigurations for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtTargetedManagedAppConfigurationApp](New-MgDeviceAppMgtTargetedManagedAppConfigurationApp.md)
+Create new navigation property to apps for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment](New-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtTask](New-MgDeviceAppMgtTask.md)
+Create new navigation property to deviceAppManagementTasks for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtVppToken](New-MgDeviceAppMgtVppToken.md)
+Create new navigation property to vppTokens for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtWdacSupplementalPolicy](New-MgDeviceAppMgtWdacSupplementalPolicy.md)
+Create new navigation property to wdacSupplementalPolicies for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtWdacSupplementalPolicyAssignment](New-MgDeviceAppMgtWdacSupplementalPolicyAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtWdacSupplementalPolicyDeviceStatuses](New-MgDeviceAppMgtWdacSupplementalPolicyDeviceStatuses.md)
+Create new navigation property to deviceStatuses for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtWindowInformationProtectionDeviceRegistration](New-MgDeviceAppMgtWindowInformationProtectionDeviceRegistration.md)
+Create new navigation property to windowsInformationProtectionDeviceRegistrations for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtWindowInformationProtectionPolicy](New-MgDeviceAppMgtWindowInformationProtectionPolicy.md)
+Create new navigation property to windowsInformationProtectionPolicies for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtWindowInformationProtectionWipeAction](New-MgDeviceAppMgtWindowInformationProtectionWipeAction.md)
+Create new navigation property to windowsInformationProtectionWipeActions for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtWindowManagedAppProtection](New-MgDeviceAppMgtWindowManagedAppProtection.md)
+Create new navigation property to windowsManagedAppProtections for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtWindowManagedAppProtectionApp](New-MgDeviceAppMgtWindowManagedAppProtectionApp.md)
+Create new navigation property to apps for deviceAppManagement
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
-
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
-
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtWindowManagedAppProtectionAssignment](New-MgDeviceAppMgtWindowManagedAppProtectionAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
 
 ### [New-MgOfficeClientConfiguration](New-MgOfficeClientConfiguration.md)
 Create new navigation property to clientConfigurations for officeConfiguration
@@ -815,86 +809,29 @@ Delete navigation property mobileAppTroubleshootingEvents for users
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 Delete navigation property appLogCollectionRequests for users
 
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
+### [Revoke-MgDeviceAppMgtVppTokenLicense](Revoke-MgDeviceAppMgtVppTokenLicense.md)
+Invoke action revokeLicenses
 
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
+### [Set-MgDeviceAppMgtiOSLobAppProvisioningConfiguration](Set-MgDeviceAppMgtiOSLobAppProvisioningConfiguration.md)
+Invoke action assign
 
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
+### [Set-MgDeviceAppMgtManagedEBook](Set-MgDeviceAppMgtManagedEBook.md)
+Invoke action assign
 
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
+### [Set-MgDeviceAppMgtMobileApp](Set-MgDeviceAppMgtMobileApp.md)
+Invoke action assign
 
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
+### [Set-MgDeviceAppMgtMobileAppConfiguration](Set-MgDeviceAppMgtMobileAppConfiguration.md)
+Invoke action assign
 
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
+### [Set-MgDeviceAppMgtTargetedManagedAppConfiguration](Set-MgDeviceAppMgtTargetedManagedAppConfiguration.md)
+Invoke action assign
 
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
+### [Set-MgDeviceAppMgtWdacSupplementalPolicy](Set-MgDeviceAppMgtWdacSupplementalPolicy.md)
+Invoke action assign
 
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
-
-### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-The collection property of AppLogUploadRequest.
+### [Set-MgDeviceAppMgtWindowManagedAppProtection](Set-MgDeviceAppMgtWindowManagedAppProtection.md)
+Invoke action assign
 
 ### [Set-MgOfficeClientConfiguration](Set-MgOfficeClientConfiguration.md)
 Invoke action assign
@@ -905,233 +842,221 @@ Update policyPayload for the navigation property clientConfigurations in officeC
 ### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
 Update userPreferencePayload for the navigation property clientConfigurations in officeConfiguration
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Sync-MgDeviceAppMgtMicrosoftStoreForBusinessApp](Sync-MgDeviceAppMgtMicrosoftStoreForBusinessApp.md)
+Invoke action syncMicrosoftStoreForBusinessApps
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Sync-MgDeviceAppMgtVppTokenLicense](Sync-MgDeviceAppMgtVppTokenLicense.md)
+Invoke action syncLicenses
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Sync-MgDeviceAppMgtVppTokenLicenseCount](Sync-MgDeviceAppMgtVppTokenLicenseCount.md)
+Invoke action syncLicenseCounts
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Test-MgDeviceAppMgtMobileAppXml](Test-MgDeviceAppMgtMobileAppXml.md)
+Invoke action validateXml
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgt](Update-MgDeviceAppMgt.md)
+Update deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtAndroidManagedAppProtection](Update-MgDeviceAppMgtAndroidManagedAppProtection.md)
+Update the navigation property androidManagedAppProtections in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtAndroidManagedAppProtectionApp](Update-MgDeviceAppMgtAndroidManagedAppProtectionApp.md)
+Update the navigation property apps in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtAndroidManagedAppProtectionDeploymentSummary](Update-MgDeviceAppMgtAndroidManagedAppProtectionDeploymentSummary.md)
+Update the navigation property deploymentSummary in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtDefaultManagedAppProtection](Update-MgDeviceAppMgtDefaultManagedAppProtection.md)
+Update the navigation property defaultManagedAppProtections in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtDefaultManagedAppProtectionApp](Update-MgDeviceAppMgtDefaultManagedAppProtectionApp.md)
+Update the navigation property apps in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary](Update-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary.md)
+Update the navigation property deploymentSummary in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtEnterpriseCodeSigningCertificate](Update-MgDeviceAppMgtEnterpriseCodeSigningCertificate.md)
+Update the navigation property enterpriseCodeSigningCertificates in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtiOSLobAppProvisioningConfiguration](Update-MgDeviceAppMgtiOSLobAppProvisioningConfiguration.md)
+Update the navigation property iosLobAppProvisioningConfigurations in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtiOSLobAppProvisioningConfigurationAssignment](Update-MgDeviceAppMgtiOSLobAppProvisioningConfigurationAssignment.md)
+Update the navigation property assignments in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtiOSLobAppProvisioningConfigurationDeviceStatuses](Update-MgDeviceAppMgtiOSLobAppProvisioningConfigurationDeviceStatuses.md)
+Update the navigation property deviceStatuses in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtiOSLobAppProvisioningConfigurationGroupAssignment](Update-MgDeviceAppMgtiOSLobAppProvisioningConfigurationGroupAssignment.md)
+Update the navigation property groupAssignments in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtiOSLobAppProvisioningConfigurationUserStatuses](Update-MgDeviceAppMgtiOSLobAppProvisioningConfigurationUserStatuses.md)
+Update the navigation property userStatuses in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtiOSManagedAppProtection](Update-MgDeviceAppMgtiOSManagedAppProtection.md)
+Update the navigation property iosManagedAppProtections in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtiOSManagedAppProtectionApp](Update-MgDeviceAppMgtiOSManagedAppProtectionApp.md)
+Update the navigation property apps in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtiOSManagedAppProtectionDeploymentSummary](Update-MgDeviceAppMgtiOSManagedAppProtectionDeploymentSummary.md)
+Update the navigation property deploymentSummary in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedAppPolicy](Update-MgDeviceAppMgtManagedAppPolicy.md)
+Update the navigation property managedAppPolicies in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedAppRegistration](Update-MgDeviceAppMgtManagedAppRegistration.md)
+Update the navigation property managedAppRegistrations in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy](Update-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy.md)
+Update the navigation property appliedPolicies in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy](Update-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy.md)
+Update the navigation property intendedPolicies in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedAppRegistrationOperation](Update-MgDeviceAppMgtManagedAppRegistrationOperation.md)
+Update the navigation property operations in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedAppStatuses](Update-MgDeviceAppMgtManagedAppStatuses.md)
+Update the navigation property managedAppStatuses in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedEBook](Update-MgDeviceAppMgtManagedEBook.md)
+Update the navigation property managedEBooks in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedEBookAssignment](Update-MgDeviceAppMgtManagedEBookAssignment.md)
+Update the navigation property assignments in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedEBookCategory](Update-MgDeviceAppMgtManagedEBookCategory.md)
+Update the navigation property managedEBookCategories in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedEBookDeviceState](Update-MgDeviceAppMgtManagedEBookDeviceState.md)
+Update the navigation property deviceStates in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedEBookInstallSummary](Update-MgDeviceAppMgtManagedEBookInstallSummary.md)
+Update the navigation property installSummary in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedEBookUserStateSummary](Update-MgDeviceAppMgtManagedEBookUserStateSummary.md)
+Update the navigation property userStateSummary in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState](Update-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState.md)
+Update the navigation property deviceStates in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMdmWindowInformationProtectionPolicy](Update-MgDeviceAppMgtMdmWindowInformationProtectionPolicy.md)
+Update the navigation property mdmWindowsInformationProtectionPolicies in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileApp](Update-MgDeviceAppMgtMobileApp.md)
+Update the navigation property mobileApps in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppAssignment](Update-MgDeviceAppMgtMobileAppAssignment.md)
+Update the navigation property assignments in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppCategory](Update-MgDeviceAppMgtMobileAppCategory.md)
+Update the navigation property mobileAppCategories in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppConfiguration](Update-MgDeviceAppMgtMobileAppConfiguration.md)
+Update the navigation property mobileAppConfigurations in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppConfigurationAssignment](Update-MgDeviceAppMgtMobileAppConfigurationAssignment.md)
+Update the navigation property assignments in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses](Update-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses.md)
+Update the navigation property deviceStatuses in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary](Update-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary.md)
+Update the navigation property deviceStatusSummary in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppConfigurationUserStatuses](Update-MgDeviceAppMgtMobileAppConfigurationUserStatuses.md)
+Update the navigation property userStatuses in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary](Update-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary.md)
+Update the navigation property userStatusSummary in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppDeviceStatuses](Update-MgDeviceAppMgtMobileAppDeviceStatuses.md)
+Update the navigation property deviceStatuses in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppInstallSummary](Update-MgDeviceAppMgtMobileAppInstallSummary.md)
+Update the navigation property installSummary in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppRelationship](Update-MgDeviceAppMgtMobileAppRelationship.md)
+Update the navigation property relationships in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppUserStatuses](Update-MgDeviceAppMgtMobileAppUserStatuses.md)
+Update the navigation property userStatuses in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMobileAppUserStatusesDeviceStatuses](Update-MgDeviceAppMgtMobileAppUserStatusesDeviceStatuses.md)
+Update the navigation property deviceStatuses in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMultipleMobileAppRelationship](Update-MgDeviceAppMgtMultipleMobileAppRelationship.md)
+Invoke action updateRelationships
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtMultiplePolicySet](Update-MgDeviceAppMgtMultiplePolicySet.md)
+Invoke action update
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtPolicySet](Update-MgDeviceAppMgtPolicySet.md)
+Update the navigation property policySets in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtPolicySetAssignment](Update-MgDeviceAppMgtPolicySetAssignment.md)
+Update the navigation property assignments in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtPolicySetItem](Update-MgDeviceAppMgtPolicySetItem.md)
+Update the navigation property items in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtSideLoadingKey](Update-MgDeviceAppMgtSideLoadingKey.md)
+Update the navigation property sideLoadingKeys in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtSymantecCodeSigningCertificate](Update-MgDeviceAppMgtSymantecCodeSigningCertificate.md)
+Update the navigation property symantecCodeSigningCertificate in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtTargetedManagedAppConfiguration](Update-MgDeviceAppMgtTargetedManagedAppConfiguration.md)
+Update the navigation property targetedManagedAppConfigurations in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtTargetedManagedAppConfigurationApp](Update-MgDeviceAppMgtTargetedManagedAppConfigurationApp.md)
+Update the navigation property apps in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment](Update-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment.md)
+Update the navigation property assignments in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary](Update-MgDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary.md)
+Update the navigation property deploymentSummary in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtTask](Update-MgDeviceAppMgtTask.md)
+Update the navigation property deviceAppManagementTasks in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtTaskStatus](Update-MgDeviceAppMgtTaskStatus.md)
+Invoke action updateStatus
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtVppToken](Update-MgDeviceAppMgtVppToken.md)
+Update the navigation property vppTokens in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtWdacSupplementalPolicy](Update-MgDeviceAppMgtWdacSupplementalPolicy.md)
+Update the navigation property wdacSupplementalPolicies in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtWdacSupplementalPolicyAssignment](Update-MgDeviceAppMgtWdacSupplementalPolicyAssignment.md)
+Update the navigation property assignments in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtWdacSupplementalPolicyDeploySummary](Update-MgDeviceAppMgtWdacSupplementalPolicyDeploySummary.md)
+Update the navigation property deploySummary in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtWdacSupplementalPolicyDeviceStatuses](Update-MgDeviceAppMgtWdacSupplementalPolicyDeviceStatuses.md)
+Update the navigation property deviceStatuses in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtWindowInformationProtectionDeviceRegistration](Update-MgDeviceAppMgtWindowInformationProtectionDeviceRegistration.md)
+Update the navigation property windowsInformationProtectionDeviceRegistrations in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtWindowInformationProtectionPolicy](Update-MgDeviceAppMgtWindowInformationProtectionPolicy.md)
+Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtWindowInformationProtectionWipeAction](Update-MgDeviceAppMgtWindowInformationProtectionWipeAction.md)
+Update the navigation property windowsInformationProtectionWipeActions in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtWindowManagedAppProtection](Update-MgDeviceAppMgtWindowManagedAppProtection.md)
+Update the navigation property windowsManagedAppProtections in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtWindowManagedAppProtectionApp](Update-MgDeviceAppMgtWindowManagedAppProtectionApp.md)
+Update the navigation property apps in deviceAppManagement
 
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
+### [Update-MgDeviceAppMgtWindowManagedAppProtectionAssignment](Update-MgDeviceAppMgtWindowManagedAppProtectionAssignment.md)
+Update the navigation property assignments in deviceAppManagement
 
 ### [Update-MgOfficeClientConfiguration](Update-MgOfficeClientConfiguration.md)
 Update the navigation property clientConfigurations in officeConfiguration

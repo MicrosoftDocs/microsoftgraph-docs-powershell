@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserCalendarPermission
 
 ## SYNOPSIS
-The permissions of the users with whom the calendar is shared.
+Update the navigation property calendarPermissions in users
 
 ## SYNTAX
 
@@ -16,58 +16,58 @@ The permissions of the users with whom the calendar is shared.
 ```
 Update-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
- [-Id <String>] [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Id <String>] [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateExpanded3
-```
-Update-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> -CalendarId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
- [-Id <String>] [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update3
-```
-Update-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> -CalendarId <String>
- -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update2
 ```
 Update-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded3
+### Update3
 ```
-Update-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>] [-Id <String>]
- [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserCalendarPermission -CalendarId <String> -CalendarPermissionId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateExpanded3
+```
+Update-MgUserCalendarPermission -CalendarId <String> -CalendarPermissionId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
+ [-Id <String>] [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity2
+```
+Update-MgUserCalendarPermission -InputObject <ICalendarIdentity>
+ -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity3
+```
+Update-MgUserCalendarPermission -InputObject <ICalendarIdentity>
+ -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded2
 ```
 Update-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>] [-Id <String>]
- [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity3
+### UpdateViaIdentityExpanded3
 ```
-Update-MgUserCalendarPermission -InputObject <ICalendarIdentity>
- -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity2
-```
-Update-MgUserCalendarPermission -InputObject <ICalendarIdentity>
- -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
+ [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>] [-Id <String>]
+ [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The permissions of the users with whom the calendar is shared.
+Update the navigation property calendarPermissions in users
 
 ## EXAMPLES
 
@@ -77,8 +77,8 @@ The permissions of the users with whom the calendar is shared.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -93,8 +93,8 @@ List of allowed sharing or delegating permission levels for the calendar.
 Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.String[]
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -109,8 +109,8 @@ calendarPermission
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalendarPermission
-Parameter Sets: Update3, Update2, UpdateViaIdentity3, UpdateViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarPermission
+Parameter Sets: Update2, Update3, UpdateViaIdentity2, UpdateViaIdentity3
 Aliases:
 
 Required: True
@@ -124,8 +124,8 @@ Accept wildcard characters: False
 key: id of calendar
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded3, Update3
+Type: System.String
+Parameter Sets: Update3, UpdateExpanded3
 Aliases:
 
 Required: True
@@ -139,8 +139,8 @@ Accept wildcard characters: False
 key: id of calendarPermission
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, Update3, Update2
+Type: System.String
+Parameter Sets: Update2, Update3, UpdateExpanded2, UpdateExpanded3
 Aliases:
 
 Required: True
@@ -155,8 +155,8 @@ emailAddress
 To construct, please use Get-Help -Online and see NOTES section for EMAILADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailAddress
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -167,11 +167,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.String
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -186,8 +186,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentity3, UpdateViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Parameter Sets: UpdateViaIdentity2, UpdateViaIdentity3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: True
@@ -201,8 +201,8 @@ Accept wildcard characters: False
 True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -218,8 +218,8 @@ The 'My organization' user determines the permissions other people within your o
 You cannot remove 'My organization' as a sharee to a calendar.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -248,8 +248,8 @@ Accept wildcard characters: False
 calendarRoleType
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.String
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -263,8 +263,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, Update3, Update2
+Type: System.String
+Parameter Sets: Update2, Update3, UpdateExpanded2, UpdateExpanded3
 Aliases:
 
 Required: True
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -294,7 +294,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -311,10 +311,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarPermission
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -324,30 +327,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCalendarPermission>`: calendarPermission
+BODYPARAMETER <IMicrosoftGraphCalendarPermission>: calendarPermission
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
   - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
   - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
   - `[Role <String>]`: calendarRoleType
 
-EMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
+EMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
@@ -356,3 +360,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgsearchentity
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update search
 ### UpdateExpanded (Default)
 ```
 Update-MgSearchEntity [-Acronyms <IMicrosoftGraphSearchAcronym[]>] [-AdditionalProperties <Hashtable>]
- [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Administrative answer in Microsoft Search results to define common acronyms in a
 To construct, please use Get-Help -Online and see NOTES section for ACRONYMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchAcronym[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchAcronym[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ searchEntity
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchEntity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchEntity
 Parameter Sets: Update
 Aliases:
 
@@ -84,7 +84,7 @@ Administrative answer in Microsoft Search results for common search queries in a
 To construct, please use Get-Help -Online and see NOTES section for BOOKMARKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchBookmark[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchBookmark[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -130,7 +130,7 @@ Administrative answer in Microsoft Search results which provide answers for spec
 To construct, please use Get-Help -Online and see NOTES section for QNAS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchQna[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchQna[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,9 +178,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchEntity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -190,7 +192,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACRONYMS <IMicrosoftGraphSearchAcronym\[]>: Administrative answer in Microsoft Search results to define common acronyms in a organization.
+ACRONYMS <IMicrosoftGraphSearchAcronym[]>: Administrative answer in Microsoft Search results to define common acronyms in a organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -207,7 +209,7 @@ ACRONYMS <IMicrosoftGraphSearchAcronym\[]>: Administrative answer in Microsoft S
   - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState
 
-BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
+BODYPARAMETER <IMicrosoftGraphSearchEntity>: searchEntity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Acronyms <IMicrosoftGraphSearchAcronym[]>]`: Administrative answer in Microsoft Search results to define common acronyms in a organization.
@@ -270,7 +272,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
     - `[State <String>]`: answerState
     - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
 
-BOOKMARKS <IMicrosoftGraphSearchBookmark\[]>: Administrative answer in Microsoft Search results for common search queries in an organization.
+BOOKMARKS <IMicrosoftGraphSearchBookmark[]>: Administrative answer in Microsoft Search results for common search queries in an organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -305,7 +307,7 @@ BOOKMARKS <IMicrosoftGraphSearchBookmark\[]>: Administrative answer in Microsoft
     - `[Platform <DevicePlatformType?>]`: Supported platform types.
     - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
-QNAS <IMicrosoftGraphSearchQna\[]>: Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
+QNAS <IMicrosoftGraphSearchQna[]>: Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -340,4 +342,3 @@ QNAS <IMicrosoftGraphSearchQna\[]>: Administrative answer in Microsoft Search re
 
 ## RELATED LINKS
 
-## RELATED LINKS

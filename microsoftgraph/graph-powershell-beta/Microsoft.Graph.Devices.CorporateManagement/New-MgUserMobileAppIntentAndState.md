@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermobileappintentandstate
 schema: 2.0.0
@@ -16,26 +16,26 @@ Create new navigation property to mobileAppIntentAndStates for users
 ```
 New-MgUserMobileAppIntentAndState -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>] [-MobileAppList <IMicrosoftGraphMobileAppIntentAndStateDetail[]>]
- [-UserId1 <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserMobileAppIntentAndState [-UserId <String>] -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-ManagedDeviceIdentifier <String>]
- [-MobileAppList <IMicrosoftGraphMobileAppIntentAndStateDetail[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserId1 <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserMobileAppIntentAndState -UserId <String> -BodyParameter <IMicrosoftGraphMobileAppIntentAndState>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserMobileAppIntentAndState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppIntentAndState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppIntentAndState> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgUserMobileAppIntentAndState -InputObject <IDevicesCorporateManagementIdentity> [-UserId <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-ManagedDeviceIdentifier <String>]
+ [-MobileAppList <IMicrosoftGraphMobileAppIntentAndStateDetail[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Create new navigation property to mobileAppIntentAndStates for users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ MobileApp Intent and Install State for a given device.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppIntentAndState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppIntentAndState
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -96,8 +96,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Device identifier created or collected by Intune.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ The list of payload intents and states for the tenant.
 To construct, please use Get-Help -Online and see NOTES section for MOBILEAPPLIST properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppIntentAndStateDetail[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppIntentAndStateDetail[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,23 +142,11 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: CreateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -169,7 +157,7 @@ Accept wildcard characters: False
 Identifier for the user that tried to enroll the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -184,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -200,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -217,10 +205,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppIntentAndState
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppIntentAndState
+
 ## NOTES
 
 ALIASES
@@ -230,7 +221,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppIntentAndState>`: MobileApp Intent and Install State for a given device.
+BODYPARAMETER <IMicrosoftGraphMobileAppIntentAndState>: MobileApp Intent and Install State for a given device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ManagedDeviceIdentifier <String>]`: Device identifier created or collected by Intune.
@@ -246,7 +237,7 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppIntentAndState>`: MobileApp Intent and I
       - `[Type <DeviceType?>]`: Device type.
   - `[UserId <String>]`: Identifier for the user that tried to enroll the device.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
@@ -315,7 +306,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
-MOBILEAPPLIST <IMicrosoftGraphMobileAppIntentAndStateDetail\[]>: The list of payload intents and states for the tenant.
+MOBILEAPPLIST <IMicrosoftGraphMobileAppIntentAndStateDetail[]>: The list of payload intents and states for the tenant.
   - `[ApplicationId <String>]`: MobieApp identifier.
   - `[DisplayName <String>]`: The admin provided or imported title of the app.
   - `[DisplayVersion <String>]`: Human readable version of the application
@@ -327,3 +318,4 @@ MOBILEAPPLIST <IMicrosoftGraphMobileAppIntentAndStateDetail\[]>: The list of pay
     - `[Type <DeviceType?>]`: Device type.
 
 ## RELATED LINKS
+

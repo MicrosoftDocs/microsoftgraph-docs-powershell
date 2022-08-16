@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamchanneltab
 schema: 2.0.0
@@ -17,27 +17,27 @@ Update the navigation property tabs in teams
 Update-MgTeamChannelTab -ChannelId <String> -TeamId <String> -TeamsTabId <String>
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphTeamsTabConfiguration>]
  [-DisplayName <String>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-WebUrl <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTeamChannelTab -ChannelId <String> -TeamId <String> -TeamsTabId <String>
- -BodyParameter <IMicrosoftGraphTeamsTab> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsTab> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsTab> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgTeamChannelTab -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphTeamsTabConfiguration>] [-DisplayName <String>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-WebUrl <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsTab> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Update the navigation property tabs in teams
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ teamsTab
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsTab
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 key: id of channel
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ teamsTabConfiguration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsTabConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTabConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 Name of the tab.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +144,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -174,8 +174,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -190,7 +190,7 @@ teamsApp
 To construct, please use Get-Help -Online and see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsApp1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,8 +205,8 @@ Accept wildcard characters: False
 key: id of teamsTab
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -221,7 +221,7 @@ Deep link URL of the tab instance.
 Read only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +252,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,10 +269,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -282,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamsTab>`: teamsTab
+BODYPARAMETER <IMicrosoftGraphTeamsTab>: teamsTab
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Configuration <IMicrosoftGraphTeamsTabConfiguration>]`: teamsTabConfiguration
@@ -320,14 +323,14 @@ BODYPARAMETER `<IMicrosoftGraphTeamsTab>`: teamsTab
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
 
-CONFIGURATION `<IMicrosoftGraphTeamsTabConfiguration>`: teamsTabConfiguration
+CONFIGURATION <IMicrosoftGraphTeamsTabConfiguration>: teamsTabConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentUrl <String>]`: Url used for rendering tab contents in Teams. Required.
   - `[EntityId <String>]`: Identifier for the entity hosted by the tab provider.
   - `[RemoveUrl <String>]`: Url called by Teams client when a Tab is removed using the Teams Client.
   - `[WebsiteUrl <String>]`: Url for showing tab contents outside of Teams.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -347,6 +350,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
@@ -364,7 +369,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-TEAMSAPP `<IMicrosoftGraphTeamsApp1>`: teamsApp
+TEAMSAPP <IMicrosoftGraphTeamsApp1>: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
@@ -392,3 +397,4 @@ TEAMSAPP `<IMicrosoftGraphTeamsApp1>`: teamsApp
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+

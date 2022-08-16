@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar
 schema: 2.0.0
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserDefaultCalendar
 
 ## SYNOPSIS
-The user's calendars.
-Read-only.
-Nullable.
+Get calendar from users
 
 ## SYNTAX
 
@@ -25,9 +23,7 @@ Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>
 ```
 
 ## DESCRIPTION
-The user's calendars.
-Read-only.
-Nullable.
+Get calendar from users
 
 ## EXAMPLES
 
@@ -38,7 +34,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
 Parameter Sets: GetViaIdentity2
 Aliases:
 
@@ -53,7 +49,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -68,7 +64,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get2
 Aliases:
 
@@ -85,9 +81,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar
+
 ## NOTES
 
 ALIASES
@@ -97,13 +95,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
@@ -112,3 +111,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

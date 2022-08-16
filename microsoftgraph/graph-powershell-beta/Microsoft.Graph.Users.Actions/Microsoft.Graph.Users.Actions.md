@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: af6c6df5-81df-42c9-a2e2-73640ab13a59
+Module Guid: 5f2fa8d9-6913-43ab-8af5-9f5abb1e9c7a
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -125,10 +125,7 @@ Invoke action copyToNotebook
 ### [Copy-MgUserOnenoteSectionToSectionGroup](Copy-MgUserOnenoteSectionToSectionGroup.md)
 Invoke action copyToSectionGroup
 
-### [Disable-MgUserAuthenticationMethodSmSign](Disable-MgUserAuthenticationMethodSmSign.md)
-Invoke action disableSmsSignIn
-
-### [Disable-MgUserAuthenticationMethodSmSign](Disable-MgUserAuthenticationMethodSmSign.md)
+### [Disable-MgUserAuthenticationMethodSmsSignIn](Disable-MgUserAuthenticationMethodSmsSignIn.md)
 Invoke action disableSmsSignIn
 
 ### [Disable-MgUserManagedDevice](Disable-MgUserManagedDevice.md)
@@ -137,10 +134,7 @@ Invoke action disable
 ### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
 Invoke action disableLostMode
 
-### [Enable-MgUserAuthenticationMethodSmSign](Enable-MgUserAuthenticationMethodSmSign.md)
-Invoke action enableSmsSignIn
-
-### [Enable-MgUserAuthenticationMethodSmSign](Enable-MgUserAuthenticationMethodSmSign.md)
+### [Enable-MgUserAuthenticationMethodSmsSignIn](Enable-MgUserAuthenticationMethodSmsSignIn.md)
 Invoke action enableSmsSignIn
 
 ### [Enable-MgUserManagedDeviceLostMode](Enable-MgUserManagedDeviceLostMode.md)
@@ -266,16 +260,10 @@ Invoke action decryptBuffer
 ### [Invoke-MgBufferUserInformationProtectionEncrypt](Invoke-MgBufferUserInformationProtectionEncrypt.md)
 Invoke action encryptBuffer
 
-### [Invoke-MgBufferUserInformationProtectionEncrypt](Invoke-MgBufferUserInformationProtectionEncrypt.md)
-Invoke action encryptBuffer
-
-### [Invoke-MgBufferUserInformationProtectionEncrypt](Invoke-MgBufferUserInformationProtectionEncrypt.md)
-Invoke action encryptBuffer
-
-### [Invoke-MgBulkUserManagedDeviceReprovisionCloudPc](Invoke-MgBulkUserManagedDeviceReprovisionCloudPc.md)
+### [Invoke-MgBulkReprovisionUserManagedDeviceCloudPc](Invoke-MgBulkReprovisionUserManagedDeviceCloudPc.md)
 Invoke action bulkReprovisionCloudPc
 
-### [Invoke-MgBulkUserManagedDeviceRestoreCloudPc](Invoke-MgBulkUserManagedDeviceRestoreCloudPc.md)
+### [Invoke-MgBulkRestoreUserManagedDeviceCloudPc](Invoke-MgBulkRestoreUserManagedDeviceCloudPc.md)
 Invoke action bulkRestoreCloudPc
 
 ### [Invoke-MgBulkUserManagedDeviceSetCloudPcReviewStatus](Invoke-MgBulkUserManagedDeviceSetCloudPcReviewStatus.md)
@@ -296,9 +284,6 @@ Invoke action checkout
 ### [Invoke-MgCleanUserManagedDeviceWindowDevice](Invoke-MgCleanUserManagedDeviceWindowDevice.md)
 Invoke action cleanWindowsDevice
 
-### [Invoke-MgCloudUserManagedDevice](Invoke-MgCloudUserManagedDevice.md)
-Invoke action reprovisionCloudPc
-
 ### [Invoke-MgCreateOrGetUserOnlineMeeting](Invoke-MgCreateOrGetUserOnlineMeeting.md)
 Invoke action createOrGet
 
@@ -316,6 +301,9 @@ Invoke action dismissReminder
 
 ### [Invoke-MgDismissUserEventReminder](Invoke-MgDismissUserEventReminder.md)
 Invoke action dismissReminder
+
+### [Invoke-MgDownloadUserManagedDeviceAppDiagnostic](Invoke-MgDownloadUserManagedDeviceAppDiagnostic.md)
+Invoke action downloadAppDiagnostics
 
 ### [Invoke-MgDownUserManagedDeviceShut](Invoke-MgDownUserManagedDeviceShut.md)
 Invoke action shutDown
@@ -431,8 +419,8 @@ Invoke action reply
 ### [Invoke-MgReprovisionUserCloudPc](Invoke-MgReprovisionUserCloudPc.md)
 Invoke action reprovision
 
-### [Invoke-MgReprovisionUserCloudPc](Invoke-MgReprovisionUserCloudPc.md)
-Invoke action reprovision
+### [Invoke-MgReprovisionUserManagedDeviceCloudPc](Invoke-MgReprovisionUserManagedDeviceCloudPc.md)
+Invoke action reprovisionCloudPc
 
 ### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
 Invoke action retire
@@ -689,10 +677,7 @@ Invoke action revokeGrants
 ### [Revoke-MgUserManagedDeviceAppleVppLicense](Revoke-MgUserManagedDeviceAppleVppLicense.md)
 Invoke action revokeAppleVppLicenses
 
-### [Revoke-MgUserSign](Revoke-MgUserSign.md)
-Invoke action revokeSignInSessions
-
-### [Revoke-MgUserSign](Revoke-MgUserSign.md)
+### [Revoke-MgUserSignInSession](Revoke-MgUserSignInSession.md)
 Invoke action revokeSignInSessions
 
 ### [Send-MgUserChatActivityNotification](Send-MgUserChatActivityNotification.md)

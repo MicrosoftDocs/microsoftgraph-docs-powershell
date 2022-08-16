@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowinformationprotectionapplearningsummary
 schema: 2.0.0
@@ -16,13 +16,13 @@ Create new navigation property to windowsInformationProtectionAppLearningSummari
 ```
 New-MgDeviceManagementWindowInformationProtectionAppLearningSummary [-AdditionalProperties <Hashtable>]
  [-ApplicationName <String>] [-ApplicationType <ApplicationType>] [-DeviceCount <Int32>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgDeviceManagementWindowInformationProtectionAppLearningSummary
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Create new navigation property to windowsInformationProtectionAppLearningSummari
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 Application Name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 Possible types of Application
 
 ```yaml
-Type: ApplicationType
+Type: Microsoft.Graph.PowerShell.Support.ApplicationType
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -83,7 +83,7 @@ Windows Information Protection AppLearning Summary entity.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
 Parameter Sets: Create1
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 Device Count
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -144,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -161,9 +161,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
+
 ## NOTES
 
 ALIASES
@@ -173,7 +175,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphWindowsInformationProtectionAppLearningSummary>`: Windows Information Protection AppLearning Summary entity.
+BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary>: Windows Information Protection AppLearning Summary entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ApplicationName <String>]`: Application Name
@@ -181,3 +183,4 @@ BODYPARAMETER `<IMicrosoftGraphWindowsInformationProtectionAppLearningSummary>`:
   - `[DeviceCount <Int32?>]`: Device Count
 
 ## RELATED LINKS
+

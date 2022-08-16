@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticapphealthdevicemodelperformance
 schema: 2.0.0
@@ -17,33 +17,34 @@ Update the navigation property userExperienceAnalyticsAppHealthDeviceModelPerfor
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
  -UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String> [-ActiveDeviceCount <Int32>]
  [-AdditionalProperties <Hashtable>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
- [-HealthStatus <String>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>] [-ModelAppHealthScore <Double>]
- [-ModelAppHealthStatus <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>]
+ [-ModelAppHealthScore <Double>] [-ModelAppHealthStatus <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
  -UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
- -InputObject <IDeviceManagementIdentity> [-ActiveDeviceCount <Int32>] [-AdditionalProperties <Hashtable>]
- [-DeviceManufacturer <String>] [-DeviceModel <String>] [-HealthStatus <String>] [-Id <String>]
- [-MeanTimeToFailureInMinutes <Int32>] [-ModelAppHealthScore <Double>] [-ModelAppHealthStatus <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
+ -InputObject <IDeviceManagementIdentity> [-ActiveDeviceCount <Int32>] [-AdditionalProperties <Hashtable>]
+ [-DeviceManufacturer <String>] [-DeviceModel <String>] [-HealthStatus <UserExperienceAnalyticsHealthState>]
+ [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>] [-ModelAppHealthScore <Double>]
+ [-ModelAppHealthStatus <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,7 +59,7 @@ The number of active devices for the model.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -73,7 +74,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +90,7 @@ The user experience analytics device model performance entity contains device mo
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -104,7 +105,7 @@ Accept wildcard characters: False
 The manufacturer name of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +120,7 @@ Accept wildcard characters: False
 The model name of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +135,7 @@ Accept wildcard characters: False
 userExperienceAnalyticsHealthState
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.UserExperienceAnalyticsHealthState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +150,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,8 +166,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -181,7 +182,7 @@ The mean time to failure for the model device in minutes.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +198,7 @@ The app health score of the device model.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +213,7 @@ Accept wildcard characters: False
 The overall app health status of the device model.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +228,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -242,8 +243,8 @@ Accept wildcard characters: False
 key: id of userExperienceAnalyticsAppHealthDeviceModelPerformance
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -257,7 +258,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -273,7 +274,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -290,10 +291,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -303,18 +307,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance>`: The user experience analytics device model performance entity contains device model performance details.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance>: The user experience analytics device model performance entity contains device model performance details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActiveDeviceCount <Int32?>]`: The number of active devices for the model. Valid values -2147483648 to 2147483647
   - `[DeviceManufacturer <String>]`: The manufacturer name of the device.
   - `[DeviceModel <String>]`: The model name of the device.
-  - `[HealthStatus <String>]`: userExperienceAnalyticsHealthState
+  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
   - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the model device in minutes. Valid values -2147483648 to 2147483647
   - `[ModelAppHealthScore <Double?>]`: The app health score of the device model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[ModelAppHealthStatus <String>]`: The overall app health status of the device model.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -443,4 +447,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

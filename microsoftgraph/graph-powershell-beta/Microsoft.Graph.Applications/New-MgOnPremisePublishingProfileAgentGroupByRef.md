@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgonpremisepublishingprofileagentgroupbyref
 schema: 2.0.0
@@ -15,25 +15,25 @@ Create new navigation property ref to agentGroups for onPremisesPublishingProfil
 ### Create1 (Default)
 ```
 New-MgOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <String>
- -OnPremisesPublishingProfileId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -OnPremisesPublishingProfileId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentGroupId <String> -OnPremisesAgentId <String>
- -OnPremisesPublishingProfileId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -OnPremisesPublishingProfileId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,8 +48,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 key: id of onPremisesAgentGroup
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Create
 Aliases:
 
@@ -78,8 +78,8 @@ Accept wildcard characters: False
 key: id of onPremisesAgent
 
 ```yaml
-Type: String
-Parameter Sets: Create1, Create
+Type: System.String
+Parameter Sets: Create, Create1
 Aliases:
 
 Required: True
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 key: id of onPremisesPublishingProfile
 
 ```yaml
-Type: String
-Parameter Sets: Create1, Create
+Type: System.String
+Parameter Sets: Create, Create1
 Aliases:
 
 Required: True
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -139,7 +139,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -156,9 +156,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -168,7 +170,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
@@ -199,3 +201,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

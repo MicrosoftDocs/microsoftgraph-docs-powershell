@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/remove-mggroupthreadpostattachment
 schema: 2.0.0
@@ -15,13 +15,13 @@ Delete navigation property attachments for groups
 ### Delete1 (Default)
 ```
 Remove-MgGroupThreadPostAttachment -AttachmentId <String> -ConversationThreadId <String> -GroupId <String>
- -PostId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -PostId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
-Remove-MgGroupThreadPostAttachment -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgGroupThreadPostAttachment -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Delete navigation property attachments for groups
 key: id of attachment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 key: id of conversationThread
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -96,7 +96,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
 Parameter Sets: DeleteViaIdentity1
 Aliases:
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 key: id of post
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +157,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,9 +174,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -186,7 +188,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -230,3 +232,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.People-help.xml
+external help file:
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserperson
 schema: 2.0.0
@@ -21,13 +21,19 @@ Update-MgUserPerson -PersonId <String> -UserId <String> [-AdditionalProperties <
  [-Phones <IMicrosoftGraphPhone[]>] [-PostalAddresses <IMicrosoftGraphLocation[]>] [-Profession <String>]
  [-ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>] [-Surname <String>]
  [-UserPrincipalName <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-YomiCompany <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserPerson -PersonId <String> -UserId <String> -BodyParameter <IMicrosoftGraphPerson1> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPerson1> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,13 +45,7 @@ Update-MgUserPerson -InputObject <IPeopleIdentity> [-AdditionalProperties <Hasht
  [-PostalAddresses <IMicrosoftGraphLocation[]>] [-Profession <String>]
  [-ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>] [-Surname <String>]
  [-UserPrincipalName <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-YomiCompany <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPerson1> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +59,7 @@ Update the navigation property people in users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 The person's birthday.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -90,7 +90,7 @@ person
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPerson1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 The name of the person's company.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 The person's department.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 The person's display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 The person's given name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,7 +181,7 @@ The instant message voice over IP (VOIP) session initiation protocol (SIP) addre
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,8 +197,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 true if the user has flagged this person as a favorite.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 The person's job title.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 The location of the person's office.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -272,8 +272,8 @@ Accept wildcard characters: False
 key: id of person
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 Free-form notes that the user has taken about this person.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -303,7 +303,7 @@ personType
 To construct, please use Get-Help -Online and see NOTES section for PERSONTYPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonType
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +319,7 @@ The person's phone numbers.
 To construct, please use Get-Help -Online and see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhone[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhone[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -335,7 +335,7 @@ The person's addresses.
 To construct, please use Get-Help -Online and see NOTES section for POSTALADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLocation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -350,7 +350,7 @@ Accept wildcard characters: False
 The person's profession.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -366,7 +366,7 @@ The person's email addresses.
 To construct, please use Get-Help -Online and see NOTES section for SCOREDEMAILADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphScoredEmailAddress[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScoredEmailAddress[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -381,7 +381,7 @@ Accept wildcard characters: False
 The person's surname.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -396,8 +396,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -414,7 +414,7 @@ By convention, this should map to the person's email name.
 The general format is alias@domain.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -430,7 +430,7 @@ The person's websites.
 To construct, please use Get-Help -Online and see NOTES section for WEBSITES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWebsite[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWebsite[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -445,7 +445,7 @@ Accept wildcard characters: False
 The phonetic Japanese name of the person's company.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -460,7 +460,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -476,7 +476,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -493,10 +493,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
+
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -506,7 +509,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPerson1>`: person
+BODYPARAMETER <IMicrosoftGraphPerson1>: person
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Birthday <String>]`: The person's birthday.
@@ -553,7 +556,7 @@ BODYPARAMETER `<IMicrosoftGraphPerson1>`: person
   - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
     - `[Address <String>]`: The email address.
     - `[ItemId <String>]`: 
-    - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+    - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
     - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
   - `[Surname <String>]`: The person's surname.
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -563,7 +566,7 @@ BODYPARAMETER `<IMicrosoftGraphPerson1>`: person
     - `[Type <String>]`: websiteType
   - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -590,18 +593,18 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-PERSONTYPE `<IMicrosoftGraphPersonType>`: personType
+PERSONTYPE <IMicrosoftGraphPersonType>: personType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Class <String>]`: The type of data source, such as Person.
   - `[Subclass <String>]`: The secondary type of data source, such as OrganizationUser.
 
-PHONES <IMicrosoftGraphPhone\[]>: The person's phone numbers.
+PHONES <IMicrosoftGraphPhone[]>: The person's phone numbers.
   - `[Language <String>]`: 
   - `[Number <String>]`: The phone number.
   - `[Region <String>]`: 
   - `[Type <String>]`: phoneType
 
-POSTALADDRESSES <IMicrosoftGraphLocation\[]>: The person's addresses.
+POSTALADDRESSES <IMicrosoftGraphLocation[]>: The person's addresses.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -623,15 +626,16 @@ POSTALADDRESSES <IMicrosoftGraphLocation\[]>: The person's addresses.
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-SCOREDEMAILADDRESSES <IMicrosoftGraphScoredEmailAddress\[]>: The person's email addresses.
+SCOREDEMAILADDRESSES <IMicrosoftGraphScoredEmailAddress[]>: The person's email addresses.
   - `[Address <String>]`: The email address.
   - `[ItemId <String>]`: 
-  - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+  - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
   - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
 
-WEBSITES <IMicrosoftGraphWebsite\[]>: The person's websites.
+WEBSITES <IMicrosoftGraphWebsite[]>: The person's websites.
   - `[Address <String>]`: The URL of the website.
   - `[DisplayName <String>]`: The display name of the web site.
   - `[Type <String>]`: websiteType
 
 ## RELATED LINKS
+

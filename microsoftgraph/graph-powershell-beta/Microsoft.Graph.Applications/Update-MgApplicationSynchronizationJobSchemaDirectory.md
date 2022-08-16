@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationjobschemadirectory
 schema: 2.0.0
@@ -16,29 +16,30 @@ Update the navigation property directories in applications
 ```
 Update-MgApplicationSynchronizationJobSchemaDirectory -ApplicationId <String> -DirectoryDefinitionId <String>
  -SynchronizationJobId <String> [-AdditionalProperties <Hashtable>] [-Discoverabilities <String>]
- [-DiscoveryDateTime <DateTime>] [-Id <String>] [-Name <String>] [-Objects <IMicrosoftGraphObjectDefinition[]>]
- [-ReadOnly] [-Version <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DiscoveryDateTime <DateTime>] [-Id <String>] [-Name <String>]
+ [-Objects <IMicrosoftGraphObjectDefinition[]>] [-ReadOnly] [-Version <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgApplicationSynchronizationJobSchemaDirectory -ApplicationId <String> -DirectoryDefinitionId <String>
- -SynchronizationJobId <String> -BodyParameter <IMicrosoftGraphDirectoryDefinition> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -SynchronizationJobId <String> -BodyParameter <IMicrosoftGraphDirectoryDefinition> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphDirectoryDefinition> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Discoverabilities <String>] [-DiscoveryDateTime <DateTime>]
- [-Id <String>] [-Name <String>] [-Objects <IMicrosoftGraphObjectDefinition[]>] [-ReadOnly] [-Version <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphDirectoryDefinition> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Name <String>] [-Objects <IMicrosoftGraphObjectDefinition[]>] [-ReadOnly]
+ [-Version <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +53,7 @@ Update the navigation property directories in applications
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,8 +68,8 @@ Accept wildcard characters: False
 key: id of application
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -83,7 +84,7 @@ directoryDefinition
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -98,8 +99,8 @@ Accept wildcard characters: False
 key: id of directoryDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -113,7 +114,7 @@ Accept wildcard characters: False
 directoryDefinitionDiscoverabilities
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +130,7 @@ Represents the discovery date and time using ISO 8601 format and is always in UT
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +145,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,8 +161,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -177,7 +178,7 @@ Must be unique within the synchronization schema.
 Not nullable.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +194,7 @@ Collection of objects supported by the directory.
 To construct, please use Get-Help -Online and see NOTES section for OBJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphObjectDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphObjectDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +209,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -223,7 +224,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -238,8 +239,8 @@ Accept wildcard characters: False
 key: id of synchronizationJob
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -254,7 +255,7 @@ Read only value that indicates version discovered.
 null if discovery has not yet occurred.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,7 +270,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -285,7 +286,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -302,10 +303,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -315,7 +319,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryDefinition>`: directoryDefinition
+BODYPARAMETER <IMicrosoftGraphDirectoryDefinition>: directoryDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
@@ -347,7 +351,7 @@ BODYPARAMETER `<IMicrosoftGraphDirectoryDefinition>`: directoryDefinition
   - `[ReadOnly <Boolean?>]`: 
   - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
@@ -377,7 +381,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
   - `[UserId <String>]`: key: id of user
 
-OBJECTS <IMicrosoftGraphObjectDefinition\[]>: Collection of objects supported by the directory.
+OBJECTS <IMicrosoftGraphObjectDefinition[]>: Collection of objects supported by the directory.
   - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: 
     - `[Anchor <Boolean?>]`: true if the attribute should be used as the anchor for the object. Anchor attributes must have a unique value identifying an object, and must be immutable. Default is false. One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
     - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
@@ -402,3 +406,4 @@ OBJECTS <IMicrosoftGraphObjectDefinition\[]>: Collection of objects supported by
   - `[SupportedApis <String[]>]`: 
 
 ## RELATED LINKS
+

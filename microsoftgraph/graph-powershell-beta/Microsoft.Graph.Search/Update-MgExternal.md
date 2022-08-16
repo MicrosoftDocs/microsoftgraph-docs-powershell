@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternal
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update external
 ### UpdateExpanded (Default)
 ```
 Update-MgExternal [-AdditionalProperties <Hashtable>]
- [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Update external
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ external
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternal1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal
 Parameter Sets: Update
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for CONNECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalConnection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -114,7 +114,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,10 +130,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -143,10 +145,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal>: external
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>]`: 
     - `[Id <String>]`: 
+    - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]`: Specifies configurations to identify an externalItem based on a shared URL.
+        - `[Priority <Int32?>]`: The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated.
     - `[ComplianceSettings <IMicrosoftGraphExternalConnectorsComplianceSettings>]`: complianceSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[EDiscoveryResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: 
@@ -180,6 +186,11 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
         - `[IdentitySource <String>]`: identitySourceType
         - `[Type <String>]`: aclType
         - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup.
+      - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]`: Write-only property. Returns results.
+        - `[Id <String>]`: 
+        - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
+        - `[StartDateTime <DateTime?>]`: When the particular activity occurred.
+        - `[Type <String>]`: externalActivityType
       - `[Content <IMicrosoftGraphExternalConnectorsExternalItemContent>]`: externalItemContent
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Type <String>]`: externalItemContentType
@@ -208,7 +219,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
     - `[Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]`: connectionQuota
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
-      - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
+      - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} – {number of items in the connection}, {tenant quota} – {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
     - `[Schema <IMicrosoftGraphExternalConnectorsSchema>]`: schema
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
@@ -227,8 +238,12 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
       - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
     - `[State <String>]`: connectionState
 
-CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
+CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection[]>: .
   - `[Id <String>]`: 
+  - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]`: Specifies configurations to identify an externalItem based on a shared URL.
+      - `[Priority <Int32?>]`: The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated.
   - `[ComplianceSettings <IMicrosoftGraphExternalConnectorsComplianceSettings>]`: complianceSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[EDiscoveryResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: 
@@ -262,6 +277,11 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
       - `[IdentitySource <String>]`: identitySourceType
       - `[Type <String>]`: aclType
       - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup.
+    - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]`: Write-only property. Returns results.
+      - `[Id <String>]`: 
+      - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
+      - `[StartDateTime <DateTime?>]`: When the particular activity occurred.
+      - `[Type <String>]`: externalActivityType
     - `[Content <IMicrosoftGraphExternalConnectorsExternalItemContent>]`: externalItemContent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Type <String>]`: externalItemContentType
@@ -290,7 +310,7 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
   - `[Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]`: connectionQuota
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
-    - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
+    - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} – {number of items in the connection}, {tenant quota} – {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
   - `[Schema <IMicrosoftGraphExternalConnectorsSchema>]`: schema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
@@ -311,4 +331,3 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
 
 ## RELATED LINKS
 
-## RELATED LINKS

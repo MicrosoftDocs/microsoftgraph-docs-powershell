@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticbatteryhealthdeviceruntimehistory
 schema: 2.0.0
@@ -16,13 +16,13 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceRunt
 ```
 New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory
  [-AdditionalProperties <Hashtable>] [-DeviceId <String>] [-EstimatedRuntimeInMinutes <Int32>] [-Id <String>]
- [-RuntimeDateTime <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RuntimeDateTime <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceRuntimeHistory> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceRuntimeHistory> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceRunt
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +53,7 @@ The user experience analytics battery health runtime history entity contains the
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 The unique identifier of the device, Intune DeviceID or SCCM device id.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +85,7 @@ Unit in minutes.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 The datetime for the instance of runtime history.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -146,7 +146,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -163,9 +163,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
+
 ## NOTES
 
 ALIASES
@@ -175,7 +177,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceRuntimeHistory>`: The user experience analytics battery health runtime history entity contains the trend of runtime of a device over a period of 30 days
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceRuntimeHistory>: The user experience analytics battery health runtime history entity contains the trend of runtime of a device over a period of 30 days
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeviceId <String>]`: The unique identifier of the device, Intune DeviceID or SCCM device id.
@@ -183,3 +185,4 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceRuntime
   - `[RuntimeDateTime <String>]`: The datetime for the instance of runtime history.
 
 ## RELATED LINKS
+

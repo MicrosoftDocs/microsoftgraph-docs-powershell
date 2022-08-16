@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcompliancepolicy
 schema: 2.0.0
@@ -21,13 +21,13 @@ New-MgDeviceManagementCompliancePolicy [-AdditionalProperties <Hashtable>]
  [-RoleScopeTagIds <String[]>]
  [-ScheduledActionsForRule <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>]
  [-SettingCount <Int32>] [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
- [-Technologies <DeviceManagementConfigurationTechnologies>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Technologies <DeviceManagementConfigurationTechnologies>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementCompliancePolicy -BodyParameter <IMicrosoftGraphDeviceManagementCompliancePolicy>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,7 +41,7 @@ Create new navigation property to compliancePolicies for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -57,7 +57,7 @@ Policy assignments
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ Device Management Compliance Policy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementCompliancePolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementCompliancePolicy
 Parameter Sets: Create
 Aliases:
 
@@ -89,7 +89,7 @@ Policy creation date and time.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Policy creation source
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 Policy description
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ Policy assignment status.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -166,7 +166,7 @@ Policy last modification date and time.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 Policy name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Supported platform types.
 
 ```yaml
-Type: DeviceManagementConfigurationPlatforms
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementConfigurationPlatforms
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -227,7 +227,7 @@ The list of scheduled action for this rule
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -243,7 +243,7 @@ Number of settings.
 This property is read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -259,7 +259,7 @@ Policy settings
 To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSetting[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 Describes which technology this setting can be deployed with
 
 ```yaml
-Type: DeviceManagementConfigurationTechnologies
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementConfigurationTechnologies
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -305,7 +305,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -322,9 +322,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementCompliancePolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementCompliancePolicy
+
 ## NOTES
 
 ALIASES
@@ -334,7 +336,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment\[]>: Policy assignments
+ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>: Policy assignments
   - `[Id <String>]`: 
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
   - `[SourceId <String>]`: The identifier of the source of the assignment.
@@ -343,7 +345,7 @@ ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment\[]>: P
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementCompliancePolicy>`: Device Management Compliance Policy
+BODYPARAMETER <IMicrosoftGraphDeviceManagementCompliancePolicy>: Device Management Compliance Policy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>]`: Policy assignments
@@ -411,7 +413,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementCompliancePolicy>`: Device Manage
         - `[SettingInstanceTemplateId <String>]`: Setting instance template id
   - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
 
-SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule\[]>: The list of scheduled action for this rule
+SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>: The list of scheduled action for this rule
   - `[Id <String>]`: 
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
   - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceManagementComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. This collection can contain a maximum of 100 elements.
@@ -421,7 +423,7 @@ SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceManagementComplianceScheduledActio
     - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to. This collection can contain a maximum of 100 elements.
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting\[]>: Policy settings
+SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting[]>: Policy settings
   - `[Id <String>]`: 
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions. This property is read-only.
     - `[Id <String>]`: 
@@ -461,4 +463,3 @@ SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting\[]>: Policy settin
 
 ## RELATED LINKS
 
-## RELATED LINKS

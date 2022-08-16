@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticbaseline
 schema: 2.0.0
@@ -21,14 +21,21 @@ Update-MgDeviceManagementUserExperienceAnalyticBaseline -UserExperienceAnalytics
  [-DeviceBootPerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-DisplayName <String>]
  [-Id <String>] [-IsBuiltIn] [-RebootAnalyticsMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
  [-ResourcePerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
- [-WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-PassThru] [-WhatIf] [-Confirm]
+ [-WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticBaseline -UserExperienceAnalyticsBaselineId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementUserExperienceAnalyticBaseline -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -41,14 +48,7 @@ Update-MgDeviceManagementUserExperienceAnalyticBaseline -InputObject <IDeviceMan
  [-DeviceBootPerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-DisplayName <String>]
  [-Id <String>] [-IsBuiltIn] [-RebootAnalyticsMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
  [-ResourcePerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
- [-WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementUserExperienceAnalyticBaseline -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-PassThru] [-WhatIf] [-Confirm]
+ [-WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -63,7 +63,7 @@ Update the navigation property userExperienceAnalyticsBaselines in deviceManagem
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +79,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, please use Get-Help -Online and see NOTES section for APPHEALTHMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +95,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, please use Get-Help -Online and see NOTES section for BATTERYHEALTHMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -111,7 +111,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, please use Get-Help -Online and see NOTES section for BESTPRACTICESMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ The user experience analytics baseline entity contains baseline values against w
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsBaseline
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 The date the custom baseline was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +158,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, please use Get-Help -Online and see NOTES section for DEVICEBOOTPERFORMANCEMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 The name of the user experience analytics baseline.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -204,8 +204,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 Signifies if the current baseline is the commercial median baseline or a custom baseline.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -250,7 +250,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, please use Get-Help -Online and see NOTES section for REBOOTANALYTICSMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -266,7 +266,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, please use Get-Help -Online and see NOTES section for RESOURCEPERFORMANCEMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -281,8 +281,8 @@ Accept wildcard characters: False
 key: id of userExperienceAnalyticsBaseline
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -297,7 +297,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, please use Get-Help -Online and see NOTES section for WORKFROMANYWHEREMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -328,7 +328,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -345,10 +345,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -358,7 +361,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPHEALTHMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+APPHEALTHMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -371,7 +374,7 @@ APPHEALTHMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user ex
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-BATTERYHEALTHMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+BATTERYHEALTHMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -384,7 +387,7 @@ BATTERYHEALTHMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The use
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-BESTPRACTICESMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+BESTPRACTICESMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -397,7 +400,7 @@ BESTPRACTICESMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The use
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBaseline>`: The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBaseline>: The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
@@ -422,7 +425,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBaseline>`: The user exper
   - `[ResourcePerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
 
-DEVICEBOOTPERFORMANCEMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+DEVICEBOOTPERFORMANCEMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -435,7 +438,7 @@ DEVICEBOOTPERFORMANCEMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`:
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -562,7 +565,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-REBOOTANALYTICSMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+REBOOTANALYTICSMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -575,7 +578,7 @@ REBOOTANALYTICSMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The u
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-RESOURCEPERFORMANCEMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+RESOURCEPERFORMANCEMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -588,7 +591,7 @@ RESOURCEPERFORMANCEMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: T
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-WORKFROMANYWHEREMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+WORKFROMANYWHEREMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -603,4 +606,3 @@ WORKFROMANYWHEREMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The 
 
 ## RELATED LINKS
 
-## RELATED LINKS

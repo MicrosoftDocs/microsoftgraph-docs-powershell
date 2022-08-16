@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/remove-mgexternalconnectiongroup
 schema: 2.0.0
@@ -15,13 +15,13 @@ Delete navigation property groups for external
 ### Delete1 (Default)
 ```
 Remove-MgExternalConnectionGroup -ExternalConnectionId <String> -ExternalGroupId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
-Remove-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Delete navigation property groups for external
 key: id of externalConnection
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 key: id of externalGroup
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +81,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
 Parameter Sets: DeleteViaIdentity1
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -127,7 +127,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -144,9 +144,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -156,10 +158,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
+  - `[ExternalActivityId <String>]`: key: id of externalActivity
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
   - `[ExternalGroupId <String>]`: key: id of externalGroup
   - `[ExternalItemId <String>]`: key: id of externalItem
@@ -167,3 +170,4 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: key: id of qna
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasenoncustodialdatasource
 schema: 2.0.0
@@ -18,13 +18,20 @@ New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId <String
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DataSource <IMicrosoftGraphSecurityDataSource>] [-DisplayName <String>] [-HoldStatus <String>]
  [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
- [-ReleasedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ReleasedDateTime <DateTime>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -34,14 +41,7 @@ New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityId
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DataSource <IMicrosoftGraphSecurityDataSource>] [-DisplayName <String>] [-HoldStatus <String>]
  [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
- [-ReleasedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ReleasedDateTime <DateTime>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ Create new navigation property to noncustodialDataSources for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ ediscoveryNoncustodialDataSource
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 Created date and time of the dataSourceContainer entity.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -102,7 +102,7 @@ dataSource
 To construct, please use Get-Help -Online and see NOTES section for DATASOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityDataSource
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityDataSource
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 Display name of the dataSourceContainer entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -132,8 +132,8 @@ Accept wildcard characters: False
 key: id of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 dataSourceHoldStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -178,8 +178,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ediscoveryIndexOperation
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 Last modified date and time of the dataSourceContainer.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 Date and time that the dataSourceContainer was released from the case.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 dataSourceContainerStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -269,7 +269,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -286,10 +286,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1
+
 ## NOTES
 
 ALIASES
@@ -299,7 +302,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1>`: ediscoveryNoncustodialDataSource
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1>: ediscoveryNoncustodialDataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
@@ -337,7 +340,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1>`: edis
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: 
 
-DATASOURCE `<IMicrosoftGraphSecurityDataSource>`: dataSource
+DATASOURCE <IMicrosoftGraphSecurityDataSource>: dataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -352,7 +355,7 @@ DATASOURCE `<IMicrosoftGraphSecurityDataSource>`: dataSource
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -397,3 +400,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasereviewsettoreviewset
 schema: 2.0.0
@@ -14,30 +14,31 @@ Invoke action addToReviewSet
 
 ### AddExpanded1 (Default)
 ```
-Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
- [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
- [-Search <IMicrosoftGraphSecurityEdiscoverySearch1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String>
+ -EdiscoveryReviewSetId <String> [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
+ [-Search <IMicrosoftGraphSecurityEdiscoverySearch1>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Add1
 ```
-Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
+Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String>
+ -EdiscoveryReviewSetId <String>
  -BodyParameter <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentityExpanded1
-```
-Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -InputObject <ISecurityIdentity>
- [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
- [-Search <IMicrosoftGraphSecurityEdiscoverySearch1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AddViaIdentity1
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -InputObject <ISecurityIdentity>
  -BodyParameter <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded1
+```
+Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -InputObject <ISecurityIdentity>
+ [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
+ [-Search <IMicrosoftGraphSecurityEdiscoverySearch1>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +52,7 @@ Invoke action addToReviewSet
 additionalDataOptions
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
 Aliases:
 
@@ -66,7 +67,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
 Aliases:
 
@@ -82,7 +83,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1
+Type: Microsoft.Graph.PowerShell.Models.IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1
 Parameter Sets: Add1, AddViaIdentity1
 Aliases:
 
@@ -97,8 +98,8 @@ Accept wildcard characters: False
 key: id of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded1, Add1
+Type: System.String
+Parameter Sets: Add1, AddExpanded1
 Aliases:
 
 Required: True
@@ -112,8 +113,8 @@ Accept wildcard characters: False
 key: id of ediscoveryReviewSet
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded1, Add1
+Type: System.String
+Parameter Sets: Add1, AddExpanded1
 Aliases:
 
 Required: True
@@ -128,8 +129,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: AddViaIdentity1, AddViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -143,7 +144,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -159,7 +160,7 @@ ediscoverySearch
 To construct, please use Get-Help -Online and see NOTES section for SEARCH properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoverySearch1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch1
 Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
 Aliases:
 
@@ -174,7 +175,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +191,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,10 +208,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -220,7 +224,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdditionalDataOptions <String>]`: additionalDataOptions
   - `[Search <IMicrosoftGraphSecurityEdiscoverySearch1>]`: ediscoverySearch
@@ -315,7 +319,7 @@ BODYPARAMETER `<IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewse
         - `[Status <String>]`: caseOperationStatus
         - `[Id <String>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -359,7 +363,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-SEARCH `<IMicrosoftGraphSecurityEdiscoverySearch1>`: ediscoverySearch
+SEARCH <IMicrosoftGraphSecurityEdiscoverySearch1>: ediscoverySearch
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -453,4 +457,3 @@ SEARCH `<IMicrosoftGraphSecurityEdiscoverySearch1>`: ediscoverySearch
 
 ## RELATED LINKS
 
-## RELATED LINKS

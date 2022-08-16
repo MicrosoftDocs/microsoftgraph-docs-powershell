@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodian
 schema: 2.0.0
@@ -19,13 +19,19 @@ New-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> [-Acknowled
  [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
  [-ReleasedDateTime <DateTime>] [-SiteSources <IMicrosoftGraphSecuritySiteSource1[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource1[]>]
- [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian1> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian1> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,13 +41,7 @@ New-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-Ack
  [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
  [-ReleasedDateTime <DateTime>] [-SiteSources <IMicrosoftGraphSecuritySiteSource1[]>] [-Status <String>]
  [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource1[]>]
- [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ Create new navigation property to custodians for security
 Date and time the custodian acknowledged a hold notification.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ ediscoveryCustodian
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCustodian1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 Created date and time of the dataSourceContainer entity.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 Display name of the dataSourceContainer entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 key: id of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Email address of the custodian.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 dataSourceHoldStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,8 +192,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ediscoveryIndexOperation
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 Last modified date and time of the dataSourceContainer.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 Date and time that the dataSourceContainer was released from the case.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -253,7 +253,7 @@ Data source entity for SharePoint sites associated with the custodian.
 To construct, please use Get-Help -Online and see NOTES section for SITESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySiteSource1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySiteSource1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 dataSourceContainerStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -284,7 +284,7 @@ Data source entity for groups associated with the custodian.
 To construct, please use Get-Help -Online and see NOTES section for UNIFIEDGROUPSOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityUnifiedGroupSource1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUnifiedGroupSource1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -301,7 +301,7 @@ This is the container for a custodian's mailbox and OneDrive for Business site.
 To construct, please use Get-Help -Online and see NOTES section for USERSOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityUserSource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUserSource[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -332,7 +332,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -349,10 +349,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian1
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian1
+
 ## NOTES
 
 ALIASES
@@ -362,7 +365,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodian
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryCustodian1>: ediscoveryCustodian
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
@@ -403,7 +406,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
     - `[Site <IMicrosoftGraphSite1>]`: site
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
         - `[Id <String>]`: 
@@ -414,7 +417,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
           - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
           - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
           - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
           - `[ContentInfo <IMicrosoftGraphJson>]`: Json
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -439,7 +442,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
               - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
               - `[AlternativeText <String>]`: 
               - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -550,7 +553,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
             - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: 
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
           - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -801,7 +804,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -934,12 +937,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
         - `[Drive <IMicrosoftGraphDrive1>]`: drive
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+          - `[CreatedByUser <IMicrosoftGraphUser>]`: user
           - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
           - `[Description <String>]`: Provides a user-visible description of the item. Optional.
           - `[ETag <String>]`: ETag for the item. Read-only.
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+          - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
           - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
           - `[Name <String>]`: The name of the item. Read-write.
           - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -964,12 +967,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
           - `[Id <String>]`: 
           - `[Bundles <IMicrosoftGraphDriveItem1[]>]`: Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+            - `[CreatedByUser <IMicrosoftGraphUser>]`: user
             - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
             - `[Description <String>]`: Provides a user-visible description of the item. Optional.
             - `[ETag <String>]`: ETag for the item. Read-only.
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+            - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
             - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
             - `[Name <String>]`: The name of the item. Read-write.
             - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -978,7 +981,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
             - `[Analytics <IMicrosoftGraphItemAnalytics1>]`: itemAnalytics
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: 
-              - `[AllTime <IMicrosoftGraphItemActivityStat1>]`: itemActivityStat
+              - `[AllTime <IMicrosoftGraphItemActivityStat>]`: itemActivityStat
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: 
                 - `[Access <IMicrosoftGraphItemActionStat>]`: itemActionStat
@@ -1003,8 +1006,8 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
                 - `[IsTrending <Boolean?>]`: Indicates whether the item is 'trending.' Read-only.
                 - `[Move <IMicrosoftGraphItemActionStat>]`: itemActionStat
                 - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
-              - `[ItemActivityStats <IMicrosoftGraphItemActivityStat1[]>]`: 
-              - `[LastSevenDays <IMicrosoftGraphItemActivityStat1>]`: itemActivityStat
+              - `[ItemActivityStats <IMicrosoftGraphItemActivityStat[]>]`: 
+              - `[LastSevenDays <IMicrosoftGraphItemActivityStat>]`: itemActivityStat
             - `[Audio <IMicrosoftGraphAudio>]`: audio
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Album <String>]`: The title of the album for this audio file.
@@ -1065,12 +1068,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
             - `[ListItem <IMicrosoftGraphListItem>]`: listItem
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+              - `[CreatedByUser <IMicrosoftGraphUser>]`: user
               - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
               - `[Description <String>]`: Provides a user-visible description of the item. Optional.
               - `[ETag <String>]`: ETag for the item. Read-only.
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+              - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
               - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
               - `[Name <String>]`: The name of the item. Read-write.
               - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -1492,12 +1495,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
           - `[List <IMicrosoftGraphList1>]`: list
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+            - `[CreatedByUser <IMicrosoftGraphUser>]`: user
             - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
             - `[Description <String>]`: Provides a user-visible description of the item. Optional.
             - `[ETag <String>]`: ETag for the item. Read-only.
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+            - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
             - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
             - `[Name <String>]`: The name of the item. Read-write.
             - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -1803,7 +1806,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
             - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-        - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+        - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
         - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
           - `[Id <String>]`: 
@@ -1859,7 +1862,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
               - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
               - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
               - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-              - `[Threads <IMicrosoftGraphConversationThread1[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
+              - `[Threads <IMicrosoftGraphConversationThread[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
                 - `[Id <String>]`: 
                 - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
                 - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
@@ -2034,7 +2037,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
               - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
             - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
             - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: The profile photos owned by the group. Read-only. Nullable.
-            - `[Planner <IMicrosoftGraphPlannerGroup1>]`: plannerGroup
+            - `[Planner <IMicrosoftGraphPlannerGroup>]`: plannerGroup
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: 
               - `[Plans <IMicrosoftGraphPlannerPlan[]>]`: Read-only. Nullable. Returns the plannerPlans owned by the group.
@@ -2151,7 +2154,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
             - `[Sites <IMicrosoftGraphSite1[]>]`: The list of SharePoint sites in this group. Access the default site with /sites/root.
             - `[Team <IMicrosoftGraphTeam1>]`: team
             - `[Theme <String>]`: Specifies a Microsoft 365 group's color theme. Possible values are Teal, Purple, Green, Blue, Pink, Orange or Red. Returned by default.
-            - `[Threads <IMicrosoftGraphConversationThread1[]>]`: The group's conversation threads. Nullable.
+            - `[Threads <IMicrosoftGraphConversationThread[]>]`: The group's conversation threads. Nullable.
             - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups that a group is a member of, either directly and through nested membership. Nullable.
             - `[TransitiveMembers <IMicrosoftGraphDirectoryObject[]>]`: The direct and transitive members of a group. Nullable.
             - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as unseenConversationsCount.Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
@@ -2560,7 +2563,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
             - `[ActionState <ActionState?>]`: State of the action on the device
             - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
             - `[StartDateTime <DateTime?>]`: Time the action was initiated
-          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[Description <String>]`: Optional description for the device category.
@@ -2804,7 +2807,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
           - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
         - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
         - `[People <IMicrosoftGraphPerson[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
           - `[Id <String>]`: 
@@ -2828,7 +2831,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
           - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
             - `[Address <String>]`: The email address.
             - `[ItemId <String>]`: 
-            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
             - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
           - `[Surname <String>]`: The person's surname.
           - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -2913,6 +2916,17 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
             - `[IsShared <Boolean?>]`: True if the task list is shared with other users
             - `[Tasks <IMicrosoftGraphTodoTask[]>]`: The tasks in this task list. Read-only. Nullable.
               - `[Id <String>]`: 
+              - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
+                - `[Id <String>]`: 
+                - `[Content <Byte[]>]`: The content streams that are uploaded.
+                - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+                - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+              - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+                - `[Id <String>]`: 
+                - `[ContentType <String>]`: The MIME type.
+                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+                - `[Size <Int32?>]`: The length of the attachment in bytes.
               - `[Body <IMicrosoftGraphItemBody>]`: itemBody
               - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
               - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -2926,6 +2940,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
               - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
               - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
+              - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
               - `[Importance <String>]`: importance
               - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
               - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -2937,6 +2952,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
                 - `[WebUrl <String>]`: Deep link to the linkedResource.
               - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
               - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+              - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[Status <String>]`: taskStatus
               - `[Title <String>]`: A brief description of the task.
             - `[WellknownListName <String>]`: wellknownListName
@@ -2948,7 +2964,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -2965,12 +2981,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
       - `[Items <IMicrosoftGraphBaseItem1[]>]`: Used to address any item contained in this site. This collection cannot be enumerated.
         - `[Id <String>]`: 
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -3013,7 +3029,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodi
     - `[IncludedSources <String>]`: sourceType
     - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -3057,7 +3073,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for SharePoint sites associated with the custodian.
+SITESOURCES <IMicrosoftGraphSecuritySiteSource1[]>: Data source entity for SharePoint sites associated with the custodian.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -3073,7 +3089,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
   - `[Site <IMicrosoftGraphSite1>]`: site
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+    - `[CreatedByUser <IMicrosoftGraphUser>]`: user
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
       - `[Id <String>]`: 
@@ -3084,7 +3100,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
         - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
         - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
         - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
         - `[ContentInfo <IMicrosoftGraphJson>]`: Json
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -3109,7 +3125,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
             - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
             - `[AlternativeText <String>]`: 
             - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -3220,7 +3236,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
           - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: 
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -3471,7 +3487,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3604,12 +3620,12 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
       - `[Drive <IMicrosoftGraphDrive1>]`: drive
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -3634,12 +3650,12 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
         - `[Id <String>]`: 
         - `[Bundles <IMicrosoftGraphDriveItem1[]>]`: Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+          - `[CreatedByUser <IMicrosoftGraphUser>]`: user
           - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
           - `[Description <String>]`: Provides a user-visible description of the item. Optional.
           - `[ETag <String>]`: ETag for the item. Read-only.
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+          - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
           - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
           - `[Name <String>]`: The name of the item. Read-write.
           - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -3648,7 +3664,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
           - `[Analytics <IMicrosoftGraphItemAnalytics1>]`: itemAnalytics
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
-            - `[AllTime <IMicrosoftGraphItemActivityStat1>]`: itemActivityStat
+            - `[AllTime <IMicrosoftGraphItemActivityStat>]`: itemActivityStat
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: 
               - `[Access <IMicrosoftGraphItemActionStat>]`: itemActionStat
@@ -3673,8 +3689,8 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
               - `[IsTrending <Boolean?>]`: Indicates whether the item is 'trending.' Read-only.
               - `[Move <IMicrosoftGraphItemActionStat>]`: itemActionStat
               - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
-            - `[ItemActivityStats <IMicrosoftGraphItemActivityStat1[]>]`: 
-            - `[LastSevenDays <IMicrosoftGraphItemActivityStat1>]`: itemActivityStat
+            - `[ItemActivityStats <IMicrosoftGraphItemActivityStat[]>]`: 
+            - `[LastSevenDays <IMicrosoftGraphItemActivityStat>]`: itemActivityStat
           - `[Audio <IMicrosoftGraphAudio>]`: audio
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Album <String>]`: The title of the album for this audio file.
@@ -3735,12 +3751,12 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
           - `[ListItem <IMicrosoftGraphListItem>]`: listItem
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+            - `[CreatedByUser <IMicrosoftGraphUser>]`: user
             - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
             - `[Description <String>]`: Provides a user-visible description of the item. Optional.
             - `[ETag <String>]`: ETag for the item. Read-only.
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+            - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
             - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
             - `[Name <String>]`: The name of the item. Read-write.
             - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -4162,12 +4178,12 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
         - `[List <IMicrosoftGraphList1>]`: list
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+          - `[CreatedByUser <IMicrosoftGraphUser>]`: user
           - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
           - `[Description <String>]`: Provides a user-visible description of the item. Optional.
           - `[ETag <String>]`: ETag for the item. Read-only.
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+          - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
           - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
           - `[Name <String>]`: The name of the item. Read-write.
           - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -4473,7 +4489,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
           - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-      - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+      - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
       - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
       - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
         - `[Id <String>]`: 
@@ -4529,7 +4545,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
             - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
             - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
             - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-            - `[Threads <IMicrosoftGraphConversationThread1[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
+            - `[Threads <IMicrosoftGraphConversationThread[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
               - `[Id <String>]`: 
               - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
               - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
@@ -4704,7 +4720,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
             - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
           - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: The profile photos owned by the group. Read-only. Nullable.
-          - `[Planner <IMicrosoftGraphPlannerGroup1>]`: plannerGroup
+          - `[Planner <IMicrosoftGraphPlannerGroup>]`: plannerGroup
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[Plans <IMicrosoftGraphPlannerPlan[]>]`: Read-only. Nullable. Returns the plannerPlans owned by the group.
@@ -4821,7 +4837,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
           - `[Sites <IMicrosoftGraphSite1[]>]`: The list of SharePoint sites in this group. Access the default site with /sites/root.
           - `[Team <IMicrosoftGraphTeam1>]`: team
           - `[Theme <String>]`: Specifies a Microsoft 365 group's color theme. Possible values are Teal, Purple, Green, Blue, Pink, Orange or Red. Returned by default.
-          - `[Threads <IMicrosoftGraphConversationThread1[]>]`: The group's conversation threads. Nullable.
+          - `[Threads <IMicrosoftGraphConversationThread[]>]`: The group's conversation threads. Nullable.
           - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups that a group is a member of, either directly and through nested membership. Nullable.
           - `[TransitiveMembers <IMicrosoftGraphDirectoryObject[]>]`: The direct and transitive members of a group. Nullable.
           - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as unseenConversationsCount.Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
@@ -5230,7 +5246,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
           - `[ActionState <ActionState?>]`: State of the action on the device
           - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
           - `[StartDateTime <DateTime?>]`: Time the action was initiated
-        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Description <String>]`: Optional description for the device category.
@@ -5474,7 +5490,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
         - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
       - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
       - `[People <IMicrosoftGraphPerson[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
         - `[Id <String>]`: 
@@ -5498,7 +5514,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
         - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
           - `[Address <String>]`: The email address.
           - `[ItemId <String>]`: 
-          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
           - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
         - `[Surname <String>]`: The person's surname.
         - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -5583,6 +5599,17 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
           - `[IsShared <Boolean?>]`: True if the task list is shared with other users
           - `[Tasks <IMicrosoftGraphTodoTask[]>]`: The tasks in this task list. Read-only. Nullable.
             - `[Id <String>]`: 
+            - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
+              - `[Id <String>]`: 
+              - `[Content <Byte[]>]`: The content streams that are uploaded.
+              - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+              - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+            - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+              - `[Id <String>]`: 
+              - `[ContentType <String>]`: The MIME type.
+              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+              - `[Size <Int32?>]`: The length of the attachment in bytes.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -5596,6 +5623,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
             - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
+            - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
             - `[Importance <String>]`: importance
             - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
             - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -5607,6 +5635,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
               - `[WebUrl <String>]`: Deep link to the linkedResource.
             - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
             - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+            - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Status <String>]`: taskStatus
             - `[Title <String>]`: A brief description of the task.
           - `[WellknownListName <String>]`: wellknownListName
@@ -5618,7 +5647,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
     - `[Description <String>]`: Provides a user-visible description of the item. Optional.
     - `[ETag <String>]`: ETag for the item. Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+    - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
     - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
     - `[Name <String>]`: The name of the item. Read-write.
     - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -5635,12 +5664,12 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
     - `[Items <IMicrosoftGraphBaseItem1[]>]`: Used to address any item contained in this site. This collection cannot be enumerated.
       - `[Id <String>]`: 
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -5666,7 +5695,7 @@ SITESOURCES <IMicrosoftGraphSecuritySiteSource1\[]>: Data source entity for Shar
       - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: Collection of all sets available in the term store.
     - `[TermStores <IMicrosoftGraphTermStore1[]>]`: The collection of termStores under this site.
 
-UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source entity for groups associated with the custodian.
+UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1[]>: Data source entity for groups associated with the custodian.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -5866,7 +5895,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
       - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
       - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
       - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-      - `[Threads <IMicrosoftGraphConversationThread1[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
+      - `[Threads <IMicrosoftGraphConversationThread[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
         - `[Id <String>]`: 
         - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
         - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
@@ -5904,7 +5933,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
     - `[Drive <IMicrosoftGraphDrive1>]`: drive
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
         - `[Id <String>]`: 
@@ -5915,7 +5944,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
           - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
           - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
           - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
           - `[ContentInfo <IMicrosoftGraphJson>]`: Json
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -5940,7 +5969,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
               - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
               - `[AlternativeText <String>]`: 
               - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -6037,7 +6066,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
             - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: 
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
           - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -6135,7 +6164,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6281,12 +6310,12 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
         - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[FollowedSites <IMicrosoftGraphSite1[]>]`: 
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+          - `[CreatedByUser <IMicrosoftGraphUser>]`: user
           - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
           - `[Description <String>]`: Provides a user-visible description of the item. Optional.
           - `[ETag <String>]`: ETag for the item. Read-only.
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+          - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
           - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
           - `[Name <String>]`: The name of the item. Read-write.
           - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -6312,7 +6341,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
           - `[Analytics <IMicrosoftGraphItemAnalytics1>]`: itemAnalytics
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
-            - `[AllTime <IMicrosoftGraphItemActivityStat1>]`: itemActivityStat
+            - `[AllTime <IMicrosoftGraphItemActivityStat>]`: itemActivityStat
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: 
               - `[Access <IMicrosoftGraphItemActionStat>]`: itemActionStat
@@ -6328,12 +6357,12 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
                 - `[DriveItem <IMicrosoftGraphDriveItem1>]`: driveItem
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                  - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+                  - `[CreatedByUser <IMicrosoftGraphUser>]`: user
                   - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
                   - `[Description <String>]`: Provides a user-visible description of the item. Optional.
                   - `[ETag <String>]`: ETag for the item. Read-only.
                   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                  - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+                  - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
                   - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
                   - `[Name <String>]`: The name of the item. Read-write.
                   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -6400,12 +6429,12 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
                   - `[ListItem <IMicrosoftGraphListItem>]`: listItem
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                    - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+                    - `[CreatedByUser <IMicrosoftGraphUser>]`: user
                     - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
                     - `[Description <String>]`: Provides a user-visible description of the item. Optional.
                     - `[ETag <String>]`: ETag for the item. Read-only.
                     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                    - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+                    - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
                     - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
                     - `[Name <String>]`: The name of the item. Read-write.
                     - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -6832,8 +6861,8 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
               - `[IsTrending <Boolean?>]`: Indicates whether the item is 'trending.' Read-only.
               - `[Move <IMicrosoftGraphItemActionStat>]`: itemActionStat
               - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
-            - `[ItemActivityStats <IMicrosoftGraphItemActivityStat1[]>]`: 
-            - `[LastSevenDays <IMicrosoftGraphItemActivityStat1>]`: itemActivityStat
+            - `[ItemActivityStats <IMicrosoftGraphItemActivityStat[]>]`: 
+            - `[LastSevenDays <IMicrosoftGraphItemActivityStat>]`: itemActivityStat
           - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions reusable across lists under this site.
             - `[Id <String>]`: 
             - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -7023,24 +7052,24 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
           - `[Items <IMicrosoftGraphBaseItem1[]>]`: Used to address any item contained in this site. This collection cannot be enumerated.
             - `[Id <String>]`: 
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+            - `[CreatedByUser <IMicrosoftGraphUser>]`: user
             - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
             - `[Description <String>]`: Provides a user-visible description of the item. Optional.
             - `[ETag <String>]`: ETag for the item. Read-only.
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+            - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
             - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
             - `[Name <String>]`: The name of the item. Read-write.
             - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
             - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
           - `[Lists <IMicrosoftGraphList1[]>]`: The collection of lists under this site.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
+            - `[CreatedByUser <IMicrosoftGraphUser>]`: user
             - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
             - `[Description <String>]`: Provides a user-visible description of the item. Optional.
             - `[ETag <String>]`: ETag for the item. Read-only.
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+            - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
             - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
             - `[Name <String>]`: The name of the item. Read-write.
             - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -7246,7 +7275,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
             - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-        - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+        - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
         - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
           - `[Id <String>]`: 
@@ -7687,7 +7716,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
             - `[ActionState <ActionState?>]`: State of the action on the device
             - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
             - `[StartDateTime <DateTime?>]`: Time the action was initiated
-          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[Description <String>]`: Optional description for the device category.
@@ -7935,7 +7964,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
           - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
         - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
         - `[People <IMicrosoftGraphPerson[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
           - `[Id <String>]`: 
@@ -7959,7 +7988,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
           - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
             - `[Address <String>]`: The email address.
             - `[ItemId <String>]`: 
-            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
             - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
           - `[Surname <String>]`: The person's surname.
           - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -8140,6 +8169,17 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
             - `[IsShared <Boolean?>]`: True if the task list is shared with other users
             - `[Tasks <IMicrosoftGraphTodoTask[]>]`: The tasks in this task list. Read-only. Nullable.
               - `[Id <String>]`: 
+              - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
+                - `[Id <String>]`: 
+                - `[Content <Byte[]>]`: The content streams that are uploaded.
+                - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+                - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+              - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+                - `[Id <String>]`: 
+                - `[ContentType <String>]`: The MIME type.
+                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+                - `[Size <Int32?>]`: The length of the attachment in bytes.
               - `[Body <IMicrosoftGraphItemBody>]`: itemBody
               - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
               - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -8153,6 +8193,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
               - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
               - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
+              - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
               - `[Importance <String>]`: importance
               - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
               - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -8164,6 +8205,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
                 - `[WebUrl <String>]`: Deep link to the linkedResource.
               - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
               - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+              - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[Status <String>]`: taskStatus
               - `[Title <String>]`: A brief description of the task.
             - `[WellknownListName <String>]`: wellknownListName
@@ -8175,7 +8217,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -8247,7 +8289,7 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
       - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
     - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
     - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: The profile photos owned by the group. Read-only. Nullable.
-    - `[Planner <IMicrosoftGraphPlannerGroup1>]`: plannerGroup
+    - `[Planner <IMicrosoftGraphPlannerGroup>]`: plannerGroup
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
       - `[Plans <IMicrosoftGraphPlannerPlan[]>]`: Read-only. Nullable. Returns the plannerPlans owned by the group.
@@ -8268,14 +8310,14 @@ UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource1\[]>: Data source
     - `[Sites <IMicrosoftGraphSite1[]>]`: The list of SharePoint sites in this group. Access the default site with /sites/root.
     - `[Team <IMicrosoftGraphTeam1>]`: team
     - `[Theme <String>]`: Specifies a Microsoft 365 group's color theme. Possible values are Teal, Purple, Green, Blue, Pink, Orange or Red. Returned by default.
-    - `[Threads <IMicrosoftGraphConversationThread1[]>]`: The group's conversation threads. Nullable.
+    - `[Threads <IMicrosoftGraphConversationThread[]>]`: The group's conversation threads. Nullable.
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups that a group is a member of, either directly and through nested membership. Nullable.
     - `[TransitiveMembers <IMicrosoftGraphDirectoryObject[]>]`: The direct and transitive members of a group. Nullable.
     - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as unseenConversationsCount.Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
     - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or HiddenMembership. HiddenMembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
   - `[IncludedSources <String>]`: sourceType
 
-USERSOURCES <IMicrosoftGraphSecurityUserSource\[]>: Data source entity for a custodian. This is the container for a custodian's mailbox and OneDrive for Business site.
+USERSOURCES <IMicrosoftGraphSecurityUserSource[]>: Data source entity for a custodian. This is the container for a custodian's mailbox and OneDrive for Business site.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -8294,4 +8336,3 @@ USERSOURCES <IMicrosoftGraphSecurityUserSource\[]>: Data source entity for a cus
 
 ## RELATED LINKS
 
-## RELATED LINKS

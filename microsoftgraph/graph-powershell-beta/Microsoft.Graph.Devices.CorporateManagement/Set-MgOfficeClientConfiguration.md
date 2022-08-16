@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgofficeclientconfiguration
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action assign
 ### AssignExpanded (Default)
 ```
 Set-MgOfficeClientConfiguration -OfficeClientConfigurationId <String> [-AdditionalProperties <Hashtable>]
- [-OfficeConfigurationAssignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>] [-WhatIf] [-Confirm]
+ [-OfficeConfigurationAssignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -23,22 +23,22 @@ Set-MgOfficeClientConfiguration -OfficeClientConfigurationId <String> [-Addition
 ```
 Set-MgOfficeClientConfiguration -OfficeClientConfigurationId <String>
  -BodyParameter <IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssignViaIdentityExpanded
-```
-Set-MgOfficeClientConfiguration -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>]
- [-OfficeConfigurationAssignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
 ```
 Set-MgOfficeClientConfiguration -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssignViaIdentityExpanded
+```
+Set-MgOfficeClientConfiguration -InputObject <IDevicesCorporateManagementIdentity>
+ [-AdditionalProperties <Hashtable>]
+ [-OfficeConfigurationAssignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +52,7 @@ Invoke action assign
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
@@ -84,8 +84,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 key: id of officeClientConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OFFICECONFIGURATIONASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOfficeClientConfigurationAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfigurationAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -146,7 +146,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -163,10 +163,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfigurationAssignment
+
 ## NOTES
 
 ALIASES
@@ -176,14 +179,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OfficeConfigurationAssignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>]`: 
     - `[Id <String>]`: 
     - `[Target <IMicrosoftGraphOfficeConfigurationAssignmentTarget>]`: officeConfigurationAssignmentTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
@@ -252,9 +255,10 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
-OFFICECONFIGURATIONASSIGNMENTS <IMicrosoftGraphOfficeClientConfigurationAssignment\[]>: .
+OFFICECONFIGURATIONASSIGNMENTS <IMicrosoftGraphOfficeClientConfigurationAssignment[]>: .
   - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphOfficeConfigurationAssignmentTarget>]`: officeConfigurationAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
+

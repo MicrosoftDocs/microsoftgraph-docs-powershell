@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
+external help file:
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguserdeviceusagerights
 schema: 2.0.0
@@ -15,27 +15,27 @@ Create new navigation property to usageRights for users
 ### CreateExpanded (Default)
 ```
 New-MgUserDeviceUsageRights -DeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-WhatIf] [-Confirm]
+ [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserDeviceUsageRights -DeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphUsageRight>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity> [-AdditionalProperties <Hashtable>]
- [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity>
- -BodyParameter <IMicrosoftGraphUsageRight> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUsageRight> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity> [-AdditionalProperties <Hashtable>]
+ [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Create new navigation property to usageRights for users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ usageRight
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUsageRight
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 Product id corresponding to the usage right.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 key: id of device
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -126,8 +126,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 Identifier of the service corresponding to the usage right.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 usageRightState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -171,8 +171,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -202,7 +202,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -219,10 +219,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
+
 ## NOTES
 
 ALIASES
@@ -232,14 +235,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUsageRight>`: usageRight
+BODYPARAMETER <IMicrosoftGraphUsageRight>: usageRight
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CatalogId <String>]`: Product id corresponding to the usage right.
   - `[ServiceIdentifier <String>]`: Identifier of the service corresponding to the usage right.
   - `[State <String>]`: usageRightState
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
   - `[CommandId <String>]`: key: id of command
   - `[DeviceId <String>]`: key: id of device
@@ -250,3 +253,4 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

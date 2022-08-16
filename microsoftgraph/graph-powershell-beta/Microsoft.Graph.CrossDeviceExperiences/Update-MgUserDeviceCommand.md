@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
+external help file:
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguserdevicecommand
 schema: 2.0.0
@@ -17,14 +17,20 @@ Update the navigation property commands in users
 Update-MgUserDeviceCommand -CommandId <String> -DeviceId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-AppServiceName <String>] [-Error <String>] [-Id <String>]
  [-PackageFamilyName <String>] [-Payload <Hashtable>] [-PermissionTicket <String>] [-PostBackUri <String>]
- [-Responsepayload <Hashtable>] [-Status <String>] [-Type <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Responsepayload <Hashtable>] [-Status <String>] [-Type <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserDeviceCommand -CommandId <String> -DeviceId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphCommand> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCommand> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity>
+ -BodyParameter <IMicrosoftGraphCommand> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -32,13 +38,7 @@ Update-MgUserDeviceCommand -CommandId <String> -DeviceId <String> -UserId <Strin
 Update-MgUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-AdditionalProperties <Hashtable>]
  [-AppServiceName <String>] [-Error <String>] [-Id <String>] [-PackageFamilyName <String>]
  [-Payload <Hashtable>] [-PermissionTicket <String>] [-PostBackUri <String>] [-Responsepayload <Hashtable>]
- [-Status <String>] [-Type <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity>
- -BodyParameter <IMicrosoftGraphCommand> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <String>] [-Type <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +52,7 @@ Update the navigation property commands in users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ command
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommand
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 key: id of command
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 key: id of device
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -159,8 +159,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 payloadRequest
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 payloadResponse
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -294,8 +294,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -309,7 +309,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -325,7 +325,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -342,10 +342,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -355,7 +358,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCommand>`: command
+BODYPARAMETER <IMicrosoftGraphCommand>: command
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppServiceName <String>]`: 
@@ -371,7 +374,7 @@ BODYPARAMETER `<IMicrosoftGraphCommand>`: command
   - `[Status <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
   - `[CommandId <String>]`: key: id of command
   - `[DeviceId <String>]`: key: id of device
@@ -382,3 +385,4 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

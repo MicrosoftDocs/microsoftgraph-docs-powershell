@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/enable-mgdevicemanagementunlicensedadminstrator
 schema: 2.0.0
@@ -8,20 +8,16 @@ schema: 2.0.0
 # Enable-MgDeviceManagementUnlicensedAdminstrator
 
 ## SYNOPSIS
-Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license.
-You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators.
-Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.
+Invoke action enableUnlicensedAdminstrators
 
 ## SYNTAX
 
 ```
-Enable-MgDeviceManagementUnlicensedAdminstrator [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Enable-MgDeviceManagementUnlicensedAdminstrator [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license.
-You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators.
-Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.
+Invoke action enableUnlicensedAdminstrators
 
 ## EXAMPLES
 
@@ -31,7 +27,7 @@ Licensed administrators will continue to function as-is in that transitive membe
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -46,7 +42,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -62,7 +58,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -81,8 +77,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

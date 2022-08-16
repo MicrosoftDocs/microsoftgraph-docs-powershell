@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityprovider
 schema: 2.0.0
@@ -8,36 +8,36 @@ schema: 2.0.0
 # Update-MgIdentityProvider
 
 ## SYNOPSIS
-Update entity in identityProviders
+Update the navigation property identityProviders in identity
 
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
 ```
 Update-MgIdentityProvider -IdentityProviderBaseId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgIdentityProvider -IdentityProviderBaseId <String> -BodyParameter <IMicrosoftGraphIdentityProviderBase>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgIdentityProvider -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgIdentityProvider -IdentityProviderBaseId <String>
+ -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgIdentityProvider -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
+```
+Update-MgIdentityProvider -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-Id <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update entity in identityProviders
+Update the navigation property identityProviders in identity
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Update entity in identityProviders
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -59,11 +59,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-identityProvider
+identityProviderBase
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityProviderBase
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 The display name of the identity provider.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 key: id of identityProviderBase
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -124,8 +124,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -170,7 +170,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -187,10 +187,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -200,27 +203,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityProvider>`: identityProvider
+BODYPARAMETER <IMicrosoftGraphIdentityProviderBase>: identityProviderBase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider. This is a required field.  Required. Not nullable.
-  - `[ClientSecret <String>]`: The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return ****. This is a required field. Required. Not nullable.
-  - `[Name <String>]`: The display name of the identity provider. Not nullable.
-  - `[Type <String>]`: The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo,QQ, WeChat, OpenIDConnect. Not nullable.
+  - `[DisplayName <String>]`: The display name of the identity provider.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: key: id of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
+  - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
+  - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[CertificateBasedAuthConfigurationId <String>]`: key: id of certificateBasedAuthConfiguration
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[CommandId <String>]`: key: id of command
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: key: tenantId of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: key: id of customAuthenticationExtension
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
   - `[DataPolicyOperationId <String>]`: key: id of dataPolicyOperation
   - `[DefaultUserRoleOverrideId <String>]`: key: id of defaultUserRoleOverride
@@ -231,7 +235,11 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[Fido2AuthenticationMethodId <String>]`: key: id of fido2AuthenticationMethod
   - `[GroupId <String>]`: key: id of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: key: id of homeRealmDiscoveryPolicy
+  - `[IdentityApiConnectorId <String>]`: key: id of identityApiConnector
+  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
   - `[IdentityProviderId <String>]`: key: id of identityProvider
+  - `[IdentityUserFlowAttributeAssignmentId <String>]`: key: id of identityUserFlowAttributeAssignment
+  - `[IdentityUserFlowAttributeId <String>]`: key: id of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: key: id of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: key: id of informationProtectionLabel
   - `[LongRunningOperationId <String>]`: key: id of longRunningOperation
@@ -267,7 +275,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UnifiedRoleManagementPolicyId <String>]`: key: id of unifiedRoleManagementPolicy
   - `[UnifiedRoleManagementPolicyRuleId <String>]`: key: id of unifiedRoleManagementPolicyRule
   - `[UsageRightId <String>]`: key: id of usageRight
+  - `[UserFlowLanguageConfigurationId <String>]`: key: id of userFlowLanguageConfiguration
+  - `[UserFlowLanguagePageId <String>]`: key: id of userFlowLanguagePage
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

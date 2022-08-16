@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/set-mguseronlinemeetingtranscriptcontent
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update content for the navigation property transcripts in users
 ### Set (Default)
 ```
 Set-MgUserOnlineMeetingTranscriptContent -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
- [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InFile <String> [-BodyParameter <Stream>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsIdentity> [-BodyParameter <Stream>]
- -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsIdentity> -InFile <String>
+ [-BodyParameter <Stream>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Update content for the navigation property transcripts in users
 .
 
 ```yaml
-Type: Stream
+Type: System.IO.Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 key: id of callTranscript
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -67,7 +67,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -83,7 +83,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 key: id of onlineMeeting
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -159,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -176,10 +176,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### System.IO.Stream
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -189,7 +192,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
@@ -206,3 +209,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

@@ -1,106 +1,57 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddeviceconfigurationstate
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmgtandroidmanagedappprotectionapp
 schema: 2.0.0
 ---
 
-# New-MgUserManagedDeviceConfigurationState
+# Remove-MgDeviceAppMgtAndroidManagedAppProtectionApp
 
 ## SYNOPSIS
-Create new navigation property to deviceConfigurationStates for users
+Delete navigation property apps for deviceAppManagement
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### Delete1 (Default)
 ```
-New-MgUserManagedDeviceConfigurationState -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
- [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>] [-State <String>] [-Version <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgDeviceAppMgtAndroidManagedAppProtectionApp -AndroidManagedAppProtectionId <String>
+ -ManagedMobileAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
+### DeleteViaIdentity1
 ```
-New-MgUserManagedDeviceConfigurationState -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationState1> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
- [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>] [-State <String>] [-Version <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationState1> [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgDeviceAppMgtAndroidManagedAppProtectionApp -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceConfigurationStates for users
+Delete navigation property apps for deviceAppManagement
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -AndroidManagedAppProtectionId
+key: id of androidManagedAppProtection
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-Device Configuration State for a given device.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphDeviceConfigurationState1
-Parameter Sets: Create1, CreateViaIdentity1
+Type: System.String
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -DisplayName
-The name of the policy for this policyBase
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Id
-.
+### -IfMatch
+ETag
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -115,8 +66,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -126,12 +77,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ManagedDeviceId
-key: id of managedDevice
+### -ManagedMobileAppId
+key: id of managedMobileApp
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -141,88 +92,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PlatformType
-Supported platform types for policies.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: PolicyPlatformType
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SettingCount
-Count of how many setting a policy holds
-
-```yaml
-Type: Int32
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SettingStates
-.
-To construct, please use Get-Help -Online and see NOTES section for SETTINGSTATES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphDeviceConfigurationSettingState1[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -State
-complianceStatus
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserId
-key: id of user
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Version
-The version of the policy
-
-```yaml
-Type: Int32
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -236,7 +111,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +127,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,45 +144,23 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState1
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState1
+### System.Boolean
+
 ## NOTES
 
 ALIASES
+
+### Remove-MgDeviceAppManagementAndroidManagedAppProtectionApp
 
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationState1>`: Device Configuration State for a given device.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[DisplayName <String>]`: The name of the policy for this policyBase
-  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
-  - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
-  - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
-    - `[CurrentValue <String>]`: Current value of setting on device
-    - `[ErrorCode <Int64?>]`: Error code for the setting
-    - `[ErrorDescription <String>]`: Error description
-    - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
-    - `[Setting <String>]`: The setting that is being reported
-    - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-    - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
-      - `[DisplayName <String>]`: Not yet documented
-      - `[Id <String>]`: Not yet documented
-      - `[SourceType <String>]`: settingSourceType
-    - `[State <String>]`: complianceStatus
-    - `[UserEmail <String>]`: UserEmail
-    - `[UserId <String>]`: UserId
-    - `[UserName <String>]`: UserName
-    - `[UserPrincipalName <String>]`: UserPrincipalName.
-  - `[State <String>]`: complianceStatus
-  - `[Version <Int32?>]`: The version of the policy
-
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
@@ -376,21 +229,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
-SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState1\[]>: .
-  - `[CurrentValue <String>]`: Current value of setting on device
-  - `[ErrorCode <Int64?>]`: Error code for the setting
-  - `[ErrorDescription <String>]`: Error description
-  - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
-  - `[Setting <String>]`: The setting that is being reported
-  - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-  - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
-    - `[DisplayName <String>]`: Not yet documented
-    - `[Id <String>]`: Not yet documented
-    - `[SourceType <String>]`: settingSourceType
-  - `[State <String>]`: complianceStatus
-  - `[UserEmail <String>]`: UserEmail
-  - `[UserId <String>]`: UserId
-  - `[UserName <String>]`: UserName
-  - `[UserPrincipalName <String>]`: UserPrincipalName.
-
 ## RELATED LINKS
+

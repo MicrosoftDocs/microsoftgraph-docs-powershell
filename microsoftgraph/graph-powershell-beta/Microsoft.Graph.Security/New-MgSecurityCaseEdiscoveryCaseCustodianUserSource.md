@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianusersource
 schema: 2.0.0
@@ -17,13 +17,19 @@ Create new navigation property to userSources for security
 New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>]
- [-SiteWebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SiteWebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
- -BodyParameter <IMicrosoftGraphSecurityUserSource> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityUserSource> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityUserSource> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -31,13 +37,7 @@ New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId <String> -
 New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>]
- [-SiteWebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityUserSource> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SiteWebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Create new navigation property to userSources for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -67,7 +67,7 @@ userSource
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityUserSource
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUserSource
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -83,7 +83,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 The date and time the dataSource was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -114,7 +114,7 @@ The display name of the dataSource.
 This will be the name of the SharePoint site.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -129,8 +129,8 @@ Accept wildcard characters: False
 key: id of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -144,8 +144,8 @@ Accept wildcard characters: False
 key: id of ediscoveryCustodian
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Email address of the user's mailbox.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 dataSourceHoldStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 sourceType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -220,8 +220,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -236,7 +236,7 @@ The URL of the user's OneDrive for Business site.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -267,7 +267,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -284,10 +284,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUserSource
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUserSource
+
 ## NOTES
 
 ALIASES
@@ -297,7 +300,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityUserSource>`: userSource
+BODYPARAMETER <IMicrosoftGraphSecurityUserSource>: userSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -315,7 +318,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityUserSource>`: userSource
   - `[IncludedSources <String>]`: sourceType
   - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -324,7 +327,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -369,3 +372,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
+

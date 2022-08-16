@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mguserdrivelistitemactivitybyinterval
 schema: 2.0.0
@@ -20,16 +20,16 @@ Get-MgUserDriveListItemActivityByInterval -DriveId <String> -ListItemId <String>
 
 ### Get1
 ```
-Get-MgUserDriveListItemActivityByInterval -DriveId <String> -ListItemId <String> -UserId <String>
- -EndDateTime <String> -Interval <String> -StartDateTime <String> [<CommonParameters>]
+Get-MgUserDriveListItemActivityByInterval -DriveId <String> -EndDateTime <String> -Interval <String>
+ -ListItemId <String> -StartDateTime <String> -UserId <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgUserDriveListItemActivityByInterval -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgUserDriveListItemActivityByInterval -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -45,7 +45,7 @@ Invoke function getActivitiesByInterval
 key: id of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 Usage: endDateTime='{endDateTime}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -76,8 +76,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 Usage: interval='{interval}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 Usage: startDateTime='{startDateTime}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -153,9 +153,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat
+
 ## NOTES
 
 ALIASES
@@ -165,7 +167,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
@@ -198,7 +200,9 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[Token <String>]`: Usage: token='{token}'
   - `[Top <Int32?>]`: Usage: top={top}
+  - `[Upn <String>]`: Usage: upn='{upn}'
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

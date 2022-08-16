@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasesearch
 schema: 2.0.0
@@ -14,42 +14,42 @@ Create new navigation property to searches for security
 
 ### CreateExpanded1 (Default)
 ```
-New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String>
+New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String> [-AdditionalProperties <Hashtable>]
+ [-AdditionalSources <IMicrosoftGraphSecurityDataSource[]>]
  [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>]
- [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphSecurityDataSource[]>]
  [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-CustodianSources <IMicrosoftGraphSecurityDataSource[]>] [-DataSourceScopes <String>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>]
+ [-CustodianSources <IMicrosoftGraphSecurityDataSource[]>] [-DataSourceScopes <String>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1[]>] [-WhatIf] [-Confirm]
+ [-NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch1> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
- [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>]
- [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphSecurityDataSource[]>]
- [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-CustodianSources <IMicrosoftGraphSecurityDataSource[]>] [-DataSourceScopes <String>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>]
- [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch1> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch1> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
+ [-AdditionalSources <IMicrosoftGraphSecurityDataSource[]>]
+ [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>]
+ [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-CustodianSources <IMicrosoftGraphSecurityDataSource[]>] [-DataSourceScopes <String>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,7 +63,7 @@ Create new navigation property to searches for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -79,7 +79,7 @@ Adds an additional source to the eDiscovery search.
 To construct, please use Get-Help -Online and see NOTES section for ADDITIONALSOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityDataSource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityDataSource[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -95,7 +95,7 @@ ediscoveryAddToReviewSetOperation
 To construct, please use Get-Help -Online and see NOTES section for ADDTOREVIEWSETOPERATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -111,7 +111,7 @@ ediscoverySearch
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoverySearch1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -142,7 +142,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -173,7 +173,7 @@ Custodian sources that are included in the eDiscovery search.
 To construct, please use Get-Help -Online and see NOTES section for CUSTODIANSOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityDataSource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityDataSource[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 dataSourceScopes
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -233,8 +233,8 @@ Accept wildcard characters: False
 key: id of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -264,8 +264,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -280,7 +280,7 @@ ediscoveryEstimateOperation
 To construct, please use Get-Help -Online and see NOTES section for LASTESTIMATESTATISTICSOPERATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryEstimateOperation1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryEstimateOperation1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -296,7 +296,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -327,7 +327,7 @@ noncustodialDataSource sources that are included in the eDiscovery search
 To construct, please use Get-Help -Online and see NOTES section for NONCUSTODIALSOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -358,7 +358,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -375,10 +375,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch1
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch1
+
 ## NOTES
 
 ALIASES
@@ -388,7 +391,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDITIONALSOURCES <IMicrosoftGraphSecurityDataSource\[]>: Adds an additional source to the eDiscovery search.
+ADDITIONALSOURCES <IMicrosoftGraphSecurityDataSource[]>: Adds an additional source to the eDiscovery search.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -402,7 +405,7 @@ ADDITIONALSOURCES <IMicrosoftGraphSecurityDataSource\[]>: Adds an additional sou
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-ADDTOREVIEWSETOPERATION `<IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>`: ediscoveryAddToReviewSetOperation
+ADDTOREVIEWSETOPERATION <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>: ediscoveryAddToReviewSetOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: 
   - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
@@ -494,7 +497,7 @@ ADDTOREVIEWSETOPERATION `<IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperati
         - `[Status <String>]`: caseOperationStatus
         - `[Id <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoverySearch1>`: ediscoverySearch
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoverySearch1>: ediscoverySearch
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -586,7 +589,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoverySearch1>`: ediscoverySearch
       - `[Status <String>]`: caseOperationStatus
       - `[Id <String>]`: 
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -595,7 +598,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANSOURCES <IMicrosoftGraphSecurityDataSource\[]>: Custodian sources that are included in the eDiscovery search.
+CUSTODIANSOURCES <IMicrosoftGraphSecurityDataSource[]>: Custodian sources that are included in the eDiscovery search.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -609,7 +612,7 @@ CUSTODIANSOURCES <IMicrosoftGraphSecurityDataSource\[]>: Custodian sources that 
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -653,7 +656,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-LASTESTIMATESTATISTICSOPERATION `<IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>`: ediscoveryEstimateOperation
+LASTESTIMATESTATISTICSOPERATION <IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>: ediscoveryEstimateOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: 
   - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
@@ -745,7 +748,7 @@ LASTESTIMATESTATISTICSOPERATION `<IMicrosoftGraphSecurityEdiscoveryEstimateOpera
   - `[UnindexedItemCount <Int64?>]`: The estimated count of unindexed items for the collection.
   - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -754,7 +757,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NONCUSTODIALSOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1\[]>: noncustodialDataSource sources that are included in the eDiscovery search
+NONCUSTODIALSOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1[]>: noncustodialDataSource sources that are included in the eDiscovery search
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -793,4 +796,3 @@ NONCUSTODIALSOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1\[]
 
 ## RELATED LINKS
 
-## RELATED LINKS

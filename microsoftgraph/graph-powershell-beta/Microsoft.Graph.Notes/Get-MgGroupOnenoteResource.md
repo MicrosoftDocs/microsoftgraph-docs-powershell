@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Notes-help.xml
+external help file:
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenoteresource
 schema: 2.0.0
@@ -35,7 +35,7 @@ Get resources from groups
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -66,7 +66,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: INotesIdentity
+Type: Microsoft.Graph.PowerShell.Models.INotesIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 key: id of onenoteResource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -113,9 +113,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.INotesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteResource
+
 ## NOTES
 
 ALIASES
@@ -125,7 +127,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[NotebookId <String>]`: key: id of notebook
   - `[OnenoteOperationId <String>]`: key: id of onenoteOperation
@@ -137,3 +139,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

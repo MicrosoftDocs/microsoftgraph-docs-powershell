@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitelistitemlink
 schema: 2.0.0
@@ -17,28 +17,28 @@ Invoke action createLink
 New-MgSiteListItemLink -ListId <String> -ListItemId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RetainInheritedPermissions] [-Scope <String>]
- [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSiteListItemLink -ListId <String> -ListItemId <String> -SiteId <String>
  -BodyParameter <IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgSiteListItemLink -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-ExpirationDateTime <DateTime>] [-Password <String>] [-Recipients <IMicrosoftGraphDriveRecipient[]>]
- [-RetainInheritedPermissions] [-Scope <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgSiteListItemLink -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgSiteListItemLink -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ [-ExpirationDateTime <DateTime>] [-Password <String>] [-Recipients <IMicrosoftGraphDriveRecipient[]>]
+ [-RetainInheritedPermissions] [-Scope <String>] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +52,7 @@ Invoke action createLink
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,8 +99,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -114,8 +114,8 @@ Accept wildcard characters: False
 key: id of list
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -129,8 +129,8 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDriveRecipient[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveRecipient[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -205,8 +205,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -251,7 +251,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -268,10 +268,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
+
 ## NOTES
 
 ALIASES
@@ -281,7 +284,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Password <String>]`: 
@@ -293,7 +296,7 @@ BODYPARAMETER `<IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraph
   - `[Scope <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -330,9 +333,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+

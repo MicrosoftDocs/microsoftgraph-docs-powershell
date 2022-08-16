@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification
 schema: 2.0.0
@@ -16,26 +16,26 @@ Create new navigation property to delegatedPermissionClassifications for service
 ```
 New-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId <String>
  [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Id <String>] [-PermissionId <String>]
- [-PermissionName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PermissionName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphDelegatedPermissionClassification> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDelegatedPermissionClassification> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphDelegatedPermissionClassification> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Id <String>] [-PermissionId <String>]
- [-PermissionName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphDelegatedPermissionClassification> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PermissionName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Create new navigation property to delegatedPermissionClassifications for service
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ delegatedPermissionClassification
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDelegatedPermissionClassification
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedPermissionClassification
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 permissionClassificationType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -111,8 +111,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ Required on create.
 Does not support $filter.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ The claim value (value) for the delegated permission listed in the publishedPerm
 Does not support $filter.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,8 +159,8 @@ Accept wildcard characters: False
 key: id of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,10 +207,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedPermissionClassification
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedPermissionClassification
+
 ## NOTES
 
 ALIASES
@@ -220,14 +223,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDelegatedPermissionClassification>`: delegatedPermissionClassification
+BODYPARAMETER <IMicrosoftGraphDelegatedPermissionClassification>: delegatedPermissionClassification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Classification <String>]`: permissionClassificationType
   - `[PermissionId <String>]`: The unique identifier (id) for the delegated permission listed in the publishedPermissionScopes collection of the servicePrincipal. Required on create. Does not support $filter.
   - `[PermissionName <String>]`: The claim value (value) for the delegated permission listed in the publishedPermissionScopes collection of the servicePrincipal. Does not support $filter.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
@@ -258,3 +261,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mguserdeviceenrollmentconfiguration
 schema: 2.0.0
@@ -19,13 +19,20 @@ Update-MgUserDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId <Str
  [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DeviceEnrollmentConfigurationType <DeviceEnrollmentConfigurationType>] [-DisplayName <String>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Priority <Int32>] [-RoleScopeTagIds <String[]>]
- [-Version <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Version <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -36,14 +43,7 @@ Update-MgUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManage
  [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DeviceEnrollmentConfigurationType <DeviceEnrollmentConfigurationType>] [-DisplayName <String>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Priority <Int32>] [-RoleScopeTagIds <String[]>]
- [-Version <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Version <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +57,7 @@ Update the navigation property deviceEnrollmentConfigurations in users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ The list of group assignments for the device configuration profile
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEnrollmentConfigurationAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ The Base Class of Device Enrollment Configuration
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceEnrollmentConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Created date time in UTC of the device enrollment configuration
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 The description of the device enrollment configuration
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,8 +134,8 @@ Accept wildcard characters: False
 key: id of deviceEnrollmentConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 Describes the TemplateFamily for the Template entity
 
 ```yaml
-Type: DeviceEnrollmentConfigurationType
+Type: Microsoft.Graph.PowerShell.Support.DeviceEnrollmentConfigurationType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 The display name of the device enrollment configuration
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,8 +195,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 Last modified date time in UTC of the device enrollment configuration
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -241,7 +241,7 @@ Priority is used when a user exists in multiple groups that are assigned enrollm
 Users are subject only to the configuration with the lowest priority value.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 Optional role scope tags for the enrollment restrictions.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -271,8 +271,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 The version of the device enrollment configuration
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -317,7 +317,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -334,10 +334,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -347,7 +350,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment\[]>: The list of group assignments for the device configuration profile
+ASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment[]>: The list of group assignments for the device configuration profile
   - `[Id <String>]`: 
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
   - `[SourceId <String>]`: Identifier for resource used for deployment to a group
@@ -356,7 +359,7 @@ ASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment\[]>: The list of g
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceEnrollmentConfiguration>`: The Base Class of Device Enrollment Configuration
+BODYPARAMETER <IMicrosoftGraphDeviceEnrollmentConfiguration>: The Base Class of Device Enrollment Configuration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>]`: The list of group assignments for the device configuration profile
@@ -376,7 +379,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceEnrollmentConfiguration>`: The Base Class o
   - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the enrollment restrictions.
   - `[Version <Int32?>]`: The version of the device enrollment configuration
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
@@ -446,3 +449,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
 ## RELATED LINKS
+

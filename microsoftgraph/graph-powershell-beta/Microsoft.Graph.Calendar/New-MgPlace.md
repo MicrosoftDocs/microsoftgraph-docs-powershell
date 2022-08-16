@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mgplace
 schema: 2.0.0
@@ -16,12 +16,12 @@ Add new entity to places
 ```
 New-MgPlace [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress1>]
  [-DisplayName <String>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>]
- [-Phone <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Phone <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPlace -BodyParameter <IMicrosoftGraphPlace> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPlace -BodyParameter <IMicrosoftGraphPlace> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Add new entity to places
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ physicalAddress
 To construct, please use Get-Help -Online and see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhysicalAddress1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ place
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlace
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace
 Parameter Sets: Create
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 The name associated with the place.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ outlookGeoCoordinates
 To construct, please use Get-Help -Online and see NOTES section for GEOCOORDINATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOutlookGeoCoordinates
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookGeoCoordinates
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -110,10 +110,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 The phone number of the place.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -159,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -176,9 +176,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace
+
 ## NOTES
 
 ALIASES
@@ -188,7 +190,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress1>: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -198,9 +200,9 @@ ADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphPlace1>`: place
+BODYPARAMETER <IMicrosoftGraphPlace>: place
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -220,7 +222,7 @@ BODYPARAMETER `<IMicrosoftGraphPlace1>`: place
     - `[Longitude <Double?>]`: The longitude of the location.
   - `[Phone <String>]`: The phone number of the place.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
   - `[Altitude <Double?>]`: The altitude of the location.
@@ -229,3 +231,4 @@ GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   - `[Longitude <Double?>]`: The longitude of the location.
 
 ## RELATED LINKS
+

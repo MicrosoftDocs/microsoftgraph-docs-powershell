@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabeldispositionreviewstage
 schema: 2.0.0
@@ -16,26 +16,26 @@ Create new navigation property to dispositionReviewStages for security
 ```
 New-MgSecurityLabelRetentionLabelDispositionReviewStage -RetentionLabelId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-ReviewersEmailAddresses <String[]>]
- [-StageNumber <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StageNumber <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityLabelRetentionLabelDispositionReviewStage -RetentionLabelId <String>
- -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-ReviewersEmailAddresses <String[]>]
- [-StageNumber <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StageNumber <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Create new navigation property to dispositionReviewStages for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ dispositionReviewStage
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityDispositionReviewStage
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -96,8 +96,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Name representing each stage within a collection.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 key: id of retentionLabel
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 A collection of reviewers at each stage.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 The sequence number for each stage of the disposition review.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,10 +204,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage
+
 ## NOTES
 
 ALIASES
@@ -217,14 +220,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityDispositionReviewStage>`: dispositionReviewStage
+BODYPARAMETER <IMicrosoftGraphSecurityDispositionReviewStage>: dispositionReviewStage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Name <String>]`: Name representing each stage within a collection.
   - `[ReviewersEmailAddresses <String[]>]`: A collection of reviewers at each stage.
   - `[StageNumber <Int32?>]`: The sequence number for each stage of the disposition review.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -269,3 +272,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
+

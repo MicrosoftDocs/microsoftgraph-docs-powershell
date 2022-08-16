@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgscanusermanageddevicewindowdefender
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke action windowsDefenderScan
 ### ScanExpanded (Default)
 ```
 Invoke-MgScanUserManagedDeviceWindowDefender -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Scan
 ```
 Invoke-MgScanUserManagedDeviceWindowDefender -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ScanViaIdentityExpanded
-```
-Invoke-MgScanUserManagedDeviceWindowDefender -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ScanViaIdentity
 ```
 Invoke-MgScanUserManagedDeviceWindowDefender -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ScanViaIdentityExpanded
+```
+Invoke-MgScanUserManagedDeviceWindowDefender -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Invoke action windowsDefenderScan
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ScanExpanded, ScanViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Scan, ScanViaIdentity
 Aliases:
 
@@ -81,8 +81,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: ScanViaIdentityExpanded, ScanViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: ScanViaIdentity, ScanViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: ScanExpanded, Scan
+Type: System.String
+Parameter Sets: Scan, ScanExpanded
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: ScanExpanded, ScanViaIdentityExpanded
 Aliases:
 
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: ScanExpanded, Scan
+Type: System.String
+Parameter Sets: Scan, ScanExpanded
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,10 +189,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -202,11 +205,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[QuickScan <Boolean?>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -244,6 +247,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription
@@ -254,3 +258,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
