@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusersetting
@@ -238,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserSettings1>`: userSettings
+BODYPARAMETER <IMicrosoftGraphUserSettings1>: userSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the Office Delve organization level setting. When set to true, the organization doesn't have access to Office Delve. This setting is read-only and can only be changed by administrators in the SharePoint admin center.
@@ -280,7 +280,7 @@ BODYPARAMETER `<IMicrosoftGraphUserSettings1>`: userSettings
         - `[StartTime <String>]`: Start time for the time range.
       - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession
@@ -302,7 +302,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
 
-SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences1>`: shiftPreferences
+SHIFTPREFERENCES <IMicrosoftGraphShiftPreferences1>: shiftPreferences
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
