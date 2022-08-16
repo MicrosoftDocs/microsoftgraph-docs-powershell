@@ -92,7 +92,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-Set-Location ..\powershell-docs-update
+Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
