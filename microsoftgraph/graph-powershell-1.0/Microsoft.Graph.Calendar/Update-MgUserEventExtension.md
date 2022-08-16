@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusereventextension
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgUserEventExtension
 
 ## SYNOPSIS
-The collection of open extensions defined for the event.
-Nullable.
+Update the navigation property extensions in users
 
 ## SYNTAX
 
@@ -38,8 +37,7 @@ Update-MgUserEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Has
 ```
 
 ## DESCRIPTION
-The collection of open extensions defined for the event.
-Nullable.
+Update the navigation property extensions in users
 
 ## EXAMPLES
 
@@ -106,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -216,13 +214,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
