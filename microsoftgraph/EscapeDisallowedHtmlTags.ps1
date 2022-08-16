@@ -210,6 +210,8 @@ function Special-Escape{
 	 }
 	#$location = Get-Location
 	Set-Location microsoftgraph-docs-powershell
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
 	$location = Get-Location
     git add $FilePath
     git commit -m "Docs cleanup for $ModuleName-$GraphProfile" 

@@ -84,6 +84,8 @@ function Update-GraphModuleHelp {
     Select-MgProfile $GraphProfile
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
     Set-Location microsoftgraph-docs-powershell
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
     git add $moduleDocsPath
     git commit -m "Docs Generation for $ModuleName-$GraphVersion"
     cd ..
