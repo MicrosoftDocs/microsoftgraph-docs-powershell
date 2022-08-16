@@ -110,7 +110,11 @@ if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
 }else{
 	Write-Host "Branch already exists"
-     git checkout $proposedBranch
+    $currentBranch = git rev-parse --abbrev-ref HEAD
+     if($currentBranch -ne $proposedBranch){
+        git checkout $proposedBranch
+     }
+     
 }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."

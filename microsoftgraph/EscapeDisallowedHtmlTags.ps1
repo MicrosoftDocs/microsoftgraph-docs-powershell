@@ -256,6 +256,10 @@ if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
 }else{
 	Write-Host "Branch already exists"
+    $currentBranch = git rev-parse --abbrev-ref HEAD
+    if($currentBranch -ne $proposedBranch){
+        git checkout $proposedBranch
+     }
      git checkout $proposedBranch
 }
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
