@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityfilesecurityprofile
@@ -443,7 +443,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphFileSecurityProfile>`: fileSecurityProfile
+BODYPARAMETER <IMicrosoftGraphFileSecurityProfile>: fileSecurityProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActivityGroupNames <String[]>]`: 
@@ -478,11 +478,11 @@ BODYPARAMETER `<IMicrosoftGraphFileSecurityProfile>`: fileSecurityProfile
     - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
     - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
-HASHES <IMicrosoftGraphFileHash\[]>: .
+HASHES <IMicrosoftGraphFileHash[]>: .
   - `[HashType <String>]`: fileHashType
   - `[HashValue <String>]`: Value of the file hash.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -526,21 +526,21 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-MALWARESTATES <IMicrosoftGraphMalwareState\[]>: .
+MALWARESTATES <IMicrosoftGraphMalwareState[]>: .
   - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
   - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry', 'notpetya', etc.).
   - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
   - `[Severity <String>]`: Provider-determined severity of this malware.
   - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
   - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState\[]>: .
+VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: .
   - `[Cve <String>]`: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
   - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
   - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
