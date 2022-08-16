@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicydeviceregistrationpolicy
@@ -242,21 +242,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AZUREADJOIN `<IMicrosoftGraphAzureAdJoinPolicy>`: azureAdJoinPolicy
+AZUREADJOIN <IMicrosoftGraphAzureAdJoinPolicy>: azureAdJoinPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedGroups <String[]>]`: The identifiers of the groups that are in the scope of the policy. Required when the appliesTo property is set to selected.
   - `[AllowedUsers <String[]>]`: The identifiers of users that are in the scope of the policy. Required when the appliesTo property is set to selected.
   - `[AppliesTo <String>]`: policyScope
   - `[IsAdminConfigurable <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
 
-AZUREADREGISTRATION `<IMicrosoftGraphAzureAdRegistrationPolicy>`: azureADRegistrationPolicy
+AZUREADREGISTRATION <IMicrosoftGraphAzureAdRegistrationPolicy>: azureADRegistrationPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedGroups <String[]>]`: The identifiers of the groups that are in the scope of the policy. Either this property or allowedUsers is required when the appliesTo property is set to selected.
   - `[AllowedUsers <String[]>]`: The identifiers of users that are in the scope of the policy. Either this property or allowedGroups is required when the appliesTo property is set to selected.
   - `[AppliesTo <String>]`: policyScope
   - `[IsAdminConfigurable <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
 
-BODYPARAMETER `<IMicrosoftGraphDeviceRegistrationPolicy>`: deviceRegistrationPolicy
+BODYPARAMETER <IMicrosoftGraphDeviceRegistrationPolicy>: deviceRegistrationPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AzureAdJoin <IMicrosoftGraphAzureAdJoinPolicy>]`: azureAdJoinPolicy
