@@ -83,7 +83,7 @@ function Update-GraphModuleHelp {
     Import-Module $moduleImportName -Force -Global
     Select-MgProfile $GraphProfile
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
-    Set-Location microsoftgraph-docs-powershell
+    #Set-Location microsoftgraph-docs-powershell
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
     git add $moduleDocsPath
