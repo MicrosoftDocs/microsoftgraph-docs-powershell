@@ -47,6 +47,8 @@ jobs:
     inputs:
       targetType: inline
       script: |
+        git config --global user.email "timwamalwa@gmail.com"
+        git config --global user.name "Timothy Wamalwa"
         cd microsoftgraph-docs-powershell
         $date = Get-Date -Format "dd-MM-yyyy"
         $proposedBranch = "weekly_update_help_files_"+$date
