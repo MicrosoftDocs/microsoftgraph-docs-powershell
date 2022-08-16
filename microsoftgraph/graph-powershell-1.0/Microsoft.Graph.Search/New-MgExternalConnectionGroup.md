@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroup
@@ -221,7 +221,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalGroup>`: externalGroup
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalGroup>: externalGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Description <String>]`: The description of the external group. Optional.
@@ -230,17 +230,18 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalGroup>`: externalGroup
     - `[Id <String>]`: 
     - `[Type <String>]`: identityType
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
+  - `[ExternalActivityId <String>]`: key: id of externalActivity
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
   - `[ExternalGroupId <String>]`: key: id of externalGroup
   - `[ExternalItemId <String>]`: key: id of externalItem
   - `[IdentityId <String>]`: key: id of identity
   - `[QnaId <String>]`: key: id of qna
 
-MEMBERS <IMicrosoftGraphExternalConnectorsIdentity\[]>: A member added to an externalGroup. You can add Azure Active Directory users, Azure Active Directory groups, or other externalGroups as members.
+MEMBERS <IMicrosoftGraphExternalConnectorsIdentity[]>: A member added to an externalGroup. You can add Azure Active Directory users, Azure Active Directory groups, or other externalGroups as members.
   - `[Id <String>]`: 
   - `[Type <String>]`: identityType
 
