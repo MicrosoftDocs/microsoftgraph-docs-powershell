@@ -209,11 +209,11 @@ function Special-Escape{
 	   }
 	 }
 	#$location = Get-Location
-	#cd microsoftgraph-docs-powershell
+	Set-Location microsoftgraph-docs-powershell
 	$location = Get-Location
     git add $FilePath
     git commit -m "Docs cleanup for $ModuleName-$GraphProfile" 
-	#cd ..	
+	cd ..	
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line

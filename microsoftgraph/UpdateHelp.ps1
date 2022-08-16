@@ -83,9 +83,10 @@ function Update-GraphModuleHelp {
     Import-Module $moduleImportName -Force -Global
     Select-MgProfile $GraphProfile
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
-
+    Set-Location microsoftgraph-docs-powershell
     git add $moduleDocsPath
     git commit -m "Docs Generation for $ModuleName-$GraphVersion"
+    cd ..
 }
 
 # Install PlatyPS
