@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityinformationprotection
@@ -175,7 +175,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSecurityInformationProtection>: informationProtection
+BODYPARAMETER `<IMicrosoftGraphSecurityInformationProtection>`: informationProtection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]`: informationProtectionPolicySetting
@@ -198,7 +198,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityInformationProtection>: informationProtect
     - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
     - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-LABELPOLICYSETTINGS <IMicrosoftGraphSecurityInformationProtectionPolicySetting>: informationProtectionPolicySetting
+LABELPOLICYSETTINGS `<IMicrosoftGraphSecurityInformationProtectionPolicySetting>`: informationProtectionPolicySetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DefaultLabelId <String>]`: 
@@ -206,7 +206,7 @@ LABELPOLICYSETTINGS <IMicrosoftGraphSecurityInformationProtectionPolicySetting>:
   - `[IsMandatory <Boolean?>]`: Exposes whether mandatory labeling is enabled.
   - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
 
-SENSITIVITYLABELS <IMicrosoftGraphSecuritySensitivityLabel[]>: Read the Microsoft Purview Information Protection labels for the user or organization.
+SENSITIVITYLABELS <IMicrosoftGraphSecuritySensitivityLabel\[]>: Read the Microsoft Purview Information Protection labels for the user or organization.
   - `[Id <String>]`: 
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
   - `[ContentFormats <String[]>]`: Returns the supported content formats for the label.
