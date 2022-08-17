@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/approve-mgdevicemanagementzebrafotaconnectorfotaapp
@@ -20,13 +20,6 @@ Approve-MgDeviceManagementZebraFotaConnectorFotaApp [-WhatIf] [-Confirm] [<Commo
 Invoke action approveFotaApps
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -70,9 +63,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/approve-mgdevicemanagementzebrafotaconnectorfotaapp](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/approve-mgdevicemanagementzebrafotaconnectorfotaapp)
-
