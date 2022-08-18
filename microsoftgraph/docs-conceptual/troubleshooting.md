@@ -14,7 +14,7 @@ reviewer: maisarissi,peombwa
 
 This article explains how to determine, diagnose, and fix issues that you might encounter when using Microsoft Graph PowerShell.
 
-Before troubleshooting any errors, make sure that you're running the most recent version of the Microsoft Graph PowerShell SDK. To get the SDK version, run:
+Before troubleshooting any errors, make sure that you're running the most recent version of the Microsoft Graph PowerShell SDK. To check the SDK version, run:
 
 ```powershell
 Get-InstalledModule
