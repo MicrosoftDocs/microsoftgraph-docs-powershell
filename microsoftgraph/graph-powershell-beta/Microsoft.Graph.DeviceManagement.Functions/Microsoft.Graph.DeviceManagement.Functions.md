@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 Module Guid: 9629ac08-4760-467d-851c-bc52336edb94
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions
@@ -47,6 +47,9 @@ Invoke function getAuditCategories
 ### [Get-MgDeviceManagementComanagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementComanagedDeviceCloudPcRemoteActionResult.md)
 Invoke function getCloudPcRemoteActionResults
 
+### [Get-MgDeviceManagementComanagedDeviceCloudPcReviewStatus](Get-MgDeviceManagementComanagedDeviceCloudPcReviewStatus.md)
+Invoke function getCloudPcReviewStatus
+
 ### [Get-MgDeviceManagementComanagedDeviceFileVaultKey](Get-MgDeviceManagementComanagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
 
@@ -71,6 +74,9 @@ Get a public key to use to encrypt the Apple device enrollment program token
 ### [Get-MgDeviceManagementDepOnboardingSettingExpiringVppTokenCount](Get-MgDeviceManagementDepOnboardingSettingExpiringVppTokenCount.md)
 Invoke function getExpiringVppTokenCount
 
+### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire](Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire.md)
+Invoke function getDevicesScheduledToRetire
+
 ### [Get-MgDeviceManagementDeviceConfigurationIoAvailableUpdateVersion](Get-MgDeviceManagementDeviceConfigurationIoAvailableUpdateVersion.md)
 Invoke function getIosAvailableUpdateVersions
 
@@ -89,6 +95,9 @@ Invoke function getEffectivePermissions
 ### [Get-MgDeviceManagementManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementManagedDeviceCloudPcRemoteActionResult.md)
 Invoke function getCloudPcRemoteActionResults
 
+### [Get-MgDeviceManagementManagedDeviceCloudPcReviewStatus](Get-MgDeviceManagementManagedDeviceCloudPcReviewStatus.md)
+Invoke function getCloudPcReviewStatus
+
 ### [Get-MgDeviceManagementManagedDeviceFileVaultKey](Get-MgDeviceManagementManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
 
@@ -98,6 +107,9 @@ Invoke function getNonCompliantSettings
 ### [Get-MgDeviceManagementManagedDeviceOemWarranty](Get-MgDeviceManagementManagedDeviceOemWarranty.md)
 Invoke function getOemWarranty
 
+### [Get-MgDeviceManagementResourceOperationScopeForUser](Get-MgDeviceManagementResourceOperationScopeForUser.md)
+Invoke function getScopesForUser
+
 ### [Get-MgDeviceManagementRoleScopeTagById](Get-MgDeviceManagementRoleScopeTagById.md)
 Invoke function getRoleScopeTagsByIds
 
@@ -106,6 +118,9 @@ Invoke function getRoleScopeTagsByResource
 
 ### [Get-MgDeviceManagementSuggestedEnrollmentLimit](Get-MgDeviceManagementSuggestedEnrollmentLimit.md)
 Invoke function getSuggestedEnrollmentLimit
+
+### [Get-MgDeviceManagementTenantAttachRbacState](Get-MgDeviceManagementTenantAttachRbacState.md)
+Invoke function getState
 
 ### [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType.md)
 Invoke function getAuditActivityTypes
@@ -119,6 +134,12 @@ Invoke function getSourceImages
 ### [Get-MgDeviceManagementVirtualEndpointEffectivePermission](Get-MgDeviceManagementVirtualEndpointEffectivePermission.md)
 Invoke function getEffectivePermissions
 
+### [Get-MgDeviceManagementVirtualEndpointSnapshotStorageAccount](Get-MgDeviceManagementVirtualEndpointSnapshotStorageAccount.md)
+Invoke function getStorageAccounts
+
+### [Get-MgDeviceManagementVirtualEndpointSnapshotSubscription](Get-MgDeviceManagementVirtualEndpointSnapshotSubscription.md)
+Invoke function getSubscriptions
+
 ### [Invoke-MgCustomDeviceManagementRoleScopeTag](Invoke-MgCustomDeviceManagementRoleScopeTag.md)
 Invoke function hasCustomRoleScopeTag
 
@@ -127,6 +148,9 @@ Download Apple push notification certificate signing request
 
 ### [Invoke-MgExperienceDeviceManagement](Invoke-MgExperienceDeviceManagement.md)
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
+
+### [Invoke-MgGraphDeviceManagement](Invoke-MgGraphDeviceManagement.md)
+Invoke function scopedForResource
 
 ### [Invoke-MgIsDeviceManagementDeviceHealthScriptGlobalScriptAvailable](Invoke-MgIsDeviceManagementDeviceHealthScriptGlobalScriptAvailable.md)
 Invoke function areGlobalScriptsAvailable

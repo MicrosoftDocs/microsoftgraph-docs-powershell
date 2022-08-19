@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgcheckindriveroot
@@ -12,26 +12,26 @@ Invoke action checkin
 
 ## SYNTAX
 
-### CheckinExpanded (Default)
+### CheckinExpanded1 (Default)
 ```
 Invoke-MgCheckinDriveRoot -DriveId <String> [-AdditionalProperties <Hashtable>] [-CheckInAs <String>]
  [-Comment <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Checkin
+### Checkin1
 ```
 Invoke-MgCheckinDriveRoot -DriveId <String>
  -BodyParameter <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckinViaIdentityExpanded
+### CheckinViaIdentityExpanded1
 ```
 Invoke-MgCheckinDriveRoot -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckinViaIdentity
+### CheckinViaIdentity1
 ```
 Invoke-MgCheckinDriveRoot -InputObject <IFilesIdentity>
  -BodyParameter <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
+Parameter Sets: CheckinExpanded1, CheckinViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Checkin, CheckinViaIdentity
+Parameter Sets: Checkin1, CheckinViaIdentity1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
+Parameter Sets: CheckinExpanded1, CheckinViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
+Parameter Sets: CheckinExpanded1, CheckinViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -111,7 +111,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded, Checkin
+Parameter Sets: CheckinExpanded1, Checkin1
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: CheckinViaIdentityExpanded, CheckinViaIdentity
+Parameter Sets: CheckinViaIdentityExpanded1, CheckinViaIdentity1
 Aliases:
 
 Required: True
@@ -202,12 +202,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CheckInAs <String>]`: 
   - `[Comment <String>]`: 
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType

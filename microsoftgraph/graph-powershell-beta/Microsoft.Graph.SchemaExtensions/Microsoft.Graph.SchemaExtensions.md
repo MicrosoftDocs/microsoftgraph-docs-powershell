@@ -15,10 +15,10 @@ Microsoft Graph PowerShell Cmdlets
 Get entity from schemaExtensions by key
 
 ### [New-MgSchemaExtension](New-MgSchemaExtension.md)
-Add new entity to schemaExtensions
+Create schemaExtension
 
 ### [Remove-MgSchemaExtension](Remove-MgSchemaExtension.md)
-Delete entity from schemaExtensions
+Delete schemaExtension
 
 ### [Update-MgSchemaExtension](Update-MgSchemaExtension.md)
 Update entity in schemaExtensions

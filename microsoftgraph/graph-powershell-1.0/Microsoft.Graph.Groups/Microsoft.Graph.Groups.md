@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Groups
 Module Guid: afc1e372-8199-4650-9c1f-12bb085bd540
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
@@ -174,6 +174,9 @@ Get extensions from groups
 
 ### [Get-MgGroupLifecyclePolicy](Get-MgGroupLifecyclePolicy.md)
 Get groupLifecyclePolicy
+
+### [Get-MgGroupLifecyclePolicyByGroup](Get-MgGroupLifecyclePolicyByGroup.md)
+Get groupLifecyclePolicies from groups
 
 ### [Get-MgGroupMember](Get-MgGroupMember.md)
 Get members from groups
@@ -508,6 +511,9 @@ Add a member to an Office 365 group or security group through the members naviga
 ### [New-MgGroupMemberByRef](New-MgGroupMemberByRef.md)
 Create new navigation property ref to members for groups
 
+### [New-MgGroupOwner](New-MgGroupOwner.md)
+Add an owner to an Office 365 group or security group through the owners navigation property.
+
 ### [New-MgGroupOwnerByRef](New-MgGroupOwnerByRef.md)
 Create new navigation property ref to owners for groups
 
@@ -675,11 +681,17 @@ Invoke action resetUnseenCount
 ### [Restore-MgGroupDriveItem](Restore-MgGroupDriveItem.md)
 Invoke action restore
 
+### [Restore-MgGroupDriveItemListItemDocumentSetVersion](Restore-MgGroupDriveItemListItemDocumentSetVersion.md)
+Invoke action restore
+
 ### [Restore-MgGroupDriveItemListItemVersion](Restore-MgGroupDriveItemListItemVersion.md)
 Invoke action restoreVersion
 
 ### [Restore-MgGroupDriveItemVersion](Restore-MgGroupDriveItemVersion.md)
 Invoke action restoreVersion
+
+### [Restore-MgGroupDriveListItemDocumentSetVersion](Restore-MgGroupDriveListItemDocumentSetVersion.md)
+Invoke action restore
 
 ### [Restore-MgGroupDriveListItemVersion](Restore-MgGroupDriveListItemVersion.md)
 Invoke action restoreVersion
@@ -687,11 +699,17 @@ Invoke action restoreVersion
 ### [Restore-MgGroupDriveRoot](Restore-MgGroupDriveRoot.md)
 Invoke action restore
 
+### [Restore-MgGroupDriveRootListItemDocumentSetVersion](Restore-MgGroupDriveRootListItemDocumentSetVersion.md)
+Invoke action restore
+
 ### [Restore-MgGroupDriveRootListItemVersion](Restore-MgGroupDriveRootListItemVersion.md)
 Invoke action restoreVersion
 
 ### [Restore-MgGroupDriveRootVersion](Restore-MgGroupDriveRootVersion.md)
 Invoke action restoreVersion
+
+### [Restore-MgGroupSiteListItemDocumentSetVersion](Restore-MgGroupSiteListItemDocumentSetVersion.md)
+Invoke action restore
 
 ### [Restore-MgGroupSiteListItemVersion](Restore-MgGroupSiteListItemVersion.md)
 Invoke action restoreVersion

@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Groups
 Module Guid: afc1e372-8199-4650-9c1f-12bb085bd540
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
@@ -186,6 +186,9 @@ Get extensions from groups
 
 ### [Get-MgGroupLifecyclePolicy](Get-MgGroupLifecyclePolicy.md)
 Get groupLifecyclePolicy
+
+### [Get-MgGroupLifecyclePolicyByGroup](Get-MgGroupLifecyclePolicyByGroup.md)
+Get groupLifecyclePolicies from groups
 
 ### [Get-MgGroupMember](Get-MgGroupMember.md)
 Get members from groups
@@ -567,6 +570,9 @@ Add a member to an Office 365 group or security group through the members naviga
 
 ### [New-MgGroupMemberByRef](New-MgGroupMemberByRef.md)
 Create new navigation property ref to members for groups
+
+### [New-MgGroupOwner](New-MgGroupOwner.md)
+Add an owner to an Office 365 group or security group through the owners navigation property.
 
 ### [New-MgGroupOwnerByRef](New-MgGroupOwnerByRef.md)
 Create new navigation property ref to owners for groups

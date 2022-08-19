@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Identity.Governance
 Module Guid: 432b96b2-ec8b-4599-8ec1-2e54a60587f9
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
@@ -187,9 +187,6 @@ Get decisions from identityGovernance
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Get-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
 Get insights from identityGovernance
-
-### [Get-MgIdentityGovernanceTermOfUse](Get-MgIdentityGovernanceTermOfUse.md)
-Get termsOfUse from identityGovernance
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreement](Get-MgIdentityGovernanceTermOfUseAgreement.md)
 Get agreements from identityGovernance
@@ -761,9 +758,6 @@ Delete navigation property decisions for identityGovernance
 ### [Remove-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Remove-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
 Delete navigation property insights for identityGovernance
 
-### [Remove-MgIdentityGovernanceTermOfUse](Remove-MgIdentityGovernanceTermOfUse.md)
-Delete navigation property termsOfUse for identityGovernance
-
 ### [Remove-MgIdentityGovernanceTermOfUseAgreement](Remove-MgIdentityGovernanceTermOfUseAgreement.md)
 Delete navigation property agreements for identityGovernance
 
@@ -1063,9 +1057,6 @@ Update the navigation property decisions in identityGovernance
 
 ### [Update-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Update-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
 Update the navigation property insights in identityGovernance
-
-### [Update-MgIdentityGovernanceTermOfUse](Update-MgIdentityGovernanceTermOfUse.md)
-Update the navigation property termsOfUse in identityGovernance
 
 ### [Update-MgIdentityGovernanceTermOfUseAgreement](Update-MgIdentityGovernanceTermOfUseAgreement.md)
 Update the navigation property agreements in identityGovernance

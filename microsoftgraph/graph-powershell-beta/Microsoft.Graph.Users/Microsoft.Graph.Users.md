@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Users
 Module Guid: 8883c73b-6ed7-4476-84c1-e56dbededcbb
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
@@ -148,6 +148,9 @@ Get tasks from users
 
 ### [Get-MgUserTodoListTaskAttachment](Get-MgUserTodoListTaskAttachment.md)
 Get attachments from users
+
+### [Get-MgUserTodoListTaskAttachmentContent](Get-MgUserTodoListTaskAttachmentContent.md)
+Get media content for the navigation property attachments from users
 
 ### [Get-MgUserTodoListTaskAttachmentSession](Get-MgUserTodoListTaskAttachmentSession.md)
 Get attachmentSessions from users
@@ -379,6 +382,9 @@ Delete navigation property extensions for users
 ### [Remove-MgUserTodoListTask](Remove-MgUserTodoListTask.md)
 Delete navigation property tasks for users
 
+### [Remove-MgUserTodoListTaskAttachment](Remove-MgUserTodoListTaskAttachment.md)
+Delete navigation property attachments for users
+
 ### [Remove-MgUserTodoListTaskAttachmentSession](Remove-MgUserTodoListTaskAttachmentSession.md)
 Delete navigation property attachmentSessions for users
 
@@ -396,6 +402,9 @@ Update the ref of navigation property manager in users
 
 ### [Set-MgUserPhotoContent](Set-MgUserPhotoContent.md)
 Update media content for the navigation property photo in users
+
+### [Set-MgUserTodoListTaskAttachmentContent](Set-MgUserTodoListTaskAttachmentContent.md)
+Update media content for the navigation property attachments in users
 
 ### [Set-MgUserTodoListTaskAttachmentSessionContent](Set-MgUserTodoListTaskAttachmentSessionContent.md)
 Update content for the navigation property attachmentSessions in users
@@ -498,6 +507,9 @@ Update the navigation property extensions in users
 
 ### [Update-MgUserTodoListTask](Update-MgUserTodoListTask.md)
 Update the navigation property tasks in users
+
+### [Update-MgUserTodoListTaskAttachment](Update-MgUserTodoListTaskAttachment.md)
+Update the navigation property attachments in users
 
 ### [Update-MgUserTodoListTaskAttachmentSession](Update-MgUserTodoListTaskAttachmentSession.md)
 Update the navigation property attachmentSessions in users

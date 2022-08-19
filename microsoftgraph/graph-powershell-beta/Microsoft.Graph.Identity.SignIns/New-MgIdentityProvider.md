@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider
@@ -12,15 +12,15 @@ Create identityProvider (deprecated)
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgIdentityProvider [-AdditionalProperties <Hashtable>] [-ClientId <String>] [-ClientSecret <String>]
- [-Id <String>] [-Name <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgIdentityProvider [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProvider> [-WhatIf] [-Confirm]
+New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -51,8 +51,8 @@ identityProvider
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityProvider
-Parameter Sets: Create1
+Type: IMicrosoftGraphIdentityProviderBase
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -62,35 +62,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ClientId
-The client ID for the application obtained when registering the application with the identity provider.
-This is a required field.
-Required.
-Not nullable.
+### -DisplayName
+The display name of the identity provider.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ClientSecret
-The client secret for the application obtained when registering the application with the identity provider.
-This is write-only.
-A read operation will return ****.
-This is a required field.
-Required.
-Not nullable.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -105,41 +82,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Name
-The display name of the identity provider.
-Not nullable.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Type
-The identity provider type is a required field.
-For B2B scenario: Google, Facebook.
-For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo,QQ, WeChat, OpenIDConnect.
-Not nullable.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -185,10 +128,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProvider
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProvider
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
 ## NOTES
 
 ALIASES
@@ -198,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphIdentityProvider>: identityProvider
+BODYPARAMETER `<IMicrosoftGraphIdentityProvider>`: identityProvider
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider. This is a required field.  Required. Not nullable.

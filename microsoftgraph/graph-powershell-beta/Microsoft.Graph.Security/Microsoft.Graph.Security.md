@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Security
 Module Guid: 36dd0f6d-61b0-48f6-abdb-636146418c56
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
@@ -161,6 +161,12 @@ Get fileSecurityProfiles from security
 ### [Get-MgSecurityHostSecurityProfile](Get-MgSecurityHostSecurityProfile.md)
 Get hostSecurityProfiles from security
 
+### [Get-MgSecurityIncident](Get-MgSecurityIncident.md)
+Get incidents from security
+
+### [Get-MgSecurityIncidentAlert](Get-MgSecurityIncidentAlert.md)
+Get alerts from security
+
 ### [Get-MgSecurityInformationProtection](Get-MgSecurityInformationProtection.md)
 Get informationProtection from security
 
@@ -175,6 +181,18 @@ Get parent from security
 
 ### [Get-MgSecurityIPSecurityProfile](Get-MgSecurityIPSecurityProfile.md)
 Get ipSecurityProfiles from security
+
+### [Get-MgSecurityLabel](Get-MgSecurityLabel.md)
+Get labels from security
+
+### [Get-MgSecurityLabelRetentionEventType](Get-MgSecurityLabelRetentionEventType.md)
+Get retentionEventType from security
+
+### [Get-MgSecurityLabelRetentionLabel](Get-MgSecurityLabelRetentionLabel.md)
+Get retentionLabels from security
+
+### [Get-MgSecurityLabelRetentionLabelDispositionReviewStage](Get-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
+Get dispositionReviewStages from security
 
 ### [Get-MgSecurityProviderTenantSetting](Get-MgSecurityProviderTenantSetting.md)
 Get providerTenantSettings from security
@@ -200,8 +218,38 @@ Get notes from security
 ### [Get-MgSecuritySubjectRightsRequestTeam](Get-MgSecuritySubjectRightsRequestTeam.md)
 Get team from security
 
+### [Get-MgSecurityThreatSubmission](Get-MgSecurityThreatSubmission.md)
+Get threatSubmission from security
+
+### [Get-MgSecurityThreatSubmissionEmailThreat](Get-MgSecurityThreatSubmissionEmailThreat.md)
+Get emailThreats from security
+
+### [Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy](Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy.md)
+Get emailThreatSubmissionPolicies from security
+
+### [Get-MgSecurityThreatSubmissionFileThreat](Get-MgSecurityThreatSubmissionFileThreat.md)
+Get fileThreats from security
+
+### [Get-MgSecurityThreatSubmissionUrlThreat](Get-MgSecurityThreatSubmissionUrlThreat.md)
+Get urlThreats from security
+
 ### [Get-MgSecurityTiIndicator](Get-MgSecurityTiIndicator.md)
 Get tiIndicators from security
+
+### [Get-MgSecurityTrigger](Get-MgSecurityTrigger.md)
+Get triggers from security
+
+### [Get-MgSecurityTriggerRetentionEvent](Get-MgSecurityTriggerRetentionEvent.md)
+Get retentionEvents from security
+
+### [Get-MgSecurityTriggerRetentionEventType](Get-MgSecurityTriggerRetentionEventType.md)
+Get retentionEventType from security
+
+### [Get-MgSecurityTriggerType](Get-MgSecurityTriggerType.md)
+Get triggerTypes from security
+
+### [Get-MgSecurityTriggerTypeRetentionEventType](Get-MgSecurityTriggerTypeRetentionEventType.md)
+Get retentionEventTypes from security
 
 ### [Get-MgSecurityUserSecurityProfile](Get-MgSecurityUserSecurityProfile.md)
 Get userSecurityProfiles from security
@@ -296,11 +344,20 @@ Create new navigation property to fileSecurityProfiles for security
 ### [New-MgSecurityHostSecurityProfile](New-MgSecurityHostSecurityProfile.md)
 Create new navigation property to hostSecurityProfiles for security
 
+### [New-MgSecurityIncident](New-MgSecurityIncident.md)
+Create new navigation property to incidents for security
+
 ### [New-MgSecurityInformationProtectionSensitivityLabel](New-MgSecurityInformationProtectionSensitivityLabel.md)
 Create new navigation property to sensitivityLabels for security
 
 ### [New-MgSecurityIPSecurityProfile](New-MgSecurityIPSecurityProfile.md)
 Create new navigation property to ipSecurityProfiles for security
+
+### [New-MgSecurityLabelRetentionLabel](New-MgSecurityLabelRetentionLabel.md)
+Create new navigation property to retentionLabels for security
+
+### [New-MgSecurityLabelRetentionLabelDispositionReviewStage](New-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
+Create new navigation property to dispositionReviewStages for security
 
 ### [New-MgSecurityProviderTenantSetting](New-MgSecurityProviderTenantSetting.md)
 Create new navigation property to providerTenantSettings for security
@@ -317,8 +374,26 @@ Create new navigation property to subjectRightsRequests for security
 ### [New-MgSecuritySubjectRightsRequestNote](New-MgSecuritySubjectRightsRequestNote.md)
 Create new navigation property to notes for security
 
+### [New-MgSecurityThreatSubmissionEmailThreat](New-MgSecurityThreatSubmissionEmailThreat.md)
+Create new navigation property to emailThreats for security
+
+### [New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy](New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy.md)
+Create new navigation property to emailThreatSubmissionPolicies for security
+
+### [New-MgSecurityThreatSubmissionFileThreat](New-MgSecurityThreatSubmissionFileThreat.md)
+Create new navigation property to fileThreats for security
+
+### [New-MgSecurityThreatSubmissionUrlThreat](New-MgSecurityThreatSubmissionUrlThreat.md)
+Create new navigation property to urlThreats for security
+
 ### [New-MgSecurityTiIndicator](New-MgSecurityTiIndicator.md)
 Create new navigation property to tiIndicators for security
+
+### [New-MgSecurityTriggerRetentionEvent](New-MgSecurityTriggerRetentionEvent.md)
+Create new navigation property to retentionEvents for security
+
+### [New-MgSecurityTriggerTypeRetentionEventType](New-MgSecurityTriggerTypeRetentionEventType.md)
+Create new navigation property to retentionEventTypes for security
 
 ### [New-MgSecurityUserSecurityProfile](New-MgSecurityUserSecurityProfile.md)
 Create new navigation property to userSecurityProfiles for security
@@ -416,6 +491,9 @@ Delete navigation property fileSecurityProfiles for security
 ### [Remove-MgSecurityHostSecurityProfile](Remove-MgSecurityHostSecurityProfile.md)
 Delete navigation property hostSecurityProfiles for security
 
+### [Remove-MgSecurityIncident](Remove-MgSecurityIncident.md)
+Delete navigation property incidents for security
+
 ### [Remove-MgSecurityInformationProtection](Remove-MgSecurityInformationProtection.md)
 Delete navigation property informationProtection for security
 
@@ -430,6 +508,15 @@ Delete navigation property parent for security
 
 ### [Remove-MgSecurityIPSecurityProfile](Remove-MgSecurityIPSecurityProfile.md)
 Delete navigation property ipSecurityProfiles for security
+
+### [Remove-MgSecurityLabel](Remove-MgSecurityLabel.md)
+Delete navigation property labels for security
+
+### [Remove-MgSecurityLabelRetentionLabel](Remove-MgSecurityLabelRetentionLabel.md)
+Delete navigation property retentionLabels for security
+
+### [Remove-MgSecurityLabelRetentionLabelDispositionReviewStage](Remove-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
+Delete navigation property dispositionReviewStages for security
 
 ### [Remove-MgSecurityProviderTenantSetting](Remove-MgSecurityProviderTenantSetting.md)
 Delete navigation property providerTenantSettings for security
@@ -446,6 +533,21 @@ Delete navigation property subjectRightsRequests for security
 ### [Remove-MgSecuritySubjectRightsRequestNote](Remove-MgSecuritySubjectRightsRequestNote.md)
 Delete navigation property notes for security
 
+### [Remove-MgSecurityThreatSubmission](Remove-MgSecurityThreatSubmission.md)
+Delete navigation property threatSubmission for security
+
+### [Remove-MgSecurityThreatSubmissionEmailThreat](Remove-MgSecurityThreatSubmissionEmailThreat.md)
+Delete navigation property emailThreats for security
+
+### [Remove-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy](Remove-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy.md)
+Delete navigation property emailThreatSubmissionPolicies for security
+
+### [Remove-MgSecurityThreatSubmissionFileThreat](Remove-MgSecurityThreatSubmissionFileThreat.md)
+Delete navigation property fileThreats for security
+
+### [Remove-MgSecurityThreatSubmissionUrlThreat](Remove-MgSecurityThreatSubmissionUrlThreat.md)
+Delete navigation property urlThreats for security
+
 ### [Remove-MgSecurityTiIndicator](Remove-MgSecurityTiIndicator.md)
 Delete navigation property tiIndicators for security
 
@@ -454,6 +556,18 @@ Invoke action deleteTiIndicatorsByExternalId
 
 ### [Remove-MgSecurityTiIndicatorMultiple](Remove-MgSecurityTiIndicatorMultiple.md)
 Invoke action deleteTiIndicators
+
+### [Remove-MgSecurityTrigger](Remove-MgSecurityTrigger.md)
+Delete navigation property triggers for security
+
+### [Remove-MgSecurityTriggerRetentionEvent](Remove-MgSecurityTriggerRetentionEvent.md)
+Delete navigation property retentionEvents for security
+
+### [Remove-MgSecurityTriggerType](Remove-MgSecurityTriggerType.md)
+Delete navigation property triggerTypes for security
+
+### [Remove-MgSecurityTriggerTypeRetentionEventType](Remove-MgSecurityTriggerTypeRetentionEventType.md)
+Delete navigation property retentionEventTypes for security
 
 ### [Remove-MgSecurityUserSecurityProfile](Remove-MgSecurityUserSecurityProfile.md)
 Delete navigation property userSecurityProfiles for security
@@ -469,6 +583,9 @@ Update extractedTextContent for the navigation property files in security
 
 ### [Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery](Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery.md)
 Invoke function run
+
+### [Start-MgSecurityHuntingQuery](Start-MgSecurityHuntingQuery.md)
+Invoke action runHuntingQuery
 
 ### [Stop-MgSecurityAction](Stop-MgSecurityAction.md)
 Invoke action cancelSecurityAction
@@ -572,6 +689,9 @@ Update the navigation property fileSecurityProfiles in security
 ### [Update-MgSecurityHostSecurityProfile](Update-MgSecurityHostSecurityProfile.md)
 Update the navigation property hostSecurityProfiles in security
 
+### [Update-MgSecurityIncident](Update-MgSecurityIncident.md)
+Update the navigation property incidents in security
+
 ### [Update-MgSecurityInformationProtection](Update-MgSecurityInformationProtection.md)
 Update the navigation property informationProtection in security
 
@@ -586,6 +706,15 @@ Update the navigation property parent in security
 
 ### [Update-MgSecurityIPSecurityProfile](Update-MgSecurityIPSecurityProfile.md)
 Update the navigation property ipSecurityProfiles in security
+
+### [Update-MgSecurityLabel](Update-MgSecurityLabel.md)
+Update the navigation property labels in security
+
+### [Update-MgSecurityLabelRetentionLabel](Update-MgSecurityLabelRetentionLabel.md)
+Update the navigation property retentionLabels in security
+
+### [Update-MgSecurityLabelRetentionLabelDispositionReviewStage](Update-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
+Update the navigation property dispositionReviewStages in security
 
 ### [Update-MgSecurityProviderTenantSetting](Update-MgSecurityProviderTenantSetting.md)
 Update the navigation property providerTenantSettings in security
@@ -602,11 +731,38 @@ Update the navigation property subjectRightsRequests in security
 ### [Update-MgSecuritySubjectRightsRequestNote](Update-MgSecuritySubjectRightsRequestNote.md)
 Update the navigation property notes in security
 
+### [Update-MgSecurityThreatSubmission](Update-MgSecurityThreatSubmission.md)
+Update the navigation property threatSubmission in security
+
+### [Update-MgSecurityThreatSubmissionEmailThreat](Update-MgSecurityThreatSubmissionEmailThreat.md)
+Update the navigation property emailThreats in security
+
+### [Update-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy](Update-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy.md)
+Update the navigation property emailThreatSubmissionPolicies in security
+
+### [Update-MgSecurityThreatSubmissionFileThreat](Update-MgSecurityThreatSubmissionFileThreat.md)
+Update the navigation property fileThreats in security
+
+### [Update-MgSecurityThreatSubmissionUrlThreat](Update-MgSecurityThreatSubmissionUrlThreat.md)
+Update the navigation property urlThreats in security
+
 ### [Update-MgSecurityTiIndicator](Update-MgSecurityTiIndicator.md)
 Update the navigation property tiIndicators in security
 
 ### [Update-MgSecurityTiIndicatorMultiple](Update-MgSecurityTiIndicatorMultiple.md)
 Invoke action updateTiIndicators
+
+### [Update-MgSecurityTrigger](Update-MgSecurityTrigger.md)
+Update the navigation property triggers in security
+
+### [Update-MgSecurityTriggerRetentionEvent](Update-MgSecurityTriggerRetentionEvent.md)
+Update the navigation property retentionEvents in security
+
+### [Update-MgSecurityTriggerType](Update-MgSecurityTriggerType.md)
+Update the navigation property triggerTypes in security
+
+### [Update-MgSecurityTriggerTypeRetentionEventType](Update-MgSecurityTriggerTypeRetentionEventType.md)
+Update the navigation property retentionEventTypes in security
 
 ### [Update-MgSecurityUserSecurityProfile](Update-MgSecurityUserSecurityProfile.md)
 Update the navigation property userSecurityProfiles in security

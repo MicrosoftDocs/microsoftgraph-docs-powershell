@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/complete-mgteammigration
@@ -12,12 +12,12 @@ Invoke action completeMigration
 
 ## SYNTAX
 
-### Complete1 (Default)
+### Complete (Default)
 ```
 Complete-MgTeamMigration -TeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CompleteViaIdentity1
+### CompleteViaIdentity
 ```
 Complete-MgTeamMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CompleteViaIdentity1
+Parameter Sets: CompleteViaIdentity
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: Complete1
+Parameter Sets: Complete
 Aliases:
 
 Required: True
@@ -124,7 +124,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Calendar
 Module Guid: e784fed5-77b7-4104-bced-5148534467f6
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar
@@ -50,6 +50,39 @@ Read-only.
 ### [Get-MgGroupEventExceptionOccurrence](Get-MgGroupEventExceptionOccurrence.md)
 Get exceptionOccurrences from groups
 
+### [Get-MgGroupEventExceptionOccurrenceAttachment](Get-MgGroupEventExceptionOccurrenceAttachment.md)
+Get attachments from groups
+
+### [Get-MgGroupEventExceptionOccurrenceCalendar](Get-MgGroupEventExceptionOccurrenceCalendar.md)
+Get calendar from groups
+
+### [Get-MgGroupEventExceptionOccurrenceExtension](Get-MgGroupEventExceptionOccurrenceExtension.md)
+Get extensions from groups
+
+### [Get-MgGroupEventExceptionOccurrenceInstance](Get-MgGroupEventExceptionOccurrenceInstance.md)
+Get instances from groups
+
+### [Get-MgGroupEventExceptionOccurrenceInstanceAttachment](Get-MgGroupEventExceptionOccurrenceInstanceAttachment.md)
+Get attachments from groups
+
+### [Get-MgGroupEventExceptionOccurrenceInstanceCalendar](Get-MgGroupEventExceptionOccurrenceInstanceCalendar.md)
+Get calendar from groups
+
+### [Get-MgGroupEventExceptionOccurrenceInstanceExtension](Get-MgGroupEventExceptionOccurrenceInstanceExtension.md)
+Get extensions from groups
+
+### [Get-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty](Get-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
+Get multiValueExtendedProperties from groups
+
+### [Get-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty](Get-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from groups
+
+### [Get-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty](Get-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty.md)
+Get multiValueExtendedProperties from groups
+
+### [Get-MgGroupEventExceptionOccurrenceSingleValueExtendedProperty](Get-MgGroupEventExceptionOccurrenceSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from groups
+
 ### [Get-MgGroupEventExtension](Get-MgGroupEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -60,6 +93,39 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
+
+### [Get-MgGroupEventInstanceAttachment](Get-MgGroupEventInstanceAttachment.md)
+Get attachments from groups
+
+### [Get-MgGroupEventInstanceCalendar](Get-MgGroupEventInstanceCalendar.md)
+Get calendar from groups
+
+### [Get-MgGroupEventInstanceExceptionOccurrence](Get-MgGroupEventInstanceExceptionOccurrence.md)
+Get exceptionOccurrences from groups
+
+### [Get-MgGroupEventInstanceExceptionOccurrenceAttachment](Get-MgGroupEventInstanceExceptionOccurrenceAttachment.md)
+Get attachments from groups
+
+### [Get-MgGroupEventInstanceExceptionOccurrenceCalendar](Get-MgGroupEventInstanceExceptionOccurrenceCalendar.md)
+Get calendar from groups
+
+### [Get-MgGroupEventInstanceExceptionOccurrenceExtension](Get-MgGroupEventInstanceExceptionOccurrenceExtension.md)
+Get extensions from groups
+
+### [Get-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty](Get-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
+Get multiValueExtendedProperties from groups
+
+### [Get-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty](Get-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from groups
+
+### [Get-MgGroupEventInstanceExtension](Get-MgGroupEventInstanceExtension.md)
+Get extensions from groups
+
+### [Get-MgGroupEventInstanceMultiValueExtendedProperty](Get-MgGroupEventInstanceMultiValueExtendedProperty.md)
+Get multiValueExtendedProperties from groups
+
+### [Get-MgGroupEventInstanceSingleValueExtendedProperty](Get-MgGroupEventInstanceSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from groups
 
 ### [Get-MgGroupEventMultiValueExtendedProperty](Get-MgGroupEventMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the event.
@@ -137,6 +203,39 @@ Read-only.
 ### [Get-MgUserEventExceptionOccurrence](Get-MgUserEventExceptionOccurrence.md)
 Get exceptionOccurrences from users
 
+### [Get-MgUserEventExceptionOccurrenceAttachment](Get-MgUserEventExceptionOccurrenceAttachment.md)
+Get attachments from users
+
+### [Get-MgUserEventExceptionOccurrenceCalendar](Get-MgUserEventExceptionOccurrenceCalendar.md)
+Get calendar from users
+
+### [Get-MgUserEventExceptionOccurrenceExtension](Get-MgUserEventExceptionOccurrenceExtension.md)
+Get extensions from users
+
+### [Get-MgUserEventExceptionOccurrenceInstance](Get-MgUserEventExceptionOccurrenceInstance.md)
+Get instances from users
+
+### [Get-MgUserEventExceptionOccurrenceInstanceAttachment](Get-MgUserEventExceptionOccurrenceInstanceAttachment.md)
+Get attachments from users
+
+### [Get-MgUserEventExceptionOccurrenceInstanceCalendar](Get-MgUserEventExceptionOccurrenceInstanceCalendar.md)
+Get calendar from users
+
+### [Get-MgUserEventExceptionOccurrenceInstanceExtension](Get-MgUserEventExceptionOccurrenceInstanceExtension.md)
+Get extensions from users
+
+### [Get-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty](Get-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
+Get multiValueExtendedProperties from users
+
+### [Get-MgUserEventExceptionOccurrenceInstanceSingleValueExtendedProperty](Get-MgUserEventExceptionOccurrenceInstanceSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from users
+
+### [Get-MgUserEventExceptionOccurrenceMultiValueExtendedProperty](Get-MgUserEventExceptionOccurrenceMultiValueExtendedProperty.md)
+Get multiValueExtendedProperties from users
+
+### [Get-MgUserEventExceptionOccurrenceSingleValueExtendedProperty](Get-MgUserEventExceptionOccurrenceSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from users
+
 ### [Get-MgUserEventExtension](Get-MgUserEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -147,6 +246,39 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
+
+### [Get-MgUserEventInstanceAttachment](Get-MgUserEventInstanceAttachment.md)
+Get attachments from users
+
+### [Get-MgUserEventInstanceCalendar](Get-MgUserEventInstanceCalendar.md)
+Get calendar from users
+
+### [Get-MgUserEventInstanceExceptionOccurrence](Get-MgUserEventInstanceExceptionOccurrence.md)
+Get exceptionOccurrences from users
+
+### [Get-MgUserEventInstanceExceptionOccurrenceAttachment](Get-MgUserEventInstanceExceptionOccurrenceAttachment.md)
+Get attachments from users
+
+### [Get-MgUserEventInstanceExceptionOccurrenceCalendar](Get-MgUserEventInstanceExceptionOccurrenceCalendar.md)
+Get calendar from users
+
+### [Get-MgUserEventInstanceExceptionOccurrenceExtension](Get-MgUserEventInstanceExceptionOccurrenceExtension.md)
+Get extensions from users
+
+### [Get-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty](Get-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
+Get multiValueExtendedProperties from users
+
+### [Get-MgUserEventInstanceExceptionOccurrenceSingleValueExtendedProperty](Get-MgUserEventInstanceExceptionOccurrenceSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from users
+
+### [Get-MgUserEventInstanceExtension](Get-MgUserEventInstanceExtension.md)
+Get extensions from users
+
+### [Get-MgUserEventInstanceMultiValueExtendedProperty](Get-MgUserEventInstanceMultiValueExtendedProperty.md)
+Get multiValueExtendedProperties from users
+
+### [Get-MgUserEventInstanceSingleValueExtendedProperty](Get-MgUserEventInstanceSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from users
 
 ### [Get-MgUserEventMultiValueExtendedProperty](Get-MgUserEventMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the event.
@@ -183,6 +315,33 @@ Nullable.
 ### [New-MgGroupEventExceptionOccurrence](New-MgGroupEventExceptionOccurrence.md)
 Create new navigation property to exceptionOccurrences for groups
 
+### [New-MgGroupEventExceptionOccurrenceAttachment](New-MgGroupEventExceptionOccurrenceAttachment.md)
+Create new navigation property to attachments for groups
+
+### [New-MgGroupEventExceptionOccurrenceExtension](New-MgGroupEventExceptionOccurrenceExtension.md)
+Create new navigation property to extensions for groups
+
+### [New-MgGroupEventExceptionOccurrenceInstance](New-MgGroupEventExceptionOccurrenceInstance.md)
+Create new navigation property to instances for groups
+
+### [New-MgGroupEventExceptionOccurrenceInstanceAttachment](New-MgGroupEventExceptionOccurrenceInstanceAttachment.md)
+Create new navigation property to attachments for groups
+
+### [New-MgGroupEventExceptionOccurrenceInstanceExtension](New-MgGroupEventExceptionOccurrenceInstanceExtension.md)
+Create new navigation property to extensions for groups
+
+### [New-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty](New-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for groups
+
+### [New-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty](New-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for groups
+
+### [New-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty](New-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for groups
+
+### [New-MgGroupEventExceptionOccurrenceSingleValueExtendedProperty](New-MgGroupEventExceptionOccurrenceSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for groups
+
 ### [New-MgGroupEventExtension](New-MgGroupEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -193,6 +352,33 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
+
+### [New-MgGroupEventInstanceAttachment](New-MgGroupEventInstanceAttachment.md)
+Create new navigation property to attachments for groups
+
+### [New-MgGroupEventInstanceExceptionOccurrence](New-MgGroupEventInstanceExceptionOccurrence.md)
+Create new navigation property to exceptionOccurrences for groups
+
+### [New-MgGroupEventInstanceExceptionOccurrenceAttachment](New-MgGroupEventInstanceExceptionOccurrenceAttachment.md)
+Create new navigation property to attachments for groups
+
+### [New-MgGroupEventInstanceExceptionOccurrenceExtension](New-MgGroupEventInstanceExceptionOccurrenceExtension.md)
+Create new navigation property to extensions for groups
+
+### [New-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty](New-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for groups
+
+### [New-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty](New-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for groups
+
+### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
+Create new navigation property to extensions for groups
+
+### [New-MgGroupEventInstanceMultiValueExtendedProperty](New-MgGroupEventInstanceMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for groups
+
+### [New-MgGroupEventInstanceSingleValueExtendedProperty](New-MgGroupEventInstanceSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for groups
 
 ### [New-MgGroupEventMultiValueExtendedProperty](New-MgGroupEventMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the event.
@@ -256,6 +442,33 @@ Nullable.
 ### [New-MgUserEventExceptionOccurrence](New-MgUserEventExceptionOccurrence.md)
 Create new navigation property to exceptionOccurrences for users
 
+### [New-MgUserEventExceptionOccurrenceAttachment](New-MgUserEventExceptionOccurrenceAttachment.md)
+Create new navigation property to attachments for users
+
+### [New-MgUserEventExceptionOccurrenceExtension](New-MgUserEventExceptionOccurrenceExtension.md)
+Create new navigation property to extensions for users
+
+### [New-MgUserEventExceptionOccurrenceInstance](New-MgUserEventExceptionOccurrenceInstance.md)
+Create new navigation property to instances for users
+
+### [New-MgUserEventExceptionOccurrenceInstanceAttachment](New-MgUserEventExceptionOccurrenceInstanceAttachment.md)
+Create new navigation property to attachments for users
+
+### [New-MgUserEventExceptionOccurrenceInstanceExtension](New-MgUserEventExceptionOccurrenceInstanceExtension.md)
+Create new navigation property to extensions for users
+
+### [New-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty](New-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for users
+
+### [New-MgUserEventExceptionOccurrenceInstanceSingleValueExtendedProperty](New-MgUserEventExceptionOccurrenceInstanceSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for users
+
+### [New-MgUserEventExceptionOccurrenceMultiValueExtendedProperty](New-MgUserEventExceptionOccurrenceMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for users
+
+### [New-MgUserEventExceptionOccurrenceSingleValueExtendedProperty](New-MgUserEventExceptionOccurrenceSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for users
+
 ### [New-MgUserEventExtension](New-MgUserEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -266,6 +479,33 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
+
+### [New-MgUserEventInstanceAttachment](New-MgUserEventInstanceAttachment.md)
+Create new navigation property to attachments for users
+
+### [New-MgUserEventInstanceExceptionOccurrence](New-MgUserEventInstanceExceptionOccurrence.md)
+Create new navigation property to exceptionOccurrences for users
+
+### [New-MgUserEventInstanceExceptionOccurrenceAttachment](New-MgUserEventInstanceExceptionOccurrenceAttachment.md)
+Create new navigation property to attachments for users
+
+### [New-MgUserEventInstanceExceptionOccurrenceExtension](New-MgUserEventInstanceExceptionOccurrenceExtension.md)
+Create new navigation property to extensions for users
+
+### [New-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty](New-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for users
+
+### [New-MgUserEventInstanceExceptionOccurrenceSingleValueExtendedProperty](New-MgUserEventInstanceExceptionOccurrenceSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for users
+
+### [New-MgUserEventInstanceExtension](New-MgUserEventInstanceExtension.md)
+Create new navigation property to extensions for users
+
+### [New-MgUserEventInstanceMultiValueExtendedProperty](New-MgUserEventInstanceMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for users
+
+### [New-MgUserEventInstanceSingleValueExtendedProperty](New-MgUserEventInstanceSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for users
 
 ### [New-MgUserEventMultiValueExtendedProperty](New-MgUserEventMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the event.
@@ -302,6 +542,33 @@ Nullable.
 ### [Remove-MgGroupEventExceptionOccurrence](Remove-MgGroupEventExceptionOccurrence.md)
 Delete navigation property exceptionOccurrences for groups
 
+### [Remove-MgGroupEventExceptionOccurrenceAttachment](Remove-MgGroupEventExceptionOccurrenceAttachment.md)
+Delete navigation property attachments for groups
+
+### [Remove-MgGroupEventExceptionOccurrenceExtension](Remove-MgGroupEventExceptionOccurrenceExtension.md)
+Delete navigation property extensions for groups
+
+### [Remove-MgGroupEventExceptionOccurrenceInstance](Remove-MgGroupEventExceptionOccurrenceInstance.md)
+Delete navigation property instances for groups
+
+### [Remove-MgGroupEventExceptionOccurrenceInstanceAttachment](Remove-MgGroupEventExceptionOccurrenceInstanceAttachment.md)
+Delete navigation property attachments for groups
+
+### [Remove-MgGroupEventExceptionOccurrenceInstanceExtension](Remove-MgGroupEventExceptionOccurrenceInstanceExtension.md)
+Delete navigation property extensions for groups
+
+### [Remove-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty](Remove-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for groups
+
+### [Remove-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty](Remove-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for groups
+
+### [Remove-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty](Remove-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for groups
+
+### [Remove-MgGroupEventExceptionOccurrenceSingleValueExtendedProperty](Remove-MgGroupEventExceptionOccurrenceSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for groups
+
 ### [Remove-MgGroupEventExtension](Remove-MgGroupEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -312,6 +579,33 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
+
+### [Remove-MgGroupEventInstanceAttachment](Remove-MgGroupEventInstanceAttachment.md)
+Delete navigation property attachments for groups
+
+### [Remove-MgGroupEventInstanceExceptionOccurrence](Remove-MgGroupEventInstanceExceptionOccurrence.md)
+Delete navigation property exceptionOccurrences for groups
+
+### [Remove-MgGroupEventInstanceExceptionOccurrenceAttachment](Remove-MgGroupEventInstanceExceptionOccurrenceAttachment.md)
+Delete navigation property attachments for groups
+
+### [Remove-MgGroupEventInstanceExceptionOccurrenceExtension](Remove-MgGroupEventInstanceExceptionOccurrenceExtension.md)
+Delete navigation property extensions for groups
+
+### [Remove-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty](Remove-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for groups
+
+### [Remove-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty](Remove-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for groups
+
+### [Remove-MgGroupEventInstanceExtension](Remove-MgGroupEventInstanceExtension.md)
+Delete navigation property extensions for groups
+
+### [Remove-MgGroupEventInstanceMultiValueExtendedProperty](Remove-MgGroupEventInstanceMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for groups
+
+### [Remove-MgGroupEventInstanceSingleValueExtendedProperty](Remove-MgGroupEventInstanceSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for groups
 
 ### [Remove-MgGroupEventMultiValueExtendedProperty](Remove-MgGroupEventMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the event.
@@ -364,6 +658,33 @@ Nullable.
 ### [Remove-MgUserEventExceptionOccurrence](Remove-MgUserEventExceptionOccurrence.md)
 Delete navigation property exceptionOccurrences for users
 
+### [Remove-MgUserEventExceptionOccurrenceAttachment](Remove-MgUserEventExceptionOccurrenceAttachment.md)
+Delete navigation property attachments for users
+
+### [Remove-MgUserEventExceptionOccurrenceExtension](Remove-MgUserEventExceptionOccurrenceExtension.md)
+Delete navigation property extensions for users
+
+### [Remove-MgUserEventExceptionOccurrenceInstance](Remove-MgUserEventExceptionOccurrenceInstance.md)
+Delete navigation property instances for users
+
+### [Remove-MgUserEventExceptionOccurrenceInstanceAttachment](Remove-MgUserEventExceptionOccurrenceInstanceAttachment.md)
+Delete navigation property attachments for users
+
+### [Remove-MgUserEventExceptionOccurrenceInstanceExtension](Remove-MgUserEventExceptionOccurrenceInstanceExtension.md)
+Delete navigation property extensions for users
+
+### [Remove-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty](Remove-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for users
+
+### [Remove-MgUserEventExceptionOccurrenceInstanceSingleValueExtendedProperty](Remove-MgUserEventExceptionOccurrenceInstanceSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for users
+
+### [Remove-MgUserEventExceptionOccurrenceMultiValueExtendedProperty](Remove-MgUserEventExceptionOccurrenceMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for users
+
+### [Remove-MgUserEventExceptionOccurrenceSingleValueExtendedProperty](Remove-MgUserEventExceptionOccurrenceSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for users
+
 ### [Remove-MgUserEventExtension](Remove-MgUserEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -374,6 +695,33 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
+
+### [Remove-MgUserEventInstanceAttachment](Remove-MgUserEventInstanceAttachment.md)
+Delete navigation property attachments for users
+
+### [Remove-MgUserEventInstanceExceptionOccurrence](Remove-MgUserEventInstanceExceptionOccurrence.md)
+Delete navigation property exceptionOccurrences for users
+
+### [Remove-MgUserEventInstanceExceptionOccurrenceAttachment](Remove-MgUserEventInstanceExceptionOccurrenceAttachment.md)
+Delete navigation property attachments for users
+
+### [Remove-MgUserEventInstanceExceptionOccurrenceExtension](Remove-MgUserEventInstanceExceptionOccurrenceExtension.md)
+Delete navigation property extensions for users
+
+### [Remove-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty](Remove-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for users
+
+### [Remove-MgUserEventInstanceExceptionOccurrenceSingleValueExtendedProperty](Remove-MgUserEventInstanceExceptionOccurrenceSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for users
+
+### [Remove-MgUserEventInstanceExtension](Remove-MgUserEventInstanceExtension.md)
+Delete navigation property extensions for users
+
+### [Remove-MgUserEventInstanceMultiValueExtendedProperty](Remove-MgUserEventInstanceMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for users
+
+### [Remove-MgUserEventInstanceSingleValueExtendedProperty](Remove-MgUserEventInstanceSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for users
 
 ### [Remove-MgUserEventMultiValueExtendedProperty](Remove-MgUserEventMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the event.
@@ -410,6 +758,33 @@ Nullable.
 ### [Update-MgGroupEventExceptionOccurrence](Update-MgGroupEventExceptionOccurrence.md)
 Update the navigation property exceptionOccurrences in groups
 
+### [Update-MgGroupEventExceptionOccurrenceAttachment](Update-MgGroupEventExceptionOccurrenceAttachment.md)
+Update the navigation property attachments in groups
+
+### [Update-MgGroupEventExceptionOccurrenceExtension](Update-MgGroupEventExceptionOccurrenceExtension.md)
+Update the navigation property extensions in groups
+
+### [Update-MgGroupEventExceptionOccurrenceInstance](Update-MgGroupEventExceptionOccurrenceInstance.md)
+Update the navigation property instances in groups
+
+### [Update-MgGroupEventExceptionOccurrenceInstanceAttachment](Update-MgGroupEventExceptionOccurrenceInstanceAttachment.md)
+Update the navigation property attachments in groups
+
+### [Update-MgGroupEventExceptionOccurrenceInstanceExtension](Update-MgGroupEventExceptionOccurrenceInstanceExtension.md)
+Update the navigation property extensions in groups
+
+### [Update-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty](Update-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in groups
+
+### [Update-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty](Update-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in groups
+
+### [Update-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty](Update-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in groups
+
+### [Update-MgGroupEventExceptionOccurrenceSingleValueExtendedProperty](Update-MgGroupEventExceptionOccurrenceSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in groups
+
 ### [Update-MgGroupEventExtension](Update-MgGroupEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -420,6 +795,33 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
+
+### [Update-MgGroupEventInstanceAttachment](Update-MgGroupEventInstanceAttachment.md)
+Update the navigation property attachments in groups
+
+### [Update-MgGroupEventInstanceExceptionOccurrence](Update-MgGroupEventInstanceExceptionOccurrence.md)
+Update the navigation property exceptionOccurrences in groups
+
+### [Update-MgGroupEventInstanceExceptionOccurrenceAttachment](Update-MgGroupEventInstanceExceptionOccurrenceAttachment.md)
+Update the navigation property attachments in groups
+
+### [Update-MgGroupEventInstanceExceptionOccurrenceExtension](Update-MgGroupEventInstanceExceptionOccurrenceExtension.md)
+Update the navigation property extensions in groups
+
+### [Update-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty](Update-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in groups
+
+### [Update-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty](Update-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in groups
+
+### [Update-MgGroupEventInstanceExtension](Update-MgGroupEventInstanceExtension.md)
+Update the navigation property extensions in groups
+
+### [Update-MgGroupEventInstanceMultiValueExtendedProperty](Update-MgGroupEventInstanceMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in groups
+
+### [Update-MgGroupEventInstanceSingleValueExtendedProperty](Update-MgGroupEventInstanceSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in groups
 
 ### [Update-MgGroupEventMultiValueExtendedProperty](Update-MgGroupEventMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the event.
@@ -472,6 +874,33 @@ Nullable.
 ### [Update-MgUserEventExceptionOccurrence](Update-MgUserEventExceptionOccurrence.md)
 Update the navigation property exceptionOccurrences in users
 
+### [Update-MgUserEventExceptionOccurrenceAttachment](Update-MgUserEventExceptionOccurrenceAttachment.md)
+Update the navigation property attachments in users
+
+### [Update-MgUserEventExceptionOccurrenceExtension](Update-MgUserEventExceptionOccurrenceExtension.md)
+Update the navigation property extensions in users
+
+### [Update-MgUserEventExceptionOccurrenceInstance](Update-MgUserEventExceptionOccurrenceInstance.md)
+Update the navigation property instances in users
+
+### [Update-MgUserEventExceptionOccurrenceInstanceAttachment](Update-MgUserEventExceptionOccurrenceInstanceAttachment.md)
+Update the navigation property attachments in users
+
+### [Update-MgUserEventExceptionOccurrenceInstanceExtension](Update-MgUserEventExceptionOccurrenceInstanceExtension.md)
+Update the navigation property extensions in users
+
+### [Update-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty](Update-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in users
+
+### [Update-MgUserEventExceptionOccurrenceInstanceSingleValueExtendedProperty](Update-MgUserEventExceptionOccurrenceInstanceSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in users
+
+### [Update-MgUserEventExceptionOccurrenceMultiValueExtendedProperty](Update-MgUserEventExceptionOccurrenceMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in users
+
+### [Update-MgUserEventExceptionOccurrenceSingleValueExtendedProperty](Update-MgUserEventExceptionOccurrenceSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in users
+
 ### [Update-MgUserEventExtension](Update-MgUserEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -482,6 +911,33 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
+
+### [Update-MgUserEventInstanceAttachment](Update-MgUserEventInstanceAttachment.md)
+Update the navigation property attachments in users
+
+### [Update-MgUserEventInstanceExceptionOccurrence](Update-MgUserEventInstanceExceptionOccurrence.md)
+Update the navigation property exceptionOccurrences in users
+
+### [Update-MgUserEventInstanceExceptionOccurrenceAttachment](Update-MgUserEventInstanceExceptionOccurrenceAttachment.md)
+Update the navigation property attachments in users
+
+### [Update-MgUserEventInstanceExceptionOccurrenceExtension](Update-MgUserEventInstanceExceptionOccurrenceExtension.md)
+Update the navigation property extensions in users
+
+### [Update-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty](Update-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in users
+
+### [Update-MgUserEventInstanceExceptionOccurrenceSingleValueExtendedProperty](Update-MgUserEventInstanceExceptionOccurrenceSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in users
+
+### [Update-MgUserEventInstanceExtension](Update-MgUserEventInstanceExtension.md)
+Update the navigation property extensions in users
+
+### [Update-MgUserEventInstanceMultiValueExtendedProperty](Update-MgUserEventInstanceMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in users
+
+### [Update-MgUserEventInstanceSingleValueExtendedProperty](Update-MgUserEventInstanceSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in users
 
 ### [Update-MgUserEventMultiValueExtendedProperty](Update-MgUserEventMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the event.

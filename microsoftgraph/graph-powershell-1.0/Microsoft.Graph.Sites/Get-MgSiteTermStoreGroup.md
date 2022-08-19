@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroup
@@ -12,7 +12,7 @@ Get groups from sites
 
 ## SYNTAX
 
-### List1 (Default)
+### List2 (Default)
 ```
 Get-MgSiteTermStoreGroup -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
@@ -21,17 +21,17 @@ Get-MgSiteTermStoreGroup -SiteId <String> [-ExpandProperty <String[]>] [-Propert
 
 ### Get2
 ```
-Get-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> -StoreId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
-```
-
-### Get1
-```
 Get-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### List2
+### Get
+```
+Get-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> -StoreId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+### List
 ```
 Get-MgSiteTermStoreGroup -SiteId <String> -StoreId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
@@ -44,7 +44,7 @@ Get-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <String[
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -62,7 +62,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1, List2
+Parameter Sets: List2, List
 Aliases:
 
 Required: False
@@ -78,7 +78,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1, List2
+Parameter Sets: List2, List
 Aliases: CV
 
 Required: False
@@ -108,7 +108,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1, List2
+Parameter Sets: List2, List
 Aliases:
 
 Required: False
@@ -123,7 +123,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get1
+Parameter Sets: Get2, Get
 Aliases:
 
 Required: True
@@ -139,7 +139,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1
+Parameter Sets: GetViaIdentity2, GetViaIdentity
 Aliases:
 
 Required: True
@@ -154,7 +154,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List2
+Parameter Sets: List2, List
 Aliases:
 
 Required: False
@@ -184,7 +184,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1, List2
+Parameter Sets: List2, List
 Aliases:
 
 Required: False
@@ -199,7 +199,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get2, Get1, List2
+Parameter Sets: List2, Get2, Get, List
 Aliases:
 
 Required: True
@@ -214,7 +214,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1, List2
+Parameter Sets: List2, List
 Aliases: OrderBy
 
 Required: False
@@ -229,7 +229,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: Get2, List2
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -244,7 +244,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List2
+Parameter Sets: List2, List
 Aliases: Limit
 
 Required: False
@@ -259,7 +259,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List2
+Parameter Sets: List2, List
 Aliases:
 
 Required: False
@@ -287,7 +287,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

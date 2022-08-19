@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgsharelistitemdocumentsetversion
@@ -12,25 +12,25 @@ Delete navigation property documentSetVersions for shares
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete3 (Default)
 ```
 Remove-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -SharedDriveItemId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Delete
+### Delete2
 ```
 Remove-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -ListItemId <String>
  -SharedDriveItemId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity3
 ```
 Remove-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity2
 ```
 Remove-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,7 +48,7 @@ key: id of documentSetVersion
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete
+Parameter Sets: Delete3, Delete2
 Aliases:
 
 Required: True
@@ -79,7 +79,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2
 Aliases:
 
 Required: True
@@ -94,7 +94,7 @@ key: id of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete2
 Aliases:
 
 Required: True
@@ -124,7 +124,7 @@ key: id of sharedDriveItem
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete
+Parameter Sets: Delete3, Delete2
 Aliases:
 
 Required: True
@@ -183,7 +183,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType

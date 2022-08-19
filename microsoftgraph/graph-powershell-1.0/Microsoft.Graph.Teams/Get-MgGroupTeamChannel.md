@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamchannel
@@ -19,10 +19,29 @@ Get-MgGroupTeamChannel -GroupId <String> [-ExpandProperty <String[]>] [-Property
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
+### Get3
+```
+Get-MgGroupTeamChannel -ChannelId <String> -GroupId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
 ### Get2
 ```
 Get-MgGroupTeamChannel -ChannelId <String> -GroupId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
+```
+
+### List3
+```
+Get-MgGroupTeamChannel -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity3
+```
+Get-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity2
@@ -43,7 +62,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List2
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -58,7 +77,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get3, Get2
 Aliases:
 
 Required: True
@@ -74,7 +93,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List2
+Parameter Sets: List2, List3
 Aliases: CV
 
 Required: False
@@ -104,7 +123,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List2
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -119,7 +138,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get2
+Parameter Sets: List2, Get3, Get2, List3
 Aliases:
 
 Required: True
@@ -135,7 +154,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity2
+Parameter Sets: GetViaIdentity3, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -150,7 +169,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List2
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -180,7 +199,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List2
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -195,7 +214,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List2
+Parameter Sets: List2, List3
 Aliases: OrderBy
 
 Required: False
@@ -210,7 +229,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2
+Parameter Sets: List2, List3
 Aliases: Limit
 
 Required: False
@@ -225,7 +244,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -253,7 +272,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

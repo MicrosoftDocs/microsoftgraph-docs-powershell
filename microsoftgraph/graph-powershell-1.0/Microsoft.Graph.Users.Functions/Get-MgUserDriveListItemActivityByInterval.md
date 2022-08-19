@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mguserdrivelistitemactivitybyinterval
@@ -12,19 +12,19 @@ Invoke function getActivitiesByInterval
 
 ## SYNTAX
 
-### Get2 (Default)
+### Get (Default)
 ```
 Get-MgUserDriveListItemActivityByInterval -DriveId <String> -ListItemId <String> -UserId <String>
  [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
-Get-MgUserDriveListItemActivityByInterval -DriveId <String> -EndDateTime <String> -Interval <String>
- -ListItemId <String> -StartDateTime <String> -UserId <String> [<CommonParameters>]
+Get-MgUserDriveListItemActivityByInterval -DriveId <String> -ListItemId <String> -UserId <String>
+ -EndDateTime <String> -Interval <String> -StartDateTime <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgUserDriveListItemActivityByInterval -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -46,7 +46,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -61,7 +61,7 @@ Usage: endDateTime='{endDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -77,7 +77,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -92,7 +92,7 @@ Usage: interval='{interval}'
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -107,7 +107,7 @@ key: id of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -122,7 +122,7 @@ Usage: startDateTime='{startDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -137,7 +137,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -165,7 +165,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[BaseTaskListId <String>]`: key: id of baseTaskList

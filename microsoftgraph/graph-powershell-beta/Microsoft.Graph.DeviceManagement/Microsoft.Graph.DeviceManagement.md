@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.DeviceManagement
 Module Guid: 794025dc-c5d8-4b33-9d3a-aefaf83ef34c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement
@@ -1639,6 +1639,9 @@ Delete navigation property windowsInformationProtectionNetworkLearningSummaries 
 
 ### [Remove-MgDeviceManagementWindowMalwareInformation](Remove-MgDeviceManagementWindowMalwareInformation.md)
 Delete navigation property windowsMalwareInformation for deviceManagement
+
+### [Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState](Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState.md)
+Delete navigation property deviceMalwareStates for deviceManagement
 
 ### [Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState](Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState.md)
 Delete navigation property deviceMalwareStates for deviceManagement

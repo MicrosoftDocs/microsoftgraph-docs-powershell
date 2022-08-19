@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Teams
 Module Guid: 70816f2b-e7a1-4c6f-a0c2-96b3dd9f572b
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
@@ -110,6 +110,12 @@ Get replies from groups
 ### [Get-MgGroupTeamChannelMessageReplyHostedContent](Get-MgGroupTeamChannelMessageReplyHostedContent.md)
 Get hostedContents from groups
 
+### [Get-MgGroupTeamChannelSharedWithTeam](Get-MgGroupTeamChannelSharedWithTeam.md)
+Get sharedWithTeams from groups
+
+### [Get-MgGroupTeamChannelSharedWithTeamAllowedMember](Get-MgGroupTeamChannelSharedWithTeamAllowedMember.md)
+Get allowedMembers from groups
+
 ### [Get-MgGroupTeamChannelTab](Get-MgGroupTeamChannelTab.md)
 Get tabs from groups
 
@@ -118,6 +124,9 @@ Get teamsApp from groups
 
 ### [Get-MgGroupTeamGroup](Get-MgGroupTeamGroup.md)
 Get group from groups
+
+### [Get-MgGroupTeamIncomingChannel](Get-MgGroupTeamIncomingChannel.md)
+Get incomingChannels from groups
 
 ### [Get-MgGroupTeamInstalledApp](Get-MgGroupTeamInstalledApp.md)
 Get installedApps from groups
@@ -133,6 +142,12 @@ Get members from groups
 
 ### [Get-MgGroupTeamOperation](Get-MgGroupTeamOperation.md)
 Get operations from groups
+
+### [Get-MgGroupTeamPhoto](Get-MgGroupTeamPhoto.md)
+Get photo from groups
+
+### [Get-MgGroupTeamPhotoContent](Get-MgGroupTeamPhotoContent.md)
+Get media content for the navigation property photo from groups
 
 ### [Get-MgGroupTeamPrimaryChannel](Get-MgGroupTeamPrimaryChannel.md)
 Get primaryChannel from groups
@@ -157,6 +172,12 @@ Get replies from groups
 
 ### [Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent](Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent.md)
 Get hostedContents from groups
+
+### [Get-MgGroupTeamPrimaryChannelSharedWithTeam](Get-MgGroupTeamPrimaryChannelSharedWithTeam.md)
+Get sharedWithTeams from groups
+
+### [Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMember.md)
+Get allowedMembers from groups
 
 ### [Get-MgGroupTeamPrimaryChannelTab](Get-MgGroupTeamPrimaryChannelTab.md)
 Get tabs from groups
@@ -213,7 +234,7 @@ Get content for the navigation property filesFolder from teams
 Get members from teams
 
 ### [Get-MgTeamChannelMessage](Get-MgTeamChannelMessage.md)
-Get messages from teams
+Invoke function getAllMessages
 
 ### [Get-MgTeamChannelMessageDelta](Get-MgTeamChannelMessageDelta.md)
 Invoke function delta
@@ -230,11 +251,20 @@ Invoke function delta
 ### [Get-MgTeamChannelMessageReplyHostedContent](Get-MgTeamChannelMessageReplyHostedContent.md)
 Get hostedContents from teams
 
+### [Get-MgTeamChannelSharedWithTeam](Get-MgTeamChannelSharedWithTeam.md)
+Get sharedWithTeams from teams
+
+### [Get-MgTeamChannelSharedWithTeamAllowedMember](Get-MgTeamChannelSharedWithTeamAllowedMember.md)
+Get allowedMembers from teams
+
 ### [Get-MgTeamChannelTab](Get-MgTeamChannelTab.md)
 Get tabs from teams
 
 ### [Get-MgTeamChannelTabTeamApp](Get-MgTeamChannelTabTeamApp.md)
 Get teamsApp from teams
+
+### [Get-MgTeamIncomingChannel](Get-MgTeamIncomingChannel.md)
+Get incomingChannels from teams
 
 ### [Get-MgTeamInstalledApp](Get-MgTeamInstalledApp.md)
 Get installedApps from teams
@@ -253,6 +283,12 @@ Invoke function getAllMessages
 
 ### [Get-MgTeamOperation](Get-MgTeamOperation.md)
 Get operations from teams
+
+### [Get-MgTeamPhoto](Get-MgTeamPhoto.md)
+Get photo from teams
+
+### [Get-MgTeamPhotoContent](Get-MgTeamPhotoContent.md)
+Get media content for the navigation property photo from teams
 
 ### [Get-MgTeamPrimaryChannel](Get-MgTeamPrimaryChannel.md)
 Get primaryChannel from teams
@@ -283,6 +319,12 @@ Invoke function delta
 
 ### [Get-MgTeamPrimaryChannelMessageReplyHostedContent](Get-MgTeamPrimaryChannelMessageReplyHostedContent.md)
 Get hostedContents from teams
+
+### [Get-MgTeamPrimaryChannelSharedWithTeam](Get-MgTeamPrimaryChannelSharedWithTeam.md)
+Get sharedWithTeams from teams
+
+### [Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember.md)
+Get allowedMembers from teams
 
 ### [Get-MgTeamPrimaryChannelTab](Get-MgTeamPrimaryChannelTab.md)
 Get tabs from teams
@@ -368,6 +410,9 @@ Get joinedTeams from users
 ### [Get-MgUserTeamwork](Get-MgUserTeamwork.md)
 Get teamwork from users
 
+### [Get-MgUserTeamworkAssociatedTeam](Get-MgUserTeamworkAssociatedTeam.md)
+Get associatedTeams from users
+
 ### [Get-MgUserTeamworkInstalledApp](Get-MgUserTeamworkInstalledApp.md)
 Get installedApps from users
 
@@ -376,6 +421,12 @@ Get chat from users
 
 ### [Invoke-MgArchiveTeam](Invoke-MgArchiveTeam.md)
 Invoke action archive
+
+### [Invoke-MgHaveTeamChannel](Invoke-MgHaveTeamChannel.md)
+Invoke function doesUserHaveAccess
+
+### [Invoke-MgHaveTeamPrimaryChannel](Invoke-MgHaveTeamPrimaryChannel.md)
+Invoke function doesUserHaveAccess
 
 ### [Invoke-MgShareTeamSchedule](Invoke-MgShareTeamSchedule.md)
 Invoke action share
@@ -431,6 +482,9 @@ Create new navigation property to replies for groups
 ### [New-MgGroupTeamChannelMessageReplyHostedContent](New-MgGroupTeamChannelMessageReplyHostedContent.md)
 Create new navigation property to hostedContents for groups
 
+### [New-MgGroupTeamChannelSharedWithTeam](New-MgGroupTeamChannelSharedWithTeam.md)
+Create new navigation property to sharedWithTeams for groups
+
 ### [New-MgGroupTeamChannelTab](New-MgGroupTeamChannelTab.md)
 Create new navigation property to tabs for groups
 
@@ -457,6 +511,9 @@ Create new navigation property to replies for groups
 
 ### [New-MgGroupTeamPrimaryChannelMessageReplyHostedContent](New-MgGroupTeamPrimaryChannelMessageReplyHostedContent.md)
 Create new navigation property to hostedContents for groups
+
+### [New-MgGroupTeamPrimaryChannelSharedWithTeam](New-MgGroupTeamPrimaryChannelSharedWithTeam.md)
+Create new navigation property to sharedWithTeams for groups
 
 ### [New-MgGroupTeamPrimaryChannelTab](New-MgGroupTeamPrimaryChannelTab.md)
 Create new navigation property to tabs for groups
@@ -512,6 +569,9 @@ Create new navigation property to replies for teams
 ### [New-MgTeamChannelMessageReplyHostedContent](New-MgTeamChannelMessageReplyHostedContent.md)
 Create new navigation property to hostedContents for teams
 
+### [New-MgTeamChannelSharedWithTeam](New-MgTeamChannelSharedWithTeam.md)
+Create new navigation property to sharedWithTeams for teams
+
 ### [New-MgTeamChannelTab](New-MgTeamChannelTab.md)
 Create new navigation property to tabs for teams
 
@@ -541,6 +601,9 @@ Create new navigation property to replies for teams
 
 ### [New-MgTeamPrimaryChannelMessageReplyHostedContent](New-MgTeamPrimaryChannelMessageReplyHostedContent.md)
 Create new navigation property to hostedContents for teams
+
+### [New-MgTeamPrimaryChannelSharedWithTeam](New-MgTeamPrimaryChannelSharedWithTeam.md)
+Create new navigation property to sharedWithTeams for teams
 
 ### [New-MgTeamPrimaryChannelTab](New-MgTeamPrimaryChannelTab.md)
 Create new navigation property to tabs for teams
@@ -599,6 +662,9 @@ Create new navigation property to hostedContents for users
 ### [New-MgUserChatTab](New-MgUserChatTab.md)
 Create new navigation property to tabs for users
 
+### [New-MgUserTeamworkAssociatedTeam](New-MgUserTeamworkAssociatedTeam.md)
+Create new navigation property to associatedTeams for users
+
 ### [New-MgUserTeamworkInstalledApp](New-MgUserTeamworkInstalledApp.md)
 Create new navigation property to installedApps for users
 
@@ -647,6 +713,9 @@ Delete navigation property replies for groups
 ### [Remove-MgGroupTeamChannelMessageReplyHostedContent](Remove-MgGroupTeamChannelMessageReplyHostedContent.md)
 Delete navigation property hostedContents for groups
 
+### [Remove-MgGroupTeamChannelSharedWithTeam](Remove-MgGroupTeamChannelSharedWithTeam.md)
+Delete navigation property sharedWithTeams for groups
+
 ### [Remove-MgGroupTeamChannelTab](Remove-MgGroupTeamChannelTab.md)
 Delete navigation property tabs for groups
 
@@ -658,6 +727,9 @@ Delete navigation property members for groups
 
 ### [Remove-MgGroupTeamOperation](Remove-MgGroupTeamOperation.md)
 Delete navigation property operations for groups
+
+### [Remove-MgGroupTeamPhoto](Remove-MgGroupTeamPhoto.md)
+Delete navigation property photo for groups
 
 ### [Remove-MgGroupTeamPrimaryChannel](Remove-MgGroupTeamPrimaryChannel.md)
 Delete navigation property primaryChannel for groups
@@ -676,6 +748,9 @@ Delete navigation property replies for groups
 
 ### [Remove-MgGroupTeamPrimaryChannelMessageReplyHostedContent](Remove-MgGroupTeamPrimaryChannelMessageReplyHostedContent.md)
 Delete navigation property hostedContents for groups
+
+### [Remove-MgGroupTeamPrimaryChannelSharedWithTeam](Remove-MgGroupTeamPrimaryChannelSharedWithTeam.md)
+Delete navigation property sharedWithTeams for groups
 
 ### [Remove-MgGroupTeamPrimaryChannelTab](Remove-MgGroupTeamPrimaryChannelTab.md)
 Delete navigation property tabs for groups
@@ -725,6 +800,9 @@ Delete navigation property members for teams
 ### [Remove-MgTeamChannelMessageReplyHostedContent](Remove-MgTeamChannelMessageReplyHostedContent.md)
 Delete navigation property hostedContents for teams
 
+### [Remove-MgTeamChannelSharedWithTeam](Remove-MgTeamChannelSharedWithTeam.md)
+Delete navigation property sharedWithTeams for teams
+
 ### [Remove-MgTeamChannelTab](Remove-MgTeamChannelTab.md)
 Delete navigation property tabs for teams
 
@@ -737,6 +815,9 @@ Delete navigation property members for teams
 ### [Remove-MgTeamOperation](Remove-MgTeamOperation.md)
 Delete navigation property operations for teams
 
+### [Remove-MgTeamPhoto](Remove-MgTeamPhoto.md)
+Delete navigation property photo for teams
+
 ### [Remove-MgTeamPrimaryChannel](Remove-MgTeamPrimaryChannel.md)
 Delete navigation property primaryChannel for teams
 
@@ -748,6 +829,9 @@ Delete navigation property members for teams
 
 ### [Remove-MgTeamPrimaryChannelMessageReplyHostedContent](Remove-MgTeamPrimaryChannelMessageReplyHostedContent.md)
 Delete navigation property hostedContents for teams
+
+### [Remove-MgTeamPrimaryChannelSharedWithTeam](Remove-MgTeamPrimaryChannelSharedWithTeam.md)
+Delete navigation property sharedWithTeams for teams
 
 ### [Remove-MgTeamPrimaryChannelTab](Remove-MgTeamPrimaryChannelTab.md)
 Delete navigation property tabs for teams
@@ -812,6 +896,9 @@ Delete navigation property tabs for users
 ### [Remove-MgUserTeamwork](Remove-MgUserTeamwork.md)
 Delete navigation property teamwork for users
 
+### [Remove-MgUserTeamworkAssociatedTeam](Remove-MgUserTeamworkAssociatedTeam.md)
+Delete navigation property associatedTeams for users
+
 ### [Remove-MgUserTeamworkInstalledApp](Remove-MgUserTeamworkInstalledApp.md)
 Delete navigation property installedApps for users
 
@@ -824,11 +911,17 @@ Invoke action sendActivityNotification
 ### [Set-MgGroupTeamChannelFileFolderContent](Set-MgGroupTeamChannelFileFolderContent.md)
 Update content for the navigation property filesFolder in groups
 
+### [Set-MgGroupTeamPhotoContent](Set-MgGroupTeamPhotoContent.md)
+Update media content for the navigation property photo in groups
+
 ### [Set-MgGroupTeamPrimaryChannelFileFolderContent](Set-MgGroupTeamPrimaryChannelFileFolderContent.md)
 Update content for the navigation property filesFolder in groups
 
 ### [Set-MgTeamChannelFileFolderContent](Set-MgTeamChannelFileFolderContent.md)
 Update content for the navigation property filesFolder in teams
+
+### [Set-MgTeamPhotoContent](Set-MgTeamPhotoContent.md)
+Update media content for the navigation property photo in teams
 
 ### [Set-MgTeamPrimaryChannelFileFolderContent](Set-MgTeamPrimaryChannelFileFolderContent.md)
 Update content for the navigation property filesFolder in teams
@@ -884,6 +977,9 @@ Update the navigation property replies in groups
 ### [Update-MgGroupTeamChannelMessageReplyHostedContent](Update-MgGroupTeamChannelMessageReplyHostedContent.md)
 Update the navigation property hostedContents in groups
 
+### [Update-MgGroupTeamChannelSharedWithTeam](Update-MgGroupTeamChannelSharedWithTeam.md)
+Update the navigation property sharedWithTeams in groups
+
 ### [Update-MgGroupTeamChannelTab](Update-MgGroupTeamChannelTab.md)
 Update the navigation property tabs in groups
 
@@ -892,6 +988,9 @@ Update the navigation property members in groups
 
 ### [Update-MgGroupTeamOperation](Update-MgGroupTeamOperation.md)
 Update the navigation property operations in groups
+
+### [Update-MgGroupTeamPhoto](Update-MgGroupTeamPhoto.md)
+Update the navigation property photo in groups
 
 ### [Update-MgGroupTeamPrimaryChannel](Update-MgGroupTeamPrimaryChannel.md)
 Update the navigation property primaryChannel in groups
@@ -910,6 +1009,9 @@ Update the navigation property replies in groups
 
 ### [Update-MgGroupTeamPrimaryChannelMessageReplyHostedContent](Update-MgGroupTeamPrimaryChannelMessageReplyHostedContent.md)
 Update the navigation property hostedContents in groups
+
+### [Update-MgGroupTeamPrimaryChannelSharedWithTeam](Update-MgGroupTeamPrimaryChannelSharedWithTeam.md)
+Update the navigation property sharedWithTeams in groups
 
 ### [Update-MgGroupTeamPrimaryChannelTab](Update-MgGroupTeamPrimaryChannelTab.md)
 Update the navigation property tabs in groups
@@ -962,6 +1064,9 @@ Update the navigation property replies in teams
 ### [Update-MgTeamChannelMessageReplyHostedContent](Update-MgTeamChannelMessageReplyHostedContent.md)
 Update the navigation property hostedContents in teams
 
+### [Update-MgTeamChannelSharedWithTeam](Update-MgTeamChannelSharedWithTeam.md)
+Update the navigation property sharedWithTeams in teams
+
 ### [Update-MgTeamChannelTab](Update-MgTeamChannelTab.md)
 Update the navigation property tabs in teams
 
@@ -973,6 +1078,9 @@ Update the navigation property members in teams
 
 ### [Update-MgTeamOperation](Update-MgTeamOperation.md)
 Update the navigation property operations in teams
+
+### [Update-MgTeamPhoto](Update-MgTeamPhoto.md)
+Update the navigation property photo in teams
 
 ### [Update-MgTeamPrimaryChannel](Update-MgTeamPrimaryChannel.md)
 Update the navigation property primaryChannel in teams
@@ -988,6 +1096,9 @@ Update the navigation property replies in teams
 
 ### [Update-MgTeamPrimaryChannelMessageReplyHostedContent](Update-MgTeamPrimaryChannelMessageReplyHostedContent.md)
 Update the navigation property hostedContents in teams
+
+### [Update-MgTeamPrimaryChannelSharedWithTeam](Update-MgTeamPrimaryChannelSharedWithTeam.md)
+Update the navigation property sharedWithTeams in teams
 
 ### [Update-MgTeamPrimaryChannelTab](Update-MgTeamPrimaryChannelTab.md)
 Update the navigation property tabs in teams
@@ -1051,4 +1162,7 @@ Update the navigation property tabs in users
 
 ### [Update-MgUserTeamwork](Update-MgUserTeamwork.md)
 Update the navigation property teamwork in users
+
+### [Update-MgUserTeamworkAssociatedTeam](Update-MgUserTeamworkAssociatedTeam.md)
+Update the navigation property associatedTeams in users
 

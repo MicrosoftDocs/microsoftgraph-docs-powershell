@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Bookings
 Module Guid: a8bc8dc1-78ad-4dbd-a8a3-21e8809c0697
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings
@@ -28,6 +28,9 @@ Get customQuestions from solutions
 
 ### [Get-MgBookingBusinessService](Get-MgBookingBusinessService.md)
 Get services from solutions
+
+### [Get-MgBookingBusinessStaffAvailability](Get-MgBookingBusinessStaffAvailability.md)
+Invoke action getStaffAvailability
 
 ### [Get-MgBookingBusinessStaffMember](Get-MgBookingBusinessStaffMember.md)
 Get staffMembers from solutions

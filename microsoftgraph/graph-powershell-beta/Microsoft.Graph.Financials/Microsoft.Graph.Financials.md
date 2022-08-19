@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Financials
 Module Guid: 7f9377ef-5143-4f79-a893-0e014640be2f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials
@@ -431,6 +431,9 @@ Get taxAreas from financials
 ### [Get-MgFinancialCompanyTaxGroup](Get-MgFinancialCompanyTaxGroup.md)
 Get taxGroups from financials
 
+### [Get-MgFinancialCompanyUnitOfMeasure](Get-MgFinancialCompanyUnitOfMeasure.md)
+Get unitsOfMeasure from financials
+
 ### [Get-MgFinancialCompanyVendor](Get-MgFinancialCompanyVendor.md)
 Get vendors from financials
 
@@ -619,6 +622,9 @@ Create new navigation property to taxAreas for financials
 
 ### [New-MgFinancialCompanyTaxGroup](New-MgFinancialCompanyTaxGroup.md)
 Create new navigation property to taxGroups for financials
+
+### [New-MgFinancialCompanyUnitOfMeasure](New-MgFinancialCompanyUnitOfMeasure.md)
+Create new navigation property to unitsOfMeasure for financials
 
 ### [New-MgFinancialCompanyVendor](New-MgFinancialCompanyVendor.md)
 Create new navigation property to vendors for financials
@@ -901,6 +907,9 @@ Delete navigation property taxAreas for financials
 
 ### [Remove-MgFinancialCompanyTaxGroup](Remove-MgFinancialCompanyTaxGroup.md)
 Delete navigation property taxGroups for financials
+
+### [Remove-MgFinancialCompanyUnitOfMeasure](Remove-MgFinancialCompanyUnitOfMeasure.md)
+Delete navigation property unitsOfMeasure for financials
 
 ### [Remove-MgFinancialCompanyVendor](Remove-MgFinancialCompanyVendor.md)
 Delete navigation property vendors for financials
@@ -1330,6 +1339,9 @@ Update the navigation property taxAreas in financials
 
 ### [Update-MgFinancialCompanyTaxGroup](Update-MgFinancialCompanyTaxGroup.md)
 Update the navigation property taxGroups in financials
+
+### [Update-MgFinancialCompanyUnitOfMeasure](Update-MgFinancialCompanyUnitOfMeasure.md)
+Update the navigation property unitsOfMeasure in financials
 
 ### [Update-MgFinancialCompanyVendor](Update-MgFinancialCompanyVendor.md)
 Update the navigation property vendors in financials

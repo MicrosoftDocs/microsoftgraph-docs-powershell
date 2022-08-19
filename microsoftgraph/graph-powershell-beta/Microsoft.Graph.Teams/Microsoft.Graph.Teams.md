@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Teams
 Module Guid: 70816f2b-e7a1-4c6f-a0c2-96b3dd9f572b
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
@@ -529,6 +529,9 @@ Get health from teamwork
 
 ### [Get-MgTeamworkDeviceOperation](Get-MgTeamworkDeviceOperation.md)
 Get operations from teamwork
+
+### [Get-MgTeamworkTeamAppSetting](Get-MgTeamworkTeamAppSetting.md)
+Get teamsAppSettings from teamwork
 
 ### [Get-MgTeamworkWorkforceIntegration](Get-MgTeamworkWorkforceIntegration.md)
 Get workforceIntegrations from teamwork
@@ -1268,6 +1271,9 @@ Delete navigation property health for teamwork
 ### [Remove-MgTeamworkDeviceOperation](Remove-MgTeamworkDeviceOperation.md)
 Delete navigation property operations for teamwork
 
+### [Remove-MgTeamworkTeamAppSetting](Remove-MgTeamworkTeamAppSetting.md)
+Delete navigation property teamsAppSettings for teamwork
+
 ### [Remove-MgTeamworkWorkforceIntegration](Remove-MgTeamworkWorkforceIntegration.md)
 Delete navigation property workforceIntegrations for teamwork
 
@@ -1696,6 +1702,9 @@ Update the navigation property operations in teamwork
 
 ### [Update-MgTeamworkDeviceSoftware](Update-MgTeamworkDeviceSoftware.md)
 Invoke action updateSoftware
+
+### [Update-MgTeamworkTeamAppSetting](Update-MgTeamworkTeamAppSetting.md)
+Update the navigation property teamsAppSettings in teamwork
 
 ### [Update-MgTeamworkWorkforceIntegration](Update-MgTeamworkWorkforceIntegration.md)
 Update the navigation property workforceIntegrations in teamwork

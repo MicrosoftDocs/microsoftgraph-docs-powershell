@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 Module Guid: b913deb3-95ba-4431-9581-8fad02aafc7c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences
@@ -12,42 +12,29 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.CrossDeviceExperiences Cmdlets
 ### [Get-MgUserActivity](Get-MgUserActivity.md)
-The user's activities across devices.
-Read-only.
-Nullable.
+Get activities from users
 
 ### [Get-MgUserActivityHistoryItem](Get-MgUserActivityHistoryItem.md)
-Optional.
-NavigationProperty/Containment; navigation property to the activity's historyItems.
+Get historyItems from users
 
 ### [Get-MgUserActivityHistoryItemActivity](Get-MgUserActivityHistoryItemActivity.md)
-Optional.
-NavigationProperty/Containment; navigation property to the associated activity.
+Get activity from users
 
 ### [New-MgUserActivity](New-MgUserActivity.md)
-The user's activities across devices.
-Read-only.
-Nullable.
+Create new navigation property to activities for users
 
 ### [New-MgUserActivityHistoryItem](New-MgUserActivityHistoryItem.md)
-Optional.
-NavigationProperty/Containment; navigation property to the activity's historyItems.
+Create new navigation property to historyItems for users
 
 ### [Remove-MgUserActivity](Remove-MgUserActivity.md)
-The user's activities across devices.
-Read-only.
-Nullable.
+Delete navigation property activities for users
 
 ### [Remove-MgUserActivityHistoryItem](Remove-MgUserActivityHistoryItem.md)
-Optional.
-NavigationProperty/Containment; navigation property to the activity's historyItems.
+Delete navigation property historyItems for users
 
 ### [Update-MgUserActivity](Update-MgUserActivity.md)
-The user's activities across devices.
-Read-only.
-Nullable.
+Update the navigation property activities in users
 
 ### [Update-MgUserActivityHistoryItem](Update-MgUserActivityHistoryItem.md)
-Optional.
-NavigationProperty/Containment; navigation property to the activity's historyItems.
+Update the navigation property historyItems in users
 

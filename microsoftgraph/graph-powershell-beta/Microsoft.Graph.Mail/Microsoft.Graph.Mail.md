@@ -27,6 +27,39 @@ Nullable.
 ### [Get-MgUserMailFolderChildFolder](Get-MgUserMailFolderChildFolder.md)
 The collection of child folders in the mailFolder.
 
+### [Get-MgUserMailFolderChildFolderMessage](Get-MgUserMailFolderChildFolderMessage.md)
+Get messages from users
+
+### [Get-MgUserMailFolderChildFolderMessageAttachment](Get-MgUserMailFolderChildFolderMessageAttachment.md)
+Get attachments from users
+
+### [Get-MgUserMailFolderChildFolderMessageContent](Get-MgUserMailFolderChildFolderMessageContent.md)
+Get media content for the navigation property messages from users
+
+### [Get-MgUserMailFolderChildFolderMessageExtension](Get-MgUserMailFolderChildFolderMessageExtension.md)
+Get extensions from users
+
+### [Get-MgUserMailFolderChildFolderMessageMention](Get-MgUserMailFolderChildFolderMessageMention.md)
+Get mentions from users
+
+### [Get-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty](Get-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty.md)
+Get multiValueExtendedProperties from users
+
+### [Get-MgUserMailFolderChildFolderMessageRule](Get-MgUserMailFolderChildFolderMessageRule.md)
+Get messageRules from users
+
+### [Get-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty](Get-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from users
+
+### [Get-MgUserMailFolderChildFolderMultiValueExtendedProperty](Get-MgUserMailFolderChildFolderMultiValueExtendedProperty.md)
+Get multiValueExtendedProperties from users
+
+### [Get-MgUserMailFolderChildFolderSingleValueExtendedProperty](Get-MgUserMailFolderChildFolderSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from users
+
+### [Get-MgUserMailFolderChildFolderUserConfiguration](Get-MgUserMailFolderChildFolderUserConfiguration.md)
+Get userConfigurations from users
+
 ### [Get-MgUserMailFolderMessage](Get-MgUserMailFolderMessage.md)
 The collection of messages in the mailFolder.
 
@@ -108,6 +141,36 @@ Nullable.
 ### [New-MgUserMailFolderChildFolder](New-MgUserMailFolderChildFolder.md)
 The collection of child folders in the mailFolder.
 
+### [New-MgUserMailFolderChildFolderMessage](New-MgUserMailFolderChildFolderMessage.md)
+Create new navigation property to messages for users
+
+### [New-MgUserMailFolderChildFolderMessageAttachment](New-MgUserMailFolderChildFolderMessageAttachment.md)
+Create new navigation property to attachments for users
+
+### [New-MgUserMailFolderChildFolderMessageExtension](New-MgUserMailFolderChildFolderMessageExtension.md)
+Create new navigation property to extensions for users
+
+### [New-MgUserMailFolderChildFolderMessageMention](New-MgUserMailFolderChildFolderMessageMention.md)
+Create new navigation property to mentions for users
+
+### [New-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty](New-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for users
+
+### [New-MgUserMailFolderChildFolderMessageRule](New-MgUserMailFolderChildFolderMessageRule.md)
+Create new navigation property to messageRules for users
+
+### [New-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty](New-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for users
+
+### [New-MgUserMailFolderChildFolderMultiValueExtendedProperty](New-MgUserMailFolderChildFolderMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for users
+
+### [New-MgUserMailFolderChildFolderSingleValueExtendedProperty](New-MgUserMailFolderChildFolderSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for users
+
+### [New-MgUserMailFolderChildFolderUserConfiguration](New-MgUserMailFolderChildFolderUserConfiguration.md)
+Create new navigation property to userConfigurations for users
+
 ### [New-MgUserMailFolderMessage](New-MgUserMailFolderMessage.md)
 The collection of messages in the mailFolder.
 
@@ -186,6 +249,36 @@ Nullable.
 ### [Remove-MgUserMailFolderChildFolder](Remove-MgUserMailFolderChildFolder.md)
 The collection of child folders in the mailFolder.
 
+### [Remove-MgUserMailFolderChildFolderMessage](Remove-MgUserMailFolderChildFolderMessage.md)
+Delete navigation property messages for users
+
+### [Remove-MgUserMailFolderChildFolderMessageAttachment](Remove-MgUserMailFolderChildFolderMessageAttachment.md)
+Delete navigation property attachments for users
+
+### [Remove-MgUserMailFolderChildFolderMessageExtension](Remove-MgUserMailFolderChildFolderMessageExtension.md)
+Delete navigation property extensions for users
+
+### [Remove-MgUserMailFolderChildFolderMessageMention](Remove-MgUserMailFolderChildFolderMessageMention.md)
+Delete navigation property mentions for users
+
+### [Remove-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty](Remove-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for users
+
+### [Remove-MgUserMailFolderChildFolderMessageRule](Remove-MgUserMailFolderChildFolderMessageRule.md)
+Delete navigation property messageRules for users
+
+### [Remove-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty](Remove-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for users
+
+### [Remove-MgUserMailFolderChildFolderMultiValueExtendedProperty](Remove-MgUserMailFolderChildFolderMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for users
+
+### [Remove-MgUserMailFolderChildFolderSingleValueExtendedProperty](Remove-MgUserMailFolderChildFolderSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for users
+
+### [Remove-MgUserMailFolderChildFolderUserConfiguration](Remove-MgUserMailFolderChildFolderUserConfiguration.md)
+Delete navigation property userConfigurations for users
+
 ### [Remove-MgUserMailFolderMessage](Remove-MgUserMailFolderMessage.md)
 The collection of messages in the mailFolder.
 
@@ -248,6 +341,9 @@ Nullable.
 The collection of single-value extended properties defined for the message.
 Nullable.
 
+### [Set-MgUserMailFolderChildFolderMessageContent](Set-MgUserMailFolderChildFolderMessageContent.md)
+Update media content for the navigation property messages in users
+
 ### [Set-MgUserMailFolderMessageContent](Set-MgUserMailFolderMessageContent.md)
 Update media content for the navigation property messages in users
 
@@ -269,6 +365,36 @@ Nullable.
 
 ### [Update-MgUserMailFolderChildFolder](Update-MgUserMailFolderChildFolder.md)
 The collection of child folders in the mailFolder.
+
+### [Update-MgUserMailFolderChildFolderMessage](Update-MgUserMailFolderChildFolderMessage.md)
+Update the navigation property messages in users
+
+### [Update-MgUserMailFolderChildFolderMessageAttachment](Update-MgUserMailFolderChildFolderMessageAttachment.md)
+Update the navigation property attachments in users
+
+### [Update-MgUserMailFolderChildFolderMessageExtension](Update-MgUserMailFolderChildFolderMessageExtension.md)
+Update the navigation property extensions in users
+
+### [Update-MgUserMailFolderChildFolderMessageMention](Update-MgUserMailFolderChildFolderMessageMention.md)
+Update the navigation property mentions in users
+
+### [Update-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty](Update-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in users
+
+### [Update-MgUserMailFolderChildFolderMessageRule](Update-MgUserMailFolderChildFolderMessageRule.md)
+Update the navigation property messageRules in users
+
+### [Update-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty](Update-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in users
+
+### [Update-MgUserMailFolderChildFolderMultiValueExtendedProperty](Update-MgUserMailFolderChildFolderMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in users
+
+### [Update-MgUserMailFolderChildFolderSingleValueExtendedProperty](Update-MgUserMailFolderChildFolderSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in users
+
+### [Update-MgUserMailFolderChildFolderUserConfiguration](Update-MgUserMailFolderChildFolderUserConfiguration.md)
+Update the navigation property userConfigurations in users
 
 ### [Update-MgUserMailFolderMessage](Update-MgUserMailFolderMessage.md)
 The collection of messages in the mailFolder.

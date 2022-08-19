@@ -23,7 +23,7 @@ Update-MgExternalConnectionItem -ExternalConnectionId <String> -ExternalItemId <
 ### Update1
 ```
 Update-MgExternalConnectionItem -ExternalConnectionId <String> -ExternalItemId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Update-MgExternalConnectionItem -InputObject <ISearchIdentity> [-Acl <IMicrosoft
 ### UpdateViaIdentity1
 ```
 Update-MgExternalConnectionItem -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -45,13 +45,6 @@ Update-MgExternalConnectionItem -InputObject <ISearchIdentity>
 Update the navigation property items in external
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -93,7 +86,7 @@ externalItem
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalItem1
+Type: IMicrosoftGraphExternalConnectorsExternalItem
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -191,7 +184,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -247,15 +240,52 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+ACL <IMicrosoftGraphExternalConnectorsAcl1\[]>: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
+  - `[AccessType <String>]`: accessType
+  - `[Type <String>]`: aclType
+  - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup.
+
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalItem1>`: externalItem
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: 
+  - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
+    - `[AccessType <String>]`: accessType
+    - `[Type <String>]`: aclType
+    - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup.
+  - `[Content <IMicrosoftGraphExternalConnectorsExternalItemContent>]`: externalItemContent
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Type <String>]`: externalItemContentType
+    - `[Value <String>]`: The content for the externalItem. Required.
+  - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+
+CONTENT `<IMicrosoftGraphExternalConnectorsExternalItemContent>`: externalItemContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Type <String>]`: externalItemContentType
+  - `[Value <String>]`: The content for the externalItem. Required.
+
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+  - `[AcronymId <String>]`: key: id of acronym
+  - `[BookmarkId <String>]`: key: id of bookmark
+  - `[ConnectionOperationId <String>]`: key: id of connectionOperation
+  - `[ExternalConnectionId <String>]`: key: id of externalConnection
+  - `[ExternalGroupId <String>]`: key: id of externalGroup
+  - `[ExternalItemId <String>]`: key: id of externalItem
+  - `[IdentityId <String>]`: key: id of identity
+  - `[QnaId <String>]`: key: id of qna
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnectionitem](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnectionitem)
-

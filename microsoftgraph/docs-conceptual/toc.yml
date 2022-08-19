@@ -1,3 +1,5 @@
+- name: Microsoft Graph PowerShell documentation
+  href: index.yml
 - name: Overview of Microsoft Graph PowerShell
   href: overview.md
 - name: Getting started
@@ -8,13 +10,15 @@
       href: get-started.md 
     - name: Navigating the SDK
       href: navigating.md
+    - name: Using authentication cmdlets
+      href: authentication-commands.md  
     - name: Using Find-MgGraphCommand
       href: find-mg-graph-command.md
     - name: Using Find-MgGraphPermission
       href: find-mg-graph-permission.md   
 - name: Learn
   items:
-    - name: App-only authentication
+    - name: Enable app-only authentication
       href: app-only.md
     - name: Manage access to resources
       href: tutorial-entitlement-management.md

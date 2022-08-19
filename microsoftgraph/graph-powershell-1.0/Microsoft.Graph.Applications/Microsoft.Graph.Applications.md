@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Applications
 Module Guid: c6061b4e-c0fa-4102-a8ed-7d15bcdcf776
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
@@ -58,6 +58,9 @@ Invoke function delta
 
 ### [Get-MgApplicationExtensionProperty](Get-MgApplicationExtensionProperty.md)
 Get extensionProperties from applications
+
+### [Get-MgApplicationFederatedIdentityCredential](Get-MgApplicationFederatedIdentityCredential.md)
+Get federatedIdentityCredentials from applications
 
 ### [Get-MgApplicationHomeRealmDiscoveryPolicy](Get-MgApplicationHomeRealmDiscoveryPolicy.md)
 Get homeRealmDiscoveryPolicies from applications
@@ -178,6 +181,9 @@ Create application
 ### [New-MgApplicationExtensionProperty](New-MgApplicationExtensionProperty.md)
 Create new navigation property to extensionProperties for applications
 
+### [New-MgApplicationFederatedIdentityCredential](New-MgApplicationFederatedIdentityCredential.md)
+Create new navigation property to federatedIdentityCredentials for applications
+
 ### [New-MgApplicationOwnerByRef](New-MgApplicationOwnerByRef.md)
 Create new navigation property ref to owners for applications
 
@@ -232,6 +238,9 @@ Delete entity from applications
 
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Delete navigation property extensionProperties for applications
+
+### [Remove-MgApplicationFederatedIdentityCredential](Remove-MgApplicationFederatedIdentityCredential.md)
+Delete navigation property federatedIdentityCredentials for applications
 
 ### [Remove-MgApplicationKey](Remove-MgApplicationKey.md)
 Invoke action removeKey
@@ -304,6 +313,9 @@ Update application
 
 ### [Update-MgApplicationExtensionProperty](Update-MgApplicationExtensionProperty.md)
 Update the navigation property extensionProperties in applications
+
+### [Update-MgApplicationFederatedIdentityCredential](Update-MgApplicationFederatedIdentityCredential.md)
+Update the navigation property federatedIdentityCredentials in applications
 
 ### [Update-MgApplicationTemplate](Update-MgApplicationTemplate.md)
 Update entity in applicationTemplates
