@@ -34,5 +34,7 @@
     href: migration-steps.md
   - name: Cmdlet map
     href: azuread-msoline-cmdlet-map.md
+- name: Troubleshoot common errors
+  href: troubleshooting.md    
 
   
