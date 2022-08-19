@@ -83,7 +83,9 @@ function Update-GraphModuleHelp {
     Import-Module $moduleImportName -Force -Global
     Select-MgProfile $GraphProfile
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
-
+    #Set-Location microsoftgraph-docs-powershell
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
     git add $moduleDocsPath
     git commit -m "Docs Generation for $ModuleName-$GraphVersion"
 }
@@ -99,7 +101,20 @@ $LASTEXITCODE = $null
 if ($PSEdition -ne 'Core') {
     Write-Error 'This script requires PowerShell Core to execute. [Note] Generated cmdlets will work in both PowerShell Core or Windows PowerShell.'
 }
-
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_update_help_files_"+$date
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+    $currentBranch = git rev-parse --abbrev-ref HEAD
+     if($currentBranch -ne $proposedBranch){
+        git checkout $proposedBranch
+     }
+     
+}
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -107,7 +122,6 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-
 Update-GraphHelp -ModulesToGenerate $ModulesToGenerate
 
 Write-Host -ForegroundColor Green "-------------Done-------------"

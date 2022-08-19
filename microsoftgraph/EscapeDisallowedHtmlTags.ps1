@@ -209,11 +209,12 @@ function Special-Escape{
 	   }
 	 }
 	#$location = Get-Location
-	#cd microsoftgraph-docs-powershell
+	#Set-Location microsoftgraph-docs-powershell
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
 	$location = Get-Location
     git add $FilePath
-    git commit -m "Docs cleanup for $ModuleName-$GraphProfile" 
-	#cd ..	
+    git commit -m "Docs cleanup for $ModuleName-$GraphProfile" 	
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
@@ -246,7 +247,20 @@ try{
 }	
 return "NA"	
 }
-
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_update_help_files_"+$date
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+    $currentBranch = git rev-parse --abbrev-ref HEAD
+    if($currentBranch -ne $proposedBranch){
+        git checkout $proposedBranch
+     }
+     git checkout $proposedBranch
+}
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
 #cd microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------Done-------------"
