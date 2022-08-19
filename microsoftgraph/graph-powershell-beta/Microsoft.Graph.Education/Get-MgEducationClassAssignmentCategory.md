@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategory
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentCategory
 
 ## SYNOPSIS
-When set, enables users to easily find assignments of a given type.
-Read-only.
-Nullable.
+Get assignmentCategories from education
 
 ## SYNTAX
 
@@ -21,41 +19,27 @@ Get-MgEducationClassAssignmentCategory -EducationClassId <String> [-ExpandProper
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### List
-```
-Get-MgEducationClassAssignmentCategory -EducationAssignmentId <String> -EducationClassId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgEducationClassAssignmentCategory -EducationAssignmentId <String> -EducationCategoryId <String>
- -EducationClassId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### Get3
+### Get1
 ```
 Get-MgEducationClassAssignmentCategory -EducationCategoryId <String> -EducationClassId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### List
 ```
-Get-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgEducationClassAssignmentCategory -EducationClassId <String> -EducationAssignmentId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-When set, enables users to easily find assignments of a given type.
-Read-only.
-Nullable.
+Get assignmentCategories from education
 
 ## EXAMPLES
 
@@ -97,7 +81,7 @@ key: id of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List
 Aliases:
 
 Required: True
@@ -112,7 +96,7 @@ key: id of educationCategory
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get3
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -127,7 +111,7 @@ key: id of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: List3, List, Get, Get3
+Parameter Sets: List3, Get1, List
 Aliases:
 
 Required: True
@@ -173,7 +157,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -291,7 +275,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

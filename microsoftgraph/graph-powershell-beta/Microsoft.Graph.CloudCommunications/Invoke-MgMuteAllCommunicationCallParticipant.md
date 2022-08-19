@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmuteallcommunicationcallparticipant
@@ -8,38 +8,39 @@ schema: 2.0.0
 # Invoke-MgMuteAllCommunicationCallParticipant
 
 ## SYNOPSIS
-Invoke action mute
+Invoke action muteAll
 
 ## SYNTAX
 
-### MuteExpanded1 (Default)
+### MuteExpanded2 (Default)
 ```
-Invoke-MgMuteAllCommunicationCallParticipant -CallId <String> -ParticipantId <String>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgMuteAllCommunicationCallParticipant -CallId <String> [-AdditionalProperties <Hashtable>]
+ [-ClientContext <String>] [-Participants <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Mute1
+### Mute2
 ```
-Invoke-MgMuteAllCommunicationCallParticipant -CallId <String> -ParticipantId <String>
- -BodyParameter <IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>
+Invoke-MgMuteAllCommunicationCallParticipant -CallId <String>
+ -BodyParameter <IPathsKpvac3CommunicationsCallsCallIdParticipantsMicrosoftGraphMuteallPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MuteViaIdentityExpanded1
+### MuteViaIdentityExpanded2
 ```
 Invoke-MgMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Participants <String[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### MuteViaIdentity1
+### MuteViaIdentity2
 ```
 Invoke-MgMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPathsKpvac3CommunicationsCallsCallIdParticipantsMicrosoftGraphMuteallPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action mute
+Invoke action muteAll
 
 ## EXAMPLES
 
@@ -50,7 +51,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MuteExpanded1, MuteViaIdentityExpanded1
+Parameter Sets: MuteExpanded2, MuteViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -65,8 +66,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Mute1, MuteViaIdentity1
+Type: IPathsKpvac3CommunicationsCallsCallIdParticipantsMicrosoftGraphMuteallPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Mute2, MuteViaIdentity2
 Aliases:
 
 Required: True
@@ -81,7 +82,7 @@ key: id of call
 
 ```yaml
 Type: String
-Parameter Sets: MuteExpanded1, Mute1
+Parameter Sets: MuteExpanded2, Mute2
 Aliases:
 
 Required: True
@@ -96,7 +97,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: MuteExpanded1, MuteViaIdentityExpanded1
+Parameter Sets: MuteExpanded2, MuteViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -112,7 +113,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: MuteViaIdentityExpanded1, MuteViaIdentity1
+Parameter Sets: MuteViaIdentityExpanded2, MuteViaIdentity2
 Aliases:
 
 Required: True
@@ -122,15 +123,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ParticipantId
-key: id of participant
+### -Participants
+.
 
 ```yaml
-Type: String
-Parameter Sets: MuteExpanded1, Mute1
+Type: String[]
+Parameter Sets: MuteExpanded2, MuteViaIdentityExpanded2
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -174,10 +175,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsKpvac3CommunicationsCallsCallIdParticipantsMicrosoftGraphMuteallPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMuteParticipantOperation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMuteParticipantsOperation
 ## NOTES
 
 ALIASES
@@ -187,15 +188,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsKpvac3CommunicationsCallsCallIdParticipantsMicrosoftGraphMuteallPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
+  - `[Participants <String[]>]`: 
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport

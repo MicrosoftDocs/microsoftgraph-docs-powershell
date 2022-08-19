@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdevicecompliancepolicyscheduledretirestate
@@ -15,7 +15,8 @@ Invoke action setScheduledRetireState
 ### SetExpanded (Default)
 ```
 Set-MgDeviceManagementDeviceCompliancePolicyScheduledRetireState [-AdditionalProperties <Hashtable>]
- [-ManagedDeviceIds <String[]>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ManagedDeviceIds <String[]>] [-State <ScheduledRetireState>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Set
@@ -97,7 +98,7 @@ Accept wildcard characters: False
 Cancel or confirm scheduled retire
 
 ```yaml
-Type: String
+Type: ScheduledRetireState
 Parameter Sets: SetExpanded
 Aliases:
 
@@ -157,7 +158,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsZtf0R2DevicemanagementDevicecompliancepoliciesMicrosoftGraphSetscheduledretirestatePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsZtf0R2DevicemanagementDevicecompliancepoliciesMicrosoftGraphSetscheduledretirestatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ManagedDeviceIds <String[]>]`: 
   - `[State <String>]`: Cancel or confirm scheduled retire 

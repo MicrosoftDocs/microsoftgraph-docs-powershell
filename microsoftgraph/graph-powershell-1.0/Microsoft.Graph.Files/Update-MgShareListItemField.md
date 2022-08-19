@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mgsharelistitemfield
@@ -8,60 +8,60 @@ schema: 2.0.0
 # Update-MgShareListItemField
 
 ## SYNOPSIS
-The values of the columns set on this list item.
+Update the navigation property fields in shares
 
 ## SYNTAX
 
-### UpdateExpanded3 (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgShareListItemField -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateExpanded2
+### UpdateExpanded
 ```
 Update-MgShareListItemField -ListItemId <String> -SharedDriveItemId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update2
+### Update
 ```
 Update-MgShareListItemField -ListItemId <String> -SharedDriveItemId <String> -BodyParameter <Hashtable>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update3
+### Update1
 ```
 Update-MgShareListItemField -SharedDriveItemId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded3
+### UpdateViaIdentityExpanded1
 ```
 Update-MgShareListItemField -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded2
+### UpdateViaIdentityExpanded
 ```
 Update-MgShareListItemField -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity3
+### UpdateViaIdentity1
 ```
 Update-MgShareListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity2
+### UpdateViaIdentity
 ```
 Update-MgShareListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The values of the columns set on this list item.
+Update the navigation property fields in shares
 
 ## EXAMPLES
 
@@ -72,7 +72,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -87,7 +87,7 @@ fieldValueSet
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Update2, Update3, UpdateViaIdentity3, UpdateViaIdentity2
+Parameter Sets: Update, Update1, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -98,11 +98,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -118,7 +118,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentity3, UpdateViaIdentity2
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -133,7 +133,7 @@ key: id of listItem
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, Update2
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -163,7 +163,7 @@ key: id of sharedDriveItem
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, Update2, Update3
+Parameter Sets: UpdateExpanded1, UpdateExpanded, Update, Update1
 Aliases:
 
 Required: True
@@ -223,23 +223,29 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
+  - `[ContentTypeId1 <String>]`: key: id of contentType
+  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
   - `[DriveId <String>]`: key: id of drive
   - `[DriveItemId <String>]`: key: id of driveItem
-  - `[EndDateTime <String>]`: Usage: endDateTime={endDateTime}
+  - `[DriveItemId1 <String>]`: key: id of driveItem
+  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[GroupId <String>]`: key: id of group
-  - `[Interval <String>]`: Usage: interval={interval}
+  - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListItemId <String>]`: key: id of listItem
   - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[Q <String>]`: Usage: q={q}
+  - `[PermissionId <String>]`: key: id of permission
+  - `[Q <String>]`: Usage: q='{q}'
   - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
   - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[SubscriptionId <String>]`: key: id of subscription
-  - `[Token <String>]`: Usage: token={token}
+  - `[ThumbnailSetId <String>]`: key: id of thumbnailSet
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

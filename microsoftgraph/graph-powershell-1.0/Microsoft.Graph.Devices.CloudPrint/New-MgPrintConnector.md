@@ -8,24 +8,24 @@ schema: 2.0.0
 # New-MgPrintConnector
 
 ## SYNOPSIS
-The list of available print connectors.
+Create new navigation property to connectors for print
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgPrintConnector [-AdditionalProperties <Hashtable>] [-AppVersion <String>] [-DisplayName <String>]
  [-FullyQualifiedDomainName <String>] [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>]
  [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The list of available print connectors.
+Create new navigation property to connectors for print
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -51,7 +51,7 @@ The connector's version.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -66,8 +66,8 @@ printConnector
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintConnector
-Parameter Sets: Create
+Type: IMicrosoftGraphPrintConnector1
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ The name of the connector.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -97,7 +97,7 @@ The connector machine's hostname.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -108,11 +108,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -128,7 +128,7 @@ To construct, please use Get-Help -Online and see NOTES section for LOCATION pro
 
 ```yaml
 Type: IMicrosoftGraphPrinterLocation
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -143,7 +143,7 @@ The connector machine's operating system version.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -158,7 +158,7 @@ The DateTimeOffset when the connector was registered.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -204,10 +204,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector1
 ## NOTES
 
 ALIASES
@@ -217,9 +217,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPrintConnector>: printConnector
+BODYPARAMETER `<IMicrosoftGraphPrintConnector1>`: printConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AppVersion <String>]`: The connector's version.
   - `[DisplayName <String>]`: The name of the connector.
   - `[FullyQualifiedDomainName <String>]`: The connector machine's hostname.
@@ -245,7 +245,7 @@ BODYPARAMETER <IMicrosoftGraphPrintConnector>: printConnector
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-LOCATION <IMicrosoftGraphPrinterLocation>: printerLocation
+LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.

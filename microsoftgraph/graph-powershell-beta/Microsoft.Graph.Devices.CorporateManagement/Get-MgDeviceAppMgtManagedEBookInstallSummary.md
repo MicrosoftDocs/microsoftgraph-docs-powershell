@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedEBookInstallSummary
 
 ## SYNOPSIS
-Mobile App Install Summary.
+Get installSummary from deviceAppManagement
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgDeviceAppMgtManagedEBookInstallSummary -InputObject <IDevicesCorporateMana
 ```
 
 ## DESCRIPTION
-Mobile App Install Summary.
+Get installSummary from deviceAppManagement
 
 ## EXAMPLES
 

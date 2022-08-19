@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity
@@ -8,28 +8,24 @@ schema: 2.0.0
 # Remove-MgUserActivity
 
 ## SYNOPSIS
-The user's activities across devices.
-Read-only.
-Nullable.
+Delete navigation property activities for users
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
 Remove-MgUserActivity -UserActivityId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The user's activities across devices.
-Read-only.
-Nullable.
+Delete navigation property activities for users
 
 ## EXAMPLES
 
@@ -56,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -86,7 +82,7 @@ key: id of userActivity
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -101,7 +97,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -160,9 +156,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
+INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
+  - `[CommandId <String>]`: key: id of command
   - `[DeviceId <String>]`: key: id of device
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[ExtensionId <String>]`: key: id of extension
+  - `[UsageRightId <String>]`: key: id of usageRight
   - `[UserActivityId <String>]`: key: id of userActivity
   - `[UserId <String>]`: key: id of user
 

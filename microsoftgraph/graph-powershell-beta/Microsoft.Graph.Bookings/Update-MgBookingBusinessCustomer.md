@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomer
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgBookingBusinessCustomer
 
 ## SYNOPSIS
-All the customers of this business.
-Read-only.
-Nullable.
+Update the navigation property customers in bookingBusinesses
 
 ## SYNTAX
 
@@ -42,9 +40,7 @@ Update-MgBookingBusinessCustomer -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-All the customers of this business.
-Read-only.
-Nullable.
+Update the navigation property customers in bookingBusinesses
 
 ## EXAMPLES
 
@@ -66,9 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Addresses
-Addresses associated with the customer.
-The attribute type of physicalAddress is not supported in v1.0.
-Internally we map the addresses to the type others.
+Addresses associated with the customer, including home, business and other addresses.
 To construct, please use Get-Help -Online and see NOTES section for ADDRESSES properties and create a hash table.
 
 ```yaml
@@ -160,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -271,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESSES <IMicrosoftGraphPhysicalAddress[]>: Addresses associated with the customer. The attribute type of physicalAddress is not supported in v1.0. Internally we map the addresses to the type others.
+ADDRESSES <IMicrosoftGraphPhysicalAddress\[]>: Addresses associated with the customer, including home, business and other addresses.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
   - `[PostOfficeBox <String>]`: The post office box number.
@@ -280,12 +274,12 @@ ADDRESSES <IMicrosoftGraphPhysicalAddress[]>: Addresses associated with the cust
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-BODYPARAMETER <IMicrosoftGraphBookingCustomer>: Represents a customer of the business.
+BODYPARAMETER `<IMicrosoftGraphBookingCustomer>`: Represents a customer of the business.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EmailAddress <String>]`: The email address of the person.
   - `[DisplayName <String>]`: A name for the derived entity, which interfaces with customers.
-  - `[Id <String>]`: Read-only.
-  - `[Addresses <IMicrosoftGraphPhysicalAddress[]>]`: Addresses associated with the customer. The attribute type of physicalAddress is not supported in v1.0. Internally we map the addresses to the type others.
+  - `[Id <String>]`: 
+  - `[Addresses <IMicrosoftGraphPhysicalAddress[]>]`: Addresses associated with the customer, including home, business and other addresses.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
     - `[PostOfficeBox <String>]`: The post office box number.
@@ -297,7 +291,7 @@ BODYPARAMETER <IMicrosoftGraphBookingCustomer>: Represents a customer of the bus
     - `[Number <String>]`: The phone number.
     - `[Type <String>]`: phoneType
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
@@ -308,7 +302,7 @@ INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: key: id of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: key: id of bookingStaffMember
 
-PHONES <IMicrosoftGraphPhone[]>: Phone numbers associated with the customer, including home, business and mobile numbers.
+PHONES <IMicrosoftGraphPhone\[]>: Phone numbers associated with the customer, including home, business and mobile numbers.
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 

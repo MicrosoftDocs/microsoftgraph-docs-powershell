@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticoverview
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticOverview
 
 ## SYNOPSIS
-User experience analytics overview
+Get userExperienceAnalyticsOverview from deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementUserExperienceAnalyticOverview [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-User experience analytics overview
+Get userExperienceAnalyticsOverview from deviceManagement
 
 ## EXAMPLES
 

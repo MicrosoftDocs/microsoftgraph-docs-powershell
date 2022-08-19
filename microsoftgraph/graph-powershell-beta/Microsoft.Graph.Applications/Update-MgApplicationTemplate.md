@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgapplicationtemplate
@@ -17,14 +17,15 @@ Update entity in applicationTemplates
 Update-MgApplicationTemplate -ApplicationTemplateId <String> [-AdditionalProperties <Hashtable>]
  [-Categories <String[]>] [-Description <String>] [-DisplayName <String>] [-HomePageUrl <String>]
  [-Id <String>] [-InformationalUrls <IMicrosoftGraphInformationalUrls>] [-LogoUrl <String>]
- [-Publisher <String>] [-SupportedProvisioningTypes <String[]>] [-SupportedSingleSignOnModes <String[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Publisher <String>] [-SupportedClaimConfiguration <IMicrosoftGraphSupportedClaimConfiguration>]
+ [-SupportedProvisioningTypes <String[]>] [-SupportedSingleSignOnModes <String[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgApplicationTemplate -ApplicationTemplateId <String>
- -BodyParameter <IMicrosoftGraphApplicationTemplate1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphApplicationTemplate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -32,14 +33,15 @@ Update-MgApplicationTemplate -ApplicationTemplateId <String>
 Update-MgApplicationTemplate -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-Categories <String[]>] [-Description <String>] [-DisplayName <String>] [-HomePageUrl <String>]
  [-Id <String>] [-InformationalUrls <IMicrosoftGraphInformationalUrls>] [-LogoUrl <String>]
- [-Publisher <String>] [-SupportedProvisioningTypes <String[]>] [-SupportedSingleSignOnModes <String[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Publisher <String>] [-SupportedClaimConfiguration <IMicrosoftGraphSupportedClaimConfiguration>]
+ [-SupportedProvisioningTypes <String[]>] [-SupportedSingleSignOnModes <String[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgApplicationTemplate -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphApplicationTemplate1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphApplicationTemplate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -84,7 +86,7 @@ applicationTemplate
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApplicationTemplate1
+Type: IMicrosoftGraphApplicationTemplate
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -157,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -248,6 +250,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SupportedClaimConfiguration
+supportedClaimConfiguration
+To construct, please use Get-Help -Online and see NOTES section for SUPPORTEDCLAIMCONFIGURATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSupportedClaimConfiguration
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SupportedProvisioningTypes
 The list of provisioning modes supported by this application.
 The only valid value is sync.
@@ -317,7 +335,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplicationTemplate1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplicationTemplate
 ## OUTPUTS
 
 ### System.Boolean
@@ -330,9 +348,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphApplicationTemplate1>: applicationTemplate
+BODYPARAMETER `<IMicrosoftGraphApplicationTemplate>`: applicationTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Categories <String[]>]`: The list of categories for the application. Supported values can be: Collaboration, Business Management, Consumer, Content management, CRM, Data services, Developer services, E-commerce, Education, ERP, Finance, Health, Human resources, IT infrastructure, Mail, Management, Marketing, Media, Productivity, Project management, Telecommunications, Tools, Travel, and Web design & hosting.
   - `[Description <String>]`: A description of the application.
   - `[DisplayName <String>]`: The name of the application.
@@ -343,37 +361,49 @@ BODYPARAMETER <IMicrosoftGraphApplicationTemplate1>: applicationTemplate
     - `[SingleSignOnDocumentationUrl <String>]`: 
   - `[LogoUrl <String>]`: The URL to get the logo for this application.
   - `[Publisher <String>]`: The name of the publisher for this application.
+  - `[SupportedClaimConfiguration <IMicrosoftGraphSupportedClaimConfiguration>]`: supportedClaimConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[NameIdPolicyFormat <String>]`: 
   - `[SupportedProvisioningTypes <String[]>]`: The list of provisioning modes supported by this application. The only valid value is sync.
   - `[SupportedSingleSignOnModes <String[]>]`: The list of single sign-on modes supported by this application. The supported values are oidc, password, saml, and notSupported.
 
-INFORMATIONALURLS <IMicrosoftGraphInformationalUrls>: informationalUrls
+INFORMATIONALURLS `<IMicrosoftGraphInformationalUrls>`: informationalUrls
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppSignUpUrl <String>]`: 
   - `[SingleSignOnDocumentationUrl <String>]`: 
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+  - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
   - `[ApplicationTemplateId <String>]`: key: id of applicationTemplate
+  - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[ConnectorGroupId <String>]`: key: id of connectorGroup
   - `[ConnectorId <String>]`: key: id of connector
   - `[DelegatedPermissionClassificationId <String>]`: key: id of delegatedPermissionClassification
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
   - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
+  - `[HomeRealmDiscoveryPolicyId <String>]`: key: id of homeRealmDiscoveryPolicy
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
+  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
   - `[OnPremisesAgentGroupId1 <String>]`: key: id of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: key: id of onPremisesAgent
-  - `[OnPremisesAgentId1 <String>]`: key: id of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: key: id of onPremisesPublishingProfile
   - `[PublishedResourceId <String>]`: key: id of publishedResource
-  - `[PublishedResourceId1 <String>]`: key: id of publishedResource
   - `[ServicePrincipalId <String>]`: key: id of servicePrincipal
   - `[SynchronizationJobId <String>]`: key: id of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: key: id of synchronizationTemplate
+  - `[TokenIssuancePolicyId <String>]`: key: id of tokenIssuancePolicy
+  - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
   - `[UserId <String>]`: key: id of user
+
+SUPPORTEDCLAIMCONFIGURATION `<IMicrosoftGraphSupportedClaimConfiguration>`: supportedClaimConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[NameIdPolicyFormat <String>]`: 
 
 ## RELATED LINKS

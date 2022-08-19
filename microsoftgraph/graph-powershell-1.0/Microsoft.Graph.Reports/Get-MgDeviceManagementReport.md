@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementReport
 
 ## SYNOPSIS
-Reports singleton
+Get reports from deviceManagement
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgDeviceManagementReport [-ExpandProperty <String[]>] [-Property <String[]>]
 ```
 
 ## DESCRIPTION
-Reports singleton
+Get reports from deviceManagement
 
 ## EXAMPLES
 

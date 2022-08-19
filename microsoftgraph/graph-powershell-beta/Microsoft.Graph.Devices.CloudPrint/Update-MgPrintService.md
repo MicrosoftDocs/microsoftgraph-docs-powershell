@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPrintService
 
 ## SYNOPSIS
-The list of available Universal Print service endpoints.
+Update the navigation property services in print
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgPrintService -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-The list of available Universal Print service endpoints.
+Update the navigation property services in print
 
 ## EXAMPLES
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -205,20 +205,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPrintService1>: printService
+BODYPARAMETER `<IMicrosoftGraphPrintService1>`: printService
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[DisplayName <String>]`: A human-readable display name for the endpoint.
     - `[Uri <String>]`: The URI that can be used to access the service.
 
-ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint1[]>: Endpoints that can be used to access the service. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
+ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint1\[]>: Endpoints that can be used to access the service. Read-only. Nullable.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: A human-readable display name for the endpoint.
   - `[Uri <String>]`: The URI that can be used to access the service.
 
-INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: key: id of group
   - `[PrintConnectorId <String>]`: key: id of printConnector
   - `[PrintOperationId <String>]`: key: id of printOperation
   - `[PrintServiceEndpointId <String>]`: key: id of printServiceEndpoint
@@ -228,5 +229,6 @@ INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[PrintTaskTriggerId <String>]`: key: id of printTaskTrigger
   - `[PrinterId <String>]`: key: id of printer
   - `[PrinterShareId <String>]`: key: id of printerShare
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

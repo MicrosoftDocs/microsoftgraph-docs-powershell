@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementEntitlementManagement
 
 ## SYNOPSIS
-Container for all entitlement management resources in Azure AD identity governance.
+Get entitlementManagement from roleManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgRoleManagementEntitlementManagement [-ExpandProperty <String[]>] [-Propert
 ```
 
 ## DESCRIPTION
-Container for all entitlement management resources in Azure AD identity governance.
+Get entitlementManagement from roleManagement
 
 ## EXAMPLES
 

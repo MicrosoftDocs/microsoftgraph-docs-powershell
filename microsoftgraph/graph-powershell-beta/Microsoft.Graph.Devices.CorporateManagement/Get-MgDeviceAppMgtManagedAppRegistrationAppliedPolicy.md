@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy
 
 ## SYNOPSIS
-Zero or more policys already applied on the registered app when it last synchronized with managment service.
+Get appliedPolicies from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy -InputObject <IDevicesCorp
 ```
 
 ## DESCRIPTION
-Zero or more policys already applied on the registered app when it last synchronized with managment service.
+Get appliedPolicies from deviceAppManagement
 
 ## EXAMPLES
 

@@ -12,20 +12,20 @@ Get associatedTeams from users
 
 ## SYNTAX
 
-### List (Default)
+### List1 (Default)
 ```
 Get-MgUserTeamworkAssociatedTeam -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgUserTeamworkAssociatedTeam -AssociatedTeamInfoId <String> -UserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -36,13 +36,6 @@ Get associatedTeams from users
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -All
@@ -50,12 +43,12 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -65,7 +58,7 @@ key: id of associatedTeamInfo
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -81,7 +74,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -111,7 +104,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -127,7 +120,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -142,12 +135,12 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -172,7 +165,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -187,7 +180,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: OrderBy
 
 Required: False
@@ -202,12 +195,12 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: Limit
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -217,7 +210,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -232,12 +225,12 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -250,11 +243,51 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssociatedTeamInfo
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssociatedTeamInfo1
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
+  - `[ChannelId <String>]`: key: id of channel
+  - `[ChatId <String>]`: key: id of chat
+  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
+  - `[ChatMessageId <String>]`: key: id of chatMessage
+  - `[ChatMessageId1 <String>]`: key: id of chatMessage
+  - `[ConversationMemberId <String>]`: key: id of conversationMember
+  - `[DeletedTeamId <String>]`: key: id of deletedTeam
+  - `[GroupId <String>]`: key: id of group
+  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
+  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
+  - `[OpenShiftId <String>]`: key: id of openShift
+  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
+  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
+  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
+  - `[ShiftId <String>]`: key: id of shift
+  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
+  - `[TeamId <String>]`: key: id of team
+  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
+  - `[TeamsAppId <String>]`: key: id of teamsApp
+  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
+  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
+  - `[TeamsTabId <String>]`: key: id of teamsTab
+  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
+  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
+  - `[TeamworkTagId <String>]`: key: id of teamworkTag
+  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
+  - `[TimeCardId <String>]`: key: id of timeCard
+  - `[TimeOffId <String>]`: key: id of timeOff
+  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
+  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
+  - `[UserId <String>]`: key: id of user
+  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
+  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteam](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteam)
-

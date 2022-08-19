@@ -1,57 +1,40 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mguserscopedrolememberof
 schema: 2.0.0
 ---
 
-# Get-MgSubscribedSku
+# Get-MgUserScopedRoleMemberOf
 
 ## SYNOPSIS
-Get entity from subscribedSkus by key
+Get scopedRoleMemberOf from users
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
-Get-MgSubscribedSku [-Property <String[]>] [-Search <String>] [-Sort <String[]>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgUserScopedRoleMemberOf -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgSubscribedSku -SubscribedSkuId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgUserScopedRoleMemberOf -ScopedRoleMembershipId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get entity from subscribedSkus by key
+Get scopedRoleMemberOf from users
 
 ## EXAMPLES
-
-### Example 1: Get subscribed SKUs
-```powershell
-Get-MgSubscribedSKU | Format-List
-
-AppliesTo            : User
-CapabilityStatus     : Enabled
-ConsumedUnits        : 23
-Id                   : fb625e04-52aa-42da-b10d-14f1195d665f_cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46
-PrepaidUnits         : Microsoft.Graph.PowerShell.Models.MicrosoftGraphLicenseUnitsDetail
-ServicePlans         : {M365_LIGHTHOUSE_PARTNER_PLAN1, WINDOWSUPDATEFORBUSINESS_DEPLOYMENTSERVICE, UNIVERSAL_PRINT_01,
-                       M365_LIGHTHOUSE_CUSTOMER_PLAN1...}
-SkuId                : cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46
-SkuPartNumber        : SPB
-AdditionalProperties : {[@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-b10d-14f1195d665f/subscribedSkus/fb625e04-52a
-                       a-42da-b10d-14f1195d665f_cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46]}
-```
-
-This command gets the information about the service SKU that the company has subscribed to.
 
 ## PARAMETERS
 
@@ -78,6 +61,36 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List1
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: List1
+Aliases:
 
 Required: False
 Position: Named
@@ -132,6 +145,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ScopedRoleMembershipId
+key: id of scopedRoleMembership
+
+```yaml
+Type: String
+Parameter Sets: Get1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -162,15 +190,45 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SubscribedSkuId
-key: id of subscribedSku
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserId
+key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -185,7 +243,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscribedSku
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
 ## NOTES
 
 ALIASES
@@ -195,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet
@@ -217,6 +275,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
   - `[OrgContactId <String>]`: key: id of orgContact
   - `[OrganizationId <String>]`: key: id of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
   - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
   - `[RecommendationId <String>]`: key: id of recommendation

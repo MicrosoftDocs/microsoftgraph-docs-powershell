@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicewithoutcloudidentity
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity
 
 ## SYNOPSIS
-User experience analytics devices without cloud identity.
+Create new navigation property to userExperienceAnalyticsDevicesWithoutCloudIdentity for deviceManagement
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity
 ```
 
 ## DESCRIPTION
-User experience analytics devices without cloud identity.
+Create new navigation property to userExperienceAnalyticsDevicesWithoutCloudIdentity for deviceManagement
 
 ## EXAMPLES
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -157,9 +157,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceWithoutCloudIdentity>: The user experience analytics Device without Cloud Identity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceWithoutCloudIdentity>`: The user experience analytics Device without Cloud Identity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AzureAdDeviceId <String>]`: Azure Active Directory Device Id
   - `[DeviceName <String>]`: The tenant attach device's name.
 

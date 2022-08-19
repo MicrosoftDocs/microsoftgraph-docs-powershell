@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtWdacSupplementalPolicyDeploySummary
 
 ## SYNOPSIS
-WindowsDefenderApplicationControl supplemental policy deployment summary.
+Get deploySummary from deviceAppManagement
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-MgDeviceAppMgtWdacSupplementalPolicyDeploySummary -InputObject <IDevicesCorp
 ```
 
 ## DESCRIPTION
-WindowsDefenderApplicationControl supplemental policy deployment summary.
+Get deploySummary from deviceAppManagement
 
 ## EXAMPLES
 

@@ -53,7 +53,8 @@ Update the navigation property resourceActions in roleManagement
 ## PARAMETERS
 
 ### -ActionVerb
-.
+HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
+Supports $filter (eq) but not for null values.
 
 ```yaml
 Type: String
@@ -99,7 +100,8 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Description for the action.
+Supports $filter (eq).
 
 ```yaml
 Type: String
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -145,7 +147,11 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+Name for the action within the resource namespace, such as microsoft.insights/programs/update.
+Can include slash character (/).
+Case insensitive.
+Required.
+Supports $filter (eq).
 
 ```yaml
 Type: String
@@ -191,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceScopeId
-.
+Not implemented.
 
 ```yaml
 Type: String
@@ -285,25 +291,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUnifiedRbacResourceAction>: unifiedRbacResourceAction
+BODYPARAMETER `<IMicrosoftGraphUnifiedRbacResourceAction>`: unifiedRbacResourceAction
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ActionVerb <String>]`: 
-  - `[Description <String>]`: 
-  - `[Name <String>]`: 
+  - `[Id <String>]`: 
+  - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+  - `[Description <String>]`: Description for the action. Supports $filter (eq).
+  - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
   - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[DisplayName <String>]`: 
     - `[Scope <String>]`: 
     - `[Type <String>]`: 
-  - `[ResourceScopeId <String>]`: 
+  - `[ResourceScopeId <String>]`: Not implemented.
 
-INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
-  - `[AppScopeId1 <String>]`: Usage: appScopeId={appScopeId}
   - `[AppleEnrollmentProfileAssignmentId <String>]`: key: id of appleEnrollmentProfileAssignment
   - `[AppleUserInitiatedEnrollmentProfileId <String>]`: key: id of appleUserInitiatedEnrollmentProfile
   - `[ApprovalId <String>]`: key: id of approval
@@ -312,15 +317,13 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceManagementAutopilotEventId <String>]`: key: id of deviceManagementAutopilotEvent
   - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: key: id of deviceManagementAutopilotPolicyStatusDetail
-  - `[DirectoryScopeId <String>]`: Usage: directoryScopeId={directoryScopeId}
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
   - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
   - `[ImportedAppleDeviceIdentityId <String>]`: key: id of importedAppleDeviceIdentity
   - `[ImportedDeviceIdentityId <String>]`: key: id of importedDeviceIdentity
   - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: key: id of importedWindowsAutopilotDeviceIdentity
-  - `[On <String>]`: Usage: on={on}
-  - `[PrincipalId <String>]`: Usage: principalId={principalId}
-  - `[RoleDefinitionId <String>]`: Usage: roleDefinitionId={roleDefinitionId}
+  - `[On <String>]`: Usage: on='{on}'
   - `[UnifiedRbacResourceActionId <String>]`: key: id of unifiedRbacResourceAction
   - `[UnifiedRbacResourceNamespaceId <String>]`: key: id of unifiedRbacResourceNamespace
   - `[UnifiedRoleAssignmentId <String>]`: key: id of unifiedRoleAssignment
@@ -339,9 +342,9 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
-RESOURCESCOPE <IMicrosoftGraphUnifiedRbacResourceScope>: unifiedRbacResourceScope
+RESOURCESCOPE `<IMicrosoftGraphUnifiedRbacResourceScope>`: unifiedRbacResourceScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: 
   - `[Scope <String>]`: 
   - `[Type <String>]`: 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalhomerealmdiscoverypolicy
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalHomeRealmDiscoveryPolicy
 
 ## SYNOPSIS
-The homeRealmDiscoveryPolicies assigned to this service principal.
-Supports $expand.
+Get homeRealmDiscoveryPolicies from servicePrincipals
 
 ## SYNTAX
 
@@ -20,8 +19,7 @@ Get-MgServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId <String> [-Ex
 ```
 
 ## DESCRIPTION
-The homeRealmDiscoveryPolicies assigned to this service principal.
-Supports $expand.
+Get homeRealmDiscoveryPolicies from servicePrincipals
 
 ## EXAMPLES
 

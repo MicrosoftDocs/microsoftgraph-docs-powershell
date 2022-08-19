@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementassignmentfilter
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAssignmentFilter
 
 ## SYNOPSIS
-The list of assignment filters
+Create new navigation property to assignmentFilters for deviceManagement
 
 ## SYNTAX
 
@@ -16,7 +16,8 @@ The list of assignment filters
 ```
 New-MgDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Platform <String>] [-RoleScopeTags <String[]>] [-Rule <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>] [-Rule <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -26,7 +27,7 @@ New-MgDeviceManagementAssignmentFilter -BodyParameter <IMicrosoftGraphDeviceAndA
 ```
 
 ## DESCRIPTION
-The list of assignment filters
+Create new navigation property to assignmentFilters for deviceManagement
 
 ## EXAMPLES
 
@@ -109,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -142,7 +143,7 @@ Accept wildcard characters: False
 Supported platform types.
 
 ```yaml
-Type: String
+Type: DevicePlatformType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -232,14 +233,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>: A class containing the properties used for Assignment Filter.
+BODYPARAMETER `<IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>`: A class containing the properties used for Assignment Filter.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Creation time of the Assignment Filter.
   - `[Description <String>]`: Description of the Assignment Filter.
   - `[DisplayName <String>]`: DisplayName of the Assignment Filter.
   - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the Assignment Filter.
-  - `[Platform <String>]`: Supported platform types.
+  - `[Platform <DevicePlatformType?>]`: Supported platform types.
   - `[RoleScopeTags <String[]>]`: RoleScopeTags of the Assignment Filter.
   - `[Rule <String>]`: Rule definition of the Assignment Filter.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroupsettermrelation
@@ -8,24 +8,24 @@ schema: 2.0.0
 # Remove-MgSiteTermStoreGroupSetTermRelation
 
 ## SYNOPSIS
-To indicate which terms are related to the current term as either pinned or reused.
+Delete navigation property relations for sites
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete2 (Default)
 ```
 Remove-MgSiteTermStoreGroupSetTermRelation -GroupId <String> -RelationId <String> -SetId <String>
  -SiteId <String> -TermId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Delete1
+### Delete
 ```
 Remove-MgSiteTermStoreGroupSetTermRelation -GroupId <String> -RelationId <String> -SetId <String>
- -SiteId <String> -TermId <String> -StoreId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ -SiteId <String> -StoreId <String> -TermId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity2
 ```
 Remove-MgSiteTermStoreGroupSetTermRelation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +38,7 @@ Remove-MgSiteTermStoreGroupSetTermRelation -InputObject <ISitesIdentity> [-IfMat
 ```
 
 ## DESCRIPTION
-To indicate which terms are related to the current term as either pinned or reused.
+Delete navigation property relations for sites
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete2, Delete
 Aliases:
 
 Required: True
@@ -80,7 +80,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity2, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -110,7 +110,7 @@ key: id of relation
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete2, Delete
 Aliases:
 
 Required: True
@@ -125,7 +125,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete2, Delete
 Aliases:
 
 Required: True
@@ -140,7 +140,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete2, Delete
 Aliases:
 
 Required: True
@@ -155,7 +155,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -170,7 +170,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete2, Delete
 Aliases:
 
 Required: True
@@ -229,35 +229,41 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+  - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
-  - `[EndDateTime <String>]`: Usage: endDateTime={endDateTime}
+  - `[ContentTypeId1 <String>]`: key: id of contentType
+  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
+  - `[DriveId <String>]`: key: id of drive
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[GroupId <String>]`: key: id of group
+  - `[GroupId1 <String>]`: key: id of group
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval={interval}
+  - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: key: id of list
-  - `[ListId1 <String>]`: Usage: listId={listId}
+  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: key: id of listItem
   - `[ListItemVersionId <String>]`: key: id of listItemVersion
   - `[NotebookId <String>]`: key: id of notebook
   - `[OnenotePageId <String>]`: key: id of onenotePage
   - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[Path <String>]`: Usage: path={path}
+  - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: key: id of permission
   - `[RelationId <String>]`: key: id of relation
   - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
   - `[SetId <String>]`: key: id of set
   - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
+  - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
-  - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[StoreId <String>]`: key: id of store
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
-  - `[Token <String>]`: Usage: token={token}
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

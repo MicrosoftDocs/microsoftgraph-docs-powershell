@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationmethodpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyAuthenticationMethodPolicy
 
 ## SYNOPSIS
-The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
+Get authenticationMethodsPolicy from policies
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgPolicyAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Property <
 ```
 
 ## DESCRIPTION
-The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
+Get authenticationMethodsPolicy from policies
 
 ## EXAMPLES
 

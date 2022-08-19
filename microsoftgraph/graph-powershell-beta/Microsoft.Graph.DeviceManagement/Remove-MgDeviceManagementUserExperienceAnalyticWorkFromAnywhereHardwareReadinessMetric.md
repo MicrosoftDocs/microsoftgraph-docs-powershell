@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
 
 ## SYNOPSIS
-User experience analytics work from anywhere hardware readiness metrics.
+Delete navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric for deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadiness
 ```
 
 ## DESCRIPTION
-User experience analytics work from anywhere hardware readiness metrics.
+Delete navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric for deviceManagement
 
 ## EXAMPLES
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/remove-mguserperson
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgUserPerson
 
 ## SYNOPSIS
-Read-only.
-The most relevant people to the user.
-The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
-A person is an aggregation of information from across mail, contacts and social networks.
+Delete navigation property people for users
 
 ## SYNTAX
 
@@ -28,10 +25,7 @@ Remove-MgUserPerson -InputObject <IPeopleIdentity> [-IfMatch <String>] [-PassThr
 ```
 
 ## DESCRIPTION
-Read-only.
-The most relevant people to the user.
-The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
-A person is an aggregation of information from across mail, contacts and social networks.
+Delete navigation property people for users
 
 ## EXAMPLES
 
@@ -162,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress

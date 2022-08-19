@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserperson
@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgUserPerson
 
 ## SYNOPSIS
-Read-only.
-The most relevant people to the user.
-The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
-A person is an aggregation of information from across mail, contacts and social networks.
+Create new navigation property to people for users
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ New-MgUserPerson -UserId <String> [-AdditionalProperties <Hashtable>] [-Birthday
 
 ### Create1
 ```
-New-MgUserPerson -UserId <String> -BodyParameter <IMicrosoftGraphPerson1> [-WhatIf] [-Confirm]
+New-MgUserPerson -UserId <String> -BodyParameter <IMicrosoftGraphPerson> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -47,15 +44,12 @@ New-MgUserPerson -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtabl
 
 ### CreateViaIdentity1
 ```
-New-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPerson1> [-WhatIf] [-Confirm]
+New-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPerson> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read-only.
-The most relevant people to the user.
-The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
-A person is an aggregation of information from across mail, contacts and social networks.
+Create new navigation property to people for users
 
 ## EXAMPLES
 
@@ -96,7 +90,7 @@ person
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPerson1
+Type: IMicrosoftGraphPerson
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -184,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -482,11 +476,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson
 ## NOTES
 
 ALIASES
@@ -496,9 +490,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPerson1>: person
+BODYPARAMETER `<IMicrosoftGraphPerson>`: person
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Birthday <String>]`: The person's birthday.
   - `[CompanyName <String>]`: The name of the person's company.
   - `[Department <String>]`: The person's department.
@@ -550,11 +544,11 @@ BODYPARAMETER <IMicrosoftGraphPerson1>: person
     - `[Type <String>]`: websiteType
   - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
 
-EMAILADDRESSES <IMicrosoftGraphRankedEmailAddress[]>: The person's email addresses.
+EMAILADDRESSES <IMicrosoftGraphRankedEmailAddress\[]>: The person's email addresses.
   - `[Address <String>]`: The email address.
   - `[Rank <Double?>]`: The rank of the email address. A rank is used as a sort key, in relation to the other returned results. A higher rank value corresponds to a more relevant result. Relevance is determined by communication, collaboration, and business relationship signals.
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -581,11 +575,11 @@ INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-PHONES <IMicrosoftGraphPhone1[]>: The person's phone numbers.
+PHONES <IMicrosoftGraphPhone1\[]>: The person's phone numbers.
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 
-POSTALADDRESSES <IMicrosoftGraphLocation1[]>: The person's addresses.
+POSTALADDRESSES <IMicrosoftGraphLocation1\[]>: The person's addresses.
   - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -609,10 +603,10 @@ POSTALADDRESSES <IMicrosoftGraphLocation1[]>: The person's addresses.
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-SOURCES <IMicrosoftGraphPersonDataSource[]>: The sources the user data comes from, for example Directory or Outlook Contacts.
+SOURCES <IMicrosoftGraphPersonDataSource\[]>: The sources the user data comes from, for example Directory or Outlook Contacts.
   - `[Type <String>]`: The type of data source.
 
-WEBSITES <IMicrosoftGraphWebsite[]>: The person's websites.
+WEBSITES <IMicrosoftGraphWebsite\[]>: The person's websites.
   - `[Address <String>]`: The URL of the website.
   - `[DisplayName <String>]`: The display name of the web site.
   - `[Type <String>]`: websiteType

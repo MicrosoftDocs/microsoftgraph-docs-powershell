@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 
 ## SYNOPSIS
-A defined collection of provisioning policy assignments.
-Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned.
-Returned only on $expand.
-See an example of getting the assignments relationship.
+Create new navigation property to assignments for deviceManagement
 
 ## SYNTAX
 
@@ -43,10 +40,7 @@ New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 ```
 
 ## DESCRIPTION
-A defined collection of provisioning policy assignments.
-Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned.
-Returned only on $expand.
-See an example of getting the assignments relationship.
+Create new navigation property to assignments for deviceManagement
 
 ## EXAMPLES
 
@@ -99,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -194,13 +188,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCloudPcProvisioningPolicyAssignment>: cloudPcProvisioningPolicyAssignment
+BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicyAssignment>`: cloudPcProvisioningPolicyAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -223,6 +217,7 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
   - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
   - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
+  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
   - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
   - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
   - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport

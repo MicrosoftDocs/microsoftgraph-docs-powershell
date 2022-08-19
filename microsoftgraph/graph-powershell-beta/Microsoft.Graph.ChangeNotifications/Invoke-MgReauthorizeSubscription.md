@@ -28,13 +28,6 @@ Invoke action reauthorize
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -63,7 +56,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -124,9 +117,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+  - `[SubscriptionId <String>]`: key: id of subscription
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription)
-

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPolicyActivityBasedTimeoutPolicy
 
 ## SYNOPSIS
-The policy that controls the idle time out for web sessions for applications.
+Create new navigation property to activityBasedTimeoutPolicies for policies
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-The policy that controls the idle time out for web sessions for applications.
+Create new navigation property to activityBasedTimeoutPolicies for policies
 
 ## EXAMPLES
 
@@ -96,7 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeletedDateTime
-.
+Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
 
 ```yaml
 Type: DateTime
@@ -143,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -213,7 +214,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityBasedTimeoutPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityBasedTimeoutPolicy1
 ## NOTES
 
 ALIASES
@@ -223,8 +224,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLIESTO <IMicrosoftGraphDirectoryObject[]>: .
-  - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: 
+APPLIESTO <IMicrosoftGraphDirectoryObject\[]>: .
+  - `[Id <String>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS

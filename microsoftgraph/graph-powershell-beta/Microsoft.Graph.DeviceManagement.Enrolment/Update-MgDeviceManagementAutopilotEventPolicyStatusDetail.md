@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementAutopilotEventPolicyStatusDetail
 
 ## SYNOPSIS
-Policy and application status details for this device.
+Update the navigation property policyStatusDetails in deviceManagement
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgDeviceManagementAutopilotEventPolicyStatusDetail -InputObject <IDeviceM
 ```
 
 ## DESCRIPTION
-Policy and application status details for this device.
+Update the navigation property policyStatusDetails in deviceManagement
 
 ## EXAMPLES
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -299,9 +299,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail>: Policy status detail item contained by an autopilot event.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail>`: Policy status detail item contained by an autopilot event.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
   - `[DisplayName <String>]`: The friendly name of the policy.
   - `[ErrorCode <Int32?>]`: The errorode associated with the compliance or enforcement status of the policy. Error code for enforcement status takes precedence if it exists.
@@ -309,11 +309,10 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail>: Poli
   - `[PolicyType <String>]`: deviceManagementAutopilotPolicyType
   - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
 
-INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
-  - `[AppScopeId1 <String>]`: Usage: appScopeId={appScopeId}
   - `[AppleEnrollmentProfileAssignmentId <String>]`: key: id of appleEnrollmentProfileAssignment
   - `[AppleUserInitiatedEnrollmentProfileId <String>]`: key: id of appleUserInitiatedEnrollmentProfile
   - `[ApprovalId <String>]`: key: id of approval
@@ -322,15 +321,13 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceManagementAutopilotEventId <String>]`: key: id of deviceManagementAutopilotEvent
   - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: key: id of deviceManagementAutopilotPolicyStatusDetail
-  - `[DirectoryScopeId <String>]`: Usage: directoryScopeId={directoryScopeId}
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
   - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
   - `[ImportedAppleDeviceIdentityId <String>]`: key: id of importedAppleDeviceIdentity
   - `[ImportedDeviceIdentityId <String>]`: key: id of importedDeviceIdentity
   - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: key: id of importedWindowsAutopilotDeviceIdentity
-  - `[On <String>]`: Usage: on={on}
-  - `[PrincipalId <String>]`: Usage: principalId={principalId}
-  - `[RoleDefinitionId <String>]`: Usage: roleDefinitionId={roleDefinitionId}
+  - `[On <String>]`: Usage: on='{on}'
   - `[UnifiedRbacResourceActionId <String>]`: key: id of unifiedRbacResourceAction
   - `[UnifiedRbacResourceNamespaceId <String>]`: key: id of unifiedRbacResourceNamespace
   - `[UnifiedRoleAssignmentId <String>]`: key: id of unifiedRoleAssignment

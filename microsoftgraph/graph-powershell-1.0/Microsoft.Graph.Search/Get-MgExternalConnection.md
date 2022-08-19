@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/get-mgexternalconnection
@@ -19,13 +19,13 @@ Get-MgExternalConnection [-ExpandProperty <String[]>] [-Property <String[]>] [-F
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgExternalConnection -ExternalConnectionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgExternalConnection -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -89,7 +89,7 @@ key: id of externalConnection
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -120,7 +120,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISearchIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -228,7 +228,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection1
 ## NOTES
 
 ALIASES
@@ -238,10 +238,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
+  - `[ConnectionOperationId <String>]`: key: id of connectionOperation
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
+  - `[ExternalGroupId <String>]`: key: id of externalGroup
+  - `[ExternalItemId <String>]`: key: id of externalItem
+  - `[IdentityId <String>]`: key: id of identity
   - `[QnaId <String>]`: key: id of qna
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mgusercalendarmultivalueextendedproperty
@@ -14,25 +14,25 @@ Nullable.
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete2 (Default)
 ```
 Remove-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Delete2
+### Delete3
 ```
 Remove-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
  -CalendarId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity2
+### DeleteViaIdentity3
 ```
 Remove-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity2
 ```
 Remove-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -52,7 +52,7 @@ key: id of calendar
 
 ```yaml
 Type: String
-Parameter Sets: Delete2
+Parameter Sets: Delete3
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: DeleteViaIdentity2, DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ key: id of multiValueLegacyExtendedProperty
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete2
+Parameter Sets: Delete2, Delete3
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete2
+Parameter Sets: Delete2, Delete3
 Aliases:
 
 Required: True
@@ -187,7 +187,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusercalendarmultivalueextendedproperty
@@ -14,36 +14,35 @@ Nullable.
 
 ## SYNTAX
 
-### UpdateExpanded3 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateExpanded
+### UpdateExpanded1
 ```
-Update-MgUserCalendarMultiValueExtendedProperty -CalendarId <String>
- -MultiValueLegacyExtendedPropertyId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Value <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
+ -CalendarId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String[]>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
+ -CalendarId <String> -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
-```
-Update-MgUserCalendarMultiValueExtendedProperty -CalendarId <String>
- -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update3
 ```
 Update-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded3
+### UpdateViaIdentityExpanded1
 ```
 Update-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String[]>] [-PassThru] [-WhatIf] [-Confirm]
@@ -57,7 +56,7 @@ Update-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity>
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity3
+### UpdateViaIdentity1
 ```
 Update-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphMultiValueLegacyExtendedProperty> [-PassThru] [-WhatIf] [-Confirm]
@@ -85,7 +84,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded3, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -101,7 +100,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphMultiValueLegacyExtendedProperty
-Parameter Sets: Update, Update3, UpdateViaIdentity3, UpdateViaIdentity
+Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -116,7 +115,7 @@ key: id of calendar
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -131,7 +130,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -147,7 +146,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded, UpdateViaIdentity3, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -162,7 +161,7 @@ key: id of multiValueLegacyExtendedProperty
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded, Update, Update3
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
@@ -192,7 +191,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded, Update, Update3
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
@@ -207,7 +206,7 @@ A collection of property values.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded3, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -267,12 +266,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphMultiValueLegacyExtendedProperty>: multiValueLegacyExtendedProperty
+BODYPARAMETER `<IMicrosoftGraphMultiValueLegacyExtendedProperty>`: multiValueLegacyExtendedProperty
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[Value <String[]>]`: A collection of property values.
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar

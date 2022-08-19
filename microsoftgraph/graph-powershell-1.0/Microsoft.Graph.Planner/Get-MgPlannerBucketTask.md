@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerBucketTask
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-The collection of tasks in the bucket.
+Get tasks from planner
 
 ## SYNTAX
 
@@ -21,9 +19,7 @@ Get-MgPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-The collection of tasks in the bucket.
+Get tasks from planner
 
 ## EXAMPLES
 

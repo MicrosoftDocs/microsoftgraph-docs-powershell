@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedAppPolicy
 
 ## SYNOPSIS
-Managed app policies.
+Get managedAppPolicies from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtManagedAppPolicy -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Managed app policies.
+Get managedAppPolicies from deviceAppManagement
 
 ## EXAMPLES
 

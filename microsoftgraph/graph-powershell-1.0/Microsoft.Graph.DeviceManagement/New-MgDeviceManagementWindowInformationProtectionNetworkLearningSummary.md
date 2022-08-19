@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowinformationprotectionnetworklearningsummary
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary
 
 ## SYNOPSIS
-The windows information protection network learning summaries.
+Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary
 ```
 
 ## DESCRIPTION
-The windows information protection network learning summaries.
+Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
 ## EXAMPLES
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -157,9 +157,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary>: Windows Information Protection Network learning Summary entity.
+BODYPARAMETER `<IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary>`: Windows Information Protection Network learning Summary entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DeviceCount <Int32?>]`: Device Count
   - `[Url <String>]`: Website url
 

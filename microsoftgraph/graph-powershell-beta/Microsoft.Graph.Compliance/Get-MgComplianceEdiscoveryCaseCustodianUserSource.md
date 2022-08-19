@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasecustodianusersource
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Data source entity for a the custodian.
-This is the container for a custodian's mailbox and OneDrive for Business site.
+Get userSources from compliance
 
 ## SYNTAX
 
@@ -33,8 +32,7 @@ Get-MgComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdent
 ```
 
 ## DESCRIPTION
-Data source entity for a the custodian.
-This is the container for a custodian's mailbox and OneDrive for Business site.
+Get userSources from compliance
 
 ## EXAMPLES
 
@@ -270,7 +268,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IComplianceIdentity>: Identity Parameter
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian
@@ -282,6 +280,7 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[SiteSourceId <String>]`: key: id of siteSource
   - `[SourceCollectionId <String>]`: key: id of sourceCollection
   - `[TagId <String>]`: key: id of tag
+  - `[TagId1 <String>]`: key: id of tag
   - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
   - `[UserSourceId <String>]`: key: id of userSource
 

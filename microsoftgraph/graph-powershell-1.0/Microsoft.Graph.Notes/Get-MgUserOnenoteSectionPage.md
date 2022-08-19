@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotesectionpage
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserOnenoteSectionPage
 
 ## SYNOPSIS
-The collection of pages in the section.
-Read-only.
-Nullable.
+Get pages from users
 
 ## SYNTAX
 
@@ -21,9 +19,7 @@ Get-MgUserOnenoteSectionPage -OnenoteSectionId <String> -UserId <String> [-Expan
 ```
 
 ## DESCRIPTION
-The collection of pages in the section.
-Read-only.
-Nullable.
+Get pages from users
 
 ## EXAMPLES
 

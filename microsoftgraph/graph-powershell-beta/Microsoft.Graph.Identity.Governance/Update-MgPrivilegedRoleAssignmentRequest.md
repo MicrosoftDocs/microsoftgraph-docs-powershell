@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgprivilegedroleassignmentrequest
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -383,9 +383,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPrivilegedRoleAssignmentRequest>: privilegedRoleAssignmentRequest
+BODYPARAMETER `<IMicrosoftGraphPrivilegedRoleAssignmentRequest>`: privilegedRoleAssignmentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment Active - if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
   - `[Duration <String>]`: The duration of a role assignment.
   - `[Reason <String>]`: The reason for the role assignment.
@@ -393,9 +393,9 @@ BODYPARAMETER <IMicrosoftGraphPrivilegedRoleAssignmentRequest>: privilegedRoleAs
   - `[RoleId <String>]`: The id of the role.
   - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: The assignments for this role. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[ExpirationDateTime <DateTime?>]`: The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.
       - `[IsElevated <Boolean?>]`: true if the role assignment is activated. false if the role assignment is deactivated.
       - `[ResultMessage <String>]`: Result message set by the service.
@@ -405,7 +405,7 @@ BODYPARAMETER <IMicrosoftGraphPrivilegedRoleAssignmentRequest>: privilegedRoleAs
     - `[Name <String>]`: Role name.
     - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[ApprovalOnElevation <Boolean?>]`: true if the approval is required when activate the role. false if the approval is not required when activate the role.
       - `[ApproverIds <String[]>]`: List of Approval ids, if approval is required for activation.
       - `[ElevationDuration <TimeSpan?>]`: The duration when the role is activated.
@@ -418,7 +418,7 @@ BODYPARAMETER <IMicrosoftGraphPrivilegedRoleAssignmentRequest>: privilegedRoleAs
       - `[TicketingInfoOnElevation <Boolean?>]`: true if the ticketing information is required when activate the role. false if the ticketing information is not required when activate the role.
     - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[ElevatedCount <Int32?>]`: The number of users that have the role assigned and the role is activated.
       - `[ManagedCount <Int32?>]`: The number of users that have the role assigned but the role is deactivated.
       - `[MfaEnabled <Boolean?>]`: true if the role activation requires MFA. false if the role activation doesn't require MFA.
@@ -436,13 +436,15 @@ BODYPARAMETER <IMicrosoftGraphPrivilegedRoleAssignmentRequest>: privilegedRoleAs
   - `[Type <String>]`: Representing the type of the operation on the role assignment. The value can be AdminAdd: Administrators add users to roles;UserAdd: Users add role assignments.
   - `[UserId <String>]`: The id of the user.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
   - `[AccessPackageAssignmentResourceRoleId <String>]`: key: id of accessPackageAssignmentResourceRole
   - `[AccessPackageCatalogId <String>]`: key: id of accessPackageCatalog
   - `[AccessPackageId <String>]`: key: id of accessPackage
+  - `[AccessPackageId1 <String>]`: key: id of accessPackage
+  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
   - `[AccessPackageResourceEnvironmentId <String>]`: key: id of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: key: id of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: key: id of accessPackageResourceRequest
@@ -459,6 +461,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
+  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
   - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
   - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
@@ -469,6 +472,8 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[ApprovalStepId <String>]`: key: id of approvalStep
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
+  - `[CustomAccessPackageWorkflowExtensionId <String>]`: key: id of customAccessPackageWorkflowExtension
+  - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
@@ -477,24 +482,27 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
   - `[GroupId <String>]`: key: id of group
-  - `[On <String>]`: Usage: on={on}
+  - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  - `[On <String>]`: Usage: on='{on}'
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
   - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
   - `[PrivilegedRoleAssignmentId <String>]`: key: id of privilegedRoleAssignment
+  - `[PrivilegedRoleAssignmentId1 <String>]`: key: id of privilegedRoleAssignment
   - `[PrivilegedRoleAssignmentRequestId <String>]`: key: id of privilegedRoleAssignmentRequest
   - `[PrivilegedRoleId <String>]`: key: id of privilegedRole
   - `[ProgramControlId <String>]`: key: id of programControl
+  - `[ProgramControlId1 <String>]`: key: id of programControl
   - `[ProgramControlTypeId <String>]`: key: id of programControlType
   - `[ProgramId <String>]`: key: id of program
   - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
   - `[UserId <String>]`: key: id of user
 
-ROLEINFO <IMicrosoftGraphPrivilegedRole>: privilegedRole
+ROLEINFO `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: The assignments for this role. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[ExpirationDateTime <DateTime?>]`: The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.
     - `[IsElevated <Boolean?>]`: true if the role assignment is activated. false if the role assignment is deactivated.
     - `[ResultMessage <String>]`: Result message set by the service.
@@ -504,7 +512,7 @@ ROLEINFO <IMicrosoftGraphPrivilegedRole>: privilegedRole
   - `[Name <String>]`: Role name.
   - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[ApprovalOnElevation <Boolean?>]`: true if the approval is required when activate the role. false if the approval is not required when activate the role.
     - `[ApproverIds <String[]>]`: List of Approval ids, if approval is required for activation.
     - `[ElevationDuration <TimeSpan?>]`: The duration when the role is activated.
@@ -517,14 +525,14 @@ ROLEINFO <IMicrosoftGraphPrivilegedRole>: privilegedRole
     - `[TicketingInfoOnElevation <Boolean?>]`: true if the ticketing information is required when activate the role. false if the ticketing information is not required when activate the role.
   - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[ElevatedCount <Int32?>]`: The number of users that have the role assigned and the role is activated.
     - `[ManagedCount <Int32?>]`: The number of users that have the role assigned but the role is deactivated.
     - `[MfaEnabled <Boolean?>]`: true if the role activation requires MFA. false if the role activation doesn't require MFA.
     - `[Status <String>]`: roleSummaryStatus
     - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
 
-SCHEDULE <IMicrosoftGraphGovernanceSchedule>: governanceSchedule
+SCHEDULE `<IMicrosoftGraphGovernanceSchedule>`: governanceSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Duration <TimeSpan?>]`: The duration of a role assignment. It is in format of a TimeSpan.
   - `[EndDateTime <DateTime?>]`: The end time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Note: if the value is null, it indicates a permanent assignment.
@@ -532,9 +540,6 @@ SCHEDULE <IMicrosoftGraphGovernanceSchedule>: governanceSchedule
   - `[Type <String>]`: The role assignment schedule type. Only Once is supported for now.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mgsiteonenotesection
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgSiteOnenoteSection
 
 ## SYNOPSIS
-The sections in all OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Get sections from sites
 
 ## SYNTAX
 
@@ -34,9 +32,7 @@ Get-MgSiteOnenoteSection -InputObject <INotesIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-The sections in all OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Get sections from sites
 
 ## EXAMPLES
 
@@ -257,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <INotesIdentity>: Identity Parameter
+INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[NotebookId <String>]`: key: id of notebook
   - `[OnenoteOperationId <String>]`: key: id of onenoteOperation

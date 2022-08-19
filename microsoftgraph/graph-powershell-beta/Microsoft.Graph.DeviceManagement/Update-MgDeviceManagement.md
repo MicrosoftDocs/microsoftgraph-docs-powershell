@@ -1,58 +1,43 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/set-mgdevicemanagementuserexperienceanalyticbaselineworkfromanywheremetricbyref
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementwindowmalwareinformationdevicemalwarestate
 schema: 2.0.0
 ---
 
-# Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef
+# Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState
 
 ## SYNOPSIS
-The user experience analytics work from anywhere metrics.
+Delete navigation property deviceMalwareStates for deviceManagement
 
 ## SYNTAX
 
-### SetExpanded (Default)
+### Delete (Default)
 ```
-Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef
- -UserExperienceAnalyticsBaselineId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Set
-```
-Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef
- -UserExperienceAnalyticsBaselineId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState -MalwareStateForWindowsDeviceId <String>
+ -WindowsMalwareInformationId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### SetViaIdentityExpanded
+### DeleteViaIdentity
 ```
-Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### SetViaIdentity
-```
-Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef
- -InputObject <IDeviceManagementIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState -InputObject <IDeviceManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The user experience analytics work from anywhere metrics.
+Delete navigation property deviceMalwareStates for deviceManagement
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -IfMatch
+ETag
 
 ```yaml
-Type: Hashtable
-Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -62,12 +47,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-.
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Hashtable
-Parameter Sets: Set, SetViaIdentity
+Type: IDeviceManagementIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -77,19 +63,18 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -MalwareStateForWindowsDeviceId
+key: id of malwareStateForWindowsDevice
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Type: String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -108,12 +93,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserExperienceAnalyticsBaselineId
-key: id of userExperienceAnalyticsBaseline
+### -WindowsMalwareInformationId
+key: id of windowsMalwareInformation
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded, Set
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -160,7 +145,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### System.Collections.Hashtable
 ## OUTPUTS
 
 ### System.Boolean
@@ -173,7 +157,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -203,6 +187,15 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
+  - `[DeviceManagementComplianceActionItemId <String>]`: key: id of deviceManagementComplianceActionItem
+  - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
+  - `[DeviceManagementComplianceScheduledActionForRuleId <String>]`: key: id of deviceManagementComplianceScheduledActionForRule
+  - `[DeviceManagementConfigurationPolicyAssignmentId <String>]`: key: id of deviceManagementConfigurationPolicyAssignment
+  - `[DeviceManagementConfigurationPolicyId <String>]`: key: id of deviceManagementConfigurationPolicy
+  - `[DeviceManagementConfigurationPolicyTemplateId <String>]`: key: id of deviceManagementConfigurationPolicyTemplate
+  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: key: id of deviceManagementConfigurationSettingDefinition
+  - `[DeviceManagementConfigurationSettingId <String>]`: key: id of deviceManagementConfigurationSetting
+  - `[DeviceManagementConfigurationSettingTemplateId <String>]`: key: id of deviceManagementConfigurationSettingTemplate
   - `[DeviceManagementDerivedCredentialSettingsId <String>]`: key: id of deviceManagementDerivedCredentialSettings
   - `[DeviceManagementIntentAssignmentId <String>]`: key: id of deviceManagementIntentAssignment
   - `[DeviceManagementIntentDeviceSettingStateSummaryId <String>]`: key: id of deviceManagementIntentDeviceSettingStateSummary
@@ -240,8 +233,6 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[ManagedDeviceEncryptionStateId <String>]`: key: id of managedDeviceEncryptionState
   - `[ManagedDeviceId <String>]`: key: id of managedDevice
   - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
-  - `[ManagementConditionId <String>]`: key: id of managementCondition
-  - `[ManagementConditionStatementId <String>]`: key: id of managementConditionStatement
   - `[MicrosoftTunnelConfigurationId <String>]`: key: id of microsoftTunnelConfiguration
   - `[MicrosoftTunnelHealthThresholdId <String>]`: key: id of microsoftTunnelHealthThreshold
   - `[MicrosoftTunnelServerId <String>]`: key: id of microsoftTunnelServer
@@ -271,6 +262,7 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[UserExperienceAnalyticsBatteryHealthOSPerformanceId <String>]`: key: id of userExperienceAnalyticsBatteryHealthOsPerformance
   - `[UserExperienceAnalyticsCategoryId <String>]`: key: id of userExperienceAnalyticsCategory
   - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsDevicePerformance
+  - `[UserExperienceAnalyticsDeviceScopeId <String>]`: key: id of userExperienceAnalyticsDeviceScope
   - `[UserExperienceAnalyticsDeviceScoresId <String>]`: key: id of userExperienceAnalyticsDeviceScores
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess

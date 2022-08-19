@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermission
@@ -12,25 +12,25 @@ The permissions of the users with whom the calendar is shared.
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete2 (Default)
 ```
 Remove-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Delete1
+### Delete3
 ```
 Remove-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> -CalendarId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity3
 ```
 Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity2
 ```
 Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -48,7 +48,7 @@ key: id of calendar
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete3
 Aliases:
 
 Required: True
@@ -63,7 +63,7 @@ key: id of calendarPermission
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete2, Delete3
 Aliases:
 
 Required: True
@@ -94,7 +94,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2
 Aliases:
 
 Required: True
@@ -124,7 +124,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete2, Delete3
 Aliases:
 
 Required: True
@@ -183,7 +183,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar

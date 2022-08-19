@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mgplace
@@ -12,16 +12,16 @@ Add new entity to places
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgPlace [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
  [-DisplayName <String>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>]
  [-Phone <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgPlace -BodyParameter <IMicrosoftGraphPlace> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPlace -BodyParameter <IMicrosoftGraphPlace1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -52,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for ADDRESS prop
 
 ```yaml
 Type: IMicrosoftGraphPhysicalAddress
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -67,8 +67,8 @@ place
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlace
-Parameter Sets: Create
+Type: IMicrosoftGraphPlace1
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ The name associated with the place.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -99,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for GEOCOORDINAT
 
 ```yaml
 Type: IMicrosoftGraphOutlookGeoCoordinates
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -114,7 +114,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -129,7 +129,7 @@ The phone number of the place.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -175,10 +175,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace1
 ## NOTES
 
 ALIASES
@@ -188,7 +188,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
+ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -196,7 +196,7 @@ ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-BODYPARAMETER <IMicrosoftGraphPlace>: place
+BODYPARAMETER `<IMicrosoftGraphPlace>`: place
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -216,7 +216,7 @@ BODYPARAMETER <IMicrosoftGraphPlace>: place
     - `[Longitude <Double?>]`: The longitude of the location.
   - `[Phone <String>]`: The phone number of the place.
 
-GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
+GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
   - `[Altitude <Double?>]`: The altitude of the location.

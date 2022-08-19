@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary
 
 ## SYNOPSIS
-App configuration user status summary.
+Get userStatusSummary from deviceAppManagement
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary -InputObject <IDevices
 ```
 
 ## DESCRIPTION
-App configuration user status summary.
+Get userStatusSummary from deviceAppManagement
 
 ## EXAMPLES
 

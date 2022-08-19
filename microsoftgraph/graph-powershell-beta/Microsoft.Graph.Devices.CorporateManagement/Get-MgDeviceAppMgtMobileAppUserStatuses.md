@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtMobileAppUserStatuses
 
 ## SYNOPSIS
-The list of installation states for this mobile app.
+Get userStatuses from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtMobileAppUserStatuses -InputObject <IDevicesCorporateManagemen
 ```
 
 ## DESCRIPTION
-The list of installation states for this mobile app.
+Get userStatuses from deviceAppManagement
 
 ## EXAMPLES
 

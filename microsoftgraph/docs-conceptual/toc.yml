@@ -1,3 +1,5 @@
+- name: Microsoft Graph PowerShell documentation
+  href: index.yml
 - name: Overview of Microsoft Graph PowerShell
   href: overview.md
 - name: Getting started
@@ -8,24 +10,24 @@
       href: get-started.md 
     - name: Navigating the SDK
       href: navigating.md
+    - name: Using authentication cmdlets
+      href: authentication-commands.md  
     - name: Using Find-MgGraphCommand
       href: find-mg-graph-command.md
     - name: Using Find-MgGraphPermission
       href: find-mg-graph-permission.md   
 - name: Learn
   items:
-    - name: App-only authentication
+    - name: Enable app-only authentication
       href: app-only.md
     - name: Manage access to resources
       href: tutorial-entitlement-management.md
     - name: Assign Azure AD roles in PIM
       href: tutorial-pim.md
-    - name: Grant API permissions
+    - name: Query parameters
       items:
-        - name: Grant delegated API permissions
-          href: tutorial-grant-delegated-api-permissions.md
-        - name: Grant app-only API permissions
-          href: tutorial-grant-app-only-api-permissions.md                     
+        - name: Use query parameters
+          href: use-query-parameters.md                  
 - name: Migrate to Microsoft Graph PowerShell
   items:   
   - name: Migrate from Azure AD PowerShell

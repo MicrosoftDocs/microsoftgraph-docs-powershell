@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenoteoperation
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgUserOnenoteOperation
 
 ## SYNOPSIS
-The status of OneNote operations.
-Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
-Read-only.
-Nullable.
+Get operations from users
 
 ## SYNTAX
 
@@ -28,10 +25,7 @@ Get-MgUserOnenoteOperation -InputObject <INotesIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-The status of OneNote operations.
-Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
-Read-only.
-Nullable.
+Get operations from users
 
 ## EXAMPLES
 
@@ -131,7 +125,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <INotesIdentity>: Identity Parameter
+INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[NotebookId <String>]`: key: id of notebook
   - `[OnenoteOperationId <String>]`: key: id of onenoteOperation

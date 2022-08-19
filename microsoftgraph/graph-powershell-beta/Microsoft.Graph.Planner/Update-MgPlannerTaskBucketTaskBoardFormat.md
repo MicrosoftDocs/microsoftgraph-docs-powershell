@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertaskbuckettaskboardformat
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgPlannerTaskBucketTaskBoardFormat
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Used to render the task correctly in the task board view when grouped by bucket.
+Update the navigation property bucketTaskBoardFormat in planner
 
 ## SYNTAX
 
@@ -41,9 +39,7 @@ Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Used to render the task correctly in the task board view when grouped by bucket.
+Update the navigation property bucketTaskBoardFormat in planner
 
 ## EXAMPLES
 
@@ -81,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -207,12 +203,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>: plannerBucketTaskBoardTaskFormat
+BODYPARAMETER `<IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>`: plannerBucketTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[OrderHint <String>]`: Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined here.
 
-INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta

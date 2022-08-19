@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipaloauth2permissiongrant
@@ -14,10 +14,23 @@ Nullable.
 
 ## SYNTAX
 
+### List1 (Default)
 ```
 Get-MgServicePrincipalOauth2PermissionGrant -ServicePrincipalId <String> [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgServicePrincipalOauth2PermissionGrant -OAuth2PermissionGrantId <String> -ServicePrincipalId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgServicePrincipalOauth2PermissionGrant -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,7 +47,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -50,7 +63,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -80,10 +93,41 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: IApplicationsIdentity
+Parameter Sets: GetViaIdentity1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -OAuth2PermissionGrantId
+key: id of oAuth2PermissionGrant
+
+```yaml
+Type: String
+Parameter Sets: Get1
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -95,7 +139,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -125,7 +169,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -140,7 +184,7 @@ key: id of servicePrincipal
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -155,7 +199,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases: OrderBy
 
 Required: False
@@ -170,7 +214,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases: Limit
 
 Required: False
@@ -185,7 +229,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -200,6 +244,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant

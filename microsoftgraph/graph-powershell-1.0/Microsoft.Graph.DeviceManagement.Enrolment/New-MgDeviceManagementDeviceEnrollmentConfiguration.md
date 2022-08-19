@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-The list of device enrollment configurations
+Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
 
 ## SYNTAX
 
@@ -23,11 +23,11 @@ New-MgDeviceManagementDeviceEnrollmentConfiguration [-AdditionalProperties <Hash
 ### Create
 ```
 New-MgDeviceManagementDeviceEnrollmentConfiguration
- -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceEnrollmentConfiguration1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The list of device enrollment configurations
+Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
 
 ## EXAMPLES
 
@@ -69,7 +69,7 @@ The Base Class of Device Enrollment Configuration
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceEnrollmentConfiguration
+Type: IMicrosoftGraphDeviceEnrollmentConfiguration1
 Parameter Sets: Create
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -222,10 +222,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration1
 ## NOTES
 
 ALIASES
@@ -235,16 +235,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment[]>: The list of group assignments for the device configuration profile
-  - `[Id <String>]`: Read-only.
+ASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment\[]>: The list of group assignments for the device configuration profile
+  - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER <IMicrosoftGraphDeviceEnrollmentConfiguration>: The Base Class of Device Enrollment Configuration
+BODYPARAMETER `<IMicrosoftGraphDeviceEnrollmentConfiguration1>`: The Base Class of Device Enrollment Configuration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>]`: The list of group assignments for the device configuration profile
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: Created date time in UTC of the device enrollment configuration

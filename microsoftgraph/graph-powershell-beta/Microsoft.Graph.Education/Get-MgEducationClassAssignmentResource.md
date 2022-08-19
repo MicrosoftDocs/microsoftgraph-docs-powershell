@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentresource
@@ -8,13 +8,11 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentResource
 
 ## SYNOPSIS
-Learning objects that are associated with this assignment.
-Only teachers can modify this list.
-Nullable.
+Get resources from education
 
 ## SYNTAX
 
-### List (Default)
+### List1 (Default)
 ```
 Get-MgEducationClassAssignmentResource -EducationAssignmentId <String> -EducationClassId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
@@ -34,9 +32,7 @@ Get-MgEducationClassAssignmentResource -InputObject <IEducationIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Learning objects that are associated with this assignment.
-Only teachers can modify this list.
-Nullable.
+Get resources from education
 
 ## EXAMPLES
 
@@ -47,7 +43,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -63,7 +59,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -78,7 +74,7 @@ key: id of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -108,7 +104,7 @@ key: id of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -138,7 +134,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -169,7 +165,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -199,7 +195,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -214,7 +210,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: OrderBy
 
 Required: False
@@ -229,7 +225,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: Limit
 
 Required: False
@@ -244,7 +240,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -272,7 +268,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

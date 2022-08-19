@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarview
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBookingBusinessCalendarView
 
 ## SYNOPSIS
-The set of appointments of this business in a specified date range.
-Read-only.
-Nullable.
+Get calendarView from solutions
 
 ## SYNTAX
 
@@ -34,9 +32,7 @@ Get-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-The set of appointments of this business in a specified date range.
-Read-only.
-Nullable.
+Get calendarView from solutions
 
 ## EXAMPLES
 
@@ -257,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency

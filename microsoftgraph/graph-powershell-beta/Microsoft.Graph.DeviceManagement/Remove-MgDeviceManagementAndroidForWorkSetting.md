@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementandroidforworksetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementAndroidForWorkSetting
 
 ## SYNOPSIS
-The singleton Android for Work settings entity.
+Delete navigation property androidForWorkSettings for deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementAndroidForWorkSetting [-IfMatch <String>] [-PassThru] [
 ```
 
 ## DESCRIPTION
-The singleton Android for Work settings entity.
+Delete navigation property androidForWorkSettings for deviceManagement
 
 ## EXAMPLES
 

@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.DirectoryObjects
 Module Guid: 8f3a913d-f11d-45c6-abfa-070cf206a3bd
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects
@@ -18,7 +18,7 @@ Invoke action checkMemberGroups
 Invoke action checkMemberObjects
 
 ### [Get-MgDirectoryObject](Get-MgDirectoryObject.md)
-Get entity from directoryObjects by key
+Get directoryObject
 
 ### [Get-MgDirectoryObjectById](Get-MgDirectoryObjectById.md)
 Invoke action getByIds
@@ -36,10 +36,7 @@ Invoke action getUserOwnedObjects
 Add new entity to directoryObjects
 
 ### [Remove-MgDirectoryObject](Remove-MgDirectoryObject.md)
-Delete entity from directoryObjects
-
-### [Restore-MgDirectoryObject](Restore-MgDirectoryObject.md)
-Invoke action restore
+Delete directoryObject
 
 ### [Test-MgDirectoryObjectProperty](Test-MgDirectoryObjectProperty.md)
 Invoke action validateProperties

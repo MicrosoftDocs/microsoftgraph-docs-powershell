@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthapplicationperformancebyappversiondetail
@@ -8,11 +8,11 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail
 
 ## SYNOPSIS
-User experience analytics appHealth Application Performance by App Version details
+Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails for deviceManagement
 
 ## SYNTAX
 
-### CreateExpanded2 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail
  [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>] [-AppDisplayName <String>] [-AppName <String>]
@@ -20,7 +20,7 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByApp
  [-IsLatestUsedVersion] [-IsMostUsedVersion] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create2
+### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails> [-WhatIf]
@@ -28,7 +28,7 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByApp
 ```
 
 ## DESCRIPTION
-User experience analytics appHealth Application Performance by App Version details
+Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails for deviceManagement
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -55,7 +55,7 @@ Valid values -2147483648 to 2147483647
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ The friendly name of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -85,7 +85,7 @@ The name of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -100,7 +100,7 @@ The publisher of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -115,7 +115,7 @@ The version of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -131,7 +131,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
-Parameter Sets: Create2
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -147,7 +147,7 @@ Valid values -2147483648 to 2147483647
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -158,11 +158,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -177,7 +177,7 @@ Is the version of application the latest version for that app that is in use.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -192,7 +192,7 @@ Is the version of application the most used version for that app.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -251,9 +251,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails>: The user experience analytics application performance entity contains app performance by app version details.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails>`: The user experience analytics application performance entity contains app performance by app version details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AppCrashCount <Int32?>]`: The number of crashes for the app. Valid values -2147483648 to 2147483647
   - `[AppDisplayName <String>]`: The friendly name of the application.
   - `[AppName <String>]`: The name of the application.

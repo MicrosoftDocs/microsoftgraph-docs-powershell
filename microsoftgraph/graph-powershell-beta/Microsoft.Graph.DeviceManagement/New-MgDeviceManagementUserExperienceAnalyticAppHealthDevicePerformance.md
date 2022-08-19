@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthdeviceperformance
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance
 
 ## SYNOPSIS
-User experience analytics appHealth Device Performance
+Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance
 ```
 
 ## DESCRIPTION
-User experience analytics appHealth Device Performance
+Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
 
 ## EXAMPLES
 
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -316,9 +316,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance>: The user experience analytics device performance entity contains device performance details.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance>`: The user experience analytics device performance entity contains device performance details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AppCrashCount <Int32?>]`: The number of app crashes for the device. Valid values -2147483648 to 2147483647
   - `[AppHangCount <Int32?>]`: The number of app hangs for the device. Valid values -2147483648 to 2147483647
   - `[CrashedAppCount <Int32?>]`: The number of distinct app crashes for the device. Valid values -2147483648 to 2147483647

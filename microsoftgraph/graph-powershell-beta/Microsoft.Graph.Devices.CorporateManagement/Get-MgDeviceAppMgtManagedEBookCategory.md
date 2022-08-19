@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedEBookCategory
 
 ## SYNOPSIS
-The mobile eBook categories.
+Get managedEBookCategories from deviceAppManagement
 
 ## SYNTAX
 
@@ -19,16 +19,16 @@ Get-MgDeviceAppMgtManagedEBookCategory [-ExpandProperty <String[]>] [-Property <
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
+### Get1
+```
+Get-MgDeviceAppMgtManagedEBookCategory -ManagedEBookCategoryId <String> -ManagedEBookId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
 ### Get
 ```
 Get-MgDeviceAppMgtManagedEBookCategory -ManagedEBookCategoryId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgDeviceAppMgtManagedEBookCategory -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### List1
@@ -38,8 +38,20 @@ Get-MgDeviceAppMgtManagedEBookCategory -ManagedEBookId <String> [-ExpandProperty
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
+### GetViaIdentity1
+```
+Get-MgDeviceAppMgtManagedEBookCategory -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgDeviceAppMgtManagedEBookCategory -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-The mobile eBook categories.
+Get managedEBookCategories from deviceAppManagement
 
 ## EXAMPLES
 
@@ -119,7 +131,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -134,7 +146,7 @@ key: id of managedEBookCategory
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -149,7 +161,7 @@ key: id of managedEBook
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: Get1, List1
 Aliases:
 
 Required: True

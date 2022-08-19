@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementAutopilotEvent
 
 ## SYNOPSIS
-The list of autopilot events for the tenant.
+Update the navigation property autopilotEvents in deviceManagement
 
 ## SYNTAX
 
@@ -20,7 +20,7 @@ Update-MgDeviceManagementAutopilotEvent -DeviceManagementAutopilotEventId <Strin
  [-DeploymentState <String>] [-DeploymentTotalDuration <TimeSpan>] [-DeviceId <String>]
  [-DevicePreparationDuration <TimeSpan>] [-DeviceRegisteredDateTime <DateTime>] [-DeviceSerialNumber <String>]
  [-DeviceSetupDuration <TimeSpan>] [-DeviceSetupStatus <String>] [-EnrollmentFailureDetails <String>]
- [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <String>] [-EnrollmentType <String>]
+ [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>]
  [-EventDateTime <DateTime>] [-Id <String>] [-ManagedDeviceName <String>] [-OSVersion <String>]
  [-PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>]
  [-TargetedAppCount <Int32>] [-TargetedPolicyCount <Int32>] [-UserPrincipalName <String>]
@@ -44,7 +44,7 @@ Update-MgDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrolment
  [-DeploymentState <String>] [-DeploymentTotalDuration <TimeSpan>] [-DeviceId <String>]
  [-DevicePreparationDuration <TimeSpan>] [-DeviceRegisteredDateTime <DateTime>] [-DeviceSerialNumber <String>]
  [-DeviceSetupDuration <TimeSpan>] [-DeviceSetupStatus <String>] [-EnrollmentFailureDetails <String>]
- [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <String>] [-EnrollmentType <String>]
+ [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>]
  [-EventDateTime <DateTime>] [-Id <String>] [-ManagedDeviceName <String>] [-OSVersion <String>]
  [-PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>]
  [-TargetedAppCount <Int32>] [-TargetedPolicyCount <Int32>] [-UserPrincipalName <String>]
@@ -61,7 +61,7 @@ Update-MgDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrolment
 ```
 
 ## DESCRIPTION
-The list of autopilot events for the tenant.
+Update the navigation property autopilotEvents in deviceManagement
 
 ## EXAMPLES
 
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: EnrollmentState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -615,9 +615,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementAutopilotEvent>: Represents an Autopilot flow event.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotEvent>`: Represents an Autopilot flow event.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AccountSetupDuration <TimeSpan?>]`: Time spent in user ESP.
   - `[AccountSetupStatus <String>]`: windowsAutopilotDeploymentState
   - `[DeploymentDuration <TimeSpan?>]`: Autopilot deployment duration including enrollment.
@@ -633,13 +633,13 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementAutopilotEvent>: Represents an Aut
   - `[DeviceSetupStatus <String>]`: windowsAutopilotDeploymentState
   - `[EnrollmentFailureDetails <String>]`: Enrollment failure details.
   - `[EnrollmentStartDateTime <DateTime?>]`: Device enrollment start date.
-  - `[EnrollmentState <String>]`: 
+  - `[EnrollmentState <EnrollmentState?>]`: 
   - `[EnrollmentType <String>]`: windowsAutopilotEnrollmentType
   - `[EventDateTime <DateTime?>]`: Time when the event occurred .
   - `[ManagedDeviceName <String>]`: Managed device name.
   - `[OSVersion <String>]`: Device operating system version.
   - `[PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>]`: Policy and application status details for this device.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
     - `[DisplayName <String>]`: The friendly name of the policy.
     - `[ErrorCode <Int32?>]`: The errorode associated with the compliance or enforcement status of the policy. Error code for enforcement status takes precedence if it exists.
@@ -653,11 +653,10 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementAutopilotEvent>: Represents an Aut
   - `[Windows10EnrollmentCompletionPageConfigurationId <String>]`: Enrollment Status Page profile ID
   - `[WindowsAutopilotDeploymentProfileDisplayName <String>]`: Autopilot profile name.
 
-INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
-  - `[AppScopeId1 <String>]`: Usage: appScopeId={appScopeId}
   - `[AppleEnrollmentProfileAssignmentId <String>]`: key: id of appleEnrollmentProfileAssignment
   - `[AppleUserInitiatedEnrollmentProfileId <String>]`: key: id of appleUserInitiatedEnrollmentProfile
   - `[ApprovalId <String>]`: key: id of approval
@@ -666,15 +665,13 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceManagementAutopilotEventId <String>]`: key: id of deviceManagementAutopilotEvent
   - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: key: id of deviceManagementAutopilotPolicyStatusDetail
-  - `[DirectoryScopeId <String>]`: Usage: directoryScopeId={directoryScopeId}
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
   - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
   - `[ImportedAppleDeviceIdentityId <String>]`: key: id of importedAppleDeviceIdentity
   - `[ImportedDeviceIdentityId <String>]`: key: id of importedDeviceIdentity
   - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: key: id of importedWindowsAutopilotDeviceIdentity
-  - `[On <String>]`: Usage: on={on}
-  - `[PrincipalId <String>]`: Usage: principalId={principalId}
-  - `[RoleDefinitionId <String>]`: Usage: roleDefinitionId={roleDefinitionId}
+  - `[On <String>]`: Usage: on='{on}'
   - `[UnifiedRbacResourceActionId <String>]`: key: id of unifiedRbacResourceAction
   - `[UnifiedRbacResourceNamespaceId <String>]`: key: id of unifiedRbacResourceNamespace
   - `[UnifiedRoleAssignmentId <String>]`: key: id of unifiedRoleAssignment
@@ -693,8 +690,8 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
-POLICYSTATUSDETAILS <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>: Policy and application status details for this device.
-  - `[Id <String>]`: Read-only.
+POLICYSTATUSDETAILS <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail\[]>: Policy and application status details for this device.
+  - `[Id <String>]`: 
   - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
   - `[DisplayName <String>]`: The friendly name of the policy.
   - `[ErrorCode <Int32?>]`: The errorode associated with the compliance or enforcement status of the policy. Error code for enforcement status takes precedence if it exists.

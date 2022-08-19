@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassMemberByRef
 
 ## SYNOPSIS
-All users in the class.
-Nullable.
+Get ref of members from education
 
 ## SYNTAX
 
@@ -20,8 +19,7 @@ Get-MgEducationClassMemberByRef -EducationClassId <String> [-Filter <String>] [-
 ```
 
 ## DESCRIPTION
-All users in the class.
-Nullable.
+Get ref of members from education
 
 ## EXAMPLES
 

@@ -94,8 +94,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Category <String>]`: Usage: category={category}
+  - `[CloudPcId <String>]`: key: id of cloudPC
   - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment

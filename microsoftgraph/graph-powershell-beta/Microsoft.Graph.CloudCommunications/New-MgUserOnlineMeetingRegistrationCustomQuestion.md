@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeetingregistrationcustomquestion
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserOnlineMeetingRegistrationCustomQuestion
 
 ## SYNOPSIS
-Custom registration questions.
+Create new navigation property to customQuestions for users
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommunicat
 ```
 
 ## DESCRIPTION
-Custom registration questions.
+Create new navigation property to customQuestions for users
 
 ## EXAMPLES
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -248,19 +248,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphMeetingRegistrationQuestion>: meetingRegistrationQuestion
+BODYPARAMETER `<IMicrosoftGraphMeetingRegistrationQuestion>`: meetingRegistrationQuestion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AnswerInputType <String>]`: answerInputType
   - `[AnswerOptions <String[]>]`: Answer options when answerInputType is radioButton.
   - `[DisplayName <String>]`: Display name of the custom registration question.
   - `[IsRequired <Boolean?>]`: Indicates whether the question is required. Default value is false.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport

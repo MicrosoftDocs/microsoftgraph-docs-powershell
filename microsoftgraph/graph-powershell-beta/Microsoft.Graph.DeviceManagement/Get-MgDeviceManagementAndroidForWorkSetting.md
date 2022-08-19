@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementandroidforworksetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAndroidForWorkSetting
 
 ## SYNOPSIS
-The singleton Android for Work settings entity.
+Get androidForWorkSettings from deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementAndroidForWorkSetting [-ExpandProperty <String[]>] [-Prope
 ```
 
 ## DESCRIPTION
-The singleton Android for Work settings entity.
+Get androidForWorkSettings from deviceManagement
 
 ## EXAMPLES
 

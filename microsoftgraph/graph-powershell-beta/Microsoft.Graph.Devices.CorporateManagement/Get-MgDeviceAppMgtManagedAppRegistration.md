@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedAppRegistration
 
 ## SYNOPSIS
-The managed app registrations.
+Get managedAppRegistrations from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtManagedAppRegistration -InputObject <IDevicesCorporateManageme
 ```
 
 ## DESCRIPTION
-The managed app registrations.
+Get managedAppRegistrations from deviceAppManagement
 
 ## EXAMPLES
 

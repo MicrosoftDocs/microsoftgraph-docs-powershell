@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationsettingiteminsight
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgOrganizationSettingItemInsight
 
 ## SYNOPSIS
-Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites.
-List itemInsights returns the settings to display or return item insights in an organization.
+Update the navigation property itemInsights in organization
 
 ## SYNTAX
 
@@ -40,8 +39,7 @@ Update-MgOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManageme
 ```
 
 ## DESCRIPTION
-Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites.
-List itemInsights returns the settings to display or return item insights in an organization.
+Update the navigation property itemInsights in organization
 
 ## EXAMPLES
 
@@ -79,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisabledForGroup
-The ID of an Azure AD group, of which the specified type of insights are disabled for its members.
+The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
 
@@ -96,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -223,13 +221,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphInsightsSettings>: insightsSettings
+BODYPARAMETER `<IMicrosoftGraphInsightsSettings>`: insightsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[DisabledForGroup <String>]`: The ID of an Azure AD group, of which the specified type of insights are disabled for its members. Default is empty. Optional.
+  - `[Id <String>]`: 
+  - `[DisabledForGroup <String>]`: The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members. Default is empty. Optional.
   - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions. Default is true. Optional.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet
@@ -251,6 +249,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
   - `[OrgContactId <String>]`: key: id of orgContact
   - `[OrganizationId <String>]`: key: id of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
   - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
   - `[RecommendationId <String>]`: key: id of recommendation

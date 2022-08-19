@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/remove-mgplannertask
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgPlannerTask
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Returns a collection of the specified tasks
+Delete navigation property tasks for planner
 
 ## SYNTAX
 
@@ -27,9 +25,7 @@ Remove-MgPlannerTask -InputObject <IPlannerIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Returns a collection of the specified tasks
+Delete navigation property tasks for planner
 
 ## EXAMPLES
 
@@ -145,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta

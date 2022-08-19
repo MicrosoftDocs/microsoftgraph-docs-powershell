@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguseroauth2permissiongrant
@@ -12,10 +12,23 @@ Get oauth2PermissionGrants from users
 
 ## SYNTAX
 
+### List (Default)
 ```
-Get-MgUserOauth2PermissionGrant -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgUserOauth2PermissionGrant -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgUserOauth2PermissionGrant -OAuth2PermissionGrantId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgUserOauth2PermissionGrant -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,7 +58,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -61,7 +74,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -91,10 +104,41 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: IUsersIdentity
+Parameter Sets: GetViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -OAuth2PermissionGrantId
+key: id of oAuth2PermissionGrant
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -106,7 +150,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -136,7 +180,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -151,7 +195,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -166,7 +210,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -181,7 +225,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -196,7 +240,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -211,6 +255,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1

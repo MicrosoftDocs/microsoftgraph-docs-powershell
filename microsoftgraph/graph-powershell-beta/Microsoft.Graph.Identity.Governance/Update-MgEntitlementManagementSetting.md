@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEntitlementManagementSetting
 
 ## SYNOPSIS
-Represents the settings that control the behavior of Azure AD entitlement management.
+Update the navigation property settings in identityGovernance
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlement
 ```
 
 ## DESCRIPTION
-Represents the settings that control the behavior of Azure AD entitlement management.
+Update the navigation property settings in identityGovernance
 
 ## EXAMPLES
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -172,9 +172,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEntitlementManagementSettings>: entitlementManagementSettings
+BODYPARAMETER `<IMicrosoftGraphEntitlementManagementSettings>`: entitlementManagementSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DaysUntilExternalUserDeletedAfterBlocked <Int32?>]`: If externalUserLifecycleAction is BlockSignInAndDelete, the number of days after an external user is blocked from sign in before their account is deleted.
   - `[ExternalUserLifecycleAction <String>]`: One of None, BlockSignIn, or BlockSignInAndDelete.
 

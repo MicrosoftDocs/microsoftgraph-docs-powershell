@@ -8,14 +8,14 @@ schema: 2.0.0
 # New-MgDeviceManagementVirtualEndpointSupportedRegion
 
 ## SYNOPSIS
-Cloud PC supported regions.
+Create new navigation property to supportedRegions for deviceManagement
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementVirtualEndpointSupportedRegion [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-RegionStatus <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -25,7 +25,7 @@ New-MgDeviceManagementVirtualEndpointSupportedRegion -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Cloud PC supported regions.
+Create new navigation property to supportedRegions for deviceManagement
 
 ## EXAMPLES
 
@@ -79,7 +79,22 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RegionStatus
+cloudPcSupportedRegionStatus
 
 ```yaml
 Type: String
@@ -142,9 +157,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCloudPcSupportedRegion>: cloudPcSupportedRegion
+BODYPARAMETER `<IMicrosoftGraphCloudPcSupportedRegion>`: cloudPcSupportedRegion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name for the supported region. Read-only.
 
 ## RELATED LINKS

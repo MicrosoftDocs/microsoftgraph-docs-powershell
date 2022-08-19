@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementandroidmanagedstoreaccountenterprisesetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 
 ## SYNOPSIS
-The singleton Android managed store account enterprise settings entity.
+Get androidManagedStoreAccountEnterpriseSettings from deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-ExpandProper
 ```
 
 ## DESCRIPTION
-The singleton Android managed store account enterprise settings entity.
+Get androidManagedStoreAccountEnterpriseSettings from deviceManagement
 
 ## EXAMPLES
 

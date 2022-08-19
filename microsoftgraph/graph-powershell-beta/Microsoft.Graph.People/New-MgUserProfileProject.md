@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofileproject
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileProject
 
 ## SYNOPSIS
-Represents detailed information about projects associated with a user.
+Create new navigation property to projects for users
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ New-MgUserProfileProject -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Represents detailed information about projects associated with a user.
+Create new navigation property to projects for users
 
 ## EXAMPLES
 
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -432,15 +432,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphProjectParticipation>: projectParticipation
+BODYPARAMETER `<IMicrosoftGraphProjectParticipation>`: projectParticipation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
@@ -454,7 +454,7 @@ BODYPARAMETER <IMicrosoftGraphProjectParticipation>: projectParticipation
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Categories <String[]>]`: Contains categories a user has associated with the project (for example, digital transformation, oil rig).
   - `[Client <IMicrosoftGraphCompanyDetail>]`: companyDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -490,7 +490,7 @@ BODYPARAMETER <IMicrosoftGraphProjectParticipation>: projectParticipation
   - `[Sponsors <IMicrosoftGraphRelatedPerson[]>]`: The Person or people who sponsored the project.
   - `[ThumbnailUrl <String>]`: 
 
-CLIENT <IMicrosoftGraphCompanyDetail>: companyDetail
+CLIENT `<IMicrosoftGraphCompanyDetail>`: companyDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -507,21 +507,21 @@ CLIENT <IMicrosoftGraphCompanyDetail>: companyDetail
   - `[Pronunciation <String>]`: Pronunciation guide for the company name.
   - `[WebUrl <String>]`: Link to the company home page.
 
-COLLEAGUES <IMicrosoftGraphRelatedPerson[]>: Lists people that also worked on the project.
+COLLEAGUES <IMicrosoftGraphRelatedPerson\[]>: Lists people that also worked on the project.
   - `[DisplayName <String>]`: Name of the person.
   - `[Relationship <String>]`: personRelationship
   - `[UserPrincipalName <String>]`: Email address or reference to person within organization.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DETAIL <IMicrosoftGraphPositionDetail>: positionDetail
+DETAIL `<IMicrosoftGraphPositionDetail>`: positionDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -546,12 +546,12 @@ DETAIL <IMicrosoftGraphPositionDetail>: positionDetail
   - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
   - `[Summary <String>]`: Short summary of the position.
 
-INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
+INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -578,20 +578,20 @@ INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
+SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 
-SPONSORS <IMicrosoftGraphRelatedPerson[]>: The Person or people who sponsored the project.
+SPONSORS <IMicrosoftGraphRelatedPerson\[]>: The Person or people who sponsored the project.
   - `[DisplayName <String>]`: Name of the person.
   - `[Relationship <String>]`: personRelationship
   - `[UserPrincipalName <String>]`: Email address or reference to person within organization.

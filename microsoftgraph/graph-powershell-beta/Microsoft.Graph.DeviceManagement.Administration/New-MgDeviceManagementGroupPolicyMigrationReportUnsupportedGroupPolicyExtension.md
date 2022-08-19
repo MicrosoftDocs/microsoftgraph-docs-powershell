@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
 
 ## SYNOPSIS
-A list of unsupported group policy extensions inside the Group Policy Object.
+Create new navigation property to unsupportedGroupPolicyExtensions for deviceManagement
 
 ## SYNTAX
 
@@ -16,8 +16,8 @@ A list of unsupported group policy extensions inside the Group Policy Object.
 ```
 New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -GroupPolicyMigrationReportId <String> [-AdditionalProperties <Hashtable>] [-ExtensionType <String>]
- [-Id <String>] [-NamespaceUrl <String>] [-NodeName <String>] [-SettingScope <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Id <String>] [-NamespaceUrl <String>] [-NodeName <String>] [-SettingScope <GroupPolicySettingScope>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -32,7 +32,7 @@ New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
 New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
  [-ExtensionType <String>] [-Id <String>] [-NamespaceUrl <String>] [-NodeName <String>]
- [-SettingScope <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SettingScope <GroupPolicySettingScope>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -43,7 +43,7 @@ New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
 ```
 
 ## DESCRIPTION
-A list of unsupported group policy extensions inside the Group Policy Object.
+Create new navigation property to unsupportedGroupPolicyExtensions for deviceManagement
 
 ## EXAMPLES
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 Scope of the group policy setting.
 
 ```yaml
-Type: String
+Type: GroupPolicySettingScope
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -236,15 +236,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUnsupportedGroupPolicyExtension>: Unsupported Group Policy Extension.
+BODYPARAMETER `<IMicrosoftGraphUnsupportedGroupPolicyExtension>`: Unsupported Group Policy Extension.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[ExtensionType <String>]`: ExtensionType of the unsupported extension.
   - `[NamespaceUrl <String>]`: Namespace Url of the unsupported extension.
   - `[NodeName <String>]`: Node name of the unsupported extension.
-  - `[SettingScope <String>]`: Scope of the group policy setting.
+  - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -267,6 +267,7 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
   - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
   - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
+  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
   - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
   - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
   - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport

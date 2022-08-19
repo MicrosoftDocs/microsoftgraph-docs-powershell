@@ -3,7 +3,7 @@ title: "Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell"
 description: "Use this map of the Azure AD PowerShell and MSOnline cmdlets to find their Microsoft Graph PowerShell equivalents."
 
 ms.topic: conceptual
-ms.date: 8/18/2021
+ms.date: 05/30/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -367,7 +367,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-AzureADUserExtension|[Update-MgUserExtension](/powershell/module/microsoft.graph.users/update-mguserextension?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserLicense|[Set-MgUserLicense](/powershell/module/microsoft.graph.users.actions/set-mguserlicense?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserManager|[Set-MgUserManagerByRef](/powershell/module/microsoft.graph.users/set-mgusermanagerbyref?view=graph-powershell-1.0&preserve-view=true)|
-|Set-AzureADUserPassword|[Update-MgUserPassword](/powershell/module/microsoft.graph.users.actions/update-mguserpassword?view=graph-powershell-1.0&preserve-view=true)|
+|Set-AzureADUserPassword|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserThumbnailPhoto|[Set-MgUserPhotoContent](/powershell/module/microsoft.graph.users/set-mguserphotocontent?view=graph-powershell-1.0&preserve-view=true)|
 |Update-AzureADSignedInUserPassword|[Update-MgUserPassword](/powershell/module/microsoft.graph.users.actions/update-mguserpassword?view=graph-powershell-1.0&preserve-view=true)|
 
@@ -402,7 +402,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-MsolDirSyncFeatures||
 |Get-MsolDirSyncProvisioningError||
 |Get-MsolDomain|[Get-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
-|Get-MsolDomainFederationSettings||
+|Get-MsolDomainFederationSettings|[Get-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolDomainVerificationDns|[Get-MgDomainVerificationDnsRecord](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainverificationdnsrecord?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolFederationProperty||
 |Get-MsolGroup|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup?view=graph-powershell-1.0&preserve-view=true)|
@@ -416,7 +416,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-MsolScopedRoleMember|[Get-MgDirectoryRoleScopedMember](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolescopedmember?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolServicePrincipal|[Get-MgServicePrincipal](/powershell/module/microsoft.graph.applications/get-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolServicePrincipalCredential||
-|Get-MsolSubscription|[Get-MgSubscription](/powershell/module/microsoft.graph.changenotifications/get-mgsubscription?view=graph-powershell-1.0&preserve-view=true)|
+|Get-MsolSubscription|[Get-MgSubscribedSKU](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolUser|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolUserByStrongAuthentication||
 |Get-MsolUserRole|[Get-MgUserMemberOf](/powershell/module/microsoft.graph.users/get-mgusermemberof?view=graph-powershell-1.0&preserve-view=true)|
@@ -463,8 +463,8 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-MsolDirSyncEnabled||
 |Set-MsolDirSyncFeature||
 |Set-MsolDomain|[Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
-|Set-MsolDomainAuthentication||
-|Set-MsolDomainFederationSettings||
+|Set-MsolDomainAuthentication|[Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
+|Set-MsolDomainFederationSettings|[Update-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolGroup|[Update-MgGroup](/powershell/module/microsoft.graph.groups/update-mggroup?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolPartnerInformation||
 |Set-MsolPasswordPolicy||

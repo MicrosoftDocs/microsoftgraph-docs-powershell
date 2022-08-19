@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementComplianceManagementPartner
 
 ## SYNOPSIS
-The list of Compliance Management Partners configured by the tenant.
+Create new navigation property to complianceManagementPartners for deviceManagement
 
 ## SYNTAX
 
@@ -20,19 +20,19 @@ New-MgDeviceManagementComplianceManagementPartner [-AdditionalProperties <Hashta
  [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-IosOnboarded]
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-MacOSOnboarded]
- [-PartnerState <String>]
+ [-PartnerState <DeviceManagementPartnerTenantState>]
  [-WindowsEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-WindowsOnboarded]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGraphComplianceManagementPartner1>
+New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGraphComplianceManagementPartner>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The list of Compliance Management Partners configured by the tenant.
+Create new navigation property to complianceManagementPartners for deviceManagement
 
 ## EXAMPLES
 
@@ -89,7 +89,7 @@ Compliance management partner for all platforms
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartner1
+Type: IMicrosoftGraphComplianceManagementPartner
 Parameter Sets: Create
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 Partner state of this tenant.
 
 ```yaml
-Type: String
+Type: DeviceManagementPartnerTenantState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -289,10 +289,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
 ## NOTES
 
 ALIASES
@@ -302,20 +302,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>: User groups which enroll Android devices through partner.
+ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1\[]>: User groups which enroll Android devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner1>: Compliance management partner for all platforms
+BODYPARAMETER `<IMicrosoftGraphComplianceManagementPartner>`: Compliance management partner for all platforms
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>]`: User groups which enroll Android devices through partner.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[AndroidOnboarded <Boolean?>]`: Partner onboarded for Android devices.
   - `[DisplayName <String>]`: Partner display name
   - `[IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>]`: User groups which enroll ios devices through partner.
@@ -323,26 +323,26 @@ BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner1>: Compliance manageme
   - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin onboarded to the compliance management partner
   - `[MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>]`: User groups which enroll Mac devices through partner.
   - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
-  - `[PartnerState <String>]`: Partner state of this tenant.
+  - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
   - `[WindowsEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>]`: User groups which enroll Windows devices through partner.
   - `[WindowsOnboarded <Boolean?>]`: Partner onboarded for Windows devices.
 
-IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>: User groups which enroll ios devices through partner.
+IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1\[]>: User groups which enroll ios devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>: User groups which enroll Mac devices through partner.
+MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1\[]>: User groups which enroll Mac devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-WINDOWSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>: User groups which enroll Windows devices through partner.
+WINDOWSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1\[]>: User groups which enroll Windows devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS

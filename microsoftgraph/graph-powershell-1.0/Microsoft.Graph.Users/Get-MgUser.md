@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguser
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUser
 
 ## SYNOPSIS
-Get entity from users by key
+Get a user
 
 ## SYNTAX
 
@@ -21,18 +21,17 @@ Get-MgUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>
 
 ### Get1
 ```
-Get-MgUser -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-ConsistencyLevel <String>]
- [<CommonParameters>]
+Get-MgUser -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ConsistencyLevel <String>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get entity from users by key
+Get a user
 
 ## EXAMPLES
 
@@ -191,11 +190,11 @@ Accept wildcard characters: False
 
 ### -ConsistencyLevel
 Indicates the requested consistency level.
-Documentation URL: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
+Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -380,7 +379,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
 ## NOTES
 
 ALIASES
@@ -390,13 +389,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+  - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
+  - `[AttachmentSessionId <String>]`: key: id of attachmentSession
+  - `[ChecklistItemId <String>]`: key: id of checklistItem
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[ExtensionId <String>]`: key: id of extension
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[LinkedResourceId <String>]`: key: id of linkedResource
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: key: id of notification
+  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: key: id of outlookCategory
   - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
   - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup

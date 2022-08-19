@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/update-mgreportauthenticationmethoduserregistrationdetail
@@ -8,17 +8,17 @@ schema: 2.0.0
 # Update-MgReportAuthenticationMethodUserRegistrationDetail
 
 ## SYNOPSIS
-Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
+Update the navigation property userRegistrationDetails in reports
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgReportAuthenticationMethodUserRegistrationDetail -UserRegistrationDetailsId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsMfaCapable] [-IsMfaRegistered] [-IsPasswordlessCapable]
- [-IsSsprCapable] [-IsSsprEnabled] [-IsSsprRegistered] [-MethodsRegistered <String[]>]
- [-UserDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DefaultMfaMethod <String>] [-Id <String>] [-IsAdmin] [-IsMfaCapable]
+ [-IsMfaRegistered] [-IsPasswordlessCapable] [-IsSsprCapable] [-IsSsprEnabled] [-IsSsprRegistered]
+ [-MethodsRegistered <String[]>] [-UserDisplayName <String>] [-UserPrincipalName <String>] [-UserType <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,10 +30,10 @@ Update-MgReportAuthenticationMethodUserRegistrationDetail -UserRegistrationDetai
 ### UpdateViaIdentityExpanded
 ```
 Update-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReportsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsMfaCapable] [-IsMfaRegistered] [-IsPasswordlessCapable]
- [-IsSsprCapable] [-IsSsprEnabled] [-IsSsprRegistered] [-MethodsRegistered <String[]>]
- [-UserDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DefaultMfaMethod <String>] [-Id <String>] [-IsAdmin] [-IsMfaCapable]
+ [-IsMfaRegistered] [-IsPasswordlessCapable] [-IsSsprCapable] [-IsSsprEnabled] [-IsSsprRegistered]
+ [-MethodsRegistered <String[]>] [-UserDisplayName <String>] [-UserPrincipalName <String>] [-UserType <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -43,7 +43,7 @@ Update-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReports
 ```
 
 ## DESCRIPTION
-Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
+Update the navigation property userRegistrationDetails in reports
 
 ## EXAMPLES
 
@@ -80,8 +80,23 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -DefaultMfaMethod
+defaultMfaMethodType
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -108,6 +123,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsAdmin
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -289,6 +319,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -UserType
+signInUserType
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -339,9 +384,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUserRegistrationDetails>: userRegistrationDetails
+BODYPARAMETER `<IMicrosoftGraphUserRegistrationDetails>`: userRegistrationDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
+  - `[DefaultMfaMethod <String>]`: defaultMfaMethodType
+  - `[IsAdmin <Boolean?>]`: 
   - `[IsMfaCapable <Boolean?>]`: Whether the user has registered a strong authentication method for multi-factor authentication. The method must be allowed by the authentication methods policy. Supports $filter (eq).
   - `[IsMfaRegistered <Boolean?>]`: Whether the user has registered a strong authentication method for multi-factor authentication. The method may not necessarily be allowed by the authentication methods policy.  Supports $filter (eq).
   - `[IsPasswordlessCapable <Boolean?>]`: Whether the user has registered a passwordless strong authentication method (including FIDO2, Windows Hello for Business, and Microsoft Authenticator (Passwordless)) that is allowed by the authentication methods policy. Supports $filter (eq).
@@ -351,32 +398,33 @@ BODYPARAMETER <IMicrosoftGraphUserRegistrationDetails>: userRegistrationDetails
   - `[MethodsRegistered <String[]>]`: Collection of authentication methods registered, such as mobilePhone, email, fido2. Supports $filter (any with eq).
   - `[UserDisplayName <String>]`: The user display name, such as Adele Vance. Supports $filter (eq, startsWith) and $orderBy.
   - `[UserPrincipalName <String>]`: The user principal name, such as AdeleV@contoso.com. Supports $filter (eq, startsWith) and $orderBy.
+  - `[UserType <String>]`: signInUserType
 
-INPUTOBJECT <IReportsIdentity>: Identity Parameter
+INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: key: id of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: key: id of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}
   - `[DeviceManagementCachedReportConfigurationId <String>]`: key: id of deviceManagementCachedReportConfiguration
   - `[DeviceManagementExportJobId <String>]`: key: id of deviceManagementExportJob
   - `[DirectoryAuditId <String>]`: key: id of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[Filter <String>]`: Usage: filter={filter}
-  - `[GroupId <String>]`: Usage: groupId={groupId}
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles={includedUserRoles}
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes={includedUserTypes}
-  - `[Period <String>]`: Usage: period={period}
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[Filter <String>]`: Usage: filter='{filter}'
+  - `[GroupId <String>]`: Usage: groupId='{groupId}'
+  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
+  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
+  - `[Period <String>]`: Usage: period='{period}'
   - `[PrintUsageByPrinterId <String>]`: key: id of printUsageByPrinter
   - `[PrintUsageByUserId <String>]`: key: id of printUsageByUser
-  - `[PrinterId <String>]`: Usage: printerId={printerId}
+  - `[PrinterId <String>]`: Usage: printerId='{printerId}'
   - `[ProvisioningObjectSummaryId <String>]`: key: id of provisioningObjectSummary
   - `[RestrictedSignInId <String>]`: key: id of restrictedSignIn
   - `[SignInId <String>]`: key: id of signIn
   - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[SkipToken <String>]`: Usage: skipToken={skipToken}
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
   - `[Top <Int32?>]`: Usage: top={top}
   - `[UserCredentialUsageDetailsId <String>]`: key: id of userCredentialUsageDetails
-  - `[UserId <String>]`: Usage: userId={userId}
+  - `[UserId <String>]`: Usage: userId='{userId}'
   - `[UserRegistrationDetailsId <String>]`: key: id of userRegistrationDetails
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementandroidmanagedstoreappconfigurationschema
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema
 
 ## SYNOPSIS
-Android Enterprise app configuration schema entities.
+Create new navigation property to androidManagedStoreAppConfigurationSchemas for deviceManagement
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema
 ```
 
 ## DESCRIPTION
-Android Enterprise app configuration schema entities.
+Create new navigation property to androidManagedStoreAppConfigurationSchemas for deviceManagement
 
 ## EXAMPLES
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -179,9 +179,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema>: Schema describing an Android application's custom configurations.
+BODYPARAMETER `<IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema>`: Schema describing an Android application's custom configurations.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[ExampleJson <Byte[]>]`: UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app
   - `[NestedSchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]`: Collection of items each representing a named configuration option in the schema. It contains a flat list of all configuration.
     - `[DataType <String>]`: Data type for a configuration item inside an Android application's custom configuration schema
@@ -199,7 +199,7 @@ BODYPARAMETER <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema>: Schema
       - `[Value <String>]`: Value for this key-value pair
   - `[SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]`: Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.
 
-NESTEDSCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>: Collection of items each representing a named configuration option in the schema. It contains a flat list of all configuration.
+NESTEDSCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem\[]>: Collection of items each representing a named configuration option in the schema. It contains a flat list of all configuration.
   - `[DataType <String>]`: Data type for a configuration item inside an Android application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
@@ -214,7 +214,7 @@ NESTEDSCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[
     - `[Name <String>]`: Name for this key-value pair
     - `[Value <String>]`: Value for this key-value pair
 
-SCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>: Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.
+SCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem\[]>: Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.
   - `[DataType <String>]`: Data type for a configuration item inside an Android application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer

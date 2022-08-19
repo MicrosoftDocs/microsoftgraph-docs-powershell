@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 
 ## SYNOPSIS
-Summary of all certificates for all devices.
+Create new navigation property to deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
 
 ## SYNTAX
 
@@ -17,10 +17,10 @@ Summary of all certificates for all devices.
 New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState [-AdditionalProperties <Hashtable>]
  [-CertificateExpirationDateTime <DateTime>] [-CertificateExtendedKeyUsages <String>]
  [-CertificateIssuanceDateTime <DateTime>] [-CertificateIssuerName <String>] [-CertificateKeyUsages <Int32>]
- [-CertificateRevokeStatus <String>] [-CertificateRevokeStatusLastChangeDateTime <DateTime>]
- [-CertificateSerialNumber <String>] [-CertificateSubjectName <String>] [-CertificateThumbprint <String>]
- [-Id <String>] [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-CertificateRevokeStatus <CertificateRevocationStatus>]
+ [-CertificateRevokeStatusLastChangeDateTime <DateTime>] [-CertificateSerialNumber <String>]
+ [-CertificateSubjectName <String>] [-CertificateThumbprint <String>] [-Id <String>]
+ [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -30,7 +30,7 @@ New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 ```
 
 ## DESCRIPTION
-Summary of all certificates for all devices.
+Create new navigation property to deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
 
 ## EXAMPLES
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Certificate Revocation Status.
 
 ```yaml
-Type: String
+Type: CertificateRevocationStatus
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -311,15 +311,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphManagedAllDeviceCertificateState>: managedAllDeviceCertificateState
+BODYPARAMETER `<IMicrosoftGraphManagedAllDeviceCertificateState>`: managedAllDeviceCertificateState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CertificateExpirationDateTime <DateTime?>]`: Certificate expiry date
   - `[CertificateExtendedKeyUsages <String>]`: Enhanced Key Usage
   - `[CertificateIssuanceDateTime <DateTime?>]`: Issuance date
   - `[CertificateIssuerName <String>]`: Issuer
   - `[CertificateKeyUsages <Int32?>]`: Key Usage
-  - `[CertificateRevokeStatus <String>]`: Certificate Revocation Status.
+  - `[CertificateRevokeStatus <CertificateRevocationStatus?>]`: Certificate Revocation Status.
   - `[CertificateRevokeStatusLastChangeDateTime <DateTime?>]`: The time the revoke status was last changed
   - `[CertificateSerialNumber <String>]`: Serial number
   - `[CertificateSubjectName <String>]`: Certificate subject name

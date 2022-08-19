@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 Module Guid: 90b911be-7e14-43ba-8af8-14390c0c317d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
@@ -93,7 +93,7 @@ Retire a device
 ### [Invoke-MgScanDeviceManagementManagedDeviceWindowDefender](Invoke-MgScanDeviceManagementManagedDeviceWindowDefender.md)
 Invoke action windowsDefenderScan
 
-### [Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyAction](Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyAction.md)
+### [Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule](Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule.md)
 Invoke action scheduleActionsForRules
 
 ### [Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice](Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice.md)

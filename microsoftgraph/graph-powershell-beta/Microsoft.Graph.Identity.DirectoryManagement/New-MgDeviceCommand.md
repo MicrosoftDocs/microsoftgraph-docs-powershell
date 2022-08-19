@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceCommand
 
 ## SYNOPSIS
-Set of commands sent to this device.
+Create new navigation property to commands for devices
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity> -BodyPar
 ```
 
 ## DESCRIPTION
-Set of commands sent to this device.
+Create new navigation property to commands for devices
 
 ## EXAMPLES
 
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -309,9 +309,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCommand>: command
+BODYPARAMETER `<IMicrosoftGraphCommand>`: command
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AppServiceName <String>]`: 
   - `[Error <String>]`: 
   - `[PackageFamilyName <String>]`: 
@@ -321,11 +321,11 @@ BODYPARAMETER <IMicrosoftGraphCommand>: command
   - `[PostBackUri <String>]`: 
   - `[Responsepayload <IMicrosoftGraphPayloadResponse>]`: payloadResponse
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
   - `[Status <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet
@@ -347,6 +347,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
   - `[OrgContactId <String>]`: key: id of orgContact
   - `[OrganizationId <String>]`: key: id of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
   - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
   - `[RecommendationId <String>]`: key: id of recommendation

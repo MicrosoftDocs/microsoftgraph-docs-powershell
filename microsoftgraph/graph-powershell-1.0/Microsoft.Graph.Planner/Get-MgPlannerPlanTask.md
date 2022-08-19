@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerplantask
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerPlanTask
 
 ## SYNOPSIS
-Collection of tasks in the plan.
-Read-only.
-Nullable.
+Get tasks from planner
 
 ## SYNTAX
 
@@ -21,9 +19,7 @@ Get-MgPlannerPlanTask -PlannerPlanId <String> [-ExpandProperty <String[]>] [-Fil
 ```
 
 ## DESCRIPTION
-Collection of tasks in the plan.
-Read-only.
-Nullable.
+Get tasks from planner
 
 ## EXAMPLES
 

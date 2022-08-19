@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentcategory
@@ -12,52 +12,26 @@ Update the navigation property assignmentCategories in education
 
 ## SYNTAX
 
-### UpdateExpanded2 (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgEducationClassAssignmentCategory -EducationCategoryId <String> -EducationClassId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateExpanded3
-```
-Update-MgEducationClassAssignmentCategory -EducationCategoryId <String> -EducationClassId <String>
- -EducationAssignmentId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update3
-```
-Update-MgEducationClassAssignmentCategory -EducationCategoryId <String> -EducationClassId <String>
- -EducationAssignmentId <String> -BodyParameter <IMicrosoftGraphEducationCategory> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Update2
+### Update1
 ```
 Update-MgEducationClassAssignmentCategory -EducationCategoryId <String> -EducationClassId <String>
  -BodyParameter <IMicrosoftGraphEducationCategory> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded3
+### UpdateViaIdentityExpanded1
 ```
 Update-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded2
-```
-Update-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity3
-```
-Update-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationCategory> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity2
+### UpdateViaIdentity1
 ```
 Update-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationCategory> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -75,7 +49,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -91,7 +65,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphEducationCategory
-Parameter Sets: Update3, Update2, UpdateViaIdentity3, UpdateViaIdentity2
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -106,25 +80,10 @@ Unique identifier for the category.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EducationAssignmentId
-key: id of educationAssignment
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded3, Update3
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -136,7 +95,7 @@ key: id of educationCategory
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, Update3, Update2
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -151,7 +110,7 @@ key: id of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, Update3, Update2
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -162,11 +121,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -182,7 +141,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentity3, UpdateViaIdentity2
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -257,12 +216,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEducationCategory>: educationCategory
+BODYPARAMETER `<IMicrosoftGraphEducationCategory>`: educationCategory
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: Unique identifier for the category.
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

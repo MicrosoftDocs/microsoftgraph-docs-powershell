@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtMobileAppRelationship
 
 ## SYNOPSIS
-List of relationships for this mobile app.
+Get relationships from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtMobileAppRelationship -InputObject <IDevicesCorporateManagemen
 ```
 
 ## DESCRIPTION
-List of relationships for this mobile app.
+Get relationships from deviceAppManagement
 
 ## EXAMPLES
 

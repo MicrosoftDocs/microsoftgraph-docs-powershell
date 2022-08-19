@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary
 
 ## SYNOPSIS
-Navigation property to deployment summary of the configuration.
+Get deploymentSummary from deviceAppManagement
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary
 ```
 
 ## DESCRIPTION
-Navigation property to deployment summary of the configuration.
+Get deploymentSummary from deviceAppManagement
 
 ## EXAMPLES
 

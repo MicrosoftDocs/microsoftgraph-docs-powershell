@@ -158,10 +158,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphTrustFramework>: trustFramework
+BODYPARAMETER `<IMicrosoftGraphTrustFramework>`: trustFramework
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeySets <IMicrosoftGraphTrustFrameworkKeySet[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Keys <IMicrosoftGraphTrustFrameworkKey[]>]`: A collection of the keys.
       - `[D <String>]`: RSA Key - private exponent. Field cannot be read back.
       - `[Dp <String>]`: RSA Key - first exponent. Field cannot be read back.
@@ -180,10 +180,10 @@ BODYPARAMETER <IMicrosoftGraphTrustFramework>: trustFramework
       - `[X5C <String[]>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
       - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate RFC 5280.
   - `[Policies <IMicrosoftGraphTrustFrameworkPolicy[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
 
-KEYSETS <IMicrosoftGraphTrustFrameworkKeySet[]>: .
-  - `[Id <String>]`: Read-only.
+KEYSETS <IMicrosoftGraphTrustFrameworkKeySet\[]>: .
+  - `[Id <String>]`: 
   - `[Keys <IMicrosoftGraphTrustFrameworkKey[]>]`: A collection of the keys.
     - `[D <String>]`: RSA Key - private exponent. Field cannot be read back.
     - `[Dp <String>]`: RSA Key - first exponent. Field cannot be read back.
@@ -202,7 +202,7 @@ KEYSETS <IMicrosoftGraphTrustFrameworkKeySet[]>: .
     - `[X5C <String[]>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
     - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate RFC 5280.
 
-POLICIES <IMicrosoftGraphTrustFrameworkPolicy[]>: .
-  - `[Id <String>]`: Read-only.
+POLICIES <IMicrosoftGraphTrustFrameworkPolicy\[]>: .
+  - `[Id <String>]`: 
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementtemplate
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTemplate
 
 ## SYNOPSIS
-The available templates
+Create new navigation property to templates for deviceManagement
 
 ## SYNTAX
 
@@ -17,10 +17,10 @@ The available templates
 New-MgDeviceManagementTemplate [-AdditionalProperties <Hashtable>]
  [-Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IntentCount <Int32>] [-IsDeprecated]
- [-MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>] [-PlatformType <String>]
+ [-MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>] [-PlatformType <PolicyPlatformType>]
  [-PublishedDateTime <DateTime>] [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
- [-TemplateSubtype <String>] [-TemplateType <String>] [-VersionInfo <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-TemplateSubtype <DeviceManagementTemplateSubtype>] [-TemplateType <DeviceManagementTemplateType>]
+ [-VersionInfo <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -30,7 +30,7 @@ New-MgDeviceManagementTemplate -BodyParameter <IMicrosoftGraphDeviceManagementTe
 ```
 
 ## DESCRIPTION
-The available templates
+Create new navigation property to templates for deviceManagement
 
 ## EXAMPLES
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 Supported platform types for policies.
 
 ```yaml
-Type: String
+Type: PolicyPlatformType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 Template subtype
 
 ```yaml
-Type: String
+Type: DeviceManagementTemplateSubtype
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 Template type
 
 ```yaml
-Type: String
+Type: DeviceManagementTemplateType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -315,14 +315,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementTemplate>: Entity that represents a defined collection of device settings
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementTemplate>`: Entity that represents a defined collection of device settings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>]`: Collection of setting categories within the template
     - `[DisplayName <String>]`: The category name
     - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
     - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]`: The setting definitions this category contains
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
       - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
         - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
@@ -335,10 +335,10 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementTemplate>: Entity that represents 
       - `[IsTopLevel <Boolean?>]`: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
       - `[Keywords <String[]>]`: Keywords associated with the setting
       - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
-      - `[ValueType <String>]`: deviceManangementIntentValueType
-    - `[Id <String>]`: Read-only.
+      - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
+    - `[Id <String>]`: 
     - `[RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: The settings this category contains
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[DefinitionId <String>]`: The ID of the setting definition for this instance
       - `[ValueJson <String>]`: JSON representation of the value
   - `[Description <String>]`: The template's description
@@ -346,18 +346,18 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementTemplate>: Entity that represents 
   - `[IntentCount <Int32?>]`: Number of Intents created from this template.
   - `[IsDeprecated <Boolean?>]`: The template is deprecated or not. Intents cannot be created from a deprecated template.
   - `[MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>]`: Collection of templates this template can migrate to
-  - `[PlatformType <String>]`: Supported platform types for policies.
+  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
   - `[PublishedDateTime <DateTime?>]`: When the template was published
   - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: Collection of all settings this template has
-  - `[TemplateSubtype <String>]`: Template subtype
-  - `[TemplateType <String>]`: Template type
+  - `[TemplateSubtype <DeviceManagementTemplateSubtype?>]`: Template subtype
+  - `[TemplateType <DeviceManagementTemplateType?>]`: Template type
   - `[VersionInfo <String>]`: The template's version information
 
-CATEGORIES <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>: Collection of setting categories within the template
+CATEGORIES <IMicrosoftGraphDeviceManagementTemplateSettingCategory\[]>: Collection of setting categories within the template
   - `[DisplayName <String>]`: The category name
   - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]`: The setting definitions this category contains
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
     - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
       - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
@@ -370,20 +370,20 @@ CATEGORIES <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>: Collectio
     - `[IsTopLevel <Boolean?>]`: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
     - `[Keywords <String[]>]`: Keywords associated with the setting
     - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
-    - `[ValueType <String>]`: deviceManangementIntentValueType
-  - `[Id <String>]`: Read-only.
+    - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
+  - `[Id <String>]`: 
   - `[RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: The settings this category contains
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[DefinitionId <String>]`: The ID of the setting definition for this instance
     - `[ValueJson <String>]`: JSON representation of the value
 
-MIGRATABLETO <IMicrosoftGraphDeviceManagementTemplate[]>: Collection of templates this template can migrate to
-  - `[Id <String>]`: Read-only.
+MIGRATABLETO <IMicrosoftGraphDeviceManagementTemplate\[]>: Collection of templates this template can migrate to
+  - `[Id <String>]`: 
   - `[Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>]`: Collection of setting categories within the template
     - `[DisplayName <String>]`: The category name
     - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
     - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]`: The setting definitions this category contains
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
       - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
         - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
@@ -396,10 +396,10 @@ MIGRATABLETO <IMicrosoftGraphDeviceManagementTemplate[]>: Collection of template
       - `[IsTopLevel <Boolean?>]`: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
       - `[Keywords <String[]>]`: Keywords associated with the setting
       - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
-      - `[ValueType <String>]`: deviceManangementIntentValueType
-    - `[Id <String>]`: Read-only.
+      - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
+    - `[Id <String>]`: 
     - `[RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: The settings this category contains
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[DefinitionId <String>]`: The ID of the setting definition for this instance
       - `[ValueJson <String>]`: JSON representation of the value
   - `[Description <String>]`: The template's description
@@ -407,15 +407,15 @@ MIGRATABLETO <IMicrosoftGraphDeviceManagementTemplate[]>: Collection of template
   - `[IntentCount <Int32?>]`: Number of Intents created from this template.
   - `[IsDeprecated <Boolean?>]`: The template is deprecated or not. Intents cannot be created from a deprecated template.
   - `[MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>]`: Collection of templates this template can migrate to
-  - `[PlatformType <String>]`: Supported platform types for policies.
+  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
   - `[PublishedDateTime <DateTime?>]`: When the template was published
   - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: Collection of all settings this template has
-  - `[TemplateSubtype <String>]`: Template subtype
-  - `[TemplateType <String>]`: Template type
+  - `[TemplateSubtype <DeviceManagementTemplateSubtype?>]`: Template subtype
+  - `[TemplateType <DeviceManagementTemplateType?>]`: Template type
   - `[VersionInfo <String>]`: The template's version information
 
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance[]>: Collection of all settings this template has
-  - `[Id <String>]`: Read-only.
+SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance\[]>: Collection of all settings this template has
+  - `[Id <String>]`: 
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
   - `[ValueJson <String>]`: JSON representation of the value
 

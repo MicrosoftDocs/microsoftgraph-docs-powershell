@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
 
 ## SYNOPSIS
-User experience analytics work from anywhere hardware readiness metrics.
+Get userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric from deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMet
 ```
 
 ## DESCRIPTION
-User experience analytics work from anywhere hardware readiness metrics.
+Get userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric from deviceManagement
 
 ## EXAMPLES
 

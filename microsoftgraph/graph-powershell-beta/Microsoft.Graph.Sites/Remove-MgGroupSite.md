@@ -1,6 +1,6 @@
-﻿---
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
+---
+external help file: Microsoft.Graph.Groups-help.xml
+Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mggroupsite
 schema: 2.0.0
 ---
@@ -13,16 +13,30 @@ Access the default site with /sites/root.
 
 ## SYNTAX
 
-### Delete1 (Default)
+### RemoveExpanded (Default)
 ```
-Remove-MgGroupSite -GroupId <String> -SiteId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgGroupSite -GroupId <String> [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphSite[]>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### Remove
 ```
-Remove-MgGroupSite -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgGroupSite -GroupId <String>
+ -BodyParameter <IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RemoveViaIdentityExpanded
+```
+Remove-MgGroupSite -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Value <IMicrosoftGraphSite[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RemoveViaIdentity
+```
+Remove-MgGroupSite -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,30 +47,46 @@ Access the default site with /sites/root.
 
 ## PARAMETERS
 
-### -GroupId
-key: id of group
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: Hashtable
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IfMatch
-ETag
+### -BodyParameter
+.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Remove, RemoveViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -GroupId
+key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: RemoveExpanded, Remove
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -68,8 +98,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity1
+Type: IGroupsIdentity
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -79,30 +109,16 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -Value
+.
+To construct, please use Get-Help -Online and see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: IMicrosoftGraphSite[]
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SiteId
-key: id of site
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -145,10 +161,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.PowerShell.Models.IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
 ## NOTES
 
 ALIASES
@@ -158,7 +175,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType

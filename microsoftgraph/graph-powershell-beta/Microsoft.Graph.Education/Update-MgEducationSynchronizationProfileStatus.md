@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationsynchronizationprofilestatus
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEducationSynchronizationProfileStatus
 
 ## SYNOPSIS
-The synchronization status.
+Update the navigation property profileStatus in education
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgEducationSynchronizationProfileStatus -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-The synchronization status.
+Update the navigation property profileStatus in education
 
 ## EXAMPLES
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -266,16 +266,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEducationSynchronizationProfileStatus>: educationSynchronizationProfileStatus
+BODYPARAMETER `<IMicrosoftGraphEducationSynchronizationProfileStatus>`: educationSynchronizationProfileStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[ErrorCount <Int64?>]`: Number of errors during synchronization.
   - `[LastActivityDateTime <DateTime?>]`: Represents the time when most recent changes were observed in profile.
   - `[LastSynchronizationDateTime <DateTime?>]`: Represents the time of the most recent successful  synchronization.
   - `[Status <String>]`: educationSynchronizationStatus
   - `[StatusMessage <String>]`: Status message for the current profile's synchronization stage.
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

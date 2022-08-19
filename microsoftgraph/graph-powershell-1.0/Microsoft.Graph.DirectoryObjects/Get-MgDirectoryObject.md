@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryObject
 
 ## SYNOPSIS
-Get entity from directoryObjects by key
+Get directoryObject
 
 ## SYNTAX
 
@@ -19,20 +19,20 @@ Get-MgDirectoryObject [-ExpandProperty <String[]>] [-Property <String[]>] [-Filt
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgDirectoryObject -DirectoryObjectId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ConsistencyLevel <String>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get entity from directoryObjects by key
+Get directoryObject
 
 ## EXAMPLES
 
@@ -55,11 +55,11 @@ Accept wildcard characters: False
 
 ### -ConsistencyLevel
 Indicates the requested consistency level.
-Documentation URL: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
+Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -90,7 +90,7 @@ key: id of directoryObject
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -254,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
+INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
 
 ## RELATED LINKS

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
 
 ## SYNOPSIS
-Restricted apps violations for this account.
+Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
 
 ## SYNTAX
 
@@ -16,8 +16,8 @@ Restricted apps violations for this account.
 ```
 New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation [-AdditionalProperties <Hashtable>]
  [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>] [-DeviceName <String>] [-Id <String>]
- [-ManagedDeviceId <String>] [-PlatformType <String>]
- [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <String>]
+ [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
+ [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <RestrictedAppsState>]
  [-UserId <String>] [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
 ```
 
 ## DESCRIPTION
-Restricted apps violations for this account.
+Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
 
 ## EXAMPLES
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 Supported platform types for policies.
 
 ```yaml
-Type: String
+Type: PolicyPlatformType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 Restricted apps state
 
 ```yaml
-Type: String
+Type: RestrictedAppsState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -265,21 +265,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphRestrictedAppsViolation>: Violation of restricted apps configuration profile per device per user
+BODYPARAMETER `<IMicrosoftGraphRestrictedAppsViolation>`: Violation of restricted apps configuration profile per device per user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DeviceConfigurationId <String>]`: Device configuration profile unique identifier, must be Guid
   - `[DeviceConfigurationName <String>]`: Device configuration profile name
   - `[DeviceName <String>]`: Device name
   - `[ManagedDeviceId <String>]`: Managed device unique identifier, must be Guid
-  - `[PlatformType <String>]`: Supported platform types for policies.
+  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
   - `[RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>]`: List of violated restricted apps
     - `[AppId <String>]`: The application or bundle identifier of the application
-  - `[RestrictedAppsState <String>]`: Restricted apps state
+  - `[RestrictedAppsState <RestrictedAppsState?>]`: Restricted apps state
   - `[UserId <String>]`: User unique identifier, must be Guid
   - `[UserName <String>]`: User name
 
-RESTRICTEDAPPS <IMicrosoftGraphManagedDeviceReportedApp[]>: List of violated restricted apps
+RESTRICTEDAPPS <IMicrosoftGraphManagedDeviceReportedApp\[]>: List of violated restricted apps
   - `[AppId <String>]`: The application or bundle identifier of the application
 
 ## RELATED LINKS

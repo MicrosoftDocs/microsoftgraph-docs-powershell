@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentresource
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationClassAssignmentResource
 
 ## SYNOPSIS
-Learning objects that are associated with this assignment.
-Only teachers can modify this list.
-Nullable.
+Delete navigation property resources for education
 
 ## SYNTAX
 
@@ -28,9 +26,7 @@ Remove-MgEducationClassAssignmentResource -InputObject <IEducationIdentity> [-If
 ```
 
 ## DESCRIPTION
-Learning objects that are associated with this assignment.
-Only teachers can modify this list.
-Nullable.
+Delete navigation property resources for education
 
 ## EXAMPLES
 
@@ -176,7 +172,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

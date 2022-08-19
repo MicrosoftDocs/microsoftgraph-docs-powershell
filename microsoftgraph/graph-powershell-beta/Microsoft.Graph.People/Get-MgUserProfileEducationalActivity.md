@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mguserprofileeducationalactivity
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfileEducationalActivity
 
 ## SYNOPSIS
-Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
+Get educationalActivities from users
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
+Get educationalActivities from users
 
 ## EXAMPLES
 
@@ -253,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassassignment
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassAssignment
 
 ## SYNOPSIS
-All assignments associated with this class.
-Nullable.
+Get assignments from education
 
 ## SYNTAX
 
@@ -33,8 +32,7 @@ Get-MgEducationClassAssignment -InputObject <IEducationIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-All assignments associated with this class.
-Nullable.
+Get assignments from education
 
 ## EXAMPLES
 
@@ -245,7 +243,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment1
 ## NOTES
 
 ALIASES
@@ -255,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

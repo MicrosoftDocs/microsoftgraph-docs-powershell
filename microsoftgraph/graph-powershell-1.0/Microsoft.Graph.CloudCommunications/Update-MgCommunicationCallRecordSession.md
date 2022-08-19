@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallrecordsession
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgCommunicationCallRecordSession
 
 ## SYNOPSIS
-List of sessions involved in the call.
-Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
-Read-only.
-Nullable.
+Update the navigation property sessions in communications
 
 ## SYNTAX
 
@@ -48,10 +45,7 @@ Update-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdenti
 ```
 
 ## DESCRIPTION
-List of sessions involved in the call.
-Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
-Read-only.
-Nullable.
+Update the navigation property sessions in communications
 
 ## EXAMPLES
 
@@ -169,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -264,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-UTC time when the first user joined the session.
+UTC fime when the first user joined the session.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
@@ -330,9 +324,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCallRecordsSession>: session
+BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
@@ -347,7 +341,7 @@ BODYPARAMETER <IMicrosoftGraphCallRecordsSession>: session
     - `[Stage <String>]`: failureStage
   - `[Modalities <String[]>]`: List of modalities present in the session. Possible values are: unknown, audio, video, videoBasedScreenSharing, data, screenSharing, unknownFutureValue.
   - `[Segments <IMicrosoftGraphCallRecordsSegment[]>]`: The list of segments involved in the session. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
     - `[Caller <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
     - `[EndDateTime <DateTime?>]`: UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -386,6 +380,7 @@ BODYPARAMETER <IMicrosoftGraphCallRecordsSession>: session
         - `[IPAddress <String>]`: IP address of the media endpoint.
         - `[LinkSpeed <Int64?>]`: Link speed in bits per second reported by the network adapter used by the media endpoint.
         - `[MacAddress <String>]`: The media access control (MAC) address of the media endpoint's network device.
+        - `[NetworkTransportProtocol <String>]`: networkTransportProtocol
         - `[Port <Int32?>]`: Network port number used by media endpoint.
         - `[ReceivedQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.
         - `[ReflexiveIPAddress <String>]`: IP address of the media endpoint as seen by the media relay server. This is typically the public internet IP address associated to the endpoint.
@@ -393,6 +388,10 @@ BODYPARAMETER <IMicrosoftGraphCallRecordsSession>: session
         - `[RelayPort <Int32?>]`: Network port number allocated on the media relay server by the media endpoint.
         - `[SentQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.
         - `[Subnet <String>]`: Subnet used for media stream by the media endpoint.
+        - `[TraceRouteHops <IMicrosoftGraphCallRecordsTraceRouteHop[]>]`: List of network trace route hops collected for this media stream.*
+          - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the round-trip time.
+          - `[IPAddress <String>]`: IP address used for this hop in the network trace.
+          - `[RoundTripTime <TimeSpan?>]`: The time from when the trace route packet was sent from the client to this hop and back to the client, denoted in [ISO 8601][] format. For example, 1 second is denoted as PT1S, where P is the duration designator, T is the time designator, and S is the second designator.
         - `[WifiBand <String>]`: wifiBand
         - `[WifiBatteryCharge <Int32?>]`: Estimated remaining battery charge in percentage reported by the media endpoint.
         - `[WifiChannel <Int32?>]`: WiFi channel used by the media endpoint.
@@ -406,6 +405,7 @@ BODYPARAMETER <IMicrosoftGraphCallRecordsSession>: session
       - `[CallerNetwork <IMicrosoftGraphCallRecordsNetworkInfo>]`: networkInfo
       - `[Label <String>]`: How the media was identified during media negotiation stage.
       - `[Streams <IMicrosoftGraphCallRecordsMediaStream[]>]`: Network streams associated with this media.
+        - `[AudioCodec <String>]`: audioCodec
         - `[AverageAudioDegradation <Single?>]`: Average Network Mean Opinion Score degradation for stream. Represents how much the network loss and jitter has impacted the quality of received audio.
         - `[AverageAudioNetworkJitter <TimeSpan?>]`: Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
         - `[AverageBandwidthEstimate <Int64?>]`: Average estimated bandwidth available between two endpoints in bits per second.
@@ -430,34 +430,36 @@ BODYPARAMETER <IMicrosoftGraphCallRecordsSession>: session
         - `[StartDateTime <DateTime?>]`: UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[StreamDirection <String>]`: mediaStreamDirection
         - `[StreamId <String>]`: Unique identifier for the stream.
+        - `[VideoCodec <String>]`: videoCodec
         - `[WasMediaBypassed <Boolean?>]`: True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false otherwise.
     - `[StartDateTime <DateTime?>]`: UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[StartDateTime <DateTime?>]`: UTC time when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[StartDateTime <DateTime?>]`: UTC fime when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-CALLEE <IMicrosoftGraphCallRecordsEndpoint>: endpoint
+CALLEE `<IMicrosoftGraphCallRecordsEndpoint>`: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
     - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
 
-CALLER <IMicrosoftGraphCallRecordsEndpoint>: endpoint
+CALLER `<IMicrosoftGraphCallRecordsEndpoint>`: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
     - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
 
-FAILUREINFO <IMicrosoftGraphCallRecordsFailureInfo>: failureInfo
+FAILUREINFO `<IMicrosoftGraphCallRecordsFailureInfo>`: failureInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Reason <String>]`: Classification of why a call or portion of a call failed.
   - `[Stage <String>]`: failureStage
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
@@ -468,8 +470,8 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>: The list of segments involved in the session. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
+SEGMENTS <IMicrosoftGraphCallRecordsSegment\[]>: The list of segments involved in the session. Read-only. Nullable.
+  - `[Id <String>]`: 
   - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
@@ -516,6 +518,7 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>: The list of segments involved in
       - `[IPAddress <String>]`: IP address of the media endpoint.
       - `[LinkSpeed <Int64?>]`: Link speed in bits per second reported by the network adapter used by the media endpoint.
       - `[MacAddress <String>]`: The media access control (MAC) address of the media endpoint's network device.
+      - `[NetworkTransportProtocol <String>]`: networkTransportProtocol
       - `[Port <Int32?>]`: Network port number used by media endpoint.
       - `[ReceivedQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.
       - `[ReflexiveIPAddress <String>]`: IP address of the media endpoint as seen by the media relay server. This is typically the public internet IP address associated to the endpoint.
@@ -523,6 +526,10 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>: The list of segments involved in
       - `[RelayPort <Int32?>]`: Network port number allocated on the media relay server by the media endpoint.
       - `[SentQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.
       - `[Subnet <String>]`: Subnet used for media stream by the media endpoint.
+      - `[TraceRouteHops <IMicrosoftGraphCallRecordsTraceRouteHop[]>]`: List of network trace route hops collected for this media stream.*
+        - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the round-trip time.
+        - `[IPAddress <String>]`: IP address used for this hop in the network trace.
+        - `[RoundTripTime <TimeSpan?>]`: The time from when the trace route packet was sent from the client to this hop and back to the client, denoted in [ISO 8601][] format. For example, 1 second is denoted as PT1S, where P is the duration designator, T is the time designator, and S is the second designator.
       - `[WifiBand <String>]`: wifiBand
       - `[WifiBatteryCharge <Int32?>]`: Estimated remaining battery charge in percentage reported by the media endpoint.
       - `[WifiChannel <Int32?>]`: WiFi channel used by the media endpoint.
@@ -536,6 +543,7 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>: The list of segments involved in
     - `[CallerNetwork <IMicrosoftGraphCallRecordsNetworkInfo>]`: networkInfo
     - `[Label <String>]`: How the media was identified during media negotiation stage.
     - `[Streams <IMicrosoftGraphCallRecordsMediaStream[]>]`: Network streams associated with this media.
+      - `[AudioCodec <String>]`: audioCodec
       - `[AverageAudioDegradation <Single?>]`: Average Network Mean Opinion Score degradation for stream. Represents how much the network loss and jitter has impacted the quality of received audio.
       - `[AverageAudioNetworkJitter <TimeSpan?>]`: Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
       - `[AverageBandwidthEstimate <Int64?>]`: Average estimated bandwidth available between two endpoints in bits per second.
@@ -560,6 +568,7 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>: The list of segments involved in
       - `[StartDateTime <DateTime?>]`: UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[StreamDirection <String>]`: mediaStreamDirection
       - `[StreamId <String>]`: Unique identifier for the stream.
+      - `[VideoCodec <String>]`: videoCodec
       - `[WasMediaBypassed <Boolean?>]`: True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false otherwise.
   - `[StartDateTime <DateTime?>]`: UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 

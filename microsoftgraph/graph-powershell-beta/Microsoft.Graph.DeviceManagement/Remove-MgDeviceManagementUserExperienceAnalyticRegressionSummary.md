@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticregressionsummary
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummary
 
 ## SYNOPSIS
-User experience analytics regression summary
+Delete navigation property userExperienceAnalyticsRegressionSummary for deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummary [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-User experience analytics regression summary
+Delete navigation property userExperienceAnalyticsRegressionSummary for deviceManagement
 
 ## EXAMPLES
 

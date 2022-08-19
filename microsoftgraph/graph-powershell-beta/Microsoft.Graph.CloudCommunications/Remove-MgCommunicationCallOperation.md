@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcalloperation
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgCommunicationCallOperation
 
 ## SYNOPSIS
-Read-only.
-Nullable.
+Delete navigation property operations for communications
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Remove-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity> 
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
+Delete navigation property operations for communications
 
 ## EXAMPLES
 
@@ -158,11 +156,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport

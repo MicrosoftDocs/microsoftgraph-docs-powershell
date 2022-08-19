@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/copy-mgteam
@@ -12,31 +12,31 @@ Invoke action clone
 
 ## SYNTAX
 
-### CloneExpanded1 (Default)
+### CloneExpanded (Default)
 ```
 Copy-MgTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-Classification <String>]
  [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
  [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Clone1
+### Clone
 ```
 Copy-MgTeam -TeamId <String>
- -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CloneViaIdentityExpanded1
+### CloneViaIdentityExpanded
 ```
 Copy-MgTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Classification <String>]
  [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
  [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CloneViaIdentity1
+### CloneViaIdentity
 ```
 Copy-MgTeam -InputObject <ITeamsIdentity>
- -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -67,8 +67,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Clone1, CloneViaIdentity1
+Type: IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1
+Parameter Sets: Clone, CloneViaIdentity
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -129,7 +129,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CloneViaIdentityExpanded1, CloneViaIdentity1
+Parameter Sets: CloneViaIdentityExpanded, CloneViaIdentity
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -159,7 +159,7 @@ clonableTeamParts
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -189,7 +189,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded1, Clone1
+Parameter Sets: CloneExpanded, Clone
 Aliases:
 
 Required: True
@@ -204,7 +204,7 @@ teamVisibilityType
 
 ```yaml
 Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -250,7 +250,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
@@ -264,7 +264,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Classification <String>]`: 
   - `[Description <String>]`: 
@@ -273,7 +273,7 @@ BODYPARAMETER <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContent
   - `[PartsToClone <String>]`: clonableTeamParts
   - `[Visibility <String>]`: teamVisibilityType
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -281,10 +281,12 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[ChatMessageId <String>]`: key: id of chatMessage
   - `[ChatMessageId1 <String>]`: key: id of chatMessage
   - `[ConversationMemberId <String>]`: key: id of conversationMember
+  - `[DeletedTeamId <String>]`: key: id of deletedTeam
   - `[GroupId <String>]`: key: id of group
   - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
   - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
   - `[OpenShiftId <String>]`: key: id of openShift
+  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
@@ -300,14 +302,11 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: key: id of teamworkTag
   - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TenantId <String>]`: Usage: tenantId={tenantId}
   - `[TimeCardId <String>]`: key: id of timeCard
   - `[TimeOffId <String>]`: key: id of timeOff
   - `[TimeOffReasonId <String>]`: key: id of timeOffReason
   - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
   - `[UserId <String>]`: key: id of user
-  - `[UserId1 <String>]`: Usage: userId={userId}
-  - `[UserPrincipalName <String>]`: Usage: userPrincipalName={userPrincipalName}
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDirectorySetting
 
 ## SYNOPSIS
-Add new entity to settings
+Create settings
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-MgDirectorySetting -BodyParameter <IMicrosoftGraphDirectorySetting> [-WhatIf
 ```
 
 ## DESCRIPTION
-Add new entity to settings
+Create settings
 
 ## EXAMPLES
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -110,8 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Values
-Collection of name value pairs.
-Must contain and set all the settings defined in the template.
+Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
 To construct, please use Get-Help -Online and see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
@@ -175,17 +174,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDirectorySetting>: directorySetting
+BODYPARAMETER `<IMicrosoftGraphDirectorySetting>`: directorySetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
   - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings. Read-only.
-  - `[Values <IMicrosoftGraphSettingValue[]>]`: Collection of name value pairs. Must contain and set all the settings defined in the template.
-    - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
+  - `[Values <IMicrosoftGraphSettingValue[]>]`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
+    - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
     - `[Value <String>]`: Value of the setting.
 
-VALUES <IMicrosoftGraphSettingValue[]>: Collection of name value pairs. Must contain and set all the settings defined in the template.
-  - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
+VALUES <IMicrosoftGraphSettingValue\[]>: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
+  - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
   - `[Value <String>]`: Value of the setting.
 
 ## RELATED LINKS

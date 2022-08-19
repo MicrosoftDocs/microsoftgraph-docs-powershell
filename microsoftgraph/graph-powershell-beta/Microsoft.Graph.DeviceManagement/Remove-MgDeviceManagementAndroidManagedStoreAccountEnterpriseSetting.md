@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementandroidmanagedstoreaccountenterprisesetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 
 ## SYNOPSIS
-The singleton Android managed store account enterprise settings entity.
+Delete navigation property androidManagedStoreAccountEnterpriseSettings for deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-IfMatch <
 ```
 
 ## DESCRIPTION
-The singleton Android managed store account enterprise settings entity.
+Delete navigation property androidManagedStoreAccountEnterpriseSettings for deviceManagement
 
 ## EXAMPLES
 

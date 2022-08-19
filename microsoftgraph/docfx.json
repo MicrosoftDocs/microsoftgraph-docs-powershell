@@ -10,7 +10,8 @@
       },
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+	  "**/*.yml"
         ],
         "src": "docs-conceptual",
         "dest": "microsoftgraph"
@@ -93,17 +94,17 @@
     "globalMetadata": {
       "apiPlatform": "powershell",
       "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json",
-	  "ms.prod": "graph",
+	    "ms.prod": "non-product-specific",
       "ms.technology": "",
       "ms.topic": "reference",
-      "ms.author": "gendungu",
-      "author": "finsharp",
+      "ms.author": "twamalwa",
+      "author": "finsharp"
     },
     "fileMetadata": {},
     "template": [],
     "dest": "microsoftgraph-docs-powershell",
 	"monikerRange": {
-	  "docs-conceptual/**.*": "graph-powershell-1.0 || graph-powershell-beta",
+	  "docs-conceptual/**.*": "graph-powershell-1.0 || graph-powershell-beta"
 	},
     "markdownEngineName": "markdig"
   }

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementImportedDeviceIdentity
 
 ## SYNOPSIS
-The imported device identities.
+Update the navigation property importedDeviceIdentities in deviceManagement
 
 ## SYNTAX
 
@@ -16,9 +16,10 @@ The imported device identities.
 ```
 Update-MgDeviceManagementImportedDeviceIdentity -ImportedDeviceIdentityId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-EnrollmentState <String>] [-Id <String>] [-ImportedDeviceIdentifier <String>]
- [-ImportedDeviceIdentityType <String>] [-LastContactedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>]
- [-Platform <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EnrollmentState <EnrollmentState>] [-Id <String>] [-ImportedDeviceIdentifier <String>]
+ [-ImportedDeviceIdentityType <ImportedDeviceIdentityType>] [-LastContactedDateTime <DateTime>]
+ [-LastModifiedDateTime <DateTime>] [-Platform <Platform>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -31,9 +32,10 @@ Update-MgDeviceManagementImportedDeviceIdentity -ImportedDeviceIdentityId <Strin
 ```
 Update-MgDeviceManagementImportedDeviceIdentity -InputObject <IDeviceManagementEnrolmentIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-EnrollmentState <String>] [-Id <String>] [-ImportedDeviceIdentifier <String>]
- [-ImportedDeviceIdentityType <String>] [-LastContactedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>]
- [-Platform <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EnrollmentState <EnrollmentState>] [-Id <String>] [-ImportedDeviceIdentifier <String>]
+ [-ImportedDeviceIdentityType <ImportedDeviceIdentityType>] [-LastContactedDateTime <DateTime>]
+ [-LastModifiedDateTime <DateTime>] [-Platform <Platform>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -43,7 +45,7 @@ Update-MgDeviceManagementImportedDeviceIdentity -InputObject <IDeviceManagementE
 ```
 
 ## DESCRIPTION
-The imported device identities.
+Update the navigation property importedDeviceIdentities in deviceManagement
 
 ## EXAMPLES
 
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: EnrollmentState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -174,7 +176,7 @@ Accept wildcard characters: False
 importedDeviceIdentityType
 
 ```yaml
-Type: String
+Type: ImportedDeviceIdentityType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +252,7 @@ Accept wildcard characters: False
 platform
 
 ```yaml
-Type: String
+Type: Platform
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -311,23 +313,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphImportedDeviceIdentity>: The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration.
+BODYPARAMETER `<IMicrosoftGraphImportedDeviceIdentity>`: The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
   - `[Description <String>]`: The description of the device
-  - `[EnrollmentState <String>]`: 
+  - `[EnrollmentState <EnrollmentState?>]`: 
   - `[ImportedDeviceIdentifier <String>]`: Imported Device Identifier
-  - `[ImportedDeviceIdentityType <String>]`: importedDeviceIdentityType
+  - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
   - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
   - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
-  - `[Platform <String>]`: platform
+  - `[Platform <Platform?>]`: platform
 
-INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
-  - `[AppScopeId1 <String>]`: Usage: appScopeId={appScopeId}
   - `[AppleEnrollmentProfileAssignmentId <String>]`: key: id of appleEnrollmentProfileAssignment
   - `[AppleUserInitiatedEnrollmentProfileId <String>]`: key: id of appleUserInitiatedEnrollmentProfile
   - `[ApprovalId <String>]`: key: id of approval
@@ -336,15 +337,13 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceManagementAutopilotEventId <String>]`: key: id of deviceManagementAutopilotEvent
   - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: key: id of deviceManagementAutopilotPolicyStatusDetail
-  - `[DirectoryScopeId <String>]`: Usage: directoryScopeId={directoryScopeId}
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
   - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
   - `[ImportedAppleDeviceIdentityId <String>]`: key: id of importedAppleDeviceIdentity
   - `[ImportedDeviceIdentityId <String>]`: key: id of importedDeviceIdentity
   - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: key: id of importedWindowsAutopilotDeviceIdentity
-  - `[On <String>]`: Usage: on={on}
-  - `[PrincipalId <String>]`: Usage: principalId={principalId}
-  - `[RoleDefinitionId <String>]`: Usage: roleDefinitionId={roleDefinitionId}
+  - `[On <String>]`: Usage: on='{on}'
   - `[UnifiedRbacResourceActionId <String>]`: key: id of unifiedRbacResourceAction
   - `[UnifiedRbacResourceNamespaceId <String>]`: key: id of unifiedRbacResourceNamespace
   - `[UnifiedRoleAssignmentId <String>]`: key: id of unifiedRoleAssignment

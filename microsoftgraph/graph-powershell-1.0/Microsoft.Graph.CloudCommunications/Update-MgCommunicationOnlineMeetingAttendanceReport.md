@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingattendancereport
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgCommunicationOnlineMeetingAttendanceReport
 
 ## SYNOPSIS
-The attendance reports of an online meeting.
-Read-only.
+Update the navigation property attendanceReports in communications
 
 ## SYNTAX
 
@@ -44,8 +43,7 @@ Update-MgCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunic
 ```
 
 ## DESCRIPTION
-The attendance reports of an online meeting.
-Read-only.
+Update the navigation property attendanceReports in communications
 
 ## EXAMPLES
 
@@ -100,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -273,8 +271,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord[]>: List of attendance records of an attendance report. Read-only.
-  - `[Id <String>]`: Read-only.
+ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord\[]>: List of attendance records of an attendance report. Read-only.
+  - `[Id <String>]`: 
   - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
     - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
     - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
@@ -282,16 +280,16 @@ ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord[]>: List of attendance record
   - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
   - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
   - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
 
-BODYPARAMETER <IMicrosoftGraphMeetingAttendanceReport>: meetingAttendanceReport
+BODYPARAMETER `<IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceReport
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
       - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
       - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
@@ -299,7 +297,7 @@ BODYPARAMETER <IMicrosoftGraphMeetingAttendanceReport>: meetingAttendanceReport
     - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
     - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -307,11 +305,12 @@ BODYPARAMETER <IMicrosoftGraphMeetingAttendanceReport>: meetingAttendanceReport
   - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
   - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport

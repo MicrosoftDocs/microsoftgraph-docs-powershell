@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgexecutedevicemanagementmanageddeviceaction
@@ -14,10 +14,11 @@ Invoke action executeAction
 
 ### ExecuteExpanded (Default)
 ```
-Invoke-MgExecuteDeviceManagementManagedDeviceAction [-ActionName <String>] [-AdditionalProperties <Hashtable>]
- [-CarrierUrl <String>] [-DeprovisionReason <String>] [-DeviceIds <String[]>] [-DeviceName <String>]
- [-KeepEnrollmentData] [-KeepUserData] [-NotificationBody <String>] [-NotificationTitle <String>]
- [-OrganizationalUnitPath <String>] [-PersistEsimDataPlan] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgExecuteDeviceManagementManagedDeviceAction [-ActionName <ManagedDeviceRemoteAction>]
+ [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-DeprovisionReason <String>]
+ [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData] [-KeepUserData]
+ [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
+ [-PersistEsimDataPlan] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Execute
@@ -38,7 +39,7 @@ Invoke action executeAction
 managedDeviceRemoteAction
 
 ```yaml
-Type: String
+Type: ManagedDeviceRemoteAction
 Parameter Sets: ExecuteExpanded
 Aliases:
 
@@ -279,7 +280,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActionName <String>]`: managedDeviceRemoteAction
   - `[CarrierUrl <String>]`: 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 
 ## SYNOPSIS
-The list of operations on the uploaded ADMX file.
+Create new navigation property to groupPolicyOperations for deviceManagement
 
 ## SYNTAX
 
@@ -16,8 +16,9 @@ The list of operations on the uploaded ADMX file.
 ```
 New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
  -GroupPolicyUploadedDefinitionFileId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OperationStatus <String>] [-OperationType <String>]
- [-StatusDetails <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-OperationStatus <GroupPolicyOperationStatus>]
+ [-OperationType <GroupPolicyOperationType>] [-StatusDetails <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -31,8 +32,9 @@ New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 ```
 New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OperationStatus <String>] [-OperationType <String>]
- [-StatusDetails <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-OperationStatus <GroupPolicyOperationStatus>]
+ [-OperationType <GroupPolicyOperationType>] [-StatusDetails <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -43,7 +45,7 @@ New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 ```
 
 ## DESCRIPTION
-The list of operations on the uploaded ADMX file.
+Create new navigation property to groupPolicyOperations for deviceManagement
 
 ## EXAMPLES
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -145,7 +147,7 @@ Accept wildcard characters: False
 Type of Group Policy operation status.
 
 ```yaml
-Type: String
+Type: GroupPolicyOperationStatus
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +162,7 @@ Accept wildcard characters: False
 Type of Group Policy operation.
 
 ```yaml
-Type: String
+Type: GroupPolicyOperationType
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -236,15 +238,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphGroupPolicyOperation>: The entity represents an group policy operation.
+BODYPARAMETER `<IMicrosoftGraphGroupPolicyOperation>`: The entity represents an group policy operation.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
-  - `[OperationStatus <String>]`: Type of Group Policy operation status.
-  - `[OperationType <String>]`: Type of Group Policy operation.
+  - `[OperationStatus <GroupPolicyOperationStatus?>]`: Type of Group Policy operation status.
+  - `[OperationType <GroupPolicyOperationType?>]`: Type of Group Policy operation.
   - `[StatusDetails <String>]`: The group policy operation status detail.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -267,6 +269,7 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
   - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
   - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
+  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
   - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
   - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
   - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport

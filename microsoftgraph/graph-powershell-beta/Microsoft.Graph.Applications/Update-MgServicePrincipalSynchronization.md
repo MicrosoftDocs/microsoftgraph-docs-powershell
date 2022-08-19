@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronization
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -237,11 +237,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSynchronization>: synchronization
+BODYPARAMETER `<IMicrosoftGraphSynchronization>`: synchronization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Jobs <IMicrosoftGraphSynchronizationJob[]>]`: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -249,9 +249,9 @@ BODYPARAMETER <IMicrosoftGraphSynchronization>: synchronization
       - `[State <String>]`: synchronizationScheduleState
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.
-        - `[Id <String>]`: Read-only.
+        - `[Id <String>]`: 
         - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
         - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Name <String>]`: Name of the directory. Must be unique within the synchronization schema. Not nullable.
@@ -377,7 +377,7 @@ BODYPARAMETER <IMicrosoftGraphSynchronization>: synchronization
     - `[Key <String>]`: synchronizationSecret
     - `[Value <String>]`: The value of the secret.
   - `[Templates <IMicrosoftGraphSynchronizationTemplate[]>]`: Pre-configured synchronization settings for a particular application.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[ApplicationId <String>]`: Identifier of the application this template belongs to.
     - `[Default <Boolean?>]`: true if this template is recommended to be the default for the application.
     - `[Description <String>]`: Description of the template.
@@ -386,33 +386,38 @@ BODYPARAMETER <IMicrosoftGraphSynchronization>: synchronization
     - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+  - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
   - `[ApplicationTemplateId <String>]`: key: id of applicationTemplate
+  - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[ConnectorGroupId <String>]`: key: id of connectorGroup
   - `[ConnectorId <String>]`: key: id of connector
   - `[DelegatedPermissionClassificationId <String>]`: key: id of delegatedPermissionClassification
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
   - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
+  - `[HomeRealmDiscoveryPolicyId <String>]`: key: id of homeRealmDiscoveryPolicy
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
+  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
   - `[OnPremisesAgentGroupId1 <String>]`: key: id of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: key: id of onPremisesAgent
-  - `[OnPremisesAgentId1 <String>]`: key: id of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: key: id of onPremisesPublishingProfile
   - `[PublishedResourceId <String>]`: key: id of publishedResource
-  - `[PublishedResourceId1 <String>]`: key: id of publishedResource
   - `[ServicePrincipalId <String>]`: key: id of servicePrincipal
   - `[SynchronizationJobId <String>]`: key: id of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: key: id of synchronizationTemplate
+  - `[TokenIssuancePolicyId <String>]`: key: id of tokenIssuancePolicy
+  - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
   - `[UserId <String>]`: key: id of user
 
-JOBS <IMicrosoftGraphSynchronizationJob[]>: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
-  - `[Id <String>]`: Read-only.
+JOBS <IMicrosoftGraphSynchronizationJob\[]>: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
+  - `[Id <String>]`: 
   - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -420,9 +425,9 @@ JOBS <IMicrosoftGraphSynchronizationJob[]>: Performs synchronization by periodic
     - `[State <String>]`: synchronizationScheduleState
   - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
       - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Name <String>]`: Name of the directory. Must be unique within the synchronization schema. Not nullable.
@@ -545,12 +550,12 @@ JOBS <IMicrosoftGraphSynchronizationJob[]>: Performs synchronization by periodic
     - `[Value <String>]`: Value for this key-value pair
   - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
 
-SECRETS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: Represents a collection of credentials to access provisioned cloud applications.
+SECRETS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair\[]>: Represents a collection of credentials to access provisioned cloud applications.
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
-TEMPLATES <IMicrosoftGraphSynchronizationTemplate[]>: Pre-configured synchronization settings for a particular application.
-  - `[Id <String>]`: Read-only.
+TEMPLATES <IMicrosoftGraphSynchronizationTemplate\[]>: Pre-configured synchronization settings for a particular application.
+  - `[Id <String>]`: 
   - `[ApplicationId <String>]`: Identifier of the application this template belongs to.
   - `[Default <Boolean?>]`: true if this template is recommended to be the default for the application.
   - `[Description <String>]`: Description of the template.
@@ -561,9 +566,9 @@ TEMPLATES <IMicrosoftGraphSynchronizationTemplate[]>: Pre-configured synchroniza
     - `[Value <String>]`: Value of the metadata property.
   - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
       - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Name <String>]`: Name of the directory. Must be unique within the synchronization schema. Not nullable.

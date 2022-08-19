@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Usage: status={status}
+Usage: status='{status}'
 
 ```yaml
 Type: String

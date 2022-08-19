@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicydevicestatesummary
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
 
 ## SYNOPSIS
-The device compliance state summary for this account.
+Delete navigation property deviceCompliancePolicyDeviceStateSummary for deviceManagement
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-The device compliance state summary for this account.
+Delete navigation property deviceCompliancePolicyDeviceStateSummary for deviceManagement
 
 ## EXAMPLES
 

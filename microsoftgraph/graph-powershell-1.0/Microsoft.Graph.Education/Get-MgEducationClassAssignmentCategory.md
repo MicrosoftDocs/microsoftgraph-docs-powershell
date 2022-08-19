@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategory
@@ -19,13 +19,7 @@ Get-MgEducationClassAssignmentCategory -EducationClassId <String> [-ExpandProper
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get2
-```
-Get-MgEducationClassAssignmentCategory -EducationCategoryId <String> -EducationClassId <String>
- -EducationAssignmentId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### Get1
+### Get
 ```
 Get-MgEducationClassAssignmentCategory -EducationCategoryId <String> -EducationClassId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
@@ -38,13 +32,7 @@ Get-MgEducationClassAssignmentCategory -EducationClassId <String> -EducationAssi
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
-```
-Get-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -93,7 +81,7 @@ key: id of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Get2, List2
+Parameter Sets: List2
 Aliases:
 
 Required: True
@@ -108,7 +96,7 @@ key: id of educationCategory
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -123,7 +111,7 @@ key: id of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get2, Get1, List2
+Parameter Sets: List1, Get, List2
 Aliases:
 
 Required: True
@@ -169,7 +157,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -287,7 +275,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
+INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

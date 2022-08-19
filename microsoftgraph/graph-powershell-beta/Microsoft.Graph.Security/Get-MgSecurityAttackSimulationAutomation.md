@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityAttackSimulationAutomation
 
 ## SYNOPSIS
-Represents simulation automations created to run on a tenant.
+Get simulationAutomations from security
 
 ## SYNTAX
 
@@ -32,16 +32,9 @@ Get-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Represents simulation automations created to run on a tenant.
+Get simulationAutomations from security
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -55,7 +48,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -132,7 +125,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -207,7 +200,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -222,7 +215,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -237,9 +230,56 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomation
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+  - `[AlertId <String>]`: key: id of alert
+  - `[AuthoredNoteId <String>]`: key: id of authoredNote
+  - `[CaseOperationId <String>]`: key: id of caseOperation
+  - `[CloudAppSecurityProfileId <String>]`: key: id of cloudAppSecurityProfile
+  - `[DataSourceId <String>]`: key: id of dataSource
+  - `[DispositionReviewStageId <String>]`: key: id of dispositionReviewStage
+  - `[DomainSecurityProfileId <String>]`: key: id of domainSecurityProfile
+  - `[EdiscoveryCaseId <String>]`: key: id of ediscoveryCase
+  - `[EdiscoveryCustodianId <String>]`: key: id of ediscoveryCustodian
+  - `[EdiscoveryFileId <String>]`: key: id of ediscoveryFile
+  - `[EdiscoveryHoldPolicyId <String>]`: key: id of ediscoveryHoldPolicy
+  - `[EdiscoveryNoncustodialDataSourceId <String>]`: key: id of ediscoveryNoncustodialDataSource
+  - `[EdiscoveryReviewSetId <String>]`: key: id of ediscoveryReviewSet
+  - `[EdiscoveryReviewSetQueryId <String>]`: key: id of ediscoveryReviewSetQuery
+  - `[EdiscoveryReviewTagId <String>]`: key: id of ediscoveryReviewTag
+  - `[EdiscoveryReviewTagId1 <String>]`: key: id of ediscoveryReviewTag
+  - `[EdiscoverySearchId <String>]`: key: id of ediscoverySearch
+  - `[EmailThreatSubmissionId <String>]`: key: id of emailThreatSubmission
+  - `[EmailThreatSubmissionPolicyId <String>]`: key: id of emailThreatSubmissionPolicy
+  - `[FileSecurityProfileId <String>]`: key: id of fileSecurityProfile
+  - `[FileThreatSubmissionId <String>]`: key: id of fileThreatSubmission
+  - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
+  - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
+  - `[IncidentId <String>]`: key: id of incident
+  - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
+  - `[RetentionEventId <String>]`: key: id of retentionEvent
+  - `[RetentionEventTypeId <String>]`: key: id of retentionEventType
+  - `[RetentionLabelId <String>]`: key: id of retentionLabel
+  - `[SecureScoreControlProfileId <String>]`: key: id of secureScoreControlProfile
+  - `[SecureScoreId <String>]`: key: id of secureScore
+  - `[SecurityActionId <String>]`: key: id of securityAction
+  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
+  - `[SimulationAutomationId <String>]`: key: id of simulationAutomation
+  - `[SimulationAutomationRunId <String>]`: key: id of simulationAutomationRun
+  - `[SimulationId <String>]`: key: id of simulation
+  - `[SiteSourceId <String>]`: key: id of siteSource
+  - `[SubjectRightsRequestId <String>]`: key: id of subjectRightsRequest
+  - `[TiIndicatorId <String>]`: key: id of tiIndicator
+  - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
+  - `[UrlThreatSubmissionId <String>]`: key: id of urlThreatSubmission
+  - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
+  - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomation](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomation)
-

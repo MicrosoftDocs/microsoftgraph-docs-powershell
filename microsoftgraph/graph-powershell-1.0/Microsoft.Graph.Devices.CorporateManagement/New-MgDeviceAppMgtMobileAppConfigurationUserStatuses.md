@@ -15,8 +15,8 @@ Invoke action targetApps
 ### TargetExpanded1 (Default)
 ```
 Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp -TargetedManagedAppConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-AppGroupType <String>] [-Apps <IMicrosoftGraphManagedMobileApp[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AppGroupType <TargetedManagedAppGroupType>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Target1
@@ -30,8 +30,8 @@ Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp -TargetedManagedAp
 ```
 Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp
  -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-AppGroupType <String>] [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AppGroupType <TargetedManagedAppGroupType>] [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TargetViaIdentity1
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
 
 ```yaml
-Type: String
+Type: TargetedManagedAppGroupType
 Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
 Aliases:
 
@@ -207,13 +207,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPS <IMicrosoftGraphManagedMobileApp[]>: .
+APPS <IMicrosoftGraphManagedMobileApp\[]>: .
   - `[Id <String>]`: Read-only.
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Version <String>]`: Version of the entity.
 
-BODYPARAMETER <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppGroupType <String>]`: Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
   - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: 
@@ -222,7 +222,7 @@ BODYPARAMETER <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTa
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Version <String>]`: Version of the entity.
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails

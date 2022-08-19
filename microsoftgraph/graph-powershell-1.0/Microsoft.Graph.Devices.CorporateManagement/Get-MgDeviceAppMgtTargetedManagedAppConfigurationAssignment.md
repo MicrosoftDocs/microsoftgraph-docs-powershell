@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment
 
 ## SYNOPSIS
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+Get assignments from deviceAppManagement
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+Get assignments from deviceAppManagement
 
 ## EXAMPLES
 

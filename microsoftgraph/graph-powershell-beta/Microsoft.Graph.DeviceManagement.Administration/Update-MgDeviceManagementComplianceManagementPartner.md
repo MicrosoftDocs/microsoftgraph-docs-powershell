@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementComplianceManagementPartner
 
 ## SYNOPSIS
-The list of Compliance Management Partners configured by the tenant.
+Update the navigation property complianceManagementPartners in deviceManagement
 
 ## SYNTAX
 
@@ -21,7 +21,7 @@ Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartne
  [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-IosOnboarded]
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-MacOSOnboarded]
- [-PartnerState <String>]
+ [-PartnerState <DeviceManagementPartnerTenantState>]
  [-WindowsEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-WindowsOnboarded]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -29,7 +29,7 @@ Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartne
 ### Update
 ```
 Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId <String>
- -BodyParameter <IMicrosoftGraphComplianceManagementPartner1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphComplianceManagementPartner> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
  [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-IosOnboarded]
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-MacOSOnboarded]
- [-PartnerState <String>]
+ [-PartnerState <DeviceManagementPartnerTenantState>]
  [-WindowsEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-WindowsOnboarded]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -50,12 +50,12 @@ Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphComplianceManagementPartner1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphComplianceManagementPartner> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The list of Compliance Management Partners configured by the tenant.
+Update the navigation property complianceManagementPartners in deviceManagement
 
 ## EXAMPLES
 
@@ -112,7 +112,7 @@ Compliance management partner for all platforms
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartner1
+Type: IMicrosoftGraphComplianceManagementPartner
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 Partner state of this tenant.
 
 ```yaml
-Type: String
+Type: DeviceManagementPartnerTenantState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -359,7 +359,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
 ## OUTPUTS
 
 ### System.Boolean
@@ -372,20 +372,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>: User groups which enroll Android devices through partner.
+ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1\[]>: User groups which enroll Android devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner1>: Compliance management partner for all platforms
+BODYPARAMETER `<IMicrosoftGraphComplianceManagementPartner>`: Compliance management partner for all platforms
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>]`: User groups which enroll Android devices through partner.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[AndroidOnboarded <Boolean?>]`: Partner onboarded for Android devices.
   - `[DisplayName <String>]`: Partner display name
   - `[IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>]`: User groups which enroll ios devices through partner.
@@ -393,11 +393,11 @@ BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner1>: Compliance manageme
   - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin onboarded to the compliance management partner
   - `[MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>]`: User groups which enroll Mac devices through partner.
   - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
-  - `[PartnerState <String>]`: Partner state of this tenant.
+  - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
   - `[WindowsEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>]`: User groups which enroll Windows devices through partner.
   - `[WindowsOnboarded <Boolean?>]`: Partner onboarded for Windows devices.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -420,6 +420,7 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
   - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
   - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
+  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
   - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
   - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
   - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
@@ -449,22 +450,22 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
-IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>: User groups which enroll ios devices through partner.
+IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1\[]>: User groups which enroll ios devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>: User groups which enroll Mac devices through partner.
+MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1\[]>: User groups which enroll Mac devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-WINDOWSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>: User groups which enroll Windows devices through partner.
+WINDOWSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment1\[]>: User groups which enroll Windows devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS

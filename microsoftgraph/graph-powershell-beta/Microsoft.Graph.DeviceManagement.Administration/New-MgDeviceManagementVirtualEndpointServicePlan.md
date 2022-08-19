@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementVirtualEndpointServicePlan
 
 ## SYNOPSIS
-Cloud PC service plans.
+Create new navigation property to servicePlans for deviceManagement
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementVirtualEndpointServicePlan -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Cloud PC service plans.
+Create new navigation property to servicePlans for deviceManagement
 
 ## EXAMPLES
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -222,9 +222,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCloudPcServicePlan>: cloudPcServicePlan
+BODYPARAMETER `<IMicrosoftGraphCloudPcServicePlan>`: cloudPcServicePlan
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name for the service plan. Read-only.
   - `[RamInGb <Int32?>]`: The size of the RAM in GB. Read-only.
   - `[StorageInGb <Int32?>]`: The size of the OS Disk in GB. Read-only.
