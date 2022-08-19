@@ -27,7 +27,13 @@
     - name: Query parameters
       items:
         - name: Use query parameters
-          href: use-query-parameters.md                  
+          href: use-query-parameters.md   
+    - name: Grant API permissions
+      items:
+        - name: Manage delegated permissions
+          href: tutorial-grant-delegated-api-permissions.md
+        - name: Manage app roles
+          href: tutorial-grant-app-only-api-permissions.md                      
 - name: Migrate to Microsoft Graph PowerShell
   items:   
   - name: Migrate from Azure AD PowerShell
