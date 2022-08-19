@@ -28,7 +28,7 @@ Update-Module Microsoft.Graph
 
 ## Profile related errors
 
-By default, the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default. As a result, you might encounter an error if you run a command that isn't available in your current profile.
+By default, Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default. As a result, you might encounter an error if you run a command that isn't available in your current profile.
 
 For example, when you run a cmdlet that isn't available in your current profile, you'll get the following error. This error can also occur if the cmdlet you run doesn't exist.
 
@@ -60,7 +60,7 @@ To find the permissions required for a specific cmdlet or API, use [Find-MgGraph
 
 When you run Connect-MgGraph, you grant consent to Microsoft Graph PowerShell permissions. Here, you specify the permissions that you require using the **-Scopes** parameter.
 
-For example, in the error below, the user lacks the permissions to run New-MgServicePrincipal.
+For example, in the error below, the user lacks the permissions to run the New-MgServicePrincipal cmdlet.
 
 :::image type="content" source="images/permissions-error.png" alt-text="Insufficient privileges error":::
 
@@ -78,7 +78,7 @@ Application.ReadWrite.All True    Read and write applications Allows the app to 
 
 Run `Connect-MgGraph -Scopes Application.ReadWrite.All` and retry to correct the error.
 
-For app-only access, pre-configure the applications permissions your app needs when you register your app. Application permissions will require administrator consent, which can be consented to either using the [Azure portal](/graph/auth-v2-service) or using a sign-up experience in your app.
+For app-only access, pre-configure the application permissions your app needs when you register your app. Application permissions will require administrator consent, which can be consented to either using the [Azure portal](/graph/auth-v2-service) or using a sign-up experience in your app.
 
 Alternatively, use [New-MgServicePrincipalAppRoleAssignment](/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment) to assign app roles to your app.
 
@@ -91,7 +91,7 @@ The **-Debug** parameter provides a powerful way to examine a script while it's 
 1. **cmdletBeginProcessing** - this part allows you to confirm the cmdlet you're running and the parameter list provided to the cmdlet. For example, `DEBUG: [CmdletBeginProcessing]: - Get-MgUser begin processing with parameterSet 'List1'.` shows that we're running the `Get-MgUser` cmdlet and the parameter list is `List1`.
 1. **AuthType** - will either be `delegated` or `application`.
 1. **AuthProviderType** - the type of authentication that you've used. For example, interactive, device-code, and certificate.
-1. **Scopes** - shows all the scopes that you've authenticated to for the particular application, acquired by decoding the access token and getting the SCP claim.
+1. **Scopes** - shows all the scopes that you've authenticated to for the particular application, acquired by decoding the access token.
 1. **HTTP request** - comprises of:
     1. Method - could be GET, POST, PUSH, UPDATE
     1. URI - URI will change based on the cloud you're connected to and the version of the SDK you're connected to.
@@ -109,7 +109,7 @@ To enable debug logging on a per command basis, specify the **-Debug** parameter
 Get-MgUser -UserId 'DoesNotExist' -Debug
 ```
 
-The following image shows an output of this command.
+The following image shows a sample output of this command.
 
 :::image type="content" source="images/sample-debug-response.png" alt-text="sample debug output":::
 
