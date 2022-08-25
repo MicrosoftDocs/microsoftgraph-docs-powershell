@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-Module Guid: 9629ac08-4760-467d-851c-bc52336edb94
+Module Guid: e8e7f9fb-31f9-4d88-a659-4a820bb00c36
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -24,10 +24,10 @@ Invoke function compare
 Invoke function verifyWindowsEnrollmentAutoDiscovery
 
 ### [Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig](Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig.md)
-Exports the mobile configuration
+Invoke function exportMobileConfig
 
 ### [Get-MgDeviceManagementAssignedRoleDetail](Get-MgDeviceManagementAssignedRoleDetail.md)
-Retrieves the assigned role definitions and role assignments of the currently authenticated user.
+Invoke function getAssignedRoleDetails
 
 ### [Get-MgDeviceManagementAssignmentFilterPlatformSupportedProperty](Get-MgDeviceManagementAssignmentFilterPlatformSupportedProperty.md)
 Invoke function getPlatformSupportedProperties
@@ -69,7 +69,7 @@ Invoke function getComanagementEligibleDevicesSummary
 Invoke function getPolicySummary
 
 ### [Get-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey](Get-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey.md)
-Get a public key to use to encrypt the Apple device enrollment program token
+Invoke function getEncryptionPublicKey
 
 ### [Get-MgDeviceManagementDepOnboardingSettingExpiringVppTokenCount](Get-MgDeviceManagementDepOnboardingSettingExpiringVppTokenCount.md)
 Invoke function getExpiringVppTokenCount
@@ -84,7 +84,7 @@ Invoke function getIosAvailableUpdateVersions
 Invoke function getOmaSettingPlainTextValue
 
 ### [Get-MgDeviceManagementDeviceHealthScriptRemediationHistory](Get-MgDeviceManagementDeviceHealthScriptRemediationHistory.md)
-Function to get the number of remediations by a device health scripts
+Invoke function getRemediationHistory
 
 ### [Get-MgDeviceManagementDeviceHealthScriptRemediationSummary](Get-MgDeviceManagementDeviceHealthScriptRemediationSummary.md)
 Invoke function getRemediationSummary
@@ -125,6 +125,9 @@ Invoke function getState
 ### [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType.md)
 Invoke function getAuditActivityTypes
 
+### [Get-MgDeviceManagementVirtualEndpointCloudPcConnectivityHistory](Get-MgDeviceManagementVirtualEndpointCloudPcConnectivityHistory.md)
+Invoke function getCloudPcConnectivityHistory
+
 ### [Get-MgDeviceManagementVirtualEndpointCloudPcLaunchInfo](Get-MgDeviceManagementVirtualEndpointCloudPcLaunchInfo.md)
 Invoke function getCloudPcLaunchInfo
 
@@ -144,7 +147,7 @@ Invoke function getSubscriptions
 Invoke function hasCustomRoleScopeTag
 
 ### [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
-Download Apple push notification certificate signing request
+Invoke function downloadApplePushNotificationCertificateSigningRequest
 
 ### [Invoke-MgExperienceDeviceManagement](Invoke-MgExperienceDeviceManagement.md)
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices

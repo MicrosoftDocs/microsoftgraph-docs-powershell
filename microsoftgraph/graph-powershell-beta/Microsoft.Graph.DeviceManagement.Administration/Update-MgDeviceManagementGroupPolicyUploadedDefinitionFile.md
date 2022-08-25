@@ -471,6 +471,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyUploadedDefinitionFile>`: The entity r
         - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
       - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The immediate GroupPolicyDefinition children of the category
       - `[DisplayName <String>]`: The string id of the category's display name
+      - `[IngestionSource <IngestionSource?>]`: Category Ingestion source
       - `[IsRoot <Boolean?>]`: Defines if the category is a root category
       - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
       - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
@@ -542,6 +543,7 @@ DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition\[]>: The group policy definiti
       - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
     - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The immediate GroupPolicyDefinition children of the category
     - `[DisplayName <String>]`: The string id of the category's display name
+    - `[IngestionSource <IngestionSource?>]`: Category Ingestion source
     - `[IsRoot <Boolean?>]`: Defines if the category is a root category
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
     - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
@@ -585,6 +587,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcExternalPartnerSettingId <String>]`: key: id of cloudPcExternalPartnerSetting
   - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
@@ -634,8 +637,5 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

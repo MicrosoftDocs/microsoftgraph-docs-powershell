@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserCalendar
 
 ## SYNOPSIS
-The user's primary calendar.
-Read-only.
+Get calendars from users
 
 ## SYNTAX
 
@@ -30,8 +29,7 @@ Get-MgUserCalendar -InputObject <ICalendarIdentity> [-Property <String[]>] [<Com
 ```
 
 ## DESCRIPTION
-The user's primary calendar.
-Read-only.
+Get calendars from users
 
 ## EXAMPLES
 
@@ -229,6 +227,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

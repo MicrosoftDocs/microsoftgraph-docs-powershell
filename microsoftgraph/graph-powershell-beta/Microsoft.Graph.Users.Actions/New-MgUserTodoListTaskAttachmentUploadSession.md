@@ -208,18 +208,18 @@ To create the parameters described below, construct a hash table containing the 
 ATTACHMENTINFO `<IMicrosoftGraphAttachmentInfo>`: attachmentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentType <String>]`: attachmentType
-  - `[ContentType <String>]`: 
-  - `[Name <String>]`: 
-  - `[Size <Int64?>]`: 
+  - `[ContentType <String>]`: The nature of the data in the attachment. Optional.
+  - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
+  - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
 BODYPARAMETER `<IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentInfo <IMicrosoftGraphAttachmentInfo>]`: attachmentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttachmentType <String>]`: attachmentType
-    - `[ContentType <String>]`: 
-    - `[Name <String>]`: 
-    - `[Size <Int64?>]`: 
+    - `[ContentType <String>]`: The nature of the data in the attachment. Optional.
+    - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
+    - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
 INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
@@ -259,6 +259,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

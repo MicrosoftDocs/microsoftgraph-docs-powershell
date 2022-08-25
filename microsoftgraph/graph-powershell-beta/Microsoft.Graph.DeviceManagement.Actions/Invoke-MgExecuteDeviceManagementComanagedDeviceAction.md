@@ -282,7 +282,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IPaths5Wfb68DevicemanagementComanageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ActionName <String>]`: managedDeviceRemoteAction
+  - `[ActionName <ManagedDeviceRemoteAction?>]`: managedDeviceRemoteAction
   - `[CarrierUrl <String>]`: 
   - `[DeprovisionReason <String>]`: 
   - `[DeviceIds <String[]>]`: 

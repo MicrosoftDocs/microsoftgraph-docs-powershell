@@ -521,7 +521,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDevicePerformance>`: The u
   - `[DiskType <DiskType?>]`: diskType
   - `[GroupPolicyBootTimeInMS <Int32?>]`: The user experience analytics device group policy boot time in milliseconds.
   - `[GroupPolicyLoginTimeInMS <Int32?>]`: The user experience analytics device group policy login time in milliseconds.
-  - `[HealthStatus <String>]`: userExperienceAnalyticsHealthState
+  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
   - `[LoginScore <Int32?>]`: The user experience analytics device login score.
   - `[Manufacturer <String>]`: The user experience analytics device manufacturer.
   - `[Model <String>]`: The user experience analytics device model.

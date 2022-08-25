@@ -256,7 +256,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicy>`: crossTenantAccessPolicy
+BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicy1>`: crossTenantAccessPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Definition <String[]>]`: 
   - `[Description <String>]`: Description for this policy. Required.

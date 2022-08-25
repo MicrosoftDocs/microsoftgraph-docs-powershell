@@ -343,7 +343,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerfo
   - `[CloudIdentityScore <Double?>]`: The user experience work from anywhere's cloud identity score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[CloudManagementScore <Double?>]`: The user experience work from anywhere's cloud management score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[CloudProvisioningScore <Double?>]`: The user experience work from anywhere's cloud provisioning score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[HealthStatus <String>]`: userExperienceAnalyticsHealthState
+  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
   - `[Manufacturer <String>]`: The user experience work from anywhere's manufacturer name of the devices.
   - `[Model <String>]`: The user experience work from anywhere's model name of the devices.
   - `[ModelDeviceCount <Int32?>]`: The user experience work from anywhere's devices count for the model. Valid values -2147483648 to 2147483647

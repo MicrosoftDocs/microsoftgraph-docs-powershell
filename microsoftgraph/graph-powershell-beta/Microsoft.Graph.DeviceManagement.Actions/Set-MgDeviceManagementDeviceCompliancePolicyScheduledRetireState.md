@@ -161,6 +161,6 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IPathsZtf0R2DevicemanagementDevicecompliancepoliciesMicrosoftGraphSetscheduledretirestatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ManagedDeviceIds <String[]>]`: 
-  - `[State <String>]`: Cancel or confirm scheduled retire 
+  - `[State <ScheduledRetireState?>]`: Cancel or confirm scheduled retire 
 
 ## RELATED LINKS

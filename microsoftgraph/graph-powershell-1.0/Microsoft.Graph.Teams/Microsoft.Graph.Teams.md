@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: 70816f2b-e7a1-4c6f-a0c2-96b3dd9f572b
+Module Guid: 6b451670-6de4-469a-886b-445b0875fc7a
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -45,7 +45,7 @@ Get appDefinitions from appCatalogs
 Get bot from appCatalogs
 
 ### [Get-MgChat](Get-MgChat.md)
-Get entity from chats by key
+Get chat
 
 ### [Get-MgChatInstalledApp](Get-MgChatInstalledApp.md)
 Get installedApps from chats

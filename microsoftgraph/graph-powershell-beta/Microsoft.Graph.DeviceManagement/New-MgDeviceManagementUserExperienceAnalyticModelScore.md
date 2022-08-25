@@ -276,7 +276,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsModelScores>`: The user ex
   - `[AppReliabilityScore <Double?>]`: The user experience analytics model app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[BatteryHealthScore <Double?>]`: The user experience analytics model battery health score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[EndpointAnalyticsScore <Double?>]`: The user experience analytics model score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[HealthStatus <String>]`: userExperienceAnalyticsHealthState
+  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
   - `[Manufacturer <String>]`: A unique identifier of the user experience analytics model scores: device manufacturer.
   - `[Model <String>]`: A unique identifier of the user experience analytics model scores: device model.
   - `[ModelDeviceCount <Int64?>]`: The user experience analytics model device count. Valid values -9.22337203685478E+18 to 9.22337203685478E+18

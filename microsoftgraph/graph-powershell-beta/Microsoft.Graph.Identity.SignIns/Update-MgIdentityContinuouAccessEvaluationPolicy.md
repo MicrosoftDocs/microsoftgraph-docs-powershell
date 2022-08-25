@@ -31,13 +31,6 @@ Update the navigation property continuousAccessEvaluationPolicy in identity
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -146,7 +139,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -161,7 +154,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -176,7 +169,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -239,9 +232,22 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER `<IMicrosoftGraphContinuousAccessEvaluationPolicy>`: continuousAccessEvaluationPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: 
+  - `[Description <String>]`: Continuous access evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes. Read-only.
+  - `[DisplayName <String>]`: The value is always Continuous Access Evaluation. Read-only.
+  - `[Groups <String[]>]`: The collection of group identifiers in scope for evaluation. All groups are in scope when the collection is empty. Read-only.
+  - `[IsEnabled <Boolean?>]`: true to indicate whether continuous access evaluation should be performed; otherwise false. Read-only.
+  - `[Migrate <Boolean?>]`: true to indicate that the continuous access evaluation policy settings should be or has been migrated to the conditional access policy.
+  - `[Users <String[]>]`: The collection of user identifiers in scope for evaluation. All users are in scope when the collection is empty. Read-only.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentitycontinuouaccessevaluationpolicy](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentitycontinuouaccessevaluationpolicy)
-

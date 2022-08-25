@@ -3,6 +3,13 @@
 trigger: none # disable triggers based on commits.
 pr: none # disable as a PR gate.
 name: 'PowerShellDocsUpdate Check'
+schedules:
+  - cron: "0 3 * * THU"  # every Thursday at 3AM UTC (off hours for Redmond, Nairobi and Montréal)
+    displayName: 'PowerShellDocsUpdate Check'
+    branches:
+      include:
+      - main
+    always: true
 
 parameters:
 - name: PipelineTimeout

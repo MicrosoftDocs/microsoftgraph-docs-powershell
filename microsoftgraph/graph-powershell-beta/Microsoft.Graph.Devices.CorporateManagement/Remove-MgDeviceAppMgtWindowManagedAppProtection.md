@@ -1,49 +1,136 @@
 ---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmgtwindowmanagedappprotection
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermobileapptroubleshootingeventapplogcollectionrequest
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceAppMgtWindowManagedAppProtection
+# New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Delete navigation property windowsManagedAppProtections for deviceAppManagement
+Create new navigation property to appLogCollectionRequests for users
 
 ## SYNTAX
 
-### Delete (Default)
+### CreateExpanded (Default)
 ```
-Remove-MgDeviceAppMgtWindowManagedAppProtection -WindowsManagedAppProtectionId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest -MobileAppTroubleshootingEventId <String>
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
+ [-CustomLogFolders <String[]>] [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### Create
 ```
-Remove-MgDeviceAppMgtWindowManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest -MobileAppTroubleshootingEventId <String>
+ -UserId <String> -BodyParameter <IMicrosoftGraphAppLogCollectionRequest> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
+ [-CompletedDateTime <DateTime>] [-CustomLogFolders <String[]>] [-ErrorMessage <String>] [-Id <String>]
+ [-Status <AppLogUploadState>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphAppLogCollectionRequest>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property windowsManagedAppProtections for deviceAppManagement
+Create new navigation property to appLogCollectionRequests for users
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
-### -IfMatch
-ETag
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+AppLogCollectionRequest Entity.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAppLogCollectionRequest
+Parameter Sets: Create, CreateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CompletedDateTime
+Time at which the upload log request reached a terminal state
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomLogFolders
+List of log folders.
+
+```yaml
+Type: String[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ErrorMessage
+Error message if any during the upload process
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -59,7 +146,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -69,27 +156,42 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -MobileAppTroubleshootingEventId
+key: id of mobileAppTroubleshootingEvent
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
-Required: False
+Required: True
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WindowsManagedAppProtectionId
-key: id of windowsManagedAppProtection
+### -Status
+AppLogUploadStatus
+
+```yaml
+Type: AppLogUploadState
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserId
+key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -136,13 +238,94 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER `<IMicrosoftGraphAppLogCollectionRequest>`: AppLogCollectionRequest Entity.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: 
+  - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a terminal state
+  - `[CustomLogFolders <String[]>]`: List of log folders.
+  - `[ErrorMessage <String>]`: Error message if any during the upload process
+  - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
+
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+  - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
+  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
+  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
+  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
+  - `[Count <Int64?>]`: Usage: count={count}
+  - `[DefaultManagedAppProtectionId <String>]`: key: id of defaultManagedAppProtection
+  - `[DetectedAppId <String>]`: key: id of detectedApp
+  - `[DeviceAppManagementTaskId <String>]`: key: id of deviceAppManagementTask
+  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
+  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
+  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
+  - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
+  - `[DeviceInstallStateId <String>]`: key: id of deviceInstallState
+  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
+  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
+  - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
+  - `[EnterpriseCodeSigningCertificateId <String>]`: key: id of enterpriseCodeSigningCertificate
+  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: key: id of iosLobAppProvisioningConfigurationAssignment
+  - `[IosLobAppProvisioningConfigurationId <String>]`: key: id of iosLobAppProvisioningConfiguration
+  - `[IosManagedAppProtectionId <String>]`: key: id of iosManagedAppProtection
+  - `[ManagedAppOperationId <String>]`: key: id of managedAppOperation
+  - `[ManagedAppPolicyId <String>]`: key: id of managedAppPolicy
+  - `[ManagedAppRegistrationId <String>]`: key: id of managedAppRegistration
+  - `[ManagedAppStatusId <String>]`: key: id of managedAppStatus
+  - `[ManagedDeviceId <String>]`: key: id of managedDevice
+  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: key: id of managedDeviceMobileAppConfigurationAssignment
+  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationDeviceStatus
+  - `[ManagedDeviceMobileAppConfigurationId <String>]`: key: id of managedDeviceMobileAppConfiguration
+  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
+  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationUserStatus
+  - `[ManagedEBookAssignmentId <String>]`: key: id of managedEBookAssignment
+  - `[ManagedEBookCategoryId <String>]`: key: id of managedEBookCategory
+  - `[ManagedEBookId <String>]`: key: id of managedEBook
+  - `[ManagedMobileAppId <String>]`: key: id of managedMobileApp
+  - `[MdmWindowsInformationProtectionPolicyId <String>]`: key: id of mdmWindowsInformationProtectionPolicy
+  - `[MobileAppAssignmentId <String>]`: key: id of mobileAppAssignment
+  - `[MobileAppCategoryId <String>]`: key: id of mobileAppCategory
+  - `[MobileAppId <String>]`: key: id of mobileApp
+  - `[MobileAppInstallStatusId <String>]`: key: id of mobileAppInstallStatus
+  - `[MobileAppIntentAndStateId <String>]`: key: id of mobileAppIntentAndState
+  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: key: id of mobileAppProvisioningConfigGroupAssignment
+  - `[MobileAppRelationshipId <String>]`: key: id of mobileAppRelationship
+  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
+  - `[OfficeClientConfigurationAssignmentId <String>]`: key: id of officeClientConfigurationAssignment
+  - `[OfficeClientConfigurationId <String>]`: key: id of officeClientConfiguration
+  - `[PolicySetAssignmentId <String>]`: key: id of policySetAssignment
+  - `[PolicySetId <String>]`: key: id of policySet
+  - `[PolicySetItemId <String>]`: key: id of policySetItem
+  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
+  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
+  - `[SideLoadingKeyId <String>]`: key: id of sideLoadingKey
+  - `[Status <String>]`: Usage: status='{status}'
+  - `[TargetedManagedAppConfigurationId <String>]`: key: id of targetedManagedAppConfiguration
+  - `[TargetedManagedAppPolicyAssignmentId <String>]`: key: id of targetedManagedAppPolicyAssignment
+  - `[UserAppInstallStatusId <String>]`: key: id of userAppInstallStatus
+  - `[UserId <String>]`: key: id of user
+  - `[UserInstallStateSummaryId <String>]`: key: id of userInstallStateSummary
+  - `[UserPrincipalName <String>]`: Usage: userPrincipalName='{userPrincipalName}'
+  - `[VppTokenId <String>]`: key: id of vppToken
+  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyAssignment
+  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicy
+  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: key: id of windowsInformationProtectionDeviceRegistration
+  - `[WindowsInformationProtectionPolicyId <String>]`: key: id of windowsInformationProtectionPolicy
+  - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
+  - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmgtwindowmanagedappprotection](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmgtwindowmanagedappprotection)
-

@@ -161,5 +161,6 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcSupportedRegion>`: cloudPcSupportedRegion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name for the supported region. Read-only.
+  - `[RegionStatus <String>]`: cloudPcSupportedRegionStatus
 
 ## RELATED LINKS

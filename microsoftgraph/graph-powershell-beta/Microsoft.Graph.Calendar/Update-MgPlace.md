@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPlace
 
 ## SYNOPSIS
-Update entity in places
+Update place
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphP
 ```
 
 ## DESCRIPTION
-Update entity in places
+Update place
 
 ## EXAMPLES
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -261,9 +261,9 @@ ADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphPlace1>`: place
+BODYPARAMETER `<IMicrosoftGraphPlace>`: place
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -298,6 +298,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

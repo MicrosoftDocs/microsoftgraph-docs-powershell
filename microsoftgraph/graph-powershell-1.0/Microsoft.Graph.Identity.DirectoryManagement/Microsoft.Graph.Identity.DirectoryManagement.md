@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 6508ccfb-7e33-4938-aaea-8b6b9ab1024f
+Module Guid: d4968fd5-b1b0-429a-8ab5-99a2a36bc3d7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -106,6 +106,9 @@ Get device
 
 ### [Get-MgDeviceById](Get-MgDeviceById.md)
 Invoke action getByIds
+
+### [Get-MgDeviceDelta](Get-MgDeviceDelta.md)
+Invoke function delta
 
 ### [Get-MgDeviceExtension](Get-MgDeviceExtension.md)
 Get extensions from devices

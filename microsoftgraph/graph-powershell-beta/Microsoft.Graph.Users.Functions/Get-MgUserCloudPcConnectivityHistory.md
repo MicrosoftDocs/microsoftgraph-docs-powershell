@@ -27,13 +27,6 @@ Invoke function getCloudPcConnectivityHistory
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -92,9 +85,49 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcConnectivityEvent
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
+  - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
+  - `[CalendarId <String>]`: key: id of calendar
+  - `[ChatId <String>]`: key: id of chat
+  - `[ChatMessageId <String>]`: key: id of chatMessage
+  - `[CloudPcId <String>]`: key: id of cloudPC
+  - `[ContactFolderId <String>]`: key: id of contactFolder
+  - `[ContactFolderId1 <String>]`: key: id of contactFolder
+  - `[ContentTypeId <String>]`: key: id of contentType
+  - `[DriveId <String>]`: key: id of drive
+  - `[DriveItemId <String>]`: key: id of driveItem
+  - `[EndDateTime <String>]`: Usage: EndDateTime='{EndDateTime}'
+  - `[EndDateTime1 <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EventId <String>]`: key: id of event
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ListItemId <String>]`: key: id of listItem
+  - `[MailFolderId <String>]`: key: id of mailFolder
+  - `[MailFolderId1 <String>]`: key: id of mailFolder
+  - `[ManagedDeviceId <String>]`: key: id of managedDevice
+  - `[On <String>]`: Usage: on='{on}'
+  - `[OnenotePageId <String>]`: key: id of onenotePage
+  - `[Q <String>]`: Usage: q='{q}'
+  - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
+  - `[Skip <Int32?>]`: Usage: skip={skip}
+  - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
+  - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  - `[TodoTaskListId <String>]`: key: id of todoTaskList
+  - `[Token <String>]`: Usage: token='{token}'
+  - `[Top <Int32?>]`: Usage: top={top}
+  - `[Upn <String>]`: Usage: upn='{upn}'
+  - `[User <String>]`: Usage: User='{User}'
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusercloudpcconnectivityhistory](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusercloudpcconnectivityhistory)
-
