@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 8a629b81-efb0-48f0-9be9-141a12a40639
+Module Guid: eeaf8bb1-d854-4601-bce7-dcad01decaa7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,6 +17,42 @@ Invoke action confirmCompromised
 ### [Get-MgDataPolicyOperation](Get-MgDataPolicyOperation.md)
 Get dataPolicyOperation
 
+### [Get-MgIdentityApiConnector](Get-MgIdentityApiConnector.md)
+Get apiConnectors from identity
+
+### [Get-MgIdentityB2XUserFlow](Get-MgIdentityB2XUserFlow.md)
+Get b2xUserFlows from identity
+
+### [Get-MgIdentityB2XUserFlowIdentityProvider](Get-MgIdentityB2XUserFlowIdentityProvider.md)
+Get identityProviders from identity
+
+### [Get-MgIdentityB2XUserFlowIdentityProviderByRef](Get-MgIdentityB2XUserFlowIdentityProviderByRef.md)
+Get ref of userFlowIdentityProviders from identity
+
+### [Get-MgIdentityB2XUserFlowLanguage](Get-MgIdentityB2XUserFlowLanguage.md)
+Get languages from identity
+
+### [Get-MgIdentityB2XUserFlowLanguageDefaultPage](Get-MgIdentityB2XUserFlowLanguageDefaultPage.md)
+Get defaultPages from identity
+
+### [Get-MgIdentityB2XUserFlowLanguageDefaultPageContent](Get-MgIdentityB2XUserFlowLanguageDefaultPageContent.md)
+Get media content for the navigation property defaultPages from identity
+
+### [Get-MgIdentityB2XUserFlowLanguageOverridePage](Get-MgIdentityB2XUserFlowLanguageOverridePage.md)
+Get overridesPages from identity
+
+### [Get-MgIdentityB2XUserFlowLanguageOverridePageContent](Get-MgIdentityB2XUserFlowLanguageOverridePageContent.md)
+Get media content for the navigation property overridesPages from identity
+
+### [Get-MgIdentityB2XUserFlowUserAttributeAssignment](Get-MgIdentityB2XUserFlowUserAttributeAssignment.md)
+Get userAttributeAssignments from identity
+
+### [Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder](Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder.md)
+Invoke function getOrder
+
+### [Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute](Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute.md)
+Get userAttribute from identity
+
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
 Get namedLocations from identity
 
@@ -24,7 +60,10 @@ Get namedLocations from identity
 Get policies from identity
 
 ### [Get-MgIdentityProvider](Get-MgIdentityProvider.md)
-Get identityProvider (deprecated)
+Get identityProviders from identity
+
+### [Get-MgIdentityUserFlowAttribute](Get-MgIdentityUserFlowAttribute.md)
+Get userFlowAttributes from identity
 
 ### [Get-MgInformationProtection](Get-MgInformationProtection.md)
 Get informationProtection
@@ -42,7 +81,7 @@ Get threatAssessmentRequests from informationProtection
 Get results from informationProtection
 
 ### [Get-MgOauth2PermissionGrant](Get-MgOauth2PermissionGrant.md)
-Get entity from oauth2PermissionGrants by key
+Get oAuth2PermissionGrant (a delegated permission grant)
 
 ### [Get-MgOauth2PermissionGrantDelta](Get-MgOauth2PermissionGrantDelta.md)
 Invoke function delta
@@ -70,6 +109,15 @@ Get authorizationPolicy from policies
 
 ### [Get-MgPolicyClaimMappingPolicy](Get-MgPolicyClaimMappingPolicy.md)
 Get claimsMappingPolicies from policies
+
+### [Get-MgPolicyCrossTenantAccessPolicy](Get-MgPolicyCrossTenantAccessPolicy.md)
+Get crossTenantAccessPolicy from policies
+
+### [Get-MgPolicyCrossTenantAccessPolicyDefault](Get-MgPolicyCrossTenantAccessPolicyDefault.md)
+Get default from policies
+
+### [Get-MgPolicyCrossTenantAccessPolicyPartner](Get-MgPolicyCrossTenantAccessPolicyPartner.md)
+Get partners from policies
 
 ### [Get-MgPolicyFeatureRolloutPolicy](Get-MgPolicyFeatureRolloutPolicy.md)
 Get featureRolloutPolicies from policies
@@ -131,6 +179,9 @@ Get riskyUsers from identityProtection
 ### [Get-MgRiskyUserHistory](Get-MgRiskyUserHistory.md)
 Get history from identityProtection
 
+### [Get-MgUserAuthenticationEmailMethod](Get-MgUserAuthenticationEmailMethod.md)
+Get emailMethods from users
+
 ### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
 Get fido2Methods from users
 
@@ -160,6 +211,18 @@ Get registeredUsers from users
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceTransitiveMemberOf](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceTransitiveMemberOf.md)
 Get transitiveMemberOf from users
+
+### [Get-MgUserAuthenticationOperation](Get-MgUserAuthenticationOperation.md)
+Get operations from users
+
+### [Get-MgUserAuthenticationPasswordMethod](Get-MgUserAuthenticationPasswordMethod.md)
+Get passwordMethods from users
+
+### [Get-MgUserAuthenticationPhoneMethod](Get-MgUserAuthenticationPhoneMethod.md)
+Get phoneMethods from users
+
+### [Get-MgUserAuthenticationSoftwareOathMethod](Get-MgUserAuthenticationSoftwareOathMethod.md)
+Get softwareOathMethods from users
 
 ### [Get-MgUserAuthenticationTemporaryAccessPassMethod](Get-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Get temporaryAccessPassMethods from users
@@ -194,8 +257,32 @@ Invoke function availableProviderTypes
 ### [Invoke-MgDismissRiskyUser](Invoke-MgDismissRiskyUser.md)
 Invoke action dismiss
 
+### [Invoke-MgUploadIdentityApiConnectorClientCertificate](Invoke-MgUploadIdentityApiConnectorClientCertificate.md)
+Invoke action uploadClientCertificate
+
 ### [New-MgDataPolicyOperation](New-MgDataPolicyOperation.md)
 Add new entity to dataPolicyOperations
+
+### [New-MgIdentityApiConnector](New-MgIdentityApiConnector.md)
+Create new navigation property to apiConnectors for identity
+
+### [New-MgIdentityB2XUserFlow](New-MgIdentityB2XUserFlow.md)
+Create new navigation property to b2xUserFlows for identity
+
+### [New-MgIdentityB2XUserFlowIdentityProviderByRef](New-MgIdentityB2XUserFlowIdentityProviderByRef.md)
+Create new navigation property ref to userFlowIdentityProviders for identity
+
+### [New-MgIdentityB2XUserFlowLanguage](New-MgIdentityB2XUserFlowLanguage.md)
+Create new navigation property to languages for identity
+
+### [New-MgIdentityB2XUserFlowLanguageDefaultPage](New-MgIdentityB2XUserFlowLanguageDefaultPage.md)
+Create new navigation property to defaultPages for identity
+
+### [New-MgIdentityB2XUserFlowLanguageOverridePage](New-MgIdentityB2XUserFlowLanguageOverridePage.md)
+Create new navigation property to overridesPages for identity
+
+### [New-MgIdentityB2XUserFlowUserAttributeAssignment](New-MgIdentityB2XUserFlowUserAttributeAssignment.md)
+Create new navigation property to userAttributeAssignments for identity
 
 ### [New-MgIdentityConditionalAccessNamedLocation](New-MgIdentityConditionalAccessNamedLocation.md)
 Create new navigation property to namedLocations for identity
@@ -204,7 +291,10 @@ Create new navigation property to namedLocations for identity
 Create new navigation property to policies for identity
 
 ### [New-MgIdentityProvider](New-MgIdentityProvider.md)
-Create identityProvider (deprecated)
+Create new navigation property to identityProviders for identity
+
+### [New-MgIdentityUserFlowAttribute](New-MgIdentityUserFlowAttribute.md)
+Create new navigation property to userFlowAttributes for identity
 
 ### [New-MgInformationProtectionBitlockerRecoveryKey](New-MgInformationProtectionBitlockerRecoveryKey.md)
 Create new navigation property to recoveryKeys for informationProtection
@@ -219,7 +309,7 @@ Create new navigation property to results for informationProtection
 Create invitation
 
 ### [New-MgOauth2PermissionGrant](New-MgOauth2PermissionGrant.md)
-Add new entity to oauth2PermissionGrants
+Create oAuth2PermissionGrant (a delegated permission grant)
 
 ### [New-MgPolicyActivityBasedTimeoutPolicy](New-MgPolicyActivityBasedTimeoutPolicy.md)
 Create new navigation property to activityBasedTimeoutPolicies for policies
@@ -229,6 +319,9 @@ Create new navigation property to authenticationMethodConfigurations for policie
 
 ### [New-MgPolicyClaimMappingPolicy](New-MgPolicyClaimMappingPolicy.md)
 Create new navigation property to claimsMappingPolicies for policies
+
+### [New-MgPolicyCrossTenantAccessPolicyPartner](New-MgPolicyCrossTenantAccessPolicyPartner.md)
+Create new navigation property to partners for policies
 
 ### [New-MgPolicyFeatureRolloutPolicy](New-MgPolicyFeatureRolloutPolicy.md)
 Create new navigation property to featureRolloutPolicies for policies
@@ -278,6 +371,9 @@ Create new navigation property to riskyUsers for identityProtection
 ### [New-MgRiskyUserHistory](New-MgRiskyUserHistory.md)
 Create new navigation property to history for identityProtection
 
+### [New-MgUserAuthenticationEmailMethod](New-MgUserAuthenticationEmailMethod.md)
+Create new navigation property to emailMethods for users
+
 ### [New-MgUserAuthenticationFido2Method](New-MgUserAuthenticationFido2Method.md)
 Create new navigation property to fido2Methods for users
 
@@ -289,6 +385,15 @@ Create new navigation property to extensions for users
 
 ### [New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef](New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef.md)
 Create new navigation property ref to registeredOwners for users
+
+### [New-MgUserAuthenticationOperation](New-MgUserAuthenticationOperation.md)
+Create new navigation property to operations for users
+
+### [New-MgUserAuthenticationPhoneMethod](New-MgUserAuthenticationPhoneMethod.md)
+Create new navigation property to phoneMethods for users
+
+### [New-MgUserAuthenticationSoftwareOathMethod](New-MgUserAuthenticationSoftwareOathMethod.md)
+Create new navigation property to softwareOathMethods for users
 
 ### [New-MgUserAuthenticationTemporaryAccessPassMethod](New-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Create new navigation property to temporaryAccessPassMethods for users
@@ -305,6 +410,27 @@ Create new navigation property ref to registeredOwners for users
 ### [Remove-MgDataPolicyOperation](Remove-MgDataPolicyOperation.md)
 Delete entity from dataPolicyOperations
 
+### [Remove-MgIdentityApiConnector](Remove-MgIdentityApiConnector.md)
+Delete navigation property apiConnectors for identity
+
+### [Remove-MgIdentityB2XUserFlow](Remove-MgIdentityB2XUserFlow.md)
+Delete navigation property b2xUserFlows for identity
+
+### [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](Remove-MgIdentityB2XUserFlowIdentityProviderByRef.md)
+Delete ref of navigation property userFlowIdentityProviders for identity
+
+### [Remove-MgIdentityB2XUserFlowLanguage](Remove-MgIdentityB2XUserFlowLanguage.md)
+Delete navigation property languages for identity
+
+### [Remove-MgIdentityB2XUserFlowLanguageDefaultPage](Remove-MgIdentityB2XUserFlowLanguageDefaultPage.md)
+Delete navigation property defaultPages for identity
+
+### [Remove-MgIdentityB2XUserFlowLanguageOverridePage](Remove-MgIdentityB2XUserFlowLanguageOverridePage.md)
+Delete navigation property overridesPages for identity
+
+### [Remove-MgIdentityB2XUserFlowUserAttributeAssignment](Remove-MgIdentityB2XUserFlowUserAttributeAssignment.md)
+Delete navigation property userAttributeAssignments for identity
+
 ### [Remove-MgIdentityConditionalAccessNamedLocation](Remove-MgIdentityConditionalAccessNamedLocation.md)
 Delete navigation property namedLocations for identity
 
@@ -312,7 +438,10 @@ Delete navigation property namedLocations for identity
 Delete navigation property policies for identity
 
 ### [Remove-MgIdentityProvider](Remove-MgIdentityProvider.md)
-Delete identityProvider (deprecated)
+Delete navigation property identityProviders for identity
+
+### [Remove-MgIdentityUserFlowAttribute](Remove-MgIdentityUserFlowAttribute.md)
+Delete navigation property userFlowAttributes for identity
 
 ### [Remove-MgInformationProtectionThreatAssessmentRequest](Remove-MgInformationProtectionThreatAssessmentRequest.md)
 Delete navigation property threatAssessmentRequests for informationProtection
@@ -321,7 +450,7 @@ Delete navigation property threatAssessmentRequests for informationProtection
 Delete navigation property results for informationProtection
 
 ### [Remove-MgOauth2PermissionGrant](Remove-MgOauth2PermissionGrant.md)
-Delete entity from oauth2PermissionGrants
+Delete oAuth2PermissionGrant (a delegated permission grant)
 
 ### [Remove-MgPolicyActivityBasedTimeoutPolicy](Remove-MgPolicyActivityBasedTimeoutPolicy.md)
 Delete navigation property activityBasedTimeoutPolicies for policies
@@ -343,6 +472,15 @@ Delete navigation property authorizationPolicy for policies
 
 ### [Remove-MgPolicyClaimMappingPolicy](Remove-MgPolicyClaimMappingPolicy.md)
 Delete navigation property claimsMappingPolicies for policies
+
+### [Remove-MgPolicyCrossTenantAccessPolicy](Remove-MgPolicyCrossTenantAccessPolicy.md)
+Delete navigation property crossTenantAccessPolicy for policies
+
+### [Remove-MgPolicyCrossTenantAccessPolicyDefault](Remove-MgPolicyCrossTenantAccessPolicyDefault.md)
+Delete navigation property default for policies
+
+### [Remove-MgPolicyCrossTenantAccessPolicyPartner](Remove-MgPolicyCrossTenantAccessPolicyPartner.md)
+Delete navigation property partners for policies
 
 ### [Remove-MgPolicyFeatureRolloutPolicy](Remove-MgPolicyFeatureRolloutPolicy.md)
 Delete navigation property featureRolloutPolicies for policies
@@ -392,6 +530,9 @@ Delete navigation property riskyUsers for identityProtection
 ### [Remove-MgRiskyUserHistory](Remove-MgRiskyUserHistory.md)
 Delete navigation property history for identityProtection
 
+### [Remove-MgUserAuthenticationEmailMethod](Remove-MgUserAuthenticationEmailMethod.md)
+Delete navigation property emailMethods for users
+
 ### [Remove-MgUserAuthenticationFido2Method](Remove-MgUserAuthenticationFido2Method.md)
 Delete navigation property fido2Methods for users
 
@@ -406,6 +547,18 @@ Delete navigation property extensions for users
 
 ### [Remove-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef](Remove-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef.md)
 Delete ref of navigation property registeredOwners for users
+
+### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
+Delete navigation property operations for users
+
+### [Remove-MgUserAuthenticationPasswordMethod](Remove-MgUserAuthenticationPasswordMethod.md)
+Delete navigation property passwordMethods for users
+
+### [Remove-MgUserAuthenticationPhoneMethod](Remove-MgUserAuthenticationPhoneMethod.md)
+Delete navigation property phoneMethods for users
+
+### [Remove-MgUserAuthenticationSoftwareOathMethod](Remove-MgUserAuthenticationSoftwareOathMethod.md)
+Delete navigation property softwareOathMethods for users
 
 ### [Remove-MgUserAuthenticationTemporaryAccessPassMethod](Remove-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Delete navigation property temporaryAccessPassMethods for users
@@ -422,11 +575,41 @@ Delete navigation property extensions for users
 ### [Remove-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwnerByRef](Remove-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwnerByRef.md)
 Delete ref of navigation property registeredOwners for users
 
+### [Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault](Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault.md)
+Invoke action resetToSystemDefault
+
+### [Set-MgIdentityB2XUserFlowLanguageDefaultPageContent](Set-MgIdentityB2XUserFlowLanguageDefaultPageContent.md)
+Update media content for the navigation property defaultPages in identity
+
+### [Set-MgIdentityB2XUserFlowLanguageOverridePageContent](Set-MgIdentityB2XUserFlowLanguageOverridePageContent.md)
+Update media content for the navigation property overridesPages in identity
+
+### [Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder](Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder.md)
+Invoke action setOrder
+
 ### [Test-MgPolicyFeatureRolloutPolicyApplyToProperty](Test-MgPolicyFeatureRolloutPolicyApplyToProperty.md)
 Invoke action validateProperties
 
 ### [Update-MgDataPolicyOperation](Update-MgDataPolicyOperation.md)
 Update entity in dataPolicyOperations
+
+### [Update-MgIdentityApiConnector](Update-MgIdentityApiConnector.md)
+Update the navigation property apiConnectors in identity
+
+### [Update-MgIdentityB2XUserFlow](Update-MgIdentityB2XUserFlow.md)
+Update the navigation property b2xUserFlows in identity
+
+### [Update-MgIdentityB2XUserFlowLanguage](Update-MgIdentityB2XUserFlowLanguage.md)
+Update the navigation property languages in identity
+
+### [Update-MgIdentityB2XUserFlowLanguageDefaultPage](Update-MgIdentityB2XUserFlowLanguageDefaultPage.md)
+Update the navigation property defaultPages in identity
+
+### [Update-MgIdentityB2XUserFlowLanguageOverridePage](Update-MgIdentityB2XUserFlowLanguageOverridePage.md)
+Update the navigation property overridesPages in identity
+
+### [Update-MgIdentityB2XUserFlowUserAttributeAssignment](Update-MgIdentityB2XUserFlowUserAttributeAssignment.md)
+Update the navigation property userAttributeAssignments in identity
 
 ### [Update-MgIdentityConditionalAccessNamedLocation](Update-MgIdentityConditionalAccessNamedLocation.md)
 Update the navigation property namedLocations in identity
@@ -435,7 +618,10 @@ Update the navigation property namedLocations in identity
 Update the navigation property policies in identity
 
 ### [Update-MgIdentityProvider](Update-MgIdentityProvider.md)
-Update entity in identityProviders
+Update the navigation property identityProviders in identity
+
+### [Update-MgIdentityUserFlowAttribute](Update-MgIdentityUserFlowAttribute.md)
+Update the navigation property userFlowAttributes in identity
 
 ### [Update-MgInformationProtection](Update-MgInformationProtection.md)
 Update informationProtection
@@ -450,7 +636,7 @@ Update the navigation property threatAssessmentRequests in informationProtection
 Update the navigation property results in informationProtection
 
 ### [Update-MgOauth2PermissionGrant](Update-MgOauth2PermissionGrant.md)
-Update entity in oauth2PermissionGrants
+Update oAuth2PermissionGrant (a delegated permission grant)
 
 ### [Update-MgPolicyActivityBasedTimeoutPolicy](Update-MgPolicyActivityBasedTimeoutPolicy.md)
 Update the navigation property activityBasedTimeoutPolicies in policies
@@ -472,6 +658,15 @@ Update the navigation property authorizationPolicy in policies
 
 ### [Update-MgPolicyClaimMappingPolicy](Update-MgPolicyClaimMappingPolicy.md)
 Update the navigation property claimsMappingPolicies in policies
+
+### [Update-MgPolicyCrossTenantAccessPolicy](Update-MgPolicyCrossTenantAccessPolicy.md)
+Update the navigation property crossTenantAccessPolicy in policies
+
+### [Update-MgPolicyCrossTenantAccessPolicyDefault](Update-MgPolicyCrossTenantAccessPolicyDefault.md)
+Update the navigation property default in policies
+
+### [Update-MgPolicyCrossTenantAccessPolicyPartner](Update-MgPolicyCrossTenantAccessPolicyPartner.md)
+Update the navigation property partners in policies
 
 ### [Update-MgPolicyFeatureRolloutPolicy](Update-MgPolicyFeatureRolloutPolicy.md)
 Update the navigation property featureRolloutPolicies in policies
@@ -518,6 +713,9 @@ Update the navigation property riskyUsers in identityProtection
 ### [Update-MgRiskyUserHistory](Update-MgRiskyUserHistory.md)
 Update the navigation property history in identityProtection
 
+### [Update-MgUserAuthenticationEmailMethod](Update-MgUserAuthenticationEmailMethod.md)
+Update the navigation property emailMethods in users
+
 ### [Update-MgUserAuthenticationFido2Method](Update-MgUserAuthenticationFido2Method.md)
 Update the navigation property fido2Methods in users
 
@@ -529,6 +727,15 @@ Update the navigation property device in users
 
 ### [Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceExtension](Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceExtension.md)
 Update the navigation property extensions in users
+
+### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
+Update the navigation property operations in users
+
+### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
+Update the navigation property phoneMethods in users
+
+### [Update-MgUserAuthenticationSoftwareOathMethod](Update-MgUserAuthenticationSoftwareOathMethod.md)
+Update the navigation property softwareOathMethods in users
 
 ### [Update-MgUserAuthenticationTemporaryAccessPassMethod](Update-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Update the navigation property temporaryAccessPassMethods in users
