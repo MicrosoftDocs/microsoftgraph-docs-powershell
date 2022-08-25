@@ -44,13 +44,6 @@ Create new navigation property to multiValueExtendedProperties for users
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -232,9 +225,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER `<IMicrosoftGraphMultiValueLegacyExtendedProperty>`: multiValueLegacyExtendedProperty
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: 
+  - `[Value <String[]>]`: A collection of property values.
+
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: key: id of attachment
+  - `[CalendarGroupId <String>]`: key: id of calendarGroup
+  - `[CalendarId <String>]`: key: id of calendar
+  - `[CalendarPermissionId <String>]`: key: id of calendarPermission
+  - `[EventId <String>]`: key: id of event
+  - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
+  - `[ExtensionId <String>]`: key: id of extension
+  - `[GroupId <String>]`: key: id of group
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[PlaceId <String>]`: key: id of place
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mgusereventexceptionoccurrenceinstancemultivalueextendedproperty](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mgusereventexceptionoccurrenceinstancemultivalueextendedproperty)
-

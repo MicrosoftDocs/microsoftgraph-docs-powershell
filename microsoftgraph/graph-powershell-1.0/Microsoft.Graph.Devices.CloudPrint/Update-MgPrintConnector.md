@@ -286,7 +286,7 @@ BODYPARAMETER `<IMicrosoftGraphPrintConnector1>`: printConnector
   - `[AppVersion <String>]`: The connector's version.
   - `[DisplayName <String>]`: The name of the connector.
   - `[FullyQualifiedDomainName <String>]`: The connector machine's hostname.
-  - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
+  - `[Location <IMicrosoftGraphPrinterLocation1>]`: printerLocation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
     - `[Building <String>]`: The building that the printer is located in.
@@ -321,7 +321,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[PrinterShareId <String>]`: key: id of printerShare
   - `[UserId <String>]`: key: id of user
 
-LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
+LOCATION `<IMicrosoftGraphPrinterLocation1>`: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.

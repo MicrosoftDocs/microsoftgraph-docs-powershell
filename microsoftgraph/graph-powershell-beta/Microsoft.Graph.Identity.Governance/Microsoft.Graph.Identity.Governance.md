@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 432b96b2-ec8b-4599-8ec1-2e54a60587f9
+Module Guid: 56e50e42-57be-4061-b3c3-501d927c0249
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,6 +18,9 @@ Invoke action applyDecisions
 Invoke action applyDecisions
 
 ### [Add-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](Add-MgIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
+Invoke action applyDecisions
+
+### [Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
 Invoke action applyDecisions
 
 ### [Export-MgPrivilegedAccessResourceRoleAssignment](Export-MgPrivilegedAccessResourceRoleAssignment.md)
@@ -152,11 +155,20 @@ Get internalSponsors from identityGovernance
 ### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById.md)
 Invoke action getByIds
 
+### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
+Get ref of internalSponsors from identityGovernance
+
 ### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorUserOwnedObject](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorUserOwnedObject.md)
 Invoke action getUserOwnedObjects
 
 ### [Get-MgEntitlementManagementSetting](Get-MgEntitlementManagementSetting.md)
 Get settings from identityGovernance
+
+### [Get-MgEntitlementManagementSubject](Get-MgEntitlementManagementSubject.md)
+Get subjects from identityGovernance
+
+### [Get-MgEntitlementManagementSubjectConnectedOrganization](Get-MgEntitlementManagementSubjectConnectedOrganization.md)
+Get connectedOrganization from identityGovernance
 
 ### [Get-MgIdentityGovernanceAccessReviewDecision](Get-MgIdentityGovernanceAccessReviewDecision.md)
 Get decisions from identityGovernance
@@ -187,6 +199,54 @@ Get decisions from identityGovernance
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Get-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
 Get insights from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewDefinition](Get-MgIdentityGovernanceAccessReviewDefinition.md)
+Get definitions from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](Get-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
+Get instances from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
+Get contactedReviewers from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
+Get decisions from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight.md)
+Get insights from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance.md)
+Get instance from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDefinition](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDefinition.md)
+Get definition from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
+Get stages from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
+Get decisions from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](Get-MgIdentityGovernanceAccessReviewHistoryDefinition.md)
+Get historyDefinitions from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
+Get instances from identityGovernance
+
+### [Get-MgIdentityGovernanceAccessReviewPolicy](Get-MgIdentityGovernanceAccessReviewPolicy.md)
+Get policy from identityGovernance
+
+### [Get-MgIdentityGovernanceAppConsentRequest](Get-MgIdentityGovernanceAppConsentRequest.md)
+Get appConsentRequests from identityGovernance
+
+### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest.md)
+Get userConsentRequests from identityGovernance
+
+### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval.md)
+Get approval from identityGovernance
+
+### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
+Get steps from identityGovernance
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreement](Get-MgIdentityGovernanceTermOfUseAgreement.md)
 Get agreements from identityGovernance
@@ -398,7 +458,13 @@ Get agreementAcceptances from users
 ### [Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation](Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation.md)
 Invoke action acceptRecommendations
 
+### [Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation.md)
+Invoke action acceptRecommendations
+
 ### [Invoke-MgBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision](Invoke-MgBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision.md)
+Invoke action batchRecordDecisions
+
+### [Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision.md)
 Invoke action batchRecordDecisions
 
 ### [Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser](Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser.md)
@@ -425,6 +491,24 @@ Invoke function filterByCurrentUser
 ### [Invoke-MgFilterIdentityGovernanceAccessReviewDecisionInstanceStageDecisionByCurrentUser](Invoke-MgFilterIdentityGovernanceAccessReviewDecisionInstanceStageDecisionByCurrentUser.md)
 Invoke function filterByCurrentUser
 
+### [Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser](Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser](Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser](Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser](Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser](Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser](Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser.md)
+Invoke function filterByCurrentUser
+
 ### [Invoke-MgMyPrivilegedApprovalRequest](Invoke-MgMyPrivilegedApprovalRequest.md)
 Invoke function myRequests
 
@@ -441,6 +525,9 @@ Invoke action recordAllDecisions
 Invoke action recordAllDecisions
 
 ### [Invoke-MgRecordIdentityGovernanceAccessReviewDecisionInstanceStageDecision](Invoke-MgRecordIdentityGovernanceAccessReviewDecisionInstanceStageDecision.md)
+Invoke action recordAllDecisions
+
+### [Invoke-MgRecordIdentityGovernanceAccessReviewDefinitionInstanceDecision](Invoke-MgRecordIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
 Invoke action recordAllDecisions
 
 ### [Invoke-MgSelfPrivilegedApprovalRoleInfoActivate](Invoke-MgSelfPrivilegedApprovalRoleInfoActivate.md)
@@ -545,6 +632,12 @@ Create new navigation property to connectedOrganizations for identityGovernance
 ### [New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
 Create new navigation property ref to externalSponsors for identityGovernance
 
+### [New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
+Create new navigation property ref to internalSponsors for identityGovernance
+
+### [New-MgEntitlementManagementSubject](New-MgEntitlementManagementSubject.md)
+Create new navigation property to subjects for identityGovernance
+
 ### [New-MgIdentityGovernanceAccessReviewDecision](New-MgIdentityGovernanceAccessReviewDecision.md)
 Create new navigation property to decisions for identityGovernance
 
@@ -568,6 +661,45 @@ Create new navigation property to decisions for identityGovernance
 
 ### [New-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](New-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
 Create new navigation property to insights for identityGovernance
+
+### [New-MgIdentityGovernanceAccessReviewDefinition](New-MgIdentityGovernanceAccessReviewDefinition.md)
+Create new navigation property to definitions for identityGovernance
+
+### [New-MgIdentityGovernanceAccessReviewDefinitionInstance](New-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
+Create new navigation property to instances for identityGovernance
+
+### [New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
+Create new navigation property to contactedReviewers for identityGovernance
+
+### [New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
+Create new navigation property to decisions for identityGovernance
+
+### [New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight](New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight.md)
+Create new navigation property to insights for identityGovernance
+
+### [New-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](New-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
+Create new navigation property to stages for identityGovernance
+
+### [New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
+Create new navigation property to decisions for identityGovernance
+
+### [New-MgIdentityGovernanceAccessReviewHistoryDefinition](New-MgIdentityGovernanceAccessReviewHistoryDefinition.md)
+Create new navigation property to historyDefinitions for identityGovernance
+
+### [New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
+Create new navigation property to instances for identityGovernance
+
+### [New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri.md)
+Invoke action generateDownloadUri
+
+### [New-MgIdentityGovernanceAppConsentRequest](New-MgIdentityGovernanceAppConsentRequest.md)
+Create new navigation property to appConsentRequests for identityGovernance
+
+### [New-MgIdentityGovernanceAppConsentRequestUserConsentRequest](New-MgIdentityGovernanceAppConsentRequestUserConsentRequest.md)
+Create new navigation property to userConsentRequests for identityGovernance
+
+### [New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
+Create new navigation property to steps for identityGovernance
 
 ### [New-MgIdentityGovernanceTermOfUseAgreement](New-MgIdentityGovernanceTermOfUseAgreement.md)
 Create new navigation property to agreements for identityGovernance
@@ -731,6 +863,12 @@ Delete navigation property connectedOrganizations for identityGovernance
 ### [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
 Delete ref of navigation property externalSponsors for identityGovernance
 
+### [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
+Delete ref of navigation property internalSponsors for identityGovernance
+
+### [Remove-MgEntitlementManagementSubject](Remove-MgEntitlementManagementSubject.md)
+Delete navigation property subjects for identityGovernance
+
 ### [Remove-MgIdentityGovernanceAccessReviewDecision](Remove-MgIdentityGovernanceAccessReviewDecision.md)
 Delete navigation property decisions for identityGovernance
 
@@ -757,6 +895,51 @@ Delete navigation property decisions for identityGovernance
 
 ### [Remove-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Remove-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
 Delete navigation property insights for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewDefinition](Remove-MgIdentityGovernanceAccessReviewDefinition.md)
+Delete navigation property definitions for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewDefinitionInstance](Remove-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
+Delete navigation property instances for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
+Delete navigation property contactedReviewers for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
+Delete navigation property decisions for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight](Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight.md)
+Delete navigation property insights for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance](Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance.md)
+Delete navigation property instance for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
+Delete navigation property stages for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
+Delete navigation property decisions for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewHistoryDefinition](Remove-MgIdentityGovernanceAccessReviewHistoryDefinition.md)
+Delete navigation property historyDefinitions for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](Remove-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
+Delete navigation property instances for identityGovernance
+
+### [Remove-MgIdentityGovernanceAccessReviewPolicy](Remove-MgIdentityGovernanceAccessReviewPolicy.md)
+Delete navigation property policy for identityGovernance
+
+### [Remove-MgIdentityGovernanceAppConsentRequest](Remove-MgIdentityGovernanceAppConsentRequest.md)
+Delete navigation property appConsentRequests for identityGovernance
+
+### [Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequest](Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequest.md)
+Delete navigation property userConsentRequests for identityGovernance
+
+### [Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval.md)
+Delete navigation property approval for identityGovernance
+
+### [Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
+Delete navigation property steps for identityGovernance
 
 ### [Remove-MgIdentityGovernanceTermOfUseAgreement](Remove-MgIdentityGovernanceTermOfUseAgreement.md)
 Delete navigation property agreements for identityGovernance
@@ -902,6 +1085,9 @@ Invoke action resetDecisions
 ### [Reset-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](Reset-MgIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
 Invoke action resetDecisions
 
+### [Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
+Invoke action resetDecisions
+
 ### [Select-MgEntitlementManagementAccessPackage](Select-MgEntitlementManagementAccessPackage.md)
 Select matching entitlement management accessPackage
 
@@ -915,6 +1101,9 @@ Invoke action sendReminder
 Invoke action sendReminder
 
 ### [Send-MgIdentityGovernanceAccessReviewDecisionInstanceReminder](Send-MgIdentityGovernanceAccessReviewDecisionInstanceReminder.md)
+Invoke action sendReminder
+
+### [Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder](Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder.md)
 Invoke action sendReminder
 
 ### [Split-MgEntitlementManagementConnectedOrganization](Split-MgEntitlementManagementConnectedOrganization.md)
@@ -933,6 +1122,15 @@ Invoke action cancel
 Invoke action stop
 
 ### [Stop-MgIdentityGovernanceAccessReviewDecisionInstanceStage](Stop-MgIdentityGovernanceAccessReviewDecisionInstanceStage.md)
+Invoke action stop
+
+### [Stop-MgIdentityGovernanceAccessReviewDefinition](Stop-MgIdentityGovernanceAccessReviewDefinition.md)
+Invoke action stop
+
+### [Stop-MgIdentityGovernanceAccessReviewDefinitionInstance](Stop-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
+Invoke action stop
+
+### [Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
 Invoke action stop
 
 ### [Stop-MgPrivilegedAccessResourceRoleAssignmentRequest](Stop-MgPrivilegedAccessResourceRoleAssignmentRequest.md)
@@ -1031,6 +1229,9 @@ Update the navigation property connectedOrganizations in identityGovernance
 ### [Update-MgEntitlementManagementSetting](Update-MgEntitlementManagementSetting.md)
 Update the navigation property settings in identityGovernance
 
+### [Update-MgEntitlementManagementSubject](Update-MgEntitlementManagementSubject.md)
+Update the navigation property subjects in identityGovernance
+
 ### [Update-MgIdentityGovernanceAccessReviewDecision](Update-MgIdentityGovernanceAccessReviewDecision.md)
 Update the navigation property decisions in identityGovernance
 
@@ -1057,6 +1258,51 @@ Update the navigation property decisions in identityGovernance
 
 ### [Update-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Update-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
 Update the navigation property insights in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewDefinition](Update-MgIdentityGovernanceAccessReviewDefinition.md)
+Update the navigation property definitions in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](Update-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
+Update the navigation property instances in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Update-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
+Update the navigation property contactedReviewers in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
+Update the navigation property decisions in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight](Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight.md)
+Update the navigation property insights in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance](Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance.md)
+Update the navigation property instance in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
+Update the navigation property stages in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
+Update the navigation property decisions in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewHistoryDefinition](Update-MgIdentityGovernanceAccessReviewHistoryDefinition.md)
+Update the navigation property historyDefinitions in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](Update-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
+Update the navigation property instances in identityGovernance
+
+### [Update-MgIdentityGovernanceAccessReviewPolicy](Update-MgIdentityGovernanceAccessReviewPolicy.md)
+Update the navigation property policy in identityGovernance
+
+### [Update-MgIdentityGovernanceAppConsentRequest](Update-MgIdentityGovernanceAppConsentRequest.md)
+Update the navigation property appConsentRequests in identityGovernance
+
+### [Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest](Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest.md)
+Update the navigation property userConsentRequests in identityGovernance
+
+### [Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval.md)
+Update the navigation property approval in identityGovernance
+
+### [Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
+Update the navigation property steps in identityGovernance
 
 ### [Update-MgIdentityGovernanceTermOfUseAgreement](Update-MgIdentityGovernanceTermOfUseAgreement.md)
 Update the navigation property agreements in identityGovernance

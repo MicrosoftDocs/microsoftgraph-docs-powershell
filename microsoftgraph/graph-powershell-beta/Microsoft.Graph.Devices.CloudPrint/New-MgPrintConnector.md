@@ -258,7 +258,7 @@ BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
     - `[LastConnectionTime <DateTime?>]`: The last time the device was connected.
   - `[DisplayName <String>]`: The name of the connector.
   - `[FullyQualifiedDomainName <String>]`: The connector machine's hostname.
-  - `[Location <IMicrosoftGraphPrinterLocation1>]`: printerLocation
+  - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
     - `[Building <String>]`: The building that the printer is located in.
@@ -287,7 +287,7 @@ DEVICEHEALTH `<IMicrosoftGraphDeviceHealth>`: deviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastConnectionTime <DateTime?>]`: The last time the device was connected.
 
-LOCATION `<IMicrosoftGraphPrinterLocation1>`: printerLocation
+LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.

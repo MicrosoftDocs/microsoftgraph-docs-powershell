@@ -385,6 +385,7 @@ BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelSite>`: Entity that represents a M
   - `[Id <String>]`: 
   - `[Description <String>]`: The MicrosoftTunnelSite's description
   - `[DisplayName <String>]`: The MicrosoftTunnelSite's display name
+  - `[EnableCertificatePinning <Boolean?>]`: When set to true, certificate pinning will be enforced on connections between the Microsoft Tunnel server and Microsoft Tunnel clients. When set to false, certificate pinning will be disabled.
   - `[InternalNetworkProbeUrl <String>]`: The MicrosoftTunnelSite's Internal Network Access Probe URL
   - `[MicrosoftTunnelConfiguration <IMicrosoftGraphMicrosoftTunnelConfiguration>]`: Entity that represents a collection of Microsoft Tunnel settings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

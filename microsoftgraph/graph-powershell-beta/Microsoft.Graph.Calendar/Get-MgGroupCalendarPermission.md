@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupCalendarPermission
 
 ## SYNOPSIS
-The permissions of the users with whom the calendar is shared.
+Get calendarPermissions from groups
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-MgGroupCalendarPermission -InputObject <ICalendarIdentity> [-Property <Strin
 ```
 
 ## DESCRIPTION
-The permissions of the users with whom the calendar is shared.
+Get calendarPermissions from groups
 
 ## EXAMPLES
 
@@ -228,6 +228,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

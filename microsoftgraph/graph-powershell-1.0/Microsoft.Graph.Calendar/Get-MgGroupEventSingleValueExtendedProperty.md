@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgGroupEventSingleValueExtendedProperty
 
 ## SYNOPSIS
-The collection of single-value extended properties defined for the event.
-Read-only.
-Nullable.
+Get singleValueExtendedProperties from groups
 
 ## SYNTAX
 
@@ -35,9 +33,7 @@ Get-MgGroupEventSingleValueExtendedProperty -InputObject <ICalendarIdentity> [-E
 ```
 
 ## DESCRIPTION
-The collection of single-value extended properties defined for the event.
-Read-only.
-Nullable.
+Get singleValueExtendedProperties from groups
 
 ## EXAMPLES
 
@@ -280,6 +276,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

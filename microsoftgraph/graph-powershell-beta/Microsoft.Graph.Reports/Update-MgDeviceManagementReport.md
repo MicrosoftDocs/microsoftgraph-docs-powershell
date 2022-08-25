@@ -188,7 +188,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports1>`: Singleton entity that
     - `[ReportName <String>]`: Name of the report
     - `[Select <String[]>]`: Columns selected from the report
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
-  - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]`: Entity representing a job to export a report
+  - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob1[]>]`: Entity representing a job to export a report
     - `[Id <String>]`: 
     - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
     - `[Filter <String>]`: Filters applied on the report
@@ -212,7 +212,7 @@ CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfigura
   - `[Select <String[]>]`: Columns selected from the report
   - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
 
-EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob\[]>: Entity representing a job to export a report
+EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob1\[]>: Entity representing a job to export a report
   - `[Id <String>]`: 
   - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
   - `[Filter <String>]`: Filters applied on the report

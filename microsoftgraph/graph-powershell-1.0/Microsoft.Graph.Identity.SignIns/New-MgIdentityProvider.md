@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityProvider
 
 ## SYNOPSIS
-Create identityProvider (deprecated)
+Create new navigation property to identityProviders for identity
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-Wh
 ```
 
 ## DESCRIPTION
-Create identityProvider (deprecated)
+Create new navigation property to identityProviders for identity
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-identityProvider
+identityProviderBase
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -141,12 +141,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityProvider>`: identityProvider
+BODYPARAMETER `<IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider. This is a required field.  Required. Not nullable.
-  - `[ClientSecret <String>]`: The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return ****. This is a required field. Required. Not nullable.
-  - `[Name <String>]`: The display name of the identity provider. Not nullable.
-  - `[Type <String>]`: The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo,QQ, WeChat, OpenIDConnect. Not nullable.
+  - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS

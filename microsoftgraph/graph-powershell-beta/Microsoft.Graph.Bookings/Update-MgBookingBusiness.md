@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBookingBusiness
 
 ## SYNOPSIS
-Update entity in bookingBusinesses
+Update bookingbusiness
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ Update-MgBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Update entity in bookingBusinesses
+Update bookingbusiness
 
 ## EXAMPLES
 

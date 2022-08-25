@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgGroupEventExtension
 
 ## SYNOPSIS
-The collection of open extensions defined for the event.
-Nullable.
+Update the navigation property extensions in groups
 
 ## SYNTAX
 
@@ -38,8 +37,7 @@ Update-MgGroupEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Ha
 ```
 
 ## DESCRIPTION
-The collection of open extensions defined for the event.
-Nullable.
+Update the navigation property extensions in groups
 
 ## EXAMPLES
 
@@ -121,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -223,6 +221,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

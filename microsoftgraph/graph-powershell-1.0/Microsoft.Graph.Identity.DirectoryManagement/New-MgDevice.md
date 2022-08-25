@@ -575,7 +575,7 @@ ALTERNATIVESECURITYIDS <IMicrosoftGraphAlternativeSecurityId\[]>: For internal u
   - `[Key <Byte[]>]`: For internal use only
   - `[Type <Int32?>]`: For internal use only
 
-BODYPARAMETER `<IMicrosoftGraphDevice1>`: device
+BODYPARAMETER `<IMicrosoftGraphDevice>`: device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 

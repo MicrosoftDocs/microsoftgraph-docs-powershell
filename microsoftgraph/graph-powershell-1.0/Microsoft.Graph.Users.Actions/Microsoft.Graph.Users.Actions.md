@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: af6c6df5-81df-42c9-a2e2-73640ab13a59
+Module Guid: 5f2fa8d9-6913-43ab-8af5-9f5abb1e9c7a
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -83,8 +83,14 @@ Invoke action copyToNotebook
 ### [Copy-MgUserOnenoteSectionToSectionGroup](Copy-MgUserOnenoteSectionToSectionGroup.md)
 Invoke action copyToSectionGroup
 
+### [Disable-MgUserAuthenticationPhoneMethodSmSign](Disable-MgUserAuthenticationPhoneMethodSmSign.md)
+Invoke action disableSmsSignIn
+
 ### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
 Invoke action disableLostMode
+
+### [Enable-MgUserAuthenticationPhoneMethodSmSign](Enable-MgUserAuthenticationPhoneMethodSmSign.md)
+Invoke action enableSmsSignIn
 
 ### [Export-MgUserPersonalData](Export-MgUserPersonalData.md)
 Invoke action exportPersonalData
@@ -356,6 +362,9 @@ Invoke action deleteUserFromSharedAppleDevice
 ### [Request-MgUserManagedDeviceRemoteAssistance](Request-MgUserManagedDeviceRemoteAssistance.md)
 Invoke action requestRemoteAssistance
 
+### [Reset-MgUserAuthenticationMethodPassword](Reset-MgUserAuthenticationMethodPassword.md)
+Invoke action resetPassword
+
 ### [Reset-MgUserManagedDevicePasscode](Reset-MgUserManagedDevicePasscode.md)
 Invoke action resetPasscode
 
@@ -368,16 +377,25 @@ Invoke action restore
 ### [Restore-MgUserDriveItem](Restore-MgUserDriveItem.md)
 Invoke action restore
 
+### [Restore-MgUserDriveItemListItemDocumentSetVersion](Restore-MgUserDriveItemListItemDocumentSetVersion.md)
+Invoke action restore
+
 ### [Restore-MgUserDriveItemListItemVersion](Restore-MgUserDriveItemListItemVersion.md)
 Invoke action restoreVersion
 
 ### [Restore-MgUserDriveItemVersion](Restore-MgUserDriveItemVersion.md)
 Invoke action restoreVersion
 
+### [Restore-MgUserDriveListItemDocumentSetVersion](Restore-MgUserDriveListItemDocumentSetVersion.md)
+Invoke action restore
+
 ### [Restore-MgUserDriveListItemVersion](Restore-MgUserDriveListItemVersion.md)
 Invoke action restoreVersion
 
 ### [Restore-MgUserDriveRoot](Restore-MgUserDriveRoot.md)
+Invoke action restore
+
+### [Restore-MgUserDriveRootListItemDocumentSetVersion](Restore-MgUserDriveRootListItemDocumentSetVersion.md)
 Invoke action restore
 
 ### [Restore-MgUserDriveRootListItemVersion](Restore-MgUserDriveRootListItemVersion.md)

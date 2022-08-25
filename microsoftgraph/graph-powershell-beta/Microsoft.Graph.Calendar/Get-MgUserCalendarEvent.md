@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserCalendarEvent
 
 ## SYNOPSIS
-The events in the calendar.
-Navigation property.
-Read-only.
+Get events from users
 
 ## SYNTAX
 
@@ -21,9 +19,7 @@ Get-MgUserCalendarEvent -CalendarId <String> -UserId <String> [-Filter <String>]
 ```
 
 ## DESCRIPTION
-The events in the calendar.
-Navigation property.
-Read-only.
+Get events from users
 
 ## EXAMPLES
 

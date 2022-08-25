@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserCalendarGroup
 
 ## SYNOPSIS
-The user's calendar groups.
-Read-only.
-Nullable.
+Get calendarGroups from users
 
 ## SYNTAX
 
@@ -31,9 +29,7 @@ Get-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-Property <String[]>] 
 ```
 
 ## DESCRIPTION
-The user's calendar groups.
-Read-only.
-Nullable.
+Get calendarGroups from users
 
 ## EXAMPLES
 
@@ -231,6 +227,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

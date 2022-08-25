@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Functions
-Module Guid: 9b486e6c-f1a2-4abd-977b-bc2729eba250
+Module Guid: 25f20238-abd1-457e-9ba7-1b4fbc7edaf0
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -32,6 +32,9 @@ Invoke function delta
 ### [Get-MgUserChatMessageReplyDelta](Get-MgUserChatMessageReplyDelta.md)
 Invoke function delta
 
+### [Get-MgUserCloudPcConnectivityHistory](Get-MgUserCloudPcConnectivityHistory.md)
+Invoke function getCloudPcConnectivityHistory
+
 ### [Get-MgUserCloudPcLaunchInfo](Get-MgUserCloudPcLaunchInfo.md)
 Invoke function getCloudPcLaunchInfo
 
@@ -51,6 +54,9 @@ Invoke function delta
 Invoke function delta
 
 ### [Get-MgUserDelta](Get-MgUserDelta.md)
+Invoke function delta
+
+### [Get-MgUserDeviceDelta](Get-MgUserDeviceDelta.md)
 Invoke function delta
 
 ### [Get-MgUserDriveItemActivityByInterval](Get-MgUserDriveItemActivityByInterval.md)

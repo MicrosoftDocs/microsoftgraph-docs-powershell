@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPlace
 
 ## SYNOPSIS
-Get entity from places by key
+Get place
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgPlace -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Get entity from places by key
+Get place
 
 ## EXAMPLES
 
@@ -244,6 +244,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
