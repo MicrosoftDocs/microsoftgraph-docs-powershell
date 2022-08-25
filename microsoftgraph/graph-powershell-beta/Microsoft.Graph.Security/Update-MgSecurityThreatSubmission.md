@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatsubmission
@@ -209,7 +209,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSecurityThreatSubmissionRoot>: threatSubmissionRoot
+BODYPARAMETER `<IMicrosoftGraphSecurityThreatSubmissionRoot>`: threatSubmissionRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[EmailThreatSubmissionPolicies <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>]`: 
@@ -306,7 +306,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityThreatSubmissionRoot>: threatSubmissionRoo
     - `[Id <String>]`: 
     - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
-EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission[]>: .
+EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission\[]>: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
@@ -359,7 +359,7 @@ EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission[]>: .
       - `[Status <String>]`: longRunningOperationStatus
       - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
 
-EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>: .
+EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy\[]>: .
   - `[Id <String>]`: 
   - `[CustomizedNotificationSenderEmailAddress <String>]`: Specifies the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is null. Optional for creation.
   - `[CustomizedReportRecipientEmailAddress <String>]`: Specifies the destination where the reported messages from end users will land whenever they report something as phish, junk or not junk. The default value is null. Optional for creation.
@@ -375,7 +375,7 @@ EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolic
   - `[IsReportToMicrosoftEnabled <Boolean?>]`: If enabled, the email will be sent to Microsoft for analysis. The default value is false. Required for creation.
   - `[IsReviewEmailNotificationEnabled <Boolean?>]`: Indicates whether an email notification is sent to the end user who reported the email when it has been reviewed by the admin. The default value is false. Optional for creation.
 
-FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission[]>: .
+FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission\[]>: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
@@ -405,7 +405,7 @@ FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission[]>: .
   - `[Id <String>]`: 
   - `[FileName <String>]`: It specifies the file name to be submitted.
 
-URLTHREATS <IMicrosoftGraphSecurityUrlThreatSubmission[]>: .
+URLTHREATS <IMicrosoftGraphSecurityUrlThreatSubmission\[]>: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
