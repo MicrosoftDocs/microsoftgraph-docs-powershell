@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkdevicehealth
@@ -339,7 +339,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphTeamworkDeviceHealth>: teamworkDeviceHealth
+BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceHealth>`: teamworkDeviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Connection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
@@ -396,12 +396,12 @@ BODYPARAMETER <IMicrosoftGraphTeamworkDeviceHealth>: teamworkDeviceHealth
     - `[PartnerAgentSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]`: teamworkSoftwareUpdateStatus
     - `[TeamsClientSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]`: teamworkSoftwareUpdateStatus
 
-CONNECTION <IMicrosoftGraphTeamworkConnection>: teamworkConnection
+CONNECTION `<IMicrosoftGraphTeamworkConnection>`: teamworkConnection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConnectionStatus <String>]`: teamworkConnectionStatus
   - `[LastModifiedDateTime <DateTime?>]`: Time at which the state was last changed. For example, indicates connected since when the state is connected and disconnected since when the state is disconnected.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -410,7 +410,7 @@ CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-HARDWAREHEALTH <IMicrosoftGraphTeamworkHardwareHealth>: teamworkHardwareHealth
+HARDWAREHEALTH `<IMicrosoftGraphTeamworkHardwareHealth>`: teamworkHardwareHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ComputeHealth <IMicrosoftGraphTeamworkPeripheralHealth>]`: teamworkPeripheralHealth
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -427,7 +427,7 @@ HARDWAREHEALTH <IMicrosoftGraphTeamworkHardwareHealth>: teamworkHardwareHealth
       - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
   - `[HdmiIngestHealth <IMicrosoftGraphTeamworkPeripheralHealth>]`: teamworkPeripheralHealth
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -466,7 +466,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -475,7 +475,7 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LOGINSTATUS <IMicrosoftGraphTeamworkLoginStatus>: teamworkLoginStatus
+LOGINSTATUS `<IMicrosoftGraphTeamworkLoginStatus>`: teamworkLoginStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExchangeConnection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -484,7 +484,7 @@ LOGINSTATUS <IMicrosoftGraphTeamworkLoginStatus>: teamworkLoginStatus
   - `[SkypeConnection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
   - `[TeamsConnection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
 
-PERIPHERALSHEALTH <IMicrosoftGraphTeamworkPeripheralsHealth>: teamworkPeripheralsHealth
+PERIPHERALSHEALTH `<IMicrosoftGraphTeamworkPeripheralsHealth>`: teamworkPeripheralsHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CommunicationSpeakerHealth <IMicrosoftGraphTeamworkPeripheralHealth>]`: teamworkPeripheralHealth
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -505,7 +505,7 @@ PERIPHERALSHEALTH <IMicrosoftGraphTeamworkPeripheralsHealth>: teamworkPeripheral
   - `[RoomCameraHealth <IMicrosoftGraphTeamworkPeripheralHealth>]`: teamworkPeripheralHealth
   - `[SpeakerHealth <IMicrosoftGraphTeamworkPeripheralHealth>]`: teamworkPeripheralHealth
 
-SOFTWAREUPDATEHEALTH <IMicrosoftGraphTeamworkSoftwareUpdateHealth>: teamworkSoftwareUpdateHealth
+SOFTWAREUPDATEHEALTH `<IMicrosoftGraphTeamworkSoftwareUpdateHealth>`: teamworkSoftwareUpdateHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdminAgentSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]`: teamworkSoftwareUpdateStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
