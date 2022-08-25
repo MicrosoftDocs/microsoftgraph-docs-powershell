@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityinformationprotectionlabelpolicysetting
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDowngradeJustificationRequired
-.
+Exposes whether justification input is required on label downgrade.
 
 ```yaml
 Type: SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMandatory
-.
+Exposes whether mandatory labeling is enabled.
 
 ```yaml
 Type: SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoreInfoUrl
-.
+Exposes the more information URL that can be configured by the administrator.
 
 ```yaml
 Type: String
@@ -203,12 +203,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityInformationProtectionPolicySetting>`: informationProtectionPolicySetting
+BODYPARAMETER <IMicrosoftGraphSecurityInformationProtectionPolicySetting>: informationProtectionPolicySetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DefaultLabelId <String>]`: 
-  - `[IsDowngradeJustificationRequired <Boolean?>]`: 
-  - `[IsMandatory <Boolean?>]`: 
-  - `[MoreInfoUrl <String>]`: 
+  - `[IsDowngradeJustificationRequired <Boolean?>]`: Exposes whether justification input is required on label downgrade.
+  - `[IsMandatory <Boolean?>]`: Exposes whether mandatory labeling is enabled.
+  - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
 
 ## RELATED LINKS
