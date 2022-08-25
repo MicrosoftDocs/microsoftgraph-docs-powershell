@@ -33,7 +33,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         MESSAGE_TITLE: "Docs Update"
         MESSAGE_BODY: "This pull request was automatically created by the GitHub Action,\n\n Contains Help Docs"
-        REVIEWERS: timayabi2020,peombwa,mairissi,ddyett,shemogumbe,msewaweru
+        REVIEWERS: timayabi2020,peombwa,mairissi,msewaweru
         ASSIGNEDTO: timayabi2020
         LABELS: generated
         BASE: main
