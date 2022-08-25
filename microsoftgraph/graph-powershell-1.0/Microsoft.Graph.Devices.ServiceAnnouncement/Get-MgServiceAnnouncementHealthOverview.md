@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverview
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementHealthOverview
 
 ## SYNOPSIS
-A collection of service health information for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Get healthOverviews from admin
 
 ## SYNTAX
 
@@ -33,8 +32,7 @@ Get-MgServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnouncemen
 ```
 
 ## DESCRIPTION
-A collection of service health information for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Get healthOverviews from admin
 
 ## EXAMPLES
 
@@ -240,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: key: id of serviceHealth
   - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
