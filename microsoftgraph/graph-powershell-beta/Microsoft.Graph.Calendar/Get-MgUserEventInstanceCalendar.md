@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusereventinstancecalendar
@@ -27,13 +27,6 @@ Get-MgUserEventInstanceCalendar -InputObject <ICalendarIdentity> [-Property <Str
 Get calendar from users
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -123,9 +116,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar1
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+  - `[AttachmentId <String>]`: key: id of attachment
+  - `[CalendarGroupId <String>]`: key: id of calendarGroup
+  - `[CalendarId <String>]`: key: id of calendar
+  - `[CalendarPermissionId <String>]`: key: id of calendarPermission
+  - `[EventId <String>]`: key: id of event
+  - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
+  - `[ExtensionId <String>]`: key: id of extension
+  - `[GroupId <String>]`: key: id of group
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[PlaceId <String>]`: key: id of place
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusereventinstancecalendar](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusereventinstancecalendar)
-
