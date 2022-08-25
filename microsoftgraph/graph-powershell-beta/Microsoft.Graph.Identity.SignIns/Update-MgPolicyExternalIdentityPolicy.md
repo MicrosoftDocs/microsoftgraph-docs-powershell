@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyexternalidentitypolicy
@@ -48,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowDeletedIdentitiesDataRemoval
-.
+Notifies Azure AD whether to clean up the user information about the external identity, from the guest tenant, when the user is deleted in their home tenant.
 
 ```yaml
 Type: SwitchParameter
@@ -63,7 +63,8 @@ Accept wildcard characters: False
 ```
 
 ### -AllowExternalIdentitiesToLeave
-.
+Defines whether external users can leave the guest tenant.
+If set to false, self-service controls are not enabled, and the admin of the guest tenant must manually remove the external user from the guest tenant.
 
 ```yaml
 Type: SwitchParameter
@@ -220,13 +221,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalIdentitiesPolicy>`: externalIdentitiesPolicy
+BODYPARAMETER <IMicrosoftGraphExternalIdentitiesPolicy>: externalIdentitiesPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
-  - `[AllowDeletedIdentitiesDataRemoval <Boolean?>]`: 
-  - `[AllowExternalIdentitiesToLeave <Boolean?>]`: 
+  - `[AllowDeletedIdentitiesDataRemoval <Boolean?>]`: Notifies Azure AD whether to clean up the user information about the external identity, from the guest tenant, when the user is deleted in their home tenant.
+  - `[AllowExternalIdentitiesToLeave <Boolean?>]`: Defines whether external users can leave the guest tenant. If set to false, self-service controls are not enabled, and the admin of the guest tenant must manually remove the external user from the guest tenant.
 
 ## RELATED LINKS

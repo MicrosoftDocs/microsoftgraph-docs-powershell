@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised
@@ -29,6 +29,15 @@ Confirm-MgRiskyUserCompromised
 Invoke action confirmCompromised
 
 ## EXAMPLES
+
+### Example 1: Confirm User sign in compormised
+```powershell
+Connect-MgGraph -Scopes "IdentityRiskyUser.ReadWrite.All"
+Select-MgProfile beta
+Confirm-MgRiskyUserCompromised -UserIds "254562e7-a745-496d-b98a-f6770b23152a","8f2ef8bf-53be-45f3-822d-366f51067458"
+```
+
+The command confirms the two users as compormised users.
 
 ## PARAMETERS
 
@@ -142,7 +151,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserIds <String[]>]`: 
 
