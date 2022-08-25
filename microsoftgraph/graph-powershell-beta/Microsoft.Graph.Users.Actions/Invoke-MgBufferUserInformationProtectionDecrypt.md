@@ -1,46 +1,47 @@
 ﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusermanageddevicetoou
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgbufferuserinformationprotectiondecrypt
 schema: 2.0.0
 ---
 
-# Move-MgUserManagedDeviceToOu
+# Invoke-MgBufferUserInformationProtectionDecrypt
 
 ## SYNOPSIS
-Invoke action moveDevicesToOU
+Invoke action decryptBuffer
 
 ## SYNTAX
 
-### MoveExpanded (Default)
+### BufferExpanded (Default)
 ```
-Move-MgUserManagedDeviceToOu -UserId <String> [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>]
- [-OrganizationalUnitPath <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBufferUserInformationProtectionDecrypt -UserId <String> -OutFile <String>
+ [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
+ [-PublishingLicenseInputFile <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Move
+### Buffer
 ```
-Move-MgUserManagedDeviceToOu -UserId <String>
- -BodyParameter <IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBufferUserInformationProtectionDecrypt -UserId <String> -OutFile <String>
+ -BodyParameter <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentityExpanded
+### BufferViaIdentityExpanded
 ```
-Move-MgUserManagedDeviceToOu -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-DeviceIds <String[]>] [-OrganizationalUnitPath <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgBufferUserInformationProtectionDecrypt -InputObject <IUsersActionsIdentity> -OutFile <String>
+ [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
+ [-PublishingLicenseInputFile <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentity
+### BufferViaIdentity
 ```
-Move-MgUserManagedDeviceToOu -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBufferUserInformationProtectionDecrypt -InputObject <IUsersActionsIdentity> -OutFile <String>
+ -BodyParameter <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action moveDevicesToOU
+Invoke action decryptBuffer
 
 ## EXAMPLES
 
@@ -51,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
+Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,8 +67,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Move, MoveViaIdentity
+Type: IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Buffer, BufferViaIdentity
 Aliases:
 
 Required: True
@@ -77,12 +78,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -DeviceIds
-.
+### -EncryptedBufferInputFile
+Input File for EncryptedBuffer (.)
 
 ```yaml
-Type: String[]
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
+Type: String
+Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -98,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: MoveViaIdentityExpanded, MoveViaIdentity
+Parameter Sets: BufferViaIdentityExpanded, BufferViaIdentity
 Aliases:
 
 Required: True
@@ -108,15 +109,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OrganizationalUnitPath
-.
+### -OutFile
+Path to write output file to
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
+Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -138,12 +139,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PublishingLicenseInputFile
+Input File for PublishingLicense (.)
+
+```yaml
+Type: String
+Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, Move
+Parameter Sets: BufferExpanded, Buffer
 Aliases:
 
 Required: True
@@ -189,7 +205,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
@@ -203,10 +219,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeviceIds <String[]>]`: 
-  - `[OrganizationalUnitPath <String>]`: 
+  - `[EncryptedBuffer <Byte[]>]`: 
+  - `[PublishingLicense <Byte[]>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
