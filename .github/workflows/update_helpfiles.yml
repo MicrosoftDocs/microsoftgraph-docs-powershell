@@ -38,7 +38,7 @@ jobs:
         LABELS: generated
         BASE: main
         HEAD: ${{steps.create_branch.outputs.branch}}
-     run: |
+      run: |
         curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
         bin/hub pull-request -b "$BASE" -h "$HEAD" -m "$MESSAGE_TITLE" -m "$MESSAGE_BODY" -r "$REVIEWERS" -a "$ASSIGNEDTO" -l "$LABELS"
 # References
