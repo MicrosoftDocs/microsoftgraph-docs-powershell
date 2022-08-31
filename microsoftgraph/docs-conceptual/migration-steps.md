@@ -14,7 +14,7 @@ ms.reviewer: maisarissi
 
 Use the information in this article to plan the migration of your applications in Azure AD PowerShell to Microsoft Graph PowerShell SDK.
 
-## Why Microsoft Graph PowerShell?
+## Why upgrade to Microsoft Graph PowerShell?
 
 The following list summarizes the key advantages of using the Microsoft Graph PowerShell SDK:
 
@@ -22,11 +22,11 @@ The following list summarizes the key advantages of using the Microsoft Graph Po
 - **Supports PowerShell 7**: Microsoft Graph PowerShell module works with PowerShell 7 and later. It's also compatible with Windows PowerShell 5.1.
 - **Cross-platform support**: Microsoft Graph PowerShell module works on all platforms including Windows, macOS, and Linux.
 - **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security. For example, you can use Passwordless sign-in experiences.
-- **Supports external identities**: Users from other identity providers can authenticate to services in your tenant with Microsoft Graph PowerShell
+- **Supports external identities**: Users from other Azure AD tenants can authenticate to services in your tenant with Microsoft Graph PowerShell
 - **Uses least privilege**: Microsoft Graph PowerShell permissions are NOT pre-authorized and users must perform one-time request for app permissions depending on their needs.
 - **Advanced queries**: Microsoft Graph PowerShell supports rich Azure AD queries via eventual consistency.
 - **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
-- **Receives monthly updates**: Microsoft Graph PowerShell commands are updated monthly to support the latest Graph API updates.
+- **Receives regular updates**: Microsoft Graph PowerShell commands are updated regularly to support the latest Graph API updates.
 
 ## Upgrading to Microsoft Graph PowerShell
 
@@ -34,43 +34,34 @@ Scripts written in Azure AD PowerShell won't automatically work with Microsoft G
 
 To find the new cmdlets, see the [Cmdlet map](azuread-msoline-cmdlet-map.md).
 
+We have outlined a sample process for upgrading your existing scripts.
+
 ### Document current scripts
 
-Use the following criteria to check your scripts:
+Follow this example criteria to document your current scripts:
 
-- Purpose
-- Cmdlets used (inc. # of calls)
-- Frequency of execution
-- Importance
-- Length
-- Location
-- Still required
-- Improvement points (e.g. filter left, authentication, script analyzer, etc.)
-- Score (optional)
+- **Purpose**: What is the main function of the script?
+- **Cmdlets used and number of calls**: A list of all cmdlets used and the frequency of your calls to them.
+- **Frequency of execution**: How frequently is the script run and from what platform?
+- **Importance**: Categorize the business criticality of the script.
+- **Length**: How long is the script?
+- **Location**: How are you storing and securing the script? Where is it executed from?
+- **Still required**: As part of the upgrade, rationalize if we can use product functionality to do what the script does.
+- **Improvement points**: Can you improve the scripts. For example, filtering left, using modern authentication, and making use of a script analyzer. (
+- **Score (optional)**: You can optionally apply a scoring mechanism to help you prioritize. Give each script a score based on the criteria to help with update decisions.
 
 ### Update current scripts
 
-- Start simple / low score
-- Map cmdlets
-- Map parameters / switches
-- Map filters
-- Check cmdlet documentation because human updates frequently occurring
-- aka.ms/MSGraphExplorer
-- Understand output objects
-- Use dedicated apps and adhere to least privilege
-
-To find the new cmdlets, see the [Cmdlet map](azuread-msoline-cmdlet-map.md).
-
-### Convert your scripts
-
 There is currently no tool to automatically converts scripts in Azure AD PowerShell to Microsoft Graph PowerShell. To convert your scripts manually from Azure AD PowerShell, follows the steps below:
 
-1. Find the Microsoft Graph equivalent of your Azure AD PowerShell cmdlets from the [Cmdlet map](azuread-msoline-cmdlet-map.md).
-1. Select the Microsoft Graph cmdlet to view the reference documentation and get the new syntax for the cmdlet.
-1. Update your existing scripts using the new syntax.
-
-> [!NOTE]
-> Parameter names may not be the same in Microsoft Graph PowerShell. Consult the documentation to understand how to convert the parameters.
+- **Start simple / low score** : If you are using a scoring mechanism, test the upgrade with the least complex, less business critical scripts.
+- **Map cmdlets**: Using the [Cmdlet map](azuread-msoline-cmdlet-map.md), get the Microsoft Graph cmdlet equivalents of your cmdlets.
+- **Map parameters / switches**: Using the Microsoft Graph PowerShell syntax, map your parameters and switches.
+- **Map filters**: Using the Microsoft Graph PowerShell syntax, map your filters.
+- **Check cmdlet documentation**: Human updates are frequently occurring to add samples on using the new cmdlets.
+- **[GraphExplorer](https://developer.microsoft.com/en-us/graph/graph-explorer)**: Use Graph explorer to understand the underlying API and get help with PowerShell snippets.
+- **Understand output objects**: Understand the change in output objects in Microsoft Graph PowerShell.
+- **Use dedicated apps and adhere to least privilege**: Because Microsoft Graph PowerShell permissions are NOT pre-authorized, perform one-time request for permissions depending on your needs.
 
 #### Example
 
