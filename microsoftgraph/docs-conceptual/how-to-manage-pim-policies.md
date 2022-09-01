@@ -3,7 +3,7 @@ title: "Manage PIM policies using Microsoft Graph PowerShell"
 description: "Learn how to manage PIM policies in Microsoft Graph PowerShell"
 
 ms.topic: how-to
-ms.date: 08/24/2022
+ms.date: 09/01/2022
 author: msewaweru
 manager: mwongerapk
 ms.author: eunicewaweru
@@ -13,7 +13,7 @@ ms.author: eunicewaweru
 
 The Azure AD Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Each role has a set of settings that manage the role. For example, activation and assignment settings. These role settings are called policies.
 
-In this how-to guide, you will list and update these policies. 
+In this how-to guide, you will list and update these policies.
 
 ## Prerequisites
 
@@ -68,7 +68,7 @@ DirectoryRole_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50
 
 ## Step 2: Get policy assignments
 
-This returns the relationship between the role defnition and the policies.
+`Get-MgPolicyRoleManagementPolicyAssignment` returns the relationship between the role definition and the policies.
 
 ### Get all policy assignments
 
@@ -90,7 +90,7 @@ Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_b0ebbcf4-edb5-4c6a-b646-01850c5fc
 
 ### Get a specific policy assignment
 
-To get a specific policy assignement, run:
+To get a specific policy assignment, run:
 
 ```powershell
 $policyId = "Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03_9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
@@ -148,7 +148,7 @@ AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metad
 
 ## Step 4: Update a policy rule 
 
-Here, we will update the expiration end user assignment rule.
+In this step, we will update the expiration end user assignment rule.
 
 ```powershell
 $policyId = "Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03"
