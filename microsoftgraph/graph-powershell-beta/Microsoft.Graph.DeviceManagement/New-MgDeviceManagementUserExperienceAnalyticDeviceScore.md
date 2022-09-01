@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicescore
@@ -16,9 +16,9 @@ Create new navigation property to userExperienceAnalyticsDeviceScores for device
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceScore [-AdditionalProperties <Hashtable>]
  [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>] [-DeviceName <String>]
- [-EndpointAnalyticsScore <Double>] [-HealthStatus <String>] [-Id <String>] [-Manufacturer <String>]
- [-Model <String>] [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-EndpointAnalyticsScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
+ [-Manufacturer <String>] [-Model <String>] [-StartupPerformanceScore <Double>]
+ [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 userExperienceAnalyticsHealthState
 
 ```yaml
-Type: String
+Type: UserExperienceAnalyticsHealthState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -269,7 +269,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceScores>`: The user experience analytics device scores entity consolidates the various endpoint analytics scores.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceScores>: The user experience analytics device scores entity consolidates the various endpoint analytics scores.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppReliabilityScore <Double?>]`: The user experience analytics device app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308

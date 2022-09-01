@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticdevicescore
@@ -16,8 +16,8 @@ Update the navigation property userExperienceAnalyticsDeviceScores in deviceMana
 ```
 Update-MgDeviceManagementUserExperienceAnalyticDeviceScore -UserExperienceAnalyticsDeviceScoresId <String>
  [-AdditionalProperties <Hashtable>] [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>]
- [-DeviceName <String>] [-EndpointAnalyticsScore <Double>] [-HealthStatus <String>] [-Id <String>]
- [-Manufacturer <String>] [-Model <String>] [-StartupPerformanceScore <Double>]
+ [-DeviceName <String>] [-EndpointAnalyticsScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>]
+ [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-StartupPerformanceScore <Double>]
  [-WorkFromAnywhereScore <Double>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,8 +32,8 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceScore -UserExperienceAnalyt
 ```
 Update-MgDeviceManagementUserExperienceAnalyticDeviceScore -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>]
- [-DeviceName <String>] [-EndpointAnalyticsScore <Double>] [-HealthStatus <String>] [-Id <String>]
- [-Manufacturer <String>] [-Model <String>] [-StartupPerformanceScore <Double>]
+ [-DeviceName <String>] [-EndpointAnalyticsScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>]
+ [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-StartupPerformanceScore <Double>]
  [-WorkFromAnywhereScore <Double>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 userExperienceAnalyticsHealthState
 
 ```yaml
-Type: String
+Type: UserExperienceAnalyticsHealthState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -333,7 +333,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceScores>`: The user experience analytics device scores entity consolidates the various endpoint analytics scores.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceScores>: The user experience analytics device scores entity consolidates the various endpoint analytics scores.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppReliabilityScore <Double?>]`: The user experience analytics device app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
@@ -346,7 +346,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceScores>`: The user e
   - `[StartupPerformanceScore <Double?>]`: The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[WorkFromAnywhereScore <Double?>]`: The user experience analytics device work From anywhere score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema

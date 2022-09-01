@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance
@@ -17,8 +17,9 @@ Update the navigation property userExperienceAnalyticsBatteryHealthDevicePerform
 Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  -UserExperienceAnalyticsBatteryHealthDevicePerformanceId <String> [-AdditionalProperties <Hashtable>]
  [-BatteryAgeInDays <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceId <String>] [-DeviceName <String>]
- [-EstimatedRuntimeInMinutes <Int32>] [-HealthStatus <String>] [-Id <String>] [-Manufacturer <String>]
- [-MaxCapacityPercentage <Int32>] [-Model <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EstimatedRuntimeInMinutes <Int32>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
+ [-Manufacturer <String>] [-MaxCapacityPercentage <Int32>] [-Model <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -34,8 +35,9 @@ Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
 Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-BatteryAgeInDays <Int32>]
  [-DeviceBatteryHealthScore <Int32>] [-DeviceId <String>] [-DeviceName <String>]
- [-EstimatedRuntimeInMinutes <Int32>] [-HealthStatus <String>] [-Id <String>] [-Manufacturer <String>]
- [-MaxCapacityPercentage <Int32>] [-Model <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EstimatedRuntimeInMinutes <Int32>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
+ [-Manufacturer <String>] [-MaxCapacityPercentage <Int32>] [-Model <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -169,7 +171,7 @@ Accept wildcard characters: False
 userExperienceAnalyticsHealthState
 
 ```yaml
-Type: String
+Type: UserExperienceAnalyticsHealthState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -338,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance>`: The user experience analytics battery health device performance entity contains device level battery information.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance>: The user experience analytics battery health device performance entity contains device level battery information.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[BatteryAgeInDays <Int32?>]`: Estimated battery age. Unit in days. Valid values -2147483648 to 2147483647
@@ -351,7 +353,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerform
   - `[MaxCapacityPercentage <Int32?>]`: Ratio of current capacity and design capacity of the battery with the lowest capacity. Unit in percentage and values range from 0-100. Valid values -2147483648 to 2147483647
   - `[Model <String>]`: The model name of the device.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
