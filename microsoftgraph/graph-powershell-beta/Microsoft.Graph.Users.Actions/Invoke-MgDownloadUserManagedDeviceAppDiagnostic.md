@@ -1,46 +1,47 @@
 ﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusermanageddevicetoou
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgdownloadusermanageddeviceappdiagnostic
 schema: 2.0.0
 ---
 
-# Move-MgUserManagedDeviceToOu
+# Invoke-MgDownloadUserManagedDeviceAppDiagnostic
 
 ## SYNOPSIS
-Invoke action moveDevicesToOU
+Invoke action downloadAppDiagnostics
 
 ## SYNTAX
 
-### MoveExpanded (Default)
+### DownloadExpanded (Default)
 ```
-Move-MgUserManagedDeviceToOu -UserId <String> [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>]
- [-OrganizationalUnitPath <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgDownloadUserManagedDeviceAppDiagnostic -UserId <String> -OutFile <String>
+ [-AdditionalProperties <Hashtable>] [-Request <IMicrosoftGraphPowerliftDownloadRequest>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Move
+### Download
 ```
-Move-MgUserManagedDeviceToOu -UserId <String>
- -BodyParameter <IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgDownloadUserManagedDeviceAppDiagnostic -UserId <String> -OutFile <String>
+ -BodyParameter <IPathsIuhmg6UsersUserIdManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentityExpanded
+### DownloadViaIdentityExpanded
 ```
-Move-MgUserManagedDeviceToOu -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-DeviceIds <String[]>] [-OrganizationalUnitPath <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgDownloadUserManagedDeviceAppDiagnostic -InputObject <IUsersActionsIdentity> -OutFile <String>
+ [-AdditionalProperties <Hashtable>] [-Request <IMicrosoftGraphPowerliftDownloadRequest>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentity
+### DownloadViaIdentity
 ```
-Move-MgUserManagedDeviceToOu -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgDownloadUserManagedDeviceAppDiagnostic -InputObject <IUsersActionsIdentity> -OutFile <String>
+ -BodyParameter <IPathsIuhmg6UsersUserIdManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action moveDevicesToOU
+Invoke action downloadAppDiagnostics
 
 ## EXAMPLES
 
@@ -51,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
+Parameter Sets: DownloadExpanded, DownloadViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,29 +67,14 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Move, MoveViaIdentity
+Type: IPathsIuhmg6UsersUserIdManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Download, DownloadViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -DeviceIds
-.
-
-```yaml
-Type: String[]
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -98,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: MoveViaIdentityExpanded, MoveViaIdentity
+Parameter Sets: DownloadViaIdentityExpanded, DownloadViaIdentity
 Aliases:
 
 Required: True
@@ -108,15 +94,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OrganizationalUnitPath
-.
+### -OutFile
+Path to write output file to
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
+Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -138,12 +124,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Request
+Request used to download app diagnostic files.
+To construct, please use Get-Help -Online and see NOTES section for REQUEST properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPowerliftDownloadRequest
+Parameter Sets: DownloadExpanded, DownloadViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, Move
+Parameter Sets: DownloadExpanded, Download
 Aliases:
 
 Required: True
@@ -189,7 +191,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsIuhmg6UsersUserIdManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
@@ -203,10 +205,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPathsIuhmg6UsersUserIdManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeviceIds <String[]>]`: 
-  - `[OrganizationalUnitPath <String>]`: 
+  - `[Request <IMicrosoftGraphPowerliftDownloadRequest>]`: Request used to download app diagnostic files.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Files <String[]>]`: The list of files to download
+    - `[PowerliftId <String>]`: The unique id for the request
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
@@ -255,5 +259,10 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
+
+REQUEST <IMicrosoftGraphPowerliftDownloadRequest>: Request used to download app diagnostic files.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Files <String[]>]`: The list of files to download
+  - `[PowerliftId <String>]`: The unique id for the request
 
 ## RELATED LINKS
