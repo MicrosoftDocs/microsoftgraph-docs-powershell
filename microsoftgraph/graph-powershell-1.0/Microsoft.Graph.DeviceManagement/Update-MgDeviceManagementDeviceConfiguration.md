@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration
@@ -370,12 +370,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment\[]>: The list of assignments for the device configuration profile.
+ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment[]>: The list of assignments for the device configuration profile.
   - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfiguration>`: Device Configuration.
+BODYPARAMETER <IMicrosoftGraphDeviceConfiguration>: Device Configuration.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]`: The list of assignments for the device configuration profile.
@@ -435,7 +435,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceConfiguration>`: Device Configuration.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary\[]>: Device Configuration Setting State Device Summary
+DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary[]>: Device Configuration Setting State Device Summary
   - `[Id <String>]`: 
   - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
   - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
@@ -447,7 +447,7 @@ DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary\[]>: Devic
   - `[SettingName <String>]`: Name of the setting
   - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
 
-DEVICESTATUSES <IMicrosoftGraphDeviceConfigurationDeviceStatus\[]>: Device configuration installation status by device.
+DEVICESTATUSES <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>: Device configuration installation status by device.
   - `[Id <String>]`: 
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
@@ -457,7 +457,7 @@ DEVICESTATUSES <IMicrosoftGraphDeviceConfigurationDeviceStatus\[]>: Device confi
   - `[UserName <String>]`: The User Name that is being reported
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
-DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationDeviceOverview>`: deviceConfigurationDeviceOverview
+DEVICESTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationDeviceOverview>: deviceConfigurationDeviceOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
@@ -468,7 +468,7 @@ DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationDeviceOverview>`: devic
   - `[PendingCount <Int32?>]`: Number of pending devices
   - `[SuccessCount <Int32?>]`: Number of succeeded devices
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -595,7 +595,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-USERSTATUSES <IMicrosoftGraphDeviceConfigurationUserStatus\[]>: Device configuration installation status by user.
+USERSTATUSES <IMicrosoftGraphDeviceConfigurationUserStatus[]>: Device configuration installation status by user.
   - `[Id <String>]`: 
   - `[DevicesCount <Int32?>]`: Devices count for that user.
   - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
@@ -603,7 +603,7 @@ USERSTATUSES <IMicrosoftGraphDeviceConfigurationUserStatus\[]>: Device configura
   - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
-USERSTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationUserOverview>`: deviceConfigurationUserOverview
+USERSTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationUserOverview>: deviceConfigurationUserOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview

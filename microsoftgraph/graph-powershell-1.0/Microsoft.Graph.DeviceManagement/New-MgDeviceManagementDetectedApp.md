@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdetectedapp
@@ -207,7 +207,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDetectedApp>`: A managed or unmanaged app that is installed on a managed device. Unmanaged apps will only appear for devices marked as corporate owned.
+BODYPARAMETER <IMicrosoftGraphDetectedApp>: A managed or unmanaged app that is installed on a managed device. Unmanaged apps will only appear for devices marked as corporate owned.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
@@ -360,7 +360,7 @@ BODYPARAMETER `<IMicrosoftGraphDetectedApp>`: A managed or unmanaged app that is
   - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
   - `[Version <String>]`: Version of the discovered application. Read-only
 
-MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The devices that have the discovered application installed
+MANAGEDDEVICES <IMicrosoftGraphManagedDevice[]>: The devices that have the discovered application installed
   - `[Id <String>]`: 
   - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
   - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
