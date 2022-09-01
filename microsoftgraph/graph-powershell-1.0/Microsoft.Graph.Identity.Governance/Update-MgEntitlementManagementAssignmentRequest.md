@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignmentrequest
@@ -352,7 +352,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage1>: accessPackage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: 
@@ -446,7 +446,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
   - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
+ASSIGNMENT <IMicrosoftGraphAccessPackageAssignment1>: accessPackageAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
@@ -570,7 +570,7 @@ ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectType <String>]`: accessPackageSubjectType
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageAssignmentRequest
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignmentRequest1>: accessPackageAssignmentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
@@ -705,7 +705,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageA
   - `[State <String>]`: accessPackageRequestState
   - `[Status <String>]`: More information on the request processing status. Read-only.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -768,7 +768,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
   - `[UserId <String>]`: key: id of user
 
-REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
+REQUESTOR <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
@@ -791,7 +791,7 @@ REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectType <String>]`: accessPackageSubjectType
 
-SCHEDULE `<IMicrosoftGraphEntitlementManagementSchedule>`: entitlementManagementSchedule
+SCHEDULE <IMicrosoftGraphEntitlementManagementSchedule>: entitlementManagementSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
