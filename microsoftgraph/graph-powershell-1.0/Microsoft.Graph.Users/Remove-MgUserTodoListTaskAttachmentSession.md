@@ -1,35 +1,51 @@
 ﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/remove-mguserlicensedetail
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachmentsession
 schema: 2.0.0
 ---
 
-# Remove-MgUserLicenseDetail
+# Remove-MgUserTodoListTaskAttachmentSession
 
 ## SYNOPSIS
-Delete navigation property licenseDetails for users
+Delete navigation property attachmentSessions for users
 
 ## SYNTAX
 
 ### Delete1 (Default)
 ```
-Remove-MgUserLicenseDetail -LicenseDetailsId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
+ -TodoTaskListId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
-Remove-MgUserLicenseDetail -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property licenseDetails for users
+Delete navigation property attachmentSessions for users
 
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -AttachmentSessionId
+key: id of attachmentSession
+
+```yaml
+Type: String
+Parameter Sets: Delete1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -62,8 +78,23 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -LicenseDetailsId
-key: id of licenseDetails
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TodoTaskId
+key: id of todoTask
 
 ```yaml
 Type: String
@@ -77,15 +108,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -TodoTaskListId
+key: id of todoTaskList
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: String
+Parameter Sets: Delete1
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

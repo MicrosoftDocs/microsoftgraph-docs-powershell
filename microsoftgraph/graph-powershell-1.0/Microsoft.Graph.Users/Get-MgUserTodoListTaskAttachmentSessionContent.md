@@ -1,45 +1,45 @@
 ﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/remove-mguserlicensedetail
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mgusertodolisttaskattachmentsessioncontent
 schema: 2.0.0
 ---
 
-# Remove-MgUserLicenseDetail
+# Get-MgUserTodoListTaskAttachmentSessionContent
 
 ## SYNOPSIS
-Delete navigation property licenseDetails for users
+Get content for the navigation property attachmentSessions from users
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Get1 (Default)
 ```
-Remove-MgUserLicenseDetail -LicenseDetailsId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgUserTodoListTaskAttachmentSessionContent -AttachmentSessionId <String> -TodoTaskId <String>
+ -TodoTaskListId <String> -UserId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### GetViaIdentity1
 ```
-Remove-MgUserLicenseDetail -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Get-MgUserTodoListTaskAttachmentSessionContent -InputObject <IUsersIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property licenseDetails for users
+Get content for the navigation property attachmentSessions from users
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -IfMatch
-ETag
+### -AttachmentSessionId
+key: id of attachmentSession
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Get1
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -52,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -62,12 +62,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -LicenseDetailsId
-key: id of licenseDetails
+### -OutFile
+Path to write output file to
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -92,12 +92,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-key: id of user
+### -TodoTaskId
+key: id of todoTask
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -107,31 +107,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -TodoTaskListId
+key: id of todoTaskList
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: String
+Parameter Sets: Get1
+Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -UserId
+key: id of user
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: String
+Parameter Sets: Get1
+Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

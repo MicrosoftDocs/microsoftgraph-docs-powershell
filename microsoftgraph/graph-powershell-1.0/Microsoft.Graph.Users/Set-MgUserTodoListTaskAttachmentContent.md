@@ -1,45 +1,78 @@
 ﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/remove-mguserlicensedetail
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/set-mgusertodolisttaskattachmentcontent
 schema: 2.0.0
 ---
 
-# Remove-MgUserLicenseDetail
+# Set-MgUserTodoListTaskAttachmentContent
 
 ## SYNOPSIS
-Delete navigation property licenseDetails for users
+Update media content for the navigation property attachments in users
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Set1 (Default)
 ```
-Remove-MgUserLicenseDetail -LicenseDetailsId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgUserTodoListTaskAttachmentContent -AttachmentBaseId <String> -TodoTaskId <String>
+ -TodoTaskListId <String> -UserId <String> [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### SetViaIdentity1
 ```
-Remove-MgUserLicenseDetail -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgUserTodoListTaskAttachmentContent -InputObject <IUsersIdentity> [-BodyParameter <Stream>]
+ -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property licenseDetails for users
+Update media content for the navigation property attachments in users
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -IfMatch
-ETag
+### -AttachmentBaseId
+key: id of attachmentBase
+
+```yaml
+Type: String
+Parameter Sets: Set1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+
+```yaml
+Type: Stream
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -InFile
+The path to the file to upload.
+This should include a path and file name.
+If you omit the path, the current location will be used.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -52,28 +85,13 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: SetViaIdentity1
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -LicenseDetailsId
-key: id of licenseDetails
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -92,12 +110,42 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -TodoTaskId
+key: id of todoTask
+
+```yaml
+Type: String
+Parameter Sets: Set1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TodoTaskListId
+key: id of todoTaskList
+
+```yaml
+Type: String
+Parameter Sets: Set1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Set1
 Aliases:
 
 Required: True
@@ -144,6 +192,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### System.IO.Stream
 ## OUTPUTS
 
 ### System.Boolean
