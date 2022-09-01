@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementdeponboardingsettingenrollmentprofile
@@ -299,7 +299,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEnrollmentProfile>`: The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged. Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
+BODYPARAMETER <IMicrosoftGraphEnrollmentProfile>: The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged. Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ConfigurationEndpointUrl <String>]`: Configuration endpoint url to use for Enrollment
@@ -309,7 +309,7 @@ BODYPARAMETER `<IMicrosoftGraphEnrollmentProfile>`: The enrollmentProfile resour
   - `[RequireCompanyPortalOnSetupAssistantEnrolledDevices <Boolean?>]`: Indicates that Company Portal is required on setup assistant enrolled devices
   - `[RequiresUserAuthentication <Boolean?>]`: Indicates if the profile requires user authentication
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
