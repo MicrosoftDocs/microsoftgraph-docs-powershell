@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserperson
@@ -490,7 +490,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPerson>`: person
+BODYPARAMETER <IMicrosoftGraphPerson>: person
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Birthday <String>]`: The person's birthday.
@@ -544,11 +544,11 @@ BODYPARAMETER `<IMicrosoftGraphPerson>`: person
     - `[Type <String>]`: websiteType
   - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
 
-EMAILADDRESSES <IMicrosoftGraphRankedEmailAddress\[]>: The person's email addresses.
+EMAILADDRESSES <IMicrosoftGraphRankedEmailAddress[]>: The person's email addresses.
   - `[Address <String>]`: The email address.
   - `[Rank <Double?>]`: The rank of the email address. A rank is used as a sort key, in relation to the other returned results. A higher rank value corresponds to a more relevant result. Relevance is determined by communication, collaboration, and business relationship signals.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -575,11 +575,11 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-PHONES <IMicrosoftGraphPhone1\[]>: The person's phone numbers.
+PHONES <IMicrosoftGraphPhone1[]>: The person's phone numbers.
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 
-POSTALADDRESSES <IMicrosoftGraphLocation1\[]>: The person's addresses.
+POSTALADDRESSES <IMicrosoftGraphLocation1[]>: The person's addresses.
   - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -603,10 +603,10 @@ POSTALADDRESSES <IMicrosoftGraphLocation1\[]>: The person's addresses.
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-SOURCES <IMicrosoftGraphPersonDataSource\[]>: The sources the user data comes from, for example Directory or Outlook Contacts.
+SOURCES <IMicrosoftGraphPersonDataSource[]>: The sources the user data comes from, for example Directory or Outlook Contacts.
   - `[Type <String>]`: The type of data source.
 
-WEBSITES <IMicrosoftGraphWebsite\[]>: The person's websites.
+WEBSITES <IMicrosoftGraphWebsite[]>: The person's websites.
   - `[Address <String>]`: The URL of the website.
   - `[DisplayName <String>]`: The display name of the web site.
   - `[Type <String>]`: websiteType
