@@ -1,33 +1,33 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementcustomnotificationtocompanyportal
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdownloaddevicemanagementmanageddeviceappdiagnostic
 schema: 2.0.0
 ---
 
-# Send-MgDeviceManagementCustomNotificationToCompanyPortal
+# Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic
 
 ## SYNOPSIS
-Invoke action sendCustomNotificationToCompanyPortal
+Invoke action downloadAppDiagnostics
 
 ## SYNTAX
 
-### SendExpanded (Default)
+### DownloadExpanded (Default)
 ```
-Send-MgDeviceManagementCustomNotificationToCompanyPortal [-AdditionalProperties <Hashtable>]
- [-GroupsToNotify <String[]>] [-NotificationBody <String>] [-NotificationTitle <String>] [-PassThru] [-WhatIf]
+Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic -OutFile <String>
+ [-AdditionalProperties <Hashtable>] [-Request <IMicrosoftGraphPowerliftDownloadRequest>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Send
+### Download
 ```
-Send-MgDeviceManagementCustomNotificationToCompanyPortal
- -BodyParameter <IPaths1RrfeupDevicemanagementMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic -OutFile <String>
+ -BodyParameter <IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action sendCustomNotificationToCompanyPortal
+Invoke action downloadAppDiagnostics
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SendExpanded
+Parameter Sets: DownloadExpanded
 Aliases:
 
 Required: False
@@ -53,8 +53,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1RrfeupDevicemanagementMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Send
+Type: IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Download
 Aliases:
 
 Required: True
@@ -64,45 +64,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -GroupsToNotify
-.
-
-```yaml
-Type: String[]
-Parameter Sets: SendExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -NotificationBody
-.
+### -OutFile
+Path to write output file to
 
 ```yaml
 Type: String
-Parameter Sets: SendExpanded
+Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -NotificationTitle
-.
-
-```yaml
-Type: String
-Parameter Sets: SendExpanded
-Aliases:
-
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -115,6 +85,22 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Request
+Request used to download app diagnostic files.
+To construct, please use Get-Help -Online and see NOTES section for REQUEST properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPowerliftDownloadRequest
+Parameter Sets: DownloadExpanded
 Aliases:
 
 Required: False
@@ -160,7 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1RrfeupDevicemanagementMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -173,10 +159,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1RrfeupDevicemanagementMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupsToNotify <String[]>]`: 
-  - `[NotificationBody <String>]`: 
-  - `[NotificationTitle <String>]`: 
+  - `[Request <IMicrosoftGraphPowerliftDownloadRequest>]`: Request used to download app diagnostic files.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Files <String[]>]`: The list of files to download
+    - `[PowerliftId <String>]`: The unique id for the request
+
+REQUEST <IMicrosoftGraphPowerliftDownloadRequest>: Request used to download app diagnostic files.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Files <String[]>]`: The list of files to download
+  - `[PowerliftId <String>]`: The unique id for the request
 
 ## RELATED LINKS
