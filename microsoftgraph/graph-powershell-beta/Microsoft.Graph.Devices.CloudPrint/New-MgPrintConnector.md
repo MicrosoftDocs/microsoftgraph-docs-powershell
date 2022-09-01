@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector
@@ -16,7 +16,7 @@ Create new navigation property to connectors for print
 ```
 New-MgPrintConnector [-AdditionalProperties <Hashtable>] [-AppVersion <String>]
  [-DeviceHealth <IMicrosoftGraphDeviceHealth>] [-DisplayName <String>] [-FullyQualifiedDomainName <String>]
- [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Name <String>] [-OperatingSystem <String>]
+ [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>] [-Name <String>] [-OperatingSystem <String>]
  [-RegisteredDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -144,7 +144,7 @@ printerLocation
 To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterLocation1
+Type: IMicrosoftGraphPrinterLocation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,7 +249,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
+BODYPARAMETER <IMicrosoftGraphPrintConnector>: printConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppVersion <String>]`: The connector's version.
@@ -283,11 +283,11 @@ BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-DEVICEHEALTH `<IMicrosoftGraphDeviceHealth>`: deviceHealth
+DEVICEHEALTH <IMicrosoftGraphDeviceHealth>: deviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastConnectionTime <DateTime?>]`: The last time the device was connected.
 
-LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
+LOCATION <IMicrosoftGraphPrinterLocation>: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.
