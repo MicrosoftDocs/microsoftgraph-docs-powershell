@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkdeviceactivity
@@ -269,7 +269,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVEPERIPHERALS `<IMicrosoftGraphTeamworkActivePeripherals>`: teamworkActivePeripherals
+ACTIVEPERIPHERALS <IMicrosoftGraphTeamworkActivePeripherals>: teamworkActivePeripherals
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CommunicationSpeaker <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -282,7 +282,7 @@ ACTIVEPERIPHERALS `<IMicrosoftGraphTeamworkActivePeripherals>`: teamworkActivePe
   - `[RoomCamera <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
   - `[Speaker <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceActivity>`: teamworkDeviceActivity
+BODYPARAMETER <IMicrosoftGraphTeamworkDeviceActivity>: teamworkDeviceActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActivePeripherals <IMicrosoftGraphTeamworkActivePeripherals>]`: teamworkActivePeripherals
@@ -309,7 +309,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceActivity>`: teamworkDeviceActivity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time when the device activity detail was last modified.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -318,7 +318,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -357,7 +357,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

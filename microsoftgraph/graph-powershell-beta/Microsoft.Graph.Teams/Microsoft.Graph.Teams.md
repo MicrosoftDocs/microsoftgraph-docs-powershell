@@ -533,6 +533,12 @@ Get operations from teamwork
 ### [Get-MgTeamworkTeamAppSetting](Get-MgTeamworkTeamAppSetting.md)
 Get teamsAppSettings from teamwork
 
+### [Get-MgTeamworkTeamTemplate](Get-MgTeamworkTeamTemplate.md)
+Get teamTemplates from teamwork
+
+### [Get-MgTeamworkTeamTemplateDefinition](Get-MgTeamworkTeamTemplateDefinition.md)
+Get definitions from teamwork
+
 ### [Get-MgTeamworkWorkforceIntegration](Get-MgTeamworkWorkforceIntegration.md)
 Get workforceIntegrations from teamwork
 
@@ -938,6 +944,9 @@ Create new navigation property to devices for teamwork
 ### [New-MgTeamworkDeviceOperation](New-MgTeamworkDeviceOperation.md)
 Create new navigation property to operations for teamwork
 
+### [New-MgTeamworkTeamTemplate](New-MgTeamworkTeamTemplate.md)
+Create new navigation property to teamTemplates for teamwork
+
 ### [New-MgTeamworkWorkforceIntegration](New-MgTeamworkWorkforceIntegration.md)
 Create new navigation property to workforceIntegrations for teamwork
 
@@ -1273,6 +1282,9 @@ Delete navigation property operations for teamwork
 
 ### [Remove-MgTeamworkTeamAppSetting](Remove-MgTeamworkTeamAppSetting.md)
 Delete navigation property teamsAppSettings for teamwork
+
+### [Remove-MgTeamworkTeamTemplate](Remove-MgTeamworkTeamTemplate.md)
+Delete navigation property teamTemplates for teamwork
 
 ### [Remove-MgTeamworkWorkforceIntegration](Remove-MgTeamworkWorkforceIntegration.md)
 Delete navigation property workforceIntegrations for teamwork
@@ -1705,6 +1717,9 @@ Invoke action updateSoftware
 
 ### [Update-MgTeamworkTeamAppSetting](Update-MgTeamworkTeamAppSetting.md)
 Update the navigation property teamsAppSettings in teamwork
+
+### [Update-MgTeamworkTeamTemplate](Update-MgTeamworkTeamTemplate.md)
+Update the navigation property teamTemplates in teamwork
 
 ### [Update-MgTeamworkWorkforceIntegration](Update-MgTeamworkWorkforceIntegration.md)
 Update the navigation property workforceIntegrations in teamwork
