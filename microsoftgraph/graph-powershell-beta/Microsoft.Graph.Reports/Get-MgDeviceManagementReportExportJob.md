@@ -228,7 +228,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExportJob
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExportJob1
 ## NOTES
 
 ALIASES

@@ -63,7 +63,7 @@ New-MgUser [-AboutMe <String>] [-AccountEnabled] [-Activities <IMicrosoftGraphUs
  [-ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>] [-Settings <IMicrosoftGraphUserSettings1>]
  [-ShowInAddressList] [-SignInSessionsValidFromDateTime <DateTime>] [-Skills <String[]>] [-State <String>]
  [-StreetAddress <String>] [-Surname <String>] [-Teamwork <IMicrosoftGraphUserTeamwork1>]
- [-Todo <IMicrosoftGraphTodo1>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-Todo <IMicrosoftGraphTodo>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
  [-UsageLocation <String>] [-UserPrincipalName <String>] [-UserType <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -2079,7 +2079,7 @@ todo
 To construct, please use Get-Help -Online and see NOTES section for TODO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTodo1
+Type: IMicrosoftGraphTodo
 Parameter Sets: CreateExpanded1
 Aliases:
 

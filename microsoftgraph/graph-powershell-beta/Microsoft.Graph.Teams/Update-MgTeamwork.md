@@ -15,7 +15,7 @@ Update teamwork
 ### UpdateExpanded1 (Default)
 ```
 Update-MgTeamwork [-AdditionalProperties <Hashtable>] [-DeletedTeams <IMicrosoftGraphDeletedTeam[]>]
- [-Devices <IMicrosoftGraphTeamworkDevice[]>] [-Id <String>]
+ [-Devices <IMicrosoftGraphTeamworkDevice[]>] [-Id <String>] [-TeamTemplates <IMicrosoftGraphTeamTemplate[]>]
  [-TeamsAppSettings <IMicrosoftGraphTeamsAppSettings>]
  [-WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -133,6 +133,22 @@ To construct, please use Get-Help -Online and see NOTES section for TEAMSAPPSETT
 
 ```yaml
 Type: IMicrosoftGraphTeamsAppSettings
+Parameter Sets: UpdateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TeamTemplates
+The templates associated with a team.
+To construct, please use Get-Help -Online and see NOTES section for TEAMTEMPLATES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTeamTemplate[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 

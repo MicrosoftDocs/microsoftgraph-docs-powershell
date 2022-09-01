@@ -41,7 +41,7 @@ Update-MgDeviceManagement [-AdditionalProperties <Hashtable>]
  [-SoftwareUpdateStatusSummary <IMicrosoftGraphSoftwareUpdateStatusSummary>]
  [-SubscriptionState <DeviceManagementSubscriptionState>]
  [-TelecomExpenseManagementPartners <IMicrosoftGraphTelecomExpenseManagementPartner[]>]
- [-TermsAndConditions <IMicrosoftGraphTermsAndConditions1[]>]
+ [-TermsAndConditions <IMicrosoftGraphTermsAndConditions[]>]
  [-TroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]
  [-WindowsAutopilotDeviceIdentities <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]
  [-WindowsInformationProtectionAppLearningSummaries <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]>]
@@ -51,7 +51,7 @@ Update-MgDeviceManagement [-AdditionalProperties <Hashtable>]
 
 ### Update1
 ```
-Update-MgDeviceManagement -BodyParameter <IMicrosoftGraphDeviceManagement1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgDeviceManagement -BodyParameter <IMicrosoftGraphDeviceManagement> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -98,7 +98,7 @@ Singleton entity that acts as a container for all device management functionalit
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagement1
+Type: IMicrosoftGraphDeviceManagement
 Parameter Sets: Update1
 Aliases:
 
@@ -606,7 +606,7 @@ The terms and conditions associated with device management of the company.
 To construct, please use Get-Help -Online and see NOTES section for TERMSANDCONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermsAndConditions1[]
+Type: IMicrosoftGraphTermsAndConditions[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -717,7 +717,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagement1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagement
 ## OUTPUTS
 
 ### System.Boolean

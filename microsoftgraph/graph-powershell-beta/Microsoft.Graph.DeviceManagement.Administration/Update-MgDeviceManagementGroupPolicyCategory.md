@@ -17,9 +17,9 @@ Update the navigation property groupPolicyCategories in deviceManagement
 Update-MgDeviceManagementGroupPolicyCategory -GroupPolicyCategoryId <String>
  [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphGroupPolicyCategory[]>]
  [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]
- [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-DisplayName <String>] [-Id <String>] [-IsRoot]
- [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphGroupPolicyCategory>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-DisplayName <String>] [-Id <String>]
+ [-IngestionSource <IngestionSource>] [-IsRoot] [-LastModifiedDateTime <DateTime>]
+ [-Parent <IMicrosoftGraphGroupPolicyCategory>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -33,9 +33,9 @@ Update-MgDeviceManagementGroupPolicyCategory -GroupPolicyCategoryId <String>
 Update-MgDeviceManagementGroupPolicyCategory -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphGroupPolicyCategory[]>]
  [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]
- [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-DisplayName <String>] [-Id <String>] [-IsRoot]
- [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphGroupPolicyCategory>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-DisplayName <String>] [-Id <String>]
+ [-IngestionSource <IngestionSource>] [-IsRoot] [-LastModifiedDateTime <DateTime>]
+ [-Parent <IMicrosoftGraphGroupPolicyCategory>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -167,6 +167,21 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IngestionSource
+Category Ingestion source
+
+```yaml
+Type: IngestionSource
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

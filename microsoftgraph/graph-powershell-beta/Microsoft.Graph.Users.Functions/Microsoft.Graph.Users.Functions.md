@@ -164,6 +164,9 @@ Invoke function delta
 ### [Get-MgUserTodoListTaskDelta](Get-MgUserTodoListTaskDelta.md)
 Invoke function delta
 
+### [Invoke-MgAppUserManagedDeviceDiagnostic](Invoke-MgAppUserManagedDeviceDiagnostic.md)
+Invoke function appDiagnostics
+
 ### [Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles](Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles.md)
 Invoke function allowedCalendarSharingRoles
 

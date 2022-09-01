@@ -18,7 +18,7 @@ New-MgPrintShare [-AdditionalProperties <Hashtable>] [-AllowAllUsers] [-AllowedG
  [-AllowedUsers <IMicrosoftGraphUser1[]>] [-Capabilities <IMicrosoftGraphPrinterCapabilities>]
  [-CreatedDateTime <DateTime>] [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>]
  [-Id <String>] [-IsAcceptingJobs] [-Jobs <IMicrosoftGraphPrintJob1[]>]
- [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
+ [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>] [-Model <String>]
  [-Printer <IMicrosoftGraphPrinter>] [-Status <IMicrosoftGraphPrinterStatus1>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -228,7 +228,7 @@ printerLocation
 To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterLocation
+Type: IMicrosoftGraphPrinterLocation1
 Parameter Sets: CreateExpanded
 Aliases:
 

@@ -383,6 +383,12 @@ Invoke action shutDown
 ### [Invoke-MgDownDeviceManagementManagedDeviceShut](Invoke-MgDownDeviceManagementManagedDeviceShut.md)
 Invoke action shutDown
 
+### [Invoke-MgDownloadDeviceManagementComanagedDeviceAppDiagnostic](Invoke-MgDownloadDeviceManagementComanagedDeviceAppDiagnostic.md)
+Invoke action downloadAppDiagnostics
+
+### [Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic](Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic.md)
+Invoke action downloadAppDiagnostics
+
 ### [Invoke-MgExecuteDeviceManagementComanagedDeviceAction](Invoke-MgExecuteDeviceManagementComanagedDeviceAction.md)
 Invoke action executeAction
 
