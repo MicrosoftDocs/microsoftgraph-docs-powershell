@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevice
@@ -1119,7 +1119,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre-enrolled through Intune
+BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-enrolled through Intune
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
@@ -1266,7 +1266,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
   - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
   - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
 
-CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>`: configuration Manager client enabled features
+CONFIGURATIONMANAGERCLIENTENABLEDFEATURES <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>: configuration Manager client enabled features
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
   - `[DeviceConfiguration <Boolean?>]`: Whether device configuration is managed by Intune
@@ -1275,19 +1275,19 @@ CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerC
   - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
   - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
 
-DEVICEACTIONRESULTS <IMicrosoftGraphDeviceActionResult1\[]>: List of ComplexType deviceActionResult objects. This property is read-only.
+DEVICEACTIONRESULTS <IMicrosoftGraphDeviceActionResult1[]>: List of ComplexType deviceActionResult objects. This property is read-only.
   - `[ActionName <String>]`: Action name
   - `[ActionState <ActionState?>]`: State of the action on the device
   - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
   - `[StartDateTime <DateTime?>]`: Time the action was initiated
 
-DEVICECATEGORY `<IMicrosoftGraphDeviceCategory2>`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+DEVICECATEGORY <IMicrosoftGraphDeviceCategory2>: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
 
-DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1\[]>: Device compliance policy states for this device.
+DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1[]>: Device compliance policy states for this device.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -1311,7 +1311,7 @@ DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1\[]>: D
   - `[State <String>]`: complianceStatus
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1\[]>: Device configuration states for this device.
+DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1[]>: Device configuration states for this device.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -1335,7 +1335,7 @@ DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1\[]>: Device 
   - `[State <String>]`: complianceStatus
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: deviceHealthAttestationState
+DEVICEHEALTHATTESTATIONSTATE <IMicrosoftGraphDeviceHealthAttestationState>: deviceHealthAttestationState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
   - `[BitLockerStatus <String>]`: On or Off of BitLocker Drive Encryption
@@ -1370,7 +1370,7 @@ DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: de
   - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
   - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
