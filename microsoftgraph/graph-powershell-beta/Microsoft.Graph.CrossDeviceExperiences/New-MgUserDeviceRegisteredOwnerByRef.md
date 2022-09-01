@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguserdeviceregisteredownerbyref
@@ -12,16 +12,28 @@ Create new navigation property ref to registeredOwners for users
 
 ## SYNTAX
 
-### Create (Default)
+### CreateExpanded (Default)
 ```
-New-MgUserDeviceRegisteredOwnerByRef -DeviceId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgUserDeviceRegisteredOwnerByRef -DeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgUserDeviceRegisteredOwnerByRef -DeviceId <String> -UserId <String> -BodyParameter <Hashtable> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgUserDeviceRegisteredOwnerByRef -InputObject <ICrossDeviceExperiencesIdentity>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserDeviceRegisteredOwnerByRef -InputObject <ICrossDeviceExperiencesIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserDeviceRegisteredOwnerByRef -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <Hashtable>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,12 +43,42 @@ Create new navigation property ref to registeredOwners for users
 
 ## PARAMETERS
 
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+
+```yaml
+Type: Hashtable
+Parameter Sets: Create, CreateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -DeviceId
 key: id of device
 
 ```yaml
 Type: String
-Parameter Sets: Create
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -52,7 +94,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +124,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Create
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -129,6 +171,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+### System.Collections.Hashtable
 ## OUTPUTS
 
 ### System.Boolean
@@ -141,7 +184,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
   - `[CommandId <String>]`: key: id of command
   - `[DeviceId <String>]`: key: id of device
