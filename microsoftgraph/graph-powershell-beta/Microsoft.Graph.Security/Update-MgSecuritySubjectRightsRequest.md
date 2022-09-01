@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritysubjectrightsrequest
@@ -621,12 +621,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDTO `<IMicrosoftGraphIdentity>`: identity
+ASSIGNEDTO <IMicrosoftGraphIdentity>: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
 
-BODYPARAMETER `<IMicrosoftGraphSubjectRightsRequest>`: subjectRightsRequest
+BODYPARAMETER <IMicrosoftGraphSubjectRightsRequest>: subjectRightsRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssignedTo <IMicrosoftGraphIdentity>]`: identity
@@ -1299,7 +1299,7 @@ BODYPARAMETER `<IMicrosoftGraphSubjectRightsRequest>`: subjectRightsRequest
               - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
             - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
               - `[Id <String>]`: 
-              - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+              - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
               - `[PhoneType <String>]`: authenticationPhoneType
               - `[SmsSignInState <String>]`: authenticationMethodSignInState
             - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -1578,7 +1578,7 @@ BODYPARAMETER `<IMicrosoftGraphSubjectRightsRequest>`: subjectRightsRequest
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5282,7 +5282,7 @@ BODYPARAMETER `<IMicrosoftGraphSubjectRightsRequest>`: subjectRightsRequest
     - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
   - `[Type <String>]`: subjectRightsRequestType
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5291,14 +5291,14 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DATASUBJECT `<IMicrosoftGraphDataSubject>`: dataSubject
+DATASUBJECT <IMicrosoftGraphDataSubject>: dataSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Email <String>]`: Email of the data subject.
   - `[FirstName <String>]`: First name of the data subject.
   - `[LastName <String>]`: Last Name of the data subject.
   - `[Residency <String>]`: The country/region of residency. The residency information is uesed only for internal reporting but not for the content search.
 
-HISTORY <IMicrosoftGraphSubjectRightsRequestHistory1\[]>: Collection of history change events.
+HISTORY <IMicrosoftGraphSubjectRightsRequestHistory1[]>: Collection of history change events.
   - `[ChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -5312,7 +5312,7 @@ HISTORY <IMicrosoftGraphSubjectRightsRequestHistory1\[]>: Collection of history 
   - `[StageStatus <String>]`: subjectRightsRequestStageStatus
   - `[Type <String>]`: Type of history.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -5356,7 +5356,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-INSIGHT `<IMicrosoftGraphSubjectRightsRequestDetail>`: subjectRightsRequestDetail
+INSIGHT <IMicrosoftGraphSubjectRightsRequestDetail>: subjectRightsRequestDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExcludedItemCount <Int64?>]`: Count of items that are excluded from the request.
   - `[InsightCounts <IMicrosoftGraphKeyValuePair[]>]`: Count of items per insight.
@@ -5368,7 +5368,7 @@ INSIGHT `<IMicrosoftGraphSubjectRightsRequestDetail>`: subjectRightsRequestDetai
   - `[SignedOffItemCount <Int64?>]`: Count of items signed off by the administrator.
   - `[TotalItemSize <Int64?>]`: Total item size in bytes.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5377,7 +5377,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NOTES <IMicrosoftGraphAuthoredNote\[]>: List of notes associated with the request.
+NOTES <IMicrosoftGraphAuthoredNote[]>: List of notes associated with the request.
   - `[Id <String>]`: 
   - `[Author <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5389,7 +5389,7 @@ NOTES <IMicrosoftGraphAuthoredNote\[]>: List of notes associated with the reques
     - `[ContentType <String>]`: bodyType
   - `[CreatedDateTime <DateTime?>]`: The date and time when the entity was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-STAGES <IMicrosoftGraphSubjectRightsRequestStageDetail\[]>: Information about the different stages for the request.
+STAGES <IMicrosoftGraphSubjectRightsRequestStageDetail[]>: Information about the different stages for the request.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Code <String>]`: Represents the error code.
@@ -5408,7 +5408,7 @@ STAGES <IMicrosoftGraphSubjectRightsRequestStageDetail\[]>: Information about th
   - `[Stage <String>]`: subjectRightsRequestStage
   - `[Status <String>]`: subjectRightsRequestStageStatus
 
-TEAM `<IMicrosoftGraphTeam>`: team
+TEAM <IMicrosoftGraphTeam>: team
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AllChannels <IMicrosoftGraphChannel1[]>]`: List of channels either hosted in or shared with the team (incoming channels).
@@ -6010,7 +6010,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: 
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
           - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -6292,7 +6292,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.

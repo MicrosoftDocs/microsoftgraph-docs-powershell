@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatsubmissionfilethreat
@@ -366,13 +366,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADMINREVIEW `<IMicrosoftGraphSecuritySubmissionAdminReview>`: submissionAdminReview
+ADMINREVIEW <IMicrosoftGraphSecuritySubmissionAdminReview>: submissionAdminReview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
   - `[ReviewDateTime <DateTime?>]`: Specifies the date time when the review occurred.
   - `[ReviewResult <String>]`: submissionResultCategory
 
-BODYPARAMETER `<IMicrosoftGraphSecurityFileThreatSubmission>`: fileThreatSubmission
+BODYPARAMETER <IMicrosoftGraphSecurityFileThreatSubmission>: fileThreatSubmission
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -403,13 +403,13 @@ BODYPARAMETER `<IMicrosoftGraphSecurityFileThreatSubmission>`: fileThreatSubmiss
   - `[Id <String>]`: 
   - `[FileName <String>]`: It specifies the file name to be submitted.
 
-CREATEDBY `<IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
+CREATEDBY <IMicrosoftGraphSecuritySubmissionUserIdentity>: submissionUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -453,7 +453,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
+RESULT <IMicrosoftGraphSecuritySubmissionResult>: submissionResult
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Category <String>]`: submissionResultCategory
   - `[Detail <String>]`: submissionResultDetail
