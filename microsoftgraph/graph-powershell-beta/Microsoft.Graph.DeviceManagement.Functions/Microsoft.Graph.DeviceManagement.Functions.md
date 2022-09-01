@@ -143,6 +143,12 @@ Invoke function getStorageAccounts
 ### [Get-MgDeviceManagementVirtualEndpointSnapshotSubscription](Get-MgDeviceManagementVirtualEndpointSnapshotSubscription.md)
 Invoke function getSubscriptions
 
+### [Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic](Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic.md)
+Invoke function appDiagnostics
+
+### [Invoke-MgAppDeviceManagementManagedDeviceDiagnostic](Invoke-MgAppDeviceManagementManagedDeviceDiagnostic.md)
+Invoke function appDiagnostics
+
 ### [Invoke-MgCustomDeviceManagementRoleScopeTag](Invoke-MgCustomDeviceManagementRoleScopeTag.md)
 Invoke function hasCustomRoleScopeTag
 

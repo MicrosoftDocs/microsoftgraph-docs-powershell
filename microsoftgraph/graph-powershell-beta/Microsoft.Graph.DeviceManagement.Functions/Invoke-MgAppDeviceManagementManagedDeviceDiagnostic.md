@@ -1,49 +1,34 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementsuggestedenrollmentlimit
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgappdevicemanagementmanageddevicediagnostic
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementSuggestedEnrollmentLimit
+# Invoke-MgAppDeviceManagementManagedDeviceDiagnostic
 
 ## SYNOPSIS
-Invoke function getSuggestedEnrollmentLimit
+Invoke function appDiagnostics
 
 ## SYNTAX
 
-### Get (Default)
+### App (Default)
 ```
-Get-MgDeviceManagementSuggestedEnrollmentLimit -EnrollmentType <String> [<CommonParameters>]
+Invoke-MgAppDeviceManagementManagedDeviceDiagnostic -Upn <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### AppViaIdentity
 ```
-Get-MgDeviceManagementSuggestedEnrollmentLimit -InputObject <IDeviceManagementFunctionsIdentity>
+Invoke-MgAppDeviceManagementManagedDeviceDiagnostic -InputObject <IDeviceManagementFunctionsIdentity>
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getSuggestedEnrollmentLimit
+Invoke function appDiagnostics
 
 ## EXAMPLES
 
 ## PARAMETERS
-
-### -EnrollmentType
-Usage: enrollmentType='{enrollmentType}'
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -InputObject
 Identity Parameter
@@ -51,13 +36,28 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementFunctionsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: AppViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Upn
+Usage: upn='{upn}'
+
+```yaml
+Type: String
+Parameter Sets: App
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -69,7 +69,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPowerliftIncidentMetadata
 ## NOTES
 
 ALIASES
