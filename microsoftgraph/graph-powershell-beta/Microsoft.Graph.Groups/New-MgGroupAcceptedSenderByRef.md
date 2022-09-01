@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupacceptedsenderbyref
@@ -12,15 +12,28 @@ Create new navigation property ref to acceptedSenders for groups
 
 ## SYNTAX
 
-### Create (Default)
+### CreateExpanded (Default)
 ```
-New-MgGroupAcceptedSenderByRef -GroupId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgGroupAcceptedSenderByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgGroupAcceptedSenderByRef -GroupId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,12 +43,42 @@ Create new navigation property ref to acceptedSenders for groups
 
 ## PARAMETERS
 
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+
+```yaml
+Type: Hashtable
+Parameter Sets: Create, CreateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -GroupId
 key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Create
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -51,7 +94,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -113,6 +156,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+### System.Collections.Hashtable
 ## OUTPUTS
 
 ### System.Boolean
@@ -125,7 +169,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

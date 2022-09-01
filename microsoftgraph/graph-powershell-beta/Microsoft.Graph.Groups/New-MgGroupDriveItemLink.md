@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlink
@@ -23,7 +23,7 @@ New-MgGroupDriveItemLink -DriveId <String> -DriveItemId <String> -GroupId <Strin
 ### Create
 ```
 New-MgGroupDriveItemLink -DriveId <String> -DriveItemId <String> -GroupId <String>
- -BodyParameter <IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ New-MgGroupDriveItemLink -InputObject <IGroupsIdentity> [-AdditionalProperties <
 ### CreateViaIdentity
 ```
 New-MgGroupDriveItemLink -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema1
+Type: IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -284,7 +284,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShell.Models.IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission1
@@ -297,7 +297,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Message <String>]`: 
@@ -310,7 +310,7 @@ BODYPARAMETER `<IPaths13X0452GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoft
   - `[Scope <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -353,7 +353,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
