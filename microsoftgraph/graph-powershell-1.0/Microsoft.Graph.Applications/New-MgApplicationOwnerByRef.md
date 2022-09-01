@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref
@@ -12,15 +12,28 @@ Create new navigation property ref to owners for applications
 
 ## SYNTAX
 
-### Create (Default)
+### CreateExpanded (Default)
 ```
-New-MgApplicationOwnerByRef -ApplicationId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationOwnerByRef -ApplicationId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgApplicationOwnerByRef -ApplicationId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter <Hashtable> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,12 +55,27 @@ The second command adds the new owner to the specified application.
 
 ## PARAMETERS
 
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ApplicationId
 key: id of application
 
 ```yaml
 Type: String
-Parameter Sets: Create
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -57,13 +85,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -BodyParameter
+.
+
+```yaml
+Type: Hashtable
+Parameter Sets: Create, CreateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -125,6 +168,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### System.Collections.Hashtable
 ## OUTPUTS
 
 ### System.Boolean
@@ -137,7 +181,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

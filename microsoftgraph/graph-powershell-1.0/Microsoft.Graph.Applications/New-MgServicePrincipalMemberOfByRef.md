@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalhomerealmdiscoverypolicybyref
@@ -13,16 +13,28 @@ Supports $expand.
 
 ## SYNTAX
 
-### Create1 (Default)
+### CreateExpanded1 (Default)
 ```
-New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create1
+```
+New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <String> -BodyParameter <Hashtable>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
-New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicationsIdentity>
+ -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,13 +45,43 @@ Supports $expand.
 
 ## PARAMETERS
 
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+
+```yaml
+Type: Hashtable
+Parameter Sets: Create1, CreateViaIdentity1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -69,7 +111,7 @@ key: id of servicePrincipal
 
 ```yaml
 Type: String
-Parameter Sets: Create1
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -116,6 +158,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### System.Collections.Hashtable
 ## OUTPUTS
 
 ### System.Boolean
