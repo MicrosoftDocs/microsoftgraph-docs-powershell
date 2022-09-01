@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkdeviceconfiguration
@@ -395,7 +395,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphTeamworkDeviceConfiguration>: teamworkDeviceConfiguration
+BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceConfiguration>`: teamworkDeviceConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>]`: teamworkCameraConfiguration
@@ -509,7 +509,7 @@ BODYPARAMETER <IMicrosoftGraphTeamworkDeviceConfiguration>: teamworkDeviceConfig
       - `[IsHideMeetingNamesEnabled <Boolean?>]`: True if hiding meeting names is enabled.
       - `[IsSendLogsAndFeedbackEnabled <Boolean?>]`: True if sending logs and feedback is enabled.
 
-CAMERACONFIGURATION <IMicrosoftGraphTeamworkCameraConfiguration>: teamworkCameraConfiguration
+CAMERACONFIGURATION `<IMicrosoftGraphTeamworkCameraConfiguration>`: teamworkCameraConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Cameras <IMicrosoftGraphTeamworkPeripheral[]>]`: 
     - `[Id <String>]`: 
@@ -523,7 +523,7 @@ CAMERACONFIGURATION <IMicrosoftGraphTeamworkCameraConfiguration>: teamworkCamera
     - `[IsContentEnhancementEnabled <Boolean?>]`: True if the content enhancement is enabled.
   - `[DefaultContentCamera <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -532,7 +532,7 @@ CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DISPLAYCONFIGURATION <IMicrosoftGraphTeamworkDisplayConfiguration>: teamworkDisplayConfiguration
+DISPLAYCONFIGURATION `<IMicrosoftGraphTeamworkDisplayConfiguration>`: teamworkDisplayConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfiguredDisplays <IMicrosoftGraphTeamworkConfiguredPeripheral[]>]`: The list of configured displays. Applicable only for Microsoft Teams Rooms devices.
     - `[IsOptional <Boolean?>]`: True if the current peripheral is optional. If set to false, this property is also used as part of the calculation of the health state for the device.
@@ -553,7 +553,7 @@ DISPLAYCONFIGURATION <IMicrosoftGraphTeamworkDisplayConfiguration>: teamworkDisp
   - `[IsContentDuplicationAllowed <Boolean?>]`: True if content duplication is allowed. Applicable only for Teams Rooms devices.
   - `[IsDualDisplayModeEnabled <Boolean?>]`: True if dual display mode is enabled. If isDualDisplayModeEnabled is true, then the content will be displayed on both front of room screens instead of just the one screen, when it is shared via the HDMI ingest module on the Microsoft Teams Rooms device. Applicable only for Teams Rooms devices.
 
-HARDWARECONFIGURATION <IMicrosoftGraphTeamworkHardwareConfiguration>: teamworkHardwareConfiguration
+HARDWARECONFIGURATION `<IMicrosoftGraphTeamworkHardwareConfiguration>`: teamworkHardwareConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Compute <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -564,7 +564,7 @@ HARDWARECONFIGURATION <IMicrosoftGraphTeamworkHardwareConfiguration>: teamworkHa
   - `[HdmiIngest <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
   - `[ProcessorModel <String>]`: The CPU model on the device.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -603,7 +603,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -612,7 +612,7 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-MICROPHONECONFIGURATION <IMicrosoftGraphTeamworkMicrophoneConfiguration>: teamworkMicrophoneConfiguration
+MICROPHONECONFIGURATION `<IMicrosoftGraphTeamworkMicrophoneConfiguration>`: teamworkMicrophoneConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DefaultMicrophone <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -623,7 +623,7 @@ MICROPHONECONFIGURATION <IMicrosoftGraphTeamworkMicrophoneConfiguration>: teamwo
   - `[IsMicrophoneOptional <Boolean?>]`: True if the configured microphone is optional. False if the microphone is not optional and the health state of the device should be computed.
   - `[Microphones <IMicrosoftGraphTeamworkPeripheral[]>]`: 
 
-SOFTWAREVERSIONS <IMicrosoftGraphTeamworkDeviceSoftwareVersions>: teamworkDeviceSoftwareVersions
+SOFTWAREVERSIONS `<IMicrosoftGraphTeamworkDeviceSoftwareVersions>`: teamworkDeviceSoftwareVersions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdminAgentSoftwareVersion <String>]`: The software version for the admin agent running on the device.
   - `[FirmwareSoftwareVersion <String>]`: The software version for the firmware running on the device.
@@ -631,7 +631,7 @@ SOFTWAREVERSIONS <IMicrosoftGraphTeamworkDeviceSoftwareVersions>: teamworkDevice
   - `[PartnerAgentSoftwareVersion <String>]`: The software version for the partner agent running on the device.
   - `[TeamsClientSoftwareVersion <String>]`: The software version for the Teams client running on the device.
 
-SPEAKERCONFIGURATION <IMicrosoftGraphTeamworkSpeakerConfiguration>: teamworkSpeakerConfiguration
+SPEAKERCONFIGURATION `<IMicrosoftGraphTeamworkSpeakerConfiguration>`: teamworkSpeakerConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DefaultCommunicationSpeaker <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -644,7 +644,7 @@ SPEAKERCONFIGURATION <IMicrosoftGraphTeamworkSpeakerConfiguration>: teamworkSpea
   - `[IsSpeakerOptional <Boolean?>]`: True if the configured speaker is optional. Used to compute the health state if the speaker is not optional.
   - `[Speakers <IMicrosoftGraphTeamworkPeripheral[]>]`: 
 
-SYSTEMCONFIGURATION <IMicrosoftGraphTeamworkSystemConfiguration>: teamworkSystemConfiguration
+SYSTEMCONFIGURATION `<IMicrosoftGraphTeamworkSystemConfiguration>`: teamworkSystemConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTimeConfiguration <IMicrosoftGraphTeamworkDateTimeConfiguration>]`: teamworkDateTimeConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -675,7 +675,7 @@ SYSTEMCONFIGURATION <IMicrosoftGraphTeamworkSystemConfiguration>: teamworkSystem
     - `[SecondaryDns <String>]`: A secondary DNS is used when the primary DNS is not available.
     - `[SubnetMask <String>]`: A subnet mask is a number that distinguishes the network address and the host address within an IP address.
 
-TEAMSCLIENTCONFIGURATION <IMicrosoftGraphTeamworkTeamsClientConfiguration>: teamworkTeamsClientConfiguration
+TEAMSCLIENTCONFIGURATION `<IMicrosoftGraphTeamworkTeamsClientConfiguration>`: teamworkTeamsClientConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AccountConfiguration <IMicrosoftGraphTeamworkAccountConfiguration>]`: teamworkAccountConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
