@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector
@@ -15,7 +15,7 @@ Create new navigation property to connectors for print
 ### CreateExpanded1 (Default)
 ```
 New-MgPrintConnector [-AdditionalProperties <Hashtable>] [-AppVersion <String>] [-DisplayName <String>]
- [-FullyQualifiedDomainName <String>] [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>]
+ [-FullyQualifiedDomainName <String>] [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation1>]
  [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -127,7 +127,7 @@ printerLocation
 To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterLocation
+Type: IMicrosoftGraphPrinterLocation1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -217,7 +217,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintConnector1>`: printConnector
+BODYPARAMETER <IMicrosoftGraphPrintConnector1>: printConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppVersion <String>]`: The connector's version.
@@ -245,7 +245,7 @@ BODYPARAMETER `<IMicrosoftGraphPrintConnector1>`: printConnector
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-LOCATION `<IMicrosoftGraphPrinterLocation1>`: printerLocation
+LOCATION <IMicrosoftGraphPrinterLocation1>: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.

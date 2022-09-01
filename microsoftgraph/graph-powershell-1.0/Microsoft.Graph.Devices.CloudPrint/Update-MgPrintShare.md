@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintshare
@@ -18,7 +18,7 @@ Update-MgPrintShare -PrinterShareId <String> [-AdditionalProperties <Hashtable>]
  [-AllowedGroups <IMicrosoftGraphGroup[]>] [-AllowedUsers <IMicrosoftGraphUser1[]>]
  [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-CreatedDateTime <DateTime>]
  [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
- [-Jobs <IMicrosoftGraphPrintJob1[]>] [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>]
+ [-Jobs <IMicrosoftGraphPrintJob1[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
  [-Model <String>] [-Printer <IMicrosoftGraphPrinter>] [-Status <IMicrosoftGraphPrinterStatus1>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ Update-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProper
  [-AllowAllUsers] [-AllowedGroups <IMicrosoftGraphGroup[]>] [-AllowedUsers <IMicrosoftGraphUser1[]>]
  [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-CreatedDateTime <DateTime>]
  [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
- [-Jobs <IMicrosoftGraphPrintJob1[]>] [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>]
+ [-Jobs <IMicrosoftGraphPrintJob1[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
  [-Model <String>] [-Printer <IMicrosoftGraphPrinter>] [-Status <IMicrosoftGraphPrinterStatus1>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -262,7 +262,7 @@ printerLocation
 To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterLocation
+Type: IMicrosoftGraphPrinterLocation1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -415,7 +415,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALLOWEDGROUPS <IMicrosoftGraphGroup\[]>: The groups whose users have access to print using the printer.
+ALLOWEDGROUPS <IMicrosoftGraphGroup[]>: The groups whose users have access to print using the printer.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
   - `[AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
@@ -779,7 +779,7 @@ ALLOWEDGROUPS <IMicrosoftGraphGroup\[]>: The groups whose users have access to p
           - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: 
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -877,7 +877,7 @@ ALLOWEDGROUPS <IMicrosoftGraphGroup\[]>: The groups whose users have access to p
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3029,7 +3029,7 @@ ALLOWEDGROUPS <IMicrosoftGraphGroup\[]>: The groups whose users have access to p
   - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as unseenConversationsCount.Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
   - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or HiddenMembership. HiddenMembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
 
-ALLOWEDUSERS <IMicrosoftGraphUser1\[]>: The users who have access to print using the printer.
+ALLOWEDUSERS <IMicrosoftGraphUser1[]>: The users who have access to print using the printer.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
   - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
@@ -3175,7 +3175,7 @@ ALLOWEDUSERS <IMicrosoftGraphUser1\[]>: The users who have access to print using
       - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
     - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
       - `[Id <String>]`: 
-      - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+      - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
       - `[PhoneType <String>]`: authenticationPhoneType
       - `[SmsSignInState <String>]`: authenticationMethodSignInState
     - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -3433,7 +3433,7 @@ ALLOWEDUSERS <IMicrosoftGraphUser1\[]>: The users who have access to print using
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5643,7 +5643,7 @@ ALLOWEDUSERS <IMicrosoftGraphUser1\[]>: The users who have access to print using
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property cannot contain accent characters. Only the following characters are allowed A - Z, a - z, 0 - 9, ' . - _ ! # ^ ~. For the complete list of allowed characters, see username policies. Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
   - `[UserType <String>]`: A String value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
 
-BODYPARAMETER `<IMicrosoftGraphPrinterShare1>`: printerShare
+BODYPARAMETER <IMicrosoftGraphPrinterShare1>: printerShare
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6160,7 +6160,7 @@ BODYPARAMETER `<IMicrosoftGraphPrinterShare1>`: printerShare
             - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: 
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
           - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -6258,7 +6258,7 @@ BODYPARAMETER `<IMicrosoftGraphPrinterShare1>`: printerShare
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8438,7 +8438,7 @@ BODYPARAMETER `<IMicrosoftGraphPrinterShare1>`: printerShare
     - `[Shares <IMicrosoftGraphPrinterShare1[]>]`: The list of printerShares that are associated with the printer. Currently, only one printerShare can be associated with the printer. Read-only. Nullable.
     - `[TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>]`: A list of task triggers that are associated with the printer.
 
-CAPABILITIES `<IMicrosoftGraphPrinterCapabilities>`: printerCapabilities
+CAPABILITIES <IMicrosoftGraphPrinterCapabilities>: printerCapabilities
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BottomMargins <Int32[]>]`: A list of supported bottom margins(in microns) for the printer.
   - `[Collation <Boolean?>]`: True if the printer supports collating when printing muliple copies of a multi-page document; false otherwise.
@@ -8469,7 +8469,7 @@ CAPABILITIES `<IMicrosoftGraphPrinterCapabilities>`: printerCapabilities
   - `[SupportsFitPdfToPage <Boolean?>]`: True if the printer supports scaling PDF pages to match the print media size; false otherwise.
   - `[TopMargins <Int32[]>]`: A list of supported top margins(in microns) for the printer.
 
-DEFAULTS `<IMicrosoftGraphPrinterDefaults1>`: printerDefaults
+DEFAULTS <IMicrosoftGraphPrinterDefaults1>: printerDefaults
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ColorMode <String>]`: 
   - `[ContentType <String>]`: The default content (MIME) type to use when processing documents.
@@ -8489,7 +8489,7 @@ DEFAULTS `<IMicrosoftGraphPrinterDefaults1>`: printerDefaults
   - `[Quality <String>]`: printQuality
   - `[Scaling <String>]`: printScaling
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PrintConnectorId <String>]`: key: id of printConnector
   - `[PrintOperationId <String>]`: key: id of printOperation
@@ -8502,7 +8502,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[PrinterShareId <String>]`: key: id of printerShare
   - `[UserId <String>]`: key: id of user
 
-JOBS <IMicrosoftGraphPrintJob1\[]>: The list of jobs that are queued for printing by the printer/printerShare.
+JOBS <IMicrosoftGraphPrintJob1[]>: The list of jobs that are queued for printing by the printer/printerShare.
   - `[Id <String>]`: 
   - `[Configuration <IMicrosoftGraphPrintJobConfiguration1>]`: printJobConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8577,7 +8577,7 @@ JOBS <IMicrosoftGraphPrintJob1\[]>: The list of jobs that are queued for printin
       - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
       - `[Event <String>]`: printEvent
 
-LOCATION `<IMicrosoftGraphPrinterLocation1>`: printerLocation
+LOCATION <IMicrosoftGraphPrinterLocation1>: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.
@@ -8597,7 +8597,7 @@ LOCATION `<IMicrosoftGraphPrinterLocation1>`: printerLocation
   - `[Subdivision <String[]>]`: The subdivision that the printer is located in. The elements should be in hierarchical order.
   - `[Subunit <String[]>]`: 
 
-PRINTER `<IMicrosoftGraphPrinter>`: printer
+PRINTER <IMicrosoftGraphPrinter>: printer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9137,7 +9137,7 @@ PRINTER `<IMicrosoftGraphPrinter>`: printer
               - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
             - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
               - `[Id <String>]`: 
-              - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+              - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
               - `[PhoneType <String>]`: authenticationPhoneType
               - `[SmsSignInState <String>]`: authenticationMethodSignInState
             - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -9235,7 +9235,7 @@ PRINTER `<IMicrosoftGraphPrinter>`: printer
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11391,7 +11391,7 @@ PRINTER `<IMicrosoftGraphPrinter>`: printer
     - `[Printer <IMicrosoftGraphPrinter>]`: printer
   - `[TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>]`: A list of task triggers that are associated with the printer.
 
-STATUS `<IMicrosoftGraphPrinterStatus1>`: printerStatus
+STATUS <IMicrosoftGraphPrinterStatus1>: printerStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: A human-readable description of the printer's current processing state. Read-only.
   - `[Details <String[]>]`: The list of details describing why the printer is in the current state. Valid values are described in the following table. Read-only.

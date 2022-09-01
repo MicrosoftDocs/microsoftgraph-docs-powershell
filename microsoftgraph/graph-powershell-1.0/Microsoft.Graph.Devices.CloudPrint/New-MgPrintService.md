@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice
@@ -14,7 +14,7 @@ Create new navigation property to services for print
 
 ### CreateExpanded (Default)
 ```
-New-MgPrintService [-AdditionalProperties <Hashtable>] [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>]
+New-MgPrintService [-AdditionalProperties <Hashtable>] [-Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>]
  [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -68,7 +68,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintServiceEndpoint[]
+Type: IMicrosoftGraphPrintServiceEndpoint1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +143,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintService>`: printService
+BODYPARAMETER <IMicrosoftGraphPrintService>: printService
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
@@ -151,7 +151,7 @@ BODYPARAMETER `<IMicrosoftGraphPrintService>`: printService
     - `[DisplayName <String>]`: A human-readable display name for the endpoint.
     - `[Uri <String>]`: The URI that can be used to access the service.
 
-ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint1\[]>: Endpoints that can be used to access the service. Read-only. Nullable.
+ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint1[]>: Endpoints that can be used to access the service. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: A human-readable display name for the endpoint.
   - `[Uri <String>]`: The URI that can be used to access the service.
