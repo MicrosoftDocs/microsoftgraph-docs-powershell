@@ -11,6 +11,9 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Search Cmdlets
+### [Add-MgExternalConnectionItemActivity](Add-MgExternalConnectionItemActivity.md)
+Invoke action addActivities
+
 ### [Get-MgExternal](Get-MgExternal.md)
 Get external
 
@@ -25,6 +28,12 @@ Get members from external
 
 ### [Get-MgExternalConnectionItem](Get-MgExternalConnectionItem.md)
 Get items from external
+
+### [Get-MgExternalConnectionItemActivity](Get-MgExternalConnectionItemActivity.md)
+Get activities from external
+
+### [Get-MgExternalConnectionItemActivityPerformedBy](Get-MgExternalConnectionItemActivityPerformedBy.md)
+Get performedBy from external
 
 ### [Get-MgExternalConnectionOperation](Get-MgExternalConnectionOperation.md)
 Get operations from external
@@ -62,6 +71,9 @@ Create new navigation property to members for external
 ### [New-MgExternalConnectionItem](New-MgExternalConnectionItem.md)
 Create new navigation property to items for external
 
+### [New-MgExternalConnectionItemActivity](New-MgExternalConnectionItemActivity.md)
+Create new navigation property to activities for external
+
 ### [New-MgExternalConnectionOperation](New-MgExternalConnectionOperation.md)
 Create new navigation property to operations for external
 
@@ -85,6 +97,9 @@ Delete navigation property members for external
 
 ### [Remove-MgExternalConnectionItem](Remove-MgExternalConnectionItem.md)
 Delete navigation property items for external
+
+### [Remove-MgExternalConnectionItemActivity](Remove-MgExternalConnectionItemActivity.md)
+Delete navigation property activities for external
 
 ### [Remove-MgExternalConnectionOperation](Remove-MgExternalConnectionOperation.md)
 Delete navigation property operations for external
@@ -115,6 +130,9 @@ Update the navigation property members in external
 
 ### [Update-MgExternalConnectionItem](Update-MgExternalConnectionItem.md)
 Update the navigation property items in external
+
+### [Update-MgExternalConnectionItemActivity](Update-MgExternalConnectionItemActivity.md)
+Update the navigation property activities in external
 
 ### [Update-MgExternalConnectionOperation](Update-MgExternalConnectionOperation.md)
 Update the navigation property operations in external
