@@ -63,7 +63,7 @@ Update-MgUser -UserId <String> [-AboutMe <String>] [-AccountEnabled]
  [-ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>] [-Settings <IMicrosoftGraphUserSettings1>]
  [-ShowInAddressList] [-SignInSessionsValidFromDateTime <DateTime>] [-Skills <String[]>] [-State <String>]
  [-StreetAddress <String>] [-Surname <String>] [-Teamwork <IMicrosoftGraphUserTeamwork1>]
- [-Todo <IMicrosoftGraphTodo1>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-Todo <IMicrosoftGraphTodo>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
  [-UsageLocation <String>] [-UserPrincipalName <String>] [-UserType <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -125,7 +125,7 @@ Update-MgUser -InputObject <IUsersIdentity> [-AboutMe <String>] [-AccountEnabled
  [-ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>] [-Settings <IMicrosoftGraphUserSettings1>]
  [-ShowInAddressList] [-SignInSessionsValidFromDateTime <DateTime>] [-Skills <String[]>] [-State <String>]
  [-StreetAddress <String>] [-Surname <String>] [-Teamwork <IMicrosoftGraphUserTeamwork1>]
- [-Todo <IMicrosoftGraphTodo1>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-Todo <IMicrosoftGraphTodo>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
  [-UsageLocation <String>] [-UserPrincipalName <String>] [-UserType <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -2166,7 +2166,7 @@ todo
 To construct, please use Get-Help -Online and see NOTES section for TODO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTodo1
+Type: IMicrosoftGraphTodo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

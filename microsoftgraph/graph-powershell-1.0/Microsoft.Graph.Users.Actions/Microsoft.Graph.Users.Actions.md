@@ -350,6 +350,9 @@ Invoke action createReply
 ### [New-MgUserMessageReplyAll](New-MgUserMessageReplyAll.md)
 Invoke action createReplyAll
 
+### [New-MgUserTodoListTaskAttachmentUploadSession](New-MgUserTodoListTaskAttachmentUploadSession.md)
+Invoke action createUploadSession
+
 ### [Publish-MgUserDriveListContentType](Publish-MgUserDriveListContentType.md)
 Invoke action publish
 

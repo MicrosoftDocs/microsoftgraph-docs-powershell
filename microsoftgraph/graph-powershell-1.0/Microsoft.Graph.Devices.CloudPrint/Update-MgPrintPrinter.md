@@ -18,7 +18,7 @@ Update-MgPrintPrinter -PrinterId <String> [-AdditionalProperties <Hashtable>]
  [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-Connectors <IMicrosoftGraphPrintConnector1[]>]
  [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
  [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob1[]>] [-LastSeenDateTime <DateTime>]
- [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
+ [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>] [-Model <String>]
  [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare1[]>]
  [-Status <IMicrosoftGraphPrinterStatus1>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProp
  [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-Connectors <IMicrosoftGraphPrintConnector1[]>]
  [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
  [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob1[]>] [-LastSeenDateTime <DateTime>]
- [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
+ [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>] [-Model <String>]
  [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare1[]>]
  [-Status <IMicrosoftGraphPrinterStatus1>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -264,7 +264,7 @@ printerLocation
 To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterLocation
+Type: IMicrosoftGraphPrinterLocation1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

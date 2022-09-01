@@ -17,7 +17,8 @@ Create new navigation property to groupPolicyConfigurations for deviceManagement
 New-MgDeviceManagementGroupPolicyConfiguration [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphGroupPolicyConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
  [-DefinitionValues <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-PolicyConfigurationIngestionType <GroupPolicyConfigurationIngestionType>] [-RoleScopeTagIds <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -162,6 +163,21 @@ The date and time the entity was last modified.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PolicyConfigurationIngestionType
+Group Policy Configuration Ingestion Type
+
+```yaml
+Type: GroupPolicyConfigurationIngestionType
 Parameter Sets: CreateExpanded
 Aliases:
 

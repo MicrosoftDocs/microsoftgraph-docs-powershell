@@ -22,7 +22,7 @@ Update-MgPrintServiceEndpoint -PrintServiceEndpointId <String> -PrintServiceId <
 ### Update1
 ```
 Update-MgPrintServiceEndpoint -PrintServiceEndpointId <String> -PrintServiceId <String>
- -BodyParameter <IMicrosoftGraphPrintServiceEndpoint1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintServiceEndpoint> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -34,7 +34,7 @@ Update-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-Additi
 ### UpdateViaIdentity1
 ```
 Update-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintServiceEndpoint1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintServiceEndpoint> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -64,7 +64,7 @@ printServiceEndpoint
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintServiceEndpoint1
+Type: IMicrosoftGraphPrintServiceEndpoint
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -218,7 +218,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint
 ## OUTPUTS
 
 ### System.Boolean

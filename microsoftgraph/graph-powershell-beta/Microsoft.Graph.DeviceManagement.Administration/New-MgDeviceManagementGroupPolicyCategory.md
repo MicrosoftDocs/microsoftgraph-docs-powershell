@@ -17,9 +17,9 @@ Create new navigation property to groupPolicyCategories for deviceManagement
 New-MgDeviceManagementGroupPolicyCategory [-AdditionalProperties <Hashtable>]
  [-Children <IMicrosoftGraphGroupPolicyCategory[]>]
  [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]
- [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-DisplayName <String>] [-Id <String>] [-IsRoot]
- [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphGroupPolicyCategory>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-DisplayName <String>] [-Id <String>]
+ [-IngestionSource <IngestionSource>] [-IsRoot] [-LastModifiedDateTime <DateTime>]
+ [-Parent <IMicrosoftGraphGroupPolicyCategory>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -136,6 +136,21 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IngestionSource
+Category Ingestion source
+
+```yaml
+Type: IngestionSource
 Parameter Sets: CreateExpanded
 Aliases:
 

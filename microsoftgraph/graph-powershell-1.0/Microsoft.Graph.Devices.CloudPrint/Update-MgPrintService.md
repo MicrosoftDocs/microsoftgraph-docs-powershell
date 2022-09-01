@@ -15,7 +15,7 @@ Update the navigation property services in print
 ### UpdateExpanded (Default)
 ```
 Update-MgPrintService -PrintServiceId <String> [-AdditionalProperties <Hashtable>]
- [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgPrintService -PrintServiceId <String> -BodyParameter <IMicrosoftGraphPr
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPrintService -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -83,7 +83,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintServiceEndpoint[]
+Type: IMicrosoftGraphPrintServiceEndpoint1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

@@ -317,6 +317,9 @@ Invoke action dismissReminder
 ### [Invoke-MgDismissUserEventReminder](Invoke-MgDismissUserEventReminder.md)
 Invoke action dismissReminder
 
+### [Invoke-MgDownloadUserManagedDeviceAppDiagnostic](Invoke-MgDownloadUserManagedDeviceAppDiagnostic.md)
+Invoke action downloadAppDiagnostics
+
 ### [Invoke-MgDownUserManagedDeviceShut](Invoke-MgDownUserManagedDeviceShut.md)
 Invoke action shutDown
 

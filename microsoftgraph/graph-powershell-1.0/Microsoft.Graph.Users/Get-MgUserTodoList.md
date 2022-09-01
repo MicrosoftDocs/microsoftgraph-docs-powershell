@@ -243,7 +243,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTaskList1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTaskList
 ## NOTES
 
 ALIASES
