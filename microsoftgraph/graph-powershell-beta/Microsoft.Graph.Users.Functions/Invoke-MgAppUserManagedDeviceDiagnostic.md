@@ -1,64 +1,33 @@
 ﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/search-mguserdriveitem
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgappusermanageddevicediagnostic
 schema: 2.0.0
 ---
 
-# Search-MgUserDriveItem
+# Invoke-MgAppUserManagedDeviceDiagnostic
 
 ## SYNOPSIS
-Invoke function search
+Invoke function appDiagnostics
 
 ## SYNTAX
 
-### Search (Default)
+### App (Default)
 ```
-Search-MgUserDriveItem -DriveId <String> -DriveItemId <String> -Q <String> -UserId <String>
- [<CommonParameters>]
+Invoke-MgAppUserManagedDeviceDiagnostic -Upn <String> -UserId <String> [<CommonParameters>]
 ```
 
-### SearchViaIdentity
+### AppViaIdentity
 ```
-Search-MgUserDriveItem -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+Invoke-MgAppUserManagedDeviceDiagnostic -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function search
+Invoke function appDiagnostics
 
 ## EXAMPLES
 
 ## PARAMETERS
-
-### -DriveId
-key: id of drive
-
-```yaml
-Type: String
-Parameter Sets: Search
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DriveItemId
-key: id of driveItem
-
-```yaml
-Type: String
-Parameter Sets: Search
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -InputObject
 Identity Parameter
@@ -66,7 +35,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: SearchViaIdentity
+Parameter Sets: AppViaIdentity
 Aliases:
 
 Required: True
@@ -76,12 +45,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Q
-Usage: q='{q}'
+### -Upn
+Usage: upn='{upn}'
 
 ```yaml
 Type: String
-Parameter Sets: Search
+Parameter Sets: App
 Aliases:
 
 Required: True
@@ -96,7 +65,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Search
+Parameter Sets: App
 Aliases:
 
 Required: True
@@ -114,7 +83,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPowerliftIncidentMetadata
 ## NOTES
 
 ALIASES
