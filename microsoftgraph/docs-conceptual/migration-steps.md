@@ -34,34 +34,39 @@ Scripts written in Azure AD PowerShell won't automatically work with Microsoft G
 
 To find the new cmdlets, see the [Cmdlet map](azuread-msoline-cmdlet-map.md).
 
-We've outlined the following sample process for upgrading your existing scripts.
+We've outlined the following sample process for upgrading your existing scripts. This sample process is broken into two steps: documenting your scripts and actually upgrading your scripts.
 
 ### Step 1: Document current scripts
 
-Follow this example criteria to document your current scripts:
+Follow this example criteria to document your current script:
 
 - **Purpose**: What is the main function of the script?
-- **Cmdlets used and number of calls**: A list of all cmdlets used and the frequency of your calls to them.
+- **Location**: How are you storing and securing the script? Where is it executed from?
 - **Frequency of execution**: How frequently is the script run and from what platform?
 - **Importance**: What's the business criticality of the script?
 - **Length**: How long is the script?
-- **Location**: How are you storing and securing the script? Where is it executed from?
-- **Still required**: Can you use existing product functionality to do what the script does?
-- **Improvement points**: Can you improve the scripts? For example, filtering left, using modern authentication, and making use of a script analyzer.
-- **Score**: Optionally, apply a scoring mechanism to help you prioritize. Give each script a score based on the criteria, to help with update decisions.
+- **Cmdlets used and number of calls**: A list of all cmdlets used and the frequency of your calls to them.
+- **Still required**: Can you use existing or new product functionality to do what the script does to achieve the same results?
+- **Improvement points**: Can you improve the script? For example, filter to the left of the pipeline, use [modern authentication](/azure/active-directory/authentication/concept-authentication-passwordless), or use the [PSScriptAnalyzer](/powershell/module/psscriptanalyzer/?view=ps-modules) module.
+
+**Overall score**: Optionally, apply a scoring mechanism to each criteria to help you prioritize the upgrade order. This will mean giving each script an overall score based on the sum of each criteria score. For example, **importance** could be categorized as Critical, High, Medium and Low, and the criteria score would be selected from one of the following: Critical - 4, High - 3, Medium - 2, Low -1.
 
 ### Step 2: Update current scripts
 
-After documenting your scripts using the example criteria, follow these steps to update your scripts.
+After documenting your scripts using the example criteria, follow these steps to upgrade your scripts.
 
 - **Start simple / low score** : If you're using a scoring mechanism, test the upgrade with the least complex, less business-critical scripts.
 - **Map cmdlets**: Using the [Cmdlet map](azuread-msoline-cmdlet-map.md), get the Microsoft Graph PowerShell equivalents for your cmdlets.
 - **Map parameters / switches**: Using the Microsoft Graph PowerShell syntax, map your parameters and switches.
 - **Map filters**: Using the Microsoft Graph PowerShell syntax, map your filters.
 - **Check cmdlet documentation**: Human updates are frequently occurring to add samples on using the new cmdlets.
-- **[Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)**: Use Graph Explorer to understand the underlying API and get help with PowerShell snippets.
-- **Understand output objects**: Understand the change in output objects in Microsoft Graph PowerShell.
 - **Use dedicated apps and adhere to least privilege**: Because Microsoft Graph PowerShell permissions are NOT pre-authorized, perform one-time request for permissions depending on your needs.
+- **Understand required permissions**: Use [Find-MgGraphCommand](find-mg-graph-command.md) and [Find-MgGraphPermission](find-mg-graph-permission.md) to understand permissions required for the cmdlets.
+- **Understand output objects**: Understand the change in output objects in Microsoft Graph PowerShell.
+- **Optionally, understand the underlying API**
+  - Use `Find-MgGraphCommand` to find the API path the cmdlet calls
+  - Use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to understand the underlying API calls.
+  - Reference [API reference content](/graph/api/overview?view=graph-rest-1.0).
 
 #### Example
 
@@ -79,7 +84,7 @@ There are limitations that currently exist in Microsoft Graph PowerShell, either
 - There isn't yet an equivalent of **-SearchString** for `Get-AzureADUser` and `Get-AzureADGroup` commands. Use **-Filter** instead. For example, `Get-MgUser -Filter "DisplayName eq 'Lee Gu'"` returns the user whose display name is equal to the specified string.
 - Search doesn't yet work for any Azure AD commands.
 - You need to use hash tables to pass nested parameters. See a sample of [Nested parameters](https://github.com/microsoftgraph/msgraph-sdk-powershell/blob/dev/samples/9-Applications.ps1#L28-L43).
-- **Pro-tip**: Use the Microsoft Graph PowerShell **-ConsistencyLevel** parameter. It lets you do $count! This is best used for read-only scenarios and you need to be more careful when making changes. To learn more about the **-ConsistencyLevel** parameter, see [Advanced query parameters](/graph/aad-advanced-queries).
+- **Pro-tip**: Use the Microsoft Graph PowerShell **-ConsistencyLevel** parameter. It lets you do $count! To learn more about the **-ConsistencyLevel** parameter, see [Advanced query parameters](/graph/aad-advanced-queries).
 
 ## Next steps
 
