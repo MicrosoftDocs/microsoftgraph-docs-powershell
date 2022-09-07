@@ -12,11 +12,11 @@ ms.reviewer: maisarissi, ianfarr
 
 # Upgrade from Azure AD PowerShell to the Microsoft Graph PowerShell SDK
 
-Azure AD, Azure AD Preview and MSOnline PowerShell modules are headed for deprecation. Microsoft Graph PowerShell is the recommended PowerShell module for interacting with Azure AD and other Microsoft services. Use the information in this article to plan the migration of your applications to Microsoft Graph PowerShell.
+Azure AD, Azure AD Preview and MSOnline PowerShell modules are planned for deprecation. Microsoft Graph PowerShell is the recommended PowerShell module for interacting with Azure AD and other Microsoft services. Use the information in this article to plan the migration of your applications to Microsoft Graph PowerShell.
 
 ## Why upgrade to Microsoft Graph PowerShell?
 
-The following list summarizes the key advantages of using the Microsoft Graph PowerShell SDK:
+The following list summarizes the key advantages of using the Microsoft Graph PowerShell SDK.
 
 - **Access to all Microsoft Graph APIs**: Microsoft Graph PowerShell is based on Microsoft Graph API. The Microsoft Graph API includes, in addition to Azure AD, APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
 - **Supports PowerShell 7**: Microsoft Graph PowerShell module works with PowerShell 7 and later. It's also compatible with Windows PowerShell 5.1.
@@ -24,7 +24,7 @@ The following list summarizes the key advantages of using the Microsoft Graph Po
 - **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security. For example, you can use Passwordless sign-in experiences.
 - **Supports external identities**: Users from other Azure AD tenants can authenticate to services in your tenant with Microsoft Graph PowerShell.
 - **Uses least privilege**: Microsoft Graph PowerShell permissions are NOT pre-authorized and users must perform one-time request for app permissions depending on their needs.
-- **Advanced queries**: Microsoft Graph PowerShell supports rich, Azure AD queries via eventual consistency.
+- **Advanced queries**: Microsoft Graph PowerShell supports rich, advanced Azure AD queries via eventual consistency.
 - **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
 - **Receives regular updates**: Microsoft Graph PowerShell commands are updated regularly to support the latest Graph API updates.
 
@@ -32,9 +32,7 @@ The following list summarizes the key advantages of using the Microsoft Graph Po
 
 Scripts written in Azure AD PowerShell won't automatically work with Microsoft Graph PowerShell. The new cmdlet names have been designed to be easy to learn. Instead of using `AzureAD` or `AzureADMS` in cmdlet names, use `Mg`. For example, the cmdlet `Get-AzureADUser` is equivalent to `Get-MgUser`. However, migration is more than just becoming familiar with the new cmdlet names. There are renamed modules, parameters, and other important changes.
 
-To find the new cmdlets, see the [Cmdlet map](azuread-msoline-cmdlet-map.md).
-
-We've outlined the following sample process for upgrading your existing scripts. This sample process is broken into two steps: documenting your scripts and actually upgrading your scripts.
+We've outlined the following sample process for upgrading your existing scripts. This sample process has two steps: documenting your scripts and upgrading your scripts.
 
 ### Step 1: Document current scripts
 
@@ -64,7 +62,7 @@ After documenting your scripts using the example criteria, follow these steps to
 - **Understand required permissions**: Use [Find-MgGraphCommand](find-mg-graph-command.md) and [Find-MgGraphPermission](find-mg-graph-permission.md) to understand permissions required for the cmdlets.
 - **Understand output objects**: Understand the change in output objects in Microsoft Graph PowerShell.
 - **Optionally, understand the underlying API**
-  - Use `Find-MgGraphCommand` to find the API path the cmdlet calls
+  - Use `Find-MgGraphCommand` to find the API path the cmdlet calls.
   - Use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to understand the underlying API calls.
   - Reference [API reference content](/graph/api/overview).
 
@@ -90,3 +88,4 @@ There are limitations that currently exist in Microsoft Graph PowerShell, either
 
 - [Uninstall AzureAD PowerShell](/powershell/azure/active-directory/install-previous-version): Uninstall the old module before installing the new one.
 - [Install the Microsoft Graph PowerShell SDK](/graph/powershell/installation): Follow these instructions to install the Microsoft Graph PowerShell SDK.
+- [Cmdlet map](azuread-msoline-cmdlet-map.md): Find Microsoft Graph PowerShell cmdlet equivalents.
