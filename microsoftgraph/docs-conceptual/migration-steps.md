@@ -32,7 +32,7 @@ The following list summarizes the key advantages of using the Microsoft Graph Po
 
 Scripts written in Azure AD PowerShell won't automatically work with Microsoft Graph PowerShell. The new cmdlet names have been designed to be easy to learn. Instead of using `AzureAD` or `AzureADMS` in cmdlet names, use `Mg`. For example, the cmdlet `Get-AzureADUser` is equivalent to `Get-MgUser`. However, migration is more than just becoming familiar with the new cmdlet names. There are renamed modules, parameters, and other important changes.
 
-We've outlined the following sample process for upgrading your existing scripts. This sample process has two steps: documenting your scripts and upgrading your scripts.
+We've outlined the following sample process for upgrading your existing scripts. This sample process has two steps: documenting your scripts based on a defined criteria and upgrading them.
 
 ### Step 1: Document current scripts
 
@@ -47,7 +47,7 @@ Follow this example criteria to document your current script:
 - **Still required**: Can you use existing or new product functionality to do what the script does to achieve the same results?
 - **Improvement points**: Can you improve the script? For example, filter to the left of the pipeline, use [modern authentication](/azure/active-directory/authentication/concept-authentication-passwordless), or use the [PSScriptAnalyzer](/powershell/module/psscriptanalyzer) module.
 
-**Overall score**: Optionally, apply a scoring mechanism to each criteria to help you prioritize the upgrade order. This will mean giving each script an overall score based on the sum of each criteria score. For example, **importance** could be categorized as Critical, High, Medium and Low, and the criteria score would be selected from one of the following: Critical - 4, High - 3, Medium - 2, Low -1.
+**Overall score**: Optionally, apply a scoring mechanism to each criteria to help you prioritize the upgrade order. This process involves giving each script an overall score based on the sum of each criteria score. For example, **importance** could be categorized as Critical, High, Medium and Low, and the criteria score would be selected from one of the following: Critical - 4, High - 3, Medium - 2, Low -1.
 
 ### Step 2: Update current scripts
 
