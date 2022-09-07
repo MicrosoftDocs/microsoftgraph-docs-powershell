@@ -47,7 +47,7 @@ Follow this example criteria to document your current script:
 - **Length**: How long is the script?
 - **Cmdlets used and number of calls**: A list of all cmdlets used and the frequency of your calls to them.
 - **Still required**: Can you use existing or new product functionality to do what the script does to achieve the same results?
-- **Improvement points**: Can you improve the script? For example, filter to the left of the pipeline, use [modern authentication](/azure/active-directory/authentication/concept-authentication-passwordless), or use the [PSScriptAnalyzer](/powershell/module/psscriptanalyzer/?view=ps-modules) module.
+- **Improvement points**: Can you improve the script? For example, filter to the left of the pipeline, use [modern authentication](/azure/active-directory/authentication/concept-authentication-passwordless), or use the [PSScriptAnalyzer](/powershell/module/psscriptanalyzer) module.
 
 **Overall score**: Optionally, apply a scoring mechanism to each criteria to help you prioritize the upgrade order. This will mean giving each script an overall score based on the sum of each criteria score. For example, **importance** could be categorized as Critical, High, Medium and Low, and the criteria score would be selected from one of the following: Critical - 4, High - 3, Medium - 2, Low -1.
 
@@ -66,7 +66,7 @@ After documenting your scripts using the example criteria, follow these steps to
 - **Optionally, understand the underlying API**
   - Use `Find-MgGraphCommand` to find the API path the cmdlet calls
   - Use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to understand the underlying API calls.
-  - Reference [API reference content](/graph/api/overview?view=graph-rest-1.0).
+  - Reference [API reference content](/graph/api/overview).
 
 #### Example
 
