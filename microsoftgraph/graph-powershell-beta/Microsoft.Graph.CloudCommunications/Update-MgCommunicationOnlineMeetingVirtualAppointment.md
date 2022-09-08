@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingvirtualappointment
@@ -272,12 +272,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPOINTMENTCLIENTS <IMicrosoftGraphVirtualAppointmentUser\[]>: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
+APPOINTMENTCLIENTS <IMicrosoftGraphVirtualAppointmentUser[]>: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
   - `[DisplayName <String>]`: The display name of the user who participates in a virtual appointment. Optional.
   - `[EmailAddress <String>]`: The email address of the user who participates in a virtual appointment. Optional.
   - `[SmsCapablePhoneNumber <String>]`: The phone number for sending SMS texts for the user who participates in a virtual appointment. Optional.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualAppointment>`: virtualAppointment
+BODYPARAMETER <IMicrosoftGraphVirtualAppointment>: virtualAppointment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppointmentClientJoinWebUrl <String>]`: The join web URL of the virtual appointment for clients with waiting room and browser join. Optional.
@@ -291,7 +291,7 @@ BODYPARAMETER `<IMicrosoftGraphVirtualAppointment>`: virtualAppointment
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
@@ -307,7 +307,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-SETTINGS `<IMicrosoftGraphVirtualAppointmentSettings>`: virtualAppointmentSettings
+SETTINGS <IMicrosoftGraphVirtualAppointmentSettings>: virtualAppointmentSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 
