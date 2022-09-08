@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementconfigurationpolicytemplatesettingtemplate
@@ -243,7 +243,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate>: Setting Template
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSettingTemplate>`: Setting Template
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions
@@ -281,7 +281,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate>: Set
     - `[SettingDefinitionId <String>]`: Setting Definition Id
     - `[SettingInstanceTemplateId <String>]`: Setting Instance Template Id
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -408,7 +408,7 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>: List of related Setting Definitions
+SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition\[]>: List of related Setting Definitions
   - `[Id <String>]`: 
   - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
   - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
@@ -438,7 +438,7 @@ SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementConfigurationSettingDefinitio
   - `[Version <String>]`: Item Version
   - `[Visibility <DeviceManagementConfigurationSettingVisibility?>]`: Supported setting types
 
-SETTINGINSTANCETEMPLATE <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate>: Setting Instance Template
+SETTINGINSTANCETEMPLATE `<IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate>`: Setting Instance Template
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsRequired <Boolean?>]`: Indicates if a policy must specify this setting.
   - `[SettingDefinitionId <String>]`: Setting Definition Id
