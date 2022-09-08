@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityinformationprotectionsensitivitylabel
@@ -281,7 +281,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
+BODYPARAMETER <IMicrosoftGraphSecuritySensitivityLabel>: sensitivityLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
@@ -295,7 +295,7 @@ BODYPARAMETER `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
   - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-PARENT `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
+PARENT <IMicrosoftGraphSecuritySensitivityLabel>: sensitivityLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
