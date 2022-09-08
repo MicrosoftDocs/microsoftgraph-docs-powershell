@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment
@@ -315,7 +315,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage1>: accessPackage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: 
@@ -409,7 +409,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
   - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ASSIGNMENTPOLICY `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`: accessPackageAssignmentPolicy
+ASSIGNMENTPOLICY <IMicrosoftGraphAccessPackageAssignmentPolicy1>: accessPackageAssignmentPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
@@ -504,7 +504,7 @@ ASSIGNMENTPOLICY `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`: accessPackag
       - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>]`: The principals that can be assigned access from an access package through this policy.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignment1>: accessPackageAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
@@ -628,7 +628,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignme
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectType <String>]`: accessPackageSubjectType
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -691,7 +691,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
   - `[UserId <String>]`: key: id of user
 
-SCHEDULE `<IMicrosoftGraphEntitlementManagementSchedule>`: entitlementManagementSchedule
+SCHEDULE <IMicrosoftGraphEntitlementManagementSchedule>: entitlementManagementSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -718,7 +718,7 @@ SCHEDULE `<IMicrosoftGraphEntitlementManagementSchedule>`: entitlementManagement
       - `[Type <String>]`: recurrenceRangeType
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-TARGET `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
+TARGET <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
