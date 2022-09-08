@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementvirtualendpointusersetting
@@ -190,13 +190,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphCloudPcUserSettingAssignment\[]>: .
+ASSIGNMENTS <IMicrosoftGraphCloudPcUserSettingAssignment[]>: .
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: The date and time this assignment was created. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
   - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IPaths7Tr5RcDevicemanagementVirtualendpointUsersettingsCloudpcusersettingIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths7Tr5RcDevicemanagementVirtualendpointUsersettingsCloudpcusersettingIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>]`: 
     - `[Id <String>]`: 
@@ -204,7 +204,7 @@ BODYPARAMETER `<IPaths7Tr5RcDevicemanagementVirtualendpointUsersettingsCloudpcus
     - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
