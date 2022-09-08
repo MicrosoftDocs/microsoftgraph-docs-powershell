@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mgusersecurityinformationprotectionsensitivitylabelclassificationresult
@@ -193,7 +193,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths12Nib3JUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths12Nib3JUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClassificationResults <IMicrosoftGraphSecurityClassificationResult[]>]`: 
     - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
@@ -208,12 +208,12 @@ BODYPARAMETER `<IPaths12Nib3JUsersUserIdSecurityInformationprotectionSensitivity
       - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
 
-CLASSIFICATIONRESULTS <IMicrosoftGraphSecurityClassificationResult\[]>: .
+CLASSIFICATIONRESULTS <IMicrosoftGraphSecurityClassificationResult[]>: .
   - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
   - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
   - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -222,7 +222,7 @@ CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair.
   - `[State <String>]`: contentState
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
