@@ -3,14 +3,14 @@ title: "Migrate from Azure AD PowerShell to the Microsoft Graph PowerShell SDK."
 description: "Migrate your applications from Azure AD PowerShell to the Microsoft Graph PowerShell SDK."
 
 ms.topic: conceptual
-ms.date: 09/02/2022
+ms.date: 09/09/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: maisarissi, ianfarr
 ---
 
-# Upgrade from Azure AD PowerShell to the Microsoft Graph PowerShell SDK
+# Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell
 
 Azure AD, Azure AD Preview and MSOnline PowerShell modules are planned for deprecation. Microsoft Graph PowerShell is the recommended PowerShell module for interacting with Azure AD and other Microsoft services. Use the information in this article to plan the migration of your applications to Microsoft Graph PowerShell.
 
@@ -51,7 +51,7 @@ Follow this example criteria to document a script:
 
 ### Step 2: Update current scripts
 
-After documenting your scripts using the example criteria, follow these steps to upgrade your scripts.
+After documenting your scripts using the example criteria, follow these steps to upgrade them.
 
 - **Start simple / low score** : If you're using a scoring mechanism, test the upgrade with the least complex, less business-critical scripts.
 - **Map cmdlets**: Using the [Cmdlet map](azuread-msoline-cmdlet-map.md), get the Microsoft Graph PowerShell equivalents for your cmdlets.
@@ -62,7 +62,7 @@ After documenting your scripts using the example criteria, follow these steps to
 - **Understand required permissions**: Use [Find-MgGraphCommand](find-mg-graph-command.md) and [Find-MgGraphPermission](find-mg-graph-permission.md) to understand permissions required for the cmdlets.
 - **Understand output objects**: Understand the change in output objects in Microsoft Graph PowerShell. The [Get-Member](/powershell/module/microsoft.powershell.utility/get-member) cmdlet will help you understand the objects.
 - **Optionally, understand the underlying API**
-  - Use `Find-MgGraphCommand` to find the API path the cmdlet calls.
+  - Use [Find-MgGraphCommand](find-mg-graph-command.md) to find the API path a cmdlet calls.
   - Use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to understand the underlying API calls.
   - Reference [API reference content](/graph/api/overview).
 
