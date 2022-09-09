@@ -24,7 +24,7 @@ The following list summarizes the key advantages of using the Microsoft Graph Po
 - **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security. For example, you can use Passwordless sign-in experiences.
 - **Supports external identities**: Users from other Azure AD tenants can authenticate to services in your tenant with Microsoft Graph PowerShell.
 - **Uses least privilege**: Microsoft Graph PowerShell permissions are NOT pre-authorized and users must perform one-time request for app permissions depending on their needs.
-- **Advanced queries**: Microsoft Graph PowerShell supports rich, advanced Azure AD queries via eventual consistency.
+- **Advanced queries**: Microsoft Graph PowerShell supports rich, advanced queries via eventual consistency. For example, you can get a near-instant count of all users using advanced queries.
 - **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
 - **Receives regular updates**: Microsoft Graph PowerShell commands are updated regularly to support the latest Graph API updates.
 
@@ -36,7 +36,7 @@ We've outlined the following sample process for upgrading your existing scripts.
 
 ### Step 1: Document current scripts
 
-Follow this example criteria to document your current script:
+Follow this example criteria to document a script:
 
 - **Purpose**: What is the main function of the script?
 - **Location**: How are you storing and securing the script? Where is it executed from?
@@ -57,10 +57,10 @@ After documenting your scripts using the example criteria, follow these steps to
 - **Map cmdlets**: Using the [Cmdlet map](azuread-msoline-cmdlet-map.md), get the Microsoft Graph PowerShell equivalents for your cmdlets.
 - **Map parameters / switches**: Using the Microsoft Graph PowerShell syntax, map your parameters and switches.
 - **Map filters**: Using the Microsoft Graph PowerShell syntax, map your filters.
-- **Check cmdlet documentation**: Human updates are frequently occurring to add samples on using the new cmdlets.
+- **Check cmdlet documentation**: Human authored updates are frequently occurring to add samples on using the new cmdlets.
 - **Use dedicated apps and adhere to least privilege**: Because Microsoft Graph PowerShell permissions are NOT pre-authorized, perform one-time request for permissions depending on your needs.
 - **Understand required permissions**: Use [Find-MgGraphCommand](find-mg-graph-command.md) and [Find-MgGraphPermission](find-mg-graph-permission.md) to understand permissions required for the cmdlets.
-- **Understand output objects**: Understand the change in output objects in Microsoft Graph PowerShell.
+- **Understand output objects**: Understand the change in output objects in Microsoft Graph PowerShell. The [Get-Member](/powershell/module/microsoft.powershell.utility/get-member) cmdlet will help you understand the objects.
 - **Optionally, understand the underlying API**
   - Use `Find-MgGraphCommand` to find the API path the cmdlet calls.
   - Use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to understand the underlying API calls.
