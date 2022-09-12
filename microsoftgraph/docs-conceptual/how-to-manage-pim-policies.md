@@ -176,3 +176,7 @@ Target = @{
 
 Update-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $policyid -UnifiedRoleManagementPolicyRuleId $ruleId -BodyParameter $params
 ```
+
+## Next steps
+
+[Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell](tutorial-pim.md)
