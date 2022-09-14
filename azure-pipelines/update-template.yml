@@ -16,7 +16,9 @@ steps:
           Import-Module Microsoft.Graph -Global -Force  
         }
 
+
 - template: checkout.yml
+- template: install-tools-template.yml
   parameters:
     projectFileName: ${{ parameters.projectFileName }}
     runName: ${{ parameters.projectFileName }}
