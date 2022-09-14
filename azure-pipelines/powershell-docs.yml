@@ -38,7 +38,15 @@ jobs:
     parameters:
       projectFileName: $(projectFileName)
       testType: 'Execution'
-      
+
+  - task: PowerShell@2
+    displayName: 'Generate Service Modules'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\scripts\GenerateServiceModules.ps1
+
   - task: PowerShell@2
     displayName: 'Copy files from powershell sdk'
     continueOnError: false
