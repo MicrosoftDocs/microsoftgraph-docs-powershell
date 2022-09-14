@@ -11,6 +11,7 @@ if ([string]::IsNullOrEmpty($exists)) {
 }
 
 .\tools\GenerateModules.ps1 -Build
-
- git add .
- git commit -m 'Updated Md files'
+git config --global user.email "timwamalwa@gmail.com"
+git config --global user.name "Timothy Wamalwa"
+git add .
+git commit -m 'Updated Md files'
