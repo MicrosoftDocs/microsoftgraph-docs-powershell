@@ -12,3 +12,5 @@ if ([string]::IsNullOrEmpty($exists)) {
 
 .\tools\GenerateModules.ps1 -Build
 
+ git add .
+ git commit -m 'Updated Md files'
