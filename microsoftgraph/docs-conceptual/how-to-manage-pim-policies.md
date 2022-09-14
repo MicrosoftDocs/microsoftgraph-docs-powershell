@@ -179,4 +179,4 @@ Update-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $policyid
 
 ## Next steps
 
-[Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell](tutorial-pim.md)
+[Assign Azure AD roles in PIM](tutorial-pim.md)
