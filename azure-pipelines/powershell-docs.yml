@@ -25,7 +25,6 @@ variables:
   BUILDAGENT: ${{ parameters.BuildAgent }}
 
 pool: $(BUILDAGENT)
-  timeoutInMinutes: ${{ parameters.PipelineTimeout }}
 
 resources:
  repositories:     
@@ -40,6 +39,7 @@ stages:
   displayName: Autorest Rerun
   jobs:
   - job: AutorestRerun
+    timeoutInMinutes: ${{ parameters.PipelineTimeout }}
     steps:
     - template: update-template.yml
       parameters:
@@ -57,7 +57,8 @@ stages:
 - stage: CopyFilesFromPowerShellSDK
   displayName: Copy Files From Powershell SDK
   jobs:
-  - job: CopyFilesFromPowerShellSDK 
+  - job: CopyFilesFromPowerShellSDK
+    timeoutInMinutes: ${{ parameters.PipelineTimeout }} 
     steps:
     - task: PowerShell@2
       displayName: 'Copy files from powershell sdk'
@@ -70,7 +71,8 @@ stages:
 - stage: UpdateHelp
   displayName: Update Help
   jobs:
-  - job: UpdateHelp  
+  - job: UpdateHelp
+    timeoutInMinutes: ${{ parameters.PipelineTimeout }}  
     steps:
     - task: PowerShell@2
       displayName: 'Update Powershell Help'
@@ -84,6 +86,7 @@ stages:
   displayName: Escape disallowed html tags
   jobs:
   - job: EscapeDisallowedHtmlTags
+    timeoutInMinutes: ${{ parameters.PipelineTimeout }}
     steps:   
     - task: PowerShell@2
       displayName: 'Escape disallowed html tags'
