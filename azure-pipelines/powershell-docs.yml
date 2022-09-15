@@ -12,19 +12,10 @@ schedules:
     always: true
 
 parameters:
-  - name: BuildAgent
-    default: 1es-windows-ps-compute
-    displayName: Build Agent
-
-  - name: PipelineTimeout
-    displayName: PipelineTimeout
-    type: number
-    default: 1200
-
-variables:
-  BUILDAGENT: ${{ parameters.BuildAgent }}
-
-pool: $(BUILDAGENT)
+- name: PipelineTimeout
+  displayName: PipelineTimeout
+  type: number
+  default: 1200
 
 resources:
  repositories:     
@@ -34,82 +25,66 @@ resources:
      name: microsoftgraph/msgraph-sdk-powershell
      ref: dev
 
-stages:
-- stage: AutorestRerun
-  displayName: Autorest Rerun
-  jobs:
-  - job: AutorestRerun
-    timeoutInMinutes: ${{ parameters.PipelineTimeout }}
-    steps:
-    - template: update-template.yml
-      parameters:
-        projectFileName: $(projectFileName)
-        testType: 'Execution'
+variables:
+  buildConfiguration: 'Release'
 
-    - task: PowerShell@2
-      displayName: 'Generate Service Modules'
-      continueOnError: false
-      inputs:
-        targetType: 'filePath'
-        pwsh: true
-        filePath: microsoftgraph-docs-powershell\scripts\GenerateServiceModules.ps1
+jobs:
+- job: PowerShellDocsUpdate
+  pool: 
+    name: 1es-windows-ps-compute
+  timeoutInMinutes: ${{ parameters.PipelineTimeout }}
+  steps:
+  - template: update-template.yml
+    parameters:
+      projectFileName: $(projectFileName)
+      testType: 'Execution'
 
-- stage: CopyFilesFromPowerShellSDK
-  displayName: Copy Files From Powershell SDK
-  jobs:
-  - job: CopyFilesFromPowerShellSDK
-    timeoutInMinutes: ${{ parameters.PipelineTimeout }} 
-    steps:
-    - task: PowerShell@2
-      displayName: 'Copy files from powershell sdk'
-      continueOnError: false
-      inputs:
-        targetType: 'filePath'
-        pwsh: true
-        filePath: microsoftgraph-docs-powershell\scripts\FileCopy.ps1
+  - task: PowerShell@2
+    displayName: 'Generate Service Modules'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\scripts\GenerateServiceModules.ps1
 
-- stage: UpdateHelp
-  displayName: Update Help
-  jobs:
-  - job: UpdateHelp
-    timeoutInMinutes: ${{ parameters.PipelineTimeout }}  
-    steps:
-    - task: PowerShell@2
-      displayName: 'Update Powershell Help'
-      continueOnError: false
-      inputs:
-        targetType: 'filePath'
-        pwsh: true
-        filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
+  - task: PowerShell@2
+    displayName: 'Copy files from powershell sdk'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\scripts\FileCopy.ps1
 
-- stage: EscapeDisallowedHtmlTags
-  displayName: Escape disallowed html tags
-  jobs:
-  - job: EscapeDisallowedHtmlTags
-    timeoutInMinutes: ${{ parameters.PipelineTimeout }}
-    steps:   
-    - task: PowerShell@2
-      displayName: 'Escape disallowed html tags'
-      continueOnError: false
-      inputs:
-        targetType: 'filePath'
-        pwsh: true
-        filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
+  - task: PowerShell@2
+    displayName: 'Update Powershell Help'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
 
-    - task: PowerShell@2
-      displayName: Pushing to github
-      env:
-        GITHUB_TOKEN: ${env:GITHUB_TOKEN}
-      inputs:
-        targetType: inline
-        script: |
-          git config --global user.email "timwamalwa@gmail.com"
-          git config --global user.name "Timothy Wamalwa"
-          cd microsoftgraph-docs-powershell
-          $date = Get-Date -Format "dd-MM-yyyy"
-          $proposedBranch = "weekly_update_help_files_"+$date
-          git add .
-          git commit -m "Updating help files "+$date
-          git push --set-upstream "https://${env:GITHUB_TOKEN}@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
-          git status
+  - task: PowerShell@2
+    displayName: 'Escape disallowed html tags'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
+
+  - task: PowerShell@2
+    displayName: Pushing to github
+    env:
+      GITHUB_TOKEN: ${env:GITHUB_TOKEN}
+    inputs:
+      targetType: inline
+      script: |
+        git config --global user.email "timwamalwa@gmail.com"
+        git config --global user.name "Timothy Wamalwa"
+        cd microsoftgraph-docs-powershell
+        $date = Get-Date -Format "dd-MM-yyyy"
+        $proposedBranch = "weekly_update_help_files_"+$date
+        git add .
+        git commit -m "Updating help files "+$date
+        git push --set-upstream "https://${env:GITHUB_TOKEN}@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
+        git status
          
