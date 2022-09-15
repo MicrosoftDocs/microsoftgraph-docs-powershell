@@ -16,10 +16,16 @@ parameters:
     default: 1es-windows-ps-compute
     displayName: Build Agent
 
+  - name: PipelineTimeout
+    displayName: PipelineTimeout
+    type: number
+    default: 1200
+
 variables:
   BUILDAGENT: ${{ parameters.BuildAgent }}
 
 pool: $(BUILDAGENT)
+timeoutInMinutes: ${{ parameters.PipelineTimeout }}
 
 resources:
  repositories:     
