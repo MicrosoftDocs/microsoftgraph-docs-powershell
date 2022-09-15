@@ -25,7 +25,7 @@ variables:
   BUILDAGENT: ${{ parameters.BuildAgent }}
 
 pool: $(BUILDAGENT)
-timeoutInMinutes: ${{ parameters.PipelineTimeout }}
+  timeoutInMinutes: ${{ parameters.PipelineTimeout }}
 
 resources:
  repositories:     
