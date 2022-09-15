@@ -48,7 +48,6 @@ stages:
         pwsh: true
         filePath: microsoftgraph-docs-powershell\scripts\GenerateServiceModules.ps1
 
-stages:
 - stage: CopyFilesFromPowerShellSDK
   displayName: Copy Files From Powershell SDK
   jobs:
@@ -61,7 +60,6 @@ stages:
         pwsh: true
         filePath: microsoftgraph-docs-powershell\scripts\FileCopy.ps1
 
-stages:
 - stage: UpdateHelp
   displayName: Update Help
   jobs:
@@ -74,7 +72,6 @@ stages:
         pwsh: true
         filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
 
-stages:
 - stage: EscapeDisallowedHtmlTags
   displayName: Escape disallowed html tags
   jobs:
