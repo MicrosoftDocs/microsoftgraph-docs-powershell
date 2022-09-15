@@ -29,9 +29,6 @@ resources:
      name: microsoftgraph/msgraph-sdk-powershell
      ref: dev
 
-variables:
-  buildConfiguration: 'Release'
-
 stages:
 - stage: AutorestRerun
   displayName: Autorest Rerun
