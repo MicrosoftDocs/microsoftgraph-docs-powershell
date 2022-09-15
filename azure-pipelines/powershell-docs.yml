@@ -51,7 +51,7 @@ stages:
 - stage: CopyFilesFromPowerShellSDK
   displayName: Copy Files From Powershell SDK
   jobs:
-  - job: FileCopy 
+  - job: CopyFilesFromPowerShellSDK 
     - task: PowerShell@2
       displayName: 'Copy files from powershell sdk'
       continueOnError: false
@@ -63,7 +63,7 @@ stages:
 - stage: UpdateHelp
   displayName: Update Help
   jobs:
-  - job: FileCopy  
+  - job: UpdateHelp  
     - task: PowerShell@2
       displayName: 'Update Powershell Help'
       continueOnError: false
@@ -75,7 +75,7 @@ stages:
 - stage: EscapeDisallowedHtmlTags
   displayName: Escape disallowed html tags
   jobs:
-  - job: FileCopy   
+  - job: EscapeDisallowedHtmlTags   
     - task: PowerShell@2
       displayName: 'Escape disallowed html tags'
       continueOnError: false
