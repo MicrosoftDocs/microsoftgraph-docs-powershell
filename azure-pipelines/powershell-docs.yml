@@ -33,7 +33,7 @@ stages:
 - stage: AutorestRerun
   displayName: Autorest Rerun
   jobs:
-  - job: GenerateModules
+  - job: AutorestRerun
     steps:
     - template: update-template.yml
       parameters:
