@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsettermrelation
@@ -300,7 +300,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphTermStoreRelation>: relation
+BODYPARAMETER `<IMicrosoftGraphTermStoreRelation>`: relation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
@@ -345,7 +345,7 @@ BODYPARAMETER <IMicrosoftGraphTermStoreRelation>: relation
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
   - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
 
-FROMTERM <IMicrosoftGraphTermStoreTerm1>: term
+FROMTERM `<IMicrosoftGraphTermStoreTerm1>`: term
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
@@ -389,7 +389,7 @@ FROMTERM <IMicrosoftGraphTermStoreTerm1>: term
     - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -426,7 +426,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-SET <IMicrosoftGraphTermStoreSet1>: set
+SET `<IMicrosoftGraphTermStoreSet1>`: set
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
@@ -469,7 +469,7 @@ SET <IMicrosoftGraphTermStoreSet1>: set
   - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
   - `[Terms <IMicrosoftGraphTermStoreTerm1[]>]`: All the terms under the set.
 
-TOTERM <IMicrosoftGraphTermStoreTerm1>: term
+TOTERM `<IMicrosoftGraphTermStoreTerm1>`: term
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
