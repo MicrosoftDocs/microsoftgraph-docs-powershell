@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticregressionsummary
@@ -211,7 +211,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsRegressionSummary>: The user experience analytics Regression Summary.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsRegressionSummary>`: The user experience analytics Regression Summary.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ManufacturerRegression <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics Manufacturer regression.
@@ -221,17 +221,17 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsRegressionSummary>: The use
   - `[ModelRegression <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics model regression.
   - `[OperatingSystemRegression <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics operating system regression.
 
-MANUFACTURERREGRESSION <IMicrosoftGraphUserExperienceAnalyticsMetric[]>: The metric values for the user experience analytics Manufacturer regression.
+MANUFACTURERREGRESSION <IMicrosoftGraphUserExperienceAnalyticsMetric\[]>: The metric values for the user experience analytics Manufacturer regression.
   - `[Id <String>]`: 
   - `[Unit <String>]`: The unit of the user experience analytics metric.
   - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-MODELREGRESSION <IMicrosoftGraphUserExperienceAnalyticsMetric[]>: The metric values for the user experience analytics model regression.
+MODELREGRESSION <IMicrosoftGraphUserExperienceAnalyticsMetric\[]>: The metric values for the user experience analytics model regression.
   - `[Id <String>]`: 
   - `[Unit <String>]`: The unit of the user experience analytics metric.
   - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-OPERATINGSYSTEMREGRESSION <IMicrosoftGraphUserExperienceAnalyticsMetric[]>: The metric values for the user experience analytics operating system regression.
+OPERATINGSYSTEMREGRESSION <IMicrosoftGraphUserExperienceAnalyticsMetric\[]>: The metric values for the user experience analytics operating system regression.
   - `[Id <String>]`: 
   - `[Unit <String>]`: The unit of the user experience analytics metric.
   - `[Value <Double?>]`: The value of the user experience analytics metric.
