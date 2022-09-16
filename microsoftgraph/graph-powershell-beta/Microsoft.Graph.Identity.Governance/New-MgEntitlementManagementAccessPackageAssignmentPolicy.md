@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignmentpolicy
@@ -450,7 +450,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage>: accessPackage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy[]>]`: Read-only. Nullable. Supports $expand.
@@ -1428,7 +1428,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
             - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: 
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
           - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -1551,7 +1551,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5212,7 +5212,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
   - `[ModifiedBy <String>]`: The userPrincipalName of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog>`: accessPackageCatalog
+ACCESSPACKAGECATALOG <IMicrosoftGraphAccessPackageCatalog>: accessPackageCatalog
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackageResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]`: The roles in each resource in a catalog. Read-only.
@@ -6180,7 +6180,7 @@ ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog>`: accessPackageCatal
               - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
             - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
               - `[Id <String>]`: 
-              - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+              - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
               - `[PhoneType <String>]`: authenticationPhoneType
               - `[SmsSignInState <String>]`: authenticationMethodSignInState
             - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -6303,7 +6303,7 @@ ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog>`: accessPackageCatal
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9974,7 +9974,7 @@ ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog>`: accessPackageCatal
   - `[ModifiedBy <String>]`: The UPN of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ACCESSREVIEWSETTINGS `<IMicrosoftGraphAssignmentReviewSettings>`: assignmentReviewSettings
+ACCESSREVIEWSETTINGS <IMicrosoftGraphAssignmentReviewSettings>: assignmentReviewSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AccessReviewTimeoutBehavior <String>]`: accessReviewTimeoutBehavior
   - `[DurationInDays <Int32?>]`: The number of days within which reviewers should provide input.
@@ -9987,7 +9987,7 @@ ACCESSREVIEWSETTINGS `<IMicrosoftGraphAssignmentReviewSettings>`: assignmentRevi
     - `[IsBackup <Boolean?>]`: For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
   - `[StartDateTime <DateTime?>]`: When the first review should start.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentPolicy>`: accessPackageAssignmentPolicy
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignmentPolicy>: accessPackageAssignmentPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage>]`: accessPackage
@@ -10910,7 +10910,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentPolicy>`: accessPackageAss
               - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
             - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
               - `[Id <String>]`: 
-              - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+              - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
               - `[PhoneType <String>]`: authenticationPhoneType
               - `[SmsSignInState <String>]`: authenticationMethodSignInState
             - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -11033,7 +11033,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentPolicy>`: accessPackageAss
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14750,7 +14750,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentPolicy>`: accessPackageAss
     - `[AllowedRequestors <IMicrosoftGraphUserSet[]>]`: The users who are allowed to request on this policy, which can be singleUser, groupMembers, and connectedOrganizationMembers.
     - `[ScopeType <String>]`: Who can request. One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubjects, AllConfiguredConnectedOrganizationSubjects, AllExistingConnectedOrganizationSubjects, AllExistingDirectoryMemberUsers, AllExistingDirectorySubjects or AllExternalSubjects.
 
-CUSTOMEXTENSIONHANDLERS <IMicrosoftGraphCustomExtensionHandler\[]>: The collection of stages when to execute one or more custom access package workflow extensions. Supports $expand.
+CUSTOMEXTENSIONHANDLERS <IMicrosoftGraphCustomExtensionHandler[]>: The collection of stages when to execute one or more custom access package workflow extensions. Supports $expand.
   - `[Id <String>]`: 
   - `[CustomExtension <IMicrosoftGraphCustomAccessPackageWorkflowExtension>]`: customAccessPackageWorkflowExtension
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14768,7 +14768,7 @@ CUSTOMEXTENSIONHANDLERS <IMicrosoftGraphCustomExtensionHandler\[]>: The collecti
     - `[LastModifiedDateTime <DateTime?>]`: Represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Stage <String>]`: accessPackageCustomExtensionStage
 
-QUESTIONS <IMicrosoftGraphAccessPackageQuestion\[]>: Questions that are posed to the requestor.
+QUESTIONS <IMicrosoftGraphAccessPackageQuestion[]>: Questions that are posed to the requestor.
   - `[Id <String>]`: ID of the question.
   - `[IsAnswerEditable <Boolean?>]`: Specifies whether the requestor is allowed to edit answers to questions.
   - `[IsRequired <Boolean?>]`: Whether the requestor is required to supply an answer or not.
@@ -14780,7 +14780,7 @@ QUESTIONS <IMicrosoftGraphAccessPackageQuestion\[]>: Questions that are posed to
       - `[LanguageCode <String>]`: The ISO code for the intended language. Required.
       - `[Text <String>]`: The text in the specific language. Required.
 
-REQUESTAPPROVALSETTINGS `<IMicrosoftGraphApprovalSettings>`: approvalSettings
+REQUESTAPPROVALSETTINGS <IMicrosoftGraphApprovalSettings>: approvalSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApprovalMode <String>]`: One of SingleStage, Serial, Parallel, NoApproval (default). NoApproval is used when isApprovalRequired is false.
   - `[ApprovalStages <IMicrosoftGraphApprovalStage[]>]`: If approval is required, the one or two elements of this collection define each of the stages of approval. An empty array if no approval is required.
@@ -14795,7 +14795,7 @@ REQUESTAPPROVALSETTINGS `<IMicrosoftGraphApprovalSettings>`: approvalSettings
   - `[IsApprovalRequiredForExtension <Boolean?>]`: Indicates whether approval is required for a user to extend their assignment.
   - `[IsRequestorJustificationRequired <Boolean?>]`: Indicates whether the requestor is required to supply a justification in their request.
 
-REQUESTORSETTINGS `<IMicrosoftGraphRequestorSettings>`: requestorSettings
+REQUESTORSETTINGS <IMicrosoftGraphRequestorSettings>: requestorSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AcceptRequests <Boolean?>]`: Indicates whether new requests are accepted on this policy.
   - `[AllowedRequestors <IMicrosoftGraphUserSet[]>]`: The users who are allowed to request on this policy, which can be singleUser, groupMembers, and connectedOrganizationMembers.
