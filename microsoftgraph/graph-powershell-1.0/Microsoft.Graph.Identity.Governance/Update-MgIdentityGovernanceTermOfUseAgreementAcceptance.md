@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermofuseagreementacceptance
@@ -80,6 +80,24 @@ Update-MgIdentityGovernanceTermOfUseAgreementAcceptance -InputObject <IIdentityG
 Update the navigation property agreementAcceptances in identityGovernance
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -450,7 +468,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAgreementAcceptance>`: agreementAcceptance
+BODYPARAMETER <IMicrosoftGraphAgreementAcceptance>: agreementAcceptance
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
@@ -467,7 +485,7 @@ BODYPARAMETER `<IMicrosoftGraphAgreementAcceptance>`: agreementAcceptance
   - `[UserId <String>]`: ID of the user who accepted the agreement.
   - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
