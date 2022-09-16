@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityincident
@@ -48,6 +48,24 @@ Update-MgSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicr
 Update the navigation property incidents in security
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -405,7 +423,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALERTS <IMicrosoftGraphSecurityAlert\[]>: .
+ALERTS <IMicrosoftGraphSecurityAlert[]>: .
   - `[Id <String>]`: 
   - `[ActorDisplayName <String>]`: 
   - `[AlertWebUrl <String>]`: 
@@ -445,7 +463,7 @@ ALERTS <IMicrosoftGraphSecurityAlert\[]>: .
   - `[ThreatFamilyName <String>]`: 
   - `[Title <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
+BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Alerts <IMicrosoftGraphSecurityAlert[]>]`: 
@@ -501,12 +519,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
   - `[Tags <String[]>]`: 
   - `[TenantId <String>]`: 
 
-COMMENTS <IMicrosoftGraphSecurityAlertComment\[]>: .
+COMMENTS <IMicrosoftGraphSecurityAlertComment[]>: .
   - `[Comment <String>]`: 
   - `[CreatedByDisplayName <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityalertmultiple
@@ -29,6 +29,24 @@ Update-MgSecurityAlertMultiple
 Invoke action updateAlerts
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -128,7 +146,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Value <IMicrosoftGraphAlert[]>]`: 
     - `[Id <String>]`: 
@@ -292,7 +310,7 @@ BODYPARAMETER `<IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequest
       - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
       - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
-VALUE <IMicrosoftGraphAlert\[]>: .
+VALUE <IMicrosoftGraphAlert[]>: .
   - `[Id <String>]`: 
   - `[ActivityGroupName <String>]`: Name or alias of the activity group (attacker) this alert is attributed to.
   - `[AlertDetections <IMicrosoftGraphAlertDetection[]>]`: 
