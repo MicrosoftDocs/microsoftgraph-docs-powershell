@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagemention
@@ -48,12 +48,23 @@ Create new navigation property to mentions for users
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: {{ Add title here }}
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
 ```
 
-{{ Add example description here }}
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -353,9 +364,51 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMention
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphMention>: mention
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: 
+  - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
+  - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
+  - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
+  - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
+  - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for message.
+  - `[MentionText <String>]`: Optional. Not used and defaulted as null for message. To get the mentions in a message, see the bodyPreview property of the message instead.
+  - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
+  - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
+
+CREATEDBY <IMicrosoftGraphEmailAddress>: emailAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
+
+INPUTOBJECT <IMailIdentity>: Identity Parameter
+  - `[AttachmentId <String>]`: key: id of attachment
+  - `[ExtensionId <String>]`: key: id of extension
+  - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride
+  - `[MailFolderId <String>]`: key: id of mailFolder
+  - `[MailFolderId1 <String>]`: key: id of mailFolder
+  - `[MentionId <String>]`: key: id of mention
+  - `[MessageId <String>]`: key: id of message
+  - `[MessageRuleId <String>]`: key: id of messageRule
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[UserConfigurationId <String>]`: key: id of userConfiguration
+  - `[UserId <String>]`: key: id of user
+
+MENTIONED <IMicrosoftGraphEmailAddress>: emailAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagemention](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagemention)
-
