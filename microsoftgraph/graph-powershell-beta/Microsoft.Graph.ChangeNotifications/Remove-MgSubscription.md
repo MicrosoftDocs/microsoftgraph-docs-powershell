@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSubscription
 
 ## SYNOPSIS
-Delete entity from subscriptions
+Delete subscription
 
 ## SYNTAX
 
@@ -25,9 +25,27 @@ Remove-MgSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete entity from subscriptions
+Delete subscription
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

@@ -63,6 +63,24 @@ Update the navigation property salesCreditMemos in financials
 
 ## EXAMPLES
 
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -370,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -718,7 +736,7 @@ BILLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
 
 BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[BillToCustomerId <String>]`: 
   - `[BillToCustomerNumber <String>]`: 
   - `[BillToName <String>]`: 
@@ -732,7 +750,7 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
   - `[CreditMemoDate <DateTime?>]`: 
   - `[Currency <IMicrosoftGraphCurrency>]`: currency
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AmountDecimalPlaces <String>]`: 
     - `[AmountRoundingPrecision <Decimal?>]`: 
     - `[Code <String>]`: 
@@ -743,7 +761,7 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
   - `[CurrencyId <String>]`: 
   - `[Customer <IMicrosoftGraphCustomer>]`: customer
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[Blocked <String>]`: 
     - `[Currency <IMicrosoftGraphCurrency>]`: currency
@@ -755,14 +773,14 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
     - `[Number <String>]`: 
     - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[PaymentMethodId <String>]`: 
     - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
       - `[Code <String>]`: 
       - `[DiscountDateCalculation <String>]`: 
@@ -773,14 +791,14 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
     - `[PaymentTermsId <String>]`: 
     - `[PhoneNumber <String>]`: 
     - `[Picture <IMicrosoftGraphPicture[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Content <Byte[]>]`: 
       - `[ContentType <String>]`: 
       - `[Height <Int32?>]`: 
       - `[Width <Int32?>]`: 
     - `[ShipmentMethod <IMicrosoftGraphShipmentMethod>]`: shipmentMethod
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
@@ -808,10 +826,10 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
   - `[PhoneNumber <String>]`: 
   - `[PricesIncludeTax <Boolean?>]`: 
   - `[SalesCreditMemoLines <IMicrosoftGraphSalesCreditMemoLine[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Account <IMicrosoftGraphAccount>]`: account
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Blocked <Boolean?>]`: 
       - `[Category <String>]`: 
       - `[DisplayName <String>]`: 
@@ -829,7 +847,7 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
     - `[InvoiceDiscountAllocation <Decimal?>]`: 
     - `[Item <IMicrosoftGraphItem>]`: item
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[BaseUnitOfMeasureId <String>]`: 
       - `[Blocked <Boolean?>]`: 
       - `[DisplayName <String>]`: 
@@ -837,7 +855,7 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
       - `[Inventory <Decimal?>]`: 
       - `[ItemCategory <IMicrosoftGraphItemCategory>]`: itemCategory
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: Read-only.
+        - `[Id <String>]`: 
         - `[Code <String>]`: 
         - `[DisplayName <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
@@ -874,7 +892,7 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
 
 CURRENCY `<IMicrosoftGraphCurrency>`: currency
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AmountDecimalPlaces <String>]`: 
   - `[AmountRoundingPrecision <Decimal?>]`: 
   - `[Code <String>]`: 
@@ -884,7 +902,7 @@ CURRENCY `<IMicrosoftGraphCurrency>`: currency
 
 CUSTOMER `<IMicrosoftGraphCustomer>`: customer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: 
@@ -895,7 +913,7 @@ CUSTOMER `<IMicrosoftGraphCustomer>`: customer
   - `[Blocked <String>]`: 
   - `[Currency <IMicrosoftGraphCurrency>]`: currency
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AmountDecimalPlaces <String>]`: 
     - `[AmountRoundingPrecision <Decimal?>]`: 
     - `[Code <String>]`: 
@@ -910,14 +928,14 @@ CUSTOMER `<IMicrosoftGraphCustomer>`: customer
   - `[Number <String>]`: 
   - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[PaymentMethodId <String>]`: 
   - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
     - `[Code <String>]`: 
     - `[DiscountDateCalculation <String>]`: 
@@ -928,14 +946,14 @@ CUSTOMER `<IMicrosoftGraphCustomer>`: customer
   - `[PaymentTermsId <String>]`: 
   - `[PhoneNumber <String>]`: 
   - `[Picture <IMicrosoftGraphPicture[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Content <Byte[]>]`: 
     - `[ContentType <String>]`: 
     - `[Height <Int32?>]`: 
     - `[Width <Int32?>]`: 
   - `[ShipmentMethod <IMicrosoftGraphShipmentMethod>]`: shipmentMethod
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
@@ -987,7 +1005,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
   - `[Code <String>]`: 
   - `[DiscountDateCalculation <String>]`: 
@@ -997,10 +1015,10 @@ PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[LastModifiedDateTime <DateTime?>]`: 
 
 SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine\[]>: .
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Blocked <Boolean?>]`: 
     - `[Category <String>]`: 
     - `[DisplayName <String>]`: 
@@ -1018,7 +1036,7 @@ SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine\[]>: .
   - `[InvoiceDiscountAllocation <Decimal?>]`: 
   - `[Item <IMicrosoftGraphItem>]`: item
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[BaseUnitOfMeasureId <String>]`: 
     - `[Blocked <Boolean?>]`: 
     - `[DisplayName <String>]`: 
@@ -1026,7 +1044,7 @@ SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine\[]>: .
     - `[Inventory <Decimal?>]`: 
     - `[ItemCategory <IMicrosoftGraphItemCategory>]`: itemCategory
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
@@ -1035,7 +1053,7 @@ SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine\[]>: .
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Number <String>]`: 
     - `[Picture <IMicrosoftGraphPicture[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Content <Byte[]>]`: 
       - `[ContentType <String>]`: 
       - `[Height <Int32?>]`: 

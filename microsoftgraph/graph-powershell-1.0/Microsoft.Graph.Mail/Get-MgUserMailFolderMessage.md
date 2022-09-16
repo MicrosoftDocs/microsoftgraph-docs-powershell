@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserMailFolderMessage
 
 ## SYNOPSIS
-The collection of messages in the mailFolder.
+Get messages from users
 
 ## SYNTAX
 
@@ -32,9 +32,27 @@ Get-MgUserMailFolderMessage -InputObject <IMailIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-The collection of messages in the mailFolder.
+Get messages from users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

@@ -53,6 +53,24 @@ Update the navigation property schools in education
 
 ## EXAMPLES
 
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1228,7 +1246,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationSchool1>`: educationSchool
           - `[CreationType <String>]`: Indicates whether the user account was created through one of the following methods:  As a regular school or work account (null). As an external account (Invitation). As a local account for an Azure Active Directory B2C tenant (LocalAccount). Through self-service sign-up by an internal user using email verification (EmailVerified). Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp).  Read-only.Supports $filter (eq, ne, not, and in).
           - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
           - `[DeviceEnrollmentLimit <Int32?>]`: The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
-          - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
+          - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]`: The list of troubleshooting events for this user.
             - `[Id <String>]`: 
             - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
             - `[EventDateTime <DateTime?>]`: Time when the event occurred .
@@ -2606,7 +2624,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationSchool1>`: educationSchool
               - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
-          - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration1[]>]`: Zero or more managed app registrations that belong to the user.
+          - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]`: Zero or more managed app registrations that belong to the user.
             - `[Id <String>]`: 
             - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2939,7 +2957,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationSchool1>`: educationSchool
             - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
           - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
-          - `[Planner <IMicrosoftGraphPlannerUser1>]`: plannerUser
+          - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[Plans <IMicrosoftGraphPlannerPlan[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
@@ -3058,7 +3076,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationSchool1>`: educationSchool
           - `[Responsibilities <String[]>]`: A list for the user to enumerate their responsibilities. Returned only on $select.
           - `[Schools <String[]>]`: A list for the user to enumerate the schools they have attended. Returned only on $select.
           - `[ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>]`: The scoped-role administrative unit memberships for this user. Read-only. Nullable.
-          - `[Settings <IMicrosoftGraphUserSettings1>]`: userSettings
+          - `[Settings <IMicrosoftGraphUserSettings>]`: userSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the Office Delve organization level setting. When set to true, the organization doesn't have access to Office Delve. This setting is read-only and can only be changed by administrators in the SharePoint admin center.
@@ -4032,7 +4050,7 @@ CLASSES <IMicrosoftGraphEducationClass\[]>: Classes taught at the school. Nullab
         - `[CreationType <String>]`: Indicates whether the user account was created through one of the following methods:  As a regular school or work account (null). As an external account (Invitation). As a local account for an Azure Active Directory B2C tenant (LocalAccount). Through self-service sign-up by an internal user using email verification (EmailVerified). Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp).  Read-only.Supports $filter (eq, ne, not, and in).
         - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
         - `[DeviceEnrollmentLimit <Int32?>]`: The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
-        - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
+        - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]`: The list of troubleshooting events for this user.
           - `[Id <String>]`: 
           - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
           - `[EventDateTime <DateTime?>]`: Time when the event occurred .
@@ -5410,7 +5428,7 @@ CLASSES <IMicrosoftGraphEducationClass\[]>: Classes taught at the school. Nullab
             - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
-        - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration1[]>]`: Zero or more managed app registrations that belong to the user.
+        - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]`: Zero or more managed app registrations that belong to the user.
           - `[Id <String>]`: 
           - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5743,7 +5761,7 @@ CLASSES <IMicrosoftGraphEducationClass\[]>: Classes taught at the school. Nullab
           - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
         - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
         - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
-        - `[Planner <IMicrosoftGraphPlannerUser1>]`: plannerUser
+        - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[Plans <IMicrosoftGraphPlannerPlan[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
@@ -5866,7 +5884,7 @@ CLASSES <IMicrosoftGraphEducationClass\[]>: Classes taught at the school. Nullab
           - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
           - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
           - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-        - `[Settings <IMicrosoftGraphUserSettings1>]`: userSettings
+        - `[Settings <IMicrosoftGraphUserSettings>]`: userSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the Office Delve organization level setting. When set to true, the organization doesn't have access to Office Delve. This setting is read-only and can only be changed by administrators in the SharePoint admin center.
@@ -6887,7 +6905,7 @@ USERS <IMicrosoftGraphEducationUser1\[]>: Users in the school. Nullable.
           - `[CreationType <String>]`: Indicates whether the user account was created through one of the following methods:  As a regular school or work account (null). As an external account (Invitation). As a local account for an Azure Active Directory B2C tenant (LocalAccount). Through self-service sign-up by an internal user using email verification (EmailVerified). Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp).  Read-only.Supports $filter (eq, ne, not, and in).
           - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
           - `[DeviceEnrollmentLimit <Int32?>]`: The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
-          - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
+          - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]`: The list of troubleshooting events for this user.
             - `[Id <String>]`: 
             - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
             - `[EventDateTime <DateTime?>]`: Time when the event occurred .
@@ -8265,7 +8283,7 @@ USERS <IMicrosoftGraphEducationUser1\[]>: Users in the school. Nullable.
               - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
-          - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration1[]>]`: Zero or more managed app registrations that belong to the user.
+          - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]`: Zero or more managed app registrations that belong to the user.
             - `[Id <String>]`: 
             - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8598,7 +8616,7 @@ USERS <IMicrosoftGraphEducationUser1\[]>: Users in the school. Nullable.
             - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
           - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
-          - `[Planner <IMicrosoftGraphPlannerUser1>]`: plannerUser
+          - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[Plans <IMicrosoftGraphPlannerPlan[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
@@ -8721,7 +8739,7 @@ USERS <IMicrosoftGraphEducationUser1\[]>: Users in the school. Nullable.
             - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
             - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
             - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-          - `[Settings <IMicrosoftGraphUserSettings1>]`: userSettings
+          - `[Settings <IMicrosoftGraphUserSettings>]`: userSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the Office Delve organization level setting. When set to true, the organization doesn't have access to Office Delve. This setting is read-only and can only be changed by administrators in the SharePoint admin center.

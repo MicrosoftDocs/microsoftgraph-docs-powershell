@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserContactFolder
 
 ## SYNOPSIS
-The user's contacts folders.
-Read-only.
-Nullable.
+Get contactFolders from users
 
 ## SYNTAX
 
@@ -31,11 +29,27 @@ Get-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-Property <Str
 ```
 
 ## DESCRIPTION
-The user's contacts folders.
-Read-only.
-Nullable.
+Get contactFolders from users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

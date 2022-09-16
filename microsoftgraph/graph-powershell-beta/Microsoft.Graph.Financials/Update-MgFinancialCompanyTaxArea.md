@@ -43,6 +43,24 @@ Update the navigation property taxAreas in financials
 
 ## EXAMPLES
 
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -122,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -264,7 +282,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphTaxArea>`: taxArea
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 

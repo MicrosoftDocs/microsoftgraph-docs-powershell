@@ -2,6 +2,7 @@ steps:
 - checkout: msgraph-sdk-powershell
   clean: true
   fetchDepth: 1
+  submodules: true
   persistCredentials: true
 
 - checkout: self

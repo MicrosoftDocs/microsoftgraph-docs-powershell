@@ -56,6 +56,24 @@ Update the navigation property salesCreditMemoLines in financials
 
 ## EXAMPLES
 
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
 ## PARAMETERS
 
 ### -Account
@@ -241,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -594,7 +612,7 @@ To create the parameters described below, construct a hash table containing the 
 
 ACCOUNT `<IMicrosoftGraphAccount>`: account
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Blocked <Boolean?>]`: 
   - `[Category <String>]`: 
   - `[DisplayName <String>]`: 
@@ -604,10 +622,10 @@ ACCOUNT `<IMicrosoftGraphAccount>`: account
 
 BODYPARAMETER `<IMicrosoftGraphSalesCreditMemoLine>`: salesCreditMemoLine
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Blocked <Boolean?>]`: 
     - `[Category <String>]`: 
     - `[DisplayName <String>]`: 
@@ -625,7 +643,7 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemoLine>`: salesCreditMemoLine
   - `[InvoiceDiscountAllocation <Decimal?>]`: 
   - `[Item <IMicrosoftGraphItem>]`: item
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[BaseUnitOfMeasureId <String>]`: 
     - `[Blocked <Boolean?>]`: 
     - `[DisplayName <String>]`: 
@@ -633,7 +651,7 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemoLine>`: salesCreditMemoLine
     - `[Inventory <Decimal?>]`: 
     - `[ItemCategory <IMicrosoftGraphItemCategory>]`: itemCategory
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
@@ -642,7 +660,7 @@ BODYPARAMETER `<IMicrosoftGraphSalesCreditMemoLine>`: salesCreditMemoLine
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Number <String>]`: 
     - `[Picture <IMicrosoftGraphPicture[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Content <Byte[]>]`: 
       - `[ContentType <String>]`: 
       - `[Height <Int32?>]`: 
@@ -707,7 +725,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ITEM `<IMicrosoftGraphItem>`: item
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[BaseUnitOfMeasureId <String>]`: 
   - `[Blocked <Boolean?>]`: 
   - `[DisplayName <String>]`: 
@@ -715,7 +733,7 @@ ITEM `<IMicrosoftGraphItem>`: item
   - `[Inventory <Decimal?>]`: 
   - `[ItemCategory <IMicrosoftGraphItemCategory>]`: itemCategory
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
@@ -724,7 +742,7 @@ ITEM `<IMicrosoftGraphItem>`: item
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Number <String>]`: 
   - `[Picture <IMicrosoftGraphPicture[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Content <Byte[]>]`: 
     - `[ContentType <String>]`: 
     - `[Height <Int32?>]`: 

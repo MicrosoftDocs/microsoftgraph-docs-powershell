@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgUserContactMultiValueExtendedProperty
 
 ## SYNOPSIS
-The collection of multi-value extended properties defined for the contact.
-Read-only.
-Nullable.
+Update the navigation property multiValueExtendedProperties in users
 
 ## SYNTAX
 
@@ -43,11 +41,27 @@ Update-MgUserContactMultiValueExtendedProperty -InputObject <IPersonalContactsId
 ```
 
 ## DESCRIPTION
-The collection of multi-value extended properties defined for the contact.
-Read-only.
-Nullable.
+Update the navigation property multiValueExtendedProperties in users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -98,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -240,7 +254,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphMultiValueLegacyExtendedProperty>`: multiValueLegacyExtendedProperty
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Value <String[]>]`: A collection of property values.
 
 INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter

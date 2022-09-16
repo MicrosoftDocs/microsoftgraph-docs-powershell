@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgUserContactFolderContactPhoto
 
 ## SYNOPSIS
-Optional contact picture.
-You can get or set a photo for a contact.
+Update the navigation property photo in users
 
 ## SYNTAX
 
@@ -40,10 +39,27 @@ Update-MgUserContactFolderContactPhoto -InputObject <IPersonalContactsIdentity>
 ```
 
 ## DESCRIPTION
-Optional contact picture.
-You can get or set a photo for a contact.
+Update the navigation property photo in users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -125,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -253,7 +269,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphProfilePhoto>`: profilePhoto
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Height <Int32?>]`: The height of the photo. Read-only.
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 

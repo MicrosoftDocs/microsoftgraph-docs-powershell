@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgUserMessage
 
 ## SYNOPSIS
-The messages in a mailbox or folder.
-Read-only.
-Nullable.
+Delete navigation property messages for users
 
 ## SYNTAX
 
@@ -27,11 +25,27 @@ Remove-MgUserMessage -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru
 ```
 
 ## DESCRIPTION
-The messages in a mailbox or folder.
-Read-only.
-Nullable.
+Delete navigation property messages for users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
