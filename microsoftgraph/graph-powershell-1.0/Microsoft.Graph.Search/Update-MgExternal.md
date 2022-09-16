@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternal
@@ -29,6 +29,24 @@ Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal1> [-
 Update external
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -143,7 +161,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal1>: external
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Connections <IMicrosoftGraphExternalConnectorsExternalConnection1[]>]`: 
     - `[Id <String>]`: 
@@ -204,7 +222,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
         - `[Type <String>]`: propertyType
     - `[State <String>]`: connectionState
 
-CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection1\[]>: .
+CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection1[]>: .
   - `[Id <String>]`: 
   - `[Configuration <IMicrosoftGraphExternalConnectorsConfiguration>]`: configuration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
