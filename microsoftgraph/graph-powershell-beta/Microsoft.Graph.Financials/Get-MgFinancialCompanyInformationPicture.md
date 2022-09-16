@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgFinancialCompanyInformationPicture
 
 ## SYNOPSIS
-Get media content for the navigation property companyInformation from financials
+Get picture for the navigation property companyInformation from financials
 
 ## SYNTAX
 
@@ -25,9 +25,27 @@ Get-MgFinancialCompanyInformationPicture -InputObject <IFinancialsIdentity> -Out
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property companyInformation from financials
+Get picture for the navigation property companyInformation from financials
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

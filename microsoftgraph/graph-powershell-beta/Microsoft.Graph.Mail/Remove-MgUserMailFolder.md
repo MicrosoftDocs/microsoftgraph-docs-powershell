@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgUserMailFolder
 
 ## SYNOPSIS
-The user's mail folders.
-Read-only.
-Nullable.
+Delete navigation property mailFolders for users
 
 ## SYNTAX
 
@@ -27,11 +25,27 @@ Remove-MgUserMailFolder -InputObject <IMailIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-The user's mail folders.
-Read-only.
-Nullable.
+Delete navigation property mailFolders for users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

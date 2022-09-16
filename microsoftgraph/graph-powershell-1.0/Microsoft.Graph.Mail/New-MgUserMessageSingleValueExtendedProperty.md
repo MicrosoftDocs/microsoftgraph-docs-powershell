@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgUserMessageSingleValueExtendedProperty
 
 ## SYNOPSIS
-The collection of single-value extended properties defined for the message.
-Nullable.
+Create new navigation property to singleValueExtendedProperties for users
 
 ## SYNTAX
 
@@ -38,10 +37,27 @@ New-MgUserMessageSingleValueExtendedProperty -InputObject <IMailIdentity>
 ```
 
 ## DESCRIPTION
-The collection of single-value extended properties defined for the message.
-Nullable.
+Create new navigation property to singleValueExtendedProperties for users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -77,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -204,7 +220,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphSingleValueLegacyExtendedProperty>`: singleValueLegacyExtendedProperty
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Value <String>]`: A property value.
 
 INPUTOBJECT `<IMailIdentity>`: Identity Parameter

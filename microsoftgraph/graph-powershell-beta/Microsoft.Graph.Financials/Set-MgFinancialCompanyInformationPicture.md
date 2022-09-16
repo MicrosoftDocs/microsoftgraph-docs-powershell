@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgFinancialCompanyInformationPicture
 
 ## SYNOPSIS
-Update media content for the navigation property companyInformation in financials
+Update picture for the navigation property companyInformation in financials
 
 ## SYNTAX
 
@@ -25,9 +25,27 @@ Set-MgFinancialCompanyInformationPicture -InputObject <IFinancialsIdentity> [-Bo
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property companyInformation in financials
+Update picture for the navigation property companyInformation in financials
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

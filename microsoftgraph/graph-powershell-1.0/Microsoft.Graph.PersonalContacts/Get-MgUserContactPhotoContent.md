@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserContactPhotoContent
 
 ## SYNOPSIS
-The user's profile photo.
-Read-only.
+Get media content for the navigation property photo from users
 
 ## SYNTAX
 
@@ -26,10 +25,27 @@ Get-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutFile 
 ```
 
 ## DESCRIPTION
-The user's profile photo.
-Read-only.
+Get media content for the navigation property photo from users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserContactMultiValueExtendedProperty
 
 ## SYNOPSIS
-The collection of multi-value extended properties defined for the contact.
-Read-only.
-Nullable.
+Get multiValueExtendedProperties from users
 
 ## SYNTAX
 
@@ -34,11 +32,27 @@ Get-MgUserContactMultiValueExtendedProperty -InputObject <IPersonalContactsIdent
 ```
 
 ## DESCRIPTION
-The collection of multi-value extended properties defined for the contact.
-Read-only.
-Nullable.
+Get multiValueExtendedProperties from users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgUserContactFolderMultiValueExtendedProperty
 
 ## SYNOPSIS
-The collection of multi-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
+Create new navigation property to multiValueExtendedProperties for users
 
 ## SYNTAX
 
@@ -41,11 +39,27 @@ New-MgUserContactFolderMultiValueExtendedProperty -InputObject <IPersonalContact
 ```
 
 ## DESCRIPTION
-The collection of multi-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
+Create new navigation property to multiValueExtendedProperties for users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -208,7 +222,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphMultiValueLegacyExtendedProperty>`: multiValueLegacyExtendedProperty
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Value <String[]>]`: A collection of property values.
 
 INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter

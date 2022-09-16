@@ -69,6 +69,24 @@ Update the navigation property users in education
 
 ## EXAMPLES
 
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -2244,7 +2262,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser>`: educationUser
             - `[DeviceId <String>]`: 
             - `[KeyMaterial <Byte[]>]`: 
             - `[KeyType <String>]`: 
-          - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]`: The list of troubleshooting events for this user.
+          - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
             - `[Id <String>]`: 
             - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
             - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
@@ -3847,7 +3865,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser>`: educationUser
               - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
-          - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]`: Zero or more managed app registrations that belong to the user.
+          - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration1[]>]`: Zero or more managed app registrations that belong to the user.
             - `[Id <String>]`: 
             - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4606,7 +4624,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser>`: educationUser
             - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
           - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
-          - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
+          - `[Planner <IMicrosoftGraphPlannerUser1>]`: plannerUser
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[All <IMicrosoftGraphPlannerDelta[]>]`: 
@@ -5370,7 +5388,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser>`: educationUser
                 - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
                 - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
           - `[SecurityIdentifier <String>]`: Security identifier (SID) of the user, used in Windows scenarios. Read-only. Returned by default. Supports $select and $filter (eq, not, ge, le, startsWith).
-          - `[Settings <IMicrosoftGraphUserSettings>]`: userSettings
+          - `[Settings <IMicrosoftGraphUserSettings1>]`: userSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]`: contactMergeSuggestions
@@ -7050,7 +7068,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
           - `[DeviceId <String>]`: 
           - `[KeyMaterial <Byte[]>]`: 
           - `[KeyType <String>]`: 
-        - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]`: The list of troubleshooting events for this user.
+        - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
           - `[Id <String>]`: 
           - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
           - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
@@ -8653,7 +8671,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
             - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
-        - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]`: Zero or more managed app registrations that belong to the user.
+        - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration1[]>]`: Zero or more managed app registrations that belong to the user.
           - `[Id <String>]`: 
           - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9412,7 +9430,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
           - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
         - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
         - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
-        - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
+        - `[Planner <IMicrosoftGraphPlannerUser1>]`: plannerUser
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[All <IMicrosoftGraphPlannerDelta[]>]`: 
@@ -10176,7 +10194,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
               - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
               - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
         - `[SecurityIdentifier <String>]`: Security identifier (SID) of the user, used in Windows scenarios. Read-only. Returned by default. Supports $select and $filter (eq, not, ge, le, startsWith).
-        - `[Settings <IMicrosoftGraphUserSettings>]`: userSettings
+        - `[Settings <IMicrosoftGraphUserSettings1>]`: userSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]`: contactMergeSuggestions
@@ -11984,7 +12002,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool\[]>: Schools to which the user belongs. 
             - `[DeviceId <String>]`: 
             - `[KeyMaterial <Byte[]>]`: 
             - `[KeyType <String>]`: 
-          - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]`: The list of troubleshooting events for this user.
+          - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
             - `[Id <String>]`: 
             - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
             - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
@@ -13587,7 +13605,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool\[]>: Schools to which the user belongs. 
               - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
-          - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]`: Zero or more managed app registrations that belong to the user.
+          - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration1[]>]`: Zero or more managed app registrations that belong to the user.
             - `[Id <String>]`: 
             - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14346,7 +14364,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool\[]>: Schools to which the user belongs. 
             - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
           - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
-          - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
+          - `[Planner <IMicrosoftGraphPlannerUser1>]`: plannerUser
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[All <IMicrosoftGraphPlannerDelta[]>]`: 
@@ -15106,7 +15124,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool\[]>: Schools to which the user belongs. 
                 - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
                 - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
           - `[SecurityIdentifier <String>]`: Security identifier (SID) of the user, used in Windows scenarios. Read-only. Returned by default. Supports $select and $filter (eq, not, ge, le, startsWith).
-          - `[Settings <IMicrosoftGraphUserSettings>]`: userSettings
+          - `[Settings <IMicrosoftGraphUserSettings1>]`: userSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]`: contactMergeSuggestions
@@ -16784,7 +16802,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
           - `[DeviceId <String>]`: 
           - `[KeyMaterial <Byte[]>]`: 
           - `[KeyType <String>]`: 
-        - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]`: The list of troubleshooting events for this user.
+        - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
           - `[Id <String>]`: 
           - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
           - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
@@ -18387,7 +18405,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
             - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
-        - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]`: Zero or more managed app registrations that belong to the user.
+        - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration1[]>]`: Zero or more managed app registrations that belong to the user.
           - `[Id <String>]`: 
           - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19146,7 +19164,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
           - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
         - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
         - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
-        - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
+        - `[Planner <IMicrosoftGraphPlannerUser1>]`: plannerUser
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[All <IMicrosoftGraphPlannerDelta[]>]`: 
@@ -19910,7 +19928,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
               - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
               - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
         - `[SecurityIdentifier <String>]`: Security identifier (SID) of the user, used in Windows scenarios. Read-only. Returned by default. Supports $select and $filter (eq, not, ge, le, startsWith).
-        - `[Settings <IMicrosoftGraphUserSettings>]`: userSettings
+        - `[Settings <IMicrosoftGraphUserSettings1>]`: userSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]`: contactMergeSuggestions
@@ -21414,7 +21432,7 @@ USER `<IMicrosoftGraphUser>`: user
     - `[DeviceId <String>]`: 
     - `[KeyMaterial <Byte[]>]`: 
     - `[KeyType <String>]`: 
-  - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]`: The list of troubleshooting events for this user.
+  - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
     - `[Id <String>]`: 
     - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
     - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
@@ -23316,7 +23334,7 @@ USER `<IMicrosoftGraphUser>`: user
       - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
-  - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]`: Zero or more managed app registrations that belong to the user.
+  - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration1[]>]`: Zero or more managed app registrations that belong to the user.
     - `[Id <String>]`: 
     - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -24071,7 +24089,7 @@ USER `<IMicrosoftGraphUser>`: user
     - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
   - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
   - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
-  - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
+  - `[Planner <IMicrosoftGraphPlannerUser1>]`: plannerUser
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[All <IMicrosoftGraphPlannerDelta[]>]`: 
@@ -24726,7 +24744,7 @@ USER `<IMicrosoftGraphUser>`: user
         - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
         - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
   - `[SecurityIdentifier <String>]`: Security identifier (SID) of the user, used in Windows scenarios. Read-only. Returned by default. Supports $select and $filter (eq, not, ge, le, startsWith).
-  - `[Settings <IMicrosoftGraphUserSettings>]`: userSettings
+  - `[Settings <IMicrosoftGraphUserSettings1>]`: userSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]`: contactMergeSuggestions

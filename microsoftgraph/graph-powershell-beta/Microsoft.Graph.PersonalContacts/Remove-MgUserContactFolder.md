@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgUserContactFolder
 
 ## SYNOPSIS
-The user's contacts folders.
-Read-only.
-Nullable.
+Delete navigation property contactFolders for users
 
 ## SYNTAX
 
@@ -27,11 +25,27 @@ Remove-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-The user's contacts folders.
-Read-only.
-Nullable.
+Delete navigation property contactFolders for users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
