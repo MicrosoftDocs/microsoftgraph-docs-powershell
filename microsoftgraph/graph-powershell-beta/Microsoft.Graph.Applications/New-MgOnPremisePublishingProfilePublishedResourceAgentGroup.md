@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgonpremisepublishingprofilepublishedresourceagentgroup
@@ -45,6 +45,24 @@ New-MgOnPremisePublishingProfilePublishedResourceAgentGroup -InputObject <IAppli
 Create new navigation property to agentGroups for onPremisesPublishingProfiles
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -272,7 +290,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AGENTS <IMicrosoftGraphOnPremisesAgent\[]>: List of onPremisesAgent that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
+AGENTS <IMicrosoftGraphOnPremisesAgent[]>: List of onPremisesAgent that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of onPremisesAgentGroups that an onPremisesAgent is assigned to. Read-only. Nullable.
     - `[Id <String>]`: 
@@ -291,7 +309,7 @@ AGENTS <IMicrosoftGraphOnPremisesAgent\[]>: List of onPremisesAgent that are ass
   - `[Status <String>]`: agentStatus
   - `[SupportedPublishingTypes <String[]>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphOnPremisesAgentGroup>`: onPremisesAgentGroup
+BODYPARAMETER <IMicrosoftGraphOnPremisesAgentGroup>: onPremisesAgentGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Agents <IMicrosoftGraphOnPremisesAgent[]>]`: List of onPremisesAgent that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
@@ -311,7 +329,7 @@ BODYPARAMETER `<IMicrosoftGraphOnPremisesAgentGroup>`: onPremisesAgentGroup
     - `[ResourceName <String>]`: Name of the publishedResource.
   - `[PublishingType <String>]`: onPremisesPublishingType
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
@@ -341,7 +359,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
   - `[UserId <String>]`: key: id of user
 
-PUBLISHEDRESOURCES <IMicrosoftGraphPublishedResource\[]>: List of publishedResource that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
+PUBLISHEDRESOURCES <IMicrosoftGraphPublishedResource[]>: List of publishedResource that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
     - `[Id <String>]`: 
