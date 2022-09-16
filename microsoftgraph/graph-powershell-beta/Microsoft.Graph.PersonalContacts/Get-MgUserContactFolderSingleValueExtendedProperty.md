@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldersinglevalueextendedproperty
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserContactFolderSingleValueExtendedProperty
 
 ## SYNOPSIS
-The collection of single-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
+Get singleValueExtendedProperties from users
 
 ## SYNTAX
 
@@ -35,11 +33,27 @@ Get-MgUserContactFolderSingleValueExtendedProperty -InputObject <IPersonalContac
 ```
 
 ## DESCRIPTION
-The collection of single-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
+Get singleValueExtendedProperties from users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -273,7 +287,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   - `[ContactFolderId <String>]`: key: id of contactFolder
   - `[ContactFolderId1 <String>]`: key: id of contactFolder
   - `[ContactId <String>]`: key: id of contact
