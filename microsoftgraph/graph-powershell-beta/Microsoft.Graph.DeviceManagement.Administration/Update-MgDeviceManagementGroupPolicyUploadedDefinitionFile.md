@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementgrouppolicyuploadeddefinitionfile
@@ -466,7 +466,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphGroupPolicyUploadedDefinitionFile>: The entity represents an ADMX (Administrative Template) XML file uploaded by Administrator. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
+BODYPARAMETER `<IMicrosoftGraphGroupPolicyUploadedDefinitionFile>`: The entity represents an ADMX (Administrative Template) XML file uploaded by Administrator. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
     - `[Id <String>]`: 
@@ -540,7 +540,7 @@ BODYPARAMETER <IMicrosoftGraphGroupPolicyUploadedDefinitionFile>: The entity rep
   - `[Status <GroupPolicyUploadedDefinitionFileStatus?>]`: Type of Group Policy uploaded definition file status.
   - `[UploadDateTime <DateTime?>]`: The uploaded time of the uploaded ADMX file.
 
-DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition[]>: The group policy definitions associated with the file.
+DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition\[]>: The group policy definitions associated with the file.
   - `[Id <String>]`: 
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -586,21 +586,21 @@ DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition[]>: The group policy definitio
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
   - `[Version <String>]`: Setting definition version
 
-GROUPPOLICYOPERATIONS <IMicrosoftGraphGroupPolicyOperation[]>: The list of operations on the uploaded ADMX file.
+GROUPPOLICYOPERATIONS <IMicrosoftGraphGroupPolicyOperation\[]>: The list of operations on the uploaded ADMX file.
   - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
   - `[OperationStatus <GroupPolicyOperationStatus?>]`: Type of Group Policy operation status.
   - `[OperationType <GroupPolicyOperationType?>]`: Type of Group Policy operation.
   - `[StatusDetails <String>]`: The group policy operation status detail.
 
-GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>: The list of ADML files associated with the uploaded ADMX file.
+GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile\[]>: The list of ADML files associated with the uploaded ADMX file.
   - `[Content <Byte[]>]`: The contents of the uploaded ADML file.
   - `[FileName <String>]`: The file name of the uploaded ADML file.
   - `[Id <String>]`: Key of the entity.
   - `[LanguageCode <String>]`: The language code of the uploaded ADML file.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
