@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgofficeconfiguration
@@ -195,7 +195,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphOfficeConfiguration>: officeConfiguration
+BODYPARAMETER `<IMicrosoftGraphOfficeConfiguration>`: officeConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientConfigurations <IMicrosoftGraphOfficeClientConfiguration[]>]`: List of office Client configuration.
     - `[Id <String>]`: 
@@ -225,7 +225,7 @@ BODYPARAMETER <IMicrosoftGraphOfficeConfiguration>: officeConfiguration
   - `[TenantCheckinStatuses <IMicrosoftGraphOfficeClientCheckinStatus[]>]`: List of office Client check-in status.
   - `[TenantUserCheckinSummary <IMicrosoftGraphOfficeUserCheckinSummary>]`: officeUserCheckinSummary
 
-CLIENTCONFIGURATIONS <IMicrosoftGraphOfficeClientConfiguration[]>: List of office Client configuration.
+CLIENTCONFIGURATIONS <IMicrosoftGraphOfficeClientConfiguration\[]>: List of office Client configuration.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>]`: The list of group assignments for the policy.
     - `[Id <String>]`: 
@@ -251,7 +251,7 @@ CLIENTCONFIGURATIONS <IMicrosoftGraphOfficeClientConfiguration[]>: List of offic
     - `[SucceededUserCount <Int32?>]`: Total successful user check ins for the last 3 months.
   - `[UserPreferencePayload <Byte[]>]`: Preference settings JSON string in binary format, these values can be overridden by the user.
 
-TENANTCHECKINSTATUSES <IMicrosoftGraphOfficeClientCheckinStatus[]>: List of office Client check-in status.
+TENANTCHECKINSTATUSES <IMicrosoftGraphOfficeClientCheckinStatus\[]>: List of office Client check-in status.
   - `[AppliedPolicies <String[]>]`: List of policies delivered to the device as last checkin.
   - `[CheckinDateTime <DateTime?>]`: Last device check-in time in UTC.
   - `[DeviceName <String>]`: Device name trying to check-in.
@@ -262,7 +262,7 @@ TENANTCHECKINSTATUSES <IMicrosoftGraphOfficeClientCheckinStatus[]>: List of offi
   - `[UserPrincipalName <String>]`: User principal name using the device.
   - `[WasSuccessful <Boolean?>]`: If the last checkin was successful.
 
-TENANTUSERCHECKINSUMMARY <IMicrosoftGraphOfficeUserCheckinSummary>: officeUserCheckinSummary
+TENANTUSERCHECKINSUMMARY `<IMicrosoftGraphOfficeUserCheckinSummary>`: officeUserCheckinSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[FailedUserCount <Int32?>]`: Total failed user check ins for the last 3 months.
   - `[SucceededUserCount <Int32?>]`: Total successful user check ins for the last 3 months.
