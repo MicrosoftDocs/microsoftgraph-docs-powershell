@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancial
@@ -28,6 +28,24 @@ Update-MgFinancial -BodyParameter <IMicrosoftGraphFinancials> [-PassThru] [-What
 Update financials
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -142,12 +160,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
+BODYPARAMETER <IMicrosoftGraphFinancials>: financials
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Companies <IMicrosoftGraphCompany[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Accounts <IMicrosoftGraphAccount[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Blocked <Boolean?>]`: 
       - `[Category <String>]`: 
       - `[DisplayName <String>]`: 
@@ -155,7 +173,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[Number <String>]`: 
       - `[SubCategory <String>]`: 
     - `[AgedAccountsPayable <IMicrosoftGraphAgedAccountsPayable[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[AgedAsOfDate <DateTime?>]`: 
       - `[BalanceDue <Decimal?>]`: 
       - `[CurrencyCode <String>]`: 
@@ -167,7 +185,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[PeriodLengthFilter <String>]`: 
       - `[VendorNumber <String>]`: 
     - `[AgedAccountsReceivable <IMicrosoftGraphAgedAccountsReceivable[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[AgedAsOfDate <DateTime?>]`: 
       - `[BalanceDue <Decimal?>]`: 
       - `[CurrencyCode <String>]`: 
@@ -180,7 +198,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[PeriodLengthFilter <String>]`: 
     - `[BusinessProfileId <String>]`: 
     - `[CompanyInformation <IMicrosoftGraphCompanyInformation1[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[City <String>]`: 
@@ -200,13 +218,13 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[TaxRegistrationNumber <String>]`: 
       - `[Website <String>]`: 
     - `[CountriesRegions <IMicrosoftGraphCountryRegion[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[AddressFormat <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Currencies <IMicrosoftGraphCurrency[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[AmountDecimalPlaces <String>]`: 
       - `[AmountRoundingPrecision <Decimal?>]`: 
       - `[Code <String>]`: 
@@ -214,13 +232,13 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Symbol <String>]`: 
     - `[CustomerPaymentJournals <IMicrosoftGraphCustomerPaymentJournal[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[BalancingAccountId <String>]`: 
       - `[BalancingAccountNumber <String>]`: 
       - `[Code <String>]`: 
       - `[CustomerPayments <IMicrosoftGraphCustomerPayment[]>]`: 
-        - `[Id <String>]`: Read-only.
+        - `[Id <String>]`: 
         - `[Amount <Decimal?>]`: 
         - `[AppliesToInvoiceId <String>]`: 
         - `[AppliesToInvoiceNumber <String>]`: 
@@ -228,7 +246,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
         - `[ContactId <String>]`: 
         - `[Customer <IMicrosoftGraphCustomer>]`: customer
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: Read-only.
+          - `[Id <String>]`: 
           - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
           - `[Blocked <String>]`: 
           - `[Currency <IMicrosoftGraphCurrency>]`: currency
@@ -240,14 +258,14 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
           - `[Number <String>]`: 
           - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: Read-only.
+            - `[Id <String>]`: 
             - `[Code <String>]`: 
             - `[DisplayName <String>]`: 
             - `[LastModifiedDateTime <DateTime?>]`: 
           - `[PaymentMethodId <String>]`: 
           - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: Read-only.
+            - `[Id <String>]`: 
             - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
             - `[Code <String>]`: 
             - `[DiscountDateCalculation <String>]`: 
@@ -258,14 +276,14 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
           - `[PaymentTermsId <String>]`: 
           - `[PhoneNumber <String>]`: 
           - `[Picture <IMicrosoftGraphPicture[]>]`: 
-            - `[Id <String>]`: Read-only.
+            - `[Id <String>]`: 
             - `[Content <Byte[]>]`: 
             - `[ContentType <String>]`: 
             - `[Height <Int32?>]`: 
             - `[Width <Int32?>]`: 
           - `[ShipmentMethod <IMicrosoftGraphShipmentMethod>]`: shipmentMethod
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: Read-only.
+            - `[Id <String>]`: 
             - `[Code <String>]`: 
             - `[DisplayName <String>]`: 
             - `[LastModifiedDateTime <DateTime?>]`: 
@@ -290,19 +308,19 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
     - `[CustomerPayments <IMicrosoftGraphCustomerPayment[]>]`: 
     - `[Customers <IMicrosoftGraphCustomer[]>]`: 
     - `[DimensionValues <IMicrosoftGraphDimensionValue[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Dimensions <IMicrosoftGraphDimension[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Code <String>]`: 
       - `[DimensionValues <IMicrosoftGraphDimensionValue[]>]`: 
       - `[DisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: 
     - `[Employees <IMicrosoftGraphEmployee[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
       - `[BirthDate <DateTime?>]`: 
       - `[DisplayName <String>]`: 
@@ -322,7 +340,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[Surname <String>]`: 
       - `[TerminationDate <DateTime?>]`: 
     - `[GeneralLedgerEntries <IMicrosoftGraphGeneralLedgerEntry[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[AccountId <String>]`: 
       - `[AccountNumber <String>]`: 
@@ -334,12 +352,12 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[PostingDate <DateTime?>]`: 
     - `[ItemCategories <IMicrosoftGraphItemCategory[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Items <IMicrosoftGraphItem[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[BaseUnitOfMeasureId <String>]`: 
       - `[Blocked <Boolean?>]`: 
       - `[DisplayName <String>]`: 
@@ -358,7 +376,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[UnitCost <Decimal?>]`: 
       - `[UnitPrice <Decimal?>]`: 
     - `[JournalLines <IMicrosoftGraphJournalLine[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[AccountId <String>]`: 
       - `[AccountNumber <String>]`: 
@@ -372,7 +390,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[LineNumber <Int32?>]`: 
       - `[PostingDate <DateTime?>]`: 
     - `[Journals <IMicrosoftGraphJournal[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[BalancingAccountId <String>]`: 
       - `[BalancingAccountNumber <String>]`: 
@@ -385,7 +403,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
     - `[PaymentTerms <IMicrosoftGraphPaymentTerm[]>]`: 
     - `[Picture <IMicrosoftGraphPicture[]>]`: 
     - `[PurchaseInvoiceLines <IMicrosoftGraphPurchaseInvoiceLine[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[AccountId <String>]`: 
       - `[AmountExcludingTax <Decimal?>]`: 
@@ -410,7 +428,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[TotalTaxAmount <Decimal?>]`: 
       - `[UnitCost <Decimal?>]`: 
     - `[PurchaseInvoices <IMicrosoftGraphPurchaseInvoice[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[BuyFromAddress <IMicrosoftGraphPostalAddressType>]`: postalAddressType
       - `[Currency <IMicrosoftGraphCurrency>]`: currency
       - `[CurrencyCode <String>]`: 
@@ -437,7 +455,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[TotalTaxAmount <Decimal?>]`: 
       - `[Vendor <IMicrosoftGraphVendor>]`: vendor
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: Read-only.
+        - `[Id <String>]`: 
         - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
         - `[Balance <Decimal?>]`: 
         - `[Blocked <String>]`: 
@@ -462,7 +480,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[VendorName <String>]`: 
       - `[VendorNumber <String>]`: 
     - `[SalesCreditMemoLines <IMicrosoftGraphSalesCreditMemoLine[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[AccountId <String>]`: 
       - `[AmountExcludingTax <Decimal?>]`: 
@@ -488,7 +506,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[UnitOfMeasureId <String>]`: 
       - `[UnitPrice <Decimal?>]`: 
     - `[SalesCreditMemos <IMicrosoftGraphSalesCreditMemo[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[BillToCustomerId <String>]`: 
       - `[BillToCustomerNumber <String>]`: 
       - `[BillToName <String>]`: 
@@ -522,7 +540,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[TotalAmountIncludingTax <Decimal?>]`: 
       - `[TotalTaxAmount <Decimal?>]`: 
     - `[SalesInvoiceLines <IMicrosoftGraphSalesInvoiceLine[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[AccountId <String>]`: 
       - `[AmountExcludingTax <Decimal?>]`: 
@@ -548,7 +566,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[UnitOfMeasureId <String>]`: 
       - `[UnitPrice <Decimal?>]`: 
     - `[SalesInvoices <IMicrosoftGraphSalesInvoice[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[BillToCustomerId <String>]`: 
       - `[BillToCustomerNumber <String>]`: 
       - `[BillToName <String>]`: 
@@ -588,7 +606,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[TotalAmountIncludingTax <Decimal?>]`: 
       - `[TotalTaxAmount <Decimal?>]`: 
     - `[SalesOrderLines <IMicrosoftGraphSalesOrderLine[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[AccountId <String>]`: 
       - `[AmountExcludingTax <Decimal?>]`: 
@@ -618,7 +636,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[UnitOfMeasureId <String>]`: 
       - `[UnitPrice <Decimal?>]`: 
     - `[SalesOrders <IMicrosoftGraphSalesOrder[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[BillToCustomerId <String>]`: 
       - `[BillToCustomerNumber <String>]`: 
       - `[BillToName <String>]`: 
@@ -655,7 +673,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[TotalAmountIncludingTax <Decimal?>]`: 
       - `[TotalTaxAmount <Decimal?>]`: 
     - `[SalesQuoteLines <IMicrosoftGraphSalesQuoteLine[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[AccountId <String>]`: 
       - `[AmountExcludingTax <Decimal?>]`: 
@@ -679,7 +697,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[UnitOfMeasureId <String>]`: 
       - `[UnitPrice <Decimal?>]`: 
     - `[SalesQuotes <IMicrosoftGraphSalesQuote[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[AcceptedDate <DateTime?>]`: 
       - `[BillToCustomerId <String>]`: 
       - `[BillToCustomerNumber <String>]`: 
@@ -719,29 +737,29 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
     - `[ShipmentMethods <IMicrosoftGraphShipmentMethod[]>]`: 
     - `[SystemVersion <String>]`: 
     - `[TaxAreas <IMicrosoftGraphTaxArea[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[TaxType <String>]`: 
     - `[TaxGroups <IMicrosoftGraphTaxGroup[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[TaxType <String>]`: 
     - `[UnitsOfMeasure <IMicrosoftGraphUnitOfMeasure[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
       - `[InternationalStandardCode <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Vendors <IMicrosoftGraphVendor[]>]`: 
 
-COMPANIES <IMicrosoftGraphCompany\[]>: .
-  - `[Id <String>]`: Read-only.
+COMPANIES <IMicrosoftGraphCompany[]>: .
+  - `[Id <String>]`: 
   - `[Accounts <IMicrosoftGraphAccount[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Blocked <Boolean?>]`: 
     - `[Category <String>]`: 
     - `[DisplayName <String>]`: 
@@ -749,7 +767,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[Number <String>]`: 
     - `[SubCategory <String>]`: 
   - `[AgedAccountsPayable <IMicrosoftGraphAgedAccountsPayable[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AgedAsOfDate <DateTime?>]`: 
     - `[BalanceDue <Decimal?>]`: 
     - `[CurrencyCode <String>]`: 
@@ -761,7 +779,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[PeriodLengthFilter <String>]`: 
     - `[VendorNumber <String>]`: 
   - `[AgedAccountsReceivable <IMicrosoftGraphAgedAccountsReceivable[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AgedAsOfDate <DateTime?>]`: 
     - `[BalanceDue <Decimal?>]`: 
     - `[CurrencyCode <String>]`: 
@@ -774,7 +792,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[PeriodLengthFilter <String>]`: 
   - `[BusinessProfileId <String>]`: 
   - `[CompanyInformation <IMicrosoftGraphCompanyInformation1[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[City <String>]`: 
@@ -794,13 +812,13 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[TaxRegistrationNumber <String>]`: 
     - `[Website <String>]`: 
   - `[CountriesRegions <IMicrosoftGraphCountryRegion[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AddressFormat <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Currencies <IMicrosoftGraphCurrency[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AmountDecimalPlaces <String>]`: 
     - `[AmountRoundingPrecision <Decimal?>]`: 
     - `[Code <String>]`: 
@@ -808,13 +826,13 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Symbol <String>]`: 
   - `[CustomerPaymentJournals <IMicrosoftGraphCustomerPaymentJournal[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[BalancingAccountId <String>]`: 
     - `[BalancingAccountNumber <String>]`: 
     - `[Code <String>]`: 
     - `[CustomerPayments <IMicrosoftGraphCustomerPayment[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Amount <Decimal?>]`: 
       - `[AppliesToInvoiceId <String>]`: 
       - `[AppliesToInvoiceNumber <String>]`: 
@@ -822,7 +840,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
       - `[ContactId <String>]`: 
       - `[Customer <IMicrosoftGraphCustomer>]`: customer
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: Read-only.
+        - `[Id <String>]`: 
         - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
         - `[Blocked <String>]`: 
         - `[Currency <IMicrosoftGraphCurrency>]`: currency
@@ -834,14 +852,14 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
         - `[Number <String>]`: 
         - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: Read-only.
+          - `[Id <String>]`: 
           - `[Code <String>]`: 
           - `[DisplayName <String>]`: 
           - `[LastModifiedDateTime <DateTime?>]`: 
         - `[PaymentMethodId <String>]`: 
         - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: Read-only.
+          - `[Id <String>]`: 
           - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
           - `[Code <String>]`: 
           - `[DiscountDateCalculation <String>]`: 
@@ -852,14 +870,14 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
         - `[PaymentTermsId <String>]`: 
         - `[PhoneNumber <String>]`: 
         - `[Picture <IMicrosoftGraphPicture[]>]`: 
-          - `[Id <String>]`: Read-only.
+          - `[Id <String>]`: 
           - `[Content <Byte[]>]`: 
           - `[ContentType <String>]`: 
           - `[Height <Int32?>]`: 
           - `[Width <Int32?>]`: 
         - `[ShipmentMethod <IMicrosoftGraphShipmentMethod>]`: shipmentMethod
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: Read-only.
+          - `[Id <String>]`: 
           - `[Code <String>]`: 
           - `[DisplayName <String>]`: 
           - `[LastModifiedDateTime <DateTime?>]`: 
@@ -884,19 +902,19 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
   - `[CustomerPayments <IMicrosoftGraphCustomerPayment[]>]`: 
   - `[Customers <IMicrosoftGraphCustomer[]>]`: 
   - `[DimensionValues <IMicrosoftGraphDimensionValue[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Dimensions <IMicrosoftGraphDimension[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Code <String>]`: 
     - `[DimensionValues <IMicrosoftGraphDimensionValue[]>]`: 
     - `[DisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: 
   - `[Employees <IMicrosoftGraphEmployee[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[BirthDate <DateTime?>]`: 
     - `[DisplayName <String>]`: 
@@ -916,7 +934,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[Surname <String>]`: 
     - `[TerminationDate <DateTime?>]`: 
   - `[GeneralLedgerEntries <IMicrosoftGraphGeneralLedgerEntry[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[AccountId <String>]`: 
     - `[AccountNumber <String>]`: 
@@ -928,12 +946,12 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[PostingDate <DateTime?>]`: 
   - `[ItemCategories <IMicrosoftGraphItemCategory[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Items <IMicrosoftGraphItem[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[BaseUnitOfMeasureId <String>]`: 
     - `[Blocked <Boolean?>]`: 
     - `[DisplayName <String>]`: 
@@ -952,7 +970,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[UnitCost <Decimal?>]`: 
     - `[UnitPrice <Decimal?>]`: 
   - `[JournalLines <IMicrosoftGraphJournalLine[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[AccountId <String>]`: 
     - `[AccountNumber <String>]`: 
@@ -966,7 +984,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[LineNumber <Int32?>]`: 
     - `[PostingDate <DateTime?>]`: 
   - `[Journals <IMicrosoftGraphJournal[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[BalancingAccountId <String>]`: 
     - `[BalancingAccountNumber <String>]`: 
@@ -979,7 +997,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
   - `[PaymentTerms <IMicrosoftGraphPaymentTerm[]>]`: 
   - `[Picture <IMicrosoftGraphPicture[]>]`: 
   - `[PurchaseInvoiceLines <IMicrosoftGraphPurchaseInvoiceLine[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[AccountId <String>]`: 
     - `[AmountExcludingTax <Decimal?>]`: 
@@ -1004,7 +1022,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[TotalTaxAmount <Decimal?>]`: 
     - `[UnitCost <Decimal?>]`: 
   - `[PurchaseInvoices <IMicrosoftGraphPurchaseInvoice[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[BuyFromAddress <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[Currency <IMicrosoftGraphCurrency>]`: currency
     - `[CurrencyCode <String>]`: 
@@ -1031,7 +1049,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[TotalTaxAmount <Decimal?>]`: 
     - `[Vendor <IMicrosoftGraphVendor>]`: vendor
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
       - `[Balance <Decimal?>]`: 
       - `[Blocked <String>]`: 
@@ -1056,7 +1074,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[VendorName <String>]`: 
     - `[VendorNumber <String>]`: 
   - `[SalesCreditMemoLines <IMicrosoftGraphSalesCreditMemoLine[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[AccountId <String>]`: 
     - `[AmountExcludingTax <Decimal?>]`: 
@@ -1082,7 +1100,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[UnitOfMeasureId <String>]`: 
     - `[UnitPrice <Decimal?>]`: 
   - `[SalesCreditMemos <IMicrosoftGraphSalesCreditMemo[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[BillToCustomerId <String>]`: 
     - `[BillToCustomerNumber <String>]`: 
     - `[BillToName <String>]`: 
@@ -1116,7 +1134,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[TotalAmountIncludingTax <Decimal?>]`: 
     - `[TotalTaxAmount <Decimal?>]`: 
   - `[SalesInvoiceLines <IMicrosoftGraphSalesInvoiceLine[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[AccountId <String>]`: 
     - `[AmountExcludingTax <Decimal?>]`: 
@@ -1142,7 +1160,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[UnitOfMeasureId <String>]`: 
     - `[UnitPrice <Decimal?>]`: 
   - `[SalesInvoices <IMicrosoftGraphSalesInvoice[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[BillToCustomerId <String>]`: 
     - `[BillToCustomerNumber <String>]`: 
     - `[BillToName <String>]`: 
@@ -1182,7 +1200,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[TotalAmountIncludingTax <Decimal?>]`: 
     - `[TotalTaxAmount <Decimal?>]`: 
   - `[SalesOrderLines <IMicrosoftGraphSalesOrderLine[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[AccountId <String>]`: 
     - `[AmountExcludingTax <Decimal?>]`: 
@@ -1212,7 +1230,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[UnitOfMeasureId <String>]`: 
     - `[UnitPrice <Decimal?>]`: 
   - `[SalesOrders <IMicrosoftGraphSalesOrder[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[BillToCustomerId <String>]`: 
     - `[BillToCustomerNumber <String>]`: 
     - `[BillToName <String>]`: 
@@ -1249,7 +1267,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[TotalAmountIncludingTax <Decimal?>]`: 
     - `[TotalTaxAmount <Decimal?>]`: 
   - `[SalesQuoteLines <IMicrosoftGraphSalesQuoteLine[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[AccountId <String>]`: 
     - `[AmountExcludingTax <Decimal?>]`: 
@@ -1273,7 +1291,7 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
     - `[UnitOfMeasureId <String>]`: 
     - `[UnitPrice <Decimal?>]`: 
   - `[SalesQuotes <IMicrosoftGraphSalesQuote[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AcceptedDate <DateTime?>]`: 
     - `[BillToCustomerId <String>]`: 
     - `[BillToCustomerNumber <String>]`: 
@@ -1313,19 +1331,19 @@ COMPANIES <IMicrosoftGraphCompany\[]>: .
   - `[ShipmentMethods <IMicrosoftGraphShipmentMethod[]>]`: 
   - `[SystemVersion <String>]`: 
   - `[TaxAreas <IMicrosoftGraphTaxArea[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[TaxType <String>]`: 
   - `[TaxGroups <IMicrosoftGraphTaxGroup[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[TaxType <String>]`: 
   - `[UnitsOfMeasure <IMicrosoftGraphUnitOfMeasure[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
     - `[InternationalStandardCode <String>]`: 
