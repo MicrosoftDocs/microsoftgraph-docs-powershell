@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicewindowprotectionstate
@@ -56,6 +56,24 @@ Update-MgUserManagedDeviceWindowProtectionState -InputObject <IDevicesCorporateM
 Update the navigation property windowsProtectionState in users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -532,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
+BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>: Device protection status entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AntiMalwareVersion <String>]`: Current anti malware version
@@ -568,7 +586,7 @@ BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection statu
   - `[SignatureVersion <String>]`: Current malware definitions version
   - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
-DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState\[]>: Device malware list
+DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState[]>: Device malware list
   - `[Id <String>]`: 
   - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
   - `[Category <WindowsMalwareCategory?>]`: Malware category id
@@ -581,7 +599,7 @@ DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState\[]>: Device malwa
   - `[State <WindowsMalwareState?>]`: Malware current status
   - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
