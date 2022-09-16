@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcalloperation
@@ -42,6 +42,24 @@ New-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
 Create new navigation property to operations for communications
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -219,7 +237,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCommsOperation>`: commsOperation
+BODYPARAMETER <IMicrosoftGraphCommsOperation>: commsOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ClientContext <String>]`: Unique Client Context string. Max limit is 256 chars.
@@ -230,7 +248,7 @@ BODYPARAMETER `<IMicrosoftGraphCommsOperation>`: commsOperation
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: operationStatus
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
@@ -246,7 +264,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
+RESULTINFO <IMicrosoftGraphResultInfo>: resultInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <Int32?>]`: The result code.
   - `[Message <String>]`: The message.
