@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mguseroutlooktaskgroup
@@ -42,6 +42,24 @@ New-MgUserOutlookTaskGroup -InputObject <IUsersIdentity> -BodyParameter <IMicros
 Create new navigation property to taskGroups for users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -250,7 +268,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOutlookTaskGroup>`: outlookTaskGroup
+BODYPARAMETER <IMicrosoftGraphOutlookTaskGroup>: outlookTaskGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ChangeKey <String>]`: The version of the task group.
@@ -323,7 +341,7 @@ BODYPARAMETER `<IMicrosoftGraphOutlookTaskGroup>`: outlookTaskGroup
       - `[Status <String>]`: taskStatus
       - `[Subject <String>]`: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession
@@ -345,7 +363,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
 
-TASKFOLDERS <IMicrosoftGraphOutlookTaskFolder\[]>: The collection of task folders in the task group. Read-only. Nullable.
+TASKFOLDERS <IMicrosoftGraphOutlookTaskFolder[]>: The collection of task folders in the task group. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[ChangeKey <String>]`: The version of the task folder.
   - `[IsDefaultFolder <Boolean?>]`: True if the folder is the default task folder.
