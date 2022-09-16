@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationpasswordlessmicrosoftauthenticatormethod
@@ -46,6 +46,24 @@ New-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod -InputObject <I
 Create new navigation property to passwordlessMicrosoftAuthenticatorMethods for users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -237,7 +255,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod>`: passwordlessMicrosoftAuthenticatorAuthenticationMethod
+BODYPARAMETER <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod>: passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: 
@@ -330,7 +348,7 @@ BODYPARAMETER `<IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationM
       - `[State <String>]`: usageRightState
   - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
 
-DEVICE `<IMicrosoftGraphDevice1>`: device
+DEVICE <IMicrosoftGraphDevice1>: device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
@@ -417,7 +435,7 @@ DEVICE `<IMicrosoftGraphDevice1>`: device
     - `[ServiceIdentifier <String>]`: Identifier of the service corresponding to the usage right.
     - `[State <String>]`: usageRightState
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference

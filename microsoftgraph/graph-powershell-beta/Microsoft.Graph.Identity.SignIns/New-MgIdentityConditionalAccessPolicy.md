@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
@@ -32,6 +32,100 @@ New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditional
 Create new navigation property to policies for identity
 
 ## EXAMPLES
+
+### Example 1: Require MFA to access Exchange Online outside of trusted locations
+```powershell
+Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+
+
+$params = @{
+  DisplayName = "Access to EXO requires MFA"
+  State = "enabled"
+  Conditions = @{
+    ClientAppTypes = @(
+      "mobileAppsAndDesktopClients"
+      "browser"
+    )
+    Applications = @{
+      IncludeApplications = @(
+        "b457cbac-03cb-4b15-9eef-79f24f8d3247"
+      )
+    }
+    Users = @{
+      IncludeGroups = @(
+        "f39e2655-3fae-43ad-94e2-c2b593cfc473"
+       )
+    }
+    Locations = @{
+      IncludeLocations = @(
+        "All"
+      )
+      ExcludeLocations = @(
+        "AllTrusted"
+      )
+    }
+   }
+   GrantControls = @{
+     Operator = "OR"
+     BuiltInControls = @(
+       "mfa"
+     )
+   }
+}
+
+New-MgIdentityConditionalAccessPolicy -BodyParameter $params
+
+Id                                   CreatedDateTime      Description DisplayName                ModifiedDateTime State
+--                                   ---------------      ----------- -----------                ---------------- -----
+1c9afd06-3f59-464e-a6d9-193d99764a01 7/29/2022 9:46:18 AM             Access to EXO requires MFA                  enabled
+```
+
+This example shows a request to require multi-factor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.
+
+### Example 2: Block access to Exchange Online from non-trusted regions
+```powershell
+Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+
+$params = @{
+  DisplayName = "Block access to EXO non-trusted regions."
+  State = "enabled"
+  Conditions = @{
+    ClientAppTypes = @(
+      "all"
+    )
+    Applications = @{
+      IncludeApplications = @(
+        "b457cbac-03cb-4b15-9eef-79f24f8d3247"
+      )
+    }
+    Users = @{
+      IncludeGroups = @(
+        "f39e2655-3fae-43ad-94e2-c2b593cfc473"
+      )
+    }
+    Locations = @{
+      IncludeLocations = @(
+        "0824dbaf-6277-4db0-8112-b29fd356f2c4"
+      )
+    }
+  }
+  GrantControls = @{
+    Operator = "OR"
+    BuiltInControls = @(
+      "block"
+    )
+    }
+  }
+
+New-MgIdentityConditionalAccessPolicy -BodyParameter $params
+
+Id                                   CreatedDateTime       Description DisplayName                              ModifiedDateTime State
+--                                   ---------------       ----------- -----------                              ---------------- -----
+61c7530f-5c1d-44b2-a972-4ae658b7a9ac 7/29/2022 10:03:30 AM             Block access to EXO non-trusted regions.                  enabled
+```
+
+This example shows a request to block access to Exchange Online from non-trusted/unknown regions.
+This example assumes that the named location `0824dbaf-6277-4db0-8112-b29fd356f2c4` corresponds to a list of non-trusted/unknown regions.
 
 ## PARAMETERS
 
@@ -257,7 +351,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPolicy
+BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy1>: conditionalAccessPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]`: conditionalAccessConditionSet
@@ -342,7 +436,7 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPoli
       - `[Value <Int32?>]`: The number of days or hours.
   - `[State <String>]`: conditionalAccessPolicyState
 
-CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet1>`: conditionalAccessConditionSet
+CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet1>: conditionalAccessConditionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphConditionalAccessApplications>]`: conditionalAccessApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -389,14 +483,14 @@ CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet1>`: conditionalAccessC
     - `[IncludeRoles <String[]>]`: Role IDs in scope of policy unless explicitly excluded, or All.
     - `[IncludeUsers <String[]>]`: User IDs in scope of policy unless explicitly excluded, or None or All or GuestsOrExternalUsers.
 
-GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls>`: conditionalAccessGrantControls
+GRANTCONTROLS <IMicrosoftGraphConditionalAccessGrantControls>: conditionalAccessGrantControls
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BuiltInControls <String[]>]`: List of values of built-in controls required by the policy. Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
   - `[CustomAuthenticationFactors <String[]>]`: List of custom controls IDs required by the policy. To learn more about custom control, see Custom controls (preview).
   - `[Operator <String>]`: Defines the relationship of the grant controls. Possible values: AND, OR.
   - `[TermsOfUse <String[]>]`: List of terms of use IDs required by the policy.
 
-SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls1>`: conditionalAccessSessionControls
+SESSIONCONTROLS <IMicrosoftGraphConditionalAccessSessionControls1>: conditionalAccessSessionControls
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]`: applicationEnforcedRestrictionsSessionControl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
