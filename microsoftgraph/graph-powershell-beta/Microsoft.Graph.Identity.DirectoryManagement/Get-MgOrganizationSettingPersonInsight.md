@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationsettingpersoninsight
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOrganizationSettingPersonInsight
 
 ## SYNOPSIS
-Get peopleInsights from organization
+Contains the properties that are configured by an administrator for the visibility of a list of people relevant and working with a user in Microsoft 365.
+List peopleInsights returns the settings to display or return people insights in an organization.
 
 ## SYNTAX
 
@@ -25,9 +26,28 @@ Get-MgOrganizationSettingPersonInsight -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Get peopleInsights from organization
+Contains the properties that are configured by an administrator for the visibility of a list of people relevant and working with a user in Microsoft 365.
+List peopleInsights returns the settings to display or return people insights in an organization.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -110,7 +130,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet
