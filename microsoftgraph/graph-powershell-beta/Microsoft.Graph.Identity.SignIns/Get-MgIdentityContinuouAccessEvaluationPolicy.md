@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentitycontinuouaccessevaluationpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityContinuouAccessEvaluationPolicy
 
 ## SYNOPSIS
-Get continuousAccessEvaluationPolicy from identity
+Represents entry point for continuous access evaluation policy.
 
 ## SYNTAX
 
@@ -18,9 +18,27 @@ Get-MgIdentityContinuouAccessEvaluationPolicy [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get continuousAccessEvaluationPolicy from identity
+Represents entry point for continuous access evaluation policy.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgoauth2permissiongrant
@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgOauth2PermissionGrant
 
 ## SYNOPSIS
-Create oAuth2PermissionGrant (a delegated permission grant)
+Create a delegated permission grant, represented by an oAuth2PermissionGrant object.
+A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
 ## SYNTAX
 
@@ -26,9 +27,28 @@ New-MgOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant
 ```
 
 ## DESCRIPTION
-Create oAuth2PermissionGrant (a delegated permission grant)
+Create a delegated permission grant, represented by an oAuth2PermissionGrant object.
+A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -249,7 +269,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOAuth2PermissionGrant1>`: oAuth2PermissionGrant
+BODYPARAMETER <IMicrosoftGraphOAuth2PermissionGrant1>: oAuth2PermissionGrant
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ClientId <String>]`: The id of the client service principal for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required. Supports $filter (eq only).

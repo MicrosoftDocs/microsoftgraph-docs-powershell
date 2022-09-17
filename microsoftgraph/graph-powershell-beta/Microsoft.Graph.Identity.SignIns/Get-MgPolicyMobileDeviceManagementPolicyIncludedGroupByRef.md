@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicymobiledevicemanagementpolicyincludedgroupbyref
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef
 
 ## SYNOPSIS
-Get ref of includedGroups from policies
+Azure AD groups under the scope of the mobility management application if appliesTo is selected
 
 ## SYNTAX
 
@@ -19,9 +19,27 @@ Get-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPo
 ```
 
 ## DESCRIPTION
-Get ref of includedGroups from policies
+Azure AD groups under the scope of the mobility management application if appliesTo is selected
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
