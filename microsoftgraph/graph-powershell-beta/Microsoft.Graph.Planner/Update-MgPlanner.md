@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplanner
@@ -231,7 +231,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPlanner>: planner
+BODYPARAMETER `<IMicrosoftGraphPlanner>`: planner
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Read-only. Nullable. Returns a collection of the specified buckets
@@ -362,7 +362,7 @@ BODYPARAMETER <IMicrosoftGraphPlanner>: planner
     - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Retrieves the plans contained by the plannerRoster.
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. Returns a collection of the specified tasks
 
-BUCKETS <IMicrosoftGraphPlannerBucket1[]>: Read-only. Nullable. Returns a collection of the specified buckets
+BUCKETS <IMicrosoftGraphPlannerBucket1\[]>: Read-only. Nullable. Returns a collection of the specified buckets
   - `[Id <String>]`: 
   - `[Name <String>]`: Name of the bucket.
   - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
@@ -432,7 +432,7 @@ BUCKETS <IMicrosoftGraphPlannerBucket1[]>: Read-only. Nullable. Returns a collec
     - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Title <String>]`: Title of the task.
 
-PLANS <IMicrosoftGraphPlannerPlan1[]>: Read-only. Nullable. Returns a collection of the specified plans
+PLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns a collection of the specified plans
   - `[Id <String>]`: 
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
     - `[Id <String>]`: 
@@ -550,7 +550,7 @@ PLANS <IMicrosoftGraphPlannerPlan1[]>: Read-only. Nullable. Returns a collection
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
   - `[Title <String>]`: Required. Title of the plan.
 
-ROSTERS <IMicrosoftGraphPlannerRoster[]>: Read-only. Nullable. Returns a collection of the specified rosters
+ROSTERS <IMicrosoftGraphPlannerRoster\[]>: Read-only. Nullable. Returns a collection of the specified rosters
   - `[Id <String>]`: 
   - `[Members <IMicrosoftGraphPlannerRosterMember[]>]`: Retrieves the members of the plannerRoster.
     - `[Id <String>]`: 
@@ -675,7 +675,7 @@ ROSTERS <IMicrosoftGraphPlannerRoster[]>: Read-only. Nullable. Returns a collect
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
     - `[Title <String>]`: Required. Title of the plan.
 
-TASKS <IMicrosoftGraphPlannerTask1[]>: Read-only. Nullable. Returns a collection of the specified tasks
+TASKS <IMicrosoftGraphPlannerTask1\[]>: Read-only. Nullable. Returns a collection of the specified tasks
   - `[Id <String>]`: 
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
