@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpage
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgSiteOnenoteSectionPage
 
 ## SYNOPSIS
-Get pages from sites
+The collection of pages in the section.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,9 +21,29 @@ Get-MgSiteOnenoteSectionPage -OnenoteSectionId <String> -SiteId <String> [-Expan
 ```
 
 ## DESCRIPTION
-Get pages from sites
+The collection of pages in the section.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
