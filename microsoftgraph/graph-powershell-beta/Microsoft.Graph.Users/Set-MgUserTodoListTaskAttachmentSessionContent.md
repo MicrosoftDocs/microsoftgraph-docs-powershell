@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/set-mgusertodolisttaskattachmentsessioncontent
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgUserTodoListTaskAttachmentSessionContent
 
 ## SYNOPSIS
-Update content for the navigation property attachmentSessions in users
+The content streams that are uploaded.
 
 ## SYNTAX
 
@@ -26,9 +26,27 @@ Set-MgUserTodoListTaskAttachmentSessionContent -InputObject <IUsersIdentity> [-B
 ```
 
 ## DESCRIPTION
-Update content for the navigation property attachmentSessions in users
+The content streams that are uploaded.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -205,7 +223,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession
