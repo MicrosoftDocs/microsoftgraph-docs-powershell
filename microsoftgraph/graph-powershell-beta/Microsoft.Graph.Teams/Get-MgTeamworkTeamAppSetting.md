@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkteamappsetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkTeamAppSetting
 
 ## SYNOPSIS
-Get teamsAppSettings from teamwork
+Represents tenant-wide settings for all Teams apps in the tenant.
 
 ## SYNTAX
 
@@ -17,9 +17,27 @@ Get-MgTeamworkTeamAppSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 ```
 
 ## DESCRIPTION
-Get teamsAppSettings from teamwork
+Represents tenant-wide settings for all Teams apps in the tenant.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
