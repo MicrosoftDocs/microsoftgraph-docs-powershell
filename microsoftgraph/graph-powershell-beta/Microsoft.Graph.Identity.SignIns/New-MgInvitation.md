@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mginvitation
@@ -313,7 +313,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphInvitation>: invitation
+BODYPARAMETER `<IMicrosoftGraphInvitation>`: invitation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[InviteRedeemUrl <String>]`: The URL the user can use to redeem their invitation. Read-only.
@@ -1195,7 +1195,7 @@ BODYPARAMETER <IMicrosoftGraphInvitation>: invitation
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4955,7 +4955,7 @@ BODYPARAMETER <IMicrosoftGraphInvitation>: invitation
   - `[SendInvitationMessage <Boolean?>]`: Indicates whether an email should be sent to the user being invited. The default is false.
   - `[Status <String>]`: The status of the invitation. Possible values: PendingAcceptance, Completed, InProgress, and Error
 
-INVITEDUSER <IMicrosoftGraphUser>: user
+INVITEDUSER `<IMicrosoftGraphUser>`: user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
@@ -5832,7 +5832,7 @@ INVITEDUSER <IMicrosoftGraphUser>: user
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9581,7 +9581,7 @@ INVITEDUSER <IMicrosoftGraphUser>: user
     - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device.
     - `[UserId <String>]`: UserId associated with this device registration record.
 
-INVITEDUSERMESSAGEINFO <IMicrosoftGraphInvitedUserMessageInfo>: invitedUserMessageInfo
+INVITEDUSERMESSAGEINFO `<IMicrosoftGraphInvitedUserMessageInfo>`: invitedUserMessageInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
