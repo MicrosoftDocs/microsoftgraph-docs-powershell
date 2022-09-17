@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipal
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipal
 
 ## SYNOPSIS
-Get servicePrincipal
+Retrieve the properties and relationships of a servicePrincipal object.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgServicePrincipal -InputObject <IApplicationsIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get servicePrincipal
+Retrieve the properties and relationships of a servicePrincipal object.
 
 ## EXAMPLES
 
@@ -369,7 +369,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
