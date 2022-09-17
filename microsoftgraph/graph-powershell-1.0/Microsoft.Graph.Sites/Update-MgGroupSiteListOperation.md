@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mggroupsitelistoperation
@@ -48,6 +48,24 @@ Update the navigation property operations in groups
 
 ## EXAMPLES
 
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -82,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The start time of the operation.
 
 ```yaml
 Type: DateTime
@@ -159,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActionDateTime
-.
+The time of the last action in the operation.
 
 ```yaml
 Type: DateTime
@@ -219,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-A unique identifier for the result.
+The unique identifier for the result.
 
 ```yaml
 Type: String
@@ -234,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceLocation
-.
+URI of the resource that the operation is performed on.
 
 ```yaml
 Type: String
@@ -294,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusDetail
-.
+Details about the status of the operation.
 
 ```yaml
 Type: String
@@ -309,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-Type of the operation.
+The type of the operation.
 
 ```yaml
 Type: String
@@ -373,13 +391,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRichLongRunningOperation>`: richLongRunningOperation
+BODYPARAMETER <IMicrosoftGraphRichLongRunningOperation>: richLongRunningOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[LastActionDateTime <DateTime?>]`: 
-  - `[ResourceLocation <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+  - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+  - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
   - `[Status <String>]`: longRunningOperationStatus
-  - `[StatusDetail <String>]`: 
+  - `[StatusDetail <String>]`: Details about the status of the operation.
   - `[Id <String>]`: 
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -397,10 +415,10 @@ BODYPARAMETER `<IMicrosoftGraphRichLongRunningOperation>`: richLongRunningOperat
     - `[Message <String>]`: A non-localized message for the developer.
     - `[Target <String>]`: The target of the error.
   - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
-  - `[ResourceId <String>]`: A unique identifier for the result.
-  - `[Type <String>]`: Type of the operation.
+  - `[ResourceId <String>]`: The unique identifier for the result.
+  - `[Type <String>]`: The type of the operation.
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <String>]`: Represents the error code.
   - `[Details <IMicrosoftGraphPublicErrorDetail[]>]`: Details of the error.
@@ -416,7 +434,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   - `[Message <String>]`: A non-localized message for the developer.
   - `[Target <String>]`: The target of the error.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
