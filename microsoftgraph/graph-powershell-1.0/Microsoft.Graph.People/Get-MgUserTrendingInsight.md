@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mgusertrendinginsight
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserTrendingInsight
 
 ## SYNOPSIS
-Get trending from users
+Calculated relationship identifying documents trending around a user.
+Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
+Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
 
 ## SYNTAX
 
@@ -32,9 +34,29 @@ Get-MgUserTrendingInsight -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get trending from users
+Calculated relationship identifying documents trending around a user.
+Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
+Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -253,7 +275,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
