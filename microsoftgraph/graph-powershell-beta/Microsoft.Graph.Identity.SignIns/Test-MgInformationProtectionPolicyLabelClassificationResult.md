@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/test-mginformationprotectionpolicylabelclassificationresult
@@ -163,7 +163,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsLeqqhcInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsLeqqhcInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClassificationResults <IMicrosoftGraphClassificationResult[]>]`: 
     - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
@@ -178,12 +178,12 @@ BODYPARAMETER <IPathsLeqqhcInformationprotectionPolicyLabelsMicrosoftGraphEvalua
       - `[Value <String>]`: Value for this key-value pair
     - `[State <String>]`: contentState
 
-CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult[]>: .
+CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult\[]>: .
   - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
   - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
   - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
 
-CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
+CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
