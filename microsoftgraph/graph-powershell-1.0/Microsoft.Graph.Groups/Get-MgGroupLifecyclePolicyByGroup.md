@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggrouplifecyclepolicybygroup
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupLifecyclePolicyByGroup
 
 ## SYNOPSIS
-Get groupLifecyclePolicies from groups
+The collection of lifecycle policies for this group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,9 +21,29 @@ Get-MgGroupLifecyclePolicyByGroup -GroupId <String> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get groupLifecyclePolicies from groups
+The collection of lifecycle policies for this group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
