@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/new-mgfinancialcompany
@@ -785,7 +785,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCOUNTS <IMicrosoftGraphAccount[]>: .
+ACCOUNTS <IMicrosoftGraphAccount\[]>: .
   - `[Id <String>]`: 
   - `[Blocked <Boolean?>]`: 
   - `[Category <String>]`: 
@@ -794,7 +794,7 @@ ACCOUNTS <IMicrosoftGraphAccount[]>: .
   - `[Number <String>]`: 
   - `[SubCategory <String>]`: 
 
-AGEDACCOUNTSPAYABLE <IMicrosoftGraphAgedAccountsPayable[]>: .
+AGEDACCOUNTSPAYABLE <IMicrosoftGraphAgedAccountsPayable\[]>: .
   - `[Id <String>]`: 
   - `[AgedAsOfDate <DateTime?>]`: 
   - `[BalanceDue <Decimal?>]`: 
@@ -807,7 +807,7 @@ AGEDACCOUNTSPAYABLE <IMicrosoftGraphAgedAccountsPayable[]>: .
   - `[PeriodLengthFilter <String>]`: 
   - `[VendorNumber <String>]`: 
 
-AGEDACCOUNTSRECEIVABLE <IMicrosoftGraphAgedAccountsReceivable[]>: .
+AGEDACCOUNTSRECEIVABLE <IMicrosoftGraphAgedAccountsReceivable\[]>: .
   - `[Id <String>]`: 
   - `[AgedAsOfDate <DateTime?>]`: 
   - `[BalanceDue <Decimal?>]`: 
@@ -820,7 +820,7 @@ AGEDACCOUNTSRECEIVABLE <IMicrosoftGraphAgedAccountsReceivable[]>: .
   - `[Period3Amount <Decimal?>]`: 
   - `[PeriodLengthFilter <String>]`: 
 
-BODYPARAMETER <IMicrosoftGraphCompany>: company
+BODYPARAMETER `<IMicrosoftGraphCompany>`: company
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Accounts <IMicrosoftGraphAccount[]>]`: 
@@ -1415,7 +1415,7 @@ BODYPARAMETER <IMicrosoftGraphCompany>: company
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Vendors <IMicrosoftGraphVendor[]>]`: 
 
-COMPANYINFORMATION <IMicrosoftGraphCompanyInformation1[]>: .
+COMPANYINFORMATION <IMicrosoftGraphCompanyInformation1\[]>: .
   - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1436,14 +1436,14 @@ COMPANYINFORMATION <IMicrosoftGraphCompanyInformation1[]>: .
   - `[TaxRegistrationNumber <String>]`: 
   - `[Website <String>]`: 
 
-COUNTRIESREGIONS <IMicrosoftGraphCountryRegion[]>: .
+COUNTRIESREGIONS <IMicrosoftGraphCountryRegion\[]>: .
   - `[Id <String>]`: 
   - `[AddressFormat <String>]`: 
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-CURRENCIES <IMicrosoftGraphCurrency[]>: .
+CURRENCIES <IMicrosoftGraphCurrency\[]>: .
   - `[Id <String>]`: 
   - `[AmountDecimalPlaces <String>]`: 
   - `[AmountRoundingPrecision <Decimal?>]`: 
@@ -1452,7 +1452,7 @@ CURRENCIES <IMicrosoftGraphCurrency[]>: .
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Symbol <String>]`: 
 
-CUSTOMERPAYMENTJOURNALS <IMicrosoftGraphCustomerPaymentJournal[]>: .
+CUSTOMERPAYMENTJOURNALS <IMicrosoftGraphCustomerPaymentJournal\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1549,7 +1549,7 @@ CUSTOMERPAYMENTJOURNALS <IMicrosoftGraphCustomerPaymentJournal[]>: .
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment[]>: .
+CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment\[]>: .
   - `[Id <String>]`: 
   - `[Amount <Decimal?>]`: 
   - `[AppliesToInvoiceId <String>]`: 
@@ -1630,7 +1630,7 @@ CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment[]>: .
   - `[LineNumber <Int32?>]`: 
   - `[PostingDate <DateTime?>]`: 
 
-CUSTOMERS <IMicrosoftGraphCustomer[]>: .
+CUSTOMERS <IMicrosoftGraphCustomer\[]>: .
   - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1694,7 +1694,7 @@ CUSTOMERS <IMicrosoftGraphCustomer[]>: .
   - `[Type <String>]`: 
   - `[Website <String>]`: 
 
-DIMENSIONS <IMicrosoftGraphDimension[]>: .
+DIMENSIONS <IMicrosoftGraphDimension\[]>: .
   - `[Id <String>]`: 
   - `[Code <String>]`: 
   - `[DimensionValues <IMicrosoftGraphDimensionValue[]>]`: 
@@ -1705,13 +1705,13 @@ DIMENSIONS <IMicrosoftGraphDimension[]>: .
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-DIMENSIONVALUES <IMicrosoftGraphDimensionValue[]>: .
+DIMENSIONVALUES <IMicrosoftGraphDimensionValue\[]>: .
   - `[Id <String>]`: 
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-EMPLOYEES <IMicrosoftGraphEmployee[]>: .
+EMPLOYEES <IMicrosoftGraphEmployee\[]>: .
   - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1743,7 +1743,7 @@ EMPLOYEES <IMicrosoftGraphEmployee[]>: .
   - `[Surname <String>]`: 
   - `[TerminationDate <DateTime?>]`: 
 
-GENERALLEDGERENTRIES <IMicrosoftGraphGeneralLedgerEntry[]>: .
+GENERALLEDGERENTRIES <IMicrosoftGraphGeneralLedgerEntry\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1764,13 +1764,13 @@ GENERALLEDGERENTRIES <IMicrosoftGraphGeneralLedgerEntry[]>: .
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[PostingDate <DateTime?>]`: 
 
-ITEMCATEGORIES <IMicrosoftGraphItemCategory[]>: .
+ITEMCATEGORIES <IMicrosoftGraphItemCategory\[]>: .
   - `[Id <String>]`: 
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-ITEMS <IMicrosoftGraphItem[]>: .
+ITEMS <IMicrosoftGraphItem\[]>: .
   - `[Id <String>]`: 
   - `[BaseUnitOfMeasureId <String>]`: 
   - `[Blocked <Boolean?>]`: 
@@ -1800,7 +1800,7 @@ ITEMS <IMicrosoftGraphItem[]>: .
   - `[UnitCost <Decimal?>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-JOURNALLINES <IMicrosoftGraphJournalLine[]>: .
+JOURNALLINES <IMicrosoftGraphJournalLine\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1823,7 +1823,7 @@ JOURNALLINES <IMicrosoftGraphJournalLine[]>: .
   - `[LineNumber <Int32?>]`: 
   - `[PostingDate <DateTime?>]`: 
 
-JOURNALS <IMicrosoftGraphJournal[]>: .
+JOURNALS <IMicrosoftGraphJournal\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1854,13 +1854,13 @@ JOURNALS <IMicrosoftGraphJournal[]>: .
     - `[PostingDate <DateTime?>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PAYMENTMETHODS <IMicrosoftGraphPaymentMethod[]>: .
+PAYMENTMETHODS <IMicrosoftGraphPaymentMethod\[]>: .
   - `[Id <String>]`: 
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PAYMENTTERMS <IMicrosoftGraphPaymentTerm[]>: .
+PAYMENTTERMS <IMicrosoftGraphPaymentTerm\[]>: .
   - `[Id <String>]`: 
   - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
   - `[Code <String>]`: 
@@ -1870,14 +1870,14 @@ PAYMENTTERMS <IMicrosoftGraphPaymentTerm[]>: .
   - `[DueDateCalculation <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PICTURE <IMicrosoftGraphPicture[]>: .
+PICTURE <IMicrosoftGraphPicture\[]>: .
   - `[Id <String>]`: 
   - `[Content <Byte[]>]`: 
   - `[ContentType <String>]`: 
   - `[Height <Int32?>]`: 
   - `[Width <Int32?>]`: 
 
-PURCHASEINVOICELINES <IMicrosoftGraphPurchaseInvoiceLine[]>: .
+PURCHASEINVOICELINES <IMicrosoftGraphPurchaseInvoiceLine\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1940,7 +1940,7 @@ PURCHASEINVOICELINES <IMicrosoftGraphPurchaseInvoiceLine[]>: .
   - `[TotalTaxAmount <Decimal?>]`: 
   - `[UnitCost <Decimal?>]`: 
 
-PURCHASEINVOICES <IMicrosoftGraphPurchaseInvoice[]>: .
+PURCHASEINVOICES <IMicrosoftGraphPurchaseInvoice\[]>: .
   - `[Id <String>]`: 
   - `[BuyFromAddress <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2082,7 +2082,7 @@ PURCHASEINVOICES <IMicrosoftGraphPurchaseInvoice[]>: .
   - `[VendorName <String>]`: 
   - `[VendorNumber <String>]`: 
 
-SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine[]>: .
+SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2146,7 +2146,7 @@ SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine[]>: .
   - `[UnitOfMeasureId <String>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-SALESCREDITMEMOS <IMicrosoftGraphSalesCreditMemo[]>: .
+SALESCREDITMEMOS <IMicrosoftGraphSalesCreditMemo\[]>: .
   - `[Id <String>]`: 
   - `[BillToCustomerId <String>]`: 
   - `[BillToCustomerNumber <String>]`: 
@@ -2301,7 +2301,7 @@ SALESCREDITMEMOS <IMicrosoftGraphSalesCreditMemo[]>: .
   - `[TotalAmountIncludingTax <Decimal?>]`: 
   - `[TotalTaxAmount <Decimal?>]`: 
 
-SALESINVOICELINES <IMicrosoftGraphSalesInvoiceLine[]>: .
+SALESINVOICELINES <IMicrosoftGraphSalesInvoiceLine\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2365,7 +2365,7 @@ SALESINVOICELINES <IMicrosoftGraphSalesInvoiceLine[]>: .
   - `[UnitOfMeasureId <String>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-SALESINVOICES <IMicrosoftGraphSalesInvoice[]>: .
+SALESINVOICES <IMicrosoftGraphSalesInvoice\[]>: .
   - `[Id <String>]`: 
   - `[BillToCustomerId <String>]`: 
   - `[BillToCustomerNumber <String>]`: 
@@ -2526,7 +2526,7 @@ SALESINVOICES <IMicrosoftGraphSalesInvoice[]>: .
   - `[TotalAmountIncludingTax <Decimal?>]`: 
   - `[TotalTaxAmount <Decimal?>]`: 
 
-SALESORDERLINES <IMicrosoftGraphSalesOrderLine[]>: .
+SALESORDERLINES <IMicrosoftGraphSalesOrderLine\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2594,7 +2594,7 @@ SALESORDERLINES <IMicrosoftGraphSalesOrderLine[]>: .
   - `[UnitOfMeasureId <String>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-SALESORDERS <IMicrosoftGraphSalesOrder[]>: .
+SALESORDERS <IMicrosoftGraphSalesOrder\[]>: .
   - `[Id <String>]`: 
   - `[BillToCustomerId <String>]`: 
   - `[BillToCustomerNumber <String>]`: 
@@ -2756,7 +2756,7 @@ SALESORDERS <IMicrosoftGraphSalesOrder[]>: .
   - `[TotalAmountIncludingTax <Decimal?>]`: 
   - `[TotalTaxAmount <Decimal?>]`: 
 
-SALESQUOTELINES <IMicrosoftGraphSalesQuoteLine[]>: .
+SALESQUOTELINES <IMicrosoftGraphSalesQuoteLine\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2818,7 +2818,7 @@ SALESQUOTELINES <IMicrosoftGraphSalesQuoteLine[]>: .
   - `[UnitOfMeasureId <String>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-SALESQUOTES <IMicrosoftGraphSalesQuote[]>: .
+SALESQUOTES <IMicrosoftGraphSalesQuote\[]>: .
   - `[Id <String>]`: 
   - `[AcceptedDate <DateTime?>]`: 
   - `[BillToCustomerId <String>]`: 
@@ -2975,34 +2975,34 @@ SALESQUOTES <IMicrosoftGraphSalesQuote[]>: .
   - `[TotalTaxAmount <Decimal?>]`: 
   - `[ValidUntilDate <DateTime?>]`: 
 
-SHIPMENTMETHODS <IMicrosoftGraphShipmentMethod[]>: .
+SHIPMENTMETHODS <IMicrosoftGraphShipmentMethod\[]>: .
   - `[Id <String>]`: 
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-TAXAREAS <IMicrosoftGraphTaxArea[]>: .
-  - `[Id <String>]`: 
-  - `[Code <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[TaxType <String>]`: 
-
-TAXGROUPS <IMicrosoftGraphTaxGroup[]>: .
+TAXAREAS <IMicrosoftGraphTaxArea\[]>: .
   - `[Id <String>]`: 
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[TaxType <String>]`: 
 
-UNITSOFMEASURE <IMicrosoftGraphUnitOfMeasure[]>: .
+TAXGROUPS <IMicrosoftGraphTaxGroup\[]>: .
+  - `[Id <String>]`: 
+  - `[Code <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[TaxType <String>]`: 
+
+UNITSOFMEASURE <IMicrosoftGraphUnitOfMeasure\[]>: .
   - `[Id <String>]`: 
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[InternationalStandardCode <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-VENDORS <IMicrosoftGraphVendor[]>: .
+VENDORS <IMicrosoftGraphVendor\[]>: .
   - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
