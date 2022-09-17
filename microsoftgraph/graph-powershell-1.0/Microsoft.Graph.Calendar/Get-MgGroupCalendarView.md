@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupCalendarView
 
 ## SYNOPSIS
-Get calendarView from groups
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ## SYNTAX
 
@@ -19,9 +21,29 @@ Get-MgGroupCalendarView -GroupId <String> -EndDateTime <String> -StartDateTime <
 ```
 
 ## DESCRIPTION
-Get calendarView from groups
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
