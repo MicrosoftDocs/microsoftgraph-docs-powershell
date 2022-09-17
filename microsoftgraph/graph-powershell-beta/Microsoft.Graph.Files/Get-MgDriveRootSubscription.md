@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdriverootsubscription
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDriveRootSubscription
 
 ## SYNOPSIS
-Get subscriptions from drives
+The set of subscriptions on the item.
+Only supported on the root of a drive.
 
 ## SYNTAX
 
@@ -32,9 +33,28 @@ Get-MgDriveRootSubscription -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get subscriptions from drives
+The set of subscriptions on the item.
+Only supported on the root of a drive.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -253,7 +273,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
