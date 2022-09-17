@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/new-mgusercontact
@@ -853,7 +853,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphContact1>: contact
+BODYPARAMETER `<IMicrosoftGraphContact1>`: contact
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -931,16 +931,16 @@ BODYPARAMETER <IMicrosoftGraphContact1>: contact
   - `[YomiGivenName <String>]`: 
   - `[YomiSurname <String>]`: 
 
-EMAILADDRESSES <IMicrosoftGraphTypedEmailAddress[]>: The contact's email addresses.
+EMAILADDRESSES <IMicrosoftGraphTypedEmailAddress\[]>: The contact's email addresses.
   - `[Address <String>]`: The email address of the person or entity.
   - `[Name <String>]`: The display name of the person or entity.
   - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
   - `[Type <String>]`: emailType
 
-EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the contact. Nullable.
+EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the contact. Nullable.
   - `[Id <String>]`: 
 
-FLAG <IMicrosoftGraphFollowupFlag>: followupFlag
+FLAG `<IMicrosoftGraphFollowupFlag>`: followupFlag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -950,7 +950,7 @@ FLAG <IMicrosoftGraphFollowupFlag>: followupFlag
   - `[FlagStatus <String>]`: followupFlagStatus
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
+INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[ContactFolderId <String>]`: key: id of contactFolder
   - `[ContactFolderId1 <String>]`: key: id of contactFolder
   - `[ContactId <String>]`: key: id of contact
@@ -959,21 +959,21 @@ INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: key: id of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
+MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Value <String[]>]`: A collection of property values.
 
-PHONES <IMicrosoftGraphPhone[]>: .
+PHONES <IMicrosoftGraphPhone\[]>: .
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 
-PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
+PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Height <Int32?>]`: The height of the photo. Read-only.
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 
-POSTALADDRESSES <IMicrosoftGraphPhysicalAddress1[]>: .
+POSTALADDRESSES <IMicrosoftGraphPhysicalAddress1\[]>: .
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
   - `[PostOfficeBox <String>]`: The post office box number.
@@ -982,11 +982,11 @@ POSTALADDRESSES <IMicrosoftGraphPhysicalAddress1[]>: .
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Value <String>]`: A property value.
 
-WEBSITES <IMicrosoftGraphWebsite[]>: .
+WEBSITES <IMicrosoftGraphWebsite\[]>: .
   - `[Address <String>]`: The URL of the website.
   - `[DisplayName <String>]`: The display name of the web site.
   - `[Type <String>]`: websiteType
