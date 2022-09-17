@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbatteryhealthruntimedetail
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail
 
 ## SYNOPSIS
-Get userExperienceAnalyticsBatteryHealthRuntimeDetails from deviceManagement
+User Experience Analytics Battery Health Runtime Details
 
 ## SYNTAX
 
@@ -18,9 +18,27 @@ Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail [-ExpandP
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsBatteryHealthRuntimeDetails from deviceManagement
+User Experience Analytics Battery Health Runtime Details
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

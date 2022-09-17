@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementsoftwareupdatestatussummary
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementSoftwareUpdateStatusSummary
 
 ## SYNOPSIS
-Get softwareUpdateStatusSummary from deviceManagement
+The software update status summary.
 
 ## SYNTAX
 
@@ -18,9 +18,27 @@ Get-MgDeviceManagementSoftwareUpdateStatusSummary [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get softwareUpdateStatusSummary from deviceManagement
+The software update status summary.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
