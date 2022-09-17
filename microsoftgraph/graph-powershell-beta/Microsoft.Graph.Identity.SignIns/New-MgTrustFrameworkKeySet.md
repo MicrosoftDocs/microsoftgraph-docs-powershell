@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgtrustframeworkkeyset
@@ -160,7 +160,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphTrustFrameworkKeySet>: trustFrameworkKeySet
+BODYPARAMETER `<IMicrosoftGraphTrustFrameworkKeySet>`: trustFrameworkKeySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Keys <IMicrosoftGraphTrustFrameworkKey[]>]`: A collection of the keys.
@@ -181,7 +181,7 @@ BODYPARAMETER <IMicrosoftGraphTrustFrameworkKeySet>: trustFrameworkKeySet
     - `[X5C <String[]>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
     - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate RFC 5280.
 
-KEYS <IMicrosoftGraphTrustFrameworkKey[]>: A collection of the keys.
+KEYS <IMicrosoftGraphTrustFrameworkKey\[]>: A collection of the keys.
   - `[D <String>]`: RSA Key - private exponent. Field cannot be read back.
   - `[Dp <String>]`: RSA Key - first exponent. Field cannot be read back.
   - `[Dq <String>]`: RSA Key - second exponent. Field cannot be read back.
