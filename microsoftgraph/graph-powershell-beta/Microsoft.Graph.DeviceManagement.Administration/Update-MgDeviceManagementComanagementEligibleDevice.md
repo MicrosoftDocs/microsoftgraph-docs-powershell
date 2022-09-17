@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcomanagementeligibledevice
@@ -502,7 +502,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphComanagementEligibleDevice>: Device Co-Management eligibility state
+BODYPARAMETER `<IMicrosoftGraphComanagementEligibleDevice>`: Device Co-Management eligibility state
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ClientRegistrationStatus <DeviceRegistrationState?>]`: Device registration status.
@@ -525,7 +525,7 @@ BODYPARAMETER <IMicrosoftGraphComanagementEligibleDevice>: Device Co-Management 
   - `[UserId <String>]`: UserId
   - `[UserName <String>]`: UserName
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
