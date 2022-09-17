@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanysalecreditmemo
@@ -726,7 +726,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BILLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+BILLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: 
   - `[CountryLetterCode <String>]`: 
@@ -734,7 +734,7 @@ BILLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   - `[State <String>]`: 
   - `[Street <String>]`: 
 
-BODYPARAMETER <IMicrosoftGraphSalesCreditMemo>: salesCreditMemo
+BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[BillToCustomerId <String>]`: 
@@ -890,7 +890,7 @@ BODYPARAMETER <IMicrosoftGraphSalesCreditMemo>: salesCreditMemo
   - `[TotalAmountIncludingTax <Decimal?>]`: 
   - `[TotalTaxAmount <Decimal?>]`: 
 
-CURRENCY <IMicrosoftGraphCurrency>: currency
+CURRENCY `<IMicrosoftGraphCurrency>`: currency
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AmountDecimalPlaces <String>]`: 
@@ -900,7 +900,7 @@ CURRENCY <IMicrosoftGraphCurrency>: currency
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Symbol <String>]`: 
 
-CUSTOMER <IMicrosoftGraphCustomer>: customer
+CUSTOMER `<IMicrosoftGraphCustomer>`: customer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
@@ -965,7 +965,7 @@ CUSTOMER <IMicrosoftGraphCustomer>: customer
   - `[Type <String>]`: 
   - `[Website <String>]`: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[AccountId <String>]`: key: id of account
   - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
   - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
@@ -1003,7 +1003,7 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[UnitOfMeasureId <String>]`: key: id of unitOfMeasure
   - `[VendorId <String>]`: key: id of vendor
 
-PAYMENTTERM <IMicrosoftGraphPaymentTerm>: paymentTerm
+PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
@@ -1014,7 +1014,7 @@ PAYMENTTERM <IMicrosoftGraphPaymentTerm>: paymentTerm
   - `[DueDateCalculation <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine[]>: .
+SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1078,7 +1078,7 @@ SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine[]>: .
   - `[UnitOfMeasureId <String>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-SELLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+SELLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: 
   - `[CountryLetterCode <String>]`: 
