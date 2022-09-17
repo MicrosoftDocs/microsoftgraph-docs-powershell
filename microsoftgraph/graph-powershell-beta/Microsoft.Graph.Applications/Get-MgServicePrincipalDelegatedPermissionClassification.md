@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelegatedpermissionclassification
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgServicePrincipalDelegatedPermissionClassification
 
 ## SYNOPSIS
-Get delegatedPermissionClassifications from servicePrincipals
+The permission classifications for delegated permissions exposed by the app that this service principal represents.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,9 +33,28 @@ Get-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicati
 ```
 
 ## DESCRIPTION
-Get delegatedPermissionClassifications from servicePrincipals
+The permission classifications for delegated permissions exposed by the app that this service principal represents.
+Supports $expand.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -253,7 +273,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
