@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementgrouppolicyuploadeddefinitionfilelanguagefile
@@ -212,7 +212,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsYx6FbvDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUpdatelanguagefilesPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsYx6FbvDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUpdatelanguagefilesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>]`: 
     - `[Content <Byte[]>]`: The contents of the uploaded ADML file.
@@ -221,14 +221,14 @@ BODYPARAMETER <IPathsYx6FbvDevicemanagementGrouppolicyuploadeddefinitionfilesGro
     - `[LanguageCode <String>]`: The language code of the uploaded ADML file.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
 
-GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>: .
+GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile\[]>: .
   - `[Content <Byte[]>]`: The contents of the uploaded ADML file.
   - `[FileName <String>]`: The file name of the uploaded ADML file.
   - `[Id <String>]`: Key of the entity.
   - `[LanguageCode <String>]`: The language code of the uploaded ADML file.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
 
-INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
