@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanyinformation
@@ -407,7 +407,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: 
   - `[CountryLetterCode <String>]`: 
@@ -415,7 +415,7 @@ ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   - `[State <String>]`: 
   - `[Street <String>]`: 
 
-BODYPARAMETER <IMicrosoftGraphCompanyInformation1>: companyInformation
+BODYPARAMETER `<IMicrosoftGraphCompanyInformation1>`: companyInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
@@ -437,7 +437,7 @@ BODYPARAMETER <IMicrosoftGraphCompanyInformation1>: companyInformation
   - `[TaxRegistrationNumber <String>]`: 
   - `[Website <String>]`: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[AccountId <String>]`: key: id of account
   - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
   - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
