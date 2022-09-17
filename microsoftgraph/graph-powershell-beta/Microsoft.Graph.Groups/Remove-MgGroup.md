@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/remove-mggroup
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Remove-MgGroup
 
 ## SYNOPSIS
-Delete group
+Deletes a group.
+When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
+After that time, they are permanently deleted.
+This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
+To learn more, see deletedItems.
 
 ## SYNTAX
 
@@ -24,7 +28,11 @@ Remove-MgGroup -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassThru] [-
 ```
 
 ## DESCRIPTION
-Delete group
+Deletes a group.
+When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
+After that time, they are permanently deleted.
+This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
+To learn more, see deletedItems.
 
 ## EXAMPLES
 
@@ -147,7 +155,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
