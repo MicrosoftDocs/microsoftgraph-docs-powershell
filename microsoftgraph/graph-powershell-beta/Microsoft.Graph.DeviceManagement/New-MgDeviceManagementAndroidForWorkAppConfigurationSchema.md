@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementandroidforworkappconfigurationschema
@@ -177,7 +177,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphAndroidForWorkAppConfigurationSchema>: Schema describing an Android for Work application's custom configurations.
+BODYPARAMETER `<IMicrosoftGraphAndroidForWorkAppConfigurationSchema>`: Schema describing an Android for Work application's custom configurations.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ExampleJson <Byte[]>]`: UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app
@@ -194,7 +194,7 @@ BODYPARAMETER <IMicrosoftGraphAndroidForWorkAppConfigurationSchema>: Schema desc
       - `[Name <String>]`: Name for this key-value pair
       - `[Value <String>]`: Value for this key-value pair
 
-SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>: Collection of items each representing a named configuration option in the schema
+SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem\[]>: Collection of items each representing a named configuration option in the schema
   - `[DataType <String>]`: Data type for a configuration item inside an Android for Work application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
