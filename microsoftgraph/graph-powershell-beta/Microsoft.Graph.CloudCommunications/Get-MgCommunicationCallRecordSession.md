@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecordsession
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgCommunicationCallRecordSession
 
 ## SYNOPSIS
-Get sessions from communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,9 +35,30 @@ Get-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Get sessions from communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -253,7 +277,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
