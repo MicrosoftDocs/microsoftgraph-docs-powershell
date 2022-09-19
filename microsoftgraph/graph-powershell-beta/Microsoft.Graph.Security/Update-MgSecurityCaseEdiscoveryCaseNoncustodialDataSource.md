@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasenoncustodialdatasource
@@ -49,6 +49,24 @@ Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurit
 Update the navigation property noncustodialDataSources in security
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -330,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource>`: ediscoveryNoncustodialDataSource
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource>: ediscoveryNoncustodialDataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
@@ -368,7 +386,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource>`: edisc
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: 
 
-DATASOURCE `<IMicrosoftGraphSecurityDataSource>`: dataSource
+DATASOURCE <IMicrosoftGraphSecurityDataSource>: dataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -383,7 +401,7 @@ DATASOURCE `<IMicrosoftGraphSecurityDataSource>`: dataSource
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation

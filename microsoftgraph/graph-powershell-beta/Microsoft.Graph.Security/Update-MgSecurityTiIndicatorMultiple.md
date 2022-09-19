@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritytiindicatormultiple
@@ -29,6 +29,24 @@ Update-MgSecurityTiIndicatorMultiple
 Invoke action updateTiIndicators
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -128,7 +146,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths3Ccfi6SecurityTiindicatorsMicrosoftGraphUpdatetiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths3Ccfi6SecurityTiindicatorsMicrosoftGraphUpdatetiindicatorsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Value <IMicrosoftGraphTiIndicator[]>]`: 
     - `[Id <String>]`: 
@@ -191,7 +209,7 @@ BODYPARAMETER `<IPaths3Ccfi6SecurityTiindicatorsMicrosoftGraphUpdatetiindicators
     - `[Url <String>]`: 
     - `[UserAgent <String>]`: 
 
-VALUE <IMicrosoftGraphTiIndicator\[]>: .
+VALUE <IMicrosoftGraphTiIndicator[]>: .
   - `[Id <String>]`: 
   - `[Action <String>]`: tiAction
   - `[ActivityGroupNames <String[]>]`: The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.
