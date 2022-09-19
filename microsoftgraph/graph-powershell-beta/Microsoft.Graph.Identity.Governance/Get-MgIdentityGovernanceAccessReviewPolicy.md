@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceAccessReviewPolicy
 
 ## SYNOPSIS
-Get policy from identityGovernance
+Resource that enables administrators to manage directory-level access review policies in their tenant.
 
 ## SYNTAX
 
@@ -18,9 +18,27 @@ Get-MgIdentityGovernanceAccessReviewPolicy [-ExpandProperty <String[]>] [-Proper
 ```
 
 ## DESCRIPTION
-Get policy from identityGovernance
+Resource that enables administrators to manage directory-level access review policies in their tenant.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
