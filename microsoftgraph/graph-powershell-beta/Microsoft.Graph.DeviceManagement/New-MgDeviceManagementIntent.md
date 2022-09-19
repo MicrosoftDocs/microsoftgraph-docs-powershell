@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementintent
@@ -370,14 +370,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementIntentAssignment[]>: Collection of assignments
+ASSIGNMENTS <IMicrosoftGraphDeviceManagementIntentAssignment\[]>: Collection of assignments
   - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementIntent>: Entity that represents an intent to apply settings to a device
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntent>`: Entity that represents an intent to apply settings to a device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceManagementIntentAssignment[]>]`: Collection of assignments
@@ -458,7 +458,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementIntent>: Entity that represents an
     - `[UserName <String>]`: The user name that is being reported on a device
     - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
 
-CATEGORIES <IMicrosoftGraphDeviceManagementIntentSettingCategory[]>: Collection of setting categories within the intent
+CATEGORIES <IMicrosoftGraphDeviceManagementIntentSettingCategory\[]>: Collection of setting categories within the intent
   - `[DisplayName <String>]`: The category name
   - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]`: The setting definitions this category contains
@@ -482,7 +482,7 @@ CATEGORIES <IMicrosoftGraphDeviceManagementIntentSettingCategory[]>: Collection 
     - `[DefinitionId <String>]`: The ID of the setting definition for this instance
     - `[ValueJson <String>]`: JSON representation of the value
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]>: Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
+DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary\[]>: Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
   - `[Id <String>]`: 
   - `[CompliantCount <Int32?>]`: Number of compliant devices
   - `[ConflictCount <Int32?>]`: Number of devices in conflict
@@ -492,7 +492,7 @@ DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphDeviceManagementIntentDeviceSettingS
   - `[RemediatedCount <Int32?>]`: Number of remediated devices
   - `[SettingName <String>]`: Name of a setting
 
-DEVICESTATES <IMicrosoftGraphDeviceManagementIntentDeviceState[]>: Collection of states of all devices that the intent is applied to
+DEVICESTATES <IMicrosoftGraphDeviceManagementIntentDeviceState\[]>: Collection of states of all devices that the intent is applied to
   - `[Id <String>]`: 
   - `[DeviceDisplayName <String>]`: Device name that is being reported
   - `[DeviceId <String>]`: Device id that is being reported
@@ -501,7 +501,7 @@ DEVICESTATES <IMicrosoftGraphDeviceManagementIntentDeviceState[]>: Collection of
   - `[UserName <String>]`: The user name that is being reported on a device
   - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
 
-DEVICESTATESUMMARY <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>: Entity that represents device state summary for an intent
+DEVICESTATESUMMARY `<IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>`: Entity that represents device state summary for an intent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ConflictCount <Int32?>]`: Number of devices in conflict
@@ -511,12 +511,12 @@ DEVICESTATESUMMARY <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>: En
   - `[NotApplicablePlatformCount <Int32?>]`: Number of not applicable devices due to mismatch platform and policy
   - `[SuccessCount <Int32?>]`: Number of succeeded devices
 
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance[]>: Collection of all settings to be applied
+SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance\[]>: Collection of all settings to be applied
   - `[Id <String>]`: 
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
   - `[ValueJson <String>]`: JSON representation of the value
 
-USERSTATES <IMicrosoftGraphDeviceManagementIntentUserState[]>: Collection of states of all users that the intent is applied to
+USERSTATES <IMicrosoftGraphDeviceManagementIntentUserState\[]>: Collection of states of all users that the intent is applied to
   - `[Id <String>]`: 
   - `[DeviceCount <Int32?>]`: Count of Devices that belongs to a user for an intent
   - `[LastReportedDateTime <DateTime?>]`: Last modified date time of an intent report
@@ -524,7 +524,7 @@ USERSTATES <IMicrosoftGraphDeviceManagementIntentUserState[]>: Collection of sta
   - `[UserName <String>]`: The user name that is being reported on a device
   - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
 
-USERSTATESUMMARY <IMicrosoftGraphDeviceManagementIntentUserStateSummary>: Entity that represents user state summary for an intent
+USERSTATESUMMARY `<IMicrosoftGraphDeviceManagementIntentUserStateSummary>`: Entity that represents user state summary for an intent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ConflictCount <Int32?>]`: Number of users in conflict
