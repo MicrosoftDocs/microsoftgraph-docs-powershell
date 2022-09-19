@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitelistactivity
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListActivity
 
 ## SYNOPSIS
-Get activities from sites
+The recent activities that took place within this list.
 
 ## SYNTAX
 
@@ -19,9 +19,27 @@ Get-MgSiteListActivity -ListId <String> -SiteId <String> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get activities from sites
+The recent activities that took place within this list.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
