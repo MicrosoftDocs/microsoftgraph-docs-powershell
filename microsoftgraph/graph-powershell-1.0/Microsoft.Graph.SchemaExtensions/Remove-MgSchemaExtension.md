@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension
@@ -163,7 +163,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISchemaExtensionsIdentity>: Identity Parameter
+INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
   - `[SchemaExtensionId <String>]`: key: id of schemaExtension
 
 ## RELATED LINKS
