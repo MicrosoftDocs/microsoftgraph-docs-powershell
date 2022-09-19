@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementautopiloteventpolicystatusdetail
@@ -46,6 +46,24 @@ New-MgDeviceManagementAutopilotEventPolicyStatusDetail -InputObject <IDeviceMana
 Create new navigation property to policyStatusDetails for deviceManagement
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -267,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail>`: Policy status detail item contained by an autopilot event.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail>: Policy status detail item contained by an autopilot event.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
@@ -277,7 +295,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail>`: Po
   - `[PolicyType <String>]`: deviceManagementAutopilotPolicyType
   - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
