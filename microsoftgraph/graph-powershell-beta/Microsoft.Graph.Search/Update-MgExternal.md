@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternal
@@ -161,7 +161,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal>: external
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>]`: 
     - `[Id <String>]`: 
@@ -254,7 +254,7 @@ BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal>: external
       - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
     - `[State <String>]`: connectionState
 
-CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection[]>: .
+CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
   - `[Id <String>]`: 
   - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
