@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicyapplyto
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgPolicyFeatureRolloutPolicyApplyTo
 
 ## SYNOPSIS
-Get appliesTo from policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## SYNTAX
 
@@ -19,9 +20,28 @@ Get-MgPolicyFeatureRolloutPolicyApplyTo -FeatureRolloutPolicyId <String> [-Expan
 ```
 
 ## DESCRIPTION
-Get appliesTo from policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

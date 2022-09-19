@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicydefaultappmanagementpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyDefaultAppManagementPolicy
 
 ## SYNOPSIS
-Get defaultAppManagementPolicy from policies
+The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
 ## SYNTAX
 
@@ -17,9 +17,27 @@ Get-MgPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Property <
 ```
 
 ## DESCRIPTION
-Get defaultAppManagementPolicy from policies
+The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
