@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty
@@ -206,7 +206,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsYq15M4ServiceprincipalsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsYq15M4ServiceprincipalsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[EntityType <String>]`: 
