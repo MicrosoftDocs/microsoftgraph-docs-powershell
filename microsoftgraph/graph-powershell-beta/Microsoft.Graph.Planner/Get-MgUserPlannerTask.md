@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mguserplannertask
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerTask
 
 ## SYNOPSIS
-Get tasks from users
+Read-only.
+Nullable.
+Returns the plannerTasks assigned to the user.
 
 ## SYNTAX
 
@@ -19,9 +21,29 @@ Get-MgUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 ```
 
 ## DESCRIPTION
-Get tasks from users
+Read-only.
+Nullable.
+Returns the plannerTasks assigned to the user.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
