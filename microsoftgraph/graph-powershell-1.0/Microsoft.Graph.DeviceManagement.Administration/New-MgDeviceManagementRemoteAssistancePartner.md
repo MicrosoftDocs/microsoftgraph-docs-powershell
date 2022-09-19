@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner
@@ -29,6 +29,24 @@ New-MgDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRem
 Create new navigation property to remoteAssistancePartners for deviceManagement
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -187,7 +205,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRemoteAssistancePartner1>`: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
+BODYPARAMETER <IMicrosoftGraphRemoteAssistancePartner1>: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: Display name of the partner.
