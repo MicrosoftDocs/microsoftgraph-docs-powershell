@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointorganizationsetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointOrganizationSetting
 
 ## SYNOPSIS
-Get organizationSettings from deviceManagement
+The Cloud PC organization settings for a tenant.
 
 ## SYNTAX
 
@@ -18,9 +18,27 @@ Get-MgDeviceManagementVirtualEndpointOrganizationSetting [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get organizationSettings from deviceManagement
+The Cloud PC organization settings for a tenant.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
