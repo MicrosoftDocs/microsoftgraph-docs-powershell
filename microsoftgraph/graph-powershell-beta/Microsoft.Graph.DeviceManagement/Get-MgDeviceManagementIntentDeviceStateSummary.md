@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementintentdevicestatesummary
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementIntentDeviceStateSummary
 
 ## SYNOPSIS
-Get deviceStateSummary from deviceManagement
+A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
 
 ## SYNTAX
 
@@ -25,9 +25,27 @@ Get-MgDeviceManagementIntentDeviceStateSummary -InputObject <IDeviceManagementId
 ```
 
 ## DESCRIPTION
-Get deviceStateSummary from deviceManagement
+A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -110,7 +128,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
