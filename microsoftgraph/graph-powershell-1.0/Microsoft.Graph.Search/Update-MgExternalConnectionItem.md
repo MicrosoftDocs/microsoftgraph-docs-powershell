@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnectionitem
@@ -272,12 +272,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACL <IMicrosoftGraphExternalConnectorsAcl1[]>: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
+ACL <IMicrosoftGraphExternalConnectorsAcl1\[]>: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
   - `[AccessType <String>]`: accessType
   - `[Type <String>]`: aclType
   - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup
 
-BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalItem1>: externalItem
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalItem1>`: externalItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
@@ -291,12 +291,12 @@ BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalItem1>: externalItem
   - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-CONTENT <IMicrosoftGraphExternalConnectorsExternalItemContent>: externalItemContent
+CONTENT `<IMicrosoftGraphExternalConnectorsExternalItemContent>`: externalItemContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: externalItemContentType
   - `[Value <String>]`: The content for the externalItem. Required.
 
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
