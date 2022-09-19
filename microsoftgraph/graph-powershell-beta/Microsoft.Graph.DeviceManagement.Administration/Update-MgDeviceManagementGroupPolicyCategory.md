@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementgrouppolicycategory
@@ -337,7 +337,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphGroupPolicyCategory>: The category entity stores the category of a group policy definition
+BODYPARAMETER `<IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the category of a group policy definition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
@@ -383,7 +383,7 @@ BODYPARAMETER <IMicrosoftGraphGroupPolicyCategory>: The category entity stores t
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
   - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
 
-CHILDREN <IMicrosoftGraphGroupPolicyCategory[]>: The children categories
+CHILDREN <IMicrosoftGraphGroupPolicyCategory\[]>: The children categories
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
   - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
@@ -428,7 +428,7 @@ CHILDREN <IMicrosoftGraphGroupPolicyCategory[]>: The children categories
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
   - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
 
-DEFINITIONFILE <IMicrosoftGraphGroupPolicyDefinitionFile>: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
+DEFINITIONFILE `<IMicrosoftGraphGroupPolicyDefinitionFile>`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
@@ -474,7 +474,7 @@ DEFINITIONFILE <IMicrosoftGraphGroupPolicyDefinitionFile>: The entity represents
   - `[TargetNamespace <String>]`: Specifies the URI used to identify the namespace within the ADMX file.
   - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
 
-DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition[]>: The immediate GroupPolicyDefinition children of the category
+DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition\[]>: The immediate GroupPolicyDefinition children of the category
   - `[Id <String>]`: 
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -520,7 +520,7 @@ DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition[]>: The immediate GroupPolicyD
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
   - `[Version <String>]`: Setting definition version
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -574,7 +574,7 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
-PARENT <IMicrosoftGraphGroupPolicyCategory>: The category entity stores the category of a group policy definition
+PARENT `<IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the category of a group policy definition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
