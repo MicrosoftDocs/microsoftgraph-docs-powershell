@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowprotectionstate
@@ -535,7 +535,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>: Device protection status entity.
+BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AntiMalwareVersion <String>]`: Current anti malware version
@@ -571,7 +571,7 @@ BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>: Device protection status 
   - `[SignatureVersion <String>]`: Current malware definitions version
   - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
-DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState[]>: Device malware list
+DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState\[]>: Device malware list
   - `[Id <String>]`: 
   - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
   - `[Category <WindowsMalwareCategory?>]`: Malware category id
@@ -584,7 +584,7 @@ DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState[]>: Device malwar
   - `[State <WindowsMalwareState?>]`: Malware current status
   - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
