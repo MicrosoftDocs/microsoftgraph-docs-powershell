@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mgusersharedinsight
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserSharedInsight
 
 ## SYNOPSIS
-Get shared from users
+Calculated relationship identifying documents shared with or by the user.
+This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings.
+This also includes URLs and reference attachments to Teams conversations.
+Ordered by recency of share.
 
 ## SYNTAX
 
@@ -32,9 +35,30 @@ Get-MgUserSharedInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get shared from users
+Calculated relationship identifying documents shared with or by the user.
+This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings.
+This also includes URLs and reference attachments to Teams conversations.
+Ordered by recency of share.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -253,7 +277,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
