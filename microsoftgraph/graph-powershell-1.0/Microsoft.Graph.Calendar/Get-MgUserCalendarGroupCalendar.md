@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcalendar
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserCalendarGroupCalendar
 
 ## SYNOPSIS
-Get calendars from users
+The calendars in the calendar group.
+Navigation property.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,9 +22,30 @@ Get-MgUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [-Fil
 ```
 
 ## DESCRIPTION
-Get calendars from users
+The calendars in the calendar group.
+Navigation property.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 

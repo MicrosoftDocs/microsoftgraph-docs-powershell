@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendarview
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserCalendarView
 
 ## SYNOPSIS
-Get calendarView from users
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ## SYNTAX
 
@@ -27,9 +29,29 @@ Get-MgUserCalendarView -UserId <String> -CalendarId <String> -EndDateTime <Strin
 ```
 
 ## DESCRIPTION
-Get calendarView from users
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
