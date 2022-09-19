@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteampermissiongrant
@@ -46,6 +46,24 @@ Update-MgTeamPermissionGrant -InputObject <ITeamsIdentity>
 Update the navigation property permissionGrants in teams
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -303,7 +321,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphResourceSpecificPermissionGrant>`: resourceSpecificPermissionGrant
+BODYPARAMETER <IMicrosoftGraphResourceSpecificPermissionGrant>: resourceSpecificPermissionGrant
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
@@ -313,7 +331,7 @@ BODYPARAMETER `<IMicrosoftGraphResourceSpecificPermissionGrant>`: resourceSpecif
   - `[PermissionType <String>]`: The type of permission. Possible values are: Application, Delegated. Read-only.
   - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
