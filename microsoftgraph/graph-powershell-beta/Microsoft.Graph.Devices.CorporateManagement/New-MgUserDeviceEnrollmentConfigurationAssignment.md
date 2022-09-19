@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mguserdeviceenrollmentconfigurationassignment
@@ -44,6 +44,24 @@ New-MgUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorporat
 Create new navigation property to assignments for users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -235,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEnrollmentConfigurationAssignment>`: Enrollment Configuration Assignment
+BODYPARAMETER <IMicrosoftGraphEnrollmentConfigurationAssignment>: Enrollment Configuration Assignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
@@ -245,7 +263,7 @@ BODYPARAMETER `<IMicrosoftGraphEnrollmentConfigurationAssignment>`: Enrollment C
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
@@ -314,7 +332,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
-TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for assignment targets.
+TARGET <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>: Base type for assignment targets.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.

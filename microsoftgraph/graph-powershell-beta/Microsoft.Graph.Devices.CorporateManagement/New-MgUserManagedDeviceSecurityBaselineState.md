@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddevicesecuritybaselinestate
@@ -46,6 +46,24 @@ New-MgUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporateMana
 Create new navigation property to securityBaselineStates for users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -267,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityBaselineState>`: Security baseline state for a device.
+BODYPARAMETER <IMicrosoftGraphSecurityBaselineState>: Security baseline state for a device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the security baseline
@@ -291,7 +309,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityBaselineState>`: Security baseline state 
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
   - `[UserPrincipalName <String>]`: User Principal Name
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
@@ -360,7 +378,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
-SETTINGSTATES <IMicrosoftGraphSecurityBaselineSettingState\[]>: The security baseline state for different settings for a device
+SETTINGSTATES <IMicrosoftGraphSecurityBaselineSettingState[]>: The security baseline state for different settings for a device
   - `[Id <String>]`: 
   - `[ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>]`: The policies that contribute to this setting instance
     - `[DisplayName <String>]`: Name of the policy
