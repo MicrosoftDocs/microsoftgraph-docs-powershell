@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.SchemaExtensions
 Module Guid: ef2053d7-2a1c-4839-a373-26daebd6e9ad
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions
