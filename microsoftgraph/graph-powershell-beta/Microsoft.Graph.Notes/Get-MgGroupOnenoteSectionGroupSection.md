@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenotesectiongroupsection
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupOnenoteSectionGroupSection
 
 ## SYNOPSIS
-Get sections from groups
+The sections in the section group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,9 +21,29 @@ Get-MgGroupOnenoteSectionGroupSection -GroupId <String> -SectionGroupId <String>
 ```
 
 ## DESCRIPTION
-Get sections from groups
+The sections in the section group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
