@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanypurchaseinvoice
@@ -680,7 +680,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPurchaseInvoice>: purchaseInvoice
+BODYPARAMETER `<IMicrosoftGraphPurchaseInvoice>`: purchaseInvoice
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[BuyFromAddress <IMicrosoftGraphPostalAddressType>]`: postalAddressType
@@ -823,7 +823,7 @@ BODYPARAMETER <IMicrosoftGraphPurchaseInvoice>: purchaseInvoice
   - `[VendorName <String>]`: 
   - `[VendorNumber <String>]`: 
 
-BUYFROMADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+BUYFROMADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: 
   - `[CountryLetterCode <String>]`: 
@@ -831,7 +831,7 @@ BUYFROMADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   - `[State <String>]`: 
   - `[Street <String>]`: 
 
-CURRENCY <IMicrosoftGraphCurrency>: currency
+CURRENCY `<IMicrosoftGraphCurrency>`: currency
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AmountDecimalPlaces <String>]`: 
@@ -841,7 +841,7 @@ CURRENCY <IMicrosoftGraphCurrency>: currency
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Symbol <String>]`: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[AccountId <String>]`: key: id of account
   - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
   - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
@@ -879,7 +879,7 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[UnitOfMeasureId <String>]`: key: id of unitOfMeasure
   - `[VendorId <String>]`: key: id of vendor
 
-PAYTOADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+PAYTOADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: 
   - `[CountryLetterCode <String>]`: 
@@ -887,7 +887,7 @@ PAYTOADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   - `[State <String>]`: 
   - `[Street <String>]`: 
 
-PURCHASEINVOICELINES <IMicrosoftGraphPurchaseInvoiceLine[]>: .
+PURCHASEINVOICELINES <IMicrosoftGraphPurchaseInvoiceLine\[]>: .
   - `[Id <String>]`: 
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -950,7 +950,7 @@ PURCHASEINVOICELINES <IMicrosoftGraphPurchaseInvoiceLine[]>: .
   - `[TotalTaxAmount <Decimal?>]`: 
   - `[UnitCost <Decimal?>]`: 
 
-SHIPTOADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+SHIPTOADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: 
   - `[CountryLetterCode <String>]`: 
@@ -958,7 +958,7 @@ SHIPTOADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   - `[State <String>]`: 
   - `[Street <String>]`: 
 
-VENDOR <IMicrosoftGraphVendor>: vendor
+VENDOR `<IMicrosoftGraphVendor>`: vendor
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
