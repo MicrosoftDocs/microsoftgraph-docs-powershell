@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mggroupdriveactivity
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupDriveActivity
 
 ## SYNOPSIS
-Get activities from groups
+The list of recent activities that took place under this drive.
 
 ## SYNTAX
 
@@ -19,9 +19,27 @@ Get-MgGroupDriveActivity -DriveId <String> -GroupId <String> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get activities from groups
+The list of recent activities that took place under this drive.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
