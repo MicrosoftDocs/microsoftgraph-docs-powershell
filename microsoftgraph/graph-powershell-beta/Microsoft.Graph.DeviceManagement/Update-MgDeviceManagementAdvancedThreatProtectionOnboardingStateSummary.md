@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementadvancedthreatprotectiononboardingstatesummary
@@ -300,7 +300,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>: Not yet documented
+ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState\[]>: Not yet documented
   - `[Id <String>]`: 
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceId <String>]`: The Device Id that is being reported
@@ -315,7 +315,7 @@ ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedTh
   - `[UserName <String>]`: The User Name that is being reported
   - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
 
-BODYPARAMETER <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>: Windows defender advanced threat protection onboarding state summary across the account.
+BODYPARAMETER `<IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>`: Windows defender advanced threat protection onboarding state summary across the account.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStates <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>]`: Not yet documented
