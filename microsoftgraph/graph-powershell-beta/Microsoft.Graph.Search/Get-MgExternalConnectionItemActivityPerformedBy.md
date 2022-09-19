@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgExternalConnectionItemActivityPerformedBy
 
 ## SYNOPSIS
-Get performedBy from external
+Represents an identity used to identify who is responsible for the activity.
 
 ## SYNTAX
 
@@ -25,9 +25,27 @@ Get-MgExternalConnectionItemActivityPerformedBy -InputObject <ISearchIdentity> [
 ```
 
 ## DESCRIPTION
-Get performedBy from external
+Represents an identity used to identify who is responsible for the activity.
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -140,7 +158,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
