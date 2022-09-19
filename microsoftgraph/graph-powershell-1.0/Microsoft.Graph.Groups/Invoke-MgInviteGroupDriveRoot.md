@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveroot
@@ -315,7 +315,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths18Lmc20GroupsGroupIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths18Lmc20GroupsGroupIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <String>]`: 
   - `[Message <String>]`: 
@@ -329,7 +329,7 @@ BODYPARAMETER <IPaths18Lmc20GroupsGroupIdDrivesDriveIdRootMicrosoftGraphInvitePo
   - `[Roles <String[]>]`: 
   - `[SendInvitation <Boolean?>]`: 
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -372,7 +372,7 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
