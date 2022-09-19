@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementremoteactionaudit
@@ -282,7 +282,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphRemoteActionAudit>: Report of remote actions initiated on the devices belonging to a certain tenant.
+BODYPARAMETER `<IMicrosoftGraphRemoteActionAudit>`: Report of remote actions initiated on the devices belonging to a certain tenant.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Action <RemoteAction?>]`: Remote actions Intune supports.
