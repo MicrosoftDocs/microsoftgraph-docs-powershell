@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfoldercontactsinglevalueextendedproperty
@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgUserContactFolderContactSingleValueExtendedProperty
 
 ## SYNOPSIS
-The collection of single-value extended properties defined for the contact.
-Read-only.
-Nullable.
+Create new navigation property to singleValueExtendedProperties for users
 
 ## SYNTAX
 
@@ -41,11 +39,27 @@ New-MgUserContactFolderContactSingleValueExtendedProperty -InputObject <IPersona
 ```
 
 ## DESCRIPTION
-The collection of single-value extended properties defined for the contact.
-Read-only.
-Nullable.
+Create new navigation property to singleValueExtendedProperties for users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -221,12 +235,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSingleValueLegacyExtendedProperty>`: singleValueLegacyExtendedProperty
+BODYPARAMETER <IMicrosoftGraphSingleValueLegacyExtendedProperty>: singleValueLegacyExtendedProperty
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Value <String>]`: A property value.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   - `[ContactFolderId <String>]`: key: id of contactFolder
   - `[ContactFolderId1 <String>]`: key: id of contactFolder
   - `[ContactId <String>]`: key: id of contact
