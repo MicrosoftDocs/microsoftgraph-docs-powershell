@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentSetting
 
 ## SYNOPSIS
-Get assignmentSettings from education
+Specifies class-level assignments settings.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get assignmentSettings from education
+Specifies class-level assignments settings.
 
 ## EXAMPLES
 

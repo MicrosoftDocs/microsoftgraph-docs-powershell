@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementMessageAttachment
 
 ## SYNOPSIS
-Get attachments from admin
+A collection of serviceAnnouncementAttachments.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnounce
 ```
 
 ## DESCRIPTION
-Get attachments from admin
+A collection of serviceAnnouncementAttachments.
 
 ## EXAMPLES
 

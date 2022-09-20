@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState
 
 ## SYNOPSIS
-Get settingStates from deviceManagement
+The security baseline state for different settings for a device
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState -InputObj
 ```
 
 ## DESCRIPTION
-Get settingStates from deviceManagement
+The security baseline state for different settings for a device
 
 ## EXAMPLES
 

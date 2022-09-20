@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of this entity.
+The question.
 
 ```yaml
 Type: String
@@ -270,7 +270,7 @@ BODYPARAMETER `<IMicrosoftGraphBookingCustomQuestion>`: Represents a custom ques
   - `[Id <String>]`: 
   - `[AnswerInputType <String>]`: answerInputType
   - `[AnswerOptions <String[]>]`: List of possible answer values.
-  - `[DisplayName <String>]`: Display name of this entity.
+  - `[DisplayName <String>]`: The question.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment

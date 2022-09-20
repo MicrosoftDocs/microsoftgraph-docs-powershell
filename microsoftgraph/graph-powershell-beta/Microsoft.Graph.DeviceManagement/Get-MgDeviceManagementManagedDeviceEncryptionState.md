@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementManagedDeviceEncryptionState
 
 ## SYNOPSIS
-Get managedDeviceEncryptionStates from deviceManagement
+Encryption report for devices in this account
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementManagedDeviceEncryptionState -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Get managedDeviceEncryptionStates from deviceManagement
+Encryption report for devices in this account
 
 ## EXAMPLES
 

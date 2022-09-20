@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteColumn
 
 ## SYNOPSIS
-Get columns from groups
+The collection of column definitions reusable across lists under this site.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgGroupSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get columns from groups
+The collection of column definitions reusable across lists under this site.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgAdministrativeUnitMemberByRef
 
 ## SYNOPSIS
-Get ref of members from administrativeUnits
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgAdministrativeUnitMemberByRef -AdministrativeUnitId <String> [-Filter <Str
 ```
 
 ## DESCRIPTION
-Get ref of members from administrativeUnits
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## EXAMPLES
 

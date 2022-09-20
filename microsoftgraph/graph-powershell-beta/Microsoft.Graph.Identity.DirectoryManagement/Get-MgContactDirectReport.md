@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgContactDirectReport
 
 ## SYNOPSIS
-Get directReports from contacts
+The contact's direct reports.
+(The users and contacts that have their manager property set to this contact.) Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgContactDirectReport -InputObject <IIdentityDirectoryManagementIdentity> [-
 ```
 
 ## DESCRIPTION
-Get directReports from contacts
+The contact's direct reports.
+(The users and contacts that have their manager property set to this contact.) Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

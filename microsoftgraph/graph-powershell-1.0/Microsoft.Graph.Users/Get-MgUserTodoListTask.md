@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserTodoListTask
 
 ## SYNOPSIS
-Get tasks from users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserTodoListTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get tasks from users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

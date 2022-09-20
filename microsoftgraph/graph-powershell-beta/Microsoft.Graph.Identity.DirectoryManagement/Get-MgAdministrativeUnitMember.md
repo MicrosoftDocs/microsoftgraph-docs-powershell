@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgAdministrativeUnitMember
 
 ## SYNOPSIS
-Get members from administrativeUnits
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get members from administrativeUnits
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## EXAMPLES
 

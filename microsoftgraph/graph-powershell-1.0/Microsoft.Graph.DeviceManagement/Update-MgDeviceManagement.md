@@ -351,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntuneAccountId
-Intune Account ID for given tenant
+Intune Account Id for given tenant
 
 ```yaml
 Type: String
@@ -939,6 +939,8 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
       - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
       - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
       - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
+    - `[Platform <DetectedAppPlatformType?>]`: Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0).
+    - `[Publisher <String>]`: Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.
     - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
     - `[Version <String>]`: Version of the discovered application. Read-only
   - `[DeviceCategories <IMicrosoftGraphDeviceCategory[]>]`: The list of device categories with the tenant.
@@ -981,7 +983,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
       - `[UserPrincipalName <String>]`: UserPrincipalName.
     - `[DisplayName <String>]`: Admin provided name of the device configuration.
     - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-    - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]`: The list of scheduled action for this rule
+    - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]`: The list of scheduled action per rule for this compliance policy. This is a required property when creating any individual per-platform compliance policies.
       - `[Id <String>]`: 
       - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
       - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
@@ -1148,7 +1150,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
       - `[DeviceErrorName <String>]`: Device error name reported by Device Directory Service(DDS).
       - `[DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]`: importedWindowsAutopilotDeviceIdentityImportStatus
       - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
-  - `[IntuneAccountId <String>]`: Intune Account ID for given tenant
+  - `[IntuneAccountId <String>]`: Intune Account Id for given tenant
   - `[IntuneBrand <IMicrosoftGraphIntuneBrand>]`: intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContactItEmailAddress <String>]`: Email address of the person/organization responsible for IT support.
@@ -1533,6 +1535,8 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
     - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
     - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
     - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
+  - `[Platform <DetectedAppPlatformType?>]`: Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0).
+  - `[Publisher <String>]`: Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.
   - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
   - `[Version <String>]`: Version of the discovered application. Read-only
 
@@ -1581,7 +1585,7 @@ DEVICECOMPLIANCEPOLICIES <IMicrosoftGraphDeviceCompliancePolicy\[]>: The device 
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[DisplayName <String>]`: Admin provided name of the device configuration.
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-  - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]`: The list of scheduled action for this rule
+  - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]`: The list of scheduled action per rule for this compliance policy. This is a required property when creating any individual per-platform compliance policies.
     - `[Id <String>]`: 
     - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
     - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.

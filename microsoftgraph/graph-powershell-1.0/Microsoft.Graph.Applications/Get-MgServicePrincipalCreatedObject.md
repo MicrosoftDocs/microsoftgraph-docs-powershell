@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgServicePrincipalCreatedObject
 
 ## SYNOPSIS
-Get createdObjects from servicePrincipals
+Directory objects created by this service principal.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgServicePrincipalCreatedObject -InputObject <IApplicationsIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Get createdObjects from servicePrincipals
+Directory objects created by this service principal.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

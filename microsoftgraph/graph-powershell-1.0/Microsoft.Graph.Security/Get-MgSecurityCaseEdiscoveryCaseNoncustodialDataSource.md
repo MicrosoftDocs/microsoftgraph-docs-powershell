@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource
 
 ## SYNOPSIS
-Get noncustodialDataSources from security
+Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityId
 ```
 
 ## DESCRIPTION
-Get noncustodialDataSources from security
+Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 
 ## EXAMPLES
 

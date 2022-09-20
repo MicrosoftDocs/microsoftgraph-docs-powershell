@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceHealthScriptGlobalScript
 
 ## SYNOPSIS
-Invoke action updateGlobalScript
+Update the Proprietary Device Health Script
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgDeviceManagementDeviceHealthScriptGlobalScript -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Invoke action updateGlobalScript
+Update the Proprietary Device Health Script
 
 ## EXAMPLES
 
@@ -195,6 +195,7 @@ BODYPARAMETER `<IPaths1Ca4Qq5DevicemanagementDevicehealthscriptsDevicehealthscri
   - `[Version <String>]`: 
 
 INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

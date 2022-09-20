@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: b6c0dd1c-5565-49d9-82f2-c6cea79e1a3b
+Module Guid: bde037b6-ded3-4c3d-9f73-6b16ae3856bf
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -36,70 +36,71 @@ Get cases from security
 Get ediscoveryCases from security
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodian](Get-MgSecurityCaseEdiscoveryCaseCustodian.md)
-Get custodians from security
+Returns a list of case ediscoveryCustodian objects for this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation.md)
-Get lastIndexOperation from security
+Operation entity that represents the latest indexing for the custodian.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource.md)
-Get siteSources from security
+Data source entity for SharePoint sites associated with the custodian.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceSite](Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceSite.md)
-Get site from security
+The SharePoint site associated with the siteSource.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource.md)
-Get unifiedGroupSources from security
+Data source entity for groups associated with the custodian.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup](Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup.md)
-Get group from security
+Represents a group.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
-Get userSources from security
+Data source entity for a the custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
-Get noncustodialDataSources from security
+Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation.md)
-Get lastIndexOperation from security
+Operation entity that represents the latest indexing for the non-custodial data source.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseOperation](Get-MgSecurityCaseEdiscoveryCaseOperation.md)
-Get operations from security
+Returns a list of case caseOperation objects for this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSet](Get-MgSecurityCaseEdiscoveryCaseReviewSet.md)
-Get reviewSets from security
+Returns a list of eDiscoveryReviewSet objects in the case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery](Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery.md)
-Get queries from security
+Represents queries within the review set.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearch](Get-MgSecurityCaseEdiscoveryCaseSearch.md)
-Get searches from security
+Returns a list of eDiscoverySearch objects associated with this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
-Get additionalSources from security
+Adds an additional source to the eDiscovery search.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](Get-MgSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation.md)
-Get addToReviewSetOperation from security
+Adds the results of the eDiscovery search to the specified reviewSet.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource](Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource.md)
-Get custodianSources from security
+Custodian sources that are included in the eDiscovery search.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation.md)
-Get lastEstimateStatisticsOperation from security
+The last estimate operation associated with the eDiscovery search.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource](Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource.md)
-Get noncustodialSources from security
+noncustodialDataSource sources that are included in the eDiscovery search
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSetting](Get-MgSecurityCaseEdiscoveryCaseSetting.md)
-Get settings from security
+Returns a list of eDIscoverySettings objects in the case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTag](Get-MgSecurityCaseEdiscoveryCaseTag.md)
-Get tags from security
+Returns a list of ediscoveryReviewTag objects associated to this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTagChildTag](Get-MgSecurityCaseEdiscoveryCaseTagChildTag.md)
-Get childTags from security
+Returns the tags that are a child of a tag.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTagParent](Get-MgSecurityCaseEdiscoveryCaseTagParent.md)
-Get parent from security
+Returns the parent tag of the specified tag.
 
 ### [Get-MgSecuritySecureScore](Get-MgSecuritySecureScore.md)
 Get secureScores from security

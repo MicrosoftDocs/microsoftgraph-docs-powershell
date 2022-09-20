@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgOnPremisePublishingProfileConnectorGroup
 
 ## SYNOPSIS
-Get connectorGroups from onPremisesPublishingProfiles
+List of existing connectorGroup objects for applications published through Application Proxy.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -33,7 +35,9 @@ Get-MgOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsIdenti
 ```
 
 ## DESCRIPTION
-Get connectorGroups from onPremisesPublishingProfiles
+List of existing connectorGroup objects for applications published through Application Proxy.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

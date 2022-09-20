@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTeamworkAssociatedTeam
 
 ## SYNOPSIS
-Get associatedTeams from users
+The list of associatedTeamInfo objects that a user is associated with.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get associatedTeams from users
+The list of associatedTeamInfo objects that a user is associated with.
 
 ## EXAMPLES
 

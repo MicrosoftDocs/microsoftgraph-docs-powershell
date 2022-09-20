@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
 
 ## SYNOPSIS
-Get userExperienceAnalyticsAppHealthApplicationPerformance from deviceManagement
+User experience analytics appHealth Application Performance
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsAppHealthApplicationPerformance from deviceManagement
+User experience analytics appHealth Application Performance
 
 ## EXAMPLES
 

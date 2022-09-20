@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummary
 
 ## SYNOPSIS
-Get macOSSoftwareUpdateAccountSummaries from deviceManagement
+The MacOS software update account summaries for this account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummary -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Get macOSSoftwareUpdateAccountSummaries from deviceManagement
+The MacOS software update account summaries for this account.
 
 ## EXAMPLES
 

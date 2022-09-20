@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance
 
 ## SYNOPSIS
-Get userExperienceAnalyticsDevicePerformance from deviceManagement
+User experience analytics device performance
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance -InputObject <IDev
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsDevicePerformance from deviceManagement
+User experience analytics device performance
 
 ## EXAMPLES
 

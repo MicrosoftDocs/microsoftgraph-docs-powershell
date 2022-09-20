@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementEmbeddedSimActivationCodePool
 
 ## SYNOPSIS
-Get embeddedSIMActivationCodePools from deviceManagement
+The embedded SIM activation code pools created by this account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementEmbeddedSimActivationCodePool -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Get embeddedSIMActivationCodePools from deviceManagement
+The embedded SIM activation code pools created by this account.
 
 ## EXAMPLES
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgDomainServiceConfigurationRecord
 
 ## SYNOPSIS
-Get serviceConfigurationRecords from domains
+DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
+Read-only, Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Get serviceConfigurationRecords from domains
+DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
+Read-only, Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

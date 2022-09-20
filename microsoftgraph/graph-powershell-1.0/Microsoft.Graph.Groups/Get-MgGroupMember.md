@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgGroupMember
 
 ## SYNOPSIS
-Get members from groups
+The members of this group, who can be users, devices, other groups, or service principals.
+Supports the List members, Add member, and Remove member operations.
+Nullable.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
 ## SYNTAX
 
@@ -19,7 +23,11 @@ Get-MgGroupMember -GroupId <String> [-ExpandProperty <String[]>] [-Filter <Strin
 ```
 
 ## DESCRIPTION
-Get members from groups
+The members of this group, who can be users, devices, other groups, or service principals.
+Supports the List members, Add member, and Remove member operations.
+Nullable.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
 

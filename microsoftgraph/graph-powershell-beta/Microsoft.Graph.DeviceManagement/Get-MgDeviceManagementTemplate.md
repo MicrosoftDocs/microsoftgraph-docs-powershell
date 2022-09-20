@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTemplate
 
 ## SYNOPSIS
-Get templates from deviceManagement
+The available templates
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementTemplate -InputObject <IDeviceManagementIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get templates from deviceManagement
+The available templates
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDomain
 
 ## SYNOPSIS
-Update domain
+Update the properties of domain object.
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyParamet
 ```
 
 ## DESCRIPTION
-Update domain
+Update the properties of domain object.
 
 ## EXAMPLES
 

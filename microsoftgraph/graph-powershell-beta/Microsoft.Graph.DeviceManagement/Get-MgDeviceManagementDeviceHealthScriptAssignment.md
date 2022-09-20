@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceHealthScriptAssignment
 
 ## SYNOPSIS
-Get assignments from deviceManagement
+The list of group assignments for the device health script
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDeviceHealthScriptAssignment -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Get assignments from deviceManagement
+The list of group assignments for the device health script
 
 ## EXAMPLES
 

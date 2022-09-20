@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronizationJobSchema
 
 ## SYNOPSIS
-Get schema from applications
+The synchronization schema configured for the job.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity> [
 ```
 
 ## DESCRIPTION
-Get schema from applications
+The synchronization schema configured for the job.
 
 ## EXAMPLES
 

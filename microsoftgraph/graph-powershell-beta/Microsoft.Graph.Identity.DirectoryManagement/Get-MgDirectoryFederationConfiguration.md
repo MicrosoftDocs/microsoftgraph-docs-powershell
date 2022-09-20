@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryFederationConfiguration
 
 ## SYNOPSIS
-Get federationConfigurations from directory
+Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDirectoryFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Get federationConfigurations from directory
+Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
 
 ## EXAMPLES
 

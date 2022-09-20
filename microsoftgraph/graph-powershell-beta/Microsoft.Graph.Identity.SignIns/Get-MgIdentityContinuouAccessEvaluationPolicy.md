@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityContinuouAccessEvaluationPolicy
 
 ## SYNOPSIS
-Get continuousAccessEvaluationPolicy from identity
+Represents entry point for continuous access evaluation policy.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgIdentityContinuouAccessEvaluationPolicy [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get continuousAccessEvaluationPolicy from identity
+Represents entry point for continuous access evaluation policy.
 
 ## EXAMPLES
 

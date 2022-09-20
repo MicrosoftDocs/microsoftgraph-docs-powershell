@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementIntentDeviceState
 
 ## SYNOPSIS
-Get deviceStates from deviceManagement
+Collection of states of all devices that the intent is applied to
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementIntentDeviceState -InputObject <IDeviceManagementIdentity>
 ```
 
 ## DESCRIPTION
-Get deviceStates from deviceManagement
+Collection of states of all devices that the intent is applied to
 
 ## EXAMPLES
 

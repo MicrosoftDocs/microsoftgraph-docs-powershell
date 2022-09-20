@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource
 
 ## SYNOPSIS
-Get custodianSources from compliance
+Custodian sources that are included in the sourceCollection.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource -InputObject <ICom
 ```
 
 ## DESCRIPTION
-Get custodianSources from compliance
+Custodian sources that are included in the sourceCollection.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## SYNOPSIS
-Get allowedValues from directory
+Values that are predefined for this custom security attribute.This navigation property is not returned by default and must be specified in an $expand query.
+For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
 
 ## SYNTAX
 
@@ -34,7 +35,8 @@ Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ```
 
 ## DESCRIPTION
-Get allowedValues from directory
+Values that are predefined for this custom security attribute.This navigation property is not returned by default and must be specified in an $expand query.
+For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
 
 ## EXAMPLES
 

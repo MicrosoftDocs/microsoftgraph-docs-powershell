@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteTermStoreSetTerm
 
 ## SYNOPSIS
-Get terms from sites
+All the terms under the set.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Get-MgSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get terms from sites
+All the terms under the set.
 
 ## EXAMPLES
 

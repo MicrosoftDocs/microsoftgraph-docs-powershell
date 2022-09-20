@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
 
 ## SYNOPSIS
-Get roleAssignmentScheduleRequests from roleManagement
+Requests for active role assignments to principals through PIM.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Get roleAssignmentScheduleRequests from roleManagement
+Requests for active role assignments to principals through PIM.
 
 ## EXAMPLES
 

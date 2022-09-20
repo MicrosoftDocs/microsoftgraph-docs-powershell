@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Get authenticationMethodsPolicy from policies
+The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgPolicyAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Property <
 ```
 
 ## DESCRIPTION
-Get authenticationMethodsPolicy from policies
+The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
 ## EXAMPLES
 

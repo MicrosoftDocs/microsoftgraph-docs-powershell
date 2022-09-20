@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserManager
 
 ## SYNOPSIS
-Get manager from users
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ## SYNTAX
 
@@ -24,7 +27,10 @@ Get-MgUserManager -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-Get manager from users
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ## EXAMPLES
 

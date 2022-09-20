@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgAdministrativeUnit
 
 ## SYNOPSIS
-Create administrativeUnit
+Use this API to create a new administrativeUnit.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit1> [-W
 ```
 
 ## DESCRIPTION
-Create administrativeUnit
+Use this API to create a new administrativeUnit.
 
 ## EXAMPLES
 

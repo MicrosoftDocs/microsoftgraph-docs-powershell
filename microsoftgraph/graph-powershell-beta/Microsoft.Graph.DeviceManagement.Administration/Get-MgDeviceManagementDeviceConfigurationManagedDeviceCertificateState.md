@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 
 ## SYNOPSIS
-Get deviceConfigurationsAllManagedDeviceCertificateStates from deviceManagement
+Summary of all certificates for all devices.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 ```
 
 ## DESCRIPTION
-Get deviceConfigurationsAllManagedDeviceCertificateStates from deviceManagement
+Summary of all certificates for all devices.
 
 ## EXAMPLES
 

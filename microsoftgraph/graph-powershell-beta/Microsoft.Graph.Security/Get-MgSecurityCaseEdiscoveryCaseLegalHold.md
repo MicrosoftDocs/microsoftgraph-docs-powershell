@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseLegalHold
 
 ## SYNOPSIS
-Get legalHolds from security
+Returns a list of case eDiscoveryHoldPolicy objects for this case.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get legalHolds from security
+Returns a list of case eDiscoveryHoldPolicy objects for this case.
 
 ## EXAMPLES
 

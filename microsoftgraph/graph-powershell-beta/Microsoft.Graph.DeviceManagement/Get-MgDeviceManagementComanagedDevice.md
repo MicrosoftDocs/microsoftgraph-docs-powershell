@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementComanagedDevice
 
 ## SYNOPSIS
-Get comanagedDevices from deviceManagement
+The list of co-managed devices report
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementComanagedDevice -InputObject <IDeviceManagementIdentity> [
 ```
 
 ## DESCRIPTION
-Get comanagedDevices from deviceManagement
+The list of co-managed devices report
 
 ## EXAMPLES
 

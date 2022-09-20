@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListContentType
 
 ## SYNOPSIS
-Get contentTypes from sites
+The collection of content types present in this list.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get contentTypes from sites
+The collection of content types present in this list.
 
 ## EXAMPLES
 

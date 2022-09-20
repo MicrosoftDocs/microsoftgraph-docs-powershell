@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementIntent
 
 ## SYNOPSIS
-Get intents from deviceManagement
+The device management intents
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementIntent -InputObject <IDeviceManagementIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get intents from deviceManagement
+The device management intents
 
 ## EXAMPLES
 

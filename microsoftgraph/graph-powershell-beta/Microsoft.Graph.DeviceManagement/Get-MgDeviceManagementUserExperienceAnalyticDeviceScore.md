@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticDeviceScore
 
 ## SYNOPSIS
-Get userExperienceAnalyticsDeviceScores from deviceManagement
+User experience analytics device scores
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementUserExperienceAnalyticDeviceScore -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsDeviceScores from deviceManagement
+User experience analytics device scores
 
 ## EXAMPLES
 

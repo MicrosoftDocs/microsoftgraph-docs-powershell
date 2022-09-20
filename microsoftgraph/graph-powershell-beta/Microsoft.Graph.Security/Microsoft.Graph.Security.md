@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: b6c0dd1c-5565-49d9-82f2-c6cea79e1a3b
+Module Guid: bde037b6-ded3-4c3d-9f73-6b16ae3856bf
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -39,16 +39,16 @@ Invoke action export
 Get securityActions from security
 
 ### [Get-MgSecurityAlert](Get-MgSecurityAlert.md)
-Get alerts from security
+Notifications for suspicious or potential security issues in a customer's tenant.
 
 ### [Get-MgSecurityAttackSimulation](Get-MgSecurityAttackSimulation.md)
-Get simulations from security
+Represents an attack simulation training campaign in a tenant.
 
 ### [Get-MgSecurityAttackSimulationAutomation](Get-MgSecurityAttackSimulationAutomation.md)
-Get simulationAutomations from security
+Represents simulation automations created to run on a tenant.
 
 ### [Get-MgSecurityAttackSimulationAutomationRun](Get-MgSecurityAttackSimulationAutomationRun.md)
-Get runs from security
+A collection of simulation automation runs.
 
 ### [Get-MgSecurityCase](Get-MgSecurityCase.md)
 Get cases from security
@@ -57,97 +57,98 @@ Get cases from security
 Get ediscoveryCases from security
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodian](Get-MgSecurityCaseEdiscoveryCaseCustodian.md)
-Get custodians from security
+Returns a list of case ediscoveryCustodian objects for this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation.md)
-Get lastIndexOperation from security
+Operation entity that represents the latest indexing for the custodian.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource.md)
-Get siteSources from security
+Data source entity for SharePoint sites associated with the custodian.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceSite](Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceSite.md)
-Get site from security
+The SharePoint site associated with the siteSource.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource.md)
-Get unifiedGroupSources from security
+Data source entity for groups associated with the custodian.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup](Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup.md)
-Get group from security
+Represents a group.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
-Get userSources from security
+Data source entity for a custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseLegalHold](Get-MgSecurityCaseEdiscoveryCaseLegalHold.md)
-Get legalHolds from security
+Returns a list of case eDiscoveryHoldPolicy objects for this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource](Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource.md)
-Get siteSources from security
+Data sources that represent SharePoint sites.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSourceSite](Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSourceSite.md)
-Get site from security
+The SharePoint site associated with the siteSource.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseLegalHoldUserSource](Get-MgSecurityCaseEdiscoveryCaseLegalHoldUserSource.md)
-Get userSources from security
+Data sources that represent Exchange mailboxes.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
-Get noncustodialDataSources from security
+Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation.md)
-Get lastIndexOperation from security
+Operation entity that represents the latest indexing for the non-custodial data source.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseOperation](Get-MgSecurityCaseEdiscoveryCaseOperation.md)
-Get operations from security
+Returns a list of case caseOperation objects for this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSet](Get-MgSecurityCaseEdiscoveryCaseReviewSet.md)
-Get reviewSets from security
+Returns a list of eDiscoveryReviewSet objects in the case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSetFile](Get-MgSecurityCaseEdiscoveryCaseReviewSetFile.md)
-Get files from security
+Represents files within the review set.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSetFileContent](Get-MgSecurityCaseEdiscoveryCaseReviewSetFileContent.md)
 Get content for the navigation property files from security
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSetFileCustodian](Get-MgSecurityCaseEdiscoveryCaseReviewSetFileCustodian.md)
-Get custodian from security
+Custodians associated with the file.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent](Get-MgSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent.md)
 Get extractedTextContent for the navigation property files from security
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSetFileTag](Get-MgSecurityCaseEdiscoveryCaseReviewSetFileTag.md)
-Get tags from security
+Tags associated with the file.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery](Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery.md)
-Get queries from security
+Represents queries within the review set.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearch](Get-MgSecurityCaseEdiscoveryCaseSearch.md)
-Get searches from security
+Returns a list of eDiscoverySearch objects associated with this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
-Get additionalSources from security
+Adds an additional source to the eDiscovery search.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](Get-MgSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation.md)
-Get addToReviewSetOperation from security
+Adds the results of the eDiscovery search to the specified reviewSet.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource](Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource.md)
-Get custodianSources from security
+Custodian sources that are included in the eDiscovery search.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation.md)
-Get lastEstimateStatisticsOperation from security
+The last estimate operation associated with the eDiscovery search.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource](Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource.md)
-Get noncustodialSources from security
+noncustodialDataSource sources that are included in the eDiscovery search
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSetting](Get-MgSecurityCaseEdiscoveryCaseSetting.md)
-Get settings from security
+Returns a list of eDIscoverySettings objects in the case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTag](Get-MgSecurityCaseEdiscoveryCaseTag.md)
-Get tags from security
+Returns a list of ediscoveryReviewTag objects associated to this case.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTagChildTag](Get-MgSecurityCaseEdiscoveryCaseTagChildTag.md)
-Get childTags from security
+Returns the tags that are a child of a tag.
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTagParent](Get-MgSecurityCaseEdiscoveryCaseTagParent.md)
-Get parent from security
+Returns the parent tag of the specified tag.
 
 ### [Get-MgSecurityCloudAppSecurityProfile](Get-MgSecurityCloudAppSecurityProfile.md)
 Get cloudAppSecurityProfiles from security
@@ -162,22 +163,24 @@ Get fileSecurityProfiles from security
 Get hostSecurityProfiles from security
 
 ### [Get-MgSecurityIncident](Get-MgSecurityIncident.md)
-Get incidents from security
+A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.
 
 ### [Get-MgSecurityIncidentAlert](Get-MgSecurityIncidentAlert.md)
-Get alerts from security
+The list of related alerts.
+Supports $expand.
 
 ### [Get-MgSecurityInformationProtection](Get-MgSecurityInformationProtection.md)
 Get informationProtection from security
 
 ### [Get-MgSecurityInformationProtectionLabelPolicySetting](Get-MgSecurityInformationProtectionLabelPolicySetting.md)
-Get labelPolicySettings from security
+Read the Microsoft Purview Information Protection policy settings for the user or organization.
 
 ### [Get-MgSecurityInformationProtectionSensitivityLabel](Get-MgSecurityInformationProtectionSensitivityLabel.md)
-Get sensitivityLabels from security
+Read the Microsoft Purview Information Protection labels for the user or organization.
 
 ### [Get-MgSecurityInformationProtectionSensitivityLabelParent](Get-MgSecurityInformationProtectionSensitivityLabelParent.md)
-Get parent from security
+The parent label associated with a child label.
+Null if the label has no parent.
 
 ### [Get-MgSecurityIPSecurityProfile](Get-MgSecurityIPSecurityProfile.md)
 Get ipSecurityProfiles from security
@@ -192,13 +195,13 @@ Get retentionEventType from security
 Get retentionLabels from security
 
 ### [Get-MgSecurityLabelRetentionLabelDispositionReviewStage](Get-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
-Get dispositionReviewStages from security
+Review stages during which reviewers are notified to determine whether a document must be deleted or retained.
 
 ### [Get-MgSecurityProviderTenantSetting](Get-MgSecurityProviderTenantSetting.md)
 Get providerTenantSettings from security
 
 ### [Get-MgSecuritySecureScore](Get-MgSecuritySecureScore.md)
-Get secureScores from security
+Measurements of tenants' security posture to help protect them from threats.
 
 ### [Get-MgSecuritySecureScoreControlProfile](Get-MgSecuritySecureScoreControlProfile.md)
 Get secureScoreControlProfiles from security
@@ -213,13 +216,13 @@ Invoke function getFinalAttachment
 Invoke function getFinalReport
 
 ### [Get-MgSecuritySubjectRightsRequestNote](Get-MgSecuritySubjectRightsRequestNote.md)
-Get notes from security
+List of notes associated with the request.
 
 ### [Get-MgSecuritySubjectRightsRequestTeam](Get-MgSecuritySubjectRightsRequestTeam.md)
-Get team from security
+Information about the Microsoft Teams team that was created for the request.
 
 ### [Get-MgSecurityThreatSubmission](Get-MgSecurityThreatSubmission.md)
-Get threatSubmission from security
+A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.
 
 ### [Get-MgSecurityThreatSubmissionEmailThreat](Get-MgSecurityThreatSubmissionEmailThreat.md)
 Get emailThreats from security
@@ -243,7 +246,7 @@ Get triggers from security
 Get retentionEvents from security
 
 ### [Get-MgSecurityTriggerRetentionEventType](Get-MgSecurityTriggerRetentionEventType.md)
-Get retentionEventType from security
+Specifies the event that will start the retention period for labels that use this event type when an event is created.
 
 ### [Get-MgSecurityTriggerType](Get-MgSecurityTriggerType.md)
 Get triggerTypes from security

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementNotificationMessageTemplate
 
 ## SYNOPSIS
-Get notificationMessageTemplates from deviceManagement
+The Notification Message Templates.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManagemen
 ```
 
 ## DESCRIPTION
-Get notificationMessageTemplates from deviceManagement
+The Notification Message Templates.
 
 ## EXAMPLES
 

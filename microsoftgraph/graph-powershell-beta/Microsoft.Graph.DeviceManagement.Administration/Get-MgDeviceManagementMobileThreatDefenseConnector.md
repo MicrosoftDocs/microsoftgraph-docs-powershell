@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementMobileThreatDefenseConnector
 
 ## SYNOPSIS
-Get mobileThreatDefenseConnectors from deviceManagement
+The list of Mobile threat Defense connectors configured by the tenant.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementMobileThreatDefenseConnector -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Get mobileThreatDefenseConnectors from deviceManagement
+The list of Mobile threat Defense connectors configured by the tenant.
 
 ## EXAMPLES
 

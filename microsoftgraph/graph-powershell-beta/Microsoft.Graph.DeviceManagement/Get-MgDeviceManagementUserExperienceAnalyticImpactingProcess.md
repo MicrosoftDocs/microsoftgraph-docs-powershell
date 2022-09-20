@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticImpactingProcess
 
 ## SYNOPSIS
-Get userExperienceAnalyticsImpactingProcess from deviceManagement
+User experience analytics impacting process
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementUserExperienceAnalyticImpactingProcess -InputObject <IDevi
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsImpactingProcess from deviceManagement
+User experience analytics impacting process
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyMigrationReport
 
 ## SYNOPSIS
-Get groupPolicyMigrationReports from deviceManagement
+A list of Group Policy migration reports.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Get groupPolicyMigrationReports from deviceManagement
+A list of Group Policy migration reports.
 
 ## EXAMPLES
 

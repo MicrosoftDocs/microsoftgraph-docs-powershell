@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 245f2aa3-2cf5-4799-b326-6c17685455f8
+Module Guid: 44ab8194-5e2c-45f0-8d4d-013e09104a47
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
 Help Version: 1.0.0.0
 Locale: en-US
@@ -30,79 +30,88 @@ Invoke function export
 Invoke function export
 
 ### [Get-MgAccessReview](Get-MgAccessReview.md)
-Get accessReview (deprecated)
+In the Azure AD access reviews feature, retrieve an accessReview object.
+ To retrieve the reviewers of the access review, use the list accessReview reviewers API.
+To retrieve the decisions of the access review, use the list accessReview decisions API, or the list my accessReview decisions API.
+If this is a recurring access review, no decisions will be associated with the recurring access review series.
+Instead, use the `instances` relationship of that series to retrieve an accessReview collection of the past, current, and future instances of the access review.
+Each past and current instance will have decisions.
 
 ### [Get-MgAccessReviewDecision](Get-MgAccessReviewDecision.md)
-Get decisions from accessReviews
+The collection of decisions for this access review.
 
 ### [Get-MgAccessReviewInstance](Get-MgAccessReviewInstance.md)
-Get instances from accessReviews
+The collection of access reviews instances past, present and future, if this object is a recurring access review.
 
 ### [Get-MgAccessReviewInstanceDecision](Get-MgAccessReviewInstanceDecision.md)
-Get decisions from accessReviews
+The collection of decisions for this access review.
 
 ### [Get-MgAccessReviewInstanceMyDecision](Get-MgAccessReviewInstanceMyDecision.md)
-Get myDecisions from accessReviews
+The collection of decisions for the caller, if the caller is a reviewer.
 
 ### [Get-MgAccessReviewInstanceReviewer](Get-MgAccessReviewInstanceReviewer.md)
-Get reviewers from accessReviews
+The collection of reviewers for an access review, if access review reviewerType is of type delegated.
 
 ### [Get-MgAccessReviewMyDecision](Get-MgAccessReviewMyDecision.md)
-Get myDecisions from accessReviews
+The collection of decisions for the caller, if the caller is a reviewer.
 
 ### [Get-MgAccessReviewReviewer](Get-MgAccessReviewReviewer.md)
-Get reviewers from accessReviews
+The collection of reviewers for an access review, if access review reviewerType is of type delegated.
 
 ### [Get-MgAgreement](Get-MgAgreement.md)
 Get entity from agreements by key
 
 ### [Get-MgAgreementAcceptance](Get-MgAgreementAcceptance.md)
-Get acceptances from agreements
+Read-only.
+Information about acceptances of this agreement.
 
 ### [Get-MgAgreementFile](Get-MgAgreementFile.md)
-Get file from agreements
+Default PDF linked to this agreement.
 
 ### [Get-MgAgreementFileLocalization](Get-MgAgreementFileLocalization.md)
-Get localizations from agreements
+The localized version of the terms of use agreement files attached to the agreement.
 
 ### [Get-MgAgreementFileLocalizationVersion](Get-MgAgreementFileLocalizationVersion.md)
-Get versions from agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [Get-MgBusinessFlowTemplate](Get-MgBusinessFlowTemplate.md)
 Get entity from businessFlowTemplates by key
 
 ### [Get-MgEntitlementManagementAccessPackage](Get-MgEntitlementManagementAccessPackage.md)
-Get accessPackages from identityGovernance
+Represents access package objects.
 
 ### [Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement](Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement.md)
 Invoke action getApplicablePolicyRequirements
 
 ### [Get-MgEntitlementManagementAccessPackageAssignment](Get-MgEntitlementManagementAccessPackageAssignment.md)
-Get accessPackageAssignments from identityGovernance
+The assignment of an access package to a subject for a period of time.
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentAdditional](Get-MgEntitlementManagementAccessPackageAssignmentAdditional.md)
 Invoke function additionalAccess
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](Get-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
-Get accessPackageAssignmentPolicies from identityGovernance
+Represents the policy that governs which subjects can request or be assigned an access package via an access package assignment.
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](Get-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler.md)
-Get customExtensionHandlers from identityGovernance
+The collection of stages when to execute one or more custom access package workflow extensions.
+Supports $expand.
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentRequest](Get-MgEntitlementManagementAccessPackageAssignmentRequest.md)
-Get accessPackageAssignmentRequests from identityGovernance
+Represents access package assignment requests created by or on behalf of a user.
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentResourceRole](Get-MgEntitlementManagementAccessPackageAssignmentResourceRole.md)
-Get accessPackageAssignmentResourceRoles from identityGovernance
+Represents the resource-specific role which a subject has been assigned through an access package assignment.
 
 ### [Get-MgEntitlementManagementAccessPackageCatalog](Get-MgEntitlementManagementAccessPackageCatalog.md)
-Get accessPackageCatalogs from identityGovernance
+A container of access packages.
 
 ### [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource](Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource.md)
 Get accessPackageResources from identityGovernance
 
 ### [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole](Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole.md)
-Get accessPackageResourceRoles from identityGovernance
+The roles in each resource in a catalog.
+Read-only.
 
 ### [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope](Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope.md)
 Get accessPackageResourceScopes from identityGovernance
@@ -111,31 +120,32 @@ Get accessPackageResourceScopes from identityGovernance
 Get customAccessPackageWorkflowExtensions from identityGovernance
 
 ### [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage](Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage.md)
-Get incompatibleAccessPackages from identityGovernance
+The  access packages whose assigned users are ineligible to be assigned this access package.
 
 ### [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef.md)
-Get ref of incompatibleAccessPackages from identityGovernance
+The  access packages whose assigned users are ineligible to be assigned this access package.
 
 ### [Get-MgEntitlementManagementAccessPackageIncompatibleGroup](Get-MgEntitlementManagementAccessPackageIncompatibleGroup.md)
-Get incompatibleGroups from identityGovernance
+The groups whose members are ineligible to be assigned this access package.
 
 ### [Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef.md)
-Get ref of incompatibleGroups from identityGovernance
+The groups whose members are ineligible to be assigned this access package.
 
 ### [Get-MgEntitlementManagementAccessPackageIncompatibleWith](Get-MgEntitlementManagementAccessPackageIncompatibleWith.md)
-Get accessPackagesIncompatibleWith from identityGovernance
+The access packages that are incompatible with this package.
+Read-only.
 
 ### [Get-MgEntitlementManagementAccessPackageResource](Get-MgEntitlementManagementAccessPackageResource.md)
-Get accessPackageResources from identityGovernance
+A reference to a resource associated with an access package catalog.
 
 ### [Get-MgEntitlementManagementAccessPackageResourceEnvironment](Get-MgEntitlementManagementAccessPackageResourceEnvironment.md)
-Get accessPackageResourceEnvironments from identityGovernance
+A reference to the geolocation environment in which a resource is located.
 
 ### [Get-MgEntitlementManagementAccessPackageResourceRequest](Get-MgEntitlementManagementAccessPackageResourceRequest.md)
-Get accessPackageResourceRequests from identityGovernance
+Represents a request to add or remove a resource to or from a catalog respectively.
 
 ### [Get-MgEntitlementManagementConnectedOrganization](Get-MgEntitlementManagementConnectedOrganization.md)
-Get connectedOrganizations from identityGovernance
+Represents references to a directory or domain of another organization whose users can request access.
 
 ### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsor](Get-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
 Get externalSponsors from identityGovernance
@@ -162,283 +172,357 @@ Get ref of internalSponsors from identityGovernance
 Invoke action getUserOwnedObjects
 
 ### [Get-MgEntitlementManagementSetting](Get-MgEntitlementManagementSetting.md)
-Get settings from identityGovernance
+Represents the settings that control the behavior of Azure AD entitlement management.
 
 ### [Get-MgEntitlementManagementSubject](Get-MgEntitlementManagementSubject.md)
 Get subjects from identityGovernance
 
 ### [Get-MgEntitlementManagementSubjectConnectedOrganization](Get-MgEntitlementManagementSubjectConnectedOrganization.md)
-Get connectedOrganization from identityGovernance
+The connected organization of the subject.
+Read-only.
+Nullable.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecision](Get-MgIdentityGovernanceAccessReviewDecision.md)
-Get decisions from identityGovernance
+Represents an Azure AD access review decision on an instance of a review.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInsight](Get-MgIdentityGovernanceAccessReviewDecisionInsight.md)
-Get insights from identityGovernance
+Insights are recommendations to reviewers on whether to approve or deny a decision.
+There can be multiple insights associated with an accessReviewInstanceDecisionItem.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstance](Get-MgIdentityGovernanceAccessReviewDecisionInstance.md)
-Get instance from identityGovernance
+There is exactly one accessReviewInstance associated with each decision.
+The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewDecisionInstanceContactedReviewer.md)
-Get contactedReviewers from identityGovernance
+Returns the collection of reviewers who were contacted to complete this review.
+While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities.
+Supports $select.
+Read-only.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](Get-MgIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
-Get decisions from identityGovernance
+Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceDecisionInsight](Get-MgIdentityGovernanceAccessReviewDecisionInstanceDecisionInsight.md)
-Get insights from identityGovernance
+Insights are recommendations to reviewers on whether to approve or deny a decision.
+There can be multiple insights associated with an accessReviewInstanceDecisionItem.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceDefinition](Get-MgIdentityGovernanceAccessReviewDecisionInstanceDefinition.md)
-Get definition from identityGovernance
+There is exactly one accessReviewScheduleDefinition associated with each instance.
+It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceStage](Get-MgIdentityGovernanceAccessReviewDecisionInstanceStage.md)
-Get stages from identityGovernance
+If the instance has multiple stages, this returns the collection of stages.
+A new stage will only be created when the previous stage ends.
+The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecision.md)
-Get decisions from identityGovernance
+Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Get-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
-Get insights from identityGovernance
+Insights are recommendations to reviewers on whether to approve or deny a decision.
+There can be multiple insights associated with an accessReviewInstanceDecisionItem.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinition](Get-MgIdentityGovernanceAccessReviewDefinition.md)
-Get definitions from identityGovernance
+Represents the template and scheduling for an access review.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](Get-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
-Get instances from identityGovernance
+Set of access reviews instances for this access review series.
+Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
-Get contactedReviewers from identityGovernance
+Returns the collection of reviewers who were contacted to complete this review.
+While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities.
+Supports $select.
+Read-only.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
-Get decisions from identityGovernance
+Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight.md)
-Get insights from identityGovernance
+Insights are recommendations to reviewers on whether to approve or deny a decision.
+There can be multiple insights associated with an accessReviewInstanceDecisionItem.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance.md)
-Get instance from identityGovernance
+There is exactly one accessReviewInstance associated with each decision.
+The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDefinition](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDefinition.md)
-Get definition from identityGovernance
+There is exactly one accessReviewScheduleDefinition associated with each instance.
+It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
-Get stages from identityGovernance
+If the instance has multiple stages, this returns the collection of stages.
+A new stage will only be created when the previous stage ends.
+The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
-Get decisions from identityGovernance
+Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ### [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](Get-MgIdentityGovernanceAccessReviewHistoryDefinition.md)
-Get historyDefinitions from identityGovernance
+Represents a collection of access review history data and the scopes used to collect that data.
 
 ### [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
-Get instances from identityGovernance
+If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
+A definition that does not recur will have exactly one instance.
 
 ### [Get-MgIdentityGovernanceAccessReviewPolicy](Get-MgIdentityGovernanceAccessReviewPolicy.md)
-Get policy from identityGovernance
+Resource that enables administrators to manage directory-level access review policies in their tenant.
 
 ### [Get-MgIdentityGovernanceAppConsentRequest](Get-MgIdentityGovernanceAppConsentRequest.md)
-Get appConsentRequests from identityGovernance
+A collection of userConsentRequest objects for a specific application.
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest.md)
-Get userConsentRequests from identityGovernance
+A list of pending user consent requests.
+Supports $filter (eq).
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval.md)
-Get approval from identityGovernance
+Approval decisions associated with a request.
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
 Get steps from identityGovernance
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreement](Get-MgIdentityGovernanceTermOfUseAgreement.md)
-Get agreements from identityGovernance
+Represents a tenant's customizable terms of use agreement that's created and managed with Azure Active Directory (Azure AD).
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreementAcceptance](Get-MgIdentityGovernanceTermOfUseAgreementAcceptance.md)
-Get agreementAcceptances from identityGovernance
+Represents the current status of a user's response to a company's customizable terms of use agreement.
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreementFile](Get-MgIdentityGovernanceTermOfUseAgreementFile.md)
-Get file from identityGovernance
+Default PDF linked to this agreement.
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreementFileLocalization](Get-MgIdentityGovernanceTermOfUseAgreementFileLocalization.md)
-Get localizations from identityGovernance
+The localized version of the terms of use agreement files attached to the agreement.
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion](Get-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion.md)
-Get versions from identityGovernance
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [Get-MgPrivilegedAccess](Get-MgPrivilegedAccess.md)
 Get entity from privilegedAccess by key
 
 ### [Get-MgPrivilegedAccessResource](Get-MgPrivilegedAccessResource.md)
-Get resources from privilegedAccess
+A collection of resources for the provider.
 
 ### [Get-MgPrivilegedAccessResourceParent](Get-MgPrivilegedAccessResourceParent.md)
-Get parent from privilegedAccess
+Read-only.
+The parent resource.
+for pimforazurerbac scenario, it can represent the subscription the resource belongs to.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignment](Get-MgPrivilegedAccessResourceRoleAssignment.md)
-Get roleAssignments from privilegedAccess
+The collection of role assignments for the resource.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentLinkedEligibleRoleAssignment](Get-MgPrivilegedAccessResourceRoleAssignmentLinkedEligibleRoleAssignment.md)
-Get linkedEligibleRoleAssignment from privilegedAccess
+Read-only.
+If this is an active assignment and created due to activation on an eligible assignment, it represents the object of that eligible assignment; Otherwise, the value is null.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentRequest](Get-MgPrivilegedAccessResourceRoleAssignmentRequest.md)
-Get roleAssignmentRequests from privilegedAccess
+The collection of role assignment requests for the resource.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentRequestResource](Get-MgPrivilegedAccessResourceRoleAssignmentRequestResource.md)
-Get resource from privilegedAccess
+Read-only.
+The resource that the request aims to.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentRequestRoleDefinition](Get-MgPrivilegedAccessResourceRoleAssignmentRequestRoleDefinition.md)
-Get roleDefinition from privilegedAccess
+Read-only.
+The role definition that the request aims to.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentRequestRoleDefinitionResource](Get-MgPrivilegedAccessResourceRoleAssignmentRequestRoleDefinitionResource.md)
-Get resource from privilegedAccess
+Read-only.
+The associated resource for the role definition.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentRequestRoleDefinitionRoleSetting](Get-MgPrivilegedAccessResourceRoleAssignmentRequestRoleDefinitionRoleSetting.md)
-Get roleSetting from privilegedAccess
+The associated role setting for the role definition.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentRequestSubject](Get-MgPrivilegedAccessResourceRoleAssignmentRequestSubject.md)
-Get subject from privilegedAccess
+Read-only.
+The user/group principal.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentResource](Get-MgPrivilegedAccessResourceRoleAssignmentResource.md)
-Get resource from privilegedAccess
+Read-only.
+The resource associated with the role assignment.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentRoleDefinition](Get-MgPrivilegedAccessResourceRoleAssignmentRoleDefinition.md)
-Get roleDefinition from privilegedAccess
+Read-only.
+The role definition associated with the role assignment.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentRoleDefinitionResource](Get-MgPrivilegedAccessResourceRoleAssignmentRoleDefinitionResource.md)
-Get resource from privilegedAccess
+Read-only.
+The associated resource for the role definition.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentRoleDefinitionRoleSetting](Get-MgPrivilegedAccessResourceRoleAssignmentRoleDefinitionRoleSetting.md)
-Get roleSetting from privilegedAccess
+The associated role setting for the role definition.
 
 ### [Get-MgPrivilegedAccessResourceRoleAssignmentSubject](Get-MgPrivilegedAccessResourceRoleAssignmentSubject.md)
-Get subject from privilegedAccess
+Read-only.
+The subject associated with the role assignment.
 
 ### [Get-MgPrivilegedAccessResourceRoleDefinition](Get-MgPrivilegedAccessResourceRoleDefinition.md)
-Get roleDefinitions from privilegedAccess
+The collection of role defintions for the resource.
 
 ### [Get-MgPrivilegedAccessResourceRoleDefinitionResource](Get-MgPrivilegedAccessResourceRoleDefinitionResource.md)
-Get resource from privilegedAccess
+Read-only.
+The associated resource for the role definition.
 
 ### [Get-MgPrivilegedAccessResourceRoleDefinitionRoleSetting](Get-MgPrivilegedAccessResourceRoleDefinitionRoleSetting.md)
-Get roleSetting from privilegedAccess
+The associated role setting for the role definition.
 
 ### [Get-MgPrivilegedAccessResourceRoleSetting](Get-MgPrivilegedAccessResourceRoleSetting.md)
-Get roleSettings from privilegedAccess
+The collection of role settings for the resource.
 
 ### [Get-MgPrivilegedAccessResourceRoleSettingResource](Get-MgPrivilegedAccessResourceRoleSettingResource.md)
-Get resource from privilegedAccess
+Read-only.
+The associated resource for this role setting.
 
 ### [Get-MgPrivilegedAccessResourceRoleSettingRoleDefinition](Get-MgPrivilegedAccessResourceRoleSettingRoleDefinition.md)
-Get roleDefinition from privilegedAccess
+Read-only.
+The role definition that is enforced with this role setting.
 
 ### [Get-MgPrivilegedAccessResourceRoleSettingRoleDefinitionResource](Get-MgPrivilegedAccessResourceRoleSettingRoleDefinitionResource.md)
-Get resource from privilegedAccess
+Read-only.
+The associated resource for the role definition.
 
 ### [Get-MgPrivilegedAccessResourceRoleSettingRoleDefinitionRoleSetting](Get-MgPrivilegedAccessResourceRoleSettingRoleDefinitionRoleSetting.md)
-Get roleSetting from privilegedAccess
+The associated role setting for the role definition.
 
 ### [Get-MgPrivilegedAccessRoleAssignment](Get-MgPrivilegedAccessRoleAssignment.md)
-Get roleAssignments from privilegedAccess
+A collection of role assignments for the provider.
 
 ### [Get-MgPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment](Get-MgPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment.md)
-Get linkedEligibleRoleAssignment from privilegedAccess
+Read-only.
+If this is an active assignment and created due to activation on an eligible assignment, it represents the object of that eligible assignment; Otherwise, the value is null.
 
 ### [Get-MgPrivilegedAccessRoleAssignmentRequest](Get-MgPrivilegedAccessRoleAssignmentRequest.md)
-Get roleAssignmentRequests from privilegedAccess
+A collection of role assignment requests for the provider.
 
 ### [Get-MgPrivilegedAccessRoleAssignmentRequestResource](Get-MgPrivilegedAccessRoleAssignmentRequestResource.md)
-Get resource from privilegedAccess
+Read-only.
+The resource that the request aims to.
 
 ### [Get-MgPrivilegedAccessRoleAssignmentRequestRoleDefinition](Get-MgPrivilegedAccessRoleAssignmentRequestRoleDefinition.md)
-Get roleDefinition from privilegedAccess
+Read-only.
+The role definition that the request aims to.
 
 ### [Get-MgPrivilegedAccessRoleAssignmentRequestSubject](Get-MgPrivilegedAccessRoleAssignmentRequestSubject.md)
-Get subject from privilegedAccess
+Read-only.
+The user/group principal.
 
 ### [Get-MgPrivilegedAccessRoleAssignmentResource](Get-MgPrivilegedAccessRoleAssignmentResource.md)
-Get resource from privilegedAccess
+Read-only.
+The resource associated with the role assignment.
 
 ### [Get-MgPrivilegedAccessRoleAssignmentRoleDefinition](Get-MgPrivilegedAccessRoleAssignmentRoleDefinition.md)
-Get roleDefinition from privilegedAccess
+Read-only.
+The role definition associated with the role assignment.
 
 ### [Get-MgPrivilegedAccessRoleAssignmentSubject](Get-MgPrivilegedAccessRoleAssignmentSubject.md)
-Get subject from privilegedAccess
+Read-only.
+The subject associated with the role assignment.
 
 ### [Get-MgPrivilegedAccessRoleDefinition](Get-MgPrivilegedAccessRoleDefinition.md)
-Get roleDefinitions from privilegedAccess
+A collection of role defintions for the provider.
 
 ### [Get-MgPrivilegedAccessRoleDefinitionResource](Get-MgPrivilegedAccessRoleDefinitionResource.md)
-Get resource from privilegedAccess
+Read-only.
+The associated resource for the role definition.
 
 ### [Get-MgPrivilegedAccessRoleDefinitionRoleSetting](Get-MgPrivilegedAccessRoleDefinitionRoleSetting.md)
-Get roleSetting from privilegedAccess
+The associated role setting for the role definition.
 
 ### [Get-MgPrivilegedAccessRoleSetting](Get-MgPrivilegedAccessRoleSetting.md)
-Get roleSettings from privilegedAccess
+A collection of role settings for the provider.
 
 ### [Get-MgPrivilegedAccessRoleSettingResource](Get-MgPrivilegedAccessRoleSettingResource.md)
-Get resource from privilegedAccess
+Read-only.
+The associated resource for this role setting.
 
 ### [Get-MgPrivilegedAccessRoleSettingRoleDefinition](Get-MgPrivilegedAccessRoleSettingRoleDefinition.md)
-Get roleDefinition from privilegedAccess
+Read-only.
+The role definition that is enforced with this role setting.
 
 ### [Get-MgPrivilegedApproval](Get-MgPrivilegedApproval.md)
-Get privilegedApproval
+Retrieve the properties and relationships of privilegedapproval object.
 
 ### [Get-MgPrivilegedApprovalRequest](Get-MgPrivilegedApprovalRequest.md)
-Get request from privilegedApproval
+Read-only.
+The role assignment request for this approval object
 
 ### [Get-MgPrivilegedApprovalRoleInfo](Get-MgPrivilegedApprovalRoleInfo.md)
 Get roleInfo from privilegedApproval
 
 ### [Get-MgPrivilegedApprovalRoleInfoAssignment](Get-MgPrivilegedApprovalRoleInfoAssignment.md)
-Get assignments from privilegedApproval
+The assignments for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgPrivilegedApprovalRoleInfoSetting](Get-MgPrivilegedApprovalRoleInfoSetting.md)
-Get settings from privilegedApproval
+The settings for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgPrivilegedApprovalRoleInfoSummary](Get-MgPrivilegedApprovalRoleInfoSummary.md)
-Get summary from privilegedApproval
+The summary information for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgPrivilegedOperationEvent](Get-MgPrivilegedOperationEvent.md)
 Get entity from privilegedOperationEvents by key
 
 ### [Get-MgPrivilegedRole](Get-MgPrivilegedRole.md)
-Get privilegedRole
+Retrieve the properties and relationships of privilegedRole object.
 
 ### [Get-MgPrivilegedRoleAssignmentRequest](Get-MgPrivilegedRoleAssignmentRequest.md)
 Get entity from privilegedRoleAssignmentRequests by key
 
 ### [Get-MgPrivilegedRoleAssignmentRequestRoleInfo](Get-MgPrivilegedRoleAssignmentRequestRoleInfo.md)
-Get roleInfo from privilegedRoleAssignmentRequests
+The roleInfo object of the role assignment request.
 
 ### [Get-MgPrivilegedRoleAssignmentRequestRoleInfoAssignment](Get-MgPrivilegedRoleAssignmentRequestRoleInfoAssignment.md)
-Get assignments from privilegedRoleAssignmentRequests
+The assignments for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgPrivilegedRoleAssignmentRequestRoleInfoSetting](Get-MgPrivilegedRoleAssignmentRequestRoleInfoSetting.md)
-Get settings from privilegedRoleAssignmentRequests
+The settings for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgPrivilegedRoleAssignmentRequestRoleInfoSummary](Get-MgPrivilegedRoleAssignmentRequestRoleInfoSummary.md)
-Get summary from privilegedRoleAssignmentRequests
+The summary information for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgPrivilegedRoleAssignmentRoleInfo](Get-MgPrivilegedRoleAssignmentRoleInfo.md)
-Get roleInfo from privilegedRoleAssignments
+Read-only.
+Nullable.
+The associated role information.
 
 ### [Get-MgPrivilegedRoleAssignmentRoleInfoAssignment](Get-MgPrivilegedRoleAssignmentRoleInfoAssignment.md)
-Get assignments from privilegedRoleAssignments
+The assignments for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgPrivilegedRoleAssignmentRoleInfoSetting](Get-MgPrivilegedRoleAssignmentRoleInfoSetting.md)
-Get settings from privilegedRoleAssignments
+The settings for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgPrivilegedRoleAssignmentRoleInfoSummary](Get-MgPrivilegedRoleAssignmentRoleInfoSummary.md)
-Get summary from privilegedRoleAssignments
+The summary information for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgPrivilegedRoleRoleAssignment](Get-MgPrivilegedRoleRoleAssignment.md)
-Get privilegedRoleAssignment
+Retrieve the properties and relationships of privilegedRoleAssignment object.
 
 ### [Get-MgPrivilegedRoleSetting](Get-MgPrivilegedRoleSetting.md)
-Get settings from privilegedRoles
+The settings for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgPrivilegedRoleSummary](Get-MgPrivilegedRoleSummary.md)
-Get summary from privilegedRoles
+The summary information for this role.
+Read-only.
+Nullable.
 
 ### [Get-MgProgram](Get-MgProgram.md)
 Get entity from programs by key
@@ -447,13 +531,15 @@ Get entity from programs by key
 Get entity from programControls by key
 
 ### [Get-MgProgramControlProgram](Get-MgProgramControlProgram.md)
-Get program from programControls
+The program this control is part of.
 
 ### [Get-MgProgramControlType](Get-MgProgramControlType.md)
 Get entity from programControlTypes by key
 
 ### [Get-MgUserAgreementAcceptance](Get-MgUserAgreementAcceptance.md)
-Get agreementAcceptances from users
+The user's terms of use acceptance statuses.
+Read-only.
+Nullable.
 
 ### [Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation](Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation.md)
 Invoke action acceptRecommendations
@@ -555,7 +641,9 @@ Invoke action selfDeactivate
 Invoke action selfDeactivate
 
 ### [New-MgAccessReview](New-MgAccessReview.md)
-Create accessReview (deprecated)
+In the Azure AD access reviews feature, create a new accessReview object.
+Before making this request, the caller must have previously retrieved the list of business flow templates, to have the value of **businessFlowTemplateId** to include in the request.
+After making this request, the caller should create a programControl, to link the access review to a program.
 
 ### [New-MgAccessReviewDecision](New-MgAccessReviewDecision.md)
 Create new navigation property to decisions for accessReviews
@@ -744,7 +832,7 @@ Create new navigation property to roleDefinitions for privilegedAccess
 Create new navigation property to roleSettings for privilegedAccess
 
 ### [New-MgPrivilegedApproval](New-MgPrivilegedApproval.md)
-Create privilegedApproval
+Use this API to create a new privilegedApproval.
 
 ### [New-MgPrivilegedOperationEvent](New-MgPrivilegedOperationEvent.md)
 Add new entity to privilegedOperationEvents
@@ -753,7 +841,7 @@ Add new entity to privilegedOperationEvents
 Add new entity to privilegedRoles
 
 ### [New-MgPrivilegedRoleAssignment](New-MgPrivilegedRoleAssignment.md)
-Create privilegedRoleAssignment
+Use this API to create a new  privilegedRoleAssignment.
 
 ### [New-MgPrivilegedRoleAssignmentEligible](New-MgPrivilegedRoleAssignmentEligible.md)
 Invoke action makeEligible
@@ -762,13 +850,15 @@ Invoke action makeEligible
 Invoke action makePermanent
 
 ### [New-MgPrivilegedRoleAssignmentRequest](New-MgPrivilegedRoleAssignmentRequest.md)
-Create privilegedRoleAssignmentRequest
+Create a privilegedroleassignmentrequest object.
 
 ### [New-MgProgram](New-MgProgram.md)
-Create program (deprecated)
+In the Azure AD access reviews feature, create a new program object.
 
 ### [New-MgProgramControl](New-MgProgramControl.md)
-Create programControl (deprecated)
+In the Azure AD access reviews feature, create a new programControl object.
+This links an access review to a program.
+Prior to making this request, the caller must have previously
 
 ### [New-MgProgramControlType](New-MgProgramControlType.md)
 Add new entity to programControlTypes
@@ -777,7 +867,7 @@ Add new entity to programControlTypes
 Invoke action register
 
 ### [Remove-MgAccessReview](Remove-MgAccessReview.md)
-Delete accessReview (deprecated)
+In the Azure AD access reviews feature, delete an accessReview object.
 
 ### [Remove-MgAccessReviewDecision](Remove-MgAccessReviewDecision.md)
 Delete navigation property decisions for accessReviews
@@ -1035,7 +1125,7 @@ Delete entity from privilegedOperationEvents
 Delete entity from privilegedRoles
 
 ### [Remove-MgPrivilegedRoleAssignment](Remove-MgPrivilegedRoleAssignment.md)
-Delete privilegedRoleAssignment
+Delete privilegedRoleAssignment.
 
 ### [Remove-MgPrivilegedRoleAssignmentRequest](Remove-MgPrivilegedRoleAssignmentRequest.md)
 Delete entity from privilegedRoleAssignmentRequests
@@ -1065,10 +1155,13 @@ Delete navigation property settings for privilegedRoles
 Delete navigation property summary for privilegedRoles
 
 ### [Remove-MgProgram](Remove-MgProgram.md)
-Delete program (deprecated)
+In the Azure AD access reviews feature, delete a program object.
+Do not delete a program which still has `programControl` linked to it, those access reviews should first be deleted or unlinked from the program and linked to a different program.
+Also, please note that the built-in default program cannot be deleted.
 
 ### [Remove-MgProgramControl](Remove-MgProgramControl.md)
-Delete programControl (deprecated)
+In the Azure AD access reviews feature, delete a programControl object.
+This unlinks an access review from a program.
 
 ### [Remove-MgProgramControlProgram](Remove-MgProgramControlProgram.md)
 Delete navigation property program for programControls
@@ -1149,7 +1242,11 @@ Invoke action validateProperties
 Invoke action validateProperties
 
 ### [Update-MgAccessReview](Update-MgAccessReview.md)
-Update accessReview (deprecated)
+In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties.
+This API is not intended to change the reviewers or decisions of a review.
+To change the reviewers, use the addReviewer or removeReviewer APIs.
+To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the stop API.
+To apply the decisions to the target group or app access rights, use the apply API.
 
 ### [Update-MgAccessReviewDecision](Update-MgAccessReviewDecision.md)
 Update the navigation property decisions in accessReviews
@@ -1380,7 +1477,7 @@ Update the navigation property roleSettings in privilegedAccess
 Update the navigation property roleDefinition in privilegedAccess
 
 ### [Update-MgPrivilegedApproval](Update-MgPrivilegedApproval.md)
-Update privilegedapproval
+Update the properties of privilegedapproval object.
 
 ### [Update-MgPrivilegedApprovalRoleInfo](Update-MgPrivilegedApprovalRoleInfo.md)
 Update the navigation property roleInfo in privilegedApproval
@@ -1428,7 +1525,7 @@ Update the navigation property settings in privilegedRoles
 Update the navigation property summary in privilegedRoles
 
 ### [Update-MgProgram](Update-MgProgram.md)
-Update program (deprecated)
+In the Azure AD access reviews feature, update an existing program object.
 
 ### [Update-MgProgramControl](Update-MgProgramControl.md)
 Update entity in programControls

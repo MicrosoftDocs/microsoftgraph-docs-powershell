@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTelecomExpenseManagementPartner
 
 ## SYNOPSIS
-Get telecomExpenseManagementPartners from deviceManagement
+The telecom expense management partners.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Get telecomExpenseManagementPartners from deviceManagement
+The telecom expense management partners.
 
 ## EXAMPLES
 

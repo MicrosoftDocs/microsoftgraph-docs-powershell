@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfigurationGroupAssignment
 
 ## SYNOPSIS
-Get groupAssignments from deviceManagement
+The list of group assignments for the device configuration profile.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDeviceConfigurationGroupAssignment -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Get groupAssignments from deviceManagement
+The list of group assignments for the device configuration profile.
 
 ## EXAMPLES
 

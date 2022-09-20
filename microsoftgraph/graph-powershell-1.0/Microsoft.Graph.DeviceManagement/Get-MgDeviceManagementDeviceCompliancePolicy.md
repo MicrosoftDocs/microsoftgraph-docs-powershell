@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Get deviceCompliancePolicies from deviceManagement
+The device compliance policies.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Get deviceCompliancePolicies from deviceManagement
+The device compliance policies.
 
 ## EXAMPLES
 

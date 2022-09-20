@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkTeamTemplate
 
 ## SYNOPSIS
-Get teamTemplates from teamwork
+The templates associated with a team.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamworkTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get teamTemplates from teamwork
+The templates associated with a team.
 
 ## EXAMPLES
 

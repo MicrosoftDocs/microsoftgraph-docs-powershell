@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupLifecyclePolicy
 
 ## SYNOPSIS
-Update groupLifecyclePolicy
+Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Update groupLifecyclePolicy
+Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 
 ## EXAMPLES
 

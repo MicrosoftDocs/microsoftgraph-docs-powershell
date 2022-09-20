@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Planner
-Module Guid: 8aa9a79f-0d19-4803-8496-fef69de68cf0
+Module Guid: df1899ba-ca56-442d-8f28-b7b04c0315c5
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,82 +12,126 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Planner Cmdlets
 ### [Get-MgGroupPlanner](Get-MgGroupPlanner.md)
-Get planner from groups
+Selective Planner services available to the group.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupPlannerPlan](Get-MgGroupPlannerPlan.md)
-Get plans from groups
+Read-only.
+Nullable.
+Returns the plannerPlans owned by the group.
 
 ### [Get-MgGroupPlannerPlanBucket](Get-MgGroupPlannerPlanBucket.md)
-Get buckets from groups
+Collection of buckets in the plan.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupPlannerPlanDetail](Get-MgGroupPlannerPlanDetail.md)
-Get details from groups
+Additional details about the plan.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupPlannerPlanTask](Get-MgGroupPlannerPlanTask.md)
-Get tasks from groups
+Collection of tasks in the plan.
+Read-only.
+Nullable.
 
 ### [Get-MgPlanner](Get-MgPlanner.md)
 Get planner
 
 ### [Get-MgPlannerBucket](Get-MgPlannerBucket.md)
-Get buckets from planner
+Read-only.
+Nullable.
+Returns a collection of the specified buckets
 
 ### [Get-MgPlannerBucketTask](Get-MgPlannerBucketTask.md)
-Get tasks from planner
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ### [Get-MgPlannerPlan](Get-MgPlannerPlan.md)
-Get plans from planner
+Read-only.
+Nullable.
+Returns a collection of the specified plans
 
 ### [Get-MgPlannerPlanBucket](Get-MgPlannerPlanBucket.md)
-Get buckets from planner
+Collection of buckets in the plan.
+Read-only.
+Nullable.
 
 ### [Get-MgPlannerPlanDetail](Get-MgPlannerPlanDetail.md)
-Get details from planner
+Additional details about the plan.
+Read-only.
+Nullable.
 
 ### [Get-MgPlannerPlanTask](Get-MgPlannerPlanTask.md)
-Get tasks from planner
+Collection of tasks in the plan.
+Read-only.
+Nullable.
 
 ### [Get-MgPlannerRoster](Get-MgPlannerRoster.md)
-Get rosters from planner
+Read-only.
+Nullable.
+Returns a collection of the specified rosters
 
 ### [Get-MgPlannerRosterMember](Get-MgPlannerRosterMember.md)
-Get members from planner
+Retrieves the members of the plannerRoster.
 
 ### [Get-MgPlannerRosterPlan](Get-MgPlannerRosterPlan.md)
-Get plans from planner
+Retrieves the plans contained by the plannerRoster.
 
 ### [Get-MgPlannerTask](Get-MgPlannerTask.md)
-Get tasks from planner
+Read-only.
+Nullable.
+Returns a collection of the specified tasks
 
 ### [Get-MgPlannerTaskAssignedToTaskBoardFormat](Get-MgPlannerTaskAssignedToTaskBoardFormat.md)
-Get assignedToTaskBoardFormat from planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by assignedTo.
 
 ### [Get-MgPlannerTaskBucketTaskBoardFormat](Get-MgPlannerTaskBucketTaskBoardFormat.md)
-Get bucketTaskBoardFormat from planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ### [Get-MgPlannerTaskDetail](Get-MgPlannerTaskDetail.md)
-Get details from planner
+Read-only.
+Nullable.
+Additional details about the task.
 
 ### [Get-MgPlannerTaskProgressTaskBoardFormat](Get-MgPlannerTaskProgressTaskBoardFormat.md)
-Get progressTaskBoardFormat from planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ### [Get-MgUserPlanner](Get-MgUserPlanner.md)
-Get planner from users
+Selective Planner services available to the user.
+Read-only.
+Nullable.
 
 ### [Get-MgUserPlannerFavoritePlan](Get-MgUserPlannerFavoritePlan.md)
-Get favoritePlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that the user marked as favorites.
 
 ### [Get-MgUserPlannerPlan](Get-MgUserPlannerPlan.md)
 Get plans from users
 
 ### [Get-MgUserPlannerRecentPlan](Get-MgUserPlannerRecentPlan.md)
-Get recentPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
 ### [Get-MgUserPlannerRosterPlan](Get-MgUserPlannerRosterPlan.md)
-Get rosterPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ### [Get-MgUserPlannerTask](Get-MgUserPlannerTask.md)
-Get tasks from users
+Read-only.
+Nullable.
+Returns the plannerTasks assigned to the user.
 
 ### [New-MgPlannerBucket](New-MgPlannerBucket.md)
 Create new navigation property to buckets for planner

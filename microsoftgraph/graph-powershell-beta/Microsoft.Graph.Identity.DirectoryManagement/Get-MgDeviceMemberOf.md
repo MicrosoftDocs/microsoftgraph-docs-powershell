@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgDeviceMemberOf
 
 ## SYNOPSIS
-Get memberOf from devices
+Groups and administrative units that this device is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgDeviceMemberOf -InputObject <IIdentityDirectoryManagementIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Get memberOf from devices
+Groups and administrative units that this device is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

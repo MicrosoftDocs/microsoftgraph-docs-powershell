@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRoleDefinitionRoleAssignment
 
 ## SYNOPSIS
-Get roleAssignments from deviceManagement
+List of Role assignments for this role definition.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Get roleAssignments from deviceManagement
+List of Role assignments for this role definition.
 
 ## EXAMPLES
 

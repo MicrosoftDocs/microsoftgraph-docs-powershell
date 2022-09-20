@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgServicePrincipalAppRoleAssignment
 
 ## SYNOPSIS
-Get appRoleAssignments from servicePrincipals
+App role assignment for another app or service, granted to this service principal.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get appRoleAssignments from servicePrincipals
+App role assignment for another app or service, granted to this service principal.
+Supports $expand.
 
 ## EXAMPLES
 

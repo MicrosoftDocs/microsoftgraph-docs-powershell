@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementComanagedDeviceLogCollectionRequest
 
 ## SYNOPSIS
-Get logCollectionRequests from deviceManagement
+List of log collection requests
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementComanagedDeviceLogCollectionRequest -InputObject <IDeviceM
 ```
 
 ## DESCRIPTION
-Get logCollectionRequests from deviceManagement
+List of log collection requests
 
 ## EXAMPLES
 

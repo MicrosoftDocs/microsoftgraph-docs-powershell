@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: 21f890d0-dea0-488d-a9a6-03a537faed79
+Module Guid: 389f5c22-07b7-4a31-ad9c-1b6b306440a7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,229 +12,372 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Calendar Cmdlets
 ### [Get-MgGroupCalendar](Get-MgGroupCalendar.md)
-Get calendar from groups
+The group's calendar.
+Read-only.
 
 ### [Get-MgGroupCalendarMultiValueExtendedProperty](Get-MgGroupCalendarMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the calendar.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupCalendarPermission](Get-MgGroupCalendarPermission.md)
-Get calendarPermissions from groups
+The permissions of the users with whom the calendar is shared.
 
 ### [Get-MgGroupCalendarSingleValueExtendedProperty](Get-MgGroupCalendarSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from groups
+The collection of single-value extended properties defined for the calendar.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupCalendarView](Get-MgGroupCalendarView.md)
-Get calendarView from groups
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ### [Get-MgGroupEvent](Get-MgGroupEvent.md)
-Get events from groups
+The group's events.
 
 ### [Get-MgGroupEventAttachment](Get-MgGroupEventAttachment.md)
-Get attachments from groups
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventCalendar](Get-MgGroupEventCalendar.md)
-Get calendar from groups
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Get-MgGroupEventExceptionOccurrence](Get-MgGroupEventExceptionOccurrence.md)
 Get exceptionOccurrences from groups
 
 ### [Get-MgGroupEventExceptionOccurrenceAttachment](Get-MgGroupEventExceptionOccurrenceAttachment.md)
-Get attachments from groups
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventExceptionOccurrenceCalendar](Get-MgGroupEventExceptionOccurrenceCalendar.md)
-Get calendar from groups
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Get-MgGroupEventExceptionOccurrenceExtension](Get-MgGroupEventExceptionOccurrenceExtension.md)
-Get extensions from groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ### [Get-MgGroupEventExceptionOccurrenceInstance](Get-MgGroupEventExceptionOccurrenceInstance.md)
-Get instances from groups
+The occurrences of a recurring series, if the event is a series master.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventExceptionOccurrenceInstanceAttachment](Get-MgGroupEventExceptionOccurrenceInstanceAttachment.md)
-Get attachments from groups
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventExceptionOccurrenceInstanceCalendar](Get-MgGroupEventExceptionOccurrenceInstanceCalendar.md)
-Get calendar from groups
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Get-MgGroupEventExceptionOccurrenceInstanceExtension](Get-MgGroupEventExceptionOccurrenceInstanceExtension.md)
-Get extensions from groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ### [Get-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty](Get-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty](Get-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from groups
+The collection of single-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty](Get-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventExceptionOccurrenceSingleValueExtendedProperty](Get-MgGroupEventExceptionOccurrenceSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from groups
+The collection of single-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventExtension](Get-MgGroupEventExtension.md)
-Get extensions from groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ### [Get-MgGroupEventInstance](Get-MgGroupEventInstance.md)
-Get instances from groups
+The occurrences of a recurring series, if the event is a series master.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventInstanceAttachment](Get-MgGroupEventInstanceAttachment.md)
-Get attachments from groups
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventInstanceCalendar](Get-MgGroupEventInstanceCalendar.md)
-Get calendar from groups
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Get-MgGroupEventInstanceExceptionOccurrence](Get-MgGroupEventInstanceExceptionOccurrence.md)
 Get exceptionOccurrences from groups
 
 ### [Get-MgGroupEventInstanceExceptionOccurrenceAttachment](Get-MgGroupEventInstanceExceptionOccurrenceAttachment.md)
-Get attachments from groups
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventInstanceExceptionOccurrenceCalendar](Get-MgGroupEventInstanceExceptionOccurrenceCalendar.md)
-Get calendar from groups
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Get-MgGroupEventInstanceExceptionOccurrenceExtension](Get-MgGroupEventInstanceExceptionOccurrenceExtension.md)
-Get extensions from groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ### [Get-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty](Get-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty](Get-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from groups
+The collection of single-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventInstanceExtension](Get-MgGroupEventInstanceExtension.md)
-Get extensions from groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ### [Get-MgGroupEventInstanceMultiValueExtendedProperty](Get-MgGroupEventInstanceMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventInstanceSingleValueExtendedProperty](Get-MgGroupEventInstanceSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from groups
+The collection of single-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventMultiValueExtendedProperty](Get-MgGroupEventMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventSingleValueExtendedProperty](Get-MgGroupEventSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from groups
+The collection of single-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgPlace](Get-MgPlace.md)
-Get place
+Get the properties and relationships of a place object specified by either its ID or email address.
+The **place** object can be one of the following types: The **room**, **workspace**, and **roomList** resources are derived from the **place** object.
 
 ### [Get-MgUserCalendar](Get-MgUserCalendar.md)
-Get calendars from users
+The user's calendars.
+Read-only.
+Nullable.
 
 ### [Get-MgUserCalendarEvent](Get-MgUserCalendarEvent.md)
-Get events from users
+The events in the calendar.
+Navigation property.
+Read-only.
 
 ### [Get-MgUserCalendarGroup](Get-MgUserCalendarGroup.md)
-Get calendarGroups from users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ### [Get-MgUserCalendarGroupCalendar](Get-MgUserCalendarGroupCalendar.md)
-Get calendars from users
+The calendars in the calendar group.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgUserCalendarMultiValueExtendedProperty](Get-MgUserCalendarMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the calendar.
+Read-only.
+Nullable.
 
 ### [Get-MgUserCalendarPermission](Get-MgUserCalendarPermission.md)
-Get calendarPermissions from users
+The permissions of the users with whom the calendar is shared.
 
 ### [Get-MgUserCalendarSingleValueExtendedProperty](Get-MgUserCalendarSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the calendar.
+Read-only.
+Nullable.
 
 ### [Get-MgUserCalendarView](Get-MgUserCalendarView.md)
-Get calendarView from users
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ### [Get-MgUserDefaultCalendar](Get-MgUserDefaultCalendar.md)
-Get calendar from users
+The user's primary calendar.
+Read-only.
 
 ### [Get-MgUserEvent](Get-MgUserEvent.md)
-Get events from users
+The user's events.
+Default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventAttachment](Get-MgUserEventAttachment.md)
-Get attachments from users
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventCalendar](Get-MgUserEventCalendar.md)
-Get calendar from users
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Get-MgUserEventExceptionOccurrence](Get-MgUserEventExceptionOccurrence.md)
 Get exceptionOccurrences from users
 
 ### [Get-MgUserEventExceptionOccurrenceAttachment](Get-MgUserEventExceptionOccurrenceAttachment.md)
-Get attachments from users
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventExceptionOccurrenceCalendar](Get-MgUserEventExceptionOccurrenceCalendar.md)
-Get calendar from users
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Get-MgUserEventExceptionOccurrenceExtension](Get-MgUserEventExceptionOccurrenceExtension.md)
-Get extensions from users
+The collection of open extensions defined for the event.
+Nullable.
 
 ### [Get-MgUserEventExceptionOccurrenceInstance](Get-MgUserEventExceptionOccurrenceInstance.md)
-Get instances from users
+The occurrences of a recurring series, if the event is a series master.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventExceptionOccurrenceInstanceAttachment](Get-MgUserEventExceptionOccurrenceInstanceAttachment.md)
-Get attachments from users
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventExceptionOccurrenceInstanceCalendar](Get-MgUserEventExceptionOccurrenceInstanceCalendar.md)
-Get calendar from users
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Get-MgUserEventExceptionOccurrenceInstanceExtension](Get-MgUserEventExceptionOccurrenceInstanceExtension.md)
-Get extensions from users
+The collection of open extensions defined for the event.
+Nullable.
 
 ### [Get-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty](Get-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventExceptionOccurrenceInstanceSingleValueExtendedProperty](Get-MgUserEventExceptionOccurrenceInstanceSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventExceptionOccurrenceMultiValueExtendedProperty](Get-MgUserEventExceptionOccurrenceMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventExceptionOccurrenceSingleValueExtendedProperty](Get-MgUserEventExceptionOccurrenceSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventExtension](Get-MgUserEventExtension.md)
-Get extensions from users
+The collection of open extensions defined for the event.
+Nullable.
 
 ### [Get-MgUserEventInstance](Get-MgUserEventInstance.md)
-Get instances from users
+The occurrences of a recurring series, if the event is a series master.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventInstanceAttachment](Get-MgUserEventInstanceAttachment.md)
-Get attachments from users
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventInstanceCalendar](Get-MgUserEventInstanceCalendar.md)
-Get calendar from users
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Get-MgUserEventInstanceExceptionOccurrence](Get-MgUserEventInstanceExceptionOccurrence.md)
 Get exceptionOccurrences from users
 
 ### [Get-MgUserEventInstanceExceptionOccurrenceAttachment](Get-MgUserEventInstanceExceptionOccurrenceAttachment.md)
-Get attachments from users
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventInstanceExceptionOccurrenceCalendar](Get-MgUserEventInstanceExceptionOccurrenceCalendar.md)
-Get calendar from users
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Get-MgUserEventInstanceExceptionOccurrenceExtension](Get-MgUserEventInstanceExceptionOccurrenceExtension.md)
-Get extensions from users
+The collection of open extensions defined for the event.
+Nullable.
 
 ### [Get-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty](Get-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventInstanceExceptionOccurrenceSingleValueExtendedProperty](Get-MgUserEventInstanceExceptionOccurrenceSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventInstanceExtension](Get-MgUserEventInstanceExtension.md)
-Get extensions from users
+The collection of open extensions defined for the event.
+Nullable.
 
 ### [Get-MgUserEventInstanceMultiValueExtendedProperty](Get-MgUserEventInstanceMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventInstanceSingleValueExtendedProperty](Get-MgUserEventInstanceSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventMultiValueExtendedProperty](Get-MgUserEventMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [Get-MgUserEventSingleValueExtendedProperty](Get-MgUserEventSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the event.
+Read-only.
+Nullable.
 
 ### [New-MgGroupCalendarMultiValueExtendedProperty](New-MgGroupCalendarMultiValueExtendedProperty.md)
 Create new navigation property to multiValueExtendedProperties for groups
@@ -681,7 +824,8 @@ Update the navigation property multiValueExtendedProperties in groups
 Update the navigation property singleValueExtendedProperties in groups
 
 ### [Update-MgPlace](Update-MgPlace.md)
-Update place
+Update the properties of place object, which can be a room, workspace, or roomList.
+You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
 
 ### [Update-MgUserCalendar](Update-MgUserCalendar.md)
 Update the navigation property calendars in users

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementManagedDeviceSecurityBaselineState
 
 ## SYNOPSIS
-Get securityBaselineStates from deviceManagement
+Security baseline states for this device.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementManagedDeviceSecurityBaselineState -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Get securityBaselineStates from deviceManagement
+Security baseline states for this device.
 
 ## EXAMPLES
 

@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgGroupThreadPostExtension
 
 ## SYNOPSIS
-Get extensions from groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgGroupThreadPostExtension -InputObject <IGroupsIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get extensions from groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationMeClass
 
 ## SYNOPSIS
-Get classes from education
+Classes to which the user belongs.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgEducationMeClass -InputObject <IEducationIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get classes from education
+Classes to which the user belongs.
+Nullable.
 
 ## EXAMPLES
 

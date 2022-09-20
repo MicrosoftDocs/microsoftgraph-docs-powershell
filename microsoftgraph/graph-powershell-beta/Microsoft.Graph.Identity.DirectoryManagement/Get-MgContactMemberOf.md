@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgContactMemberOf
 
 ## SYNOPSIS
-Get memberOf from contacts
+Groups that this contact is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgContactMemberOf -InputObject <IIdentityDirectoryManagementIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get memberOf from contacts
+Groups that this contact is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

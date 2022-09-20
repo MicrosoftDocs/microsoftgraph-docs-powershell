@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserDriveActivity
 
 ## SYNOPSIS
-Get activities from users
+The list of recent activities that took place under this drive.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgUserDriveActivity -DriveId <String> -UserId <String> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get activities from users
+The list of recent activities that took place under this drive.
 
 ## EXAMPLES
 

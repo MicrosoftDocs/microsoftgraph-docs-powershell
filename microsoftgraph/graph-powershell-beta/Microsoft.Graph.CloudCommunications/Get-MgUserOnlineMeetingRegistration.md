@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserOnlineMeetingRegistration
 
 ## SYNOPSIS
-Get registration from users
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdentity> 
 ```
 
 ## DESCRIPTION
-Get registration from users
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserTransitiveMemberOf
 
 ## SYNOPSIS
-Get transitiveMemberOf from users
+The groups, including nested groups, and directory roles that a user is a member of.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgUserTransitiveMemberOf -InputObject <IUsersIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get transitiveMemberOf from users
+The groups, including nested groups, and directory roles that a user is a member of.
+Nullable.
 
 ## EXAMPLES
 

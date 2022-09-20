@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState
 
 ## SYNOPSIS
-Get deviceStates from deviceManagement
+Navigational property to a list of device states for this pool.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState -InputObject <IDe
 ```
 
 ## DESCRIPTION
-Get deviceStates from deviceManagement
+Navigational property to a list of device states for this pool.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkDeletedTeam
 
 ## SYNOPSIS
-Get deletedTeams from teamwork
+A collection of deleted teams.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get deletedTeams from teamwork
+A collection of deleted teams.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementReportExportJob
 
 ## SYNOPSIS
-Get exportJobs from deviceManagement
+Entity representing a job to export a report
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementReportExportJob -InputObject <IReportsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get exportJobs from deviceManagement
+Entity representing a job to export a report
 
 ## EXAMPLES
 
@@ -273,7 +273,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[PrintUsageByUserId <String>]`: key: id of printUsageByUser
   - `[PrinterId <String>]`: Usage: printerId='{printerId}'
   - `[ProvisioningObjectSummaryId <String>]`: key: id of provisioningObjectSummary
-  - `[RestrictedSignInId <String>]`: key: id of restrictedSignIn
   - `[SignInId <String>]`: key: id of signIn
   - `[Skip <Int32?>]`: Usage: skip={skip}
   - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'

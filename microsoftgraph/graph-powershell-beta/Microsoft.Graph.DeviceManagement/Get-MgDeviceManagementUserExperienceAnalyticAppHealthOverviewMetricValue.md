@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue
 
 ## SYNOPSIS
-Get metricValues from deviceManagement
+The metric values for the user experience analytics category.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue
 ```
 
 ## DESCRIPTION
-Get metricValues from deviceManagement
+The metric values for the user experience analytics category.
 
 ## EXAMPLES
 

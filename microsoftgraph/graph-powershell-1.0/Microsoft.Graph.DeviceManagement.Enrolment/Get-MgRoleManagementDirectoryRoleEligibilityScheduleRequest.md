@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest
 
 ## SYNOPSIS
-Get roleEligibilityScheduleRequests from roleManagement
+Requests for role eligibilities for principals through PIM.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Get roleEligibilityScheduleRequests from roleManagement
+Requests for role eligibilities for principals through PIM.
 
 ## EXAMPLES
 

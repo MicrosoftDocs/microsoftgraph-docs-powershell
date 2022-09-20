@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgServicePrincipalOwner
 
 ## SYNOPSIS
-Get owners from servicePrincipals
+Directory objects that are owners of this servicePrincipal.
+The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +23,11 @@ Get-MgServicePrincipalOwner -ServicePrincipalId <String> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get owners from servicePrincipals
+Directory objects that are owners of this servicePrincipal.
+The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

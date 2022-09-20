@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgPlannerBucketTask
 
 ## SYNOPSIS
-Get tasks from planner
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get tasks from planner
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ## EXAMPLES
 

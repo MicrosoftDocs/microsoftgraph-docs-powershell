@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserRegisteredDevice
 
 ## SYNOPSIS
-Get registeredDevices from users
+Devices that are registered for the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgUserRegisteredDevice -InputObject <IUsersIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get registeredDevices from users
+Devices that are registered for the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Get roleDefinitions from deviceManagement
+The Role Definitions.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministrati
 ```
 
 ## DESCRIPTION
-Get roleDefinitions from deviceManagement
+The Role Definitions.
 
 ## EXAMPLES
 

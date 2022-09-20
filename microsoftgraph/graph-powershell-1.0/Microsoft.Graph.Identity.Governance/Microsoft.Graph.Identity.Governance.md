@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 245f2aa3-2cf5-4799-b326-6c17685455f8
+Module Guid: 44ab8194-5e2c-45f0-8d4d-013e09104a47
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,25 +18,27 @@ Invoke action applyDecisions
 Get entity from agreements by key
 
 ### [Get-MgAgreementAcceptance](Get-MgAgreementAcceptance.md)
-Get acceptances from agreements
+Read-only.
+Information about acceptances of this agreement.
 
 ### [Get-MgAgreementFile](Get-MgAgreementFile.md)
-Get file from agreements
+Default PDF linked to this agreement.
 
 ### [Get-MgAgreementFileLocalization](Get-MgAgreementFileLocalization.md)
-Get localizations from agreements
+The localized version of the terms of use agreement files attached to the agreement.
 
 ### [Get-MgAgreementFileLocalizationVersion](Get-MgAgreementFileLocalizationVersion.md)
-Get versions from agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [Get-MgEntitlementManagementAccessPackage](Get-MgEntitlementManagementAccessPackage.md)
-Get accessPackages from identityGovernance
+Access packages define the collection of resource roles and the policies for which subjects can request or be assigned access to those resources.
 
 ### [Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement](Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement.md)
 Invoke action getApplicablePolicyRequirements
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
-Get stages from identityGovernance
+A collection of stages in the approval decision.
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](Get-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Get assignmentPolicies from identityGovernance
@@ -45,22 +47,24 @@ Get assignmentPolicies from identityGovernance
 Get catalog from identityGovernance
 
 ### [Get-MgEntitlementManagementAssignment](Get-MgEntitlementManagementAssignment.md)
-Get assignments from identityGovernance
+The assignment of an access package to a subject for a period of time.
 
 ### [Get-MgEntitlementManagementAssignmentPolicy](Get-MgEntitlementManagementAssignmentPolicy.md)
-Get assignmentPolicies from identityGovernance
+Access package assignment policies govern which subjects can request or be assigned an access package via an access package assignment.
 
 ### [Get-MgEntitlementManagementAssignmentPolicyAccessPackage](Get-MgEntitlementManagementAssignmentPolicyAccessPackage.md)
-Get accessPackage from identityGovernance
+Access package containing this policy.
+Read-only.
 
 ### [Get-MgEntitlementManagementAssignmentPolicyCatalog](Get-MgEntitlementManagementAssignmentPolicyCatalog.md)
-Get catalog from identityGovernance
+Catalog of the access package containing this policy.
+Read-only.
 
 ### [Get-MgEntitlementManagementAssignmentRequest](Get-MgEntitlementManagementAssignmentRequest.md)
-Get assignmentRequests from identityGovernance
+Access package assignment requests created by or on behalf of a subject.
 
 ### [Get-MgEntitlementManagementCatalog](Get-MgEntitlementManagementCatalog.md)
-Get catalogs from identityGovernance
+A container for access packages.
 
 ### [Get-MgEntitlementManagementCatalogAccessPackageApplicablePolicyRequirement](Get-MgEntitlementManagementCatalogAccessPackageApplicablePolicyRequirement.md)
 Invoke action getApplicablePolicyRequirements
@@ -69,13 +73,15 @@ Invoke action getApplicablePolicyRequirements
 Get assignmentPolicies from identityGovernance
 
 ### [Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyAccessPackage](Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyAccessPackage.md)
-Get accessPackage from identityGovernance
+Access package containing this policy.
+Read-only.
 
 ### [Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyCatalog](Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyCatalog.md)
-Get catalog from identityGovernance
+Catalog of the access package containing this policy.
+Read-only.
 
 ### [Get-MgEntitlementManagementConnectedOrganization](Get-MgEntitlementManagementConnectedOrganization.md)
-Get connectedOrganizations from identityGovernance
+References to a directory or domain of another organization whose users can request access.
 
 ### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsor](Get-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
 Get externalSponsors from identityGovernance
@@ -102,61 +108,74 @@ Invoke action getByIds
 Get ref of internalSponsors from identityGovernance
 
 ### [Get-MgEntitlementManagementSetting](Get-MgEntitlementManagementSetting.md)
-Get settings from identityGovernance
+The settings that control the behavior of Azure AD entitlement management.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinition](Get-MgIdentityGovernanceAccessReviewDefinition.md)
-Get definitions from identityGovernance
+Represents the template and scheduling for an access review.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](Get-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
-Get instances from identityGovernance
+If the accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence.
+A review that does not recur will have exactly one instance.
+Instances also represent each unique resource under review in the accessReviewScheduleDefinition.
+If a review has multiple resources and multiple instances, each resource will have a unique instance for each recurrence.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
-Get contactedReviewers from identityGovernance
+Returns the collection of reviewers who were contacted to complete this review.
+While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities.
+Supports $select.
+Read-only.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
-Get decisions from identityGovernance
+Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
-Get stages from identityGovernance
+If the instance has multiple stages, this returns the collection of stages.
+A new stage will only be created when the previous stage ends.
+The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
-Get decisions from identityGovernance
+Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ### [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](Get-MgIdentityGovernanceAccessReviewHistoryDefinition.md)
-Get historyDefinitions from identityGovernance
+Represents a collection of access review history data and the scopes used to collect that data.
 
 ### [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
-Get instances from identityGovernance
+If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
+A definition that does not recur will have exactly one instance.
 
 ### [Get-MgIdentityGovernanceAppConsentRequest](Get-MgIdentityGovernanceAppConsentRequest.md)
-Get appConsentRequests from identityGovernance
+A collection of userConsentRequest objects for a specific application.
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest.md)
-Get userConsentRequests from identityGovernance
+A list of pending user consent requests.
+Supports $filter (eq).
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval.md)
-Get approval from identityGovernance
+Approval decisions associated with a request.
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage.md)
-Get stages from identityGovernance
+A collection of stages in the approval decision.
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreement](Get-MgIdentityGovernanceTermOfUseAgreement.md)
-Get agreements from identityGovernance
+Represents a tenant's customizable terms of use agreement that's created and managed with Azure Active Directory (Azure AD).
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreementAcceptance](Get-MgIdentityGovernanceTermOfUseAgreementAcceptance.md)
-Get agreementAcceptances from identityGovernance
+Represents the current status of a user's response to a company's customizable terms of use agreement.
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreementFile](Get-MgIdentityGovernanceTermOfUseAgreementFile.md)
-Get file from identityGovernance
+Default PDF linked to this agreement.
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreementFileLocalization](Get-MgIdentityGovernanceTermOfUseAgreementFileLocalization.md)
-Get localizations from identityGovernance
+The localized version of the terms of use agreement files attached to the agreement.
 
 ### [Get-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion](Get-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion.md)
-Get versions from identityGovernance
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [Get-MgUserAgreementAcceptance](Get-MgUserAgreementAcceptance.md)
-Get agreementAcceptances from users
+The user's terms of use acceptance statuses.
+Read-only.
+Nullable.
 
 ### [Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation.md)
 Invoke action acceptRecommendations

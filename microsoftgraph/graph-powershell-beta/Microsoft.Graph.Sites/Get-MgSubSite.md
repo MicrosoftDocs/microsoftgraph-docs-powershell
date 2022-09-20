@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSubSite
 
 ## SYNOPSIS
-Get sites from sites
+The collection of the sub-sites under this site.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prope
 ```
 
 ## DESCRIPTION
-Get sites from sites
+The collection of the sub-sites under this site.
 
 ## EXAMPLES
 

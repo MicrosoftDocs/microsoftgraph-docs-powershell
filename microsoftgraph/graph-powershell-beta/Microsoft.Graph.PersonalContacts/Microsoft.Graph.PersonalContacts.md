@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.PersonalContacts
-Module Guid: 6f74410c-8fe0-476d-8c73-a868916f5cd2
+Module Guid: f27fbdc3-9209-4c39-be4c-384ec3d75d98
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,7 +15,8 @@ Microsoft Graph PowerShell Cmdlets
 Get contacts from users
 
 ### [Get-MgUserContactExtension](Get-MgUserContactExtension.md)
-Get extensions from users
+The collection of open extensions defined for the contact.
+Nullable.
 
 ### [Get-MgUserContactFolder](Get-MgUserContactFolder.md)
 Get contactFolders from users
@@ -24,34 +25,48 @@ Get contactFolders from users
 Get childFolders from users
 
 ### [Get-MgUserContactFolderChildFolderContact](Get-MgUserContactFolderChildFolderContact.md)
-Get contacts from users
+The contacts in the folder.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgUserContactFolderChildFolderContactExtension](Get-MgUserContactFolderChildFolderContactExtension.md)
-Get extensions from users
+The collection of open extensions defined for the contact.
+Nullable.
 
 ### [Get-MgUserContactFolderChildFolderContactMultiValueExtendedProperty](Get-MgUserContactFolderChildFolderContactMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the contact.
+Read-only.
+Nullable.
 
 ### [Get-MgUserContactFolderChildFolderContactPhoto](Get-MgUserContactFolderChildFolderContactPhoto.md)
-Get photo from users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ### [Get-MgUserContactFolderChildFolderContactPhotoContent](Get-MgUserContactFolderChildFolderContactPhotoContent.md)
 Get media content for the navigation property photo from users
 
 ### [Get-MgUserContactFolderChildFolderContactSingleValueExtendedProperty](Get-MgUserContactFolderChildFolderContactSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the contact.
+Read-only.
+Nullable.
 
 ### [Get-MgUserContactFolderChildFolderMultiValueExtendedProperty](Get-MgUserContactFolderChildFolderMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the contactFolder.
+Read-only.
+Nullable.
 
 ### [Get-MgUserContactFolderChildFolderSingleValueExtendedProperty](Get-MgUserContactFolderChildFolderSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the contactFolder.
+Read-only.
+Nullable.
 
 ### [Get-MgUserContactFolderContact](Get-MgUserContactFolderContact.md)
 Get contacts from users
 
 ### [Get-MgUserContactFolderContactExtension](Get-MgUserContactFolderContactExtension.md)
-Get extensions from users
+The collection of open extensions defined for the contact.
+Nullable.
 
 ### [Get-MgUserContactFolderContactMultiValueExtendedProperty](Get-MgUserContactFolderContactMultiValueExtendedProperty.md)
 Get multiValueExtendedProperties from users

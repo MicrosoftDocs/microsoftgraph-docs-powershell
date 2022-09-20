@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareDriveItem
 
 ## SYNOPSIS
-Get driveItem from shares
+Used to access the underlying driveItem
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgShareDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get driveItem from shares
+Used to access the underlying driveItem
 
 ## EXAMPLES
 

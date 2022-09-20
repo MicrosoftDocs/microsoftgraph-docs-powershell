@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail
 
 ## SYNOPSIS
-Get assignmentFilterEvaluationStatusDetails from deviceManagement
+Managed device mobile app configuration states for this device.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail
 ```
 
 ## DESCRIPTION
-Get assignmentFilterEvaluationStatusDetails from deviceManagement
+Managed device mobile app configuration states for this device.
 
 ## EXAMPLES
 

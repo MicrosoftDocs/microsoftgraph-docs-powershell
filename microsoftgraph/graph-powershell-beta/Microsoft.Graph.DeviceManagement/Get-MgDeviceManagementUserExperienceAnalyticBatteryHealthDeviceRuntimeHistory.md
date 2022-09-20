@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory
 
 ## SYNOPSIS
-Get userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory from deviceManagement
+User Experience Analytics Battery Health Device Runtime History
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory from deviceManagement
+User Experience Analytics Battery Health Device Runtime History
 
 ## EXAMPLES
 

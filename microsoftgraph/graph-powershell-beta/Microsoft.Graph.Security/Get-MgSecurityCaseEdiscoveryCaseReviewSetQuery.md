@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Get queries from security
+Represents queries within the review set.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentity> 
 ```
 
 ## DESCRIPTION
-Get queries from security
+Represents queries within the review set.
 
 ## EXAMPLES
 

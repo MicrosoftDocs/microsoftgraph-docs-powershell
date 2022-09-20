@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgDeviceRegisteredUser
 
 ## SYNOPSIS
-Get registeredUsers from devices
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +36,11 @@ Get-MgDeviceRegisteredUser -InputObject <IIdentityDirectoryManagementIdentity> [
 ```
 
 ## DESCRIPTION
-Get registeredUsers from devices
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBookingBusinessAppointment
 
 ## SYNOPSIS
-Get appointments from bookingBusinesses
+All the appointments of this business.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get appointments from bookingBusinesses
+All the appointments of this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

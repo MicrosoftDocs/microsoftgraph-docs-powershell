@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgSitePermission
 
 ## SYNOPSIS
-Get permissions from sites
+The permissions associated with the site.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get permissions from sites
+The permissions associated with the site.
+Nullable.
 
 ## EXAMPLES
 

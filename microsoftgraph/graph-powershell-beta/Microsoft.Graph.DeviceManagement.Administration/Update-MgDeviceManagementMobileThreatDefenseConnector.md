@@ -499,6 +499,7 @@ BODYPARAMETER `<IMicrosoftGraphMobileThreatDefenseConnector>`: Entity which repr
   - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
   - `[WindowsDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Windows, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   - `[WindowsEnabled <Boolean?>]`: For Windows, get or set whether data from the data sync partner should be used during compliance evaluations
+  - `[WindowsMobileApplicationManagementEnabled <Boolean?>]`: When TRUE, app protection policies using the Device Threat Level rule will evaluate devices including data from this connector for Windows. When FALSE, Intune will not use device risk details sent over this connector during app protection policies calculation for policies with a Device Threat Level configured. Existing devices that are not compliant due to risk levels obtained from this connector will also become compliant.
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent

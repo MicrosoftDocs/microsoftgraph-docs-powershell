@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceHealthScript
 
 ## SYNOPSIS
-Get deviceHealthScripts from deviceManagement
+The list of device health scripts associated with the tenant.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDeviceHealthScript -InputObject <IDeviceManagementIdentity
 ```
 
 ## DESCRIPTION
-Get deviceHealthScripts from deviceManagement
+The list of device health scripts associated with the tenant.
 
 ## EXAMPLES
 

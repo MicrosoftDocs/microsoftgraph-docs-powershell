@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTroubleshootingEvent
 
 ## SYNOPSIS
-Get troubleshootingEvents from deviceManagement
+The list of troubleshooting events for the tenant.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementTroubleshootingEvent -InputObject <IDeviceManagementIdenti
 ```
 
 ## DESCRIPTION
-Get troubleshootingEvents from deviceManagement
+The list of troubleshooting events for the tenant.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointAuditEvent
 
 ## SYNOPSIS
-Get auditEvents from deviceManagement
+Cloud PC audit event.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementVirtualEndpointAuditEvent -InputObject <IDeviceManagementA
 ```
 
 ## DESCRIPTION
-Get auditEvents from deviceManagement
+Cloud PC audit event.
 
 ## EXAMPLES
 

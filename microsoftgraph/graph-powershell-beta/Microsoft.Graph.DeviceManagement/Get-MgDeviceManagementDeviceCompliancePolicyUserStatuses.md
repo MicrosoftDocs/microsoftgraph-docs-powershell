@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCompliancePolicyUserStatuses
 
 ## SYNOPSIS
-Get userStatuses from deviceManagement
+List of DeviceComplianceUserStatus.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementDeviceCompliancePolicyUserStatuses -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Get userStatuses from deviceManagement
+List of DeviceComplianceUserStatus.
 
 ## EXAMPLES
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerFavoritePlan
 
 ## SYNOPSIS
-Get favoritePlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that the user marked as favorites.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserPlannerFavoritePlan -InputObject <IPlannerIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get favoritePlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that the user marked as favorites.
 
 ## EXAMPLES
 

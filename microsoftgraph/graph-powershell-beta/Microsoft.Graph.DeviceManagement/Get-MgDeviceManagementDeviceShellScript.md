@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceShellScript
 
 ## SYNOPSIS
-Get deviceShellScripts from deviceManagement
+The list of device shell scripts associated with the tenant.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDeviceShellScript -InputObject <IDeviceManagementIdentity>
 ```
 
 ## DESCRIPTION
-Get deviceShellScripts from deviceManagement
+The list of device shell scripts associated with the tenant.
 
 ## EXAMPLES
 

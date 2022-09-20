@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPerson
 
 ## SYNOPSIS
-Get people from users
+People that are relevant to the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -29,7 +31,9 @@ Get-MgUserPerson -InputObject <IPeopleIdentity> [-Property <String[]>] [<CommonP
 ```
 
 ## DESCRIPTION
-Get people from users
+People that are relevant to the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyCategory
 
 ## SYNOPSIS
-Get groupPolicyCategories from deviceManagement
+The available group policy categories for this account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementGroupPolicyCategory -InputObject <IDeviceManagementAdminis
 ```
 
 ## DESCRIPTION
-Get groupPolicyCategories from deviceManagement
+The available group policy categories for this account.
 
 ## EXAMPLES
 

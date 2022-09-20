@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDevice
 
 ## SYNOPSIS
-Get device
+Get the properties and relationships of a device object.
+Since the **device** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **device** instance.
 
 ## SYNTAX
 
@@ -31,7 +32,8 @@ Get-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get device
+Get the properties and relationships of a device object.
+Since the **device** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **device** instance.
 
 ## EXAMPLES
 
@@ -248,7 +250,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

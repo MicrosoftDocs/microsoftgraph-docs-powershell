@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Get deviceConfigurations from deviceManagement
+The device configurations.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentit
 ```
 
 ## DESCRIPTION
-Get deviceConfigurations from deviceManagement
+The device configurations.
 
 ## EXAMPLES
 

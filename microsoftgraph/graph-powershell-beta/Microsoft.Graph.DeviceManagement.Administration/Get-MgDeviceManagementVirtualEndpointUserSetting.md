@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointUserSetting
 
 ## SYNOPSIS
-Get userSettings from deviceManagement
+Cloud PC user settings.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Get userSettings from deviceManagement
+Cloud PC user settings.
 
 ## EXAMPLES
 

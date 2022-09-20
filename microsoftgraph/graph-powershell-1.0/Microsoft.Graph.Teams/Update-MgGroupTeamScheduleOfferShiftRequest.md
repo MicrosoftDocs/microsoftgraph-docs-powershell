@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecipientUserId
-User id of the recipient of the offer shift request.
+User ID of the recipient of the offer shift request.
 
 ```yaml
 Type: String
@@ -363,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -SenderShiftId
-User id of the sender of the offer shift request.
+User ID of the sender of the offer shift request.
 
 ```yaml
 Type: String
@@ -480,8 +480,8 @@ BODYPARAMETER `<IMicrosoftGraphOfferShiftRequest>`: offerShiftRequest
   - `[Id <String>]`: 
   - `[RecipientActionDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-  - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-  - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+  - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
+  - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
 
 INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo

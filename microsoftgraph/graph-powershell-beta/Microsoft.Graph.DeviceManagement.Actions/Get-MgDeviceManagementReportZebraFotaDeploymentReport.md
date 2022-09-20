@@ -305,7 +305,7 @@ BODYPARAMETER `<IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotade
   - `[OrderBy <String[]>]`: 
   - `[Search <String>]`: 
   - `[Select <String[]>]`: 
-  - `[SessionId <Int32?>]`: 
+  - `[SessionId <String>]`: 
   - `[Skip <Int32?>]`: 
   - `[Top <Int32?>]`: 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDevice
 
 ## SYNOPSIS
-Get device
+Get the properties and relationships of a device object.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get device
+Get the properties and relationships of a device object.
 
 ## EXAMPLES
 

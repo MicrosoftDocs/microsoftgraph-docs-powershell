@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeam
 
 ## SYNOPSIS
-Get team
+Retrieve the properties and relationships of the specified team.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-Get team
+Retrieve the properties and relationships of the specified team.
 
 ## EXAMPLES
 

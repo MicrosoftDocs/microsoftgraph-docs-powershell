@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserDefaultCalendar
 
 ## SYNOPSIS
-Get calendar from users
+The user's primary calendar.
+Read-only.
 
 ## SYNTAX
 
@@ -23,7 +24,8 @@ Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>
 ```
 
 ## DESCRIPTION
-Get calendar from users
+The user's primary calendar.
+Read-only.
 
 ## EXAMPLES
 

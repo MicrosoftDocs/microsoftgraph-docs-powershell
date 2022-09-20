@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgGroupMemberOf
 
 ## SYNOPSIS
-Get memberOf from groups
+Groups that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +36,11 @@ Get-MgGroupMemberOf -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get memberOf from groups
+Groups that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

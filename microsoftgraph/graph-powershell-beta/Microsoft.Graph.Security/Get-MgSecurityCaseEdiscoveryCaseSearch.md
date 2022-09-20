@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseSearch
 
 ## SYNOPSIS
-Get searches from security
+Returns a list of eDiscoverySearch objects associated with this case.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get searches from security
+Returns a list of eDiscoverySearch objects associated with this case.
 
 ## EXAMPLES
 

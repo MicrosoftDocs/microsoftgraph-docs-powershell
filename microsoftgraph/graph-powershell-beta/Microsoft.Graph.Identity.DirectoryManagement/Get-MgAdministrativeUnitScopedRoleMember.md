@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Get scopedRoleMembers from administrativeUnits
+Scoped-role members of this administrative unit.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryManagem
 ```
 
 ## DESCRIPTION
-Get scopedRoleMembers from administrativeUnits
+Scoped-role members of this administrative unit.
 
 ## EXAMPLES
 

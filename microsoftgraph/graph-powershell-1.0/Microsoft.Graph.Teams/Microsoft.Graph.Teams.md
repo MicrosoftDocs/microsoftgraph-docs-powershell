@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: 7cbda697-a117-4462-a09b-6d339c6401cb
+Module Guid: 2bb935a8-e82f-446d-b901-25f812ba81be
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -39,154 +39,170 @@ Invoke action clone
 Get teamsApps from appCatalogs
 
 ### [Get-MgAppCatalogTeamAppDefinition](Get-MgAppCatalogTeamAppDefinition.md)
-Get appDefinitions from appCatalogs
+The details for each version of the app.
 
 ### [Get-MgAppCatalogTeamAppDefinitionBot](Get-MgAppCatalogTeamAppDefinitionBot.md)
-Get bot from appCatalogs
+The details of the bot specified in the Teams app manifest.
 
 ### [Get-MgChat](Get-MgChat.md)
-Get chat
+Retrieve a single chat (without its messages).
 
 ### [Get-MgChatInstalledApp](Get-MgChatInstalledApp.md)
-Get installedApps from chats
+A collection of all the apps in the chat.
+Nullable.
 
 ### [Get-MgChatInstalledAppTeamApp](Get-MgChatInstalledAppTeamApp.md)
-Get teamsApp from chats
+The app that is installed.
 
 ### [Get-MgChatInstalledAppTeamAppDefinition](Get-MgChatInstalledAppTeamAppDefinition.md)
-Get teamsAppDefinition from chats
+The details of this version of the app.
 
 ### [Get-MgChatMember](Get-MgChatMember.md)
-Get members from chats
+A collection of all the members in the chat.
+Nullable.
 
 ### [Get-MgChatMessage](Get-MgChatMessage.md)
-Get messages from chats
+A collection of all the messages in the chat.
+Nullable.
 
 ### [Get-MgChatMessageDelta](Get-MgChatMessageDelta.md)
 Invoke function delta
 
 ### [Get-MgChatMessageHostedContent](Get-MgChatMessageHostedContent.md)
-Get hostedContents from chats
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgChatMessageReply](Get-MgChatMessageReply.md)
-Get replies from chats
+Replies for a specified message.
+Supports $expand for channel messages.
 
 ### [Get-MgChatMessageReplyDelta](Get-MgChatMessageReplyDelta.md)
 Invoke function delta
 
 ### [Get-MgChatMessageReplyHostedContent](Get-MgChatMessageReplyHostedContent.md)
-Get hostedContents from chats
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgChatTab](Get-MgChatTab.md)
-Get tabs from chats
+A collection of all the tabs in the chat.
+Nullable.
 
 ### [Get-MgChatTabTeamApp](Get-MgChatTabTeamApp.md)
-Get teamsApp from chats
+The application that is linked to the tab.
+This cannot be changed after tab creation.
 
 ### [Get-MgGroupTeam](Get-MgGroupTeam.md)
-Get team from groups
+The team associated with this group.
 
 ### [Get-MgGroupTeamChannel](Get-MgGroupTeamChannel.md)
-Get allChannels from groups
+List of channels either hosted in or shared with the team (incoming channels).
 
 ### [Get-MgGroupTeamChannelFileFolder](Get-MgGroupTeamChannelFileFolder.md)
-Get filesFolder from groups
+Metadata for the location where the channel's files are stored.
 
 ### [Get-MgGroupTeamChannelFileFolderContent](Get-MgGroupTeamChannelFileFolderContent.md)
-Get content for the navigation property filesFolder from groups
+The content stream, if the item represents a file.
 
 ### [Get-MgGroupTeamChannelMember](Get-MgGroupTeamChannelMember.md)
-Get members from groups
+A collection of membership records associated with the channel.
 
 ### [Get-MgGroupTeamChannelMessage](Get-MgGroupTeamChannelMessage.md)
-Get messages from groups
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ### [Get-MgGroupTeamChannelMessageHostedContent](Get-MgGroupTeamChannelMessageHostedContent.md)
-Get hostedContents from groups
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgGroupTeamChannelMessageReply](Get-MgGroupTeamChannelMessageReply.md)
-Get replies from groups
+Replies for a specified message.
+Supports $expand for channel messages.
 
 ### [Get-MgGroupTeamChannelMessageReplyHostedContent](Get-MgGroupTeamChannelMessageReplyHostedContent.md)
-Get hostedContents from groups
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgGroupTeamChannelSharedWithTeam](Get-MgGroupTeamChannelSharedWithTeam.md)
-Get sharedWithTeams from groups
+A collection of teams with which a channel is shared.
 
 ### [Get-MgGroupTeamChannelSharedWithTeamAllowedMember](Get-MgGroupTeamChannelSharedWithTeamAllowedMember.md)
-Get allowedMembers from groups
+A collection of team members who have access to the shared channel.
 
 ### [Get-MgGroupTeamChannelTab](Get-MgGroupTeamChannelTab.md)
-Get tabs from groups
+A collection of all the tabs in the channel.
+A navigation property.
 
 ### [Get-MgGroupTeamChannelTabTeamApp](Get-MgGroupTeamChannelTabTeamApp.md)
-Get teamsApp from groups
+The application that is linked to the tab.
+This cannot be changed after tab creation.
 
 ### [Get-MgGroupTeamGroup](Get-MgGroupTeamGroup.md)
 Get group from groups
 
 ### [Get-MgGroupTeamIncomingChannel](Get-MgGroupTeamIncomingChannel.md)
-Get incomingChannels from groups
+List of channels shared with the team.
 
 ### [Get-MgGroupTeamInstalledApp](Get-MgGroupTeamInstalledApp.md)
-Get installedApps from groups
+The apps installed in this team.
 
 ### [Get-MgGroupTeamInstalledAppTeamApp](Get-MgGroupTeamInstalledAppTeamApp.md)
-Get teamsApp from groups
+The app that is installed.
 
 ### [Get-MgGroupTeamInstalledAppTeamAppDefinition](Get-MgGroupTeamInstalledAppTeamAppDefinition.md)
-Get teamsAppDefinition from groups
+The details of this version of the app.
 
 ### [Get-MgGroupTeamMember](Get-MgGroupTeamMember.md)
-Get members from groups
+Members and owners of the team.
 
 ### [Get-MgGroupTeamOperation](Get-MgGroupTeamOperation.md)
-Get operations from groups
+The async operations that ran or are running on this team.
 
 ### [Get-MgGroupTeamPhoto](Get-MgGroupTeamPhoto.md)
-Get photo from groups
+The profile photo for the team.
 
 ### [Get-MgGroupTeamPhotoContent](Get-MgGroupTeamPhotoContent.md)
 Get media content for the navigation property photo from groups
 
 ### [Get-MgGroupTeamPrimaryChannel](Get-MgGroupTeamPrimaryChannel.md)
-Get primaryChannel from groups
+The general channel for the team.
 
 ### [Get-MgGroupTeamPrimaryChannelFileFolder](Get-MgGroupTeamPrimaryChannelFileFolder.md)
-Get filesFolder from groups
+Metadata for the location where the channel's files are stored.
 
 ### [Get-MgGroupTeamPrimaryChannelFileFolderContent](Get-MgGroupTeamPrimaryChannelFileFolderContent.md)
-Get content for the navigation property filesFolder from groups
+The content stream, if the item represents a file.
 
 ### [Get-MgGroupTeamPrimaryChannelMember](Get-MgGroupTeamPrimaryChannelMember.md)
-Get members from groups
+A collection of membership records associated with the channel.
 
 ### [Get-MgGroupTeamPrimaryChannelMessage](Get-MgGroupTeamPrimaryChannelMessage.md)
-Get messages from groups
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ### [Get-MgGroupTeamPrimaryChannelMessageHostedContent](Get-MgGroupTeamPrimaryChannelMessageHostedContent.md)
-Get hostedContents from groups
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgGroupTeamPrimaryChannelMessageReply](Get-MgGroupTeamPrimaryChannelMessageReply.md)
-Get replies from groups
+Replies for a specified message.
+Supports $expand for channel messages.
 
 ### [Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent](Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent.md)
-Get hostedContents from groups
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgGroupTeamPrimaryChannelSharedWithTeam](Get-MgGroupTeamPrimaryChannelSharedWithTeam.md)
-Get sharedWithTeams from groups
+A collection of teams with which a channel is shared.
 
 ### [Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMember.md)
-Get allowedMembers from groups
+A collection of team members who have access to the shared channel.
 
 ### [Get-MgGroupTeamPrimaryChannelTab](Get-MgGroupTeamPrimaryChannelTab.md)
-Get tabs from groups
+A collection of all the tabs in the channel.
+A navigation property.
 
 ### [Get-MgGroupTeamPrimaryChannelTabTeamApp](Get-MgGroupTeamPrimaryChannelTabTeamApp.md)
-Get teamsApp from groups
+The application that is linked to the tab.
+This cannot be changed after tab creation.
 
 ### [Get-MgGroupTeamSchedule](Get-MgGroupTeamSchedule.md)
-Get schedule from groups
+The schedule of shifts for this team.
 
 ### [Get-MgGroupTeamScheduleOfferShiftRequest](Get-MgGroupTeamScheduleOfferShiftRequest.md)
 Get offerShiftRequests from groups
@@ -198,40 +214,41 @@ Get openShifts from groups
 Get openShiftChangeRequests from groups
 
 ### [Get-MgGroupTeamScheduleSchedulingGroup](Get-MgGroupTeamScheduleSchedulingGroup.md)
-Get schedulingGroups from groups
+The logical grouping of users in the schedule (usually by role).
 
 ### [Get-MgGroupTeamScheduleShift](Get-MgGroupTeamScheduleShift.md)
-Get shifts from groups
+The shifts in the schedule.
 
 ### [Get-MgGroupTeamScheduleSwapShiftChangeRequest](Get-MgGroupTeamScheduleSwapShiftChangeRequest.md)
 Get swapShiftsChangeRequests from groups
 
 ### [Get-MgGroupTeamScheduleTimeOff](Get-MgGroupTeamScheduleTimeOff.md)
-Get timesOff from groups
+The instances of times off in the schedule.
 
 ### [Get-MgGroupTeamScheduleTimeOffReason](Get-MgGroupTeamScheduleTimeOffReason.md)
-Get timeOffReasons from groups
+The set of reasons for a time off in the schedule.
 
 ### [Get-MgGroupTeamScheduleTimeOffRequest](Get-MgGroupTeamScheduleTimeOffRequest.md)
 Get timeOffRequests from groups
 
 ### [Get-MgGroupTeamTemplate](Get-MgGroupTeamTemplate.md)
-Get template from groups
+The template this team was created from.
+See available templates.
 
 ### [Get-MgTeam](Get-MgTeam.md)
-Get team
+Retrieve the properties and relationships of the specified team.
 
 ### [Get-MgTeamChannel](Get-MgTeamChannel.md)
-Get allChannels from teams
+List of channels either hosted in or shared with the team (incoming channels).
 
 ### [Get-MgTeamChannelFileFolder](Get-MgTeamChannelFileFolder.md)
-Get filesFolder from teams
+Metadata for the location where the channel's files are stored.
 
 ### [Get-MgTeamChannelFileFolderContent](Get-MgTeamChannelFileFolderContent.md)
-Get content for the navigation property filesFolder from teams
+The content stream, if the item represents a file.
 
 ### [Get-MgTeamChannelMember](Get-MgTeamChannelMember.md)
-Get members from teams
+A collection of membership records associated with the channel.
 
 ### [Get-MgTeamChannelMessage](Get-MgTeamChannelMessage.md)
 Invoke function getAllMessages
@@ -240,100 +257,108 @@ Invoke function getAllMessages
 Invoke function delta
 
 ### [Get-MgTeamChannelMessageHostedContent](Get-MgTeamChannelMessageHostedContent.md)
-Get hostedContents from teams
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgTeamChannelMessageReply](Get-MgTeamChannelMessageReply.md)
-Get replies from teams
+Replies for a specified message.
+Supports $expand for channel messages.
 
 ### [Get-MgTeamChannelMessageReplyDelta](Get-MgTeamChannelMessageReplyDelta.md)
 Invoke function delta
 
 ### [Get-MgTeamChannelMessageReplyHostedContent](Get-MgTeamChannelMessageReplyHostedContent.md)
-Get hostedContents from teams
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgTeamChannelSharedWithTeam](Get-MgTeamChannelSharedWithTeam.md)
-Get sharedWithTeams from teams
+A collection of teams with which a channel is shared.
 
 ### [Get-MgTeamChannelSharedWithTeamAllowedMember](Get-MgTeamChannelSharedWithTeamAllowedMember.md)
-Get allowedMembers from teams
+A collection of team members who have access to the shared channel.
 
 ### [Get-MgTeamChannelTab](Get-MgTeamChannelTab.md)
-Get tabs from teams
+A collection of all the tabs in the channel.
+A navigation property.
 
 ### [Get-MgTeamChannelTabTeamApp](Get-MgTeamChannelTabTeamApp.md)
-Get teamsApp from teams
+The application that is linked to the tab.
+This cannot be changed after tab creation.
 
 ### [Get-MgTeamIncomingChannel](Get-MgTeamIncomingChannel.md)
-Get incomingChannels from teams
+List of channels shared with the team.
 
 ### [Get-MgTeamInstalledApp](Get-MgTeamInstalledApp.md)
-Get installedApps from teams
+The apps installed in this team.
 
 ### [Get-MgTeamInstalledAppTeamApp](Get-MgTeamInstalledAppTeamApp.md)
-Get teamsApp from teams
+The app that is installed.
 
 ### [Get-MgTeamInstalledAppTeamAppDefinition](Get-MgTeamInstalledAppTeamAppDefinition.md)
-Get teamsAppDefinition from teams
+The details of this version of the app.
 
 ### [Get-MgTeamMember](Get-MgTeamMember.md)
-Get members from teams
+Members and owners of the team.
 
 ### [Get-MgTeamMessage](Get-MgTeamMessage.md)
 Invoke function getAllMessages
 
 ### [Get-MgTeamOperation](Get-MgTeamOperation.md)
-Get operations from teams
+The async operations that ran or are running on this team.
 
 ### [Get-MgTeamPhoto](Get-MgTeamPhoto.md)
-Get photo from teams
+The profile photo for the team.
 
 ### [Get-MgTeamPhotoContent](Get-MgTeamPhotoContent.md)
 Get media content for the navigation property photo from teams
 
 ### [Get-MgTeamPrimaryChannel](Get-MgTeamPrimaryChannel.md)
-Get primaryChannel from teams
+The general channel for the team.
 
 ### [Get-MgTeamPrimaryChannelFileFolder](Get-MgTeamPrimaryChannelFileFolder.md)
-Get filesFolder from teams
+Metadata for the location where the channel's files are stored.
 
 ### [Get-MgTeamPrimaryChannelFileFolderContent](Get-MgTeamPrimaryChannelFileFolderContent.md)
-Get content for the navigation property filesFolder from teams
+The content stream, if the item represents a file.
 
 ### [Get-MgTeamPrimaryChannelMember](Get-MgTeamPrimaryChannelMember.md)
-Get members from teams
+A collection of membership records associated with the channel.
 
 ### [Get-MgTeamPrimaryChannelMessage](Get-MgTeamPrimaryChannelMessage.md)
-Get messages from teams
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ### [Get-MgTeamPrimaryChannelMessageDelta](Get-MgTeamPrimaryChannelMessageDelta.md)
 Invoke function delta
 
 ### [Get-MgTeamPrimaryChannelMessageHostedContent](Get-MgTeamPrimaryChannelMessageHostedContent.md)
-Get hostedContents from teams
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgTeamPrimaryChannelMessageReply](Get-MgTeamPrimaryChannelMessageReply.md)
-Get replies from teams
+Replies for a specified message.
+Supports $expand for channel messages.
 
 ### [Get-MgTeamPrimaryChannelMessageReplyDelta](Get-MgTeamPrimaryChannelMessageReplyDelta.md)
 Invoke function delta
 
 ### [Get-MgTeamPrimaryChannelMessageReplyHostedContent](Get-MgTeamPrimaryChannelMessageReplyHostedContent.md)
-Get hostedContents from teams
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgTeamPrimaryChannelSharedWithTeam](Get-MgTeamPrimaryChannelSharedWithTeam.md)
-Get sharedWithTeams from teams
+A collection of teams with which a channel is shared.
 
 ### [Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember.md)
-Get allowedMembers from teams
+A collection of team members who have access to the shared channel.
 
 ### [Get-MgTeamPrimaryChannelTab](Get-MgTeamPrimaryChannelTab.md)
-Get tabs from teams
+A collection of all the tabs in the channel.
+A navigation property.
 
 ### [Get-MgTeamPrimaryChannelTabTeamApp](Get-MgTeamPrimaryChannelTabTeamApp.md)
-Get teamsApp from teams
+The application that is linked to the tab.
+This cannot be changed after tab creation.
 
 ### [Get-MgTeamSchedule](Get-MgTeamSchedule.md)
-Get schedule from teams
+The schedule of shifts for this team.
 
 ### [Get-MgTeamScheduleOfferShiftRequest](Get-MgTeamScheduleOfferShiftRequest.md)
 Get offerShiftRequests from teams
@@ -345,25 +370,26 @@ Get openShifts from teams
 Get openShiftChangeRequests from teams
 
 ### [Get-MgTeamScheduleSchedulingGroup](Get-MgTeamScheduleSchedulingGroup.md)
-Get schedulingGroups from teams
+The logical grouping of users in the schedule (usually by role).
 
 ### [Get-MgTeamScheduleShift](Get-MgTeamScheduleShift.md)
-Get shifts from teams
+The shifts in the schedule.
 
 ### [Get-MgTeamScheduleSwapShiftChangeRequest](Get-MgTeamScheduleSwapShiftChangeRequest.md)
 Get swapShiftsChangeRequests from teams
 
 ### [Get-MgTeamScheduleTimeOff](Get-MgTeamScheduleTimeOff.md)
-Get timesOff from teams
+The instances of times off in the schedule.
 
 ### [Get-MgTeamScheduleTimeOffReason](Get-MgTeamScheduleTimeOffReason.md)
-Get timeOffReasons from teams
+The set of reasons for a time off in the schedule.
 
 ### [Get-MgTeamScheduleTimeOffRequest](Get-MgTeamScheduleTimeOffRequest.md)
 Get timeOffRequests from teams
 
 ### [Get-MgTeamTemplate](Get-MgTeamTemplate.md)
-Get template from teams
+The template this team was created from.
+See available templates.
 
 ### [Get-MgTeamwork](Get-MgTeamwork.md)
 Get teamwork
@@ -375,34 +401,40 @@ Get workforceIntegrations from teamwork
 Get chats from users
 
 ### [Get-MgUserChatInstalledApp](Get-MgUserChatInstalledApp.md)
-Get installedApps from users
+A collection of all the apps in the chat.
+Nullable.
 
 ### [Get-MgUserChatInstalledAppTeamApp](Get-MgUserChatInstalledAppTeamApp.md)
-Get teamsApp from users
+The app that is installed.
 
 ### [Get-MgUserChatInstalledAppTeamAppDefinition](Get-MgUserChatInstalledAppTeamAppDefinition.md)
-Get teamsAppDefinition from users
+The details of this version of the app.
 
 ### [Get-MgUserChatMember](Get-MgUserChatMember.md)
-Get members from users
+A collection of all the members in the chat.
+Nullable.
 
 ### [Get-MgUserChatMessage](Get-MgUserChatMessage.md)
-Get messages from users
+A collection of all the messages in the chat.
+Nullable.
 
 ### [Get-MgUserChatMessageHostedContent](Get-MgUserChatMessageHostedContent.md)
-Get hostedContents from users
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgUserChatMessageReply](Get-MgUserChatMessageReply.md)
-Get replies from users
+Replies for a specified message.
+Supports $expand for channel messages.
 
 ### [Get-MgUserChatMessageReplyHostedContent](Get-MgUserChatMessageReplyHostedContent.md)
-Get hostedContents from users
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Get-MgUserChatTab](Get-MgUserChatTab.md)
-Get tabs from users
+A collection of all the tabs in the chat.
+Nullable.
 
 ### [Get-MgUserChatTabTeamApp](Get-MgUserChatTabTeamApp.md)
-Get teamsApp from users
+The application that is linked to the tab.
+This cannot be changed after tab creation.
 
 ### [Get-MgUserJoinedTeam](Get-MgUserJoinedTeam.md)
 Get joinedTeams from users
@@ -411,13 +443,13 @@ Get joinedTeams from users
 Get teamwork from users
 
 ### [Get-MgUserTeamworkAssociatedTeam](Get-MgUserTeamworkAssociatedTeam.md)
-Get associatedTeams from users
+The list of associatedTeamInfo objects that a user is associated with.
 
 ### [Get-MgUserTeamworkInstalledApp](Get-MgUserTeamworkInstalledApp.md)
-Get installedApps from users
+The apps installed in the personal scope of this user.
 
 ### [Get-MgUserTeamworkInstalledAppChat](Get-MgUserTeamworkInstalledAppChat.md)
-Get chat from users
+The chat between the user and Teams app.
 
 ### [Invoke-MgArchiveTeam](Invoke-MgArchiveTeam.md)
 Invoke action archive
@@ -441,7 +473,7 @@ Create new navigation property to teamsApps for appCatalogs
 Create new navigation property to appDefinitions for appCatalogs
 
 ### [New-MgChat](New-MgChat.md)
-Create chat
+Create a new chat object.
 
 ### [New-MgChatInstalledApp](New-MgChatInstalledApp.md)
 Create new navigation property to installedApps for chats
@@ -546,7 +578,7 @@ Create new navigation property to timeOffReasons for groups
 Create new navigation property to timeOffRequests for groups
 
 ### [New-MgTeam](New-MgTeam.md)
-Create team
+Create a new team.
 
 ### [New-MgTeamChannel](New-MgTeamChannel.md)
 Create new navigation property to channels for teams
@@ -909,22 +941,22 @@ Invoke action sendActivityNotification
 Invoke action sendActivityNotification
 
 ### [Set-MgGroupTeamChannelFileFolderContent](Set-MgGroupTeamChannelFileFolderContent.md)
-Update content for the navigation property filesFolder in groups
+The content stream, if the item represents a file.
 
 ### [Set-MgGroupTeamPhotoContent](Set-MgGroupTeamPhotoContent.md)
 Update media content for the navigation property photo in groups
 
 ### [Set-MgGroupTeamPrimaryChannelFileFolderContent](Set-MgGroupTeamPrimaryChannelFileFolderContent.md)
-Update content for the navigation property filesFolder in groups
+The content stream, if the item represents a file.
 
 ### [Set-MgTeamChannelFileFolderContent](Set-MgTeamChannelFileFolderContent.md)
-Update content for the navigation property filesFolder in teams
+The content stream, if the item represents a file.
 
 ### [Set-MgTeamPhotoContent](Set-MgTeamPhotoContent.md)
 Update media content for the navigation property photo in teams
 
 ### [Set-MgTeamPrimaryChannelFileFolderContent](Set-MgTeamPrimaryChannelFileFolderContent.md)
-Update content for the navigation property filesFolder in teams
+The content stream, if the item represents a file.
 
 ### [Update-MgAppCatalogTeamApp](Update-MgAppCatalogTeamApp.md)
 Update the navigation property teamsApps in appCatalogs
@@ -936,7 +968,7 @@ Update the navigation property appDefinitions in appCatalogs
 Update the navigation property bot in appCatalogs
 
 ### [Update-MgChat](Update-MgChat.md)
-Update entity in chats
+Update the properties of a chat object.
 
 ### [Update-MgChatInstalledApp](Update-MgChatInstalledApp.md)
 Invoke action upgrade
@@ -1047,7 +1079,7 @@ Update the navigation property timeOffReasons in groups
 Update the navigation property timeOffRequests in groups
 
 ### [Update-MgTeam](Update-MgTeam.md)
-Update team
+Update the properties of the specified team.
 
 ### [Update-MgTeamChannel](Update-MgTeamChannel.md)
 Update the navigation property channels in teams

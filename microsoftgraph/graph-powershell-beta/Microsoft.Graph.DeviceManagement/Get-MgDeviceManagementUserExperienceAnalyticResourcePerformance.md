@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticResourcePerformance
 
 ## SYNOPSIS
-Get userExperienceAnalyticsResourcePerformance from deviceManagement
+User experience analytics resource performance
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementUserExperienceAnalyticResourcePerformance -InputObject <ID
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsResourcePerformance from deviceManagement
+User experience analytics resource performance
 
 ## EXAMPLES
 

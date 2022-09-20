@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 6e002699-9489-43e6-8b09-0771d33cf9dc
+Module Guid: 1924ed46-be10-4a99-bad3-521dfc5f927a
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,55 +15,63 @@ Microsoft Graph PowerShell Cmdlets
 Invoke action confirmCompromised
 
 ### [Get-MgDataPolicyOperation](Get-MgDataPolicyOperation.md)
-Get dataPolicyOperation
+Retrieve the properties of a **dataPolicyOperation** object.
 
 ### [Get-MgIdentityApiConnector](Get-MgIdentityApiConnector.md)
-Get apiConnectors from identity
+Represents entry point for API connectors.
 
 ### [Get-MgIdentityB2XUserFlow](Get-MgIdentityB2XUserFlow.md)
-Get b2xUserFlows from identity
+Represents entry point for B2X/self-service sign-up identity userflows.
 
 ### [Get-MgIdentityB2XUserFlowIdentityProvider](Get-MgIdentityB2XUserFlowIdentityProvider.md)
-Get identityProviders from identity
+The identity providers included in the user flow.
 
 ### [Get-MgIdentityB2XUserFlowIdentityProviderByRef](Get-MgIdentityB2XUserFlowIdentityProviderByRef.md)
 Get ref of userFlowIdentityProviders from identity
 
 ### [Get-MgIdentityB2XUserFlowLanguage](Get-MgIdentityB2XUserFlowLanguage.md)
-Get languages from identity
+The languages supported for customization within the user flow.
+Language customization is enabled by default in self-service sign-up user flow.
+You cannot create custom languages in self-service sign-up user flows.
 
 ### [Get-MgIdentityB2XUserFlowLanguageDefaultPage](Get-MgIdentityB2XUserFlowLanguageDefaultPage.md)
-Get defaultPages from identity
+Collection of pages with the default content to display in a user flow for a specified language.
+This collection does not allow any kind of modification.
 
 ### [Get-MgIdentityB2XUserFlowLanguageDefaultPageContent](Get-MgIdentityB2XUserFlowLanguageDefaultPageContent.md)
 Get media content for the navigation property defaultPages from identity
 
 ### [Get-MgIdentityB2XUserFlowLanguageOverridePage](Get-MgIdentityB2XUserFlowLanguageOverridePage.md)
-Get overridesPages from identity
+Collection of pages with the overrides messages to display in a user flow for a specified language.
+This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
 
 ### [Get-MgIdentityB2XUserFlowLanguageOverridePageContent](Get-MgIdentityB2XUserFlowLanguageOverridePageContent.md)
 Get media content for the navigation property overridesPages from identity
 
 ### [Get-MgIdentityB2XUserFlowUserAttributeAssignment](Get-MgIdentityB2XUserFlowUserAttributeAssignment.md)
-Get userAttributeAssignments from identity
+The user attribute assignments included in the user flow.
 
 ### [Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder](Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder.md)
 Invoke function getOrder
 
 ### [Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute](Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute.md)
-Get userAttribute from identity
+The user attribute that you want to add to your user flow.
 
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
-Get namedLocations from identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ### [Get-MgIdentityConditionalAccessPolicy](Get-MgIdentityConditionalAccessPolicy.md)
-Get policies from identity
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access (CA) policies.
 
 ### [Get-MgIdentityProvider](Get-MgIdentityProvider.md)
 Get identityProviders from identity
 
 ### [Get-MgIdentityUserFlowAttribute](Get-MgIdentityUserFlowAttribute.md)
-Get userFlowAttributes from identity
+Represents entry point for identity userflow attributes.
 
 ### [Get-MgInformationProtection](Get-MgInformationProtection.md)
 Get informationProtection
@@ -72,58 +80,64 @@ Get informationProtection
 Get bitlocker from informationProtection
 
 ### [Get-MgInformationProtectionBitlockerRecoveryKey](Get-MgInformationProtectionBitlockerRecoveryKey.md)
-Get recoveryKeys from informationProtection
+The recovery keys associated with the bitlocker entity.
 
 ### [Get-MgInformationProtectionThreatAssessmentRequest](Get-MgInformationProtectionThreatAssessmentRequest.md)
 Get threatAssessmentRequests from informationProtection
 
 ### [Get-MgInformationProtectionThreatAssessmentRequestResult](Get-MgInformationProtectionThreatAssessmentRequestResult.md)
-Get results from informationProtection
+A collection of threat assessment results.
+Read-only.
+By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
 ### [Get-MgOauth2PermissionGrant](Get-MgOauth2PermissionGrant.md)
-Get oAuth2PermissionGrant (a delegated permission grant)
+Retrieve the properties of a single delegated permission grant represented by an oAuth2PermissionGrant object.
+An **oAuth2PermissionGrant** represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
 
 ### [Get-MgOauth2PermissionGrantDelta](Get-MgOauth2PermissionGrantDelta.md)
 Invoke function delta
 
 ### [Get-MgOrganizationCertificateBasedAuthConfiguration](Get-MgOrganizationCertificateBasedAuthConfiguration.md)
-Get certificateBasedAuthConfiguration from organization
+Navigation property to manage certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [Get-MgPolicyActivityBasedTimeoutPolicy](Get-MgPolicyActivityBasedTimeoutPolicy.md)
-Get activityBasedTimeoutPolicies from policies
+The policy that controls the idle time out for web sessions for applications.
 
 ### [Get-MgPolicyAdminConsentRequestPolicy](Get-MgPolicyAdminConsentRequestPolicy.md)
-Get adminConsentRequestPolicy from policies
+The policy by which consent requests are created and managed for the entire tenant.
 
 ### [Get-MgPolicyAuthenticationFlowPolicy](Get-MgPolicyAuthenticationFlowPolicy.md)
-Get authenticationFlowsPolicy from policies
+The policy configuration of the self-service sign-up experience of external users.
 
 ### [Get-MgPolicyAuthenticationMethodPolicy](Get-MgPolicyAuthenticationMethodPolicy.md)
-Get authenticationMethodsPolicy from policies
+The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
 ### [Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
-Get authenticationMethodConfigurations from policies
+Represents the settings for each authentication method.
+Automatically expanded on GET /policies/authenticationMethodsPolicy.
 
 ### [Get-MgPolicyAuthorizationPolicy](Get-MgPolicyAuthorizationPolicy.md)
-Get authorizationPolicy from policies
+The policy that controls Azure AD authorization settings.
 
 ### [Get-MgPolicyClaimMappingPolicy](Get-MgPolicyClaimMappingPolicy.md)
-Get claimsMappingPolicies from policies
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
 ### [Get-MgPolicyCrossTenantAccessPolicy](Get-MgPolicyCrossTenantAccessPolicy.md)
-Get crossTenantAccessPolicy from policies
+The custom rules that define an access scenario when interacting with external Azure AD tenants.
 
 ### [Get-MgPolicyCrossTenantAccessPolicyDefault](Get-MgPolicyCrossTenantAccessPolicyDefault.md)
-Get default from policies
+Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.
 
 ### [Get-MgPolicyCrossTenantAccessPolicyPartner](Get-MgPolicyCrossTenantAccessPolicyPartner.md)
-Get partners from policies
+Defines partner-specific configurations for external Azure Active Directory organizations.
 
 ### [Get-MgPolicyFeatureRolloutPolicy](Get-MgPolicyFeatureRolloutPolicy.md)
-Get featureRolloutPolicies from policies
+The feature rollout policy associated with a directory object.
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyTo](Get-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Get appliesTo from policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToAvailableExtensionProperty](Get-MgPolicyFeatureRolloutPolicyApplyToAvailableExtensionProperty.md)
 Invoke action getAvailableExtensionProperties
@@ -132,124 +146,178 @@ Invoke action getAvailableExtensionProperties
 Invoke action getByIds
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToByRef](Get-MgPolicyFeatureRolloutPolicyApplyToByRef.md)
-Get ref of appliesTo from policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
-Get homeRealmDiscoveryPolicies from policies
+The policy to control Azure AD authentication behavior for federated users.
 
 ### [Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
-Get identitySecurityDefaultsEnforcementPolicy from policies
+The policy that represents the security defaults that protect against common attacks.
 
 ### [Get-MgPolicyPermissionGrantPolicy](Get-MgPolicyPermissionGrantPolicy.md)
-Get permissionGrantPolicies from policies
+The policy that specifies the conditions under which consent can be granted.
 
 ### [Get-MgPolicyPermissionGrantPolicyExclude](Get-MgPolicyPermissionGrantPolicyExclude.md)
-Get excludes from policies
+Condition sets which are excluded in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Get-MgPolicyPermissionGrantPolicyInclude](Get-MgPolicyPermissionGrantPolicyInclude.md)
-Get includes from policies
+Condition sets which are included in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Get-MgPolicyRoleManagementPolicy](Get-MgPolicyRoleManagementPolicy.md)
-Get roleManagementPolicies from policies
+Specifies the various policies associated with scopes and roles.
 
 ### [Get-MgPolicyRoleManagementPolicyAssignment](Get-MgPolicyRoleManagementPolicyAssignment.md)
-Get roleManagementPolicyAssignments from policies
+The assignment of a role management policy to a role definition object.
 
 ### [Get-MgPolicyRoleManagementPolicyAssignmentPolicy](Get-MgPolicyRoleManagementPolicyAssignmentPolicy.md)
-Get policy from policies
+The policy that's associated with a policy assignment.
+Supports $expand and a nested $expand of the rules and effectiveRules relationships for the policy.
 
 ### [Get-MgPolicyRoleManagementPolicyEffectiveRule](Get-MgPolicyRoleManagementPolicyEffectiveRule.md)
-Get effectiveRules from policies
+The list of effective rules like approval rules and expiration rules evaluated based on inherited referenced rules.
+For example, if there is a tenant-wide policy to enforce enabling an approval rule, the effective rule will be to enable approval even if the policy has a rule to disable approval.
+Supports $expand.
 
 ### [Get-MgPolicyRoleManagementPolicyRule](Get-MgPolicyRoleManagementPolicyRule.md)
-Get rules from policies
+The collection of rules like approval rules and expiration rules.
+Supports $expand.
 
 ### [Get-MgPolicyTokenIssuancePolicy](Get-MgPolicyTokenIssuancePolicy.md)
-Get tokenIssuancePolicies from policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ### [Get-MgPolicyTokenLifetimePolicy](Get-MgPolicyTokenLifetimePolicy.md)
-Get tokenLifetimePolicies from policies
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Azure AD.
 
 ### [Get-MgRiskDetection](Get-MgRiskDetection.md)
-Get riskDetections from identityProtection
+Risk detection in Azure AD Identity Protection and the associated information about the detection.
 
 ### [Get-MgRiskyUser](Get-MgRiskyUser.md)
-Get riskyUsers from identityProtection
+Users that are flagged as at-risk by Azure AD Identity Protection.
 
 ### [Get-MgRiskyUserHistory](Get-MgRiskyUserHistory.md)
-Get history from identityProtection
+The activity related to user risk level change
 
 ### [Get-MgUserAuthenticationEmailMethod](Get-MgUserAuthenticationEmailMethod.md)
-Get emailMethods from users
+The email address registered to a user for authentication.
 
 ### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
-Get fido2Methods from users
+Represents the FIDO2 security keys registered to a user for authentication.
 
 ### [Get-MgUserAuthenticationMethod](Get-MgUserAuthenticationMethod.md)
-Get methods from users
+Represents all authentication methods registered to a user.
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethod](Get-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
-Get microsoftAuthenticatorMethods from users
+The details of the Microsoft Authenticator app registered to a user for authentication.
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
-Get device from users
+The registered device on which Microsoft Authenticator resides.
+This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceExtension](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceExtension.md)
-Get extensions from users
+The collection of open extensions defined for the device.
+Read-only.
+Nullable.
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceMemberOf](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceMemberOf.md)
-Get memberOf from users
+Groups and administrative units that this device is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwner](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwner.md)
-Get registeredOwners from users
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef.md)
-Get ref of registeredOwners from users
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredUser](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredUser.md)
-Get registeredUsers from users
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceTransitiveMemberOf](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceTransitiveMemberOf.md)
-Get transitiveMemberOf from users
+Groups and administrative units that the device is a member of.
+This operation is transitive.
+Supports $expand.
 
 ### [Get-MgUserAuthenticationOperation](Get-MgUserAuthenticationOperation.md)
-Get operations from users
+Represents the status of a long-running operation.
 
 ### [Get-MgUserAuthenticationPasswordMethod](Get-MgUserAuthenticationPasswordMethod.md)
-Get passwordMethods from users
+Represents the password that's registered to a user for authentication.
+For security, the password itself will never be returned in the object, but action can be taken to reset a password.
 
 ### [Get-MgUserAuthenticationPhoneMethod](Get-MgUserAuthenticationPhoneMethod.md)
-Get phoneMethods from users
+The phone numbers registered to a user for authentication.
 
 ### [Get-MgUserAuthenticationSoftwareOathMethod](Get-MgUserAuthenticationSoftwareOathMethod.md)
-Get softwareOathMethods from users
+The software OATH TOTP applications registered to a user for authentication.
 
 ### [Get-MgUserAuthenticationTemporaryAccessPassMethod](Get-MgUserAuthenticationTemporaryAccessPassMethod.md)
-Get temporaryAccessPassMethods from users
+Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethod](Get-MgUserAuthenticationWindowHelloForBusinessMethod.md)
-Get windowsHelloForBusinessMethods from users
+Represents the Windows Hello for Business authentication method registered to a user for authentication.
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
-Get device from users
+The registered device on which this Windows Hello for Business key resides.
+Supports $expand.
+When you get a user's Windows Hello for Business registration information, this property is returned only on a single GET and when you specify ?$expand.
+For example, GET /users/admin@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device.
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceExtension](Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceExtension.md)
-Get extensions from users
+The collection of open extensions defined for the device.
+Read-only.
+Nullable.
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceMemberOf](Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceMemberOf.md)
-Get memberOf from users
+Groups and administrative units that this device is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwner](Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwner.md)
-Get registeredOwners from users
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwnerByRef](Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwnerByRef.md)
-Get ref of registeredOwners from users
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser](Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser.md)
-Get registeredUsers from users
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceTransitiveMemberOf](Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceTransitiveMemberOf.md)
-Get transitiveMemberOf from users
+Groups and administrative units that the device is a member of.
+This operation is transitive.
+Supports $expand.
 
 ### [Invoke-MgAvailableIdentityProviderType](Invoke-MgAvailableIdentityProviderType.md)
 Invoke function availableProviderTypes
@@ -306,10 +374,13 @@ Create new navigation property to threatAssessmentRequests for informationProtec
 Create new navigation property to results for informationProtection
 
 ### [New-MgInvitation](New-MgInvitation.md)
-Create invitation
+Use this API to create a new invitation.
+Invitation adds an external user to the organization.
+When creating a new invitation you have several options available:
 
 ### [New-MgOauth2PermissionGrant](New-MgOauth2PermissionGrant.md)
-Create oAuth2PermissionGrant (a delegated permission grant)
+Create a delegated permission grant represented by an oAuth2PermissionGrant object.
+A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
 ### [New-MgPolicyActivityBasedTimeoutPolicy](New-MgPolicyActivityBasedTimeoutPolicy.md)
 Create new navigation property to activityBasedTimeoutPolicies for policies
@@ -450,7 +521,9 @@ Delete navigation property threatAssessmentRequests for informationProtection
 Delete navigation property results for informationProtection
 
 ### [Remove-MgOauth2PermissionGrant](Remove-MgOauth2PermissionGrant.md)
-Delete oAuth2PermissionGrant (a delegated permission grant)
+Delete a delegated permission grant, represented by an oAuth2PermissionGrant object.
+When a delegated permission grant is deleted, the access it granted is revoked.
+Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted **oAuth2PermissionGrant**.
 
 ### [Remove-MgPolicyActivityBasedTimeoutPolicy](Remove-MgPolicyActivityBasedTimeoutPolicy.md)
 Delete navigation property activityBasedTimeoutPolicies for policies
@@ -636,7 +709,8 @@ Update the navigation property threatAssessmentRequests in informationProtection
 Update the navigation property results in informationProtection
 
 ### [Update-MgOauth2PermissionGrant](Update-MgOauth2PermissionGrant.md)
-Update oAuth2PermissionGrant (a delegated permission grant)
+Update the properties of oAuth2PermissionGrant object, representing a delegated permission grant.
+An **oAuth2PermissionGrant** can be updated to change which delegated permissions are granted, by adding or removing items from the list in **scopes**.
 
 ### [Update-MgPolicyActivityBasedTimeoutPolicy](Update-MgPolicyActivityBasedTimeoutPolicy.md)
 Update the navigation property activityBasedTimeoutPolicies in policies

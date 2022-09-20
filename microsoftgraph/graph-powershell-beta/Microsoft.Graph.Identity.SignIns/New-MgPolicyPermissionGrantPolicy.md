@@ -31,23 +31,22 @@ Create new navigation property to permissionGrantPolicies for policies
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Create a permission grant policy
 ```powershell
-PS C:\> {{ Add code here }}
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+New-MgPolicyPermissionGrantPolicy -Id "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant" -DisplayName "Sample app permissions" | fl
 
-{{ Add output here }}
+DeletedDateTime      :
+Description          : Permissions for sample app in test tenant
+DisplayName          : Sample app permissions
+Excludes             :
+Id                   : testtenant-sampleapp-permissions
+Includes             :
+AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies/$entity]}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This command creates a new permission grant policy in Azure AD.
+Specific include and exclude configurations can be created using the `New-MgPolicyPermissionGrantPolicyInclude` and `New-MgPolicyPermissionGrantPolicyExclude` cmdlets.
 
 ## PARAMETERS
 

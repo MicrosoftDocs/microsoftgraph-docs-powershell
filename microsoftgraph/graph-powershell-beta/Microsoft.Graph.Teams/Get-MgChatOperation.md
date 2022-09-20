@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgChatOperation
 
 ## SYNOPSIS
-Get operations from chats
+A collection of all the Teams async operations that ran or are running on the chat.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgChatOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get operations from chats
+A collection of all the Teams async operations that ran or are running on the chat.
+Nullable.
 
 ## EXAMPLES
 

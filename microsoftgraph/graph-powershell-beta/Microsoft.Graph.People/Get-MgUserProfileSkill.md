@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfileSkill
 
 ## SYNOPSIS
-Get skills from users
+Represents detailed information about skills associated with a user in various services.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfileSkill -InputObject <IPeopleIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get skills from users
+Represents detailed information about skills associated with a user in various services.
 
 ## EXAMPLES
 

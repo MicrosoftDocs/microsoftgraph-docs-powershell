@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
 
 ## SYNOPSIS
-Get categorySummaries from deviceManagement
+Summary of the updates by category.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary -InputObj
 ```
 
 ## DESCRIPTION
-Get categorySummaries from deviceManagement
+Summary of the updates by category.
 
 ## EXAMPLES
 

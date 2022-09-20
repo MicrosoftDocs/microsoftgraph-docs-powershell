@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgGroupMemberByRef
 
 ## SYNOPSIS
-Get ref of members from groups
+The members of this group, who can be users, devices, other groups, or service principals.
+Supports the List members, Add member, and Remove member operations.
+Nullable.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
 ## SYNTAX
 
@@ -18,7 +22,11 @@ Get-MgGroupMemberByRef -GroupId <String> [-Filter <String>] [-Search <String>] [
 ```
 
 ## DESCRIPTION
-Get ref of members from groups
+The members of this group, who can be users, devices, other groups, or service principals.
+Supports the List members, Add member, and Remove member operations.
+Nullable.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
 

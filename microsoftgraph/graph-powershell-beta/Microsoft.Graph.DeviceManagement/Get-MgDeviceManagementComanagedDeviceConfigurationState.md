@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementComanagedDeviceConfigurationState
 
 ## SYNOPSIS
-Get deviceConfigurationStates from deviceManagement
+Device configuration states for this device.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementComanagedDeviceConfigurationState -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Get deviceConfigurationStates from deviceManagement
+Device configuration states for this device.
 
 ## EXAMPLES
 

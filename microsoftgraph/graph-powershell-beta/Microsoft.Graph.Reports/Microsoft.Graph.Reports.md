@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: 721c25c4-6238-4ac9-8628-dfab102850f3
+Module Guid: 58bb2c8d-dcf6-4a46-91c3-8acaf158cc54
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
 Help Version: 1.0.0.0
 Locale: en-US
@@ -33,13 +33,13 @@ Get restrictedSignIns from auditLogs
 Get signIns from auditLogs
 
 ### [Get-MgDeviceManagementReport](Get-MgDeviceManagementReport.md)
-Get reports from deviceManagement
+Reports singleton
 
 ### [Get-MgDeviceManagementReportCachedReportConfiguration](Get-MgDeviceManagementReportCachedReportConfiguration.md)
-Get cachedReportConfigurations from deviceManagement
+Entity representing the configuration of a cached report
 
 ### [Get-MgDeviceManagementReportExportJob](Get-MgDeviceManagementReportExportJob.md)
-Get exportJobs from deviceManagement
+Entity representing a job to export a report
 
 ### [Get-MgReportApplicationSign](Get-MgReportApplicationSign.md)
 Represents a detailed summary of an application sign-in.
@@ -57,10 +57,10 @@ Invoke function getAttackSimulationTrainingUserCoverage
 Invoke function getAttackSimulationSimulationUserCoverage
 
 ### [Get-MgReportAuthenticationMethod](Get-MgReportAuthenticationMethod.md)
-Get authenticationMethods from reports
+Container for navigation properties for Azure AD authentication methods resources.
 
 ### [Get-MgReportAuthenticationMethodUserRegistrationDetail](Get-MgReportAuthenticationMethodUserRegistrationDetail.md)
-Get userRegistrationDetails from reports
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
 
 ### [Get-MgReportAzureAdApplicationSign](Get-MgReportAzureAdApplicationSign.md)
 Invoke function getAzureADApplicationSignInSummary
@@ -93,7 +93,7 @@ Invoke function getCredentialUsageSummary
 Invoke function getCredentialUserRegistrationCount
 
 ### [Get-MgReportCredentialUserRegistrationDetail](Get-MgReportCredentialUserRegistrationDetail.md)
-Get credentialUserRegistrationDetails from reports
+Details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users.
 
 ### [Get-MgReportDailyPrintUsageByPrinter](Get-MgReportDailyPrintUsageByPrinter.md)
 Get dailyPrintUsageByPrinter from reports
@@ -108,10 +108,10 @@ Get dailyPrintUsageSummariesByPrinter from reports
 Get dailyPrintUsageSummariesByUser from reports
 
 ### [Get-MgReportDeviceConfigurationDeviceActivity](Get-MgReportDeviceConfigurationDeviceActivity.md)
-Invoke function deviceConfigurationDeviceActivity
+Metadata for the device configuration device activity report
 
 ### [Get-MgReportDeviceConfigurationUserActivity](Get-MgReportDeviceConfigurationUserActivity.md)
-Invoke function deviceConfigurationUserActivity
+Metadata for the device configuration user activity report
 
 ### [Get-MgReportEmailActivityCount](Get-MgReportEmailActivityCount.md)
 Invoke function getEmailActivityCounts
@@ -159,16 +159,16 @@ Invoke function getMailboxUsageQuotaStatusMailboxCounts
 Invoke function getMailboxUsageStorage
 
 ### [Get-MgReportManagedDeviceEnrollmentAbandonmentDetail](Get-MgReportManagedDeviceEnrollmentAbandonmentDetail.md)
-Invoke function managedDeviceEnrollmentAbandonmentDetails
+Metadata for Enrollment abandonment details report
 
 ### [Get-MgReportManagedDeviceEnrollmentAbandonmentSummary](Get-MgReportManagedDeviceEnrollmentAbandonmentSummary.md)
-Invoke function managedDeviceEnrollmentAbandonmentSummary
+Metadata for Enrollment abandonment summary report
 
 ### [Get-MgReportManagedDeviceEnrollmentFailureDetail](Get-MgReportManagedDeviceEnrollmentFailureDetail.md)
 Invoke function managedDeviceEnrollmentFailureDetails
 
 ### [Get-MgReportManagedDeviceEnrollmentFailureTrend](Get-MgReportManagedDeviceEnrollmentFailureTrend.md)
-Invoke function managedDeviceEnrollmentFailureTrends
+Metadata for the enrollment failure trends report
 
 ### [Get-MgReportManagedDeviceEnrollmentTopFailures](Get-MgReportManagedDeviceEnrollmentTopFailures.md)
 Invoke function managedDeviceEnrollmentTopFailures
@@ -246,7 +246,7 @@ Invoke function getPrinterArchivedPrintJobs
 Invoke function getRelyingPartyDetailedSummary
 
 ### [Get-MgReportSecurity](Get-MgReportSecurity.md)
-Get security from reports
+Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.
 
 ### [Get-MgReportSecurityAttackSimulationRepeatOffender](Get-MgReportSecurityAttackSimulationRepeatOffender.md)
 Invoke function getAttackSimulationRepeatOffenders
@@ -381,7 +381,7 @@ Invoke function getTeamsUserActivityUserDetail
 Invoke function getUserArchivedPrintJobs
 
 ### [Get-MgReportUserCredentialUsageDetail](Get-MgReportUserCredentialUsageDetail.md)
-Get userCredentialUsageDetails from reports
+Represents the self-service password reset (SSPR) usage for a given tenant.
 
 ### [Get-MgReportYammerActivityCount](Get-MgReportYammerActivityCount.md)
 Invoke function getYammerActivityCounts

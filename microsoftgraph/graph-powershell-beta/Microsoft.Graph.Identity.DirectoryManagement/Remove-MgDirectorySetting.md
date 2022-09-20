@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDirectorySetting
 
 ## SYNOPSIS
-Delete directorySetting
+Delete a directory setting.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity> [-
 ```
 
 ## DESCRIPTION
-Delete directorySetting
+Delete a directory setting.
 
 ## EXAMPLES
 

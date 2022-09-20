@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticRemoteConnection
 
 ## SYNOPSIS
-Get userExperienceAnalyticsRemoteConnection from deviceManagement
+User experience analytics remote connection
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementUserExperienceAnalyticRemoteConnection -InputObject <IDevi
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsRemoteConnection from deviceManagement
+User experience analytics remote connection
 
 ## EXAMPLES
 

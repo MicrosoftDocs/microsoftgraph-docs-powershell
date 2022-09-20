@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupAppRoleAssignment
 
 ## SYNOPSIS
-Get appRoleAssignments from groups
+Represents the app roles a group has been granted for an application.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get appRoleAssignments from groups
+Represents the app roles a group has been granted for an application.
+Supports $expand.
 
 ## EXAMPLES
 

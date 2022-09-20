@@ -690,7 +690,7 @@ BODYPARAMETER `<IMicrosoftGraphCall1>`: call
   - `[CallbackUri <String>]`: The callback URL on which callbacks will be delivered. Must be https.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+    - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
     - `[ReplyChainMessageId <String>]`: The ID of the reply message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>]`: 
@@ -698,9 +698,9 @@ BODYPARAMETER `<IMicrosoftGraphCall1>`: call
   - `[Direction <String>]`: callDirection
   - `[IncomingContext <IMicrosoftGraphIncomingContext>]`: incomingContext
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ObservedParticipantId <String>]`: The id of the participant that is under observation. Read-only.
+    - `[ObservedParticipantId <String>]`: The ID of the participant that is under observation. Read-only.
     - `[OnBehalfOf <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming call. Read-only.
+    - `[SourceParticipantId <String>]`: The ID of the participant that triggered the incoming call. Read-only.
     - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[MediaConfig <IMicrosoftGraphMediaConfig1>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -788,7 +788,7 @@ CALLROUTES <IMicrosoftGraphCallRoute\[]>: The routing information on how the cal
 
 CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+  - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
@@ -797,7 +797,7 @@ CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession\[]>: .
 
 INCOMINGCONTEXT `<IMicrosoftGraphIncomingContext>`: incomingContext
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ObservedParticipantId <String>]`: The id of the participant that is under observation. Read-only.
+  - `[ObservedParticipantId <String>]`: The ID of the participant that is under observation. Read-only.
   - `[OnBehalfOf <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -806,7 +806,7 @@ INCOMINGCONTEXT `<IMicrosoftGraphIncomingContext>`: incomingContext
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming call. Read-only.
+  - `[SourceParticipantId <String>]`: The ID of the participant that triggered the incoming call. Read-only.
   - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
 
 MEDIACONFIG `<IMicrosoftGraphMediaConfig1>`: mediaConfig

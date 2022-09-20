@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementHealthOverview
 
 ## SYNOPSIS
-Get healthOverviews from admin
+A collection of service health information for tenant.
+This property is a contained navigation property, it is nullable and readonly.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnouncemen
 ```
 
 ## DESCRIPTION
-Get healthOverviews from admin
+A collection of service health information for tenant.
+This property is a contained navigation property, it is nullable and readonly.
 
 ## EXAMPLES
 

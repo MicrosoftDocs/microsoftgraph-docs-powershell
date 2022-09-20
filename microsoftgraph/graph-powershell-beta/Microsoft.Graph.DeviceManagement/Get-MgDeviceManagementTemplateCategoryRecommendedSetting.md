@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTemplateCategoryRecommendedSetting
 
 ## SYNOPSIS
-Get recommendedSettings from deviceManagement
+The settings this category contains
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementTemplateCategoryRecommendedSetting -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Get recommendedSettings from deviceManagement
+The settings this category contains
 
 ## EXAMPLES
 

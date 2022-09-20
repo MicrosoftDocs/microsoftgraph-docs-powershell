@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfilePatent
 
 ## SYNOPSIS
-Get patents from users
+Represents patents that a user has added to their profile.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfilePatent -InputObject <IPeopleIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get patents from users
+Represents patents that a user has added to their profile.
 
 ## EXAMPLES
 

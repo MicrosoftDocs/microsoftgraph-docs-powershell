@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgSiteOnenoteNotebookSectionGroup
 
 ## SYNOPSIS
-Get sectionGroups from sites
+The section groups in the notebook.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgSiteOnenoteNotebookSectionGroup -NotebookId <String> -SiteId <String> [-Ex
 ```
 
 ## DESCRIPTION
-Get sectionGroups from sites
+The section groups in the notebook.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

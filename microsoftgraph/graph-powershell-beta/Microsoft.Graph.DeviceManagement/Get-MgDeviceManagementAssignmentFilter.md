@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAssignmentFilter
 
 ## SYNOPSIS
-Get assignmentFilters from deviceManagement
+The list of assignment filters
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementAssignmentFilter -InputObject <IDeviceManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Get assignmentFilters from deviceManagement
+The list of assignment filters
 
 ## EXAMPLES
 

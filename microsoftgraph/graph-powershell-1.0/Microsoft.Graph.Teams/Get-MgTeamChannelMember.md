@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamChannelMember
 
 ## SYNOPSIS
-Get members from teams
+A collection of membership records associated with the channel.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get members from teams
+A collection of membership records associated with the channel.
 
 ## EXAMPLES
 

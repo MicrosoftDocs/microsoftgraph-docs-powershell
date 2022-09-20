@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTemplateMigratableToCategoryRecommendedSetting
 
 ## SYNOPSIS
-Get recommendedSettings from deviceManagement
+The settings this category contains
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgDeviceManagementTemplateMigratableToCategoryRecommendedSetting -InputObjec
 ```
 
 ## DESCRIPTION
-Get recommendedSettings from deviceManagement
+The settings this category contains
 
 ## EXAMPLES
 

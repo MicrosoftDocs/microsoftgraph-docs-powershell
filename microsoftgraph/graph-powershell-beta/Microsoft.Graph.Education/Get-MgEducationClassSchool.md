@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassSchool
 
 ## SYNOPSIS
-Get schools from education
+All schools that this class is associated with.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgEducationClassSchool -InputObject <IEducationIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get schools from education
+All schools that this class is associated with.
+Nullable.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgSubscription
 
 ## SYNOPSIS
-Get subscription
+Retrieve the properties and relationships of a subscription.
+See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
 ## SYNTAX
 
@@ -29,7 +30,8 @@ Get-MgSubscription -InputObject <IChangeNotificationsIdentity> [-Property <Strin
 ```
 
 ## DESCRIPTION
-Get subscription
+Retrieve the properties and relationships of a subscription.
+See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
 ## EXAMPLES
 

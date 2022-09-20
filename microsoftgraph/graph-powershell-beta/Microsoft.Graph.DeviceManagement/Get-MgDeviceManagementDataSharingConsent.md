@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDataSharingConsent
 
 ## SYNOPSIS
-Get dataSharingConsents from deviceManagement
+Data sharing consents.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDataSharingConsent -InputObject <IDeviceManagementIdentity
 ```
 
 ## DESCRIPTION
-Get dataSharingConsents from deviceManagement
+Data sharing consents.
 
 ## EXAMPLES
 

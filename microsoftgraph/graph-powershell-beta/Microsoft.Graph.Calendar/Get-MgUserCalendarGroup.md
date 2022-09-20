@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserCalendarGroup
 
 ## SYNOPSIS
-Get calendarGroups from users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -29,7 +31,9 @@ Get-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-Property <String[]>] 
 ```
 
 ## DESCRIPTION
-Get calendarGroups from users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementScriptUserRunState
 
 ## SYNOPSIS
-Get userRunStates from deviceManagement
+List of run states for this script across all users.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementScriptUserRunState -InputObject <IDeviceManagementIdentity
 ```
 
 ## DESCRIPTION
-Get userRunStates from deviceManagement
+List of run states for this script across all users.
 
 ## EXAMPLES
 

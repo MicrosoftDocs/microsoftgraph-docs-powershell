@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrivilegedRoleAssignment
 
 ## SYNOPSIS
-Create privilegedRoleAssignment
+Use this API to create a new  privilegedRoleAssignment.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgPrivilegedRoleAssignment -BodyParameter <IMicrosoftGraphPrivilegedRoleAssi
 ```
 
 ## DESCRIPTION
-Create privilegedRoleAssignment
+Use this API to create a new  privilegedRoleAssignment.
 
 ## EXAMPLES
 

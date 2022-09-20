@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerRecentPlan
 
 ## SYNOPSIS
-Get recentPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserPlannerRecentPlan -InputObject <IPlannerIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get recentPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
 ## EXAMPLES
 

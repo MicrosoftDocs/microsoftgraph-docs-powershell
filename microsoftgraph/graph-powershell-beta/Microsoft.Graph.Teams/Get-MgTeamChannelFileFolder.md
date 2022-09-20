@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamChannelFileFolder
 
 ## SYNOPSIS
-Get filesFolder from teams
+Metadata for the location where the channel's files are stored.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgTeamChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get filesFolder from teams
+Metadata for the location where the channel's files are stored.
 
 ## EXAMPLES
 

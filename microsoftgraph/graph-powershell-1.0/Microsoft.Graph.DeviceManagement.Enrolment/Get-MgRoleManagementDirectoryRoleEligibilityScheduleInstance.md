@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance
 
 ## SYNOPSIS
-Get roleEligibilityScheduleInstances from roleManagement
+Instances for role eligibility requests.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance -InputObject <IDevi
 ```
 
 ## DESCRIPTION
-Get roleEligibilityScheduleInstances from roleManagement
+Instances for role eligibility requests.
 
 ## EXAMPLES
 

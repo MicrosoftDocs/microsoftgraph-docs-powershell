@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfileEducationalActivity
 
 ## SYNOPSIS
-Get educationalActivities from users
+Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get educationalActivities from users
+Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 ## EXAMPLES
 

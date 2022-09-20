@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBookingBusinessCustomer
 
 ## SYNOPSIS
-Get customers from solutions
+All the customers of this business.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get customers from solutions
+All the customers of this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

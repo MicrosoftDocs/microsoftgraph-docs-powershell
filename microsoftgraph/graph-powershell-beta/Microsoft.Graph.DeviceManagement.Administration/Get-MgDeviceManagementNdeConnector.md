@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementNdeConnector
 
 ## SYNOPSIS
-Get ndesConnectors from deviceManagement
+The collection of Ndes connectors for this account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementNdeConnector -InputObject <IDeviceManagementAdministration
 ```
 
 ## DESCRIPTION
-Get ndesConnectors from deviceManagement
+The collection of Ndes connectors for this account.
 
 ## EXAMPLES
 

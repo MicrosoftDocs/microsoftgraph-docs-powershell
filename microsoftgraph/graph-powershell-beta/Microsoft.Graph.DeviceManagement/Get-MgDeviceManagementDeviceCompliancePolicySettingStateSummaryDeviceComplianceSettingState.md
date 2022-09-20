@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState
 
 ## SYNOPSIS
-Get deviceComplianceSettingStates from deviceManagement
+Not yet documented
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceS
 ```
 
 ## DESCRIPTION
-Get deviceComplianceSettingStates from deviceManagement
+Not yet documented
 
 ## EXAMPLES
 

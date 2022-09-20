@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserManagerByRef
 
 ## SYNOPSIS
-Get ref of manager from users
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ## SYNTAX
 
@@ -23,7 +26,10 @@ Get-MgUserManagerByRef -InputObject <IUsersIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get ref of manager from users
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ## EXAMPLES
 

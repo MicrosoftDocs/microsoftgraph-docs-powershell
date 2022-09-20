@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent
 
 ## SYNOPSIS
-Get hostedContent from appCatalogs
+The contents of the app icon if the icon is hosted within the Teams infrastructure.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeamsIden
 ```
 
 ## DESCRIPTION
-Get hostedContent from appCatalogs
+The contents of the app icon if the icon is hosted within the Teams infrastructure.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteTermStoreGroup
 
 ## SYNOPSIS
-Get groups from sites
+Collection of all groups available in the term store.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Get-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get groups from sites
+Collection of all groups available in the term store.
 
 ## EXAMPLES
 

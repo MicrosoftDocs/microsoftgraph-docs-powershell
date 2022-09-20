@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTodoList
 
 ## SYNOPSIS
-Get lists from users
+The task lists in the users mailbox.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserTodoList -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get lists from users
+The task lists in the users mailbox.
 
 ## EXAMPLES
 

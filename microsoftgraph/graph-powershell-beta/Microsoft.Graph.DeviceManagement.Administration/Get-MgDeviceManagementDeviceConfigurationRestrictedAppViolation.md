@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
 
 ## SYNOPSIS
-Get deviceConfigurationRestrictedAppsViolations from deviceManagement
+Restricted apps violations for this account.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
 ```
 
 ## DESCRIPTION
-Get deviceConfigurationRestrictedAppsViolations from deviceManagement
+Restricted apps violations for this account.
 
 ## EXAMPLES
 

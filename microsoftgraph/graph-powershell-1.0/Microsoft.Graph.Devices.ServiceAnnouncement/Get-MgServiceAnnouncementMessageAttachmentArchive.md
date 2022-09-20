@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementMessageAttachmentArchive
 
 ## SYNOPSIS
-Get attachmentsArchive for the navigation property messages from admin
+The zip file that contains all attachments for a message.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceA
 ```
 
 ## DESCRIPTION
-Get attachmentsArchive for the navigation property messages from admin
+The zip file that contains all attachments for a message.
 
 ## EXAMPLES
 

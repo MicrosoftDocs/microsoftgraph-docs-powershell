@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCategory
 
 ## SYNOPSIS
-Get deviceCategories from deviceManagement
+The list of device categories with the tenant.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity> [-
 ```
 
 ## DESCRIPTION
-Get deviceCategories from deviceManagement
+The list of device categories with the tenant.
 
 ## EXAMPLES
 

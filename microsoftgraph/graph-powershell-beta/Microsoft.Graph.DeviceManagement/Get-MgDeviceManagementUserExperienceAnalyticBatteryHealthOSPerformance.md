@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance
 
 ## SYNOPSIS
-Get userExperienceAnalyticsBatteryHealthOsPerformance from deviceManagement
+User Experience Analytics Battery Health Os Performance
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance -InputObj
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsBatteryHealthOsPerformance from deviceManagement
+User Experience Analytics Battery Health Os Performance
 
 ## EXAMPLES
 

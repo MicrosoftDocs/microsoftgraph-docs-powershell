@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupEvent
 
 ## SYNOPSIS
-Get events from groups
+The group's events.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-MgGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<Commo
 ```
 
 ## DESCRIPTION
-Get events from groups
+The group's events.
 
 ## EXAMPLES
 

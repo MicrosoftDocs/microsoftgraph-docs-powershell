@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkforceIntegrations
-A workforce integration with shifts.
+.
 To construct, please use Get-Help -Online and see NOTES section for WORKFORCEINTEGRATIONS properties and create a hash table.
 
 ```yaml
@@ -179,7 +179,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IMicrosoftGraphTeamwork1>`: teamwork
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration[]>]`: A workforce integration with shifts.
+  - `[WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration[]>]`: 
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -201,7 +201,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamwork1>`: teamwork
     - `[SupportedEntities <String>]`: 
     - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
-WORKFORCEINTEGRATIONS <IMicrosoftGraphWorkforceIntegration\[]>: A workforce integration with shifts.
+WORKFORCEINTEGRATIONS <IMicrosoftGraphWorkforceIntegration\[]>: .
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

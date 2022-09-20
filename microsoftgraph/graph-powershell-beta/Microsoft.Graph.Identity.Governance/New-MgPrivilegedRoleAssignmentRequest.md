@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrivilegedRoleAssignmentRequest
 
 ## SYNOPSIS
-Create privilegedRoleAssignmentRequest
+Create a privilegedroleassignmentrequest object.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgPrivilegedRoleAssignmentRequest -BodyParameter <IMicrosoftGraphPrivilegedR
 ```
 
 ## DESCRIPTION
-Create privilegedRoleAssignmentRequest
+Create a privilegedroleassignmentrequest object.
 
 ## EXAMPLES
 

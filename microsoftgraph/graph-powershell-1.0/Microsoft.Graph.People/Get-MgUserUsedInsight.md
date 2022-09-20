@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserUsedInsight
 
 ## SYNOPSIS
-Get used from users
+Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserUsedInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get used from users
+Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItem
 
 ## SYNOPSIS
-Get items from sites
+All items contained in the list.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get items from sites
+All items contained in the list.
 
 ## EXAMPLES
 

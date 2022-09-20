@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamInstalledApp
 
 ## SYNOPSIS
-Get installedApps from teams
+The apps installed in this team.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get installedApps from teams
+The apps installed in this team.
 
 ## EXAMPLES
 

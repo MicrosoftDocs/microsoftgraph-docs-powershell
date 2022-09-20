@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyConfiguration
 
 ## SYNOPSIS
-Get groupPolicyConfigurations from deviceManagement
+The group policy configurations created by this account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementGroupPolicyConfiguration -InputObject <IDeviceManagementId
 ```
 
 ## DESCRIPTION
-Get groupPolicyConfigurations from deviceManagement
+The group policy configurations created by this account.
 
 ## EXAMPLES
 

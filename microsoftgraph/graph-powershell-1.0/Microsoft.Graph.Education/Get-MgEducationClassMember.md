@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassMember
 
 ## SYNOPSIS
-Get members from education
+All users in the class.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgEducationClassMember -EducationClassId <String> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get members from education
+All users in the class.
+Nullable.
 
 ## EXAMPLES
 

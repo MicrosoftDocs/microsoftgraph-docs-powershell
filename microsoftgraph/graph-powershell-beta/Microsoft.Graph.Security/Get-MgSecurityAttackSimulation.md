@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityAttackSimulation
 
 ## SYNOPSIS
-Get simulations from security
+Represents an attack simulation training campaign in a tenant.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <String[]
 ```
 
 ## DESCRIPTION
-Get simulations from security
+Represents an attack simulation training campaign in a tenant.
 
 ## EXAMPLES
 

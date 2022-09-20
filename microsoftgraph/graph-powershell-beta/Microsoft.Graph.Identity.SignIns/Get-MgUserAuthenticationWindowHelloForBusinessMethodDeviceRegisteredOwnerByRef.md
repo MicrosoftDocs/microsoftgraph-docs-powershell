@@ -8,7 +8,12 @@ schema: 2.0.0
 # Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwnerByRef
 
 ## SYNOPSIS
-Get ref of registeredOwners from users
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +24,12 @@ Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwnerByRef -
 ```
 
 ## DESCRIPTION
-Get ref of registeredOwners from users
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

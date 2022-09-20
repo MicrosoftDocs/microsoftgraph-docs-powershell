@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgApplicationOwner
 
 ## SYNOPSIS
-Get owners from applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
+Supports $expand and $filter (eq when counting empty collections).
 
 ## SYNTAX
 
@@ -19,7 +22,10 @@ Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Fi
 ```
 
 ## DESCRIPTION
-Get owners from applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
+Supports $expand and $filter (eq when counting empty collections).
 
 ## EXAMPLES
 

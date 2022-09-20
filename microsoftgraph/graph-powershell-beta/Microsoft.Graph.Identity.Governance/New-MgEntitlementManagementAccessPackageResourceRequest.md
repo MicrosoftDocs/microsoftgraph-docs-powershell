@@ -430,11 +430,11 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageReso
   - `[RequestState <String>]`: The outcome of whether the service was able to add the resource to the catalog.  The value is Delivered if the resource was added or removed. Read-Only.
   - `[RequestStatus <String>]`: 
   - `[RequestType <String>]`: Use AdminAdd to add a resource, if the caller is an administrator or resource owner, or AdminRemove to remove a resource.
-  - `[Requestor <IMicrosoftGraphAccessPackageSubject>]`: accessPackageSubject
+  - `[Requestor <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[AltSecId <String>]`: 
-    - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
+    - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
       - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
@@ -458,11 +458,11 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageReso
     - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
     - `[Type <String>]`: The resource type of the subject.
 
-REQUESTOR `<IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
+REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AltSecId <String>]`: 
-  - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
+  - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.

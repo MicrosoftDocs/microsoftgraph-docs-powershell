@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyMobileAppManagementPolicyIncludedGroup
 
 ## SYNOPSIS
-Get includedGroups from policies
+Azure AD groups under the scope of the mobility management application if appliesTo is selected
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId <
 ```
 
 ## DESCRIPTION
-Get includedGroups from policies
+Azure AD groups under the scope of the mobility management application if appliesTo is selected
 
 ## EXAMPLES
 

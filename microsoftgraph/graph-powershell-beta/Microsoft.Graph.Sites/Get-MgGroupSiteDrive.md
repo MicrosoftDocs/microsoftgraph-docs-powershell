@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteDrive
 
 ## SYNOPSIS
-Get drive from groups
+The default drive (document library) for this site.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Get-MgGroupSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get drive from groups
+The default drive (document library) for this site.
 
 ## EXAMPLES
 

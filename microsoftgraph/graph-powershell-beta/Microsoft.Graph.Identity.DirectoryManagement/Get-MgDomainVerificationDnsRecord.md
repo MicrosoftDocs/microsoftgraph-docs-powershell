@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgDomainVerificationDnsRecord
 
 ## SYNOPSIS
-Get verificationDnsRecords from domains
+DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
+Read-only, Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-Get verificationDnsRecords from domains
+DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
+Read-only, Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

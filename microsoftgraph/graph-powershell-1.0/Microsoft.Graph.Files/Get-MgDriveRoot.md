@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDriveRoot
 
 ## SYNOPSIS
-Get root from drives
+The root folder of the drive.
+Read-only.
 
 ## SYNTAX
 
@@ -24,7 +25,8 @@ Get-MgDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get root from drives
+The root folder of the drive.
+Read-only.
 
 ## EXAMPLES
 

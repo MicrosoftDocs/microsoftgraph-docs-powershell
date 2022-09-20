@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 7a2fa07c-0448-4e11-9fd7-4955c361b994
+Module Guid: 73d5e246-8d31-4e49-aae9-2eeefe36365c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,28 +12,46 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Users Cmdlets
 ### [Get-MgUser](Get-MgUser.md)
-Get a user
+Retrieve the properties and relationships of user object.
 
 ### [Get-MgUserCreatedObject](Get-MgUserCreatedObject.md)
-Get createdObjects from users
+Directory objects that were created by the user.
+Read-only.
+Nullable.
 
 ### [Get-MgUserDirectReport](Get-MgUserDirectReport.md)
-Get directReports from users
+The users and contacts that report to the user.
+(The users and contacts that have their manager property set to this user.) Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserExtension](Get-MgUserExtension.md)
-Get extensions from users
+The collection of open extensions defined for the user.
+Read-only.
+Supports $expand.
+Nullable.
 
 ### [Get-MgUserLicenseDetail](Get-MgUserLicenseDetail.md)
-Get licenseDetails from users
+A collection of this user's license details.
+Read-only.
 
 ### [Get-MgUserManager](Get-MgUserManager.md)
-Get manager from users
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
-Get ref of manager from users
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
-Get memberOf from users
+The groups and directory roles that the user is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
 The user or contact that is this user's manager.
@@ -45,22 +63,32 @@ Supports $expand.
 Get oauth2PermissionGrants from users
 
 ### [Get-MgUserOutlookMasterCategory](Get-MgUserOutlookMasterCategory.md)
-Get masterCategories from users
+A list of categories defined for the user.
 
 ### [Get-MgUserOwnedDevice](Get-MgUserOwnedDevice.md)
-Get ownedDevices from users
+Devices that are owned by the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserOwnedObject](Get-MgUserOwnedObject.md)
-Get ownedObjects from users
+Directory objects that are owned by the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserPhoto](Get-MgUserPhoto.md)
-Get photo from users
+The user's profile photo.
+Read-only.
 
 ### [Get-MgUserPhotoContent](Get-MgUserPhotoContent.md)
 Get media content for the navigation property photo from users
 
 ### [Get-MgUserRegisteredDevice](Get-MgUserRegisteredDevice.md)
-Get registeredDevices from users
+Devices that are registered for the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserSetting](Get-MgUserSetting.md)
 Get settings from users
@@ -69,13 +97,16 @@ Get settings from users
 Get shiftPreferences from users
 
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
-Get lists from users
+The task lists in the users mailbox.
 
 ### [Get-MgUserTodoListExtension](Get-MgUserTodoListExtension.md)
-Get extensions from users
+The collection of open extensions defined for the task list.
+Nullable.
 
 ### [Get-MgUserTodoListTask](Get-MgUserTodoListTask.md)
-Get tasks from users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ### [Get-MgUserTodoListTaskAttachment](Get-MgUserTodoListTaskAttachment.md)
 Get attachments from users
@@ -90,22 +121,26 @@ Get attachmentSessions from users
 Get content for the navigation property attachmentSessions from users
 
 ### [Get-MgUserTodoListTaskChecklistItem](Get-MgUserTodoListTaskChecklistItem.md)
-Get checklistItems from users
+A collection of checklistItems linked to a task.
 
 ### [Get-MgUserTodoListTaskExtension](Get-MgUserTodoListTaskExtension.md)
-Get extensions from users
+The collection of open extensions defined for the task.
+Nullable.
 
 ### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
-Get linkedResources from users
+A collection of resources linked to the task.
 
 ### [Get-MgUserTransitiveMemberOf](Get-MgUserTransitiveMemberOf.md)
-Get transitiveMemberOf from users
+The groups, including nested groups, and directory roles that a user is a member of.
+Nullable.
 
 ### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
 A collection of resources linked to the task.
 
 ### [New-MgUser](New-MgUser.md)
-Create user
+Create a new user.\nThe request body contains the user to create.
+At a minimum, you must specify the required properties for the user.
+You can optionally specify any other writable properties.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
@@ -149,7 +184,10 @@ Create new navigation property to linkedResources for users
 A collection of resources linked to the task.
 
 ### [Remove-MgUser](Remove-MgUser.md)
-Delete a user
+Delete user.
+ When deleted, user resources are moved to a temporary container and can be restored within 30 days.
+After that time, they are permanently deleted.
+To learn more, see deletedItems.
 
 ### [Remove-MgUserExtension](Remove-MgUserExtension.md)
 Delete navigation property extensions for users
@@ -209,7 +247,9 @@ Update media content for the navigation property attachments in users
 Update content for the navigation property attachmentSessions in users
 
 ### [Update-MgUser](Update-MgUser.md)
-Update user
+Update the properties of a user object.
+Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles.
+Compare member and guest default permissions to see properties they can manage.
 
 ### [Update-MgUserExtension](Update-MgUserExtension.md)
 Update the navigation property extensions in users

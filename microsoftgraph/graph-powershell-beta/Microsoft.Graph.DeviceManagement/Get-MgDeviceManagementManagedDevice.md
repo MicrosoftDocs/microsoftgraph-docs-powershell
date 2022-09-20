@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementManagedDevice
 
 ## SYNOPSIS
-Get managedDevices from deviceManagement
+The list of managed devices.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get managedDevices from deviceManagement
+The list of managed devices.
 
 ## EXAMPLES
 

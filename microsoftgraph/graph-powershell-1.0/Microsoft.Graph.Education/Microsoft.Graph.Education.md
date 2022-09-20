@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Education
-Module Guid: 69696c82-bc19-4928-9949-06fbe1b19817
+Module Guid: 63f42438-9a12-40a7-a0ec-f6efd6201804
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,37 +15,45 @@ Microsoft Graph PowerShell Cmdlets
 Get classes from education
 
 ### [Get-MgEducationClassAssignment](Get-MgEducationClassAssignment.md)
-Get assignments from education
+All assignments associated with this class.
+Nullable.
 
 ### [Get-MgEducationClassAssignmentCategory](Get-MgEducationClassAssignmentCategory.md)
-Get assignmentCategories from education
+All categories associated with this class.
+Nullable.
 
 ### [Get-MgEducationClassAssignmentCategoryByRef](Get-MgEducationClassAssignmentCategoryByRef.md)
-Get ref of categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ### [Get-MgEducationClassAssignmentCategoryDelta](Get-MgEducationClassAssignmentCategoryDelta.md)
 Invoke function delta
 
 ### [Get-MgEducationClassAssignmentDefault](Get-MgEducationClassAssignmentDefault.md)
-Get assignmentDefaults from education
+Specifies class-level defaults respected by new assignments created in the class.
 
 ### [Get-MgEducationClassAssignmentDelta](Get-MgEducationClassAssignmentDelta.md)
 Invoke function delta
 
 ### [Get-MgEducationClassAssignmentResource](Get-MgEducationClassAssignmentResource.md)
-Get resources from education
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 ### [Get-MgEducationClassAssignmentRubric](Get-MgEducationClassAssignmentRubric.md)
-Get rubric from education
+When set, the grading rubric attached to this assignment.
 
 ### [Get-MgEducationClassAssignmentRubricByRef](Get-MgEducationClassAssignmentRubricByRef.md)
-Get ref of rubric from education
+When set, the grading rubric attached to this assignment.
 
 ### [Get-MgEducationClassAssignmentSetting](Get-MgEducationClassAssignmentSetting.md)
-Get assignmentSettings from education
+Specifies class-level assignments settings.
 
 ### [Get-MgEducationClassAssignmentSubmission](Get-MgEducationClassAssignmentSubmission.md)
-Get submissions from education
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 ### [Get-MgEducationClassAssignmentSubmissionOutcome](Get-MgEducationClassAssignmentSubmissionOutcome.md)
 Get outcomes from education
@@ -60,34 +68,43 @@ Get submittedResources from education
 Invoke function delta
 
 ### [Get-MgEducationClassGroup](Get-MgEducationClassGroup.md)
-Get group from education
+The underlying Microsoft 365 group object.
 
 ### [Get-MgEducationClassMember](Get-MgEducationClassMember.md)
-Get members from education
+All users in the class.
+Nullable.
 
 ### [Get-MgEducationClassMemberByRef](Get-MgEducationClassMemberByRef.md)
-Get ref of members from education
+All users in the class.
+Nullable.
 
 ### [Get-MgEducationClassSchool](Get-MgEducationClassSchool.md)
-Get schools from education
+All schools that this class is associated with.
+Nullable.
 
 ### [Get-MgEducationClassTeacher](Get-MgEducationClassTeacher.md)
-Get teachers from education
+All teachers in the class.
+Nullable.
 
 ### [Get-MgEducationClassTeacherByRef](Get-MgEducationClassTeacherByRef.md)
-Get ref of teachers from education
+All teachers in the class.
+Nullable.
 
 ### [Get-MgEducationMe](Get-MgEducationMe.md)
 Get me from education
 
 ### [Get-MgEducationMeAssignment](Get-MgEducationMeAssignment.md)
-Get assignments from education
+Assignments belonging to the user.
 
 ### [Get-MgEducationMeAssignmentCategory](Get-MgEducationMeAssignmentCategory.md)
-Get categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ### [Get-MgEducationMeAssignmentCategoryByRef](Get-MgEducationMeAssignmentCategoryByRef.md)
-Get ref of categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ### [Get-MgEducationMeAssignmentCategoryDelta](Get-MgEducationMeAssignmentCategoryDelta.md)
 Invoke function delta
@@ -96,16 +113,20 @@ Invoke function delta
 Invoke function delta
 
 ### [Get-MgEducationMeAssignmentResource](Get-MgEducationMeAssignmentResource.md)
-Get resources from education
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 ### [Get-MgEducationMeAssignmentRubric](Get-MgEducationMeAssignmentRubric.md)
-Get rubric from education
+When set, the grading rubric attached to this assignment.
 
 ### [Get-MgEducationMeAssignmentRubricByRef](Get-MgEducationMeAssignmentRubricByRef.md)
-Get ref of rubric from education
+When set, the grading rubric attached to this assignment.
 
 ### [Get-MgEducationMeAssignmentSubmission](Get-MgEducationMeAssignmentSubmission.md)
-Get submissions from education
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 ### [Get-MgEducationMeAssignmentSubmissionOutcome](Get-MgEducationMeAssignmentSubmissionOutcome.md)
 Get outcomes from education
@@ -117,19 +138,21 @@ Get resources from education
 Get submittedResources from education
 
 ### [Get-MgEducationMeClass](Get-MgEducationMeClass.md)
-Get classes from education
+Classes to which the user belongs.
+Nullable.
 
 ### [Get-MgEducationMeRubric](Get-MgEducationMeRubric.md)
-Get rubrics from education
+When set, the grading rubric attached to the assignment.
 
 ### [Get-MgEducationMeSchool](Get-MgEducationMeSchool.md)
-Get schools from education
+Schools to which the user belongs.
+Nullable.
 
 ### [Get-MgEducationMeTaughtClass](Get-MgEducationMeTaughtClass.md)
-Get taughtClasses from education
+Classes for which the user is a teacher.
 
 ### [Get-MgEducationMeUser](Get-MgEducationMeUser.md)
-Get user from education
+The directory user that corresponds to this user.
 
 ### [Get-MgEducationRoot](Get-MgEducationRoot.md)
 Get education
@@ -138,34 +161,42 @@ Get education
 Get schools from education
 
 ### [Get-MgEducationSchoolAdministrativeUnit](Get-MgEducationSchoolAdministrativeUnit.md)
-Get administrativeUnit from education
+The underlying administrativeUnit for this school.
 
 ### [Get-MgEducationSchoolClass](Get-MgEducationSchoolClass.md)
-Get classes from education
+Classes taught at the school.
+Nullable.
 
 ### [Get-MgEducationSchoolClassByRef](Get-MgEducationSchoolClassByRef.md)
-Get ref of classes from education
+Classes taught at the school.
+Nullable.
 
 ### [Get-MgEducationSchoolDelta](Get-MgEducationSchoolDelta.md)
 Invoke function delta
 
 ### [Get-MgEducationSchoolUser](Get-MgEducationSchoolUser.md)
-Get users from education
+Users in the school.
+Nullable.
 
 ### [Get-MgEducationSchoolUserByRef](Get-MgEducationSchoolUserByRef.md)
-Get ref of users from education
+Users in the school.
+Nullable.
 
 ### [Get-MgEducationUser](Get-MgEducationUser.md)
 Get users from education
 
 ### [Get-MgEducationUserAssignment](Get-MgEducationUserAssignment.md)
-Get assignments from education
+Assignments belonging to the user.
 
 ### [Get-MgEducationUserAssignmentCategory](Get-MgEducationUserAssignmentCategory.md)
-Get categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ### [Get-MgEducationUserAssignmentCategoryByRef](Get-MgEducationUserAssignmentCategoryByRef.md)
-Get ref of categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ### [Get-MgEducationUserAssignmentCategoryDelta](Get-MgEducationUserAssignmentCategoryDelta.md)
 Invoke function delta
@@ -174,16 +205,20 @@ Invoke function delta
 Invoke function delta
 
 ### [Get-MgEducationUserAssignmentResource](Get-MgEducationUserAssignmentResource.md)
-Get resources from education
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 ### [Get-MgEducationUserAssignmentRubric](Get-MgEducationUserAssignmentRubric.md)
-Get rubric from education
+When set, the grading rubric attached to this assignment.
 
 ### [Get-MgEducationUserAssignmentRubricByRef](Get-MgEducationUserAssignmentRubricByRef.md)
-Get ref of rubric from education
+When set, the grading rubric attached to this assignment.
 
 ### [Get-MgEducationUserAssignmentSubmission](Get-MgEducationUserAssignmentSubmission.md)
-Get submissions from education
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 ### [Get-MgEducationUserAssignmentSubmissionOutcome](Get-MgEducationUserAssignmentSubmissionOutcome.md)
 Get outcomes from education
@@ -195,19 +230,21 @@ Get resources from education
 Get submittedResources from education
 
 ### [Get-MgEducationUserClass](Get-MgEducationUserClass.md)
-Get classes from education
+Classes to which the user belongs.
+Nullable.
 
 ### [Get-MgEducationUserDelta](Get-MgEducationUserDelta.md)
 Invoke function delta
 
 ### [Get-MgEducationUserRubric](Get-MgEducationUserRubric.md)
-Get rubrics from education
+When set, the grading rubric attached to the assignment.
 
 ### [Get-MgEducationUserSchool](Get-MgEducationUserSchool.md)
-Get schools from education
+Schools to which the user belongs.
+Nullable.
 
 ### [Get-MgEducationUserTaughtClass](Get-MgEducationUserTaughtClass.md)
-Get taughtClasses from education
+Classes for which the user is a teacher.
 
 ### [Invoke-MgReassignEducationClassAssignmentSubmission](Invoke-MgReassignEducationClassAssignmentSubmission.md)
 Invoke action reassign

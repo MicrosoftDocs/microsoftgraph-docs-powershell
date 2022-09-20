@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementExchangeConnector
 
 ## SYNOPSIS
-Get exchangeConnectors from deviceManagement
+The list of Exchange Connectors configured by the tenant.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Get exchangeConnectors from deviceManagement
+The list of Exchange Connectors configured by the tenant.
 
 ## EXAMPLES
 

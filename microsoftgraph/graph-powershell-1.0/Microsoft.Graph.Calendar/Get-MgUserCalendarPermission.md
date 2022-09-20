@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserCalendarPermission
 
 ## SYNOPSIS
-Get calendarPermissions from users
+The permissions of the users with whom the calendar is shared.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Get-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String
 ```
 
 ## DESCRIPTION
-Get calendarPermissions from users
+The permissions of the users with whom the calendar is shared.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBookingBusiness
 
 ## SYNOPSIS
-Get bookingBusiness
+Get the properties and relationships of a bookingBusiness object.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgBookingBusiness -InputObject <IBookingsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get bookingBusiness
+Get the properties and relationships of a bookingBusiness object.
 
 ## EXAMPLES
 

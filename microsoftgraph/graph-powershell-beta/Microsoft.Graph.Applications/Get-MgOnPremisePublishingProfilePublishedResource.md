@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgOnPremisePublishingProfilePublishedResource
 
 ## SYNOPSIS
-Get publishedResources from onPremisesPublishingProfiles
+List of existing publishedResource objects.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgOnPremisePublishingProfilePublishedResource -InputObject <IApplicationsIde
 ```
 
 ## DESCRIPTION
-Get publishedResources from onPremisesPublishingProfiles
+List of existing publishedResource objects.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

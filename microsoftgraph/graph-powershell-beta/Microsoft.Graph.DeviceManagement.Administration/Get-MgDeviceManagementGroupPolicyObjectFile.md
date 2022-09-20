@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyObjectFile
 
 ## SYNOPSIS
-Get groupPolicyObjectFiles from deviceManagement
+A list of Group Policy Object files uploaded.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementGroupPolicyObjectFile -InputObject <IDeviceManagementAdmin
 ```
 
 ## DESCRIPTION
-Get groupPolicyObjectFiles from deviceManagement
+A list of Group Policy Object files uploaded.
 
 ## EXAMPLES
 

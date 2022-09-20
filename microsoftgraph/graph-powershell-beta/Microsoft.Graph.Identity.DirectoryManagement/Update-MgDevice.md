@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgDevice
 
 ## SYNOPSIS
-Update device
+Update the properties of a device.
+Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
 ## SYNTAX
 
@@ -65,7 +66,8 @@ Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyParamet
 ```
 
 ## DESCRIPTION
-Update device
+Update the properties of a device.
+Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseCustodian
 
 ## SYNOPSIS
-Get custodians from compliance
+Returns a list of case custodian objects for this case.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get custodians from compliance
+Returns a list of case custodian objects for this case.
+Nullable.
 
 ## EXAMPLES
 

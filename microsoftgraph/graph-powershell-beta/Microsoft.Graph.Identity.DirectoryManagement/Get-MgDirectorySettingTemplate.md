@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectorySettingTemplate
 
 ## SYNOPSIS
-Get a directory setting template
+A directory setting template represents a template of settings from which settings may be created within a tenant.
+This operation allows retrieval of the properties of the **directorySettingTemplate** object, including the available settings and their defaults.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Get a directory setting template
+A directory setting template represents a template of settings from which settings may be created within a tenant.
+This operation allows retrieval of the properties of the **directorySettingTemplate** object, including the available settings and their defaults.
 
 ## EXAMPLES
 
@@ -233,7 +235,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

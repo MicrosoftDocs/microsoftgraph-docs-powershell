@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Mail
-Module Guid: 51d269ce-ce8b-4b70-a664-9d0376908e3c
+Module Guid: b2ce5cca-cf74-43c6-8806-424be705bb76
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail
 Help Version: 1.0.0.0
 Locale: en-US
@@ -24,34 +24,42 @@ Get mailFolders from users
 Get childFolders from users
 
 ### [Get-MgUserMailFolderChildFolderMessage](Get-MgUserMailFolderChildFolderMessage.md)
-Get messages from users
+The collection of messages in the mailFolder.
 
 ### [Get-MgUserMailFolderChildFolderMessageAttachment](Get-MgUserMailFolderChildFolderMessageAttachment.md)
-Get attachments from users
+The fileAttachment and itemAttachment attachments for the message.
 
 ### [Get-MgUserMailFolderChildFolderMessageContent](Get-MgUserMailFolderChildFolderMessageContent.md)
 Get media content for the navigation property messages from users
 
 ### [Get-MgUserMailFolderChildFolderMessageExtension](Get-MgUserMailFolderChildFolderMessageExtension.md)
-Get extensions from users
+The collection of open extensions defined for the message.
+Nullable.
 
 ### [Get-MgUserMailFolderChildFolderMessageMention](Get-MgUserMailFolderChildFolderMessageMention.md)
-Get mentions from users
+A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
+By default, a GET /messages does not return this property unless you apply $expand on the property.
 
 ### [Get-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty](Get-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the message.
+Nullable.
 
 ### [Get-MgUserMailFolderChildFolderMessageRule](Get-MgUserMailFolderChildFolderMessageRule.md)
-Get messageRules from users
+The collection of rules that apply to the user's Inbox folder.
 
 ### [Get-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty](Get-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the message.
+Nullable.
 
 ### [Get-MgUserMailFolderChildFolderMultiValueExtendedProperty](Get-MgUserMailFolderChildFolderMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the mailFolder.
+Read-only.
+Nullable.
 
 ### [Get-MgUserMailFolderChildFolderSingleValueExtendedProperty](Get-MgUserMailFolderChildFolderSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the mailFolder.
+Read-only.
+Nullable.
 
 ### [Get-MgUserMailFolderChildFolderUserConfiguration](Get-MgUserMailFolderChildFolderUserConfiguration.md)
 Get userConfigurations from users

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAndroidForWorkAppConfigurationSchema
 
 ## SYNOPSIS
-Get androidForWorkAppConfigurationSchemas from deviceManagement
+Android for Work app configuration schema entities.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Get androidForWorkAppConfigurationSchemas from deviceManagement
+Android for Work app configuration schema entities.
 
 ## EXAMPLES
 

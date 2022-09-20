@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementCategorySettingDefinition
 
 ## SYNOPSIS
-Get settingDefinitions from deviceManagement
+The setting definitions this category contains
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementCategorySettingDefinition -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-Get settingDefinitions from deviceManagement
+The setting definitions this category contains
 
 ## EXAMPLES
 

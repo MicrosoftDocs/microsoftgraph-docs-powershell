@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryModelRegression
 
 ## SYNOPSIS
-Get modelRegression from deviceManagement
+The metric values for the user experience analytics model regression.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryModelRegression
 ```
 
 ## DESCRIPTION
-Get modelRegression from deviceManagement
+The metric values for the user experience analytics model regression.
 
 ## EXAMPLES
 

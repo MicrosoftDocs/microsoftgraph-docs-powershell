@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserOutlookTaskFolderTask
 
 ## SYNOPSIS
-Get tasks from users
+The tasks in this task folder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -31,7 +33,9 @@ Get-MgUserOutlookTaskFolderTask -InputObject <IUsersIdentity> [-Property <String
 ```
 
 ## DESCRIPTION
-Get tasks from users
+The tasks in this task folder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

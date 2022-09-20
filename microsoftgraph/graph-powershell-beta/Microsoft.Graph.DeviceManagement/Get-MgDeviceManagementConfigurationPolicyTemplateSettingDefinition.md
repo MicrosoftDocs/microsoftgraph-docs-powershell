@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition
 
 ## SYNOPSIS
-Get settingDefinitions from deviceManagement
+List of related Setting Definitions
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition -InputObject 
 ```
 
 ## DESCRIPTION
-Get settingDefinitions from deviceManagement
+List of related Setting Definitions
 
 ## EXAMPLES
 

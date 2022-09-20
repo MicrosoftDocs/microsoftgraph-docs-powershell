@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
 
 ## SYNOPSIS
-Get scheduledActionConfigurations from deviceManagement
+The list of scheduled action configurations for this compliance policy.
+This collection can contain a maximum of 100 elements.
 
 ## SYNTAX
 
@@ -36,7 +37,8 @@ Get-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfi
 ```
 
 ## DESCRIPTION
-Get scheduledActionConfigurations from deviceManagement
+The list of scheduled action configurations for this compliance policy.
+This collection can contain a maximum of 100 elements.
 
 ## EXAMPLES
 

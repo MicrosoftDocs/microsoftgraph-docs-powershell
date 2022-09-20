@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Get localizations from organization
+Add different branding based on a locale.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Get localizations from organization
+Add different branding based on a locale.
 
 ## EXAMPLES
 

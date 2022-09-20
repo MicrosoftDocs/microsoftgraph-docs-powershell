@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.CloudCommunications
-Module Guid: bfb1e7f1-f45e-4420-aa15-f17530995761
+Module Guid: 9e7900e2-065b-4ff9-a5d7-c19a96f0ed1d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -30,19 +30,25 @@ Get participants from communications
 Get callRecords from communications
 
 ### [Get-MgCommunicationCallRecordSession](Get-MgCommunicationCallRecordSession.md)
-Get sessions from communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ### [Get-MgCommunicationOnlineMeeting](Get-MgCommunicationOnlineMeeting.md)
 Get onlineMeetings from communications
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReport](Get-MgCommunicationOnlineMeetingAttendanceReport.md)
-Get attendanceReports from communications
+The attendance reports of an online meeting.
+Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
-Get attendanceRecords from communications
+List of attendance records of an attendance report.
+Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingAttendeeReport](Get-MgCommunicationOnlineMeetingAttendeeReport.md)
-Get attendeeReport for the navigation property onlineMeetings from communications
+The content stream of the attendee report of a Microsoft Teams live event.
+Read-only.
 
 ### [Get-MgCommunicationPresence](Get-MgCommunicationPresence.md)
 Get presences from communications
@@ -54,13 +60,16 @@ Invoke action getPresencesByUserId
 Get onlineMeetings from users
 
 ### [Get-MgUserOnlineMeetingAttendanceReport](Get-MgUserOnlineMeetingAttendanceReport.md)
-Get attendanceReports from users
+The attendance reports of an online meeting.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
-Get attendanceRecords from users
+List of attendance records of an attendance report.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingAttendeeReport](Get-MgUserOnlineMeetingAttendeeReport.md)
-Get attendeeReport for the navigation property onlineMeetings from users
+The content stream of the attendee report of a Microsoft Teams live event.
+Read-only.
 
 ### [Get-MgUserPresence](Get-MgUserPresence.md)
 Get presence from users
@@ -186,13 +195,15 @@ Delete navigation property presence for users
 Invoke action changeScreenSharingRole
 
 ### [Set-MgCommunicationOnlineMeetingAttendeeReport](Set-MgCommunicationOnlineMeetingAttendeeReport.md)
-Update attendeeReport for the navigation property onlineMeetings in communications
+The content stream of the attendee report of a Microsoft Teams live event.
+Read-only.
 
 ### [Set-MgCommunicationPresence](Set-MgCommunicationPresence.md)
 Invoke action setPresence
 
 ### [Set-MgUserOnlineMeetingAttendeeReport](Set-MgUserOnlineMeetingAttendeeReport.md)
-Update attendeeReport for the navigation property onlineMeetings in users
+The content stream of the attendee report of a Microsoft Teams live event.
+Read-only.
 
 ### [Start-MgCommunicationCallParticipantHoldMusic](Start-MgCommunicationCallParticipantHoldMusic.md)
 Invoke action startHoldMusic

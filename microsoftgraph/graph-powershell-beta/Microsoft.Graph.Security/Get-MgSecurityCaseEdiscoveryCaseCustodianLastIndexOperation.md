@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation
 
 ## SYNOPSIS
-Get lastIndexOperation from security
+Operation entity that represents the latest indexing for the custodian.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -InputObject <ISecur
 ```
 
 ## DESCRIPTION
-Get lastIndexOperation from security
+Operation entity that represents the latest indexing for the custodian.
 
 ## EXAMPLES
 

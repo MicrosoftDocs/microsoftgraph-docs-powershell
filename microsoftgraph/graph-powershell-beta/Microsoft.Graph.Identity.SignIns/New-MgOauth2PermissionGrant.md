@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgOauth2PermissionGrant
 
 ## SYNOPSIS
-Create oAuth2PermissionGrant (a delegated permission grant)
+Create a delegated permission grant, represented by an oAuth2PermissionGrant object.
+A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
 ## SYNTAX
 
@@ -26,7 +27,8 @@ New-MgOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant
 ```
 
 ## DESCRIPTION
-Create oAuth2PermissionGrant (a delegated permission grant)
+Create a delegated permission grant, represented by an oAuth2PermissionGrant object.
+A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
 ## EXAMPLES
 

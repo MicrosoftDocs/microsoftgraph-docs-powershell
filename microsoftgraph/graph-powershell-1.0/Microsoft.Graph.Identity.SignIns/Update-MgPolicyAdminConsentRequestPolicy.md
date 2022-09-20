@@ -176,6 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Reviewers
+The list of reviewers for the admin consent.
 Required.
 To construct, please use Get-Help -Online and see NOTES section for REVIEWERS properties and create a hash table.
 
@@ -264,14 +265,14 @@ BODYPARAMETER `<IMicrosoftGraphAdminConsentRequestPolicy>`: adminConsentRequestP
   - `[NotifyReviewers <Boolean?>]`: Specifies whether reviewers will receive notifications. Required.
   - `[RemindersEnabled <Boolean?>]`: Specifies whether reviewers will receive reminder emails. Required.
   - `[RequestDurationInDays <Int32?>]`: Specifies the duration the request is active before it automatically expires if no decision is applied.
-  - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: Required.
-    - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
+  - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: The list of reviewers for the admin consent. Required.
+    - `[Query <String>]`: The query specifying who will be the reviewer.
     - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
     - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
   - `[Version <Int32?>]`: Specifies the version of this policy. When the policy is updated, this version is updated. Read-only.
 
-REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope\[]>: Required.
-  - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
+REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope\[]>: The list of reviewers for the admin consent. Required.
+  - `[Query <String>]`: The query specifying who will be the reviewer.
   - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 

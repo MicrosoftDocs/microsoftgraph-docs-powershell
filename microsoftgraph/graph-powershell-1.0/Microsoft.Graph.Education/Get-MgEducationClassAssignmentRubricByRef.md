@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentRubricByRef
 
 ## SYNOPSIS
-Get ref of rubric from education
+When set, the grading rubric attached to this assignment.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgEducationClassAssignmentRubricByRef -InputObject <IEducationIdentity> [<Co
 ```
 
 ## DESCRIPTION
-Get ref of rubric from education
+When set, the grading rubric attached to this assignment.
 
 ## EXAMPLES
 

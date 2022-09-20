@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.WindowsUpdates
-Module Guid: e1bf9afc-fc2d-4de9-b697-d1ab80d2b852
+Module Guid: 85349f82-8bc7-4e56-865a-254c2d6a6a49
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates
 Help Version: 1.0.0.0
 Locale: en-US
@@ -27,22 +27,25 @@ Invoke action addMembers
 Invoke action addMembersById
 
 ### [Get-MgWindowsUpdatesCatalogEntry](Get-MgWindowsUpdatesCatalogEntry.md)
-Get entries from admin
+Lists the content that you can approve for deployment.
+Read-only.
 
 ### [Get-MgWindowsUpdatesDeployment](Get-MgWindowsUpdatesDeployment.md)
-Get deployments from admin
+Deployments created using the deployment service.
+Read-only.
 
 ### [Get-MgWindowsUpdatesDeploymentAudienceExclusion](Get-MgWindowsUpdatesDeploymentAudienceExclusion.md)
-Get exclusions from admin
+Specifies the assets to exclude from the audience.
 
 ### [Get-MgWindowsUpdatesDeploymentAudienceMember](Get-MgWindowsUpdatesDeploymentAudienceMember.md)
-Get members from admin
+Specifies the assets to include in the audience.
 
 ### [Get-MgWindowsUpdatesResourceConnection](Get-MgWindowsUpdatesResourceConnection.md)
-Get resourceConnections from admin
+Service connections to external resources such as analytics workspaces.
 
 ### [Get-MgWindowsUpdatesUpdatableAsset](Get-MgWindowsUpdatesUpdatableAsset.md)
-Get updatableAssets from admin
+Assets registered with the deployment service that can receive updates.
+Read-only.
 
 ### [Invoke-MgEnrollWindowsUpdatesDeploymentAudienceExclusionAssetById](Invoke-MgEnrollWindowsUpdatesDeploymentAudienceExclusionAssetById.md)
 Invoke action enrollAssetsById

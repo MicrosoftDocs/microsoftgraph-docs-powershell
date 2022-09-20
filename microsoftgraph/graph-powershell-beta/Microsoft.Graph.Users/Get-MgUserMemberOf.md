@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserMemberOf
 
 ## SYNOPSIS
-Get memberOf from users
+The groups, directory roles and administrative units that the user is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgUserMemberOf -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get memberOf from users
+The groups, directory roles and administrative units that the user is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

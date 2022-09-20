@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgServicePrincipalClaimMappingPolicyByRef
 
 ## SYNOPSIS
-Get ref of claimsMappingPolicies from servicePrincipals
+The claimsMappingPolicies assigned to this service principal.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [-Fil
 ```
 
 ## DESCRIPTION
-Get ref of claimsMappingPolicies from servicePrincipals
+The claimsMappingPolicies assigned to this service principal.
+Supports $expand.
 
 ## EXAMPLES
 

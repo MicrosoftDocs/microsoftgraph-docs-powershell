@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintPrinterConnector
 
 ## SYNOPSIS
-Get connectors from print
+The connectors that are associated with the printer.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgPrintPrinterConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get connectors from print
+The connectors that are associated with the printer.
 
 ## EXAMPLES
 

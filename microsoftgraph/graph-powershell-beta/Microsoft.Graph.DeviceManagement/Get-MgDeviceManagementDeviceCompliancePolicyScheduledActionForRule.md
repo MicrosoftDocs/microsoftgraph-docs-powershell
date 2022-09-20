@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule
 
 ## SYNOPSIS
-Get scheduledActionsForRule from deviceManagement
+The list of scheduled action for this rule
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -InputObject 
 ```
 
 ## DESCRIPTION
-Get scheduledActionsForRule from deviceManagement
+The list of scheduled action for this rule
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserAppRoleAssignment
 
 ## SYNOPSIS
-Get appRoleAssignments from users
+Represents the app roles a user has been granted for an application.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get appRoleAssignments from users
+Represents the app roles a user has been granted for an application.
+Supports $expand.
 
 ## EXAMPLES
 

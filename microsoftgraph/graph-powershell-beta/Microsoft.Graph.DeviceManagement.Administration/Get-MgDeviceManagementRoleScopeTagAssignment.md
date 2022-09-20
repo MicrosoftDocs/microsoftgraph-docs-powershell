@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRoleScopeTagAssignment
 
 ## SYNOPSIS
-Get assignments from deviceManagement
+The list of assignments for this Role Scope Tag.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementRoleScopeTagAssignment -InputObject <IDeviceManagementAdmi
 ```
 
 ## DESCRIPTION
-Get assignments from deviceManagement
+The list of assignments for this Role Scope Tag.
 
 ## EXAMPLES
 

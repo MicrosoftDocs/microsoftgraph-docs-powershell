@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassTeacher
 
 ## SYNOPSIS
-Get teachers from education
+All teachers in the class.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgEducationClassTeacher -EducationClassId <String> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get teachers from education
+All teachers in the class.
+Nullable.
 
 ## EXAMPLES
 

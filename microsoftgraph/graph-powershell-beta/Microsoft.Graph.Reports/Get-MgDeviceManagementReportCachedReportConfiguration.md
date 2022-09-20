@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementReportCachedReportConfiguration
 
 ## SYNOPSIS
-Get cachedReportConfigurations from deviceManagement
+Entity representing the configuration of a cached report
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementReportCachedReportConfiguration -InputObject <IReportsIden
 ```
 
 ## DESCRIPTION
-Get cachedReportConfigurations from deviceManagement
+Entity representing the configuration of a cached report
 
 ## EXAMPLES
 
@@ -273,7 +273,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[PrintUsageByUserId <String>]`: key: id of printUsageByUser
   - `[PrinterId <String>]`: Usage: printerId='{printerId}'
   - `[ProvisioningObjectSummaryId <String>]`: key: id of provisioningObjectSummary
-  - `[RestrictedSignInId <String>]`: key: id of restrictedSignIn
   - `[SignInId <String>]`: key: id of signIn
   - `[Skip <Int32?>]`: Usage: skip={skip}
   - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'

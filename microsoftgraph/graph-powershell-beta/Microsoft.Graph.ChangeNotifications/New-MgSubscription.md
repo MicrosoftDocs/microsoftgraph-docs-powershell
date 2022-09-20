@@ -8,7 +8,11 @@ schema: 2.0.0
 # New-MgSubscription
 
 ## SYNOPSIS
-Create subscription
+Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
+See the table in the Permissions section for the list of resources that support subscribing to change notifications.
+Some resources support the option to include encrypted resource data in change notifications.
+These resources include chatMessage, contact, event, message, onlineMeetings and presence.
+For more information, see Set up change notifications that include resource data and Change notifications for Outlook resources in Microsoft Graph.
 
 ## SYNTAX
 
@@ -28,7 +32,11 @@ New-MgSubscription -BodyParameter <IMicrosoftGraphSubscription1> [-WhatIf] [-Con
 ```
 
 ## DESCRIPTION
-Create subscription
+Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
+See the table in the Permissions section for the list of resources that support subscribing to change notifications.
+Some resources support the option to include encrypted resource data in change notifications.
+These resources include chatMessage, contact, event, message, onlineMeetings and presence.
+For more information, see Set up change notifications that include resource data and Change notifications for Outlook resources in Microsoft Graph.
 
 ## EXAMPLES
 

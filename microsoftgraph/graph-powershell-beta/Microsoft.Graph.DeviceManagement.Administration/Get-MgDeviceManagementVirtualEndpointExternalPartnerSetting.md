@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointExternalPartnerSetting
 
 ## SYNOPSIS
-Get externalPartnerSettings from deviceManagement
+The external partner settings on a Cloud PC.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementVirtualEndpointExternalPartnerSetting
 ```
 
 ## DESCRIPTION
-Get externalPartnerSettings from deviceManagement
+The external partner settings on a Cloud PC.
 
 ## EXAMPLES
 

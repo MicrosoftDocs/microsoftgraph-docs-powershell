@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity
 
 ## SYNOPSIS
-Get userExperienceAnalyticsDevicesWithoutCloudIdentity from deviceManagement
+User experience analytics devices without cloud identity.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity -InputObj
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsDevicesWithoutCloudIdentity from deviceManagement
+User experience analytics devices without cloud identity.
 
 ## EXAMPLES
 

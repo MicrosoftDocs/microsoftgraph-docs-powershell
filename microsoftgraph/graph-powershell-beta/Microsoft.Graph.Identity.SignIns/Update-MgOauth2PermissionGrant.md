@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgOauth2PermissionGrant
 
 ## SYNOPSIS
-Update oAuth2PermissionGrant (a delegated permission grant)
+Update the properties of oAuth2PermissionGrant object, representing a delegated permission grant.
+An **oAuth2PermissionGrant** can be updated to change which delegated permissions are granted, by adding or removing items from the list in **scopes**.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ Update-MgOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update oAuth2PermissionGrant (a delegated permission grant)
+Update the properties of oAuth2PermissionGrant object, representing a delegated permission grant.
+An **oAuth2PermissionGrant** can be updated to change which delegated permissions are granted, by adding or removing items from the list in **scopes**.
 
 ## EXAMPLES
 
@@ -343,10 +345,14 @@ BODYPARAMETER `<IMicrosoftGraphOAuth2PermissionGrant1>`: oAuth2PermissionGrant
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
+  - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: key: id of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[AuthenticationMethodModeDetailId <String>]`: key: id of authenticationMethodModeDetail
+  - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
+  - `[AuthenticationStrengthPolicyId <String>]`: key: id of authenticationStrengthPolicy
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
   - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
   - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow

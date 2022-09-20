@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintTaskDefinition
 
 ## SYNOPSIS
-Get taskDefinitions from print
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Get-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get taskDefinitions from print
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## EXAMPLES
 

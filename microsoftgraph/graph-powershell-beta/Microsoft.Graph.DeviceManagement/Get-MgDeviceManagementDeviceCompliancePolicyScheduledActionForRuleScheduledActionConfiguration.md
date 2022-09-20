@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
 
 ## SYNOPSIS
-Get scheduledActionConfigurations from deviceManagement
+The list of scheduled action configurations for this compliance policy.
+Compliance policy must have one and only one block scheduled action.
 
 ## SYNTAX
 
@@ -36,7 +37,8 @@ Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActio
 ```
 
 ## DESCRIPTION
-Get scheduledActionConfigurations from deviceManagement
+The list of scheduled action configurations for this compliance policy.
+Compliance policy must have one and only one block scheduled action.
 
 ## EXAMPLES
 

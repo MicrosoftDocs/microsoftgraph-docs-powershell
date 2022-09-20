@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteTermStore
 
 ## SYNOPSIS
-Get termStores from sites
+The collection of termStores under this site.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Get-MgSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get termStores from sites
+The collection of termStores under this site.
 
 ## EXAMPLES
 

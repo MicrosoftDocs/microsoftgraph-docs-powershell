@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementReusableSetting
 
 ## SYNOPSIS
-Get reusableSettings from deviceManagement
+List of all reusable settings
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementReusableSetting -InputObject <IDeviceManagementIdentity> [
 ```
 
 ## DESCRIPTION
-Get reusableSettings from deviceManagement
+List of all reusable settings
 
 ## EXAMPLES
 

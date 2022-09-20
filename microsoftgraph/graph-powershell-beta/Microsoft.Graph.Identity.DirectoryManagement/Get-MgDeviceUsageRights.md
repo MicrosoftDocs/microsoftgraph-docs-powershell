@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceUsageRights
 
 ## SYNOPSIS
-Get usageRights from devices
+Represents the usage rights a device has been granted.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Get usageRights from devices
+Represents the usage rights a device has been granted.
 
 ## EXAMPLES
 

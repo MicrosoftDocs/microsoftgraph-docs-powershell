@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementMicrosoftTunnelConfiguration
 
 ## SYNOPSIS
-Get microsoftTunnelConfigurations from deviceManagement
+Collection of MicrosoftTunnelConfiguration settings associated with account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementMicrosoftTunnelConfiguration -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Get microsoftTunnelConfigurations from deviceManagement
+Collection of MicrosoftTunnelConfiguration settings associated with account.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTemplateMigratableToSetting
 
 ## SYNOPSIS
-Get settings from deviceManagement
+Collection of all settings this template has
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementTemplateMigratableToSetting -InputObject <IDeviceManagemen
 ```
 
 ## DESCRIPTION
-Get settings from deviceManagement
+Collection of all settings this template has
 
 ## EXAMPLES
 

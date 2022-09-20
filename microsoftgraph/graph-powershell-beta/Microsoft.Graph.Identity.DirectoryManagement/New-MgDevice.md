@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDevice
 
 ## SYNOPSIS
-Create device
+Create a new device.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ New-MgDevice -BodyParameter <IMicrosoftGraphDevice1> [-WhatIf] [-Confirm] [<Comm
 ```
 
 ## DESCRIPTION
-Create device
+Create a new device.
 
 ## EXAMPLES
 

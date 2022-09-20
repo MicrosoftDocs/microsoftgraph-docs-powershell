@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteColumn
 
 ## SYNOPSIS
-Get columns from sites
+The collection of column definitions reusable across lists under this site.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Get columns from sites
+The collection of column definitions reusable across lists under this site.
 
 ## EXAMPLES
 

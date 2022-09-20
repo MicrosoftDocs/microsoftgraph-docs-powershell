@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteDrive
 
 ## SYNOPSIS
-Get drives from sites
+The collection of drives (document libraries) under this site.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get drives from sites
+The collection of drives (document libraries) under this site.
 
 ## EXAMPLES
 

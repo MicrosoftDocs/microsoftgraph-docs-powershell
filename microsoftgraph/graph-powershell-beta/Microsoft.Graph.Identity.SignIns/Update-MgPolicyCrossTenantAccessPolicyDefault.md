@@ -301,7 +301,7 @@ B2BDIRECTCONNECTOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: c
       - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
   - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>`: crossTenantAccessPolicyConfigurationDefault
+BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault1>`: crossTenantAccessPolicyConfigurationDefault
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
@@ -322,11 +322,33 @@ BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>`: cr
     - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether hybrid Azure AD joined devices from external Azure AD organizations are trusted.
     - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Azure AD organizations is trusted.
   - `[IsServiceDefault <Boolean?>]`: If true, the default configuration is set to the system default configuration. If false, the default settings have been customized.
+  - `[TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]`: crossTenantAccessPolicyTenantRestrictions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[Devices <IMicrosoftGraphDevicesFilter>]`: devicesFilter
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Mode <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+      - `[Rule <String>]`: 
 
 INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenantAccessPolicyInboundTrust
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Azure AD organizations are trusted.
   - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether hybrid Azure AD joined devices from external Azure AD organizations are trusted.
   - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Azure AD organizations is trusted.
+
+TENANTRESTRICTIONS `<IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>`: crossTenantAccessPolicyTenantRestrictions
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+    - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget[]>]`: Specifies whether to target users, groups, or applications with this rule.
+      - `[Target <String>]`: The unique identifier of the user, group, or application; one of the following keywords: AllUsers and AllApplications; or for targets that are applications, you may use reserved values.
+      - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
+  - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+  - `[Devices <IMicrosoftGraphDevicesFilter>]`: devicesFilter
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Mode <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+    - `[Rule <String>]`: 
 
 ## RELATED LINKS

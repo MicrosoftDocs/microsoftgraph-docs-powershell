@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementIntuneBrandingProfileAssignment
 
 ## SYNOPSIS
-Get assignments from deviceManagement
+The list of group assignments for the branding profile
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementIntuneBrandingProfileAssignment -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Get assignments from deviceManagement
+The list of group assignments for the branding profile
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationTemplate
 
 ## SYNOPSIS
-Get applicationTemplate
+Retrieve the properties of an applicationTemplate object.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgApplicationTemplate -InputObject <IApplicationsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get applicationTemplate
+Retrieve the properties of an applicationTemplate object.
 
 ## EXAMPLES
 

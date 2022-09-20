@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTodoListTaskChecklistItem
 
 ## SYNOPSIS
-Get checklistItems from users
+A collection of checklistItems linked to a task.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get checklistItems from users
+A collection of checklistItems linked to a task.
 
 ## EXAMPLES
 

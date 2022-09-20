@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 
 ## SYNOPSIS
-Get groupPolicySettingMappings from deviceManagement
+A list of group policy settings to MDM/Intune mappings.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 ```
 
 ## DESCRIPTION
-Get groupPolicySettingMappings from deviceManagement
+A list of group policy settings to MDM/Intune mappings.
 
 ## EXAMPLES
 

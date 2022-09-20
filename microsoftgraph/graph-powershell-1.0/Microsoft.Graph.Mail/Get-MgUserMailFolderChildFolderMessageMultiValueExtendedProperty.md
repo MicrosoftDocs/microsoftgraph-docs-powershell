@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty
 
 ## SYNOPSIS
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the message.
+Nullable.
 
 ## SYNTAX
 
@@ -34,7 +35,8 @@ Get-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty -InputObject <I
 ```
 
 ## DESCRIPTION
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the message.
+Nullable.
 
 ## EXAMPLES
 

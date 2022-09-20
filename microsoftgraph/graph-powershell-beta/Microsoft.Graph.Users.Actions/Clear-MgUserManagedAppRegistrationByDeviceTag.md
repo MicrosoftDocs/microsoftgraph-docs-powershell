@@ -8,7 +8,7 @@ schema: 2.0.0
 # Clear-MgUserManagedAppRegistrationByDeviceTag
 
 ## SYNOPSIS
-Invoke action wipeManagedAppRegistrationsByDeviceTag
+Issues a wipe operation on an app registration with specified device tag.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Clear-MgUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentit
 ```
 
 ## DESCRIPTION
-Invoke action wipeManagedAppRegistrationsByDeviceTag
+Issues a wipe operation on an app registration with specified device tag.
 
 ## EXAMPLES
 

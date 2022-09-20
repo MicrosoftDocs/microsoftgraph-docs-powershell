@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgServicePrincipalHomeRealmDiscoveryPolicy
 
 ## SYNOPSIS
-Get homeRealmDiscoveryPolicies from servicePrincipals
+The homeRealmDiscoveryPolicies assigned to this service principal.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId <String> [-Ex
 ```
 
 ## DESCRIPTION
-Get homeRealmDiscoveryPolicies from servicePrincipals
+The homeRealmDiscoveryPolicies assigned to this service principal.
+Supports $expand.
 
 ## EXAMPLES
 

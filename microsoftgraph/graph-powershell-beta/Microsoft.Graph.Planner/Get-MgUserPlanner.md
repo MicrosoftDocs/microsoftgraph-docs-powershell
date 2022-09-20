@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlanner
 
 ## SYNOPSIS
-Get planner from users
+Selective Planner services available to the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get planner from users
+Selective Planner services available to the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

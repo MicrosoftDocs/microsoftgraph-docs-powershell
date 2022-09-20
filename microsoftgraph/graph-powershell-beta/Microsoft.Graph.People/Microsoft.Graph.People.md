@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.People
-Module Guid: 410c82ad-8510-4555-b2ba-1a0586f07b2c
+Module Guid: a77e567f-726f-4ad1-b6f8-d4964657fa76
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,70 +12,75 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.People Cmdlets
 ### [Get-MgUserActivityStatistics](Get-MgUserActivityStatistics.md)
-Get activityStatistics from users
+The collection of work activities that a user spent time on during and outside of working hours.
+Read-only.
+Nullable.
 
 ### [Get-MgUserPerson](Get-MgUserPerson.md)
-Get people from users
+Read-only.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ### [Get-MgUserProfile](Get-MgUserProfile.md)
-Get profile from users
+Represents properties that are descriptive of a user in a tenant.
 
 ### [Get-MgUserProfileAccount](Get-MgUserProfileAccount.md)
 Get account from users
 
 ### [Get-MgUserProfileAddress](Get-MgUserProfileAddress.md)
-Get addresses from users
+Represents details of addresses associated with the user.
 
 ### [Get-MgUserProfileAnniversary](Get-MgUserProfileAnniversary.md)
-Get anniversaries from users
+Represents the details of meaningful dates associated with a person.
 
 ### [Get-MgUserProfileAward](Get-MgUserProfileAward.md)
-Get awards from users
+Represents the details of awards or honors associated with a person.
 
 ### [Get-MgUserProfileCertification](Get-MgUserProfileCertification.md)
-Get certifications from users
+Represents the details of certifications associated with a person.
 
 ### [Get-MgUserProfileEducationalActivity](Get-MgUserProfileEducationalActivity.md)
-Get educationalActivities from users
+Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 ### [Get-MgUserProfileEmail](Get-MgUserProfileEmail.md)
-Get emails from users
+Represents detailed information about email addresses associated with the user.
 
 ### [Get-MgUserProfileInterest](Get-MgUserProfileInterest.md)
-Get interests from users
+Provides detailed information about interests the user has associated with themselves in various services.
 
 ### [Get-MgUserProfileLanguage](Get-MgUserProfileLanguage.md)
-Get languages from users
+Represents detailed information about languages that a user has added to their profile.
 
 ### [Get-MgUserProfileName](Get-MgUserProfileName.md)
-Get names from users
+Represents the names a user has added to their profile.
 
 ### [Get-MgUserProfileNote](Get-MgUserProfileNote.md)
-Get notes from users
+Represents notes that a user has added to their profile.
 
 ### [Get-MgUserProfilePatent](Get-MgUserProfilePatent.md)
-Get patents from users
+Represents patents that a user has added to their profile.
 
 ### [Get-MgUserProfilePhone](Get-MgUserProfilePhone.md)
-Get phones from users
+Represents detailed information about phone numbers associated with a user in various services.
 
 ### [Get-MgUserProfilePosition](Get-MgUserProfilePosition.md)
-Get positions from users
+Represents detailed information about work positions associated with a user's profile.
 
 ### [Get-MgUserProfileProject](Get-MgUserProfileProject.md)
-Get projects from users
+Represents detailed information about projects associated with a user.
 
 ### [Get-MgUserProfilePublication](Get-MgUserProfilePublication.md)
-Get publications from users
+Represents details of any publications a user has added to their profile.
 
 ### [Get-MgUserProfileSkill](Get-MgUserProfileSkill.md)
-Get skills from users
+Represents detailed information about skills associated with a user in various services.
 
 ### [Get-MgUserProfileWebAccount](Get-MgUserProfileWebAccount.md)
-Get webAccounts from users
+Represents web accounts the user has indicated they use or has added to their user profile.
 
 ### [Get-MgUserProfileWebsite](Get-MgUserProfileWebsite.md)
-Get websites from users
+Represents detailed information about websites associated with a user in various services.
 
 ### [New-MgUserPerson](New-MgUserPerson.md)
 Create new navigation property to people for users

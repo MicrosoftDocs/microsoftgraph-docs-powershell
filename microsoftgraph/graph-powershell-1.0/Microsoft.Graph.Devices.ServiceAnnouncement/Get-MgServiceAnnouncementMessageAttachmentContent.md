@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementMessageAttachmentContent
 
 ## SYNOPSIS
-Get content for the navigation property attachments from admin
+The attachment content.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServiceA
 ```
 
 ## DESCRIPTION
-Get content for the navigation property attachments from admin
+The attachment content.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer
 
 ## SYNOPSIS
-Get microsoftTunnelServers from deviceManagement
+A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObject <IDe
 ```
 
 ## DESCRIPTION
-Get microsoftTunnelServers from deviceManagement
+A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
 
 ## EXAMPLES
 

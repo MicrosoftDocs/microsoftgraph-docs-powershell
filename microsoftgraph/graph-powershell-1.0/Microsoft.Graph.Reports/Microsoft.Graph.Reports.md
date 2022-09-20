@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: 721c25c4-6238-4ac9-8628-dfab102850f3
+Module Guid: 58bb2c8d-dcf6-4a46-91c3-8acaf158cc54
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
 Help Version: 1.0.0.0
 Locale: en-US
@@ -24,10 +24,10 @@ Get restrictedSignIns from auditLogs
 Get signIns from auditLogs
 
 ### [Get-MgDeviceManagementReport](Get-MgDeviceManagementReport.md)
-Get reports from deviceManagement
+Reports singleton
 
 ### [Get-MgDeviceManagementReportExportJob](Get-MgDeviceManagementReportExportJob.md)
-Get exportJobs from deviceManagement
+Entity representing a job to export a report
 
 ### [Get-MgReportDailyPrintUsageByPrinter](Get-MgReportDailyPrintUsageByPrinter.md)
 Get dailyPrintUsageByPrinter from reports
@@ -36,10 +36,10 @@ Get dailyPrintUsageByPrinter from reports
 Get dailyPrintUsageByUser from reports
 
 ### [Get-MgReportDeviceConfigurationDeviceActivity](Get-MgReportDeviceConfigurationDeviceActivity.md)
-Invoke function deviceConfigurationDeviceActivity
+Metadata for the device configuration device activity report
 
 ### [Get-MgReportDeviceConfigurationUserActivity](Get-MgReportDeviceConfigurationUserActivity.md)
-Invoke function deviceConfigurationUserActivity
+Metadata for the device configuration user activity report
 
 ### [Get-MgReportEmailActivityCount](Get-MgReportEmailActivityCount.md)
 Invoke function getEmailActivityCounts

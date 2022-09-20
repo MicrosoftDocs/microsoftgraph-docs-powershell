@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroup
 
 ## SYNOPSIS
-Update group
+Update the properties of a group object.
 
 ## SYNTAX
 
@@ -101,7 +101,7 @@ Update-MgGroup -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphGro
 ```
 
 ## DESCRIPTION
-Update group
+Update the properties of a group object.
 
 ## EXAMPLES
 
@@ -1714,8 +1714,8 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
       - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Address <String>]`: The email address of an entity instance.
-        - `[Name <String>]`: The display name of an entity instance.
+        - `[Address <String>]`: The email address of the person or entity.
+        - `[Name <String>]`: The display name of the person or entity.
       - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
       - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
       - `[Role <String>]`: calendarRoleType
@@ -1731,7 +1731,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
         - `[ContentType <String>]`: The MIME type.
         - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
         - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+        - `[Name <String>]`: The attachment's file name.
         - `[Size <Int32?>]`: The length of the attachment in bytes.
       - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
         - `[Type <String>]`: attendeeType
@@ -1740,8 +1740,8 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-            - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+            - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+            - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
           - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1935,7 +1935,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
       - `[Id <String>]`: 
       - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
       - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-      - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
+      - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
         - `[Id <String>]`: 
         - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
         - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
@@ -1947,9 +1947,9 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
         - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
         - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
         - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
-        - `[HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
+        - `[HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>]`: 
           - `[Id <String>]`: 
-          - `[ActiveDurationSeconds <Int32?>]`: Optional. The duration of active user engagement. if not supplied, this is calculated from the startedDateTime and lastActiveDateTime.
+          - `[ActiveDurationSeconds <Int32?>]`: 
           - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
           - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
           - `[ExpirationDateTime <DateTime?>]`: Optional. UTC DateTime when the historyItem will undergo hard-delete. Can be set by the client.
@@ -1976,18 +1976,18 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
       - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, Minor, NotAdult and Adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
       - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: The user's terms of use acceptance statuses. Read-only. Nullable.
         - `[Id <String>]`: 
-        - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
-        - `[AgreementId <String>]`: ID of the agreement.
+        - `[AgreementFileId <String>]`: The identifier of the agreement file accepted by the user.
+        - `[AgreementId <String>]`: The identifier of the agreement.
         - `[DeviceDisplayName <String>]`: The display name of the device used for accepting the agreement.
         - `[DeviceId <String>]`: The unique identifier of the device used for accepting the agreement.
-        - `[DeviceOSType <String>]`: The operating system used for accepting the agreement.
-        - `[DeviceOSVersion <String>]`: The operating system version of the device used for accepting the agreement.
-        - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+        - `[DeviceOSType <String>]`: The operating system used to accept the agreement.
+        - `[DeviceOSVersion <String>]`: The operating system version of the device used to accept the agreement.
+        - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[State <String>]`: agreementAcceptanceState
         - `[UserDisplayName <String>]`: Display name of the user when the acceptance was recorded.
         - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
-        - `[UserId <String>]`: ID of the user who accepted the agreement.
+        - `[UserId <String>]`: The identifier of the user who accepted the agreement.
         - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
       - `[Analytics <IMicrosoftGraphUserAnalytics>]`: userAnalytics
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2011,7 +2011,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
         - `[ConsentType <String>]`: The consent type of the request. Possible values are: Static and Dynamic. These represent static and dynamic permissions, respectively, requested in the consent workflow. Supports $filter (eq only) and $orderby. Required.
         - `[PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]`: A list of pending scopes waiting for approval. This is empty if the consentType is Static. Required.
           - `[DisplayName <String>]`: The name of the scope.
-        - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests.
+        - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests. Supports $filter (eq).
           - `[ApprovalId <String>]`: The identifier of the approval of the request.
           - `[CompletedDateTime <DateTime?>]`: The request completion date time.
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -2039,8 +2039,8 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
         - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
           - `[Id <String>]`: 
           - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-            - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-            - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+            - `[Key <String>]`: Key for the key-value pair.
+            - `[Value <String>]`: Value for the key-value pair.
           - `[Type <String>]`: 
         - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
         - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -2104,7 +2104,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
           - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
         - `[ErrorUrl <String>]`: Deprecated. Don't use.
-        - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: Federated identities for a specific type of service principal - managed identity. Supports $expand and $filter (eq when counting empty collections).
+        - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: 
           - `[Id <String>]`: 
           - `[Audiences <String[]>]`: The audience that can appear in the external token. This field is mandatory and should be set to api://AzureADTokenExchange for Azure AD. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. This field can only accept a single value and has a limit of 600 characters. Required.
           - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential. It has a limit of 600 characters. Optional.
@@ -2206,7 +2206,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
             - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-              - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
+              - `[Interval <TimeSpan?>]`: The interval between synchronization iterations. The value is represented in ISO 8601 format for durations. For example, PT1M represents a period of 1 month.
               - `[State <String>]`: synchronizationScheduleState
             - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2365,12 +2365,17 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
           - `[Id <String>]`: 
         - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
+        - `[VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>]`: verifiedPublisher
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AddedDateTime <DateTime?>]`: The timestamp when the verified publisher was first added or most recently updated.
+          - `[DisplayName <String>]`: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
+          - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
       - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
       - `[Approvals <IMicrosoftGraphApproval[]>]`: 
       - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq, not, and counting empty collections).
       - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and not).
-        - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+        - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut. See a detailed description of each value.
         - `[Service <String>]`: The name of the service; for example, exchange.
         - `[ServicePlanId <String>]`: A GUID that identifies the service plan. For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
       - `[Authentication <IMicrosoftGraphAuthentication1>]`: authentication
@@ -2479,17 +2484,17 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[DeviceTag <String>]`: Tags containing app metadata.
           - `[DisplayName <String>]`: The name of the device on which this app is registered.
           - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-        - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: 
+        - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: Represents the status of a long-running operation.
           - `[Id <String>]`: 
-          - `[CreatedDateTime <DateTime?>]`: 
-          - `[LastActionDateTime <DateTime?>]`: 
-          - `[ResourceLocation <String>]`: 
+          - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+          - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+          - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
           - `[Status <String>]`: longRunningOperationStatus
-          - `[StatusDetail <String>]`: 
+          - `[StatusDetail <String>]`: Details about the status of the operation.
         - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod1[]>]`: Represents the details of the password authentication method registered to a user for authentication.
           - `[Id <String>]`: 
-          - `[CreatedDateTime <DateTime?>]`: 
-          - `[CreationDateTime <DateTime?>]`: The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[CreationDateTime <DateTime?>]`: 
           - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
         - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod[]>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
           - `[Id <String>]`: 
@@ -2499,10 +2504,10 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: 
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format +{country code} {number}x{extension}, with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating or updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
-        - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
+        - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: The software OATH TOTP applications registered to a user for authentication.
           - `[Id <String>]`: 
           - `[SecretKey <String>]`: The secret key of the method. Always returns null.
         - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
@@ -2522,7 +2527,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[KeyStrength <String>]`: authenticationMethodKeyStrength
       - `[AuthorizationInfo <IMicrosoftGraphAuthorizationInfo>]`: authorizationInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[CertificateUserIds <String[]>]`: 
+        - `[CertificateUserIds <String[]>]`: The collection of unique identifiers that can be associated with a user and can be used to bind the Azure AD user to a certificate for authentication and authorization into non-Azure AD environments. The identifiers must be unique in the tenant.
       - `[Birthday <DateTime?>]`: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
       - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq, not, ge, le, startsWith).
       - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
@@ -2557,7 +2562,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: 
                   - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-                  - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+                  - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
                 - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[Description <String>]`: Verbose description of the application.
@@ -2615,7 +2620,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
           - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
             - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-            - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+            - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
             - `[Id <String>]`: 
           - `[Importance <String>]`: 
           - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
@@ -2667,7 +2672,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
         - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]`: teamworkOnlineMeetingInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[CalendarEventId <String>]`: The identifier of the calendar event associated with the meeting.
-          - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
+          - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
           - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -2694,7 +2699,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[Permission <String>]`: The name of the resource-specific permission. Read-only.
           - `[PermissionType <String>]`: The type of permission. Possible values are: Application, Delegated. Read-only.
           - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
-        - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>]`: A collection of all the pinned messages in the chat. Nullable.
+        - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo1[]>]`: A collection of all the pinned messages in the chat. Nullable.
           - `[Id <String>]`: 
           - `[Message <IMicrosoftGraphChatMessage>]`: chatMessage
         - `[Tabs <IMicrosoftGraphTeamsTab1[]>]`: A collection of all the tabs in the chat. Nullable.
@@ -2724,13 +2729,14 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
         - `[AadDeviceId <String>]`: The Azure Active Directory (Azure AD) device ID of the Cloud PC.
         - `[ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]`: cloudPcConnectivityResult
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]`: 
-            - `[AdditionalDetails <String>]`: 
-            - `[DisplayName <String>]`: 
-            - `[LastHealthCheckDateTime <DateTime?>]`: 
+          - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]`: A list of failed health check items. If the status property is available, this property will be empty.
+            - `[AdditionalDetails <String>]`: Additional message for this health check.
+            - `[DisplayName <String>]`: The connectivity health check item name.
+            - `[LastHealthCheckDateTime <DateTime?>]`: Timestamp when the last check occurs. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
             - `[Result <String>]`: cloudPcConnectivityEventResult
           - `[Status <String>]`: cloudPcConnectivityStatus
-          - `[UpdatedDateTime <DateTime?>]`: 
+          - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+        - `[DiskEncryptionState <String>]`: cloudPcDiskEncryptionState
         - `[DisplayName <String>]`: The display name of the Cloud PC.
         - `[GracePeriodEndDateTime <DateTime?>]`: The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is inGracePeriod. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[ImageDisplayName <String>]`: Name of the OS image that's on the Cloud PC.
@@ -2782,8 +2788,8 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[Department <String>]`: The contact's department.
           - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
           - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]`: The contact's email addresses.
-            - `[Address <String>]`: The email address of an entity instance.
-            - `[Name <String>]`: The display name of an entity instance.
+            - `[Address <String>]`: The email address of the person or entity.
+            - `[Name <String>]`: The display name of the person or entity.
             - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
             - `[Type <String>]`: emailType
           - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Nullable.
@@ -2885,6 +2891,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
       - `[Drives <IMicrosoftGraphDrive[]>]`: A collection of drives available for this user. Read-only.
       - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, not , ge, le, in).
       - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. The maximum length is 16 characters.Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
+      - `[EmployeeLeaveDateTime <DateTime?>]`: The date and time when the user left or will leave the organization. Read: Requires User-LifeCycleInfo.Read.All. For delegated scenarios, the admin needs one of the following Azure AD roles: Lifecycle Workflows Administrator, Global Reader, or Global Admin.  Write: Requires User-LifeCycleInfo.ReadWrite.All. For delegated scenarios, the admin needs the Global Administrator Azure AD role. Supports $filter (eq, ne, not , ge, le, in).
       - `[EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]`: employeeOrgData
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CostCenter <String>]`: The cost center associated with the user. Returned only on $select. Supports $filter.
@@ -3082,7 +3089,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Hashes <IMicrosoftGraphHashes>]`: hashes
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                    - `[Crc32Hash <String>]`: The CRC32 value of the file (if available). Read-only.
+                    - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available). Read-only.
                     - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.
                     - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available). Read-only.
                     - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available). Read-only.
@@ -3109,8 +3116,8 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
                 - `[Location <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-                  - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
-                  - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+                  - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
+                  - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
                 - `[Malware <IMicrosoftGraphMalware>]`: malware
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Description <String>]`: Contains the virus details for the malware facet.
@@ -3174,7 +3181,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
                   - `[FocalLength <Double?>]`: The focal length from the camera. Read-only.
                   - `[Iso <Int32?>]`: The ISO value from the camera. Read-only.
                   - `[Orientation <Int32?>]`: The orientation value from the camera. Writable on OneDrive Personal.
-                  - `[TakenDateTime <DateTime?>]`: The date and time the photo was taken in UTC time. Read-only.
+                  - `[TakenDateTime <DateTime?>]`: Represents the date and time the photo was taken. Read-only.
                 - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
                 - `[RemoteItem <IMicrosoftGraphRemoteItem>]`: remoteItem
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3262,7 +3269,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
                   - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
                   - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
                   - `[Id <String>]`: 
-                  - `[Content <Byte[]>]`: 
+                  - `[Content <Byte[]>]`: The content stream for this version of the item.
                   - `[Size <Int64?>]`: Indicates the size of the content stream for this version of the item.
                 - `[Video <IMicrosoftGraphVideo>]`: video
                 - `[WebDavUrl <String>]`: WebDAV compatible URL for the item.
@@ -3275,12 +3282,12 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
                     - `[CalculationMode <String>]`: Returns the calculation mode used in the workbook. Possible values are: Automatic, AutomaticExceptTables, Manual.
                   - `[Comments <IMicrosoftGraphWorkbookComment[]>]`: 
                     - `[Id <String>]`: 
-                    - `[Content <String>]`: The content of the comment.
+                    - `[Content <String>]`: The content of comment.
                     - `[ContentType <String>]`: Indicates the type for the comment.
                     - `[Replies <IMicrosoftGraphWorkbookCommentReply[]>]`: 
                       - `[Id <String>]`: 
-                      - `[Content <String>]`: The content of replied comment.
-                      - `[ContentType <String>]`: Indicates the type for the replied comment.
+                      - `[Content <String>]`: The content of a comment reply.
+                      - `[ContentType <String>]`: Indicates the type for the comment reply.
                   - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[Id <String>]`: 
@@ -3450,7 +3457,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
                               - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                 - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                                - `[Set <String>]`: Represents the set that the icon is part of. Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
+                                - `[Set <String>]`: Represents the set that the icon is part of. The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                               - `[Operator <String>]`: 
                               - `[Values <IMicrosoftGraphJson>]`: Json
                           - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
@@ -3475,12 +3482,12 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
                           - `[Fields <IMicrosoftGraphWorkbookSortField[]>]`: Represents the current conditions used to last sort the table. Read-only.
                             - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                             - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
-                            - `[DataOption <String>]`: Represents additional sorting options for this field. Possible values are: Normal, TextAsNumber.
+                            - `[DataOption <String>]`: Represents additional sorting options for this field. The possible values are: Normal, TextAsNumber.
                             - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                             - `[Key <Int32?>]`: Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).
-                            - `[SortOn <String>]`: Represents the type of sorting of this condition. Possible values are: Value, CellColor, FontColor, Icon.
+                            - `[SortOn <String>]`: Represents the type of sorting of this condition. The possible values are: Value, CellColor, FontColor, Icon.
                           - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
-                          - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
+                          - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount. Read-only.
                         - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
                         - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                       - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
@@ -3635,7 +3642,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
             - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
               - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
               - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
-            - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
+            - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
         - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types defined for this site.
           - `[Id <String>]`: 
           - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
@@ -3652,7 +3659,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
             - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
             - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
               - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
-              - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+              - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
               - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
             - `[PropagateWelcomePageChanges <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
             - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
@@ -3705,8 +3712,8 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
           - `[Id <String>]`: 
           - `[Activities <IMicrosoftGraphItemActivityOld[]>]`: The recent activities that took place within this list.
-          - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of field definitions for this list.
-          - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
+          - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: 
+          - `[ContentTypes <IMicrosoftGraphContentType[]>]`: 
           - `[DisplayName <String>]`: The displayable title of the list.
           - `[Drive <IMicrosoftGraphDrive>]`: drive
           - `[Items <IMicrosoftGraphListItem1[]>]`: All items contained in the list.
@@ -3716,11 +3723,11 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
             - `[Hidden <Boolean?>]`: If true, indicates that the list is not normally visible in the SharePoint user experience.
             - `[Template <String>]`: An enumerated value that represents the base list template used in creating the list. Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
           - `[Operations <IMicrosoftGraphRichLongRunningOperation[]>]`: The collection of long running operations for the list.
-            - `[CreatedDateTime <DateTime?>]`: 
-            - `[LastActionDateTime <DateTime?>]`: 
-            - `[ResourceLocation <String>]`: 
+            - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+            - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+            - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
             - `[Status <String>]`: longRunningOperationStatus
-            - `[StatusDetail <String>]`: 
+            - `[StatusDetail <String>]`: Details about the status of the operation.
             - `[Id <String>]`: 
             - `[Error <IMicrosoftGraphPublicError>]`: publicError
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3738,8 +3745,8 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
               - `[Message <String>]`: A non-localized message for the developer.
               - `[Target <String>]`: The target of the error.
             - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
-            - `[ResourceId <String>]`: A unique identifier for the result.
-            - `[Type <String>]`: Type of the operation.
+            - `[ResourceId <String>]`: The unique identifier for the result.
+            - `[Type <String>]`: The type of the operation.
           - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
           - `[Subscriptions <IMicrosoftGraphSubscription1[]>]`: The set of subscriptions on the list.
           - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
@@ -3971,7 +3978,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[Status <String>]`: threatAssessmentStatus
       - `[Insights <IMicrosoftGraphItemInsights>]`: itemInsights
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Shared <IMicrosoftGraphSharedInsight[]>]`: Access this property from the derived type itemInsights.
+        - `[Shared <IMicrosoftGraphSharedInsight[]>]`: Calculated relationship identifying documents shared with or by the user. This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings. This also includes URLs and reference attachments to Teams conversations. Ordered by recency of share.
           - `[Id <String>]`: 
           - `[LastShared <IMicrosoftGraphSharingDetail>]`: sharingDetail
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4004,19 +4011,19 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
             - `[Title <String>]`: The item's title text.
             - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types.
           - `[SharingHistory <IMicrosoftGraphSharingDetail[]>]`: 
-        - `[Trending <IMicrosoftGraphTrending[]>]`: Access this property from the derived type itemInsights.
+        - `[Trending <IMicrosoftGraphTrending[]>]`: Calculated relationship identifying documents trending around a user. Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint. Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
           - `[Id <String>]`: 
           - `[LastModifiedDateTime <DateTime?>]`: 
           - `[Resource <IMicrosoftGraphEntity>]`: entity
           - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
           - `[Weight <Double?>]`: Value indicating how much the document is currently trending. The larger the number, the more the document is currently trending around the user (the more relevant it is). Returned documents are sorted by this value.
-        - `[Used <IMicrosoftGraphUsedInsight[]>]`: Access this property from the derived type itemInsights.
+        - `[Used <IMicrosoftGraphUsedInsight[]>]`: Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
           - `[Id <String>]`: 
           - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-            - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+            - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time.For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
           - `[Resource <IMicrosoftGraphEntity>]`: entity
           - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
@@ -4083,7 +4090,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowAddRemoveApps <Boolean?>]`: If set to true, members can add and remove apps.
           - `[AllowCreatePrivateChannels <Boolean?>]`: If set to true, members can add and update private channels.
-          - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, members can add and update any channels.
+          - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, members can add and update channels.
           - `[AllowCreateUpdateRemoveConnectors <Boolean?>]`: If set to true, members can add, update, and remove connectors.
           - `[AllowCreateUpdateRemoveTabs <Boolean?>]`: If set to true, members can add, update, and remove tabs.
           - `[AllowDeleteChannels <Boolean?>]`: If set to true, members can delete channels.
@@ -4289,9 +4296,9 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
         - `[Specialization <String>]`: teamSpecialization
         - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[GuestsCount <Int32?>]`: Count of guests in a team.
-          - `[MembersCount <Int32?>]`: Count of members in a team.
-          - `[OwnersCount <Int32?>]`: Count of owners in a team.
+          - `[GuestsCount <Int32?>]`: 
+          - `[MembersCount <Int32?>]`: 
+          - `[OwnersCount <Int32?>]`: 
         - `[Tags <IMicrosoftGraphTeamworkTag[]>]`: The tags associated with the team.
           - `[Id <String>]`: 
           - `[Description <String>]`: Tag description as it will appear to the user in Microsoft Teams.
@@ -4307,18 +4314,33 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
         - `[Template <IMicrosoftGraphTeamsTemplate>]`: teamsTemplate
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
+        - `[TemplateDefinition <IMicrosoftGraphTeamTemplateDefinition>]`: teamTemplateDefinition
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: 
+          - `[Audience <String>]`: teamTemplateAudience
+          - `[Categories <String[]>]`: 
+          - `[Description <String>]`: 
+          - `[DisplayName <String>]`: 
+          - `[IconUrl <String>]`: 
+          - `[LanguageTag <String>]`: 
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedDateTime <DateTime?>]`: 
+          - `[ParentTemplateId <String>]`: 
+          - `[PublisherName <String>]`: 
+          - `[ShortDescription <String>]`: 
+          - `[TeamDefinition <IMicrosoftGraphTeam>]`: team
         - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
         - `[Visibility <String>]`: teamVisibilityType
         - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
       - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
       - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult. Refer to the legal age group property definitions for further information. Returned only on $select.
       - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]`: State of license assignments for this user. Read-only. Returned only on $select.
-        - `[AssignedByGroup <String>]`: The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.
-        - `[DisabledPlans <String[]>]`: The service plans that are disabled in this assignment. Read-Only.
-        - `[Error <String>]`: License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. The possible values are CountViolation, MutuallyExclusiveViolation, DependencyViolation, ProhibitedInUsageLocationViolation, UniquenessViolation, and Other. For more information on how to identify and resolve license assignment errors see here.
-        - `[LastUpdatedDateTime <DateTime?>]`: The timestamp when the state of the license assignment was last updated.
-        - `[SkuId <String>]`: The unique identifier for the SKU. Read-Only.
-        - `[State <String>]`: Indicate the current state of this assignment. Read-Only. The possible values are Active, ActiveWithError, Disabled, and Error.
+        - `[AssignedByGroup <String>]`: 
+        - `[DisabledPlans <String[]>]`: 
+        - `[Error <String>]`: 
+        - `[LastUpdatedDateTime <DateTime?>]`: 
+        - `[SkuId <String>]`: 
+        - `[State <String>]`: 
       - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: A collection of this user's license details. Read-only.
       - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. This property cannot contain accent characters.  NOTE: We do not recommend updating this property for Azure AD B2C user profiles. Use the otherMails property instead.  Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
       - `[MailFolders <IMicrosoftGraphMailFolder[]>]`: The user's mail folders. Read-only. Nullable.
@@ -4340,7 +4362,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
             - `[MarkImportance <String>]`: importance
             - `[MoveToFolder <String>]`: The ID of the folder that a message will be moved to.
             - `[PermanentDelete <Boolean?>]`: Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-            - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email address to which a message should be redirected.
+            - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email addresses to which a message should be redirected.
             - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
           - `[Conditions <IMicrosoftGraphMessageRulePredicates>]`: messageRulePredicates
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4540,12 +4562,15 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
         - `[ConfigurationManagerClientInformation <IMicrosoftGraphConfigurationManagerClientInformation>]`: Configuration Manager client information synced from SCCM
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ClientIdentifier <String>]`: Configuration Manager Client Id from SCCM
+          - `[ClientVersion <String>]`: Configuration Manager Client version from SCCM
           - `[IsBlocked <Boolean?>]`: Configuration Manager Client blocked status from SCCM
         - `[DetectedApps <IMicrosoftGraphDetectedApp[]>]`: All applications currently installed on the device
           - `[Id <String>]`: 
           - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
           - `[DisplayName <String>]`: Name of the discovered application. Read-only
           - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The devices that have the discovered application installed
+          - `[Platform <DetectedAppPlatformType?>]`: Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0).
+          - `[Publisher <String>]`: Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.
           - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
           - `[Version <String>]`: Version of the discovered application. Read-only
         - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
@@ -4961,7 +4986,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
         - `[Capabilities <String[]>]`: 
         - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+          - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
           - `[ReplyChainMessageId <String>]`: The ID of the reply message.
           - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
         - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
@@ -5140,7 +5165,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[NotificationTemplateType <String>]`: Indicates the type of access review email to be sent. Supported template type is CompletedAdditionalRecipients which sends review completion notifications to the recipients.
           - `[BackupReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: 
-            - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
+            - `[Query <String>]`: The query specifying who will be the reviewer.
             - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
             - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
           - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -5342,7 +5367,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
           - `[Owner <String>]`: 
           - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
-        - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
+        - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: 
         - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[RecentPlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
@@ -5435,9 +5460,9 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
             - `[PrintQuality <String>]`: printQuality
             - `[Quality <String>]`: printQuality
             - `[Scaling <String>]`: printScaling
-          - `[DisplayName <String>]`: The name of the printer/printerShare.
-          - `[IsAcceptingJobs <Boolean?>]`: Whether the printer/printerShare is currently accepting new print jobs.
-          - `[Jobs <IMicrosoftGraphPrintJob[]>]`: The list of jobs that are queued for printing by the printer/printerShare.
+          - `[DisplayName <String>]`: 
+          - `[IsAcceptingJobs <Boolean?>]`: 
+          - `[Jobs <IMicrosoftGraphPrintJob[]>]`: 
             - `[Id <String>]`: 
             - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5550,8 +5575,8 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
             - `[StreetAddress <String>]`: The street address where the printer is located.
             - `[Subdivision <String[]>]`: The subdivision that the printer is located in. The elements should be in hierarchical order.
             - `[Subunit <String[]>]`: 
-          - `[Manufacturer <String>]`: The manufacturer of the printer/printerShare.
-          - `[Model <String>]`: The model name of the printer/printerShare.
+          - `[Manufacturer <String>]`: 
+          - `[Model <String>]`: 
           - `[Name <String>]`: 
           - `[Status <IMicrosoftGraphPrinterStatus>]`: printerStatus
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5570,12 +5595,12 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
             - `[Defaults <IMicrosoftGraphPrinterDefaults>]`: printerDefaults
-            - `[DisplayName <String>]`: The name of the printer/printerShare.
-            - `[IsAcceptingJobs <Boolean?>]`: Whether the printer/printerShare is currently accepting new print jobs.
-            - `[Jobs <IMicrosoftGraphPrintJob[]>]`: The list of jobs that are queued for printing by the printer/printerShare.
+            - `[DisplayName <String>]`: 
+            - `[IsAcceptingJobs <Boolean?>]`: 
+            - `[Jobs <IMicrosoftGraphPrintJob[]>]`: 
             - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
-            - `[Manufacturer <String>]`: The manufacturer of the printer/printerShare.
-            - `[Model <String>]`: The model name of the printer/printerShare.
+            - `[Manufacturer <String>]`: 
+            - `[Model <String>]`: 
             - `[Name <String>]`: 
             - `[Status <IMicrosoftGraphPrinterStatus>]`: printerStatus
             - `[Id <String>]`: 
@@ -6117,24 +6142,24 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
             - `[Id <String>]`: 
             - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
               - `[Id <String>]`: 
-              - `[Content <Byte[]>]`: The content streams that are uploaded.
-              - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-              - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
-            - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+              - `[Content <Byte[]>]`: 
+              - `[ExpirationDateTime <DateTime?>]`: 
+              - `[NextExpectedRanges <String[]>]`: 
+            - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: 
               - `[Id <String>]`: 
-              - `[ContentType <String>]`: The MIME type.
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-              - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
-              - `[Size <Int32?>]`: The length of the attachment in bytes.
+              - `[ContentType <String>]`: 
+              - `[LastModifiedDateTime <DateTime?>]`: 
+              - `[Name <String>]`: 
+              - `[Size <Int32?>]`: 
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
-            - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of smaller subtasks linked to the more complex parent task.
+            - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of checklistItems linked to a task.
             - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-            - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
+            - `[HasAttachments <Boolean?>]`: 
             - `[Importance <String>]`: importance
             - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
             - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -6188,7 +6213,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
       - `[State <String>]`: Enumeration value that indicates the state of the storage space. Read-only.
       - `[StoragePlanInformation <IMicrosoftGraphStoragePlanInformation>]`: storagePlanInformation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[UpgradeAvailable <Boolean?>]`: Indicates if there are higher storage quota plans available. Read-only.
+        - `[UpgradeAvailable <Boolean?>]`: Indicates whether there are higher storage quota plans available. Read-only.
       - `[Total <Int64?>]`: Total allowed storage space, in bytes. Read-only.
       - `[Used <Int64?>]`: Total space used, in bytes. Read-only.
     - `[Root <IMicrosoftGraphDriveItem>]`: driveItem
@@ -6262,7 +6287,7 @@ BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
     - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
     - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings. Read-only.
     - `[Values <IMicrosoftGraphSettingValue[]>]`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
-      - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+      - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
       - `[Value <String>]`: Value of the setting.
   - `[Sites <IMicrosoftGraphSite[]>]`: The list of SharePoint sites in this group. Access the default site with /sites/root.
   - `[Team <IMicrosoftGraphTeam>]`: team
@@ -6289,8 +6314,8 @@ CALENDAR `<IMicrosoftGraphCalendar1>`: calendar
     - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
+      - `[Address <String>]`: The email address of the person or entity.
+      - `[Name <String>]`: The display name of the person or entity.
     - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
     - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
     - `[Role <String>]`: calendarRoleType
@@ -6306,7 +6331,7 @@ CALENDAR `<IMicrosoftGraphCalendar1>`: calendar
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+      - `[Name <String>]`: The attachment's file name.
       - `[Size <Int32?>]`: The length of the attachment in bytes.
     - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
       - `[Type <String>]`: attendeeType
@@ -6315,8 +6340,8 @@ CALENDAR `<IMicrosoftGraphCalendar1>`: calendar
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-          - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+          - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+          - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6453,20 +6478,20 @@ CALENDARVIEW <IMicrosoftGraphEvent\[]>: The calendar view for the calendar. Read
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+    - `[Name <String>]`: The attachment's file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
   - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
     - `[Type <String>]`: attendeeType
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
+      - `[Address <String>]`: The email address of the person or entity.
+      - `[Name <String>]`: The display name of the person or entity.
     - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6613,8 +6638,8 @@ CONVERSATIONS <IMicrosoftGraphConversation1\[]>: The group's conversations.
     - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Address <String>]`: The email address of an entity instance.
-        - `[Name <String>]`: The display name of an entity instance.
+        - `[Address <String>]`: The email address of the person or entity.
+        - `[Name <String>]`: The display name of the person or entity.
     - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
     - `[IsLocked <Boolean?>]`: Indicates if the thread is locked. Returned by default.
     - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default.
@@ -6629,7 +6654,7 @@ CONVERSATIONS <IMicrosoftGraphConversation1\[]>: The group's conversations.
         - `[ContentType <String>]`: The MIME type.
         - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
         - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+        - `[Name <String>]`: The attachment's file name.
         - `[Size <Int32?>]`: The length of the attachment in bytes.
       - `[Body <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6690,7 +6715,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
     - `[Id <String>]`: 
     - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
     - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-    - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
+    - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
       - `[Id <String>]`: 
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
@@ -6702,9 +6727,9 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
       - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
       - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
       - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
-      - `[HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
+      - `[HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>]`: 
         - `[Id <String>]`: 
-        - `[ActiveDurationSeconds <Int32?>]`: Optional. The duration of active user engagement. if not supplied, this is calculated from the startedDateTime and lastActiveDateTime.
+        - `[ActiveDurationSeconds <Int32?>]`: 
         - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
         - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
         - `[ExpirationDateTime <DateTime?>]`: Optional. UTC DateTime when the historyItem will undergo hard-delete. Can be set by the client.
@@ -6731,18 +6756,18 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
     - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, Minor, NotAdult and Adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
     - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: The user's terms of use acceptance statuses. Read-only. Nullable.
       - `[Id <String>]`: 
-      - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
-      - `[AgreementId <String>]`: ID of the agreement.
+      - `[AgreementFileId <String>]`: The identifier of the agreement file accepted by the user.
+      - `[AgreementId <String>]`: The identifier of the agreement.
       - `[DeviceDisplayName <String>]`: The display name of the device used for accepting the agreement.
       - `[DeviceId <String>]`: The unique identifier of the device used for accepting the agreement.
-      - `[DeviceOSType <String>]`: The operating system used for accepting the agreement.
-      - `[DeviceOSVersion <String>]`: The operating system version of the device used for accepting the agreement.
-      - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[DeviceOSType <String>]`: The operating system used to accept the agreement.
+      - `[DeviceOSVersion <String>]`: The operating system version of the device used to accept the agreement.
+      - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[State <String>]`: agreementAcceptanceState
       - `[UserDisplayName <String>]`: Display name of the user when the acceptance was recorded.
       - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
-      - `[UserId <String>]`: ID of the user who accepted the agreement.
+      - `[UserId <String>]`: The identifier of the user who accepted the agreement.
       - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
     - `[Analytics <IMicrosoftGraphUserAnalytics>]`: userAnalytics
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6766,7 +6791,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
       - `[ConsentType <String>]`: The consent type of the request. Possible values are: Static and Dynamic. These represent static and dynamic permissions, respectively, requested in the consent workflow. Supports $filter (eq only) and $orderby. Required.
       - `[PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]`: A list of pending scopes waiting for approval. This is empty if the consentType is Static. Required.
         - `[DisplayName <String>]`: The name of the scope.
-      - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests.
+      - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests. Supports $filter (eq).
         - `[ApprovalId <String>]`: The identifier of the approval of the request.
         - `[CompletedDateTime <DateTime?>]`: The request completion date time.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -6794,8 +6819,8 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
       - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
         - `[Id <String>]`: 
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+          - `[Key <String>]`: Key for the key-value pair.
+          - `[Value <String>]`: Value for the key-value pair.
         - `[Type <String>]`: 
       - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
       - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -6869,7 +6894,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
         - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
       - `[ErrorUrl <String>]`: Deprecated. Don't use.
-      - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: Federated identities for a specific type of service principal - managed identity. Supports $expand and $filter (eq when counting empty collections).
+      - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: 
         - `[Id <String>]`: 
         - `[Audiences <String[]>]`: The audience that can appear in the external token. This field is mandatory and should be set to api://AzureADTokenExchange for Azure AD. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. This field can only accept a single value and has a limit of 600 characters. Required.
         - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential. It has a limit of 600 characters. Optional.
@@ -6971,7 +6996,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-            - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
+            - `[Interval <TimeSpan?>]`: The interval between synchronization iterations. The value is represented in ISO 8601 format for durations. For example, PT1M represents a period of 1 month.
             - `[State <String>]`: synchronizationScheduleState
           - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -7130,14 +7155,19 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
         - `[Id <String>]`: 
       - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
+      - `[VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>]`: verifiedPublisher
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AddedDateTime <DateTime?>]`: The timestamp when the verified publisher was first added or most recently updated.
+        - `[DisplayName <String>]`: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
+        - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
     - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
     - `[Approvals <IMicrosoftGraphApproval[]>]`: 
     - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq, not, and counting empty collections).
       - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
       - `[SkuId <String>]`: The unique identifier for the SKU.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and not).
-      - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+      - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut. See a detailed description of each value.
       - `[Service <String>]`: The name of the service; for example, exchange.
       - `[ServicePlanId <String>]`: A GUID that identifies the service plan. For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
     - `[Authentication <IMicrosoftGraphAuthentication1>]`: authentication
@@ -7247,17 +7277,17 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-      - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: 
+      - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: Represents the status of a long-running operation.
         - `[Id <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[LastActionDateTime <DateTime?>]`: 
-        - `[ResourceLocation <String>]`: 
+        - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+        - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+        - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
         - `[Status <String>]`: longRunningOperationStatus
-        - `[StatusDetail <String>]`: 
+        - `[StatusDetail <String>]`: Details about the status of the operation.
       - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod1[]>]`: Represents the details of the password authentication method registered to a user for authentication.
         - `[Id <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[CreationDateTime <DateTime?>]`: The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[CreationDateTime <DateTime?>]`: 
         - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
       - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod[]>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
         - `[Id <String>]`: 
@@ -7267,10 +7297,10 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
       - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
         - `[Id <String>]`: 
-        - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+        - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format +{country code} {number}x{extension}, with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating or updating if they do not match the required format.
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
-      - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
+      - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: The software OATH TOTP applications registered to a user for authentication.
         - `[Id <String>]`: 
         - `[SecretKey <String>]`: The secret key of the method. Always returns null.
       - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
@@ -7290,7 +7320,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
     - `[AuthorizationInfo <IMicrosoftGraphAuthorizationInfo>]`: authorizationInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CertificateUserIds <String[]>]`: 
+      - `[CertificateUserIds <String[]>]`: The collection of unique identifiers that can be associated with a user and can be used to bind the Azure AD user to a certificate for authentication and authorization into non-Azure AD environments. The identifiers must be unique in the tenant.
     - `[Birthday <DateTime?>]`: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
     - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq, not, ge, le, startsWith).
     - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
@@ -7303,8 +7333,8 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Address <String>]`: The email address of an entity instance.
-          - `[Name <String>]`: The display name of an entity instance.
+          - `[Address <String>]`: The email address of the person or entity.
+          - `[Name <String>]`: The display name of the person or entity.
         - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
         - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
         - `[Role <String>]`: calendarRoleType
@@ -7320,7 +7350,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[ContentType <String>]`: The MIME type.
           - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
           - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+          - `[Name <String>]`: The attachment's file name.
           - `[Size <Int32?>]`: The length of the attachment in bytes.
         - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
           - `[Type <String>]`: attendeeType
@@ -7329,8 +7359,8 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-              - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+              - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+              - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
             - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -7484,7 +7514,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: 
                 - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-                - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+                - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
               - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Description <String>]`: Verbose description of the application.
@@ -7542,7 +7572,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
         - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
           - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-          - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+          - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
           - `[Id <String>]`: 
         - `[Importance <String>]`: 
         - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
@@ -7594,7 +7624,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
       - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]`: teamworkOnlineMeetingInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CalendarEventId <String>]`: The identifier of the calendar event associated with the meeting.
-        - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
+        - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -7621,7 +7651,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[Permission <String>]`: The name of the resource-specific permission. Read-only.
         - `[PermissionType <String>]`: The type of permission. Possible values are: Application, Delegated. Read-only.
         - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
-      - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>]`: A collection of all the pinned messages in the chat. Nullable.
+      - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo1[]>]`: A collection of all the pinned messages in the chat. Nullable.
         - `[Id <String>]`: 
         - `[Message <IMicrosoftGraphChatMessage>]`: chatMessage
       - `[Tabs <IMicrosoftGraphTeamsTab1[]>]`: A collection of all the tabs in the chat. Nullable.
@@ -7651,13 +7681,14 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
       - `[AadDeviceId <String>]`: The Azure Active Directory (Azure AD) device ID of the Cloud PC.
       - `[ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]`: cloudPcConnectivityResult
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]`: 
-          - `[AdditionalDetails <String>]`: 
-          - `[DisplayName <String>]`: 
-          - `[LastHealthCheckDateTime <DateTime?>]`: 
+        - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]`: A list of failed health check items. If the status property is available, this property will be empty.
+          - `[AdditionalDetails <String>]`: Additional message for this health check.
+          - `[DisplayName <String>]`: The connectivity health check item name.
+          - `[LastHealthCheckDateTime <DateTime?>]`: Timestamp when the last check occurs. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
           - `[Result <String>]`: cloudPcConnectivityEventResult
         - `[Status <String>]`: cloudPcConnectivityStatus
-        - `[UpdatedDateTime <DateTime?>]`: 
+        - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+      - `[DiskEncryptionState <String>]`: cloudPcDiskEncryptionState
       - `[DisplayName <String>]`: The display name of the Cloud PC.
       - `[GracePeriodEndDateTime <DateTime?>]`: The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is inGracePeriod. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[ImageDisplayName <String>]`: Name of the OS image that's on the Cloud PC.
@@ -7709,8 +7740,8 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[Department <String>]`: The contact's department.
         - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
         - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]`: The contact's email addresses.
-          - `[Address <String>]`: The email address of an entity instance.
-          - `[Name <String>]`: The display name of an entity instance.
+          - `[Address <String>]`: The email address of the person or entity.
+          - `[Name <String>]`: The display name of the person or entity.
           - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
           - `[Type <String>]`: emailType
         - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Nullable.
@@ -7812,6 +7843,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
     - `[Drives <IMicrosoftGraphDrive[]>]`: A collection of drives available for this user. Read-only.
     - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, not , ge, le, in).
     - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. The maximum length is 16 characters.Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
+    - `[EmployeeLeaveDateTime <DateTime?>]`: The date and time when the user left or will leave the organization. Read: Requires User-LifeCycleInfo.Read.All. For delegated scenarios, the admin needs one of the following Azure AD roles: Lifecycle Workflows Administrator, Global Reader, or Global Admin.  Write: Requires User-LifeCycleInfo.ReadWrite.All. For delegated scenarios, the admin needs the Global Administrator Azure AD role. Supports $filter (eq, ne, not , ge, le, in).
     - `[EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]`: employeeOrgData
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CostCenter <String>]`: The cost center associated with the user. Returned only on $select. Supports $filter.
@@ -8009,7 +8041,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Hashes <IMicrosoftGraphHashes>]`: hashes
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Crc32Hash <String>]`: The CRC32 value of the file (if available). Read-only.
+                  - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available). Read-only.
                   - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.
                   - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available). Read-only.
                   - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available). Read-only.
@@ -8036,8 +8068,8 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
               - `[Location <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-                - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
-                - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+                - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
+                - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
               - `[Malware <IMicrosoftGraphMalware>]`: malware
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Description <String>]`: Contains the virus details for the malware facet.
@@ -8101,7 +8133,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
                 - `[FocalLength <Double?>]`: The focal length from the camera. Read-only.
                 - `[Iso <Int32?>]`: The ISO value from the camera. Read-only.
                 - `[Orientation <Int32?>]`: The orientation value from the camera. Writable on OneDrive Personal.
-                - `[TakenDateTime <DateTime?>]`: The date and time the photo was taken in UTC time. Read-only.
+                - `[TakenDateTime <DateTime?>]`: Represents the date and time the photo was taken. Read-only.
               - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
               - `[RemoteItem <IMicrosoftGraphRemoteItem>]`: remoteItem
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8189,7 +8221,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
                 - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
                 - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
                 - `[Id <String>]`: 
-                - `[Content <Byte[]>]`: 
+                - `[Content <Byte[]>]`: The content stream for this version of the item.
                 - `[Size <Int64?>]`: Indicates the size of the content stream for this version of the item.
               - `[Video <IMicrosoftGraphVideo>]`: video
               - `[WebDavUrl <String>]`: WebDAV compatible URL for the item.
@@ -8202,12 +8234,12 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
                   - `[CalculationMode <String>]`: Returns the calculation mode used in the workbook. Possible values are: Automatic, AutomaticExceptTables, Manual.
                 - `[Comments <IMicrosoftGraphWorkbookComment[]>]`: 
                   - `[Id <String>]`: 
-                  - `[Content <String>]`: The content of the comment.
+                  - `[Content <String>]`: The content of comment.
                   - `[ContentType <String>]`: Indicates the type for the comment.
                   - `[Replies <IMicrosoftGraphWorkbookCommentReply[]>]`: 
                     - `[Id <String>]`: 
-                    - `[Content <String>]`: The content of replied comment.
-                    - `[ContentType <String>]`: Indicates the type for the replied comment.
+                    - `[Content <String>]`: The content of a comment reply.
+                    - `[ContentType <String>]`: Indicates the type for the comment reply.
                 - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: 
@@ -8377,7 +8409,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
                             - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                              - `[Set <String>]`: Represents the set that the icon is part of. Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
+                              - `[Set <String>]`: Represents the set that the icon is part of. The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                             - `[Operator <String>]`: 
                             - `[Values <IMicrosoftGraphJson>]`: Json
                         - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
@@ -8402,12 +8434,12 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
                         - `[Fields <IMicrosoftGraphWorkbookSortField[]>]`: Represents the current conditions used to last sort the table. Read-only.
                           - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                           - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
-                          - `[DataOption <String>]`: Represents additional sorting options for this field. Possible values are: Normal, TextAsNumber.
+                          - `[DataOption <String>]`: Represents additional sorting options for this field. The possible values are: Normal, TextAsNumber.
                           - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                           - `[Key <Int32?>]`: Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).
-                          - `[SortOn <String>]`: Represents the type of sorting of this condition. Possible values are: Value, CellColor, FontColor, Icon.
+                          - `[SortOn <String>]`: Represents the type of sorting of this condition. The possible values are: Value, CellColor, FontColor, Icon.
                         - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
-                        - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
+                        - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount. Read-only.
                       - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
                       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                     - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
@@ -8562,7 +8594,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
             - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
             - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
-          - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
+          - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
       - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types defined for this site.
         - `[Id <String>]`: 
         - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
@@ -8579,7 +8611,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
           - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
             - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
-            - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+            - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
             - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
           - `[PropagateWelcomePageChanges <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
           - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
@@ -8632,8 +8664,8 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
         - `[Id <String>]`: 
         - `[Activities <IMicrosoftGraphItemActivityOld[]>]`: The recent activities that took place within this list.
-        - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of field definitions for this list.
-        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
+        - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: 
+        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: 
         - `[DisplayName <String>]`: The displayable title of the list.
         - `[Drive <IMicrosoftGraphDrive>]`: drive
         - `[Items <IMicrosoftGraphListItem1[]>]`: All items contained in the list.
@@ -8643,11 +8675,11 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[Hidden <Boolean?>]`: If true, indicates that the list is not normally visible in the SharePoint user experience.
           - `[Template <String>]`: An enumerated value that represents the base list template used in creating the list. Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
         - `[Operations <IMicrosoftGraphRichLongRunningOperation[]>]`: The collection of long running operations for the list.
-          - `[CreatedDateTime <DateTime?>]`: 
-          - `[LastActionDateTime <DateTime?>]`: 
-          - `[ResourceLocation <String>]`: 
+          - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+          - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+          - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
           - `[Status <String>]`: longRunningOperationStatus
-          - `[StatusDetail <String>]`: 
+          - `[StatusDetail <String>]`: Details about the status of the operation.
           - `[Id <String>]`: 
           - `[Error <IMicrosoftGraphPublicError>]`: publicError
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8665,8 +8697,8 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
             - `[Message <String>]`: A non-localized message for the developer.
             - `[Target <String>]`: The target of the error.
           - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
-          - `[ResourceId <String>]`: A unique identifier for the result.
-          - `[Type <String>]`: Type of the operation.
+          - `[ResourceId <String>]`: The unique identifier for the result.
+          - `[Type <String>]`: The type of the operation.
         - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
         - `[Subscriptions <IMicrosoftGraphSubscription1[]>]`: The set of subscriptions on the list.
         - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
@@ -8898,7 +8930,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[Status <String>]`: threatAssessmentStatus
     - `[Insights <IMicrosoftGraphItemInsights>]`: itemInsights
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Shared <IMicrosoftGraphSharedInsight[]>]`: Access this property from the derived type itemInsights.
+      - `[Shared <IMicrosoftGraphSharedInsight[]>]`: Calculated relationship identifying documents shared with or by the user. This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings. This also includes URLs and reference attachments to Teams conversations. Ordered by recency of share.
         - `[Id <String>]`: 
         - `[LastShared <IMicrosoftGraphSharingDetail>]`: sharingDetail
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8931,19 +8963,19 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[Title <String>]`: The item's title text.
           - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types.
         - `[SharingHistory <IMicrosoftGraphSharingDetail[]>]`: 
-      - `[Trending <IMicrosoftGraphTrending[]>]`: Access this property from the derived type itemInsights.
+      - `[Trending <IMicrosoftGraphTrending[]>]`: Calculated relationship identifying documents trending around a user. Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint. Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
         - `[Id <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Weight <Double?>]`: Value indicating how much the document is currently trending. The larger the number, the more the document is currently trending around the user (the more relevant it is). Returned documents are sorted by this value.
-      - `[Used <IMicrosoftGraphUsedInsight[]>]`: Access this property from the derived type itemInsights.
+      - `[Used <IMicrosoftGraphUsedInsight[]>]`: Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
         - `[Id <String>]`: 
         - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time.For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
@@ -9200,7 +9232,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
         - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings. Read-only.
         - `[Values <IMicrosoftGraphSettingValue[]>]`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
-          - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+          - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
           - `[Value <String>]`: Value of the setting.
       - `[Sites <IMicrosoftGraphSite[]>]`: The list of SharePoint sites in this group. Access the default site with /sites/root.
       - `[Team <IMicrosoftGraphTeam>]`: team
@@ -9261,7 +9293,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowAddRemoveApps <Boolean?>]`: If set to true, members can add and remove apps.
           - `[AllowCreatePrivateChannels <Boolean?>]`: If set to true, members can add and update private channels.
-          - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, members can add and update any channels.
+          - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, members can add and update channels.
           - `[AllowCreateUpdateRemoveConnectors <Boolean?>]`: If set to true, members can add, update, and remove connectors.
           - `[AllowCreateUpdateRemoveTabs <Boolean?>]`: If set to true, members can add, update, and remove tabs.
           - `[AllowDeleteChannels <Boolean?>]`: If set to true, members can delete channels.
@@ -9467,9 +9499,9 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[Specialization <String>]`: teamSpecialization
         - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[GuestsCount <Int32?>]`: Count of guests in a team.
-          - `[MembersCount <Int32?>]`: Count of members in a team.
-          - `[OwnersCount <Int32?>]`: Count of owners in a team.
+          - `[GuestsCount <Int32?>]`: 
+          - `[MembersCount <Int32?>]`: 
+          - `[OwnersCount <Int32?>]`: 
         - `[Tags <IMicrosoftGraphTeamworkTag[]>]`: The tags associated with the team.
           - `[Id <String>]`: 
           - `[Description <String>]`: Tag description as it will appear to the user in Microsoft Teams.
@@ -9485,6 +9517,21 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
         - `[Template <IMicrosoftGraphTeamsTemplate>]`: teamsTemplate
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
+        - `[TemplateDefinition <IMicrosoftGraphTeamTemplateDefinition>]`: teamTemplateDefinition
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: 
+          - `[Audience <String>]`: teamTemplateAudience
+          - `[Categories <String[]>]`: 
+          - `[Description <String>]`: 
+          - `[DisplayName <String>]`: 
+          - `[IconUrl <String>]`: 
+          - `[LanguageTag <String>]`: 
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedDateTime <DateTime?>]`: 
+          - `[ParentTemplateId <String>]`: 
+          - `[PublisherName <String>]`: 
+          - `[ShortDescription <String>]`: 
+          - `[TeamDefinition <IMicrosoftGraphTeam>]`: team
         - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
         - `[Visibility <String>]`: teamVisibilityType
         - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
@@ -9504,12 +9551,12 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
     - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
     - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult. Refer to the legal age group property definitions for further information. Returned only on $select.
     - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]`: State of license assignments for this user. Read-only. Returned only on $select.
-      - `[AssignedByGroup <String>]`: The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.
-      - `[DisabledPlans <String[]>]`: The service plans that are disabled in this assignment. Read-Only.
-      - `[Error <String>]`: License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. The possible values are CountViolation, MutuallyExclusiveViolation, DependencyViolation, ProhibitedInUsageLocationViolation, UniquenessViolation, and Other. For more information on how to identify and resolve license assignment errors see here.
-      - `[LastUpdatedDateTime <DateTime?>]`: The timestamp when the state of the license assignment was last updated.
-      - `[SkuId <String>]`: The unique identifier for the SKU. Read-Only.
-      - `[State <String>]`: Indicate the current state of this assignment. Read-Only. The possible values are Active, ActiveWithError, Disabled, and Error.
+      - `[AssignedByGroup <String>]`: 
+      - `[DisabledPlans <String[]>]`: 
+      - `[Error <String>]`: 
+      - `[LastUpdatedDateTime <DateTime?>]`: 
+      - `[SkuId <String>]`: 
+      - `[State <String>]`: 
     - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: A collection of this user's license details. Read-only.
     - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. This property cannot contain accent characters.  NOTE: We do not recommend updating this property for Azure AD B2C user profiles. Use the otherMails property instead.  Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
     - `[MailFolders <IMicrosoftGraphMailFolder[]>]`: The user's mail folders. Read-only. Nullable.
@@ -9531,7 +9578,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[MarkImportance <String>]`: importance
           - `[MoveToFolder <String>]`: The ID of the folder that a message will be moved to.
           - `[PermanentDelete <Boolean?>]`: Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-          - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email address to which a message should be redirected.
+          - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email addresses to which a message should be redirected.
           - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
         - `[Conditions <IMicrosoftGraphMessageRulePredicates>]`: messageRulePredicates
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9731,12 +9778,15 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
       - `[ConfigurationManagerClientInformation <IMicrosoftGraphConfigurationManagerClientInformation>]`: Configuration Manager client information synced from SCCM
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ClientIdentifier <String>]`: Configuration Manager Client Id from SCCM
+        - `[ClientVersion <String>]`: Configuration Manager Client version from SCCM
         - `[IsBlocked <Boolean?>]`: Configuration Manager Client blocked status from SCCM
       - `[DetectedApps <IMicrosoftGraphDetectedApp[]>]`: All applications currently installed on the device
         - `[Id <String>]`: 
         - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
         - `[DisplayName <String>]`: Name of the discovered application. Read-only
         - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The devices that have the discovered application installed
+        - `[Platform <DetectedAppPlatformType?>]`: Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0).
+        - `[Publisher <String>]`: Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.
         - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
         - `[Version <String>]`: Version of the discovered application. Read-only
       - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
@@ -10148,7 +10198,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
       - `[Capabilities <String[]>]`: 
       - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+        - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
         - `[ReplyChainMessageId <String>]`: The ID of the reply message.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
       - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
@@ -10327,7 +10377,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[NotificationTemplateType <String>]`: Indicates the type of access review email to be sent. Supported template type is CompletedAdditionalRecipients which sends review completion notifications to the recipients.
         - `[BackupReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: 
-          - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
+          - `[Query <String>]`: The query specifying who will be the reviewer.
           - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
           - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
         - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -10420,7 +10470,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
       - `[FavoritePlanReferences <IMicrosoftGraphPlannerFavoritePlanReferenceCollection>]`: plannerFavoritePlanReferenceCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[FavoritePlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans that the user marked as favorites.
-      - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
+      - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: 
       - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[RecentPlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
@@ -10513,9 +10563,9 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[PrintQuality <String>]`: printQuality
           - `[Quality <String>]`: printQuality
           - `[Scaling <String>]`: printScaling
-        - `[DisplayName <String>]`: The name of the printer/printerShare.
-        - `[IsAcceptingJobs <Boolean?>]`: Whether the printer/printerShare is currently accepting new print jobs.
-        - `[Jobs <IMicrosoftGraphPrintJob[]>]`: The list of jobs that are queued for printing by the printer/printerShare.
+        - `[DisplayName <String>]`: 
+        - `[IsAcceptingJobs <Boolean?>]`: 
+        - `[Jobs <IMicrosoftGraphPrintJob[]>]`: 
           - `[Id <String>]`: 
           - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10628,8 +10678,8 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[StreetAddress <String>]`: The street address where the printer is located.
           - `[Subdivision <String[]>]`: The subdivision that the printer is located in. The elements should be in hierarchical order.
           - `[Subunit <String[]>]`: 
-        - `[Manufacturer <String>]`: The manufacturer of the printer/printerShare.
-        - `[Model <String>]`: The model name of the printer/printerShare.
+        - `[Manufacturer <String>]`: 
+        - `[Model <String>]`: 
         - `[Name <String>]`: 
         - `[Status <IMicrosoftGraphPrinterStatus>]`: printerStatus
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10648,12 +10698,12 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
           - `[Defaults <IMicrosoftGraphPrinterDefaults>]`: printerDefaults
-          - `[DisplayName <String>]`: The name of the printer/printerShare.
-          - `[IsAcceptingJobs <Boolean?>]`: Whether the printer/printerShare is currently accepting new print jobs.
-          - `[Jobs <IMicrosoftGraphPrintJob[]>]`: The list of jobs that are queued for printing by the printer/printerShare.
+          - `[DisplayName <String>]`: 
+          - `[IsAcceptingJobs <Boolean?>]`: 
+          - `[Jobs <IMicrosoftGraphPrintJob[]>]`: 
           - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
-          - `[Manufacturer <String>]`: The manufacturer of the printer/printerShare.
-          - `[Model <String>]`: The model name of the printer/printerShare.
+          - `[Manufacturer <String>]`: 
+          - `[Model <String>]`: 
           - `[Name <String>]`: 
           - `[Status <IMicrosoftGraphPrinterStatus>]`: printerStatus
           - `[Id <String>]`: 
@@ -11195,24 +11245,24 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
           - `[Id <String>]`: 
           - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
             - `[Id <String>]`: 
-            - `[Content <Byte[]>]`: The content streams that are uploaded.
-            - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-            - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
-          - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+            - `[Content <Byte[]>]`: 
+            - `[ExpirationDateTime <DateTime?>]`: 
+            - `[NextExpectedRanges <String[]>]`: 
+          - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: 
             - `[Id <String>]`: 
-            - `[ContentType <String>]`: The MIME type.
-            - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-            - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
-            - `[Size <Int32?>]`: The length of the attachment in bytes.
+            - `[ContentType <String>]`: 
+            - `[LastModifiedDateTime <DateTime?>]`: 
+            - `[Name <String>]`: 
+            - `[Size <Int32?>]`: 
           - `[Body <IMicrosoftGraphItemBody>]`: itemBody
           - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
           - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
-          - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of smaller subtasks linked to the more complex parent task.
+          - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of checklistItems linked to a task.
           - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
           - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-          - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
+          - `[HasAttachments <Boolean?>]`: 
           - `[Importance <String>]`: importance
           - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
           - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -11266,7 +11316,7 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
     - `[State <String>]`: Enumeration value that indicates the state of the storage space. Read-only.
     - `[StoragePlanInformation <IMicrosoftGraphStoragePlanInformation>]`: storagePlanInformation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[UpgradeAvailable <Boolean?>]`: Indicates if there are higher storage quota plans available. Read-only.
+      - `[UpgradeAvailable <Boolean?>]`: Indicates whether there are higher storage quota plans available. Read-only.
     - `[Total <Int64?>]`: Total allowed storage space, in bytes. Read-only.
     - `[Used <Int64?>]`: Total space used, in bytes. Read-only.
   - `[Root <IMicrosoftGraphDriveItem>]`: driveItem
@@ -11289,7 +11339,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
     - `[Id <String>]`: 
     - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
     - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-    - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
+    - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
       - `[Id <String>]`: 
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
@@ -11301,9 +11351,9 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
       - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
       - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
       - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
-      - `[HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
+      - `[HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>]`: 
         - `[Id <String>]`: 
-        - `[ActiveDurationSeconds <Int32?>]`: Optional. The duration of active user engagement. if not supplied, this is calculated from the startedDateTime and lastActiveDateTime.
+        - `[ActiveDurationSeconds <Int32?>]`: 
         - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
         - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
         - `[ExpirationDateTime <DateTime?>]`: Optional. UTC DateTime when the historyItem will undergo hard-delete. Can be set by the client.
@@ -11330,18 +11380,18 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
     - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, Minor, NotAdult and Adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
     - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: The user's terms of use acceptance statuses. Read-only. Nullable.
       - `[Id <String>]`: 
-      - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
-      - `[AgreementId <String>]`: ID of the agreement.
+      - `[AgreementFileId <String>]`: The identifier of the agreement file accepted by the user.
+      - `[AgreementId <String>]`: The identifier of the agreement.
       - `[DeviceDisplayName <String>]`: The display name of the device used for accepting the agreement.
       - `[DeviceId <String>]`: The unique identifier of the device used for accepting the agreement.
-      - `[DeviceOSType <String>]`: The operating system used for accepting the agreement.
-      - `[DeviceOSVersion <String>]`: The operating system version of the device used for accepting the agreement.
-      - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[DeviceOSType <String>]`: The operating system used to accept the agreement.
+      - `[DeviceOSVersion <String>]`: The operating system version of the device used to accept the agreement.
+      - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[State <String>]`: agreementAcceptanceState
       - `[UserDisplayName <String>]`: Display name of the user when the acceptance was recorded.
       - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
-      - `[UserId <String>]`: ID of the user who accepted the agreement.
+      - `[UserId <String>]`: The identifier of the user who accepted the agreement.
       - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
     - `[Analytics <IMicrosoftGraphUserAnalytics>]`: userAnalytics
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11365,7 +11415,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
       - `[ConsentType <String>]`: The consent type of the request. Possible values are: Static and Dynamic. These represent static and dynamic permissions, respectively, requested in the consent workflow. Supports $filter (eq only) and $orderby. Required.
       - `[PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]`: A list of pending scopes waiting for approval. This is empty if the consentType is Static. Required.
         - `[DisplayName <String>]`: The name of the scope.
-      - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests.
+      - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests. Supports $filter (eq).
         - `[ApprovalId <String>]`: The identifier of the approval of the request.
         - `[CompletedDateTime <DateTime?>]`: The request completion date time.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -11393,8 +11443,8 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
       - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
         - `[Id <String>]`: 
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+          - `[Key <String>]`: Key for the key-value pair.
+          - `[Value <String>]`: Value for the key-value pair.
         - `[Type <String>]`: 
       - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
       - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -11468,7 +11518,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
         - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
       - `[ErrorUrl <String>]`: Deprecated. Don't use.
-      - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: Federated identities for a specific type of service principal - managed identity. Supports $expand and $filter (eq when counting empty collections).
+      - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: 
         - `[Id <String>]`: 
         - `[Audiences <String[]>]`: The audience that can appear in the external token. This field is mandatory and should be set to api://AzureADTokenExchange for Azure AD. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. This field can only accept a single value and has a limit of 600 characters. Required.
         - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential. It has a limit of 600 characters. Optional.
@@ -11570,7 +11620,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-            - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
+            - `[Interval <TimeSpan?>]`: The interval between synchronization iterations. The value is represented in ISO 8601 format for durations. For example, PT1M represents a period of 1 month.
             - `[State <String>]`: synchronizationScheduleState
           - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11729,14 +11779,19 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
         - `[Id <String>]`: 
       - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
+      - `[VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>]`: verifiedPublisher
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AddedDateTime <DateTime?>]`: The timestamp when the verified publisher was first added or most recently updated.
+        - `[DisplayName <String>]`: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
+        - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
     - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
     - `[Approvals <IMicrosoftGraphApproval[]>]`: 
     - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq, not, and counting empty collections).
       - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
       - `[SkuId <String>]`: The unique identifier for the SKU.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and not).
-      - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+      - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut. See a detailed description of each value.
       - `[Service <String>]`: The name of the service; for example, exchange.
       - `[ServicePlanId <String>]`: A GUID that identifies the service plan. For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
     - `[Authentication <IMicrosoftGraphAuthentication1>]`: authentication
@@ -11846,17 +11901,17 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-      - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: 
+      - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: Represents the status of a long-running operation.
         - `[Id <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[LastActionDateTime <DateTime?>]`: 
-        - `[ResourceLocation <String>]`: 
+        - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+        - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+        - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
         - `[Status <String>]`: longRunningOperationStatus
-        - `[StatusDetail <String>]`: 
+        - `[StatusDetail <String>]`: Details about the status of the operation.
       - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod1[]>]`: Represents the details of the password authentication method registered to a user for authentication.
         - `[Id <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[CreationDateTime <DateTime?>]`: The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[CreationDateTime <DateTime?>]`: 
         - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
       - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod[]>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
         - `[Id <String>]`: 
@@ -11866,10 +11921,10 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
       - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
         - `[Id <String>]`: 
-        - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+        - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format +{country code} {number}x{extension}, with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating or updating if they do not match the required format.
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
-      - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
+      - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: The software OATH TOTP applications registered to a user for authentication.
         - `[Id <String>]`: 
         - `[SecretKey <String>]`: The secret key of the method. Always returns null.
       - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
@@ -11889,7 +11944,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
     - `[AuthorizationInfo <IMicrosoftGraphAuthorizationInfo>]`: authorizationInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CertificateUserIds <String[]>]`: 
+      - `[CertificateUserIds <String[]>]`: The collection of unique identifiers that can be associated with a user and can be used to bind the Azure AD user to a certificate for authentication and authorization into non-Azure AD environments. The identifiers must be unique in the tenant.
     - `[Birthday <DateTime?>]`: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
     - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq, not, ge, le, startsWith).
     - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
@@ -11902,8 +11957,8 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Address <String>]`: The email address of an entity instance.
-          - `[Name <String>]`: The display name of an entity instance.
+          - `[Address <String>]`: The email address of the person or entity.
+          - `[Name <String>]`: The display name of the person or entity.
         - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
         - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
         - `[Role <String>]`: calendarRoleType
@@ -11919,7 +11974,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[ContentType <String>]`: The MIME type.
           - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
           - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+          - `[Name <String>]`: The attachment's file name.
           - `[Size <Int32?>]`: The length of the attachment in bytes.
         - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
           - `[Type <String>]`: attendeeType
@@ -11928,8 +11983,8 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-              - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+              - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+              - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
             - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -12083,7 +12138,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: 
                 - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-                - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+                - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
               - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Description <String>]`: Verbose description of the application.
@@ -12141,7 +12196,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
         - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
           - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-          - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+          - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
           - `[Id <String>]`: 
         - `[Importance <String>]`: 
         - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
@@ -12193,7 +12248,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
       - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]`: teamworkOnlineMeetingInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CalendarEventId <String>]`: The identifier of the calendar event associated with the meeting.
-        - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
+        - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -12220,7 +12275,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[Permission <String>]`: The name of the resource-specific permission. Read-only.
         - `[PermissionType <String>]`: The type of permission. Possible values are: Application, Delegated. Read-only.
         - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
-      - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>]`: A collection of all the pinned messages in the chat. Nullable.
+      - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo1[]>]`: A collection of all the pinned messages in the chat. Nullable.
         - `[Id <String>]`: 
         - `[Message <IMicrosoftGraphChatMessage>]`: chatMessage
       - `[Tabs <IMicrosoftGraphTeamsTab1[]>]`: A collection of all the tabs in the chat. Nullable.
@@ -12250,13 +12305,14 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
       - `[AadDeviceId <String>]`: The Azure Active Directory (Azure AD) device ID of the Cloud PC.
       - `[ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]`: cloudPcConnectivityResult
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]`: 
-          - `[AdditionalDetails <String>]`: 
-          - `[DisplayName <String>]`: 
-          - `[LastHealthCheckDateTime <DateTime?>]`: 
+        - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]`: A list of failed health check items. If the status property is available, this property will be empty.
+          - `[AdditionalDetails <String>]`: Additional message for this health check.
+          - `[DisplayName <String>]`: The connectivity health check item name.
+          - `[LastHealthCheckDateTime <DateTime?>]`: Timestamp when the last check occurs. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
           - `[Result <String>]`: cloudPcConnectivityEventResult
         - `[Status <String>]`: cloudPcConnectivityStatus
-        - `[UpdatedDateTime <DateTime?>]`: 
+        - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+      - `[DiskEncryptionState <String>]`: cloudPcDiskEncryptionState
       - `[DisplayName <String>]`: The display name of the Cloud PC.
       - `[GracePeriodEndDateTime <DateTime?>]`: The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is inGracePeriod. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[ImageDisplayName <String>]`: Name of the OS image that's on the Cloud PC.
@@ -12308,8 +12364,8 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[Department <String>]`: The contact's department.
         - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
         - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]`: The contact's email addresses.
-          - `[Address <String>]`: The email address of an entity instance.
-          - `[Name <String>]`: The display name of an entity instance.
+          - `[Address <String>]`: The email address of the person or entity.
+          - `[Name <String>]`: The display name of the person or entity.
           - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
           - `[Type <String>]`: emailType
         - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Nullable.
@@ -12411,6 +12467,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
     - `[Drives <IMicrosoftGraphDrive[]>]`: A collection of drives available for this user. Read-only.
     - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, not , ge, le, in).
     - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. The maximum length is 16 characters.Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
+    - `[EmployeeLeaveDateTime <DateTime?>]`: The date and time when the user left or will leave the organization. Read: Requires User-LifeCycleInfo.Read.All. For delegated scenarios, the admin needs one of the following Azure AD roles: Lifecycle Workflows Administrator, Global Reader, or Global Admin.  Write: Requires User-LifeCycleInfo.ReadWrite.All. For delegated scenarios, the admin needs the Global Administrator Azure AD role. Supports $filter (eq, ne, not , ge, le, in).
     - `[EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]`: employeeOrgData
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CostCenter <String>]`: The cost center associated with the user. Returned only on $select. Supports $filter.
@@ -12608,7 +12665,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Hashes <IMicrosoftGraphHashes>]`: hashes
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Crc32Hash <String>]`: The CRC32 value of the file (if available). Read-only.
+                  - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available). Read-only.
                   - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.
                   - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available). Read-only.
                   - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available). Read-only.
@@ -12635,8 +12692,8 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
               - `[Location <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-                - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
-                - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+                - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
+                - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
               - `[Malware <IMicrosoftGraphMalware>]`: malware
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Description <String>]`: Contains the virus details for the malware facet.
@@ -12700,7 +12757,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
                 - `[FocalLength <Double?>]`: The focal length from the camera. Read-only.
                 - `[Iso <Int32?>]`: The ISO value from the camera. Read-only.
                 - `[Orientation <Int32?>]`: The orientation value from the camera. Writable on OneDrive Personal.
-                - `[TakenDateTime <DateTime?>]`: The date and time the photo was taken in UTC time. Read-only.
+                - `[TakenDateTime <DateTime?>]`: Represents the date and time the photo was taken. Read-only.
               - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
               - `[RemoteItem <IMicrosoftGraphRemoteItem>]`: remoteItem
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -12788,7 +12845,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
                 - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
                 - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
                 - `[Id <String>]`: 
-                - `[Content <Byte[]>]`: 
+                - `[Content <Byte[]>]`: The content stream for this version of the item.
                 - `[Size <Int64?>]`: Indicates the size of the content stream for this version of the item.
               - `[Video <IMicrosoftGraphVideo>]`: video
               - `[WebDavUrl <String>]`: WebDAV compatible URL for the item.
@@ -12801,12 +12858,12 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
                   - `[CalculationMode <String>]`: Returns the calculation mode used in the workbook. Possible values are: Automatic, AutomaticExceptTables, Manual.
                 - `[Comments <IMicrosoftGraphWorkbookComment[]>]`: 
                   - `[Id <String>]`: 
-                  - `[Content <String>]`: The content of the comment.
+                  - `[Content <String>]`: The content of comment.
                   - `[ContentType <String>]`: Indicates the type for the comment.
                   - `[Replies <IMicrosoftGraphWorkbookCommentReply[]>]`: 
                     - `[Id <String>]`: 
-                    - `[Content <String>]`: The content of replied comment.
-                    - `[ContentType <String>]`: Indicates the type for the replied comment.
+                    - `[Content <String>]`: The content of a comment reply.
+                    - `[ContentType <String>]`: Indicates the type for the comment reply.
                 - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: 
@@ -12976,7 +13033,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
                             - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                              - `[Set <String>]`: Represents the set that the icon is part of. Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
+                              - `[Set <String>]`: Represents the set that the icon is part of. The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                             - `[Operator <String>]`: 
                             - `[Values <IMicrosoftGraphJson>]`: Json
                         - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
@@ -13001,12 +13058,12 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
                         - `[Fields <IMicrosoftGraphWorkbookSortField[]>]`: Represents the current conditions used to last sort the table. Read-only.
                           - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                           - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
-                          - `[DataOption <String>]`: Represents additional sorting options for this field. Possible values are: Normal, TextAsNumber.
+                          - `[DataOption <String>]`: Represents additional sorting options for this field. The possible values are: Normal, TextAsNumber.
                           - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                           - `[Key <Int32?>]`: Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).
-                          - `[SortOn <String>]`: Represents the type of sorting of this condition. Possible values are: Value, CellColor, FontColor, Icon.
+                          - `[SortOn <String>]`: Represents the type of sorting of this condition. The possible values are: Value, CellColor, FontColor, Icon.
                         - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
-                        - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
+                        - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount. Read-only.
                       - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
                       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                     - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
@@ -13161,7 +13218,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
             - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
             - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
-          - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
+          - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
       - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types defined for this site.
         - `[Id <String>]`: 
         - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
@@ -13178,7 +13235,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
           - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
             - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
-            - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+            - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
             - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
           - `[PropagateWelcomePageChanges <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
           - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
@@ -13231,8 +13288,8 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
         - `[Id <String>]`: 
         - `[Activities <IMicrosoftGraphItemActivityOld[]>]`: The recent activities that took place within this list.
-        - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of field definitions for this list.
-        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
+        - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: 
+        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: 
         - `[DisplayName <String>]`: The displayable title of the list.
         - `[Drive <IMicrosoftGraphDrive>]`: drive
         - `[Items <IMicrosoftGraphListItem1[]>]`: All items contained in the list.
@@ -13242,11 +13299,11 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[Hidden <Boolean?>]`: If true, indicates that the list is not normally visible in the SharePoint user experience.
           - `[Template <String>]`: An enumerated value that represents the base list template used in creating the list. Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
         - `[Operations <IMicrosoftGraphRichLongRunningOperation[]>]`: The collection of long running operations for the list.
-          - `[CreatedDateTime <DateTime?>]`: 
-          - `[LastActionDateTime <DateTime?>]`: 
-          - `[ResourceLocation <String>]`: 
+          - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+          - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+          - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
           - `[Status <String>]`: longRunningOperationStatus
-          - `[StatusDetail <String>]`: 
+          - `[StatusDetail <String>]`: Details about the status of the operation.
           - `[Id <String>]`: 
           - `[Error <IMicrosoftGraphPublicError>]`: publicError
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13264,8 +13321,8 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
             - `[Message <String>]`: A non-localized message for the developer.
             - `[Target <String>]`: The target of the error.
           - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
-          - `[ResourceId <String>]`: A unique identifier for the result.
-          - `[Type <String>]`: Type of the operation.
+          - `[ResourceId <String>]`: The unique identifier for the result.
+          - `[Type <String>]`: The type of the operation.
         - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
         - `[Subscriptions <IMicrosoftGraphSubscription1[]>]`: The set of subscriptions on the list.
         - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
@@ -13497,7 +13554,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[Status <String>]`: threatAssessmentStatus
     - `[Insights <IMicrosoftGraphItemInsights>]`: itemInsights
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Shared <IMicrosoftGraphSharedInsight[]>]`: Access this property from the derived type itemInsights.
+      - `[Shared <IMicrosoftGraphSharedInsight[]>]`: Calculated relationship identifying documents shared with or by the user. This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings. This also includes URLs and reference attachments to Teams conversations. Ordered by recency of share.
         - `[Id <String>]`: 
         - `[LastShared <IMicrosoftGraphSharingDetail>]`: sharingDetail
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13530,19 +13587,19 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[Title <String>]`: The item's title text.
           - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types.
         - `[SharingHistory <IMicrosoftGraphSharingDetail[]>]`: 
-      - `[Trending <IMicrosoftGraphTrending[]>]`: Access this property from the derived type itemInsights.
+      - `[Trending <IMicrosoftGraphTrending[]>]`: Calculated relationship identifying documents trending around a user. Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint. Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
         - `[Id <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Weight <Double?>]`: Value indicating how much the document is currently trending. The larger the number, the more the document is currently trending around the user (the more relevant it is). Returned documents are sorted by this value.
-      - `[Used <IMicrosoftGraphUsedInsight[]>]`: Access this property from the derived type itemInsights.
+      - `[Used <IMicrosoftGraphUsedInsight[]>]`: Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
         - `[Id <String>]`: 
         - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time.For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
@@ -13799,7 +13856,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
         - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings. Read-only.
         - `[Values <IMicrosoftGraphSettingValue[]>]`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
-          - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+          - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
           - `[Value <String>]`: Value of the setting.
       - `[Sites <IMicrosoftGraphSite[]>]`: The list of SharePoint sites in this group. Access the default site with /sites/root.
       - `[Team <IMicrosoftGraphTeam>]`: team
@@ -13860,7 +13917,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowAddRemoveApps <Boolean?>]`: If set to true, members can add and remove apps.
           - `[AllowCreatePrivateChannels <Boolean?>]`: If set to true, members can add and update private channels.
-          - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, members can add and update any channels.
+          - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, members can add and update channels.
           - `[AllowCreateUpdateRemoveConnectors <Boolean?>]`: If set to true, members can add, update, and remove connectors.
           - `[AllowCreateUpdateRemoveTabs <Boolean?>]`: If set to true, members can add, update, and remove tabs.
           - `[AllowDeleteChannels <Boolean?>]`: If set to true, members can delete channels.
@@ -14066,9 +14123,9 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[Specialization <String>]`: teamSpecialization
         - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[GuestsCount <Int32?>]`: Count of guests in a team.
-          - `[MembersCount <Int32?>]`: Count of members in a team.
-          - `[OwnersCount <Int32?>]`: Count of owners in a team.
+          - `[GuestsCount <Int32?>]`: 
+          - `[MembersCount <Int32?>]`: 
+          - `[OwnersCount <Int32?>]`: 
         - `[Tags <IMicrosoftGraphTeamworkTag[]>]`: The tags associated with the team.
           - `[Id <String>]`: 
           - `[Description <String>]`: Tag description as it will appear to the user in Microsoft Teams.
@@ -14084,6 +14141,21 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
         - `[Template <IMicrosoftGraphTeamsTemplate>]`: teamsTemplate
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
+        - `[TemplateDefinition <IMicrosoftGraphTeamTemplateDefinition>]`: teamTemplateDefinition
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: 
+          - `[Audience <String>]`: teamTemplateAudience
+          - `[Categories <String[]>]`: 
+          - `[Description <String>]`: 
+          - `[DisplayName <String>]`: 
+          - `[IconUrl <String>]`: 
+          - `[LanguageTag <String>]`: 
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedDateTime <DateTime?>]`: 
+          - `[ParentTemplateId <String>]`: 
+          - `[PublisherName <String>]`: 
+          - `[ShortDescription <String>]`: 
+          - `[TeamDefinition <IMicrosoftGraphTeam>]`: team
         - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
         - `[Visibility <String>]`: teamVisibilityType
         - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
@@ -14103,12 +14175,12 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
     - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
     - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult. Refer to the legal age group property definitions for further information. Returned only on $select.
     - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]`: State of license assignments for this user. Read-only. Returned only on $select.
-      - `[AssignedByGroup <String>]`: The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.
-      - `[DisabledPlans <String[]>]`: The service plans that are disabled in this assignment. Read-Only.
-      - `[Error <String>]`: License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. The possible values are CountViolation, MutuallyExclusiveViolation, DependencyViolation, ProhibitedInUsageLocationViolation, UniquenessViolation, and Other. For more information on how to identify and resolve license assignment errors see here.
-      - `[LastUpdatedDateTime <DateTime?>]`: The timestamp when the state of the license assignment was last updated.
-      - `[SkuId <String>]`: The unique identifier for the SKU. Read-Only.
-      - `[State <String>]`: Indicate the current state of this assignment. Read-Only. The possible values are Active, ActiveWithError, Disabled, and Error.
+      - `[AssignedByGroup <String>]`: 
+      - `[DisabledPlans <String[]>]`: 
+      - `[Error <String>]`: 
+      - `[LastUpdatedDateTime <DateTime?>]`: 
+      - `[SkuId <String>]`: 
+      - `[State <String>]`: 
     - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: A collection of this user's license details. Read-only.
     - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. This property cannot contain accent characters.  NOTE: We do not recommend updating this property for Azure AD B2C user profiles. Use the otherMails property instead.  Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
     - `[MailFolders <IMicrosoftGraphMailFolder[]>]`: The user's mail folders. Read-only. Nullable.
@@ -14130,7 +14202,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[MarkImportance <String>]`: importance
           - `[MoveToFolder <String>]`: The ID of the folder that a message will be moved to.
           - `[PermanentDelete <Boolean?>]`: Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-          - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email address to which a message should be redirected.
+          - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email addresses to which a message should be redirected.
           - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
         - `[Conditions <IMicrosoftGraphMessageRulePredicates>]`: messageRulePredicates
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14330,12 +14402,15 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
       - `[ConfigurationManagerClientInformation <IMicrosoftGraphConfigurationManagerClientInformation>]`: Configuration Manager client information synced from SCCM
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ClientIdentifier <String>]`: Configuration Manager Client Id from SCCM
+        - `[ClientVersion <String>]`: Configuration Manager Client version from SCCM
         - `[IsBlocked <Boolean?>]`: Configuration Manager Client blocked status from SCCM
       - `[DetectedApps <IMicrosoftGraphDetectedApp[]>]`: All applications currently installed on the device
         - `[Id <String>]`: 
         - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
         - `[DisplayName <String>]`: Name of the discovered application. Read-only
         - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The devices that have the discovered application installed
+        - `[Platform <DetectedAppPlatformType?>]`: Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0).
+        - `[Publisher <String>]`: Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.
         - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
         - `[Version <String>]`: Version of the discovered application. Read-only
       - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
@@ -14747,7 +14822,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
       - `[Capabilities <String[]>]`: 
       - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+        - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
         - `[ReplyChainMessageId <String>]`: The ID of the reply message.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
       - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
@@ -14926,7 +15001,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[NotificationTemplateType <String>]`: Indicates the type of access review email to be sent. Supported template type is CompletedAdditionalRecipients which sends review completion notifications to the recipients.
         - `[BackupReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: 
-          - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
+          - `[Query <String>]`: The query specifying who will be the reviewer.
           - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
           - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
         - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -15019,7 +15094,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
       - `[FavoritePlanReferences <IMicrosoftGraphPlannerFavoritePlanReferenceCollection>]`: plannerFavoritePlanReferenceCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[FavoritePlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans that the user marked as favorites.
-      - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
+      - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: 
       - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[RecentPlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
@@ -15112,9 +15187,9 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[PrintQuality <String>]`: printQuality
           - `[Quality <String>]`: printQuality
           - `[Scaling <String>]`: printScaling
-        - `[DisplayName <String>]`: The name of the printer/printerShare.
-        - `[IsAcceptingJobs <Boolean?>]`: Whether the printer/printerShare is currently accepting new print jobs.
-        - `[Jobs <IMicrosoftGraphPrintJob[]>]`: The list of jobs that are queued for printing by the printer/printerShare.
+        - `[DisplayName <String>]`: 
+        - `[IsAcceptingJobs <Boolean?>]`: 
+        - `[Jobs <IMicrosoftGraphPrintJob[]>]`: 
           - `[Id <String>]`: 
           - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15227,8 +15302,8 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[StreetAddress <String>]`: The street address where the printer is located.
           - `[Subdivision <String[]>]`: The subdivision that the printer is located in. The elements should be in hierarchical order.
           - `[Subunit <String[]>]`: 
-        - `[Manufacturer <String>]`: The manufacturer of the printer/printerShare.
-        - `[Model <String>]`: The model name of the printer/printerShare.
+        - `[Manufacturer <String>]`: 
+        - `[Model <String>]`: 
         - `[Name <String>]`: 
         - `[Status <IMicrosoftGraphPrinterStatus>]`: printerStatus
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15247,12 +15322,12 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
           - `[Defaults <IMicrosoftGraphPrinterDefaults>]`: printerDefaults
-          - `[DisplayName <String>]`: The name of the printer/printerShare.
-          - `[IsAcceptingJobs <Boolean?>]`: Whether the printer/printerShare is currently accepting new print jobs.
-          - `[Jobs <IMicrosoftGraphPrintJob[]>]`: The list of jobs that are queued for printing by the printer/printerShare.
+          - `[DisplayName <String>]`: 
+          - `[IsAcceptingJobs <Boolean?>]`: 
+          - `[Jobs <IMicrosoftGraphPrintJob[]>]`: 
           - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
-          - `[Manufacturer <String>]`: The manufacturer of the printer/printerShare.
-          - `[Model <String>]`: The model name of the printer/printerShare.
+          - `[Manufacturer <String>]`: 
+          - `[Model <String>]`: 
           - `[Name <String>]`: 
           - `[Status <IMicrosoftGraphPrinterStatus>]`: printerStatus
           - `[Id <String>]`: 
@@ -15794,24 +15869,24 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
           - `[Id <String>]`: 
           - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
             - `[Id <String>]`: 
-            - `[Content <Byte[]>]`: The content streams that are uploaded.
-            - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-            - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
-          - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+            - `[Content <Byte[]>]`: 
+            - `[ExpirationDateTime <DateTime?>]`: 
+            - `[NextExpectedRanges <String[]>]`: 
+          - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: 
             - `[Id <String>]`: 
-            - `[ContentType <String>]`: The MIME type.
-            - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-            - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
-            - `[Size <Int32?>]`: The length of the attachment in bytes.
+            - `[ContentType <String>]`: 
+            - `[LastModifiedDateTime <DateTime?>]`: 
+            - `[Name <String>]`: 
+            - `[Size <Int32?>]`: 
           - `[Body <IMicrosoftGraphItemBody>]`: itemBody
           - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
           - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
-          - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of smaller subtasks linked to the more complex parent task.
+          - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of checklistItems linked to a task.
           - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
           - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-          - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
+          - `[HasAttachments <Boolean?>]`: 
           - `[Importance <String>]`: importance
           - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
           - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -15865,7 +15940,7 @@ DRIVES <IMicrosoftGraphDrive\[]>: The group's drives. Read-only.
     - `[State <String>]`: Enumeration value that indicates the state of the storage space. Read-only.
     - `[StoragePlanInformation <IMicrosoftGraphStoragePlanInformation>]`: storagePlanInformation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[UpgradeAvailable <Boolean?>]`: Indicates if there are higher storage quota plans available. Read-only.
+      - `[UpgradeAvailable <Boolean?>]`: Indicates whether there are higher storage quota plans available. Read-only.
     - `[Total <Int64?>]`: Total allowed storage space, in bytes. Read-only.
     - `[Used <Int64?>]`: Total space used, in bytes. Read-only.
   - `[Root <IMicrosoftGraphDriveItem>]`: driveItem
@@ -15894,20 +15969,20 @@ EVENTS <IMicrosoftGraphEvent\[]>: The group's events.
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+    - `[Name <String>]`: The attachment's file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
   - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
     - `[Type <String>]`: attendeeType
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
+      - `[Address <String>]`: The email address of the person or entity.
+      - `[Name <String>]`: The display name of the person or entity.
     - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16376,7 +16451,7 @@ SETTINGS <IMicrosoftGraphDirectorySetting\[]>: Settings that can govern this gro
   - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
   - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings. Read-only.
   - `[Values <IMicrosoftGraphSettingValue[]>]`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
-    - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+    - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
     - `[Value <String>]`: Value of the setting.
 
 SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Access the default site with /sites/root.
@@ -16394,7 +16469,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
     - `[Id <String>]`: 
     - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
     - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-    - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
+    - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
       - `[Id <String>]`: 
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
@@ -16406,9 +16481,9 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
       - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
       - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
       - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
-      - `[HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
+      - `[HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>]`: 
         - `[Id <String>]`: 
-        - `[ActiveDurationSeconds <Int32?>]`: Optional. The duration of active user engagement. if not supplied, this is calculated from the startedDateTime and lastActiveDateTime.
+        - `[ActiveDurationSeconds <Int32?>]`: 
         - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
         - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
         - `[ExpirationDateTime <DateTime?>]`: Optional. UTC DateTime when the historyItem will undergo hard-delete. Can be set by the client.
@@ -16435,18 +16510,18 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
     - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, Minor, NotAdult and Adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
     - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: The user's terms of use acceptance statuses. Read-only. Nullable.
       - `[Id <String>]`: 
-      - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
-      - `[AgreementId <String>]`: ID of the agreement.
+      - `[AgreementFileId <String>]`: The identifier of the agreement file accepted by the user.
+      - `[AgreementId <String>]`: The identifier of the agreement.
       - `[DeviceDisplayName <String>]`: The display name of the device used for accepting the agreement.
       - `[DeviceId <String>]`: The unique identifier of the device used for accepting the agreement.
-      - `[DeviceOSType <String>]`: The operating system used for accepting the agreement.
-      - `[DeviceOSVersion <String>]`: The operating system version of the device used for accepting the agreement.
-      - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[DeviceOSType <String>]`: The operating system used to accept the agreement.
+      - `[DeviceOSVersion <String>]`: The operating system version of the device used to accept the agreement.
+      - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[State <String>]`: agreementAcceptanceState
       - `[UserDisplayName <String>]`: Display name of the user when the acceptance was recorded.
       - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
-      - `[UserId <String>]`: ID of the user who accepted the agreement.
+      - `[UserId <String>]`: The identifier of the user who accepted the agreement.
       - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
     - `[Analytics <IMicrosoftGraphUserAnalytics>]`: userAnalytics
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16470,7 +16545,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
       - `[ConsentType <String>]`: The consent type of the request. Possible values are: Static and Dynamic. These represent static and dynamic permissions, respectively, requested in the consent workflow. Supports $filter (eq only) and $orderby. Required.
       - `[PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]`: A list of pending scopes waiting for approval. This is empty if the consentType is Static. Required.
         - `[DisplayName <String>]`: The name of the scope.
-      - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests.
+      - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests. Supports $filter (eq).
         - `[ApprovalId <String>]`: The identifier of the approval of the request.
         - `[CompletedDateTime <DateTime?>]`: The request completion date time.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -16498,8 +16573,8 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
       - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
         - `[Id <String>]`: 
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+          - `[Key <String>]`: Key for the key-value pair.
+          - `[Value <String>]`: Value for the key-value pair.
         - `[Type <String>]`: 
       - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
       - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -16573,7 +16648,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
         - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
       - `[ErrorUrl <String>]`: Deprecated. Don't use.
-      - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: Federated identities for a specific type of service principal - managed identity. Supports $expand and $filter (eq when counting empty collections).
+      - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: 
         - `[Id <String>]`: 
         - `[Audiences <String[]>]`: The audience that can appear in the external token. This field is mandatory and should be set to api://AzureADTokenExchange for Azure AD. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. This field can only accept a single value and has a limit of 600 characters. Required.
         - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential. It has a limit of 600 characters. Optional.
@@ -16675,7 +16750,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-            - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
+            - `[Interval <TimeSpan?>]`: The interval between synchronization iterations. The value is represented in ISO 8601 format for durations. For example, PT1M represents a period of 1 month.
             - `[State <String>]`: synchronizationScheduleState
           - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16834,14 +16909,19 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
         - `[Id <String>]`: 
       - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
+      - `[VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>]`: verifiedPublisher
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AddedDateTime <DateTime?>]`: The timestamp when the verified publisher was first added or most recently updated.
+        - `[DisplayName <String>]`: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
+        - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
     - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
     - `[Approvals <IMicrosoftGraphApproval[]>]`: 
     - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq, not, and counting empty collections).
       - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
       - `[SkuId <String>]`: The unique identifier for the SKU.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and not).
-      - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+      - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut. See a detailed description of each value.
       - `[Service <String>]`: The name of the service; for example, exchange.
       - `[ServicePlanId <String>]`: A GUID that identifies the service plan. For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
     - `[Authentication <IMicrosoftGraphAuthentication1>]`: authentication
@@ -16951,17 +17031,17 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-      - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: 
+      - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: Represents the status of a long-running operation.
         - `[Id <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[LastActionDateTime <DateTime?>]`: 
-        - `[ResourceLocation <String>]`: 
+        - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+        - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+        - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
         - `[Status <String>]`: longRunningOperationStatus
-        - `[StatusDetail <String>]`: 
+        - `[StatusDetail <String>]`: Details about the status of the operation.
       - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod1[]>]`: Represents the details of the password authentication method registered to a user for authentication.
         - `[Id <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[CreationDateTime <DateTime?>]`: The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[CreationDateTime <DateTime?>]`: 
         - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
       - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod[]>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
         - `[Id <String>]`: 
@@ -16971,10 +17051,10 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
       - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
         - `[Id <String>]`: 
-        - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+        - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format +{country code} {number}x{extension}, with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating or updating if they do not match the required format.
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
-      - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
+      - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: The software OATH TOTP applications registered to a user for authentication.
         - `[Id <String>]`: 
         - `[SecretKey <String>]`: The secret key of the method. Always returns null.
       - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
@@ -16994,7 +17074,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
     - `[AuthorizationInfo <IMicrosoftGraphAuthorizationInfo>]`: authorizationInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CertificateUserIds <String[]>]`: 
+      - `[CertificateUserIds <String[]>]`: The collection of unique identifiers that can be associated with a user and can be used to bind the Azure AD user to a certificate for authentication and authorization into non-Azure AD environments. The identifiers must be unique in the tenant.
     - `[Birthday <DateTime?>]`: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
     - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq, not, ge, le, startsWith).
     - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
@@ -17007,8 +17087,8 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Address <String>]`: The email address of an entity instance.
-          - `[Name <String>]`: The display name of an entity instance.
+          - `[Address <String>]`: The email address of the person or entity.
+          - `[Name <String>]`: The display name of the person or entity.
         - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
         - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
         - `[Role <String>]`: calendarRoleType
@@ -17024,7 +17104,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[ContentType <String>]`: The MIME type.
           - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
           - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+          - `[Name <String>]`: The attachment's file name.
           - `[Size <Int32?>]`: The length of the attachment in bytes.
         - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
           - `[Type <String>]`: attendeeType
@@ -17033,8 +17113,8 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-              - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+              - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+              - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
             - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -17188,7 +17268,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: 
                 - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-                - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+                - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
               - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Description <String>]`: Verbose description of the application.
@@ -17246,7 +17326,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
         - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
           - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-          - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+          - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
           - `[Id <String>]`: 
         - `[Importance <String>]`: 
         - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
@@ -17298,7 +17378,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
       - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]`: teamworkOnlineMeetingInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CalendarEventId <String>]`: The identifier of the calendar event associated with the meeting.
-        - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
+        - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -17325,7 +17405,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[Permission <String>]`: The name of the resource-specific permission. Read-only.
         - `[PermissionType <String>]`: The type of permission. Possible values are: Application, Delegated. Read-only.
         - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
-      - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>]`: A collection of all the pinned messages in the chat. Nullable.
+      - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo1[]>]`: A collection of all the pinned messages in the chat. Nullable.
         - `[Id <String>]`: 
         - `[Message <IMicrosoftGraphChatMessage>]`: chatMessage
       - `[Tabs <IMicrosoftGraphTeamsTab1[]>]`: A collection of all the tabs in the chat. Nullable.
@@ -17355,13 +17435,14 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
       - `[AadDeviceId <String>]`: The Azure Active Directory (Azure AD) device ID of the Cloud PC.
       - `[ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]`: cloudPcConnectivityResult
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]`: 
-          - `[AdditionalDetails <String>]`: 
-          - `[DisplayName <String>]`: 
-          - `[LastHealthCheckDateTime <DateTime?>]`: 
+        - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]`: A list of failed health check items. If the status property is available, this property will be empty.
+          - `[AdditionalDetails <String>]`: Additional message for this health check.
+          - `[DisplayName <String>]`: The connectivity health check item name.
+          - `[LastHealthCheckDateTime <DateTime?>]`: Timestamp when the last check occurs. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
           - `[Result <String>]`: cloudPcConnectivityEventResult
         - `[Status <String>]`: cloudPcConnectivityStatus
-        - `[UpdatedDateTime <DateTime?>]`: 
+        - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+      - `[DiskEncryptionState <String>]`: cloudPcDiskEncryptionState
       - `[DisplayName <String>]`: The display name of the Cloud PC.
       - `[GracePeriodEndDateTime <DateTime?>]`: The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is inGracePeriod. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[ImageDisplayName <String>]`: Name of the OS image that's on the Cloud PC.
@@ -17413,8 +17494,8 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[Department <String>]`: The contact's department.
         - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
         - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]`: The contact's email addresses.
-          - `[Address <String>]`: The email address of an entity instance.
-          - `[Name <String>]`: The display name of an entity instance.
+          - `[Address <String>]`: The email address of the person or entity.
+          - `[Name <String>]`: The display name of the person or entity.
           - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
           - `[Type <String>]`: emailType
         - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Nullable.
@@ -17659,7 +17740,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Hashes <IMicrosoftGraphHashes>]`: hashes
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Crc32Hash <String>]`: The CRC32 value of the file (if available). Read-only.
+              - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available). Read-only.
               - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.
               - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available). Read-only.
               - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available). Read-only.
@@ -17734,8 +17815,8 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[Location <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-            - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
-            - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+            - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
+            - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
           - `[Malware <IMicrosoftGraphMalware>]`: malware
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Description <String>]`: Contains the virus details for the malware facet.
@@ -17799,7 +17880,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
             - `[FocalLength <Double?>]`: The focal length from the camera. Read-only.
             - `[Iso <Int32?>]`: The ISO value from the camera. Read-only.
             - `[Orientation <Int32?>]`: The orientation value from the camera. Writable on OneDrive Personal.
-            - `[TakenDateTime <DateTime?>]`: The date and time the photo was taken in UTC time. Read-only.
+            - `[TakenDateTime <DateTime?>]`: Represents the date and time the photo was taken. Read-only.
           - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
           - `[RemoteItem <IMicrosoftGraphRemoteItem>]`: remoteItem
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -17887,7 +17968,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
             - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
             - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
             - `[Id <String>]`: 
-            - `[Content <Byte[]>]`: 
+            - `[Content <Byte[]>]`: The content stream for this version of the item.
             - `[Size <Int64?>]`: Indicates the size of the content stream for this version of the item.
           - `[Video <IMicrosoftGraphVideo>]`: video
           - `[WebDavUrl <String>]`: WebDAV compatible URL for the item.
@@ -17900,12 +17981,12 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
               - `[CalculationMode <String>]`: Returns the calculation mode used in the workbook. Possible values are: Automatic, AutomaticExceptTables, Manual.
             - `[Comments <IMicrosoftGraphWorkbookComment[]>]`: 
               - `[Id <String>]`: 
-              - `[Content <String>]`: The content of the comment.
+              - `[Content <String>]`: The content of comment.
               - `[ContentType <String>]`: Indicates the type for the comment.
               - `[Replies <IMicrosoftGraphWorkbookCommentReply[]>]`: 
                 - `[Id <String>]`: 
-                - `[Content <String>]`: The content of replied comment.
-                - `[ContentType <String>]`: Indicates the type for the replied comment.
+                - `[Content <String>]`: The content of a comment reply.
+                - `[ContentType <String>]`: Indicates the type for the comment reply.
             - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: 
@@ -18075,7 +18156,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
                         - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
                           - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                          - `[Set <String>]`: Represents the set that the icon is part of. Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
+                          - `[Set <String>]`: Represents the set that the icon is part of. The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                         - `[Operator <String>]`: 
                         - `[Values <IMicrosoftGraphJson>]`: Json
                     - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
@@ -18100,12 +18181,12 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
                     - `[Fields <IMicrosoftGraphWorkbookSortField[]>]`: Represents the current conditions used to last sort the table. Read-only.
                       - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                       - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
-                      - `[DataOption <String>]`: Represents additional sorting options for this field. Possible values are: Normal, TextAsNumber.
+                      - `[DataOption <String>]`: Represents additional sorting options for this field. The possible values are: Normal, TextAsNumber.
                       - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                       - `[Key <Int32?>]`: Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).
-                      - `[SortOn <String>]`: Represents the type of sorting of this condition. Possible values are: Value, CellColor, FontColor, Icon.
+                      - `[SortOn <String>]`: Represents the type of sorting of this condition. The possible values are: Value, CellColor, FontColor, Icon.
                     - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
-                    - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
+                    - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount. Read-only.
                   - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
                   - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                 - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
@@ -18145,7 +18226,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
         - `[Id <String>]`: 
         - `[Activities <IMicrosoftGraphItemActivityOld[]>]`: The recent activities that took place within this list.
-        - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of field definitions for this list.
+        - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: 
           - `[Id <String>]`: 
           - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -18272,8 +18353,8 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
             - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
               - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
               - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
-            - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
-        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
+            - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
+        - `[ContentTypes <IMicrosoftGraphContentType[]>]`: 
           - `[Id <String>]`: 
           - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
           - `[Base <IMicrosoftGraphContentType>]`: contentType
@@ -18289,7 +18370,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
             - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
             - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
               - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
-              - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+              - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
               - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
             - `[PropagateWelcomePageChanges <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
             - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
@@ -18319,11 +18400,11 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[Hidden <Boolean?>]`: If true, indicates that the list is not normally visible in the SharePoint user experience.
           - `[Template <String>]`: An enumerated value that represents the base list template used in creating the list. Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
         - `[Operations <IMicrosoftGraphRichLongRunningOperation[]>]`: The collection of long running operations for the list.
-          - `[CreatedDateTime <DateTime?>]`: 
-          - `[LastActionDateTime <DateTime?>]`: 
-          - `[ResourceLocation <String>]`: 
+          - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+          - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+          - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
           - `[Status <String>]`: longRunningOperationStatus
-          - `[StatusDetail <String>]`: 
+          - `[StatusDetail <String>]`: Details about the status of the operation.
           - `[Id <String>]`: 
           - `[Error <IMicrosoftGraphPublicError>]`: publicError
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -18341,8 +18422,8 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
             - `[Message <String>]`: A non-localized message for the developer.
             - `[Target <String>]`: The target of the error.
           - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
-          - `[ResourceId <String>]`: A unique identifier for the result.
-          - `[Type <String>]`: Type of the operation.
+          - `[ResourceId <String>]`: The unique identifier for the result.
+          - `[Type <String>]`: The type of the operation.
         - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
         - `[Subscriptions <IMicrosoftGraphSubscription1[]>]`: The set of subscriptions on the list.
         - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
@@ -18355,7 +18436,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[State <String>]`: Enumeration value that indicates the state of the storage space. Read-only.
         - `[StoragePlanInformation <IMicrosoftGraphStoragePlanInformation>]`: storagePlanInformation
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[UpgradeAvailable <Boolean?>]`: Indicates if there are higher storage quota plans available. Read-only.
+          - `[UpgradeAvailable <Boolean?>]`: Indicates whether there are higher storage quota plans available. Read-only.
         - `[Total <Int64?>]`: Total allowed storage space, in bytes. Read-only.
         - `[Used <Int64?>]`: Total space used, in bytes. Read-only.
       - `[Root <IMicrosoftGraphDriveItem>]`: driveItem
@@ -18365,6 +18446,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
     - `[Drives <IMicrosoftGraphDrive[]>]`: A collection of drives available for this user. Read-only.
     - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, not , ge, le, in).
     - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. The maximum length is 16 characters.Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
+    - `[EmployeeLeaveDateTime <DateTime?>]`: The date and time when the user left or will leave the organization. Read: Requires User-LifeCycleInfo.Read.All. For delegated scenarios, the admin needs one of the following Azure AD roles: Lifecycle Workflows Administrator, Global Reader, or Global Admin.  Write: Requires User-LifeCycleInfo.ReadWrite.All. For delegated scenarios, the admin needs the Global Administrator Azure AD role. Supports $filter (eq, ne, not , ge, le, in).
     - `[EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]`: employeeOrgData
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CostCenter <String>]`: The cost center associated with the user. Returned only on $select. Supports $filter.
@@ -18471,7 +18553,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[Status <String>]`: threatAssessmentStatus
     - `[Insights <IMicrosoftGraphItemInsights>]`: itemInsights
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Shared <IMicrosoftGraphSharedInsight[]>]`: Access this property from the derived type itemInsights.
+      - `[Shared <IMicrosoftGraphSharedInsight[]>]`: Calculated relationship identifying documents shared with or by the user. This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings. This also includes URLs and reference attachments to Teams conversations. Ordered by recency of share.
         - `[Id <String>]`: 
         - `[LastShared <IMicrosoftGraphSharingDetail>]`: sharingDetail
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -18504,19 +18586,19 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[Title <String>]`: The item's title text.
           - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types.
         - `[SharingHistory <IMicrosoftGraphSharingDetail[]>]`: 
-      - `[Trending <IMicrosoftGraphTrending[]>]`: Access this property from the derived type itemInsights.
+      - `[Trending <IMicrosoftGraphTrending[]>]`: Calculated relationship identifying documents trending around a user. Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint. Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
         - `[Id <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Weight <Double?>]`: Value indicating how much the document is currently trending. The larger the number, the more the document is currently trending around the user (the more relevant it is). Returned documents are sorted by this value.
-      - `[Used <IMicrosoftGraphUsedInsight[]>]`: Access this property from the derived type itemInsights.
+      - `[Used <IMicrosoftGraphUsedInsight[]>]`: Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
         - `[Id <String>]`: 
         - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time.For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
@@ -18862,7 +18944,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
         - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings. Read-only.
         - `[Values <IMicrosoftGraphSettingValue[]>]`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
-          - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+          - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
           - `[Value <String>]`: Value of the setting.
       - `[Sites <IMicrosoftGraphSite[]>]`: The list of SharePoint sites in this group. Access the default site with /sites/root.
       - `[Team <IMicrosoftGraphTeam>]`: team
@@ -18923,7 +19005,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowAddRemoveApps <Boolean?>]`: If set to true, members can add and remove apps.
           - `[AllowCreatePrivateChannels <Boolean?>]`: If set to true, members can add and update private channels.
-          - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, members can add and update any channels.
+          - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, members can add and update channels.
           - `[AllowCreateUpdateRemoveConnectors <Boolean?>]`: If set to true, members can add, update, and remove connectors.
           - `[AllowCreateUpdateRemoveTabs <Boolean?>]`: If set to true, members can add, update, and remove tabs.
           - `[AllowDeleteChannels <Boolean?>]`: If set to true, members can delete channels.
@@ -19129,9 +19211,9 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[Specialization <String>]`: teamSpecialization
         - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[GuestsCount <Int32?>]`: Count of guests in a team.
-          - `[MembersCount <Int32?>]`: Count of members in a team.
-          - `[OwnersCount <Int32?>]`: Count of owners in a team.
+          - `[GuestsCount <Int32?>]`: 
+          - `[MembersCount <Int32?>]`: 
+          - `[OwnersCount <Int32?>]`: 
         - `[Tags <IMicrosoftGraphTeamworkTag[]>]`: The tags associated with the team.
           - `[Id <String>]`: 
           - `[Description <String>]`: Tag description as it will appear to the user in Microsoft Teams.
@@ -19147,6 +19229,21 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
         - `[Template <IMicrosoftGraphTeamsTemplate>]`: teamsTemplate
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
+        - `[TemplateDefinition <IMicrosoftGraphTeamTemplateDefinition>]`: teamTemplateDefinition
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: 
+          - `[Audience <String>]`: teamTemplateAudience
+          - `[Categories <String[]>]`: 
+          - `[Description <String>]`: 
+          - `[DisplayName <String>]`: 
+          - `[IconUrl <String>]`: 
+          - `[LanguageTag <String>]`: 
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedDateTime <DateTime?>]`: 
+          - `[ParentTemplateId <String>]`: 
+          - `[PublisherName <String>]`: 
+          - `[ShortDescription <String>]`: 
+          - `[TeamDefinition <IMicrosoftGraphTeam>]`: team
         - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
         - `[Visibility <String>]`: teamVisibilityType
         - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
@@ -19166,12 +19263,12 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
     - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
     - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult. Refer to the legal age group property definitions for further information. Returned only on $select.
     - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]`: State of license assignments for this user. Read-only. Returned only on $select.
-      - `[AssignedByGroup <String>]`: The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.
-      - `[DisabledPlans <String[]>]`: The service plans that are disabled in this assignment. Read-Only.
-      - `[Error <String>]`: License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. The possible values are CountViolation, MutuallyExclusiveViolation, DependencyViolation, ProhibitedInUsageLocationViolation, UniquenessViolation, and Other. For more information on how to identify and resolve license assignment errors see here.
-      - `[LastUpdatedDateTime <DateTime?>]`: The timestamp when the state of the license assignment was last updated.
-      - `[SkuId <String>]`: The unique identifier for the SKU. Read-Only.
-      - `[State <String>]`: Indicate the current state of this assignment. Read-Only. The possible values are Active, ActiveWithError, Disabled, and Error.
+      - `[AssignedByGroup <String>]`: 
+      - `[DisabledPlans <String[]>]`: 
+      - `[Error <String>]`: 
+      - `[LastUpdatedDateTime <DateTime?>]`: 
+      - `[SkuId <String>]`: 
+      - `[State <String>]`: 
     - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: A collection of this user's license details. Read-only.
     - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. This property cannot contain accent characters.  NOTE: We do not recommend updating this property for Azure AD B2C user profiles. Use the otherMails property instead.  Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
     - `[MailFolders <IMicrosoftGraphMailFolder[]>]`: The user's mail folders. Read-only. Nullable.
@@ -19193,7 +19290,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[MarkImportance <String>]`: importance
           - `[MoveToFolder <String>]`: The ID of the folder that a message will be moved to.
           - `[PermanentDelete <Boolean?>]`: Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-          - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email address to which a message should be redirected.
+          - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email addresses to which a message should be redirected.
           - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
         - `[Conditions <IMicrosoftGraphMessageRulePredicates>]`: messageRulePredicates
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19393,12 +19490,15 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
       - `[ConfigurationManagerClientInformation <IMicrosoftGraphConfigurationManagerClientInformation>]`: Configuration Manager client information synced from SCCM
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ClientIdentifier <String>]`: Configuration Manager Client Id from SCCM
+        - `[ClientVersion <String>]`: Configuration Manager Client version from SCCM
         - `[IsBlocked <Boolean?>]`: Configuration Manager Client blocked status from SCCM
       - `[DetectedApps <IMicrosoftGraphDetectedApp[]>]`: All applications currently installed on the device
         - `[Id <String>]`: 
         - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
         - `[DisplayName <String>]`: Name of the discovered application. Read-only
         - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The devices that have the discovered application installed
+        - `[Platform <DetectedAppPlatformType?>]`: Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0).
+        - `[Publisher <String>]`: Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.
         - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
         - `[Version <String>]`: Version of the discovered application. Read-only
       - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
@@ -19810,7 +19910,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
       - `[Capabilities <String[]>]`: 
       - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+        - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
         - `[ReplyChainMessageId <String>]`: The ID of the reply message.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
       - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
@@ -19989,7 +20089,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[NotificationTemplateType <String>]`: Indicates the type of access review email to be sent. Supported template type is CompletedAdditionalRecipients which sends review completion notifications to the recipients.
         - `[BackupReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: 
-          - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
+          - `[Query <String>]`: The query specifying who will be the reviewer.
           - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
           - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
         - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -20082,7 +20182,7 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
       - `[FavoritePlanReferences <IMicrosoftGraphPlannerFavoritePlanReferenceCollection>]`: plannerFavoritePlanReferenceCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[FavoritePlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans that the user marked as favorites.
-      - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
+      - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: 
       - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[RecentPlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
@@ -20175,9 +20275,9 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[PrintQuality <String>]`: printQuality
           - `[Quality <String>]`: printQuality
           - `[Scaling <String>]`: printScaling
-        - `[DisplayName <String>]`: The name of the printer/printerShare.
-        - `[IsAcceptingJobs <Boolean?>]`: Whether the printer/printerShare is currently accepting new print jobs.
-        - `[Jobs <IMicrosoftGraphPrintJob[]>]`: The list of jobs that are queued for printing by the printer/printerShare.
+        - `[DisplayName <String>]`: 
+        - `[IsAcceptingJobs <Boolean?>]`: 
+        - `[Jobs <IMicrosoftGraphPrintJob[]>]`: 
           - `[Id <String>]`: 
           - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -20290,8 +20390,8 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[StreetAddress <String>]`: The street address where the printer is located.
           - `[Subdivision <String[]>]`: The subdivision that the printer is located in. The elements should be in hierarchical order.
           - `[Subunit <String[]>]`: 
-        - `[Manufacturer <String>]`: The manufacturer of the printer/printerShare.
-        - `[Model <String>]`: The model name of the printer/printerShare.
+        - `[Manufacturer <String>]`: 
+        - `[Model <String>]`: 
         - `[Name <String>]`: 
         - `[Status <IMicrosoftGraphPrinterStatus>]`: printerStatus
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -20310,12 +20410,12 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
           - `[Defaults <IMicrosoftGraphPrinterDefaults>]`: printerDefaults
-          - `[DisplayName <String>]`: The name of the printer/printerShare.
-          - `[IsAcceptingJobs <Boolean?>]`: Whether the printer/printerShare is currently accepting new print jobs.
-          - `[Jobs <IMicrosoftGraphPrintJob[]>]`: The list of jobs that are queued for printing by the printer/printerShare.
+          - `[DisplayName <String>]`: 
+          - `[IsAcceptingJobs <Boolean?>]`: 
+          - `[Jobs <IMicrosoftGraphPrintJob[]>]`: 
           - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
-          - `[Manufacturer <String>]`: The manufacturer of the printer/printerShare.
-          - `[Model <String>]`: The model name of the printer/printerShare.
+          - `[Manufacturer <String>]`: 
+          - `[Model <String>]`: 
           - `[Name <String>]`: 
           - `[Status <IMicrosoftGraphPrinterStatus>]`: printerStatus
           - `[Id <String>]`: 
@@ -20857,24 +20957,24 @@ SITES <IMicrosoftGraphSite\[]>: The list of SharePoint sites in this group. Acce
           - `[Id <String>]`: 
           - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
             - `[Id <String>]`: 
-            - `[Content <Byte[]>]`: The content streams that are uploaded.
-            - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-            - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
-          - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+            - `[Content <Byte[]>]`: 
+            - `[ExpirationDateTime <DateTime?>]`: 
+            - `[NextExpectedRanges <String[]>]`: 
+          - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: 
             - `[Id <String>]`: 
-            - `[ContentType <String>]`: The MIME type.
-            - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-            - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
-            - `[Size <Int32?>]`: The length of the attachment in bytes.
+            - `[ContentType <String>]`: 
+            - `[LastModifiedDateTime <DateTime?>]`: 
+            - `[Name <String>]`: 
+            - `[Size <Int32?>]`: 
           - `[Body <IMicrosoftGraphItemBody>]`: itemBody
           - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
           - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
-          - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of smaller subtasks linked to the more complex parent task.
+          - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of checklistItems linked to a task.
           - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
           - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-          - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
+          - `[HasAttachments <Boolean?>]`: 
           - `[Importance <String>]`: importance
           - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
           - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -21005,7 +21105,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
         - `[Id <String>]`: 
         - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
         - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-        - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
+        - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
           - `[Id <String>]`: 
           - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
           - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
@@ -21017,9 +21117,9 @@ TEAM `<IMicrosoftGraphTeam>`: team
           - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
           - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
           - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
-          - `[HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
+          - `[HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>]`: 
             - `[Id <String>]`: 
-            - `[ActiveDurationSeconds <Int32?>]`: Optional. The duration of active user engagement. if not supplied, this is calculated from the startedDateTime and lastActiveDateTime.
+            - `[ActiveDurationSeconds <Int32?>]`: 
             - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
             - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
             - `[ExpirationDateTime <DateTime?>]`: Optional. UTC DateTime when the historyItem will undergo hard-delete. Can be set by the client.
@@ -21046,18 +21146,18 @@ TEAM `<IMicrosoftGraphTeam>`: team
         - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, Minor, NotAdult and Adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
         - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: The user's terms of use acceptance statuses. Read-only. Nullable.
           - `[Id <String>]`: 
-          - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
-          - `[AgreementId <String>]`: ID of the agreement.
+          - `[AgreementFileId <String>]`: The identifier of the agreement file accepted by the user.
+          - `[AgreementId <String>]`: The identifier of the agreement.
           - `[DeviceDisplayName <String>]`: The display name of the device used for accepting the agreement.
           - `[DeviceId <String>]`: The unique identifier of the device used for accepting the agreement.
-          - `[DeviceOSType <String>]`: The operating system used for accepting the agreement.
-          - `[DeviceOSVersion <String>]`: The operating system version of the device used for accepting the agreement.
-          - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          - `[DeviceOSType <String>]`: The operating system used to accept the agreement.
+          - `[DeviceOSVersion <String>]`: The operating system version of the device used to accept the agreement.
+          - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[State <String>]`: agreementAcceptanceState
           - `[UserDisplayName <String>]`: Display name of the user when the acceptance was recorded.
           - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
-          - `[UserId <String>]`: ID of the user who accepted the agreement.
+          - `[UserId <String>]`: The identifier of the user who accepted the agreement.
           - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
         - `[Analytics <IMicrosoftGraphUserAnalytics>]`: userAnalytics
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -21081,7 +21181,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
           - `[ConsentType <String>]`: The consent type of the request. Possible values are: Static and Dynamic. These represent static and dynamic permissions, respectively, requested in the consent workflow. Supports $filter (eq only) and $orderby. Required.
           - `[PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]`: A list of pending scopes waiting for approval. This is empty if the consentType is Static. Required.
             - `[DisplayName <String>]`: The name of the scope.
-          - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests.
+          - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests. Supports $filter (eq).
             - `[ApprovalId <String>]`: The identifier of the approval of the request.
             - `[CompletedDateTime <DateTime?>]`: The request completion date time.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -21109,8 +21209,8 @@ TEAM `<IMicrosoftGraphTeam>`: team
           - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
             - `[Id <String>]`: 
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-              - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-              - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+              - `[Key <String>]`: Key for the key-value pair.
+              - `[Value <String>]`: Value for the key-value pair.
             - `[Type <String>]`: 
           - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
           - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -21184,7 +21284,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
             - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
           - `[ErrorUrl <String>]`: Deprecated. Don't use.
-          - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: Federated identities for a specific type of service principal - managed identity. Supports $expand and $filter (eq when counting empty collections).
+          - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: 
             - `[Id <String>]`: 
             - `[Audiences <String[]>]`: The audience that can appear in the external token. This field is mandatory and should be set to api://AzureADTokenExchange for Azure AD. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. This field can only accept a single value and has a limit of 600 characters. Required.
             - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential. It has a limit of 600 characters. Optional.
@@ -21286,7 +21386,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
               - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-                - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
+                - `[Interval <TimeSpan?>]`: The interval between synchronization iterations. The value is represented in ISO 8601 format for durations. For example, PT1M represents a period of 1 month.
                 - `[State <String>]`: synchronizationScheduleState
               - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -21445,14 +21545,19 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
             - `[Id <String>]`: 
           - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
+          - `[VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>]`: verifiedPublisher
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[AddedDateTime <DateTime?>]`: The timestamp when the verified publisher was first added or most recently updated.
+            - `[DisplayName <String>]`: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
+            - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
         - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
         - `[Approvals <IMicrosoftGraphApproval[]>]`: 
         - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq, not, and counting empty collections).
           - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
           - `[SkuId <String>]`: The unique identifier for the SKU.
         - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and not).
-          - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+          - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut. See a detailed description of each value.
           - `[Service <String>]`: The name of the service; for example, exchange.
           - `[ServicePlanId <String>]`: A GUID that identifies the service plan. For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
         - `[Authentication <IMicrosoftGraphAuthentication1>]`: authentication
@@ -21562,17 +21667,17 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[DeviceTag <String>]`: Tags containing app metadata.
             - `[DisplayName <String>]`: The name of the device on which this app is registered.
             - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-          - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: 
+          - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: Represents the status of a long-running operation.
             - `[Id <String>]`: 
-            - `[CreatedDateTime <DateTime?>]`: 
-            - `[LastActionDateTime <DateTime?>]`: 
-            - `[ResourceLocation <String>]`: 
+            - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+            - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+            - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
             - `[Status <String>]`: longRunningOperationStatus
-            - `[StatusDetail <String>]`: 
+            - `[StatusDetail <String>]`: Details about the status of the operation.
           - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod1[]>]`: Represents the details of the password authentication method registered to a user for authentication.
             - `[Id <String>]`: 
-            - `[CreatedDateTime <DateTime?>]`: 
-            - `[CreationDateTime <DateTime?>]`: The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[CreationDateTime <DateTime?>]`: 
             - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
           - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod[]>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
             - `[Id <String>]`: 
@@ -21582,10 +21687,10 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: 
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format +{country code} {number}x{extension}, with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating or updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
-          - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
+          - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: The software OATH TOTP applications registered to a user for authentication.
             - `[Id <String>]`: 
             - `[SecretKey <String>]`: The secret key of the method. Always returns null.
           - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
@@ -21605,7 +21710,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[KeyStrength <String>]`: authenticationMethodKeyStrength
         - `[AuthorizationInfo <IMicrosoftGraphAuthorizationInfo>]`: authorizationInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[CertificateUserIds <String[]>]`: 
+          - `[CertificateUserIds <String[]>]`: The collection of unique identifiers that can be associated with a user and can be used to bind the Azure AD user to a certificate for authentication and authorization into non-Azure AD environments. The identifiers must be unique in the tenant.
         - `[Birthday <DateTime?>]`: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
         - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq, not, ge, le, startsWith).
         - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
@@ -21618,8 +21723,8 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
             - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Address <String>]`: The email address of an entity instance.
-              - `[Name <String>]`: The display name of an entity instance.
+              - `[Address <String>]`: The email address of the person or entity.
+              - `[Name <String>]`: The display name of the person or entity.
             - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
             - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
             - `[Role <String>]`: calendarRoleType
@@ -21635,7 +21740,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
               - `[ContentType <String>]`: The MIME type.
               - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
               - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-              - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+              - `[Name <String>]`: The attachment's file name.
               - `[Size <Int32?>]`: The length of the attachment in bytes.
             - `[Attendees <IMicrosoftGraphAttendee[]>]`: The collection of attendees for the event.
               - `[Type <String>]`: attendeeType
@@ -21644,8 +21749,8 @@ TEAM `<IMicrosoftGraphTeam>`: team
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-                  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+                  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+                  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
                 - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[Status <IMicrosoftGraphResponseStatus>]`: responseStatus
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -21799,7 +21904,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[Id <String>]`: 
                     - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-                    - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+                    - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
                   - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
                 - `[Description <String>]`: Verbose description of the application.
@@ -21857,7 +21962,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
             - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
               - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-              - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+              - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
               - `[Id <String>]`: 
             - `[Importance <String>]`: 
             - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
@@ -21909,7 +22014,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
           - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]`: teamworkOnlineMeetingInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[CalendarEventId <String>]`: The identifier of the calendar event associated with the meeting.
-            - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
+            - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
             - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -21936,7 +22041,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[Permission <String>]`: The name of the resource-specific permission. Read-only.
             - `[PermissionType <String>]`: The type of permission. Possible values are: Application, Delegated. Read-only.
             - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
-          - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>]`: A collection of all the pinned messages in the chat. Nullable.
+          - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo1[]>]`: A collection of all the pinned messages in the chat. Nullable.
             - `[Id <String>]`: 
             - `[Message <IMicrosoftGraphChatMessage>]`: chatMessage
           - `[Tabs <IMicrosoftGraphTeamsTab1[]>]`: A collection of all the tabs in the chat. Nullable.
@@ -21966,13 +22071,14 @@ TEAM `<IMicrosoftGraphTeam>`: team
           - `[AadDeviceId <String>]`: The Azure Active Directory (Azure AD) device ID of the Cloud PC.
           - `[ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]`: cloudPcConnectivityResult
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]`: 
-              - `[AdditionalDetails <String>]`: 
-              - `[DisplayName <String>]`: 
-              - `[LastHealthCheckDateTime <DateTime?>]`: 
+            - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem[]>]`: A list of failed health check items. If the status property is available, this property will be empty.
+              - `[AdditionalDetails <String>]`: Additional message for this health check.
+              - `[DisplayName <String>]`: The connectivity health check item name.
+              - `[LastHealthCheckDateTime <DateTime?>]`: Timestamp when the last check occurs. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
               - `[Result <String>]`: cloudPcConnectivityEventResult
             - `[Status <String>]`: cloudPcConnectivityStatus
-            - `[UpdatedDateTime <DateTime?>]`: 
+            - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+          - `[DiskEncryptionState <String>]`: cloudPcDiskEncryptionState
           - `[DisplayName <String>]`: The display name of the Cloud PC.
           - `[GracePeriodEndDateTime <DateTime?>]`: The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is inGracePeriod. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[ImageDisplayName <String>]`: Name of the OS image that's on the Cloud PC.
@@ -22024,8 +22130,8 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[Department <String>]`: The contact's department.
             - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
             - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]`: The contact's email addresses.
-              - `[Address <String>]`: The email address of an entity instance.
-              - `[Name <String>]`: The display name of an entity instance.
+              - `[Address <String>]`: The email address of the person or entity.
+              - `[Name <String>]`: The display name of the person or entity.
               - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
               - `[Type <String>]`: emailType
             - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Nullable.
@@ -22296,7 +22402,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
             - `[Id <String>]`: 
             - `[Activities <IMicrosoftGraphItemActivityOld[]>]`: The recent activities that took place within this list.
-            - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of field definitions for this list.
+            - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: 
               - `[Id <String>]`: 
               - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -22423,8 +22529,8 @@ TEAM `<IMicrosoftGraphTeam>`: team
                 - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
                   - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
                   - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
-                - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
-            - `[ContentTypes <IMicrosoftGraphContentType[]>]`: The collection of content types present in this list.
+                - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
+            - `[ContentTypes <IMicrosoftGraphContentType[]>]`: 
               - `[Id <String>]`: 
               - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
               - `[Base <IMicrosoftGraphContentType>]`: contentType
@@ -22440,7 +22546,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
                 - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
                 - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
                   - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
-                  - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+                  - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
                   - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
                 - `[PropagateWelcomePageChanges <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
                 - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
@@ -22470,11 +22576,11 @@ TEAM `<IMicrosoftGraphTeam>`: team
               - `[Hidden <Boolean?>]`: If true, indicates that the list is not normally visible in the SharePoint user experience.
               - `[Template <String>]`: An enumerated value that represents the base list template used in creating the list. Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
             - `[Operations <IMicrosoftGraphRichLongRunningOperation[]>]`: The collection of long running operations for the list.
-              - `[CreatedDateTime <DateTime?>]`: 
-              - `[LastActionDateTime <DateTime?>]`: 
-              - `[ResourceLocation <String>]`: 
+              - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+              - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+              - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
               - `[Status <String>]`: longRunningOperationStatus
-              - `[StatusDetail <String>]`: 
+              - `[StatusDetail <String>]`: Details about the status of the operation.
               - `[Id <String>]`: 
               - `[Error <IMicrosoftGraphPublicError>]`: publicError
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -22492,8 +22598,8 @@ TEAM `<IMicrosoftGraphTeam>`: team
                 - `[Message <String>]`: A non-localized message for the developer.
                 - `[Target <String>]`: The target of the error.
               - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
-              - `[ResourceId <String>]`: A unique identifier for the result.
-              - `[Type <String>]`: Type of the operation.
+              - `[ResourceId <String>]`: The unique identifier for the result.
+              - `[Type <String>]`: The type of the operation.
             - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
             - `[Subscriptions <IMicrosoftGraphSubscription1[]>]`: The set of subscriptions on the list.
               - `[Id <String>]`: 
@@ -22522,7 +22628,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[State <String>]`: Enumeration value that indicates the state of the storage space. Read-only.
             - `[StoragePlanInformation <IMicrosoftGraphStoragePlanInformation>]`: storagePlanInformation
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[UpgradeAvailable <Boolean?>]`: Indicates if there are higher storage quota plans available. Read-only.
+              - `[UpgradeAvailable <Boolean?>]`: Indicates whether there are higher storage quota plans available. Read-only.
             - `[Total <Int64?>]`: Total allowed storage space, in bytes. Read-only.
             - `[Used <Int64?>]`: Total space used, in bytes. Read-only.
           - `[Root <IMicrosoftGraphDriveItem>]`: driveItem
@@ -22532,6 +22638,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
         - `[Drives <IMicrosoftGraphDrive[]>]`: A collection of drives available for this user. Read-only.
         - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, not , ge, le, in).
         - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. The maximum length is 16 characters.Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
+        - `[EmployeeLeaveDateTime <DateTime?>]`: The date and time when the user left or will leave the organization. Read: Requires User-LifeCycleInfo.Read.All. For delegated scenarios, the admin needs one of the following Azure AD roles: Lifecycle Workflows Administrator, Global Reader, or Global Admin.  Write: Requires User-LifeCycleInfo.ReadWrite.All. For delegated scenarios, the admin needs the Global Administrator Azure AD role. Supports $filter (eq, ne, not , ge, le, in).
         - `[EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]`: employeeOrgData
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[CostCenter <String>]`: The cost center associated with the user. Returned only on $select. Supports $filter.
@@ -22840,7 +22947,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[Status <String>]`: threatAssessmentStatus
         - `[Insights <IMicrosoftGraphItemInsights>]`: itemInsights
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Shared <IMicrosoftGraphSharedInsight[]>]`: Access this property from the derived type itemInsights.
+          - `[Shared <IMicrosoftGraphSharedInsight[]>]`: Calculated relationship identifying documents shared with or by the user. This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings. This also includes URLs and reference attachments to Teams conversations. Ordered by recency of share.
             - `[Id <String>]`: 
             - `[LastShared <IMicrosoftGraphSharingDetail>]`: sharingDetail
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -22873,19 +22980,19 @@ TEAM `<IMicrosoftGraphTeam>`: team
               - `[Title <String>]`: The item's title text.
               - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types.
             - `[SharingHistory <IMicrosoftGraphSharingDetail[]>]`: 
-          - `[Trending <IMicrosoftGraphTrending[]>]`: Access this property from the derived type itemInsights.
+          - `[Trending <IMicrosoftGraphTrending[]>]`: Calculated relationship identifying documents trending around a user. Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint. Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
             - `[Id <String>]`: 
             - `[LastModifiedDateTime <DateTime?>]`: 
             - `[Resource <IMicrosoftGraphEntity>]`: entity
             - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
             - `[Weight <Double?>]`: Value indicating how much the document is currently trending. The larger the number, the more the document is currently trending around the user (the more relevant it is). Returned documents are sorted by this value.
-          - `[Used <IMicrosoftGraphUsedInsight[]>]`: Access this property from the derived type itemInsights.
+          - `[Used <IMicrosoftGraphUsedInsight[]>]`: Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
             - `[Id <String>]`: 
             - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-              - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+              - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time.For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
             - `[Resource <IMicrosoftGraphEntity>]`: entity
             - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
@@ -23142,7 +23249,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
             - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings. Read-only.
             - `[Values <IMicrosoftGraphSettingValue[]>]`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
-              - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+              - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
               - `[Value <String>]`: Value of the setting.
           - `[Sites <IMicrosoftGraphSite[]>]`: The list of SharePoint sites in this group. Access the default site with /sites/root.
           - `[Team <IMicrosoftGraphTeam>]`: team
@@ -23162,12 +23269,12 @@ TEAM `<IMicrosoftGraphTeam>`: team
         - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
         - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult and Adult. Refer to the legal age group property definitions for further information. Returned only on $select.
         - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]`: State of license assignments for this user. Read-only. Returned only on $select.
-          - `[AssignedByGroup <String>]`: The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.
-          - `[DisabledPlans <String[]>]`: The service plans that are disabled in this assignment. Read-Only.
-          - `[Error <String>]`: License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. The possible values are CountViolation, MutuallyExclusiveViolation, DependencyViolation, ProhibitedInUsageLocationViolation, UniquenessViolation, and Other. For more information on how to identify and resolve license assignment errors see here.
-          - `[LastUpdatedDateTime <DateTime?>]`: The timestamp when the state of the license assignment was last updated.
-          - `[SkuId <String>]`: The unique identifier for the SKU. Read-Only.
-          - `[State <String>]`: Indicate the current state of this assignment. Read-Only. The possible values are Active, ActiveWithError, Disabled, and Error.
+          - `[AssignedByGroup <String>]`: 
+          - `[DisabledPlans <String[]>]`: 
+          - `[Error <String>]`: 
+          - `[LastUpdatedDateTime <DateTime?>]`: 
+          - `[SkuId <String>]`: 
+          - `[State <String>]`: 
         - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: A collection of this user's license details. Read-only.
         - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. This property cannot contain accent characters.  NOTE: We do not recommend updating this property for Azure AD B2C user profiles. Use the otherMails property instead.  Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
         - `[MailFolders <IMicrosoftGraphMailFolder[]>]`: The user's mail folders. Read-only. Nullable.
@@ -23189,7 +23296,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
               - `[MarkImportance <String>]`: importance
               - `[MoveToFolder <String>]`: The ID of the folder that a message will be moved to.
               - `[PermanentDelete <Boolean?>]`: Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-              - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email address to which a message should be redirected.
+              - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email addresses to which a message should be redirected.
               - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
             - `[Conditions <IMicrosoftGraphMessageRulePredicates>]`: messageRulePredicates
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -23389,12 +23496,15 @@ TEAM `<IMicrosoftGraphTeam>`: team
           - `[ConfigurationManagerClientInformation <IMicrosoftGraphConfigurationManagerClientInformation>]`: Configuration Manager client information synced from SCCM
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ClientIdentifier <String>]`: Configuration Manager Client Id from SCCM
+            - `[ClientVersion <String>]`: Configuration Manager Client version from SCCM
             - `[IsBlocked <Boolean?>]`: Configuration Manager Client blocked status from SCCM
           - `[DetectedApps <IMicrosoftGraphDetectedApp[]>]`: All applications currently installed on the device
             - `[Id <String>]`: 
             - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
             - `[DisplayName <String>]`: Name of the discovered application. Read-only
             - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The devices that have the discovered application installed
+            - `[Platform <DetectedAppPlatformType?>]`: Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0).
+            - `[Publisher <String>]`: Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.
             - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
             - `[Version <String>]`: Version of the discovered application. Read-only
           - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
@@ -23806,7 +23916,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
           - `[Capabilities <String[]>]`: 
           - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+            - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
             - `[ReplyChainMessageId <String>]`: The ID of the reply message.
             - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
           - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
@@ -23985,7 +24095,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[NotificationTemplateType <String>]`: Indicates the type of access review email to be sent. Supported template type is CompletedAdditionalRecipients which sends review completion notifications to the recipients.
             - `[BackupReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: 
-              - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
+              - `[Query <String>]`: The query specifying who will be the reviewer.
               - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
               - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
             - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -24078,7 +24188,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
           - `[FavoritePlanReferences <IMicrosoftGraphPlannerFavoritePlanReferenceCollection>]`: plannerFavoritePlanReferenceCollection
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[FavoritePlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans that the user marked as favorites.
-          - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
+          - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: 
           - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[RecentPlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
@@ -24171,9 +24281,9 @@ TEAM `<IMicrosoftGraphTeam>`: team
               - `[PrintQuality <String>]`: printQuality
               - `[Quality <String>]`: printQuality
               - `[Scaling <String>]`: printScaling
-            - `[DisplayName <String>]`: The name of the printer/printerShare.
-            - `[IsAcceptingJobs <Boolean?>]`: Whether the printer/printerShare is currently accepting new print jobs.
-            - `[Jobs <IMicrosoftGraphPrintJob[]>]`: The list of jobs that are queued for printing by the printer/printerShare.
+            - `[DisplayName <String>]`: 
+            - `[IsAcceptingJobs <Boolean?>]`: 
+            - `[Jobs <IMicrosoftGraphPrintJob[]>]`: 
               - `[Id <String>]`: 
               - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -24286,8 +24396,8 @@ TEAM `<IMicrosoftGraphTeam>`: team
               - `[StreetAddress <String>]`: The street address where the printer is located.
               - `[Subdivision <String[]>]`: The subdivision that the printer is located in. The elements should be in hierarchical order.
               - `[Subunit <String[]>]`: 
-            - `[Manufacturer <String>]`: The manufacturer of the printer/printerShare.
-            - `[Model <String>]`: The model name of the printer/printerShare.
+            - `[Manufacturer <String>]`: 
+            - `[Model <String>]`: 
             - `[Name <String>]`: 
             - `[Status <IMicrosoftGraphPrinterStatus>]`: printerStatus
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -24306,12 +24416,12 @@ TEAM `<IMicrosoftGraphTeam>`: team
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
               - `[Defaults <IMicrosoftGraphPrinterDefaults>]`: printerDefaults
-              - `[DisplayName <String>]`: The name of the printer/printerShare.
-              - `[IsAcceptingJobs <Boolean?>]`: Whether the printer/printerShare is currently accepting new print jobs.
-              - `[Jobs <IMicrosoftGraphPrintJob[]>]`: The list of jobs that are queued for printing by the printer/printerShare.
+              - `[DisplayName <String>]`: 
+              - `[IsAcceptingJobs <Boolean?>]`: 
+              - `[Jobs <IMicrosoftGraphPrintJob[]>]`: 
               - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
-              - `[Manufacturer <String>]`: The manufacturer of the printer/printerShare.
-              - `[Model <String>]`: The model name of the printer/printerShare.
+              - `[Manufacturer <String>]`: 
+              - `[Model <String>]`: 
               - `[Name <String>]`: 
               - `[Status <IMicrosoftGraphPrinterStatus>]`: printerStatus
               - `[Id <String>]`: 
@@ -24375,8 +24485,8 @@ TEAM `<IMicrosoftGraphTeam>`: team
             - `[GeoCoordinates <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-              - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
-              - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+              - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
+              - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
           - `[Anniversaries <IMicrosoftGraphPersonAnnualEvent[]>]`: Represents the details of meaningful dates associated with a person.
             - `[AllowedAudiences <String>]`: allowedAudiences
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -24857,24 +24967,24 @@ TEAM `<IMicrosoftGraphTeam>`: team
               - `[Id <String>]`: 
               - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
                 - `[Id <String>]`: 
-                - `[Content <Byte[]>]`: The content streams that are uploaded.
-                - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-                - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
-              - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
+                - `[Content <Byte[]>]`: 
+                - `[ExpirationDateTime <DateTime?>]`: 
+                - `[NextExpectedRanges <String[]>]`: 
+              - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: 
                 - `[Id <String>]`: 
-                - `[ContentType <String>]`: The MIME type.
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-                - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
-                - `[Size <Int32?>]`: The length of the attachment in bytes.
+                - `[ContentType <String>]`: 
+                - `[LastModifiedDateTime <DateTime?>]`: 
+                - `[Name <String>]`: 
+                - `[Size <Int32?>]`: 
               - `[Body <IMicrosoftGraphItemBody>]`: itemBody
               - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
               - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
-              - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of smaller subtasks linked to the more complex parent task.
+              - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of checklistItems linked to a task.
               - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
               - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-              - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
+              - `[HasAttachments <Boolean?>]`: 
               - `[Importance <String>]`: importance
               - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
               - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -24948,7 +25058,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Hashes <IMicrosoftGraphHashes>]`: hashes
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Crc32Hash <String>]`: The CRC32 value of the file (if available). Read-only.
+          - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available). Read-only.
           - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.
           - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available). Read-only.
           - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available). Read-only.
@@ -25001,7 +25111,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
         - `[FocalLength <Double?>]`: The focal length from the camera. Read-only.
         - `[Iso <Int32?>]`: The ISO value from the camera. Read-only.
         - `[Orientation <Int32?>]`: The orientation value from the camera. Writable on OneDrive Personal.
-        - `[TakenDateTime <DateTime?>]`: The date and time the photo was taken in UTC time. Read-only.
+        - `[TakenDateTime <DateTime?>]`: Represents the date and time the photo was taken. Read-only.
       - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
       - `[RemoteItem <IMicrosoftGraphRemoteItem>]`: remoteItem
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -25072,7 +25182,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
         - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
         - `[Id <String>]`: 
-        - `[Content <Byte[]>]`: 
+        - `[Content <Byte[]>]`: The content stream for this version of the item.
         - `[Size <Int64?>]`: Indicates the size of the content stream for this version of the item.
       - `[Video <IMicrosoftGraphVideo>]`: video
       - `[WebDavUrl <String>]`: WebDAV compatible URL for the item.
@@ -25085,12 +25195,12 @@ TEAM `<IMicrosoftGraphTeam>`: team
           - `[CalculationMode <String>]`: Returns the calculation mode used in the workbook. Possible values are: Automatic, AutomaticExceptTables, Manual.
         - `[Comments <IMicrosoftGraphWorkbookComment[]>]`: 
           - `[Id <String>]`: 
-          - `[Content <String>]`: The content of the comment.
+          - `[Content <String>]`: The content of comment.
           - `[ContentType <String>]`: Indicates the type for the comment.
           - `[Replies <IMicrosoftGraphWorkbookCommentReply[]>]`: 
             - `[Id <String>]`: 
-            - `[Content <String>]`: The content of replied comment.
-            - `[ContentType <String>]`: Indicates the type for the replied comment.
+            - `[Content <String>]`: The content of a comment reply.
+            - `[ContentType <String>]`: Indicates the type for the comment reply.
         - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
@@ -25260,7 +25370,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
                     - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                      - `[Set <String>]`: Represents the set that the icon is part of. Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
+                      - `[Set <String>]`: Represents the set that the icon is part of. The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                     - `[Operator <String>]`: 
                     - `[Values <IMicrosoftGraphJson>]`: Json
                 - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
@@ -25285,12 +25395,12 @@ TEAM `<IMicrosoftGraphTeam>`: team
                 - `[Fields <IMicrosoftGraphWorkbookSortField[]>]`: Represents the current conditions used to last sort the table. Read-only.
                   - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                   - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
-                  - `[DataOption <String>]`: Represents additional sorting options for this field. Possible values are: Normal, TextAsNumber.
+                  - `[DataOption <String>]`: Represents additional sorting options for this field. The possible values are: Normal, TextAsNumber.
                   - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                   - `[Key <Int32?>]`: Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).
-                  - `[SortOn <String>]`: Represents the type of sorting of this condition. Possible values are: Value, CellColor, FontColor, Icon.
+                  - `[SortOn <String>]`: Represents the type of sorting of this condition. The possible values are: Value, CellColor, FontColor, Icon.
                 - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table. Read-only.
-                - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. Possible values are: PinYin, StrokeCount. Read-only.
+                - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount. Read-only.
               - `[Style <String>]`: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[Visibility <String>]`: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
@@ -25353,7 +25463,7 @@ TEAM `<IMicrosoftGraphTeam>`: team
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowAddRemoveApps <Boolean?>]`: If set to true, members can add and remove apps.
     - `[AllowCreatePrivateChannels <Boolean?>]`: If set to true, members can add and update private channels.
-    - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, members can add and update any channels.
+    - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, members can add and update channels.
     - `[AllowCreateUpdateRemoveConnectors <Boolean?>]`: If set to true, members can add, update, and remove connectors.
     - `[AllowCreateUpdateRemoveTabs <Boolean?>]`: If set to true, members can add, update, and remove tabs.
     - `[AllowDeleteChannels <Boolean?>]`: If set to true, members can delete channels.
@@ -25559,9 +25669,9 @@ TEAM `<IMicrosoftGraphTeam>`: team
   - `[Specialization <String>]`: teamSpecialization
   - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[GuestsCount <Int32?>]`: Count of guests in a team.
-    - `[MembersCount <Int32?>]`: Count of members in a team.
-    - `[OwnersCount <Int32?>]`: Count of owners in a team.
+    - `[GuestsCount <Int32?>]`: 
+    - `[MembersCount <Int32?>]`: 
+    - `[OwnersCount <Int32?>]`: 
   - `[Tags <IMicrosoftGraphTeamworkTag[]>]`: The tags associated with the team.
     - `[Id <String>]`: 
     - `[Description <String>]`: Tag description as it will appear to the user in Microsoft Teams.
@@ -25577,6 +25687,21 @@ TEAM `<IMicrosoftGraphTeam>`: team
   - `[Template <IMicrosoftGraphTeamsTemplate>]`: teamsTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
+  - `[TemplateDefinition <IMicrosoftGraphTeamTemplateDefinition>]`: teamTemplateDefinition
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: 
+    - `[Audience <String>]`: teamTemplateAudience
+    - `[Categories <String[]>]`: 
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[IconUrl <String>]`: 
+    - `[LanguageTag <String>]`: 
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[ParentTemplateId <String>]`: 
+    - `[PublisherName <String>]`: 
+    - `[ShortDescription <String>]`: 
+    - `[TeamDefinition <IMicrosoftGraphTeam>]`: team
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[Visibility <String>]`: teamVisibilityType
   - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
@@ -25586,8 +25711,8 @@ THREADS <IMicrosoftGraphConversationThread1\[]>: The group's conversation thread
   - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
+      - `[Address <String>]`: The email address of the person or entity.
+      - `[Name <String>]`: The display name of the person or entity.
   - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
   - `[IsLocked <Boolean?>]`: Indicates if the thread is locked. Returned by default.
   - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default.
@@ -25602,7 +25727,7 @@ THREADS <IMicrosoftGraphConversationThread1\[]>: The group's conversation thread
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+      - `[Name <String>]`: The attachment's file name.
       - `[Size <Int32?>]`: The length of the attachment in bytes.
     - `[Body <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

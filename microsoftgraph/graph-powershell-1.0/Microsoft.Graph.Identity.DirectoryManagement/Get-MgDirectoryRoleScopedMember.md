@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgDirectoryRoleScopedMember
 
 ## SYNOPSIS
-Get scopedMembers from directoryRoles
+Members of this directory role that are scoped to administrative units.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIdenti
 ```
 
 ## DESCRIPTION
-Get scopedMembers from directoryRoles
+Members of this directory role that are scoped to administrative units.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteTermStore
 
 ## SYNOPSIS
-Get termStore from groups
+The default termStore under this site.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Get-MgGroupSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get termStore from groups
+The default termStore under this site.
 
 ## EXAMPLES
 

@@ -247,7 +247,7 @@ BODYPARAMETER `<IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostR
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LanguageId <String>]`: The language culture string. Read-only.
     - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
-    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only.
 
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
@@ -279,7 +279,7 @@ TRANSFEREE `<IMicrosoftGraphParticipantInfo>`: participantInfo
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LanguageId <String>]`: The language culture string. Read-only.
   - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
-  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only.
 
 TRANSFERTARGET `<IMicrosoftGraphInvitationParticipantInfo>`: invitationParticipantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
