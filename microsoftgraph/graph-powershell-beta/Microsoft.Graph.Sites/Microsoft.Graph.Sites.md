@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: afeeedfb-3029-4b2c-b2b8-3ea0921f9f98
+Module Guid: 4b7bdbad-f9a1-4548-b97e-de3b4d94c347
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -42,37 +42,39 @@ Invoke action copyToNotebook
 Invoke action copyToSectionGroup
 
 ### [Get-MgGroupSite](Get-MgGroupSite.md)
-Get sites from groups
+The list of SharePoint sites in this group.
+Access the default site with /sites/root.
 
 ### [Get-MgGroupSiteAnalytic](Get-MgGroupSiteAnalytic.md)
-Get analytics from groups
+Analytics about the view activities that took place in this site.
 
 ### [Get-MgGroupSiteColumn](Get-MgGroupSiteColumn.md)
-Get columns from groups
+The collection of column definitions reusable across lists under this site.
 
 ### [Get-MgGroupSiteContentType](Get-MgGroupSiteContentType.md)
-Get contentTypes from groups
+The collection of content types defined for this site.
 
 ### [Get-MgGroupSiteContentTypeColumn](Get-MgGroupSiteContentTypeColumn.md)
-Get columns from groups
+The collection of column definitions for this contentType.
 
 ### [Get-MgGroupSiteContentTypeColumnLink](Get-MgGroupSiteContentTypeColumnLink.md)
-Get columnLinks from groups
+The collection of columns that are required by this content type
 
 ### [Get-MgGroupSiteDrive](Get-MgGroupSiteDrive.md)
-Get drive from groups
+The default drive (document library) for this site.
 
 ### [Get-MgGroupSiteExternalColumn](Get-MgGroupSiteExternalColumn.md)
-Get externalColumns from groups
+The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 ### [Get-MgGroupSiteItem](Get-MgGroupSiteItem.md)
-Get items from groups
+Used to address any item contained in this site.
+This collection cannot be enumerated.
 
 ### [Get-MgGroupSiteList](Get-MgGroupSiteList.md)
-Get lists from groups
+The collection of lists under this site.
 
 ### [Get-MgGroupSiteListActivity](Get-MgGroupSiteListActivity.md)
-Get activities from groups
+The recent activities that took place within this list.
 
 ### [Get-MgGroupSiteListColumn](Get-MgGroupSiteListColumn.md)
 Get columns from groups
@@ -81,118 +83,120 @@ Get columns from groups
 Get contentTypes from groups
 
 ### [Get-MgGroupSiteListContentTypeBase](Get-MgGroupSiteListContentTypeBase.md)
-Get base from groups
+Parent contentType from which this content type is derived.
 
 ### [Get-MgGroupSiteListContentTypeBaseType](Get-MgGroupSiteListContentTypeBaseType.md)
-Get baseTypes from groups
+The collection of content types that are ancestors of this content type.
 
 ### [Get-MgGroupSiteListContentTypeColumn](Get-MgGroupSiteListContentTypeColumn.md)
-Get columns from groups
+The collection of column definitions for this contentType.
 
 ### [Get-MgGroupSiteListContentTypeColumnLink](Get-MgGroupSiteListContentTypeColumnLink.md)
-Get columnLinks from groups
+The collection of columns that are required by this content type
 
 ### [Get-MgGroupSiteListContentTypeColumnPosition](Get-MgGroupSiteListContentTypeColumnPosition.md)
-Get columnPositions from groups
+Column order information in a content type.
 
 ### [Get-MgGroupSiteListDrive](Get-MgGroupSiteListDrive.md)
-Get drive from groups
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ### [Get-MgGroupSiteListItem](Get-MgGroupSiteListItem.md)
-Get items from groups
+All items contained in the list.
 
 ### [Get-MgGroupSiteListItemActivity](Get-MgGroupSiteListItemActivity.md)
-Get activities from groups
+The list of recent activities that took place on this item.
 
 ### [Get-MgGroupSiteListItemAnalytic](Get-MgGroupSiteListItemAnalytic.md)
-Get analytics from groups
+Analytics about the view activities that took place on this item.
 
 ### [Get-MgGroupSiteListItemDocumentSetVersion](Get-MgGroupSiteListItemDocumentSetVersion.md)
-Get documentSetVersions from groups
+Version information for a document set version created by a user.
 
 ### [Get-MgGroupSiteListItemDriveItem](Get-MgGroupSiteListItemDriveItem.md)
-Get driveItem from groups
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Get-MgGroupSiteListItemDriveItemContent](Get-MgGroupSiteListItemDriveItemContent.md)
-Get content for the navigation property driveItem from groups
+The content stream, if the item represents a file.
 
 ### [Get-MgGroupSiteListItemField](Get-MgGroupSiteListItemField.md)
-Get fields from groups
+The values of the columns set on this list item.
 
 ### [Get-MgGroupSiteListItemVersion](Get-MgGroupSiteListItemVersion.md)
-Get versions from groups
+The list of previous versions of the list item.
 
 ### [Get-MgGroupSiteListItemVersionField](Get-MgGroupSiteListItemVersionField.md)
-Get fields from groups
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgGroupSiteListOperation](Get-MgGroupSiteListOperation.md)
-Get operations from groups
+The collection of long running operations for the list.
 
 ### [Get-MgGroupSiteListSubscription](Get-MgGroupSiteListSubscription.md)
-Get subscriptions from groups
+The set of subscriptions on the list.
 
 ### [Get-MgGroupSiteOperation](Get-MgGroupSiteOperation.md)
-Get operations from groups
+The collection of long running operations for the site.
 
 ### [Get-MgGroupSitePage](Get-MgGroupSitePage.md)
-Get pages from groups
+The collection of pages in the SitePages list in this site.
 
 ### [Get-MgGroupSitePermission](Get-MgGroupSitePermission.md)
-Get permissions from groups
+The permissions associated with the site.
+Nullable.
 
 ### [Get-MgGroupSiteTermStore](Get-MgGroupSiteTermStore.md)
-Get termStore from groups
+The termStore under this site.
 
 ### [Get-MgGroupSiteTermStoreGroup](Get-MgGroupSiteTermStoreGroup.md)
-Get groups from groups
+Collection of all groups available in the term store.
 
 ### [Get-MgGroupSiteTermStoreGroupSet](Get-MgGroupSiteTermStoreGroupSet.md)
-Get sets from groups
+All sets under the group in a term [store].
 
 ### [Get-MgGroupSiteTermStoreGroupSetChild](Get-MgGroupSiteTermStoreGroupSetChild.md)
-Get children from groups
+Children terms of set in term [store].
 
 ### [Get-MgGroupSiteTermStoreGroupSetRelation](Get-MgGroupSiteTermStoreGroupSetRelation.md)
-Get relations from groups
+Indicates which terms have been pinned or reused directly under the set.
 
 ### [Get-MgGroupSiteTermStoreGroupSetTerm](Get-MgGroupSiteTermStoreGroupSetTerm.md)
-Get terms from groups
+All the terms under the set.
 
 ### [Get-MgGroupSiteTermStoreGroupSetTermChild](Get-MgGroupSiteTermStoreGroupSetTermChild.md)
-Get children from groups
+Children of current term.
 
 ### [Get-MgGroupSiteTermStoreGroupSetTermRelation](Get-MgGroupSiteTermStoreGroupSetTermRelation.md)
-Get relations from groups
+To indicate which terms are related to the current term as either pinned or reused.
 
 ### [Get-MgGroupSiteTermStoreSet](Get-MgGroupSiteTermStoreSet.md)
-Get sets from groups
+Collection of all sets available in the term store.
 
 ### [Get-MgGroupSiteTermStoreSetChild](Get-MgGroupSiteTermStoreSetChild.md)
-Get children from groups
+Children terms of set in term [store].
 
 ### [Get-MgGroupSiteTermStoreSetRelation](Get-MgGroupSiteTermStoreSetRelation.md)
-Get relations from groups
+Indicates which terms have been pinned or reused directly under the set.
 
 ### [Get-MgGroupSiteTermStoreSetTerm](Get-MgGroupSiteTermStoreSetTerm.md)
-Get terms from groups
+All the terms under the set.
 
 ### [Get-MgGroupSiteTermStoreSetTermChild](Get-MgGroupSiteTermStoreSetTermChild.md)
-Get children from groups
+Children of current term.
 
 ### [Get-MgGroupSiteTermStoreSetTermRelation](Get-MgGroupSiteTermStoreSetTermRelation.md)
-Get relations from groups
+To indicate which terms are related to the current term as either pinned or reused.
 
 ### [Get-MgGroupSubSite](Get-MgGroupSubSite.md)
-Get sites from groups
+The collection of the sub-sites under this site.
 
 ### [Get-MgSite](Get-MgSite.md)
-Get a site resource
+Retrieve properties and relationships for a [site][] resource.\nA **site** resource represents a team site in SharePoint.
 
 ### [Get-MgSiteActivityByInterval](Get-MgSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
 
 ### [Get-MgSiteAnalytic](Get-MgSiteAnalytic.md)
-Get analytics from sites
+Analytics about the view activities that took place in this site.
 
 ### [Get-MgSiteApplicableContentTypeForList](Get-MgSiteApplicableContentTypeForList.md)
 Invoke function getApplicableContentTypesForList
@@ -201,37 +205,37 @@ Invoke function getApplicableContentTypesForList
 Invoke function getByPath
 
 ### [Get-MgSiteColumn](Get-MgSiteColumn.md)
-Get columns from sites
+The collection of column definitions reusable across lists under this site.
 
 ### [Get-MgSiteContentType](Get-MgSiteContentType.md)
-Get contentTypes from sites
+The collection of content types defined for this site.
 
 ### [Get-MgSiteContentTypeColumn](Get-MgSiteContentTypeColumn.md)
-Get columns from sites
+The collection of column definitions for this contentType.
 
 ### [Get-MgSiteContentTypeColumnLink](Get-MgSiteContentTypeColumnLink.md)
-Get columnLinks from sites
+The collection of columns that are required by this content type
 
 ### [Get-MgSiteContentTypeCompatibleHubContentType](Get-MgSiteContentTypeCompatibleHubContentType.md)
 Invoke function getCompatibleHubContentTypes
 
 ### [Get-MgSiteDefaultDrive](Get-MgSiteDefaultDrive.md)
-Get drive from sites
+The default drive (document library) for this site.
 
 ### [Get-MgSiteDelta](Get-MgSiteDelta.md)
 Invoke function delta
 
 ### [Get-MgSiteDrive](Get-MgSiteDrive.md)
-Get drives from sites
+The collection of drives (document libraries) under this site.
 
 ### [Get-MgSiteExternalColumn](Get-MgSiteExternalColumn.md)
-Get externalColumns from sites
+The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 ### [Get-MgSiteList](Get-MgSiteList.md)
-Get lists from sites
+The collection of lists under this site.
 
 ### [Get-MgSiteListActivity](Get-MgSiteListActivity.md)
-Get activities from sites
+The recent activities that took place within this list.
 
 ### [Get-MgSiteListColumn](Get-MgSiteListColumn.md)
 Get columns from sites
@@ -240,121 +244,123 @@ Get columns from sites
 Get contentTypes from sites
 
 ### [Get-MgSiteListContentTypeBase](Get-MgSiteListContentTypeBase.md)
-Get base from sites
+Parent contentType from which this content type is derived.
 
 ### [Get-MgSiteListContentTypeBaseType](Get-MgSiteListContentTypeBaseType.md)
-Get baseTypes from sites
+The collection of content types that are ancestors of this content type.
 
 ### [Get-MgSiteListContentTypeColumn](Get-MgSiteListContentTypeColumn.md)
-Get columns from sites
+The collection of column definitions for this contentType.
 
 ### [Get-MgSiteListContentTypeColumnLink](Get-MgSiteListContentTypeColumnLink.md)
-Get columnLinks from sites
+The collection of columns that are required by this content type
 
 ### [Get-MgSiteListContentTypeColumnPosition](Get-MgSiteListContentTypeColumnPosition.md)
-Get columnPositions from sites
+Column order information in a content type.
 
 ### [Get-MgSiteListContentTypeCompatibleHubContentType](Get-MgSiteListContentTypeCompatibleHubContentType.md)
 Invoke function getCompatibleHubContentTypes
 
 ### [Get-MgSiteListDrive](Get-MgSiteListDrive.md)
-Get drive from sites
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ### [Get-MgSiteListItem](Get-MgSiteListItem.md)
-Get items from sites
+All items contained in the list.
 
 ### [Get-MgSiteListItemActivity](Get-MgSiteListItemActivity.md)
-Get activities from sites
+The list of recent activities that took place on this item.
 
 ### [Get-MgSiteListItemActivityByInterval](Get-MgSiteListItemActivityByInterval.md)
 Invoke function getActivitiesByInterval
 
 ### [Get-MgSiteListItemAnalytic](Get-MgSiteListItemAnalytic.md)
-Get analytics from sites
+Analytics about the view activities that took place on this item.
 
 ### [Get-MgSiteListItemDelta](Get-MgSiteListItemDelta.md)
 Invoke function delta
 
 ### [Get-MgSiteListItemDocumentSetVersion](Get-MgSiteListItemDocumentSetVersion.md)
-Get documentSetVersions from sites
+Version information for a document set version created by a user.
 
 ### [Get-MgSiteListItemDriveItem](Get-MgSiteListItemDriveItem.md)
-Get driveItem from sites
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Get-MgSiteListItemDriveItemContent](Get-MgSiteListItemDriveItemContent.md)
-Get content for the navigation property driveItem from sites
+The content stream, if the item represents a file.
 
 ### [Get-MgSiteListItemField](Get-MgSiteListItemField.md)
-Get fields from sites
+The values of the columns set on this list item.
 
 ### [Get-MgSiteListItemVersion](Get-MgSiteListItemVersion.md)
-Get versions from sites
+The list of previous versions of the list item.
 
 ### [Get-MgSiteListItemVersionField](Get-MgSiteListItemVersionField.md)
-Get fields from sites
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgSiteListOperation](Get-MgSiteListOperation.md)
-Get operations from sites
+The collection of long running operations for the list.
 
 ### [Get-MgSiteListSubscription](Get-MgSiteListSubscription.md)
-Get subscriptions from sites
+The set of subscriptions on the list.
 
 ### [Get-MgSiteOnenoteNotebookFromWebUrl](Get-MgSiteOnenoteNotebookFromWebUrl.md)
 Invoke action getNotebookFromWebUrl
 
 ### [Get-MgSitePage](Get-MgSitePage.md)
-Get pages from sites
+The collection of pages in the SitePages list in this site.
 
 ### [Get-MgSitePermission](Get-MgSitePermission.md)
-Get permissions from sites
+The permissions associated with the site.
+Nullable.
 
 ### [Get-MgSiteRecentNotebook](Get-MgSiteRecentNotebook.md)
 Invoke function getRecentNotebooks
 
 ### [Get-MgSiteTermStore](Get-MgSiteTermStore.md)
-Get termStore from sites
+The termStore under this site.
 
 ### [Get-MgSiteTermStoreGroup](Get-MgSiteTermStoreGroup.md)
-Get groups from sites
+Collection of all groups available in the term store.
 
 ### [Get-MgSiteTermStoreGroupSet](Get-MgSiteTermStoreGroupSet.md)
-Get sets from sites
+All sets under the group in a term [store].
 
 ### [Get-MgSiteTermStoreGroupSetChild](Get-MgSiteTermStoreGroupSetChild.md)
-Get children from sites
+Children terms of set in term [store].
 
 ### [Get-MgSiteTermStoreGroupSetRelation](Get-MgSiteTermStoreGroupSetRelation.md)
-Get relations from sites
+Indicates which terms have been pinned or reused directly under the set.
 
 ### [Get-MgSiteTermStoreGroupSetTerm](Get-MgSiteTermStoreGroupSetTerm.md)
-Get terms from sites
+All the terms under the set.
 
 ### [Get-MgSiteTermStoreGroupSetTermChild](Get-MgSiteTermStoreGroupSetTermChild.md)
-Get children from sites
+Children of current term.
 
 ### [Get-MgSiteTermStoreGroupSetTermRelation](Get-MgSiteTermStoreGroupSetTermRelation.md)
-Get relations from sites
+To indicate which terms are related to the current term as either pinned or reused.
 
 ### [Get-MgSiteTermStoreSet](Get-MgSiteTermStoreSet.md)
-Get sets from sites
+Collection of all sets available in the term store.
 
 ### [Get-MgSiteTermStoreSetChild](Get-MgSiteTermStoreSetChild.md)
-Get children from sites
+Children terms of set in term [store].
 
 ### [Get-MgSiteTermStoreSetRelation](Get-MgSiteTermStoreSetRelation.md)
-Get relations from sites
+Indicates which terms have been pinned or reused directly under the set.
 
 ### [Get-MgSiteTermStoreSetTerm](Get-MgSiteTermStoreSetTerm.md)
-Get terms from sites
+All the terms under the set.
 
 ### [Get-MgSiteTermStoreSetTermChild](Get-MgSiteTermStoreSetTermChild.md)
-Get children from sites
+Children of current term.
 
 ### [Get-MgSiteTermStoreSetTermRelation](Get-MgSiteTermStoreSetTermRelation.md)
-Get relations from sites
+To indicate which terms are related to the current term as either pinned or reused.
 
 ### [Get-MgSubSite](Get-MgSubSite.md)
-Get sites from sites
+The collection of the sub-sites under this site.
 
 ### [Get-MgUserFollowedSite](Get-MgUserFollowedSite.md)
 Get followedSites from users
@@ -775,10 +781,10 @@ Invoke action restoreVersion
 Invoke action revokeGrants
 
 ### [Set-MgGroupSiteListItemDriveItemContent](Set-MgGroupSiteListItemDriveItemContent.md)
-Update content for the navigation property driveItem in groups
+The content stream, if the item represents a file.
 
 ### [Set-MgSiteListItemDriveItemContent](Set-MgSiteListItemDriveItemContent.md)
-Update content for the navigation property driveItem in sites
+The content stream, if the item represents a file.
 
 ### [Test-MgSiteContentTypePublished](Test-MgSiteContentTypePublished.md)
 Invoke function isPublished

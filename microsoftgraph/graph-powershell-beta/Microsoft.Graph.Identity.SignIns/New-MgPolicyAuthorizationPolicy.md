@@ -364,6 +364,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthorizationPolicy1>`: authorizationPolicy
   - `[Id <String>]`: 
   - `[AllowEmailVerifiedUsersToJoinOrganization <Boolean?>]`: Indicates whether a user can join the tenant by email validation.
   - `[AllowInvitesFrom <String>]`: allowInvitesFrom
+  - `[AllowUserConsentForRiskyApps <Boolean?>]`: 
   - `[AllowedToSignUpEmailBasedSubscriptions <Boolean?>]`: Indicates whether users can sign up for email based subscriptions.
   - `[AllowedToUseSspr <Boolean?>]`: Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant.
   - `[BlockMsolPowerShell <Boolean?>]`: To disable the use of MSOL PowerShell set this property to true. This will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph.
@@ -373,7 +374,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthorizationPolicy1>`: authorizationPolicy
     - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: 
       - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
       - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-      - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+      - `[ExcludedResourceActions <String[]>]`: 
   - `[DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions1>]`: defaultUserRolePermissions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowedToCreateApps <Boolean?>]`: Indicates whether the default user role can create applications.
@@ -389,7 +390,7 @@ DEFAULTUSERROLEOVERRIDES <IMicrosoftGraphDefaultUserRoleOverride\[]>: .
   - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: 
     - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
     - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-    - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+    - `[ExcludedResourceActions <String[]>]`: 
 
 DEFAULTUSERROLEPERMISSIONS `<IMicrosoftGraphDefaultUserRolePermissions1>`: defaultUserRolePermissions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

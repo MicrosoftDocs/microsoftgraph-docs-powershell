@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedAppRegistration
 
 ## SYNOPSIS
-Get managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserManagedAppRegistration -InputObject <IDevicesCorporateManagementIdenti
 ```
 
 ## DESCRIPTION
-Get managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ## EXAMPLES
 

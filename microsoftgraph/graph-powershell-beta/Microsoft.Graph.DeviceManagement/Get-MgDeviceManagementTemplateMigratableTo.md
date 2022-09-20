@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTemplateMigratableTo
 
 ## SYNOPSIS
-Get migratableTo from deviceManagement
+Collection of templates this template can migrate to
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementIdenti
 ```
 
 ## DESCRIPTION
-Get migratableTo from deviceManagement
+Collection of templates this template can migrate to
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgAppCatalogTeamAppDefinitionOutlineIcon
 
 ## SYNOPSIS
-Get outlineIcon from appCatalogs
+The outline version of the Teams app's icon.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get outlineIcon from appCatalogs
+The outline version of the Teams app's icon.
 
 ## EXAMPLES
 

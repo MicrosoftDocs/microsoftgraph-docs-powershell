@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentDefault
 
 ## SYNOPSIS
-Get assignmentDefaults from education
+Specifies class-level defaults respected by new assignments created in the class.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgEducationClassAssignmentDefault -InputObject <IEducationIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get assignmentDefaults from education
+Specifies class-level defaults respected by new assignments created in the class.
 
 ## EXAMPLES
 

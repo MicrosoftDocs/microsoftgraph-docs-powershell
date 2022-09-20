@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementExchangeOnPremisPolicy
 
 ## SYNOPSIS
-Get exchangeOnPremisesPolicies from deviceManagement
+The list of Exchange On Premisis policies configured by the tenant.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgDeviceManagementExchangeOnPremisPolicy [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Get exchangeOnPremisesPolicies from deviceManagement
+The list of Exchange On Premisis policies configured by the tenant.
 
 ## EXAMPLES
 

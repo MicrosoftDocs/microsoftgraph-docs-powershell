@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationSchoolClass
 
 ## SYNOPSIS
-Get classes from education
+Classes taught at the school.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get classes from education
+Classes taught at the school.
+Nullable.
 
 ## EXAMPLES
 

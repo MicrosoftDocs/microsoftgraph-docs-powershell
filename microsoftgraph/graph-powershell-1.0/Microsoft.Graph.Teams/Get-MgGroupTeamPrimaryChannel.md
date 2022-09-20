@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamPrimaryChannel
 
 ## SYNOPSIS
-Get primaryChannel from groups
+The general channel for the team.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get primaryChannel from groups
+The general channel for the team.
 
 ## EXAMPLES
 

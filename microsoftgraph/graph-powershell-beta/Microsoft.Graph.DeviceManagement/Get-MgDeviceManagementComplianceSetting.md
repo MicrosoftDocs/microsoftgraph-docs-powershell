@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementComplianceSetting
 
 ## SYNOPSIS
-Get complianceSettings from deviceManagement
+List of all ComplianceSettings
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementComplianceSetting -InputObject <IDeviceManagementIdentity>
 ```
 
 ## DESCRIPTION
-Get complianceSettings from deviceManagement
+List of all ComplianceSettings
 
 ## EXAMPLES
 

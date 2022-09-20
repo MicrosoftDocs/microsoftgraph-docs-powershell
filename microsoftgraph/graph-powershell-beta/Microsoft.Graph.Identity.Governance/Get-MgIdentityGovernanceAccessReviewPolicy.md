@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceAccessReviewPolicy
 
 ## SYNOPSIS
-Get policy from identityGovernance
+Resource that enables administrators to manage directory-level access review policies in their tenant.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgIdentityGovernanceAccessReviewPolicy [-ExpandProperty <String[]>] [-Proper
 ```
 
 ## DESCRIPTION
-Get policy from identityGovernance
+Resource that enables administrators to manage directory-level access review policies in their tenant.
 
 ## EXAMPLES
 

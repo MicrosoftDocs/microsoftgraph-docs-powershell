@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBookingBusinessCalendarView
 
 ## SYNOPSIS
-Get calendarView from bookingBusinesses
+The set of appointments of this business in a specified date range.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity> -End <String>
 ```
 
 ## DESCRIPTION
-Get calendarView from bookingBusinesses
+The set of appointments of this business in a specified date range.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementCompliancePolicySetting
 
 ## SYNOPSIS
-Get settings from deviceManagement
+Policy settings
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementCompliancePolicySetting -InputObject <IDeviceManagementIde
 ```
 
 ## DESCRIPTION
-Get settings from deviceManagement
+Policy settings
 
 ## EXAMPLES
 

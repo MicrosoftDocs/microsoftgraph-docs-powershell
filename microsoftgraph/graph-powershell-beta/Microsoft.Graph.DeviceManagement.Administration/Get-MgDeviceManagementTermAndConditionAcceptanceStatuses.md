@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTermAndConditionAcceptanceStatuses
 
 ## SYNOPSIS
-Get acceptanceStatuses from deviceManagement
+The list of acceptance statuses for this T&C policy.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementTermAndConditionAcceptanceStatuses -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Get acceptanceStatuses from deviceManagement
+The list of acceptance statuses for this T&C policy.
 
 ## EXAMPLES
 

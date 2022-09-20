@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDeviceManagementComanagedDeviceName
 
 ## SYNOPSIS
-Invoke action setDeviceName
+Set device name of the device.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Set-MgDeviceManagementComanagedDeviceName -InputObject <IDeviceManagementActions
 ```
 
 ## DESCRIPTION
-Invoke action setDeviceName
+Set device name of the device.
 
 ## EXAMPLES
 
@@ -211,6 +211,7 @@ BODYPARAMETER `<IPathsCjyki9DevicemanagementComanageddevicesManageddeviceIdMicro
   - `[DeviceName <String>]`: 
 
 INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

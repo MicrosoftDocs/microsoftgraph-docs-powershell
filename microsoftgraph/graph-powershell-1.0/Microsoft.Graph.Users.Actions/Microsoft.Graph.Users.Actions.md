@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: c8be7af3-d177-407c-97a9-fbf25568eb8e
+Module Guid: 7740bd89-b62e-4e48-8767-5af552e9f1a7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -21,10 +21,10 @@ Invoke action addCopy
 Invoke action addCopyFromContentTypeHub
 
 ### [Clear-MgUserManagedAppRegistrationByDeviceTag](Clear-MgUserManagedAppRegistrationByDeviceTag.md)
-Invoke action wipeManagedAppRegistrationsByDeviceTag
+Issues a wipe operation on an app registration with specified device tag.
 
 ### [Clear-MgUserManagedDevice](Clear-MgUserManagedDevice.md)
-Invoke action wipe
+Wipe a device
 
 ### [Clear-MgUserPresence](Clear-MgUserPresence.md)
 Invoke action clearPresence
@@ -87,7 +87,7 @@ Invoke action copyToSectionGroup
 Invoke action disableSmsSignIn
 
 ### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
-Invoke action disableLostMode
+Disable lost mode
 
 ### [Enable-MgUserAuthenticationPhoneMethodSmSign](Enable-MgUserAuthenticationPhoneMethodSmSign.md)
 Invoke action enableSmsSignIn
@@ -96,7 +96,7 @@ Invoke action enableSmsSignIn
 Invoke action exportPersonalData
 
 ### [Find-MgUserManagedDevice](Find-MgUserManagedDevice.md)
-Invoke action locateDevice
+Locate a device
 
 ### [Find-MgUserMeetingTime](Find-MgUserMeetingTime.md)
 Invoke action findMeetingTimes
@@ -165,7 +165,7 @@ Invoke action checkout
 Invoke action checkout
 
 ### [Invoke-MgCleanUserManagedDeviceWindowDevice](Invoke-MgCleanUserManagedDeviceWindowDevice.md)
-Invoke action cleanWindowsDevice
+Clean Windows device
 
 ### [Invoke-MgCreateOrGetUserOnlineMeeting](Invoke-MgCreateOrGetUserOnlineMeeting.md)
 Invoke action createOrGet
@@ -183,7 +183,7 @@ Invoke action dismissReminder
 Invoke action dismissReminder
 
 ### [Invoke-MgDownUserManagedDeviceShut](Invoke-MgDownUserManagedDeviceShut.md)
-Invoke action shutDown
+Shut down device
 
 ### [Invoke-MgFollowUserDriveItem](Invoke-MgFollowUserDriveItem.md)
 Invoke action follow
@@ -216,7 +216,7 @@ Invoke action invite
 Invoke action reprocessLicenseAssignment
 
 ### [Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser.md)
-Invoke action logoutSharedAppleDeviceActiveUser
+Logout shared Apple device active user
 
 ### [Invoke-MgPreviewUserDriveItem](Invoke-MgPreviewUserDriveItem.md)
 Invoke action preview
@@ -252,7 +252,7 @@ Invoke action reply
 Invoke action reply
 
 ### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
-Invoke action retire
+Retire a device
 
 ### [Invoke-MgScanUserManagedDeviceWindowDefender](Invoke-MgScanUserManagedDeviceWindowDefender.md)
 Invoke action windowsDefenderScan
@@ -276,7 +276,7 @@ Invoke action unfollow
 Invoke action associateWithHubSites
 
 ### [Lock-MgUserManagedDeviceRemote](Lock-MgUserManagedDeviceRemote.md)
-Invoke action remoteLock
+Remote lock
 
 ### [Move-MgUserMailFolder](Move-MgUserMailFolder.md)
 Invoke action move
@@ -357,22 +357,22 @@ Invoke action createUploadSession
 Invoke action publish
 
 ### [Remove-MgUserDeviceFromManagement](Remove-MgUserDeviceFromManagement.md)
-Invoke action removeAllDevicesFromManagement
+Retire all devices from management for this user
 
 ### [Remove-MgUserManagedDeviceUserFromSharedAppleDevice](Remove-MgUserManagedDeviceUserFromSharedAppleDevice.md)
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ### [Request-MgUserManagedDeviceRemoteAssistance](Request-MgUserManagedDeviceRemoteAssistance.md)
-Invoke action requestRemoteAssistance
+Request remote assistance
 
 ### [Reset-MgUserAuthenticationMethodPassword](Reset-MgUserAuthenticationMethodPassword.md)
 Invoke action resetPassword
 
 ### [Reset-MgUserManagedDevicePasscode](Reset-MgUserManagedDevicePasscode.md)
-Invoke action resetPasscode
+Reset passcode
 
 ### [Restart-MgUserManagedDeviceNow](Restart-MgUserManagedDeviceNow.md)
-Invoke action rebootNow
+Reboot device
 
 ### [Restore-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Restore-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 Invoke action restore
@@ -408,7 +408,7 @@ Invoke action restoreVersion
 Invoke action restoreVersion
 
 ### [Restore-MgUserManagedDevicePasscode](Restore-MgUserManagedDevicePasscode.md)
-Invoke action recoverPasscode
+Recover passcode
 
 ### [Revoke-MgUserSign](Revoke-MgUserSign.md)
 Invoke action revokeSignInSessions
@@ -441,7 +441,7 @@ Invoke action assignLicense
 Invoke action setPresence
 
 ### [Skip-MgUserManagedDeviceActivationLock](Skip-MgUserManagedDeviceActivationLock.md)
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ### [Stop-MgUserEvent](Stop-MgUserEvent.md)
 Invoke action cancel

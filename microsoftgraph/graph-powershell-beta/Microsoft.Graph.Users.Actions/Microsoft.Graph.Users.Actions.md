@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: c8be7af3-d177-407c-97a9-fbf25568eb8e
+Module Guid: 7740bd89-b62e-4e48-8767-5af552e9f1a7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -24,16 +24,16 @@ Invoke action addCopyFromContentTypeHub
 Invoke action applyDecisions
 
 ### [Clear-MgUserAndBlockManagedApp](Clear-MgUserAndBlockManagedApp.md)
-Invoke action wipeAndBlockManagedApps
+Blocks the managed app user from app check-in.
 
 ### [Clear-MgUserManagedAppRegistrationByAzureAdDeviceId](Clear-MgUserManagedAppRegistrationByAzureAdDeviceId.md)
-Invoke action wipeManagedAppRegistrationsByAzureAdDeviceId
+Issues a wipe operation on an app registration with specified aad device Id.
 
 ### [Clear-MgUserManagedAppRegistrationByDeviceTag](Clear-MgUserManagedAppRegistrationByDeviceTag.md)
-Invoke action wipeManagedAppRegistrationsByDeviceTag
+Issues a wipe operation on an app registration with specified device tag.
 
 ### [Clear-MgUserManagedDevice](Clear-MgUserManagedDevice.md)
-Invoke action wipe
+Wipe a device
 
 ### [Clear-MgUserPresence](Clear-MgUserPresence.md)
 Invoke action clearPresence
@@ -135,7 +135,7 @@ Invoke action disableSmsSignIn
 Invoke action disable
 
 ### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
-Invoke action disableLostMode
+Disable lost mode
 
 ### [Enable-MgUserAuthenticationMethodSmSign](Enable-MgUserAuthenticationMethodSmSign.md)
 Invoke action enableSmsSignIn
@@ -144,13 +144,13 @@ Invoke action enableSmsSignIn
 Invoke action enableSmsSignIn
 
 ### [Enable-MgUserManagedDeviceLostMode](Enable-MgUserManagedDeviceLostMode.md)
-Invoke action enableLostMode
+Enable lost mode
 
 ### [Export-MgUserPersonalData](Export-MgUserPersonalData.md)
 Invoke action exportPersonalData
 
 ### [Find-MgUserManagedDevice](Find-MgUserManagedDevice.md)
-Invoke action locateDevice
+Locate a device
 
 ### [Find-MgUserMeetingTime](Find-MgUserMeetingTime.md)
 Invoke action findMeetingTimes
@@ -237,7 +237,7 @@ Invoke action grant
 Invoke action hideForUser
 
 ### [Initialize-MgUserManagedDeviceEsim](Initialize-MgUserManagedDeviceEsim.md)
-Invoke action activateDeviceEsim
+Activate eSIM on the device.
 
 ### [Initialize-MgUserServicePlan](Initialize-MgUserServicePlan.md)
 Invoke action activateServicePlan
@@ -294,7 +294,7 @@ Invoke action checkout
 Invoke action checkout
 
 ### [Invoke-MgCleanUserManagedDeviceWindowDevice](Invoke-MgCleanUserManagedDeviceWindowDevice.md)
-Invoke action cleanWindowsDevice
+Clean Windows device
 
 ### [Invoke-MgCloudUserManagedDevice](Invoke-MgCloudUserManagedDevice.md)
 Invoke action reprovisionCloudPc
@@ -321,7 +321,7 @@ Invoke action dismissReminder
 Invoke action downloadAppDiagnostics
 
 ### [Invoke-MgDownUserManagedDeviceShut](Invoke-MgDownUserManagedDeviceShut.md)
-Invoke action shutDown
+Shut down device
 
 ### [Invoke-MgExecuteUserManagedDeviceAction](Invoke-MgExecuteUserManagedDeviceAction.md)
 Invoke action executeAction
@@ -378,7 +378,7 @@ Invoke action invite
 Invoke action reprocessLicenseAssignment
 
 ### [Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser.md)
-Invoke action logoutSharedAppleDeviceActiveUser
+Logout shared Apple device active user
 
 ### [Invoke-MgMarkUserChatReadForUser](Invoke-MgMarkUserChatReadForUser.md)
 Invoke action markChatReadForUser
@@ -390,7 +390,7 @@ Invoke action markChatUnreadForUser
 Invoke action overrideComplianceState
 
 ### [Invoke-MgPlayUserManagedDeviceLostModeSound](Invoke-MgPlayUserManagedDeviceLostModeSound.md)
-Invoke action playLostModeSound
+Play lost mode sound
 
 ### [Invoke-MgPreviewUserDriveItem](Invoke-MgPreviewUserDriveItem.md)
 Invoke action preview
@@ -438,10 +438,10 @@ Invoke action reprovision
 Invoke action reprovision
 
 ### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
-Invoke action retire
+Retire a device
 
 ### [Invoke-MgRotateUserManagedDeviceBitLockerKey](Invoke-MgRotateUserManagedDeviceBitLockerKey.md)
-Invoke action rotateBitLockerKeys
+Rotate BitLockerKeys
 
 ### [Invoke-MgRotateUserManagedDeviceFileVaultKey](Invoke-MgRotateUserManagedDeviceFileVaultKey.md)
 Invoke action rotateFileVaultKey
@@ -489,7 +489,7 @@ Invoke action unsubscribe
 Invoke action associateWithHubSites
 
 ### [Lock-MgUserManagedDeviceRemote](Lock-MgUserManagedDeviceRemote.md)
-Invoke action remoteLock
+Remote lock
 
 ### [Move-MgUserMailFolder](Move-MgUserMailFolder.md)
 Invoke action move
@@ -609,13 +609,13 @@ Invoke action createUploadSession
 Invoke action publish
 
 ### [Remove-MgUserDeviceFromManagement](Remove-MgUserDeviceFromManagement.md)
-Invoke action removeAllDevicesFromManagement
+Retire all devices from management for this user
 
 ### [Remove-MgUserManagedDeviceFirmwareConfigurationInterfaceManagement](Remove-MgUserManagedDeviceFirmwareConfigurationInterfaceManagement.md)
-Invoke action removeDeviceFirmwareConfigurationInterfaceManagement
+Remove device from Device Firmware Configuration Interface management
 
 ### [Remove-MgUserManagedDeviceUserFromSharedAppleDevice](Remove-MgUserManagedDeviceUserFromSharedAppleDevice.md)
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ### [Rename-MgUserCloudPc](Rename-MgUserCloudPc.md)
 Invoke action rename
@@ -624,13 +624,13 @@ Invoke action rename
 Invoke action changeUserAccountType
 
 ### [Request-MgUserManagedDeviceRemoteAssistance](Request-MgUserManagedDeviceRemoteAssistance.md)
-Invoke action requestRemoteAssistance
+Request remote assistance
 
 ### [Reset-MgUserAuthenticationMethodPassword](Reset-MgUserAuthenticationMethodPassword.md)
 Invoke action resetPassword
 
 ### [Reset-MgUserManagedDevicePasscode](Reset-MgUserManagedDevicePasscode.md)
-Invoke action resetPasscode
+Reset passcode
 
 ### [Reset-MgUserPendingAccessReviewInstanceDecision](Reset-MgUserPendingAccessReviewInstanceDecision.md)
 Invoke action resetDecisions
@@ -642,7 +642,7 @@ Invoke action resizeCloudPc
 Invoke action reboot
 
 ### [Restart-MgUserManagedDeviceNow](Restart-MgUserManagedDeviceNow.md)
-Invoke action rebootNow
+Reboot device
 
 ### [Restore-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Restore-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 Invoke action restore
@@ -681,7 +681,7 @@ Invoke action restoreVersion
 Invoke action restoreCloudPc
 
 ### [Restore-MgUserManagedDevicePasscode](Restore-MgUserManagedDevicePasscode.md)
-Invoke action recoverPasscode
+Recover passcode
 
 ### [Revoke-MgUserDriveItemPermissionGrant](Revoke-MgUserDriveItemPermissionGrant.md)
 Invoke action revokeGrants
@@ -690,7 +690,7 @@ Invoke action revokeGrants
 Invoke action revokeGrants
 
 ### [Revoke-MgUserManagedDeviceAppleVppLicense](Revoke-MgUserManagedDeviceAppleVppLicense.md)
-Invoke action revokeAppleVppLicenses
+Revoke all Apple Vpp licenses for a device
 
 ### [Revoke-MgUserSign](Revoke-MgUserSign.md)
 Invoke action revokeSignInSessions
@@ -735,7 +735,7 @@ Invoke action assignLicense
 Invoke action setCloudPcReviewStatus
 
 ### [Set-MgUserManagedDeviceName](Set-MgUserManagedDeviceName.md)
-Invoke action setDeviceName
+Set device name of the device.
 
 ### [Set-MgUserPresence](Set-MgUserPresence.md)
 Invoke action setPresence
@@ -744,10 +744,10 @@ Invoke action setPresence
 Invoke action setUserPreferredPresence
 
 ### [Skip-MgUserManagedDeviceActivationLock](Skip-MgUserManagedDeviceActivationLock.md)
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ### [Start-MgUserManagedDeviceConfigurationManagerAction](Start-MgUserManagedDeviceConfigurationManagerAction.md)
-Invoke action triggerConfigurationManagerAction
+Trigger action on ConfigurationManager client
 
 ### [Stop-MgUserCloudPcGracePeriod](Stop-MgUserCloudPcGracePeriod.md)
 Invoke action endGracePeriod
@@ -819,7 +819,7 @@ Invoke action evaluateClassificationResults
 Invoke action evaluateRemoval
 
 ### [Unblock-MgUserManagedApp](Unblock-MgUserManagedApp.md)
-Invoke action unblockManagedApps
+Unblocks the managed app user from app check-in.
 
 ### [Undo-MgUserChatMessageReplySoftDelete](Undo-MgUserChatMessageReplySoftDelete.md)
 Invoke action undoSoftDelete

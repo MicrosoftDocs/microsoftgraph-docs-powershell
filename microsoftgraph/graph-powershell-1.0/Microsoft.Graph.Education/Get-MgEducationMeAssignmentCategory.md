@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgEducationMeAssignmentCategory
 
 ## SYNOPSIS
-Get categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgEducationMeAssignmentCategory -EducationAssignmentId <String> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

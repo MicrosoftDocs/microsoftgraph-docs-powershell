@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Search
-Module Guid: 0ef5822b-fc59-4872-b6dc-f3a4210c340e
+Module Guid: f720034a-d3e0-42b1-8a71-46129b04522f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search
 Help Version: 1.0.0.0
 Locale: en-US
@@ -24,16 +24,18 @@ Get connections from external
 Get groups from external
 
 ### [Get-MgExternalConnectionGroupMember](Get-MgExternalConnectionGroupMember.md)
-Get members from external
+A member added to an externalGroup.
+You can add Azure Active Directory users, Azure Active Directory groups, or other externalGroups as members.
 
 ### [Get-MgExternalConnectionItem](Get-MgExternalConnectionItem.md)
 Get items from external
 
 ### [Get-MgExternalConnectionItemActivity](Get-MgExternalConnectionItemActivity.md)
-Get activities from external
+Write-only property.
+Returns results.
 
 ### [Get-MgExternalConnectionItemActivityPerformedBy](Get-MgExternalConnectionItemActivityPerformedBy.md)
-Get performedBy from external
+Represents an identity used to identify who is responsible for the activity.
 
 ### [Get-MgExternalConnectionOperation](Get-MgExternalConnectionOperation.md)
 Get operations from external
@@ -45,16 +47,16 @@ Get quota from external
 Get schema from external
 
 ### [Get-MgSearchAcronym](Get-MgSearchAcronym.md)
-Get acronyms from search
+Administrative answer in Microsoft Search results to define common acronyms in a organization.
 
 ### [Get-MgSearchBookmark](Get-MgSearchBookmark.md)
-Get bookmarks from search
+Administrative answer in Microsoft Search results for common search queries in an organization.
 
 ### [Get-MgSearchEntity](Get-MgSearchEntity.md)
 Get search
 
 ### [Get-MgSearchQna](Get-MgSearchQna.md)
-Get qnas from search
+Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
 
 ### [Invoke-MgQuerySearch](Invoke-MgQuerySearch.md)
 Invoke action query

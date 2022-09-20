@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserOutlookTaskAttachment
 
 ## SYNOPSIS
-Get attachments from users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserOutlookTaskAttachment -InputObject <IUsersIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get attachments from users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

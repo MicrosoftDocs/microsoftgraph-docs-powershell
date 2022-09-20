@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserScopedRoleMemberOf
 
 ## SYNOPSIS
-Get scopedRoleMemberOf from users
+The scoped-role administrative unit memberships for this user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Get scopedRoleMemberOf from users
+The scoped-role administrative unit memberships for this user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

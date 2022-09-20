@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyDefinitionPresentation
 
 ## SYNOPSIS
-Get presentations from deviceManagement
+The group policy presentations associated with the definition.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementGroupPolicyDefinitionPresentation -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Get presentations from deviceManagement
+The group policy presentations associated with the definition.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectoryRoleEligibilitySchedule
 
 ## SYNOPSIS
-Get roleEligibilitySchedules from roleManagement
+Schedules for role eligibility operations.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgRoleManagementDirectoryRoleEligibilitySchedule -InputObject <IDeviceManage
 ```
 
 ## DESCRIPTION
-Get roleEligibilitySchedules from roleManagement
+Schedules for role eligibility operations.
 
 ## EXAMPLES
 

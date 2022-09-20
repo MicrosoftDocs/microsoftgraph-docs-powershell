@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 7a2fa07c-0448-4e11-9fd7-4955c361b994
+Module Guid: 73d5e246-8d31-4e49-aae9-2eeefe36365c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,28 +12,48 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Users Cmdlets
 ### [Get-MgUser](Get-MgUser.md)
-Get a user
+Retrieve the properties and relationships of user object.
+This operation returns by default only a subset of the more commonly used properties for each user.
+These _default_ properties are noted in the Properties section.
+To get properties that are _not_ returned by default, do a GET operation for the user and specify the properties in a `$select` OData query option.
+Because the **user** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
 
 ### [Get-MgUserCreatedObject](Get-MgUserCreatedObject.md)
-Get createdObjects from users
+Directory objects that were created by the user.
+Read-only.
+Nullable.
 
 ### [Get-MgUserDirectReport](Get-MgUserDirectReport.md)
-Get directReports from users
+The users and contacts that report to the user.
+(The users and contacts that have their manager property set to this user.) Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserExtension](Get-MgUserExtension.md)
-Get extensions from users
+The collection of open extensions defined for the user.
+Supports $expand.
+Nullable.
 
 ### [Get-MgUserLicenseDetail](Get-MgUserLicenseDetail.md)
 Get licenseDetails from users
 
 ### [Get-MgUserManager](Get-MgUserManager.md)
-Get manager from users
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
-Get ref of manager from users
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
-Get memberOf from users
+The groups, directory roles and administrative units that the user is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
 The user or contact that is this user's manager.
@@ -48,106 +68,152 @@ Get notifications from users
 Get oauth2PermissionGrants from users
 
 ### [Get-MgUserOutlookMasterCategory](Get-MgUserOutlookMasterCategory.md)
-Get masterCategories from users
+A list of categories defined for the user.
 
 ### [Get-MgUserOutlookTask](Get-MgUserOutlookTask.md)
 Get tasks from users
 
 ### [Get-MgUserOutlookTaskAttachment](Get-MgUserOutlookTaskAttachment.md)
-Get attachments from users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskFolder](Get-MgUserOutlookTaskFolder.md)
 Get taskFolders from users
 
 ### [Get-MgUserOutlookTaskFolderMultiValueExtendedProperty](Get-MgUserOutlookTaskFolderMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the task folder.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskFolderSingleValueExtendedProperty](Get-MgUserOutlookTaskFolderSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the task folder.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskFolderTask](Get-MgUserOutlookTaskFolderTask.md)
-Get tasks from users
+The tasks in this task folder.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskFolderTaskAttachment](Get-MgUserOutlookTaskFolderTaskAttachment.md)
-Get attachments from users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskFolderTaskMultiValueExtendedProperty](Get-MgUserOutlookTaskFolderTaskMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the task.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskFolderTaskSingleValueExtendedProperty](Get-MgUserOutlookTaskFolderTaskSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the task.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskGroup](Get-MgUserOutlookTaskGroup.md)
 Get taskGroups from users
 
 ### [Get-MgUserOutlookTaskGroupTaskFolder](Get-MgUserOutlookTaskGroupTaskFolder.md)
-Get taskFolders from users
+The collection of task folders in the task group.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskGroupTaskFolderMultiValueExtendedProperty](Get-MgUserOutlookTaskGroupTaskFolderMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the task folder.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskGroupTaskFolderSingleValueExtendedProperty](Get-MgUserOutlookTaskGroupTaskFolderSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the task folder.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskGroupTaskFolderTask](Get-MgUserOutlookTaskGroupTaskFolderTask.md)
-Get tasks from users
+The tasks in this task folder.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskGroupTaskFolderTaskAttachment](Get-MgUserOutlookTaskGroupTaskFolderTaskAttachment.md)
-Get attachments from users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedProperty](Get-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the task.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskGroupTaskFolderTaskSingleValueExtendedProperty](Get-MgUserOutlookTaskGroupTaskFolderTaskSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the task.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskMultiValueExtendedProperty](Get-MgUserOutlookTaskMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the task.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOutlookTaskSingleValueExtendedProperty](Get-MgUserOutlookTaskSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the task.
+Read-only.
+Nullable.
 
 ### [Get-MgUserOwnedDevice](Get-MgUserOwnedDevice.md)
-Get ownedDevices from users
+Devices that are owned by the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserOwnedObject](Get-MgUserOwnedObject.md)
-Get ownedObjects from users
+Directory objects that are owned by the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserPhoto](Get-MgUserPhoto.md)
-Get photo from users
+The user's profile photo.
+Read-only.
 
 ### [Get-MgUserPhotoContent](Get-MgUserPhotoContent.md)
 Get media content for the navigation property photo from users
 
 ### [Get-MgUserRegisteredDevice](Get-MgUserRegisteredDevice.md)
-Get registeredDevices from users
+Devices that are registered for the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserSetting](Get-MgUserSetting.md)
 Get settings from users
 
 ### [Get-MgUserSettingContactMergeSuggestion](Get-MgUserSettingContactMergeSuggestion.md)
-Get contactMergeSuggestions from users
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
 ### [Get-MgUserSettingItemInsight](Get-MgUserSettingItemInsight.md)
-Get itemInsights from users
+The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
+Get userInsightsSettings through this navigation property.
 
 ### [Get-MgUserSettingRegionalAndLanguageSetting](Get-MgUserSettingRegionalAndLanguageSetting.md)
-Get regionalAndLanguageSettings from users
+The user's preferences for languages, regional locale and date/time formatting.
 
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
-Get shiftPreferences from users
+The shift preferences for the user.
 
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
-Get lists from users
+The task lists in the users mailbox.
 
 ### [Get-MgUserTodoListExtension](Get-MgUserTodoListExtension.md)
-Get extensions from users
+The collection of open extensions defined for the task list.
+Nullable.
 
 ### [Get-MgUserTodoListTask](Get-MgUserTodoListTask.md)
-Get tasks from users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ### [Get-MgUserTodoListTaskAttachment](Get-MgUserTodoListTaskAttachment.md)
-Get attachments from users
+A collection of file attachments for the task.
 
 ### [Get-MgUserTodoListTaskAttachmentContent](Get-MgUserTodoListTaskAttachmentContent.md)
 Get media content for the navigation property attachments from users
@@ -156,28 +222,36 @@ Get media content for the navigation property attachments from users
 Get attachmentSessions from users
 
 ### [Get-MgUserTodoListTaskAttachmentSessionContent](Get-MgUserTodoListTaskAttachmentSessionContent.md)
-Get content for the navigation property attachmentSessions from users
+The content streams that are uploaded.
 
 ### [Get-MgUserTodoListTaskChecklistItem](Get-MgUserTodoListTaskChecklistItem.md)
-Get checklistItems from users
+A collection of smaller subtasks linked to the more complex parent task.
 
 ### [Get-MgUserTodoListTaskExtension](Get-MgUserTodoListTaskExtension.md)
-Get extensions from users
+The collection of open extensions defined for the task.
+Nullable.
 
 ### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
-Get linkedResources from users
+A collection of resources linked to the task.
 
 ### [Get-MgUserTransitiveMemberOf](Get-MgUserTransitiveMemberOf.md)
-Get transitiveMemberOf from users
+The groups, including nested groups, and directory roles that a user is a member of.
+Nullable.
 
 ### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
 A collection of resources linked to the task.
 
 ### [Get-MgUserTransitiveReport](Get-MgUserTransitiveReport.md)
-Get transitiveReports from users
+The transitive reports for a user.
+Read-only.
 
 ### [New-MgUser](New-MgUser.md)
-Create user
+Create a new user.\nThe request body contains the user to create.
+At a minimum, you must specify the required properties for the user.
+You can optionally specify any other writable properties.
+This operation returns by default only a subset of the properties for each user.
+These default properties are noted in the Properties section.
+To get properties that are not returned by default, do a GET operation and specify the properties in a `$select` OData query option.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
@@ -281,7 +355,10 @@ Create new navigation property to linkedResources for users
 A collection of resources linked to the task.
 
 ### [Remove-MgUser](Remove-MgUser.md)
-Delete a user
+Delete user.
+ When deleted, user resources are moved to a temporary container and can be restored within 30 days.
+After that time, they are permanently deleted.
+To learn more, see deletedItems.
 
 ### [Remove-MgUserExtension](Remove-MgUserExtension.md)
 Delete navigation property extensions for users
@@ -407,10 +484,12 @@ Update media content for the navigation property photo in users
 Update media content for the navigation property attachments in users
 
 ### [Set-MgUserTodoListTaskAttachmentSessionContent](Set-MgUserTodoListTaskAttachmentSessionContent.md)
-Update content for the navigation property attachmentSessions in users
+The content streams that are uploaded.
 
 ### [Update-MgUser](Update-MgUser.md)
-Update user
+Update the properties of a user object.
+Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles.
+Compare member and guest default permissions to see properties they can manage.
 
 ### [Update-MgUserExtension](Update-MgUserExtension.md)
 Update the navigation property extensions in users

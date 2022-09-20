@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserTransitiveReport
 
 ## SYNOPSIS
-Get transitiveReports from users
+The transitive reports for a user.
+Read-only.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgUserTransitiveReport -InputObject <IUsersIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get transitiveReports from users
+The transitive reports for a user.
+Read-only.
 
 ## EXAMPLES
 

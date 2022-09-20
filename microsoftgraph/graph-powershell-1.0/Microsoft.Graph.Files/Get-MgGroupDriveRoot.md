@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupDriveRoot
 
 ## SYNOPSIS
-Get root from groups
+The root folder of the drive.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgGroupDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get root from groups
+The root folder of the drive.
+Read-only.
 
 ## EXAMPLES
 

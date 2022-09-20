@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementCategory
 
 ## SYNOPSIS
-Get categories from deviceManagement
+The available categories
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementCategory -InputObject <IDeviceManagementIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get categories from deviceManagement
+The available categories
 
 ## EXAMPLES
 

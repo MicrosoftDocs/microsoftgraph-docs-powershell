@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementConfigurationPolicyAssignment
 
 ## SYNOPSIS
-Get assignments from deviceManagement
+Policy assignments
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementConfigurationPolicyAssignment -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Get assignments from deviceManagement
+Policy assignments
 
 ## EXAMPLES
 

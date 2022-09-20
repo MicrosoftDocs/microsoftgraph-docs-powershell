@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgOnPremisePublishingProfileAgentGroup
 
 ## SYNOPSIS
-Get agentGroups from onPremisesPublishingProfiles
+List of existing onPremisesAgentGroup objects.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -48,7 +50,9 @@ Get-MgOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity> 
 ```
 
 ## DESCRIPTION
-Get agentGroups from onPremisesPublishingProfiles
+List of existing onPremisesAgentGroup objects.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

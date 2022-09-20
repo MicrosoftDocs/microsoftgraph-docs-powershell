@@ -451,7 +451,7 @@ BODYPARAMETER `<IMicrosoftGraphComanagementEligibleDevice>`: Device Co-Managemen
   - `[OwnerType <OwnerType?>]`: Owner type of device.
   - `[ReferenceId <String>]`: ReferenceId
   - `[SerialNumber <String>]`: SerialNumber
-  - `[Status <String>]`: comanagementEligibleType
+  - `[Status <ComanagementEligibleType?>]`: comanagementEligibleType
   - `[Upn <String>]`: UPN
   - `[UserEmail <String>]`: UserEmail
   - `[UserId <String>]`: UserId

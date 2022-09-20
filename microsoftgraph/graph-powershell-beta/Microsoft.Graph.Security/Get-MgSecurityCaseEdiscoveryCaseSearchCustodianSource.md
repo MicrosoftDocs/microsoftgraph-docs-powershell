@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource
 
 ## SYNOPSIS
-Get custodianSources from security
+Custodian sources that are included in the eDiscovery search.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurityIde
 ```
 
 ## DESCRIPTION
-Get custodianSources from security
+Custodian sources that are included in the eDiscovery search.
 
 ## EXAMPLES
 

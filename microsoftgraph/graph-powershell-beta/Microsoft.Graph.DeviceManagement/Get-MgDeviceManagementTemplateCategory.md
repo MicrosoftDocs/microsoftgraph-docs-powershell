@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTemplateCategory
 
 ## SYNOPSIS
-Get categories from deviceManagement
+Collection of setting categories within the template
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementTemplateCategory -InputObject <IDeviceManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Get categories from deviceManagement
+Collection of setting categories within the template
 
 ## EXAMPLES
 

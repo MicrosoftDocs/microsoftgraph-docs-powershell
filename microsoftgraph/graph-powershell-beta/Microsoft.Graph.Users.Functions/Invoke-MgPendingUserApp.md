@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgPendingUserApp
 
 ## SYNOPSIS
-Invoke function getManagedDevicesWithFailedOrPendingApps
+Retrieves the list of devices with failed or pending apps
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Invoke-MgPendingUserApp -InputObject <IUsersFunctionsIdentity> [<CommonParameter
 ```
 
 ## DESCRIPTION
-Invoke function getManagedDevicesWithFailedOrPendingApps
+Retrieves the list of devices with failed or pending apps
 
 ## EXAMPLES
 
@@ -122,6 +122,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[OnenotePageId <String>]`: key: id of onenotePage
   - `[Q <String>]`: Usage: q='{q}'
   - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
+  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
   - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
   - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'

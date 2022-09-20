@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTeamworkInstalledApp
 
 ## SYNOPSIS
-Get installedApps from users
+The apps installed in the personal scope of this user.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get installedApps from users
+The apps installed in the personal scope of this user.
 
 ## EXAMPLES
 

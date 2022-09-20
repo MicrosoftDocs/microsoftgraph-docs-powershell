@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointSupportedRegion
 
 ## SYNOPSIS
-Get supportedRegions from deviceManagement
+Cloud PC supported regions.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementVirtualEndpointSupportedRegion -InputObject <IDeviceManage
 ```
 
 ## DESCRIPTION
-Get supportedRegions from deviceManagement
+Cloud PC supported regions.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementMicrosoftTunnelHealthThreshold
 
 ## SYNOPSIS
-Get microsoftTunnelHealthThresholds from deviceManagement
+Collection of MicrosoftTunnelHealthThreshold settings associated with account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementMicrosoftTunnelHealthThreshold -InputObject <IDeviceManage
 ```
 
 ## DESCRIPTION
-Get microsoftTunnelHealthThresholds from deviceManagement
+Collection of MicrosoftTunnelHealthThreshold settings associated with account.
 
 ## EXAMPLES
 

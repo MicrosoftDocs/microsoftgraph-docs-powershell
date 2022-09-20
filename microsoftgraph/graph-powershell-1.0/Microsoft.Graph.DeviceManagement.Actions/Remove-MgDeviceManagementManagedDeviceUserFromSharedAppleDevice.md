@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice
 
 ## SYNOPSIS
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -InputObject <ID
 ```
 
 ## DESCRIPTION
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ## EXAMPLES
 
@@ -212,6 +212,7 @@ BODYPARAMETER `<IPaths5C9DebDevicemanagementManageddevicesManageddeviceIdMicroso
   - `[UserPrincipalName <String>]`: 
 
 INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

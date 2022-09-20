@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamChannel
 
 ## SYNOPSIS
-Get allChannels from groups
+List of channels either hosted in or shared with the team (incoming channels).
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Get-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get allChannels from groups
+List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecuritySecureScore
 
 ## SYNOPSIS
-Get secureScores from security
+Measurements of tenants' security posture to help protect them from threats.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get secureScores from security
+Measurements of tenants' security posture to help protect them from threats.
 
 ## EXAMPLES
 

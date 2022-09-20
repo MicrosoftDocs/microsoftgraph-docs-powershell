@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse
 
 ## SYNOPSIS
-Get microsoftTunnelServerLogCollectionResponses from deviceManagement
+Collection of MicrosoftTunnelServerLogCollectionResponse settings associated with account.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse -InputObject <I
 ```
 
 ## DESCRIPTION
-Get microsoftTunnelServerLogCollectionResponses from deviceManagement
+Collection of MicrosoftTunnelServerLogCollectionResponse settings associated with account.
 
 ## EXAMPLES
 

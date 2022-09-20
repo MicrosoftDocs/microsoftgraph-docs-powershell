@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDomain
 
 ## SYNOPSIS
-Delete domain
+Deletes a domain from a tenant.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Remove-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete domain
+Deletes a domain from a tenant.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserMailFolderChildFolderMessageExtension
 
 ## SYNOPSIS
-Get extensions from users
+The collection of open extensions defined for the message.
+Nullable.
 
 ## SYNTAX
 
@@ -34,7 +35,8 @@ Get-MgUserMailFolderChildFolderMessageExtension -InputObject <IMailIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get extensions from users
+The collection of open extensions defined for the message.
+Nullable.
 
 ## EXAMPLES
 

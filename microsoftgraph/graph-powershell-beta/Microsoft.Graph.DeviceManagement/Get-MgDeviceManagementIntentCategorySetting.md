@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementIntentCategorySetting
 
 ## SYNOPSIS
-Get settings from deviceManagement
+The settings this category contains
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementIntentCategorySetting -InputObject <IDeviceManagementIdent
 ```
 
 ## DESCRIPTION
-Get settings from deviceManagement
+The settings this category contains
 
 ## EXAMPLES
 

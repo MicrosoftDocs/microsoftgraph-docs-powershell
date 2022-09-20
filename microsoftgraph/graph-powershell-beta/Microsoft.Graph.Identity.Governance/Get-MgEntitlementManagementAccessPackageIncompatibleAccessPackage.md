@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage
 
 ## SYNOPSIS
-Get incompatibleAccessPackages from identityGovernance
+The  access packages whose assigned users are ineligible to be assigned this access package.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackage
 ```
 
 ## DESCRIPTION
-Get incompatibleAccessPackages from identityGovernance
+The  access packages whose assigned users are ineligible to be assigned this access package.
 
 ## EXAMPLES
 

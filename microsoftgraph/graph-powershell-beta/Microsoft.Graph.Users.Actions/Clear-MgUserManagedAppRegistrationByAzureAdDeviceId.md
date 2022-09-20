@@ -8,7 +8,7 @@ schema: 2.0.0
 # Clear-MgUserManagedAppRegistrationByAzureAdDeviceId
 
 ## SYNOPSIS
-Invoke action wipeManagedAppRegistrationsByAzureAdDeviceId
+Issues a wipe operation on an app registration with specified aad device Id.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Clear-MgUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActionsI
 ```
 
 ## DESCRIPTION
-Invoke action wipeManagedAppRegistrationsByAzureAdDeviceId
+Issues a wipe operation on an app registration with specified aad device Id.
 
 ## EXAMPLES
 

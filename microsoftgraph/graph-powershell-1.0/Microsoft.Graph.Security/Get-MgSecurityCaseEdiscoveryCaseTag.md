@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseTag
 
 ## SYNOPSIS
-Get tags from security
+Returns a list of ediscoveryReviewTag objects associated to this case.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get tags from security
+Returns a list of ediscoveryReviewTag objects associated to this case.
 
 ## EXAMPLES
 

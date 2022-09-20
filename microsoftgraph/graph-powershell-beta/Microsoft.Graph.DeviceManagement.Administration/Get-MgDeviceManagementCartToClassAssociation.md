@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementCartToClassAssociation
 
 ## SYNOPSIS
-Get cartToClassAssociations from deviceManagement
+The Cart To Class Associations.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementCartToClassAssociation -InputObject <IDeviceManagementAdmi
 ```
 
 ## DESCRIPTION
-Get cartToClassAssociations from deviceManagement
+The Cart To Class Associations.
 
 ## EXAMPLES
 

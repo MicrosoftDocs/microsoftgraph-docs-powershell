@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
 
 ## SYNOPSIS
-Get userExperienceAnalyticsDeviceStartupProcessPerformance from deviceManagement
+User experience analytics device Startup Process Performance
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsDeviceStartupProcessPerformance from deviceManagement
+User experience analytics device Startup Process Performance
 
 ## EXAMPLES
 

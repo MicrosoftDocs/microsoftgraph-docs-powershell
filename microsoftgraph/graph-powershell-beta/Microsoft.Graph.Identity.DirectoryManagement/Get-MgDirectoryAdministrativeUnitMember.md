@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryAdministrativeUnitMember
 
 ## SYNOPSIS
-Get members from directory
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get members from directory
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupTransitiveMember
 
 ## SYNOPSIS
-Get transitiveMembers from groups
+The direct and transitive members of a group.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgGroupTransitiveMember -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get transitiveMembers from groups
+The direct and transitive members of a group.
+Nullable.
 
 ## EXAMPLES
 

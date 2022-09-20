@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyCategoryDefinition
 
 ## SYNOPSIS
-Get definitions from deviceManagement
+The immediate GroupPolicyDefinition children of the category
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementGroupPolicyCategoryDefinition -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Get definitions from deviceManagement
+The immediate GroupPolicyDefinition children of the category
 
 ## EXAMPLES
 

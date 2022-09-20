@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
-Get federatedIdentityCredentials from applications
+Federated identities for applications.
+Supports $expand and $filter (startsWith, and eq, ne when counting empty collections and only with advanced query parameters).
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity
 ```
 
 ## DESCRIPTION
-Get federatedIdentityCredentials from applications
+Federated identities for applications.
+Supports $expand and $filter (startsWith, and eq, ne when counting empty collections and only with advanced query parameters).
 
 ## EXAMPLES
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgServicePrincipalOauth2PermissionGrant
 
 ## SYNOPSIS
-Get oauth2PermissionGrants from servicePrincipals
+Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgServicePrincipalOauth2PermissionGrant -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Get oauth2PermissionGrants from servicePrincipals
+Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

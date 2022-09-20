@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserOnenoteNotebookSection
 
 ## SYNOPSIS
-Get sections from users
+The sections in the notebook.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgUserOnenoteNotebookSection -NotebookId <String> -UserId <String> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get sections from users
+The sections in the notebook.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementMicrosoftTunnelSite
 
 ## SYNOPSIS
-Get microsoftTunnelSites from deviceManagement
+Collection of MicrosoftTunnelSite settings associated with account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementMicrosoftTunnelSite -InputObject <IDeviceManagementIdentit
 ```
 
 ## DESCRIPTION
-Get microsoftTunnelSites from deviceManagement
+Collection of MicrosoftTunnelSite settings associated with account.
 
 ## EXAMPLES
 

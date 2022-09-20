@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CloudPrint
-Module Guid: 9f9d40ea-a7ea-4d06-bc9b-4025cfaf37f3
+Module Guid: f1d7afb5-d74d-4048-9271-8dfc7d6e34d3
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,58 +15,67 @@ Microsoft Graph PowerShell Cmdlets
 Get print
 
 ### [Get-MgPrintConnector](Get-MgPrintConnector.md)
-Get connectors from print
+The list of available print connectors.
 
 ### [Get-MgPrintOperation](Get-MgPrintOperation.md)
-Get operations from print
+The list of print long running operations.
 
 ### [Get-MgPrintPrinter](Get-MgPrintPrinter.md)
-Get printers from print
+The list of printers registered in the tenant.
 
 ### [Get-MgPrintPrinterConnector](Get-MgPrintPrinterConnector.md)
-Get connectors from print
+The connectors that are associated with the printer.
 
 ### [Get-MgPrintPrinterShare](Get-MgPrintPrinterShare.md)
-Get shares from print
+The list of printerShares that are associated with the printer.
+Currently, only one printerShare can be associated with the printer.
+Read-only.
+Nullable.
 
 ### [Get-MgPrintPrinterTaskTrigger](Get-MgPrintPrinterTaskTrigger.md)
-Get taskTriggers from print
+A list of task triggers that are associated with the printer.
 
 ### [Get-MgPrintPrinterTaskTriggerDefinition](Get-MgPrintPrinterTaskTriggerDefinition.md)
-Get definition from print
+An abstract definition that will be used to create a printTask when triggered by a print event.
+Read-only.
 
 ### [Get-MgPrintService](Get-MgPrintService.md)
-Get services from print
+The list of available Universal Print service endpoints.
 
 ### [Get-MgPrintServiceEndpoint](Get-MgPrintServiceEndpoint.md)
-Get endpoints from print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ### [Get-MgPrintShare](Get-MgPrintShare.md)
-Get shares from print
+The list of printer shares registered in the tenant.
 
 ### [Get-MgPrintShareAllowedGroup](Get-MgPrintShareAllowedGroup.md)
-Get allowedGroups from print
+The groups whose users have access to print using the printer.
 
 ### [Get-MgPrintShareAllowedGroupByRef](Get-MgPrintShareAllowedGroupByRef.md)
-Get ref of allowedGroups from print
+The groups whose users have access to print using the printer.
 
 ### [Get-MgPrintShareAllowedUser](Get-MgPrintShareAllowedUser.md)
-Get allowedUsers from print
+The users who have access to print using the printer.
 
 ### [Get-MgPrintShareAllowedUserByRef](Get-MgPrintShareAllowedUserByRef.md)
-Get ref of allowedUsers from print
+The users who have access to print using the printer.
 
 ### [Get-MgPrintSharePrinter](Get-MgPrintSharePrinter.md)
-Get printer from print
+The printer that this printer share is related to.
 
 ### [Get-MgPrintTaskDefinition](Get-MgPrintTaskDefinition.md)
-Get taskDefinitions from print
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ### [Get-MgPrintTaskDefinitionTask](Get-MgPrintTaskDefinitionTask.md)
-Get tasks from print
+A list of tasks that have been created based on this definition.
+The list includes currently running tasks and recently completed tasks.
+Read-only.
 
 ### [Get-MgPrintTaskDefinitionTaskTrigger](Get-MgPrintTaskDefinitionTaskTrigger.md)
-Get trigger from print
+The printTaskTrigger that triggered this task's execution.
+Read-only.
 
 ### [New-MgPrintConnector](New-MgPrintConnector.md)
 Create new navigation property to connectors for print

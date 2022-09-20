@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementManagedDeviceCompliancePolicyState
 
 ## SYNOPSIS
-Get deviceCompliancePolicyStates from deviceManagement
+Device compliance policy states for this device.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementManagedDeviceCompliancePolicyState -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Get deviceCompliancePolicyStates from deviceManagement
+Device compliance policy states for this device.
 
 ## EXAMPLES
 

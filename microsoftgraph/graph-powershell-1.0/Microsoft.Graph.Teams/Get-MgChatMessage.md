@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgChatMessage
 
 ## SYNOPSIS
-Get messages from chats
+A collection of all the messages in the chat.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Get-MgChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-Get messages from chats
+A collection of all the messages in the chat.
+Nullable.
 
 ## EXAMPLES
 

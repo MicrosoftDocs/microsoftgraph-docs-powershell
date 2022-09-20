@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgTeamworkDeletedTeamChannelMessage
 
 ## SYNOPSIS
-Get messages from teamwork
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ## SYNTAX
 
@@ -42,7 +44,9 @@ Get-MgTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get messages from teamwork
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ## EXAMPLES
 

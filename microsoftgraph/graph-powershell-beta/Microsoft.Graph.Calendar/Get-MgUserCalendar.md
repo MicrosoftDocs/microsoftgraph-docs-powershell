@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserCalendar
 
 ## SYNOPSIS
-Get calendars from users
+The user's calendars.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -29,7 +31,9 @@ Get-MgUserCalendar -InputObject <ICalendarIdentity> [-Property <String[]>] [<Com
 ```
 
 ## DESCRIPTION
-Get calendars from users
+The user's calendars.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

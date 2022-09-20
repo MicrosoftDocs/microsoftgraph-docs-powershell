@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerRosterPlan
 
 ## SYNOPSIS
-Get rosterPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserPlannerRosterPlan -InputObject <IPlannerIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get rosterPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ## EXAMPLES
 

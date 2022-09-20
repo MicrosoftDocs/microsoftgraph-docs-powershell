@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseTagChildTag
 
 ## SYNOPSIS
-Get childTags from compliance
+Returns the tags that are a child of a tag.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgComplianceEdiscoveryCaseTagChildTag -InputObject <IComplianceIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get childTags from compliance
+Returns the tags that are a child of a tag.
 
 ## EXAMPLES
 

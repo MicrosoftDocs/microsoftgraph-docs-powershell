@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Groups
-Module Guid: 22a9f2c9-d62b-4cb3-bb36-201876fb05e1
+Module Guid: 1ef92d68-7c68-46ba-baa7-0f869576f127
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
 Help Version: 1.0.0.0
 Locale: en-US
@@ -81,13 +81,19 @@ Invoke action copyToDefaultContentLocation
 Invoke action copyToDefaultContentLocation
 
 ### [Get-MgGroup](Get-MgGroup.md)
-Get group
+Get the properties and relationships of a group object.
+This operation returns by default only a subset of all the available properties, as noted in the Properties section.
+To get properties that are _not_ returned by default, specify them in a `$select` OData query option.
+The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query.
+Because the **group** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
 
 ### [Get-MgGroupAcceptedSender](Get-MgGroupAcceptedSender.md)
-Get acceptedSenders from groups
+The list of users or groups that are allowed to create post's or calendar events in this group.
+If this list is non-empty then only users or groups listed here are allowed to post.
 
 ### [Get-MgGroupAcceptedSenderByRef](Get-MgGroupAcceptedSenderByRef.md)
-Get ref of acceptedSenders from groups
+The list of users or groups that are allowed to create post's or calendar events in this group.
+If this list is non-empty then only users or groups listed here are allowed to post.
 
 ### [Get-MgGroupById](Get-MgGroupById.md)
 Invoke action getByIds
@@ -99,46 +105,71 @@ Invoke function delta
 Invoke action getSchedule
 
 ### [Get-MgGroupConversation](Get-MgGroupConversation.md)
-Get conversations from groups
+The group's conversations.
 
 ### [Get-MgGroupConversationThread](Get-MgGroupConversationThread.md)
-Get threads from groups
+A collection of all the conversation threads in the conversation.
+A navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupConversationThreadPost](Get-MgGroupConversationThreadPost.md)
 Get posts from groups
 
 ### [Get-MgGroupConversationThreadPostAttachment](Get-MgGroupConversationThreadPostAttachment.md)
-Get attachments from groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgGroupConversationThreadPostExtension](Get-MgGroupConversationThreadPostExtension.md)
-Get extensions from groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgGroupConversationThreadPostInReplyToAttachment](Get-MgGroupConversationThreadPostInReplyToAttachment.md)
-Get attachments from groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgGroupConversationThreadPostInReplyToExtension](Get-MgGroupConversationThreadPostInReplyToExtension.md)
-Get extensions from groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgGroupConversationThreadPostInReplyToMention](Get-MgGroupConversationThreadPostInReplyToMention.md)
 Get mentions from groups
 
 ### [Get-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty](Get-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupConversationThreadPostInReplyToSingleValueExtendedProperty](Get-MgGroupConversationThreadPostInReplyToSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from groups
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupConversationThreadPostMention](Get-MgGroupConversationThreadPostMention.md)
 Get mentions from groups
 
 ### [Get-MgGroupConversationThreadPostMultiValueExtendedProperty](Get-MgGroupConversationThreadPostMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupConversationThreadPostSingleValueExtendedProperty](Get-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from groups
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupCreatedOnBehalfOf](Get-MgGroupCreatedOnBehalfOf.md)
-Get createdOnBehalfOf from groups
+The user (or application) that created the group.
+Note: This is not set if the user is an administrator.
+Read-only.
 
 ### [Get-MgGroupConversationThreadPostSingleValueExtendedProperty](Get-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
 The collection of single-value extended properties defined for the post.
@@ -176,25 +207,39 @@ Invoke function delta
 Invoke function getActivitiesByInterval
 
 ### [Get-MgGroupEndpoint](Get-MgGroupEndpoint.md)
-Get endpoints from groups
+Endpoints for the group.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupEventDelta](Get-MgGroupEventDelta.md)
 Invoke function delta
 
 ### [Get-MgGroupExtension](Get-MgGroupExtension.md)
-Get extensions from groups
+The collection of open extensions defined for the group.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupLifecyclePolicy](Get-MgGroupLifecyclePolicy.md)
-Get groupLifecyclePolicy
+Retrieve the properties and relationships of a groupLifecyclePolicies object.
 
 ### [Get-MgGroupLifecyclePolicyByGroup](Get-MgGroupLifecyclePolicyByGroup.md)
-Get groupLifecyclePolicies from groups
+The collection of lifecycle policies for this group.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupMember](Get-MgGroupMember.md)
-Get members from groups
+Direct members of this group, who can be users, devices, other groups, or service principals.
+Supports the List members, Add member, and Remove member operations.
+Nullable.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
 ### [Get-MgGroupMemberByRef](Get-MgGroupMemberByRef.md)
-Get ref of members from groups
+Direct members of this group, who can be users, devices, other groups, or service principals.
+Supports the List members, Add member, and Remove member operations.
+Nullable.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
 ### [Get-MgGroupMemberGroup](Get-MgGroupMemberGroup.md)
 Invoke action getMemberGroups
@@ -203,10 +248,15 @@ Invoke action getMemberGroups
 Invoke action getMemberObjects
 
 ### [Get-MgGroupMemberOf](Get-MgGroupMemberOf.md)
-Get memberOf from groups
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
-Get membersWithLicenseErrors from groups
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ### [Get-MgGroupOnenoteNotebookFromWebUrl](Get-MgGroupOnenoteNotebookFromWebUrl.md)
 Invoke action getNotebookFromWebUrl
@@ -215,13 +265,22 @@ Invoke action getNotebookFromWebUrl
 Invoke function getRecentNotebooks
 
 ### [Get-MgGroupOwner](Get-MgGroupOwner.md)
-Get owners from groups
+The owners of the group who can be users or service principals.
+Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ### [Get-MgGroupOwnerByRef](Get-MgGroupOwnerByRef.md)
-Get ref of owners from groups
+The owners of the group who can be users or service principals.
+Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ### [Get-MgGroupPermissionGrant](Get-MgGroupPermissionGrant.md)
-Get permissionGrants from groups
+The permissions that have been granted for a group to a specific application.
+Supports $expand.
 
 ### [Get-MgGroupPermissionGrantById](Get-MgGroupPermissionGrantById.md)
 Invoke action getByIds
@@ -236,19 +295,22 @@ Invoke action getMemberObjects
 Invoke action getUserOwnedObjects
 
 ### [Get-MgGroupPhoto](Get-MgGroupPhoto.md)
-Get photo from groups
+The group's profile photo.
 
 ### [Get-MgGroupPhotoContent](Get-MgGroupPhotoContent.md)
 Get media content for the navigation property photo from groups
 
 ### [Get-MgGroupRejectedSender](Get-MgGroupRejectedSender.md)
-Get rejectedSenders from groups
+The list of users or groups that are not allowed to create posts or calendar events in this group.
+Nullable
 
 ### [Get-MgGroupRejectedSenderByRef](Get-MgGroupRejectedSenderByRef.md)
-Get ref of rejectedSenders from groups
+The list of users or groups that are not allowed to create posts or calendar events in this group.
+Nullable
 
 ### [Get-MgGroupSetting](Get-MgGroupSetting.md)
-Get settings from groups
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 ### [Get-MgGroupSiteActivityByInterval](Get-MgGroupSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -275,46 +337,69 @@ Invoke function getActivitiesByInterval
 Invoke function delta
 
 ### [Get-MgGroupThread](Get-MgGroupThread.md)
-Get threads from groups
+The group's conversation threads.
+Nullable.
 
 ### [Get-MgGroupThreadPost](Get-MgGroupThreadPost.md)
 Get posts from groups
 
 ### [Get-MgGroupThreadPostAttachment](Get-MgGroupThreadPostAttachment.md)
-Get attachments from groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgGroupThreadPostExtension](Get-MgGroupThreadPostExtension.md)
-Get extensions from groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgGroupThreadPostInReplyToAttachment](Get-MgGroupThreadPostInReplyToAttachment.md)
-Get attachments from groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgGroupThreadPostInReplyToExtension](Get-MgGroupThreadPostInReplyToExtension.md)
-Get extensions from groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgGroupThreadPostInReplyToMention](Get-MgGroupThreadPostInReplyToMention.md)
 Get mentions from groups
 
 ### [Get-MgGroupThreadPostInReplyToMultiValueExtendedProperty](Get-MgGroupThreadPostInReplyToMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupThreadPostInReplyToSingleValueExtendedProperty](Get-MgGroupThreadPostInReplyToSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from groups
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupThreadPostMention](Get-MgGroupThreadPostMention.md)
 Get mentions from groups
 
 ### [Get-MgGroupThreadPostMultiValueExtendedProperty](Get-MgGroupThreadPostMultiValueExtendedProperty.md)
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupThreadPostSingleValueExtendedProperty](Get-MgGroupThreadPostSingleValueExtendedProperty.md)
-Get singleValueExtendedProperties from groups
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupTransitiveMember](Get-MgGroupTransitiveMember.md)
-Get transitiveMembers from groups
+The direct and transitive members of a group.
+Nullable.
 
 ### [Get-MgGroupTransitiveMemberOf](Get-MgGroupTransitiveMemberOf.md)
-Get transitiveMemberOf from groups
+The groups that a group is a member of, either directly and through nested membership.
+Nullable.
 
 ### [Get-MgGroupUserOwnedObject](Get-MgGroupUserOwnedObject.md)
 Invoke action getUserOwnedObjects
@@ -485,7 +570,11 @@ Invoke action associateWithHubSites
 Invoke action associateWithHubSites
 
 ### [New-MgGroup](New-MgGroup.md)
-Create group
+Create a new group as specified in the request body.
+You can create one of the following groups: This operation returns by default only a subset of the properties for each group.
+These default properties are noted in the Properties section.
+To get properties that are _not_ returned by default, do a GET operation and specify the properties in a `$select` OData query option.
+**Note**: To create a team, first create a group then add a team to it, see create team.
 
 ### [New-MgGroupAcceptedSenderByRef](New-MgGroupAcceptedSenderByRef.md)
 Create new navigation property ref to acceptedSenders for groups
@@ -563,7 +652,7 @@ Create new navigation property to endpoints for groups
 Create new navigation property to extensions for groups
 
 ### [New-MgGroupLifecyclePolicy](New-MgGroupLifecyclePolicy.md)
-Create groupLifecyclePolicy
+Creates a new groupLifecyclePolicy.
 
 ### [New-MgGroupMember](New-MgGroupMember.md)
 Add a member to an Office 365 group or security group through the members navigation property.
@@ -650,7 +739,11 @@ Invoke action publish
 Invoke action publish
 
 ### [Remove-MgGroup](Remove-MgGroup.md)
-Delete group
+Deletes a group.
+When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
+After that time, they are permanently deleted.
+This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
+To learn more, see deletedItems.
 
 ### [Remove-MgGroupAcceptedSenderByRef](Remove-MgGroupAcceptedSenderByRef.md)
 Delete ref of navigation property acceptedSenders for groups
@@ -712,7 +805,7 @@ Invoke action removeFavorite
 Invoke action removeGroup
 
 ### [Remove-MgGroupLifecyclePolicy](Remove-MgGroupLifecyclePolicy.md)
-Delete groupLifecyclePolicy
+Delete a groupLifecyclePolicy.
 
 ### [Remove-MgGroupMemberByRef](Remove-MgGroupMemberByRef.md)
 Delete ref of navigation property members for groups
@@ -877,7 +970,7 @@ Invoke action unpublish
 Invoke action unpublish
 
 ### [Update-MgGroup](Update-MgGroup.md)
-Update group
+Update the properties of a group object.
 
 ### [Update-MgGroupConversation](Update-MgGroupConversation.md)
 Update the navigation property conversations in groups
@@ -925,7 +1018,7 @@ Update the navigation property endpoints in groups
 Update the navigation property extensions in groups
 
 ### [Update-MgGroupLifecyclePolicy](Update-MgGroupLifecyclePolicy.md)
-Update groupLifecyclePolicy
+Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 
 ### [Update-MgGroupOnenotePageContent](Update-MgGroupOnenotePageContent.md)
 Invoke action onenotePatchContent

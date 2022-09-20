@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserDefaultDrive
 
 ## SYNOPSIS
-Get drive from users
+The user's OneDrive.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgUserDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get drive from users
+The user's OneDrive.
+Read-only.
 
 ## EXAMPLES
 

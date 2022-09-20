@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.CloudCommunications
-Module Guid: bfb1e7f1-f45e-4420-aa15-f17530995761
+Module Guid: 9e7900e2-065b-4ff9-a5d7-c19a96f0ed1d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -39,37 +39,48 @@ Get participants from communications
 Get callRecords from communications
 
 ### [Get-MgCommunicationCallRecordSession](Get-MgCommunicationCallRecordSession.md)
-Get sessions from communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ### [Get-MgCommunicationOnlineMeeting](Get-MgCommunicationOnlineMeeting.md)
 Get onlineMeetings from communications
 
 ### [Get-MgCommunicationOnlineMeetingAlternativeRecording](Get-MgCommunicationOnlineMeetingAlternativeRecording.md)
-Get alternativeRecording for the navigation property onlineMeetings from communications
+The content stream of the alternative recording of a Microsoft Teams live event.
+Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReport](Get-MgCommunicationOnlineMeetingAttendanceReport.md)
-Get attendanceReports from communications
+The attendance reports of an online meeting.
+Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
-Get attendanceRecords from communications
+List of attendance records of an attendance report.
+Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingAttendeeReport](Get-MgCommunicationOnlineMeetingAttendeeReport.md)
-Get attendeeReport for the navigation property onlineMeetings from communications
+The content stream of the attendee report of a Teams live event.
+Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingRecording](Get-MgCommunicationOnlineMeetingRecording.md)
-Get recording for the navigation property onlineMeetings from communications
+The content stream of the recording of a Teams live event.
+Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingRegistration](Get-MgCommunicationOnlineMeetingRegistration.md)
-Get registration from communications
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
 
 ### [Get-MgCommunicationOnlineMeetingRegistrationCustomQuestion](Get-MgCommunicationOnlineMeetingRegistrationCustomQuestion.md)
-Get customQuestions from communications
+Custom registration questions.
 
 ### [Get-MgCommunicationOnlineMeetingTranscript](Get-MgCommunicationOnlineMeetingTranscript.md)
-Get transcripts from communications
+The transcripts of an online meeting.
+Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingTranscriptContent](Get-MgCommunicationOnlineMeetingTranscriptContent.md)
-Get content for the navigation property transcripts from communications
+A field representing the content of the transcript.
+Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingVirtualAppointment](Get-MgCommunicationOnlineMeetingVirtualAppointment.md)
 Get virtualAppointment from communications
@@ -84,31 +95,39 @@ Invoke action getPresencesByUserId
 Get onlineMeetings from users
 
 ### [Get-MgUserOnlineMeetingAlternativeRecording](Get-MgUserOnlineMeetingAlternativeRecording.md)
-Get alternativeRecording for the navigation property onlineMeetings from users
+The content stream of the alternative recording of a Microsoft Teams live event.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingAttendanceReport](Get-MgUserOnlineMeetingAttendanceReport.md)
-Get attendanceReports from users
+The attendance reports of an online meeting.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
-Get attendanceRecords from users
+List of attendance records of an attendance report.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingAttendeeReport](Get-MgUserOnlineMeetingAttendeeReport.md)
-Get attendeeReport for the navigation property onlineMeetings from users
+The content stream of the attendee report of a Teams live event.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingRecording](Get-MgUserOnlineMeetingRecording.md)
-Get recording for the navigation property onlineMeetings from users
+The content stream of the recording of a Teams live event.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingRegistration](Get-MgUserOnlineMeetingRegistration.md)
-Get registration from users
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
 
 ### [Get-MgUserOnlineMeetingRegistrationCustomQuestion](Get-MgUserOnlineMeetingRegistrationCustomQuestion.md)
-Get customQuestions from users
+Custom registration questions.
 
 ### [Get-MgUserOnlineMeetingTranscript](Get-MgUserOnlineMeetingTranscript.md)
-Get transcripts from users
+The transcripts of an online meeting.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingTranscriptContent](Get-MgUserOnlineMeetingTranscriptContent.md)
-Get content for the navigation property transcripts from users
+A field representing the content of the transcript.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingVirtualAppointment](Get-MgUserOnlineMeetingVirtualAppointment.md)
 Get virtualAppointment from users
@@ -285,16 +304,20 @@ Delete navigation property presence for users
 Invoke action changeScreenSharingRole
 
 ### [Set-MgCommunicationOnlineMeetingAlternativeRecording](Set-MgCommunicationOnlineMeetingAlternativeRecording.md)
-Update alternativeRecording for the navigation property onlineMeetings in communications
+The content stream of the alternative recording of a Microsoft Teams live event.
+Read-only.
 
 ### [Set-MgCommunicationOnlineMeetingAttendeeReport](Set-MgCommunicationOnlineMeetingAttendeeReport.md)
-Update attendeeReport for the navigation property onlineMeetings in communications
+The content stream of the attendee report of a Teams live event.
+Read-only.
 
 ### [Set-MgCommunicationOnlineMeetingRecording](Set-MgCommunicationOnlineMeetingRecording.md)
-Update recording for the navigation property onlineMeetings in communications
+The content stream of the recording of a Teams live event.
+Read-only.
 
 ### [Set-MgCommunicationOnlineMeetingTranscriptContent](Set-MgCommunicationOnlineMeetingTranscriptContent.md)
-Update content for the navigation property transcripts in communications
+A field representing the content of the transcript.
+Read-only.
 
 ### [Set-MgCommunicationPresence](Set-MgCommunicationPresence.md)
 Invoke action setPresence
@@ -303,16 +326,20 @@ Invoke action setPresence
 Invoke action setUserPreferredPresence
 
 ### [Set-MgUserOnlineMeetingAlternativeRecording](Set-MgUserOnlineMeetingAlternativeRecording.md)
-Update alternativeRecording for the navigation property onlineMeetings in users
+The content stream of the alternative recording of a Microsoft Teams live event.
+Read-only.
 
 ### [Set-MgUserOnlineMeetingAttendeeReport](Set-MgUserOnlineMeetingAttendeeReport.md)
-Update attendeeReport for the navigation property onlineMeetings in users
+The content stream of the attendee report of a Teams live event.
+Read-only.
 
 ### [Set-MgUserOnlineMeetingRecording](Set-MgUserOnlineMeetingRecording.md)
-Update recording for the navigation property onlineMeetings in users
+The content stream of the recording of a Teams live event.
+Read-only.
 
 ### [Set-MgUserOnlineMeetingTranscriptContent](Set-MgUserOnlineMeetingTranscriptContent.md)
-Update content for the navigation property transcripts in users
+A field representing the content of the transcript.
+Read-only.
 
 ### [Start-MgCommunicationCallParticipantHoldMusic](Start-MgCommunicationCallParticipantHoldMusic.md)
 Invoke action startHoldMusic

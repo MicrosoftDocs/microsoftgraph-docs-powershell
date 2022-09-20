@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointGalleryImage
 
 ## SYNOPSIS
-Get galleryImages from deviceManagement
+The gallery image resource on Cloud PC.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManagemen
 ```
 
 ## DESCRIPTION
-Get galleryImages from deviceManagement
+The gallery image resource on Cloud PC.
 
 ## EXAMPLES
 

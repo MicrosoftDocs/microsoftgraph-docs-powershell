@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticMetricHistory
 
 ## SYNOPSIS
-Get userExperienceAnalyticsMetricHistory from deviceManagement
+User experience analytics metric history
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementUserExperienceAnalyticMetricHistory -InputObject <IDeviceM
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsMetricHistory from deviceManagement
+User experience analytics metric history
 
 ## EXAMPLES
 

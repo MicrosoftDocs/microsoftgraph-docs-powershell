@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgApplicationExtensionProperty
 
 ## SYNOPSIS
-Get extensionProperties from applications
+Read-only.
+Nullable.
+Supports $expand and $filter (eq and ne when counting empty collections and only with advanced query parameters).
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get extensionProperties from applications
+Read-only.
+Nullable.
+Supports $expand and $filter (eq and ne when counting empty collections and only with advanced query parameters).
 
 ## EXAMPLES
 

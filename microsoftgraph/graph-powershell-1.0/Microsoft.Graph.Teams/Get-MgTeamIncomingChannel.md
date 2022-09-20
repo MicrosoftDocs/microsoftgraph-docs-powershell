@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamIncomingChannel
 
 ## SYNOPSIS
-Get incomingChannels from teams
+List of channels shared with the team.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get incomingChannels from teams
+List of channels shared with the team.
 
 ## EXAMPLES
 

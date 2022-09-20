@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserPerson
 
 ## SYNOPSIS
-Get people from users
+Read-only.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ## SYNTAX
 
@@ -29,7 +32,10 @@ Get-MgUserPerson -InputObject <IPeopleIdentity> [-Property <String[]>] [<CommonP
 ```
 
 ## DESCRIPTION
-Get people from users
+Read-only.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ## EXAMPLES
 

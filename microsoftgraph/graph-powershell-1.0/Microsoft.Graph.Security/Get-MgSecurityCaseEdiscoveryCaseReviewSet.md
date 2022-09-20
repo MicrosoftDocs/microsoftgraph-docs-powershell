@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Get reviewSets from security
+Returns a list of eDiscoveryReviewSet objects in the case.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get reviewSets from security
+Returns a list of eDiscoveryReviewSet objects in the case.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema
 
 ## SYNOPSIS
-Get androidManagedStoreAppConfigurationSchemas from deviceManagement
+Android Enterprise app configuration schema entities.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema -InputObject <ID
 ```
 
 ## DESCRIPTION
-Get androidManagedStoreAppConfigurationSchemas from deviceManagement
+Android Enterprise app configuration schema entities.
 
 ## EXAMPLES
 

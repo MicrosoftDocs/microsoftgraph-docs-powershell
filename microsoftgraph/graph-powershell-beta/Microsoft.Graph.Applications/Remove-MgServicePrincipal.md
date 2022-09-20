@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipal
 
 ## SYNOPSIS
-Delete servicePrincipal
+Delete a servicePrincipal object.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgServicePrincipal -InputObject <IApplicationsIdentity> [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Delete servicePrincipal
+Delete a servicePrincipal object.
 
 ## EXAMPLES
 

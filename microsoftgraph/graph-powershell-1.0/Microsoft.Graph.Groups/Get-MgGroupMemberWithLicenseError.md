@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupMemberWithLicenseError
 
 ## SYNOPSIS
-Get membersWithLicenseErrors from groups
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgGroupMemberWithLicenseError -InputObject <IGroupsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get membersWithLicenseErrors from groups
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ## EXAMPLES
 

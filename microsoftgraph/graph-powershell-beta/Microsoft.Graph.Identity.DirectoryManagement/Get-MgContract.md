@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgContract
 
 ## SYNOPSIS
-Get Contract
+Retrieve the properties and relationships of contract object.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgContract -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get Contract
+Retrieve the properties and relationships of contract object.
 
 ## EXAMPLES
 
@@ -232,7 +232,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

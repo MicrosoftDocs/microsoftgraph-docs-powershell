@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary
 
 ## SYNOPSIS
-Get windowsInformationProtectionNetworkLearningSummaries from deviceManagement
+The windows information protection network learning summaries.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary
 ```
 
 ## DESCRIPTION
-Get windowsInformationProtectionNetworkLearningSummaries from deviceManagement
+The windows information protection network learning summaries.
 
 ## EXAMPLES
 

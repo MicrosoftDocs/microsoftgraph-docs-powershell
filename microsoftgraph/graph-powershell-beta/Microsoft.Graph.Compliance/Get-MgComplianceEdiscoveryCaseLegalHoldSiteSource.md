@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseLegalHoldSiteSource
 
 ## SYNOPSIS
-Get siteSources from compliance
+Data source entity for SharePoint sites associated with the legal hold.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgComplianceEdiscoveryCaseLegalHoldSiteSource -InputObject <IComplianceIdent
 ```
 
 ## DESCRIPTION
-Get siteSources from compliance
+Data source entity for SharePoint sites associated with the legal hold.
 
 ## EXAMPLES
 

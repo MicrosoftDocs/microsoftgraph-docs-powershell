@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTemplateMigratableToCategory
 
 ## SYNOPSIS
-Get categories from deviceManagement
+Collection of setting categories within the template
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Get categories from deviceManagement
+Collection of setting categories within the template
 
 ## EXAMPLES
 

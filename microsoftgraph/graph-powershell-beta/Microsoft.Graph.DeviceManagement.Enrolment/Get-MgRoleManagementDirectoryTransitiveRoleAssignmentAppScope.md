@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope
 
 ## SYNOPSIS
-Get appScope from roleManagement
+Details of the app specific scope when the assignment scope is app specific.
+Containment entity.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope -InputObject <IDev
 ```
 
 ## DESCRIPTION
-Get appScope from roleManagement
+Details of the app specific scope when the assignment scope is app specific.
+Containment entity.
 
 ## EXAMPLES
 

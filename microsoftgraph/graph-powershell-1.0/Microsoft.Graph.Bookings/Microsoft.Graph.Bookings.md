@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Bookings
-Module Guid: 1a3a422f-523e-4528-b5ba-849ac21624b2
+Module Guid: 8fb01d69-2946-4c65-8d87-1f570b18416d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,25 +15,37 @@ Microsoft Graph PowerShell Cmdlets
 Get bookingBusinesses from solutions
 
 ### [Get-MgBookingBusinessAppointment](Get-MgBookingBusinessAppointment.md)
-Get appointments from solutions
+All the appointments of this business.
+Read-only.
+Nullable.
 
 ### [Get-MgBookingBusinessCalendarView](Get-MgBookingBusinessCalendarView.md)
-Get calendarView from solutions
+The set of appointments of this business in a specified date range.
+Read-only.
+Nullable.
 
 ### [Get-MgBookingBusinessCustomer](Get-MgBookingBusinessCustomer.md)
-Get customers from solutions
+All the customers of this business.
+Read-only.
+Nullable.
 
 ### [Get-MgBookingBusinessCustomQuestion](Get-MgBookingBusinessCustomQuestion.md)
-Get customQuestions from solutions
+All the custom questions of this business.
+Read-only.
+Nullable.
 
 ### [Get-MgBookingBusinessService](Get-MgBookingBusinessService.md)
-Get services from solutions
+All the services offered by this business.
+Read-only.
+Nullable.
 
 ### [Get-MgBookingBusinessStaffAvailability](Get-MgBookingBusinessStaffAvailability.md)
 Invoke action getStaffAvailability
 
 ### [Get-MgBookingBusinessStaffMember](Get-MgBookingBusinessStaffMember.md)
-Get staffMembers from solutions
+All the staff members that provide services in this business.
+Read-only.
+Nullable.
 
 ### [Get-MgBookingCurrency](Get-MgBookingCurrency.md)
 Get bookingCurrencies from solutions
@@ -63,7 +75,7 @@ Create new navigation property to staffMembers for solutions
 Create new navigation property to bookingCurrencies for solutions
 
 ### [Publish-MgBookingBusiness](Publish-MgBookingBusiness.md)
-Invoke action publish
+Makes the scheduling page of this business available to the general public.
 
 ### [Remove-MgBookingBusiness](Remove-MgBookingBusiness.md)
 Delete navigation property bookingBusinesses for solutions
@@ -90,13 +102,13 @@ Delete navigation property staffMembers for solutions
 Delete navigation property bookingCurrencies for solutions
 
 ### [Stop-MgBookingBusinessAppointment](Stop-MgBookingBusinessAppointment.md)
-Invoke action cancel
+Cancels the giving booking appointment, sending a message to the involved parties.
 
 ### [Stop-MgBookingBusinessCalendarView](Stop-MgBookingBusinessCalendarView.md)
-Invoke action cancel
+Cancels the giving booking appointment, sending a message to the involved parties.
 
 ### [Unpublish-MgBookingBusiness](Unpublish-MgBookingBusiness.md)
-Invoke action unpublish
+Prevents the general public from seeing the scheduling page of this business.
 
 ### [Update-MgBookingBusiness](Update-MgBookingBusiness.md)
 Update the navigation property bookingBusinesses in solutions

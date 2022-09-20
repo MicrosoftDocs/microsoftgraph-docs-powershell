@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentCategoryByRef
 
 ## SYNOPSIS
-Get ref of categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgEducationClassAssignmentCategoryByRef -EducationAssignmentId <String> -Edu
 ```
 
 ## DESCRIPTION
-Get ref of categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

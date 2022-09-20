@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
 
 ## SYNOPSIS
-Get userExperienceAnalyticsNotAutopilotReadyDevice from deviceManagement
+User experience analytics devices not Windows Autopilot ready.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice -InputObject
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsNotAutopilotReadyDevice from deviceManagement
+User experience analytics devices not Windows Autopilot ready.
 
 ## EXAMPLES
 

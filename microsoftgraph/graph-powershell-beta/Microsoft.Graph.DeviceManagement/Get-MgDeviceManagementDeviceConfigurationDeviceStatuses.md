@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfigurationDeviceStatuses
 
 ## SYNOPSIS
-Get deviceStatuses from deviceManagement
+Device configuration installation status by device.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDeviceConfigurationDeviceStatuses -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Get deviceStatuses from deviceManagement
+Device configuration installation status by device.
 
 ## EXAMPLES
 

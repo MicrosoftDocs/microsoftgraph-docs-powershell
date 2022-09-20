@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseOperation
 
 ## SYNOPSIS
-Get operations from security
+Returns a list of case caseOperation objects for this case.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get operations from security
+Returns a list of case caseOperation objects for this case.
 
 ## EXAMPLES
 

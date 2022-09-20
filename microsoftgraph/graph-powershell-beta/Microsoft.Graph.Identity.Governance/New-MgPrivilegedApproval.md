@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrivilegedApproval
 
 ## SYNOPSIS
-Create privilegedApproval
+Use this API to create a new privilegedApproval.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgPrivilegedApproval -BodyParameter <IMicrosoftGraphPrivilegedApproval> [-Wh
 ```
 
 ## DESCRIPTION
-Create privilegedApproval
+Use this API to create a new privilegedApproval.
 
 ## EXAMPLES
 

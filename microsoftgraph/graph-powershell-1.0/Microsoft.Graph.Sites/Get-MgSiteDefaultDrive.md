@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteDefaultDrive
 
 ## SYNOPSIS
-Get drive from sites
+The default drive (document library) for this site.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgSiteDefaultDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get drive from sites
+The default drive (document library) for this site.
 
 ## EXAMPLES
 

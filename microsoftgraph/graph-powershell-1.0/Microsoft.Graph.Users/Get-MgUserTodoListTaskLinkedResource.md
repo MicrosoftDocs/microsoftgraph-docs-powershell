@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
-Get linkedResources from users
+A collection of resources linked to the task.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get linkedResources from users
+A collection of resources linked to the task.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation
 
 ## SYNOPSIS
-Get lastEstimateStatisticsOperation from security
+The last estimate operation associated with the eDiscovery search.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -InputObje
 ```
 
 ## DESCRIPTION
-Get lastEstimateStatisticsOperation from security
+The last estimate operation associated with the eDiscovery search.
 
 ## EXAMPLES
 

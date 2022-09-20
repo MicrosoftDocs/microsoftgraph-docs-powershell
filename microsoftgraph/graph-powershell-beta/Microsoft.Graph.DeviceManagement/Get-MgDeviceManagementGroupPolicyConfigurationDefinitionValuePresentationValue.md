@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
 
 ## SYNOPSIS
-Get presentationValues from deviceManagement
+The associated group policy presentation values with the definition value.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
 ```
 
 ## DESCRIPTION
-Get presentationValues from deviceManagement
+The associated group policy presentation values with the definition value.
 
 ## EXAMPLES
 

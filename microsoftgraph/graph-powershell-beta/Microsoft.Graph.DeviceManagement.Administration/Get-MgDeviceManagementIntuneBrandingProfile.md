@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementIntuneBrandingProfile
 
 ## SYNOPSIS
-Get intuneBrandingProfiles from deviceManagement
+Intune branding profiles targeted to AAD groups
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAdmin
 ```
 
 ## DESCRIPTION
-Get intuneBrandingProfiles from deviceManagement
+Intune branding profiles targeted to AAD groups
 
 ## EXAMPLES
 

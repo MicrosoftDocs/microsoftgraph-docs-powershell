@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryRoleTemplate
 
 ## SYNOPSIS
-Get directoryRoleTemplate
+Retrieve the properties and relationships of a directoryroletemplate object.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Get directoryRoleTemplate
+Retrieve the properties and relationships of a directoryroletemplate object.
 
 ## EXAMPLES
 
@@ -218,7 +218,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

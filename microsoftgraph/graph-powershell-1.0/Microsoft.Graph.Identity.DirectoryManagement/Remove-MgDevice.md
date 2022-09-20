@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDevice
 
 ## SYNOPSIS
-Delete device
+Delete a registered device.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Remove-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete device
+Delete a registered device.
 
 ## EXAMPLES
 

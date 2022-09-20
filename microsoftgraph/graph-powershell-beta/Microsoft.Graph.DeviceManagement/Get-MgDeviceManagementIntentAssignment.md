@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementIntentAssignment
 
 ## SYNOPSIS
-Get assignments from deviceManagement
+Collection of assignments
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementIntentAssignment -InputObject <IDeviceManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Get assignments from deviceManagement
+Collection of assignments
 
 ## EXAMPLES
 

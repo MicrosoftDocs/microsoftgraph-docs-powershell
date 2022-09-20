@@ -241,6 +241,7 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcSupportedRegion>`: cloudPcSupportedRegion
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name for the supported region. Read-only.
   - `[RegionStatus <String>]`: cloudPcSupportedRegionStatus
+  - `[SupportedSolution <String>]`: cloudPcManagementService
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent

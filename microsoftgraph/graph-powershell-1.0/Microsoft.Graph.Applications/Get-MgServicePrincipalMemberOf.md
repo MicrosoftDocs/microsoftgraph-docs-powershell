@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgServicePrincipalMemberOf
 
 ## SYNOPSIS
-Get memberOf from servicePrincipals
+Roles that this service principal is a member of.
+HTTP Methods: GET Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgServicePrincipalMemberOf -InputObject <IApplicationsIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get memberOf from servicePrincipals
+Roles that this service principal is a member of.
+HTTP Methods: GET Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

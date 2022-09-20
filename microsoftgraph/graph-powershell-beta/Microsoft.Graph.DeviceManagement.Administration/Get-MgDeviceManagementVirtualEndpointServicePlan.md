@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointServicePlan
 
 ## SYNOPSIS
-Get servicePlans from deviceManagement
+Cloud PC service plans.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementVirtualEndpointServicePlan -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Get servicePlans from deviceManagement
+Cloud PC service plans.
 
 ## EXAMPLES
 

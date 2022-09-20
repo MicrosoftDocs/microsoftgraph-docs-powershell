@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgPlannerRoster
 
 ## SYNOPSIS
-Get rosters from planner
+Read-only.
+Nullable.
+Returns a collection of the specified rosters
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgPlannerRoster -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get rosters from planner
+Read-only.
+Nullable.
+Returns a collection of the specified rosters
 
 ## EXAMPLES
 

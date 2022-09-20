@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseLegalHoldUserSource
 
 ## SYNOPSIS
-Get userSources from compliance
+Data source entity for a the legal hold.
+This is the container for a mailbox and OneDrive for Business site.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgComplianceEdiscoveryCaseLegalHoldUserSource -InputObject <IComplianceIdent
 ```
 
 ## DESCRIPTION
-Get userSources from compliance
+Data source entity for a the legal hold.
+This is the container for a mailbox and OneDrive for Business site.
 
 ## EXAMPLES
 

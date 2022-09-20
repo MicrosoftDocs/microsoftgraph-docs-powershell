@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserOutlookMasterCategory
 
 ## SYNOPSIS
-Get masterCategories from users
+A list of categories defined for the user.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-Property <String
 ```
 
 ## DESCRIPTION
-Get masterCategories from users
+A list of categories defined for the user.
 
 ## EXAMPLES
 

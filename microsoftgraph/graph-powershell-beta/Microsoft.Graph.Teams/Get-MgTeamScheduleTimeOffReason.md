@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Get timeOffReasons from teams
+The set of reasons for a time off in the schedule.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-Property <String
 ```
 
 ## DESCRIPTION
-Get timeOffReasons from teams
+The set of reasons for a time off in the schedule.
 
 ## EXAMPLES
 

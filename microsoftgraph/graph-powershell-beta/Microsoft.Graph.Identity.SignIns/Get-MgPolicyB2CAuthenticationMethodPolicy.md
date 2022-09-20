@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyB2CAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Get b2cAuthenticationMethodsPolicy from policies
+The Azure AD B2C policies that define how end users register via local accounts.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgPolicyB2CAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Propert
 ```
 
 ## DESCRIPTION
-Get b2cAuthenticationMethodsPolicy from policies
+The Azure AD B2C policies that define how end users register via local accounts.
 
 ## EXAMPLES
 

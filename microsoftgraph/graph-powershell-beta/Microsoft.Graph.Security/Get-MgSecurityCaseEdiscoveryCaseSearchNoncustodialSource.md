@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource
 
 ## SYNOPSIS
-Get noncustodialSources from security
+noncustodialDataSource sources that are included in the eDiscovery search
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource -InputObject <ISecurity
 ```
 
 ## DESCRIPTION
-Get noncustodialSources from security
+noncustodialDataSource sources that are included in the eDiscovery search
 
 ## EXAMPLES
 

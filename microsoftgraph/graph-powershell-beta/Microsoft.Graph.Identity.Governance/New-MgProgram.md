@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgProgram
 
 ## SYNOPSIS
-Create program (deprecated)
+In the Azure AD access reviews feature, create a new program object.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ New-MgProgram -BodyParameter <IMicrosoftGraphProgram> [-WhatIf] [-Confirm] [<Com
 ```
 
 ## DESCRIPTION
-Create program (deprecated)
+In the Azure AD access reviews feature, create a new program object.
 
 ## EXAMPLES
 

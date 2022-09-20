@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Get userSources from security
+Data source entity for a custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdent
 ```
 
 ## DESCRIPTION
-Get userSources from security
+Data source entity for a custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## EXAMPLES
 

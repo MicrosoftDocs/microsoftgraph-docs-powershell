@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectoryRoleAssignmentSchedule
 
 ## SYNOPSIS
-Get roleAssignmentSchedules from roleManagement
+Schedules for active role assignment operations.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgRoleManagementDirectoryRoleAssignmentSchedule -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Get roleAssignmentSchedules from roleManagement
+Schedules for active role assignment operations.
 
 ## EXAMPLES
 

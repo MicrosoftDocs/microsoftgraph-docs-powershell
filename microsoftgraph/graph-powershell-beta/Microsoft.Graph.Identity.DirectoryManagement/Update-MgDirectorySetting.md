@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDirectorySetting
 
 ## SYNOPSIS
-Update directorySetting
+Update the properties of a specific directory setting object.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update directorySetting
+Update the properties of a specific directory setting object.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointDeviceImage
 
 ## SYNOPSIS
-Get deviceImages from deviceManagement
+The image resource on Cloud PC.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Get deviceImages from deviceManagement
+The image resource on Cloud PC.
 
 ## EXAMPLES
 

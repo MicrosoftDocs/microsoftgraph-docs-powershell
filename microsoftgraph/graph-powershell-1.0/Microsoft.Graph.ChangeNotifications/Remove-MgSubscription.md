@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgSubscription
 
 ## SYNOPSIS
-Delete subscription
+Delete a subscription.
+For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete subscription
+Delete a subscription.
+For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
 ## EXAMPLES
 

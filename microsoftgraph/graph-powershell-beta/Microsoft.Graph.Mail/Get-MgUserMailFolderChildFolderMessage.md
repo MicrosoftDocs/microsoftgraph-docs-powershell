@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserMailFolderChildFolderMessage
 
 ## SYNOPSIS
-Get messages from users
+The collection of messages in the mailFolder.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get messages from users
+The collection of messages in the mailFolder.
 
 ## EXAMPLES
 

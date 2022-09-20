@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyUploadedDefinitionFile
 
 ## SYNOPSIS
-Get groupPolicyUploadedDefinitionFiles from deviceManagement
+The available group policy uploaded definition files for this account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementGroupPolicyUploadedDefinitionFile -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Get groupPolicyUploadedDefinitionFiles from deviceManagement
+The available group policy uploaded definition files for this account.
 
 ## EXAMPLES
 

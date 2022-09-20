@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseReviewSetFile
 
 ## SYNOPSIS
-Get files from security
+Represents files within the review set.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIdentity> [
 ```
 
 ## DESCRIPTION
-Get files from security
+Represents files within the review set.
 
 ## EXAMPLES
 

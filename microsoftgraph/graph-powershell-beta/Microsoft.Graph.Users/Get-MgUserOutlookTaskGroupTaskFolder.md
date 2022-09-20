@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserOutlookTaskGroupTaskFolder
 
 ## SYNOPSIS
-Get taskFolders from users
+The collection of task folders in the task group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -31,7 +33,9 @@ Get-MgUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-Property <S
 ```
 
 ## DESCRIPTION
-Get taskFolders from users
+The collection of task folders in the task group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

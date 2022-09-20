@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Planner
-Module Guid: 8aa9a79f-0d19-4803-8496-fef69de68cf0
+Module Guid: df1899ba-ca56-442d-8f28-b7b04c0315c5
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,64 +12,99 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Planner Cmdlets
 ### [Get-MgGroupPlanner](Get-MgGroupPlanner.md)
-Get planner from groups
+Entry-point to Planner resource that might exist for a Unified Group.
 
 ### [Get-MgGroupPlannerPlan](Get-MgGroupPlannerPlan.md)
-Get plans from groups
+Read-only.
+Nullable.
+Returns the plannerPlans owned by the group.
 
 ### [Get-MgGroupPlannerPlanBucket](Get-MgGroupPlannerPlanBucket.md)
-Get buckets from groups
+Read-only.
+Nullable.
+Collection of buckets in the plan.
 
 ### [Get-MgGroupPlannerPlanDetail](Get-MgGroupPlannerPlanDetail.md)
-Get details from groups
+Read-only.
+Nullable.
+Additional details about the plan.
 
 ### [Get-MgGroupPlannerPlanTask](Get-MgGroupPlannerPlanTask.md)
-Get tasks from groups
+Read-only.
+Nullable.
+Collection of tasks in the plan.
 
 ### [Get-MgPlanner](Get-MgPlanner.md)
 Get planner
 
 ### [Get-MgPlannerBucket](Get-MgPlannerBucket.md)
-Get buckets from planner
+Read-only.
+Nullable.
+Returns a collection of the specified buckets
 
 ### [Get-MgPlannerBucketTask](Get-MgPlannerBucketTask.md)
-Get tasks from planner
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ### [Get-MgPlannerPlan](Get-MgPlannerPlan.md)
-Get plans from planner
+Read-only.
+Nullable.
+Returns a collection of the specified plans
 
 ### [Get-MgPlannerPlanBucket](Get-MgPlannerPlanBucket.md)
-Get buckets from planner
+Read-only.
+Nullable.
+Collection of buckets in the plan.
 
 ### [Get-MgPlannerPlanDetail](Get-MgPlannerPlanDetail.md)
-Get details from planner
+Read-only.
+Nullable.
+Additional details about the plan.
 
 ### [Get-MgPlannerPlanTask](Get-MgPlannerPlanTask.md)
-Get tasks from planner
+Read-only.
+Nullable.
+Collection of tasks in the plan.
 
 ### [Get-MgPlannerTask](Get-MgPlannerTask.md)
-Get tasks from planner
+Read-only.
+Nullable.
+Returns a collection of the specified tasks
 
 ### [Get-MgPlannerTaskAssignedToTaskBoardFormat](Get-MgPlannerTaskAssignedToTaskBoardFormat.md)
-Get assignedToTaskBoardFormat from planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by assignedTo.
 
 ### [Get-MgPlannerTaskBucketTaskBoardFormat](Get-MgPlannerTaskBucketTaskBoardFormat.md)
-Get bucketTaskBoardFormat from planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ### [Get-MgPlannerTaskDetail](Get-MgPlannerTaskDetail.md)
-Get details from planner
+Read-only.
+Nullable.
+Additional details about the task.
 
 ### [Get-MgPlannerTaskProgressTaskBoardFormat](Get-MgPlannerTaskProgressTaskBoardFormat.md)
-Get progressTaskBoardFormat from planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ### [Get-MgUserPlanner](Get-MgUserPlanner.md)
-Get planner from users
+Entry-point to the Planner resource that might exist for a user.
+Read-only.
 
 ### [Get-MgUserPlannerPlan](Get-MgUserPlannerPlan.md)
-Get plans from users
+Read-only.
+Nullable.
+Returns the plannerTasks assigned to the user.
 
 ### [Get-MgUserPlannerTask](Get-MgUserPlannerTask.md)
-Get tasks from users
+Read-only.
+Nullable.
+Returns the plannerPlans shared with the user.
 
 ### [New-MgPlannerBucket](New-MgPlannerBucket.md)
 Create new navigation property to buckets for planner

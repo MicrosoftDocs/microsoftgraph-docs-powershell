@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDetectedAppManagedDevice
 
 ## SYNOPSIS
-Get managedDevices from deviceManagement
+The devices that have the discovered application installed
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDetectedAppManagedDevice -InputObject <IDeviceManagementId
 ```
 
 ## DESCRIPTION
-Get managedDevices from deviceManagement
+The devices that have the discovered application installed
 
 ## EXAMPLES
 

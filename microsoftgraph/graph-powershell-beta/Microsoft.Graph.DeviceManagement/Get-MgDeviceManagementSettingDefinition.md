@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementSettingDefinition
 
 ## SYNOPSIS
-Get settingDefinitions from deviceManagement
+The device management intent setting definitions
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementSettingDefinition -InputObject <IDeviceManagementIdentity>
 ```
 
 ## DESCRIPTION
-Get settingDefinitions from deviceManagement
+The device management intent setting definitions
 
 ## EXAMPLES
 

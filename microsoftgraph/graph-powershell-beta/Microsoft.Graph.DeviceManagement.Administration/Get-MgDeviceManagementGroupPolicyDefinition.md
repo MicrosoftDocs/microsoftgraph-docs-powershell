@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyDefinition
 
 ## SYNOPSIS
-Get groupPolicyDefinitions from deviceManagement
+The available group policy definitions for this account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementGroupPolicyDefinition -InputObject <IDeviceManagementAdmin
 ```
 
 ## DESCRIPTION
-Get groupPolicyDefinitions from deviceManagement
+The available group policy definitions for this account.
 
 ## EXAMPLES
 

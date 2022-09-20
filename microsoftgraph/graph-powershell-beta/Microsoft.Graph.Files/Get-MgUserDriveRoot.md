@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserDriveRoot
 
 ## SYNOPSIS
-Get root from users
+The root folder of the drive.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgUserDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get root from users
+The root folder of the drive.
+Read-only.
 
 ## EXAMPLES
 

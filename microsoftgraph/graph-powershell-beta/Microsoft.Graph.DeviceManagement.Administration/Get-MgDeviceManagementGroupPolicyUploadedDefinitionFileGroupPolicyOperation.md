@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 
 ## SYNOPSIS
-Get groupPolicyOperations from deviceManagement
+The list of operations on the uploaded ADMX file.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 ```
 
 ## DESCRIPTION
-Get groupPolicyOperations from deviceManagement
+The list of operations on the uploaded ADMX file.
 
 ## EXAMPLES
 

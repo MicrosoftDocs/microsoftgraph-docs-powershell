@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyCrossTenantAccessPolicyDefault
 
 ## SYNOPSIS
-Get default from policies
+Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgPolicyCrossTenantAccessPolicyDefault [-ExpandProperty <String[]>] [-Proper
 ```
 
 ## DESCRIPTION
-Get default from policies
+Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.
 
 ## EXAMPLES
 

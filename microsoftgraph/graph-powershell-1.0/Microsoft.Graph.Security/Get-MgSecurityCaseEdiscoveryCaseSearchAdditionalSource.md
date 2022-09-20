@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
 
 ## SYNOPSIS
-Get additionalSources from security
+Adds an additional source to the eDiscovery search.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurityId
 ```
 
 ## DESCRIPTION
-Get additionalSources from security
+Adds an additional source to the eDiscovery search.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess
 
 ## SYNOPSIS
-Get userExperienceAnalyticsDeviceStartupProcesses from deviceManagement
+User experience analytics device Startup Processes
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess -InputObject <I
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsDeviceStartupProcesses from deviceManagement
+User experience analytics device Startup Processes
 
 ## EXAMPLES
 

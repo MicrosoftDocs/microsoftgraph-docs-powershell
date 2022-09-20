@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticBaseline
 
 ## SYNOPSIS
-Get userExperienceAnalyticsBaselines from deviceManagement
+User experience analytics baselines
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementUserExperienceAnalyticBaseline -InputObject <IDeviceManage
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsBaselines from deviceManagement
+User experience analytics baselines
 
 ## EXAMPLES
 

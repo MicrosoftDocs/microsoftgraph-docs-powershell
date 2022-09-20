@@ -196,9 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Plans
-Read-only.
-Nullable.
-Returns the plannerTasks assigned to the user.
+.
 To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
@@ -474,7 +472,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerUser>`: plannerUser
     - `[Owner <String>]`: 
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
     - `[Title <String>]`: Required. Title of the plan.
-  - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
+  - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: 
   - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RecentPlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
@@ -609,7 +607,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: key: id of plannerTask
   - `[UserId <String>]`: key: id of user
 
-PLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the plannerTasks assigned to the user.
+PLANS <IMicrosoftGraphPlannerPlan1\[]>: .
   - `[Id <String>]`: 
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
     - `[Id <String>]`: 

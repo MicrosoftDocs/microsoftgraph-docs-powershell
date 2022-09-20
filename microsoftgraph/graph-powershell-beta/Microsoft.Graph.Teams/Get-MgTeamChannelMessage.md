@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgTeamChannelMessage
 
 ## SYNOPSIS
-Get messages from teams
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ## SYNTAX
 
@@ -42,7 +44,9 @@ Get-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get messages from teams
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ## EXAMPLES
 

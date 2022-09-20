@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryOperatingSystemRegression
 
 ## SYNOPSIS
-Get operatingSystemRegression from deviceManagement
+The metric values for the user experience analytics operating system regression.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryOperatingSystemRegr
 ```
 
 ## DESCRIPTION
-Get operatingSystemRegression from deviceManagement
+The metric values for the user experience analytics operating system regression.
 
 ## EXAMPLES
 

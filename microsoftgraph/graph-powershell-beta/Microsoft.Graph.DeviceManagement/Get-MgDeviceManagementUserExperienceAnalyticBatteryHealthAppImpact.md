@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
 
 ## SYNOPSIS
-Get userExperienceAnalyticsBatteryHealthAppImpact from deviceManagement
+User Experience Analytics Battery Health App Impact
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact -InputObject 
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsBatteryHealthAppImpact from deviceManagement
+User Experience Analytics Battery Health App Impact
 
 ## EXAMPLES
 

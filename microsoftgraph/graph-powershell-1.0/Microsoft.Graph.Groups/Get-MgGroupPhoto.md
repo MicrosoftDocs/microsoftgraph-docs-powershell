@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupPhoto
 
 ## SYNOPSIS
-Get photo from groups
+The group's profile photo
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Get-MgGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [<CommonP
 ```
 
 ## DESCRIPTION
-Get photo from groups
+The group's profile photo
 
 ## EXAMPLES
 

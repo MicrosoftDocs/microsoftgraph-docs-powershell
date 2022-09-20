@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupDefaultDrive
 
 ## SYNOPSIS
-Get drive from groups
+The group's default drive.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgGroupDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get drive from groups
+The group's default drive.
+Read-only.
 
 ## EXAMPLES
 

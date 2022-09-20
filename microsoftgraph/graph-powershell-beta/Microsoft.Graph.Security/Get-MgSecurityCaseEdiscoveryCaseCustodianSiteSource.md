@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource
 
 ## SYNOPSIS
-Get siteSources from security
+Data source entity for SharePoint sites associated with the custodian.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityIdent
 ```
 
 ## DESCRIPTION
-Get siteSources from security
+Data source entity for SharePoint sites associated with the custodian.
 
 ## EXAMPLES
 

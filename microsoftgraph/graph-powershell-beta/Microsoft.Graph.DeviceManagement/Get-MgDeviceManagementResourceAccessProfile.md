@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementResourceAccessProfile
 
 ## SYNOPSIS
-Get resourceAccessProfiles from deviceManagement
+Collection of resource access settings associated with account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementResourceAccessProfile -InputObject <IDeviceManagementIdent
 ```
 
 ## DESCRIPTION
-Get resourceAccessProfiles from deviceManagement
+Collection of resource access settings associated with account.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment
 
 ## SYNOPSIS
-Get assignments from deviceManagement
+Navigational property to a list of targets to which this pool is assigned.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment -InputObject <IDev
 ```
 
 ## DESCRIPTION
-Get assignments from deviceManagement
+Navigational property to a list of targets to which this pool is assigned.
 
 ## EXAMPLES
 

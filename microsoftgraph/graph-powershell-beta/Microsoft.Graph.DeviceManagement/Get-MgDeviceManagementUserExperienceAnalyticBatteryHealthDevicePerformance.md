@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
 
 ## SYNOPSIS
-Get userExperienceAnalyticsBatteryHealthDevicePerformance from deviceManagement
+User Experience Analytics Battery Health Device Performance
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsBatteryHealthDevicePerformance from deviceManagement
+User Experience Analytics Battery Health Device Performance
 
 ## EXAMPLES
 

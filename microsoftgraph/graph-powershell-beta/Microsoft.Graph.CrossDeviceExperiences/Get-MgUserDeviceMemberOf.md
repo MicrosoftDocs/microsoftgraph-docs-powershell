@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserDeviceMemberOf
 
 ## SYNOPSIS
-Get memberOf from users
+Groups and administrative units that this device is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgUserDeviceMemberOf -InputObject <ICrossDeviceExperiencesIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get memberOf from users
+Groups and administrative units that this device is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

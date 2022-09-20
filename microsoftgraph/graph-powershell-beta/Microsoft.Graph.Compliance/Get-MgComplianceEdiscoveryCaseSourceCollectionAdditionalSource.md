@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource
 
 ## SYNOPSIS
-Get additionalSources from compliance
+Adds an additional source to the sourceCollection.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject <ICo
 ```
 
 ## DESCRIPTION
-Get additionalSources from compliance
+Adds an additional source to the sourceCollection.
 
 ## EXAMPLES
 

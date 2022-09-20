@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
-Get schema from servicePrincipals
+The synchronization schema configured for the job.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdenti
 ```
 
 ## DESCRIPTION
-Get schema from servicePrincipals
+The synchronization schema configured for the job.
 
 ## EXAMPLES
 

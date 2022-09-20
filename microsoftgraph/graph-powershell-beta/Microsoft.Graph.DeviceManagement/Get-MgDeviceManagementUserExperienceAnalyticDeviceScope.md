@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticDeviceScope
 
 ## SYNOPSIS
-Get userExperienceAnalyticsDeviceScope from deviceManagement
+The user experience analytics device scope entity endpoint to trigger on the service to either START or STOP computing metrics data based on a device scope configuration.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgDeviceManagementUserExperienceAnalyticDeviceScope [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsDeviceScope from deviceManagement
+The user experience analytics device scope entity endpoint to trigger on the service to either START or STOP computing metrics data based on a device scope configuration.
 
 ## EXAMPLES
 

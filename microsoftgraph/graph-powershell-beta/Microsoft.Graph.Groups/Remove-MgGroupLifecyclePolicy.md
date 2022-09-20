@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupLifecyclePolicy
 
 ## SYNOPSIS
-Delete groupLifecyclePolicy
+Delete a groupLifecyclePolicy.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete groupLifecyclePolicy
+Delete a groupLifecyclePolicy.
 
 ## EXAMPLES
 

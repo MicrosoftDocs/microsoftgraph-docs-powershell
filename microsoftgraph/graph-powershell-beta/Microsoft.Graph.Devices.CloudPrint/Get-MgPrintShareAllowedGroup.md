@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintShareAllowedGroup
 
 ## SYNOPSIS
-Get allowedGroups from print
+The groups whose users have access to print using the printer.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgPrintShareAllowedGroup -PrinterShareId <String> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get allowedGroups from print
+The groups whose users have access to print using the printer.
 
 ## EXAMPLES
 

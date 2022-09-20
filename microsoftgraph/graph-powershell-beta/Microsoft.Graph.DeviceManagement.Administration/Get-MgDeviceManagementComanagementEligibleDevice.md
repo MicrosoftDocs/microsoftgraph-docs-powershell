@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementComanagementEligibleDevice
 
 ## SYNOPSIS
-Get comanagementEligibleDevices from deviceManagement
+The list of co-management eligible devices report
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Get comanagementEligibleDevices from deviceManagement
+The list of co-management eligible devices report
 
 ## EXAMPLES
 

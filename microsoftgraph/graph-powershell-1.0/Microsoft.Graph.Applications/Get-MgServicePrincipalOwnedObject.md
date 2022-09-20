@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgServicePrincipalOwnedObject
 
 ## SYNOPSIS
-Get ownedObjects from servicePrincipals
+Directory objects that are owned by this service principal.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgServicePrincipalOwnedObject -InputObject <IApplicationsIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get ownedObjects from servicePrincipals
+Directory objects that are owned by this service principal.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerTask
 
 ## SYNOPSIS
-Get tasks from users
+Read-only.
+Nullable.
+Returns the plannerPlans shared with the user.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 ```
 
 ## DESCRIPTION
-Get tasks from users
+Read-only.
+Nullable.
+Returns the plannerPlans shared with the user.
 
 ## EXAMPLES
 

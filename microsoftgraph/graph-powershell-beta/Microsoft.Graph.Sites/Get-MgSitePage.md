@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSitePage
 
 ## SYNOPSIS
-Get pages from sites
+The collection of pages in the SitePages list in this site.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Get pages from sites
+The collection of pages in the SitePages list in this site.
 
 ## EXAMPLES
 

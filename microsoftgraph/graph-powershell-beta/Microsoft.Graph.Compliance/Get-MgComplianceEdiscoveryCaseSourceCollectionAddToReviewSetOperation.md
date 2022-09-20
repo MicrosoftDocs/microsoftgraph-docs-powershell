@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation
 
 ## SYNOPSIS
-Get addToReviewSetOperation from compliance
+Adds the results of the sourceCollection to the specified reviewSet.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation -InputObje
 ```
 
 ## DESCRIPTION
-Get addToReviewSetOperation from compliance
+Adds the results of the sourceCollection to the specified reviewSet.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementSetting
 
 ## SYNOPSIS
-Get settings from identityGovernance
+The settings that control the behavior of Azure AD entitlement management.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <Stri
 ```
 
 ## DESCRIPTION
-Get settings from identityGovernance
+The settings that control the behavior of Azure AD entitlement management.
 
 ## EXAMPLES
 

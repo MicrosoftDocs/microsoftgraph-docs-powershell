@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintService
 
 ## SYNOPSIS
-Get services from print
+The list of available Universal Print service endpoints.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgPrintService -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get services from print
+The list of available Universal Print service endpoints.
 
 ## EXAMPLES
 

@@ -323,10 +323,10 @@ BODYPARAMETER `<IMicrosoftGraphB2CIdentityUserFlow>`: b2cIdentityUserFlow
   - `[DefaultLanguageTag <String>]`: Indicates the default language of the b2cIdentityUserFlow that is used when no ui_locale tag is specified in the request. This field is RFC 5646 compliant.
   - `[IdentityProviders <IMicrosoftGraphIdentityProvider[]>]`: 
     - `[Id <String>]`: 
-    - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider. This is a required field.  Required. Not nullable.
-    - `[ClientSecret <String>]`: The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return ****. This is a required field. Required. Not nullable.
+    - `[ClientId <String>]`: The client ID for the application. This is the client ID obtained when registering the application with the identity provider. Required. Not nullable.
+    - `[ClientSecret <String>]`: The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return ****.  Required. Not nullable.
     - `[Name <String>]`: The display name of the identity provider. Not nullable.
-    - `[Type <String>]`: The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo,QQ, WeChat, OpenIDConnect. Not nullable.
+    - `[Type <String>]`: The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo, QQ, WeChat, OpenIDConnect. Not nullable.
   - `[IsLanguageCustomizationEnabled <Boolean?>]`: The property that determines whether language customization is enabled within the B2C user flow. Language customization is not enabled by default for B2C user flows.
   - `[Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]`: The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.
     - `[Id <String>]`: 
@@ -348,8 +348,8 @@ BODYPARAMETER `<IMicrosoftGraphB2CIdentityUserFlow>`: b2cIdentityUserFlow
       - `[DisplayName <String>]`: The display name of the user flow attribute.
       - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
     - `[UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>]`: The input options for the user flow attribute. Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
-      - `[IsDefault <Boolean?>]`: Used to set the value as the default.
-      - `[Name <String>]`: The display name of the property displayed to the end user in the user flow.
+      - `[IsDefault <Boolean?>]`: Determines whether the value is set as the default.
+      - `[Name <String>]`: The display name of the property displayed to the user in the user flow.
       - `[Value <String>]`: The value that is set when this item is selected.
     - `[UserInputType <String>]`: identityUserFlowAttributeInputType
   - `[UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase[]>]`: 
@@ -358,10 +358,10 @@ BODYPARAMETER `<IMicrosoftGraphB2CIdentityUserFlow>`: b2cIdentityUserFlow
 
 IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider\[]>: .
   - `[Id <String>]`: 
-  - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider. This is a required field.  Required. Not nullable.
-  - `[ClientSecret <String>]`: The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return ****. This is a required field. Required. Not nullable.
+  - `[ClientId <String>]`: The client ID for the application. This is the client ID obtained when registering the application with the identity provider. Required. Not nullable.
+  - `[ClientSecret <String>]`: The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return ****.  Required. Not nullable.
   - `[Name <String>]`: The display name of the identity provider. Not nullable.
-  - `[Type <String>]`: The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo,QQ, WeChat, OpenIDConnect. Not nullable.
+  - `[Type <String>]`: The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo, QQ, WeChat, OpenIDConnect. Not nullable.
 
 LANGUAGES <IMicrosoftGraphUserFlowLanguageConfiguration\[]>: The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.
   - `[Id <String>]`: 
@@ -384,8 +384,8 @@ USERATTRIBUTEASSIGNMENTS <IMicrosoftGraphIdentityUserFlowAttributeAssignment\[]>
     - `[DisplayName <String>]`: The display name of the user flow attribute.
     - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
   - `[UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>]`: The input options for the user flow attribute. Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
-    - `[IsDefault <Boolean?>]`: Used to set the value as the default.
-    - `[Name <String>]`: The display name of the property displayed to the end user in the user flow.
+    - `[IsDefault <Boolean?>]`: Determines whether the value is set as the default.
+    - `[Name <String>]`: The display name of the property displayed to the user in the user flow.
     - `[Value <String>]`: The value that is set when this item is selected.
   - `[UserInputType <String>]`: identityUserFlowAttributeInputType
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupThread
 
 ## SYNOPSIS
-Get threads from groups
+The group's conversation threads.
+Nullable.
 
 ## SYNTAX
 
@@ -29,7 +30,8 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [<Common
 ```
 
 ## DESCRIPTION
-Get threads from groups
+The group's conversation threads.
+Nullable.
 
 ## EXAMPLES
 

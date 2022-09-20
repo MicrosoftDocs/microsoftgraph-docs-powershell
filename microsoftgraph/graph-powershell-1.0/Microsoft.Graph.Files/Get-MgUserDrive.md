@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserDrive
 
 ## SYNOPSIS
-Get drives from users
+A collection of drives available for this user.
+Read-only.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgUserDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get drives from users
+A collection of drives available for this user.
+Read-only.
 
 ## EXAMPLES
 

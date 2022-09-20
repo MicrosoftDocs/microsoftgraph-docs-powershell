@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRemoteActionAudit
 
 ## SYNOPSIS
-Get remoteActionAudits from deviceManagement
+The list of device remote action audits with the tenant.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementIdentity>
 ```
 
 ## DESCRIPTION
-Get remoteActionAudits from deviceManagement
+The list of device remote action audits with the tenant.
 
 ## EXAMPLES
 

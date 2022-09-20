@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceShellScriptDeviceRunState
 
 ## SYNOPSIS
-Get deviceRunStates from deviceManagement
+List of run states for this script across all devices.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDeviceShellScriptDeviceRunState -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Get deviceRunStates from deviceManagement
+List of run states for this script across all devices.
 
 ## EXAMPLES
 

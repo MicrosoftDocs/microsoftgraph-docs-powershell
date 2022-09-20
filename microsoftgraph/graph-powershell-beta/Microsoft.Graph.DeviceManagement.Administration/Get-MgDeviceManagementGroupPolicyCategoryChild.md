@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyCategoryChild
 
 ## SYNOPSIS
-Get children from deviceManagement
+The children categories
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementGroupPolicyCategoryChild -InputObject <IDeviceManagementAd
 ```
 
 ## DESCRIPTION
-Get children from deviceManagement
+The children categories
 
 ## EXAMPLES
 

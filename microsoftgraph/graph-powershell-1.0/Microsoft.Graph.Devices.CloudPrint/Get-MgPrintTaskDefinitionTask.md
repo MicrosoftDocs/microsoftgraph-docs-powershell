@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgPrintTaskDefinitionTask
 
 ## SYNOPSIS
-Get tasks from print
+A list of tasks that have been created based on this definition.
+The list includes currently running tasks and recently completed tasks.
+Read-only.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get tasks from print
+A list of tasks that have been created based on this definition.
+The list includes currently running tasks and recently completed tasks.
+Read-only.
 
 ## EXAMPLES
 

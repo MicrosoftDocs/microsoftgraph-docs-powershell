@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserEvent
 
 ## SYNOPSIS
-Get events from users
+The user's events.
+Default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -29,7 +32,10 @@ Get-MgUserEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<Common
 ```
 
 ## DESCRIPTION
-Get events from users
+The user's events.
+Default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

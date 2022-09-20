@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgChat
 
 ## SYNOPSIS
-Get chat
+Retrieve a single chat (without its messages).
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgChat -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-Get chat
+Retrieve a single chat (without its messages).
 
 ## EXAMPLES
 

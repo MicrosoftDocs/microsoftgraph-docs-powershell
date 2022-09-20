@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupLifecyclePolicy
 
 ## SYNOPSIS
-Create groupLifecyclePolicy
+Creates a new groupLifecyclePolicy.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> 
 ```
 
 ## DESCRIPTION
-Create groupLifecyclePolicy
+Creates a new groupLifecyclePolicy.
 
 ## EXAMPLES
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgAccessReview
 
 ## SYNOPSIS
-Create accessReview (deprecated)
+In the Azure AD access reviews feature, create a new accessReview object.
+Before making this request, the caller must have previously retrieved the list of business flow templates, to have the value of **businessFlowTemplateId** to include in the request.
+After making this request, the caller should create a programControl, to link the access review to a program.
 
 ## SYNTAX
 
@@ -29,7 +31,9 @@ New-MgAccessReview -BodyParameter <IMicrosoftGraphAccessReview> [-WhatIf] [-Conf
 ```
 
 ## DESCRIPTION
-Create accessReview (deprecated)
+In the Azure AD access reviews feature, create a new accessReview object.
+Before making this request, the caller must have previously retrieved the list of business flow templates, to have the value of **businessFlowTemplateId** to include in the request.
+After making this request, the caller should create a programControl, to link the access review to a program.
 
 ## EXAMPLES
 
@@ -409,7 +413,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessReview>`: accessReview
     - `[Id <String>]`: 
     - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
     - `[DisplayName <String>]`: Name of reviewer.
-    - `[UserPrincipalName <String>]`: User principal name of the user.
+    - `[UserPrincipalName <String>]`: User principal name of the reviewer.
   - `[Settings <IMicrosoftGraphAccessReviewSettings>]`: accessReviewSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AccessRecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled.
@@ -489,7 +493,7 @@ INSTANCES <IMicrosoftGraphAccessReview\[]>: The collection of access reviews ins
     - `[Id <String>]`: 
     - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
     - `[DisplayName <String>]`: Name of reviewer.
-    - `[UserPrincipalName <String>]`: User principal name of the user.
+    - `[UserPrincipalName <String>]`: User principal name of the reviewer.
   - `[Settings <IMicrosoftGraphAccessReviewSettings>]`: accessReviewSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AccessRecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled.
@@ -537,7 +541,7 @@ REVIEWERS <IMicrosoftGraphAccessReviewReviewer\[]>: The collection of reviewers 
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
   - `[DisplayName <String>]`: Name of reviewer.
-  - `[UserPrincipalName <String>]`: User principal name of the user.
+  - `[UserPrincipalName <String>]`: User principal name of the reviewer.
 
 SETTINGS `<IMicrosoftGraphAccessReviewSettings>`: accessReviewSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

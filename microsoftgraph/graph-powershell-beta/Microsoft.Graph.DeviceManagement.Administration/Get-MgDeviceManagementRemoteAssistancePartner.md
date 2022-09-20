@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
-Get remoteAssistancePartners from deviceManagement
+The remote assist partners.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagementAdm
 ```
 
 ## DESCRIPTION
-Get remoteAssistancePartners from deviceManagement
+The remote assist partners.
 
 ## EXAMPLES
 

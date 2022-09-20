@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
 
 ## SYNOPSIS
-Get userExperienceAnalyticsWorkFromAnywhereModelPerformance from deviceManagement
+The user experience analytics work from anywhere model performance
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsWorkFromAnywhereModelPerformance from deviceManagement
+The user experience analytics work from anywhere model performance
 
 ## EXAMPLES
 

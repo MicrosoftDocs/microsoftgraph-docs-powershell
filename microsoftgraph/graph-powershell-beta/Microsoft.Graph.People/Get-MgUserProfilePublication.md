@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfilePublication
 
 ## SYNOPSIS
-Get publications from users
+Represents details of any publications a user has added to their profile.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfilePublication -InputObject <IPeopleIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get publications from users
+Represents details of any publications a user has added to their profile.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListItem
 
 ## SYNOPSIS
-Get items from shares
+All items contained in the list.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Get-MgShareListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get items from shares
+All items contained in the list.
 
 ## EXAMPLES
 

@@ -97,10 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Capability
-Describes the capability that is associated with this resource.
-(e.g.
-Messages, Conversations, etc.) Not nullable.
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -162,9 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-Application id of the publishing underlying service.
-Not nullable.
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -179,8 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderName
-Name of the publishing underlying service.
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -195,10 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderResourceId
-For Microsoft 365 groups, this is set to a well-known name for the resource (e.g.
-Yammer.FeedURL etc.).
-Not nullable.
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -228,9 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-URL of the published resource.
-Not nullable.
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -298,11 +287,11 @@ BODYPARAMETER `<IMicrosoftGraphEndpoint>`: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
-  - `[Capability <String>]`: Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.) Not nullable. Read-only.
-  - `[ProviderId <String>]`: Application id of the publishing underlying service. Not nullable. Read-only.
-  - `[ProviderName <String>]`: Name of the publishing underlying service. Read-only.
-  - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
-  - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
+  - `[Capability <String>]`: 
+  - `[ProviderId <String>]`: 
+  - `[ProviderName <String>]`: 
+  - `[ProviderResourceId <String>]`: 
+  - `[Uri <String>]`: 
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy

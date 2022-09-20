@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerRosterPlan
 
 ## SYNOPSIS
-Get plans from planner
+Retrieves the plans contained by the plannerRoster.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgPlannerRosterPlan -InputObject <IPlannerIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get plans from planner
+Retrieves the plans contained by the plannerRoster.
 
 ## EXAMPLES
 

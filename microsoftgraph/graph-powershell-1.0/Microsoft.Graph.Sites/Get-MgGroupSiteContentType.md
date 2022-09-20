@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteContentType
 
 ## SYNOPSIS
-Get contentTypes from groups
+The collection of content types defined for this site.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgGroupSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get contentTypes from groups
+The collection of content types defined for this site.
 
 ## EXAMPLES
 

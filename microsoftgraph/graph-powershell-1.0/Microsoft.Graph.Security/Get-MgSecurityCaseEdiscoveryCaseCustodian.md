@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseCustodian
 
 ## SYNOPSIS
-Get custodians from security
+Returns a list of case ediscoveryCustodian objects for this case.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get custodians from security
+Returns a list of case ediscoveryCustodian objects for this case.
 
 ## EXAMPLES
 

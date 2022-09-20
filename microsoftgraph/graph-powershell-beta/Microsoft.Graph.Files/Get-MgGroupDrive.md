@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupDrive
 
 ## SYNOPSIS
-Get drives from groups
+The group's drives.
+Read-only.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgGroupDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Get drives from groups
+The group's drives.
+Read-only.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDerivedCredentials
 
 ## SYNOPSIS
-Get derivedCredentials from deviceManagement
+Collection of Derived credential settings associated with account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDerivedCredentials -InputObject <IDeviceManagementIdentity
 ```
 
 ## DESCRIPTION
-Get derivedCredentials from deviceManagement
+Collection of Derived credential settings associated with account.
 
 ## EXAMPLES
 

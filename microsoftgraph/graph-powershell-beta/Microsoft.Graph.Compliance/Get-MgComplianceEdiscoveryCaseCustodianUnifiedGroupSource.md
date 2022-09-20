@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource
 
 ## SYNOPSIS
-Get unifiedGroupSources from compliance
+Data source entity for groups associated with the custodian.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <IComplia
 ```
 
 ## DESCRIPTION
-Get unifiedGroupSources from compliance
+Data source entity for groups associated with the custodian.
 
 ## EXAMPLES
 

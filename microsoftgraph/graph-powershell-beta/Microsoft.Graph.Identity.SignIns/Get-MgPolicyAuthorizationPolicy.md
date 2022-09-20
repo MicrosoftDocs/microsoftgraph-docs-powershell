@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyAuthorizationPolicy
 
 ## SYNOPSIS
-Get authorizationPolicy from policies
+The policy that controls Azure AD authorization settings.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get authorizationPolicy from policies
+The policy that controls Azure AD authorization settings.
 
 ## EXAMPLES
 
@@ -259,10 +259,14 @@ To create the parameters described below, construct a hash table containing the 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
+  - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: key: id of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[AuthenticationMethodModeDetailId <String>]`: key: id of authenticationMethodModeDetail
+  - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
+  - `[AuthenticationStrengthPolicyId <String>]`: key: id of authenticationStrengthPolicy
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
   - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
   - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow

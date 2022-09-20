@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgPlace
 
 ## SYNOPSIS
-Get place
+Get the properties and relationships of a place object specified by either its ID or email address.
+The **place** object can be one of the following types: Both **room** and **roomList** are derived from the place object.
 
 ## SYNTAX
 
@@ -31,7 +32,8 @@ Get-MgPlace -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Get place
+Get the properties and relationships of a place object specified by either its ID or email address.
+The **place** object can be one of the following types: Both **room** and **roomList** are derived from the place object.
 
 ## EXAMPLES
 

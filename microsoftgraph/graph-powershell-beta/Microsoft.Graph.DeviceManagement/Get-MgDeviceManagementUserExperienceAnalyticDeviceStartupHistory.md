@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
 
 ## SYNOPSIS
-Get userExperienceAnalyticsDeviceStartupHistory from deviceManagement
+User experience analytics device Startup History
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject <I
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsDeviceStartupHistory from deviceManagement
+User experience analytics device Startup History
 
 ## EXAMPLES
 

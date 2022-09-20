@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityAlert
 
 ## SYNOPSIS
-Get alerts from security
+Notifications for suspicious or potential security issues in a customer's tenant.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgSecurityAlert -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get alerts from security
+Notifications for suspicious or potential security issues in a customer's tenant.
 
 ## EXAMPLES
 

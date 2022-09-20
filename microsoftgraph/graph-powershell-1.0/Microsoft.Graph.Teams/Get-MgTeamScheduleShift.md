@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamScheduleShift
 
 ## SYNOPSIS
-Get shifts from teams
+The shifts in the schedule.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-Property <String[]>] [<C
 ```
 
 ## DESCRIPTION
-Get shifts from teams
+The shifts in the schedule.
 
 ## EXAMPLES
 

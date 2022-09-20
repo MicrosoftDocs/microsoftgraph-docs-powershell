@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseCustodianSiteSource
 
 ## SYNOPSIS
-Get siteSources from compliance
+Data source entity for SharePoint sites associated with the custodian.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgComplianceEdiscoveryCaseCustodianSiteSource -InputObject <IComplianceIdent
 ```
 
 ## DESCRIPTION
-Get siteSources from compliance
+Data source entity for SharePoint sites associated with the custodian.
 
 ## EXAMPLES
 

@@ -97,9 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContributionToContentDiscoveryAsOrganizationDisabled
-Reflects the Office Delve organization level setting.
-When set to true, the organization doesn't have access to Office Delve.
-This setting is read-only and can only be changed by administrators in the SharePoint admin center.
+.
 
 ```yaml
 Type: SwitchParameter
@@ -114,8 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContributionToContentDiscoveryDisabled
-When set to true, documents in the user's Office Delve are disabled.
-Users can control this setting in Office Delve.
+.
 
 ```yaml
 Type: SwitchParameter
@@ -259,8 +256,8 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IMicrosoftGraphUserSettings1>`: userSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the Office Delve organization level setting. When set to true, the organization doesn't have access to Office Delve. This setting is read-only and can only be changed by administrators in the SharePoint admin center.
-  - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, documents in the user's Office Delve are disabled. Users can control this setting in Office Delve.
+  - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: 
+  - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: 
   - `[ShiftPreferences <IMicrosoftGraphShiftPreferences1>]`: shiftPreferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z

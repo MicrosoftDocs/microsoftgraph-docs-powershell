@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseSetting
 
 ## SYNOPSIS
-Get settings from security
+Returns a list of eDIscoverySettings objects in the case.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Get settings from security
+Returns a list of eDIscoverySettings objects in the case.
 
 ## EXAMPLES
 

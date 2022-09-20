@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgApplicationOwnerByRef
 
 ## SYNOPSIS
-Get ref of owners from applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
+Supports $expand and $filter (eq and ne when counting empty collections).
 
 ## SYNTAX
 
@@ -18,7 +21,10 @@ Get-MgApplicationOwnerByRef -ApplicationId <String> [-Filter <String>] [-Search 
 ```
 
 ## DESCRIPTION
-Get ref of owners from applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
+Supports $expand and $filter (eq and ne when counting empty collections).
 
 ## EXAMPLES
 

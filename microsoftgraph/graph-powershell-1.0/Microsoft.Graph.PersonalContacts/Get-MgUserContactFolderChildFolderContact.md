@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserContactFolderChildFolderContact
 
 ## SYNOPSIS
-Get contacts from users
+The contacts in the folder.
+Navigation property.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIdentit
 ```
 
 ## DESCRIPTION
-Get contacts from users
+The contacts in the folder.
+Navigation property.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

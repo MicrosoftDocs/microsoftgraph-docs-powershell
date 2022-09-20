@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 0a0321bd-281f-4dad-a787-8518f55ddef9
+Module Guid: 45466a5f-0578-4775-9010-dda9ca9af4f9
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -57,7 +57,7 @@ Invoke action checkMemberGroups
 Invoke action checkMemberObjects
 
 ### [Get-MgContact](Get-MgContact.md)
-Get orgContact
+Get the properties and relationships of an organizational contact.
 
 ### [Get-MgContactById](Get-MgContactById.md)
 Invoke action getByIds
@@ -90,7 +90,7 @@ Get transitiveMemberOf from contacts
 Invoke action getMemberObjects
 
 ### [Get-MgContract](Get-MgContract.md)
-Get Contract
+Retrieve the properties and relationships of contract object.
 
 ### [Get-MgContractById](Get-MgContractById.md)
 Invoke action getByIds
@@ -102,7 +102,7 @@ Invoke action getMemberGroups
 Invoke action getMemberObjects
 
 ### [Get-MgDevice](Get-MgDevice.md)
-Get device
+Get the properties and relationships of a device object.
 
 ### [Get-MgDeviceById](Get-MgDeviceById.md)
 Invoke action getByIds
@@ -111,7 +111,9 @@ Invoke action getByIds
 Invoke function delta
 
 ### [Get-MgDeviceExtension](Get-MgDeviceExtension.md)
-Get extensions from devices
+The collection of open extensions defined for the device.
+Read-only.
+Nullable.
 
 ### [Get-MgDeviceMemberGroup](Get-MgDeviceMemberGroup.md)
 Invoke action getMemberGroups
@@ -120,46 +122,70 @@ Invoke action getMemberGroups
 Invoke action getMemberObjects
 
 ### [Get-MgDeviceMemberOf](Get-MgDeviceMemberOf.md)
-Get memberOf from devices
+Groups and administrative units that this device is a member of.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
 Invoke action getMemberObjects
 
 ### [Get-MgDeviceRegisteredOwner](Get-MgDeviceRegisteredOwner.md)
-Get registeredOwners from devices
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgDeviceRegisteredOwnerByRef](Get-MgDeviceRegisteredOwnerByRef.md)
-Get ref of registeredOwners from devices
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgDeviceRegisteredUser](Get-MgDeviceRegisteredUser.md)
-Get registeredUsers from devices
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgDeviceTransitiveMemberOf](Get-MgDeviceTransitiveMemberOf.md)
-Get transitiveMemberOf from devices
+Groups and administrative units that the device is a member of.
+This operation is transitive.
+Supports $expand.
 
 ### [Get-MgDirectory](Get-MgDirectory.md)
 Get directory
 
 ### [Get-MgDirectoryAdministrativeUnit](Get-MgDirectoryAdministrativeUnit.md)
-Get administrativeUnits from directory
+Conceptual container for user and group directory objects.
 
 ### [Get-MgDirectoryAdministrativeUnitDelta](Get-MgDirectoryAdministrativeUnitDelta.md)
 Invoke function delta
 
 ### [Get-MgDirectoryAdministrativeUnitExtension](Get-MgDirectoryAdministrativeUnitExtension.md)
-Get extensions from directory
+The collection of open extensions defined for this administrative unit.
+Nullable.
 
 ### [Get-MgDirectoryAdministrativeUnitMember](Get-MgDirectoryAdministrativeUnitMember.md)
-Get members from directory
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ### [Get-MgDirectoryAdministrativeUnitMemberByRef](Get-MgDirectoryAdministrativeUnitMemberByRef.md)
-Get ref of members from directory
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ### [Get-MgDirectoryAdministrativeUnitScopedRoleMember](Get-MgDirectoryAdministrativeUnitScopedRoleMember.md)
-Get scopedRoleMembers from directory
+Scoped-role members of this administrative unit.
 
 ### [Get-MgDirectoryDeletedItem](Get-MgDirectoryDeletedItem.md)
-Get deletedItems from directory
+Recently deleted items.
+Read-only.
+Nullable.
 
 ### [Get-MgDirectoryDeletedItemAvailableExtensionProperty](Get-MgDirectoryDeletedItemAvailableExtensionProperty.md)
 Invoke action getAvailableExtensionProperties
@@ -174,10 +200,14 @@ Invoke action getMemberGroups
 Invoke action getMemberObjects
 
 ### [Get-MgDirectoryFederationConfiguration](Get-MgDirectoryFederationConfiguration.md)
-Get federationConfigurations from directory
+Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
 
 ### [Get-MgDirectoryRole](Get-MgDirectoryRole.md)
-Get directoryRole
+Retrieve the properties of a directoryRole object.
+The role must be activated in tenant for a successful response.
+You can use both the object ID and template ID of the **directoryRole** with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
+For details, see Role template IDs.
 
 ### [Get-MgDirectoryRoleById](Get-MgDirectoryRoleById.md)
 Invoke action getByIds
@@ -186,10 +216,18 @@ Invoke action getByIds
 Invoke function delta
 
 ### [Get-MgDirectoryRoleMember](Get-MgDirectoryRoleMember.md)
-Get members from directoryRoles
+Users that are members of this directory role.
+HTTP Methods: GET, POST, DELETE.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgDirectoryRoleMemberByRef](Get-MgDirectoryRoleMemberByRef.md)
-Get ref of members from directoryRoles
+Users that are members of this directory role.
+HTTP Methods: GET, POST, DELETE.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgDirectoryRoleMemberGroup](Get-MgDirectoryRoleMemberGroup.md)
 Invoke action getMemberGroups
@@ -198,10 +236,12 @@ Invoke action getMemberGroups
 Invoke action getMemberObjects
 
 ### [Get-MgDirectoryRoleScopedMember](Get-MgDirectoryRoleScopedMember.md)
-Get scopedMembers from directoryRoles
+Members of this directory role that are scoped to administrative units.
+Read-only.
+Nullable.
 
 ### [Get-MgDirectoryRoleTemplate](Get-MgDirectoryRoleTemplate.md)
-Get directoryRoleTemplate
+Retrieve the properties and relationships of a directoryroletemplate object.
 
 ### [Get-MgDirectoryRoleTemplateById](Get-MgDirectoryRoleTemplateById.md)
 Invoke action getByIds
@@ -213,52 +253,76 @@ Invoke action getMemberGroups
 Invoke action getMemberObjects
 
 ### [Get-MgDomain](Get-MgDomain.md)
-Get domain
+Retrieve the properties and relationships of domain object.
 
 ### [Get-MgDomainFederationConfiguration](Get-MgDomainFederationConfiguration.md)
-Get federationConfiguration from domains
+Domain settings configured by a customer when federated with Azure AD.
+Supports $expand.
 
 ### [Get-MgDomainNameReference](Get-MgDomainNameReference.md)
-Get domainNameReferences from domains
+The objects such as users and groups that reference the domain ID.
+Read-only, Nullable.
+Supports $expand and $filter by the OData type of objects returned.
+For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
 ### [Get-MgDomainServiceConfigurationRecord](Get-MgDomainServiceConfigurationRecord.md)
-Get serviceConfigurationRecords from domains
+DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
+Read-only, Nullable.
+Supports $expand.
 
 ### [Get-MgDomainVerificationDnsRecord](Get-MgDomainVerificationDnsRecord.md)
-Get verificationDnsRecords from domains
+DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
+Read-only, Nullable.
+Supports $expand.
 
 ### [Get-MgOrganization](Get-MgOrganization.md)
-Get organization
+Get the properties and relationships of the currently authenticated organization.
+Since the **organization** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
 
 ### [Get-MgOrganizationBranding](Get-MgOrganizationBranding.md)
-Get branding from organization
+Branding for the organization.
+Nullable.
 
 ### [Get-MgOrganizationBrandingBackgroundImage](Get-MgOrganizationBrandingBackgroundImage.md)
-Get backgroundImage for the navigation property branding from organization
+Image that appears as the background of the sign-in page.
+The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
+A smaller image will reduce bandwidth requirements and make the page load faster.
 
 ### [Get-MgOrganizationBrandingBannerLogo](Get-MgOrganizationBrandingBannerLogo.md)
-Get bannerLogo for the navigation property branding from organization
+A banner version of your company logo that appears on the sign-in page.
+The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationBrandingLocalization](Get-MgOrganizationBrandingLocalization.md)
-Get localizations from organization
+Add different branding based on a locale.
 
 ### [Get-MgOrganizationBrandingLocalizationBackgroundImage](Get-MgOrganizationBrandingLocalizationBackgroundImage.md)
-Get backgroundImage for the navigation property localizations from organization
+Image that appears as the background of the sign-in page.
+The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
+A smaller image will reduce bandwidth requirements and make the page load faster.
 
 ### [Get-MgOrganizationBrandingLocalizationBannerLogo](Get-MgOrganizationBrandingLocalizationBannerLogo.md)
-Get bannerLogo for the navigation property localizations from organization
+A banner version of your company logo that appears on the sign-in page.
+The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationBrandingLocalizationSquareLogo](Get-MgOrganizationBrandingLocalizationSquareLogo.md)
-Get squareLogo for the navigation property localizations from organization
+A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationBrandingSquareLogo](Get-MgOrganizationBrandingSquareLogo.md)
-Get squareLogo for the navigation property branding from organization
+A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationById](Get-MgOrganizationById.md)
 Invoke action getByIds
 
 ### [Get-MgOrganizationExtension](Get-MgOrganizationExtension.md)
-Get extensions from organization
+The collection of open extensions defined for the organization.
+Read-only.
+Nullable.
 
 ### [Get-MgOrganizationMemberGroup](Get-MgOrganizationMemberGroup.md)
 Invoke action getMemberGroups
@@ -267,7 +331,7 @@ Invoke action getMemberGroups
 Invoke action getMemberObjects
 
 ### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
-Get subscribedSku
+Get entity from subscribedSkus by key
 
 ### [Get-MgUserScopedRoleMemberOf](Get-MgUserScopedRoleMemberOf.md)
 Get scopedRoleMemberOf from users
@@ -285,7 +349,7 @@ Add new entity to contacts
 Add new entity to contracts
 
 ### [New-MgDevice](New-MgDevice.md)
-Create device
+Create and register a new device in the organization.
 
 ### [New-MgDeviceExtension](New-MgDeviceExtension.md)
 Create new navigation property to extensions for devices
@@ -317,7 +381,10 @@ Create new navigation property to deletedItems for directory
 Create new navigation property to federationConfigurations for directory
 
 ### [New-MgDirectoryRole](New-MgDirectoryRole.md)
-Activate directoryRole
+Activate a directory role.
+To read a directory role or update its members, it must first be activated in the tenant.
+The Company Administrators and the implicit user directory roles (**User**, **Guest User**, and **Restricted Guest User** roles) are activated by default.
+To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
 ### [New-MgDirectoryRoleMemberByRef](New-MgDirectoryRoleMemberByRef.md)
 Create new navigation property ref to members for directoryRoles
@@ -329,7 +396,13 @@ Create new navigation property to scopedMembers for directoryRoles
 Add new entity to directoryRoleTemplates
 
 ### [New-MgDomain](New-MgDomain.md)
-Create domain
+Adds a domain to the tenant.
+**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified.
+See List verificationDnsRecords for details.
+Root domains require verification.
+For example, contoso.com requires verification.
+If a root domain is verified, subdomains of the root domain are automatically verified.
+For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
 ### [New-MgDomainFederationConfiguration](New-MgDomainFederationConfiguration.md)
 Create new navigation property to federationConfiguration for domains
@@ -362,7 +435,7 @@ Delete entity from contacts
 Delete entity from contracts
 
 ### [Remove-MgDevice](Remove-MgDevice.md)
-Delete device
+Delete a registered device.
 
 ### [Remove-MgDeviceExtension](Remove-MgDeviceExtension.md)
 Delete navigation property extensions for devices
@@ -401,7 +474,7 @@ Delete navigation property scopedMembers for directoryRoles
 Delete entity from directoryRoleTemplates
 
 ### [Remove-MgDomain](Remove-MgDomain.md)
-Delete domain
+Deletes a domain from a tenant.
 
 ### [Remove-MgDomainFederationConfiguration](Remove-MgDomainFederationConfiguration.md)
 Delete navigation property federationConfiguration for domains
@@ -434,25 +507,37 @@ Delete navigation property scopedRoleMemberOf for users
 Invoke action restore
 
 ### [Set-MgOrganizationBrandingBackgroundImage](Set-MgOrganizationBrandingBackgroundImage.md)
-Update backgroundImage for the navigation property branding in organization
+Image that appears as the background of the sign-in page.
+The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
+A smaller image will reduce bandwidth requirements and make the page load faster.
 
 ### [Set-MgOrganizationBrandingBannerLogo](Set-MgOrganizationBrandingBannerLogo.md)
-Update bannerLogo for the navigation property branding in organization
+A banner version of your company logo that appears on the sign-in page.
+The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationBrandingLocalizationBackgroundImage](Set-MgOrganizationBrandingLocalizationBackgroundImage.md)
-Update backgroundImage for the navigation property localizations in organization
+Image that appears as the background of the sign-in page.
+The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
+A smaller image will reduce bandwidth requirements and make the page load faster.
 
 ### [Set-MgOrganizationBrandingLocalizationBannerLogo](Set-MgOrganizationBrandingLocalizationBannerLogo.md)
-Update bannerLogo for the navigation property localizations in organization
+A banner version of your company logo that appears on the sign-in page.
+The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationBrandingLocalizationSquareLogo](Set-MgOrganizationBrandingLocalizationSquareLogo.md)
-Update squareLogo for the navigation property localizations in organization
+A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationBrandingSquareLogo](Set-MgOrganizationBrandingSquareLogo.md)
-Update squareLogo for the navigation property branding in organization
+A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationMobileDeviceManagementAuthority](Set-MgOrganizationMobileDeviceManagementAuthority.md)
-Invoke action setMobileDeviceManagementAuthority
+Set mobile device management authority
 
 ### [Test-MgContactProperty](Test-MgContactProperty.md)
 Invoke action validateProperties
@@ -482,7 +567,8 @@ Update entity in contacts
 Update entity in contracts
 
 ### [Update-MgDevice](Update-MgDevice.md)
-Update device
+Update the properties of a registered device.
+Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
 ### [Update-MgDeviceExtension](Update-MgDeviceExtension.md)
 Update the navigation property extensions in devices
@@ -515,7 +601,7 @@ Update the navigation property scopedMembers in directoryRoles
 Update entity in directoryRoleTemplates
 
 ### [Update-MgDomain](Update-MgDomain.md)
-Update domain
+Update the properties of domain object.
 
 ### [Update-MgDomainFederationConfiguration](Update-MgDomainFederationConfiguration.md)
 Update the navigation property federationConfiguration in domains
@@ -527,7 +613,9 @@ Update the navigation property serviceConfigurationRecords in domains
 Update the navigation property verificationDnsRecords in domains
 
 ### [Update-MgOrganization](Update-MgOrganization.md)
-Update organization
+Update the properties of the currently authenticated organization.
+In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.
+The **ID** is also known as the **tenantId** of the organization.
 
 ### [Update-MgOrganizationBranding](Update-MgOrganizationBranding.md)
 Update the navigation property branding in organization

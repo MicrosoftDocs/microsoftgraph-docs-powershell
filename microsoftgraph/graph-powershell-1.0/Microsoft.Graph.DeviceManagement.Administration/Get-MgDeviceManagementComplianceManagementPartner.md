@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementComplianceManagementPartner
 
 ## SYNOPSIS
-Get complianceManagementPartners from deviceManagement
+The list of Compliance Management Partners configured by the tenant.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagemen
 ```
 
 ## DESCRIPTION
-Get complianceManagementPartners from deviceManagement
+The list of Compliance Management Partners configured by the tenant.
 
 ## EXAMPLES
 

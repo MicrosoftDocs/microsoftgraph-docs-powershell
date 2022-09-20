@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticCategory
 
 ## SYNOPSIS
-Get userExperienceAnalyticsCategories from deviceManagement
+User experience analytics categories
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementUserExperienceAnalyticCategory -InputObject <IDeviceManage
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsCategories from deviceManagement
+User experience analytics categories
 
 ## EXAMPLES
 

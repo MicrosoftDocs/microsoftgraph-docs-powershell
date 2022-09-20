@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOrganizationBranding
 
 ## SYNOPSIS
-Get branding from organization
+Resource to manage the default branding for the organization.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity> [
 ```
 
 ## DESCRIPTION
-Get branding from organization
+Resource to manage the default branding for the organization.
+Nullable.
 
 ## EXAMPLES
 

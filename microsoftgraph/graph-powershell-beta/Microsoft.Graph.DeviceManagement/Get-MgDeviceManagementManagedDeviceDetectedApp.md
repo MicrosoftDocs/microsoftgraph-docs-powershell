@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementManagedDeviceDetectedApp
 
 ## SYNOPSIS
-Get detectedApps from deviceManagement
+All applications currently installed on the device
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementManagedDeviceDetectedApp -InputObject <IDeviceManagementId
 ```
 
 ## DESCRIPTION
-Get detectedApps from deviceManagement
+All applications currently installed on the device
 
 ## EXAMPLES
 

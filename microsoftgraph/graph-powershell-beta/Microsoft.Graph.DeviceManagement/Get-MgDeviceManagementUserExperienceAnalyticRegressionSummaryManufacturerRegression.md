@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegression
 
 ## SYNOPSIS
-Get manufacturerRegression from deviceManagement
+The metric values for the user experience analytics Manufacturer regression.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegress
 ```
 
 ## DESCRIPTION
-Get manufacturerRegression from deviceManagement
+The metric values for the user experience analytics Manufacturer regression.
 
 ## EXAMPLES
 

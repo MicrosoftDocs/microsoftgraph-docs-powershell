@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgOauth2PermissionGrant
 
 ## SYNOPSIS
-Delete oAuth2PermissionGrant (a delegated permission grant)
+Delete a delegated permission grant, represented by an oAuth2PermissionGrant object.
+When a delegated permission grant is deleted, the access it granted is revoked.
+Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted **oAuth2PermissionGrant**.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Delete oAuth2PermissionGrant (a delegated permission grant)
+Delete a delegated permission grant, represented by an oAuth2PermissionGrant object.
+When a delegated permission grant is deleted, the access it granted is revoked.
+Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted **oAuth2PermissionGrant**.
 
 ## EXAMPLES
 
@@ -162,10 +166,14 @@ To create the parameters described below, construct a hash table containing the 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
+  - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: key: id of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[AuthenticationMethodModeDetailId <String>]`: key: id of authenticationMethodModeDetail
+  - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
+  - `[AuthenticationStrengthPolicyId <String>]`: key: id of authenticationStrengthPolicy
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
   - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
   - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow

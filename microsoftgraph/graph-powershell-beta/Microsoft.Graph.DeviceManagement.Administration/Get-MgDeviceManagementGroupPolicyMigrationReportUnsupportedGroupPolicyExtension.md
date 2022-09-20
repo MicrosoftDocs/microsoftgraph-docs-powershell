@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
 
 ## SYNOPSIS
-Get unsupportedGroupPolicyExtensions from deviceManagement
+A list of unsupported group policy extensions inside the Group Policy Object.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
 ```
 
 ## DESCRIPTION
-Get unsupportedGroupPolicyExtensions from deviceManagement
+A list of unsupported group policy extensions inside the Group Policy Object.
 
 ## EXAMPLES
 

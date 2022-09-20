@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDeviceManagementConfigurationPolicySettingDefinition
 
 ## SYNOPSIS
-Get settingDefinitions from deviceManagement
+List of related Setting Definitions.
+This property is read-only.
 
 ## SYNTAX
 
@@ -34,7 +35,8 @@ Get-MgDeviceManagementConfigurationPolicySettingDefinition -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Get settingDefinitions from deviceManagement
+List of related Setting Definitions.
+This property is read-only.
 
 ## EXAMPLES
 

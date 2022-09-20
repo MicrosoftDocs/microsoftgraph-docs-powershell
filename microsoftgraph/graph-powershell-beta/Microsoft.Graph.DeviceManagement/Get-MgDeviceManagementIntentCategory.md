@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementIntentCategory
 
 ## SYNOPSIS
-Get categories from deviceManagement
+Collection of setting categories within the intent
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity> [-
 ```
 
 ## DESCRIPTION
-Get categories from deviceManagement
+Collection of setting categories within the intent
 
 ## EXAMPLES
 

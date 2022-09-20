@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupLifecyclePolicy
 
 ## SYNOPSIS
-Get groupLifecyclePolicy
+Retrieve the properties and relationships of a groupLifecyclePolicies object.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get groupLifecyclePolicy
+Retrieve the properties and relationships of a groupLifecyclePolicies object.
 
 ## EXAMPLES
 

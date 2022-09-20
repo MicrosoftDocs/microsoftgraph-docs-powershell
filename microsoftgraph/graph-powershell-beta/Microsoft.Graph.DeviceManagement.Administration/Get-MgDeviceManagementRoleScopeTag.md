@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRoleScopeTag
 
 ## SYNOPSIS
-Get roleScopeTags from deviceManagement
+The Role Scope Tags.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementRoleScopeTag -InputObject <IDeviceManagementAdministration
 ```
 
 ## DESCRIPTION
-Get roleScopeTags from deviceManagement
+The Role Scope Tags.
 
 ## EXAMPLES
 

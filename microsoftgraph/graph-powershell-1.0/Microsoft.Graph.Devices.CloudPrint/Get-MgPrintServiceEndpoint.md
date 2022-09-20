@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgPrintServiceEndpoint
 
 ## SYNOPSIS
-Get endpoints from print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get endpoints from print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue
 
 ## SYNOPSIS
-Get definitionValues from deviceManagement
+The list of enabled or disabled group policy definition values for the configuration.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue -InputObject <IDev
 ```
 
 ## DESCRIPTION
-Get definitionValues from deviceManagement
+The list of enabled or disabled group policy definition values for the configuration.
 
 ## EXAMPLES
 

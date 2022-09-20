@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementScriptAssignment
 
 ## SYNOPSIS
-Get assignments from deviceManagement
+The list of group assignments for the device management script.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementScriptAssignment -InputObject <IDeviceManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Get assignments from deviceManagement
+The list of group assignments for the device management script.
 
 ## EXAMPLES
 

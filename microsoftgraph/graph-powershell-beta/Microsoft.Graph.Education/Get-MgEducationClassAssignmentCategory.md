@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentCategory
 
 ## SYNOPSIS
-Get assignmentCategories from education
+All categories associated with this class.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Get-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Get assignmentCategories from education
+All categories associated with this class.
+Nullable.
 
 ## EXAMPLES
 

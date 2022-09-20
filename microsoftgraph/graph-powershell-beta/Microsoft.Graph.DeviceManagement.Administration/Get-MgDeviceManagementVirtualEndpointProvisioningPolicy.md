@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## SYNOPSIS
-Get provisioningPolicies from deviceManagement
+Cloud PC provisioning policy.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Get provisioningPolicies from deviceManagement
+Cloud PC provisioning policy.
 
 ## EXAMPLES
 

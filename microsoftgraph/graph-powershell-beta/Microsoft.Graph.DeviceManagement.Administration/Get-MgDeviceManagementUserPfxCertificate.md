@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserPfxCertificate
 
 ## SYNOPSIS
-Get userPfxCertificates from deviceManagement
+Collection of PFX certificates associated with a user.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementUserPfxCertificate -InputObject <IDeviceManagementAdminist
 ```
 
 ## DESCRIPTION
-Get userPfxCertificates from deviceManagement
+Collection of PFX certificates associated with a user.
 
 ## EXAMPLES
 

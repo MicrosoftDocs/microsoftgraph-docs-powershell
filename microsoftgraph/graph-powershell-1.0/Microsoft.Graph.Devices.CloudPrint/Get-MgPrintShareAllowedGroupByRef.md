@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintShareAllowedGroupByRef
 
 ## SYNOPSIS
-Get ref of allowedGroups from print
+The groups whose users have access to print using the printer.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgPrintShareAllowedGroupByRef -PrinterShareId <String> [-Filter <String>] [-
 ```
 
 ## DESCRIPTION
-Get ref of allowedGroups from print
+The groups whose users have access to print using the printer.
 
 ## EXAMPLES
 

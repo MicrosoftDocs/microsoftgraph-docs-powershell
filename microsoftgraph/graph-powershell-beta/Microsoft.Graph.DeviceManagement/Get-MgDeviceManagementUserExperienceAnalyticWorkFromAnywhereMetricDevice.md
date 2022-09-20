@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
 
 ## SYNOPSIS
-Get metricDevices from deviceManagement
+The work from anywhere metric devices.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
 ```
 
 ## DESCRIPTION
-Get metricDevices from deviceManagement
+The work from anywhere metric devices.
 
 ## EXAMPLES
 

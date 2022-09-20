@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementIntentUserState
 
 ## SYNOPSIS
-Get userStates from deviceManagement
+Collection of states of all users that the intent is applied to
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementIntentUserState -InputObject <IDeviceManagementIdentity> [
 ```
 
 ## DESCRIPTION
-Get userStates from deviceManagement
+Collection of states of all users that the intent is applied to
 
 ## EXAMPLES
 

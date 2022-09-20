@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItemDocumentSetVersion
 
 ## SYNOPSIS
-Get documentSetVersions from sites
+Version information for a document set version created by a user.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get documentSetVersions from sites
+Version information for a document set version created by a user.
 
 ## EXAMPLES
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserCalendarView
 
 ## SYNOPSIS
-Get calendarView from users
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ## SYNTAX
 
@@ -27,7 +29,9 @@ Get-MgUserCalendarView -UserId <String> -CalendarId <String> -EndDateTime <Strin
 ```
 
 ## DESCRIPTION
-Get calendarView from users
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ## EXAMPLES
 

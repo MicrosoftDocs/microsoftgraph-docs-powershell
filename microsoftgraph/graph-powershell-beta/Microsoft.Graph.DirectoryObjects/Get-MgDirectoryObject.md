@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryObject
 
 ## SYNOPSIS
-Get directoryObject
+Retrieve the properties and relationships of a directoryObject object.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get directoryObject
+Retrieve the properties and relationships of a directoryObject object.
 
 ## EXAMPLES
 
@@ -249,7 +249,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

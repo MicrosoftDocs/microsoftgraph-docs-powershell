@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerRosterMember
 
 ## SYNOPSIS
-Get members from planner
+Retrieves the members of the plannerRoster.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgPlannerRosterMember -InputObject <IPlannerIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get members from planner
+Retrieves the members of the plannerRoster.
 
 ## EXAMPLES
 

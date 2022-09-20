@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Search
-Module Guid: 0ef5822b-fc59-4872-b6dc-f3a4210c340e
+Module Guid: f720034a-d3e0-42b1-8a71-46129b04522f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search
 Help Version: 1.0.0.0
 Locale: en-US
@@ -21,7 +21,8 @@ Get connections from external
 Get groups from external
 
 ### [Get-MgExternalConnectionGroupMember](Get-MgExternalConnectionGroupMember.md)
-Get members from external
+A member added to an externalGroup.
+You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
 
 ### [Get-MgExternalConnectionItem](Get-MgExternalConnectionItem.md)
 Get items from external

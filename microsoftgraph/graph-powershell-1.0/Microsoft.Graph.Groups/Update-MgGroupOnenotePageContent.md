@@ -229,13 +229,13 @@ BODYPARAMETER `<IPaths96Tlp1GroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraph
     - `[Action <String>]`: onenotePatchActionType
     - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
     - `[Position <String>]`: onenotePatchInsertPosition
-    - `[Target <String>]`: The element to update. Must be the #`<data-id>` or the generated {id} of the element, or the body or title keyword.
+    - `[Target <String>]`: The element to update. Must be the #`<data-id>` or the generated <id> of the element, or the body or title keyword.
 
 COMMANDS <IMicrosoftGraphOnenotePatchContentCommand\[]>: .
   - `[Action <String>]`: onenotePatchActionType
   - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
   - `[Position <String>]`: onenotePatchInsertPosition
-  - `[Target <String>]`: The element to update. Must be the #`<data-id>` or the generated {id} of the element, or the body or title keyword.
+  - `[Target <String>]`: The element to update. Must be the #`<data-id>` or the generated <id> of the element, or the body or title keyword.
 
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment

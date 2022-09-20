@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointCloudPC
 
 ## SYNOPSIS
-Get cloudPCs from deviceManagement
+Cloud managed virtual desktops.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementVirtualEndpointCloudPC -InputObject <IDeviceManagementAdmi
 ```
 
 ## DESCRIPTION
-Get cloudPCs from deviceManagement
+Cloud managed virtual desktops.
 
 ## EXAMPLES
 

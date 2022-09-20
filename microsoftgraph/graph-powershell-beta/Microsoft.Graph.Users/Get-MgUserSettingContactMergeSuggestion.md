@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSettingContactMergeSuggestion
 
 ## SYNOPSIS
-Get contactMergeSuggestions from users
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get contactMergeSuggestions from users
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
 ## EXAMPLES
 

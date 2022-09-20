@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance
 
 ## SYNOPSIS
-Get roleAssignmentScheduleInstances from roleManagement
+Instances for active role assignments.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Get roleAssignmentScheduleInstances from roleManagement
+Instances for active role assignments.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Enable-MgDeviceManagementManagedDeviceLostMode
 
 ## SYNOPSIS
-Invoke action enableLostMode
+Enable lost mode
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Enable-MgDeviceManagementManagedDeviceLostMode -InputObject <IDeviceManagementAc
 ```
 
 ## DESCRIPTION
-Invoke action enableLostMode
+Enable lost mode
 
 ## EXAMPLES
 
@@ -244,6 +244,7 @@ BODYPARAMETER `<IPathsK312EdDevicemanagementManageddevicesManageddeviceIdMicroso
   - `[PhoneNumber <String>]`: 
 
 INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

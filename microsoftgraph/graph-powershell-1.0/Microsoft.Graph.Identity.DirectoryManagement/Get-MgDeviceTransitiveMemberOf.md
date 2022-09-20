@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgDeviceTransitiveMemberOf
 
 ## SYNOPSIS
-Get transitiveMemberOf from devices
+Groups and administrative units that the device is a member of.
+This operation is transitive.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgDeviceTransitiveMemberOf -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Get transitiveMemberOf from devices
+Groups and administrative units that the device is a member of.
+This operation is transitive.
+Supports $expand.
 
 ## EXAMPLES
 

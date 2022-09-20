@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfigurationConflictSummary
 
 ## SYNOPSIS
-Get deviceConfigurationConflictSummary from deviceManagement
+Summary of policies in conflict state for this account.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDeviceConfigurationConflictSummary -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Get deviceConfigurationConflictSummary from deviceManagement
+Summary of policies in conflict state for this account.
 
 ## EXAMPLES
 

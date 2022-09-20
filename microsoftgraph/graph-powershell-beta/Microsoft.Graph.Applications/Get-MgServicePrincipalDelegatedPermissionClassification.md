@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgServicePrincipalDelegatedPermissionClassification
 
 ## SYNOPSIS
-Get delegatedPermissionClassifications from servicePrincipals
+The permission classifications for delegated permissions exposed by the app that this service principal represents.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicati
 ```
 
 ## DESCRIPTION
-Get delegatedPermissionClassifications from servicePrincipals
+The permission classifications for delegated permissions exposed by the app that this service principal represents.
+Supports $expand.
 
 ## EXAMPLES
 

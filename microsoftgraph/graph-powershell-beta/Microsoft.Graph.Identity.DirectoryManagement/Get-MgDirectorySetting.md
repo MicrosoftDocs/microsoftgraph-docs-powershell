@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectorySetting
 
 ## SYNOPSIS
-Get directorySetting
+Retrieve the properties of a specific directory setting object.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get directorySetting
+Retrieve the properties of a specific directory setting object.
 
 ## EXAMPLES
 

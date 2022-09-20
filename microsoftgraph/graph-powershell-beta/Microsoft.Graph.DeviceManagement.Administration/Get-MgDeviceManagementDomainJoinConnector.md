@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDomainJoinConnector
 
 ## SYNOPSIS
-Get domainJoinConnectors from deviceManagement
+A list of connector objects.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementDomainJoinConnector -InputObject <IDeviceManagementAdminis
 ```
 
 ## DESCRIPTION
-Get domainJoinConnectors from deviceManagement
+A list of connector objects.
 
 ## EXAMPLES
 

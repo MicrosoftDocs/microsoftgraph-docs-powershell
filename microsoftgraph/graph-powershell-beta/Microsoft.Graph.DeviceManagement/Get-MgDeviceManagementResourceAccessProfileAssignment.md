@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementResourceAccessProfileAssignment
 
 ## SYNOPSIS
-Get assignments from deviceManagement
+The list of assignments for the device configuration profile.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceManagementResourceAccessProfileAssignment -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Get assignments from deviceManagement
+The list of assignments for the device configuration profile.
 
 ## EXAMPLES
 

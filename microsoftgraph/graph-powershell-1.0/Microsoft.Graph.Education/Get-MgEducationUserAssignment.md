@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationUserAssignment
 
 ## SYNOPSIS
-Get assignments from education
+Assignments belonging to the user.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgEducationUserAssignment -InputObject <IEducationIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Get assignments from education
+Assignments belonging to the user.
 
 ## EXAMPLES
 

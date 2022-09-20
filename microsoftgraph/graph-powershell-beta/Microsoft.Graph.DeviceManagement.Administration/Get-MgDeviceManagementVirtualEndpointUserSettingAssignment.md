@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointUserSettingAssignment
 
 ## SYNOPSIS
-Get assignments from deviceManagement
+Represents the set of Microsoft 365 groups and security groups in Azure AD that have cloudPCUserSetting assigned.
+Returned only on $expand.
+For an example, see Get cloudPcUserSettingample.
 
 ## SYNTAX
 
@@ -33,7 +35,9 @@ Get-MgDeviceManagementVirtualEndpointUserSettingAssignment
 ```
 
 ## DESCRIPTION
-Get assignments from deviceManagement
+Represents the set of Microsoft 365 groups and security groups in Azure AD that have cloudPCUserSetting assigned.
+Returned only on $expand.
+For an example, see Get cloudPcUserSettingample.
 
 ## EXAMPLES
 

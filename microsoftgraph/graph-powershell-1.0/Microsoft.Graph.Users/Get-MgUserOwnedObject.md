@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserOwnedObject
 
 ## SYNOPSIS
-Get ownedObjects from users
+Directory objects that are owned by the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgUserOwnedObject -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get ownedObjects from users
+Directory objects that are owned by the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

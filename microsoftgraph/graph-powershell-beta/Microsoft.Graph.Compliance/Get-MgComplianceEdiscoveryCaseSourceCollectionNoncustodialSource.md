@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource
 
 ## SYNOPSIS
-Get noncustodialSources from compliance
+noncustodialDataSource sources that are included in the sourceCollection
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -InputObject <I
 ```
 
 ## DESCRIPTION
-Get noncustodialSources from compliance
+noncustodialDataSource sources that are included in the sourceCollection
 
 ## EXAMPLES
 

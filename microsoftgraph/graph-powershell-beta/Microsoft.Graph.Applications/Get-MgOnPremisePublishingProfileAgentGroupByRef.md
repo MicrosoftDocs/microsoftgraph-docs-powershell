@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgOnPremisePublishingProfileAgentGroupByRef
 
 ## SYNOPSIS
-Get ref of agentGroups from onPremisesPublishingProfiles
+List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -28,7 +30,9 @@ Get-MgOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <String>
 ```
 
 ## DESCRIPTION
-Get ref of agentGroups from onPremisesPublishingProfiles
+List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

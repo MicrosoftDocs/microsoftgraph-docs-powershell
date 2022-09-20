@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation
 
 ## SYNOPSIS
-Get lastEstimateStatisticsOperation from compliance
+The last estimate operation associated with the sourceCollection.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation
 ```
 
 ## DESCRIPTION
-Get lastEstimateStatisticsOperation from compliance
+The last estimate operation associated with the sourceCollection.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserChatMember
 
 ## SYNOPSIS
-Get members from users
+A collection of all the members in the chat.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgUserChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get members from users
+A collection of all the members in the chat.
+Nullable.
 
 ## EXAMPLES
 
