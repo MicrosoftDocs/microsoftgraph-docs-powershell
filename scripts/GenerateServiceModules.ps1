@@ -10,7 +10,7 @@ if ([string]::IsNullOrEmpty($exists)) {
      git checkout $proposedBranch
 }
 
-.\tools\GenerateModules.ps1 -Build
+.\tools\GenerateModules.ps1 -Build -ExcludeExampleTemplates
 git config --global user.email "timwamalwa@gmail.com"
 git config --global user.name "Timothy Wamalwa"
 git add .
