@@ -3,7 +3,7 @@ title: "Manage PIM policies using Microsoft Graph PowerShell"
 description: "Learn how to manage PIM policies in Microsoft Graph PowerShell"
 
 ms.topic: how-to
-ms.date: 09/12/2022
+ms.date: 09/20/2022
 author: msewaweru
 manager: mwongerapk
 ms.author: eunicewaweru
@@ -13,7 +13,7 @@ ms.author: eunicewaweru
 
 The Azure AD Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Each role has a group of settings that manage it. For example, activation and assignment settings. These role settings are called policies. Each policy has a set of rules.
 
-In this how-to guide, you'll list and update these policy rules.
+In this how-to guide, you'll list policies, policy assignments and rules, and update policy rules.
 
 ## Prerequisites
 
@@ -32,6 +32,8 @@ To successfully complete this guide, make sure you have the required prerequisit
     Select **Consent on behalf of your organization** before accepting in the sign-in dialog box.
 
 ## Step 1: List policies
+
+A policy is a group of settings that manage a role.
 
 ### List all policies
 
