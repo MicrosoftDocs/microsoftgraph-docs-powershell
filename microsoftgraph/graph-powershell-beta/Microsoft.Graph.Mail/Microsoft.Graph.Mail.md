@@ -12,20 +12,16 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Mail Cmdlets
 ### [Get-MgUserInferenceClassification](Get-MgUserInferenceClassification.md)
-Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
+Get inferenceClassification from users
 
 ### [Get-MgUserInferenceClassificationOverride](Get-MgUserInferenceClassificationOverride.md)
-A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
-Read-only.
-Nullable.
+Get overrides from users
 
 ### [Get-MgUserMailFolder](Get-MgUserMailFolder.md)
-The user's mail folders.
-Read-only.
-Nullable.
+Get mailFolders from users
 
 ### [Get-MgUserMailFolderChildFolder](Get-MgUserMailFolderChildFolder.md)
-The collection of child folders in the mailFolder.
+Get childFolders from users
 
 ### [Get-MgUserMailFolderChildFolderMessage](Get-MgUserMailFolderChildFolderMessage.md)
 The collection of messages in the mailFolder.
@@ -69,72 +65,58 @@ Nullable.
 Get userConfigurations from users
 
 ### [Get-MgUserMailFolderMessage](Get-MgUserMailFolderMessage.md)
-The collection of messages in the mailFolder.
+Get messages from users
 
 ### [Get-MgUserMailFolderMessageAttachment](Get-MgUserMailFolderMessageAttachment.md)
-The fileAttachment and itemAttachment attachments for the message.
+Get attachments from users
 
 ### [Get-MgUserMailFolderMessageContent](Get-MgUserMailFolderMessageContent.md)
 Get media content for the navigation property messages from users
 
 ### [Get-MgUserMailFolderMessageExtension](Get-MgUserMailFolderMessageExtension.md)
-The collection of open extensions defined for the message.
-Nullable.
+Get extensions from users
 
 ### [Get-MgUserMailFolderMessageMention](Get-MgUserMailFolderMessageMention.md)
-A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
-By default, a GET /messages does not return this property unless you apply $expand on the property.
+Get mentions from users
 
 ### [Get-MgUserMailFolderMessageMultiValueExtendedProperty](Get-MgUserMailFolderMessageMultiValueExtendedProperty.md)
-The collection of multi-value extended properties defined for the message.
-Nullable.
+Get multiValueExtendedProperties from users
 
 ### [Get-MgUserMailFolderMessageRule](Get-MgUserMailFolderMessageRule.md)
-The collection of rules that apply to the user's Inbox folder.
+Get messageRules from users
 
 ### [Get-MgUserMailFolderMessageSingleValueExtendedProperty](Get-MgUserMailFolderMessageSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the message.
-Nullable.
+Get singleValueExtendedProperties from users
 
 ### [Get-MgUserMailFolderMultiValueExtendedProperty](Get-MgUserMailFolderMultiValueExtendedProperty.md)
-The collection of multi-value extended properties defined for the mailFolder.
-Read-only.
-Nullable.
+Get multiValueExtendedProperties from users
 
 ### [Get-MgUserMailFolderSingleValueExtendedProperty](Get-MgUserMailFolderSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the mailFolder.
-Read-only.
-Nullable.
+Get singleValueExtendedProperties from users
 
 ### [Get-MgUserMailFolderUserConfiguration](Get-MgUserMailFolderUserConfiguration.md)
 Get userConfigurations from users
 
 ### [Get-MgUserMessage](Get-MgUserMessage.md)
-The messages in a mailbox or folder.
-Read-only.
-Nullable.
+Get messages from users
 
 ### [Get-MgUserMessageAttachment](Get-MgUserMessageAttachment.md)
-The fileAttachment and itemAttachment attachments for the message.
+Get attachments from users
 
 ### [Get-MgUserMessageContent](Get-MgUserMessageContent.md)
 Get media content for the navigation property messages from users
 
 ### [Get-MgUserMessageExtension](Get-MgUserMessageExtension.md)
-The collection of open extensions defined for the message.
-Nullable.
+Get extensions from users
 
 ### [Get-MgUserMessageMention](Get-MgUserMessageMention.md)
-A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
-By default, a GET /messages does not return this property unless you apply $expand on the property.
+Get mentions from users
 
 ### [Get-MgUserMessageMultiValueExtendedProperty](Get-MgUserMessageMultiValueExtendedProperty.md)
-The collection of multi-value extended properties defined for the message.
-Nullable.
+Get multiValueExtendedProperties from users
 
 ### [Get-MgUserMessageSingleValueExtendedProperty](Get-MgUserMessageSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the message.
-Nullable.
+Get singleValueExtendedProperties from users
 
 ### [New-MgUserInferenceClassificationOverride](New-MgUserInferenceClassificationOverride.md)
 Create new navigation property to overrides for users

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserMailFolderMessageAttachment
 
 ## SYNOPSIS
-The fileAttachment and itemAttachment attachments for the message.
+Get attachments from users
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserMailFolderMessageAttachment -InputObject <IMailIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-The fileAttachment and itemAttachment attachments for the message.
+Get attachments from users
 
 ## EXAMPLES
 

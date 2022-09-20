@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserMessageExtension
 
 ## SYNOPSIS
-The collection of open extensions defined for the message.
-Nullable.
+Get extensions from users
 
 ## SYNTAX
 
@@ -33,8 +32,7 @@ Get-MgUserMessageExtension -InputObject <IMailIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-The collection of open extensions defined for the message.
-Nullable.
+Get extensions from users
 
 ## EXAMPLES
 

@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserContactFolderSingleValueExtendedProperty
 
 ## SYNOPSIS
-The collection of single-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
+Get singleValueExtendedProperties from users
 
 ## SYNTAX
 
@@ -35,9 +33,7 @@ Get-MgUserContactFolderSingleValueExtendedProperty -InputObject <IPersonalContac
 ```
 
 ## DESCRIPTION
-The collection of single-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
+Get singleValueExtendedProperties from users
 
 ## EXAMPLES
 

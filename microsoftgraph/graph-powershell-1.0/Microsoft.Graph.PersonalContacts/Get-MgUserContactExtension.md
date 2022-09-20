@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserContactExtension
 
 ## SYNOPSIS
-The collection of open extensions defined for the contact.
-Read-only.
-Nullable.
+Get extensions from users
 
 ## SYNTAX
 
@@ -34,9 +32,7 @@ Get-MgUserContactExtension -InputObject <IPersonalContactsIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-The collection of open extensions defined for the contact.
-Read-only.
-Nullable.
+Get extensions from users
 
 ## EXAMPLES
 

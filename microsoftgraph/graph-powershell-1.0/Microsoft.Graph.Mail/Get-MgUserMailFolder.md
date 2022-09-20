@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserMailFolder
 
 ## SYNOPSIS
-The user's mail folders.
-Read-only.
-Nullable.
+Get mailFolders from users
 
 ## SYNTAX
 
@@ -31,9 +29,7 @@ Get-MgUserMailFolder -InputObject <IMailIdentity> [-Property <String[]>] [<Commo
 ```
 
 ## DESCRIPTION
-The user's mail folders.
-Read-only.
-Nullable.
+Get mailFolders from users
 
 ## EXAMPLES
 
