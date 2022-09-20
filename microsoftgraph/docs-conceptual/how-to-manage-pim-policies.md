@@ -23,7 +23,7 @@ To successfully complete this guide, make sure you have the required prerequisit
 1. To use the Azure AD Privileged Identity Management, you must have one of the following licenses:
     - Azure AD Premium P2
     - Enterprise Mobility + Security (EMS) E5 license
-1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this how-to guide, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
     Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"
