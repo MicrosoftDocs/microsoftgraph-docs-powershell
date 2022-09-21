@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/new-mgplannerbucket
@@ -203,7 +203,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPlannerBucket>: plannerBucket
+BODYPARAMETER `<IMicrosoftGraphPlannerBucket>`: plannerBucket
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Name <String>]`: Name of the bucket.
@@ -265,7 +265,7 @@ BODYPARAMETER <IMicrosoftGraphPlannerBucket>: plannerBucket
     - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Title <String>]`: Title of the task.
 
-TASKS <IMicrosoftGraphPlannerTask[]>: Read-only. Nullable. The collection of tasks in the bucket.
+TASKS <IMicrosoftGraphPlannerTask\[]>: Read-only. Nullable. The collection of tasks in the bucket.
   - `[Id <String>]`: 
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
