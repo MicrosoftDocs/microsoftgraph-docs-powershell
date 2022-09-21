@@ -49,26 +49,6 @@ Update the navigation property userExperienceAnalyticsBatteryHealthAppImpact in 
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -ActiveDevices
 Number of active devices for using that app over a 14-day period.
 Valid values -2147483648 to 2147483647
