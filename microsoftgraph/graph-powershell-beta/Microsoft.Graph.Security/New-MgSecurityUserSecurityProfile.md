@@ -32,26 +32,6 @@ Create new navigation property to userSecurityProfiles for security
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -Accounts
 .
 To construct, please use Get-Help -Online and see NOTES section for ACCOUNTS properties and create a hash table.
