@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/copy-mgsiteonenotepagetosection
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Copy-MgSiteOnenotePageToSection
 
 ## SYNOPSIS
-Invoke action copyToSection
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ Copy-MgSiteOnenotePageToSection -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action copyToSection
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## EXAMPLES
 
@@ -246,14 +248,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1LarwmeSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1LarwmeSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupId <String>]`: 
   - `[Id <String>]`: 
   - `[SiteCollectionId <String>]`: 
   - `[SiteId <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

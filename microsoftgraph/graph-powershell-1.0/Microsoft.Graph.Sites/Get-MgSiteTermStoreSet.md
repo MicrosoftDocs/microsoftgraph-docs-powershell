@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitetermstoreset
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgSiteTermStoreSet
 
 ## SYNOPSIS
-Get sets from sites
+Collection of all sets available in the term store.
+This relationship can only be used to load a specific term set.
 
 ## SYNTAX
 
@@ -44,9 +45,19 @@ Get-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get sets from sites
+Collection of all sets available in the term store.
+This relationship can only be used to load a specific term set.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgSiteTermStoreSet Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+Get-MgSiteTermStoreSet -SiteId $siteId -SetId $setId
+```
+
+This example shows how to use the Get-MgSiteTermStoreSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -60,7 +71,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -137,7 +148,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -280,7 +291,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

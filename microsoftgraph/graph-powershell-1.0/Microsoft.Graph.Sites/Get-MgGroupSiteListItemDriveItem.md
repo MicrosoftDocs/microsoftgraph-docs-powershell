@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemdriveitem
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteListItemDriveItem
 
 ## SYNOPSIS
-Get driveItem from groups
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgGroupSiteListItemDriveItem -InputObject <ISitesIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get driveItem from groups
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ## EXAMPLES
 
@@ -155,7 +155,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

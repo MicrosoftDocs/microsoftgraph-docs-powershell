@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroup
@@ -40,6 +40,15 @@ Remove-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <String>] [-
 Delete navigation property groups for sites
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgSiteTermStoreGroup Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+Remove-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
+```
+
+This example shows how to use the Remove-MgSiteTermStoreGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -183,7 +192,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

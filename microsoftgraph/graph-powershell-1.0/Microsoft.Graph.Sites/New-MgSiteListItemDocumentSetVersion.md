@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitelistitemdocumentsetversion
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteListItemDocumentSetVersion
 
 ## SYNOPSIS
-Create new navigation property to documentSetVersions for sites
+Create a new version of a document set item in a list.
 
 ## SYNTAX
 
@@ -45,9 +45,22 @@ New-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to documentSetVersions for sites
+Create a new version of a document set item in a list.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgSiteListItemDocumentSetVersion Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	Comment = "v1"
+	ShouldCaptureMinorVersion = $false
+}
+New-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+```
+
+This example shows how to use the New-MgSiteListItemDocumentSetVersion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -349,7 +362,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDocumentSetVersion>`: documentSetVersion
+BODYPARAMETER <IMicrosoftGraphDocumentSetVersion>: documentSetVersion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -377,7 +390,7 @@ BODYPARAMETER `<IMicrosoftGraphDocumentSetVersion>`: documentSetVersion
     - `[VersionId <String>]`: The version ID of the item.
   - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured. Default value is false.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -386,7 +399,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -423,12 +436,12 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-ITEMS <IMicrosoftGraphDocumentSetVersionItem\[]>: Items within the document set that are captured as part of this version.
+ITEMS <IMicrosoftGraphDocumentSetVersionItem[]>: Items within the document set that are captured as part of this version.
   - `[ItemId <String>]`: The unique identifier for the item.
   - `[Title <String>]`: The title of the item.
   - `[VersionId <String>]`: The version ID of the item.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -437,7 +450,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+PUBLICATION <IMicrosoftGraphPublicationFacet>: publicationFacet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.

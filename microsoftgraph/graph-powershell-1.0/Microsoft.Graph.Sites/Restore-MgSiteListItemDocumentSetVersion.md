@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/restore-mgsitelistitemdocumentsetversion
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Restore-MgSiteListItemDocumentSetVersion
 
 ## SYNOPSIS
-Invoke action restore
+Restore a document set version.
 
 ## SYNTAX
 
@@ -25,9 +25,18 @@ Restore-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-PassThr
 ```
 
 ## DESCRIPTION
-Invoke action restore
+Restore a document set version.
 
 ## EXAMPLES
+
+### Example 1: Using the Restore-MgSiteListItemDocumentSetVersion Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+Restore-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
+```
+
+This example shows how to use the Restore-MgSiteListItemDocumentSetVersion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -171,7 +180,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

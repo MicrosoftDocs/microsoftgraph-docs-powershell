@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetparentgroupsetchild
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteTermStoreSetParentGroupSetChild
 
 ## SYNOPSIS
-Get children from sites
+Children terms of set in term [store].
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ Get-MgSiteTermStoreSetParentGroupSetChild -InputObject <ISitesIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get children from sites
+Children terms of set in term [store].
 
 ## EXAMPLES
 
@@ -68,7 +68,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -145,7 +145,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -333,7 +333,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
