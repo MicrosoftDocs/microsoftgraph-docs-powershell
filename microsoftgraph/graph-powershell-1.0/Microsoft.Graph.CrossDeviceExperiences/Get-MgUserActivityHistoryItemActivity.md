@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitemactivity
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserActivityHistoryItemActivity
 
 ## SYNOPSIS
-Get activity from users
+Optional.
+NavigationProperty/Containment; navigation property to the associated activity.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgUserActivityHistoryItemActivity -InputObject <ICrossDeviceExperiencesIdent
 ```
 
 ## DESCRIPTION
-Get activity from users
+Optional.
+NavigationProperty/Containment; navigation property to the associated activity.
 
 ## EXAMPLES
 
@@ -140,7 +142,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
   - `[CommandId <String>]`: key: id of command
   - `[DeviceId <String>]`: key: id of device
