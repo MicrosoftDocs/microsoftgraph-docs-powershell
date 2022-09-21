@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuseractivity
@@ -8,7 +8,14 @@ schema: 2.0.0
 # Invoke-MgRecentUserActivity
 
 ## SYNOPSIS
-Invoke function recent
+Get recent activities for a given user.
+This OData function has some default behaviors included to make it operate like a 'most recently used' API.
+The service will query for the most recent historyItems, and then pull those related activities.
+Activities will be sorted according to the most recent **lastModified** on the **historyItem**.
+This means that activities without **historyItems** will not be included in the response.
+The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
+This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.
+To get your application's activities, use the **nextLink** property to paginate.
 
 ## SYNTAX
 
@@ -23,9 +30,26 @@ Invoke-MgRecentUserActivity -InputObject <IUsersFunctionsIdentity> [<CommonParam
 ```
 
 ## DESCRIPTION
-Invoke function recent
+Get recent activities for a given user.
+This OData function has some default behaviors included to make it operate like a 'most recently used' API.
+The service will query for the most recent historyItems, and then pull those related activities.
+Activities will be sorted according to the most recent **lastModified** on the **historyItem**.
+This means that activities without **historyItems** will not be included in the response.
+The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
+This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.
+To get your application's activities, use the **nextLink** property to paginate.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgRecentUserActivity Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Functions
+# A UPN can also be used as -UserId.
+Invoke-MgRecentUserActivity -UserId $userId
+```
+
+This example shows how to use the Invoke-MgRecentUserActivity Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -78,7 +102,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
@@ -104,6 +128,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[OnenotePageId <String>]`: key: id of onenotePage
   - `[Q <String>]`: Usage: q='{q}'
   - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
+  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
   - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
   - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'

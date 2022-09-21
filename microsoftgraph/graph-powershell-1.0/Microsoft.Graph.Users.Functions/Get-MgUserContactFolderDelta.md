@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusercontactfolderdelta
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserContactFolderDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
+A **delta** function call for contact folders in a mailbox is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contact folders.
+This allows you to maintain and synchronize \na local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
 ## SYNTAX
 
@@ -23,9 +25,21 @@ Get-MgUserContactFolderDelta -InputObject <IUsersFunctionsIdentity> [<CommonPara
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
+A **delta** function call for contact folders in a mailbox is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contact folders.
+This allows you to maintain and synchronize \na local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserContactFolderDelta Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Functions
+# A UPN can also be used as -UserId.
+Get-MgUserContactFolderDelta -UserId $userId
+```
+
+This example shows how to use the Get-MgUserContactFolderDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -78,7 +92,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
@@ -104,6 +118,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[OnenotePageId <String>]`: key: id of onenotePage
   - `[Q <String>]`: Usage: q='{q}'
   - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
+  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
   - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
   - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'
