@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/start-mgcommunicationcallparticipantholdmusic
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Start-MgCommunicationCallParticipantHoldMusic
 
 ## SYNOPSIS
-Invoke action startHoldMusic
+Put a participant on hold and play music in the background.
 
 ## SYNTAX
 
@@ -41,9 +41,28 @@ Start-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunications
 ```
 
 ## DESCRIPTION
-Invoke action startHoldMusic
+Put a participant on hold and play music in the background.
 
 ## EXAMPLES
+
+### Example 1: Using the Start-MgCommunicationCallParticipantHoldMusic Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	CustomPrompt = @{
+		"@odata.type" = "#microsoft.graph.mediaPrompt"
+		MediaInfo = @{
+			"@odata.type" = "#microsoft.graph.mediaInfo"
+			Uri = "https://bot.contoso.com/onHold.wav"
+		}
+	}
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+}
+Start-MgCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
+```
+
+This example shows how to use the Start-MgCommunicationCallParticipantHoldMusic Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -204,13 +223,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsKtcw9WCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStartholdmusicPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsKtcw9WCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStartholdmusicPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
   - `[CustomPrompt <IMicrosoftGraphPrompt>]`: prompt
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

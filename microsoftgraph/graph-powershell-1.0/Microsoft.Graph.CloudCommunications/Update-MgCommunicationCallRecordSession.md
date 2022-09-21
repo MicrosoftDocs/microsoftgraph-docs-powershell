@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallrecordsession
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-UTC fime when the first user joined the session.
+UTC time when the first user joined the session.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
@@ -324,7 +324,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
+BODYPARAMETER <IMicrosoftGraphCallRecordsSession>: session
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
@@ -389,7 +389,7 @@ BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
         - `[SentQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.
         - `[Subnet <String>]`: Subnet used for media stream by the media endpoint.
         - `[TraceRouteHops <IMicrosoftGraphCallRecordsTraceRouteHop[]>]`: List of network trace route hops collected for this media stream.*
-          - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the round-trip time.
+          - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the RTT.
           - `[IPAddress <String>]`: IP address used for this hop in the network trace.
           - `[RoundTripTime <TimeSpan?>]`: The time from when the trace route packet was sent from the client to this hop and back to the client, denoted in [ISO 8601][] format. For example, 1 second is denoted as PT1S, where P is the duration designator, T is the time designator, and S is the second designator.
         - `[WifiBand <String>]`: wifiBand
@@ -433,28 +433,28 @@ BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
         - `[VideoCodec <String>]`: videoCodec
         - `[WasMediaBypassed <Boolean?>]`: True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false otherwise.
     - `[StartDateTime <DateTime?>]`: UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[StartDateTime <DateTime?>]`: UTC fime when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[StartDateTime <DateTime?>]`: UTC time when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-CALLEE `<IMicrosoftGraphCallRecordsEndpoint>`: endpoint
+CALLEE <IMicrosoftGraphCallRecordsEndpoint>: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
     - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
 
-CALLER `<IMicrosoftGraphCallRecordsEndpoint>`: endpoint
+CALLER <IMicrosoftGraphCallRecordsEndpoint>: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
     - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
 
-FAILUREINFO `<IMicrosoftGraphCallRecordsFailureInfo>`: failureInfo
+FAILUREINFO <IMicrosoftGraphCallRecordsFailureInfo>: failureInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Reason <String>]`: Classification of why a call or portion of a call failed.
   - `[Stage <String>]`: failureStage
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
@@ -470,7 +470,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-SEGMENTS <IMicrosoftGraphCallRecordsSegment\[]>: The list of segments involved in the session. Read-only. Nullable.
+SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>: The list of segments involved in the session. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -527,7 +527,7 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment\[]>: The list of segments involved i
       - `[SentQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.
       - `[Subnet <String>]`: Subnet used for media stream by the media endpoint.
       - `[TraceRouteHops <IMicrosoftGraphCallRecordsTraceRouteHop[]>]`: List of network trace route hops collected for this media stream.*
-        - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the round-trip time.
+        - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the RTT.
         - `[IPAddress <String>]`: IP address used for this hop in the network trace.
         - `[RoundTripTime <TimeSpan?>]`: The time from when the trace route packet was sent from the client to this hop and back to the client, denoted in [ISO 8601][] format. For example, 1 second is denoted as PT1S, where P is the duration designator, T is the time designator, and S is the second designator.
       - `[WifiBand <String>]`: wifiBand

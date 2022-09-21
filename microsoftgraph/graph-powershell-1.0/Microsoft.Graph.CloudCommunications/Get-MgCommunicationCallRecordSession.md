@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecordsession
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgCommunicationCallRecordSession
 
 ## SYNOPSIS
-Get sessions from communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,9 +35,30 @@ Get-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Get sessions from communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgCommunicationCallRecordSession Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
+```
+
+This example shows how to use the Get-MgCommunicationCallRecordSession Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgCommunicationCallRecordSession Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId
+```
+
+This example shows how to use the Get-MgCommunicationCallRecordSession Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +72,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -140,7 +164,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +277,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

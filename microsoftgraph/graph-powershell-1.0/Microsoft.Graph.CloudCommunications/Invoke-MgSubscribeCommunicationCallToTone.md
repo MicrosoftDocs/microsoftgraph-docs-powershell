@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgsubscribecommunicationcalltotone
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgSubscribeCommunicationCallToTone
 
 ## SYNOPSIS
-Invoke action subscribeToTone
+Subscribe to DTMF (dual-tone multi-frequency signaling).
+This allows you to be notified when the user presses keys on a 'dialpad'.
 
 ## SYNTAX
 
@@ -39,9 +40,22 @@ Invoke-MgSubscribeCommunicationCallToTone -InputObject <ICloudCommunicationsIden
 ```
 
 ## DESCRIPTION
-Invoke action subscribeToTone
+Subscribe to DTMF (dual-tone multi-frequency signaling).
+This allows you to be notified when the user presses keys on a 'dialpad'.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgSubscribeCommunicationCallToTone Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	ClientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54"
+}
+Invoke-MgSubscribeCommunicationCallToTone -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgSubscribeCommunicationCallToTone Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -172,11 +186,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsXyl6WiCommunicationsCallsCallIdMicrosoftGraphSubscribetotonePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsXyl6WiCommunicationsCallsCallIdMicrosoftGraphSubscribetotonePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

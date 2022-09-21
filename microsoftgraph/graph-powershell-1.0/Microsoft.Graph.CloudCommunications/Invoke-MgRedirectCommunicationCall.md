@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgredirectcommunicationcall
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Invoke-MgRedirectCommunicationCall
 
 ## SYNOPSIS
-Invoke action redirect
+Redirect an incoming call that hasn't been answered or rejected yet.
+The terms 'redirecting' and 'forwarding' a call are used interchangeably.
+The bot is expected to redirect the call before the call times out.
+The current timeout value is 15 seconds.
 
 ## SYNTAX
 
@@ -42,9 +45,61 @@ Invoke-MgRedirectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action redirect
+Redirect an incoming call that hasn't been answered or rejected yet.
+The terms 'redirecting' and 'forwarding' a call are used interchangeably.
+The bot is expected to redirect the call before the call times out.
+The current timeout value is 15 seconds.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgRedirectCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	Targets = @(
+		@{
+			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+			Identity = @{
+				"@odata.type" = "#microsoft.graph.identitySet"
+				Application = @{
+					"@odata.type" = "#microsoft.graph.identity"
+					DisplayName = "test bot 2"
+					Id = "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
+				}
+			}
+		}
+	)
+	CallbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
+}
+Invoke-MgRedirectCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgRedirectCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Invoke-MgRedirectCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	Targets = @(
+		@{
+			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+			Identity = @{
+				"@odata.type" = "#microsoft.graph.identitySet"
+				Phone = @{
+					"@odata.type" = "#microsoft.graph.identity"
+					Id = "+12345678901"
+				}
+			}
+		}
+	)
+	CallbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
+}
+Invoke-MgRedirectCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgRedirectCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -221,7 +276,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CallbackUri <String>]`: 
   - `[Targets <IMicrosoftGraphInvitationParticipantInfo[]>]`: 
@@ -239,7 +294,7 @@ BODYPARAMETER `<IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPost
     - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
   - `[Timeout <Int32?>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
@@ -255,7 +310,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-TARGETS <IMicrosoftGraphInvitationParticipantInfo\[]>: .
+TARGETS <IMicrosoftGraphInvitationParticipantInfo[]>: .
   - `[Hidden <Boolean?>]`: 
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

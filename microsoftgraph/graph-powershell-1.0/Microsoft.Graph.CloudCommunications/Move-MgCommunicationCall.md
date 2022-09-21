@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Move-MgCommunicationCall
 
 ## SYNOPSIS
-Invoke action transfer
+Transfer an active peer-to-peer call or group call.
+A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
+This is opposed to transfering the call directly.
 
 ## SYNTAX
 
@@ -41,9 +43,133 @@ Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action transfer
+Transfer an active peer-to-peer call or group call.
+A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
+This is opposed to transfering the call directly.
 
 ## EXAMPLES
+
+### Example 1: Using the Move-MgCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	TransferTarget = @{
+		EndpointType = "default"
+		Identity = @{
+			User = @{
+				Id = "550fae72-d251-43ec-868c-373732c2704f"
+				DisplayName = "Heidi Steen"
+			}
+		}
+	}
+}
+Move-MgCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Move-MgCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Move-MgCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	TransferTarget = @{
+		"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+		EndpointType = "default"
+		Identity = @{
+			"@odata.type" = "#microsoft.graph.identitySet"
+			User = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				Id = "550fae72-d251-43ec-868c-373732c2704f"
+				DisplayName = "Heidi Steen"
+			}
+		}
+		ReplacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d"
+	}
+}
+Move-MgCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Move-MgCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Move-MgCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	TransferTarget = @{
+		EndpointType = "default"
+		Identity = @{
+			Phone = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				Id = "+12345678901"
+			}
+		}
+		LanguageId = "languageId-value"
+		Region = "region-value"
+	}
+	ClientContext = "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+}
+Move-MgCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Move-MgCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the Move-MgCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	TransferTarget = @{
+		"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+		EndpointType = "default"
+		Identity = @{
+			"@odata.type" = "#microsoft.graph.identitySet"
+			Phone = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				Id = "+12345678901"
+			}
+		}
+		LanguageId = "en-us"
+		Region = "amer"
+		ReplacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d"
+	}
+	ClientContext = "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+}
+Move-MgCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Move-MgCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Using the Move-MgCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	TransferTarget = @{
+		EndpointType = "default"
+		Identity = @{
+			User = @{
+				Id = "550fae72-d251-43ec-868c-373732c2704f"
+				DisplayName = "Heidi Steen"
+			}
+		}
+	}
+	Transferee = @{
+		Identity = @{
+			User = @{
+				Id = "751f6800-3180-414d-bd94-333364659951"
+				TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"
+			}
+		}
+		ParticipantId = "909c6581-5130-43e9-88f3-fcb3582cde37"
+	}
+}
+Move-MgCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Move-MgCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -206,7 +332,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TransferTarget <IMicrosoftGraphInvitationParticipantInfo>]`: invitationParticipantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -229,9 +355,9 @@ BODYPARAMETER `<IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostR
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LanguageId <String>]`: The language culture string. Read-only.
     - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
-    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
@@ -247,7 +373,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-TRANSFEREE `<IMicrosoftGraphParticipantInfo>`: participantInfo
+TRANSFEREE <IMicrosoftGraphParticipantInfo>: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
@@ -261,9 +387,9 @@ TRANSFEREE `<IMicrosoftGraphParticipantInfo>`: participantInfo
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LanguageId <String>]`: The language culture string. Read-only.
   - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
-  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only.
 
-TRANSFERTARGET `<IMicrosoftGraphInvitationParticipantInfo>`: invitationParticipantInfo
+TRANSFERTARGET <IMicrosoftGraphInvitationParticipantInfo>: invitationParticipantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Hidden <Boolean?>]`: 
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet

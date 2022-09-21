@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcall
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgMuteCommunicationCall
 
 ## SYNOPSIS
-Invoke action mute
+Allows the application to mute itself.
+This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+For more details about how to handle mute operations, see muteParticipantOperation
 
 ## SYNTAX
 
@@ -39,9 +41,23 @@ Invoke-MgMuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action mute
+Allows the application to mute itself.
+This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+For more details about how to handle mute operations, see muteParticipantOperation
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgMuteCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	ClientContext = "clientContext-value"
+}
+Invoke-MgMuteCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgMuteCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -172,11 +188,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths13Zt223CommunicationsCallsCallIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths13Zt223CommunicationsCallsCallIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

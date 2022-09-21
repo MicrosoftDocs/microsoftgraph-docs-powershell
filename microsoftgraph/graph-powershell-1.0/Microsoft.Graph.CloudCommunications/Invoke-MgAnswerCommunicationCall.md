@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Invoke-MgAnswerCommunicationCall
 
 ## SYNOPSIS
-Invoke action answer
+Enable a bot to answer an incoming call.
+The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
+If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
+The bot is expected to answer, reject, or redirect the call before the call times out.
+The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ## SYNTAX
 
@@ -43,9 +47,72 @@ Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action answer
+Enable a bot to answer an incoming call.
+The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
+If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
+The bot is expected to answer, reject, or redirect the call before the call times out.
+The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgAnswerCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	CallbackUri = "https://bot.contoso.com/api/calls"
+	AcceptedModalities = @(
+		"audio"
+	)
+	MediaConfig = @{
+		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+		Blob = "<Media Session Configuration Blob>"
+	}
+}
+Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Invoke-MgAnswerCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	CallbackUri = "callbackUri-value"
+	MediaConfig = @{
+		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+		Blob = "<Media Session Configuration Blob>"
+	}
+	AcceptedModalities = @(
+		"audio"
+	)
+	ParticipantCapacity = 200
+}
+Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Invoke-MgAnswerCommunicationCall Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	CallbackUri = "https://bot.contoso.com/api/calls"
+	AcceptedModalities = @(
+		"audio"
+	)
+	MediaConfig = @{
+		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+		PreFetchMedia = @(
+		)
+	}
+}
+Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -251,18 +318,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AcceptedModalities <String[]>]`: 
   - `[CallOptions <IMicrosoftGraphIncomingCallOptions>]`: incomingCallOptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[HideBotAfterEscalation <Boolean?>]`: 
+    - `[IsContentSharingNotificationEnabled <Boolean?>]`: 
   - `[CallbackUri <String>]`: 
   - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ParticipantCapacity <Int32?>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

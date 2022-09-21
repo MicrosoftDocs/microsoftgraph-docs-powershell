@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality
@@ -8,7 +8,13 @@ schema: 2.0.0
 # Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
 
 ## SYNOPSIS
-Invoke action logTeleconferenceDeviceQuality
+Log video teleconferencing device quality data.
+The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.
+Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.
+One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.
+The other media leg is between the CVI bot and the VTC device.
+The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
+This method is only for the CVI partners to provide their media quality data.
 
 ## SYNTAX
 
@@ -26,9 +32,108 @@ Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
 ```
 
 ## DESCRIPTION
-Invoke action logTeleconferenceDeviceQuality
+Log video teleconferencing device quality data.
+The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.
+Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.
+One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.
+The other media leg is between the CVI bot and the VTC device.
+The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
+This method is only for the CVI partners to provide their media quality data.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	Quality = @{
+		"@odata.type" = "#microsoft.graph.teleconferenceDeviceQuality"
+		CallChainId = "0622673d-9f69-49b3-9d4f-5ec64f42ecce"
+		ParticipantId = "ea078406-b5d4-4d3c-b85e-90103dcec7f6"
+		MediaLegId = "bd9ee398-4b9d-42c7-8b8d-4e8efad9435f"
+		DeviceName = "TestAgent"
+		DeviceDescription = "TestDescription"
+		MediaQualityList = @(
+			@{
+				"@odata.type" = "#microsoft.graph.teleconferenceDeviceAudioQuality"
+				ChannelIndex = 1
+				MediaDuration = "PT20M"
+				NetworkLinkSpeedInBytes = 13000
+				LocalIPAddress = "127.0.0.1"
+				LocalPort = 6300
+				RemoteIPAddress = "102.1.1.101"
+				RemotePort = 6301
+				InboundPackets = 5500
+				OutboundPackets = 5400
+				AverageInboundPacketLossRateInPercentage = 0.01
+				AverageOutboundPacketLossRateInPercentage = 0.02
+				MaximumInboundPacketLossRateInPercentage = 0.05
+				MaximumOutboundPacketLossRateInPercentage = 0.06
+				AverageInboundRoundTripDelay = "PT0.03S"
+				AverageOutboundRoundTripDelay = "PT0.04S"
+				MaximumInboundRoundTripDelay = "PT0.13S"
+				MaximumOutboundRoundTripDelay = "PT0.14S"
+				AverageInboundJitter = "PT0.01S"
+				AverageOutboundJitter = "PT0.015S"
+				MaximumInboundJitter = "PT0.023S"
+				MaximumOutboundJitter = "PT0.024S"
+			}
+			@{
+				"@odata.type" = "#microsoft.graph.teleconferenceDeviceVideoQuality"
+				ChannelIndex = 1
+				MediaDuration = "PT20M"
+				NetworkLinkSpeedInBytes = 13000
+				LocalIPAddress = "127.0.0.1"
+				LocalPort = 6300
+				RemoteIPAddress = "102.1.1.101"
+				RemotePort = 6301
+				InboundPackets = 5500
+				OutboundPackets = 5400
+				AverageInboundPacketLossRateInPercentage = 0.01
+				AverageOutboundPacketLossRateInPercentage = 0.02
+				MaximumInboundPacketLossRateInPercentage = 0.05
+				MaximumOutboundPacketLossRateInPercentage = 0.06
+				AverageInboundRoundTripDelay = "PT0.03S"
+				AverageOutboundRoundTripDelay = "PT0.04S"
+				MaximumInboundRoundTripDelay = "PT0.13S"
+				MaximumOutboundRoundTripDelay = "PT0.14S"
+				AverageInboundJitter = "PT0.01S"
+				AverageOutboundJitter = "PT0.015S"
+				MaximumInboundJitter = "PT0.023S"
+				MaximumOutboundJitter = "PT0.024S"
+			}
+			@{
+				"@odata.type" = "#microsoft.graph.teleconferenceDeviceScreenSharingQuality"
+				ChannelIndex = 1
+				MediaDuration = "PT20M"
+				NetworkLinkSpeedInBytes = 13000
+				LocalIPAddress = "127.0.0.1"
+				LocalPort = 6300
+				RemoteIPAddress = "102.1.1.101"
+				RemotePort = 6301
+				InboundPackets = 5500
+				OutboundPackets = 5400
+				AverageInboundPacketLossRateInPercentage = 0.01
+				AverageOutboundPacketLossRateInPercentage = 0.02
+				MaximumInboundPacketLossRateInPercentage = 0.05
+				MaximumOutboundPacketLossRateInPercentage = 0.06
+				AverageInboundRoundTripDelay = "PT0.03S"
+				AverageOutboundRoundTripDelay = "PT0.04S"
+				MaximumInboundRoundTripDelay = "PT0.13S"
+				MaximumOutboundRoundTripDelay = "PT0.14S"
+				AverageInboundJitter = "PT0.01S"
+				AverageOutboundJitter = "PT0.015S"
+				MaximumInboundJitter = "PT0.023S"
+				MaximumOutboundJitter = "PT0.024S"
+			}
+		)
+	}
+}
+Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -143,7 +248,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Quality <IMicrosoftGraphTeleconferenceDeviceQuality>]`: teleconferenceDeviceQuality
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -179,7 +284,7 @@ BODYPARAMETER `<IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferenced
       - `[RemotePort <Int32?>]`: The remote media port.
     - `[ParticipantId <String>]`: A unique identifier for a specific participant in a conference. The CVI partner needs to copy over Call.MyParticipantId to this property.
 
-QUALITY `<IMicrosoftGraphTeleconferenceDeviceQuality>`: teleconferenceDeviceQuality
+QUALITY <IMicrosoftGraphTeleconferenceDeviceQuality>: teleconferenceDeviceQuality
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CallChainId <String>]`: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call. This needs to be copied over from Microsoft.Graph.Call.CallChainId.
   - `[CloudServiceDeploymentEnvironment <String>]`: A geo-region where the service is deployed, such as ProdNoam.

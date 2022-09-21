@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallparticipant
@@ -28,6 +28,33 @@ Remove-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity
 Delete navigation property participants for communications
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgCommunicationCallParticipant Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+```
+
+This example shows how to use the Remove-MgCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Remove-MgCommunicationCallParticipant Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+```
+
+This example shows how to use the Remove-MgCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Remove-MgCommunicationCallParticipant Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+```
+
+This example shows how to use the Remove-MgCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -156,7 +183,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
