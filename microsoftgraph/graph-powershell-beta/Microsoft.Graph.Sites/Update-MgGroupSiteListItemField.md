@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemfield
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupSiteListItemField
 
 ## SYNOPSIS
-Update the navigation property fields in groups
+Update the properties on a **[listItem][]**.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Update-MgGroupSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Ha
 ```
 
 ## DESCRIPTION
-Update the navigation property fields in groups
+Update the properties on a **[listItem][]**.
 
 ## EXAMPLES
 
@@ -229,7 +229,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

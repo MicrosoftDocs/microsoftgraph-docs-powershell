@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/publish-mgsitecontenttype
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Publish-MgSiteContentType
 
 ## SYNOPSIS
-Invoke action publish
+Publishes a [contentType][] present in a content type hub site.
 
 ## SYNTAX
 
@@ -24,9 +24,18 @@ Publish-MgSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Invoke action publish
+Publishes a [contentType][] present in a content type hub site.
 
 ## EXAMPLES
+
+### Example 1: Using the Publish-MgSiteContentType Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+Publish-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
+```
+
+This example shows how to use the Publish-MgSiteContentType Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -140,7 +149,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

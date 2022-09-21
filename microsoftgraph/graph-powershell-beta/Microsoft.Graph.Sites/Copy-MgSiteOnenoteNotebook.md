@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/copy-mgsiteonenotenotebook
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Copy-MgSiteOnenoteNotebook
 
 ## SYNOPSIS
-Invoke action copyNotebook
+Copies a notebook to the Notebooks folder in the destination Documents library.
+The folder is created if it doesn't exist.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Copy-MgSiteOnenoteNotebook -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action copyNotebook
+Copies a notebook to the Notebooks folder in the destination Documents library.
+The folder is created if it doesn't exist.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## EXAMPLES
 
@@ -261,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsS3Y1MrSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsS3Y1MrSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupId <String>]`: 
   - `[NotebookFolder <String>]`: 
@@ -269,7 +273,7 @@ BODYPARAMETER `<IPathsS3Y1MrSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphC
   - `[SiteCollectionId <String>]`: 
   - `[SiteId <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/join-mgsitecontenttypewithhubsite
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Join-MgSiteContentTypeWithHubSite
 
 ## SYNOPSIS
-Invoke action associateWithHubSites
+Associate a [content type][contentType] with a list of hub sites.
 
 ## SYNTAX
 
@@ -39,9 +39,24 @@ Join-MgSiteContentTypeWithHubSite -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action associateWithHubSites
+Associate a [content type][contentType] with a list of hub sites.
 
 ## EXAMPLES
+
+### Example 1: Using the Join-MgSiteContentTypeWithHubSite Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	HubSiteUrls = @(
+		"https://graph.microsoft.com/beta/sites/id"
+	)
+	PropagateToExistingLists = $false
+}
+Join-MgSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+```
+
+This example shows how to use the Join-MgSiteContentTypeWithHubSite Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -217,12 +232,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HubSiteUrls <String[]>]`: 
   - `[PropagateToExistingLists <Boolean?>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitelistitemlink
@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgSiteListItemLink
 
 ## SYNOPSIS
-Invoke action createLink
+Create a sharing link for a listItem.
+The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+**listItem** resources inherit sharing permissions from the list the item resides in.
 
 ## SYNTAX
 
@@ -42,9 +44,48 @@ New-MgSiteListItemLink -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action createLink
+Create a sharing link for a listItem.
+The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+**listItem** resources inherit sharing permissions from the list the item resides in.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgSiteListItemLink Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	Type = "embed"
+}
+New-MgSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+```
+
+This example shows how to use the New-MgSiteListItemLink Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the New-MgSiteListItemLink Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	Type = "edit"
+	Scope = "organization"
+}
+New-MgSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+```
+
+This example shows how to use the New-MgSiteListItemLink Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgSiteListItemLink Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	Type = "embed"
+}
+New-MgSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+```
+
+This example shows how to use the New-MgSiteListItemLink Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -281,7 +322,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Password <String>]`: 
@@ -293,7 +334,7 @@ BODYPARAMETER `<IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraph
   - `[Scope <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -330,7 +371,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.

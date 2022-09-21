@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitepage
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSitePage
 
 ## SYNOPSIS
-Get pages from sites
+The collection of pages in the SitePages list in this site.
 
 ## SYNTAX
 
@@ -32,9 +32,27 @@ Get-MgSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Get pages from sites
+The collection of pages in the SitePages list in this site.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgSitePage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+Get-MgSitePage -SiteId $siteId -SitePageId $sitePageId
+```
+
+This example shows how to use the Get-MgSitePage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgSitePage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+Get-MgSitePage -SiteId $siteId
+```
+
+This example shows how to use the Get-MgSitePage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +66,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +143,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +271,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

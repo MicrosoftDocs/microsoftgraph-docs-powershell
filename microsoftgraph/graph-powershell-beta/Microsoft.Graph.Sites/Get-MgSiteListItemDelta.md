@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitelistitemdelta
@@ -36,6 +36,42 @@ Get-MgSiteListItemDelta -InputObject <ISitesIdentity> [<CommonParameters>]
 Invoke function delta
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgSiteListItemDelta Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"
+```
+
+This example shows how to use the Get-MgSiteListItemDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgSiteListItemDelta Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"  -OutFile $outFileId
+```
+
+This example shows how to use the Get-MgSiteListItemDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgSiteListItemDelta Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId
+```
+
+This example shows how to use the Get-MgSiteListItemDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the Get-MgSiteListItemDelta Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka"
+```
+
+This example shows how to use the Get-MgSiteListItemDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -118,7 +154,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

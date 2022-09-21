@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mggroupsitepermission
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSitePermission
 
 ## SYNOPSIS
-Create new navigation property to permissions for groups
+Create a new permission object on a site.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ New-MgGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create new navigation property to permissions for groups
+Create a new permission object on a site.
 
 ## EXAMPLES
 
@@ -379,7 +379,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPermission>`: permission
+BODYPARAMETER <IMicrosoftGraphPermission>: permission
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
@@ -441,7 +441,7 @@ BODYPARAMETER `<IMicrosoftGraphPermission>`: permission
   - `[Roles <String[]>]`: The type of permission, for example, read. See below for the full list of roles. Read-only.
   - `[ShareId <String>]`: A unique token that can be used to access this shared item via the [shares API][]. Read-only.
 
-GRANTEDTO `<IMicrosoftGraphIdentitySet>`: identitySet
+GRANTEDTO <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -450,7 +450,7 @@ GRANTEDTO `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet\[]>: .
+GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet[]>: .
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -458,7 +458,7 @@ GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet\[]>: .
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRANTEDTOIDENTITIESV2 <IMicrosoftGraphSharePointIdentitySet\[]>: For link type permissions, the details of the users to whom permission was granted. Read-only.
+GRANTEDTOIDENTITIESV2 <IMicrosoftGraphSharePointIdentitySet[]>: For link type permissions, the details of the users to whom permission was granted. Read-only.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -473,7 +473,7 @@ GRANTEDTOIDENTITIESV2 <IMicrosoftGraphSharePointIdentitySet\[]>: For link type p
     - `[LoginName <String>]`: The sign in name of the SharePoint identity.
   - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
 
-GRANTEDTOV2 `<IMicrosoftGraphSharePointIdentitySet>`: sharePointIdentitySet
+GRANTEDTOV2 <IMicrosoftGraphSharePointIdentitySet>: sharePointIdentitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -489,7 +489,7 @@ GRANTEDTOV2 `<IMicrosoftGraphSharePointIdentitySet>`: sharePointIdentitySet
     - `[LoginName <String>]`: The sign in name of the SharePoint identity.
   - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
 
-INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
+INHERITEDFROM <IMicrosoftGraphItemReference>: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
   - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
@@ -508,7 +508,7 @@ INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -545,7 +545,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-INVITATION `<IMicrosoftGraphSharingInvitation>`: sharingInvitation
+INVITATION <IMicrosoftGraphSharingInvitation>: sharingInvitation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Email <String>]`: The email address provided for the recipient of the sharing invitation. Read-only.
   - `[InvitedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -559,7 +559,7 @@ INVITATION `<IMicrosoftGraphSharingInvitation>`: sharingInvitation
   - `[RedeemedBy <String>]`: 
   - `[SignInRequired <Boolean?>]`: If true the recipient of the invitation needs to sign in in order to access the shared item. Read-only.
 
-LINK `<IMicrosoftGraphSharingLink>`: sharingLink
+LINK <IMicrosoftGraphSharingLink>: sharingLink
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
