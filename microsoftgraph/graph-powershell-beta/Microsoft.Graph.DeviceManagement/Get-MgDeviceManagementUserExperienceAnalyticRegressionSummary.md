@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticregressionsummary
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticRegressionSummary
 
 ## SYNOPSIS
-Get userExperienceAnalyticsRegressionSummary from deviceManagement
+User experience analytics regression summary
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementUserExperienceAnalyticRegressionSummary [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsRegressionSummary from deviceManagement
+User experience analytics regression summary
 
 ## EXAMPLES
 

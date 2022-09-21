@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationuserstatesummary
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfigurationUserStateSummary
 
 ## SYNOPSIS
-Get deviceConfigurationUserStateSummaries from deviceManagement
+The device configuration user state summary for this account.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementDeviceConfigurationUserStateSummary [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get deviceConfigurationUserStateSummaries from deviceManagement
+The device configuration user state summary for this account.
 
 ## EXAMPLES
 

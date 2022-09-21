@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementadvancedthreatprotectiononboardingstatesummary
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
 
 ## SYNOPSIS
-Get advancedThreatProtectionOnboardingStateSummary from deviceManagement
+The summary state of ATP onboarding state for this account.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get advancedThreatProtectionOnboardingStateSummary from deviceManagement
+The summary state of ATP onboarding state for this account.
 
 ## EXAMPLES
 
