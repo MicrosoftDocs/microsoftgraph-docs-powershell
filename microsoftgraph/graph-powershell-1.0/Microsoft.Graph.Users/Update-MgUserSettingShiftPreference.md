@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserSettingShiftPreference
 
 ## SYNOPSIS
-Update the navigation property shiftPreferences in users
+Update the properties and relationships of a shiftPreferences object.
 
 ## SYNTAX
 
@@ -41,9 +41,42 @@ Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property shiftPreferences in users
+Update the properties and relationships of a shiftPreferences object.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgUserSettingShiftPreference Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+$params = @{
+	Id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
+	"@odata.etag" = "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"
+	Availability = @(
+		@{
+			Recurrence = @{
+				Pattern = @{
+					Type = "Weekly"
+					DaysOfWeek = @(
+						"Monday"
+						"Wednesday"
+						"Friday"
+					)
+					Interval = 1
+				}
+				Range = @{
+					Type = "noEnd"
+				}
+			}
+			TimeZone = "Pacific Standard Time"
+			TimeSlots = $null
+		}
+	)
+}
+Update-MgUserSettingShiftPreference -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgUserSettingShiftPreference Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -253,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AVAILABILITY <IMicrosoftGraphShiftAvailability\[]>: Availability of the user to be scheduled for work and its recurrence pattern.
+AVAILABILITY <IMicrosoftGraphShiftAvailability[]>: Availability of the user to be scheduled for work and its recurrence pattern.
   - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -277,9 +310,8 @@ AVAILABILITY <IMicrosoftGraphShiftAvailability\[]>: Availability of the user to 
     - `[StartTime <String>]`: Start time for the time range.
   - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
-BODYPARAMETER `<IMicrosoftGraphShiftPreferences1>`: shiftPreferences
+BODYPARAMETER <IMicrosoftGraphShiftPreferences1>: shiftPreferences
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -288,7 +320,6 @@ BODYPARAMETER `<IMicrosoftGraphShiftPreferences1>`: shiftPreferences
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[Availability <IMicrosoftGraphShiftAvailability[]>]`: Availability of the user to be scheduled for work and its recurrence pattern.
     - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
@@ -314,7 +345,7 @@ BODYPARAMETER `<IMicrosoftGraphShiftPreferences1>`: shiftPreferences
       - `[StartTime <String>]`: Start time for the time range.
     - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession
@@ -336,7 +367,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
