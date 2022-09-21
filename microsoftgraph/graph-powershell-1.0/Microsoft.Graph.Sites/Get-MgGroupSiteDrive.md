@@ -50,26 +50,6 @@ A Drive is the top-level container for a file system, such as OneDrive or ShareP
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -All
 List all pages.
 
