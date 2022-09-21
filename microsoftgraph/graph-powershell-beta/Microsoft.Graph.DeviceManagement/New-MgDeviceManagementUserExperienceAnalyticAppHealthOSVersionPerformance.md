@@ -32,26 +32,6 @@ Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerfo
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -ActiveDeviceCount
 The number of active devices for the OS version.
 Valid values -2147483648 to 2147483647
