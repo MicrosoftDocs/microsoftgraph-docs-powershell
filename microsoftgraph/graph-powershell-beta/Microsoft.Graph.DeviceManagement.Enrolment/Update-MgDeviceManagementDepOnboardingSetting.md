@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementdeponboardingsetting
@@ -448,7 +448,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune.
+BODYPARAMETER <IMicrosoftGraphDepOnboardingSetting>: The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppleIdentifier <String>]`: The Apple ID used to obtain the current token.
@@ -543,11 +543,25 @@ BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting 
     - `[AccessibilityScreenDisabled <Boolean?>]`: Indicates if Accessibility screen is disabled
     - `[AutoUnlockWithWatchDisabled <Boolean?>]`: Indicates if UnlockWithWatch screen is disabled
     - `[ChooseYourLockScreenDisabled <Boolean?>]`: Indicates if iCloud Documents and Desktop screen is disabled
+    - `[DontAutoPopulatePrimaryAccountInfo <Boolean?>]`: Indicates whether Setup Assistant will auto populate the primary account information
+    - `[EnableRestrictEditing <Boolean?>]`: Indicates whether the user will enable blockediting
     - `[FileVaultDisabled <Boolean?>]`: Indicates if file vault is disabled
     - `[ICloudDiagnosticsDisabled <Boolean?>]`: Indicates if iCloud Analytics screen is disabled
     - `[ICloudStorageDisabled <Boolean?>]`: Indicates if iCloud Documents and Desktop screen is disabled
+    - `[IsLocalPrimaryAccount <Boolean?>]`: Indicates whether the profile is a local account
+    - `[IsPrimaryUser <Boolean?>]`: Indicates whether the profile is a primary user
+    - `[LockPrimaryAccountInfo <Boolean?>]`: Indicates whether the primary account information will be locked
+    - `[ManagedLocalUserShortName <Boolean?>]`: Indicates whether or not this is the short name of the local account to manage
     - `[PassCodeDisabled <Boolean?>]`: Indicates if Passcode setup pane is disabled
+    - `[PrefillAccountInfo <Boolean?>]`: Indicates whether the user will prefill their account info
+    - `[PrimaryAccountFullName <String>]`: Indicates what the full name for the primary account is
+    - `[PrimaryAccountUserName <String>]`: Indicates what the account name for the primary account is
+    - `[PrimaryUser <String>]`: Indicates who the primary user of the profile is
+    - `[PrimaryUserFullName <String>]`: Indicates who the primary user of the profile is
     - `[RegistrationDisabled <Boolean?>]`: Indicates if registration is disabled
+    - `[RequestRequiresNetworkTether <Boolean?>]`: Indicates if the device is network-tethered to run the command
+    - `[SetPrimarySetupAccountAsRegularUser <Boolean?>]`: Indicates whether Setup Assistant will set the account as a regular user
+    - `[SkipPrimarySetupAccountCreation <Boolean?>]`: Indicates whether Setup Assistant will skip the user interface for primary account setup
     - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
   - `[EnrollmentProfiles <IMicrosoftGraphEnrollmentProfile[]>]`: The enrollment profiles.
     - `[Id <String>]`: 
@@ -581,7 +595,7 @@ BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting 
   - `[TokenName <String>]`: Friendly Name for Dep Token
   - `[TokenType <DepTokenType?>]`: depTokenType
 
-DEFAULTIOSENROLLMENTPROFILE `<IMicrosoftGraphDepIosEnrollmentProfile>`: The DepIOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to iOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
+DEFAULTIOSENROLLMENTPROFILE <IMicrosoftGraphDepIosEnrollmentProfile>: The DepIOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to iOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppleIdDisabled <Boolean?>]`: Indicates if Apple id setup pane is disabled
   - `[ApplePayDisabled <Boolean?>]`: Indicates if Apple pay setup pane is disabled
@@ -641,7 +655,7 @@ DEFAULTIOSENROLLMENTPROFILE `<IMicrosoftGraphDepIosEnrollmentProfile>`: The DepI
   - `[WelcomeScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
   - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
 
-DEFAULTMACOSENROLLMENTPROFILE `<IMicrosoftGraphDepMacOSEnrollmentProfile>`: The DepMacOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to macOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
+DEFAULTMACOSENROLLMENTPROFILE <IMicrosoftGraphDepMacOSEnrollmentProfile>: The DepMacOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to macOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppleIdDisabled <Boolean?>]`: Indicates if Apple id setup pane is disabled
   - `[ApplePayDisabled <Boolean?>]`: Indicates if Apple pay setup pane is disabled
@@ -672,14 +686,28 @@ DEFAULTMACOSENROLLMENTPROFILE `<IMicrosoftGraphDepMacOSEnrollmentProfile>`: The 
   - `[AccessibilityScreenDisabled <Boolean?>]`: Indicates if Accessibility screen is disabled
   - `[AutoUnlockWithWatchDisabled <Boolean?>]`: Indicates if UnlockWithWatch screen is disabled
   - `[ChooseYourLockScreenDisabled <Boolean?>]`: Indicates if iCloud Documents and Desktop screen is disabled
+  - `[DontAutoPopulatePrimaryAccountInfo <Boolean?>]`: Indicates whether Setup Assistant will auto populate the primary account information
+  - `[EnableRestrictEditing <Boolean?>]`: Indicates whether the user will enable blockediting
   - `[FileVaultDisabled <Boolean?>]`: Indicates if file vault is disabled
   - `[ICloudDiagnosticsDisabled <Boolean?>]`: Indicates if iCloud Analytics screen is disabled
   - `[ICloudStorageDisabled <Boolean?>]`: Indicates if iCloud Documents and Desktop screen is disabled
+  - `[IsLocalPrimaryAccount <Boolean?>]`: Indicates whether the profile is a local account
+  - `[IsPrimaryUser <Boolean?>]`: Indicates whether the profile is a primary user
+  - `[LockPrimaryAccountInfo <Boolean?>]`: Indicates whether the primary account information will be locked
+  - `[ManagedLocalUserShortName <Boolean?>]`: Indicates whether or not this is the short name of the local account to manage
   - `[PassCodeDisabled <Boolean?>]`: Indicates if Passcode setup pane is disabled
+  - `[PrefillAccountInfo <Boolean?>]`: Indicates whether the user will prefill their account info
+  - `[PrimaryAccountFullName <String>]`: Indicates what the full name for the primary account is
+  - `[PrimaryAccountUserName <String>]`: Indicates what the account name for the primary account is
+  - `[PrimaryUser <String>]`: Indicates who the primary user of the profile is
+  - `[PrimaryUserFullName <String>]`: Indicates who the primary user of the profile is
   - `[RegistrationDisabled <Boolean?>]`: Indicates if registration is disabled
+  - `[RequestRequiresNetworkTether <Boolean?>]`: Indicates if the device is network-tethered to run the command
+  - `[SetPrimarySetupAccountAsRegularUser <Boolean?>]`: Indicates whether Setup Assistant will set the account as a regular user
+  - `[SkipPrimarySetupAccountCreation <Boolean?>]`: Indicates whether Setup Assistant will skip the user interface for primary account setup
   - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
 
-ENROLLMENTPROFILES <IMicrosoftGraphEnrollmentProfile\[]>: The enrollment profiles.
+ENROLLMENTPROFILES <IMicrosoftGraphEnrollmentProfile[]>: The enrollment profiles.
   - `[Id <String>]`: 
   - `[ConfigurationEndpointUrl <String>]`: Configuration endpoint url to use for Enrollment
   - `[Description <String>]`: Description of the profile
@@ -688,7 +716,7 @@ ENROLLMENTPROFILES <IMicrosoftGraphEnrollmentProfile\[]>: The enrollment profile
   - `[RequireCompanyPortalOnSetupAssistantEnrolledDevices <Boolean?>]`: Indicates that Company Portal is required on setup assistant enrolled devices
   - `[RequiresUserAuthentication <Boolean?>]`: Indicates if the profile requires user authentication
 
-IMPORTEDAPPLEDEVICEIDENTITIES <IMicrosoftGraphImportedAppleDeviceIdentity\[]>: The imported Apple device identities.
+IMPORTEDAPPLEDEVICEIDENTITIES <IMicrosoftGraphImportedAppleDeviceIdentity[]>: The imported Apple device identities.
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
   - `[Description <String>]`: The description of the device
@@ -702,7 +730,7 @@ IMPORTEDAPPLEDEVICEIDENTITIES <IMicrosoftGraphImportedAppleDeviceIdentity\[]>: T
   - `[RequestedEnrollmentProfileId <String>]`: Enrollment profile Id admin intends to apply to the device during next enrollment
   - `[SerialNumber <String>]`: Device serial number
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdirectoryroledefinitioninheritpermissionfrom
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom
 
 ## SYNOPSIS
-Get inheritsPermissionsFrom from roleManagement
+Read-only collection of role definitions that the given role definition inherits from.
+Only Azure AD built-in roles support this attribute.
 
 ## SYNTAX
 
@@ -33,7 +34,8 @@ Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom
 ```
 
 ## DESCRIPTION
-Get inheritsPermissionsFrom from roleManagement
+Read-only collection of role definitions that the given role definition inherits from.
+Only Azure AD built-in roles support this attribute.
 
 ## EXAMPLES
 
@@ -49,7 +51,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -126,7 +128,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -254,7 +256,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope

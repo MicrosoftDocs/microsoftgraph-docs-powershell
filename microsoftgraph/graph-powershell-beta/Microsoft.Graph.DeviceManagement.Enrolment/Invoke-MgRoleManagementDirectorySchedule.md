@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgrolemanagementdirectoryschedule
@@ -25,7 +25,7 @@ Invoke function roleSchedules
 ## PARAMETERS
 
 ### -AppScopeId
-Usage: appScopeId='{appScopeId}'
+Usage: appScopeId='@appScopeId'
 
 ```yaml
 Type: String
@@ -40,7 +40,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectoryScopeId
-Usage: directoryScopeId='{directoryScopeId}'
+Usage: directoryScopeId='@directoryScopeId'
 
 ```yaml
 Type: String
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Usage: principalId='{principalId}'
+Usage: principalId='@principalId'
 
 ```yaml
 Type: String
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Usage: roleDefinitionId='{roleDefinitionId}'
+Usage: roleDefinitionId='@roleDefinitionId'
 
 ```yaml
 Type: String

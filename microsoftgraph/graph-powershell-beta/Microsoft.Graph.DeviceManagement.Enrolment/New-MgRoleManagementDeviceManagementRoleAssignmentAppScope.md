@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagementdevicemanagementroleassignmentappscope
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ### -DisplayName
 Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
-This property is read only.
+Read-only.
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ### -Type
 Describes the type of app-specific resource represented by the app scope.
 Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-This property is read only.
+Read-only.
 
 ```yaml
 Type: String
@@ -206,13 +206,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAppScope>`: appScope
+BODYPARAMETER <IMicrosoftGraphAppScope>: appScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
-  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
+  - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
+  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope

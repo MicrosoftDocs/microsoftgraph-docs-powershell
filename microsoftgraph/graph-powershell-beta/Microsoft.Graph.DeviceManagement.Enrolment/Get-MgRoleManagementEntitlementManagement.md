@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagemententitlementmanagement
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementEntitlementManagement
 
 ## SYNOPSIS
-Get entitlementManagement from roleManagement
+The RbacApplication for Entitlement Management
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgRoleManagementEntitlementManagement [-ExpandProperty <String[]>] [-Propert
 ```
 
 ## DESCRIPTION
-Get entitlementManagement from roleManagement
+The RbacApplication for Entitlement Management
 
 ## EXAMPLES
 

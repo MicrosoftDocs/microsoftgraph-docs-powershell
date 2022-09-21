@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdirectorytransitiveroleassignment
@@ -36,6 +36,33 @@ Get transitiveRoleAssignments from roleManagement
 
 ## EXAMPLES
 
+### Example 1: Using the Get-MgRoleManagementDirectoryTransitiveRoleAssignment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Get-MgRoleManagementDirectoryTransitiveRoleAssignment -CountVariable CountVar -Filter "principalId eq '2c7936bc-3517-40f3-8eda-4806637b6516'"
+```
+
+This example shows how to use the Get-MgRoleManagementDirectoryTransitiveRoleAssignment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgRoleManagementDirectoryTransitiveRoleAssignment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Get-MgRoleManagementDirectoryTransitiveRoleAssignment -CountVariable CountVar -Filter "principalId eq '2c7936bc-3517-40f3-8eda-4806637b6516' and directoryScopeId eq '/administrativeUnits/26e79164-0c5c-4281-8c5b-be7bc7809fb2'"
+```
+
+This example shows how to use the Get-MgRoleManagementDirectoryTransitiveRoleAssignment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgRoleManagementDirectoryTransitiveRoleAssignment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Get-MgRoleManagementDirectoryTransitiveRoleAssignment -CountVariable CountVar -Filter "principalId eq '2c7936bc-3517-40f3-8eda-4806637b6516' and roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'"
+```
+
+This example shows how to use the Get-MgRoleManagementDirectoryTransitiveRoleAssignment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All
@@ -48,7 +75,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +152,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -238,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope

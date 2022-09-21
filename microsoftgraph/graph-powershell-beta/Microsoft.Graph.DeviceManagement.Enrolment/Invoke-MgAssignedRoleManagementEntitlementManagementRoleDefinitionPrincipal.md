@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgassignedrolemanagemententitlementmanagementroledefinitionprincipal
@@ -33,7 +33,7 @@ Invoke function assignedPrincipals
 ## PARAMETERS
 
 ### -DirectoryScopeId
-Usage: directoryScopeId='{directoryScopeId}'
+Usage: directoryScopeId='@directoryScopeId'
 
 ```yaml
 Type: String
@@ -48,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectoryScopeType
-Usage: directoryScopeType='{directoryScopeType}'
+Usage: directoryScopeType='@directoryScopeType'
 
 ```yaml
 Type: String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Transitive
-Usage: transitive={transitive}
+Usage: transitive=@transitive
 
 ```yaml
 Type: SwitchParameter
@@ -126,7 +126,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagementcloudpc
@@ -192,7 +192,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
+BODYPARAMETER <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -215,8 +215,8 @@ BODYPARAMETER `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultipl
     - `[AppScopeIds <String[]>]`: Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
     - `[AppScopes <IMicrosoftGraphAppScope[]>]`: Read-only collection with details of the app specific scopes when the assignment scopes are app specific. Containment entity. Read-only.
       - `[Id <String>]`: 
-      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
-      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
+      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
+      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
     - `[Condition <String>]`: 
     - `[Description <String>]`: Description of the role assignment.
     - `[DirectoryScopeIds <String[]>]`: Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
@@ -236,7 +236,7 @@ BODYPARAMETER `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultipl
       - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
       - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
         - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
         - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
       - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
@@ -244,7 +244,7 @@ BODYPARAMETER `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultipl
     - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
 
-RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace\[]>: .
+RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace[]>: .
   - `[Id <String>]`: 
   - `[Name <String>]`: Name of the resource namespace. Typically, the same name as the id property, such as microsoft.aad.b2c. Required. Supports $filter (eq, startsWith).
   - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
@@ -260,13 +260,13 @@ RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace\[]>: .
       - `[Type <String>]`: 
     - `[ResourceScopeId <String>]`: Not implemented.
 
-ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignmentMultiple\[]>: .
+ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignmentMultiple[]>: .
   - `[Id <String>]`: 
   - `[AppScopeIds <String[]>]`: Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
   - `[AppScopes <IMicrosoftGraphAppScope[]>]`: Read-only collection with details of the app specific scopes when the assignment scopes are app specific. Containment entity. Read-only.
     - `[Id <String>]`: 
-    - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
-    - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
+    - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
+    - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
   - `[Condition <String>]`: 
   - `[Description <String>]`: Description of the role assignment.
   - `[DirectoryScopeIds <String[]>]`: Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
@@ -286,14 +286,14 @@ ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignmentMultiple\[]>: .
     - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
     - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
     - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-      - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+      - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
       - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
       - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
     - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
     - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
   - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
 
-ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition\[]>: .
+ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition[]>: .
   - `[Id <String>]`: 
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
   - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
@@ -302,7 +302,7 @@ ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition\[]>: .
   - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
   - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
   - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-    - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+    - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
     - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
     - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
   - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.

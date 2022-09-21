@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagemententitlementmanagementroleassignmentschedulerequestprincipal
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal
 
 ## SYNOPSIS
-Get principal from roleManagement
+The principal that's getting a role assignment through the request.
+Supports $expand.
 
 ## SYNTAX
 
@@ -27,7 +28,8 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal
 ```
 
 ## DESCRIPTION
-Get principal from roleManagement
+The principal that's getting a role assignment through the request.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -112,7 +114,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope

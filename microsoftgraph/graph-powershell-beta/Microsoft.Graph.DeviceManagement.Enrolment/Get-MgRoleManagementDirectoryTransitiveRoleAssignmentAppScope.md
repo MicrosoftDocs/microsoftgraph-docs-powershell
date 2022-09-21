@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdirectorytransitiveroleassignmentappscope
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope
 
 ## SYNOPSIS
-Get appScope from roleManagement
+Details of the app specific scope when the assignment scope is app specific.
+Containment entity.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope -InputObject <IDev
 ```
 
 ## DESCRIPTION
-Get appScope from roleManagement
+Details of the app specific scope when the assignment scope is app specific.
+Containment entity.
 
 ## EXAMPLES
 
@@ -110,7 +112,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope

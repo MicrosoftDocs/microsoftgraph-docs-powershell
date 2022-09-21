@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagemententitlementmanagementtransitiveroleassignmentdirectoryscope
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScope
 
 ## SYNOPSIS
-Get directoryScope from roleManagement
+The directory object that is the scope of the assignment.
+Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
+Read-only.
+Supports $expand.
 
 ## SYNTAX
 
@@ -26,7 +29,10 @@ Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScope
 ```
 
 ## DESCRIPTION
-Get directoryScope from roleManagement
+The directory object that is the scope of the assignment.
+Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
+Read-only.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -111,7 +117,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope

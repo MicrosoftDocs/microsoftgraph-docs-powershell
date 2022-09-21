@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementwindowautopilotdeploymentprofileassigneddevicedeploymentprofile
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfile
 
 ## SYNOPSIS
-Get deploymentProfile from deviceManagement
+Deployment profile currently assigned to the Windows autopilot device.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentPr
 ```
 
 ## DESCRIPTION
-Get deploymentProfile from deviceManagement
+Deployment profile currently assigned to the Windows autopilot device.
 
 ## EXAMPLES
 
@@ -127,7 +127,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
