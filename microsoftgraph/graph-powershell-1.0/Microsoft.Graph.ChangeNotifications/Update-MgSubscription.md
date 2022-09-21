@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/update-mgsubscription
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Update-MgSubscription
 
 ## SYNOPSIS
-Update entity in subscriptions
+Renew a subscription by extending its expiry time.
+The table in the Permissions section lists the resources that support subscribing to change notifications.
+Subscriptions expire after a length of time that varies by resource type.
+In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date.
+See subscription for maximum length of a subscription for each resource type.
 
 ## SYNTAX
 
@@ -45,9 +49,25 @@ Update-MgSubscription -InputObject <IChangeNotificationsIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update entity in subscriptions
+Renew a subscription by extending its expiry time.
+The table in the Permissions section lists the resources that support subscribing to change notifications.
+Subscriptions expire after a length of time that varies by resource type.
+In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date.
+See subscription for maximum length of a subscription for each resource type.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgSubscription Cmdlet
+```powershell
+Import-Module Microsoft.Graph.ChangeNotifications
+$params = @{
+	ExpirationDateTime = [System.DateTime]::Parse("2016-11-22T18:23:45.9356913Z")
+}
+Update-MgSubscription -SubscriptionId $subscriptionId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgSubscription Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -208,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -443,9 +463,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSubscription1>`: subscription
+BODYPARAMETER <IMicrosoftGraphSubscription>: subscription
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[ApplicationId <String>]`: Optional. Identifier of the application used to create the subscription. Read-only.
   - `[ChangeType <String>]`: Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note:  Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
   - `[ClientState <String>]`: Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 128 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
@@ -461,7 +481,7 @@ BODYPARAMETER `<IMicrosoftGraphSubscription1>`: subscription
   - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
   - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
 
 ## RELATED LINKS
