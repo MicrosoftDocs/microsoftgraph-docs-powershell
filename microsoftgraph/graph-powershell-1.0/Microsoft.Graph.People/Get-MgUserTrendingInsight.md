@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mgusertrendinginsight
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserTrendingInsight
 
 ## SYNOPSIS
-Get trending from users
+Calculated relationship identifying documents trending around a user.
+Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
+Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserTrendingInsight -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get trending from users
+Calculated relationship identifying documents trending around a user.
+Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
+Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
 
 ## EXAMPLES
 
@@ -48,7 +52,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +129,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +257,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress

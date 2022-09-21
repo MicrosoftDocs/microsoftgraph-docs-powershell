@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mgusersharedresourceinsight
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserSharedResourceInsight
 
 ## SYNOPSIS
-Get resource from users
+Used for navigating to the item that was shared.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Get-MgUserSharedResourceInsight -InputObject <IPeopleIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get resource from users
+Used for navigating to the item that was shared.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
 
 ## EXAMPLES
 
@@ -125,7 +129,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
