@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportauthenticationmethoduserregistrationdetail
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportAuthenticationMethodUserRegistrationDetail
 
 ## SYNOPSIS
-Get userRegistrationDetails from reports
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
 
 ## SYNTAX
 
@@ -32,9 +32,27 @@ Get-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReportsIde
 ```
 
 ## DESCRIPTION
-Get userRegistrationDetails from reports
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgReportAuthenticationMethodUserRegistrationDetail Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Reports
+Get-MgReportAuthenticationMethodUserRegistrationDetail -UserRegistrationDetailsId $userRegistrationDetailsId
+```
+
+This example shows how to use the Get-MgReportAuthenticationMethodUserRegistrationDetail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgReportAuthenticationMethodUserRegistrationDetail Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Reports
+Get-MgReportAuthenticationMethodUserRegistrationDetail
+```
+
+This example shows how to use the Get-MgReportAuthenticationMethodUserRegistrationDetail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +66,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +143,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -238,7 +256,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: key: id of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: key: id of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}
@@ -255,7 +273,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[PrintUsageByUserId <String>]`: key: id of printUsageByUser
   - `[PrinterId <String>]`: Usage: printerId='{printerId}'
   - `[ProvisioningObjectSummaryId <String>]`: key: id of provisioningObjectSummary
-  - `[RestrictedSignInId <String>]`: key: id of restrictedSignIn
   - `[SignInId <String>]`: key: id of signIn
   - `[Skip <Int32?>]`: Usage: skip={skip}
   - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'

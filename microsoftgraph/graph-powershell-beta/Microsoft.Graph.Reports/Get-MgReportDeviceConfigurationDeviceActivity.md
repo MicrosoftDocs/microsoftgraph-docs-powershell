@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationdeviceactivity
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportDeviceConfigurationDeviceActivity
 
 ## SYNOPSIS
-Invoke function deviceConfigurationDeviceActivity
+Metadata for the device configuration device activity report
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgReportDeviceConfigurationDeviceActivity -OutFile <String> [-PassThru] [<Co
 ```
 
 ## DESCRIPTION
-Invoke function deviceConfigurationDeviceActivity
+Metadata for the device configuration device activity report
 
 ## EXAMPLES
 

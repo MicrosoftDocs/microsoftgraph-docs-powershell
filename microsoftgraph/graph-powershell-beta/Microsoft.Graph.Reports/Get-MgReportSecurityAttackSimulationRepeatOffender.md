@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationrepeatoffender
@@ -20,6 +20,15 @@ Get-MgReportSecurityAttackSimulationRepeatOffender [<CommonParameters>]
 Invoke function getAttackSimulationRepeatOffenders
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgReportSecurityAttackSimulationRepeatOffender Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Reports
+Get-MgReportSecurityAttackSimulationRepeatOffender
+```
+
+This example shows how to use the Get-MgReportSecurityAttackSimulationRepeatOffender Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

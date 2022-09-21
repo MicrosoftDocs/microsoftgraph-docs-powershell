@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationusercoverage
@@ -20,6 +20,15 @@ Get-MgReportSecurityAttackSimulationUserCoverage [<CommonParameters>]
 Invoke function getAttackSimulationSimulationUserCoverage
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgReportSecurityAttackSimulationUserCoverage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Reports
+Get-MgReportSecurityAttackSimulationUserCoverage
+```
+
+This example shows how to use the Get-MgReportSecurityAttackSimulationUserCoverage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
