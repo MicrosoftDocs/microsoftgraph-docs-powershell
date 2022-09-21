@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupeventinstanceexceptionoccurrenceextension
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupEventInstanceExceptionOccurrenceExtension
 
 ## SYNOPSIS
-Get extensions from groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ## SYNTAX
 
@@ -33,7 +34,8 @@ Get-MgGroupEventInstanceExceptionOccurrenceExtension -InputObject <ICalendarIden
 ```
 
 ## DESCRIPTION
-Get extensions from groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ## EXAMPLES
 
@@ -49,7 +51,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -201,7 +203,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -285,7 +287,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
