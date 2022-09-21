@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfoldercontact
@@ -69,13 +69,6 @@ Update-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIden
 Update the navigation property contacts in users
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -363,6 +356,7 @@ Accept wildcard characters: False
 
 ### -Extensions
 The collection of open extensions defined for the contact.
+Read-only.
 Nullable.
 To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
 
@@ -680,7 +674,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -896,9 +890,128 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphContact>: contact
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Categories <String[]>]`: The categories associated with the item
+  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Id <String>]`: 
+  - `[AssistantName <String>]`: The name of the contact's assistant.
+  - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[BusinessAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[City <String>]`: The city.
+    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
+    - `[PostalCode <String>]`: The postal code.
+    - `[State <String>]`: The state.
+    - `[Street <String>]`: The street.
+  - `[BusinessHomePage <String>]`: The business home page of the contact.
+  - `[BusinessPhones <String[]>]`: The contact's business phone numbers.
+  - `[Children <String[]>]`: The names of the contact's children.
+  - `[CompanyName <String>]`: The name of the contact's company.
+  - `[Department <String>]`: The contact's department.
+  - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
+  - `[EmailAddresses <IMicrosoftGraphEmailAddress[]>]`: The contact's email addresses.
+    - `[Address <String>]`: The email address of the person or entity.
+    - `[Name <String>]`: The display name of the person or entity.
+  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Read-only. Nullable.
+    - `[Id <String>]`: 
+  - `[FileAs <String>]`: The name the contact is filed under.
+  - `[Generation <String>]`: The contact's generation.
+  - `[GivenName <String>]`: The contact's given name.
+  - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+  - `[HomePhones <String[]>]`: The contact's home phone numbers.
+  - `[ImAddresses <String[]>]`: 
+  - `[Initials <String>]`: 
+  - `[JobTitle <String>]`: 
+  - `[Manager <String>]`: 
+  - `[MiddleName <String>]`: 
+  - `[MobilePhone <String>]`: 
+  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
+    - `[Id <String>]`: 
+    - `[Value <String[]>]`: A collection of property values.
+  - `[NickName <String>]`: 
+  - `[OfficeLocation <String>]`: 
+  - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+  - `[ParentFolderId <String>]`: 
+  - `[PersonalNotes <String>]`: 
+  - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: 
+    - `[Height <Int32?>]`: The height of the photo. Read-only.
+    - `[Width <Int32?>]`: The width of the photo. Read-only.
+  - `[Profession <String>]`: 
+  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
+    - `[Id <String>]`: 
+    - `[Value <String>]`: A property value.
+  - `[SpouseName <String>]`: 
+  - `[Surname <String>]`: 
+  - `[Title <String>]`: 
+  - `[YomiCompanyName <String>]`: 
+  - `[YomiGivenName <String>]`: 
+  - `[YomiSurname <String>]`: 
+
+BUSINESSADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[City <String>]`: The city.
+  - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
+  - `[PostalCode <String>]`: The postal code.
+  - `[State <String>]`: The state.
+  - `[Street <String>]`: The street.
+
+EMAILADDRESSES <IMicrosoftGraphEmailAddress[]>: The contact's email addresses.
+  - `[Address <String>]`: The email address of the person or entity.
+  - `[Name <String>]`: The display name of the person or entity.
+
+EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the contact. Read-only. Nullable.
+  - `[Id <String>]`: 
+
+HOMEADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[City <String>]`: The city.
+  - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
+  - `[PostalCode <String>]`: The postal code.
+  - `[State <String>]`: The state.
+  - `[Street <String>]`: The street.
+
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
+  - `[ContactFolderId <String>]`: key: id of contactFolder
+  - `[ContactFolderId1 <String>]`: key: id of contactFolder
+  - `[ContactId <String>]`: key: id of contact
+  - `[ExtensionId <String>]`: key: id of extension
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[UserId <String>]`: key: id of user
+
+MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
+  - `[Id <String>]`: 
+  - `[Value <String[]>]`: A collection of property values.
+
+OTHERADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[City <String>]`: The city.
+  - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
+  - `[PostalCode <String>]`: The postal code.
+  - `[State <String>]`: The state.
+  - `[Street <String>]`: The street.
+
+PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: 
+  - `[Height <Int32?>]`: The height of the photo. Read-only.
+  - `[Width <Int32?>]`: The width of the photo. Read-only.
+
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
+  - `[Id <String>]`: 
+  - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfoldercontact](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfoldercontact)
-

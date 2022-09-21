@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfolder
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgUserContactFolder
 
 ## SYNOPSIS
-The user's contacts folders.
-Read-only.
-Nullable.
+Delete navigation property contactFolders for users
 
 ## SYNTAX
 
@@ -27,11 +25,19 @@ Remove-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-The user's contacts folders.
-Read-only.
-Nullable.
+Delete navigation property contactFolders for users
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgUserContactFolder Cmdlet
+```powershell
+Import-Module Microsoft.Graph.PersonalContacts
+# A UPN can also be used as -UserId.
+Remove-MgUserContactFolder -UserId $userId -ContactFolderId $contactFolderId
+```
+
+This example shows how to use the Remove-MgUserContactFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -160,7 +166,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   - `[ContactFolderId <String>]`: key: id of contactFolder
   - `[ContactFolderId1 <String>]`: key: id of contactFolder
   - `[ContactId <String>]`: key: id of contact
