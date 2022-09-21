@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentrequest
@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgEntitlementManagementAssignmentRequest
 
 ## SYNOPSIS
-Create new navigation property to assignmentRequests for identityGovernance
+In Azure AD Entitlement Management, create a new accessPackageAssignmentRequest object.
+This operation is used to assign a user to an access package, or to remove an access package assignment.
 
 ## SYNTAX
 
@@ -28,9 +29,89 @@ New-MgEntitlementManagementAssignmentRequest -BodyParameter <IMicrosoftGraphAcce
 ```
 
 ## DESCRIPTION
-Create new navigation property to assignmentRequests for identityGovernance
+In Azure AD Entitlement Management, create a new accessPackageAssignmentRequest object.
+This operation is used to assign a user to an access package, or to remove an access package assignment.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgEntitlementManagementAssignmentRequest Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	RequestType = "AdminAdd"
+	Assignment = @{
+		TargetId = "46184453-e63b-4f20-86c2-c557ed5d5df9"
+		AssignmentPolicyId = "2264bf65-76ba-417b-a27d-54d291f0cbc8"
+		AccessPackageId = "a914b616-e04e-476b-aa37-91038f0b165b"
+	}
+}
+New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+```
+
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the New-MgEntitlementManagementAssignmentRequest Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	RequestType = "AdminAdd"
+	Assignment = @{
+		TargetId = "46184453-e63b-4f20-86c2-c557ed5d5df9"
+		AssignmentPolicyId = "2264bf65-76ba-417b-a27d-54d291f0cbc8"
+		AccessPackageId = "a914b616-e04e-476b-aa37-91038f0b165b"
+	}
+}
+New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+```
+
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgEntitlementManagementAssignmentRequest Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	RequestType = "AdminRemove"
+	Assignment = @{
+		Id = "a6bb6942-3ae1-4259-9908-0133aaee9377"
+	}
+}
+New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+```
+
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the New-MgEntitlementManagementAssignmentRequest Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	RequestType = "userAdd"
+	Assignment = @{
+		AccessPackageId = "d7be3253-b9c6-4fab-adef-30d30de8da2b"
+	}
+}
+New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+```
+
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Using the New-MgEntitlementManagementAssignmentRequest Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	RequestType = "userAdd"
+	Assignment = @{
+		AccessPackageId = "d7be3253-b9c6-4fab-adef-30d30de8da2b"
+	}
+}
+New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
+```
+
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -119,6 +200,7 @@ Accept wildcard characters: False
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
+Supports $filter.
 
 ```yaml
 Type: DateTime
@@ -274,10 +356,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage1>: accessPackage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: 
+  - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy[]>]`: 
     - `[Id <String>]`: 
     - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
     - `[AllowedTargetScope <String>]`: allowedTargetScope
@@ -285,27 +367,27 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[GracePeriodBeforeAccessRemoval <TimeSpan?>]`: 
       - `[RemoveAccessWhenTargetLeavesAllowedTargets <Boolean?>]`: 
-      - `[RequestAccessForAllowedTargets <Boolean?>]`: 
-    - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
+      - `[RequestAccessForAllowedTargets <Boolean?>]`: If set to true, automatic assignments will be created for targets in the allowed target scope.
+    - `[Catalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
-      - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Read-only. Nullable. Supports $expand.
+      - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Read-only. Nullable.
       - `[CatalogType <String>]`: accessPackageCatalogType
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[Description <String>]`: The description of the access package catalog.
-      - `[DisplayName <String>]`: The display name of the access package catalog. Supports $filter (eq, contains).
+      - `[DisplayName <String>]`: The display name of the access package catalog.
       - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requested by users outside of the tenant.
       - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[State <String>]`: accessPackageCatalogState
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Description <String>]`: The description of the policy.
-    - `[DisplayName <String>]`: The display name of the policy. Supports $filter (eq).
+    - `[DisplayName <String>]`: The display name of the policy.
     - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
       - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Type <String>]`: expirationPatternType
-    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]`: accessPackageAssignmentApprovalSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IsApprovalRequiredForAdd <Boolean?>]`: If false, then approval is not required for new requests in this policy.
@@ -361,20 +443,20 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
             - `[Type <String>]`: recurrenceRangeType
         - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>]`: The principals that can be assigned access from an access package through this policy.
-  - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
+  - `[Catalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Description <String>]`: The description of the access package.
   - `[DisplayName <String>]`: The display name of the access package. Supports $filter (eq, contains).
   - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
+ASSIGNMENT <IMicrosoftGraphAccessPackageAssignment>: accessPackageAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
-    - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: 
+    - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy[]>]`: 
       - `[Id <String>]`: 
       - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
       - `[AllowedTargetScope <String>]`: allowedTargetScope
@@ -382,27 +464,27 @@ ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[GracePeriodBeforeAccessRemoval <TimeSpan?>]`: 
         - `[RemoveAccessWhenTargetLeavesAllowedTargets <Boolean?>]`: 
-        - `[RequestAccessForAllowedTargets <Boolean?>]`: 
-      - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
+        - `[RequestAccessForAllowedTargets <Boolean?>]`: If set to true, automatic assignments will be created for targets in the allowed target scope.
+      - `[Catalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: 
-        - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Read-only. Nullable. Supports $expand.
+        - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Read-only. Nullable.
         - `[CatalogType <String>]`: accessPackageCatalogType
         - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[Description <String>]`: The description of the access package catalog.
-        - `[DisplayName <String>]`: The display name of the access package catalog. Supports $filter (eq, contains).
+        - `[DisplayName <String>]`: The display name of the access package catalog.
         - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requested by users outside of the tenant.
         - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[State <String>]`: accessPackageCatalogState
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Description <String>]`: The description of the policy.
-      - `[DisplayName <String>]`: The display name of the policy. Supports $filter (eq).
+      - `[DisplayName <String>]`: The display name of the policy.
       - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
         - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Type <String>]`: expirationPatternType
-      - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]`: accessPackageAssignmentApprovalSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[IsApprovalRequiredForAdd <Boolean?>]`: If false, then approval is not required for new requests in this policy.
@@ -458,21 +540,21 @@ ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
               - `[Type <String>]`: recurrenceRangeType
           - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>]`: The principals that can be assigned access from an access package through this policy.
-    - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
+    - `[Catalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[Description <String>]`: The description of the access package.
     - `[DisplayName <String>]`: The display name of the access package. Supports $filter (eq, contains).
     - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
     - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy1>]`: accessPackageAssignmentPolicy
-  - `[ExpiredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy>]`: accessPackageAssignmentPolicy
+  - `[ExpiredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Schedule <IMicrosoftGraphEntitlementManagementSchedule>]`: entitlementManagementSchedule
   - `[State <String>]`: accessPackageAssignmentState
   - `[Status <String>]`: More information about the assignment lifecycle.  Possible values include Delivering, Delivered, NearExpiry1DayNotificationTriggered, or ExpiredNotificationTriggered.  Read-only.
-  - `[Target <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
+  - `[Target <IMicrosoftGraphAccessPackageSubject>]`: accessPackageSubject
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
-    - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
+    - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
@@ -481,7 +563,7 @@ ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
       - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[Id <String>]`: 
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-      - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
+      - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Nullable.
       - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
       - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[State <String>]`: connectedOrganizationState
@@ -492,13 +574,13 @@ ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectType <String>]`: accessPackageSubjectType
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageAssignmentRequest
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignmentRequest>: accessPackageAssignmentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
-    - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: 
+    - `[AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy[]>]`: 
       - `[Id <String>]`: 
       - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
       - `[AllowedTargetScope <String>]`: allowedTargetScope
@@ -506,27 +588,27 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageA
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[GracePeriodBeforeAccessRemoval <TimeSpan?>]`: 
         - `[RemoveAccessWhenTargetLeavesAllowedTargets <Boolean?>]`: 
-        - `[RequestAccessForAllowedTargets <Boolean?>]`: 
-      - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
+        - `[RequestAccessForAllowedTargets <Boolean?>]`: If set to true, automatic assignments will be created for targets in the allowed target scope.
+      - `[Catalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: 
-        - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Read-only. Nullable. Supports $expand.
+        - `[AccessPackages <IMicrosoftGraphAccessPackage1[]>]`: The access packages in this catalog. Read-only. Nullable.
         - `[CatalogType <String>]`: accessPackageCatalogType
         - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[Description <String>]`: The description of the access package catalog.
-        - `[DisplayName <String>]`: The display name of the access package catalog. Supports $filter (eq, contains).
+        - `[DisplayName <String>]`: The display name of the access package catalog.
         - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requested by users outside of the tenant.
         - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[State <String>]`: accessPackageCatalogState
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Description <String>]`: The description of the policy.
-      - `[DisplayName <String>]`: The display name of the policy. Supports $filter (eq).
+      - `[DisplayName <String>]`: The display name of the policy.
       - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
         - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Type <String>]`: expirationPatternType
-      - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]`: accessPackageAssignmentApprovalSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[IsApprovalRequiredForAdd <Boolean?>]`: If false, then approval is not required for new requests in this policy.
@@ -582,25 +664,25 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageA
               - `[Type <String>]`: recurrenceRangeType
           - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>]`: The principals that can be assigned access from an access package through this policy.
-    - `[Catalog <IMicrosoftGraphAccessPackageCatalog1>]`: accessPackageCatalog
+    - `[Catalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[Description <String>]`: The description of the access package.
     - `[DisplayName <String>]`: The display name of the access package. Supports $filter (eq, contains).
     - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
     - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[Assignment <IMicrosoftGraphAccessPackageAssignment1>]`: accessPackageAssignment
+  - `[Assignment <IMicrosoftGraphAccessPackageAssignment>]`: accessPackageAssignment
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
-    - `[AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy1>]`: accessPackageAssignmentPolicy
-    - `[ExpiredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy>]`: accessPackageAssignmentPolicy
+    - `[ExpiredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[Schedule <IMicrosoftGraphEntitlementManagementSchedule>]`: entitlementManagementSchedule
     - `[State <String>]`: accessPackageAssignmentState
     - `[Status <String>]`: More information about the assignment lifecycle.  Possible values include Delivering, Delivered, NearExpiry1DayNotificationTriggered, or ExpiredNotificationTriggered.  Read-only.
-    - `[Target <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
+    - `[Target <IMicrosoftGraphAccessPackageSubject>]`: accessPackageSubject
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
-      - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
+      - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: 
         - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
@@ -609,7 +691,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageA
         - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
           - `[Id <String>]`: 
           - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-        - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
+        - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Nullable.
         - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[State <String>]`: connectedOrganizationState
@@ -620,17 +702,17 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageA
       - `[PrincipalName <String>]`: The principal name, if known, of the subject.
       - `[SubjectType <String>]`: accessPackageSubjectType
   - `[CompletedDateTime <DateTime?>]`: The date of the end of processing, either successful or failure, of a request. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter.
   - `[RequestType <String>]`: accessPackageRequestType
-  - `[Requestor <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
+  - `[Requestor <IMicrosoftGraphAccessPackageSubject>]`: accessPackageSubject
   - `[Schedule <IMicrosoftGraphEntitlementManagementSchedule>]`: entitlementManagementSchedule
   - `[State <String>]`: accessPackageRequestState
   - `[Status <String>]`: More information on the request processing status. Read-only.
 
-REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
+REQUESTOR <IMicrosoftGraphAccessPackageSubject>: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
+  - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
@@ -639,7 +721,7 @@ REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
     - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
       - `[Id <String>]`: 
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-    - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
+    - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Nullable.
     - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[State <String>]`: connectedOrganizationState
@@ -650,7 +732,7 @@ REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectType <String>]`: accessPackageSubjectType
 
-SCHEDULE `<IMicrosoftGraphEntitlementManagementSchedule>`: entitlementManagementSchedule
+SCHEDULE <IMicrosoftGraphEntitlementManagementSchedule>: entitlementManagementSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
