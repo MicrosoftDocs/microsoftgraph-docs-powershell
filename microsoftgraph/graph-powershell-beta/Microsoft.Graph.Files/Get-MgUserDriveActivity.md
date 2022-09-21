@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mguserdriveactivity
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserDriveActivity
 
 ## SYNOPSIS
-Get activities from users
+List the recent activities that took place on an item or under a hierarchy.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgUserDriveActivity -DriveId <String> -UserId <String> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get activities from users
+List the recent activities that took place on an item or under a hierarchy.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +111,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

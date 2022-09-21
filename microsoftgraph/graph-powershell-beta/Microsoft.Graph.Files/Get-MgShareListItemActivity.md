@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharelistitemactivity
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListItemActivity
 
 ## SYNOPSIS
-Get activities from shares
+The list of recent activities that took place on this item.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgShareListItemActivity -SharedDriveItemId <String> -ListItemId <String> [-E
 ```
 
 ## DESCRIPTION
-Get activities from shares
+The list of recent activities that took place on this item.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -119,7 +119,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
