@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasenoncustodialdatasource
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource
 
 ## SYNOPSIS
-Create new navigation property to noncustodialDataSources for security
+Create a new ediscoveryNoncustodialDataSource object.
 
 ## SYNTAX
 
@@ -45,9 +45,23 @@ New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityId
 ```
 
 ## DESCRIPTION
-Create new navigation property to noncustodialDataSources for security
+Create a new ediscoveryNoncustodialDataSource object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+$params = @{
+	DataSource = @{
+		"@odata.type" = "microsoft.graph.security.siteSource"
+	}
+}
+New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+```
+
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -299,7 +313,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource>`: ediscoveryNoncustodialDataSource
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource>: ediscoveryNoncustodialDataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
@@ -337,7 +351,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource>`: edisc
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: 
 
-DATASOURCE `<IMicrosoftGraphSecurityDataSource>`: dataSource
+DATASOURCE <IMicrosoftGraphSecurityDataSource>: dataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -352,7 +366,7 @@ DATASOURCE `<IMicrosoftGraphSecurityDataSource>`: dataSource
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation

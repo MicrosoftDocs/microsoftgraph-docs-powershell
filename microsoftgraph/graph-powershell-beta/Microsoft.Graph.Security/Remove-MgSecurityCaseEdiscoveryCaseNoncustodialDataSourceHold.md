@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasenoncustodialdatasourcehold
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold
 
 ## SYNOPSIS
-Invoke action removeHold
+Start the process of removing hold from eDiscovery non-custodial data sources.
+After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
+The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## SYNTAX
 
@@ -51,9 +53,29 @@ Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISec
 ```
 
 ## DESCRIPTION
-Invoke action removeHold
+Start the process of removing hold from eDiscovery non-custodial data sources.
+After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
+The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+```
+
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+```
+
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -214,11 +236,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths101Xa3PSecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths101Xa3PSecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation

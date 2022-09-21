@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequestnote
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecuritySubjectRightsRequestNote
 
 ## SYNOPSIS
-Create new navigation property to notes for security
+Create a new authoredNote object.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to notes for security
+Create a new authoredNote object.
 
 ## EXAMPLES
 
@@ -221,12 +221,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUTHOR `<IMicrosoftGraphIdentity>`: identity
+AUTHOR <IMicrosoftGraphIdentity>: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
 
-BODYPARAMETER `<IMicrosoftGraphAuthoredNote>`: authoredNote
+BODYPARAMETER <IMicrosoftGraphAuthoredNote>: authoredNote
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Author <IMicrosoftGraphIdentity>]`: identity
@@ -239,12 +239,12 @@ BODYPARAMETER `<IMicrosoftGraphAuthoredNote>`: authoredNote
     - `[ContentType <String>]`: bodyType
   - `[CreatedDateTime <DateTime?>]`: The date and time when the entity was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-CONTENT `<IMicrosoftGraphItemBody>`: itemBody
+CONTENT <IMicrosoftGraphItemBody>: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation

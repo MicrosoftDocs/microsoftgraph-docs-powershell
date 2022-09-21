@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/stop-mgsecurityaction
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Stop-MgSecurityAction
 
 ## SYNOPSIS
-Invoke action cancelSecurityAction
+Cancel a security operation.
 
 ## SYNTAX
 
@@ -23,9 +23,18 @@ Stop-MgSecurityAction -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf] [-C
 ```
 
 ## DESCRIPTION
-Invoke action cancelSecurityAction
+Cancel a security operation.
 
 ## EXAMPLES
+
+### Example 1: Using the Stop-MgSecurityAction Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+Stop-MgSecurityAction -SecurityActionId $securityActionId
+```
+
+This example shows how to use the Stop-MgSecurityAction Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -124,7 +133,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation

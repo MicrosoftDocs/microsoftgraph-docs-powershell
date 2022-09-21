@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritytiindicatormultiple
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityTiIndicatorMultiple
 
 ## SYNOPSIS
-Invoke action deleteTiIndicators
+Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## SYNTAX
 
@@ -26,9 +26,24 @@ Remove-MgSecurityTiIndicatorMultiple
 ```
 
 ## DESCRIPTION
-Invoke action deleteTiIndicators
+Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgSecurityTiIndicatorMultiple Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+$params = @{
+	Value = @(
+		"id-value1"
+		"id-value2"
+	)
+}
+Remove-MgSecurityTiIndicatorMultiple -BodyParameter $params
+```
+
+This example shows how to use the Remove-MgSecurityTiIndicatorMultiple Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -127,7 +142,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Value <String[]>]`: 
 

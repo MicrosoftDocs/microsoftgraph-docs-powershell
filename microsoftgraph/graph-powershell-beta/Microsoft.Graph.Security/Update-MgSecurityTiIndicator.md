@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritytiindicator
@@ -71,6 +71,32 @@ Update-MgSecurityTiIndicator -InputObject <ISecurityIdentity> -BodyParameter <IM
 Update the navigation property tiIndicators in security
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgSecurityTiIndicator Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+$params = @{
+	Description = "description-updated"
+}
+Update-MgSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgSecurityTiIndicator Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Update-MgSecurityTiIndicator Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+$params = @{
+	AdditionalInformation = "additionalInformation-after-update"
+	Confidence = 42
+	Description = "description-after-update"
+}
+Update-MgSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgSecurityTiIndicator Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -1114,7 +1140,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTiIndicator>`: tiIndicator
+BODYPARAMETER <IMicrosoftGraphTiIndicator>: tiIndicator
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Action <String>]`: tiAction
@@ -1176,7 +1202,7 @@ BODYPARAMETER `<IMicrosoftGraphTiIndicator>`: tiIndicator
   - `[Url <String>]`: 
   - `[UserAgent <String>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation

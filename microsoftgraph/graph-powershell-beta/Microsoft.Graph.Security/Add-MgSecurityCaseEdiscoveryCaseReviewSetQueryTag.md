@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasereviewsetquerytag
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag
 
 ## SYNOPSIS
-Invoke action applyTags
+Apply tags to files in an eDiscovery review set.
+For details, see Tag documents in a review set in eDiscovery.
 
 ## SYNTAX
 
@@ -45,9 +46,26 @@ Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -InputObject <ISecurityIdentit
 ```
 
 ## DESCRIPTION
-Invoke action applyTags
+Apply tags to files in an eDiscovery review set.
+For details, see Tag documents in a review set in eDiscovery.
 
 ## EXAMPLES
+
+### Example 1: Using the Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+$params = @{
+	TagsToAdd = @(
+		@{
+			Id = "d3d99dc704a74801b792b3e1e722aa0d"
+		}
+	)
+}
+Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId -BodyParameter $params
+```
+
+This example shows how to use the Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -240,7 +258,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsA2Ja7OSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdQueriesEdiscoveryreviewsetqueryIdMicrosoftGraphSecurityApplytagsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsA2Ja7OSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdQueriesEdiscoveryreviewsetqueryIdMicrosoftGraphSecurityApplytagsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TagsToAdd <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -260,7 +278,7 @@ BODYPARAMETER `<IPathsA2Ja7OSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewse
     - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
   - `[TagsToRemove <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -304,7 +322,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-TAGSTOADD <IMicrosoftGraphSecurityEdiscoveryReviewTag\[]>: .
+TAGSTOADD <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>: .
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -321,7 +339,7 @@ TAGSTOADD <IMicrosoftGraphSecurityEdiscoveryReviewTag\[]>: .
   - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]`: Returns the tags that are a child of a tag.
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
-TAGSTOREMOVE <IMicrosoftGraphSecurityEdiscoveryReviewTag\[]>: .
+TAGSTOREMOVE <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>: .
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity

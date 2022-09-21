@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianunifiedgroupsourcegroup
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup
 
 ## SYNOPSIS
-Get group from security
+Represents a group.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup -InputObject <I
 ```
 
 ## DESCRIPTION
-Get group from security
+Represents a group.
 
 ## EXAMPLES
 
@@ -141,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation

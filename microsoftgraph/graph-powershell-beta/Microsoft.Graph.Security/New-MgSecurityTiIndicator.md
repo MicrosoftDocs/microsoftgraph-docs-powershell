@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritytiindicator
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityTiIndicator
 
 ## SYNOPSIS
-Create new navigation property to tiIndicators for security
+Create a new tiIndicator object.
 
 ## SYNTAX
 
@@ -39,9 +39,39 @@ New-MgSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-WhatIf] 
 ```
 
 ## DESCRIPTION
-Create new navigation property to tiIndicators for security
+Create a new tiIndicator object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgSecurityTiIndicator Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+$params = @{
+	Action = "alert"
+	ActivityGroupNames = @(
+	)
+	Confidence = 0
+	Description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."
+	ExpirationDateTime = [System.DateTime]::Parse("2019-03-01T21:43:37.5031462+00:00")
+	ExternalId = "Test--8586509942679764298MS501"
+	FileHashType = "sha256"
+	FileHashValue = "aa64428647b57bf51524d1756b2ed746e5a3f31b67cf7fe5b5d8a9daf07ca313"
+	KillChain = @(
+	)
+	MalwareFamilyNames = @(
+	)
+	Severity = 0
+	Tags = @(
+	)
+	TargetProduct = "Azure Sentinel"
+	ThreatType = "WatchList"
+	TlpLevel = "green"
+}
+New-MgSecurityTiIndicator -BodyParameter $params
+```
+
+This example shows how to use the New-MgSecurityTiIndicator Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -1038,7 +1068,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTiIndicator>`: tiIndicator
+BODYPARAMETER <IMicrosoftGraphTiIndicator>: tiIndicator
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Action <String>]`: tiAction

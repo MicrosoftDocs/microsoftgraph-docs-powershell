@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityaction
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityAction
 
 ## SYNOPSIS
-Create new navigation property to securityActions for security
+Create a new securityAction object.
 
 ## SYNTAX
 
@@ -28,9 +28,32 @@ New-MgSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Create new navigation property to securityActions for security
+Create a new securityAction object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgSecurityAction Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+$params = @{
+	Name = "BlockIp"
+	ActionReason = "Test"
+	Parameters = @(
+		@{
+			Name = "IP"
+			Value = "1.2.3.4"
+		}
+	)
+	VendorInformation = @{
+		Provider = "Windows Defender ATP"
+		Vendor = "Microsoft"
+	}
+}
+New-MgSecurityAction -BodyParameter $params
+```
+
+This example shows how to use the New-MgSecurityAction Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -353,7 +376,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAction>`: securityAction
+BODYPARAMETER <IMicrosoftGraphSecurityAction>: securityAction
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActionReason <String>]`: Reason for invoking this action.
@@ -386,23 +409,23 @@ BODYPARAMETER `<IMicrosoftGraphSecurityAction>`: securityAction
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-ERRORINFO `<IMicrosoftGraphResultInfo>`: resultInfo
+ERRORINFO <IMicrosoftGraphResultInfo>: resultInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <Int32?>]`: The result code.
   - `[Message <String>]`: The message.
   - `[Subcode <Int32?>]`: The result sub-code.
 
-PARAMETERS <IMicrosoftGraphKeyValuePair\[]>: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.). Required.
+PARAMETERS <IMicrosoftGraphKeyValuePair[]>: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.). Required.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-STATES <IMicrosoftGraphSecurityActionState\[]>: Collection of securityActionState to keep the history of an action.
+STATES <IMicrosoftGraphSecurityActionState[]>: Collection of securityActionState to keep the history of an action.
   - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the action. The appId should be extracted from the auth token and not entered manually by the calling application.
   - `[Status <String>]`: operationStatus
   - `[UpdatedDateTime <DateTime?>]`: Timestamp when the actionState was updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[User <String>]`: The user principal name of the signed-in user that submitted an update (PATCH) to the action. The user should be extracted from the auth token and not entered manually by the calling application.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required

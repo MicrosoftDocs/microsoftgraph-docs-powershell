@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewset
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Export-MgSecurityCaseEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Invoke action export
+Initiate an export from a **reviewSet**.
+For details, see Export documents from a review set in eDiscovery (Premium).
 
 ## SYNTAX
 
@@ -43,9 +44,25 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action export
+Initiate an export from a **reviewSet**.
+For details, see Export documents from a review set in eDiscovery (Premium).
 
 ## EXAMPLES
+
+### Example 1: Using the Export-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+$params = @{
+	OutputName = "Export via API"
+	Description = "Export for the Contoso investigation"
+	ExportOptions = "originalFiles,fileInfo,tags"
+	ExportStructure = "directory"
+}
+Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
+```
+
+This example shows how to use the Export-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -281,7 +298,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AzureBlobContainer <String>]`: 
   - `[AzureBlobToken <String>]`: 
@@ -290,7 +307,7 @@ BODYPARAMETER `<IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewse
   - `[ExportStructure <String>]`: exportFileStructure
   - `[OutputName <String>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
