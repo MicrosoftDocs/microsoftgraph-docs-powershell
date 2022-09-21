@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgplace
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgPlace
 
 ## SYNOPSIS
-Update place
+Update the properties of place object, which can be a room or roomList.
+You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.
 
 ## SYNTAX
 
@@ -41,9 +42,55 @@ Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphP
 ```
 
 ## DESCRIPTION
-Update place
+Update the properties of place object, which can be a room or roomList.
+You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgPlace Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	"@odata.type" = "microsoft.graph.room"
+	Nickname = "Conf Room"
+	Building = "1"
+	Label = "100"
+	Capacity = 
+	IsWheelChairAccessible = $false
+}
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgPlace Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Update-MgPlace Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	"@odata.type" = "microsoft.graph.roomList"
+	DisplayName = "Building 1"
+	Phone = "555-555-0100"
+	Address = @{
+		Street = "4567 Main Street"
+		City = "Buffalo"
+		State = "NY"
+		PostalCode = "98052"
+		CountryOrRegion = "USA"
+	}
+	GeoCoordinates = @{
+		Altitude = $null
+		Latitude = 47
+		Longitude = -122
+		Accuracy = $null
+		AltitudeAccuracy = $null
+	}
+}
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgPlace Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -251,7 +298,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -259,7 +306,7 @@ ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-BODYPARAMETER `<IMicrosoftGraphPlace1>`: place
+BODYPARAMETER <IMicrosoftGraphPlace1>: place
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -279,7 +326,7 @@ BODYPARAMETER `<IMicrosoftGraphPlace1>`: place
     - `[Longitude <Double?>]`: The longitude of the location.
   - `[Phone <String>]`: The phone number of the place.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
   - `[Altitude <Double?>]`: The altitude of the location.
@@ -287,7 +334,7 @@ GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   - `[Latitude <Double?>]`: The latitude of the location.
   - `[Longitude <Double?>]`: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
