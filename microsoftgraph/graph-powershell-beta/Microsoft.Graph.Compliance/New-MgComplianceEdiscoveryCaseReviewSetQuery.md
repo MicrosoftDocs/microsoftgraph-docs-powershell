@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/new-mgcomplianceediscoverycasereviewsetquery
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Create new navigation property to queries for compliance
+Create a new reviewSetQuery object.
 
 ## SYNTAX
 
@@ -41,9 +41,22 @@ New-MgComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to queries for compliance
+Create a new reviewSetQuery object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgComplianceEdiscoveryCaseReviewSetQuery Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	DisplayName = "My Query 1"
+	Query = "(subject:"Quarterly Financials")"
+}
+New-MgComplianceEdiscoveryCaseReviewSetQuery -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
+```
+
+This example shows how to use the New-MgComplianceEdiscoveryCaseReviewSetQuery Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -288,7 +301,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryReviewSetQuery>`: reviewSetQuery
+BODYPARAMETER <IMicrosoftGraphEdiscoveryReviewSetQuery>: reviewSetQuery
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -305,7 +318,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryReviewSetQuery>`: reviewSetQuery
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the query was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Query <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Document metadata fields in Advanced eDiscovery.  This field maps directly to the keywords condition.  You can refine searches by using fields listed in the searchable field name paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -314,7 +327,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian
@@ -330,7 +343,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
   - `[UserSourceId <String>]`: key: id of userSource
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/invoke-mgestimatecomplianceediscoverycasesourcecollectionstatistics
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics
 
 ## SYNOPSIS
-Invoke action estimateStatistics
+Run an estimate of the number of emails and documents in the source collection.
+To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
 
 ## SYNTAX
 
@@ -25,9 +26,19 @@ Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics -InputObject
 ```
 
 ## DESCRIPTION
-Invoke action estimateStatistics
+Run an estimate of the number of emails and documents in the source collection.
+To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics -CaseId $caseId -SourceCollectionId $sourceCollectionId
+```
+
+This example shows how to use the Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -141,7 +152,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian

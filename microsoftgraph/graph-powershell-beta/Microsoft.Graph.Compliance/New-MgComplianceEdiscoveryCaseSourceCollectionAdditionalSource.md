@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/new-mgcomplianceediscoverycasesourcecollectionadditionalsource
@@ -42,6 +42,43 @@ New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject <ICo
 Create new navigation property to additionalSources for compliance
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	"@odata.type" = "microsoft.graph.ediscovery.siteSource"
+}
+New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
+```
+
+This example shows how to use the New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	"@odata.type" = "microsoft.graph.ediscovery.userSource"
+	Email = "badguy@contoso.com"
+}
+New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
+```
+
+This example shows how to use the New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	"@odata.type" = "microsoft.graph.ediscovery.siteSource"
+}
+New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
+```
+
+This example shows how to use the New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -249,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryDataSource>`: dataSource
+BODYPARAMETER <IMicrosoftGraphEdiscoveryDataSource>: dataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -264,7 +301,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryDataSource>`: dataSource
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -273,7 +310,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian

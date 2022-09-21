@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/add-mgcomplianceediscoverycasereviewsettoreviewset
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet
 
 ## SYNOPSIS
-Invoke action addToReviewSet
+Start the process of adding a collection from Microsoft 365 services to a review set.
+After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers.
+The location provides a URL that will return a caseExportOperation.
 
 ## SYNTAX
 
@@ -43,9 +45,26 @@ Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -InputObject <IComplianceIden
 ```
 
 ## DESCRIPTION
-Invoke action addToReviewSet
+Start the process of adding a collection from Microsoft 365 services to a review set.
+After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers.
+The location provides a URL that will return a caseExportOperation.
 
 ## EXAMPLES
+
+### Example 1: Using the Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	SourceCollection = @{
+		Id = "1a9b4145d8f84e39bc45a7f68c5c5119"
+	}
+	AdditionalData = "linkedFiles"
+}
+Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
+```
+
+This example shows how to use the Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -222,7 +241,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdditionalDataOptions <String>]`: additionalDataOptions
   - `[SourceCollection <IMicrosoftGraphEdiscoverySourceCollection>]`: sourceCollection
@@ -317,7 +336,7 @@ BODYPARAMETER `<IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetI
       - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
       - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian
@@ -333,7 +352,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
   - `[UserSourceId <String>]`: key: id of userSource
 
-SOURCECOLLECTION `<IMicrosoftGraphEdiscoverySourceCollection>`: sourceCollection
+SOURCECOLLECTION <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AddToReviewSetOperation <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>]`: addToReviewSetOperation

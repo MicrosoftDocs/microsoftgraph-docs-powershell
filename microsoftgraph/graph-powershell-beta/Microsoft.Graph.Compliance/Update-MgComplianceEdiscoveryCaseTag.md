@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycasetag
@@ -46,6 +46,18 @@ Update-MgComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity>
 Update the navigation property tags in compliance
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgComplianceEdiscoveryCaseTag Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	Description = "This is an updated description."
+}
+Update-MgComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgComplianceEdiscoveryCaseTag Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -314,7 +326,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryTag>`: tag
+BODYPARAMETER <IMicrosoftGraphEdiscoveryTag>: tag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ChildSelectability <String>]`: childSelectability
@@ -332,7 +344,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryTag>`: tag
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-CHILDTAGS <IMicrosoftGraphEdiscoveryTag\[]>: Returns the tags that are a child of a tag.
+CHILDTAGS <IMicrosoftGraphEdiscoveryTag[]>: Returns the tags that are a child of a tag.
   - `[Id <String>]`: 
   - `[ChildSelectability <String>]`: childSelectability
   - `[ChildTags <IMicrosoftGraphEdiscoveryTag[]>]`: Returns the tags that are a child of a tag.
@@ -349,7 +361,7 @@ CHILDTAGS <IMicrosoftGraphEdiscoveryTag\[]>: Returns the tags that are a child o
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -358,7 +370,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian
@@ -374,7 +386,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
   - `[UserSourceId <String>]`: key: id of userSource
 
-PARENT `<IMicrosoftGraphEdiscoveryTag>`: tag
+PARENT <IMicrosoftGraphEdiscoveryTag>: tag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ChildSelectability <String>]`: childSelectability

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycaseoperation
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseOperation
 
 ## SYNOPSIS
-Get operations from compliance
+Returns a list of case operation objects for this case.
+Nullable.
 
 ## SYNTAX
 
@@ -32,9 +33,19 @@ Get-MgComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get operations from compliance
+Returns a list of case operation objects for this case.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgComplianceEdiscoveryCaseOperation Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+Get-MgComplianceEdiscoveryCaseOperation -CaseId $caseId
+```
+
+This example shows how to use the Get-MgComplianceEdiscoveryCaseOperation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +59,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -155,7 +166,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +264,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian

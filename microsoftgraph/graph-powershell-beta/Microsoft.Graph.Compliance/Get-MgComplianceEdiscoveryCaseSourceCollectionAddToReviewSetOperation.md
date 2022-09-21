@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasesourcecollectionaddtoreviewsetoperation
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation
 
 ## SYNOPSIS
-Get addToReviewSetOperation from compliance
+Get the last addToReviewSetOperation object associated with a source collection.
 
 ## SYNTAX
 
@@ -25,9 +25,18 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation -InputObje
 ```
 
 ## DESCRIPTION
-Get addToReviewSetOperation from compliance
+Get the last addToReviewSetOperation object associated with a source collection.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation -CaseId $caseId -SourceCollectionId $sourceCollectionId
+```
+
+This example shows how to use the Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -125,7 +134,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/remove-mgcomplianceediscoverycasetag
@@ -28,6 +28,15 @@ Remove-MgComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-IfMatc
 Delete navigation property tags for compliance
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgComplianceEdiscoveryCaseTag Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+Remove-MgComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -Forcedelete true
+```
+
+This example shows how to use the Remove-MgComplianceEdiscoveryCaseTag Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -156,7 +165,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian

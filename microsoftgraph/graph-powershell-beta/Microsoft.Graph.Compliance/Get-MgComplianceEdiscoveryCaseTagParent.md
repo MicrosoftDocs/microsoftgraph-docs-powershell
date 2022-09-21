@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasetagparent
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseTagParent
 
 ## SYNOPSIS
-Get parent from compliance
+Returns the parent tag of the specified tag.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgComplianceEdiscoveryCaseTagParent -InputObject <IComplianceIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get parent from compliance
+Returns the parent tag of the specified tag.
 
 ## EXAMPLES
 
@@ -125,7 +125,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian

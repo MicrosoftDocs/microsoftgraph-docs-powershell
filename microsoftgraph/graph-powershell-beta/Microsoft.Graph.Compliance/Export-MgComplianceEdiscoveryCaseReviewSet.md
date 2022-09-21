@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/export-mgcomplianceediscoverycasereviewset
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Export-MgComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Invoke action export
+Initiate an export from a **reviewSet**.
+For details, see Export documents from a review set in Advanced eDiscovery.
 
 ## SYNTAX
 
@@ -43,9 +44,25 @@ Export-MgComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action export
+Initiate an export from a **reviewSet**.
+For details, see Export documents from a review set in Advanced eDiscovery.
 
 ## EXAMPLES
+
+### Example 1: Using the Export-MgComplianceEdiscoveryCaseReviewSet Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	OutputName = "2020-12-06 Contoso investigation export"
+	Description = "Export for the Contoso investigation"
+	ExportOptions = "originalFiles,fileInfo,tags"
+	ExportStructure = "directory"
+}
+Export-MgComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
+```
+
+This example shows how to use the Export-MgComplianceEdiscoveryCaseReviewSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -281,7 +298,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AzureBlobContainer <String>]`: 
   - `[AzureBlobToken <String>]`: 
@@ -290,7 +307,7 @@ BODYPARAMETER `<IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
   - `[ExportStructure <String>]`: exportFileStructure
   - `[OutputName <String>]`: 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian

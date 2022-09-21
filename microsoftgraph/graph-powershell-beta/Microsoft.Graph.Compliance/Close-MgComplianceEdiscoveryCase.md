@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/close-mgcomplianceediscoverycase
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Close-MgComplianceEdiscoveryCase
 
 ## SYNOPSIS
-Invoke action close
+Close an eDiscovery case.
+For details, see Close a case.
 
 ## SYNTAX
 
@@ -24,9 +25,19 @@ Close-MgComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-PassThru] 
 ```
 
 ## DESCRIPTION
-Invoke action close
+Close an eDiscovery case.
+For details, see Close a case.
 
 ## EXAMPLES
+
+### Example 1: Using the Close-MgComplianceEdiscoveryCase Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+Close-MgComplianceEdiscoveryCase -CaseId $caseId
+```
+
+This example shows how to use the Close-MgComplianceEdiscoveryCase Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -125,7 +136,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian

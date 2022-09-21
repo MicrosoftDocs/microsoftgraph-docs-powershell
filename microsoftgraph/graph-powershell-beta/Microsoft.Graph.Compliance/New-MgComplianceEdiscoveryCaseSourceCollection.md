@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/new-mgcomplianceediscoverycasesourcecollection
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseSourceCollection
 
 ## SYNOPSIS
-Create new navigation property to sourceCollections for compliance
+Create a new sourceCollection object.
 
 ## SYNTAX
 
@@ -53,9 +53,25 @@ New-MgComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIdentity
 ```
 
 ## DESCRIPTION
-Create new navigation property to sourceCollections for compliance
+Create a new sourceCollection object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgComplianceEdiscoveryCaseSourceCollection Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	DisplayName = "Quarterly Financials search"
+	ContentQuery = "subject:'Quarterly Financials'"
+	"CustodianSources@odata.bind" = @(
+		"https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/custodians/2192ca408ea2410eba3bec8ae873be6b/userSources/46384443-4137-3032-3437-363939433735"
+	)
+}
+New-MgComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -BodyParameter $params
+```
+
+This example shows how to use the New-MgComplianceEdiscoveryCaseSourceCollection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -390,7 +406,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDITIONALSOURCES <IMicrosoftGraphEdiscoveryDataSource\[]>: Adds an additional source to the sourceCollection.
+ADDITIONALSOURCES <IMicrosoftGraphEdiscoveryDataSource[]>: Adds an additional source to the sourceCollection.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -404,7 +420,7 @@ ADDITIONALSOURCES <IMicrosoftGraphEdiscoveryDataSource\[]>: Adds an additional s
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-ADDTOREVIEWSETOPERATION `<IMicrosoftGraphEdiscoveryAddToReviewSetOperation>`: addToReviewSetOperation
+ADDTOREVIEWSETOPERATION <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>: addToReviewSetOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: caseAction
   - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
@@ -496,7 +512,7 @@ ADDTOREVIEWSETOPERATION `<IMicrosoftGraphEdiscoveryAddToReviewSetOperation>`: ad
       - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
       - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoverySourceCollection>`: sourceCollection
+BODYPARAMETER <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AddToReviewSetOperation <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>]`: addToReviewSetOperation
@@ -588,7 +604,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoverySourceCollection>`: sourceCollection
     - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
     - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -597,7 +613,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANSOURCES <IMicrosoftGraphEdiscoveryDataSource\[]>: Custodian sources that are included in the sourceCollection.
+CUSTODIANSOURCES <IMicrosoftGraphEdiscoveryDataSource[]>: Custodian sources that are included in the sourceCollection.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -611,7 +627,7 @@ CUSTODIANSOURCES <IMicrosoftGraphEdiscoveryDataSource\[]>: Custodian sources tha
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian
@@ -627,7 +643,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
   - `[UserSourceId <String>]`: key: id of userSource
 
-LASTESTIMATESTATISTICSOPERATION `<IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>`: estimateStatisticsOperation
+LASTESTIMATESTATISTICSOPERATION <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>: estimateStatisticsOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: caseAction
   - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
@@ -719,7 +735,7 @@ LASTESTIMATESTATISTICSOPERATION `<IMicrosoftGraphEdiscoveryEstimateStatisticsOpe
   - `[UnindexedItemCount <Int64?>]`: The estimated count of unindexed items for the collection.
   - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -728,7 +744,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NONCUSTODIALSOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource\[]>: noncustodialDataSource sources that are included in the sourceCollection
+NONCUSTODIALSOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>: noncustodialDataSource sources that are included in the sourceCollection
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
