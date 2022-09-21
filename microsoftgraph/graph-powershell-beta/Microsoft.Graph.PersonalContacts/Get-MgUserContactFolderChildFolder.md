@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgUserContactFolderChildFolder
 
 ## SYNOPSIS
-The collection of child folders in the folder.
-Navigation property.
-Read-only.
-Nullable.
+Get childFolders from users
 
 ## SYNTAX
 
@@ -35,10 +32,7 @@ Get-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-The collection of child folders in the folder.
-Navigation property.
-Read-only.
-Nullable.
+Get childFolders from users
 
 ## EXAMPLES
 

@@ -57,6 +57,24 @@ Create new navigation property to calendarView for solutions
 
 ## EXAMPLES
 
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -185,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilledAttendeesCount
-The current number of customers in the appointment.
+The current number of customers in the appointment
 
 ```yaml
 Type: Int32

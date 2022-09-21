@@ -30,6 +30,24 @@ Create new navigation property to recoveryKeys for informationProtection
 
 ## EXAMPLES
 
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -65,6 +83,7 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 The date and time when the key was originally backed up to Azure Active Directory.
+Not nullable.
 
 ```yaml
 Type: DateTime
@@ -79,7 +98,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-ID of the device the BitLocker key is originally backed up from.
+Identifier of the device the BitLocker key is originally backed up from.
+Supports $filter (eq).
 
 ```yaml
 Type: String
@@ -110,6 +130,8 @@ Accept wildcard characters: False
 
 ### -Key
 The BitLocker recovery key.
+Returned only on $select.
+Not nullable.
 
 ```yaml
 Type: String
@@ -190,9 +212,9 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IMicrosoftGraphBitlockerRecoveryKey>`: bitlockerRecoveryKey
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
-  - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
-  - `[Key <String>]`: The BitLocker recovery key.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
+  - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
+  - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
   - `[VolumeType <String>]`: volumeType
 
 ## RELATED LINKS

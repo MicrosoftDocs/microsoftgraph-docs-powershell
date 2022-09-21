@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserMailFolderMessageRule
 
 ## SYNOPSIS
-The collection of rules that apply to the user's Inbox folder.
+Get messageRules from users
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-Property <String[
 ```
 
 ## DESCRIPTION
-The collection of rules that apply to the user's Inbox folder.
+Get messageRules from users
 
 ## EXAMPLES
 

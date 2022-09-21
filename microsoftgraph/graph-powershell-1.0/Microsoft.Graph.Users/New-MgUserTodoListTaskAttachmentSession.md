@@ -43,6 +43,24 @@ Create new navigation property to attachmentSessions for users
 
 ## EXAMPLES
 
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -77,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentInputFile
-Input File for Content (The content streams that are uploaded.)
+Input File for Content (.)
 
 ```yaml
 Type: String
@@ -92,8 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
-The date and time in UTC when the upload session will expire.
-The complete file must be uploaded before this expiration time is reached.
+.
 
 ```yaml
 Type: DateTime
@@ -139,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextExpectedRanges
-Indicates a single value {start} that represents the location in the file where the next upload should begin.
+.
 
 ```yaml
 Type: String[]
@@ -251,9 +268,9 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IMicrosoftGraphAttachmentSession>`: attachmentSession
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[Content <Byte[]>]`: The content streams that are uploaded.
-  - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-  - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+  - `[Content <Byte[]>]`: 
+  - `[ExpirationDateTime <DateTime?>]`: 
+  - `[NextExpectedRanges <String[]>]`: 
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase

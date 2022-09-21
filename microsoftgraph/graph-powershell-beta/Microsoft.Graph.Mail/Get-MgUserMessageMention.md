@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserMessageMention
 
 ## SYNOPSIS
-A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
-By default, a GET /messages does not return this property unless you apply $expand on the property.
+Get mentions from users
 
 ## SYNTAX
 
@@ -33,10 +32,27 @@ Get-MgUserMessageMention -InputObject <IMailIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
-By default, a GET /messages does not return this property unless you apply $expand on the property.
+Get mentions from users
 
 ## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
