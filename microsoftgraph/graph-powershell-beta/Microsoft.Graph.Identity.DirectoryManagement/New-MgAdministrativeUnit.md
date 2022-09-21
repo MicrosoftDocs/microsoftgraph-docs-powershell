@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadministrativeunit
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgAdministrativeUnit
 
 ## SYNOPSIS
-Create administrativeUnit
+Use this API to create a new administrativeUnit.
 
 ## SYNTAX
 
@@ -28,20 +28,25 @@ New-MgAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit1> [-W
 ```
 
 ## DESCRIPTION
-Create administrativeUnit
+Use this API to create a new administrativeUnit.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgAdministrativeUnit Cmdlet
 ```powershell
-New-MgDirectoryAdministrativeUnit -DisplayName 'Test Unit'
-
-DeletedDateTime Id                                   Description DisplayName Visibility
---------------- --                                   ----------- ----------- ----------
-                416f19a5-2e01-4d15-a78c-d9028fee1ebb             Test Unit
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	DisplayName = "Seattle District Technical Schools"
+	Description = "Seattle district technical schools administration"
+	MembershipType = "Dynamic"
+	MembershipRule = "(user.country -eq "United States")"
+	MembershipRuleProcessingState = "On"
+}
+New-MgAdministrativeUnit -BodyParameter $params
 ```
 
-This example creates a new administrative unit.
+This example shows how to use the New-MgAdministrativeUnit Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -271,7 +276,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit1>`: administrativeUnit
+BODYPARAMETER <IMicrosoftGraphAdministrativeUnit1>: administrativeUnit
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
@@ -293,14 +298,14 @@ BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit1>`: administrativeUnit
       - `[Id <String>]`: Unique identifier for the identity.
   - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership or Public. If not set, the default behavior is Public. When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for this administrative unit. Nullable.
+EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for this administrative unit. Nullable.
   - `[Id <String>]`: 
 
-MEMBERS <IMicrosoftGraphDirectoryObject\[]>: Users and groups that are members of this administrative unit. Supports $expand.
+MEMBERS <IMicrosoftGraphDirectoryObject[]>: Users and groups that are members of this administrative unit. Supports $expand.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership\[]>: Scoped-role members of this administrative unit.
+SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership[]>: Scoped-role members of this administrative unit.
   - `[Id <String>]`: 
   - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
   - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.

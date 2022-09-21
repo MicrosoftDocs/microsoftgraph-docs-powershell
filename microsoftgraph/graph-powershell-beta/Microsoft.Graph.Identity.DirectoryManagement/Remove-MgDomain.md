@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomain
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDomain
 
 ## SYNOPSIS
-Delete domain
+Deletes a domain from a tenant.
 
 ## SYNTAX
 
@@ -24,9 +24,18 @@ Remove-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete domain
+Deletes a domain from a tenant.
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgDomain Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Remove-MgDomain -DomainId $domainId
+```
+
+This example shows how to use the Remove-MgDomain Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -140,7 +149,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet

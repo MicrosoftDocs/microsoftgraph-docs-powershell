@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadministrativeunitmember
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgAdministrativeUnitMember
 
 ## SYNOPSIS
-Get members from administrativeUnits
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get members from administrativeUnits
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -50,7 +52,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +113,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

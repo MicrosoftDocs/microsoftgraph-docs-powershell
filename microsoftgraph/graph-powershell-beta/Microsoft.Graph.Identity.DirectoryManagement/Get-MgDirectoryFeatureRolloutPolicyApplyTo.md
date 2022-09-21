@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryfeaturerolloutpolicyapplyto
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryFeatureRolloutPolicyApplyTo
 
 ## SYNOPSIS
-Get appliesTo from directory
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgDirectoryFeatureRolloutPolicyApplyTo -FeatureRolloutPolicyId <String> [-Ex
 ```
 
 ## DESCRIPTION
-Get appliesTo from directory
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## EXAMPLES
 
@@ -35,7 +37,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +113,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

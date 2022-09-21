@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryAttributeSet
 
 ## SYNOPSIS
-Create new navigation property to attributeSets for directory
+Create a new attributeSet object.
 
 ## SYNTAX
 
@@ -25,9 +25,23 @@ New-MgDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-WhatI
 ```
 
 ## DESCRIPTION
-Create new navigation property to attributeSets for directory
+Create a new attributeSet object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgDirectoryAttributeSet Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	Id = "Engineering"
+	Description = "Attributes for engineering team"
+	MaxAttributesPerSet = 25
+}
+New-MgDirectoryAttributeSet -BodyParameter $params
+```
+
+This example shows how to use the New-MgDirectoryAttributeSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -161,7 +175,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttributeSet>`: attributeSet
+BODYPARAMETER <IMicrosoftGraphAttributeSet>: attributeSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Description <String>]`: Description of the attribute set. Can be up to 128 characters long and include Unicode characters. Can be changed later.
