@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/confirm-mgusermemberobject
@@ -42,6 +42,24 @@ Confirm-MgUserMemberObject -InputObject <IUsersActionsIdentity>
 Invoke action checkMemberObjects
 
 ## EXAMPLES
+
+### Example 1: Using the Confirm-MgUserMemberObject Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Ids = @(
+		"80a963dd-84af-4eb8-b2a6-781e444d4fb0"
+		"62e90394-69f5-4237-9190-012177145e10"
+		"86a64f51-3a64-4cc6-a8c8-6b8f000c0f52"
+		"ac38546e-ddf3-437a-ac5c-27a94cd7a0f1"
+	)
+}
+# A UPN can also be used as -UserId.
+Confirm-MgUserMemberObject -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Confirm-MgUserMemberObject Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -172,11 +190,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsJ9Yxi4UsersUserIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsJ9Yxi4UsersUserIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

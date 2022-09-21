@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/send-mgusermailfoldermessage
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Send-MgUserMailFolderMessage
 
 ## SYNOPSIS
-Invoke action send
+Send an existing draft message.
+The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
+This method saves the message in the **Sent Items** folder.
+Alternatively, send a new message in a single operation.
 
 ## SYNTAX
 
@@ -25,7 +28,10 @@ Send-MgUserMailFolderMessage -InputObject <IUsersActionsIdentity> [-PassThru] [-
 ```
 
 ## DESCRIPTION
-Invoke action send
+Send an existing draft message.
+The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
+This method saves the message in the **Sent Items** folder.
+Alternatively, send a new message in a single operation.
 
 ## EXAMPLES
 
@@ -156,7 +162,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

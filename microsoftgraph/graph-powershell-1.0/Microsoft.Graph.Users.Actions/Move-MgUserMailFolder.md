@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusermailfolder
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Move-MgUserMailFolder
 
 ## SYNOPSIS
-Invoke action move
+Move a mailfolder and its contents to another mailfolder.
 
 ## SYNTAX
 
@@ -39,9 +39,22 @@ Move-MgUserMailFolder -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action move
+Move a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
+
+### Example 1: Using the Move-MgUserMailFolder Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	DestinationId = "destinationId-value"
+}
+# A UPN can also be used as -UserId.
+Move-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+```
+
+This example shows how to use the Move-MgUserMailFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -187,11 +200,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DestinationId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
