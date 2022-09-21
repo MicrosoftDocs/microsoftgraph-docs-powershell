@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofileeducationalactivity
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileEducationalActivity
 
 ## SYNOPSIS
-Create new navigation property to educationalActivities for users
+Create a new educationalActivity in a user's profile.
 
 ## SYNTAX
 
@@ -47,9 +47,49 @@ New-MgUserProfileEducationalActivity -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to educationalActivities for users
+Create a new educationalActivity in a user's profile.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgUserProfileEducationalActivity Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+$params = @{
+	CompletionMonthYear = "Date"
+	EndMonthYear = "Date"
+	Institution = @{
+		Description = $null
+		DisplayName = "Colorado State University"
+		Location = @{
+			Type = "business"
+			PostOfficeBox = $null
+			Street = "12000 E Prospect Rd"
+			City = "Fort Collins"
+			State = "Colorado"
+			CountryOrRegion = "USA"
+			PostalCode = "80525"
+		}
+		WebUrl = "https://www.colostate.edu"
+	}
+	Program = @{
+		Abbreviation = "MBA"
+		Activities = $null
+		Awards = $null
+		Description = "Master of Business Administration with a major in Entreprenuership and Finance."
+		DisplayName = "Master of Business Administration"
+		FieldsOfStudy = $null
+		Grade = "3.9"
+		Notes = $null
+		WebUrl = "https://biz.colostate.edu"
+	}
+	StartMonthYear = "Date"
+}
+# A UPN can also be used as -UserId.
+New-MgUserProfileEducationalActivity -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserProfileEducationalActivity Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -381,7 +421,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationalActivity>`: educationalActivity
+BODYPARAMETER <IMicrosoftGraphEducationalActivity>: educationalActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -433,7 +473,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationalActivity>`: educationalActivity
     - `[WebUrl <String>]`: Link to the degree or program page.
   - `[StartMonthYear <DateTime?>]`: The month and year the user commenced the activity referenced.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -442,12 +482,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -474,7 +514,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-INSTITUTION `<IMicrosoftGraphInstitutionData>`: institutionData
+INSTITUTION <IMicrosoftGraphInstitutionData>: institutionData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Short description of the institution the user studied at.
   - `[DisplayName <String>]`: Name of the institution the user studied at.
@@ -489,7 +529,7 @@ INSTITUTION `<IMicrosoftGraphInstitutionData>`: institutionData
     - `[Type <String>]`: physicalAddressType
   - `[WebUrl <String>]`: Link to the institution or department homepage.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -498,7 +538,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
+PROGRAM <IMicrosoftGraphEducationalActivityDetail>: educationalActivityDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Abbreviation <String>]`: Shortened name of the degree or program (example: PhD, MBA)
   - `[Activities <String[]>]`: Extracurricular activities undertaken alongside the program.
@@ -510,7 +550,7 @@ PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
   - `[Notes <String>]`: Additional notes the user has provided.
   - `[WebUrl <String>]`: Link to the degree or program page.
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mguserperson
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserPerson
 
 ## SYNOPSIS
-Get people from users
+Read-only.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ## SYNTAX
 
@@ -29,9 +32,22 @@ Get-MgUserPerson -InputObject <IPeopleIdentity> [-Property <String[]>] [<CommonP
 ```
 
 ## DESCRIPTION
-Get people from users
+Read-only.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserPerson Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+# A UPN can also be used as -UserId.
+Get-MgUserPerson -UserId $userId
+```
+
+This example shows how to use the Get-MgUserPerson Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -45,7 +61,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -107,7 +123,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -235,7 +251,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress

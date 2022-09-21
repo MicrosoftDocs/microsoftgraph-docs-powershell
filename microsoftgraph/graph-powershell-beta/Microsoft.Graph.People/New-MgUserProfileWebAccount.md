@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofilewebaccount
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileWebAccount
 
 ## SYNOPSIS
-Create new navigation property to webAccounts for users
+Create a new webAccount object in a user's profile.
 
 ## SYNTAX
 
@@ -46,9 +46,27 @@ New-MgUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create new navigation property to webAccounts for users
+Create a new webAccount object in a user's profile.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgUserProfileWebAccount Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+$params = @{
+	Description = "My Github contributions!"
+	UserId = "innocenty.popov"
+	Service = @{
+		Name = "GitHub"
+		WebUrl = "https://github.com"
+	}
+}
+# A UPN can also be used as -UserId.
+New-MgUserProfileWebAccount -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserProfileWebAccount Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -406,7 +424,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphWebAccount>`: webAccount
+BODYPARAMETER <IMicrosoftGraphWebAccount>: webAccount
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -439,7 +457,7 @@ BODYPARAMETER `<IMicrosoftGraphWebAccount>`: webAccount
   - `[UserId <String>]`: The user name  displayed for the webaccount.
   - `[WebUrl <String>]`: Contains a link to the user's profile on the cloud service if one exists.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -448,12 +466,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -480,7 +498,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -489,12 +507,12 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SERVICE `<IMicrosoftGraphServiceInformation>`: serviceInformation
+SERVICE <IMicrosoftGraphServiceInformation>: serviceInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Name <String>]`: The name of the cloud service (for example, Twitter, Instagram).
   - `[WebUrl <String>]`: Contains the URL for the service being referenced.
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 

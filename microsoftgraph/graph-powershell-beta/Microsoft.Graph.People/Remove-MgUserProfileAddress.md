@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/remove-mguserprofileaddress
@@ -28,6 +28,15 @@ Remove-MgUserProfileAddress -InputObject <IPeopleIdentity> [-IfMatch <String>] [
 Delete navigation property addresses for users
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgUserProfileAddress Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+Remove-MgUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId
+```
+
+This example shows how to use the Remove-MgUserProfileAddress Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -156,7 +165,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress

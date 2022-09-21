@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mguserprofilecertification
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfileCertification
 
 ## SYNOPSIS
-Get certifications from users
+Represents the details of certifications associated with a person.
 
 ## SYNTAX
 
@@ -32,9 +32,29 @@ Get-MgUserProfileCertification -InputObject <IPeopleIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get certifications from users
+Represents the details of certifications associated with a person.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserProfileCertification Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+# A UPN can also be used as -UserId.
+Get-MgUserProfileCertification -UserId $userId
+```
+
+This example shows how to use the Get-MgUserProfileCertification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgUserProfileCertification Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+# A UPN can also be used as -UserId.
+Get-MgUserProfileCertification -UserId $userId -PersonCertificationId $personCertificationId
+```
+
+This example shows how to use the Get-MgUserProfileCertification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +68,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +145,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +273,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress

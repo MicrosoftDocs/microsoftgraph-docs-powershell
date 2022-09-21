@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofileanniversary
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileAnniversary
 
 ## SYNOPSIS
-Create new navigation property to anniversaries for users
+Use this API to create a new personAnniversary object in a user's profile.
 
 ## SYNTAX
 
@@ -43,9 +43,23 @@ New-MgUserProfileAnniversary -InputObject <IPeopleIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Create new navigation property to anniversaries for users
+Use this API to create a new personAnniversary object in a user's profile.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgUserProfileAnniversary Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+$params = @{
+	Type = "birthday"
+	Date = "1980-01-08"
+}
+# A UPN can also be used as -UserId.
+New-MgUserProfileAnniversary -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserProfileAnniversary Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -345,7 +359,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPersonAnnualEvent>`: personAnnualEvent
+BODYPARAMETER <IMicrosoftGraphPersonAnnualEvent>: personAnnualEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -372,7 +386,7 @@ BODYPARAMETER `<IMicrosoftGraphPersonAnnualEvent>`: personAnnualEvent
   - `[DisplayName <String>]`: 
   - `[Type <String>]`: personAnnualEventType
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -381,12 +395,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -413,7 +427,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -422,7 +436,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 

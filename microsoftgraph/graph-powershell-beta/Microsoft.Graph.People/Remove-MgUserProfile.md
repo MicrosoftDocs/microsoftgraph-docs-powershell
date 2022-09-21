@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/remove-mguserprofile
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfile
 
 ## SYNOPSIS
-Delete navigation property profile for users
+Deletes a profile object from a user's account.
 
 ## SYNTAX
 
@@ -24,9 +24,19 @@ Remove-MgUserProfile -InputObject <IPeopleIdentity> [-IfMatch <String>] [-PassTh
 ```
 
 ## DESCRIPTION
-Delete navigation property profile for users
+Deletes a profile object from a user's account.
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgUserProfile Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+# A UPN can also be used as -UserId.
+Remove-MgUserProfile -UserId $userId
+```
+
+This example shows how to use the Remove-MgUserProfile Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -140,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress

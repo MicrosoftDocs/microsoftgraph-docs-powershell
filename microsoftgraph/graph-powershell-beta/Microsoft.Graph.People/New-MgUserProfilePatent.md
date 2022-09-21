@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofilepatent
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfilePatent
 
 ## SYNOPSIS
-Create new navigation property to patents for users
+Create a new itemPatent object within a user's profile.
 
 ## SYNTAX
 
@@ -45,9 +45,26 @@ New-MgUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create new navigation property to patents for users
+Create a new itemPatent object within a user's profile.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgUserProfilePatent Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+$params = @{
+	Description = "Calculating the intent of a user to purchase an item based on the amount of time they hover their mouse over a given pixel."
+	DisplayName = "Inferring User Intent through browsing behaviors"
+	IsPending = $true
+	Number = "USPTO-3954432633"
+	WebUrl = "https://patents.gov/3954432633"
+}
+# A UPN can also be used as -UserId.
+New-MgUserProfilePatent -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserProfilePatent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -407,7 +424,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphItemPatent>`: itemPatent
+BODYPARAMETER <IMicrosoftGraphItemPatent>: itemPatent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -438,7 +455,7 @@ BODYPARAMETER `<IMicrosoftGraphItemPatent>`: itemPatent
   - `[Number <String>]`: The patent number.
   - `[WebUrl <String>]`: URL referencing the patent or filing.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -447,12 +464,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -479,7 +496,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -488,7 +505,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 

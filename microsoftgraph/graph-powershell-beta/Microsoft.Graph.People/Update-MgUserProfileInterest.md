@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserprofileinterest
@@ -50,6 +50,21 @@ Update-MgUserProfileInterest -InputObject <IPeopleIdentity> -BodyParameter <IMic
 Update the navigation property interests in users
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgUserProfileInterest Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+$params = @{
+	Categories = @(
+		"Sports"
+	)
+}
+# A UPN can also be used as -UserId.
+Update-MgUserProfileInterest -UserId $userId -PersonInterestId $personInterestId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgUserProfileInterest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -425,7 +440,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPersonInterest>`: personInterest
+BODYPARAMETER <IMicrosoftGraphPersonInterest>: personInterest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -455,7 +470,7 @@ BODYPARAMETER `<IMicrosoftGraphPersonInterest>`: personInterest
   - `[ThumbnailUrl <String>]`: 
   - `[WebUrl <String>]`: Contains a link to a web page or resource about the interest.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -464,12 +479,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -496,7 +511,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -505,7 +520,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserprofileproject
@@ -54,6 +54,23 @@ Update-MgUserProfileProject -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 Update the navigation property projects in users
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgUserProfileProject Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+$params = @{
+	AllowedAudiences = "organization"
+	Client = @{
+		Department = "Corporate Marketing"
+		WebUrl = "https://www.contoso.com"
+	}
+}
+# A UPN can also be used as -UserId.
+Update-MgUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgUserProfileProject Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -463,7 +480,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphProjectParticipation>`: projectParticipation
+BODYPARAMETER <IMicrosoftGraphProjectParticipation>: projectParticipation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -521,7 +538,7 @@ BODYPARAMETER `<IMicrosoftGraphProjectParticipation>`: projectParticipation
   - `[Sponsors <IMicrosoftGraphRelatedPerson[]>]`: The Person or people who sponsored the project.
   - `[ThumbnailUrl <String>]`: 
 
-CLIENT `<IMicrosoftGraphCompanyDetail>`: companyDetail
+CLIENT <IMicrosoftGraphCompanyDetail>: companyDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -538,12 +555,12 @@ CLIENT `<IMicrosoftGraphCompanyDetail>`: companyDetail
   - `[Pronunciation <String>]`: Pronunciation guide for the company name.
   - `[WebUrl <String>]`: Link to the company home page.
 
-COLLEAGUES <IMicrosoftGraphRelatedPerson\[]>: Lists people that also worked on the project.
+COLLEAGUES <IMicrosoftGraphRelatedPerson[]>: Lists people that also worked on the project.
   - `[DisplayName <String>]`: Name of the person.
   - `[Relationship <String>]`: personRelationship
   - `[UserPrincipalName <String>]`: Email address or reference to person within organization.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -552,7 +569,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DETAIL `<IMicrosoftGraphPositionDetail>`: positionDetail
+DETAIL <IMicrosoftGraphPositionDetail>: positionDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -577,12 +594,12 @@ DETAIL `<IMicrosoftGraphPositionDetail>`: positionDetail
   - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
   - `[Summary <String>]`: Short summary of the position.
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -609,7 +626,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -618,11 +635,11 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 
-SPONSORS <IMicrosoftGraphRelatedPerson\[]>: The Person or people who sponsored the project.
+SPONSORS <IMicrosoftGraphRelatedPerson[]>: The Person or people who sponsored the project.
   - `[DisplayName <String>]`: Name of the person.
   - `[Relationship <String>]`: personRelationship
   - `[UserPrincipalName <String>]`: Email address or reference to person within organization.

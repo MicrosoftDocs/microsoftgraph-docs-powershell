@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofileaward
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileAward
 
 ## SYNOPSIS
-Create new navigation property to awards for users
+Create a new personAward object in a user's profile.
 
 ## SYNTAX
 
@@ -46,9 +46,27 @@ New-MgUserProfileAward -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to awards for users
+Create a new personAward object in a user's profile.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgUserProfileAward Cmdlet
+```powershell
+Import-Module Microsoft.Graph.People
+$params = @{
+	Description = "Lifetime Achievement award from the International Association of Branding Managers"
+	DisplayName = "Lifetime Achievement Award For Excellence in Branding"
+	IssuedDate = "Date"
+	IssuingAuthority = "International Association of Branding Management"
+	ThumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg"
+	WebUrl = "https://www.iabm.io"
+}
+# A UPN can also be used as -UserId.
+New-MgUserProfileAward -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserProfileAward Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -393,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPersonAward>`: personAward
+BODYPARAMETER <IMicrosoftGraphPersonAward>: personAward
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -423,7 +441,7 @@ BODYPARAMETER `<IMicrosoftGraphPersonAward>`: personAward
   - `[ThumbnailUrl <String>]`: URL referencing a thumbnail of the award or honor.
   - `[WebUrl <String>]`: URL referencing the award or honor.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -432,12 +450,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -464,7 +482,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -473,7 +491,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 
