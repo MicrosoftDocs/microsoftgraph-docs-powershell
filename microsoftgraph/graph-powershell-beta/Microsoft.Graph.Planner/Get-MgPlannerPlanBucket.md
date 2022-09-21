@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerPlanBucket
 
 ## SYNOPSIS
-Get buckets from planner
+Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ## SYNTAX
 
@@ -19,9 +19,18 @@ Get-MgPlannerPlanBucket -PlannerPlanId <String> [-ExpandProperty <String[]>] [-F
 ```
 
 ## DESCRIPTION
-Get buckets from planner
+Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgPlannerPlanBucket Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Planner
+Get-MgPlannerPlanBucket -PlannerPlanId $plannerPlanId
+```
+
+This example shows how to use the Get-MgPlannerPlanBucket Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -35,7 +44,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -96,7 +105,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

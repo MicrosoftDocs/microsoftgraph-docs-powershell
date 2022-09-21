@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannerplandetail
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPlannerPlanDetail
 
 ## SYNOPSIS
-Update the navigation property details in planner
+Update the properties of **plannerplandetails** object.
 
 ## SYNTAX
 
@@ -39,9 +39,28 @@ Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the navigation property details in planner
+Update the properties of **plannerplandetails** object.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgPlannerPlanDetail Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Planner
+$params = @{
+	SharedWith = @{
+		"6463a5ce-2119-4198-9f2a-628761df4a62" = $true
+		"D95e6152-f683-4d78-9ff5-67ad180fea4a" = $false
+	}
+	CategoryDescriptions = @{
+		Category1 = "Indoors"
+		Category3 = $null
+	}
+}
+Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgPlannerPlanDetail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -233,7 +252,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanDetails1>`: plannerPlanDetails
+BODYPARAMETER <IMicrosoftGraphPlannerPlanDetails1>: plannerPlanDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>]`: plannerCategoryDescriptions
@@ -268,7 +287,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerPlanDetails1>`: plannerPlanDetails
   - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCategoryDescriptions
+CATEGORYDESCRIPTIONS <IMicrosoftGraphPlannerCategoryDescriptions>: plannerCategoryDescriptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Category1 <String>]`: The label associated with Category 1
   - `[Category10 <String>]`: The label associated with Category 10
@@ -296,7 +315,7 @@ CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCate
   - `[Category8 <String>]`: The label associated with Category 8
   - `[Category9 <String>]`: The label associated with Category 9
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta

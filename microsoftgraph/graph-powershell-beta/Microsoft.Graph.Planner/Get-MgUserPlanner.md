@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mguserplanner
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserPlanner
 
 ## SYNOPSIS
-Get planner from users
+Retrieve the properties and relationships of a plannerUser object.
+The returned properties include the user's favorite plans and recently viewed plans.
 
 ## SYNTAX
 
@@ -43,9 +44,20 @@ Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get planner from users
+Retrieve the properties and relationships of a plannerUser object.
+The returned properties include the user's favorite plans and recently viewed plans.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserPlanner Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Planner
+# A UPN can also be used as -UserId.
+Get-MgUserPlanner -UserId $userId
+```
+
+This example shows how to use the Get-MgUserPlanner Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -59,7 +71,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -136,7 +148,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -266,7 +278,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta

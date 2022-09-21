@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/new-mgplannerroster
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerRoster
 
 ## SYNOPSIS
-Create new navigation property to rosters for planner
+Create a new plannerRoster object.
 
 ## SYNTAX
 
@@ -25,9 +25,21 @@ New-MgPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Create new navigation property to rosters for planner
+Create a new plannerRoster object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgPlannerRoster Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Planner
+$params = @{
+	"@odata.type" = "#microsoft.graph.plannerRoster"
+}
+New-MgPlannerRoster -BodyParameter $params
+```
+
+This example shows how to use the New-MgPlannerRoster Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -158,7 +170,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerRoster>`: plannerRoster
+BODYPARAMETER <IMicrosoftGraphPlannerRoster>: plannerRoster
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Members <IMicrosoftGraphPlannerRosterMember[]>]`: Retrieves the members of the plannerRoster.
@@ -284,13 +296,13 @@ BODYPARAMETER `<IMicrosoftGraphPlannerRoster>`: plannerRoster
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
     - `[Title <String>]`: Required. Title of the plan.
 
-MEMBERS <IMicrosoftGraphPlannerRosterMember\[]>: Retrieves the members of the plannerRoster.
+MEMBERS <IMicrosoftGraphPlannerRosterMember[]>: Retrieves the members of the plannerRoster.
   - `[Id <String>]`: 
   - `[Roles <String[]>]`: Additional roles associated with the PlannerRosterMember, which determines permissions of the member in the plannerRoster. Currently there are no available roles to assign, and every member has full control over the contents of the plannerRoster.
   - `[TenantId <String>]`: Identifier of the tenant the user belongs to. Currently only the users from the same tenant can be added to a plannerRoster.
   - `[UserId <String>]`: Identifier of the user.
 
-PLANS <IMicrosoftGraphPlannerPlan1\[]>: Retrieves the plans contained by the plannerRoster.
+PLANS <IMicrosoftGraphPlannerPlan1[]>: Retrieves the plans contained by the plannerRoster.
   - `[Id <String>]`: 
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
     - `[Id <String>]`: 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerrostermember
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerRosterMember
 
 ## SYNOPSIS
-Get members from planner
+Retrieves the members of the plannerRoster.
 
 ## SYNTAX
 
@@ -32,9 +32,27 @@ Get-MgPlannerRosterMember -InputObject <IPlannerIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get members from planner
+Retrieves the members of the plannerRoster.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgPlannerRosterMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Planner
+Get-MgPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRosterMemberId $plannerRosterMemberId
+```
+
+This example shows how to use the Get-MgPlannerRosterMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgPlannerRosterMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Planner
+Get-MgPlannerRosterMember -PlannerRosterId $plannerRosterId
+```
+
+This example shows how to use the Get-MgPlannerRosterMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +66,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +143,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +271,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta
