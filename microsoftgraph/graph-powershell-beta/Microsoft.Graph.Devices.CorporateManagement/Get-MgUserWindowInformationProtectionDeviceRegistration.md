@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mguserwindowinformationprotectiondeviceregistration
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserWindowInformationProtectionDeviceRegistration
 
 ## SYNOPSIS
-Get windowsInformationProtectionDeviceRegistrations from users
+Zero or more WIP device registrations that belong to the user.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgUserWindowInformationProtectionDeviceRegistration -InputObject <IDevicesCo
 ```
 
 ## DESCRIPTION
-Get windowsInformationProtectionDeviceRegistrations from users
+Zero or more WIP device registrations that belong to the user.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -126,7 +126,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -254,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails

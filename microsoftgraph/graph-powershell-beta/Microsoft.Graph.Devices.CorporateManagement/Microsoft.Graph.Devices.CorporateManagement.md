@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: 26b79d2b-9e45-4ab6-ab9d-9c102ea99108
+Module Guid: fba2bc63-21f1-40e7-9712-66653640ca72
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,82 +12,83 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Devices.CorporateManagement Cmdlets
 ### [Get-MgOfficeClientConfiguration](Get-MgOfficeClientConfiguration.md)
-Get clientConfigurations from officeConfiguration
+List of office Client configuration.
 
 ### [Get-MgOfficeClientConfigurationAssignment](Get-MgOfficeClientConfigurationAssignment.md)
-Get assignments from officeConfiguration
+The list of group assignments for the policy.
 
 ### [Get-MgOfficeClientConfigurationPolicyPayload](Get-MgOfficeClientConfigurationPolicyPayload.md)
-Get policyPayload for the navigation property clientConfigurations from officeConfiguration
+Policy settings JSON string in binary format, these values cannot be changed by the user.
 
 ### [Get-MgOfficeClientConfigurationUserPreferencePayload](Get-MgOfficeClientConfigurationUserPreferencePayload.md)
-Get userPreferencePayload for the navigation property clientConfigurations from officeConfiguration
+Preference settings JSON string in binary format, these values can be overridden by the user.
 
 ### [Get-MgOfficeConfiguration](Get-MgOfficeConfiguration.md)
 Get officeConfiguration
 
 ### [Get-MgUserDeviceEnrollmentConfiguration](Get-MgUserDeviceEnrollmentConfiguration.md)
-Get deviceEnrollmentConfigurations from users
+Get enrollment configurations targeted to the user
 
 ### [Get-MgUserDeviceEnrollmentConfigurationAssignment](Get-MgUserDeviceEnrollmentConfigurationAssignment.md)
-Get assignments from users
+The list of group assignments for the device configuration profile
 
 ### [Get-MgUserDeviceManagementTroubleshootingEvent](Get-MgUserDeviceManagementTroubleshootingEvent.md)
-Get deviceManagementTroubleshootingEvents from users
+The list of troubleshooting events for this user.
 
 ### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
-Get managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
-Get managedDevices from users
+The managed devices associated with the user.
 
 ### [Get-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Get-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Get assignmentFilterEvaluationStatusDetails from users
+Managed device mobile app configuration states for this device.
 
 ### [Get-MgUserManagedDeviceCategory](Get-MgUserManagedDeviceCategory.md)
-Get deviceCategory from users
+Device category
 
 ### [Get-MgUserManagedDeviceCompliancePolicyState](Get-MgUserManagedDeviceCompliancePolicyState.md)
-Get deviceCompliancePolicyStates from users
+Device compliance policy states for this device.
 
 ### [Get-MgUserManagedDeviceConfigurationState](Get-MgUserManagedDeviceConfigurationState.md)
-Get deviceConfigurationStates from users
+Device configuration states for this device.
 
 ### [Get-MgUserManagedDeviceDetectedApp](Get-MgUserManagedDeviceDetectedApp.md)
-Get detectedApps from users
+All applications currently installed on the device
 
 ### [Get-MgUserManagedDeviceLogCollectionResponse](Get-MgUserManagedDeviceLogCollectionResponse.md)
-Get logCollectionRequests from users
+List of log collection requests
 
 ### [Get-MgUserManagedDeviceMobileAppConfigurationState](Get-MgUserManagedDeviceMobileAppConfigurationState.md)
-Get managedDeviceMobileAppConfigurationStates from users
+Managed device mobile app configuration states for this device.
 
 ### [Get-MgUserManagedDeviceSecurityBaselineState](Get-MgUserManagedDeviceSecurityBaselineState.md)
-Get securityBaselineStates from users
+Security baseline states for this device.
 
 ### [Get-MgUserManagedDeviceSecurityBaselineStateSettingState](Get-MgUserManagedDeviceSecurityBaselineStateSettingState.md)
-Get settingStates from users
+The security baseline state for different settings for a device
 
 ### [Get-MgUserManagedDeviceUser](Get-MgUserManagedDeviceUser.md)
-Get users from users
+The primary users associated with the managed device.
 
 ### [Get-MgUserManagedDeviceWindowProtectionState](Get-MgUserManagedDeviceWindowProtectionState.md)
-Get windowsProtectionState from users
+The device protection status.
+This property is read-only.
 
 ### [Get-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState](Get-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Get detectedMalwareState from users
+Device malware list
 
 ### [Get-MgUserMobileAppIntentAndState](Get-MgUserMobileAppIntentAndState.md)
-Get mobileAppIntentAndStates from users
+The list of troubleshooting events for this user.
 
 ### [Get-MgUserMobileAppTroubleshootingEvent](Get-MgUserMobileAppTroubleshootingEvent.md)
-Get mobileAppTroubleshootingEvents from users
+The list of mobile app troubleshooting events for this user.
 
 ### [Get-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Get appLogCollectionRequests from users
+The collection property of AppLogUploadRequest.
 
 ### [Get-MgUserWindowInformationProtectionDeviceRegistration](Get-MgUserWindowInformationProtectionDeviceRegistration.md)
-Get windowsInformationProtectionDeviceRegistrations from users
+Zero or more WIP device registrations that belong to the user.
 
 ### [Invoke-MgHasDeviceAppMgtAndroidManagedAppProtectionPayloadLink](Invoke-MgHasDeviceAppMgtAndroidManagedAppProtectionPayloadLink.md)
 Invoke action hasPayloadLinks
@@ -675,10 +676,10 @@ The collection property of AppLogUploadRequest.
 Invoke action assign
 
 ### [Set-MgOfficeClientConfigurationPolicyPayload](Set-MgOfficeClientConfigurationPolicyPayload.md)
-Update policyPayload for the navigation property clientConfigurations in officeConfiguration
+Policy settings JSON string in binary format, these values cannot be changed by the user.
 
 ### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update userPreferencePayload for the navigation property clientConfigurations in officeConfiguration
+Preference settings JSON string in binary format, these values can be overridden by the user.
 
 ### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
 Update media content for the navigation property clientConfigurations in officeConfiguration
