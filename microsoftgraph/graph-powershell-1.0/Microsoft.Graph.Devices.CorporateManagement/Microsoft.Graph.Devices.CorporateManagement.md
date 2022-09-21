@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: 26b79d2b-9e45-4ab6-ab9d-9c102ea99108
+Module Guid: fba2bc63-21f1-40e7-9712-66653640ca72
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,22 +12,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Devices.CorporateManagement Cmdlets
 ### [Get-MgUserDeviceManagementTroubleshootingEvent](Get-MgUserDeviceManagementTroubleshootingEvent.md)
-Get deviceManagementTroubleshootingEvents from users
+The list of troubleshooting events for this user.
 
 ### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
-Get managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
-Get managedDevices from users
+The managed devices associated with the user.
 
 ### [Get-MgUserManagedDeviceCategory](Get-MgUserManagedDeviceCategory.md)
-Get deviceCategory from users
+Device category
 
 ### [Get-MgUserManagedDeviceCompliancePolicyState](Get-MgUserManagedDeviceCompliancePolicyState.md)
-Get deviceCompliancePolicyStates from users
+Device compliance policy states for this device.
 
 ### [Get-MgUserManagedDeviceConfigurationState](Get-MgUserManagedDeviceConfigurationState.md)
-Get deviceConfigurationStates from users
+Device configuration states for this device.
 
 ### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp.md)
 Invoke action targetApps
