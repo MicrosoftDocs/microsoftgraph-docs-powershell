@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDomainFederationConfiguration
 
 ## SYNOPSIS
-Get federationConfiguration from domains
+Domain settings configured by a customer when federated with Azure AD.
+Supports $expand.
 
 ## SYNTAX
 
@@ -32,9 +33,33 @@ Get-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
 ```
 
 ## DESCRIPTION
-Get federationConfiguration from domains
+Domain settings configured by a customer when federated with Azure AD.
+Supports $expand.
 
 ## EXAMPLES
+
+### Example 1: Get the federation settings for a federated domain
+```powershell
+Get-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' | Format-List  
+
+ActiveSignInUri                       : https://sts.deverett.info/adfs/services/trust/2005/usernamemixed 
+DisplayName                           : Contoso 
+FederatedIdpMfaBehavior               : rejectMfaByFederatedIdp 
+Id                                    : 2a8ce608-bb34-473f-9e0f-f373ee4cbc5a 
+IsSignedAuthenticationRequestRequired : 
+IssuerUri                             : http://contoso.com/adfs/services/trust/ 
+MetadataExchangeUri                   : https://sts.contoso.com/adfs/services/trust/mex 
+NextSigningCertificate                : MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9 
+PassiveSignInUri                      : https://sts.contoso.com/adfs/ls/ 
+PreferredAuthenticationProtocol       : wsFed 
+PromptLoginBehavior                   :  
+SignOutUri                            : https://sts.deverett.info/adfs/ls/ 
+SigningCertificate                    : MIIC3jCCAcagAwIBAgIQFsO0R8deG4h 
+SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphSigningCertificateUpdateStatus 
+AdditionalProperties                    : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains('contoso.com')/federationConfiguration/$entity]}
+```
+
+This examples retrieves the federation settings for the specified domain.
 
 ## PARAMETERS
 
@@ -48,7 +73,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -155,7 +180,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +278,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet

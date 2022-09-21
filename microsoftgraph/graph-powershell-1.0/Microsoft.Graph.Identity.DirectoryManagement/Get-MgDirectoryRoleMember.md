@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemember
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgDirectoryRoleMember
 
 ## SYNOPSIS
-Get members from directoryRoles
+Users that are members of this directory role.
+HTTP Methods: GET, POST, DELETE.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +23,11 @@ Get-MgDirectoryRoleMember -DirectoryRoleId <String> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get members from directoryRoles
+Users that are members of this directory role.
+HTTP Methods: GET, POST, DELETE.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -50,7 +58,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -126,7 +134,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

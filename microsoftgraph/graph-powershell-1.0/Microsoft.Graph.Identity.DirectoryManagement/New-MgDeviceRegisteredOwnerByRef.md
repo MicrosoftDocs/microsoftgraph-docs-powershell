@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregisteredownerbyref
@@ -41,6 +41,18 @@ Create new navigation property ref to registeredOwners for devices
 
 ## EXAMPLES
 
+### Example 1: Using the New-MgDeviceRegisteredOwnerByRef Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	"@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+}
+New-MgDeviceRegisteredOwnerByRef -DeviceId $deviceId -BodyParameter $params
+```
+
+This example shows how to use the New-MgDeviceRegisteredOwnerByRef Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -60,6 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: Hashtable
@@ -169,7 +182,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+BODYPARAMETER <IReferenceCreate>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[OdataId <String>]`: 
+
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet

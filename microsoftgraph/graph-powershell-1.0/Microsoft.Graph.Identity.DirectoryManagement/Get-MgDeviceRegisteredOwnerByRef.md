@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredownerbyref
@@ -8,7 +8,12 @@ schema: 2.0.0
 # Get-MgDeviceRegisteredOwnerByRef
 
 ## SYNOPSIS
-Get ref of registeredOwners from devices
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -18,7 +23,12 @@ Get-MgDeviceRegisteredOwnerByRef -DeviceId <String> [-Filter <String>] [-Search 
 ```
 
 ## DESCRIPTION
-Get ref of registeredOwners from devices
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -34,7 +44,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -95,7 +105,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgcontactmembergroup
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Confirm-MgContactMemberGroup
 
 ## SYNOPSIS
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ## SYNTAX
 
@@ -39,7 +43,11 @@ Confirm-MgContactMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ## EXAMPLES
 
@@ -172,11 +180,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupIds <String[]>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDomain
 
 ## SYNOPSIS
-Update domain
+Update the properties of domain object.
 
 ## SYNTAX
 
@@ -50,9 +50,25 @@ Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyParamet
 ```
 
 ## DESCRIPTION
-Update domain
+Update the properties of domain object.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgDomain Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	IsDefault = $true
+	SupportedServices = @(
+		"Email"
+		"OfficeCommunicationsOnline"
+	)
+}
+Update-MgDomain -DomainId $domainId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgDomain Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -158,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -FederationConfiguration
-Domain settings configured by customer when federated with Azure AD.
+Domain settings configured by a customer when federated with Azure AD.
 Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for FEDERATIONCONFIGURATION properties and create a hash table.
 
@@ -402,7 +418,7 @@ Accept wildcard characters: False
 
 ### -SupportedServices
 The capabilities assigned to the domain.
-Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline,SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
+Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
 The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer.
 Not nullable.
 
@@ -486,7 +502,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDomain1>`: domain
+BODYPARAMETER <IMicrosoftGraphDomain1>: domain
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AuthenticationType <String>]`: Indicates the configured authentication type for the domain. The value is either Managed or Federated. Managed indicates a cloud managed domain where Azure AD performs user authentication. Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. This property is read-only and is not nullable.
@@ -494,7 +510,7 @@ BODYPARAMETER `<IMicrosoftGraphDomain1>`: domain
   - `[DomainNameReferences <IMicrosoftGraphDirectoryObject[]>]`: The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports $expand and $filter by the OData type of objects returned. For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
     - `[Id <String>]`: 
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[FederationConfiguration <IMicrosoftGraphInternalDomainFederation[]>]`: Domain settings configured by customer when federated with Azure AD. Supports $expand.
+  - `[FederationConfiguration <IMicrosoftGraphInternalDomainFederation[]>]`: Domain settings configured by a customer when federated with Azure AD. Supports $expand.
     - `[IssuerUri <String>]`: Issuer URI of the federation server.
     - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
     - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
@@ -533,14 +549,14 @@ BODYPARAMETER `<IMicrosoftGraphDomain1>`: domain
     - `[LastActionDateTime <DateTime?>]`: Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
     - `[Operation <String>]`: Type of asynchronous operation. The values can be ForceDelete or Verification
     - `[Status <String>]`: Current status of the operation.  Scheduled - Operation has been scheduled but has not started.  InProgress - Task has started and is in progress.  Failed - Operation has failed.
-  - `[SupportedServices <String[]>]`: The capabilities assigned to the domain. Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline,SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune. The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer. Not nullable.
+  - `[SupportedServices <String[]>]`: The capabilities assigned to the domain. Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune. The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer. Not nullable.
   - `[VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>]`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports $expand.
 
-DOMAINNAMEREFERENCES <IMicrosoftGraphDirectoryObject\[]>: The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports $expand and $filter by the OData type of objects returned. For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+DOMAINNAMEREFERENCES <IMicrosoftGraphDirectoryObject[]>: The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports $expand and $filter by the OData type of objects returned. For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation\[]>: Domain settings configured by customer when federated with Azure AD. Supports $expand.
+FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation[]>: Domain settings configured by a customer when federated with Azure AD. Supports $expand.
   - `[IssuerUri <String>]`: Issuer URI of the federation server.
   - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
   - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
@@ -559,7 +575,7 @@ FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation\[]>: Domain set
     - `[CertificateUpdateResult <String>]`: Status of the last certificate update. Read-only. For a list of statuses, see certificateUpdateResult status.
     - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet
@@ -594,7 +610,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: key: id of usageRight
   - `[UserId <String>]`: key: id of user
 
-SERVICECONFIGURATIONRECORDS <IMicrosoftGraphDomainDnsRecord\[]>: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports $expand.
+SERVICECONFIGURATIONRECORDS <IMicrosoftGraphDomainDnsRecord[]>: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports $expand.
   - `[Id <String>]`: 
   - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
   - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
@@ -602,13 +618,13 @@ SERVICECONFIGURATIONRECORDS <IMicrosoftGraphDomainDnsRecord\[]>: DNS records the
   - `[SupportedService <String>]`: Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
   - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable.
 
-STATE `<IMicrosoftGraphDomainState>`: domainState
+STATE <IMicrosoftGraphDomainState>: domainState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastActionDateTime <DateTime?>]`: Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
   - `[Operation <String>]`: Type of asynchronous operation. The values can be ForceDelete or Verification
   - `[Status <String>]`: Current status of the operation.  Scheduled - Operation has been scheduled but has not started.  InProgress - Task has started and is in progress.  Failed - Operation has failed.
 
-VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord\[]>: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports $expand.
+VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord[]>: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports $expand.
   - `[Id <String>]`: 
   - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
   - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
