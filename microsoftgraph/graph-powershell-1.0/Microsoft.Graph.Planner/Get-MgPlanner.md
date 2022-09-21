@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplanner
@@ -20,6 +20,15 @@ Get-MgPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParame
 Get planner
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgPlanner Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Planner
+Get-MgPlanner
+```
+
+This example shows how to use the Get-MgPlanner Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

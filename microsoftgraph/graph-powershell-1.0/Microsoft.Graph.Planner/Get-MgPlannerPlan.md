@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerplan
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgPlannerPlan
 
 ## SYNOPSIS
-Get plans from planner
+Read-only.
+Nullable.
+Returns a collection of the specified plans
 
 ## SYNTAX
 
@@ -32,9 +34,29 @@ Get-MgPlannerPlan -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get plans from planner
+Read-only.
+Nullable.
+Returns a collection of the specified plans
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgPlannerPlan Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Planner
+Get-MgPlannerPlan -PlannerPlanId $plannerPlanId
+```
+
+This example shows how to use the Get-MgPlannerPlan Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgPlannerPlan Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Planner
+Get-MgPlannerPlan
+```
+
+This example shows how to use the Get-MgPlannerPlan Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +70,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +147,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -238,7 +260,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta
