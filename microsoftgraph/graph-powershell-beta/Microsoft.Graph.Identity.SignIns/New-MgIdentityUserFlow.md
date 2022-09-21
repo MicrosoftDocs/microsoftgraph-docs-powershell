@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityuserflow
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityUserFlow
 
 ## SYNOPSIS
-Create new navigation property to userFlows for identity
+Create a new userFlow object.
 
 ## SYNTAX
 
@@ -25,9 +25,23 @@ New-MgIdentityUserFlow -BodyParameter <IMicrosoftGraphIdentityUserFlow> [-WhatIf
 ```
 
 ## DESCRIPTION
-Create new navigation property to userFlows for identity
+Create a new userFlow object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgIdentityUserFlow Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Id = "Pol1"
+	UserFlowType = "signUpOrSignIn"
+	UserFlowTypeVersion = 1
+}
+New-MgIdentityUserFlow -BodyParameter $params
+```
+
+This example shows how to use the New-MgIdentityUserFlow Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -156,7 +170,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityUserFlow>`: identityUserFlow
+BODYPARAMETER <IMicrosoftGraphIdentityUserFlow>: identityUserFlow
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[UserFlowType <String>]`: userFlowType

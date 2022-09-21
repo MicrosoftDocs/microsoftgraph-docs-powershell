@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentitycontinuouaccessevaluationpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgIdentityContinuouAccessEvaluationPolicy
 
 ## SYNOPSIS
-Update the navigation property continuousAccessEvaluationPolicy in identity
+Update the properties of a continuousAccessEvaluationPolicy object.
 
 ## SYNTAX
 
@@ -27,9 +27,22 @@ Update-MgIdentityContinuouAccessEvaluationPolicy
 ```
 
 ## DESCRIPTION
-Update the navigation property continuousAccessEvaluationPolicy in identity
+Update the properties of a continuousAccessEvaluationPolicy object.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgIdentityContinuouAccessEvaluationPolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	"@odata.type" = "#microsoft.graph.continuousAccessEvaluationPolicy"
+	Migrate = $true
+}
+Update-MgIdentityContinuouAccessEvaluationPolicy -BodyParameter $params
+```
+
+This example shows how to use the Update-MgIdentityContinuouAccessEvaluationPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -240,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphContinuousAccessEvaluationPolicy>`: continuousAccessEvaluationPolicy
+BODYPARAMETER <IMicrosoftGraphContinuousAccessEvaluationPolicy>: continuousAccessEvaluationPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Description <String>]`: Continuous access evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes. Read-only.

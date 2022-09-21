@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mguploadtrustframeworkkeysetsecret
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgUploadTrustFrameworkKeySetSecret
 
 ## SYNOPSIS
-Invoke action uploadSecret
+Upload a plain text secret to a trustFrameworkKeyset.
+Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider.
+his method returns trustFrameworkKey.
 
 ## SYNTAX
 
@@ -40,9 +42,26 @@ Invoke-MgUploadTrustFrameworkKeySetSecret -InputObject <IIdentitySignInsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action uploadSecret
+Upload a plain text secret to a trustFrameworkKeyset.
+Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider.
+his method returns trustFrameworkKey.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgUploadTrustFrameworkKeySetSecret Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Use = "use-value"
+	K = "application-secret-to-be-uploaded"
+	Nbf = 1508969811
+	Exp = 1508973711
+}
+Invoke-MgUploadTrustFrameworkKeySetSecret -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgUploadTrustFrameworkKeySetSecret Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -218,20 +237,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Exp <Int64?>]`: 
   - `[K <String>]`: 
   - `[Nbf <Int64?>]`: 
   - `[Use <String>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
+  - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: key: id of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[AuthenticationMethodModeDetailId <String>]`: key: id of authenticationMethodModeDetail
+  - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
+  - `[AuthenticationStrengthPolicyId <String>]`: key: id of authenticationStrengthPolicy
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
   - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
   - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow

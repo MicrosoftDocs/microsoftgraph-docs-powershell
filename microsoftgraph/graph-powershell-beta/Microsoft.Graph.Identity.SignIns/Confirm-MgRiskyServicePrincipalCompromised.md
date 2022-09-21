@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyserviceprincipalcompromised
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Confirm-MgRiskyServicePrincipalCompromised
 
 ## SYNOPSIS
-Invoke action confirmCompromised
+Confirm one or more riskyServicePrincipal objects as compromised.
+This action sets the targeted service principal account's risk level to `high`.
+When the risk level of the service principal is confirmed as compromised, the service principal object is disabled and its **disabledByMicrosoftStatus** property is updated.
 
 ## SYNTAX
 
@@ -26,9 +28,25 @@ Confirm-MgRiskyServicePrincipalCompromised
 ```
 
 ## DESCRIPTION
-Invoke action confirmCompromised
+Confirm one or more riskyServicePrincipal objects as compromised.
+This action sets the targeted service principal account's risk level to `high`.
+When the risk level of the service principal is confirmed as compromised, the service principal object is disabled and its **disabledByMicrosoftStatus** property is updated.
 
 ## EXAMPLES
+
+### Example 1: Using the Confirm-MgRiskyServicePrincipalCompromised Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	ServicePrincipalIds = @(
+		"9089a539-a539-9089-39a5-899039a58990"
+	)
+}
+Confirm-MgRiskyServicePrincipalCompromised -BodyParameter $params
+```
+
+This example shows how to use the Confirm-MgRiskyServicePrincipalCompromised Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -142,7 +160,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ServicePrincipalIds <String[]>]`: 
 

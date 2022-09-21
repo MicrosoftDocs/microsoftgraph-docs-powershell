@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicymobiledevicemanagementpolicyincludedgroupbyref
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef
 
 ## SYNOPSIS
-Get ref of includedGroups from policies
+Get the list of groups that are included in a mobile app management policy.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPo
 ```
 
 ## DESCRIPTION
-Get ref of includedGroups from policies
+Get the list of groups that are included in a mobile app management policy.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -96,7 +96,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

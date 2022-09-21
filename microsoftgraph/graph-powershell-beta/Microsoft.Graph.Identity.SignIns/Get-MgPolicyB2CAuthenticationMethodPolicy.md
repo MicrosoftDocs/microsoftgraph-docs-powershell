@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyb2cauthenticationmethodpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyB2CAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Get b2cAuthenticationMethodsPolicy from policies
+Read the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## SYNTAX
 
@@ -18,9 +18,18 @@ Get-MgPolicyB2CAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Propert
 ```
 
 ## DESCRIPTION
-Get b2cAuthenticationMethodsPolicy from policies
+Read the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgPolicyB2CAuthenticationMethodPolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgPolicyB2CAuthenticationMethodPolicy
+```
+
+This example shows how to use the Get-MgPolicyB2CAuthenticationMethodPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

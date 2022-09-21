@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/test-mginformationprotectionpolicylabelclassificationresult
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Test-MgInformationProtectionPolicyLabelClassificationResult
 
 ## SYNOPSIS
-Invoke action evaluateClassificationResults
+Using classification results, compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
+This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
+To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
+The API returns an informationProtectionAction that contains one of more of the following:
 
 ## SYNTAX
 
@@ -27,9 +30,38 @@ Test-MgInformationProtectionPolicyLabelClassificationResult
 ```
 
 ## DESCRIPTION
-Invoke action evaluateClassificationResults
+Using classification results, compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
+This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
+To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
+The API returns an informationProtectionAction that contains one of more of the following:
 
 ## EXAMPLES
+
+### Example 1: Using the Test-MgInformationProtectionPolicyLabelClassificationResult Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	ContentInfo = @{
+		"@odata.type" = "#microsoft.graph.contentInfo"
+		"Format@odata.type" = "#microsoft.graph.contentFormat"
+		Format = "default"
+		Identifier = $null
+		"State@odata.type" = "#microsoft.graph.contentState"
+		State = "rest"
+	}
+	ClassificationResults = @(
+		@{
+			SensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
+			Count = 4
+			ConfidenceLevel = 75
+		}
+	)
+}
+Test-MgInformationProtectionPolicyLabelClassificationResult -BodyParameter $params
+```
+
+This example shows how to use the Test-MgInformationProtectionPolicyLabelClassificationResult Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -145,7 +177,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsLeqqhcInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsLeqqhcInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClassificationResults <IMicrosoftGraphClassificationResult[]>]`: 
     - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
@@ -160,12 +192,12 @@ BODYPARAMETER `<IPathsLeqqhcInformationprotectionPolicyLabelsMicrosoftGraphEvalu
       - `[Value <String>]`: Value for this key-value pair
     - `[State <String>]`: contentState
 
-CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult\[]>: .
+CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult[]>: .
   - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
   - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
   - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.

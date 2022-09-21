@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyb2cauthenticationmethodpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyB2CAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Update the navigation property b2cAuthenticationMethodsPolicy in policies
+Update the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Update-MgPolicyB2CAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphB2CA
 ```
 
 ## DESCRIPTION
-Update the navigation property b2cAuthenticationMethodsPolicy in policies
+Update the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## EXAMPLES
 
@@ -187,7 +187,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphB2CAuthenticationMethodsPolicy>`: b2cAuthenticationMethodsPolicy
+BODYPARAMETER <IMicrosoftGraphB2CAuthenticationMethodsPolicy>: b2cAuthenticationMethodsPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[IsEmailPasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using email if the email and password authentication method is enabled.

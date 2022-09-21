@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2cuserflowidentityproviderbyref
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityB2CUserFlowIdentityProviderByRef
 
 ## SYNOPSIS
-Get ref of identityProviders from identity
+Get the identity providers in a b2cIdentityUserFlow object.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <String> [
 ```
 
 ## DESCRIPTION
-Get ref of identityProviders from identity
+Get the identity providers in a b2cIdentityUserFlow object.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -96,7 +96,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

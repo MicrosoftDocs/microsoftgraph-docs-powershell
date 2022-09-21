@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgtrustframeworkkeyset
@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgTrustFrameworkKeySet
 
 ## SYNOPSIS
-Create new navigation property to keySets for trustFramework
+Create a new trustFrameworkKeySet.
+The ID of the **trustFrameworkKeySet** is expected in the create request; however, it can be modified by the service.
+The modified ID will be available in the response and in the location header.
 
 ## SYNTAX
 
@@ -25,9 +27,57 @@ New-MgTrustFrameworkKeySet -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> 
 ```
 
 ## DESCRIPTION
-Create new navigation property to keySets for trustFramework
+Create a new trustFrameworkKeySet.
+The ID of the **trustFrameworkKeySet** is expected in the create request; however, it can be modified by the service.
+The modified ID will be available in the response and in the location header.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgTrustFrameworkKeySet Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Id = "keyset1"
+	Keys = @(
+		@{
+			K = "k-value"
+			X5c = @(
+				"x5c-value"
+			)
+			X5t = "x5t-value"
+			Kty = "kty-value"
+			Use = "use-value"
+			Exp = 99
+			Nbf = 99
+			Kid = "kid-value"
+			E = "e-value"
+			N = "n-value"
+			D = "d-value"
+			P = "p-value"
+			Q = "q-value"
+			Dp = "dp-value"
+			Dq = "dq-value"
+			Qi = "qi-value"
+		}
+	)
+}
+New-MgTrustFrameworkKeySet -BodyParameter $params
+```
+
+This example shows how to use the New-MgTrustFrameworkKeySet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the New-MgTrustFrameworkKeySet Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Id = "keyset1"
+}
+New-MgTrustFrameworkKeySet -BodyParameter $params
+```
+
+This example shows how to use the New-MgTrustFrameworkKeySet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -142,7 +192,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTrustFrameworkKeySet>`: trustFrameworkKeySet
+BODYPARAMETER <IMicrosoftGraphTrustFrameworkKeySet>: trustFrameworkKeySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Keys <IMicrosoftGraphTrustFrameworkKey[]>]`: A collection of the keys.
@@ -163,7 +213,7 @@ BODYPARAMETER `<IMicrosoftGraphTrustFrameworkKeySet>`: trustFrameworkKeySet
     - `[X5C <String[]>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
     - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate RFC 5280.
 
-KEYS <IMicrosoftGraphTrustFrameworkKey\[]>: A collection of the keys.
+KEYS <IMicrosoftGraphTrustFrameworkKey[]>: A collection of the keys.
   - `[D <String>]`: RSA Key - private exponent. Field cannot be read back.
   - `[Dp <String>]`: RSA Key - first exponent. Field cannot be read back.
   - `[Dq <String>]`: RSA Key - second exponent. Field cannot be read back.
