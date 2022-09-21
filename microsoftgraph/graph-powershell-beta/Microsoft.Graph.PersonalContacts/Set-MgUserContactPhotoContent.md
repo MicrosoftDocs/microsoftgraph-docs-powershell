@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactphotocontent
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Set-MgUserContactPhotoContent
 
 ## SYNOPSIS
-The user's profile photo.
-Read-only.
+Update media content for the navigation property photo in users
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Set-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> [-BodyPar
 ```
 
 ## DESCRIPTION
-The user's profile photo.
-Read-only.
+Update media content for the navigation property photo in users
 
 ## EXAMPLES
 
@@ -176,7 +174,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   - `[ContactFolderId <String>]`: key: id of contactFolder
   - `[ContactFolderId1 <String>]`: key: id of contactFolder
   - `[ContactId <String>]`: key: id of contact
