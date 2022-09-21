@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mgsitetermstore
@@ -306,7 +306,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphTermStore1>: store
+BODYPARAMETER `<IMicrosoftGraphTermStore1>`: store
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DefaultLanguageTag <String>]`: Default language of the term store.
@@ -353,7 +353,7 @@ BODYPARAMETER <IMicrosoftGraphTermStore1>: store
   - `[LanguageTags <String[]>]`: List of languages for the term store.
   - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store. This relationship can only be used to load a specific term set.
 
-GROUPS <IMicrosoftGraphTermStoreGroup1[]>: Collection of all groups available in the term store.
+GROUPS <IMicrosoftGraphTermStoreGroup1\[]>: Collection of all groups available in the term store.
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
   - `[Description <String>]`: Description that gives details on the term usage.
@@ -394,7 +394,7 @@ GROUPS <IMicrosoftGraphTermStoreGroup1[]>: Collection of all groups available in
     - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
     - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -431,7 +431,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-SETS <IMicrosoftGraphTermStoreSet[]>: Collection of all sets available in the term store. This relationship can only be used to load a specific term set.
+SETS <IMicrosoftGraphTermStoreSet\[]>: Collection of all sets available in the term store. This relationship can only be used to load a specific term set.
   - `[Id <String>]`: 
   - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children terms of set in term [store].
     - `[Id <String>]`: 
