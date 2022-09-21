@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-Create new navigation property to staffMembers for solutions
+Create a new bookingStaffMember in the specified bookingBusiness.
 
 ## SYNTAX
 
@@ -37,9 +37,95 @@ New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Create new navigation property to staffMembers for solutions
+Create a new bookingStaffMember in the specified bookingBusiness.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgBookingBusinessStaffMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Bookings
+$params = @{
+	"@odata.type" = "#microsoft.graph.bookingStaffMember"
+	DisplayName = "Dana Swope"
+	EmailAddress = "danas@contoso.com"
+	"Role@odata.type" = "#microsoft.graph.bookingStaffRole"
+	Role = "externalGuest"
+	TimeZone = "America/Chicago"
+	UseBusinessHours = $true
+	"WorkingHours@odata.type" = "#Collection(microsoft.graph.bookingWorkHours)"
+	WorkingHours = @(
+		@{
+			"@odata.type" = "#microsoft.graph.bookingWorkHours"
+			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
+			Day = "monday"
+			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+			TimeSlots = @(
+				@{
+					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
+					EndTime = "17:00:00.0000000"
+					StartTime = "08:00:00.0000000"
+				}
+			)
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.bookingWorkHours"
+			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
+			Day = "tuesday"
+			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+			TimeSlots = @(
+				@{
+					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
+					EndTime = "17:00:00.0000000"
+					StartTime = "08:00:00.0000000"
+				}
+			)
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.bookingWorkHours"
+			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
+			Day = "wednesday"
+			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+			TimeSlots = @(
+				@{
+					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
+					EndTime = "17:00:00.0000000"
+					StartTime = "08:00:00.0000000"
+				}
+			)
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.bookingWorkHours"
+			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
+			Day = "thursday"
+			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+			TimeSlots = @(
+				@{
+					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
+					EndTime = "17:00:00.0000000"
+					StartTime = "08:00:00.0000000"
+				}
+			)
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.bookingWorkHours"
+			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
+			Day = "friday"
+			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+			TimeSlots = @(
+				@{
+					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
+					EndTime = "17:00:00.0000000"
+					StartTime = "08:00:00.0000000"
+				}
+			)
+		}
+	)
+}
+New-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BodyParameter $params
+```
+
+This example shows how to use the New-MgBookingBusinessStaffMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -169,7 +255,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency

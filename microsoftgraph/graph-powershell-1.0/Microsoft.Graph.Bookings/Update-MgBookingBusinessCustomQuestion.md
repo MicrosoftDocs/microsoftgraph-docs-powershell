@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomquestion
@@ -42,6 +42,22 @@ Update-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 Update the navigation property customQuestions in solutions
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgBookingBusinessCustomQuestion Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Bookings
+$params = @{
+	"@odata.type" = "#microsoft.graph.bookingCustomQuestion"
+	DisplayName = "What is your age?"
+	AnswerInputType = "text"
+	AnswerOptions = @(
+	)
+}
+Update-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgBookingBusinessCustomQuestion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -137,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of this entity.
+The question.
 
 ```yaml
 Type: String
@@ -247,14 +263,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphBookingCustomQuestion>`: Represents a custom question of the business.
+BODYPARAMETER <IMicrosoftGraphBookingCustomQuestion>: Represents a custom question of the business.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AnswerInputType <String>]`: answerInputType
   - `[AnswerOptions <String[]>]`: List of possible answer values.
-  - `[DisplayName <String>]`: Display name of this entity.
+  - `[DisplayName <String>]`: The question.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency

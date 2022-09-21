@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/publish-mgbookingbusiness
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Publish-MgBookingBusiness
 
 ## SYNOPSIS
-Invoke action publish
+Make the scheduling page of a business available to external customers.
+Set the **isPublished** property to `true`, and the **publicUrl** property to the URL of the scheduling page.
 
 ## SYNTAX
 
@@ -24,9 +25,19 @@ Publish-MgBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf]
 ```
 
 ## DESCRIPTION
-Invoke action publish
+Make the scheduling page of a business available to external customers.
+Set the **isPublished** property to `true`, and the **publicUrl** property to the URL of the scheduling page.
 
 ## EXAMPLES
+
+### Example 1: Using the Publish-MgBookingBusiness Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Bookings
+Publish-MgBookingBusiness -BookingBusinessId $bookingBusinessId
+```
+
+This example shows how to use the Publish-MgBookingBusiness Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -125,7 +136,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
