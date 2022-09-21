@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryObject
 
 ## SYNOPSIS
-Get directoryObject
+Retrieve the properties and relationships of a directoryObject object.
 
 ## SYNTAX
 
@@ -32,9 +32,18 @@ Get-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get directoryObject
+Retrieve the properties and relationships of a directoryObject object.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgDirectoryObject Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DirectoryObjects
+Get-MgDirectoryObject -DirectoryObjectId $directoryObjectId
+```
+
+This example shows how to use the Get-MgDirectoryObject Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +57,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -156,7 +165,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -254,7 +263,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
+INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
 
 ## RELATED LINKS

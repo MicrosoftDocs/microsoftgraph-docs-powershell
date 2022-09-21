@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryObjectAvailableExtensionProperty
 
 ## SYNOPSIS
-Invoke action getAvailableExtensionProperties
+Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
+The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
 
 ## SYNTAX
 
@@ -26,9 +27,19 @@ Get-MgDirectoryObjectAvailableExtensionProperty
 ```
 
 ## DESCRIPTION
-Invoke action getAvailableExtensionProperties
+Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
+The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgDirectoryObjectAvailableExtensionProperty Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DirectoryObjects
+Get-MgDirectoryObjectAvailableExtensionProperty
+```
+
+This example shows how to use the Get-MgDirectoryObjectAvailableExtensionProperty Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -127,7 +138,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsSyncedFromOnPremises <Boolean?>]`: 
 
