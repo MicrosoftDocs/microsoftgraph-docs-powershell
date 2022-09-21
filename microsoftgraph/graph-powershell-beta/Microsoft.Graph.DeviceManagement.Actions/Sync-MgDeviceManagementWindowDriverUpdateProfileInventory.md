@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/sync-mgdevicemanagementwindowdriverupdateprofileinventory
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Sync-MgDeviceManagementWindowDriverUpdateProfileInventory
 
 ## SYNOPSIS
-Invoke action syncInventory
+Sync the driver inventory of a WindowsDriverUpdateProfile.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Sync-MgDeviceManagementWindowDriverUpdateProfileInventory -InputObject <IDeviceM
 ```
 
 ## DESCRIPTION
-Invoke action syncInventory
+Sync the driver inventory of a WindowsDriverUpdateProfile.
 
 ## EXAMPLES
 
@@ -126,7 +126,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

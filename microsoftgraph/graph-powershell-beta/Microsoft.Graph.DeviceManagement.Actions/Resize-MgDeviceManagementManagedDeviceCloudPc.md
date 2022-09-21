@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/resize-mgdevicemanagementmanageddevicecloudpc
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Resize-MgDeviceManagementManagedDeviceCloudPc
 
 ## SYNOPSIS
-Invoke action resizeCloudPc
+Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
 ## SYNTAX
 
@@ -40,9 +40,21 @@ Resize-MgDeviceManagementManagedDeviceCloudPc -InputObject <IDeviceManagementAct
 ```
 
 ## DESCRIPTION
-Invoke action resizeCloudPc
+Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
 ## EXAMPLES
+
+### Example 1: Using the Resize-MgDeviceManagementManagedDeviceCloudPc Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+$params = @{
+	TargetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0"
+}
+Resize-MgDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId -BodyParameter $params
+```
+
+This example shows how to use the Resize-MgDeviceManagementManagedDeviceCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -188,11 +200,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Xt2Z82DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Xt2Z82DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TargetServicePlanId <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

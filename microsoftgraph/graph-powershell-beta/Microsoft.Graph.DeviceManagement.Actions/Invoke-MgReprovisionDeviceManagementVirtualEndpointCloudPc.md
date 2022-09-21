@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreprovisiondevicemanagementvirtualendpointcloudpc
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc
 
 ## SYNOPSIS
-Invoke action reprovision
+Reprovision a specific Cloud PC.
 
 ## SYNTAX
 
@@ -41,9 +41,22 @@ Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Invoke action reprovision
+Reprovision a specific Cloud PC.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+$params = @{
+	UserAccountType = "administrator"
+	OsVersion = "windows10"
+}
+Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -204,12 +217,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OSVersion <String>]`: cloudPcOperatingSystem
   - `[UserAccountType <String>]`: cloudPcUserAccountType
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

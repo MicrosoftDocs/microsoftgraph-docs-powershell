@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementnotificationmessagetemplatetestmessage
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Send-MgDeviceManagementNotificationMessageTemplateTestMessage
 
 ## SYNOPSIS
-Invoke action sendTestMessage
+Sends test message using the specified notificationMessageTemplate in the default locale
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Send-MgDeviceManagementNotificationMessageTemplateTestMessage -InputObject <IDev
 ```
 
 ## DESCRIPTION
-Invoke action sendTestMessage
+Sends test message using the specified notificationMessageTemplate in the default locale
 
 ## EXAMPLES
 
@@ -126,7 +126,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

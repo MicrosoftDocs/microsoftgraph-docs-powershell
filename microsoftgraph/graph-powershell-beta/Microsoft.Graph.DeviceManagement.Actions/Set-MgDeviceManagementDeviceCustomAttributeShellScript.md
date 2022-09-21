@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdevicecustomattributeshellscript
@@ -210,7 +210,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDevicecustomattributeshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDevicecustomattributeshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceManagementScriptAssignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]`: 
     - `[Id <String>]`: 
@@ -222,18 +222,19 @@ BODYPARAMETER `<IPathsS7QkhtDevicemanagementDevicecustomattributeshellscriptsDev
     - `[Id <String>]`: 
     - `[TargetGroupId <String>]`: The Id of the Azure Active Directory group we are targeting the script to.
 
-DEVICEMANAGEMENTSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptAssignment\[]>: .
+DEVICEMANAGEMENTSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptAssignment[]>: .
   - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-DEVICEMANAGEMENTSCRIPTGROUPASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptGroupAssignment\[]>: .
+DEVICEMANAGEMENTSCRIPTGROUPASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>: .
   - `[Id <String>]`: 
   - `[TargetGroupId <String>]`: The Id of the Azure Active Directory group we are targeting the script to.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

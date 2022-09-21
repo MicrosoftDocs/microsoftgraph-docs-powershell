@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementvirtualendpointonpremisconnectionaddomainpassword
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
 
 ## SYNOPSIS
-Invoke action updateAdDomainPassword
+Update the Active Directory domain password for a cloudPcOnPremisesConnection object.
+This API is supported when the type of the **cloudPcOnPremisesConnection** object is `hybridAzureADJoin`.
 
 ## SYNTAX
 
@@ -43,9 +44,22 @@ Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
 ```
 
 ## DESCRIPTION
-Invoke action updateAdDomainPassword
+Update the Active Directory domain password for a cloudPcOnPremisesConnection object.
+This API is supported when the type of the **cloudPcOnPremisesConnection** object is `hybridAzureADJoin`.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+$params = @{
+	AdDomainPassword = "AdDomainPassword value"
+}
+Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -191,11 +205,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdDomainPassword <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

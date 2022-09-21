@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdevicecompliancescript
@@ -192,7 +192,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQg6Va1DevicemanagementDevicecompliancescriptsDevicecompliancescriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQg6Va1DevicemanagementDevicecompliancescriptsDevicecompliancescriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceHealthScriptAssignments <IMicrosoftGraphDeviceHealthScriptAssignment[]>]`: 
     - `[Id <String>]`: 
@@ -205,7 +205,7 @@ BODYPARAMETER `<IPathsQg6Va1DevicemanagementDevicecompliancescriptsDevicecomplia
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-DEVICEHEALTHSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceHealthScriptAssignment\[]>: .
+DEVICEHEALTHSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceHealthScriptAssignment[]>: .
   - `[Id <String>]`: 
   - `[RunRemediationScript <Boolean?>]`: Determine whether we want to run detection script only or run both detection script and remediation script
   - `[RunSchedule <IMicrosoftGraphDeviceHealthScriptRunSchedule>]`: Base type of Device health script run schedule.
@@ -216,7 +216,8 @@ DEVICEHEALTHSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceHealthScriptAssignment\[]>: 
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

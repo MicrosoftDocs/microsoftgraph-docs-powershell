@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/rename-mgdevicemanagementvirtualendpointcloudpcuseraccounttype
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType
 
 ## SYNOPSIS
-Invoke action changeUserAccountType
+Change the account type of the user on a specific Cloud PC.
 
 ## SYNTAX
 
@@ -41,9 +41,21 @@ Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType -InputObject <IDe
 ```
 
 ## DESCRIPTION
-Invoke action changeUserAccountType
+Change the account type of the user on a specific Cloud PC.
 
 ## EXAMPLES
+
+### Example 1: Using the Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+$params = @{
+	UserAccountType = "administrator"
+}
+Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPCId $cloudPCId -BodyParameter $params
+```
+
+This example shows how to use the Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -189,11 +201,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserAccountType <String>]`: cloudPcUserAccountType
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

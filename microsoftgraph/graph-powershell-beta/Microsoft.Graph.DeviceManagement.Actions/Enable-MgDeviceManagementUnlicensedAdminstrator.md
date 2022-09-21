@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/enable-mgdevicemanagementunlicensedadminstrator
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Enable-MgDeviceManagementUnlicensedAdminstrator
 
 ## SYNOPSIS
-Invoke action enableUnlicensedAdminstrators
+Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license.
+You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators.
+Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.
 
 ## SYNTAX
 
@@ -17,7 +19,9 @@ Enable-MgDeviceManagementUnlicensedAdminstrator [-PassThru] [-WhatIf] [-Confirm]
 ```
 
 ## DESCRIPTION
-Invoke action enableUnlicensedAdminstrators
+Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license.
+You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators.
+Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.
 
 ## EXAMPLES
 

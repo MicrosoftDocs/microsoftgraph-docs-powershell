@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementgrouppolicyconfigurationmultipledefinitionvalue
@@ -224,7 +224,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDED <IMicrosoftGraphGroupPolicyDefinitionValue\[]>: .
+ADDED <IMicrosoftGraphGroupPolicyDefinitionValue[]>: .
   - `[Id <String>]`: 
   - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
   - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
@@ -283,7 +283,7 @@ ADDED <IMicrosoftGraphGroupPolicyDefinitionValue\[]>: .
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
     - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
 
-BODYPARAMETER `<IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Added <IMicrosoftGraphGroupPolicyDefinitionValue[]>]`: 
     - `[Id <String>]`: 
@@ -346,7 +346,8 @@ BODYPARAMETER `<IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolic
   - `[DeletedIds <String[]>]`: 
   - `[Updated <IMicrosoftGraphGroupPolicyDefinitionValue[]>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -397,7 +398,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
-UPDATED <IMicrosoftGraphGroupPolicyDefinitionValue\[]>: .
+UPDATED <IMicrosoftGraphGroupPolicyDefinitionValue[]>: .
   - `[Id <String>]`: 
   - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
   - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.

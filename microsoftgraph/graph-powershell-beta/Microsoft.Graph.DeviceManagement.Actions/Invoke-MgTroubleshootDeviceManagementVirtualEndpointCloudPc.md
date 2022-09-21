@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc
 
 ## SYNOPSIS
-Invoke action troubleshoot
+Troubleshoot a specific Cloud PC.
+Use this API to check the health status of the Cloud PC and the session host.
 
 ## SYNTAX
 
@@ -25,9 +26,19 @@ Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Invoke action troubleshoot
+Troubleshoot a specific Cloud PC.
+Use this API to check the health status of the Cloud PC and the session host.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
+```
+
+This example shows how to use the Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -126,7 +137,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

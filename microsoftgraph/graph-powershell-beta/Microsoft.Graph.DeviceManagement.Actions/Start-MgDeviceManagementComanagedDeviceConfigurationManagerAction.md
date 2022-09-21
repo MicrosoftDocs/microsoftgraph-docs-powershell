@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/start-mgdevicemanagementcomanageddeviceconfigurationmanageraction
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Start-MgDeviceManagementComanagedDeviceConfigurationManagerAction
 
 ## SYNOPSIS
-Invoke action triggerConfigurationManagerAction
+Trigger action on ConfigurationManager client
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Start-MgDeviceManagementComanagedDeviceConfigurationManagerAction
 ```
 
 ## DESCRIPTION
-Invoke action triggerConfigurationManagerAction
+Trigger action on ConfigurationManager client
 
 ## EXAMPLES
 
@@ -192,17 +192,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsD4Rzd2DevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsD4Rzd2DevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfigurationManagerAction <IMicrosoftGraphConfigurationManagerAction>]`: Parameter for action triggerConfigurationManagerAction
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Action <ConfigurationManagerActionType?>]`: Action type on Configuration Manager client
 
-CONFIGURATIONMANAGERACTION `<IMicrosoftGraphConfigurationManagerAction>`: Parameter for action triggerConfigurationManagerAction
+CONFIGURATIONMANAGERACTION <IMicrosoftGraphConfigurationManagerAction>: Parameter for action triggerConfigurationManagerAction
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <ConfigurationManagerActionType?>]`: Action type on Configuration Manager client
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+  - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
