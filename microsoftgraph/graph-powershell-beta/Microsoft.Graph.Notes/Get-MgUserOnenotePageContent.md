@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotepagecontent
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserOnenotePageContent
 
 ## SYNOPSIS
-Get content for the navigation property pages from users
+The page's HTML content.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgUserOnenotePageContent -InputObject <INotesIdentity> -OutFile <String> [-P
 ```
 
 ## DESCRIPTION
-Get content for the navigation property pages from users
+The page's HTML content.
 
 ## EXAMPLES
 
@@ -124,7 +124,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[NotebookId <String>]`: key: id of notebook
   - `[OnenoteOperationId <String>]`: key: id of onenoteOperation
