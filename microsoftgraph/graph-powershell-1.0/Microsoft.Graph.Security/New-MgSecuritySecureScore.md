@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledServices
-Microsoft-provided services for the tenant (for example, Exchange online, Skype, SharePoint).
+Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).
 
 ```yaml
 Type: String[]
@@ -281,11 +281,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore\[]>: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
+AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore[]>: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
   - `[AverageScore <Double?>]`: Average score within specified basis.
   - `[Basis <String>]`: Scope type. The possible values are: AllTenants, TotalSeats, IndustryTypes.
 
-BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
+BODYPARAMETER <IMicrosoftGraphSecureScore>: secureScore
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActiveUserCount <Int32?>]`: Active user count of the given tenant.
@@ -300,7 +300,7 @@ BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
     - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
   - `[CreatedDateTime <DateTime?>]`: The date when the entity is created.
   - `[CurrentScore <Double?>]`: Tenant current attained score on specified date.
-  - `[EnabledServices <String[]>]`: Microsoft-provided services for the tenant (for example, Exchange online, Skype, SharePoint).
+  - `[EnabledServices <String[]>]`: Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).
   - `[LicensedUserCount <Int32?>]`: Licensed user count of the given tenant.
   - `[MaxScore <Double?>]`: Tenant maximum possible score on specified date.
   - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
@@ -310,13 +310,13 @@ BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-CONTROLSCORES <IMicrosoftGraphControlScore\[]>: Contains tenant scores for a set of controls.
+CONTROLSCORES <IMicrosoftGraphControlScore[]>: Contains tenant scores for a set of controls.
   - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
   - `[ControlName <String>]`: Control unique name.
   - `[Description <String>]`: Description of the control.
   - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required

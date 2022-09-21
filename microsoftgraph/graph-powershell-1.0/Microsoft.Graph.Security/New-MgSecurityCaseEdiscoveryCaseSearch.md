@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasesearch
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityCaseEdiscoveryCaseSearch
 
 ## SYNOPSIS
-Create new navigation property to searches for security
+Create a new ediscoverySearch object.
 
 ## SYNTAX
 
@@ -53,9 +53,31 @@ New-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to searches for security
+Create a new ediscoverySearch object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgSecurityCaseEdiscoveryCaseSearch Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+$params = @{
+	DisplayName = "My search 2"
+	Description = "My first search"
+	ContentQuery = "(Author="edison")"
+	"CustodianSources@odata.bind" = @(
+		"https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/userSources/43434642-3137-3138-3432-374142313639"
+		"https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/siteSources/169718e3-a8df-449d-bef4-ee09fe1ddc5d"
+		"https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/unifiedGroupSources('32e14fa4-3106-4bd2-a245-34bf0c718a7e')"
+	)
+	"NoncustodialSources@odata.bind" = @(
+		"https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/35393639323133394345384344303043"
+	)
+}
+New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+```
+
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseSearch Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -388,7 +410,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDITIONALSOURCES <IMicrosoftGraphSecurityDataSource\[]>: Adds an additional source to the eDiscovery search.
+ADDITIONALSOURCES <IMicrosoftGraphSecurityDataSource[]>: Adds an additional source to the eDiscovery search.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -402,7 +424,7 @@ ADDITIONALSOURCES <IMicrosoftGraphSecurityDataSource\[]>: Adds an additional sou
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-ADDTOREVIEWSETOPERATION `<IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>`: ediscoveryAddToReviewSetOperation
+ADDTOREVIEWSETOPERATION <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>: ediscoveryAddToReviewSetOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: 
   - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
@@ -494,7 +516,7 @@ ADDTOREVIEWSETOPERATION `<IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperati
         - `[Status <String>]`: caseOperationStatus
         - `[Id <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoverySearch1>`: ediscoverySearch
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoverySearch1>: ediscoverySearch
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -586,7 +608,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoverySearch1>`: ediscoverySearch
       - `[Status <String>]`: caseOperationStatus
       - `[Id <String>]`: 
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -595,7 +617,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANSOURCES <IMicrosoftGraphSecurityDataSource\[]>: Custodian sources that are included in the eDiscovery search.
+CUSTODIANSOURCES <IMicrosoftGraphSecurityDataSource[]>: Custodian sources that are included in the eDiscovery search.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -609,7 +631,7 @@ CUSTODIANSOURCES <IMicrosoftGraphSecurityDataSource\[]>: Custodian sources that 
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -653,7 +675,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-LASTESTIMATESTATISTICSOPERATION `<IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>`: ediscoveryEstimateOperation
+LASTESTIMATESTATISTICSOPERATION <IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>: ediscoveryEstimateOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: 
   - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
@@ -745,7 +767,7 @@ LASTESTIMATESTATISTICSOPERATION `<IMicrosoftGraphSecurityEdiscoveryEstimateOpera
   - `[UnindexedItemCount <Int64?>]`: The estimated count of unindexed items for the collection.
   - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -754,7 +776,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NONCUSTODIALSOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1\[]>: noncustodialDataSource sources that are included in the eDiscovery search
+NONCUSTODIALSOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1[]>: noncustodialDataSource sources that are included in the eDiscovery search
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus

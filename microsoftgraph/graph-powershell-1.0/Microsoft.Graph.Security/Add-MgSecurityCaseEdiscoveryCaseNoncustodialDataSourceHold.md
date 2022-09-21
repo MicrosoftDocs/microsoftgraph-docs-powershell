@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasenoncustodialdatasourcehold
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold
 
 ## SYNOPSIS
-Invoke action applyHold
+Start the process of applying hold on eDiscovery non-custodial data sources.
+After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
+The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## SYNTAX
 
@@ -51,9 +53,29 @@ Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecuri
 ```
 
 ## DESCRIPTION
-Invoke action applyHold
+Start the process of applying hold on eDiscovery non-custodial data sources.
+After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
+The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## EXAMPLES
+
+### Example 1: Using the Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+```
+
+This example shows how to use the Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Security
+Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+```
+
+This example shows how to use the Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -214,11 +236,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
