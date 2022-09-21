@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/publish-mgeducationclassassignment
@@ -8,7 +8,14 @@ schema: 2.0.0
 # Publish-MgEducationClassAssignment
 
 ## SYNOPSIS
-Invoke action publish
+Publish an education assignment.
+Change the state of an educationAssignment from its original `draft` status to the `published` status.
+You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date.
+Only a teacher in the class can make this call.
+When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.
+Calling this API creates educationSubmission objects and displays the assignment in each student's list.
+The state of the assignment goes back to `draft` if there is any backend failure during publish process.
+To update the properties of a published **assignment**, see update an assignment.
 
 ## SYNTAX
 
@@ -24,9 +31,25 @@ Publish-MgEducationClassAssignment -InputObject <IEducationIdentity> [-WhatIf] [
 ```
 
 ## DESCRIPTION
-Invoke action publish
+Publish an education assignment.
+Change the state of an educationAssignment from its original `draft` status to the `published` status.
+You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date.
+Only a teacher in the class can make this call.
+When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.
+Calling this API creates educationSubmission objects and displays the assignment in each student's list.
+The state of the assignment goes back to `draft` if there is any backend failure during publish process.
+To update the properties of a published **assignment**, see update an assignment.
 
 ## EXAMPLES
+
+### Example 1: Using the Publish-MgEducationClassAssignment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+Publish-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+```
+
+This example shows how to use the Publish-MgEducationClassAssignment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -125,7 +148,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

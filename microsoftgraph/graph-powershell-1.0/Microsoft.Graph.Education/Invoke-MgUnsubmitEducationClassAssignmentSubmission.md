@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/invoke-mgunsubmiteducationclassassignmentsubmission
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Invoke-MgUnsubmitEducationClassAssignmentSubmission
 
 ## SYNOPSIS
-Invoke action unsubmit
+Indicate that a student wants to work on the submission of the assignment after it was turned in.
+This method changes the status of the submission from `submitted` to `working`.
+During the submit process, all the resources are copied from **submittedResources** to  **workingResources**.
+The teacher will be looking at the working resources list for grading.
+A teacher can also unsubmit a student's assignment on their behalf.
 
 ## SYNTAX
 
@@ -25,9 +29,22 @@ Invoke-MgUnsubmitEducationClassAssignmentSubmission -InputObject <IEducationIden
 ```
 
 ## DESCRIPTION
-Invoke action unsubmit
+Indicate that a student wants to work on the submission of the assignment after it was turned in.
+This method changes the status of the submission from `submitted` to `working`.
+During the submit process, all the resources are copied from **submittedResources** to  **workingResources**.
+The teacher will be looking at the working resources list for grading.
+A teacher can also unsubmit a student's assignment on their behalf.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgUnsubmitEducationClassAssignmentSubmission Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+Invoke-MgUnsubmitEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+```
+
+This example shows how to use the Invoke-MgUnsubmitEducationClassAssignmentSubmission Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -141,7 +158,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

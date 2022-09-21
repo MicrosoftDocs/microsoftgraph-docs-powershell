@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschoolclass
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationSchoolClass
 
 ## SYNOPSIS
-Get classes from education
+Get the educationClass resources owned by an educationSchool.
 
 ## SYNTAX
 
@@ -19,9 +19,18 @@ Get-MgEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get classes from education
+Get the educationClass resources owned by an educationSchool.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgEducationSchoolClass Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+Get-MgEducationSchoolClass -EducationSchoolId $educationSchoolId
+```
+
+This example shows how to use the Get-MgEducationSchoolClass Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -35,7 +44,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +120,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

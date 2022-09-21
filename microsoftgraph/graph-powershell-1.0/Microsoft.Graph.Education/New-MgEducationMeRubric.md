@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationmerubric
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgEducationMeRubric
 
 ## SYNOPSIS
-Create new navigation property to rubrics for education
+Create a new educationRubric object.
 
 ## SYNTAX
 
@@ -28,9 +28,170 @@ New-MgEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-WhatIf
 ```
 
 ## DESCRIPTION
-Create new navigation property to rubrics for education
+Create a new educationRubric object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgEducationMeRubric Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+$params = @{
+	DisplayName = "Example Credit Rubric"
+	Description = @{
+		Content = "This is an example of a credit rubric (no points)"
+		ContentType = "text"
+	}
+	Levels = @(
+		@{
+			DisplayName = "Good"
+			Description = @{
+				Content = ""
+				ContentType = "text"
+			}
+		}
+		@{
+			DisplayName = "Poor"
+			Description = @{
+				Content = ""
+				ContentType = "text"
+			}
+		}
+	)
+	Qualities = @(
+		@{
+			Description = @{
+				Content = "Argument"
+				ContentType = "text"
+			}
+			Criteria = @(
+				@{
+					Description = @{
+						Content = "The essay's argument is persuasive."
+						ContentType = "text"
+					}
+				}
+				@{
+					Description = @{
+						Content = "The essay's argument does not make sense."
+						ContentType = "text"
+					}
+				}
+			)
+		}
+		@{
+			Description = @{
+				Content = "Spelling and Grammar"
+				ContentType = "text"
+			}
+			Criteria = @(
+				@{
+					Description = @{
+						Content = "The essay uses proper spelling and grammar with few or no errors."
+						ContentType = "text"
+					}
+				}
+				@{
+					Description = @{
+						Content = "The essay has numerous errors in spelling and/or grammar."
+						ContentType = "text"
+					}
+				}
+			)
+		}
+	)
+}
+New-MgEducationMeRubric -BodyParameter $params
+```
+
+This example shows how to use the New-MgEducationMeRubric Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the New-MgEducationMeRubric Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+$params = @{
+	DisplayName = "Example Points Rubric"
+	Description = @{
+		Content = "This is an example of a rubric with points"
+		ContentType = "text"
+	}
+	Levels = @(
+		@{
+			DisplayName = "Good"
+			Description = @{
+				Content = ""
+				ContentType = "text"
+			}
+			Grading = @{
+				"@odata.type" = "#microsoft.graph.educationAssignmentPointsGradeType"
+				MaxPoints = 
+			}
+		}
+		@{
+			DisplayName = "Poor"
+			Description = @{
+				Content = ""
+				ContentType = "text"
+			}
+			Grading = @{
+				"@odata.type" = "#microsoft.graph.educationAssignmentPointsGradeType"
+				MaxPoints = 
+			}
+		}
+	)
+	Qualities = @(
+		@{
+			Description = @{
+				Content = "Argument"
+				ContentType = "text"
+			}
+			Criteria = @(
+				@{
+					Description = @{
+						Content = "The essay's argument is persuasive."
+						ContentType = "text"
+					}
+				}
+				@{
+					Description = @{
+						Content = "The essay's argument does not make sense."
+						ContentType = "text"
+					}
+				}
+			)
+			Weight = 50.0
+		}
+		@{
+			Description = @{
+				Content = "Spelling and Grammar"
+				ContentType = "text"
+			}
+			Criteria = @(
+				@{
+					Description = @{
+						Content = "The essay uses proper spelling and grammar with few or no errors."
+						ContentType = "text"
+					}
+				}
+				@{
+					Description = @{
+						Content = "The essay has numerous errors in spelling and/or grammar."
+						ContentType = "text"
+					}
+				}
+			)
+			Weight = 50.0
+		}
+	)
+	Grading = @{
+		"@odata.type" = "#microsoft.graph.educationAssignmentPointsGradeType"
+	}
+}
+New-MgEducationMeRubric -BodyParameter $params
+```
+
+This example shows how to use the New-MgEducationMeRubric Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -272,7 +433,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationRubric>`: educationRubric
+BODYPARAMETER <IMicrosoftGraphEducationRubric>: educationRubric
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -283,7 +444,6 @@ BODYPARAMETER `<IMicrosoftGraphEducationRubric>`: educationRubric
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: 
@@ -292,7 +452,6 @@ BODYPARAMETER `<IMicrosoftGraphEducationRubric>`: educationRubric
   - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Levels <IMicrosoftGraphRubricLevel[]>]`: The collection of levels making up this rubric.
     - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[DisplayName <String>]`: The name of this rubric level.
@@ -306,7 +465,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationRubric>`: educationRubric
     - `[QualityId <String>]`: The ID of this resource.
     - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -315,12 +474,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DESCRIPTION `<IMicrosoftGraphEducationItemBody>`: educationItemBody
+DESCRIPTION <IMicrosoftGraphEducationItemBody>: educationItemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: 
   - `[ContentType <String>]`: bodyType
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -329,7 +488,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LEVELS <IMicrosoftGraphRubricLevel\[]>: The collection of levels making up this rubric.
+LEVELS <IMicrosoftGraphRubricLevel[]>: The collection of levels making up this rubric.
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: 
@@ -339,7 +498,7 @@ LEVELS <IMicrosoftGraphRubricLevel\[]>: The collection of levels making up this 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LevelId <String>]`: The ID of this resource.
 
-QUALITIES <IMicrosoftGraphRubricQuality\[]>: The collection of qualities making up this rubric.
+QUALITIES <IMicrosoftGraphRubricQuality[]>: The collection of qualities making up this rubric.
   - `[Criteria <IMicrosoftGraphRubricCriterion[]>]`: The collection of criteria for this rubric quality.
     - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

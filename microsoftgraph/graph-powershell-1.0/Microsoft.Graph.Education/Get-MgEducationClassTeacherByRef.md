@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassteacherbyref
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassTeacherByRef
 
 ## SYNOPSIS
-Get ref of teachers from education
+Retrieve a list teachers for a class.
+Delegated tokens must be members of the class to get the teacher list.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgEducationClassTeacherByRef -EducationClassId <String> [-Filter <String>] [
 ```
 
 ## DESCRIPTION
-Get ref of teachers from education
+Retrieve a list teachers for a class.
+Delegated tokens must be members of the class to get the teacher list.
 
 ## EXAMPLES
 
@@ -35,7 +37,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -96,7 +98,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

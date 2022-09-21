@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationmeassignmentsubmissionresource
@@ -8,7 +8,11 @@ schema: 2.0.0
 # New-MgEducationMeAssignmentSubmissionResource
 
 ## SYNOPSIS
-Create new navigation property to resources for education
+Add an educationSubmissionResource to a submission resource list.
+Only the student assigned to the submission can perform this operation.
+The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`.
+To create a new file-based resource, upload the file to the resources folder associated with the submission.
+If the file doesn't exist or is not in that folder, the POST request will fail.
 
 ## SYNTAX
 
@@ -39,7 +43,11 @@ New-MgEducationMeAssignmentSubmissionResource -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to resources for education
+Add an educationSubmissionResource to a submission resource list.
+Only the student assigned to the submission can perform this operation.
+The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`.
+To create a new file-based resource, upload the file to the resources folder associated with the submission.
+If the file doesn't exist or is not in that folder, the POST request will fail.
 
 ## EXAMPLES
 
@@ -219,7 +227,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationSubmissionResource>`: educationSubmissionResource
+BODYPARAMETER <IMicrosoftGraphEducationSubmissionResource>: educationSubmissionResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which this resource was copied. If this is null, the student uploaded the resource.
@@ -233,12 +241,10 @@ BODYPARAMETER `<IMicrosoftGraphEducationSubmissionResource>`: educationSubmissio
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[DisplayName <String>]`: Display name of resource.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory
@@ -252,7 +258,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationProfileId <String>]`: key: id of educationSynchronizationProfile
   - `[EducationUserId <String>]`: key: id of educationUser
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
+RESOURCE <IMicrosoftGraphEducationResource>: educationResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -262,9 +268,7 @@ RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[DisplayName <String>]`: Display name of resource.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategory
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgEducationClassAssignmentCategory
 
 ## SYNOPSIS
-Create new navigation property to assignmentCategories for education
+Creates a new educationCategory on an educationClass.
 
 ## SYNTAX
 
@@ -62,9 +62,21 @@ New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to assignmentCategories for education
+Creates a new educationCategory on an educationClass.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgEducationClassAssignmentCategory Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+$params = @{
+	DisplayName = "Quizzes"
+}
+New-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -BodyParameter $params
+```
+
+This example shows how to use the New-MgEducationClassAssignmentCategory Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -225,12 +237,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationCategory>`: educationCategory
+BODYPARAMETER <IMicrosoftGraphEducationCategory>: educationCategory
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: Unique identifier for the category.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory
