@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagemententitlementmanagementroleassignmentschedule
@@ -461,7 +461,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVATEDUSING <IMicrosoftGraphUnifiedRoleEligibilitySchedule1>: unifiedRoleEligibilitySchedule
+ACTIVATEDUSING `<IMicrosoftGraphUnifiedRoleEligibilitySchedule1>`: unifiedRoleEligibilitySchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -525,13 +525,13 @@ ACTIVATEDUSING <IMicrosoftGraphUnifiedRoleEligibilitySchedule1>: unifiedRoleElig
         - `[Type <String>]`: recurrenceRangeType
     - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
-APPSCOPE <IMicrosoftGraphAppScope>: appScope
+APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
   - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
 
-BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentSchedule1>: unifiedRoleAssignmentSchedule
+BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentSchedule1>`: unifiedRoleAssignmentSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -613,12 +613,12 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentSchedule1>: unifiedRoleAssign
   - `[MemberType <String>]`: How the assignments is inherited. It can either be Inherited, Direct, or Group. It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller. Supports $filter (eq, ne).
   - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
 
-DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
+DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
@@ -655,12 +655,12 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
-PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
+PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
+ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
@@ -676,7 +676,7 @@ ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
-SCHEDULEINFO <IMicrosoftGraphRequestSchedule>: requestSchedule
+SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
