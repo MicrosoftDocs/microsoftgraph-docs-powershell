@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemdocumentsetversion
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserDriveItemListItemDocumentSetVersion
 
 ## SYNOPSIS
-Get documentSetVersions from users
+Version information for a document set version created by a user.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgUserDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Get documentSetVersions from users
+Version information for a document set version created by a user.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -171,7 +171,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -284,7 +284,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharedriveitem
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgShareDriveItem
 
 ## SYNOPSIS
-Get driveItem from shares
+Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
+To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 ## SYNTAX
 
@@ -25,9 +26,28 @@ Get-MgShareDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get driveItem from shares
+Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
+To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgShareDriveItem Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Files
+Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
+```
+
+This example shows how to use the Get-MgShareDriveItem Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgShareDriveItem Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Files
+Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
+```
+
+This example shows how to use the Get-MgShareDriveItem Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -110,7 +130,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType

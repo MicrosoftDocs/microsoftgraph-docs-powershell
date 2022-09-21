@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mguserdefaultdrive
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserDefaultDrive
 
 ## SYNOPSIS
-Get drive from users
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ## SYNTAX
 
@@ -25,9 +26,29 @@ Get-MgUserDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get drive from users
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserDefaultDrive Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Files
+Get-MgUserDefaultDrive -UserId $userId
+```
+
+This example shows how to use the Get-MgUserDefaultDrive Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgUserDefaultDrive Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Files
+# A UPN can also be used as -UserId.
+Get-MgUserDefaultDrive -UserId $userId
+```
+
+This example shows how to use the Get-MgUserDefaultDrive Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -110,7 +131,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
