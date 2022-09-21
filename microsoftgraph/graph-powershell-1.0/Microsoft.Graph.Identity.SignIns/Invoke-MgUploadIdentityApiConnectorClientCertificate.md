@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityapiconnectorclientcertificate
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgUploadIdentityApiConnectorClientCertificate
 
 ## SYNOPSIS
-Invoke action uploadClientCertificate
+Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
+The input is a base-64 encoded value of the PKCS 12 certificate contents.
+This method returns an apiConnector.
 
 ## SYNTAX
 
@@ -41,9 +43,24 @@ Invoke-MgUploadIdentityApiConnectorClientCertificate -InputObject <IIdentitySign
 ```
 
 ## DESCRIPTION
-Invoke action uploadClientCertificate
+Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
+The input is a base-64 encoded value of the PKCS 12 certificate contents.
+This method returns an apiConnector.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+	Password = "<password>"
+}
+Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -189,18 +206,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Password <String>]`: 
   - `[Pkcs12Value <String>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
+  - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: key: id of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[AuthenticationMethodModeDetailId <String>]`: key: id of authenticationMethodModeDetail
+  - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
+  - `[AuthenticationStrengthPolicyId <String>]`: key: id of authenticationStrengthPolicy
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
   - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
   - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow

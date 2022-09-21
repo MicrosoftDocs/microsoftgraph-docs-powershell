@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessnamedlocation
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Get namedLocations from identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ## SYNTAX
 
@@ -32,9 +34,37 @@ Get-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Get namedLocations from identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ## EXAMPLES
+
+### Example 1: Get a list of all named locations
+```powershell
+Connect-MgGraph -Scopes 'Policy.Read.All'
+Get-MgIdentityConditionalAccessNamedLocation
+
+Id                                   CreatedDateTime       DisplayName                 ModifiedDateTime
+--                                   ---------------       -----------                 ----------------
+1b43b630-dbef-4cb7-afe5-fa4e113ea6b2 4/21/2022 10:28:22 AM KOs                         6/13/2022 8:23:06 AM
+1f0fd623-bf8f-4003-9627-32a68c3cdcc1 6/13/2022 8:27:35 AM  Updated named location      6/13/2022 8:54:24 AM
+0824dbaf-6277-4db0-8112-b29fd356f2c4 6/13/2022 8:41:38 AM  Untrusted IP named location 6/13/2022 8:41:38 AM
+```
+
+This example lists all existing named location rules.
+
+### Example 2: Get a named location by Id
+```powershell
+Connect-MgGraph -Scopes 'Policy.Read.All'
+Get-MgIdentityConditionalAccessNamedLocation -NamedLocationId '1f0fd623-bf8f-4003-9627-32a68c3cdcc1'
+
+Id                                   CreatedDateTime      DisplayName            ModifiedDateTime
+--                                   ---------------      -----------            ----------------
+1f0fd623-bf8f-4003-9627-32a68c3cdcc1 6/13/2022 8:27:35 AM Updated named location 6/13/2022 8:54:24 AM
+```
+
+This example gets the named location rule by Id.
 
 ## PARAMETERS
 
@@ -48,7 +78,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -140,7 +170,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -238,13 +268,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
+  - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: key: id of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[AuthenticationMethodModeDetailId <String>]`: key: id of authenticationMethodModeDetail
+  - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
+  - `[AuthenticationStrengthPolicyId <String>]`: key: id of authenticationStrengthPolicy
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
   - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
   - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow

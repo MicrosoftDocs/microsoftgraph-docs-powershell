@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype
@@ -20,6 +20,33 @@ Invoke-MgAvailableIdentityProviderType [<CommonParameters>]
 Invoke function availableProviderTypes
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+Invoke-MgAvailableIdentityProviderType
+```
+
+This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+Invoke-MgAvailableIdentityProviderType
+```
+
+This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+Invoke-MgAvailableIdentityProviderType -OutFile $outFileId
+```
+
+This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

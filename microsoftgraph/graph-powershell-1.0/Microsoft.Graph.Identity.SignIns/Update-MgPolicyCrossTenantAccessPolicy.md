@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
-Update the navigation property crossTenantAccessPolicy in policies
+Update the properties of a cross-tenant access policy.
 
 ## SYNTAX
 
@@ -28,9 +28,21 @@ Update-MgPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossTenan
 ```
 
 ## DESCRIPTION
-Update the navigation property crossTenantAccessPolicy in policies
+Update the properties of a cross-tenant access policy.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgPolicyCrossTenantAccessPolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	DisplayName = "CrossTenantAccessPolicy"
+}
+Update-MgPolicyCrossTenantAccessPolicy -BodyParameter $params
+```
+
+This example shows how to use the Update-MgPolicyCrossTenantAccessPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -224,7 +236,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicy>`: crossTenantAccessPolicy
+BODYPARAMETER <IMicrosoftGraphCrossTenantAccessPolicy>: crossTenantAccessPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
@@ -260,7 +272,7 @@ BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicy>`: crossTenantAccessPolic
     - `[IsServiceProvider <Boolean?>]`: Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization.
     - `[TenantId <String>]`: The tenant identifier for the partner Azure AD organization. Read-only. Key.
 
-DEFAULT `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>`: crossTenantAccessPolicyConfigurationDefault
+DEFAULT <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>: crossTenantAccessPolicyConfigurationDefault
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
@@ -282,7 +294,7 @@ DEFAULT `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>`: crossTen
     - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Azure AD organizations is trusted.
   - `[IsServiceDefault <Boolean?>]`: If true, the default configuration is set to the system default configuration. If false, the default settings have been customized.
 
-PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner\[]>: Defines partner-specific configurations for external Azure Active Directory organizations.
+PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>: Defines partner-specific configurations for external Azure Active Directory organizations.
   - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration

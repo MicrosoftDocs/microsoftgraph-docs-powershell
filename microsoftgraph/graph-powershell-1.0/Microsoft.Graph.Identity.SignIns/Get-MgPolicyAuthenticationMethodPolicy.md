@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationmethodpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Get authenticationMethodsPolicy from policies
+Read the properties and relationships of an authenticationMethodsPolicy object.
 
 ## SYNTAX
 
@@ -17,9 +17,18 @@ Get-MgPolicyAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Property <
 ```
 
 ## DESCRIPTION
-Get authenticationMethodsPolicy from policies
+Read the properties and relationships of an authenticationMethodsPolicy object.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgPolicyAuthenticationMethodPolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgPolicyAuthenticationMethodPolicy
+```
+
+This example shows how to use the Get-MgPolicyAuthenticationMethodPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Confirm-MgRiskyUserCompromised
 
 ## SYNOPSIS
-Invoke action confirmCompromised
+Confirm one or more riskyUser objects as compromised.
+This action sets the targeted user's risk level to high.
 
 ## SYNTAX
 
@@ -26,9 +27,25 @@ Confirm-MgRiskyUserCompromised
 ```
 
 ## DESCRIPTION
-Invoke action confirmCompromised
+Confirm one or more riskyUser objects as compromised.
+This action sets the targeted user's risk level to high.
 
 ## EXAMPLES
+
+### Example 1: Using the Confirm-MgRiskyUserCompromised Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	UserIds = @(
+		"29f270bb-4d23-4f68-8a57-dc73dc0d4caf"
+		"20f91ec9-d140-4d90-9cd9-f618587a1471"
+	)
+}
+Confirm-MgRiskyUserCompromised -BodyParameter $params
+```
+
+This example shows how to use the Confirm-MgRiskyUserCompromised Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -142,7 +159,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserIds <String[]>]`: 
 

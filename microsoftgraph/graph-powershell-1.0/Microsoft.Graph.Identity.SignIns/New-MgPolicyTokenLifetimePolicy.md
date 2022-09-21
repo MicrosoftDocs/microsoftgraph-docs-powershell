@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicytokenlifetimepolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPolicyTokenLifetimePolicy
 
 ## SYNOPSIS
-Create new navigation property to tokenLifetimePolicies for policies
+Create a new tokenLifetimePolicy object.
 
 ## SYNTAX
 
@@ -26,9 +26,25 @@ New-MgPolicyTokenLifetimePolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] 
 ```
 
 ## DESCRIPTION
-Create new navigation property to tokenLifetimePolicies for policies
+Create a new tokenLifetimePolicy object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgPolicyTokenLifetimePolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Definition = @(
+		"definition-value"
+	)
+	DisplayName = "displayName-value"
+	IsOrganizationDefault = $true
+}
+New-MgPolicyTokenLifetimePolicy -BodyParameter $params
+```
+
+This example shows how to use the New-MgPolicyTokenLifetimePolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -224,7 +240,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLIESTO <IMicrosoftGraphDirectoryObject\[]>: .
+APPLIESTO <IMicrosoftGraphDirectoryObject[]>: .
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Get permissionGrantPolicies from policies
+The policy that specifies the conditions under which consent can be granted.
 
 ## SYNTAX
 
@@ -32,9 +32,54 @@ Get-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get permissionGrantPolicies from policies
+The policy that specifies the conditions under which consent can be granted.
 
 ## EXAMPLES
+
+### Example 1:  List all permission grant policies
+```powershell
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"  
+Get-MgPolicyPermissionGrantPolicy | fl  
+
+DeletedDateTime      :
+Description          : Includes all application permissions (app roles), for all APIs, for any client application.
+DisplayName          : All application permissions, for any client app
+Excludes             : {}
+Id                   : microsoft-all-application-permissions
+Includes             : {bddda1ec-0174-44d5-84e2-47fb0ac01595}
+AdditionalProperties : {[includeAllPreApprovedApplications, False], [resourceScopeType, tenant], [includes@odata.context,
+                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/includes], [excludes@odata.context,
+                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/excludes]}
+
+DeletedDateTime      :
+Description          : Includes all chat resoruce-specific application permissions, for all APIs, for any client application.
+DisplayName          : All chat resource-specific application permissions, for any client app
+Excludes             : {}
+Id                   : microsoft-all-application-permissions-for-chat
+Includes             : {013e8de3-5e79-4b0f-a440-8f7794086460}
+AdditionalProperties : {[includeAllPreApprovedApplications, False], [resourceScopeType, chat], [includes@odata.context,
+                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/includes], [excludes@odata.context,
+                       https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/excludes]}
+```
+
+This command retrieves a list of all permission grant policies in Azure AD.
+
+### Example 2: Get a permission grant policy by ID
+```powershell
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"  
+Get-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl  
+
+DeletedDateTime      :
+Description          : Includes all application permissions (app roles), for all APIs, for any client application.
+DisplayName          : All application permissions, for any client app
+Excludes             : {}
+Id                   : microsoft-all-application-permissions
+Includes             : {bddda1ec-0174-44d5-84e2-47fb0ac01595}
+AdditionalProperties : {[@odata.context, https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies/$entity], [includeAllPreApprovedApplications, False], [resourceScopeType, tenant],
+                       [includes@odata.context, https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/includes]…}
+```
+
+This command retrieves a specified permission grant policy in Azure AD.
 
 ## PARAMETERS
 
@@ -48,7 +93,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +170,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -238,13 +283,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
+  - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: key: id of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[AuthenticationMethodModeDetailId <String>]`: key: id of authenticationMethodModeDetail
+  - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
+  - `[AuthenticationStrengthPolicyId <String>]`: key: id of authenticationStrengthPolicy
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
   - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
   - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow

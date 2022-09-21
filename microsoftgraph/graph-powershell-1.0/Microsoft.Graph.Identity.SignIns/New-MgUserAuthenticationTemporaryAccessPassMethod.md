@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationtemporaryaccesspassmethod
@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserAuthenticationTemporaryAccessPassMethod
 
 ## SYNOPSIS
-Create new navigation property to temporaryAccessPassMethods for users
+Create a new temporaryAccessPassAuthenticationMethod object on a user.
+A user can only have one Temporary Access Pass that's usable within its specified lifetime.
+If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
 
 ## SYNTAX
 
@@ -43,9 +45,25 @@ New-MgUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySignIns
 ```
 
 ## DESCRIPTION
-Create new navigation property to temporaryAccessPassMethods for users
+Create a new temporaryAccessPassAuthenticationMethod object on a user.
+A user can only have one Temporary Access Pass that's usable within its specified lifetime.
+If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgUserAuthenticationTemporaryAccessPassMethod Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	StartDateTime = [System.DateTime]::Parse("2022-06-05T00:00:00.000Z")
+	LifetimeInMinutes = 60
+	IsUsableOnce = $false
+}
+New-MgUserAuthenticationTemporaryAccessPassMethod -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserAuthenticationTemporaryAccessPassMethod Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -285,7 +303,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTemporaryAccessPassAuthenticationMethod>`: temporaryAccessPassAuthenticationMethod
+BODYPARAMETER <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod>: temporaryAccessPassAuthenticationMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
@@ -296,13 +314,17 @@ BODYPARAMETER `<IMicrosoftGraphTemporaryAccessPassAuthenticationMethod>`: tempor
   - `[StartDateTime <DateTime?>]`: The date and time when the Temporary Access Pass becomes available to use and when isUsable is true is enforced.
   - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate. Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
+  - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: key: id of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[AuthenticationMethodModeDetailId <String>]`: key: id of authenticationMethodModeDetail
+  - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
+  - `[AuthenticationStrengthPolicyId <String>]`: key: id of authenticationStrengthPolicy
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
   - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
   - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow

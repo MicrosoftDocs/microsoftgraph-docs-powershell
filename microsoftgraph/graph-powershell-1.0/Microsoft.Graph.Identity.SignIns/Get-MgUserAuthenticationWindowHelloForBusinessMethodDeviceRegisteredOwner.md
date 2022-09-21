@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationwindowhelloforbusinessmethoddeviceregisteredowner
@@ -8,7 +8,12 @@ schema: 2.0.0
 # Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwner
 
 ## SYNOPSIS
-Get registeredOwners from users
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -20,7 +25,12 @@ Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredOwner -UserI
 ```
 
 ## DESCRIPTION
-Get registeredOwners from users
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -36,7 +46,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -97,7 +107,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
