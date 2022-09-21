@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/restore-mgprintprinterfactorydefault
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Restore-MgPrintPrinterFactoryDefault
 
 ## SYNOPSIS
-Invoke action restoreFactoryDefaults
+Restore a printer's default settings to the values specified by the manufacturer.
 
 ## SYNTAX
 
@@ -24,9 +24,18 @@ Restore-MgPrintPrinterFactoryDefault -InputObject <IDevicesCloudPrintIdentity> [
 ```
 
 ## DESCRIPTION
-Invoke action restoreFactoryDefaults
+Restore a printer's default settings to the values specified by the manufacturer.
 
 ## EXAMPLES
+
+### Example 1: Using the Restore-MgPrintPrinterFactoryDefault Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Devices.CloudPrint
+Restore-MgPrintPrinterFactoryDefault -PrinterId $printerId
+```
+
+This example shows how to use the Restore-MgPrintPrinterFactoryDefault Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -125,7 +134,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PrintConnectorId <String>]`: key: id of printConnector
   - `[PrintOperationId <String>]`: key: id of printOperation
