@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mguserdelta
@@ -20,6 +20,15 @@ Get-MgUserDelta [<CommonParameters>]
 Invoke function delta
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserDelta Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Functions
+Get-MgUserDelta
+```
+
+This example shows how to use the Get-MgUserDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
