@@ -259,7 +259,6 @@ BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationAssignment1>`: The device conf
   - `[Id <String>]`: 
   - `[Intent <DeviceConfigAssignmentIntent?>]`: The administrator intent for the assignment of the profile.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-  - `[SourceId <String>]`: The identifier of the source of the assignment. This property is read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.

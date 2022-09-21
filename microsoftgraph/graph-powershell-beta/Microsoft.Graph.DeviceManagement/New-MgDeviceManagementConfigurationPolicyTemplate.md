@@ -219,7 +219,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -282,7 +282,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -346,7 +346,6 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: De
   - `[DisplayVersion <String>]`: Description of template version
   - `[LifecycleState <DeviceManagementTemplateLifecycleState?>]`: Describes current lifecycle state of a template
   - `[Platforms <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
-  - `[SettingTemplateCount <Int32?>]`: Number of setting templates. Valid values 0 to 2147483647. This property is read-only.
   - `[SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]`: Setting templates
     - `[Id <String>]`: 
     - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions
@@ -385,7 +384,6 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: De
       - `[SettingInstanceTemplateId <String>]`: Setting Instance Template Id
   - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
   - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
-  - `[Version <Int32?>]`: Template version. Valid values 1 to 2147483647. This property is read-only.
 
 SETTINGTEMPLATES <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate\[]>: Setting templates
   - `[Id <String>]`: 

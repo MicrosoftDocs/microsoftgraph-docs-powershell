@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Search
-Module Guid: f720034a-d3e0-42b1-8a71-46129b04522f
+Module Guid: 421ea558-0efa-4eaa-a5fa-def1887251b7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search
 Help Version: 1.0.0.0
 Locale: en-US
@@ -41,10 +41,10 @@ Represents an identity used to identify who is responsible for the activity.
 Get operations from external
 
 ### [Get-MgExternalConnectionQuota](Get-MgExternalConnectionQuota.md)
-Get quota from external
+Retrieve the properties and relationships of a connectionQuota object.
 
 ### [Get-MgExternalConnectionSchema](Get-MgExternalConnectionSchema.md)
-Get schema from external
+Retrieve the properties of a schema for an externalConnection.
 
 ### [Get-MgSearchAcronym](Get-MgSearchAcronym.md)
 Administrative answer in Microsoft Search results to define common acronyms in a organization.
@@ -59,16 +59,17 @@ Get search
 Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
 
 ### [Invoke-MgQuerySearch](Invoke-MgQuerySearch.md)
-Invoke action query
+Run a specified search query.
+Search results are provided in the response.
 
 ### [New-MgExternalConnection](New-MgExternalConnection.md)
-Create new navigation property to connections for external
+Create a new externalConnection.
 
 ### [New-MgExternalConnectionGroup](New-MgExternalConnectionGroup.md)
-Create new navigation property to groups for external
+Create a new externalGroup object.
 
 ### [New-MgExternalConnectionGroupMember](New-MgExternalConnectionGroupMember.md)
-Create new navigation property to members for external
+Create a new externalGroupMember object.
 
 ### [New-MgExternalConnectionItem](New-MgExternalConnectionItem.md)
 Create new navigation property to items for external
@@ -80,13 +81,13 @@ Create new navigation property to activities for external
 Create new navigation property to operations for external
 
 ### [New-MgSearchAcronym](New-MgSearchAcronym.md)
-Create new navigation property to acronyms for search
+Create a new acronym object.
 
 ### [New-MgSearchBookmark](New-MgSearchBookmark.md)
-Create new navigation property to bookmarks for search
+Create a new bookmark object.
 
 ### [New-MgSearchQna](New-MgSearchQna.md)
-Create new navigation property to qnas for search
+Create a new qna object.
 
 ### [Remove-MgExternalConnection](Remove-MgExternalConnection.md)
 Delete navigation property connections for external
@@ -140,7 +141,7 @@ Update the navigation property activities in external
 Update the navigation property operations in external
 
 ### [Update-MgExternalConnectionSchema](Update-MgExternalConnectionSchema.md)
-Update the navigation property schema in external
+Update the properties of a schema for an externalConnection.
 
 ### [Update-MgSearchAcronym](Update-MgSearchAcronym.md)
 Update the navigation property acronyms in search

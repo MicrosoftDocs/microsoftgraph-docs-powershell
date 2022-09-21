@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgMuteCommunicationCall
 
 ## SYNOPSIS
-Invoke action mute
+Allows the application to mute itself.
+This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+For more details about how to handle mute operations, see muteParticipantOperation
 
 ## SYNTAX
 
@@ -39,27 +41,23 @@ Invoke-MgMuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action mute
+Allows the application to mute itself.
+This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+For more details about how to handle mute operations, see muteParticipantOperation
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgMuteCommunicationCall Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	ClientContext = "clientContext-value"
+}
+Invoke-MgMuteCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgMuteCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

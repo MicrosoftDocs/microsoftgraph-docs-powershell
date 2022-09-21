@@ -8,7 +8,7 @@ schema: 2.0.0
 # Confirm-MgDomain
 
 ## SYNOPSIS
-Invoke action verify
+Validates the ownership of the domain.
 
 ## SYNTAX
 
@@ -23,27 +23,18 @@ Confirm-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf] [
 ```
 
 ## DESCRIPTION
-Invoke action verify
+Validates the ownership of the domain.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Confirm-MgDomain Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Confirm-MgDomain -DomainId $domainId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Confirm-MgDomain Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

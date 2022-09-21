@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgExternalConnection
 
 ## SYNOPSIS
-Create new navigation property to connections for external
+Create a new externalConnection.
 
 ## SYNTAX
 
@@ -35,27 +35,23 @@ New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExtern
 ```
 
 ## DESCRIPTION
-Create new navigation property to connections for external
+Create a new externalConnection.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgExternalConnection Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Search
+$params = @{
+	Id = "contosohr"
+	Name = "Contoso HR"
+	Description = "Connection to index Contoso HR system"
+}
+New-MgExternalConnection -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgExternalConnection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

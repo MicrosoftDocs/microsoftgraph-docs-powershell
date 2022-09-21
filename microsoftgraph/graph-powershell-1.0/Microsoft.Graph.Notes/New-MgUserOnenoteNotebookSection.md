@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserOnenoteNotebookSection
 
 ## SYNOPSIS
-Create new navigation property to sections for users
+Create a new onenoteSection in the specified notebook.
 
 ## SYNTAX
 
@@ -45,27 +45,22 @@ New-MgUserOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Create new navigation property to sections for users
+Create a new onenoteSection in the specified notebook.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserOnenoteNotebookSection Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Notes
+$params = @{
+	DisplayName = "Section name"
+}
+# A UPN can also be used as -UserId.
+New-MgUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserOnenoteNotebookSection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

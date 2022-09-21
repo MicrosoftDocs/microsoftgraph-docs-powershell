@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgPolicyCrossTenantAccessPolicyDefault
 
 ## SYNOPSIS
-Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.
+Read the default configuration of a cross-tenant access policy.
+This default configuration may be the service default assigned by Azure AD (**isServiceDefault** is `true`) or may be customized in your tenant (**isServiceDefault** is `false`).
 
 ## SYNTAX
 
@@ -18,27 +19,19 @@ Get-MgPolicyCrossTenantAccessPolicyDefault [-ExpandProperty <String[]>] [-Proper
 ```
 
 ## DESCRIPTION
-Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.
+Read the default configuration of a cross-tenant access policy.
+This default configuration may be the service default assigned by Azure AD (**isServiceDefault** is `true`) or may be customized in your tenant (**isServiceDefault** is `false`).
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgPolicyCrossTenantAccessPolicyDefault Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgPolicyCrossTenantAccessPolicyDefault
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

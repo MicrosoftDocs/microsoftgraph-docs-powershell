@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
-The policy that represents the security defaults that protect against common attacks.
+Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ## SYNTAX
 
@@ -18,27 +18,18 @@ Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-The policy that represents the security defaults that protect against common attacks.
+Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

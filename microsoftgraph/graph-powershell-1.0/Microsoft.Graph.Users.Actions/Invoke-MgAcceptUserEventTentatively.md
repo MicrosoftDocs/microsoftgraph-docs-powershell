@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgAcceptUserEventTentatively
 
 ## SYNOPSIS
-Invoke action tentativelyAccept
+Tentatively accept the specified event in a user calendar.
+If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## SYNTAX
 
@@ -41,27 +43,35 @@ Invoke-MgAcceptUserEventTentatively -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action tentativelyAccept
+Tentatively accept the specified event in a user calendar.
+If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgAcceptUserEventTentatively Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Comment = "I may not be able to make this week. How about next week?"
+	SendResponse = $true
+	ProposedNewTime = @{
+		Start = @{
+			DateTime = "2019-12-02T18:00:00"
+			TimeZone = "Pacific Standard Time"
+		}
+		End = @{
+			DateTime = "2019-12-02T19:00:00"
+			TimeZone = "Pacific Standard Time"
+		}
+	}
+}
+# A UPN can also be used as -UserId.
+Invoke-MgAcceptUserEventTentatively -UserId $userId -EventId $eventId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgAcceptUserEventTentatively Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

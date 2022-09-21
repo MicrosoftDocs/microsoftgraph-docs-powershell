@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementSetting
 
 ## SYNOPSIS
-The settings that control the behavior of Azure AD entitlement management.
+Retrieve the properties of an entitlementManagementSettings object.
 
 ## SYNTAX
 
@@ -17,27 +17,18 @@ Get-MgEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <Stri
 ```
 
 ## DESCRIPTION
-The settings that control the behavior of Azure AD entitlement management.
+Retrieve the properties of an entitlementManagementSettings object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgEntitlementManagementSetting Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgEntitlementManagementSetting
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgEntitlementManagementSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

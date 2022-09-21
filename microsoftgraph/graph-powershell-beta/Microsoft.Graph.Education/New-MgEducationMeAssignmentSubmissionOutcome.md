@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgEducationMeAssignmentSubmissionOutcome
 
 ## SYNOPSIS
-Create new navigation property to outcomes for education
+Create a new feedback resource for a submission.
+Only a teacher can perform this operation.
+To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
+If the file doesn't exist or is not in that folder, the `POST` request will fail.
 
 ## SYNTAX
 
@@ -39,7 +42,10 @@ New-MgEducationMeAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to outcomes for education
+Create a new feedback resource for a submission.
+Only a teacher can perform this operation.
+To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
+If the file doesn't exist or is not in that folder, the `POST` request will fail.
 
 ## EXAMPLES
 

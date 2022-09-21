@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryAttributeSet
 
 ## SYNOPSIS
-Create new navigation property to attributeSets for directory
+Create a new attributeSet object.
 
 ## SYNTAX
 
@@ -25,27 +25,23 @@ New-MgDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-WhatI
 ```
 
 ## DESCRIPTION
-Create new navigation property to attributeSets for directory
+Create a new attributeSet object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgDirectoryAttributeSet Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	Id = "Engineering"
+	Description = "Attributes for engineering team"
+	MaxAttributesPerSet = 25
+}
+New-MgDirectoryAttributeSet -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgDirectoryAttributeSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

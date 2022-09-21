@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgSubscribeCommunicationCallToTone
 
 ## SYNOPSIS
-Invoke action subscribeToTone
+Subscribe to DTMF (dual-tone multi-frequency signaling).
+This allows you to be notified when the user presses keys on a 'dialpad'.
 
 ## SYNTAX
 
@@ -39,27 +40,22 @@ Invoke-MgSubscribeCommunicationCallToTone -InputObject <ICloudCommunicationsIden
 ```
 
 ## DESCRIPTION
-Invoke action subscribeToTone
+Subscribe to DTMF (dual-tone multi-frequency signaling).
+This allows you to be notified when the user presses keys on a 'dialpad'.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgSubscribeCommunicationCallToTone Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	ClientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54"
+}
+Invoke-MgSubscribeCommunicationCallToTone -CallId $callId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgSubscribeCommunicationCallToTone Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityCaseEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Create new navigation property to reviewSets for security
+Create a new ediscoveryReviewSet object.
 
 ## SYNTAX
 
@@ -39,27 +39,21 @@ New-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to reviewSets for security
+Create a new ediscoveryReviewSet object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+$params = @{
+	DisplayName = "My review set 2"
+}
+New-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

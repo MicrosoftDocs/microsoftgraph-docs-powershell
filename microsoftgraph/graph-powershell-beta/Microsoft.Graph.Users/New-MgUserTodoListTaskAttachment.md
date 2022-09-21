@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserTodoListTaskAttachment
 
 ## SYNOPSIS
-Create new navigation property to attachments for users
+Add a new taskFileAttachment object to a todoTask.
+This operation limits the size of the attachment you can add to under 3 MB.
+If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
 
 ## SYNTAX
 
@@ -39,27 +41,27 @@ New-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Create new navigation property to attachments for users
+Add a new taskFileAttachment object to a todoTask.
+This operation limits the size of the attachment you can add to under 3 MB.
+If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserTodoListTaskAttachment Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users
+$params = @{
+	"@odata.type" = "#microsoft.graph.taskFileAttachment"
+	Name = "smile"
+	ContentBytes = "a0b1c76de9f7="
+	ContentType = "image/gif"
+}
+# A UPN can also be used as -UserId.
+New-MgUserTodoListTaskAttachment -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserTodoListTaskAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

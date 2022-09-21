@@ -708,7 +708,6 @@ BODYPARAMETER `<IMicrosoftGraphOnlineMeeting1>`: onlineMeeting
   - `[Id <String>]`: 
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-  - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
@@ -746,7 +745,7 @@ BODYPARAMETER `<IMicrosoftGraphOnlineMeeting1>`: onlineMeeting
     - `[AllowedAudience <String>]`: broadcastMeetingAudience
     - `[Captions <IMicrosoftGraphBroadcastMeetingCaptionSettings>]`: broadcastMeetingCaptionSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IsCaptionEnabled <Boolean?>]`: Indicates whether caption is enabled for this Teams live event.
+      - `[IsCaptionEnabled <Boolean?>]`: Indicates whether captions are enabled for this Teams live event.
       - `[SpokenLanguage <String>]`: The spoken language.
       - `[TranslationLanguages <String[]>]`: The translation languages (choose up to 6).
     - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
@@ -843,7 +842,7 @@ BROADCASTSETTINGS `<IMicrosoftGraphBroadcastMeetingSettings1>`: broadcastMeeting
   - `[AllowedAudience <String>]`: broadcastMeetingAudience
   - `[Captions <IMicrosoftGraphBroadcastMeetingCaptionSettings>]`: broadcastMeetingCaptionSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsCaptionEnabled <Boolean?>]`: Indicates whether caption is enabled for this Teams live event.
+    - `[IsCaptionEnabled <Boolean?>]`: Indicates whether captions are enabled for this Teams live event.
     - `[SpokenLanguage <String>]`: The spoken language.
     - `[TranslationLanguages <String[]>]`: The translation languages (choose up to 6).
   - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.

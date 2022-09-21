@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSite
 
 ## SYNOPSIS
-The list of SharePoint sites in this group.
-Access the default site with /sites/root.
+The collection of the sub-sites under this site.
 
 ## SYNTAX
 
@@ -33,8 +32,7 @@ Get-MgGroupSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-The list of SharePoint sites in this group.
-Access the default site with /sites/root.
+The collection of the sub-sites under this site.
 
 ## EXAMPLES
 
@@ -68,7 +66,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -160,7 +158,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgUserManagerByRef
 
 ## SYNOPSIS
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
-Supports $expand.
+Returns the user or organizational contact assigned as the user's manager.
+Optionally, you can expand the manager's chain up to the root node.
 
 ## SYNTAX
 
@@ -26,10 +24,8 @@ Get-MgUserManagerByRef -InputObject <IUsersIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
-Supports $expand.
+Returns the user or organizational contact assigned as the user's manager.
+Optionally, you can expand the manager's chain up to the root node.
 
 ## EXAMPLES
 

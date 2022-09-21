@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassGroup
 
 ## SYNOPSIS
-Get group from education
+Retrieve the Microsoft 365 **group** that corresponds to this **educationClass**.
 
 ## SYNTAX
 
@@ -25,27 +25,18 @@ Get-MgEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get group from education
+Retrieve the Microsoft 365 **group** that corresponds to this **educationClass**.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgEducationClassGroup Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Education
+Get-MgEducationClassGroup -EducationClassId $educationClassId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgEducationClassGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

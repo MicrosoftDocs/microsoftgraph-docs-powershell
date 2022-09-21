@@ -36,23 +36,41 @@ The templates associated with a team.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgTeamworkTeamTemplate Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgTeamworkTeamTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgTeamworkTeamTemplate Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamworkTeamTemplate
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgTeamworkTeamTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgTeamworkTeamTemplate Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"  -OutFile $outFileId
+```
+
+This example shows how to use the Get-MgTeamworkTeamTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the Get-MgTeamworkTeamTemplate Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"
+```
+
+This example shows how to use the Get-MgTeamworkTeamTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -66,7 +84,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -143,7 +161,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

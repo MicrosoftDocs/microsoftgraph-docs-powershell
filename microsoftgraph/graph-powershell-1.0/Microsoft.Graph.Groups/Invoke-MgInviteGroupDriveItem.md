@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgInviteGroupDriveItem
 
 ## SYNOPSIS
-Invoke action invite
+Sends a sharing invitation for a **driveItem**.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Invoke-MgInviteGroupDriveItem -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action invite
+Sends a sharing invitation for a **driveItem**.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 
 ## EXAMPLES
 
@@ -330,7 +330,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsLx1Fn7GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER `<IPathsLx1Fn7GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema1>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <String>]`: 
   - `[Message <String>]`: 

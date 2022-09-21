@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CloudPrint
-Module Guid: f1d7afb5-d74d-4048-9271-8dfc7d6e34d3
+Module Guid: 76474d85-f7fe-4dc9-8754-333f08526a53
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint
 Help Version: 1.0.0.0
 Locale: en-US
@@ -33,16 +33,16 @@ The connectors that are associated with the printer.
 Get share from print
 
 ### [Get-MgPrintPrinterShareAllowedGroup](Get-MgPrintPrinterShareAllowedGroup.md)
-The groups whose users have access to print using the printer.
+Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
 ### [Get-MgPrintPrinterShareAllowedGroupByRef](Get-MgPrintPrinterShareAllowedGroupByRef.md)
-The groups whose users have access to print using the printer.
+Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
 ### [Get-MgPrintPrinterShareAllowedUser](Get-MgPrintPrinterShareAllowedUser.md)
-The users who have access to print using the printer.
+Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
 ### [Get-MgPrintPrinterShareAllowedUserByRef](Get-MgPrintPrinterShareAllowedUserByRef.md)
-The users who have access to print using the printer.
+Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
 ### [Get-MgPrintPrinterSharePrinter](Get-MgPrintPrinterSharePrinter.md)
 The printer that this printer share is related to.
@@ -66,16 +66,16 @@ Nullable.
 The list of printer shares registered in the tenant.
 
 ### [Get-MgPrintShareAllowedGroup](Get-MgPrintShareAllowedGroup.md)
-The groups whose users have access to print using the printer.
+Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
 ### [Get-MgPrintShareAllowedGroupByRef](Get-MgPrintShareAllowedGroupByRef.md)
-The groups whose users have access to print using the printer.
+Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
 ### [Get-MgPrintShareAllowedUser](Get-MgPrintShareAllowedUser.md)
-The users who have access to print using the printer.
+Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
 ### [Get-MgPrintShareAllowedUserByRef](Get-MgPrintShareAllowedUserByRef.md)
-The users who have access to print using the printer.
+Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
 ### [Get-MgPrintSharePrinter](Get-MgPrintSharePrinter.md)
 The printer that this printer share is related to.
@@ -108,7 +108,8 @@ Create new navigation property ref to allowedGroups for print
 Create new navigation property ref to allowedUsers for print
 
 ### [New-MgPrintPrinterTaskTrigger](New-MgPrintPrinterTaskTrigger.md)
-Create new navigation property to taskTriggers for print
+Create a new task trigger on the specified printer.
+Currently, only **one** task trigger can be specified per printer, but this limit might be removed in the future.
 
 ### [New-MgPrintService](New-MgPrintService.md)
 Create new navigation property to services for print
@@ -117,7 +118,7 @@ Create new navigation property to services for print
 Create new navigation property to endpoints for print
 
 ### [New-MgPrintShare](New-MgPrintShare.md)
-Create new navigation property to shares for print
+Create a new **printerShare** for the specified printer.
 
 ### [New-MgPrintShareAllowedGroupByRef](New-MgPrintShareAllowedGroupByRef.md)
 Create new navigation property ref to allowedGroups for print
@@ -126,7 +127,8 @@ Create new navigation property ref to allowedGroups for print
 Create new navigation property ref to allowedUsers for print
 
 ### [New-MgPrintTaskDefinition](New-MgPrintTaskDefinition.md)
-Create new navigation property to taskDefinitions for print
+Create a new task definition.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ### [New-MgPrintTaskDefinitionTask](New-MgPrintTaskDefinitionTask.md)
 Create new navigation property to tasks for print
@@ -177,7 +179,7 @@ Delete navigation property tasks for print
 Invoke action resetDefaults
 
 ### [Restore-MgPrintPrinterFactoryDefault](Restore-MgPrintPrinterFactoryDefault.md)
-Invoke action restoreFactoryDefaults
+Restore a printer's default settings to the values specified by the manufacturer.
 
 ### [Update-MgPrint](Update-MgPrint.md)
 Update print

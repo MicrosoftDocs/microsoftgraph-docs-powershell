@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgAgreementFile
 
 ## SYNOPSIS
-Default PDF linked to this agreement.
+Retrieve the details of the default file for an agreement, including the language and version information.
+The file information is specified through the agreementFile object.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgAgreementFile -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Default PDF linked to this agreement.
+Retrieve the details of the default file for an agreement, including the language and version information.
+The file information is specified through the agreementFile object.
 
 ## EXAMPLES
 

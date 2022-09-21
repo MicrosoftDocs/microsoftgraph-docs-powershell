@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgDirectoryObjectMemberObject
 
 ## SYNOPSIS
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ## SYNTAX
 
@@ -39,27 +41,23 @@ Get-MgDirectoryObjectMemberObject -InputObject <IDirectoryObjectsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgDirectoryObjectMemberObject Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.DirectoryObjects
+$params = @{
+	SecurityEnabledOnly = $true
+}
+Get-MgDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgDirectoryObjectMemberObject Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

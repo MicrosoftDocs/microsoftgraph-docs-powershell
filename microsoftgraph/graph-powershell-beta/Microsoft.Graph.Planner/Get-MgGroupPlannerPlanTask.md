@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgGroupPlannerPlanTask
 
 ## SYNOPSIS
-Collection of tasks in the plan.
-Read-only.
-Nullable.
+Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 ## SYNTAX
 
@@ -21,9 +19,7 @@ Get-MgGroupPlannerPlanTask -GroupId <String> -PlannerPlanId <String> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Collection of tasks in the plan.
-Read-only.
-Nullable.
+Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 ## EXAMPLES
 
@@ -57,7 +53,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -133,7 +129,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

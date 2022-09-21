@@ -8,7 +8,7 @@ schema: 2.0.0
 # Stop-MgPrivilegedRoleAssignmentRequest
 
 ## SYNOPSIS
-Invoke action cancel
+Cancel a privilegedRoleAssignmentRequest.
 
 ## SYNTAX
 
@@ -25,27 +25,18 @@ Stop-MgPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceIdentity
 ```
 
 ## DESCRIPTION
-Invoke action cancel
+Cancel a privilegedRoleAssignmentRequest.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Stop-MgPrivilegedRoleAssignmentRequest Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Stop-MgPrivilegedRoleAssignmentRequest -PrivilegedRoleAssignmentRequestId $privilegedRoleAssignmentRequestId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Stop-MgPrivilegedRoleAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

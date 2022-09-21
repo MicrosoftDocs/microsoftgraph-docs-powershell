@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Create new navigation property to timeOffReasons for teams
+Create a new timeOffReason.
 
 ## SYNTAX
 
@@ -41,27 +41,23 @@ New-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Create new navigation property to timeOffReasons for teams
+Create a new timeOffReason.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgTeamScheduleTimeOffReason Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	DisplayName = "Vacation"
+	IconType = "plane"
+	IsActive = $true
+}
+New-MgTeamScheduleTimeOffReason -TeamId $teamId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgTeamScheduleTimeOffReason Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -313,9 +309,7 @@ BODYPARAMETER `<IMicrosoftGraphTimeOffReason1>`: timeOffReason
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name of the timeOffReason. Required.
   - `[IconType <String>]`: timeOffReasonIconType

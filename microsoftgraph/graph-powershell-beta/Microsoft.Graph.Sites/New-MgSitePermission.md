@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSitePermission
 
 ## SYNOPSIS
-Create new navigation property to permissions for sites
+Create a new permission object on a site.
 
 ## SYNTAX
 
@@ -48,27 +48,31 @@ New-MgSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create new navigation property to permissions for sites
+Create a new permission object on a site.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgSitePermission Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	Roles = @(
+		"write"
+	)
+	GrantedToIdentities = @(
+		@{
+			Application = @{
+				Id = "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
+				DisplayName = "Contoso Time Manager App"
+			}
+		}
+	)
+}
+New-MgSitePermission -SiteId $siteId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgSitePermission Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

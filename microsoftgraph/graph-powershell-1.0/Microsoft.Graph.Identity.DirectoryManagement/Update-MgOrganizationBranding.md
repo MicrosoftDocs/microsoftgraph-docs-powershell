@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgOrganizationBranding
 
 ## SYNOPSIS
-Update the navigation property branding in organization
+Update the properties of the default branding object specified by the organizationalBranding resource.
 
 ## SYNTAX
 
@@ -45,27 +45,22 @@ Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
 ```
 
 ## DESCRIPTION
-Update the navigation property branding in organization
+Update the properties of the default branding object specified by the organizationalBranding resource.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgOrganizationBranding Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	SignInPageText = "Default"
+	UsernameHintText = "DefaultHint"
+}
+Update-MgOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgOrganizationBranding Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

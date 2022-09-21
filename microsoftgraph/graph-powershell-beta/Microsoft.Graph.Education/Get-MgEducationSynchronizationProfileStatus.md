@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationSynchronizationProfileStatus
 
 ## SYNOPSIS
-The synchronization status.
+Get the status of a specific school data synchronization profile in the tenant.
+The response will indicate the status of the sync.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Get-MgEducationSynchronizationProfileStatus -InputObject <IEducationIdentity> [-
 ```
 
 ## DESCRIPTION
-The synchronization status.
+Get the status of a specific school data synchronization profile in the tenant.
+The response will indicate the status of the sync.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgEducationSynchronizationProfileStatus Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Education
+Get-MgEducationSynchronizationProfileStatus -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgEducationSynchronizationProfileStatus Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

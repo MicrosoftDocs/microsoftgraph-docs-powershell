@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintPrinterShareAllowedGroupByRef
 
 ## SYNOPSIS
-The groups whose users have access to print using the printer.
+Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgPrintPrinterShareAllowedGroupByRef -PrinterShareId <String> [-Filter <Stri
 ```
 
 ## DESCRIPTION
-The groups whose users have access to print using the printer.
+Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -99,7 +99,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

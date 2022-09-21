@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserProfile
 
 ## SYNOPSIS
-Represents properties that are descriptive of a user in a tenant.
+Retrieve the properties and relationships of a profile object for a given user.
+The **profile** resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
+To get one of these navigation properties, use the corresponding GET method on that property.
+See the methods exposed by **profile**.
 
 ## SYNTAX
 
@@ -24,27 +27,32 @@ Get-MgUserProfile -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Represents properties that are descriptive of a user in a tenant.
+Retrieve the properties and relationships of a profile object for a given user.
+The **profile** resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
+To get one of these navigation properties, use the corresponding GET method on that property.
+See the methods exposed by **profile**.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserProfile Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.People
+# A UPN can also be used as -UserId.
+Get-MgUserProfile -UserId $userId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgUserProfile Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgUserProfile Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.People
+# A UPN can also be used as -UserId.
+Get-MgUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)"
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgUserProfile Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

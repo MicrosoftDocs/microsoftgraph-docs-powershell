@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileProject
 
 ## SYNOPSIS
-Create new navigation property to projects for users
+Use this API to create a new projectParticipation object in a user's profile.
 
 ## SYNTAX
 
@@ -50,27 +50,41 @@ New-MgUserProfileProject -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create new navigation property to projects for users
+Use this API to create a new projectParticipation object in a user's profile.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserProfileProject Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.People
+$params = @{
+	Categories = @(
+		"Branding"
+	)
+	Client = @{
+		DisplayName = "Contoso Ltd."
+		Department = "Corporate Marketing"
+		WebUrl = "https://www.contoso.com"
+	}
+	DisplayName = "Contoso Re-branding Project"
+	Detail = @{
+		Company = @{
+			DisplayName = "Adventureworks Inc."
+			Department = "Consulting"
+			WebUrl = "https://adventureworks.com"
+		}
+		Description = "Rebranding of Contoso Ltd."
+		JobTitle = "Lead PM Rebranding"
+		Role = "project management"
+		Summary = "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
+	}
+}
+# A UPN can also be used as -UserId.
+New-MgUserProfileProject -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserProfileProject Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

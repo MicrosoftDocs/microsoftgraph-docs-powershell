@@ -8,7 +8,8 @@ schema: 2.0.0
 # Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck
 
 ## SYNOPSIS
-Invoke action runHealthChecks
+Run health checks on the cloudPcOnPremisesConnection object.
+This will trigger a new health check for this cloudPcOnPremisesConnection object and change the healthCheckStatus and healthCheckStatusDetails properties when check finished.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck
 ```
 
 ## DESCRIPTION
-Invoke action runHealthChecks
+Run health checks on the cloudPcOnPremisesConnection object.
+This will trigger a new health check for this cloudPcOnPremisesConnection object and change the healthCheckStatus and healthCheckStatusDetails properties when check finished.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

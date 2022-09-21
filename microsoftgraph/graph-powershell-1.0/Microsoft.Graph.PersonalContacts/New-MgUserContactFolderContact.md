@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserContactFolderContact
 
 ## SYNOPSIS
-Create new navigation property to contacts for users
+Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 
 ## SYNTAX
 
@@ -63,27 +63,27 @@ New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> -BodyPar
 ```
 
 ## DESCRIPTION
-Create new navigation property to contacts for users
+Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserContactFolderContact Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.PersonalContacts
+$params = @{
+	ParentFolderId = "parentFolderId-value"
+	Birthday = [System.DateTime]::Parse("datetime-value")
+	FileAs = "fileAs-value"
+	DisplayName = "displayName-value"
+	GivenName = "givenName-value"
+	Initials = "initials-value"
+}
+# A UPN can also be used as -UserId.
+New-MgUserContactFolderContact -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserContactFolderContact Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

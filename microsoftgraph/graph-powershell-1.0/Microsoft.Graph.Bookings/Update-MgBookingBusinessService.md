@@ -54,23 +54,18 @@ Update the navigation property services in solutions
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgBookingBusinessService Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Bookings
+$params = @{
+	"@odata.type" = "#microsoft.graph.bookingService"
+	DefaultDuration = "PT30M"
+}
+Update-MgBookingBusinessService -BookingBusinessId $bookingBusinessId -BookingServiceId $bookingServiceId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgBookingBusinessService Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -579,7 +574,6 @@ BODYPARAMETER `<IMicrosoftGraphBookingService1>`: Represents a particular servic
     - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
   - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.
   - `[StaffMemberIds <String[]>]`: Represents those staff members who provide this service.
-  - `[WebUrl <String>]`: The URL a customer uses to access the service.
 
 CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment\[]>: Contains the set of custom questions associated with a particular service.
   - `[IsRequired <Boolean?>]`: The ID of the custom question.

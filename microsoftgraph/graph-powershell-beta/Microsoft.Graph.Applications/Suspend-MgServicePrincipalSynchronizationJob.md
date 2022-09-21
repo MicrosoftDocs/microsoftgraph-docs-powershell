@@ -8,7 +8,8 @@ schema: 2.0.0
 # Suspend-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
-Invoke action pause
+Temporarily stop a running synchronization job.
+All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Suspend-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action pause
+Temporarily stop a running synchronization job.
+All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Suspend-MgServicePrincipalSynchronizationJob Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+Suspend-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Suspend-MgServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

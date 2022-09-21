@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserOnenoteNotebookSection
 
 ## SYNOPSIS
-The sections in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of section objects from the specified notebook.
 
 ## SYNTAX
 
@@ -21,29 +19,19 @@ Get-MgUserOnenoteNotebookSection -NotebookId <String> -UserId <String> [-ExpandP
 ```
 
 ## DESCRIPTION
-The sections in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of section objects from the specified notebook.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserOnenoteNotebookSection Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Notes
+# A UPN can also be used as -UserId.
+Get-MgUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserOnenoteNotebookSection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -57,7 +45,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -133,7 +121,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

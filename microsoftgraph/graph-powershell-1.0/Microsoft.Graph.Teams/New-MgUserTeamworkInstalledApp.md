@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserTeamworkInstalledApp
 
 ## SYNOPSIS
-Create new navigation property to installedApps for users
+Install an app in the personal scope of the specified user.
 
 ## SYNTAX
 
@@ -39,27 +39,21 @@ New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to installedApps for users
+Install an app in the personal scope of the specified user.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserTeamworkInstalledApp Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	"TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+}
+New-MgUserTeamworkInstalledApp -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserTeamworkInstalledApp Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

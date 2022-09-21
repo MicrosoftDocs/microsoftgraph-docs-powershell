@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgLicenseUser
 
 ## SYNOPSIS
-Invoke action reprocessLicenseAssignment
+Reprocess all group-based license assignments for the user.
+To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
+Also see Identify and resolve license assignment problems for a group in Azure Active Directory for more details.
 
 ## SYNTAX
 
@@ -23,27 +25,20 @@ Invoke-MgLicenseUser -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm] [
 ```
 
 ## DESCRIPTION
-Invoke action reprocessLicenseAssignment
+Reprocess all group-based license assignments for the user.
+To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
+Also see Identify and resolve license assignment problems for a group in Azure Active Directory for more details.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgLicenseUser Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+Invoke-MgLicenseUser -UserId $userId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgLicenseUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

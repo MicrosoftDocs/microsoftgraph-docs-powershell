@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityAttackSimulation
 
 ## SYNOPSIS
-Delete navigation property attackSimulation for security
+Delete navigation property simulations for security
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Remove-MgSecurityAttackSimulation -InputObject <ISecurityIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete navigation property attackSimulation for security
+Delete navigation property simulations for security
 
 ## EXAMPLES
 

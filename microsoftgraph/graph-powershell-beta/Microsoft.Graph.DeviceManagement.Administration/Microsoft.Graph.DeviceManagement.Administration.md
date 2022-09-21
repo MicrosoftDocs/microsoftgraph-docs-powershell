@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-Module Guid: 3697b9aa-8ab2-4d6e-8642-1acaab1b72c0
+Module Guid: dda1ba3f-04fc-4c26-b48d-0d2b5f05a5af
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration
 Help Version: 1.0.0.0
 Locale: en-US
@@ -247,7 +247,8 @@ The gallery image resource on Cloud PC.
 A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
 
 ### [Get-MgDeviceManagementVirtualEndpointOrganizationSetting](Get-MgDeviceManagementVirtualEndpointOrganizationSetting.md)
-The Cloud PC organization settings for a tenant.
+Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
+A tenant has only one **cloudPcOrganizationSettings** object.
 
 ### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicy](Get-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Cloud PC provisioning policy.
@@ -399,19 +400,20 @@ Create new navigation property to groupAssignments for deviceManagement
 Create new navigation property to userPfxCertificates for deviceManagement
 
 ### [New-MgDeviceManagementVirtualEndpointDeviceImage](New-MgDeviceManagementVirtualEndpointDeviceImage.md)
-Create new navigation property to deviceImages for deviceManagement
+Create a new cloudPcDeviceImage object.
+Upload a custom OS image that you can later provision on Cloud PCs.
 
 ### [New-MgDeviceManagementVirtualEndpointExternalPartnerSetting](New-MgDeviceManagementVirtualEndpointExternalPartnerSetting.md)
-Create new navigation property to externalPartnerSettings for deviceManagement
+Create a new cloudPcExternalPartnerSetting object.
 
 ### [New-MgDeviceManagementVirtualEndpointGalleryImage](New-MgDeviceManagementVirtualEndpointGalleryImage.md)
 Create new navigation property to galleryImages for deviceManagement
 
 ### [New-MgDeviceManagementVirtualEndpointOnPremisesConnection](New-MgDeviceManagementVirtualEndpointOnPremisesConnection.md)
-Create new navigation property to onPremisesConnections for deviceManagement
+Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
 
 ### [New-MgDeviceManagementVirtualEndpointProvisioningPolicy](New-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
-Create new navigation property to provisioningPolicies for deviceManagement
+Create a new cloudPcProvisioningPolicy object.
 
 ### [New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 Create new navigation property to assignments for deviceManagement
@@ -426,7 +428,7 @@ Create new navigation property to snapshots for deviceManagement
 Create new navigation property to supportedRegions for deviceManagement
 
 ### [New-MgDeviceManagementVirtualEndpointUserSetting](New-MgDeviceManagementVirtualEndpointUserSetting.md)
-Create new navigation property to userSettings for deviceManagement
+Create a new cloudPcUserSetting object.
 
 ### [New-MgDeviceManagementVirtualEndpointUserSettingAssignment](New-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
 Create new navigation property to assignments for deviceManagement
@@ -765,7 +767,7 @@ Update the navigation property galleryImages in deviceManagement
 Update the navigation property onPremisesConnections in deviceManagement
 
 ### [Update-MgDeviceManagementVirtualEndpointOrganizationSetting](Update-MgDeviceManagementVirtualEndpointOrganizationSetting.md)
-Update the navigation property organizationSettings in deviceManagement
+Update the properties of the cloudPcOrganizationSettings object in a tenant.
 
 ### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicy](Update-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Update the navigation property provisioningPolicies in deviceManagement

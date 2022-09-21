@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserOnlineMeetingRegistration
 
 ## SYNOPSIS
-Delete navigation property registration for users
+Disable and delete the externalMeetingRegistration of an onlineMeeting.
 
 ## SYNTAX
 
@@ -25,27 +25,29 @@ Remove-MgUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdentit
 ```
 
 ## DESCRIPTION
-Delete navigation property registration for users
+Disable and delete the externalMeetingRegistration of an onlineMeeting.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Remove-MgUserOnlineMeetingRegistration Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.CloudCommunications
+# A UPN can also be used as -UserId.
+Remove-MgUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId
 ```
 
-{{ Add description here }}
+This example shows how to use the Remove-MgUserOnlineMeetingRegistration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Remove-MgUserOnlineMeetingRegistration Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.CloudCommunications
+# A UPN can also be used as -UserId.
+Remove-MgUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId
 ```
 
-{{ Add description here }}
+This example shows how to use the Remove-MgUserOnlineMeetingRegistration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

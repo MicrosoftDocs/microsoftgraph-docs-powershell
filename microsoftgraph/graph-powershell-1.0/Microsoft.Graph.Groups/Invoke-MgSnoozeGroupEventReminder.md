@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgSnoozeGroupEventReminder
 
 ## SYNOPSIS
-Invoke action snoozeReminder
+Postpone a reminder for an event in a user calendar until a new time.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Invoke-MgSnoozeGroupEventReminder -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action snoozeReminder
+Postpone a reminder for an event in a user calendar until a new time.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyAccessReviewPolicy
 
 ## SYNOPSIS
-The policy that contains directory-level access review settings.
+Read the properties and relationships of an accessReviewPolicy object.
 
 ## SYNTAX
 
@@ -17,27 +17,18 @@ Get-MgPolicyAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <String[]
 ```
 
 ## DESCRIPTION
-The policy that contains directory-level access review settings.
+Read the properties and relationships of an accessReviewPolicy object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgPolicyAccessReviewPolicy Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgPolicyAccessReviewPolicy
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgPolicyAccessReviewPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

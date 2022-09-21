@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSettingShiftPreference
 
 ## SYNOPSIS
-Get shiftPreferences from users
+Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ## SYNTAX
 
@@ -25,27 +25,18 @@ Get-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get shiftPreferences from users
+Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserSettingShiftPreference Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users
+Get-MgUserSettingShiftPreference -UserId $userId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserSettingShiftPreference Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Restart-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
-Invoke action restart
+Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
+Optionally clears existing the synchronization state and previous errors.
 
 ## SYNTAX
 
@@ -41,27 +42,24 @@ Restart-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action restart
+Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
+Optionally clears existing the synchronization state and previous errors.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Restart-MgServicePrincipalSynchronizationJob Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Criteria = @{
+		ResetScope = "Watermark, Escrows, QuarantineState"
+	}
+}
+Restart-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Restart-MgServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

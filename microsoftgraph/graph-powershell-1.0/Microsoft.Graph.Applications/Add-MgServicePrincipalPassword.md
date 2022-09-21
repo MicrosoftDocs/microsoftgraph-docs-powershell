@@ -8,7 +8,7 @@ schema: 2.0.0
 # Add-MgServicePrincipalPassword
 
 ## SYNOPSIS
-Invoke action addPassword
+Add a strong password or secret to a servicePrincipal object.
 
 ## SYNTAX
 
@@ -39,27 +39,23 @@ Add-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action addPassword
+Add a strong password or secret to a servicePrincipal object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Add-MgServicePrincipalPassword Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	PasswordCredential = @{
+		DisplayName = "Password friendly name"
+	}
+}
+Add-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Add-MgServicePrincipalPassword Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

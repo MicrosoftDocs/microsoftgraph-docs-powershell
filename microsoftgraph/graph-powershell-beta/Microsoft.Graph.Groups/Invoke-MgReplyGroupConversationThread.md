@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgReplyGroupConversationThread
 
 ## SYNOPSIS
-Invoke action reply
+Reply to a thread in a group conversation and add a new post to it.
+You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 
 ## SYNTAX
 
@@ -40,7 +41,8 @@ Invoke-MgReplyGroupConversationThread -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action reply
+Reply to a thread in a group conversation and add a new post to it.
+You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 
 ## EXAMPLES
 

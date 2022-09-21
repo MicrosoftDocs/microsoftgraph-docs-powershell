@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamPrimaryChannelMessageReply
 
 ## SYNOPSIS
-Create new navigation property to replies for teams
+Send a new reply to a chatMessage in a specified channel.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ New-MgTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Create new navigation property to replies for teams
+Send a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgGroupDriveRoot
 
 ## SYNOPSIS
-The root folder of the drive.
-Read-only.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Get-MgGroupDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-The root folder of the drive.
-Read-only.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.
 
 ## EXAMPLES
 

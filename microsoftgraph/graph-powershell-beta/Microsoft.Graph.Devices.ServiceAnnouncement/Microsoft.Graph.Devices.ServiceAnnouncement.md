@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-Module Guid: c3ce7e1c-a7f2-4cf2-bbed-5a2b8ad490a1
+Module Guid: 91c6bf65-bf2b-4eec-9058-fb41ffd63582
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -36,16 +36,16 @@ The zip file of all attachments for a message.
 The attachment content.
 
 ### [Invoke-MgArchiveServiceAnnouncementMessage](Invoke-MgArchiveServiceAnnouncementMessage.md)
-Invoke action archive
+Archive a list of serviceUpdateMessages for the signed in user.
 
 ### [Invoke-MgFavoriteServiceAnnouncementMessage](Invoke-MgFavoriteServiceAnnouncementMessage.md)
-Invoke action favorite
+Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
 ### [Invoke-MgMarkServiceAnnouncementMessageRead](Invoke-MgMarkServiceAnnouncementMessageRead.md)
-Invoke action markRead
+Mark a list of serviceUpdateMessages as **read** for the signed in user.
 
 ### [Invoke-MgMarkServiceAnnouncementMessageUnread](Invoke-MgMarkServiceAnnouncementMessageUnread.md)
-Invoke action markUnread
+Mark a list of serviceUpdateMessages as **unread** for the signed in user.
 
 ### [Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident](Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident.md)
 Invoke function incidentReport
@@ -54,10 +54,10 @@ Invoke function incidentReport
 Invoke function incidentReport
 
 ### [Invoke-MgUnarchiveServiceAnnouncementMessage](Invoke-MgUnarchiveServiceAnnouncementMessage.md)
-Invoke action unarchive
+Unarchive a list of serviceUpdateMessages for the signed in user.
 
 ### [Invoke-MgUnfavoriteServiceAnnouncementMessage](Invoke-MgUnfavoriteServiceAnnouncementMessage.md)
-Invoke action unfavorite
+Remove the favorite status of serviceUpdateMessages for the signed in user.
 
 ### [New-MgServiceAnnouncementHealthOverview](New-MgServiceAnnouncementHealthOverview.md)
 Create new navigation property to healthOverviews for admin

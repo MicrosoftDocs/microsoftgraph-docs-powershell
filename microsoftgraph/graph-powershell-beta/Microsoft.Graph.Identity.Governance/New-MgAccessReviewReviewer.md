@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgAccessReviewReviewer
 
 ## SYNOPSIS
-Create new navigation property to reviewers for accessReviews
+In the Azure AD access reviews feature, update an existing accessReview object to add another user as a reviewer.
+This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified.
+This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
 
 ## SYNTAX
 
@@ -39,27 +41,23 @@ New-MgAccessReviewReviewer -InputObject <IIdentityGovernanceIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to reviewers for accessReviews
+In the Azure AD access reviews feature, update an existing accessReview object to add another user as a reviewer.
+This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified.
+This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgAccessReviewReviewer Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	Id = "006111db-0810-4494-a6df-904d368bd81b"
+}
+New-MgAccessReviewReviewer -AccessReviewId $accessReviewId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgAccessReviewReviewer Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

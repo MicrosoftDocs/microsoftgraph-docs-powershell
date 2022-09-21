@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupSiteDrive
 
 ## SYNOPSIS
-The default drive (document library) for this site.
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ## SYNTAX
 
@@ -44,7 +45,8 @@ Get-MgGroupSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-The default drive (document library) for this site.
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ## EXAMPLES
 
@@ -78,7 +80,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -185,7 +187,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

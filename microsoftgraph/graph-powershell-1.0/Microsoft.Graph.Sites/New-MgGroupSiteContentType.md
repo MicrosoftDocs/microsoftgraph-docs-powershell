@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteContentType
 
 ## SYNOPSIS
-Create new navigation property to contentTypes for groups
+Create a new [contentType][] in a [site][].
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ New-MgGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to contentTypes for groups
+Create a new [contentType][] in a [site][].
 
 ## EXAMPLES
 

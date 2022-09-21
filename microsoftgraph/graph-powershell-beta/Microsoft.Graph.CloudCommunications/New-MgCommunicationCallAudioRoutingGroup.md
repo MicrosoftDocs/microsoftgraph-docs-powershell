@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Create new navigation property to audioRoutingGroups for communications
+Create a new **audioRoutingGroup**.
 
 ## SYNTAX
 
@@ -39,27 +39,28 @@ New-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 ```
 
 ## DESCRIPTION
-Create new navigation property to audioRoutingGroups for communications
+Create a new **audioRoutingGroup**.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgCommunicationCallAudioRoutingGroup Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	Id = "oneToOne"
+	RoutingMode = "oneToOne"
+	Sources = @(
+		"632899f8-2ea1-4604-8413-27bd2892079f"
+	)
+	Receivers = @(
+		"550fae72-d251-43ec-868c-373732c2704f"
+	)
+}
+New-MgCommunicationCallAudioRoutingGroup -CallId $callId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgCommunicationCallAudioRoutingGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

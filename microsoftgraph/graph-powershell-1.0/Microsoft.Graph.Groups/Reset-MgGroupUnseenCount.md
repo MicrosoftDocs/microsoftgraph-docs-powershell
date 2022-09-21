@@ -8,7 +8,8 @@ schema: 2.0.0
 # Reset-MgGroupUnseenCount
 
 ## SYNOPSIS
-Invoke action resetUnseenCount
+Reset the unseenCount of all the posts that the current user has not seen since their last visit.
+Supported for Microsoft 365 groups only.
 
 ## SYNTAX
 
@@ -23,27 +24,19 @@ Reset-MgGroupUnseenCount -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Invoke action resetUnseenCount
+Reset the unseenCount of all the posts that the current user has not seen since their last visit.
+Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Reset-MgGroupUnseenCount Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Groups
+Reset-MgGroupUnseenCount -GroupId $groupId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Reset-MgGroupUnseenCount Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef
 
 ## SYNOPSIS
-Get ref of externalSponsors from identityGovernance
+Retrieve a list of a connectedOrganization's external sponsors.
+The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef -ConnectedO
 ```
 
 ## DESCRIPTION
-Get ref of externalSponsors from identityGovernance
+Retrieve a list of a connectedOrganization's external sponsors.
+The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## EXAMPLES
 
@@ -53,7 +55,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -114,7 +116,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

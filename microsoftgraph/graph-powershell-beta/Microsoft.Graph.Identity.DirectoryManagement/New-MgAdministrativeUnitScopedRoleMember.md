@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Create new navigation property to scopedRoleMembers for administrativeUnits
+Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
+For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
 
 ## SYNTAX
 
@@ -39,27 +40,25 @@ New-MgAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryManagem
 ```
 
 ## DESCRIPTION
-Create new navigation property to scopedRoleMembers for administrativeUnits
+Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
+For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgAdministrativeUnitScopedRoleMember Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	RoleId = "roleId-value"
+	RoleMemberInfo = @{
+		Id = "id-value"
+	}
+}
+New-MgAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgAdministrativeUnitScopedRoleMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

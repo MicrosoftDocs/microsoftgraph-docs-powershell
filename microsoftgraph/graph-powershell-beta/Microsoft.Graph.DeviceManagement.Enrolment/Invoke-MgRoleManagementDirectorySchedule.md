@@ -43,7 +43,7 @@ PS C:\> {{ Add code here }}
 ## PARAMETERS
 
 ### -AppScopeId
-Usage: appScopeId='{appScopeId}'
+Usage: appScopeId='@appScopeId'
 
 ```yaml
 Type: String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectoryScopeId
-Usage: directoryScopeId='{directoryScopeId}'
+Usage: directoryScopeId='@directoryScopeId'
 
 ```yaml
 Type: String
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Usage: principalId='{principalId}'
+Usage: principalId='@principalId'
 
 ```yaml
 Type: String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Usage: roleDefinitionId='{roleDefinitionId}'
+Usage: roleDefinitionId='@roleDefinitionId'
 
 ```yaml
 Type: String

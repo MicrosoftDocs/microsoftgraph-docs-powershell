@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceTermOfUseAgreementFile
 
 ## SYNOPSIS
-Default PDF linked to this agreement.
+Retrieve the details of the default file for an agreement, including the language and version information.
+The file information is specified through the agreementFile object.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Get-MgIdentityGovernanceTermOfUseAgreementFile -InputObject <IIdentityGovernance
 ```
 
 ## DESCRIPTION
-Default PDF linked to this agreement.
+Retrieve the details of the default file for an agreement, including the language and version information.
+The file information is specified through the agreementFile object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgIdentityGovernanceTermOfUseAgreementFile Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgIdentityGovernanceTermOfUseAgreementFile -AgreementId $agreementId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgIdentityGovernanceTermOfUseAgreementFile Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,13 @@ schema: 2.0.0
 # Invoke-MgForwardUserMessage
 
 ## SYNOPSIS
-Invoke action forward
+Forward a message using either JSON or MIME format.
+When using JSON format, you can:\n- Specify either a comment or the **body** property of the `message` parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+This method saves the message in the **Sent Items** folder.
+Alternatively, create a draft to forward a message, and send it later.
 
 ## SYNTAX
 
@@ -41,27 +47,36 @@ Invoke-MgForwardUserMessage -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action forward
+Forward a message using either JSON or MIME format.
+When using JSON format, you can:\n- Specify either a comment or the **body** property of the `message` parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+This method saves the message in the **Sent Items** folder.
+Alternatively, create a draft to forward a message, and send it later.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgForwardUserMessage Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Comment = "comment-value"
+	ToRecipients = @(
+		@{
+			EmailAddress = @{
+				Name = "name-value"
+				Address = "address-value"
+			}
+		}
+	)
+}
+# A UPN can also be used as -UserId.
+Invoke-MgForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgForwardUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserDefaultCalendarSchedule
 
 ## SYNOPSIS
-Invoke action getSchedule
+Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ## SYNTAX
 
@@ -41,27 +41,34 @@ Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action getSchedule
+Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserDefaultCalendarSchedule Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Schedules = @(
+		"adelev@contoso.onmicrosoft.com"
+		"meganb@contoso.onmicrosoft.com"
+	)
+	StartTime = @{
+		DateTime = "2019-03-15T09:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	EndTime = @{
+		DateTime = "2019-03-15T18:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	AvailabilityViewInterval = 60
+}
+# A UPN can also be used as -UserId.
+Get-MgUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserDefaultCalendarSchedule Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

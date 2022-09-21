@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserMailFolderChildFolderMessage
 
 ## SYNOPSIS
-Create new navigation property to messages for users
+Use this API to create a new Message in a mailfolder.
 
 ## SYNTAX
 
@@ -65,27 +65,9 @@ New-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> -BodyParamet
 ```
 
 ## DESCRIPTION
-Create new navigation property to messages for users
+Use this API to create a new Message in a mailfolder.
 
 ## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
 ## PARAMETERS
 

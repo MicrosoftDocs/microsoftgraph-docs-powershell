@@ -8,7 +8,7 @@ schema: 2.0.0
 # Start-MgTeamScheduleTimeCardBreak
 
 ## SYNOPSIS
-Invoke action startBreak
+Start a break in a specific timeCard.
 
 ## SYNTAX
 
@@ -39,27 +39,25 @@ Start-MgTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action startBreak
+Start a break in a specific timeCard.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Start-MgTeamScheduleTimeCardBreak Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	AtAprovedLocation = $true
+	Notes = @{
+		ContentType = "text"
+		Content = "start break smaple notes"
+	}
+}
+Start-MgTeamScheduleTimeCardBreak -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Start-MgTeamScheduleTimeCardBreak Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

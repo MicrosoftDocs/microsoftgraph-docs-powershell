@@ -8,7 +8,12 @@ schema: 2.0.0
 # Send-MgUserMail
 
 ## SYNOPSIS
-Invoke action sendMail
+Send the message specified in the request body using either JSON or MIME format.
+When using JSON format you can include a file attachment in the same **sendMail** action call.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+This method saves the message in the **Sent Items** folder.
+Alternatively, create a draft message to send later.
+To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
 ## SYNTAX
 
@@ -39,27 +44,118 @@ Send-MgUserMail -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action sendMail
+Send the message specified in the request body using either JSON or MIME format.
+When using JSON format you can include a file attachment in the same **sendMail** action call.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+This method saves the message in the **Sent Items** folder.
+Alternatively, create a draft message to send later.
+To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Send-MgUserMail Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Message = @{
+		Subject = "Meet for lunch?"
+		Body = @{
+			ContentType = "Text"
+			Content = "The new cafeteria is open."
+		}
+		ToRecipients = @(
+			@{
+				EmailAddress = @{
+					Address = "fannyd@contoso.onmicrosoft.com"
+				}
+			}
+		)
+		CcRecipients = @(
+			@{
+				EmailAddress = @{
+					Address = "danas@contoso.onmicrosoft.com"
+				}
+			}
+		)
+	}
+	SaveToSentItems = "false"
+}
+# A UPN can also be used as -UserId.
+Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the Send-MgUserMail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Send-MgUserMail Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Message = @{
+		Subject = "Meet for lunch?"
+		Body = @{
+			ContentType = "Text"
+			Content = "The new cafeteria is open."
+		}
+		ToRecipients = @(
+			@{
+				EmailAddress = @{
+					Address = "meganb@contoso.onmicrosoft.com"
+				}
+			}
+		)
+		Attachments = @(
+			@{
+				"@odata.type" = "#microsoft.graph.fileAttachment"
+				Name = "attachment.txt"
+				ContentType = "text/plain"
+				ContentBytes = "SGVsbG8gV29ybGQh"
+			}
+		)
+	}
+}
+# A UPN can also be used as -UserId.
+Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the Send-MgUserMail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Send-MgUserMail Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Message = @{
+		Subject = "9/9/2018: concert"
+		Body = @{
+			ContentType = "HTML"
+			Content = "The group represents Nevada."
+		}
+		ToRecipients = @(
+			@{
+				EmailAddress = @{
+					Address = "AlexW@contoso.OnMicrosoft.com"
+				}
+			}
+		)
+		InternetMessageHeaders = @(
+			@{
+				Name = "x-custom-header-group-name"
+				Value = "Nevada"
+			}
+			@{
+				Name = "x-custom-header-group-id"
+				Value = "NV001"
+			}
+		)
+	}
+}
+# A UPN can also be used as -UserId.
+Send-MgUserMail -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Send-MgUserMail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -221,7 +317,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsFh5OjtUsersUserIdMicrosoftGraphSendmailPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER `<IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Message <IMicrosoftGraphMessage1>]`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

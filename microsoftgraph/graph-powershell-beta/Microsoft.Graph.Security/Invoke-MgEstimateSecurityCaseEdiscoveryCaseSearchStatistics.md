@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics
 
 ## SYNOPSIS
-Invoke action estimateStatistics
+Run an estimate of the number of emails and documents in the eDiscovery search.
+To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics -InputObject <ISecur
 ```
 
 ## DESCRIPTION
-Invoke action estimateStatistics
+Run an estimate of the number of emails and documents in the eDiscovery search.
+To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

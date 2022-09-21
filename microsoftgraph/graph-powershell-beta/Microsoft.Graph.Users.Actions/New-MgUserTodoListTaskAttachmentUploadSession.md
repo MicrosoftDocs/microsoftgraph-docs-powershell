@@ -8,7 +8,11 @@ schema: 2.0.0
 # New-MgUserTodoListTaskAttachmentUploadSession
 
 ## SYNOPSIS
-Invoke action createUploadSession
+Create an upload session to iteratively upload ranges of a file as an attachment to a todoTask.
+As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
+The request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
+This allows the transfer to be resumed, in case the network connection is dropped during the upload.
+The following are the steps to attach a file to a Microsoft To Do task using an upload session: For an example that describes the end-to-end attachment process, see attach files to a To Do task.
 
 ## SYNTAX
 
@@ -41,27 +45,30 @@ New-MgUserTodoListTaskAttachmentUploadSession -InputObject <IUsersActionsIdentit
 ```
 
 ## DESCRIPTION
-Invoke action createUploadSession
+Create an upload session to iteratively upload ranges of a file as an attachment to a todoTask.
+As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
+The request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
+This allows the transfer to be resumed, in case the network connection is dropped during the upload.
+The following are the steps to attach a file to a Microsoft To Do task using an upload session: For an example that describes the end-to-end attachment process, see attach files to a To Do task.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserTodoListTaskAttachmentUploadSession Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	AttachmentInfo = @{
+		AttachmentType = "file"
+		Name = "flower"
+		Size = 3483322
+	}
+}
+# A UPN can also be used as -UserId.
+New-MgUserTodoListTaskAttachmentUploadSession -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserTodoListTaskAttachmentUploadSession Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

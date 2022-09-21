@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Create new navigation property to queries for security
+Create a new ediscoveryReviewSetQuery object.
 
 ## SYNTAX
 
@@ -43,27 +43,22 @@ New-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentity> 
 ```
 
 ## DESCRIPTION
-Create new navigation property to queries for security
+Create a new ediscoveryReviewSetQuery object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+$params = @{
+	DisplayName = "My Query 1"
+	ContentQuery = "(Author="edison")"
+}
+New-MgSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

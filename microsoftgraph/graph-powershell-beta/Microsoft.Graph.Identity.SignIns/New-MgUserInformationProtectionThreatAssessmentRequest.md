@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserInformationProtectionThreatAssessmentRequest
 
 ## SYNOPSIS
-Create new navigation property to threatAssessmentRequests for users
+Create a new threat assessment request.
+A threat assessment request can be one of the following types:
 
 ## SYNTAX
 
@@ -43,7 +44,8 @@ New-MgUserInformationProtectionThreatAssessmentRequest -InputObject <IIdentitySi
 ```
 
 ## DESCRIPTION
-Create new navigation property to threatAssessmentRequests for users
+Create a new threat assessment request.
+A threat assessment request can be one of the following types:
 
 ## EXAMPLES
 

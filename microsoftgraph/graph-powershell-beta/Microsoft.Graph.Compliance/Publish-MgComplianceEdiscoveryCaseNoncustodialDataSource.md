@@ -8,7 +8,7 @@ schema: 2.0.0
 # Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource
 
 ## SYNOPSIS
-Invoke action release
+Releases the non-custodial data source from the case.
 
 ## SYNTAX
 
@@ -25,27 +25,18 @@ Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplian
 ```
 
 ## DESCRIPTION
-Invoke action release
+Releases the non-custodial data source from the case.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Compliance
+Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -NoncustodialDataSourceId $noncustodialDataSourceId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

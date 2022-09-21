@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgChatPinnedMessage
 
 ## SYNOPSIS
-Create new navigation property to pinnedMessages for chats
+Pin a chat message in the specified chat.
+This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
 
 ## SYNTAX
 
@@ -37,27 +38,22 @@ New-MgChatPinnedMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to pinnedMessages for chats
+Pin a chat message in the specified chat.
+This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgChatPinnedMessage Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	"Message@odata.bind" = "https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1616964509832"
+}
+New-MgChatPinnedMessage -ChatId $chatId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgChatPinnedMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

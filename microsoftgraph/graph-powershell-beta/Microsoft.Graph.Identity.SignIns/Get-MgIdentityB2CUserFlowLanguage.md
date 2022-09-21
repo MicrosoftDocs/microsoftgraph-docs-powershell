@@ -38,23 +38,32 @@ Language customization is not enabled by default in B2C user flows.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgIdentityB2CUserFlowLanguage Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgIdentityB2CUserFlowLanguage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgIdentityB2CUserFlowLanguage Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgIdentityB2CUserFlowLanguage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgIdentityB2CUserFlowLanguage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -Filter "isEnabled eq true"
+```
+
+This example shows how to use the Get-MgIdentityB2CUserFlowLanguage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -68,7 +77,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -160,7 +169,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

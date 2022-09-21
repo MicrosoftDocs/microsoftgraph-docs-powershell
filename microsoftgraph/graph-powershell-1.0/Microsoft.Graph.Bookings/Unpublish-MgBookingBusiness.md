@@ -8,7 +8,8 @@ schema: 2.0.0
 # Unpublish-MgBookingBusiness
 
 ## SYNOPSIS
-Prevents the general public from seeing the scheduling page of this business.
+Make the scheduling page of this business not available to external customers.
+Set the **isPublished** property to `false`, and the **publicUrl** property to `null`.
 
 ## SYNTAX
 
@@ -24,27 +25,19 @@ Unpublish-MgBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatI
 ```
 
 ## DESCRIPTION
-Prevents the general public from seeing the scheduling page of this business.
+Make the scheduling page of this business not available to external customers.
+Set the **isPublished** property to `false`, and the **publicUrl** property to `null`.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Unpublish-MgBookingBusiness Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Bookings
+Unpublish-MgBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Unpublish-MgBookingBusiness Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

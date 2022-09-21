@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserDriveListColumn
 
 ## SYNOPSIS
-Create new navigation property to columns for users
+Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ New-MgUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create new navigation property to columns for users
+Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
 ## EXAMPLES
 

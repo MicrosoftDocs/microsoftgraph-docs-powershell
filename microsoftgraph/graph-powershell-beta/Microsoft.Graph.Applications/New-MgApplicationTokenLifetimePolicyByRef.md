@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgApplicationTokenLifetimePolicyByRef
 
 ## SYNOPSIS
-Create new navigation property ref to tokenLifetimePolicies for applications
+Assign a tokenLifetimePolicy to an application or servicePrincipal.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity> -
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to tokenLifetimePolicies for applications
+Assign a tokenLifetimePolicy to an application or servicePrincipal.
 
 ## EXAMPLES
 

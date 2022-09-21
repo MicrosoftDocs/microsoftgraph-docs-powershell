@@ -8,7 +8,8 @@ schema: 2.0.0
 # Enable-MgUserAuthenticationPhoneMethodSmSign
 
 ## SYNOPSIS
-Invoke action enableSmsSignIn
+Enable SMS sign-in for an existing `mobile` phone number registered to a user.
+To be successfully enabled:
 
 ## SYNTAX
 
@@ -25,27 +26,20 @@ Enable-MgUserAuthenticationPhoneMethodSmSign -InputObject <IUsersActionsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action enableSmsSignIn
+Enable SMS sign-in for an existing `mobile` phone number registered to a user.
+To be successfully enabled:
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Enable-MgUserAuthenticationPhoneMethodSmSign Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+# A UPN can also be used as -UserId.
+Enable-MgUserAuthenticationPhoneMethodSmSign -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Enable-MgUserAuthenticationPhoneMethodSmSign Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

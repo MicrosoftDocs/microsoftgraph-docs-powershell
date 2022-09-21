@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserPresence
 
 ## SYNOPSIS
-Get presence from users
+Get a user's presence information.
 
 ## SYNTAX
 
@@ -24,27 +24,28 @@ Get-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get presence from users
+Get a user's presence information.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserPresence Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.CloudCommunications
+Get-MgUserPresence -UserId $userId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgUserPresence Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgUserPresence Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.CloudCommunications
+# A UPN can also be used as -UserId.
+Get-MgUserPresence -UserId $userId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgUserPresence Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

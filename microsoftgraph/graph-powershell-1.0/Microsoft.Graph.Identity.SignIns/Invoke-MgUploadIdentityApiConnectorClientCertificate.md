@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgUploadIdentityApiConnectorClientCertificate
 
 ## SYNOPSIS
-Invoke action uploadClientCertificate
+Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
+The input is a base-64 encoded value of the PKCS 12 certificate contents.
+This method returns an apiConnector.
 
 ## SYNTAX
 
@@ -41,27 +43,24 @@ Invoke-MgUploadIdentityApiConnectorClientCertificate -InputObject <IIdentitySign
 ```
 
 ## DESCRIPTION
-Invoke action uploadClientCertificate
+Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
+The input is a base-64 encoded value of the PKCS 12 certificate contents.
+This method returns an apiConnector.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+	Password = "<password>"
+}
+Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

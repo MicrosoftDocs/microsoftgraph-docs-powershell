@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserMailFolderChildFolder
 
 ## SYNOPSIS
-Create new navigation property to childFolders for users
+Use this API to create a new child mailFolder.
+If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
 
 ## SYNTAX
 
@@ -51,27 +52,43 @@ New-MgUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create new navigation property to childFolders for users
+Use this API to create a new child mailFolder.
+If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserMailFolderChildFolder Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Mail
+$params = @{
+	DisplayName = "displayName-value"
+	IsHidden = $true
+}
+# A UPN can also be used as -UserId.
+New-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserMailFolderChildFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgUserMailFolderChildFolder Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Mail
+$params = @{
+	"@odata.type" = "microsoft.graph.mailSearchFolder"
+	DisplayName = "Weekly digests"
+	IncludeNestedFolders = $true
+	SourceFolderIds = @(
+		"AQMkADYAAAIBDAAAAA=="
+	)
+	FilterQuery = "contains(subject, 'weekly digest')"
+}
+# A UPN can also be used as -UserId.
+New-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserMailFolderChildFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

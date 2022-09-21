@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgMarkUserChatUnreadForUser
 
 ## SYNOPSIS
-Invoke action markChatUnreadForUser
+Mark a chat as unread for a user.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Invoke-MgMarkUserChatUnreadForUser -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action markChatUnreadForUser
+Mark a chat as unread for a user.
 
 ## EXAMPLES
 

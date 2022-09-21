@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
 
 ## SYNOPSIS
-Create new navigation property to roleAssignmentScheduleRequests for roleManagement
+Create a new unifiedRoleAssignmentScheduleRequest object.
+This operation allows both admins and users to add, remove, extend, or renew assignments.
+To run this request, the calling user must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
+See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
 
 ## SYNTAX
 
@@ -34,7 +37,10 @@ New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleAssignmentScheduleRequests for roleManagement
+Create a new unifiedRoleAssignmentScheduleRequest object.
+This operation allows both admins and users to add, remove, extend, or renew assignments.
+To run this request, the calling user must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
+See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
 
 ## EXAMPLES
 

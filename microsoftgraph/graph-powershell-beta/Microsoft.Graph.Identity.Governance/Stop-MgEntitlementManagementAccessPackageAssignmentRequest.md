@@ -8,7 +8,7 @@ schema: 2.0.0
 # Stop-MgEntitlementManagementAccessPackageAssignmentRequest
 
 ## SYNOPSIS
-Invoke action cancel
+In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Stop-MgEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIdenti
 ```
 
 ## DESCRIPTION
-Invoke action cancel
+In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 
 ## EXAMPLES
 

@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgPrivilegedRoleAssignmentEligible
 
 ## SYNOPSIS
-Invoke action makeEligible
+Make the role assignment eligible.
+If the role assignment is already eligible before the call, it does nothing.
+If the role assignment is permanent and the requestor is different from the target user, the role assignment will become eligible and the role will be deactivated for the target user.
+If the requestor is the target user and the role is Security Administrator or Privileged Role Administrator, the role will be activated with the default expiration.
 
 ## SYNTAX
 
@@ -25,27 +28,21 @@ New-MgPrivilegedRoleAssignmentEligible -InputObject <IIdentityGovernanceIdentity
 ```
 
 ## DESCRIPTION
-Invoke action makeEligible
+Make the role assignment eligible.
+If the role assignment is already eligible before the call, it does nothing.
+If the role assignment is permanent and the requestor is different from the target user, the role assignment will become eligible and the role will be deactivated for the target user.
+If the requestor is the target user and the role is Security Administrator or Privileged Role Administrator, the role will be activated with the default expiration.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgPrivilegedRoleAssignmentEligible Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+New-MgPrivilegedRoleAssignmentEligible -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgPrivilegedRoleAssignmentEligible Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

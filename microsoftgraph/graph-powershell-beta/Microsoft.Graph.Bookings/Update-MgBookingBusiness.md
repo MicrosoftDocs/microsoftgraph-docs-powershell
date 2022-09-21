@@ -57,23 +57,24 @@ Update the properties of a bookingBusiness object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgBookingBusiness Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Bookings
+$params = @{
+	Email = "admin@fabrikam.com"
+	SchedulingPolicy = @{
+		TimeSlotInterval = "PT60M"
+		MinimumLeadTime = "P1D"
+		MaximumAdvance = "P30D"
+		SendConfirmationsToOwner = $true
+		AllowStaffSelection = $true
+	}
+}
+Update-MgBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgBookingBusiness Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -330,7 +331,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -560,12 +561,10 @@ APPOINTMENTS <IMicrosoftGraphBookingAppointment\[]>: All the appointments of thi
   - `[CustomerPhone <String>]`: The customer's phone number.
   - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
-  - `[Duration <TimeSpan?>]`: The length of the appointment, denoted in ISO8601 format.
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-  - `[FilledAttendeesCount <Int32?>]`: The current number of customers in the appointment.
   - `[InvoiceAmount <Double?>]`: The billed amount on the invoice.
   - `[InvoiceDate <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[InvoiceId <String>]`: The ID of the invoice.
@@ -633,12 +632,10 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness>`: Represents a Microsot Bookings
     - `[CustomerPhone <String>]`: The customer's phone number.
     - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
     - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
-    - `[Duration <TimeSpan?>]`: The length of the appointment, denoted in ISO8601 format.
     - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
       - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-    - `[FilledAttendeesCount <Int32?>]`: The current number of customers in the appointment.
     - `[InvoiceAmount <Double?>]`: The billed amount on the invoice.
     - `[InvoiceDate <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[InvoiceId <String>]`: The ID of the invoice.
@@ -687,10 +684,8 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness>`: Represents a Microsot Bookings
       - `[Type <String>]`: phoneType
   - `[DefaultCurrencyIso <String>]`: The code for the currency that the business operates in on Microsoft Bookings.
   - `[Email <String>]`: The email address for the business.
-  - `[IsPublished <Boolean?>]`: The scheduling page has been made available to external customers. Use the publish and unpublish actions to set this property. Read-only.
   - `[LanguageTag <String>]`: The language of the self service booking page
   - `[Phone <String>]`: The telephone number for the business. The phone property, together with address and webSiteUrl, appear in the footer of a business scheduling page.
-  - `[PublicUrl <String>]`: The URL for the scheduling page, which is set after you publish or unpublish the page. Read-only.
   - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
@@ -722,7 +717,6 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness>`: Represents a Microsot Bookings
     - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.
     - `[StaffMemberIds <String[]>]`: Represents those staff members who provide this service.
-    - `[WebUrl <String>]`: The URL a customer uses to access the service.
   - `[StaffMembers <IMicrosoftGraphBookingStaffMember[]>]`: All the staff members that provide services in this business. Read-only. Nullable.
     - `[EmailAddress <String>]`: The email address of the person.
     - `[DisplayName <String>]`: A name for the derived entity, which interfaces with customers.
@@ -777,12 +771,10 @@ CALENDARVIEW <IMicrosoftGraphBookingAppointment\[]>: The set of appointments of 
   - `[CustomerPhone <String>]`: The customer's phone number.
   - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
-  - `[Duration <TimeSpan?>]`: The length of the appointment, denoted in ISO8601 format.
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-  - `[FilledAttendeesCount <Int32?>]`: The current number of customers in the appointment.
   - `[InvoiceAmount <Double?>]`: The billed amount on the invoice.
   - `[InvoiceDate <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[InvoiceId <String>]`: The ID of the invoice.
@@ -907,7 +899,6 @@ SERVICES <IMicrosoftGraphBookingService\[]>: All the services offered by this bu
     - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
   - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.
   - `[StaffMemberIds <String[]>]`: Represents those staff members who provide this service.
-  - `[WebUrl <String>]`: The URL a customer uses to access the service.
 
 STAFFMEMBERS <IMicrosoftGraphBookingStaffMember\[]>: All the staff members that provide services in this business. Read-only. Nullable.
   - `[EmailAddress <String>]`: The email address of the person.

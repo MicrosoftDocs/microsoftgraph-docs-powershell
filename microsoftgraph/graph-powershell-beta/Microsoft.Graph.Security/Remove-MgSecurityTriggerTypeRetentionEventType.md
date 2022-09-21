@@ -29,23 +29,14 @@ Delete navigation property retentionEventTypes for security
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Remove-MgSecurityTriggerTypeRetentionEventType Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+Remove-MgSecurityTriggerTypeRetentionEventType -RetentionEventTypeId $retentionEventTypeId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Remove-MgSecurityTriggerTypeRetentionEventType Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

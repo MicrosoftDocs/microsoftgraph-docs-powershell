@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupSiteTermStore
 
 ## SYNOPSIS
-Update the navigation property termStore in groups
+Update the properties of a store object.
 
 ## SYNTAX
 
@@ -69,7 +69,7 @@ Update-MgGroupSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Update the navigation property termStore in groups
+Update the properties of a store object.
 
 ## EXAMPLES
 

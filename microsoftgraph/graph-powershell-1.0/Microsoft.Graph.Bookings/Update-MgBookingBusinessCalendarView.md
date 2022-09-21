@@ -227,7 +227,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -602,12 +602,10 @@ BODYPARAMETER `<IMicrosoftGraphBookingAppointment1>`: Represents a booked appoin
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
-  - `[Duration <TimeSpan?>]`: The length of the appointment, denoted in ISO8601 format.
   - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-  - `[FilledAttendeesCount <Int32?>]`: The current number of customers in the appointment
   - `[IsLocationOnline <Boolean?>]`: If true, indicates that the appointment will be held online. Default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment. If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the Create bookingCustomer operation.

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Grant-MgUserDriveItemPermission
 
 ## SYNOPSIS
-Invoke action grant
+Grant users access to a link represented by a [permission][].
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Grant-MgUserDriveItemPermission -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action grant
+Grant users access to a link represented by a [permission][].
 
 ## EXAMPLES
 

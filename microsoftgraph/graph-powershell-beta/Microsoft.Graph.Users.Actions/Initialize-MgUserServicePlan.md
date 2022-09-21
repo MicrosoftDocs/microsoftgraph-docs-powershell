@@ -8,7 +8,7 @@ schema: 2.0.0
 # Initialize-MgUserServicePlan
 
 ## SYNOPSIS
-Invoke action activateServicePlan
+Activate a service plan with a given `servicePlanId` and `skuId` for a given user.
 
 ## SYNTAX
 
@@ -39,27 +39,23 @@ Initialize-MgUserServicePlan -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action activateServicePlan
+Activate a service plan with a given `servicePlanId` and `skuId` for a given user.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Initialize-MgUserServicePlan Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	ServicePlanId = "28f42d6f-8034-4a0f-9d8a-a218a63b3299"
+	SkuId = "465a2a90-5e59-456d-a7b8-127b9fb2e484"
+}
+# A UPN can also be used as -UserId.
+Initialize-MgUserServicePlan -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Initialize-MgUserServicePlan Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -220,7 +216,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1T7Q69JUsersUserIdMicrosoftGraphActivateserviceplanPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER `<IComponents2P8K5LRequestbodiesActivateserviceplanrequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ServicePlanId <String>]`: 
   - `[SkuId <String>]`: 

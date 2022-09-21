@@ -8,7 +8,8 @@ schema: 2.0.0
 # Disable-MgUserAuthenticationPhoneMethodSmSign
 
 ## SYNOPSIS
-Invoke action disableSmsSignIn
+Disable SMS sign-in for an existing `mobile` phone number registered to a user.
+The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
 
 ## SYNTAX
 
@@ -25,27 +26,20 @@ Disable-MgUserAuthenticationPhoneMethodSmSign -InputObject <IUsersActionsIdentit
 ```
 
 ## DESCRIPTION
-Invoke action disableSmsSignIn
+Disable SMS sign-in for an existing `mobile` phone number registered to a user.
+The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Disable-MgUserAuthenticationPhoneMethodSmSign Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+# A UPN can also be used as -UserId.
+Disable-MgUserAuthenticationPhoneMethodSmSign -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Disable-MgUserAuthenticationPhoneMethodSmSign Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

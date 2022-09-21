@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgSupportedUserOutlookLanguage
 
 ## SYNOPSIS
-Invoke function supportedLanguages
+Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
+When setting up an Outlook client, the user selects the preferred language from this supported list.
+You can subsequently get the preferred language by \ngetting the user's mailbox settings.
 
 ## SYNTAX
 
@@ -23,27 +25,21 @@ Invoke-MgSupportedUserOutlookLanguage -InputObject <IUsersFunctionsIdentity> [<C
 ```
 
 ## DESCRIPTION
-Invoke function supportedLanguages
+Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
+When setting up an Outlook client, the user selects the preferred language from this supported list.
+You can subsequently get the preferred language by \ngetting the user's mailbox settings.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgSupportedUserOutlookLanguage Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Functions
+# A UPN can also be used as -UserId.
+Invoke-MgSupportedUserOutlookLanguage -UserId $userId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgSupportedUserOutlookLanguage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

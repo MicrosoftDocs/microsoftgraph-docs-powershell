@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgSelfPrivilegedRoleAssignmentRequestRoleInfoActivate
 
 ## SYNOPSIS
-Invoke action selfActivate
+Activate the role that is assigned to the requester.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Invoke-MgSelfPrivilegedRoleAssignmentRequestRoleInfoActivate -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Invoke action selfActivate
+Activate the role that is assigned to the requester.
 
 ## EXAMPLES
 

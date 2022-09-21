@@ -8,7 +8,11 @@ schema: 2.0.0
 # New-MgOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Create new navigation property to localizations for organization
+Create a new organizationalBrandingLocalization object.
+This creates a localized branding and at the same time, the default branding if it doesn't exist.
+The default branding is created only once.
+It's loaded when a localized branding isn't configured for the user's browser language.
+To retrieve the default branding, see Get branding.
 
 ## SYNTAX
 
@@ -43,27 +47,27 @@ New-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Create new navigation property to localizations for organization
+Create a new organizationalBrandingLocalization object.
+This creates a localized branding and at the same time, the default branding if it doesn't exist.
+The default branding is created only once.
+It's loaded when a localized branding isn't configured for the user's browser language.
+To retrieve the default branding, see Get branding.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgOrganizationBrandingLocalization Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	BackgroundColor = "#00000F"
+	Id = "fr-FR"
+	SignInPageText = " "
+}
+New-MgOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgOrganizationBrandingLocalization Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

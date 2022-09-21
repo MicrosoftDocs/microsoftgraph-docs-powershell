@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityGovernanceAccessReviewDefinition
 
 ## SYNOPSIS
-Create new navigation property to definitions for identityGovernance
+Create a new accessReviewScheduleDefinition object.
 
 ## SYNTAX
 
@@ -34,27 +34,301 @@ New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAc
 ```
 
 ## DESCRIPTION
-Create new navigation property to definitions for identityGovernance
+Create a new accessReviewScheduleDefinition object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	DisplayName = "Review employee access to LinkedIn"
+	DescriptionForAdmins = "Review employee access to LinkedIn"
+	Scope = @{
+		"@odata.type" = "#microsoft.graph.principalResourceMembershipsScope"
+		PrincipalScopes = @(
+			@{
+				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+				Query = "/users"
+				QueryType = "MicrosoftGraph"
+			}
+		)
+		ResourceScopes = @(
+			@{
+				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+				Query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
+				QueryType = "MicrosoftGraph"
+			}
+		)
+	}
+	Reviewers = @(
+		@{
+			Query = "./manager"
+			QueryType = "MicrosoftGraph"
+			QueryRoot = "decisions"
+		}
+	)
+	BackupReviewers = @(
+		@{
+			Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+			QueryType = "MicrosoftGraph"
+		}
+	)
+	FallbackReviewers = @(
+		@{
+			Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+			QueryType = "MicrosoftGraph"
+		}
+	)
+	Settings = @{
+		MailNotificationsEnabled = $true
+		ReminderNotificationsEnabled = $true
+		JustificationRequiredOnApproval = $true
+		DefaultDecisionEnabled = $true
+		DefaultDecision = "Recommendation"
+		InstanceDurationInDays = 180
+		AutoApplyDecisionsEnabled = $true
+		RecommendationsEnabled = $true
+		Recurrence = @{
+			Pattern = @{
+				Type = "absoluteMonthly"
+				Interval = 6
+				DayOfMonth = 0
+			}
+			Range = @{
+				Type = "numbered"
+				StartDate = "2021-05-05"
+				EndDate = "2022-05-05"
+			}
+		}
+	}
+}
+New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	DisplayName = "Group Multi-stage Access Review"
+	DescriptionForAdmins = "New scheduled access review"
+	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
+	Scope = @{
+		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+		QueryType = "MicrosoftGraph"
+	}
+	StageSettings = @(
+		@{
+			StageId = "1"
+			DurationInDays = 2
+			RecommendationsEnabled = $false
+			DecisionsThatWillMoveToNextStage = @(
+				"NotReviewed"
+				"Approve"
+			)
+			Reviewers = @(
+				@{
+					Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+					QueryType = "MicrosoftGraph"
+				}
+			)
+		}
+		@{
+			StageId = "2"
+			DependsOn = @(
+				"1"
+			)
+			DurationInDays = 2
+			RecommendationsEnabled = $true
+			Reviewers = @(
+				@{
+					Query = "./manager"
+					QueryType = "MicrosoftGraph"
+					QueryRoot = "decisions"
+				}
+			)
+			FallbackReviewers = @(
+				@{
+					Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+					QueryType = "MicrosoftGraph"
+				}
+			)
+		}
+	)
+	Settings = @{
+		InstanceDurationInDays = 4
+		Recurrence = @{
+			Pattern = @{
+				Type = "weekly"
+				Interval = 1
+			}
+			Range = @{
+				Type = "noEnd"
+				StartDate = "2020-09-08T12:02:30.667Z"
+			}
+		}
+		DecisionHistoriesForReviewersEnabled = $true
+	}
+}
+New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	DisplayName = "Review inactive guests on teams"
+	DescriptionForAdmins = "Control guest user access to our teams."
+	DescriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more."
+	InstanceEnumerationScope = @{
+		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+		Query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
+		QueryType = "MicrosoftGraph"
+	}
+	Scope = @{
+		"@odata.type" = "#microsoft.graph.accessReviewInactiveUsersQueryScope"
+		Query = "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')"
+		QueryType = "MicrosoftGraph"
+		InactiveDuration = "P30D"
+	}
+	Reviewers = @(
+		@{
+			Query = "./owners"
+			QueryType = "MicrosoftGraph"
+		}
+	)
+	FallbackReviewers = @(
+		@{
+			Query = "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+			QueryType = "MicrosoftGraph"
+		}
+	)
+	Settings = @{
+		MailNotificationsEnabled = $true
+		ReminderNotificationsEnabled = $true
+		JustificationRequiredOnApproval = $true
+		RecommendationsEnabled = $true
+		InstanceDurationInDays = 3
+		Recurrence = @{
+			Pattern = @{
+				Type = "absoluteMonthly"
+				DayOfMonth = 5
+				Interval = 3
+			}
+			Range = @{
+				Type = "noEnd"
+				StartDate = "2020-05-04T00:00:00.000Z"
+			}
+		}
+		DefaultDecisionEnabled = $true
+		DefaultDecision = "Deny"
+		AutoApplyDecisionsEnabled = $true
+	}
+}
+New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
+```
+
+This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	DisplayName = "Test create"
+	DescriptionForAdmins = "New scheduled access review"
+	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
+	Scope = @{
+		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+		QueryType = "MicrosoftGraph"
+	}
+	Reviewers = @(
+		@{
+			Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+			QueryType = "MicrosoftGraph"
+		}
+	)
+	Settings = @{
+		InstanceDurationInDays = 1
+		Recurrence = @{
+			Pattern = @{
+				Type = "weekly"
+				Interval = 1
+			}
+			Range = @{
+				Type = "noEnd"
+				StartDate = "2020-09-08T12:02:30.667Z"
+			}
+		}
+		RecommendationInsightSettings = @(
+			@{
+				"@odata.type" = "#microsoft.graph.userLastSignInRecommendationInsightSetting"
+				RecommendationLookBackDuration = "P30D"
+				SignInScope = "tenant"
+			}
+			@{
+				"@odata.type" = "#microsoft.graph.groupPeerOutlierRecommendationInsightSettings"
+			}
+		)
+	}
+}
+New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
+```
+
+This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Using the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	DisplayName = "Test create"
+	DescriptionForAdmins = "New scheduled access review"
+	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
+	Scope = @{
+		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+		QueryType = "MicrosoftGraph"
+	}
+	Reviewers = @(
+		@{
+			Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+			QueryType = "MicrosoftGraph"
+		}
+	)
+	Settings = @{
+		MailNotificationsEnabled = $true
+		ReminderNotificationsEnabled = $true
+		JustificationRequiredOnApproval = $true
+		DefaultDecisionEnabled = $false
+		DefaultDecision = "None"
+		InstanceDurationInDays = 1
+		RecommendationsEnabled = $true
+		Recurrence = @{
+			Pattern = @{
+				Type = "weekly"
+				Interval = 1
+			}
+			Range = @{
+				Type = "noEnd"
+				StartDate = "2020-09-08T12:02:30.667Z"
+			}
+		}
+	}
+}
+New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
+```
+
+This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -440,7 +714,7 @@ BACKUPREVIEWERS <IMicrosoftGraphAccessReviewReviewerScope1\[]>: .
   - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewScheduleDefinition
+BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition1>`: accessReviewScheduleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]`: Defines the list of additional users or group members to be notified of the access review progress.
@@ -464,7 +738,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewSch
   - `[FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See accessReviewReviewerScope. Replaces backupReviewers. Supports $select. NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
   - `[InstanceEnumerationScope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Instances <IMicrosoftGraphAccessReviewInstance[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+  - `[Instances <IMicrosoftGraphAccessReviewInstance1[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
     - `[Id <String>]`: 
     - `[ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: Returns the collection of reviewers who were contacted to complete this review. While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities. Supports $select. Read-only.
       - `[Id <String>]`: 
@@ -481,7 +755,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewSch
       - `[Insights <IMicrosoftGraphGovernanceInsight[]>]`: Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an accessReviewInstanceDecisionItem.
         - `[Id <String>]`: 
         - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
-      - `[Instance <IMicrosoftGraphAccessReviewInstance>]`: accessReviewInstance
+      - `[Instance <IMicrosoftGraphAccessReviewInstance1>]`: accessReviewInstance
       - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
       - `[Principal <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -502,7 +776,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewSch
       - `[ReviewedDateTime <DateTime?>]`: The timestamp when the review decision occurred. Supports $select. Read-only.
       - `[Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]`: accessReviewInstanceDecisionItemTarget
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]`: accessReviewScheduleDefinition
+    - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition1>]`: accessReviewScheduleDefinition
     - `[EndDateTime <DateTime?>]`: DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $select. Read-only.
     - `[Errors <IMicrosoftGraphAccessReviewError[]>]`: Collection of errors in an access review instance lifecycle. Read-only.
       - `[Code <String>]`: The error code.
@@ -579,7 +853,7 @@ FALLBACKREVIEWERS <IMicrosoftGraphAccessReviewReviewerScope1\[]>: This collectio
   - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 
-INSTANCES <IMicrosoftGraphAccessReviewInstance\[]>: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+INSTANCES <IMicrosoftGraphAccessReviewInstance1\[]>: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
   - `[Id <String>]`: 
   - `[ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: Returns the collection of reviewers who were contacted to complete this review. While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities. Supports $select. Read-only.
     - `[Id <String>]`: 
@@ -601,7 +875,7 @@ INSTANCES <IMicrosoftGraphAccessReviewInstance\[]>: Set of access reviews instan
     - `[Insights <IMicrosoftGraphGovernanceInsight[]>]`: Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an accessReviewInstanceDecisionItem.
       - `[Id <String>]`: 
       - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
-    - `[Instance <IMicrosoftGraphAccessReviewInstance>]`: accessReviewInstance
+    - `[Instance <IMicrosoftGraphAccessReviewInstance1>]`: accessReviewInstance
     - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
     - `[Principal <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -622,7 +896,7 @@ INSTANCES <IMicrosoftGraphAccessReviewInstance\[]>: Set of access reviews instan
     - `[ReviewedDateTime <DateTime?>]`: The timestamp when the review decision occurred. Supports $select. Read-only.
     - `[Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]`: accessReviewInstanceDecisionItemTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]`: accessReviewScheduleDefinition
+  - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition1>]`: accessReviewScheduleDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]`: Defines the list of additional users or group members to be notified of the access review progress.
@@ -641,7 +915,7 @@ INSTANCES <IMicrosoftGraphAccessReviewInstance\[]>: Set of access reviews instan
     - `[FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See accessReviewReviewerScope. Replaces backupReviewers. Supports $select. NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
     - `[InstanceEnumerationScope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Instances <IMicrosoftGraphAccessReviewInstance[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+    - `[Instances <IMicrosoftGraphAccessReviewInstance1[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp when the access review series was last modified. Supports $select. Read-only.
     - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of access review scopes is used to define who are the reviewers. The reviewers property is only updatable if individual users are assigned as reviewers. Required on create. Supports $select. For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API. NOTE: The value of this property will be ignored if reviewers are assigned through the stageSettings property.
     - `[Scope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope

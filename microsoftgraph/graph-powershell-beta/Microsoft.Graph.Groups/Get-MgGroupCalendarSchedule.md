@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupCalendarSchedule
 
 ## SYNOPSIS
-Invoke action getSchedule
+Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-MgGroupCalendarSchedule -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action getSchedule
+Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ## EXAMPLES
 

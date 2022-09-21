@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
-Create new navigation property to policies for identity
+Create a new conditionalAccessPolicy.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditional
 ```
 
 ## DESCRIPTION
-Create new navigation property to policies for identity
+Create a new conditionalAccessPolicy.
 
 ## EXAMPLES
 

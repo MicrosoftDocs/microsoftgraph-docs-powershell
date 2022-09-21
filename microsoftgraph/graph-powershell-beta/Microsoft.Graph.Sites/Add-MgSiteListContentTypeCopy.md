@@ -8,7 +8,7 @@ schema: 2.0.0
 # Add-MgSiteListContentTypeCopy
 
 ## SYNOPSIS
-Invoke action addCopy
+Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## SYNTAX
 
@@ -39,27 +39,21 @@ Add-MgSiteListContentTypeCopy -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action addCopy
+Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Add-MgSiteListContentTypeCopy Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	ContentType = "https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101"
+}
+Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Add-MgSiteListContentTypeCopy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

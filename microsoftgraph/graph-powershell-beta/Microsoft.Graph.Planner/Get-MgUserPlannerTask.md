@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserPlannerTask
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Returns the plannerTasks assigned to the user.
+Retrieve a list of **plannertask** objects assigned to a User.
 
 ## SYNTAX
 
@@ -21,29 +19,19 @@ Get-MgUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Returns the plannerTasks assigned to the user.
+Retrieve a list of **plannertask** objects assigned to a User.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserPlannerTask Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Planner
+# A UPN can also be used as -UserId.
+Get-MgUserPlannerTask -UserId $userId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserPlannerTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -57,7 +45,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -118,7 +106,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

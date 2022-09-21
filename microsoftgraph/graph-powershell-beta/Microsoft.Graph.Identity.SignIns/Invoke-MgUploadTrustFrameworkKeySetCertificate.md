@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgUploadTrustFrameworkKeySetCertificate
 
 ## SYNOPSIS
-Invoke action uploadCertificate
+Upload a certificate to a trustFrameworkKeyset.
+The input is a base-64 encoded value of the certificate contents.
+This method returns trustFrameworkKey.
 
 ## SYNTAX
 
@@ -39,27 +41,23 @@ Invoke-MgUploadTrustFrameworkKeySetCertificate -InputObject <IIdentitySignInsIde
 ```
 
 ## DESCRIPTION
-Invoke action uploadCertificate
+Upload a certificate to a trustFrameworkKeyset.
+The input is a base-64 encoded value of the certificate contents.
+This method returns trustFrameworkKey.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgUploadTrustFrameworkKeySetCertificate Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Key = "key-value"
+}
+Invoke-MgUploadTrustFrameworkKeySetCertificate -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgUploadTrustFrameworkKeySetCertificate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

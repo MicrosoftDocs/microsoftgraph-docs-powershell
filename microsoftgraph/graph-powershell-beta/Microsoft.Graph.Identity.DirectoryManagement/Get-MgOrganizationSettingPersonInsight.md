@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgOrganizationSettingPersonInsight
 
 ## SYNOPSIS
-Contains the properties that are configured by an administrator for the visibility of a list of people relevant and working with a user in Microsoft 365.
-List peopleInsights returns the settings to display or return people insights in an organization.
+Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
+To learn how to customize privacy for people insights in an organization, see Customize people insights privacy.
 
 ## SYNTAX
 
@@ -26,28 +26,19 @@ Get-MgOrganizationSettingPersonInsight -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Contains the properties that are configured by an administrator for the visibility of a list of people relevant and working with a user in Microsoft 365.
-List peopleInsights returns the settings to display or return people insights in an organization.
+Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
+To learn how to customize privacy for people insights in an organization, see Customize people insights privacy.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgOrganizationSettingPersonInsight Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Get-MgOrganizationSettingPersonInsight -OrganizationId $organizationId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgOrganizationSettingPersonInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

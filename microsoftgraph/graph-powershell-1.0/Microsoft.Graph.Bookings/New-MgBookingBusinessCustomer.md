@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBookingBusinessCustomer
 
 ## SYNOPSIS
-Create new navigation property to customers for solutions
+Create a new bookingCustomer object.
 
 ## SYNTAX
 
@@ -37,27 +37,27 @@ New-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> -BodyParameter <H
 ```
 
 ## DESCRIPTION
-Create new navigation property to customers for solutions
+Create a new bookingCustomer object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgBookingBusinessCustomer Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Bookings
+$params = @{
+	"@odata.type" = "#microsoft.graph.bookingCustomer"
+	DisplayName = "Joni Sherman"
+	EmailAddress = "jonis@relecloud.com"
+	Addresses = @(
+	)
+	Phones = @(
+	)
+}
+New-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgBookingBusinessCustomer Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

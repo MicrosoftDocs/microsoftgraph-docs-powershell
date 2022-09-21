@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgGroupSetting
 
 ## SYNOPSIS
-Create new navigation property to settings for groups
+Create a new setting based on the templates available in directorySettingTemplates.
+These settings can be at the tenant-level or at the group level.
+Group settings apply to only Microsoft 365 groups.
+The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.
 
 ## SYNTAX
 
@@ -38,27 +41,30 @@ New-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Create new navigation property to settings for groups
+Create a new setting based on the templates available in directorySettingTemplates.
+These settings can be at the tenant-level or at the group level.
+Group settings apply to only Microsoft 365 groups.
+The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgGroupSetting Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Groups
+$params = @{
+	TemplateId = "08d542b9-071f-4e16-94b0-74abb372e3d9"
+	Values = @(
+		@{
+			Name = "AllowToAddGuests"
+			Value = "false"
+		}
+	)
+}
+New-MgGroupSetting -GroupId $groupId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgGroupSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

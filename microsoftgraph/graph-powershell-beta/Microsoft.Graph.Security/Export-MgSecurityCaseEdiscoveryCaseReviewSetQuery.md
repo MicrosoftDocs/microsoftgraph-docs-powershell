@@ -8,7 +8,8 @@ schema: 2.0.0
 # Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Invoke action export
+Initiate an export from a **reviewSet** query.
+For details, see Export documents from a review set in eDiscovery (Premium).
 
 ## SYNTAX
 
@@ -44,27 +45,25 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentit
 ```
 
 ## DESCRIPTION
-Invoke action export
+Initiate an export from a **reviewSet** query.
+For details, see Export documents from a review set in eDiscovery (Premium).
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+$params = @{
+	OutputName = "Export reviewset query via API"
+	Description = "Export for the Contoso investigation 2"
+	ExportOptions = "originalFiles,fileInfo,tags"
+	ExportStructure = "directory"
+}
+Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

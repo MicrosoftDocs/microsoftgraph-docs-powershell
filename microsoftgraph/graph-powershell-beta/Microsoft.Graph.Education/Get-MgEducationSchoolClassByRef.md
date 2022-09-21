@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgEducationSchoolClassByRef
 
 ## SYNOPSIS
-Classes taught at the school.
-Nullable.
+Retrieve a list of classes owned by a school.
 
 ## SYNTAX
 
@@ -20,8 +19,7 @@ Get-MgEducationSchoolClassByRef -EducationSchoolId <String> [-Filter <String>] [
 ```
 
 ## DESCRIPTION
-Classes taught at the school.
-Nullable.
+Retrieve a list of classes owned by a school.
 
 ## EXAMPLES
 
@@ -55,7 +53,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -116,7 +114,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Export-MgUserPersonalData
 
 ## SYNOPSIS
-Invoke action exportPersonalData
+Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
+This data includes the user's data stored in OneDrive and their activity reports.
+For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
 ## SYNTAX
 
@@ -39,27 +41,23 @@ Export-MgUserPersonalData -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action exportPersonalData
+Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
+This data includes the user's data stored in OneDrive and their activity reports.
+For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Export-MgUserPersonalData Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	StorageLocation = "storageLocation-value"
+}
+Export-MgUserPersonalData -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Export-MgUserPersonalData Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -205,7 +203,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Xhdcw6UsersUserIdMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER `<IComponents1Fpckw4RequestbodiesExportpersonaldatarequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[StorageLocation <String>]`: 
 

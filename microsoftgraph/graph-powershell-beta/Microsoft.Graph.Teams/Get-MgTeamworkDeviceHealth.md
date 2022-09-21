@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgTeamworkDeviceHealth
 
 ## SYNOPSIS
-The health properties of the device.
+Get the health details of a Microsoft Teams-enabled device.
+Device health is calculated based on the device configuration and other device parameters.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Get-MgTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-The health properties of the device.
+Get the health details of a Microsoft Teams-enabled device.
+Device health is calculated based on the device configuration and other device parameters.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgTeamworkDeviceHealth Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamworkDeviceHealth -TeamworkDeviceId $teamworkDeviceId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgTeamworkDeviceHealth Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

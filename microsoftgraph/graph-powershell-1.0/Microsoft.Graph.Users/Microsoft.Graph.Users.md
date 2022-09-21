@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 73d5e246-8d31-4e49-aae9-2eeefe36365c
+Module Guid: ff031865-764a-4161-8a0c-b4b5f686fd4e
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -36,16 +36,12 @@ A collection of this user's license details.
 Read-only.
 
 ### [Get-MgUserManager](Get-MgUserManager.md)
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
-Supports $expand.
+Returns the user or organizational contact assigned as the user's manager.
+Optionally, you can expand the manager's chain up to the root node.
 
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
-Supports $expand.
+Returns the user or organizational contact assigned as the user's manager.
+Optionally, you can expand the manager's chain up to the root node.
 
 ### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
 The groups and directory roles that the user is a member of.
@@ -94,7 +90,7 @@ Supports $expand.
 Get settings from users
 
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
-Get shiftPreferences from users
+Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
 The task lists in the users mailbox.
@@ -151,19 +147,19 @@ Read-only.
 Nullable.
 
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
-Create new navigation property to masterCategories for users
+Create an outlookCategory object in the user's master list of categories.
 
 ### [New-MgUserPhoto](New-MgUserPhoto.md)
 Create new navigation property to photos for users
 
 ### [New-MgUserTodoList](New-MgUserTodoList.md)
-Create new navigation property to lists for users
+Create a new lists object.
 
 ### [New-MgUserTodoListExtension](New-MgUserTodoListExtension.md)
 Create new navigation property to extensions for users
 
 ### [New-MgUserTodoListTask](New-MgUserTodoListTask.md)
-Create new navigation property to tasks for users
+Create a new task object in a specified todoTaskList.
 
 ### [New-MgUserTodoListTaskAttachment](New-MgUserTodoListTaskAttachment.md)
 Create new navigation property to attachments for users
@@ -178,7 +174,9 @@ Create new navigation property to checklistItems for users
 Create new navigation property to extensions for users
 
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
-Create new navigation property to linkedResources for users
+Create a linkedResource object to associate a specified task with an item in a partner application.
+For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a **linkedResource** object to track its association.
+You can also create a **linkedResource** object while creating a task.
 
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
 A collection of resources linked to the task.
@@ -267,7 +265,7 @@ Update the navigation property photo in users
 Update the navigation property settings in users
 
 ### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
-Update the navigation property shiftPreferences in users
+Update the properties and relationships of a shiftPreferences object.
 
 ### [Update-MgUserTodoList](Update-MgUserTodoList.md)
 Update the navigation property lists in users

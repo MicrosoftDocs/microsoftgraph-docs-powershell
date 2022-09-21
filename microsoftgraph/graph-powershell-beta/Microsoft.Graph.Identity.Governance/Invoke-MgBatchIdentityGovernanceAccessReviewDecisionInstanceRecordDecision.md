@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
 
 ## SYNOPSIS
-Invoke action batchRecordDecisions
+Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using **principalId**, **resourceId**, or neither.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Invoke-MgBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
 ```
 
 ## DESCRIPTION
-Invoke action batchRecordDecisions
+Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using **principalId**, **resourceId**, or neither.
 
 ## EXAMPLES
 

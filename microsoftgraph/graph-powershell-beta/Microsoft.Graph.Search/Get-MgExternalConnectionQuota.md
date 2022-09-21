@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgExternalConnectionQuota
 
 ## SYNOPSIS
-Get quota from external
+Retrieve the properties and relationships of a connectionQuota object.
 
 ## SYNTAX
 
@@ -25,27 +25,27 @@ Get-MgExternalConnectionQuota -InputObject <ISearchIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get quota from external
+Retrieve the properties and relationships of a connectionQuota object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgExternalConnectionQuota Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Search
+Get-MgExternalConnectionQuota -ExternalConnectionId $externalConnectionId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgExternalConnectionQuota Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgExternalConnectionQuota Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Search
+Get-MgExternalConnectionQuota -ExternalConnectionId $externalConnectionId -OutFile $outFileId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgExternalConnectionQuota Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

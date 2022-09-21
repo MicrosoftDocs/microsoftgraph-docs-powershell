@@ -57,23 +57,54 @@ Update the navigation property instances in identityGovernance
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgIdentityGovernanceAccessReviewDefinitionInstance Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	Scope = @{
+		"@odata.type" = "#microsoft.graph.principalResourceMembershipsScope"
+		PrincipalScopes = @(
+			@{
+				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+				Query = "/v1.0/users"
+				QueryType = "MicrosoftGraph"
+			}
+			@{
+				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+				Query = "/v1.0/groups"
+				QueryType = "MicrosoftGraph"
+			}
+		)
+		ResourceScopes = @(
+			@{
+				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+				Query = "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+				QueryType = "MicrosoftGraph"
+			}
+		)
+	}
+	Reviewers = @(
+		@{
+			Query = "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
+			QueryType = "MicrosoftGraph"
+		}
+	)
+	FallbackReviewers = @(
+		@{
+			Query = "/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
+			QueryType = "MicrosoftGraph"
+		}
+		@{
+			Query = "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
+			QueryType = "MicrosoftGraph"
+		}
+	)
+}
+Update-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -428,7 +459,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewInstance>`: accessReviewInstance
+BODYPARAMETER `<IMicrosoftGraphAccessReviewInstance1>`: accessReviewInstance
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: Returns the collection of reviewers who were contacted to complete this review. While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities. Supports $select. Read-only.
@@ -451,7 +482,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessReviewInstance>`: accessReviewInstance
     - `[Insights <IMicrosoftGraphGovernanceInsight[]>]`: Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an accessReviewInstanceDecisionItem.
       - `[Id <String>]`: 
       - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
-    - `[Instance <IMicrosoftGraphAccessReviewInstance>]`: accessReviewInstance
+    - `[Instance <IMicrosoftGraphAccessReviewInstance1>]`: accessReviewInstance
     - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
     - `[Principal <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -472,7 +503,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessReviewInstance>`: accessReviewInstance
     - `[ReviewedDateTime <DateTime?>]`: The timestamp when the review decision occurred. Supports $select. Read-only.
     - `[Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]`: accessReviewInstanceDecisionItemTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]`: accessReviewScheduleDefinition
+  - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition1>]`: accessReviewScheduleDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]`: Defines the list of additional users or group members to be notified of the access review progress.
@@ -491,7 +522,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessReviewInstance>`: accessReviewInstance
     - `[FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See accessReviewReviewerScope. Replaces backupReviewers. Supports $select. NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
     - `[InstanceEnumerationScope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Instances <IMicrosoftGraphAccessReviewInstance[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+    - `[Instances <IMicrosoftGraphAccessReviewInstance1[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp when the access review series was last modified. Supports $select. Read-only.
     - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of access review scopes is used to define who are the reviewers. The reviewers property is only updatable if individual users are assigned as reviewers. Required on create. Supports $select. For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API. NOTE: The value of this property will be ignored if reviewers are assigned through the stageSettings property.
     - `[Scope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
@@ -577,7 +608,7 @@ DECISIONS <IMicrosoftGraphAccessReviewInstanceDecisionItem1\[]>: Each user revie
   - `[Insights <IMicrosoftGraphGovernanceInsight[]>]`: Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an accessReviewInstanceDecisionItem.
     - `[Id <String>]`: 
     - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
-  - `[Instance <IMicrosoftGraphAccessReviewInstance>]`: accessReviewInstance
+  - `[Instance <IMicrosoftGraphAccessReviewInstance1>]`: accessReviewInstance
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: Returns the collection of reviewers who were contacted to complete this review. While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities. Supports $select. Read-only.
@@ -586,7 +617,7 @@ DECISIONS <IMicrosoftGraphAccessReviewInstanceDecisionItem1\[]>: Each user revie
       - `[DisplayName <String>]`: Name of reviewer.
       - `[UserPrincipalName <String>]`: User principal name of the reviewer.
     - `[Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem1[]>]`: Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
-    - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]`: accessReviewScheduleDefinition
+    - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition1>]`: accessReviewScheduleDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
       - `[AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]`: Defines the list of additional users or group members to be notified of the access review progress.
@@ -605,7 +636,7 @@ DECISIONS <IMicrosoftGraphAccessReviewInstanceDecisionItem1\[]>: Each user revie
       - `[FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See accessReviewReviewerScope. Replaces backupReviewers. Supports $select. NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
       - `[InstanceEnumerationScope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Instances <IMicrosoftGraphAccessReviewInstance[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+      - `[Instances <IMicrosoftGraphAccessReviewInstance1[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
       - `[LastModifiedDateTime <DateTime?>]`: Timestamp when the access review series was last modified. Supports $select. Read-only.
       - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of access review scopes is used to define who are the reviewers. The reviewers property is only updatable if individual users are assigned as reviewers. Required on create. Supports $select. For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API. NOTE: The value of this property will be ignored if reviewers are assigned through the stageSettings property.
       - `[Scope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
@@ -690,7 +721,7 @@ DECISIONS <IMicrosoftGraphAccessReviewInstanceDecisionItem1\[]>: Each user revie
   - `[Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]`: accessReviewInstanceDecisionItemTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-DEFINITION `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewScheduleDefinition
+DEFINITION `<IMicrosoftGraphAccessReviewScheduleDefinition1>`: accessReviewScheduleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]`: Defines the list of additional users or group members to be notified of the access review progress.
@@ -714,7 +745,7 @@ DEFINITION `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewSchedu
   - `[FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See accessReviewReviewerScope. Replaces backupReviewers. Supports $select. NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
   - `[InstanceEnumerationScope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Instances <IMicrosoftGraphAccessReviewInstance[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+  - `[Instances <IMicrosoftGraphAccessReviewInstance1[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
     - `[Id <String>]`: 
     - `[ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: Returns the collection of reviewers who were contacted to complete this review. While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities. Supports $select. Read-only.
       - `[Id <String>]`: 
@@ -731,7 +762,7 @@ DEFINITION `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewSchedu
       - `[Insights <IMicrosoftGraphGovernanceInsight[]>]`: Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an accessReviewInstanceDecisionItem.
         - `[Id <String>]`: 
         - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
-      - `[Instance <IMicrosoftGraphAccessReviewInstance>]`: accessReviewInstance
+      - `[Instance <IMicrosoftGraphAccessReviewInstance1>]`: accessReviewInstance
       - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
       - `[Principal <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -752,7 +783,7 @@ DEFINITION `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewSchedu
       - `[ReviewedDateTime <DateTime?>]`: The timestamp when the review decision occurred. Supports $select. Read-only.
       - `[Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]`: accessReviewInstanceDecisionItemTarget
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]`: accessReviewScheduleDefinition
+    - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition1>]`: accessReviewScheduleDefinition
     - `[EndDateTime <DateTime?>]`: DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $select. Read-only.
     - `[Errors <IMicrosoftGraphAccessReviewError[]>]`: Collection of errors in an access review instance lifecycle. Read-only.
       - `[Code <String>]`: The error code.
@@ -923,7 +954,7 @@ STAGES <IMicrosoftGraphAccessReviewStage1\[]>: If the instance has multiple stag
     - `[Insights <IMicrosoftGraphGovernanceInsight[]>]`: Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an accessReviewInstanceDecisionItem.
       - `[Id <String>]`: 
       - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
-    - `[Instance <IMicrosoftGraphAccessReviewInstance>]`: accessReviewInstance
+    - `[Instance <IMicrosoftGraphAccessReviewInstance1>]`: accessReviewInstance
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
       - `[ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: Returns the collection of reviewers who were contacted to complete this review. While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities. Supports $select. Read-only.
@@ -932,7 +963,7 @@ STAGES <IMicrosoftGraphAccessReviewStage1\[]>: If the instance has multiple stag
         - `[DisplayName <String>]`: Name of reviewer.
         - `[UserPrincipalName <String>]`: User principal name of the reviewer.
       - `[Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem1[]>]`: Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
-      - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]`: accessReviewScheduleDefinition
+      - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition1>]`: accessReviewScheduleDefinition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: 
         - `[AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]`: Defines the list of additional users or group members to be notified of the access review progress.
@@ -951,7 +982,7 @@ STAGES <IMicrosoftGraphAccessReviewStage1\[]>: If the instance has multiple stag
         - `[FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See accessReviewReviewerScope. Replaces backupReviewers. Supports $select. NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
         - `[InstanceEnumerationScope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Instances <IMicrosoftGraphAccessReviewInstance[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+        - `[Instances <IMicrosoftGraphAccessReviewInstance1[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
         - `[LastModifiedDateTime <DateTime?>]`: Timestamp when the access review series was last modified. Supports $select. Read-only.
         - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of access review scopes is used to define who are the reviewers. The reviewers property is only updatable if individual users are assigned as reviewers. Required on create. Supports $select. For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API. NOTE: The value of this property will be ignored if reviewers are assigned through the stageSettings property.
         - `[Scope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope

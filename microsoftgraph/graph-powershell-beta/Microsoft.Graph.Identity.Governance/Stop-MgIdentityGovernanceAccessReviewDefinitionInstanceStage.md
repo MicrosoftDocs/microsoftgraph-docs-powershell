@@ -8,7 +8,10 @@ schema: 2.0.0
 # Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage
 
 ## SYNOPSIS
-Invoke action stop
+Stop an access review stage that is `inProgress`.
+After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input.
+If there are subsequent stages that depend on the completed stage, the next stage will be created.
+The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
 ## SYNTAX
 
@@ -26,27 +29,21 @@ Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Invoke action stop
+Stop an access review stage that is `inProgress`.
+After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input.
+If there are subsequent stages that depend on the completed stage, the next stage will be created.
+The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

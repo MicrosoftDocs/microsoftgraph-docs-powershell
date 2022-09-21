@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationSchoolAdministrativeUnit
 
 ## SYNOPSIS
-Get administrativeUnit from education
+Retrieve the simple directory **administrativeUnit** that corresponds to this **educationSchool**.
 
 ## SYNTAX
 
@@ -25,27 +25,18 @@ Get-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get administrativeUnit from education
+Retrieve the simple directory **administrativeUnit** that corresponds to this **educationSchool**.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgEducationSchoolAdministrativeUnit Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Education
+Get-MgEducationSchoolAdministrativeUnit -EducationSchoolId $educationSchoolId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgEducationSchoolAdministrativeUnit Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

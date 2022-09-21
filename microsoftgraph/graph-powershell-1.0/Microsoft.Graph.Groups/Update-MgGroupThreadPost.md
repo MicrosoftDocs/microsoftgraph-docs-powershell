@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupThreadPost
 
 ## SYNOPSIS
-Update the navigation property posts in groups
+Update the navigation property inReplyTo in groups
 
 ## SYNTAX
 
@@ -95,7 +95,7 @@ Update-MgGroupThreadPost -InputObject <IGroupsIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Update the navigation property posts in groups
+Update the navigation property inReplyTo in groups
 
 ## EXAMPLES
 

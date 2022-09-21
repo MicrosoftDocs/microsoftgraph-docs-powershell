@@ -8,7 +8,11 @@ schema: 2.0.0
 # Confirm-MgUserMemberGroup
 
 ## SYNOPSIS
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ## SYNTAX
 
@@ -39,27 +43,29 @@ Confirm-MgUserMemberGroup -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Confirm-MgUserMemberGroup Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	GroupIds = @(
+		"fee2c45b-915a-4a64-b130-f4eb9e75525e"
+		"4fe90ae7-065a-478b-9400-e0a0e1cbd540"
+	)
+}
+# A UPN can also be used as -UserId.
+Confirm-MgUserMemberGroup -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Confirm-MgUserMemberGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

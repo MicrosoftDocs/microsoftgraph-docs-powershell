@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 
 ## SYNOPSIS
-The  access packages whose assigned users are ineligible to be assigned this access package.
+Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPa
 ```
 
 ## DESCRIPTION
-The  access packages whose assigned users are ineligible to be assigned this access package.
+Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
 
@@ -68,7 +68,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -114,7 +114,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

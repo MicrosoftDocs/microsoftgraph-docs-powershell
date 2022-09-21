@@ -8,7 +8,12 @@ schema: 2.0.0
 # Invoke-MgArchiveTeam
 
 ## SYNOPSIS
-Invoke action archive
+Archive the specified team.
+\nWhen a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.\nMembership changes to the team continue to be allowed.
+Archiving is an async operation.
+A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
+To archive a team, the team and group must have an owner.
+To restore a team from its archived state, use the API to unarchive.
 
 ## SYNTAX
 
@@ -39,27 +44,23 @@ Invoke-MgArchiveTeam -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action archive
+Archive the specified team.
+\nWhen a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.\nMembership changes to the team continue to be allowed.
+Archiving is an async operation.
+A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
+To archive a team, the team and group must have an owner.
+To restore a team from its archived state, use the API to unarchive.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgArchiveTeam Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Invoke-MgArchiveTeam -TeamId $teamId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgArchiveTeam Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgRoleManagementDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Create new navigation property to roleDefinitions for roleManagement
+Create a new unifiedRoleDefinition object for an RBAC provider.
+The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
 
 ## SYNTAX
 
@@ -28,7 +29,8 @@ New-MgRoleManagementDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleDefinitions for roleManagement
+Create a new unifiedRoleDefinition object for an RBAC provider.
+The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
 
 ## EXAMPLES
 

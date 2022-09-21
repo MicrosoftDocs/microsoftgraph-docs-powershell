@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgShareListColumn
 
 ## SYNOPSIS
-Create new navigation property to columns for shares
+Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ New-MgShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Create new navigation property to columns for shares
+Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
 ## EXAMPLES
 

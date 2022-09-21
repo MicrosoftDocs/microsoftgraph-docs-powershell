@@ -47,23 +47,18 @@ Update the navigation property connectorGroups in onPremisesPublishingProfiles
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Name = "name-value"
+	Region = "region-value"
+}
+Update-MgOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgOnPremisePublishingProfileConnectorGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -369,9 +364,7 @@ APPLICATIONS <IMicrosoftGraphApplication\[]>: .
     - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
   - `[Certification <IMicrosoftGraphCertification>]`: certification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CertificationDetailsUrl <String>]`: URL that shows certification details for the application.
     - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application will expire.
-    - `[IsCertifiedByMicrosoft <Boolean?>]`: Indicates whether the application is certified by Microsoft.
     - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
     - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
   - `[ConnectorGroup <IMicrosoftGraphConnectorGroup>]`: connectorGroup
@@ -768,9 +761,7 @@ BODYPARAMETER `<IMicrosoftGraphConnectorGroup>`: connectorGroup
       - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
     - `[Certification <IMicrosoftGraphCertification>]`: certification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CertificationDetailsUrl <String>]`: URL that shows certification details for the application.
       - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application will expire.
-      - `[IsCertifiedByMicrosoft <Boolean?>]`: Indicates whether the application is certified by Microsoft.
       - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
       - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
     - `[ConnectorGroup <IMicrosoftGraphConnectorGroup>]`: connectorGroup
@@ -1197,9 +1188,7 @@ MEMBERS <IMicrosoftGraphConnector\[]>: .
         - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
       - `[Certification <IMicrosoftGraphCertification>]`: certification
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[CertificationDetailsUrl <String>]`: URL that shows certification details for the application.
         - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application will expire.
-        - `[IsCertifiedByMicrosoft <Boolean?>]`: Indicates whether the application is certified by Microsoft.
         - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
         - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
       - `[ConnectorGroup <IMicrosoftGraphConnectorGroup>]`: connectorGroup

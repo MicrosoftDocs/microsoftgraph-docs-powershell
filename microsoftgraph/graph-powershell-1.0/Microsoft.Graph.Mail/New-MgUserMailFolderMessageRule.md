@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserMailFolderMessageRule
 
 ## SYNOPSIS
-Create new navigation property to messageRules for users
+Create a messageRule object by specifying a set of conditions and actions.
+Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
 ## SYNTAX
 
@@ -42,27 +43,41 @@ New-MgUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create new navigation property to messageRules for users
+Create a messageRule object by specifying a set of conditions and actions.
+Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserMailFolderMessageRule Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Mail
+$params = @{
+	DisplayName = "From partner"
+	Sequence = 2
+	IsEnabled = $true
+	Conditions = @{
+		SenderContains = @(
+			"adele"
+		)
+	}
+	Actions = @{
+		ForwardTo = @(
+			@{
+				EmailAddress = @{
+					Name = "Alex Wilbur"
+					Address = "AlexW@contoso.onmicrosoft.com"
+				}
+			}
+		)
+		StopProcessingRules = $true
+	}
+}
+# A UPN can also be used as -UserId.
+New-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserMailFolderMessageRule Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

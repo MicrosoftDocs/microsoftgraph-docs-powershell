@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Mail
-Module Guid: b2ce5cca-cf74-43c6-8806-424be705bb76
+Module Guid: 7cd08ece-982e-4c19-a0e1-58714156e851
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail
 Help Version: 1.0.0.0
 Locale: en-US
@@ -119,22 +119,29 @@ Get multiValueExtendedProperties from users
 Get singleValueExtendedProperties from users
 
 ### [New-MgUserInferenceClassificationOverride](New-MgUserInferenceClassificationOverride.md)
-Create new navigation property to overrides for users
+Create a focused Inbox override for a sender identified by an SMTP address.
+Future messages from that SMTP address will be consistently classified\nas specified in the override.
 
 ### [New-MgUserMailFolder](New-MgUserMailFolder.md)
-Create new navigation property to mailFolders for users
+Use this API to create a new mail folder in the root folder of the user's mailbox.
+If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
 
 ### [New-MgUserMailFolderChildFolder](New-MgUserMailFolderChildFolder.md)
-Create new navigation property to childFolders for users
+Use this API to create a new child mailFolder.
+If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
 
 ### [New-MgUserMailFolderChildFolderMessage](New-MgUserMailFolderChildFolderMessage.md)
-Create new navigation property to messages for users
+Use this API to create a new Message in a mailfolder.
 
 ### [New-MgUserMailFolderChildFolderMessageAttachment](New-MgUserMailFolderChildFolderMessageAttachment.md)
-Create new navigation property to attachments for users
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [New-MgUserMailFolderChildFolderMessageExtension](New-MgUserMailFolderChildFolderMessageExtension.md)
-Create new navigation property to extensions for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgUserMailFolderChildFolderMessageMention](New-MgUserMailFolderChildFolderMessageMention.md)
 Create new navigation property to mentions for users
@@ -158,13 +165,17 @@ Create new navigation property to singleValueExtendedProperties for users
 Create new navigation property to userConfigurations for users
 
 ### [New-MgUserMailFolderMessage](New-MgUserMailFolderMessage.md)
-Create new navigation property to messages for users
+Use this API to create a new Message in a mailfolder.
 
 ### [New-MgUserMailFolderMessageAttachment](New-MgUserMailFolderMessageAttachment.md)
-Create new navigation property to attachments for users
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [New-MgUserMailFolderMessageExtension](New-MgUserMailFolderMessageExtension.md)
-Create new navigation property to extensions for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgUserMailFolderMessageMention](New-MgUserMailFolderMessageMention.md)
 Create new navigation property to mentions for users
@@ -188,13 +199,20 @@ Create new navigation property to singleValueExtendedProperties for users
 Create new navigation property to userConfigurations for users
 
 ### [New-MgUserMessage](New-MgUserMessage.md)
-Create new navigation property to messages for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgUserMessageAttachment](New-MgUserMessageAttachment.md)
-Create new navigation property to attachments for users
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [New-MgUserMessageExtension](New-MgUserMessageExtension.md)
-Create new navigation property to extensions for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgUserMessageMention](New-MgUserMessageMention.md)
 Create new navigation property to mentions for users

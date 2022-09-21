@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserOutlookTask
 
 ## SYNOPSIS
-Create new navigation property to tasks for users
+Create an Outlook task in the specified task folder.
+The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time \nto be always midnight in the specified time zone.
 
 ## SYNTAX
 
@@ -55,27 +56,31 @@ New-MgUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Create new navigation property to tasks for users
+Create an Outlook task in the specified task folder.
+The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time \nto be always midnight in the specified time zone.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserOutlookTask Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users
+$params = @{
+	Subject = "Shop for children's weekend"
+	StartDateTime = @{
+		DateTime = "2016-05-03T09:00:00"
+		TimeZone = "Eastern Standard Time"
+	}
+	DueDateTime = @{
+		DateTime = "2016-05-05T16:00:00"
+		TimeZone = "Eastern Standard Time"
+	}
+}
+# A UPN can also be used as -UserId.
+New-MgUserOutlookTask -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserOutlookTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgPolicyPermissionGrantPolicyInclude
 
 ## SYNOPSIS
-Create new navigation property to includes for policies
+Add conditions under which a permission grant event is *included* in a permission grant policy.
+You do this by adding a permissionGrantConditionSet to the **includes** collection of a  permissionGrantPolicy.
 
 ## SYNTAX
 
@@ -44,7 +45,8 @@ New-MgPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to includes for policies
+Add conditions under which a permission grant event is *included* in a permission grant policy.
+You do this by adding a permissionGrantConditionSet to the **includes** collection of a  permissionGrantPolicy.
 
 ## EXAMPLES
 

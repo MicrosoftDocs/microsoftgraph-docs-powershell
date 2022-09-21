@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamPrimaryChannelMessage
 
 ## SYNOPSIS
-Create new navigation property to messages for groups
+Send a new chatMessage in the specified channel or a chat.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ New-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Create new navigation property to messages for groups
+Send a new chatMessage in the specified channel or a chat.
 
 ## EXAMPLES
 

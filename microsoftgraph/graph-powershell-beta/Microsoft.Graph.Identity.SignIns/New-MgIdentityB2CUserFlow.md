@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityB2CUserFlow
 
 ## SYNOPSIS
-Create new navigation property to b2cUserFlows for identity
+Create a new b2cIdentityUserFlow object.
 
 ## SYNTAX
 
@@ -30,27 +30,64 @@ New-MgIdentityB2CUserFlow -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow> [-
 ```
 
 ## DESCRIPTION
-Create new navigation property to b2cUserFlows for identity
+Create a new b2cIdentityUserFlow object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgIdentityB2CUserFlow Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Id = "UserFlowWithAPIConnector"
+	UserFlowType = "signUpOrSignIn"
+	UserFlowTypeVersion = 1
+	ApiConnectorConfiguration = @{
+		PostFederationSignup = @{
+			"@odata.id" = "{apiConnectorId}"
+		}
+		PostAttributeCollection = @{
+			"@odata.id" = "{apiConnectorId}"
+		}
+	}
+}
+New-MgIdentityB2CUserFlow -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgIdentityB2CUserFlow Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgIdentityB2CUserFlow Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Id = "Customer"
+	UserFlowType = "signUpOrSignIn"
+	UserFlowTypeVersion = 3
+	IdentityProviders = @(
+		@{
+			Id = "Facebook-OAuth"
+		}
+	)
+}
+New-MgIdentityB2CUserFlow -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgIdentityB2CUserFlow Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgIdentityB2CUserFlow Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Id = "Customer"
+	UserFlowType = "signUpOrSignIn"
+	UserFlowTypeVersion = 3
+}
+New-MgIdentityB2CUserFlow -BodyParameter $params
+```
+
+This example shows how to use the New-MgIdentityB2CUserFlow Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

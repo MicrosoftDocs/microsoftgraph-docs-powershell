@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement
 
 ## SYNOPSIS
-Invoke action getApplicablePolicyRequirements
+In Azure AD entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
+Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement -InputObject
 ```
 
 ## DESCRIPTION
-Invoke action getApplicablePolicyRequirements
+In Azure AD entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
+Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement -AccessPackageId $accessPackageId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

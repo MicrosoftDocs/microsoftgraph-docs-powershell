@@ -8,7 +8,9 @@ schema: 2.0.0
 # Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus
 
 ## SYNOPSIS
-Invoke action setCloudPcReviewStatus
+Set the review status of a specific Cloud PC device.
+Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC as suspicious.
+After the review is completed, use this API again to set the Cloud PC back to a normal state.
 
 ## SYNTAX
 
@@ -41,27 +43,27 @@ Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Invoke action setCloudPcReviewStatus
+Set the review status of a specific Cloud PC device.
+Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC as suspicious.
+After the review is completed, use this API again to set the Cloud PC back to a normal state.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+$params = @{
+	ReviewStatus = @{
+		InReview = $true
+		UserAccessLevel = "restricted"
+		AzureStorageAccountId = "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview"
+	}
+}
+Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus -ManagedDeviceId $managedDeviceId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

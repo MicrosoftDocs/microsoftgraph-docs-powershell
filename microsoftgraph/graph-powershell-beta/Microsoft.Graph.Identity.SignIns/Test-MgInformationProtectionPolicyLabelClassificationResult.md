@@ -8,7 +8,10 @@ schema: 2.0.0
 # Test-MgInformationProtectionPolicyLabelClassificationResult
 
 ## SYNOPSIS
-Invoke action evaluateClassificationResults
+Using classification results, compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
+This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
+To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
+The API returns an informationProtectionAction that contains one of more of the following:
 
 ## SYNTAX
 
@@ -27,27 +30,38 @@ Test-MgInformationProtectionPolicyLabelClassificationResult
 ```
 
 ## DESCRIPTION
-Invoke action evaluateClassificationResults
+Using classification results, compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
+This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
+To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
+The API returns an informationProtectionAction that contains one of more of the following:
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Test-MgInformationProtectionPolicyLabelClassificationResult Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	ContentInfo = @{
+		"@odata.type" = "#microsoft.graph.contentInfo"
+		"Format@odata.type" = "#microsoft.graph.contentFormat"
+		Format = "default"
+		Identifier = $null
+		"State@odata.type" = "#microsoft.graph.contentState"
+		State = "rest"
+	}
+	ClassificationResults = @(
+		@{
+			SensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
+			Count = 4
+			ConfidenceLevel = 75
+		}
+	)
+}
+Test-MgInformationProtectionPolicyLabelClassificationResult -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Test-MgInformationProtectionPolicyLabelClassificationResult Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

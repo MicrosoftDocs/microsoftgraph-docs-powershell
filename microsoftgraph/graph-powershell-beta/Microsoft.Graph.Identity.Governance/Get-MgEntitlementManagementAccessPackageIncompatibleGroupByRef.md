@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef
 
 ## SYNOPSIS
-The groups whose members are ineligible to be assigned this access package.
+Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId 
 ```
 
 ## DESCRIPTION
-The groups whose members are ineligible to be assigned this access package.
+Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
 
@@ -68,7 +68,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -114,7 +114,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

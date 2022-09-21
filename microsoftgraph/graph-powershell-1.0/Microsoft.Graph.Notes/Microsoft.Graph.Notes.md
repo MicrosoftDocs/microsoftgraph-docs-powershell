@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Notes
-Module Guid: a6af75b9-7c12-463a-90eb-c43bf094b06d
+Module Guid: 2e845795-cf40-4b17-b25c-bd5db2887100
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,14 +17,10 @@ Read-only.
 Nullable.
 
 ### [Get-MgGroupOnenoteNotebookSection](Get-MgGroupOnenoteNotebookSection.md)
-The sections in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified notebook.
 
 ### [Get-MgGroupOnenoteNotebookSectionGroup](Get-MgGroupOnenoteNotebookSectionGroup.md)
-The section groups in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of section groups from the specified notebook.
 
 ### [Get-MgGroupOnenoteOperation](Get-MgGroupOnenoteOperation.md)
 The status of OneNote operations.
@@ -60,9 +56,7 @@ Read-only.
 Nullable.
 
 ### [Get-MgGroupOnenoteSectionGroupSection](Get-MgGroupOnenoteSectionGroupSection.md)
-The sections in the section group.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified section group.
 
 ### [Get-MgGroupOnenoteSectionPage](Get-MgGroupOnenoteSectionPage.md)
 The collection of pages in the section.
@@ -75,14 +69,10 @@ Read-only.
 Nullable.
 
 ### [Get-MgSiteOnenoteNotebookSection](Get-MgSiteOnenoteNotebookSection.md)
-The sections in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified notebook.
 
 ### [Get-MgSiteOnenoteNotebookSectionGroup](Get-MgSiteOnenoteNotebookSectionGroup.md)
-The section groups in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of section groups from the specified notebook.
 
 ### [Get-MgSiteOnenoteOperation](Get-MgSiteOnenoteOperation.md)
 The status of OneNote operations.
@@ -118,9 +108,7 @@ Read-only.
 Nullable.
 
 ### [Get-MgSiteOnenoteSectionGroupSection](Get-MgSiteOnenoteSectionGroupSection.md)
-The sections in the section group.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified section group.
 
 ### [Get-MgSiteOnenoteSectionPage](Get-MgSiteOnenoteSectionPage.md)
 The collection of pages in the section.
@@ -133,14 +121,10 @@ Read-only.
 Nullable.
 
 ### [Get-MgUserOnenoteNotebookSection](Get-MgUserOnenoteNotebookSection.md)
-The sections in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified notebook.
 
 ### [Get-MgUserOnenoteNotebookSectionGroup](Get-MgUserOnenoteNotebookSectionGroup.md)
-The section groups in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of section groups from the specified notebook.
 
 ### [Get-MgUserOnenoteOperation](Get-MgUserOnenoteOperation.md)
 The status of OneNote operations.
@@ -176,9 +160,7 @@ Read-only.
 Nullable.
 
 ### [Get-MgUserOnenoteSectionGroupSection](Get-MgUserOnenoteSectionGroupSection.md)
-The sections in the section group.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified section group.
 
 ### [Get-MgUserOnenoteSectionPage](Get-MgUserOnenoteSectionPage.md)
 The collection of pages in the section.
@@ -186,13 +168,13 @@ Read-only.
 Nullable.
 
 ### [New-MgGroupOnenoteNotebook](New-MgGroupOnenoteNotebook.md)
-Create new navigation property to notebooks for groups
+Create a new OneNote notebook.
 
 ### [New-MgGroupOnenoteNotebookSection](New-MgGroupOnenoteNotebookSection.md)
-Create new navigation property to sections for groups
+Create a new onenoteSection in the specified notebook.
 
 ### [New-MgGroupOnenoteNotebookSectionGroup](New-MgGroupOnenoteNotebookSectionGroup.md)
-Create new navigation property to sectionGroups for groups
+Create a new section group in the specified notebook.
 
 ### [New-MgGroupOnenotePage](New-MgGroupOnenotePage.md)
 Create new navigation property to pages for groups
@@ -204,19 +186,19 @@ Create new navigation property to sections for groups
 Create new navigation property to sectionGroups for groups
 
 ### [New-MgGroupOnenoteSectionGroupSection](New-MgGroupOnenoteSectionGroupSection.md)
-Create new navigation property to sections for groups
+Create a new onenoteSection in the specified section group.
 
 ### [New-MgGroupOnenoteSectionPage](New-MgGroupOnenoteSectionPage.md)
 Create new navigation property to pages for groups
 
 ### [New-MgSiteOnenoteNotebook](New-MgSiteOnenoteNotebook.md)
-Create new navigation property to notebooks for sites
+Create a new OneNote notebook.
 
 ### [New-MgSiteOnenoteNotebookSection](New-MgSiteOnenoteNotebookSection.md)
-Create new navigation property to sections for sites
+Create a new onenoteSection in the specified notebook.
 
 ### [New-MgSiteOnenoteNotebookSectionGroup](New-MgSiteOnenoteNotebookSectionGroup.md)
-Create new navigation property to sectionGroups for sites
+Create a new section group in the specified notebook.
 
 ### [New-MgSiteOnenotePage](New-MgSiteOnenotePage.md)
 Create new navigation property to pages for sites
@@ -228,19 +210,19 @@ Create new navigation property to sections for sites
 Create new navigation property to sectionGroups for sites
 
 ### [New-MgSiteOnenoteSectionGroupSection](New-MgSiteOnenoteSectionGroupSection.md)
-Create new navigation property to sections for sites
+Create a new onenoteSection in the specified section group.
 
 ### [New-MgSiteOnenoteSectionPage](New-MgSiteOnenoteSectionPage.md)
 Create new navigation property to pages for sites
 
 ### [New-MgUserOnenoteNotebook](New-MgUserOnenoteNotebook.md)
-Create new navigation property to notebooks for users
+Create a new OneNote notebook.
 
 ### [New-MgUserOnenoteNotebookSection](New-MgUserOnenoteNotebookSection.md)
-Create new navigation property to sections for users
+Create a new onenoteSection in the specified notebook.
 
 ### [New-MgUserOnenoteNotebookSectionGroup](New-MgUserOnenoteNotebookSectionGroup.md)
-Create new navigation property to sectionGroups for users
+Create a new section group in the specified notebook.
 
 ### [New-MgUserOnenotePage](New-MgUserOnenotePage.md)
 Create new navigation property to pages for users
@@ -252,7 +234,7 @@ Create new navigation property to sections for users
 Create new navigation property to sectionGroups for users
 
 ### [New-MgUserOnenoteSectionGroupSection](New-MgUserOnenoteSectionGroupSection.md)
-Create new navigation property to sections for users
+Create a new onenoteSection in the specified section group.
 
 ### [New-MgUserOnenoteSectionPage](New-MgUserOnenoteSectionPage.md)
 Create new navigation property to pages for users

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgPrintPrinterTaskTrigger
 
 ## SYNOPSIS
-Create new navigation property to taskTriggers for print
+Create a new task trigger on the specified printer.
+Currently, only **one** task trigger can be specified per printer, but this limit might be removed in the future.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ New-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to taskTriggers for print
+Create a new task trigger on the specified printer.
+Currently, only **one** task trigger can be specified per printer, but this limit might be removed in the future.
 
 ## EXAMPLES
 

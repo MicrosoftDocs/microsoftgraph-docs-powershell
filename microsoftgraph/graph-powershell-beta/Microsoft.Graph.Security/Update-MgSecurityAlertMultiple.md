@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSecurityAlertMultiple
 
 ## SYNOPSIS
-Invoke action updateAlerts
+Update multiple alerts in one request instead of multiple requests.
 
 ## SYNTAX
 
@@ -26,27 +26,43 @@ Update-MgSecurityAlertMultiple
 ```
 
 ## DESCRIPTION
-Invoke action updateAlerts
+Update multiple alerts in one request instead of multiple requests.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgSecurityAlertMultiple Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+$params = @{
+	Value = @(
+		@{
+			AssignedTo = "String"
+			ClosedDateTime = [System.DateTime]::Parse("String (timestamp)")
+			Comments = @(
+				"String"
+			)
+			Feedback = @{
+				"@odata.type" = "microsoft.graph.alertFeedback"
+			}
+			Id = "String (identifier)"
+			Status = @{
+				"@odata.type" = "microsoft.graph.alertStatus"
+			}
+			Tags = @(
+				"String"
+			)
+			VendorInformation = @{
+				Provider = "String"
+				Vendor = "String"
+			}
+		}
+	)
+}
+Update-MgSecurityAlertMultiple -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgSecurityAlertMultiple Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

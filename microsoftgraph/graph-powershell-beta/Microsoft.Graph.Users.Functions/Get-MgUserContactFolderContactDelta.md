@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserContactFolderContactDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get a set of contacts that have been added, deleted, or updated in a specified folder.
+A **delta** function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
+This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
 
 ## SYNTAX
 
@@ -23,7 +25,9 @@ Get-MgUserContactFolderContactDelta -InputObject <IUsersFunctionsIdentity> [<Com
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get a set of contacts that have been added, deleted, or updated in a specified folder.
+A **delta** function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
+This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
 
 ## EXAMPLES
 

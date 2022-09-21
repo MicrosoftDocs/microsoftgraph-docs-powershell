@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
-The synchronization schema configured for the job.
+Retrieve the schema for a given synchronization job or template.
 
 ## SYNTAX
 
@@ -25,27 +25,36 @@ Get-MgServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdenti
 ```
 
 ## DESCRIPTION
-The synchronization schema configured for the job.
+Retrieve the schema for a given synchronization job or template.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgServicePrincipalSynchronizationJobSchema Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+Get-MgServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgServicePrincipalSynchronizationJobSchema Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgServicePrincipalSynchronizationJobSchema Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+Get-MgServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgServicePrincipalSynchronizationJobSchema Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgServicePrincipalSynchronizationJobSchema Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Get-MgServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+```
+
+This example shows how to use the Get-MgServicePrincipalSynchronizationJobSchema Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

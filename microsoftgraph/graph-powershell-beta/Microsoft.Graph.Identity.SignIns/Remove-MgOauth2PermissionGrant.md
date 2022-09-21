@@ -33,23 +33,14 @@ Existing access tokens will continue to be valid for their lifetime, but new acc
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Remove-MgOauth2PermissionGrant Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+Remove-MgOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Remove-MgOauth2PermissionGrant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

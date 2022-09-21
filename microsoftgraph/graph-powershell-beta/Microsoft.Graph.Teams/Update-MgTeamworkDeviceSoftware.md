@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgTeamworkDeviceSoftware
 
 ## SYNOPSIS
-Invoke action updateSoftware
+Update the software for a Microsoft Teams-enabled device.
+This API triggers a long-running operation.
 
 ## SYNTAX
 
@@ -39,27 +40,23 @@ Update-MgTeamworkDeviceSoftware -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action updateSoftware
+Update the software for a Microsoft Teams-enabled device.
+This API triggers a long-running operation.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgTeamworkDeviceSoftware Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	SoftwareType = "teamsClient"
+	SoftwareVersion = "1.0.96.22"
+}
+Update-MgTeamworkDeviceSoftware -TeamworkDeviceId $teamworkDeviceId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgTeamworkDeviceSoftware Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

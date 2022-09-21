@@ -8,7 +8,7 @@ schema: 2.0.0
 # Move-MgUserTaskListTask
 
 ## SYNOPSIS
-Invoke action move
+Move a baseTask object from one baseTaskList to another.
 
 ## SYNTAX
 
@@ -40,27 +40,22 @@ Move-MgUserTaskListTask -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action move
+Move a baseTask object from one baseTaskList to another.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Move-MgUserTaskListTask Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	DestinationTaskListId = "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQqFxG"
+}
+# A UPN can also be used as -UserId.
+Move-MgUserTaskListTask -UserId $userId -BaseTaskListId $baseTaskListId -BaseTaskId $baseTaskId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Move-MgUserTaskListTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

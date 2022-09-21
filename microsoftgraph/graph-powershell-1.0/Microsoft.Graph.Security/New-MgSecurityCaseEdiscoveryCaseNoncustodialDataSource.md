@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource
 
 ## SYNOPSIS
-Create new navigation property to noncustodialDataSources for security
+Create a new ediscoveryNoncustodialDataSource object.
 
 ## SYNTAX
 
@@ -45,27 +45,23 @@ New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityId
 ```
 
 ## DESCRIPTION
-Create new navigation property to noncustodialDataSources for security
+Create a new ediscoveryNoncustodialDataSource object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+$params = @{
+	DataSource = @{
+		"@odata.type" = "microsoft.graph.security.siteSource"
+	}
+}
+New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

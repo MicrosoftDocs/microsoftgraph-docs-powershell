@@ -49,23 +49,17 @@ Update the navigation property rubrics in education
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgEducationMeRubric Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Education
+$params = @{
+	DisplayName = "Example Credit Rubric after display name patch"
+}
+Update-MgEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgEducationMeRubric Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -365,7 +359,6 @@ BODYPARAMETER `<IMicrosoftGraphEducationRubric>`: educationRubric
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: 
@@ -374,7 +367,6 @@ BODYPARAMETER `<IMicrosoftGraphEducationRubric>`: educationRubric
   - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Levels <IMicrosoftGraphRubricLevel[]>]`: The collection of levels making up this rubric.
     - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[DisplayName <String>]`: The name of this rubric level.

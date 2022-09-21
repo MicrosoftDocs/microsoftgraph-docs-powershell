@@ -57,23 +57,24 @@ Update the navigation property bookingBusinesses in solutions
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgBookingBusiness Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Bookings
+$params = @{
+	Email = "admin@fabrikam.com"
+	SchedulingPolicy = @{
+		TimeSlotInterval = "PT60M"
+		MinimumLeadTime = "P1D"
+		MaximumAdvance = "P30D"
+		SendConfirmationsToOwner = $true
+		AllowStaffSelection = $true
+	}
+}
+Update-MgBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgBookingBusiness Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -331,7 +332,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -514,12 +515,10 @@ APPOINTMENTS <IMicrosoftGraphBookingAppointment1\[]>: All the appointments of th
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
-  - `[Duration <TimeSpan?>]`: The length of the appointment, denoted in ISO8601 format.
   - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-  - `[FilledAttendeesCount <Int32?>]`: The current number of customers in the appointment
   - `[IsLocationOnline <Boolean?>]`: If true, indicates that the appointment will be held online. Default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment. If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the Create bookingCustomer operation.
@@ -577,12 +576,10 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness1>`: Represents a Microsot Booking
     - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
     - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
     - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
-    - `[Duration <TimeSpan?>]`: The length of the appointment, denoted in ISO8601 format.
     - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
       - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-    - `[FilledAttendeesCount <Int32?>]`: The current number of customers in the appointment
     - `[IsLocationOnline <Boolean?>]`: If true, indicates that the appointment will be held online. Default value is false.
     - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
     - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment. If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the Create bookingCustomer operation.
@@ -635,9 +632,7 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness1>`: Represents a Microsot Booking
   - `[DefaultCurrencyIso <String>]`: The code for the currency that the business operates in on Microsoft Bookings.
   - `[DisplayName <String>]`: The name of the business, which interfaces with customers. This name appears at the top of the business scheduling page.
   - `[Email <String>]`: The email address for the business.
-  - `[IsPublished <Boolean?>]`: The scheduling page has been made available to external customers. Use the publish and unpublish actions to set this property. Read-only.
   - `[Phone <String>]`: The telephone number for the business. The phone property, together with address and webSiteUrl, appear in the footer of a business scheduling page.
-  - `[PublicUrl <String>]`: The URL for the scheduling page, which is set after you publish or unpublish the page. Read-only.
   - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
@@ -667,7 +662,6 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness1>`: Represents a Microsot Booking
     - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.
     - `[StaffMemberIds <String[]>]`: Represents those staff members who provide this service.
-    - `[WebUrl <String>]`: The URL a customer uses to access the service.
   - `[StaffMembers <IMicrosoftGraphBookingStaffMemberBase[]>]`: All the staff members that provide services in this business. Read-only. Nullable.
     - `[Id <String>]`: 
   - `[WebSiteUrl <String>]`: The URL of the business web site. The webSiteUrl property, together with address, phone, appear in the footer of a business scheduling page.
@@ -683,12 +677,10 @@ CALENDARVIEW <IMicrosoftGraphBookingAppointment1\[]>: The set of appointments of
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
-  - `[Duration <TimeSpan?>]`: The length of the appointment, denoted in ISO8601 format.
   - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-  - `[FilledAttendeesCount <Int32?>]`: The current number of customers in the appointment
   - `[IsLocationOnline <Boolean?>]`: If true, indicates that the appointment will be held online. Default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment. If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the Create bookingCustomer operation.
@@ -811,7 +803,6 @@ SERVICES <IMicrosoftGraphBookingService1\[]>: All the services offered by this b
     - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
   - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.
   - `[StaffMemberIds <String[]>]`: Represents those staff members who provide this service.
-  - `[WebUrl <String>]`: The URL a customer uses to access the service.
 
 STAFFMEMBERS <IMicrosoftGraphBookingStaffMemberBase\[]>: All the staff members that provide services in this business. Read-only. Nullable.
   - `[Id <String>]`: 

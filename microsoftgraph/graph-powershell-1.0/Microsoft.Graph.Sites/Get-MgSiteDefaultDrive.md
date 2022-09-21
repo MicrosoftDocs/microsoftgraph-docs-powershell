@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgSiteDefaultDrive
 
 ## SYNOPSIS
-The default drive (document library) for this site.
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Get-MgSiteDefaultDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-The default drive (document library) for this site.
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgSiteDefaultDrive Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Sites
+Get-MgSiteDefaultDrive -SiteId $siteId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgSiteDefaultDrive Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

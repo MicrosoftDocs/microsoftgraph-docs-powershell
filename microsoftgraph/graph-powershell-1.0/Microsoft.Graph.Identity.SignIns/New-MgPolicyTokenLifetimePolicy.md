@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPolicyTokenLifetimePolicy
 
 ## SYNOPSIS
-Create new navigation property to tokenLifetimePolicies for policies
+Create a new tokenLifetimePolicy object.
 
 ## SYNTAX
 
@@ -26,27 +26,25 @@ New-MgPolicyTokenLifetimePolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] 
 ```
 
 ## DESCRIPTION
-Create new navigation property to tokenLifetimePolicies for policies
+Create a new tokenLifetimePolicy object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgPolicyTokenLifetimePolicy Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Definition = @(
+		"definition-value"
+	)
+	DisplayName = "displayName-value"
+	IsOrganizationDefault = $true
+}
+New-MgPolicyTokenLifetimePolicy -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgPolicyTokenLifetimePolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

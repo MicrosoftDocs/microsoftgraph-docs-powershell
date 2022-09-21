@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityThreatSubmissionEmailThreat
 
 ## SYNOPSIS
-Create new navigation property to emailThreats for security
+Create a new emailThreatSubmission object.
 
 ## SYNTAX
 
@@ -33,27 +33,24 @@ New-MgSecurityThreatSubmissionEmailThreat -BodyParameter <IMicrosoftGraphSecurit
 ```
 
 ## DESCRIPTION
-Create new navigation property to emailThreats for security
+Create a new emailThreatSubmission object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgSecurityThreatSubmissionEmailThreat Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+$params = @{
+	"@odata.type" = "#microsoft.graph.emailUrlThreatSubmission"
+	Category = "spam"
+	RecipientEmailAddress = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
+	MessageUrl = "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
+}
+New-MgSecurityThreatSubmissionEmailThreat -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgSecurityThreatSubmissionEmailThreat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

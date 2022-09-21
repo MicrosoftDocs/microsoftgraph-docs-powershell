@@ -47,23 +47,35 @@ Update the navigation property openShifts in teams
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgTeamScheduleOpenShift Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
+	SharedOpenShift = @{
+		Notes = "Inventory Management"
+		OpenSlotCount = 5
+		DisplayName = "Field shift"
+		StartDateTime = [System.DateTime]::Parse("2018-10-04T00:58:45.340Z")
+		EndDateTime = [System.DateTime]::Parse("2018-10-04T09:50:45.332Z")
+		Theme = "white"
+		Activities = @(
+			@{
+				IsPaid = $true
+				StartDateTime = [System.DateTime]::Parse("2018-10-04T00:58:45.340Z")
+				EndDateTime = [System.DateTime]::Parse("2018-10-04T01:58:45.340Z")
+				Code = ""
+				DisplayName = "Lunch"
+			}
+		)
+	}
+	DraftOpenShift = $null
+}
+Update-MgTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgTeamScheduleOpenShift Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -321,7 +333,6 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphOpenShift>`: openShift
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -330,7 +341,6 @@ BODYPARAMETER `<IMicrosoftGraphOpenShift>`: openShift
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

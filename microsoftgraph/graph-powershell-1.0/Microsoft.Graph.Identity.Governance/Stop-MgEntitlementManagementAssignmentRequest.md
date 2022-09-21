@@ -8,7 +8,7 @@ schema: 2.0.0
 # Stop-MgEntitlementManagementAssignmentRequest
 
 ## SYNOPSIS
-Invoke action cancel
+In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 
 ## SYNTAX
 
@@ -25,27 +25,18 @@ Stop-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceI
 ```
 
 ## DESCRIPTION
-Invoke action cancel
+In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Stop-MgEntitlementManagementAssignmentRequest Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Stop-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Stop-MgEntitlementManagementAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

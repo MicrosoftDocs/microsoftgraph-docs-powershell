@@ -124,7 +124,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -229,8 +229,6 @@ BODYPARAMETER `<IMicrosoftGraphResourceOperation>`: Describes the resourceOperat
   - `[Id <String>]`: 
   - `[ActionName <String>]`: Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.
   - `[Description <String>]`: Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.
-  - `[EnabledForScopeValidation <Boolean?>]`: Determines whether the Permission is validated for Scopes defined per Role Assignment. This property is read-only.
-  - `[Resource <String>]`: Resource category to which this Operation belongs. This property is read-only.
   - `[ResourceName <String>]`: Name of the Resource this operation is performed on.
 
 ## RELATED LINKS

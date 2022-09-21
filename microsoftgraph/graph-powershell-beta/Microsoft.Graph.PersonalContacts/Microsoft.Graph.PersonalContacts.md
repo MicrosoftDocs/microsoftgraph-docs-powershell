@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.PersonalContacts
-Module Guid: f27fbdc3-9209-4c39-be4c-384ec3d75d98
+Module Guid: 04f1b74c-360b-43e6-be60-49e5594d6fd2
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts
 Help Version: 1.0.0.0
 Locale: en-US
@@ -23,6 +23,12 @@ Get contactFolders from users
 
 ### [Get-MgUserContactFolderChildFolder](Get-MgUserContactFolderChildFolder.md)
 Get childFolders from users
+
+### [Get-MgUserContactFolderChildFolderContact](Get-MgUserContactFolderChildFolderContact.md)
+The contacts in the folder.
+Navigation property.
+Read-only.
+Nullable.
 
 ### [Get-MgUserContactFolderChildFolderContact](Get-MgUserContactFolderChildFolderContact.md)
 The contacts in the folder.
@@ -58,6 +64,12 @@ Nullable.
 
 ### [Get-MgUserContactFolderChildFolderSingleValueExtendedProperty](Get-MgUserContactFolderChildFolderSingleValueExtendedProperty.md)
 The collection of single-value extended properties defined for the contactFolder.
+Read-only.
+Nullable.
+
+### [Get-MgUserContactFolderContact](Get-MgUserContactFolderContact.md)
+The contacts in the folder.
+Navigation property.
 Read-only.
 Nullable.
 
@@ -99,19 +111,21 @@ Get media content for the navigation property photo from users
 Get singleValueExtendedProperties from users
 
 ### [New-MgUserContact](New-MgUserContact.md)
-Create new navigation property to contacts for users
+Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 
 ### [New-MgUserContactExtension](New-MgUserContactExtension.md)
 Create new navigation property to extensions for users
 
 ### [New-MgUserContactFolder](New-MgUserContactFolder.md)
-Create new navigation property to contactFolders for users
+Create a new contactFolder under the user's default contacts folder.
+You can also create a new contactfolder as a child of any specified contact folder.
 
 ### [New-MgUserContactFolderChildFolder](New-MgUserContactFolderChildFolder.md)
-Create new navigation property to childFolders for users
+Create a new contactFolder as a child of a specified folder.
+You can also create a new contactFolder under the user's default contact folder.
 
 ### [New-MgUserContactFolderChildFolderContact](New-MgUserContactFolderChildFolderContact.md)
-Create new navigation property to contacts for users
+Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 
 ### [New-MgUserContactFolderChildFolderContactExtension](New-MgUserContactFolderChildFolderContactExtension.md)
 Create new navigation property to extensions for users
@@ -129,7 +143,7 @@ Create new navigation property to multiValueExtendedProperties for users
 Create new navigation property to singleValueExtendedProperties for users
 
 ### [New-MgUserContactFolderContact](New-MgUserContactFolderContact.md)
-Create new navigation property to contacts for users
+Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 
 ### [New-MgUserContactFolderContactExtension](New-MgUserContactFolderContactExtension.md)
 Create new navigation property to extensions for users

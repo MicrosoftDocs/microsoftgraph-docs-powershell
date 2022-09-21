@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Search
-Module Guid: f720034a-d3e0-42b1-8a71-46129b04522f
+Module Guid: 421ea558-0efa-4eaa-a5fa-def1887251b7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search
 Help Version: 1.0.0.0
 Locale: en-US
@@ -31,7 +31,7 @@ Get items from external
 Get operations from external
 
 ### [Get-MgExternalConnectionSchema](Get-MgExternalConnectionSchema.md)
-Get schema from external
+Read the properties and relationships of a schema object.
 
 ### [Get-MgSearchEntity](Get-MgSearchEntity.md)
 Get search
@@ -40,13 +40,13 @@ Get search
 Invoke action query
 
 ### [New-MgExternalConnection](New-MgExternalConnection.md)
-Create new navigation property to connections for external
+Create a new externalConnection object.
 
 ### [New-MgExternalConnectionGroup](New-MgExternalConnectionGroup.md)
-Create new navigation property to groups for external
+Create a new externalGroup object.
 
 ### [New-MgExternalConnectionGroupMember](New-MgExternalConnectionGroupMember.md)
-Create new navigation property to members for external
+Create an identity resource for a new member in an externalGroup.
 
 ### [New-MgExternalConnectionItem](New-MgExternalConnectionItem.md)
 Create new navigation property to items for external

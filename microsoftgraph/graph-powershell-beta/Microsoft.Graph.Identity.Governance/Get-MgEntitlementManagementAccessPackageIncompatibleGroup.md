@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageIncompatibleGroup
 
 ## SYNOPSIS
-The groups whose members are ineligible to be assigned this access package.
+Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
 
 ## SYNTAX
 
@@ -19,27 +19,18 @@ Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId <Stri
 ```
 
 ## DESCRIPTION
-The groups whose members are ineligible to be assigned this access package.
+Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgEntitlementManagementAccessPackageIncompatibleGroup Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -68,7 +59,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -129,7 +120,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

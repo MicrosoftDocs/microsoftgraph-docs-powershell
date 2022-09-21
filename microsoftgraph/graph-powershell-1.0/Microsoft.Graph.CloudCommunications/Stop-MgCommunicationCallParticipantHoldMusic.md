@@ -8,7 +8,7 @@ schema: 2.0.0
 # Stop-MgCommunicationCallParticipantHoldMusic
 
 ## SYNOPSIS
-Invoke action stopHoldMusic
+Reincorporate a participant previously put on hold to the call.
 
 ## SYNTAX
 
@@ -39,27 +39,21 @@ Stop-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsI
 ```
 
 ## DESCRIPTION
-Invoke action stopHoldMusic
+Reincorporate a participant previously put on hold to the call.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Stop-MgCommunicationCallParticipantHoldMusic Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+}
+Stop-MgCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Stop-MgCommunicationCallParticipantHoldMusic Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

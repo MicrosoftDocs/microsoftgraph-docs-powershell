@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgTeamChannelEmail
 
 ## SYNOPSIS
-Invoke action removeEmail
+Remove the email address of a channel.
+You can remove an email address only if it was provisioned using the provisionEmail method or through the Microsoft Teams client.
 
 ## SYNTAX
 
@@ -24,27 +25,19 @@ Remove-MgTeamChannelEmail -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Invoke action removeEmail
+Remove the email address of a channel.
+You can remove an email address only if it was provisioned using the provisionEmail method or through the Microsoft Teams client.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Remove-MgTeamChannelEmail Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Remove-MgTeamChannelEmail -TeamId $teamId -ChannelId $channelId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Remove-MgTeamChannelEmail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

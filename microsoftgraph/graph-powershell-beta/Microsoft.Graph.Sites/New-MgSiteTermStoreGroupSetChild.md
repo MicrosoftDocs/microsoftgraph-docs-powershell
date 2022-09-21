@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteTermStoreGroupSetChild
 
 ## SYNOPSIS
-Create new navigation property to children for sites
+Create a new term object.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Create new navigation property to children for sites
+Create a new term object.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Restart-MgTeamworkDevice
 
 ## SYNOPSIS
-Invoke action restart
+Restart the specified Microsoft Teams-enabled device asynchronously.
+A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.
 
 ## SYNTAX
 
@@ -23,27 +24,19 @@ Restart-MgTeamworkDevice -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-C
 ```
 
 ## DESCRIPTION
-Invoke action restart
+Restart the specified Microsoft Teams-enabled device asynchronously.
+A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Restart-MgTeamworkDevice Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Restart-MgTeamworkDevice -TeamworkDeviceId $teamworkDeviceId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Restart-MgTeamworkDevice Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

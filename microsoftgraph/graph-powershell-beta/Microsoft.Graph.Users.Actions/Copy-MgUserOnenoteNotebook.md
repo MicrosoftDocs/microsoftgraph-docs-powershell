@@ -8,7 +8,9 @@ schema: 2.0.0
 # Copy-MgUserOnenoteNotebook
 
 ## SYNOPSIS
-Invoke action copyNotebook
+Copies a notebook to the Notebooks folder in the destination Documents library.
+The folder is created if it doesn't exist.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## SYNTAX
 
@@ -41,27 +43,25 @@ Copy-MgUserOnenoteNotebook -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action copyNotebook
+Copies a notebook to the Notebooks folder in the destination Documents library.
+The folder is created if it doesn't exist.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Copy-MgUserOnenoteNotebook Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	GroupId = "groupId-value"
+	RenameAs = "renameAs-value"
+}
+# A UPN can also be used as -UserId.
+Copy-MgUserOnenoteNotebook -UserId $userId -NotebookId $notebookId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Copy-MgUserOnenoteNotebook Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

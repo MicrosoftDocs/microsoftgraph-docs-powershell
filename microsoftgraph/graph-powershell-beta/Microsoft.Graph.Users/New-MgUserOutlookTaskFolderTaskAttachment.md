@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserOutlookTaskFolderTaskAttachment
 
 ## SYNOPSIS
-Create new navigation property to attachments for users
+Use this API to add an attachment to an outlookTask.
+The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ New-MgUserOutlookTaskFolderTaskAttachment -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to attachments for users
+Use this API to add an attachment to an outlookTask.
+The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
 ## EXAMPLES
 

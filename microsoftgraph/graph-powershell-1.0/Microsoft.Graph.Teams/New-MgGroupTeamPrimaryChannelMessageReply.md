@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamPrimaryChannelMessageReply
 
 ## SYNOPSIS
-Create new navigation property to replies for groups
+Create a new reply to a chatMessage in a specified channel.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ New-MgGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to replies for groups
+Create a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserChatMessageReply
 
 ## SYNOPSIS
-Create new navigation property to replies for users
+Send a new reply to a chatMessage in a specified channel.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ New-MgUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to replies for users
+Send a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
 

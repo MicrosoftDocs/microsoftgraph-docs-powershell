@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgEntitlementManagementAccessPackageCatalog
 
 ## SYNOPSIS
-Create new navigation property to accessPackageCatalogs for identityGovernance
+Create a new accessPackageCatalog object.
 
 ## SYNTAX
 
@@ -32,27 +32,23 @@ New-MgEntitlementManagementAccessPackageCatalog -BodyParameter <IMicrosoftGraphA
 ```
 
 ## DESCRIPTION
-Create new navigation property to accessPackageCatalogs for identityGovernance
+Create a new accessPackageCatalog object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgEntitlementManagementAccessPackageCatalog Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	DisplayName = "sales"
+	Description = "for employees working with sales and outside sales partners"
+	IsExternallyVisible = $true
+}
+New-MgEntitlementManagementAccessPackageCatalog -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgEntitlementManagementAccessPackageCatalog Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -3132,43 +3128,28 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
             - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
-              - `[ManagerActionDateTime <DateTime?>]`: 
               - `[ManagerActionMessage <String>]`: 
-              - `[ManagerUserId <String>]`: 
-              - `[SenderDateTime <DateTime?>]`: 
               - `[SenderMessage <String>]`: 
-              - `[SenderUserId <String>]`: 
               - `[State <String>]`: scheduleChangeState
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
-              - `[RecipientActionDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
               - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
               - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
             - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
             - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: 
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
-              - `[ManagerActionDateTime <DateTime?>]`: 
               - `[ManagerActionMessage <String>]`: 
-              - `[ManagerUserId <String>]`: 
-              - `[SenderDateTime <DateTime?>]`: 
               - `[SenderMessage <String>]`: 
-              - `[SenderUserId <String>]`: 
               - `[State <String>]`: scheduleChangeState
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
               - `[OpenShiftId <String>]`: ID for the open shift.
             - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: 
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
               - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3190,21 +3171,15 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
               - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
             - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
             - `[ProvisionStatus <String>]`: operationStatus
-            - `[ProvisionStatusCode <String>]`: Additional information about why schedule provisioning failed.
             - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>]`: The logical grouping of users in the schedule (usually by role).
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
               - `[DisplayName <String>]`: The display name for the schedulingGroup. Required.
-              - `[IsActive <Boolean?>]`: Indicates whether the schedulingGroup can be used when creating new entities or updating existing ones. Required.
               - `[UserIds <String[]>]`: The list of user IDs that are a member of the schedulingGroup. Required.
             - `[Shifts <IMicrosoftGraphShift[]>]`: The shifts in the schedule.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
               - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3219,30 +3194,21 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
               - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
               - `[UserId <String>]`: ID of the user assigned to the shift. Required.
             - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>]`: 
-              - `[RecipientActionDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
               - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
               - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
-              - `[ManagerActionDateTime <DateTime?>]`: 
               - `[ManagerActionMessage <String>]`: 
-              - `[ManagerUserId <String>]`: 
-              - `[SenderDateTime <DateTime?>]`: 
               - `[SenderMessage <String>]`: 
-              - `[SenderUserId <String>]`: 
               - `[State <String>]`: scheduleChangeState
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
               - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
             - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
             - `[TimeCards <IMicrosoftGraphTimeCard[]>]`: 
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
               - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
                 - `[BreakId <String>]`: ID of the timeCardBreak.
@@ -3270,26 +3236,18 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
               - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
             - `[TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]`: The set of reasons for a time off in the schedule.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
               - `[DisplayName <String>]`: The name of the timeOffReason. Required.
               - `[IconType <String>]`: timeOffReasonIconType
               - `[IsActive <Boolean?>]`: Indicates whether the timeOffReason can be used when creating new entities or updating existing ones. Required.
             - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>]`: 
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
-              - `[ManagerActionDateTime <DateTime?>]`: 
               - `[ManagerActionMessage <String>]`: 
-              - `[ManagerUserId <String>]`: 
-              - `[SenderDateTime <DateTime?>]`: 
               - `[SenderMessage <String>]`: 
-              - `[SenderUserId <String>]`: 
               - `[State <String>]`: scheduleChangeState
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
               - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -3298,9 +3256,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format. Required.
             - `[TimesOff <IMicrosoftGraphTimeOff[]>]`: The instances of times off in the schedule.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
               - `[DraftTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3543,17 +3499,9 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
           - `[Version <String>]`: Version of the entity.
         - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The managed devices associated with the user.
           - `[Id <String>]`: 
-          - `[AadRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
-          - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
-          - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
           - `[AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]`: Managed device mobile app configuration states for this device.
             - `[Id <String>]`: 
             - `[PayloadId <String>]`: PayloadId on which filter has been applied.
-          - `[AutopilotEnrolled <Boolean?>]`: Reports if the managed device is enrolled via auto-pilot. This property is read-only.
-          - `[AzureActiveDirectoryDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
-          - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
-          - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
-          - `[BootstrapTokenEscrowed <Boolean?>]`: Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. To get, include BootstrapTokenEscrowed in the select clause and query with a device id. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only.
           - `[ChassisType <ChassisType?>]`: Chassis type.
           - `[ChromeOSDeviceInfo <IMicrosoftGraphChromeOSDeviceProperty[]>]`: List of properties of the ChromeOS Device.
             - `[Name <String>]`: Name of the property
@@ -3561,7 +3509,6 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[Value <String>]`: Value of the property
             - `[ValueType <String>]`: Type of the value
           - `[CloudPcRemoteActionResults <IMicrosoftGraphCloudPcRemoteActionResult[]>]`: 
-          - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
           - `[ComplianceState <ComplianceState?>]`: Compliance state.
           - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]`: configuration Manager client enabled features
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3592,18 +3539,12 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[Publisher <String>]`: Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.
             - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
             - `[Version <String>]`: Version of the discovered application. Read-only
-          - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
-            - `[ActionName <String>]`: Action name
-            - `[ActionState <String>]`: actionState
-            - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
-            - `[StartDateTime <DateTime?>]`: Time the action was initiated
           - `[DeviceCategory <IMicrosoftGraphDeviceCategory1>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[Description <String>]`: Optional description for the device category.
             - `[DisplayName <String>]`: Display name for the device category.
             - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the device category.
-          - `[DeviceCategoryDisplayName <String>]`: Device category display name. This property is read-only.
           - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]`: Device compliance policy states for this device.
             - `[Id <String>]`: 
             - `[DisplayName <String>]`: The name of the policy for this policyBase
@@ -3689,20 +3630,10 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[TpmVersion <String>]`: The security version number of the Boot Application
             - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
             - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
-          - `[DeviceName <String>]`: Name of the device. This property is read-only.
           - `[DeviceRegistrationState <DeviceRegistrationState?>]`: Device registration status.
           - `[DeviceType <DeviceType?>]`: Device type.
-          - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
-          - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
-          - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
-          - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
-          - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
-          - `[EnrollmentProfileName <String>]`: Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.
-          - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
           - `[ExchangeAccessState <DeviceManagementExchangeAccessState?>]`: Device Exchange Access State.
           - `[ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason?>]`: Device Exchange Access State Reason.
-          - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
-          - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
           - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
@@ -3749,13 +3680,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[TpmVersion <String>]`: The version of the TPM, as specified by the manufacturer
             - `[WifiMac <String>]`: WiFi MAC address of the device
             - `[WiredIPv4Addresses <String[]>]`: A list of wired IPv4 addresses. The update frequency (the maximum delay for the change of property value to be synchronized from the device to the cloud storage) of this property is daily. Note this property is currently supported only on devices running on Windows.
-          - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
-          - `[Imei <String>]`: IMEI. This property is read-only.
-          - `[IsEncrypted <Boolean?>]`: Device encryption status. This property is read-only.
-          - `[IsSupervised <Boolean?>]`: Device supervised status. This property is read-only.
-          - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
           - `[JoinType <JoinType?>]`: Device enrollment join type.
-          - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
           - `[LogCollectionRequests <IMicrosoftGraphDeviceLogCollectionResponse[]>]`: List of log collection requests
             - `[Id <String>]`: 
             - `[ErrorCode <Int64?>]`: The error code, if any. Valid values -9.22337203685478E+18 to 9.22337203685478E+18
@@ -3793,25 +3718,12 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
           - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
           - `[ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
           - `[ManagementAgent <ManagementAgentType?>]`: Management agent type.
-          - `[ManagementCertificateExpirationDate <DateTime?>]`: Reports device management certificate expiration date. This property is read-only.
           - `[ManagementFeatures <ManagedDeviceManagementFeatures?>]`: Device management features.
           - `[ManagementState <ManagementState?>]`: Management state of device in Microsoft Intune.
-          - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
-          - `[Meid <String>]`: MEID. This property is read-only.
-          - `[Model <String>]`: Model of the device. This property is read-only.
           - `[Notes <String>]`: Notes on the device created by IT Admin
-          - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
-          - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
           - `[OwnerType <OwnerType?>]`: Owner type of device.
           - `[PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState?>]`: Available health states for the Device Health API
-          - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
-          - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
-          - `[PreferMdmOverGroupPolicyAppliedDateTime <DateTime?>]`: Reports the DateTime the preferMdmOverGroupPolicy setting was set.  When set, the Intune MDM settings will override Group Policy settings if there is a conflict. Read Only. This property is read-only.
           - `[ProcessorArchitecture <ManagedDeviceArchitecture?>]`: Processor architecture
-          - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
-          - `[RemoteAssistanceSessionUrl <String>]`: Url that allows a Remote Assistance session to be established with the device. This property is read-only.
-          - `[RequireUserEnrollmentApproval <Boolean?>]`: Reports if the managed iOS device is user approval enrollment. This property is read-only.
-          - `[RetireAfterDateTime <DateTime?>]`: Indicates the time after when a device will be auto retired because of scheduled action. This property is read-only.
           - `[RoleScopeTagIds <String[]>]`: List of Scope Tag IDs for this Device instance.
           - `[SecurityBaselineStates <IMicrosoftGraphSecurityBaselineState[]>]`: Security baseline states for this device.
             - `[Id <String>]`: 
@@ -3832,22 +3744,8 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
               - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
             - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
             - `[UserPrincipalName <String>]`: User Principal Name
-          - `[SerialNumber <String>]`: SerialNumber. This property is read-only.
           - `[SkuFamily <String>]`: Device sku family
-          - `[SkuNumber <Int32?>]`: Device sku number, see also: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.
-          - `[SpecificationVersion <String>]`: Specification version. This property is read-only.
-          - `[SubscriberCarrier <String>]`: Subscriber Carrier. This property is read-only.
-          - `[TotalStorageSpaceInBytes <Int64?>]`: Total Storage in Bytes. This property is read-only.
-          - `[Udid <String>]`: Unique Device Identifier for iOS and macOS devices. This property is read-only.
-          - `[UserDisplayName <String>]`: User display name. This property is read-only.
-          - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
-          - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
           - `[Users <IMicrosoftGraphUser[]>]`: The primary users associated with the managed device.
-          - `[UsersLoggedOn <IMicrosoftGraphLoggedOnUser[]>]`: Indicates the last logged on users of a device. This property is read-only.
-            - `[LastLogOnDateTime <DateTime?>]`: Date time when user logs on
-            - `[UserId <String>]`: User id
-          - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
-          - `[WindowsActiveMalwareCount <Int32?>]`: Count of active malware for this windows device. This property is read-only.
           - `[WindowsProtectionState <IMicrosoftGraphWindowsProtectionState>]`: Device protection status entity.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
@@ -3883,7 +3781,6 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[SignatureUpdateOverdue <Boolean?>]`: Signature out of date or not?
             - `[SignatureVersion <String>]`: Current malware definitions version
             - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
-          - `[WindowsRemediatedMalwareCount <Int32?>]`: Count of remediated malware for this windows device. This property is read-only.
         - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
         - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
         - `[Messages <IMicrosoftGraphMessage[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
@@ -3960,7 +3857,6 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
           - `[Id <String>]`: 
           - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
           - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-          - `[AllowMeetingChat <String>]`: meetingChatMode
           - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
           - `[AllowedPresenters <String>]`: onlineMeetingPresenters
           - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
@@ -3995,7 +3891,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[AllowedAudience <String>]`: broadcastMeetingAudience
             - `[Captions <IMicrosoftGraphBroadcastMeetingCaptionSettings>]`: broadcastMeetingCaptionSettings
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[IsCaptionEnabled <Boolean?>]`: Indicates whether caption is enabled for this Teams live event.
+              - `[IsCaptionEnabled <Boolean?>]`: Indicates whether captions are enabled for this Teams live event.
               - `[SpokenLanguage <String>]`: The spoken language.
               - `[TranslationLanguages <String[]>]`: The translation languages (choose up to 6).
             - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
@@ -4136,7 +4032,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
           - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
           - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
         - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
-        - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
+        - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance1[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
           - `[Id <String>]`: 
           - `[ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: Returns the collection of reviewers who were contacted to complete this review. While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities. Supports $select. Read-only.
             - `[Id <String>]`: 
@@ -4158,7 +4054,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[Insights <IMicrosoftGraphGovernanceInsight[]>]`: Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an accessReviewInstanceDecisionItem.
               - `[Id <String>]`: 
               - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
-            - `[Instance <IMicrosoftGraphAccessReviewInstance>]`: accessReviewInstance
+            - `[Instance <IMicrosoftGraphAccessReviewInstance1>]`: accessReviewInstance
             - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
             - `[Principal <IMicrosoftGraphIdentity>]`: identity
             - `[PrincipalLink <String>]`: Link to the principal object. For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9. Read-only.
@@ -4176,7 +4072,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[ReviewedDateTime <DateTime?>]`: The timestamp when the review decision occurred. Supports $select. Read-only.
             - `[Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]`: accessReviewInstanceDecisionItemTarget
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]`: accessReviewScheduleDefinition
+          - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition1>]`: accessReviewScheduleDefinition
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: 
             - `[AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]`: Defines the list of additional users or group members to be notified of the access review progress.
@@ -4195,7 +4091,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
             - `[FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See accessReviewReviewerScope. Replaces backupReviewers. Supports $select. NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
             - `[InstanceEnumerationScope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Instances <IMicrosoftGraphAccessReviewInstance[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+            - `[Instances <IMicrosoftGraphAccessReviewInstance1[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
             - `[LastModifiedDateTime <DateTime?>]`: Timestamp when the access review series was last modified. Supports $select. Read-only.
             - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of access review scopes is used to define who are the reviewers. The reviewers property is only updatable if individual users are assigned as reviewers. Required on create. Supports $select. For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API. NOTE: The value of this property will be ignored if reviewers are assigned through the stageSettings property.
             - `[Scope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
@@ -5073,9 +4969,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this ca
           - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[Id <String>]`: 
             - `[Availability <IMicrosoftGraphShiftAvailability[]>]`: Availability of the user to be scheduled for work and its recurrence pattern.
               - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
@@ -7909,43 +7803,28 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
               - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
                 - `[AssignedTo <String>]`: scheduleChangeRequestActor
-                - `[ManagerActionDateTime <DateTime?>]`: 
                 - `[ManagerActionMessage <String>]`: 
-                - `[ManagerUserId <String>]`: 
-                - `[SenderDateTime <DateTime?>]`: 
                 - `[SenderMessage <String>]`: 
-                - `[SenderUserId <String>]`: 
                 - `[State <String>]`: scheduleChangeState
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Id <String>]`: 
-                - `[RecipientActionDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
                 - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
                 - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
               - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
               - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: 
                 - `[AssignedTo <String>]`: scheduleChangeRequestActor
-                - `[ManagerActionDateTime <DateTime?>]`: 
                 - `[ManagerActionMessage <String>]`: 
-                - `[ManagerUserId <String>]`: 
-                - `[SenderDateTime <DateTime?>]`: 
                 - `[SenderMessage <String>]`: 
-                - `[SenderUserId <String>]`: 
                 - `[State <String>]`: scheduleChangeState
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Id <String>]`: 
                 - `[OpenShiftId <String>]`: ID for the open shift.
               - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: 
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Id <String>]`: 
                 - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -7967,21 +7846,15 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
                 - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
               - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
               - `[ProvisionStatus <String>]`: operationStatus
-              - `[ProvisionStatusCode <String>]`: Additional information about why schedule provisioning failed.
               - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>]`: The logical grouping of users in the schedule (usually by role).
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Id <String>]`: 
                 - `[DisplayName <String>]`: The display name for the schedulingGroup. Required.
-                - `[IsActive <Boolean?>]`: Indicates whether the schedulingGroup can be used when creating new entities or updating existing ones. Required.
                 - `[UserIds <String[]>]`: The list of user IDs that are a member of the schedulingGroup. Required.
               - `[Shifts <IMicrosoftGraphShift[]>]`: The shifts in the schedule.
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Id <String>]`: 
                 - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -7996,30 +7869,21 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
                 - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
                 - `[UserId <String>]`: ID of the user assigned to the shift. Required.
               - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>]`: 
-                - `[RecipientActionDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
                 - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
                 - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
                 - `[AssignedTo <String>]`: scheduleChangeRequestActor
-                - `[ManagerActionDateTime <DateTime?>]`: 
                 - `[ManagerActionMessage <String>]`: 
-                - `[ManagerUserId <String>]`: 
-                - `[SenderDateTime <DateTime?>]`: 
                 - `[SenderMessage <String>]`: 
-                - `[SenderUserId <String>]`: 
                 - `[State <String>]`: scheduleChangeState
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Id <String>]`: 
                 - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
               - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
               - `[TimeCards <IMicrosoftGraphTimeCard[]>]`: 
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Id <String>]`: 
                 - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
                   - `[BreakId <String>]`: ID of the timeCardBreak.
@@ -8047,26 +7911,18 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
                 - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
               - `[TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]`: The set of reasons for a time off in the schedule.
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Id <String>]`: 
                 - `[DisplayName <String>]`: The name of the timeOffReason. Required.
                 - `[IconType <String>]`: timeOffReasonIconType
                 - `[IsActive <Boolean?>]`: Indicates whether the timeOffReason can be used when creating new entities or updating existing ones. Required.
               - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>]`: 
                 - `[AssignedTo <String>]`: scheduleChangeRequestActor
-                - `[ManagerActionDateTime <DateTime?>]`: 
                 - `[ManagerActionMessage <String>]`: 
-                - `[ManagerUserId <String>]`: 
-                - `[SenderDateTime <DateTime?>]`: 
                 - `[SenderMessage <String>]`: 
-                - `[SenderUserId <String>]`: 
                 - `[State <String>]`: scheduleChangeState
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Id <String>]`: 
                 - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -8075,9 +7931,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format. Required.
               - `[TimesOff <IMicrosoftGraphTimeOff[]>]`: The instances of times off in the schedule.
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Id <String>]`: 
                 - `[DraftTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8320,17 +8174,9 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
             - `[Version <String>]`: Version of the entity.
           - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The managed devices associated with the user.
             - `[Id <String>]`: 
-            - `[AadRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
-            - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
-            - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
             - `[AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]`: Managed device mobile app configuration states for this device.
               - `[Id <String>]`: 
               - `[PayloadId <String>]`: PayloadId on which filter has been applied.
-            - `[AutopilotEnrolled <Boolean?>]`: Reports if the managed device is enrolled via auto-pilot. This property is read-only.
-            - `[AzureActiveDirectoryDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
-            - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
-            - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
-            - `[BootstrapTokenEscrowed <Boolean?>]`: Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. To get, include BootstrapTokenEscrowed in the select clause and query with a device id. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only.
             - `[ChassisType <ChassisType?>]`: Chassis type.
             - `[ChromeOSDeviceInfo <IMicrosoftGraphChromeOSDeviceProperty[]>]`: List of properties of the ChromeOS Device.
               - `[Name <String>]`: Name of the property
@@ -8338,7 +8184,6 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[Value <String>]`: Value of the property
               - `[ValueType <String>]`: Type of the value
             - `[CloudPcRemoteActionResults <IMicrosoftGraphCloudPcRemoteActionResult[]>]`: 
-            - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
             - `[ComplianceState <ComplianceState?>]`: Compliance state.
             - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]`: configuration Manager client enabled features
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8369,18 +8214,12 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[Publisher <String>]`: Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.
               - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
               - `[Version <String>]`: Version of the discovered application. Read-only
-            - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
-              - `[ActionName <String>]`: Action name
-              - `[ActionState <String>]`: actionState
-              - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
-              - `[StartDateTime <DateTime?>]`: Time the action was initiated
             - `[DeviceCategory <IMicrosoftGraphDeviceCategory1>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: 
               - `[Description <String>]`: Optional description for the device category.
               - `[DisplayName <String>]`: Display name for the device category.
               - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the device category.
-            - `[DeviceCategoryDisplayName <String>]`: Device category display name. This property is read-only.
             - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]`: Device compliance policy states for this device.
               - `[Id <String>]`: 
               - `[DisplayName <String>]`: The name of the policy for this policyBase
@@ -8466,20 +8305,10 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[TpmVersion <String>]`: The security version number of the Boot Application
               - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
               - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
-            - `[DeviceName <String>]`: Name of the device. This property is read-only.
             - `[DeviceRegistrationState <DeviceRegistrationState?>]`: Device registration status.
             - `[DeviceType <DeviceType?>]`: Device type.
-            - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
-            - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
-            - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
-            - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
-            - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
-            - `[EnrollmentProfileName <String>]`: Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.
-            - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
             - `[ExchangeAccessState <DeviceManagementExchangeAccessState?>]`: Device Exchange Access State.
             - `[ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason?>]`: Device Exchange Access State Reason.
-            - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
-            - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
             - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
@@ -8526,13 +8355,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[TpmVersion <String>]`: The version of the TPM, as specified by the manufacturer
               - `[WifiMac <String>]`: WiFi MAC address of the device
               - `[WiredIPv4Addresses <String[]>]`: A list of wired IPv4 addresses. The update frequency (the maximum delay for the change of property value to be synchronized from the device to the cloud storage) of this property is daily. Note this property is currently supported only on devices running on Windows.
-            - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
-            - `[Imei <String>]`: IMEI. This property is read-only.
-            - `[IsEncrypted <Boolean?>]`: Device encryption status. This property is read-only.
-            - `[IsSupervised <Boolean?>]`: Device supervised status. This property is read-only.
-            - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
             - `[JoinType <JoinType?>]`: Device enrollment join type.
-            - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
             - `[LogCollectionRequests <IMicrosoftGraphDeviceLogCollectionResponse[]>]`: List of log collection requests
               - `[Id <String>]`: 
               - `[ErrorCode <Int64?>]`: The error code, if any. Valid values -9.22337203685478E+18 to 9.22337203685478E+18
@@ -8570,25 +8393,12 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
             - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
             - `[ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
             - `[ManagementAgent <ManagementAgentType?>]`: Management agent type.
-            - `[ManagementCertificateExpirationDate <DateTime?>]`: Reports device management certificate expiration date. This property is read-only.
             - `[ManagementFeatures <ManagedDeviceManagementFeatures?>]`: Device management features.
             - `[ManagementState <ManagementState?>]`: Management state of device in Microsoft Intune.
-            - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
-            - `[Meid <String>]`: MEID. This property is read-only.
-            - `[Model <String>]`: Model of the device. This property is read-only.
             - `[Notes <String>]`: Notes on the device created by IT Admin
-            - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
-            - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
             - `[OwnerType <OwnerType?>]`: Owner type of device.
             - `[PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState?>]`: Available health states for the Device Health API
-            - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
-            - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
-            - `[PreferMdmOverGroupPolicyAppliedDateTime <DateTime?>]`: Reports the DateTime the preferMdmOverGroupPolicy setting was set.  When set, the Intune MDM settings will override Group Policy settings if there is a conflict. Read Only. This property is read-only.
             - `[ProcessorArchitecture <ManagedDeviceArchitecture?>]`: Processor architecture
-            - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
-            - `[RemoteAssistanceSessionUrl <String>]`: Url that allows a Remote Assistance session to be established with the device. This property is read-only.
-            - `[RequireUserEnrollmentApproval <Boolean?>]`: Reports if the managed iOS device is user approval enrollment. This property is read-only.
-            - `[RetireAfterDateTime <DateTime?>]`: Indicates the time after when a device will be auto retired because of scheduled action. This property is read-only.
             - `[RoleScopeTagIds <String[]>]`: List of Scope Tag IDs for this Device instance.
             - `[SecurityBaselineStates <IMicrosoftGraphSecurityBaselineState[]>]`: Security baseline states for this device.
               - `[Id <String>]`: 
@@ -8609,22 +8419,8 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
                 - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
               - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
               - `[UserPrincipalName <String>]`: User Principal Name
-            - `[SerialNumber <String>]`: SerialNumber. This property is read-only.
             - `[SkuFamily <String>]`: Device sku family
-            - `[SkuNumber <Int32?>]`: Device sku number, see also: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.
-            - `[SpecificationVersion <String>]`: Specification version. This property is read-only.
-            - `[SubscriberCarrier <String>]`: Subscriber Carrier. This property is read-only.
-            - `[TotalStorageSpaceInBytes <Int64?>]`: Total Storage in Bytes. This property is read-only.
-            - `[Udid <String>]`: Unique Device Identifier for iOS and macOS devices. This property is read-only.
-            - `[UserDisplayName <String>]`: User display name. This property is read-only.
-            - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
-            - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
             - `[Users <IMicrosoftGraphUser[]>]`: The primary users associated with the managed device.
-            - `[UsersLoggedOn <IMicrosoftGraphLoggedOnUser[]>]`: Indicates the last logged on users of a device. This property is read-only.
-              - `[LastLogOnDateTime <DateTime?>]`: Date time when user logs on
-              - `[UserId <String>]`: User id
-            - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
-            - `[WindowsActiveMalwareCount <Int32?>]`: Count of active malware for this windows device. This property is read-only.
             - `[WindowsProtectionState <IMicrosoftGraphWindowsProtectionState>]`: Device protection status entity.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: 
@@ -8660,7 +8456,6 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[SignatureUpdateOverdue <Boolean?>]`: Signature out of date or not?
               - `[SignatureVersion <String>]`: Current malware definitions version
               - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
-            - `[WindowsRemediatedMalwareCount <Int32?>]`: Count of remediated malware for this windows device. This property is read-only.
           - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
           - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
           - `[Messages <IMicrosoftGraphMessage[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
@@ -8737,7 +8532,6 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
             - `[Id <String>]`: 
             - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
             - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-            - `[AllowMeetingChat <String>]`: meetingChatMode
             - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
             - `[AllowedPresenters <String>]`: onlineMeetingPresenters
             - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
@@ -8772,7 +8566,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[AllowedAudience <String>]`: broadcastMeetingAudience
               - `[Captions <IMicrosoftGraphBroadcastMeetingCaptionSettings>]`: broadcastMeetingCaptionSettings
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[IsCaptionEnabled <Boolean?>]`: Indicates whether caption is enabled for this Teams live event.
+                - `[IsCaptionEnabled <Boolean?>]`: Indicates whether captions are enabled for this Teams live event.
                 - `[SpokenLanguage <String>]`: The spoken language.
                 - `[TranslationLanguages <String[]>]`: The translation languages (choose up to 6).
               - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
@@ -8913,7 +8707,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
             - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
             - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
           - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
-          - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
+          - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance1[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
             - `[Id <String>]`: 
             - `[ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: Returns the collection of reviewers who were contacted to complete this review. While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities. Supports $select. Read-only.
               - `[Id <String>]`: 
@@ -8935,7 +8729,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[Insights <IMicrosoftGraphGovernanceInsight[]>]`: Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an accessReviewInstanceDecisionItem.
                 - `[Id <String>]`: 
                 - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
-              - `[Instance <IMicrosoftGraphAccessReviewInstance>]`: accessReviewInstance
+              - `[Instance <IMicrosoftGraphAccessReviewInstance1>]`: accessReviewInstance
               - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
               - `[Principal <IMicrosoftGraphIdentity>]`: identity
               - `[PrincipalLink <String>]`: Link to the principal object. For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9. Read-only.
@@ -8953,7 +8747,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[ReviewedDateTime <DateTime?>]`: The timestamp when the review decision occurred. Supports $select. Read-only.
               - `[Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]`: accessReviewInstanceDecisionItemTarget
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]`: accessReviewScheduleDefinition
+            - `[Definition <IMicrosoftGraphAccessReviewScheduleDefinition1>]`: accessReviewScheduleDefinition
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: 
               - `[AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]`: Defines the list of additional users or group members to be notified of the access review progress.
@@ -8972,7 +8766,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
               - `[FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See accessReviewReviewerScope. Replaces backupReviewers. Supports $select. NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
               - `[InstanceEnumerationScope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Instances <IMicrosoftGraphAccessReviewInstance[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
+              - `[Instances <IMicrosoftGraphAccessReviewInstance1[]>]`: Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence.
               - `[LastModifiedDateTime <DateTime?>]`: Timestamp when the access review series was last modified. Supports $select. Read-only.
               - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: This collection of access review scopes is used to define who are the reviewers. The reviewers property is only updatable if individual users are assigned as reviewers. Required on create. Supports $select. For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API. NOTE: The value of this property will be ignored if reviewers are assigned through the stageSettings property.
               - `[Scope <IMicrosoftGraphAccessReviewScope>]`: accessReviewScope
@@ -9850,9 +9644,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
             - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: 
               - `[Availability <IMicrosoftGraphShiftAvailability[]>]`: Availability of the user to be scheduled for work and its recurrence pattern.
                 - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence

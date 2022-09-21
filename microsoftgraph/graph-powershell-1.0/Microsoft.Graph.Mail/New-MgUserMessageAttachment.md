@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserMessageAttachment
 
 ## SYNOPSIS
-Create new navigation property to attachments for users
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ## SYNTAX
 
@@ -39,27 +40,43 @@ New-MgUserMessageAttachment -InputObject <IMailIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to attachments for users
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserMessageAttachment Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Mail
+$params = @{
+	"@odata.type" = "microsoft.graph.fileAttachment"
+	Name = "name-value"
+	ContentType = "contentType-value"
+	IsInline = $false
+	ContentLocation = "contentLocation-value"
+	ContentBytes = "base64-contentBytes-value"
+}
+# A UPN can also be used as -UserId.
+New-MgUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserMessageAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgUserMessageAttachment Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Mail
+$params = @{
+	"@odata.type" = "#microsoft.graph.fileAttachment"
+	Name = "smile"
+	ContentBytes = "R0lGODdhEAYEAA7"
+}
+# A UPN can also be used as -UserId.
+New-MgUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserMessageAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

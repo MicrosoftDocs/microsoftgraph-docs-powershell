@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgOrganizationSettingItemInsight
 
 ## SYNOPSIS
-Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites.
-List itemInsights returns the settings to display or return item insights in an organization.
+Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
+To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
 
 ## SYNTAX
 
@@ -26,28 +26,19 @@ Get-MgOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites.
-List itemInsights returns the settings to display or return item insights in an organization.
+Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
+To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgOrganizationSettingItemInsight Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Get-MgOrganizationSettingItemInsight -OrganizationId $organizationId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgOrganizationSettingItemInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

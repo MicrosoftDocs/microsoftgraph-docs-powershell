@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Create new navigation property to permissionGrantPolicies for policies
+Creates a permissionGrantPolicy.
+A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
+After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
 
 ## SYNTAX
 
@@ -27,7 +29,9 @@ New-MgPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionGrant
 ```
 
 ## DESCRIPTION
-Create new navigation property to permissionGrantPolicies for policies
+Creates a permissionGrantPolicy.
+A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
+After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
 
 ## EXAMPLES
 

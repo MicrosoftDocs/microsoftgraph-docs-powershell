@@ -8,7 +8,14 @@ schema: 2.0.0
 # Add-MgServicePrincipalTokenSigningCertificate
 
 ## SYNOPSIS
-Invoke action addTokenSigningCertificate
+Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
+The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \n+ The keyCredentials object with the following objects:\n    + A private key object with **usage** set to `Sign`.\n    + A public key object with **usage** set to `Verify`.\n+ The passwordCredentials object.
+All the objects have the same value of **customKeyIdentifier**.
+The **passwordCredential** is used to open the PFX file (private key).
+It and the associated private key object have the same value of **keyId**.
+Once set during creation through the **displayName** property, the subject of the certificate cannot be updated.
+The **startDateTime** is set to the same time the certificate is created using the action.
+The **endDateTime** can be up to three years after the certificate is created.
 
 ## SYNTAX
 
@@ -40,27 +47,29 @@ Add-MgServicePrincipalTokenSigningCertificate -InputObject <IApplicationsIdentit
 ```
 
 ## DESCRIPTION
-Invoke action addTokenSigningCertificate
+Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
+The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \n+ The keyCredentials object with the following objects:\n    + A private key object with **usage** set to `Sign`.\n    + A public key object with **usage** set to `Verify`.\n+ The passwordCredentials object.
+All the objects have the same value of **customKeyIdentifier**.
+The **passwordCredential** is used to open the PFX file (private key).
+It and the associated private key object have the same value of **keyId**.
+Once set during creation through the **displayName** property, the subject of the certificate cannot be updated.
+The **startDateTime** is set to the same time the certificate is created using the action.
+The **endDateTime** can be up to three years after the certificate is created.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Add-MgServicePrincipalTokenSigningCertificate Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	DisplayName = "CN=customDisplayName"
+	EndDateTime = [System.DateTime]::Parse("2024-01-25T00:00:00Z")
+}
+Add-MgServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Add-MgServicePrincipalTokenSigningCertificate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

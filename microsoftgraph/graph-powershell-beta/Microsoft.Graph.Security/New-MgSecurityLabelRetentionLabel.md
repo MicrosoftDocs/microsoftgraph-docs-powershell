@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgSecurityLabelRetentionLabel
 
 ## SYNOPSIS
-Create new navigation property to retentionLabels for security
+Create a new retentionLabel object.
+To create a disposition review stage, include the **actionAfterRetentionPeriod** property in the request body with one of the possible values specified.
 
 ## SYNTAX
 
@@ -31,27 +32,37 @@ New-MgSecurityLabelRetentionLabel -BodyParameter <IMicrosoftGraphSecurityRetenti
 ```
 
 ## DESCRIPTION
-Create new navigation property to retentionLabels for security
+Create a new retentionLabel object.
+To create a disposition review stage, include the **actionAfterRetentionPeriod** property in the request body with one of the possible values specified.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgSecurityLabelRetentionLabel Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.retentionLabel"
+	DisplayName = "String"
+	BehaviorDuringRetentionPeriod = "String"
+	ActionAfterRetentionPeriod = "String"
+	RetentionTrigger = "String"
+	RetentionDuration = @{
+		"@odata.type" = "microsoft.graph.security.retentionDuration"
+	}
+	IsInUse = "Boolean"
+	DescriptionForAdmins = "String"
+	DescriptionForUsers = "String"
+	CreatedBy = @{
+		"@odata.type" = "microsoft.graph.identitySet"
+	}
+	LabelToBeApplied = "String"
+	DefaultRecordBehavior = "String"
+}
+New-MgSecurityLabelRetentionLabel -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgSecurityLabelRetentionLabel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
