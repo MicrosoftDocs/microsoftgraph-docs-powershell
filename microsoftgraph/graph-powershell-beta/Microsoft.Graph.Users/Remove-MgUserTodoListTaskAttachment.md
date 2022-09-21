@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachment
@@ -28,6 +28,16 @@ Remove-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> [-IfMatch <Str
 Delete navigation property attachments for users
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgUserTodoListTaskAttachment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+# A UPN can also be used as -UserId.
+Remove-MgUserTodoListTaskAttachment -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -AttachmentBaseId $attachmentBaseId
+```
+
+This example shows how to use the Remove-MgUserTodoListTaskAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -186,7 +196,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

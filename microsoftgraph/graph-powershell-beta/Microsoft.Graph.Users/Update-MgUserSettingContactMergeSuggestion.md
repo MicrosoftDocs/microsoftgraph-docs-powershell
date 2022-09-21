@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusersettingcontactmergesuggestion
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserSettingContactMergeSuggestion
 
 ## SYNOPSIS
-Update the navigation property contactMergeSuggestions in users
+Update the properties of a contactMergeSuggestions object.
 
 ## SYNTAX
 
@@ -37,9 +37,22 @@ Update-MgUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property contactMergeSuggestions in users
+Update the properties of a contactMergeSuggestions object.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgUserSettingContactMergeSuggestion Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+$params = @{
+	IsEnabled = $false
+}
+# A UPN can also be used as -UserId.
+Update-MgUserSettingContactMergeSuggestion -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgUserSettingContactMergeSuggestion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -201,12 +214,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphContactMergeSuggestions>`: contactMergeSuggestions
+BODYPARAMETER <IMicrosoftGraphContactMergeSuggestions>: contactMergeSuggestions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[IsEnabled <Boolean?>]`: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled. Default value is true.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

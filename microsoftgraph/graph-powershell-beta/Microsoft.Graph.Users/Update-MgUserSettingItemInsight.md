@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusersettingiteminsight
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserSettingItemInsight
 
 ## SYNOPSIS
-Update the navigation property itemInsights in users
+Update the privacy settings for itemInsights and meeting hours insights of a user.
 
 ## SYNTAX
 
@@ -37,9 +37,21 @@ Update-MgUserSettingItemInsight -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property itemInsights in users
+Update the privacy settings for itemInsights and meeting hours insights of a user.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgUserSettingItemInsight Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+$params = @{
+	IsEnabled = "false"
+}
+Update-MgUserSettingItemInsight -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgUserSettingItemInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -202,12 +214,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
+BODYPARAMETER <IMicrosoftGraphUserInsightsSettings>: userInsightsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[IsEnabled <Boolean?>]`: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled. Default is true. Optional.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

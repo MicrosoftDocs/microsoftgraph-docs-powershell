@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusertodolisttasklinkedresource
@@ -44,6 +44,22 @@ Update-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 Update the navigation property linkedResources in users
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgUserTodoListTaskLinkedResource Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+$params = @{
+	"@odata.type" = "#microsoft.graph.linkedResource"
+	WebUrl = "http://microsoft.com"
+	ApplicationName = "Microsoft"
+	DisplayName = "Microsoft"
+}
+# A UPN can also be used as -UserId.
+Update-MgUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgUserTodoListTaskLinkedResource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -294,7 +310,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphLinkedResource>`: linkedResource
+BODYPARAMETER <IMicrosoftGraphLinkedResource>: linkedResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ApplicationName <String>]`: Field indicating the app name of the source that is sending the linkedResource.
@@ -302,7 +318,7 @@ BODYPARAMETER `<IMicrosoftGraphLinkedResource>`: linkedResource
   - `[ExternalId <String>]`: Id of the object that is associated with this task on the third-party/partner system.
   - `[WebUrl <String>]`: Deep link to the linkedResource.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

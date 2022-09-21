@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/remove-mgusertodolist
@@ -28,6 +28,16 @@ Remove-MgUserTodoList -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassTh
 Delete navigation property lists for users
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgUserTodoList Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+# A UPN can also be used as -UserId.
+Remove-MgUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId
+```
+
+This example shows how to use the Remove-MgUserTodoList Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -156,7 +166,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mguseroutlooktaskgrouptaskfoldertaskattachment
@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserOutlookTaskGroupTaskFolderTaskAttachment
 
 ## SYNOPSIS
-Create new navigation property to attachments for users
+Use this API to add an attachment to an outlookTask.
+The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ New-MgUserOutlookTaskGroupTaskFolderTaskAttachment -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to attachments for users
+Use this API to add an attachment to an outlookTask.
+The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
 ## EXAMPLES
 
@@ -156,8 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The display name of the attachment.
-This does not need to be the actual file name.
+The attachment's file name.
 
 ```yaml
 Type: String
@@ -296,16 +297,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
+BODYPARAMETER <IMicrosoftGraphAttachment>: attachment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ContentType <String>]`: The MIME type.
   - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+  - `[Name <String>]`: The attachment's file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

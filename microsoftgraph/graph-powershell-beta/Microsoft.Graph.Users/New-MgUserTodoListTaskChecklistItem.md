@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mgusertodolisttaskchecklistitem
@@ -42,6 +42,32 @@ New-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> -BodyParameter
 Create new navigation property to checklistItems for users
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgUserTodoListTaskChecklistItem Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+$params = @{
+	DisplayName = "Final sign-off from the team"
+}
+# A UPN can also be used as -UserId.
+New-MgUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserTodoListTaskChecklistItem Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the New-MgUserTodoListTaskChecklistItem Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+$params = @{
+	DisplayName = "Final sign-off from the team"
+}
+# A UPN can also be used as -UserId.
+New-MgUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserTodoListTaskChecklistItem Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -262,7 +288,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphChecklistItem>`: checklistItem
+BODYPARAMETER <IMicrosoftGraphChecklistItem>: checklistItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
@@ -270,7 +296,7 @@ BODYPARAMETER `<IMicrosoftGraphChecklistItem>`: checklistItem
   - `[DisplayName <String>]`: Field indicating the title of checklistItem.
   - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

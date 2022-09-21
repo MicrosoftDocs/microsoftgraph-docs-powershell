@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mgusersettingcontactmergesuggestion
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSettingContactMergeSuggestion
 
 ## SYNOPSIS
-Get contactMergeSuggestions from users
+Read the properties and relationships of a contactMergeSuggestions object.
 
 ## SYNTAX
 
@@ -25,9 +25,19 @@ Get-MgUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get contactMergeSuggestions from users
+Read the properties and relationships of a contactMergeSuggestions object.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserSettingContactMergeSuggestion Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+# A UPN can also be used as -UserId.
+Get-MgUserSettingContactMergeSuggestion -UserId $userId
+```
+
+This example shows how to use the Get-MgUserSettingContactMergeSuggestion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -110,7 +120,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

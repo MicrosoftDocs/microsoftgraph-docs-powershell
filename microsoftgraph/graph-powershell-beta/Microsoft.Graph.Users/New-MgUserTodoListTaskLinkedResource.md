@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mgusertodolisttasklinkedresource
@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
-Create new navigation property to linkedResources for users
+Create a linkedResource object to associate a specified task with an item in a partner application.
+For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a **linkedResource** object to track its association.
+You can also create a **linkedResource** object while creating a todoTask.
 
 ## SYNTAX
 
@@ -39,9 +41,27 @@ New-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to linkedResources for users
+Create a linkedResource object to associate a specified task with an item in a partner application.
+For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a **linkedResource** object to track its association.
+You can also create a **linkedResource** object while creating a todoTask.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgUserTodoListTaskLinkedResource Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+$params = @{
+	WebUrl = "https://microsoft.com"
+	ApplicationName = "Microsoft"
+	DisplayName = "Microsoft"
+	ExternalId = "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
+}
+# A UPN can also be used as -UserId.
+New-MgUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserTodoListTaskLinkedResource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -262,7 +282,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphLinkedResource>`: linkedResource
+BODYPARAMETER <IMicrosoftGraphLinkedResource>: linkedResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ApplicationName <String>]`: Field indicating the app name of the source that is sending the linkedResource.
@@ -270,7 +290,7 @@ BODYPARAMETER `<IMicrosoftGraphLinkedResource>`: linkedResource
   - `[ExternalId <String>]`: Id of the object that is associated with this task on the third-party/partner system.
   - `[WebUrl <String>]`: Deep link to the linkedResource.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

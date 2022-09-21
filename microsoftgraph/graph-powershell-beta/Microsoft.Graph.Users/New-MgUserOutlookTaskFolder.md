@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mguseroutlooktaskfolder
@@ -48,6 +48,19 @@ New-MgUserOutlookTaskFolder -InputObject <IUsersIdentity> -BodyParameter <IMicro
 Create new navigation property to taskFolders for users
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgUserOutlookTaskFolder Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+$params = @{
+	Name = "Volunteer"
+}
+# A UPN can also be used as -UserId.
+New-MgUserOutlookTaskFolder -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserOutlookTaskFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -292,7 +305,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOutlookTaskFolder>`: outlookTaskFolder
+BODYPARAMETER <IMicrosoftGraphOutlookTaskFolder>: outlookTaskFolder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ChangeKey <String>]`: The version of the task folder.
@@ -317,7 +330,7 @@ BODYPARAMETER `<IMicrosoftGraphOutlookTaskFolder>`: outlookTaskFolder
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+      - `[Name <String>]`: The attachment's file name.
       - `[Size <Int32?>]`: The length of the attachment in bytes.
     - `[Body <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -325,8 +338,8 @@ BODYPARAMETER `<IMicrosoftGraphOutlookTaskFolder>`: outlookTaskFolder
       - `[ContentType <String>]`: bodyType
     - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
     - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[HasAttachments <Boolean?>]`: Set to true if the task has attachments.
     - `[Importance <String>]`: importance
@@ -359,7 +372,7 @@ BODYPARAMETER `<IMicrosoftGraphOutlookTaskFolder>`: outlookTaskFolder
     - `[Status <String>]`: taskStatus
     - `[Subject <String>]`: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession
@@ -381,15 +394,15 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the task folder. Read-only. Nullable.
+MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the task folder. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Value <String[]>]`: A collection of property values.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the task folder. Read-only. Nullable.
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the task folder. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Value <String>]`: A property value.
 
-TASKS <IMicrosoftGraphOutlookTask\[]>: The tasks in this task folder. Read-only. Nullable.
+TASKS <IMicrosoftGraphOutlookTask[]>: The tasks in this task folder. Read-only. Nullable.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -401,7 +414,7 @@ TASKS <IMicrosoftGraphOutlookTask\[]>: The tasks in this task folder. Read-only.
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+    - `[Name <String>]`: The attachment's file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
   - `[Body <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -409,8 +422,8 @@ TASKS <IMicrosoftGraphOutlookTask\[]>: The tasks in this task folder. Read-only.
     - `[ContentType <String>]`: bodyType
   - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
   - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[HasAttachments <Boolean?>]`: Set to true if the task has attachments.
   - `[Importance <String>]`: importance

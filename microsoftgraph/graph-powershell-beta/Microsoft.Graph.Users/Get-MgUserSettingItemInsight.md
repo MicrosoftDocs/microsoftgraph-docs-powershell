@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mgusersettingiteminsight
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSettingItemInsight
 
 ## SYNOPSIS
-Get itemInsights from users
+Get the user-customizable privacy settings for itemInsights and meeting hours insights.
 
 ## SYNTAX
 
@@ -25,9 +25,19 @@ Get-MgUserSettingItemInsight -InputObject <IUsersIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get itemInsights from users
+Get the user-customizable privacy settings for itemInsights and meeting hours insights.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserSettingItemInsight Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+# A UPN can also be used as -UserId.
+Get-MgUserSettingItemInsight -UserId $userId
+```
+
+This example shows how to use the Get-MgUserSettingItemInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -110,7 +120,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession
