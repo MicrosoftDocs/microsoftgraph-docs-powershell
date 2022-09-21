@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mggroupdriveitemthumbnail
@@ -299,7 +299,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphThumbnailSet>: thumbnailSet
+BODYPARAMETER `<IMicrosoftGraphThumbnailSet>`: thumbnailSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Large <IMicrosoftGraphThumbnail>]`: thumbnail
@@ -313,7 +313,7 @@ BODYPARAMETER <IMicrosoftGraphThumbnailSet>: thumbnailSet
   - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
   - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
@@ -338,7 +338,7 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-LARGE <IMicrosoftGraphThumbnail>: thumbnail
+LARGE `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -346,7 +346,7 @@ LARGE <IMicrosoftGraphThumbnail>: thumbnail
   - `[Url <String>]`: The URL used to fetch the thumbnail content.
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
-MEDIUM <IMicrosoftGraphThumbnail>: thumbnail
+MEDIUM `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -354,7 +354,7 @@ MEDIUM <IMicrosoftGraphThumbnail>: thumbnail
   - `[Url <String>]`: The URL used to fetch the thumbnail content.
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
-SMALL <IMicrosoftGraphThumbnail>: thumbnail
+SMALL `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -362,7 +362,7 @@ SMALL <IMicrosoftGraphThumbnail>: thumbnail
   - `[Url <String>]`: The URL used to fetch the thumbnail content.
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
-SOURCE <IMicrosoftGraphThumbnail>: thumbnail
+SOURCE `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
