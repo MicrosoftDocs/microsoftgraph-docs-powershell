@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgprogram
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgProgram
 
 ## SYNOPSIS
-Create program (deprecated)
+In the Azure AD access reviews feature, create a new program object.
 
 ## SYNTAX
 
@@ -24,9 +24,22 @@ New-MgProgram -BodyParameter <IMicrosoftGraphProgram> [-WhatIf] [-Confirm] [<Com
 ```
 
 ## DESCRIPTION
-Create program (deprecated)
+In the Azure AD access reviews feature, create a new program object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgProgram Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	DisplayName = "testprogram3"
+	Description = "test description"
+}
+New-MgProgram -BodyParameter $params
+```
+
+This example shows how to use the New-MgProgram Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -172,7 +185,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphProgram>`: program
+BODYPARAMETER <IMicrosoftGraphProgram>: program
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Controls <IMicrosoftGraphProgramControl[]>]`: Controls associated with the program.
@@ -198,7 +211,7 @@ BODYPARAMETER `<IMicrosoftGraphProgram>`: program
   - `[Description <String>]`: The description of the program.
   - `[DisplayName <String>]`: The name of the program.  Required on create.
 
-CONTROLS <IMicrosoftGraphProgramControl\[]>: Controls associated with the program.
+CONTROLS <IMicrosoftGraphProgramControl[]>: Controls associated with the program.
   - `[Id <String>]`: 
   - `[ControlId <String>]`: The controlId of the control, in particular the identifier of an access review. Required on create.
   - `[ControlTypeId <String>]`: The programControlType identifies the type of program control - for example, a control linking to guest access reviews. Required on create.

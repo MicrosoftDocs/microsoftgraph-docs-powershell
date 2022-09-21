@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/invoke-mgmyprivilegedroleassignmentrequest
@@ -20,6 +20,15 @@ Invoke-MgMyPrivilegedRoleAssignmentRequest [<CommonParameters>]
 Invoke function my
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgMyPrivilegedRoleAssignmentRequest Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+Invoke-MgMyPrivilegedRoleAssignmentRequest
+```
+
+This example shows how to use the Invoke-MgMyPrivilegedRoleAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

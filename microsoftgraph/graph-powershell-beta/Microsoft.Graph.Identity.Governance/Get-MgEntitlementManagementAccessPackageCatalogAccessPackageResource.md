@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackagecatalogaccesspackageresource
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource
 
 ## SYNOPSIS
-Get accessPackageResources from identityGovernance
+Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
+To request to add or remove an accessPackageResource, use create accessPackageResourceRequest.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPack
 ```
 
 ## DESCRIPTION
-Get accessPackageResources from identityGovernance
+Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
+To request to add or remove an accessPackageResource, use create accessPackageResourceRequest.
 
 ## EXAMPLES
 
@@ -114,7 +116,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -175,7 +177,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

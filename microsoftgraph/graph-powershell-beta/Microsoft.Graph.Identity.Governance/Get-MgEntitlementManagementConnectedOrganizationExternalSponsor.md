@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationexternalsponsor
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEntitlementManagementConnectedOrganizationExternalSponsor
 
 ## SYNOPSIS
-Get externalSponsors from identityGovernance
+Retrieve a list of a connectedOrganization's external sponsors.
+The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## SYNTAX
 
@@ -19,9 +20,19 @@ Get-MgEntitlementManagementConnectedOrganizationExternalSponsor -ConnectedOrgani
 ```
 
 ## DESCRIPTION
-Get externalSponsors from identityGovernance
+Retrieve a list of a connectedOrganization's external sponsors.
+The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgEntitlementManagementConnectedOrganizationExternalSponsor Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgEntitlementManagementConnectedOrganizationExternalSponsor -ConnectedOrganizationId $connectedOrganizationId
+```
+
+This example shows how to use the Get-MgEntitlementManagementConnectedOrganizationExternalSponsor Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -35,7 +46,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +122,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
