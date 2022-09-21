@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector
@@ -45,6 +45,26 @@ Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 Update the navigation property connectors in print
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgPrintConnector Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Devices.CloudPrint
+$params = @{
+	DisplayName = "ConnectorName"
+	FullyQualifiedDomainName = "CONNECTOR-MACHINE"
+	OperatingSystem = "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555"
+	AppVersion = "0.19.7338.23496"
+	Location = @{
+		Latitude = 1.1
+		Longitude = 2.2
+		AltitudeInMeters = 3
+	}
+}
+Update-MgPrintConnector -PrintConnectorId $printConnectorId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgPrintConnector Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -312,7 +332,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
+BODYPARAMETER <IMicrosoftGraphPrintConnector>: printConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppVersion <String>]`: The connector's version.
@@ -346,11 +366,11 @@ BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-DEVICEHEALTH `<IMicrosoftGraphDeviceHealth>`: deviceHealth
+DEVICEHEALTH <IMicrosoftGraphDeviceHealth>: deviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastConnectionTime <DateTime?>]`: The last time the device was connected.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PrintConnectorId <String>]`: key: id of printConnector
   - `[PrintOperationId <String>]`: key: id of printOperation
@@ -363,7 +383,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[PrinterShareId <String>]`: key: id of printerShare
   - `[UserId <String>]`: key: id of user
 
-LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
+LOCATION <IMicrosoftGraphPrinterLocation>: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.

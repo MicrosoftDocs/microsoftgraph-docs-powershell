@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger
@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgPrintPrinterTaskTrigger
 
 ## SYNOPSIS
-Create new navigation property to taskTriggers for print
+Create a new task trigger on the specified printer.
+Currently, only **one** task trigger can be specified per printer, but this limit might be removed in the future.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ New-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to taskTriggers for print
+Create a new task trigger on the specified printer.
+Currently, only **one** task trigger can be specified per printer, but this limit might be removed in the future.
 
 ## EXAMPLES
 
@@ -203,7 +205,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintTaskTrigger1>`: printTaskTrigger
+BODYPARAMETER <IMicrosoftGraphPrintTaskTrigger1>: printTaskTrigger
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Definition <IMicrosoftGraphPrintTaskDefinition1>]`: printTaskDefinition
@@ -211,9 +213,9 @@ BODYPARAMETER `<IMicrosoftGraphPrintTaskTrigger1>`: printTaskTrigger
     - `[Id <String>]`: 
     - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AppId <String>]`: Refers to the unique identifier representing Application Id in the Azure Active Directory.
+      - `[AppId <String>]`: Refers to the Unique GUID representing Application Id in the Azure Active Directory.
       - `[DisplayName <String>]`: Refers to the Application Name displayed in the Azure Portal.
-      - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating Service Principal Id in Azure Active Directory for the corresponding App.
+      - `[ServicePrincipalId <String>]`: Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.
       - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
     - `[DisplayName <String>]`: The name of the printTaskDefinition.
     - `[Tasks <IMicrosoftGraphPrintTask[]>]`: A list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. Read-only.
@@ -227,14 +229,14 @@ BODYPARAMETER `<IMicrosoftGraphPrintTaskTrigger1>`: printTaskTrigger
       - `[Trigger <IMicrosoftGraphPrintTaskTrigger1>]`: printTaskTrigger
   - `[Event <String>]`: printEvent
 
-DEFINITION `<IMicrosoftGraphPrintTaskDefinition1>`: printTaskDefinition
+DEFINITION <IMicrosoftGraphPrintTaskDefinition1>: printTaskDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AppId <String>]`: Refers to the unique identifier representing Application Id in the Azure Active Directory.
+    - `[AppId <String>]`: Refers to the Unique GUID representing Application Id in the Azure Active Directory.
     - `[DisplayName <String>]`: Refers to the Application Name displayed in the Azure Portal.
-    - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating Service Principal Id in Azure Active Directory for the corresponding App.
+    - `[ServicePrincipalId <String>]`: Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.
     - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
   - `[DisplayName <String>]`: The name of the printTaskDefinition.
   - `[Tasks <IMicrosoftGraphPrintTask[]>]`: A list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. Read-only.
@@ -251,7 +253,7 @@ DEFINITION `<IMicrosoftGraphPrintTaskDefinition1>`: printTaskDefinition
       - `[Definition <IMicrosoftGraphPrintTaskDefinition1>]`: printTaskDefinition
       - `[Event <String>]`: printEvent
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PrintConnectorId <String>]`: key: id of printConnector
   - `[PrintOperationId <String>]`: key: id of printOperation
