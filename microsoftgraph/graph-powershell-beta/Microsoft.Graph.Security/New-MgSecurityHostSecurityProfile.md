@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityhostsecurityprofile
@@ -404,7 +404,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphHostSecurityProfile>: hostSecurityProfile
+BODYPARAMETER `<IMicrosoftGraphHostSecurityProfile>`: hostSecurityProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AzureSubscriptionId <String>]`: 
@@ -443,7 +443,7 @@ BODYPARAMETER <IMicrosoftGraphHostSecurityProfile>: hostSecurityProfile
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-LOGONUSERS <IMicrosoftGraphLogonUser[]>: .
+LOGONUSERS <IMicrosoftGraphLogonUser\[]>: .
   - `[AccountDomain <String>]`: Domain of user account used to logon.
   - `[AccountName <String>]`: Account name of user account used to logon.
   - `[AccountType <String>]`: userAccountSecurityType
@@ -452,14 +452,14 @@ LOGONUSERS <IMicrosoftGraphLogonUser[]>: .
   - `[LogonId <String>]`: User logon ID.
   - `[LogonTypes <String[]>]`: Collection of the logon types observed for the logged on user from when first to last seen. Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
 
-NETWORKINTERFACES <IMicrosoftGraphNetworkInterface[]>: .
+NETWORKINTERFACES <IMicrosoftGraphNetworkInterface\[]>: .
   - `[Description <String>]`: Description of the NIC (e.g. Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
   - `[IPV4Address <String>]`: Last IPv4 address associated with this NIC.
   - `[IPV6Address <String>]`: Last Public (aka global) IPv6 address associated with this NIC.
   - `[LocalIPV6Address <String>]`: Last local (link-local or site-local) IPv6 address associated with this NIC.
   - `[MacAddress <String>]`: MAC address of the NIC on this host.
 
-VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
+VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
