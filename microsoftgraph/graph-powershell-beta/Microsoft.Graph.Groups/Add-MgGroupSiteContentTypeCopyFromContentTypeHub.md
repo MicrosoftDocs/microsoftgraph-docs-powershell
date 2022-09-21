@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/add-mggroupsitecontenttypecopyfromcontenttypehub
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Add-MgGroupSiteContentTypeCopyFromContentTypeHub
 
 ## SYNOPSIS
-Invoke action addCopyFromContentTypeHub
+Add or sync a copy of a published content type from the content type hub to a target site or a list.
+This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
+The method allows users to pull content types directly from the content type hub to a site or list.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ## SYNTAX
 
@@ -39,7 +42,10 @@ Add-MgGroupSiteContentTypeCopyFromContentTypeHub -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action addCopyFromContentTypeHub
+Add or sync a copy of a published content type from the content type hub to a target site or a list.
+This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
+The method allows users to pull content types directly from the content type hub to a site or list.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ## EXAMPLES
 
@@ -187,11 +193,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Pf20SeGroupsGroupIdSitesSiteIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Pf20SeGroupsGroupIdSitesSiteIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentTypeId <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

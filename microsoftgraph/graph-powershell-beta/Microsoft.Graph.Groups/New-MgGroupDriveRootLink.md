@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupdriverootlink
@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupDriveRootLink
 
 ## SYNOPSIS
-Invoke action createLink
+You can use **createLink** action to share a driveItem via a sharing link.
+The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+DriveItem resources inherit sharing permissions from their ancestors.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ New-MgGroupDriveRootLink -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action createLink
+You can use **createLink** action to share a driveItem via a sharing link.
+The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+DriveItem resources inherit sharing permissions from their ancestors.
 
 ## EXAMPLES
 
@@ -282,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsO03ZgjGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPathsO03ZgjGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Message <String>]`: 
@@ -295,7 +299,7 @@ BODYPARAMETER `<IPathsO03ZgjGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCreateli
   - `[Scope <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -338,7 +342,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.

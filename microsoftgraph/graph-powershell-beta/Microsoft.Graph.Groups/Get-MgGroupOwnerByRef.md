@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupownerbyref
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgGroupOwnerByRef
 
 ## SYNOPSIS
-Get ref of owners from groups
+The owners of the group who can be users or service principals.
+Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## SYNTAX
 
@@ -18,7 +22,11 @@ Get-MgGroupOwnerByRef -GroupId <String> [-Filter <String>] [-Search <String>] [-
 ```
 
 ## DESCRIPTION
-Get ref of owners from groups
+The owners of the group who can be users or service principals.
+Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
 
@@ -34,7 +42,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -95,7 +103,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

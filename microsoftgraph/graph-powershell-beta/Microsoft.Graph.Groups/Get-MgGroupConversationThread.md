@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupconversationthread
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgGroupConversationThread
 
 ## SYNOPSIS
-Get threads from groups
+A collection of all the conversation threads in the conversation.
+A navigation property.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,9 +35,21 @@ Get-MgGroupConversationThread -InputObject <IGroupsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get threads from groups
+A collection of all the conversation threads in the conversation.
+A navigation property.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgGroupConversationThread Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Groups
+Get-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId
+```
+
+This example shows how to use the Get-MgGroupConversationThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +63,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -170,7 +185,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +268,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

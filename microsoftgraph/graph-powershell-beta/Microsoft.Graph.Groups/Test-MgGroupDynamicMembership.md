@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupdynamicmembership
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Test-MgGroupDynamicMembership
 
 ## SYNOPSIS
-Invoke action evaluateDynamicMembership
+Evaluate whether a user or device is or would be a member of a dynamic group.
+The membership rule is returned along with other details that were used in the evaluation.
+You can complete this operation in the following ways:
 
 ## SYNTAX
 
@@ -39,9 +41,23 @@ Test-MgGroupDynamicMembership -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action evaluateDynamicMembership
+Evaluate whether a user or device is or would be a member of a dynamic group.
+The membership rule is returned along with other details that were used in the evaluation.
+You can complete this operation in the following ways:
 
 ## EXAMPLES
+
+### Example 1: Using the Test-MgGroupDynamicMembership Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Groups
+$params = @{
+	MemberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33"
+}
+Test-MgGroupDynamicMembership -GroupId $groupId -BodyParameter $params
+```
+
+This example shows how to use the Test-MgGroupDynamicMembership Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -172,11 +188,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MemberId <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

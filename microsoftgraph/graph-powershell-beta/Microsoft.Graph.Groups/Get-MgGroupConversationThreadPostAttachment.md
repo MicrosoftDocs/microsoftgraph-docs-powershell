@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostattachment
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgGroupConversationThreadPostAttachment
 
 ## SYNOPSIS
-Get attachments from groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -34,7 +37,10 @@ Get-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get attachments from groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -50,7 +56,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -187,7 +193,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -285,7 +291,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

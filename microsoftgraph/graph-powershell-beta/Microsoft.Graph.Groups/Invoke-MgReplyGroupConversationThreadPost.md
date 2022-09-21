@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpost
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Invoke-MgReplyGroupConversationThreadPost
 
 ## SYNOPSIS
-Invoke action reply
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ## SYNTAX
 
@@ -41,7 +44,10 @@ Invoke-MgReplyGroupConversationThreadPost -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action reply
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
 
@@ -235,7 +241,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths23Qv37GroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths23Qv37GroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Post <IMicrosoftGraphPost1>]`: post
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -249,7 +255,7 @@ BODYPARAMETER `<IPaths23Qv37GroupsGroupIdConversationsConversationIdThreadsConve
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+      - `[Name <String>]`: The attachment's file name.
       - `[Size <Int32?>]`: The length of the attachment in bytes.
     - `[Body <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -263,8 +269,8 @@ BODYPARAMETER `<IPaths23Qv37GroupsGroupIdConversationsConversationIdThreadsConve
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Address <String>]`: The email address of an entity instance.
-        - `[Name <String>]`: The display name of an entity instance.
+        - `[Address <String>]`: The email address of the person or entity.
+        - `[Name <String>]`: The display name of the person or entity.
     - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
     - `[Importance <String>]`: importance
     - `[InReplyTo <IMicrosoftGraphPost1>]`: post
@@ -288,7 +294,7 @@ BODYPARAMETER `<IPaths23Qv37GroupsGroupIdConversationsConversationIdThreadsConve
       - `[Id <String>]`: 
       - `[Value <String>]`: A property value.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -331,7 +337,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-POST `<IMicrosoftGraphPost1>`: post
+POST <IMicrosoftGraphPost1>: post
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -343,7 +349,7 @@ POST `<IMicrosoftGraphPost1>`: post
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+    - `[Name <String>]`: The attachment's file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
   - `[Body <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -357,8 +363,8 @@ POST `<IMicrosoftGraphPost1>`: post
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
+      - `[Address <String>]`: The email address of the person or entity.
+      - `[Name <String>]`: The display name of the person or entity.
   - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
   - `[Importance <String>]`: importance
   - `[InReplyTo <IMicrosoftGraphPost1>]`: post

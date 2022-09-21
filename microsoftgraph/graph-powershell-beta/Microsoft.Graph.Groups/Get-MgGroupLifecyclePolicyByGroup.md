@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggrouplifecyclepolicybygroup
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupLifecyclePolicyByGroup
 
 ## SYNOPSIS
-Get groupLifecyclePolicies from groups
+Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
 ## SYNTAX
 
@@ -19,9 +19,18 @@ Get-MgGroupLifecyclePolicyByGroup -GroupId <String> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get groupLifecyclePolicies from groups
+Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgGroupLifecyclePolicyByGroup Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Groups
+Get-MgGroupLifecyclePolicyByGroup -GroupId $groupId
+```
+
+This example shows how to use the Get-MgGroupLifecyclePolicyByGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -35,7 +44,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +120,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

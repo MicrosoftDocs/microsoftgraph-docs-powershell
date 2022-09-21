@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroup
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgGroup
 
 ## SYNOPSIS
-Get group
+Get the properties and relationships of a group object.
+This operation returns by default only a subset of all the available properties, as noted in the Properties section.
+To get properties that are _not_ returned by default, specify them in a `$select` OData query option.
+The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query.
+Because the **group** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
 
 ## SYNTAX
 
@@ -31,7 +35,11 @@ Get-MgGroup -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Proper
 ```
 
 ## DESCRIPTION
-Get group
+Get the properties and relationships of a group object.
+This operation returns by default only a subset of all the available properties, as noted in the Properties section.
+To get properties that are _not_ returned by default, specify them in a `$select` OData query option.
+The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query.
+Because the **group** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
 
 ## EXAMPLES
 
@@ -160,7 +168,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -268,7 +276,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -343,7 +351,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -366,7 +374,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

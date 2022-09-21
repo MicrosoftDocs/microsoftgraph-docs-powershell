@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgrenewgrouplifecyclepolicy
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgRenewGroupLifecyclePolicy
 
 ## SYNOPSIS
-Invoke action renewGroup
+Renew a group's expiration.
+When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ## SYNTAX
 
@@ -26,9 +27,22 @@ Invoke-MgRenewGroupLifecyclePolicy
 ```
 
 ## DESCRIPTION
-Invoke action renewGroup
+Renew a group's expiration.
+When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgRenewGroupLifecyclePolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Groups
+$params = @{
+	GroupId = "ffffffff-ffff-ffff-ffff-ffffffffffff"
+}
+Invoke-MgRenewGroupLifecyclePolicy -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgRenewGroupLifecyclePolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -127,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupId <String>]`: 
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupdynamicmembershiprule
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Test-MgGroupDynamicMembershipRule
 
 ## SYNOPSIS
-Invoke action evaluateDynamicMembership
+Evaluate whether a user or device is or would be a member of a dynamic group.
+The membership rule is returned along with other details that were used in the evaluation.
+You can complete this operation in the following ways:
 
 ## SYNTAX
 
@@ -26,9 +28,24 @@ Test-MgGroupDynamicMembershipRule
 ```
 
 ## DESCRIPTION
-Invoke action evaluateDynamicMembership
+Evaluate whether a user or device is or would be a member of a dynamic group.
+The membership rule is returned along with other details that were used in the evaluation.
+You can complete this operation in the following ways:
 
 ## EXAMPLES
+
+### Example 1: Using the Test-MgGroupDynamicMembershipRule Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Groups
+$params = @{
+	MemberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33"
+	MembershipRule = "(user.displayName -startsWith "EndTestUser")"
+}
+Test-MgGroupDynamicMembershipRule -BodyParameter $params
+```
+
+This example shows how to use the Test-MgGroupDynamicMembershipRule Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -142,7 +159,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MemberId <String>]`: 
   - `[MembershipRule <String>]`: 
