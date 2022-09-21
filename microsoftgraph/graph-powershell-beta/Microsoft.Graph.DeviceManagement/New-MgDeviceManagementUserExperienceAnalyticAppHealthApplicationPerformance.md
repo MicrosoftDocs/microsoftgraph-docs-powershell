@@ -33,26 +33,6 @@ Create new navigation property to userExperienceAnalyticsAppHealthApplicationPer
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -ActiveDeviceCount
 The number of devices where the app has been active.
 Valid values -2147483648 to 2147483647
