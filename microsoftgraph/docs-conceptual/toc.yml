@@ -22,8 +22,12 @@
       href: app-only.md
     - name: Manage access to resources
       href: tutorial-entitlement-management.md
-    - name: Assign Azure AD roles in PIM
-      href: tutorial-pim.md
+    - name: Privilege Identity Management (PIM)
+      items:
+        - name: Assign Azure AD roles in PIM
+          href: tutorial-pim.md
+        - name: Manage PIM policies
+          href: how-to-manage-pim-policies.md
     - name: Query parameters
       items:
         - name: Use query parameters
