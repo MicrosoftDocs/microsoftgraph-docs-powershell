@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelta
@@ -20,6 +20,15 @@ Get-MgServicePrincipalDelta [<CommonParameters>]
 Invoke function delta
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgServicePrincipalDelta Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Get-MgServicePrincipalDelta
+```
+
+This example shows how to use the Get-MgServicePrincipalDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalkey
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgServicePrincipalKey
 
 ## SYNOPSIS
-Invoke action removeKey
+Remove a key credential from a servicePrincipal.
+This method along with addKey can be used by a servicePrincipal to automate rolling its expiring keys.
+As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 ## SYNTAX
 
@@ -39,9 +41,24 @@ Remove-MgServicePrincipalKey -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action removeKey
+Remove a key credential from a servicePrincipal.
+This method along with addKey can be used by a servicePrincipal to automate rolling its expiring keys.
+As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgServicePrincipalKey Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
+	Proof = "eyJ0eXAiOiJ..."
+}
+Remove-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+```
+
+This example shows how to use the Remove-MgServicePrincipalKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -202,12 +219,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1UhuhlbServiceprincipalsServiceprincipalIdMicrosoftGraphRemovekeyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1UhuhlbServiceprincipalsServiceprincipalIdMicrosoftGraphRemovekeyPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeyId <String>]`: 
   - `[Proof <String>]`: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

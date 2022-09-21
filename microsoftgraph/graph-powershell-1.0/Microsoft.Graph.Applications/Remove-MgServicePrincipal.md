@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgserviceprincipal
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipal
 
 ## SYNOPSIS
-Delete servicePrincipal
+Delete a servicePrincipal object.
 
 ## SYNTAX
 
@@ -25,9 +25,18 @@ Remove-MgServicePrincipal -InputObject <IApplicationsIdentity> [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Delete servicePrincipal
+Delete a servicePrincipal object.
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgServicePrincipal Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Remove-MgServicePrincipal -ServicePrincipalId $servicePrincipalId
+```
+
+This example shows how to use the Remove-MgServicePrincipal Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -141,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

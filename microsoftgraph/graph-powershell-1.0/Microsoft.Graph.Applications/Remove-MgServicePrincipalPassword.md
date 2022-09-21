@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalpassword
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipalPassword
 
 ## SYNOPSIS
-Invoke action removePassword
+Remove a password from a servicePrincipal object.
 
 ## SYNTAX
 
@@ -39,9 +39,21 @@ Remove-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action removePassword
+Remove a password from a servicePrincipal object.
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgServicePrincipalPassword Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
+}
+Remove-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+```
+
+This example shows how to use the Remove-MgServicePrincipalPassword Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -187,11 +199,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Idoj4GServiceprincipalsServiceprincipalIdMicrosoftGraphRemovepasswordPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Idoj4GServiceprincipalsServiceprincipalIdMicrosoftGraphRemovepasswordPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeyId <String>]`: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

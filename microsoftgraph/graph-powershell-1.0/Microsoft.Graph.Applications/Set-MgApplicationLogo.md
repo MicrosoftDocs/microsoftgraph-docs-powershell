@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/set-mgapplicationlogo
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgApplicationLogo
 
 ## SYNOPSIS
-Update logo for application in applications
+The main logo for the application.
+Not nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Set-MgApplicationLogo -InputObject <IApplicationsIdentity> [-BodyParameter <Stre
 ```
 
 ## DESCRIPTION
-Update logo for application in applications
+The main logo for the application.
+Not nullable.
 
 ## EXAMPLES
 
@@ -159,7 +161,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
