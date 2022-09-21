@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivity
@@ -410,7 +410,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUserActivity>: userActivity
+BODYPARAMETER `<IMicrosoftGraphUserActivity>`: userActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
@@ -450,7 +450,7 @@ BODYPARAMETER <IMicrosoftGraphUserActivity>: userActivity
     - `[Description <String>]`: Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
     - `[DisplayText <String>]`: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
 
-HISTORYITEMS <IMicrosoftGraphActivityHistoryItem1[]>: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
+HISTORYITEMS <IMicrosoftGraphActivityHistoryItem1\[]>: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
   - `[Id <String>]`: 
   - `[ActiveDurationSeconds <Int32?>]`: Optional. The duration of active user engagement. if not supplied, this is calculated from the startedDateTime and lastActiveDateTime.
   - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
@@ -490,7 +490,7 @@ HISTORYITEMS <IMicrosoftGraphActivityHistoryItem1[]>: Optional. NavigationProper
   - `[Status <String>]`: status
   - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time. Values supplied as Olson IDs in order to support cross-platform representation.
 
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
+INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
   - `[CommandId <String>]`: key: id of command
   - `[DeviceId <String>]`: key: id of device
@@ -500,7 +500,7 @@ INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   - `[UserActivityId <String>]`: key: id of userActivity
   - `[UserId <String>]`: key: id of user
 
-VISUALELEMENTS <IMicrosoftGraphVisualInfo>: visualInfo
+VISUALELEMENTS `<IMicrosoftGraphVisualInfo>`: visualInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
