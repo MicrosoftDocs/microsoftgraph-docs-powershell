@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointdeviceimagesourceimage
@@ -20,6 +20,15 @@ Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage [<CommonParameters>]
 Invoke function getSourceImages
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Functions
+Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage
+```
+
+This example shows how to use the Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

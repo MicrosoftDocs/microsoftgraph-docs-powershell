@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-Module Guid: e8e7f9fb-31f9-4d88-a659-4a820bb00c36
+Module Guid: 95e99a15-1081-4f38-b2da-6b7ce74064b8
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -24,10 +24,10 @@ Invoke function compare
 Invoke function verifyWindowsEnrollmentAutoDiscovery
 
 ### [Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig](Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig.md)
-Invoke function exportMobileConfig
+Exports the mobile configuration
 
 ### [Get-MgDeviceManagementAssignedRoleDetail](Get-MgDeviceManagementAssignedRoleDetail.md)
-Invoke function getAssignedRoleDetails
+Retrieves the assigned role definitions and role assignments of the currently authenticated user.
 
 ### [Get-MgDeviceManagementAssignmentFilterPlatformSupportedProperty](Get-MgDeviceManagementAssignmentFilterPlatformSupportedProperty.md)
 Invoke function getPlatformSupportedProperties
@@ -69,7 +69,7 @@ Invoke function getComanagementEligibleDevicesSummary
 Invoke function getPolicySummary
 
 ### [Get-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey](Get-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey.md)
-Invoke function getEncryptionPublicKey
+Get a public key to use to encrypt the Apple device enrollment program token
 
 ### [Get-MgDeviceManagementDepOnboardingSettingExpiringVppTokenCount](Get-MgDeviceManagementDepOnboardingSettingExpiringVppTokenCount.md)
 Invoke function getExpiringVppTokenCount
@@ -84,7 +84,7 @@ Invoke function getIosAvailableUpdateVersions
 Invoke function getOmaSettingPlainTextValue
 
 ### [Get-MgDeviceManagementDeviceHealthScriptRemediationHistory](Get-MgDeviceManagementDeviceHealthScriptRemediationHistory.md)
-Invoke function getRemediationHistory
+Function to get the number of remediations by a device health scripts
 
 ### [Get-MgDeviceManagementDeviceHealthScriptRemediationSummary](Get-MgDeviceManagementDeviceHealthScriptRemediationSummary.md)
 Invoke function getRemediationSummary
@@ -153,7 +153,7 @@ Invoke function appDiagnostics
 Invoke function hasCustomRoleScopeTag
 
 ### [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
-Invoke function downloadApplePushNotificationCertificateSigningRequest
+Download Apple push notification certificate signing request
 
 ### [Invoke-MgExperienceDeviceManagement](Invoke-MgExperienceDeviceManagement.md)
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices

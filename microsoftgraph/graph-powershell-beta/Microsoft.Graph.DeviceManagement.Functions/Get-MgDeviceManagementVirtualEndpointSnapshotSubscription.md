@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointsnapshotsubscription
@@ -20,6 +20,15 @@ Get-MgDeviceManagementVirtualEndpointSnapshotSubscription [<CommonParameters>]
 Invoke function getSubscriptions
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgDeviceManagementVirtualEndpointSnapshotSubscription Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Functions
+Get-MgDeviceManagementVirtualEndpointSnapshotSubscription
+```
+
+This example shows how to use the Get-MgDeviceManagementVirtualEndpointSnapshotSubscription Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
