@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/remove-mgeducationclass
@@ -28,6 +28,15 @@ Remove-MgEducationClass -InputObject <IEducationIdentity> [-IfMatch <String>] [-
 Delete navigation property classes for education
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgEducationClass Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+Remove-MgEducationClass -EducationClassId $educationClassId
+```
+
+This example shows how to use the Remove-MgEducationClass Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -141,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassgroup
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassGroup
 
 ## SYNOPSIS
-Get group from education
+Retrieve the Microsoft 365 **group** that corresponds to this **educationClass**.
 
 ## SYNTAX
 
@@ -25,9 +25,18 @@ Get-MgEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get group from education
+Retrieve the Microsoft 365 **group** that corresponds to this **educationClass**.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgEducationClassGroup Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+Get-MgEducationClassGroup -EducationClassId $educationClassId
+```
+
+This example shows how to use the Get-MgEducationClassGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -110,7 +119,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

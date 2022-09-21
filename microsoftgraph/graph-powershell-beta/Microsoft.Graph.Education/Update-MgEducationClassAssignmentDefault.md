@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentdefault
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgEducationClassAssignmentDefault
 
 ## SYNOPSIS
-Update the navigation property assignmentDefaults in education
+Update the properties of an educationAssignmentDefaults object.
+Only teachers can update these settings.
 
 ## SYNTAX
 
@@ -41,9 +42,24 @@ Update-MgEducationClassAssignmentDefault -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property assignmentDefaults in education
+Update the properties of an educationAssignmentDefaults object.
+Only teachers can update these settings.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgEducationClassAssignmentDefault Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+$params = @{
+	AddedStudentAction = "assignIfOpen"
+	AddToCalendarAction = "studentsAndTeamOwners"
+	NotificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')"
+}
+Update-MgEducationClassAssignmentDefault -EducationClassId $educationClassId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgEducationClassAssignmentDefault Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -251,7 +267,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentDefaults>`: educationAssignmentDefaults
+BODYPARAMETER <IMicrosoftGraphEducationAssignmentDefaults>: educationAssignmentDefaults
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AddToCalendarAction <String>]`: educationAddToCalendarOptions
@@ -259,7 +275,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignmentDefaults>`: educationAssignmen
   - `[DueTime <String>]`: Class-level default value for due time field. Default value is 23:59:00.
   - `[NotificationChannelUrl <String>]`: Default Teams channel to which notifications will be sent. Default value is null.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

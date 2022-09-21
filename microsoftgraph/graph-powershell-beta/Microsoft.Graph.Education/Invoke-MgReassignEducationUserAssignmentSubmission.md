@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/invoke-mgreassigneducationuserassignmentsubmission
@@ -8,7 +8,12 @@ schema: 2.0.0
 # Invoke-MgReassignEducationUserAssignmentSubmission
 
 ## SYNOPSIS
-Invoke action reassign
+Reassign the submission to the student with feedback for review.
+Only teachers can perform this action.
+Include the `Prefer: include-unknown-enum-members` header when you call this method; otherwise, a reassigned submission will be treated as a returned submission.
+This means that the `reassigned` status will be mapped to the `returned` status, and **reassignedDateTime** and **reassignedBy** properties will be mapped to **returnedDateTime** and **returnedBy** respectively.
+If the header `Prefer: include-unknown-enum-members` is provided, a reassigned submission retains the `reassigned` status.
+For details, see the examples section.
 
 ## SYNTAX
 
@@ -25,7 +30,12 @@ Invoke-MgReassignEducationUserAssignmentSubmission -InputObject <IEducationIdent
 ```
 
 ## DESCRIPTION
-Invoke action reassign
+Reassign the submission to the student with feedback for review.
+Only teachers can perform this action.
+Include the `Prefer: include-unknown-enum-members` header when you call this method; otherwise, a reassigned submission will be treated as a returned submission.
+This means that the `reassigned` status will be mapped to the `returned` status, and **reassignedDateTime** and **reassignedBy** properties will be mapped to **returnedDateTime** and **returnedBy** respectively.
+If the header `Prefer: include-unknown-enum-members` is provided, a reassigned submission retains the `reassigned` status.
+For details, see the examples section.
 
 ## EXAMPLES
 
@@ -141,7 +151,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationuserclass
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationUserClass
 
 ## SYNOPSIS
-Get classes from education
+Classes to which the user belongs.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgEducationUserClass -InputObject <IEducationIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get classes from education
+Classes to which the user belongs.
+Nullable.
 
 ## EXAMPLES
 
@@ -48,7 +50,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -155,7 +157,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +255,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

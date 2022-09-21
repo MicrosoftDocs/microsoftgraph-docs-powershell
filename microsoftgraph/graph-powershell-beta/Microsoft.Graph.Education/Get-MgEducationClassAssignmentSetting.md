@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentSetting
 
 ## SYNOPSIS
-Get assignmentSettings from education
+Read the properties and relationships of an educationAssignmentSettings object.
 
 ## SYNTAX
 
@@ -25,9 +25,18 @@ Get-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get assignmentSettings from education
+Read the properties and relationships of an educationAssignmentSettings object.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgEducationClassAssignmentSetting Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+Get-MgEducationClassAssignmentSetting -EducationClassId $educationClassId
+```
+
+This example shows how to use the Get-MgEducationClassAssignmentSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -110,7 +119,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

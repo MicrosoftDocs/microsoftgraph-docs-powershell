@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassmember
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassMember
 
 ## SYNOPSIS
-Get members from education
+Retrieves the teachers and students for a class.
+Note that if the delegated token is used, members can only be seen by other members of the class.
 
 ## SYNTAX
 
@@ -19,9 +20,19 @@ Get-MgEducationClassMember -EducationClassId <String> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get members from education
+Retrieves the teachers and students for a class.
+Note that if the delegated token is used, members can only be seen by other members of the class.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgEducationClassMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+Get-MgEducationClassMember -EducationClassId $educationClassId
+```
+
+This example shows how to use the Get-MgEducationClassMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -35,7 +46,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +122,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

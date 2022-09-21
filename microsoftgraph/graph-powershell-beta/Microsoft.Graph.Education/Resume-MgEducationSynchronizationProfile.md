@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/resume-mgeducationsynchronizationprofile
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Resume-MgEducationSynchronizationProfile
 
 ## SYNOPSIS
-Invoke action resume
+Resume the sync of a specific school data synchronization profile in the tenant.
 
 ## SYNTAX
 
@@ -25,9 +25,18 @@ Resume-MgEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Pas
 ```
 
 ## DESCRIPTION
-Invoke action resume
+Resume the sync of a specific school data synchronization profile in the tenant.
 
 ## EXAMPLES
+
+### Example 1: Using the Resume-MgEducationSynchronizationProfile Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+Resume-MgEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
+```
+
+This example shows how to use the Resume-MgEducationSynchronizationProfile Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -126,7 +135,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

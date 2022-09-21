@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgEducationClassAssignmentSetting
 
 ## SYNOPSIS
-Update the navigation property assignmentSettings in education
+Update the properties of an educationAssignmentSettings object.
+Only Teachers can update these settings.
 
 ## SYNTAX
 
@@ -39,9 +40,22 @@ Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property assignmentSettings in education
+Update the properties of an educationAssignmentSettings object.
+Only Teachers can update these settings.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgEducationClassAssignmentSetting Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+$params = @{
+	SubmissionAnimationDisabled = $true
+}
+Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgEducationClassAssignmentSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -204,12 +218,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentSettings>`: educationAssignmentSettings
+BODYPARAMETER <IMicrosoftGraphEducationAssignmentSettings>: educationAssignmentSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[SubmissionAnimationDisabled <Boolean?>]`: Indicates whether turn-in celebration animation will be shown. A value of true indicates that the animation will not be shown. Default value is false.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentrubricbyref
@@ -41,6 +41,18 @@ Update the ref of navigation property rubric in education
 
 ## EXAMPLES
 
+### Example 1: Using the Set-MgEducationClassAssignmentRubricByRef Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+$params = @{
+	"@odata.id" = "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"
+}
+Set-MgEducationClassAssignmentRubricByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+```
+
+This example shows how to use the Set-MgEducationClassAssignmentRubricByRef Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -60,6 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: Hashtable
@@ -184,7 +197,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+BODYPARAMETER <IReferenceUpdate>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[OdataId <String>]`: 
+  - `[OdataType <String>]`: 
+
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory

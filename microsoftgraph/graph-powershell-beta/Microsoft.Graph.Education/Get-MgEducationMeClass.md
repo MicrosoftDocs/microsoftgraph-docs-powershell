@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationmeclass
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationMeClass
 
 ## SYNOPSIS
-Get classes from education
+Classes to which the user belongs.
+Nullable.
 
 ## SYNTAX
 
@@ -32,9 +33,19 @@ Get-MgEducationMeClass -InputObject <IEducationIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get classes from education
+Classes to which the user belongs.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgEducationMeClass Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Education
+Get-MgEducationMeClass
+```
+
+This example shows how to use the Get-MgEducationMeClass Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +59,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -140,7 +151,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -238,7 +249,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory
