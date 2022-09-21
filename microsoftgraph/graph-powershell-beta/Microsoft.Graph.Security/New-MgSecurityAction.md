@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityAction
 
 ## SYNOPSIS
-Create new navigation property to securityActions for security
+Create a new securityAction object.
 
 ## SYNTAX
 
@@ -28,27 +28,32 @@ New-MgSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Create new navigation property to securityActions for security
+Create a new securityAction object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgSecurityAction Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+$params = @{
+	Name = "BlockIp"
+	ActionReason = "Test"
+	Parameters = @(
+		@{
+			Name = "IP"
+			Value = "1.2.3.4"
+		}
+	)
+	VendorInformation = @{
+		Provider = "Windows Defender ATP"
+		Vendor = "Microsoft"
+	}
+}
+New-MgSecurityAction -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgSecurityAction Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

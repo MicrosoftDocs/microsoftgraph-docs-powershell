@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgGroupEventExtension
 
 ## SYNOPSIS
-Create new navigation property to extensions for groups
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ## SYNTAX
 
@@ -37,27 +40,28 @@ New-MgGroupEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Hasht
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensions for groups
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgGroupEventExtension Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	"@odata.type" = "microsoft.graph.openTypeExtension"
+	ExtensionName = "Com.Contoso.Deal"
+	CompanyName = "Alpine Skis"
+	DealValue = 
+	ExpirationDate = "2015-07-03T13:04:00.000Z"
+}
+New-MgGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgGroupEventExtension Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

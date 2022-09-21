@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEntitlementManagementCatalogAccessPackageApplicablePolicyRequirement
 
 ## SYNOPSIS
-Invoke action getApplicablePolicyRequirements
+In Azure AD entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
+Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgEntitlementManagementCatalogAccessPackageApplicablePolicyRequirement
 ```
 
 ## DESCRIPTION
-Invoke action getApplicablePolicyRequirements
+In Azure AD entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
+Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 ## EXAMPLES
 

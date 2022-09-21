@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgTrustFrameworkKeySetKey
 
 ## SYNOPSIS
-Invoke action generateKey
+Generate a trustFrameworkKey and a secret automatically in the trustFrameworkKeyset.
+The caller doesn't have to provide a secret.
 
 ## SYNTAX
 
@@ -39,27 +40,25 @@ New-MgTrustFrameworkKeySetKey -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action generateKey
+Generate a trustFrameworkKey and a secret automatically in the trustFrameworkKeyset.
+The caller doesn't have to provide a secret.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgTrustFrameworkKeySetKey Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Use = "sig"
+	Kty = "RSA"
+	Nbf = 1508969811
+	Exp = 1508969811
+}
+New-MgTrustFrameworkKeySetKey -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgTrustFrameworkKeySetKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

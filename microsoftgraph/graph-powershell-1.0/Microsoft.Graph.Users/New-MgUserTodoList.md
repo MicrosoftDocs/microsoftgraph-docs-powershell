@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserTodoList
 
 ## SYNOPSIS
-Create new navigation property to lists for users
+Create a new lists object.
 
 ## SYNTAX
 
@@ -39,27 +39,22 @@ New-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create new navigation property to lists for users
+Create a new lists object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserTodoList Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users
+$params = @{
+	DisplayName = "Travel items"
+}
+# A UPN can also be used as -UserId.
+New-MgUserTodoList -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserTodoList Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

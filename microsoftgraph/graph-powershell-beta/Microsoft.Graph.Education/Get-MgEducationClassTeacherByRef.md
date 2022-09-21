@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassTeacherByRef
 
 ## SYNOPSIS
-All teachers in the class.
-Nullable.
+Retrieve a list teachers for a class.
+Delegated tokens must be members of the class to get the teacher list.
 
 ## SYNTAX
 
@@ -20,8 +20,8 @@ Get-MgEducationClassTeacherByRef -EducationClassId <String> [-Filter <String>] [
 ```
 
 ## DESCRIPTION
-All teachers in the class.
-Nullable.
+Retrieve a list teachers for a class.
+Delegated tokens must be members of the class to get the teacher list.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -116,7 +116,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

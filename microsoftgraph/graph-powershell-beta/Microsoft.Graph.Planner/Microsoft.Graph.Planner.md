@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Planner
-Module Guid: df1899ba-ca56-442d-8f28-b7b04c0315c5
+Module Guid: 0dca30e8-7844-42a6-a028-6366c997e03e
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner
 Help Version: 1.0.0.0
 Locale: en-US
@@ -22,19 +22,13 @@ Nullable.
 Returns the plannerPlans owned by the group.
 
 ### [Get-MgGroupPlannerPlanBucket](Get-MgGroupPlannerPlanBucket.md)
-Collection of buckets in the plan.
-Read-only.
-Nullable.
+Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ### [Get-MgGroupPlannerPlanDetail](Get-MgGroupPlannerPlanDetail.md)
-Additional details about the plan.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of **plannerplandetails** object.
 
 ### [Get-MgGroupPlannerPlanTask](Get-MgGroupPlannerPlanTask.md)
-Collection of tasks in the plan.
-Read-only.
-Nullable.
+Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 ### [Get-MgPlanner](Get-MgPlanner.md)
 Get planner
@@ -45,9 +39,7 @@ Nullable.
 Returns a collection of the specified buckets
 
 ### [Get-MgPlannerBucketTask](Get-MgPlannerBucketTask.md)
-Read-only.
-Nullable.
-The collection of tasks in the bucket.
+Retrieve a list of **plannerTask** objects associated to a plannerBucket object.
 
 ### [Get-MgPlannerPlan](Get-MgPlannerPlan.md)
 Read-only.
@@ -55,19 +47,13 @@ Nullable.
 Returns a collection of the specified plans
 
 ### [Get-MgPlannerPlanBucket](Get-MgPlannerPlanBucket.md)
-Collection of buckets in the plan.
-Read-only.
-Nullable.
+Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ### [Get-MgPlannerPlanDetail](Get-MgPlannerPlanDetail.md)
-Additional details about the plan.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of **plannerplandetails** object.
 
 ### [Get-MgPlannerPlanTask](Get-MgPlannerPlanTask.md)
-Collection of tasks in the plan.
-Read-only.
-Nullable.
+Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 ### [Get-MgPlannerRoster](Get-MgPlannerRoster.md)
 Read-only.
@@ -86,29 +72,20 @@ Nullable.
 Returns a collection of the specified tasks
 
 ### [Get-MgPlannerTaskAssignedToTaskBoardFormat](Get-MgPlannerTaskAssignedToTaskBoardFormat.md)
-Read-only.
-Nullable.
-Used to render the task correctly in the task board view when grouped by assignedTo.
+Retrieve the properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.
 
 ### [Get-MgPlannerTaskBucketTaskBoardFormat](Get-MgPlannerTaskBucketTaskBoardFormat.md)
-Read-only.
-Nullable.
-Used to render the task correctly in the task board view when grouped by bucket.
+Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.
 
 ### [Get-MgPlannerTaskDetail](Get-MgPlannerTaskDetail.md)
-Read-only.
-Nullable.
-Additional details about the task.
+Retrieve the properties and relationships of a **plannerTaskDetails** object.
 
 ### [Get-MgPlannerTaskProgressTaskBoardFormat](Get-MgPlannerTaskProgressTaskBoardFormat.md)
-Read-only.
-Nullable.
-Used to render the task correctly in the task board view when grouped by progress.
+Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
 
 ### [Get-MgUserPlanner](Get-MgUserPlanner.md)
-Selective Planner services available to the user.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a plannerUser object.
+The returned properties include the user's favorite plans and recently viewed plans.
 
 ### [Get-MgUserPlannerFavoritePlan](Get-MgUserPlannerFavoritePlan.md)
 Read-only.
@@ -116,7 +93,7 @@ Nullable.
 Returns the plannerPlans that the user marked as favorites.
 
 ### [Get-MgUserPlannerPlan](Get-MgUserPlannerPlan.md)
-Get plans from users
+Retrieve a list of **plannerplan** objects shared with a user object.
 
 ### [Get-MgUserPlannerRecentPlan](Get-MgUserPlannerRecentPlan.md)
 Read-only.
@@ -129,24 +106,22 @@ Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ### [Get-MgUserPlannerTask](Get-MgUserPlannerTask.md)
-Read-only.
-Nullable.
-Returns the plannerTasks assigned to the user.
+Retrieve a list of **plannertask** objects assigned to a User.
 
 ### [New-MgPlannerBucket](New-MgPlannerBucket.md)
-Create new navigation property to buckets for planner
+Use this API to create a new **plannerBucket**.
 
 ### [New-MgPlannerPlan](New-MgPlannerPlan.md)
-Create new navigation property to plans for planner
+Create a new **plannerPlan**.
 
 ### [New-MgPlannerRoster](New-MgPlannerRoster.md)
-Create new navigation property to rosters for planner
+Create a new plannerRoster object.
 
 ### [New-MgPlannerRosterMember](New-MgPlannerRosterMember.md)
-Create new navigation property to members for planner
+Add a member to the plannerRoster object.
 
 ### [New-MgPlannerTask](New-MgPlannerTask.md)
-Create new navigation property to tasks for planner
+Create a new **plannerTask**.
 
 ### [Remove-MgGroupPlannerPlanDetail](Remove-MgGroupPlannerPlanDetail.md)
 Delete navigation property details for groups
@@ -179,7 +154,7 @@ Delete navigation property progressTaskBoardFormat for planner
 Update the navigation property planner in groups
 
 ### [Update-MgGroupPlannerPlanDetail](Update-MgGroupPlannerPlanDetail.md)
-Update the navigation property details in groups
+Update the properties of **plannerplandetails** object.
 
 ### [Update-MgPlanner](Update-MgPlanner.md)
 Update planner
@@ -191,7 +166,7 @@ Update the navigation property buckets in planner
 Update the navigation property plans in planner
 
 ### [Update-MgPlannerPlanDetail](Update-MgPlannerPlanDetail.md)
-Update the navigation property details in planner
+Update the properties of **plannerplandetails** object.
 
 ### [Update-MgPlannerRoster](Update-MgPlannerRoster.md)
 Update the navigation property rosters in planner
@@ -203,17 +178,18 @@ Update the navigation property members in planner
 Update the navigation property tasks in planner
 
 ### [Update-MgPlannerTaskAssignedToTaskBoardFormat](Update-MgPlannerTaskAssignedToTaskBoardFormat.md)
-Update the navigation property assignedToTaskBoardFormat in planner
+Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.
 
 ### [Update-MgPlannerTaskBucketTaskBoardFormat](Update-MgPlannerTaskBucketTaskBoardFormat.md)
-Update the navigation property bucketTaskBoardFormat in planner
+Update the properties of **plannerBucketTaskBoardTaskFormat** object.
 
 ### [Update-MgPlannerTaskDetail](Update-MgPlannerTaskDetail.md)
-Update the navigation property details in planner
+Update the properties of **plannertaskdetails** object.
 
 ### [Update-MgPlannerTaskProgressTaskBoardFormat](Update-MgPlannerTaskProgressTaskBoardFormat.md)
-Update the navigation property progressTaskBoardFormat in planner
+Update the properties of **plannerProgressTaskBoardTaskFormat** object.
 
 ### [Update-MgUserPlanner](Update-MgUserPlanner.md)
-Update the navigation property planner in users
+Update the properties of a plannerUser object.
+You can use this operation to add or remove plans from a user's favorite plans list, and to indicate which plans the user has recently viewed.
 

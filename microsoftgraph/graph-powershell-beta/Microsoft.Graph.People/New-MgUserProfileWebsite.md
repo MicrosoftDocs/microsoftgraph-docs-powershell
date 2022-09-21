@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileWebsite
 
 ## SYNOPSIS
-Create new navigation property to websites for users
+Create a new personWebsite object in a user's profile.
 
 ## SYNTAX
 
@@ -45,27 +45,26 @@ New-MgUserProfileWebsite -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create new navigation property to websites for users
+Create a new personWebsite object in a user's profile.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserProfileWebsite Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.People
+$params = @{
+	Categories = @(
+		"football"
+	)
+	DisplayName = "Lyn Damer"
+	WebUrl = "www.lyndamer.no"
+}
+# A UPN can also be used as -UserId.
+New-MgUserProfileWebsite -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserProfileWebsite Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

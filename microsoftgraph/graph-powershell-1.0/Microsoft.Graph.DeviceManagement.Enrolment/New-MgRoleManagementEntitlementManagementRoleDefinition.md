@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgRoleManagementEntitlementManagementRoleDefinition
 
 ## SYNOPSIS
-Create new navigation property to roleDefinitions for roleManagement
+Create a new custom unifiedRoleDefinition object.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgRoleManagementEntitlementManagementRoleDefinition -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleDefinitions for roleManagement
+Create a new custom unifiedRoleDefinition object.
 
 ## EXAMPLES
 

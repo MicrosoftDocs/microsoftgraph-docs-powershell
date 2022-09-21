@@ -46,23 +46,18 @@ Update the navigation property authenticationContextClassReferences in identity
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Value = @(
+	)
+}
+Update-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -114,8 +109,8 @@ Accept wildcard characters: False
 
 ### -Description
 A short explanation of the policies that are enforced by authenticationContextClassReference.
-This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences.
-For example, selection UX.
+This value should be used to provide secondary text to describe the authentication context class reference when building user-facing admin experiences.
+For example, a selection UX.
 
 ```yaml
 Type: String
@@ -130,9 +125,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name is the friendly name of the authenticationContextClassReference.
-This value should be used to identify the authentication context class reference when building user facing admin experiences.
-For example, selection UX.
+A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences.
+For example, a selection UX.
 
 ```yaml
 Type: String
@@ -179,7 +173,8 @@ Accept wildcard characters: False
 
 ### -IsAvailable
 Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
-When it is set to false it should not be shown in admin UX experiences because the value is not currently available for selection.
+When it is set to false, it should not be shown in admin UX experiences because the value is not currently available for selection.
+Supports $filter (eq).
 
 ```yaml
 Type: SwitchParameter
@@ -261,9 +256,9 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IMicrosoftGraphAuthenticationContextClassReference>`: authenticationContextClassReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences. For example, selection UX.
-  - `[DisplayName <String>]`: The display name is the friendly name of the authenticationContextClassReference. This value should be used to identify the authentication context class reference when building user facing admin experiences. For example, selection UX.
-  - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false it should not be shown in admin UX experiences because the value is not currently available for selection.
+  - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
+  - `[DisplayName <String>]`: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences. For example, a selection UX.
+  - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false, it should not be shown in admin UX experiences because the value is not currently available for selection.  Supports $filter (eq).
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Send-MgAccessReviewInstanceReminder
 
 ## SYNOPSIS
-Invoke action sendReminder
+In the Azure AD access reviews feature, send a reminder to the reviewers of a currently active accessReview.
+The target object can be either a one-time access review, or an instance of a recurring access review.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Send-MgAccessReviewInstanceReminder -InputObject <IIdentityGovernanceIdentity> [
 ```
 
 ## DESCRIPTION
-Invoke action sendReminder
+In the Azure AD access reviews feature, send a reminder to the reviewers of a currently active accessReview.
+The target object can be either a one-time access review, or an instance of a recurring access review.
 
 ## EXAMPLES
 

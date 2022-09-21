@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgShareDriveItem
 
 ## SYNOPSIS
-Used to access the underlying driveItem
+Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
+To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 ## SYNTAX
 
@@ -25,27 +26,28 @@ Get-MgShareDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Used to access the underlying driveItem
+Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
+To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgShareDriveItem Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Files
+Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgShareDriveItem Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgShareDriveItem Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Files
+Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgShareDriveItem Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

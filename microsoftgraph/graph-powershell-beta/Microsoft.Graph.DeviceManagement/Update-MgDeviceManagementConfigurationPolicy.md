@@ -228,7 +228,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -443,7 +443,6 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Man
   - `[CreatedDateTime <DateTime?>]`: Policy creation date and time
   - `[CreationSource <String>]`: Policy creation source
   - `[Description <String>]`: Policy description
-  - `[IsAssigned <Boolean?>]`: Policy assignment status. This property is read-only.
   - `[LastModifiedDateTime <DateTime?>]`: Policy last modification date and time
   - `[Name <String>]`: Policy name
   - `[Platforms <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
@@ -489,8 +488,6 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Man
   - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
   - `[TemplateReference <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>]`: Policy template reference information
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[TemplateDisplayName <String>]`: Template Display Name of the referenced template. This property is read-only.
-    - `[TemplateDisplayVersion <String>]`: Template Display Version of the referenced Template. This property is read-only.
     - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
     - `[TemplateId <String>]`: Template id
 
@@ -661,8 +658,6 @@ SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting\[]>: Policy settin
 
 TEMPLATEREFERENCE `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>`: Policy template reference information
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[TemplateDisplayName <String>]`: Template Display Name of the referenced template. This property is read-only.
-  - `[TemplateDisplayVersion <String>]`: Template Display Version of the referenced Template. This property is read-only.
   - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
   - `[TemplateId <String>]`: Template id
 

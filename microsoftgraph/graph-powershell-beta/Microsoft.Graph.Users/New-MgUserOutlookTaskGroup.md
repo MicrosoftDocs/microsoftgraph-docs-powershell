@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserOutlookTaskGroup
 
 ## SYNOPSIS
-Create new navigation property to taskGroups for users
+Create an Outlook task group in the user's mailbox.
 
 ## SYNTAX
 
@@ -39,27 +39,22 @@ New-MgUserOutlookTaskGroup -InputObject <IUsersIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to taskGroups for users
+Create an Outlook task group in the user's mailbox.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserOutlookTaskGroup Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users
+$params = @{
+	Name = "Leisure tasks"
+}
+# A UPN can also be used as -UserId.
+New-MgUserOutlookTaskGroup -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserOutlookTaskGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamTag
 
 ## SYNOPSIS
-Create new navigation property to tags for teams
+Create a standard tag for members in the team.
 
 ## SYNTAX
 
@@ -39,27 +39,29 @@ New-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamw
 ```
 
 ## DESCRIPTION
-Create new navigation property to tags for teams
+Create a standard tag for members in the team.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgTeamTag Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	DisplayName = "Finance"
+	Members = @(
+		@{
+			UserId = "92f6952f-61ca-4a94-8910-508a240bc167"
+		}
+		@{
+			UserId = "085d800c-b86b-4bfc-a857-9371ad1caf29"
+		}
+	)
+}
+New-MgTeamTag -TeamId $teamId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgTeamTag Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

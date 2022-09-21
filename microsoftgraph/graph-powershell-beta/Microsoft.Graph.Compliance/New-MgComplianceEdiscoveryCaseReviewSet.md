@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Create new navigation property to reviewSets for compliance
+Create a new reviewSet object.
+The request body contains the display name of the review set, which is the only writable property.
 
 ## SYNTAX
 
@@ -39,27 +40,22 @@ New-MgComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to reviewSets for compliance
+Create a new reviewSet object.
+The request body contains the display name of the review set, which is the only writable property.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgComplianceEdiscoveryCaseReviewSet Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	DisplayName = "My Reviewset 3"
+}
+New-MgComplianceEdiscoveryCaseReviewSet -CaseId $caseId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgComplianceEdiscoveryCaseReviewSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

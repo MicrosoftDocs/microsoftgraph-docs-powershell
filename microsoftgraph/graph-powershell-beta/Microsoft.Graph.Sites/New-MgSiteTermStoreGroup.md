@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteTermStoreGroup
 
 ## SYNOPSIS
-Create new navigation property to groups for sites
+Create a new group object.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ New-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create new navigation property to groups for sites
+Create a new group object.
 
 ## EXAMPLES
 

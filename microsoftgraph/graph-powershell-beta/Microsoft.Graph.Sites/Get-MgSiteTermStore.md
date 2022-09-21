@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteTermStore
 
 ## SYNOPSIS
-The termStore under this site.
+Read the properties and relationships of a store object.
 
 ## SYNTAX
 
@@ -24,27 +24,27 @@ Get-MgSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-The termStore under this site.
+Read the properties and relationships of a store object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgSiteTermStore Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Sites
+Get-MgSiteTermStore -SiteId $siteId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgSiteTermStore Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgSiteTermStore Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Sites
+Get-MgSiteTermStore -SiteId $siteId -OutFile $outFileId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgSiteTermStore Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

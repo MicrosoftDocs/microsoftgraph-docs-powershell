@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Create new navigation property to schedulingGroups for groups
+Create a new schedulingGroup.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to schedulingGroups for groups
+Create a new schedulingGroup.
 
 ## EXAMPLES
 
@@ -201,7 +201,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -314,12 +314,9 @@ BODYPARAMETER `<IMicrosoftGraphSchedulingGroup1>`: schedulingGroup
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name for the schedulingGroup. Required.
-  - `[IsActive <Boolean?>]`: Indicates whether the schedulingGroup can be used when creating new entities or updating existing ones. Required.
   - `[UserIds <String[]>]`: The list of user IDs that are a member of the schedulingGroup. Required.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Test-MgInformationProtectionPolicyLabelRemoval
 
 ## SYNOPSIS
-Invoke action evaluateRemoval
+Indicate to the consuming application what actions it should take to remove the label information.
+Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:
 
 ## SYNTAX
 
@@ -27,27 +28,71 @@ Test-MgInformationProtectionPolicyLabelRemoval
 ```
 
 ## DESCRIPTION
-Invoke action evaluateRemoval
+Indicate to the consuming application what actions it should take to remove the label information.
+Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Test-MgInformationProtectionPolicyLabelRemoval Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	ContentInfo = @{
+		"@odata.type" = "#microsoft.graph.contentInfo"
+		"Format@odata.type" = "#microsoft.graph.contentFormat"
+		Format = "default"
+		Identifier = $null
+		"State@odata.type" = "#microsoft.graph.contentState"
+		State = "rest"
+		"Metadata@odata.type" = "#Collection(microsoft.graph.keyValuePair)"
+		Metadata = @(
+			@{
+				"@odata.type" = "#microsoft.graph.keyValuePair"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled"
+				Value = "True"
+			}
+			@{
+				"@odata.type" = "#microsoft.graph.keyValuePair"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method"
+				Value = "Standard"
+			}
+			@{
+				"@odata.type" = "#microsoft.graph.keyValuePair"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate"
+				Value = "1/1/0001 12:00:00 AM"
+			}
+			@{
+				"@odata.type" = "#microsoft.graph.keyValuePair"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId"
+				Value = "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
+			}
+			@{
+				"@odata.type" = "#microsoft.graph.keyValuePair"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name"
+				Value = "General"
+			}
+			@{
+				"@odata.type" = "#microsoft.graph.keyValuePair"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits"
+				Value = "0"
+			}
+			@{
+				"@odata.type" = "#microsoft.graph.keyValuePair"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId"
+				Value = "00000000-0000-0000-0000-000000000000"
+			}
+		)
+	}
+	DowngradeJustification = @{
+		JustificationMessage = "The information has been declassified."
+		IsDowngradeJustified = $true
+	}
+}
+Test-MgInformationProtectionPolicyLabelRemoval -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Test-MgInformationProtectionPolicyLabelRemoval Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserSettingItemInsight
 
 ## SYNOPSIS
-The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
-Get userInsightsSettings through this navigation property.
+Get the user-customizable privacy settings for itemInsights and meeting hours insights.
 
 ## SYNTAX
 
@@ -26,28 +25,19 @@ Get-MgUserSettingItemInsight -InputObject <IUsersIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
-Get userInsightsSettings through this navigation property.
+Get the user-customizable privacy settings for itemInsights and meeting hours insights.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserSettingItemInsight Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users
+# A UPN can also be used as -UserId.
+Get-MgUserSettingItemInsight -UserId $userId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserSettingItemInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

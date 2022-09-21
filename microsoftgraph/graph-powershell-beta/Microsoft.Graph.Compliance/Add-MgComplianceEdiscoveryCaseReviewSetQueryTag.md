@@ -8,7 +8,7 @@ schema: 2.0.0
 # Add-MgComplianceEdiscoveryCaseReviewSetQueryTag
 
 ## SYNOPSIS
-Invoke action applyTags
+Apply tags to documents that match the specified reviewSetQuery.
 
 ## SYNTAX
 
@@ -42,27 +42,25 @@ Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIdentit
 ```
 
 ## DESCRIPTION
-Invoke action applyTags
+Apply tags to documents that match the specified reviewSetQuery.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Add-MgComplianceEdiscoveryCaseReviewSetQueryTag Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	TagsToAdd = @(
+		@{
+			Id = "b4798d14-748d-468e-a1ec-96a2b1d49677"
+		}
+	)
+}
+Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -CaseId $caseId -ReviewSetId $reviewSetId -ReviewSetQueryId $reviewSetQueryId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Add-MgComplianceEdiscoveryCaseReviewSetQueryTag Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

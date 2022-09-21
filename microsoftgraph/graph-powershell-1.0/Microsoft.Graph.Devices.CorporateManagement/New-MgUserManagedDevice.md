@@ -182,7 +182,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -407,7 +407,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -549,7 +549,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -628,7 +628,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -644,7 +644,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -865,7 +865,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -945,7 +945,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1110,11 +1110,6 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre-enrolled through Intune
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
-  - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
-  - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
-  - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
   - `[ComplianceState <ComplianceState?>]`: Compliance state.
   - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]`: configuration Manager client enabled features
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1124,17 +1119,11 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
     - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
     - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
     - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-  - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
-    - `[ActionName <String>]`: Action name
-    - `[ActionState <ActionState?>]`: State of the action on the device
-    - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
-    - `[StartDateTime <DateTime?>]`: Time the action was initiated
   - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
     - `[Description <String>]`: Optional description for the device category.
     - `[DisplayName <String>]`: Display name for the device category.
-  - `[DeviceCategoryDisplayName <String>]`: Device category display name. This property is read-only.
   - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]`: Device compliance policy states for this device.
     - `[Id <String>]`: 
     - `[DisplayName <String>]`: The name of the policy for this policyBase
@@ -1213,46 +1202,14 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
     - `[TpmVersion <String>]`: The security version number of the Boot Application
     - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
     - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
-  - `[DeviceName <String>]`: Name of the device. This property is read-only.
   - `[DeviceRegistrationState <DeviceRegistrationState?>]`: Device registration status.
-  - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
-  - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
-  - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
-  - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
-  - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
-  - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
   - `[ExchangeAccessState <DeviceManagementExchangeAccessState?>]`: Device Exchange Access State.
   - `[ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason?>]`: Device Exchange Access State Reason.
-  - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
-  - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
-  - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
-  - `[Imei <String>]`: IMEI. This property is read-only.
-  - `[IsEncrypted <Boolean?>]`: Device encryption status. This property is read-only.
-  - `[IsSupervised <Boolean?>]`: Device supervised status. This property is read-only.
-  - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
-  - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
   - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
   - `[ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
   - `[ManagementAgent <ManagementAgentType?>]`: Management agent type.
-  - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
-  - `[Meid <String>]`: MEID. This property is read-only.
-  - `[Model <String>]`: Model of the device. This property is read-only.
   - `[Notes <String>]`: Notes on the device created by IT Admin
-  - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
-  - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
   - `[PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState?>]`: Available health states for the Device Health API
-  - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
-  - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
-  - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
-  - `[RemoteAssistanceSessionUrl <String>]`: Url that allows a Remote Assistance session to be established with the device. This property is read-only.
-  - `[SerialNumber <String>]`: SerialNumber. This property is read-only.
-  - `[SubscriberCarrier <String>]`: Subscriber Carrier. This property is read-only.
-  - `[TotalStorageSpaceInBytes <Int64?>]`: Total Storage in Bytes. This property is read-only.
-  - `[Udid <String>]`: Unique Device Identifier for iOS and macOS devices. This property is read-only.
-  - `[UserDisplayName <String>]`: User display name. This property is read-only.
-  - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
-  - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
-  - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
 
 CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>`: configuration Manager client enabled features
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1262,12 +1219,6 @@ CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerC
   - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
   - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
   - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-
-DEVICEACTIONRESULTS <IMicrosoftGraphDeviceActionResult1\[]>: List of ComplexType deviceActionResult objects. This property is read-only.
-  - `[ActionName <String>]`: Action name
-  - `[ActionState <ActionState?>]`: State of the action on the device
-  - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
-  - `[StartDateTime <DateTime?>]`: Time the action was initiated
 
 DEVICECATEGORY `<IMicrosoftGraphDeviceCategory2>`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

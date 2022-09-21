@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgCreateOrGetCommunicationOnlineMeeting
 
 ## SYNOPSIS
-Invoke action createOrGet
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## SYNTAX
 
@@ -28,7 +29,8 @@ Invoke-MgCreateOrGetCommunicationOnlineMeeting
 ```
 
 ## DESCRIPTION
-Invoke action createOrGet
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## EXAMPLES
 

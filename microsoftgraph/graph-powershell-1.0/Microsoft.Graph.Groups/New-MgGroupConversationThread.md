@@ -8,7 +8,11 @@ schema: 2.0.0
 # New-MgGroupConversationThread
 
 ## SYNOPSIS
-Create new navigation property to threads for groups
+Create a new thread in the specified conversation.
+A thread and post are created as specified.
+Use reply thread to further post \nto that thread.
+Or, if you get the post ID, you can also reply to that post in that thread.
+Note: You can also start a new conversation by first creating a thread.
 
 ## SYNTAX
 
@@ -43,27 +47,33 @@ New-MgGroupConversationThread -InputObject <IGroupsIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create new navigation property to threads for groups
+Create a new thread in the specified conversation.
+A thread and post are created as specified.
+Use reply thread to further post \nto that thread.
+Or, if you get the post ID, you can also reply to that post in that thread.
+Note: You can also start a new conversation by first creating a thread.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgGroupConversationThread Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Groups
+$params = @{
+	Topic = "Take your wellness days and rest"
+	Posts = @(
+		@{
+			Body = @{
+				ContentType = "html"
+				Content = "Waiting for the summer holidays."
+			}
+		}
+	)
+}
+New-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgGroupConversationThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

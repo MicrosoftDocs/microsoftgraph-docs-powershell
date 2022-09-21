@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgEntitlementManagementAccessPackageResourceRequest
 
 ## SYNOPSIS
-Create new navigation property to accessPackageResourceRequests for identityGovernance
+Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, or the removal of a resource from a catalog.
+A resource must be included in an access package catalog before a role of that resource can be added to an access package.
 
 ## SYNTAX
 
@@ -29,7 +30,8 @@ New-MgEntitlementManagementAccessPackageResourceRequest
 ```
 
 ## DESCRIPTION
-Create new navigation property to accessPackageResourceRequests for identityGovernance
+Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, or the removal of a resource from a catalog.
+A resource must be included in an access package catalog before a role of that resource can be added to an access package.
 
 ## EXAMPLES
 

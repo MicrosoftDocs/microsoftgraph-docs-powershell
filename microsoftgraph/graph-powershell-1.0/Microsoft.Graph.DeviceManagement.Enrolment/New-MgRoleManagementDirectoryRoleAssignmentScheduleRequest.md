@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
 
 ## SYNOPSIS
-Create new navigation property to roleAssignmentScheduleRequests for roleManagement
+In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object:\n+ Request active and persistent role assignments for a principal, with or without expiry dates.\n+ Activate, deactivate, extend, or renew an eligible role assignment for a principal.
+To call this API to update, renew, and extend assignments for yourself, you must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
+See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
 
 ## SYNTAX
 
@@ -33,27 +35,60 @@ New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleAssignmentScheduleRequests for roleManagement
+In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object:\n+ Request active and persistent role assignments for a principal, with or without expiry dates.\n+ Activate, deactivate, extend, or renew an eligible role assignment for a principal.
+To call this API to update, renew, and extend assignments for yourself, you must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
+See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+$params = @{
+	Action = "adminAssign"
+	Justification = "Assign Groups Admin to IT Helpdesk group"
+	RoleDefinitionId = "fdd7a751-b60b-444a-984c-02652fe8fa1c"
+	DirectoryScopeId = "/"
+	PrincipalId = "071cc716-8147-4397-a5ba-b2105951cc0b"
+	ScheduleInfo = @{
+		StartDateTime = [System.DateTime]::Parse("2022-04-10T00:00:00Z")
+		Expiration = @{
+			Type = "NoExpiration"
+		}
+	}
+}
+New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+$params = @{
+	Action = "selfActivate"
+	PrincipalId = "071cc716-8147-4397-a5ba-b2105951cc0b"
+	RoleDefinitionId = "8424c6f0-a189-499e-bbd0-26c1753c96d4"
+	DirectoryScopeId = "/"
+	Justification = "I need access to the Attribute Administrator role to manage attributes to be assigned to restricted AUs"
+	ScheduleInfo = @{
+		StartDateTime = [System.DateTime]::Parse("2022-04-14T00:00:00.000Z")
+		Expiration = @{
+			Type = "AfterDuration"
+			Duration = "PT5H"
+		}
+	}
+	TicketInfo = @{
+		TicketNumber = "CONTOSO:Normal-67890"
+		TicketSystem = "MS Project"
+	}
+}
+New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

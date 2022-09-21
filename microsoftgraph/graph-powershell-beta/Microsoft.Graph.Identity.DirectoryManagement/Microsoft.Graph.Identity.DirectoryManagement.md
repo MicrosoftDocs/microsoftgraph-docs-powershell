@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 45466a5f-0578-4775-9010-dda9ca9af4f9
+Module Guid: ca875370-fcc2-40d5-85cc-e0e681f10f23
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -21,64 +21,104 @@ Invoke action complete
 Invoke action complete
 
 ### [Confirm-MgAdministrativeUnitMemberGroup](Confirm-MgAdministrativeUnitMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgAdministrativeUnitMemberObject](Confirm-MgAdministrativeUnitMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgContactMemberGroup](Confirm-MgContactMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgContactMemberObject](Confirm-MgContactMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgContractMemberGroup](Confirm-MgContractMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgContractMemberObject](Confirm-MgContractMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDeviceMemberGroup](Confirm-MgDeviceMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDeviceMemberObject](Confirm-MgDeviceMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDirectoryAdministrativeUnitMemberGroup](Confirm-MgDirectoryAdministrativeUnitMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectoryAdministrativeUnitMemberObject](Confirm-MgDirectoryAdministrativeUnitMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDirectoryDeletedItemMemberGroup](Confirm-MgDirectoryDeletedItemMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectoryDeletedItemMemberObject](Confirm-MgDirectoryDeletedItemMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDirectoryRoleMemberGroup](Confirm-MgDirectoryRoleMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectoryRoleMemberObject](Confirm-MgDirectoryRoleMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDirectoryRoleTemplateMemberGroup](Confirm-MgDirectoryRoleTemplateMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectoryRoleTemplateMemberObject](Confirm-MgDirectoryRoleTemplateMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDirectorySettingTemplateMemberGroup](Confirm-MgDirectorySettingTemplateMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectorySettingTemplateMemberObject](Confirm-MgDirectorySettingTemplateMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDomain](Confirm-MgDomain.md)
-Invoke action verify
+Validates the ownership of the domain.
 
 ### [Confirm-MgOrganizationMemberGroup](Confirm-MgOrganizationMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgOrganizationMemberObject](Confirm-MgOrganizationMemberObject.md)
 Invoke action checkMemberObjects
@@ -91,7 +131,8 @@ Retrieve the properties and relationships of an administrativeUnit object.
 Since the **administrativeUnit** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.
 
 ### [Get-MgAdministrativeUnitById](Get-MgAdministrativeUnitById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgAdministrativeUnitDelta](Get-MgAdministrativeUnitDelta.md)
 Invoke function delta
@@ -109,7 +150,8 @@ Users and groups that are members of this administrative unit.
 Supports $expand.
 
 ### [Get-MgAdministrativeUnitMemberGroup](Get-MgAdministrativeUnitMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgAdministrativeUnitMemberObject](Get-MgAdministrativeUnitMemberObject.md)
 Invoke action getMemberObjects
@@ -124,7 +166,8 @@ Invoke action getUserOwnedObjects
 Get the properties and relationships of an organizational contact object.
 
 ### [Get-MgContactById](Get-MgContactById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgContactDelta](Get-MgContactDelta.md)
 Invoke function delta
@@ -136,12 +179,11 @@ Nullable.
 Supports $expand.
 
 ### [Get-MgContactManager](Get-MgContactManager.md)
-The user or contact that is this contact's manager.
-Read-only.
-Supports $expand.
+Get the contact's manager
 
 ### [Get-MgContactMemberGroup](Get-MgContactMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
 Invoke action getMemberObjects
@@ -172,10 +214,12 @@ Invoke action getUserOwnedObjects
 Retrieve the properties and relationships of contract object.
 
 ### [Get-MgContractById](Get-MgContractById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgContractMemberGroup](Get-MgContractMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgContractMemberObject](Get-MgContractMemberObject.md)
 Invoke action getMemberObjects
@@ -188,7 +232,8 @@ Get the properties and relationships of a device object.
 Since the **device** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **device** instance.
 
 ### [Get-MgDeviceById](Get-MgDeviceById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDeviceCommand](Get-MgDeviceCommand.md)
 Set of commands sent to this device.
@@ -205,7 +250,8 @@ Read-only.
 Nullable.
 
 ### [Get-MgDeviceMemberGroup](Get-MgDeviceMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
 Invoke action getMemberObjects
@@ -260,7 +306,8 @@ Get directory
 Conceptual container for user and group directory objects.
 
 ### [Get-MgDirectoryAdministrativeUnitById](Get-MgDirectoryAdministrativeUnitById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDirectoryAdministrativeUnitDelta](Get-MgDirectoryAdministrativeUnitDelta.md)
 Invoke function delta
@@ -278,7 +325,8 @@ Users and groups that are members of this administrative unit.
 Supports $expand.
 
 ### [Get-MgDirectoryAdministrativeUnitMemberGroup](Get-MgDirectoryAdministrativeUnitMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectoryAdministrativeUnitMemberObject](Get-MgDirectoryAdministrativeUnitMemberObject.md)
 Invoke action getMemberObjects
@@ -303,10 +351,12 @@ For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues
 Get deletedItems from directory
 
 ### [Get-MgDirectoryDeletedItemById](Get-MgDirectoryDeletedItemById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDirectoryDeletedItemMemberGroup](Get-MgDirectoryDeletedItemMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectoryDeletedItemMemberObject](Get-MgDirectoryDeletedItemMemberObject.md)
 Invoke action getMemberObjects
@@ -322,7 +372,8 @@ Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Get-MgDirectoryFeatureRolloutPolicyApplyToById](Get-MgDirectoryFeatureRolloutPolicyApplyToById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDirectoryFeatureRolloutPolicyApplyToByRef](Get-MgDirectoryFeatureRolloutPolicyApplyToByRef.md)
 Nullable.
@@ -359,7 +410,8 @@ The template ID of a built-in role is immutable and can be seen in the role desc
 For details, see Role template IDs.
 
 ### [Get-MgDirectoryRoleById](Get-MgDirectoryRoleById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDirectoryRoleDelta](Get-MgDirectoryRoleDelta.md)
 Invoke function delta
@@ -379,7 +431,8 @@ Nullable.
 Supports $expand.
 
 ### [Get-MgDirectoryRoleMemberGroup](Get-MgDirectoryRoleMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectoryRoleMemberObject](Get-MgDirectoryRoleMemberObject.md)
 Invoke action getMemberObjects
@@ -393,10 +446,12 @@ Nullable.
 Retrieve the properties and relationships of a directoryroletemplate object.
 
 ### [Get-MgDirectoryRoleTemplateById](Get-MgDirectoryRoleTemplateById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDirectoryRoleTemplateMemberGroup](Get-MgDirectoryRoleTemplateMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectoryRoleTemplateMemberObject](Get-MgDirectoryRoleTemplateMemberObject.md)
 Invoke action getMemberObjects
@@ -415,10 +470,12 @@ A directory setting template represents a template of settings from which settin
 This operation allows retrieval of the properties of the **directorySettingTemplate** object, including the available settings and their defaults.
 
 ### [Get-MgDirectorySettingTemplateById](Get-MgDirectorySettingTemplateById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDirectorySettingTemplateMemberGroup](Get-MgDirectorySettingTemplateMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectorySettingTemplateMemberObject](Get-MgDirectorySettingTemplateMemberObject.md)
 Invoke action getMemberObjects
@@ -460,8 +517,11 @@ Get the properties and relationships of the currently authenticated organization
 Since the **organization** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
 
 ### [Get-MgOrganizationBranding](Get-MgOrganizationBranding.md)
-Resource to manage the default branding for the organization.
-Nullable.
+Retrieve the default organizational branding object, if the **Accept-Language** header is set to `0` or `default`.
+If no default organizational branding object exists, this method returns a `404 Not Found` error.
+If the **Accept-Language** header is set to an existing locale identified by the value of its **id**, this method retrieves the branding for the specified locale.
+This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**.
+To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the GET organizationalBrandingLocalization method.
 
 ### [Get-MgOrganizationBrandingBackgroundImage](Get-MgOrganizationBrandingBackgroundImage.md)
 Image that appears as the background of the sign-in page.
@@ -513,32 +573,37 @@ Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than
 We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationById](Get-MgOrganizationById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgOrganizationExtension](Get-MgOrganizationExtension.md)
 The collection of open extensions defined for the organization resource.
 Nullable.
 
 ### [Get-MgOrganizationMemberGroup](Get-MgOrganizationMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgOrganizationMemberObject](Get-MgOrganizationMemberObject.md)
 Invoke action getMemberObjects
 
 ### [Get-MgOrganizationSetting](Get-MgOrganizationSetting.md)
-Retrieve the properties and relationships of organizationSettings object.
-Nullable.
+Retrieve the properties and relationships of an organizationSettings object, including **profileCardProperties**.
+This operation does not return insightsSettings.
+Depending on the type of insights, you can get their settings by using list itemInsights or list peopleInsights.
+This operation does not return microsoftApplicationDataAccessSettings.
+To get microsoftApplicationDataAccessSettings, use list microsoftApplicationDataAccessSettings.
 
 ### [Get-MgOrganizationSettingItemInsight](Get-MgOrganizationSettingItemInsight.md)
-Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites.
-List itemInsights returns the settings to display or return item insights in an organization.
+Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
+To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
 
 ### [Get-MgOrganizationSettingMicrosoftApplicationDataAccess](Get-MgOrganizationSettingMicrosoftApplicationDataAccess.md)
-Get microsoftApplicationDataAccess from organization
+Get the _settings_ in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
 ### [Get-MgOrganizationSettingPersonInsight](Get-MgOrganizationSettingPersonInsight.md)
-Contains the properties that are configured by an administrator for the visibility of a list of people relevant and working with a user in Microsoft 365.
-List peopleInsights returns the settings to display or return people insights in an organization.
+Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
+To learn how to customize privacy for people insights in an organization, see Customize people insights privacy.
 
 ### [Get-MgOrganizationSettingProfileCardProperty](Get-MgOrganizationSettingProfileCardProperty.md)
 Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
@@ -556,7 +621,7 @@ Read-only.
 Nullable.
 
 ### [Initialize-MgOrganizationService](Initialize-MgOrganizationService.md)
-Invoke action activateService
+Activate a service for an organization.
 
 ### [Invoke-MgAvailableDirectoryFederationConfigurationProviderType](Invoke-MgAvailableDirectoryFederationConfigurationProviderType.md)
 Invoke function availableProviderTypes
@@ -571,7 +636,11 @@ Invoke action dismiss
 Invoke action dismiss
 
 ### [Invoke-MgForceDomainDelete](Invoke-MgForceDomainDelete.md)
-Invoke action forceDelete
+Deletes a domain using an asynchronous operation.
+Prior to calling forceDelete, you must update or remove any references to **Exchange** as the provisioning service.
+The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code.
+To verify deletion of a domain, you can perform a get domain.
+If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 
 ### [Invoke-MgPostponeDirectoryImpactedResource](Invoke-MgPostponeDirectoryImpactedResource.md)
 Invoke action postpone
@@ -583,7 +652,8 @@ Invoke action postpone
 Invoke action postpone
 
 ### [Invoke-MgPromoteDomain](Invoke-MgPromoteDomain.md)
-Invoke action promote
+Promote a verified subdomain to the root domain.
+A verified domain has its **isVerified** property set to `true`.
 
 ### [Invoke-MgReactivateDirectoryImpactedResource](Invoke-MgReactivateDirectoryImpactedResource.md)
 Invoke action reactivate
@@ -601,10 +671,13 @@ Use this API to create a new administrativeUnit.
 Create new navigation property to extensions for administrativeUnits
 
 ### [New-MgAdministrativeUnitMemberByRef](New-MgAdministrativeUnitMemberByRef.md)
-Create new navigation property ref to members for administrativeUnits
+Use this API to add a member (user, group, or device) to an administrative unit or to create a new group within an administrative unit.
+All group types can be created within an administrative unit.
+**Note:** Currently, it's only possible to add one member at a time to an administrative unit.`
 
 ### [New-MgAdministrativeUnitScopedRoleMember](New-MgAdministrativeUnitScopedRoleMember.md)
-Create new navigation property to scopedRoleMembers for administrativeUnits
+Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
+For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
 
 ### [New-MgContact](New-MgContact.md)
 Add new entity to contacts
@@ -639,19 +712,22 @@ Create new navigation property to administrativeUnits for directory
 Create new navigation property to extensions for directory
 
 ### [New-MgDirectoryAdministrativeUnitMemberByRef](New-MgDirectoryAdministrativeUnitMemberByRef.md)
-Create new navigation property ref to members for directory
+Use this API to add a member (user, group, or device) to an administrative unit or to create a new group within an administrative unit.
+All group types can be created within an administrative unit.
+**Note:** Currently, it's only possible to add one member at a time to an administrative unit.`
 
 ### [New-MgDirectoryAdministrativeUnitScopedRoleMember](New-MgDirectoryAdministrativeUnitScopedRoleMember.md)
-Create new navigation property to scopedRoleMembers for directory
+Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
+For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
 
 ### [New-MgDirectoryAttributeSet](New-MgDirectoryAttributeSet.md)
-Create new navigation property to attributeSets for directory
+Create a new attributeSet object.
 
 ### [New-MgDirectoryCustomSecurityAttributeDefinition](New-MgDirectoryCustomSecurityAttributeDefinition.md)
-Create new navigation property to customSecurityAttributeDefinitions for directory
+Create a new customSecurityAttributeDefinition object.
 
 ### [New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
-Create new navigation property to allowedValues for directory
+Create a new allowedValue object.
 
 ### [New-MgDirectoryDeletedItem](New-MgDirectoryDeletedItem.md)
 Create new navigation property to deletedItems for directory
@@ -723,7 +799,7 @@ If a root domain is verified, subdomains of the root domain are automatically ve
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
 ### [New-MgDomainFederationConfiguration](New-MgDomainFederationConfiguration.md)
-Create new navigation property to federationConfiguration for domains
+Create a new internalDomainFederation object.
 
 ### [New-MgDomainServiceConfigurationRecord](New-MgDomainServiceConfigurationRecord.md)
 Create new navigation property to serviceConfigurationRecords for domains
@@ -738,13 +814,19 @@ Create new navigation property to verificationDnsRecords for domains
 Add new entity to organization
 
 ### [New-MgOrganizationBrandingLocalization](New-MgOrganizationBrandingLocalization.md)
-Create new navigation property to localizations for organization
+Create a new organizationalBrandingLocalization object.
+This creates a localized branding and at the same time, the default branding if it doesn't exist.
+The default branding is created only once.
+It's loaded when a localized branding isn't configured for the user's browser language.
+To retrieve the default branding, see Get branding.
 
 ### [New-MgOrganizationExtension](New-MgOrganizationExtension.md)
 Create new navigation property to extensions for organization
 
 ### [New-MgOrganizationSettingProfileCardProperty](New-MgOrganizationSettingProfileCardProperty.md)
-Create new navigation property to profileCardProperties for organization
+Create a new profileCardProperty for an organization.
+The new property is identified by its **directoryPropertyName** property.
+For more information on adding properties to the profile card for an organization, see customize the profile card.
 
 ### [New-MgSubscribedSku](New-MgSubscribedSku.md)
 Add new entity to subscribedSkus
@@ -882,7 +964,8 @@ Delete navigation property verificationDnsRecords for domains
 Delete entity from organization
 
 ### [Remove-MgOrganizationBranding](Remove-MgOrganizationBranding.md)
-Delete navigation property branding for organization
+Delete the default organizational branding object.
+To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
 
 ### [Remove-MgOrganizationBrandingLocalization](Remove-MgOrganizationBrandingLocalization.md)
 Delete navigation property localizations for organization
@@ -912,7 +995,11 @@ Delete entity from subscribedSkus
 Delete navigation property scopedRoleMemberOf for users
 
 ### [Restore-MgDirectoryDeletedItem](Restore-MgDirectoryDeletedItem.md)
-Invoke action restore
+Restore a recently deleted application, group, servicePrincipal, or user object from deleted items.
+If an item was accidentally deleted, you can fully restore the item.
+This is not applicable to security groups, which are deleted permanently.
+A recently deleted item will remain available for up to 30 days.
+After 30 days, the item is permanently deleted.
 
 ### [Set-MgOrganizationBrandingBackgroundImage](Set-MgOrganizationBrandingBackgroundImage.md)
 Image that appears as the background of the sign-in page.
@@ -964,37 +1051,125 @@ We recommend using a transparent image with no padding around the logo.
 Set mobile device management authority
 
 ### [Test-MgAdministrativeUnitProperty](Test-MgAdministrativeUnitProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgContactProperty](Test-MgContactProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgContractProperty](Test-MgContractProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgDeviceProperty](Test-MgDeviceProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgDirectoryAdministrativeUnitProperty](Test-MgDirectoryAdministrativeUnitProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgDirectoryDeletedItemProperty](Test-MgDirectoryDeletedItemProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgDirectoryFeatureRolloutPolicyApplyToProperty](Test-MgDirectoryFeatureRolloutPolicyApplyToProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgDirectoryRoleProperty](Test-MgDirectoryRoleProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgDirectoryRoleTemplateProperty](Test-MgDirectoryRoleTemplateProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgDirectorySettingTemplateProperty](Test-MgDirectorySettingTemplateProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgOrganizationProperty](Test-MgOrganizationProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+For validating properties of an existing group, use the validateProperties function for groups.
+The following validations are performed for the display name and mail nickname properties: \n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate the mail nickname is unique This API returns with the first failure encountered.
+If one or more properties fail multiple validations, only the property with the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Update-MgAdministrativeUnit](Update-MgAdministrativeUnit.md)
 Update the properties of an administrativeUnit object.
@@ -1111,7 +1286,7 @@ In this case, `organization` is defined as a collection of exactly one record, a
 The **ID** is also known as the **tenantId** of the organization.
 
 ### [Update-MgOrganizationBranding](Update-MgOrganizationBranding.md)
-Update the navigation property branding in organization
+Update the properties of the default branding object specified by the organizationalBranding resource.
 
 ### [Update-MgOrganizationBrandingLocalization](Update-MgOrganizationBrandingLocalization.md)
 Update the navigation property localizations in organization
@@ -1123,13 +1298,17 @@ Update the navigation property extensions in organization
 Update the navigation property settings in organization
 
 ### [Update-MgOrganizationSettingItemInsight](Update-MgOrganizationSettingItemInsight.md)
-Update the navigation property itemInsights in organization
+Update the privacy settings to display or return the specified type of insights in an organization.
+The type of settings can be item insights or people insights.
+To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy
 
 ### [Update-MgOrganizationSettingMicrosoftApplicationDataAccess](Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md)
-Update the navigation property microsoftApplicationDataAccess in organization
+Update the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
 ### [Update-MgOrganizationSettingPersonInsight](Update-MgOrganizationSettingPersonInsight.md)
-Update the navigation property peopleInsights in organization
+Update the privacy settings to display or return the specified type of insights in an organization.
+The type of settings can be item insights or people insights.
+To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy
 
 ### [Update-MgOrganizationSettingProfileCardProperty](Update-MgOrganizationSettingProfileCardProperty.md)
 Update the navigation property profileCardProperties in organization

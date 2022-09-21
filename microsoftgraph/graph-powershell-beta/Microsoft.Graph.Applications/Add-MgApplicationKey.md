@@ -8,7 +8,11 @@ schema: 2.0.0
 # Add-MgApplicationKey
 
 ## SYNOPSIS
-Invoke action addKey
+Add a key credential to an application.
+This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
+As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
+Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
+You can use the Update application operation to perform an update instead.
 
 ## SYNTAX
 
@@ -41,27 +45,51 @@ Add-MgApplicationKey -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action addKey
+Add a key credential to an application.
+This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
+As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
+Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
+You can use the Update application operation to perform an update instead.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Add-MgApplicationKey Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	KeyCredential = @{
+		Type = "AsymmetricX509Cert"
+		Usage = "Verify"
+		Key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+	}
+	PasswordCredential = $null
+	Proof = "eyJ0eXAiOiJ..."
+}
+Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the Add-MgApplicationKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Add-MgApplicationKey Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	KeyCredential = @{
+		Type = "X509CertAndPassword"
+		Usage = "Sign"
+		Key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+	}
+	PasswordCredential = @{
+		SecretText = "MKTr0w1..."
+	}
+	Proof = "eyJ0eXAiOiJ..."
+}
+Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the Add-MgApplicationKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

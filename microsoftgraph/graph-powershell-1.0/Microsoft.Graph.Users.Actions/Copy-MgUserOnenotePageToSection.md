@@ -8,7 +8,8 @@ schema: 2.0.0
 # Copy-MgUserOnenotePageToSection
 
 ## SYNOPSIS
-Invoke action copyToSection
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## SYNTAX
 
@@ -41,27 +42,24 @@ Copy-MgUserOnenotePageToSection -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action copyToSection
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Copy-MgUserOnenotePageToSection Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Id = "id-value"
+	GroupId = "groupId-value"
+}
+# A UPN can also be used as -UserId.
+Copy-MgUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Copy-MgUserOnenotePageToSection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

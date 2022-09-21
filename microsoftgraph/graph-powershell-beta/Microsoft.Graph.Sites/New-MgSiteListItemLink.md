@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgSiteListItemLink
 
 ## SYNOPSIS
-Invoke action createLink
+Create a sharing link for a listItem.
+The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+**listItem** resources inherit sharing permissions from the list the item resides in.
 
 ## SYNTAX
 
@@ -42,27 +44,48 @@ New-MgSiteListItemLink -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action createLink
+Create a sharing link for a listItem.
+The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+**listItem** resources inherit sharing permissions from the list the item resides in.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgSiteListItemLink Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	Type = "embed"
+}
+New-MgSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgSiteListItemLink Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgSiteListItemLink Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	Type = "edit"
+	Scope = "organization"
+}
+New-MgSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgSiteListItemLink Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgSiteListItemLink Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	Type = "embed"
+}
+New-MgSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+```
+
+This example shows how to use the New-MgSiteListItemLink Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

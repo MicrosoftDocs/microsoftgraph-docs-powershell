@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityThreatSubmissionUrlThreat
 
 ## SYNOPSIS
-Create new navigation property to urlThreats for security
+Create a new urlThreatSubmission object.
 
 ## SYNTAX
 
@@ -29,27 +29,23 @@ New-MgSecurityThreatSubmissionUrlThreat -BodyParameter <IMicrosoftGraphSecurityU
 ```
 
 ## DESCRIPTION
-Create new navigation property to urlThreats for security
+Create a new urlThreatSubmission object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgSecurityThreatSubmissionUrlThreat Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+$params = @{
+	"@odata.type" = "#microsoft.graph.urlThreatSubmission"
+	Category = "phishing"
+	WebUrl = "http://phishing.contoso.com"
+}
+New-MgSecurityThreatSubmissionUrlThreat -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgSecurityThreatSubmissionUrlThreat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

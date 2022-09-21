@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfilePhone
 
 ## SYNOPSIS
-Create new navigation property to phones for users
+Use this API to create a new itemPhone object in a user's profile.
 
 ## SYNTAX
 
@@ -43,27 +43,23 @@ New-MgUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to phones for users
+Use this API to create a new itemPhone object in a user's profile.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserProfilePhone Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.People
+$params = @{
+	DisplayName = "Car Phone"
+	Number = "+7 499 342 22 13"
+}
+# A UPN can also be used as -UserId.
+New-MgUserProfilePhone -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserProfilePhone Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

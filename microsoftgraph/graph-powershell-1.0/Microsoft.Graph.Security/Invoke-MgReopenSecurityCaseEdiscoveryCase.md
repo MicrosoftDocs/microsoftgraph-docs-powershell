@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgReopenSecurityCaseEdiscoveryCase
 
 ## SYNOPSIS
-Invoke action reopen
+Reopen an eDiscovery case that was closed.
+For details, see Reopen a closed case.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Invoke-MgReopenSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Pas
 ```
 
 ## DESCRIPTION
-Invoke action reopen
+Reopen an eDiscovery case that was closed.
+For details, see Reopen a closed case.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgReopenSecurityCaseEdiscoveryCase Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+Invoke-MgReopenSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgReopenSecurityCaseEdiscoveryCase Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

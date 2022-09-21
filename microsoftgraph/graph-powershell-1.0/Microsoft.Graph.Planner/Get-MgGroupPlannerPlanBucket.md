@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgGroupPlannerPlanBucket
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Collection of buckets in the plan.
+Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ## SYNTAX
 
@@ -21,9 +19,7 @@ Get-MgGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-ExpandP
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Collection of buckets in the plan.
+Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ## EXAMPLES
 
@@ -57,7 +53,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -133,7 +129,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

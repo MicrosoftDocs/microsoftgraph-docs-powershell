@@ -8,7 +8,8 @@ schema: 2.0.0
 # Initialize-MgSecurityCaseEdiscoveryCaseCustodian
 
 ## SYNOPSIS
-Invoke action activate
+Activate a custodian that has been released from a case to make them part of the case again.
+For details, see Manage custodians in an eDiscovery (Premium) case.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Initialize-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity
 ```
 
 ## DESCRIPTION
-Invoke action activate
+Activate a custodian that has been released from a case to make them part of the case again.
+For details, see Manage custodians in an eDiscovery (Premium) case.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Initialize-MgSecurityCaseEdiscoveryCaseCustodian Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Security
+Initialize-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Initialize-MgSecurityCaseEdiscoveryCaseCustodian Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

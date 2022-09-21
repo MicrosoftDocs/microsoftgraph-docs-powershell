@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserMailFolderMessageDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get a set of messages that have been added, deleted, or updated in a specified folder.
+A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in \nthat folder](/graph/delta-query-messages).
+This allows you to maintain and synchronize a local store of a user's messages without \nhaving to fetch the entire set of messages from the server every time.
 
 ## SYNTAX
 
@@ -23,27 +25,21 @@ Get-MgUserMailFolderMessageDelta -InputObject <IUsersFunctionsIdentity> [<Common
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get a set of messages that have been added, deleted, or updated in a specified folder.
+A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in \nthat folder](/graph/delta-query-messages).
+This allows you to maintain and synchronize a local store of a user's messages without \nhaving to fetch the entire set of messages from the server every time.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserMailFolderMessageDelta Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Functions
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolderMessageDelta -UserId $userId -MailFolderId $mailFolderId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserMailFolderMessageDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

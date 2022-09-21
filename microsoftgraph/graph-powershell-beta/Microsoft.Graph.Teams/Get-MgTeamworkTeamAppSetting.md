@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkTeamAppSetting
 
 ## SYNOPSIS
-Represents tenant-wide settings for all Teams apps in the tenant.
+Read the properties and relationships of a teamsAppSettings object.
 
 ## SYNTAX
 
@@ -17,27 +17,18 @@ Get-MgTeamworkTeamAppSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 ```
 
 ## DESCRIPTION
-Represents tenant-wide settings for all Teams apps in the tenant.
+Read the properties and relationships of a teamsAppSettings object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgTeamworkTeamAppSetting Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamworkTeamAppSetting
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgTeamworkTeamAppSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

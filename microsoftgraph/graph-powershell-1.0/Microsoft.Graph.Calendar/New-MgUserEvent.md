@@ -8,7 +8,19 @@ schema: 2.0.0
 # New-MgUserEvent
 
 ## SYNOPSIS
-Create new navigation property to events for users
+Create an event in the user's default calendar or specified calendar.
+By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event.
+See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
+You can specify the time zone for each of the start and end times of the event as part of their values, because the \n**start** and **end** properties are of dateTimeTimeZone type.
+First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
+When an event is sent, the server sends invitations to all the attendees.
+**Setting the location in an event** An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment \nlike a projector.
+Users can then invite the resource as an attendee to a meeting.
+On behalf of the resource, the server accepts or rejects \nthe meeting request based on the free/busy schedule of the resource.
+\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
+If the meeting is rescheduled, \nthe server automatically updates the event in the resource's calendar.
+Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
+If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
 
 ## SYNTAX
 
@@ -69,27 +81,220 @@ New-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create new navigation property to events for users
+Create an event in the user's default calendar or specified calendar.
+By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event.
+See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
+You can specify the time zone for each of the start and end times of the event as part of their values, because the \n**start** and **end** properties are of dateTimeTimeZone type.
+First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
+When an event is sent, the server sends invitations to all the attendees.
+**Setting the location in an event** An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment \nlike a projector.
+Users can then invite the resource as an attendee to a meeting.
+On behalf of the resource, the server accepts or rejects \nthe meeting request based on the free/busy schedule of the resource.
+\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
+If the meeting is rescheduled, \nthe server automatically updates the event in the resource's calendar.
+Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
+If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserEvent Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	Subject = "Plan summer company picnic"
+	Body = @{
+		ContentType = "HTML"
+		Content = "Let's kick-start this event planning!"
+	}
+	Start = @{
+		DateTime = "2017-08-30T11:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	End = @{
+		DateTime = "2017-08-30T12:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	Attendees = @(
+		@{
+			EmailAddress = @{
+				Address = "DanaS@contoso.onmicrosoft.com"
+				Name = "Dana Swope"
+			}
+			Type = "Required"
+		}
+		@{
+			EmailAddress = @{
+				Address = "AlexW@contoso.onmicrosoft.com"
+				Name = "Alex Wilber"
+			}
+			Type = "Required"
+		}
+	)
+	Location = @{
+		DisplayName = "Conf Room 3; Fourth Coffee; Home Office"
+		LocationType = "Default"
+	}
+	Locations = @(
+		@{
+			DisplayName = "Conf Room 3"
+		}
+		@{
+			DisplayName = "Fourth Coffee"
+			Address = @{
+				Street = "4567 Main St"
+				City = "Redmond"
+				State = "WA"
+				CountryOrRegion = "US"
+				PostalCode = "32008"
+			}
+			Coordinates = @{
+				Latitude = 47.672
+				Longitude = -102.103
+			}
+		}
+		@{
+			DisplayName = "Home Office"
+		}
+	)
+	AllowNewTimeProposals = $true
+}
+# A UPN can also be used as -UserId.
+New-MgUserEvent -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgUserEvent Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	Subject = "Let's go for lunch"
+	Body = @{
+		ContentType = "HTML"
+		Content = "Does noon work for you?"
+	}
+	Start = @{
+		DateTime = "2017-04-15T12:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	End = @{
+		DateTime = "2017-04-15T14:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	Location = @{
+		DisplayName = "Harry's Bar"
+	}
+	Attendees = @(
+		@{
+			EmailAddress = @{
+				Address = "samanthab@contoso.onmicrosoft.com"
+				Name = "Samantha Booth"
+			}
+			Type = "required"
+		}
+	)
+	AllowNewTimeProposals = $true
+	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
+}
+# A UPN can also be used as -UserId.
+New-MgUserEvent -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgUserEvent Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	Subject = "Let's go for lunch"
+	Body = @{
+		ContentType = "HTML"
+		Content = "Does noon work for you?"
+	}
+	Start = @{
+		DateTime = "2017-04-15T12:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	End = @{
+		DateTime = "2017-04-15T14:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	Location = @{
+		DisplayName = "Harry's Bar"
+	}
+	Attendees = @(
+		@{
+			EmailAddress = @{
+				Address = "samanthab@contoso.onmicrosoft.com"
+				Name = "Samantha Booth"
+			}
+			Type = "required"
+		}
+	)
+	AllowNewTimeProposals = $true
+	IsOnlineMeeting = $true
+	OnlineMeetingProvider = "teamsForBusiness"
+}
+# A UPN can also be used as -UserId.
+New-MgUserEvent -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the New-MgUserEvent Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	Subject = "Let's go for lunch"
+	Body = @{
+		ContentType = "HTML"
+		Content = "Does noon time work for you?"
+	}
+	Start = @{
+		DateTime = "2017-09-04T12:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	End = @{
+		DateTime = "2017-09-04T14:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	Recurrence = @{
+		Pattern = @{
+			Type = "weekly"
+			Interval = 1
+			DaysOfWeek = @(
+				"Monday"
+			)
+		}
+		Range = @{
+			Type = "endDate"
+			StartDate = "2017-09-04"
+			EndDate = "2017-12-31"
+		}
+	}
+	Location = @{
+		DisplayName = "Harry's Bar"
+	}
+	Attendees = @(
+		@{
+			EmailAddress = @{
+				Address = "AdeleV@contoso.onmicrosoft.com"
+				Name = "Adele Vance"
+			}
+			Type = "required"
+		}
+	)
+	AllowNewTimeProposals = $true
+}
+# A UPN can also be used as -UserId.
+New-MgUserEvent -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

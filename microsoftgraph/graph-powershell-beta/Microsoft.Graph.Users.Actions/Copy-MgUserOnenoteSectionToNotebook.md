@@ -8,7 +8,8 @@ schema: 2.0.0
 # Copy-MgUserOnenoteSectionToNotebook
 
 ## SYNOPSIS
-Invoke action copyToNotebook
+Copies a section to a specific notebook.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## SYNTAX
 
@@ -41,27 +42,25 @@ Copy-MgUserOnenoteSectionToNotebook -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action copyToNotebook
+Copies a section to a specific notebook.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Copy-MgUserOnenoteSectionToNotebook Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Id = "id-value"
+	GroupId = "groupId-value"
+	RenameAs = "renameAs-value"
+}
+# A UPN can also be used as -UserId.
+Copy-MgUserOnenoteSectionToNotebook -UserId $userId -OnenoteSectionId $onenoteSectionId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Copy-MgUserOnenoteSectionToNotebook Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

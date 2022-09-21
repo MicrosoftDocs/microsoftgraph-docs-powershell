@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSettingContactMergeSuggestion
 
 ## SYNOPSIS
-The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
+Read the properties and relationships of a contactMergeSuggestions object.
 
 ## SYNTAX
 
@@ -25,27 +25,19 @@ Get-MgUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
+Read the properties and relationships of a contactMergeSuggestions object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserSettingContactMergeSuggestion Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users
+# A UPN can also be used as -UserId.
+Get-MgUserSettingContactMergeSuggestion -UserId $userId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserSettingContactMergeSuggestion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

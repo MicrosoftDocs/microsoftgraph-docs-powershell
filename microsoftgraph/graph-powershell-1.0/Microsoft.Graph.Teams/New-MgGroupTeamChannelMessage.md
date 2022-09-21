@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamChannelMessage
 
 ## SYNOPSIS
-Create new navigation property to messages for groups
+Send a new chatMessage in the specified channel or a chat.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ New-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Create new navigation property to messages for groups
+Send a new chatMessage in the specified channel or a chat.
 
 ## EXAMPLES
 

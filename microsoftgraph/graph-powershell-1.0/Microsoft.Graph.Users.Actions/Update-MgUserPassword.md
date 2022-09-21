@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgUserPassword
 
 ## SYNOPSIS
-Invoke action changePassword
+Enable the user to update their password.
+Any user can update their password without belonging to any administrator role.
 
 ## SYNTAX
 
@@ -39,27 +40,24 @@ Update-MgUserPassword -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action changePassword
+Enable the user to update their password.
+Any user can update their password without belonging to any administrator role.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgUserPassword Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	CurrentPassword = "xWwvJ]6NMw+bWH-d"
+	NewPassword = "0eM85N54wFxWwvJ]"
+}
+# A UPN can also be used as -UserId.
+Update-MgUserPassword -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgUserPassword Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -220,7 +218,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths3Mx0JpUsersUserIdMicrosoftGraphChangepasswordPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER `<IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CurrentPassword <String>]`: 
   - `[NewPassword <String>]`: 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgArchiveServiceAnnouncementMessage
 
 ## SYNOPSIS
-Invoke action archive
+Archive a list of serviceUpdateMessages for the signed in user.
 
 ## SYNTAX
 
@@ -26,27 +26,24 @@ Invoke-MgArchiveServiceAnnouncementMessage
 ```
 
 ## DESCRIPTION
-Invoke action archive
+Archive a list of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgArchiveServiceAnnouncementMessage Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+$params = @{
+	MessageIds = @(
+		"MC172851"
+		"MC167983"
+	)
+}
+Invoke-MgArchiveServiceAnnouncementMessage -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgArchiveServiceAnnouncementMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

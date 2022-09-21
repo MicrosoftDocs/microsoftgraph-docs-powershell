@@ -8,7 +8,10 @@ schema: 2.0.0
 # Complete-MgTeamChannelMigration
 
 ## SYNOPSIS
-Invoke action completeMigration
+Complete the message migration process by removing `migration mode` from a channel in a team.
+`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a **completeMigration** request is made, you cannot import additional messages into the team.
+You can add members to the team after the request returns a successful response.
 
 ## SYNTAX
 
@@ -25,27 +28,21 @@ Complete-MgTeamChannelMigration -InputObject <ITeamsIdentity> [-PassThru] [-What
 ```
 
 ## DESCRIPTION
-Invoke action completeMigration
+Complete the message migration process by removing `migration mode` from a channel in a team.
+`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a **completeMigration** request is made, you cannot import additional messages into the team.
+You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Complete-MgTeamChannelMigration Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Complete-MgTeamChannelMigration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

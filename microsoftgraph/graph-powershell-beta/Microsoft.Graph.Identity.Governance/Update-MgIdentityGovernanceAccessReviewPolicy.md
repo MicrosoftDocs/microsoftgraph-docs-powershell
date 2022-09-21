@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgIdentityGovernanceAccessReviewPolicy
 
 ## SYNOPSIS
-Update the navigation property policy in identityGovernance
+Update the properties of an accessReviewPolicy object.
 
 ## SYNTAX
 
@@ -26,27 +26,21 @@ Update-MgIdentityGovernanceAccessReviewPolicy -BodyParameter <IMicrosoftGraphAcc
 ```
 
 ## DESCRIPTION
-Update the navigation property policy in identityGovernance
+Update the properties of an accessReviewPolicy object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgIdentityGovernanceAccessReviewPolicy Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	IsGroupOwnerManagementEnabled = $true
+}
+Update-MgIdentityGovernanceAccessReviewPolicy -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgIdentityGovernanceAccessReviewPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

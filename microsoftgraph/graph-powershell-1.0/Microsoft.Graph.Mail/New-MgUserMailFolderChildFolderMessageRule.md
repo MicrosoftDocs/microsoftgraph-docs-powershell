@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserMailFolderChildFolderMessageRule
 
 ## SYNOPSIS
-Create new navigation property to messageRules for users
+Create a messageRule object by specifying a set of conditions and actions.
+Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
 ## SYNTAX
 
@@ -43,27 +44,10 @@ New-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to messageRules for users
+Create a messageRule object by specifying a set of conditions and actions.
+Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
 ## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
 ## PARAMETERS
 

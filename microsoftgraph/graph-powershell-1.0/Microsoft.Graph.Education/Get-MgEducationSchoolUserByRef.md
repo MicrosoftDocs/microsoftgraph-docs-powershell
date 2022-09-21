@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgEducationSchoolUserByRef
 
 ## SYNOPSIS
-Users in the school.
-Nullable.
+Get the educationUser resources associated with an educationSchool.
 
 ## SYNTAX
 
@@ -20,8 +19,7 @@ Get-MgEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>] [-
 ```
 
 ## DESCRIPTION
-Users in the school.
-Nullable.
+Get the educationUser resources associated with an educationSchool.
 
 ## EXAMPLES
 
@@ -55,7 +53,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -116,7 +114,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

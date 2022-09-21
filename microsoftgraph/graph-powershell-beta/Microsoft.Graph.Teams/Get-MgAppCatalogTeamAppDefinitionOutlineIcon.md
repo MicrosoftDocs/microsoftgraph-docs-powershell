@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgAppCatalogTeamAppDefinitionOutlineIcon
 
 ## SYNOPSIS
-The outline version of the Teams app's icon.
+Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## SYNTAX
 
@@ -25,27 +25,36 @@ Get-MgAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-The outline version of the Teams app's icon.
+Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Get-MgAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Get-MgAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId -OutFile $outFileId
+```
+
+This example shows how to use the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

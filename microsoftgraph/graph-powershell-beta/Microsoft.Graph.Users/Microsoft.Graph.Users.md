@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 73d5e246-8d31-4e49-aae9-2eeefe36365c
+Module Guid: ff031865-764a-4161-8a0c-b4b5f686fd4e
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -38,16 +38,12 @@ Nullable.
 Get licenseDetails from users
 
 ### [Get-MgUserManager](Get-MgUserManager.md)
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
-Supports $expand.
+Returns the user or organizational contact assigned as the user's manager.
+Optionally, you can expand the manager's chain up to the root node.
 
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
-Supports $expand.
+Returns the user or organizational contact assigned as the user's manager.
+Optionally, you can expand the manager's chain up to the root node.
 
 ### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
 The groups, directory roles and administrative units that the user is a member of.
@@ -188,17 +184,16 @@ Supports $expand.
 Get settings from users
 
 ### [Get-MgUserSettingContactMergeSuggestion](Get-MgUserSettingContactMergeSuggestion.md)
-The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
+Read the properties and relationships of a contactMergeSuggestions object.
 
 ### [Get-MgUserSettingItemInsight](Get-MgUserSettingItemInsight.md)
-The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
-Get userInsightsSettings through this navigation property.
+Get the user-customizable privacy settings for itemInsights and meeting hours insights.
 
 ### [Get-MgUserSettingRegionalAndLanguageSetting](Get-MgUserSettingRegionalAndLanguageSetting.md)
-The user's preferences for languages, regional locale and date/time formatting.
+Get the properties of a regionalAndLanguageSettings object.
 
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
-The shift preferences for the user.
+Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
 The task lists in the users mailbox.
@@ -265,13 +260,15 @@ Nullable.
 Create new navigation property to notifications for users
 
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
-Create new navigation property to masterCategories for users
+Create an outlookCategory object in the user's master list of categories.
 
 ### [New-MgUserOutlookTask](New-MgUserOutlookTask.md)
-Create new navigation property to tasks for users
+Create an Outlook task in the specified task folder.
+The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time \nto be always midnight in the specified time zone.
 
 ### [New-MgUserOutlookTaskAttachment](New-MgUserOutlookTaskAttachment.md)
-Create new navigation property to attachments for users
+Use this API to add an attachment to an outlookTask.
+The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
 ### [New-MgUserOutlookTaskFolder](New-MgUserOutlookTaskFolder.md)
 Create new navigation property to taskFolders for users
@@ -286,7 +283,8 @@ Create new navigation property to singleValueExtendedProperties for users
 Create new navigation property to tasks for users
 
 ### [New-MgUserOutlookTaskFolderTaskAttachment](New-MgUserOutlookTaskFolderTaskAttachment.md)
-Create new navigation property to attachments for users
+Use this API to add an attachment to an outlookTask.
+The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
 ### [New-MgUserOutlookTaskFolderTaskMultiValueExtendedProperty](New-MgUserOutlookTaskFolderTaskMultiValueExtendedProperty.md)
 Create new navigation property to multiValueExtendedProperties for users
@@ -295,7 +293,7 @@ Create new navigation property to multiValueExtendedProperties for users
 Create new navigation property to singleValueExtendedProperties for users
 
 ### [New-MgUserOutlookTaskGroup](New-MgUserOutlookTaskGroup.md)
-Create new navigation property to taskGroups for users
+Create an Outlook task group in the user's mailbox.
 
 ### [New-MgUserOutlookTaskGroupTaskFolder](New-MgUserOutlookTaskGroupTaskFolder.md)
 Create new navigation property to taskFolders for users
@@ -310,7 +308,8 @@ Create new navigation property to singleValueExtendedProperties for users
 Create new navigation property to tasks for users
 
 ### [New-MgUserOutlookTaskGroupTaskFolderTaskAttachment](New-MgUserOutlookTaskGroupTaskFolderTaskAttachment.md)
-Create new navigation property to attachments for users
+Use this API to add an attachment to an outlookTask.
+The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
 ### [New-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedProperty](New-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedProperty.md)
 Create new navigation property to multiValueExtendedProperties for users
@@ -328,16 +327,18 @@ Create new navigation property to singleValueExtendedProperties for users
 Create new navigation property to photos for users
 
 ### [New-MgUserTodoList](New-MgUserTodoList.md)
-Create new navigation property to lists for users
+Create a new lists object.
 
 ### [New-MgUserTodoListExtension](New-MgUserTodoListExtension.md)
 Create new navigation property to extensions for users
 
 ### [New-MgUserTodoListTask](New-MgUserTodoListTask.md)
-Create new navigation property to tasks for users
+Create a new task object in a specified todoTaskList.
 
 ### [New-MgUserTodoListTaskAttachment](New-MgUserTodoListTaskAttachment.md)
-Create new navigation property to attachments for users
+Add a new taskFileAttachment object to a todoTask.
+This operation limits the size of the attachment you can add to under 3 MB.
+If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
 
 ### [New-MgUserTodoListTaskAttachmentSession](New-MgUserTodoListTaskAttachmentSession.md)
 Create new navigation property to attachmentSessions for users
@@ -349,7 +350,9 @@ Create new navigation property to checklistItems for users
 Create new navigation property to extensions for users
 
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
-Create new navigation property to linkedResources for users
+Create a linkedResource object to associate a specified task with an item in a partner application.
+For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a **linkedResource** object to track its association.
+You can also create a **linkedResource** object while creating a todoTask.
 
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
 A collection of resources linked to the task.
@@ -567,16 +570,16 @@ Update the navigation property photo in users
 Update the navigation property settings in users
 
 ### [Update-MgUserSettingContactMergeSuggestion](Update-MgUserSettingContactMergeSuggestion.md)
-Update the navigation property contactMergeSuggestions in users
+Update the properties of a contactMergeSuggestions object.
 
 ### [Update-MgUserSettingItemInsight](Update-MgUserSettingItemInsight.md)
-Update the navigation property itemInsights in users
+Update the privacy settings for itemInsights and meeting hours insights of a user.
 
 ### [Update-MgUserSettingRegionalAndLanguageSetting](Update-MgUserSettingRegionalAndLanguageSetting.md)
 Update the navigation property regionalAndLanguageSettings in users
 
 ### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
-Update the navigation property shiftPreferences in users
+Update the properties and relationships of a shiftPreferences object.
 
 ### [Update-MgUserTodoList](Update-MgUserTodoList.md)
 Update the navigation property lists in users

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgCreateOrGetUserOnlineMeeting
 
 ## SYNOPSIS
-Invoke action createOrGet
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## SYNTAX
 
@@ -43,27 +44,38 @@ Invoke-MgCreateOrGetUserOnlineMeeting -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action createOrGet
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	StartDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
+	EndDateTime = [System.DateTime]::Parse("2020-02-06T02:19:21.3524945+00:00")
+	Subject = "Create a meeting with customId provided"
+	ExternalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56"
+	Participants = @{
+		Attendees = @(
+			@{
+				Identity = @{
+					User = @{
+						Id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
+					}
+				}
+				Upn = "test1@contoso.com"
+			}
+		)
+	}
+}
+# A UPN can also be used as -UserId.
+Invoke-MgCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

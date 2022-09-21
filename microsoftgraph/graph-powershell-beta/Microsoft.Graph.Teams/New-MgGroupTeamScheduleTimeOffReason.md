@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Create new navigation property to timeOffReasons for groups
+Create a new timeOffReason.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to timeOffReasons for groups
+Create a new timeOffReason.
 
 ## EXAMPLES
 
@@ -313,9 +313,7 @@ BODYPARAMETER `<IMicrosoftGraphTimeOffReason1>`: timeOffReason
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name of the timeOffReason. Required.
   - `[IconType <String>]`: timeOffReasonIconType

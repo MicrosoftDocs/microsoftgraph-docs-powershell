@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Usage: tenantId='{tenantId}'
+Usage: tenantId='@tenantId'
 
 ```yaml
 Type: String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-Usage: userId='{userId}'
+Usage: userId='@userId'
 
 ```yaml
 Type: String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-Usage: userPrincipalName='{userPrincipalName}'
+Usage: userPrincipalName='@userPrincipalName'
 
 ```yaml
 Type: String

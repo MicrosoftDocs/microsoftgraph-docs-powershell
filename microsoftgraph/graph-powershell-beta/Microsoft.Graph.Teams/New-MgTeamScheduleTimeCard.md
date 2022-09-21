@@ -51,23 +51,46 @@ Create new navigation property to timeCards for teams
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgTeamScheduleTimeCard Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	OnBehalfOfUserId = "a3601044-a1b5-438e-b742-f78d01d68a67"
+	ClockInEvent = @{
+		DateTime = [System.DateTime]::Parse("2019-03-18T00:00:00.000Z")
+		AtApprovedLocation = $true
+		Notes = @{
+			Content = "Started late due to traffic in CA 237"
+			ContentType = "text"
+		}
+	}
+	Notes = @{
+		Content = "8 To 5 Inventory management"
+		ContentType = "text"
+	}
+	Breaks = @(
+		@{
+			BreakId = "string"
+			Notes = @{
+				Content = "Lunch break"
+				ContentType = "text"
+			}
+			Start = @{
+				DateTime = [System.DateTime]::Parse("2019-03-18T02:00:00.000Z")
+				AtApprovedLocation = $true
+				Notes = @{
+					Content = "Reduced break to make up for lost time"
+					ContentType = "text"
+				}
+			}
+		}
+	)
+}
+New-MgTeamScheduleTimeCard -TeamId $teamId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgTeamScheduleTimeCard Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -397,9 +420,7 @@ BODYPARAMETER `<IMicrosoftGraphTimeCard>`: timeCard
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
     - `[BreakId <String>]`: ID of the timeCardBreak.
@@ -534,7 +555,5 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
     - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
   - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
   - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-
-## RELATED LINKS
 
 ## RELATED LINKS

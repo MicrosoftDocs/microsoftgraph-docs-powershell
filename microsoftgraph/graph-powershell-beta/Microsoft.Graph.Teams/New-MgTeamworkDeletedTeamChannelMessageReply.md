@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamworkDeletedTeamChannelMessageReply
 
 ## SYNOPSIS
-Create new navigation property to replies for teamwork
+Send a new reply to a chatMessage in a specified channel.
 
 ## SYNTAX
 
@@ -56,7 +56,7 @@ New-MgTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to replies for teamwork
+Send a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
 

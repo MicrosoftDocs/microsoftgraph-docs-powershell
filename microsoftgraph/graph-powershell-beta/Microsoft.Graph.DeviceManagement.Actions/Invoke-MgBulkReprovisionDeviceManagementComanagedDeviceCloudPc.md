@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
 
 ## SYNOPSIS
-Invoke action bulkSetCloudPcReviewStatus
+Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 
 ## SYNTAX
 
@@ -27,27 +27,29 @@ Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
 ```
 
 ## DESCRIPTION
-Invoke action bulkSetCloudPcReviewStatus
+Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+$params = @{
+	ManagedDeviceIds = @(
+		"30d0e128-de93-41dc-89ec-33d84bb662a0"
+		"7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
+	)
+	ReviewStatus = @{
+		InReview = $true
+		UserAccessLevel = "restricted"
+		AzureStorageAccountId = "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview"
+	}
+}
+Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

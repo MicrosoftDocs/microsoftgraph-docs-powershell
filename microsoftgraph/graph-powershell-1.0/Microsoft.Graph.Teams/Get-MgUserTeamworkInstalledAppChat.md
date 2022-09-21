@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTeamworkInstalledAppChat
 
 ## SYNOPSIS
-The chat between the user and Teams app.
+Retrieve the chat of the specified user and Teams app.
 
 ## SYNTAX
 
@@ -25,27 +25,18 @@ Get-MgUserTeamworkInstalledAppChat -InputObject <ITeamsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-The chat between the user and Teams app.
+Retrieve the chat of the specified user and Teams app.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserTeamworkInstalledAppChat Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Get-MgUserTeamworkInstalledAppChat -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserTeamworkInstalledAppChat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

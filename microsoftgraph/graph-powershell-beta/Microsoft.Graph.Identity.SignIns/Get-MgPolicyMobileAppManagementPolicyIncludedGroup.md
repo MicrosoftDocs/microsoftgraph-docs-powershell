@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyMobileAppManagementPolicyIncludedGroup
 
 ## SYNOPSIS
-Azure AD groups under the scope of the mobility management application if appliesTo is selected
+Get the list of groups that are included in a mobile app management policy.
 
 ## SYNTAX
 
@@ -19,27 +19,27 @@ Get-MgPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId <
 ```
 
 ## DESCRIPTION
-Azure AD groups under the scope of the mobility management application if appliesTo is selected
+Get the list of groups that are included in a mobile app management policy.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgPolicyMobileAppManagementPolicyIncludedGroup Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId -OutFile $outFileId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgPolicyMobileAppManagementPolicyIncludedGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgPolicyMobileAppManagementPolicyIncludedGroup Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgPolicyMobileAppManagementPolicyIncludedGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -53,7 +53,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -129,7 +129,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgApplicationSynchronizationJob
 
 ## SYNOPSIS
-Create new navigation property to jobs for applications
+Create new synchronization job with a default synchronization schema.
+The job is created in a disabled state.
+Call Start job to start synchronization.
 
 ## SYNTAX
 
@@ -42,7 +44,9 @@ New-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to jobs for applications
+Create new synchronization job with a default synchronization schema.
+The job is created in a disabled state.
+Call Start job to start synchronization.
 
 ## EXAMPLES
 

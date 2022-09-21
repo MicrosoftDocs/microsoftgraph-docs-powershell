@@ -8,7 +8,8 @@ schema: 2.0.0
 # Send-MgAccessReviewReminder
 
 ## SYNOPSIS
-Invoke action sendReminder
+In the Azure AD access reviews feature, send a reminder to the reviewers of a currently active accessReview.
+The target object can be either a one-time access review, or an instance of a recurring access review.
 
 ## SYNTAX
 
@@ -24,27 +25,19 @@ Send-MgAccessReviewReminder -InputObject <IIdentityGovernanceIdentity> [-PassThr
 ```
 
 ## DESCRIPTION
-Invoke action sendReminder
+In the Azure AD access reviews feature, send a reminder to the reviewers of a currently active accessReview.
+The target object can be either a one-time access review, or an instance of a recurring access review.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Send-MgAccessReviewReminder Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Send-MgAccessReviewReminder -AccessReviewId $accessReviewId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Send-MgAccessReviewReminder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

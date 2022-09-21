@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics
 
 ## SYNOPSIS
-Invoke action estimateStatistics
+Run an estimate of the number of emails and documents in the source collection.
+To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics -InputObject
 ```
 
 ## DESCRIPTION
-Invoke action estimateStatistics
+Run an estimate of the number of emails and documents in the source collection.
+To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Compliance
+Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgForwardGroupEvent
 
 ## SYNOPSIS
-Invoke action forward
+This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This convenience is not available when forwarding from an Outlook.com account.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Invoke-MgForwardGroupEvent -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action forward
+This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
 

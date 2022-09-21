@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyExternalIdentityPolicy
 
 ## SYNOPSIS
-Update the navigation property externalIdentitiesPolicy in policies
+Update the settings of the tenant-wide externalIdentitiesPolicy object that controls whether external users can leave an Azure AD tenant via self-service controls.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Update-MgPolicyExternalIdentityPolicy -BodyParameter <IMicrosoftGraphExternalIde
 ```
 
 ## DESCRIPTION
-Update the navigation property externalIdentitiesPolicy in policies
+Update the settings of the tenant-wide externalIdentitiesPolicy object that controls whether external users can leave an Azure AD tenant via self-service controls.
 
 ## EXAMPLES
 

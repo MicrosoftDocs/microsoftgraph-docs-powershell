@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: 389f5c22-07b7-4a31-ad9c-1b6b306440a7
+Module Guid: 6365bbe7-e8c1-41f8-9e97-4069c6cc0b64
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar
 Help Version: 1.0.0.0
 Locale: en-US
@@ -191,9 +191,10 @@ Read-only.
 Nullable.
 
 ### [Get-MgUserCalendarEvent](Get-MgUserCalendarEvent.md)
-The events in the calendar.
-Navigation property.
-Read-only.
+Retrieve a list of events in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The list of events contains single instance meetings and series masters.
+To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
 
 ### [Get-MgUserCalendarGroup](Get-MgUserCalendarGroup.md)
 The user's calendar groups.
@@ -201,10 +202,7 @@ Read-only.
 Nullable.
 
 ### [Get-MgUserCalendarGroupCalendar](Get-MgUserCalendarGroupCalendar.md)
-The calendars in the calendar group.
-Navigation property.
-Read-only.
-Nullable.
+Retrieve a list of calendars belonging to a calendar group.
 
 ### [Get-MgUserCalendarMultiValueExtendedProperty](Get-MgUserCalendarMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the calendar.
@@ -225,8 +223,9 @@ Navigation property.
 Read-only.
 
 ### [Get-MgUserDefaultCalendar](Get-MgUserDefaultCalendar.md)
-The user's primary calendar.
-Read-only.
+Get the properties and relationships of a calendar object.
+The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
+There are two scenarios where an app can get another user's calendar:
 
 ### [Get-MgUserEvent](Get-MgUserEvent.md)
 The user's events.
@@ -383,34 +382,46 @@ Nullable.
 Create new navigation property to multiValueExtendedProperties for groups
 
 ### [New-MgGroupCalendarPermission](New-MgGroupCalendarPermission.md)
-Create new navigation property to calendarPermissions for groups
+Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 
 ### [New-MgGroupCalendarSingleValueExtendedProperty](New-MgGroupCalendarSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for groups
 
 ### [New-MgGroupEvent](New-MgGroupEvent.md)
-Create new navigation property to events for groups
+Use this API to create a new event.
 
 ### [New-MgGroupEventAttachment](New-MgGroupEventAttachment.md)
-Create new navigation property to attachments for groups
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgGroupEventExceptionOccurrence](New-MgGroupEventExceptionOccurrence.md)
 Create new navigation property to exceptionOccurrences for groups
 
 ### [New-MgGroupEventExceptionOccurrenceAttachment](New-MgGroupEventExceptionOccurrenceAttachment.md)
-Create new navigation property to attachments for groups
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgGroupEventExceptionOccurrenceExtension](New-MgGroupEventExceptionOccurrenceExtension.md)
-Create new navigation property to extensions for groups
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgGroupEventExceptionOccurrenceInstance](New-MgGroupEventExceptionOccurrenceInstance.md)
 Create new navigation property to instances for groups
 
 ### [New-MgGroupEventExceptionOccurrenceInstanceAttachment](New-MgGroupEventExceptionOccurrenceInstanceAttachment.md)
-Create new navigation property to attachments for groups
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgGroupEventExceptionOccurrenceInstanceExtension](New-MgGroupEventExceptionOccurrenceInstanceExtension.md)
-Create new navigation property to extensions for groups
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty](New-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
 Create new navigation property to multiValueExtendedProperties for groups
@@ -425,22 +436,32 @@ Create new navigation property to multiValueExtendedProperties for groups
 Create new navigation property to singleValueExtendedProperties for groups
 
 ### [New-MgGroupEventExtension](New-MgGroupEventExtension.md)
-Create new navigation property to extensions for groups
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgGroupEventInstance](New-MgGroupEventInstance.md)
 Create new navigation property to instances for groups
 
 ### [New-MgGroupEventInstanceAttachment](New-MgGroupEventInstanceAttachment.md)
-Create new navigation property to attachments for groups
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgGroupEventInstanceExceptionOccurrence](New-MgGroupEventInstanceExceptionOccurrence.md)
 Create new navigation property to exceptionOccurrences for groups
 
 ### [New-MgGroupEventInstanceExceptionOccurrenceAttachment](New-MgGroupEventInstanceExceptionOccurrenceAttachment.md)
-Create new navigation property to attachments for groups
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgGroupEventInstanceExceptionOccurrenceExtension](New-MgGroupEventInstanceExceptionOccurrenceExtension.md)
-Create new navigation property to extensions for groups
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty](New-MgGroupEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
 Create new navigation property to multiValueExtendedProperties for groups
@@ -449,7 +470,10 @@ Create new navigation property to multiValueExtendedProperties for groups
 Create new navigation property to singleValueExtendedProperties for groups
 
 ### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
-Create new navigation property to extensions for groups
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgGroupEventInstanceMultiValueExtendedProperty](New-MgGroupEventInstanceMultiValueExtendedProperty.md)
 Create new navigation property to multiValueExtendedProperties for groups
@@ -467,49 +491,73 @@ Create new navigation property to singleValueExtendedProperties for groups
 Add new entity to places
 
 ### [New-MgUserCalendar](New-MgUserCalendar.md)
-Create new navigation property to calendars for users
+Create a new calendar for a user.
 
 ### [New-MgUserCalendarEvent](New-MgUserCalendarEvent.md)
-Create new navigation property to events for users
+Use this API to create a new event in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
 ### [New-MgUserCalendarGroup](New-MgUserCalendarGroup.md)
-Create new navigation property to calendarGroups for users
+Use this API to create a new CalendarGroup.
 
 ### [New-MgUserCalendarGroupCalendar](New-MgUserCalendarGroupCalendar.md)
-Create new navigation property to calendars for users
+Use this API to create a new calendar in a calendar group for a user.
 
 ### [New-MgUserCalendarMultiValueExtendedProperty](New-MgUserCalendarMultiValueExtendedProperty.md)
 Create new navigation property to multiValueExtendedProperties for users
 
 ### [New-MgUserCalendarPermission](New-MgUserCalendarPermission.md)
-Create new navigation property to calendarPermissions for users
+Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 
 ### [New-MgUserCalendarSingleValueExtendedProperty](New-MgUserCalendarSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for users
 
 ### [New-MgUserEvent](New-MgUserEvent.md)
-Create new navigation property to events for users
+Create an event in the user's default calendar or specified calendar.
+By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event.
+See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
+You can specify the time zone for each of the start and end times of the event as part of their values, because the \n**start** and **end** properties are of dateTimeTimeZone type.
+First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
+When an event is sent, the server sends invitations to all the attendees.
+**Setting the location in an event** An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment\nlike a projector.
+Users can then invite the resource as an attendee to a meeting.
+On behalf of the resource, the server accepts or rejects\nthe meeting request based on the free/busy schedule of the resource.\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
+If the meeting is rescheduled,\nthe server automatically updates the event in the resource's calendar.
+Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
+If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
 
 ### [New-MgUserEventAttachment](New-MgUserEventAttachment.md)
-Create new navigation property to attachments for users
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgUserEventExceptionOccurrence](New-MgUserEventExceptionOccurrence.md)
 Create new navigation property to exceptionOccurrences for users
 
 ### [New-MgUserEventExceptionOccurrenceAttachment](New-MgUserEventExceptionOccurrenceAttachment.md)
-Create new navigation property to attachments for users
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgUserEventExceptionOccurrenceExtension](New-MgUserEventExceptionOccurrenceExtension.md)
-Create new navigation property to extensions for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgUserEventExceptionOccurrenceInstance](New-MgUserEventExceptionOccurrenceInstance.md)
 Create new navigation property to instances for users
 
 ### [New-MgUserEventExceptionOccurrenceInstanceAttachment](New-MgUserEventExceptionOccurrenceInstanceAttachment.md)
-Create new navigation property to attachments for users
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgUserEventExceptionOccurrenceInstanceExtension](New-MgUserEventExceptionOccurrenceInstanceExtension.md)
-Create new navigation property to extensions for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty](New-MgUserEventExceptionOccurrenceInstanceMultiValueExtendedProperty.md)
 Create new navigation property to multiValueExtendedProperties for users
@@ -524,22 +572,32 @@ Create new navigation property to multiValueExtendedProperties for users
 Create new navigation property to singleValueExtendedProperties for users
 
 ### [New-MgUserEventExtension](New-MgUserEventExtension.md)
-Create new navigation property to extensions for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgUserEventInstance](New-MgUserEventInstance.md)
 Create new navigation property to instances for users
 
 ### [New-MgUserEventInstanceAttachment](New-MgUserEventInstanceAttachment.md)
-Create new navigation property to attachments for users
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgUserEventInstanceExceptionOccurrence](New-MgUserEventInstanceExceptionOccurrence.md)
 Create new navigation property to exceptionOccurrences for users
 
 ### [New-MgUserEventInstanceExceptionOccurrenceAttachment](New-MgUserEventInstanceExceptionOccurrenceAttachment.md)
-Create new navigation property to attachments for users
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgUserEventInstanceExceptionOccurrenceExtension](New-MgUserEventInstanceExceptionOccurrenceExtension.md)
-Create new navigation property to extensions for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty](New-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty.md)
 Create new navigation property to multiValueExtendedProperties for users
@@ -548,7 +606,10 @@ Create new navigation property to multiValueExtendedProperties for users
 Create new navigation property to singleValueExtendedProperties for users
 
 ### [New-MgUserEventInstanceExtension](New-MgUserEventInstanceExtension.md)
-Create new navigation property to extensions for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgUserEventInstanceMultiValueExtendedProperty](New-MgUserEventInstanceMultiValueExtendedProperty.md)
 Create new navigation property to multiValueExtendedProperties for users

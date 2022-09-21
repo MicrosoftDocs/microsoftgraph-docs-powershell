@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision
 
 ## SYNOPSIS
-Invoke action batchRecordDecisions
+Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using **principalId**, **resourceId**, or neither.
 
 ## SYNTAX
 
@@ -41,27 +41,24 @@ Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IUsers
 ```
 
 ## DESCRIPTION
-Invoke action batchRecordDecisions
+Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using **principalId**, **resourceId**, or neither.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Decision = "Approve"
+	Justification = "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team"
+	ResourceId = "a5c51e59-3fcd-4a37-87a1-835c0c21488a"
+}
+# A UPN can also be used as -UserId.
+Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

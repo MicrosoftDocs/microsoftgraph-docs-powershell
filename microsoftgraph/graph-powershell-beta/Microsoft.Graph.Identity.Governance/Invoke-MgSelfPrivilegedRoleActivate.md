@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgSelfPrivilegedRoleActivate
 
 ## SYNOPSIS
-Invoke action selfActivate
+Activate the role that is assigned to the requester.
 
 ## SYNTAX
 
@@ -41,27 +41,24 @@ Invoke-MgSelfPrivilegedRoleActivate -InputObject <IIdentityGovernanceIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action selfActivate
+Activate the role that is assigned to the requester.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgSelfPrivilegedRoleActivate Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	Reason = "reason-value"
+	Duration = "duration-value"
+	TicketNumber = "ticketNumber-value"
+	TicketSystem = "ticketSystem-value"
+}
+Invoke-MgSelfPrivilegedRoleActivate -PrivilegedRoleId $privilegedRoleId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgSelfPrivilegedRoleActivate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

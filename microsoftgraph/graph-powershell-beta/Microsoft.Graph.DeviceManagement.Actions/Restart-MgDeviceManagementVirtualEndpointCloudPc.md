@@ -8,7 +8,7 @@ schema: 2.0.0
 # Restart-MgDeviceManagementVirtualEndpointCloudPc
 
 ## SYNOPSIS
-Invoke action reboot
+Reboot a specific Cloud PC.
 
 ## SYNTAX
 
@@ -25,27 +25,18 @@ Restart-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Invoke action reboot
+Reboot a specific Cloud PC.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Restart-MgDeviceManagementVirtualEndpointCloudPc Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+Restart-MgDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Restart-MgDeviceManagementVirtualEndpointCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

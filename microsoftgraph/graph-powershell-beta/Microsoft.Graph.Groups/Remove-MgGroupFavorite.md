@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgGroupFavorite
 
 ## SYNOPSIS
-Invoke action removeFavorite
+Remove the group from the list of the current user's favorite groups.
+Supported for Microsoft 365 groups only.
 
 ## SYNTAX
 
@@ -23,27 +24,19 @@ Remove-MgGroupFavorite -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Invoke action removeFavorite
+Remove the group from the list of the current user's favorite groups.
+Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Remove-MgGroupFavorite Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Groups
+Remove-MgGroupFavorite -GroupId $groupId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Remove-MgGroupFavorite Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

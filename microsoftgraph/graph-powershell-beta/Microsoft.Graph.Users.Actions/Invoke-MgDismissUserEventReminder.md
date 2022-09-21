@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgDismissUserEventReminder
 
 ## SYNOPSIS
-Invoke action dismissReminder
+Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## SYNTAX
 
@@ -25,27 +25,19 @@ Invoke-MgDismissUserEventReminder -InputObject <IUsersActionsIdentity> [-PassThr
 ```
 
 ## DESCRIPTION
-Invoke action dismissReminder
+Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgDismissUserEventReminder Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+# A UPN can also be used as -UserId.
+Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgDismissUserEventReminder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

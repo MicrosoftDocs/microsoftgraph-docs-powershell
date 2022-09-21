@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserOnlineMeeting
 
 ## SYNOPSIS
-Create new navigation property to onlineMeetings for users
+Create an online meeting on behalf of a user.
 
 ## SYNTAX
 
@@ -63,27 +63,24 @@ New-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to onlineMeetings for users
+Create an online meeting on behalf of a user.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserOnlineMeeting Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	StartDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	EndDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	Subject = "User Token Meeting"
+}
+# A UPN can also be used as -UserId.
+New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserOnlineMeeting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -765,7 +762,6 @@ BODYPARAMETER `<IMicrosoftGraphOnlineMeeting1>`: onlineMeeting
   - `[Id <String>]`: 
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-  - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
@@ -803,7 +799,7 @@ BODYPARAMETER `<IMicrosoftGraphOnlineMeeting1>`: onlineMeeting
     - `[AllowedAudience <String>]`: broadcastMeetingAudience
     - `[Captions <IMicrosoftGraphBroadcastMeetingCaptionSettings>]`: broadcastMeetingCaptionSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IsCaptionEnabled <Boolean?>]`: Indicates whether caption is enabled for this Teams live event.
+      - `[IsCaptionEnabled <Boolean?>]`: Indicates whether captions are enabled for this Teams live event.
       - `[SpokenLanguage <String>]`: The spoken language.
       - `[TranslationLanguages <String[]>]`: The translation languages (choose up to 6).
     - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
@@ -900,7 +896,7 @@ BROADCASTSETTINGS `<IMicrosoftGraphBroadcastMeetingSettings1>`: broadcastMeeting
   - `[AllowedAudience <String>]`: broadcastMeetingAudience
   - `[Captions <IMicrosoftGraphBroadcastMeetingCaptionSettings>]`: broadcastMeetingCaptionSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsCaptionEnabled <Boolean?>]`: Indicates whether caption is enabled for this Teams live event.
+    - `[IsCaptionEnabled <Boolean?>]`: Indicates whether captions are enabled for this Teams live event.
     - `[SpokenLanguage <String>]`: The spoken language.
     - `[TranslationLanguages <String[]>]`: The translation languages (choose up to 6).
   - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.

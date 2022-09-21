@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgGroupConversation
 
 ## SYNOPSIS
-Create new navigation property to conversations for groups
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ## SYNTAX
 
@@ -40,27 +43,44 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create new navigation property to conversations for groups
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgGroupConversation Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Groups
+$params = @{
+	Topic = "Take your wellness days and rest"
+	Threads = @(
+		@{
+			Posts = @(
+				@{
+					Body = @{
+						ContentType = "html"
+						Content = "Contoso cares about you: Rest and Recharge"
+					}
+					NewParticipants = @(
+						@{
+							EmailAddress = @{
+								Name = "Adele Vance"
+								Address = "AdeleV@contoso.onmicrosoft.com"
+							}
+						}
+					)
+				}
+			)
+		}
+	)
+}
+New-MgGroupConversation -GroupId $groupId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgGroupConversation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

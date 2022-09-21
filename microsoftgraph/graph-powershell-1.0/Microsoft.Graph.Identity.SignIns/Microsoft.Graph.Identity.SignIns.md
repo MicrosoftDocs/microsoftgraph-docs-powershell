@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 1924ed46-be10-4a99-bad3-521dfc5f927a
+Module Guid: ff0f32ac-4594-42b9-85a9-b432f1e25ccb
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,7 +12,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Identity.SignIns Cmdlets
 ### [Confirm-MgRiskyUserCompromised](Confirm-MgRiskyUserCompromised.md)
-Invoke action confirmCompromised
+Confirm one or more riskyUser objects as compromised.
+This action sets the targeted user's risk level to high.
 
 ### [Get-MgDataPolicyOperation](Get-MgDataPolicyOperation.md)
 Retrieve the properties of a **dataPolicyOperation** object.
@@ -105,13 +106,13 @@ Only a single instance of certificateBasedAuthConfiguration can be created in th
 The policy that controls the idle time out for web sessions for applications.
 
 ### [Get-MgPolicyAdminConsentRequestPolicy](Get-MgPolicyAdminConsentRequestPolicy.md)
-The policy by which consent requests are created and managed for the entire tenant.
+Read the properties and relationships of an adminConsentRequestPolicy object.
 
 ### [Get-MgPolicyAuthenticationFlowPolicy](Get-MgPolicyAuthenticationFlowPolicy.md)
-The policy configuration of the self-service sign-up experience of external users.
+Read the properties and relationships of an authenticationFlowsPolicy object.
 
 ### [Get-MgPolicyAuthenticationMethodPolicy](Get-MgPolicyAuthenticationMethodPolicy.md)
-The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
+Read the properties and relationships of an authenticationMethodsPolicy object.
 
 ### [Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
 Represents the settings for each authentication method.
@@ -124,10 +125,11 @@ The policy that controls Azure AD authorization settings.
 The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
 ### [Get-MgPolicyCrossTenantAccessPolicy](Get-MgPolicyCrossTenantAccessPolicy.md)
-The custom rules that define an access scenario when interacting with external Azure AD tenants.
+Read the properties and relationships of a crossTenantAccessPolicy object.
 
 ### [Get-MgPolicyCrossTenantAccessPolicyDefault](Get-MgPolicyCrossTenantAccessPolicyDefault.md)
-Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.
+Read the default configuration of a cross-tenant access policy.
+This default configuration may be the service default assigned by Azure AD (**isServiceDefault** is `true`) or may be customized in your tenant (**isServiceDefault** is `false`).
 
 ### [Get-MgPolicyCrossTenantAccessPolicyPartner](Get-MgPolicyCrossTenantAccessPolicyPartner.md)
 Defines partner-specific configurations for external Azure Active Directory organizations.
@@ -140,10 +142,12 @@ Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToAvailableExtensionProperty](Get-MgPolicyFeatureRolloutPolicyApplyToAvailableExtensionProperty.md)
-Invoke action getAvailableExtensionProperties
+Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
+The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToById](Get-MgPolicyFeatureRolloutPolicyApplyToById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToByRef](Get-MgPolicyFeatureRolloutPolicyApplyToByRef.md)
 Nullable.
@@ -153,7 +157,7 @@ Specifies a list of directoryObjects that feature is enabled for.
 The policy to control Azure AD authentication behavior for federated users.
 
 ### [Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
-The policy that represents the security defaults that protect against common attacks.
+Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ### [Get-MgPolicyPermissionGrantPolicy](Get-MgPolicyPermissionGrantPolicy.md)
 The policy that specifies the conditions under which consent can be granted.
@@ -323,19 +327,22 @@ Supports $expand.
 Invoke function availableProviderTypes
 
 ### [Invoke-MgDismissRiskyUser](Invoke-MgDismissRiskyUser.md)
-Invoke action dismiss
+Dismiss the risk of one or more riskyUser objects.
+This action sets the targeted user's risk level to none.
 
 ### [Invoke-MgUploadIdentityApiConnectorClientCertificate](Invoke-MgUploadIdentityApiConnectorClientCertificate.md)
-Invoke action uploadClientCertificate
+Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
+The input is a base-64 encoded value of the PKCS 12 certificate contents.
+This method returns an apiConnector.
 
 ### [New-MgDataPolicyOperation](New-MgDataPolicyOperation.md)
 Add new entity to dataPolicyOperations
 
 ### [New-MgIdentityApiConnector](New-MgIdentityApiConnector.md)
-Create new navigation property to apiConnectors for identity
+Create a new identityApiConnector object.
 
 ### [New-MgIdentityB2XUserFlow](New-MgIdentityB2XUserFlow.md)
-Create new navigation property to b2xUserFlows for identity
+Create a new b2xIdentityUserFlow object.
 
 ### [New-MgIdentityB2XUserFlowIdentityProviderByRef](New-MgIdentityB2XUserFlowIdentityProviderByRef.md)
 Create new navigation property ref to userFlowIdentityProviders for identity
@@ -350,25 +357,29 @@ Create new navigation property to defaultPages for identity
 Create new navigation property to overridesPages for identity
 
 ### [New-MgIdentityB2XUserFlowUserAttributeAssignment](New-MgIdentityB2XUserFlowUserAttributeAssignment.md)
-Create new navigation property to userAttributeAssignments for identity
+Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
 
 ### [New-MgIdentityConditionalAccessNamedLocation](New-MgIdentityConditionalAccessNamedLocation.md)
-Create new navigation property to namedLocations for identity
+Create a new namedLocation object.
+Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
 ### [New-MgIdentityConditionalAccessPolicy](New-MgIdentityConditionalAccessPolicy.md)
-Create new navigation property to policies for identity
+Create a new conditionalAccessPolicy.
 
 ### [New-MgIdentityProvider](New-MgIdentityProvider.md)
-Create new navigation property to identityProviders for identity
+Create an identity provider resource that is of the type specified in the request body.
+Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Azure AD.
+In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ### [New-MgIdentityUserFlowAttribute](New-MgIdentityUserFlowAttribute.md)
-Create new navigation property to userFlowAttributes for identity
+Create a new identityUserFlowAttribute object.
 
 ### [New-MgInformationProtectionBitlockerRecoveryKey](New-MgInformationProtectionBitlockerRecoveryKey.md)
 Create new navigation property to recoveryKeys for informationProtection
 
 ### [New-MgInformationProtectionThreatAssessmentRequest](New-MgInformationProtectionThreatAssessmentRequest.md)
-Create new navigation property to threatAssessmentRequests for informationProtection
+Create a new threat assessment request.
+A threat assessment request can be one of the following types:
 
 ### [New-MgInformationProtectionThreatAssessmentRequestResult](New-MgInformationProtectionThreatAssessmentRequestResult.md)
 Create new navigation property to results for informationProtection
@@ -383,19 +394,19 @@ Create a delegated permission grant represented by an oAuth2PermissionGrant obje
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
 ### [New-MgPolicyActivityBasedTimeoutPolicy](New-MgPolicyActivityBasedTimeoutPolicy.md)
-Create new navigation property to activityBasedTimeoutPolicies for policies
+Create a new activityBasedTimeoutPolicy object.
 
 ### [New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
 Create new navigation property to authenticationMethodConfigurations for policies
 
 ### [New-MgPolicyClaimMappingPolicy](New-MgPolicyClaimMappingPolicy.md)
-Create new navigation property to claimsMappingPolicies for policies
+Create a new claimsMappingPolicy object.
 
 ### [New-MgPolicyCrossTenantAccessPolicyPartner](New-MgPolicyCrossTenantAccessPolicyPartner.md)
-Create new navigation property to partners for policies
+Create a new partner configuration in a cross-tenant access policy.
 
 ### [New-MgPolicyFeatureRolloutPolicy](New-MgPolicyFeatureRolloutPolicy.md)
-Create new navigation property to featureRolloutPolicies for policies
+Create a new featureRolloutPolicy object.
 
 ### [New-MgPolicyFeatureRolloutPolicyApplyTo](New-MgPolicyFeatureRolloutPolicyApplyTo.md)
 Create new navigation property to appliesTo for policies
@@ -404,16 +415,20 @@ Create new navigation property to appliesTo for policies
 Create new navigation property ref to appliesTo for policies
 
 ### [New-MgPolicyHomeRealmDiscoveryPolicy](New-MgPolicyHomeRealmDiscoveryPolicy.md)
-Create new navigation property to homeRealmDiscoveryPolicies for policies
+Create a new homeRealmDiscoveryPolicy object.
 
 ### [New-MgPolicyPermissionGrantPolicy](New-MgPolicyPermissionGrantPolicy.md)
-Create new navigation property to permissionGrantPolicies for policies
+Creates a permissionGrantPolicy.
+A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
+After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
 
 ### [New-MgPolicyPermissionGrantPolicyExclude](New-MgPolicyPermissionGrantPolicyExclude.md)
-Create new navigation property to excludes for policies
+Add conditions under which a permission grant event is *excluded* in a permission grant policy.
+You do this by adding a permissionGrantConditionSet to the **excludes** collection of a  permissionGrantPolicy.
 
 ### [New-MgPolicyPermissionGrantPolicyInclude](New-MgPolicyPermissionGrantPolicyInclude.md)
-Create new navigation property to includes for policies
+Add conditions under which a permission grant event is *included* in a permission grant policy.
+You do this by adding a permissionGrantConditionSet to the **includes** collection of a  permissionGrantPolicy.
 
 ### [New-MgPolicyRoleManagementPolicy](New-MgPolicyRoleManagementPolicy.md)
 Create new navigation property to roleManagementPolicies for policies
@@ -428,10 +443,10 @@ Create new navigation property to effectiveRules for policies
 Create new navigation property to rules for policies
 
 ### [New-MgPolicyTokenIssuancePolicy](New-MgPolicyTokenIssuancePolicy.md)
-Create new navigation property to tokenIssuancePolicies for policies
+Create a new tokenIssuancePolicy object.
 
 ### [New-MgPolicyTokenLifetimePolicy](New-MgPolicyTokenLifetimePolicy.md)
-Create new navigation property to tokenLifetimePolicies for policies
+Create a new tokenLifetimePolicy object.
 
 ### [New-MgRiskDetection](New-MgRiskDetection.md)
 Create new navigation property to riskDetections for identityProtection
@@ -461,13 +476,20 @@ Create new navigation property ref to registeredOwners for users
 Create new navigation property to operations for users
 
 ### [New-MgUserAuthenticationPhoneMethod](New-MgUserAuthenticationPhoneMethod.md)
-Create new navigation property to phoneMethods for users
+Add a new phone authentication method for a user.
+A user may only have one phone of each type, captured in the **phoneType** property.
+This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail.
+Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
+Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
+Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
 
 ### [New-MgUserAuthenticationSoftwareOathMethod](New-MgUserAuthenticationSoftwareOathMethod.md)
 Create new navigation property to softwareOathMethods for users
 
 ### [New-MgUserAuthenticationTemporaryAccessPassMethod](New-MgUserAuthenticationTemporaryAccessPassMethod.md)
-Create new navigation property to temporaryAccessPassMethods for users
+Create a new temporaryAccessPassAuthenticationMethod object on a user.
+A user can only have one Temporary Access Pass that's usable within its specified lifetime.
+If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
 
 ### [New-MgUserAuthenticationWindowHelloForBusinessMethod](New-MgUserAuthenticationWindowHelloForBusinessMethod.md)
 Create new navigation property to windowsHelloForBusinessMethods for users
@@ -649,7 +671,7 @@ Delete navigation property extensions for users
 Delete ref of navigation property registeredOwners for users
 
 ### [Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault](Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault.md)
-Invoke action resetToSystemDefault
+Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
 
 ### [Set-MgIdentityB2XUserFlowLanguageDefaultPageContent](Set-MgIdentityB2XUserFlowLanguageDefaultPageContent.md)
 Update media content for the navigation property defaultPages in identity
@@ -658,10 +680,19 @@ Update media content for the navigation property defaultPages in identity
 Update media content for the navigation property overridesPages in identity
 
 ### [Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder](Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder.md)
-Invoke action setOrder
+Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
 ### [Test-MgPolicyFeatureRolloutPolicyApplyToProperty](Test-MgPolicyFeatureRolloutPolicyApplyToProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:\n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
 
 ### [Update-MgDataPolicyOperation](Update-MgDataPolicyOperation.md)
 Update entity in dataPolicyOperations
@@ -716,28 +747,29 @@ An **oAuth2PermissionGrant** can be updated to change which delegated permission
 Update the navigation property activityBasedTimeoutPolicies in policies
 
 ### [Update-MgPolicyAdminConsentRequestPolicy](Update-MgPolicyAdminConsentRequestPolicy.md)
-Update the navigation property adminConsentRequestPolicy in policies
+Update the properties of an adminConsentRequestPolicy object.
 
 ### [Update-MgPolicyAuthenticationFlowPolicy](Update-MgPolicyAuthenticationFlowPolicy.md)
-Update the navigation property authenticationFlowsPolicy in policies
+Update the **selfServiceSignUp** property of an authenticationFlowsPolicy object.
+The properties **id**, **type**, and **description** cannot be modified.
 
 ### [Update-MgPolicyAuthenticationMethodPolicy](Update-MgPolicyAuthenticationMethodPolicy.md)
-Update the navigation property authenticationMethodsPolicy in policies
+Update the properties of an authenticationMethodsPolicy object.
 
 ### [Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
 Update the navigation property authenticationMethodConfigurations in policies
 
 ### [Update-MgPolicyAuthorizationPolicy](Update-MgPolicyAuthorizationPolicy.md)
-Update the navigation property authorizationPolicy in policies
+Update the properties of an authorizationPolicy object.
 
 ### [Update-MgPolicyClaimMappingPolicy](Update-MgPolicyClaimMappingPolicy.md)
 Update the navigation property claimsMappingPolicies in policies
 
 ### [Update-MgPolicyCrossTenantAccessPolicy](Update-MgPolicyCrossTenantAccessPolicy.md)
-Update the navigation property crossTenantAccessPolicy in policies
+Update the properties of a cross-tenant access policy.
 
 ### [Update-MgPolicyCrossTenantAccessPolicyDefault](Update-MgPolicyCrossTenantAccessPolicyDefault.md)
-Update the navigation property default in policies
+Update the default configuration of a cross-tenant access policy.
 
 ### [Update-MgPolicyCrossTenantAccessPolicyPartner](Update-MgPolicyCrossTenantAccessPolicyPartner.md)
 Update the navigation property partners in policies
@@ -749,7 +781,7 @@ Update the navigation property featureRolloutPolicies in policies
 Update the navigation property homeRealmDiscoveryPolicies in policies
 
 ### [Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
-Update the navigation property identitySecurityDefaultsEnforcementPolicy in policies
+Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ### [Update-MgPolicyPermissionGrantPolicy](Update-MgPolicyPermissionGrantPolicy.md)
 Update the navigation property permissionGrantPolicies in policies

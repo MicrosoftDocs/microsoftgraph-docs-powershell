@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent
 
 ## SYNOPSIS
-The contents of the app icon if the icon is hosted within the Teams infrastructure.
+Retrieve the hosted content in an app's icon.
 
 ## SYNTAX
 
@@ -37,27 +37,18 @@ Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeamsIden
 ```
 
 ## DESCRIPTION
-The contents of the app icon if the icon is hosted within the Teams infrastructure.
+Retrieve the hosted content in an app's icon.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

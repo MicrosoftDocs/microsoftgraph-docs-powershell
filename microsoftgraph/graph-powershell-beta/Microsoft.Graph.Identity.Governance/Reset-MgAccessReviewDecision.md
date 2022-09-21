@@ -8,7 +8,9 @@ schema: 2.0.0
 # Reset-MgAccessReviewDecision
 
 ## SYNOPSIS
-Invoke action resetDecisions
+In the Azure AD access reviews feature, reset the decisions of a currently active accessReview.
+The target object can be either a one-time access review, or an instance of a recurring access review.
+Previous decisions are no longer recorded, but reviewers can continue to update decisions.
 
 ## SYNTAX
 
@@ -24,27 +26,20 @@ Reset-MgAccessReviewDecision -InputObject <IIdentityGovernanceIdentity> [-PassTh
 ```
 
 ## DESCRIPTION
-Invoke action resetDecisions
+In the Azure AD access reviews feature, reset the decisions of a currently active accessReview.
+The target object can be either a one-time access review, or an instance of a recurring access review.
+Previous decisions are no longer recorded, but reviewers can continue to update decisions.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Reset-MgAccessReviewDecision Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Reset-MgAccessReviewDecision -AccessReviewId $accessReviewId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Reset-MgAccessReviewDecision Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

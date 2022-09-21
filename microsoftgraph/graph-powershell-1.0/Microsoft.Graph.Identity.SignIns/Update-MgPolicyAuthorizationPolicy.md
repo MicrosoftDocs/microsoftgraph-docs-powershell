@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyAuthorizationPolicy
 
 ## SYNOPSIS
-Update the navigation property authorizationPolicy in policies
+Update the properties of an authorizationPolicy object.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Update-MgPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorizationP
 ```
 
 ## DESCRIPTION
-Update the navigation property authorizationPolicy in policies
+Update the properties of an authorizationPolicy object.
 
 ## EXAMPLES
 

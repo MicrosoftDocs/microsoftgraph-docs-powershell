@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserEventAttachment
 
 ## SYNOPSIS
-Create new navigation property to attachments for users
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ## SYNTAX
 
@@ -39,27 +40,60 @@ New-MgUserEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create new navigation property to attachments for users
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserEventAttachment Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	"@odata.type" = "#microsoft.graph.fileAttachment"
+	Name = "menu.txt"
+	ContentBytes = "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+}
+# A UPN can also be used as -UserId.
+New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserEventAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgUserEventAttachment Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	"@odata.type" = "#microsoft.graph.itemAttachment"
+	Name = "Holiday event"
+	Item = @{
+		"@odata.type" = "microsoft.graph.event"
+		Subject = "Discuss gifts for children"
+	}
+}
+# A UPN can also be used as -UserId.
+New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserEventAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgUserEventAttachment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	"@odata.type" = "#Microsoft.OutlookServices.ItemAttachment"
+	Name = "name-value"
+	Item = @{
+		"@odata.type" = "microsoft.graph.message"
+	}
+}
+# A UPN can also be used as -UserId.
+New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserEventAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

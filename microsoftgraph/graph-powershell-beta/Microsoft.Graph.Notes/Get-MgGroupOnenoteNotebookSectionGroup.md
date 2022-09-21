@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgGroupOnenoteNotebookSectionGroup
 
 ## SYNOPSIS
-The section groups in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of section groups from the specified notebook.
 
 ## SYNTAX
 
@@ -21,9 +19,7 @@ Get-MgGroupOnenoteNotebookSectionGroup -GroupId <String> -NotebookId <String> [-
 ```
 
 ## DESCRIPTION
-The section groups in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of section groups from the specified notebook.
 
 ## EXAMPLES
 
@@ -57,7 +53,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -148,7 +144,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

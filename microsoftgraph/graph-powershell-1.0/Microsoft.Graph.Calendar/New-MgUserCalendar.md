@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserCalendar
 
 ## SYNOPSIS
-Create new navigation property to calendars for users
+Create a new calendar for a user.
 
 ## SYNTAX
 
@@ -51,27 +51,22 @@ New-MgUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Create new navigation property to calendars for users
+Create a new calendar for a user.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserCalendar Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	Name = "Volunteer"
+}
+# A UPN can also be used as -UserId.
+New-MgUserCalendar -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserCalendar Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -174,7 +174,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -267,7 +267,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -372,11 +372,8 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementCompliancePolicy>`: Device Manage
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-  - `[CreatedDateTime <DateTime?>]`: Policy creation date and time. This property is read-only.
   - `[CreationSource <String>]`: Policy creation source
   - `[Description <String>]`: Policy description
-  - `[IsAssigned <Boolean?>]`: Policy assignment status. This property is read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: Policy last modification date and time. This property is read-only.
   - `[Name <String>]`: Policy name
   - `[Platforms <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
@@ -389,7 +386,6 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementCompliancePolicy>`: Device Manage
       - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
       - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to. This collection can contain a maximum of 100 elements.
       - `[NotificationTemplateId <String>]`: What notification Message template to use
-  - `[SettingCount <Int32?>]`: Number of settings. This property is read-only.
   - `[Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]`: Policy settings
     - `[Id <String>]`: 
     - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions. This property is read-only.

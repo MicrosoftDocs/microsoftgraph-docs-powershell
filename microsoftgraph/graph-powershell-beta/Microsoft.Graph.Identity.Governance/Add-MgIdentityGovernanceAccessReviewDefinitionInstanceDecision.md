@@ -8,7 +8,8 @@ schema: 2.0.0
 # Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
 
 ## SYNOPSIS
-Invoke action applyDecisions
+Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's accessReviewScheduleSettings.
+The status of the accessReviewInstance must be `Completed` to call this method.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <IId
 ```
 
 ## DESCRIPTION
-Invoke action applyDecisions
+Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's accessReviewScheduleSettings.
+The status of the accessReviewInstance must be `Completed` to call this method.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

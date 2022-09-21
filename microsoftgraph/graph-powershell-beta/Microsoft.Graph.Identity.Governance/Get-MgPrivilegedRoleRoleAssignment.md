@@ -55,23 +55,50 @@ Retrieve the properties and relationships of privilegedRoleAssignment object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgPrivilegedRoleRoleAssignment Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgPrivilegedRoleRoleAssignment -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgPrivilegedRoleRoleAssignment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgPrivilegedRoleRoleAssignment Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgPrivilegedRoleRoleAssignment
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgPrivilegedRoleRoleAssignment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgPrivilegedRoleRoleAssignment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgPrivilegedRoleRoleAssignment -Filter "isElevated eq true"
+```
+
+This example shows how to use the Get-MgPrivilegedRoleRoleAssignment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the Get-MgPrivilegedRoleRoleAssignment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime eq null"
+```
+
+This example shows how to use the Get-MgPrivilegedRoleRoleAssignment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Using the Get-MgPrivilegedRoleRoleAssignment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime ne null or isElevated eq false"
+```
+
+This example shows how to use the Get-MgPrivilegedRoleRoleAssignment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -85,7 +112,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -162,7 +189,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

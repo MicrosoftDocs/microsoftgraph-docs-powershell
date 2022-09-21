@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerRosterMember
 
 ## SYNOPSIS
-Create new navigation property to members for planner
+Add a member to the plannerRoster object.
 
 ## SYNTAX
 
@@ -37,27 +37,22 @@ New-MgPlannerRosterMember -InputObject <IPlannerIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for planner
+Add a member to the plannerRoster object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgPlannerRosterMember Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Planner
+$params = @{
+	"@odata.type" = "#microsoft.graph.plannerRosterMember"
+	UserId = "String"
+}
+New-MgPlannerRosterMember -PlannerRosterId $plannerRosterId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgPlannerRosterMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

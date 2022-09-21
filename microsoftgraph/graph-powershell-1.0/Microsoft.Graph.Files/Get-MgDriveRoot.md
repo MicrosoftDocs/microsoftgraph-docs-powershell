@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgDriveRoot
 
 ## SYNOPSIS
-The root folder of the drive.
-Read-only.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.\n`item-id` is the ID of a driveItem.
+It may also be the unique ID of a SharePoint list item.
 
 ## SYNTAX
 
@@ -25,8 +25,8 @@ Get-MgDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-The root folder of the drive.
-Read-only.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.\n`item-id` is the ID of a driveItem.
+It may also be the unique ID of a SharePoint list item.
 
 ## EXAMPLES
 

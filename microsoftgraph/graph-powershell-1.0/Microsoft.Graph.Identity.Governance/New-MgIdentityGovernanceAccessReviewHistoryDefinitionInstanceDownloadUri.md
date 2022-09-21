@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
 
 ## SYNOPSIS
-Invoke action generateDownloadUri
+Generates a URI for an accessReviewHistoryInstance object the **status** for which is `done`.
+Each URI can be used to retrieve the instance's review history data.
+Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the accessReviewHistoryInstance object.
 
 ## SYNTAX
 
@@ -26,27 +28,20 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
 ```
 
 ## DESCRIPTION
-Invoke action generateDownloadUri
+Generates a URI for an accessReviewHistoryInstance object the **status** for which is `done`.
+Each URI can be used to retrieve the instance's review history data.
+Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the accessReviewHistoryInstance object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId -AccessReviewHistoryInstanceId $accessReviewHistoryInstanceId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

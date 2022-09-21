@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgEducationUserAssignmentCategory
 
 ## SYNOPSIS
-When set, enables users to easily find assignments of a given type.
-Read-only.
-Nullable.
+List all the categories associated with an assignment.
 
 ## SYNTAX
 
@@ -21,9 +19,7 @@ Get-MgEducationUserAssignmentCategory -EducationAssignmentId <String> -Education
 ```
 
 ## DESCRIPTION
-When set, enables users to easily find assignments of a given type.
-Read-only.
-Nullable.
+List all the categories associated with an assignment.
 
 ## EXAMPLES
 
@@ -57,7 +53,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -148,7 +144,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

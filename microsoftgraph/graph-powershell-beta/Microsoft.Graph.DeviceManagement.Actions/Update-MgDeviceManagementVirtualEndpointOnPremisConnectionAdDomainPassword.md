@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
 
 ## SYNOPSIS
-Invoke action updateAdDomainPassword
+Update the Active Directory domain password for a cloudPcOnPremisesConnection object.
+This API is supported when the type of the **cloudPcOnPremisesConnection** object is `hybridAzureADJoin`.
 
 ## SYNTAX
 
@@ -43,27 +44,22 @@ Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
 ```
 
 ## DESCRIPTION
-Invoke action updateAdDomainPassword
+Update the Active Directory domain password for a cloudPcOnPremisesConnection object.
+This API is supported when the type of the **cloudPcOnPremisesConnection** object is `hybridAzureADJoin`.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+$params = @{
+	AdDomainPassword = "AdDomainPassword value"
+}
+Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

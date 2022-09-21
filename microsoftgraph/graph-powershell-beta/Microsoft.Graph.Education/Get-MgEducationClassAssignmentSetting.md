@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentSetting
 
 ## SYNOPSIS
-Specifies class-level assignments settings.
+Read the properties and relationships of an educationAssignmentSettings object.
 
 ## SYNTAX
 
@@ -25,27 +25,18 @@ Get-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Specifies class-level assignments settings.
+Read the properties and relationships of an educationAssignmentSettings object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgEducationClassAssignmentSetting Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Education
+Get-MgEducationClassAssignmentSetting -EducationClassId $educationClassId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgEducationClassAssignmentSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

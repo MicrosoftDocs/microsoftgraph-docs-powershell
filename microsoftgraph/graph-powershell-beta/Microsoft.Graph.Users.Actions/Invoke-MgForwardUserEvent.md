@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgForwardUserEvent
 
 ## SYNOPSIS
-Invoke action forward
+This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This convenience is not available when forwarding from an Outlook.com account.
 
 ## SYNTAX
 
@@ -41,27 +43,32 @@ Invoke-MgForwardUserEvent -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action forward
+This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgForwardUserEvent Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	ToRecipients = @(
+		@{
+			EmailAddress = @{
+				Address = "danas@contoso.onmicrosoft.com"
+				Name = "Dana Swope"
+			}
+		}
+	)
+	Comment = "Dana, hope you can make this meeting."
+}
+# A UPN can also be used as -UserId.
+Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgForwardUserEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Create new navigation property to queries for compliance
+Create a new reviewSetQuery object.
 
 ## SYNTAX
 
@@ -41,27 +41,22 @@ New-MgComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to queries for compliance
+Create a new reviewSetQuery object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgComplianceEdiscoveryCaseReviewSetQuery Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Compliance
+$params = @{
+	DisplayName = "My Query 1"
+	Query = "(subject:"Quarterly Financials")"
+}
+New-MgComplianceEdiscoveryCaseReviewSetQuery -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgComplianceEdiscoveryCaseReviewSetQuery Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Restore-MgSiteListItemVersion
 
 ## SYNOPSIS
-Invoke action restoreVersion
+Restore a previous version of a ListItem to be the current version.
+This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
 ## SYNTAX
 
@@ -25,27 +26,19 @@ Restore-MgSiteListItemVersion -InputObject <ISitesIdentity> [-PassThru] [-WhatIf
 ```
 
 ## DESCRIPTION
-Invoke action restoreVersion
+Restore a previous version of a ListItem to be the current version.
+This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Restore-MgSiteListItemVersion Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Sites
+Restore-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Restore-MgSiteListItemVersion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

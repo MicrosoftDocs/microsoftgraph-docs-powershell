@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserCalendarEvent
 
 ## SYNOPSIS
-Create new navigation property to events for users
+Use this API to create a new event in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
 ## SYNTAX
 
@@ -69,27 +70,87 @@ New-MgUserCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to events for users
+Use this API to create a new event in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserCalendarEvent Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	Subject = "Let's go for lunch"
+	Body = @{
+		ContentType = "HTML"
+		Content = "Does next month work for you?"
+	}
+	Start = @{
+		DateTime = "2019-03-10T12:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	End = @{
+		DateTime = "2019-03-10T14:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	Location = @{
+		DisplayName = "Harry's Bar"
+	}
+	Attendees = @(
+		@{
+			EmailAddress = @{
+				Address = "adelev@contoso.onmicrosoft.com"
+				Name = "Adele Vance"
+			}
+			Type = "required"
+		}
+	)
+	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
+}
+# A UPN can also be used as -UserId.
+New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserCalendarEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgUserCalendarEvent Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	Subject = "Let's go for lunch"
+	Body = @{
+		ContentType = "HTML"
+		Content = "Does next month work for you?"
+	}
+	Start = @{
+		DateTime = "2019-03-10T12:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	End = @{
+		DateTime = "2019-03-10T14:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	Location = @{
+		DisplayName = "Harry's Bar"
+	}
+	Attendees = @(
+		@{
+			EmailAddress = @{
+				Address = "adelev@contoso.onmicrosoft.com"
+				Name = "Adele Vance"
+			}
+			Type = "required"
+		}
+	)
+	IsOnlineMeeting = $true
+	OnlineMeetingProvider = "teamsForBusiness"
+}
+# A UPN can also be used as -UserId.
+New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserCalendarEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

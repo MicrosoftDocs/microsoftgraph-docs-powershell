@@ -36,23 +36,41 @@ Get entity from privilegedOperationEvents by key
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgPrivilegedOperationEvent Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgPrivilegedOperationEvent -Filter "requestType eq 'Assign'"
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgPrivilegedOperationEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the Get-MgPrivilegedOperationEvent Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgPrivilegedOperationEvent -Filter "requestType eq 'Activate'"
 ```
 
-{{ Add description here }}
+This example shows how to use the Get-MgPrivilegedOperationEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgPrivilegedOperationEvent Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgPrivilegedOperationEvent -Filter "requestType eq 'Deactivate'"
+```
+
+This example shows how to use the Get-MgPrivilegedOperationEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the Get-MgPrivilegedOperationEvent Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgPrivilegedOperationEvent -Filter "(creationDateTime ge 2017-06-25T07:00:00Z) and (creationDateTime le 2017-07-25T17:30:17Z)" -CountVariable CountVar -Sort "creationDateTime desc"
+```
+
+This example shows how to use the Get-MgPrivilegedOperationEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -66,7 +84,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -143,7 +161,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

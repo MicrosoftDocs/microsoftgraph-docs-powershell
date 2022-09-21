@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityGovernanceAccessReviewHistoryDefinition
 
 ## SYNOPSIS
-Create new navigation property to historyDefinitions for identityGovernance
+Create a new accessReviewHistoryDefinition object.
 
 ## SYNTAX
 
@@ -29,27 +29,56 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinition
 ```
 
 ## DESCRIPTION
-Create new navigation property to historyDefinitions for identityGovernance
+Create a new accessReviewHistoryDefinition object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	DisplayName = "Last quarter's group reviews April 2021"
+	Decisions = @(
+		"approve"
+		"deny"
+		"dontKnow"
+		"notReviewed"
+		"notNotified"
+	)
+	ScheduleSettings = @{
+		ReportRange = "P1M"
+		Recurrence = @{
+			Pattern = @{
+				Type = "monthly"
+				Interval = 1
+			}
+			Range = @{
+				Type = "noEnd"
+				StartDate = "2018-08-03T21:02:30.667Z"
+				Count = 
+			}
+		}
+	}
+	Scopes = @(
+		@{
+			"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+			QueryType = "MicrosoftGraph"
+			Query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
+			QueryRoot = $null
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+			QueryType = "MicrosoftGraph"
+			Query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
+			QueryRoot = $null
+		}
+	)
+}
+New-MgIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

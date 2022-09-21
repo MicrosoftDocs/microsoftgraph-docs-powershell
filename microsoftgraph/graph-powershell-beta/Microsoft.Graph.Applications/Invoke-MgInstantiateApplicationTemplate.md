@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgInstantiateApplicationTemplate
 
 ## SYNOPSIS
-Invoke action instantiate
+Add an instance of an application from the Azure AD application gallery into your directory.
+You can also use this API to instantiate non-gallery apps.
+Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 ## SYNTAX
 
@@ -39,27 +41,23 @@ Invoke-MgInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action instantiate
+Add an instance of an application from the Azure AD application gallery into your directory.
+You can also use this API to instantiate non-gallery apps.
+Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgInstantiateApplicationTemplate Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	DisplayName = "testProperties"
+}
+Invoke-MgInstantiateApplicationTemplate -ApplicationTemplateId $applicationTemplateId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgInstantiateApplicationTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

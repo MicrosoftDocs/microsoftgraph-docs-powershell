@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSiteListItemField
 
 ## SYNOPSIS
-Update the navigation property fields in sites
+Update the properties on a **[listItem][]**.
 
 ## SYNTAX
 
@@ -37,27 +37,22 @@ Update-MgSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Hashtab
 ```
 
 ## DESCRIPTION
-Update the navigation property fields in sites
+Update the properties on a **[listItem][]**.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgSiteListItemField Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	Color = "Fuchsia"
+	Quantity = 
+}
+Update-MgSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgSiteListItemField Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

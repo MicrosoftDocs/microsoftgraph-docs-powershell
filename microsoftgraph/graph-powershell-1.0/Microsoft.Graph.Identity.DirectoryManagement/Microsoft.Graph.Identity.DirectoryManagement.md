@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 45466a5f-0578-4775-9010-dda9ca9af4f9
+Module Guid: ca875370-fcc2-40d5-85cc-e0e681f10f23
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,46 +12,74 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Identity.DirectoryManagement Cmdlets
 ### [Confirm-MgContactMemberGroup](Confirm-MgContactMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgContactMemberObject](Confirm-MgContactMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgContractMemberGroup](Confirm-MgContractMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgContractMemberObject](Confirm-MgContractMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDeviceMemberGroup](Confirm-MgDeviceMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDeviceMemberObject](Confirm-MgDeviceMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDirectoryDeletedItemMemberGroup](Confirm-MgDirectoryDeletedItemMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectoryDeletedItemMemberObject](Confirm-MgDirectoryDeletedItemMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDirectoryRoleMemberGroup](Confirm-MgDirectoryRoleMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectoryRoleMemberObject](Confirm-MgDirectoryRoleMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDirectoryRoleTemplateMemberGroup](Confirm-MgDirectoryRoleTemplateMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectoryRoleTemplateMemberObject](Confirm-MgDirectoryRoleTemplateMemberObject.md)
 Invoke action checkMemberObjects
 
 ### [Confirm-MgDomain](Confirm-MgDomain.md)
-Invoke action verify
+Validates the ownership of the domain.
 
 ### [Confirm-MgOrganizationMemberGroup](Confirm-MgOrganizationMemberGroup.md)
-Invoke action checkMemberGroups
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgOrganizationMemberObject](Confirm-MgOrganizationMemberObject.md)
 Invoke action checkMemberObjects
@@ -60,7 +88,8 @@ Invoke action checkMemberObjects
 Get the properties and relationships of an organizational contact.
 
 ### [Get-MgContactById](Get-MgContactById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgContactDelta](Get-MgContactDelta.md)
 Invoke function delta
@@ -69,13 +98,16 @@ Invoke function delta
 Get directReports from contacts
 
 ### [Get-MgContactManager](Get-MgContactManager.md)
-Get manager from contacts
+Get this organizational contact's manager.
 
 ### [Get-MgContactMemberGroup](Get-MgContactMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgContactMemberOf](Get-MgContactMemberOf.md)
 Get memberOf from contacts
@@ -93,19 +125,24 @@ Invoke action getMemberObjects
 Retrieve the properties and relationships of contract object.
 
 ### [Get-MgContractById](Get-MgContractById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgContractMemberGroup](Get-MgContractMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgContractMemberObject](Get-MgContractMemberObject.md)
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDevice](Get-MgDevice.md)
 Get the properties and relationships of a device object.
 
 ### [Get-MgDeviceById](Get-MgDeviceById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDeviceDelta](Get-MgDeviceDelta.md)
 Invoke function delta
@@ -116,10 +153,13 @@ Read-only.
 Nullable.
 
 ### [Get-MgDeviceMemberGroup](Get-MgDeviceMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDeviceMemberOf](Get-MgDeviceMemberOf.md)
 Groups and administrative units that this device is a member of.
@@ -188,16 +228,21 @@ Read-only.
 Nullable.
 
 ### [Get-MgDirectoryDeletedItemAvailableExtensionProperty](Get-MgDirectoryDeletedItemAvailableExtensionProperty.md)
-Invoke action getAvailableExtensionProperties
+Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
+The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
 
 ### [Get-MgDirectoryDeletedItemById](Get-MgDirectoryDeletedItemById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDirectoryDeletedItemMemberGroup](Get-MgDirectoryDeletedItemMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectoryDeletedItemMemberObject](Get-MgDirectoryDeletedItemMemberObject.md)
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDirectoryFederationConfiguration](Get-MgDirectoryFederationConfiguration.md)
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
@@ -210,7 +255,8 @@ The template ID of a built-in role is immutable and can be seen in the role desc
 For details, see Role template IDs.
 
 ### [Get-MgDirectoryRoleById](Get-MgDirectoryRoleById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDirectoryRoleDelta](Get-MgDirectoryRoleDelta.md)
 Invoke function delta
@@ -230,10 +276,13 @@ Nullable.
 Supports $expand.
 
 ### [Get-MgDirectoryRoleMemberGroup](Get-MgDirectoryRoleMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectoryRoleMemberObject](Get-MgDirectoryRoleMemberObject.md)
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDirectoryRoleScopedMember](Get-MgDirectoryRoleScopedMember.md)
 Members of this directory role that are scoped to administrative units.
@@ -244,13 +293,17 @@ Nullable.
 Retrieve the properties and relationships of a directoryroletemplate object.
 
 ### [Get-MgDirectoryRoleTemplateById](Get-MgDirectoryRoleTemplateById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgDirectoryRoleTemplateMemberGroup](Get-MgDirectoryRoleTemplateMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectoryRoleTemplateMemberObject](Get-MgDirectoryRoleTemplateMemberObject.md)
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDomain](Get-MgDomain.md)
 Retrieve the properties and relationships of domain object.
@@ -280,8 +333,11 @@ Get the properties and relationships of the currently authenticated organization
 Since the **organization** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
 
 ### [Get-MgOrganizationBranding](Get-MgOrganizationBranding.md)
-Branding for the organization.
-Nullable.
+Retrieve the default organizational branding object, if the **Accept-Language** header is set to `0` or `default`.
+If no default organizational branding object exists, this method returns a `404 Not Found` error.
+If the **Accept-Language** header is set to an existing locale identified by the value of its **id**, this method retrieves the branding for the specified locale.
+This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**.
+To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the GET organizationalBrandingLocalization method.
 
 ### [Get-MgOrganizationBrandingBackgroundImage](Get-MgOrganizationBrandingBackgroundImage.md)
 Image that appears as the background of the sign-in page.
@@ -317,7 +373,8 @@ Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 1
 We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationById](Get-MgOrganizationById.md)
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgOrganizationExtension](Get-MgOrganizationExtension.md)
 The collection of open extensions defined for the organization.
@@ -325,10 +382,13 @@ Read-only.
 Nullable.
 
 ### [Get-MgOrganizationMemberGroup](Get-MgOrganizationMemberGroup.md)
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgOrganizationMemberObject](Get-MgOrganizationMemberObject.md)
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
 Get entity from subscribedSkus by key
@@ -340,7 +400,10 @@ Get scopedRoleMemberOf from users
 Invoke function availableProviderTypes
 
 ### [Invoke-MgForceDomainDelete](Invoke-MgForceDomainDelete.md)
-Invoke action forceDelete
+Deletes a domain using an asynchronous long-running operation.
+Prior to calling forceDelete, you must update or remove any references to **Exchange** as the provisioning service.
+The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return a HTTP 404 status code.
+To verify deletion of a domain, you can perform a get domain operation.
 
 ### [New-MgContact](New-MgContact.md)
 Add new entity to contacts
@@ -363,16 +426,18 @@ Nullable.
 Create new navigation property ref to registeredOwners for devices
 
 ### [New-MgDirectoryAdministrativeUnit](New-MgDirectoryAdministrativeUnit.md)
-Create new navigation property to administrativeUnits for directory
+Use this API to create a new administrativeUnit.
 
 ### [New-MgDirectoryAdministrativeUnitExtension](New-MgDirectoryAdministrativeUnitExtension.md)
 Create new navigation property to extensions for directory
 
 ### [New-MgDirectoryAdministrativeUnitMemberByRef](New-MgDirectoryAdministrativeUnitMemberByRef.md)
-Create new navigation property ref to members for directory
+Use this API to add a member (user, group, or device) to an administrative unit.
+Currently it's only possible to add one member at a time to an administrative unit.
 
 ### [New-MgDirectoryAdministrativeUnitScopedRoleMember](New-MgDirectoryAdministrativeUnitScopedRoleMember.md)
-Create new navigation property to scopedRoleMembers for directory
+Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
+For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
 
 ### [New-MgDirectoryDeletedItem](New-MgDirectoryDeletedItem.md)
 Create new navigation property to deletedItems for directory
@@ -405,7 +470,7 @@ If a root domain is verified, subdomains of the root domain are automatically ve
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
 ### [New-MgDomainFederationConfiguration](New-MgDomainFederationConfiguration.md)
-Create new navigation property to federationConfiguration for domains
+Create a new internalDomainFederation object.
 
 ### [New-MgDomainServiceConfigurationRecord](New-MgDomainServiceConfigurationRecord.md)
 Create new navigation property to serviceConfigurationRecords for domains
@@ -417,7 +482,11 @@ Create new navigation property to verificationDnsRecords for domains
 Add new entity to organization
 
 ### [New-MgOrganizationBrandingLocalization](New-MgOrganizationBrandingLocalization.md)
-Create new navigation property to localizations for organization
+Create a new organizationalBrandingLocalization object.
+This creates a localized branding and at the same time, the default branding if it doesn't exist.
+The default branding is created only once.
+It's loaded when a localized branding isn't configured for the user's browser language.
+To retrieve the default branding, see Get branding.
 
 ### [New-MgOrganizationExtension](New-MgOrganizationExtension.md)
 Create new navigation property to extensions for organization
@@ -489,7 +558,8 @@ Delete navigation property verificationDnsRecords for domains
 Delete entity from organization
 
 ### [Remove-MgOrganizationBranding](Remove-MgOrganizationBranding.md)
-Delete navigation property branding for organization
+Delete the default organizational branding object.
+To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
 
 ### [Remove-MgOrganizationBrandingLocalization](Remove-MgOrganizationBrandingLocalization.md)
 Delete navigation property localizations for organization
@@ -504,7 +574,11 @@ Delete entity from subscribedSkus
 Delete navigation property scopedRoleMemberOf for users
 
 ### [Restore-MgDirectoryDeletedItem](Restore-MgDirectoryDeletedItem.md)
-Invoke action restore
+Restore a recently deleted application, group, servicePrincipal, or user object from deleted items.
+If an item was accidentally deleted, you can fully restore the item.
+This is not applicable to security groups, which are deleted permanently.
+A recently deleted item will remain available for up to 30 days.
+After 30 days, the item is permanently deleted.
 
 ### [Set-MgOrganizationBrandingBackgroundImage](Set-MgOrganizationBrandingBackgroundImage.md)
 Image that appears as the background of the sign-in page.
@@ -540,25 +614,88 @@ We recommend using a transparent image with no padding around the logo.
 Set mobile device management authority
 
 ### [Test-MgContactProperty](Test-MgContactProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:\n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
 
 ### [Test-MgContractProperty](Test-MgContractProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:\n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
 
 ### [Test-MgDeviceProperty](Test-MgDeviceProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:\n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
 
 ### [Test-MgDirectoryDeletedItemProperty](Test-MgDirectoryDeletedItemProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:\n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
 
 ### [Test-MgDirectoryRoleProperty](Test-MgDirectoryRoleProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:\n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
 
 ### [Test-MgDirectoryRoleTemplateProperty](Test-MgDirectoryRoleTemplateProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:\n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
 
 ### [Test-MgOrganizationProperty](Test-MgOrganizationProperty.md)
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:\n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
 
 ### [Update-MgContact](Update-MgContact.md)
 Update entity in contacts
@@ -618,7 +755,7 @@ In this case, `organization` is defined as a collection of exactly one record, a
 The **ID** is also known as the **tenantId** of the organization.
 
 ### [Update-MgOrganizationBranding](Update-MgOrganizationBranding.md)
-Update the navigation property branding in organization
+Update the properties of the default branding object specified by the organizationalBranding resource.
 
 ### [Update-MgOrganizationBrandingLocalization](Update-MgOrganizationBrandingLocalization.md)
 Update the navigation property localizations in organization

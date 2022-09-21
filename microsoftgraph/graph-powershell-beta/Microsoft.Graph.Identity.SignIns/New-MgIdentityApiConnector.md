@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityApiConnector
 
 ## SYNOPSIS
-Create new navigation property to apiConnectors for identity
+Create a new identityApiConnector object.
 
 ## SYNTAX
 
@@ -25,27 +25,63 @@ New-MgIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector> 
 ```
 
 ## DESCRIPTION
-Create new navigation property to apiConnectors for identity
+Create a new identityApiConnector object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgIdentityApiConnector Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	DisplayName = "Test API"
+	TargetUrl = "https://someapi.com/api"
+	AuthenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.basicAuthentication"
+		Username = "<USERNAME>"
+		Password = "<PASSWORD>"
+	}
+}
+New-MgIdentityApiConnector -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgIdentityApiConnector Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgIdentityApiConnector Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	DisplayName = "Test API"
+	TargetUrl = "https://someotherapi.com/api"
+	AuthenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.pkcs12Certificate"
+		Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+		Password = "<password>"
+	}
+}
+New-MgIdentityApiConnector -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgIdentityApiConnector Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgIdentityApiConnector Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	DisplayName = "Test API"
+	TargetUrl = "https://someotherapi.com/api"
+	AuthenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.pkcs12Certificate"
+		Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+		Password = "<password>"
+	}
+}
+New-MgIdentityApiConnector -BodyParameter $params
+```
+
+This example shows how to use the New-MgIdentityApiConnector Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

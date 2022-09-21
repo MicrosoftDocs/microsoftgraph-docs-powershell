@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSettingRegionalAndLanguageSetting
 
 ## SYNOPSIS
-The user's preferences for languages, regional locale and date/time formatting.
+Get the properties of a regionalAndLanguageSettings object.
 
 ## SYNTAX
 
@@ -25,27 +25,19 @@ Get-MgUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-The user's preferences for languages, regional locale and date/time formatting.
+Get the properties of a regionalAndLanguageSettings object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserSettingRegionalAndLanguageSetting Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users
+# A UPN can also be used as -UserId.
+Get-MgUserSettingRegionalAndLanguageSetting -UserId $userId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserSettingRegionalAndLanguageSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

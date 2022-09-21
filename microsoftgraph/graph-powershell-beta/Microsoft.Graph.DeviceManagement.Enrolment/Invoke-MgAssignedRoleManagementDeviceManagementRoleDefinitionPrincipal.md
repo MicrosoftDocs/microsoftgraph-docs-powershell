@@ -51,7 +51,7 @@ PS C:\> {{ Add code here }}
 ## PARAMETERS
 
 ### -DirectoryScopeId
-Usage: directoryScopeId='{directoryScopeId}'
+Usage: directoryScopeId='@directoryScopeId'
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectoryScopeType
-Usage: directoryScopeType='{directoryScopeType}'
+Usage: directoryScopeType='@directoryScopeType'
 
 ```yaml
 Type: String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Transitive
-Usage: transitive={transitive}
+Usage: transitive=@transitive
 
 ```yaml
 Type: SwitchParameter

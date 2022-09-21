@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBookingBusinessService
 
 ## SYNOPSIS
-Create new navigation property to services for bookingBusinesses
+Create a new bookingService for the specified bookingBusiness.
 
 ## SYNTAX
 
@@ -51,27 +51,81 @@ New-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Create new navigation property to services for bookingBusinesses
+Create a new bookingService for the specified bookingBusiness.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgBookingBusinessService Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Bookings
+$params = @{
+	"@odata.type" = "#microsoft.graph.bookingService"
+	DefaultDuration = "PT1H30M"
+	DefaultLocation = @{
+		"@odata.type" = "#microsoft.graph.location"
+		Address = @{
+			"@odata.type" = "#microsoft.graph.physicalAddress"
+			City = "Buffalo"
+			CountryOrRegion = "USA"
+			PostalCode = "98052"
+			PostOfficeBox = $null
+			State = "NY"
+			Street = "4567 First Street"
+			"Type@odata.type" = "#microsoft.graph.physicalAddressType"
+			Type = $null
+		}
+		Coordinates = $null
+		DisplayName = "Contoso Lunch Delivery"
+		LocationEmailAddress = $null
+		"LocationType@odata.type" = "#microsoft.graph.locationType"
+		LocationType = $null
+		LocationUri = $null
+		UniqueId = $null
+		"UniqueIdType@odata.type" = "#microsoft.graph.locationUniqueIdType"
+		UniqueIdType = $null
+	}
+	DefaultPrice = 10
+	"DefaultPriceType@odata.type" = "#microsoft.graph.bookingPriceType"
+	DefaultPriceType = "fixedPrice"
+	"DefaultReminders@odata.type" = "#Collection(microsoft.graph.bookingReminder)"
+	DefaultReminders = @(
+		@{
+			"@odata.type" = "#microsoft.graph.bookingReminder"
+			Message = "Please be reminded that this service is tomorrow."
+			Offset = "P1D"
+			"Recipients@odata.type" = "#microsoft.graph.bookingReminderRecipients"
+			Recipients = "allAttendees"
+		}
+	)
+	Description = "Individual bento box lunch delivery"
+	DisplayName = "Bento"
+	IsLocationOnline = $true
+	SmsNotificationsEnabled = $true
+	LanguageTag = "en-US"
+	IsHiddenFromCustomers = $false
+	Notes = "Home-cooked special"
+	PostBuffer = "PT10M"
+	PreBuffer = "PT5M"
+	SchedulingPolicy = @{
+		"@odata.type" = "#microsoft.graph.bookingSchedulingPolicy"
+		AllowStaffSelection = $true
+		MaximumAdvance = "P10D"
+		MinimumLeadTime = "PT10H"
+		SendConfirmationsToOwner = $true
+		TimeSlotInterval = "PT1H"
+	}
+	"StaffMemberIds@odata.type" = "#Collection(String)"
+	StaffMemberIds = @(
+		"d90d1e8c-5cfe-48cf-a2d5-966267375b6a"
+		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
+	)
+	IsAnonymousJoinEnabled = $false
+}
+New-MgBookingBusinessService -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgBookingBusinessService Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -584,7 +638,6 @@ BODYPARAMETER `<IMicrosoftGraphBookingService>`: Represents a particular service
     - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
   - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.
   - `[StaffMemberIds <String[]>]`: Represents those staff members who provide this service.
-  - `[WebUrl <String>]`: The URL a customer uses to access the service.
 
 CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment\[]>: Contains the set of custom questions associated with a particular service.
   - `[IsRequired <Boolean?>]`: The ID of the custom question.
@@ -638,7 +691,5 @@ SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represent
   - `[MinimumLeadTime <TimeSpan?>]`: The minimum amount of time before which bookings and cancellations must be made. It follows the ISO 8601 format.
   - `[SendConfirmationsToOwner <Boolean?>]`: True to notify the business via email when a booking is created or changed. Use the email address specified in the email property of the bookingBusiness entity for the business.
   - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
-
-## RELATED LINKS
 
 ## RELATED LINKS

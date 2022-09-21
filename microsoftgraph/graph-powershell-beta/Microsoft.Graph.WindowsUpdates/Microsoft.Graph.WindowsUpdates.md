@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.WindowsUpdates
-Module Guid: 85349f82-8bc7-4e56-865a-254c2d6a6a49
+Module Guid: 0db7c1d0-1a82-4331-9cb1-cc94e156efb8
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,19 +12,28 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.WindowsUpdates Cmdlets
 ### [Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById](Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById.md)
-Invoke action addMembersById
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
 
 ### [Add-MgWindowsUpdatesDeploymentAudienceMember](Add-MgWindowsUpdatesDeploymentAudienceMember.md)
-Invoke action addMembers
+Add members to an updatableAssetGroup.
+You can add azureADDevice resources as members, but may not add **updatableAssetGroup** resources as members.
+Adding an Azure AD device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
+You can also use the method addMembersById to add members.
 
 ### [Add-MgWindowsUpdatesDeploymentAudienceMemberById](Add-MgWindowsUpdatesDeploymentAudienceMemberById.md)
-Invoke action addMembersById
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
 
 ### [Add-MgWindowsUpdatesUpdatableAssetMember](Add-MgWindowsUpdatesUpdatableAssetMember.md)
-Invoke action addMembers
+Add members to an updatableAssetGroup.
+You can add azureADDevice resources as members, but may not add **updatableAssetGroup** resources as members.
+Adding an Azure AD device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
+You can also use the method addMembersById to add members.
 
 ### [Add-MgWindowsUpdatesUpdatableAssetMemberById](Add-MgWindowsUpdatesUpdatableAssetMemberById.md)
-Invoke action addMembersById
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
 
 ### [Get-MgWindowsUpdatesCatalogEntry](Get-MgWindowsUpdatesCatalogEntry.md)
 Lists the content that you can approve for deployment.
@@ -72,22 +81,25 @@ Invoke action unenrollAssetsById
 Invoke action unenrollAssets
 
 ### [New-MgWindowsUpdatesDeployment](New-MgWindowsUpdatesDeployment.md)
-Create new navigation property to deployments for admin
+Create a new deployment object.
 
 ### [New-MgWindowsUpdatesResourceConnection](New-MgWindowsUpdatesResourceConnection.md)
-Create new navigation property to resourceConnections for admin
+Create a new operationalInsightsConnection object.
 
 ### [New-MgWindowsUpdatesUpdatableAsset](New-MgWindowsUpdatesUpdatableAsset.md)
-Create new navigation property to updatableAssets for admin
+Create a new updatableAssetGroup object.
+The **updatableAssetGroup** resource inherits from updatableAsset.
 
 ### [Remove-MgWindowsUpdatesDeployment](Remove-MgWindowsUpdatesDeployment.md)
 Delete navigation property deployments for admin
 
 ### [Remove-MgWindowsUpdatesDeploymentAudienceExclusionMemberById](Remove-MgWindowsUpdatesDeploymentAudienceExclusionMemberById.md)
-Invoke action removeMembersById
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
 
 ### [Remove-MgWindowsUpdatesDeploymentAudienceMemberById](Remove-MgWindowsUpdatesDeploymentAudienceMemberById.md)
-Invoke action removeMembersById
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
 
 ### [Remove-MgWindowsUpdatesResourceConnection](Remove-MgWindowsUpdatesResourceConnection.md)
 Delete navigation property resourceConnections for admin
@@ -96,19 +108,27 @@ Delete navigation property resourceConnections for admin
 Delete navigation property updatableAssets for admin
 
 ### [Remove-MgWindowsUpdatesUpdatableAssetMember](Remove-MgWindowsUpdatesUpdatableAssetMember.md)
-Invoke action removeMembers
+Remove members from an updatableAssetGroup.
+You can also use the method removeMembersById to remove members.
 
 ### [Remove-MgWindowsUpdatesUpdatableAssetMemberById](Remove-MgWindowsUpdatesUpdatableAssetMemberById.md)
-Invoke action removeMembersById
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
 
 ### [Update-MgWindowsUpdatesDeployment](Update-MgWindowsUpdatesDeployment.md)
 Update the navigation property deployments in admin
 
 ### [Update-MgWindowsUpdatesDeploymentAudience](Update-MgWindowsUpdatesDeploymentAudience.md)
-Invoke action updateAudience
+Update the members and exclusions collections of a deploymentAudience.
+Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object, if it does not already exist.
+If the same updatableAsset gets included in the **exclusions** and **members** collections of a **deploymentAudience**, deployment will not apply to that asset.
+If all **updatableAsset** objects are the same type, you can also use the method updateAudienceById to update the **deploymentAudience**.
 
 ### [Update-MgWindowsUpdatesDeploymentAudienceById](Update-MgWindowsUpdatesDeploymentAudienceById.md)
-Invoke action updateAudienceById
+Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type.
+Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object if it does not already exist.
+If the same updatableAsset gets included in the **exclusions** and **members** collections of a **deploymentAudience**, deployment will not apply to that asset.
+You can also use the method updateAudience to update the **deploymentAudience**.
 
 ### [Update-MgWindowsUpdatesResourceConnection](Update-MgWindowsUpdatesResourceConnection.md)
 Update the navigation property resourceConnections in admin

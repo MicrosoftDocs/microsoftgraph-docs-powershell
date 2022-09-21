@@ -8,7 +8,12 @@ schema: 2.0.0
 # New-MgUserMessage
 
 ## SYNOPSIS
-Create new navigation property to messages for users
+Create a draft of a new message in either JSON or MIME format.
+When using JSON format, you can:\n- Include an attachment to the **message**.\n- Update the draft later to add content to the **body** or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- /* Add any attachments and S/MIME properties to the MIME content.
+By default, this operation saves the draft in the Drafts folder.
+Send the draft message in a subsequent operation.
+Alternatively, send a new message in a single operation, or create a draft to forward, reply and reply-all to an existing message.
 
 ## SYNTAX
 
@@ -65,27 +70,73 @@ New-MgUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMe
 ```
 
 ## DESCRIPTION
-Create new navigation property to messages for users
+Create a draft of a new message in either JSON or MIME format.
+When using JSON format, you can:\n- Include an attachment to the **message**.\n- Update the draft later to add content to the **body** or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- /* Add any attachments and S/MIME properties to the MIME content.
+By default, this operation saves the draft in the Drafts folder.
+Send the draft message in a subsequent operation.
+Alternatively, send a new message in a single operation, or create a draft to forward, reply and reply-all to an existing message.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserMessage Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Mail
+$params = @{
+	Subject = "Did you see last night's game?"
+	Importance = "Low"
+	Body = @{
+		ContentType = "HTML"
+		Content = "They were <b>awesome</b>!"
+	}
+	ToRecipients = @(
+		@{
+			EmailAddress = @{
+				Address = "AdeleV@contoso.onmicrosoft.com"
+			}
+		}
+	)
+}
+# A UPN can also be used as -UserId.
+New-MgUserMessage -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: {{ Add title here }}
+### Example 2: Using the New-MgUserMessage Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Mail
+$params = @{
+	Subject = "9/8/2018: concert"
+	Body = @{
+		ContentType = "HTML"
+		Content = "The group represents Washington."
+	}
+	ToRecipients = @(
+		@{
+			EmailAddress = @{
+				Address = "AlexW@contoso.OnMicrosoft.com"
+			}
+		}
+	)
+	InternetMessageHeaders = @(
+		@{
+			Name = "x-custom-header-group-name"
+			Value = "Washington"
+		}
+		@{
+			Name = "x-custom-header-group-id"
+			Value = "WA001"
+		}
+	)
+}
+# A UPN can also be used as -UserId.
+New-MgUserMessage -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
+This example shows how to use the New-MgUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteListColumn
 
 ## SYNOPSIS
-Create new navigation property to columns for groups
+Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
 ## SYNTAX
 
@@ -58,7 +58,7 @@ New-MgGroupSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create new navigation property to columns for groups
+Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
 ## EXAMPLES
 

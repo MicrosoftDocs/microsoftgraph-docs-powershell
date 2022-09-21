@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgApplicationKey
 
 ## SYNOPSIS
-Invoke action removeKey
+Remove a key credential from an application.
+This method along with addKey can be used by an application to automate rolling its expiring keys.
+As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 ## SYNTAX
 
@@ -39,27 +41,24 @@ Remove-MgApplicationKey -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action removeKey
+Remove a key credential from an application.
+This method along with addKey can be used by an application to automate rolling its expiring keys.
+As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Remove-MgApplicationKey Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
+	Proof = "eyJ0eXAiOiJ..."
+}
+Remove-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Remove-MgApplicationKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

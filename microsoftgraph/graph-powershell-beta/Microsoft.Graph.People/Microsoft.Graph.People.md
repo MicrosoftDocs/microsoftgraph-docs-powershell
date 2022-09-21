@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.People
-Module Guid: a77e567f-726f-4ad1-b6f8-d4964657fa76
+Module Guid: de48a9bb-fc51-4e23-9a17-ba4d966537f5
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people
 Help Version: 1.0.0.0
 Locale: en-US
@@ -23,7 +23,10 @@ The collection is ordered by their relevance to the user, which is determined by
 A person is an aggregation of information from across mail, contacts and social networks.
 
 ### [Get-MgUserProfile](Get-MgUserProfile.md)
-Represents properties that are descriptive of a user in a tenant.
+Retrieve the properties and relationships of a profile object for a given user.
+The **profile** resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
+To get one of these navigation properties, use the corresponding GET method on that property.
+See the methods exposed by **profile**.
 
 ### [Get-MgUserProfileAccount](Get-MgUserProfileAccount.md)
 Get account from users
@@ -86,67 +89,67 @@ Represents detailed information about websites associated with a user in various
 Create new navigation property to people for users
 
 ### [New-MgUserProfileAccount](New-MgUserProfileAccount.md)
-Create new navigation property to account for users
+Create a new userAccountInformation object in a user's profile.
 
 ### [New-MgUserProfileAddress](New-MgUserProfileAddress.md)
-Create new navigation property to addresses for users
+Create a new itemAddress object in a user's profile.
 
 ### [New-MgUserProfileAnniversary](New-MgUserProfileAnniversary.md)
-Create new navigation property to anniversaries for users
+Use this API to create a new personAnniversary object in a user's profile.
 
 ### [New-MgUserProfileAward](New-MgUserProfileAward.md)
-Create new navigation property to awards for users
+Create a new personAward object in a user's profile.
 
 ### [New-MgUserProfileCertification](New-MgUserProfileCertification.md)
-Create new navigation property to certifications for users
+Create a new personCertification object in a user's profile.
 
 ### [New-MgUserProfileEducationalActivity](New-MgUserProfileEducationalActivity.md)
-Create new navigation property to educationalActivities for users
+Create a new educationalActivity in a user's profile.
 
 ### [New-MgUserProfileEmail](New-MgUserProfileEmail.md)
-Create new navigation property to emails for users
+Create a new itemEmail object in a user's profile.
 
 ### [New-MgUserProfileInterest](New-MgUserProfileInterest.md)
-Create new navigation property to interests for users
+Create a new personInterest.
 
 ### [New-MgUserProfileLanguage](New-MgUserProfileLanguage.md)
-Create new navigation property to languages for users
+Use this API to create a new languageProficiency object in a user's profile.
 
 ### [New-MgUserProfileName](New-MgUserProfileName.md)
-Create new navigation property to names for users
+Use this API to create a new personName object in a user's profile.
 
 ### [New-MgUserProfileNote](New-MgUserProfileNote.md)
-Create new navigation property to notes for users
+Create a new personAnnotation object in a user's profile.
 
 ### [New-MgUserProfilePatent](New-MgUserProfilePatent.md)
-Create new navigation property to patents for users
+Create a new itemPatent object within a user's profile.
 
 ### [New-MgUserProfilePhone](New-MgUserProfilePhone.md)
-Create new navigation property to phones for users
+Use this API to create a new itemPhone object in a user's profile.
 
 ### [New-MgUserProfilePosition](New-MgUserProfilePosition.md)
-Create new navigation property to positions for users
+Use this API to create a new workPosition in a user's profile.
 
 ### [New-MgUserProfileProject](New-MgUserProfileProject.md)
-Create new navigation property to projects for users
+Use this API to create a new projectParticipation object in a user's profile.
 
 ### [New-MgUserProfilePublication](New-MgUserProfilePublication.md)
-Create new navigation property to publications for users
+Create a new itemPublication object in a user's profile.
 
 ### [New-MgUserProfileSkill](New-MgUserProfileSkill.md)
-Create new navigation property to skills for users
+Use this API to create a new skillProficiency object in a user's profile.
 
 ### [New-MgUserProfileWebAccount](New-MgUserProfileWebAccount.md)
-Create new navigation property to webAccounts for users
+Create a new webAccount object in a user's profile.
 
 ### [New-MgUserProfileWebsite](New-MgUserProfileWebsite.md)
-Create new navigation property to websites for users
+Create a new personWebsite object in a user's profile.
 
 ### [Remove-MgUserPerson](Remove-MgUserPerson.md)
 Delete navigation property people for users
 
 ### [Remove-MgUserProfile](Remove-MgUserProfile.md)
-Delete navigation property profile for users
+Deletes a profile object from a user's account.
 
 ### [Remove-MgUserProfileAccount](Remove-MgUserProfileAccount.md)
 Delete navigation property account for users

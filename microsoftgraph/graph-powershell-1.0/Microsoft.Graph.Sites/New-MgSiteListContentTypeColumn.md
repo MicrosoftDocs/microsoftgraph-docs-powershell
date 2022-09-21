@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteListContentTypeColumn
 
 ## SYNOPSIS
-Create new navigation property to columns for sites
+Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 
 ## SYNTAX
 
@@ -58,7 +58,7 @@ New-MgSiteListContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Create new navigation property to columns for sites
+Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 
 ## EXAMPLES
 

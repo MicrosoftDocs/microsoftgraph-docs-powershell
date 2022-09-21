@@ -289,7 +289,6 @@ BODYPARAMETER `<IMicrosoftGraphApplePushNotificationCertificate>`: Apple push no
   - `[Id <String>]`: 
   - `[AppleIdentifier <String>]`: Apple Id of the account used to create the MDM push certificate.
   - `[Certificate <String>]`: Not yet documented
-  - `[CertificateSerialNumber <String>]`: Certificate serial number. This property is read-only.
   - `[CertificateUploadFailureReason <String>]`: The reason the certificate upload failed.
   - `[CertificateUploadStatus <String>]`: The certificate upload status.
   - `[ExpirationDateTime <DateTime?>]`: The expiration date and time for Apple push notification certificate.

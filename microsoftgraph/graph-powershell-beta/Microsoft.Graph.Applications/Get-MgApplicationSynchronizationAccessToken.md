@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronizationAccessToken
 
 ## SYNOPSIS
-Invoke action acquireAccessToken
+Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
 
 ## SYNTAX
 
@@ -41,27 +41,25 @@ Get-MgApplicationSynchronizationAccessToken -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action acquireAccessToken
+Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgApplicationSynchronizationAccessToken Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Credentials = @(
+		@{
+			"@odata.type" = "microsoft.graph.synchronizationSecretKeyStringValuePair"
+		}
+	)
+}
+Get-MgApplicationSynchronizationAccessToken -ApplicationId $applicationId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgApplicationSynchronizationAccessToken Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

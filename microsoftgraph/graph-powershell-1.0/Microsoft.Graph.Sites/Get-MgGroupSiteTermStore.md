@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteTermStore
 
 ## SYNOPSIS
-The default termStore under this site.
+Read the properties and relationships of a store object.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Get-MgGroupSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-The default termStore under this site.
+Read the properties and relationships of a store object.
 
 ## EXAMPLES
 
@@ -78,7 +78,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -170,7 +170,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

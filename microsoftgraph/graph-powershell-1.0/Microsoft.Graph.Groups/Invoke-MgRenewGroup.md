@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgRenewGroup
 
 ## SYNOPSIS
-Invoke action renew
+Renews a group's expiration.
+When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ## SYNTAX
 
@@ -23,27 +24,19 @@ Invoke-MgRenewGroup -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confi
 ```
 
 ## DESCRIPTION
-Invoke action renew
+Renews a group's expiration.
+When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgRenewGroup Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Groups
+Invoke-MgRenewGroup -GroupId $groupId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgRenewGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

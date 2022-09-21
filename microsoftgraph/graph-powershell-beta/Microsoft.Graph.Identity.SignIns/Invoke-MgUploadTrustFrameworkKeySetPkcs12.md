@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgUploadTrustFrameworkKeySetPkcs12
 
 ## SYNOPSIS
-Invoke action uploadPkcs12
+Upload a PKCS12 format key (PFX) to a trustFrameworkKeyset.
+The input is a base-64 encoded value of the Pfx certificate contents.
+This method returns trustFrameworkKey.
 
 ## SYNTAX
 
@@ -40,27 +42,24 @@ Invoke-MgUploadTrustFrameworkKeySetPkcs12 -InputObject <IIdentitySignInsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action uploadPkcs12
+Upload a PKCS12 format key (PFX) to a trustFrameworkKeyset.
+The input is a base-64 encoded value of the Pfx certificate contents.
+This method returns trustFrameworkKey.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgUploadTrustFrameworkKeySetPkcs12 Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	Key = "Base64-encoded-pfx-content"
+	Password = "password-value"
+}
+Invoke-MgUploadTrustFrameworkKeySetPkcs12 -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgUploadTrustFrameworkKeySetPkcs12 Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

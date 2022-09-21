@@ -8,7 +8,8 @@ schema: 2.0.0
 # Add-MgGroupFavorite
 
 ## SYNOPSIS
-Invoke action addFavorite
+Add the group to the list of the current user's favorite groups.
+Supported for Microsoft 365 groups only.
 
 ## SYNTAX
 
@@ -23,27 +24,19 @@ Add-MgGroupFavorite -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confi
 ```
 
 ## DESCRIPTION
-Invoke action addFavorite
+Add the group to the list of the current user's favorite groups.
+Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Add-MgGroupFavorite Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Groups
+Add-MgGroupFavorite -GroupId $groupId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Add-MgGroupFavorite Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteTermStoreGroup
 
 ## SYNOPSIS
-Create new navigation property to groups for sites
+Create a new group object in a term store.
 
 ## SYNTAX
 
@@ -68,27 +68,21 @@ New-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create new navigation property to groups for sites
+Create a new group object in a term store.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgSiteTermStoreGroup Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Sites
+$params = @{
+	DisplayName = "myGroup"
+}
+New-MgSiteTermStoreGroup -SiteId $siteId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgSiteTermStoreGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

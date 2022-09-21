@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgUserPlanner
 
 ## SYNOPSIS
-Selective Planner services available to the user.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a plannerUser object.
+The returned properties include the user's favorite plans and recently viewed plans.
 
 ## SYNTAX
 
@@ -45,29 +44,20 @@ Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Selective Planner services available to the user.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a plannerUser object.
+The returned properties include the user's favorite plans and recently viewed plans.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserPlanner Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Planner
+# A UPN can also be used as -UserId.
+Get-MgUserPlanner -UserId $userId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserPlanner Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -81,7 +71,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -158,7 +148,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

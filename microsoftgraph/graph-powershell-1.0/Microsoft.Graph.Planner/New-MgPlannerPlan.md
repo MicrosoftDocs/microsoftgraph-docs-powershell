@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerPlan
 
 ## SYNOPSIS
-Create new navigation property to plans for planner
+Use this API to create a new **plannerPlan**.
 
 ## SYNTAX
 
@@ -26,27 +26,22 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Confir
 ```
 
 ## DESCRIPTION
-Create new navigation property to plans for planner
+Use this API to create a new **plannerPlan**.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgPlannerPlan Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Planner
+$params = @{
+	Owner = "ebf3b108-5234-4e22-b93d-656d7dae5874"
+	Title = "title-value"
+}
+New-MgPlannerPlan -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgPlannerPlan Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest
 
 ## SYNOPSIS
-Create new navigation property to roleEligibilityScheduleRequests for roleManagement
+Create a new unifiedRoleEligibilityScheduleRequest object.
+This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
 ## SYNTAX
 
@@ -34,7 +35,8 @@ New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleEligibilityScheduleRequests for roleManagement
+Create a new unifiedRoleEligibilityScheduleRequest object.
+This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
 ## EXAMPLES
 

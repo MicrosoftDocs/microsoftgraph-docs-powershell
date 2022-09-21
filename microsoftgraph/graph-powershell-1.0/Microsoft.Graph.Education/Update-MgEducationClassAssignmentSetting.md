@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgEducationClassAssignmentSetting
 
 ## SYNOPSIS
-Update the navigation property assignmentSettings in education
+Update the properties of an educationAssignmentSettings object.
+Only Teachers can update these settings.
 
 ## SYNTAX
 
@@ -39,27 +40,22 @@ Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property assignmentSettings in education
+Update the properties of an educationAssignmentSettings object.
+Only Teachers can update these settings.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Update-MgEducationClassAssignmentSetting Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Education
+$params = @{
+	SubmissionAnimationDisabled = $true
+}
+Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Update-MgEducationClassAssignmentSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

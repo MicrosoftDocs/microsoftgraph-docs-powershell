@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipalPasswordSingleSignOnCredentials
 
 ## SYNOPSIS
-Invoke action deletePasswordSingleSignOnCredentials
+Delete single sign-on credentials using a password for a user or group.
 
 ## SYNTAX
 
@@ -39,27 +39,21 @@ Remove-MgServicePrincipalPasswordSingleSignOnCredentials -InputObject <IApplicat
 ```
 
 ## DESCRIPTION
-Invoke action deletePasswordSingleSignOnCredentials
+Delete single sign-on credentials using a password for a user or group.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Remove-MgServicePrincipalPasswordSingleSignOnCredentials Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Id = "5793aa3b-cca9-4794-679a240f8b58"
+}
+Remove-MgServicePrincipalPasswordSingleSignOnCredentials -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Remove-MgServicePrincipalPasswordSingleSignOnCredentials Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

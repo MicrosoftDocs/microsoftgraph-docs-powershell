@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
-The custom rules that define an access scenario when interacting with external Azure AD tenants.
+Read the properties and relationships of a crossTenantAccessPolicy object.
 
 ## SYNTAX
 
@@ -17,27 +17,18 @@ Get-MgPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property <Str
 ```
 
 ## DESCRIPTION
-The custom rules that define an access scenario when interacting with external Azure AD tenants.
+Read the properties and relationships of a crossTenantAccessPolicy object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgPolicyCrossTenantAccessPolicy Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgPolicyCrossTenantAccessPolicy
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgPolicyCrossTenantAccessPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

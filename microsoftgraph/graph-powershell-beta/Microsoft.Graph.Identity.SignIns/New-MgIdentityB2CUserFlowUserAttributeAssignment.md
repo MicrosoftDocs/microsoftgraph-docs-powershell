@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityB2CUserFlowUserAttributeAssignment
 
 ## SYNOPSIS
-Create new navigation property to userAttributeAssignments for identity
+Create a new identityUserFlowAttributeAssignment object in a b2cIdentityUserFlow.
 
 ## SYNTAX
 
@@ -43,27 +43,29 @@ New-MgIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsI
 ```
 
 ## DESCRIPTION
-Create new navigation property to userAttributeAssignments for identity
+Create a new identityUserFlowAttributeAssignment object in a b2cIdentityUserFlow.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgIdentityB2CUserFlowUserAttributeAssignment Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	IsOptional = $false
+	RequiresVerification = $false
+	UserInputType = "TextBox"
+	DisplayName = "Shoe size"
+	UserAttributeValues = @(
+	)
+	UserAttribute = @{
+		Id = "extension_guid_shoeSize"
+	}
+}
+New-MgIdentityB2CUserFlowUserAttributeAssignment -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgIdentityB2CUserFlowUserAttributeAssignment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

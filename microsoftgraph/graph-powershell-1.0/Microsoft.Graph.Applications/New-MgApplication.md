@@ -928,9 +928,7 @@ BODYPARAMETER `<IMicrosoftGraphApplication1>`: application
   - `[ApplicationTemplateId <String>]`: Unique identifier of the applicationTemplate. Supports $filter (eq, not, ne).
   - `[Certification <IMicrosoftGraphCertification>]`: certification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CertificationDetailsUrl <String>]`: URL that shows certification details for the application.
     - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application will expire.
-    - `[IsCertifiedByMicrosoft <Boolean?>]`: Indicates whether the application is certified by Microsoft.
     - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
     - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
   - `[CreatedDateTime <DateTime?>]`: The date and time the application was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.  Supports $filter (eq, ne, not, ge, le, in, and eq on null values) and $orderBy.
@@ -1063,9 +1061,7 @@ BODYPARAMETER `<IMicrosoftGraphApplication1>`: application
 
 CERTIFICATION `<IMicrosoftGraphCertification>`: certification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CertificationDetailsUrl <String>]`: URL that shows certification details for the application.
   - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application will expire.
-  - `[IsCertifiedByMicrosoft <Boolean?>]`: Indicates whether the application is certified by Microsoft.
   - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
   - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
 

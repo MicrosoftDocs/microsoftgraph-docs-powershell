@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserDriveListContentTypeColumn
 
 ## SYNOPSIS
-Create new navigation property to columns for users
+Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
 
 ## SYNTAX
 
@@ -58,7 +58,7 @@ New-MgUserDriveListContentTypeColumn -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to columns for users
+Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
 
 ## EXAMPLES
 

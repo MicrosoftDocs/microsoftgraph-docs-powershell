@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportCredentialUserRegistrationCount
 
 ## SYNOPSIS
-Invoke function getCredentialUserRegistrationCount
+Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.
 
 ## SYNTAX
 
@@ -17,27 +17,18 @@ Get-MgReportCredentialUserRegistrationCount [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getCredentialUserRegistrationCount
+Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgReportCredentialUserRegistrationCount Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
+Get-MgReportCredentialUserRegistrationCount
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgReportCredentialUserRegistrationCount Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgTeamChannelEmail
 
 ## SYNOPSIS
-Invoke action provisionEmail
+Provision an email address for a channel.
+Microsoft Teams doesn't automatically provision an email address for a **channel** by default.
+To have Teams provision an email address, you can call **provisionEmail**, or through the Teams user interface, select **Get email address**, which triggers Teams to generate an email address if it has not already provisioned one.
+To remove the email address of a **channel**, use the removeEmail method.
 
 ## SYNTAX
 
@@ -23,27 +26,21 @@ New-MgTeamChannelEmail -InputObject <ITeamsIdentity> [-WhatIf] [-Confirm] [<Comm
 ```
 
 ## DESCRIPTION
-Invoke action provisionEmail
+Provision an email address for a channel.
+Microsoft Teams doesn't automatically provision an email address for a **channel** by default.
+To have Teams provision an email address, you can call **provisionEmail**, or through the Teams user interface, select **Get email address**, which triggers Teams to generate an email address if it has not already provisioned one.
+To remove the email address of a **channel**, use the removeEmail method.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgTeamChannelEmail Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+New-MgTeamChannelEmail -TeamId $teamId -ChannelId $channelId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgTeamChannelEmail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,10 @@ schema: 2.0.0
 # Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod
 
 ## SYNOPSIS
-Invoke action endGracePeriod
+End the grace period for a specific Cloud PC.
+The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
+It allows users to access Cloud PCs for up to seven days before de-provisioning occurs.
+Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 
 ## SYNTAX
 
@@ -25,27 +28,21 @@ Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Invoke action endGracePeriod
+End the grace period for a specific Cloud PC.
+The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
+It allows users to access Cloud PCs for up to seven days before de-provisioning occurs.
+Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod -CloudPCId $cloudPCId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

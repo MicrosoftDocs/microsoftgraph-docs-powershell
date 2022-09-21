@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgUserDefaultCalendar
 
 ## SYNOPSIS
-The user's primary calendar.
-Read-only.
+Get the properties and relationships of a calendar object.
+The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
+There are two scenarios where an app can get another user's calendar:
 
 ## SYNTAX
 
@@ -24,28 +25,21 @@ Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>
 ```
 
 ## DESCRIPTION
-The user's primary calendar.
-Read-only.
+Get the properties and relationships of a calendar object.
+The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
+There are two scenarios where an app can get another user's calendar:
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgUserDefaultCalendar Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Calendar
+# A UPN can also be used as -UserId.
+Get-MgUserDefaultCalendar -UserId $userId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgUserDefaultCalendar Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

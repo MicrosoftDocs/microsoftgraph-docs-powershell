@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserAuthenticationTemporaryAccessPassMethod
 
 ## SYNOPSIS
-Create new navigation property to temporaryAccessPassMethods for users
+Create a new temporaryAccessPassAuthenticationMethod object on a user.
+A user can only have one Temporary Access Pass that's usable within its specified lifetime.
+If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
 
 ## SYNTAX
 
@@ -43,27 +45,25 @@ New-MgUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySignIns
 ```
 
 ## DESCRIPTION
-Create new navigation property to temporaryAccessPassMethods for users
+Create a new temporaryAccessPassAuthenticationMethod object on a user.
+A user can only have one Temporary Access Pass that's usable within its specified lifetime.
+If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserAuthenticationTemporaryAccessPassMethod Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	StartDateTime = [System.DateTime]::Parse("2022-06-05T00:00:00.000Z")
+	LifetimeInMinutes = 60
+	IsUsableOnce = $false
+}
+New-MgUserAuthenticationTemporaryAccessPassMethod -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserAuthenticationTemporaryAccessPassMethod Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

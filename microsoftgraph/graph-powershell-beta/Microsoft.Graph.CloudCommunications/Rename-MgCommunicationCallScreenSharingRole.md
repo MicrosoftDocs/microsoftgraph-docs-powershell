@@ -8,7 +8,7 @@ schema: 2.0.0
 # Rename-MgCommunicationCallScreenSharingRole
 
 ## SYNOPSIS
-Invoke action changeScreenSharingRole
+Allow applications to share screen content with the participants of a group call.
 
 ## SYNTAX
 
@@ -39,27 +39,21 @@ Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsId
 ```
 
 ## DESCRIPTION
-Invoke action changeScreenSharingRole
+Allow applications to share screen content with the participants of a group call.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Rename-MgCommunicationCallScreenSharingRole Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	Role = "viewer"
+}
+Rename-MgCommunicationCallScreenSharingRole -CallId $callId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Rename-MgCommunicationCallScreenSharingRole Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

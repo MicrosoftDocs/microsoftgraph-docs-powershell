@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserMailFolder
 
 ## SYNOPSIS
-Create new navigation property to mailFolders for users
+Use this API to create a new mail folder in the root folder of the user's mailbox.
+If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
 
 ## SYNTAX
 
@@ -50,27 +51,24 @@ New-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Create new navigation property to mailFolders for users
+Use this API to create a new mail folder in the root folder of the user's mailbox.
+If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserMailFolder Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Mail
+$params = @{
+	DisplayName = "Clutter"
+	IsHidden = $true
+}
+# A UPN can also be used as -UserId.
+New-MgUserMailFolder -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserMailFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

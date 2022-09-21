@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgUserMessageExtension
 
 ## SYNOPSIS
-Create new navigation property to extensions for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ## SYNTAX
 
@@ -37,27 +40,29 @@ New-MgUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hashtabl
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensions for users
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgUserMessageExtension Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Mail
+$params = @{
+	"@odata.type" = "microsoft.graph.openTypeExtension"
+	ExtensionName = "Com.Contoso.Referral"
+	CompanyName = "Wingtip Toys"
+	DealValue = 
+	ExpirationDate = "2015-12-03T10:00:00.000Z"
+}
+# A UPN can also be used as -UserId.
+New-MgUserMessageExtension -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgUserMessageExtension Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementSetting
 
 ## SYNOPSIS
-Represents the settings that control the behavior of Azure AD entitlement management.
+Retrieve the properties of an entitlementManagementSettings object.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <Stri
 ```
 
 ## DESCRIPTION
-Represents the settings that control the behavior of Azure AD entitlement management.
+Retrieve the properties of an entitlementManagementSettings object.
 
 ## EXAMPLES
 

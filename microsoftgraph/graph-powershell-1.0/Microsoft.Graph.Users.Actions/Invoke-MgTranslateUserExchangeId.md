@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgTranslateUserExchangeId
 
 ## SYNOPSIS
-Invoke action translateExchangeIds
+Translate identifiers of Outlook-related resources between formats.
 
 ## SYNTAX
 
@@ -40,27 +40,27 @@ Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action translateExchangeIds
+Translate identifiers of Outlook-related resources between formats.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgTranslateUserExchangeId Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	InputIds = @(
+		"{rest-formatted-id-1}"
+		"{rest-formatted-id-2}"
+	)
+	SourceIdType = "restId"
+	TargetIdType = "restImmutableEntryId"
+}
+# A UPN can also be used as -UserId.
+Invoke-MgTranslateUserExchangeId -UserId $userId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgTranslateUserExchangeId Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -221,7 +221,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsHqegrcUsersUserIdMicrosoftGraphTranslateexchangeidsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER `<IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[InputIds <String[]>]`: 
   - `[SourceIdType <String>]`: exchangeIdFormat

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserEventInstanceAttachment
 
 ## SYNOPSIS
-Create new navigation property to attachments for users
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ New-MgUserEventInstanceAttachment -InputObject <ICalendarIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Create new navigation property to attachments for users
+Use this API to create a new Attachment.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ## EXAMPLES
 

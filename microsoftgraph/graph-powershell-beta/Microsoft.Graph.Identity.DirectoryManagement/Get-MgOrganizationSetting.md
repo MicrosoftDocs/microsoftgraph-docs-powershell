@@ -8,8 +8,11 @@ schema: 2.0.0
 # Get-MgOrganizationSetting
 
 ## SYNOPSIS
-Retrieve the properties and relationships of organizationSettings object.
-Nullable.
+Retrieve the properties and relationships of an organizationSettings object, including **profileCardProperties**.
+This operation does not return insightsSettings.
+Depending on the type of insights, you can get their settings by using list itemInsights or list peopleInsights.
+This operation does not return microsoftApplicationDataAccessSettings.
+To get microsoftApplicationDataAccessSettings, use list microsoftApplicationDataAccessSettings.
 
 ## SYNTAX
 
@@ -26,28 +29,22 @@ Get-MgOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity> [-
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of organizationSettings object.
-Nullable.
+Retrieve the properties and relationships of an organizationSettings object, including **profileCardProperties**.
+This operation does not return insightsSettings.
+Depending on the type of insights, you can get their settings by using list itemInsights or list peopleInsights.
+This operation does not return microsoftApplicationDataAccessSettings.
+To get microsoftApplicationDataAccessSettings, use list microsoftApplicationDataAccessSettings.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Get-MgOrganizationSetting Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Get-MgOrganizationSetting -OrganizationId $organizationId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Get-MgOrganizationSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

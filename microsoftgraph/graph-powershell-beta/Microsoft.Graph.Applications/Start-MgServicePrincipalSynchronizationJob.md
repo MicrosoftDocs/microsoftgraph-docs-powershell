@@ -8,7 +8,11 @@ schema: 2.0.0
 # Start-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
-Invoke action start
+Start an existing synchronization job.
+If the job is in a paused state, it will continue processing changes from the point where it was paused.
+If the job is in quarantine, the quarantine status will be cleared.
+Do not create scripts to call the start job continuously while it's running because that can cause the service to stop running.
+Use the start job only when the job is currently paused or in quarantine.
 
 ## SYNTAX
 
@@ -25,27 +29,22 @@ Start-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity> 
 ```
 
 ## DESCRIPTION
-Invoke action start
+Start an existing synchronization job.
+If the job is in a paused state, it will continue processing changes from the point where it was paused.
+If the job is in quarantine, the quarantine status will be cleared.
+Do not create scripts to call the start job continuously while it's running because that can cause the service to stop running.
+Use the start job only when the job is currently paused or in quarantine.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Start-MgServicePrincipalSynchronizationJob Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Applications
+Start-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Start-MgServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

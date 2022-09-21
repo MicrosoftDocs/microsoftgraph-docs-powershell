@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleShift
 
 ## SYNOPSIS
-Create new navigation property to shifts for teams
+Create a new shift instance in a schedule.
 
 ## SYNTAX
 
@@ -42,27 +42,55 @@ New-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to shifts for teams
+Create a new shift instance in a schedule.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgTeamScheduleShift Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	Id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
+	UserId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
+	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
+	SharedShift = @{
+		DisplayName = "Day shift"
+		Notes = "Please do inventory as part of your shift."
+		StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+		EndDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
+		Theme = "blue"
+		Activities = @(
+			@{
+				IsPaid = $true
+				StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+				EndDateTime = [System.DateTime]::Parse("2019-03-11T15:15:00Z")
+				Code = ""
+				DisplayName = "Lunch"
+			}
+		)
+	}
+	DraftShift = @{
+		DisplayName = "Day shift"
+		Notes = "Please do inventory as part of your shift."
+		StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+		EndDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
+		Theme = "blue"
+		Activities = @(
+			@{
+				IsPaid = $true
+				StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+				EndDateTime = [System.DateTime]::Parse("2019-03-11T15:30:00Z")
+				Code = ""
+				DisplayName = "Lunch"
+			}
+		)
+	}
+}
+New-MgTeamScheduleShift -TeamId $teamId -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgTeamScheduleShift Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -307,7 +335,6 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphShift>`: shift
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -316,7 +343,6 @@ BODYPARAMETER `<IMicrosoftGraphShift>`: shift
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

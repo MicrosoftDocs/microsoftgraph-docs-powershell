@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus
 
 ## SYNOPSIS
-Invoke action bulkSetCloudPcReviewStatus
+Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Invoke-MgBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus
 ```
 
 ## DESCRIPTION
-Invoke action bulkSetCloudPcReviewStatus
+Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 
 ## EXAMPLES
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Create new navigation property to namedLocations for identity
+Create a new namedLocation object.
+Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
 ## SYNTAX
 
@@ -26,7 +27,8 @@ New-MgIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphName
 ```
 
 ## DESCRIPTION
-Create new navigation property to namedLocations for identity
+Create a new namedLocation object.
+Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
 ## EXAMPLES
 

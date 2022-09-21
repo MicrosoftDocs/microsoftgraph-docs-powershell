@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryAdministrativeUnit
 
 ## SYNOPSIS
-Create new navigation property to administrativeUnits for directory
+Use this API to create a new administrativeUnit.
 
 ## SYNTAX
 
@@ -27,27 +27,23 @@ New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeU
 ```
 
 ## DESCRIPTION
-Create new navigation property to administrativeUnits for directory
+Use this API to create a new administrativeUnit.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgDirectoryAdministrativeUnit Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	DisplayName = "Seattle District Technical Schools"
+	Description = "Seattle district technical schools administration"
+	Visibility = "HiddenMembership"
+}
+New-MgDirectoryAdministrativeUnit -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the New-MgDirectoryAdministrativeUnit Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

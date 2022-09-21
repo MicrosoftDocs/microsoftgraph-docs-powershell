@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyAdminConsentRequestPolicy
 
 ## SYNOPSIS
-Update the navigation property adminConsentRequestPolicy in policies
+Update the properties of an adminConsentRequestPolicy object.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Update-MgPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdminCon
 ```
 
 ## DESCRIPTION
-Update the navigation property adminConsentRequestPolicy in policies
+Update the properties of an adminConsentRequestPolicy object.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgFavoriteServiceAnnouncementMessage
 
 ## SYNOPSIS
-Invoke action favorite
+Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
 ## SYNTAX
 
@@ -26,27 +26,24 @@ Invoke-MgFavoriteServiceAnnouncementMessage
 ```
 
 ## DESCRIPTION
-Invoke action favorite
+Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the Invoke-MgFavoriteServiceAnnouncementMessage Cmdlet
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+$params = @{
+	MessageIds = @(
+		"MC172851"
+		"MC167983"
+	)
+}
+Invoke-MgFavoriteServiceAnnouncementMessage -BodyParameter $params
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+This example shows how to use the Invoke-MgFavoriteServiceAnnouncementMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
