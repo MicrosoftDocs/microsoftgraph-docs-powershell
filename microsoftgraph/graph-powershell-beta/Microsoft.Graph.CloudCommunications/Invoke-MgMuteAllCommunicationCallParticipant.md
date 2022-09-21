@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmuteallcommunicationcallparticipant
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgMuteAllCommunicationCallParticipant
 
 ## SYNOPSIS
-Invoke action muteAll
+Mute all participants in the call.
 
 ## SYNTAX
 
@@ -40,9 +40,24 @@ Invoke-MgMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicationsI
 ```
 
 ## DESCRIPTION
-Invoke action muteAll
+Mute all participants in the call.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgMuteAllCommunicationCallParticipant Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	Participants = @(
+		""
+	)
+	ClientContext = "clientContext-value"
+}
+Invoke-MgMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgMuteAllCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -188,12 +203,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsKpvac3CommunicationsCallsCallIdParticipantsMicrosoftGraphMuteallPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsKpvac3CommunicationsCallsCallIdParticipantsMicrosoftGraphMuteallPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
   - `[Participants <String[]>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingattendeereport
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserOnlineMeetingAttendeeReport
 
 ## SYNOPSIS
-Get attendeeReport for the navigation property onlineMeetings from users
+The content stream of the attendee report of a Teams live event.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgUserOnlineMeetingAttendeeReport -InputObject <ICloudCommunicationsIdentity
 ```
 
 ## DESCRIPTION
-Get attendeeReport for the navigation property onlineMeetings from users
+The content stream of the attendee report of a Teams live event.
+Read-only.
 
 ## EXAMPLES
 
@@ -125,7 +127,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

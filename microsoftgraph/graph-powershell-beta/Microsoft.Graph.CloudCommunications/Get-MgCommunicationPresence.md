@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationpresence
@@ -36,6 +36,15 @@ Get presences from communications
 
 ## EXAMPLES
 
+### Example 1: Using the Get-MgCommunicationPresence Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+Get-MgCommunicationPresence -PresenceId $presenceId
+```
+
+This example shows how to use the Get-MgCommunicationPresence Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All
@@ -48,7 +57,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +134,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -238,7 +247,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

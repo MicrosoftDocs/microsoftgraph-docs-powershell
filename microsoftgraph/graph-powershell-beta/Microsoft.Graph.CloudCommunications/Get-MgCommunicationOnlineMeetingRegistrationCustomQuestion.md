@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingregistrationcustomquestion
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgCommunicationOnlineMeetingRegistrationCustomQuestion
 
 ## SYNOPSIS
-Get customQuestions from communications
+Custom registration questions.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudC
 ```
 
 ## DESCRIPTION
-Get customQuestions from communications
+Custom registration questions.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -155,7 +155,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

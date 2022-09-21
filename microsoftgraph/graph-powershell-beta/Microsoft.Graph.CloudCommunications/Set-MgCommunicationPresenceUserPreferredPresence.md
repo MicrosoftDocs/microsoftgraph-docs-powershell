@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresenceuserpreferredpresence
@@ -8,7 +8,12 @@ schema: 2.0.0
 # Set-MgCommunicationPresenceUserPreferredPresence
 
 ## SYNOPSIS
-Invoke action setUserPreferredPresence
+Set the preferred availability and activity status for a user.
+If the preferred presence of a user is set, the user's presence is the preferred presence.
+Preferred presence takes effect only when there is at least one presence session of the user.
+Otherwise, the user's presence stays as Offline.
+A presence session can be created as a result of a successful setPresence operation, or if the user is signed in on a Teams client.
+Read more about presence sessions and their time-out and expiration.
 
 ## SYNTAX
 
@@ -41,7 +46,12 @@ Set-MgCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommunicati
 ```
 
 ## DESCRIPTION
-Invoke action setUserPreferredPresence
+Set the preferred availability and activity status for a user.
+If the preferred presence of a user is set, the user's presence is the preferred presence.
+Preferred presence takes effect only when there is at least one presence session of the user.
+Otherwise, the user's presence stays as Offline.
+A presence session can be created as a result of a successful setPresence operation, or if the user is signed in on a Teams client.
+Read more about presence sessions and their time-out and expiration.
 
 ## EXAMPLES
 
@@ -219,13 +229,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Activity <String>]`: 
   - `[Availability <String>]`: 
   - `[ExpirationDuration <TimeSpan?>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

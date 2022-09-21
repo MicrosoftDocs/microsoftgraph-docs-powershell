@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Rename-MgCommunicationCallScreenSharingRole
 
 ## SYNOPSIS
-Invoke action changeScreenSharingRole
+Allow applications to share screen content with the participants of a group call.
 
 ## SYNTAX
 
@@ -39,9 +39,21 @@ Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsId
 ```
 
 ## DESCRIPTION
-Invoke action changeScreenSharingRole
+Allow applications to share screen content with the participants of a group call.
 
 ## EXAMPLES
+
+### Example 1: Using the Rename-MgCommunicationCallScreenSharingRole Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	Role = "viewer"
+}
+Rename-MgCommunicationCallScreenSharingRole -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Rename-MgCommunicationCallScreenSharingRole Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -187,11 +199,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensharingrolePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensharingrolePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Role <String>]`: screenSharingRole
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

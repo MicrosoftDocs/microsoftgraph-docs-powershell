@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationonlinemeetingregistration
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgCommunicationOnlineMeetingRegistration
 
 ## SYNOPSIS
-Delete navigation property registration for communications
+Disable and delete the externalMeetingRegistration of an onlineMeeting.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicatio
 ```
 
 ## DESCRIPTION
-Delete navigation property registration for communications
+Disable and delete the externalMeetingRegistration of an onlineMeeting.
 
 ## EXAMPLES
 
@@ -141,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

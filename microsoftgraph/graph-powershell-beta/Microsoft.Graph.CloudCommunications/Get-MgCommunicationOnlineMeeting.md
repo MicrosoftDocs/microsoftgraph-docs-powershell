@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting
@@ -50,6 +50,15 @@ Get onlineMeetings from communications
 
 ## EXAMPLES
 
+### Example 1: Using the Get-MgCommunicationOnlineMeeting Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
+```
+
+This example shows how to use the Get-MgCommunicationOnlineMeeting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -77,7 +86,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -231,7 +240,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -407,11 +416,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+    - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
     - `[ReplyChainMessageId <String>]`: The ID of the reply message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[EndDateTime <DateTime?>]`: 
@@ -435,13 +444,13 @@ BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorg
   - `[StartDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+  - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
@@ -457,7 +466,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-PARTICIPANTS `<IMicrosoftGraphMeetingParticipants1>`: meetingParticipants
+PARTICIPANTS <IMicrosoftGraphMeetingParticipants1>: meetingParticipants
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet

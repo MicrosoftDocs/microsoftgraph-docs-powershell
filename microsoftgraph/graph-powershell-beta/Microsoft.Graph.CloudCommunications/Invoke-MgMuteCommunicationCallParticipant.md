@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcallparticipant
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgMuteCommunicationCallParticipant
 
 ## SYNOPSIS
-Invoke action mute
+Mute a specific participant in the call.
+This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+For more information about how to handle mute operations, see muteParticipantOperation.
 
 ## SYNTAX
 
@@ -39,9 +41,23 @@ Invoke-MgMuteCommunicationCallParticipant -InputObject <ICloudCommunicationsIden
 ```
 
 ## DESCRIPTION
-Invoke action mute
+Mute a specific participant in the call.
+This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+For more information about how to handle mute operations, see muteParticipantOperation.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgMuteCommunicationCallParticipant Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+}
+Invoke-MgMuteCommunicationCallParticipant -CallId $callId -ParticipantId $participantId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgMuteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -187,11 +203,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

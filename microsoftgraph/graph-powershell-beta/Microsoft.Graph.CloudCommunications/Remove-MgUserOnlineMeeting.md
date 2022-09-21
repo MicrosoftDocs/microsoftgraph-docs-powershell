@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeeting
@@ -28,6 +28,16 @@ Remove-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfMatch
 Delete navigation property onlineMeetings for users
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgUserOnlineMeeting Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+# A UPN can also be used as -UserId.
+Remove-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
+```
+
+This example shows how to use the Remove-MgUserOnlineMeeting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -156,7 +166,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

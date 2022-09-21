@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingregistration
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserOnlineMeetingRegistration
 
 ## SYNOPSIS
-Get registration from users
+Get the externalMeetingRegistration details associated with an onlineMeeting.
 
 ## SYNTAX
 
@@ -25,9 +25,29 @@ Get-MgUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdentity> 
 ```
 
 ## DESCRIPTION
-Get registration from users
+Get the externalMeetingRegistration details associated with an onlineMeeting.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserOnlineMeetingRegistration Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+# A UPN can also be used as -UserId.
+Get-MgUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId
+```
+
+This example shows how to use the Get-MgUserOnlineMeetingRegistration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgUserOnlineMeetingRegistration Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+# A UPN can also be used as -UserId.
+Get-MgUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId -ExpandProperty "microsoft.graph.meetingRegistration/customQuestions"
+```
+
+This example shows how to use the Get-MgUserOnlineMeetingRegistration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -125,7 +145,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

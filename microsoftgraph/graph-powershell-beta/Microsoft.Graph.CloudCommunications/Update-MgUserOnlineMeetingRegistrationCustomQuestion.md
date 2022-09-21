@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingregistrationcustomquestion
@@ -45,6 +45,26 @@ Update-MgUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommuni
 Update the navigation property customQuestions in users
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgUserOnlineMeetingRegistrationCustomQuestion Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	AnswerInputType = "radioButton"
+	AnswerOptions = @(
+		"Software Engineer"
+		"Software Development Manager"
+		"Product Manager"
+		"Data scientist"
+		"Other"
+	)
+}
+# A UPN can also be used as -UserId.
+Update-MgUserOnlineMeetingRegistrationCustomQuestion -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingRegistrationQuestionId $meetingRegistrationQuestionId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgUserOnlineMeetingRegistrationCustomQuestion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -281,7 +301,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMeetingRegistrationQuestion>`: meetingRegistrationQuestion
+BODYPARAMETER <IMicrosoftGraphMeetingRegistrationQuestion>: meetingRegistrationQuestion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AnswerInputType <String>]`: answerInputType
@@ -289,7 +309,7 @@ BODYPARAMETER `<IMicrosoftGraphMeetingRegistrationQuestion>`: meetingRegistratio
   - `[DisplayName <String>]`: Display name of the custom registration question.
   - `[IsRequired <Boolean?>]`: Indicates whether the question is required. Default value is false.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

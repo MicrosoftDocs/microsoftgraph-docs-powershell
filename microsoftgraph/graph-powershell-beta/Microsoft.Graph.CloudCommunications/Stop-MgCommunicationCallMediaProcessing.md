@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Stop-MgCommunicationCallMediaProcessing
 
 ## SYNOPSIS
-Invoke action cancelMediaProcessing
+Cancels processing for any in-progress media operations.
+Media operations refer to the IVR operations playPrompt and recordResponse, which are by default queued to process in order.
+The **cancelMediaProcessing** method cancels any operation that is in-process as well as operations that are queued.
+For example, this API can be used to clean up the IVR operation queue for a new media operation.
+However, it will not cancel a **ubscribeToTone** operation because it operates independent of any operation queue.
 
 ## SYNTAX
 
@@ -39,9 +43,25 @@ Stop-MgCommunicationCallMediaProcessing -InputObject <ICloudCommunicationsIdenti
 ```
 
 ## DESCRIPTION
-Invoke action cancelMediaProcessing
+Cancels processing for any in-progress media operations.
+Media operations refer to the IVR operations playPrompt and recordResponse, which are by default queued to process in order.
+The **cancelMediaProcessing** method cancels any operation that is in-process as well as operations that are queued.
+For example, this API can be used to clean up the IVR operation queue for a new media operation.
+However, it will not cancel a **ubscribeToTone** operation because it operates independent of any operation queue.
 
 ## EXAMPLES
+
+### Example 1: Using the Stop-MgCommunicationCallMediaProcessing Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	ClientContext = "clientContext-value"
+}
+Stop-MgCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Stop-MgCommunicationCallMediaProcessing Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -172,11 +192,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsYp37FjCommunicationsCallsCallIdMicrosoftGraphCancelmediaprocessingPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPathsYp37FjCommunicationsCallsCallIdMicrosoftGraphCancelmediaprocessingPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

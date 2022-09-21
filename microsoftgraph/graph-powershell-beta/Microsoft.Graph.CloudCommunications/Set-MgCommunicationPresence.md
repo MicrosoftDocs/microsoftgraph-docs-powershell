@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresence
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgCommunicationPresence
 
 ## SYNOPSIS
-Invoke action setPresence
+Set the availability and activity status in a presence session of an application for a user.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Set-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action setPresence
+Set the availability and activity status in a presence session of an application for a user.
 
 ## EXAMPLES
 
@@ -234,14 +234,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsTm7IsmCommunicationsPresencesPresenceIdMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsTm7IsmCommunicationsPresencesPresenceIdMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Activity <String>]`: 
   - `[Availability <String>]`: 
   - `[ExpirationDuration <TimeSpan?>]`: 
   - `[SessionId <String>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

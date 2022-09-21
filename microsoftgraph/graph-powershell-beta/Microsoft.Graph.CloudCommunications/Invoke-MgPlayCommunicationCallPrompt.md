@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgPlayCommunicationCallPrompt
 
 ## SYNOPSIS
-Invoke action playPrompt
+Play a prompt in the call.
+For more information about how to handle operations, see commsOperation
 
 ## SYNTAX
 
@@ -41,9 +42,33 @@ Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action playPrompt
+Play a prompt in the call.
+For more information about how to handle operations, see commsOperation
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgPlayCommunicationCallPrompt Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+	Prompts = @(
+		@{
+			"@odata.type" = "#microsoft.graph.mediaPrompt"
+			MediaInfo = @{
+				"@odata.type" = "#microsoft.graph.mediaInfo"
+				Uri = "https://cdn.contoso.com/beep.wav"
+				ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
+			}
+		}
+	)
+	Loop = $false
+}
+Invoke-MgPlayCommunicationCallPrompt -CallId $callId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgPlayCommunicationCallPrompt Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -204,13 +229,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
   - `[Loop <Boolean?>]`: 
   - `[Prompts <IMicrosoftGraphPrompt[]>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call

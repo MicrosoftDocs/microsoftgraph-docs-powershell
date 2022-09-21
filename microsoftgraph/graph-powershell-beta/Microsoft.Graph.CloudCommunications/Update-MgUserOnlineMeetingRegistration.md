@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingregistration
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserOnlineMeetingRegistration
 
 ## SYNOPSIS
-Update the navigation property registration in users
+Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
 
 ## SYNTAX
 
@@ -47,9 +47,34 @@ Update-MgUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdentit
 ```
 
 ## DESCRIPTION
-Update the navigation property registration in users
+Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgUserOnlineMeetingRegistration Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+$params = @{
+	Subject = "Microsoft Ignite: Day 1"
+	StartDateTime = [System.DateTime]::Parse("2021-11-02T08:00:00-08:00")
+	EndDateTime = [System.DateTime]::Parse("2021-11-02T15:45:00-08:00")
+	Speakers = @(
+		@{
+			DisplayName = "Henry Ross"
+			Bio = "Chairman and Chief Executive Officer"
+		}
+		@{
+			DisplayName = "Fred Ryan"
+			Bio = "CVP"
+		}
+	)
+}
+# A UPN can also be used as -UserId.
+Update-MgUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgUserOnlineMeetingRegistration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -365,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMeetingRegistration>`: meetingRegistration
+BODYPARAMETER <IMicrosoftGraphMeetingRegistration>: meetingRegistration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedRegistrant <String>]`: meetingAudience
   - `[Registrants <IMicrosoftGraphMeetingRegistrantBase[]>]`: Registrants of the online meeting.
@@ -388,14 +413,14 @@ BODYPARAMETER `<IMicrosoftGraphMeetingRegistration>`: meetingRegistration
   - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
   - `[Subject <String>]`: The subject of the meeting.
 
-CUSTOMQUESTIONS <IMicrosoftGraphMeetingRegistrationQuestion\[]>: Custom registration questions.
+CUSTOMQUESTIONS <IMicrosoftGraphMeetingRegistrationQuestion[]>: Custom registration questions.
   - `[Id <String>]`: 
   - `[AnswerInputType <String>]`: answerInputType
   - `[AnswerOptions <String[]>]`: Answer options when answerInputType is radioButton.
   - `[DisplayName <String>]`: Display name of the custom registration question.
   - `[IsRequired <Boolean?>]`: Indicates whether the question is required. Default value is false.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
@@ -411,11 +436,11 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-REGISTRANTS <IMicrosoftGraphMeetingRegistrantBase\[]>: Registrants of the online meeting.
+REGISTRANTS <IMicrosoftGraphMeetingRegistrantBase[]>: Registrants of the online meeting.
   - `[Id <String>]`: 
   - `[JoinWebUrl <String>]`: A unique web URL for the registrant to join the meeting. Read-only.
 
-SPEAKERS <IMicrosoftGraphMeetingSpeaker\[]>: The meeting speaker's information.
+SPEAKERS <IMicrosoftGraphMeetingSpeaker[]>: The meeting speaker's information.
   - `[Bio <String>]`: Bio of the speaker.
   - `[DisplayName <String>]`: Display name of the speaker.
 
