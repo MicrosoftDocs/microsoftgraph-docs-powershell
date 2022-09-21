@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementconfigurationpolicy
@@ -332,7 +332,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>: Policy assignments
+ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment\[]>: Policy assignments
   - `[Id <String>]`: 
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
   - `[SourceId <String>]`: The identifier of the source of the assignment.
@@ -341,7 +341,7 @@ ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>: Po
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationPolicy>: Device Management Configuration Policy
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Management Configuration Policy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>]`: Policy assignments
@@ -403,7 +403,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationPolicy>: Device Manag
     - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
     - `[TemplateId <String>]`: Template id
 
-SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting[]>: Policy settings
+SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting\[]>: Policy settings
   - `[Id <String>]`: 
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions. This property is read-only.
     - `[Id <String>]`: 
@@ -441,7 +441,7 @@ SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting[]>: Policy setting
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
-TEMPLATEREFERENCE <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>: Policy template reference information
+TEMPLATEREFERENCE `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>`: Policy template reference information
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
   - `[TemplateId <String>]`: Template id
