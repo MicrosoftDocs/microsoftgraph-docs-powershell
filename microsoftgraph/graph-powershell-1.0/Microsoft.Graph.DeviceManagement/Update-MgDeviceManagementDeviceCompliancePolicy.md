@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicy
@@ -280,7 +280,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduledActionsForRule
-The list of scheduled action for this rule
+The list of scheduled action per rule for this compliance policy.
+This is a required property when creating any individual per-platform compliance policies.
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
 
 ```yaml
@@ -392,12 +393,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceCompliancePolicyAssignment\[]>: The collection of assignments for this compliance policy.
+ASSIGNMENTS <IMicrosoftGraphDeviceCompliancePolicyAssignment[]>: The collection of assignments for this compliance policy.
   - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicy>`: This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. 
+BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicy>: This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment[]>]`: The collection of assignments for this compliance policy.
@@ -438,7 +439,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicy>`: This is the base class 
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[DisplayName <String>]`: Admin provided name of the device configuration.
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-  - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]`: The list of scheduled action for this rule
+  - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]`: The list of scheduled action per rule for this compliance policy. This is a required property when creating any individual per-platform compliance policies.
     - `[Id <String>]`: 
     - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
     - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
@@ -466,7 +467,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicy>`: This is the base class 
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary\[]>: Compliance Setting State Device Summary
+DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary[]>: Compliance Setting State Device Summary
   - `[Id <String>]`: 
   - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
   - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
@@ -478,7 +479,7 @@ DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary\[]>: Compl
   - `[SettingName <String>]`: Name of the setting
   - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
 
-DEVICESTATUSES <IMicrosoftGraphDeviceComplianceDeviceStatus\[]>: List of DeviceComplianceDeviceStatus.
+DEVICESTATUSES <IMicrosoftGraphDeviceComplianceDeviceStatus[]>: List of DeviceComplianceDeviceStatus.
   - `[Id <String>]`: 
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
@@ -488,7 +489,7 @@ DEVICESTATUSES <IMicrosoftGraphDeviceComplianceDeviceStatus\[]>: List of DeviceC
   - `[UserName <String>]`: The User Name that is being reported
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
-DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceComplianceDeviceOverview>`: deviceComplianceDeviceOverview
+DEVICESTATUSOVERVIEW <IMicrosoftGraphDeviceComplianceDeviceOverview>: deviceComplianceDeviceOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
@@ -499,7 +500,7 @@ DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceComplianceDeviceOverview>`: deviceCo
   - `[PendingCount <Int32?>]`: Number of pending devices
   - `[SuccessCount <Int32?>]`: Number of succeeded devices
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -626,7 +627,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule\[]>: The list of scheduled action for this rule
+SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>: The list of scheduled action per rule for this compliance policy. This is a required property when creating any individual per-platform compliance policies.
   - `[Id <String>]`: 
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
   - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
@@ -636,7 +637,7 @@ SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule\[
     - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to.
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-USERSTATUSES <IMicrosoftGraphDeviceComplianceUserStatus\[]>: List of DeviceComplianceUserStatus.
+USERSTATUSES <IMicrosoftGraphDeviceComplianceUserStatus[]>: List of DeviceComplianceUserStatus.
   - `[Id <String>]`: 
   - `[DevicesCount <Int32?>]`: Devices count for that user.
   - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
@@ -644,7 +645,7 @@ USERSTATUSES <IMicrosoftGraphDeviceComplianceUserStatus\[]>: List of DeviceCompl
   - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
-USERSTATUSOVERVIEW `<IMicrosoftGraphDeviceComplianceUserOverview>`: deviceComplianceUserOverview
+USERSTATUSOVERVIEW <IMicrosoftGraphDeviceComplianceUserOverview>: deviceComplianceUserOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
