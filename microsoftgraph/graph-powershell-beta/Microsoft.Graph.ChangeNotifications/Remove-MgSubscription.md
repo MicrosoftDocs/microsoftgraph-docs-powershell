@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgSubscription
 
 ## SYNOPSIS
-Delete entity from subscriptions
+Delete a subscription.
+For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
 ## SYNTAX
 
@@ -25,9 +26,19 @@ Remove-MgSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete entity from subscriptions
+Delete a subscription.
+For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgSubscription Cmdlet
+```powershell
+Import-Module Microsoft.Graph.ChangeNotifications
+Remove-MgSubscription -SubscriptionId $subscriptionId
+```
+
+This example shows how to use the Remove-MgSubscription Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -141,7 +152,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
 
 ## RELATED LINKS
