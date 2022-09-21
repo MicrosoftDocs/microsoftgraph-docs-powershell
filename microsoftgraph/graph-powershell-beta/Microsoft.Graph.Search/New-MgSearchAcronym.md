@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgsearchacronym
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSearchAcronym
 
 ## SYNOPSIS
-Create new navigation property to acronyms for search
+Create a new acronym object.
 
 ## SYNTAX
 
@@ -25,9 +25,25 @@ New-MgSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Create new navigation property to acronyms for search
+Create a new acronym object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgSearchAcronym Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Search
+$params = @{
+	DisplayName = "DNN"
+	StandsFor = "Deep Neural Network"
+	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
+	WebUrl = "http://microsoft.com/deep-neural-network"
+	State = "draft"
+}
+New-MgSearchAcronym -BodyParameter $params
+```
+
+This example shows how to use the New-MgSearchAcronym Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -234,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
+BODYPARAMETER <IMicrosoftGraphSearchAcronym>: acronym
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
@@ -252,7 +268,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
   - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/remove-mgsearchqna
@@ -27,6 +27,15 @@ Remove-MgSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru
 Delete navigation property qnas for search
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgSearchQna Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Search
+Remove-MgSearchQna -QnaId $qnaId
+```
+
+This example shows how to use the Remove-MgSearchQna Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -140,7 +149,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
