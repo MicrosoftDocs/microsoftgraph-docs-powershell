@@ -28,9 +28,9 @@
       items:
         - name: Use query parameters
           href: use-query-parameters.md                  
-- name: Migrate to Microsoft Graph PowerShell
+- name: Upgrade to Microsoft Graph PowerShell
   items:   
-  - name: Migrate from Azure AD PowerShell
+  - name: Upgrade from Azure AD PowerShell
     href: migration-steps.md
   - name: Cmdlet map
     href: azuread-msoline-cmdlet-map.md
