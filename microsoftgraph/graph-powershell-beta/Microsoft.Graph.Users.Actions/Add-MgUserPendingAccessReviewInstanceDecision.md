@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/add-mguserpendingaccessreviewinstancedecision
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Add-MgUserPendingAccessReviewInstanceDecision
 
 ## SYNOPSIS
-Invoke action applyDecisions
+Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's accessReviewScheduleSettings.
+The status of the accessReviewInstance must be `Completed` to call this method.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Add-MgUserPendingAccessReviewInstanceDecision -InputObject <IUsersActionsIdentit
 ```
 
 ## DESCRIPTION
-Invoke action applyDecisions
+Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's accessReviewScheduleSettings.
+The status of the accessReviewInstance must be `Completed` to call this method.
 
 ## EXAMPLES
 
@@ -141,7 +143,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

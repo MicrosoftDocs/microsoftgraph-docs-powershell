@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/stop-mguserpendingaccessreviewinstance
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Stop-MgUserPendingAccessReviewInstance
 
 ## SYNOPSIS
-Invoke action stop
+Stop a currently active accessReviewInstance.
+After the access review instance stops, the instance status will be `Completed`, the reviewers can no longer give input, and the access review decisions can be applied.
+Stopping an instance will not effect future instances.
+To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
 
 ## SYNTAX
 
@@ -25,7 +28,10 @@ Stop-MgUserPendingAccessReviewInstance -InputObject <IUsersActionsIdentity> [-Pa
 ```
 
 ## DESCRIPTION
-Invoke action stop
+Stop a currently active accessReviewInstance.
+After the access review instance stops, the instance status will be `Completed`, the reviewers can no longer give input, and the access review decisions can be applied.
+Stopping an instance will not effect future instances.
+To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
 
 ## EXAMPLES
 
@@ -141,7 +147,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

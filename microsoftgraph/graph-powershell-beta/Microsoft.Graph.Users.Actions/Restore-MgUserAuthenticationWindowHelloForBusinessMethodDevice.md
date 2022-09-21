@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/restore-mguserauthenticationwindowhelloforbusinessmethoddevice
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Restore-MgUserAuthenticationWindowHelloForBusinessMethodDevice
 
 ## SYNOPSIS
-Invoke action restore
+Restore a recently deleted application, group, servicePrincipal, or user object from deleted items.
+If an item was accidentally deleted, you can fully restore the item.
+This is not applicable to security groups, which are deleted permanently.
+A recently deleted item will remain available for up to 30 days.
+After 30 days, the item is permanently deleted.
 
 ## SYNTAX
 
@@ -25,7 +29,11 @@ Restore-MgUserAuthenticationWindowHelloForBusinessMethodDevice -InputObject <IUs
 ```
 
 ## DESCRIPTION
-Invoke action restore
+Restore a recently deleted application, group, servicePrincipal, or user object from deleted items.
+If an item was accidentally deleted, you can fully restore the item.
+This is not applicable to security groups, which are deleted permanently.
+A recently deleted item will remain available for up to 30 days.
+After 30 days, the item is permanently deleted.
 
 ## EXAMPLES
 
@@ -126,7 +134,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

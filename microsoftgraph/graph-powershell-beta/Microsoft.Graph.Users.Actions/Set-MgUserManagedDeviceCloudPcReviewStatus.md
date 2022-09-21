@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/set-mgusermanageddevicecloudpcreviewstatus
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Set-MgUserManagedDeviceCloudPcReviewStatus
 
 ## SYNOPSIS
-Invoke action setCloudPcReviewStatus
+Set the review status of a specific Cloud PC device.
+Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC as suspicious.
+After the review is completed, use this API again to set the Cloud PC back to a normal state.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Set-MgUserManagedDeviceCloudPcReviewStatus -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action setCloudPcReviewStatus
+Set the review status of a specific Cloud PC device.
+Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC as suspicious.
+After the review is completed, use this API again to set the Cloud PC back to a normal state.
 
 ## EXAMPLES
 
@@ -205,12 +209,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>]`: cloudPcReviewStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AzureStorageAccountId <String>]`: The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.
     - `[AzureStorageAccountName <String>]`: The name of the Azure Storage account in which the Cloud PC snapshot is being saved.
+    - `[AzureStorageContainerName <String>]`: The name of the container in an Azure Storage account in which the Cloud PC snapshot is being saved.
     - `[InReview <Boolean?>]`: True if the Cloud PC is set to in review by the administrator.
     - `[RestorePointDateTime <DateTime?>]`: The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
     - `[ReviewStartDateTime <DateTime?>]`: The specific date and time when the Cloud PC was set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
@@ -218,7 +223,7 @@ BODYPARAMETER `<IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGra
     - `[SubscriptionName <String>]`: The name of the Azure subscription in which the Cloud PC snapshot is being saved.
     - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -266,10 +271,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-REVIEWSTATUS `<IMicrosoftGraphCloudPcReviewStatus>`: cloudPcReviewStatus
+REVIEWSTATUS <IMicrosoftGraphCloudPcReviewStatus>: cloudPcReviewStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AzureStorageAccountId <String>]`: The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.
   - `[AzureStorageAccountName <String>]`: The name of the Azure Storage account in which the Cloud PC snapshot is being saved.
+  - `[AzureStorageContainerName <String>]`: The name of the container in an Azure Storage account in which the Cloud PC snapshot is being saved.
   - `[InReview <Boolean?>]`: True if the Cloud PC is set to in review by the administrator.
   - `[RestorePointDateTime <DateTime?>]`: The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
   - `[ReviewStartDateTime <DateTime?>]`: The specific date and time when the Cloud PC was set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.

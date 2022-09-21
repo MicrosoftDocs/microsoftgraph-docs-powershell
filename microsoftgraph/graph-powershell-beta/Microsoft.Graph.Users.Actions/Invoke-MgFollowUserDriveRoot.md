@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgfollowuserdriveroot
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgFollowUserDriveRoot
 
 ## SYNOPSIS
-Invoke action follow
+Follow a driveItem.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Invoke-MgFollowUserDriveRoot -InputObject <IUsersActionsIdentity> [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Invoke action follow
+Follow a driveItem.
 
 ## EXAMPLES
 
@@ -124,7 +124,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

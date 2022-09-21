@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/send-mguserchatactivitynotification
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Send-MgUserChatActivityNotification
 
 ## SYNOPSIS
-Invoke action sendActivityNotification
+Send an activity feed notification in scope of a chat.
+For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
 ## SYNTAX
 
@@ -43,7 +44,8 @@ Send-MgUserChatActivityNotification -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action sendActivityNotification
+Send an activity feed notification in scope of a chat.
+For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
 ## EXAMPLES
 
@@ -284,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActivityType <String>]`: 
   - `[ChainId <Int64?>]`: 
@@ -303,7 +305,7 @@ BODYPARAMETER `<IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynoti
     - `[Value <String>]`: The topic value. If the value of the source property is entityUrl, this must be a Microsoft Graph URL. If the vaule is text, this must be a plain text value.
     - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -351,16 +353,16 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
+PREVIEWTEXT <IMicrosoftGraphItemBody>: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair\[]>: .
+TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>: .
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
+TOPIC <IMicrosoftGraphTeamworkActivityTopic>: teamworkActivityTopic
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Source <String>]`: teamworkActivityTopicSource
   - `[Value <String>]`: The topic value. If the value of the source property is entityUrl, this must be a Microsoft Graph URL. If the vaule is text, this must be a plain text value.

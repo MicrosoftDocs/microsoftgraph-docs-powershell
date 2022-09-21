@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mguseronenotenotebookfromweburl
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserOnenoteNotebookFromWebUrl
 
 ## SYNOPSIS
-Invoke action getNotebookFromWebUrl
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
 ## SYNTAX
 
@@ -39,9 +40,23 @@ Get-MgUserOnenoteNotebookFromWebUrl -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action getNotebookFromWebUrl
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserOnenoteNotebookFromWebUrl Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	WebUrl = "webUrl value"
+}
+# A UPN can also be used as -UserId.
+Get-MgUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Get-MgUserOnenoteNotebookFromWebUrl Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -172,11 +187,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Fukv4UsersUserIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Fukv4UsersUserIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[WebUrl <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

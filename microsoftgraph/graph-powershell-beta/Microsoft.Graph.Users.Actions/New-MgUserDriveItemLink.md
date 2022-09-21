@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemlink
@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserDriveItemLink
 
 ## SYNOPSIS
-Invoke action createLink
+You can use **createLink** action to share a driveItem via a sharing link.
+The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+DriveItem resources inherit sharing permissions from their ancestors.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ New-MgUserDriveItemLink -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action createLink
+You can use **createLink** action to share a driveItem via a sharing link.
+The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+DriveItem resources inherit sharing permissions from their ancestors.
 
 ## EXAMPLES
 
@@ -297,7 +301,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Message <String>]`: 
@@ -310,7 +314,7 @@ BODYPARAMETER `<IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGra
   - `[Scope <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -358,7 +362,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.

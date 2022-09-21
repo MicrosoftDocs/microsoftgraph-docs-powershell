@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/revoke-mguserdriveitempermissiongrant
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Revoke-MgUserDriveItemPermissionGrant
 
 ## SYNOPSIS
-Invoke action revokeGrants
+Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Revoke-MgUserDriveItemPermissionGrant -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action revokeGrants
+Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
 
 ## EXAMPLES
 
@@ -220,19 +220,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths66D18KUsersUserIdDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths66D18KUsersUserIdDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Grantees <IMicrosoftGraphDriveRecipient[]>]`: 
     - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
     - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
     - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
-GRANTEES <IMicrosoftGraphDriveRecipient\[]>: .
+GRANTEES <IMicrosoftGraphDriveRecipient[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

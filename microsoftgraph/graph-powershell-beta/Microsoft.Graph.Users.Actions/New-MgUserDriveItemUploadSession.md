@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemuploadsession
@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserDriveItemUploadSession
 
 ## SYNOPSIS
-Invoke action createUploadSession
+Create an upload session to allow your app to upload files up to the maximum file size.
+An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session:
 
 ## SYNTAX
 
@@ -40,7 +42,9 @@ New-MgUserDriveItemUploadSession -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action createUploadSession
+Create an upload session to allow your app to upload files up to the maximum file size.
+An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session:
 
 ## EXAMPLES
 
@@ -204,7 +208,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths10ZzsxfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths10ZzsxfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Item <IMicrosoftGraphDriveItemUploadableProperties>]`: driveItemUploadableProperties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -217,7 +221,7 @@ BODYPARAMETER `<IPaths10ZzsxfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGr
       - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
     - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -265,7 +269,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-ITEM `<IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProperties
+ITEM <IMicrosoftGraphDriveItemUploadableProperties>: driveItemUploadableProperties
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
   - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.

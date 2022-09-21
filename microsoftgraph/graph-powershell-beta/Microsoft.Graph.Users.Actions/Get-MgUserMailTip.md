@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mgusermailtip
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserMailTip
 
 ## SYNOPSIS
-Invoke action getMailTips
+Get the MailTips of one or more recipients as available to the signed-in user.
+Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to \nbe returned for more than one recipient at one time.
+The requested MailTips are returned in a mailTips collection.
 
 ## SYNTAX
 
@@ -39,9 +41,28 @@ Get-MgUserMailTip -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action getMailTips
+Get the MailTips of one or more recipients as available to the signed-in user.
+Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to \nbe returned for more than one recipient at one time.
+The requested MailTips are returned in a mailTips collection.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserMailTip Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	EmailAddresses = @(
+		"danas@contoso.onmicrosoft.com"
+		"fannyd@contoso.onmicrosoft.com"
+	)
+	MailTipsOptions = "automaticReplies, mailboxFullStatus"
+}
+# A UPN can also be used as -UserId.
+Get-MgUserMailTip -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Get-MgUserMailTip Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -187,12 +208,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsPp15VbUsersUserIdMicrosoftGraphGetmailtipsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EmailAddresses <String[]>]`: 
   - `[MailTipsOptions <String>]`: mailTipsType
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

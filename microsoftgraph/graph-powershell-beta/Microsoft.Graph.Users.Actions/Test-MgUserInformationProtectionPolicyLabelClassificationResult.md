@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mguserinformationprotectionpolicylabelclassificationresult
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Test-MgUserInformationProtectionPolicyLabelClassificationResult
 
 ## SYNOPSIS
-Invoke action evaluateClassificationResults
+Using classification results, compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
+This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
+To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
+The API returns an informationProtectionAction that contains one of more of the following:
 
 ## SYNTAX
 
@@ -41,7 +44,10 @@ Test-MgUserInformationProtectionPolicyLabelClassificationResult -InputObject <IU
 ```
 
 ## DESCRIPTION
-Invoke action evaluateClassificationResults
+Using classification results, compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
+This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
+To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
+The API returns an informationProtectionAction that contains one of more of the following:
 
 ## EXAMPLES
 
@@ -191,7 +197,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsLl6FnzUsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsLl6FnzUsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClassificationResults <IMicrosoftGraphClassificationResult[]>]`: 
     - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
@@ -206,12 +212,12 @@ BODYPARAMETER `<IPathsLl6FnzUsersUserIdInformationprotectionPolicyLabelsMicrosof
       - `[Value <String>]`: Value for this key-value pair
     - `[State <String>]`: contentState
 
-CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult\[]>: .
+CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult[]>: .
   - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
   - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
   - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -220,7 +226,7 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair
   - `[State <String>]`: contentState
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

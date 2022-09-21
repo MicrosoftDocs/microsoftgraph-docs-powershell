@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/rename-mgusercloudpc
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Rename-MgUserCloudPc
 
 ## SYNOPSIS
-Invoke action rename
+Rename a specific Cloud PC.
+Use this API to update the **displayName** for the Cloud PC entity.
 
 ## SYNTAX
 
@@ -39,9 +40,20 @@ Rename-MgUserCloudPc -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action rename
+Rename a specific Cloud PC.
+Use this API to update the **displayName** for the Cloud PC entity.
 
 ## EXAMPLES
+
+### Example 1: Using the Rename-MgUserCloudPc Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+# A UPN can also be used as -UserId.
+Rename-MgUserCloudPc -UserId $userId -CloudPCId $cloudPCId
+```
+
+This example shows how to use the Rename-MgUserCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -202,11 +214,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Swl8P4UsersUserIdCloudpcsCloudpcIdMicrosoftGraphRenamePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Swl8P4UsersUserIdCloudpcsCloudpcIdMicrosoftGraphRenamePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

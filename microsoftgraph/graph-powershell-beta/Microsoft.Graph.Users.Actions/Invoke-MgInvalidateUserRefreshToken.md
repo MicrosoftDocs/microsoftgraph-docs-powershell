@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mginvalidateuserrefreshtoken
@@ -8,7 +8,12 @@ schema: 2.0.0
 # Invoke-MgInvalidateUserRefreshToken
 
 ## SYNOPSIS
-Invoke action invalidateAllRefreshTokens
+Invalidates all of the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **refreshTokensValidFromDateTime** user property to the current date-time.
+Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device.
+This operation would prevent access to any of the organization's data accessed through applications on the device without the user first being required to sign in again.
+In fact, this operation would force the user to sign in again for all applications that they have previously consented to, independent of device.
+For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.
+If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
 ## SYNTAX
 
@@ -24,9 +29,24 @@ Invoke-MgInvalidateUserRefreshToken -InputObject <IUsersActionsIdentity> [-WhatI
 ```
 
 ## DESCRIPTION
-Invoke action invalidateAllRefreshTokens
+Invalidates all of the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **refreshTokensValidFromDateTime** user property to the current date-time.
+Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device.
+This operation would prevent access to any of the organization's data accessed through applications on the device without the user first being required to sign in again.
+In fact, this operation would force the user to sign in again for all applications that they have previously consented to, independent of device.
+For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.
+If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgInvalidateUserRefreshToken Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+# A UPN can also be used as -UserId.
+Invoke-MgInvalidateUserRefreshToken -UserId $userId
+```
+
+This example shows how to use the Invoke-MgInvalidateUserRefreshToken Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -110,7 +130,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

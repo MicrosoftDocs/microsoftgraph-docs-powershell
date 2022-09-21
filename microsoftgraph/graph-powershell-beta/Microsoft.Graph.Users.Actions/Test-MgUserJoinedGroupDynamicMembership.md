@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mguserjoinedgroupdynamicmembership
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Test-MgUserJoinedGroupDynamicMembership
 
 ## SYNOPSIS
-Invoke action evaluateDynamicMembership
+Evaluate whether a user or device is or would be a member of a dynamic group.
+The membership rule is returned along with other details that were used in the evaluation.
+You can complete this operation in the following ways:
 
 ## SYNTAX
 
@@ -40,7 +42,9 @@ Test-MgUserJoinedGroupDynamicMembership -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action evaluateDynamicMembership
+Evaluate whether a user or device is or would be a member of a dynamic group.
+The membership rule is returned along with other details that were used in the evaluation.
+You can complete this operation in the following ways:
 
 ## EXAMPLES
 
@@ -188,12 +192,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Hck503UsersUserIdJoinedgroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Hck503UsersUserIdJoinedgroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MemberId <String>]`: 
   - `[MembershipRule <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

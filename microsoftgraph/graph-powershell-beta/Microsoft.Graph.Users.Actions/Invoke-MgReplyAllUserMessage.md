@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgreplyallusermessage
@@ -8,7 +8,12 @@ schema: 2.0.0
 # Invoke-MgReplyAllUserMessage
 
 ## SYNOPSIS
-Invoke action replyAll
+Reply to all recipients of a message using either JSON or MIME format.
+When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+This method saves the message in the **Sent Items** folder.
+Alternatively, create a draft to reply-all to a message, and send it later.
 
 ## SYNTAX
 
@@ -39,9 +44,36 @@ Invoke-MgReplyAllUserMessage -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action replyAll
+Reply to all recipients of a message using either JSON or MIME format.
+When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+This method saves the message in the **Sent Items** folder.
+Alternatively, create a draft to reply-all to a message, and send it later.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgReplyAllUserMessage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Message = @{
+		Attachments = @(
+			@{
+				"@odata.type" = "#microsoft.graph.fileAttachment"
+				Name = "guidelines.txt"
+				ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+			}
+		)
+	}
+	Comment = "Please take a look at the attached guidelines before you decide on the name."
+}
+# A UPN can also be used as -UserId.
+Invoke-MgReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgReplyAllUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -218,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[Message <IMicrosoftGraphMessage>]`: message
@@ -233,13 +265,13 @@ BODYPARAMETER `<IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPo
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+      - `[Name <String>]`: The attachment's file name.
       - `[Size <Int32?>]`: The length of the attachment in bytes.
     - `[BccRecipients <IMicrosoftGraphRecipient[]>]`: The Bcc: recipients for the message.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Address <String>]`: The email address of an entity instance.
-        - `[Name <String>]`: The display name of an entity instance.
+        - `[Address <String>]`: The email address of the person or entity.
+        - `[Name <String>]`: The display name of the person or entity.
     - `[Body <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
@@ -254,8 +286,8 @@ BODYPARAMETER `<IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
       - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[FlagStatus <String>]`: followupFlagStatus
       - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
@@ -302,7 +334,7 @@ BODYPARAMETER `<IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPo
     - `[UnsubscribeEnabled <Boolean?>]`: 
     - `[WebLink <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -350,7 +382,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-MESSAGE `<IMicrosoftGraphMessage>`: message
+MESSAGE <IMicrosoftGraphMessage>: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -362,13 +394,13 @@ MESSAGE `<IMicrosoftGraphMessage>`: message
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+    - `[Name <String>]`: The attachment's file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
   - `[BccRecipients <IMicrosoftGraphRecipient[]>]`: The Bcc: recipients for the message.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
+      - `[Address <String>]`: The email address of the person or entity.
+      - `[Name <String>]`: The display name of the person or entity.
   - `[Body <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -383,8 +415,8 @@ MESSAGE `<IMicrosoftGraphMessage>`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
     - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[FlagStatus <String>]`: followupFlagStatus
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusertasklisttask
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Move-MgUserTaskListTask
 
 ## SYNOPSIS
-Invoke action move
+Move a baseTask object from one baseTaskList to another.
 
 ## SYNTAX
 
@@ -40,9 +40,22 @@ Move-MgUserTaskListTask -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action move
+Move a baseTask object from one baseTaskList to another.
 
 ## EXAMPLES
+
+### Example 1: Using the Move-MgUserTaskListTask Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	DestinationTaskListId = "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQqFxG"
+}
+# A UPN can also be used as -UserId.
+Move-MgUserTaskListTask -UserId $userId -BaseTaskListId $baseTaskListId -BaseTaskId $baseTaskId -BodyParameter $params
+```
+
+This example shows how to use the Move-MgUserTaskListTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -203,11 +216,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths163TqudUsersUserIdTasksListsBasetasklistIdTasksBasetaskIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths163TqudUsersUserIdTasksListsBasetasklistIdTasksBasetaskIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DestinationTaskListId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

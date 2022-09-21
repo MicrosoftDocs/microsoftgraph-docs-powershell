@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mggraphuserchat
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgGraphUserChat
 
 ## SYNOPSIS
-Invoke action unhideForUser
+Unhide a chat for a user.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Invoke-MgGraphUserChat -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action unhideForUser
+Unhide a chat for a user.
 
 ## EXAMPLES
 
@@ -220,7 +220,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsFqm7NdUsersUserIdChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsFqm7NdUsersUserIdChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TenantId <String>]`: 
   - `[User <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
@@ -229,7 +229,7 @@ BODYPARAMETER `<IPathsFqm7NdUsersUserIdChatsChatIdMicrosoftGraphUnhideforuserPos
     - `[Id <String>]`: Unique identifier for the identity.
     - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -277,7 +277,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-USER `<IMicrosoftGraphTeamworkUserIdentity>`: teamworkUserIdentity
+USER <IMicrosoftGraphTeamworkUserIdentity>: teamworkUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/stop-mgusercloudpcgraceperiod
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Stop-MgUserCloudPcGracePeriod
 
 ## SYNOPSIS
-Invoke action endGracePeriod
+End the grace period for a specific Cloud PC.
+The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
+It allows users to access Cloud PCs for up to seven days before de-provisioning occurs.
+Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 
 ## SYNTAX
 
@@ -25,7 +28,10 @@ Stop-MgUserCloudPcGracePeriod -InputObject <IUsersActionsIdentity> [-PassThru] [
 ```
 
 ## DESCRIPTION
-Invoke action endGracePeriod
+End the grace period for a specific Cloud PC.
+The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
+It allows users to access Cloud PCs for up to seven days before de-provisioning occurs.
+Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 
 ## EXAMPLES
 
@@ -141,7 +147,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgtranslateuserexchangeid
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgTranslateUserExchangeId
 
 ## SYNOPSIS
-Invoke action translateExchangeIds
+Translate identifiers of Outlook-related resources between formats.
 
 ## SYNTAX
 
@@ -40,9 +40,27 @@ Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action translateExchangeIds
+Translate identifiers of Outlook-related resources between formats.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgTranslateUserExchangeId Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	InputIds = @(
+		"{rest-formatted-id-1}"
+		"{rest-formatted-id-2}"
+	)
+	SourceIdType = "restId"
+	TargetIdType = "restImmutableEntryId"
+}
+# A UPN can also be used as -UserId.
+Invoke-MgTranslateUserExchangeId -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgTranslateUserExchangeId Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -203,13 +221,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsHqegrcUsersUserIdMicrosoftGraphTranslateexchangeidsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[InputIds <String[]>]`: 
   - `[SourceIdType <String>]`: exchangeIdFormat
   - `[TargetIdType <String>]`: exchangeIdFormat
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

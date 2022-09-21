@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Find-MgUserMeetingTime
 
 ## SYNOPSIS
-Invoke action findMeetingTimes
+Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
+If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property.
+\nBased on this value, you can better adjust the parameters and call **findMeetingTimes** again.
+The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
+In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
 ## SYNTAX
 
@@ -45,9 +49,63 @@ Find-MgUserMeetingTime -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action findMeetingTimes
+Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
+If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property.
+\nBased on this value, you can better adjust the parameters and call **findMeetingTimes** again.
+The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
+In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
 ## EXAMPLES
+
+### Example 1: Using the Find-MgUserMeetingTime Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	Attendees = @(
+		@{
+			Type = "required"
+			EmailAddress = @{
+				Name = "Alex Wilbur"
+				Address = "alexw@contoso.onmicrosoft.com"
+			}
+		}
+	)
+	LocationConstraint = @{
+		IsRequired = "false"
+		SuggestLocation = "false"
+		Locations = @(
+			@{
+				ResolveAvailability = "false"
+				DisplayName = "Conf room Hood"
+			}
+		)
+	}
+	TimeConstraint = @{
+		ActivityDomain = "work"
+		TimeSlots = @(
+			@{
+				Start = @{
+					DateTime = "2019-04-16T09:00:00"
+					TimeZone = "Pacific Standard Time"
+				}
+				End = @{
+					DateTime = "2019-04-18T17:00:00"
+					TimeZone = "Pacific Standard Time"
+				}
+			}
+		)
+	}
+	IsOrganizerOptional = "false"
+	MeetingDuration = "PT1H"
+	ReturnSuggestionReasons = "true"
+	MinimumAttendeePercentage = "100"
+}
+# A UPN can also be used as -UserId.
+Find-MgUserMeetingTime -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Find-MgUserMeetingTime Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -286,26 +344,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTENDEES <IMicrosoftGraphAttendeeBase\[]>: .
+ATTENDEES <IMicrosoftGraphAttendeeBase[]>: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of an entity instance.
-    - `[Name <String>]`: The display name of an entity instance.
+    - `[Address <String>]`: The email address of the person or entity.
+    - `[Name <String>]`: The display name of the person or entity.
   - `[Type <String>]`: attendeeType
 
-BODYPARAMETER `<IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Attendees <IMicrosoftGraphAttendeeBase[]>]`: 
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
+      - `[Address <String>]`: The email address of the person or entity.
+      - `[Name <String>]`: The display name of the person or entity.
     - `[Type <String>]`: attendeeType
   - `[IsOrganizerOptional <Boolean?>]`: 
-  - `[LocationConstraint <IMicrosoftGraphLocationConstraint>]`: locationConstraint
+  - `[LocationConstraint <IMicrosoftGraphLocationConstraint1>]`: locationConstraint
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsRequired <Boolean?>]`: The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, findMeetingTimes will not return any meeting time suggestions. If this is false and all the resources are busy, findMeetingTimes would still look for meeting times without locations.
-    - `[Locations <IMicrosoftGraphLocationConstraintItem1[]>]`: Constraint information for one or more locations that the client requests for the meeting.
+    - `[Locations <IMicrosoftGraphLocationConstraintItem[]>]`: Constraint information for one or more locations that the client requests for the meeting.
       - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[City <String>]`: The city.
@@ -340,11 +398,11 @@ BODYPARAMETER `<IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequest
     - `[TimeSlots <IMicrosoftGraphTimeSlot[]>]`: 
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -392,10 +450,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-LOCATIONCONSTRAINT `<IMicrosoftGraphLocationConstraint>`: locationConstraint
+LOCATIONCONSTRAINT <IMicrosoftGraphLocationConstraint1>: locationConstraint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsRequired <Boolean?>]`: The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, findMeetingTimes will not return any meeting time suggestions. If this is false and all the resources are busy, findMeetingTimes would still look for meeting times without locations.
-  - `[Locations <IMicrosoftGraphLocationConstraintItem1[]>]`: Constraint information for one or more locations that the client requests for the meeting.
+  - `[Locations <IMicrosoftGraphLocationConstraintItem[]>]`: Constraint information for one or more locations that the client requests for the meeting.
     - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[City <String>]`: The city.
@@ -421,14 +479,14 @@ LOCATIONCONSTRAINT `<IMicrosoftGraphLocationConstraint>`: locationConstraint
     - `[ResolveAvailability <Boolean?>]`: If set to true and the specified resource is busy, findMeetingTimes looks for another resource that is free. If set to false and the specified resource is busy, findMeetingTimes returns the resource best ranked in the user's cache without checking if it's free. Default is true.
   - `[SuggestLocation <Boolean?>]`: The client requests the service to suggest one or more meeting locations.
 
-TIMECONSTRAINT `<IMicrosoftGraphTimeConstraint>`: timeConstraint
+TIMECONSTRAINT <IMicrosoftGraphTimeConstraint>: timeConstraint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActivityDomain <String>]`: activityDomain
   - `[TimeSlots <IMicrosoftGraphTimeSlot[]>]`: 
     - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS

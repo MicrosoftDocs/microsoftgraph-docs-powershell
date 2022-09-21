@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgacceptuserpendingaccessreviewinstancerecommendation
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation
 
 ## SYNOPSIS
-Invoke action acceptRecommendations
+Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
+Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
+If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
 ## SYNTAX
 
@@ -25,9 +27,21 @@ Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation -InputObject <IUser
 ```
 
 ## DESCRIPTION
-Invoke action acceptRecommendations
+Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
+Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
+If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+# A UPN can also be used as -UserId.
+Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId
+```
+
+This example shows how to use the Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -141,7 +155,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
