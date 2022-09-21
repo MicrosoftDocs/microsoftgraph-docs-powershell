@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/remove-mgusermessagemention
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgUserMessageMention
 
 ## SYNOPSIS
-A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
-By default, a GET /messages does not return this property unless you apply $expand on the property.
+Delete navigation property mentions for users
 
 ## SYNTAX
 
@@ -26,10 +25,19 @@ Remove-MgUserMessageMention -InputObject <IMailIdentity> [-IfMatch <String>] [-P
 ```
 
 ## DESCRIPTION
-A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
-By default, a GET /messages does not return this property unless you apply $expand on the property.
+Delete navigation property mentions for users
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgUserMessageMention Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Mail
+# A UPN can also be used as -UserId.
+Remove-MgUserMessageMention -UserId $userId -MessageId $messageId -MentionId $mentionId
+```
+
+This example shows how to use the Remove-MgUserMessageMention Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -173,7 +181,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ExtensionId <String>]`: key: id of extension
   - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride

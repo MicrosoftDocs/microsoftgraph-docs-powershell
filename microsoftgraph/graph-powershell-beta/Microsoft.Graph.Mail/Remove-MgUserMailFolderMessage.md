@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessage
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserMailFolderMessage
 
 ## SYNOPSIS
-The collection of messages in the mailFolder.
+Delete navigation property messages for users
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserMailFolderMessage -InputObject <IMailIdentity> [-IfMatch <String>] 
 ```
 
 ## DESCRIPTION
-The collection of messages in the mailFolder.
+Delete navigation property messages for users
 
 ## EXAMPLES
 
@@ -171,7 +171,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ExtensionId <String>]`: key: id of extension
   - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride

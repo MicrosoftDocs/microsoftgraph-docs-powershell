@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/update-mgusermailfoldermessagerule
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserMailFolderMessageRule
 
 ## SYNOPSIS
-The collection of rules that apply to the user's Inbox folder.
+Update the navigation property messageRules in users
 
 ## SYNTAX
 
@@ -42,9 +42,25 @@ Update-MgUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-The collection of rules that apply to the user's Inbox folder.
+Update the navigation property messageRules in users
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgUserMailFolderMessageRule Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Mail
+$params = @{
+	DisplayName = "Important from partner"
+	Actions = @{
+		MarkImportance = "high"
+	}
+}
+# A UPN can also be used as -UserId.
+Update-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgUserMailFolderMessageRule Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -159,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -344,7 +360,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIONS `<IMicrosoftGraphMessageRuleActions>`: messageRuleActions
+ACTIONS <IMicrosoftGraphMessageRuleActions>: messageRuleActions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignCategories <String[]>]`: A list of categories to be assigned to a message.
   - `[CopyToFolder <String>]`: The ID of a folder that a message is to be copied to.
@@ -362,9 +378,9 @@ ACTIONS `<IMicrosoftGraphMessageRuleActions>`: messageRuleActions
   - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email addresses to which a message should be redirected.
   - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
 
-BODYPARAMETER `<IMicrosoftGraphMessageRule>`: messageRule
+BODYPARAMETER <IMicrosoftGraphMessageRule>: messageRule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Actions <IMicrosoftGraphMessageRuleActions>]`: messageRuleActions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AssignCategories <String[]>]`: A list of categories to be assigned to a message.
@@ -424,7 +440,7 @@ BODYPARAMETER `<IMicrosoftGraphMessageRule>`: messageRule
   - `[IsReadOnly <Boolean?>]`: Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
   - `[Sequence <Int32?>]`: Indicates the order in which the rule is executed, among other rules.
 
-CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+CONDITIONS <IMicrosoftGraphMessageRulePredicates>: messageRulePredicates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
   - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
@@ -464,7 +480,7 @@ CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
     - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
     - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 
-EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+EXCEPTIONS <IMicrosoftGraphMessageRulePredicates>: messageRulePredicates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
   - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
@@ -504,7 +520,7 @@ EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
     - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
     - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ExtensionId <String>]`: key: id of extension
   - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride
