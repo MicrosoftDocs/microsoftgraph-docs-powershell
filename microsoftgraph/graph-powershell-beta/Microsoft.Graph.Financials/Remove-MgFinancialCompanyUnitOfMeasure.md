@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/remove-mgfinancialcompanyunitofmeasure
@@ -28,13 +28,6 @@ Remove-MgFinancialCompanyUnitOfMeasure -InputObject <IFinancialsIdentity> [-IfMa
 Delete navigation property unitsOfMeasure for financials
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -94,7 +87,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -155,9 +148,50 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+  - `[AccountId <String>]`: key: id of account
+  - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
+  - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
+  - `[CompanyId <String>]`: key: id of company
+  - `[CompanyInformationId <String>]`: key: id of companyInformation
+  - `[CountryRegionId <String>]`: key: id of countryRegion
+  - `[CurrencyId <String>]`: key: id of currency
+  - `[CustomerId <String>]`: key: id of customer
+  - `[CustomerPaymentId <String>]`: key: id of customerPayment
+  - `[CustomerPaymentJournalId <String>]`: key: id of customerPaymentJournal
+  - `[DimensionId <String>]`: key: id of dimension
+  - `[DimensionValueId <String>]`: key: id of dimensionValue
+  - `[EmployeeId <String>]`: key: id of employee
+  - `[GeneralLedgerEntryId <String>]`: key: id of generalLedgerEntry
+  - `[ItemCategoryId <String>]`: key: id of itemCategory
+  - `[ItemId <String>]`: key: id of item
+  - `[JournalId <String>]`: key: id of journal
+  - `[JournalLineId <String>]`: key: id of journalLine
+  - `[PaymentMethodId <String>]`: key: id of paymentMethod
+  - `[PaymentTermId <String>]`: key: id of paymentTerm
+  - `[PictureId <String>]`: key: id of picture
+  - `[PurchaseInvoiceId <String>]`: key: id of purchaseInvoice
+  - `[PurchaseInvoiceLineId <String>]`: key: id of purchaseInvoiceLine
+  - `[SalesCreditMemoId <String>]`: key: id of salesCreditMemo
+  - `[SalesCreditMemoLineId <String>]`: key: id of salesCreditMemoLine
+  - `[SalesInvoiceId <String>]`: key: id of salesInvoice
+  - `[SalesInvoiceLineId <String>]`: key: id of salesInvoiceLine
+  - `[SalesOrderId <String>]`: key: id of salesOrder
+  - `[SalesOrderLineId <String>]`: key: id of salesOrderLine
+  - `[SalesQuoteId <String>]`: key: id of salesQuote
+  - `[SalesQuoteLineId <String>]`: key: id of salesQuoteLine
+  - `[ShipmentMethodId <String>]`: key: id of shipmentMethod
+  - `[TaxAreaId <String>]`: key: id of taxArea
+  - `[TaxGroupId <String>]`: key: id of taxGroup
+  - `[UnitOfMeasureId <String>]`: key: id of unitOfMeasure
+  - `[VendorId <String>]`: key: id of vendor
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/remove-mgfinancialcompanyunitofmeasure](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/remove-mgfinancialcompanyunitofmeasure)
-
