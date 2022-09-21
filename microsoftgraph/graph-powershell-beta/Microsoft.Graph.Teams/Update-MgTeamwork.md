@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamwork
@@ -224,7 +224,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphTeamwork>: teamwork
+BODYPARAMETER `<IMicrosoftGraphTeamwork>`: teamwork
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeletedTeams <IMicrosoftGraphDeletedTeam[]>]`: A collection of deleted teams.
@@ -1115,7 +1115,7 @@ BODYPARAMETER <IMicrosoftGraphTeamwork>: teamwork
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4970,7 +4970,7 @@ BODYPARAMETER <IMicrosoftGraphTeamwork>: teamwork
     - `[Supports <String>]`: 
     - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
-DELETEDTEAMS <IMicrosoftGraphDeletedTeam[]>: A collection of deleted teams.
+DELETEDTEAMS <IMicrosoftGraphDeletedTeam\[]>: A collection of deleted teams.
   - `[Id <String>]`: 
   - `[Channels <IMicrosoftGraphChannel[]>]`: The channels those are either shared with this deleted team or created in this deleted team.
     - `[Id <String>]`: 
@@ -5858,7 +5858,7 @@ DELETEDTEAMS <IMicrosoftGraphDeletedTeam[]>: A collection of deleted teams.
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9496,7 +9496,7 @@ DELETEDTEAMS <IMicrosoftGraphDeletedTeam[]>: A collection of deleted teams.
     - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
     - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-DEVICES <IMicrosoftGraphTeamworkDevice[]>: The Teams devices provisioned for the tenant.
+DEVICES <IMicrosoftGraphTeamworkDevice\[]>: The Teams devices provisioned for the tenant.
   - `[Id <String>]`: 
   - `[Activity <IMicrosoftGraphTeamworkDeviceActivity>]`: teamworkDeviceActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9706,12 +9706,12 @@ DEVICES <IMicrosoftGraphTeamworkDevice[]>: The Teams devices provisioned for the
     - `[StartedDateTime <DateTime?>]`: Time at which the operation was started.
     - `[Status <String>]`: The current status of the async operation, for example, Queued, Scheduled, InProgress,  Successful, Cancelled, and Failed.
 
-TEAMSAPPSETTINGS <IMicrosoftGraphTeamsAppSettings>: teamsAppSettings
+TEAMSAPPSETTINGS `<IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[IsChatResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.
 
-TEAMTEMPLATES <IMicrosoftGraphTeamTemplate[]>: The templates associated with a team.
+TEAMTEMPLATES <IMicrosoftGraphTeamTemplate\[]>: The templates associated with a team.
   - `[Id <String>]`: 
   - `[Definitions <IMicrosoftGraphTeamTemplateDefinition[]>]`: 
     - `[Id <String>]`: 
@@ -10615,7 +10615,7 @@ TEAMTEMPLATES <IMicrosoftGraphTeamTemplate[]>: The templates associated with a t
                 - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
                 - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
                 - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14236,7 +14236,7 @@ TEAMTEMPLATES <IMicrosoftGraphTeamTemplate[]>: The templates associated with a t
       - `[Visibility <String>]`: teamVisibilityType
       - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
 
-WORKFORCEINTEGRATIONS <IMicrosoftGraphWorkforceIntegration1[]>: A workforce integration with shifts.
+WORKFORCEINTEGRATIONS <IMicrosoftGraphWorkforceIntegration1\[]>: A workforce integration with shifts.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
