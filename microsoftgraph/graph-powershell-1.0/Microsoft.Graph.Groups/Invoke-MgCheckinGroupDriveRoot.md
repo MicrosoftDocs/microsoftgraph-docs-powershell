@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgcheckingroupdriveroot
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgCheckinGroupDriveRoot
 
 ## SYNOPSIS
-Invoke action checkin
+Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Invoke-MgCheckinGroupDriveRoot -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action checkin
+Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 ## EXAMPLES
 
@@ -217,12 +217,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsD0Tb1DGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsD0Tb1DGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CheckInAs <String>]`: 
   - `[Comment <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

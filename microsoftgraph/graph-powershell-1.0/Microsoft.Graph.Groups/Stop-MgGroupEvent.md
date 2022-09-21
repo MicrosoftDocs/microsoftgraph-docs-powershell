@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/stop-mggroupevent
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Stop-MgGroupEvent
 
 ## SYNOPSIS
-Invoke action cancel
+This action allows the organizer of a meeting to send a cancellation message and cancel the event.
+The action moves the event to the Deleted Items folder.
+The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
+An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
+You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
 
 ## SYNTAX
 
@@ -39,7 +43,11 @@ Stop-MgGroupEvent -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action cancel
+This action allows the organizer of a meeting to send a cancellation message and cancel the event.
+The action moves the event to the Deleted Items folder.
+The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
+An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
+You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
 
 ## EXAMPLES
 
@@ -202,11 +210,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1BptnttGroupsGroupIdEventsEventIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1BptnttGroupsGroupIdEventsEventIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

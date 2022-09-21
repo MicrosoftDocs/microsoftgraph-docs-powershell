@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupproperty
@@ -8,7 +8,13 @@ schema: 2.0.0
 # Test-MgGroupProperty
 
 ## SYNOPSIS
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to update a Microsoft 365 group.
+To validate the properties before creating a group, use the directoryobject:validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties: This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
 
 ## SYNTAX
 
@@ -39,9 +45,29 @@ Test-MgGroupProperty -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action validateProperties
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to update a Microsoft 365 group.
+To validate the properties before creating a group, use the directoryobject:validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties: This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
 
 ## EXAMPLES
+
+### Example 1: Using the Test-MgGroupProperty Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Groups
+$params = @{
+	DisplayName = "Myprefix_test_mysuffix"
+	MailNickname = "Myprefix_test_mysuffix"
+	OnBehalfOfUserId = "onBehalfOfUserId-value"
+}
+Test-MgGroupProperty -GroupId $groupId -BodyParameter $params
+```
+
+This example shows how to use the Test-MgGroupProperty Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -217,13 +243,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[MailNickname <String>]`: 
   - `[OnBehalfOfUserId <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

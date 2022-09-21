@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/restore-mggroupdriverootlistitemversion
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Restore-MgGroupDriveRootListItemVersion
 
 ## SYNOPSIS
-Invoke action restoreVersion
+Restore a previous version of a ListItem to be the current version.
+This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Restore-MgGroupDriveRootListItemVersion -InputObject <IGroupsIdentity> [-PassThr
 ```
 
 ## DESCRIPTION
-Invoke action restoreVersion
+Restore a previous version of a ListItem to be the current version.
+This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
 ## EXAMPLES
 
@@ -156,7 +158,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

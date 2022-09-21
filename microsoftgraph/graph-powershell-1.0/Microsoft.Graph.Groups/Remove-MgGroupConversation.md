@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/remove-mggroupconversation
@@ -28,6 +28,24 @@ Remove-MgGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>] [-
 Delete navigation property conversations for groups
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgGroupConversation Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Groups
+Remove-MgGroupConversation -GroupId $groupId -ConversationId $conversationId
+```
+
+This example shows how to use the Remove-MgGroupConversation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Remove-MgGroupConversation Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Groups
+Remove-MgGroupConversation -GroupId $groupId -ConversationId $conversationId
+```
+
+This example shows how to use the Remove-MgGroupConversation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -156,7 +174,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

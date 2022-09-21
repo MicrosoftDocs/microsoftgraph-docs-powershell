@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupacceptedsenderbyref
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupAcceptedSenderByRef
 
 ## SYNOPSIS
-Get ref of acceptedSenders from groups
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\nMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgGroupAcceptedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <Int3
 ```
 
 ## DESCRIPTION
-Get ref of acceptedSenders from groups
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\nMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -95,7 +95,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

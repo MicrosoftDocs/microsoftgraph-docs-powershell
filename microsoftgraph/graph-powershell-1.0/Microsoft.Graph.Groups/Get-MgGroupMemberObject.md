@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupmemberobject
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupMemberObject
 
 ## SYNOPSIS
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ Get-MgGroupMemberObject -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action getMemberObjects
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ## EXAMPLES
 
@@ -172,11 +176,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Bxm9V4GroupsGroupIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Bxm9V4GroupsGroupIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SecurityEnabledOnly <Boolean?>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

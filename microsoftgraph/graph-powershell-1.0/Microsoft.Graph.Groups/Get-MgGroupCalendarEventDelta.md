@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupcalendareventdelta
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgGroupCalendarEventDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get a set of event resources that have been added, deleted, or updated in a **calendarView** (a range of events defined by start and end dates) of the user's primary calendar.
+Typically, synchronizing events in a **calendarView** in a local store entails a round of multiple **delta** function calls.
+The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
+This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
 
 ## SYNTAX
 
@@ -23,7 +26,10 @@ Get-MgGroupCalendarEventDelta -InputObject <IGroupsIdentity> [<CommonParameters>
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get a set of event resources that have been added, deleted, or updated in a **calendarView** (a range of events defined by start and end dates) of the user's primary calendar.
+Typically, synchronizing events in a **calendarView** in a local store entails a round of multiple **delta** function calls.
+The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
+This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
 
 ## EXAMPLES
 
@@ -78,7 +84,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

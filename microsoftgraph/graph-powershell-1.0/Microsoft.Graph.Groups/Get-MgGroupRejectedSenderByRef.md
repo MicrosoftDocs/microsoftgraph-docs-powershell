@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupRejectedSenderByRef
 
 ## SYNOPSIS
-Get ref of rejectedSenders from groups
+Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
+Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 
 ## SYNTAX
 
@@ -18,7 +19,8 @@ Get-MgGroupRejectedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <Int3
 ```
 
 ## DESCRIPTION
-Get ref of rejectedSenders from groups
+Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
+Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 
 ## EXAMPLES
 
@@ -34,7 +36,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -95,7 +97,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

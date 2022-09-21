@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/reset-mggroupunseencount
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Reset-MgGroupUnseenCount
 
 ## SYNOPSIS
-Invoke action resetUnseenCount
+Reset the unseenCount of all the posts that the current user has not seen since their last visit.
+Supported for Microsoft 365 groups only.
 
 ## SYNTAX
 
@@ -23,9 +24,19 @@ Reset-MgGroupUnseenCount -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Invoke action resetUnseenCount
+Reset the unseenCount of all the posts that the current user has not seen since their last visit.
+Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
+
+### Example 1: Using the Reset-MgGroupUnseenCount Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Groups
+Reset-MgGroupUnseenCount -GroupId $groupId
+```
+
+This example shows how to use the Reset-MgGroupUnseenCount Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -124,7 +135,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

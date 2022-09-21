@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupcalendarevent
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgForwardGroupCalendarEvent
 
 ## SYNOPSIS
-Invoke action forward
+This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This convenience is not available when forwarding from an Outlook.com account.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Invoke-MgForwardGroupCalendarEvent -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action forward
+This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
 
@@ -220,16 +224,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths154X2NnGroupsGroupIdCalendarEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths154X2NnGroupsGroupIdCalendarEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
+      - `[Address <String>]`: The email address of the person or entity.
+      - `[Name <String>]`: The display name of the person or entity.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -272,10 +276,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-TORECIPIENTS <IMicrosoftGraphRecipient\[]>: .
+TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of an entity instance.
-    - `[Name <String>]`: The display name of an entity instance.
+    - `[Address <String>]`: The email address of the person or entity.
+    - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
