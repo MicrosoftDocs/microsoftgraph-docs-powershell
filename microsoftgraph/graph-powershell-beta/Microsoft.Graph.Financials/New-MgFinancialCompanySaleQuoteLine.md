@@ -89,26 +89,6 @@ Create new navigation property to salesQuoteLines for financials
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -Account
 account
 To construct, please use Get-Help -Online and see NOTES section for ACCOUNT properties and create a hash table.
