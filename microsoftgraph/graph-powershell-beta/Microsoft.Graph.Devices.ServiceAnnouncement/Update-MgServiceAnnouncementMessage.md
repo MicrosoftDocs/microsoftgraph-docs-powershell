@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementmessage
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -AttachmentsArchiveInputFile
-Input File for AttachmentsArchive (The zip file of all attachments for a message.)
+Input File for AttachmentsArchive (The zip file that contains all attachments for a message.)
 
 ```yaml
 Type: String
@@ -443,7 +443,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTS <IMicrosoftGraphServiceAnnouncementAttachment\[]>: A collection of serviceAnnouncementAttachments.
+ATTACHMENTS <IMicrosoftGraphServiceAnnouncementAttachment[]>: A collection of serviceAnnouncementAttachments.
   - `[Id <String>]`: 
   - `[Content <Byte[]>]`: The attachment content.
   - `[ContentType <String>]`: 
@@ -451,12 +451,12 @@ ATTACHMENTS <IMicrosoftGraphServiceAnnouncementAttachment\[]>: A collection of s
   - `[Name <String>]`: 
   - `[Size <Int32?>]`: 
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphServiceUpdateMessage>`: serviceUpdateMessage
+BODYPARAMETER <IMicrosoftGraphServiceUpdateMessage>: serviceUpdateMessage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Details <IMicrosoftGraphKeyValuePair[]>]`: Additional details about service event. This property doesn't support filters.
     - `[Name <String>]`: Name for this key-value pair
@@ -474,7 +474,7 @@ BODYPARAMETER `<IMicrosoftGraphServiceUpdateMessage>`: serviceUpdateMessage
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Name <String>]`: 
     - `[Size <Int32?>]`: 
-  - `[AttachmentsArchive <Byte[]>]`: The zip file of all attachments for a message.
+  - `[AttachmentsArchive <Byte[]>]`: The zip file that contains all attachments for a message.
   - `[Body <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -491,17 +491,17 @@ BODYPARAMETER `<IMicrosoftGraphServiceUpdateMessage>`: serviceUpdateMessage
     - `[IsFavorited <Boolean?>]`: Indicates whether the user marked the message as favorite.
     - `[IsRead <Boolean?>]`: Indicates whether the user read the message.
 
-DETAILS <IMicrosoftGraphKeyValuePair\[]>: Additional details about service event. This property doesn't support filters.
+DETAILS <IMicrosoftGraphKeyValuePair[]>: Additional details about service event. This property doesn't support filters.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: key: id of serviceHealth
   - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
   - `[ServiceUpdateMessageId <String>]`: key: id of serviceUpdateMessage
 
-VIEWPOINT `<IMicrosoftGraphServiceUpdateMessageViewpoint>`: serviceUpdateMessageViewpoint
+VIEWPOINT <IMicrosoftGraphServiceUpdateMessageViewpoint>: serviceUpdateMessageViewpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsArchived <Boolean?>]`: Indicates whether the user archived the message.
   - `[IsFavorited <Boolean?>]`: Indicates whether the user marked the message as favorite.

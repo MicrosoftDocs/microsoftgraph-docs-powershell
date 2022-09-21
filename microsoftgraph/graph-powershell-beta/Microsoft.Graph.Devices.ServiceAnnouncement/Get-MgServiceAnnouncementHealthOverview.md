@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverview
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementHealthOverview
 
 ## SYNOPSIS
-Get healthOverviews from admin
+A collection of service health information for tenant.
+This property is a contained navigation property, it is nullable and readonly.
 
 ## SYNTAX
 
@@ -32,9 +33,46 @@ Get-MgServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnouncemen
 ```
 
 ## DESCRIPTION
-Get healthOverviews from admin
+A collection of service health information for tenant.
+This property is a contained navigation property, it is nullable and readonly.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgServiceAnnouncementHealthOverview Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+Get-MgServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId
+```
+
+This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgServiceAnnouncementHealthOverview Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+Get-MgServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues"
+```
+
+This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgServiceAnnouncementHealthOverview Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+Get-MgServiceAnnouncementHealthOverview
+```
+
+This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the Get-MgServiceAnnouncementHealthOverview Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+Get-MgServiceAnnouncementHealthOverview -ExpandProperty "issues"
+```
+
+This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +86,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +163,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -238,7 +276,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: key: id of serviceHealth
   - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
