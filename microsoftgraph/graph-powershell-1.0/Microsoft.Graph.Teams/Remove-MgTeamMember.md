@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mgteammember
@@ -28,6 +28,15 @@ Remove-MgTeamMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru
 Delete navigation property members for teams
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgTeamMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Remove-MgTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId
+```
+
+This example shows how to use the Remove-MgTeamMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -156,7 +165,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

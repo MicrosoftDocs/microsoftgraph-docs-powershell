@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/copy-mgteam
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Copy-MgTeam
 
 ## SYNOPSIS
-Invoke action clone
+Create a copy of a team.
+This operation also creates a copy of the corresponding group.\nYou can specify which parts of the team to clone: When tabs are cloned, they are put into an unconfigured state \n-- they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen.
+\n(If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.) Cloning is a long-running operation.\nAfter the POST clone returns, you need to GET the operation to see if it's 'running' or 'succeeded' or 'failed'.
+\nYou should continue to GET until the status is not 'running'.
+\nThe recommended delay between GETs is 5 seconds.
 
 ## SYNTAX
 
@@ -41,9 +45,29 @@ Copy-MgTeam -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action clone
+Create a copy of a team.
+This operation also creates a copy of the corresponding group.\nYou can specify which parts of the team to clone: When tabs are cloned, they are put into an unconfigured state \n-- they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen.
+\n(If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.) Cloning is a long-running operation.\nAfter the POST clone returns, you need to GET the operation to see if it's 'running' or 'succeeded' or 'failed'.
+\nYou should continue to GET until the status is not 'running'.
+\nThe recommended delay between GETs is 5 seconds.
 
 ## EXAMPLES
+
+### Example 1: Using the Copy-MgTeam Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	DisplayName = "Library Assist"
+	Description = "Self help community for library"
+	MailNickname = "libassist"
+	PartsToClone = "apps,tabs,settings,channels,members"
+	Visibility = "public"
+}
+Copy-MgTeam -TeamId $teamId -BodyParameter $params
+```
+
+This example shows how to use the Copy-MgTeam Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -264,7 +288,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Classification <String>]`: 
   - `[Description <String>]`: 
@@ -273,7 +297,7 @@ BODYPARAMETER `<IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyConten
   - `[PartsToClone <String>]`: clonableTeamParts
   - `[Visibility <String>]`: teamVisibilityType
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

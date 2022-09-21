@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshift
@@ -46,6 +46,36 @@ Update-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMi
 Update the navigation property openShifts in teams
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgTeamScheduleOpenShift Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
+	SharedOpenShift = @{
+		Notes = "Inventory Management"
+		OpenSlotCount = 5
+		DisplayName = "Field shift"
+		StartDateTime = [System.DateTime]::Parse("2018-10-04T00:58:45.340Z")
+		EndDateTime = [System.DateTime]::Parse("2018-10-04T09:50:45.332Z")
+		Theme = "white"
+		Activities = @(
+			@{
+				IsPaid = $true
+				StartDateTime = [System.DateTime]::Parse("2018-10-04T00:58:45.340Z")
+				EndDateTime = [System.DateTime]::Parse("2018-10-04T01:58:45.340Z")
+				Code = ""
+				DisplayName = "Lunch"
+			}
+		)
+	}
+	DraftOpenShift = $null
+}
+Update-MgTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgTeamScheduleOpenShift Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -301,9 +331,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOpenShift>`: openShift
+BODYPARAMETER <IMicrosoftGraphOpenShift>: openShift
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -312,7 +341,6 @@ BODYPARAMETER `<IMicrosoftGraphOpenShift>`: openShift
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -332,7 +360,7 @@ BODYPARAMETER `<IMicrosoftGraphOpenShift>`: openShift
   - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
   - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
 
-DRAFTOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
+DRAFTOPENSHIFT <IMicrosoftGraphOpenShiftItem>: openShiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Activities <IMicrosoftGraphShiftActivity[]>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required.
     - `[Code <String>]`: Customer defined code for the shiftActivity. Required.
@@ -348,7 +376,7 @@ DRAFTOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
   - `[Theme <String>]`: scheduleEntityTheme
   - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -387,7 +415,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -396,7 +424,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SHAREDOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
+SHAREDOPENSHIFT <IMicrosoftGraphOpenShiftItem>: openShiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Activities <IMicrosoftGraphShiftActivity[]>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required.
     - `[Code <String>]`: Customer defined code for the shiftActivity. Required.

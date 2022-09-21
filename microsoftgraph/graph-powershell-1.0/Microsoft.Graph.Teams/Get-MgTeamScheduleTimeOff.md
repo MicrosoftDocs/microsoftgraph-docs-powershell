@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoff
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamScheduleTimeOff
 
 ## SYNOPSIS
-Get timesOff from teams
+The instances of times off in the schedule.
 
 ## SYNTAX
 
@@ -30,9 +30,27 @@ Get-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-Property <String[]>] [
 ```
 
 ## DESCRIPTION
-Get timesOff from teams
+The instances of times off in the schedule.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgTeamScheduleTimeOff Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamScheduleTimeOff -TeamId $teamId -Filter "sharedTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and sharedTimeOff/endDateTime le 2019-03-18T00:00:00.000Z and draftTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and draftTimeOff/endDateTime le 2019-03-18T00:00:00.000Z"
+```
+
+This example shows how to use the Get-MgTeamScheduleTimeOff Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgTeamScheduleTimeOff Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamScheduleTimeOff -TeamId $teamId -TimeOffId $timeOffId
+```
+
+This example shows how to use the Get-MgTeamScheduleTimeOff Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -46,7 +64,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -108,7 +126,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -236,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

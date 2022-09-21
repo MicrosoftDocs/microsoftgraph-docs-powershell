@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleTimeOff
 
 ## SYNOPSIS
-Create new navigation property to timesOff for teams
+Create a new timeOff instance in a schedule.
 
 ## SYNTAX
 
@@ -41,9 +41,33 @@ New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create new navigation property to timesOff for teams
+Create a new timeOff instance in a schedule.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgTeamScheduleTimeOff Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	UserId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
+	SharedTimeOff = @{
+		TimeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
+		StartDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
+		EndDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		Theme = "white"
+	}
+	DraftTimeOff = @{
+		TimeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
+		StartDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
+		EndDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		Theme = "pink"
+	}
+}
+New-MgTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
+```
+
+This example shows how to use the New-MgTeamScheduleTimeOff Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -270,9 +294,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTimeOff>`: timeOff
+BODYPARAMETER <IMicrosoftGraphTimeOff>: timeOff
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -281,7 +304,6 @@ BODYPARAMETER `<IMicrosoftGraphTimeOff>`: timeOff
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[DraftTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -292,14 +314,14 @@ BODYPARAMETER `<IMicrosoftGraphTimeOff>`: timeOff
   - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
   - `[UserId <String>]`: ID of the user assigned to the timeOff. Required.
 
-DRAFTTIMEOFF `<IMicrosoftGraphTimeOffItem>`: timeOffItem
+DRAFTTIMEOFF <IMicrosoftGraphTimeOffItem>: timeOffItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EndDateTime <DateTime?>]`: 
   - `[StartDateTime <DateTime?>]`: 
   - `[Theme <String>]`: scheduleEntityTheme
   - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem. Required.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -338,7 +360,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -347,7 +369,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SHAREDTIMEOFF `<IMicrosoftGraphTimeOffItem>`: timeOffItem
+SHAREDTIMEOFF <IMicrosoftGraphTimeOffItem>: timeOffItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EndDateTime <DateTime?>]`: 
   - `[StartDateTime <DateTime?>]`: 

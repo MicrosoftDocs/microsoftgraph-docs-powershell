@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamscheduleswapshiftchangerequest
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecipientShiftId
-Shift ID for the recipient user with whom the request is to swap.
+ShiftId for the recipient user with whom the request is to swap.
 
 ```yaml
 Type: String
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecipientUserId
-User id of the recipient of the offer shift request.
+User ID of the recipient of the offer shift request.
 
 ```yaml
 Type: String
@@ -330,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -SenderShiftId
-User id of the sender of the offer shift request.
+User ID of the sender of the offer shift request.
 
 ```yaml
 Type: String
@@ -454,21 +454,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSwapShiftsChangeRequest>`: swapShiftsChangeRequest
+BODYPARAMETER <IMicrosoftGraphSwapShiftsChangeRequest>: swapShiftsChangeRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RecipientActionDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-  - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-  - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+  - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
+  - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionDateTime <DateTime?>]`: 
   - `[ManagerActionMessage <String>]`: 
-  - `[ManagerUserId <String>]`: 
-  - `[SenderDateTime <DateTime?>]`: 
   - `[SenderMessage <String>]`: 
-  - `[SenderUserId <String>]`: 
   - `[State <String>]`: scheduleChangeState
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -477,11 +471,10 @@ BODYPARAMETER `<IMicrosoftGraphSwapShiftsChangeRequest>`: swapShiftsChangeReques
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
-  - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+  - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -520,7 +513,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteaminstalledapp
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamInstalledApp
 
 ## SYNOPSIS
-Invoke action upgrade
+Upgrade an app installation within a chat.
 
 ## SYNTAX
 
@@ -24,9 +24,18 @@ Update-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Invoke action upgrade
+Upgrade an app installation within a chat.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgTeamInstalledApp Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Update-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
+```
+
+This example shows how to use the Update-MgTeamInstalledApp Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -140,7 +149,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

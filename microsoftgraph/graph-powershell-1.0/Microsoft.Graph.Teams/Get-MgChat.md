@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgchat
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgChat
 
 ## SYNOPSIS
-Get chat
+Retrieve a single chat (without its messages).
 
 ## SYNTAX
 
@@ -31,9 +31,45 @@ Get-MgChat -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-Get chat
+Retrieve a single chat (without its messages).
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgChat Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChat -ChatId $chatId -ExpandProperty "members"
+```
+
+This example shows how to use the Get-MgChat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgChat Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChat -ChatId $chatId
+```
+
+This example shows how to use the Get-MgChat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgChat Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChat -ChatId $chatId
+```
+
+This example shows how to use the Get-MgChat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the Get-MgChat Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChat -Sort "lastMessagePreview/createdDateTime desc"
+```
+
+This example shows how to use the Get-MgChat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -47,7 +83,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -139,7 +175,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -237,7 +273,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
