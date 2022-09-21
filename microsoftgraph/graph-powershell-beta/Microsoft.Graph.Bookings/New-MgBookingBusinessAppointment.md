@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBookingBusinessAppointment
 
 ## SYNOPSIS
-Create new navigation property to appointments for bookingBusinesses
+Create a new bookingAppointment for the specified bookingBusiness.
 
 ## SYNTAX
 
@@ -59,9 +59,162 @@ New-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appointments for bookingBusinesses
+Create a new bookingAppointment for the specified bookingBusiness.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgBookingBusinessAppointment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Bookings
+$params = @{
+	"@odata.type" = "#microsoft.graph.bookingAppointment"
+	CustomerEmailAddress = "jordanm@contoso.com"
+	CustomerLocation = @{
+		"@odata.type" = "#microsoft.graph.location"
+		Address = @{
+			"@odata.type" = "#microsoft.graph.physicalAddress"
+			City = "Buffalo"
+			CountryOrRegion = "USA"
+			PostalCode = "98052"
+			PostOfficeBox = $null
+			State = "NY"
+			Street = "123 First Avenue"
+			"Type@odata.type" = "#microsoft.graph.physicalAddressType"
+			Type = $null
+		}
+		Coordinates = $null
+		DisplayName = "Customer"
+		LocationEmailAddress = $null
+		"LocationType@odata.type" = "#microsoft.graph.locationType"
+		LocationType = $null
+		LocationUri = $null
+		UniqueId = $null
+		"UniqueIdType@odata.type" = "#microsoft.graph.locationUniqueIdType"
+		UniqueIdType = $null
+	}
+	CustomerName = "Jordan Miller"
+	CustomerNotes = "Please be on time."
+	CustomerPhone = "213-555-0199"
+	CustomerTimeZone = "America/Chicago"
+	SmsNotificationsEnabled = $true
+	End = @{
+		"@odata.type" = "#microsoft.graph.dateTimeTimeZone"
+		DateTime = "2018-05-01T12:30:00.0000000+00:00"
+		TimeZone = "UTC"
+	}
+	InvoiceAmount = 10
+	InvoiceDate = @{
+		"@odata.type" = "#microsoft.graph.dateTimeTimeZone"
+		DateTime = "2018-05-01T12:30:00.0000000+00:00"
+		TimeZone = "UTC"
+	}
+	InvoiceId = "1001"
+	"InvoiceStatus@odata.type" = "#microsoft.graph.bookingInvoiceStatus"
+	InvoiceStatus = "open"
+	InvoiceUrl = "theInvoiceUrl"
+	IsLocationOnline = $true
+	OptOutOfCustomerEmail = $false
+	AnonymousJoinWebUrl = $null
+	PostBuffer = "PT10M"
+	PreBuffer = "PT5M"
+	Price = 10
+	"PriceType@odata.type" = "#microsoft.graph.bookingPriceType"
+	PriceType = "fixedPrice"
+	"Reminders@odata.type" = "#Collection(microsoft.graph.bookingReminder)"
+	Reminders = @(
+		@{
+			"@odata.type" = "#microsoft.graph.bookingReminder"
+			Message = "This service is tomorrow"
+			Offset = "P1D"
+			"Recipients@odata.type" = "#microsoft.graph.bookingReminderRecipients"
+			Recipients = "allAttendees"
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.bookingReminder"
+			Message = "Please be available to enjoy your lunch service."
+			Offset = "PT1H"
+			"Recipients@odata.type" = "#microsoft.graph.bookingReminderRecipients"
+			Recipients = "customer"
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.bookingReminder"
+			Message = "Please check traffic for next cater."
+			Offset = "PT2H"
+			"Recipients@odata.type" = "#microsoft.graph.bookingReminderRecipients"
+			Recipients = "staff"
+		}
+	)
+	ServiceId = "57da6774-a087-4d69-b0e6-6fb82c339976"
+	ServiceLocation = @{
+		"@odata.type" = "#microsoft.graph.location"
+		Address = @{
+			"@odata.type" = "#microsoft.graph.physicalAddress"
+			City = "Buffalo"
+			CountryOrRegion = "USA"
+			PostalCode = "98052"
+			PostOfficeBox = $null
+			State = "NY"
+			Street = "123 First Avenue"
+			"Type@odata.type" = "#microsoft.graph.physicalAddressType"
+			Type = $null
+		}
+		Coordinates = $null
+		DisplayName = "Customer location"
+		LocationEmailAddress = $null
+		"LocationType@odata.type" = "#microsoft.graph.locationType"
+		LocationType = $null
+		LocationUri = $null
+		UniqueId = $null
+		"UniqueIdType@odata.type" = "#microsoft.graph.locationUniqueIdType"
+		UniqueIdType = $null
+	}
+	ServiceName = "Catered bento"
+	ServiceNotes = "Customer requires punctual service."
+	Start = @{
+		"@odata.type" = "#microsoft.graph.dateTimeTimeZone"
+		DateTime = "2018-05-01T12:00:00.0000000+00:00"
+		TimeZone = "UTC"
+	}
+	MaximumAttendeesCount = 5
+	FilledAttendeesCount = 1
+	Customers = @(
+		@{
+			"@odata.type" = "#microsoft.graph.bookingCustomerInformation"
+			CustomerId = "7ed53fa5-9ef2-4f2f-975b-27447440bc09"
+			Name = "Jordan Miller"
+			EmailAddress = "jordanm@contoso.com"
+			Phone = "213-555-0199"
+			Notes = $null
+			Location = @{
+				"@odata.type" = "#microsoft.graph.location"
+				DisplayName = "Customer"
+				LocationEmailAddress = $null
+				LocationUri = ""
+				LocationType = $null
+				UniqueId = $null
+				UniqueIdType = $null
+				Address = @{
+					"@odata.type" = "#microsoft.graph.physicalAddress"
+					Type = "home"
+					PostOfficeBox = ""
+					Street = ""
+					City = ""
+					State = ""
+					CountryOrRegion = ""
+					PostalCode = ""
+				}
+			}
+			TimeZone = "America/Chicago"
+			CustomQuestionAnswers = @(
+			)
+		}
+	)
+}
+New-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BodyParameter $params
+```
+
+This example shows how to use the New-MgBookingBusinessAppointment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -311,7 +464,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -755,7 +908,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appointment of a service by a customer in a business.
+BODYPARAMETER <IMicrosoftGraphBookingAppointment>: Represents a booked appointment of a service by a customer in a business.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
@@ -791,12 +944,10 @@ BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appoint
   - `[CustomerPhone <String>]`: The customer's phone number.
   - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
-  - `[Duration <TimeSpan?>]`: The length of the appointment, denoted in ISO8601 format.
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-  - `[FilledAttendeesCount <Int32?>]`: The current number of customers in the appointment.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
   - `[InvoiceAmount <Double?>]`: The billed amount on the invoice.
   - `[InvoiceDate <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[InvoiceId <String>]`: The ID of the invoice.
@@ -824,7 +975,7 @@ BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appoint
   - `[StaffMemberIds <String[]>]`: The ID of each bookingStaffMember who is scheduled in this appointment.
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-CUSTOMERLOCATION `<IMicrosoftGraphLocation>`: location
+CUSTOMERLOCATION <IMicrosoftGraphLocation>: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -849,12 +1000,12 @@ CUSTOMERLOCATION `<IMicrosoftGraphLocation>`: location
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-END `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+END <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
@@ -865,17 +1016,17 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: key: id of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: key: id of bookingStaffMember
 
-INVOICEDATE `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+INVOICEDATE <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
-REMINDERS <IMicrosoftGraphBookingReminder\[]>: The collection of customer reminders sent for this appointment. The value of this property is available only when reading this bookingAppointment by its ID.
+REMINDERS <IMicrosoftGraphBookingReminder[]>: The collection of customer reminders sent for this appointment. The value of this property is available only when reading this bookingAppointment by its ID.
   - `[Message <String>]`: The message in the reminder.
   - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent. It's denoted in ISO 8601 format.
   - `[Recipients <String>]`: 
 
-SERVICELOCATION `<IMicrosoftGraphLocation>`: location
+SERVICELOCATION <IMicrosoftGraphLocation>: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -900,10 +1051,10 @@ SERVICELOCATION `<IMicrosoftGraphLocation>`: location
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+START <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
 
