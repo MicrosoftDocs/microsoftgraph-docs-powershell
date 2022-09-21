@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachment
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementMessageAttachment
 
 ## SYNOPSIS
-Get attachments from admin
+A collection of serviceAnnouncementAttachments.
 
 ## SYNTAX
 
@@ -32,9 +32,27 @@ Get-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnounce
 ```
 
 ## DESCRIPTION
-Get attachments from admin
+A collection of serviceAnnouncementAttachments.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgServiceAnnouncementMessageAttachment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
+```
+
+This example shows how to use the Get-MgServiceAnnouncementMessageAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgServiceAnnouncementMessageAttachment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
+```
+
+This example shows how to use the Get-MgServiceAnnouncementMessageAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +66,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +143,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +271,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: key: id of serviceHealth
   - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
