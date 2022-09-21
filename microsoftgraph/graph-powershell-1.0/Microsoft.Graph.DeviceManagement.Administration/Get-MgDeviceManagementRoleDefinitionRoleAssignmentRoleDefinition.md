@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementroledefinitionroleassignmentroledefinition
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition
 
 ## SYNOPSIS
-Get roleDefinition from deviceManagement
+Role definition this assignment is part of.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition
 ```
 
 ## DESCRIPTION
-Get roleDefinition from deviceManagement
+Role definition this assignment is part of.
 
 ## EXAMPLES
 
@@ -126,7 +126,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
