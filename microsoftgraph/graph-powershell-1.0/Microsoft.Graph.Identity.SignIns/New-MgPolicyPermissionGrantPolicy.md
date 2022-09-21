@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicy
@@ -231,7 +231,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPermissionGrantPolicy>: permissionGrantPolicy
+BODYPARAMETER `<IMicrosoftGraphPermissionGrantPolicy>`: permissionGrantPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
@@ -249,7 +249,7 @@ BODYPARAMETER <IMicrosoftGraphPermissionGrantPolicy>: permissionGrantPolicy
     - `[ResourceApplication <String>]`: The appId of the resource application (e.g. the API) for which a permission is being granted, or any to match with any resource application or API. Default is any.
   - `[Includes <IMicrosoftGraphPermissionGrantConditionSet[]>]`: Condition sets which are included in this permission grant policy. Automatically expanded on GET.
 
-EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet[]>: Condition sets which are excluded in this permission grant policy. Automatically expanded on GET.
+EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet\[]>: Condition sets which are excluded in this permission grant policy. Automatically expanded on GET.
   - `[Id <String>]`: 
   - `[ClientApplicationIds <String[]>]`: A list of appId values for the client applications to match with, or a list with the single value all to match any client application. Default is the single value all.
   - `[ClientApplicationPublisherIds <String[]>]`: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher. Default is the single value all.
@@ -260,7 +260,7 @@ EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet[]>: Condition sets which ar
   - `[Permissions <String[]>]`: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission. The id of delegated permissions can be found in the oauth2PermissionScopes property of the API's **servicePrincipal** object. The id of application permissions can be found in the appRoles property of the API's **servicePrincipal** object. The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's **servicePrincipal** object. Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g. the API) for which a permission is being granted, or any to match with any resource application or API. Default is any.
 
-INCLUDES <IMicrosoftGraphPermissionGrantConditionSet[]>: Condition sets which are included in this permission grant policy. Automatically expanded on GET.
+INCLUDES <IMicrosoftGraphPermissionGrantConditionSet\[]>: Condition sets which are included in this permission grant policy. Automatically expanded on GET.
   - `[Id <String>]`: 
   - `[ClientApplicationIds <String[]>]`: A list of appId values for the client applications to match with, or a list with the single value all to match any client application. Default is the single value all.
   - `[ClientApplicationPublisherIds <String[]>]`: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher. Default is the single value all.
