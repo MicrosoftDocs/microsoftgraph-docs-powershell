@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkdevice
@@ -430,7 +430,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVITY `<IMicrosoftGraphTeamworkDeviceActivity>`: teamworkDeviceActivity
+ACTIVITY <IMicrosoftGraphTeamworkDeviceActivity>: teamworkDeviceActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ActivePeripherals <IMicrosoftGraphTeamworkActivePeripherals>]`: teamworkActivePeripherals
@@ -457,7 +457,7 @@ ACTIVITY `<IMicrosoftGraphTeamworkDeviceActivity>`: teamworkDeviceActivity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time when the device activity detail was last modified.
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkDevice>`: teamworkDevice
+BODYPARAMETER <IMicrosoftGraphTeamworkDevice>: teamworkDevice
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Activity <IMicrosoftGraphTeamworkDeviceActivity>]`: teamworkDeviceActivity
@@ -668,7 +668,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamworkDevice>`: teamworkDevice
     - `[StartedDateTime <DateTime?>]`: Time at which the operation was started.
     - `[Status <String>]`: The current status of the async operation, for example, Queued, Scheduled, InProgress,  Successful, Cancelled, and Failed.
 
-CONFIGURATION `<IMicrosoftGraphTeamworkDeviceConfiguration>`: teamworkDeviceConfiguration
+CONFIGURATION <IMicrosoftGraphTeamworkDeviceConfiguration>: teamworkDeviceConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>]`: teamworkCameraConfiguration
@@ -782,7 +782,7 @@ CONFIGURATION `<IMicrosoftGraphTeamworkDeviceConfiguration>`: teamworkDeviceConf
       - `[IsHideMeetingNamesEnabled <Boolean?>]`: True if hiding meeting names is enabled.
       - `[IsSendLogsAndFeedbackEnabled <Boolean?>]`: True if sending logs and feedback is enabled.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -791,13 +791,13 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CURRENTUSER `<IMicrosoftGraphTeamworkUserIdentity>`: teamworkUserIdentity
+CURRENTUSER <IMicrosoftGraphTeamworkUserIdentity>: teamworkUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
-HARDWAREDETAIL `<IMicrosoftGraphTeamworkHardwareDetail>`: teamworkHardwareDetail
+HARDWAREDETAIL <IMicrosoftGraphTeamworkHardwareDetail>: teamworkHardwareDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MacAddresses <String[]>]`: MAC address.
   - `[Manufacturer <String>]`: Device manufacturer.
@@ -805,7 +805,7 @@ HARDWAREDETAIL `<IMicrosoftGraphTeamworkHardwareDetail>`: teamworkHardwareDetail
   - `[SerialNumber <String>]`: Device serial number.
   - `[UniqueId <String>]`: The unique identifier for the device.
 
-HEALTH `<IMicrosoftGraphTeamworkDeviceHealth>`: teamworkDeviceHealth
+HEALTH <IMicrosoftGraphTeamworkDeviceHealth>: teamworkDeviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Connection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
@@ -862,7 +862,7 @@ HEALTH `<IMicrosoftGraphTeamworkDeviceHealth>`: teamworkDeviceHealth
     - `[PartnerAgentSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]`: teamworkSoftwareUpdateStatus
     - `[TeamsClientSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]`: teamworkSoftwareUpdateStatus
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -901,7 +901,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -910,7 +910,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-OPERATIONS <IMicrosoftGraphTeamworkDeviceOperation\[]>: The async operations on the device.
+OPERATIONS <IMicrosoftGraphTeamworkDeviceOperation[]>: The async operations on the device.
   - `[Id <String>]`: 
   - `[CompletedDateTime <DateTime?>]`: Time at which the operation reached a final state (for example, Successful, Failed, and Cancelled).
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamowner
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgGroupTeamOwner
 
 ## SYNOPSIS
-Get owners from groups
+The list of this team's owners.
+Currently, when creating a team using application permissions, exactly one owner must be specified.
+When using user delegated permissions, no owner can be specified (the current user is the owner).
+Owner must be specified as an object ID (GUID), not a UPN.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgGroupTeamOwner -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get owners from groups
+The list of this team's owners.
+Currently, when creating a team using application permissions, exactly one owner must be specified.
+When using user delegated permissions, no owner can be specified (the current user is the owner).
+Owner must be specified as an object ID (GUID), not a UPN.
 
 ## EXAMPLES
 
@@ -48,7 +54,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -140,7 +146,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -253,7 +259,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

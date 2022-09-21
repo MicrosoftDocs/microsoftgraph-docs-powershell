@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleShift
 
 ## SYNOPSIS
-Create new navigation property to shifts for teams
+Create a new shift instance in a schedule.
 
 ## SYNTAX
 
@@ -45,9 +45,55 @@ New-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to shifts for teams
+Create a new shift instance in a schedule.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgTeamScheduleShift Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	Id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
+	UserId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
+	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
+	SharedShift = @{
+		DisplayName = "Day shift"
+		Notes = "Please do inventory as part of your shift."
+		StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+		EndDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
+		Theme = "blue"
+		Activities = @(
+			@{
+				IsPaid = $true
+				StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+				EndDateTime = [System.DateTime]::Parse("2019-03-11T15:15:00Z")
+				Code = ""
+				DisplayName = "Lunch"
+			}
+		)
+	}
+	DraftShift = @{
+		DisplayName = "Day shift"
+		Notes = "Please do inventory as part of your shift."
+		StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+		EndDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
+		Theme = "blue"
+		Activities = @(
+			@{
+				IsPaid = $true
+				StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+				EndDateTime = [System.DateTime]::Parse("2019-03-11T15:30:00Z")
+				Code = ""
+				DisplayName = "Lunch"
+			}
+		)
+	}
+}
+New-MgTeamScheduleShift -TeamId $teamId -BodyParameter $params
+```
+
+This example shows how to use the New-MgTeamScheduleShift Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -321,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphShift1>`: shift
+BODYPARAMETER <IMicrosoftGraphShift1>: shift
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -331,9 +377,7 @@ BODYPARAMETER `<IMicrosoftGraphShift1>`: shift
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -354,7 +398,7 @@ BODYPARAMETER `<IMicrosoftGraphShift1>`: shift
   - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
   - `[UserId <String>]`: ID of the user assigned to the shift. Required.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -363,7 +407,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DRAFTSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
+DRAFTSHIFT <IMicrosoftGraphShiftItem>: shiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EndDateTime <DateTime?>]`: 
   - `[StartDateTime <DateTime?>]`: 
@@ -378,7 +422,7 @@ DRAFTSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
   - `[DisplayName <String>]`: The shift label of the shiftItem.
   - `[Notes <String>]`: The shift notes for the shiftItem.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -417,7 +461,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -426,7 +470,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SHAREDSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
+SHAREDSHIFT <IMicrosoftGraphShiftItem>: shiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EndDateTime <DateTime?>]`: 
   - `[StartDateTime <DateTime?>]`: 
@@ -440,7 +484,5 @@ SHAREDSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
     - `[Theme <String>]`: scheduleEntityTheme
   - `[DisplayName <String>]`: The shift label of the shiftItem.
   - `[Notes <String>]`: The shift notes for the shiftItem.
-
-## RELATED LINKS
 
 ## RELATED LINKS

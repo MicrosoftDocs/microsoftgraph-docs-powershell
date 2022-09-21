@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgchattab
@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgChatTab
 
 ## SYNOPSIS
-Create new navigation property to tabs for chats
+Add (pin) a tab to the specified chat.
+\nThe corresponding app must already be installed in the chat.
 
 ## SYNTAX
 
@@ -41,9 +42,29 @@ New-MgChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeams
 ```
 
 ## DESCRIPTION
-Create new navigation property to tabs for chats
+Add (pin) a tab to the specified chat.
+\nThe corresponding app must already be installed in the chat.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgChatTab Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	DisplayName = "My Contoso Tab"
+	"TeamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8"
+	Configuration = @{
+		EntityId = "2DCA2E6C7A10415CAF6B8AB6661B3154"
+		ContentUrl = "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView"
+		WebsiteUrl = "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154"
+		RemoveUrl = "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
+	}
+}
+New-MgChatTab -ChatId $chatId -BodyParameter $params
+```
+
+This example shows how to use the New-MgChatTab Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -282,7 +303,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamsTab1>`: teamsTab
+BODYPARAMETER <IMicrosoftGraphTeamsTab1>: teamsTab
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Configuration <IMicrosoftGraphTeamsTabConfiguration>]`: teamsTabConfiguration
@@ -311,7 +332,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamsTab1>`: teamsTab
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: 
           - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-          - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+          - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
         - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -335,14 +356,14 @@ BODYPARAMETER `<IMicrosoftGraphTeamsTab1>`: teamsTab
   - `[TeamsAppId <String>]`: 
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
 
-CONFIGURATION `<IMicrosoftGraphTeamsTabConfiguration>`: teamsTabConfiguration
+CONFIGURATION <IMicrosoftGraphTeamsTabConfiguration>: teamsTabConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentUrl <String>]`: Url used for rendering tab contents in Teams. Required.
   - `[EntityId <String>]`: Identifier for the entity hosted by the tab provider.
   - `[RemoveUrl <String>]`: Url called by Teams client when a Tab is removed using the Teams Client.
   - `[WebsiteUrl <String>]`: Url for showing tab contents outside of Teams.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -381,7 +402,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
+TEAMSAPP <IMicrosoftGraphTeamsApp>: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition1[]>]`: The details for each version of the app.
@@ -398,7 +419,7 @@ TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: 
         - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-        - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+        - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
       - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

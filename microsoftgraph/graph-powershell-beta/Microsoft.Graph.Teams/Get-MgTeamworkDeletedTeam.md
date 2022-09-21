@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteam
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkDeletedTeam
 
 ## SYNOPSIS
-Get deletedTeams from teamwork
+A collection of deleted teams.
 
 ## SYNTAX
 
@@ -32,9 +32,18 @@ Get-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get deletedTeams from teamwork
+A collection of deleted teams.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgTeamworkDeletedTeam Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamworkDeletedTeam
+```
+
+This example shows how to use the Get-MgTeamworkDeletedTeam Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -48,7 +57,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -140,7 +149,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -238,7 +247,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

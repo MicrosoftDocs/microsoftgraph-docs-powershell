@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamchanneltabteamapp
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamChannelTabTeamApp
 
 ## SYNOPSIS
-Get teamsApp from groups
+The application that is linked to the tab.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgGroupTeamChannelTabTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get teamsApp from groups
+The application that is linked to the tab.
 
 ## EXAMPLES
 
@@ -140,7 +140,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

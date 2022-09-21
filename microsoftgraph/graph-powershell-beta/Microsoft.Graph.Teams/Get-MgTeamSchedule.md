@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamschedule
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgTeamSchedule
 
 ## SYNOPSIS
-Get schedule from teams
+Retrieve the properties and relationships of a schedule object.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\nWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+During schedule provisioning, clients can use the GET method to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.
+If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
+Clients can also inspect the configuration of the schedule.
 
 ## SYNTAX
 
@@ -24,9 +28,22 @@ Get-MgTeamSchedule -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get schedule from teams
+Retrieve the properties and relationships of a schedule object.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\nWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+During schedule provisioning, clients can use the GET method to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.
+If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
+Clients can also inspect the configuration of the schedule.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgTeamSchedule Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamSchedule -TeamId $teamId
+```
+
+This example shows how to use the Get-MgTeamSchedule Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -109,7 +126,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

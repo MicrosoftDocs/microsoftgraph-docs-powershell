@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamchannelmember
@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgTeamChannelMember
 
 ## SYNOPSIS
-Create new navigation property to members for teams
+Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ## SYNTAX
 
@@ -39,9 +40,104 @@ New-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for teams
+Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgTeamChannelMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+	Roles = @(
+		"owner"
+	)
+	"User@odata.bind" = "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+}
+New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+```
+
+This example shows how to use the New-MgTeamChannelMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the New-MgTeamChannelMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+	Roles = @(
+		"owner"
+	)
+	"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+}
+New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+```
+
+This example shows how to use the New-MgTeamChannelMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgTeamChannelMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+	Roles = @(
+		"owner"
+	)
+	"User@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+}
+New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+```
+
+This example shows how to use the New-MgTeamChannelMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the New-MgTeamChannelMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+	Roles = @(
+	)
+	"User@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+}
+New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+```
+
+This example shows how to use the New-MgTeamChannelMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Using the New-MgTeamChannelMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+	Roles = @(
+	)
+	"User@odata.bind" = "https://graph.microsoft.com/beta/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4"
+}
+New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+```
+
+This example shows how to use the New-MgTeamChannelMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 6: Using the New-MgTeamChannelMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+	Roles = @(
+	)
+	"User@odata.bind" = "https://graph.microsoft.com/beta/users/bc3598dd-cce4-4742-ae15-173429951408"
+	TenantId = "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
+}
+New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+```
+
+This example shows how to use the New-MgTeamChannelMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -236,14 +332,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphConversationMember>`: conversationMember
+BODYPARAMETER <IMicrosoftGraphConversationMember>: conversationMember
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the user.
   - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

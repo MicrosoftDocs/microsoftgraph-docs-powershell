@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Create new navigation property to workforceIntegrations for teamwork
+Create a new workforceIntegration object.
 
 ## SYNTAX
 
@@ -28,9 +28,29 @@ New-MgTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceInteg
 ```
 
 ## DESCRIPTION
-Create new navigation property to workforceIntegrations for teamwork
+Create a new workforceIntegration object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgTeamworkWorkforceIntegration Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	DisplayName = "displayName-value"
+	ApiVersion = 99
+	Encryption = @{
+		Protocol = "protocol-value"
+		Secret = "secret-value"
+	}
+	IsActive = $true
+	Url = "url-value"
+	Supports = "supports-value"
+}
+New-MgTeamworkWorkforceIntegration -BodyParameter $params
+```
+
+This example shows how to use the New-MgTeamworkWorkforceIntegration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -315,7 +335,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration1>`: workforceIntegration
+BODYPARAMETER <IMicrosoftGraphWorkforceIntegration1>: workforceIntegration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -325,9 +345,7 @@ BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration1>`: workforceIntegration
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
   - `[ApiVersion <Int32?>]`: API version for the call back URL. Start with 1.
   - `[DisplayName <String>]`: Name of the workforce integration.
@@ -341,7 +359,7 @@ BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration1>`: workforceIntegration
   - `[Supports <String>]`: 
   - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -350,12 +368,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-ENCRYPTION `<IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
+ENCRYPTION <IMicrosoftGraphWorkforceIntegrationEncryption>: workforceIntegrationEncryption
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
   - `[Secret <String>]`: Encryption shared secret.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Invoke-MgUnarchiveTeam
 
 ## SYNOPSIS
-Invoke action unarchive
+Restore an archived team.
+This restores users' ability to send messages and edit the team, abiding by tenant and team settings.
+Teams are archived using the archive API.
+Unarchiving is an async operation.
+A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
 ## SYNTAX
 
@@ -23,9 +27,22 @@ Invoke-MgUnarchiveTeam -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Con
 ```
 
 ## DESCRIPTION
-Invoke action unarchive
+Restore an archived team.
+This restores users' ability to send messages and edit the team, abiding by tenant and team settings.
+Teams are archived using the archive API.
+Unarchiving is an async operation.
+A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgUnarchiveTeam Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Invoke-MgUnarchiveTeam -TeamId $teamId
+```
+
+This example shows how to use the Invoke-MgUnarchiveTeam Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -124,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

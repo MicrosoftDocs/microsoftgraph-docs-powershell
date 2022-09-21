@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamtag
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamTag
 
 ## SYNOPSIS
-Create new navigation property to tags for teams
+Create a standard tag for members in the team.
 
 ## SYNTAX
 
@@ -39,9 +39,29 @@ New-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamw
 ```
 
 ## DESCRIPTION
-Create new navigation property to tags for teams
+Create a standard tag for members in the team.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgTeamTag Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	DisplayName = "Finance"
+	Members = @(
+		@{
+			UserId = "92f6952f-61ca-4a94-8910-508a240bc167"
+		}
+		@{
+			UserId = "085d800c-b86b-4bfc-a857-9371ad1caf29"
+		}
+	)
+}
+New-MgTeamTag -TeamId $teamId -BodyParameter $params
+```
+
+This example shows how to use the New-MgTeamTag Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -275,7 +295,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkTag>`: teamworkTag
+BODYPARAMETER <IMicrosoftGraphTeamworkTag>: teamworkTag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Description <String>]`: Tag description as it will appear to the user in Microsoft Teams.
@@ -289,7 +309,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamworkTag>`: teamworkTag
   - `[TagType <String>]`: teamworkTagType
   - `[TeamId <String>]`: ID of the team in which the tag is defined.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -328,7 +348,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-MEMBERS <IMicrosoftGraphTeamworkTagMember\[]>: Users assigned to the tag.
+MEMBERS <IMicrosoftGraphTeamworkTagMember[]>: Users assigned to the tag.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The member's display name.
   - `[TenantId <String>]`: 

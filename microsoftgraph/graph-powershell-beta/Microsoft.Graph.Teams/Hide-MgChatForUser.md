@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/hide-mgchatforuser
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Hide-MgChatForUser
 
 ## SYNOPSIS
-Invoke action hideForUser
+Hide a chat for a user.
 
 ## SYNTAX
 
@@ -39,9 +39,24 @@ Hide-MgChatForUser -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action hideForUser
+Hide a chat for a user.
 
 ## EXAMPLES
+
+### Example 1: Using the Hide-MgChatForUser Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	User = @{
+		Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
+	}
+	TenantId = "2a690434-97d9-4eed-83a6-f5f13600199a"
+}
+Hide-MgChatForUser -ChatId $chatId -BodyParameter $params
+```
+
+This example shows how to use the Hide-MgChatForUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -203,7 +218,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TenantId <String>]`: 
   - `[User <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
@@ -212,7 +227,7 @@ BODYPARAMETER `<IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbody
     - `[Id <String>]`: Unique identifier for the identity.
     - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -251,7 +266,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-USER `<IMicrosoftGraphTeamworkUserIdentity>`: teamworkUserIdentity
+USER <IMicrosoftGraphTeamworkUserIdentity>: teamworkUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mguserjoinedteam
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserJoinedTeam
 
 ## SYNOPSIS
-Get joinedTeams from users
+Get the teams in Microsoft Teams that the user is a direct member of.
 
 ## SYNTAX
 
@@ -19,9 +19,19 @@ Get-MgUserJoinedTeam -UserId <String> [-ExpandProperty <String[]>] [-Filter <Str
 ```
 
 ## DESCRIPTION
-Get joinedTeams from users
+Get the teams in Microsoft Teams that the user is a direct member of.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserJoinedTeam Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+# A UPN can also be used as -UserId.
+Get-MgUserJoinedTeam -UserId $userId
+```
+
+This example shows how to use the Get-MgUserJoinedTeam Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -35,7 +45,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -96,7 +106,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

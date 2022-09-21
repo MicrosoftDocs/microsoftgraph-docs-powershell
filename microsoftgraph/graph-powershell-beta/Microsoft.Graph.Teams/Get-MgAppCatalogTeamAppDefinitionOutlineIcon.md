@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitionoutlineicon
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgAppCatalogTeamAppDefinitionOutlineIcon
 
 ## SYNOPSIS
-Get outlineIcon from appCatalogs
+Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## SYNTAX
 
@@ -25,9 +25,36 @@ Get-MgAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get outlineIcon from appCatalogs
+Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+```
+
+This example shows how to use the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+```
+
+This example shows how to use the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId -OutFile $outFileId
+```
+
+This example shows how to use the Get-MgAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -125,7 +152,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

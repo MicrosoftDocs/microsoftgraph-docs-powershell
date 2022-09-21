@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage
@@ -58,6 +58,435 @@ Update-MgTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 Update the navigation property messages in teams
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgTeamChannelMessage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	PolicyViolation = @{
+		PolicyTip = @{
+			GeneralText = "This item has been blocked by the administrator."
+			ComplianceUrl = "https://contoso.com/dlp-policy-page"
+			MatchedConditionDescriptions = @(
+				"Credit Card Number"
+			)
+		}
+		VerdictDetails = "AllowOverrideWithoutJustification,AllowFalsePositiveOverride"
+		DlpAction = "BlockAccess"
+	}
+}
+Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgTeamChannelMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Update-MgTeamChannelMessage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	MessageType = "message"
+	Subject = $null
+	Summary = $null
+	Importance = "normal"
+	Locale = "en-us"
+	From = @{
+		Application = $null
+		Device = $null
+		User = @{
+			Id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
+			DisplayName = "Sumit Gupta"
+			UserIdentityType = "aadUser"
+		}
+		Conversation = $null
+	}
+	Body = @{
+		ContentType = "text"
+		Content = "Edit text only"
+	}
+	Attachments = @(
+	)
+	Mentions = @(
+	)
+	Reactions = @(
+	)
+}
+Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgTeamChannelMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Update-MgTeamChannelMessage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	MessageType = "message"
+	DeletedDateTime = $null
+	Subject = $null
+	Summary = $null
+	Importance = "normal"
+	Locale = "en-us"
+	From = @{
+		Application = $null
+		Device = $null
+		Conversation = $null
+		User = @{
+			Id = "6b3f3c54-d09c-4fdd-b146-9b514a8a4f40"
+			DisplayName = "Sumit Gupta"
+			UserIdentityType = "aadUser"
+		}
+	}
+	Body = @{
+		ContentType = "html"
+		Content = "<div><div>
+<div>
+<div>
+<div>
+<div><at id="0">Raghav</at><at id="1">TestGlobalBot</at> YEAH"
+	}
+	Attachments = @(
+	)
+	Mentions = @(
+		@{
+			Id = 0
+			MentionText = "Raghav"
+			Mentioned = @{
+				Application = $null
+				Device = $null
+				Conversation = $null
+				User = @{
+					Id = "f1b66449-b46d-49b0-9c3c-53c10234c818e"
+					DisplayName = "Raghav Mankad"
+					UserIdentityType = "aadUser"
+				}
+			}
+		}
+		@{
+			Id = 1
+			MentionText = "TestGlobalBot"
+			Mentioned = @{
+				Application = @{
+					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					DisplayName = "TestGlobalBot"
+					ApplicationIdentityType = "bot"
+				}
+				Device = $null
+				Conversation = $null
+				User = $null
+			}
+		}
+	)
+	Reactions = @(
+	)
+}
+Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgTeamChannelMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the Update-MgTeamChannelMessage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	MessageType = "message"
+	Subject = $null
+	Summary = $null
+	Importance = "normal"
+	Locale = "en-us"
+	From = @{
+		Application = $null
+		Device = $null
+		User = @{
+			Id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
+			DisplayName = "Sumit Gupta"
+			UserIdentityType = "aadUser"
+		}
+		Conversation = $null
+	}
+	Body = @{
+		ContentType = "html"
+		Content = "<p><em>text</em></p><attachment id="e8f78756199240b88448ae0fc6db112d"></attachment><attachment id="638464e32834471ea202007da60a5ae6"></attachment>"
+	}
+	Attachments = @(
+		@{
+			Id = "e8f78756199240b88448ae0fc6db112d"
+			ContentType = "application/vnd.microsoft.card.hero"
+			ContentUrl = $null
+			Content = "{
+  "title": "*title*",
+  "subtitle": "*subtitle*",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "images": [
+    {
+      "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
+    }
+  ],
+  "buttons": [
+    {
+      "type": "openUrl",
+      "image": "https://urlp.asm.skype.com/v1/url/content?url=https%3a%2f%2fcdn2.iconfinder.com%2fdata%2ficons%2fsocial-icons-33%2f128%2fTrello-128.png",
+      "title": "😃😃 click me 😃😃",
+      "value": "http://microsoft.com"
+    },
+    {
+      "type": "imback",
+      "title": "&i am back& <>= \"",
+      "value": "&i am back& <>= \""
+    },
+    {
+      "type": "openUrl",
+      "title": "Open URL",
+      "value": "http://google.com"
+    }
+  ]
+}"
+			Name = $null
+			ThumbnailUrl = $null
+		}
+		@{
+			Id = "638464e32834471ea202007da60a5ae6"
+			ContentType = "application/vnd.microsoft.card.hero"
+			ContentUrl = $null
+			Content = "{
+  "title": "*title*",
+  "subtitle": "*subtitle*",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "images": [
+    {
+      "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
+    }
+  ],
+  "buttons": [
+    {
+      "type": "messageBack",
+      "title": "&message back& <>= \"",
+      "text": "text = &message back& <>= \"",
+      "displayText": "displayText = &message back& <>= \"",
+      "value": {
+        "text": "some text 2"
+      }
+    }
+  ]
+}"
+			Name = $null
+			ThumbnailUrl = $null
+		}
+	)
+	Mentions = @(
+	)
+	Reactions = @(
+	)
+}
+Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgTeamChannelMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Using the Update-MgTeamChannelMessage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	MessageType = "message"
+	Subject = $null
+	Summary = $null
+	Importance = "normal"
+	Locale = "en-us"
+	From = @{
+		Application = $null
+		Device = $null
+		User = @{
+			Id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
+			DisplayName = "Sumit Gupta"
+			UserIdentityType = "aadUser"
+		}
+		Conversation = $null
+	}
+	Body = @{
+		ContentType = "html"
+		Content = "<p><em>text</em></p><attachment id="e8f78756199240b88448ae0fc6db112d"></attachment><attachment id="638464e32834471ea202007da60a5ae6"></attachment>"
+	}
+	Attachments = @(
+		@{
+			Id = "e8f78756199240b88448ae0fc6db112d"
+			ContentType = "application/vnd.microsoft.card.hero"
+			ContentUrl = $null
+			Content = "{
+  "title": "*title*",
+  "subtitle": "*subtitle*",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "images": [
+    {
+      "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
+    }
+  ],
+  "buttons": [
+    {
+      "type": "openUrl",
+      "image": "https://urlp.asm.skype.com/v1/url/content?url=https%3a%2f%2fcdn2.iconfinder.com%2fdata%2ficons%2fsocial-icons-33%2f128%2fTrello-128.png",
+      "title": "😃😃 click me 😃😃",
+      "value": "http://microsoft.com"
+    },
+    {
+      "type": "imback",
+      "title": "&i am back& <>= \"",
+      "value": "&i am back& <>= \""
+    },
+    {
+      "type": "openUrl",
+      "title": "Open URL",
+      "value": "http://google.com"
+    }
+  ]
+}"
+			Name = $null
+			ThumbnailUrl = $null
+		}
+		@{
+			Id = "638464e32834471ea202007da60a5ae6"
+			ContentType = "application/vnd.microsoft.card.hero"
+			ContentUrl = $null
+			Content = "{
+  "title": "*title*",
+  "subtitle": "*subtitle*",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "images": [
+    {
+      "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
+    }
+  ],
+  "buttons": [
+    {
+      "type": "messageBack",
+      "title": "&message back& <>= \"",
+      "text": "text = &message back& <>= \"",
+      "displayText": "displayText = &message back& <>= \"",
+      "value": {
+        "text": "some text 2"
+      }
+    }
+  ]
+}"
+			Name = $null
+			ThumbnailUrl = $null
+		}
+	)
+	Mentions = @(
+	)
+	Reactions = @(
+		@{
+			ReactionType = "angry"
+			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:30.489Z")
+			User = @{
+				Application = $null
+				Device = $null
+				User = @{
+					Id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+					DisplayName = $null
+					UserIdentityType = "aadUser"
+				}
+			}
+		}
+		@{
+			ReactionType = "laugh"
+			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:32.489Z")
+			User = @{
+				Application = $null
+				Device = $null
+				User = @{
+					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					DisplayName = $null
+					UserIdentityType = "aadUser"
+				}
+			}
+		}
+		@{
+			ReactionType = "like"
+			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T02:17:14.67Z")
+			User = @{
+				Application = $null
+				Device = $null
+				User = @{
+					Id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+					DisplayName = $null
+					UserIdentityType = "aadUser"
+				}
+			}
+		}
+		@{
+			ReactionType = "like"
+			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T02:34:40.3Z")
+			User = @{
+				Application = $null
+				Device = $null
+				User = @{
+					Id = "4c9041b7-449a-40f7-8855-56da239b9fd1"
+					DisplayName = $null
+					UserIdentityType = "aadUser"
+				}
+			}
+		}
+		@{
+			ReactionType = "like"
+			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:25.489Z")
+			User = @{
+				Application = $null
+				Device = $null
+				User = @{
+					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					DisplayName = $null
+					UserIdentityType = "aadUser"
+				}
+			}
+		}
+		@{
+			ReactionType = "heart"
+			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:31.489Z")
+			User = @{
+				Application = $null
+				Device = $null
+				User = @{
+					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					DisplayName = $null
+					UserIdentityType = "aadUser"
+				}
+			}
+		}
+		@{
+			ReactionType = "sad"
+			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:33.489Z")
+			User = @{
+				Application = $null
+				Device = $null
+				User = @{
+					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					DisplayName = $null
+					UserIdentityType = "aadUser"
+				}
+			}
+		}
+		@{
+			ReactionType = "surprised"
+			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:34.489Z")
+			User = @{
+				Application = $null
+				Device = $null
+				User = @{
+					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					DisplayName = $null
+					UserIdentityType = "aadUser"
+				}
+			}
+		}
+	)
+}
+Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgTeamChannelMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -614,7 +1043,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTS <IMicrosoftGraphChatMessageAttachment1\[]>: References to attached objects like files, tabs, meetings etc.
+ATTACHMENTS <IMicrosoftGraphChatMessageAttachment1[]>: References to attached objects like files, tabs, meetings etc.
   - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
   - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
   - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -623,12 +1052,12 @@ ATTACHMENTS <IMicrosoftGraphChatMessageAttachment1\[]>: References to attached o
   - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment. The property is specifically used to attribute a Teams message card to the specified app.
   - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphChatMessage>`: chatMessage
+BODYPARAMETER <IMicrosoftGraphChatMessage>: chatMessage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Attachments <IMicrosoftGraphChatMessageAttachment1[]>]`: References to attached objects like files, tabs, meetings etc.
@@ -663,14 +1092,14 @@ BODYPARAMETER `<IMicrosoftGraphChatMessage>`: chatMessage
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
     - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-    - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+    - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
     - `[Id <String>]`: 
   - `[Importance <String>]`: 
   - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -713,17 +1142,17 @@ BODYPARAMETER `<IMicrosoftGraphChatMessage>`: chatMessage
   - `[Summary <String>]`: Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat.
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
-CHANNELIDENTITY `<IMicrosoftGraphChannelIdentity>`: channelIdentity
+CHANNELIDENTITY <IMicrosoftGraphChannelIdentity>: channelIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChannelId <String>]`: The identity of the channel in which the message was posted.
   - `[TeamId <String>]`: The identity of the team in which the message was posted.
 
-HOSTEDCONTENTS <IMicrosoftGraphChatMessageHostedContent\[]>: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+HOSTEDCONTENTS <IMicrosoftGraphChatMessageHostedContent[]>: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
   - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-  - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+  - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
   - `[Id <String>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -762,8 +1191,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-MENTIONS <IMicrosoftGraphChatMessageMention1\[]>: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+MENTIONS <IMicrosoftGraphChatMessageMention1[]>: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
+  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -783,7 +1212,7 @@ MENTIONS <IMicrosoftGraphChatMessageMention1\[]>: List of entities mentioned in 
       - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
 
-POLICYVIOLATION `<IMicrosoftGraphChatMessagePolicyViolation>`: chatMessagePolicyViolation
+POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyViolation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DlpAction <String>]`: chatMessagePolicyViolationDlpActionTypes
   - `[JustificationText <String>]`: Justification text provided by the sender of the message when overriding a policy violation.
@@ -795,7 +1224,7 @@ POLICYVIOLATION `<IMicrosoftGraphChatMessagePolicyViolation>`: chatMessagePolicy
   - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
   - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
 
-REACTIONS <IMicrosoftGraphChatMessageReaction\[]>: Reactions for this chat message (for example, Like).
+REACTIONS <IMicrosoftGraphChatMessageReaction[]>: Reactions for this chat message (for example, Like).
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
   - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
@@ -807,7 +1236,7 @@ REACTIONS <IMicrosoftGraphChatMessageReaction\[]>: Reactions for this chat messa
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
 
-REPLIES <IMicrosoftGraphChatMessage\[]>: Replies for a specified message. Supports $expand for channel messages.
+REPLIES <IMicrosoftGraphChatMessage[]>: Replies for a specified message. Supports $expand for channel messages.
   - `[Id <String>]`: 
   - `[Attachments <IMicrosoftGraphChatMessageAttachment1[]>]`: References to attached objects like files, tabs, meetings etc.
     - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
@@ -841,14 +1270,14 @@ REPLIES <IMicrosoftGraphChatMessage\[]>: Replies for a specified message. Suppor
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
     - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-    - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+    - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
     - `[Id <String>]`: 
   - `[Importance <String>]`: 
   - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
