@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalpasswordsinglesignoncredentials
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalPasswordSingleSignOnCredentials
 
 ## SYNOPSIS
-Invoke action getPasswordSingleSignOnCredentials
+Get a list of single sign-on credentials using a password for a user or group.
 
 ## SYNTAX
 
@@ -39,9 +39,21 @@ Get-MgServicePrincipalPasswordSingleSignOnCredentials -InputObject <IApplication
 ```
 
 ## DESCRIPTION
-Invoke action getPasswordSingleSignOnCredentials
+Get a list of single sign-on credentials using a password for a user or group.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgServicePrincipalPasswordSingleSignOnCredentials Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Id = "5793aa3b-cca9-4794-679a240f8b58"
+}
+Get-MgServicePrincipalPasswordSingleSignOnCredentials -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+```
+
+This example shows how to use the Get-MgServicePrincipalPasswordSingleSignOnCredentials Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -172,11 +184,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsY2DqcyServiceprincipalsServiceprincipalIdMicrosoftGraphGetpasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsY2DqcyServiceprincipalsServiceprincipalIdMicrosoftGraphGetpasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

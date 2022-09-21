@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationowner
@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgApplicationOwner
 
 ## SYNOPSIS
-Get owners from applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
+Supports $expand and $filter (eq and ne when counting empty collections).
 
 ## SYNTAX
 
@@ -19,9 +22,21 @@ Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Fi
 ```
 
 ## DESCRIPTION
-Get owners from applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
+Supports $expand and $filter (eq and ne when counting empty collections).
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgApplicationOwner Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Get-MgApplicationOwner -ApplicationId $applicationId
+```
+
+This example shows how to use the Get-MgApplicationOwner Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -35,7 +50,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +126,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationaccesstoken
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronizationAccessToken
 
 ## SYNOPSIS
-Invoke action acquireAccessToken
+Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
 
 ## SYNTAX
 
@@ -41,9 +41,25 @@ Get-MgApplicationSynchronizationAccessToken -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action acquireAccessToken
+Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgApplicationSynchronizationAccessToken Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Credentials = @(
+		@{
+			"@odata.type" = "microsoft.graph.synchronizationSecretKeyStringValuePair"
+		}
+	)
+}
+Get-MgApplicationSynchronizationAccessToken -ApplicationId $applicationId -BodyParameter $params
+```
+
+This example shows how to use the Get-MgApplicationSynchronizationAccessToken Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -190,17 +206,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: 
     - `[Key <String>]`: synchronizationSecret
     - `[Value <String>]`: The value of the secret.
 
-CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair\[]>: .
+CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

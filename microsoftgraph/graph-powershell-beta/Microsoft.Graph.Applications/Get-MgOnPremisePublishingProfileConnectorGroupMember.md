@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileconnectorgroupmember
@@ -24,6 +24,15 @@ Get members from onPremisesPublishingProfiles
 
 ## EXAMPLES
 
+### Example 1: Using the Get-MgOnPremisePublishingProfileConnectorGroupMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Get-MgOnPremisePublishingProfileConnectorGroupMember -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId
+```
+
+This example shows how to use the Get-MgOnPremisePublishingProfileConnectorGroupMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All
@@ -36,7 +45,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -127,7 +136,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

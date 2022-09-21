@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/clear-mgapplicationverifiedpublisher
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Clear-MgApplicationVerifiedPublisher
 
 ## SYNOPSIS
-Invoke action unsetVerifiedPublisher
+Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
+For more information, see Publisher verification.
 
 ## SYNTAX
 
@@ -25,9 +26,19 @@ Clear-MgApplicationVerifiedPublisher -InputObject <IApplicationsIdentity> [-Pass
 ```
 
 ## DESCRIPTION
-Invoke action unsetVerifiedPublisher
+Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
+For more information, see Publisher verification.
 
 ## EXAMPLES
+
+### Example 1: Using the Clear-MgApplicationVerifiedPublisher Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Clear-MgApplicationVerifiedPublisher -ApplicationId $applicationId
+```
+
+This example shows how to use the Clear-MgApplicationVerifiedPublisher Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -126,7 +137,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

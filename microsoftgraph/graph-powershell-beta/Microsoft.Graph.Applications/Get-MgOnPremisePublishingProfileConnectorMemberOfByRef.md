@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileconnectormemberofbyref
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOnPremisePublishingProfileConnectorMemberOfByRef
 
 ## SYNOPSIS
-Get ref of memberOf from onPremisesPublishingProfiles
+The connectorGroup that the connector is a member of.
+Read-only.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgOnPremisePublishingProfileConnectorMemberOfByRef -ConnectorId <String>
 ```
 
 ## DESCRIPTION
-Get ref of memberOf from onPremisesPublishingProfiles
+The connectorGroup that the connector is a member of.
+Read-only.
 
 ## EXAMPLES
 
@@ -35,7 +37,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +113,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalpasswordsinglesignoncredentials
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgServicePrincipalPasswordSingleSignOnCredentials
 
 ## SYNOPSIS
-Invoke action createPasswordSingleSignOnCredentials
+Create single sign-on credentials using a password for a user or group.
 
 ## SYNTAX
 
@@ -41,9 +41,33 @@ New-MgServicePrincipalPasswordSingleSignOnCredentials -InputObject <IApplication
 ```
 
 ## DESCRIPTION
-Invoke action createPasswordSingleSignOnCredentials
+Create single sign-on credentials using a password for a user or group.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgServicePrincipalPasswordSingleSignOnCredentials Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Id = "5793aa3b-cca9-4794-679a240f8b58"
+	Credentials = @(
+		@{
+			FieldId = "param_username"
+			Value = "myusername"
+			Type = "username"
+		}
+		@{
+			FieldId = "param_password"
+			Value = "pa$$w0rd"
+			Type = "password"
+		}
+	)
+}
+New-MgServicePrincipalPasswordSingleSignOnCredentials -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+```
+
+This example shows how to use the New-MgServicePrincipalPasswordSingleSignOnCredentials Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -190,7 +214,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1J7V6DuServiceprincipalsServiceprincipalIdMicrosoftGraphCreatepasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1J7V6DuServiceprincipalsServiceprincipalIdMicrosoftGraphCreatepasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Credentials <IMicrosoftGraphCredential[]>]`: 
     - `[FieldId <String>]`: The name of the field for this credential. e.g, username or password or phoneNumber. This is defined by the application. Must match what is in the html field on singleSignOnSettings/password object.
@@ -198,12 +222,12 @@ BODYPARAMETER `<IPaths1J7V6DuServiceprincipalsServiceprincipalIdMicrosoftGraphCr
     - `[Value <String>]`: The value for this credential. e.g, mysuperhiddenpassword. Note the value for passwords is write-only, the value can never be read back.
   - `[Id <String>]`: 
 
-CREDENTIALS <IMicrosoftGraphCredential\[]>: .
+CREDENTIALS <IMicrosoftGraphCredential[]>: .
   - `[FieldId <String>]`: The name of the field for this credential. e.g, username or password or phoneNumber. This is defined by the application. Must match what is in the html field on singleSignOnSettings/password object.
   - `[Type <String>]`: The type for this credential. Valid values: username, password, or other.
   - `[Value <String>]`: The value for this credential. e.g, mysuperhiddenpassword. Note the value for passwords is write-only, the value can never be read back.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

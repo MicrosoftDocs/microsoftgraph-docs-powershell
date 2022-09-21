@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationconnectorgroupbyref
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgApplicationConnectorGroupByRef
 
 ## SYNOPSIS
-Get ref of connectorGroup from applications
+The connectorGroup the application is using with Azure AD Application Proxy.
+Nullable.
 
 ## SYNTAX
 
@@ -23,7 +24,8 @@ Get-MgApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity> [<Comm
 ```
 
 ## DESCRIPTION
-Get ref of connectorGroup from applications
+The connectorGroup the application is using with Azure AD Application Proxy.
+Nullable.
 
 ## EXAMPLES
 
@@ -78,7 +80,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

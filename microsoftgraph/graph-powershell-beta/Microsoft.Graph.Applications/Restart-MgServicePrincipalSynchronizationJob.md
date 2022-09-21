@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/restart-mgserviceprincipalsynchronizationjob
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Restart-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
-Invoke action restart
+Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
+Optionally clears existing the synchronization state and previous errors.
 
 ## SYNTAX
 
@@ -41,9 +42,24 @@ Restart-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action restart
+Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
+Optionally clears existing the synchronization state and previous errors.
 
 ## EXAMPLES
+
+### Example 1: Using the Restart-MgServicePrincipalSynchronizationJob Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Criteria = @{
+		ResetScope = "Watermark, Escrows, QuarantineState"
+	}
+}
+Restart-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+```
+
+This example shows how to use the Restart-MgServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -205,17 +221,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths7MrbavServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths7MrbavServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>]`: synchronizationJobRestartCriteria
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ResetScope <String>]`: synchronizationJobRestartScope
 
-CRITERIA `<IMicrosoftGraphSynchronizationJobRestartCriteria>`: synchronizationJobRestartCriteria
+CRITERIA <IMicrosoftGraphSynchronizationJobRestartCriteria>: synchronizationJobRestartCriteria
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ResetScope <String>]`: synchronizationJobRestartScope
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

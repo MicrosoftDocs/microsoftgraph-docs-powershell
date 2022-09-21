@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/test-mgserviceprincipalsynchronizationjobcredentials
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Test-MgServicePrincipalSynchronizationJobCredentials
 
 ## SYNOPSIS
-Invoke action validateCredentials
+Validate that the credentials are valid in the tenant.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Test-MgServicePrincipalSynchronizationJobCredentials -InputObject <IApplications
 ```
 
 ## DESCRIPTION
-Invoke action validateCredentials
+Validate that the credentials are valid in the tenant.
 
 ## EXAMPLES
 
@@ -253,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths3LjeyyServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths3LjeyyServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationIdentifier <String>]`: 
   - `[Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: 
@@ -262,11 +262,11 @@ BODYPARAMETER `<IPaths3LjeyyServiceprincipalsServiceprincipalIdSynchronizationJo
   - `[TemplateId <String>]`: 
   - `[UseSavedCredentials <Boolean?>]`: 
 
-CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair\[]>: .
+CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

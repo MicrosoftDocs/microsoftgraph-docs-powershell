@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalhomerealmdiscoverypolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalHomeRealmDiscoveryPolicy
 
 ## SYNOPSIS
-Get homeRealmDiscoveryPolicies from servicePrincipals
+List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
 
 ## SYNTAX
 
@@ -19,9 +19,18 @@ Get-MgServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId <String> [-Ex
 ```
 
 ## DESCRIPTION
-Get homeRealmDiscoveryPolicies from servicePrincipals
+List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgServicePrincipalHomeRealmDiscoveryPolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Get-MgServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId $servicePrincipalId
+```
+
+This example shows how to use the Get-MgServicePrincipalHomeRealmDiscoveryPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -35,7 +44,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -96,7 +105,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

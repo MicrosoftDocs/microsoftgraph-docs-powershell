@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalClaimMappingPolicy
 
 ## SYNOPSIS
-Get claimsMappingPolicies from servicePrincipals
+List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
 ## SYNTAX
 
@@ -19,9 +19,18 @@ Get-MgServicePrincipalClaimMappingPolicy -ServicePrincipalId <String> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get claimsMappingPolicies from servicePrincipals
+List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgServicePrincipalClaimMappingPolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Get-MgServicePrincipalClaimMappingPolicy -ServicePrincipalId $servicePrincipalId
+```
+
+This example shows how to use the Get-MgServicePrincipalClaimMappingPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -35,7 +44,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -96,7 +105,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

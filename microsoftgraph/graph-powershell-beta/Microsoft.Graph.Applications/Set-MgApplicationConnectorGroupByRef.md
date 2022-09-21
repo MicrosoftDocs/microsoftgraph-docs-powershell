@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/set-mgapplicationconnectorgroupbyref
@@ -41,6 +41,18 @@ Update the ref of navigation property connectorGroup in applications
 
 ## EXAMPLES
 
+### Example 1: Using the Set-MgApplicationConnectorGroupByRef Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	"@odata.id" = "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
+}
+Set-MgApplicationConnectorGroupByRef -ApplicationId $applicationId -BodyParameter $params
+```
+
+This example shows how to use the Set-MgApplicationConnectorGroupByRef Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -75,6 +87,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: Hashtable
@@ -169,7 +182,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+BODYPARAMETER <IReferenceUpdate>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[OdataId <String>]`: 
+  - `[OdataType <String>]`: 
+
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

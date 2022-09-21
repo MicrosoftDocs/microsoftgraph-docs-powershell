@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/set-mgapplicationverifiedpublisher
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgApplicationVerifiedPublisher
 
 ## SYNOPSIS
-Invoke action setVerifiedPublisher
+Set the the verifiedPublisher on an application.
+For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
 ## SYNTAX
 
@@ -39,9 +40,22 @@ Set-MgApplicationVerifiedPublisher -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action setVerifiedPublisher
+Set the the verifiedPublisher on an application.
+For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
 ## EXAMPLES
+
+### Example 1: Using the Set-MgApplicationVerifiedPublisher Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	VerifiedPublisherId = "1234567"
+}
+Set-MgApplicationVerifiedPublisher -ApplicationId $applicationId -BodyParameter $params
+```
+
+This example shows how to use the Set-MgApplicationVerifiedPublisher Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -187,11 +201,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[VerifiedPublisherId <String>]`: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

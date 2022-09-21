@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/suspend-mgserviceprincipalsynchronizationjob
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Suspend-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
-Invoke action pause
+Temporarily stop a running synchronization job.
+All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
 ## SYNTAX
 
@@ -25,9 +26,19 @@ Suspend-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action pause
+Temporarily stop a running synchronization job.
+All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
 ## EXAMPLES
+
+### Example 1: Using the Suspend-MgServicePrincipalSynchronizationJob Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Suspend-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+```
+
+This example shows how to use the Suspend-MgServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -141,7 +152,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

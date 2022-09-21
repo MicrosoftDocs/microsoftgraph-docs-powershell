@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/find-mgserviceprincipalsynchronizationjobschemadirectory
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Find-MgServicePrincipalSynchronizationJobSchemaDirectory
 
 ## SYNOPSIS
-Invoke action discover
+Discover the latest schema definition for provisioning to an application.
 
 ## SYNTAX
 
@@ -25,9 +25,18 @@ Find-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplicat
 ```
 
 ## DESCRIPTION
-Invoke action discover
+Discover the latest schema definition for provisioning to an application.
 
 ## EXAMPLES
+
+### Example 1: Using the Find-MgServicePrincipalSynchronizationJobSchemaDirectory Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Find-MgServicePrincipalSynchronizationJobSchemaDirectory -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -DirectoryDefinitionId $directoryDefinitionId
+```
+
+This example shows how to use the Find-MgServicePrincipalSynchronizationJobSchemaDirectory Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -141,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

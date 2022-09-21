@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationappmanagementpolicybyref
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationAppManagementPolicyByRef
 
 ## SYNOPSIS
-Get ref of appManagementPolicies from applications
+The appManagementPolicy applied to this application.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgApplicationAppManagementPolicyByRef -ApplicationId <String> [-Filter <Stri
 ```
 
 ## DESCRIPTION
-Get ref of appManagementPolicies from applications
+The appManagementPolicy applied to this application.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -96,7 +96,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

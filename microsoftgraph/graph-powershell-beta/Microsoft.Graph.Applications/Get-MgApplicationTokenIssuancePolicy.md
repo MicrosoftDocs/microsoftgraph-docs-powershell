@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationtokenissuancepolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationTokenIssuancePolicy
 
 ## SYNOPSIS
-Get tokenIssuancePolicies from applications
+List the tokenIssuancePolicy objects that are assigned to an application.
 
 ## SYNTAX
 
@@ -19,9 +19,18 @@ Get-MgApplicationTokenIssuancePolicy -ApplicationId <String> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get tokenIssuancePolicies from applications
+List the tokenIssuancePolicy objects that are assigned to an application.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgApplicationTokenIssuancePolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+Get-MgApplicationTokenIssuancePolicy -ApplicationId $applicationId
+```
+
+This example shows how to use the Get-MgApplicationTokenIssuancePolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -35,7 +44,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +120,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

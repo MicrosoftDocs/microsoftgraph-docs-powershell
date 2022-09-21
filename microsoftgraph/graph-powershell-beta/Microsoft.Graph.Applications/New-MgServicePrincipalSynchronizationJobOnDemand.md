@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobondemand
@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgServicePrincipalSynchronizationJobOnDemand
 
 ## SYNOPSIS
-Invoke action provisionOnDemand
+Select a user and provision the account on-demand.
+The rate limit for this API is 5 requests per 10 seconds.
 
 ## SYNTAX
 
@@ -41,9 +42,110 @@ New-MgServicePrincipalSynchronizationJobOnDemand -InputObject <IApplicationsIden
 ```
 
 ## DESCRIPTION
-Invoke action provisionOnDemand
+Select a user and provision the account on-demand.
+The rate limit for this API is 5 requests per 10 seconds.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgServicePrincipalSynchronizationJobOnDemand Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Parameters = @(
+		@{
+			RuleId = "6c409270-f78a-4bc6-af23-7cf3ab6482fe"
+			Subjects = @(
+				@{
+					ObjectId = "CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com"
+					ObjectTypeName = "user"
+				}
+			)
+		}
+	)
+}
+New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+```
+
+This example shows how to use the New-MgServicePrincipalSynchronizationJobOnDemand Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the New-MgServicePrincipalSynchronizationJobOnDemand Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Parameters = @(
+		@{
+			Subjects = @(
+				@{
+					ObjectId = "9bb0f679-a883-4a6f-8260-35b491b8b8c8"
+					ObjectTypeName = "User"
+				}
+			)
+			RuleId = "ea807875-5618-4f0a-9125-0b46a05298ca"
+		}
+	)
+}
+New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+```
+
+This example shows how to use the New-MgServicePrincipalSynchronizationJobOnDemand Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the New-MgServicePrincipalSynchronizationJobOnDemand Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Parameters = @(
+		@{
+			RuleId = "33f7c90d-bf71-41b1-bda6-aaf0ddbee5d8#V2"
+			Subjects = @(
+				@{
+					ObjectId = "8213fd99-d6b6-417b-8e13-af6334856215"
+					ObjectTypeName = "Group"
+					Links = @{
+						Members = @(
+							@{
+								ObjectId = "cbc86211-6ada-4803-b73f-8039cf56d8a2"
+								ObjectTypeName = "User"
+							}
+							@{
+								ObjectId = "2bc86211-6ada-4803-b73f-8039cf56d8a2"
+								ObjectTypeName = "User"
+							}
+						)
+					}
+				}
+			)
+		}
+	)
+}
+New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+```
+
+This example shows how to use the New-MgServicePrincipalSynchronizationJobOnDemand Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the New-MgServicePrincipalSynchronizationJobOnDemand Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Parameters = @(
+		@{
+			Subjects = @(
+				@{
+					ObjectId = "9bb0f679-a883-4a6f-8260-35b491b8b8c8"
+					ObjectTypeName = "User"
+				}
+			)
+			RuleId = "ea807875-5618-4f0a-9125-0b46a05298ca"
+		}
+	)
+}
+New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+```
+
+This example shows how to use the New-MgServicePrincipalSynchronizationJobOnDemand Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -190,7 +292,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>]`: 
     - `[RuleId <String>]`: The identifier of the synchronizationRule to be applied. This rule ID is defined in the schema for a given synchronization job or template.
@@ -203,7 +305,7 @@ BODYPARAMETER `<IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJo
       - `[ObjectId <String>]`: The identifier of an object to which a synchronizationJob is to be applied. Can be one of the following: An onPremisesDistinguishedName for synchronization from Active Directory to Azure AD.The user ID for synchronization from Azure AD to a third-party.The Worker ID of the Workday worker for synchronization from Workday to either Active Directory or Azure AD.
       - `[ObjectTypeName <String>]`: The type of the object to which a synchronizationJob is to be applied. Can be one of the following: user for synchronizing between Active Directory and Azure AD.User for synchronizing a user between Azure AD and a third-party application. Worker for synchronization a user between Workday and either Active Directory or Azure AD.Group for synchronizing a group between Azure AD and a third-party application.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
@@ -233,7 +335,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
   - `[UserId <String>]`: key: id of user
 
-PARAMETERS <IMicrosoftGraphSynchronizationJobApplicationParameters\[]>: .
+PARAMETERS <IMicrosoftGraphSynchronizationJobApplicationParameters[]>: .
   - `[RuleId <String>]`: The identifier of the synchronizationRule to be applied. This rule ID is defined in the schema for a given synchronization job or template.
   - `[Subjects <IMicrosoftGraphSynchronizationJobSubject[]>]`: The identifiers of one or more objects to which a synchronizationJob is to be applied.
     - `[Links <IMicrosoftGraphSynchronizationLinkedObjects>]`: synchronizationLinkedObjects

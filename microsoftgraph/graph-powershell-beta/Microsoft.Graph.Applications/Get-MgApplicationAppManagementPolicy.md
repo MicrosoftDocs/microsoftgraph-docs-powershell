@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationappmanagementpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationAppManagementPolicy
 
 ## SYNOPSIS
-Get appManagementPolicies from applications
+The appManagementPolicy applied to this application.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgApplicationAppManagementPolicy -ApplicationId <String> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get appManagementPolicies from applications
+The appManagementPolicy applied to this application.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -111,7 +111,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

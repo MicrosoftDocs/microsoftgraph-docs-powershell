@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignedto
@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgServicePrincipalAppRoleAssignedTo
 
 ## SYNOPSIS
-Create new navigation property to appRoleAssignedTo for servicePrincipals
+Assign an app role for a resource service principal, to a user, group, or client service principal.
+App roles that are assigned to service principals are also known as application permissions.
+Application permissions can be granted directly with app role assignments, or through a consent experience.
+To grant an app role assignment, you need three identifiers:
 
 ## SYNTAX
 
@@ -41,9 +44,26 @@ New-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appRoleAssignedTo for servicePrincipals
+Assign an app role for a resource service principal, to a user, group, or client service principal.
+App roles that are assigned to service principals are also known as application permissions.
+Application permissions can be granted directly with app role assignments, or through a consent experience.
+To grant an app role assignment, you need three identifiers:
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgServicePrincipalAppRoleAssignedTo Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	PrincipalId = "33ad69f9-da99-4bed-acd0-3f24235cb296"
+	ResourceId = "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
+	AppRoleId = "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
+}
+New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+```
+
+This example shows how to use the New-MgServicePrincipalAppRoleAssignedTo Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -292,7 +312,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAppRoleAssignment1>`: appRoleAssignment
+BODYPARAMETER <IMicrosoftGraphAppRoleAssignment1>: appRoleAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -303,7 +323,7 @@ BODYPARAMETER `<IMicrosoftGraphAppRoleAssignment1>`: appRoleAssignment
   - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
   - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made. Required on create. Supports $filter (eq only).
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

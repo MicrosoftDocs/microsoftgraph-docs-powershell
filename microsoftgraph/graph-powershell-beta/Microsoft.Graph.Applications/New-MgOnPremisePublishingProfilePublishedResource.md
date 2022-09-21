@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgonpremisepublishingprofilepublishedresource
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgOnPremisePublishingProfilePublishedResource
 
 ## SYNOPSIS
-Create new navigation property to publishedResources for onPremisesPublishingProfiles
+Create a new publishedResource object.
 
 ## SYNTAX
 
@@ -41,9 +41,22 @@ New-MgOnPremisePublishingProfilePublishedResource -InputObject <IApplicationsIde
 ```
 
 ## DESCRIPTION
-Create new navigation property to publishedResources for onPremisesPublishingProfiles
+Create a new publishedResource object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgOnPremisePublishingProfilePublishedResource Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	DisplayName = "New provisioning"
+	ResourceName = "domain1.contoso.com"
+}
+New-MgOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
+```
+
+This example shows how to use the New-MgOnPremisePublishingProfilePublishedResource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -237,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup\[]>: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
+AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup[]>: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Agents <IMicrosoftGraphOnPremisesAgent[]>]`: List of onPremisesAgent that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
     - `[Id <String>]`: 
@@ -256,7 +269,7 @@ AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup\[]>: List of onPremisesAgentGro
     - `[ResourceName <String>]`: Name of the publishedResource.
   - `[PublishingType <String>]`: onPremisesPublishingType
 
-BODYPARAMETER `<IMicrosoftGraphPublishedResource>`: publishedResource
+BODYPARAMETER <IMicrosoftGraphPublishedResource>: publishedResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
@@ -276,7 +289,7 @@ BODYPARAMETER `<IMicrosoftGraphPublishedResource>`: publishedResource
   - `[PublishingType <String>]`: onPremisesPublishingType
   - `[ResourceName <String>]`: Name of the publishedResource.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application

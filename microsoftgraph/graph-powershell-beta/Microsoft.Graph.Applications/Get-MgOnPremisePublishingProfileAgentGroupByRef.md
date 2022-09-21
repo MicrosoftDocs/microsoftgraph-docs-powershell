@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileagentgroupbyref
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgOnPremisePublishingProfileAgentGroupByRef
 
 ## SYNOPSIS
-Get ref of agentGroups from onPremisesPublishingProfiles
+List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -28,7 +30,9 @@ Get-MgOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <String>
 ```
 
 ## DESCRIPTION
-Get ref of agentGroups from onPremisesPublishingProfiles
+List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -44,7 +48,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -135,7 +139,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjob
@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
-Create new navigation property to jobs for servicePrincipals
+Create new synchronization job with a default synchronization schema.
+The job is created in a disabled state.
+Call Start job to start synchronization.
 
 ## SYNTAX
 
@@ -43,9 +45,23 @@ New-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to jobs for servicePrincipals
+Create new synchronization job with a default synchronization schema.
+The job is created in a disabled state.
+Call Start job to start synchronization.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgServicePrincipalSynchronizationJob Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	TemplateId = "BoxOutDelta"
+}
+New-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+```
+
+This example shows how to use the New-MgServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -256,13 +272,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSynchronizationJob>`: synchronizationJob
+BODYPARAMETER <IMicrosoftGraphSynchronizationJob>: synchronizationJob
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
+    - `[Interval <TimeSpan?>]`: The interval between synchronization iterations. The value is represented in ISO 8601 format for durations. For example, PT1M represents a period of 1 month.
     - `[State <String>]`: synchronizationScheduleState
   - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -391,7 +407,7 @@ BODYPARAMETER `<IMicrosoftGraphSynchronizationJob>`: synchronizationJob
     - `[Value <String>]`: Value for this key-value pair
   - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
@@ -421,13 +437,13 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
   - `[UserId <String>]`: key: id of user
 
-SCHEDULE `<IMicrosoftGraphSynchronizationSchedule>`: synchronizationSchedule
+SCHEDULE <IMicrosoftGraphSynchronizationSchedule>: synchronizationSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
+  - `[Interval <TimeSpan?>]`: The interval between synchronization iterations. The value is represented in ISO 8601 format for durations. For example, PT1M represents a period of 1 month.
   - `[State <String>]`: synchronizationScheduleState
 
-SCHEMA `<IMicrosoftGraphSynchronizationSchema>`: synchronizationSchema
+SCHEMA <IMicrosoftGraphSynchronizationSchema>: synchronizationSchema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.
@@ -504,7 +520,7 @@ SCHEMA `<IMicrosoftGraphSynchronizationSchema>`: synchronizationSchema
     - `[TargetDirectoryName <String>]`: Name of the target directory. Must match one of the directory definitions in synchronizationSchema.
   - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
-STATUS `<IMicrosoftGraphSynchronizationStatus>`: synchronizationStatus
+STATUS <IMicrosoftGraphSynchronizationStatus>: synchronizationStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <String>]`: synchronizationStatusCode
   - `[CountSuccessiveCompleteFailures <Int64?>]`: Number of consecutive times this job failed.
@@ -551,7 +567,7 @@ STATUS `<IMicrosoftGraphSynchronizationStatus>`: synchronizationStatus
     - `[Value <Int64?>]`: Value.
   - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
 
-SYNCHRONIZATIONJOBSETTINGS <IMicrosoftGraphKeyValuePair\[]>: Settings associated with the job. Some settings are inherited from the template.
+SYNCHRONIZATIONJOBSETTINGS <IMicrosoftGraphKeyValuePair[]>: Settings associated with the job. Some settings are inherited from the template.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
