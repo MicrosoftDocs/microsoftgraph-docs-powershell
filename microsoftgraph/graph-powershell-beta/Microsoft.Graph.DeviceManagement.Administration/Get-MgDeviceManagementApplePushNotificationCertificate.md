@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementapplepushnotificationcertificate
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementApplePushNotificationCertificate
 
 ## SYNOPSIS
-Get applePushNotificationCertificate from deviceManagement
+Apple push notification certificate.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementApplePushNotificationCertificate [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get applePushNotificationCertificate from deviceManagement
+Apple push notification certificate.
 
 ## EXAMPLES
 

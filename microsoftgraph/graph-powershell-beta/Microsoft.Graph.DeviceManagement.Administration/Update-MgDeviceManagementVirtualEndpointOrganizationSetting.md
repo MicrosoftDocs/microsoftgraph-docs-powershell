@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointorganizationsetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementVirtualEndpointOrganizationSetting
 
 ## SYNOPSIS
-Update the navigation property organizationSettings in deviceManagement
+Update the properties of the cloudPcOrganizationSettings object in a tenant.
 
 ## SYNTAX
 
@@ -27,9 +27,27 @@ Update-MgDeviceManagementVirtualEndpointOrganizationSetting
 ```
 
 ## DESCRIPTION
-Update the navigation property organizationSettings in deviceManagement
+Update the properties of the cloudPcOrganizationSettings object in a tenant.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgDeviceManagementVirtualEndpointOrganizationSetting Cmdlet
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudPcOrganizationSettings"
+	EnableMEMAutoEnroll = $true
+	OsVersion = "windows11"
+	UserAccountType = "standardUser"
+	WindowsSettings = @{
+		Language = "en-US"
+	}
+}
+Update-MgDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params
+```
+
+This example shows how to use the Update-MgDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -189,16 +207,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcOrganizationSettings>`: cloudPcOrganizationSettings
+BODYPARAMETER <IMicrosoftGraphCloudPcOrganizationSettings>: cloudPcOrganizationSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
+  - `[EnableMemAutoEnroll <Boolean?>]`: Specifies whether new Cloud PCs will be automatically enrolled in Microsoft Endpoint Manager(MEM). The default value is false.
   - `[OSVersion <String>]`: cloudPcOperatingSystem
   - `[UserAccountType <String>]`: cloudPcUserAccountType
   - `[WindowsSettings <IMicrosoftGraphCloudPcWindowsSettings>]`: cloudPcWindowsSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Language <String>]`: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC. The default value is en-US, which corresponds to English (United States).
 
-WINDOWSSETTINGS `<IMicrosoftGraphCloudPcWindowsSettings>`: cloudPcWindowsSettings
+WINDOWSSETTINGS <IMicrosoftGraphCloudPcWindowsSettings>: cloudPcWindowsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Language <String>]`: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC. The default value is en-US, which corresponds to English (United States).
 
