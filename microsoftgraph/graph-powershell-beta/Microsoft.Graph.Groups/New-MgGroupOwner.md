@@ -40,26 +40,6 @@ Add an owner to an Office 365 group or security group through the owners navigat
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -BodyParameter
 HELP MESSAGE MISSING
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
