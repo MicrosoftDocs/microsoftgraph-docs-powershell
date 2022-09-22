@@ -75,7 +75,7 @@ function Update-Files{
     )
 	try{
     foreach($filePath in Get-ChildItem $ModuleDocsPath){
-        Remove-BoilerPlate -FilePath $filePath -GraphProfile $GraphProfile -ModuleName $ModuleName
+      Add-Back-Ticks -FilePath $filePath -GraphProfile $GraphProfile -ModuleName $ModuleName
       #Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
       #Start-Sleep -Seconds 5
     }
@@ -85,37 +85,6 @@ function Update-Files{
 	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
 	Write-Host "`nError Item Name: "$_.Exception.ItemName
 	}
-}
-function Remove-BoilerPlate{
-    param (
-        [ValidateNotNullOrEmpty()]
-        [string] $FilePath,
-        [string] $ModuleDocsPath,
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $ModuleName = "Users"
-    )
-
-$val ="### Example 1: {{ Add title here }}"
-$Lines = 19
-$LinesLeftToRemove = 0
-$TargetContent = @()
-
-(Get-Content $FilePath) | % {
-    If($_ -match $val) {
-        $LinesLeftToRemove = $Lines + 1
-    }
-    
-    If($LinesLeftToRemove -GT 0) {
-        $LinesLeftToRemove--
-    } Else {
-        $TargetContent += $_
-    }
-}
-Set-Content $FilePath $TargetContent
-git add $FilePath
-git commit -m "Removing boiler plate code $ModuleName-$GraphProfile" 	
 }
 function Add-Back-Ticks{
     param (
@@ -278,20 +247,20 @@ try{
 }	
 return "NA"	
 }
-# Set-Location microsoftgraph-docs-powershell
-# $date = Get-Date -Format "dd-MM-yyyy"
-# $proposedBranch = "weekly_update_help_files_"+$date
-# $exists = git branch -l $proposedBranch
-# if ([string]::IsNullOrEmpty($exists)) {
-#     git checkout -b $proposedBranch
-# }else{
-# 	Write-Host "Branch already exists"
-#     $currentBranch = git rev-parse --abbrev-ref HEAD
-#     if($currentBranch -ne $proposedBranch){
-#         git checkout $proposedBranch
-#      }
-#      git checkout $proposedBranch
-# }
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_update_help_files_"+$date
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+    $currentBranch = git rev-parse --abbrev-ref HEAD
+    if($currentBranch -ne $proposedBranch){
+        git checkout $proposedBranch
+     }
+     git checkout $proposedBranch
+}
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
 #cd microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------Done-------------"
