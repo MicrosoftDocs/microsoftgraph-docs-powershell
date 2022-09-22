@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementandroidmanagedstoreaccountenterprisesetting
@@ -21,6 +21,8 @@ Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-IfMatch <
 Delete navigation property androidManagedStoreAccountEnterpriseSettings for deviceManagement
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

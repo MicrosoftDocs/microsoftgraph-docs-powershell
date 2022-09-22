@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartupprocess
@@ -30,6 +30,8 @@ New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess
 Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
@@ -201,7 +203,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess>`: The user experience analytics device startup process details.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess>: The user experience analytics device startup process details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ManagedDeviceId <String>]`: The user experience analytics device id.

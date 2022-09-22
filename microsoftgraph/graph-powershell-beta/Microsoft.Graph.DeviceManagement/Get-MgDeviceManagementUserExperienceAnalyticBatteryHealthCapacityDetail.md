@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbatteryhealthcapacitydetail
@@ -21,6 +21,8 @@ Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail [-Expand
 User Experience Analytics Battery Health Capacity Details
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

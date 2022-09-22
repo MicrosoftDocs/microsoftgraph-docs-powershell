@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatesummary
@@ -21,6 +21,8 @@ Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-IfMatch <String
 Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -IfMatch
 ETag
