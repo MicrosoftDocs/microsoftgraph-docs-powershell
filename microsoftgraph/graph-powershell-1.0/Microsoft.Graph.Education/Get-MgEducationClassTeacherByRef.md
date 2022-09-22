@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassteacherbyref
@@ -24,6 +24,8 @@ Retrieve a list teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

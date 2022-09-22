@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschoolclassbyref
@@ -22,6 +22,8 @@ Get-MgEducationSchoolClassByRef -EducationSchoolId <String> [-Filter <String>] [
 Get the educationClass resources owned by an educationSchool.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

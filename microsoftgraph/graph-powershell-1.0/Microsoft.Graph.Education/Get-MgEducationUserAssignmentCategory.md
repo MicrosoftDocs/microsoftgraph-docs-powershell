@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategory
@@ -22,6 +22,8 @@ Get-MgEducationUserAssignmentCategory -EducationAssignmentId <String> -Education
 List all the categories associated with an assignment.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

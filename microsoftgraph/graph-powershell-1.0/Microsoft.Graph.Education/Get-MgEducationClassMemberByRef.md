@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
@@ -22,6 +22,8 @@ Get-MgEducationClassMemberByRef -EducationClassId <String> [-Filter <String>] [-
 Retrieves the educationUser members of an educationClass.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
