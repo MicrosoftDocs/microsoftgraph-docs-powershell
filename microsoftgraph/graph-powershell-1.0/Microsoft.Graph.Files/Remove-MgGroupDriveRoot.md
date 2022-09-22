@@ -29,6 +29,8 @@ Delete navigation property root for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

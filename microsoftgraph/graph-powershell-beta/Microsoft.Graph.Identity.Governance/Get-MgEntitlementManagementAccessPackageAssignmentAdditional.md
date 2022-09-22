@@ -34,6 +34,8 @@ Invoke function additionalAccess
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageId
 Usage: accessPackageId='{accessPackageId}'
 

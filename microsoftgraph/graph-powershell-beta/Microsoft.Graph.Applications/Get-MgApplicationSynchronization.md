@@ -29,6 +29,8 @@ Get synchronization from applications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationId
 key: id of application
 

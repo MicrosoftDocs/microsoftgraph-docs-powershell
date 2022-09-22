@@ -51,6 +51,8 @@ Update the navigation property timeCards in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

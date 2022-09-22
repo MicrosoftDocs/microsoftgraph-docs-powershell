@@ -32,6 +32,8 @@ Create new navigation property to assignments for identityGovernance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackage
 accessPackage
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGE properties and create a hash table.

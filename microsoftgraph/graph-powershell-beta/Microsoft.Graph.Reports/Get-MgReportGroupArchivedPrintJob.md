@@ -28,6 +28,8 @@ Invoke function getGroupArchivedPrintJobs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EndDateTime
 Usage: endDateTime='{endDateTime}'
 

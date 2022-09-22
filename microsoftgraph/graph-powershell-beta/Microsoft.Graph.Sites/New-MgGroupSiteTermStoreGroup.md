@@ -45,6 +45,8 @@ Create a new group object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

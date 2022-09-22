@@ -62,6 +62,8 @@ Update the navigation property columns in drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

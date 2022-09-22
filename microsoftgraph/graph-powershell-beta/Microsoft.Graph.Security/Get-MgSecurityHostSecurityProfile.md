@@ -36,6 +36,8 @@ Get hostSecurityProfiles from security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

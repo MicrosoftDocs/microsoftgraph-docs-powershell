@@ -30,6 +30,8 @@ Invoke action runHuntingQuery
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -37,6 +37,8 @@ Navigational property to a list of targets to which this pool is assigned.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -50,6 +50,8 @@ Update the navigation property timeOffRequests in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

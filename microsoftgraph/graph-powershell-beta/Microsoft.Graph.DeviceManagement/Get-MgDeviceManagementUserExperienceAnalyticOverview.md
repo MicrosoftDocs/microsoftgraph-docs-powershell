@@ -22,6 +22,8 @@ User experience analytics overview
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

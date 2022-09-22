@@ -46,6 +46,8 @@ Update the navigation property publishedResources in onPremisesPublishingProfile
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

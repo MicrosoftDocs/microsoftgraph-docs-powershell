@@ -22,6 +22,8 @@ Apple push notification certificate.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

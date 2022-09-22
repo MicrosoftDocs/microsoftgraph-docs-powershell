@@ -29,6 +29,8 @@ Upgrade an app installation within a chat.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatId
 key: id of chat
 

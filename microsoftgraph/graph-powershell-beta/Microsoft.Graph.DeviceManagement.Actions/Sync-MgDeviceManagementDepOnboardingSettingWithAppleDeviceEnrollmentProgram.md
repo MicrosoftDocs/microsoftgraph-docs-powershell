@@ -29,6 +29,8 @@ Synchronizes between Apple Device Enrollment Program and Intune
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DepOnboardingSettingId
 key: id of depOnboardingSetting
 

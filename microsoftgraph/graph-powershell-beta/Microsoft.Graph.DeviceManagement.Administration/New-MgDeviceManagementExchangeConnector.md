@@ -32,6 +32,8 @@ Create new navigation property to exchangeConnectors for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

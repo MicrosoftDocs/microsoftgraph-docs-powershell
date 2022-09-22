@@ -31,6 +31,8 @@ Navigation link to the terms and conditions that are assigned.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

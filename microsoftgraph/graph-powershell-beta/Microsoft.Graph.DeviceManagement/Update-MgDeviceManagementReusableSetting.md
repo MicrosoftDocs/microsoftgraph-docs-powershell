@@ -61,6 +61,8 @@ Update the navigation property reusableSettings in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessTypes
 deviceManagementConfigurationSettingAccessTypes
 

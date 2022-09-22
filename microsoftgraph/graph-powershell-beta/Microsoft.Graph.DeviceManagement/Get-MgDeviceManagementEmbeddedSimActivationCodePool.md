@@ -36,6 +36,8 @@ The embedded SIM activation code pools created by this account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

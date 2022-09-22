@@ -51,6 +51,8 @@ Update the navigation property fileThreats in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -32,6 +32,8 @@ Update the navigation property deviceRegistrationPolicy in policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

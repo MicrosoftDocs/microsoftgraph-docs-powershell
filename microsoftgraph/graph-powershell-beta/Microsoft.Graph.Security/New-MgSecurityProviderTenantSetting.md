@@ -30,6 +30,8 @@ Create new navigation property to providerTenantSettings for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

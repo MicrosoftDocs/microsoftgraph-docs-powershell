@@ -27,6 +27,8 @@ Get the educationRubric object attached to an educationAssignment, if one exists
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

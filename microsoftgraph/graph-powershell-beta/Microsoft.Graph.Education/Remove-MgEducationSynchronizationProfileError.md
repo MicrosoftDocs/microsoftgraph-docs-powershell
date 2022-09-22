@@ -30,6 +30,8 @@ Delete navigation property errors for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationSynchronizationErrorId
 key: id of educationSynchronizationError
 

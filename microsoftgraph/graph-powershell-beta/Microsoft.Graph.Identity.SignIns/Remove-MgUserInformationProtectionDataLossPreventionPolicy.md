@@ -29,6 +29,8 @@ Delete navigation property dataLossPreventionPolicies for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DataLossPreventionPolicyId
 key: id of dataLossPreventionPolicy
 

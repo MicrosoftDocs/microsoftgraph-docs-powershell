@@ -36,6 +36,8 @@ Get currencies from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

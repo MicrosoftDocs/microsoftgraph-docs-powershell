@@ -29,6 +29,8 @@ Delete navigation property scopedMembers for directoryRoles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectoryRoleId
 key: id of directoryRole
 

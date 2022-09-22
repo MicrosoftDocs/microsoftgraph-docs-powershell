@@ -47,6 +47,8 @@ Update the navigation property appDefinitions in appCatalogs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -43,6 +43,8 @@ Update the navigation property members in chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

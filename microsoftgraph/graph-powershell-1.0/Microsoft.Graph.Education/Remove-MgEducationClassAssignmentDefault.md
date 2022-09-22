@@ -29,6 +29,8 @@ Delete navigation property assignmentDefaults for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationClassId
 key: id of educationClass
 

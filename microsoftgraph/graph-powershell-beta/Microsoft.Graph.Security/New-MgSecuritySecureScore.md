@@ -31,6 +31,8 @@ Create new navigation property to secureScores for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActiveUserCount
 Active user count of the given tenant.
 

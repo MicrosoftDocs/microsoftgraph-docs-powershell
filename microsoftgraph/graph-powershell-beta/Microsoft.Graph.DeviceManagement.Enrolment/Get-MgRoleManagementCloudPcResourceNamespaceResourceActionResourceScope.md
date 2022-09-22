@@ -31,6 +31,8 @@ Get resourceScope from roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

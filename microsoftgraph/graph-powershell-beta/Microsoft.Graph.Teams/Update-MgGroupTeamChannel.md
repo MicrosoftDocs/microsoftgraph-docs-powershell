@@ -51,6 +51,8 @@ Update the navigation property channels in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

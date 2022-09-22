@@ -51,6 +51,8 @@ Create a new channel in a team, as specified in the request body.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property managedDevices for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

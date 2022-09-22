@@ -48,6 +48,8 @@ Invoke action getHealthMetricTimeSeries
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

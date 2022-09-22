@@ -22,6 +22,8 @@ The Windows autopilot account settings.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

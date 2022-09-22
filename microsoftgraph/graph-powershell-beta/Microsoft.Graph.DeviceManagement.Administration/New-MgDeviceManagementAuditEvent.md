@@ -32,6 +32,8 @@ Create new navigation property to auditEvents for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Activity
 Friendly name of the activity.
 

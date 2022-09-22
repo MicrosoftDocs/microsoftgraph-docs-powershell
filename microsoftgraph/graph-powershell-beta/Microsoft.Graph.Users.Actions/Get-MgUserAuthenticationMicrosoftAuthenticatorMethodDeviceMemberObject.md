@@ -45,6 +45,8 @@ Invoke action getMemberObjects
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

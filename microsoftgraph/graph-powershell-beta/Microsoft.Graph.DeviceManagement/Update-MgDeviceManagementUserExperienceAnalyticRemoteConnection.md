@@ -52,6 +52,8 @@ Update the navigation property userExperienceAnalyticsRemoteConnection in device
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

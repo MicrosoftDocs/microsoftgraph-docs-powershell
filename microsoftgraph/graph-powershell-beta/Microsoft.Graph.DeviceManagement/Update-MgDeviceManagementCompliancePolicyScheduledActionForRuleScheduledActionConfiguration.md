@@ -52,6 +52,8 @@ Update the navigation property scheduledActionConfigurations in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActionType
 Scheduled Action Type Enum
 

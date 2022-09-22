@@ -44,6 +44,8 @@ Set device name of the device.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

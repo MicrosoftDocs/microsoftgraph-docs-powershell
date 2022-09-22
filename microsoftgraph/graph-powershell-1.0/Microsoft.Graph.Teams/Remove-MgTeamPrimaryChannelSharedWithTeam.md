@@ -29,6 +29,8 @@ Delete navigation property sharedWithTeams for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

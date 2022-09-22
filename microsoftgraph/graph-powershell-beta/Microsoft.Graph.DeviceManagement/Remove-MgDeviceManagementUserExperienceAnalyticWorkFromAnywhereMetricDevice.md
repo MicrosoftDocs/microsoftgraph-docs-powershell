@@ -32,6 +32,8 @@ Delete navigation property metricDevices for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

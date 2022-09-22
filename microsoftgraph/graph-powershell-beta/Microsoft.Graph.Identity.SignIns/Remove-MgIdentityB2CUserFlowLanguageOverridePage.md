@@ -30,6 +30,8 @@ Delete navigation property overridesPages for identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -B2CIdentityUserFlowId
 key: id of b2cIdentityUserFlow
 

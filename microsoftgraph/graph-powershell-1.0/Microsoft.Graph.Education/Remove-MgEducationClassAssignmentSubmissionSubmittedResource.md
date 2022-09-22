@@ -30,6 +30,8 @@ Delete navigation property submittedResources for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

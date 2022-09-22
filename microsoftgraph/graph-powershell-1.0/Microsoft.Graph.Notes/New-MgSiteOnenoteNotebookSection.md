@@ -49,6 +49,8 @@ Create a new onenoteSection in the specified notebook.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

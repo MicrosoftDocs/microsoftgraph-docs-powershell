@@ -30,6 +30,8 @@ Delete navigation property defaultPages for identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -B2CIdentityUserFlowId
 key: id of b2cIdentityUserFlow
 

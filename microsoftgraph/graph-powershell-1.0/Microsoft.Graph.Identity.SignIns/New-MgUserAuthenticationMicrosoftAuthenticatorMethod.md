@@ -46,6 +46,8 @@ Create new navigation property to microsoftAuthenticatorMethods for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

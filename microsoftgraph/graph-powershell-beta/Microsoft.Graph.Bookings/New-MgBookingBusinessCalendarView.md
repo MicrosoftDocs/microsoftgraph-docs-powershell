@@ -63,6 +63,8 @@ Create new navigation property to calendarView for bookingBusinesses
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalInformation
 Additional information that is sent to the customer when an appointment is confirmed.
 

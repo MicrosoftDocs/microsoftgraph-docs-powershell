@@ -43,6 +43,8 @@ Update the navigation property taxGroups in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -31,6 +31,8 @@ Delete navigation property commands for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CommandId
 key: id of command
 

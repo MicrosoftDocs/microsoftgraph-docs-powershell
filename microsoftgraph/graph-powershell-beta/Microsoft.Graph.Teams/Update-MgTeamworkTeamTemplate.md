@@ -43,6 +43,8 @@ Update the navigation property teamTemplates in teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -35,6 +35,8 @@ Ending the grace period immediately deprovisions the Cloud PC without waiting th
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CloudPcId
 key: id of cloudPC
 

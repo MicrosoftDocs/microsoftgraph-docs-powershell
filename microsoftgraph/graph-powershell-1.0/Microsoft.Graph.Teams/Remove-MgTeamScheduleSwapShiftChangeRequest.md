@@ -29,6 +29,8 @@ Delete navigation property swapShiftsChangeRequests for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

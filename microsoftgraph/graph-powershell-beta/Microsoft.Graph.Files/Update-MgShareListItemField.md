@@ -65,6 +65,8 @@ Update the properties on a **[listItem][]**.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

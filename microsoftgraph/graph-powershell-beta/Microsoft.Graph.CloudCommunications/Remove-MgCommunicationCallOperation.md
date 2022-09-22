@@ -29,6 +29,8 @@ Delete navigation property operations for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CallId
 key: id of call
 

@@ -30,6 +30,8 @@ Delete navigation property multiValueExtendedProperties for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EventId
 key: id of event
 

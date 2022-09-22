@@ -34,6 +34,8 @@ You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.

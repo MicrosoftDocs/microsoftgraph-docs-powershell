@@ -30,6 +30,8 @@ Update search
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Acronyms
 Administrative answer in Microsoft Search results to define common acronyms in a organization.
 To construct, please use Get-Help -Online and see NOTES section for ACRONYMS properties and create a hash table.

@@ -36,6 +36,8 @@ The policy that controls Azure AD authorization settings.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

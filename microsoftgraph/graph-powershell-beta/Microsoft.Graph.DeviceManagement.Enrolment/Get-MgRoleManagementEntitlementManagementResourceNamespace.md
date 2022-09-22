@@ -36,6 +36,8 @@ Get resourceNamespaces from roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -22,6 +22,8 @@ The software update status summary.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

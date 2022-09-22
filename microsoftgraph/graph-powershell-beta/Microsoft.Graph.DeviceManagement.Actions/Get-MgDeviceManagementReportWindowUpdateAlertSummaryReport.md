@@ -32,6 +32,8 @@ Invoke action getWindowsUpdateAlertSummaryReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

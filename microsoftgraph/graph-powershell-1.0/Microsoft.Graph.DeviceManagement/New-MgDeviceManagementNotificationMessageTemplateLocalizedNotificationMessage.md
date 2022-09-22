@@ -47,6 +47,8 @@ Create new navigation property to localizedNotificationMessages for deviceManage
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -22,6 +22,8 @@ Invoke action enableAndroidDeviceAdministratorEnrollment
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -PassThru
 Returns true when the command succeeds
 

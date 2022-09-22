@@ -56,6 +56,8 @@ Update the navigation property listItem in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

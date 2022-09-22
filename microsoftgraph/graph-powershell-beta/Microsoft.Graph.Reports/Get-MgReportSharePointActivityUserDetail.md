@@ -39,6 +39,8 @@ Invoke function getSharePointActivityUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

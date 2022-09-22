@@ -39,6 +39,8 @@ The list of assigned devices for the profile.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

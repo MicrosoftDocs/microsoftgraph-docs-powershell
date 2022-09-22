@@ -44,6 +44,8 @@ Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

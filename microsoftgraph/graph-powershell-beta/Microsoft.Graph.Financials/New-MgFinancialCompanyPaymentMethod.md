@@ -43,6 +43,8 @@ Create new navigation property to paymentMethods for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

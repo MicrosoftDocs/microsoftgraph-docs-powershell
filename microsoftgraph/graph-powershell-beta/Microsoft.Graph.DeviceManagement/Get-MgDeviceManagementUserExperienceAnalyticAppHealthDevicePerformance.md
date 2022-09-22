@@ -37,6 +37,8 @@ User experience analytics appHealth Device Performance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

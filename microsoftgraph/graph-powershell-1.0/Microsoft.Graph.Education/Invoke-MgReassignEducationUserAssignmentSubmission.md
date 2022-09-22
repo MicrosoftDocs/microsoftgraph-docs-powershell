@@ -39,6 +39,8 @@ For details, see the examples section.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

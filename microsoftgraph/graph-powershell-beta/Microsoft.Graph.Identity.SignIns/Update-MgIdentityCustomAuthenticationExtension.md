@@ -47,6 +47,8 @@ Update the navigation property customAuthenticationExtensions in identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

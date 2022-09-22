@@ -45,6 +45,8 @@ Create new navigation property to items for external
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Acl
 An array of access control entries.
 Each entry specifies the access granted to a user or group.

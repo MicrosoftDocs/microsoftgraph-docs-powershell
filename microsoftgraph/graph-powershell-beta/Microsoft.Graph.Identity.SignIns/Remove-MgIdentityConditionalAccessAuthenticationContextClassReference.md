@@ -30,6 +30,8 @@ Delete navigation property authenticationContextClassReferences for identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AuthenticationContextClassReferenceId
 key: id of authenticationContextClassReference
 

@@ -29,6 +29,8 @@ Delete navigation property deviceEnrollmentConfigurations for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceEnrollmentConfigurationId
 key: id of deviceEnrollmentConfiguration
 

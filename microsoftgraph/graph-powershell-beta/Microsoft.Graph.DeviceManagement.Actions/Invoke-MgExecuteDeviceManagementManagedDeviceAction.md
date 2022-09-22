@@ -33,6 +33,8 @@ Invoke action executeAction
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActionName
 managedDeviceRemoteAction
 

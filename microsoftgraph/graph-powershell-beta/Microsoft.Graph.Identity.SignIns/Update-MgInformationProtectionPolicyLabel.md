@@ -47,6 +47,8 @@ Update the navigation property labels in informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

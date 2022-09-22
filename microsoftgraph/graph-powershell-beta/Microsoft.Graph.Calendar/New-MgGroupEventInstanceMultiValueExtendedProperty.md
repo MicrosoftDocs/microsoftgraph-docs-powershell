@@ -43,6 +43,8 @@ Create new navigation property to multiValueExtendedProperties for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

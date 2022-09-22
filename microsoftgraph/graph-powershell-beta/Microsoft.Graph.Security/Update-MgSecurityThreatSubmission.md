@@ -33,6 +33,8 @@ Update the navigation property threatSubmission in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

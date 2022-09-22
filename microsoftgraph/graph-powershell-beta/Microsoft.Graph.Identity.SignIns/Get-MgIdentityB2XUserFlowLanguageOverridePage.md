@@ -40,6 +40,8 @@ This collection only allows to modify the content of the page, any other modific
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

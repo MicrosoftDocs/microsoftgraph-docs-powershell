@@ -73,6 +73,8 @@ Create a new group object in a term store.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

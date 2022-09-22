@@ -39,6 +39,8 @@ Get steps from identityGovernance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

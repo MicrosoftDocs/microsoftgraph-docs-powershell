@@ -53,6 +53,8 @@ Update the navigation property permission in shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

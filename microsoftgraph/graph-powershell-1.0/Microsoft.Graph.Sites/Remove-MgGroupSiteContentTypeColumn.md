@@ -29,6 +29,8 @@ Delete navigation property columns for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ColumnDefinitionId
 key: id of columnDefinition
 

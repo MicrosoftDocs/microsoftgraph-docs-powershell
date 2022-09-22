@@ -30,6 +30,8 @@ Create new navigation property to userExperienceAnalyticsDeviceMetricHistory for
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

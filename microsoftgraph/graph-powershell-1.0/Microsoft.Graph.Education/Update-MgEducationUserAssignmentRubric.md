@@ -49,6 +49,8 @@ Update the navigation property rubric in education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

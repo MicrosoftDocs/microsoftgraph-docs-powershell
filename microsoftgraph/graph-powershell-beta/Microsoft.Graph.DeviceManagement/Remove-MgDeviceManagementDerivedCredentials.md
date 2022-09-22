@@ -29,6 +29,8 @@ Delete navigation property derivedCredentials for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementDerivedCredentialSettingsId
 key: id of deviceManagementDerivedCredentialSettings
 

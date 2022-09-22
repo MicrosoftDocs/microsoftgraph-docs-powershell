@@ -22,6 +22,8 @@ Delete navigation property deviceConfigurationDeviceStateSummaries for deviceMan
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -29,6 +29,8 @@ Invoke action removePersonalData
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -InboundSharedUserProfileUserId
 key: userId of inboundSharedUserProfile
 

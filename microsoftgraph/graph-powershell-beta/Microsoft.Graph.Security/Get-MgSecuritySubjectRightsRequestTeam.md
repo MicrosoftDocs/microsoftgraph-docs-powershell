@@ -29,6 +29,8 @@ Information about the Microsoft Teams team that was created for the request.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

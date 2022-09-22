@@ -29,6 +29,8 @@ Default synchronization schema for the jobs based on this template.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

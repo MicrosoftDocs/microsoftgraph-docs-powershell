@@ -37,6 +37,8 @@ Create new navigation property to reusableSettings for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessTypes
 deviceManagementConfigurationSettingAccessTypes
 

@@ -30,6 +30,8 @@ Delete navigation property directories for servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectoryDefinitionId
 key: id of directoryDefinition
 

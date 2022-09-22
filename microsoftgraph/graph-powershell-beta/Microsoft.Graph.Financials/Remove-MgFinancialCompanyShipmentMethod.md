@@ -29,6 +29,8 @@ Delete navigation property shipmentMethods for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

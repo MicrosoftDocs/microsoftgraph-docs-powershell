@@ -43,6 +43,8 @@ Change the account type of the user on a specific Cloud PC.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

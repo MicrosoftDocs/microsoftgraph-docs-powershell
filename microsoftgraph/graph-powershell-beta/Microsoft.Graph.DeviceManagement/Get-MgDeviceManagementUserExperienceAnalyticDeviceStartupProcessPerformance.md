@@ -38,6 +38,8 @@ User experience analytics device Startup Process Performance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

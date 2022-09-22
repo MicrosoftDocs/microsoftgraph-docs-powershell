@@ -38,6 +38,8 @@ List of run states for this script across all devices of specific user.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

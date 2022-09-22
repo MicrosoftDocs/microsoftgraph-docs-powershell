@@ -43,6 +43,8 @@ Create new navigation property to endpoints for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -40,6 +40,8 @@ Create new navigation property to autopilotEvents for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccountSetupDuration
 Time spent in user ESP.
 

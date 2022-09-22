@@ -29,6 +29,8 @@ Delete navigation property clientConfigurations for officeConfiguration
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

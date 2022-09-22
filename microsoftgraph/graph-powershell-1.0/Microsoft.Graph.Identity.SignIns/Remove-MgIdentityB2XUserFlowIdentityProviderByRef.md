@@ -30,6 +30,8 @@ Delete ref of navigation property userFlowIdentityProviders for identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -B2XIdentityUserFlowId
 key: id of b2xIdentityUserFlow
 

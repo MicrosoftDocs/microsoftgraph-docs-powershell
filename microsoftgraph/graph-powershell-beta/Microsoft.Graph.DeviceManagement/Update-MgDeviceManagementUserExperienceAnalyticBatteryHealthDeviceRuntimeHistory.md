@@ -49,6 +49,8 @@ Update the navigation property userExperienceAnalyticsBatteryHealthDeviceRuntime
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

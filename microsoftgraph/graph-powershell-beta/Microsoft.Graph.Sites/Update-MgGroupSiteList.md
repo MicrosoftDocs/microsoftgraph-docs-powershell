@@ -59,6 +59,8 @@ Update the navigation property lists in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Activities
 The recent activities that took place within this list.
 To construct, please use Get-Help -Online and see NOTES section for ACTIVITIES properties and create a hash table.

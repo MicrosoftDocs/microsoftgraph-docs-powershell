@@ -36,6 +36,8 @@ Get columns from drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

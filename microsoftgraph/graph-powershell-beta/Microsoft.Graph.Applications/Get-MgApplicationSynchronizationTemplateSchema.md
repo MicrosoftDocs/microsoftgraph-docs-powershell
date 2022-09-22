@@ -29,6 +29,8 @@ Default synchronization schema for the jobs based on this template.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationId
 key: id of application
 

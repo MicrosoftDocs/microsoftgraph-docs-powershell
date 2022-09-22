@@ -37,6 +37,8 @@ Collection of states of all users that the intent is applied to
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

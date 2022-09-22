@@ -49,6 +49,8 @@ Update the navigation property openShiftChangeRequests in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

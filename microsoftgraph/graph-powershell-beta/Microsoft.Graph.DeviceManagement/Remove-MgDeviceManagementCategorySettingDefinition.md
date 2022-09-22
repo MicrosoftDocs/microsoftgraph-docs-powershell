@@ -30,6 +30,8 @@ Delete navigation property settingDefinitions for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementSettingCategoryId
 key: id of deviceManagementSettingCategory
 

@@ -28,6 +28,8 @@ Invoke action publish
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

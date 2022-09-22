@@ -29,6 +29,8 @@ Create new navigation property to resourceOperations for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActionName
 Type of action this operation is going to perform.
 The actionName should be concise and limited to as few words as possible.

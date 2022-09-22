@@ -29,6 +29,8 @@ Delete navigation property deviceManagementPartners for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementPartnerId
 key: id of deviceManagementPartner
 

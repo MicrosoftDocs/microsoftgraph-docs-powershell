@@ -37,6 +37,8 @@ User experience analytics device performance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

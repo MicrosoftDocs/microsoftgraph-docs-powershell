@@ -21,6 +21,8 @@ Invoke action syncApps
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -PassThru
 Returns true when the command succeeds
 

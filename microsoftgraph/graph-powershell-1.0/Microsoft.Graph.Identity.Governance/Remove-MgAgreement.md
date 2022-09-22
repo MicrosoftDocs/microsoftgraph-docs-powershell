@@ -29,6 +29,8 @@ Delete entity from agreements
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgreementId
 key: id of agreement
 

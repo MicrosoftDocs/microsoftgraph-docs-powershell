@@ -29,6 +29,8 @@ Invoke function compare
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementTemplateId
 key: id of deviceManagementTemplate
 

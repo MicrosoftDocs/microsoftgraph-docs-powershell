@@ -49,6 +49,8 @@ Update the navigation property companyInformation in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -36,6 +36,8 @@ Read the Microsoft Purview Information Protection labels for the user or organiz
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

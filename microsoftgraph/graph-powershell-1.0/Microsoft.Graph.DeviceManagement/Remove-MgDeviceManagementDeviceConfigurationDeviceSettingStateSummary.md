@@ -30,6 +30,8 @@ Delete navigation property deviceSettingStateSummaries for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceConfigurationId
 key: id of deviceConfiguration
 

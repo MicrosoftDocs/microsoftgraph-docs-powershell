@@ -32,6 +32,8 @@ Invoke action getWindowsUpdateAlertsPerPolicyPerDeviceReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

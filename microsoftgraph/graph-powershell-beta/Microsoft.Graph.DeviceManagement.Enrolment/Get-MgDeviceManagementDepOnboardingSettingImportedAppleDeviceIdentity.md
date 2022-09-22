@@ -38,6 +38,8 @@ The imported Apple device identities.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

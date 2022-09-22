@@ -43,6 +43,8 @@ Create new navigation property to hostedContents for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

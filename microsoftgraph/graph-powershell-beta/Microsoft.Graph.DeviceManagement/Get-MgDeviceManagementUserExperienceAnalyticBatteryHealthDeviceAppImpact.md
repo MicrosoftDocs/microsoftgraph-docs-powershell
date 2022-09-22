@@ -38,6 +38,8 @@ User Experience Analytics Battery Health Device App Impact
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

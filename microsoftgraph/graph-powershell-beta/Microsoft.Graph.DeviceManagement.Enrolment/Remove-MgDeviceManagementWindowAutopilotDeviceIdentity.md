@@ -29,6 +29,8 @@ Delete navigation property windowsAutopilotDeviceIdentities for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

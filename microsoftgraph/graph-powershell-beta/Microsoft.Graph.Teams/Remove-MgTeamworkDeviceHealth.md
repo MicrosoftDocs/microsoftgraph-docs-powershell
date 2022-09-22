@@ -29,6 +29,8 @@ Delete navigation property health for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

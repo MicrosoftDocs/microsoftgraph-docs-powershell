@@ -37,6 +37,8 @@ The windows information protection app learning summaries.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

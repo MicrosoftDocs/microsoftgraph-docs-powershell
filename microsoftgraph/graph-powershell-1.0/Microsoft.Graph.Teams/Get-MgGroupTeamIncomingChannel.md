@@ -36,6 +36,8 @@ List of channels shared with the team.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

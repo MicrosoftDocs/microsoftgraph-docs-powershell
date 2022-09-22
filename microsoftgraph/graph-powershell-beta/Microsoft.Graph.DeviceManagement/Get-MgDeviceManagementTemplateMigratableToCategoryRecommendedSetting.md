@@ -39,6 +39,8 @@ The settings this category contains
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

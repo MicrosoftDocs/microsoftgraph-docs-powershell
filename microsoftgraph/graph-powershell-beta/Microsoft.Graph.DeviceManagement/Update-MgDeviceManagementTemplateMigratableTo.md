@@ -53,6 +53,8 @@ Update the navigation property migratableTo in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

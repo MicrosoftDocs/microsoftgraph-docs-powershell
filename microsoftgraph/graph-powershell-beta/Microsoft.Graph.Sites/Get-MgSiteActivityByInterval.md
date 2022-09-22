@@ -28,6 +28,8 @@ Invoke function getActivitiesByInterval
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EndDateTime
 Usage: endDateTime='{endDateTime}'
 

@@ -56,6 +56,8 @@ Update the navigation property items in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

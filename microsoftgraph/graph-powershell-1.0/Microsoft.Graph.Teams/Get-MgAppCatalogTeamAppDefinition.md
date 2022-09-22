@@ -36,6 +36,8 @@ The details for each version of the app.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

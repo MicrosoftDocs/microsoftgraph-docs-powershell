@@ -29,6 +29,8 @@ Delete navigation property reusableSettings for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementConfigurationSettingDefinitionId
 key: id of deviceManagementConfigurationSettingDefinition
 

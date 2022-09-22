@@ -47,6 +47,8 @@ Update the navigation property userExperienceAnalyticsDeviceMetricHistory in dev
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -47,6 +47,8 @@ Invoke action checkMemberObjects
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

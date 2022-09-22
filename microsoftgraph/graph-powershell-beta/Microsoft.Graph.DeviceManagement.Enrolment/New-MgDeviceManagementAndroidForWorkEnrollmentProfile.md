@@ -32,6 +32,8 @@ Create new navigation property to androidForWorkEnrollmentProfiles for deviceMan
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccountId
 Tenant GUID the enrollment profile belongs to.
 

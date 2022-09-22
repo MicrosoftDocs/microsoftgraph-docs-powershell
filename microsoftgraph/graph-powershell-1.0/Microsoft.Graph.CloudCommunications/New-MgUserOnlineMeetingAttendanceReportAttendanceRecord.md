@@ -47,6 +47,8 @@ Create new navigation property to attendanceRecords for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

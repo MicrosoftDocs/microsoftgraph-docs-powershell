@@ -44,6 +44,8 @@ Upgrade or downgrade an existing Cloud PC to another configuration with a new vi
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

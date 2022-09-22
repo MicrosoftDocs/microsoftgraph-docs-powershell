@@ -41,6 +41,8 @@ Update entity in businessFlowTemplates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

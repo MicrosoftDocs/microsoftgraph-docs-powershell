@@ -29,6 +29,8 @@ Metadata for Enrollment abandonment summary report
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Filter
 Usage: filter='{filter}'
 

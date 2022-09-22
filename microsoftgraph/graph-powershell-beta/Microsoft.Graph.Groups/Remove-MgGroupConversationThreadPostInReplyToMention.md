@@ -30,6 +30,8 @@ Delete navigation property mentions for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ConversationId
 key: id of conversation
 

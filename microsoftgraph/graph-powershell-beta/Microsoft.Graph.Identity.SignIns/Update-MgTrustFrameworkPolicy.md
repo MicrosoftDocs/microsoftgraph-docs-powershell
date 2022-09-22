@@ -41,6 +41,8 @@ Update the navigation property policies in trustFramework
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

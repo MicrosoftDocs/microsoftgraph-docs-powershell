@@ -48,6 +48,8 @@ Create new navigation property to pages for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

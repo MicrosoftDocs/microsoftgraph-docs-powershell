@@ -30,6 +30,8 @@ Create new navigation property to userExperienceAnalyticsMetricHistory for devic
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

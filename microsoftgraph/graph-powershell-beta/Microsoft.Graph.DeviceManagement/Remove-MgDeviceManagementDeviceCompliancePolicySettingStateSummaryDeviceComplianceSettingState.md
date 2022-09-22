@@ -31,6 +31,8 @@ Delete navigation property deviceComplianceSettingStates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceCompliancePolicySettingStateSummaryId
 key: id of deviceCompliancePolicySettingStateSummary
 

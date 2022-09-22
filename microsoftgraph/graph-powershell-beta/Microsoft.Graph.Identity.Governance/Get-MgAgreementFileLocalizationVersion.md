@@ -38,6 +38,8 @@ Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgreementFileLocalizationId
 key: id of agreementFileLocalization
 

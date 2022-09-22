@@ -53,6 +53,8 @@ Update the navigation property swapShiftsChangeRequests in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

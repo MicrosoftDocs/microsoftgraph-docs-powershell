@@ -28,6 +28,8 @@ Delete entity from places
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

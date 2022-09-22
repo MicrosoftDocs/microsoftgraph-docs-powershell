@@ -36,6 +36,8 @@ Create new navigation property to roleAssignmentScheduleInstances for roleManage
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivatedUsing
 unifiedRoleEligibilityScheduleInstance
 To construct, please use Get-Help -Online and see NOTES section for ACTIVATEDUSING properties and create a hash table.

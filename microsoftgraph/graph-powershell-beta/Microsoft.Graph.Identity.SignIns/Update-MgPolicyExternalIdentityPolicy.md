@@ -30,6 +30,8 @@ Update the settings of the tenant-wide externalIdentitiesPolicy object that cont
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

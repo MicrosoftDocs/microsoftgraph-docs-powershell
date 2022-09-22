@@ -29,6 +29,8 @@ Delete navigation property troubleshootingEvents for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementTroubleshootingEventId
 key: id of deviceManagementTroubleshootingEvent
 

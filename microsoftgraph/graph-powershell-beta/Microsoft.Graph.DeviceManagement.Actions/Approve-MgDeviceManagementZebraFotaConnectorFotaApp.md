@@ -21,6 +21,8 @@ Invoke action approveFotaApps
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 

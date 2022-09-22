@@ -43,6 +43,8 @@ Update the navigation property notes in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

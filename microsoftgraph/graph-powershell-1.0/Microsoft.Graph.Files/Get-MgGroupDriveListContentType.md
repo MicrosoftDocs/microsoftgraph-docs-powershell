@@ -36,6 +36,8 @@ The collection of content types present in this list.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

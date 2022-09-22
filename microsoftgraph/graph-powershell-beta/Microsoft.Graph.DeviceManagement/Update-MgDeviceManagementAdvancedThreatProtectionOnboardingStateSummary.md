@@ -34,6 +34,8 @@ Update the navigation property advancedThreatProtectionOnboardingStateSummary in
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -36,6 +36,8 @@ Get monthlyPrintUsageByUser from reports
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

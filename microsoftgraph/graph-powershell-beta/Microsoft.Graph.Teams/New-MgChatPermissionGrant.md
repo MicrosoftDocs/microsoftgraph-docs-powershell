@@ -44,6 +44,8 @@ Create new navigation property to permissionGrants for chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

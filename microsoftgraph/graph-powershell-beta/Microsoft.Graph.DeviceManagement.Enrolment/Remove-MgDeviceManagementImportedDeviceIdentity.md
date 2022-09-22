@@ -29,6 +29,8 @@ Delete navigation property importedDeviceIdentities for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

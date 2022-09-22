@@ -41,6 +41,8 @@ Update media content for the navigation property photo in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

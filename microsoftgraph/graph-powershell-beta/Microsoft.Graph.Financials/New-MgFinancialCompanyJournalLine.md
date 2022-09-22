@@ -77,6 +77,8 @@ Create new navigation property to journalLines for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Account
 account
 To construct, please use Get-Help -Online and see NOTES section for ACCOUNT properties and create a hash table.

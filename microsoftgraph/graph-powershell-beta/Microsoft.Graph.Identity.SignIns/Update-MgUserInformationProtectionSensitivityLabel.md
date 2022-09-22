@@ -51,6 +51,8 @@ Update the navigation property sensitivityLabels in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -35,6 +35,8 @@ Create new navigation property to userExperienceAnalyticsResourcePerformance for
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

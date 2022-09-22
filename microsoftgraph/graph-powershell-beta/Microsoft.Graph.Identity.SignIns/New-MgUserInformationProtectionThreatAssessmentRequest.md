@@ -49,6 +49,8 @@ A threat assessment request can be one of the following types:
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property windowsFeatureUpdateProfiles for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

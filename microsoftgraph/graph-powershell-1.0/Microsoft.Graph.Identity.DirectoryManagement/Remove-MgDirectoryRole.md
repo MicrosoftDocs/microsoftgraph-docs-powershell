@@ -29,6 +29,8 @@ Delete entity from directoryRoles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectoryRoleId
 key: id of directoryRole
 

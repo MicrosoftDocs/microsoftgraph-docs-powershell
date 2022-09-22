@@ -50,6 +50,708 @@ Create new navigation property to companies for financials
 
 ## EXAMPLES
 
+### Accounts
+.
+To construct, please use Get-Help -Online and see NOTES section for ACCOUNTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccount[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### AgedAccountsPayable
+.
+To construct, please use Get-Help -Online and see NOTES section for AGEDACCOUNTSPAYABLE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAgedAccountsPayable[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### AgedAccountsReceivable
+.
+To construct, please use Get-Help -Online and see NOTES section for AGEDACCOUNTSRECEIVABLE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAgedAccountsReceivable[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### BodyParameter
+company
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCompany
+Parameter Sets: Create
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### BusinessProfileId
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CompanyInformation
+.
+To construct, please use Get-Help -Online and see NOTES section for COMPANYINFORMATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCompanyInformation1[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CountriesRegions
+.
+To construct, please use Get-Help -Online and see NOTES section for COUNTRIESREGIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCountryRegion[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Currencies
+.
+To construct, please use Get-Help -Online and see NOTES section for CURRENCIES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCurrency[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CustomerPaymentJournals
+.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMERPAYMENTJOURNALS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomerPaymentJournal[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CustomerPayments
+.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMERPAYMENTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomerPayment[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Customers
+.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomer[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Dimensions
+.
+To construct, please use Get-Help -Online and see NOTES section for DIMENSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDimension[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### DimensionValues
+.
+To construct, please use Get-Help -Online and see NOTES section for DIMENSIONVALUES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDimensionValue[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### DisplayName
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Employees
+.
+To construct, please use Get-Help -Online and see NOTES section for EMPLOYEES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphEmployee[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### GeneralLedgerEntries
+.
+To construct, please use Get-Help -Online and see NOTES section for GENERALLEDGERENTRIES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphGeneralLedgerEntry[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### ItemCategories
+.
+To construct, please use Get-Help -Online and see NOTES section for ITEMCATEGORIES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphItemCategory[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Items
+.
+To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphItem[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### JournalLines
+.
+To construct, please use Get-Help -Online and see NOTES section for JOURNALLINES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphJournalLine[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Journals
+.
+To construct, please use Get-Help -Online and see NOTES section for JOURNALS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphJournal[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Name
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### PaymentMethods
+.
+To construct, please use Get-Help -Online and see NOTES section for PAYMENTMETHODS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPaymentMethod[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### PaymentTerms
+.
+To construct, please use Get-Help -Online and see NOTES section for PAYMENTTERMS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPaymentTerm[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Picture
+.
+To construct, please use Get-Help -Online and see NOTES section for PICTURE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPicture[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### PurchaseInvoiceLines
+.
+To construct, please use Get-Help -Online and see NOTES section for PURCHASEINVOICELINES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPurchaseInvoiceLine[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### PurchaseInvoices
+.
+To construct, please use Get-Help -Online and see NOTES section for PURCHASEINVOICES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPurchaseInvoice[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SalesCreditMemoLines
+.
+To construct, please use Get-Help -Online and see NOTES section for SALESCREDITMEMOLINES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSalesCreditMemoLine[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SalesCreditMemos
+.
+To construct, please use Get-Help -Online and see NOTES section for SALESCREDITMEMOS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSalesCreditMemo[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SalesInvoiceLines
+.
+To construct, please use Get-Help -Online and see NOTES section for SALESINVOICELINES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSalesInvoiceLine[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SalesInvoices
+.
+To construct, please use Get-Help -Online and see NOTES section for SALESINVOICES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSalesInvoice[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SalesOrderLines
+.
+To construct, please use Get-Help -Online and see NOTES section for SALESORDERLINES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSalesOrderLine[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SalesOrders
+.
+To construct, please use Get-Help -Online and see NOTES section for SALESORDERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSalesOrder[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SalesQuoteLines
+.
+To construct, please use Get-Help -Online and see NOTES section for SALESQUOTELINES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSalesQuoteLine[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SalesQuotes
+.
+To construct, please use Get-Help -Online and see NOTES section for SALESQUOTES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSalesQuote[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### ShipmentMethods
+.
+To construct, please use Get-Help -Online and see NOTES section for SHIPMENTMETHODS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphShipmentMethod[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SystemVersion
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### TaxAreas
+.
+To construct, please use Get-Help -Online and see NOTES section for TAXAREAS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTaxArea[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### TaxGroups
+.
+To construct, please use Get-Help -Online and see NOTES section for TAXGROUPS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTaxGroup[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### UnitsOfMeasure
+.
+To construct, please use Get-Help -Online and see NOTES section for UNITSOFMEASURE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUnitOfMeasure[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Vendors
+.
+To construct, please use Get-Help -Online and see NOTES section for VENDORS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVendor[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## PARAMETERS
+
 ### -Accounts
 .
 To construct, please use Get-Help -Online and see NOTES section for ACCOUNTS properties and create a hash table.
@@ -732,8 +1434,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happen if the cmdlet runs. The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -3038,6 +3739,9 @@ VENDORS <IMicrosoftGraphVendor\[]>: .
   - `[Website <String>]`: 
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

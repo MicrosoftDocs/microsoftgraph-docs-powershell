@@ -29,6 +29,8 @@ Delete navigation property files for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EdiscoveryCaseId
 key: id of ediscoveryCase
 

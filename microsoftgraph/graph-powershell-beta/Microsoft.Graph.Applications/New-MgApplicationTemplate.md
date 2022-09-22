@@ -33,6 +33,8 @@ Add new entity to applicationTemplates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

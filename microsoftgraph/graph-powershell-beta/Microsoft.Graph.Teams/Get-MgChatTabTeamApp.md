@@ -29,6 +29,8 @@ The application that is linked to the tab.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatId
 key: id of chat
 

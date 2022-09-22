@@ -42,6 +42,8 @@ The user experience analytics device scope entity endpoint to trigger on the ser
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

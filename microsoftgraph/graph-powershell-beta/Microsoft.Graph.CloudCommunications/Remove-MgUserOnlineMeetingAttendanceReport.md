@@ -41,6 +41,8 @@ Delete navigation property attendanceReports for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

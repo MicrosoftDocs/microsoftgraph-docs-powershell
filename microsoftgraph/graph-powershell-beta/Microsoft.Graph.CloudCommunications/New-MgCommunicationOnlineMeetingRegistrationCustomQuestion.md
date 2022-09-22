@@ -43,6 +43,8 @@ Create a custom registration question associated with a meetingRegistration obje
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -48,6 +48,8 @@ Update the navigation property history in identityProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Activity
 riskUserActivity
 To construct, please use Get-Help -Online and see NOTES section for ACTIVITY properties and create a hash table.

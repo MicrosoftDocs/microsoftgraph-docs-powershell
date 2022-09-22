@@ -37,6 +37,8 @@ Policy and application status details for this device.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

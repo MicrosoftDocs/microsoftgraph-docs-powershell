@@ -31,6 +31,8 @@ Update the navigation property informationProtection in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

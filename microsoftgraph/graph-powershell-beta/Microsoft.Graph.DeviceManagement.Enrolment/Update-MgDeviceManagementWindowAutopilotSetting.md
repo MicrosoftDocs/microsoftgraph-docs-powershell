@@ -30,6 +30,8 @@ Update the navigation property windowsAutopilotSettings in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

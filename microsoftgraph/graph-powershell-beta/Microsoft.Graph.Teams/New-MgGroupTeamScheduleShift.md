@@ -49,6 +49,8 @@ Create a new shift instance in a schedule.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -34,6 +34,8 @@ Create new navigation property to templates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

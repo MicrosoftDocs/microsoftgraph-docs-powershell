@@ -61,6 +61,8 @@ Update the navigation property configuration in teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

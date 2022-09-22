@@ -21,6 +21,8 @@ Get policy from informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

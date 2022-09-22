@@ -44,6 +44,8 @@ Update the navigation property thumbnails in drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -27,6 +27,8 @@ Invoke function delta
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatMessageId
 key: id of chatMessage
 

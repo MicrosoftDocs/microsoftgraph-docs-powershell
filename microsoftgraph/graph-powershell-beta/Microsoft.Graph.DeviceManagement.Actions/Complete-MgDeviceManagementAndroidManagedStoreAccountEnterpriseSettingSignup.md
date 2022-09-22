@@ -31,6 +31,8 @@ Invoke action completeSignup
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -61,6 +61,8 @@ Create a column for a [site][site] by specifying a [columnDefinition][columnDefi
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

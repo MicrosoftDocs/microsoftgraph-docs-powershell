@@ -36,6 +36,8 @@ List of notes associated with the request.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -36,6 +36,8 @@ The Audit Events
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -49,6 +49,8 @@ This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

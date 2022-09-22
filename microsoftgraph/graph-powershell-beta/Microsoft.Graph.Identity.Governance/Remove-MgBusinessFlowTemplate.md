@@ -29,6 +29,8 @@ Delete entity from businessFlowTemplates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BusinessFlowTemplateId
 key: id of businessFlowTemplate
 

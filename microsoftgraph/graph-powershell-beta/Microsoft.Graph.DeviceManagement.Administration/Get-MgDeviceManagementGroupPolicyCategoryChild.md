@@ -36,6 +36,8 @@ The children categories
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

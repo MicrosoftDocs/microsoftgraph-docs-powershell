@@ -31,6 +31,8 @@ Delete navigation property settingTemplates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementConfigurationPolicyTemplateId
 key: id of deviceManagementConfigurationPolicyTemplate
 

@@ -30,6 +30,8 @@ Delete navigation property deviceSettingStateSummaries for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementIntentDeviceSettingStateSummaryId
 key: id of deviceManagementIntentDeviceSettingStateSummary
 

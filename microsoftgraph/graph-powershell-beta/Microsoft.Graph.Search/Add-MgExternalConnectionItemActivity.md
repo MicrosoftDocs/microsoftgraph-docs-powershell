@@ -45,6 +45,8 @@ Invoke action addActivities
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Activities
 .
 To construct, please use Get-Help -Online and see NOTES section for ACTIVITIES properties and create a hash table.

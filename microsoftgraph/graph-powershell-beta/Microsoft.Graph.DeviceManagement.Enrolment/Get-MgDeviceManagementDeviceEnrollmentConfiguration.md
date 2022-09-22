@@ -36,6 +36,8 @@ The list of device enrollment configurations
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

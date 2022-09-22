@@ -65,6 +65,8 @@ Update the navigation property salesQuotes in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AcceptedDate
 .
 

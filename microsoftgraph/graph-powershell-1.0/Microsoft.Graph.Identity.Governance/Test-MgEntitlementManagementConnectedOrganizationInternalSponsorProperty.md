@@ -65,6 +65,8 @@ To learn more about configuring naming policies, see Configure naming policy.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

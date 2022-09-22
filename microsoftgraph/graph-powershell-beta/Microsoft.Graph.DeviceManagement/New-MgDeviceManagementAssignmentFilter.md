@@ -31,6 +31,8 @@ Create new navigation property to assignmentFilters for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

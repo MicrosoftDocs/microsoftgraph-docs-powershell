@@ -37,6 +37,8 @@ Get roleEligibilitySchedules from roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

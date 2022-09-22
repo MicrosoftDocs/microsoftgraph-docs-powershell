@@ -24,6 +24,8 @@ On premises conditional access will require devices to be both enrolled and comp
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

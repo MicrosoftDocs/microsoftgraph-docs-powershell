@@ -36,6 +36,8 @@ Get enrollment configurations targeted to the user
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

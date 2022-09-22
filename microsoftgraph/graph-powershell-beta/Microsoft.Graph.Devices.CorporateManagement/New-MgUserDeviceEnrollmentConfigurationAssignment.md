@@ -45,6 +45,8 @@ Create new navigation property to assignments for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

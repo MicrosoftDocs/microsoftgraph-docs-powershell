@@ -45,6 +45,8 @@ Update the navigation property extensionProperties in applications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

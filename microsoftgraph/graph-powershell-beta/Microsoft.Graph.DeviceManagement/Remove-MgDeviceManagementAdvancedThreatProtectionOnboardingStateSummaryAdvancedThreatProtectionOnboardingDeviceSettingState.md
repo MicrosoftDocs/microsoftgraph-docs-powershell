@@ -31,6 +31,8 @@ Delete navigation property advancedThreatProtectionOnboardingDeviceSettingStates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdvancedThreatProtectionOnboardingDeviceSettingStateId
 key: id of advancedThreatProtectionOnboardingDeviceSettingState
 

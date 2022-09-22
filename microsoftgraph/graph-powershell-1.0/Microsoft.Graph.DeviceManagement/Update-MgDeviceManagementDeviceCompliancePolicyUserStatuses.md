@@ -47,6 +47,8 @@ Update the navigation property userStatuses in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

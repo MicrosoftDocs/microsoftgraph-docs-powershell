@@ -28,6 +28,8 @@ Create new navigation property to deletedTeams for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

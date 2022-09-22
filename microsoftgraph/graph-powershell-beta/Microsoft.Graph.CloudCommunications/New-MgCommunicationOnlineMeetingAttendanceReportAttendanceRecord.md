@@ -75,6 +75,8 @@ Create new navigation property to attendanceRecords for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

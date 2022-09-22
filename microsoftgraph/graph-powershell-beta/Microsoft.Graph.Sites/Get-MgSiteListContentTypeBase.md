@@ -29,6 +29,8 @@ Parent contentType from which this content type is derived.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContentTypeId
 key: id of contentType
 

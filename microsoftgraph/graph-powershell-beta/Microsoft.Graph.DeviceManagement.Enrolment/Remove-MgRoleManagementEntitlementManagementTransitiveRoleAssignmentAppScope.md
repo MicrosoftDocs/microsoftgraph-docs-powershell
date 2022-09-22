@@ -30,6 +30,8 @@ Delete navigation property appScope for roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

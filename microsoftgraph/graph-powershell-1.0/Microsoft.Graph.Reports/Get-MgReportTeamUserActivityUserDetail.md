@@ -39,6 +39,8 @@ Invoke function getTeamsUserActivityUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

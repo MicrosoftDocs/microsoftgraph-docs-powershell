@@ -38,6 +38,8 @@ Not yet documented
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdvancedThreatProtectionOnboardingDeviceSettingStateId
 key: id of advancedThreatProtectionOnboardingDeviceSettingState
 

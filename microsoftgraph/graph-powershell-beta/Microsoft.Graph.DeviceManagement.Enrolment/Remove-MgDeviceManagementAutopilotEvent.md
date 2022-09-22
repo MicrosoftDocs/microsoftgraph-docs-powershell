@@ -29,6 +29,8 @@ Delete navigation property autopilotEvents for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementAutopilotEventId
 key: id of deviceManagementAutopilotEvent
 

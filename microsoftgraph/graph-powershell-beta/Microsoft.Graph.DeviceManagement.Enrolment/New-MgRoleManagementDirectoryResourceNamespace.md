@@ -30,6 +30,8 @@ Create new navigation property to resourceNamespaces for roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

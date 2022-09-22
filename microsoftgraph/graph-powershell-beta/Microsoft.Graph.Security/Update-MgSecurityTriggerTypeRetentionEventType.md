@@ -47,6 +47,8 @@ Update the navigation property retentionEventTypes in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

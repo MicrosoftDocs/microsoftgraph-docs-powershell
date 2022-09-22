@@ -49,6 +49,8 @@ Update the navigation property tags in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

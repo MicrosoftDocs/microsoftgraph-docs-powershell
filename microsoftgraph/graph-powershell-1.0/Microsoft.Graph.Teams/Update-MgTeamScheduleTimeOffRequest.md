@@ -50,6 +50,8 @@ Update the navigation property timeOffRequests in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

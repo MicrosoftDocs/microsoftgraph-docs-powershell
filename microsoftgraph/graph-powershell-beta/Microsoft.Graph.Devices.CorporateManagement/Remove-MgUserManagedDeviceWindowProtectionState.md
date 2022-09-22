@@ -29,6 +29,8 @@ Delete navigation property windowsProtectionState for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

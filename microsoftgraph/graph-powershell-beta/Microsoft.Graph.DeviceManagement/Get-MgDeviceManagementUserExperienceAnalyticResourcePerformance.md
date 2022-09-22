@@ -37,6 +37,8 @@ User experience analytics resource performance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -29,6 +29,8 @@ Invoke function functions
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationId
 key: id of application
 

@@ -27,6 +27,8 @@ Invoke action checkGrantedPermissionsForApp
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

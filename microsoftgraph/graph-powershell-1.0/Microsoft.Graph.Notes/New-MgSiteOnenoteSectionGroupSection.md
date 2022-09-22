@@ -49,6 +49,8 @@ Create a new onenoteSection in the specified section group.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

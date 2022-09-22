@@ -35,6 +35,8 @@ Create new navigation property to authorizationPolicy for policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -49,6 +49,8 @@ Invoke action updateLanguageFiles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property domainSecurityProfiles for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DomainSecurityProfileId
 key: id of domainSecurityProfile
 

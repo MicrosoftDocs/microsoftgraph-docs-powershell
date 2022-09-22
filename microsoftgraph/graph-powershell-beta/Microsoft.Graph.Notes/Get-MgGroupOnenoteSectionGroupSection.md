@@ -23,6 +23,8 @@ Retrieve a list of onenoteSection objects from the specified section group.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

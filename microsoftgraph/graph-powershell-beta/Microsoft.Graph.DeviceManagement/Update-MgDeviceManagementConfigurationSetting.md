@@ -61,6 +61,8 @@ Update the navigation property configurationSettings in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessTypes
 deviceManagementConfigurationSettingAccessTypes
 

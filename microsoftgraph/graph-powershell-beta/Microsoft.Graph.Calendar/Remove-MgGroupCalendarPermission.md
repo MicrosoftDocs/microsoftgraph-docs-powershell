@@ -29,6 +29,8 @@ Delete navigation property calendarPermissions for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CalendarPermissionId
 key: id of calendarPermission
 

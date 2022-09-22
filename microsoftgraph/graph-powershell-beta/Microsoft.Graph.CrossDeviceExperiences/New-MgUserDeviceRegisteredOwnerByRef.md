@@ -41,6 +41,8 @@ Create new navigation property ref to registeredOwners for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

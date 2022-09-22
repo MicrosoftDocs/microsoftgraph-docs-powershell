@@ -29,6 +29,8 @@ Get roleInfo from privilegedApproval
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

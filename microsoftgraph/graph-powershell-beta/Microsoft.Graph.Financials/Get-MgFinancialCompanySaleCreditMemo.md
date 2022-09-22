@@ -36,6 +36,8 @@ Get salesCreditMemos from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

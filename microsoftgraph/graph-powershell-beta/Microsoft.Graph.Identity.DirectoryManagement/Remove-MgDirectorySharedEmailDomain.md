@@ -29,6 +29,8 @@ Delete navigation property sharedEmailDomains for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

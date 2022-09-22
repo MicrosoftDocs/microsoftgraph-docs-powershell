@@ -38,6 +38,8 @@ Get media content for the navigation property photo from groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

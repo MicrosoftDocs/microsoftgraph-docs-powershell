@@ -30,6 +30,8 @@ Update the navigation property triggerTypes in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

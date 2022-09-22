@@ -36,6 +36,8 @@ Pre-configured synchronization settings for a particular application.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

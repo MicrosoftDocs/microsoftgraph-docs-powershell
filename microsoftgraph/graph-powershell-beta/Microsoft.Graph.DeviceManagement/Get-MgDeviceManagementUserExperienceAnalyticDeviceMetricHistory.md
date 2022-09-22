@@ -37,6 +37,8 @@ User experience analytics device metric history
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

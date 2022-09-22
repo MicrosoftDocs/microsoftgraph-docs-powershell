@@ -28,6 +28,8 @@ The team associated with this group.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

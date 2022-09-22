@@ -29,6 +29,8 @@ Delete navigation property detectedApps for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DetectedAppId
 key: id of detectedApp
 

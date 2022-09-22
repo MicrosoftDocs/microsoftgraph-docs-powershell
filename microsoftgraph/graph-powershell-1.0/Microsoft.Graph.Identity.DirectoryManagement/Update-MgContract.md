@@ -43,6 +43,8 @@ Update entity in contracts
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -27,6 +27,8 @@ Invoke function allowedCalendarSharingRoles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

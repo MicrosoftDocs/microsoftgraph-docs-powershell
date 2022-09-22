@@ -41,6 +41,8 @@ Retrieve the hosted content in an app's icon.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

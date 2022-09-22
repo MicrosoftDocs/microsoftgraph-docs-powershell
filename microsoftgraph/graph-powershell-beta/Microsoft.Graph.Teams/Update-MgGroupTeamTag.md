@@ -44,6 +44,8 @@ Update the navigation property tags in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

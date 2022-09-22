@@ -21,6 +21,8 @@ Delete navigation property labels for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

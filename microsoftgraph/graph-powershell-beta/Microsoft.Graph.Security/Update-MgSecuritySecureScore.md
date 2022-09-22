@@ -49,6 +49,8 @@ Update the navigation property secureScores in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActiveUserCount
 Active user count of the given tenant.
 

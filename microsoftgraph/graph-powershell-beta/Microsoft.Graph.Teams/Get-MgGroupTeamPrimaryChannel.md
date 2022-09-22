@@ -29,6 +29,8 @@ Get the default channel, **General**, of a team.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

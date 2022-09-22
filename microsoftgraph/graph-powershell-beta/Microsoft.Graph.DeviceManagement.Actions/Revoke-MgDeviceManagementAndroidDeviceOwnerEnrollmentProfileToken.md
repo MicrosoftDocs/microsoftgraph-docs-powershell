@@ -29,6 +29,8 @@ Invoke action revokeToken
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AndroidDeviceOwnerEnrollmentProfileId
 key: id of androidDeviceOwnerEnrollmentProfile
 

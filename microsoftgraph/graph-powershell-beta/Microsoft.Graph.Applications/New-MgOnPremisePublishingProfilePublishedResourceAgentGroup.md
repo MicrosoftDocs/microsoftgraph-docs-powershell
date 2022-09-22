@@ -46,6 +46,8 @@ Create new navigation property to agentGroups for onPremisesPublishingProfiles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

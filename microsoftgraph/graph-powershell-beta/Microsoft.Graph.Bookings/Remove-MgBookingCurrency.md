@@ -29,6 +29,8 @@ Delete entity from bookingCurrencies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BookingCurrencyId
 key: id of bookingCurrency
 

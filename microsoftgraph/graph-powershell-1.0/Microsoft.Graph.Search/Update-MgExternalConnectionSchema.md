@@ -45,6 +45,8 @@ Update the navigation property schema in external
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -43,6 +43,8 @@ Delete navigation property relations for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

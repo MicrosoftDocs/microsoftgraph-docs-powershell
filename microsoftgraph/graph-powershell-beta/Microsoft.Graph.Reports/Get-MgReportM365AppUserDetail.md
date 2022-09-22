@@ -39,6 +39,8 @@ Invoke function getM365AppUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

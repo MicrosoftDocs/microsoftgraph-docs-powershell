@@ -32,6 +32,8 @@ Invoke action getAppStatusOverviewReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

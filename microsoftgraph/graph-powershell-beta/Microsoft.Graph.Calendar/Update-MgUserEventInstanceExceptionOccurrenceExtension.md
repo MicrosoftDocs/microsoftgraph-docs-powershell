@@ -43,6 +43,8 @@ Update the navigation property extensions in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

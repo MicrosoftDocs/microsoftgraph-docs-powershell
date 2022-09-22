@@ -29,6 +29,8 @@ Run summary for device management script.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceShellScriptId
 key: id of deviceShellScript
 

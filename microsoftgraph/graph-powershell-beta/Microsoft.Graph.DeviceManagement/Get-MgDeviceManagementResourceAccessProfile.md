@@ -36,6 +36,8 @@ Collection of resource access settings associated with account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

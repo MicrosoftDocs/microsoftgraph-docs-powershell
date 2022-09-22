@@ -47,6 +47,8 @@ Create new navigation property to scheduledActionsForRule for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -30,6 +30,8 @@ The user experience analytics best practices metrics.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserMailFolderMultiValueExtendedProperty
 
 ## SYNOPSIS
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the mailFolder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -33,9 +35,13 @@ Get-MgUserMailFolderMultiValueExtendedProperty -InputObject <IMailIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the mailFolder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

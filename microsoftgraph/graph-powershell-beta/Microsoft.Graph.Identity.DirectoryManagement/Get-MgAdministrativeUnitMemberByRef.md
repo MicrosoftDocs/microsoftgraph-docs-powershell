@@ -25,6 +25,8 @@ Supports $expand.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdministrativeUnitId
 key: id of administrativeUnit
 

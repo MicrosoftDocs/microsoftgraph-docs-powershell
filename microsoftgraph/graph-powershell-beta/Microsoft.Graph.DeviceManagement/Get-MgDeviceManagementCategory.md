@@ -36,6 +36,8 @@ The available categories
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

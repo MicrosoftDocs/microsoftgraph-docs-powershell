@@ -29,6 +29,8 @@ Delete navigation property userStateSummary for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementIntentId
 key: id of deviceManagementIntent
 

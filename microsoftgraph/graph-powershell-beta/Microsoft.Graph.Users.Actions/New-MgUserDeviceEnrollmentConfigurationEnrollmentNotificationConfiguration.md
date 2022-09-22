@@ -47,6 +47,8 @@ Invoke action createEnrollmentNotificationConfiguration
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

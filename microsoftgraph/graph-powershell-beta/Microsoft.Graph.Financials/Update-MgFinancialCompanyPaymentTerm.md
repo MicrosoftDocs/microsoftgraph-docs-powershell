@@ -46,6 +46,8 @@ Update the navigation property paymentTerms in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

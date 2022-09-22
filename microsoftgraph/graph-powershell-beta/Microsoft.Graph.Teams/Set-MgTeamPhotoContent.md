@@ -29,6 +29,8 @@ Update media content for the navigation property photo in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

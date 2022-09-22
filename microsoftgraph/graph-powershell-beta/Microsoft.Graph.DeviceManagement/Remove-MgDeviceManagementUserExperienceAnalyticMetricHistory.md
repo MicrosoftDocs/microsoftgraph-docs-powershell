@@ -29,6 +29,8 @@ Delete navigation property userExperienceAnalyticsMetricHistory for deviceManage
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

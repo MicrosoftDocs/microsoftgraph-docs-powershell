@@ -29,6 +29,8 @@ Delete navigation property resourceAccessProfiles for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementResourceAccessProfileBaseId
 key: id of deviceManagementResourceAccessProfileBase
 

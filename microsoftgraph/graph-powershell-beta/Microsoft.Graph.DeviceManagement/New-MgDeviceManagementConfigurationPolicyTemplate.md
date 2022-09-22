@@ -36,6 +36,8 @@ Create new navigation property to configurationPolicyTemplates for deviceManagem
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

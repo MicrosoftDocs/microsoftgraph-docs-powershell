@@ -47,6 +47,8 @@ This function is transitive.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

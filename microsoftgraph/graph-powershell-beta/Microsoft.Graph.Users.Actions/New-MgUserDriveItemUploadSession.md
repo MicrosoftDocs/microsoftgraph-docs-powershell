@@ -48,6 +48,8 @@ To upload a file using an upload session:
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

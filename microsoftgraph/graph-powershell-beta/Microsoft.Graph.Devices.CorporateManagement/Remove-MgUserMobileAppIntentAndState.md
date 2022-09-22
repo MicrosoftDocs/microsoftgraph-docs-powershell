@@ -29,6 +29,8 @@ Delete navigation property mobileAppIntentAndStates for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

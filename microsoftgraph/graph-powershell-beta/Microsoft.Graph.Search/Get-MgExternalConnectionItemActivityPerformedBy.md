@@ -29,6 +29,8 @@ Represents an identity used to identify who is responsible for the activity.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

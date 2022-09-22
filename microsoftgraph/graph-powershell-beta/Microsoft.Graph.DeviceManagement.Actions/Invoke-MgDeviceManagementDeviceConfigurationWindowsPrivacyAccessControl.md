@@ -48,6 +48,8 @@ Invoke action windowsPrivacyAccessControls
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

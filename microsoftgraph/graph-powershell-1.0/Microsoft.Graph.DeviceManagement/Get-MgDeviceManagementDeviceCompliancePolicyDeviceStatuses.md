@@ -36,6 +36,8 @@ List of DeviceComplianceDeviceStatus.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

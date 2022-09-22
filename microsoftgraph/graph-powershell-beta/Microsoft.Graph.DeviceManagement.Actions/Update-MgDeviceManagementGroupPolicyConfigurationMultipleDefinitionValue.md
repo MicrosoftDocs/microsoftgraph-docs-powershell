@@ -48,6 +48,8 @@ Invoke action updateDefinitionValues
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Added
 .
 To construct, please use Get-Help -Online and see NOTES section for ADDED properties and create a hash table.

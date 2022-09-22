@@ -29,6 +29,8 @@ Delete navigation property attendanceReports for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

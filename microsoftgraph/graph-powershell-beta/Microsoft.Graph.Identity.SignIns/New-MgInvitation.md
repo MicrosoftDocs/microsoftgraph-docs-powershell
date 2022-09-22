@@ -35,6 +35,8 @@ When creating a new invitation you have several options available:
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

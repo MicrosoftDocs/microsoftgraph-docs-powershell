@@ -44,6 +44,8 @@ Create new navigation property to thumbnails for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

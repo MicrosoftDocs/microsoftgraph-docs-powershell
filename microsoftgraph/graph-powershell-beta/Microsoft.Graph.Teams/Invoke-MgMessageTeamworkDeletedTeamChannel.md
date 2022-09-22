@@ -27,6 +27,8 @@ Invoke function allMessages
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeletedTeamId
 key: id of deletedTeam
 

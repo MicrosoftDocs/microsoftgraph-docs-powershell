@@ -36,6 +36,8 @@ The managed devices associated with the user.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

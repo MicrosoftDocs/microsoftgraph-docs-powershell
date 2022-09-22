@@ -36,6 +36,8 @@ The list of Mobile threat Defense connectors configured by the tenant.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -31,6 +31,8 @@ This allows you to maintain and synchronize \na local store of a user's mail fol
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.

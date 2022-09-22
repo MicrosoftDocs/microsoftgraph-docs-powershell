@@ -30,6 +30,8 @@ Delete navigation property hostedContents for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

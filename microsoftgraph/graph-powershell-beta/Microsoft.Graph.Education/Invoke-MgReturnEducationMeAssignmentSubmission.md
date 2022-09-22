@@ -33,6 +33,8 @@ This action can only be done by the teacher.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

@@ -43,6 +43,8 @@ Create new navigation property to results for informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

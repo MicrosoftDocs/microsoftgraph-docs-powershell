@@ -36,6 +36,8 @@ Entity representing the configuration of a cached report
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

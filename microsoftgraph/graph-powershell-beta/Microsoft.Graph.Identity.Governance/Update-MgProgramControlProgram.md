@@ -69,6 +69,8 @@ Update the navigation property program in programControls
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

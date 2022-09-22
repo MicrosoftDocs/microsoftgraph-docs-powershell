@@ -62,6 +62,8 @@ Add a column to a [content type][contentType] in a site or list by specifying a 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

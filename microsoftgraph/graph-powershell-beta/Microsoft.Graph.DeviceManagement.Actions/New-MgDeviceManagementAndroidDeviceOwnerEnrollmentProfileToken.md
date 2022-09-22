@@ -45,6 +45,8 @@ Invoke action createToken
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

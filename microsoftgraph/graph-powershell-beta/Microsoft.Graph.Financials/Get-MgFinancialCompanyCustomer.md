@@ -36,6 +36,8 @@ Get customers from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

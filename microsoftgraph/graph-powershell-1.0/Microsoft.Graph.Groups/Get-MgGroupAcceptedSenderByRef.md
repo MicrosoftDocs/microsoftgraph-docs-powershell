@@ -22,6 +22,8 @@ Users in the accepted senders list can post to conversations of the group (ident
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

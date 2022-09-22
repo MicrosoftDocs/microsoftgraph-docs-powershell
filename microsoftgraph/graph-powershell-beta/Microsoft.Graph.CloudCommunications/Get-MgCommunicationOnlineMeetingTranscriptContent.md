@@ -31,6 +31,8 @@ Read-only.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CallTranscriptId
 key: id of callTranscript
 

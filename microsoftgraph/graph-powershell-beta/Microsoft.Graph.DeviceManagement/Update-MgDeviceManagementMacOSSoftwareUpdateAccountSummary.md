@@ -51,6 +51,8 @@ Update the navigation property macOSSoftwareUpdateAccountSummaries in deviceMana
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

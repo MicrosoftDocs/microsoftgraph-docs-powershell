@@ -39,6 +39,8 @@ A list of unsupported group policy extensions inside the Group Policy Object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

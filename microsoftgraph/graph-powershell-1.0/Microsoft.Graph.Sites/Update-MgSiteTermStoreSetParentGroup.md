@@ -45,6 +45,8 @@ Update the navigation property parentGroup in sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

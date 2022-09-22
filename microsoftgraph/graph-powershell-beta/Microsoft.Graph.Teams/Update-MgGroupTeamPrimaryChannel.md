@@ -51,6 +51,8 @@ Update the navigation property primaryChannel in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

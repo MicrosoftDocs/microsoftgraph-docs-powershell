@@ -23,6 +23,8 @@ List the recent activities that took place on an item or under a hierarchy.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

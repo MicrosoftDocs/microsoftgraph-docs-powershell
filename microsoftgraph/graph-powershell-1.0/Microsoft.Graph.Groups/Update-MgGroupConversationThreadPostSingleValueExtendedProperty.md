@@ -48,6 +48,8 @@ Update the navigation property singleValueExtendedProperties in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

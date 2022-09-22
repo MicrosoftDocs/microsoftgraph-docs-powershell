@@ -45,6 +45,8 @@ Update the navigation property schedulingGroups in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

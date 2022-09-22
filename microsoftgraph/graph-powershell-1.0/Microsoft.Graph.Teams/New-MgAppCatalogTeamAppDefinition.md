@@ -50,6 +50,8 @@ This API specifically updates an app published to your organization's app catalo
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

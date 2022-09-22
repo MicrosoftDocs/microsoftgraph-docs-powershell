@@ -30,6 +30,8 @@ Delete navigation property hostedContents for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatMessageHostedContentId
 key: id of chatMessageHostedContent
 

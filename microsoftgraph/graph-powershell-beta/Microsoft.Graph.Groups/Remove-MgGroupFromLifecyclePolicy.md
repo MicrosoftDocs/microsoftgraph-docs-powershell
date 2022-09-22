@@ -43,6 +43,8 @@ Invoke action removeGroup
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

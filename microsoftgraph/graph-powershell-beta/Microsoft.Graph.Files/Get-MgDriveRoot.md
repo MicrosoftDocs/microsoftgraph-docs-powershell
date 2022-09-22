@@ -28,6 +28,8 @@ Retrieve the metadata for a driveItem in a drive by file system path or ID.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

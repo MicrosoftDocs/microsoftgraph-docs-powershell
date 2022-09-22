@@ -47,6 +47,8 @@ Update the navigation property sharedWithTeams in teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

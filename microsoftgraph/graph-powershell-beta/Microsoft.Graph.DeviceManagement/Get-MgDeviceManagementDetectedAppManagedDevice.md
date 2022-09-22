@@ -36,6 +36,8 @@ The devices that have the discovered application installed
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

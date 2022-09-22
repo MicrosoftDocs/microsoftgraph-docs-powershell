@@ -41,6 +41,8 @@ Delete navigation property itemCategories for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

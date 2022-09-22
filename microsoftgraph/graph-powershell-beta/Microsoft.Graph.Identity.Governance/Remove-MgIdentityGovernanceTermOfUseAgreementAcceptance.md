@@ -41,6 +41,8 @@ Delete navigation property agreementAcceptances for identityGovernance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgreementAcceptanceId
 key: id of agreementAcceptance
 

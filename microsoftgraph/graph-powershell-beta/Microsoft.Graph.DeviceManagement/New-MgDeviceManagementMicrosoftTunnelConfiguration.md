@@ -33,6 +33,8 @@ Create new navigation property to microsoftTunnelConfigurations for deviceManage
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

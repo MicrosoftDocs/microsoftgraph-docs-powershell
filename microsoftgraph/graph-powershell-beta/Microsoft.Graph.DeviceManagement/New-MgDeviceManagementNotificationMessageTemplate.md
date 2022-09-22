@@ -32,6 +32,8 @@ Create new navigation property to notificationMessageTemplates for deviceManagem
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

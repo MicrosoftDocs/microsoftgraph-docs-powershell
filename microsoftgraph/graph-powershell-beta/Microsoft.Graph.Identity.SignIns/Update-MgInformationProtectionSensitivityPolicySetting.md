@@ -31,6 +31,8 @@ Update the navigation property sensitivityPolicySettings in informationProtectio
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

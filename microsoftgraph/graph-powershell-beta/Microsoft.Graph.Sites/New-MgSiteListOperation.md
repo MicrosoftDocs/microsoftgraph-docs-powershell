@@ -47,6 +47,8 @@ Create new navigation property to operations for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

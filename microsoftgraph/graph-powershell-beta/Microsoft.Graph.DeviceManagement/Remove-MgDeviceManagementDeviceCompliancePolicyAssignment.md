@@ -29,6 +29,8 @@ Delete navigation property assignments for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceCompliancePolicyAssignmentId
 key: id of deviceCompliancePolicyAssignment
 

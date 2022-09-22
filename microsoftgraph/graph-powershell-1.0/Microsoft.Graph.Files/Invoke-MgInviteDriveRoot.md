@@ -46,6 +46,8 @@ Sends a sharing invitation for a **driveItem**.\nA sharing invitation provides p
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

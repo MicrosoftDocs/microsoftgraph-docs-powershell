@@ -29,6 +29,8 @@ Get root from shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

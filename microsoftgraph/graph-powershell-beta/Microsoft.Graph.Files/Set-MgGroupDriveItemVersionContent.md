@@ -30,6 +30,8 @@ Update content for the navigation property versions in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

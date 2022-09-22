@@ -29,6 +29,8 @@ Delete navigation property hostSecurityProfiles for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -HostSecurityProfileId
 key: id of hostSecurityProfile
 

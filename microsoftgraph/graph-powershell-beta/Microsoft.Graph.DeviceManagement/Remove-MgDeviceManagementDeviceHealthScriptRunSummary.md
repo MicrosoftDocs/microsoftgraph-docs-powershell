@@ -29,6 +29,8 @@ Delete navigation property runSummary for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceHealthScriptId
 key: id of deviceHealthScript
 

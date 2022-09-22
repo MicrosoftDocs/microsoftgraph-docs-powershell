@@ -43,6 +43,8 @@ This allows you to maintain and synchronize a local store of events in the speci
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CalendarId
 key: id of calendar
 

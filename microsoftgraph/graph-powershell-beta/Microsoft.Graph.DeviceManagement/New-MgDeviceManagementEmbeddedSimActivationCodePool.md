@@ -32,6 +32,8 @@ Create new navigation property to embeddedSIMActivationCodePools for deviceManag
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivationCodeCount
 The total count of activation codes which belong to this pool.
 

@@ -22,6 +22,8 @@ The singleton Android for Work settings entity.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

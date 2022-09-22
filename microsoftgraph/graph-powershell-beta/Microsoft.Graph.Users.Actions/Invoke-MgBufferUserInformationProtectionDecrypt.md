@@ -45,6 +45,8 @@ Invoke action decryptBuffer
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -43,6 +43,8 @@ Create new navigation property to hostedContents for chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

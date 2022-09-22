@@ -42,6 +42,8 @@ Update the navigation property sharedEmailDomains in directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

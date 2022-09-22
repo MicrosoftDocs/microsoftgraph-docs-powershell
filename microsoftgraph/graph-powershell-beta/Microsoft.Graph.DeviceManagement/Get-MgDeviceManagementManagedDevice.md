@@ -36,6 +36,8 @@ The list of managed devices.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -75,6 +75,8 @@ Update the navigation property root in drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -45,6 +45,8 @@ Update the navigation property currencies in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -36,6 +36,8 @@ Get attachmentSessions from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

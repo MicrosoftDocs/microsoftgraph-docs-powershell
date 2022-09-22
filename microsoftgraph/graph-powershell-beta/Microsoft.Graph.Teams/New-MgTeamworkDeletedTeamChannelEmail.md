@@ -34,6 +34,8 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

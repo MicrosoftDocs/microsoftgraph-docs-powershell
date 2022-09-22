@@ -30,6 +30,8 @@ Delete navigation property assignments for officeConfiguration
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -29,6 +29,8 @@ Delete navigation property historyItems for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivityHistoryItemId
 key: id of activityHistoryItem
 

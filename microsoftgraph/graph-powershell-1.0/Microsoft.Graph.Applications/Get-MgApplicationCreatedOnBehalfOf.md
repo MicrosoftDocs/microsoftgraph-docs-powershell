@@ -31,6 +31,8 @@ Read-only.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationId
 key: id of application
 

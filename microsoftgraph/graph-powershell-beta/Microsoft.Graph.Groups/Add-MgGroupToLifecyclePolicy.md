@@ -43,6 +43,8 @@ Invoke action addGroup
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

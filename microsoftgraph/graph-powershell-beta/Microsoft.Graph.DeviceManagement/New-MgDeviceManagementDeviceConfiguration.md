@@ -41,6 +41,8 @@ Create new navigation property to deviceConfigurations for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

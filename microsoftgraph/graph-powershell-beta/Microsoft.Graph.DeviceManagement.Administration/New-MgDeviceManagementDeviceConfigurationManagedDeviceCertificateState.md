@@ -34,6 +34,8 @@ Create new navigation property to deviceConfigurationsAllManagedDeviceCertificat
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

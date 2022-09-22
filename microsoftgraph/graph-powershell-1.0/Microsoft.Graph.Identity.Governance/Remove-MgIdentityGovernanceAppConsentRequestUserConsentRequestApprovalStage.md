@@ -31,6 +31,8 @@ Delete navigation property stages for identityGovernance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AppConsentRequestId
 key: id of appConsentRequest
 

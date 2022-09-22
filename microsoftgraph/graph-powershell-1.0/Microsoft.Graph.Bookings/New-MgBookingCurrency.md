@@ -28,6 +28,8 @@ Create new navigation property to bookingCurrencies for solutions
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

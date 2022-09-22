@@ -21,6 +21,8 @@ Get bitlocker from informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -45,6 +45,8 @@ Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by r
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

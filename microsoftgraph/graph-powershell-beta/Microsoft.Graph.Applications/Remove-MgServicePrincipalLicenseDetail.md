@@ -29,6 +29,8 @@ Delete navigation property licenseDetails for servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

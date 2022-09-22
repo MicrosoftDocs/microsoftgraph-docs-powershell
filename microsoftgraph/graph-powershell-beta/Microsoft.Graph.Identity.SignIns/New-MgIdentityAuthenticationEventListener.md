@@ -30,6 +30,8 @@ Create new navigation property to authenticationEventListeners for identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

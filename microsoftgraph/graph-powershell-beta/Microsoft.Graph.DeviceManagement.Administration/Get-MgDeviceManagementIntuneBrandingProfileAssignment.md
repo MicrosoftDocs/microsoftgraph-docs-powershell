@@ -36,6 +36,8 @@ The list of group assignments for the branding profile
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

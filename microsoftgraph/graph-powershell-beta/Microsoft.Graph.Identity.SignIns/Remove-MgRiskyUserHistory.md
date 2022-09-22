@@ -29,6 +29,8 @@ Delete navigation property history for identityProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

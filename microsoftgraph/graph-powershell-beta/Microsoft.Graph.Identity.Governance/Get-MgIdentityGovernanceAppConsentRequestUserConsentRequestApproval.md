@@ -29,6 +29,8 @@ Approval decisions associated with a request.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AppConsentRequestId
 key: id of appConsentRequest
 

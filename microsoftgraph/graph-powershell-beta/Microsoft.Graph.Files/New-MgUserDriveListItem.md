@@ -57,6 +57,8 @@ Create a new [listItem][] in a [list][].
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Activities
 The list of recent activities that took place on this item.
 To construct, please use Get-Help -Online and see NOTES section for ACTIVITIES properties and create a hash table.

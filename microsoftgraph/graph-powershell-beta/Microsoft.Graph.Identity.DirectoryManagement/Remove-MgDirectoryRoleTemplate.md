@@ -29,6 +29,8 @@ Delete entity from directoryRoleTemplates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectoryRoleTemplateId
 key: id of directoryRoleTemplate
 

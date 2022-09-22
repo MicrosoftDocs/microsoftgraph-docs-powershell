@@ -36,6 +36,8 @@ Get accounts from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccountId
 key: id of account
 

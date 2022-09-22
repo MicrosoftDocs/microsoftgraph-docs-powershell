@@ -32,6 +32,8 @@ Create new navigation property to remoteActionAudits for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Action
 Remote actions Intune supports.
 

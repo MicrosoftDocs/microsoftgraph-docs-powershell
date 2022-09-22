@@ -30,6 +30,8 @@ Generates a web token that is used in an embeddable component.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

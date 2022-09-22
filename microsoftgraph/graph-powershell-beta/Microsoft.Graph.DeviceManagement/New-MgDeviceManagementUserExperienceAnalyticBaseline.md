@@ -36,6 +36,8 @@ Create new navigation property to userExperienceAnalyticsBaselines for deviceMan
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

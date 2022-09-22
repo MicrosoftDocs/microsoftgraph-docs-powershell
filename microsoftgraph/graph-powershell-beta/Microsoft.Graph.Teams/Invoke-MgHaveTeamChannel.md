@@ -29,6 +29,8 @@ Invoke function doesUserHaveAccess
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

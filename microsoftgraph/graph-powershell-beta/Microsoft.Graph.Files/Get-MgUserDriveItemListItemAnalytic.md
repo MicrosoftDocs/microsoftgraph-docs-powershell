@@ -29,6 +29,8 @@ Analytics about the view activities that took place on this item.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

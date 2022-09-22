@@ -29,6 +29,8 @@ Delete navigation property contactMergeSuggestions for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

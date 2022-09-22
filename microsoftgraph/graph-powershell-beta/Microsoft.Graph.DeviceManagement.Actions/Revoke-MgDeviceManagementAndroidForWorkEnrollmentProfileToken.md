@@ -29,6 +29,8 @@ Invoke action revokeToken
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AndroidForWorkEnrollmentProfileId
 key: id of androidForWorkEnrollmentProfile
 

@@ -30,6 +30,8 @@ Add new entity to privilegedRoles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

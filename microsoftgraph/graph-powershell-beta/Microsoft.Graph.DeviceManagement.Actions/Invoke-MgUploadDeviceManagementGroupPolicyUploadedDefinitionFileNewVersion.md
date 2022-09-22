@@ -50,6 +50,8 @@ Invoke action uploadNewVersion
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

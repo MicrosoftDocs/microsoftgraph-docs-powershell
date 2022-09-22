@@ -29,6 +29,8 @@ Delete navigation property transcripts for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CallTranscriptId
 key: id of callTranscript
 

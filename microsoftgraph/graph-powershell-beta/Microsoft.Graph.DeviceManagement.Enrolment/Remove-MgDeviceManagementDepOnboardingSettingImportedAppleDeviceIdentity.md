@@ -31,6 +31,8 @@ Delete navigation property importedAppleDeviceIdentities for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DepOnboardingSettingId
 key: id of depOnboardingSetting
 

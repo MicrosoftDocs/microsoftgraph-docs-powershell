@@ -29,6 +29,8 @@ Delete navigation property sessions for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CallRecordId
 key: id of callRecord
 

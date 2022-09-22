@@ -45,6 +45,8 @@ Update the navigation property synchronization in applications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

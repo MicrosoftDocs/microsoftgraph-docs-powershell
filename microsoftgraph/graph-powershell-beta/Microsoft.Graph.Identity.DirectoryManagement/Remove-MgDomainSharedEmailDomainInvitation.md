@@ -29,6 +29,8 @@ Delete navigation property sharedEmailDomainInvitations for domains
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DomainId
 key: id of domain
 

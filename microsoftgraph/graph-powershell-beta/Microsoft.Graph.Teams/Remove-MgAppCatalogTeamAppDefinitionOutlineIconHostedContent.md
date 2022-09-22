@@ -29,6 +29,8 @@ Delete navigation property hostedContent for appCatalogs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

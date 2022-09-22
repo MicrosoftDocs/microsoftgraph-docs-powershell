@@ -29,6 +29,8 @@ Create new navigation property to supportedRegions for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

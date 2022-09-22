@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserMailFolderSingleValueExtendedProperty
 
 ## SYNOPSIS
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the mailFolder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -33,9 +35,13 @@ Get-MgUserMailFolderSingleValueExtendedProperty -InputObject <IMailIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the mailFolder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

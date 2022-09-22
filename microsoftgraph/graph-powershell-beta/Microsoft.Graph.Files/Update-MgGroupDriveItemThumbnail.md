@@ -46,6 +46,8 @@ Update the navigation property thumbnails in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

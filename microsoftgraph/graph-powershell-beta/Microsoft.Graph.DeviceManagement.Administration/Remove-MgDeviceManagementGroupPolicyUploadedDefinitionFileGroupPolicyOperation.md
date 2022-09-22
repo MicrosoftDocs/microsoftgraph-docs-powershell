@@ -31,6 +31,8 @@ Delete navigation property groupPolicyOperations for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupPolicyOperationId
 key: id of groupPolicyOperation
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserInferenceClassificationOverride
 
 ## SYNOPSIS
-Get overrides from users
+A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserInferenceClassificationOverride -InputObject <IMailIdentity> [-Propert
 ```
 
 ## DESCRIPTION
-Get overrides from users
+A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

@@ -30,6 +30,8 @@ Delete navigation property attachments for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttachmentId
 key: id of attachment
 

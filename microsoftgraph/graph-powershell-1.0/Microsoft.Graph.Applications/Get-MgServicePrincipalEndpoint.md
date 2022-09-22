@@ -36,6 +36,8 @@ Get endpoints from servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

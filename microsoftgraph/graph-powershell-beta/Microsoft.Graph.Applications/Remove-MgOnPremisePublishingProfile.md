@@ -29,6 +29,8 @@ Delete entity from onPremisesPublishingProfiles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

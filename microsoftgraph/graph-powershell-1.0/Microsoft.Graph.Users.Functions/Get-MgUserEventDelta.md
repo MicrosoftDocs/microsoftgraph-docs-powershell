@@ -33,6 +33,8 @@ This allows you to maintain and synchronize a local store of events in the speci
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.

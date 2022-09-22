@@ -36,6 +36,8 @@ Create new navigation property to userExperienceAnalyticsDevicePerformance for d
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

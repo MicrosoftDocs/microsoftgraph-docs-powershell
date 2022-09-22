@@ -32,6 +32,8 @@ Delete navigation property scheduledActionConfigurations for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementComplianceActionItemId
 key: id of deviceManagementComplianceActionItem
 

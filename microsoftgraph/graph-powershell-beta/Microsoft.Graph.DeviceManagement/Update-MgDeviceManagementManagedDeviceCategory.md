@@ -43,6 +43,8 @@ Update the navigation property deviceCategory in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

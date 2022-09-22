@@ -34,6 +34,8 @@ Create new navigation property to deviceCompliancePolicySettingStateSummaries fo
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

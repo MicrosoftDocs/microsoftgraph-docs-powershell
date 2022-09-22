@@ -33,6 +33,8 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.

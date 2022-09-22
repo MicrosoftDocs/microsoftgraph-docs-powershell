@@ -29,6 +29,8 @@ Invoke function assignedPrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectoryScopeId
 Usage: directoryScopeId='@directoryScopeId'
 

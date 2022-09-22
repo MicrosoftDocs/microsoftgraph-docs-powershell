@@ -36,6 +36,8 @@ Get externalColumns from groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

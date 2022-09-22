@@ -45,6 +45,8 @@ Play lost mode sound
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

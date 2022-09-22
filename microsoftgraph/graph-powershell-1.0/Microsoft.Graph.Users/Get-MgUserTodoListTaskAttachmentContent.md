@@ -29,6 +29,8 @@ Get media content for the navigation property attachments from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttachmentBaseId
 key: id of attachmentBase
 

@@ -22,6 +22,8 @@ Get joinedGroups from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

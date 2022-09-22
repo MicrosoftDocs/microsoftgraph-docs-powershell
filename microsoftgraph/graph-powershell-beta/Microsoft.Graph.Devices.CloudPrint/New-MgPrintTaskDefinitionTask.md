@@ -45,6 +45,8 @@ Create new navigation property to tasks for print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

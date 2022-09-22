@@ -46,6 +46,8 @@ Update the navigation property sharedWithTeams in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

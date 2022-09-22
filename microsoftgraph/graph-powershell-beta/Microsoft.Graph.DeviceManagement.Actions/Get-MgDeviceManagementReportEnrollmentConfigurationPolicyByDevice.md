@@ -32,6 +32,8 @@ Invoke action getEnrollmentConfigurationPoliciesByDevice
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

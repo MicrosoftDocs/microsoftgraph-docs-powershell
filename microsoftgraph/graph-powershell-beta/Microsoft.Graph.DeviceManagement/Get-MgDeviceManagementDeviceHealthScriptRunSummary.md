@@ -29,6 +29,8 @@ High level run summary for device health script.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceHealthScriptId
 key: id of deviceHealthScript
 

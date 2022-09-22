@@ -31,6 +31,8 @@ The user experience analytics resource performance metrics.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

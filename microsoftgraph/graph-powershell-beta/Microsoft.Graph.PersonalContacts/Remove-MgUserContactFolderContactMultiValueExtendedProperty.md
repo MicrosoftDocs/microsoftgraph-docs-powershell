@@ -30,6 +30,8 @@ Delete navigation property multiValueExtendedProperties for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContactFolderId
 key: id of contactFolder
 

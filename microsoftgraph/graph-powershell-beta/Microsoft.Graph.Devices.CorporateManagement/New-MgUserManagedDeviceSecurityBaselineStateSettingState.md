@@ -50,6 +50,8 @@ Create new navigation property to settingStates for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

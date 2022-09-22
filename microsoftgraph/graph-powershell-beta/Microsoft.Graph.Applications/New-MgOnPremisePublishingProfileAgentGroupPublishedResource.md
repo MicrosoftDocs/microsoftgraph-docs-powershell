@@ -46,6 +46,8 @@ Create new navigation property to publishedResources for onPremisesPublishingPro
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

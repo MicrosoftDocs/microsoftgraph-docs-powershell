@@ -62,6 +62,8 @@ Update the navigation property purchaseInvoices in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

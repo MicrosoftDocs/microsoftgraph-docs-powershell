@@ -43,6 +43,8 @@ Update the navigation property columnLinks in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

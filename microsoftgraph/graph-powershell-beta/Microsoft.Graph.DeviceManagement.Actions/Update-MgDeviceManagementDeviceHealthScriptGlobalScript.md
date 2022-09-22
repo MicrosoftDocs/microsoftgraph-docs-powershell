@@ -43,6 +43,8 @@ Update the Proprietary Device Health Script
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

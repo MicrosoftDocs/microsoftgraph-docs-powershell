@@ -57,6 +57,8 @@ Update the navigation property calendarView in solutions
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalInformation
 Additional information that is sent to the customer when an appointment is confirmed.
 
@@ -198,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilledAttendeesCount
-The current number of customers in the appointment
+The current number of customers in the appointment.
 
 ```yaml
 Type: Int32

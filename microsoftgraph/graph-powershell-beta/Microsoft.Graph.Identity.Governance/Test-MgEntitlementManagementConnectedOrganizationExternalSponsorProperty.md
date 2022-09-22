@@ -63,6 +63,8 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

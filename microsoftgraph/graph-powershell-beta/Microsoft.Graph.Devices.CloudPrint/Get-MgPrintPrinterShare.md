@@ -67,6 +67,8 @@ Get share from print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

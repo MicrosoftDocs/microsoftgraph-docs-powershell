@@ -36,6 +36,8 @@ The device configurations.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

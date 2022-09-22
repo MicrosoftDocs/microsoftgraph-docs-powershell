@@ -43,6 +43,8 @@ Create new navigation property to attachments for admin
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

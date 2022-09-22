@@ -39,6 +39,8 @@ Invoke function getYammerActivityUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

@@ -29,6 +29,8 @@ Get itemCategory from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

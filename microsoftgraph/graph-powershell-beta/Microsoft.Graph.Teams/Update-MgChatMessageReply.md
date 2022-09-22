@@ -59,6 +59,8 @@ Update the navigation property replies in chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

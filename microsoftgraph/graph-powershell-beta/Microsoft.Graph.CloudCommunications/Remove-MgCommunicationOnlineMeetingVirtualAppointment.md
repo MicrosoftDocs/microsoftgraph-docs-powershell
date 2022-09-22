@@ -29,6 +29,8 @@ Delete navigation property virtualAppointment for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

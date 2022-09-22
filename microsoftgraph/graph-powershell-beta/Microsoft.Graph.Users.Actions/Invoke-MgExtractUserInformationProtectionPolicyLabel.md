@@ -46,6 +46,8 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

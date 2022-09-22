@@ -36,6 +36,8 @@ The terms and conditions associated with device management of the company.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

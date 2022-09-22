@@ -30,6 +30,8 @@ Update informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

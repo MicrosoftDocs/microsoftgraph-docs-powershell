@@ -43,6 +43,8 @@ Update the navigation property licenseDetails in servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

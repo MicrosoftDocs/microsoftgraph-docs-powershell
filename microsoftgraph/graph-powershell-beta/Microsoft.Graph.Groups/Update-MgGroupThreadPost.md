@@ -101,6 +101,8 @@ Update the navigation property posts in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

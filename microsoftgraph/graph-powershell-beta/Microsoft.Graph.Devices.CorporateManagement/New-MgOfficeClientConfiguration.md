@@ -33,6 +33,8 @@ Create new navigation property to clientConfigurations for officeConfiguration
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

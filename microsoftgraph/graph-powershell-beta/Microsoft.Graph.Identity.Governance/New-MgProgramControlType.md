@@ -29,6 +29,8 @@ Add new entity to programControlTypes
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

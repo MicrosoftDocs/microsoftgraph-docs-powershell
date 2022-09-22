@@ -46,6 +46,8 @@ Update the navigation property parentGroup in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

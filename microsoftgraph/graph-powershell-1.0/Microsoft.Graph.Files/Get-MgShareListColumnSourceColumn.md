@@ -29,6 +29,8 @@ The source column for the content type column.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ColumnDefinitionId
 key: id of columnDefinition
 

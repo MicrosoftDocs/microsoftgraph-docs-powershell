@@ -40,6 +40,8 @@ This operation allows both admins and eligible users to add, revoke, or extend e
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Action
 Represents the type of operation on the role eligibility request.
 The possible values are: AdminAssign: For administrators to assign eligible roles to principals.AdminRemove: For administrators to remove eligible roles from principals.

@@ -29,6 +29,8 @@ Invoke action send
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

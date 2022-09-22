@@ -29,6 +29,8 @@ Delete navigation property resourceOperations for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

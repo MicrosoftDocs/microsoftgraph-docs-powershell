@@ -30,6 +30,8 @@ Delete navigation property replies for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

@@ -55,6 +55,8 @@ Update the navigation property comanagementEligibleDevices in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

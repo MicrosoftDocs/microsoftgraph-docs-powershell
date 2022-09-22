@@ -43,6 +43,8 @@ Create new navigation property to sharedWithTeams for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

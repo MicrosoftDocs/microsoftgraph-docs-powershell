@@ -29,6 +29,8 @@ Delete navigation property riskDetections for identityProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

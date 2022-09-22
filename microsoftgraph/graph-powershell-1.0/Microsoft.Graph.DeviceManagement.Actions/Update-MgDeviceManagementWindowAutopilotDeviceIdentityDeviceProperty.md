@@ -47,6 +47,8 @@ Updates properties on Autopilot devices.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

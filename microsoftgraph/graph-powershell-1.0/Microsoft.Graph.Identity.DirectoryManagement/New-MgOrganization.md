@@ -38,6 +38,8 @@ Add new entity to organization
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -45,6 +45,8 @@ Invoke action updateSettings
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

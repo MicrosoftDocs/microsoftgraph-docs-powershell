@@ -22,6 +22,8 @@ Delete navigation property userExperienceAnalyticsBatteryHealthCapacityDetails f
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

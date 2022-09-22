@@ -29,6 +29,8 @@ Logout shared Apple device active user
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.

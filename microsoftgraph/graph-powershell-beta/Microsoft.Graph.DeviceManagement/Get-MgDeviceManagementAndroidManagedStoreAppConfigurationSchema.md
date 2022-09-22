@@ -37,6 +37,8 @@ Android Enterprise app configuration schema entities.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

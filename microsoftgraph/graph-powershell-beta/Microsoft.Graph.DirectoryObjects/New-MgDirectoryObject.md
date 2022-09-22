@@ -28,6 +28,8 @@ Add new entity to directoryObjects
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

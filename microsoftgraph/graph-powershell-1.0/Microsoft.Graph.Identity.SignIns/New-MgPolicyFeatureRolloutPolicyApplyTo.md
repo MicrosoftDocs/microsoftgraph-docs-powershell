@@ -42,6 +42,8 @@ Create new navigation property to appliesTo for policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

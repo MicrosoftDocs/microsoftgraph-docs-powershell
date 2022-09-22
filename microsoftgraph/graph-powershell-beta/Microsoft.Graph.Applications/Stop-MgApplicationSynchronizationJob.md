@@ -29,6 +29,8 @@ Invoke action stop
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationId
 key: id of application
 

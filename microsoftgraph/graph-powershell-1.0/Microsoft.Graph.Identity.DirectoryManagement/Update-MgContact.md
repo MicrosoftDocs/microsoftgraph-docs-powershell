@@ -55,6 +55,8 @@ Update entity in contacts
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

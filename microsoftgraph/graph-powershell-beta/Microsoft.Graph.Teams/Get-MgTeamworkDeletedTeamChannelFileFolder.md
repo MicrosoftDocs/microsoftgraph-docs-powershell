@@ -29,6 +29,8 @@ Get the metadata for the location where the files of a channel are stored.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

@@ -29,6 +29,8 @@ Delete navigation property securityBaselineStates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

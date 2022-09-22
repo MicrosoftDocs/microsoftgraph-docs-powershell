@@ -31,6 +31,8 @@ The teacher determines the resources to upload in the assignment's folder.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

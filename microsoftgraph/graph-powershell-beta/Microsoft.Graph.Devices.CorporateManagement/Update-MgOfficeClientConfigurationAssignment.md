@@ -45,6 +45,8 @@ Update the navigation property assignments in officeConfiguration
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -32,6 +32,8 @@ Invoke action getComplianceSettingsReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

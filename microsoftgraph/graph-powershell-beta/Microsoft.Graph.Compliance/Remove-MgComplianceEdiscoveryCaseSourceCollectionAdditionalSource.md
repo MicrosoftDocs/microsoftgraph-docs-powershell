@@ -29,6 +29,8 @@ Delete navigation property additionalSources for compliance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CaseId
 key: id of case
 

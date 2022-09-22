@@ -34,6 +34,8 @@ Create new navigation property to hostSecurityProfiles for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

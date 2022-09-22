@@ -29,6 +29,8 @@ Delete navigation property primaryChannel for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

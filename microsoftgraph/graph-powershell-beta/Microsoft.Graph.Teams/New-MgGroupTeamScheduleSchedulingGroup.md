@@ -45,6 +45,8 @@ Create a new schedulingGroup.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

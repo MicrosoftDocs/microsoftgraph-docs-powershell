@@ -36,6 +36,8 @@ Collection of imported Windows autopilot devices.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -52,6 +52,8 @@ The table in the Permissions section lists the resources that support open exten
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

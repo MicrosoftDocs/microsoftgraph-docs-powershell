@@ -37,6 +37,8 @@ The list of group assignments for the device configuration profile
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

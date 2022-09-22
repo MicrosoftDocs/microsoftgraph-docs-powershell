@@ -49,6 +49,8 @@ Create new navigation property to issues for admin
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

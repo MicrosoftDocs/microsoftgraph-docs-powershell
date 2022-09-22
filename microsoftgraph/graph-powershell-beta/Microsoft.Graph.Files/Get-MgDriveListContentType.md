@@ -36,6 +36,8 @@ Get contentTypes from drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

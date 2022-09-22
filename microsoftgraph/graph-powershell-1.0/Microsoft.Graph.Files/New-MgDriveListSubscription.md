@@ -49,6 +49,8 @@ Create new navigation property to subscriptions for drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

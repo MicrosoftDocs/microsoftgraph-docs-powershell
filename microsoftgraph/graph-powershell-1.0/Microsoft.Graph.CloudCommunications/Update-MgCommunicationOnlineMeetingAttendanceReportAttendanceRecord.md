@@ -47,6 +47,8 @@ Update the navigation property attendanceRecords in communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

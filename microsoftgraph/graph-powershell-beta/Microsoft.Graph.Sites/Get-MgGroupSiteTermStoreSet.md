@@ -29,6 +29,8 @@ Collection of all sets available in the term store.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -29,6 +29,8 @@ Delete navigation property emailThreats for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EmailThreatSubmissionId
 key: id of emailThreatSubmission
 

@@ -53,6 +53,8 @@ Update the navigation property printerShares in print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

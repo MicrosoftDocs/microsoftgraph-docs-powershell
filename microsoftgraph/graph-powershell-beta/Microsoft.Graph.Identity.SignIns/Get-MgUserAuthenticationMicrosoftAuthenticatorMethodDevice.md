@@ -32,6 +32,8 @@ This property is null if the device is not registered for passwordless Phone Sig
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

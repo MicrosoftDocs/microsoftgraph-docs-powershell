@@ -42,6 +42,8 @@ Update the navigation property pinnedMessages in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

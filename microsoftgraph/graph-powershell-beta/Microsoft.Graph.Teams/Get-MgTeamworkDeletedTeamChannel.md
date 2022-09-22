@@ -36,6 +36,8 @@ The channels those are either shared with this deleted team or created in this d
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

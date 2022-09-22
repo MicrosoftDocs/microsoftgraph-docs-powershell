@@ -36,6 +36,8 @@ Get licenseDetails from servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

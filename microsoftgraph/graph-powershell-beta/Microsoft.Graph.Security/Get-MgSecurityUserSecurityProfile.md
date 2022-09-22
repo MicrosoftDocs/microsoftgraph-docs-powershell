@@ -36,6 +36,8 @@ Get userSecurityProfiles from security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -47,6 +47,8 @@ Create new navigation property to securityBaselineStates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

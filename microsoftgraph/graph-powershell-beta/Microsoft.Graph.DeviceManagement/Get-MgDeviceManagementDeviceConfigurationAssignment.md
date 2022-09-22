@@ -36,6 +36,8 @@ The list of assignments for the device configuration profile.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

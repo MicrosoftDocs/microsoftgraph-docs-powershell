@@ -34,6 +34,8 @@ If the external ID already exists, this API will return the onlineMeeting object
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

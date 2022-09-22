@@ -27,6 +27,8 @@ Invoke function delta
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

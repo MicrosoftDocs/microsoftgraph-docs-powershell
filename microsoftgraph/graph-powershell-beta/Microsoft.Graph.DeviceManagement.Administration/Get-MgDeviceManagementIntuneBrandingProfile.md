@@ -36,6 +36,8 @@ Intune branding profiles targeted to AAD groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

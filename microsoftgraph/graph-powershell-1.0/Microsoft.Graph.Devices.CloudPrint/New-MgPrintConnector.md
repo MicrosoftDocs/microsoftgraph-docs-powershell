@@ -29,6 +29,8 @@ Create new navigation property to connectors for print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

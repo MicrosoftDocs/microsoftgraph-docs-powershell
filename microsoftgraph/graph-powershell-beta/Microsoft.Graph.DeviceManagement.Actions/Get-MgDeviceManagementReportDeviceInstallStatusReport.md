@@ -32,6 +32,8 @@ Invoke action getDeviceInstallStatusReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

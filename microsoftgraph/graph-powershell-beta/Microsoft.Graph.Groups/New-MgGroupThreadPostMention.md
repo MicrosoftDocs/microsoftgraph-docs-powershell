@@ -47,6 +47,8 @@ Create new navigation property to mentions for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

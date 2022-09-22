@@ -29,6 +29,8 @@ Invoke action updateIndex
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CaseId
 key: id of case
 

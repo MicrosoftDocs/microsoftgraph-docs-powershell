@@ -31,6 +31,8 @@ Invoke action validateFilter
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

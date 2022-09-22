@@ -33,6 +33,8 @@ Create new navigation property to simulations for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

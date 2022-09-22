@@ -29,6 +29,8 @@ Delete navigation property deviceConfigurationStates for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceConfigurationStateId
 key: id of deviceConfigurationState
 

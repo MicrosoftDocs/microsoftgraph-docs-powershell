@@ -45,6 +45,8 @@ Create new navigation property to relations for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

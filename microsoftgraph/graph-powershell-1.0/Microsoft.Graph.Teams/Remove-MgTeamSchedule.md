@@ -29,6 +29,8 @@ Delete navigation property schedule for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

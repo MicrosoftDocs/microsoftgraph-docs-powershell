@@ -36,6 +36,8 @@ Performs synchronization by periodically running in the background, polling for 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

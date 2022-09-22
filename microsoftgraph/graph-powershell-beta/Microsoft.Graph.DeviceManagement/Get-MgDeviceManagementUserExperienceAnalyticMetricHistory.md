@@ -36,6 +36,8 @@ User experience analytics metric history
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

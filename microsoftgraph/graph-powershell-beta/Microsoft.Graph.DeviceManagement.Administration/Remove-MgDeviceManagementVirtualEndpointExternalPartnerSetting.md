@@ -30,6 +30,8 @@ Delete navigation property externalPartnerSettings for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CloudPcExternalPartnerSettingId
 key: id of cloudPcExternalPartnerSetting
 

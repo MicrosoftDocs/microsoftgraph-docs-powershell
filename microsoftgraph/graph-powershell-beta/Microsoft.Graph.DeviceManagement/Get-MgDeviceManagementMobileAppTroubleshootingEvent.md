@@ -36,6 +36,8 @@ The collection property of MobileAppTroubleshootingEvent.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

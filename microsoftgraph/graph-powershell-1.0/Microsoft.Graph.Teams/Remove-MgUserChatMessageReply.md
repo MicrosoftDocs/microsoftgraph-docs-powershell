@@ -29,6 +29,8 @@ Delete navigation property replies for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatId
 key: id of chat
 

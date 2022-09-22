@@ -47,6 +47,8 @@ Update the navigation property parent in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

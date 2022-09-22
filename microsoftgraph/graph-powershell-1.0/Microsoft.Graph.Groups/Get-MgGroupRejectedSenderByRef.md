@@ -24,6 +24,8 @@ Make sure you do not specify the same user or group in the rejected senders and 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

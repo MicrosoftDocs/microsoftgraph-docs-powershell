@@ -29,6 +29,8 @@ Get a public key to use to encrypt the Apple device enrollment program token
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DepOnboardingSettingId
 key: id of depOnboardingSetting
 

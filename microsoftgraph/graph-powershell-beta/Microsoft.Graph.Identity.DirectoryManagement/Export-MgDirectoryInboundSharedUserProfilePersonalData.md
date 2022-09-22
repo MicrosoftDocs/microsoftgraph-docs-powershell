@@ -45,6 +45,8 @@ Invoke action exportPersonalData
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

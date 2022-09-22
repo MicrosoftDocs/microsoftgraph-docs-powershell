@@ -30,6 +30,8 @@ Invoke action moveDevicesToOU
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

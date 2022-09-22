@@ -45,6 +45,8 @@ This operation is allowed only for channels with a **membershipType** value of `
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

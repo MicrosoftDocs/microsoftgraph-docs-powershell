@@ -36,6 +36,8 @@ The tags associated with the team.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

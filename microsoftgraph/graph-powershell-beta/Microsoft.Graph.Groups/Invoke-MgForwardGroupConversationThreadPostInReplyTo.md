@@ -48,6 +48,8 @@ You can specify both the parent conversation and thread in the request, \nor, yo
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

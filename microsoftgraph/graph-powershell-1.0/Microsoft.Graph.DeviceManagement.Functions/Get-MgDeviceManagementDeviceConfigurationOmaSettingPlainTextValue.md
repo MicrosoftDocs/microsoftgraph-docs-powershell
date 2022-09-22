@@ -29,6 +29,8 @@ Invoke function getOmaSettingPlainTextValue
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceConfigurationId
 key: id of deviceConfiguration
 

@@ -52,6 +52,8 @@ Update the navigation property customerPayments in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

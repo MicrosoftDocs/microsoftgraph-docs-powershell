@@ -29,6 +29,8 @@ Delete navigation property multiValueExtendedProperties for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContactId
 key: id of contact
 

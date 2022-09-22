@@ -30,6 +30,8 @@ Delete navigation property singleValueExtendedProperties for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EventId
 key: id of event
 

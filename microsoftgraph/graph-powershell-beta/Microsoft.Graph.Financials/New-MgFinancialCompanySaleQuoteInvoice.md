@@ -29,6 +29,8 @@ Invoke action makeInvoice
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

@@ -29,6 +29,8 @@ Delete navigation property comanagementEligibleDevices for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ComanagementEligibleDeviceId
 key: id of comanagementEligibleDevice
 

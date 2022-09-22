@@ -36,6 +36,8 @@ Get cloudAppSecurityProfiles from security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -47,6 +47,8 @@ Create new navigation property to unsupportedGroupPolicyExtensions for deviceMan
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

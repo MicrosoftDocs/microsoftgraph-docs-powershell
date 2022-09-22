@@ -37,6 +37,8 @@ User Experience Analytics Battery Health Os Performance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

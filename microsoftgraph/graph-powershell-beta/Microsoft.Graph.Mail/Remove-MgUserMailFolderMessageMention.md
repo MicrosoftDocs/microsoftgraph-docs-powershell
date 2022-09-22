@@ -29,6 +29,8 @@ Delete navigation property mentions for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

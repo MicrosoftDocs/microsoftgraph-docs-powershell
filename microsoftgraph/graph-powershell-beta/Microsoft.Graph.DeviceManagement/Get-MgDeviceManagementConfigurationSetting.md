@@ -36,6 +36,8 @@ List of all ConfigurationSettings
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

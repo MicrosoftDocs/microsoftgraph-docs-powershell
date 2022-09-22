@@ -29,6 +29,8 @@ Update the navigation property policy in informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

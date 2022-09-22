@@ -29,6 +29,8 @@ Delete navigation property groupAssignments for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceConfigurationGroupAssignmentId
 key: id of deviceConfigurationGroupAssignment
 

@@ -47,6 +47,8 @@ Create new navigation property to pages for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

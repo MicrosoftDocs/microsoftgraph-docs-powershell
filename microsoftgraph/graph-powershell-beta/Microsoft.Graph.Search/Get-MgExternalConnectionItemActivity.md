@@ -38,6 +38,8 @@ Returns results.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

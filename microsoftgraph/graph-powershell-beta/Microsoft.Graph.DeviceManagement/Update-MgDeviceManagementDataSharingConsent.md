@@ -44,6 +44,8 @@ Update the navigation property dataSharingConsents in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

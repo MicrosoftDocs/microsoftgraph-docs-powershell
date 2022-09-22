@@ -44,6 +44,8 @@ Activate eSIM on the device.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

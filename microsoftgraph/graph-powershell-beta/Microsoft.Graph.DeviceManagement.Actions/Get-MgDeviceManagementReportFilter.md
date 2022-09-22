@@ -31,6 +31,8 @@ Invoke action getReportFilters
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

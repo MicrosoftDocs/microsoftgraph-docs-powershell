@@ -44,6 +44,8 @@ Invoke action register
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

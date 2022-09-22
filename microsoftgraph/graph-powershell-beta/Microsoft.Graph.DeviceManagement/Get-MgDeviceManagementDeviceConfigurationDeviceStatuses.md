@@ -36,6 +36,8 @@ Device configuration installation status by device.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

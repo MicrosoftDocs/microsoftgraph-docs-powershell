@@ -44,6 +44,8 @@ Update the navigation property termStore in sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

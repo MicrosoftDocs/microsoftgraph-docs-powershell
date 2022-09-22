@@ -67,6 +67,8 @@ Update the navigation property sites in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

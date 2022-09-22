@@ -39,6 +39,8 @@ Invoke function getEmailActivityUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

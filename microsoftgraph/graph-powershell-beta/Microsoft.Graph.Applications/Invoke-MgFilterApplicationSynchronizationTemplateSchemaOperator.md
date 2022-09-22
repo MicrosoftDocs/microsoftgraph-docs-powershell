@@ -29,6 +29,8 @@ Invoke function filterOperators
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationId
 key: id of application
 

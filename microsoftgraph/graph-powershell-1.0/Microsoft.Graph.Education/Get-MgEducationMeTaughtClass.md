@@ -36,6 +36,8 @@ Classes for which the user is a teacher.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

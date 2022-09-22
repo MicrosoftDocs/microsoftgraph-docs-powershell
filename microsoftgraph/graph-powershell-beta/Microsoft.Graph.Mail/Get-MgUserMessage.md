@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserMessage
 
 ## SYNOPSIS
-Get messages from users
+The messages in a mailbox or folder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -29,7 +31,9 @@ Get-MgUserMessage -InputObject <IMailIdentity> [-Property <String[]>] [<CommonPa
 ```
 
 ## DESCRIPTION
-Get messages from users
+The messages in a mailbox or folder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

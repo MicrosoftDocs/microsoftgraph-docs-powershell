@@ -50,6 +50,8 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

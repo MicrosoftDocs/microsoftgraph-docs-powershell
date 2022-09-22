@@ -29,6 +29,8 @@ Delete navigation property peopleInsights for organization
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -45,6 +45,8 @@ Update the navigation property tasks in print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

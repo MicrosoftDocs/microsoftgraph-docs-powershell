@@ -36,6 +36,8 @@ The Resource Operations.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

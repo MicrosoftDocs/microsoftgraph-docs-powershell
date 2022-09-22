@@ -47,6 +47,8 @@ Update the navigation property threads in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -36,6 +36,8 @@ The apps installed in this team.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

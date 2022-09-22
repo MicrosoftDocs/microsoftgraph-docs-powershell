@@ -41,6 +41,8 @@ Create new navigation property to columnLinks for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

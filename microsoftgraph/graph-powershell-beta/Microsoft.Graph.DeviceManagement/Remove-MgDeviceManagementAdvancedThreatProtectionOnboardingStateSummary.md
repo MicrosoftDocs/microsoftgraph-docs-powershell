@@ -22,6 +22,8 @@ Delete navigation property advancedThreatProtectionOnboardingStateSummary for de
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -29,6 +29,8 @@ Delete navigation property sensitivityLabels for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

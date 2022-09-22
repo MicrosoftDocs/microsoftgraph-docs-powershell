@@ -49,6 +49,8 @@ Update the navigation property localizedNotificationMessages in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

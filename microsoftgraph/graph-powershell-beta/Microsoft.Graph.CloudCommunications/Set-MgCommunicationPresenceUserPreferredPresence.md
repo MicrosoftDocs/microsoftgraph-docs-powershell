@@ -55,6 +55,8 @@ Read more about presence sessions and their time-out and expiration.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Activity
 .
 

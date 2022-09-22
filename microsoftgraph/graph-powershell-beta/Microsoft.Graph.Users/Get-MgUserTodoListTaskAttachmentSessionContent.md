@@ -29,6 +29,8 @@ The content streams that are uploaded.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttachmentSessionId
 key: id of attachmentSession
 

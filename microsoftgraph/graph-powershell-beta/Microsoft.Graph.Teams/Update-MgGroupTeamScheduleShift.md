@@ -49,6 +49,8 @@ Update the navigation property shifts in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

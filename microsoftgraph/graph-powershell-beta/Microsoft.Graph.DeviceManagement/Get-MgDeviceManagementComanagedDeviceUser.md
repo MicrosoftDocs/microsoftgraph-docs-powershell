@@ -23,6 +23,8 @@ The primary users associated with the managed device.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -29,6 +29,8 @@ Get catalog from identityGovernance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageId
 key: id of accessPackage
 

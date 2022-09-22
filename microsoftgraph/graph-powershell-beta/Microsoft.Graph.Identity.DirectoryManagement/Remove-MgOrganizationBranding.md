@@ -31,6 +31,8 @@ To delete the organizationalBranding object, all images (Stream types) must firs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

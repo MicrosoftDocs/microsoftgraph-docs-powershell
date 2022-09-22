@@ -33,6 +33,8 @@ Create new navigation property to macOSSoftwareUpdateAccountSummaries for device
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -32,6 +32,8 @@ Update the navigation property deviceConfigurationUserStateSummaries in deviceMa
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

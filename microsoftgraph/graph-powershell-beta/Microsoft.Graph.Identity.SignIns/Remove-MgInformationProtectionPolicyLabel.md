@@ -29,6 +29,8 @@ Delete navigation property labels for informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

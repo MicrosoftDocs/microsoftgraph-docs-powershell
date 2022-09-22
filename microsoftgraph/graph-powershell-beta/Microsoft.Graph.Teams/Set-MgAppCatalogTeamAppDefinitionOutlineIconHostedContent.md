@@ -29,6 +29,8 @@ Update media content for the navigation property hostedContent in appCatalogs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

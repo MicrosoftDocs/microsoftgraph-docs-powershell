@@ -51,6 +51,8 @@ DriveItem resources inherit sharing permissions from their ancestors.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

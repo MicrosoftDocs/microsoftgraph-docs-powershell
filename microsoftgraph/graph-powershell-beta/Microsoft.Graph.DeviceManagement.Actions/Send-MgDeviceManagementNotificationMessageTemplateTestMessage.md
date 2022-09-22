@@ -29,6 +29,8 @@ Sends test message using the specified notificationMessageTemplate in the defaul
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.

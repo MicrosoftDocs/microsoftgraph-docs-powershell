@@ -59,6 +59,8 @@ Children terms of set in term [store].
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

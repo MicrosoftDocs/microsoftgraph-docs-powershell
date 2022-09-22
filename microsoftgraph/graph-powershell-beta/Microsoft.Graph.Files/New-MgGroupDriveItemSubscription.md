@@ -51,6 +51,8 @@ Create new navigation property to subscriptions for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

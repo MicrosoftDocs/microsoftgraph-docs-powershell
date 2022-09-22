@@ -28,6 +28,8 @@ Invoke action extractSensitivityLabels
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

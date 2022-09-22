@@ -34,6 +34,8 @@ Create new navigation property to synchronizationProfiles for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

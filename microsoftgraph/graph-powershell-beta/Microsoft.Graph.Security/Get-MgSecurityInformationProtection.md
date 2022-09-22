@@ -21,6 +21,8 @@ Get informationProtection from security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

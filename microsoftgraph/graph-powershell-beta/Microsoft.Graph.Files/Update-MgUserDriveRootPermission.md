@@ -53,6 +53,8 @@ Update the navigation property permissions in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

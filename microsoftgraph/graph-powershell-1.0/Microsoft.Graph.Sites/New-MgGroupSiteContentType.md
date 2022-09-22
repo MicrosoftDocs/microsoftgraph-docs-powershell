@@ -55,6 +55,8 @@ Create a new [contentType][] in a [site][].
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

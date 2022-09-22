@@ -32,6 +32,8 @@ Invoke action getZebraFotaDeploymentReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

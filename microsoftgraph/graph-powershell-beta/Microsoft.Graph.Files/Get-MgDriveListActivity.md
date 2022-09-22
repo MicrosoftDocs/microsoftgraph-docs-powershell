@@ -23,6 +23,8 @@ The recent activities that took place within this list.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

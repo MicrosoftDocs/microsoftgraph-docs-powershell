@@ -43,6 +43,8 @@ Update the navigation property lastMessagePreview in chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

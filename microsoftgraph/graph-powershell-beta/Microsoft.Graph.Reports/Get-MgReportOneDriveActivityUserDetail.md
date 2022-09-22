@@ -39,6 +39,8 @@ Invoke function getOneDriveActivityUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

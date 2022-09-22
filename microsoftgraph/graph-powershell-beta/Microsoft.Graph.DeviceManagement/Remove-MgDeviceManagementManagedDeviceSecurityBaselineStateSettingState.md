@@ -31,6 +31,8 @@ Delete navigation property settingStates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

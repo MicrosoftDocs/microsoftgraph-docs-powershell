@@ -27,6 +27,8 @@ If this sync action is called within 10 minutes of the previous sync, the action
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -PassThru
 Returns true when the command succeeds
 

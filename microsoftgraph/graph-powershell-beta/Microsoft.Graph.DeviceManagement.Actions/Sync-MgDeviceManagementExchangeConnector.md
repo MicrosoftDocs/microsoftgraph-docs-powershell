@@ -45,6 +45,8 @@ Invoke action sync
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

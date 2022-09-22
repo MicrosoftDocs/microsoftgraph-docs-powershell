@@ -36,6 +36,8 @@ Get dailyPrintUsageByPrinter from reports
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -29,6 +29,8 @@ Delete navigation property extensions for organization
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExtensionId
 key: id of extension
 

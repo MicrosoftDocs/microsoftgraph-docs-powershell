@@ -43,6 +43,8 @@ Create new navigation property to hostedContents for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

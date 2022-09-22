@@ -29,6 +29,8 @@ Delete navigation property permissionGrants for chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatId
 key: id of chat
 

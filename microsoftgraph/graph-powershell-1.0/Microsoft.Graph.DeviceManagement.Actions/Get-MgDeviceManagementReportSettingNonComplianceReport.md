@@ -32,6 +32,8 @@ Invoke action getSettingNonComplianceReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

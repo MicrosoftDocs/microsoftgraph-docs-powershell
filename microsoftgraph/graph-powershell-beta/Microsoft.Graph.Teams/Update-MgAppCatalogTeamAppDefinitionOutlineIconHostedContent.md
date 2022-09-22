@@ -44,6 +44,8 @@ Update the navigation property hostedContent in appCatalogs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

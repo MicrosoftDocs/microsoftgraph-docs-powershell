@@ -38,6 +38,8 @@ Operations that an authorized principal are allowed to perform.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

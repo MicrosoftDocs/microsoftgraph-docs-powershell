@@ -29,6 +29,8 @@ Delete navigation property offerShiftRequests for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

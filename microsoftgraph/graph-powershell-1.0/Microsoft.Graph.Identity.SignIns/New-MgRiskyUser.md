@@ -30,6 +30,8 @@ Create new navigation property to riskyUsers for identityProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

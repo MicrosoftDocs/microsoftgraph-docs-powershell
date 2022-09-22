@@ -29,6 +29,8 @@ Delete navigation property supportedRegions for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CloudPcSupportedRegionId
 key: id of cloudPcSupportedRegion
 

@@ -34,6 +34,8 @@ Create new navigation property to printerShares for print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

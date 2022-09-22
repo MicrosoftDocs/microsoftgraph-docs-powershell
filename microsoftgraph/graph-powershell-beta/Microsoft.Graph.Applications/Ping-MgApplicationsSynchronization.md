@@ -27,6 +27,8 @@ Invoke function Ping
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationId
 key: id of application
 

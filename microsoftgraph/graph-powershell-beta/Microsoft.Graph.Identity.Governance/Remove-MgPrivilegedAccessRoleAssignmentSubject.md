@@ -29,6 +29,8 @@ Delete navigation property subject for privilegedAccess
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GovernanceRoleAssignmentId
 key: id of governanceRoleAssignment
 

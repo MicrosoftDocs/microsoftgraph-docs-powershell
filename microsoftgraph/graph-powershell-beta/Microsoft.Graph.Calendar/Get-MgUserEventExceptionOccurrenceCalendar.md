@@ -33,6 +33,8 @@ Read-only.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EventId
 key: id of event
 

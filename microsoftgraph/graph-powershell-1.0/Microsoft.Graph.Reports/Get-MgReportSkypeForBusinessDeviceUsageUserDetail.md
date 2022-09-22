@@ -41,6 +41,8 @@ Invoke function getSkypeForBusinessDeviceUsageUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

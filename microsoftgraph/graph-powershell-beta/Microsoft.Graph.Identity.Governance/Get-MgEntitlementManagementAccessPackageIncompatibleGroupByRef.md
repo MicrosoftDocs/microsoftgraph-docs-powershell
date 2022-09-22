@@ -23,6 +23,8 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageId
 key: id of accessPackage
 

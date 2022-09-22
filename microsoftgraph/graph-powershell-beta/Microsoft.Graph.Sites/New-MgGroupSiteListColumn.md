@@ -62,6 +62,8 @@ Create a column for a [list][list] with a request that specifies a [columnDefini
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

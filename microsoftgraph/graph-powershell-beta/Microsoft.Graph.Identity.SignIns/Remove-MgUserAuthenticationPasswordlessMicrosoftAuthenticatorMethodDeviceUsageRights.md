@@ -31,6 +31,8 @@ Delete navigation property usageRights for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

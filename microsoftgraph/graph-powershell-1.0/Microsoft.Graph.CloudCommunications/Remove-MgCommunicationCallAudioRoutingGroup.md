@@ -29,6 +29,8 @@ Delete navigation property audioRoutingGroups for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AudioRoutingGroupId
 key: id of audioRoutingGroup
 

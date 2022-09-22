@@ -41,6 +41,8 @@ Delete navigation property termStores for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

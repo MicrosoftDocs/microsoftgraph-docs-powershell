@@ -31,6 +31,8 @@ Invoke action sendCustomNotificationToCompanyPortal
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -34,6 +34,8 @@ Create new navigation property to exchangeOnPremisesPolicies for deviceManagemen
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessRules
 The list of device access rules in Exchange.
 The access rules apply globally to the entire Exchange organization

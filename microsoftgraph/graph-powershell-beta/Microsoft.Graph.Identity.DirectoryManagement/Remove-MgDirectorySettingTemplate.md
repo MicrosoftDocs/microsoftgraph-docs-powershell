@@ -29,6 +29,8 @@ Delete entity from directorySettingTemplates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectorySettingTemplateId
 key: id of directorySettingTemplate
 

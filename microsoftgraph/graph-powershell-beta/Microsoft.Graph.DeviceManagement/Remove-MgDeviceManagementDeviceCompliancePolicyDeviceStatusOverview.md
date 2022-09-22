@@ -29,6 +29,8 @@ Delete navigation property deviceStatusOverview for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceCompliancePolicyId
 key: id of deviceCompliancePolicy
 

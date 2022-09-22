@@ -29,6 +29,8 @@ Delete navigation property telecomExpenseManagementPartners for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

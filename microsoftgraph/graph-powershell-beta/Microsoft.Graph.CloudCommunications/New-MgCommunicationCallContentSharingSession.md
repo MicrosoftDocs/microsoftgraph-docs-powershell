@@ -41,6 +41,8 @@ Create new navigation property to contentSharingSessions for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

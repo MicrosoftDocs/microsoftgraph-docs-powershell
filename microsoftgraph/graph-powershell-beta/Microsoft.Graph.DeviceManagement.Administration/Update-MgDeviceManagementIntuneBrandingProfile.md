@@ -65,6 +65,8 @@ Update the navigation property intuneBrandingProfiles in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

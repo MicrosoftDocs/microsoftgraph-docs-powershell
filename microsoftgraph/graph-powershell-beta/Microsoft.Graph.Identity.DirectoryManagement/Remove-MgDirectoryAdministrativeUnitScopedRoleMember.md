@@ -29,6 +29,8 @@ Delete navigation property scopedRoleMembers for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdministrativeUnitId
 key: id of administrativeUnit
 

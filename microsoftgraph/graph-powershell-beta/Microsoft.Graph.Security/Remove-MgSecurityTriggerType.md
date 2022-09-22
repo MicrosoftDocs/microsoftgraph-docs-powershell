@@ -21,6 +21,8 @@ Delete navigation property triggerTypes for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

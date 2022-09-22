@@ -42,6 +42,8 @@ Create new navigation property to associatedTeams for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

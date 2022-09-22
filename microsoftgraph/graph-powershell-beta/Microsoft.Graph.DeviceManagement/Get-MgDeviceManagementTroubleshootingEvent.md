@@ -36,6 +36,8 @@ The list of troubleshooting events for the tenant.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

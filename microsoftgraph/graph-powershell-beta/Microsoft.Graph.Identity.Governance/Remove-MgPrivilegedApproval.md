@@ -29,6 +29,8 @@ Delete entity from privilegedApproval
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

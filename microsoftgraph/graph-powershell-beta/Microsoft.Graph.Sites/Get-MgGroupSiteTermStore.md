@@ -29,6 +29,8 @@ Read the properties and relationships of a store object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

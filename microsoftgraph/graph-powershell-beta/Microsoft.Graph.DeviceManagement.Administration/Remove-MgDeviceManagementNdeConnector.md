@@ -29,6 +29,8 @@ Delete navigation property ndesConnectors for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

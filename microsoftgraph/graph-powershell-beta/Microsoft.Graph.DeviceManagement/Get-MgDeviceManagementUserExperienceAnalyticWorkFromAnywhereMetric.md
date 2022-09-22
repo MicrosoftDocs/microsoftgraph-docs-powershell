@@ -37,6 +37,8 @@ User experience analytics work from anywhere metrics.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -21,6 +21,8 @@ Get directory from roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -43,6 +43,8 @@ Create new navigation property to termStores for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

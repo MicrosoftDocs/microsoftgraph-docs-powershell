@@ -23,6 +23,8 @@ Get ref of members from onPremisesPublishingProfiles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

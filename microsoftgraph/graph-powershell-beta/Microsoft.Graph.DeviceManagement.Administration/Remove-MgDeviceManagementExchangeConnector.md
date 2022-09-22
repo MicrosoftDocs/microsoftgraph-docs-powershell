@@ -29,6 +29,8 @@ Delete navigation property exchangeConnectors for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementExchangeConnectorId
 key: id of deviceManagementExchangeConnector
 

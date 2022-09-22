@@ -28,6 +28,8 @@ Invoke function getActivitiesByInterval
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

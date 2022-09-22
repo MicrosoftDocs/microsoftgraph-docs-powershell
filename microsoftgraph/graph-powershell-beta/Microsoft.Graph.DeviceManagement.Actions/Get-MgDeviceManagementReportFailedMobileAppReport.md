@@ -32,6 +32,8 @@ Invoke action getFailedMobileAppsReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

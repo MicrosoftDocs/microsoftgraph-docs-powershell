@@ -29,6 +29,8 @@ Delete navigation property fileThreats for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -FileThreatSubmissionId
 key: id of fileThreatSubmission
 

@@ -29,6 +29,8 @@ Delete ref of navigation property rubric for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

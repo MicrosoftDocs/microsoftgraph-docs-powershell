@@ -29,6 +29,8 @@ Used for navigating to the trending document.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

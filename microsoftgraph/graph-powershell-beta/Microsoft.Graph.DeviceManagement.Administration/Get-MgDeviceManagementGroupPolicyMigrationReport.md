@@ -36,6 +36,8 @@ A list of Group Policy migration reports.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

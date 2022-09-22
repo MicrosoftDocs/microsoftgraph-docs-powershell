@@ -29,6 +29,8 @@ Delete navigation property embeddedSIMActivationCodePools for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EmbeddedSimActivationCodePoolId
 key: id of embeddedSIMActivationCodePool
 

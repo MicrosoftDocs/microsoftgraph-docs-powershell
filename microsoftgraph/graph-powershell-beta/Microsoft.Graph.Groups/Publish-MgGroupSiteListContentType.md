@@ -29,6 +29,8 @@ Publishes a [contentType][] present in a content type hub site.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContentTypeId
 key: id of contentType
 

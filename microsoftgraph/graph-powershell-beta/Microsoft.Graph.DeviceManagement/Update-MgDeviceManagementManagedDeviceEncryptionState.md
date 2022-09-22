@@ -53,6 +53,8 @@ Update the navigation property managedDeviceEncryptionStates in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

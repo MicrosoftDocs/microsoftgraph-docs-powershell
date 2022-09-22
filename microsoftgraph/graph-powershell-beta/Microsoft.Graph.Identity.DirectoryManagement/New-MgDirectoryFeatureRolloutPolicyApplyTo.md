@@ -42,6 +42,8 @@ Create new navigation property to appliesTo for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

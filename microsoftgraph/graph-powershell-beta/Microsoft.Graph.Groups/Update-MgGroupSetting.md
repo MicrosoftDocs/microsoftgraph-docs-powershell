@@ -43,6 +43,8 @@ Update the navigation property settings in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

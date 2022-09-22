@@ -30,6 +30,8 @@ Delete navigation property deviceCompliancePolicyStates for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceCompliancePolicyStateId
 key: id of deviceCompliancePolicyState
 

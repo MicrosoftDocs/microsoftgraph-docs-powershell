@@ -30,6 +30,8 @@ Delete navigation property scheduledActionsForRule for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementCompliancePolicyId
 key: id of deviceManagementCompliancePolicy
 

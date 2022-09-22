@@ -34,6 +34,8 @@ Invoke function managedDeviceEnrollmentFailureDetails
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Filter
 Usage: filter='{filter}'
 

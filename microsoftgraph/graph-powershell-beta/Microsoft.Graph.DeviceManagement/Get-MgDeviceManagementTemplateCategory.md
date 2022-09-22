@@ -37,6 +37,8 @@ Collection of setting categories within the template
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

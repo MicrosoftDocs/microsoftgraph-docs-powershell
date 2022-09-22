@@ -21,6 +21,8 @@ Invoke action importOffice365DeviceConfigurationPolicies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 

@@ -39,6 +39,8 @@ Setting templates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

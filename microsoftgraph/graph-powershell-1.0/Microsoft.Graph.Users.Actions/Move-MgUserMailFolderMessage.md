@@ -45,6 +45,8 @@ This creates a new copy of the message in the destination folder and removes the
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

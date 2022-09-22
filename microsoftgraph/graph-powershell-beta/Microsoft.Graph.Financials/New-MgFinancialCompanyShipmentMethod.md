@@ -43,6 +43,8 @@ Create new navigation property to shipmentMethods for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

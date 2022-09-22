@@ -67,6 +67,8 @@ If the group was created less than 15 minutes ago, it's possible for the Create 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

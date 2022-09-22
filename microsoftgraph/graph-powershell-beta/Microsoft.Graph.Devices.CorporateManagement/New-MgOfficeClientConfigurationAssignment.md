@@ -43,6 +43,8 @@ Create new navigation property to assignments for officeConfiguration
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

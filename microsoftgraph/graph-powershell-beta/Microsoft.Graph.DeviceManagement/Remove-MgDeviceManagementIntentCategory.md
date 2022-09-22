@@ -30,6 +30,8 @@ Delete navigation property categories for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementIntentId
 key: id of deviceManagementIntent
 

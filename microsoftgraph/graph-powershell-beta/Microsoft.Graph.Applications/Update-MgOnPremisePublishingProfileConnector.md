@@ -45,6 +45,8 @@ Update the navigation property connectors in onPremisesPublishingProfiles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

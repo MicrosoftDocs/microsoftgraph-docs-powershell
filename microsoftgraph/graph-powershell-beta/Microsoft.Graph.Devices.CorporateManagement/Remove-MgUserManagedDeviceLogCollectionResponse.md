@@ -30,6 +30,8 @@ Delete navigation property logCollectionRequests for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceLogCollectionResponseId
 key: id of deviceLogCollectionResponse
 

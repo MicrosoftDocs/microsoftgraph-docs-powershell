@@ -29,6 +29,8 @@ Invoke action post
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

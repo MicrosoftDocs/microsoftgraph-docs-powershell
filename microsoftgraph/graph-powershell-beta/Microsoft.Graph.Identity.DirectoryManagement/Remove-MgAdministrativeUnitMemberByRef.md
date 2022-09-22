@@ -29,6 +29,8 @@ Delete ref of navigation property members for administrativeUnits
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdministrativeUnitId
 key: id of administrativeUnit
 

@@ -36,6 +36,8 @@ The collection of column definitions for this contentType.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

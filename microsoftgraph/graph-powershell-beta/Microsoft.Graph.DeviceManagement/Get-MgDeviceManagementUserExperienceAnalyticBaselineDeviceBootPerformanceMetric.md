@@ -31,6 +31,8 @@ The user experience analytics device boot performance metrics.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

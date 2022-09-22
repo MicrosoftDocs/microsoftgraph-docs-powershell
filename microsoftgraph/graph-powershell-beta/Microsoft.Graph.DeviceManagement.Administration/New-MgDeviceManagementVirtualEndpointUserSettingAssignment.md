@@ -44,6 +44,8 @@ Create new navigation property to assignments for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -44,6 +44,8 @@ Update the navigation property calendarPermissions in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

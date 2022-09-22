@@ -30,6 +30,8 @@ Delete navigation property deviceCompliancePolicySettingStateSummaries for devic
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceCompliancePolicySettingStateSummaryId
 key: id of deviceCompliancePolicySettingStateSummary
 

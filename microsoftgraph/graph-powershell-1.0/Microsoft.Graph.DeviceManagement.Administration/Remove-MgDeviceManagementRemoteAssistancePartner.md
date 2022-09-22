@@ -29,6 +29,8 @@ Delete navigation property remoteAssistancePartners for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -36,6 +36,8 @@ Get salesOrders from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -36,6 +36,8 @@ Collection of all settings this template has
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

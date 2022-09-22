@@ -48,6 +48,8 @@ Create new navigation property to chats for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

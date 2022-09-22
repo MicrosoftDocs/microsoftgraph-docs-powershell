@@ -55,6 +55,8 @@ Create new navigation property to contentTypes for drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -36,6 +36,8 @@ Get externalColumns from sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

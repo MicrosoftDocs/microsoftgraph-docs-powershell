@@ -29,6 +29,8 @@ Invoke function filterByCurrentUser
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AppConsentRequestId
 key: id of appConsentRequest
 

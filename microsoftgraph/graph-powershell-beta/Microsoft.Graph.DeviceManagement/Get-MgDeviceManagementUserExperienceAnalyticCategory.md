@@ -36,6 +36,8 @@ User experience analytics categories
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

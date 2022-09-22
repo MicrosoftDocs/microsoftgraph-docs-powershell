@@ -47,6 +47,8 @@ Update the navigation property directories in applications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

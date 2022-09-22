@@ -29,6 +29,8 @@ Delete navigation property verificationDnsRecords for domains
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DomainDnsRecordId
 key: id of domainDnsRecord
 

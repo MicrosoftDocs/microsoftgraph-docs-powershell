@@ -29,6 +29,8 @@ Delete navigation property fields for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

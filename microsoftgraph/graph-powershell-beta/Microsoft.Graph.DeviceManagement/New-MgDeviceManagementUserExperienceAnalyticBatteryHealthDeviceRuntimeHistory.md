@@ -31,6 +31,8 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceRunt
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

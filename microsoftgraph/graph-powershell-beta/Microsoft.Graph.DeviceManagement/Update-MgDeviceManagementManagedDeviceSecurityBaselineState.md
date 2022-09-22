@@ -48,6 +48,8 @@ Update the navigation property securityBaselineStates in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

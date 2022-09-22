@@ -29,6 +29,8 @@ Delete navigation property administrativeUnits for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdministrativeUnitId
 key: id of administrativeUnit
 

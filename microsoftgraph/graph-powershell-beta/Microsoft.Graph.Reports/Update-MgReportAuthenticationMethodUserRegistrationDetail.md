@@ -47,6 +47,8 @@ Update the navigation property userRegistrationDetails in reports
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

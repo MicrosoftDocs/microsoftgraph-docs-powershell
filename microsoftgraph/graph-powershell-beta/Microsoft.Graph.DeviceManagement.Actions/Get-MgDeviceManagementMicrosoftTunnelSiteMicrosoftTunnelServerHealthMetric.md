@@ -47,6 +47,8 @@ Invoke action getHealthMetrics
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

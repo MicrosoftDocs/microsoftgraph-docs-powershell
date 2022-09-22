@@ -43,6 +43,8 @@ Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Id
 Delete Uri
 

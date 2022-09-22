@@ -47,6 +47,8 @@ Add (pin) a tab to the specified chat.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

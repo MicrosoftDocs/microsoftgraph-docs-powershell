@@ -28,6 +28,8 @@ Create new navigation property to policies for trustFramework
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

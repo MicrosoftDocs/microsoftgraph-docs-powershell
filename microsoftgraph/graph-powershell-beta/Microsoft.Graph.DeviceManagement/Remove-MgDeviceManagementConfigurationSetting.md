@@ -29,6 +29,8 @@ Delete navigation property configurationSettings for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementConfigurationSettingDefinitionId
 key: id of deviceManagementConfigurationSettingDefinition
 

@@ -50,6 +50,8 @@ Update the navigation property taskFolders in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

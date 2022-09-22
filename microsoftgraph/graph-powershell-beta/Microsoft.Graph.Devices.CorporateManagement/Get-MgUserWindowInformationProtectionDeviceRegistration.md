@@ -37,6 +37,8 @@ Zero or more WIP device registrations that belong to the user.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

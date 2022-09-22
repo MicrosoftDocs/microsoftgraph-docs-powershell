@@ -28,6 +28,8 @@ Delete entity from drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

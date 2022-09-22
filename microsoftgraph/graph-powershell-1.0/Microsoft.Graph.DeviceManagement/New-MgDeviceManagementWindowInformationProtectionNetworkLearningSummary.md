@@ -30,6 +30,8 @@ Create new navigation property to windowsInformationProtectionNetworkLearningSum
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

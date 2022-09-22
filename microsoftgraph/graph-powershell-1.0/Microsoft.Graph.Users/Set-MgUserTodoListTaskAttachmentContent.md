@@ -30,6 +30,8 @@ Update media content for the navigation property attachments in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttachmentBaseId
 key: id of attachmentBase
 

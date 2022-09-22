@@ -37,6 +37,8 @@ User experience analytics devices not Windows Autopilot ready.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

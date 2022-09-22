@@ -30,6 +30,8 @@ Delete navigation property attachmentSessions for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttachmentSessionId
 key: id of attachmentSession
 

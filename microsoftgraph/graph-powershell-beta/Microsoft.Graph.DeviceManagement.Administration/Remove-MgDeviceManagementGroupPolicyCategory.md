@@ -29,6 +29,8 @@ Delete navigation property groupPolicyCategories for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupPolicyCategoryId
 key: id of groupPolicyCategory
 

@@ -31,6 +31,8 @@ Delete navigation property categorySummaries for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

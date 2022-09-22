@@ -36,6 +36,8 @@ The list of acceptance statuses for this T&C policy.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

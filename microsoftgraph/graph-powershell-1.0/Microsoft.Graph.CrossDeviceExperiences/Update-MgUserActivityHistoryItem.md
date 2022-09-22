@@ -47,6 +47,8 @@ Update the navigation property historyItems in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActiveDurationSeconds
 Optional.
 The duration of active user engagement.

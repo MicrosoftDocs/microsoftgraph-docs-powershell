@@ -74,6 +74,8 @@ Update the navigation property relations in sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

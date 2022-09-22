@@ -45,6 +45,8 @@ Update the navigation property notifications in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -30,6 +30,8 @@ Create new navigation property to operatingSystemRegression for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

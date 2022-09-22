@@ -23,6 +23,8 @@ Get accessPackageResourceScopes from identityGovernance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageCatalogId
 key: id of accessPackageCatalog
 

@@ -35,6 +35,8 @@ Add new entity to contacts
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

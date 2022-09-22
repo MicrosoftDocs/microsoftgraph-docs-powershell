@@ -30,6 +30,8 @@ Update the navigation property labels in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property contentTypes for shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContentTypeId
 key: id of contentType
 

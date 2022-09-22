@@ -30,6 +30,8 @@ Get media content for the navigation property defaultPages from identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -B2XIdentityUserFlowId
 key: id of b2xIdentityUserFlow
 

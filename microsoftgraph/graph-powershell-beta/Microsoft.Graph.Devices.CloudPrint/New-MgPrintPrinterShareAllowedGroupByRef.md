@@ -41,6 +41,8 @@ Create new navigation property ref to allowedGroups for print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

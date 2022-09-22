@@ -29,6 +29,8 @@ Delete navigation property compliancePolicies for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementCompliancePolicyId
 key: id of deviceManagementCompliancePolicy
 

@@ -33,6 +33,8 @@ Create new navigation property to windowsFeatureUpdateProfiles for deviceManagem
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

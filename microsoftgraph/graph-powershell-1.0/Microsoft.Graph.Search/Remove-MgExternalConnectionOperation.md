@@ -29,6 +29,8 @@ Delete navigation property operations for external
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ConnectionOperationId
 key: id of connectionOperation
 

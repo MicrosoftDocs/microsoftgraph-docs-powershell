@@ -47,6 +47,8 @@ For details about presences sessions, see presence: setPresence.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

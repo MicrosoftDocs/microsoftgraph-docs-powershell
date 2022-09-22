@@ -36,6 +36,8 @@ A reference to a resource associated with an access package catalog.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageResourceId
 key: id of accessPackageResource
 

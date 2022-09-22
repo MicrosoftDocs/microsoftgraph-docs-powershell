@@ -29,6 +29,8 @@ Delete ref of navigation property acceptedSenders for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectoryObjectId
 key: id of directoryObject
 

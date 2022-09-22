@@ -53,6 +53,8 @@ Update the navigation property vendor in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -28,6 +28,8 @@ Invoke function getCloudPcLaunchInfo
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CloudPcId
 key: id of cloudPC
 

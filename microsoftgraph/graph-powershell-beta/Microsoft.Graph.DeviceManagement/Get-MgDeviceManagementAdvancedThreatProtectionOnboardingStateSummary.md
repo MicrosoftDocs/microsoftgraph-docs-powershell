@@ -22,6 +22,8 @@ The summary state of ATP onboarding state for this account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -29,6 +29,8 @@ Delete navigation property endpoints for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EndpointId
 key: id of endpoint
 

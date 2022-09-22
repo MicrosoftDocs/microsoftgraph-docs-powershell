@@ -45,6 +45,8 @@ Update the navigation property operatingSystemRegression in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

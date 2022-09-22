@@ -36,6 +36,8 @@ Get outcomes from education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

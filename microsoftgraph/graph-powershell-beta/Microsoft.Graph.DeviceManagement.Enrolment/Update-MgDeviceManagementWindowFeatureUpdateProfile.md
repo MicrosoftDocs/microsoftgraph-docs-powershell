@@ -53,6 +53,8 @@ Update the navigation property windowsFeatureUpdateProfiles in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

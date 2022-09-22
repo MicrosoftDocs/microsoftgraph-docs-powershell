@@ -29,6 +29,8 @@ A summary of user states and counts of users that belong to corresponding state 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementIntentId
 key: id of deviceManagementIntent
 

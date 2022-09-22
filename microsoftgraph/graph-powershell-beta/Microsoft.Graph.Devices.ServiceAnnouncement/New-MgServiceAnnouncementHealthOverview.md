@@ -30,6 +30,8 @@ Create new navigation property to healthOverviews for admin
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

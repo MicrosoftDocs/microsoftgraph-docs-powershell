@@ -53,6 +53,8 @@ Create new navigation property to vendors for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

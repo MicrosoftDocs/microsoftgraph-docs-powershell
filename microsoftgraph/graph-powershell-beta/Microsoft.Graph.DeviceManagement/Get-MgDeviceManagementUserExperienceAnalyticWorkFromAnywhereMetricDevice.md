@@ -40,6 +40,8 @@ The work from anywhere metric devices.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

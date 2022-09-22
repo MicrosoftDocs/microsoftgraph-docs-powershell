@@ -30,6 +30,8 @@ Delete navigation property currency for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

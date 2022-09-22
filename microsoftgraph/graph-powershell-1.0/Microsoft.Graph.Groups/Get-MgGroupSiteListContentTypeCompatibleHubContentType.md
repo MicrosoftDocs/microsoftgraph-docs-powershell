@@ -28,6 +28,8 @@ Invoke function getCompatibleHubContentTypes
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

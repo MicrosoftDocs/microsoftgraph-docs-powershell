@@ -55,6 +55,8 @@ Children of current term.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

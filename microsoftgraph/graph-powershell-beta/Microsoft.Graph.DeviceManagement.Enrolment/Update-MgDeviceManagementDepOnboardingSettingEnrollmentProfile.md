@@ -49,6 +49,8 @@ Update the navigation property enrollmentProfiles in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

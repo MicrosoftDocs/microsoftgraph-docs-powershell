@@ -27,6 +27,8 @@ Invoke function preview
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

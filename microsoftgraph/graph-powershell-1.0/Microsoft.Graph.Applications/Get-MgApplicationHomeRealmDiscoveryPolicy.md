@@ -36,6 +36,8 @@ Get homeRealmDiscoveryPolicies from applications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

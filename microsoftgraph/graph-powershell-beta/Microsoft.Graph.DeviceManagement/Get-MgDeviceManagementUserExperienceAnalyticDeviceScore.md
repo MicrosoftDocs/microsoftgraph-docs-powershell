@@ -36,6 +36,8 @@ User experience analytics device scores
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

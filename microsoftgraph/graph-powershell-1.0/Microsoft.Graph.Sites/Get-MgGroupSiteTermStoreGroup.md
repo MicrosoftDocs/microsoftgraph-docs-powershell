@@ -55,6 +55,8 @@ Collection of all groups available in the term store.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

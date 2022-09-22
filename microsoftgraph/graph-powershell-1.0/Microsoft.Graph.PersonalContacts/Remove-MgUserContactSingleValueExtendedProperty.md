@@ -30,6 +30,8 @@ Delete navigation property singleValueExtendedProperties for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContactId
 key: id of contact
 

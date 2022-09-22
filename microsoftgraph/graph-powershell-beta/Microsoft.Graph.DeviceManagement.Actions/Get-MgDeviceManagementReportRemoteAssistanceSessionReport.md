@@ -32,6 +32,8 @@ Invoke action getRemoteAssistanceSessionsReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

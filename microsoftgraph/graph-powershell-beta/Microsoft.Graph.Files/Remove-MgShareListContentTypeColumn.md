@@ -29,6 +29,8 @@ Delete navigation property columns for shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ColumnDefinitionId
 key: id of columnDefinition
 

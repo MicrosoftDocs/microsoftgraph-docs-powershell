@@ -38,6 +38,8 @@ User experience analytics appHealth Application Performance by App Version Devic
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -43,6 +43,8 @@ Create a new additional source associated with an eDiscovery search.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

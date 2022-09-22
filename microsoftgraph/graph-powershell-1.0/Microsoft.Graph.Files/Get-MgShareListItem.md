@@ -48,6 +48,8 @@ All items contained in the list.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

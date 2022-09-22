@@ -48,6 +48,8 @@ Invoke action record
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

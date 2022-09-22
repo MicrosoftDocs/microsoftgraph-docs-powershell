@@ -42,6 +42,8 @@ Ordered by recency of share.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -30,6 +30,8 @@ Invoke action createMigrationReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

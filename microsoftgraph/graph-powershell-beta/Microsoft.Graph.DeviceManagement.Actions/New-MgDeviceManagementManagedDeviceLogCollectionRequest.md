@@ -45,6 +45,8 @@ Invoke action createDeviceLogCollectionRequest
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

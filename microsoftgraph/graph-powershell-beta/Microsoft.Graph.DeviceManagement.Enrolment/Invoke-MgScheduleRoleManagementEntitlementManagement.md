@@ -22,6 +22,8 @@ Invoke function roleScheduleInstances
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AppScopeId
 Usage: appScopeId='@appScopeId'
 

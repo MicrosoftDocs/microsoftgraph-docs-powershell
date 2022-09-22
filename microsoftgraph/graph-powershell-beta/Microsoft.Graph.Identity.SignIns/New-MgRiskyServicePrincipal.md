@@ -31,6 +31,8 @@ Create new navigation property to riskyServicePrincipals for identityProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccountEnabled
 true if the service principal account is enabled; otherwise, false.
 

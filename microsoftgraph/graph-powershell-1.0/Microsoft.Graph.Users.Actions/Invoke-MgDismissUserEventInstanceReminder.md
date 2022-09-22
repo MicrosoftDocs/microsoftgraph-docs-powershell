@@ -29,6 +29,8 @@ Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EventId
 key: id of event
 

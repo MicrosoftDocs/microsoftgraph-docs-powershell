@@ -33,6 +33,8 @@ Create new navigation property to appleUserInitiatedEnrollmentProfiles for devic
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

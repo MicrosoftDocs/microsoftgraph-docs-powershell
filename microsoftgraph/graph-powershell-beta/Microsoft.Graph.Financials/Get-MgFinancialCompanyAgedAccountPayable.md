@@ -36,6 +36,8 @@ Get agedAccountsPayable from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgedAccountsPayableId
 key: id of agedAccountsPayable
 

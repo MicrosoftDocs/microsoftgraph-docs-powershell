@@ -42,6 +42,8 @@ Create new navigation property to onlineMeetings for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

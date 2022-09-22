@@ -29,6 +29,8 @@ Delete navigation property logCollectionRequests for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceLogCollectionResponseId
 key: id of deviceLogCollectionResponse
 

@@ -41,6 +41,8 @@ Update the navigation property deletedTeams in teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

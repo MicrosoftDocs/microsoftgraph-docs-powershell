@@ -23,6 +23,8 @@ List all the categories associated with an assignment.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

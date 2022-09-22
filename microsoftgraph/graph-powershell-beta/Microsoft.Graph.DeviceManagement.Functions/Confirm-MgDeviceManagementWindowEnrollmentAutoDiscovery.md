@@ -28,6 +28,8 @@ Invoke function verifyWindowsEnrollmentAutoDiscovery
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DomainName
 Usage: domainName='{domainName}'
 

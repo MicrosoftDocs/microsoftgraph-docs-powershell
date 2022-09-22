@@ -51,6 +51,8 @@ Update the navigation property ipSecurityProfiles in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivityGroupNames
 .
 

@@ -29,6 +29,8 @@ Delete navigation property shiftPreferences for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

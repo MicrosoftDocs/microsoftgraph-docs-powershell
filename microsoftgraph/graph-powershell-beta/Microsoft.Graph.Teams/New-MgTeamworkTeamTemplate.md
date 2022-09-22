@@ -30,6 +30,8 @@ Create new navigation property to teamTemplates for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

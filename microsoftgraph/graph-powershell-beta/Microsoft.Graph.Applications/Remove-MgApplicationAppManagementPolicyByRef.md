@@ -29,6 +29,8 @@ Delete ref of navigation property appManagementPolicies for applications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationId
 key: id of application
 

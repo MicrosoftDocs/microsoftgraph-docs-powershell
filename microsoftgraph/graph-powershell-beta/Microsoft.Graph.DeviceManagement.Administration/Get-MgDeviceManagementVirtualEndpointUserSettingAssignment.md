@@ -41,6 +41,8 @@ For an example, see Get cloudPcUserSettingample.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

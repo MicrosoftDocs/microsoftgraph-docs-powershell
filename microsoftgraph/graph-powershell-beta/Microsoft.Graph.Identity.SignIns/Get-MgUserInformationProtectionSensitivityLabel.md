@@ -36,6 +36,8 @@ Get sensitivityLabels from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

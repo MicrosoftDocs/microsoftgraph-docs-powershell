@@ -27,6 +27,8 @@ Invoke function getRecentNotebooks
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

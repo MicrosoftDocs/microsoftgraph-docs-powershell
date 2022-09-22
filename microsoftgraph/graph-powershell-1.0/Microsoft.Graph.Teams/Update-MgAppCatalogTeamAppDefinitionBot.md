@@ -41,6 +41,8 @@ Update the navigation property bot in appCatalogs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

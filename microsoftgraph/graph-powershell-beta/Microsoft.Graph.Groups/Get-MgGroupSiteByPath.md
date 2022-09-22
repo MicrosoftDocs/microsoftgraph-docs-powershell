@@ -27,6 +27,8 @@ Invoke function getByPath
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

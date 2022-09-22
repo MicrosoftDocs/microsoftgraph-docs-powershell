@@ -29,6 +29,8 @@ Delete entity from applicationTemplates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationTemplateId
 key: id of applicationTemplate
 

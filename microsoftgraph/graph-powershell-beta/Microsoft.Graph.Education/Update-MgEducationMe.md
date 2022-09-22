@@ -43,6 +43,8 @@ Update the navigation property me in education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccountEnabled
 True if the account is enabled; otherwise, false.
 This property is required when a user is created.

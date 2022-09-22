@@ -45,6 +45,8 @@ Update the navigation property endpoints in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

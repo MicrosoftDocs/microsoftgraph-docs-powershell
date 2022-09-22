@@ -29,6 +29,8 @@ Delete navigation property authorizationPolicy for policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AuthorizationPolicyId
 key: id of authorizationPolicy
 

@@ -28,6 +28,8 @@ The profile photo for the team.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

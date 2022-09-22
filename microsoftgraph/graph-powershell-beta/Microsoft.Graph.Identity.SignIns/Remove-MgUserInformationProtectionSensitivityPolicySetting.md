@@ -29,6 +29,8 @@ Delete navigation property sensitivityPolicySettings for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -43,6 +43,8 @@ Create new navigation property to rules for policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

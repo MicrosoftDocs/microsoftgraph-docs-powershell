@@ -36,6 +36,8 @@ A list of Group Policy Object files uploaded.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

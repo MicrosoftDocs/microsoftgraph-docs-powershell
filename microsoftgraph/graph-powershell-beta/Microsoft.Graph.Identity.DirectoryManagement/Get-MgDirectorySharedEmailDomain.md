@@ -36,6 +36,8 @@ Get sharedEmailDomains from directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

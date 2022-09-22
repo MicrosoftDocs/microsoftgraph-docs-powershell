@@ -27,6 +27,8 @@ Invoke function getCompatibleHubContentTypes
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

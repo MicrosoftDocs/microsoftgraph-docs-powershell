@@ -43,6 +43,8 @@ Invoke action windowsDefenderScan
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

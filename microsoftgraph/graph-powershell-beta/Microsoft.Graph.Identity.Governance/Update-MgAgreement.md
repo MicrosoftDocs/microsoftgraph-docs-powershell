@@ -48,6 +48,8 @@ Update entity in agreements
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Acceptances
 Read-only.
 Information about acceptances of this agreement.

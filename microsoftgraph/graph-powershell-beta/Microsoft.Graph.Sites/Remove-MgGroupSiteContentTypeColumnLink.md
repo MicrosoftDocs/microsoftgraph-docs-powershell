@@ -29,6 +29,8 @@ Delete navigation property columnLinks for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ColumnLinkId
 key: id of columnLink
 

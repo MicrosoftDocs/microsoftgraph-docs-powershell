@@ -29,6 +29,8 @@ Delete navigation property outlineIcon for appCatalogs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

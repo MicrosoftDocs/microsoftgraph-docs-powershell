@@ -31,6 +31,8 @@ This property is read-only.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

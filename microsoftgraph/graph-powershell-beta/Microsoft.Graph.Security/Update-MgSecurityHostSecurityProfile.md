@@ -53,6 +53,8 @@ Update the navigation property hostSecurityProfiles in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

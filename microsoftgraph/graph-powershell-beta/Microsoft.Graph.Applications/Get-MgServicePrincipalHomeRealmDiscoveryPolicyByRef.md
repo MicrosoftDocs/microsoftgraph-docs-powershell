@@ -23,6 +23,8 @@ List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipa
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

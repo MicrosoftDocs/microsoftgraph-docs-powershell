@@ -21,6 +21,8 @@ Delete navigation property threatSubmission for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

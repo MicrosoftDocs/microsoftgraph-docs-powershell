@@ -49,6 +49,8 @@ Create instance of an openShiftChangeRequest object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

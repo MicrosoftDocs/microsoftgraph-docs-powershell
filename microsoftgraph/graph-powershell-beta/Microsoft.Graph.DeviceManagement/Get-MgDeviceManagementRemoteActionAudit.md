@@ -36,6 +36,8 @@ The list of device remote action audits with the tenant.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

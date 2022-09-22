@@ -47,6 +47,8 @@ Update the navigation property windowsInformationProtectionAppLearningSummaries 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

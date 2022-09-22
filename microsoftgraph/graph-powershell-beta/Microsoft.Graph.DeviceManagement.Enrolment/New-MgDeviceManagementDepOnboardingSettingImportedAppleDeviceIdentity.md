@@ -51,6 +51,8 @@ Create new navigation property to importedAppleDeviceIdentities for deviceManage
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

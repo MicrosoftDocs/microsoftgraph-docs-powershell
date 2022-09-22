@@ -29,6 +29,8 @@ Delete navigation property extensions for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExtensionId
 key: id of extension
 

@@ -21,6 +21,8 @@ Delete navigation property policy for informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

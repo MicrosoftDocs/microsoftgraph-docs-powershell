@@ -49,6 +49,8 @@ Create new navigation property to scheduledActionConfigurations for deviceManage
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActionType
 Scheduled Action Type Enum
 

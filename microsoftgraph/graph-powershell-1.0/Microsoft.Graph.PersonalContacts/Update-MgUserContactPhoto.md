@@ -41,6 +41,8 @@ Update the navigation property photo in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

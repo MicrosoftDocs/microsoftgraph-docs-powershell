@@ -73,6 +73,8 @@ Update the navigation property events in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -36,6 +36,8 @@ Get entity from privilegedAccess by key
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

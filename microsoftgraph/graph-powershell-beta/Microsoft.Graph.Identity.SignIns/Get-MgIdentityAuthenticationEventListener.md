@@ -36,6 +36,8 @@ Get authenticationEventListeners from identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -28,6 +28,8 @@ Function to get the number of remediations by a device health scripts
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceHealthScriptId
 key: id of deviceHealthScript
 

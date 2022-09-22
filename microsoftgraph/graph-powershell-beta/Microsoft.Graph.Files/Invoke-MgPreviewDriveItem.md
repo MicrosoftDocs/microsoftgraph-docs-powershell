@@ -44,6 +44,8 @@ Invoke action preview
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

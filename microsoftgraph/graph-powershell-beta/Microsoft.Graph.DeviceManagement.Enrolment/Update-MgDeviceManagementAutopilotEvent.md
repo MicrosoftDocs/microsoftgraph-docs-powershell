@@ -65,6 +65,8 @@ Update the navigation property autopilotEvents in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccountSetupDuration
 Time spent in user ESP.
 

@@ -30,6 +30,8 @@ The [set] in which the term is created.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

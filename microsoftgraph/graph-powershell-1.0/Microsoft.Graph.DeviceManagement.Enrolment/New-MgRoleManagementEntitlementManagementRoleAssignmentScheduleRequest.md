@@ -41,6 +41,8 @@ See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in event
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Action
 unifiedRoleScheduleRequestActions
 

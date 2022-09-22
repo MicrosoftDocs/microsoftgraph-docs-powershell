@@ -41,6 +41,8 @@ Delete navigation property multiValueExtendedProperties for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CalendarId
 key: id of calendar
 

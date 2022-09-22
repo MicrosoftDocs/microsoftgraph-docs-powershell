@@ -36,6 +36,8 @@ The collection of Ndes connectors for this account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

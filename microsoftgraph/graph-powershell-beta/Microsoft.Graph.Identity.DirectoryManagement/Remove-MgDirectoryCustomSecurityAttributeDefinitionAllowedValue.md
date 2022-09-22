@@ -31,6 +31,8 @@ Delete navigation property allowedValues for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AllowedValueId
 key: id of allowedValue
 

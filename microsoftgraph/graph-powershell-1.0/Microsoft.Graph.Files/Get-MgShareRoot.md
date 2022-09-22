@@ -31,6 +31,8 @@ Deprecated -- use driveItem instead.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

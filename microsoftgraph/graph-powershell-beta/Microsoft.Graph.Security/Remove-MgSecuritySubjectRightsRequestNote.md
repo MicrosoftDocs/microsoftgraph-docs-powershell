@@ -29,6 +29,8 @@ Delete navigation property notes for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AuthoredNoteId
 key: id of authoredNote
 

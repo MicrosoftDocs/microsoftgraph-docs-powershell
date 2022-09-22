@@ -29,6 +29,8 @@ Delete navigation property terms for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

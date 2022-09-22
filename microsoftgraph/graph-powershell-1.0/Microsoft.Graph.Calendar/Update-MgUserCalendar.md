@@ -55,6 +55,8 @@ Update the navigation property calendars in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

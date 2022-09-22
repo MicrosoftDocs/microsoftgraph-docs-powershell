@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserContactFolderMultiValueExtendedProperty
 
 ## SYNOPSIS
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the contactFolder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -33,9 +35,13 @@ Get-MgUserContactFolderMultiValueExtendedProperty -InputObject <IPersonalContact
 ```
 
 ## DESCRIPTION
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the contactFolder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

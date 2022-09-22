@@ -48,6 +48,8 @@ Update the navigation property errors in education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -39,6 +39,8 @@ A list of group policy settings to MDM/Intune mappings.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

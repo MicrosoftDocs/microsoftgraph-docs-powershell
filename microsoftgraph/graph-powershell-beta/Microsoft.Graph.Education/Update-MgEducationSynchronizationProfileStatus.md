@@ -47,6 +47,8 @@ Update the navigation property profileStatus in education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

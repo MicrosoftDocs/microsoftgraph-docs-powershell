@@ -40,6 +40,8 @@ This collection does not allow any kind of modification.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

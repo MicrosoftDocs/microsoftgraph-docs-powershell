@@ -43,6 +43,8 @@ Create new navigation property to thumbnails for drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

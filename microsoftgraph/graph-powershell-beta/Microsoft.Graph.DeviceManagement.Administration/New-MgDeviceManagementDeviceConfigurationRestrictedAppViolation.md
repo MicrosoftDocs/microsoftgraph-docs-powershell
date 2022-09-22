@@ -32,6 +32,8 @@ Create new navigation property to deviceConfigurationRestrictedAppsViolations fo
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

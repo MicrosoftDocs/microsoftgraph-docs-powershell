@@ -37,6 +37,8 @@ Collection of MicrosoftTunnelServerLogCollectionResponse settings associated wit
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

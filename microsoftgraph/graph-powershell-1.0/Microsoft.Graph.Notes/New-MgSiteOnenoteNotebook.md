@@ -49,6 +49,8 @@ Create a new OneNote notebook.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

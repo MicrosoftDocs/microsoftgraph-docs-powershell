@@ -29,6 +29,8 @@ Get synchronization from servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

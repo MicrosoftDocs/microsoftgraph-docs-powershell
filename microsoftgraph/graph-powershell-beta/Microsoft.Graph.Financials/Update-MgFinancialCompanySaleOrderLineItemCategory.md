@@ -70,6 +70,8 @@ Update the navigation property itemCategory in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

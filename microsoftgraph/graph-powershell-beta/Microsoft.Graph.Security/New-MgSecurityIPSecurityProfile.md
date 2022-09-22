@@ -33,6 +33,8 @@ Create new navigation property to ipSecurityProfiles for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivityGroupNames
 .
 

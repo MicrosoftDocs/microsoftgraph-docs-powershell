@@ -32,6 +32,8 @@ Update officeConfiguration
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

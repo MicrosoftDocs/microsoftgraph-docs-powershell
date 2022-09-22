@@ -45,6 +45,8 @@ The actual exclusion of the user from future mail distribution is managed by the
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.

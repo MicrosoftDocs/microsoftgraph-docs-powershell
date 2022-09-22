@@ -22,6 +22,8 @@ Get sensitivityPolicySettings from informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

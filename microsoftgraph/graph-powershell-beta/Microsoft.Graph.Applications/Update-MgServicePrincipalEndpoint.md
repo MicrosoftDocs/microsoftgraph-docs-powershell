@@ -45,6 +45,8 @@ Update the navigation property endpoints in servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

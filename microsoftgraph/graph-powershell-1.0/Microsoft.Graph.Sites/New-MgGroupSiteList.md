@@ -57,6 +57,8 @@ Create a new [list][] in a [site][].
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

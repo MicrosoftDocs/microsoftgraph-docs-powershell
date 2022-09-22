@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserMailFolderChildFolder
 
 ## SYNOPSIS
-Get childFolders from users
+The collection of child folders in the mailFolder.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserMailFolderChildFolder -InputObject <IMailIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get childFolders from users
+The collection of child folders in the mailFolder.
 
 ## EXAMPLES
 

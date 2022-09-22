@@ -43,6 +43,8 @@ Move a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

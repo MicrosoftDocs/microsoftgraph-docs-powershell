@@ -31,6 +31,8 @@ Get responsepayload from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CommandId
 key: id of command
 

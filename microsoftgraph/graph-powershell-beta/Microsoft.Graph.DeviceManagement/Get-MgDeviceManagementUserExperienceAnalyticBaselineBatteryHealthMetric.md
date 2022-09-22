@@ -31,6 +31,8 @@ The user experience analytics battery health metrics.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

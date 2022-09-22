@@ -53,6 +53,8 @@ Update the navigation property advancedThreatProtectionOnboardingDeviceSettingSt
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

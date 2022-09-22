@@ -29,6 +29,8 @@ Delete navigation property customAuthenticationExtensions for identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CustomAuthenticationExtensionId
 key: id of customAuthenticationExtension
 

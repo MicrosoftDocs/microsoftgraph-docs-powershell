@@ -21,6 +21,8 @@ Delete navigation property me for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -29,6 +29,8 @@ Delete navigation property deviceConfigurationConflictSummary for deviceManageme
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceConfigurationConflictSummaryId
 key: id of deviceConfigurationConflictSummary
 

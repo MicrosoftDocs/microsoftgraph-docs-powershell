@@ -30,6 +30,8 @@ Update the navigation property reports in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

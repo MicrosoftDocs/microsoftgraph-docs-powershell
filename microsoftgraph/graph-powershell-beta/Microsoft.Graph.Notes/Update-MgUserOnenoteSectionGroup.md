@@ -51,6 +51,8 @@ Update the navigation property sectionGroups in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

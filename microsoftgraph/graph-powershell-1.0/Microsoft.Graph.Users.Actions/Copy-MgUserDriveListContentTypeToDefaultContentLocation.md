@@ -48,6 +48,8 @@ The file can then be added as a default file or template via a POST operation.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

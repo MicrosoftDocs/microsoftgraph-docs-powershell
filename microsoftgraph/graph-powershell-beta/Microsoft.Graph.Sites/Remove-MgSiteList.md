@@ -29,6 +29,8 @@ Delete navigation property lists for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

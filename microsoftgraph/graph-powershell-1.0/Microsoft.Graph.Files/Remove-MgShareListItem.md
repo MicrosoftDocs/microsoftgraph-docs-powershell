@@ -41,6 +41,8 @@ Delete navigation property items for shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

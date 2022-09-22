@@ -29,6 +29,8 @@ The details of this version of the app.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatId
 key: id of chat
 

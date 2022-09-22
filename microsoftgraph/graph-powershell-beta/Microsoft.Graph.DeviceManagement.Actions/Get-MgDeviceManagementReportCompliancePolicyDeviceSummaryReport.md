@@ -32,6 +32,8 @@ Invoke action getCompliancePolicyDeviceSummaryReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

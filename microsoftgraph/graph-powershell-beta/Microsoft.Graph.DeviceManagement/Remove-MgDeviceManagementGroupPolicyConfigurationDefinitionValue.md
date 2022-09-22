@@ -30,6 +30,8 @@ Delete navigation property definitionValues for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupPolicyConfigurationId
 key: id of groupPolicyConfiguration
 
