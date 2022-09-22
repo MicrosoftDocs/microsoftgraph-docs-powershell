@@ -29,26 +29,6 @@ Undo soft deletion of a single message or a message reply in a channel or a chat
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -ChatId
 key: id of chat
 
