@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdrivelistactivity
@@ -22,6 +22,8 @@ Get-MgDriveListActivity -DriveId <String> [-ExpandProperty <String[]>] [-Filter 
 The recent activities that took place within this list.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

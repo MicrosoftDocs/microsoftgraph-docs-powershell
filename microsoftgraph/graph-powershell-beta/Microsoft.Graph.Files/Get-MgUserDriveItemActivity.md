@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mguserdriveitemactivity
@@ -22,6 +22,8 @@ Get-MgUserDriveItemActivity -DriveId <String> -DriveItemId <String> -UserId <Str
 The list of recent activities that took place on this item.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

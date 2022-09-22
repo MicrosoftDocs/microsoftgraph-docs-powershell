@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemactivity
@@ -22,6 +22,8 @@ Get-MgGroupDriveRootListItemActivity -DriveId <String> -GroupId <String> [-Expan
 The list of recent activities that took place on this item.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mggroupdriveactivity
@@ -22,6 +22,8 @@ Get-MgGroupDriveActivity -DriveId <String> -GroupId <String> [-ExpandProperty <S
 List the recent activities that took place on an item or under a hierarchy.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
