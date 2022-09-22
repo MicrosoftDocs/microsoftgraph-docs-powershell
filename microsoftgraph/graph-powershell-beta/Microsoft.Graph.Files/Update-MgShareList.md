@@ -59,26 +59,6 @@ Update the navigation property list in shares
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -Activities
 The recent activities that took place within this list.
 To construct, please use Get-Help -Online and see NOTES section for ACTIVITIES properties and create a hash table.

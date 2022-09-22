@@ -32,26 +32,6 @@ Update the navigation property userExperienceAnalyticsBatteryHealthCapacityDetai
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -ActiveDevices
 Number of active devices within the tenant.
 Valid values -2147483648 to 2147483647

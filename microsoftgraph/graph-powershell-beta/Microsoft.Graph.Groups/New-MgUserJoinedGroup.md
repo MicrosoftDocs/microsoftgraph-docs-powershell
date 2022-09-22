@@ -105,26 +105,6 @@ Create new navigation property to joinedGroups for users
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -AcceptedSenders
 The list of users or groups that are allowed to create post's or calendar events in this group.
 If this list is non-empty then only users or groups listed here are allowed to post.
