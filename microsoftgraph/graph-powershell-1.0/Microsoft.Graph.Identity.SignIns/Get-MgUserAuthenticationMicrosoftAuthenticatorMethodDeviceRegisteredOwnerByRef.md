@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationmicrosoftauthenticatormethoddeviceregisteredownerbyref
@@ -33,6 +33,8 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

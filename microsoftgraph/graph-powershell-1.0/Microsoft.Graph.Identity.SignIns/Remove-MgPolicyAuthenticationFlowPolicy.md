@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationflowpolicy
@@ -21,6 +21,8 @@ Remove-MgPolicyAuthenticationFlowPolicy [-IfMatch <String>] [-PassThru] [-WhatIf
 Delete navigation property authenticationFlowsPolicy for policies
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -IfMatch
 ETag
