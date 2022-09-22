@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolememberbyref
@@ -29,6 +29,8 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

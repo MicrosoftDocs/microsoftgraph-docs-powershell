@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmember
@@ -24,6 +24,8 @@ Users and groups that are members of this administrative unit.
 Supports $expand.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -AdministrativeUnitId
 key: id of administrativeUnit
