@@ -68,26 +68,6 @@ Update the navigation property exchangeOnPremisesPolicies in deviceManagement
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -AccessRules
 The list of device access rules in Exchange.
 The access rules apply globally to the entire Exchange organization
