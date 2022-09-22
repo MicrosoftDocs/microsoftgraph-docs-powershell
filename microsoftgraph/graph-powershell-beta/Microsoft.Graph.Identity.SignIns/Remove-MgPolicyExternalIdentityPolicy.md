@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyexternalidentitypolicy
@@ -20,6 +20,8 @@ Remove-MgPolicyExternalIdentityPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] 
 Delete navigation property externalIdentitiesPolicy for policies
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

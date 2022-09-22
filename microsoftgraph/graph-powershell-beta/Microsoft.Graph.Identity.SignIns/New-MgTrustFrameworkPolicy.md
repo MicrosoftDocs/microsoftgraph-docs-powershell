@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgtrustframeworkpolicy
@@ -27,6 +27,8 @@ New-MgTrustFrameworkPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<Com
 Create new navigation property to policies for trustFramework
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

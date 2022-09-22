@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2cuserflowidentityproviderbyref
@@ -22,6 +22,8 @@ Get-MgIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <String> [
 Get the identity providers in a b2cIdentityUserFlow object.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

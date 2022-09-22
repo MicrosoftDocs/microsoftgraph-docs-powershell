@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicymobiledevicemanagementpolicyincludedgroupbyref
@@ -22,6 +22,8 @@ Get-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPo
 Get the list of groups that are included in a mobile app management policy.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

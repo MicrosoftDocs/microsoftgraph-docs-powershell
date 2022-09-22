@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyserviceprincipalcreationpolicy
@@ -31,6 +31,8 @@ New-MgPolicyServicePrincipalCreationPolicy -BodyParameter <IMicrosoftGraphServic
 Create new navigation property to servicePrincipalCreationPolicies for policies
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
@@ -222,7 +224,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationPolicy>`: servicePrincipalCreationPolicy
+BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationPolicy>: servicePrincipalCreationPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
@@ -238,7 +240,7 @@ BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationPolicy>`: servicePrincipa
   - `[Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>]`: 
   - `[IsBuiltIn <Boolean?>]`: 
 
-EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
+EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
   - `[Id <String>]`: 
   - `[ApplicationIds <String[]>]`: 
   - `[ApplicationPublisherIds <String[]>]`: 
@@ -246,7 +248,7 @@ EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
   - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
-INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
+INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
   - `[Id <String>]`: 
   - `[ApplicationIds <String[]>]`: 
   - `[ApplicationPublisherIds <String[]>]`: 
