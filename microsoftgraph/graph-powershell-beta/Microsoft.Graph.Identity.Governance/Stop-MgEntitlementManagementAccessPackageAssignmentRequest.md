@@ -29,26 +29,6 @@ In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest object
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -AccessPackageAssignmentRequestId
 key: id of accessPackageAssignmentRequest
 

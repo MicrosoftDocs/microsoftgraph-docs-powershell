@@ -30,26 +30,6 @@ Update search
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -Acronyms
 Administrative answer in Microsoft Search results to define common acronyms in a organization.
 To construct, please use Get-Help -Online and see NOTES section for ACRONYMS properties and create a hash table.

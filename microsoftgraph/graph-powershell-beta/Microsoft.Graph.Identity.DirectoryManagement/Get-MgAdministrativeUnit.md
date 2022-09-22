@@ -50,15 +50,6 @@ DeletedDateTime Id                                   Description DisplayName    
 
 This example retrieves a list of administrative units.
 
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -AdministrativeUnitId
