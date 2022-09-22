@@ -45,26 +45,6 @@ Acquire an OAuth Access token to authorize the Azure AD provisioning service to 
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -AdditionalProperties
 Additional Parameters
 
