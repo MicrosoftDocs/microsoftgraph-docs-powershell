@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityinformationprotection
@@ -21,6 +21,8 @@ Remove-MgSecurityInformationProtection [-IfMatch <String>] [-PassThru] [-WhatIf]
 Delete navigation property informationProtection for security
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

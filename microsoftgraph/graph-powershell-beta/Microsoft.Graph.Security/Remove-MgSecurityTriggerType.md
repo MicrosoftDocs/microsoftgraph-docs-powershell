@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritytriggertype
@@ -20,6 +20,8 @@ Remove-MgSecurityTriggerType [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm
 Delete navigation property triggerTypes for security
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

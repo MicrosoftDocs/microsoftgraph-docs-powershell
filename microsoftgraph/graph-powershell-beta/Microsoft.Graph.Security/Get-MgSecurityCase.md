@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritycase
@@ -20,6 +20,8 @@ Get-MgSecurityCase [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonP
 Get cases from security
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

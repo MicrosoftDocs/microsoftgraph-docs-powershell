@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritythreatsubmission
@@ -20,6 +20,8 @@ Get-MgSecurityThreatSubmission [-ExpandProperty <String[]>] [-Property <String[]
 A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

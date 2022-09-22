@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityinformationprotectionlabelpolicysetting
@@ -21,6 +21,8 @@ Get-MgSecurityInformationProtectionLabelPolicySetting [-ExpandProperty <String[]
 Read the Microsoft Purview Information Protection policy settings for the user or organization.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
