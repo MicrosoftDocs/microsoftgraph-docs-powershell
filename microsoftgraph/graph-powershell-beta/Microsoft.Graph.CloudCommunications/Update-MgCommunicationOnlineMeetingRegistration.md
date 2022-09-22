@@ -50,6 +50,8 @@ Update the details of a meetingRegistration object assciated with an onlineMeeti
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

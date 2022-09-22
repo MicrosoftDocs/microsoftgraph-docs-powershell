@@ -38,6 +38,8 @@ Supports $expand.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AlertId
 key: id of alert
 

@@ -21,6 +21,8 @@ Invoke function getOffice365ActivationsUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -OutFile
 Path to write output file to
 

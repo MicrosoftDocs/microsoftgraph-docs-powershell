@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserContactPhoto
 
 ## SYNOPSIS
-Get photo from users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## SYNTAX
 
@@ -23,9 +24,12 @@ Get-MgUserContactPhoto -InputObject <IPersonalContactsIdentity> [-Property <Stri
 ```
 
 ## DESCRIPTION
-Get photo from users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ContactId
 key: id of contact

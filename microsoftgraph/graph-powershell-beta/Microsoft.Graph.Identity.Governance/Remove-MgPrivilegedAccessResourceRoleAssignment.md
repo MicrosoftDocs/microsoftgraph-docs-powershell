@@ -30,6 +30,8 @@ Delete navigation property roleAssignments for privilegedAccess
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GovernanceResourceId
 key: id of governanceResource
 

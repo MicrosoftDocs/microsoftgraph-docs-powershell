@@ -30,6 +30,8 @@ Invoke action verifySignature
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

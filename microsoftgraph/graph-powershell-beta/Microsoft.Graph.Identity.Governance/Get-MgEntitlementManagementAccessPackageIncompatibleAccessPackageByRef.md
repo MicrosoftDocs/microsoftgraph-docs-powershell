@@ -23,6 +23,8 @@ Retrieve a list of the accessPackage objects that have been marked as incompatib
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageId
 key: id of accessPackage
 

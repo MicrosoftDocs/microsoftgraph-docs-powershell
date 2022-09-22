@@ -49,6 +49,8 @@ Create new navigation property to sensitivityLabels for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

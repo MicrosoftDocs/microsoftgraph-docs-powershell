@@ -93,6 +93,8 @@ Update the navigation property items in shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

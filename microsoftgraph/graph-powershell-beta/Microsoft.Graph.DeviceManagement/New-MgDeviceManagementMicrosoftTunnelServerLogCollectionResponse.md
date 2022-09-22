@@ -32,6 +32,8 @@ Create new navigation property to microsoftTunnelServerLogCollectionResponses fo
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

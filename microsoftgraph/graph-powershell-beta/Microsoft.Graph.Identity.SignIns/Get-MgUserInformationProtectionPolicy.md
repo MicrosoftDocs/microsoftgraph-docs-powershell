@@ -29,6 +29,8 @@ Get policy from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

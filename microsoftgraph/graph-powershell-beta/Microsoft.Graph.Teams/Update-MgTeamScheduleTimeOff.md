@@ -49,6 +49,8 @@ Update the navigation property timesOff in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

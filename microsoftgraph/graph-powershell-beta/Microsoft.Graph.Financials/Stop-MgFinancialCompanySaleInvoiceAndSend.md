@@ -29,6 +29,8 @@ Invoke action cancelAndSend
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

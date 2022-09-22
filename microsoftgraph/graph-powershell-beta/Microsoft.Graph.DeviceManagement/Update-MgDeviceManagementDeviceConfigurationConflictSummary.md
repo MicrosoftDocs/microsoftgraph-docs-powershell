@@ -47,6 +47,8 @@ Update the navigation property deviceConfigurationConflictSummary in deviceManag
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -49,6 +49,8 @@ Assigns user to Autopilot devices.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -49,6 +49,8 @@ Update the navigation property microsoftTunnelServerLogCollectionResponses in de
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

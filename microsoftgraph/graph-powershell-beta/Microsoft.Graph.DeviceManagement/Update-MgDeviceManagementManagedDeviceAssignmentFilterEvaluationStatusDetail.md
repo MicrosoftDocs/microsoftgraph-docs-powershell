@@ -48,6 +48,8 @@ Update the navigation property assignmentFilterEvaluationStatusDetails in device
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

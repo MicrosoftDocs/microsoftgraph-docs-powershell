@@ -38,6 +38,8 @@ User experience analytics appHealth OS version Performance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

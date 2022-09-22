@@ -45,6 +45,8 @@ Update the properties and relationships of a shiftPreferences object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

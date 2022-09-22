@@ -29,6 +29,8 @@ Delete navigation property contentTypes for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContentTypeId
 key: id of contentType
 

@@ -29,6 +29,8 @@ Returns the parent tag of the specified tag.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EdiscoveryCaseId
 key: id of ediscoveryCase
 

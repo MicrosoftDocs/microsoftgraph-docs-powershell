@@ -29,6 +29,8 @@ Delete navigation property macOSSoftwareUpdateAccountSummaries for deviceManagem
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

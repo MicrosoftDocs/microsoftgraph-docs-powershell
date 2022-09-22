@@ -29,6 +29,8 @@ Delete navigation property threads for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ConversationId
 key: id of conversation
 

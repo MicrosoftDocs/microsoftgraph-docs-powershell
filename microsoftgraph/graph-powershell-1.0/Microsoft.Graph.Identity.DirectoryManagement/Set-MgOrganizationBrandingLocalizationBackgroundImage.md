@@ -34,6 +34,8 @@ A smaller image will reduce bandwidth requirements and make the page load faster
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

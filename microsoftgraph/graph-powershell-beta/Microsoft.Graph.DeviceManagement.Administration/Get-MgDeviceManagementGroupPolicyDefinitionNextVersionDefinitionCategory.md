@@ -30,6 +30,8 @@ The group policy category associated with the definition.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

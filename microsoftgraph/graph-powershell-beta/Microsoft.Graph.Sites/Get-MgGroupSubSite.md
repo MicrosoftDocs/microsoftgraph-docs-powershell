@@ -38,6 +38,8 @@ Access the default site with /sites/root.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

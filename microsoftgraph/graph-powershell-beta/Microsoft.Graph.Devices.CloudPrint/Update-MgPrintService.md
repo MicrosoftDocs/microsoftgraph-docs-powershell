@@ -43,6 +43,8 @@ Update the navigation property services in print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

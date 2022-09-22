@@ -45,6 +45,8 @@ Activate the role that is assigned to the requester.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

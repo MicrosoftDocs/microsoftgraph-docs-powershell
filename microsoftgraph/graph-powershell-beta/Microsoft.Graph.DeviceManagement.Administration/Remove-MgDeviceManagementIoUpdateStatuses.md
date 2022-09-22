@@ -29,6 +29,8 @@ Delete navigation property iosUpdateStatuses for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

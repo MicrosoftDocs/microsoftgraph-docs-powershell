@@ -48,6 +48,8 @@ Create new navigation property to sessions for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

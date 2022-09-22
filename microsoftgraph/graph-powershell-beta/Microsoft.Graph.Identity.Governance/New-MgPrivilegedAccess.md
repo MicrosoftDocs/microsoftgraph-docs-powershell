@@ -33,6 +33,8 @@ Add new entity to privilegedAccess
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -28,6 +28,8 @@ Add new entity to bookingCurrencies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

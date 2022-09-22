@@ -58,6 +58,8 @@ Update the navigation property deviceConfigurationsAllManagedDeviceCertificateSt
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -39,6 +39,8 @@ Create new navigation property to assignments for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AddedStudentAction
 educationAddedStudentAction
 

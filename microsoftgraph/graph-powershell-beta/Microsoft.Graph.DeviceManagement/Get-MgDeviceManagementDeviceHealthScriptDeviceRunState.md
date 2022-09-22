@@ -36,6 +36,8 @@ List of run states for the device health script across all devices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

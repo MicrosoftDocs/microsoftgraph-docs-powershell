@@ -43,6 +43,8 @@ Install an app to the specified team.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

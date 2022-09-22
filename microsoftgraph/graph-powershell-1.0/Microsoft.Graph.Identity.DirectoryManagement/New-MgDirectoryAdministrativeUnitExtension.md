@@ -41,6 +41,8 @@ Create new navigation property to extensions for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

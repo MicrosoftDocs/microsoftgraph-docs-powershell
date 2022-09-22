@@ -49,6 +49,8 @@ After the review is completed, use this API again to set the Cloud PC back to a 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

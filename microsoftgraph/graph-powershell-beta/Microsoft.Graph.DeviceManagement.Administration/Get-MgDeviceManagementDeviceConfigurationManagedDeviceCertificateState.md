@@ -38,6 +38,8 @@ Summary of all certificates for all devices.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

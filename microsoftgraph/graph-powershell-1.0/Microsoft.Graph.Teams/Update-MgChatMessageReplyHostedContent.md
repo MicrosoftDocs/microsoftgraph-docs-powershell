@@ -45,6 +45,8 @@ Update the navigation property hostedContents in chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

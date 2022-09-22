@@ -53,6 +53,8 @@ Update the navigation property permissions in drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

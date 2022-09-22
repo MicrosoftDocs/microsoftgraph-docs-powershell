@@ -29,6 +29,8 @@ Delete navigation property customSecurityAttributeDefinitions for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CustomSecurityAttributeDefinitionId
 key: id of customSecurityAttributeDefinition
 

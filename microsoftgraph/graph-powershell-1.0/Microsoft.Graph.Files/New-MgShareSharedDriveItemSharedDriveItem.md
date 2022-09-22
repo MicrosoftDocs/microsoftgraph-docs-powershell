@@ -36,6 +36,8 @@ Add new entity to shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

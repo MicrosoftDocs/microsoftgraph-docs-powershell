@@ -42,6 +42,8 @@ Update the navigation property pinnedMessages in chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

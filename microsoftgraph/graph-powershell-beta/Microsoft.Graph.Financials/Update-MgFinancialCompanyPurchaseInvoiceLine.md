@@ -94,6 +94,8 @@ Update the navigation property purchaseInvoiceLines in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Account
 account
 To construct, please use Get-Help -Online and see NOTES section for ACCOUNT properties and create a hash table.

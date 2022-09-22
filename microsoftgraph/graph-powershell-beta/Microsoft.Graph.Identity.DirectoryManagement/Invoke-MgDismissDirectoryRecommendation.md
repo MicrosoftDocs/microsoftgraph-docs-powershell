@@ -43,6 +43,8 @@ Invoke action dismiss
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

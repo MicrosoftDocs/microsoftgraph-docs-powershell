@@ -29,6 +29,8 @@ Delete navigation property templates for servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

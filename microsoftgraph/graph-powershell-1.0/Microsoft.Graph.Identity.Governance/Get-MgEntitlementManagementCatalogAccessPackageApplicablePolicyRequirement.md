@@ -31,6 +31,8 @@ Each requirement object corresponds to an access package assignment policy that 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageCatalogId
 key: id of accessPackageCatalog
 

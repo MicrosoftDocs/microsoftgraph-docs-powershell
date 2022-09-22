@@ -38,6 +38,8 @@ Summary of the updates by category.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

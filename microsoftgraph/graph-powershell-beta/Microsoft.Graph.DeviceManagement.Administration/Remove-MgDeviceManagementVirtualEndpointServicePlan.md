@@ -29,6 +29,8 @@ Delete navigation property servicePlans for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CloudPcServicePlanId
 key: id of cloudPcServicePlan
 

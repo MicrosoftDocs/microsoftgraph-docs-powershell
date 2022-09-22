@@ -36,6 +36,8 @@ Get operations from communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

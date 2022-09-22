@@ -29,6 +29,8 @@ Resets decisions of all accessReviewInstanceDecisionItem objects on an accessRev
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessReviewInstanceId
 key: id of accessReviewInstance
 

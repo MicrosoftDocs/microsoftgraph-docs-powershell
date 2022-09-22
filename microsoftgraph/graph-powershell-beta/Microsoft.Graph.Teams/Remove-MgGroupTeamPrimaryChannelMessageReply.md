@@ -29,6 +29,8 @@ Delete navigation property replies for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatMessageId
 key: id of chatMessage
 

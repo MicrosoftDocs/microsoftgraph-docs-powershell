@@ -47,6 +47,8 @@ Update the navigation property virtualAppointment in communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

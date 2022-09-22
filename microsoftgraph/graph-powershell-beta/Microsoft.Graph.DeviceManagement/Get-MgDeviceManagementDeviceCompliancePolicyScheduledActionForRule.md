@@ -37,6 +37,8 @@ The list of scheduled action for this rule
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

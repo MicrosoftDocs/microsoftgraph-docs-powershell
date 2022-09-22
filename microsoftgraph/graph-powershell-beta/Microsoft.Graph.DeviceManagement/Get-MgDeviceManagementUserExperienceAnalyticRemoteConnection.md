@@ -37,6 +37,8 @@ User experience analytics remote connection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

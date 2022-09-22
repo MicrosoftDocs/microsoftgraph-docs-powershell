@@ -47,6 +47,8 @@ Invoke action createServerLogCollectionRequest
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

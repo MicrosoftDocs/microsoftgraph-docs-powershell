@@ -47,6 +47,8 @@ Invoke action updateDeviceProfileAssignment
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -32,6 +32,8 @@ Delete navigation property updateStateSummaries for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

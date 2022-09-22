@@ -29,6 +29,8 @@ Delete ref of navigation property registeredOwners for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceId
 key: id of device
 

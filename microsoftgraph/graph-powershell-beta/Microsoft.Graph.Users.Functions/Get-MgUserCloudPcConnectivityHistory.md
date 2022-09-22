@@ -27,6 +27,8 @@ Invoke function getCloudPcConnectivityHistory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CloudPcId
 key: id of cloudPC
 

@@ -49,6 +49,8 @@ Create a new section in the specified notebook.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

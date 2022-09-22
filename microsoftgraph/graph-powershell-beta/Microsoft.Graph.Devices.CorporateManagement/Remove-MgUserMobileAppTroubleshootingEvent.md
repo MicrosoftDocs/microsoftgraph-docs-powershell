@@ -29,6 +29,8 @@ Delete navigation property mobileAppTroubleshootingEvents for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

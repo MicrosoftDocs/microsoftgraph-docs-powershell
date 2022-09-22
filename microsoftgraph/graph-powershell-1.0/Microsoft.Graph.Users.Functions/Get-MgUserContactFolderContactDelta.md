@@ -31,6 +31,8 @@ This allows you to maintain and synchronize a local store of a user's contacts w
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContactFolderId
 key: id of contactFolder
 

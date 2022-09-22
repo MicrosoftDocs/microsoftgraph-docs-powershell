@@ -40,6 +40,8 @@ Create new navigation property to extensions for devices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

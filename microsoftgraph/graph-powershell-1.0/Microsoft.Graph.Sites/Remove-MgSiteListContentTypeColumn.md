@@ -29,6 +29,8 @@ Delete navigation property columns for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ColumnDefinitionId
 key: id of columnDefinition
 

@@ -36,6 +36,8 @@ Get labels from informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

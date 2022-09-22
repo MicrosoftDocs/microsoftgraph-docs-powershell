@@ -21,6 +21,8 @@ Delete navigation property directory for roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

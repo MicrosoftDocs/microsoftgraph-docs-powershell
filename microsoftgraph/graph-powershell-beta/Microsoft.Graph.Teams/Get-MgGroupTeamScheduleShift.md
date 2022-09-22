@@ -34,6 +34,8 @@ The shifts in the schedule.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

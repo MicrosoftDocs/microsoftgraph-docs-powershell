@@ -46,6 +46,8 @@ Use this API to update the **displayName** for the Cloud PC entity.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

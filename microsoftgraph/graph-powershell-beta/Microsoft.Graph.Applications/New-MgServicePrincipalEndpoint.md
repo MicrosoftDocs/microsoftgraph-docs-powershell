@@ -45,6 +45,8 @@ Create new navigation property to endpoints for servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

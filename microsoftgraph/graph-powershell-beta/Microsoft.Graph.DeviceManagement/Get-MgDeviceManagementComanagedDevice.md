@@ -36,6 +36,8 @@ The list of co-managed devices report
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

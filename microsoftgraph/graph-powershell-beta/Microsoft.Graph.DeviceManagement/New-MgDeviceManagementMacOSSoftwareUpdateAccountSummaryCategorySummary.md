@@ -50,6 +50,8 @@ Create new navigation property to categorySummaries for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

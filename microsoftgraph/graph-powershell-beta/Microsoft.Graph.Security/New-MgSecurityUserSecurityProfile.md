@@ -32,6 +32,8 @@ Create new navigation property to userSecurityProfiles for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Accounts
 .
 To construct, please use Get-Help -Online and see NOTES section for ACCOUNTS properties and create a hash table.

@@ -43,6 +43,8 @@ Create new navigation property to transcripts for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

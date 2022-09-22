@@ -30,6 +30,8 @@ Get device from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -53,6 +53,8 @@ Update the navigation property pages in sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

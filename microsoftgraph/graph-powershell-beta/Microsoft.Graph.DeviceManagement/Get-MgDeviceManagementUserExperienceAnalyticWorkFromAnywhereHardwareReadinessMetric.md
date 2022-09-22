@@ -22,6 +22,8 @@ User experience analytics work from anywhere hardware readiness metrics.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

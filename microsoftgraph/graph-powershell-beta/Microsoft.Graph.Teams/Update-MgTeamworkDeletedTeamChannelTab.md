@@ -46,6 +46,8 @@ Update the navigation property tabs in teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

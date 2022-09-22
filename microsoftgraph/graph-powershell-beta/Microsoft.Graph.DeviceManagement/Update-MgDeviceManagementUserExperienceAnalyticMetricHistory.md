@@ -45,6 +45,8 @@ Update the navigation property userExperienceAnalyticsMetricHistory in deviceMan
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

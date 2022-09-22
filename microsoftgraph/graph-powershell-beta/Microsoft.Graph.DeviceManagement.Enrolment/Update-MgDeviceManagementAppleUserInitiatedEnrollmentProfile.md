@@ -51,6 +51,8 @@ Update the navigation property appleUserInitiatedEnrollmentProfiles in deviceMan
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

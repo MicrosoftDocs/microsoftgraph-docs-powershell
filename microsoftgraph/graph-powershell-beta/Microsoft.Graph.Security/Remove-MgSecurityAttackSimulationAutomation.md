@@ -29,6 +29,8 @@ Delete navigation property simulationAutomations for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

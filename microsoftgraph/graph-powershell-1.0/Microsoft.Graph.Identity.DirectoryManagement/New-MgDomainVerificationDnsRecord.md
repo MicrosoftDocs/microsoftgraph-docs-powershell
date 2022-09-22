@@ -43,6 +43,8 @@ Create new navigation property to verificationDnsRecords for domains
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

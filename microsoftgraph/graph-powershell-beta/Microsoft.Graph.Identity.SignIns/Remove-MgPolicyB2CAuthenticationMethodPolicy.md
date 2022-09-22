@@ -22,6 +22,8 @@ Delete navigation property b2cAuthenticationMethodsPolicy for policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

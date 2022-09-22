@@ -81,6 +81,8 @@ Create a new version of a document set item in a list.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

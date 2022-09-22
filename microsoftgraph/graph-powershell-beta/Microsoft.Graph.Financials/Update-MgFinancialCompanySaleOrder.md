@@ -64,6 +64,8 @@ Update the navigation property salesOrders in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

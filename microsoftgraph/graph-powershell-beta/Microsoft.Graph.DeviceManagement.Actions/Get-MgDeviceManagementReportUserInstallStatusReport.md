@@ -32,6 +32,8 @@ Invoke action getUserInstallStatusReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

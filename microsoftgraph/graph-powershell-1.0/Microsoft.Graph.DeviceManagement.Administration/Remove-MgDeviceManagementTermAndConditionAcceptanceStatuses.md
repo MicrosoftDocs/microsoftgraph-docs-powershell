@@ -30,6 +30,8 @@ Delete navigation property acceptanceStatuses for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

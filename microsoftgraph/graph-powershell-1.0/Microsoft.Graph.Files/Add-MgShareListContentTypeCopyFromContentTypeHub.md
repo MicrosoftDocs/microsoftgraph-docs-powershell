@@ -49,6 +49,8 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

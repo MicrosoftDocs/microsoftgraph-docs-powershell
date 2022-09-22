@@ -37,6 +37,8 @@ Collection of settings and their states and counts of devices that belong to cor
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

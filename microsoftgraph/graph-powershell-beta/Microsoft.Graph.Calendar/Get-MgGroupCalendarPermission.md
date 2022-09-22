@@ -34,6 +34,8 @@ The permissions of the users with whom the calendar is shared.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

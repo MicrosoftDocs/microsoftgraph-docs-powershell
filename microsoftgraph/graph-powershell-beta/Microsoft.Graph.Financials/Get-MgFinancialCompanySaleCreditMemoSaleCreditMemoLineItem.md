@@ -29,6 +29,8 @@ Get item from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

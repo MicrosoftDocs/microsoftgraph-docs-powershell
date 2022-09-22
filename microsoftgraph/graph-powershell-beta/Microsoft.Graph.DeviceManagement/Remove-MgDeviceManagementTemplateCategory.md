@@ -30,6 +30,8 @@ Delete navigation property categories for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementTemplateId
 key: id of deviceManagementTemplate
 

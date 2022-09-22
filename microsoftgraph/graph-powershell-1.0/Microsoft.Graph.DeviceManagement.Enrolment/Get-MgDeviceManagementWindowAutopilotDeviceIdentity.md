@@ -36,6 +36,8 @@ The Windows autopilot device identities contained collection.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

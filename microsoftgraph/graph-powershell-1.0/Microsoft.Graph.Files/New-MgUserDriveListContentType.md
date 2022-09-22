@@ -55,6 +55,8 @@ Create new navigation property to contentTypes for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

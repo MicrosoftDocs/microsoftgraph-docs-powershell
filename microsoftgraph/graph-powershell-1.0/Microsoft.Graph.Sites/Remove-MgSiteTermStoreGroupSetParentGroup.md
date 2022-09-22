@@ -29,6 +29,8 @@ Delete navigation property parentGroup for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

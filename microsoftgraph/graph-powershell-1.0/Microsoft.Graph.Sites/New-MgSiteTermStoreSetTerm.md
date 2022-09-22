@@ -81,6 +81,8 @@ Create new navigation property to terms for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

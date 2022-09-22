@@ -41,6 +41,8 @@ Assign a tokenLifetimePolicy to an application or servicePrincipal.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

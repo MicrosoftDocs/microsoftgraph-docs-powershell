@@ -36,6 +36,8 @@ Encryption report for devices in this account
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

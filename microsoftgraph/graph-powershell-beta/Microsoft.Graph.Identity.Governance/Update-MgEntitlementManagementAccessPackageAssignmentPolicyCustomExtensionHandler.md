@@ -47,6 +47,8 @@ Update the navigation property customExtensionHandlers in identityGovernance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageAssignmentPolicyId
 key: id of accessPackageAssignmentPolicy
 

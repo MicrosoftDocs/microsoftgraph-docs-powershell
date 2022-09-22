@@ -29,6 +29,8 @@ Delete navigation property languages for identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -B2XIdentityUserFlowId
 key: id of b2xIdentityUserFlow
 

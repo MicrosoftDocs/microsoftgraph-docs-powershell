@@ -29,6 +29,8 @@ Delete navigation property templates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementTemplateId
 key: id of deviceManagementTemplate
 

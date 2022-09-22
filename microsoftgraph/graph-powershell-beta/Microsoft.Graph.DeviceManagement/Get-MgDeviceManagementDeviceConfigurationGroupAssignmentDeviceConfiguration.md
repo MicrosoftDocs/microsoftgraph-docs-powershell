@@ -31,6 +31,8 @@ The navigation link to the Device Configuration being targeted.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceConfigurationGroupAssignmentId
 key: id of deviceConfigurationGroupAssignment
 

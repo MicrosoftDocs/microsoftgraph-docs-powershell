@@ -30,6 +30,8 @@ The SharePoint site associated with the siteSource.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EdiscoveryCaseId
 key: id of ediscoveryCase
 

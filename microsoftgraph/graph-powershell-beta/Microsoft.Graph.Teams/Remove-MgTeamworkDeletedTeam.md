@@ -29,6 +29,8 @@ Delete navigation property deletedTeams for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeletedTeamId
 key: id of deletedTeam
 

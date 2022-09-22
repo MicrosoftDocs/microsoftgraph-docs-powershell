@@ -73,6 +73,8 @@ Update the navigation property device in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccountEnabled
 true if the account is enabled; otherwise, false.
 Default is true.

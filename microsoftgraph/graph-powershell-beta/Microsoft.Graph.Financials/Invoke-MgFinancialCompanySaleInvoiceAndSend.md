@@ -29,6 +29,8 @@ Invoke action postAndSend
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

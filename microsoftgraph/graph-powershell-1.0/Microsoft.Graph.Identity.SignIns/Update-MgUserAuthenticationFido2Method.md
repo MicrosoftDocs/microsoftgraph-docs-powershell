@@ -47,6 +47,8 @@ Update the navigation property fido2Methods in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AaGuid
 Authenticator Attestation GUID, an identifier that indicates the type (e.g.
 make and model) of the authenticator.

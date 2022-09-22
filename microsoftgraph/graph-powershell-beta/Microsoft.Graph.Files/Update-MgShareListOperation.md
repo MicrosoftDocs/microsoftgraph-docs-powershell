@@ -47,6 +47,8 @@ Update the navigation property operations in shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

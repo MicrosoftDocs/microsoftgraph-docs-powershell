@@ -29,6 +29,8 @@ Get content for the navigation property resources from groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

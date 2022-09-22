@@ -33,6 +33,8 @@ Create new navigation property to simulationAutomations for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

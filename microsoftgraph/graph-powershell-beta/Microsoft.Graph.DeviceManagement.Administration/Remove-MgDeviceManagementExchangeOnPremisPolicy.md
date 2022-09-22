@@ -35,6 +35,8 @@ Delete navigation property exchangeOnPremisesPolicies for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementExchangeOnPremisesPolicyId
 key: id of deviceManagementExchangeOnPremisesPolicy
 

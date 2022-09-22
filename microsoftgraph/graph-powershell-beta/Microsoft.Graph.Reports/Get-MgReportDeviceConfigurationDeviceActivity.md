@@ -21,6 +21,8 @@ Metadata for the device configuration device activity report
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -OutFile
 Path to write output file to
 

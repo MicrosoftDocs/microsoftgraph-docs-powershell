@@ -23,6 +23,8 @@ Get the educationClass resources owned by an educationSchool.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

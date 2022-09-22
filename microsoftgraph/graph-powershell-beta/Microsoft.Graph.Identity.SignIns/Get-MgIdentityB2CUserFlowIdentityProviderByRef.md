@@ -23,6 +23,8 @@ Get the identity providers in a b2cIdentityUserFlow object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -36,6 +36,8 @@ Collection of assignments
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -49,6 +49,8 @@ For more information on how to propose a time, and how to receive and accept a n
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

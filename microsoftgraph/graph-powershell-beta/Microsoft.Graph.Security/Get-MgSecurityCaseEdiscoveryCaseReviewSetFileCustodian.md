@@ -29,6 +29,8 @@ Custodians associated with the file.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EdiscoveryCaseId
 key: id of ediscoveryCase
 

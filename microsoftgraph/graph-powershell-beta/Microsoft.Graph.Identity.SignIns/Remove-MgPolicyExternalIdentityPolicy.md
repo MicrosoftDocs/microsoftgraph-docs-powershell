@@ -21,6 +21,8 @@ Delete navigation property externalIdentitiesPolicy for policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

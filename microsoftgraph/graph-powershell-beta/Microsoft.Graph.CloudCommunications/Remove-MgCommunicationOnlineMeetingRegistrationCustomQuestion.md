@@ -29,6 +29,8 @@ Delete navigation property customQuestions for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

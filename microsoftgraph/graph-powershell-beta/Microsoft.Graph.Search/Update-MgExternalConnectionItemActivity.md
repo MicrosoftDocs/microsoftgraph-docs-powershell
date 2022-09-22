@@ -46,6 +46,8 @@ Update the navigation property activities in external
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

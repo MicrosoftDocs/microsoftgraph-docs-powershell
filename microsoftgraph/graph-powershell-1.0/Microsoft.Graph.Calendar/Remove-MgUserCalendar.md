@@ -29,6 +29,8 @@ Delete navigation property calendars for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CalendarId
 key: id of calendar
 

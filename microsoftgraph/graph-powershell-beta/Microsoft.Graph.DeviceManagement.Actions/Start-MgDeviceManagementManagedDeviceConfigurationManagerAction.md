@@ -45,6 +45,8 @@ Trigger action on ConfigurationManager client
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

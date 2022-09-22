@@ -30,6 +30,8 @@ Delete navigation property deviceMalwareStates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

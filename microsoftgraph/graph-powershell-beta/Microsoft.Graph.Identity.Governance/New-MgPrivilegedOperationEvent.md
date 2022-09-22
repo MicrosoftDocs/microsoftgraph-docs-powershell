@@ -32,6 +32,8 @@ Add new entity to privilegedOperationEvents
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalInformation
 Detailed human readable information for the event.
 

@@ -45,6 +45,8 @@ Update the navigation property operations in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

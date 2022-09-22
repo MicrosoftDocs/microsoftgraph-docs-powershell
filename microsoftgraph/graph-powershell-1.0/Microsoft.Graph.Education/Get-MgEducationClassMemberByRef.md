@@ -23,6 +23,8 @@ Retrieves the educationUser members of an educationClass.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

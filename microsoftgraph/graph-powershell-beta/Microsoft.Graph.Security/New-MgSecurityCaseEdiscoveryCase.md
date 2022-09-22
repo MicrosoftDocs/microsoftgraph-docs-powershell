@@ -2626,7 +2626,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCase>`: ediscoveryCase
             - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
             - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Read-only.
             - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
-            - `[Conversations <IMicrosoftGraphConversation1[]>]`: The group's conversations.
+            - `[Conversations <IMicrosoftGraphConversation[]>]`: The group's conversations.
               - `[Id <String>]`: 
               - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
               - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
@@ -7349,7 +7349,7 @@ CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian\[]>: Returns a list of ca
           - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
           - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Read-only.
           - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
-          - `[Conversations <IMicrosoftGraphConversation1[]>]`: The group's conversations.
+          - `[Conversations <IMicrosoftGraphConversation[]>]`: The group's conversations.
             - `[Id <String>]`: 
             - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
             - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
@@ -11918,7 +11918,7 @@ LEGALHOLDS <IMicrosoftGraphSecurityEdiscoveryHoldPolicy\[]>: Returns a list of c
           - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
           - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Read-only.
           - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
-          - `[Conversations <IMicrosoftGraphConversation1[]>]`: The group's conversations.
+          - `[Conversations <IMicrosoftGraphConversation[]>]`: The group's conversations.
             - `[Id <String>]`: 
             - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
             - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
@@ -16561,7 +16561,7 @@ REVIEWSETS <IMicrosoftGraphSecurityEdiscoveryReviewSet\[]>: Returns a list of eD
               - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
               - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Read-only.
               - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
-              - `[Conversations <IMicrosoftGraphConversation1[]>]`: The group's conversations.
+              - `[Conversations <IMicrosoftGraphConversation[]>]`: The group's conversations.
                 - `[Id <String>]`: 
                 - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
                 - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
@@ -21192,7 +21192,7 @@ SEARCHES <IMicrosoftGraphSecurityEdiscoverySearch\[]>: Returns a list of eDiscov
                   - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
                   - `[CalendarView <IMicrosoftGraphEvent[]>]`: The calendar view for the calendar. Read-only.
                   - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
-                  - `[Conversations <IMicrosoftGraphConversation1[]>]`: The group's conversations.
+                  - `[Conversations <IMicrosoftGraphConversation[]>]`: The group's conversations.
                     - `[Id <String>]`: 
                     - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
                     - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).

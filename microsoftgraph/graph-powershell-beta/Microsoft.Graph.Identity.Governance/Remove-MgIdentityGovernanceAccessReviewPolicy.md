@@ -22,6 +22,8 @@ Delete navigation property policy for identityGovernance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

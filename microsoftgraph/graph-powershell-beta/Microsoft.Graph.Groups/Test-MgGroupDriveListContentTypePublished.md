@@ -28,6 +28,8 @@ Invoke function isPublished
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContentTypeId
 key: id of contentType
 

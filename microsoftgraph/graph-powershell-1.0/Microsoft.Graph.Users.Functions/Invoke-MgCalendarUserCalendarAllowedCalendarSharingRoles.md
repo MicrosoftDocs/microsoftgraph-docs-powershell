@@ -40,6 +40,8 @@ Invoke function allowedCalendarSharingRoles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CalendarId
 key: id of calendar
 

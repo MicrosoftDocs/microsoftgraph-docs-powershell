@@ -30,6 +30,8 @@ Invoke action queryByPlatformType
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

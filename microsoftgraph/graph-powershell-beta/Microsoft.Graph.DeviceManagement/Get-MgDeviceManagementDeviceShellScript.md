@@ -36,6 +36,8 @@ The list of device shell scripts associated with the tenant.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

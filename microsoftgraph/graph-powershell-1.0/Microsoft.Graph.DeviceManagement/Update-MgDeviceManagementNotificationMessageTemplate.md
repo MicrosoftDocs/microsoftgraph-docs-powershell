@@ -49,6 +49,8 @@ Update the navigation property notificationMessageTemplates in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

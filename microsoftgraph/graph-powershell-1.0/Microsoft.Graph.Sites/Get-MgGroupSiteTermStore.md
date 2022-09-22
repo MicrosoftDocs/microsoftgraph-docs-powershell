@@ -48,6 +48,8 @@ Read the properties and relationships of a store object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

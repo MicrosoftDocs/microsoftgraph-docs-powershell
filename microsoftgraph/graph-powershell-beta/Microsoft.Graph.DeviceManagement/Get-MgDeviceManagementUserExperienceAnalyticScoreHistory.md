@@ -36,6 +36,8 @@ User experience analytics device Startup Score History
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

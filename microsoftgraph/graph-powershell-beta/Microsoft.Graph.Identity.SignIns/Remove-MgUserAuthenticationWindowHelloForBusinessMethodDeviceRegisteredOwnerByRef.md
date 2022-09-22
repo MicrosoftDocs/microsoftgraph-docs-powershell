@@ -31,6 +31,8 @@ Delete ref of navigation property registeredOwners for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectoryObjectId
 key: id of directoryObject
 

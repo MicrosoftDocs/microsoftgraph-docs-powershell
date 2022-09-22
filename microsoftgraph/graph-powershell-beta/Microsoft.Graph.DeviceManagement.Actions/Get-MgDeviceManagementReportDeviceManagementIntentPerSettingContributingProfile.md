@@ -32,6 +32,8 @@ Invoke action getDeviceManagementIntentPerSettingContributingProfiles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

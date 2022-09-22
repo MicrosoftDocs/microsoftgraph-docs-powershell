@@ -30,6 +30,8 @@ Delete navigation property versions for agreements
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgreementFileLocalizationId
 key: id of agreementFileLocalization
 

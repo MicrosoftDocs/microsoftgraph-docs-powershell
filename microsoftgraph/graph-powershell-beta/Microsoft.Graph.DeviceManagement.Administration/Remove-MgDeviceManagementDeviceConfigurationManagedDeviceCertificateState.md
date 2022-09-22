@@ -31,6 +31,8 @@ Delete navigation property deviceConfigurationsAllManagedDeviceCertificateStates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

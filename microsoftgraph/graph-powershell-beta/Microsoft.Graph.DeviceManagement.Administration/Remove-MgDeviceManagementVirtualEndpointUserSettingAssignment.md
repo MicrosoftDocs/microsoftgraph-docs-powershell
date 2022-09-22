@@ -30,6 +30,8 @@ Delete navigation property assignments for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CloudPcUserSettingAssignmentId
 key: id of cloudPcUserSettingAssignment
 

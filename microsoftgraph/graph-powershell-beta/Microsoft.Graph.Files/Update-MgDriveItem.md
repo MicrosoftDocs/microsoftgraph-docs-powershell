@@ -79,6 +79,8 @@ Update the navigation property items in drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Activities
 The list of recent activities that took place on this item.
 To construct, please use Get-Help -Online and see NOTES section for ACTIVITIES properties and create a hash table.

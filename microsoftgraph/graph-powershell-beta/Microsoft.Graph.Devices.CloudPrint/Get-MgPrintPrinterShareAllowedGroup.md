@@ -23,6 +23,8 @@ Retrieve a list of groups that have been granted access to submit print jobs to 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

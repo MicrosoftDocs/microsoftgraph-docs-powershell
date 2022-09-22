@@ -49,6 +49,8 @@ Update the navigation property notebooks in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

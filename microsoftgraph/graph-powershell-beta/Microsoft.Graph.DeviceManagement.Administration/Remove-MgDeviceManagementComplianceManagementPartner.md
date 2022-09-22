@@ -29,6 +29,8 @@ Delete navigation property complianceManagementPartners for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ComplianceManagementPartnerId
 key: id of complianceManagementPartner
 

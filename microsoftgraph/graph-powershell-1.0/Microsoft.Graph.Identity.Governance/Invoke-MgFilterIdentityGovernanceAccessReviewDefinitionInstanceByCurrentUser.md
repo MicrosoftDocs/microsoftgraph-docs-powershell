@@ -29,6 +29,8 @@ Invoke function filterByCurrentUser
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessReviewScheduleDefinitionId
 key: id of accessReviewScheduleDefinition
 

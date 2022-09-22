@@ -40,6 +40,8 @@ Summary of the update states.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

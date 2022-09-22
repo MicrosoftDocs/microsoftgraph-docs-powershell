@@ -44,6 +44,8 @@ Invoke function usersRegisteredByFeature
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IncludedUserRoles
 Usage: includedUserRoles='{includedUserRoles}'
 

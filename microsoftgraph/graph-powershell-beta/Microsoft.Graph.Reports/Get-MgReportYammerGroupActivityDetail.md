@@ -39,6 +39,8 @@ Invoke function getYammerGroupsActivityDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

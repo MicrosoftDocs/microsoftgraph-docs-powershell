@@ -49,6 +49,8 @@ Create new navigation property to history for identityProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccountEnabled
 true if the service principal account is enabled; otherwise, false.
 

@@ -31,6 +31,8 @@ Delete navigation property unsupportedGroupPolicyExtensions for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupPolicyMigrationReportId
 key: id of groupPolicyMigrationReport
 

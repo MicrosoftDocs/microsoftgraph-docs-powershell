@@ -29,6 +29,8 @@ Delete navigation property deviceCategories for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceCategoryId
 key: id of deviceCategory
 

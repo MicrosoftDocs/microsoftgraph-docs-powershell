@@ -36,6 +36,8 @@ Get dataLossPreventionPolicies from informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

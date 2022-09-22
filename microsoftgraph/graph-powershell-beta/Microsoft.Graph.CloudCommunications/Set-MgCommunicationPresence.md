@@ -45,6 +45,8 @@ Set the availability and activity status in a presence session of an application
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Activity
 .
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserContact
 
 ## SYNOPSIS
-Get contacts from users
+The user's contacts.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -29,7 +31,9 @@ Get-MgUserContact -InputObject <IPersonalContactsIdentity> [-Property <String[]>
 ```
 
 ## DESCRIPTION
-Get contacts from users
+The user's contacts.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

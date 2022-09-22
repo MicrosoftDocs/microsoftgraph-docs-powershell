@@ -43,6 +43,8 @@ Invoke action validatePermission
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

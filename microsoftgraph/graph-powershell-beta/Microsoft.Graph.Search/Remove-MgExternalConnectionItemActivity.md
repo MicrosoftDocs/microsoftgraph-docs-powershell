@@ -29,6 +29,8 @@ Delete navigation property activities for external
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExternalActivityId
 key: id of externalActivity
 

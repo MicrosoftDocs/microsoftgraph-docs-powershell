@@ -39,6 +39,8 @@ Invoke function getTeamsDeviceUsageUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

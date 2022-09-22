@@ -27,6 +27,8 @@ Invoke function getRoleScopeTagsByIds
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Ids
 Usage: ids={ids}
 

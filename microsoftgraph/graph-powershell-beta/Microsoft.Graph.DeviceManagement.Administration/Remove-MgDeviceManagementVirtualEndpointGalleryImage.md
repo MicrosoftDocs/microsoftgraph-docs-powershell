@@ -29,6 +29,8 @@ Delete navigation property galleryImages for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CloudPcGalleryImageId
 key: id of cloudPcGalleryImage
 

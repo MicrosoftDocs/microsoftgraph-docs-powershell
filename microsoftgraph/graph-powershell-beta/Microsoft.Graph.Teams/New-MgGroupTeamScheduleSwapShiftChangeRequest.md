@@ -51,6 +51,8 @@ Create an instance of a swapShiftsChangeRequest object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

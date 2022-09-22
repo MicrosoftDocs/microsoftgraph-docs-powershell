@@ -42,6 +42,8 @@ Create new navigation property to usageRights for devices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

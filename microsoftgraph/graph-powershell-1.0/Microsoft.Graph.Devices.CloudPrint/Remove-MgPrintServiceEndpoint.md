@@ -29,6 +29,8 @@ Delete navigation property endpoints for print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

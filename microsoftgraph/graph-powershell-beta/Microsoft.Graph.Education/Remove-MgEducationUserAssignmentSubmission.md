@@ -29,6 +29,8 @@ Delete navigation property submissions for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

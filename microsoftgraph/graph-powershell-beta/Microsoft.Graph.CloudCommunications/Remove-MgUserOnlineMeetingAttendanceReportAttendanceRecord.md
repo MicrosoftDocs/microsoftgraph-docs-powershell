@@ -43,6 +43,8 @@ Delete navigation property attendanceRecords for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttendanceRecordId
 key: id of attendanceRecord
 

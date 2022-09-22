@@ -43,6 +43,8 @@ Create new navigation property to activities for external
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

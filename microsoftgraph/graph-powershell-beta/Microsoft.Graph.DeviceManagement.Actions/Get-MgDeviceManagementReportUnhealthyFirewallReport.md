@@ -32,6 +32,8 @@ Invoke action getUnhealthyFirewallReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -28,6 +28,8 @@ Delete entity from chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatId
 key: id of chat
 

@@ -45,6 +45,8 @@ Get the availability information of staff members of a Microsoft Bookings calend
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -30,6 +30,8 @@ Delete navigation property subject for privilegedAccess
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GovernanceResourceId
 key: id of governanceResource
 

@@ -32,6 +32,8 @@ Invoke action getConfigurationPolicySettingsDeviceSummaryReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

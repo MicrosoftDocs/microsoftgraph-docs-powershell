@@ -29,6 +29,8 @@ Delete navigation property members for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

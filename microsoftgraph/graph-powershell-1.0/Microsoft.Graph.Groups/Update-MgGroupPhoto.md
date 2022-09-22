@@ -65,6 +65,8 @@ Update the navigation property photo in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

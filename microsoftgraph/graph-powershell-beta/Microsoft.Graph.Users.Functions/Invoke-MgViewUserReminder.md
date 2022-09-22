@@ -27,6 +27,8 @@ Invoke function reminderView
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EndDateTime
 Usage: EndDateTime='{EndDateTime}'
 

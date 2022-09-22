@@ -31,6 +31,8 @@ Invoke action importDeviceIdentityList
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

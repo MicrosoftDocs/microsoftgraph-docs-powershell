@@ -47,6 +47,8 @@ Create new navigation property to decisions for accessReviews
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessRecommendation
 The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
 

@@ -33,6 +33,8 @@ Create a new entitlement management accessPackageAssignment
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageId
 
 ```yaml

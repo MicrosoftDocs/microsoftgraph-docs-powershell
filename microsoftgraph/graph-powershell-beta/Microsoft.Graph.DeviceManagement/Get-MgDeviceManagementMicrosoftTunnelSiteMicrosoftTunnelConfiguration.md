@@ -29,6 +29,8 @@ The MicrosoftTunnelConfiguration that has been applied to this MicrosoftTunnelSi
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

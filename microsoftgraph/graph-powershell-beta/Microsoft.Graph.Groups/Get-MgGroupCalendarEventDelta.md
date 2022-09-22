@@ -41,6 +41,8 @@ The following table lists the differences between the **delta** function on even
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

@@ -59,6 +59,8 @@ Update the navigation property intents in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

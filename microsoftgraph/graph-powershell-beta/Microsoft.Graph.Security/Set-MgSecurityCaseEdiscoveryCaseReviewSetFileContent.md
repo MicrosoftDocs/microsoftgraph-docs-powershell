@@ -30,6 +30,8 @@ Update content for the navigation property files in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

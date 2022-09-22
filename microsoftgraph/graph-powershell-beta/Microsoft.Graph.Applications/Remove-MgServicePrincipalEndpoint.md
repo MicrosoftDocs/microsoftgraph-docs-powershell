@@ -29,6 +29,8 @@ Delete navigation property endpoints for servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EndpointId
 key: id of endpoint
 

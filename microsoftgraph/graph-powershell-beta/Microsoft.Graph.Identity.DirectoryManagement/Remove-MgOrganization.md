@@ -29,6 +29,8 @@ Delete entity from organization
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -51,6 +51,8 @@ Update the navigation property groupPolicyDefinitionFiles in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

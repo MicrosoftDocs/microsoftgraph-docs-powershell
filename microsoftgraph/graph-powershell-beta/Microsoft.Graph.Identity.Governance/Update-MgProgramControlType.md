@@ -43,6 +43,8 @@ Update entity in programControlTypes
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

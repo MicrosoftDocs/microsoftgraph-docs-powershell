@@ -42,6 +42,8 @@ By default, a GET /threatAssessmentRequests/{id} does not return this property u
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

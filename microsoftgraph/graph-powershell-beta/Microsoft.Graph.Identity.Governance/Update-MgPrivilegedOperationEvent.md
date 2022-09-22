@@ -49,6 +49,8 @@ Update entity in privilegedOperationEvents
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalInformation
 Detailed human readable information for the event.
 

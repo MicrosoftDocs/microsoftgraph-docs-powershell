@@ -29,6 +29,8 @@ Delete navigation property colorIcon for appCatalogs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -31,6 +31,8 @@ Delete navigation property appLogCollectionRequests for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AppLogCollectionRequestId
 key: id of appLogCollectionRequest
 

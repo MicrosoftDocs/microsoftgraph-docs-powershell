@@ -21,6 +21,8 @@ Get labels from security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

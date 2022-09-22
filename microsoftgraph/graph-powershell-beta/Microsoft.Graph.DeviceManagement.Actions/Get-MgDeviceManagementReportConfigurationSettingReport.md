@@ -32,6 +32,8 @@ Invoke action getConfigurationSettingsReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

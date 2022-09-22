@@ -36,6 +36,8 @@ A list of connector objects.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

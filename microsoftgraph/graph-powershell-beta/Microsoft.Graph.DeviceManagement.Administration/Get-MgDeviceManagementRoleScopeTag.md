@@ -36,6 +36,8 @@ The Role Scope Tags.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -31,6 +31,8 @@ This cannot be changed after tab creation.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

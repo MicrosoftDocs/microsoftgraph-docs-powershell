@@ -29,6 +29,8 @@ Get media content for the navigation property photo from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContactFolderId
 key: id of contactFolder
 

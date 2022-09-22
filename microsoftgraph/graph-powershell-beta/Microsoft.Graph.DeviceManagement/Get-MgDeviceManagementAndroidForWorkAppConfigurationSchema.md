@@ -36,6 +36,8 @@ Android for Work app configuration schema entities.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

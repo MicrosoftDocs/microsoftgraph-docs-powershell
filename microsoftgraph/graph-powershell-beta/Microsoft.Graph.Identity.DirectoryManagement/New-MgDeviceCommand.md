@@ -45,6 +45,8 @@ Create new navigation property to commands for devices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -43,6 +43,8 @@ Create new navigation property to effectiveRules for policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -34,6 +34,8 @@ We recommend using a transparent image with no padding around the logo.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

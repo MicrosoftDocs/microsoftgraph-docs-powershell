@@ -38,6 +38,8 @@ You can add Azure Active Directory users, Azure Active Directory groups, or othe
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

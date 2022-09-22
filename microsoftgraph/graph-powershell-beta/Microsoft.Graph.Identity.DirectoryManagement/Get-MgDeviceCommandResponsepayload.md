@@ -29,6 +29,8 @@ Get responsepayload from devices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CommandId
 key: id of command
 

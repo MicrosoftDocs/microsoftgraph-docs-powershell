@@ -32,6 +32,8 @@ Invoke action getDeviceManagementIntentSettingsReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

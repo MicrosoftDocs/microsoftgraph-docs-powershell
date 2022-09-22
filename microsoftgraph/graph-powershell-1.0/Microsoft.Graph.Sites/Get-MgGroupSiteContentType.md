@@ -36,6 +36,8 @@ The collection of content types defined for this site.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -48,6 +48,8 @@ Update the navigation property windowsHelloForBusinessMethods in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

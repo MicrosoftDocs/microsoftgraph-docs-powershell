@@ -31,6 +31,8 @@ NavigationProperty/Containment; navigation property to the associated activity.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivityHistoryItemId
 key: id of activityHistoryItem
 

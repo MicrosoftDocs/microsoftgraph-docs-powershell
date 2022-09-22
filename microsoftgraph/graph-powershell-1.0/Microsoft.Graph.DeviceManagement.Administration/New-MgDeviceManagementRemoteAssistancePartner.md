@@ -30,6 +30,8 @@ Create new navigation property to remoteAssistancePartners for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

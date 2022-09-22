@@ -29,6 +29,8 @@ Delete navigation property notebooks for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

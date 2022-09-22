@@ -61,6 +61,8 @@ Update the navigation property groupPolicySettingMappings in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

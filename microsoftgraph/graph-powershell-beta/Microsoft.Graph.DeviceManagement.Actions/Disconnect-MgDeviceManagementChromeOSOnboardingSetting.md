@@ -21,6 +21,8 @@ Invoke action disconnect
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 

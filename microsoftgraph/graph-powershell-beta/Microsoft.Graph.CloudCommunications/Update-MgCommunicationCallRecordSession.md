@@ -49,6 +49,8 @@ Update the navigation property sessions in communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

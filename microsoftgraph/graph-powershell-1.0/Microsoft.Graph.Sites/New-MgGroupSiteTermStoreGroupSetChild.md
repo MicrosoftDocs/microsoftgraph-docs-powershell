@@ -115,6 +115,8 @@ Create a new term object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

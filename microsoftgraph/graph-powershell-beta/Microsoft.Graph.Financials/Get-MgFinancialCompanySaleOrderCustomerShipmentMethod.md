@@ -29,6 +29,8 @@ Get shipmentMethod from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

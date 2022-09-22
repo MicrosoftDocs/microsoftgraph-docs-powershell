@@ -27,6 +27,8 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

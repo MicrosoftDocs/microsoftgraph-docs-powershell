@@ -36,6 +36,8 @@ Collection of PFX certificates associated with a user.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

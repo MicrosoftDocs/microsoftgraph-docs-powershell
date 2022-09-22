@@ -60,6 +60,8 @@ Update the navigation property replies in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

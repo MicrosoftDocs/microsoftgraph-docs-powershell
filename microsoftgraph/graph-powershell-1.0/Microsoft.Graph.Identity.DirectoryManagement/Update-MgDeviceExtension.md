@@ -41,6 +41,8 @@ Update the navigation property extensions in devices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

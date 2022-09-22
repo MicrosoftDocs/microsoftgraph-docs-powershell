@@ -51,6 +51,8 @@ Update the navigation property offerShiftRequests in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

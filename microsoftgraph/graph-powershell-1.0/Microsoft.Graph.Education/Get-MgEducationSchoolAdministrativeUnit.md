@@ -29,6 +29,8 @@ Get a list of **administrativeUnits** associated with an educationSchool object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationSchoolId
 key: id of educationSchool
 

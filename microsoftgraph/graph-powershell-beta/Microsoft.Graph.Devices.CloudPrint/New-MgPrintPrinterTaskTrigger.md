@@ -45,6 +45,8 @@ Currently, only **one** task trigger can be specified per printer, but this limi
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

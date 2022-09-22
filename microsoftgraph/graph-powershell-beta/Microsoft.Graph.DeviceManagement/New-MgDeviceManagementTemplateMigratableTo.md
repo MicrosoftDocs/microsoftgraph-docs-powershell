@@ -51,6 +51,8 @@ Create new navigation property to migratableTo for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

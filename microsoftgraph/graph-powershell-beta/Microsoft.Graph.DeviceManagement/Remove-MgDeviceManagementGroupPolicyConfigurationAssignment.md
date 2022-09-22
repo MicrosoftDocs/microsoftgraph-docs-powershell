@@ -29,6 +29,8 @@ Delete navigation property assignments for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupPolicyConfigurationAssignmentId
 key: id of groupPolicyConfigurationAssignment
 

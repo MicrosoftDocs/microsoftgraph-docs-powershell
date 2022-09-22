@@ -41,6 +41,8 @@ The program this control is part of.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

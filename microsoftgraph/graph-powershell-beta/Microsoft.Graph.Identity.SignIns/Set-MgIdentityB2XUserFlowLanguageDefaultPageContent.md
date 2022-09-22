@@ -30,6 +30,8 @@ Update media content for the navigation property defaultPages in identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -B2XIdentityUserFlowId
 key: id of b2xIdentityUserFlow
 

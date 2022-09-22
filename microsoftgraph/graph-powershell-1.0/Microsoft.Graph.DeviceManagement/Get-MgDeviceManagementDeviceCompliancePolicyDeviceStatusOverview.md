@@ -29,6 +29,8 @@ Device compliance devices status overview
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceCompliancePolicyId
 key: id of deviceCompliancePolicy
 

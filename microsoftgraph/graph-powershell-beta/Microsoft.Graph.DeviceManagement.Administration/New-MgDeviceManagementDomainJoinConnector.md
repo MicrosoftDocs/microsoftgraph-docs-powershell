@@ -30,6 +30,8 @@ Create new navigation property to domainJoinConnectors for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

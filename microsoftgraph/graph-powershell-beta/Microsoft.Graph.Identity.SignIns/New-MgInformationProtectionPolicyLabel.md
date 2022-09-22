@@ -31,6 +31,8 @@ Create new navigation property to labels for informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

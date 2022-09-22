@@ -31,6 +31,8 @@ Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

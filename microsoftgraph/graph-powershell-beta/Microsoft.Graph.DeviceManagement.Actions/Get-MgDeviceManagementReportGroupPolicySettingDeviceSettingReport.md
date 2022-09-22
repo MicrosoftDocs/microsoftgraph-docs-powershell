@@ -32,6 +32,8 @@ Invoke action getGroupPolicySettingsDeviceSettingsReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

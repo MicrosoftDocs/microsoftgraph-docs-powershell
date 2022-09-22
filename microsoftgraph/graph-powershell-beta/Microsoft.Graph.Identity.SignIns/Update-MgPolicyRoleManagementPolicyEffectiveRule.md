@@ -47,6 +47,8 @@ Update the navigation property effectiveRules in policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

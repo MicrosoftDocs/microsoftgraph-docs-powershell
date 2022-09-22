@@ -53,6 +53,8 @@ Update the navigation property synchronizationProfiles in education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

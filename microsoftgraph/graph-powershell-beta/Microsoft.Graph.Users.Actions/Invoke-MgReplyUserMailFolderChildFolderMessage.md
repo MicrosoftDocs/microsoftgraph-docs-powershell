@@ -56,6 +56,8 @@ Alternatively, create a draft to reply to a message, and send it later.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

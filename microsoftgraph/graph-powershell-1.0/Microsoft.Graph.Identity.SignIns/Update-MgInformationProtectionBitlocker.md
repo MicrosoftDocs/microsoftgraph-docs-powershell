@@ -29,6 +29,8 @@ Update the navigation property bitlocker in informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

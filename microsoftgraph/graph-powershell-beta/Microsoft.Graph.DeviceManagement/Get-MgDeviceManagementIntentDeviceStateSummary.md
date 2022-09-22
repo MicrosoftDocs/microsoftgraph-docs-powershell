@@ -29,6 +29,8 @@ A summary of device states and counts of devices that belong to corresponding st
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementIntentId
 key: id of deviceManagementIntent
 

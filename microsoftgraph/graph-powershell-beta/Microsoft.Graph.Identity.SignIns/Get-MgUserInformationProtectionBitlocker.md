@@ -29,6 +29,8 @@ Get bitlocker from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -51,6 +51,8 @@ Update the navigation property channels in teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

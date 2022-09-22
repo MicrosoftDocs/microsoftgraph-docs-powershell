@@ -45,6 +45,8 @@ Create new navigation property to windowsHelloForBusinessMethods for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

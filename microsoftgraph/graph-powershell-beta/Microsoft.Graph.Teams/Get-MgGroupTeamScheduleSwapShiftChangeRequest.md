@@ -36,6 +36,8 @@ Get swapShiftsChangeRequests from groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

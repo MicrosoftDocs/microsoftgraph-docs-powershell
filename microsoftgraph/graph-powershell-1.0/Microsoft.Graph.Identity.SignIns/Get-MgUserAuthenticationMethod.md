@@ -36,6 +36,8 @@ Represents all authentication methods registered to a user.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

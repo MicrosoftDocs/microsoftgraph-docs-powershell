@@ -29,6 +29,8 @@ Delete navigation property permission for shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

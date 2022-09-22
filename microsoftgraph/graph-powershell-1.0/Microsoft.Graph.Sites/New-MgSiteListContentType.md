@@ -55,6 +55,8 @@ Create new navigation property to contentTypes for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

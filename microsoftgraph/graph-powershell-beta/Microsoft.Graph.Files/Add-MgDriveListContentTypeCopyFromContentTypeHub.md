@@ -49,6 +49,8 @@ For more information, see getCompatibleHubContentTypes and the blog post Syntex 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

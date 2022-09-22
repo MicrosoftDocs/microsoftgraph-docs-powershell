@@ -50,6 +50,8 @@ The **createLink** action creates a new sharing link if the specified link type 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -23,6 +23,8 @@ Get the list of groups that are included in a mobile app management policy.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -45,6 +45,8 @@ Invoke action onenotePatchContent
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

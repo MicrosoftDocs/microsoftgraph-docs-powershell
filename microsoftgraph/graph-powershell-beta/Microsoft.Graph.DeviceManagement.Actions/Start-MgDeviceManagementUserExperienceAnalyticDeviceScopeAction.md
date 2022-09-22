@@ -30,6 +30,8 @@ Invoke action triggerDeviceScopeAction
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActionName
 Trigger on the service to either START or STOP computing metrics data based on a device scope configuration.
 

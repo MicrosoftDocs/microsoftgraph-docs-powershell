@@ -43,6 +43,8 @@ Create new navigation property to customQuestions for bookingBusinesses
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

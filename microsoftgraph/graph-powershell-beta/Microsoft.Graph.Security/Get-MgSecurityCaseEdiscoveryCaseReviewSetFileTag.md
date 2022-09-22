@@ -38,6 +38,8 @@ Tags associated with the file.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

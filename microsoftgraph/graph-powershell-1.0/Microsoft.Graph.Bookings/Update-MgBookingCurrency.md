@@ -41,6 +41,8 @@ Update the navigation property bookingCurrencies in solutions
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

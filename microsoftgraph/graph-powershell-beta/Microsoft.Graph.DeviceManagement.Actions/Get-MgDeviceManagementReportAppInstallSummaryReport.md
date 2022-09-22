@@ -32,6 +32,8 @@ Invoke action getAppsInstallSummaryReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

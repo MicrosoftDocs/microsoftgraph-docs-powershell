@@ -42,6 +42,8 @@ Update the navigation property assignmentCategories in education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

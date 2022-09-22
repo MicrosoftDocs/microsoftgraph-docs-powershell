@@ -45,6 +45,8 @@ Create new navigation property to submittedResources for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

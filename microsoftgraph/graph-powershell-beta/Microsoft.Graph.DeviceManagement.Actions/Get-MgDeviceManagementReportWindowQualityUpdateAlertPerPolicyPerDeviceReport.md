@@ -32,6 +32,8 @@ Invoke action getWindowsQualityUpdateAlertsPerPolicyPerDeviceReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

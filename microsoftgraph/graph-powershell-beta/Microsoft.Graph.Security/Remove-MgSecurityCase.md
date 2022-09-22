@@ -21,6 +21,8 @@ Delete navigation property cases for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -30,6 +30,8 @@ Invoke action query
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

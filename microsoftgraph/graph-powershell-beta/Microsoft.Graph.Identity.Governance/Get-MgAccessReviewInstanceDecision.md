@@ -36,6 +36,8 @@ The collection of decisions for this access review.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessReviewDecisionId
 key: id of accessReviewDecision
 

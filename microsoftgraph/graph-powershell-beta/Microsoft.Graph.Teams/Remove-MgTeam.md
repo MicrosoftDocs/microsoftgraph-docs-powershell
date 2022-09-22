@@ -28,6 +28,8 @@ Delete entity from teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

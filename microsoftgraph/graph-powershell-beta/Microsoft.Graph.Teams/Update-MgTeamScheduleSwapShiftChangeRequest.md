@@ -52,6 +52,8 @@ Update the navigation property swapShiftsChangeRequests in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

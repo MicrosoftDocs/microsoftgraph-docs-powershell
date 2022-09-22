@@ -29,6 +29,8 @@ Create new navigation property to sharedEmailDomains for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

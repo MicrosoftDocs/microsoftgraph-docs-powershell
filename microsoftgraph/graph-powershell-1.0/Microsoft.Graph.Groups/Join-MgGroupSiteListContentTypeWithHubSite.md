@@ -45,6 +45,8 @@ Associate a published [content type][contentType] present in a content type hub 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

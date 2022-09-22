@@ -29,6 +29,8 @@ Delete navigation property attachments for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttachmentId
 key: id of attachment
 

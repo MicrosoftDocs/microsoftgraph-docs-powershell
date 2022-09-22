@@ -36,6 +36,8 @@ Get customAuthenticationExtensions from identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

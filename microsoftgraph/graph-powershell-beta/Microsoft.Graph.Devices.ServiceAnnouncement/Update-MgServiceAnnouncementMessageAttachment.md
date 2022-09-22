@@ -47,6 +47,8 @@ Update the navigation property attachments in admin
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -30,6 +30,8 @@ Delete navigation property siteSources for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EdiscoveryCaseId
 key: id of ediscoveryCase
 

@@ -37,6 +37,8 @@ Invoke function getOffice365GroupsActivityDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

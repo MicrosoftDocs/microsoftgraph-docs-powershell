@@ -29,6 +29,8 @@ Delete ref of navigation property allowedUsers for print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Id
 Delete Uri
 

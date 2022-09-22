@@ -29,6 +29,8 @@ Delete navigation property impactedResources for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

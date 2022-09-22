@@ -31,6 +31,8 @@ Delete navigation property localizedNotificationMessages for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

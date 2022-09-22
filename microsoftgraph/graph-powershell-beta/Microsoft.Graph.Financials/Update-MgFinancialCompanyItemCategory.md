@@ -69,6 +69,8 @@ Update the navigation property itemCategories in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

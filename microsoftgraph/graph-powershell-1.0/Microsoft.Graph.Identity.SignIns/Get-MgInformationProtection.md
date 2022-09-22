@@ -21,6 +21,8 @@ Get informationProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

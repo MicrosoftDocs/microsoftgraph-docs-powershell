@@ -43,6 +43,8 @@ Update the navigation property usageRights in devices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

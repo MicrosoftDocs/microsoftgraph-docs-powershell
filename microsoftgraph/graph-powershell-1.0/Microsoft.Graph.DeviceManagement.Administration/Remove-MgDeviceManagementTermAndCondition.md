@@ -29,6 +29,8 @@ Delete navigation property termsAndConditions for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

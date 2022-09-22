@@ -49,6 +49,8 @@ Create new navigation property to terms for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

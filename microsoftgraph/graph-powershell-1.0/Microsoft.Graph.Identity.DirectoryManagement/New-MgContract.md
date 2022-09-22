@@ -29,6 +29,8 @@ Add new entity to contracts
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

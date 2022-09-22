@@ -47,6 +47,8 @@ If an organizer adds an attachment to a meeting event, the organizer can subsequ
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

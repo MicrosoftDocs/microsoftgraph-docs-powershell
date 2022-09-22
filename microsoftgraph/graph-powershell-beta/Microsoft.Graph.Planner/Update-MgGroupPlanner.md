@@ -41,6 +41,8 @@ Update the navigation property planner in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

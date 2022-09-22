@@ -32,6 +32,8 @@ Create new navigation property to customAuthenticationExtensions for identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

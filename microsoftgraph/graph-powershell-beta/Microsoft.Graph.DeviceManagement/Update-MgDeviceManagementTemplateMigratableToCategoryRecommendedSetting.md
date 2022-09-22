@@ -49,6 +49,8 @@ Update the navigation property recommendedSettings in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

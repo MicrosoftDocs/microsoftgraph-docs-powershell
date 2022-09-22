@@ -29,6 +29,8 @@ Get the externalMeetingRegistration details associated with an onlineMeeting.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

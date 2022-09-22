@@ -43,6 +43,8 @@ Update the navigation property transcripts in communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

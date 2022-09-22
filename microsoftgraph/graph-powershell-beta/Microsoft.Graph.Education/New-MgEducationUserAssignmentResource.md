@@ -45,6 +45,8 @@ You can create the following types of assignment resources: Every resource has a
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -33,6 +33,8 @@ Create new navigation property to userExperienceAnalyticsAppHealthApplicationPer
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActiveDeviceCount
 The number of devices where the app has been active.
 Valid values -2147483648 to 2147483647

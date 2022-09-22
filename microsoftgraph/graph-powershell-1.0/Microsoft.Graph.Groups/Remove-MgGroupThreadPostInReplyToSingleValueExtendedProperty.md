@@ -30,6 +30,8 @@ Delete navigation property singleValueExtendedProperties for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ConversationThreadId
 key: id of conversationThread
 

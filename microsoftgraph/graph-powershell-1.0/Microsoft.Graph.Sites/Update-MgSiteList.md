@@ -57,6 +57,8 @@ Update the navigation property lists in sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

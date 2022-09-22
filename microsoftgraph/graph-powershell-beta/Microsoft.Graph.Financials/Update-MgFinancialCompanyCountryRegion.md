@@ -43,6 +43,8 @@ Update the navigation property countriesRegions in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

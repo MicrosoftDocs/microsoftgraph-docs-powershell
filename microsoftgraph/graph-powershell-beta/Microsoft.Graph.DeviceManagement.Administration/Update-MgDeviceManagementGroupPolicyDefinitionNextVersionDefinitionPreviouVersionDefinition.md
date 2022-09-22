@@ -59,6 +59,8 @@ Update the navigation property previousVersionDefinition in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

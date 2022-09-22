@@ -28,6 +28,8 @@ Invoke function getUserArchivedPrintJobs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EndDateTime
 Usage: endDateTime='{endDateTime}'
 

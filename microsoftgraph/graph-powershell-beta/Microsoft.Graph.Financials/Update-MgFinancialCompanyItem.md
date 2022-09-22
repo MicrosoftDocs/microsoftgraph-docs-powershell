@@ -51,6 +51,8 @@ Update the navigation property items in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

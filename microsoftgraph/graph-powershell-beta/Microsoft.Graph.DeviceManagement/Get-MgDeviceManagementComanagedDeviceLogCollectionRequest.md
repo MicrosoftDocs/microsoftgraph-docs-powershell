@@ -36,6 +36,8 @@ List of log collection requests
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

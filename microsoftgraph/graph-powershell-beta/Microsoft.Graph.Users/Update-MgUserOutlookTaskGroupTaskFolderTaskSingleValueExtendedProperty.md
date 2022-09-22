@@ -47,6 +47,8 @@ Update the navigation property singleValueExtendedProperties in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

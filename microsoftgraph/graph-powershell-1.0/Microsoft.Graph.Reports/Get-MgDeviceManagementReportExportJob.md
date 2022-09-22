@@ -36,6 +36,8 @@ Entity representing a job to export a report
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

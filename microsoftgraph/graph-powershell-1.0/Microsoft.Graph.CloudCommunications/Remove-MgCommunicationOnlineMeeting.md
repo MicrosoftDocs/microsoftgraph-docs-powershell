@@ -29,6 +29,8 @@ Delete navigation property onlineMeetings for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -29,6 +29,8 @@ Delete navigation property outboundSharedUserProfiles for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

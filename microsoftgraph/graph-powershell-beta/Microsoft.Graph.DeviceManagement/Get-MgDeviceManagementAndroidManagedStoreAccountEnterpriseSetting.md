@@ -22,6 +22,8 @@ The singleton Android managed store account enterprise settings entity.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

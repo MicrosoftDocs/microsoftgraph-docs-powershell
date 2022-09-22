@@ -51,6 +51,8 @@ Create new navigation property to subscriptions for shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

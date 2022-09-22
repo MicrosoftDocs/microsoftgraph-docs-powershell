@@ -30,6 +30,8 @@ Invoke action getTargetedUsersAndDevices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

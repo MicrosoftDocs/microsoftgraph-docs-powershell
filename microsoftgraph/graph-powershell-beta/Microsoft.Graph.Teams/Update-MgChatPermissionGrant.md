@@ -47,6 +47,8 @@ Update the navigation property permissionGrants in chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

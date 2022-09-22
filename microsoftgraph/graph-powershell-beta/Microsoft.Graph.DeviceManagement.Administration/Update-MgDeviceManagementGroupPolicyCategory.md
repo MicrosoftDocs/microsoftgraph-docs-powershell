@@ -49,6 +49,8 @@ Update the navigation property groupPolicyCategories in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

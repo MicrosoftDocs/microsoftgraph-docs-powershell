@@ -45,6 +45,8 @@ Update entity in applicationTemplates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

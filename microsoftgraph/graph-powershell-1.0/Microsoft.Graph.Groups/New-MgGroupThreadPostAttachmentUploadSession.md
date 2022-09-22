@@ -58,6 +58,8 @@ The following are the steps to attach a file to an Outlook item using an upload 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

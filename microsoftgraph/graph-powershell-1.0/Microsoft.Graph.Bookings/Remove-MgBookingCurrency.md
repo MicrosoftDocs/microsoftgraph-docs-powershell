@@ -29,6 +29,8 @@ Delete navigation property bookingCurrencies for solutions
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BookingCurrencyId
 key: id of bookingCurrency
 

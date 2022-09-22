@@ -29,6 +29,8 @@ Delete navigation property countriesRegions for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

@@ -36,6 +36,8 @@ The list of assignments for this T&C policy.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

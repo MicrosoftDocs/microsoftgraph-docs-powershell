@@ -45,6 +45,8 @@ Update the navigation property commands in devices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

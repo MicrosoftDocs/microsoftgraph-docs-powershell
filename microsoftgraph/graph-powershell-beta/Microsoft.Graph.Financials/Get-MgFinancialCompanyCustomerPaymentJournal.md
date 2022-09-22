@@ -36,6 +36,8 @@ Get customerPaymentJournals from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

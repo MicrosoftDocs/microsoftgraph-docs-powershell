@@ -45,6 +45,8 @@ Update the navigation property tabs in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

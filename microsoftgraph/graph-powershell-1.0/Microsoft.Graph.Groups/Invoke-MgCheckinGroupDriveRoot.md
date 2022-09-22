@@ -43,6 +43,8 @@ Check in a checked out **driveItem** resource, which makes the version of the do
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

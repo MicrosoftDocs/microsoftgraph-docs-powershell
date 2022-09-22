@@ -29,6 +29,8 @@ Delete navigation property extensions for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContactId
 key: id of contact
 

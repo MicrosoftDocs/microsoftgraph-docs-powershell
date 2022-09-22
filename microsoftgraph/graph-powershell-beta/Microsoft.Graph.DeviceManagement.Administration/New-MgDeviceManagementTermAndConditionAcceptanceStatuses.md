@@ -45,6 +45,8 @@ Create new navigation property to acceptanceStatuses for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AcceptedDateTime
 DateTime when the terms were last accepted by the user.
 

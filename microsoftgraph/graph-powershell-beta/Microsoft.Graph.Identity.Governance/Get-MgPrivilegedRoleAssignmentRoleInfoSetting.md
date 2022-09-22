@@ -31,6 +31,8 @@ A privilegedRoleSettings object will be returned.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

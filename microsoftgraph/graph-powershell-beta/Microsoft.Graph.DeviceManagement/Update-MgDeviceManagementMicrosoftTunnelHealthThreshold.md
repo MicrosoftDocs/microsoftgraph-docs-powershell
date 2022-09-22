@@ -47,6 +47,8 @@ Update the navigation property microsoftTunnelHealthThresholds in deviceManageme
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

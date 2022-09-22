@@ -29,6 +29,8 @@ Optionally, you can expand the manager's chain up to the root node.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.

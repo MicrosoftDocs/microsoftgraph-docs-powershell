@@ -47,6 +47,8 @@ Create a new timeOff instance in a schedule.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -30,6 +30,8 @@ Update content for the navigation property attachmentSessions in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttachmentSessionId
 key: id of attachmentSession
 

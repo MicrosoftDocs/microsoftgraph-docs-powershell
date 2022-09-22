@@ -29,6 +29,8 @@ Delete navigation property attributeSets for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttributeSetId
 key: id of attributeSet
 

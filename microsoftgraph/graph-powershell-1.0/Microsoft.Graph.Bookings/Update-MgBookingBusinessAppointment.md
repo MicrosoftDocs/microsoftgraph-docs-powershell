@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilledAttendeesCount
-The current number of customers in the appointment
+The current number of customers in the appointment.
 
 ```yaml
 Type: Int32

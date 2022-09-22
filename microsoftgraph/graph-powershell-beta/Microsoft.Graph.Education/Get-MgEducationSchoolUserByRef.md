@@ -23,6 +23,8 @@ Retrieve a list of users at a school.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

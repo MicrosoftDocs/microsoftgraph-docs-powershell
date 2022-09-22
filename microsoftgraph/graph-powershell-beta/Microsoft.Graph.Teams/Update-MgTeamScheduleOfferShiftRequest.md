@@ -51,6 +51,8 @@ Update the navigation property offerShiftRequests in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

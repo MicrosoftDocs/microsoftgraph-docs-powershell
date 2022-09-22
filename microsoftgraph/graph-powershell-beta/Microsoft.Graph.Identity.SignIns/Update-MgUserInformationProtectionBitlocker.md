@@ -42,6 +42,8 @@ Update the navigation property bitlocker in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

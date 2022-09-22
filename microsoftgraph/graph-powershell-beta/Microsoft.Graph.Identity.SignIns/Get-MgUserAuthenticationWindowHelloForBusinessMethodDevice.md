@@ -36,6 +36,8 @@ For example, GET /users/admin@contoso.com/authentication/windowsHelloForBusiness
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

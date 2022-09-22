@@ -44,6 +44,8 @@ Issues a wipe operation on an app registration with specified aad device Id.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

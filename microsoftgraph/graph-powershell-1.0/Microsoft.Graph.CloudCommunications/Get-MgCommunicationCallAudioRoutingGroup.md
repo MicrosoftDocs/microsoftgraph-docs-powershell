@@ -36,6 +36,8 @@ Get audioRoutingGroups from communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

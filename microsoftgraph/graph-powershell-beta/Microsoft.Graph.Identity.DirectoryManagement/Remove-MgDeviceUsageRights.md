@@ -29,6 +29,8 @@ Delete navigation property usageRights for devices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceId
 key: id of device
 

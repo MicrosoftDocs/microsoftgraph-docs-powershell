@@ -45,6 +45,8 @@ Update the navigation property detectedApps in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -55,6 +55,8 @@ Create new navigation property to customers for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property acceptances for agreements
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgreementAcceptanceId
 key: id of agreementAcceptance
 

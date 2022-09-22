@@ -30,6 +30,8 @@ Definition of the previous version of this definition
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

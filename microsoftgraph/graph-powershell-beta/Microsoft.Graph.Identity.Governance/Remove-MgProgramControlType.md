@@ -29,6 +29,8 @@ Delete entity from programControlTypes
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

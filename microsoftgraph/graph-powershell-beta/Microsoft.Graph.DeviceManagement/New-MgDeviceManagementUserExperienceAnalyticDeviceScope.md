@@ -32,6 +32,8 @@ Create new navigation property to userExperienceAnalyticsDeviceScopes for device
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

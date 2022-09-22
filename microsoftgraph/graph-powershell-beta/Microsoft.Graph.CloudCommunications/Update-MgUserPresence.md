@@ -44,6 +44,8 @@ Update the navigation property presence in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Activity
 The supplemental information to a user's availability.
 Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive,InAMeeting, Offline, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOnly.

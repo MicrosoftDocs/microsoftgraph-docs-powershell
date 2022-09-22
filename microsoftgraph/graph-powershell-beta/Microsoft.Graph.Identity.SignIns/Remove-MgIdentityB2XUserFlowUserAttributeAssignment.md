@@ -30,6 +30,8 @@ Delete navigation property userAttributeAssignments for identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -B2XIdentityUserFlowId
 key: id of b2xIdentityUserFlow
 

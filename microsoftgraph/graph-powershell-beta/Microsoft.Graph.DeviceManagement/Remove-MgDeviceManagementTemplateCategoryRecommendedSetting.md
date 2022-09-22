@@ -30,6 +30,8 @@ Delete navigation property recommendedSettings for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementSettingInstanceId
 key: id of deviceManagementSettingInstance
 

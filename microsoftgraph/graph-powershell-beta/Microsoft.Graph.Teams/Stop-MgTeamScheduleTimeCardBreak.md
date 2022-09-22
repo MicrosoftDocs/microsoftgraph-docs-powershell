@@ -43,6 +43,8 @@ End the open break in a specific timeCard.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

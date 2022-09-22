@@ -36,6 +36,8 @@ Get agedAccountsReceivable from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgedAccountsReceivableId
 key: id of agedAccountsReceivable
 

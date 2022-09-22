@@ -41,6 +41,8 @@ Delete navigation property program for programControls
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

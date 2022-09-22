@@ -29,6 +29,8 @@ Get picture for the navigation property companyInformation from financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

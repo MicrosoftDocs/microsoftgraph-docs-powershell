@@ -37,6 +37,8 @@ Collection of all settings to be applied
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

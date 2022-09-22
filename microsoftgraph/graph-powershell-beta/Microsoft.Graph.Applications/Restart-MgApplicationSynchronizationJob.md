@@ -47,6 +47,8 @@ Optionally clears existing the synchronization state and previous errors.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

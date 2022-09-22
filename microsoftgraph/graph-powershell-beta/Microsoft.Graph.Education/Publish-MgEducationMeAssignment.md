@@ -41,6 +41,8 @@ To update the properties of a published assignment, see update an assignment.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

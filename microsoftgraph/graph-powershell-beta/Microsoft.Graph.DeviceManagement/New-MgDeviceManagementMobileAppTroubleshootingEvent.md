@@ -34,6 +34,8 @@ Create new navigation property to mobileAppTroubleshootingEvents for deviceManag
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalInformation
 A set of string key and string value pairs which provides additional information on the Troubleshooting event
 To construct, please use Get-Help -Online and see NOTES section for ADDITIONALINFORMATION properties and create a hash table.

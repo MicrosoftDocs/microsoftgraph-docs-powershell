@@ -29,6 +29,8 @@ Delete navigation property windowsProtectionState for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

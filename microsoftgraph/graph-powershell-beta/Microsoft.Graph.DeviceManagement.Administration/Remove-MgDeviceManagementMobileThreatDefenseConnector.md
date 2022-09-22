@@ -29,6 +29,8 @@ Delete navigation property mobileThreatDefenseConnectors for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

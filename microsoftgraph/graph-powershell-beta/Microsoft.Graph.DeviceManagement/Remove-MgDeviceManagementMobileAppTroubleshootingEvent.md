@@ -29,6 +29,8 @@ Delete navigation property mobileAppTroubleshootingEvents for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

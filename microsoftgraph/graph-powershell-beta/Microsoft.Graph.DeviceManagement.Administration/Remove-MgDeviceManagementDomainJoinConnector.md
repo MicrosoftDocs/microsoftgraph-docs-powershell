@@ -29,6 +29,8 @@ Delete navigation property domainJoinConnectors for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementDomainJoinConnectorId
 key: id of deviceManagementDomainJoinConnector
 

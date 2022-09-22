@@ -28,6 +28,8 @@ Invoke function getAuditActivityTypes
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Category
 Usage: category='{category}'
 

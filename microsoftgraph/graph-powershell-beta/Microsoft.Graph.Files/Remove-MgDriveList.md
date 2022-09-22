@@ -28,6 +28,8 @@ Delete navigation property list for drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

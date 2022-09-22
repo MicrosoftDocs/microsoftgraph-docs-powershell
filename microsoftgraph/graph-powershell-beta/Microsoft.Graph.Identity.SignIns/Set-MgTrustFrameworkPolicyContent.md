@@ -29,6 +29,8 @@ Update media content for the navigation property policies in trustFramework
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

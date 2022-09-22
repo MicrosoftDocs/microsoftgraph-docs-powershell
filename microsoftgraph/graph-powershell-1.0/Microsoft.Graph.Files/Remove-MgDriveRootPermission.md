@@ -29,6 +29,8 @@ Delete navigation property permissions for drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

@@ -43,6 +43,8 @@ Create a new authoredNote object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

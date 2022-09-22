@@ -31,6 +31,8 @@ Delete navigation property operatingSystemRegression for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

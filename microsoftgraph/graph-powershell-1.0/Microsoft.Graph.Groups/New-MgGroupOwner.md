@@ -40,6 +40,8 @@ Add an owner to an Office 365 group or security group through the owners navigat
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 HELP MESSAGE MISSING
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.

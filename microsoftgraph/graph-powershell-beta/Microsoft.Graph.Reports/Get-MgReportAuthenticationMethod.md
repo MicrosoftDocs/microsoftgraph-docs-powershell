@@ -21,6 +21,8 @@ Container for navigation properties for Azure AD authentication methods resource
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

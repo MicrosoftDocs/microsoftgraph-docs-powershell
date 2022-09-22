@@ -41,6 +41,8 @@ Update the navigation property contentSharingSessions in communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

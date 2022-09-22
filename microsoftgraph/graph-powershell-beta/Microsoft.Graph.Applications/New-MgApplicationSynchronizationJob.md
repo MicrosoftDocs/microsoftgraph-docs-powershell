@@ -50,6 +50,8 @@ Call Start job to start synchronization.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

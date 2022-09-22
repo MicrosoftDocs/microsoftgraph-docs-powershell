@@ -22,6 +22,8 @@ User Experience Analytics Battery Health Runtime Details
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

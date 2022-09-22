@@ -29,6 +29,8 @@ Invoke action createDownloadUrl
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceLogCollectionResponseId
 key: id of deviceLogCollectionResponse
 

@@ -52,6 +52,8 @@ Update the navigation property userExperienceAnalyticsBatteryHealthModelPerforma
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActiveDevices
 Number of active devices for that model.
 Valid values -2147483648 to 2147483647

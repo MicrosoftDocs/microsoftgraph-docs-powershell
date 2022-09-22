@@ -29,6 +29,8 @@ Create new navigation property to userExperienceAnalyticsScoreHistory for device
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

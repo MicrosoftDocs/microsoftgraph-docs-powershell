@@ -38,6 +38,8 @@ A navigation property.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

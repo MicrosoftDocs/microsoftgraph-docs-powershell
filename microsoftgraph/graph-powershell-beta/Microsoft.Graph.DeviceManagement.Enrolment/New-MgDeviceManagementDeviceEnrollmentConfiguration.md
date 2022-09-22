@@ -32,6 +32,8 @@ Create new navigation property to deviceEnrollmentConfigurations for deviceManag
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

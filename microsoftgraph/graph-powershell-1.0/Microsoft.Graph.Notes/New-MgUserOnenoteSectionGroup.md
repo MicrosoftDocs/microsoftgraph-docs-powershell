@@ -51,6 +51,8 @@ Create new navigation property to sectionGroups for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

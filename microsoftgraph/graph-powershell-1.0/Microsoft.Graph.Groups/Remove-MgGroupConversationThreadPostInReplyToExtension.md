@@ -30,6 +30,8 @@ Delete navigation property extensions for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ConversationId
 key: id of conversation
 

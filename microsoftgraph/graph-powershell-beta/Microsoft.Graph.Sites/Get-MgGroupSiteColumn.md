@@ -36,6 +36,8 @@ The collection of column definitions reusable across lists under this site.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

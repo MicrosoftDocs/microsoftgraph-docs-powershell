@@ -36,6 +36,8 @@ Content in a message hosted by Microsoft Teams - for example, images or code sni
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

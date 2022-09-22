@@ -29,6 +29,8 @@ Delete navigation property managedDeviceEncryptionStates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

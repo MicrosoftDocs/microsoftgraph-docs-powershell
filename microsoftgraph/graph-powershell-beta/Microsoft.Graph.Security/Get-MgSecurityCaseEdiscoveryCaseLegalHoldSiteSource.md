@@ -36,6 +36,8 @@ Data sources that represent SharePoint sites.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

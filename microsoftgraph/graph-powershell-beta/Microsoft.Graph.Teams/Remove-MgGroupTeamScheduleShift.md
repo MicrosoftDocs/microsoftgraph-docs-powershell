@@ -29,6 +29,8 @@ Delete navigation property shifts for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

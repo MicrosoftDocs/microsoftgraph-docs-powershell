@@ -44,6 +44,8 @@ Update the navigation property hostedContents in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

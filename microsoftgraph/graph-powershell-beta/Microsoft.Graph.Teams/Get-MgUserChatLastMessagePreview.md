@@ -33,6 +33,8 @@ Currently, only the list chats operation supports this property.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatId
 key: id of chat
 

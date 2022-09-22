@@ -29,6 +29,8 @@ Delete entity from shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -39,6 +39,8 @@ Invoke function getOffice365ActiveUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

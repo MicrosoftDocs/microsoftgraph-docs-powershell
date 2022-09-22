@@ -29,6 +29,8 @@ Delete navigation property appleUserInitiatedEnrollmentProfiles for deviceManage
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AppleUserInitiatedEnrollmentProfileId
 key: id of appleUserInitiatedEnrollmentProfile
 

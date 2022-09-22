@@ -32,6 +32,8 @@ Invoke action getRelatedAppsStatusReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property settings for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectorySettingId
 key: id of directorySetting
 

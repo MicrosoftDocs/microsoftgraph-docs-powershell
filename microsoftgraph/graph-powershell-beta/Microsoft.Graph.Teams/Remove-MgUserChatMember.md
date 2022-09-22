@@ -29,6 +29,8 @@ Delete navigation property members for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatId
 key: id of chat
 

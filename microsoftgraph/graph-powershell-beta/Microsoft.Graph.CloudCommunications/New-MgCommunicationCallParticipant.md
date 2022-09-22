@@ -46,6 +46,8 @@ Create new navigation property to participants for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

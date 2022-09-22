@@ -47,6 +47,8 @@ Create new navigation property to deviceConfigurationStates for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

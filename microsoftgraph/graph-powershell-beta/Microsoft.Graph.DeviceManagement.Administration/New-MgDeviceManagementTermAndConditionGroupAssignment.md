@@ -43,6 +43,8 @@ Create new navigation property to groupAssignments for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

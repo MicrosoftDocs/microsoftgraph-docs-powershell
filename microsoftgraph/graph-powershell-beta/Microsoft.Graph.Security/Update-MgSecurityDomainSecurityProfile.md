@@ -51,6 +51,8 @@ Update the navigation property domainSecurityProfiles in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivityGroupNames
 .
 

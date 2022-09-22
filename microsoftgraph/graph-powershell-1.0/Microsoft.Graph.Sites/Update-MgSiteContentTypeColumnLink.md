@@ -42,6 +42,8 @@ Update the navigation property columnLinks in sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

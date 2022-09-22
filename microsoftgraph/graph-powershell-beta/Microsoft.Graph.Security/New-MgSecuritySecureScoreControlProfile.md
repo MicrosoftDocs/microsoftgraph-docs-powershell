@@ -35,6 +35,8 @@ Create new navigation property to secureScoreControlProfiles for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActionType
 Control action type (Config, Review, Behavior).
 

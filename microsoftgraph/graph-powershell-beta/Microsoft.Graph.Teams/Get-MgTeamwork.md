@@ -21,6 +21,8 @@ Get teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

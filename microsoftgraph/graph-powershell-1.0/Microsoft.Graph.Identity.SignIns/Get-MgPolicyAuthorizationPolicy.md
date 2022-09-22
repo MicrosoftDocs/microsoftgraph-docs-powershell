@@ -21,6 +21,8 @@ The policy that controls Azure AD authorization settings.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

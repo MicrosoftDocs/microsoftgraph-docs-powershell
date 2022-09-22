@@ -39,6 +39,8 @@ Represents the usage rights a device has been granted.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

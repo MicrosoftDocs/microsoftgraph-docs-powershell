@@ -29,6 +29,8 @@ Get retentionEventType from security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

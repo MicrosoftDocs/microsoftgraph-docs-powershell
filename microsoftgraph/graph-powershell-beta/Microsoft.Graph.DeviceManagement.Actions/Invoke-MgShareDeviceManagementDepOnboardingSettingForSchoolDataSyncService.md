@@ -29,6 +29,8 @@ Invoke action shareForSchoolDataSyncService
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DepOnboardingSettingId
 key: id of depOnboardingSetting
 

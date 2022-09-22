@@ -29,6 +29,8 @@ Delete navigation property localizations for identityGovernance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgreementFileLocalizationId
 key: id of agreementFileLocalization
 

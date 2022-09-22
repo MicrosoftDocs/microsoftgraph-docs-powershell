@@ -21,6 +21,8 @@ Get virtualEndpoint from deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

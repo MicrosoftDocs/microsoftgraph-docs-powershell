@@ -21,6 +21,8 @@ A threat submission sent to Microsoft; for example, a suspicious email threat, U
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

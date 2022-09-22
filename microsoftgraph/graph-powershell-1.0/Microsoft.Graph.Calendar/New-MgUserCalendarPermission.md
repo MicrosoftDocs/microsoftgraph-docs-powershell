@@ -69,6 +69,8 @@ Create a calendarPermission resource to specify the identity and role of the use
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property userRegistrationDetails for reports
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

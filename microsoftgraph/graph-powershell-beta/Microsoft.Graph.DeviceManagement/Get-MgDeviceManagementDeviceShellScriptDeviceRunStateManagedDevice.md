@@ -30,6 +30,8 @@ The managed devices that executes the device management script.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementScriptDeviceStateId
 key: id of deviceManagementScriptDeviceState
 

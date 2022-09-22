@@ -30,6 +30,8 @@ Create new navigation property to userExperienceAnalyticsCategories for deviceMa
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

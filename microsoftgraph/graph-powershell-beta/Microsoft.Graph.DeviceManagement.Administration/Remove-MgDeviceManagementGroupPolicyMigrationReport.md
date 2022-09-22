@@ -29,6 +29,8 @@ Delete navigation property groupPolicyMigrationReports for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupPolicyMigrationReportId
 key: id of groupPolicyMigrationReport
 

@@ -32,6 +32,8 @@ Invoke action getWindowsQualityUpdateAlertSummaryReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete entity from privilegedOperationEvents
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

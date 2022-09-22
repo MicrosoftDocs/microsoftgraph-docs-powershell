@@ -29,6 +29,8 @@ Delete navigation property tenants for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

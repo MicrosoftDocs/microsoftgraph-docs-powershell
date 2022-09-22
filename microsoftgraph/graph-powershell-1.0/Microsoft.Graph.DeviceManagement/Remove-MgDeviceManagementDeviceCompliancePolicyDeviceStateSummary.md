@@ -22,6 +22,8 @@ Delete navigation property deviceCompliancePolicyDeviceStateSummary for deviceMa
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

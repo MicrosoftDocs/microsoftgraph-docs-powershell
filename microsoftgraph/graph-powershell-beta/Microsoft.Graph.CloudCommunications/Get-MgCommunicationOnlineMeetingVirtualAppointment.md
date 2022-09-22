@@ -29,6 +29,8 @@ Get virtualAppointment from communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

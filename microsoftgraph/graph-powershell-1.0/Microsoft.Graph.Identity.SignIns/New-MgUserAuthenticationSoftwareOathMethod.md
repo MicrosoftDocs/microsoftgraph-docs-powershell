@@ -42,6 +42,8 @@ Create new navigation property to softwareOathMethods for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property deviceStates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementIntentDeviceStateId
 key: id of deviceManagementIntentDeviceState
 

@@ -51,6 +51,8 @@ Update the navigation property activities in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivationUrl
 Required.
 URL used to launch the activity in the best native experience represented by the appId.

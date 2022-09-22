@@ -29,6 +29,8 @@ Delete navigation property singleValueExtendedProperties for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EventId
 key: id of event
 

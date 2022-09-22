@@ -36,6 +36,8 @@ The MacOS software update account summaries for this account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -44,6 +44,8 @@ Associate a [content type][contentType] with a list of hub sites.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

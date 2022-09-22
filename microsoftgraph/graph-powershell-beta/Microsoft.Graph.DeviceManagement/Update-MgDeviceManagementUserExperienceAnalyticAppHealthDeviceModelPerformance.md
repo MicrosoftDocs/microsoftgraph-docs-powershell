@@ -52,6 +52,8 @@ Update the navigation property userExperienceAnalyticsAppHealthDeviceModelPerfor
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActiveDeviceCount
 The number of active devices for the model.
 Valid values -2147483648 to 2147483647

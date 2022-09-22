@@ -29,6 +29,8 @@ Delete navigation property auditEvents for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AuditEventId
 key: id of auditEvent
 

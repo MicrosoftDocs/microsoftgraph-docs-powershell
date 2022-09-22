@@ -29,6 +29,8 @@ Delete navigation property rubrics for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationRubricId
 key: id of educationRubric
 

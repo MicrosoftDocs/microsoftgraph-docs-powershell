@@ -37,6 +37,8 @@ Get resources from education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

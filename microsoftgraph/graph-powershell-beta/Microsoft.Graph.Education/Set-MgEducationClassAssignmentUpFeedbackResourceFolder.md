@@ -31,6 +31,8 @@ The teacher determines the resources to upload in the feedback resources folder 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

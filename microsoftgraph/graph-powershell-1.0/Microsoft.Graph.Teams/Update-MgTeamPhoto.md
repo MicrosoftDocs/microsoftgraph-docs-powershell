@@ -41,6 +41,8 @@ Update the navigation property photo in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

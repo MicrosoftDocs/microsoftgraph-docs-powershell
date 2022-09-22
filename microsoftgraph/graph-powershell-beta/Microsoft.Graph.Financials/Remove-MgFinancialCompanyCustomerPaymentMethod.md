@@ -41,6 +41,8 @@ Delete navigation property paymentMethod for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

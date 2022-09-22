@@ -32,6 +32,8 @@ Invoke action getNoncompliantDevicesAndSettingsReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

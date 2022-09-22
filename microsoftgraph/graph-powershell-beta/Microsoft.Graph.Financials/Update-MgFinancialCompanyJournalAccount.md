@@ -44,6 +44,8 @@ Update the navigation property account in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

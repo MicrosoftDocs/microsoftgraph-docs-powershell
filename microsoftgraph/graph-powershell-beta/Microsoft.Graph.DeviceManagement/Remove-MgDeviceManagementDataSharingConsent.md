@@ -29,6 +29,8 @@ Delete navigation property dataSharingConsents for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DataSharingConsentId
 key: id of dataSharingConsent
 

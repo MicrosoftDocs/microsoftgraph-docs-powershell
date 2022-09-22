@@ -36,6 +36,8 @@ List of all reusable settings
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

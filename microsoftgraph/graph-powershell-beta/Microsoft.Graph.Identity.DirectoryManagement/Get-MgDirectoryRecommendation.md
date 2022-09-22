@@ -36,6 +36,8 @@ Get recommendations from directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

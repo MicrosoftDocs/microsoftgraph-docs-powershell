@@ -30,6 +30,8 @@ Invoke action encryptBuffer
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

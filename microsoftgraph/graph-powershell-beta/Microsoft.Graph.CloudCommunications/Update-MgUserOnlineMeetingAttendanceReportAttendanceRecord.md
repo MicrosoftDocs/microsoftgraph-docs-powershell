@@ -77,6 +77,8 @@ Update the navigation property attendanceRecords in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

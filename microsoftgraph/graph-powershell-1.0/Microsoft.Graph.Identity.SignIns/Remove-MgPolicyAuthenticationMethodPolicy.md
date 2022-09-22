@@ -22,6 +22,8 @@ Delete navigation property authenticationMethodsPolicy for policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

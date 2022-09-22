@@ -51,6 +51,8 @@ Create new navigation property to managedDevices for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivationLockBypassCode
 Code that allows the Activation Lock on a device to be bypassed.
 This property is read-only.

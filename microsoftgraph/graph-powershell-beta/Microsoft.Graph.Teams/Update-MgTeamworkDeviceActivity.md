@@ -47,6 +47,8 @@ Update the navigation property activity in teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivePeripherals
 teamworkActivePeripherals
 To construct, please use Get-Help -Online and see NOTES section for ACTIVEPERIPHERALS properties and create a hash table.

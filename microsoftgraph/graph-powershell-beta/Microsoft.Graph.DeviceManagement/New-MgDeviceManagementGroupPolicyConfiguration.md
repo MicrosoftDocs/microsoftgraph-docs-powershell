@@ -33,6 +33,8 @@ Create new navigation property to groupPolicyConfigurations for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

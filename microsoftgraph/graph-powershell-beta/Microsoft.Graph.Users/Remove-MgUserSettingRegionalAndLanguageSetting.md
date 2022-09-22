@@ -29,6 +29,8 @@ Delete navigation property regionalAndLanguageSettings for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

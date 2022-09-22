@@ -29,6 +29,8 @@ Delete navigation property permissionGrants for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

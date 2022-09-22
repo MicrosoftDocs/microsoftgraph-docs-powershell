@@ -32,6 +32,8 @@ Invoke action getUnhealthyDefenderAgentsReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

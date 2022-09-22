@@ -31,6 +31,8 @@ This allows you to maintain and synchronize a local store of a user's messages w
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.

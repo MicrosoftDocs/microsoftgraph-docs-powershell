@@ -29,6 +29,8 @@ Invoke function getExpiringVppTokenCount
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpiringBeforeDateTime
 Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
 

@@ -30,6 +30,8 @@ Delete navigation property effectiveRules for policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

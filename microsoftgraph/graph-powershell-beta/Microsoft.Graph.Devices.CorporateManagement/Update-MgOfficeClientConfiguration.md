@@ -51,6 +51,8 @@ Update the navigation property clientConfigurations in officeConfiguration
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

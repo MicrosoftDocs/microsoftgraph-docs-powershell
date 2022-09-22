@@ -30,6 +30,8 @@ Role definition this assignment is part of.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

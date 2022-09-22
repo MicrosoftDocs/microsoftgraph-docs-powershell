@@ -29,6 +29,8 @@ Delete navigation property primaryChannel for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

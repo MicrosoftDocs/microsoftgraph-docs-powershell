@@ -55,6 +55,8 @@ Update the navigation property deviceConfigurations in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

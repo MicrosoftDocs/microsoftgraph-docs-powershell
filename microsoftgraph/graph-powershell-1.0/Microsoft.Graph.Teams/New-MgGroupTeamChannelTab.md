@@ -43,6 +43,8 @@ Create new navigation property to tabs for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

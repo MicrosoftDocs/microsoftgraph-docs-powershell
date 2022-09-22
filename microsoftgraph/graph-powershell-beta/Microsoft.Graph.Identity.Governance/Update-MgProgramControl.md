@@ -107,6 +107,8 @@ Update entity in programControls
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

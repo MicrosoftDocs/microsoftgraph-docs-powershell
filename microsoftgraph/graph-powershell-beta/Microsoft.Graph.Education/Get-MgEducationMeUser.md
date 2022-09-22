@@ -21,6 +21,8 @@ Retrieve the simple directory **user** that corresponds to this **educationUser*
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

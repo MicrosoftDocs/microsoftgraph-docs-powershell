@@ -35,6 +35,8 @@ The set of reasons for a time off in the schedule.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -30,6 +30,8 @@ Delete navigation property policyStatusDetails for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementAutopilotEventId
 key: id of deviceManagementAutopilotEvent
 

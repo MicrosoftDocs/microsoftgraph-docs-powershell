@@ -45,6 +45,8 @@ Get the free/busy availability information for a collection of users, distributi
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

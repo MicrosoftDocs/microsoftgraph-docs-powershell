@@ -28,6 +28,8 @@ Invoke function getSuggestedEnrollmentLimit
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EnrollmentType
 Usage: enrollmentType='{enrollmentType}'
 

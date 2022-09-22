@@ -30,6 +30,8 @@ Delete navigation property fields for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

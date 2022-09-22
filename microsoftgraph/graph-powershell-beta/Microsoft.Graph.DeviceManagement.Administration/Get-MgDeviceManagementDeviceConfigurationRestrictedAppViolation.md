@@ -37,6 +37,8 @@ Restricted apps violations for this account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

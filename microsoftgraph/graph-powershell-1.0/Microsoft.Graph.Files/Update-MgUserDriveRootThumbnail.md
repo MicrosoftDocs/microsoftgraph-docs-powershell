@@ -45,6 +45,8 @@ Update the navigation property thumbnails in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

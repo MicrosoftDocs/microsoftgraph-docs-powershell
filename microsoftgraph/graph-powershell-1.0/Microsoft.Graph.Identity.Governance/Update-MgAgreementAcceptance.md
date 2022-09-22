@@ -49,6 +49,8 @@ Update the navigation property acceptances in agreements
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

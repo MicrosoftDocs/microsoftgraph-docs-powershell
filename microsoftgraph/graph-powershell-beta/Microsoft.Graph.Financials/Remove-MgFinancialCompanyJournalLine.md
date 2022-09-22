@@ -41,6 +41,8 @@ Delete navigation property journalLines for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

@@ -51,6 +51,8 @@ The API returns an informationProtectionAction that contains one of more of the 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

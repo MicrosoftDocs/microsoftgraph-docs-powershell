@@ -30,6 +30,8 @@ Delete navigation property deviceConfigurationRestrictedAppsViolations for devic
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

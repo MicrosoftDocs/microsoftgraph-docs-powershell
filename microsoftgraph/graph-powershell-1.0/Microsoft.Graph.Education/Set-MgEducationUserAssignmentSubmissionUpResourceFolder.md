@@ -33,6 +33,8 @@ Only a student in the class can determine what files to upload in a given submis
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

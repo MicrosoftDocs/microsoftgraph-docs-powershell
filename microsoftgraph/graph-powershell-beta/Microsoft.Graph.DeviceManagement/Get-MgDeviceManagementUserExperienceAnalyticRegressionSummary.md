@@ -22,6 +22,8 @@ User experience analytics regression summary
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

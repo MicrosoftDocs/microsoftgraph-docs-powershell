@@ -49,6 +49,8 @@ Create new navigation property to sets for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

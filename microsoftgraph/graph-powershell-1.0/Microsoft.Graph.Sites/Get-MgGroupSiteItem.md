@@ -38,6 +38,8 @@ This collection can't be enumerated.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

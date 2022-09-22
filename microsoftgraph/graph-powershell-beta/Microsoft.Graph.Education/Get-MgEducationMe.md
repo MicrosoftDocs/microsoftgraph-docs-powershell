@@ -21,6 +21,8 @@ Get me from education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -52,6 +52,8 @@ Update the navigation property settingTemplates in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

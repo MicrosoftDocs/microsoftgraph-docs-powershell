@@ -40,6 +40,8 @@ Trending insights help the user to discover potentially useful content that the 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

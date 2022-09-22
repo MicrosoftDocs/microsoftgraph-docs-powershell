@@ -36,6 +36,8 @@ The collection of pages in the SitePages list in this site.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

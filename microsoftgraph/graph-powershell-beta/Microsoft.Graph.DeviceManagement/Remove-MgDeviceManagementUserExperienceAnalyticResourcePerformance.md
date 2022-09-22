@@ -30,6 +30,8 @@ Delete navigation property userExperienceAnalyticsResourcePerformance for device
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

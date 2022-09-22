@@ -37,6 +37,8 @@ User experience analytics impacting process
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

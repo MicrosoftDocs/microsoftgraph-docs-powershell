@@ -62,6 +62,8 @@ Update the navigation property assignments in education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AddedStudentAction
 educationAddedStudentAction
 

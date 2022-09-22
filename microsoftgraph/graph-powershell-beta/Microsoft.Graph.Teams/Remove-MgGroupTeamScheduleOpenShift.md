@@ -29,6 +29,8 @@ Delete navigation property openShifts for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

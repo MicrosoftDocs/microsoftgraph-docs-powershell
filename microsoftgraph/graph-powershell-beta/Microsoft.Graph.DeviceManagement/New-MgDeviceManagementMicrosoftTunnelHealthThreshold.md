@@ -30,6 +30,8 @@ Create new navigation property to microsoftTunnelHealthThresholds for deviceMana
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

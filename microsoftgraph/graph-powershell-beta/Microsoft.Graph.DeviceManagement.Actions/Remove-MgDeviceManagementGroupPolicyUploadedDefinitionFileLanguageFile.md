@@ -49,6 +49,8 @@ Invoke action removeLanguageFiles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

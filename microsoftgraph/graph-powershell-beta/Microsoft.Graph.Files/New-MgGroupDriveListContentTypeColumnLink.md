@@ -41,6 +41,8 @@ Create new navigation property to columnLinks for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

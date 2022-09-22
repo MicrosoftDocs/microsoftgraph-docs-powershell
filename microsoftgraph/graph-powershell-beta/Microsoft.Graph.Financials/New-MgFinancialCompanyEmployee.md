@@ -51,6 +51,8 @@ Create new navigation property to employees for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

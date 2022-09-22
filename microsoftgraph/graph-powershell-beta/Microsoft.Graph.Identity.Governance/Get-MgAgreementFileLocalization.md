@@ -36,6 +36,8 @@ The localized version of the terms of use agreement files attached to the agreem
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgreementFileLocalizationId
 key: id of agreementFileLocalization
 

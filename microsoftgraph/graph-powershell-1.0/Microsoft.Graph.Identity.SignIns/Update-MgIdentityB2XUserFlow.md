@@ -51,6 +51,8 @@ Update the navigation property b2xUserFlows in identity
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

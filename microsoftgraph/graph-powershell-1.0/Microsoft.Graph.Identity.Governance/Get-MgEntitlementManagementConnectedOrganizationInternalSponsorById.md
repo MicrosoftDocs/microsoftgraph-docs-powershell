@@ -47,6 +47,8 @@ Some common uses for this function are to:
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

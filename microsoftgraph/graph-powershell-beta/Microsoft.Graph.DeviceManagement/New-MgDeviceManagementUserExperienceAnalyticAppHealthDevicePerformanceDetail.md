@@ -32,6 +32,8 @@ Create new navigation property to userExperienceAnalyticsAppHealthDevicePerforma
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

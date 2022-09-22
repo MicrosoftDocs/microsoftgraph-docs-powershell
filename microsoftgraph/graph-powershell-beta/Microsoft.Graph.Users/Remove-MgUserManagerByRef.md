@@ -29,6 +29,8 @@ Delete ref of navigation property manager for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

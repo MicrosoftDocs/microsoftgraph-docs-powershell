@@ -29,6 +29,8 @@ Delete navigation property deviceCategory for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

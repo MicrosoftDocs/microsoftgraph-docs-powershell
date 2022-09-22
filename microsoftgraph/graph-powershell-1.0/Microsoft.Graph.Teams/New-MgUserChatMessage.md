@@ -61,6 +61,8 @@ This API can't create a new chat; you must use the list chats method to retrieve
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

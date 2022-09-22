@@ -29,6 +29,8 @@ Delete ref of navigation property categories for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

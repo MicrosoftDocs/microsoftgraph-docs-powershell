@@ -29,6 +29,8 @@ Delete navigation property presences for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

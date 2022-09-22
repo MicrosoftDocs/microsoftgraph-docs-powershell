@@ -29,6 +29,8 @@ Delete navigation property groupPolicyObjectFiles for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupPolicyObjectFileId
 key: id of groupPolicyObjectFile
 

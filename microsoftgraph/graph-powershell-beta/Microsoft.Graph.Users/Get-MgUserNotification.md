@@ -36,6 +36,8 @@ Get notifications from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -36,6 +36,8 @@ Get activities from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

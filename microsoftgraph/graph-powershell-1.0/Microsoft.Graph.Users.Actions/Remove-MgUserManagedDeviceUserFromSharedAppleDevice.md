@@ -45,6 +45,8 @@ Delete user from shared Apple device
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

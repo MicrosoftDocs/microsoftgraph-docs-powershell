@@ -48,6 +48,8 @@ Create new navigation property to acceptances for agreements
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

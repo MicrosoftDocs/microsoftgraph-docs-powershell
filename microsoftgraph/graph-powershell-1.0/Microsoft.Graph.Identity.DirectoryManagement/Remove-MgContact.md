@@ -29,6 +29,8 @@ Delete entity from contacts
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

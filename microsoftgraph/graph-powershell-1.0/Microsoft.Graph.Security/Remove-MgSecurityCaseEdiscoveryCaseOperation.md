@@ -29,6 +29,8 @@ Delete navigation property operations for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CaseOperationId
 key: id of caseOperation
 

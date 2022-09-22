@@ -34,6 +34,8 @@ Supports $expand.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

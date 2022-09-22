@@ -36,6 +36,8 @@ The device management intent setting definitions
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -30,6 +30,8 @@ Delete navigation property enrollmentProfiles for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DepOnboardingSettingId
 key: id of depOnboardingSetting
 

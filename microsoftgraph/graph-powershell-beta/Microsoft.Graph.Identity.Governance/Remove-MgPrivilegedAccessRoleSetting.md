@@ -29,6 +29,8 @@ Delete navigation property roleSettings for privilegedAccess
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GovernanceRoleSettingId
 key: id of governanceRoleSetting
 

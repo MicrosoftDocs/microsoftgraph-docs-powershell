@@ -31,6 +31,8 @@ Invoke action getAssignmentFiltersStatusDetails
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

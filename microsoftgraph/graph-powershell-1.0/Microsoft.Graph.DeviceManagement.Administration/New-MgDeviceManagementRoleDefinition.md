@@ -30,6 +30,8 @@ Create new navigation property to roleDefinitions for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

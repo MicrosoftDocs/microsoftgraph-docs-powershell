@@ -29,6 +29,8 @@ Delete navigation property connectors for onPremisesPublishingProfiles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ConnectorId
 key: id of connector
 

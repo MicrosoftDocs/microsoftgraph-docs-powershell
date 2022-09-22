@@ -39,6 +39,8 @@ A collection of stages in the approval decision.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

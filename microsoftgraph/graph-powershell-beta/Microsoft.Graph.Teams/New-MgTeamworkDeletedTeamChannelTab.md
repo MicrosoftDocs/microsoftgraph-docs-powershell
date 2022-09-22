@@ -46,6 +46,8 @@ Create new navigation property to tabs for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

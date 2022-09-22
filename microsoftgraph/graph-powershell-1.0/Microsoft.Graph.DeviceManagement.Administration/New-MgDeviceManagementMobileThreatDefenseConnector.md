@@ -32,6 +32,8 @@ Create new navigation property to mobileThreatDefenseConnectors for deviceManage
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

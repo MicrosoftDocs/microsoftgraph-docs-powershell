@@ -30,6 +30,8 @@ Delete navigation property appScopes for roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AppScopeId
 key: id of appScope
 

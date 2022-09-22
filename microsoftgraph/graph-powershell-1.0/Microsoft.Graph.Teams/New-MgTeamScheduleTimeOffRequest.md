@@ -49,6 +49,8 @@ Create new navigation property to timeOffRequests for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -34,6 +34,8 @@ roleDefinition.Id will be auto expanded.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

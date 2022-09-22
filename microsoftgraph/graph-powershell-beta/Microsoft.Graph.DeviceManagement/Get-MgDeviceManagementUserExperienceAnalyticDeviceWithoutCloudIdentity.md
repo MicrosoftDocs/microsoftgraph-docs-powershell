@@ -37,6 +37,8 @@ User experience analytics devices without cloud identity.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

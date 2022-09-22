@@ -43,6 +43,8 @@ Invoke action validateAuthenticationConfiguration
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property operations for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

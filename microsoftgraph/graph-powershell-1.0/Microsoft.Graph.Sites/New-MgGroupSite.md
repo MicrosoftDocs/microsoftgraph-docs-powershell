@@ -65,6 +65,600 @@ Create new navigation property to sites for groups
 
 ## EXAMPLES
 
+### AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Analytics
+itemAnalytics
+To construct, please use Get-Help -Online and see NOTES section for ANALYTICS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphItemAnalytics1
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### BodyParameter
+site
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSite
+Parameter Sets: Create1, CreateViaIdentity1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### Columns
+The collection of column definitions reusable across lists under this site.
+To construct, please use Get-Help -Online and see NOTES section for COLUMNS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphColumnDefinition1[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### ContentTypes
+The collection of content types defined for this site.
+To construct, please use Get-Help -Online and see NOTES section for CONTENTTYPES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphContentType[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CreatedBy
+identitySet
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CreatedByUser
+user
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBYUSER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUser1
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CreatedDateTime
+Date and time of item creation.
+Read-only.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Description
+Provides a user-visible description of the item.
+Optional.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### DisplayName
+The full title for the site.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Drive
+drive
+To construct, please use Get-Help -Online and see NOTES section for DRIVE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDrive
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Drives
+The collection of drives (document libraries) under this site.
+To construct, please use Get-Help -Online and see NOTES section for DRIVES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDrive[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Error
+publicError
+To construct, please use Get-Help -Online and see NOTES section for ERROR properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPublicError
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### ETag
+ETag for the item.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### ExternalColumns
+.
+To construct, please use Get-Help -Online and see NOTES section for EXTERNALCOLUMNS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphColumnDefinition1[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### GroupId
+key: id of group
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, Create1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: ISitesIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### Items
+Used to address any item contained in this site.
+This collection can't be enumerated.
+To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphBaseItem1[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### LastModifiedBy
+identitySet
+To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### LastModifiedByUser
+user
+To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBYUSER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUser1
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### LastModifiedDateTime
+Date and time the item was last modified.
+Read-only.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Lists
+The collection of lists under this site.
+To construct, please use Get-Help -Online and see NOTES section for LISTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphList1[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Name
+The name of the item.
+Read-write.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Onenote
+onenote
+To construct, please use Get-Help -Online and see NOTES section for ONENOTE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphOnenote1
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Operations
+The collection of long-running operations on the site.
+To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRichLongRunningOperation[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### ParentReference
+itemReference
+To construct, please use Get-Help -Online and see NOTES section for PARENTREFERENCE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphItemReference
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Permissions
+The permissions associated with the site.
+Nullable.
+To construct, please use Get-Help -Online and see NOTES section for PERMISSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPermission1[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Root
+root
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SharepointIds
+sharepointIds
+To construct, please use Get-Help -Online and see NOTES section for SHAREPOINTIDS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSharepointIds
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### SiteCollection
+siteCollection
+To construct, please use Get-Help -Online and see NOTES section for SITECOLLECTION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSiteCollection
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Sites
+The collection of the sub-sites under this site.
+To construct, please use Get-Help -Online and see NOTES section for SITES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSite[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### TermStore
+store
+To construct, please use Get-Help -Online and see NOTES section for TERMSTORE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTermStore1
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### TermStores
+The collection of termStores under this site.
+To construct, please use Get-Help -Online and see NOTES section for TERMSTORES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTermStore1[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### WebUrl
+URL that displays the resource in the browser.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 
@@ -289,7 +883,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalColumns
-.
+The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 To construct, please use Get-Help -Online and see NOTES section for EXTERNALCOLUMNS properties and create a hash table.
 
 ```yaml
@@ -352,7 +946,7 @@ Accept wildcard characters: False
 
 ### -Items
 Used to address any item contained in this site.
-This collection can't be enumerated.
+This collection cannot be enumerated.
 To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
@@ -464,7 +1058,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operations
-The collection of long-running operations on the site.
+The collection of long running operations for the site.
 To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -639,8 +1233,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happen if the cmdlet runs. The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -25083,6 +25676,9 @@ TERMSTORES <IMicrosoftGraphTermStore1\[]>: The collection of termStores under th
   - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store. This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

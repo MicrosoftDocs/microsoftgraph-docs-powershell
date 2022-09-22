@@ -46,6 +46,8 @@ To upload a file using an upload session, there are two steps:
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

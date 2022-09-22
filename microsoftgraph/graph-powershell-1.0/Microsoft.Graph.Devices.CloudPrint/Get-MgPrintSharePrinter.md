@@ -29,6 +29,8 @@ The printer that this printer share is related to.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -47,6 +47,8 @@ Given contentInfo as an input, which includes existing content metadata key/valu
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

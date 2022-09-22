@@ -28,6 +28,8 @@ Get group from groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -45,6 +45,8 @@ Mark a chat as unread for a user.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property synchronization for servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

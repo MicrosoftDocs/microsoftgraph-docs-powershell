@@ -41,6 +41,8 @@ Create new navigation property to tenants for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

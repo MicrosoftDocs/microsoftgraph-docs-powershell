@@ -47,6 +47,8 @@ Create new navigation property to policyStatusDetails for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

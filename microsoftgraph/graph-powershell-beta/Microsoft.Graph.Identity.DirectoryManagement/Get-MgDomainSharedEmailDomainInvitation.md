@@ -36,6 +36,8 @@ Get sharedEmailDomainInvitations from domains
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

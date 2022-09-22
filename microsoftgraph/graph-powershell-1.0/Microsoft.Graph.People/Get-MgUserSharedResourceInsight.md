@@ -33,6 +33,8 @@ For linked attachments, the type is driveItem.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -73,6 +73,8 @@ Update the properties of a store object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

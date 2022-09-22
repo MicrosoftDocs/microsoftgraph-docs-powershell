@@ -29,6 +29,8 @@ Delete navigation property userPfxCertificates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

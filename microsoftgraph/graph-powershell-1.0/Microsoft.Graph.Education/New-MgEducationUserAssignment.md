@@ -61,6 +61,8 @@ Create new navigation property to assignments for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AddedStudentAction
 educationAddedStudentAction
 
@@ -139,7 +141,7 @@ Accept wildcard characters: False
 
 ### -AssignDateTime
 The date when the assignment should become active.
-If in the future, the assignment isn't shown to the student until this date.
+If in the future, the assignment is not shown to the student until this date.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 

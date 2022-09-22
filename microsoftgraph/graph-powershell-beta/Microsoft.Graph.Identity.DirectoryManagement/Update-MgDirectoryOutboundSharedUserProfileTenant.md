@@ -43,6 +43,8 @@ Update the navigation property tenants in directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

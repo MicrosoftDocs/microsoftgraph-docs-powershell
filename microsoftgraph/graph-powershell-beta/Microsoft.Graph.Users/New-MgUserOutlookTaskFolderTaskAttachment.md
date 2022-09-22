@@ -45,6 +45,8 @@ The attachment can be a file (of fileAttachment type) or Outlook item (itemAttac
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

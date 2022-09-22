@@ -22,6 +22,8 @@ User experience analytics appHealth overview
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

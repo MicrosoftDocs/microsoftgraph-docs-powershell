@@ -36,6 +36,8 @@ List of office Client configuration.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

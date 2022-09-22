@@ -31,6 +31,8 @@ The user experience analytics reboot analytics metrics.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

@@ -44,6 +44,8 @@ Invoke action migrateToTemplate
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

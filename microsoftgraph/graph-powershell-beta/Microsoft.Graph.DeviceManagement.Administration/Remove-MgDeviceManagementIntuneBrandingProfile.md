@@ -29,6 +29,8 @@ Delete navigation property intuneBrandingProfiles for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

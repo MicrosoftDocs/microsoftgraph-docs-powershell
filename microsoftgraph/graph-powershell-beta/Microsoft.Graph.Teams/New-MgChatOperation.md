@@ -45,6 +45,8 @@ Create new navigation property to operations for chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

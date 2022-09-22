@@ -44,6 +44,8 @@ Accept the specified event in a user calendar.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

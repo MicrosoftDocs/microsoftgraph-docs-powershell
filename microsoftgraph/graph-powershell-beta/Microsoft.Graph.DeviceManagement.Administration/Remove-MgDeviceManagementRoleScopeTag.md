@@ -29,6 +29,8 @@ Delete navigation property roleScopeTags for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

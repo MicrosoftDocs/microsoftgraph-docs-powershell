@@ -35,6 +35,8 @@ You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

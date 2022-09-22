@@ -51,6 +51,8 @@ Create new navigation property to children for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -4163,7 +4163,7 @@ BODYPARAMETER `<IMicrosoftGraphUser>`: user
             - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
             - `[From <IMicrosoftGraphRecipient>]`: recipient
             - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-            - `[InReplyTo <IMicrosoftGraphPost>]`: post
+            - `[InReplyTo <IMicrosoftGraphPost1>]`: post
             - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
             - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
             - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -7578,7 +7578,7 @@ DRIVE `<IMicrosoftGraphDrive1>`: drive
               - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
               - `[From <IMicrosoftGraphRecipient>]`: recipient
               - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-              - `[InReplyTo <IMicrosoftGraphPost>]`: post
+              - `[InReplyTo <IMicrosoftGraphPost1>]`: post
               - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
               - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
               - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -10113,7 +10113,7 @@ DRIVES <IMicrosoftGraphDrive1\[]>: A collection of drives available for this use
               - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
               - `[From <IMicrosoftGraphRecipient>]`: recipient
               - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-              - `[InReplyTo <IMicrosoftGraphPost>]`: post
+              - `[InReplyTo <IMicrosoftGraphPost1>]`: post
               - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
               - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
               - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -12703,7 +12703,7 @@ FOLLOWEDSITES <IMicrosoftGraphSite1\[]>: .
               - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
               - `[From <IMicrosoftGraphRecipient>]`: recipient
               - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-              - `[InReplyTo <IMicrosoftGraphPost>]`: post
+              - `[InReplyTo <IMicrosoftGraphPost1>]`: post
               - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
               - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
               - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -16131,7 +16131,7 @@ JOINEDTEAMS <IMicrosoftGraphTeam1\[]>: .
           - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
           - `[From <IMicrosoftGraphRecipient>]`: recipient
           - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-          - `[InReplyTo <IMicrosoftGraphPost>]`: post
+          - `[InReplyTo <IMicrosoftGraphPost1>]`: post
           - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
           - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
           - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -19518,7 +19518,7 @@ TEAMWORK `<IMicrosoftGraphUserTeamwork1>`: userTeamwork
               - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
               - `[From <IMicrosoftGraphRecipient>]`: recipient
               - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-              - `[InReplyTo <IMicrosoftGraphPost>]`: post
+              - `[InReplyTo <IMicrosoftGraphPost1>]`: post
               - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
               - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
               - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z

@@ -49,6 +49,8 @@ Update the navigation property timesOff in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

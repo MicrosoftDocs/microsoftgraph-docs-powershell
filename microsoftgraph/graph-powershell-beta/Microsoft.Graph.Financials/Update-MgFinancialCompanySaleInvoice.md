@@ -68,6 +68,8 @@ Update the navigation property salesInvoices in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

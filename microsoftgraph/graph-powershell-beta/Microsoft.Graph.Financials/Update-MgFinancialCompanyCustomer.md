@@ -55,6 +55,8 @@ Update the navigation property customers in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

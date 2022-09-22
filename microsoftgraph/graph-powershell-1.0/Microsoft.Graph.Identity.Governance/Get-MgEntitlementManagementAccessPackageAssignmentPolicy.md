@@ -36,6 +36,8 @@ Get assignmentPolicies from identityGovernance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageAssignmentPolicyId
 key: id of accessPackageAssignmentPolicy
 

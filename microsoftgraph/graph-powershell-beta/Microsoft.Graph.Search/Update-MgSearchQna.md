@@ -52,6 +52,8 @@ Update the navigation property qnas in search
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

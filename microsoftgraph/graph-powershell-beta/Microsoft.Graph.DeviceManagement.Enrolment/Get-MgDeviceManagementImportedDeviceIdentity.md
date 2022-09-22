@@ -36,6 +36,8 @@ The imported device identities.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

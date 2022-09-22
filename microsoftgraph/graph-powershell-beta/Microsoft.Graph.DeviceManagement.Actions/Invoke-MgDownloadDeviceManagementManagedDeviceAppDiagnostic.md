@@ -31,6 +31,8 @@ Invoke action downloadAppDiagnostics
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

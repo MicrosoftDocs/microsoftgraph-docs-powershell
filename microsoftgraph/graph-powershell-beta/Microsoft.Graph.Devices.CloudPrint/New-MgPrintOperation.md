@@ -28,6 +28,8 @@ Create new navigation property to operations for print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

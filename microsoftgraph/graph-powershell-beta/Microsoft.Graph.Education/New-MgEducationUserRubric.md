@@ -49,6 +49,8 @@ Create a new educationRubric object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

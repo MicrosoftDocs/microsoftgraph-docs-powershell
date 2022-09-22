@@ -45,6 +45,8 @@ Update the navigation property outboundSharedUserProfiles in directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

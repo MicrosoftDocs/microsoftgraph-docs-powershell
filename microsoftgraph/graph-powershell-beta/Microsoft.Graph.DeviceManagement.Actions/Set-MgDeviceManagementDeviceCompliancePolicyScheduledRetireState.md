@@ -31,6 +31,8 @@ Invoke action setScheduledRetireState
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

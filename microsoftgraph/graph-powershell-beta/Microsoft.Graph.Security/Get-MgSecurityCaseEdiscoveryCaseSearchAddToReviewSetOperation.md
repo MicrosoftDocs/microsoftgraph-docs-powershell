@@ -29,6 +29,8 @@ Adds the results of the eDiscovery search to the specified reviewSet.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EdiscoveryCaseId
 key: id of ediscoveryCase
 

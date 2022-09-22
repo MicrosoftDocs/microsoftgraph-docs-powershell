@@ -43,6 +43,8 @@ Update the navigation property deviceCategory in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

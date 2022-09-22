@@ -38,6 +38,8 @@ Invoke function delta
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

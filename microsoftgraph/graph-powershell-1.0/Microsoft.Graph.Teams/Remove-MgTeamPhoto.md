@@ -28,6 +28,8 @@ Delete navigation property photo for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -36,6 +36,8 @@ A collection of membership records associated with the channel.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

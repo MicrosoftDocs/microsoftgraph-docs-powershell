@@ -29,6 +29,8 @@ Delete navigation property secureScoreControlProfiles for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

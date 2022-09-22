@@ -29,6 +29,8 @@ Update content for the navigation property resources in sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

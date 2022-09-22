@@ -55,6 +55,8 @@ Create a new [listItem][] in a [list][].
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

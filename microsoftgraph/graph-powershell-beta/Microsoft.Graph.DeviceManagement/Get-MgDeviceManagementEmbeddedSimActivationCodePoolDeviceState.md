@@ -36,6 +36,8 @@ Navigational property to a list of device states for this pool.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

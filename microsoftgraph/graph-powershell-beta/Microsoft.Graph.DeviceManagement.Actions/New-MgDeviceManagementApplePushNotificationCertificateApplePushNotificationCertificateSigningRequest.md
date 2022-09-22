@@ -22,6 +22,8 @@ Download Apple push notification certificate signing request
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 

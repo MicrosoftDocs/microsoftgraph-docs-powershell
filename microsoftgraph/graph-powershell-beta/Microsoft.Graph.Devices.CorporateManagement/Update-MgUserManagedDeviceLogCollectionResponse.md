@@ -49,6 +49,8 @@ Update the navigation property logCollectionRequests in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

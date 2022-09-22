@@ -57,6 +57,8 @@ Update the navigation property windowsProtectionState in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

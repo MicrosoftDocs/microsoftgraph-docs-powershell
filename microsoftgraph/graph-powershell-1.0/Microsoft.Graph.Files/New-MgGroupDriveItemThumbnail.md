@@ -44,6 +44,8 @@ Create new navigation property to thumbnails for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

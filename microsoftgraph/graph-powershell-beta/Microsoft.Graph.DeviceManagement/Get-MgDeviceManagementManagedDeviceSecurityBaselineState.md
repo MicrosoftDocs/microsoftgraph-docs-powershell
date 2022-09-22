@@ -36,6 +36,8 @@ Security baseline states for this device.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -29,6 +29,8 @@ Delete navigation property calendarView for solutions
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BookingAppointmentId
 key: id of bookingAppointment
 

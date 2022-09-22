@@ -61,6 +61,8 @@ Create a column for a [site][site] with a request that specifies a [columnDefini
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

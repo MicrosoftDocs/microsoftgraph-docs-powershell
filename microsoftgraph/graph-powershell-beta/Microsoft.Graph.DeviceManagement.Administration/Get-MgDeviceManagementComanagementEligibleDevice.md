@@ -36,6 +36,8 @@ The list of co-management eligible devices report
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

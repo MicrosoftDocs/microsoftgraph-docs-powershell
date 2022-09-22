@@ -36,6 +36,8 @@ The device management intents
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

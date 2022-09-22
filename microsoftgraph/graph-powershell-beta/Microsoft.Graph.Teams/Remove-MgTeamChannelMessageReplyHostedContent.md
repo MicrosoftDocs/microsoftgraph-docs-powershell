@@ -30,6 +30,8 @@ Delete navigation property hostedContents for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

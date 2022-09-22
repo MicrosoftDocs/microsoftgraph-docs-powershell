@@ -46,6 +46,8 @@ Update the navigation property scopedRoleMembers in directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

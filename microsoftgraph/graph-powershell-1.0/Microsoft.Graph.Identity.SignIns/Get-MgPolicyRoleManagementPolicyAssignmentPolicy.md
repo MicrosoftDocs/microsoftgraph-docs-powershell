@@ -31,6 +31,8 @@ Supports $expand and a nested $expand of the rules and effectiveRules relationsh
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

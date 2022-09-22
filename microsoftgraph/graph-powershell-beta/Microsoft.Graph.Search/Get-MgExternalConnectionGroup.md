@@ -36,6 +36,8 @@ Get groups from external
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

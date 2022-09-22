@@ -36,6 +36,8 @@ Device compliance policy states for this device.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

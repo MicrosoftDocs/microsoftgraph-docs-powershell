@@ -30,6 +30,8 @@ Delete navigation property userStatuses for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceConfigurationId
 key: id of deviceConfiguration
 

@@ -38,6 +38,8 @@ User Experience Analytics Battery Health Device Runtime History
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

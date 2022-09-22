@@ -29,6 +29,8 @@ Update the Proprietary Device Health Script
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceHealthScriptId
 key: id of deviceHealthScript
 

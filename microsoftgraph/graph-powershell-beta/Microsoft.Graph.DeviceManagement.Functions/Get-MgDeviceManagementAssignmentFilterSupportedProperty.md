@@ -29,6 +29,8 @@ Invoke function getSupportedProperties
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceAndAppManagementAssignmentFilterId
 key: id of deviceAndAppManagementAssignmentFilter
 

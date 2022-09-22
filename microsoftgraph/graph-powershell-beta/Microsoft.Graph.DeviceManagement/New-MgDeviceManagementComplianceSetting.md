@@ -37,6 +37,8 @@ Create new navigation property to complianceSettings for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessTypes
 deviceManagementConfigurationSettingAccessTypes
 

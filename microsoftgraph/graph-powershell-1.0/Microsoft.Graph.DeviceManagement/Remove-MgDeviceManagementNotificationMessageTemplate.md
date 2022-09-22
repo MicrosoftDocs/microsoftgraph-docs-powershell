@@ -29,6 +29,8 @@ Delete navigation property notificationMessageTemplates for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

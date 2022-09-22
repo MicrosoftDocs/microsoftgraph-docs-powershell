@@ -49,6 +49,8 @@ Create new navigation property to items for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

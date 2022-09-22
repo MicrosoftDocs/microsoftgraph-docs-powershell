@@ -29,6 +29,8 @@ Invoke action reauthorize
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

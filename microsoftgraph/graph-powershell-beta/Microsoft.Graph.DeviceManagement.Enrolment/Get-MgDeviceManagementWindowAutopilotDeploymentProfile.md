@@ -36,6 +36,8 @@ Windows auto pilot deployment profiles
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

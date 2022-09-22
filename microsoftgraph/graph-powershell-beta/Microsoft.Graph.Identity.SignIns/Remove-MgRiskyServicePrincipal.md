@@ -29,6 +29,8 @@ Delete navigation property riskyServicePrincipals for identityProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

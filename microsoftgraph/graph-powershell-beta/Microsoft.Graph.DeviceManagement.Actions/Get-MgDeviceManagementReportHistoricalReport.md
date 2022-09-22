@@ -31,6 +31,8 @@ Invoke action getHistoricalReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

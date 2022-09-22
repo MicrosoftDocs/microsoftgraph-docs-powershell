@@ -45,6 +45,8 @@ Update the navigation property paymentMethod in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

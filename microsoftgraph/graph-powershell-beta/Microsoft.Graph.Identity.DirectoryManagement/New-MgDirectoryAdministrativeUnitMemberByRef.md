@@ -45,6 +45,8 @@ All group types can be created within an administrative unit.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

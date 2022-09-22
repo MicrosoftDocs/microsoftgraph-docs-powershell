@@ -45,6 +45,8 @@ Update the navigation property templates in applications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

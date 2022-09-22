@@ -29,6 +29,8 @@ Delete navigation property microsoftTunnelHealthThresholds for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

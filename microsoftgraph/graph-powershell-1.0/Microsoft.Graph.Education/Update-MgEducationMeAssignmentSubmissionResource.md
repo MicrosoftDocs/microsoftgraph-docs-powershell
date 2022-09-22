@@ -47,6 +47,8 @@ Update the navigation property resources in education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

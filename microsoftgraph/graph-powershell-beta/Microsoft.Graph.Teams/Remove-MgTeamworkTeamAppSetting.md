@@ -21,6 +21,8 @@ Delete navigation property teamsAppSettings for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -36,6 +36,8 @@ All applications currently installed on the device
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

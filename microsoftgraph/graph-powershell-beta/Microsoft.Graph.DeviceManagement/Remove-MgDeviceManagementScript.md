@@ -29,6 +29,8 @@ Delete navigation property deviceManagementScripts for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementScriptId
 key: id of deviceManagementScript
 

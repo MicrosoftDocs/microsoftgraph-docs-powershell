@@ -37,6 +37,8 @@ A teacher can also submit a student's assignment on their behalf.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationAssignmentId
 key: id of educationAssignment
 

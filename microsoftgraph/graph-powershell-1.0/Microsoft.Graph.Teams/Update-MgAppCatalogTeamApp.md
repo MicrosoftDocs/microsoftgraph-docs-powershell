@@ -43,6 +43,8 @@ Update the navigation property teamsApps in appCatalogs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

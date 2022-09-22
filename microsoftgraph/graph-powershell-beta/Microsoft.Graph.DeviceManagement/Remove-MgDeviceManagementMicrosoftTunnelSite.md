@@ -29,6 +29,8 @@ Delete navigation property microsoftTunnelSites for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

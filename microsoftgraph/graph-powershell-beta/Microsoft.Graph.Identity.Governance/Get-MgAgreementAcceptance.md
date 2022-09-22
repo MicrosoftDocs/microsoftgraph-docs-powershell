@@ -38,6 +38,8 @@ Information about acceptances of this agreement.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgreementAcceptanceId
 key: id of agreementAcceptance
 

@@ -45,6 +45,8 @@ Create new navigation property to sharedWithTeams for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

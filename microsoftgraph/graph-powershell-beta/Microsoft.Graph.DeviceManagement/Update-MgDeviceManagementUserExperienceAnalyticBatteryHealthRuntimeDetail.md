@@ -32,6 +32,8 @@ Update the navigation property userExperienceAnalyticsBatteryHealthRuntimeDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActiveDevices
 Number of active devices within the tenant.
 Valid values -2147483648 to 2147483647

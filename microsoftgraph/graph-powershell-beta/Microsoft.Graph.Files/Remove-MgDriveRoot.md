@@ -28,6 +28,8 @@ Delete navigation property root for drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DriveId
 key: id of drive
 

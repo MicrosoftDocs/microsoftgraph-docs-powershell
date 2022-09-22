@@ -47,6 +47,8 @@ Update the navigation property schema in servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

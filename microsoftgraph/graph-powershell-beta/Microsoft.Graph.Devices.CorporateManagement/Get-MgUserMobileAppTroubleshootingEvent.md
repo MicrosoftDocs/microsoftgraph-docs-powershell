@@ -36,6 +36,8 @@ The list of mobile app troubleshooting events for this user.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

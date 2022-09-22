@@ -36,6 +36,8 @@ Get exceptionOccurrences from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

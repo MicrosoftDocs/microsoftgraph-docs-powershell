@@ -51,6 +51,8 @@ Create new navigation property to subscriptions for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

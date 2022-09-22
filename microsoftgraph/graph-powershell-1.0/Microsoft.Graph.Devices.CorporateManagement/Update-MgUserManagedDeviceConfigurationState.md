@@ -49,6 +49,8 @@ Update the navigation property deviceConfigurationStates in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

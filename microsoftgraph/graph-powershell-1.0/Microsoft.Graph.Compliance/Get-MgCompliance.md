@@ -21,6 +21,8 @@ Get compliance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

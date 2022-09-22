@@ -42,6 +42,8 @@ This collection can contain a maximum of 100 elements.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

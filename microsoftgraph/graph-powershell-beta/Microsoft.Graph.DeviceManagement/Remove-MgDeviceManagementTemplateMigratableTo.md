@@ -30,6 +30,8 @@ Delete navigation property migratableTo for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementTemplateId
 key: id of deviceManagementTemplate
 

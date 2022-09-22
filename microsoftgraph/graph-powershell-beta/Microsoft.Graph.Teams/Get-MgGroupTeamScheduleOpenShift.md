@@ -36,6 +36,8 @@ Get openShifts from groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

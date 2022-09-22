@@ -31,6 +31,8 @@ Delete navigation property assignments for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CloudPcProvisioningPolicyAssignmentId
 key: id of cloudPcProvisioningPolicyAssignment
 

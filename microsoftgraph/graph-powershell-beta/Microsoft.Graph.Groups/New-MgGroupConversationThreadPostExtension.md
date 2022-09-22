@@ -42,6 +42,8 @@ Create new navigation property to extensions for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -47,6 +47,8 @@ Create new navigation property to deviceSettingStateSummaries for deviceManageme
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

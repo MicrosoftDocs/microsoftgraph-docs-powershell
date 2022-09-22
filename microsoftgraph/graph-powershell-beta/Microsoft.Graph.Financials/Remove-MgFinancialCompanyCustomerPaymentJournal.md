@@ -29,6 +29,8 @@ Delete navigation property customerPaymentJournals for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

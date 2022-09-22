@@ -21,6 +21,8 @@ Invoke action enableLegacyPcManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -PassThru
 Returns true when the command succeeds
 

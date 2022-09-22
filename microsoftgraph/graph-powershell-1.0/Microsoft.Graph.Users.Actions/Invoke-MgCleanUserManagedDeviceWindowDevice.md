@@ -43,6 +43,8 @@ Clean Windows device
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

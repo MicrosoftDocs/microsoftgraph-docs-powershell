@@ -44,6 +44,8 @@ Create new navigation property to results for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

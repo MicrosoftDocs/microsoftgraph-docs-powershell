@@ -43,6 +43,8 @@ Update the navigation property members in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

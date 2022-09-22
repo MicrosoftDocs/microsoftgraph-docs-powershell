@@ -30,6 +30,8 @@ Delete navigation property microsoftTunnelConfiguration for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

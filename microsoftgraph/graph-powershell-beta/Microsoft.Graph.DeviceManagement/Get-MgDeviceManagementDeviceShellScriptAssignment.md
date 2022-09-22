@@ -36,6 +36,8 @@ The list of group assignments for the device management script.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

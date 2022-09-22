@@ -22,6 +22,8 @@ The device configuration user state summary for this account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

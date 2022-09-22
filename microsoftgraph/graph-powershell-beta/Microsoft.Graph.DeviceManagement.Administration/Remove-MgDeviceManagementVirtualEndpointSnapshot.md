@@ -29,6 +29,8 @@ Delete navigation property snapshots for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CloudPcSnapshotId
 key: id of cloudPcSnapshot
 

@@ -47,6 +47,8 @@ Update the navigation property jobs in applications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

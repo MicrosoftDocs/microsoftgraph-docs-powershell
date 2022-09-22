@@ -51,6 +51,8 @@ Update the navigation property employees in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

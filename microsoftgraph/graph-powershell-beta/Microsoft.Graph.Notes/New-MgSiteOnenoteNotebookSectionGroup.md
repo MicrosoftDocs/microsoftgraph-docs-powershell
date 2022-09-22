@@ -51,6 +51,8 @@ Create a new section group in the specified notebook.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

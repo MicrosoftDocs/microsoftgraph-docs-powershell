@@ -45,6 +45,8 @@ Hide a chat for a user.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -30,6 +30,8 @@ Delete navigation property assignments for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceManagementCompliancePolicyId
 key: id of deviceManagementCompliancePolicy
 

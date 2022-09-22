@@ -42,6 +42,8 @@ Update the navigation property deletedItems in directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -21,6 +21,8 @@ Invoke function getOffice365ActivationsUserCounts
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -OutFile
 Path to write output file to
 

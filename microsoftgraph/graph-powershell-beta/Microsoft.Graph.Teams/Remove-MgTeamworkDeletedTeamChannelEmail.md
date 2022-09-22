@@ -31,6 +31,8 @@ You can remove an email address only if it was provisioned using the provisionEm
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

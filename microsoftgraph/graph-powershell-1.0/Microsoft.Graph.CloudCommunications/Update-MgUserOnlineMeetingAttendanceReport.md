@@ -46,6 +46,8 @@ Update the navigation property attendanceReports in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

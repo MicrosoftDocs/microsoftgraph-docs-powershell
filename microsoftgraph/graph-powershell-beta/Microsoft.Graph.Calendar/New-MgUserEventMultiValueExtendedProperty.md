@@ -42,6 +42,8 @@ Create new navigation property to multiValueExtendedProperties for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

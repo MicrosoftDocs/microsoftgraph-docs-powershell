@@ -37,6 +37,8 @@ Clients can also inspect the configuration of the schedule.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

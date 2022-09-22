@@ -57,6 +57,8 @@ Update the navigation property roleAssignmentSchedules in roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivatedUsing
 unifiedRoleEligibilitySchedule
 To construct, please use Get-Help -Online and see NOTES section for ACTIVATEDUSING properties and create a hash table.

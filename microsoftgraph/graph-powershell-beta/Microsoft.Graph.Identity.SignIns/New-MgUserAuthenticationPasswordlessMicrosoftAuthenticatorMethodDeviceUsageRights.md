@@ -46,6 +46,8 @@ Create new navigation property to usageRights for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

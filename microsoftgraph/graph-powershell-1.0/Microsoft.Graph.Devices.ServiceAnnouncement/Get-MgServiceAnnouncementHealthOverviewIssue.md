@@ -36,6 +36,8 @@ A collection of issues that happened on the service, with detailed information f
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

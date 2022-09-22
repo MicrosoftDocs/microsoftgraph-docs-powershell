@@ -45,6 +45,8 @@ Create new navigation property to tabs for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

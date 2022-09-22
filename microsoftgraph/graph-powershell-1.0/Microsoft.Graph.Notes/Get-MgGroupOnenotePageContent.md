@@ -28,6 +28,8 @@ The page's HTML content.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

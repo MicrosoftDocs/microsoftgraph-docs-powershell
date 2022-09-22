@@ -51,6 +51,8 @@ Update the navigation property securityActions in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActionReason
 Reason for invoking this action.
 

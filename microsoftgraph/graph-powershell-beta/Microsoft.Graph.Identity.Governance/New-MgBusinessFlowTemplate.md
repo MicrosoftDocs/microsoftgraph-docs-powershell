@@ -29,6 +29,8 @@ Add new entity to businessFlowTemplates
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

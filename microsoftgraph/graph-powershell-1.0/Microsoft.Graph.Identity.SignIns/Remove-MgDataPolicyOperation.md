@@ -29,6 +29,8 @@ Delete entity from dataPolicyOperations
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DataPolicyOperationId
 key: id of dataPolicyOperation
 

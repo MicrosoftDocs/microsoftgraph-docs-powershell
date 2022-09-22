@@ -29,6 +29,8 @@ Delete navigation property configuration for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

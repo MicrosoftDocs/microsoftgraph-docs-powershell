@@ -30,6 +30,8 @@ Delete navigation property singleValueExtendedProperties for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

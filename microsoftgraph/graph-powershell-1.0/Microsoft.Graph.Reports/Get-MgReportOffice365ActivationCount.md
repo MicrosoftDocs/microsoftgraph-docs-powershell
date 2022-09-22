@@ -21,6 +21,8 @@ Invoke function getOffice365ActivationCounts
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -OutFile
 Path to write output file to
 

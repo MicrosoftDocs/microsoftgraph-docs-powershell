@@ -44,6 +44,8 @@ Cancel the specified bookingAppointment in the specified bookingBusiness and sen
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

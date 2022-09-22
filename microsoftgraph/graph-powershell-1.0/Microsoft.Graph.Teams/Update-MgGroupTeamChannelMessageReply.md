@@ -60,6 +60,8 @@ Update the navigation property replies in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

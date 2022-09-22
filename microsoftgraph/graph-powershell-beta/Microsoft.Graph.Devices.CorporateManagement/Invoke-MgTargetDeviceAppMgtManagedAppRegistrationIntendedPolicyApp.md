@@ -47,6 +47,8 @@ Invoke action targetApps
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

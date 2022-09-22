@@ -53,6 +53,8 @@ Update the navigation property permissions in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

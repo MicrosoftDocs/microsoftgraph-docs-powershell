@@ -39,6 +39,8 @@ The list of localized messages for this Notification Message Template.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

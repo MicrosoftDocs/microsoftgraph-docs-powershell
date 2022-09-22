@@ -29,6 +29,8 @@ Delete ref of navigation property allowedGroups for print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

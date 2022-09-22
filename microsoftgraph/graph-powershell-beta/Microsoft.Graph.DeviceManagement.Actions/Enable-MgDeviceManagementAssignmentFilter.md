@@ -30,6 +30,8 @@ Invoke action enable
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

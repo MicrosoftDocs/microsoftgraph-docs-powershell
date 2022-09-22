@@ -37,6 +37,8 @@ To indicate which terms are related to the current term as either pinned or reus
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

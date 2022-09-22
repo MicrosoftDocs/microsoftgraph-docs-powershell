@@ -39,6 +39,8 @@ Set of commands sent to this device.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

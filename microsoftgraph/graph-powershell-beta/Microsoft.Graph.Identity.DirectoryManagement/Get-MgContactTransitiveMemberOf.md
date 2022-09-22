@@ -36,6 +36,8 @@ Get transitiveMemberOf from contacts
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

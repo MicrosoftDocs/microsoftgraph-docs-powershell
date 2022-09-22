@@ -31,6 +31,8 @@ Add new entity to agreements
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Acceptances
 Read-only.
 Information about acceptances of this agreement.

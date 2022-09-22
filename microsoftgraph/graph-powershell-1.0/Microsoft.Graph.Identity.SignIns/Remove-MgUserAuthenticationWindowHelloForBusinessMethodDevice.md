@@ -30,6 +30,8 @@ Delete navigation property device for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

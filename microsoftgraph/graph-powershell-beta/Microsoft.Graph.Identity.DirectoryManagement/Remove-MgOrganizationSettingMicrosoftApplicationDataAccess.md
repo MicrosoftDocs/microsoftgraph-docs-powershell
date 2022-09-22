@@ -29,6 +29,8 @@ Delete navigation property microsoftApplicationDataAccess for organization
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -49,6 +49,8 @@ Create new navigation property to resourceActions for roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActionVerb
 HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
 Supports $filter (eq) but not for null values.

@@ -30,6 +30,8 @@ Delete navigation property assignments for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceEnrollmentConfigurationId
 key: id of deviceEnrollmentConfiguration
 

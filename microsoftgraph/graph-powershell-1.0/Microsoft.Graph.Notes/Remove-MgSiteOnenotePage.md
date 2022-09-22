@@ -29,6 +29,8 @@ Delete navigation property pages for sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

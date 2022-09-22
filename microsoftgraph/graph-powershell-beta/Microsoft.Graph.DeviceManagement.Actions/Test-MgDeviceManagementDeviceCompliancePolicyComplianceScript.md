@@ -31,6 +31,8 @@ Invoke action validateComplianceScript
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -31,6 +31,8 @@ This allows you to maintain and synchronize \na local store of a user's contact 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContactFolderId
 key: id of contactFolder
 

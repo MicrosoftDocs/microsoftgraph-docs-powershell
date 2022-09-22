@@ -29,6 +29,8 @@ Delete navigation property associatedTeams for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AssociatedTeamInfoId
 key: id of associatedTeamInfo
 

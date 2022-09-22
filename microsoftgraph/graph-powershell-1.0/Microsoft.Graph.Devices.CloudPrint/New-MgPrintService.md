@@ -28,6 +28,8 @@ Create new navigation property to services for print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property sectionGroups for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

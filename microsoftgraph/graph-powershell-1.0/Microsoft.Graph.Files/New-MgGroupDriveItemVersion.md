@@ -45,6 +45,8 @@ Create new navigation property to versions for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

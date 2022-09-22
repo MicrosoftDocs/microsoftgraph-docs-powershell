@@ -29,6 +29,8 @@ Delete navigation property presence for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

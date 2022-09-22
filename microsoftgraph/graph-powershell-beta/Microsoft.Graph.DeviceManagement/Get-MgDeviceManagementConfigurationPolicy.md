@@ -36,6 +36,8 @@ List of all Configuration policies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

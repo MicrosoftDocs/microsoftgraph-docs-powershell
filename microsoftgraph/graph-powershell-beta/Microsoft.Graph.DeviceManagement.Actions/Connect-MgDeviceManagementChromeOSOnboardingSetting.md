@@ -30,6 +30,8 @@ Invoke action connect
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -30,6 +30,8 @@ Delete navigation property hostedContents for chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatId
 key: id of chat
 

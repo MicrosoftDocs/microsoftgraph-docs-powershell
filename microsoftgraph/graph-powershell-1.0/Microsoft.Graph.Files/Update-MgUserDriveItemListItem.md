@@ -56,6 +56,8 @@ Update the navigation property listItem in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

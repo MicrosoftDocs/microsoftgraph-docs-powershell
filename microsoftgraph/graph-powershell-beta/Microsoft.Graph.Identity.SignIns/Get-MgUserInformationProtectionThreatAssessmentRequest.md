@@ -36,6 +36,8 @@ Get threatAssessmentRequests from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

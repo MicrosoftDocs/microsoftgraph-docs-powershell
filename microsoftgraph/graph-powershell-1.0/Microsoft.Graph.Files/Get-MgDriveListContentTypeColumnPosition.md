@@ -36,6 +36,8 @@ Column order information in a content type.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

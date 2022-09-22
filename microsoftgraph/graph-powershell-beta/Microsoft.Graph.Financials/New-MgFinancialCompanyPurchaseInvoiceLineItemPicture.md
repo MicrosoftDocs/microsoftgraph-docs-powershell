@@ -70,6 +70,8 @@ Create new navigation property to picture for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

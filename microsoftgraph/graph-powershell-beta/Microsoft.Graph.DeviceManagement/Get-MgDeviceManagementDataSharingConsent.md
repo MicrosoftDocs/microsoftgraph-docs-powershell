@@ -36,6 +36,8 @@ Data sharing consents.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

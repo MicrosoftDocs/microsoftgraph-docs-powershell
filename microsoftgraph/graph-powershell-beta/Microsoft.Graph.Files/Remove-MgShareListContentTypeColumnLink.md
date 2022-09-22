@@ -29,6 +29,8 @@ Delete navigation property columnLinks for shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ColumnLinkId
 key: id of columnLink
 

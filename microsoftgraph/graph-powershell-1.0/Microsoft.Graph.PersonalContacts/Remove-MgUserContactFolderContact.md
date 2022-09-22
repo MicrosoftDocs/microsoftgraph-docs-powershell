@@ -29,6 +29,8 @@ Delete navigation property contacts for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContactFolderId
 key: id of contactFolder
 

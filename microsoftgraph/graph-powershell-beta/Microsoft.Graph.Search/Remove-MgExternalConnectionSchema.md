@@ -29,6 +29,8 @@ Delete navigation property schema for external
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExternalConnectionId
 key: id of externalConnection
 

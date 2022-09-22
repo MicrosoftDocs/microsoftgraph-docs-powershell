@@ -43,6 +43,8 @@ Create new navigation property to taxGroups for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

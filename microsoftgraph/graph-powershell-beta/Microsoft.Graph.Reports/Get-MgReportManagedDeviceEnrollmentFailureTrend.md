@@ -21,6 +21,8 @@ Metadata for the enrollment failure trends report
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -OutFile
 Path to write output file to
 

@@ -30,6 +30,8 @@ Delete navigation property hostedContents for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChatMessageHostedContentId
 key: id of chatMessageHostedContent
 

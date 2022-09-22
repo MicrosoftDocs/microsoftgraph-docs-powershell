@@ -22,6 +22,8 @@ Select matching entitlement management accessPackage
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackage
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGE properties and create a hash table.
 

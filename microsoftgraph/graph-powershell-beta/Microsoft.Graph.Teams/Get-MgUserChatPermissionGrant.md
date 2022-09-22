@@ -36,6 +36,8 @@ A collection of permissions granted to apps for the chat.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

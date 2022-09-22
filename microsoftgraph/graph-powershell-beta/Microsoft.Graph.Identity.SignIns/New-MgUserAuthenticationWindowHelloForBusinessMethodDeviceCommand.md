@@ -47,6 +47,8 @@ Create new navigation property to commands for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

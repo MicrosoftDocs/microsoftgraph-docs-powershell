@@ -47,6 +47,8 @@ Update the navigation property participants in communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -31,6 +31,8 @@ Delete navigation property modelRegression for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

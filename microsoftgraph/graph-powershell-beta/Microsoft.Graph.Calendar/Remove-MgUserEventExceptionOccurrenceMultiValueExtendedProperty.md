@@ -30,6 +30,8 @@ Delete navigation property multiValueExtendedProperties for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EventId
 key: id of event
 

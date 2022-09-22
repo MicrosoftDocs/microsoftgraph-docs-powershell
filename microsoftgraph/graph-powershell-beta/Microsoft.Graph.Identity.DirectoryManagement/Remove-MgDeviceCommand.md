@@ -29,6 +29,8 @@ Delete navigation property commands for devices
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CommandId
 key: id of command
 

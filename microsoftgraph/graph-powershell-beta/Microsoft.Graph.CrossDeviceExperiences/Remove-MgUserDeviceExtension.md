@@ -29,6 +29,8 @@ Delete navigation property extensions for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceId
 key: id of device
 

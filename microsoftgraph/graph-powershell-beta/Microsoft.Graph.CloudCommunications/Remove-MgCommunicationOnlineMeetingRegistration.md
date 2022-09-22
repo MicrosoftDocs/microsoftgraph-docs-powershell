@@ -29,6 +29,8 @@ Disable and delete the externalMeetingRegistration of an onlineMeeting.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

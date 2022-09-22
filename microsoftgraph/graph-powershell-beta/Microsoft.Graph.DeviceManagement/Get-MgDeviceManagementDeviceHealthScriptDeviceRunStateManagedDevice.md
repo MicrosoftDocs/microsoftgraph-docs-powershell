@@ -29,6 +29,8 @@ The managed device on which the device health script executed
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceHealthScriptDeviceStateId
 key: id of deviceHealthScriptDeviceState
 

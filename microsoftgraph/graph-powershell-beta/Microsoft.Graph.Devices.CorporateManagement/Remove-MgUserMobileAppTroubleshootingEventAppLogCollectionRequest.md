@@ -31,6 +31,8 @@ Delete navigation property appLogCollectionRequests for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AppLogCollectionRequestId
 key: id of appLogCollectionRequest
 

@@ -55,6 +55,8 @@ Update the navigation property items in drives
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

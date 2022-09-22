@@ -27,6 +27,8 @@ Invoke function getRecentNotebooks
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IncludePersonalNotebooks
 Usage: includePersonalNotebooks={includePersonalNotebooks}
 

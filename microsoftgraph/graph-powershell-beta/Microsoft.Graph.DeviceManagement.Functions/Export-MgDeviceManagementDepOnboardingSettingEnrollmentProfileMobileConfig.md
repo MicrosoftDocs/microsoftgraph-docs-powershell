@@ -29,6 +29,8 @@ Exports the mobile configuration
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DepOnboardingSettingId
 key: id of depOnboardingSetting
 

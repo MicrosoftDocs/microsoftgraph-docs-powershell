@@ -30,6 +30,8 @@ Invoke action extractContentLabel
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

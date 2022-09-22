@@ -43,6 +43,8 @@ Update the properties of **plannerplandetails** object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

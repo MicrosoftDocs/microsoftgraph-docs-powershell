@@ -47,6 +47,8 @@ Update the navigation property templates in servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete entity from contracts
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ContractId
 key: id of contract
 

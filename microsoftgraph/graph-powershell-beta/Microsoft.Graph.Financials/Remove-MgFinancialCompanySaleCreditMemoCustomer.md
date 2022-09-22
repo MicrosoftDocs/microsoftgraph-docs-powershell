@@ -29,6 +29,8 @@ Delete navigation property customer for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

@@ -29,6 +29,8 @@ The underlying Microsoft 365 group object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationClassId
 key: id of educationClass
 

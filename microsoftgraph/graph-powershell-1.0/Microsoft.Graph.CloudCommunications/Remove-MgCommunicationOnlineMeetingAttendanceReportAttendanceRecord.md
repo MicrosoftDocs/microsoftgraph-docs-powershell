@@ -30,6 +30,8 @@ Delete navigation property attendanceRecords for communications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttendanceRecordId
 key: id of attendanceRecord
 

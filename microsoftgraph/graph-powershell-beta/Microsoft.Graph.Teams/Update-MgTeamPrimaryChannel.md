@@ -51,6 +51,8 @@ Update the navigation property primaryChannel in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

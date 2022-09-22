@@ -49,6 +49,8 @@ Update the navigation property settings in organization
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -29,6 +29,8 @@ Delete navigation property messages for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

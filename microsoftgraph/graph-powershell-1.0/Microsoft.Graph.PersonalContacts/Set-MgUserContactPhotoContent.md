@@ -29,6 +29,8 @@ Update media content for the navigation property photo in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

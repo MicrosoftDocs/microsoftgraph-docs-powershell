@@ -29,6 +29,8 @@ Delete ref of navigation property members for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationClassId
 key: id of educationClass
 

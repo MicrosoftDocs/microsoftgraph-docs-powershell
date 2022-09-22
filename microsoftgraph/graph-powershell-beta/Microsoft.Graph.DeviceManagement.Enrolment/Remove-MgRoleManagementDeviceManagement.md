@@ -22,6 +22,8 @@ Delete navigation property deviceManagement for roleManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

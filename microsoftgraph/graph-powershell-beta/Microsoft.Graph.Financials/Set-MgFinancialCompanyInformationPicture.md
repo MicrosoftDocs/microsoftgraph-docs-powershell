@@ -29,6 +29,8 @@ Update picture for the navigation property companyInformation in financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -BodyParameter
 .
 

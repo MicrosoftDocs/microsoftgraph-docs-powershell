@@ -29,6 +29,8 @@ Get content for the navigation property attachmentSessions from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AttachmentSessionId
 key: id of attachmentSession
 

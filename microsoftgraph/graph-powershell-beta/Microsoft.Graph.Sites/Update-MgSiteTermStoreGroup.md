@@ -45,6 +45,8 @@ Update the navigation property groups in sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

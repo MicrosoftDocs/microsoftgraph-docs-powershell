@@ -46,6 +46,8 @@ Update the navigation property tabs in teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

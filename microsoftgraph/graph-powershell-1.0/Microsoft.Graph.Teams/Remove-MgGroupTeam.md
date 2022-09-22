@@ -28,6 +28,8 @@ Delete navigation property team for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -GroupId
 key: id of group
 

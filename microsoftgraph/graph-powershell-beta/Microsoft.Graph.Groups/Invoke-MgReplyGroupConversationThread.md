@@ -46,6 +46,8 @@ You can specify the parent conversation \nin the request, or, you can specify ju
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -49,6 +49,8 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivityType
 .
 

@@ -36,6 +36,8 @@ Get columns from shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

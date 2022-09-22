@@ -47,6 +47,8 @@ Create new navigation property to operations for teamwork
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

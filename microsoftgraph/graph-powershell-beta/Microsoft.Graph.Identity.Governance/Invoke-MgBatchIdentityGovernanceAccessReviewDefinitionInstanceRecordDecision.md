@@ -49,6 +49,8 @@ Enables reviewers to review all accessReviewInstanceDecisionItem objects in batc
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessReviewInstanceId
 key: id of accessReviewInstance
 

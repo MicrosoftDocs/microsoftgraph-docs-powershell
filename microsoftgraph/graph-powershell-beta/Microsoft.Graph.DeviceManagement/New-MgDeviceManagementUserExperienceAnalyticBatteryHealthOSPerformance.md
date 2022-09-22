@@ -32,6 +32,8 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthOsPerforma
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActiveDevices
 Number of active devices for that os version.
 Valid values -2147483648 to 2147483647

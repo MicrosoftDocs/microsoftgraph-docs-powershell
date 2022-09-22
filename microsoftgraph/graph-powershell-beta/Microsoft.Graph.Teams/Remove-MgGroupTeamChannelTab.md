@@ -29,6 +29,8 @@ Delete navigation property tabs for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

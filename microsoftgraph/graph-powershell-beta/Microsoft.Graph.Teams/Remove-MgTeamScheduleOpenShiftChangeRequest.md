@@ -29,6 +29,8 @@ Delete navigation property openShiftChangeRequests for teams
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

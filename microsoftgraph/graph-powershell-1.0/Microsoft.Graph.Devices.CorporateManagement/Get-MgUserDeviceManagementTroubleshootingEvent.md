@@ -36,6 +36,8 @@ The list of troubleshooting events for this user.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

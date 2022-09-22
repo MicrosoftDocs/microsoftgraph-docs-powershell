@@ -55,6 +55,8 @@ Represents the current status of a user's response to a company's customizable t
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AgreementAcceptanceId
 key: id of agreementAcceptance
 

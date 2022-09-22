@@ -22,6 +22,8 @@ The device compliance state summary for this account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

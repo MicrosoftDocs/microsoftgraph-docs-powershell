@@ -28,6 +28,8 @@ Invoke function delta
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ChannelId
 key: id of channel
 

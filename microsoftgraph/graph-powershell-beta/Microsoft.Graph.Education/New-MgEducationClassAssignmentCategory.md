@@ -66,6 +66,8 @@ Create new navigation property to categories for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

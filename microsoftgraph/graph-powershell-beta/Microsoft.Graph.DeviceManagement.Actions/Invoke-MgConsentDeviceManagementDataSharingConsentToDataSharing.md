@@ -29,6 +29,8 @@ Invoke action consentToDataSharing
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DataSharingConsentId
 key: id of dataSharingConsent
 

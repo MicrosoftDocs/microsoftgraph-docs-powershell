@@ -29,6 +29,8 @@ To get expanded event instances, you can get the calendar view, or\nget the inst
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

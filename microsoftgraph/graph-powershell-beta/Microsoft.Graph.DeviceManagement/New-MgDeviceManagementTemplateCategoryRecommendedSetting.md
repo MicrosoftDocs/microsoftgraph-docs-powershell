@@ -44,6 +44,8 @@ Create new navigation property to recommendedSettings for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

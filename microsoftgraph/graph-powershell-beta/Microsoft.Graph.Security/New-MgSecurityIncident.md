@@ -33,6 +33,8 @@ Create new navigation property to incidents for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

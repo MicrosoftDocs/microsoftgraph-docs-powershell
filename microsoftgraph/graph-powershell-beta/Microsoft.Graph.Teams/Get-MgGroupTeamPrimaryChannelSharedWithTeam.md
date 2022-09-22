@@ -36,6 +36,8 @@ A collection of teams with which a channel is shared.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

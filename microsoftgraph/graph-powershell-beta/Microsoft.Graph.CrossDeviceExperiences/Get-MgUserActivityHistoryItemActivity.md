@@ -29,6 +29,8 @@ Get activity from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivityHistoryItemId
 key: id of activityHistoryItem
 

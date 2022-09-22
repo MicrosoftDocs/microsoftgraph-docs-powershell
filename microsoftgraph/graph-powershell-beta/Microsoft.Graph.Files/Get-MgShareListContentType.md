@@ -36,6 +36,8 @@ Get contentTypes from shares
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

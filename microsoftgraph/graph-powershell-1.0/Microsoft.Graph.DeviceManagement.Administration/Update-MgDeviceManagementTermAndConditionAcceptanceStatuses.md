@@ -50,6 +50,8 @@ Update the navigation property acceptanceStatuses in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AcceptedDateTime
 DateTime when the terms were last accepted by the user.
 

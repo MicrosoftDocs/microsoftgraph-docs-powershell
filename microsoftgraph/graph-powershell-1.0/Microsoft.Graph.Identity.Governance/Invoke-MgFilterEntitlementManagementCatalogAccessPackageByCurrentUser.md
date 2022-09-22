@@ -29,6 +29,8 @@ Invoke function filterByCurrentUser
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AccessPackageCatalogId
 key: id of accessPackageCatalog
 

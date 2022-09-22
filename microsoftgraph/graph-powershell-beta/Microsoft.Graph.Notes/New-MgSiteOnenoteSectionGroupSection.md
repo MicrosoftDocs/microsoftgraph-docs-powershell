@@ -50,6 +50,8 @@ Create a new section in the specified section group.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

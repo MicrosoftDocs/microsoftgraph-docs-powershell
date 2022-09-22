@@ -37,6 +37,8 @@ Create new navigation property to intents for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

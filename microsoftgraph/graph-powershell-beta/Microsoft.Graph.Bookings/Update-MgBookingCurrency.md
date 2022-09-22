@@ -41,6 +41,8 @@ Update entity in bookingCurrencies
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

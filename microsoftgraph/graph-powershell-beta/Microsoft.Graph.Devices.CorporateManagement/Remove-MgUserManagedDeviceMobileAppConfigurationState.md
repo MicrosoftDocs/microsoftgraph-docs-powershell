@@ -30,6 +30,8 @@ Delete navigation property managedDeviceMobileAppConfigurationStates for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

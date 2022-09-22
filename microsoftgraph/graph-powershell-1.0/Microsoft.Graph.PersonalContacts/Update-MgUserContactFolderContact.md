@@ -68,6 +68,8 @@ Update the navigation property contacts in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 
@@ -337,6 +339,7 @@ Accept wildcard characters: False
 
 ### -Extensions
 The collection of open extensions defined for the contact.
+Read-only.
 Nullable.
 To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
 
@@ -878,7 +881,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphContact>`: contact
+BODYPARAMETER `<IMicrosoftGraphContact1>`: contact
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -887,7 +890,7 @@ BODYPARAMETER `<IMicrosoftGraphContact>`: contact
   - `[Id <String>]`: 
   - `[AssistantName <String>]`: The name of the contact's assistant.
   - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[BusinessAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+  - `[BusinessAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -908,7 +911,7 @@ BODYPARAMETER `<IMicrosoftGraphContact>`: contact
   - `[FileAs <String>]`: The name the contact is filed under.
   - `[Generation <String>]`: The contact's generation.
   - `[GivenName <String>]`: The contact's given name.
-  - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+  - `[HomeAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
   - `[HomePhones <String[]>]`: The contact's home phone numbers.
   - `[ImAddresses <String[]>]`: 
   - `[Initials <String>]`: 
@@ -921,7 +924,7 @@ BODYPARAMETER `<IMicrosoftGraphContact>`: contact
     - `[Value <String[]>]`: A collection of property values.
   - `[NickName <String>]`: 
   - `[OfficeLocation <String>]`: 
-  - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+  - `[OtherAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
   - `[ParentFolderId <String>]`: 
   - `[PersonalNotes <String>]`: 
   - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
@@ -940,7 +943,7 @@ BODYPARAMETER `<IMicrosoftGraphContact>`: contact
   - `[YomiGivenName <String>]`: 
   - `[YomiSurname <String>]`: 
 
-BUSINESSADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+BUSINESSADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -949,13 +952,13 @@ BUSINESSADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[Street <String>]`: The street.
 
 EMAILADDRESSES <IMicrosoftGraphEmailAddress\[]>: The contact's email addresses.
-  - `[Address <String>]`: The email address of an entity instance.
-  - `[Name <String>]`: The display name of an entity instance.
+  - `[Address <String>]`: The email address of the person or entity.
+  - `[Name <String>]`: The display name of the person or entity.
 
 EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the contact. Read-only. Nullable.
   - `[Id <String>]`: 
 
-HOMEADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+HOMEADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -976,7 +979,7 @@ MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]
   - `[Id <String>]`: 
   - `[Value <String[]>]`: A collection of property values.
 
-OTHERADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+OTHERADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.

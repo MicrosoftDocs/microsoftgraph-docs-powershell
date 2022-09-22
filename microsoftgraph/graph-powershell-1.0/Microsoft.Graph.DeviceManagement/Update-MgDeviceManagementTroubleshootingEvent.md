@@ -45,6 +45,8 @@ Update the navigation property troubleshootingEvents in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

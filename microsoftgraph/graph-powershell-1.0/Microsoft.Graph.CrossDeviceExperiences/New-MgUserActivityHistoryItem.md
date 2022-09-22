@@ -47,6 +47,8 @@ Create new navigation property to historyItems for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActiveDurationSeconds
 Optional.
 The duration of active user engagement.

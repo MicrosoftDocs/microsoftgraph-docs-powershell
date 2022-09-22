@@ -39,6 +39,8 @@ This is a required property when creating any individual per-platform compliance
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

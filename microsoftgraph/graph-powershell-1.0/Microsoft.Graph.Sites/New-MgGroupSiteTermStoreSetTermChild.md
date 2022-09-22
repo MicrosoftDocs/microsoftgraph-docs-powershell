@@ -81,6 +81,8 @@ Create new navigation property to children for groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

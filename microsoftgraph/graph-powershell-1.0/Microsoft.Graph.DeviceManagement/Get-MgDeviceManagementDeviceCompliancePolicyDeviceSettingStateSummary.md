@@ -36,6 +36,8 @@ Compliance Setting State Device Summary
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

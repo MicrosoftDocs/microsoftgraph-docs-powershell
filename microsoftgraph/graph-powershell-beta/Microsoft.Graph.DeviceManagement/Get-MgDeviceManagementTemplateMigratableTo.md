@@ -36,6 +36,8 @@ Collection of templates this template can migrate to
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

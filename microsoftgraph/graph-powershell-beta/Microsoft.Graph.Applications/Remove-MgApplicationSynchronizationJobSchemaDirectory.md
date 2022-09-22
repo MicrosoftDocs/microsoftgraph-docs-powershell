@@ -29,6 +29,8 @@ Delete navigation property directories for applications
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationId
 key: id of application
 

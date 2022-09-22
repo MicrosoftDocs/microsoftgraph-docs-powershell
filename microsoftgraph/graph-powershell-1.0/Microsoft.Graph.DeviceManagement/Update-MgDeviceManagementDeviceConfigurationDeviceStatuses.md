@@ -49,6 +49,8 @@ Update the navigation property deviceStatuses in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

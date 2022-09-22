@@ -22,6 +22,8 @@ Read the Microsoft Purview Information Protection policy settings for the user o
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

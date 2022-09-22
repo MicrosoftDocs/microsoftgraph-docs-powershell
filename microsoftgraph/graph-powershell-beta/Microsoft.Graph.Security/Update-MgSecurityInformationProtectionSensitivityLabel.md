@@ -47,6 +47,8 @@ Update the navigation property sensitivityLabels in security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

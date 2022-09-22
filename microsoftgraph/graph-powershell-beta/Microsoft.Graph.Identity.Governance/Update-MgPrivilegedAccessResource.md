@@ -53,6 +53,8 @@ Update the navigation property resources in privilegedAccess
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

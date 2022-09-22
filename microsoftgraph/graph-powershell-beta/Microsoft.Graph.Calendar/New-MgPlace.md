@@ -29,6 +29,8 @@ Add new entity to places
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

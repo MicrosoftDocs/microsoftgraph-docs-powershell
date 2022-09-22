@@ -30,6 +30,8 @@ Update the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

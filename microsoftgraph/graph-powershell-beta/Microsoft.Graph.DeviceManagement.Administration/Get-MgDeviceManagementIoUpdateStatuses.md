@@ -36,6 +36,8 @@ The IOS software update installation statuses for this account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

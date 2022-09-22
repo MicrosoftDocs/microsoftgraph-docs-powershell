@@ -29,6 +29,8 @@ Delete navigation property assignmentFilters for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceAndAppManagementAssignmentFilterId
 key: id of deviceAndAppManagementAssignmentFilter
 

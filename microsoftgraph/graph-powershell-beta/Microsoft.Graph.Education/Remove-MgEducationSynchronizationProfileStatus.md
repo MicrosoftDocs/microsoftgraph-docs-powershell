@@ -29,6 +29,8 @@ Delete navigation property profileStatus for education
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EducationSynchronizationProfileId
 key: id of educationSynchronizationProfile
 

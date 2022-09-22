@@ -36,6 +36,8 @@ The available group policy categories for this account.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

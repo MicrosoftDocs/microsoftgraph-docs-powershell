@@ -45,6 +45,8 @@ Create new navigation property to alerts for security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActivityGroupName
 Name or alias of the activity group (attacker) this alert is attributed to.
 

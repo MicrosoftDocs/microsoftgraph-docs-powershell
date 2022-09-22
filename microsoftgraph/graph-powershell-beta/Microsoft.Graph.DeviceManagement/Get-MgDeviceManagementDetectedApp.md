@@ -36,6 +36,8 @@ The list of detected apps associated with a device.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

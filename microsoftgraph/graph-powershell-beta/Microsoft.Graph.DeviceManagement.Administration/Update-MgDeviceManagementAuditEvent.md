@@ -48,6 +48,8 @@ Update the navigation property auditEvents in deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Activity
 Friendly name of the activity.
 

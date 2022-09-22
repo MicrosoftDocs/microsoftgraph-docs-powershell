@@ -21,6 +21,8 @@ Delete navigation property reports for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

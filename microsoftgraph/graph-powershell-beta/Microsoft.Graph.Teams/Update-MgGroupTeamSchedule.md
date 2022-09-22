@@ -67,6 +67,8 @@ Clients can also inspect the configuration of the schedule.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

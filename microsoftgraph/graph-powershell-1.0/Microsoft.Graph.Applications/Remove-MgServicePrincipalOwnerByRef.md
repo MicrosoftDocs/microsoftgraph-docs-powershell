@@ -29,6 +29,8 @@ Delete ref of navigation property owners for servicePrincipals
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectoryObjectId
 key: id of directoryObject
 

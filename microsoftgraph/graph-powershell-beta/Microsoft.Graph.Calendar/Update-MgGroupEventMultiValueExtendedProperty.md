@@ -45,6 +45,8 @@ Update the navigation property multiValueExtendedProperties in groups
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

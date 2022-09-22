@@ -43,6 +43,8 @@ Update the navigation property usageRights in users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

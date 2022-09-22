@@ -38,6 +38,8 @@ The metric values for the user experience analytics Manufacturer regression.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

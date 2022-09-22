@@ -32,6 +32,8 @@ Invoke action getConfigurationPolicyNonComplianceSummaryReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

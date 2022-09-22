@@ -30,6 +30,8 @@ Invoke action approveApps
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

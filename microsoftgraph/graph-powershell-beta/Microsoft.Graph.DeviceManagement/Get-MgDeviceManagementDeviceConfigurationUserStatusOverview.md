@@ -29,6 +29,8 @@ Device Configuration users status overview
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DeviceConfigurationId
 key: id of deviceConfiguration
 

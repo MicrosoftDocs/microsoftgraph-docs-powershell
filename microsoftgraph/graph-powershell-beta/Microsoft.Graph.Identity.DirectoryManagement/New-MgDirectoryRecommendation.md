@@ -34,6 +34,8 @@ Create new navigation property to recommendations for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActionSteps
 .
 To construct, please use Get-Help -Online and see NOTES section for ACTIONSTEPS properties and create a hash table.

@@ -41,6 +41,8 @@ Create new navigation property to endpoints for print
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

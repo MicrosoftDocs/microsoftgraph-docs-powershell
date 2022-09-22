@@ -29,6 +29,8 @@ Retrieve the schema for a given synchronization job or template.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ApplicationId
 key: id of application
 

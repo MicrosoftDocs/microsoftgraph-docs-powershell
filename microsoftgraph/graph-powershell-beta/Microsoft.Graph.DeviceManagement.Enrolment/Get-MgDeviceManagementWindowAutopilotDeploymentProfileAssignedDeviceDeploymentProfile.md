@@ -31,6 +31,8 @@ Deployment profile currently assigned to the Windows autopilot device.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

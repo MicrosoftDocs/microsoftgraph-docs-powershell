@@ -49,6 +49,8 @@ Update the navigation property userExperienceAnalyticsBatteryHealthAppImpact in 
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ActiveDevices
 Number of active devices for using that app over a 14-day period.
 Valid values -2147483648 to 2147483647

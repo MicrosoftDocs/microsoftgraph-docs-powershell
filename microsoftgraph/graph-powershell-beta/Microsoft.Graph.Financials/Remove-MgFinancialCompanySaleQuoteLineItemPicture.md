@@ -42,6 +42,8 @@ Delete navigation property picture for financials
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -CompanyId
 key: id of company
 

@@ -32,6 +32,8 @@ Invoke action getQuietTimePolicyUsersReport
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

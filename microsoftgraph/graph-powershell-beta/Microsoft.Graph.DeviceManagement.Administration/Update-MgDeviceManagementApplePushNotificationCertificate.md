@@ -33,6 +33,8 @@ Update the navigation property applePushNotificationCertificate in deviceManagem
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

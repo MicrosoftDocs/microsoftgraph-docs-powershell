@@ -36,6 +36,8 @@ Get directoryProvisioning from auditLogs
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

@@ -29,6 +29,8 @@ Delete navigation property extensions for administrativeUnits
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdministrativeUnitId
 key: id of administrativeUnit
 

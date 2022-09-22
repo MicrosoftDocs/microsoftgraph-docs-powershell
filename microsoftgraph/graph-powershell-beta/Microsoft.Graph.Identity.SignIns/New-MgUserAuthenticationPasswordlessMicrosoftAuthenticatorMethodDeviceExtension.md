@@ -44,6 +44,8 @@ Create new navigation property to extensions for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

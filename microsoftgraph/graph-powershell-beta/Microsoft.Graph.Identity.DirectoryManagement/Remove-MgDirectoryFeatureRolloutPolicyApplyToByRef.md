@@ -29,6 +29,8 @@ Delete ref of navigation property appliesTo for directory
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -DirectoryObjectId
 key: id of directoryObject
 

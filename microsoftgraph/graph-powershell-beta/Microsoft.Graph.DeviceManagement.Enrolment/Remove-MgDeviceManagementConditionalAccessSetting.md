@@ -22,6 +22,8 @@ Delete navigation property conditionalAccessSettings for deviceManagement
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

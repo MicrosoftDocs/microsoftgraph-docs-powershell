@@ -29,6 +29,8 @@ Get extractedTextContent for the navigation property files from security
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -EdiscoveryCaseId
 key: id of ediscoveryCase
 

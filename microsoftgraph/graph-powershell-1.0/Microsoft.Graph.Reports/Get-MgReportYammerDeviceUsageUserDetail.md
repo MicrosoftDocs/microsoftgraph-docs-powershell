@@ -39,6 +39,8 @@ Invoke function getYammerDeviceUsageUserDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

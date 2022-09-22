@@ -29,6 +29,8 @@ Get informationProtection from users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -ExpandProperty
 Expand related entities
 

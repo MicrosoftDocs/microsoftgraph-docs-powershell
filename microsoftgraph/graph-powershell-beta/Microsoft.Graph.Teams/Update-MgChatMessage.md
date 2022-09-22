@@ -59,6 +59,8 @@ Update the navigation property messages in chats
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

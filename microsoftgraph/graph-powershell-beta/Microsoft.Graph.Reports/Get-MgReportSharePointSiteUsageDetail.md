@@ -39,6 +39,8 @@ Invoke function getSharePointSiteUsageDetail
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -Date
 Usage: date={date}
 

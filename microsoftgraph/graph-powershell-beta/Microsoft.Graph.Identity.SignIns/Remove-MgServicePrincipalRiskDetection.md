@@ -29,6 +29,8 @@ Delete navigation property servicePrincipalRiskDetections for identityProtection
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -IfMatch
 ETag
 

@@ -23,6 +23,8 @@ Retrieve a list of classes owned by a school.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 

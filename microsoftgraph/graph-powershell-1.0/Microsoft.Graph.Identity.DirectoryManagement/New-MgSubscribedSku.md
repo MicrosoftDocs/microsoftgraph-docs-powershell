@@ -30,6 +30,8 @@ Add new entity to subscribedSkus
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

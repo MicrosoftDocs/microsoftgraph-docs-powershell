@@ -42,6 +42,8 @@ Update the navigation property fields in sites
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

@@ -43,6 +43,8 @@ Create new navigation property to operations for users
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -AdditionalProperties
 Additional Parameters
 

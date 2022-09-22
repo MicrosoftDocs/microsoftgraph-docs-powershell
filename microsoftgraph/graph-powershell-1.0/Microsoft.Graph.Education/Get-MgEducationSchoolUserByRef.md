@@ -23,6 +23,8 @@ Get the educationUser resources associated with an educationSchool.
 
 ## EXAMPLES
 
+## PARAMETERS
+
 ### -All
 List all pages.
 
