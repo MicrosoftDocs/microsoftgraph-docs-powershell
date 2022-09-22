@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicydevicestatesummary
@@ -21,6 +21,8 @@ Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-ExpandProperty 
 The device compliance state summary for this account.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
