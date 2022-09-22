@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementscript
@@ -366,14 +366,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptAssignment[]>: The list of group assignments for the device management script.
+ASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptAssignment\[]>: The list of group assignments for the device management script.
   - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementScript>: Intune will provide customer the ability to run their Powershell scripts on the enrolled windows 10 Azure Active Directory joined devices. The script can be run once or periodically.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementScript>`: Intune will provide customer the ability to run their Powershell scripts on the enrolled windows 10 Azure Active Directory joined devices. The script can be run once or periodically.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]`: The list of group assignments for the device management script.
@@ -1242,7 +1242,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementScript>: Intune will provide custo
             - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: 
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
           - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -1524,7 +1524,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementScript>: Intune will provide custo
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4933,7 +4933,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementScript>: Intune will provide custo
     - `[SuccessDeviceCount <Int32?>]`: Success device count for specific user.
     - `[UserPrincipalName <String>]`: User principle name of specific user.
 
-DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState[]>: List of run states for this script across all devices.
+DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState\[]>: List of run states for this script across all devices.
   - `[Id <String>]`: 
   - `[ErrorCode <Int32?>]`: Error code corresponding to erroneous execution of the device management script.
   - `[ErrorDescription <String>]`: Error description corresponding to erroneous execution of the device management script.
@@ -5792,7 +5792,7 @@ DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState[]>: List of ru
           - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: 
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -6074,7 +6074,7 @@ DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState[]>: List of ru
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9463,11 +9463,11 @@ DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState[]>: List of ru
   - `[ResultMessage <String>]`: Details of execution output.
   - `[RunState <RunState?>]`: Indicates the type of execution status of the device management script.
 
-GROUPASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>: The list of group assignments for the device management script.
+GROUPASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptGroupAssignment\[]>: The list of group assignments for the device management script.
   - `[Id <String>]`: 
   - `[TargetGroupId <String>]`: The Id of the Azure Active Directory group we are targeting the script to.
 
-RUNSUMMARY <IMicrosoftGraphDeviceManagementScriptRunSummary>: Contains properties for the run summary of a device management script.
+RUNSUMMARY `<IMicrosoftGraphDeviceManagementScriptRunSummary>`: Contains properties for the run summary of a device management script.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ErrorDeviceCount <Int32?>]`: Error device count.
@@ -9475,7 +9475,7 @@ RUNSUMMARY <IMicrosoftGraphDeviceManagementScriptRunSummary>: Contains propertie
   - `[SuccessDeviceCount <Int32?>]`: Success device count.
   - `[SuccessUserCount <Int32?>]`: Success user count.
 
-USERRUNSTATES <IMicrosoftGraphDeviceManagementScriptUserState[]>: List of run states for this script across all users.
+USERRUNSTATES <IMicrosoftGraphDeviceManagementScriptUserState\[]>: List of run states for this script across all users.
   - `[Id <String>]`: 
   - `[DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>]`: List of run states for this script across all devices of specific user.
     - `[Id <String>]`: 
@@ -10336,7 +10336,7 @@ USERRUNSTATES <IMicrosoftGraphDeviceManagementScriptUserState[]>: List of run st
             - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: 
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
           - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: 
@@ -10618,7 +10618,7 @@ USERRUNSTATES <IMicrosoftGraphDeviceManagementScriptUserState[]>: List of run st
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
