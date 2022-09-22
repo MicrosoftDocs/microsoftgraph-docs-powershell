@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mgsiteonenotenotebooksection
@@ -22,6 +22,8 @@ Get-MgSiteOnenoteNotebookSection -NotebookId <String> -SiteId <String> [-ExpandP
 Retrieve a list of onenoteSection objects from the specified notebook.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
