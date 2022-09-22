@@ -49,26 +49,6 @@ Create new navigation property to resourceActions for roleManagement
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -ActionVerb
 HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
 Supports $filter (eq) but not for null values.
