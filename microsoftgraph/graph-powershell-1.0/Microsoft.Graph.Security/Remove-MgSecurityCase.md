@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritycase
@@ -20,6 +20,8 @@ Remove-MgSecurityCase [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<Com
 Delete navigation property cases for security
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -IfMatch
 ETag
