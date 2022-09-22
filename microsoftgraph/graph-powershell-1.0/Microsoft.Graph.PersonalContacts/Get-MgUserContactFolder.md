@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolder
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserContactFolder
 
 ## SYNOPSIS
-Get contactFolders from users
+The user's contacts folders.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -29,7 +31,9 @@ Get-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-Property <Str
 ```
 
 ## DESCRIPTION
-Get contactFolders from users
+The user's contacts folders.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -240,7 +244,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   - `[ContactFolderId <String>]`: key: id of contactFolder
   - `[ContactFolderId1 <String>]`: key: id of contactFolder
   - `[ContactId <String>]`: key: id of contact
