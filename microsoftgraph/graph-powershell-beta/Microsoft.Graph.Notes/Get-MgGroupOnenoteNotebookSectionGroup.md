@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksectiongroup
@@ -22,6 +22,8 @@ Get-MgGroupOnenoteNotebookSectionGroup -GroupId <String> -NotebookId <String> [-
 Retrieve a list of section groups from the specified notebook.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
