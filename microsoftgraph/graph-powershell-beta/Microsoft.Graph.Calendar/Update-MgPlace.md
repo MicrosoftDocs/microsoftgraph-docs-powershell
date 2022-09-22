@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgplace
@@ -315,7 +315,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESS <IMicrosoftGraphPhysicalAddress1>: physicalAddress
+ADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -325,7 +325,7 @@ ADDRESS <IMicrosoftGraphPhysicalAddress1>: physicalAddress
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-BODYPARAMETER <IMicrosoftGraphPlace>: place
+BODYPARAMETER `<IMicrosoftGraphPlace>`: place
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
@@ -347,7 +347,7 @@ BODYPARAMETER <IMicrosoftGraphPlace>: place
     - `[Longitude <Double?>]`: The longitude of the location.
   - `[Phone <String>]`: The phone number of the place.
 
-GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
+GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
   - `[Altitude <Double?>]`: The altitude of the location.
@@ -355,7 +355,7 @@ GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   - `[Latitude <Double?>]`: The latitude of the location.
   - `[Longitude <Double?>]`: The longitude of the location.
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
