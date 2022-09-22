@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mgusertodolisttaskattachment
@@ -42,6 +42,8 @@ New-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> -BodyParameter <I
 Create new navigation property to attachments for users
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
@@ -260,7 +262,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttachmentBase>`: attachmentBase
+BODYPARAMETER <IMicrosoftGraphAttachmentBase>: attachmentBase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[ContentType <String>]`: 
@@ -268,7 +270,7 @@ BODYPARAMETER `<IMicrosoftGraphAttachmentBase>`: attachmentBase
   - `[Name <String>]`: 
   - `[Size <Int32?>]`: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

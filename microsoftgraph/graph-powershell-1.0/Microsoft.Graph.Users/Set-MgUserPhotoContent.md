@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/set-mguserphotocontent
@@ -40,6 +40,8 @@ Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-BodyParameter <Stream>] -
 Update media content for the navigation property photo in users
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -BodyParameter
 .
@@ -184,7 +186,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusertodolisttaskattachmentsession
@@ -44,6 +44,8 @@ Update-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
 Update the navigation property attachmentSessions in users
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
@@ -277,14 +279,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttachmentSession>`: attachmentSession
+BODYPARAMETER <IMicrosoftGraphAttachmentSession>: attachmentSession
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Content <Byte[]>]`: 
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[NextExpectedRanges <String[]>]`: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession
