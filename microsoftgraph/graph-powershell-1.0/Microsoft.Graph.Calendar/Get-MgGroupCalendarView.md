@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview
@@ -26,6 +26,8 @@ Navigation property.
 Read-only.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
