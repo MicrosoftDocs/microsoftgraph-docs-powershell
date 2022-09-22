@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimecard
@@ -369,7 +369,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphTimeCard>: timeCard
+BODYPARAMETER `<IMicrosoftGraphTimeCard>`: timeCard
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -405,7 +405,7 @@ BODYPARAMETER <IMicrosoftGraphTimeCard>: timeCard
   - `[State <String>]`: timeCardState
   - `[UserId <String>]`: User ID to which  the timeCard belongs.
 
-BREAKS <IMicrosoftGraphTimeCardBreak[]>: The list of breaks associated with the timeCard.
+BREAKS <IMicrosoftGraphTimeCardBreak\[]>: The list of breaks associated with the timeCard.
   - `[BreakId <String>]`: ID of the timeCardBreak.
   - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -418,7 +418,7 @@ BREAKS <IMicrosoftGraphTimeCardBreak[]>: The list of breaks associated with the 
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
   - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
 
-CLOCKINEVENT <IMicrosoftGraphTimeCardEvent>: timeCardEvent
+CLOCKINEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
   - `[DateTime <DateTime?>]`: The time the entry is recorded.
@@ -427,7 +427,7 @@ CLOCKINEVENT <IMicrosoftGraphTimeCardEvent>: timeCardEvent
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
 
-CLOCKOUTEVENT <IMicrosoftGraphTimeCardEvent>: timeCardEvent
+CLOCKOUTEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
   - `[DateTime <DateTime?>]`: The time the entry is recorded.
@@ -436,7 +436,7 @@ CLOCKOUTEVENT <IMicrosoftGraphTimeCardEvent>: timeCardEvent
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -445,7 +445,7 @@ CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -484,7 +484,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -493,12 +493,12 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NOTES <IMicrosoftGraphItemBody>: itemBody
+NOTES `<IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-ORIGINALENTRY <IMicrosoftGraphTimeCardEntry>: timeCardEntry
+ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
     - `[BreakId <String>]`: ID of the timeCardBreak.
