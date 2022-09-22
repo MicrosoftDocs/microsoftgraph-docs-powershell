@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileconnectormemberofbyref
@@ -24,6 +24,8 @@ The connectorGroup that the connector is a member of.
 Read-only.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

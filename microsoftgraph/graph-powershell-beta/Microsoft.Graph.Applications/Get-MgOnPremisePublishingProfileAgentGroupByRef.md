@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileagentgroupbyref
@@ -35,6 +35,8 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

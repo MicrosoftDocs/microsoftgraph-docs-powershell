@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationownerbyref
@@ -27,6 +27,8 @@ Nullable.
 Supports $expand and $filter (eq and ne when counting empty collections).
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
