@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagerule
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserMailFolderMessageRule
 
 ## SYNOPSIS
-Get messageRules from users
+The collection of rules that apply to the user's Inbox folder.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-Property <String[
 ```
 
 ## DESCRIPTION
-Get messageRules from users
+The collection of rules that apply to the user's Inbox folder.
 
 ## EXAMPLES
 
@@ -257,7 +257,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ExtensionId <String>]`: key: id of extension
   - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride
