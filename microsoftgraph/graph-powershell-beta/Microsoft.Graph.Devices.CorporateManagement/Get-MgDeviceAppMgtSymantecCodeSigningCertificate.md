@@ -22,13 +22,6 @@ Get symantecCodeSigningCertificate from deviceAppManagement
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
