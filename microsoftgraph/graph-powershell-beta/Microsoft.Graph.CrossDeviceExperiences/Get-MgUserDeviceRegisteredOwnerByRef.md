@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdeviceregisteredownerbyref
@@ -32,6 +32,8 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
