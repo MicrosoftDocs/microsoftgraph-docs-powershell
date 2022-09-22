@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitelistitemactivity
@@ -22,6 +22,8 @@ Get-MgSiteListItemActivity -ListId <String> -ListItemId <String> -SiteId <String
 The list of recent activities that took place on this item.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
