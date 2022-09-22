@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgriskdetection
@@ -496,7 +496,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphRiskDetection1>: riskDetection
+BODYPARAMETER `<IMicrosoftGraphRiskDetection1>`: riskDetection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Activity <String>]`: 
@@ -528,7 +528,7 @@ BODYPARAMETER <IMicrosoftGraphRiskDetection1>: riskDetection
   - `[UserId <String>]`: Unique ID of the user.
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
@@ -604,7 +604,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-LOCATION <IMicrosoftGraphSignInLocation>: signInLocation
+LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
   - `[CountryOrRegion <String>]`: Provides the country code info (2 letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.
