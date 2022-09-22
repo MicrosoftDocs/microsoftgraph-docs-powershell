@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/set-mgfinancialcompanycustomerpaymentjournalcustomerpaymentcustomerpicturecontent
@@ -30,6 +30,8 @@ Set-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPictureConten
 Update content for the navigation property picture in financials
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -BodyParameter
 .
@@ -204,7 +206,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[AccountId <String>]`: key: id of account
   - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
   - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable

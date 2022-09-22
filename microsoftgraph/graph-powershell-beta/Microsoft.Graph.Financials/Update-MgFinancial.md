@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancial
@@ -28,6 +28,8 @@ Update-MgFinancial -BodyParameter <IMicrosoftGraphFinancials> [-PassThru] [-What
 Update financials
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
@@ -140,7 +142,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
+BODYPARAMETER <IMicrosoftGraphFinancials>: financials
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Companies <IMicrosoftGraphCompany[]>]`: 
     - `[Id <String>]`: 
@@ -736,7 +738,7 @@ BODYPARAMETER `<IMicrosoftGraphFinancials>`: financials
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Vendors <IMicrosoftGraphVendor[]>]`: 
 
-COMPANIES <IMicrosoftGraphCompany\[]>: .
+COMPANIES <IMicrosoftGraphCompany[]>: .
   - `[Id <String>]`: 
   - `[Accounts <IMicrosoftGraphAccount[]>]`: 
     - `[Id <String>]`: 

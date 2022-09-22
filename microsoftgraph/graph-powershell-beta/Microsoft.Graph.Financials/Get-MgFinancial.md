@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/get-mgfinancial
@@ -20,6 +20,8 @@ Get-MgFinancial [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonPara
 Get financials
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
