@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgonpremisepublishingprofileconnectorgroup
@@ -293,7 +293,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLICATIONS <IMicrosoftGraphApplication[]>: .
+APPLICATIONS <IMicrosoftGraphApplication\[]>: .
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
   - `[Api <IMicrosoftGraphApiApplication1>]`: apiApplication
@@ -391,7 +391,7 @@ APPLICATIONS <IMicrosoftGraphApplication[]>: .
     - `[DisplayName <String>]`: Display name for this policy. Required.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[Id <String>]`: 
-  - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
+  - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
   - `[Info <IMicrosoftGraphInformationalUrl>]`: informationalUrl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[LogoUrl <String>]`: CDN URL to the application's logo, Read-only.
@@ -687,7 +687,7 @@ APPLICATIONS <IMicrosoftGraphApplication[]>: .
     - `[PackageSid <String>]`: The package security identifier that Microsoft has assigned the application. Optional. Read-only.
     - `[RedirectUris <String[]>]`: Specifies the URLs where user tokens are sent for sign-in or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. Only available for applications that support the PersonalMicrosoftAccount signInAudience.
 
-BODYPARAMETER <IMicrosoftGraphConnectorGroup>: connectorGroup
+BODYPARAMETER `<IMicrosoftGraphConnectorGroup>`: connectorGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Applications <IMicrosoftGraphApplication[]>]`: 
@@ -775,7 +775,7 @@ BODYPARAMETER <IMicrosoftGraphConnectorGroup>: connectorGroup
       - `[DisplayName <String>]`: Display name for this policy. Required.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
       - `[Id <String>]`: 
-    - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
+    - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
     - `[Info <IMicrosoftGraphInformationalUrl>]`: informationalUrl
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[LogoUrl <String>]`: CDN URL to the application's logo, Read-only.
@@ -1081,7 +1081,7 @@ BODYPARAMETER <IMicrosoftGraphConnectorGroup>: connectorGroup
   - `[Name <String>]`: The name associated with the connectorGroup.
   - `[Region <String>]`: connectorGroupRegion
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
@@ -1111,7 +1111,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
   - `[UserId <String>]`: key: id of user
 
-MEMBERS <IMicrosoftGraphConnector[]>: .
+MEMBERS <IMicrosoftGraphConnector\[]>: .
   - `[Id <String>]`: 
   - `[ExternalIP <String>]`: The external IP address as detected by the the connector server. Read-only.
   - `[MachineName <String>]`: The machine name the connector is installed and running on.
@@ -1202,7 +1202,7 @@ MEMBERS <IMicrosoftGraphConnector[]>: .
         - `[DisplayName <String>]`: Display name for this policy. Required.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
         - `[Id <String>]`: 
-      - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
+      - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
       - `[Info <IMicrosoftGraphInformationalUrl>]`: informationalUrl
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[LogoUrl <String>]`: CDN URL to the application's logo, Read-only.
