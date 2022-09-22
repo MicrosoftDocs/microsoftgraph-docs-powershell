@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermessagemention
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserMessageMention
 
 ## SYNOPSIS
-Get mentions from users
+A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
+By default, a GET /messages does not return this property unless you apply $expand on the property.
 
 ## SYNTAX
 
@@ -32,9 +33,12 @@ Get-MgUserMessageMention -InputObject <IMailIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get mentions from users
+A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
+By default, a GET /messages does not return this property unless you apply $expand on the property.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
@@ -251,7 +255,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ExtensionId <String>]`: key: id of extension
   - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride
