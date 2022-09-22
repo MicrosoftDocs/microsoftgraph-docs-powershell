@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofileeducationalactivity
@@ -421,7 +421,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEducationalActivity>: educationalActivity
+BODYPARAMETER `<IMicrosoftGraphEducationalActivity>`: educationalActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -473,7 +473,7 @@ BODYPARAMETER <IMicrosoftGraphEducationalActivity>: educationalActivity
     - `[WebUrl <String>]`: Link to the degree or program page.
   - `[StartMonthYear <DateTime?>]`: The month and year the user commenced the activity referenced.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -482,12 +482,12 @@ CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
+INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
   - `[EducationalActivityId <String>]`: key: id of educationalActivity
   - `[ItemAddressId <String>]`: key: id of itemAddress
@@ -514,7 +514,7 @@ INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[WebAccountId <String>]`: key: id of webAccount
   - `[WorkPositionId <String>]`: key: id of workPosition
 
-INSTITUTION <IMicrosoftGraphInstitutionData>: institutionData
+INSTITUTION `<IMicrosoftGraphInstitutionData>`: institutionData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Short description of the institution the user studied at.
   - `[DisplayName <String>]`: Name of the institution the user studied at.
@@ -529,7 +529,7 @@ INSTITUTION <IMicrosoftGraphInstitutionData>: institutionData
     - `[Type <String>]`: physicalAddressType
   - `[WebUrl <String>]`: Link to the institution or department homepage.
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -538,7 +538,7 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PROGRAM <IMicrosoftGraphEducationalActivityDetail>: educationalActivityDetail
+PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Abbreviation <String>]`: Shortened name of the degree or program (example: PhD, MBA)
   - `[Activities <String[]>]`: Extracurricular activities undertaken alongside the program.
@@ -550,7 +550,7 @@ PROGRAM <IMicrosoftGraphEducationalActivityDetail>: educationalActivityDetail
   - `[Notes <String>]`: Additional notes the user has provided.
   - `[WebUrl <String>]`: Link to the degree or program page.
 
-SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
+SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 
