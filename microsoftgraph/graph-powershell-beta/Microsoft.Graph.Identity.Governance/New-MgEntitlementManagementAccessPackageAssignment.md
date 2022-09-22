@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignment
@@ -201,7 +201,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ANSWERS <IMicrosoftGraphAccessPackageAnswer[]>: Answers provided by the requestor to accessPackageQuestions asked of them at the time of request. To construct, see NOTES section for ANSWERS properties and create a hash table.
+ANSWERS <IMicrosoftGraphAccessPackageAnswer\[]>: Answers provided by the requestor to accessPackageQuestions asked of them at the time of request. To construct, see NOTES section for ANSWERS properties and create a hash table.
   - `[AnsweredQuestion <IMicrosoftGraphAccessPackageQuestion>]`: accessPackageQuestion
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: ID of the question.
@@ -216,7 +216,7 @@ ANSWERS <IMicrosoftGraphAccessPackageAnswer[]>: Answers provided by the requesto
         - `[Text <String>]`: The text in the specific language. Required.
   - `[DisplayValue <String>]`: The display value of the answer. Required.
 
-EXISTINGASSIGNMENT <MicrosoftGraphAccessPackageAssignment[]>: 
+EXISTINGASSIGNMENT <MicrosoftGraphAccessPackageAssignment\[]>: 
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
