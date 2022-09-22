@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgreplyallusermailfoldermessage
@@ -244,7 +244,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[Message <IMicrosoftGraphMessage1>]`: message
@@ -313,7 +313,7 @@ BODYPARAMETER <IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageIdM
     - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
     - `[WebLink <String>]`: 
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -361,7 +361,7 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-MESSAGE <IMicrosoftGraphMessage1>: message
+MESSAGE `<IMicrosoftGraphMessage1>`: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
