@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityincident
@@ -345,7 +345,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALERTS <IMicrosoftGraphSecurityAlert[]>: The list of related alerts. Supports $expand.
+ALERTS <IMicrosoftGraphSecurityAlert\[]>: The list of related alerts. Supports $expand.
   - `[Id <String>]`: 
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
   - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
@@ -385,7 +385,7 @@ ALERTS <IMicrosoftGraphSecurityAlert[]>: The list of related alerts. Supports $e
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
   - `[Title <String>]`: Brief identifying string value describing the alert.
 
-BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
+BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Alerts <IMicrosoftGraphSecurityAlert[]>]`: The list of related alerts. Supports $expand.
@@ -441,7 +441,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
   - `[Tags <String[]>]`: Array of custom tags associated with an incident.
   - `[TenantId <String>]`: The Azure Active Directory tenant in which the alert was created.
 
-COMMENTS <IMicrosoftGraphSecurityAlertComment[]>: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
+COMMENTS <IMicrosoftGraphSecurityAlertComment\[]>: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
   - `[Comment <String>]`: The comment text.
   - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
