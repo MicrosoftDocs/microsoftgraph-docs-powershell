@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagement
@@ -29,6 +29,8 @@ Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-PassThr
 Update roleManagement
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
@@ -157,7 +159,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRoleManagement>`: roleManagement
+BODYPARAMETER <IMicrosoftGraphRoleManagement>: roleManagement
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Directory <IMicrosoftGraphRbacApplication1>]`: rbacApplication
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -347,7 +349,7 @@ BODYPARAMETER `<IMicrosoftGraphRoleManagement>`: roleManagement
     - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: Schedules for role eligibility operations.
   - `[EntitlementManagement <IMicrosoftGraphRbacApplication1>]`: rbacApplication
 
-DIRECTORY `<IMicrosoftGraphRbacApplication1>`: rbacApplication
+DIRECTORY <IMicrosoftGraphRbacApplication1>: rbacApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]`: Instances for active role assignments.
@@ -534,7 +536,7 @@ DIRECTORY `<IMicrosoftGraphRbacApplication1>`: rbacApplication
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: Schedules for role eligibility operations.
 
-ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication1>`: rbacApplication
+ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication1>: rbacApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]`: Instances for active role assignments.
