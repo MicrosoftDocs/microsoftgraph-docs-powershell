@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/add-mggroupsitecontenttypecopyfromcontenttypehub
@@ -48,6 +48,8 @@ The method allows users to pull content types directly from the content type hub
 For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
@@ -191,11 +193,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Pf20SeGroupsGroupIdSitesSiteIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Pf20SeGroupsGroupIdSitesSiteIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentTypeId <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

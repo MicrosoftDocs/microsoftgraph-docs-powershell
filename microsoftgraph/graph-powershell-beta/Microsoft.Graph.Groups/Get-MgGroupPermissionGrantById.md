@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrantbyid
@@ -44,6 +44,8 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
@@ -187,12 +189,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1DcqzubGroupsGroupIdPermissiongrantsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1DcqzubGroupsGroupIdPermissiongrantsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
   - `[Types <String[]>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

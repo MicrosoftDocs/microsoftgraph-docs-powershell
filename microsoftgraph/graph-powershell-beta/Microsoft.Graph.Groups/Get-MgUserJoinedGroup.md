@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mguserjoinedgroup
@@ -21,6 +21,8 @@ Get-MgUserJoinedGroup -UserId <String> [-Filter <String>] [-Property <String[]>]
 Get joinedGroups from users
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
