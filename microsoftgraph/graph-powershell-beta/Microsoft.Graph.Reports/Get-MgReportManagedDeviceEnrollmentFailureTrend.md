@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentfailuretrend
@@ -20,6 +20,8 @@ Get-MgReportManagedDeviceEnrollmentFailureTrend -OutFile <String> [-PassThru] [<
 Metadata for the enrollment failure trends report
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -OutFile
 Path to write output file to

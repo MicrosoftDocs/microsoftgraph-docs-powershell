@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportauthenticationmethod
@@ -20,6 +20,8 @@ Get-MgReportAuthenticationMethod [-ExpandProperty <String[]>] [-Property <String
 Container for navigation properties for Azure AD authentication methods resources.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

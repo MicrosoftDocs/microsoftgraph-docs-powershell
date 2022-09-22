@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail
@@ -20,6 +20,8 @@ Get-MgReportOffice365ActivationUserDetail -OutFile <String> [-PassThru] [<Common
 Invoke function getOffice365ActivationsUserDetail
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -OutFile
 Path to write output file to
