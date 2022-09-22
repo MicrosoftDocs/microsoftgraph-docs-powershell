@@ -49,26 +49,6 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-## PARAMETERS
-
 ### -ActivityType
 .
 
