@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgrolemanagemententitlementmanagement
@@ -21,6 +21,8 @@ Remove-MgRoleManagementEntitlementManagement [-IfMatch <String>] [-PassThru] [-W
 Delete navigation property entitlementManagement for roleManagement
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

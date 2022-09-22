@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagement
@@ -20,6 +20,8 @@ Get-MgRoleManagement [-ExpandProperty <String[]>] [-Property <String[]>] [<Commo
 Get roleManagement
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

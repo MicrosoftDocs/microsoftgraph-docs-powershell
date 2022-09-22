@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgdevicemanagementconditionalaccesssetting
@@ -21,6 +21,8 @@ Remove-MgDeviceManagementConditionalAccessSetting [-IfMatch <String>] [-PassThru
 Delete navigation property conditionalAccessSettings for deviceManagement
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

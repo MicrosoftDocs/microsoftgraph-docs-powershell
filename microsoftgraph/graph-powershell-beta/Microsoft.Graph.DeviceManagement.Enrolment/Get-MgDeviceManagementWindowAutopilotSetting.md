@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementwindowautopilotsetting
@@ -21,6 +21,8 @@ Get-MgDeviceManagementWindowAutopilotSetting [-ExpandProperty <String[]>] [-Prop
 The Windows autopilot account settings.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
