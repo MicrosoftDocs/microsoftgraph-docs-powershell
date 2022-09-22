@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationcount
@@ -20,6 +20,8 @@ Get-MgReportOffice365ActivationCount -OutFile <String> [-PassThru] [<CommonParam
 Invoke function getOffice365ActivationCounts
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -OutFile
 Path to write output file to
