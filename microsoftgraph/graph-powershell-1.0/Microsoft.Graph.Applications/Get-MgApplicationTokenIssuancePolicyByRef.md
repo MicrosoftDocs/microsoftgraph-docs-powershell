@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationtokenissuancepolicybyref
@@ -22,6 +22,8 @@ Get-MgApplicationTokenIssuancePolicyByRef -ApplicationId <String> [-Filter <Stri
 List the tokenIssuancePolicy objects that are assigned to an application.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

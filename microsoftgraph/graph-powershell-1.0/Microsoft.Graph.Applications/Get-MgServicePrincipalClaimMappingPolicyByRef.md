@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicybyref
@@ -22,6 +22,8 @@ Get-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [-Fil
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
