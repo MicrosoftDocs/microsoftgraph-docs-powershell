@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementintentdevicestate
@@ -296,7 +296,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementIntentDeviceState>: Entity that represents device state for an intent
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntentDeviceState>`: Entity that represents device state for an intent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeviceDisplayName <String>]`: Device name that is being reported
@@ -306,7 +306,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementIntentDeviceState>: Entity that re
   - `[UserName <String>]`: The user name that is being reported on a device
   - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
