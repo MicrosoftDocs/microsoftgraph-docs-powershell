@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendarevent
@@ -28,6 +28,8 @@ The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
