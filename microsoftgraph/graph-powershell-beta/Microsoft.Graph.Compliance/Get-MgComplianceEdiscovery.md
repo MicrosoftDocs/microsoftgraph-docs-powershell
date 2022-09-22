@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscovery
@@ -20,6 +20,8 @@ Get-MgComplianceEdiscovery [-ExpandProperty <String[]>] [-Property <String[]>] [
 Get ediscovery from compliance
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
