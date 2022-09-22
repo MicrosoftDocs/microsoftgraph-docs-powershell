@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket
@@ -22,6 +22,8 @@ Get-MgGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-ExpandP
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.

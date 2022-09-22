@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mggroupplannerplantask
@@ -22,6 +22,8 @@ Get-MgGroupPlannerPlanTask -GroupId <String> -PlannerPlanId <String> [-ExpandPro
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -All
 List all pages.
