@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationtemplateschema
@@ -253,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSynchronizationSchema>: synchronizationSchema
+BODYPARAMETER `<IMicrosoftGraphSynchronizationSchema>`: synchronizationSchema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.
@@ -330,7 +330,7 @@ BODYPARAMETER <IMicrosoftGraphSynchronizationSchema>: synchronizationSchema
     - `[TargetDirectoryName <String>]`: Name of the target directory. Must match one of the directory definitions in synchronizationSchema.
   - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
-DIRECTORIES <IMicrosoftGraphDirectoryDefinition[]>: Contains the collection of directories and all of their objects.
+DIRECTORIES <IMicrosoftGraphDirectoryDefinition\[]>: Contains the collection of directories and all of their objects.
   - `[Id <String>]`: 
   - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
   - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -361,7 +361,7 @@ DIRECTORIES <IMicrosoftGraphDirectoryDefinition[]>: Contains the collection of d
   - `[ReadOnly <Boolean?>]`: 
   - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
@@ -391,7 +391,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
   - `[UserId <String>]`: key: id of user
 
-SYNCHRONIZATIONRULES <IMicrosoftGraphSynchronizationRule[]>: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
+SYNCHRONIZATIONRULES <IMicrosoftGraphSynchronizationRule\[]>: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
   - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and should not be changed.
   - `[Id <String>]`: Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.
   - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.
