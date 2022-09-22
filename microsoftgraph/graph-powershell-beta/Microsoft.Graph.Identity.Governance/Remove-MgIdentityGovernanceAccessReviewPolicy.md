@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceaccessreviewpolicy
@@ -21,6 +21,8 @@ Remove-MgIdentityGovernanceAccessReviewPolicy [-IfMatch <String>] [-PassThru] [-
 Delete navigation property policy for identityGovernance
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -IfMatch
 ETag
