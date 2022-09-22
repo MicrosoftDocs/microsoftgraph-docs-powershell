@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mghasdevicemanagementzebrafotaconnectoractivedeployment
@@ -20,6 +20,8 @@ Invoke-MgHasDeviceManagementZebraFotaConnectorActiveDeployment [-WhatIf] [-Confi
 Invoke action hasActiveDeployments
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/enable-mgdevicemanagementunlicensedadminstrator
@@ -24,6 +24,8 @@ You are limited to 350 unlicensed direct members for each AAD security group in 
 Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -PassThru
 Returns true when the command succeeds

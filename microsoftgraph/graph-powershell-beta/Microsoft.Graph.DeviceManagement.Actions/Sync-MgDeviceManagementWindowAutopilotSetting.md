@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/sync-mgdevicemanagementwindowautopilotsetting
@@ -26,6 +26,8 @@ If a sync is already in progress, the action returns a 409 Conflict response cod
 If this sync action is called within 10 minutes of the previous sync, the action returns a 429 Too Many Requests response code.
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -PassThru
 Returns true when the command succeeds

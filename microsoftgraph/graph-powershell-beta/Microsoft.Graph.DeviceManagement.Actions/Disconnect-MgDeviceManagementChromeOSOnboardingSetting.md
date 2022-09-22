@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/disconnect-mgdevicemanagementchromeosonboardingsetting
@@ -20,6 +20,8 @@ Disconnect-MgDeviceManagementChromeOSOnboardingSetting [-WhatIf] [-Confirm] [<Co
 Invoke action disconnect
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.

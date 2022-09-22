@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/enable-mgdevicemanagementdevicehealthscriptglobalscript
@@ -20,6 +20,8 @@ Enable-MgDeviceManagementDeviceHealthScriptGlobalScript [-PassThru] [-WhatIf] [-
 Invoke action enableGlobalScripts
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -PassThru
 Returns true when the command succeeds

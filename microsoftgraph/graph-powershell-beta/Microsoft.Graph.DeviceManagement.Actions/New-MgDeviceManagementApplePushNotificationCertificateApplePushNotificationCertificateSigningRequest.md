@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest
@@ -21,6 +21,8 @@ New-MgDeviceManagementApplePushNotificationCertificateApplePushNotificationCerti
 Download Apple push notification certificate signing request
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.

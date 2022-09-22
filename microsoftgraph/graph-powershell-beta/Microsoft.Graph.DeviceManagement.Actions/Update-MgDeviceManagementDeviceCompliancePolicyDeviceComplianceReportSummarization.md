@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementdevicecompliancepolicydevicecompliancereportsummarization
@@ -21,6 +21,8 @@ Update-MgDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummarizati
 Invoke action refreshDeviceComplianceReportSummarization
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -PassThru
 Returns true when the command succeeds

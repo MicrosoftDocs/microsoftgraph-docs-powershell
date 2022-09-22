@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/disconnect-mgdevicemanagementzebrafotaconnector
@@ -20,6 +20,8 @@ Disconnect-MgDeviceManagementZebraFotaConnector [-WhatIf] [-Confirm] [<CommonPar
 Invoke action disconnect
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementtemplateoffice365deviceconfigurationpolicy
@@ -20,6 +20,8 @@ Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy [-WhatIf] [-
 Invoke action importOffice365DeviceConfigurationPolicies
 
 ## EXAMPLES
+
+## PARAMETERS
 
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
