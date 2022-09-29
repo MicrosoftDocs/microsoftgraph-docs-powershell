@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest
@@ -267,7 +267,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAppLogCollectionRequest>`: AppLogCollectionRequest Entity.
+BODYPARAMETER <IMicrosoftGraphAppLogCollectionRequest>: AppLogCollectionRequest Entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a terminal state
@@ -275,7 +275,7 @@ BODYPARAMETER `<IMicrosoftGraphAppLogCollectionRequest>`: AppLogCollectionReques
   - `[ErrorMessage <String>]`: Error message if any during the upload process
   - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema

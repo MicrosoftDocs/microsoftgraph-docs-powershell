@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcompliancepolicyscheduledactionforrule
@@ -208,7 +208,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule>`: Scheduled Action for Rule
+BODYPARAMETER <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule>: Scheduled Action for Rule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
@@ -219,7 +219,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule>
     - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to. This collection can contain a maximum of 100 elements.
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -346,7 +346,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SCHEDULEDACTIONCONFIGURATIONS <IMicrosoftGraphDeviceManagementComplianceActionItem\[]>: The list of scheduled action configurations for this compliance policy. This collection can contain a maximum of 100 elements.
+SCHEDULEDACTIONCONFIGURATIONS <IMicrosoftGraphDeviceManagementComplianceActionItem[]>: The list of scheduled action configurations for this compliance policy. This collection can contain a maximum of 100 elements.
   - `[Id <String>]`: 
   - `[ActionType <DeviceManagementComplianceActionType?>]`: Scheduled Action Type Enum
   - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
