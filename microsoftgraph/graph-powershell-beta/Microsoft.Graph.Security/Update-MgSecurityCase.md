@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritycase
@@ -158,7 +158,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSecurityCasesRoot>: casesRoot
+BODYPARAMETER `<IMicrosoftGraphSecurityCasesRoot>`: casesRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[EdiscoveryCases <IMicrosoftGraphSecurityEdiscoveryCase[]>]`: 
@@ -1081,7 +1081,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityCasesRoot>: casesRoot
                 - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
                 - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
                 - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4885,7 +4885,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityCasesRoot>: casesRoot
         - `[TopicCount <Int32?>]`: The total number of topics that the themes model will generate for a review set. To learn more, see Maximum number of themes.
     - `[Tags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]`: Returns a list of ediscoveryReviewTag objects associated to this case.
 
-EDISCOVERYCASES <IMicrosoftGraphSecurityEdiscoveryCase[]>: .
+EDISCOVERYCASES <IMicrosoftGraphSecurityEdiscoveryCase\[]>: .
   - `[CreatedDateTime <DateTime?>]`: 
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
@@ -5805,7 +5805,7 @@ EDISCOVERYCASES <IMicrosoftGraphSecurityEdiscoveryCase[]>: .
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
