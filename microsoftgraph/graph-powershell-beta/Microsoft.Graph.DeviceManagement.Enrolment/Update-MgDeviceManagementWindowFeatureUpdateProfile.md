@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementwindowfeatureupdateprofile
@@ -350,14 +350,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment\[]>: The list of group assignments of the profile.
+ASSIGNMENTS <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>: The list of group assignments of the profile.
   - `[Id <String>]`: 
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsFeatureUpdateProfile>`: Windows Feature Update Profile
+BODYPARAMETER <IMicrosoftGraphWindowsFeatureUpdateProfile>: Windows Feature Update Profile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>]`: The list of group assignments of the profile.
@@ -380,7 +380,7 @@ BODYPARAMETER `<IMicrosoftGraphWindowsFeatureUpdateProfile>`: Windows Feature Up
     - `[OfferIntervalInDays <Int32?>]`: The number of day(s) between each set of offers to be set, updated, and displayed for a feature update profile, for example: if OfferStartDateTimeInUTC is 2020-06-09T10:00:00Z, and OfferIntervalInDays is 1, then the next two sets of offers will be made consecutively on 2020-06-10T10:00:00Z (next day at the same specified time) and 2020-06-11T10:00:00Z (next next day at the same specified time) with 1 day in between each set of offers.
     - `[OfferStartDateTimeInUtc <DateTime?>]`: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
@@ -417,7 +417,7 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
-ROLLOUTSETTINGS `<IMicrosoftGraphWindowsUpdateRolloutSettings>`: A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
+ROLLOUTSETTINGS <IMicrosoftGraphWindowsUpdateRolloutSettings>: A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OfferEndDateTimeInUtc <DateTime?>]`: The feature update's ending  of release date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
   - `[OfferIntervalInDays <Int32?>]`: The number of day(s) between each set of offers to be set, updated, and displayed for a feature update profile, for example: if OfferStartDateTimeInUTC is 2020-06-09T10:00:00Z, and OfferIntervalInDays is 1, then the next two sets of offers will be made consecutively on 2020-06-10T10:00:00Z (next day at the same specified time) and 2020-06-11T10:00:00Z (next next day at the same specified time) with 1 day in between each set of offers.
