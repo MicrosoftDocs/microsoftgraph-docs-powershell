@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy
@@ -240,7 +240,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphAdminConsentRequestPolicy>: adminConsentRequestPolicy
+BODYPARAMETER `<IMicrosoftGraphAdminConsentRequestPolicy>`: adminConsentRequestPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[IsEnabled <Boolean?>]`: Specifies whether the admin consent request feature is enabled or disabled. Required.
@@ -253,7 +253,7 @@ BODYPARAMETER <IMicrosoftGraphAdminConsentRequestPolicy>: adminConsentRequestPol
     - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
   - `[Version <Int32?>]`: Specifies the version of this policy. When the policy is updated, this version is updated. Read-only.
 
-REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope[]>: The list of reviewers for the admin consent. Required.
+REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope\[]>: The list of reviewers for the admin consent. Required.
   - `[Query <String>]`: The query specifying who will be the reviewer.
   - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
