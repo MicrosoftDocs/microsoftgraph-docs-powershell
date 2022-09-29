@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmessage
@@ -569,7 +569,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTS <IMicrosoftGraphChatMessageAttachment1[]>: References to attached objects like files, tabs, meetings etc.
+ATTACHMENTS <IMicrosoftGraphChatMessageAttachment1\[]>: References to attached objects like files, tabs, meetings etc.
   - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
   - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
   - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -578,12 +578,12 @@ ATTACHMENTS <IMicrosoftGraphChatMessageAttachment1[]>: References to attached ob
   - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment. The property is specifically used to attribute a Teams message card to the specified app.
   - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
 
-BODY <IMicrosoftGraphItemBody>: itemBody
+BODY `<IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-BODYPARAMETER <IMicrosoftGraphChatMessage>: chatMessage
+BODYPARAMETER `<IMicrosoftGraphChatMessage>`: chatMessage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Attachments <IMicrosoftGraphChatMessageAttachment1[]>]`: References to attached objects like files, tabs, meetings etc.
@@ -625,7 +625,7 @@ BODYPARAMETER <IMicrosoftGraphChatMessage>: chatMessage
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -668,17 +668,17 @@ BODYPARAMETER <IMicrosoftGraphChatMessage>: chatMessage
   - `[Summary <String>]`: Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat.
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
-CHANNELIDENTITY <IMicrosoftGraphChannelIdentity>: channelIdentity
+CHANNELIDENTITY `<IMicrosoftGraphChannelIdentity>`: channelIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChannelId <String>]`: The identity of the channel in which the message was posted.
   - `[TeamId <String>]`: The identity of the team in which the message was posted.
 
-HOSTEDCONTENTS <IMicrosoftGraphChatMessageHostedContent[]>: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+HOSTEDCONTENTS <IMicrosoftGraphChatMessageHostedContent\[]>: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
   - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
   - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
   - `[Id <String>]`: 
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -717,8 +717,8 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-MENTIONS <IMicrosoftGraphChatMessageMention1[]>: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+MENTIONS <IMicrosoftGraphChatMessageMention1\[]>: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
+  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -738,7 +738,7 @@ MENTIONS <IMicrosoftGraphChatMessageMention1[]>: List of entities mentioned in t
       - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
 
-POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyViolation
+POLICYVIOLATION `<IMicrosoftGraphChatMessagePolicyViolation>`: chatMessagePolicyViolation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DlpAction <String>]`: chatMessagePolicyViolationDlpActionTypes
   - `[JustificationText <String>]`: Justification text provided by the sender of the message when overriding a policy violation.
@@ -750,7 +750,7 @@ POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyVi
   - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
   - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
 
-REACTIONS <IMicrosoftGraphChatMessageReaction[]>: Reactions for this chat message (for example, Like).
+REACTIONS <IMicrosoftGraphChatMessageReaction\[]>: Reactions for this chat message (for example, Like).
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
   - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
@@ -762,7 +762,7 @@ REACTIONS <IMicrosoftGraphChatMessageReaction[]>: Reactions for this chat messag
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
 
-REPLIES <IMicrosoftGraphChatMessage[]>: Replies for a specified message. Supports $expand for channel messages.
+REPLIES <IMicrosoftGraphChatMessage\[]>: Replies for a specified message. Supports $expand for channel messages.
   - `[Id <String>]`: 
   - `[Attachments <IMicrosoftGraphChatMessageAttachment1[]>]`: References to attached objects like files, tabs, meetings etc.
     - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
@@ -803,7 +803,7 @@ REPLIES <IMicrosoftGraphChatMessage[]>: Replies for a specified message. Support
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
