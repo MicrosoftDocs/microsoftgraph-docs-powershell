@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/update-mggroupconversation
@@ -688,6 +688,9 @@ THREADS <IMicrosoftGraphConversationThread\[]>: A collection of all the conversa
   - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 
