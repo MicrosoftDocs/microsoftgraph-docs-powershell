@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mggroupdriveitem
@@ -949,7 +949,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ANALYTICS <IMicrosoftGraphItemAnalytics>: itemAnalytics
+ANALYTICS `<IMicrosoftGraphItemAnalytics>`: itemAnalytics
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AllTime <IMicrosoftGraphItemActivityStat>]`: itemActivityStat
@@ -1373,7 +1373,7 @@ ANALYTICS <IMicrosoftGraphItemAnalytics>: itemAnalytics
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3485,7 +3485,7 @@ ANALYTICS <IMicrosoftGraphItemAnalytics>: itemAnalytics
   - `[ItemActivityStats <IMicrosoftGraphItemActivityStat[]>]`: 
   - `[LastSevenDays <IMicrosoftGraphItemActivityStat>]`: itemActivityStat
 
-AUDIO <IMicrosoftGraphAudio>: audio
+AUDIO `<IMicrosoftGraphAudio>`: audio
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Album <String>]`: The title of the album for this audio file.
   - `[AlbumArtist <String>]`: The artist named on the album for the audio file.
@@ -3504,7 +3504,7 @@ AUDIO <IMicrosoftGraphAudio>: audio
   - `[TrackCount <Int32?>]`: The total number of tracks on the original disc for this audio file.
   - `[Year <Int32?>]`: The year the audio file was recorded.
 
-BODYPARAMETER <IMicrosoftGraphDriveItem>: driveItem
+BODYPARAMETER `<IMicrosoftGraphDriveItem>`: driveItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3912,7 +3912,7 @@ BODYPARAMETER <IMicrosoftGraphDriveItem>: driveItem
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6040,14 +6040,14 @@ BODYPARAMETER <IMicrosoftGraphDriveItem>: driveItem
     - `[Tables <IMicrosoftGraphWorkbookTable[]>]`: Represents a collection of tables associated with the workbook. Read-only.
     - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
-BUNDLE <IMicrosoftGraphBundle>: bundle
+BUNDLE `<IMicrosoftGraphBundle>`: bundle
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Album <IMicrosoftGraphAlbum>]`: album
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CoverImageItemId <String>]`: Unique identifier of the [driveItem][] that is the cover of the album.
   - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
 
-CHILDREN <IMicrosoftGraphDriveItem[]>: Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
+CHILDREN <IMicrosoftGraphDriveItem\[]>: Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -6454,7 +6454,7 @@ CHILDREN <IMicrosoftGraphDriveItem[]>: Collection containing Item objects for th
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8582,7 +8582,7 @@ CHILDREN <IMicrosoftGraphDriveItem[]>: Collection containing Item objects for th
     - `[Tables <IMicrosoftGraphWorkbookTable[]>]`: Represents a collection of tables associated with the workbook. Read-only.
     - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8591,7 +8591,7 @@ CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CREATEDBYUSER <IMicrosoftGraphUser>: user
+CREATEDBYUSER `<IMicrosoftGraphUser>`: user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
@@ -8996,7 +8996,7 @@ CREATEDBYUSER <IMicrosoftGraphUser>: user
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11127,11 +11127,11 @@ CREATEDBYUSER <IMicrosoftGraphUser>: user
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property cannot contain accent characters. Only the following characters are allowed A - Z, a - z, 0 - 9, ' . - _ ! # ^ ~. For the complete list of allowed characters, see username policies. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Returned only on $select. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
 
-DELETED <IMicrosoftGraphDeleted>: deleted
+DELETED `<IMicrosoftGraphDeleted>`: deleted
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[State <String>]`: Represents the state of the deleted item.
 
-FILE <IMicrosoftGraphFile>: file
+FILE `<IMicrosoftGraphFile>`: file
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Hashes <IMicrosoftGraphHashes>]`: hashes
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11142,13 +11142,13 @@ FILE <IMicrosoftGraphFile>: file
   - `[MimeType <String>]`: The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only.
   - `[ProcessingMetadata <Boolean?>]`: 
 
-FILESYSTEMINFO <IMicrosoftGraphFileSystemInfo>: fileSystemInfo
+FILESYSTEMINFO `<IMicrosoftGraphFileSystemInfo>`: fileSystemInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: The UTC date and time the file was created on a client.
   - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed. Available for the recent file list only.
   - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
 
-FOLDER <IMicrosoftGraphFolder>: folder
+FOLDER `<IMicrosoftGraphFolder>`: folder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
   - `[View <IMicrosoftGraphFolderView>]`: folderView
@@ -11157,12 +11157,12 @@ FOLDER <IMicrosoftGraphFolder>: folder
     - `[SortOrder <String>]`: If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending.
     - `[ViewType <String>]`: The type of view that should be used to represent the folder.
 
-IMAGE <IMicrosoftGraphImage>: image
+IMAGE `<IMicrosoftGraphImage>`: image
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Height <Int32?>]`: Optional. Height of the image, in pixels. Read-only.
   - `[Width <Int32?>]`: Optional. Width of the image, in pixels. Read-only.
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
@@ -11187,7 +11187,7 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11196,7 +11196,7 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: user
+LASTMODIFIEDBYUSER `<IMicrosoftGraphUser>`: user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
@@ -11601,7 +11601,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: user
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13732,7 +13732,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: user
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property cannot contain accent characters. Only the following characters are allowed A - Z, a - z, 0 - 9, ' . - _ ! # ^ ~. For the complete list of allowed characters, see username policies. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Returned only on $select. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
 
-LISTITEM <IMicrosoftGraphListItem>: listItem
+LISTITEM `<IMicrosoftGraphListItem>`: listItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14140,7 +14140,7 @@ LISTITEM <IMicrosoftGraphListItem>: listItem
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16268,21 +16268,21 @@ LISTITEM <IMicrosoftGraphListItem>: listItem
     - `[Id <String>]`: 
     - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
 
-LOCATION <IMicrosoftGraphGeoCoordinates>: geoCoordinates
+LOCATION `<IMicrosoftGraphGeoCoordinates>`: geoCoordinates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
   - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
   - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
 
-MALWARE <IMicrosoftGraphMalware>: malware
+MALWARE `<IMicrosoftGraphMalware>`: malware
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Contains the virus details for the malware facet.
 
-PACKAGE <IMicrosoftGraphPackage>: package
+PACKAGE `<IMicrosoftGraphPackage>`: package
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: A string indicating the type of package. While oneNote is the only currently defined value, you should expect other package types to be returned and handle them accordingly.
 
-PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
+PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
   - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
@@ -16301,13 +16301,13 @@ PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
-PENDINGOPERATIONS <IMicrosoftGraphPendingOperations>: pendingOperations
+PENDINGOPERATIONS `<IMicrosoftGraphPendingOperations>`: pendingOperations
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[PendingContentUpdate <IMicrosoftGraphPendingContentUpdate>]`: pendingContentUpdate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[QueuedDateTime <DateTime?>]`: Date and time the pending binary operation was queued in UTC time. Read-only.
 
-PERMISSIONS <IMicrosoftGraphPermission[]>: The set of permissions for the item. Read-only. Nullable.
+PERMISSIONS <IMicrosoftGraphPermission\[]>: The set of permissions for the item. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
   - `[GrantedTo <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -16367,7 +16367,7 @@ PERMISSIONS <IMicrosoftGraphPermission[]>: The set of permissions for the item. 
   - `[Roles <String[]>]`: The type of permission, for example, read. See below for the full list of roles. Read-only.
   - `[ShareId <String>]`: A unique token that can be used to access this shared item via the **shares** API. Read-only.
 
-PHOTO <IMicrosoftGraphPhoto>: photo
+PHOTO `<IMicrosoftGraphPhoto>`: photo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CameraMake <String>]`: Camera manufacturer. Read-only.
   - `[CameraModel <String>]`: Camera model. Read-only.
@@ -16379,12 +16379,12 @@ PHOTO <IMicrosoftGraphPhoto>: photo
   - `[Orientation <Int32?>]`: The orientation value from the camera. Writable on OneDrive Personal.
   - `[TakenDateTime <DateTime?>]`: Represents the date and time the photo was taken. Read-only.
 
-PUBLICATION <IMicrosoftGraphPublicationFacet>: publicationFacet
+PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
-REMOTEITEM <IMicrosoftGraphRemoteItem>: remoteItem
+REMOTEITEM `<IMicrosoftGraphRemoteItem>`: remoteItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16473,11 +16473,11 @@ REMOTEITEM <IMicrosoftGraphRemoteItem>: remoteItem
   - `[WebDavUrl <String>]`: DAV compatible URL for the item.
   - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
 
-SEARCHRESULT <IMicrosoftGraphSearchResult>: searchResult
+SEARCHRESULT `<IMicrosoftGraphSearchResult>`: searchResult
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OnClickTelemetryUrl <String>]`: A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.
 
-SHARED <IMicrosoftGraphShared>: shared
+SHARED `<IMicrosoftGraphShared>`: shared
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16491,7 +16491,7 @@ SHARED <IMicrosoftGraphShared>: shared
   - `[SharedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[SharedDateTime <DateTime?>]`: The UTC date and time when the item was shared. Read-only.
 
-SHAREPOINTIDS <IMicrosoftGraphSharepointIds>: sharepointIds
+SHAREPOINTIDS `<IMicrosoftGraphSharepointIds>`: sharepointIds
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
   - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
@@ -16501,11 +16501,11 @@ SHAREPOINTIDS <IMicrosoftGraphSharepointIds>: sharepointIds
   - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
   - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
 
-SPECIALFOLDER <IMicrosoftGraphSpecialFolder>: specialFolder
+SPECIALFOLDER `<IMicrosoftGraphSpecialFolder>`: specialFolder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Name <String>]`: The unique identifier for this item in the /drive/special collection
 
-SUBSCRIPTIONS <IMicrosoftGraphSubscription[]>: The set of subscriptions on the item. Only supported on the root of a drive.
+SUBSCRIPTIONS <IMicrosoftGraphSubscription\[]>: The set of subscriptions on the item. Only supported on the root of a drive.
   - `[Id <String>]`: 
   - `[ApplicationId <String>]`: Optional. Identifier of the application used to create the subscription. Read-only.
   - `[ChangeType <String>]`: Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note:  Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
@@ -16522,7 +16522,7 @@ SUBSCRIPTIONS <IMicrosoftGraphSubscription[]>: The set of subscriptions on the i
   - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
   - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
 
-THUMBNAILS <IMicrosoftGraphThumbnailSet[]>: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
+THUMBNAILS <IMicrosoftGraphThumbnailSet\[]>: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Large <IMicrosoftGraphThumbnail>]`: thumbnail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16535,7 +16535,7 @@ THUMBNAILS <IMicrosoftGraphThumbnailSet[]>: Collection containing [ThumbnailSet]
   - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
   - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
 
-VERSIONS <IMicrosoftGraphDriveItemVersion[]>: The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
+VERSIONS <IMicrosoftGraphDriveItemVersion\[]>: The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -16553,7 +16553,7 @@ VERSIONS <IMicrosoftGraphDriveItemVersion[]>: The list of previous versions of t
   - `[Content <Byte[]>]`: The content stream for this version of the item.
   - `[Size <Int64?>]`: Indicates the size of the content stream for this version of the item.
 
-VIDEO <IMicrosoftGraphVideo>: video
+VIDEO `<IMicrosoftGraphVideo>`: video
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AudioBitsPerSample <Int32?>]`: Number of audio bits per sample.
   - `[AudioChannels <Int32?>]`: Number of audio channels.
@@ -16566,7 +16566,7 @@ VIDEO <IMicrosoftGraphVideo>: video
   - `[Height <Int32?>]`: Height of the video, in pixels.
   - `[Width <Int32?>]`: Width of the video, in pixels.
 
-WORKBOOK <IMicrosoftGraphWorkbook>: workbook
+WORKBOOK `<IMicrosoftGraphWorkbook>`: workbook
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Application <IMicrosoftGraphWorkbookApplication>]`: workbookApplication
