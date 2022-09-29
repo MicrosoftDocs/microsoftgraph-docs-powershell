@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgprivilegedaccessrolesetting
@@ -359,15 +359,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADMINELIGIBLESETTINGS <IMicrosoftGraphGovernanceRuleSetting[]>: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
+ADMINELIGIBLESETTINGS <IMicrosoftGraphGovernanceRuleSetting\[]>: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
   - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
   - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 
-ADMINMEMBERSETTINGS <IMicrosoftGraphGovernanceRuleSetting[]>: The rule settings that are evaluated when an administrator tries to add a direct member role assignment.
+ADMINMEMBERSETTINGS <IMicrosoftGraphGovernanceRuleSetting\[]>: The rule settings that are evaluated when an administrator tries to add a direct member role assignment.
   - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
   - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 
-BODYPARAMETER <IMicrosoftGraphGovernanceRoleSetting>: governanceRoleSetting
+BODYPARAMETER `<IMicrosoftGraphGovernanceRoleSetting>`: governanceRoleSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AdminEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
@@ -451,7 +451,7 @@ BODYPARAMETER <IMicrosoftGraphGovernanceRoleSetting>: governanceRoleSetting
   - `[UserEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now.
   - `[UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to activate his role assignment.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -526,7 +526,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[WorkflowTemplateId <String>]`: key: id of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
-RESOURCE <IMicrosoftGraphGovernanceResource>: governanceResource
+RESOURCE `<IMicrosoftGraphGovernanceResource>`: governanceResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the resource.
@@ -610,7 +610,7 @@ RESOURCE <IMicrosoftGraphGovernanceResource>: governanceResource
   - `[Status <String>]`: The status of a given resource. For example, it could represent whether the resource is locked or not (values: Active/Locked). Note: This property may be extended in the future to support more scenarios.
   - `[Type <String>]`: Required. Resource type. For example, for Azure resources, the type could be 'Subscription', 'ResourceGroup', 'Microsoft.Sql/server', etc.
 
-ROLEDEFINITION <IMicrosoftGraphGovernanceRoleDefinition>: governanceRoleDefinition
+ROLEDEFINITION `<IMicrosoftGraphGovernanceRoleDefinition>`: governanceRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the role definition.
@@ -693,11 +693,11 @@ ROLEDEFINITION <IMicrosoftGraphGovernanceRoleDefinition>: governanceRoleDefiniti
   - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
   - `[TemplateId <String>]`: 
 
-USERELIGIBLESETTINGS <IMicrosoftGraphGovernanceRuleSetting[]>: The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now.
+USERELIGIBLESETTINGS <IMicrosoftGraphGovernanceRuleSetting\[]>: The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now.
   - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
   - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 
-USERMEMBERSETTINGS <IMicrosoftGraphGovernanceRuleSetting[]>: The rule settings that are evaluated when a user tries to activate his role assignment.
+USERMEMBERSETTINGS <IMicrosoftGraphGovernanceRuleSetting\[]>: The rule settings that are evaluated when a user tries to activate his role assignment.
   - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
   - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 
