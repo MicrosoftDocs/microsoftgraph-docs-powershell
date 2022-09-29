@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgprivilegedaccessresourceroleassignment
@@ -422,7 +422,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphGovernanceRoleAssignment>: governanceRoleAssignment
+BODYPARAMETER `<IMicrosoftGraphGovernanceRoleAssignment>`: governanceRoleAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
@@ -507,7 +507,7 @@ BODYPARAMETER <IMicrosoftGraphGovernanceRoleAssignment>: governanceRoleAssignmen
   - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
   - `[SubjectId <String>]`: Required. The ID of the subject which the role assignment is associated with.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -582,7 +582,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[WorkflowTemplateId <String>]`: key: id of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
-LINKEDELIGIBLEROLEASSIGNMENT <IMicrosoftGraphGovernanceRoleAssignment>: governanceRoleAssignment
+LINKEDELIGIBLEROLEASSIGNMENT `<IMicrosoftGraphGovernanceRoleAssignment>`: governanceRoleAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
@@ -667,7 +667,7 @@ LINKEDELIGIBLEROLEASSIGNMENT <IMicrosoftGraphGovernanceRoleAssignment>: governan
   - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
   - `[SubjectId <String>]`: Required. The ID of the subject which the role assignment is associated with.
 
-RESOURCE <IMicrosoftGraphGovernanceResource>: governanceResource
+RESOURCE `<IMicrosoftGraphGovernanceResource>`: governanceResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the resource.
@@ -751,7 +751,7 @@ RESOURCE <IMicrosoftGraphGovernanceResource>: governanceResource
   - `[Status <String>]`: The status of a given resource. For example, it could represent whether the resource is locked or not (values: Active/Locked). Note: This property may be extended in the future to support more scenarios.
   - `[Type <String>]`: Required. Resource type. For example, for Azure resources, the type could be 'Subscription', 'ResourceGroup', 'Microsoft.Sql/server', etc.
 
-ROLEDEFINITION <IMicrosoftGraphGovernanceRoleDefinition>: governanceRoleDefinition
+ROLEDEFINITION `<IMicrosoftGraphGovernanceRoleDefinition>`: governanceRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the role definition.
@@ -834,7 +834,7 @@ ROLEDEFINITION <IMicrosoftGraphGovernanceRoleDefinition>: governanceRoleDefiniti
   - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
   - `[TemplateId <String>]`: 
 
-SUBJECT <IMicrosoftGraphGovernanceSubject>: governanceSubject
+SUBJECT `<IMicrosoftGraphGovernanceSubject>`: governanceSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the subject.
