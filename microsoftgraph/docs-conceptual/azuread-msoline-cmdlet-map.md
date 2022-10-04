@@ -39,7 +39,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
         - [Extension properties](#extension-properties)
         - [Groups](#groups)
         - [Oauth2](#oauth2)
-        - [Policies]((#policies))
+        - [Policies](#policies)
         - [Service principals](#service-principals)
         - [Users](#users)
     :::column-end:::
