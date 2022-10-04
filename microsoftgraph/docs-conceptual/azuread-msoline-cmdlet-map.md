@@ -119,7 +119,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Add-AzureADMSApplicationOwner|[New-MgApplicationOwnerByRef](/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref?view=graph-powershell-1.0&preserve-view=true)|
 |Add-AzureADMSServicePrincipalDelegatedPermissionClassification|[New-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADApplicationProxyConnectorGroupMember||
-|Get-AzureADCurrentSessionInfo|Get-MgContext|
+|Get-AzureADCurrentSessionInfo|[Get-MgContext](authentication-commands.md#using-get-mgcontext)|
 |Get-AzureADMSApplication|[Get-MgApplication](/powershell/module/microsoft.graph.applications/get-mgapplication?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADMSApplicationExtensionProperty|[Get-MgApplicationExtensionProperty](/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADMSApplicationOwner|[Get-MgApplicationOwner](/powershell/module/microsoft.graph.applications/get-mgapplicationowner?view=graph-powershell-1.0&preserve-view=true)|
@@ -194,7 +194,6 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-AzureADContactDirectReport|[Get-MgContactDirectReport](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdirectreport?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADContactManager|[Get-MgContactManager](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADContactMembership|[Get-MgContactMemberOf](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmemberof?view=graph-powershell-1.0&preserve-view=true)|
-|Get-AzureADContactThumbnailPhoto||
 |Remove-AzureADContact|[Remove-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontact?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADContactManager|[Remove-MgContactManagerByRef](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontactmanagerbyref?view=graph-powershell-1.0&preserve-view=true)|
 |Select-AzureADGroupIdsContactIsMemberOf|[Get-MgContactMemberOf](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmemberof?view=graph-powershell-1.0&preserve-view=true)|
@@ -223,7 +222,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-AzureADDeviceRegisteredUser|[Get-MgDeviceRegisteredUser](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduser?view=graph-powershell-1.0&preserve-view=true)|
 |New-AzureADDevice|[New-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADDevice|[Remove-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdevice?view=graph-powershell-1.0&preserve-view=true)|
-|Remove-AzureADDeviceRegisteredOwner|[Remove-MgDeviceRegisteredOwnerByRef]/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregisteredownerbyref?view=graph-powershell-1.0&preserve-view=true)|
+|Remove-AzureADDeviceRegisteredOwner|[Remove-MgDeviceRegisteredOwnerByRef](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregisteredownerbyref?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADDeviceRegisteredUser||
 |Set-AzureADDevice|[Update-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice?view=graph-powershell-1.0&preserve-view=true)|
 
