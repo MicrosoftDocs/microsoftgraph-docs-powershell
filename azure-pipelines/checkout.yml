@@ -1,8 +1,3 @@
-parameters:
-  - name: TargetBranch
-    type: string
-    default: 'main'
-
 steps:  
 - checkout: msgraph-sdk-powershell
   clean: true
@@ -13,31 +8,4 @@ steps:
 - checkout: self
   clean: true
   fetchDepth: 1
-
-- task: PowerShell@2
-  displayName: "Configure user"
-  inputs:
-    targetType: "inline"
-    script: |
-      git config --global user.email "timwamalwa@gmail.com"
-      git config --global user.name "Timothy Wamalwa"
-
-- task: Bash@3
-  displayName: "Switch to target branch: ${{ parameters.TargetBranch }}"
-  condition: and(succeeded(), ne('${{ parameters.TargetBranch }}', ''))
-  inputs:
-    targetType: inline
-    script: |
-      git status
-      git fetch --all
-      git checkout ${{ parameters.TargetBranch }}
-      git pull
-      git status
-
-
-- task: securedevelopmentteam.vss-secure-development-tools.build-task-credscan.CredScan@2
-  displayName: "Run CredScan"
-  inputs:
-    debugMode: false
-  
   
