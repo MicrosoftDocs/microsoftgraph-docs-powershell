@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment
 
 ## SYNOPSIS
-Get assignments from deviceAppManagement
+Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Get assignments from deviceAppManagement
+Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
 ## EXAMPLES
 
@@ -251,7 +251,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTargetedManagedAppPolicyAssignment1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTargetedManagedAppPolicyAssignment
 ## NOTES
 Please use Get-Help -Online.
 
