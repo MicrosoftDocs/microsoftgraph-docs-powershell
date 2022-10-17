@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicewindowprotectionstate
@@ -182,7 +182,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -532,12 +533,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
+BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>: Device protection status entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AntiMalwareVersion <String>]`: Current anti malware version
   - `[DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]`: Device malware list
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
     - `[Category <WindowsMalwareCategory?>]`: Malware category id
     - `[DetectionCount <Int32?>]`: Number of times the malware is detected
@@ -568,8 +569,8 @@ BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection statu
   - `[SignatureVersion <String>]`: Current malware definitions version
   - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
-DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState\[]>: Device malware list
-  - `[Id <String>]`: 
+DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState[]>: Device malware list
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
   - `[Category <WindowsMalwareCategory?>]`: Malware category id
   - `[DetectionCount <Int32?>]`: Number of times the malware is detected
@@ -581,7 +582,7 @@ DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState\[]>: Device malwa
   - `[State <WindowsMalwareState?>]`: Malware current status
   - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails

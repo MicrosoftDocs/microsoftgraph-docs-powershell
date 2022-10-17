@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtAndroidManagedAppProtection
 
 ## SYNOPSIS
-Get androidManagedAppProtections from deviceAppManagement
+Android managed app policies.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtAndroidManagedAppProtection -InputObject <IDevicesCorporateMan
 ```
 
 ## DESCRIPTION
-Get androidManagedAppProtections from deviceAppManagement
+Android managed app policies.
 
 ## EXAMPLES
 
@@ -235,7 +235,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection1
 ## NOTES
 Please use Get-Help -Online.
 
