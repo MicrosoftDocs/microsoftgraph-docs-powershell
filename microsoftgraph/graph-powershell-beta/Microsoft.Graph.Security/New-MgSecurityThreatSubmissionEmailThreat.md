@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritythreatsubmissionemailthreat
@@ -195,7 +195,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -443,20 +444,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADMINREVIEW `<IMicrosoftGraphSecuritySubmissionAdminReview>`: submissionAdminReview
+ADMINREVIEW <IMicrosoftGraphSecuritySubmissionAdminReview>: submissionAdminReview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
   - `[ReviewDateTime <DateTime?>]`: Specifies the date time when the review occurred.
   - `[ReviewResult <String>]`: submissionResultCategory
 
-ATTACKSIMULATIONINFO `<IMicrosoftGraphSecurityAttackSimulationInfo>`: attackSimulationInfo
+ATTACKSIMULATIONINFO <IMicrosoftGraphSecurityAttackSimulationInfo>: attackSimulationInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttackSimDateTime <DateTime?>]`: Specifies the date time of the attack simulation.
-  - `[AttackSimDurationTime <TimeSpan?>]`: Specifies the duration (in time) for the attack simulation
-  - `[AttackSimId <String>]`: Specifies the activity id for the attack simulation.
-  - `[AttackSimUserId <String>]`: Specifies the user id of the user who got the attack simulation email
+  - `[AttackSimDateTime <DateTime?>]`: The date and time of the attack simulation.
+  - `[AttackSimDurationTime <TimeSpan?>]`: The duration (in time) for the attack simulation.
+  - `[AttackSimId <String>]`: The activity ID for the attack simulation.
+  - `[AttackSimUserId <String>]`: The unique identifier for the user who got the attack simulation email.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEmailThreatSubmission>`: emailThreatSubmission
+BODYPARAMETER <IMicrosoftGraphSecurityEmailThreatSubmission>: emailThreatSubmission
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -484,13 +485,13 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEmailThreatSubmission>`: emailThreatSubmi
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
   - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>]`: attackSimulationInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AttackSimDateTime <DateTime?>]`: Specifies the date time of the attack simulation.
-    - `[AttackSimDurationTime <TimeSpan?>]`: Specifies the duration (in time) for the attack simulation
-    - `[AttackSimId <String>]`: Specifies the activity id for the attack simulation.
-    - `[AttackSimUserId <String>]`: Specifies the user id of the user who got the attack simulation email
+    - `[AttackSimDateTime <DateTime?>]`: The date and time of the attack simulation.
+    - `[AttackSimDurationTime <TimeSpan?>]`: The duration (in time) for the attack simulation.
+    - `[AttackSimId <String>]`: The activity ID for the attack simulation.
+    - `[AttackSimUserId <String>]`: The unique identifier for the user who got the attack simulation email.
   - `[InternetMessageId <String>]`: Specifies the internet message id of the email being submitted. This information is present in the email header.
   - `[OriginalCategory <String>]`: submissionCategory
   - `[ReceivedDateTime <DateTime?>]`: Specifies the date and time stamp when the email was received.
@@ -510,13 +511,13 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEmailThreatSubmission>`: emailThreatSubmi
       - `[Status <String>]`: longRunningOperationStatus
       - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
 
-CREATEDBY `<IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
+CREATEDBY <IMicrosoftGraphSecuritySubmissionUserIdentity>: submissionUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
 
-RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
+RESULT <IMicrosoftGraphSecuritySubmissionResult>: submissionResult
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Category <String>]`: submissionResultCategory
   - `[Detail <String>]`: submissionResultDetail
@@ -526,7 +527,7 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
   - `[DetectedUrls <String[]>]`: Specifes the URLs detected by Microsoft in the submitted email.
   - `[UserMailboxSetting <String>]`: userMailboxSetting
 
-TENANTALLOWORBLOCKLISTACTION `<IMicrosoftGraphSecurityTenantAllowOrBlockListAction>`: tenantAllowOrBlockListAction
+TENANTALLOWORBLOCKLISTACTION <IMicrosoftGraphSecurityTenantAllowOrBlockListAction>: tenantAllowOrBlockListAction
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: tenantAllowBlockListAction
   - `[ExpirationDateTime <DateTime?>]`: Specifies when the tenant allow-block-list expires in date time.

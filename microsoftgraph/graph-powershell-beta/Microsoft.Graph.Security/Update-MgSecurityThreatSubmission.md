@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatsubmission
@@ -115,7 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -209,11 +210,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityThreatSubmissionRoot>`: threatSubmissionRoot
+BODYPARAMETER <IMicrosoftGraphSecurityThreatSubmissionRoot>: threatSubmissionRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EmailThreatSubmissionPolicies <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>]`: 
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[CustomizedNotificationSenderEmailAddress <String>]`: Specifies the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is null. Optional for creation.
     - `[CustomizedReportRecipientEmailAddress <String>]`: Specifies the destination where the reported messages from end users will land whenever they report something as phish, junk or not junk. The default value is null. Optional for creation.
     - `[IsAlwaysReportEnabledForUsers <Boolean?>]`: Indicates whether end users can report a message as spam, phish or junk directly without a confirmation(popup). The default value is true.  Optional for creation.
@@ -254,13 +255,13 @@ BODYPARAMETER `<IMicrosoftGraphSecurityThreatSubmissionRoot>`: threatSubmissionR
     - `[Source <String>]`: submissionSource
     - `[Status <String>]`: longRunningOperationStatus
     - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>]`: attackSimulationInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AttackSimDateTime <DateTime?>]`: Specifies the date time of the attack simulation.
-      - `[AttackSimDurationTime <TimeSpan?>]`: Specifies the duration (in time) for the attack simulation
-      - `[AttackSimId <String>]`: Specifies the activity id for the attack simulation.
-      - `[AttackSimUserId <String>]`: Specifies the user id of the user who got the attack simulation email
+      - `[AttackSimDateTime <DateTime?>]`: The date and time of the attack simulation.
+      - `[AttackSimDurationTime <TimeSpan?>]`: The duration (in time) for the attack simulation.
+      - `[AttackSimId <String>]`: The activity ID for the attack simulation.
+      - `[AttackSimUserId <String>]`: The unique identifier for the user who got the attack simulation email.
     - `[InternetMessageId <String>]`: Specifies the internet message id of the email being submitted. This information is present in the email header.
     - `[OriginalCategory <String>]`: submissionCategory
     - `[ReceivedDateTime <DateTime?>]`: Specifies the date and time stamp when the email was received.
@@ -290,7 +291,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityThreatSubmissionRoot>`: threatSubmissionR
     - `[Source <String>]`: submissionSource
     - `[Status <String>]`: longRunningOperationStatus
     - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[FileName <String>]`: It specifies the file name to be submitted.
   - `[UrlThreats <IMicrosoftGraphSecurityUrlThreatSubmission[]>]`: 
     - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
@@ -303,10 +304,10 @@ BODYPARAMETER `<IMicrosoftGraphSecurityThreatSubmissionRoot>`: threatSubmissionR
     - `[Source <String>]`: submissionSource
     - `[Status <String>]`: longRunningOperationStatus
     - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
-EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission\[]>: .
+EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission[]>: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
@@ -333,13 +334,13 @@ EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission\[]>: .
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
   - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>]`: attackSimulationInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AttackSimDateTime <DateTime?>]`: Specifies the date time of the attack simulation.
-    - `[AttackSimDurationTime <TimeSpan?>]`: Specifies the duration (in time) for the attack simulation
-    - `[AttackSimId <String>]`: Specifies the activity id for the attack simulation.
-    - `[AttackSimUserId <String>]`: Specifies the user id of the user who got the attack simulation email
+    - `[AttackSimDateTime <DateTime?>]`: The date and time of the attack simulation.
+    - `[AttackSimDurationTime <TimeSpan?>]`: The duration (in time) for the attack simulation.
+    - `[AttackSimId <String>]`: The activity ID for the attack simulation.
+    - `[AttackSimUserId <String>]`: The unique identifier for the user who got the attack simulation email.
   - `[InternetMessageId <String>]`: Specifies the internet message id of the email being submitted. This information is present in the email header.
   - `[OriginalCategory <String>]`: submissionCategory
   - `[ReceivedDateTime <DateTime?>]`: Specifies the date and time stamp when the email was received.
@@ -359,8 +360,8 @@ EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission\[]>: .
       - `[Status <String>]`: longRunningOperationStatus
       - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
 
-EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy\[]>: .
-  - `[Id <String>]`: 
+EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>: .
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CustomizedNotificationSenderEmailAddress <String>]`: Specifies the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is null. Optional for creation.
   - `[CustomizedReportRecipientEmailAddress <String>]`: Specifies the destination where the reported messages from end users will land whenever they report something as phish, junk or not junk. The default value is null. Optional for creation.
   - `[IsAlwaysReportEnabledForUsers <Boolean?>]`: Indicates whether end users can report a message as spam, phish or junk directly without a confirmation(popup). The default value is true.  Optional for creation.
@@ -375,7 +376,7 @@ EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolic
   - `[IsReportToMicrosoftEnabled <Boolean?>]`: If enabled, the email will be sent to Microsoft for analysis. The default value is false. Required for creation.
   - `[IsReviewEmailNotificationEnabled <Boolean?>]`: Indicates whether an email notification is sent to the end user who reported the email when it has been reviewed by the admin. The default value is false. Optional for creation.
 
-FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission\[]>: .
+FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission[]>: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
@@ -402,10 +403,10 @@ FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission\[]>: .
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
   - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[FileName <String>]`: It specifies the file name to be submitted.
 
-URLTHREATS <IMicrosoftGraphSecurityUrlThreatSubmission\[]>: .
+URLTHREATS <IMicrosoftGraphSecurityUrlThreatSubmission[]>: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
@@ -432,7 +433,7 @@ URLTHREATS <IMicrosoftGraphSecurityUrlThreatSubmission\[]>: .
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
   - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
 ## RELATED LINKS
