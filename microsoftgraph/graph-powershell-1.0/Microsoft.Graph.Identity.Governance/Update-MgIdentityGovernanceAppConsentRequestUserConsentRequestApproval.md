@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequestapproval
@@ -16,13 +16,13 @@ Update the navigation property approval in identityGovernance
 ```
 Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval -AppConsentRequestId <String>
  -UserConsentRequestId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Stages <IMicrosoftGraphApprovalStage1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Stages <IMicrosoftGraphApprovalStage[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval -AppConsentRequestId <String>
- -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphApproval1> [-PassThru] [-WhatIf] [-Confirm]
+ -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphApproval> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,13 +30,13 @@ Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval -AppConse
 ```
 Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Stages <IMicrosoftGraphApprovalStage1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Stages <IMicrosoftGraphApprovalStage[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphApproval1> [-PassThru] [-WhatIf]
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphApproval> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -82,7 +82,7 @@ approval
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApproval1
+Type: IMicrosoftGraphApproval
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -94,7 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -144,7 +145,7 @@ A collection of stages in the approval decision.
 To construct, please use Get-Help -Online and see NOTES section for STAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApprovalStage1[]
+Type: IMicrosoftGraphApprovalStage[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -207,7 +208,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApproval1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApproval
 ## OUTPUTS
 
 ### System.Boolean
@@ -220,11 +221,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphApproval>`: approval
+BODYPARAMETER <IMicrosoftGraphApproval>: approval
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Stages <IMicrosoftGraphApprovalStage[]>]`: A collection of stages in the approval decision.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AssignedToMe <Boolean?>]`: Indicates whether the stage is assigned to the calling user to review. Read-only.
     - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval stage. Read-only.
     - `[Justification <String>]`: The justification associated with the approval stage decision.
@@ -236,7 +237,7 @@ BODYPARAMETER `<IMicrosoftGraphApproval>`: approval
     - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[Status <String>]`: The stage status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -277,7 +278,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
   - `[CustomTaskExtensionId <String>]`: key: id of customTaskExtension
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
@@ -299,7 +300,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlTypeId <String>]`: key: id of programControlType
   - `[ProgramId <String>]`: key: id of program
   - `[RunId <String>]`: key: id of run
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: key: id of taskDefinition
   - `[TaskId <String>]`: key: id of task
   - `[TaskProcessingResultId <String>]`: key: id of taskProcessingResult
@@ -311,8 +312,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: key: id of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
-STAGES <IMicrosoftGraphApprovalStage\[]>: A collection of stages in the approval decision.
-  - `[Id <String>]`: 
+STAGES <IMicrosoftGraphApprovalStage[]>: A collection of stages in the approval decision.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignedToMe <Boolean?>]`: Indicates whether the stage is assigned to the calling user to review. Read-only.
   - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval stage. Read-only.
   - `[Justification <String>]`: The justification associated with the approval stage decision.
