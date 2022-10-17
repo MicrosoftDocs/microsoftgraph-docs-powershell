@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 0b6305b1-1dc2-424b-945e-e0a661309148
+Module Guid: 0294463d-935c-421b-9930-4307d03e9fb9
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -22,6 +22,12 @@ When the risk level of the service principal is confirmed as compromised, the se
 ### [Confirm-MgRiskyUserCompromised](Confirm-MgRiskyUserCompromised.md)
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
+
+### [Find-MgIdentityConditionalAccessAuthenticationStrengthPolicyByMethodMode](Find-MgIdentityConditionalAccessAuthenticationStrengthPolicyByMethodMode.md)
+Invoke function findByMethodMode
+
+### [Find-MgPolicyAuthenticationStrengthPolicyByMethodMode](Find-MgPolicyAuthenticationStrengthPolicyByMethodMode.md)
+Invoke function findByMethodMode
 
 ### [Get-MgDataPolicyOperation](Get-MgDataPolicyOperation.md)
 Retrieve the properties of the dataPolicyOperation object.
@@ -110,6 +116,18 @@ Read-only.
 Nullable.
 Returns a collection of the specified authentication context class references.
 
+### [Get-MgIdentityConditionalAccessAuthenticationStrength](Get-MgIdentityConditionalAccessAuthenticationStrength.md)
+Get authenticationStrengths from identity
+
+### [Get-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](Get-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode.md)
+Get authenticationMethodModes from identity
+
+### [Get-MgIdentityConditionalAccessAuthenticationStrengthPolicy](Get-MgIdentityConditionalAccessAuthenticationStrengthPolicy.md)
+Get policies from identity
+
+### [Get-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](Get-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration.md)
+Get combinationConfigurations from identity
+
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
 Read-only.
 Nullable.
@@ -119,6 +137,11 @@ Returns a collection of the specified named locations.
 Read-only.
 Nullable.
 Returns a collection of the specified Conditional Access policies.
+
+### [Get-MgIdentityConditionalAccessTemplate](Get-MgIdentityConditionalAccessTemplate.md)
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access templates.
 
 ### [Get-MgIdentityContinuouAccessEvaluationPolicy](Get-MgIdentityContinuouAccessEvaluationPolicy.md)
 Read the properties and relationships of a continuousAccessEvaluationPolicy object.
@@ -199,6 +222,12 @@ Read the properties and relationships of an authenticationMethodsPolicy object.
 ### [Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
 Represents the settings for each authentication method.
 Automatically expanded on GET /policies/authenticationMethodsPolicy.
+
+### [Get-MgPolicyAuthenticationStrengthPolicy](Get-MgPolicyAuthenticationStrengthPolicy.md)
+Get authenticationStrengthPolicies from policies
+
+### [Get-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](Get-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration.md)
+Get combinationConfigurations from policies
 
 ### [Get-MgPolicyAuthorizationPolicy](Get-MgPolicyAuthorizationPolicy.md)
 The policy that controls Azure AD authorization settings.
@@ -626,6 +655,12 @@ Upload a plain text secret to a trustFrameworkKeyset.
 Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider.
 his method returns trustFrameworkKey.
 
+### [Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy](Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy.md)
+Invoke function usage
+
+### [Invoke-MgUsagePolicyAuthenticationStrengthPolicy](Invoke-MgUsagePolicyAuthenticationStrengthPolicy.md)
+Invoke function usage
+
 ### [New-MgDataPolicyOperation](New-MgDataPolicyOperation.md)
 Add new entity to dataPolicyOperations
 
@@ -674,12 +709,24 @@ Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow
 ### [New-MgIdentityConditionalAccessAuthenticationContextClassReference](New-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
 Create a new authenticationContextClassReference.
 
+### [New-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](New-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode.md)
+Create new navigation property to authenticationMethodModes for identity
+
+### [New-MgIdentityConditionalAccessAuthenticationStrengthPolicy](New-MgIdentityConditionalAccessAuthenticationStrengthPolicy.md)
+Create new navigation property to policies for identity
+
+### [New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration.md)
+Create new navigation property to combinationConfigurations for identity
+
 ### [New-MgIdentityConditionalAccessNamedLocation](New-MgIdentityConditionalAccessNamedLocation.md)
 Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
 ### [New-MgIdentityConditionalAccessPolicy](New-MgIdentityConditionalAccessPolicy.md)
 Create a new conditionalAccessPolicy.
+
+### [New-MgIdentityConditionalAccessTemplate](New-MgIdentityConditionalAccessTemplate.md)
+Create new navigation property to templates for identity
 
 ### [New-MgIdentityCustomAuthenticationExtension](New-MgIdentityCustomAuthenticationExtension.md)
 Create new navigation property to customAuthenticationExtensions for identity
@@ -694,9 +741,6 @@ Create a new userFlow object.
 
 ### [New-MgIdentityUserFlowAttribute](New-MgIdentityUserFlowAttribute.md)
 Create a new identityUserFlowAttribute object.
-
-### [New-MgInformationProtectionBitlockerRecoveryKey](New-MgInformationProtectionBitlockerRecoveryKey.md)
-Create new navigation property to recoveryKeys for informationProtection
 
 ### [New-MgInformationProtectionDataLossPreventionPolicy](New-MgInformationProtectionDataLossPreventionPolicy.md)
 Create new navigation property to dataLossPreventionPolicies for informationProtection
@@ -728,6 +772,12 @@ Create an appManagementPolicy object.
 
 ### [New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
 Create new navigation property to authenticationMethodConfigurations for policies
+
+### [New-MgPolicyAuthenticationStrengthPolicy](New-MgPolicyAuthenticationStrengthPolicy.md)
+Create new navigation property to authenticationStrengthPolicies for policies
+
+### [New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration.md)
+Create new navigation property to combinationConfigurations for policies
 
 ### [New-MgPolicyAuthorizationPolicy](New-MgPolicyAuthorizationPolicy.md)
 Create new navigation property to authorizationPolicy for policies
@@ -840,12 +890,6 @@ Set a user's emailAuthenticationMethod object.
 Email authentication is a self-service password reset method.
 A user may only have one email authentication method.
 
-### [New-MgUserAuthenticationFido2Method](New-MgUserAuthenticationFido2Method.md)
-Create new navigation property to fido2Methods for users
-
-### [New-MgUserAuthenticationMicrosoftAuthenticatorMethod](New-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
-Create new navigation property to microsoftAuthenticatorMethods for users
-
 ### [New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceCommand](New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceCommand.md)
 Create new navigation property to commands for users
 
@@ -860,9 +904,6 @@ Create new navigation property to usageRights for users
 
 ### [New-MgUserAuthenticationOperation](New-MgUserAuthenticationOperation.md)
 Create new navigation property to operations for users
-
-### [New-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](New-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
-Create new navigation property to passwordlessMicrosoftAuthenticatorMethods for users
 
 ### [New-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDeviceCommand](New-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDeviceCommand.md)
 Create new navigation property to commands for users
@@ -884,16 +925,10 @@ Additionally, a user must always have a `mobile` phone before adding an `alterna
 Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
 Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
 
-### [New-MgUserAuthenticationSoftwareOathMethod](New-MgUserAuthenticationSoftwareOathMethod.md)
-Create new navigation property to softwareOathMethods for users
-
 ### [New-MgUserAuthenticationTemporaryAccessPassMethod](New-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Create a new temporaryAccessPassAuthenticationMethod object on a user.
 A user can only have one Temporary Access Pass that's usable within its specified lifetime.
 If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
-
-### [New-MgUserAuthenticationWindowHelloForBusinessMethod](New-MgUserAuthenticationWindowHelloForBusinessMethod.md)
-Create new navigation property to windowsHelloForBusinessMethods for users
 
 ### [New-MgUserAuthenticationWindowHelloForBusinessMethodDeviceCommand](New-MgUserAuthenticationWindowHelloForBusinessMethodDeviceCommand.md)
 Create new navigation property to commands for users
@@ -906,9 +941,6 @@ Create new navigation property ref to registeredOwners for users
 
 ### [New-MgUserAuthenticationWindowHelloForBusinessMethodDeviceUsageRights](New-MgUserAuthenticationWindowHelloForBusinessMethodDeviceUsageRights.md)
 Create new navigation property to usageRights for users
-
-### [New-MgUserInformationProtectionBitlockerRecoveryKey](New-MgUserInformationProtectionBitlockerRecoveryKey.md)
-Create new navigation property to recoveryKeys for users
 
 ### [New-MgUserInformationProtectionDataLossPreventionPolicy](New-MgUserInformationProtectionDataLossPreventionPolicy.md)
 Create new navigation property to dataLossPreventionPolicies for users
@@ -977,11 +1009,26 @@ Delete navigation property userAttributeAssignments for identity
 ### [Remove-MgIdentityConditionalAccessAuthenticationContextClassReference](Remove-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
 Delete navigation property authenticationContextClassReferences for identity
 
+### [Remove-MgIdentityConditionalAccessAuthenticationStrength](Remove-MgIdentityConditionalAccessAuthenticationStrength.md)
+Delete navigation property authenticationStrengths for identity
+
+### [Remove-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](Remove-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode.md)
+Delete navigation property authenticationMethodModes for identity
+
+### [Remove-MgIdentityConditionalAccessAuthenticationStrengthPolicy](Remove-MgIdentityConditionalAccessAuthenticationStrengthPolicy.md)
+Delete navigation property policies for identity
+
+### [Remove-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](Remove-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration.md)
+Delete navigation property combinationConfigurations for identity
+
 ### [Remove-MgIdentityConditionalAccessNamedLocation](Remove-MgIdentityConditionalAccessNamedLocation.md)
 Delete navigation property namedLocations for identity
 
 ### [Remove-MgIdentityConditionalAccessPolicy](Remove-MgIdentityConditionalAccessPolicy.md)
 Delete navigation property policies for identity
+
+### [Remove-MgIdentityConditionalAccessTemplate](Remove-MgIdentityConditionalAccessTemplate.md)
+Delete navigation property templates for identity
 
 ### [Remove-MgIdentityContinuouAccessEvaluationPolicy](Remove-MgIdentityContinuouAccessEvaluationPolicy.md)
 Delete navigation property continuousAccessEvaluationPolicy for identity
@@ -1041,6 +1088,12 @@ Delete navigation property authenticationMethodsPolicy for policies
 
 ### [Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
 Delete navigation property authenticationMethodConfigurations for policies
+
+### [Remove-MgPolicyAuthenticationStrengthPolicy](Remove-MgPolicyAuthenticationStrengthPolicy.md)
+Delete navigation property authenticationStrengthPolicies for policies
+
+### [Remove-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](Remove-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration.md)
+Delete navigation property combinationConfigurations for policies
 
 ### [Remove-MgPolicyAuthorizationPolicy](Remove-MgPolicyAuthorizationPolicy.md)
 Delete navigation property authorizationPolicy for policies
@@ -1201,9 +1254,6 @@ Delete ref of navigation property registeredOwners for users
 ### [Remove-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDeviceUsageRights](Remove-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDeviceUsageRights.md)
 Delete navigation property usageRights for users
 
-### [Remove-MgUserAuthenticationPasswordMethod](Remove-MgUserAuthenticationPasswordMethod.md)
-Delete navigation property passwordMethods for users
-
 ### [Remove-MgUserAuthenticationPhoneMethod](Remove-MgUserAuthenticationPhoneMethod.md)
 Delete navigation property phoneMethods for users
 
@@ -1356,11 +1406,29 @@ Update the navigation property userAttributeAssignments in identity
 ### [Update-MgIdentityConditionalAccessAuthenticationContextClassReference](Update-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
 Update the navigation property authenticationContextClassReferences in identity
 
+### [Update-MgIdentityConditionalAccessAuthenticationStrength](Update-MgIdentityConditionalAccessAuthenticationStrength.md)
+Update the navigation property authenticationStrengths in identity
+
+### [Update-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](Update-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode.md)
+Update the navigation property authenticationMethodModes in identity
+
+### [Update-MgIdentityConditionalAccessAuthenticationStrengthPolicy](Update-MgIdentityConditionalAccessAuthenticationStrengthPolicy.md)
+Update the navigation property policies in identity
+
+### [Update-MgIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination](Update-MgIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination.md)
+Invoke action updateAllowedCombinations
+
+### [Update-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](Update-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration.md)
+Update the navigation property combinationConfigurations in identity
+
 ### [Update-MgIdentityConditionalAccessNamedLocation](Update-MgIdentityConditionalAccessNamedLocation.md)
 Update the navigation property namedLocations in identity
 
 ### [Update-MgIdentityConditionalAccessPolicy](Update-MgIdentityConditionalAccessPolicy.md)
 Update the navigation property policies in identity
+
+### [Update-MgIdentityConditionalAccessTemplate](Update-MgIdentityConditionalAccessTemplate.md)
+Update the navigation property templates in identity
 
 ### [Update-MgIdentityContinuouAccessEvaluationPolicy](Update-MgIdentityContinuouAccessEvaluationPolicy.md)
 Update the properties of a continuousAccessEvaluationPolicy object.
@@ -1426,6 +1494,15 @@ Update the properties of an authenticationMethodsPolicy object.
 
 ### [Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
 Update the navigation property authenticationMethodConfigurations in policies
+
+### [Update-MgPolicyAuthenticationStrengthPolicy](Update-MgPolicyAuthenticationStrengthPolicy.md)
+Update the navigation property authenticationStrengthPolicies in policies
+
+### [Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination](Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination.md)
+Invoke action updateAllowedCombinations
+
+### [Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration.md)
+Update the navigation property combinationConfigurations in policies
 
 ### [Update-MgPolicyAuthorizationPolicy](Update-MgPolicyAuthorizationPolicy.md)
 Update the navigation property authorizationPolicy in policies
@@ -1541,12 +1618,6 @@ Update the navigation property policies in trustFramework
 ### [Update-MgUserAuthenticationEmailMethod](Update-MgUserAuthenticationEmailMethod.md)
 Update the navigation property emailMethods in users
 
-### [Update-MgUserAuthenticationFido2Method](Update-MgUserAuthenticationFido2Method.md)
-Update the navigation property fido2Methods in users
-
-### [Update-MgUserAuthenticationMicrosoftAuthenticatorMethod](Update-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
-Update the navigation property microsoftAuthenticatorMethods in users
-
 ### [Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
 Update the navigation property device in users
 
@@ -1562,9 +1633,6 @@ Update the navigation property usageRights in users
 ### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
 Update the navigation property operations in users
 
-### [Update-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Update-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
-Update the navigation property passwordlessMicrosoftAuthenticatorMethods in users
-
 ### [Update-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Update-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
 Update the navigation property device in users
 
@@ -1579,15 +1647,6 @@ Update the navigation property usageRights in users
 
 ### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
 Update the navigation property phoneMethods in users
-
-### [Update-MgUserAuthenticationSoftwareOathMethod](Update-MgUserAuthenticationSoftwareOathMethod.md)
-Update the navigation property softwareOathMethods in users
-
-### [Update-MgUserAuthenticationTemporaryAccessPassMethod](Update-MgUserAuthenticationTemporaryAccessPassMethod.md)
-Update the navigation property temporaryAccessPassMethods in users
-
-### [Update-MgUserAuthenticationWindowHelloForBusinessMethod](Update-MgUserAuthenticationWindowHelloForBusinessMethod.md)
-Update the navigation property windowsHelloForBusinessMethods in users
 
 ### [Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 Update the navigation property device in users

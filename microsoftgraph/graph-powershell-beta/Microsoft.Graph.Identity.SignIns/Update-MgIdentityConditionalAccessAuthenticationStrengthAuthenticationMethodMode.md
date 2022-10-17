@@ -1,316 +1,52 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationfido2method
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessauthenticationstrengthauthenticationmethodmode
 schema: 2.0.0
 ---
 
-# Update-MgUserAuthenticationFido2Method
+# Update-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
 
 ## SYNOPSIS
-Update the navigation property fido2Methods in users
+Update the navigation property authenticationMethodModes in identity
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserAuthenticationFido2Method -Fido2AuthenticationMethodId <String> -UserId <String>
- [-AaGuid <String>] [-AdditionalProperties <Hashtable>] [-AttestationCertificates <String[]>]
- [-AttestationLevel <String>] [-CreatedDateTime <DateTime>] [-CreationDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-Model <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
+ -AuthenticationMethodModeDetailId <String> [-AdditionalProperties <Hashtable>]
+ [-AuthenticationMethod <String>] [-DisplayName <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserAuthenticationFido2Method -Fido2AuthenticationMethodId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
+ -AuthenticationMethodModeDetailId <String> -BodyParameter <IMicrosoftGraphAuthenticationMethodModeDetail>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [-AaGuid <String>]
- [-AdditionalProperties <Hashtable>] [-AttestationCertificates <String[]>] [-AttestationLevel <String>]
- [-CreatedDateTime <DateTime>] [-CreationDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-Model <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
+ -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-AuthenticationMethod <String>]
+ [-DisplayName <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
+ -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphAuthenticationMethodModeDetail>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property fido2Methods in users
+Update the navigation property authenticationMethodModes in identity
 
 ## EXAMPLES
 
-### AaGuid
-Authenticator Attestation GUID, an identifier that indicates the type (e.g.
-make and model) of the authenticator.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### AttestationCertificates
-The attestation certificate(s) attached to this security key.
-
-```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### AttestationLevel
-attestationLevel
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### BodyParameter
-fido2AuthenticationMethod
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphFido2AuthenticationMethod1
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### CreatedDateTime
-The timestamp when this key was registered to the user.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### CreationDateTime
-.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### DisplayName
-The display name of the key as given by the user.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### Fido2AuthenticationMethodId
-key: id of fido2AuthenticationMethod
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Id
-.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### Model
-The manufacturer-assigned model of the FIDO2 security key.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### UserId
-key: id of user
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
-
 ## PARAMETERS
-
-### -AaGuid
-Authenticator Attestation GUID, an identifier that indicates the type (e.g.
-make and model) of the authenticator.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -AdditionalProperties
 Additional Parameters
@@ -327,23 +63,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AttestationCertificates
-The attestation certificate(s) attached to this security key.
-
-```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AttestationLevel
-attestationLevel
+### -AuthenticationMethod
+baseAuthenticationMethod
 
 ```yaml
 Type: String
@@ -357,69 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-fido2AuthenticationMethod
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphFido2AuthenticationMethod1
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The timestamp when this key was registered to the user.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreationDateTime
-.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayName
-The display name of the key as given by the user.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Fido2AuthenticationMethodId
-key: id of fido2AuthenticationMethod
+### -AuthenticationMethodModeDetailId
+key: id of authenticationMethodModeDetail
 
 ```yaml
 Type: String
@@ -433,8 +93,40 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Id
+### -BodyParameter
+authenticationMethodModeDetail
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAuthenticationMethodModeDetail
+Parameter Sets: Update, UpdateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DisplayName
 .
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -464,21 +156,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Model
-The manufacturer-assigned model of the FIDO2 security key.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PassThru
 Returns true when the command succeeds
 
@@ -488,21 +165,6 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserId
-key: id of user
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -525,7 +187,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs. The cmdlet is not run.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -545,7 +208,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodModeDetail
 ## OUTPUTS
 
 ### System.Boolean
@@ -558,18 +221,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphFido2AuthenticationMethod1>`: fido2AuthenticationMethod
+BODYPARAMETER <IMicrosoftGraphAuthenticationMethodModeDetail>: authenticationMethodModeDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.
-  - `[AttestationCertificates <String[]>]`: The attestation certificate(s) attached to this security key.
-  - `[AttestationLevel <String>]`: attestationLevel
-  - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
-  - `[CreationDateTime <DateTime?>]`: 
-  - `[DisplayName <String>]`: The display name of the key as given by the user.
-  - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[AuthenticationMethod <String>]`: baseAuthenticationMethod
+  - `[DisplayName <String>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
@@ -588,6 +246,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[CommandId <String>]`: key: id of command
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
+  - `[ConditionalAccessTemplateId <String>]`: key: id of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: key: tenantId of crossTenantAccessPolicyConfigurationPartner
   - `[CustomAuthenticationExtensionId <String>]`: key: id of customAuthenticationExtension
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy

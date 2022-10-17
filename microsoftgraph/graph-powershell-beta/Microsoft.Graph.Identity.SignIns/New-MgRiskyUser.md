@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgriskyuser
@@ -80,7 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -266,9 +267,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRiskyUser1>`: riskyUser
+BODYPARAMETER <IMicrosoftGraphRiskyUser1>: riskyUser
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[History <IMicrosoftGraphRiskyUserHistoryItem1[]>]`: 
     - `[History <IMicrosoftGraphRiskyUserHistoryItem1[]>]`: 
     - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
@@ -279,7 +280,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskyUser1>`: riskyUser
     - `[RiskState <String>]`: riskState
     - `[UserDisplayName <String>]`: Risky user display name.
     - `[UserPrincipalName <String>]`: Risky user principal name.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Activity <IMicrosoftGraphRiskUserActivity1>]`: riskUserActivity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Detail <String>]`: 
@@ -296,7 +297,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskyUser1>`: riskyUser
   - `[UserDisplayName <String>]`: Risky user display name.
   - `[UserPrincipalName <String>]`: Risky user principal name.
 
-HISTORY <IMicrosoftGraphRiskyUserHistoryItem1\[]>: .
+HISTORY <IMicrosoftGraphRiskyUserHistoryItem1[]>: .
   - `[History <IMicrosoftGraphRiskyUserHistoryItem1[]>]`: 
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
   - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
@@ -306,7 +307,7 @@ HISTORY <IMicrosoftGraphRiskyUserHistoryItem1\[]>: .
   - `[RiskState <String>]`: riskState
   - `[UserDisplayName <String>]`: Risky user display name.
   - `[UserPrincipalName <String>]`: Risky user principal name.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Activity <IMicrosoftGraphRiskUserActivity1>]`: riskUserActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: 

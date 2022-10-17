@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy
@@ -15,9 +15,9 @@ Update the properties of a cross-tenant access policy.
 ### UpdateExpanded (Default)
 ```
 Update-MgPolicyCrossTenantAccessPolicy [-AdditionalProperties <Hashtable>] [-AllowedCloudEndpoints <String[]>]
- [-Default <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>] [-Definition <String[]>]
+ [-Default <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault1>] [-Definition <String[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -102,7 +102,7 @@ crossTenantAccessPolicyConfigurationDefault
 To construct, please use Get-Help -Online and see NOTES section for DEFAULT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault
+Type: IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault1
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -177,7 +177,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -196,7 +197,7 @@ Defines partner-specific configurations for external Azure Active Directory orga
 To construct, please use Get-Help -Online and see NOTES section for PARTNERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]
+Type: IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -271,17 +272,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicy1>`: crossTenantAccessPolicy
+BODYPARAMETER <IMicrosoftGraphCrossTenantAccessPolicy1>: crossTenantAccessPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Definition <String[]>]`: 
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowedCloudEndpoints <String[]>]`: Used to specify which Microsoft clouds an organization would like to collaborate with. By default, this value is empty. Supported values for this field are: microsoftonline.com, microsoftonline.us, and partner.microsoftonline.cn.
   - `[Default <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault1>]`: crossTenantAccessPolicyConfigurationDefault
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
@@ -318,9 +319,9 @@ BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicy1>`: crossTenantAccessPoli
     - `[TenantId <String>]`: The tenant identifier for the partner Azure AD organization. Read-only. Key.
     - `[TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]`: crossTenantAccessPolicyTenantRestrictions
 
-DEFAULT `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault1>`: crossTenantAccessPolicyConfigurationDefault
+DEFAULT <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault1>: crossTenantAccessPolicyConfigurationDefault
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
@@ -348,7 +349,7 @@ DEFAULT `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault1>`: crossTe
       - `[Mode <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
       - `[Rule <String>]`: 
 
-PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1\[]>: Defines partner-specific configurations for external Azure Active Directory organizations.
+PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1[]>: Defines partner-specific configurations for external Azure Active Directory organizations.
   - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
