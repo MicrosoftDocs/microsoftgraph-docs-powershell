@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mggroupsubsite
@@ -13,17 +13,17 @@ Access the default site with /sites/root.
 
 ## SYNTAX
 
-### List1 (Default)
+### Get (Default)
+```
+Get-MgGroupSubSite -GroupId <String> [-SiteId <String>] [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### List1
 ```
 Get-MgGroupSubSite -GroupId <String> [-SiteId <String>] [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgGroupSubSite -GroupId <String> [-SiteId <String>] -SiteId1 <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -50,7 +50,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -106,7 +106,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: Get, List1
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -182,27 +182,12 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: Get, List1
 Aliases:
 
 Required: False
 Position: Named
 Default value: "root"
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SiteId1
-key: id of site
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -270,7 +255,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
