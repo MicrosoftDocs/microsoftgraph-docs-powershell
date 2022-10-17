@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate
@@ -66,7 +66,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -158,7 +158,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -256,7 +256,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
