@@ -1,66 +1,58 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/remove-mggroupphoto
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/set-mggroupdriveitemsensitivitylabel
 schema: 2.0.0
 ---
 
-# Remove-MgGroupPhoto
+# Set-MgGroupDriveItemSensitivityLabel
 
 ## SYNOPSIS
-Delete navigation property photo for groups
+Invoke action assignSensitivityLabel
 
 ## SYNTAX
 
-### Delete (Default)
+### AssignExpanded (Default)
 ```
-Remove-MgGroupPhoto -GroupId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
-Remove-MgGroupPhoto -GroupId <String> -ProfilePhotoId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgGroupDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String> -GroupId <String>
+ [-AdditionalProperties <Hashtable>] [-AssignmentMethod <String>] [-JustificationText <String>]
+ [-SensitivityLabelId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### Assign
 ```
-Remove-MgGroupPhoto -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgGroupDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String> -GroupId <String>
+ -BodyParameter <IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### AssignViaIdentityExpanded
 ```
-Remove-MgGroupPhoto -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgGroupDriveItemSensitivityLabel -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AssignmentMethod <String>] [-JustificationText <String>] [-SensitivityLabelId <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AssignViaIdentity
+```
+Set-MgGroupDriveItemSensitivityLabel -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property photo for groups
+Invoke action assignSensitivityLabel
 
 ## EXAMPLES
 
-### GroupId
-key: id of group
+## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: String
-Parameter Sets: Delete, Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
+Type: Hashtable
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -70,13 +62,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -AssignmentMethod
+sensitivityLabelAssignmentMethod
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Type: String
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -86,27 +93,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### ProfilePhotoId
-key: id of profilePhoto
+### -DriveId
+key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: AssignExpanded, Assign
 Aliases:
 
 Required: True
@@ -116,66 +108,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### Confirm
-Prompts you for confirmation before running the cmdlet.
+### -DriveItemId
+key: id of driveItem
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: String
+Parameter Sets: AssignExpanded, Assign
+Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
-### WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
-
-## PARAMETERS
 
 ### -GroupId
 key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: AssignExpanded, Assign
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -188,13 +144,28 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -JustificationText
+.
+
+```yaml
+Type: String
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -208,20 +179,20 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProfilePhotoId
-key: id of profilePhoto
+### -SensitivityLabelId
+.
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -244,7 +215,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs. The cmdlet is not run.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -264,6 +236,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.PowerShell.Models.IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -276,7 +249,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+BODYPARAMETER <IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AssignmentMethod <String>]`: sensitivityLabelAssignmentMethod
+  - `[JustificationText <String>]`: 
+  - `[SensitivityLabelId <String>]`: 
+
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

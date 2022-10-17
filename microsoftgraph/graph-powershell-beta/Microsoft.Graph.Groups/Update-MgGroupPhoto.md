@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/update-mggroupphoto
@@ -18,40 +18,16 @@ Update-MgGroupPhoto -GroupId <String> [-AdditionalProperties <Hashtable>] [-Heig
  [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateExpanded1
-```
-Update-MgGroupPhoto -GroupId <String> -ProfilePhotoId <String> [-AdditionalProperties <Hashtable>]
- [-Height <Int32>] [-Id <String>] [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgGroupPhoto -GroupId <String> -ProfilePhotoId <String> -BodyParameter <IMicrosoftGraphProfilePhoto>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### Update
 ```
 Update-MgGroupPhoto -GroupId <String> -BodyParameter <IMicrosoftGraphProfilePhoto> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
-```
-Update-MgGroupPhoto -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Height <Int32>]
- [-Id <String>] [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### UpdateViaIdentityExpanded
 ```
 Update-MgGroupPhoto -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Height <Int32>]
  [-Id <String>] [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgGroupPhoto -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphProfilePhoto> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -72,7 +48,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -88,7 +64,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphProfilePhoto
-Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -103,7 +79,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -119,7 +95,7 @@ Read-only.
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -130,11 +106,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -150,7 +127,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -175,28 +152,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProfilePhotoId
-key: id of profilePhoto
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Width
 The width of the photo.
 Read-only.
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -256,13 +218,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphProfilePhoto>`: profilePhoto
+BODYPARAMETER <IMicrosoftGraphProfilePhoto>: profilePhoto
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Height <Int32?>]`: The height of the photo. Read-only.
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

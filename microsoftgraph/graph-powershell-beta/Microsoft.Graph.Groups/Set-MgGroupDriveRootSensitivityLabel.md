@@ -1,97 +1,58 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/remove-mggroupconversationthreadpost
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/set-mggroupdriverootsensitivitylabel
 schema: 2.0.0
 ---
 
-# Remove-MgGroupConversationThreadPost
+# Set-MgGroupDriveRootSensitivityLabel
 
 ## SYNOPSIS
-Delete navigation property posts for groups
+Invoke action assignSensitivityLabel
 
 ## SYNTAX
 
-### Delete1 (Default)
+### AssignExpanded (Default)
 ```
-Remove-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
- -PostId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete3
-```
-Remove-MgGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
- -PostId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgGroupDriveRootSensitivityLabel -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
+ [-AssignmentMethod <String>] [-JustificationText <String>] [-SensitivityLabelId <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity3
+### Assign
 ```
-Remove-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgGroupDriveRootSensitivityLabel -DriveId <String> -GroupId <String>
+ -BodyParameter <IPaths2Rh0SxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### AssignViaIdentityExpanded
 ```
-Remove-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgGroupDriveRootSensitivityLabel -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AssignmentMethod <String>] [-JustificationText <String>] [-SensitivityLabelId <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AssignViaIdentity
+```
+Set-MgGroupDriveRootSensitivityLabel -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths2Rh0SxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property posts for groups
+Invoke action assignSensitivityLabel
 
 ## EXAMPLES
 
-### ConversationId
-key: id of conversation
+## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: String
-Parameter Sets: Delete1, Delete3
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### ConversationThreadId
-key: id of conversationThread
-
-```yaml
-Type: String
-Parameter Sets: Delete1, Delete3
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### GroupId
-key: id of group
-
-```yaml
-Type: String
-Parameter Sets: Delete1, Delete3
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
+Type: Hashtable
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -101,13 +62,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -AssignmentMethod
+sensitivityLabelAssignmentMethod
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity1
+Type: String
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths2Rh0SxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -117,93 +93,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### PostId
-key: id of post
+### -DriveId
+key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete3
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
-
-## PARAMETERS
-
-### -ConversationId
-key: id of conversation
-
-```yaml
-Type: String
-Parameter Sets: Delete1, Delete3
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ConversationThreadId
-key: id of conversationThread
-
-```yaml
-Type: String
-Parameter Sets: Delete1, Delete3
+Parameter Sets: AssignExpanded, Assign
 Aliases:
 
 Required: True
@@ -218,25 +113,10 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete3
+Parameter Sets: AssignExpanded, Assign
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -249,13 +129,28 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity1
+Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -JustificationText
+.
+
+```yaml
+Type: String
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -269,20 +164,20 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PostId
-key: id of post
+### -SensitivityLabelId
+.
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete3
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -305,7 +200,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs. The cmdlet is not run.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -325,6 +221,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.PowerShell.Models.IPaths2Rh0SxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -337,7 +234,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+BODYPARAMETER <IPaths2Rh0SxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AssignmentMethod <String>]`: sensitivityLabelAssignmentMethod
+  - `[JustificationText <String>]`: 
+  - `[SensitivityLabelId <String>]`: 
+
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
