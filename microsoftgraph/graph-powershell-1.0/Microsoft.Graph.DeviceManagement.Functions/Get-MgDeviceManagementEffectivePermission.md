@@ -14,13 +14,14 @@ Retrieves the effective permissions of the currently authenticated user
 
 ### Get2 (Default)
 ```
-Get-MgDeviceManagementEffectivePermission -Scope <String> [<CommonParameters>]
+Get-MgDeviceManagementEffectivePermission -Scope <String> [-Count] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgDeviceManagementEffectivePermission -InputObject <IDeviceManagementFunctionsIdentity>
- [<CommonParameters>]
+Get-MgDeviceManagementEffectivePermission -InputObject <IDeviceManagementFunctionsIdentity> [-Count]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,6 +30,36 @@ Retrieves the effective permissions of the currently authenticated user
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -55,6 +86,51 @@ Parameter Sets: Get2
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

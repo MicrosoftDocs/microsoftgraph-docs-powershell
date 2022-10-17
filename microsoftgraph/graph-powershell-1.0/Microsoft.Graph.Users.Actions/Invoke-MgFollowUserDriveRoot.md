@@ -12,12 +12,12 @@ Follow a driveItem.
 
 ## SYNTAX
 
-### Follow (Default)
+### Follow1 (Default)
 ```
 Invoke-MgFollowUserDriveRoot -DriveId <String> -UserId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### FollowViaIdentity
+### FollowViaIdentity1
 ```
 Invoke-MgFollowUserDriveRoot -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Follow
+Parameter Sets: Follow1
 Aliases:
 
 Required: True
@@ -50,7 +50,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: FollowViaIdentity
+Parameter Sets: FollowViaIdentity1
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Follow
+Parameter Sets: Follow1
 Aliases:
 
 Required: True

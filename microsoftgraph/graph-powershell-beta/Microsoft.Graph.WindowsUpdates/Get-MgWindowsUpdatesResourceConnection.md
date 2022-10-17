@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgWindowsUpdatesResourceConnection
 
 ## SYNOPSIS
-Get resourceConnections from admin
+Service connections to external resources such as analytics workspaces.
 
 ## SYNTAX
 
@@ -32,16 +32,33 @@ Get-MgWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity> [-
 ```
 
 ## DESCRIPTION
-Get resourceConnections from admin
+Service connections to external resources such as analytics workspaces.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
 ```
 
-{{ Add example description here }}
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
+```
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
+```
+
+### EXAMPLE 4
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesResourceConnection
+```
 
 ## PARAMETERS
 

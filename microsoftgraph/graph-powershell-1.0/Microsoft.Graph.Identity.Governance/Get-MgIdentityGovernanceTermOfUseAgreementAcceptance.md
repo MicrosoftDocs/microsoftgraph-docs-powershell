@@ -12,39 +12,39 @@ Represents the current status of a user's response to a company's customizable t
 
 ## SYNTAX
 
-### List2 (Default)
+### List (Default)
 ```
 Get-MgIdentityGovernanceTermOfUseAgreementAcceptance [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get3
+### Get1
 ```
 Get-MgIdentityGovernanceTermOfUseAgreementAcceptance -AgreementAcceptanceId <String> -AgreementId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### Get2
+### Get
 ```
 Get-MgIdentityGovernanceTermOfUseAgreementAcceptance -AgreementAcceptanceId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List3
+### List1
 ```
 Get-MgIdentityGovernanceTermOfUseAgreementAcceptance -AgreementId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity1
 ```
 Get-MgIdentityGovernanceTermOfUseAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
 Get-MgIdentityGovernanceTermOfUseAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
@@ -62,7 +62,7 @@ key: id of agreementAcceptance
 
 ```yaml
 Type: String
-Parameter Sets: Get3, Get2
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -77,7 +77,7 @@ key: id of agreement
 
 ```yaml
 Type: String
-Parameter Sets: Get3, List3
+Parameter Sets: Get1, List1
 Aliases:
 
 Required: True
@@ -92,12 +92,12 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -108,7 +108,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases: CV
 
 Required: False
@@ -138,7 +138,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -154,7 +154,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -169,12 +169,12 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -199,7 +199,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -214,7 +214,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases: OrderBy
 
 Required: False
@@ -229,7 +229,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases: Limit
 
 Required: False
@@ -244,7 +244,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List3
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -313,7 +313,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
   - `[CustomTaskExtensionId <String>]`: key: id of customTaskExtension
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
@@ -335,7 +335,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlTypeId <String>]`: key: id of programControlType
   - `[ProgramId <String>]`: key: id of program
   - `[RunId <String>]`: key: id of run
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: key: id of taskDefinition
   - `[TaskId <String>]`: key: id of task
   - `[TaskProcessingResultId <String>]`: key: id of taskProcessingResult

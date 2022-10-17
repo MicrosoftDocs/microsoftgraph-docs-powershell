@@ -203,7 +203,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -436,7 +437,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphProgramControl>`: programControl
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ControlId <String>]`: The controlId of the control, in particular the identifier of an access review. Required on create.
   - `[ControlTypeId <String>]`: The programControlType identifies the type of program control - for example, a control linking to guest access reviews. Required on create.
   - `[CreatedDateTime <DateTime?>]`: The creation date and time of the program control.
@@ -449,7 +450,7 @@ BODYPARAMETER `<IMicrosoftGraphProgramControl>`: programControl
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Program <IMicrosoftGraphProgram>]`: program
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Controls <IMicrosoftGraphProgramControl[]>]`: Controls associated with the program.
     - `[Description <String>]`: The description of the program.
     - `[DisplayName <String>]`: The name of the program.  Required on create.
@@ -502,7 +503,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
   - `[CustomTaskExtensionId <String>]`: key: id of customTaskExtension
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
@@ -524,7 +525,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlTypeId <String>]`: key: id of programControlType
   - `[ProgramId <String>]`: key: id of program
   - `[RunId <String>]`: key: id of run
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: key: id of taskDefinition
   - `[TaskId <String>]`: key: id of task
   - `[TaskProcessingResultId <String>]`: key: id of taskProcessingResult
@@ -545,9 +546,9 @@ OWNER `<IMicrosoftGraphUserIdentity>`: userIdentity
 
 PROGRAM `<IMicrosoftGraphProgram>`: program
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Controls <IMicrosoftGraphProgramControl[]>]`: Controls associated with the program.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[ControlId <String>]`: The controlId of the control, in particular the identifier of an access review. Required on create.
     - `[ControlTypeId <String>]`: The programControlType identifies the type of program control - for example, a control linking to guest access reviews. Required on create.
     - `[CreatedDateTime <DateTime?>]`: The creation date and time of the program control.

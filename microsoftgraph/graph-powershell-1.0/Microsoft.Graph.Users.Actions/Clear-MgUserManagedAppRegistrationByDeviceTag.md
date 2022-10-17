@@ -21,7 +21,7 @@ Clear-MgUserManagedAppRegistrationByDeviceTag -UserId <String> [-AdditionalPrope
 ### Wipe2
 ```
 Clear-MgUserManagedAppRegistrationByDeviceTag -UserId <String>
- -BodyParameter <IPathsVloam1UsersUserIdMicrosoftGraphWipemanagedappregistrationsbydevicetagPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Clear-MgUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentit
 ### WipeViaIdentity2
 ```
 Clear-MgUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsVloam1UsersUserIdMicrosoftGraphWipemanagedappregistrationsbydevicetagPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsVloam1UsersUserIdMicrosoftGraphWipemanagedappregistrationsbydevicetagPostRequestbodyContentApplicationJsonSchema1
+Type: IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema
 Parameter Sets: Wipe2, WipeViaIdentity2
 Aliases:
 
@@ -174,7 +174,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsVloam1UsersUserIdMicrosoftGraphWipemanagedappregistrationsbydevicetagPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShell.Models.IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 

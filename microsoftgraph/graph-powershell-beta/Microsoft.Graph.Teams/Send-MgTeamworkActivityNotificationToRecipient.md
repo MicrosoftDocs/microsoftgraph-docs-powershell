@@ -13,7 +13,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## SYNTAX
 
-### SendExpanded (Default)
+### SendExpanded1 (Default)
 ```
 Send-MgTeamworkActivityNotificationToRecipient [-ActivityType <String>] [-AdditionalProperties <Hashtable>]
  [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
@@ -22,7 +22,7 @@ Send-MgTeamworkActivityNotificationToRecipient [-ActivityType <String>] [-Additi
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Send
+### Send1
 ```
 Send-MgTeamworkActivityNotificationToRecipient
  -BodyParameter <IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorecipientsPostRequestbodyContentApplicationJsonSchema>
@@ -121,7 +121,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 ```yaml
 Type: String
-Parameter Sets: SendExpanded
+Parameter Sets: SendExpanded1
 Aliases:
 
 Required: False
@@ -136,7 +136,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SendExpanded
+Parameter Sets: SendExpanded1
 Aliases:
 
 Required: False
@@ -152,7 +152,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorecipientsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Send
+Parameter Sets: Send1
 Aliases:
 
 Required: True
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int64
-Parameter Sets: SendExpanded
+Parameter Sets: SendExpanded1
 Aliases:
 
 Required: False
@@ -198,7 +198,7 @@ To construct, please use Get-Help -Online and see NOTES section for PREVIEWTEXT 
 
 ```yaml
 Type: IMicrosoftGraphItemBody
-Parameter Sets: SendExpanded
+Parameter Sets: SendExpanded1
 Aliases:
 
 Required: False
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: IMicrosoftGraphTeamworkNotificationRecipient[]
-Parameter Sets: SendExpanded
+Parameter Sets: SendExpanded1
 Aliases:
 
 Required: False
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: SendExpanded
+Parameter Sets: SendExpanded1
 Aliases:
 
 Required: False
@@ -244,7 +244,7 @@ To construct, please use Get-Help -Online and see NOTES section for TEMPLATEPARA
 
 ```yaml
 Type: IMicrosoftGraphKeyValuePair[]
-Parameter Sets: SendExpanded
+Parameter Sets: SendExpanded1
 Aliases:
 
 Required: False
@@ -260,7 +260,7 @@ To construct, please use Get-Help -Online and see NOTES section for TOPIC proper
 
 ```yaml
 Type: IMicrosoftGraphTeamworkActivityTopic
-Parameter Sets: SendExpanded
+Parameter Sets: SendExpanded1
 Aliases:
 
 Required: False

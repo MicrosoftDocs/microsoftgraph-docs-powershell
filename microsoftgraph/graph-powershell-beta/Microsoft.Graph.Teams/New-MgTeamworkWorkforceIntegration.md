@@ -15,10 +15,10 @@ Create a new workforceIntegration object.
 ### CreateExpanded1 (Default)
 ```
 New-MgTeamworkWorkforceIntegration [-AdditionalProperties <Hashtable>] [-ApiVersion <Int32>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>]
  [-EligibilityFilteringEnabledEntities <String>] [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]
- [-Id <String>] [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-SupportedEntities <String>] [-Supports <String>] [-Url <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SupportedEntities <String>]
+ [-Supports <String>] [-Url <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -117,22 +117,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CreatedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisplayName
 Name of the workforce integration.
 
@@ -180,7 +164,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -215,22 +200,6 @@ To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIED
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LastModifiedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-
-```yaml
-Type: DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -346,7 +315,7 @@ BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration1>`: workforceIntegration
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApiVersion <Int32?>]`: API version for the call back URL. Start with 1.
   - `[DisplayName <String>]`: Name of the workforce integration.
   - `[EligibilityFilteringEnabledEntities <String>]`: eligibilityFilteringEnabledEntities

@@ -12,13 +12,13 @@ Restore a document set version.
 
 ## SYNTAX
 
-### Restore (Default)
+### Restore1 (Default)
 ```
 Restore-MgGroupDriveItemListItemDocumentSetVersion -DocumentSetVersionId <String> -DriveId <String>
  -DriveItemId <String> -GroupId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreViaIdentity
+### RestoreViaIdentity1
 ```
 Restore-MgGroupDriveItemListItemDocumentSetVersion -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of documentSetVersion
 
 ```yaml
 Type: String
-Parameter Sets: Restore
+Parameter Sets: Restore1
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Restore
+Parameter Sets: Restore1
 Aliases:
 
 Required: True
@@ -66,7 +66,7 @@ key: id of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Restore
+Parameter Sets: Restore1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Restore
+Parameter Sets: Restore1
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: RestoreViaIdentity
+Parameter Sets: RestoreViaIdentity1
 Aliases:
 
 Required: True

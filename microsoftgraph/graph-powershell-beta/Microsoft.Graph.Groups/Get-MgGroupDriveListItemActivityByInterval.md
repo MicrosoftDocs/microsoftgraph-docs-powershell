@@ -15,12 +15,16 @@ Invoke function getActivitiesByInterval
 ### Get (Default)
 ```
 Get-MgGroupDriveListItemActivityByInterval -DriveId <String> -EndDateTime <String> -GroupId <String>
- -Interval <String> -ListItemId <String> -StartDateTime <String> [<CommonParameters>]
+ -Interval <String> -ListItemId <String> -StartDateTime <String> [-Count] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupDriveListItemActivityByInterval -InputObject <IGroupsIdentity> [<CommonParameters>]
+Get-MgGroupDriveListItemActivityByInterval -InputObject <IGroupsIdentity> [-Count] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,6 +33,21 @@ Invoke function getActivitiesByInterval
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -DriveId
 key: id of drive
@@ -54,6 +73,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -121,6 +155,51 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Property
+Select properties to be returned
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 Usage: startDateTime='{startDateTime}'
 
@@ -130,6 +209,36 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

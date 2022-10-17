@@ -13,26 +13,26 @@ Restore a driveItem that has been deleted and is currently in the recycle bin.
 
 ## SYNTAX
 
-### RestoreExpanded (Default)
+### RestoreExpanded1 (Default)
 ```
 Restore-MgUserDriveRoot -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Restore
+### Restore1
 ```
 Restore-MgUserDriveRoot -DriveId <String> -UserId <String>
  -BodyParameter <IPathsWcmhxwUsersUserIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreViaIdentityExpanded
+### RestoreViaIdentityExpanded1
 ```
 Restore-MgUserDriveRoot -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreViaIdentity
+### RestoreViaIdentity1
 ```
 Restore-MgUserDriveRoot -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsWcmhxwUsersUserIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
+Parameter Sets: RestoreExpanded1, RestoreViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsWcmhxwUsersUserIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Restore, RestoreViaIdentity
+Parameter Sets: Restore1, RestoreViaIdentity1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: RestoreExpanded, Restore
+Parameter Sets: RestoreExpanded1, Restore1
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: RestoreViaIdentityExpanded, RestoreViaIdentity
+Parameter Sets: RestoreViaIdentityExpanded1, RestoreViaIdentity1
 Aliases:
 
 Required: True
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
+Parameter Sets: RestoreExpanded1, RestoreViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -130,7 +130,7 @@ To construct, please use Get-Help -Online and see NOTES section for PARENTREFERE
 
 ```yaml
 Type: IMicrosoftGraphItemReference
-Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
+Parameter Sets: RestoreExpanded1, RestoreViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -145,7 +145,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: RestoreExpanded, Restore
+Parameter Sets: RestoreExpanded1, Restore1
 Aliases:
 
 Required: True

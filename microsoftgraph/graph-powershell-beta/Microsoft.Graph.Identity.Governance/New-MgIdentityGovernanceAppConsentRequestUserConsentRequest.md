@@ -15,7 +15,7 @@ Create new navigation property to userConsentRequests for identityGovernance
 ### CreateExpanded (Default)
 ```
 New-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId <String>
- [-AdditionalProperties <Hashtable>] [-Approval <IMicrosoftGraphApproval>] [-ApprovalId <String>]
+ [-AdditionalProperties <Hashtable>] [-Approval <IMicrosoftGraphApproval1>] [-ApprovalId <String>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CustomData <String>] [-Id <String>] [-Reason <String>] [-Status <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -24,13 +24,13 @@ New-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId
 ### Create
 ```
 New-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId <String>
- -BodyParameter <IMicrosoftGraphUserConsentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserConsentRequest1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Approval <IMicrosoftGraphApproval>] [-ApprovalId <String>]
+ [-AdditionalProperties <Hashtable>] [-Approval <IMicrosoftGraphApproval1>] [-ApprovalId <String>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CustomData <String>] [-Id <String>] [-Reason <String>] [-Status <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -39,7 +39,7 @@ New-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdent
 ### CreateViaIdentity
 ```
 New-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUserConsentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserConsentRequest1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -84,7 +84,7 @@ approval
 To construct, please use Get-Help -Online and see NOTES section for APPROVAL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApproval
+Type: IMicrosoftGraphApproval1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ userConsentRequest
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserConsentRequest
+Type: IMicrosoftGraphUserConsentRequest1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -189,7 +189,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -290,10 +291,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserConsentRequest
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserConsentRequest1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserConsentRequest
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserConsentRequest1
 ## NOTES
 
 ALIASES
@@ -305,9 +306,9 @@ To create the parameters described below, construct a hash table containing the 
 
 APPROVAL `<IMicrosoftGraphApproval1>`: approval
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
     - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
     - `[Justification <String>]`: The justification associated with the approval step decision.
@@ -334,12 +335,12 @@ BODYPARAMETER `<IMicrosoftGraphUserConsentRequest1>`: userConsentRequest
   - `[CreatedDateTime <DateTime?>]`: The request creation date time.
   - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
   - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Approval <IMicrosoftGraphApproval1>]`: approval
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
       - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
       - `[Justification <String>]`: The justification associated with the approval step decision.
@@ -399,7 +400,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
   - `[CustomTaskExtensionId <String>]`: key: id of customTaskExtension
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
@@ -421,7 +422,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlTypeId <String>]`: key: id of programControlType
   - `[ProgramId <String>]`: key: id of program
   - `[RunId <String>]`: key: id of run
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: key: id of taskDefinition
   - `[TaskId <String>]`: key: id of task
   - `[TaskProcessingResultId <String>]`: key: id of taskProcessingResult

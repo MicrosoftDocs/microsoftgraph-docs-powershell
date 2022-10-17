@@ -173,7 +173,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -321,10 +322,10 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource>`: edisc
   - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time of the dataSourceContainer.
   - `[ReleasedDateTime <DateTime?>]`: Date and time that the dataSourceContainer was released from the case.
   - `[Status <String>]`: dataSourceContainerStatus
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DataSource <IMicrosoftGraphSecurityDataSource>]`: dataSource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -349,11 +350,11 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource>`: edisc
       - `[Message <String>]`: The message.
       - `[Subcode <Int32?>]`: The result sub-code.
     - `[Status <String>]`: caseOperationStatus
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 DATASOURCE `<IMicrosoftGraphSecurityDataSource>`: dataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity

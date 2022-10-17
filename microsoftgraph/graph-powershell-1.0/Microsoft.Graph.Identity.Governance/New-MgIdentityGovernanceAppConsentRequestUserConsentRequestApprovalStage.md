@@ -23,7 +23,7 @@ New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage -AppCon
 ### Create
 ```
 New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage -AppConsentRequestId <String>
- -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphApprovalStage1> [-WhatIf] [-Confirm]
+ -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphApprovalStage> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage
 ### CreateViaIdentity
 ```
 New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphApprovalStage1> [-WhatIf] [-Confirm]
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphApprovalStage> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -101,7 +101,7 @@ approvalStage
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApprovalStage1
+Type: IMicrosoftGraphApprovalStage
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -129,7 +129,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -293,10 +294,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovalStage1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovalStage
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovalStage1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovalStage
 ## NOTES
 
 ALIASES
@@ -308,7 +309,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphApprovalStage>`: approvalStage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignedToMe <Boolean?>]`: Indicates whether the stage is assigned to the calling user to review. Read-only.
   - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval stage. Read-only.
   - `[Justification <String>]`: The justification associated with the approval stage decision.
@@ -361,7 +362,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
   - `[CustomTaskExtensionId <String>]`: key: id of customTaskExtension
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
@@ -383,7 +384,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlTypeId <String>]`: key: id of programControlType
   - `[ProgramId <String>]`: key: id of program
   - `[RunId <String>]`: key: id of run
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: key: id of taskDefinition
   - `[TaskId <String>]`: key: id of task
   - `[TaskProcessingResultId <String>]`: key: id of taskProcessingResult

@@ -15,12 +15,11 @@ Update the navigation property swapShiftsChangeRequests in teams
 ### UpdateExpanded (Default)
 ```
 Update-MgTeamScheduleSwapShiftChangeRequest -SwapShiftsChangeRequestId <String> -TeamId <String>
- [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-ManagerActionDateTime <DateTime>] [-ManagerActionMessage <String>] [-ManagerUserId <String>]
- [-RecipientActionDateTime <DateTime>] [-RecipientActionMessage <String>] [-RecipientShiftId <String>]
- [-RecipientUserId <String>] [-SenderDateTime <DateTime>] [-SenderMessage <String>] [-SenderShiftId <String>]
- [-SenderUserId <String>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
+ [-RecipientActionMessage <String>] [-RecipientShiftId <String>] [-RecipientUserId <String>]
+ [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -32,12 +31,10 @@ Update-MgTeamScheduleSwapShiftChangeRequest -SwapShiftsChangeRequestId <String> 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignedTo <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-ManagerActionDateTime <DateTime>] [-ManagerActionMessage <String>] [-ManagerUserId <String>]
- [-RecipientActionDateTime <DateTime>] [-RecipientActionMessage <String>] [-RecipientShiftId <String>]
- [-RecipientUserId <String>] [-SenderDateTime <DateTime>] [-SenderMessage <String>] [-SenderShiftId <String>]
- [-SenderUserId <String>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AssignedTo <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-ManagerActionMessage <String>] [-RecipientActionMessage <String>] [-RecipientShiftId <String>]
+ [-RecipientUserId <String>] [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -99,24 +96,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -CreatedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -162,53 +144,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -LastModifiedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ManagerActionDateTime
-.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ManagerActionMessage
-.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ManagerUserId
 .
 
 ```yaml
@@ -229,22 +165,6 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -RecipientActionDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -299,21 +219,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SenderDateTime
-.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -SenderMessage
 .
 
@@ -331,21 +236,6 @@ Accept wildcard characters: False
 
 ### -SenderShiftId
 User ID of the sender of the offer shift request.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SenderUserId
-.
 
 ```yaml
 Type: String
@@ -471,7 +361,7 @@ BODYPARAMETER `<IMicrosoftGraphSwapShiftsChangeRequest>`: swapShiftsChangeReques
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
 
 INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter

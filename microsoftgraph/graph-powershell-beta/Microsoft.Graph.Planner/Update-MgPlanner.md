@@ -268,6 +268,10 @@ BODYPARAMETER `<IMicrosoftGraphPlanner>`: planner
         - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Description <String>]`: Description of the task.
+        - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Content <String>]`: The content of the item.
+          - `[ContentType <String>]`: bodyType
         - `[PreviewType <String>]`: plannerPreviewType
         - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -396,6 +400,10 @@ BUCKETS <IMicrosoftGraphPlannerBucket1\[]>: Read-only. Nullable. Returns a colle
       - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Description <String>]`: Description of the task.
+      - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Content <String>]`: The content of the item.
+        - `[ContentType <String>]`: bodyType
       - `[PreviewType <String>]`: plannerPreviewType
       - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -468,6 +476,10 @@ PLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns a collectio
         - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Description <String>]`: Description of the task.
+        - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Content <String>]`: The content of the item.
+          - `[ContentType <String>]`: bodyType
         - `[PreviewType <String>]`: plannerPreviewType
         - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -593,6 +605,10 @@ ROSTERS <IMicrosoftGraphPlannerRoster\[]>: Read-only. Nullable. Returns a collec
           - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Description <String>]`: Description of the task.
+          - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Content <String>]`: The content of the item.
+            - `[ContentType <String>]`: bodyType
           - `[PreviewType <String>]`: plannerPreviewType
           - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -704,6 +720,10 @@ TASKS <IMicrosoftGraphPlannerTask1\[]>: Read-only. Nullable. Returns a collectio
     - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Description of the task.
+    - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
     - `[PreviewType <String>]`: plannerPreviewType
     - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

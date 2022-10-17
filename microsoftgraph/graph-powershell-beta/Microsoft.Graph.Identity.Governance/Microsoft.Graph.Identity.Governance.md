@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 0eeb825e-404f-4bf7-8e91-0e888b5a47e9
+Module Guid: 17694a43-d54c-48f4-848e-5c25b83e053c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
 Help Version: 1.0.0.0
 Locale: en-US
@@ -311,6 +311,115 @@ Approval decisions associated with a request.
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
 Get steps from identityGovernance
 
+### [Get-MgIdentityGovernanceLifecycleWorkflow](Get-MgIdentityGovernanceLifecycleWorkflow.md)
+The workflows in the lifecycle workflows instance.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
+The customTaskExtension instance.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy.md)
+The unique identifier of the Azure AD user that created the custom task extension.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy.md)
+The unique identifier of the Azure AD user that modified the custom task extension last.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItem](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItem.md)
+Deleted workflows in your lifecycle workflows instance.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
+Deleted workflows that end up in the deletedItemsContainer.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope.md)
+The unique identifier of the Azure AD identity that last modified the workflow object.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun.md)
+Get runs from identityGovernance
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport.md)
+Represents the aggregation of task execution data for tasks within a workflow object.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult.md)
+Get userProcessingResults from identityGovernance
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion.md)
+The workflow versions that are available.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowExecutionScope](Get-MgIdentityGovernanceLifecycleWorkflowExecutionScope.md)
+The unique identifier of the Azure AD identity that last modified the workflow object.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRun](Get-MgIdentityGovernanceLifecycleWorkflowRun.md)
+Get runs from identityGovernance
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
+The related taskProcessingResults.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubject](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubject.md)
+The unique identifier of the Azure AD user targeted for the task execution.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultTask](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultTask.md)
+The related workflow task
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
+The associated individual user execution.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubject](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubject.md)
+The unique identifier of the AAD user targeted for the taskProcessingResult.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
+The associated individual task execution.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowSetting](Get-MgIdentityGovernanceLifecycleWorkflowSetting.md)
+Read the properties and relationships of a lifecycleManagementSettings object.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition](Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition.md)
+The definition of tasks within the lifecycle workflows instance.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReport](Get-MgIdentityGovernanceLifecycleWorkflowTaskReport.md)
+Represents the aggregation of task execution data for tasks within a workflow object.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTask](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTask.md)
+The related lifecycle workflow task.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskDefinition](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskDefinition.md)
+The taskDefinition associated with the related lifecycle workflow task.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
+The related lifecycle workflow taskProcessingResults.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubject](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubject.md)
+The unique identifier of the Azure AD user targeted for the task execution.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask.md)
+The related workflow task
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTemplate](Get-MgIdentityGovernanceLifecycleWorkflowTemplate.md)
+The workflow templates in the lifecycle workflow instance.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask.md)
+Represents the configured tasks to execute and their execution sequence within a workflow.
+This relationship is expanded by default.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
+The result of processing the task.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubject](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubject.md)
+The unique identifier of the Azure AD user targeted for the task execution.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultTask](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultTask.md)
+The related workflow task
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
+Get userProcessingResults from identityGovernance
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject.md)
+The unique identifier of the AAD user targeted for the taskProcessingResult.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
+The associated individual task execution.
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowVersion](Get-MgIdentityGovernanceLifecycleWorkflowVersion.md)
+The workflow versions that are available.
+
 ### [Get-MgIdentityGovernanceTermOfUseAgreement](Get-MgIdentityGovernanceTermOfUseAgreement.md)
 Represents a tenant's customizable terms of use agreement that's created and managed with Azure Active Directory (Azure AD).
 
@@ -560,6 +669,18 @@ The user's terms of use acceptance statuses.
 Read-only.
 Nullable.
 
+### [Initialize-MgIdentityGovernanceLifecycleWorkflow](Initialize-MgIdentityGovernanceLifecycleWorkflow.md)
+Run a workflow object on-demand.
+You can run any workflow on-demand, including scheduled workflows.
+Workflows created from the 'Real-time employee termination' template are run on-demand only.
+When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
+
+### [Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
+Run a workflow object on-demand.
+You can run any workflow on-demand, including scheduled workflows.
+Workflows created from the 'Real-time employee termination' template are run on-demand only.
+When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
+
 ### [Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation](Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation.md)
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
 Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
@@ -667,6 +788,21 @@ Deactivate the role that is assigned to the requestor.
 ### [Invoke-MgSelfPrivilegedRoleDeactivate](Invoke-MgSelfPrivilegedRoleDeactivate.md)
 Deactivate the role that is assigned to the requestor.
 
+### [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun](Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun.md)
+Invoke function summary
+
+### [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
+Invoke function summary
+
+### [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport](Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport.md)
+Invoke function summary
+
+### [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult](Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
+Invoke function summary
+
+### [Move-MgEntitlementManagementAccessPackageToCatalog](Move-MgEntitlementManagementAccessPackageToCatalog.md)
+Invoke action moveToCatalog
+
 ### [New-MgAccessReview](New-MgAccessReview.md)
 In the Azure AD access reviews feature, create a new accessReview object.
 Before making this request, the caller must have previously retrieved the list of business flow templates, to have the value of **businessFlowTemplateId** to include in the request.
@@ -743,7 +879,7 @@ Create new navigation property ref to incompatibleAccessPackages for identityGov
 Create new navigation property ref to incompatibleGroups for identityGovernance
 
 ### [New-MgEntitlementManagementAccessPackageResourceRequest](New-MgEntitlementManagementAccessPackageResourceRequest.md)
-Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, or the removal of a resource from a catalog.
+Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, update of a resource, or the removal of a resource from a catalog.
 A resource must be included in an access package catalog before a role of that resource can be added to an access package.
 
 ### [New-MgEntitlementManagementAccessPackageResourceRoleScope](New-MgEntitlementManagementAccessPackageResourceRoleScope.md)
@@ -827,6 +963,73 @@ Create new navigation property to userConsentRequests for identityGovernance
 
 ### [New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
 Create new navigation property to steps for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflow](New-MgIdentityGovernanceLifecycleWorkflow.md)
+Create a new workflow object.
+You can create up to 50 workflows in a tenant.
+
+### [New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
+Create a new customTaskExtension object.
+
+### [New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
+Create new navigation property to workflows for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion](New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion.md)
+Create a new version of the workflow object.
+
+### [New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun.md)
+Create new navigation property to runs for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport.md)
+Create new navigation property to taskReports for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult.md)
+Create new navigation property to userProcessingResults for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion.md)
+Create new navigation property to versions for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowNewVersion](New-MgIdentityGovernanceLifecycleWorkflowNewVersion.md)
+Create a new version of the workflow object.
+
+### [New-MgIdentityGovernanceLifecycleWorkflowRun](New-MgIdentityGovernanceLifecycleWorkflowRun.md)
+Create new navigation property to runs for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](New-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
+Create new navigation property to taskProcessingResults for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](New-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
+Create new navigation property to userProcessingResults for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](New-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
+Create new navigation property to taskProcessingResults for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowTaskDefinition](New-MgIdentityGovernanceLifecycleWorkflowTaskDefinition.md)
+Create new navigation property to taskDefinitions for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowTaskReport](New-MgIdentityGovernanceLifecycleWorkflowTaskReport.md)
+Create new navigation property to taskReports for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](New-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
+Create new navigation property to taskProcessingResults for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowTemplate](New-MgIdentityGovernanceLifecycleWorkflowTemplate.md)
+Create new navigation property to workflowTemplates for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowTemplateTask](New-MgIdentityGovernanceLifecycleWorkflowTemplateTask.md)
+Create new navigation property to tasks for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](New-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
+Create new navigation property to taskProcessingResults for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult](New-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
+Create new navigation property to userProcessingResults for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](New-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
+Create new navigation property to taskProcessingResults for identityGovernance
+
+### [New-MgIdentityGovernanceLifecycleWorkflowVersion](New-MgIdentityGovernanceLifecycleWorkflowVersion.md)
+Create new navigation property to versions for identityGovernance
 
 ### [New-MgIdentityGovernanceTermOfUseAgreement](New-MgIdentityGovernanceTermOfUseAgreement.md)
 Create a new agreement object.
@@ -1074,6 +1277,72 @@ Delete navigation property approval for identityGovernance
 ### [Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
 Delete navigation property steps for identityGovernance
 
+### [Remove-MgIdentityGovernanceLifecycleWorkflow](Remove-MgIdentityGovernanceLifecycleWorkflow.md)
+Delete navigation property workflows for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
+Delete navigation property customTaskExtensions for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItem](Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItem.md)
+Delete navigation property deletedItems for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
+Delete navigation property workflows for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun.md)
+Delete navigation property runs for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport.md)
+Delete navigation property taskReports for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult.md)
+Delete navigation property userProcessingResults for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion.md)
+Delete navigation property versions for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowRun](Remove-MgIdentityGovernanceLifecycleWorkflowRun.md)
+Delete navigation property runs for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Remove-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
+Delete navigation property taskProcessingResults for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](Remove-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
+Delete navigation property userProcessingResults for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](Remove-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
+Delete navigation property taskProcessingResults for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowSetting](Remove-MgIdentityGovernanceLifecycleWorkflowSetting.md)
+Delete navigation property settings for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowTaskDefinition](Remove-MgIdentityGovernanceLifecycleWorkflowTaskDefinition.md)
+Delete navigation property taskDefinitions for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowTaskReport](Remove-MgIdentityGovernanceLifecycleWorkflowTaskReport.md)
+Delete navigation property taskReports for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](Remove-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
+Delete navigation property taskProcessingResults for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowTemplate](Remove-MgIdentityGovernanceLifecycleWorkflowTemplate.md)
+Delete navigation property workflowTemplates for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowTemplateTask](Remove-MgIdentityGovernanceLifecycleWorkflowTemplateTask.md)
+Delete navigation property tasks for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](Remove-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
+Delete navigation property taskProcessingResults for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult](Remove-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
+Delete navigation property userProcessingResults for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](Remove-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
+Delete navigation property taskProcessingResults for identityGovernance
+
+### [Remove-MgIdentityGovernanceLifecycleWorkflowVersion](Remove-MgIdentityGovernanceLifecycleWorkflowVersion.md)
+Delete navigation property versions for identityGovernance
+
 ### [Remove-MgIdentityGovernanceTermOfUseAgreement](Remove-MgIdentityGovernanceTermOfUseAgreement.md)
 Delete navigation property agreements for identityGovernance
 
@@ -1228,6 +1497,23 @@ Resets decisions of all accessReviewInstanceDecisionItem objects on an accessRev
 ### [Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
 
+### [Restore-MgIdentityGovernanceLifecycleWorkflow](Restore-MgIdentityGovernanceLifecycleWorkflow.md)
+Restore a workflow that has been deleted.
+You can only restore a workflow that was deleted within the last 30 days before Azure AD automatically permanently deletes it.
+
+### [Restore-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Restore-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
+Restore a workflow that has been deleted.
+You can only restore a workflow that was deleted within the last 30 days before Azure AD automatically permanently deletes it.
+
+### [Resume-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Resume-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
+Invoke action resume
+
+### [Resume-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](Resume-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
+Invoke action resume
+
+### [Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
+Invoke action resume
+
 ### [Select-MgEntitlementManagementAccessPackage](Select-MgEntitlementManagementAccessPackage.md)
 Select matching entitlement management accessPackage
 
@@ -1247,6 +1533,9 @@ Send a reminder to the reviewers of a currently active accessReviewInstance.
 
 ### [Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder](Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder.md)
 Send a reminder to the reviewers of a currently active accessReviewInstance.
+
+### [Set-MgEntitlementManagementAccessPackageAssignmentPolicy](Set-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
+Update the navigation property accessPackageAssignmentPolicies in identityGovernance
 
 ### [Split-MgEntitlementManagementConnectedOrganization](Split-MgEntitlementManagementConnectedOrganization.md)
 Split elements of a connectedOrganization
@@ -1483,6 +1772,72 @@ Update the navigation property approval in identityGovernance
 
 ### [Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
 Update the navigation property steps in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflow](Update-MgIdentityGovernanceLifecycleWorkflow.md)
+Update the navigation property workflows in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
+Update the navigation property customTaskExtensions in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowDeletedItem](Update-MgIdentityGovernanceLifecycleWorkflowDeletedItem.md)
+Update the navigation property deletedItems in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
+Update the navigation property workflows in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun.md)
+Update the navigation property runs in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport.md)
+Update the navigation property taskReports in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult.md)
+Update the navigation property userProcessingResults in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion.md)
+Update the navigation property versions in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowRun](Update-MgIdentityGovernanceLifecycleWorkflowRun.md)
+Update the navigation property runs in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Update-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
+Update the navigation property taskProcessingResults in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](Update-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
+Update the navigation property userProcessingResults in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](Update-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
+Update the navigation property taskProcessingResults in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowSetting](Update-MgIdentityGovernanceLifecycleWorkflowSetting.md)
+Update the properties of a lifecycleManagementSettings object.
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowTaskDefinition](Update-MgIdentityGovernanceLifecycleWorkflowTaskDefinition.md)
+Update the navigation property taskDefinitions in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowTaskReport](Update-MgIdentityGovernanceLifecycleWorkflowTaskReport.md)
+Update the navigation property taskReports in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](Update-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
+Update the navigation property taskProcessingResults in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowTemplate](Update-MgIdentityGovernanceLifecycleWorkflowTemplate.md)
+Update the navigation property workflowTemplates in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowTemplateTask](Update-MgIdentityGovernanceLifecycleWorkflowTemplateTask.md)
+Update the navigation property tasks in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](Update-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
+Update the navigation property taskProcessingResults in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult](Update-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
+Update the navigation property userProcessingResults in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](Update-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
+Update the navigation property taskProcessingResults in identityGovernance
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowVersion](Update-MgIdentityGovernanceLifecycleWorkflowVersion.md)
+Update the navigation property versions in identityGovernance
 
 ### [Update-MgIdentityGovernanceTermOfUseAgreement](Update-MgIdentityGovernanceTermOfUseAgreement.md)
 Update the navigation property agreements in identityGovernance

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-Module Guid: 1dc0c2b3-83be-492e-9ff3-f0941662892d
+Module Guid: 488ea4d2-2d4b-4aa3-9edd-3e764d57a0e7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -543,6 +543,9 @@ Download Apple push notification certificate signing request
 ### [New-MgDeviceManagementComanagedDeviceLogCollectionRequestDownloadUrl](New-MgDeviceManagementComanagedDeviceLogCollectionRequestDownloadUrl.md)
 Invoke action createDownloadUrl
 
+### [New-MgDeviceManagementComanagedDeviceRemoteHelpSession](New-MgDeviceManagementComanagedDeviceRemoteHelpSession.md)
+Remote help - Create session with a specific device
+
 ### [New-MgDeviceManagementConfigurationPolicyCopy](New-MgDeviceManagementConfigurationPolicyCopy.md)
 Invoke action createCopy
 
@@ -563,6 +566,9 @@ Invoke action createDeviceLogCollectionRequest
 
 ### [New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl](New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl.md)
 Invoke action createDownloadUrl
+
+### [New-MgDeviceManagementManagedDeviceRemoteHelpSession](New-MgDeviceManagementManagedDeviceRemoteHelpSession.md)
+Remote help - Create session with a specific device
 
 ### [New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature](New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature.md)
 Invoke action windowsDefenderUpdateSignatures
@@ -619,8 +625,14 @@ Invoke action requestSignupUrl
 ### [Request-MgDeviceManagementComanagedDeviceRemoteAssistance](Request-MgDeviceManagementComanagedDeviceRemoteAssistance.md)
 Request remote assistance
 
+### [Request-MgDeviceManagementComanagedDeviceRemoteHelpSessionAccess](Request-MgDeviceManagementComanagedDeviceRemoteHelpSessionAccess.md)
+Remote help - Request Remote help session access permission for an existing session
+
 ### [Request-MgDeviceManagementManagedDeviceRemoteAssistance](Request-MgDeviceManagementManagedDeviceRemoteAssistance.md)
 Request remote assistance
+
+### [Request-MgDeviceManagementManagedDeviceRemoteHelpSessionAccess](Request-MgDeviceManagementManagedDeviceRemoteHelpSessionAccess.md)
+Remote help - Request Remote help session access permission for an existing session
 
 ### [Request-MgDeviceManagementMicrosoftTunnelSiteUpgrade](Request-MgDeviceManagementMicrosoftTunnelSiteUpgrade.md)
 Invoke action requestUpgrade
@@ -657,6 +669,10 @@ Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
 ### [Restore-MgDeviceManagementManagedDevicePasscode](Restore-MgDeviceManagementManagedDevicePasscode.md)
 Recover passcode
+
+### [Restore-MgDeviceManagementVirtualEndpointCloudPc](Restore-MgDeviceManagementVirtualEndpointCloudPc.md)
+Restore a specific Cloud PC.
+Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
 ### [Revoke-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken](Revoke-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken.md)
 Invoke action revokeToken
@@ -757,6 +773,9 @@ After the review is completed, use this API again to set the Cloud PC back to a 
 
 ### [Set-MgDeviceManagementManagedDeviceName](Set-MgDeviceManagementManagedDeviceName.md)
 Set device name of the device.
+
+### [Set-MgDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](Set-MgDeviceManagementMonitoringAlertRecordPortalNotificationAsSent.md)
+Invoke action setPortalNotificationAsSent
 
 ### [Set-MgDeviceManagementResourceAccessProfile](Set-MgDeviceManagementResourceAccessProfile.md)
 Invoke action assign

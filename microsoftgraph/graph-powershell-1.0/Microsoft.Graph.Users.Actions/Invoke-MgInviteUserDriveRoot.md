@@ -12,7 +12,7 @@ Sends a sharing invitation for a **driveItem**.\nA sharing invitation provides p
 
 ## SYNTAX
 
-### InviteExpanded (Default)
+### InviteExpanded1 (Default)
 ```
 Invoke-MgInviteUserDriveRoot -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
@@ -20,14 +20,14 @@ Invoke-MgInviteUserDriveRoot -DriveId <String> -UserId <String> [-AdditionalProp
  [-Roles <String[]>] [-SendInvitation] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Invite
+### Invite1
 ```
 Invoke-MgInviteUserDriveRoot -DriveId <String> -UserId <String>
  -BodyParameter <IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### InviteViaIdentityExpanded
+### InviteViaIdentityExpanded1
 ```
 Invoke-MgInviteUserDriveRoot -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
@@ -35,7 +35,7 @@ Invoke-MgInviteUserDriveRoot -InputObject <IUsersActionsIdentity> [-AdditionalPr
  [-Roles <String[]>] [-SendInvitation] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### InviteViaIdentity
+### InviteViaIdentity1
 ```
 Invoke-MgInviteUserDriveRoot -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
@@ -54,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
+Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Invite, InviteViaIdentity
+Parameter Sets: Invite1, InviteViaIdentity1
 Aliases:
 
 Required: True
@@ -85,7 +85,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: InviteExpanded, Invite
+Parameter Sets: InviteExpanded1, Invite1
 Aliases:
 
 Required: True
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
+Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -116,7 +116,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: InviteViaIdentityExpanded, InviteViaIdentity
+Parameter Sets: InviteViaIdentityExpanded1, InviteViaIdentity1
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
+Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
+Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -162,7 +162,7 @@ To construct, please use Get-Help -Online and see NOTES section for RECIPIENTS p
 
 ```yaml
 Type: IMicrosoftGraphDriveRecipient[]
-Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
+Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
+Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
+Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
+Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
+Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -237,7 +237,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: InviteExpanded, Invite
+Parameter Sets: InviteExpanded1, Invite1
 Aliases:
 
 Required: True

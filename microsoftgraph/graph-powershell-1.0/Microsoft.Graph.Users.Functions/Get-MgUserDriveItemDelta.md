@@ -14,23 +14,30 @@ Invoke function delta
 
 ### Delta2 (Default)
 ```
-Get-MgUserDriveItemDelta -DriveId <String> -DriveItemId <String> -UserId <String> [<CommonParameters>]
+Get-MgUserDriveItemDelta -DriveId <String> -DriveItemId <String> -UserId <String> [-Count] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ### Delta3
 ```
-Get-MgUserDriveItemDelta -DriveId <String> -DriveItemId <String> -UserId <String> -Token <String>
+Get-MgUserDriveItemDelta -DriveId <String> -DriveItemId <String> -UserId <String> -Token <String> [-Count]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity3
 ```
-Get-MgUserDriveItemDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+Get-MgUserDriveItemDelta -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity2
 ```
-Get-MgUserDriveItemDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+Get-MgUserDriveItemDelta -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,6 +46,21 @@ Invoke function delta
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -DriveId
 key: id of drive
@@ -70,6 +92,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -83,6 +120,51 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Property
+Select properties to be returned
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -101,6 +183,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 key: id of user
 
@@ -110,6 +207,21 @@ Parameter Sets: Delta2, Delta3
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedAppRegistration
 
 ## SYNOPSIS
-Get managedAppRegistrations from deviceAppManagement
+The managed app registrations.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtManagedAppRegistration -InputObject <IDevicesCorporateManageme
 ```
 
 ## DESCRIPTION
-Get managedAppRegistrations from deviceAppManagement
+The managed app registrations.
 
 ## EXAMPLES
 
@@ -235,7 +235,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration
 ## NOTES
 Please use Get-Help -Online.
 

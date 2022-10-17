@@ -18,13 +18,13 @@ You will need to register the calling bot and go through the list of permissions
 New-MgCommunicationCall [-AdditionalProperties <Hashtable>]
  [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>] [-CallChainId <String>]
  [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>] [-CallbackUri <String>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-Direction <String>] [-Id <String>]
- [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <Hashtable>]
- [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingInfo <Hashtable>] [-MyParticipantId <String>]
- [-Operations <IMicrosoftGraphCommsOperation[]>] [-Participants <IMicrosoftGraphParticipant[]>]
- [-RequestedModalities <String[]>] [-ResultInfo <IMicrosoftGraphResultInfo>]
- [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>] [-Subject <String>]
- [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-TenantId <String>]
+ [-ChatInfo <IMicrosoftGraphChatInfo>] [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>]
+ [-Direction <String>] [-Id <String>] [-IncomingContext <IMicrosoftGraphIncomingContext>]
+ [-MediaConfig <Hashtable>] [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingInfo <Hashtable>]
+ [-MyParticipantId <String>] [-Operations <IMicrosoftGraphCommsOperation[]>]
+ [-Participants <IMicrosoftGraphParticipant[]>] [-RequestedModalities <String[]>]
+ [-ResultInfo <IMicrosoftGraphResultInfo>] [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>]
+ [-Subject <String>] [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-TenantId <String>]
  [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -333,6 +333,22 @@ To construct, please use Get-Help -Online and see NOTES section for CHATINFO pro
 
 ```yaml
 Type: IMicrosoftGraphChatInfo
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContentSharingSessions
+.
+To construct, please use Get-Help -Online and see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphContentSharingSession[]
 Parameter Sets: CreateExpanded
 Aliases:
 

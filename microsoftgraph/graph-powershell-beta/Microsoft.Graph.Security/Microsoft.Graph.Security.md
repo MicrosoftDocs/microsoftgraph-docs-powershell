@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: 0287aecd-e0a1-4ddb-b218-8b2ad37fc84f
+Module Guid: de4511f6-87e6-4cdc-b378-a4baccff0ff7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -59,7 +59,7 @@ Notifications for suspicious or potential security issues in a customer's tenant
 Represents an attack simulation training campaign in a tenant.
 
 ### [Get-MgSecurityAttackSimulationAutomation](Get-MgSecurityAttackSimulationAutomation.md)
-Represents simulation automations created to run on a tenant.
+Represents simulation automation created to run on a tenant.
 
 ### [Get-MgSecurityAttackSimulationAutomationRun](Get-MgSecurityAttackSimulationAutomationRun.md)
 A collection of simulation automation runs.
@@ -428,9 +428,6 @@ Release the non-custodial data source from the case.
 
 ### [Remove-MgSecurityAction](Remove-MgSecurityAction.md)
 Delete navigation property securityActions for security
-
-### [Remove-MgSecurityAlert](Remove-MgSecurityAlert.md)
-Delete navigation property alerts for security
 
 ### [Remove-MgSecurityAttackSimulation](Remove-MgSecurityAttackSimulation.md)
 Delete navigation property simulations for security

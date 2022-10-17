@@ -80,7 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -224,7 +225,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphCloudPcServicePlan>`: cloudPcServicePlan
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name for the service plan. Read-only.
   - `[RamInGb <Int32?>]`: The size of the RAM in GB. Read-only.
   - `[StorageInGb <Int32?>]`: The size of the OS Disk in GB. Read-only.

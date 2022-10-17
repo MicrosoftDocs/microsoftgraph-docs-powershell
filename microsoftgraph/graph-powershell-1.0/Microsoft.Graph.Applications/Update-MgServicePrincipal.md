@@ -38,7 +38,8 @@ Update-MgServicePrincipal -ServicePrincipalId <String> [-AccountEnabled] [-AddIn
  [-ServicePrincipalType <String>] [-SignInAudience <String>] [-Tags <String[]>]
  [-TokenEncryptionKeyId <String>] [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
@@ -73,7 +74,8 @@ Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-AccountEnabled]
  [-ServicePrincipalType <String>] [-SignInAudience <String>] [-Tags <String[]>]
  [-TokenEncryptionKeyId <String>] [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
@@ -1003,6 +1005,22 @@ To construct, please use Get-Help -Online and see NOTES section for TRANSITIVEME
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -VerifiedPublisher
+verifiedPublisher
+To construct, please use Get-Help -Online and see NOTES section for VERIFIEDPUBLISHER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVerifiedPublisher
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

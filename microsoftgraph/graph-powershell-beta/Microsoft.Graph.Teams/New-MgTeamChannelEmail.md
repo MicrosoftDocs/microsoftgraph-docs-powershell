@@ -15,12 +15,12 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ## SYNTAX
 
-### Provision (Default)
+### Provision1 (Default)
 ```
 New-MgTeamChannelEmail -ChannelId <String> -TeamId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ProvisionViaIdentity
+### ProvisionViaIdentity1
 ```
 New-MgTeamChannelEmail -InputObject <ITeamsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -49,7 +49,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Provision
+Parameter Sets: Provision1
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: ProvisionViaIdentity
+Parameter Sets: ProvisionViaIdentity1
 Aliases:
 
 Required: True
@@ -80,7 +80,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: Provision
+Parameter Sets: Provision1
 Aliases:
 
 Required: True

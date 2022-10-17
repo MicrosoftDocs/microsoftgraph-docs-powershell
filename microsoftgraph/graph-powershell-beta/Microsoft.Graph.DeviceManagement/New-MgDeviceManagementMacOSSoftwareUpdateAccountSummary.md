@@ -143,7 +143,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -298,9 +299,9 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphMacOSSoftwareUpdateAccountSummary>`: MacOS software update account summary report for a device and user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CategorySummaries <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]>]`: Summary of the updates by category.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DeviceId <String>]`: The device ID.
     - `[DisplayName <String>]`: The name of the report
     - `[FailedUpdateCount <Int32?>]`: Number of failed updates on the device
@@ -309,7 +310,7 @@ BODYPARAMETER `<IMicrosoftGraphMacOSSoftwareUpdateAccountSummary>`: MacOS softwa
     - `[TotalUpdateCount <Int32?>]`: Number of total updates on the device
     - `[UpdateCategory <MacOSSoftwareUpdateCategory?>]`: MacOS Software Update Category
     - `[UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>]`: Summary of the update states.
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[DisplayName <String>]`: Human readable name of the software update
       - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device and product key was updated.
       - `[ProductKey <String>]`: Product key of the software update.
@@ -329,7 +330,7 @@ BODYPARAMETER `<IMicrosoftGraphMacOSSoftwareUpdateAccountSummary>`: MacOS softwa
   - `[UserPrincipalName <String>]`: The user principal name
 
 CATEGORYSUMMARIES <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary\[]>: Summary of the updates by category.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeviceId <String>]`: The device ID.
   - `[DisplayName <String>]`: The name of the report
   - `[FailedUpdateCount <Int32?>]`: Number of failed updates on the device
@@ -338,7 +339,7 @@ CATEGORYSUMMARIES <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary\[]>: Summar
   - `[TotalUpdateCount <Int32?>]`: Number of total updates on the device
   - `[UpdateCategory <MacOSSoftwareUpdateCategory?>]`: MacOS Software Update Category
   - `[UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>]`: Summary of the update states.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DisplayName <String>]`: Human readable name of the software update
     - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device and product key was updated.
     - `[ProductKey <String>]`: Product key of the software update.

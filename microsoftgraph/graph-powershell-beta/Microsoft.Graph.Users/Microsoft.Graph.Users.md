@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: e18ea003-b5a1-4e74-9673-93fd26609b2f
+Module Guid: e6a3188f-5cb9-45cf-9d61-7310136f477d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -323,9 +323,6 @@ Create new navigation property to multiValueExtendedProperties for users
 ### [New-MgUserOutlookTaskSingleValueExtendedProperty](New-MgUserOutlookTaskSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for users
 
-### [New-MgUserPhoto](New-MgUserPhoto.md)
-Create new navigation property to photos for users
-
 ### [New-MgUserTodoList](New-MgUserTodoList.md)
 Create a new lists object.
 
@@ -339,9 +336,6 @@ Create a new task object in a specified todoTaskList.
 Add a new taskFileAttachment object to a todoTask.
 This operation limits the size of the attachment you can add to under 3 MB.
 If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
-
-### [New-MgUserTodoListTaskAttachmentSession](New-MgUserTodoListTaskAttachmentSession.md)
-Create new navigation property to attachmentSessions for users
 
 ### [New-MgUserTodoListTaskChecklistItem](New-MgUserTodoListTaskChecklistItem.md)
 Create new navigation property to checklistItems for users
@@ -435,9 +429,6 @@ Delete navigation property multiValueExtendedProperties for users
 ### [Remove-MgUserOutlookTaskSingleValueExtendedProperty](Remove-MgUserOutlookTaskSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for users
 
-### [Remove-MgUserPhoto](Remove-MgUserPhoto.md)
-Delete navigation property photo for users
-
 ### [Remove-MgUserSetting](Remove-MgUserSetting.md)
 Delete navigation property settings for users
 
@@ -509,9 +500,6 @@ Update the navigation property masterCategories in users
 ### [Update-MgUserOutlookTask](Update-MgUserOutlookTask.md)
 Update the navigation property tasks in users
 
-### [Update-MgUserOutlookTaskAttachment](Update-MgUserOutlookTaskAttachment.md)
-Update the navigation property attachments in users
-
 ### [Update-MgUserOutlookTaskFolder](Update-MgUserOutlookTaskFolder.md)
 Update the navigation property taskFolders in users
 
@@ -523,9 +511,6 @@ Update the navigation property singleValueExtendedProperties in users
 
 ### [Update-MgUserOutlookTaskFolderTask](Update-MgUserOutlookTaskFolderTask.md)
 Update the navigation property tasks in users
-
-### [Update-MgUserOutlookTaskFolderTaskAttachment](Update-MgUserOutlookTaskFolderTaskAttachment.md)
-Update the navigation property attachments in users
 
 ### [Update-MgUserOutlookTaskFolderTaskMultiValueExtendedProperty](Update-MgUserOutlookTaskFolderTaskMultiValueExtendedProperty.md)
 Update the navigation property multiValueExtendedProperties in users
@@ -547,9 +532,6 @@ Update the navigation property singleValueExtendedProperties in users
 
 ### [Update-MgUserOutlookTaskGroupTaskFolderTask](Update-MgUserOutlookTaskGroupTaskFolderTask.md)
 Update the navigation property tasks in users
-
-### [Update-MgUserOutlookTaskGroupTaskFolderTaskAttachment](Update-MgUserOutlookTaskGroupTaskFolderTaskAttachment.md)
-Update the navigation property attachments in users
 
 ### [Update-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedProperty](Update-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedProperty.md)
 Update the navigation property multiValueExtendedProperties in users
@@ -589,9 +571,6 @@ Update the navigation property extensions in users
 
 ### [Update-MgUserTodoListTask](Update-MgUserTodoListTask.md)
 Update the navigation property tasks in users
-
-### [Update-MgUserTodoListTaskAttachment](Update-MgUserTodoListTaskAttachment.md)
-Update the navigation property attachments in users
 
 ### [Update-MgUserTodoListTaskAttachmentSession](Update-MgUserTodoListTaskAttachmentSession.md)
 Update the navigation property attachmentSessions in users

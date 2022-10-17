@@ -15,25 +15,25 @@ Update the ref of navigation property rubric in education
 ### SetExpanded1 (Default)
 ```
 Set-MgEducationMeAssignmentRubricByRef -EducationAssignmentId <String> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OdataId <String>] [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set1
 ```
-Set-MgEducationMeAssignmentRubricByRef -EducationAssignmentId <String> -BodyParameter <Hashtable> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgEducationMeAssignmentRubricByRef -EducationAssignmentId <String> -BodyParameter <IReferenceUpdate>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded1
 ```
 Set-MgEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OdataId <String>] [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity1
 ```
-Set-MgEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity> -BodyParameter <Hashtable> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity> -BodyParameter <IReferenceUpdate>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Hashtable
+Type: IReferenceUpdate
 Parameter Sets: Set1, SetViaIdentity1
 Aliases:
 
@@ -102,6 +102,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -OdataId
+.
+
+```yaml
+Type: String
+Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OdataType
+.
+
+```yaml
+Type: String
+Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -157,7 +187,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### System.Collections.Hashtable
+### Microsoft.Graph.PowerShell.Models.IReferenceUpdate
 ## OUTPUTS
 
 ### System.Boolean

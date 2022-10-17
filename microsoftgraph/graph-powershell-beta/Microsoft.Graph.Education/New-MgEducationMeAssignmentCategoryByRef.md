@@ -15,24 +15,24 @@ Create new navigation property ref to categories for education
 ### CreateExpanded1 (Default)
 ```
 New-MgEducationMeAssignmentCategoryByRef -EducationAssignmentId <String> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgEducationMeAssignmentCategoryByRef -EducationAssignmentId <String> -BodyParameter <Hashtable> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgEducationMeAssignmentCategoryByRef -EducationAssignmentId <String> -BodyParameter <IReferenceCreate>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgEducationMeAssignmentCategoryByRef -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
-New-MgEducationMeAssignmentCategoryByRef -InputObject <IEducationIdentity> -BodyParameter <Hashtable>
+New-MgEducationMeAssignmentCategoryByRef -InputObject <IEducationIdentity> -BodyParameter <IReferenceCreate>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Hashtable
+Type: IReferenceCreate
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -102,6 +102,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -OdataId
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -157,7 +172,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### System.Collections.Hashtable
+### Microsoft.Graph.PowerShell.Models.IReferenceCreate
 ## OUTPUTS
 
 ### System.Boolean

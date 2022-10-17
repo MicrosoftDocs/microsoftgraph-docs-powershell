@@ -14,25 +14,25 @@ Update the ref of navigation property manager in users
 
 ### SetExpanded (Default)
 ```
-Set-MgUserManagerByRef -UserId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgUserManagerByRef -UserId <String> [-AdditionalProperties <Hashtable>] [-OdataId <String>]
+ [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgUserManagerByRef -UserId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+Set-MgUserManagerByRef -UserId <String> -BodyParameter <IReferenceUpdate> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
-Set-MgUserManagerByRef -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgUserManagerByRef -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-OdataId <String>]
+ [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
+Set-MgUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IReferenceUpdate> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Hashtable
+Type: IReferenceUpdate
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -99,6 +99,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -OdataId
+.
+
+```yaml
+Type: String
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OdataType
+.
+
+```yaml
+Type: String
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -168,8 +198,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IReferenceUpdate
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-### System.Collections.Hashtable
 ## OUTPUTS
 
 ### System.Boolean

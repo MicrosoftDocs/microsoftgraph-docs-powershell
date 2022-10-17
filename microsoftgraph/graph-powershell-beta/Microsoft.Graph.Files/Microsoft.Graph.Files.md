@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Files
-Module Guid: ca8ecfdf-51cc-4bd4-8802-6a7424ca81fb
+Module Guid: dd8931e5-f432-4bb5-83e3-e87f379fb41e
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1703,6 +1703,9 @@ The content stream, if the item represents a file.
 ### [Set-MgDriveItemListItemDriveItemContent](Set-MgDriveItemListItemDriveItemContent.md)
 The content stream, if the item represents a file.
 
+### [Set-MgDriveItemSensitivityLabel](Set-MgDriveItemSensitivityLabel.md)
+Invoke action assignSensitivityLabel
+
 ### [Set-MgDriveItemVersionContent](Set-MgDriveItemVersionContent.md)
 Update content for the navigation property versions in drives
 
@@ -1717,6 +1720,9 @@ The content stream, if the item represents a file.
 
 ### [Set-MgDriveRootListItemDriveItemContent](Set-MgDriveRootListItemDriveItemContent.md)
 The content stream, if the item represents a file.
+
+### [Set-MgDriveRootSensitivityLabel](Set-MgDriveRootSensitivityLabel.md)
+Invoke action assignSensitivityLabel
 
 ### [Set-MgDriveRootVersionContent](Set-MgDriveRootVersionContent.md)
 Update content for the navigation property versions in drives

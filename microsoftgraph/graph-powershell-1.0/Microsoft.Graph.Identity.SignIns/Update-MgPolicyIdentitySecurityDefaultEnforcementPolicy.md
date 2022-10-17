@@ -125,7 +125,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -223,7 +224,7 @@ BODYPARAMETER `<IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy>`: iden
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[IsEnabled <Boolean?>]`: If set to true, Azure Active Directory security defaults is enabled for the tenant.
 
 ## RELATED LINKS

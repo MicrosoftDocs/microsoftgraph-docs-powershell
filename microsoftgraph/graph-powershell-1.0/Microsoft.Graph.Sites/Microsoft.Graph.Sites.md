@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: ba4e8a38-d63b-473d-afbc-9da8e8e7a1bb
+Module Guid: 5d43ac89-8165-44c5-8a58-89616c79ab3d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -795,9 +795,6 @@ Associate a published [content type][contentType] present in a content type hub 
 
 ### [Join-MgSiteListContentTypeWithHubSite](Join-MgSiteListContentTypeWithHubSite.md)
 Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
-
-### [New-MgGroupSite](New-MgGroupSite.md)
-Create new navigation property to sites for groups
 
 ### [New-MgGroupSiteColumn](New-MgGroupSiteColumn.md)
 Create a column for a [site][site] with a request that specifies a [columnDefinition][columnDefinition].

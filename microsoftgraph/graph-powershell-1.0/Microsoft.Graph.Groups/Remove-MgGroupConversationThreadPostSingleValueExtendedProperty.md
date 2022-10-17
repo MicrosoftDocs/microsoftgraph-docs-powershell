@@ -12,7 +12,7 @@ Delete navigation property singleValueExtendedProperties for groups
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
 Remove-MgGroupConversationThreadPostSingleValueExtendedProperty -ConversationId <String>
  -ConversationThreadId <String> -GroupId <String> -PostId <String>
@@ -20,7 +20,7 @@ Remove-MgGroupConversationThreadPostSingleValueExtendedProperty -ConversationId 
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgGroupConversationThreadPostSingleValueExtendedProperty -InputObject <IGroupsIdentity>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +38,7 @@ key: id of conversation
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -53,7 +53,7 @@ key: id of conversationThread
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -68,7 +68,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ key: id of post
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ key: id of singleValueLegacyExtendedProperty
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True

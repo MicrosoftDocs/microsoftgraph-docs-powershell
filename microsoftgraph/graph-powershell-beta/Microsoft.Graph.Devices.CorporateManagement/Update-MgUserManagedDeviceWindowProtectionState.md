@@ -182,7 +182,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -534,10 +535,10 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AntiMalwareVersion <String>]`: Current anti malware version
   - `[DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]`: Device malware list
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
     - `[Category <WindowsMalwareCategory?>]`: Malware category id
     - `[DetectionCount <Int32?>]`: Number of times the malware is detected
@@ -569,7 +570,7 @@ BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection statu
   - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
 DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState\[]>: Device malware list
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
   - `[Category <WindowsMalwareCategory?>]`: Malware category id
   - `[DetectionCount <Int32?>]`: Number of times the malware is detected

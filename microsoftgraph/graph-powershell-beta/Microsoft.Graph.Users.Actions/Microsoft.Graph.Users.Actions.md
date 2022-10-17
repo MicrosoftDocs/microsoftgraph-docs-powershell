@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: cbff4720-eedf-48fa-bae1-7cf57bd7f412
+Module Guid: c3c09d2d-df47-4136-bc57-3d9e0f143ab7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -30,6 +30,12 @@ The status of the accessReviewInstance must be `Completed` to call this method.
 
 ### [Clear-MgUserAndBlockManagedApp](Clear-MgUserAndBlockManagedApp.md)
 Blocks the managed app user from app check-in.
+
+### [Clear-MgUserChatMessageReaction](Clear-MgUserChatMessageReaction.md)
+Invoke action unsetReaction
+
+### [Clear-MgUserChatMessageReplyReaction](Clear-MgUserChatMessageReplyReaction.md)
+Invoke action unsetReaction
 
 ### [Clear-MgUserManagedAppRegistrationByAzureAdDeviceId](Clear-MgUserManagedAppRegistrationByAzureAdDeviceId.md)
 Issues a wipe operation on an app registration with specified aad device Id.
@@ -389,6 +395,9 @@ Invoke action downloadAppDiagnostics
 
 ### [Invoke-MgDownUserManagedDeviceShut](Invoke-MgDownUserManagedDeviceShut.md)
 Shut down device
+
+### [Invoke-MgEnrollUserManagedDeviceNowAction](Invoke-MgEnrollUserManagedDeviceNowAction.md)
+Trigger comanagement enrollment action on ConfigurationManager client
 
 ### [Invoke-MgExecuteUserManagedDeviceAction](Invoke-MgExecuteUserManagedDeviceAction.md)
 Invoke action executeAction
@@ -807,6 +816,9 @@ Invoke action createDeviceLogCollectionRequest
 ### [New-MgUserManagedDeviceLogCollectionResponseDownloadUrl](New-MgUserManagedDeviceLogCollectionResponseDownloadUrl.md)
 Invoke action createDownloadUrl
 
+### [New-MgUserManagedDeviceRemoteHelpSession](New-MgUserManagedDeviceRemoteHelpSession.md)
+Remote help - Create session with a specific device
+
 ### [New-MgUserManagedDeviceWindowsDefenderUpdateSignature](New-MgUserManagedDeviceWindowsDefenderUpdateSignature.md)
 Invoke action windowsDefenderUpdateSignatures
 
@@ -908,6 +920,9 @@ Change the account type of the user on a specific Cloud PC.
 ### [Request-MgUserManagedDeviceRemoteAssistance](Request-MgUserManagedDeviceRemoteAssistance.md)
 Request remote assistance
 
+### [Request-MgUserManagedDeviceRemoteHelpSessionAccess](Request-MgUserManagedDeviceRemoteHelpSessionAccess.md)
+Remote help - Request Remote help session access permission for an existing session
+
 ### [Reset-MgUserAuthenticationMethodPassword](Reset-MgUserAuthenticationMethodPassword.md)
 Invoke action resetPassword
 
@@ -932,6 +947,10 @@ If an item was accidentally deleted, you can fully restore the item.
 This is not applicable to security groups, which are deleted permanently.
 A recently deleted item will remain available for up to 30 days.
 After 30 days, the item is permanently deleted.
+
+### [Restore-MgUserCloudPc](Restore-MgUserCloudPc.md)
+Restore a specific Cloud PC.
+Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
 ### [Restore-MgUserDriveItem](Restore-MgUserDriveItem.md)
 Restore a driveItem that has been deleted and is currently in the recycle bin.
@@ -1026,11 +1045,23 @@ Send a reminder to the reviewers of a currently active accessReviewInstance.
 Send an activity feed notification to a user.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
+### [Set-MgUserChatMessageReaction](Set-MgUserChatMessageReaction.md)
+Invoke action setReaction
+
+### [Set-MgUserChatMessageReplyReaction](Set-MgUserChatMessageReplyReaction.md)
+Invoke action setReaction
+
 ### [Set-MgUserDeviceEnrollmentConfiguration](Set-MgUserDeviceEnrollmentConfiguration.md)
 Invoke action assign
 
 ### [Set-MgUserDeviceEnrollmentConfigurationPriority](Set-MgUserDeviceEnrollmentConfigurationPriority.md)
 Invoke action setPriority
+
+### [Set-MgUserDriveItemSensitivityLabel](Set-MgUserDriveItemSensitivityLabel.md)
+Invoke action assignSensitivityLabel
+
+### [Set-MgUserDriveRootSensitivityLabel](Set-MgUserDriveRootSensitivityLabel.md)
+Invoke action assignSensitivityLabel
 
 ### [Set-MgUserLicense](Set-MgUserLicense.md)
 Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings.

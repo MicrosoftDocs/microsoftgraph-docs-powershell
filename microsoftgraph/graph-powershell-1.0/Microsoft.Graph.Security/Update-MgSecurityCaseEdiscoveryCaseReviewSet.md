@@ -157,7 +157,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -280,7 +281,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryReviewSet1>`: ediscoveryReviewS
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: 
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>]`: Represents queries within the review set.
     - `[ContentQuery <String>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -289,7 +290,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryReviewSet1>`: ediscoveryReviewS
     - `[DisplayName <String>]`: 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -359,6 +360,6 @@ QUERIES <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery\[]>: Represents queries
   - `[DisplayName <String>]`: 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Create new navigation property to updatableAssets for admin
+Create a new updatableAssetGroup object.
+The **updatableAssetGroup** resource inherits from updatableAsset.
 
 ## SYNTAX
 
@@ -24,16 +25,19 @@ New-MgWindowsUpdatesUpdatableAsset -BodyParameter <Hashtable> [-WhatIf] [-Confir
 ```
 
 ## DESCRIPTION
-Create new navigation property to updatableAssets for admin
+Create a new updatableAssetGroup object.
+The **updatableAssetGroup** resource inherits from updatableAsset.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsUpdates.updatableAssetGroup"
+}
+New-MgWindowsUpdatesUpdatableAsset -BodyParameter $params
+```
 
 ## PARAMETERS
 
@@ -68,7 +72,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: String

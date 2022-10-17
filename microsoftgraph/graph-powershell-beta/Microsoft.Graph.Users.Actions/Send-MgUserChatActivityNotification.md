@@ -13,7 +13,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## SYNTAX
 
-### SendExpanded (Default)
+### SendExpanded1 (Default)
 ```
 Send-MgUserChatActivityNotification -ChatId <String> -UserId <String> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
@@ -21,14 +21,14 @@ Send-MgUserChatActivityNotification -ChatId <String> -UserId <String> [-Activity
  [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Send
+### Send1
 ```
 Send-MgUserChatActivityNotification -ChatId <String> -UserId <String>
  -BodyParameter <IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SendViaIdentityExpanded
+### SendViaIdentityExpanded1
 ```
 Send-MgUserChatActivityNotification -InputObject <IUsersActionsIdentity> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
@@ -36,7 +36,7 @@ Send-MgUserChatActivityNotification -InputObject <IUsersActionsIdentity> [-Activ
  [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SendViaIdentity
+### SendViaIdentity1
 ```
 Send-MgUserChatActivityNotification -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
@@ -56,7 +56,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ```yaml
 Type: String
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -71,7 +71,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -87,7 +87,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Send, SendViaIdentity
+Parameter Sets: Send1, SendViaIdentity1
 Aliases:
 
 Required: True
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int64
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -117,7 +117,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: SendExpanded, Send
+Parameter Sets: SendExpanded1, Send1
 Aliases:
 
 Required: True
@@ -133,7 +133,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: SendViaIdentityExpanded, SendViaIdentity
+Parameter Sets: SendViaIdentityExpanded1, SendViaIdentity1
 Aliases:
 
 Required: True
@@ -164,7 +164,7 @@ To construct, please use Get-Help -Online and see NOTES section for PREVIEWTEXT 
 
 ```yaml
 Type: IMicrosoftGraphItemBody
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -179,7 +179,7 @@ teamworkNotificationRecipient
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -195,7 +195,7 @@ To construct, please use Get-Help -Online and see NOTES section for TEMPLATEPARA
 
 ```yaml
 Type: IMicrosoftGraphKeyValuePair[]
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -211,7 +211,7 @@ To construct, please use Get-Help -Online and see NOTES section for TOPIC proper
 
 ```yaml
 Type: IMicrosoftGraphTeamworkActivityTopic
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -226,7 +226,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: SendExpanded, Send
+Parameter Sets: SendExpanded1, Send1
 Aliases:
 
 Required: True

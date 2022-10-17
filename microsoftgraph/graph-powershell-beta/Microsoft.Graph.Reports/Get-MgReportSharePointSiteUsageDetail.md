@@ -12,23 +12,23 @@ Invoke function getSharePointSiteUsageDetail
 
 ## SYNTAX
 
-### Get (Default)
+### Get2 (Default)
 ```
 Get-MgReportSharePointSiteUsageDetail -Date <DateTime> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### Get1
+### Get3
 ```
 Get-MgReportSharePointSiteUsageDetail -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity3
 ```
 Get-MgReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
 ```
 Get-MgReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
@@ -46,7 +46,7 @@ Usage: date={date}
 
 ```yaml
 Type: DateTime
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -62,7 +62,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IReportsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity3, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -107,7 +107,7 @@ Usage: period='{period}'
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get3
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[DeviceManagementCachedReportConfigurationId <String>]`: key: id of deviceManagementCachedReportConfiguration
   - `[DeviceManagementExportJobId <String>]`: key: id of deviceManagementExportJob
   - `[DirectoryAuditId <String>]`: key: id of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[Filter <String>]`: Usage: filter='{filter}'
   - `[GroupId <String>]`: Usage: groupId='{groupId}'
   - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
@@ -155,7 +155,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[SignInId <String>]`: key: id of signIn
   - `[Skip <Int32?>]`: Usage: skip={skip}
   - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[Top <Int32?>]`: Usage: top={top}
   - `[UserCredentialUsageDetailsId <String>]`: key: id of userCredentialUsageDetails
   - `[UserId <String>]`: Usage: userId='{userId}'

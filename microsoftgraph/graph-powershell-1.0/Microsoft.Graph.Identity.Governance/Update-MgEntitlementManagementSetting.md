@@ -12,17 +12,17 @@ Update an existing entitlementManagementSettings object to change one or more of
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgEntitlementManagementSetting [-AdditionalProperties <Hashtable>]
  [-DurationUntilExternalUserDeletedAfterBlocked <TimeSpan>] [-ExternalUserLifecycleAction <String>]
  [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlementManagementSettings1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlementManagementSettings> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -64,8 +64,8 @@ entitlementManagementSettings
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEntitlementManagementSettings1
-Parameter Sets: Update1
+Type: IMicrosoftGraphEntitlementManagementSettings
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -80,7 +80,7 @@ If externalUserLifecycleAction is blockSignInAndDelete, the duration, typically 
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -95,7 +95,7 @@ accessPackageExternalUserLifecycleAction
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -106,11 +106,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -171,7 +172,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings
 ## OUTPUTS
 
 ### System.Boolean
@@ -186,7 +187,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphEntitlementManagementSettings>`: entitlementManagementSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DurationUntilExternalUserDeletedAfterBlocked <TimeSpan?>]`: If externalUserLifecycleAction is blockSignInAndDelete, the duration, typically a number of days, after an external user is blocked from sign in before their account is deleted.
   - `[ExternalUserLifecycleAction <String>]`: accessPackageExternalUserLifecycleAction
 

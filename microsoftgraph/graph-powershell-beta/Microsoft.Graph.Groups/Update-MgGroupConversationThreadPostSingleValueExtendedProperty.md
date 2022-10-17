@@ -12,7 +12,7 @@ Update the navigation property singleValueExtendedProperties in groups
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgGroupConversationThreadPostSingleValueExtendedProperty -ConversationId <String>
  -ConversationThreadId <String> -GroupId <String> -PostId <String>
@@ -20,7 +20,7 @@ Update-MgGroupConversationThreadPostSingleValueExtendedProperty -ConversationId 
  [-Value <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgGroupConversationThreadPostSingleValueExtendedProperty -ConversationId <String>
  -ConversationThreadId <String> -GroupId <String> -PostId <String>
@@ -29,14 +29,14 @@ Update-MgGroupConversationThreadPostSingleValueExtendedProperty -ConversationId 
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgGroupConversationThreadPostSingleValueExtendedProperty -InputObject <IGroupsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgGroupConversationThreadPostSingleValueExtendedProperty -InputObject <IGroupsIdentity>
  -BodyParameter <IMicrosoftGraphSingleValueLegacyExtendedProperty> [-PassThru] [-WhatIf] [-Confirm]
@@ -55,7 +55,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -71,7 +71,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphSingleValueLegacyExtendedProperty
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -86,7 +86,7 @@ key: id of conversation
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -101,7 +101,7 @@ key: id of conversationThread
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -116,7 +116,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -127,11 +127,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -147,7 +148,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -177,7 +178,7 @@ key: id of post
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -192,7 +193,7 @@ key: id of singleValueLegacyExtendedProperty
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -207,7 +208,7 @@ A property value.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -269,7 +270,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphSingleValueLegacyExtendedProperty>`: singleValueLegacyExtendedProperty
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Value <String>]`: A property value.
 
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter

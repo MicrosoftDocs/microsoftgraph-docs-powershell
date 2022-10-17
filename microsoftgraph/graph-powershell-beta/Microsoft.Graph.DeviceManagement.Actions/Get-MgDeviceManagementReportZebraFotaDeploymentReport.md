@@ -16,7 +16,7 @@ Invoke action getZebraFotaDeploymentReport
 ```
 Get-MgDeviceManagementReportZebraFotaDeploymentReport -OutFile <String> [-AdditionalProperties <Hashtable>]
  [-Filter <String>] [-GroupBy <String[]>] [-Name <String>] [-Property <String[]>] [-Search <String>]
- [-SessionId <Int32>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-SessionId <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: String
 Parameter Sets: GetExpanded
 Aliases:
 

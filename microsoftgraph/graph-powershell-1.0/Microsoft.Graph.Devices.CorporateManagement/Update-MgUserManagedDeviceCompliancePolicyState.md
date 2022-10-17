@@ -17,14 +17,14 @@ Update the navigation property deviceCompliancePolicyStates in users
 Update-MgUserManagedDeviceCompliancePolicyState -DeviceCompliancePolicyStateId <String>
  -ManagedDeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
- [-SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>] [-State <String>] [-Version <Int32>]
+ [-SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>] [-State <String>] [-Version <Int32>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgUserManagedDeviceCompliancePolicyState -DeviceCompliancePolicyStateId <String>
- -ManagedDeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState1>
+ -ManagedDeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,14 +33,14 @@ Update-MgUserManagedDeviceCompliancePolicyState -DeviceCompliancePolicyStateId <
 Update-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
- [-SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>] [-State <String>] [-Version <Int32>]
+ [-SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>] [-State <String>] [-Version <Int32>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -71,7 +71,7 @@ Device Compliance Policy State for a given device.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyState1
+Type: IMicrosoftGraphDeviceCompliancePolicyState
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -113,7 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -208,7 +209,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicySettingState1[]
+Type: IMicrosoftGraphDeviceCompliancePolicySettingState[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -301,7 +302,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState
 ## OUTPUTS
 
 ### System.Boolean
@@ -314,13 +315,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicyState1>`: Device Compliance Policy State for a given device.
+BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicyState>`: Device Compliance Policy State for a given device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
   - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
-  - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>]`: 
+  - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>]`: 
     - `[CurrentValue <String>]`: Current value of setting on device
     - `[ErrorCode <Int64?>]`: Error code for the setting
     - `[ErrorDescription <String>]`: Error description
@@ -408,7 +409,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
-SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState1\[]>: .
+SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState\[]>: .
   - `[CurrentValue <String>]`: Current value of setting on device
   - `[ErrorCode <Int64?>]`: Error code for the setting
   - `[ErrorDescription <String>]`: Error description

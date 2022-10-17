@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgWindowsUpdatesUpdatableAssetMemberById
 
 ## SYNOPSIS
-Invoke action removeMembersById
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
 
 ## SYNTAX
 
@@ -40,16 +41,24 @@ Remove-MgWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdatesIde
 ```
 
 ## DESCRIPTION
-Invoke action removeMembersById
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	Ids = @(
+		"String"
+		"String"
+		"String"
+	)
+	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
+}
+Remove-MgWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId $updatableAssetId -BodyParameter $params
+```
 
 ## PARAMETERS
 

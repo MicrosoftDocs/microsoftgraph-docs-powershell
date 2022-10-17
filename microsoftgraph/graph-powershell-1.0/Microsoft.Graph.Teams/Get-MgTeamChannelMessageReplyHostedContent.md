@@ -12,7 +12,7 @@ Content in a message hosted by Microsoft Teams - for example, images or code sni
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
 Get-MgTeamChannelMessageReplyHostedContent -ChannelId <String> -ChatMessageId <String> -ChatMessageId1 <String>
  -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
@@ -20,14 +20,14 @@ Get-MgTeamChannelMessageReplyHostedContent -ChannelId <String> -ChatMessageId <S
  [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgTeamChannelMessageReplyHostedContent -ChannelId <String> -ChatMessageHostedContentId <String>
  -ChatMessageId <String> -ChatMessageId1 <String> -TeamId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -54,12 +54,12 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -69,7 +69,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ key: id of chatMessageHostedContent
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -114,7 +114,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -160,7 +160,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -176,7 +176,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -191,12 +191,12 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -221,7 +221,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -236,7 +236,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -251,7 +251,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -266,7 +266,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -281,7 +281,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False

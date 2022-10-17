@@ -15,7 +15,7 @@ Update the navigation property authorizationPolicy in policies
 ### UpdateExpanded (Default)
 ```
 Update-MgPolicyAuthorizationPolicy -AuthorizationPolicyId <String> [-AdditionalProperties <Hashtable>]
- [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>]
+ [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>] [-AllowUserConsentForRiskyApps]
  [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-BlockMsolPowerShell]
  [-DefaultUserRoleOverrides <IMicrosoftGraphDefaultUserRoleOverride[]>]
  [-DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions1>] [-DeletedDateTime <DateTime>]
@@ -33,7 +33,7 @@ Update-MgPolicyAuthorizationPolicy -AuthorizationPolicyId <String>
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>]
+ [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>] [-AllowUserConsentForRiskyApps]
  [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-BlockMsolPowerShell]
  [-DefaultUserRoleOverrides <IMicrosoftGraphDefaultUserRoleOverride[]>]
  [-DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions1>] [-DeletedDateTime <DateTime>]
@@ -120,6 +120,21 @@ allowInvitesFrom
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowUserConsentForRiskyApps
+.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -291,7 +306,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -408,7 +424,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthorizationPolicy1>`: authorizationPolicy
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowEmailVerifiedUsersToJoinOrganization <Boolean?>]`: Indicates whether a user can join the tenant by email validation.
   - `[AllowInvitesFrom <String>]`: allowInvitesFrom
   - `[AllowUserConsentForRiskyApps <Boolean?>]`: 
@@ -416,7 +432,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthorizationPolicy1>`: authorizationPolicy
   - `[AllowedToUseSspr <Boolean?>]`: Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant.
   - `[BlockMsolPowerShell <Boolean?>]`: To disable the use of MSOL PowerShell set this property to true. This will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph.
   - `[DefaultUserRoleOverrides <IMicrosoftGraphDefaultUserRoleOverride[]>]`: 
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[IsDefault <Boolean?>]`: 
     - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: 
       - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -433,7 +449,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthorizationPolicy1>`: authorizationPolicy
   - `[PermissionGrantPolicyIdsAssignedToDefaultUserRole <String[]>]`: Indicates if user consent to apps is allowed, and if it is, which app consent policy (permissionGrantPolicy) governs the permission for users to grant consent. Values should be in the format managePermissionGrantsForSelf.{id}, where {id} is the id of a built-in or custom app consent policy. An empty list indicates user consent to apps is disabled.
 
 DEFAULTUSERROLEOVERRIDES <IMicrosoftGraphDefaultUserRoleOverride\[]>: .
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[IsDefault <Boolean?>]`: 
   - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: 
     - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -466,6 +482,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[CommandId <String>]`: key: id of command
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
+  - `[ConditionalAccessTemplateId <String>]`: key: id of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: key: tenantId of crossTenantAccessPolicyConfigurationPartner
   - `[CustomAuthenticationExtensionId <String>]`: key: id of customAuthenticationExtension
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy

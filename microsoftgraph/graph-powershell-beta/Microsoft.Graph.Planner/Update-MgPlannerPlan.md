@@ -15,7 +15,7 @@ Update the navigation property plans in planner
 ### UpdateExpanded1 (Default)
 ```
 Update-MgPlannerPlan -PlannerPlanId <String> [-AdditionalProperties <Hashtable>]
- [-Buckets <IMicrosoftGraphPlannerBucket1[]>] [-Container <IMicrosoftGraphPlannerPlanContainer>]
+ [-Buckets <IMicrosoftGraphPlannerBucket1[]>] [-Container <IMicrosoftGraphPlannerPlanContainer1>]
  [-Contexts <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Details <IMicrosoftGraphPlannerPlanDetails1>] [-Id <String>] [-Owner <String>]
  [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
@@ -31,7 +31,7 @@ Update-MgPlannerPlan -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlan
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgPlannerPlan -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
- [-Buckets <IMicrosoftGraphPlannerBucket1[]>] [-Container <IMicrosoftGraphPlannerPlanContainer>]
+ [-Buckets <IMicrosoftGraphPlannerBucket1[]>] [-Container <IMicrosoftGraphPlannerPlanContainer1>]
  [-Contexts <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Details <IMicrosoftGraphPlannerPlanDetails1>] [-Id <String>] [-Owner <String>]
  [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
@@ -117,7 +117,7 @@ plannerPlanContainer
 To construct, please use Get-Help -Online and see NOTES section for CONTAINER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanContainer
+Type: IMicrosoftGraphPlannerPlanContainer1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -408,6 +408,10 @@ BODYPARAMETER `<IMicrosoftGraphPlannerPlan1>`: plannerPlan
         - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Description <String>]`: Description of the task.
+        - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Content <String>]`: The content of the item.
+          - `[ContentType <String>]`: bodyType
         - `[PreviewType <String>]`: plannerPreviewType
         - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -524,6 +528,10 @@ BUCKETS <IMicrosoftGraphPlannerBucket1\[]>: Collection of buckets in the plan. R
       - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Description <String>]`: Description of the task.
+      - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Content <String>]`: The content of the item.
+        - `[ContentType <String>]`: bodyType
       - `[PreviewType <String>]`: plannerPreviewType
       - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -649,6 +657,10 @@ TASKS <IMicrosoftGraphPlannerTask1\[]>: Collection of tasks in the plan. Read-on
     - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Description of the task.
+    - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
     - `[PreviewType <String>]`: plannerPreviewType
     - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

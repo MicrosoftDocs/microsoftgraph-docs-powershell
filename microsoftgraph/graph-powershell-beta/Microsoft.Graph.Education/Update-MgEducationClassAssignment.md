@@ -16,16 +16,13 @@ Update the navigation property assignments in education
 ```
 Update-MgEducationClassAssignment -EducationAssignmentId <String> -EducationClassId <String>
  [-AddToCalendarAction <String>] [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>]
- [-AllowLateSubmissions] [-AllowStudentsToAddResourcesToSubmission] [-AssignDateTime <DateTime>]
- [-AssignTo <Hashtable>] [-AssignedDateTime <DateTime>] [-Categories <IMicrosoftGraphEducationCategory[]>]
- [-ClassId <String>] [-CloseDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-DueDateTime <DateTime>]
- [-FeedbackResourcesFolderUrl <String>] [-Grading <Hashtable>] [-Id <String>]
- [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-NotificationChannelUrl <String>]
- [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-ResourcesFolderUrl <String>]
- [-Rubric <IMicrosoftGraphEducationRubric>] [-Status <String>]
- [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AllowLateSubmissions] [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
+ [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>] [-CloseDateTime <DateTime>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
+ [-Grading <Hashtable>] [-Id <String>] [-Instructions <IMicrosoftGraphEducationItemBody>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-NotificationChannelUrl <String>]
+ [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,15 +36,13 @@ Update-MgEducationClassAssignment -EducationAssignmentId <String> -EducationClas
 ```
 Update-MgEducationClassAssignment -InputObject <IEducationIdentity> [-AddToCalendarAction <String>]
  [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-AllowLateSubmissions]
- [-AllowStudentsToAddResourcesToSubmission] [-AssignDateTime <DateTime>] [-AssignTo <Hashtable>]
- [-AssignedDateTime <DateTime>] [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>]
- [-CloseDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-DueDateTime <DateTime>] [-FeedbackResourcesFolderUrl <String>]
+ [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
+ [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>] [-CloseDateTime <DateTime>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Grading <Hashtable>] [-Id <String>] [-Instructions <IMicrosoftGraphEducationItemBody>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-NotificationChannelUrl <String>] [-Resources <IMicrosoftGraphEducationAssignmentResource[]>]
- [-ResourcesFolderUrl <String>] [-Rubric <IMicrosoftGraphEducationRubric>] [-Status <String>]
- [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-NotificationChannelUrl <String>]
+ [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -159,41 +154,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AssignDateTime
-The date when the assignment should become active.
-If in the future, the assignment is not shown to the student until this date.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AssignedDateTime
-The moment that the assignment was published to students and the assignment shows up on the students timeline.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -AssignTo
 educationAssignmentRecipient
 
@@ -293,23 +253,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CreatedDateTime
-Moment when the assignment was created.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisplayName
 Name of the assignment.
 
@@ -372,21 +315,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -FeedbackResourcesFolderUrl
-Folder URL where all the feedback file resources for this assignment are stored.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Grading
 educationAssignmentGradeType
 
@@ -403,7 +331,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -465,23 +394,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -LastModifiedDateTime
-Moment when the assignment was last modified.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -NotificationChannelUrl
 Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
@@ -533,21 +445,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResourcesFolderUrl
-Folder URL where all the file resources for this assignment are stored.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Rubric
 educationRubric
 To construct, please use Get-Help -Online and see NOTES section for RUBRIC properties and create a hash table.
@@ -587,21 +484,6 @@ To construct, please use Get-Help -Online and see NOTES section for SUBMISSIONS 
 
 ```yaml
 Type: IMicrosoftGraphEducationSubmission[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WebUrl
-The deep link URL for the given assignment.
-
-```yaml
-Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -664,7 +546,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AddToCalendarAction <String>]`: educationAddToCalendarOptions
   - `[AddedStudentAction <String>]`: educationAddedStudentAction
   - `[AllowLateSubmissions <Boolean?>]`: Identifies whether students can submit after the due date. If this property is not specified during create, it defaults to true.
@@ -672,7 +554,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
   - `[AssignTo <IMicrosoftGraphEducationAssignmentRecipient>]`: educationAssignmentRecipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <IMicrosoftGraphEducationCategory[]>]`: When set, enables users to easily find assignments of a given type.  Read-only. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DisplayName <String>]`: Unique identifier for the category.
   - `[ClassId <String>]`: Class which this assignment belongs.
   - `[CloseDateTime <DateTime?>]`: Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime. But if specified, then the closeDateTime must be greater than or equal to the dueDateTime. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -695,7 +577,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[NotificationChannelUrl <String>]`: Optional field to specify the URL of the channel to post the assignment publish notification. If not specified or null, defaults to the General channel. This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient. Updating the notificationChannelUrl is not allowed after the assignment has been published.
   - `[Resources <IMicrosoftGraphEducationAssignmentResource[]>]`: Learning objects that are associated with this assignment.  Only teachers can modify this list. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DistributeForStudentWork <Boolean?>]`: Indicates whether this resource should be copied to each student submission for modification and submission. Required
     - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -704,7 +586,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Rubric <IMicrosoftGraphEducationRubric>]`: educationRubric
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[DisplayName <String>]`: The name of this rubric.
@@ -724,16 +606,16 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
       - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
   - `[Status <String>]`: educationAssignmentStatus
   - `[Submissions <IMicrosoftGraphEducationSubmission[]>]`: Once published, there is a submission object for each student representing their work and grade.  Read-only. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Outcomes <IMicrosoftGraphEducationOutcome[]>]`: 
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
     - `[ReassignedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Resources <IMicrosoftGraphEducationSubmissionResource[]>]`: 
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which this resource was copied. If this is null, the student uploaded the resource.
       - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
     - `[ReturnedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -743,7 +625,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
     - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 CATEGORIES <IMicrosoftGraphEducationCategory\[]>: When set, enables users to easily find assignments of a given type. Read-only. Nullable.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Unique identifier for the category.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
@@ -784,7 +666,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 RESOURCES <IMicrosoftGraphEducationAssignmentResource\[]>: Learning objects that are associated with this assignment. Only teachers can modify this list. Nullable.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DistributeForStudentWork <Boolean?>]`: Indicates whether this resource should be copied to each student submission for modification and submission. Required
   - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -801,7 +683,7 @@ RESOURCES <IMicrosoftGraphEducationAssignmentResource\[]>: Learning objects that
 
 RUBRIC `<IMicrosoftGraphEducationRubric>`: educationRubric
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -832,9 +714,9 @@ RUBRIC `<IMicrosoftGraphEducationRubric>`: educationRubric
     - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
 SUBMISSIONS <IMicrosoftGraphEducationSubmission\[]>: Once published, there is a submission object for each student representing their work and grade. Read-only. Nullable.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Outcomes <IMicrosoftGraphEducationOutcome[]>]`: 
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -848,7 +730,7 @@ SUBMISSIONS <IMicrosoftGraphEducationSubmission\[]>: Once published, there is a 
   - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Resources <IMicrosoftGraphEducationSubmissionResource[]>]`: 
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which this resource was copied. If this is null, the student uploaded the resource.
     - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

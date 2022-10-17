@@ -115,7 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory1
 ## NOTES
 
 ALIASES

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: e18ea003-b5a1-4e74-9673-93fd26609b2f
+Module Guid: e6a3188f-5cb9-45cf-9d61-7310136f477d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -149,9 +149,6 @@ Nullable.
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
 Create an outlookCategory object in the user's master list of categories.
 
-### [New-MgUserPhoto](New-MgUserPhoto.md)
-Create new navigation property to photos for users
-
 ### [New-MgUserTodoList](New-MgUserTodoList.md)
 Create a new lists object.
 
@@ -163,9 +160,6 @@ Create a new task object in a specified todoTaskList.
 
 ### [New-MgUserTodoListTaskAttachment](New-MgUserTodoListTaskAttachment.md)
 Create new navigation property to attachments for users
-
-### [New-MgUserTodoListTaskAttachmentSession](New-MgUserTodoListTaskAttachmentSession.md)
-Create new navigation property to attachmentSessions for users
 
 ### [New-MgUserTodoListTaskChecklistItem](New-MgUserTodoListTaskChecklistItem.md)
 Create new navigation property to checklistItems for users
@@ -198,9 +192,6 @@ Delete ref of navigation property manager for users
 
 ### [Remove-MgUserOutlookMasterCategory](Remove-MgUserOutlookMasterCategory.md)
 Delete navigation property masterCategories for users
-
-### [Remove-MgUserPhoto](Remove-MgUserPhoto.md)
-Delete navigation property photo for users
 
 ### [Remove-MgUserSetting](Remove-MgUserSetting.md)
 Delete navigation property settings for users
@@ -275,9 +266,6 @@ Update the navigation property extensions in users
 
 ### [Update-MgUserTodoListTask](Update-MgUserTodoListTask.md)
 Update the navigation property tasks in users
-
-### [Update-MgUserTodoListTaskAttachment](Update-MgUserTodoListTaskAttachment.md)
-Update the navigation property attachments in users
 
 ### [Update-MgUserTodoListTaskAttachmentSession](Update-MgUserTodoListTaskAttachmentSession.md)
 Update the navigation property attachmentSessions in users

@@ -18,15 +18,15 @@ New-MgBookingBusinessCalendarView -BookingBusinessId <String> [-AdditionalInform
  [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>] [-CustomerEmailAddress <String>]
  [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>]
  [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
- [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-Duration <TimeSpan>]
- [-End <IMicrosoftGraphDateTimeZone>] [-FilledAttendeesCount <Int32>] [-Id <String>] [-InvoiceAmount <Double>]
- [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>] [-InvoiceStatus <String>]
- [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>] [-MaximumAttendeesCount <Int32>]
- [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
- [-Price <Double>] [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
- [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
- [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
- [-Start <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
+ [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
+ [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
+ [-MaximumAttendeesCount <Int32>] [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail]
+ [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>] [-PriceType <BookingPriceType>]
+ [-Reminders <IMicrosoftGraphBookingReminder[]>] [-SelfServiceAppointmentId <String>] [-ServiceId <String>]
+ [-ServiceLocation <IMicrosoftGraphLocation>] [-ServiceName <String>] [-ServiceNotes <String>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-Start <IMicrosoftGraphDateTimeZone>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -41,15 +41,15 @@ New-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-AdditionalI
  [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>] [-CustomerEmailAddress <String>]
  [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>]
  [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
- [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-Duration <TimeSpan>]
- [-End <IMicrosoftGraphDateTimeZone>] [-FilledAttendeesCount <Int32>] [-Id <String>] [-InvoiceAmount <Double>]
- [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>] [-InvoiceStatus <String>]
- [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>] [-MaximumAttendeesCount <Int32>]
- [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
- [-Price <Double>] [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
- [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
- [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
- [-Start <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
+ [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
+ [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
+ [-MaximumAttendeesCount <Int32>] [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail]
+ [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>] [-PriceType <BookingPriceType>]
+ [-Reminders <IMicrosoftGraphBookingReminder[]>] [-SelfServiceAppointmentId <String>] [-ServiceId <String>]
+ [-ServiceLocation <IMicrosoftGraphLocation>] [-ServiceName <String>] [-ServiceNotes <String>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-Start <IMicrosoftGraphDateTimeZone>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -270,21 +270,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Duration
-The length of the appointment, denoted in ISO8601 format.
-
-```yaml
-Type: TimeSpan
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -End
 dateTimeTimeZone
 To construct, please use Get-Help -Online and see NOTES section for END properties and create a hash table.
@@ -301,23 +286,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -FilledAttendeesCount
-The current number of customers in the appointment.
-
-```yaml
-Type: Int32
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -757,7 +728,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appointment of a service by a customer in a business.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: Url of meeting to join anonymously.
   - `[CustomerEmailAddress <String>]`: The SMTP address of the bookingCustomer who is booking the appointment.
