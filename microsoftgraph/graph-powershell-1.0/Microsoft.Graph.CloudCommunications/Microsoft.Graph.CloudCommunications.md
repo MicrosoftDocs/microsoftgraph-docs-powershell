@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.CloudCommunications
-Module Guid: 0dbe1aa1-bbb8-4573-976a-1647e42ab83a
+Module Guid: 67dc5682-f2b6-49ef-b7ff-938e51c7f46e
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,16 +11,25 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.CloudCommunications Cmdlets
+### [Add-MgCommunicationCallLargeGalleryView](Add-MgCommunicationCallLargeGalleryView.md)
+Invoke action addLargeGalleryView
+
 ### [Clear-MgCommunicationPresence](Clear-MgCommunicationPresence.md)
 Clear the application's presence session for a user.
 If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
 For details about presences sessions, see presence: setPresence.
+
+### [Clear-MgCommunicationPresenceUserPreferredPresence](Clear-MgCommunicationPresenceUserPreferredPresence.md)
+Clear the preferred availability and activity status for a user.
 
 ### [Get-MgCommunicationCall](Get-MgCommunicationCall.md)
 Get calls from communications
 
 ### [Get-MgCommunicationCallAudioRoutingGroup](Get-MgCommunicationCallAudioRoutingGroup.md)
 Get audioRoutingGroups from communications
+
+### [Get-MgCommunicationCallContentSharingSession](Get-MgCommunicationCallContentSharingSession.md)
+Get contentSharingSessions from communications
 
 ### [Get-MgCommunicationCallOperation](Get-MgCommunicationCallOperation.md)
 Get operations from communications
@@ -88,8 +97,11 @@ Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ### [Invoke-MgInviteCommunicationCallParticipant](Invoke-MgInviteCommunicationCallParticipant.md)
-Invite participants to the active call.
-For more information about how to handle operations, see commsOperation.
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ### [Invoke-MgKeepCommunicationCallAlive](Invoke-MgKeepCommunicationCallAlive.md)
 Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active.
@@ -166,6 +178,9 @@ You will need to register the calling bot and go through the list of permissions
 ### [New-MgCommunicationCallAudioRoutingGroup](New-MgCommunicationCallAudioRoutingGroup.md)
 Create new navigation property to audioRoutingGroups for communications
 
+### [New-MgCommunicationCallContentSharingSession](New-MgCommunicationCallContentSharingSession.md)
+Create new navigation property to contentSharingSessions for communications
+
 ### [New-MgCommunicationCallOperation](New-MgCommunicationCallOperation.md)
 Create new navigation property to operations for communications
 
@@ -201,6 +216,9 @@ Delete navigation property calls for communications
 
 ### [Remove-MgCommunicationCallAudioRoutingGroup](Remove-MgCommunicationCallAudioRoutingGroup.md)
 Delete navigation property audioRoutingGroups for communications
+
+### [Remove-MgCommunicationCallContentSharingSession](Remove-MgCommunicationCallContentSharingSession.md)
+Delete navigation property contentSharingSessions for communications
 
 ### [Remove-MgCommunicationCallOperation](Remove-MgCommunicationCallOperation.md)
 Delete navigation property operations for communications
@@ -245,6 +263,14 @@ Read-only.
 ### [Set-MgCommunicationPresence](Set-MgCommunicationPresence.md)
 Set the state of a user's presence session as an application.
 
+### [Set-MgCommunicationPresenceUserPreferredPresence](Set-MgCommunicationPresenceUserPreferredPresence.md)
+Set the preferred availability and activity status for a user.
+If the preferred presence of a user is set, the user's presence shows as the preferred status.
+Preferred presence takes effect only when at least one presence session exists for the user.
+Otherwise, the user's presence shows as `Offline`.
+A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
+For more details, see presence sessions and time-out and expiration.
+
 ### [Set-MgUserOnlineMeetingAttendeeReport](Set-MgUserOnlineMeetingAttendeeReport.md)
 The content stream of the attendee report of a Microsoft Teams live event.
 Read-only.
@@ -264,6 +290,9 @@ Reincorporate a participant previously put on hold to the call.
 
 ### [Update-MgCommunicationCallAudioRoutingGroup](Update-MgCommunicationCallAudioRoutingGroup.md)
 Update the navigation property audioRoutingGroups in communications
+
+### [Update-MgCommunicationCallContentSharingSession](Update-MgCommunicationCallContentSharingSession.md)
+Update the navigation property contentSharingSessions in communications
 
 ### [Update-MgCommunicationCallOperation](Update-MgCommunicationCallOperation.md)
 Update the navigation property operations in communications

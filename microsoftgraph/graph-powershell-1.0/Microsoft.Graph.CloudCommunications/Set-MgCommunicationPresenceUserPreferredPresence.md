@@ -1,60 +1,98 @@
 ﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresence
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresenceuserpreferredpresence
 schema: 2.0.0
 ---
 
-# Clear-MgCommunicationPresence
+# Set-MgCommunicationPresenceUserPreferredPresence
 
 ## SYNOPSIS
-Clear the application's presence session for a user.
-If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
-For details about presences sessions, see presence: setPresence.
+Set the preferred availability and activity status for a user.
+If the preferred presence of a user is set, the user's presence shows as the preferred status.
+Preferred presence takes effect only when at least one presence session exists for the user.
+Otherwise, the user's presence shows as `Offline`.
+A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
+For more details, see presence sessions and time-out and expiration.
 
 ## SYNTAX
 
-### ClearExpanded1 (Default)
+### SetExpanded1 (Default)
 ```
-Clear-MgCommunicationPresence -PresenceId <String> [-AdditionalProperties <Hashtable>] [-SessionId <String>]
+Set-MgCommunicationPresenceUserPreferredPresence -PresenceId <String> [-Activity <String>]
+ [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Set1
+```
+Set-MgCommunicationPresenceUserPreferredPresence -PresenceId <String>
+ -BodyParameter <IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Clear1
+### SetViaIdentityExpanded1
 ```
-Clear-MgCommunicationPresence -PresenceId <String>
- -BodyParameter <IPaths1Ca0Rf4CommunicationsPresencesPresenceIdMicrosoftGraphClearpresencePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ClearViaIdentityExpanded1
-```
-Clear-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-SessionId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommunicationsIdentity>
+ [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Availability <String>]
+ [-ExpirationDuration <TimeSpan>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ClearViaIdentity1
+### SetViaIdentity1
 ```
-Clear-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IPaths1Ca0Rf4CommunicationsPresencesPresenceIdMicrosoftGraphClearpresencePostRequestbodyContentApplicationJsonSchema>
+Set-MgCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Clear the application's presence session for a user.
-If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
-For details about presences sessions, see presence: setPresence.
+Set the preferred availability and activity status for a user.
+If the preferred presence of a user is set, the user's presence shows as the preferred status.
+Preferred presence takes effect only when at least one presence session exists for the user.
+Otherwise, the user's presence shows as `Offline`.
+A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
+For more details, see presence sessions and time-out and expiration.
 
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -Activity
+.
+
+```yaml
+Type: String
+Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ClearExpanded1, ClearViaIdentityExpanded1
+Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Availability
+.
+
+```yaml
+Type: String
+Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -69,8 +107,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Ca0Rf4CommunicationsPresencesPresenceIdMicrosoftGraphClearpresencePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Clear1, ClearViaIdentity1
+Type: IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Set1, SetViaIdentity1
 Aliases:
 
 Required: True
@@ -80,13 +118,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ExpirationDuration
+.
+
+```yaml
+Type: TimeSpan
+Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: ClearViaIdentityExpanded1, ClearViaIdentity1
+Parameter Sets: SetViaIdentityExpanded1, SetViaIdentity1
 Aliases:
 
 Required: True
@@ -116,25 +169,10 @@ key: id of presence
 
 ```yaml
 Type: String
-Parameter Sets: ClearExpanded1, Clear1
+Parameter Sets: SetExpanded1, Set1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SessionId
-.
-
-```yaml
-Type: String
-Parameter Sets: ClearExpanded1, ClearViaIdentityExpanded1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -178,7 +216,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Ca0Rf4CommunicationsPresencesPresenceIdMicrosoftGraphClearpresencePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -191,9 +229,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1Ca0Rf4CommunicationsPresencesPresenceIdMicrosoftGraphClearpresencePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPaths16OmbuoCommunicationsPresencesPresenceIdMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SessionId <String>]`: 
+  - `[Activity <String>]`: 
+  - `[Availability <String>]`: 
+  - `[ExpirationDuration <TimeSpan?>]`: 
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord

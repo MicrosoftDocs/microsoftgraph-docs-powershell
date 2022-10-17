@@ -1,61 +1,73 @@
 ﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallcontentsharingsession
 schema: 2.0.0
 ---
 
-# Get-MgUserPresence
+# Remove-MgCommunicationCallContentSharingSession
 
 ## SYNOPSIS
-Get a user's presence information.
+Delete navigation property contentSharingSessions for communications
 
 ## SYNTAX
 
-### Get1 (Default)
+### Delete (Default)
 ```
-Get-MgUserPresence -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Remove-MgCommunicationCallContentSharingSession -CallId <String> -ContentSharingSessionId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### DeleteViaIdentity
 ```
-Get-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Remove-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a user's presence information.
+Delete navigation property contentSharingSessions for communications
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserPresence Cmdlet
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-Get-MgUserPresence -UserId $userId
-```
-
-This example shows how to use the Get-MgUserPresence Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgUserPresence Cmdlet
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-# A UPN can also be used as -UserId.
-Get-MgUserPresence -UserId $userId
-```
-
-This example shows how to use the Get-MgUserPresence Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
-### -ExpandProperty
-Expand related entities
+### -CallId
+key: id of call
 
 ```yaml
-Type: String[]
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContentSharingSessionId
+key: id of contentSharingSession
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag
+
+```yaml
+Type: String
 Parameter Sets: (All)
-Aliases: Expand
+Aliases:
 
 Required: False
 Position: Named
@@ -70,7 +82,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -80,13 +92,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: String[]
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: Select
+Aliases:
 
 Required: False
 Position: Named
@@ -95,15 +107,31 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-key: id of user
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: String
-Parameter Sets: Get1
-Aliases:
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -118,7 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPresence
+### System.Boolean
 ## NOTES
 
 ALIASES
