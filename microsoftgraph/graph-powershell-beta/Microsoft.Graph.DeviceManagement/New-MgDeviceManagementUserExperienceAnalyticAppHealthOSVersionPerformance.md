@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthosversionperformance
@@ -82,7 +82,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -222,9 +223,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance>`: The user experience analytics device OS version performance entity contains OS version performance details.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance>: The user experience analytics device OS version performance entity contains OS version performance details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActiveDeviceCount <Int32?>]`: The number of active devices for the OS version. Valid values -2147483648 to 2147483647
   - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the OS version in minutes. Valid values -2147483648 to 2147483647
   - `[OSBuildNumber <String>]`: The OS build number installed on the device.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementintent
@@ -218,7 +218,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -421,18 +422,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementIntentAssignment\[]>: Collection of assignments
-  - `[Id <String>]`: 
+ASSIGNMENTS <IMicrosoftGraphDeviceManagementIntentAssignment[]>: Collection of assignments
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntent>`: Entity that represents an intent to apply settings to a device
+BODYPARAMETER <IMicrosoftGraphDeviceManagementIntent>: Entity that represents an intent to apply settings to a device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphDeviceManagementIntentAssignment[]>]`: Collection of assignments
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
@@ -441,7 +442,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntent>`: Entity that represents 
     - `[DisplayName <String>]`: The category name
     - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
     - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]`: The setting definitions this category contains
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
       - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
         - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
@@ -455,14 +456,14 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntent>`: Entity that represents 
       - `[Keywords <String[]>]`: Keywords associated with the setting
       - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
       - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: The settings this category contains
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[DefinitionId <String>]`: The ID of the setting definition for this instance
       - `[ValueJson <String>]`: JSON representation of the value
   - `[Description <String>]`: The user given description
   - `[DeviceSettingStateSummaries <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]>]`: Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[CompliantCount <Int32?>]`: Number of compliant devices
     - `[ConflictCount <Int32?>]`: Number of devices in conflict
     - `[ErrorCount <Int32?>]`: Number of error devices
@@ -472,7 +473,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntent>`: Entity that represents 
     - `[SettingName <String>]`: Name of a setting
   - `[DeviceStateSummary <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>]`: Entity that represents device state summary for an intent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[ConflictCount <Int32?>]`: Number of devices in conflict
     - `[ErrorCount <Int32?>]`: Number of error devices
     - `[FailedCount <Int32?>]`: Number of failed devices
@@ -480,7 +481,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntent>`: Entity that represents 
     - `[NotApplicablePlatformCount <Int32?>]`: Number of not applicable devices due to mismatch platform and policy
     - `[SuccessCount <Int32?>]`: Number of succeeded devices
   - `[DeviceStates <IMicrosoftGraphDeviceManagementIntentDeviceState[]>]`: Collection of states of all devices that the intent is applied to
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DeviceDisplayName <String>]`: Device name that is being reported
     - `[DeviceId <String>]`: Device id that is being reported
     - `[LastReportedDateTime <DateTime?>]`: Last modified date time of an intent report
@@ -495,25 +496,25 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntent>`: Entity that represents 
   - `[TemplateId <String>]`: The ID of the template this intent was created from (if any)
   - `[UserStateSummary <IMicrosoftGraphDeviceManagementIntentUserStateSummary>]`: Entity that represents user state summary for an intent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[ConflictCount <Int32?>]`: Number of users in conflict
     - `[ErrorCount <Int32?>]`: Number of error users
     - `[FailedCount <Int32?>]`: Number of failed users
     - `[NotApplicableCount <Int32?>]`: Number of not applicable users
     - `[SuccessCount <Int32?>]`: Number of succeeded users
   - `[UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>]`: Collection of states of all users that the intent is applied to
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DeviceCount <Int32?>]`: Count of Devices that belongs to a user for an intent
     - `[LastReportedDateTime <DateTime?>]`: Last modified date time of an intent report
     - `[State <String>]`: complianceStatus
     - `[UserName <String>]`: The user name that is being reported on a device
     - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
 
-CATEGORIES <IMicrosoftGraphDeviceManagementIntentSettingCategory\[]>: Collection of setting categories within the intent
+CATEGORIES <IMicrosoftGraphDeviceManagementIntentSettingCategory[]>: Collection of setting categories within the intent
   - `[DisplayName <String>]`: The category name
   - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]`: The setting definitions this category contains
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
     - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
       - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
@@ -527,14 +528,14 @@ CATEGORIES <IMicrosoftGraphDeviceManagementIntentSettingCategory\[]>: Collection
     - `[Keywords <String[]>]`: Keywords associated with the setting
     - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
     - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: The settings this category contains
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DefinitionId <String>]`: The ID of the setting definition for this instance
     - `[ValueJson <String>]`: JSON representation of the value
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary\[]>: Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
-  - `[Id <String>]`: 
+DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]>: Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompliantCount <Int32?>]`: Number of compliant devices
   - `[ConflictCount <Int32?>]`: Number of devices in conflict
   - `[ErrorCount <Int32?>]`: Number of error devices
@@ -543,8 +544,8 @@ DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphDeviceManagementIntentDeviceSettingS
   - `[RemediatedCount <Int32?>]`: Number of remediated devices
   - `[SettingName <String>]`: Name of a setting
 
-DEVICESTATES <IMicrosoftGraphDeviceManagementIntentDeviceState\[]>: Collection of states of all devices that the intent is applied to
-  - `[Id <String>]`: 
+DEVICESTATES <IMicrosoftGraphDeviceManagementIntentDeviceState[]>: Collection of states of all devices that the intent is applied to
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeviceDisplayName <String>]`: Device name that is being reported
   - `[DeviceId <String>]`: Device id that is being reported
   - `[LastReportedDateTime <DateTime?>]`: Last modified date time of an intent report
@@ -552,9 +553,9 @@ DEVICESTATES <IMicrosoftGraphDeviceManagementIntentDeviceState\[]>: Collection o
   - `[UserName <String>]`: The user name that is being reported on a device
   - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
 
-DEVICESTATESUMMARY `<IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>`: Entity that represents device state summary for an intent
+DEVICESTATESUMMARY <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>: Entity that represents device state summary for an intent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConflictCount <Int32?>]`: Number of devices in conflict
   - `[ErrorCount <Int32?>]`: Number of error devices
   - `[FailedCount <Int32?>]`: Number of failed devices
@@ -562,7 +563,7 @@ DEVICESTATESUMMARY `<IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>`: 
   - `[NotApplicablePlatformCount <Int32?>]`: Number of not applicable devices due to mismatch platform and policy
   - `[SuccessCount <Int32?>]`: Number of succeeded devices
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -649,6 +650,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
   - `[SettingStateDeviceSummaryId <String>]`: key: id of settingStateDeviceSummary
+  - `[UserExperienceAnalyticsAnomalyDeviceId <String>]`: key: id of userExperienceAnalyticsAnomalyDevice
+  - `[UserExperienceAnalyticsAnomalyId <String>]`: key: id of userExperienceAnalyticsAnomaly
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
@@ -689,22 +692,22 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance\[]>: Collection of all settings to be applied
-  - `[Id <String>]`: 
+SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance[]>: Collection of all settings to be applied
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
   - `[ValueJson <String>]`: JSON representation of the value
 
-USERSTATES <IMicrosoftGraphDeviceManagementIntentUserState\[]>: Collection of states of all users that the intent is applied to
-  - `[Id <String>]`: 
+USERSTATES <IMicrosoftGraphDeviceManagementIntentUserState[]>: Collection of states of all users that the intent is applied to
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeviceCount <Int32?>]`: Count of Devices that belongs to a user for an intent
   - `[LastReportedDateTime <DateTime?>]`: Last modified date time of an intent report
   - `[State <String>]`: complianceStatus
   - `[UserName <String>]`: The user name that is being reported on a device
   - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
 
-USERSTATESUMMARY `<IMicrosoftGraphDeviceManagementIntentUserStateSummary>`: Entity that represents user state summary for an intent
+USERSTATESUMMARY <IMicrosoftGraphDeviceManagementIntentUserStateSummary>: Entity that represents user state summary for an intent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConflictCount <Int32?>]`: Number of users in conflict
   - `[ErrorCount <Int32?>]`: Number of error users
   - `[FailedCount <Int32?>]`: Number of failed users

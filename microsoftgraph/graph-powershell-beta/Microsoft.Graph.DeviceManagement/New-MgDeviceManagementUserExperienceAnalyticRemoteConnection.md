@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticremoteconnection
@@ -193,7 +193,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -332,9 +333,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>`: The user experience analyte remote connection entity.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>: The user experience analyte remote connection entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CloudPcFailurePercentage <Double?>]`: The sign in failure percentage of Cloud PC Device. Valid values 0 to 100
   - `[CloudPcRoundTripTime <Double?>]`: The round tip time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
   - `[CloudPcSignInTime <Double?>]`: The sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308

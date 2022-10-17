@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationuserstatesummary
@@ -111,7 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -249,9 +250,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationUserStateSummary>`: deviceConfigurationUserStateSummary
+BODYPARAMETER <IMicrosoftGraphDeviceConfigurationUserStateSummary>: deviceConfigurationUserStateSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompliantUserCount <Int32?>]`: Number of compliant users
   - `[ConflictUserCount <Int32?>]`: Number of conflict users
   - `[ErrorUserCount <Int32?>]`: Number of error users

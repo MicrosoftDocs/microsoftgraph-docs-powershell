@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidmanagedstoreaccountenterprisesetting
@@ -145,7 +145,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -328,9 +329,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>`: Enterprise settings for an Android managed store account.
+BODYPARAMETER <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>: Enterprise settings for an Android managed store account.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AndroidDeviceOwnerFullyManagedEnrollmentEnabled <Boolean?>]`: Company codes for AndroidManagedStoreAccountEnterpriseSettings
   - `[BindStatus <String>]`: Bind status of the tenant with the Google EMM API
   - `[CompanyCodes <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>]`: Company codes for AndroidManagedStoreAccountEnterpriseSettings
@@ -350,7 +351,7 @@ BODYPARAMETER `<IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>`: E
   - `[OwnerUserPrincipalName <String>]`: Owner UPN that created the enterprise
   - `[TargetGroupIds <String[]>]`: Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
 
-COMPANYCODES <IMicrosoftGraphAndroidEnrollmentCompanyCode\[]>: Company codes for AndroidManagedStoreAccountEnterpriseSettings
+COMPANYCODES <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>: Company codes for AndroidManagedStoreAccountEnterpriseSettings
   - `[EnrollmentToken <String>]`: Enrollment Token used by the User to enroll their device.
   - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
   - `[QrCodeImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementgrouppolicyconfiguration
@@ -175,7 +175,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -315,19 +316,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphGroupPolicyConfigurationAssignment\[]>: The list of group assignments for the configuration.
-  - `[Id <String>]`: 
+ASSIGNMENTS <IMicrosoftGraphGroupPolicyConfigurationAssignment[]>: The list of group assignments for the configuration.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyConfiguration>`: The group policy configuration entity contains the configured values for one or more group policy definitions.
+BODYPARAMETER <IMicrosoftGraphGroupPolicyConfiguration>: The group policy configuration entity contains the configured values for one or more group policy definitions.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphGroupPolicyConfigurationAssignment[]>]`: The list of group assignments for the configuration.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -335,19 +336,19 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyConfiguration>`: The group policy conf
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
   - `[DefinitionValues <IMicrosoftGraphGroupPolicyDefinitionValue[]>]`: The list of enabled or disabled group policy definition values for the configuration.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
     - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
     - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: 
+        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
         - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: 
+          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
           - `[Description <String>]`: The localized description of the policy settings in the ADMX file. The default value is empty.
           - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
@@ -377,7 +378,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyConfiguration>`: The group policy conf
       - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
       - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
       - `[Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]`: The group policy presentations associated with the definition.
-        - `[Id <String>]`: 
+        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
         - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
         - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -387,7 +388,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyConfiguration>`: The group policy conf
     - `[Enabled <Boolean?>]`: Enables or disables the associated group policy definition.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
     - `[PresentationValues <IMicrosoftGraphGroupPolicyPresentationValue[]>]`: The associated group policy presentation values with the definition value.
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
       - `[DefinitionValue <IMicrosoftGraphGroupPolicyDefinitionValue>]`: The definition value entity stores the value for a single group policy definition.
       - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
@@ -398,20 +399,20 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyConfiguration>`: The group policy conf
   - `[PolicyConfigurationIngestionType <GroupPolicyConfigurationIngestionType?>]`: Group Policy Configuration Ingestion Type
   - `[RoleScopeTagIds <String[]>]`: The list of scope tags for the configuration.
 
-DEFINITIONVALUES <IMicrosoftGraphGroupPolicyDefinitionValue\[]>: The list of enabled or disabled group policy definition values for the configuration.
-  - `[Id <String>]`: 
+DEFINITIONVALUES <IMicrosoftGraphGroupPolicyDefinitionValue[]>: The list of enabled or disabled group policy definition values for the configuration.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
   - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
   - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
       - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: 
+        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
         - `[Description <String>]`: The localized description of the policy settings in the ADMX file. The default value is empty.
         - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
@@ -441,7 +442,7 @@ DEFINITIONVALUES <IMicrosoftGraphGroupPolicyDefinitionValue\[]>: The list of ena
     - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
     - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
     - `[Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]`: The group policy presentations associated with the definition.
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
       - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
       - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -451,13 +452,13 @@ DEFINITIONVALUES <IMicrosoftGraphGroupPolicyDefinitionValue\[]>: The list of ena
   - `[Enabled <Boolean?>]`: Enables or disables the associated group policy definition.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
   - `[PresentationValues <IMicrosoftGraphGroupPolicyPresentationValue[]>]`: The associated group policy presentation values with the definition value.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
     - `[DefinitionValue <IMicrosoftGraphGroupPolicyDefinitionValue>]`: The definition value entity stores the value for a single group policy definition.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
     - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -544,6 +545,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
   - `[SettingStateDeviceSummaryId <String>]`: key: id of settingStateDeviceSummary
+  - `[UserExperienceAnalyticsAnomalyDeviceId <String>]`: key: id of userExperienceAnalyticsAnomalyDevice
+  - `[UserExperienceAnalyticsAnomalyId <String>]`: key: id of userExperienceAnalyticsAnomaly
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersion

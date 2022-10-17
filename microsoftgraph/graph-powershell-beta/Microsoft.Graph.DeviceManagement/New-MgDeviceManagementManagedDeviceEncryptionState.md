@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddeviceencryptionstate
@@ -172,7 +172,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -296,9 +297,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphManagedDeviceEncryptionState>`: Encryption report per device
+BODYPARAMETER <IMicrosoftGraphManagedDeviceEncryptionState>: Encryption report per device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdvancedBitLockerStates <AdvancedBitLockerState?>]`: Advanced BitLocker State
   - `[DeviceName <String>]`: Device name
   - `[DeviceType <DeviceTypes?>]`: Device type.
@@ -313,7 +314,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDeviceEncryptionState>`: Encryption report
   - `[TpmSpecificationVersion <String>]`: Device TPM Version
   - `[UserPrincipalName <String>]`: User name
 
-POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails\[]>: Policy Details
+POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails[]>: Policy Details
   - `[PolicyId <String>]`: Policy Id for Encryption Report
   - `[PolicyName <String>]`: Policy Name for Encryption Report
 

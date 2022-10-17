@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementconfigurationpolicytemplate
@@ -18,11 +18,11 @@ Update-MgDeviceManagementConfigurationPolicyTemplate -DeviceManagementConfigurat
  [-AdditionalProperties <Hashtable>] [-AllowUnmanagedSettings] [-BaseId <String>] [-Description <String>]
  [-DisplayName <String>] [-DisplayVersion <String>] [-Id <String>]
  [-LifecycleState <DeviceManagementTemplateLifecycleState>]
- [-Platforms <DeviceManagementConfigurationPlatforms>] [-SettingTemplateCount <Int32>]
+ [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
- [-TemplateFamily <DeviceManagementConfigurationTemplateFamily>] [-Version <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TemplateFamily <DeviceManagementConfigurationTemplateFamily>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -38,11 +38,11 @@ Update-MgDeviceManagementConfigurationPolicyTemplate -InputObject <IDeviceManage
  [-AdditionalProperties <Hashtable>] [-AllowUnmanagedSettings] [-BaseId <String>] [-Description <String>]
  [-DisplayName <String>] [-DisplayVersion <String>] [-Id <String>]
  [-LifecycleState <DeviceManagementTemplateLifecycleState>]
- [-Platforms <DeviceManagementConfigurationPlatforms>] [-SettingTemplateCount <Int32>]
+ [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
- [-TemplateFamily <DeviceManagementConfigurationTemplateFamily>] [-Version <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TemplateFamily <DeviceManagementConfigurationTemplateFamily>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -181,7 +181,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -256,23 +257,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SettingTemplateCount
-Number of setting templates.
-Valid values 0 to 2147483647.
-This property is read-only.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -SettingTemplates
 Setting templates
 To construct, please use Get-Help -Online and see NOTES section for SETTINGTEMPLATES properties and create a hash table.
@@ -315,23 +299,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Version
-Template version.
-Valid values 1 to 2147483647.
-This property is read-only.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -386,9 +353,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: Device Management Configuration Policy Template
+BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>: Device Management Configuration Policy Template
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowUnmanagedSettings <Boolean?>]`: Allow unmanaged setting templates
   - `[BaseId <String>]`: Template base identifier
   - `[Description <String>]`: Template description
@@ -397,9 +364,9 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: De
   - `[LifecycleState <DeviceManagementTemplateLifecycleState?>]`: Describes current lifecycle state of a template
   - `[Platforms <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
   - `[SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]`: Setting templates
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
       - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -435,7 +402,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: De
   - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
   - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -522,6 +489,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
   - `[SettingStateDeviceSummaryId <String>]`: key: id of settingStateDeviceSummary
+  - `[UserExperienceAnalyticsAnomalyDeviceId <String>]`: key: id of userExperienceAnalyticsAnomalyDevice
+  - `[UserExperienceAnalyticsAnomalyId <String>]`: key: id of userExperienceAnalyticsAnomaly
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
@@ -562,10 +531,10 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SETTINGTEMPLATES <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate\[]>: Setting templates
-  - `[Id <String>]`: 
+SETTINGTEMPLATES <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>: Setting templates
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
     - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

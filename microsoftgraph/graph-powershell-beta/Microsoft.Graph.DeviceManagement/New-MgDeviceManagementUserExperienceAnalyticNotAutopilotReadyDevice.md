@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticnotautopilotreadydevice
@@ -141,7 +141,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -264,9 +265,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice>`: The user experience analytics Device not windows autopilot ready.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice>: The user experience analytics Device not windows autopilot ready.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AutoPilotProfileAssigned <Boolean?>]`: The intune device's autopilotProfileAssigned.
   - `[AutoPilotRegistered <Boolean?>]`: The intune device's autopilotRegistered.
   - `[AzureAdJoinType <String>]`: The intune device's azure Ad joinType.
