@@ -1,68 +1,38 @@
 ﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitemactivity
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/remove-mgexternalconnectionquota
 schema: 2.0.0
 ---
 
-# Remove-MgExternalConnectionItemActivity
+# Remove-MgExternalConnectionQuota
 
 ## SYNOPSIS
-Delete navigation property activities for external
+Delete navigation property quota for external
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgExternalConnectionItemActivity -ExternalActivityId <String> -ExternalConnectionId <String>
- -ExternalItemId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgExternalConnectionQuota -ExternalConnectionId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgExternalConnectionItemActivity -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgExternalConnectionQuota -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property activities for external
+Delete navigation property quota for external
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -ExternalActivityId
-key: id of externalActivity
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ExternalConnectionId
 key: id of externalConnection
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExternalItemId
-key: id of externalItem
 
 ```yaml
 Type: String

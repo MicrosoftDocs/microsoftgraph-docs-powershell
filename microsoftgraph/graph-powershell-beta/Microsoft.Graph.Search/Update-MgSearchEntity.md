@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgsearchentity
@@ -96,7 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -190,7 +191,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACRONYMS <IMicrosoftGraphSearchAcronym\[]>: Administrative answer in Microsoft Search results to define common acronyms in a organization.
+ACRONYMS <IMicrosoftGraphSearchAcronym[]>: Administrative answer in Microsoft Search results to define common acronyms in a organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -203,13 +204,13 @@ ACRONYMS <IMicrosoftGraphSearchAcronym\[]>: Administrative answer in Microsoft S
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
   - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState
 
-BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
+BODYPARAMETER <IMicrosoftGraphSearchEntity>: searchEntity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Acronyms <IMicrosoftGraphSearchAcronym[]>]`: Administrative answer in Microsoft Search results to define common acronyms in a organization.
     - `[Description <String>]`: Search answer description shown on search results page.
     - `[DisplayName <String>]`: Search answer name displayed in search results.
@@ -223,7 +224,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
       - `[User <IMicrosoftGraphSearchIdentity>]`: identity
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
     - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[StandsFor <String>]`: What the acronym stands for.
     - `[State <String>]`: answerState
   - `[Bookmarks <IMicrosoftGraphSearchBookmark[]>]`: Administrative answer in Microsoft Search results for common search queries in an organization.
@@ -232,7 +233,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
     - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
     - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
     - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
     - `[Categories <String[]>]`: Categories commonly used to describe this bookmark. For example, IT and HR.
@@ -259,7 +260,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
     - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
     - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna will stop to appear as a search result. Set as null for always available.
     - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna will start to appear as a search result. Set as null for always available.
     - `[GroupIds <String[]>]`: List of security groups able to view this qna.
@@ -270,7 +271,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
     - `[State <String>]`: answerState
     - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
 
-BOOKMARKS <IMicrosoftGraphSearchBookmark\[]>: Administrative answer in Microsoft Search results for common search queries in an organization.
+BOOKMARKS <IMicrosoftGraphSearchBookmark[]>: Administrative answer in Microsoft Search results for common search queries in an organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -283,7 +284,7 @@ BOOKMARKS <IMicrosoftGraphSearchBookmark\[]>: Administrative answer in Microsoft
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
   - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
   - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
   - `[Categories <String[]>]`: Categories commonly used to describe this bookmark. For example, IT and HR.
@@ -305,7 +306,7 @@ BOOKMARKS <IMicrosoftGraphSearchBookmark\[]>: Administrative answer in Microsoft
     - `[Platform <DevicePlatformType?>]`: Supported platform types.
     - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
-QNAS <IMicrosoftGraphSearchQna\[]>: Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
+QNAS <IMicrosoftGraphSearchQna[]>: Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -318,7 +319,7 @@ QNAS <IMicrosoftGraphSearchQna\[]>: Administrative answer in Microsoft Search re
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
   - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna will stop to appear as a search result. Set as null for always available.
   - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna will start to appear as a search result. Set as null for always available.
   - `[GroupIds <String[]>]`: List of security groups able to view this qna.
