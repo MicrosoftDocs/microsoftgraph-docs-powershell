@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgonpremisepublishingprofile
@@ -316,7 +316,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup[]>: List of existing onPremisesAgentGroup objects. Read-only. Nullable.
+AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup\[]>: List of existing onPremisesAgentGroup objects. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Agents <IMicrosoftGraphOnPremisesAgent[]>]`: List of onPremisesAgent that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
     - `[Id <String>]`: 
@@ -335,7 +335,7 @@ AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup[]>: List of existing onPremises
     - `[ResourceName <String>]`: Name of the publishedResource.
   - `[PublishingType <String>]`: onPremisesPublishingType
 
-AGENTS <IMicrosoftGraphOnPremisesAgent[]>: List of existing onPremisesAgent objects. Read-only. Nullable.
+AGENTS <IMicrosoftGraphOnPremisesAgent\[]>: List of existing onPremisesAgent objects. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of onPremisesAgentGroups that an onPremisesAgent is assigned to. Read-only. Nullable.
     - `[Id <String>]`: 
@@ -354,7 +354,7 @@ AGENTS <IMicrosoftGraphOnPremisesAgent[]>: List of existing onPremisesAgent obje
   - `[Status <String>]`: agentStatus
   - `[SupportedPublishingTypes <String[]>]`: 
 
-BODYPARAMETER <IMicrosoftGraphOnPremisesPublishingProfile>: onPremisesPublishingProfile
+BODYPARAMETER `<IMicrosoftGraphOnPremisesPublishingProfile>`: onPremisesPublishingProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of existing onPremisesAgentGroup objects. Read-only. Nullable.
@@ -463,7 +463,7 @@ BODYPARAMETER <IMicrosoftGraphOnPremisesPublishingProfile>: onPremisesPublishing
         - `[DisplayName <String>]`: Display name for this policy. Required.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
         - `[Id <String>]`: 
-      - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
+      - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
       - `[Info <IMicrosoftGraphInformationalUrl>]`: informationalUrl
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[LogoUrl <String>]`: CDN URL to the application's logo, Read-only.
@@ -780,7 +780,7 @@ BODYPARAMETER <IMicrosoftGraphOnPremisesPublishingProfile>: onPremisesPublishing
   - `[IsEnabled <Boolean?>]`: Represents if Azure AD Application Proxy is enabled for the tenant.
   - `[PublishedResources <IMicrosoftGraphPublishedResource[]>]`: List of existing publishedResource objects. Read-only. Nullable.
 
-CONNECTORGROUPS <IMicrosoftGraphConnectorGroup[]>: List of existing connectorGroup objects for applications published through Application Proxy. Read-only. Nullable.
+CONNECTORGROUPS <IMicrosoftGraphConnectorGroup\[]>: List of existing connectorGroup objects for applications published through Application Proxy. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Applications <IMicrosoftGraphApplication[]>]`: 
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
@@ -867,7 +867,7 @@ CONNECTORGROUPS <IMicrosoftGraphConnectorGroup[]>: List of existing connectorGro
       - `[DisplayName <String>]`: Display name for this policy. Required.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
       - `[Id <String>]`: 
-    - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
+    - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
     - `[Info <IMicrosoftGraphInformationalUrl>]`: informationalUrl
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[LogoUrl <String>]`: CDN URL to the application's logo, Read-only.
@@ -1173,7 +1173,7 @@ CONNECTORGROUPS <IMicrosoftGraphConnectorGroup[]>: List of existing connectorGro
   - `[Name <String>]`: The name associated with the connectorGroup.
   - `[Region <String>]`: connectorGroupRegion
 
-CONNECTORS <IMicrosoftGraphConnector[]>: List of existing connector objects for applications published through Application Proxy. Read-only. Nullable.
+CONNECTORS <IMicrosoftGraphConnector\[]>: List of existing connector objects for applications published through Application Proxy. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[ExternalIP <String>]`: The external IP address as detected by the the connector server. Read-only.
   - `[MachineName <String>]`: The machine name the connector is installed and running on.
@@ -1264,7 +1264,7 @@ CONNECTORS <IMicrosoftGraphConnector[]>: List of existing connector objects for 
         - `[DisplayName <String>]`: Display name for this policy. Required.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
         - `[Id <String>]`: 
-      - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
+      - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
       - `[Info <IMicrosoftGraphInformationalUrl>]`: informationalUrl
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[LogoUrl <String>]`: CDN URL to the application's logo, Read-only.
@@ -1566,7 +1566,7 @@ CONNECTORS <IMicrosoftGraphConnector[]>: List of existing connector objects for 
     - `[Region <String>]`: connectorGroupRegion
   - `[Status <String>]`: connectorStatus
 
-HYBRIDAGENTUPDATERCONFIGURATION <IMicrosoftGraphHybridAgentUpdaterConfiguration>: hybridAgentUpdaterConfiguration
+HYBRIDAGENTUPDATERCONFIGURATION `<IMicrosoftGraphHybridAgentUpdaterConfiguration>`: hybridAgentUpdaterConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowUpdateConfigurationOverride <Boolean?>]`: Indicates if updater configuration will be skipped and the agent will receive an update when the next version of the agent is available.
   - `[DeferUpdateDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -1575,7 +1575,7 @@ HYBRIDAGENTUPDATERCONFIGURATION <IMicrosoftGraphHybridAgentUpdaterConfiguration>
     - `[UpdateWindowEndTime <String>]`: End of a time window during which agents can receive updates
     - `[UpdateWindowStartTime <String>]`: Start of a time window during which agents can receive updates
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
@@ -1605,7 +1605,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
   - `[UserId <String>]`: key: id of user
 
-PUBLISHEDRESOURCES <IMicrosoftGraphPublishedResource[]>: List of existing publishedResource objects. Read-only. Nullable.
+PUBLISHEDRESOURCES <IMicrosoftGraphPublishedResource\[]>: List of existing publishedResource objects. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
     - `[Id <String>]`: 
