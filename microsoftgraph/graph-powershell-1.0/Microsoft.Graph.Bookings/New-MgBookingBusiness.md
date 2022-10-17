@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness
@@ -21,7 +21,7 @@ New-MgBookingBusiness [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftG
  [-BusinessType <String>] [-CalendarView <IMicrosoftGraphBookingAppointment1[]>]
  [-CustomQuestions <IMicrosoftGraphBookingCustomQuestion[]>]
  [-Customers <IMicrosoftGraphBookingCustomerBase[]>] [-DefaultCurrencyIso <String>] [-DisplayName <String>]
- [-Email <String>] [-Id <String>] [-IsPublished] [-Phone <String>] [-PublicUrl <String>]
+ [-Email <String>] [-Id <String>] [-LanguageTag <String>] [-Phone <String>]
  [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-Services <IMicrosoftGraphBookingService1[]>]
  [-StaffMembers <IMicrosoftGraphBookingStaffMemberBase[]>] [-WebSiteUrl <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -263,6 +263,22 @@ Accept wildcard characters: False
 ```
 
 ### -Id
+The unique idenfier for an entity.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LanguageTag
 .
 
 ```yaml
@@ -277,42 +293,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IsPublished
-The scheduling page has been made available to external customers.
-Use the publish and unpublish actions to set this property.
-Read-only.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Phone
 The telephone number for the business.
 The phone property, together with address and webSiteUrl, appear in the footer of a business scheduling page.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PublicUrl
-The URL for the scheduling page, which is set after you publish or unpublish the page.
-Read-only.
 
 ```yaml
 Type: String
@@ -443,7 +426,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress1>: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -451,9 +434,10 @@ ADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-APPOINTMENTS <IMicrosoftGraphBookingAppointment1\[]>: All the appointments of this business. Read-only. Nullable.
-  - `[Id <String>]`: 
+APPOINTMENTS <IMicrosoftGraphBookingAppointment1[]>: All the appointments of this business. Read-only. Nullable.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
+  - `[AnonymousJoinWebUrl <String>]`: 
   - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
   - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
@@ -502,9 +486,9 @@ APPOINTMENTS <IMicrosoftGraphBookingAppointment1\[]>: All the appointments of th
   - `[StaffMemberIds <String[]>]`: The ID of each bookingStaffMember who is scheduled in this appointment.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-BODYPARAMETER `<IMicrosoftGraphBookingBusiness1>`: Represents a Microsot Bookings Business.
+BODYPARAMETER <IMicrosoftGraphBookingBusiness1>: Represents a Microsot Bookings Business.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -513,8 +497,9 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness1>`: Represents a Microsot Booking
     - `[State <String>]`: The state.
     - `[Street <String>]`: The street.
   - `[Appointments <IMicrosoftGraphBookingAppointment1[]>]`: All the appointments of this business. Read-only. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
+    - `[AnonymousJoinWebUrl <String>]`: 
     - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
     - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
     - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
@@ -564,15 +549,16 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness1>`: Represents a Microsot Booking
   - `[BusinessType <String>]`: The type of business.
   - `[CalendarView <IMicrosoftGraphBookingAppointment1[]>]`: The set of appointments of this business in a specified date range. Read-only. Nullable.
   - `[CustomQuestions <IMicrosoftGraphBookingCustomQuestion[]>]`: All the custom questions of this business. Read-only. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AnswerInputType <String>]`: answerInputType
     - `[AnswerOptions <String[]>]`: List of possible answer values.
     - `[DisplayName <String>]`: The question.
   - `[Customers <IMicrosoftGraphBookingCustomerBase[]>]`: All the customers of this business. Read-only. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DefaultCurrencyIso <String>]`: The code for the currency that the business operates in on Microsoft Bookings.
   - `[DisplayName <String>]`: The name of the business, which interfaces with customers. This name appears at the top of the business scheduling page.
   - `[Email <String>]`: The email address for the business.
+  - `[LanguageTag <String>]`: 
   - `[Phone <String>]`: The telephone number for the business. The phone property, together with address and webSiteUrl, appear in the footer of a business scheduling page.
   - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -582,7 +568,7 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness1>`: Represents a Microsot Booking
     - `[SendConfirmationsToOwner <Boolean?>]`: True to notify the business via email when a booking is created or changed. Use the email address specified in the email property of the bookingBusiness entity for the business.
     - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
   - `[Services <IMicrosoftGraphBookingService1[]>]`: All the services offered by this business. Read-only. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
     - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>]`: Contains the set of custom questions associated with a particular service.
       - `[IsRequired <Boolean?>]`: The ID of the custom question.
@@ -594,8 +580,10 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness1>`: Represents a Microsot Booking
     - `[DefaultReminders <IMicrosoftGraphBookingReminder1[]>]`: The default set of reminders for an appointment of this service. The value of this property is available only when reading this bookingService by its ID.
     - `[Description <String>]`: A text description for the service.
     - `[DisplayName <String>]`: A service name.
+    - `[IsAnonymousJoinEnabled <Boolean?>]`: 
     - `[IsHiddenFromCustomers <Boolean?>]`: True means this service is not available to customers for booking.
     - `[IsLocationOnline <Boolean?>]`: True indicates that the appointments for the service will be held online. Default value is false.
+    - `[LanguageTag <String>]`: 
     - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in a service. If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the Create bookingCustomer operation.
     - `[Notes <String>]`: Additional information about this service.
     - `[PostBuffer <TimeSpan?>]`: The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.
@@ -604,18 +592,19 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness1>`: Represents a Microsot Booking
     - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.
     - `[StaffMemberIds <String[]>]`: Represents those staff members who provide this service.
   - `[StaffMembers <IMicrosoftGraphBookingStaffMemberBase[]>]`: All the staff members that provide services in this business. Read-only. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[WebSiteUrl <String>]`: The URL of the business web site. The webSiteUrl property, together with address, phone, appear in the footer of a business scheduling page.
 
-BUSINESSHOURS <IMicrosoftGraphBookingWorkHours1\[]>: The hours of operation for the business.
+BUSINESSHOURS <IMicrosoftGraphBookingWorkHours1[]>: The hours of operation for the business.
   - `[Day <String>]`: dayOfWeek
   - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot1[]>]`: A list of start/end times during a day.
     - `[EndTime <String>]`: The time of the day when work stops. For example, 17:00:00.0000000.
     - `[StartTime <String>]`: The time of the day when work starts. For example, 08:00:00.0000000.
 
-CALENDARVIEW <IMicrosoftGraphBookingAppointment1\[]>: The set of appointments of this business in a specified date range. Read-only. Nullable.
-  - `[Id <String>]`: 
+CALENDARVIEW <IMicrosoftGraphBookingAppointment1[]>: The set of appointments of this business in a specified date range. Read-only. Nullable.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
+  - `[AnonymousJoinWebUrl <String>]`: 
   - `[CustomerTimeZone <String>]`: The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
   - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
@@ -664,16 +653,16 @@ CALENDARVIEW <IMicrosoftGraphBookingAppointment1\[]>: The set of appointments of
   - `[StaffMemberIds <String[]>]`: The ID of each bookingStaffMember who is scheduled in this appointment.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-CUSTOMERS <IMicrosoftGraphBookingCustomerBase\[]>: All the customers of this business. Read-only. Nullable.
-  - `[Id <String>]`: 
+CUSTOMERS <IMicrosoftGraphBookingCustomerBase[]>: All the customers of this business. Read-only. Nullable.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-CUSTOMQUESTIONS <IMicrosoftGraphBookingCustomQuestion\[]>: All the custom questions of this business. Read-only. Nullable.
-  - `[Id <String>]`: 
+CUSTOMQUESTIONS <IMicrosoftGraphBookingCustomQuestion[]>: All the custom questions of this business. Read-only. Nullable.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AnswerInputType <String>]`: answerInputType
   - `[AnswerOptions <String[]>]`: List of possible answer values.
   - `[DisplayName <String>]`: The question.
 
-SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
+SCHEDULINGPOLICY <IMicrosoftGraphBookingSchedulingPolicy>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
   - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made. It follows the ISO 8601 format.
@@ -681,8 +670,8 @@ SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represent
   - `[SendConfirmationsToOwner <Boolean?>]`: True to notify the business via email when a booking is created or changed. Use the email address specified in the email property of the bookingBusiness entity for the business.
   - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
 
-SERVICES <IMicrosoftGraphBookingService1\[]>: All the services offered by this business. Read-only. Nullable.
-  - `[Id <String>]`: 
+SERVICES <IMicrosoftGraphBookingService1[]>: All the services offered by this business. Read-only. Nullable.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>]`: Contains the set of custom questions associated with a particular service.
     - `[IsRequired <Boolean?>]`: The ID of the custom question.
@@ -718,8 +707,10 @@ SERVICES <IMicrosoftGraphBookingService1\[]>: All the services offered by this b
     - `[Recipients <String>]`: 
   - `[Description <String>]`: A text description for the service.
   - `[DisplayName <String>]`: A service name.
+  - `[IsAnonymousJoinEnabled <Boolean?>]`: 
   - `[IsHiddenFromCustomers <Boolean?>]`: True means this service is not available to customers for booking.
   - `[IsLocationOnline <Boolean?>]`: True indicates that the appointments for the service will be held online. Default value is false.
+  - `[LanguageTag <String>]`: 
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in a service. If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the Create bookingCustomer operation.
   - `[Notes <String>]`: Additional information about this service.
   - `[PostBuffer <TimeSpan?>]`: The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.
@@ -734,8 +725,8 @@ SERVICES <IMicrosoftGraphBookingService1\[]>: All the services offered by this b
   - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.
   - `[StaffMemberIds <String[]>]`: Represents those staff members who provide this service.
 
-STAFFMEMBERS <IMicrosoftGraphBookingStaffMemberBase\[]>: All the staff members that provide services in this business. Read-only. Nullable.
-  - `[Id <String>]`: 
+STAFFMEMBERS <IMicrosoftGraphBookingStaffMemberBase[]>: All the staff members that provide services in this business. Read-only. Nullable.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
 
