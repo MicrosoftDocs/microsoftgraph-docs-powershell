@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgsearchentity
@@ -61,7 +61,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String

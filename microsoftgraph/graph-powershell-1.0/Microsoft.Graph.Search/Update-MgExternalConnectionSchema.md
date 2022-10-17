@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema
@@ -15,7 +15,7 @@ Update the navigation property schema in external
 ### UpdateExpanded1 (Default)
 ```
 Update-MgExternalConnectionSchema -ExternalConnectionId <String> [-AdditionalProperties <Hashtable>]
- [-BaseType <String>] [-Id <String>] [-Properties <IMicrosoftGraphExternalConnectorsProperty1[]>] [-PassThru]
+ [-BaseType <String>] [-Id <String>] [-Properties <IMicrosoftGraphExternalConnectorsProperty[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgExternalConnectionSchema -ExternalConnectionId <String>
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-BaseType <String>] [-Id <String>] [-Properties <IMicrosoftGraphExternalConnectorsProperty1[]>] [-PassThru]
+ [-BaseType <String>] [-Id <String>] [-Properties <IMicrosoftGraphExternalConnectorsProperty[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -110,7 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -161,7 +162,7 @@ The minimum number of properties is one, the maximum is 128.
 To construct, please use Get-Help -Online and see NOTES section for PROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsProperty1[]
+Type: IMicrosoftGraphExternalConnectorsProperty[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -222,11 +223,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsSchema1>`: schema
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsSchema1>: schema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[BaseType <String>]`: Must be set to microsoft.graph.externalConnector.externalItem. Required.
-  - `[Properties <IMicrosoftGraphExternalConnectorsProperty1[]>]`: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
+  - `[Properties <IMicrosoftGraphExternalConnectorsProperty[]>]`: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
     - `[Aliases <String[]>]`: A set of aliases or a friendly names for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^. Optional.
     - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable. Queryable properties can be used in Keyword Query Language (KQL) queries. Optional.
     - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable.  Refinable properties can be used to filter search results in the Search API and add a refiner control in the Microsoft Search user experience. Optional.
@@ -236,7 +237,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsSchema1>`: schema
     - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
     - `[Type <String>]`: propertyType
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
@@ -247,7 +248,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IdentityId <String>]`: key: id of identity
   - `[QnaId <String>]`: key: id of qna
 
-PROPERTIES <IMicrosoftGraphExternalConnectorsProperty1\[]>: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
+PROPERTIES <IMicrosoftGraphExternalConnectorsProperty[]>: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
   - `[Aliases <String[]>]`: A set of aliases or a friendly names for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^. Optional.
   - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable. Queryable properties can be used in Keyword Query Language (KQL) queries. Optional.
   - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable.  Refinable properties can be used to filter search results in the Search API and add a refiner control in the Microsoft Search user experience. Optional.
