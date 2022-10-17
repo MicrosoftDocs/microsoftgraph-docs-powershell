@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Financials
-Module Guid: f2cb02d8-1185-45c3-9cb6-a0fd04bff9af
+Module Guid: da500e46-15c7-447d-b8dd-e03d8b47d8c4
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials
 Help Version: 1.0.0.0
 Locale: en-US
@@ -464,18 +464,6 @@ Invoke action post
 ### [Invoke-MgFinancialCompanySaleInvoiceAndSend](Invoke-MgFinancialCompanySaleInvoiceAndSend.md)
 Invoke action postAndSend
 
-### [New-MgFinancialCompany](New-MgFinancialCompany.md)
-Create new navigation property to companies for financials
-
-### [New-MgFinancialCompanyAccount](New-MgFinancialCompanyAccount.md)
-Create new navigation property to accounts for financials
-
-### [New-MgFinancialCompanyAgedAccountPayable](New-MgFinancialCompanyAgedAccountPayable.md)
-Create new navigation property to agedAccountsPayable for financials
-
-### [New-MgFinancialCompanyAgedAccountReceivable](New-MgFinancialCompanyAgedAccountReceivable.md)
-Create new navigation property to agedAccountsReceivable for financials
-
 ### [New-MgFinancialCompanyCountryRegion](New-MgFinancialCompanyCountryRegion.md)
 Create new navigation property to countriesRegions for financials
 
@@ -503,23 +491,11 @@ Create new navigation property to picture for financials
 ### [New-MgFinancialCompanyCustomerPicture](New-MgFinancialCompanyCustomerPicture.md)
 Create new navigation property to picture for financials
 
-### [New-MgFinancialCompanyDimension](New-MgFinancialCompanyDimension.md)
-Create new navigation property to dimensions for financials
-
-### [New-MgFinancialCompanyDimensionValue](New-MgFinancialCompanyDimensionValue.md)
-Create new navigation property to dimensionValues for financials
-
 ### [New-MgFinancialCompanyEmployee](New-MgFinancialCompanyEmployee.md)
 Create new navigation property to employees for financials
 
 ### [New-MgFinancialCompanyEmployeePicture](New-MgFinancialCompanyEmployeePicture.md)
 Create new navigation property to picture for financials
-
-### [New-MgFinancialCompanyGeneralLedgerEntry](New-MgFinancialCompanyGeneralLedgerEntry.md)
-Create new navigation property to generalLedgerEntries for financials
-
-### [New-MgFinancialCompanyInformation](New-MgFinancialCompanyInformation.md)
-Create new navigation property to companyInformation for financials
 
 ### [New-MgFinancialCompanyItem](New-MgFinancialCompanyItem.md)
 Create new navigation property to items for financials
@@ -545,71 +521,38 @@ Create new navigation property to paymentTerms for financials
 ### [New-MgFinancialCompanyPicture](New-MgFinancialCompanyPicture.md)
 Create new navigation property to picture for financials
 
-### [New-MgFinancialCompanyPurchaseInvoice](New-MgFinancialCompanyPurchaseInvoice.md)
-Create new navigation property to purchaseInvoices for financials
-
-### [New-MgFinancialCompanyPurchaseInvoiceLine](New-MgFinancialCompanyPurchaseInvoiceLine.md)
-Create new navigation property to purchaseInvoiceLines for financials
-
 ### [New-MgFinancialCompanyPurchaseInvoiceLineItemPicture](New-MgFinancialCompanyPurchaseInvoiceLineItemPicture.md)
 Create new navigation property to picture for financials
 
 ### [New-MgFinancialCompanyPurchaseInvoiceVendorPicture](New-MgFinancialCompanyPurchaseInvoiceVendorPicture.md)
 Create new navigation property to picture for financials
 
-### [New-MgFinancialCompanySaleCreditMemo](New-MgFinancialCompanySaleCreditMemo.md)
-Create new navigation property to salesCreditMemos for financials
-
 ### [New-MgFinancialCompanySaleCreditMemoCustomerPicture](New-MgFinancialCompanySaleCreditMemoCustomerPicture.md)
 Create new navigation property to picture for financials
-
-### [New-MgFinancialCompanySaleCreditMemoLine](New-MgFinancialCompanySaleCreditMemoLine.md)
-Create new navigation property to salesCreditMemoLines for financials
 
 ### [New-MgFinancialCompanySaleCreditMemoLineItemPicture](New-MgFinancialCompanySaleCreditMemoLineItemPicture.md)
 Create new navigation property to picture for financials
 
-### [New-MgFinancialCompanySaleCreditMemoSaleCreditMemoLine](New-MgFinancialCompanySaleCreditMemoSaleCreditMemoLine.md)
-Create new navigation property to salesCreditMemoLines for financials
-
 ### [New-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPicture](New-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPicture.md)
 Create new navigation property to picture for financials
-
-### [New-MgFinancialCompanySaleInvoice](New-MgFinancialCompanySaleInvoice.md)
-Create new navigation property to salesInvoices for financials
 
 ### [New-MgFinancialCompanySaleInvoiceCustomerPicture](New-MgFinancialCompanySaleInvoiceCustomerPicture.md)
 Create new navigation property to picture for financials
 
-### [New-MgFinancialCompanySaleInvoiceLine](New-MgFinancialCompanySaleInvoiceLine.md)
-Create new navigation property to salesInvoiceLines for financials
-
 ### [New-MgFinancialCompanySaleInvoiceLineItemPicture](New-MgFinancialCompanySaleInvoiceLineItemPicture.md)
 Create new navigation property to picture for financials
-
-### [New-MgFinancialCompanySaleOrder](New-MgFinancialCompanySaleOrder.md)
-Create new navigation property to salesOrders for financials
 
 ### [New-MgFinancialCompanySaleOrderCustomerPicture](New-MgFinancialCompanySaleOrderCustomerPicture.md)
 Create new navigation property to picture for financials
 
-### [New-MgFinancialCompanySaleOrderLine](New-MgFinancialCompanySaleOrderLine.md)
-Create new navigation property to salesOrderLines for financials
-
 ### [New-MgFinancialCompanySaleOrderLineItemPicture](New-MgFinancialCompanySaleOrderLineItemPicture.md)
 Create new navigation property to picture for financials
-
-### [New-MgFinancialCompanySaleQuote](New-MgFinancialCompanySaleQuote.md)
-Create new navigation property to salesQuotes for financials
 
 ### [New-MgFinancialCompanySaleQuoteCustomerPicture](New-MgFinancialCompanySaleQuoteCustomerPicture.md)
 Create new navigation property to picture for financials
 
 ### [New-MgFinancialCompanySaleQuoteInvoice](New-MgFinancialCompanySaleQuoteInvoice.md)
 Invoke action makeInvoice
-
-### [New-MgFinancialCompanySaleQuoteLine](New-MgFinancialCompanySaleQuoteLine.md)
-Create new navigation property to salesQuoteLines for financials
 
 ### [New-MgFinancialCompanySaleQuoteLineItemPicture](New-MgFinancialCompanySaleQuoteLineItemPicture.md)
 Create new navigation property to picture for financials

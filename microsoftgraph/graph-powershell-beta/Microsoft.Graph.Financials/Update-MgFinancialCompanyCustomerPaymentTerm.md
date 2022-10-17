@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanycustomerpaymentterm
@@ -14,7 +14,7 @@ Update the navigation property paymentTerm in financials
 
 ### UpdateExpanded (Default)
 ```
-Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String>
+Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
  [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos] [-Code <String>]
  [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
  [-DueDateCalculation <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf]
@@ -23,7 +23,7 @@ Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <St
 
 ### UpdateExpanded1
 ```
-Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
+Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String>
  [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos] [-Code <String>]
  [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
  [-DueDateCalculation <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf]
@@ -32,13 +32,13 @@ Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymen
 
 ### Update1
 ```
-Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
+Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String>
  -BodyParameter <IMicrosoftGraphPaymentTerm> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String>
+Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
  -BodyParameter <IMicrosoftGraphPaymentTerm> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -160,7 +160,7 @@ key: id of customer
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -175,7 +175,7 @@ key: id of customerPayment
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -356,7 +356,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPaymentTerm>`: paymentTerm
+BODYPARAMETER <IMicrosoftGraphPaymentTerm>: paymentTerm
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
@@ -367,7 +367,7 @@ BODYPARAMETER `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[DueDateCalculation <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[AccountId <String>]`: key: id of account
   - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
   - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
