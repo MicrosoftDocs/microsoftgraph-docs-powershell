@@ -1,112 +1,34 @@
 ﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mguserdriveitemlistitemactivitybyinterval
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusermanageddeviceremotehelpsession
 schema: 2.0.0
 ---
 
-# Get-MgUserDriveItemListItemActivityByInterval
+# Get-MgUserManagedDeviceRemoteHelpSession
 
 ## SYNOPSIS
-Invoke function getActivitiesByInterval
+Invoke function retrieveRemoteHelpSession
 
 ## SYNTAX
 
-### Get (Default)
+### Retrieve (Default)
 ```
-Get-MgUserDriveItemListItemActivityByInterval -DriveId <String> -DriveItemId <String> -EndDateTime <String>
- -Interval <String> -StartDateTime <String> -UserId <String> [-Count] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgUserDriveItemListItemActivityByInterval -InputObject <IUsersFunctionsIdentity> [-Count]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+Get-MgUserManagedDeviceRemoteHelpSession -ManagedDeviceId <String> -SessionKey <String> -UserId <String>
  [<CommonParameters>]
 ```
 
+### RetrieveViaIdentity
+```
+Get-MgUserManagedDeviceRemoteHelpSession -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Invoke function getActivitiesByInterval
+Invoke function retrieveRemoteHelpSession
 
 ## EXAMPLES
 
 ## PARAMETERS
-
-### -Count
-Include count of items
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DriveId
-key: id of drive
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DriveItemId
-key: id of driveItem
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EndDateTime
-Usage: endDateTime='{endDateTime}'
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Filter
-Filter items by property values
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -InputObject
 Identity Parameter
@@ -114,7 +36,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: RetrieveViaIdentity
 Aliases:
 
 Required: True
@@ -124,12 +46,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Interval
-Usage: interval='{interval}'
+### -ManagedDeviceId
+key: id of managedDevice
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Retrieve
 Aliases:
 
 Required: True
@@ -139,75 +61,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
+### -SessionKey
+Usage: sessionKey='{sessionKey}'
 
 ```yaml
 Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -StartDateTime
-Usage: startDateTime='{startDateTime}'
-
-```yaml
-Type: String
-Parameter Sets: Get
+Parameter Sets: Retrieve
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases: Limit
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -219,25 +81,10 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Retrieve
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -252,7 +99,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRetrieveRemoteHelpSessionResponse
 ## NOTES
 
 ALIASES
