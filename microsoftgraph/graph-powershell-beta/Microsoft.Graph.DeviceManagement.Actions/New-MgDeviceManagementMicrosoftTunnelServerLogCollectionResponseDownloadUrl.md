@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementmicrosofttunnelserverlogcollectionresponsedownloadurl
@@ -16,6 +16,18 @@ Invoke action createDownloadUrl
 ```
 New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
  -MicrosoftTunnelServerLogCollectionResponseId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Generate
+```
+New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
+ -MicrosoftTunnelServerLogCollectionResponseId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GenerateViaIdentity
+```
+New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
+ -InputObject <IDeviceManagementActionsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -37,7 +49,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
-Parameter Sets: CreateViaIdentity
+Parameter Sets: GenerateViaIdentity, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -52,7 +64,7 @@ key: id of microsoftTunnelServerLogCollectionResponse
 
 ```yaml
 Type: String
-Parameter Sets: Create
+Parameter Sets: Create, Generate
 Aliases:
 
 Required: True
@@ -111,7 +123,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
