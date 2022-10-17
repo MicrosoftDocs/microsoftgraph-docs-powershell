@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-Module Guid: 85adab9c-3312-4d7c-9a73-25448e1bfabb
+Module Guid: 3c3aee24-7939-4a4c-9699-982a8996886a
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -59,6 +59,9 @@ Invoke function getNonCompliantSettings
 ### [Get-MgDeviceManagementComanagedDeviceOemWarranty](Get-MgDeviceManagementComanagedDeviceOemWarranty.md)
 Invoke function getOemWarranty
 
+### [Get-MgDeviceManagementComanagedDeviceRemoteHelpSession](Get-MgDeviceManagementComanagedDeviceRemoteHelpSession.md)
+Invoke function retrieveRemoteHelpSession
+
 ### [Get-MgDeviceManagementComanagedDeviceSummary](Get-MgDeviceManagementComanagedDeviceSummary.md)
 Invoke function getComanagedDevicesSummary
 
@@ -106,6 +109,12 @@ Invoke function getNonCompliantSettings
 
 ### [Get-MgDeviceManagementManagedDeviceOemWarranty](Get-MgDeviceManagementManagedDeviceOemWarranty.md)
 Invoke function getOemWarranty
+
+### [Get-MgDeviceManagementManagedDeviceRemoteHelpSession](Get-MgDeviceManagementManagedDeviceRemoteHelpSession.md)
+Invoke function retrieveRemoteHelpSession
+
+### [Get-MgDeviceManagementMonitoringAlertRecordPortalNotification](Get-MgDeviceManagementMonitoringAlertRecordPortalNotification.md)
+Invoke function getPortalNotifications
 
 ### [Get-MgDeviceManagementResourceOperationScopeForUser](Get-MgDeviceManagementResourceOperationScopeForUser.md)
 Invoke function getScopesForUser

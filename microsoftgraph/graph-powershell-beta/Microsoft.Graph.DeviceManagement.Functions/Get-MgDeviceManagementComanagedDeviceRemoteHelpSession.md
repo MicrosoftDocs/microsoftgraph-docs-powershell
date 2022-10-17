@@ -1,30 +1,31 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementconfigmanagercollectionpolicysummary
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementcomanageddeviceremotehelpsession
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementConfigManagerCollectionPolicySummary
+# Get-MgDeviceManagementComanagedDeviceRemoteHelpSession
 
 ## SYNOPSIS
-Invoke function getPolicySummary
+Invoke function retrieveRemoteHelpSession
 
 ## SYNTAX
 
-### Get (Default)
+### Retrieve (Default)
 ```
-Get-MgDeviceManagementConfigManagerCollectionPolicySummary -PolicyId <String> [<CommonParameters>]
+Get-MgDeviceManagementComanagedDeviceRemoteHelpSession -ManagedDeviceId <String> -SessionKey <String>
+ [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### RetrieveViaIdentity
 ```
-Get-MgDeviceManagementConfigManagerCollectionPolicySummary -InputObject <IDeviceManagementFunctionsIdentity>
+Get-MgDeviceManagementComanagedDeviceRemoteHelpSession -InputObject <IDeviceManagementFunctionsIdentity>
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getPolicySummary
+Invoke function retrieveRemoteHelpSession
 
 ## EXAMPLES
 
@@ -36,7 +37,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementFunctionsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: RetrieveViaIdentity
 Aliases:
 
 Required: True
@@ -46,12 +47,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PolicyId
-Usage: policyId='{policyId}'
+### -ManagedDeviceId
+key: id of managedDevice
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Retrieve
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SessionKey
+Usage: sessionKey='{sessionKey}'
+
+```yaml
+Type: String
+Parameter Sets: Retrieve
 Aliases:
 
 Required: True
@@ -69,7 +85,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConfigManagerPolicySummary
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRetrieveRemoteHelpSessionResponse
 ## NOTES
 
 ALIASES
