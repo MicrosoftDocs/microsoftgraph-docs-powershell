@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mguseroutlooktaskgroup
@@ -120,7 +120,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -293,34 +294,34 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOutlookTaskGroup>`: outlookTaskGroup
+BODYPARAMETER <IMicrosoftGraphOutlookTaskGroup>: outlookTaskGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ChangeKey <String>]`: The version of the task group.
   - `[GroupKey <String>]`: The unique GUID identifier for the task group.
   - `[IsDefaultGroup <Boolean?>]`: True if the task group is the default task group.
   - `[Name <String>]`: The name of the task group.
   - `[TaskFolders <IMicrosoftGraphOutlookTaskFolder[]>]`: The collection of task folders in the task group. Read-only. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[ChangeKey <String>]`: The version of the task folder.
     - `[IsDefaultFolder <Boolean?>]`: True if the folder is the default task folder.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the task folder. Read-only. Nullable.
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Value <String[]>]`: A collection of property values.
     - `[Name <String>]`: The name of the task folder.
     - `[ParentGroupKey <String>]`: The unique GUID identifier for the task folder's parent group.
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the task folder. Read-only. Nullable.
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Value <String>]`: A property value.
     - `[Tasks <IMicrosoftGraphOutlookTask[]>]`: The tasks in this task folder. Read-only. Nullable.
       - `[Categories <String[]>]`: The categories associated with the item
       - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AssignedTo <String>]`: The name of the person who has been assigned the task in Outlook. Read-only.
       - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.  Read-only. Nullable.
-        - `[Id <String>]`: 
+        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[ContentType <String>]`: The MIME type.
         - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
         - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -366,7 +367,7 @@ BODYPARAMETER `<IMicrosoftGraphOutlookTaskGroup>`: outlookTaskGroup
       - `[Status <String>]`: taskStatus
       - `[Subject <String>]`: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
   - `[AttachmentSessionId <String>]`: key: id of attachmentSession
@@ -388,27 +389,27 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
 
-TASKFOLDERS <IMicrosoftGraphOutlookTaskFolder\[]>: The collection of task folders in the task group. Read-only. Nullable.
-  - `[Id <String>]`: 
+TASKFOLDERS <IMicrosoftGraphOutlookTaskFolder[]>: The collection of task folders in the task group. Read-only. Nullable.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ChangeKey <String>]`: The version of the task folder.
   - `[IsDefaultFolder <Boolean?>]`: True if the folder is the default task folder.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the task folder. Read-only. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Value <String[]>]`: A collection of property values.
   - `[Name <String>]`: The name of the task folder.
   - `[ParentGroupKey <String>]`: The unique GUID identifier for the task folder's parent group.
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the task folder. Read-only. Nullable.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Value <String>]`: A property value.
   - `[Tasks <IMicrosoftGraphOutlookTask[]>]`: The tasks in this task folder. Read-only. Nullable.
     - `[Categories <String[]>]`: The categories associated with the item
     - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AssignedTo <String>]`: The name of the person who has been assigned the task in Outlook. Read-only.
     - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.  Read-only. Nullable.
-      - `[Id <String>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
