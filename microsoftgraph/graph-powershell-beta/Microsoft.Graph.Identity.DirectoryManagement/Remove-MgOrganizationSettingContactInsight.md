@@ -1,110 +1,42 @@
 ﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryfeaturerolloutpolicy
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationsettingcontactinsight
 schema: 2.0.0
 ---
 
-# Get-MgDirectoryFeatureRolloutPolicy
+# Remove-MgOrganizationSettingContactInsight
 
 ## SYNOPSIS
-Get featureRolloutPolicies from directory
+Delete navigation property contactInsights for organization
 
 ## SYNTAX
 
-### List (Default)
+### Delete (Default)
 ```
-Get-MgDirectoryFeatureRolloutPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgDirectoryFeatureRolloutPolicy -FeatureRolloutPolicyId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Remove-MgOrganizationSettingContactInsight -OrganizationId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### DeleteViaIdentity
 ```
-Get-MgDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Remove-MgOrganizationSettingContactInsight -InputObject <IIdentityDirectoryManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get featureRolloutPolicies from directory
+Delete navigation property contactInsights for organization
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -All
-List all pages.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -IfMatch
+ETag
 
 ```yaml
 Type: String
-Parameter Sets: List
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
 Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -FeatureRolloutPolicyId
-key: id of featureRolloutPolicy
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Filter
-Filter items by property values
-
-```yaml
-Type: String
-Parameter Sets: List
 Aliases:
 
 Required: False
@@ -120,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -130,42 +62,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
+### -OrganizationId
+key: id of organization
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -175,13 +92,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sort
-Order items by property values
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: String[]
-Parameter Sets: List
-Aliases: OrderBy
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -190,28 +107,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Show only the first n items
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
-Type: Int32
-Parameter Sets: List
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -228,7 +131,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
+### System.Boolean
 ## NOTES
 
 ALIASES

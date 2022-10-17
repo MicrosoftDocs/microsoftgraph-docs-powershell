@@ -1,49 +1,56 @@
 ﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryfeaturerolloutpolicy
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationsettingcontactinsight
 schema: 2.0.0
 ---
 
-# Get-MgDirectoryFeatureRolloutPolicy
+# Update-MgOrganizationSettingContactInsight
 
 ## SYNOPSIS
-Get featureRolloutPolicies from directory
+Update the navigation property contactInsights in organization
 
 ## SYNTAX
 
-### List (Default)
+### UpdateExpanded (Default)
 ```
-Get-MgDirectoryFeatureRolloutPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgDirectoryFeatureRolloutPolicy -FeatureRolloutPolicyId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Update-MgOrganizationSettingContactInsight -OrganizationId <String> [-AdditionalProperties <Hashtable>]
+ [-DisabledForGroup <String>] [-Id <String>] [-IsEnabledInOrganization] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### Update
 ```
-Get-MgDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Update-MgOrganizationSettingContactInsight -OrganizationId <String>
+ -BodyParameter <IMicrosoftGraphInsightsSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgOrganizationSettingContactInsight -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-DisabledForGroup <String>] [-Id <String>] [-IsEnabledInOrganization]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgOrganizationSettingContactInsight -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphInsightsSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get featureRolloutPolicies from directory
+Update the navigation property contactInsights in organization
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -All
-List all pages.
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List
+Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -53,58 +60,45 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -BodyParameter
+insightsSettings
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: List
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -FeatureRolloutPolicyId
-key: id of featureRolloutPolicy
-
-```yaml
-Type: String
-Parameter Sets: Get
+Type: IMicrosoftGraphInsightsSettings
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DisabledForGroup
+The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members.
+Default is empty.
+Optional.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Filter
-Filter items by property values
+### -Id
+.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -120,7 +114,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -130,12 +124,14 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
+### -IsEnabledInOrganization
+true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+Default is true.
+Optional.
 
 ```yaml
-Type: Int32
-Parameter Sets: List
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -145,27 +141,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
+### -OrganizationId
+key: id of organization
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -175,13 +171,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sort
-Order items by property values
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: String[]
-Parameter Sets: List
-Aliases: OrderBy
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -190,28 +186,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Show only the first n items
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
-Type: Int32
-Parameter Sets: List
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -226,9 +208,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInsightsSettings
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -237,6 +220,12 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+BODYPARAMETER <IMicrosoftGraphInsightsSettings>: insightsSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: 
+  - `[DisabledForGroup <String>]`: The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members. Default is empty. Optional.
+  - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions. Default is true. Optional.
 
 INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit

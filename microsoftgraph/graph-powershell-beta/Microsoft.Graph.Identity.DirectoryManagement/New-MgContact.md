@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact
@@ -468,7 +468,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESSES <IMicrosoftGraphPhysicalOfficeAddress\[]>: Postal addresses for this organizational contact. For now a contact can only have one physical address.
+ADDRESSES <IMicrosoftGraphPhysicalOfficeAddress[]>: Postal addresses for this organizational contact. For now a contact can only have one physical address.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
   - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
@@ -476,7 +476,7 @@ ADDRESSES <IMicrosoftGraphPhysicalOfficeAddress\[]>: Postal addresses for this o
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-BODYPARAMETER `<IMicrosoftGraphOrgContact1>`: orgContact
+BODYPARAMETER <IMicrosoftGraphOrgContact1>: orgContact
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
@@ -514,34 +514,34 @@ BODYPARAMETER `<IMicrosoftGraphOrgContact1>`: orgContact
   - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
   - `[TransitiveReports <IMicrosoftGraphDirectoryObject[]>]`: The transitive reports for a contact. Read-only.
 
-DIRECTREPORTS <IMicrosoftGraphDirectoryObject\[]>: The contact's direct reports. (The users and contacts that have their manager property set to this contact.) Read-only. Nullable. Supports $expand.
+DIRECTREPORTS <IMicrosoftGraphDirectoryObject[]>: The contact's direct reports. (The users and contacts that have their manager property set to this contact.) Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-MANAGER `<IMicrosoftGraphDirectoryObject>`: directoryObject
+MANAGER <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-MEMBEROF <IMicrosoftGraphDirectoryObject\[]>: Groups that this contact is a member of. Read-only. Nullable. Supports $expand.
+MEMBEROF <IMicrosoftGraphDirectoryObject[]>: Groups that this contact is a member of. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-ONPREMISESPROVISIONINGERRORS <IMicrosoftGraphOnPremisesProvisioningError\[]>: List of any synchronization provisioning errors for this organizational contact. Supports $filter (eq, not).
+ONPREMISESPROVISIONINGERRORS <IMicrosoftGraphOnPremisesProvisioningError[]>: List of any synchronization provisioning errors for this organizational contact. Supports $filter (eq, not).
   - `[Category <String>]`: Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict - indicates a property value is not unique. Other objects contain the same value for the property.
   - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
   - `[PropertyCausingError <String>]`: Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
   - `[Value <String>]`: Value of the property causing the error.
 
-PHONES <IMicrosoftGraphPhone1\[]>: List of phones for this organizational contact. Phone types can be mobile, business, and businessFax. Only one of each type can ever be present in the collection. Supports $filter (eq, ne, not, in).
+PHONES <IMicrosoftGraphPhone1[]>: List of phones for this organizational contact. Phone types can be mobile, business, and businessFax. Only one of each type can ever be present in the collection. Supports $filter (eq, ne, not, in).
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject\[]>: .
+TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject[]>: .
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-TRANSITIVEREPORTS <IMicrosoftGraphDirectoryObject\[]>: The transitive reports for a contact. Read-only.
+TRANSITIVEREPORTS <IMicrosoftGraphDirectoryObject[]>: The transitive reports for a contact. Read-only.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
