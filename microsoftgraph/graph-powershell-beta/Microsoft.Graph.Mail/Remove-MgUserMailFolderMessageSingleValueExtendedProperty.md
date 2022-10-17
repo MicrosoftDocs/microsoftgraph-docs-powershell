@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessagesinglevalueextendedproperty
@@ -12,14 +12,14 @@ Delete navigation property singleValueExtendedProperties for users
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
 Remove-MgUserMailFolderMessageSingleValueExtendedProperty -MailFolderId <String> -MessageId <String>
  -SingleValueLegacyExtendedPropertyId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgUserMailFolderMessageSingleValueExtendedProperty -InputObject <IMailIdentity> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -53,7 +53,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IMailIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -68,7 +68,7 @@ key: id of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of message
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -113,7 +113,7 @@ key: id of singleValueLegacyExtendedProperty
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -187,7 +187,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ExtensionId <String>]`: key: id of extension
   - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride
