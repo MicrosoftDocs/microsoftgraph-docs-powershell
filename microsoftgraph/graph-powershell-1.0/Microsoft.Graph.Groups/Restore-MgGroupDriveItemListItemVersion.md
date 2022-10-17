@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/restore-mggroupdriveitemlistitemversion
@@ -13,13 +13,13 @@ This will create a new version with the contents of the previous version, but pr
 
 ## SYNTAX
 
-### Restore1 (Default)
+### Restore (Default)
 ```
 Restore-MgGroupDriveItemListItemVersion -DriveId <String> -DriveItemId <String> -GroupId <String>
  -ListItemVersionId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreViaIdentity1
+### RestoreViaIdentity
 ```
 Restore-MgGroupDriveItemListItemVersion -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -38,7 +38,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -53,7 +53,7 @@ key: id of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -68,7 +68,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: RestoreViaIdentity1
+Parameter Sets: RestoreViaIdentity
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ key: id of listItemVersion
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -173,7 +173,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
