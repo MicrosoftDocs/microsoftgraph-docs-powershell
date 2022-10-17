@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: 881afa9b-a781-45b0-988c-fc4aab82afec
+Module Guid: 30e3b946-632e-458e-be72-4330bde29ecc
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -52,6 +52,12 @@ This operation also creates a copy of the corresponding group.\nYou can specify 
 \nYou should continue to GET until the status is not 'running'.
 \nThe recommended delay between GETs is 5 seconds.
 
+### [Get-MgAllGroupTeamChannel](Get-MgAllGroupTeamChannel.md)
+List of channels either hosted in or shared with the team (incoming channels).
+
+### [Get-MgAllTeamChannel](Get-MgAllTeamChannel.md)
+List of channels either hosted in or shared with the team (incoming channels).
+
 ### [Get-MgAppCatalogTeamApp](Get-MgAppCatalogTeamApp.md)
 Get teamsApps from appCatalogs
 
@@ -98,6 +104,10 @@ Invoke function delta
 ### [Get-MgChatMessageReplyHostedContent](Get-MgChatMessageReplyHostedContent.md)
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
+### [Get-MgChatPinnedMessage](Get-MgChatPinnedMessage.md)
+A collection of all the pinned messages in the chat.
+Nullable.
+
 ### [Get-MgChatTab](Get-MgChatTab.md)
 A collection of all the tabs in the chat.
 Nullable.
@@ -110,7 +120,7 @@ This cannot be changed after tab creation.
 The team associated with this group.
 
 ### [Get-MgGroupTeamChannel](Get-MgGroupTeamChannel.md)
-List of channels either hosted in or shared with the team (incoming channels).
+The collection of channels and messages associated with the team.
 
 ### [Get-MgGroupTeamChannelFileFolder](Get-MgGroupTeamChannelFileFolder.md)
 Get the metadata for the location where the files of a channel are stored.
@@ -252,6 +262,12 @@ The set of reasons for a time off in the schedule.
 ### [Get-MgGroupTeamScheduleTimeOffRequest](Get-MgGroupTeamScheduleTimeOffRequest.md)
 Get timeOffRequests from groups
 
+### [Get-MgGroupTeamTag](Get-MgGroupTeamTag.md)
+The tags associated with the team.
+
+### [Get-MgGroupTeamTagMember](Get-MgGroupTeamTagMember.md)
+Users assigned to the tag.
+
 ### [Get-MgGroupTeamTemplate](Get-MgGroupTeamTemplate.md)
 The template this team was created from.
 See available templates.
@@ -260,7 +276,7 @@ See available templates.
 Retrieve the properties and relationships of the specified team.
 
 ### [Get-MgTeamChannel](Get-MgTeamChannel.md)
-List of channels either hosted in or shared with the team (incoming channels).
+The collection of channels and messages associated with the team.
 
 ### [Get-MgTeamChannelFileFolder](Get-MgTeamChannelFileFolder.md)
 Get the metadata for the location where the files of a channel are stored.
@@ -272,7 +288,9 @@ The content stream, if the item represents a file.
 A collection of membership records associated with the channel.
 
 ### [Get-MgTeamChannelMessage](Get-MgTeamChannelMessage.md)
-Invoke function getAllMessages
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ### [Get-MgTeamChannelMessageDelta](Get-MgTeamChannelMessageDelta.md)
 Invoke function delta
@@ -412,6 +430,12 @@ The set of reasons for a time off in the schedule.
 ### [Get-MgTeamScheduleTimeOffRequest](Get-MgTeamScheduleTimeOffRequest.md)
 Get timeOffRequests from teams
 
+### [Get-MgTeamTag](Get-MgTeamTag.md)
+The tags associated with the team.
+
+### [Get-MgTeamTagMember](Get-MgTeamTagMember.md)
+Users assigned to the tag.
+
 ### [Get-MgTeamTemplate](Get-MgTeamTemplate.md)
 The template this team was created from.
 See available templates.
@@ -452,6 +476,10 @@ Supports $expand for channel messages.
 
 ### [Get-MgUserChatMessageReplyHostedContent](Get-MgUserChatMessageReplyHostedContent.md)
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+
+### [Get-MgUserChatPinnedMessage](Get-MgUserChatPinnedMessage.md)
+A collection of all the pinned messages in the chat.
+Nullable.
 
 ### [Get-MgUserChatTab](Get-MgUserChatTab.md)
 A collection of all the tabs in the chat.
@@ -535,6 +563,10 @@ Create a new reply to a chatMessage in a specified channel.
 ### [New-MgChatMessageReplyHostedContent](New-MgChatMessageReplyHostedContent.md)
 Create new navigation property to hostedContents for chats
 
+### [New-MgChatPinnedMessage](New-MgChatPinnedMessage.md)
+Pin a chat message in the specified chat.
+This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
+
 ### [New-MgChatTab](New-MgChatTab.md)
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
@@ -544,6 +576,7 @@ Create a new channel in a team, as specified in the request body.
 
 ### [New-MgGroupTeamChannelMember](New-MgGroupTeamChannelMember.md)
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgGroupTeamChannelMessage](New-MgGroupTeamChannelMessage.md)
 Send a new chatMessage in the specified channel or a chat.
@@ -574,6 +607,7 @@ Create new navigation property to operations for groups
 
 ### [New-MgGroupTeamPrimaryChannelMember](New-MgGroupTeamPrimaryChannelMember.md)
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgGroupTeamPrimaryChannelMessage](New-MgGroupTeamPrimaryChannelMessage.md)
 Send a new chatMessage in the specified channel or a chat.
@@ -620,6 +654,12 @@ Create a new timeOffReason.
 ### [New-MgGroupTeamScheduleTimeOffRequest](New-MgGroupTeamScheduleTimeOffRequest.md)
 Create new navigation property to timeOffRequests for groups
 
+### [New-MgGroupTeamTag](New-MgGroupTeamTag.md)
+Create a standard tag for members in a team.
+
+### [New-MgGroupTeamTagMember](New-MgGroupTeamTagMember.md)
+Create a new teamworkTagMember object in a team.
+
 ### [New-MgTeam](New-MgTeam.md)
 Create a new team.
 
@@ -634,6 +674,7 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ### [New-MgTeamChannelMember](New-MgTeamChannelMember.md)
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgTeamChannelMessage](New-MgTeamChannelMessage.md)
 Send a new chatMessage in the specified channel or a chat.
@@ -670,6 +711,7 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ### [New-MgTeamPrimaryChannelMember](New-MgTeamPrimaryChannelMember.md)
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgTeamPrimaryChannelMessage](New-MgTeamPrimaryChannelMessage.md)
 Send a new chatMessage in the specified channel or a chat.
@@ -716,6 +758,12 @@ Create a new timeOffReason.
 ### [New-MgTeamScheduleTimeOffRequest](New-MgTeamScheduleTimeOffRequest.md)
 Create new navigation property to timeOffRequests for teams
 
+### [New-MgTeamTag](New-MgTeamTag.md)
+Create a standard tag for members in a team.
+
+### [New-MgTeamTagMember](New-MgTeamTagMember.md)
+Create a new teamworkTagMember object in a team.
+
 ### [New-MgTeamworkWorkforceIntegration](New-MgTeamworkWorkforceIntegration.md)
 Create a new workforceIntegration object.\nYou can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
 
@@ -740,6 +788,10 @@ Create a new reply to a chatMessage in a specified channel.
 
 ### [New-MgUserChatMessageReplyHostedContent](New-MgUserChatMessageReplyHostedContent.md)
 Create new navigation property to hostedContents for users
+
+### [New-MgUserChatPinnedMessage](New-MgUserChatPinnedMessage.md)
+Pin a chat message in the specified chat.
+This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
 
 ### [New-MgUserChatTab](New-MgUserChatTab.md)
 Add (pin) a tab to the specified chat.
@@ -771,6 +823,9 @@ Delete navigation property members for chats
 
 ### [Remove-MgChatMessageReplyHostedContent](Remove-MgChatMessageReplyHostedContent.md)
 Delete navigation property hostedContents for chats
+
+### [Remove-MgChatPinnedMessage](Remove-MgChatPinnedMessage.md)
+Delete navigation property pinnedMessages for chats
 
 ### [Remove-MgChatTab](Remove-MgChatTab.md)
 Delete navigation property tabs for chats
@@ -868,6 +923,12 @@ Delete navigation property timeOffReasons for groups
 ### [Remove-MgGroupTeamScheduleTimeOffRequest](Remove-MgGroupTeamScheduleTimeOffRequest.md)
 Delete navigation property timeOffRequests for groups
 
+### [Remove-MgGroupTeamTag](Remove-MgGroupTeamTag.md)
+Delete navigation property tags for groups
+
+### [Remove-MgGroupTeamTagMember](Remove-MgGroupTeamTagMember.md)
+Delete navigation property members for groups
+
 ### [Remove-MgTeam](Remove-MgTeam.md)
 Delete entity from teams
 
@@ -951,6 +1012,12 @@ Delete navigation property timeOffReasons for teams
 ### [Remove-MgTeamScheduleTimeOffRequest](Remove-MgTeamScheduleTimeOffRequest.md)
 Delete navigation property timeOffRequests for teams
 
+### [Remove-MgTeamTag](Remove-MgTeamTag.md)
+Delete navigation property tags for teams
+
+### [Remove-MgTeamTagMember](Remove-MgTeamTagMember.md)
+Delete navigation property members for teams
+
 ### [Remove-MgTeamworkWorkforceIntegration](Remove-MgTeamworkWorkforceIntegration.md)
 Delete navigation property workforceIntegrations for teamwork
 
@@ -975,6 +1042,9 @@ Delete navigation property replies for users
 ### [Remove-MgUserChatMessageReplyHostedContent](Remove-MgUserChatMessageReplyHostedContent.md)
 Delete navigation property hostedContents for users
 
+### [Remove-MgUserChatPinnedMessage](Remove-MgUserChatPinnedMessage.md)
+Delete navigation property pinnedMessages for users
+
 ### [Remove-MgUserChatTab](Remove-MgUserChatTab.md)
 Delete navigation property tabs for users
 
@@ -994,6 +1064,9 @@ For more details about sending notifications and the requirements for doing so, 
 ### [Send-MgTeamActivityNotification](Send-MgTeamActivityNotification.md)
 Send an activity feed notification in the scope of a team.
 For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
+
+### [Send-MgTeamworkActivityNotificationToRecipient](Send-MgTeamworkActivityNotificationToRecipient.md)
+Invoke action sendActivityNotificationToRecipients
 
 ### [Set-MgGroupTeamChannelFileFolderContent](Set-MgGroupTeamChannelFileFolderContent.md)
 The content stream, if the item represents a file.
@@ -1039,6 +1112,9 @@ Update the navigation property replies in chats
 
 ### [Update-MgChatMessageReplyHostedContent](Update-MgChatMessageReplyHostedContent.md)
 Update the navigation property hostedContents in chats
+
+### [Update-MgChatPinnedMessage](Update-MgChatPinnedMessage.md)
+Update the navigation property pinnedMessages in chats
 
 ### [Update-MgChatTab](Update-MgChatTab.md)
 Update the navigation property tabs in chats
@@ -1107,11 +1183,7 @@ Update the navigation property sharedWithTeams in groups
 Update the navigation property tabs in groups
 
 ### [Update-MgGroupTeamSchedule](Update-MgGroupTeamSchedule.md)
-Create or replace a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\nWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
-During schedule provisioning, clients can use the GET method to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.
-If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
-Clients can also inspect the configuration of the schedule.
+Update the navigation property schedule in groups
 
 ### [Update-MgGroupTeamScheduleOfferShiftRequest](Update-MgGroupTeamScheduleOfferShiftRequest.md)
 Update the navigation property offerShiftRequests in groups
@@ -1139,6 +1211,12 @@ Update the navigation property timeOffReasons in groups
 
 ### [Update-MgGroupTeamScheduleTimeOffRequest](Update-MgGroupTeamScheduleTimeOffRequest.md)
 Update the navigation property timeOffRequests in groups
+
+### [Update-MgGroupTeamTag](Update-MgGroupTeamTag.md)
+Update the navigation property tags in groups
+
+### [Update-MgGroupTeamTagMember](Update-MgGroupTeamTagMember.md)
+Update the navigation property members in groups
 
 ### [Update-MgTeam](Update-MgTeam.md)
 Update the properties of the specified team.
@@ -1198,11 +1276,7 @@ Update the navigation property sharedWithTeams in teams
 Update the navigation property tabs in teams
 
 ### [Update-MgTeamSchedule](Update-MgTeamSchedule.md)
-Create or replace a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\nWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
-During schedule provisioning, clients can use the GET method to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.
-If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
-Clients can also inspect the configuration of the schedule.
+Update the navigation property schedule in teams
 
 ### [Update-MgTeamScheduleOfferShiftRequest](Update-MgTeamScheduleOfferShiftRequest.md)
 Update the navigation property offerShiftRequests in teams
@@ -1231,6 +1305,12 @@ Update the navigation property timeOffReasons in teams
 ### [Update-MgTeamScheduleTimeOffRequest](Update-MgTeamScheduleTimeOffRequest.md)
 Update the navigation property timeOffRequests in teams
 
+### [Update-MgTeamTag](Update-MgTeamTag.md)
+Update the navigation property tags in teams
+
+### [Update-MgTeamTagMember](Update-MgTeamTagMember.md)
+Update the navigation property members in teams
+
 ### [Update-MgTeamwork](Update-MgTeamwork.md)
 Update teamwork
 
@@ -1254,6 +1334,9 @@ Update the navigation property replies in users
 
 ### [Update-MgUserChatMessageReplyHostedContent](Update-MgUserChatMessageReplyHostedContent.md)
 Update the navigation property hostedContents in users
+
+### [Update-MgUserChatPinnedMessage](Update-MgUserChatPinnedMessage.md)
+Update the navigation property pinnedMessages in users
 
 ### [Update-MgUserChatTab](Update-MgUserChatTab.md)
 Update the navigation property tabs in users
