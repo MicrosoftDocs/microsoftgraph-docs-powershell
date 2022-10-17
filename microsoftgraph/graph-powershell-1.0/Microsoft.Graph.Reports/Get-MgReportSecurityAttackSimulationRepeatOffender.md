@@ -1,30 +1,46 @@
 ﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/remove-mgdevicemanagementreport
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationrepeatoffender
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementReport
+# Get-MgReportSecurityAttackSimulationRepeatOffender
 
 ## SYNOPSIS
-Delete navigation property reports for deviceManagement
+Invoke function getAttackSimulationRepeatOffenders
 
 ## SYNTAX
 
 ```
-Remove-MgDeviceManagementReport [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgReportSecurityAttackSimulationRepeatOffender [-Count] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property reports for deviceManagement
+Invoke function getAttackSimulationRepeatOffenders
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -IfMatch
-ETag
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
 
 ```yaml
 Type: String
@@ -38,11 +54,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: SwitchParameter
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -53,13 +69,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Top
+Show only the first n items
 
 ```yaml
-Type: SwitchParameter
+Type: Int32
 Parameter Sets: (All)
-Aliases: cf
+Aliases: Limit
 
 Required: False
 Position: Named
@@ -68,14 +84,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -Skip
+Skip the first n items
 
 ```yaml
-Type: SwitchParameter
+Type: Int32
 Parameter Sets: (All)
-Aliases: wi
+Aliases:
 
 Required: False
 Position: Named
@@ -91,7 +106,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttackSimulationRepeatOffender
 ## NOTES
 
 ALIASES

@@ -1,31 +1,30 @@
 ﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusageusercount
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportm365appplatformusercount
 schema: 2.0.0
 ---
 
-# Get-MgReportSkypeForBusinessDeviceUsageUserCount
+# Get-MgReportM365AppPlatformUserCount
 
 ## SYNOPSIS
-Invoke function getSkypeForBusinessDeviceUsageUserCounts
+Invoke function getM365AppPlatformUserCounts
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
-Get-MgReportSkypeForBusinessDeviceUsageUserCount -Period <String> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+Get-MgReportM365AppPlatformUserCount -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgReportSkypeForBusinessDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+Get-MgReportM365AppPlatformUserCount -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getSkypeForBusinessDeviceUsageUserCounts
+Invoke function getM365AppPlatformUserCounts
 
 ## EXAMPLES
 
@@ -37,7 +36,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IReportsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +81,7 @@ Usage: period='{period}'
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True

@@ -1,35 +1,60 @@
 ﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusageusercount
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail
 schema: 2.0.0
 ---
 
-# Get-MgReportSkypeForBusinessDeviceUsageUserCount
+# Get-MgReportM365AppUserDetail
 
 ## SYNOPSIS
-Invoke function getSkypeForBusinessDeviceUsageUserCounts
+Invoke function getM365AppUserDetail
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
-Get-MgReportSkypeForBusinessDeviceUsageUserCount -Period <String> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+Get-MgReportM365AppUserDetail -Date <DateTime> -OutFile <String> [-PassThru] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgReportM365AppUserDetail -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgReportSkypeForBusinessDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+Get-MgReportM365AppUserDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgReportM365AppUserDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getSkypeForBusinessDeviceUsageUserCounts
+Invoke function getM365AppUserDetail
 
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -Date
+Usage: date={date}
+
+```yaml
+Type: DateTime
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -37,7 +62,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IReportsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True

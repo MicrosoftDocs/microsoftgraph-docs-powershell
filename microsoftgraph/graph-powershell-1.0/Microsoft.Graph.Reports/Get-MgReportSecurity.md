@@ -1,50 +1,50 @@
 ﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationcount
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsecurity
 schema: 2.0.0
 ---
 
-# Get-MgReportOffice365ActivationCount
+# Get-MgReportSecurity
 
 ## SYNOPSIS
-Invoke function getOffice365ActivationCounts
+Get security from reports
 
 ## SYNTAX
 
 ```
-Get-MgReportOffice365ActivationCount -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getOffice365ActivationCounts
+Get security from reports
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -OutFile
-Path to write output file to
+### -ExpandProperty
+Expand related entities
 
 ```yaml
-Type: String
+Type: String[]
 Parameter Sets: (All)
-Aliases:
+Aliases: Expand
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -Property
+Select properties to be returned
 
 ```yaml
-Type: SwitchParameter
+Type: String[]
 Parameter Sets: (All)
-Aliases:
+Aliases: Select
 
 Required: False
 Position: Named
@@ -60,7 +60,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### System.String
 ## NOTES
 
 ALIASES

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgauditlogsignin
@@ -75,7 +75,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -152,7 +152,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -265,14 +265,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: key: id of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: key: id of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}
   - `[DeviceManagementCachedReportConfigurationId <String>]`: key: id of deviceManagementCachedReportConfiguration
   - `[DeviceManagementExportJobId <String>]`: key: id of deviceManagementExportJob
   - `[DirectoryAuditId <String>]`: key: id of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[Filter <String>]`: Usage: filter='{filter}'
   - `[GroupId <String>]`: Usage: groupId='{groupId}'
   - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
@@ -285,7 +285,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[SignInId <String>]`: key: id of signIn
   - `[Skip <Int32?>]`: Usage: skip={skip}
   - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[Top <Int32?>]`: Usage: top={top}
   - `[UserCredentialUsageDetailsId <String>]`: key: id of userCredentialUsageDetails
   - `[UserId <String>]`: Usage: userId='{userId}'

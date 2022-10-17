@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport
@@ -80,7 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -158,11 +159,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports>`: Singleton entity that acts as a container for all reports functionality.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementReports>: Singleton entity that acts as a container for all reports functionality.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]`: Entity representing a job to export a report
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
     - `[Filter <String>]`: Filters applied on the report
     - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report
@@ -174,8 +175,8 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports>`: Singleton entity that 
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
     - `[Url <String>]`: Temporary location of the exported report
 
-EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob\[]>: Entity representing a job to export a report
-  - `[Id <String>]`: 
+EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob[]>: Entity representing a job to export a report
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
   - `[Filter <String>]`: Filters applied on the report
   - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report
