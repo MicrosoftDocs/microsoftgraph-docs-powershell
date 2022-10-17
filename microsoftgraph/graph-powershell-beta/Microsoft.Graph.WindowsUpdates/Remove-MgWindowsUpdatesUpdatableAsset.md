@@ -29,12 +29,23 @@ Delete navigation property updatableAssets for admin
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
 
-{{ Add example description here }}
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+```
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+```
 
 ## PARAMETERS
 

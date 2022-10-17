@@ -47,12 +47,39 @@ Update the navigation property deployments in admin
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
+	State = @{
+		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentState"
+		RequestedValue = "paused"
+	}
+}
+Update-MgWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
 ```
 
-{{ Add example description here }}
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
+	Settings = @{
+		"@odata.type" = "microsoft.graph.windowsUpdates.windowsDeploymentSettings"
+		Monitoring = @{
+			MonitoringRules = @(
+				@{
+					Signal = "rollback"
+					Threshold = 5
+					Action = "pauseDeployment"
+				}
+			)
+		}
+	}
+}
+Update-MgWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
+```
 
 ## PARAMETERS
 
@@ -151,7 +178,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: String
