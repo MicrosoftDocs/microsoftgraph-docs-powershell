@@ -1,55 +1,56 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityalert
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationautomationrun
 schema: 2.0.0
 ---
 
-# Remove-MgSecurityAlert
+# New-MgSecurityAttackSimulationAutomationRun
 
 ## SYNOPSIS
-Delete navigation property alerts for security
+Create new navigation property to runs for security
 
 ## SYNTAX
 
-### Delete (Default)
+### CreateExpanded1 (Default)
 ```
-Remove-MgSecurityAlert -AlertId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-Id <String>] [-SimulationId <String>]
+ [-StartDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### Create1
 ```
-Remove-MgSecurityAlert -InputObject <ISecurityIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
+ -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-Id <String>] [-SimulationId <String>]
+ [-StartDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property alerts for security
+Create new navigation property to runs for security
 
 ## EXAMPLES
 
-### AlertId
-key: id of alert
+## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
+Type: Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -59,13 +60,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -BodyParameter
+simulationAutomationRun
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: DeleteViaIdentity
+Type: IMicrosoftGraphSimulationAutomationRun
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -75,12 +76,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### PassThru
-Returns true when the command succeeds
+### -EndDateTime
+Date and time when the run ends in an attack simulation automation.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -90,63 +91,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
-
-## PARAMETERS
-
-### -AlertId
-key: id of alert
+### -Id
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -162,7 +113,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -172,17 +123,62 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -SimulationAutomationId
+key: id of simulationAutomation
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: String
+Parameter Sets: CreateExpanded1, Create1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SimulationId
+Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartDateTime
+Date and time when the run starts in an attack simulation automation.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Status
+simulationAutomationRunStatus
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -203,7 +199,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs. The cmdlet is not run.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -222,10 +219,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
 ## NOTES
 
 ALIASES
@@ -235,7 +233,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+BODYPARAMETER <IMicrosoftGraphSimulationAutomationRun>: simulationAutomationRun
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[EndDateTime <DateTime?>]`: Date and time when the run ends in an attack simulation automation.
+  - `[SimulationId <String>]`: Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.
+  - `[StartDateTime <DateTime?>]`: Date and time when the run starts in an attack simulation automation.
+  - `[Status <String>]`: simulationAutomationRunStatus
+
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation

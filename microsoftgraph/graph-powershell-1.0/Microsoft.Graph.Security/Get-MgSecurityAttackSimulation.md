@@ -1,87 +1,100 @@
 ﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchadditionalsource
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulation
 schema: 2.0.0
 ---
 
-# Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
+# Get-MgSecurityAttackSimulation
 
 ## SYNOPSIS
-Delete navigation property additionalSources for security
+Get attackSimulation from security
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Get1 (Default)
 ```
-Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -DataSourceId <String> -EdiscoveryCaseId <String>
- -EdiscoverySearchId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### Get2
 ```
-Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurityIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgSecurityAttackSimulation -SimulationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgSecurityAttackSimulation -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+### List1
+```
+Get-MgSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property additionalSources for security
+Get attackSimulation from security
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -DataSourceId
-key: id of dataSource
+### -All
+List all pages.
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: SwitchParameter
+Parameter Sets: List1
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EdiscoveryCaseId
-key: id of ediscoveryCase
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
-Aliases:
+Parameter Sets: List1
+Aliases: CV
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EdiscoverySearchId
-key: id of ediscoverySearch
+### -ExpandProperty
+Expand related entities
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
-
-```yaml
-Type: String
+Type: String[]
 Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -97,7 +110,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -107,12 +120,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -PageSize
+Sets the page size of results.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: Int32
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -122,13 +135,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Property
+Select properties to be returned
 
 ```yaml
-Type: SwitchParameter
+Type: String[]
 Parameter Sets: (All)
-Aliases: cf
+Aliases: Select
 
 Required: False
 Position: Named
@@ -137,14 +150,73 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: String
+Parameter Sets: List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SimulationId
+key: id of simulation
+
+```yaml
+Type: String
+Parameter Sets: Get2
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: List1
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1
+Aliases:
 
 Required: False
 Position: Named
@@ -161,7 +233,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttackSimulationRoot
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation
 ## NOTES
 
 ALIASES

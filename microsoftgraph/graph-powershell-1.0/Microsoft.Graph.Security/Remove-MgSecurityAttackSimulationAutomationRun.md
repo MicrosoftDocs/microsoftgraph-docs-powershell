@@ -1,80 +1,35 @@
 ﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchadditionalsource
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulationautomationrun
 schema: 2.0.0
 ---
 
-# Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
+# Remove-MgSecurityAttackSimulationAutomationRun
 
 ## SYNOPSIS
-Delete navigation property additionalSources for security
+Delete navigation property runs for security
 
 ## SYNTAX
 
 ### Delete1 (Default)
 ```
-Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -DataSourceId <String> -EdiscoveryCaseId <String>
- -EdiscoverySearchId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
+ -SimulationAutomationRunId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
-Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurityIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property additionalSources for security
+Delete navigation property runs for security
 
 ## EXAMPLES
 
 ## PARAMETERS
-
-### -DataSourceId
-key: id of dataSource
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EdiscoveryCaseId
-key: id of ediscoveryCase
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EdiscoverySearchId
-key: id of ediscoverySearch
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -IfMatch
 ETag
@@ -116,6 +71,36 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SimulationAutomationId
+key: id of simulationAutomation
+
+```yaml
+Type: String
+Parameter Sets: Delete1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SimulationAutomationRunId
+key: id of simulationAutomationRun
+
+```yaml
+Type: String
+Parameter Sets: Delete1
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

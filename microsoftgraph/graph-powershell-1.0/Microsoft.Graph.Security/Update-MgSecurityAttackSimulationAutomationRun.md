@@ -1,87 +1,105 @@
 ﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchadditionalsource
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationautomationrun
 schema: 2.0.0
 ---
 
-# Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
+# Update-MgSecurityAttackSimulationAutomationRun
 
 ## SYNOPSIS
-Delete navigation property additionalSources for security
+Update the navigation property runs in security
 
 ## SYNTAX
 
-### Delete1 (Default)
+### UpdateExpanded1 (Default)
 ```
-Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -DataSourceId <String> -EdiscoveryCaseId <String>
- -EdiscoverySearchId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
+ -SimulationAutomationRunId <String> [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>]
+ [-Id <String>] [-SimulationId <String>] [-StartDateTime <DateTime>] [-Status <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### Update1
 ```
-Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurityIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
+ -SimulationAutomationRunId <String> -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
+```
+Update-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
+ [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-Id <String>] [-SimulationId <String>]
+ [-StartDateTime <DateTime>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property additionalSources for security
+Update the navigation property runs in security
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -DataSourceId
-key: id of dataSource
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: Hashtable
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EdiscoveryCaseId
-key: id of ediscoveryCase
+### -BodyParameter
+simulationAutomationRun
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: IMicrosoftGraphSimulationAutomationRun
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -EndDateTime
+Date and time when the run ends in an attack simulation automation.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EdiscoverySearchId
-key: id of ediscoverySearch
+### -Id
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -97,7 +115,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -113,6 +131,81 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SimulationAutomationId
+key: id of simulationAutomation
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SimulationAutomationRunId
+key: id of simulationAutomationRun
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SimulationId
+Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartDateTime
+Date and time when the run starts in an attack simulation automation.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Status
+simulationAutomationRunStatus
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -158,6 +251,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
@@ -170,6 +264,14 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+BODYPARAMETER <IMicrosoftGraphSimulationAutomationRun>: simulationAutomationRun
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[EndDateTime <DateTime?>]`: Date and time when the run ends in an attack simulation automation.
+  - `[SimulationId <String>]`: Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.
+  - `[StartDateTime <DateTime?>]`: Date and time when the run starts in an attack simulation automation.
+  - `[Status <String>]`: simulationAutomationRunStatus
 
 INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
