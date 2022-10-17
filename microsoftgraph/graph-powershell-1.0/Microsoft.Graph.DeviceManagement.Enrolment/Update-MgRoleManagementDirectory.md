@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagementdirectory
@@ -277,7 +277,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphRbacApplication1>: rbacApplication
+BODYPARAMETER `<IMicrosoftGraphRbacApplication1>`: rbacApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]`: Instances for active role assignments.
@@ -464,7 +464,7 @@ BODYPARAMETER <IMicrosoftGraphRbacApplication1>: rbacApplication
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: Schedules for role eligibility operations.
 
-ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment[]>: Resource to grant access to users or groups.
+ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment\[]>: Resource to grant access to users or groups.
   - `[Id <String>]`: 
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -497,7 +497,7 @@ ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment[]>: Resource to grant acce
     - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
   - `[RoleDefinitionId <String>]`: Identifier of the role definition the assignment is for. Read only. Supports $filter (eq, in).
 
-ROLEASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>: Instances for active role assignments.
+ROLEASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance\[]>: Instances for active role assignments.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
@@ -550,7 +550,7 @@ ROLEASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleAssignmentScheduleIns
   - `[RoleAssignmentScheduleId <String>]`: The identifier of the unifiedRoleAssignmentSchedule object from which this instance was created. Supports $filter (eq, ne).
   - `[StartDateTime <DateTime?>]`: When this instance starts.
 
-ROLEASSIGNMENTSCHEDULEREQUESTS <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]>: Requests for active role assignments to principals through PIM.
+ROLEASSIGNMENTSCHEDULEREQUESTS <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest\[]>: Requests for active role assignments to principals through PIM.
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -665,7 +665,7 @@ ROLEASSIGNMENTSCHEDULEREQUESTS <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequ
     - `[TicketNumber <String>]`: The ticket number.
     - `[TicketSystem <String>]`: The description of the ticket system.
 
-ROLEASSIGNMENTSCHEDULES <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>: Schedules for active role assignment operations.
+ROLEASSIGNMENTSCHEDULES <IMicrosoftGraphUnifiedRoleAssignmentSchedule\[]>: Schedules for active role assignment operations.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
@@ -746,7 +746,7 @@ ROLEASSIGNMENTSCHEDULES <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>: Schedu
   - `[MemberType <String>]`: How the assignments is inherited. It can either be Inherited, Direct, or Group. It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller. Supports $filter (eq, ne).
   - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
 
-ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition1[]>: Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
+ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition1\[]>: Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
   - `[Id <String>]`: 
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
   - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq, in).
@@ -761,7 +761,7 @@ ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition1[]>: Resource representing
   - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true. This identifier is typically used if one needs an identifier to be the same across different directories.
   - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
-ROLEELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]>: Instances for role eligibility requests.
+ROLEELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance\[]>: Instances for role eligibility requests.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
@@ -797,7 +797,7 @@ ROLEELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleEligibilityScheduleI
   - `[RoleEligibilityScheduleId <String>]`: The identifier of the unifiedRoleEligibilitySchedule object from which this instance was created. Supports $filter (eq, ne).
   - `[StartDateTime <DateTime?>]`: When this instance starts.
 
-ROLEELIGIBILITYSCHEDULEREQUESTS <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>: Requests for role eligibilities for principals through PIM.
+ROLEELIGIBILITYSCHEDULEREQUESTS <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest\[]>: Requests for role eligibilities for principals through PIM.
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -893,7 +893,7 @@ ROLEELIGIBILITYSCHEDULEREQUESTS <IMicrosoftGraphUnifiedRoleEligibilityScheduleRe
     - `[TicketNumber <String>]`: The ticket number.
     - `[TicketSystem <String>]`: The description of the ticket system.
 
-ROLEELIGIBILITYSCHEDULES <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>: Schedules for role eligibility operations.
+ROLEELIGIBILITYSCHEDULES <IMicrosoftGraphUnifiedRoleEligibilitySchedule\[]>: Schedules for role eligibility operations.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
