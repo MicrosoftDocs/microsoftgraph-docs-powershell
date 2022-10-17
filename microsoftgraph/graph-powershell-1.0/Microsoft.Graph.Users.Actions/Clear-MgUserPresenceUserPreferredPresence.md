@@ -1,113 +1,35 @@
 ﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/confirm-mgusermemberobject
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/clear-mguserpresenceuserpreferredpresence
 schema: 2.0.0
 ---
 
-# Confirm-MgUserMemberObject
+# Clear-MgUserPresenceUserPreferredPresence
 
 ## SYNOPSIS
-Invoke action checkMemberObjects
+Clear the preferred availability and activity status for a user.
 
 ## SYNTAX
 
-### CheckExpanded1 (Default)
+### Clear1 (Default)
 ```
-Confirm-MgUserMemberObject -UserId <String> [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Check1
-```
-Confirm-MgUserMemberObject -UserId <String>
- -BodyParameter <IPathsJ9Yxi4UsersUserIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Clear-MgUserPresenceUserPreferredPresence -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### CheckViaIdentityExpanded1
+### ClearViaIdentity1
 ```
-Confirm-MgUserMemberObject -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CheckViaIdentity1
-```
-Confirm-MgUserMemberObject -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsJ9Yxi4UsersUserIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Clear-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action checkMemberObjects
+Clear the preferred availability and activity status for a user.
 
 ## EXAMPLES
 
-### Example 1: Using the Confirm-MgUserMemberObject Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-$params = @{
-	Ids = @(
-		"80a963dd-84af-4eb8-b2a6-781e444d4fb0"
-		"62e90394-69f5-4237-9190-012177145e10"
-		"86a64f51-3a64-4cc6-a8c8-6b8f000c0f52"
-		"ac38546e-ddf3-437a-ac5c-27a94cd7a0f1"
-	)
-}
-# A UPN can also be used as -UserId.
-Confirm-MgUserMemberObject -UserId $userId -BodyParameter $params
-```
-
-This example shows how to use the Confirm-MgUserMemberObject Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
-
-### -AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IPathsJ9Yxi4UsersUserIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Check1, CheckViaIdentity1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Ids
-.
-
-```yaml
-Type: String[]
-Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -InputObject
 Identity Parameter
@@ -115,13 +37,28 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: CheckViaIdentityExpanded1, CheckViaIdentity1
+Parameter Sets: ClearViaIdentity1
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -130,7 +67,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: CheckExpanded1, Check1
+Parameter Sets: Clear1
 Aliases:
 
 Required: True
@@ -176,11 +113,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsJ9Yxi4UsersUserIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### System.String
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -189,10 +125,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-BODYPARAMETER <IPathsJ9Yxi4UsersUserIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String[]>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
