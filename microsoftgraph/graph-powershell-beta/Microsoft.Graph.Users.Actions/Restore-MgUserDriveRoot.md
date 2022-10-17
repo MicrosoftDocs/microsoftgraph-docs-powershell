@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/restore-mguserdriveroot
@@ -12,26 +12,26 @@ Restore a driveItem that has been deleted and is currently in the recycle bin.
 
 ## SYNTAX
 
-### RestoreExpanded1 (Default)
+### RestoreExpanded (Default)
 ```
 Restore-MgUserDriveRoot -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Restore1
+### Restore
 ```
 Restore-MgUserDriveRoot -DriveId <String> -UserId <String>
  -BodyParameter <IPathsWcmhxwUsersUserIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreViaIdentityExpanded1
+### RestoreViaIdentityExpanded
 ```
 Restore-MgUserDriveRoot -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreViaIdentity1
+### RestoreViaIdentity
 ```
 Restore-MgUserDriveRoot -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsWcmhxwUsersUserIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RestoreExpanded1, RestoreViaIdentityExpanded1
+Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsWcmhxwUsersUserIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Restore1, RestoreViaIdentity1
+Parameter Sets: Restore, RestoreViaIdentity
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: RestoreExpanded1, Restore1
+Parameter Sets: RestoreExpanded, Restore
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: RestoreViaIdentityExpanded1, RestoreViaIdentity1
+Parameter Sets: RestoreViaIdentityExpanded, RestoreViaIdentity
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: RestoreExpanded1, RestoreViaIdentityExpanded1
+Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -128,7 +128,7 @@ To construct, please use Get-Help -Online and see NOTES section for PARENTREFERE
 
 ```yaml
 Type: IMicrosoftGraphItemReference
-Parameter Sets: RestoreExpanded1, RestoreViaIdentityExpanded1
+Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -143,7 +143,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: RestoreExpanded1, Restore1
+Parameter Sets: RestoreExpanded, Restore
 Aliases:
 
 Required: True
@@ -203,7 +203,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsWcmhxwUsersUserIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsWcmhxwUsersUserIdDrivesDriveIdRootMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Name <String>]`: 
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -225,7 +225,7 @@ BODYPARAMETER `<IPathsWcmhxwUsersUserIdDrivesDriveIdRootMicrosoftGraphRestorePos
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -273,7 +273,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
+PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
   - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.

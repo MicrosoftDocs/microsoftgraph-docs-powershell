@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/update-mguserpassword
@@ -22,7 +22,7 @@ Update-MgUserPassword -UserId <String> [-AdditionalProperties <Hashtable>] [-Cur
 ### Change
 ```
 Update-MgUserPassword -UserId <String>
- -BodyParameter <IPaths3Mx0JpUsersUserIdMicrosoftGraphChangepasswordPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Update-MgUserPassword -InputObject <IUsersActionsIdentity> [-AdditionalPropertie
 ### ChangeViaIdentity
 ```
 Update-MgUserPassword -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths3Mx0JpUsersUserIdMicrosoftGraphChangepasswordPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths3Mx0JpUsersUserIdMicrosoftGraphChangepasswordPostRequestbodyContentApplicationJsonSchema
+Type: IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema
 Parameter Sets: Change, ChangeViaIdentity
 Aliases:
 
@@ -204,7 +204,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths3Mx0JpUsersUserIdMicrosoftGraphChangepasswordPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
@@ -218,12 +218,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CurrentPassword <String>]`: 
   - `[NewPassword <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

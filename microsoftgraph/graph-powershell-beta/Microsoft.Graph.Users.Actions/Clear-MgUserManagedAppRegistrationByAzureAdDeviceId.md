@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/clear-mgusermanagedappregistrationbyazureaddeviceid
@@ -21,7 +21,7 @@ Clear-MgUserManagedAppRegistrationByAzureAdDeviceId -UserId <String> [-Additiona
 ### Wipe
 ```
 Clear-MgUserManagedAppRegistrationByAzureAdDeviceId -UserId <String>
- -BodyParameter <IPathsXxh6CmUsersUserIdMicrosoftGraphWipemanagedappregistrationsbyazureaddeviceidPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Clear-MgUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActionsI
 ### WipeViaIdentity
 ```
 Clear-MgUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsXxh6CmUsersUserIdMicrosoftGraphWipemanagedappregistrationsbyazureaddeviceidPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsXxh6CmUsersUserIdMicrosoftGraphWipemanagedappregistrationsbyazureaddeviceidPostRequestbodyContentApplicationJsonSchema
+Type: IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema
 Parameter Sets: Wipe, WipeViaIdentity
 Aliases:
 
@@ -174,7 +174,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsXxh6CmUsersUserIdMicrosoftGraphWipemanagedappregistrationsbyazureaddeviceidPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
@@ -188,11 +188,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AzureAdDeviceId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

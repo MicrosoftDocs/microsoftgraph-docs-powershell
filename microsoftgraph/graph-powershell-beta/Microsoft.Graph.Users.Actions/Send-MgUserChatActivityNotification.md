@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/send-mguserchatactivitynotification
@@ -13,7 +13,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## SYNTAX
 
-### SendExpanded (Default)
+### SendExpanded1 (Default)
 ```
 Send-MgUserChatActivityNotification -ChatId <String> -UserId <String> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
@@ -21,14 +21,14 @@ Send-MgUserChatActivityNotification -ChatId <String> -UserId <String> [-Activity
  [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Send
+### Send1
 ```
 Send-MgUserChatActivityNotification -ChatId <String> -UserId <String>
  -BodyParameter <IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SendViaIdentityExpanded
+### SendViaIdentityExpanded1
 ```
 Send-MgUserChatActivityNotification -InputObject <IUsersActionsIdentity> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
@@ -36,7 +36,7 @@ Send-MgUserChatActivityNotification -InputObject <IUsersActionsIdentity> [-Activ
  [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SendViaIdentity
+### SendViaIdentity1
 ```
 Send-MgUserChatActivityNotification -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
@@ -56,7 +56,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ```yaml
 Type: String
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -71,7 +71,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -87,7 +87,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Send, SendViaIdentity
+Parameter Sets: Send1, SendViaIdentity1
 Aliases:
 
 Required: True
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int64
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -117,7 +117,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: SendExpanded, Send
+Parameter Sets: SendExpanded1, Send1
 Aliases:
 
 Required: True
@@ -133,7 +133,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: SendViaIdentityExpanded, SendViaIdentity
+Parameter Sets: SendViaIdentityExpanded1, SendViaIdentity1
 Aliases:
 
 Required: True
@@ -164,7 +164,7 @@ To construct, please use Get-Help -Online and see NOTES section for PREVIEWTEXT 
 
 ```yaml
 Type: IMicrosoftGraphItemBody
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -179,7 +179,7 @@ teamworkNotificationRecipient
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -195,7 +195,7 @@ To construct, please use Get-Help -Online and see NOTES section for TEMPLATEPARA
 
 ```yaml
 Type: IMicrosoftGraphKeyValuePair[]
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -211,7 +211,7 @@ To construct, please use Get-Help -Online and see NOTES section for TOPIC proper
 
 ```yaml
 Type: IMicrosoftGraphTeamworkActivityTopic
-Parameter Sets: SendExpanded, SendViaIdentityExpanded
+Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -226,7 +226,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: SendExpanded, Send
+Parameter Sets: SendExpanded1, Send1
 Aliases:
 
 Required: True
@@ -286,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActivityType <String>]`: 
   - `[ChainId <Int64?>]`: 
@@ -305,7 +305,7 @@ BODYPARAMETER `<IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynoti
     - `[Value <String>]`: The topic value. If the value of the source property is entityUrl, this must be a Microsoft Graph URL. If the vaule is text, this must be a plain text value.
     - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -353,16 +353,16 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
+PREVIEWTEXT <IMicrosoftGraphItemBody>: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair\[]>: .
+TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>: .
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
+TOPIC <IMicrosoftGraphTeamworkActivityTopic>: teamworkActivityTopic
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Source <String>]`: teamworkActivityTopicSource
   - `[Value <String>]`: The topic value. If the value of the source property is entityUrl, this must be a Microsoft Graph URL. If the vaule is text, this must be a plain text value.
