@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: 7da240ca-50a5-46d9-94dd-99b4ddcd6323
+Module Guid: c984f566-9e24-4d6c-920a-85ec12116d84
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar
 Help Version: 1.0.0.0
 Locale: en-US
@@ -395,9 +395,6 @@ Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
-### [New-MgGroupEventExceptionOccurrence](New-MgGroupEventExceptionOccurrence.md)
-Create new navigation property to exceptionOccurrences for groups
-
 ### [New-MgGroupEventExceptionOccurrenceAttachment](New-MgGroupEventExceptionOccurrenceAttachment.md)
 Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
@@ -408,9 +405,6 @@ Create an open extension (openTypeExtension object) and add custom properties in
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
-
-### [New-MgGroupEventExceptionOccurrenceInstance](New-MgGroupEventExceptionOccurrenceInstance.md)
-Create new navigation property to instances for groups
 
 ### [New-MgGroupEventExceptionOccurrenceInstanceAttachment](New-MgGroupEventExceptionOccurrenceInstanceAttachment.md)
 Use this API to add an attachment to an existing event.
@@ -441,16 +435,10 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-### [New-MgGroupEventInstance](New-MgGroupEventInstance.md)
-Create new navigation property to instances for groups
-
 ### [New-MgGroupEventInstanceAttachment](New-MgGroupEventInstanceAttachment.md)
 Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
-
-### [New-MgGroupEventInstanceExceptionOccurrence](New-MgGroupEventInstanceExceptionOccurrence.md)
-Create new navigation property to exceptionOccurrences for groups
 
 ### [New-MgGroupEventInstanceExceptionOccurrenceAttachment](New-MgGroupEventInstanceExceptionOccurrenceAttachment.md)
 Use this API to add an attachment to an existing event.
@@ -531,9 +519,6 @@ Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
-### [New-MgUserEventExceptionOccurrence](New-MgUserEventExceptionOccurrence.md)
-Create new navigation property to exceptionOccurrences for users
-
 ### [New-MgUserEventExceptionOccurrenceAttachment](New-MgUserEventExceptionOccurrenceAttachment.md)
 Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
@@ -544,9 +529,6 @@ Create an open extension (openTypeExtension object) and add custom properties in
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
-
-### [New-MgUserEventExceptionOccurrenceInstance](New-MgUserEventExceptionOccurrenceInstance.md)
-Create new navigation property to instances for users
 
 ### [New-MgUserEventExceptionOccurrenceInstanceAttachment](New-MgUserEventExceptionOccurrenceInstanceAttachment.md)
 Use this API to add an attachment to an existing event.
@@ -577,16 +559,10 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-### [New-MgUserEventInstance](New-MgUserEventInstance.md)
-Create new navigation property to instances for users
-
 ### [New-MgUserEventInstanceAttachment](New-MgUserEventInstanceAttachment.md)
 Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
-
-### [New-MgUserEventInstanceExceptionOccurrence](New-MgUserEventInstanceExceptionOccurrence.md)
-Create new navigation property to exceptionOccurrences for users
 
 ### [New-MgUserEventInstanceExceptionOccurrenceAttachment](New-MgUserEventInstanceExceptionOccurrenceAttachment.md)
 Use this API to add an attachment to an existing event.
@@ -638,17 +614,11 @@ Delete navigation property events for groups
 ### [Remove-MgGroupEventAttachment](Remove-MgGroupEventAttachment.md)
 Delete navigation property attachments for groups
 
-### [Remove-MgGroupEventExceptionOccurrence](Remove-MgGroupEventExceptionOccurrence.md)
-Delete navigation property exceptionOccurrences for groups
-
 ### [Remove-MgGroupEventExceptionOccurrenceAttachment](Remove-MgGroupEventExceptionOccurrenceAttachment.md)
 Delete navigation property attachments for groups
 
 ### [Remove-MgGroupEventExceptionOccurrenceExtension](Remove-MgGroupEventExceptionOccurrenceExtension.md)
 Delete navigation property extensions for groups
-
-### [Remove-MgGroupEventExceptionOccurrenceInstance](Remove-MgGroupEventExceptionOccurrenceInstance.md)
-Delete navigation property instances for groups
 
 ### [Remove-MgGroupEventExceptionOccurrenceInstanceAttachment](Remove-MgGroupEventExceptionOccurrenceInstanceAttachment.md)
 Delete navigation property attachments for groups
@@ -671,14 +641,8 @@ Delete navigation property singleValueExtendedProperties for groups
 ### [Remove-MgGroupEventExtension](Remove-MgGroupEventExtension.md)
 Delete navigation property extensions for groups
 
-### [Remove-MgGroupEventInstance](Remove-MgGroupEventInstance.md)
-Delete navigation property instances for groups
-
 ### [Remove-MgGroupEventInstanceAttachment](Remove-MgGroupEventInstanceAttachment.md)
 Delete navigation property attachments for groups
-
-### [Remove-MgGroupEventInstanceExceptionOccurrence](Remove-MgGroupEventInstanceExceptionOccurrence.md)
-Delete navigation property exceptionOccurrences for groups
 
 ### [Remove-MgGroupEventInstanceExceptionOccurrenceAttachment](Remove-MgGroupEventInstanceExceptionOccurrenceAttachment.md)
 Delete navigation property attachments for groups
@@ -731,17 +695,11 @@ Delete navigation property events for users
 ### [Remove-MgUserEventAttachment](Remove-MgUserEventAttachment.md)
 Delete navigation property attachments for users
 
-### [Remove-MgUserEventExceptionOccurrence](Remove-MgUserEventExceptionOccurrence.md)
-Delete navigation property exceptionOccurrences for users
-
 ### [Remove-MgUserEventExceptionOccurrenceAttachment](Remove-MgUserEventExceptionOccurrenceAttachment.md)
 Delete navigation property attachments for users
 
 ### [Remove-MgUserEventExceptionOccurrenceExtension](Remove-MgUserEventExceptionOccurrenceExtension.md)
 Delete navigation property extensions for users
-
-### [Remove-MgUserEventExceptionOccurrenceInstance](Remove-MgUserEventExceptionOccurrenceInstance.md)
-Delete navigation property instances for users
 
 ### [Remove-MgUserEventExceptionOccurrenceInstanceAttachment](Remove-MgUserEventExceptionOccurrenceInstanceAttachment.md)
 Delete navigation property attachments for users
@@ -764,14 +722,8 @@ Delete navigation property singleValueExtendedProperties for users
 ### [Remove-MgUserEventExtension](Remove-MgUserEventExtension.md)
 Delete navigation property extensions for users
 
-### [Remove-MgUserEventInstance](Remove-MgUserEventInstance.md)
-Delete navigation property instances for users
-
 ### [Remove-MgUserEventInstanceAttachment](Remove-MgUserEventInstanceAttachment.md)
 Delete navigation property attachments for users
-
-### [Remove-MgUserEventInstanceExceptionOccurrence](Remove-MgUserEventInstanceExceptionOccurrence.md)
-Delete navigation property exceptionOccurrences for users
 
 ### [Remove-MgUserEventInstanceExceptionOccurrenceAttachment](Remove-MgUserEventInstanceExceptionOccurrenceAttachment.md)
 Delete navigation property attachments for users
@@ -812,23 +764,8 @@ Update the navigation property singleValueExtendedProperties in groups
 ### [Update-MgGroupEvent](Update-MgGroupEvent.md)
 Update the navigation property events in groups
 
-### [Update-MgGroupEventAttachment](Update-MgGroupEventAttachment.md)
-Update the navigation property attachments in groups
-
-### [Update-MgGroupEventExceptionOccurrence](Update-MgGroupEventExceptionOccurrence.md)
-Update the navigation property exceptionOccurrences in groups
-
-### [Update-MgGroupEventExceptionOccurrenceAttachment](Update-MgGroupEventExceptionOccurrenceAttachment.md)
-Update the navigation property attachments in groups
-
 ### [Update-MgGroupEventExceptionOccurrenceExtension](Update-MgGroupEventExceptionOccurrenceExtension.md)
 Update the navigation property extensions in groups
-
-### [Update-MgGroupEventExceptionOccurrenceInstance](Update-MgGroupEventExceptionOccurrenceInstance.md)
-Update the navigation property instances in groups
-
-### [Update-MgGroupEventExceptionOccurrenceInstanceAttachment](Update-MgGroupEventExceptionOccurrenceInstanceAttachment.md)
-Update the navigation property attachments in groups
 
 ### [Update-MgGroupEventExceptionOccurrenceInstanceExtension](Update-MgGroupEventExceptionOccurrenceInstanceExtension.md)
 Update the navigation property extensions in groups
@@ -847,18 +784,6 @@ Update the navigation property singleValueExtendedProperties in groups
 
 ### [Update-MgGroupEventExtension](Update-MgGroupEventExtension.md)
 Update the navigation property extensions in groups
-
-### [Update-MgGroupEventInstance](Update-MgGroupEventInstance.md)
-Update the navigation property instances in groups
-
-### [Update-MgGroupEventInstanceAttachment](Update-MgGroupEventInstanceAttachment.md)
-Update the navigation property attachments in groups
-
-### [Update-MgGroupEventInstanceExceptionOccurrence](Update-MgGroupEventInstanceExceptionOccurrence.md)
-Update the navigation property exceptionOccurrences in groups
-
-### [Update-MgGroupEventInstanceExceptionOccurrenceAttachment](Update-MgGroupEventInstanceExceptionOccurrenceAttachment.md)
-Update the navigation property attachments in groups
 
 ### [Update-MgGroupEventInstanceExceptionOccurrenceExtension](Update-MgGroupEventInstanceExceptionOccurrenceExtension.md)
 Update the navigation property extensions in groups
@@ -906,23 +831,8 @@ Update the navigation property singleValueExtendedProperties in users
 ### [Update-MgUserEvent](Update-MgUserEvent.md)
 Update the navigation property events in users
 
-### [Update-MgUserEventAttachment](Update-MgUserEventAttachment.md)
-Update the navigation property attachments in users
-
-### [Update-MgUserEventExceptionOccurrence](Update-MgUserEventExceptionOccurrence.md)
-Update the navigation property exceptionOccurrences in users
-
-### [Update-MgUserEventExceptionOccurrenceAttachment](Update-MgUserEventExceptionOccurrenceAttachment.md)
-Update the navigation property attachments in users
-
 ### [Update-MgUserEventExceptionOccurrenceExtension](Update-MgUserEventExceptionOccurrenceExtension.md)
 Update the navigation property extensions in users
-
-### [Update-MgUserEventExceptionOccurrenceInstance](Update-MgUserEventExceptionOccurrenceInstance.md)
-Update the navigation property instances in users
-
-### [Update-MgUserEventExceptionOccurrenceInstanceAttachment](Update-MgUserEventExceptionOccurrenceInstanceAttachment.md)
-Update the navigation property attachments in users
 
 ### [Update-MgUserEventExceptionOccurrenceInstanceExtension](Update-MgUserEventExceptionOccurrenceInstanceExtension.md)
 Update the navigation property extensions in users
@@ -941,18 +851,6 @@ Update the navigation property singleValueExtendedProperties in users
 
 ### [Update-MgUserEventExtension](Update-MgUserEventExtension.md)
 Update the navigation property extensions in users
-
-### [Update-MgUserEventInstance](Update-MgUserEventInstance.md)
-Update the navigation property instances in users
-
-### [Update-MgUserEventInstanceAttachment](Update-MgUserEventInstanceAttachment.md)
-Update the navigation property attachments in users
-
-### [Update-MgUserEventInstanceExceptionOccurrence](Update-MgUserEventInstanceExceptionOccurrence.md)
-Update the navigation property exceptionOccurrences in users
-
-### [Update-MgUserEventInstanceExceptionOccurrenceAttachment](Update-MgUserEventInstanceExceptionOccurrenceAttachment.md)
-Update the navigation property attachments in users
 
 ### [Update-MgUserEventInstanceExceptionOccurrenceExtension](Update-MgUserEventInstanceExceptionOccurrenceExtension.md)
 Update the navigation property extensions in users
