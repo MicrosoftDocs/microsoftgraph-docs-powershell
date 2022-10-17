@@ -1,60 +1,59 @@
 ﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationwindowhelloforbusinessmethoddeviceregistereduser
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessauthenticationcontextclassreference
 schema: 2.0.0
 ---
 
-# Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser
+# Update-MgIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+Update the navigation property authenticationContextClassReferences in identity
 
 ## SYNTAX
 
-### List1 (Default)
+### UpdateExpanded (Default)
 ```
-Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser -UserId <String>
- -WindowsHelloForBusinessAuthenticationMethodId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser -DirectoryObjectId <String>
- -UserId <String> -WindowsHelloForBusinessAuthenticationMethodId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+Update-MgIdentityConditionalAccessAuthenticationContextClassReference
+ -AuthenticationContextClassReferenceId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsAvailable] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### Update
 ```
-Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser
- -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ConsistencyLevel <String>] [<CommonParameters>]
+Update-MgIdentityConditionalAccessAuthenticationContextClassReference
+ -AuthenticationContextClassReferenceId <String>
+ -BodyParameter <IMicrosoftGraphAuthenticationContextClassReference> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-IsAvailable] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphAuthenticationContextClassReference> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+Update the navigation property authenticationContextClassReferences in identity
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -All
-List all pages.
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
+Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -64,44 +63,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ConsistencyLevel
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+### -AuthenticationContextClassReferenceId
+key: id of authenticationContextClassReference
 
 ```yaml
 Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: String
-Parameter Sets: List1
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DirectoryObjectId
-key: id of directoryObject
-
-```yaml
-Type: String
-Parameter Sets: Get1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -111,13 +78,31 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExpandProperty
-Expand related entities
+### -BodyParameter
+authenticationContextClassReference
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
+Type: IMicrosoftGraphAuthenticationContextClassReference
+Parameter Sets: Update, UpdateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Description
+A short explanation of the policies that are enforced by authenticationContextClassReference.
+This value should be used to provide secondary text to describe the authentication context class reference when building user-facing admin experiences.
+For example, a selection UX.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -126,12 +111,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Filter
-Filter items by property values
+### -DisplayName
+The display name is the friendly name of the authenticationContextClassReference object.
+This value should be used to identify the authentication context class reference when building user-facing admin experiences.
+For example, a selection UX.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+The unique idenfier for an entity.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -147,7 +150,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -157,12 +160,16 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
+### -IsAvailable
+Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
+When it is set to false, it should not be shown in authentication context selection UX, or used to protect app resources.
+It will be shown and available for Conditional Access policy authoring.
+The default value is false.
+Supports $filter (eq).
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -172,27 +179,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: String[]
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
-
-```yaml
-Type: String
-Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -202,13 +194,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sort
-Order items by property values
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
-Aliases: OrderBy
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
 Required: False
 Position: Named
@@ -217,58 +209,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Show only the first n items
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserId
-key: id of user
-
-```yaml
-Type: String
-Parameter Sets: List1, Get1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsHelloForBusinessAuthenticationMethodId
-key: id of windowsHelloForBusinessAuthenticationMethod
-
-```yaml
-Type: String
-Parameter Sets: List1, Get1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
 
 Required: False
 Position: Named
@@ -283,9 +231,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -294,6 +243,13 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+BODYPARAMETER <IMicrosoftGraphAuthenticationContextClassReference>: authenticationContextClassReference
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
+  - `[DisplayName <String>]`: The display name is the friendly name of the authenticationContextClassReference object. This value should be used to identify the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
+  - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false, it should not be shown in authentication context selection UX, or used to protect app resources. It will be shown and available for Conditional Access policy authoring. The default value is false.  Supports $filter (eq).
 
 INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy

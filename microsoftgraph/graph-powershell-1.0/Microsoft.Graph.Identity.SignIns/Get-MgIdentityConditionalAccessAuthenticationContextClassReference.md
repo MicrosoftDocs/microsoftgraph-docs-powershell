@@ -1,49 +1,43 @@
 ﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationwindowhelloforbusinessmethoddeviceregistereduser
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessauthenticationcontextclassreference
 schema: 2.0.0
 ---
 
-# Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser
+# Get-MgIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
-Supports $expand.
+Returns a collection of the specified authentication context class references.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser -UserId <String>
- -WindowsHelloForBusinessAuthenticationMethodId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser -DirectoryObjectId <String>
- -UserId <String> -WindowsHelloForBusinessAuthenticationMethodId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+Get-MgIdentityConditionalAccessAuthenticationContextClassReference [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### Get
 ```
-Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser
- -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ConsistencyLevel <String>] [<CommonParameters>]
+Get-MgIdentityConditionalAccessAuthenticationContextClassReference
+ -AuthenticationContextClassReferenceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObject <IIdentitySignInsIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
-Supports $expand.
+Returns a collection of the specified authentication context class references.
 
 ## EXAMPLES
 
@@ -54,7 +48,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -64,16 +58,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ConsistencyLevel
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+### -AuthenticationContextClassReferenceId
+key: id of authenticationContextClassReference
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Get
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -86,25 +79,10 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DirectoryObjectId
-key: id of directoryObject
-
-```yaml
-Type: String
-Parameter Sets: Get1
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -131,7 +109,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -147,7 +125,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -162,7 +140,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -192,7 +170,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -207,7 +185,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -222,40 +200,10 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserId
-key: id of user
-
-```yaml
-Type: String
-Parameter Sets: List1, Get1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsHelloForBusinessAuthenticationMethodId
-key: id of windowsHelloForBusinessAuthenticationMethod
-
-```yaml
-Type: String
-Parameter Sets: List1, Get1
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -267,7 +215,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -285,7 +233,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
 ## NOTES
 
 ALIASES

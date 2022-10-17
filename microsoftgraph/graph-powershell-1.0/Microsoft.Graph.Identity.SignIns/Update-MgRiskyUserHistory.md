@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgriskyuserhistory
@@ -114,7 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -392,12 +393,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVITY `<IMicrosoftGraphRiskUserActivity>`: riskUserActivity
+ACTIVITY <IMicrosoftGraphRiskUserActivity>: riskUserActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Detail <String>]`: 
   - `[RiskEventTypes <String[]>]`: The type of risk event detected.
 
-BODYPARAMETER `<IMicrosoftGraphRiskyUserHistoryItem>`: riskyUserHistoryItem
+BODYPARAMETER <IMicrosoftGraphRiskyUserHistoryItem>: riskyUserHistoryItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[History <IMicrosoftGraphRiskyUserHistoryItem[]>]`: The activity related to user risk level change
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
@@ -408,7 +409,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskyUserHistoryItem>`: riskyUserHistoryItem
   - `[RiskState <String>]`: riskState
   - `[UserDisplayName <String>]`: Risky user display name.
   - `[UserPrincipalName <String>]`: Risky user principal name.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: 
@@ -416,7 +417,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskyUserHistoryItem>`: riskyUserHistoryItem
   - `[InitiatedBy <String>]`: The id of actor that does the operation.
   - `[UserId <String>]`: The id of the user.
 
-HISTORY <IMicrosoftGraphRiskyUserHistoryItem\[]>: The activity related to user risk level change
+HISTORY <IMicrosoftGraphRiskyUserHistoryItem[]>: The activity related to user risk level change
   - `[History <IMicrosoftGraphRiskyUserHistoryItem[]>]`: The activity related to user risk level change
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
   - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
@@ -426,7 +427,7 @@ HISTORY <IMicrosoftGraphRiskyUserHistoryItem\[]>: The activity related to user r
   - `[RiskState <String>]`: riskState
   - `[UserDisplayName <String>]`: Risky user display name.
   - `[UserPrincipalName <String>]`: Risky user principal name.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: 
@@ -434,7 +435,7 @@ HISTORY <IMicrosoftGraphRiskyUserHistoryItem\[]>: The activity related to user r
   - `[InitiatedBy <String>]`: The id of actor that does the operation.
   - `[UserId <String>]`: The id of the user.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
@@ -453,6 +454,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[CommandId <String>]`: key: id of command
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
+  - `[ConditionalAccessTemplateId <String>]`: key: id of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: key: tenantId of crossTenantAccessPolicyConfigurationPartner
   - `[CustomAuthenticationExtensionId <String>]`: key: id of customAuthenticationExtension
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
