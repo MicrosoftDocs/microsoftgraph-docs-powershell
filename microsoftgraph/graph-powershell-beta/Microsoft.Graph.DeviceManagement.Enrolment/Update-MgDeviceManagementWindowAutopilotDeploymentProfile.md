@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementwindowautopilotdeploymentprofile
@@ -432,7 +432,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDDEVICES <IMicrosoftGraphWindowsAutopilotDeviceIdentity\[]>: The list of assigned devices for the profile.
+ASSIGNEDDEVICES <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>: The list of assigned devices for the profile.
   - `[Id <String>]`: 
   - `[AddressableUserName <String>]`: Addressable user name.
   - `[AzureActiveDirectoryDeviceId <String>]`: AAD Device ID - to be deprecated
@@ -501,7 +501,7 @@ ASSIGNEDDEVICES <IMicrosoftGraphWindowsAutopilotDeviceIdentity\[]>: The list of 
   - `[SystemFamily <String>]`: System Family
   - `[UserPrincipalName <String>]`: User Principal Name.
 
-ASSIGNMENTS <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment\[]>: The list of group assignments for the profile.
+ASSIGNMENTS <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]>: The list of group assignments for the profile.
   - `[Id <String>]`: 
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
   - `[SourceId <String>]`: Identifier for resource used for deployment to a group
@@ -510,7 +510,7 @@ ASSIGNMENTS <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment\[]>: The
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows Autopilot Deployment Profile
+BODYPARAMETER <IMicrosoftGraphWindowsAutopilotDeploymentProfile>: Windows Autopilot Deployment Profile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]`: The list of assigned devices for the profile.
@@ -579,7 +579,7 @@ BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows Auto
     - `[UserType <String>]`: windowsUserType
   - `[RoleScopeTagIds <String[]>]`: Scope tags for the profile.
 
-ENROLLMENTSTATUSSCREENSETTINGS `<IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>`: Enrollment status screen setting
+ENROLLMENTSTATUSSCREENSETTINGS <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>: Enrollment status screen setting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowDeviceUseBeforeProfileAndAppInstallComplete <Boolean?>]`: Allow or block user to use device before profile and app installation complete
   - `[AllowDeviceUseOnInstallFailure <Boolean?>]`: Allow the user to continue using the device on installation failure
@@ -589,7 +589,7 @@ ENROLLMENTSTATUSSCREENSETTINGS `<IMicrosoftGraphWindowsEnrollmentStatusScreenSet
   - `[HideInstallationProgress <Boolean?>]`: Show or hide installation progress to user
   - `[InstallProgressTimeoutInMinutes <Int32?>]`: Set installation progress timeout in minutes
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
@@ -626,7 +626,7 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
-OUTOFBOXEXPERIENCESETTINGS `<IMicrosoftGraphOutOfBoxExperienceSettings>`: Out of box experience setting
+OUTOFBOXEXPERIENCESETTINGS <IMicrosoftGraphOutOfBoxExperienceSettings>: Out of box experience setting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceUsageType <WindowsDeviceUsageType?>]`: windowsDeviceUsageType
   - `[HideEscapeLink <Boolean?>]`: If set to true, then the user can't start over with different account, on company sign-in
