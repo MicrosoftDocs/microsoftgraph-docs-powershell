@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagemententitlementmanagementroledefinition
@@ -285,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUnifiedRoleDefinition1>: unifiedRoleDefinition
+BODYPARAMETER `<IMicrosoftGraphUnifiedRoleDefinition1>`: unifiedRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
@@ -301,7 +301,7 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleDefinition1>: unifiedRoleDefinition
   - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true. This identifier is typically used if one needs an identifier to be the same across different directories.
   - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
-INHERITSPERMISSIONSFROM <IMicrosoftGraphUnifiedRoleDefinition1[]>: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (isBuiltIn is true) support this attribute. Supports $expand.
+INHERITSPERMISSIONSFROM <IMicrosoftGraphUnifiedRoleDefinition1\[]>: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (isBuiltIn is true) support this attribute. Supports $expand.
   - `[Id <String>]`: 
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
   - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq, in).
@@ -316,7 +316,7 @@ INHERITSPERMISSIONSFROM <IMicrosoftGraphUnifiedRoleDefinition1[]>: Read-only col
   - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true. This identifier is typically used if one needs an identifier to be the same across different directories.
   - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
-ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission[]>: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
+ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission\[]>: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
   - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
   - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
   - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
