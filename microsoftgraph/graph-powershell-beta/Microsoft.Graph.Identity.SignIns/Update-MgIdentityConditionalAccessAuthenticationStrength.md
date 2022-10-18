@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessauthenticationstrength
@@ -193,12 +193,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUTHENTICATIONMETHODMODES <IMicrosoftGraphAuthenticationMethodModeDetail\[]>: .
+AUTHENTICATIONMETHODMODES <IMicrosoftGraphAuthenticationMethodModeDetail[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AuthenticationMethod <String>]`: baseAuthenticationMethod
   - `[DisplayName <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthRoot>`: authenticationStrengthRoot
+BODYPARAMETER <IMicrosoftGraphAuthenticationStrengthRoot>: authenticationStrengthRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AuthenticationCombinations <String[]>]`: 
@@ -219,7 +219,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthRoot>`: authenticationStren
     - `[PolicyType <String>]`: authenticationStrengthPolicyType
     - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
 
-POLICIES <IMicrosoftGraphAuthenticationStrengthPolicy\[]>: .
+POLICIES <IMicrosoftGraphAuthenticationStrengthPolicy[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowedCombinations <String[]>]`: 
   - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: 
