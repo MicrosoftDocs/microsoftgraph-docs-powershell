@@ -112,6 +112,9 @@ Invoke action getHealthMetricTimeSeries
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire](Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire.md)
 Invoke action getDevicesScheduledToRetire
 
+### [Get-MgDeviceManagementDeviceCompliancePolicyNoncompliantDeviceToRetire](Get-MgDeviceManagementDeviceCompliancePolicyNoncompliantDeviceToRetire.md)
+Invoke action getNoncompliantDevicesToRetire
+
 ### [Get-MgDeviceManagementDeviceConfigurationTargetedUserAndDevice](Get-MgDeviceManagementDeviceConfigurationTargetedUserAndDevice.md)
 Invoke action getTargetedUsersAndDevices
 
@@ -232,6 +235,9 @@ Invoke action getHistoricalReport
 ### [Get-MgDeviceManagementReportMalwareSummaryReport](Get-MgDeviceManagementReportMalwareSummaryReport.md)
 Invoke action getMalwareSummaryReport
 
+### [Get-MgDeviceManagementReportMobileApplicationManagementAppRegistrationSummaryReport](Get-MgDeviceManagementReportMobileApplicationManagementAppRegistrationSummaryReport.md)
+Invoke action getMobileApplicationManagementAppRegistrationSummaryReport
+
 ### [Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport](Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport.md)
 Invoke action getNoncompliantDevicesAndSettingsReport
 
@@ -288,6 +294,15 @@ Invoke action getZebraFotaDeploymentReport
 
 ### [Get-MgDeviceManagementRoleScopeTagRoleScopeTagById](Get-MgDeviceManagementRoleScopeTagRoleScopeTagById.md)
 Invoke action getRoleScopeTagsById
+
+### [Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport](Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport.md)
+Invoke action getDailyAggregatedRemoteConnectionReports
+
+### [Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport](Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport.md)
+Invoke action getRemoteConnectionHistoricalReports
+
+### [Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport](Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport.md)
+Invoke action getTotalAggregatedRemoteConnectionReports
 
 ### [Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList](Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList.md)
 Invoke action importAppleDeviceIdentityList
@@ -380,6 +395,9 @@ Invoke action assignedAccessMultiModeProfiles
 ### [Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl](Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl.md)
 Invoke action windowsPrivacyAccessControls
 
+### [Invoke-MgDeviceManagementOrganizationalMessageTenantConsent](Invoke-MgDeviceManagementOrganizationalMessageTenantConsent.md)
+Invoke action postOrganizationalMessageTenantConsent
+
 ### [Invoke-MgDownDeviceManagementComanagedDeviceShut](Invoke-MgDownDeviceManagementComanagedDeviceShut.md)
 Shut down device
 
@@ -391,6 +409,12 @@ Invoke action downloadAppDiagnostics
 
 ### [Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic](Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic.md)
 Invoke action downloadAppDiagnostics
+
+### [Invoke-MgEnrollDeviceManagementComanagedDeviceNowAction](Invoke-MgEnrollDeviceManagementComanagedDeviceNowAction.md)
+Trigger comanagement enrollment action on ConfigurationManager client
+
+### [Invoke-MgEnrollDeviceManagementManagedDeviceNowAction](Invoke-MgEnrollDeviceManagementManagedDeviceNowAction.md)
+Trigger comanagement enrollment action on ConfigurationManager client
 
 ### [Invoke-MgExecuteDeviceManagementComanagedDeviceAction](Invoke-MgExecuteDeviceManagementComanagedDeviceAction.md)
 Invoke action executeAction
@@ -894,6 +918,9 @@ Invoke action updateSettings
 
 ### [Update-MgDeviceManagementManagedDeviceWindowDeviceAccount](Update-MgDeviceManagementManagedDeviceWindowDeviceAccount.md)
 Invoke action updateWindowsDeviceAccount
+
+### [Update-MgDeviceManagementOrganizationalMessageTenantConsent](Update-MgDeviceManagementOrganizationalMessageTenantConsent.md)
+Invoke action updateOrganizationalMessageTenantConsent
 
 ### [Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword](Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword.md)
 Update the Active Directory domain password for a cloudPcOnPremisesConnection object.
