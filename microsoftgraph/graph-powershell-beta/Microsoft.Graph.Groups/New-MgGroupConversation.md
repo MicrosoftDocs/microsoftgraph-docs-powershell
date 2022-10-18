@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversation
@@ -347,7 +347,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphConversation1>`: conversation
+BODYPARAMETER <IMicrosoftGraphConversation1>: conversation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
@@ -414,7 +414,7 @@ BODYPARAMETER `<IMicrosoftGraphConversation1>`: conversation
   - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
   - `[UniqueSenders <String[]>]`: All the users that sent a message to this Conversation.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -457,7 +457,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-THREADS <IMicrosoftGraphConversationThread1\[]>: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
+THREADS <IMicrosoftGraphConversationThread1[]>: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress

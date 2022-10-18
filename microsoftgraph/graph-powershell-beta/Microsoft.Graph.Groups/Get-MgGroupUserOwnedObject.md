@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupuserownedobject
@@ -142,7 +142,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths16ZshinGroupsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths16ZshinGroupsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: 
   - `[UserId <String>]`: 
