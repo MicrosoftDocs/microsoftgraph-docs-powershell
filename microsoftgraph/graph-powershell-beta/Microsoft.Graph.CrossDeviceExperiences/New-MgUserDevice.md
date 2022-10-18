@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguserdevice
@@ -942,12 +942,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALTERNATIVESECURITYIDS <IMicrosoftGraphAlternativeSecurityId\[]>: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
+ALTERNATIVESECURITYIDS <IMicrosoftGraphAlternativeSecurityId[]>: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
   - `[IdentityProvider <String>]`: For internal use only
   - `[Key <Byte[]>]`: For internal use only
   - `[Type <Int32?>]`: For internal use only
 
-BODYPARAMETER `<IMicrosoftGraphDevice>`: device
+BODYPARAMETER <IMicrosoftGraphDevice>: device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
@@ -1034,7 +1034,7 @@ BODYPARAMETER `<IMicrosoftGraphDevice>`: device
     - `[ServiceIdentifier <String>]`: Identifier of the service corresponding to the usage right.
     - `[State <String>]`: usageRightState
 
-COMMANDS <IMicrosoftGraphCommand\[]>: Set of commands sent to this device.
+COMMANDS <IMicrosoftGraphCommand[]>: Set of commands sent to this device.
   - `[Id <String>]`: 
   - `[AppServiceName <String>]`: 
   - `[Error <String>]`: 
@@ -1049,7 +1049,7 @@ COMMANDS <IMicrosoftGraphCommand\[]>: Set of commands sent to this device.
   - `[Status <String>]`: 
   - `[Type <String>]`: 
 
-EXTENSIONATTRIBUTES `<IMicrosoftGraphOnPremisesExtensionAttributes>`: onPremisesExtensionAttributes
+EXTENSIONATTRIBUTES <IMicrosoftGraphOnPremisesExtensionAttributes>: onPremisesExtensionAttributes
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExtensionAttribute1 <String>]`: First customizable extension attribute.
   - `[ExtensionAttribute10 <String>]`: Tenth customizable extension attribute.
@@ -1067,10 +1067,10 @@ EXTENSIONATTRIBUTES `<IMicrosoftGraphOnPremisesExtensionAttributes>`: onPremises
   - `[ExtensionAttribute8 <String>]`: Eighth customizable extension attribute.
   - `[ExtensionAttribute9 <String>]`: Ninth customizable extension attribute.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the device. Read-only. Nullable.
+EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the device. Read-only. Nullable.
   - `[Id <String>]`: 
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
   - `[CommandId <String>]`: key: id of command
   - `[DeviceId <String>]`: key: id of device
@@ -1080,23 +1080,23 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[UserActivityId <String>]`: key: id of userActivity
   - `[UserId <String>]`: key: id of user
 
-MEMBEROF <IMicrosoftGraphDirectoryObject\[]>: Groups and administrative units that this device is a member of. Read-only. Nullable. Supports $expand.
+MEMBEROF <IMicrosoftGraphDirectoryObject[]>: Groups and administrative units that this device is a member of. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-REGISTEREDOWNERS <IMicrosoftGraphDirectoryObject\[]>: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+REGISTEREDOWNERS <IMicrosoftGraphDirectoryObject[]>: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-REGISTEREDUSERS <IMicrosoftGraphDirectoryObject\[]>: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
+REGISTEREDUSERS <IMicrosoftGraphDirectoryObject[]>: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject\[]>: Groups and administrative units that this device is a member of. This operation is transitive. Supports $expand.
+TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject[]>: Groups and administrative units that this device is a member of. This operation is transitive. Supports $expand.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-USAGERIGHTS <IMicrosoftGraphUsageRight\[]>: Represents the usage rights a device has been granted.
+USAGERIGHTS <IMicrosoftGraphUsageRight[]>: Represents the usage rights a device has been granted.
   - `[Id <String>]`: 
   - `[CatalogId <String>]`: Product id corresponding to the usage right.
   - `[ServiceIdentifier <String>]`: Identifier of the service corresponding to the usage right.
