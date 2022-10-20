@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticbaseline
@@ -291,7 +291,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPHEALTHMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+APPHEALTHMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -304,7 +304,7 @@ APPHEALTHMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user ex
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-BATTERYHEALTHMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+BATTERYHEALTHMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -317,7 +317,7 @@ BATTERYHEALTHMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The use
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-BESTPRACTICESMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+BESTPRACTICESMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -330,7 +330,7 @@ BESTPRACTICESMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The use
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBaseline>`: The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBaseline>: The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
@@ -355,7 +355,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBaseline>`: The user exper
   - `[ResourcePerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
 
-DEVICEBOOTPERFORMANCEMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+DEVICEBOOTPERFORMANCEMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -368,7 +368,7 @@ DEVICEBOOTPERFORMANCEMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`:
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-REBOOTANALYTICSMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+REBOOTANALYTICSMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -381,7 +381,7 @@ REBOOTANALYTICSMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The u
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-RESOURCEPERFORMANCEMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+RESOURCEPERFORMANCEMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
@@ -394,7 +394,7 @@ RESOURCEPERFORMANCEMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: T
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-WORKFROMANYWHEREMETRICS `<IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+WORKFROMANYWHEREMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
