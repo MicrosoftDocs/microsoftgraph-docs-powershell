@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdownloaddevicemanagementcomanageddeviceappdiagnostic
@@ -159,14 +159,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1K3Iuv6DevicemanagementComanageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1K3Iuv6DevicemanagementComanageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Request <IMicrosoftGraphPowerliftDownloadRequest>]`: Request used to download app diagnostic files.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Files <String[]>]`: The list of files to download
     - `[PowerliftId <String>]`: The unique id for the request
 
-REQUEST `<IMicrosoftGraphPowerliftDownloadRequest>`: Request used to download app diagnostic files.
+REQUEST <IMicrosoftGraphPowerliftDownloadRequest>: Request used to download app diagnostic files.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Files <String[]>]`: The list of files to download
   - `[PowerliftId <String>]`: The unique id for the request
