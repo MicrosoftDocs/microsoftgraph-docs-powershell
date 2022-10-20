@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowrun
@@ -405,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceRun>`: run
+BODYPARAMETER <IMicrosoftGraphIdentityGovernanceRun>: run
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompletedDateTime <DateTime?>]`: The date time that the run completed. Value is null if the workflow hasn't completed. Optional.
@@ -1300,7 +1300,7 @@ BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceRun>`: run
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4978,7 +4978,7 @@ BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceRun>`: run
     - `[WorkflowVersion <Int32?>]`: The version of the workflow that was executed.
   - `[WorkflowExecutionType <String>]`: workflowExecutionType
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -5053,7 +5053,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: key: id of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
-TASKPROCESSINGRESULTS <IMicrosoftGraphIdentityGovernanceTaskProcessingResult\[]>: The related taskProcessingResults.
+TASKPROCESSINGRESULTS <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>: The related taskProcessingResults.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompletedDateTime <DateTime?>]`: The date time when taskProcessingResult execution ended. Value is null if task execution is still in progress.
   - `[CreatedDateTime <DateTime?>]`: The date time when the taskProcessingResult was created. Supports $filter(lt, gt) and orderBy.
@@ -5937,7 +5937,7 @@ TASKPROCESSINGRESULTS <IMicrosoftGraphIdentityGovernanceTaskProcessingResult\[]>
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9598,7 +9598,7 @@ TASKPROCESSINGRESULTS <IMicrosoftGraphIdentityGovernanceTaskProcessingResult\[]>
     - `[TaskDefinitionId <String>]`: A unique template identifier for the task. For more information about the tasks that Lifecycle Workflows currently supports and their unique identifiers, see supported tasks
     - `[TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]`: The result of processing the task.
 
-USERPROCESSINGRESULTS <IMicrosoftGraphIdentityGovernanceUserProcessingResult\[]>: The associated individual user execution.
+USERPROCESSINGRESULTS <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>: The associated individual user execution.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompletedDateTime <DateTime?>]`: The date time that the workflow execution for a user completed. Value is null if the workflow hasn't completed. Supports $filter(lt, gt) and $orderby.
   - `[FailedTasksCount <Int32?>]`: The number of tasks that failed in the workflow execution.
@@ -10482,7 +10482,7 @@ USERPROCESSINGRESULTS <IMicrosoftGraphIdentityGovernanceUserProcessingResult\[]>
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.

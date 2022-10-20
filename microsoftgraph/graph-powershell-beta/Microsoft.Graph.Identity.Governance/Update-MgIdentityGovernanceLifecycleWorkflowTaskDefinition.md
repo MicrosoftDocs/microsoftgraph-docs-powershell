@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowtaskdefinition
@@ -284,7 +284,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceTaskDefinition>`: taskDefinition
+BODYPARAMETER <IMicrosoftGraphIdentityGovernanceTaskDefinition>: taskDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Category <String>]`: lifecycleTaskCategory
@@ -297,7 +297,7 @@ BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceTaskDefinition>`: taskDefinitio
     - `[Values <String[]>]`: The values of the parameter.
   - `[Version <Int32?>]`: The version number of the taskDefinition. New records are pushed when we add support for new parameters.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -372,7 +372,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: key: id of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
-PARAMETERS <IMicrosoftGraphIdentityGovernanceParameter\[]>: The parameters that must be supplied when creating a workflow task object.
+PARAMETERS <IMicrosoftGraphIdentityGovernanceParameter[]>: The parameters that must be supplied when creating a workflow task object.
   - `[Name <String>]`: The name of the parameter.
   - `[ValueType <String>]`: valueType
   - `[Values <String[]>]`: The values of the parameter.
