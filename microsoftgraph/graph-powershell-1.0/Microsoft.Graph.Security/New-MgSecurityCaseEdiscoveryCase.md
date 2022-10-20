@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycase
@@ -401,7 +401,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCase1>`: ediscoveryCase
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryCase1>: ediscoveryCase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: 
   - `[Description <String>]`: 
@@ -853,7 +853,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCase1>`: ediscoveryCase
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3128,7 +3128,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCase1>`: ediscoveryCase
     - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>]`: Returns the tags that are a child of a tag.
     - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>]`: ediscoveryReviewTag
 
-CLOSEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CLOSEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3137,7 +3137,7 @@ CLOSEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian1\[]>: Returns a list of case ediscoveryCustodian objects for this case.
+CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian1[]>: Returns a list of case ediscoveryCustodian objects for this case.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -3578,7 +3578,7 @@ CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian1\[]>: Returns a list of c
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5742,7 +5742,7 @@ CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian1\[]>: Returns a list of c
     - `[IncludedSources <String>]`: sourceType
     - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5751,7 +5751,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NONCUSTODIALDATASOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1\[]>: Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
+NONCUSTODIALDATASOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1[]>: Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -5788,7 +5788,7 @@ NONCUSTODIALDATASOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-OPERATIONS <IMicrosoftGraphSecurityCaseOperation1\[]>: Returns a list of case caseOperation objects for this case.
+OPERATIONS <IMicrosoftGraphSecurityCaseOperation1[]>: Returns a list of case caseOperation objects for this case.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Action <String>]`: 
   - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
@@ -5809,7 +5809,7 @@ OPERATIONS <IMicrosoftGraphSecurityCaseOperation1\[]>: Returns a list of case ca
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: caseOperationStatus
 
-REVIEWSETS <IMicrosoftGraphSecurityEdiscoveryReviewSet1\[]>: Returns a list of eDiscoveryReviewSet objects in the case.
+REVIEWSETS <IMicrosoftGraphSecurityEdiscoveryReviewSet1[]>: Returns a list of eDiscoveryReviewSet objects in the case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -5831,7 +5831,7 @@ REVIEWSETS <IMicrosoftGraphSecurityEdiscoveryReviewSet1\[]>: Returns a list of e
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-SEARCHES <IMicrosoftGraphSecurityEdiscoverySearch1\[]>: Returns a list of eDiscoverySearch objects associated with this case.
+SEARCHES <IMicrosoftGraphSecurityEdiscoverySearch1[]>: Returns a list of eDiscoverySearch objects associated with this case.
   - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5922,7 +5922,7 @@ SEARCHES <IMicrosoftGraphSecurityEdiscoverySearch1\[]>: Returns a list of eDisco
       - `[Status <String>]`: caseOperationStatus
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-SETTINGS `<IMicrosoftGraphSecurityEdiscoveryCaseSettings>`: ediscoveryCaseSettings
+SETTINGS <IMicrosoftGraphSecurityEdiscoveryCaseSettings>: ediscoveryCaseSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Ocr <IMicrosoftGraphSecurityOcrSettings>]`: ocrSettings
@@ -5943,7 +5943,7 @@ SETTINGS `<IMicrosoftGraphSecurityEdiscoveryCaseSettings>`: ediscoveryCaseSettin
     - `[IsEnabled <Boolean?>]`: Indicates whether themes model is enabled for the case.
     - `[TopicCount <Int32?>]`: The total number of topics that the themes model will generate for a review set. To learn more, see Maximum number of themes.
 
-TAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag1\[]>: Returns a list of ediscoveryReviewTag objects associated to this case.
+TAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>: Returns a list of ediscoveryReviewTag objects associated to this case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
