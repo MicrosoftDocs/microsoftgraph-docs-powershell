@@ -3,7 +3,7 @@ title: "Get started with the Microsoft Graph PowerShell SDK"
 description: "Get started with the Microsoft Graph PowerShell SDK by using it perform some basic tasks."
 
 author: jasonjoh
-ms.topic: conceptual
+ms.topic: quickstart
 ms.date: 04/07/2022
 ms.author: jasonjoh
 ---
