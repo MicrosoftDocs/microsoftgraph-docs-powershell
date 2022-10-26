@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgTeamTemplate
 
 ## SYNOPSIS
-Get template from teams
+The template this team was created from.
+See available templates.
 
 ## SYNTAX
 
@@ -24,7 +25,8 @@ Get-MgTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get template from teams
+The template this team was created from.
+See available templates.
 
 ## EXAMPLES
 
@@ -129,6 +131,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

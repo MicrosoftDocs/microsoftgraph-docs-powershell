@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgExternalConnectionQuota
 
 ## SYNOPSIS
-Get quota from external
+Retrieve the properties and relationships of a connectionQuota object.
 
 ## SYNTAX
 
@@ -25,9 +25,27 @@ Get-MgExternalConnectionQuota -InputObject <ISearchIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get quota from external
+Retrieve the properties and relationships of a connectionQuota object.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgExternalConnectionQuota Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Search
+Get-MgExternalConnectionQuota -ExternalConnectionId $externalConnectionId
+```
+
+This example shows how to use the Get-MgExternalConnectionQuota Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgExternalConnectionQuota Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Search
+Get-MgExternalConnectionQuota -ExternalConnectionId $externalConnectionId -OutFile $outFileId
+```
+
+This example shows how to use the Get-MgExternalConnectionQuota Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -114,6 +132,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
+  - `[ExternalActivityId <String>]`: key: id of externalActivity
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
   - `[ExternalGroupId <String>]`: key: id of externalGroup
   - `[ExternalItemId <String>]`: key: id of externalItem

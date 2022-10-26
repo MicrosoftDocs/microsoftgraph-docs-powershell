@@ -8,7 +8,7 @@ schema: 2.0.0
 # Undo-MgUserChatMessageSoftDelete
 
 ## SYNOPSIS
-Invoke action undoSoftDelete
+Undo soft deletion of a single message or a message reply in a channel or a chat.
 
 ## SYNTAX
 
@@ -25,9 +25,18 @@ Undo-MgUserChatMessageSoftDelete -InputObject <IUsersActionsIdentity> [-PassThru
 ```
 
 ## DESCRIPTION
-Invoke action undoSoftDelete
+Undo soft deletion of a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
+
+### Example 1: Using the Undo-MgUserChatMessageSoftDelete Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+Undo-MgUserChatMessageSoftDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
+```
+
+This example shows how to use the Undo-MgUserChatMessageSoftDelete Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -194,6 +203,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

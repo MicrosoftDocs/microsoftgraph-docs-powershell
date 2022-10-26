@@ -8,7 +8,7 @@ schema: 2.0.0
 # Move-MgUserMailFolder
 
 ## SYNOPSIS
-Invoke action move
+Move a mailfolder and its contents to another mailfolder.
 
 ## SYNTAX
 
@@ -39,9 +39,22 @@ Move-MgUserMailFolder -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action move
+Move a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
+
+### Example 1: Using the Move-MgUserMailFolder Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	DestinationId = "destinationId-value"
+}
+# A UPN can also be used as -UserId.
+Move-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+```
+
+This example shows how to use the Move-MgUserMailFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -229,6 +242,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserChatLastMessagePreview
 
 ## SYNOPSIS
-Get lastMessagePreview from users
+Preview of the last message sent in the chat.
+Null if no messages have been sent in the chat.
+Currently, only the list chats operation supports this property.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Get-MgUserChatLastMessagePreview -InputObject <ITeamsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get lastMessagePreview from users
+Preview of the last message sent in the chat.
+Null if no messages have been sent in the chat.
+Currently, only the list chats operation supports this property.
 
 ## EXAMPLES
 
@@ -145,6 +149,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

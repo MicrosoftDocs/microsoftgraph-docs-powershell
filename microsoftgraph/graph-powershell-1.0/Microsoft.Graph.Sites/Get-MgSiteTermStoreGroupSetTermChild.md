@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteTermStoreGroupSetTermChild
 
 ## SYNOPSIS
-Get children from sites
+Children of current term.
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ Get-MgSiteTermStoreGroupSetTermChild -InputObject <ISitesIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get children from sites
+Children of current term.
 
 ## EXAMPLES
 

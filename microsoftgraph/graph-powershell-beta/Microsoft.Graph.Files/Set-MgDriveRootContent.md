@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDriveRootContent
 
 ## SYNOPSIS
-Update content for the navigation property root in drives
+The content stream, if the item represents a file.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Set-MgDriveRootContent -InputObject <IFilesIdentity> [-BodyParameter <Stream>] -
 ```
 
 ## DESCRIPTION
-Update content for the navigation property root in drives
+The content stream, if the item represents a file.
 
 ## EXAMPLES
 

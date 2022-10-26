@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgDirectoryRole
 
 ## SYNOPSIS
-Activate directoryRole
+Activate a directory role.
+To read a directory role or update its members, it must first be activated in the tenant.
+The Company Administrators and the implicit user directory roles (**User**, **Guest User**, and **Restricted Guest User** roles) are activated by default.
+To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
 ## SYNTAX
 
@@ -26,9 +29,24 @@ New-MgDirectoryRole -BodyParameter <IMicrosoftGraphDirectoryRole> [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Activate directoryRole
+Activate a directory role.
+To read a directory role or update its members, it must first be activated in the tenant.
+The Company Administrators and the implicit user directory roles (**User**, **Guest User**, and **Restricted Guest User** roles) are activated by default.
+To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgDirectoryRole Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	RoleTemplateId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
+}
+New-MgDirectoryRole -BodyParameter $params
+```
+
+This example shows how to use the New-MgDirectoryRole Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -249,7 +267,7 @@ BODYPARAMETER `<IMicrosoftGraphDirectoryRole>`: directoryRole
     - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
     - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
 
 MEMBERS <IMicrosoftGraphDirectoryObject\[]>: Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports $expand.
@@ -262,7 +280,7 @@ SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership\[]>: Members of this director
   - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
   - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS

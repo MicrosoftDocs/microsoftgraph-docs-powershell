@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgUserContactFolderContactExtension
 
 ## SYNOPSIS
-The collection of open extensions defined for the contact.
-Read-only.
-Nullable.
+Update the navigation property extensions in users
 
 ## SYNTAX
 
@@ -40,9 +38,7 @@ Update-MgUserContactFolderContactExtension -InputObject <IPersonalContactsIdenti
 ```
 
 ## DESCRIPTION
-The collection of open extensions defined for the contact.
-Read-only.
-Nullable.
+Update the navigation property extensions in users
 
 ## EXAMPLES
 
@@ -124,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String

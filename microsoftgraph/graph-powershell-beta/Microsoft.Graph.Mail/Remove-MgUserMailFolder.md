@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgUserMailFolder
 
 ## SYNOPSIS
-The user's mail folders.
-Read-only.
-Nullable.
+Delete navigation property mailFolders for users
 
 ## SYNTAX
 
@@ -27,11 +25,19 @@ Remove-MgUserMailFolder -InputObject <IMailIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-The user's mail folders.
-Read-only.
-Nullable.
+Delete navigation property mailFolders for users
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgUserMailFolder Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Mail
+# A UPN can also be used as -UserId.
+Remove-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
+```
+
+This example shows how to use the Remove-MgUserMailFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

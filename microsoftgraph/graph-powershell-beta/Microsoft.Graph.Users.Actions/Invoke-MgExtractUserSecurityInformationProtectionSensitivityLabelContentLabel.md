@@ -46,6 +46,52 @@ Invoke action extractContentLabel
 
 ## EXAMPLES
 
+### Example 1: Using the Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	ContentInfo = @{
+		Format = "default"
+		Identifier = "MyDoc.docx"
+		State = "rest"
+		Metadata = @(
+			@{
+				Name = "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_Enabled"
+				Value = "True"
+			}
+			@{
+				Name = "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_Method"
+				Value = "Standard"
+			}
+			@{
+				Name = "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_SetDate"
+				Value = "1/1/0001 12:00:00 AM"
+			}
+			@{
+				Name = "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_SiteId"
+				Value = "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
+			}
+			@{
+				Name = "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_Name"
+				Value = "LabelScopedToBob_Tests"
+			}
+			@{
+				Name = "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_ContentBits"
+				Value = "0"
+			}
+			@{
+				Name = "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_ActionId"
+				Value = "00000000-0000-0000-0000-000000000000"
+			}
+		)
+	}
+}
+Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -180,20 +226,20 @@ BODYPARAMETER `<IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentFormat <String>]`: 
-    - `[Identifier <String>]`: 
-    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: 
-      - `[Name <String>]`: 
-      - `[Value <String>]`: 
+    - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
+    - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
+    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+      - `[Name <String>]`: Name for this key-value pair.
+      - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
 
 CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentFormat <String>]`: 
-  - `[Identifier <String>]`: 
-  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: 
-    - `[Name <String>]`: 
-    - `[Value <String>]`: 
+  - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
+  - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
+  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+    - `[Name <String>]`: Name for this key-value pair.
+    - `[Value <String>]`: Value for this key-value pair.
   - `[State <String>]`: contentState
 
 INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
@@ -234,6 +280,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

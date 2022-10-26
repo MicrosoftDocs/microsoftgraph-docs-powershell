@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSearchQna
 
 ## SYNOPSIS
-Get qnas from search
+Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
 
 ## SYNTAX
 
@@ -31,9 +31,27 @@ Get-MgSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Get qnas from search
+Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgSearchQna Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Search
+Get-MgSearchQna -QnaId $qnaId
+```
+
+This example shows how to use the Get-MgSearchQna Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgSearchQna Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Search
+Get-MgSearchQna
+```
+
+This example shows how to use the Get-MgSearchQna Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -241,6 +259,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
+  - `[ExternalActivityId <String>]`: key: id of externalActivity
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
   - `[ExternalGroupId <String>]`: key: id of externalGroup
   - `[ExternalItemId <String>]`: key: id of externalItem

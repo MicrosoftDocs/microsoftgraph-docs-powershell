@@ -29,6 +29,15 @@ Delete navigation property timesOff for teams
 
 ## EXAMPLES
 
+### Example 1: Using the Remove-MgTeamScheduleTimeOff Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Remove-MgTeamScheduleTimeOff -TeamId $teamId -TimeOffId $timeOffId
+```
+
+This example shows how to use the Remove-MgTeamScheduleTimeOff Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -176,6 +185,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

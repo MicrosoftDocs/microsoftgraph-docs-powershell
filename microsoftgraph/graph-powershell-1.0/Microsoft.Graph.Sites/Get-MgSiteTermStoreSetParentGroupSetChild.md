@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteTermStoreSetParentGroupSetChild
 
 ## SYNOPSIS
-Get children from sites
+Children terms of set in term [store].
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ Get-MgSiteTermStoreSetParentGroupSetChild -InputObject <ISitesIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get children from sites
+Children terms of set in term [store].
 
 ## EXAMPLES
 

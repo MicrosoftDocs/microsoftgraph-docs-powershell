@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserCalendarPermission
 
 ## SYNOPSIS
-The permissions of the users with whom the calendar is shared.
+Delete navigation property calendarPermissions for users
 
 ## SYNTAX
 
@@ -37,9 +37,18 @@ Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-The permissions of the users with whom the calendar is shared.
+Delete navigation property calendarPermissions for users
 
 ## EXAMPLES
+
+### Example 1: Using the Remove-MgUserCalendarPermission Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+Remove-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
+```
+
+This example shows how to use the Remove-MgUserCalendarPermission Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -190,6 +199,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

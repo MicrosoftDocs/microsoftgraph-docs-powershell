@@ -8,7 +8,8 @@ schema: 2.0.0
 # Restore-MgUserDriveRootVersion
 
 ## SYNOPSIS
-Invoke action restoreVersion
+Restore a previous version of a DriveItem to be the current version.
+This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Restore-MgUserDriveRootVersion -InputObject <IUsersActionsIdentity> [-PassThru] 
 ```
 
 ## DESCRIPTION
-Invoke action restoreVersion
+Restore a previous version of a DriveItem to be the current version.
+This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
 ## EXAMPLES
 
@@ -194,6 +196,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

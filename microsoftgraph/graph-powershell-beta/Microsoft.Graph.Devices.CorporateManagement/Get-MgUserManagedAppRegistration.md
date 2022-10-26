@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedAppRegistration
 
 ## SYNOPSIS
-Get managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserManagedAppRegistration -InputObject <IDevicesCorporateManagementIdenti
 ```
 
 ## DESCRIPTION
-Get managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ## EXAMPLES
 
@@ -243,7 +243,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration1
 ## NOTES
 
 ALIASES

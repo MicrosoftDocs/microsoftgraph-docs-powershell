@@ -8,7 +8,7 @@ schema: 2.0.0
 # Publish-MgUserDriveListContentType
 
 ## SYNOPSIS
-Invoke action publish
+Publishes a [contentType][] present in the content type hub site.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Publish-MgUserDriveListContentType -InputObject <IUsersActionsIdentity> [-PassTh
 ```
 
 ## DESCRIPTION
-Invoke action publish
+Publishes a [contentType][] present in the content type hub site.
 
 ## EXAMPLES
 
@@ -194,6 +194,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

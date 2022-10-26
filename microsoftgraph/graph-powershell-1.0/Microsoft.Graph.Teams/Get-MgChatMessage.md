@@ -8,13 +8,15 @@ schema: 2.0.0
 # Get-MgChatMessage
 
 ## SYNOPSIS
-Get messages from chats
+A collection of all the messages in the chat.
+Nullable.
 
 ## SYNTAX
 
 ### Get3 (Default)
 ```
-Get-MgChatMessage [<CommonParameters>]
+Get-MgChatMessage [-Property <String[]>] [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### List1
@@ -37,9 +39,28 @@ Get-MgChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-Get messages from chats
+A collection of all the messages in the chat.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgChatMessage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChatMessage -ChatId $chatId -Top 2
+```
+
+This example shows how to use the Get-MgChatMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgChatMessage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChatMessage -ChatId $chatId -ChatMessageId $chatMessageId
+```
+
+This example shows how to use the Get-MgChatMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -88,6 +109,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Get3
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
@@ -124,7 +160,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: Get3, List1
 Aliases:
 
 Required: False
@@ -170,7 +206,7 @@ Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: List1, Get2, GetViaIdentity1
+Parameter Sets: (All)
 Aliases: Select
 
 Required: False
@@ -185,7 +221,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: Get3, List1
 Aliases:
 
 Required: False
@@ -200,7 +236,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: Get3, List1
 Aliases: OrderBy
 
 Required: False
@@ -215,7 +251,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: Get3, List1
 Aliases: Limit
 
 Required: False
@@ -230,7 +266,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: Get3, List1
 Aliases:
 
 Required: False
@@ -278,6 +314,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

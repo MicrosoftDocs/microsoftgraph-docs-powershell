@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgGroupTeamPrimaryChannelFileFolderContent
 
 ## SYNOPSIS
-Update content for the navigation property filesFolder in groups
+The content stream, if the item represents a file.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Set-MgGroupTeamPrimaryChannelFileFolderContent -InputObject <ITeamsIdentity> [-B
 ```
 
 ## DESCRIPTION
-Update content for the navigation property filesFolder in groups
+The content stream, if the item represents a file.
 
 ## EXAMPLES
 
@@ -179,6 +179,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

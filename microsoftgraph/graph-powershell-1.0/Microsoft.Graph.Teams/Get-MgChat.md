@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgChat
 
 ## SYNOPSIS
-Get entity from chats by key
+Retrieve a single chat (without its messages).
 
 ## SYNTAX
 
@@ -31,9 +31,45 @@ Get-MgChat -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-Get entity from chats by key
+Retrieve a single chat (without its messages).
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgChat Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChat -ChatId $chatId -ExpandProperty "members"
+```
+
+This example shows how to use the Get-MgChat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgChat Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChat -ChatId $chatId
+```
+
+This example shows how to use the Get-MgChat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgChat Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChat -ChatId $chatId
+```
+
+This example shows how to use the Get-MgChat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Using the Get-MgChat Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChat -Sort "lastMessagePreview/createdDateTime desc"
+```
+
+This example shows how to use the Get-MgChat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -257,6 +293,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

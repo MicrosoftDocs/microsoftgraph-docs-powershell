@@ -42,6 +42,26 @@ Nullable.
 
 ## EXAMPLES
 
+### Example 1: Using the Get-MgUserEventAttachment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+# A UPN can also be used as -UserId.
+Get-MgUserEventAttachment -UserId $userId -EventId $eventId
+```
+
+This example shows how to use the Get-MgUserEventAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgUserEventAttachment Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+# A UPN can also be used as -UserId.
+Get-MgUserEventAttachment -UserId $userId -EventId $eventId -AttachmentId $attachmentId
+```
+
+This example shows how to use the Get-MgUserEventAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All
@@ -266,6 +286,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgSoftTeamChannelMessageReplyDelete
 
 ## SYNOPSIS
-Invoke action softDelete
+Delete a single message or a message reply in a channel or a chat.
 
 ## SYNTAX
 
@@ -25,9 +25,18 @@ Invoke-MgSoftTeamChannelMessageReplyDelete -InputObject <ITeamsIdentity> [-PassT
 ```
 
 ## DESCRIPTION
-Invoke action softDelete
+Delete a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgSoftTeamChannelMessageReplyDelete Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Invoke-MgSoftTeamChannelMessageReplyDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
+```
+
+This example shows how to use the Invoke-MgSoftTeamChannelMessageReplyDelete Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -191,6 +200,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

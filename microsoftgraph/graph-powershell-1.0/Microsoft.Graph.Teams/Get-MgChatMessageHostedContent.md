@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgChatMessageHostedContent
 
 ## SYNOPSIS
-Get hostedContents from chats
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## SYNTAX
 
@@ -32,9 +32,27 @@ Get-MgChatMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get hostedContents from chats
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgChatMessageHostedContent Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId -ChatMessageHostedContentId $chatMessageHostedContentId
+```
+
+This example shows how to use the Get-MgChatMessageHostedContent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgChatMessageHostedContent Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
+```
+
+This example shows how to use the Get-MgChatMessageHostedContent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -288,6 +306,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

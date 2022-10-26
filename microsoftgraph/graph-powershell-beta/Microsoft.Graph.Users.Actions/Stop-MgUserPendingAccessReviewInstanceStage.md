@@ -8,7 +8,10 @@ schema: 2.0.0
 # Stop-MgUserPendingAccessReviewInstanceStage
 
 ## SYNOPSIS
-Invoke action stop
+Stop an access review stage that is `inProgress`.
+After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input.
+If there are subsequent stages that depend on the completed stage, the next stage will be created.
+The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
 ## SYNTAX
 
@@ -25,7 +28,10 @@ Stop-MgUserPendingAccessReviewInstanceStage -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action stop
+Stop an access review stage that is `inProgress`.
+After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input.
+If there are subsequent stages that depend on the completed stage, the next stage will be created.
+The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
 ## EXAMPLES
 
@@ -194,6 +200,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

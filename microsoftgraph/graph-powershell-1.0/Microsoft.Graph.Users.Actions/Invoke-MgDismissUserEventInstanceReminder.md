@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgDismissUserEventInstanceReminder
 
 ## SYNOPSIS
-Invoke action dismissReminder
+Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgDismissUserEventInstanceReminder -InputObject <IUsersActionsIdentity> [
 ```
 
 ## DESCRIPTION
-Invoke action dismissReminder
+Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## EXAMPLES
 
@@ -194,6 +194,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

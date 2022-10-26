@@ -52,6 +52,15 @@ The permissions of the users with whom the calendar is shared.
 
 ## EXAMPLES
 
+### Example 1: Using the Get-MgUserCalendarPermission Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+Get-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
+```
+
+This example shows how to use the Get-MgUserCalendarPermission Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All
@@ -261,6 +270,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedDeviceCategory
 
 ## SYNOPSIS
-Get deviceCategory from users
+Device category
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIdentit
 ```
 
 ## DESCRIPTION
-Get deviceCategory from users
+Device category
 
 ## EXAMPLES
 
@@ -115,7 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory2
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory
 ## NOTES
 
 ALIASES

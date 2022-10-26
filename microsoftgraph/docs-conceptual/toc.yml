@@ -22,23 +22,29 @@
       href: app-only.md
     - name: Manage access to resources
       href: tutorial-entitlement-management.md
-    - name: Assign Azure AD roles in PIM
-      href: tutorial-pim.md
-    - name: Query parameters
+    - name: Privilege Identity Management (PIM)
       items:
-        - name: Use query parameters
-          href: use-query-parameters.md   
+        - name: Assign Azure AD roles in PIM
+          href: tutorial-pim.md
+        - name: Manage PIM policies
+          href: how-to-manage-pim-policies.md
     - name: Grant API permissions
       items:
         - name: Manage delegated permissions
           href: tutorial-grant-delegated-api-permissions.md
         - name: Manage app roles
-          href: tutorial-grant-app-only-api-permissions.md                      
-- name: Migrate to Microsoft Graph PowerShell
+          href: tutorial-grant-app-only-api-permissions.md      
+    - name: Query parameters
+      items:
+        - name: Use query parameters
+          href: use-query-parameters.md                  
+- name: Upgrade to Microsoft Graph PowerShell
   items:   
-  - name: Migrate from Azure AD PowerShell
+  - name: Upgrade from Azure AD PowerShell
     href: migration-steps.md
   - name: Cmdlet map
     href: azuread-msoline-cmdlet-map.md
+- name: Troubleshoot common errors
+  href: troubleshooting.md    
 
   

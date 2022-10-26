@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgLicenseUser
 
 ## SYNOPSIS
-Invoke action reprocessLicenseAssignment
+Reprocess all group-based license assignments for the user.
+To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
+Also see Identify and resolve license assignment problems for a group in Azure Active Directory for more details.
 
 ## SYNTAX
 
@@ -23,9 +25,20 @@ Invoke-MgLicenseUser -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm] [
 ```
 
 ## DESCRIPTION
-Invoke action reprocessLicenseAssignment
+Reprocess all group-based license assignments for the user.
+To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
+Also see Identify and resolve license assignment problems for a group in Azure Active Directory for more details.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgLicenseUser Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+Invoke-MgLicenseUser -UserId $userId
+```
+
+This example shows how to use the Invoke-MgLicenseUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -147,6 +160,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

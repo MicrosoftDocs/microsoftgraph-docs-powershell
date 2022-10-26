@@ -8,7 +8,7 @@ schema: 2.0.0
 # Clear-MgUserPresenceUserPreferredPresence
 
 ## SYNOPSIS
-Invoke action clearUserPreferredPresence
+Clear the preferred availability and activity status for a user.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Clear-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity> [
 ```
 
 ## DESCRIPTION
-Invoke action clearUserPreferredPresence
+Clear the preferred availability and activity status for a user.
 
 ## EXAMPLES
 
@@ -164,6 +164,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

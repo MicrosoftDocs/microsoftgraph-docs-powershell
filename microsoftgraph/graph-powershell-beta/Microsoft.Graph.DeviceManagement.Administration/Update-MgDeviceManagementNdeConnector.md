@@ -15,8 +15,9 @@ Update the navigation property ndesConnectors in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementNdeConnector -NdesConnectorId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-LastConnectionDateTime <DateTime>] [-State <NdesConnectorState>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ConnectorVersion <String>] [-DisplayName <String>] [-EnrolledDateTime <DateTime>] [-Id <String>]
+ [-LastConnectionDateTime <DateTime>] [-MachineName <String>] [-RoleScopeTagIds <String[]>]
+ [-State <NdesConnectorState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -28,8 +29,9 @@ Update-MgDeviceManagementNdeConnector -NdesConnectorId <String> -BodyParameter <
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementNdeConnector -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-LastConnectionDateTime <DateTime>] [-State <NdesConnectorState>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-ConnectorVersion <String>] [-DisplayName <String>]
+ [-EnrolledDateTime <DateTime>] [-Id <String>] [-LastConnectionDateTime <DateTime>] [-MachineName <String>]
+ [-RoleScopeTagIds <String[]>] [-State <NdesConnectorState>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -77,6 +79,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ConnectorVersion
+The build version of the Ndes Connector.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 The friendly name of the Ndes Connector.
 
@@ -92,8 +109,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -EnrolledDateTime
+Timestamp when on-prem certificate connector was enrolled in Intune.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -138,6 +171,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MachineName
+Name of the machine running on-prem certificate connector service.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -NdesConnectorId
 key: id of ndesConnector
 
@@ -159,6 +207,21 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RoleScopeTagIds
+List of Scope Tags for this Entity instance.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -235,9 +298,13 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphNdesConnector>`: Entity which represents an OnPrem Ndes connector.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[ConnectorVersion <String>]`: The build version of the Ndes Connector.
   - `[DisplayName <String>]`: The friendly name of the Ndes Connector.
+  - `[EnrolledDateTime <DateTime?>]`: Timestamp when on-prem certificate connector was enrolled in Intune.
   - `[LastConnectionDateTime <DateTime?>]`: Last connection time for the Ndes Connector
+  - `[MachineName <String>]`: Name of the machine running on-prem certificate connector service.
+  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
   - `[State <NdesConnectorState?>]`: The current status of the Ndes Connector.
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
@@ -245,6 +312,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcExportJobId <String>]`: key: id of cloudPcExportJob
+  - `[CloudPcExternalPartnerSettingId <String>]`: key: id of cloudPcExternalPartnerSetting
   - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection

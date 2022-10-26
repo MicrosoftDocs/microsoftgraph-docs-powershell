@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgApplicationExtensionProperty
 
 ## SYNOPSIS
-Create new navigation property to extensionProperties for applications
+Create a new directory extension definition, represented by an extensionProperty object.
 
 ## SYNTAX
 
@@ -41,9 +41,25 @@ New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensionProperties for applications
+Create a new directory extension definition, represented by an extensionProperty object.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgApplicationExtensionProperty Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Applications
+$params = @{
+	Name = "jobGroup"
+	DataType = "String"
+	TargetObjects = @(
+		"User"
+	)
+}
+New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
+```
+
+This example shows how to use the New-MgApplicationExtensionProperty Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -194,6 +210,7 @@ Accept wildcard characters: False
 ### -Name
 Name of the extension property.
 Not nullable.
+Supports $filter (eq).
 
 ```yaml
 Type: String
@@ -281,7 +298,7 @@ BODYPARAMETER `<IMicrosoftGraphExtensionProperty>`: extensionProperty
   - `[AppDisplayName <String>]`: Display name of the application object on which this extension property is defined. Read-only.
   - `[DataType <String>]`: Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format. Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
   - `[IsSyncedFromOnPremises <Boolean?>]`: Indicates if this extension property was synced from on-premises active directory using Azure AD Connect. Read-only.
-  - `[Name <String>]`: Name of the extension property. Not nullable.
+  - `[Name <String>]`: Name of the extension property. Not nullable. Supports $filter (eq).
   - `[TargetObjects <String[]>]`: Following values are supported. Not nullable. UserGroupAdministrativeUnitApplicationDeviceOrganization
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter

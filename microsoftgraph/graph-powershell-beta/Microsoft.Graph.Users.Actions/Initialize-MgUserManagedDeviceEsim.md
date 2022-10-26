@@ -8,7 +8,7 @@ schema: 2.0.0
 # Initialize-MgUserManagedDeviceEsim
 
 ## SYNOPSIS
-Invoke action activateDeviceEsim
+Activate eSIM on the device.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Initialize-MgUserManagedDeviceEsim -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action activateDeviceEsim
+Activate eSIM on the device.
 
 ## EXAMPLES
 
@@ -245,6 +245,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgTeamworkDeviceSoftware
 
 ## SYNOPSIS
-Invoke action updateSoftware
+Update the software for a Microsoft Teams-enabled device.
+This API triggers a long-running operation.
 
 ## SYNTAX
 
@@ -39,9 +40,23 @@ Update-MgTeamworkDeviceSoftware -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action updateSoftware
+Update the software for a Microsoft Teams-enabled device.
+This API triggers a long-running operation.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgTeamworkDeviceSoftware Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	SoftwareType = "teamsClient"
+	SoftwareVersion = "1.0.96.22"
+}
+Update-MgTeamworkDeviceSoftware -TeamworkDeviceId $teamworkDeviceId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgTeamworkDeviceSoftware Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -227,6 +242,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

@@ -14,25 +14,26 @@ Invoke function getAllMessages
 
 ### Get (Default)
 ```
-Get-MgChatMessage [<CommonParameters>]
+Get-MgChatMessage [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### List
 ```
-Get-MgChatMessage -ChatId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+Get-MgChatMessage -ChatId <String> [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-ExpandProperty <String[]>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgChatMessage -ChatId <String> -ChatMessageId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgChatMessage -ChatId <String> -ChatMessageId <String> [-Property <String[]>] [-ExpandProperty <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgChatMessage -InputObject <ITeamsIdentity> [-Property <String[]>] [-ExpandProperty <String[]>]
  [<CommonParameters>]
 ```
 
@@ -40,6 +41,24 @@ Get-MgChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 Invoke function getAllMessages
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgChatMessage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChatMessage -ChatId $chatId -Top 2 -Sort "createdDateTime desc"
+```
+
+This example shows how to use the Get-MgChatMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgChatMessage Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgChatMessage -ChatId $chatId -ChatMessageId $chatMessageId
+```
+
+This example shows how to use the Get-MgChatMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -88,6 +107,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Get
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
@@ -124,7 +158,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get, List
 Aliases:
 
 Required: False
@@ -170,7 +204,7 @@ Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: List, Get1, GetViaIdentity
+Parameter Sets: (All)
 Aliases: Select
 
 Required: False
@@ -185,7 +219,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get, List
 Aliases:
 
 Required: False
@@ -200,7 +234,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: Get, List
 Aliases: OrderBy
 
 Required: False
@@ -215,7 +249,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get, List
 Aliases: Limit
 
 Required: False
@@ -230,7 +264,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get, List
 Aliases:
 
 Required: False
@@ -278,6 +312,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

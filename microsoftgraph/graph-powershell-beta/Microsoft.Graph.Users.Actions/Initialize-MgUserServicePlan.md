@@ -8,7 +8,7 @@ schema: 2.0.0
 # Initialize-MgUserServicePlan
 
 ## SYNOPSIS
-Invoke action activateServicePlan
+Activate a service plan with a given `servicePlanId` and `skuId` for a given user.
 
 ## SYNTAX
 
@@ -21,7 +21,7 @@ Initialize-MgUserServicePlan -UserId <String> [-AdditionalProperties <Hashtable>
 ### Activate
 ```
 Initialize-MgUserServicePlan -UserId <String>
- -BodyParameter <IPaths1T7Q69JUsersUserIdMicrosoftGraphActivateserviceplanPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents2P8K5LRequestbodiesActivateserviceplanrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,14 +34,28 @@ Initialize-MgUserServicePlan -InputObject <IUsersActionsIdentity> [-AdditionalPr
 ### ActivateViaIdentity
 ```
 Initialize-MgUserServicePlan -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1T7Q69JUsersUserIdMicrosoftGraphActivateserviceplanPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents2P8K5LRequestbodiesActivateserviceplanrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action activateServicePlan
+Activate a service plan with a given `servicePlanId` and `skuId` for a given user.
 
 ## EXAMPLES
+
+### Example 1: Using the Initialize-MgUserServicePlan Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	ServicePlanId = "28f42d6f-8034-4a0f-9d8a-a218a63b3299"
+	SkuId = "465a2a90-5e59-456d-a7b8-127b9fb2e484"
+}
+# A UPN can also be used as -UserId.
+Initialize-MgUserServicePlan -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Initialize-MgUserServicePlan Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1T7Q69JUsersUserIdMicrosoftGraphActivateserviceplanPostRequestbodyContentApplicationJsonSchema
+Type: IComponents2P8K5LRequestbodiesActivateserviceplanrequestbodyContentApplicationJsonSchema
 Parameter Sets: Activate, ActivateViaIdentity
 Aliases:
 
@@ -188,7 +202,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1T7Q69JUsersUserIdMicrosoftGraphActivateserviceplanPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IComponents2P8K5LRequestbodiesActivateserviceplanrequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
@@ -202,7 +216,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1T7Q69JUsersUserIdMicrosoftGraphActivateserviceplanPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER `<IComponents2P8K5LRequestbodiesActivateserviceplanrequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ServicePlanId <String>]`: 
   - `[SkuId <String>]`: 
@@ -245,6 +259,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

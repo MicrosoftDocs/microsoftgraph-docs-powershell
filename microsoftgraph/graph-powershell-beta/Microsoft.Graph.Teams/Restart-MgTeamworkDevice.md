@@ -8,7 +8,8 @@ schema: 2.0.0
 # Restart-MgTeamworkDevice
 
 ## SYNOPSIS
-Invoke action restart
+Restart the specified Microsoft Teams-enabled device asynchronously.
+A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.
 
 ## SYNTAX
 
@@ -23,9 +24,19 @@ Restart-MgTeamworkDevice -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-C
 ```
 
 ## DESCRIPTION
-Invoke action restart
+Restart the specified Microsoft Teams-enabled device asynchronously.
+A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.
 
 ## EXAMPLES
+
+### Example 1: Using the Restart-MgTeamworkDevice Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Restart-MgTeamworkDevice -TeamworkDeviceId $teamworkDeviceId
+```
+
+This example shows how to use the Restart-MgTeamworkDevice Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -144,6 +155,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

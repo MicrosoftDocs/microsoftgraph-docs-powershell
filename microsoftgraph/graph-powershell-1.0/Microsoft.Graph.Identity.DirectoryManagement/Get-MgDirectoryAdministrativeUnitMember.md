@@ -8,20 +8,31 @@ schema: 2.0.0
 # Get-MgDirectoryAdministrativeUnitMember
 
 ## SYNOPSIS
-Get members from directory
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## SYNTAX
 
 ```
 Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get members from directory
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgDirectoryAdministrativeUnitMember Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
+```
+
+This example shows how to use the Get-MgDirectoryAdministrativeUnitMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -45,6 +56,22 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ConsistencyLevel
+Indicates the requested consistency level.
+Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+
+```yaml
+Type: String
 Parameter Sets: (All)
 Aliases:
 

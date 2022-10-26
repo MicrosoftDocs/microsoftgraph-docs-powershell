@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamPermissionGrant
 
 ## SYNOPSIS
-Get permissionGrants from groups
+A collection of permissions granted to apps to access the team.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get permissionGrants from groups
+A collection of permissions granted to apps to access the team.
 
 ## EXAMPLES
 
@@ -273,6 +273,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

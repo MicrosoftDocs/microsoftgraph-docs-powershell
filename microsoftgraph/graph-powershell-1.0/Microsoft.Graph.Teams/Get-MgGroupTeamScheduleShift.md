@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamScheduleShift
 
 ## SYNOPSIS
-Get shifts from groups
+The shifts in the schedule.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-Property <String[]>
 ```
 
 ## DESCRIPTION
-Get shifts from groups
+The shifts in the schedule.
 
 ## EXAMPLES
 
@@ -256,6 +256,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

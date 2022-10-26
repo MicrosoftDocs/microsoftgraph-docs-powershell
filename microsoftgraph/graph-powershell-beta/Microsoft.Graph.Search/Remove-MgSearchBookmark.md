@@ -29,6 +29,15 @@ Delete navigation property bookmarks for search
 
 ## EXAMPLES
 
+### Example 1: Using the Remove-MgSearchBookmark Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Search
+Remove-MgSearchBookmark -BookmarkId $bookmarkId
+```
+
+This example shows how to use the Remove-MgSearchBookmark Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -BookmarkId
@@ -145,6 +154,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
+  - `[ExternalActivityId <String>]`: key: id of externalActivity
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
   - `[ExternalGroupId <String>]`: key: id of externalGroup
   - `[ExternalItemId <String>]`: key: id of externalItem

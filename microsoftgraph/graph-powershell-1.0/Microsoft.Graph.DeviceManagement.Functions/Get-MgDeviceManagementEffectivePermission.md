@@ -14,13 +14,14 @@ Retrieves the effective permissions of the currently authenticated user
 
 ### Get2 (Default)
 ```
-Get-MgDeviceManagementEffectivePermission -Scope <String> [<CommonParameters>]
+Get-MgDeviceManagementEffectivePermission -Scope <String> [-Count] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgDeviceManagementEffectivePermission -InputObject <IDeviceManagementFunctionsIdentity>
- [<CommonParameters>]
+Get-MgDeviceManagementEffectivePermission -InputObject <IDeviceManagementFunctionsIdentity> [-Count]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,6 +30,36 @@ Retrieves the effective permissions of the currently authenticated user
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -47,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Scope
-Usage: scope={scope}
+Usage: scope='{scope}'
 
 ```yaml
 Type: String
@@ -55,6 +86,51 @@ Parameter Sets: Get2
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -80,40 +156,32 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
-  - `[Category <String>]`: Usage: category={category}
+  - `[Category <String>]`: Usage: category='{category}'
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
-  - `[DeviceComplianceScriptDeviceStateId <String>]`: key: id of deviceComplianceScriptDeviceState
-  - `[DeviceComplianceScriptId <String>]`: key: id of deviceComplianceScript
-  - `[DeviceConfigurationGroupAssignmentId <String>]`: key: id of deviceConfigurationGroupAssignment
   - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
-  - `[DeviceCustomAttributeShellScriptId <String>]`: key: id of deviceCustomAttributeShellScript
-  - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
   - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
-  - `[DeviceManagementScriptDeviceStateId <String>]`: key: id of deviceManagementScriptDeviceState
-  - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript
-  - `[DeviceManagementScriptUserStateId <String>]`: key: id of deviceManagementScriptUserState
   - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
   - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
-  - `[DeviceShellScriptId <String>]`: key: id of deviceShellScript
-  - `[DomainName <String>]`: Usage: domainName={domainName}
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
   - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
-  - `[EnrollmentType <String>]`: Usage: enrollmentType={enrollmentType}
-  - `[ExpiringBeforeDateTime <String>]`: Usage: expiringBeforeDateTime={expiringBeforeDateTime}
+  - `[EnrollmentType <String>]`: Usage: enrollmentType='{enrollmentType}'
+  - `[ExpiringBeforeDateTime <String>]`: Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
+  - `[Ids <String[]>]`: Usage: ids={ids}
   - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[ManagementConditionId <String>]`: key: id of managementCondition
-  - `[ManagementConditionStatementId <String>]`: key: id of managementConditionStatement
-  - `[Platform <String>]`: Usage: platform={platform}
-  - `[PolicyId <String>]`: Usage: policyId={policyId}
-  - `[Resource <String>]`: Usage: resource={resource}
+  - `[Platform <DevicePlatformType?>]`: Usage: platform='{platform}'
+  - `[PolicyId <String>]`: Usage: policyId='{policyId}'
+  - `[Resource <String>]`: Usage: resource='{resource}'
   - `[ResourceOperationId <String>]`: key: id of resourceOperation
-  - `[Scope <String>]`: Usage: scope={scope}
-  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId={secretReferenceValueId}
-  - `[SummarizeBy <String>]`: Usage: summarizeBy={summarizeBy}
-  - `[TemplateId <String>]`: Usage: templateId={templateId}
-  - `[Userid <String>]`: Usage: userid={userid}
+  - `[Scope <String>]`: Usage: scope='{scope}'
+  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
+  - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
+  - `[SummarizeBy <String>]`: Usage: summarizeBy='{summarizeBy}'
+  - `[TemplateId <String>]`: Usage: templateId='{templateId}'
+  - `[Upn <String>]`: Usage: upn='{upn}'
+  - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS

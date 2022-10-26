@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Usage: tenantId='{tenantId}'
+Usage: tenantId='@tenantId'
 
 ```yaml
 Type: String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-Usage: userId='{userId}'
+Usage: userId='@userId'
 
 ```yaml
 Type: String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-Usage: userPrincipalName='{userPrincipalName}'
+Usage: userPrincipalName='@userPrincipalName'
 
 ```yaml
 Type: String
@@ -160,6 +160,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

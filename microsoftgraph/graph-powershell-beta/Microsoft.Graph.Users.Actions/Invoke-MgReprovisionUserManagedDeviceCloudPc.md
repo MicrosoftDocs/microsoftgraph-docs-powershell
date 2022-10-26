@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgReprovisionUserCloudPc
 
 ## SYNOPSIS
-Invoke action reprovision
+Reprovision a specific Cloud PC.
 
 ## SYNTAX
 
@@ -39,9 +39,19 @@ Invoke-MgReprovisionUserCloudPc -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action reprovision
+Reprovision a specific Cloud PC.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgReprovisionUserCloudPc Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+# A UPN can also be used as -UserId.
+Invoke-MgReprovisionUserCloudPc -UserId $userId -CloudPCId $cloudPCId
+```
+
+This example shows how to use the Invoke-MgReprovisionUserCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -260,6 +270,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

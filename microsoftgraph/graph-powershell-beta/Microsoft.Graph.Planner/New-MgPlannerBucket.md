@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerBucket
 
 ## SYNOPSIS
-Create new navigation property to buckets for planner
+Use this API to create a new **plannerBucket**.
 
 ## SYNTAX
 
@@ -24,9 +24,23 @@ New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket1> [-WhatIf] [-C
 ```
 
 ## DESCRIPTION
-Create new navigation property to buckets for planner
+Use this API to create a new **plannerBucket**.
 
 ## EXAMPLES
+
+### Example 1: Using the New-MgPlannerBucket Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Planner
+$params = @{
+	Name = "Advertising"
+	PlanId = "xqQg5FS2LkCp935s-FIFm2QAFkHM"
+	OrderHint = " !"
+}
+New-MgPlannerBucket -BodyParameter $params
+```
+
+This example shows how to use the New-MgPlannerBucket Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -242,6 +256,10 @@ BODYPARAMETER `<IMicrosoftGraphPlannerBucket1>`: plannerBucket
       - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Description <String>]`: Description of the task.
+      - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Content <String>]`: The content of the item.
+        - `[ContentType <String>]`: bodyType
       - `[PreviewType <String>]`: plannerPreviewType
       - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -307,6 +325,10 @@ TASKS <IMicrosoftGraphPlannerTask1\[]>: Read-only. Nullable. The collection of t
     - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Description of the task.
+    - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
     - `[PreviewType <String>]`: plannerPreviewType
     - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

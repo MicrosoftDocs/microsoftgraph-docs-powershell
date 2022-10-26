@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 
 ## SYNOPSIS
-Get assignments from deviceManagement
+The list of group assignments for the device configuration profile
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment -InputObject <IDev
 ```
 
 ## DESCRIPTION
-Get assignments from deviceManagement
+The list of group assignments for the device configuration profile
 
 ## EXAMPLES
 

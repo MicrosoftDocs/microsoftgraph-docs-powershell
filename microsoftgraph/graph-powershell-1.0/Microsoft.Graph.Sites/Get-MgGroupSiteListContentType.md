@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteListContentType
 
 ## SYNOPSIS
-Get contentTypes from groups
+The collection of content types present in this list.
 
 ## SYNTAX
 
@@ -19,20 +19,20 @@ Get-MgGroupSiteListContentType -GroupId <String> -ListId <String> -SiteId <Strin
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgGroupSiteListContentType -ContentTypeId <String> -GroupId <String> -ListId <String> -SiteId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgGroupSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get contentTypes from groups
+The collection of content types present in this list.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -119,7 +119,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -135,7 +135,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -150,7 +150,7 @@ key: id of list
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -210,7 +210,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True

@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Color
-.
+The color that the UI should display for the label, if configured.
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentFormats
-.
+Returns the supported content formats for the label.
 
 ```yaml
 Type: String[]
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+The admin-defined description for the label.
 
 ```yaml
 Type: String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -HasProtection
-.
+Indicates whether the label has protection actions configured.
 
 ```yaml
 Type: SwitchParameter
@@ -141,7 +141,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -172,7 +173,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsActive
-.
+Indicates whether the label is active or not.
+Active labels should be hidden or disabled in the UI.
 
 ```yaml
 Type: SwitchParameter
@@ -187,7 +189,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsAppliable
-.
+Indicates whether the label can be applied to content.
+False if the label is a parent with child labels.
 
 ```yaml
 Type: SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+The plaintext name of the label.
 
 ```yaml
 Type: String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sensitivity
-.
+The sensitivity value of the label, where lower is less sensitive.
 
 ```yaml
 Type: Int32
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tooltip
-.
+The tooltip that should be displayed for the label in a UI.
 
 ```yaml
 Type: String
@@ -344,17 +347,17 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[Color <String>]`: 
-  - `[ContentFormats <String[]>]`: 
-  - `[Description <String>]`: 
-  - `[HasProtection <Boolean?>]`: 
-  - `[IsActive <Boolean?>]`: 
-  - `[IsAppliable <Boolean?>]`: 
-  - `[Name <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Color <String>]`: The color that the UI should display for the label, if configured.
+  - `[ContentFormats <String[]>]`: Returns the supported content formats for the label.
+  - `[Description <String>]`: The admin-defined description for the label.
+  - `[HasProtection <Boolean?>]`: Indicates whether the label has protection actions configured.
+  - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in the UI.
+  - `[IsAppliable <Boolean?>]`: Indicates whether the label can be applied to content. False if the label is a parent with child labels.
+  - `[Name <String>]`: The plaintext name of the label.
   - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
-  - `[Sensitivity <Int32?>]`: 
-  - `[Tooltip <String>]`: 
+  - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+  - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
@@ -402,16 +405,16 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 PARENT `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[Color <String>]`: 
-  - `[ContentFormats <String[]>]`: 
-  - `[Description <String>]`: 
-  - `[HasProtection <Boolean?>]`: 
-  - `[IsActive <Boolean?>]`: 
-  - `[IsAppliable <Boolean?>]`: 
-  - `[Name <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Color <String>]`: The color that the UI should display for the label, if configured.
+  - `[ContentFormats <String[]>]`: Returns the supported content formats for the label.
+  - `[Description <String>]`: The admin-defined description for the label.
+  - `[HasProtection <Boolean?>]`: Indicates whether the label has protection actions configured.
+  - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in the UI.
+  - `[IsAppliable <Boolean?>]`: Indicates whether the label can be applied to content. False if the label is a parent with child labels.
+  - `[Name <String>]`: The plaintext name of the label.
   - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
-  - `[Sensitivity <Int32?>]`: 
-  - `[Tooltip <String>]`: 
+  - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+  - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS

@@ -19,9 +19,9 @@ New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  [-AutoPilotProfileAssigned] [-AutoPilotRegistered] [-AzureAdDeviceId <String>] [-AzureAdJoinType <String>]
  [-AzureAdRegistered] [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>]
  [-CloudProvisioningScore <Double>] [-CompliancePolicySetToIntune] [-DeviceId <String>] [-DeviceName <String>]
- [-HealthStatus <String>] [-Id <String>] [-IsCloudManagedGatewayEnabled] [-ManagedBy <String>]
- [-Manufacturer <String>] [-Model <String>] [-OSCheckFailed] [-OSDescription <String>] [-OSVersion <String>]
- [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-IsCloudManagedGatewayEnabled]
+ [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>] [-OSCheckFailed] [-OSDescription <String>]
+ [-OSVersion <String>] [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
  [-ProcessorCoreCountCheckFailed] [-ProcessorFamilyCheckFailed] [-ProcessorSpeedCheckFailed] [-RamCheckFailed]
  [-SecureBootCheckFailed] [-SerialNumber <String>] [-StorageCheckFailed] [-TenantAttached] [-TpmCheckFailed]
  [-UpgradeEligibility <OperatingSystemUpgradeEligibility>] [-WindowsScore <Double>]
@@ -42,10 +42,10 @@ New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-AutoPilotProfileAssigned]
  [-AutoPilotRegistered] [-AzureAdDeviceId <String>] [-AzureAdJoinType <String>] [-AzureAdRegistered]
  [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>] [-CloudProvisioningScore <Double>]
- [-CompliancePolicySetToIntune] [-DeviceId <String>] [-DeviceName <String>] [-HealthStatus <String>]
- [-Id <String>] [-IsCloudManagedGatewayEnabled] [-ManagedBy <String>] [-Manufacturer <String>]
- [-Model <String>] [-OSCheckFailed] [-OSDescription <String>] [-OSVersion <String>]
- [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
+ [-CompliancePolicySetToIntune] [-DeviceId <String>] [-DeviceName <String>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-IsCloudManagedGatewayEnabled]
+ [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>] [-OSCheckFailed] [-OSDescription <String>]
+ [-OSVersion <String>] [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
  [-ProcessorCoreCountCheckFailed] [-ProcessorFamilyCheckFailed] [-ProcessorSpeedCheckFailed] [-RamCheckFailed]
  [-SecureBootCheckFailed] [-SerialNumber <String>] [-StorageCheckFailed] [-TenantAttached] [-TpmCheckFailed]
  [-UpgradeEligibility <OperatingSystemUpgradeEligibility>] [-WindowsScore <Double>]
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 userExperienceAnalyticsHealthState
 
 ```yaml
-Type: String
+Type: UserExperienceAnalyticsHealthState
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -282,7 +282,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -711,7 +712,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice>`: The user experience analytics Device for work from anywhere report
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AutoPilotProfileAssigned <Boolean?>]`: The user experience analytics work from anywhere intune device's autopilotProfileAssigned.
   - `[AutoPilotRegistered <Boolean?>]`: The user experience work from anywhere intune device's autopilotRegistered.
   - `[AzureAdDeviceId <String>]`: The user experience work from anywhere azure Ad device Id.
@@ -723,7 +724,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice>`: 
   - `[CompliancePolicySetToIntune <Boolean?>]`: The user experience work from anywhere device's compliancePolicySetToIntune.
   - `[DeviceId <String>]`: The user experience work from anywhere device Id.
   - `[DeviceName <String>]`: The work from anywhere device's name.
-  - `[HealthStatus <String>]`: userExperienceAnalyticsHealthState
+  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
   - `[IsCloudManagedGatewayEnabled <Boolean?>]`: The user experience work from anywhere device's Cloud Management Gateway for Configuration Manager is enabled.
   - `[ManagedBy <String>]`: The user experience work from anywhere management agent of the device.
   - `[Manufacturer <String>]`: The user experience work from anywhere device's manufacturer.
@@ -834,6 +835,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
   - `[SettingStateDeviceSummaryId <String>]`: key: id of settingStateDeviceSummary
+  - `[UserExperienceAnalyticsAnomalyDeviceId <String>]`: key: id of userExperienceAnalyticsAnomalyDevice
+  - `[UserExperienceAnalyticsAnomalyId <String>]`: key: id of userExperienceAnalyticsAnomaly
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersion

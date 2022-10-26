@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgMarkChatReadForUser
 
 ## SYNOPSIS
-Invoke action markChatReadForUser
+Mark a chat as read for a user.
 
 ## SYNTAX
 
@@ -40,9 +40,24 @@ Invoke-MgMarkChatReadForUser -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action markChatReadForUser
+Mark a chat as read for a user.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgMarkChatReadForUser Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	User = @{
+		Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
+	}
+	TenantId = "2a690434-97d9-4eed-83a6-f5f13600199a"
+}
+Invoke-MgMarkChatReadForUser -ChatId $chatId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgMarkChatReadForUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -233,6 +248,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

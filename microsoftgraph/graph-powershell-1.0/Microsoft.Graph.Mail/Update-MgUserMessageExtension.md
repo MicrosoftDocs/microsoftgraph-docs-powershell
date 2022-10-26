@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgUserMessageExtension
 
 ## SYNOPSIS
-The collection of open extensions defined for the message.
-Nullable.
+Update the navigation property extensions in users
 
 ## SYNTAX
 
@@ -38,8 +37,7 @@ Update-MgUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hasht
 ```
 
 ## DESCRIPTION
-The collection of open extensions defined for the message.
-Nullable.
+Update the navigation property extensions in users
 
 ## EXAMPLES
 
@@ -91,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String

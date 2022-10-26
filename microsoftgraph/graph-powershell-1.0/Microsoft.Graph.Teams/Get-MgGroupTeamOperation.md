@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamOperation
 
 ## SYNOPSIS
-Get operations from groups
+The async operations that ran or are running on this team.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgGroupTeamOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get operations from groups
+The async operations that ran or are running on this team.
 
 ## EXAMPLES
 
@@ -273,6 +273,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

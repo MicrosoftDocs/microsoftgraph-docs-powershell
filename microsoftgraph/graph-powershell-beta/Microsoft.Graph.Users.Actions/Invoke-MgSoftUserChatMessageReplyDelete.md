@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgSoftUserChatMessageReplyDelete
 
 ## SYNOPSIS
-Invoke action softDelete
+Delete a single message or a message reply in a channel or a chat.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgSoftUserChatMessageReplyDelete -InputObject <IUsersActionsIdentity> [-P
 ```
 
 ## DESCRIPTION
-Invoke action softDelete
+Delete a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
 
@@ -209,6 +209,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

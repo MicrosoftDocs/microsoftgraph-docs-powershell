@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgClockTeamScheduleTimeCardIn
 
 ## SYNOPSIS
-Invoke action clockIn
+Clock in to start a timeCard.
 
 ## SYNTAX
 
@@ -40,9 +40,25 @@ Invoke-MgClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action clockIn
+Clock in to start a timeCard.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgClockTeamScheduleTimeCardIn Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	AtAprovedLocation = $true
+	Notes = @{
+		ContentType = "text"
+		Content = "clock in notes"
+	}
+}
+Invoke-MgClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgClockTeamScheduleTimeCardIn Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -233,6 +249,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

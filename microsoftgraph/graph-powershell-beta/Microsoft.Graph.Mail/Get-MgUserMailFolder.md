@@ -20,12 +20,12 @@ Get-MgUserMailFolder -UserId <String> [-Property <String[]>] [-Filter <String>] 
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgUserMailFolder -MailFolderId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgUserMailFolder -InputObject <IMailIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
@@ -36,6 +36,36 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserMailFolder Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Mail
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
+```
+
+This example shows how to use the Get-MgUserMailFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgUserMailFolder Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Mail
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolder -UserId $userId
+```
+
+This example shows how to use the Get-MgUserMailFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Get-MgUserMailFolder Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Mail
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
+```
+
+This example shows how to use the Get-MgUserMailFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -91,7 +121,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IMailIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -106,7 +136,7 @@ key: id of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -181,7 +211,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True

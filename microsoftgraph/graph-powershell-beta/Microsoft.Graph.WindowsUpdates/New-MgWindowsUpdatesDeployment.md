@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgWindowsUpdatesDeployment
 
 ## SYNOPSIS
-Create new navigation property to deployments for admin
+Create a new deployment object.
 
 ## SYNTAX
 
@@ -28,16 +28,38 @@ New-MgWindowsUpdatesDeployment -BodyParameter <IMicrosoftGraphWindowsUpdatesDepl
 ```
 
 ## DESCRIPTION
-Create new navigation property to deployments for admin
+Create a new deployment object.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
+	Content = @{
+		"@odata.type" = "microsoft.graph.windowsUpdates.featureUpdateReference"
+		Version = "20H2"
+	}
+	Settings = @{
+		"@odata.type" = "microsoft.graph.windowsUpdates.windowsDeploymentSettings"
+		Rollout = @{
+			DevicesPerOffer = 100
+		}
+		Monitoring = @{
+			MonitoringRules = @(
+				@{
+					"@odata.type" = "#microsoft.graph.windowsUpdates.monitoringRule"
+					Signal = "rollback"
+					Threshold = 5
+					Action = "pauseDeployment"
+				}
+			)
+		}
+	}
+}
+New-MgWindowsUpdatesDeployment -BodyParameter $params
+```
 
 ## PARAMETERS
 
@@ -121,7 +143,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: String

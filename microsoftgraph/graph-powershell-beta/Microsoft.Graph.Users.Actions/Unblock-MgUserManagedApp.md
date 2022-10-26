@@ -8,7 +8,7 @@ schema: 2.0.0
 # Unblock-MgUserManagedApp
 
 ## SYNOPSIS
-Invoke action unblockManagedApps
+Unblocks the managed app user from app check-in.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Unblock-MgUserManagedApp -InputObject <IUsersActionsIdentity> [-PassThru] [-What
 ```
 
 ## DESCRIPTION
-Invoke action unblockManagedApps
+Unblocks the managed app user from app check-in.
 
 ## EXAMPLES
 
@@ -163,6 +163,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgCreateOrGetUserOnlineMeeting
 
 ## SYNOPSIS
-Invoke action createOrGet
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## SYNTAX
 
@@ -43,9 +44,70 @@ Invoke-MgCreateOrGetUserOnlineMeeting -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action createOrGet
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## EXAMPLES
+
+### Example 1: Using the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	StartDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
+	EndDateTime = [System.DateTime]::Parse("2020-02-06T02:19:21.3524945+00:00")
+	Subject = "Create a meeting with customId provided"
+	ExternalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56"
+	Participants = @{
+		Attendees = @(
+			@{
+				Identity = @{
+					User = @{
+						Id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
+					}
+				}
+				Role = "presenter"
+				Upn = "test1@contoso.com"
+			}
+		)
+	}
+}
+# A UPN can also be used as -UserId.
+Invoke-MgCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+	ChatInfo = @{
+		ThreadId = "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2"
+	}
+	StartDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
+	EndDateTime = [System.DateTime]::Parse("2020-02-06T02:19:21.3524945+00:00")
+	ExternalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56"
+	Participants = @{
+		Attendees = @(
+			@{
+				Identity = @{
+					User = @{
+						Id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
+					}
+				}
+				Upn = "test1@contoso.com"
+			}
+		)
+	}
+	Subject = "Create a meeting with customId provided"
+}
+# A UPN can also be used as -UserId.
+Invoke-MgCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -257,7 +319,7 @@ BODYPARAMETER `<IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetP
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+    - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
     - `[ReplyChainMessageId <String>]`: The ID of the reply message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[EndDateTime <DateTime?>]`: 
@@ -269,7 +331,7 @@ BODYPARAMETER `<IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetP
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
@@ -283,7 +345,7 @@ BODYPARAMETER `<IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetP
 
 CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
+  - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
@@ -325,6 +387,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription
@@ -341,7 +404,7 @@ PARTICIPANTS `<IMicrosoftGraphMeetingParticipants>`: meetingParticipants
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity

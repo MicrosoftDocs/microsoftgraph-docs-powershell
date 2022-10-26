@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyB2CAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Update the navigation property b2cAuthenticationMethodsPolicy in policies
+Update the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Update-MgPolicyB2CAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphB2CA
 ```
 
 ## DESCRIPTION
-Update the navigation property b2cAuthenticationMethodsPolicy in policies
+Update the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 b2cAuthenticationMethodsPolicy
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphB2CAuthenticationMethodsPolicy
@@ -64,6 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
+The unique idenfier for an entity.
 Read-only.
 
 ```yaml
@@ -189,7 +190,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphB2CAuthenticationMethodsPolicy>`: b2cAuthenticationMethodsPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[IsEmailPasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using email if the email and password authentication method is enabled.
   - `[IsPhoneOneTimePasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.
   - `[IsUserNameAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using username if the username and password authentication method is enabled.

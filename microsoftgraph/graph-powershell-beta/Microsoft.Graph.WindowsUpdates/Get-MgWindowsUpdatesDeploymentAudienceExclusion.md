@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgWindowsUpdatesDeploymentAudienceExclusion
 
 ## SYNOPSIS
-Get exclusions from admin
+Specifies the assets to exclude from the audience.
 
 ## SYNTAX
 
@@ -32,16 +32,15 @@ Get-MgWindowsUpdatesDeploymentAudienceExclusion -InputObject <IWindowsUpdatesIde
 ```
 
 ## DESCRIPTION
-Get exclusions from admin
+Specifies the assets to exclude from the audience.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesDeploymentAudienceExclusion -DeploymentId $deploymentId
+```
 
 ## PARAMETERS
 

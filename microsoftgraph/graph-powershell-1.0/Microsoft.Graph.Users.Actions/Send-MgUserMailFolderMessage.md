@@ -8,7 +8,10 @@ schema: 2.0.0
 # Send-MgUserMailFolderMessage
 
 ## SYNOPSIS
-Invoke action send
+Send an existing draft message.
+The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
+This method saves the message in the **Sent Items** folder.
+Alternatively, send a new message in a single operation.
 
 ## SYNTAX
 
@@ -25,7 +28,10 @@ Send-MgUserMailFolderMessage -InputObject <IUsersActionsIdentity> [-PassThru] [-
 ```
 
 ## DESCRIPTION
-Invoke action send
+Send an existing draft message.
+The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
+This method saves the message in the **Sent Items** folder.
+Alternatively, send a new message in a single operation.
 
 ## EXAMPLES
 
@@ -194,6 +200,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

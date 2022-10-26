@@ -8,7 +8,7 @@ schema: 2.0.0
 # Move-MgUserMailFolderChildFolder
 
 ## SYNOPSIS
-Invoke action move
+Move a mailfolder and its contents to another mailfolder.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Move-MgUserMailFolderChildFolder -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action move
+Move a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
 
@@ -244,6 +244,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

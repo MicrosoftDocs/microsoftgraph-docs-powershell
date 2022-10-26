@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgAdministrativeUnit
 
 ## SYNOPSIS
-Create administrativeUnit
+Use this API to create a new administrativeUnit.
 
 ## SYNTAX
 
@@ -28,20 +28,25 @@ New-MgAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit1> [-W
 ```
 
 ## DESCRIPTION
-Create administrativeUnit
+Use this API to create a new administrativeUnit.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Using the New-MgAdministrativeUnit Cmdlet
 ```powershell
-New-MgDirectoryAdministrativeUnit -DisplayName 'Test Unit'
-
-DeletedDateTime Id                                   Description DisplayName Visibility
---------------- --                                   ----------- ----------- ----------
-                416f19a5-2e01-4d15-a78c-d9028fee1ebb             Test Unit
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+$params = @{
+	DisplayName = "Seattle District Technical Schools"
+	Description = "Seattle district technical schools administration"
+	MembershipType = "Dynamic"
+	MembershipRule = "(user.country -eq "United States")"
+	MembershipRuleProcessingState = "On"
+}
+New-MgAdministrativeUnit -BodyParameter $params
 ```
 
-This example creates a new administrative unit.
+This example shows how to use the New-MgAdministrativeUnit Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -206,8 +211,8 @@ Accept wildcard characters: False
 
 ### -Visibility
 Controls whether the administrative unit and its members are hidden or public.
-Can be set to HiddenMembership.
-If not set (value is null), the default behavior is public.
+Can be set to HiddenMembership or Public.
+If not set, the default behavior is Public.
 When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
 ```yaml
@@ -289,9 +294,9 @@ BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit1>`: administrativeUnit
     - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
     - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
-  - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership. If not set (value is null), the default behavior is public. When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
+  - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership or Public. If not set, the default behavior is Public. When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
 EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for this administrative unit. Nullable.
   - `[Id <String>]`: 
@@ -306,7 +311,7 @@ SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership\[]>: Scoped-role members 
   - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
   - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS

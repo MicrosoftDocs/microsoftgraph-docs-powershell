@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDriveBundleContent
 
 ## SYNOPSIS
-Update content for the navigation property bundles in drives
+The content stream, if the item represents a file.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Set-MgDriveBundleContent -InputObject <IFilesIdentity> [-BodyParameter <Stream>]
 ```
 
 ## DESCRIPTION
-Update content for the navigation property bundles in drives
+The content stream, if the item represents a file.
 
 ## EXAMPLES
 

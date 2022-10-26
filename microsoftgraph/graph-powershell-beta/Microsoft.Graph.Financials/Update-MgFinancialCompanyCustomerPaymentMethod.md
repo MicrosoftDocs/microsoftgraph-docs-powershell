@@ -14,27 +14,27 @@ Update the navigation property paymentMethod in financials
 
 ### UpdateExpanded (Default)
 ```
-Update-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerId <String>
+Update-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerPaymentId <String>
  [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
 ```
-Update-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerPaymentId <String>
+Update-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerId <String>
  [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerPaymentId <String>
+Update-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerId <String>
  -BodyParameter <IMicrosoftGraphPaymentMethod> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerId <String>
+Update-MgFinancialCompanyCustomerPaymentMethod -CompanyId <String> -CustomerPaymentId <String>
  -BodyParameter <IMicrosoftGraphPaymentMethod> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -137,7 +137,7 @@ key: id of customer
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -152,7 +152,7 @@ key: id of customerPayment
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -290,7 +290,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphPaymentMethod>`: paymentMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 

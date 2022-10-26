@@ -80,7 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -95,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDowngradeJustificationRequired
-.
+Exposes whether justification input is required on label downgrade.
 
 ```yaml
 Type: SwitchParameter
@@ -110,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMandatory
-.
+Exposes whether mandatory labeling is enabled.
 
 ```yaml
 Type: SwitchParameter
@@ -125,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoreInfoUrl
-.
+Exposes the more information URL that can be configured by the administrator.
 
 ```yaml
 Type: String
@@ -205,10 +206,10 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphSecurityInformationProtectionPolicySetting>`: informationProtectionPolicySetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DefaultLabelId <String>]`: 
-  - `[IsDowngradeJustificationRequired <Boolean?>]`: 
-  - `[IsMandatory <Boolean?>]`: 
-  - `[MoreInfoUrl <String>]`: 
+  - `[IsDowngradeJustificationRequired <Boolean?>]`: Exposes whether justification input is required on label downgrade.
+  - `[IsMandatory <Boolean?>]`: Exposes whether mandatory labeling is enabled.
+  - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
 
 ## RELATED LINKS

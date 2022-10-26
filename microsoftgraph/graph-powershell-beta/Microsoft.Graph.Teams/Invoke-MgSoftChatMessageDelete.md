@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgSoftChatMessageDelete
 
 ## SYNOPSIS
-Invoke action softDelete
+Delete a single message or a message reply in a channel or a chat.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgSoftChatMessageDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatI
 ```
 
 ## DESCRIPTION
-Invoke action softDelete
+Delete a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
 
@@ -161,6 +161,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

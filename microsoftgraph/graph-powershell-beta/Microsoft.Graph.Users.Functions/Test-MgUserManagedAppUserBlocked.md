@@ -8,7 +8,7 @@ schema: 2.0.0
 # Test-MgUserManagedAppUserBlocked
 
 ## SYNOPSIS
-Invoke function isManagedAppUserBlocked
+Gets the blocked state of a managed app user.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Test-MgUserManagedAppUserBlocked -InputObject <IUsersFunctionsIdentity> [<Common
 ```
 
 ## DESCRIPTION
-Invoke function isManagedAppUserBlocked
+Gets the blocked state of a managed app user.
 
 ## EXAMPLES
 
@@ -104,6 +104,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[OnenotePageId <String>]`: key: id of onenotePage
   - `[Q <String>]`: Usage: q='{q}'
   - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
+  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
   - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
   - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'
@@ -111,6 +112,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[Token <String>]`: Usage: token='{token}'
   - `[Top <Int32?>]`: Usage: top={top}
+  - `[Upn <String>]`: Usage: upn='{upn}'
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 

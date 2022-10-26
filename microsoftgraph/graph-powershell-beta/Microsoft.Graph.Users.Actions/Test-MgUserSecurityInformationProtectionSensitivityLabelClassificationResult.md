@@ -196,30 +196,30 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IPaths12Nib3JUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClassificationResults <IMicrosoftGraphSecurityClassificationResult[]>]`: 
-    - `[ConfidenceLevel <Int32?>]`: 
-    - `[Count <Int32?>]`: 
-    - `[SensitiveTypeId <String>]`: 
+    - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
+    - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
+    - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
   - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentFormat <String>]`: 
-    - `[Identifier <String>]`: 
-    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: 
-      - `[Name <String>]`: 
-      - `[Value <String>]`: 
+    - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
+    - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
+    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+      - `[Name <String>]`: Name for this key-value pair.
+      - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
 
 CLASSIFICATIONRESULTS <IMicrosoftGraphSecurityClassificationResult\[]>: .
-  - `[ConfidenceLevel <Int32?>]`: 
-  - `[Count <Int32?>]`: 
-  - `[SensitiveTypeId <String>]`: 
+  - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
+  - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
+  - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
 
 CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentFormat <String>]`: 
-  - `[Identifier <String>]`: 
-  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: 
-    - `[Name <String>]`: 
-    - `[Value <String>]`: 
+  - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
+  - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
+  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+    - `[Name <String>]`: Name for this key-value pair.
+    - `[Value <String>]`: Value for this key-value pair.
   - `[State <String>]`: contentState
 
 INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
@@ -260,6 +260,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

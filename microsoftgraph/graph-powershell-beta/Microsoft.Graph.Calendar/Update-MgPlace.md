@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgPlace
 
 ## SYNOPSIS
-Update entity in places
+Update the properties of place object, which can be a room, workspace, or roomList.
+You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
 
 ## SYNTAX
 
@@ -41,9 +42,72 @@ Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphP
 ```
 
 ## DESCRIPTION
-Update entity in places
+Update the properties of place object, which can be a room, workspace, or roomList.
+You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
 
 ## EXAMPLES
+
+### Example 1: Using the Update-MgPlace Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	"@odata.type" = "microsoft.graph.room"
+	Nickname = "Conf Room"
+	Building = "1"
+	Label = "100"
+	Capacity = 
+	IsWheelChairAccessible = $false
+}
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgPlace Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Update-MgPlace Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	"@odata.type" = "microsoft.graph.roomList"
+	DisplayName = "Building 1"
+	Phone = "555-555-0100"
+	Address = @{
+		Street = "4567 Main Street"
+		City = "Buffalo"
+		State = "NY"
+		PostalCode = "98052"
+		CountryOrRegion = "USA"
+	}
+	GeoCoordinates = @{
+		Altitude = $null
+		Latitude = 47
+		Longitude = -122
+		Accuracy = $null
+		AltitudeAccuracy = $null
+	}
+}
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgPlace Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Using the Update-MgPlace Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+$params = @{
+	"@odata.type" = "microsoft.graph.workspace"
+	Nickname = "Conf Room"
+	Building = "1"
+	Label = "100"
+	Capacity = 
+	IsWheelChairAccessible = $false
+}
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgPlace Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -126,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -261,9 +325,9 @@ ADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphPlace1>`: place
+BODYPARAMETER `<IMicrosoftGraphPlace>`: place
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -298,6 +362,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[CalendarPermissionId <String>]`: key: id of calendarPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
+  - `[EventId2 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

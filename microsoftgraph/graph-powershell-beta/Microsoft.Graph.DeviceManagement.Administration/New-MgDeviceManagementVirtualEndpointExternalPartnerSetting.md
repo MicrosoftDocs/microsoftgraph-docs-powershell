@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementVirtualEndpointExternalPartnerSetting
 
 ## SYNOPSIS
-Create new navigation property to externalPartnerSettings for deviceManagement
+Create a new cloudPcExternalPartnerSetting object.
 
 ## SYNTAX
 
@@ -26,16 +26,23 @@ New-MgDeviceManagementVirtualEndpointExternalPartnerSetting
 ```
 
 ## DESCRIPTION
-Create new navigation property to externalPartnerSettings for deviceManagement
+Create a new cloudPcExternalPartnerSetting object.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: Using the New-MgDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
 ```powershell
-PS C:\> {{ Add example code here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudPcExternalPartnerSetting"
+	PartnerId = "198d7140-80bb-4843-8cc4-811377a49a92"
+	EnableConnection = $true
+}
+New-MgDeviceManagementVirtualEndpointExternalPartnerSetting -BodyParameter $params
 ```
 
-{{ Add example description here }}
+This example shows how to use the New-MgDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -83,13 +90,14 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -206,9 +214,21 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcExternalPartnerSetting
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER `<IMicrosoftGraphCloudPcExternalPartnerSetting>`: cloudPcExternalPartnerSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[EnableConnection <Boolean?>]`: Enable or disable the connection to an external partner. If true, an external partner API will accept incoming calls from external partners. Required. Supports $filter (eq).
+  - `[LastSyncDateTime <DateTime?>]`: Last data sync time for this external partner. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
+  - `[PartnerId <String>]`: The external partner ID.
+  - `[Status <String>]`: cloudPcExternalPartnerStatus
+  - `[StatusDetails <String>]`: Status details message.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointexternalpartnersetting](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointexternalpartnersetting)
-

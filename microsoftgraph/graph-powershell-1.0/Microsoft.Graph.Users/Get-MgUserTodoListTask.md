@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserTodoListTask
 
 ## SYNOPSIS
-Get tasks from users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,9 +34,31 @@ Get-MgUserTodoListTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get tasks from users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgUserTodoListTask Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+# A UPN can also be used as -UserId.
+Get-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId
+```
+
+This example shows how to use the Get-MgUserTodoListTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgUserTodoListTask Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+# A UPN can also be used as -UserId.
+Get-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId
+```
+
+This example shows how to use the Get-MgUserTodoListTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -258,7 +282,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTask1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTask
 ## NOTES
 
 ALIASES

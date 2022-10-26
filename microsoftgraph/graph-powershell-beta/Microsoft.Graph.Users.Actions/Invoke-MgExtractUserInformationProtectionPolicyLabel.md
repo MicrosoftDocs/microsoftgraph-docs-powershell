@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgExtractUserInformationProtectionPolicyLabel
 
 ## SYNOPSIS
-Invoke action extractLabel
+Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
+The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## SYNTAX
 
@@ -40,7 +41,8 @@ Invoke-MgExtractUserInformationProtectionPolicyLabel -InputObject <IUsersActions
 ```
 
 ## DESCRIPTION
-Invoke action extractLabel
+Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
+The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## EXAMPLES
 
@@ -232,6 +234,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

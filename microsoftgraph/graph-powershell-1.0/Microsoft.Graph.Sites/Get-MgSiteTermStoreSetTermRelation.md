@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteTermStoreSetTermRelation
 
 ## SYNOPSIS
-Get relations from sites
+To indicate which terms are related to the current term as either pinned or reused.
 
 ## SYNTAX
 
@@ -19,26 +19,26 @@ Get-MgSiteTermStoreSetTermRelation -SetId <String> -SiteId <String> -TermId <Str
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
-```
-Get-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
- -StoreId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### Get
+### Get2
 ```
 Get-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
+### Get
+```
+Get-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -StoreId <String>
+ -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
 ### List
 ```
-Get-MgSiteTermStoreSetTermRelation -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
+Get-MgSiteTermStoreSetTermRelation -SetId <String> -SiteId <String> -StoreId <String> -TermId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity2
 ```
 Get-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -51,7 +51,7 @@ Get-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get relations from sites
+To indicate which terms are related to the current term as either pinned or reused.
 
 ## EXAMPLES
 
@@ -124,7 +124,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity
 Aliases:
 
 Required: True
@@ -169,7 +169,7 @@ key: id of relation
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get2, Get
 Aliases:
 
 Required: True
@@ -199,7 +199,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get1, Get, List
+Parameter Sets: List2, Get2, Get, List
 Aliases:
 
 Required: True
@@ -214,7 +214,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get1, Get, List
+Parameter Sets: List2, Get2, Get, List
 Aliases:
 
 Required: True
@@ -244,7 +244,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: Get1, List
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -259,7 +259,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get1, Get, List
+Parameter Sets: List2, Get2, Get, List
 Aliases:
 
 Required: True

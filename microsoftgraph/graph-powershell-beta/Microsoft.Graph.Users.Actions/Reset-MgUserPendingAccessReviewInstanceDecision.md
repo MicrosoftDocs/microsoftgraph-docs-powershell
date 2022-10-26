@@ -8,7 +8,7 @@ schema: 2.0.0
 # Reset-MgUserPendingAccessReviewInstanceDecision
 
 ## SYNOPSIS
-Invoke action resetDecisions
+Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Reset-MgUserPendingAccessReviewInstanceDecision -InputObject <IUsersActionsIdent
 ```
 
 ## DESCRIPTION
-Invoke action resetDecisions
+Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
 
 ## EXAMPLES
 
@@ -179,6 +179,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: key: id of outlookTask
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionId <String>]`: key: id of permission
+  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SubscriptionId <String>]`: key: id of subscription

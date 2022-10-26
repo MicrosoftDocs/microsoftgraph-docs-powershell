@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkDevice
 
 ## SYNOPSIS
-Get devices from teamwork
+The Teams devices provisioned for the tenant.
 
 ## SYNTAX
 
@@ -32,9 +32,27 @@ Get-MgTeamworkDevice -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get devices from teamwork
+The Teams devices provisioned for the tenant.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgTeamworkDevice Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamworkDevice -TeamworkDeviceId $teamworkDeviceId
+```
+
+This example shows how to use the Get-MgTeamworkDevice Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgTeamworkDevice Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Get-MgTeamworkDevice
+```
+
+This example shows how to use the Get-MgTeamworkDevice Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -258,6 +276,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

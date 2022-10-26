@@ -8,26 +8,41 @@ schema: 2.0.0
 # Complete-MgTeamChannelMigration
 
 ## SYNOPSIS
-Invoke action completeMigration
+Complete the message migration process by removing `migration mode` from a channel in a team.
+`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a **completeMigration** request is made, you cannot import additional messages into the team.
+You can add members to the team after the request returns a successful response.
 
 ## SYNTAX
 
-### Complete (Default)
+### Complete1 (Default)
 ```
 Complete-MgTeamChannelMigration -ChannelId <String> -TeamId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CompleteViaIdentity
+### CompleteViaIdentity1
 ```
 Complete-MgTeamChannelMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action completeMigration
+Complete the message migration process by removing `migration mode` from a channel in a team.
+`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a **completeMigration** request is made, you cannot import additional messages into the team.
+You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
+
+### Example 1: Using the Complete-MgTeamChannelMigration Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Teams
+Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+```
+
+This example shows how to use the Complete-MgTeamChannelMigration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -36,7 +51,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Complete
+Parameter Sets: Complete1
 Aliases:
 
 Required: True
@@ -52,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CompleteViaIdentity
+Parameter Sets: CompleteViaIdentity1
 Aliases:
 
 Required: True
@@ -82,7 +97,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: Complete
+Parameter Sets: Complete1
 Aliases:
 
 Required: True
@@ -161,6 +176,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ShiftId <String>]`: key: id of shift
   - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
   - `[TeamId <String>]`: key: id of team
+  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: key: id of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
   - `[TeamsAppId <String>]`: key: id of teamsApp
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation

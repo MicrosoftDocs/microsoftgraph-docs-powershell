@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRoleScopeTag
 
 ## SYNOPSIS
-Get roleScopeTags from deviceManagement
+The Role Scope Tags.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementRoleScopeTag -InputObject <IDeviceManagementAdministration
 ```
 
 ## DESCRIPTION
-Get roleScopeTags from deviceManagement
+The Role Scope Tags.
 
 ## EXAMPLES
 
@@ -243,6 +243,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcExportJobId <String>]`: key: id of cloudPcExportJob
+  - `[CloudPcExternalPartnerSettingId <String>]`: key: id of cloudPcExternalPartnerSetting
   - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection

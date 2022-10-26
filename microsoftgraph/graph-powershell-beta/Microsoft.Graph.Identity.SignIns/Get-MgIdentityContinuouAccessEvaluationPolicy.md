@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityContinuouAccessEvaluationPolicy
 
 ## SYNOPSIS
-Get continuousAccessEvaluationPolicy from identity
+Read the properties and relationships of a continuousAccessEvaluationPolicy object.
 
 ## SYNTAX
 
@@ -18,16 +18,18 @@ Get-MgIdentityContinuouAccessEvaluationPolicy [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get continuousAccessEvaluationPolicy from identity
+Read the properties and relationships of a continuousAccessEvaluationPolicy object.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: Using the Get-MgIdentityContinuouAccessEvaluationPolicy Cmdlet
 ```powershell
-PS C:\> {{ Add example code here }}
+Import-Module Microsoft.Graph.Identity.SignIns
+Get-MgIdentityContinuouAccessEvaluationPolicy
 ```
 
-{{ Add example description here }}
+This example shows how to use the Get-MgIdentityContinuouAccessEvaluationPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -70,9 +72,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContinuousAccessEvaluationPolicy
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentitycontinuouaccessevaluationpolicy](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentitycontinuouaccessevaluationpolicy)
-

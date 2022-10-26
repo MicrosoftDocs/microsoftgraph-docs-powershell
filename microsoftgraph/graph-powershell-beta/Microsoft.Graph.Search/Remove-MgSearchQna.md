@@ -28,6 +28,15 @@ Delete navigation property qnas for search
 
 ## EXAMPLES
 
+### Example 1: Using the Remove-MgSearchQna Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Search
+Remove-MgSearchQna -QnaId $qnaId
+```
+
+This example shows how to use the Remove-MgSearchQna Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -144,6 +153,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
   - `[BookmarkId <String>]`: key: id of bookmark
   - `[ConnectionOperationId <String>]`: key: id of connectionOperation
+  - `[ExternalActivityId <String>]`: key: id of externalActivity
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
   - `[ExternalGroupId <String>]`: key: id of externalGroup
   - `[ExternalItemId <String>]`: key: id of externalItem

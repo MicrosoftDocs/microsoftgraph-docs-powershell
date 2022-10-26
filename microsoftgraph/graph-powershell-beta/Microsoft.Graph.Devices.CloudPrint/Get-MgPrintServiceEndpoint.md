@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgPrintServiceEndpoint
 
 ## SYNOPSIS
-Get endpoints from print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,9 +34,29 @@ Get-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get endpoints from print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgPrintServiceEndpoint Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Devices.CloudPrint
+Get-MgPrintServiceEndpoint -PrintServiceId $printServiceId
+```
+
+This example shows how to use the Get-MgPrintServiceEndpoint Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Get-MgPrintServiceEndpoint Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Devices.CloudPrint
+Get-MgPrintServiceEndpoint -PrintServiceId $printServiceId -PrintServiceEndpointId $printServiceEndpointId
+```
+
+This example shows how to use the Get-MgPrintServiceEndpoint Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -243,7 +265,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint
 ## NOTES
 
 ALIASES

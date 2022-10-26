@@ -42,6 +42,19 @@ Update the navigation property masterCategories in users
 
 ## EXAMPLES
 
+### Example 1: Using the Update-MgUserOutlookMasterCategory Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users
+$params = @{
+	Color = "preset15"
+}
+# A UPN can also be used as -UserId.
+Update-MgUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId -BodyParameter $params
+```
+
+This example shows how to use the Update-MgUserOutlookMasterCategory Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -108,7 +121,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -235,7 +249,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphOutlookCategory>`: outlookCategory
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Color <String>]`: categoryColor
   - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
 

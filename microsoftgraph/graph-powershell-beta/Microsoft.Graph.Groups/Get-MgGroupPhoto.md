@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupPhoto
 
 ## SYNOPSIS
-Get photo from groups
+The group's profile photo.
 
 ## SYNTAX
 
@@ -39,9 +39,18 @@ Get-MgGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [<CommonP
 ```
 
 ## DESCRIPTION
-Get photo from groups
+The group's profile photo.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgGroupPhoto Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Groups
+Get-MgGroupPhoto -GroupId $groupId
+```
+
+This example shows how to use the Get-MgGroupPhoto Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

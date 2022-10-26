@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgUserContactFolderContactExtension
 
 ## SYNOPSIS
-The collection of open extensions defined for the contact.
-Read-only.
-Nullable.
+Create new navigation property to extensions for users
 
 ## SYNTAX
 
@@ -39,9 +37,7 @@ New-MgUserContactFolderContactExtension -InputObject <IPersonalContactsIdentity>
 ```
 
 ## DESCRIPTION
-The collection of open extensions defined for the contact.
-Read-only.
-Nullable.
+Create new navigation property to extensions for users
 
 ## EXAMPLES
 
@@ -108,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String

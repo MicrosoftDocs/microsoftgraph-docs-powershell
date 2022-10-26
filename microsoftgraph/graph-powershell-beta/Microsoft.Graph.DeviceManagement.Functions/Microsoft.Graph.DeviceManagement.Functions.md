@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-Module Guid: 9629ac08-4760-467d-851c-bc52336edb94
+Module Guid: 3c3aee24-7939-4a4c-9699-982a8996886a
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -59,6 +59,9 @@ Invoke function getNonCompliantSettings
 ### [Get-MgDeviceManagementComanagedDeviceOemWarranty](Get-MgDeviceManagementComanagedDeviceOemWarranty.md)
 Invoke function getOemWarranty
 
+### [Get-MgDeviceManagementComanagedDeviceRemoteHelpSession](Get-MgDeviceManagementComanagedDeviceRemoteHelpSession.md)
+Invoke function retrieveRemoteHelpSession
+
 ### [Get-MgDeviceManagementComanagedDeviceSummary](Get-MgDeviceManagementComanagedDeviceSummary.md)
 Invoke function getComanagedDevicesSummary
 
@@ -107,6 +110,15 @@ Invoke function getNonCompliantSettings
 ### [Get-MgDeviceManagementManagedDeviceOemWarranty](Get-MgDeviceManagementManagedDeviceOemWarranty.md)
 Invoke function getOemWarranty
 
+### [Get-MgDeviceManagementManagedDeviceRemoteHelpSession](Get-MgDeviceManagementManagedDeviceRemoteHelpSession.md)
+Invoke function retrieveRemoteHelpSession
+
+### [Get-MgDeviceManagementMonitoringAlertRecordPortalNotification](Get-MgDeviceManagementMonitoringAlertRecordPortalNotification.md)
+Invoke function getPortalNotifications
+
+### [Get-MgDeviceManagementOrganizationalMessageTenantConsent](Get-MgDeviceManagementOrganizationalMessageTenantConsent.md)
+Invoke function getOrganizationalMessageTenantConsent
+
 ### [Get-MgDeviceManagementResourceOperationScopeForUser](Get-MgDeviceManagementResourceOperationScopeForUser.md)
 Invoke function getScopesForUser
 
@@ -125,6 +137,9 @@ Invoke function getState
 ### [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType.md)
 Invoke function getAuditActivityTypes
 
+### [Get-MgDeviceManagementVirtualEndpointCloudPcConnectivityHistory](Get-MgDeviceManagementVirtualEndpointCloudPcConnectivityHistory.md)
+Invoke function getCloudPcConnectivityHistory
+
 ### [Get-MgDeviceManagementVirtualEndpointCloudPcLaunchInfo](Get-MgDeviceManagementVirtualEndpointCloudPcLaunchInfo.md)
 Invoke function getCloudPcLaunchInfo
 
@@ -134,11 +149,23 @@ Invoke function getSourceImages
 ### [Get-MgDeviceManagementVirtualEndpointEffectivePermission](Get-MgDeviceManagementVirtualEndpointEffectivePermission.md)
 Invoke function getEffectivePermissions
 
+### [Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency](Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency.md)
+Invoke function getRealTimeRemoteConnectionLatency
+
+### [Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus](Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus.md)
+Invoke function getRealTimeRemoteConnectionStatus
+
 ### [Get-MgDeviceManagementVirtualEndpointSnapshotStorageAccount](Get-MgDeviceManagementVirtualEndpointSnapshotStorageAccount.md)
 Invoke function getStorageAccounts
 
 ### [Get-MgDeviceManagementVirtualEndpointSnapshotSubscription](Get-MgDeviceManagementVirtualEndpointSnapshotSubscription.md)
 Invoke function getSubscriptions
+
+### [Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic](Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic.md)
+Invoke function appDiagnostics
+
+### [Invoke-MgAppDeviceManagementManagedDeviceDiagnostic](Invoke-MgAppDeviceManagementManagedDeviceDiagnostic.md)
+Invoke function appDiagnostics
 
 ### [Invoke-MgCustomDeviceManagementRoleScopeTag](Invoke-MgCustomDeviceManagementRoleScopeTag.md)
 Invoke function hasCustomRoleScopeTag
