@@ -15,13 +15,13 @@ You can add members to the team after the request returns a successful response.
 
 ## SYNTAX
 
-### Complete (Default)
+### Complete1 (Default)
 ```
 Complete-MgTeamChannelMigration -ChannelId <String> -TeamId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CompleteViaIdentity
+### CompleteViaIdentity1
 ```
 Complete-MgTeamChannelMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -51,7 +51,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Complete
+Parameter Sets: Complete1
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CompleteViaIdentity
+Parameter Sets: CompleteViaIdentity1
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: Complete
+Parameter Sets: Complete1
 Aliases:
 
 Required: True

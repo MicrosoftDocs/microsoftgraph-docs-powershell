@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Mail
-Module Guid: b01858fb-e2e9-4f44-b411-be81afe2e044
+Module Guid: c9a69a65-d2c7-4fc7-b808-1383435929fb
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail
 Help Version: 1.0.0.0
 Locale: en-US
@@ -179,9 +179,6 @@ Create new navigation property to multiValueExtendedProperties for users
 ### [New-MgUserMailFolderChildFolderSingleValueExtendedProperty](New-MgUserMailFolderChildFolderSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for users
 
-### [New-MgUserMailFolderChildFolderUserConfiguration](New-MgUserMailFolderChildFolderUserConfiguration.md)
-Create new navigation property to userConfigurations for users
-
 ### [New-MgUserMailFolderMessage](New-MgUserMailFolderMessage.md)
 Use this API to create a new Message in a mailfolder.
 
@@ -213,9 +210,6 @@ Create new navigation property to multiValueExtendedProperties for users
 ### [New-MgUserMailFolderSingleValueExtendedProperty](New-MgUserMailFolderSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for users
 
-### [New-MgUserMailFolderUserConfiguration](New-MgUserMailFolderUserConfiguration.md)
-Create new navigation property to userConfigurations for users
-
 ### [New-MgUserMessage](New-MgUserMessage.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
@@ -240,9 +234,6 @@ Create new navigation property to multiValueExtendedProperties for users
 
 ### [New-MgUserMessageSingleValueExtendedProperty](New-MgUserMessageSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for users
-
-### [Remove-MgUserInferenceClassification](Remove-MgUserInferenceClassification.md)
-Delete navigation property inferenceClassification for users
 
 ### [Remove-MgUserInferenceClassificationOverride](Remove-MgUserInferenceClassificationOverride.md)
 Delete navigation property overrides for users
@@ -280,9 +271,6 @@ Delete navigation property multiValueExtendedProperties for users
 ### [Remove-MgUserMailFolderChildFolderSingleValueExtendedProperty](Remove-MgUserMailFolderChildFolderSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for users
 
-### [Remove-MgUserMailFolderChildFolderUserConfiguration](Remove-MgUserMailFolderChildFolderUserConfiguration.md)
-Delete navigation property userConfigurations for users
-
 ### [Remove-MgUserMailFolderMessage](Remove-MgUserMailFolderMessage.md)
 Delete navigation property messages for users
 
@@ -309,9 +297,6 @@ Delete navigation property multiValueExtendedProperties for users
 
 ### [Remove-MgUserMailFolderSingleValueExtendedProperty](Remove-MgUserMailFolderSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for users
-
-### [Remove-MgUserMailFolderUserConfiguration](Remove-MgUserMailFolderUserConfiguration.md)
-Delete navigation property userConfigurations for users
 
 ### [Remove-MgUserMessage](Remove-MgUserMessage.md)
 Delete navigation property messages for users
@@ -355,14 +340,8 @@ Update the navigation property childFolders in users
 ### [Update-MgUserMailFolderChildFolderMessage](Update-MgUserMailFolderChildFolderMessage.md)
 Update the navigation property messages in users
 
-### [Update-MgUserMailFolderChildFolderMessageAttachment](Update-MgUserMailFolderChildFolderMessageAttachment.md)
-Update the navigation property attachments in users
-
 ### [Update-MgUserMailFolderChildFolderMessageExtension](Update-MgUserMailFolderChildFolderMessageExtension.md)
 Update the navigation property extensions in users
-
-### [Update-MgUserMailFolderChildFolderMessageMention](Update-MgUserMailFolderChildFolderMessageMention.md)
-Update the navigation property mentions in users
 
 ### [Update-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty](Update-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty.md)
 Update the navigation property multiValueExtendedProperties in users
@@ -379,20 +358,11 @@ Update the navigation property multiValueExtendedProperties in users
 ### [Update-MgUserMailFolderChildFolderSingleValueExtendedProperty](Update-MgUserMailFolderChildFolderSingleValueExtendedProperty.md)
 Update the navigation property singleValueExtendedProperties in users
 
-### [Update-MgUserMailFolderChildFolderUserConfiguration](Update-MgUserMailFolderChildFolderUserConfiguration.md)
-Update the navigation property userConfigurations in users
-
 ### [Update-MgUserMailFolderMessage](Update-MgUserMailFolderMessage.md)
 Update the navigation property messages in users
 
-### [Update-MgUserMailFolderMessageAttachment](Update-MgUserMailFolderMessageAttachment.md)
-Update the navigation property attachments in users
-
 ### [Update-MgUserMailFolderMessageExtension](Update-MgUserMailFolderMessageExtension.md)
 Update the navigation property extensions in users
-
-### [Update-MgUserMailFolderMessageMention](Update-MgUserMailFolderMessageMention.md)
-Update the navigation property mentions in users
 
 ### [Update-MgUserMailFolderMessageMultiValueExtendedProperty](Update-MgUserMailFolderMessageMultiValueExtendedProperty.md)
 Update the navigation property multiValueExtendedProperties in users
@@ -409,20 +379,11 @@ Update the navigation property multiValueExtendedProperties in users
 ### [Update-MgUserMailFolderSingleValueExtendedProperty](Update-MgUserMailFolderSingleValueExtendedProperty.md)
 Update the navigation property singleValueExtendedProperties in users
 
-### [Update-MgUserMailFolderUserConfiguration](Update-MgUserMailFolderUserConfiguration.md)
-Update the navigation property userConfigurations in users
-
 ### [Update-MgUserMessage](Update-MgUserMessage.md)
 Update the navigation property messages in users
 
-### [Update-MgUserMessageAttachment](Update-MgUserMessageAttachment.md)
-Update the navigation property attachments in users
-
 ### [Update-MgUserMessageExtension](Update-MgUserMessageExtension.md)
 Update the navigation property extensions in users
-
-### [Update-MgUserMessageMention](Update-MgUserMessageMention.md)
-Update the navigation property mentions in users
 
 ### [Update-MgUserMessageMultiValueExtendedProperty](Update-MgUserMessageMultiValueExtendedProperty.md)
 Update the navigation property multiValueExtendedProperties in users

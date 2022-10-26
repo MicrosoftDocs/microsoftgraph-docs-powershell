@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: 2652ee97-6188-41f9-929b-ce5741c03257
+Module Guid: c593fdca-3b9b-4c0b-884b-d345e82befac
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
 Help Version: 1.0.0.0
 Locale: en-US
@@ -30,9 +30,6 @@ Get directoryProvisioning from auditLogs
 
 ### [Get-MgAuditLogProvisioning](Get-MgAuditLogProvisioning.md)
 Get provisioning from auditLogs
-
-### [Get-MgAuditLogRestrictedSignIn](Get-MgAuditLogRestrictedSignIn.md)
-Get restrictedSignIns from auditLogs
 
 ### [Get-MgAuditLogSignIn](Get-MgAuditLogSignIn.md)
 Get signIns from auditLogs
@@ -72,15 +69,6 @@ Invoke function getAzureADApplicationSignInSummary
 
 ### [Get-MgReportAzureAdApplicationSign](Get-MgReportAzureAdApplicationSign.md)
 Invoke function getAzureADApplicationSignInSummary
-
-### [Get-MgReportAzureAdFeatureUsage](Get-MgReportAzureAdFeatureUsage.md)
-Invoke function getAzureADFeatureUsage
-
-### [Get-MgReportAzureAdLicenseUsage](Get-MgReportAzureAdLicenseUsage.md)
-Invoke function getAzureADLicenseUsage
-
-### [Get-MgReportAzureAdUserFeatureUsage](Get-MgReportAzureAdUserFeatureUsage.md)
-Invoke function getAzureADUserFeatureUsage
 
 ### [Get-MgReportBrowserDistributionUserCount](Get-MgReportBrowserDistributionUserCount.md)
 Invoke function getBrowserDistributionUserCounts

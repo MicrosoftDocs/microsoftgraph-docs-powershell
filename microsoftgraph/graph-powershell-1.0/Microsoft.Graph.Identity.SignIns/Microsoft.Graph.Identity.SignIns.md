@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 0b6305b1-1dc2-424b-945e-e0a661309148
+Module Guid: 0294463d-935c-421b-9930-4307d03e9fb9
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -57,6 +57,11 @@ Invoke function getOrder
 
 ### [Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute](Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute.md)
 The user attribute that you want to add to your user flow.
+
+### [Get-MgIdentityConditionalAccessAuthenticationContextClassReference](Get-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
+Read-only.
+Nullable.
+Returns a collection of the specified authentication context class references.
 
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
 Read-only.
@@ -359,6 +364,9 @@ Create new navigation property to overridesPages for identity
 ### [New-MgIdentityB2XUserFlowUserAttributeAssignment](New-MgIdentityB2XUserFlowUserAttributeAssignment.md)
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
 
+### [New-MgIdentityConditionalAccessAuthenticationContextClassReference](New-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
+Create new navigation property to authenticationContextClassReferences for identity
+
 ### [New-MgIdentityConditionalAccessNamedLocation](New-MgIdentityConditionalAccessNamedLocation.md)
 Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
@@ -373,9 +381,6 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 
 ### [New-MgIdentityUserFlowAttribute](New-MgIdentityUserFlowAttribute.md)
 Create a new identityUserFlowAttribute object.
-
-### [New-MgInformationProtectionBitlockerRecoveryKey](New-MgInformationProtectionBitlockerRecoveryKey.md)
-Create new navigation property to recoveryKeys for informationProtection
 
 ### [New-MgInformationProtectionThreatAssessmentRequest](New-MgInformationProtectionThreatAssessmentRequest.md)
 Create a new threat assessment request.
@@ -523,6 +528,9 @@ Delete navigation property overridesPages for identity
 
 ### [Remove-MgIdentityB2XUserFlowUserAttributeAssignment](Remove-MgIdentityB2XUserFlowUserAttributeAssignment.md)
 Delete navigation property userAttributeAssignments for identity
+
+### [Remove-MgIdentityConditionalAccessAuthenticationContextClassReference](Remove-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
+Delete navigation property authenticationContextClassReferences for identity
 
 ### [Remove-MgIdentityConditionalAccessNamedLocation](Remove-MgIdentityConditionalAccessNamedLocation.md)
 Delete navigation property namedLocations for identity
@@ -715,6 +723,9 @@ Update the navigation property overridesPages in identity
 ### [Update-MgIdentityB2XUserFlowUserAttributeAssignment](Update-MgIdentityB2XUserFlowUserAttributeAssignment.md)
 Update the navigation property userAttributeAssignments in identity
 
+### [Update-MgIdentityConditionalAccessAuthenticationContextClassReference](Update-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
+Update the navigation property authenticationContextClassReferences in identity
+
 ### [Update-MgIdentityConditionalAccessNamedLocation](Update-MgIdentityConditionalAccessNamedLocation.md)
 Update the navigation property namedLocations in identity
 
@@ -842,9 +853,6 @@ Update the navigation property phoneMethods in users
 
 ### [Update-MgUserAuthenticationSoftwareOathMethod](Update-MgUserAuthenticationSoftwareOathMethod.md)
 Update the navigation property softwareOathMethods in users
-
-### [Update-MgUserAuthenticationTemporaryAccessPassMethod](Update-MgUserAuthenticationTemporaryAccessPassMethod.md)
-Update the navigation property temporaryAccessPassMethods in users
 
 ### [Update-MgUserAuthenticationWindowHelloForBusinessMethod](Update-MgUserAuthenticationWindowHelloForBusinessMethod.md)
 Update the navigation property windowsHelloForBusinessMethods in users

@@ -14,7 +14,7 @@ Update the navigation property paymentTerm in financials
 
 ### UpdateExpanded (Default)
 ```
-Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String>
+Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
  [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos] [-Code <String>]
  [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
  [-DueDateCalculation <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf]
@@ -23,7 +23,7 @@ Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <St
 
 ### UpdateExpanded1
 ```
-Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
+Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String>
  [-AdditionalProperties <Hashtable>] [-CalculateDiscountOnCreditMemos] [-Code <String>]
  [-DiscountDateCalculation <String>] [-DiscountPercent <Decimal>] [-DisplayName <String>]
  [-DueDateCalculation <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf]
@@ -32,13 +32,13 @@ Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymen
 
 ### Update1
 ```
-Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
+Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String>
  -BodyParameter <IMicrosoftGraphPaymentTerm> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String>
+Update-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
  -BodyParameter <IMicrosoftGraphPaymentTerm> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -160,7 +160,7 @@ key: id of customer
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -175,7 +175,7 @@ key: id of customerPayment
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True

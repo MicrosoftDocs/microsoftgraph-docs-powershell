@@ -29,12 +29,17 @@ Delete navigation property resourceConnections for admin
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Remove-MgWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
 ```
 
-{{ Add example description here }}
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Remove-MgWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
+```
 
 ## PARAMETERS
 

@@ -8,11 +8,11 @@ schema: 2.0.0
 # Get-MgTeamChannel
 
 ## SYNOPSIS
-List of channels either hosted in or shared with the team (incoming channels).
+The collection of channels and messages associated with the team.
 
 ## SYNTAX
 
-### List2 (Default)
+### List3 (Default)
 ```
 Get-MgTeamChannel -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
@@ -25,33 +25,14 @@ Get-MgTeamChannel -ChannelId <String> -TeamId <String> [-ExpandProperty <String[
  [<CommonParameters>]
 ```
 
-### Get2
-```
-Get-MgTeamChannel -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### List3
-```
-Get-MgTeamChannel -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
-```
-
 ### GetViaIdentity3
 ```
 Get-MgTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity2
-```
-Get-MgTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
 ## DESCRIPTION
-List of channels either hosted in or shared with the team (incoming channels).
+The collection of channels and messages associated with the team.
 
 ## EXAMPLES
 
@@ -107,12 +88,12 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List2, List3
+Parameter Sets: List3
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -122,7 +103,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Get3, Get2
+Parameter Sets: Get3
 Aliases:
 
 Required: True
@@ -138,7 +119,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List2, List3
+Parameter Sets: List3
 Aliases: CV
 
 Required: False
@@ -168,7 +149,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List2, List3
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -184,7 +165,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Parameter Sets: GetViaIdentity3
 Aliases:
 
 Required: True
@@ -199,12 +180,12 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List3
+Parameter Sets: List3
 Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -229,7 +210,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List2, List3
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -244,7 +225,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List2, List3
+Parameter Sets: List3
 Aliases: OrderBy
 
 Required: False
@@ -259,7 +240,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get3, Get2, List3
+Parameter Sets: List3, Get3
 Aliases:
 
 Required: True
@@ -274,7 +255,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List3
+Parameter Sets: List3
 Aliases: Limit
 
 Required: False
@@ -289,7 +270,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List3
+Parameter Sets: List3
 Aliases:
 
 Required: False

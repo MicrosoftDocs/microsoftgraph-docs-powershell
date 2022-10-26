@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: 881afa9b-a781-45b0-988c-fc4aab82afec
+Module Guid: 30e3b946-632e-458e-be72-4330bde29ecc
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -30,6 +30,30 @@ The response provides details about which memberships could and couldn't be crea
 ### [Add-MgTeamworkDeletedTeamChannelMember](Add-MgTeamworkDeletedTeamChannelMember.md)
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+
+### [Clear-MgChatMessageReaction](Clear-MgChatMessageReaction.md)
+Invoke action unsetReaction
+
+### [Clear-MgChatMessageReplyReaction](Clear-MgChatMessageReplyReaction.md)
+Invoke action unsetReaction
+
+### [Clear-MgTeamChannelMessageReaction](Clear-MgTeamChannelMessageReaction.md)
+Invoke action unsetReaction
+
+### [Clear-MgTeamChannelMessageReplyReaction](Clear-MgTeamChannelMessageReplyReaction.md)
+Invoke action unsetReaction
+
+### [Clear-MgTeamPrimaryChannelMessageReaction](Clear-MgTeamPrimaryChannelMessageReaction.md)
+Invoke action unsetReaction
+
+### [Clear-MgTeamPrimaryChannelMessageReplyReaction](Clear-MgTeamPrimaryChannelMessageReplyReaction.md)
+Invoke action unsetReaction
+
+### [Clear-MgTeamworkDeletedTeamChannelMessageReaction](Clear-MgTeamworkDeletedTeamChannelMessageReaction.md)
+Invoke action unsetReaction
+
+### [Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction](Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction.md)
+Invoke action unsetReaction
 
 ### [Complete-MgTeamChannelMigration](Complete-MgTeamChannelMigration.md)
 Complete the message migration process by removing `migration mode` from a channel in a team.
@@ -84,6 +108,12 @@ This operation also creates a copy of the corresponding group.\nYou can specify 
 \n(If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.) Cloning is a long-running operation.\nAfter the POST clone returns, you need to GET the operation \nreturned by the Location: header to see if it's 'running' or 'succeeded' or 'failed'.
 \nYou should continue to GET until the status is not 'running'.
 \nThe recommended delay between GETs is 5 seconds.
+
+### [Get-MgAllGroupTeamChannel](Get-MgAllGroupTeamChannel.md)
+List of channels either hosted in or shared with the team (incoming channels).
+
+### [Get-MgAllTeamChannel](Get-MgAllTeamChannel.md)
+List of channels either hosted in or shared with the team (incoming channels).
 
 ### [Get-MgAppCatalogTeamApp](Get-MgAppCatalogTeamApp.md)
 Get teamsApps from appCatalogs
@@ -183,7 +213,7 @@ The application that is linked to the tab.
 The team associated with this group.
 
 ### [Get-MgGroupTeamChannel](Get-MgGroupTeamChannel.md)
-List of channels either hosted in or shared with the team (incoming channels).
+The collection of channels and messages associated with the team.
 
 ### [Get-MgGroupTeamChannelFileFolder](Get-MgGroupTeamChannelFileFolder.md)
 Get the metadata for the location where the files of a channel are stored.
@@ -345,11 +375,14 @@ Users assigned to the tag.
 The template this team was created from.
 See available templates.
 
+### [Get-MgGroupTeamTemplateDefinition](Get-MgGroupTeamTemplateDefinition.md)
+Get templateDefinition from groups
+
 ### [Get-MgTeam](Get-MgTeam.md)
 Retrieve the properties and relationships of the specified team.
 
 ### [Get-MgTeamChannel](Get-MgTeamChannel.md)
-List of channels either hosted in or shared with the team (incoming channels).
+The collection of channels and messages associated with the team.
 
 ### [Get-MgTeamChannelFileFolder](Get-MgTeamChannelFileFolder.md)
 Get the metadata for the location where the files of a channel are stored.
@@ -537,6 +570,9 @@ Users assigned to the tag.
 The template this team was created from.
 See available templates.
 
+### [Get-MgTeamTemplateDefinition](Get-MgTeamTemplateDefinition.md)
+Get templateDefinition from teams
+
 ### [Get-MgTeamwork](Get-MgTeamwork.md)
 Get teamwork
 
@@ -616,6 +652,9 @@ The templates associated with a team.
 
 ### [Get-MgTeamworkTeamTemplateDefinition](Get-MgTeamworkTeamTemplateDefinition.md)
 Get definitions from teamwork
+
+### [Get-MgTeamworkTeamTemplateDefinitionTeamDefinition](Get-MgTeamworkTeamTemplateDefinitionTeamDefinition.md)
+Get the properties of the team associated with a teamTemplateDefinition object.
 
 ### [Get-MgTeamworkWorkforceIntegration](Get-MgTeamworkWorkforceIntegration.md)
 A workforce integration with shifts.
@@ -829,7 +868,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgGroupTeamChannelMessage](New-MgGroupTeamChannelMessage.md)
-Send a new chatMessage in the specified channel.
+Send a new chatMessage in the specified channel or a chat.
 
 ### [New-MgGroupTeamChannelMessageHostedContent](New-MgGroupTeamChannelMessageHostedContent.md)
 Create new navigation property to hostedContents for groups
@@ -863,7 +902,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgGroupTeamPrimaryChannelMessage](New-MgGroupTeamPrimaryChannelMessage.md)
-Send a new chatMessage in the specified channel.
+Send a new chatMessage in the specified channel or a chat.
 
 ### [New-MgGroupTeamPrimaryChannelMessageHostedContent](New-MgGroupTeamPrimaryChannelMessageHostedContent.md)
 Create new navigation property to hostedContents for groups
@@ -933,7 +972,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgTeamChannelMessage](New-MgTeamChannelMessage.md)
-Send a new chatMessage in the specified channel.
+Send a new chatMessage in the specified channel or a chat.
 
 ### [New-MgTeamChannelMessageHostedContent](New-MgTeamChannelMessageHostedContent.md)
 Create new navigation property to hostedContents for teams
@@ -973,7 +1012,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgTeamPrimaryChannelMessage](New-MgTeamPrimaryChannelMessage.md)
-Send a new chatMessage in the specified channel.
+Send a new chatMessage in the specified channel or a chat.
 
 ### [New-MgTeamPrimaryChannelMessageHostedContent](New-MgTeamPrimaryChannelMessageHostedContent.md)
 Create new navigation property to hostedContents for teams
@@ -1043,7 +1082,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgTeamworkDeletedTeamChannelMessage](New-MgTeamworkDeletedTeamChannelMessage.md)
-Send a new chatMessage in the specified channel.
+Send a new chatMessage in the specified channel or a chat.
 
 ### [New-MgTeamworkDeletedTeamChannelMessageHostedContent](New-MgTeamworkDeletedTeamChannelMessageHostedContent.md)
 Create new navigation property to hostedContents for teamwork
@@ -1068,6 +1107,9 @@ Create new navigation property to operations for teamwork
 
 ### [New-MgTeamworkTeamTemplate](New-MgTeamworkTeamTemplate.md)
 Create new navigation property to teamTemplates for teamwork
+
+### [New-MgTeamworkTeamTemplateDefinition](New-MgTeamworkTeamTemplateDefinition.md)
+Create new navigation property to definitions for teamwork
 
 ### [New-MgTeamworkWorkforceIntegration](New-MgTeamworkWorkforceIntegration.md)
 Create a new workforceIntegration object.
@@ -1414,6 +1456,12 @@ Delete navigation property teamsAppSettings for teamwork
 ### [Remove-MgTeamworkTeamTemplate](Remove-MgTeamworkTeamTemplate.md)
 Delete navigation property teamTemplates for teamwork
 
+### [Remove-MgTeamworkTeamTemplateDefinition](Remove-MgTeamworkTeamTemplateDefinition.md)
+Delete navigation property definitions for teamwork
+
+### [Remove-MgTeamworkTeamTemplateDefinitionTeamDefinition](Remove-MgTeamworkTeamTemplateDefinitionTeamDefinition.md)
+Delete navigation property teamDefinition for teamwork
+
 ### [Remove-MgTeamworkWorkforceIntegration](Remove-MgTeamworkWorkforceIntegration.md)
 Delete navigation property workforceIntegrations for teamwork
 
@@ -1484,6 +1532,12 @@ Update media content for the navigation property hostedContent in appCatalogs
 ### [Set-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent](Set-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent.md)
 Update media content for the navigation property hostedContent in appCatalogs
 
+### [Set-MgChatMessageReaction](Set-MgChatMessageReaction.md)
+Invoke action setReaction
+
+### [Set-MgChatMessageReplyReaction](Set-MgChatMessageReplyReaction.md)
+Invoke action setReaction
+
 ### [Set-MgGroupTeamChannelFileFolderContent](Set-MgGroupTeamChannelFileFolderContent.md)
 The content stream, if the item represents a file.
 
@@ -1496,14 +1550,32 @@ The content stream, if the item represents a file.
 ### [Set-MgTeamChannelFileFolderContent](Set-MgTeamChannelFileFolderContent.md)
 The content stream, if the item represents a file.
 
+### [Set-MgTeamChannelMessageReaction](Set-MgTeamChannelMessageReaction.md)
+Invoke action setReaction
+
+### [Set-MgTeamChannelMessageReplyReaction](Set-MgTeamChannelMessageReplyReaction.md)
+Invoke action setReaction
+
 ### [Set-MgTeamPhotoContent](Set-MgTeamPhotoContent.md)
 Update media content for the navigation property photo in teams
 
 ### [Set-MgTeamPrimaryChannelFileFolderContent](Set-MgTeamPrimaryChannelFileFolderContent.md)
 The content stream, if the item represents a file.
 
+### [Set-MgTeamPrimaryChannelMessageReaction](Set-MgTeamPrimaryChannelMessageReaction.md)
+Invoke action setReaction
+
+### [Set-MgTeamPrimaryChannelMessageReplyReaction](Set-MgTeamPrimaryChannelMessageReplyReaction.md)
+Invoke action setReaction
+
 ### [Set-MgTeamworkDeletedTeamChannelFileFolderContent](Set-MgTeamworkDeletedTeamChannelFileFolderContent.md)
 The content stream, if the item represents a file.
+
+### [Set-MgTeamworkDeletedTeamChannelMessageReaction](Set-MgTeamworkDeletedTeamChannelMessageReaction.md)
+Invoke action setReaction
+
+### [Set-MgTeamworkDeletedTeamChannelMessageReplyReaction](Set-MgTeamworkDeletedTeamChannelMessageReplyReaction.md)
+Invoke action setReaction
 
 ### [Start-MgTeamScheduleTimeCardBreak](Start-MgTeamScheduleTimeCardBreak.md)
 Start a break in a specific timeCard.
@@ -1681,11 +1753,7 @@ Update the navigation property sharedWithTeams in groups
 Update the navigation property tabs in groups
 
 ### [Update-MgGroupTeamSchedule](Update-MgGroupTeamSchedule.md)
-Create or replace a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\nWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
-During schedule provisioning, clients can use the GET method to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.
-If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
-Clients can also inspect the configuration of the schedule.
+Update the navigation property schedule in groups
 
 ### [Update-MgGroupTeamScheduleOfferShiftRequest](Update-MgGroupTeamScheduleOfferShiftRequest.md)
 Update the navigation property offerShiftRequests in groups
@@ -1784,11 +1852,7 @@ Update the navigation property sharedWithTeams in teams
 Update the navigation property tabs in teams
 
 ### [Update-MgTeamSchedule](Update-MgTeamSchedule.md)
-Create or replace a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\nWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
-During schedule provisioning, clients can use the GET method to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.
-If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
-Clients can also inspect the configuration of the schedule.
+Update the navigation property schedule in teams
 
 ### [Update-MgTeamScheduleOfferShiftRequest](Update-MgTeamScheduleOfferShiftRequest.md)
 Update the navigation property offerShiftRequests in teams
@@ -1880,6 +1944,12 @@ Update the properties of a teamsAppSettings object.
 
 ### [Update-MgTeamworkTeamTemplate](Update-MgTeamworkTeamTemplate.md)
 Update the navigation property teamTemplates in teamwork
+
+### [Update-MgTeamworkTeamTemplateDefinition](Update-MgTeamworkTeamTemplateDefinition.md)
+Update the navigation property definitions in teamwork
+
+### [Update-MgTeamworkTeamTemplateDefinitionTeamDefinition](Update-MgTeamworkTeamTemplateDefinitionTeamDefinition.md)
+Update the navigation property teamDefinition in teamwork
 
 ### [Update-MgTeamworkWorkforceIntegration](Update-MgTeamworkWorkforceIntegration.md)
 Update the navigation property workforceIntegrations in teamwork

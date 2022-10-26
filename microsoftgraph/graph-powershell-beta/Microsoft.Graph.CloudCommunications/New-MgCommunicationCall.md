@@ -17,8 +17,8 @@ You will need to register the calling bot and go through the list of permissions
 ```
 New-MgCommunicationCall [-ActiveModalities <String[]>] [-AdditionalProperties <Hashtable>]
  [-AnsweredBy <IMicrosoftGraphParticipantInfo1>] [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup1[]>]
- [-CallChainId <String>] [-CallOptions <IMicrosoftGraphCallOptions1>]
- [-CallRoutes <IMicrosoftGraphCallRoute[]>] [-CallbackUri <String>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-CallChainId <String>] [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>]
+ [-CallbackUri <String>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>] [-Direction <String>] [-Id <String>]
  [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <IMicrosoftGraphMediaConfig1>]
  [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingCapability <IMicrosoftGraphMeetingCapability>]
@@ -678,7 +678,7 @@ callOptions
 To construct, please use Get-Help -Online and see NOTES section for CALLOPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallOptions1
+Type: IMicrosoftGraphCallOptions
 Parameter Sets: CreateExpanded1
 Aliases:
 

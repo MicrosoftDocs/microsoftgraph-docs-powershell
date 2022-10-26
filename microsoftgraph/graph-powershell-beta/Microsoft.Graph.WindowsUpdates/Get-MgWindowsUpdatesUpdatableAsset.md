@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Get updatableAssets from admin
+Assets registered with the deployment service that can receive updates.
+Read-only.
 
 ## SYNTAX
 
@@ -32,16 +33,52 @@ Get-MgWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get updatableAssets from admin
+Assets registered with the deployment service that can receive updates.
+Read-only.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
 
-{{ Add example description here }}
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+```
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+```
+
+### EXAMPLE 4
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -Filter "isof('microsoft.graph.windowsUpdates.azureADDevice')"
+```
+
+### EXAMPLE 5
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset
+```
+
+### EXAMPLE 6
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -OutFile $outFileId
+```
+
+### EXAMPLE 7
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -Filter "isof('microsoft.graph.windowsUpdates.updatableAssetGroup')"
+```
 
 ## PARAMETERS
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: cbff4720-eedf-48fa-bae1-7cf57bd7f412
+Module Guid: c3c09d2d-df47-4136-bc57-3d9e0f143ab7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -34,6 +34,9 @@ Wipe a device
 Clear the application's presence session for a user.
 If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
 For details about presences sessions, see presence: setPresence.
+
+### [Clear-MgUserPresenceUserPreferredPresence](Clear-MgUserPresenceUserPreferredPresence.md)
+Clear the preferred availability and activity status for a user.
 
 ### [Confirm-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceMemberGroup](Confirm-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceMemberGroup.md)
 Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
@@ -665,6 +668,14 @@ Invoke action assignLicense
 
 ### [Set-MgUserPresence](Set-MgUserPresence.md)
 Set the state of a user's presence session as an application.
+
+### [Set-MgUserPresenceUserPreferredPresence](Set-MgUserPresenceUserPreferredPresence.md)
+Set the preferred availability and activity status for a user.
+If the preferred presence of a user is set, the user's presence shows as the preferred status.
+Preferred presence takes effect only when at least one presence session exists for the user.
+Otherwise, the user's presence shows as `Offline`.
+A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
+For more details, see presence sessions and time-out and expiration.
 
 ### [Skip-MgUserManagedDeviceActivationLock](Skip-MgUserManagedDeviceActivationLock.md)
 Bypass activation lock

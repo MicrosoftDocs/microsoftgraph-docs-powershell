@@ -18,6 +18,18 @@ New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
  -MicrosoftTunnelServerLogCollectionResponseId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Generate
+```
+New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
+ -MicrosoftTunnelServerLogCollectionResponseId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GenerateViaIdentity
+```
+New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
+ -InputObject <IDeviceManagementActionsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
@@ -37,7 +49,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
-Parameter Sets: CreateViaIdentity
+Parameter Sets: GenerateViaIdentity, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -52,7 +64,7 @@ key: id of microsoftTunnelServerLogCollectionResponse
 
 ```yaml
 Type: String
-Parameter Sets: Create
+Parameter Sets: Create, Generate
 Aliases:
 
 Required: True

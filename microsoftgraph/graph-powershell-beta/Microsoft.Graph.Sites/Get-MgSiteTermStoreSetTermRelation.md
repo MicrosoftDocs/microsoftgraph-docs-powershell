@@ -19,13 +19,13 @@ Get-MgSiteTermStoreSetTermRelation -SetId <String> -SiteId <String> -TermId <Str
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get2
+### Get1
 ```
 Get-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -48,7 +48,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -105,7 +105,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -125,7 +125,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -150,7 +150,7 @@ key: id of relation
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -180,7 +180,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get2
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -195,7 +195,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get2
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -225,7 +225,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get2
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True

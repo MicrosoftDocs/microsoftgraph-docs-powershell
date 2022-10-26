@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.People
-Module Guid: bece76cf-2f75-4207-887f-bedaea7db016
+Module Guid: 0cdd1f82-9744-4a96-a86d-b6847e78ee1e
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people
 Help Version: 1.0.0.0
 Locale: en-US
@@ -85,9 +85,6 @@ Represents web accounts the user has indicated they use or has added to their us
 ### [Get-MgUserProfileWebsite](Get-MgUserProfileWebsite.md)
 Represents detailed information about websites associated with a user in various services.
 
-### [New-MgUserPerson](New-MgUserPerson.md)
-Create new navigation property to people for users
-
 ### [New-MgUserProfileAccount](New-MgUserProfileAccount.md)
 Create a new userAccountInformation object in a user's profile.
 
@@ -144,9 +141,6 @@ Create a new webAccount object in a user's profile.
 
 ### [New-MgUserProfileWebsite](New-MgUserProfileWebsite.md)
 Create a new personWebsite object in a user's profile.
-
-### [Remove-MgUserPerson](Remove-MgUserPerson.md)
-Delete navigation property people for users
 
 ### [Remove-MgUserProfile](Remove-MgUserProfile.md)
 Deletes a profile object from a user's account.
@@ -207,9 +201,6 @@ Delete navigation property webAccounts for users
 
 ### [Remove-MgUserProfileWebsite](Remove-MgUserProfileWebsite.md)
 Delete navigation property websites for users
-
-### [Update-MgUserPerson](Update-MgUserPerson.md)
-Update the navigation property people in users
 
 ### [Update-MgUserProfile](Update-MgUserProfile.md)
 Update the navigation property profile in users

@@ -30,12 +30,20 @@ Invoke action enrollAssetsById
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	UpdateCategory = "feature"
+	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
+	Ids = @(
+		"String"
+		"String"
+		"String"
+	)
+}
+Invoke-MgEnrollWindowsUpdatesUpdatableAssetById -BodyParameter $params
+```
 
 ## PARAMETERS
 

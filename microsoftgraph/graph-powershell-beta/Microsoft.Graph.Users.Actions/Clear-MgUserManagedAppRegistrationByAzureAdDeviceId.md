@@ -21,7 +21,7 @@ Clear-MgUserManagedAppRegistrationByAzureAdDeviceId -UserId <String> [-Additiona
 ### Wipe
 ```
 Clear-MgUserManagedAppRegistrationByAzureAdDeviceId -UserId <String>
- -BodyParameter <IPathsXxh6CmUsersUserIdMicrosoftGraphWipemanagedappregistrationsbyazureaddeviceidPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Clear-MgUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActionsI
 ### WipeViaIdentity
 ```
 Clear-MgUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsXxh6CmUsersUserIdMicrosoftGraphWipemanagedappregistrationsbyazureaddeviceidPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsXxh6CmUsersUserIdMicrosoftGraphWipemanagedappregistrationsbyazureaddeviceidPostRequestbodyContentApplicationJsonSchema
+Type: IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema
 Parameter Sets: Wipe, WipeViaIdentity
 Aliases:
 
@@ -174,7 +174,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsXxh6CmUsersUserIdMicrosoftGraphWipemanagedappregistrationsbyazureaddeviceidPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IComponents1WfyhtaRequestbodiesWipemanagedappregistrationsbyazureaddeviceidrequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 

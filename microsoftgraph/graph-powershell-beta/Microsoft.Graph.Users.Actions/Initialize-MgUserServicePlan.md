@@ -21,7 +21,7 @@ Initialize-MgUserServicePlan -UserId <String> [-AdditionalProperties <Hashtable>
 ### Activate
 ```
 Initialize-MgUserServicePlan -UserId <String>
- -BodyParameter <IPaths1T7Q69JUsersUserIdMicrosoftGraphActivateserviceplanPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents2P8K5LRequestbodiesActivateserviceplanrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Initialize-MgUserServicePlan -InputObject <IUsersActionsIdentity> [-AdditionalPr
 ### ActivateViaIdentity
 ```
 Initialize-MgUserServicePlan -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1T7Q69JUsersUserIdMicrosoftGraphActivateserviceplanPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents2P8K5LRequestbodiesActivateserviceplanrequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1T7Q69JUsersUserIdMicrosoftGraphActivateserviceplanPostRequestbodyContentApplicationJsonSchema
+Type: IComponents2P8K5LRequestbodiesActivateserviceplanrequestbodyContentApplicationJsonSchema
 Parameter Sets: Activate, ActivateViaIdentity
 Aliases:
 
@@ -202,7 +202,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1T7Q69JUsersUserIdMicrosoftGraphActivateserviceplanPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IComponents2P8K5LRequestbodiesActivateserviceplanrequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
