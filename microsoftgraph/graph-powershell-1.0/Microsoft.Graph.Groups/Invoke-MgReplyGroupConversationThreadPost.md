@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpost
@@ -46,6 +46,70 @@ Reply to a post and add a new post to the specified thread in a group conversati
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Groups
+
+$params = @{
+	Post = @{
+		Body = @{
+			ContentType = ""
+			Content = "content-value"
+		}
+		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
+		HasAttachments = $true
+		From = @{
+			EmailAddress = @{
+				Name = "name-value"
+				Address = "address-value"
+			}
+		}
+		Sender = @{
+			EmailAddress = @{
+				Name = "name-value"
+				Address = "address-value"
+			}
+		}
+		ConversationThreadId = "conversationThreadId-value"
+		NewParticipants = @(
+			@{
+				EmailAddress = @{
+					Name = "name-value"
+					Address = "address-value"
+				}
+			}
+		)
+		ConversationId = "conversationId-value"
+		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
+		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
+		ChangeKey = "changeKey-value"
+		Categories = @(
+			"categories-value"
+		)
+		Id = "id-value"
+		InReplyTo = @{
+		}
+		Attachments = @(
+			@{
+				"@odata.type" = "#microsoft.graph.fileAttachment"
+				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
+				Name = "name-value"
+				ContentType = "contentType-value"
+				Size = 99
+				IsInline = $true
+				Id = "id-value"
+			}
+		)
+	}
+}
+
+Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgReplyGroupConversationThreadPost Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -237,7 +301,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths23Qv37GroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths23Qv37GroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Post <IMicrosoftGraphPost>]`: post
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -279,7 +343,7 @@ BODYPARAMETER `<IPaths23Qv37GroupsGroupIdConversationsConversationIdThreadsConve
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Value <String>]`: A property value.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -322,7 +386,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-POST `<IMicrosoftGraphPost>`: post
+POST <IMicrosoftGraphPost>: post
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.

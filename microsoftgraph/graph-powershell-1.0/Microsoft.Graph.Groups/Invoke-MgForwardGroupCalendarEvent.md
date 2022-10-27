@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupcalendarevent
@@ -48,6 +48,30 @@ If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to an
 This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+
+$params = @{
+	ToRecipients = @(
+		@{
+			EmailAddress = @{
+				Address = "danas@contoso.onmicrosoft.com"
+				Name = "Dana Swope"
+			}
+		}
+	)
+	Comment = "Dana, hope you can make this meeting."
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgForwardGroupCalendarEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -224,7 +248,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths154X2NnGroupsGroupIdCalendarEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths154X2NnGroupsGroupIdCalendarEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
@@ -233,7 +257,7 @@ BODYPARAMETER `<IPaths154X2NnGroupsGroupIdCalendarEventsEventIdMicrosoftGraphFor
       - `[Address <String>]`: The email address of the person or entity.
       - `[Name <String>]`: The display name of the person or entity.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -276,7 +300,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-TORECIPIENTS <IMicrosoftGraphRecipient\[]>: .
+TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.

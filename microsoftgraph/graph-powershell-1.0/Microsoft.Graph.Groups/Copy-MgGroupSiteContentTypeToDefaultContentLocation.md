@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/copy-mggroupsitecontenttypetodefaultcontentlocation
@@ -46,6 +46,27 @@ Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Sites
+
+$params = @{
+	SourceFile = @{
+		SharepointIds = @{
+			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
+			ListItemId = "2"
+		}
+	}
+	DestinationFileName = "newname.txt"
+}
+
+Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+```
+
+This example shows how to use the Copy-MgGroupSiteContentTypeToDefaultContentLocation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -237,7 +258,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1He4W7OGroupsGroupIdSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1He4W7OGroupsGroupIdSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DestinationFileName <String>]`: 
   - `[SourceFile <IMicrosoftGraphItemReference>]`: itemReference
@@ -259,7 +280,7 @@ BODYPARAMETER `<IPaths1He4W7OGroupsGroupIdSitesSiteIdContenttypesContenttypeIdMi
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -302,7 +323,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-SOURCEFILE `<IMicrosoftGraphItemReference>`: itemReference
+SOURCEFILE <IMicrosoftGraphItemReference>: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
   - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.

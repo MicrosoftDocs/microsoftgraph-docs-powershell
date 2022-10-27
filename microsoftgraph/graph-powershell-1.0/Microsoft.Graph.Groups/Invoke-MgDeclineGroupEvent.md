@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgdeclinegroupevent
@@ -48,6 +48,33 @@ If the event allows proposals for new times, on declining the event, an invitee 
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+
+$params = @{
+	Comment = "I won't be able to make this week. How about next week?"
+	SendResponse = $true
+	ProposedNewTime = @{
+		Start = @{
+			DateTime = "2019-12-02T18:00:00"
+			TimeZone = "Pacific Standard Time"
+		}
+		End = @{
+			DateTime = "2019-12-02T19:00:00"
+			TimeZone = "Pacific Standard Time"
+		}
+	}
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgDeclineGroupEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -239,7 +266,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths19YagsdGroupsGroupIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths19YagsdGroupsGroupIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
@@ -251,7 +278,7 @@ BODYPARAMETER `<IPaths19YagsdGroupsGroupIdEventsEventIdMicrosoftGraphDeclinePost
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[SendResponse <Boolean?>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -294,7 +321,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
 
-PROPOSEDNEWTIME `<IMicrosoftGraphTimeSlot>`: timeSlot
+PROPOSEDNEWTIME <IMicrosoftGraphTimeSlot>: timeSlot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
