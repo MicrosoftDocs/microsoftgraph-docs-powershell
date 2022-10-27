@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 0294463d-935c-421b-9930-4307d03e9fb9
+Module Guid: dd688160-4e30-482d-8153-8257922e17a1
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -463,7 +463,9 @@ Create new navigation property to riskyUsers for identityProtection
 Create new navigation property to history for identityProtection
 
 ### [New-MgUserAuthenticationEmailMethod](New-MgUserAuthenticationEmailMethod.md)
-Create new navigation property to emailMethods for users
+Set a user's emailAuthenticationMethod object.
+Email authentication is a self-service password reset method.
+A user may only have one email authentication method.
 
 ### [New-MgUserAuthenticationFido2Method](New-MgUserAuthenticationFido2Method.md)
 Create new navigation property to fido2Methods for users

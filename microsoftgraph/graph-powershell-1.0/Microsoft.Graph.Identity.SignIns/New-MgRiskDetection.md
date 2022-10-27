@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgriskdetection
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 
 ### -RiskEventType
 The type of risk event detected.
-The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, generic,adminConfirmedUserCompromised, passwordSpray, impossibleTravel, newCountry, anomalousToken, tokenIssuerAnomaly,suspiciousBrowser, riskyIPAddress, mcasSuspiciousInboxManipulationRules, suspiciousInboxForwarding, and unknownFutureValue.
+The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, generic,adminConfirmedUserCompromised, passwordSpray, impossibleTravel, newCountry, anomalousToken, tokenIssuerAnomaly,suspiciousBrowser, riskyIPAddress, mcasSuspiciousInboxManipulationRules, suspiciousInboxForwarding, and anomalousUserActivity.
 If the risk detection is a premium detection, will show generic.
 For more information about each value, see riskEventType values.
 
@@ -432,7 +432,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRiskDetection1>`: riskDetection
+BODYPARAMETER <IMicrosoftGraphRiskDetection1>: riskDetection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Activity <String>]`: 
@@ -455,7 +455,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskDetection1>`: riskDetection
     - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
   - `[RequestId <String>]`: Request ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.
   - `[RiskDetail <String>]`: 
-  - `[RiskEventType <String>]`: The type of risk event detected. The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, generic,adminConfirmedUserCompromised, passwordSpray, impossibleTravel, newCountry, anomalousToken, tokenIssuerAnomaly,suspiciousBrowser, riskyIPAddress, mcasSuspiciousInboxManipulationRules, suspiciousInboxForwarding, and unknownFutureValue. If the risk detection is a premium detection, will show generic. For more information about each value, see riskEventType values.
+  - `[RiskEventType <String>]`: The type of risk event detected. The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, generic,adminConfirmedUserCompromised, passwordSpray, impossibleTravel, newCountry, anomalousToken, tokenIssuerAnomaly,suspiciousBrowser, riskyIPAddress, mcasSuspiciousInboxManipulationRules, suspiciousInboxForwarding, and anomalousUserActivity. If the risk detection is a premium detection, will show generic. For more information about each value, see riskEventType values.
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
   - `[Source <String>]`: Source of the risk detection. For example, activeDirectory.
@@ -464,7 +464,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskDetection1>`: riskDetection
   - `[UserId <String>]`: Unique ID of the user.
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user.
 
-LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
+LOCATION <IMicrosoftGraphSignInLocation>: signInLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
   - `[CountryOrRegion <String>]`: Provides the country code info (2 letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.
