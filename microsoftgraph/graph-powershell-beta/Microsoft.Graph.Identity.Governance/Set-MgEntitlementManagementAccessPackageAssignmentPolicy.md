@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/set-mgentitlementmanagementaccesspackageassignmentpolicy
@@ -56,6 +56,113 @@ Set-MgEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdentity
 Update the navigation property accessPackageAssignmentPolicies in identityGovernance
 
 ## EXAMPLES
+
+### Example 1: Using the Set-MgEntitlementManagementAccessPackageAssignmentPolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	Id = "4540a08f-8ab5-43f6-a923-015275799197"
+	DisplayName = "policy with custom access package workflow extension"
+	Description = "Run specified custom access package workflow extension at different stages."
+	AccessPackageId = "ba5807c7-2aa9-4c8a-907e-4a17ee587500"
+	RequestApprovalSettings = $null
+	RequestorSettings = @{
+		AcceptRequests = $true
+		ScopeType = "AllExistingDirectorySubjects"
+		AllowedRequestors = @(
+		)
+	}
+	AccessReviewSettings = $null
+	CustomExtensionHandlers = @(
+	)
+}
+Set-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
+```
+
+This example shows how to use the Set-MgEntitlementManagementAccessPackageAssignmentPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Using the Set-MgEntitlementManagementAccessPackageAssignmentPolicy Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+$params = @{
+	Id = "b2eba9a1-b357-42ee-83a8-336522ed6cbf"
+	AccessPackageId = "4c02f928-7752-49aa-8fc8-e286d973a965"
+	DisplayName = "All Users"
+	Description = "All users can request for access to the directory."
+	CanExtend = $false
+	DurationInDays = 365
+	ExpirationDateTime = $null
+	RequestorSettings = @{
+		ScopeType = "AllExistingConnectedOrganizationSubjects"
+		AcceptRequests = $true
+		AllowedRequestors = @(
+		)
+	}
+	RequestApprovalSettings = @{
+		IsApprovalRequired = $true
+		IsApprovalRequiredForExtension = $false
+		IsRequestorJustificationRequired = $true
+		ApprovalMode = "SingleStage"
+		ApprovalStages = @(
+			@{
+				ApprovalStageTimeOutInDays = 14
+				IsApproverJustificationRequired = $true
+				IsEscalationEnabled = $false
+				EscalationTimeInMinutes = 11520
+				PrimaryApprovers = @(
+					@{
+						"@odata.type" = "#microsoft.graph.groupMembers"
+						IsBackup = $true
+						Id = "d2dcb9a1-a445-42ee-83a8-476522ed6cbf"
+						Description = "group for users from connected organizations which have no external sponsor"
+					}
+					@{
+						"@odata.type" = "#microsoft.graph.externalSponsors"
+						IsBackup = $false
+					}
+				)
+			}
+		)
+	}
+	Questions = @(
+		@{
+			IsRequired = $false
+			Text = @{
+				DefaultText = "what state are you from?"
+				LocalizedTexts = @(
+					@{
+						Text = "¿De qué estado eres?"
+						LanguageCode = "es"
+					}
+				)
+			}
+			"@odata.type" = "#microsoft.graph.accessPackageMultipleChoiceQuestion"
+			Choices = @(
+			)
+			AllowsMultipleSelection = $false
+		}
+		@{
+			IsRequired = $false
+			Text = @{
+				DefaultText = "Who is your manager?"
+				LocalizedTexts = @(
+					@{
+						Text = "por qué necesita acceso a este paquete"
+						LanguageCode = "es"
+					}
+				)
+			}
+			"@odata.type" = "#microsoft.graph.accessPackageTextInputQuestion"
+			IsSingleLineQuestion = $false
+		}
+	)
+}
+Set-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
+```
+
+This example shows how to use the Set-MgEntitlementManagementAccessPackageAssignmentPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -470,7 +577,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage>: accessPackage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: Read-only. Nullable. Supports $expand.
@@ -1576,7 +1683,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1618,15 +1725,15 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
             - `[Subject <String>]`: The subject of the chat message, in plaintext.
             - `[Summary <String>]`: Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat.
             - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
-          - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]`: teamworkOnlineMeetingInfo
+          - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo1>]`: teamworkOnlineMeetingInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[CalendarEventId <String>]`: The identifier of the calendar event associated with the meeting.
-            - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
-            - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
+            - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
+            - `[Organizer <IMicrosoftGraphTeamworkUserIdentity1>]`: teamworkUserIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
               - `[Id <String>]`: Unique identifier for the identity.
-              - `[UserIdentityType <String>]`: teamworkUserIdentityType
+              - `[UserIdentityType <String>]`: 
           - `[Operations <IMicrosoftGraphTeamsAsyncOperation1[]>]`: A collection of all the Teams async operations that ran or are running on the chat. Nullable.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[AttemptsCount <Int32?>]`: Number of times the operation was attempted before being marked successful or failed.
@@ -5157,7 +5264,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
   - `[ModifiedBy <String>]`: The userPrincipalName of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
+ACCESSPACKAGECATALOG <IMicrosoftGraphAccessPackageCatalog1>: accessPackageCatalog
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]`: The roles in each resource in a catalog. Read-only.
@@ -6253,7 +6360,7 @@ ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCata
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6295,15 +6402,15 @@ ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCata
               - `[Subject <String>]`: The subject of the chat message, in plaintext.
               - `[Summary <String>]`: Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat.
               - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
-            - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]`: teamworkOnlineMeetingInfo
+            - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo1>]`: teamworkOnlineMeetingInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CalendarEventId <String>]`: The identifier of the calendar event associated with the meeting.
-              - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
-              - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
+              - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
+              - `[Organizer <IMicrosoftGraphTeamworkUserIdentity1>]`: teamworkUserIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
                 - `[Id <String>]`: Unique identifier for the identity.
-                - `[UserIdentityType <String>]`: teamworkUserIdentityType
+                - `[UserIdentityType <String>]`: 
             - `[Operations <IMicrosoftGraphTeamsAsyncOperation1[]>]`: A collection of all the Teams async operations that ran or are running on the chat. Nullable.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[AttemptsCount <Int32?>]`: Number of times the operation was attempted before being marked successful or failed.
@@ -9844,7 +9951,7 @@ ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCata
   - `[ModifiedBy <String>]`: The UPN of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ACCESSREVIEWSETTINGS `<IMicrosoftGraphAssignmentReviewSettings>`: assignmentReviewSettings
+ACCESSREVIEWSETTINGS <IMicrosoftGraphAssignmentReviewSettings>: assignmentReviewSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AccessReviewTimeoutBehavior <String>]`: accessReviewTimeoutBehavior
   - `[DurationInDays <Int32?>]`: The number of days within which reviewers should provide input.
@@ -9857,7 +9964,7 @@ ACCESSREVIEWSETTINGS `<IMicrosoftGraphAssignmentReviewSettings>`: assignmentRevi
     - `[IsBackup <Boolean?>]`: For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
   - `[StartDateTime <DateTime?>]`: When the first review should start.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`: accessPackageAssignmentPolicy
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignmentPolicy1>: accessPackageAssignmentPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackage <IMicrosoftGraphAccessPackage>]`: accessPackage
@@ -10908,7 +11015,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`: accessPackageAs
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10950,15 +11057,15 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`: accessPackageAs
               - `[Subject <String>]`: The subject of the chat message, in plaintext.
               - `[Summary <String>]`: Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat.
               - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
-            - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]`: teamworkOnlineMeetingInfo
+            - `[OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo1>]`: teamworkOnlineMeetingInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CalendarEventId <String>]`: The identifier of the calendar event associated with the meeting.
-              - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
-              - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
+              - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
+              - `[Organizer <IMicrosoftGraphTeamworkUserIdentity1>]`: teamworkUserIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
                 - `[Id <String>]`: Unique identifier for the identity.
-                - `[UserIdentityType <String>]`: teamworkUserIdentityType
+                - `[UserIdentityType <String>]`: 
             - `[Operations <IMicrosoftGraphTeamsAsyncOperation1[]>]`: A collection of all the Teams async operations that ran or are running on the chat. Nullable.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[AttemptsCount <Int32?>]`: Number of times the operation was attempted before being marked successful or failed.
@@ -14545,7 +14652,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`: accessPackageAs
     - `[AllowedRequestors <IMicrosoftGraphUserSet[]>]`: The users who are allowed to request on this policy, which can be singleUser, groupMembers, and connectedOrganizationMembers.
     - `[ScopeType <String>]`: Who can request. One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubjects, AllConfiguredConnectedOrganizationSubjects, AllExistingConnectedOrganizationSubjects, AllExistingDirectoryMemberUsers, AllExistingDirectorySubjects or AllExternalSubjects.
 
-CUSTOMEXTENSIONHANDLERS <IMicrosoftGraphCustomExtensionHandler\[]>: The collection of stages when to execute one or more custom access package workflow extensions. Supports $expand.
+CUSTOMEXTENSIONHANDLERS <IMicrosoftGraphCustomExtensionHandler[]>: The collection of stages when to execute one or more custom access package workflow extensions. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CustomExtension <IMicrosoftGraphCustomAccessPackageWorkflowExtension>]`: customAccessPackageWorkflowExtension
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14563,7 +14670,7 @@ CUSTOMEXTENSIONHANDLERS <IMicrosoftGraphCustomExtensionHandler\[]>: The collecti
     - `[LastModifiedDateTime <DateTime?>]`: Represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Stage <String>]`: accessPackageCustomExtensionStage
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -14638,7 +14745,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: key: id of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
-QUESTIONS <IMicrosoftGraphAccessPackageQuestion\[]>: Questions that are posed to the requestor.
+QUESTIONS <IMicrosoftGraphAccessPackageQuestion[]>: Questions that are posed to the requestor.
   - `[Id <String>]`: ID of the question.
   - `[IsAnswerEditable <Boolean?>]`: Specifies whether the requestor is allowed to edit answers to questions.
   - `[IsRequired <Boolean?>]`: Whether the requestor is required to supply an answer or not.
@@ -14650,7 +14757,7 @@ QUESTIONS <IMicrosoftGraphAccessPackageQuestion\[]>: Questions that are posed to
       - `[LanguageCode <String>]`: The ISO code for the intended language. Required.
       - `[Text <String>]`: The text in the specific language. Required.
 
-REQUESTAPPROVALSETTINGS `<IMicrosoftGraphApprovalSettings>`: approvalSettings
+REQUESTAPPROVALSETTINGS <IMicrosoftGraphApprovalSettings>: approvalSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApprovalMode <String>]`: One of SingleStage, Serial, Parallel, NoApproval (default). NoApproval is used when isApprovalRequired is false.
   - `[ApprovalStages <IMicrosoftGraphApprovalStage1[]>]`: If approval is required, the one or two elements of this collection define each of the stages of approval. An empty array if no approval is required.
@@ -14665,7 +14772,7 @@ REQUESTAPPROVALSETTINGS `<IMicrosoftGraphApprovalSettings>`: approvalSettings
   - `[IsApprovalRequiredForExtension <Boolean?>]`: Indicates whether approval is required for a user to extend their assignment.
   - `[IsRequestorJustificationRequired <Boolean?>]`: Indicates whether the requestor is required to supply a justification in their request.
 
-REQUESTORSETTINGS `<IMicrosoftGraphRequestorSettings>`: requestorSettings
+REQUESTORSETTINGS <IMicrosoftGraphRequestorSettings>: requestorSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AcceptRequests <Boolean?>]`: Indicates whether new requests are accepted on this policy.
   - `[AllowedRequestors <IMicrosoftGraphUserSet[]>]`: The users who are allowed to request on this policy, which can be singleUser, groupMembers, and connectedOrganizationMembers.

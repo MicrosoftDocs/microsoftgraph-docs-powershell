@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowsetting
@@ -21,6 +21,15 @@ Get-MgIdentityGovernanceLifecycleWorkflowSetting [-ExpandProperty <String[]>] [-
 Read the properties and relationships of a lifecycleManagementSettings object.
 
 ## EXAMPLES
+
+### Example 1: Using the Get-MgIdentityGovernanceLifecycleWorkflowSetting Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+Get-MgIdentityGovernanceLifecycleWorkflowSetting
+```
+
+This example shows how to use the Get-MgIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
