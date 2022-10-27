@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/clear-mguserpresenceuserpreferredpresence
@@ -28,6 +28,17 @@ Clear-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity> [
 Clear the preferred availability and activity status for a user.
 
 ## EXAMPLES
+
+### Example 1: Using the Clear-MgUserPresenceUserPreferredPresence Cmdlet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+$params = @{
+}
+Clear-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
+```
+
+This example shows how to use the Clear-MgUserPresenceUserPreferredPresence Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -126,7 +137,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
