@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgacceptusereventinstancetentatively
@@ -48,6 +48,33 @@ If the event allows proposals for new times, on responding tentative to the even
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+
+$params = @{
+	Comment = "I may not be able to make this week. How about next week?"
+	SendResponse = $true
+	ProposedNewTime = @{
+		Start = @{
+			DateTime = "2019-12-02T18:00:00"
+			TimeZone = "Pacific Standard Time"
+		}
+		End = @{
+			DateTime = "2019-12-02T19:00:00"
+			TimeZone = "Pacific Standard Time"
+		}
+	}
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgAcceptUserEventTentatively -UserId $userId -EventId $eventId -BodyParameter $params
+```
+
+This example shows how to use the Invoke-MgAcceptUserEventInstanceTentatively Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -254,7 +281,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths14D4S5WUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths14D4S5WUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
@@ -266,7 +293,7 @@ BODYPARAMETER `<IPaths14D4S5WUsersUserIdEventsEventIdInstancesEventId1MicrosoftG
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[SendResponse <Boolean?>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -314,7 +341,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-PROPOSEDNEWTIME `<IMicrosoftGraphTimeSlot>`: timeSlot
+PROPOSEDNEWTIME <IMicrosoftGraphTimeSlot>: timeSlot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

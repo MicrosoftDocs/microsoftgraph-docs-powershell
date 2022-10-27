@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mgusermailfoldermessageattachmentuploadsession
@@ -58,6 +58,48 @@ This allows transfer to be resumed, in case the network connection is dropped du
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
 ## EXAMPLES
+
+### Example 1: Create an upload session to add a large attachment to a draft message
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+
+$params = @{
+	AttachmentItem = @{
+		AttachmentType = "file"
+		Name = "flower"
+		Size = 3483322
+	}
+}
+
+# A UPN can also be used as -UserId.
+New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserMailFolderMessageAttachmentUploadSession Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Create an upload session to add a large in-line attachment to a draft message
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+
+$params = @{
+	AttachmentItem = @{
+		AttachmentType = "file"
+		Name = "scenary"
+		Size = 7208534
+		IsInline = $true
+		ContentId = "my_inline_picture"
+	}
+}
+
+# A UPN can also be used as -UserId.
+New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+
+This example shows how to use the New-MgUserMailFolderMessageAttachmentUploadSession Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -219,7 +261,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
+ATTACHMENTITEM <IMicrosoftGraphAttachmentItem>: attachmentItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentType <String>]`: attachmentType
   - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
@@ -228,7 +270,7 @@ ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
   - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
   - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
-BODYPARAMETER `<IPaths1C7XgoqUsersUserIdMailfoldersMailfolderIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1C7XgoqUsersUserIdMailfoldersMailfolderIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -239,7 +281,7 @@ BODYPARAMETER `<IPaths1C7XgoqUsersUserIdMailfoldersMailfolderIdMessagesMessageId
     - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
     - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
