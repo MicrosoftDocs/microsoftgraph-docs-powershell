@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/restore-mgdrivelistitemversion
@@ -30,6 +30,17 @@ Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Sites
+
+Restore-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
+```
+
+This example shows how to use the Restore-MgDriveListItemVersion Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -158,7 +169,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
