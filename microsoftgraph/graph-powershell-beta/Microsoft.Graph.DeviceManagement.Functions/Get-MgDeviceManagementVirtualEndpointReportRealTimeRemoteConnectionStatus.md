@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointreportrealtimeremoteconnectionstatus
@@ -28,13 +28,6 @@ Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
 Invoke function getRealTimeRemoteConnectionStatus
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -94,7 +87,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -109,9 +102,42 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
+  - `[Category <String>]`: Usage: category='{category}'
+  - `[CloudPcId <String>]`: key: id of cloudPC
+  - `[CloudPcId1 <String>]`: Usage: cloudPcId='{cloudPcId}'
+  - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
+  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
+  - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
+  - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
+  - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
+  - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
+  - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
+  - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
+  - `[EnrollmentType <String>]`: Usage: enrollmentType='{enrollmentType}'
+  - `[ExpiringBeforeDateTime <String>]`: Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
+  - `[Ids <String[]>]`: Usage: ids={ids}
+  - `[ManagedDeviceId <String>]`: key: id of managedDevice
+  - `[Platform <DevicePlatformType?>]`: Usage: platform='{platform}'
+  - `[PolicyId <String>]`: Usage: policyId='{policyId}'
+  - `[Resource <String>]`: Usage: resource='{resource}'
+  - `[ResourceOperationId <String>]`: key: id of resourceOperation
+  - `[Scope <String>]`: Usage: scope='{scope}'
+  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
+  - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
+  - `[SummarizeBy <String>]`: Usage: summarizeBy='{summarizeBy}'
+  - `[TemplateId <String>]`: Usage: templateId='{templateId}'
+  - `[Upn <String>]`: Usage: upn='{upn}'
+  - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointreportrealtimeremoteconnectionstatus](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointreportrealtimeremoteconnectionstatus)
-
