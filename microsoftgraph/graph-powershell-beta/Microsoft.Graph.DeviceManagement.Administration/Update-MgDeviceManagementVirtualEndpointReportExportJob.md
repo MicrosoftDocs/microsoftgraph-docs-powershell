@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointreportexportjob
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
-.
+The date time when the export job expires.
 
 ```yaml
 Type: DateTime
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportUrl
-.
+The storage account url of the exported report, it can be used to download the file.
 
 ```yaml
 Type: String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-.
+The filter applied on the report.
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Format
-.
+The format of the exported report.
 
 ```yaml
 Type: String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Property
-.
+The selected columns of the report.
 
 ```yaml
 Type: String[]
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestDateTime
-.
+The date time when the export job was requested.
 
 ```yaml
 Type: DateTime
@@ -310,19 +310,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcExportJob>`: cloudPcExportJob
+BODYPARAMETER <IMicrosoftGraphCloudPcExportJob>: cloudPcExportJob
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ExpirationDateTime <DateTime?>]`: 
+  - `[ExpirationDateTime <DateTime?>]`: The date time when the export job expires.
   - `[ExportJobStatus <String>]`: cloudPcExportJobStatus
-  - `[ExportUrl <String>]`: 
-  - `[Filter <String>]`: 
-  - `[Format <String>]`: 
+  - `[ExportUrl <String>]`: The storage account url of the exported report, it can be used to download the file.
+  - `[Filter <String>]`: The filter applied on the report.
+  - `[Format <String>]`: The format of the exported report.
   - `[ReportName <String>]`: cloudPcReportName
-  - `[RequestDateTime <DateTime?>]`: 
-  - `[Select <String[]>]`: 
+  - `[RequestDateTime <DateTime?>]`: The date time when the export job was requested.
+  - `[Select <String[]>]`: The selected columns of the report.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent

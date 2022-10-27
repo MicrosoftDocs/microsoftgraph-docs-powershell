@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-Module Guid: c81c26be-0144-4022-a4fe-b62128c54ad4
+Module Guid: 97d99958-6bfd-4778-8d73-6142d00f3efd
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration
 Help Version: 1.0.0.0
 Locale: en-US
@@ -260,10 +260,10 @@ Returned only on $expand.
 See an example of getting the assignments relationship.
 
 ### [Get-MgDeviceManagementVirtualEndpointReport](Get-MgDeviceManagementVirtualEndpointReport.md)
-Get reports from deviceManagement
+Cloud PC related reports.
 
 ### [Get-MgDeviceManagementVirtualEndpointReportExportJob](Get-MgDeviceManagementVirtualEndpointReportExportJob.md)
-Get exportJobs from deviceManagement
+The export jobs created for downloading reports.
 
 ### [Get-MgDeviceManagementVirtualEndpointServicePlan](Get-MgDeviceManagementVirtualEndpointServicePlan.md)
 Cloud PC service plans.
@@ -425,7 +425,7 @@ Create a new cloudPcProvisioningPolicy object.
 Create new navigation property to assignments for deviceManagement
 
 ### [New-MgDeviceManagementVirtualEndpointReportExportJob](New-MgDeviceManagementVirtualEndpointReportExportJob.md)
-Create new navigation property to exportJobs for deviceManagement
+Create a new cloudPcExportJob object.
 
 ### [New-MgDeviceManagementVirtualEndpointServicePlan](New-MgDeviceManagementVirtualEndpointServicePlan.md)
 Create new navigation property to servicePlans for deviceManagement

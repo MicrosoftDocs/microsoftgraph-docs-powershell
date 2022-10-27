@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreport
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointReport
 
 ## SYNOPSIS
-Get reports from deviceManagement
+Cloud PC related reports.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementVirtualEndpointReport [-ExpandProperty <String[]>] [-Prope
 ```
 
 ## DESCRIPTION
-Get reports from deviceManagement
+Cloud PC related reports.
 
 ## EXAMPLES
 
