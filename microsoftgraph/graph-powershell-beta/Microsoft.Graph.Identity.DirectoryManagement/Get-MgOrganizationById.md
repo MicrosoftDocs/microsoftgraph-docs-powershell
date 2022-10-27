@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbyid
@@ -31,6 +31,31 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.DirectoryObjects
+
+$params = @{
+	Ids = @(
+		"84b80893-8749-40a3-97b7-68513b600544"
+		"5d6059b6-368d-45f8-91e1-8e07d485f1d0"
+		"0b944de3-e0fc-4774-a49a-b135213725ef"
+		"b75a5ab2-fe55-4463-bd31-d21ad555c6e0"
+	)
+	Types = @(
+		"user"
+		"group"
+		"device"
+	)
+}
+
+Get-MgDirectoryObjectById -BodyParameter $params
+```
+
+This example shows how to use the Get-MgOrganizationById Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -144,7 +169,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths11G1VgqOrganizationMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths11G1VgqOrganizationMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
   - `[Types <String[]>]`: 
