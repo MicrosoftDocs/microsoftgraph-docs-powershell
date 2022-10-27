@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessauthenticationstrengthpolicyallowedcombination
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
 
 ## SYNOPSIS
-Invoke action updateAllowedCombinations
+Update the allowedCombinations property of an authenticationStrengthPolicy object.
+To update other properties of an authenticationStrengthPolicy object, use the Update authenticationStrengthPolicy method.
 
 ## SYNTAX
 
@@ -43,7 +44,8 @@ Update-MgIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
 ```
 
 ## DESCRIPTION
-Invoke action updateAllowedCombinations
+Update the allowedCombinations property of an authenticationStrengthPolicy object.
+To update other properties of an authenticationStrengthPolicy object, use the Update authenticationStrengthPolicy method.
 
 ## EXAMPLES
 
@@ -176,11 +178,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Pedu11IdentityConditionalaccessAuthenticationstrengthsPoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Pedu11IdentityConditionalaccessAuthenticationstrengthsPoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedCombinations <String[]>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration

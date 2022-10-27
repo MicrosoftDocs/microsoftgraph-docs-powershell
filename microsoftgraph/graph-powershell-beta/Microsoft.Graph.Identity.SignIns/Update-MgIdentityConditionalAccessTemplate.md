@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesstemplate
@@ -253,11 +253,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphConditionalAccessTemplate>`: conditionalAccessTemplate
+BODYPARAMETER <IMicrosoftGraphConditionalAccessTemplate1>: conditionalAccessTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: The user-friendly name of the template.
-  - `[Details <IMicrosoftGraphConditionalAccessPolicyDetail>]`: conditionalAccessPolicyDetail
+  - `[Details <IMicrosoftGraphConditionalAccessPolicyDetail1>]`: conditionalAccessPolicyDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]`: conditionalAccessConditionSet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -319,14 +319,14 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessTemplate>`: conditionalAccessTem
       - `[AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]`: authenticationStrengthPolicy
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[AllowedCombinations <String[]>]`: 
-        - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: 
+        - `[AllowedCombinations <String[]>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
+        - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-          - `[AppliesToCombinations <String[]>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[Description <String>]`: 
-        - `[DisplayName <String>]`: 
-        - `[ModifiedDateTime <DateTime?>]`: 
+          - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
+        - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
+        - `[Description <String>]`: The human-readable description of this policy.
+        - `[DisplayName <String>]`: The human-readable display name of this policy. Supports $filter (eq, ne, not , and in).
+        - `[ModifiedDateTime <DateTime?>]`: The datetime when this policy was last modified.
         - `[PolicyType <String>]`: authenticationStrengthPolicyType
         - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
       - `[BuiltInControls <String[]>]`: List of values of built-in controls required by the policy. Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
@@ -360,7 +360,7 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessTemplate>`: conditionalAccessTem
   - `[Name <String>]`: The user-friendly name of the template.
   - `[Scenarios <String>]`: templateScenarios
 
-DETAILS `<IMicrosoftGraphConditionalAccessPolicyDetail>`: conditionalAccessPolicyDetail
+DETAILS <IMicrosoftGraphConditionalAccessPolicyDetail1>: conditionalAccessPolicyDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]`: conditionalAccessConditionSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -422,14 +422,14 @@ DETAILS `<IMicrosoftGraphConditionalAccessPolicyDetail>`: conditionalAccessPolic
     - `[AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]`: authenticationStrengthPolicy
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[AllowedCombinations <String[]>]`: 
-      - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: 
+      - `[AllowedCombinations <String[]>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
+      - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[AppliesToCombinations <String[]>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[ModifiedDateTime <DateTime?>]`: 
+        - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
+      - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
+      - `[Description <String>]`: The human-readable description of this policy.
+      - `[DisplayName <String>]`: The human-readable display name of this policy. Supports $filter (eq, ne, not , and in).
+      - `[ModifiedDateTime <DateTime?>]`: The datetime when this policy was last modified.
       - `[PolicyType <String>]`: authenticationStrengthPolicyType
       - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
     - `[BuiltInControls <String[]>]`: List of values of built-in controls required by the policy. Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
@@ -461,7 +461,7 @@ DETAILS `<IMicrosoftGraphConditionalAccessPolicyDetail>`: conditionalAccessPolic
       - `[Type <String>]`: signinFrequencyType
       - `[Value <Int32?>]`: The number of days or hours.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration

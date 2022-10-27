@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessauthenticationstrengthpolicy
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowedCombinations
-.
+A collection of authentication method modes that are required be used to satify this authentication strength.
 
 ```yaml
 Type: String[]
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -CombinationConfigurations
-.
+Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
 To construct, please use Get-Help -Online and see NOTES section for COMBINATIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The datetime when this policy was created.
 
 ```yaml
 Type: DateTime
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+The human-readable description of this policy.
 
 ```yaml
 Type: String
@@ -161,7 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The human-readable display name of this policy.
+Supports $filter (eq, ne, not , and in).
 
 ```yaml
 Type: String
@@ -208,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -ModifiedDateTime
-.
+The datetime when this policy was last modified.
 
 ```yaml
 Type: DateTime
@@ -317,25 +318,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthPolicy>`: authenticationStrengthPolicy
+BODYPARAMETER <IMicrosoftGraphAuthenticationStrengthPolicy>: authenticationStrengthPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AllowedCombinations <String[]>]`: 
-  - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: 
+  - `[AllowedCombinations <String[]>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
+  - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[AppliesToCombinations <String[]>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[ModifiedDateTime <DateTime?>]`: 
+    - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
+  - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
+  - `[Description <String>]`: The human-readable description of this policy.
+  - `[DisplayName <String>]`: The human-readable display name of this policy. Supports $filter (eq, ne, not , and in).
+  - `[ModifiedDateTime <DateTime?>]`: The datetime when this policy was last modified.
   - `[PolicyType <String>]`: authenticationStrengthPolicyType
   - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
 
-COMBINATIONCONFIGURATIONS <IMicrosoftGraphAuthenticationCombinationConfiguration\[]>: .
+COMBINATIONCONFIGURATIONS <IMicrosoftGraphAuthenticationCombinationConfiguration[]>: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AppliesToCombinations <String[]>]`: 
+  - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessauthenticationstrengthpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityConditionalAccessAuthenticationStrengthPolicy
 
 ## SYNOPSIS
-Get policies from identity
+A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-Get policies from identity
+A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
 
 ## EXAMPLES
 
@@ -238,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
