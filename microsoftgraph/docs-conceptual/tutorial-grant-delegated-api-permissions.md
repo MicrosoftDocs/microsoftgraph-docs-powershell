@@ -34,7 +34,41 @@ To successfully complete this tutorial, make sure you have the required prerequi
 >[!Caution]
 >The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or a service to manage permission grants and elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
 
-## Step 1: Create a service principal
+## Step 1: Get the delegated permissions of the resource service principal
+
+Before you can grant delegated permissions, you must first identify the delegated permissions to grant and the resource service principal that exposes the delegated permissions. Delegated permissions are defined in the `oauth2PermissionScopes` object of a service principal. In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
+
+```powershell
+Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'" -Property Oauth2PermissionScopes | Select -ExpandProperty Oauth2PermissionScopes | fl 
+```
+
+```Output
+AdminConsentDescription : Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user.
+AdminConsentDisplayName : Read and write all users' full profiles
+Id                      : 204e0828-b5ca-4ad8-b9f3-f32a958e7cc4
+IsEnabled               : True
+Origin                  :
+Type                    : Admin
+UserConsentDescription  : Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on your behalf.
+UserConsentDisplayName  : Read and write all users' full profiles
+Value                   : User.ReadWrite.All
+AdditionalProperties    : {}
+
+AdminConsentDescription : Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files,
+                          and other group content for all groups the signed-in user can access.
+AdminConsentDisplayName : Read all groups
+Id                      : 5f8c59db-677d-491f-a6b8-5f174b11ec1d
+IsEnabled               : True
+Origin                  :
+Type                    : Admin
+UserConsentDescription  : Allows the app to list groups, and to read their properties and all group memberships on your behalf.  Also allows the app to read calendar, conversations, files, and other group
+                          content for all groups you can access.
+UserConsentDisplayName  : Read all groups
+Value                   : Group.Read.All
+AdditionalProperties    : {}
+```
+
+## Step 2: Create a client service principal
 
 The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
 
@@ -69,23 +103,23 @@ AppId          : 05210c44-437f-4a40-bd38-b5b4eaf251ef
 SignInAudience : AzureADandPersonalMicrosoftAccount
 ```
 
-## Step 2: Grant delegated permission to the service principal
+## Step 3: Grant delegated permission to the client service principal
 
 To create a delegated permission grant, you'll need the following information:
 
-1. **ClientId** - object Id of the client service principal authorized to act on behalf of the user. In this case, the service principal we created in step 1.
+1. **ClientId** - object Id of the client service principal authorized to act on behalf of the user. In this case, the service principal we created in step 2.
 1. **ConsentType** - `AllPrincipals` to authorize all users in the tenant or `Principal` for a single user.
 1. **PrincipalId** - Id of the user for *Principal* consents, `null` for *AllPrincipals* consents.
 1. **ResourceId** - object Id of the service principal representing the resource app in the tenant.
 1. **Scope** - space-delimited list of permission claim values, for example `User.Read.All`.
 
-In this example, the object id of the resource service principal is `a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c`. You'll grant `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
+In this example, the object id of the resource service principal is `2cab1707-656d-40cc-8522-3178a184e03d`. You'll grant `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
 
 ```powershell
 $params = @{
   "ClientId" = "22c1770d-30df-49e7-a763-f39d2ef9b369"
   "ConsentType" = "AllPrincipals"
-  "ResourceId" = "a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c"
+  "ResourceId" = "2cab1707-656d-40cc-8522-3178a184e03d"
   "Scope" = "Group.Read.All"
 }
 
@@ -102,13 +136,13 @@ ResourceId  : a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c
 Scope       : Group.Read.All
 ```
 
-### Step 2b [Optional]: Assign more delegated permissions to the service principal
+### Step 3b [Optional]: Assign more or revoke delegated permissions to the service principal
 
-You can add more scopes to an already existing oauth2PermissionGrant object.
+You can add more or reduce scopes to an already existing oauth2PermissionGrant object.
 
 ```powershell
 $params = @{
-  Scope = " Group.Read.All, AuditLog.Read.All,Application.Read.All"
+  Scope = "Group.Read.All,User.Read.All "
   }
 
 Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw' -BodyParameter $params
