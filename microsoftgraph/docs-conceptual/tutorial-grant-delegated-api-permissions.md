@@ -2,7 +2,7 @@
 title: "Grant delegated permissions programmatically in Azure AD"
 description: "Learn how to grant delegated permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 3/30/2022
+ms.date: 10/31/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -140,43 +140,14 @@ Scope       : Group.Read.All
 
 You can add more or reduce scopes to an already existing oauth2PermissionGrant object.
 
+To add the `User.Read.All` scope to the oauthPermissionGrant object, run:
+
 ```powershell
 $params = @{
   Scope = "Group.Read.All,User.Read.All "
   }
 
 Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw' -BodyParameter $params
-```
-
-## Step 3: Assign the app to a user
-
-The last step when creating a delegated oauth2PermissionGrant is to assign the app to the user. This ensures that the app will appear in the [MyApps](https://myapps.microsoft.com/) panel for the user. It also allows users to access the app as intended if the app is configured to require user assignment.
-
-To assign the app to a user, you'll need the following information:
-
-1. **PrincipalId** - object Id of the user you are assigning the app role.
-1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.
-1. **AppRoleId** - Id of the app role to be assigned, defined on the service principal representing the resource.
-
-```powershell
-$params = @{
-  "PrincipalId" ="da8af13f-b6e1-4eb3-8d66-ef4132c58b91"
-  "ResourceId" = "22c1770d-30df-49e7-a763-f39d2ef9b369"
-  "AppRoleId" = "27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b"
-}
-
-New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId "4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f" -BodyParameter $params | Format-List Id, ApproleId, CreatedDateTime,PrincipalDisplayName, PrincipalId, PrincipalType, ResourceDisplayName, ResourceId
-```
-
-```Output
-Id                   : P_GK2uG2s06NZu9BMsWLkesP9xzxlWBFuqVdaK8_lsE
-AppRoleId            : 27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b
-CreatedDateTime      : 3/21/2022 9:59:26 AM
-PrincipalDisplayName : Adele Vance
-PrincipalId          : da8af13f-b6e1-4eb3-8d66-ef4132c58b91
-PrincipalType        : User
-ResourceDisplayName  : New app
-ResourceId           : 4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f
 ```
 
 ## See also

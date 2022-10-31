@@ -2,7 +2,7 @@
 title: "Grant application permissions programmatically in Azure AD"
 description: "Learn how to grant app-only permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 3/30/2022
+ms.date: 10/31/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -16,7 +16,7 @@ When you grant API permissions to a client app in Azure AD, the permission grant
 >[!Caution]
 >Be Careful! Permissions created programmatically are not subject to review or confirmation. They take effect immediately.
 
-In this tutorial, you'll grant app roles that are exposed by an API to an app. App roles, also called application permissions, app-only permissions, or direct access permissions, allow an app to call an API with it's own identity.
+In this tutorial, you'll grant app roles that are exposed by an API to an app. App roles, also called application permissions, app-only permissions, or direct access permissions, allow an app to call an API with its own identity.
 
 ## Prerequisites
 
@@ -34,7 +34,35 @@ To successfully complete this tutorial, make sure you have the required prerequi
 >[!Caution]
 >The `AppRoleAssignment.ReadWrite.All` permission allows an app or a service to manage permission grants and elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
 
-## Step 1: Create a service principal
+## Step 1: Get the delegated permissions of the resource service principal
+
+Before you can grant app roles, you must first identify the app roles to grant and the resource service principal that exposes the app ro;es. App roles are defined in the `appRoles` object of a service principal. In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
+
+```powershell
+Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'" -Property AppRoles | Select -ExpandProperty appRoles |fl
+```
+
+```Output
+AllowedMemberTypes   : {Application}
+Description          : Allows the app to read and update user profiles without a signed in user.
+DisplayName          : Read and write all users' full profiles
+Id                   : 741f803b-c850-494e-b5df-cde7c675a1ca
+IsEnabled            : True
+Origin               : Application
+Value                : User.ReadWrite.All
+AdditionalProperties : {}
+
+AllowedMemberTypes   : {Application}
+Description          : Allows the app to read user profiles without a signed in user.
+DisplayName          : Read all users' full profiles
+Id                   : df021288-bdef-4463-88db-98f22de89214
+IsEnabled            : True
+Origin               : Application
+Value                : User.Read.All
+AdditionalProperties : {}
+```
+
+## Step 2: Create a client service principal
 
 The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
 
@@ -69,9 +97,9 @@ AppId          : 05210c44-437f-4a40-bd38-b5b4eaf251ef
 SignInAudience : AzureADandPersonalMicrosoftAccount
 ```
 
-## Step 2: Assign an app role to the service principal
+## Step 3: Assign an app role to the client service principal
 
-In this step, you'll assign an app role exposed by your resource app to the service principal we created in step 1. To create an app role assignment, you'll need the following information:
+In this step, you'll assign an app role exposed by your resource app to the service principal we created in step 2. To create an app role assignment, you'll need the following information:
 
 1. **PrincipalId** - object Id of the service principal authorized for direct access.
 1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.
@@ -82,22 +110,30 @@ The `ServicePrincipalId` must always be same as the `ResourceId` which reference
 ```powershell
 $params = @{
   "PrincipalId" ="22c1770d-30df-49e7-a763-f39d2ef9b369"
-  "ResourceId" = "a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c"
-  "AppRoleId" = "01c2bb8e-0895-42c8-b950-3ec8abc7a012"
+  "ResourceId" = "2cab1707-656d-40cc-8522-3178a184e03d"
+  "AppRoleId" = "df021288-bdef-4463-88db-98f22de89214"
 }
 
-New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId 'a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c' -BodyParameter $params | 
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId '2cab1707-656d-40cc-8522-3178a184e03d' -BodyParameter $params | 
   Format-List Id, AppRoleId, CreatedDateTime, PrincipalDisplayName, PrincipalId, PrincipalType, ResourceDisplayName
 ```
 
 ```Output
-Id                   : DXfBIt8w50mnY_OdLvmzaelPk7SE-ctDvHhozZHGMHI
-AppRoleId            : 01c2bb8e-0895-42c8-b950-3ec8abc7a012
-CreatedDateTime      : 3/30/2022 1:42:07 PM
+Id                   : DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0
+AppRoleId            : df021288-bdef-4463-88db-98f22de89214
+CreatedDateTime      : 10/31/2022 11:00:47 AM
 PrincipalDisplayName : My application
 PrincipalId          : 22c1770d-30df-49e7-a763-f39d2ef9b369
 PrincipalType        : ServicePrincipal
-ResourceDisplayName  : LinkedIn
+ResourceDisplayName  : Microsoft Graph
+```
+
+## Step 4: Revoke an app role assignment from a client service principal
+
+To revoke the app roles assigned in step 3, run;
+
+```powershell
+Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId '22c1770d-30df-49e7-a763-f39d2ef9b369' -AppRoleAssignmentId 'DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0'
 ```
 
 ## See also
